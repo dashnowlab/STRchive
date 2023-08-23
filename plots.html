@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 
   <!-- Site Properties -->
-  <title>Homepage</title>
+  <title>STRchive</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
 
 
@@ -129,7 +129,7 @@
 <body>
 
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
+<!-- <div class="ui large top fixed hidden menu">
   <div class="ui container">
     <a class="active item">Home</a>
     <a class="item">About</a>
@@ -140,30 +140,29 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
+<!-- <div class="ui vertical inverted sidebar menu">
   <a class="active item">Home</a>
   <a class="item">About</a>
   <a class="item">Contribute</a>
   <a class="item">GitHub</a>
-</div>
+</div> -->
 
-
-<!-- Page Contents -->
+<!-- Header -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui inverted vertical  center aligned segment">
 
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="active item" href="index.html">Home</a>
+        <a class="item" href="index.html">Home</a>
         <a class="item" href="about.html">About</a>
         <a class="item" href="table.html">STR Database</a>
-        <a class="item" href="plots.html">Plots</a>
+        <a class="active item" href="plots.html">Plots</a>
         <a class="item" href="contribute.html">Contribute</a>
         <div class="right item">
           <a class="ui inverted button" href="index.html">STRchive</a>
@@ -173,20 +172,43 @@
         </div>
       </div>
     </div>
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        STRchive
-      </h1>
-      <p>(Short Tandem Repeat Archive)</p>
-      <a class="ui huge primary button" href="table.html">STR Database<i class="right arrow icon"></i></a>
-      <h2>A database of STRs associated with disease in humans.</h2>
-    </div>
-
   </div>
 </div>
 
-  
+<!-- Page Contents -->
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <h2 class="ui header">Pathogenic Size Range</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" 
+          seamless="seamless" src="images/plotly_path_size.html" 
+          height="1010" width="100%">
+        </iframe>
+      </div>
+
+      <br><br>
+        
+      <div class="row">
+        <h2 class="ui header">Age of Onset</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" 
+          seamless="seamless" src="images/plotly_age_onset.html" 
+          height="1010" width="100%">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+
+      
+    </div>
+  </div>
 
 <!-- Footer -->
 <div class="ui inverted vertical footer segment">
