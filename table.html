@@ -129,27 +129,92 @@
 
 <script>
 
-    $(function() {
+  $(function() {
 
-
-   var people = [];
-
-   $.getJSON('data/STR-disease-loci.json', function(data) {
+  $.getJSON('data/STR-disease-loci.json', function(data) {
     
     $.each(data, function(i, f) {
       var tblRow =
       "<tr>" +
-        "<td>" + f.gene + "</td>" +
-        "<td>" +
-          `<a href="loci.html#` + f.id + `">` +
-          f.disease_id + `</a>` +
-          "</td>" +
-        "<td>" + f.disease + "</td>" +
+        `<td><a href="#` + f.id + `">` + f.gene + `</a></td>` +
+        `<td><a href="#` + f.id + `">` + f.disease_id + `</a></td>` +
+        `<td><a href="#` + f.id + `">` + f.disease + `</a></td>` +
         "<td>" + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + "</td>" +
         "<td>" + f.repeatunit_pathogenic_geneorientation + "</td>" +
         "<td>" + f.Inheritance + "</td>" +
       "</tr>"
         $(tblRow).appendTo("#diseaseloci tbody");
+
+        var this_row = 
+        `
+
+
+  <div class="ui doubling stackable grid container">
+
+  <a href="#` + f.id + `">
+  <h2 id="` + f.id + `">` + f.disease + `</h2>
+  </a>
+
+    <div class="four column row">
+
+      <div class="column">
+        <div class="ui segment">
+          <h4>Locus</h4>
+          <div class="ui list">
+            <li><b>Gene:</b> ` + f.gene + `</li>
+            <li><b>hg19:</b> ` + f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</li>
+            <li><b>hg38:</b> ` + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</li>
+            <li><b>T2T CHM13 v1.0:</b> ` + f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</li>
+            <li><b>Type:</b> ` + f.type + `</li>
+            <li><b>Location:</b> ` + f.location_in_gene + `</li>
+            <li><b>Reference motif:</b> ` + f.repeatunit_ref + `</li>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment">
+          <h4>Disease</h4>
+          <div class="ui list">
+            <li>` + f.disease + `</li>
+            <li><b>ID:</b> ` + f.disease_id + `</li>
+            <li><b>Inheritance:</b> ` + f.Inheritance + `</li>
+            <li><b>Age of onset:</b> ` + f.age_onset_min + `-` + f.age_onset_max + ` years</li>
+            <li><b>Prevalence:</b> ` + f.Prevalence + `</li>
+            <li><b>Mechanism:</b> ` + f.Mechanism + `</li>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment">
+          <h4>Alleles</h4>
+          <div class="ui list">
+            <li><b>Pathogenic motif:</b> ` + f.repeatunit_pathogenic_geneorientation + `</li>
+            <li><b>Benign:</b> ` + f.normal_min + `-` + f.normal_max + ` motifs</li>
+            <li><b>Intermediate:</b> ` + f.intermediate_min + `-` + f.intermediate_max + ` motifs</li>
+            <li><b>Pathogenic:</b> ` + f.pathogenic_min + `-` + f.pathogenic_max + ` motifs</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="ui segment">
+          <h4>Resources</h4>
+          <div class="ui list">
+            <a class="item" href="https://gnomad.broadinstitute.org/short-tandem-repeats?dataset=gnomad_r3">gnomAD</a>
+            <a class="item" href="https://stripy.org/database">STRipy</a>
+            <li>` + f.OMIM_ID + `</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="angle double up icon" href="#top"><i class="angle double up icon"></i></a>
+      
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    `
+        $(this_row).appendTo("#all_loci");
+
+
      });
 
    });
@@ -221,6 +286,10 @@
     
 
 </div>
+
+<div id="all_loci" class="ui vertical stripe segment">
+  <!-- Detailed locus info will insert here -->
+  </div>
 
 <!-- Footer -->
 <div class="ui inverted vertical footer segment">
