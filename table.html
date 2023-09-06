@@ -147,8 +147,6 @@
 
         var this_row = 
         `
-
-
   <div class="ui doubling stackable grid container">
 
   <a href="#` + f.id + `">
@@ -161,8 +159,14 @@
         <div class="ui segment">
           <h4>Locus</h4>
           <div class="ui list">
-            <li><b>Gene:</b> ` + f.gene + `</li>
-            <li><b>hg19:</b> ` + f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</li>
+            <li><b>Gene:</b> ` + f.gene + `</li>`;
+
+        if ((f.start_hg19) != '') {
+          this_row = this_row +
+            `<li><b>hg19:</b> ` + f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</li>`
+        };
+        this_row = this_row +
+            `
             <li><b>hg38:</b> ` + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</li>
             <li><b>T2T CHM13 v1.0:</b> ` + f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</li>
             <li><b>Type:</b> ` + f.type + `</li>
@@ -177,9 +181,36 @@
           <div class="ui list">
             <li>` + f.disease + `</li>
             <li><b>ID:</b> ` + f.disease_id + `</li>
-            <li><b>Inheritance:</b> ` + f.Inheritance + `</li>
-            <li><b>Age of onset:</b> ` + f.age_onset_min + `-` + f.age_onset_max + ` years</li>
-            <li><b>Prevalence:</b> ` + f.Prevalence + `</li>
+            <li><b>Inheritance:</b> ` + f.Inheritance + `</li>`
+
+        if (f.age_onset_min != '' & f.age_onset_max != '') {
+          if (f.age_onset_min == f.age_onset_max) {
+            if (f.age_onset_min == 0) {
+              this_row = this_row +
+              `<li><b>Age of onset:</b> <1 year</li>`
+            }
+            if (f.age_onset_min == 1) {
+              this_row = this_row +
+              `<li><b>Age of onset:</b> 1 year</li>`
+            }
+            else {
+              this_row = this_row +
+              `<li><b>Age of onset:</b> ` + f.age_onset_min + ` years</li>`
+            }
+          }
+          else {
+          this_row = this_row +
+          `<li><b>Age of onset:</b> ` + f.age_onset_min + `-` + f.age_onset_max + ` years</li>`
+          }
+        };
+            
+        if ((f.Prevalence) != '') {
+          this_row = this_row +
+            `<li><b>Prevalence:</b> ` + f.Prevalence + `</li>`
+        };
+
+        this_row = this_row +
+            `
             <li><b>Mechanism:</b> ` + f.Mechanism + `</li>
           </div>
         </div>
@@ -188,10 +219,45 @@
         <div class="ui segment">
           <h4>Alleles</h4>
           <div class="ui list">
-            <li><b>Pathogenic motif:</b> ` + f.repeatunit_pathogenic_geneorientation + `</li>
-            <li><b>Benign:</b> ` + f.normal_min + `-` + f.normal_max + ` motifs</li>
-            <li><b>Intermediate:</b> ` + f.intermediate_min + `-` + f.intermediate_max + ` motifs</li>
-            <li><b>Pathogenic:</b> ` + f.pathogenic_min + `-` + f.pathogenic_max + ` motifs</li>
+            <li><b>Pathogenic motif:</b> ` + f.repeatunit_pathogenic_geneorientation + `</li>`
+
+        if (f.normal_min != '') {
+          if (f.normal_min == f.normal_max) {
+            this_row = this_row +
+           `<li><b>Benign:</b> ` + f.normal_min + ` motifs</li>`
+          }
+          else {
+            this_row = this_row +
+            `<li><b>Benign:</b> ` + f.normal_min + `-` + f.normal_max + ` motifs</li>`
+          }
+        };
+
+        if (f.intermediate_min != '') {
+          if (f.intermediate_min == f.intermediate_max) {
+            this_row = this_row +
+           `<li><b>Intermediate:</b> ` + f.intermediate_min + ` motifs</li>`
+          }
+          else {
+            this_row = this_row +
+            `<li><b>Intermediate:</b> ` + f.intermediate_min + `-` + f.intermediate_max + ` motifs</li>`
+          }
+        };
+
+        if (f.pathogenic_min != '') {
+          if (f.pathogenic_min == f.pathogenic_max) {
+            this_row = this_row +
+           `<li><b>Pathogenic:</b> ` + f.pathogenic_min + ` motifs</li>`
+          }
+          else {
+            this_row = this_row +
+            `<li><b>Pathogenic:</b> ` + f.pathogenic_min + `-` + f.pathogenic_max + ` motifs</li>`
+          }
+        };
+
+        
+
+        this_row = this_row +
+            `
           </div>
         </div>
       </div>
@@ -199,10 +265,30 @@
       <div class="column">
         <div class="ui segment">
           <h4>Resources</h4>
-          <div class="ui list">
-            <a class="item" href="https://gnomad.broadinstitute.org/short-tandem-repeats?dataset=gnomad_r3">gnomAD</a>
-            <a class="item" href="https://stripy.org/database">STRipy</a>
-            <li>` + f.OMIM_ID + `</li>
+          <div class="ui list">`
+
+        if (f.gene != '') {
+          var firstgene = f.gene.split("/")[0]
+          this_row = this_row + 
+          `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/` + firstgene + `?dataset=gnomad_r3">` + firstgene + `</a></li>`
+        };
+
+        if (f.gene != '') {
+          var firstgene = f.gene.split("/")[0]
+          this_row = this_row + 
+          `<li><b>STRipy:</b> <a href="https://stripy.org/database/` + firstgene + `">` + firstgene + `</a></li>`
+        };
+
+        if (f.OMIM != '') {
+          this_row = this_row + `<li><b>OMIM:</b> `
+          f.OMIM.split(";").forEach(function (OMIMid) {
+            this_row = this_row +
+            `<a href="https://omim.org/entry/` + OMIMid.trim() + `">` + OMIMid + `</a>`
+          })
+          this_row = this_row + `</li>`
+        };
+        this_row = this_row +
+            `
           </div>
         </div>
       </div>

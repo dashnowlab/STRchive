@@ -42,7 +42,7 @@
         "width": "148",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "CGG",
-        "OMIM_ID": "OMIM:309548",
+        "OMIM": "309548",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -89,7 +89,7 @@
         "width": "25",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "",
+        "OMIM": "",
         "Incidence": "",
         "Prevalence": "N/A"
     },
@@ -136,7 +136,7 @@
         "width": "102",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:313200",
+        "OMIM": "313200",
         "Incidence": "",
         "Prevalence": "1:300,000 males (SBMA); 1/40,000 (Kennedy Disease)"
     },
@@ -183,7 +183,7 @@
         "width": "43",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "GCG",
-        "OMIM_ID": "OMIM:308350; OMIM:300419; OMIM:300215",
+        "OMIM": "308350; 300419; 300215",
         "Incidence": "1-2/100,000",
         "Prevalence": "~<1/35,000"
     },
@@ -230,7 +230,7 @@
         "width": "35",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "GCG",
-        "OMIM_ID": "OMIM:309510",
+        "OMIM": "309510",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -277,7 +277,7 @@
         "width": "58",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:125370",
+        "OMIM": "125370",
         "Incidence": "",
         "Prevalence": "2-7/1,000,000"
     },
@@ -324,7 +324,7 @@
         "width": "90",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CTG",
-        "OMIM_ID": "OMIM:164400",
+        "OMIM": "164400",
         "Incidence": "",
         "Prevalence": "1-2/100,000"
     },
@@ -371,7 +371,7 @@
         "width": "69",
         "repeatunit_path_norm": "AATAG",
         "repeatunit": "ATTCT",
-        "OMIM_ID": "OMIM:603516",
+        "OMIM": "603516",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -418,7 +418,7 @@
         "width": "69",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:183090",
+        "OMIM": "183090",
         "Incidence": "",
         "Prevalence": "1-2/100,000 (population dependent)"
     },
@@ -465,7 +465,7 @@
         "width": "41",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CTG",
-        "OMIM_ID": "OMIM:109150",
+        "OMIM": "109150",
         "Incidence": "",
         "Prevalence": "1\u20135/100,000"
     },
@@ -512,7 +512,7 @@
         "width": "31",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:164500",
+        "OMIM": "164500",
         "Incidence": "",
         "Prevalence": "<1/300,000"
     },
@@ -535,7 +535,7 @@
         "locus_structure": "\"(CTA)*(CTG)*\"",
         "Inheritance": "AD",
         "type": "3' UTR",
-        "location_in_gene": "Exon 5, 3\u2019 UTR?",
+        "location_in_gene": "Exon 5 or 3\u2019 UTR depending on transcript",
         "normal": "15\u201350",
         "normal_min": "15",
         "normal_max": "50",
@@ -559,7 +559,7 @@
         "width": "46",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CTG",
-        "OMIM_ID": "OMIM:608768",
+        "OMIM": "608768",
         "Incidence": "",
         "Prevalence": "<1/100,000"
     },
@@ -606,7 +606,7 @@
         "width": "69",
         "repeatunit_path_norm": "AATGG",
         "repeatunit": "TGGAA",
-        "OMIM_ID": "OMIM:117210",
+        "OMIM": "117210",
         "Incidence": "",
         "Prevalence": "Unknown (more common in Japanese pop)"
     },
@@ -645,7 +645,7 @@
         "age_onset_min": "27",
         "age_onset_max": "85",
         "novel": "ref",
-        "Mechanism": "RNA toxicity?",
+        "Mechanism": "RNA toxicity proposed",
         "Mechanism_detail": "\"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region.\"",
         "Mechanism_source": "OMIM",
         "source": "Hannan 2018, GeneReviews, OMIM,  \"SourceId\": \"NBK535148\", s40478-021-01201-x",
@@ -653,12 +653,9 @@
         "width": "62",
         "repeatunit_path_norm": "CCCCGG",
         "repeatunit": "GGGGCC",
-        "OMIM_ID": " OMIM:105500",
+        "OMIM": " 105500",
         "Incidence": "",
-        "Prevalence": "\"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population \"In European populations",
-        "null": [
-            " C9ORF72 repeat expansions were the most common (5.1 percent)\" assessing genes in sporadic ALS\" \"\""
-        ]
+        "Prevalence": "The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population"
     },
     {
         "chrom": "chr19",
@@ -703,7 +700,7 @@
         "width": "39",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:183086",
+        "OMIM": "183086",
         "Incidence": "",
         "Prevalence": "<1/1,000,000"
     },
@@ -750,7 +747,7 @@
         "width": "33",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:147791",
+        "OMIM": "147791",
         "Incidence": "",
         "Prevalence": "1/100,000 births"
     },
@@ -797,7 +794,7 @@
         "width": "15",
         "repeatunit_path_norm": "ACG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:132400; OMIM:177170",
+        "OMIM": "132400; 177170",
         "Incidence": "",
         "Prevalence": "9-16/100,000 births"
     },
@@ -844,7 +841,7 @@
         "width": "81",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "ATTTC",
-        "OMIM_ID": "OMIM:615945",
+        "OMIM": "615945",
         "Incidence": "",
         "Prevalence": "<1/1,000,000"
     },
@@ -891,7 +888,7 @@
         "width": "20",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "CGG",
-        "OMIM_ID": "OMIM:136630",
+        "OMIM": "136630",
         "Incidence": "",
         "Prevalence": "N/A"
     },
@@ -938,7 +935,7 @@
         "width": "48",
         "repeatunit_path_norm": "AAG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:310200",
+        "OMIM": "310200",
         "Incidence": "",
         "Prevalence": "1 in 3,500-5,000 live male births"
     },
@@ -985,7 +982,7 @@
         "width": "62",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:160900",
+        "OMIM": "160900",
         "Incidence": "",
         "Prevalence": "5-20/100,000 "
     },
@@ -1032,7 +1029,7 @@
         "width": "74",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "CGG",
-        "OMIM_ID": "OMIM:300624; OMIM:300623",
+        "OMIM": "300624; 300623",
         "Incidence": "",
         "Prevalence": "16-25/100,000 males "
     },
@@ -1079,7 +1076,7 @@
         "width": "42",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:110100",
+        "OMIM": "110100",
         "Incidence": "",
         "Prevalence": "1 in 50,000 births globally"
     },
@@ -1126,7 +1123,7 @@
         "width": "2",
         "repeatunit_path_norm": "AAG",
         "repeatunit": "AAG",
-        "OMIM_ID": "OMIM:229300",
+        "OMIM": "229300",
         "Incidence": "",
         "Prevalence": "1/50,000 (US), 1/40,000 (global)"
     },
@@ -1173,7 +1170,7 @@
         "width": "33",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:618940",
+        "OMIM": "618940",
         "Incidence": "",
         "Prevalence": "Population dependent"
     },
@@ -1220,7 +1217,7 @@
         "width": "47",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "GCA",
-        "OMIM_ID": "OMIM:618412",
+        "OMIM": "618412",
         "Incidence": "",
         "Prevalence": "As of 2019, only 7 cases"
     },
@@ -1267,9 +1264,9 @@
         "width": "54",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:140000",
+        "OMIM": "140000",
         "Incidence": "",
-        "Prevalence": "\"Rare\""
+        "Prevalence": "Rare"
     },
     {
         "chrom": "chr7",
@@ -1314,9 +1311,9 @@
         "width": "36",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:140000",
+        "OMIM": "140000",
         "Incidence": "",
-        "Prevalence": "\"Rare\""
+        "Prevalence": "Rare"
     },
     {
         "chrom": "chr7",
@@ -1361,9 +1358,9 @@
         "width": "42",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:140000",
+        "OMIM": "140000",
         "Incidence": "",
-        "Prevalence": "\"Rare\""
+        "Prevalence": "Rare"
     },
     {
         "chrom": "chr2",
@@ -1408,7 +1405,7 @@
         "width": "45",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:186000",
+        "OMIM": "186000",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -1455,7 +1452,7 @@
         "width": "63",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:143100",
+        "OMIM": "143100",
         "Incidence": "",
         "Prevalence": "1/10,000"
     },
@@ -1494,7 +1491,7 @@
         "age_onset_min": "12",
         "age_onset_max": "66",
         "novel": "ref",
-        "Mechanism": "??",
+        "Mechanism": "",
         "Mechanism_detail": "\"unstable vertical transmission\"",
         "Mechanism_source": "(doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews, \"SourceId\": \"NBK1529\"",
@@ -1502,7 +1499,7 @@
         "width": "46",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:606438",
+        "OMIM": "606438",
         "Incidence": "",
         "Prevalence": "<1/1,000,000"
     },
@@ -1549,7 +1546,7 @@
         "width": "27",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:164310",
+        "OMIM": "164310",
         "Incidence": "",
         "Prevalence": "Population dependent"
     },
@@ -1596,7 +1593,7 @@
         "width": "72",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "TTTTA + TTTCA",
-        "OMIM_ID": "OMIM:613608",
+        "OMIM": "613608",
         "Incidence": "",
         "Prevalence": "~<1/35,000"
     },
@@ -1639,11 +1636,11 @@
         "Mechanism_detail": "No information found",
         "Mechanism_source": "N/A  in GeneCard",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, \"SourceId\": \"30342764\" (Pubmed), path range from gnomAD allele freqs",
-        "notes": "Modifier for ALS?",
+        "notes": "Proposed modifier for ALS",
         "width": "24",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:105400",
+        "OMIM": "105400",
         "Incidence": "1.5-4.7 per 100,000 person-years (All ALS, Europe/NA)",
         "Prevalence": "2.7-7.4/100,000 (All ALS, not just this locus)"
     },
@@ -1690,7 +1687,7 @@
         "width": "42",
         "repeatunit_path_norm": "AGGCCC",
         "repeatunit": "GGCCTG",
-        "OMIM_ID": "OMIM:614153",
+        "OMIM": "614153",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -1698,7 +1695,7 @@
         "chrom": "chr1",
         "start_hg38": "149390803",
         "stop_hg38": "149390842",
-        "start_hg19": "deletion/multiple?",
+        "start_hg19": "",
         "stop_hg19": "",
         "start_t2t": "148519696",
         "stop_t2t": "148519738",
@@ -1737,7 +1734,7 @@
         "width": "39",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:603472",
+        "OMIM": "603472",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -1784,7 +1781,7 @@
         "width": "21",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:618637",
+        "OMIM": "618637",
         "Incidence": "",
         "Prevalence": "Couldn't find"
     },
@@ -1831,7 +1828,7 @@
         "width": "20",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "CGN",
-        "OMIM_ID": "OMIM:164300",
+        "OMIM": "164300",
         "Incidence": "",
         "Prevalence": "1/100,000 Western countries"
     },
@@ -1878,7 +1875,7 @@
         "width": "46",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "GCN",
-        "OMIM_ID": "OMIM:209880",
+        "OMIM": "209880",
         "Incidence": "",
         "Prevalence": "1:148000-200000 births (Estimated)"
     },
@@ -1925,7 +1922,7 @@
         "width": "40",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "",
-        "OMIM_ID": "Disease association unclear?",
+        "OMIM": "Disease association unclear",
         "Incidence": "",
         "Prevalence": ""
     },
@@ -1972,7 +1969,7 @@
         "width": "31",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG",
-        "OMIM_ID": "OMIM:604326",
+        "OMIM": "604326",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -2019,7 +2016,7 @@
         "width": "33",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:616488",
+        "OMIM": "616488",
         "Incidence": "",
         "Prevalence": "<1/1,000,000"
     },
@@ -2066,7 +2063,7 @@
         "width": "91",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "TTTCA",
-        "OMIM_ID": "OMIM:618075",
+        "OMIM": "618075",
         "Incidence": "",
         "Prevalence": "~<1/35,000"
     },
@@ -2113,7 +2110,7 @@
         "width": "58",
         "repeatunit_path_norm": "AAGGG",
         "repeatunit": "AAGGG",
-        "OMIM_ID": "OMIM:614575",
+        "OMIM": "614575",
         "Incidence": "",
         "Prevalence": "Unknown, <1/1,000,000"
     },
@@ -2160,7 +2157,7 @@
         "width": "35",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "",
+        "OMIM": "",
         "Incidence": "",
         "Prevalence": "Population dependent"
     },
@@ -2207,7 +2204,7 @@
         "width": "42",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:119600",
+        "OMIM": "119600",
         "Incidence": "",
         "Prevalence": "1/1,000,000 births (likely underdiagnosed)"
     },
@@ -2246,7 +2243,7 @@
         "age_onset_min": "18",
         "age_onset_max": "50",
         "novel": "novel",
-        "Mechanism": "RNA molecules toxicity?",
+        "Mechanism": "RNA toxicity proposed",
         "Mechanism_detail": "RNA molecules",
         "Mechanism_source": "(OMIM)",
         "source": "Ishiura 2018. https://movementdisorders.onlinelibrary.wiley.com/doi/full/10.1002/mds.27832 reported TTTGA expansions in affected individuals: (TTTTA)114-123(TTTGA)108-116",
@@ -2254,7 +2251,7 @@
         "width": "105",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "TTTCA",
-        "OMIM_ID": "OMIM:601068",
+        "OMIM": "601068",
         "Incidence": "",
         "Prevalence": "~<1/35,000"
     },
@@ -2301,7 +2298,7 @@
         "width": "45",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:300123",
+        "OMIM": "300123",
         "Incidence": "",
         "Prevalence": ""
     },
@@ -2348,7 +2345,7 @@
         "width": "54",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:607876",
+        "OMIM": "607876",
         "Incidence": "",
         "Prevalence": "~<1/35,000"
     },
@@ -2395,7 +2392,7 @@
         "width": "110",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "CAG/CAA",
-        "OMIM_ID": "OMIM:607136",
+        "OMIM": "607136",
         "Incidence": "",
         "Prevalence": "Unknown (global), 0.47:1,000,000 (Japanese)"
     },
@@ -2442,7 +2439,7 @@
         "width": "45",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:187500",
+        "OMIM": "187500",
         "Incidence": "",
         "Prevalence": "Unknown for specific gene"
     },
@@ -2481,7 +2478,7 @@
         "age_onset_min": "32",
         "age_onset_max": "70",
         "novel": "ref",
-        "Mechanism": "RNA toxicity?",
+        "Mechanism": "RNA toxicity proposed",
         "Mechanism_detail": "\"sequestration of MBNL1 in RNA foci, similar to the mechanism underlying myotonic dystrophy-1 \"",
         "Mechanism_source": "(10.1074/jbc.M114.621607)",
         "source": "reds; \"Pathogenic Short Tandem Repeats Gnomad v3.1.2\", \"SourceId\": \"NBK535148\"",
@@ -2489,7 +2486,7 @@
         "width": "72",
         "repeatunit_path_norm": "AGC",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:613267",
+        "OMIM": "613267",
         "Incidence": "",
         "Prevalence": "~4/100 (over 40)"
     },
@@ -2536,7 +2533,7 @@
         "width": "93",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "TTTCA",
-        "OMIM_ID": "OMIM:618074",
+        "OMIM": "618074",
         "Incidence": "",
         "Prevalence": "~<1/35,000"
     },
@@ -2583,7 +2580,7 @@
         "width": "1",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "CCG",
-        "OMIM_ID": "OMIM:615777",
+        "OMIM": "615777",
         "Incidence": "",
         "Prevalence": "<1 / 1,000,000 births"
     },
@@ -2630,7 +2627,7 @@
         "width": "34",
         "repeatunit_path_norm": "AAATG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:615127",
+        "OMIM": "615127",
         "Incidence": "",
         "Prevalence": "~<1/35,000"
     },
@@ -2677,7 +2674,7 @@
         "width": "45",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:609637",
+        "OMIM": "609637",
         "Incidence": "",
         "Prevalence": "Unknown ZIC2 specific"
     },
@@ -2724,7 +2721,7 @@
         "width": "30",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
-        "OMIM_ID": "OMIM:314390",
+        "OMIM": "314390",
         "Incidence": "",
         "Prevalence": "Unknown"
     },
@@ -2771,7 +2768,7 @@
         "width": "38",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM_ID": "#616181",
+        "OMIM": "#616181",
         "Incidence": "",
         "Prevalence": "N/A"
     },
@@ -2818,7 +2815,7 @@
         "width": "82",
         "repeatunit_path_norm": "AGGC",
         "repeatunit": "CCTG",
-        "OMIM_ID": "OMIM:602668",
+        "OMIM": "602668",
         "Incidence": "",
         "Prevalence": "2.29/100,000"
     }
