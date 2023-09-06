@@ -11,7 +11,7 @@ options(stringsAsFactors = FALSE)
 # cut -f 5 str-disease-loci-2022.tsv > repeats.txt
 # python normalise_str.py > repeats_norm.txt
 
-disease.loci = read.csv('STR-disease-loci.csv')
+disease.loci = read.csv('data/STR-disease-loci.csv')
 
 # Switch between units
 disease.loci$norm_min_bp = disease.loci$normal_min * disease.loci$repeatunitlen
@@ -38,12 +38,15 @@ p_size = ggplot(disease.loci, aes(x = disease_id)) +
 htmltools::save_html(ggplotly(p_size, height = 1000), "images/plotly_path_size.html")
 
 # Age of onset
-p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease.loci$Inheritance != '') , aes(x = reorder(disease_id, -age_onset_min), color = Inheritance)) +
-  geom_linerange(aes(ymin = age_onset_min, ymax = age_onset_max + 1,
-                     ), size = 1.5) +
+p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease.loci$Inheritance != '') , 
+               aes(x = reorder(disease_id, -age_onset_min), color = Inheritance)) +
+  geom_linerange(aes(ymin = age_onset_min, ymax = age_onset_max,
+                     )) +
+  geom_point(aes(y = age_onset_min), size = 2.5) +
+  geom_point(aes(y = age_onset_max), size = 2.5) +
   scale_y_continuous(name = 'Age of onset (years)') +
   scale_x_discrete(name = 'Disease') +
-  geom_segment(aes(x = 1, y = 18, xend = 55, yend = 18), linetype = 'longdash', color = 'lightgrey') +
+  geom_segment(aes(x = 1, y = 18, xend = 58, yend = 18), linetype = 'longdash', color = 'lightgrey') +
   coord_flip()
 
 htmltools::save_html(ggplotly(p_age, height = 1000), "images/plotly_age_onset.html")
