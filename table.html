@@ -204,14 +204,18 @@
           }
         };
             
-        if ((f.Prevalence) != '') {
+        if (f.Prevalence != '' & f.Prevalence != 'N/A' & !f.Prevalence.startsWith('Unknown')) {
           this_row = this_row +
             `<li><b>Prevalence:</b> ` + f.Prevalence + `</li>`
         };
 
+        if (f.Mechanism != '' & f.Mechanism != 'N/A' & !f.Mechanism.startsWith('Unknown')) {
+          this_row = this_row +
+            `<li><b>Mechanism:</b> ` + f.Mechanism + `</li>`
+        };
+
         this_row = this_row +
             `
-            <li><b>Mechanism:</b> ` + f.Mechanism + `</li>
           </div>
         </div>
       </div>

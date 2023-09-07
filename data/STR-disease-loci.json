@@ -551,8 +551,8 @@
         "age_onset_min": "1",
         "age_onset_max": "73",
         "novel": "ref",
-        "Mechanism": "Polyglutamine/toxic gain-of-function; Unknown ",
-        "Mechanism_detail": "Polyglutamine/toxic gain-of-function; Unknown ",
+        "Mechanism": "Polyglutamine/toxic gain-of-function",
+        "Mechanism_detail": "Polyglutamine/toxic gain-of-function",
         "Mechanism_source": "(OMIM) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews,  \"SourceId\": \"NBK535148\", s40478-021-01201-x",
         "notes": "Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, which encodes a nearly pure polyglutamine expansion protein in the CAG direction, and ATXN8OS (603680), which, when transcribed, produces a noncoding CUG expansion RNA (Moseley et al., 2006). Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease",
@@ -2112,7 +2112,7 @@
         "repeatunit": "AAGGG",
         "OMIM": "614575",
         "Incidence": "",
-        "Prevalence": "Unknown, <1/1,000,000"
+        "Prevalence": "<1/1,000,000"
     },
     {
         "chrom": "chr12",
@@ -2394,7 +2394,7 @@
         "repeatunit": "CAG/CAA",
         "OMIM": "607136",
         "Incidence": "",
-        "Prevalence": "Unknown (global), 0.47:1,000,000 (Japanese)"
+        "Prevalence": "0.47:1,000,000 (Japanese)"
     },
     {
         "chrom": "chr22",
