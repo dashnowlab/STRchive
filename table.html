@@ -271,16 +271,14 @@
           <h4>Resources</h4>
           <div class="ui list">`
 
-        if (f.gene != '') {
-          var firstgene = f.gene.split("/")[0]
+        if (f.gnomAD_gene != '') {
           this_row = this_row + 
-          `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/` + firstgene + `?dataset=gnomad_r3">` + firstgene + `</a></li>`
+          `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/` + f.gnomAD_gene + `?dataset=gnomad_r3">` + f.gnomAD_gene + `</a></li>`
         };
 
-        if (f.gene != '') {
-          var firstgene = f.gene.split("/")[0]
+        if (f.STRipy_gene != '') {
           this_row = this_row + 
-          `<li><b>STRipy:</b> <a href="https://stripy.org/database/` + firstgene + `">` + firstgene + `</a></li>`
+          `<li><b>STRipy:</b> <a href="https://stripy.org/database/` + f.STRipy_gene + `">` + f.STRipy_gene + `</a></li>`
         };
 
         if (f.OMIM != '') {

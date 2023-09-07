@@ -44,7 +44,9 @@
         "repeatunit": "CGG",
         "OMIM": "309548",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "AFF2",
+        "gnomAD_gene": "AFF2"
     },
     {
         "chrom": "chr2",
@@ -72,7 +74,7 @@
         "intermediate": "",
         "intermediate_min": "",
         "intermediate_max": "",
-        "pathogenic": "300+",
+        "pathogenic": "300",
         "pathogenic_min": "300",
         "pathogenic_max": "300",
         "ref_copies": "8.7",
@@ -89,9 +91,11 @@
         "width": "25",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
-        "OMIM": "",
+        "OMIM": "601464",
         "Incidence": "",
-        "Prevalence": "N/A"
+        "Prevalence": "N/A",
+        "STRipy_gene": "",
+        "gnomAD_gene": ""
     },
     {
         "chrom": "chrX",
@@ -138,7 +142,9 @@
         "repeatunit": "CAG",
         "OMIM": "313200",
         "Incidence": "",
-        "Prevalence": "1:300,000 males (SBMA); 1/40,000 (Kennedy Disease)"
+        "Prevalence": "1:300,000 males (SBMA); 1/40,000 (Kennedy Disease)",
+        "STRipy_gene": "AR",
+        "gnomAD_gene": "AR"
     },
     {
         "chrom": "chrX",
@@ -185,7 +191,9 @@
         "repeatunit": "GCG",
         "OMIM": "308350; 300419; 300215",
         "Incidence": "1-2/100,000",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "ARX_1",
+        "gnomAD_gene": "ARX_1"
     },
     {
         "chrom": "chrX",
@@ -232,7 +240,9 @@
         "repeatunit": "GCG",
         "OMIM": "309510",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "ARX_2",
+        "gnomAD_gene": "ARX_2"
     },
     {
         "chrom": "chr12",
@@ -279,7 +289,9 @@
         "repeatunit": "CAG",
         "OMIM": "125370",
         "Incidence": "",
-        "Prevalence": "2-7/1,000,000"
+        "Prevalence": "2-7/1,000,000",
+        "STRipy_gene": "ATN1",
+        "gnomAD_gene": "ATN1"
     },
     {
         "chrom": "chr6",
@@ -326,7 +338,9 @@
         "repeatunit": "CTG",
         "OMIM": "164400",
         "Incidence": "",
-        "Prevalence": "1-2/100,000"
+        "Prevalence": "1-2/100,000",
+        "STRipy_gene": "ATXN1",
+        "gnomAD_gene": "ATXN1"
     },
     {
         "chrom": "chr22",
@@ -373,7 +387,9 @@
         "repeatunit": "ATTCT",
         "OMIM": "603516",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "ATXN10",
+        "gnomAD_gene": "ATXN10"
     },
     {
         "chrom": "chr12",
@@ -420,7 +436,9 @@
         "repeatunit": "CAG",
         "OMIM": "183090",
         "Incidence": "",
-        "Prevalence": "1-2/100,000 (population dependent)"
+        "Prevalence": "1-2/100,000 (population dependent)",
+        "STRipy_gene": "ATXN2",
+        "gnomAD_gene": "ATXN2"
     },
     {
         "chrom": "chr14",
@@ -467,7 +485,9 @@
         "repeatunit": "CTG",
         "OMIM": "109150",
         "Incidence": "",
-        "Prevalence": "1\u20135/100,000"
+        "Prevalence": "1\u20135/100,000",
+        "STRipy_gene": "ATXN3",
+        "gnomAD_gene": "ATXN3"
     },
     {
         "chrom": "chr3",
@@ -514,7 +534,9 @@
         "repeatunit": "CAG",
         "OMIM": "164500",
         "Incidence": "",
-        "Prevalence": "<1/300,000"
+        "Prevalence": "<1/300,000",
+        "STRipy_gene": "ATXN7",
+        "gnomAD_gene": "ATXN7"
     },
     {
         "chrom": "chr13",
@@ -561,7 +583,9 @@
         "repeatunit": "CTG",
         "OMIM": "608768",
         "Incidence": "",
-        "Prevalence": "<1/100,000"
+        "Prevalence": "<1/100,000",
+        "STRipy_gene": "ATXN8OS",
+        "gnomAD_gene": "ATXN8OS"
     },
     {
         "chrom": "chr16",
@@ -608,7 +632,9 @@
         "repeatunit": "TGGAA",
         "OMIM": "117210",
         "Incidence": "",
-        "Prevalence": "Unknown (more common in Japanese pop)"
+        "Prevalence": "Unknown (more common in Japanese pop)",
+        "STRipy_gene": "BEAN1",
+        "gnomAD_gene": "BEAN1"
     },
     {
         "chrom": "chr9",
@@ -653,9 +679,11 @@
         "width": "62",
         "repeatunit_path_norm": "CCCCGG",
         "repeatunit": "GGGGCC",
-        "OMIM": " 105500",
+        "OMIM": "105500",
         "Incidence": "",
-        "Prevalence": "The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population"
+        "Prevalence": "The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population",
+        "STRipy_gene": "C9ORF72",
+        "gnomAD_gene": "C9ORF72"
     },
     {
         "chrom": "chr19",
@@ -702,7 +730,9 @@
         "repeatunit": "CAG",
         "OMIM": "183086",
         "Incidence": "",
-        "Prevalence": "<1/1,000,000"
+        "Prevalence": "<1/1,000,000",
+        "STRipy_gene": "CACNA1A",
+        "gnomAD_gene": "CACNA1A"
     },
     {
         "chrom": "chr11",
@@ -749,7 +779,9 @@
         "repeatunit": "",
         "OMIM": "147791",
         "Incidence": "",
-        "Prevalence": "1/100,000 births"
+        "Prevalence": "1/100,000 births",
+        "STRipy_gene": "CBL",
+        "gnomAD_gene": ""
     },
     {
         "chrom": "chr19",
@@ -796,7 +828,9 @@
         "repeatunit": "",
         "OMIM": "132400; 177170",
         "Incidence": "",
-        "Prevalence": "9-16/100,000 births"
+        "Prevalence": "9-16/100,000 births",
+        "STRipy_gene": "COMP",
+        "gnomAD_gene": "COMP"
     },
     {
         "chrom": "chr1",
@@ -843,7 +877,9 @@
         "repeatunit": "ATTTC",
         "OMIM": "615945",
         "Incidence": "",
-        "Prevalence": "<1/1,000,000"
+        "Prevalence": "<1/1,000,000",
+        "STRipy_gene": "DAB1",
+        "gnomAD_gene": "DAB1"
     },
     {
         "chrom": "chr12",
@@ -890,7 +926,9 @@
         "repeatunit": "CGG",
         "OMIM": "136630",
         "Incidence": "",
-        "Prevalence": "N/A"
+        "Prevalence": "N/A",
+        "STRipy_gene": "DIP2B",
+        "gnomAD_gene": "DIP2B"
     },
     {
         "chrom": "chrX",
@@ -937,7 +975,9 @@
         "repeatunit": "",
         "OMIM": "310200",
         "Incidence": "",
-        "Prevalence": "1 in 3,500-5,000 live male births"
+        "Prevalence": "1 in 3,500-5,000 live male births",
+        "STRipy_gene": "DMD",
+        "gnomAD_gene": "DMD"
     },
     {
         "chrom": "chr19",
@@ -984,7 +1024,9 @@
         "repeatunit": "CAG",
         "OMIM": "160900",
         "Incidence": "",
-        "Prevalence": "5-20/100,000 "
+        "Prevalence": "5-20/100,000",
+        "STRipy_gene": "DMPK",
+        "gnomAD_gene": "DMPK"
     },
     {
         "chrom": "chrX",
@@ -1031,7 +1073,9 @@
         "repeatunit": "CGG",
         "OMIM": "300624; 300623",
         "Incidence": "",
-        "Prevalence": "16-25/100,000 males "
+        "Prevalence": "16-25/100,000 males",
+        "STRipy_gene": "FMR1",
+        "gnomAD_gene": "FMR1"
     },
     {
         "chrom": "chr3",
@@ -1078,7 +1122,9 @@
         "repeatunit": "",
         "OMIM": "110100",
         "Incidence": "",
-        "Prevalence": "1 in 50,000 births globally"
+        "Prevalence": "1 in 50,000 births globally",
+        "STRipy_gene": "FOXL2",
+        "gnomAD_gene": "FOXL2"
     },
     {
         "chrom": "chr9",
@@ -1125,7 +1171,9 @@
         "repeatunit": "AAG",
         "OMIM": "229300",
         "Incidence": "",
-        "Prevalence": "1/50,000 (US), 1/40,000 (global)"
+        "Prevalence": "1/50,000 (US), 1/40,000 (global)",
+        "STRipy_gene": "FXN",
+        "gnomAD_gene": "FXN"
     },
     {
         "chrom": "chr19",
@@ -1172,7 +1220,9 @@
         "repeatunit": "",
         "OMIM": "618940",
         "Incidence": "",
-        "Prevalence": "Population dependent"
+        "Prevalence": "Population dependent",
+        "STRipy_gene": "GIPC1",
+        "gnomAD_gene": "GIPC1"
     },
     {
         "chrom": "chr2",
@@ -1219,7 +1269,9 @@
         "repeatunit": "GCA",
         "OMIM": "618412",
         "Incidence": "",
-        "Prevalence": "As of 2019, only 7 cases"
+        "Prevalence": "As of 2019, only 7 cases",
+        "STRipy_gene": "GLS",
+        "gnomAD_gene": "GLS"
     },
     {
         "chrom": "chr7",
@@ -1266,7 +1318,9 @@
         "repeatunit": "",
         "OMIM": "140000",
         "Incidence": "",
-        "Prevalence": "Rare"
+        "Prevalence": "Rare",
+        "STRipy_gene": "HOXA13_3",
+        "gnomAD_gene": "HOXA13_3"
     },
     {
         "chrom": "chr7",
@@ -1313,7 +1367,9 @@
         "repeatunit": "",
         "OMIM": "140000",
         "Incidence": "",
-        "Prevalence": "Rare"
+        "Prevalence": "Rare",
+        "STRipy_gene": "HOXA13_2",
+        "gnomAD_gene": "HOXA13_2"
     },
     {
         "chrom": "chr7",
@@ -1353,14 +1409,16 @@
         "Mechanism": "Polyalanine ",
         "Mechanism_detail": "Polyalanine ",
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
-        "source": "reds; \"Pathogenic Short Tandem Repeats, Gnomad v3.1.2\" \"SourceId\": \"NBK1423\"\n",
+        "source": "reds; \"Pathogenic Short Tandem Repeats, Gnomad v3.1.2\" \"SourceId\": \"NBK1423\"",
         "notes": "There are 3 pathogenic polyalanine tracts in this gene",
         "width": "42",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "",
         "OMIM": "140000",
         "Incidence": "",
-        "Prevalence": "Rare"
+        "Prevalence": "Rare",
+        "STRipy_gene": "HOXA13_1",
+        "gnomAD_gene": "HOXA13_1"
     },
     {
         "chrom": "chr2",
@@ -1407,7 +1465,9 @@
         "repeatunit": "",
         "OMIM": "186000",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "HOXD13",
+        "gnomAD_gene": "HOXD13"
     },
     {
         "chrom": "chr4",
@@ -1454,7 +1514,9 @@
         "repeatunit": "CAG",
         "OMIM": "143100",
         "Incidence": "",
-        "Prevalence": "1/10,000"
+        "Prevalence": "1/10,000",
+        "STRipy_gene": "HTT",
+        "gnomAD_gene": "HTT"
     },
     {
         "chrom": "chr16",
@@ -1501,7 +1563,9 @@
         "repeatunit": "CAG",
         "OMIM": "606438",
         "Incidence": "",
-        "Prevalence": "<1/1,000,000"
+        "Prevalence": "<1/1,000,000",
+        "STRipy_gene": "JPH3",
+        "gnomAD_gene": "JPH3"
     },
     {
         "chrom": "chr8",
@@ -1541,14 +1605,16 @@
         "Mechanism": "RNA toxicity",
         "Mechanism_detail": "RNA mediated toxicity hypothesized; unknown",
         "Mechanism_source": "(OMIM),  (doi.org/10.1007/s11604-022-01343-5)",
-        "source": "OMIM 164310, Ishiura et al [2019], Ehdn, \"SourceId\": \"NBK535148\", PMID 31332380 ",
+        "source": "OMIM 164310, Ishiura et al [2019], Ehdn, \"SourceId\": \"NBK535148\", PMID 31332380",
         "notes": "CGG/CGT",
         "width": "27",
         "repeatunit_path_norm": "CCG",
         "repeatunit": "",
         "OMIM": "164310",
         "Incidence": "",
-        "Prevalence": "Population dependent"
+        "Prevalence": "Population dependent",
+        "STRipy_gene": "LRP12",
+        "gnomAD_gene": "LRP12"
     },
     {
         "chrom": "chr5",
@@ -1595,7 +1661,9 @@
         "repeatunit": "TTTTA + TTTCA",
         "OMIM": "613608",
         "Incidence": "",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "MARCHF6",
+        "gnomAD_gene": "MARCHF6"
     },
     {
         "chrom": "chr15",
@@ -1642,7 +1710,9 @@
         "repeatunit": "",
         "OMIM": "105400",
         "Incidence": "1.5-4.7 per 100,000 person-years (All ALS, Europe/NA)",
-        "Prevalence": "2.7-7.4/100,000 (All ALS, not just this locus)"
+        "Prevalence": "2.7-7.4/100,000 (All ALS, not just this locus)",
+        "STRipy_gene": "NIPA1",
+        "gnomAD_gene": "NIPA1"
     },
     {
         "chrom": "chr20",
@@ -1689,7 +1759,9 @@
         "repeatunit": "GGCCTG",
         "OMIM": "614153",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "NOP56",
+        "gnomAD_gene": "NOP56"
     },
     {
         "chrom": "chr1",
@@ -1736,7 +1808,9 @@
         "repeatunit": "",
         "OMIM": "603472",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "NOTCH2NLC",
+        "gnomAD_gene": "NOTCH2NLC"
     },
     {
         "chrom": "chr10",
@@ -1783,7 +1857,9 @@
         "repeatunit": "",
         "OMIM": "618637",
         "Incidence": "",
-        "Prevalence": "Couldn't find"
+        "Prevalence": "Couldn't find",
+        "STRipy_gene": "NUTM2B-AS1",
+        "gnomAD_gene": "NUTM2B-AS1"
     },
     {
         "chrom": "chr14",
@@ -1830,7 +1906,9 @@
         "repeatunit": "CGN",
         "OMIM": "164300",
         "Incidence": "",
-        "Prevalence": "1/100,000 Western countries"
+        "Prevalence": "1/100,000 Western countries",
+        "STRipy_gene": "PABPN1",
+        "gnomAD_gene": "PABPN1"
     },
     {
         "chrom": "chr4",
@@ -1871,13 +1949,15 @@
         "Mechanism_detail": "Polyalanine",
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Mirkin 2007, GeneReviews, \"SourceId\": \"NBK1427\", s40478-021-01201-x",
-        "notes": " \"ReferenceRegion\": \"4:41745971-41746032\", ",
+        "notes": "\"ReferenceRegion\": \"4:41745971-41746032\",",
         "width": "46",
         "repeatunit_path_norm": "CNG",
         "repeatunit": "GCN",
         "OMIM": "209880",
         "Incidence": "",
-        "Prevalence": "1:148000-200000 births (Estimated)"
+        "Prevalence": "1:148000-200000 births (Estimated)",
+        "STRipy_gene": "PHOX2B",
+        "gnomAD_gene": "PHOX2B"
     },
     {
         "chrom": "chr15",
@@ -1924,7 +2004,9 @@
         "repeatunit": "",
         "OMIM": "Disease association unclear",
         "Incidence": "",
-        "Prevalence": ""
+        "Prevalence": "",
+        "STRipy_gene": "",
+        "gnomAD_gene": ""
     },
     {
         "chrom": "chr5",
@@ -1971,7 +2053,9 @@
         "repeatunit": "CAG",
         "OMIM": "604326",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "PPP2R2B",
+        "gnomAD_gene": "PPP2R2B"
     },
     {
         "chrom": "chr9",
@@ -2018,7 +2102,9 @@
         "repeatunit": "",
         "OMIM": "616488",
         "Incidence": "",
-        "Prevalence": "<1/1,000,000"
+        "Prevalence": "<1/1,000,000",
+        "STRipy_gene": "PRDM12",
+        "gnomAD_gene": "PRDM12"
     },
     {
         "chrom": "chr4",
@@ -2065,7 +2151,9 @@
         "repeatunit": "TTTCA",
         "OMIM": "618075",
         "Incidence": "",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "RAPGEF2",
+        "gnomAD_gene": "RAPGEF2"
     },
     {
         "chrom": "chr4",
@@ -2112,7 +2200,9 @@
         "repeatunit": "AAGGG",
         "OMIM": "614575",
         "Incidence": "",
-        "Prevalence": "<1/1,000,000"
+        "Prevalence": "<1/1,000,000",
+        "STRipy_gene": "RFC1",
+        "gnomAD_gene": "RFC1"
     },
     {
         "chrom": "chr12",
@@ -2159,7 +2249,9 @@
         "repeatunit": "",
         "OMIM": "",
         "Incidence": "",
-        "Prevalence": "Population dependent"
+        "Prevalence": "Population dependent",
+        "STRipy_gene": "RILPL1",
+        "gnomAD_gene": ""
     },
     {
         "chrom": "chr6",
@@ -2206,7 +2298,9 @@
         "repeatunit": "",
         "OMIM": "119600",
         "Incidence": "",
-        "Prevalence": "1/1,000,000 births (likely underdiagnosed)"
+        "Prevalence": "1/1,000,000 births (likely underdiagnosed)",
+        "STRipy_gene": "RUNX2",
+        "gnomAD_gene": "RUNX2"
     },
     {
         "chrom": "chr8",
@@ -2253,7 +2347,9 @@
         "repeatunit": "TTTCA",
         "OMIM": "601068",
         "Incidence": "",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "SAMD12",
+        "gnomAD_gene": "SAMD12"
     },
     {
         "chrom": "chrX",
@@ -2300,7 +2396,9 @@
         "repeatunit": "",
         "OMIM": "300123",
         "Incidence": "",
-        "Prevalence": ""
+        "Prevalence": "",
+        "STRipy_gene": "SOX3",
+        "gnomAD_gene": "SOX3"
     },
     {
         "chrom": "chr2",
@@ -2347,7 +2445,9 @@
         "repeatunit": "",
         "OMIM": "607876",
         "Incidence": "",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "STARD7",
+        "gnomAD_gene": "STARD7"
     },
     {
         "chrom": "chr6",
@@ -2394,7 +2494,9 @@
         "repeatunit": "CAG/CAA",
         "OMIM": "607136",
         "Incidence": "",
-        "Prevalence": "0.47:1,000,000 (Japanese)"
+        "Prevalence": "0.47:1,000,000 (Japanese)",
+        "STRipy_gene": "TBP",
+        "gnomAD_gene": "TBP"
     },
     {
         "chrom": "chr22",
@@ -2441,7 +2543,9 @@
         "repeatunit": "",
         "OMIM": "187500",
         "Incidence": "",
-        "Prevalence": "Unknown for specific gene"
+        "Prevalence": "Unknown for specific gene",
+        "STRipy_gene": "TBX1",
+        "gnomAD_gene": "TBX1"
     },
     {
         "chrom": "chr18",
@@ -2488,7 +2592,9 @@
         "repeatunit": "",
         "OMIM": "613267",
         "Incidence": "",
-        "Prevalence": "~4/100 (over 40)"
+        "Prevalence": "~4/100 (over 40)",
+        "STRipy_gene": "TCF4",
+        "gnomAD_gene": "TCF4"
     },
     {
         "chrom": "chr16",
@@ -2535,7 +2641,9 @@
         "repeatunit": "TTTCA",
         "OMIM": "618074",
         "Incidence": "",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "TNRC6A",
+        "gnomAD_gene": "TNRC6A"
     },
     {
         "chrom": "chr16",
@@ -2582,7 +2690,9 @@
         "repeatunit": "CCG",
         "OMIM": "615777",
         "Incidence": "",
-        "Prevalence": "<1 / 1,000,000 births"
+        "Prevalence": "<1 / 1,000,000 births",
+        "STRipy_gene": "XYLT1",
+        "gnomAD_gene": "XYLT1"
     },
     {
         "chrom": "chr3",
@@ -2629,7 +2739,9 @@
         "repeatunit": "",
         "OMIM": "615127",
         "Incidence": "",
-        "Prevalence": "~<1/35,000"
+        "Prevalence": "~<1/35,000",
+        "STRipy_gene": "YEATS2",
+        "gnomAD_gene": "YEATS2"
     },
     {
         "chrom": "chr13",
@@ -2676,7 +2788,9 @@
         "repeatunit": "",
         "OMIM": "609637",
         "Incidence": "",
-        "Prevalence": "Unknown ZIC2 specific"
+        "Prevalence": "Unknown ZIC2 specific",
+        "STRipy_gene": "ZIC2",
+        "gnomAD_gene": "ZIC2"
     },
     {
         "chrom": "chrX",
@@ -2723,7 +2837,9 @@
         "repeatunit": "",
         "OMIM": "314390",
         "Incidence": "",
-        "Prevalence": "Unknown"
+        "Prevalence": "Unknown",
+        "STRipy_gene": "ZIC3",
+        "gnomAD_gene": "ZIC3"
     },
     {
         "chrom": "chr7",
@@ -2770,7 +2886,9 @@
         "repeatunit": "",
         "OMIM": "#616181",
         "Incidence": "",
-        "Prevalence": "N/A"
+        "Prevalence": "N/A",
+        "STRipy_gene": "",
+        "gnomAD_gene": ""
     },
     {
         "chrom": "chr3",
@@ -2817,6 +2935,8 @@
         "repeatunit": "CCTG",
         "OMIM": "602668",
         "Incidence": "",
-        "Prevalence": "2.29/100,000"
+        "Prevalence": "2.29/100,000",
+        "STRipy_gene": "CNBP",
+        "gnomAD_gene": "CNBP"
     }
 ]
