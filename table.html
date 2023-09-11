@@ -163,14 +163,31 @@
 
         if ((f.start_hg19) != '') {
           this_row = this_row +
-            `<li><b>hg19:</b> ` + f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</li>`
+            `<li><b>hg19:</b> <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&position=` +
+              f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `">` +
+              f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</a></li>`
+        };
+        if ((f.start_hg38) != '') {
+          this_row = this_row +
+            `<li><b>hg38:</b> <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `">` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</a></li>`
+        };
+        if ((f.start_t2t) != '') {
+          this_row = this_row +
+            `<li><b>T2T CHM13 v1.0:</b> <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&position=` +
+              f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `">` +
+              f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</a></li>`
         };
         this_row = this_row +
             `
-            <li><b>hg38:</b> ` + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</li>
-            <li><b>T2T CHM13 v1.0:</b> ` + f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</li>
-            <li><b>Type:</b> ` + f.type + `</li>
-            <li><b>Location:</b> ` + f.location_in_gene + `</li>
+            <li><b>Type:</b> ` + f.type + `</li>`
+        if (f.location_in_gene != '') {
+          this_row = this_row +
+            `<li><b>Location:</b> ` + f.location_in_gene + `</li>`
+        };
+        this_row = this_row +
+            `
             <li><b>Reference motif:</b> ` + f.repeatunit_ref + `</li>
           </div>
         </div>
