@@ -306,6 +306,14 @@
           })
           this_row = this_row + `</li>`
         };
+        if (f.GeneReviews != '') {
+          this_row = this_row + `<li><b>GeneReviews:</b> `
+          f.GeneReviews.split(";").forEach(function (GeneReviewsid) {
+            this_row = this_row +
+            `<a href="https://www.ncbi.nlm.nih.gov/books/` + GeneReviewsid.trim() + `">` + GeneReviewsid + `</a>`
+          })
+          this_row = this_row + `</li>`
+        };
         this_row = this_row +
             `
           </div>

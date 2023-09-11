@@ -46,7 +46,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "AFF2",
-        "gnomAD_gene": "AFF2"
+        "gnomAD_gene": "AFF2",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr2",
@@ -95,7 +96,8 @@
         "Incidence": "",
         "Prevalence": "N/A",
         "STRipy_gene": "",
-        "gnomAD_gene": ""
+        "gnomAD_gene": "",
+        "GeneReviews": ""
     },
     {
         "chrom": "chrX",
@@ -144,7 +146,8 @@
         "Incidence": "",
         "Prevalence": "1:300,000 males (SBMA); 1/40,000 (Kennedy Disease)",
         "STRipy_gene": "AR",
-        "gnomAD_gene": "AR"
+        "gnomAD_gene": "AR",
+        "GeneReviews": "NBK1333"
     },
     {
         "chrom": "chrX",
@@ -193,7 +196,8 @@
         "Incidence": "1-2/100,000",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "ARX_1",
-        "gnomAD_gene": "ARX_1"
+        "gnomAD_gene": "ARX_1",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chrX",
@@ -242,7 +246,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "ARX_2",
-        "gnomAD_gene": "ARX_2"
+        "gnomAD_gene": "ARX_2",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr12",
@@ -291,7 +296,8 @@
         "Incidence": "",
         "Prevalence": "2-7/1,000,000",
         "STRipy_gene": "ATN1",
-        "gnomAD_gene": "ATN1"
+        "gnomAD_gene": "ATN1",
+        "GeneReviews": "NBK1491"
     },
     {
         "chrom": "chr6",
@@ -340,7 +346,8 @@
         "Incidence": "",
         "Prevalence": "1-2/100,000",
         "STRipy_gene": "ATXN1",
-        "gnomAD_gene": "ATXN1"
+        "gnomAD_gene": "ATXN1",
+        "GeneReviews": "NBK1184"
     },
     {
         "chrom": "chr22",
@@ -389,7 +396,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "ATXN10",
-        "gnomAD_gene": "ATXN10"
+        "gnomAD_gene": "ATXN10",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr12",
@@ -438,7 +446,8 @@
         "Incidence": "",
         "Prevalence": "1-2/100,000 (population dependent)",
         "STRipy_gene": "ATXN2",
-        "gnomAD_gene": "ATXN2"
+        "gnomAD_gene": "ATXN2",
+        "GeneReviews": "NBK1275"
     },
     {
         "chrom": "chr14",
@@ -487,7 +496,8 @@
         "Incidence": "",
         "Prevalence": "1\u20135/100,000",
         "STRipy_gene": "ATXN3",
-        "gnomAD_gene": "ATXN3"
+        "gnomAD_gene": "ATXN3",
+        "GeneReviews": "NBK1196"
     },
     {
         "chrom": "chr3",
@@ -536,7 +546,8 @@
         "Incidence": "",
         "Prevalence": "<1/300,000",
         "STRipy_gene": "ATXN7",
-        "gnomAD_gene": "ATXN7"
+        "gnomAD_gene": "ATXN7",
+        "GeneReviews": "NBK1256"
     },
     {
         "chrom": "chr13",
@@ -585,7 +596,8 @@
         "Incidence": "",
         "Prevalence": "<1/100,000",
         "STRipy_gene": "ATXN8OS",
-        "gnomAD_gene": "ATXN8OS"
+        "gnomAD_gene": "ATXN8OS",
+        "GeneReviews": "NBK1268"
     },
     {
         "chrom": "chr16",
@@ -634,7 +646,8 @@
         "Incidence": "",
         "Prevalence": "Unknown (more common in Japanese pop)",
         "STRipy_gene": "BEAN1",
-        "gnomAD_gene": "BEAN1"
+        "gnomAD_gene": "BEAN1",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr9",
@@ -683,7 +696,8 @@
         "Incidence": "",
         "Prevalence": "The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population",
         "STRipy_gene": "C9ORF72",
-        "gnomAD_gene": "C9ORF72"
+        "gnomAD_gene": "C9ORF72",
+        "GeneReviews": "NBK268647"
     },
     {
         "chrom": "chr19",
@@ -732,7 +746,8 @@
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "CACNA1A",
-        "gnomAD_gene": "CACNA1A"
+        "gnomAD_gene": "CACNA1A",
+        "GeneReviews": "NBK1140"
     },
     {
         "chrom": "chr11",
@@ -781,7 +796,8 @@
         "Incidence": "",
         "Prevalence": "1/100,000 births",
         "STRipy_gene": "CBL",
-        "gnomAD_gene": ""
+        "gnomAD_gene": "",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr19",
@@ -830,7 +846,8 @@
         "Incidence": "",
         "Prevalence": "9-16/100,000 births",
         "STRipy_gene": "COMP",
-        "gnomAD_gene": "COMP"
+        "gnomAD_gene": "COMP",
+        "GeneReviews": "NBK1123; NBK1487"
     },
     {
         "chrom": "chr1",
@@ -879,7 +896,8 @@
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "DAB1",
-        "gnomAD_gene": "DAB1"
+        "gnomAD_gene": "DAB1",
+        "GeneReviews": "NBK541729"
     },
     {
         "chrom": "chr12",
@@ -928,7 +946,8 @@
         "Incidence": "",
         "Prevalence": "N/A",
         "STRipy_gene": "DIP2B",
-        "gnomAD_gene": "DIP2B"
+        "gnomAD_gene": "DIP2B",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chrX",
@@ -949,7 +968,7 @@
         "locus_structure": "",
         "Inheritance": "XR",
         "type": "Intronic",
-        "location_in_gene": "",
+        "location_in_gene": "Intron 62",
         "normal": "<33",
         "normal_min": "16",
         "normal_max": "33",
@@ -977,7 +996,8 @@
         "Incidence": "",
         "Prevalence": "1 in 3,500-5,000 live male births",
         "STRipy_gene": "DMD",
-        "gnomAD_gene": "DMD"
+        "gnomAD_gene": "DMD",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr19",
@@ -1026,7 +1046,8 @@
         "Incidence": "",
         "Prevalence": "5-20/100,000",
         "STRipy_gene": "DMPK",
-        "gnomAD_gene": "DMPK"
+        "gnomAD_gene": "DMPK",
+        "GeneReviews": "NBK1165"
     },
     {
         "chrom": "chr13",
@@ -1075,7 +1096,8 @@
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "FGF14",
-        "gnomAD_gene": ""
+        "gnomAD_gene": "",
+        "GeneReviews": ""
     },
     {
         "chrom": "chrX",
@@ -1124,7 +1146,8 @@
         "Incidence": "",
         "Prevalence": "16-25/100,000 males",
         "STRipy_gene": "FMR1",
-        "gnomAD_gene": "FMR1"
+        "gnomAD_gene": "FMR1",
+        "GeneReviews": "NBK1384"
     },
     {
         "chrom": "chr3",
@@ -1173,7 +1196,8 @@
         "Incidence": "",
         "Prevalence": "1 in 50,000 births globally",
         "STRipy_gene": "FOXL2",
-        "gnomAD_gene": "FOXL2"
+        "gnomAD_gene": "FOXL2",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr9",
@@ -1222,7 +1246,8 @@
         "Incidence": "",
         "Prevalence": "1/50,000 (US), 1/40,000 (global)",
         "STRipy_gene": "FXN",
-        "gnomAD_gene": "FXN"
+        "gnomAD_gene": "FXN",
+        "GeneReviews": "NBK1281"
     },
     {
         "chrom": "chr19",
@@ -1271,7 +1296,8 @@
         "Incidence": "",
         "Prevalence": "Population dependent",
         "STRipy_gene": "GIPC1",
-        "gnomAD_gene": "GIPC1"
+        "gnomAD_gene": "GIPC1",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr2",
@@ -1320,7 +1346,8 @@
         "Incidence": "",
         "Prevalence": "As of 2019, only 7 cases",
         "STRipy_gene": "GLS",
-        "gnomAD_gene": "GLS"
+        "gnomAD_gene": "GLS",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr7",
@@ -1369,7 +1396,8 @@
         "Incidence": "",
         "Prevalence": "Rare",
         "STRipy_gene": "HOXA13_3",
-        "gnomAD_gene": "HOXA13_3"
+        "gnomAD_gene": "HOXA13_3",
+        "GeneReviews": "NBK1423"
     },
     {
         "chrom": "chr7",
@@ -1418,7 +1446,8 @@
         "Incidence": "",
         "Prevalence": "Rare",
         "STRipy_gene": "HOXA13_2",
-        "gnomAD_gene": "HOXA13_2"
+        "gnomAD_gene": "HOXA13_2",
+        "GeneReviews": "NBK1423"
     },
     {
         "chrom": "chr7",
@@ -1467,7 +1496,8 @@
         "Incidence": "",
         "Prevalence": "Rare",
         "STRipy_gene": "HOXA13_1",
-        "gnomAD_gene": "HOXA13_1"
+        "gnomAD_gene": "HOXA13_1",
+        "GeneReviews": "NBK1423"
     },
     {
         "chrom": "chr2",
@@ -1516,7 +1546,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "HOXD13",
-        "gnomAD_gene": "HOXD13"
+        "gnomAD_gene": "HOXD13",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr4",
@@ -1565,7 +1596,8 @@
         "Incidence": "",
         "Prevalence": "1/10,000",
         "STRipy_gene": "HTT",
-        "gnomAD_gene": "HTT"
+        "gnomAD_gene": "HTT",
+        "GeneReviews": "NBK1305"
     },
     {
         "chrom": "chr16",
@@ -1614,7 +1646,8 @@
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "JPH3",
-        "gnomAD_gene": "JPH3"
+        "gnomAD_gene": "JPH3",
+        "GeneReviews": "NBK1529"
     },
     {
         "chrom": "chr8",
@@ -1663,7 +1696,8 @@
         "Incidence": "",
         "Prevalence": "Population dependent",
         "STRipy_gene": "LRP12",
-        "gnomAD_gene": "LRP12"
+        "gnomAD_gene": "LRP12",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr5",
@@ -1712,7 +1746,8 @@
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "MARCHF6",
-        "gnomAD_gene": "MARCHF6"
+        "gnomAD_gene": "MARCHF6",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr15",
@@ -1761,7 +1796,8 @@
         "Incidence": "1.5-4.7 per 100,000 person-years (All ALS, Europe/NA)",
         "Prevalence": "2.7-7.4/100,000 (All ALS, not just this locus)",
         "STRipy_gene": "NIPA1",
-        "gnomAD_gene": "NIPA1"
+        "gnomAD_gene": "NIPA1",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr20",
@@ -1810,7 +1846,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "NOP56",
-        "gnomAD_gene": "NOP56"
+        "gnomAD_gene": "NOP56",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr1",
@@ -1859,7 +1896,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "NOTCH2NLC",
-        "gnomAD_gene": "NOTCH2NLC"
+        "gnomAD_gene": "NOTCH2NLC",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr10",
@@ -1908,7 +1946,8 @@
         "Incidence": "",
         "Prevalence": "Couldn't find",
         "STRipy_gene": "NUTM2B-AS1",
-        "gnomAD_gene": "NUTM2B-AS1"
+        "gnomAD_gene": "NUTM2B-AS1",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr14",
@@ -1957,7 +1996,8 @@
         "Incidence": "",
         "Prevalence": "1/100,000 Western countries",
         "STRipy_gene": "PABPN1",
-        "gnomAD_gene": "PABPN1"
+        "gnomAD_gene": "PABPN1",
+        "GeneReviews": "NBK1126"
     },
     {
         "chrom": "chr4",
@@ -2006,7 +2046,8 @@
         "Incidence": "",
         "Prevalence": "1:148000-200000 births (Estimated)",
         "STRipy_gene": "PHOX2B",
-        "gnomAD_gene": "PHOX2B"
+        "gnomAD_gene": "PHOX2B",
+        "GeneReviews": "NBK1427"
     },
     {
         "chrom": "chr15",
@@ -2055,7 +2096,8 @@
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
-        "gnomAD_gene": ""
+        "gnomAD_gene": "",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr5",
@@ -2104,7 +2146,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "PPP2R2B",
-        "gnomAD_gene": "PPP2R2B"
+        "gnomAD_gene": "PPP2R2B",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr9",
@@ -2153,7 +2196,8 @@
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "PRDM12",
-        "gnomAD_gene": "PRDM12"
+        "gnomAD_gene": "PRDM12",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr4",
@@ -2202,7 +2246,8 @@
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "RAPGEF2",
-        "gnomAD_gene": "RAPGEF2"
+        "gnomAD_gene": "RAPGEF2",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr4",
@@ -2251,7 +2296,8 @@
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "RFC1",
-        "gnomAD_gene": "RFC1"
+        "gnomAD_gene": "RFC1",
+        "GeneReviews": "NBK564656"
     },
     {
         "chrom": "chr12",
@@ -2300,7 +2346,8 @@
         "Incidence": "",
         "Prevalence": "Population dependent",
         "STRipy_gene": "RILPL1",
-        "gnomAD_gene": ""
+        "gnomAD_gene": "",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr6",
@@ -2349,7 +2396,8 @@
         "Incidence": "",
         "Prevalence": "1/1,000,000 births (likely underdiagnosed)",
         "STRipy_gene": "RUNX2",
-        "gnomAD_gene": "RUNX2"
+        "gnomAD_gene": "RUNX2",
+        "GeneReviews": "NBK1513"
     },
     {
         "chrom": "chr8",
@@ -2398,7 +2446,8 @@
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "SAMD12",
-        "gnomAD_gene": "SAMD12"
+        "gnomAD_gene": "SAMD12",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chrX",
@@ -2447,7 +2496,8 @@
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "SOX3",
-        "gnomAD_gene": "SOX3"
+        "gnomAD_gene": "SOX3",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr2",
@@ -2496,7 +2546,8 @@
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "STARD7",
-        "gnomAD_gene": "STARD7"
+        "gnomAD_gene": "STARD7",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr6",
@@ -2545,7 +2596,8 @@
         "Incidence": "",
         "Prevalence": "0.47:1,000,000 (Japanese)",
         "STRipy_gene": "TBP",
-        "gnomAD_gene": "TBP"
+        "gnomAD_gene": "TBP",
+        "GeneReviews": "NBK1438"
     },
     {
         "chrom": "chr22",
@@ -2594,7 +2646,8 @@
         "Incidence": "",
         "Prevalence": "Unknown for specific gene",
         "STRipy_gene": "TBX1",
-        "gnomAD_gene": "TBX1"
+        "gnomAD_gene": "TBX1",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr18",
@@ -2643,7 +2696,8 @@
         "Incidence": "",
         "Prevalence": "~4/100 (over 40)",
         "STRipy_gene": "TCF4",
-        "gnomAD_gene": "TCF4"
+        "gnomAD_gene": "TCF4",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr16",
@@ -2692,7 +2746,8 @@
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "TNRC6A",
-        "gnomAD_gene": "TNRC6A"
+        "gnomAD_gene": "TNRC6A",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr16",
@@ -2741,7 +2796,8 @@
         "Incidence": "",
         "Prevalence": "<1 / 1,000,000 births",
         "STRipy_gene": "XYLT1",
-        "gnomAD_gene": "XYLT1"
+        "gnomAD_gene": "XYLT1",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr3",
@@ -2790,7 +2846,8 @@
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "YEATS2",
-        "gnomAD_gene": "YEATS2"
+        "gnomAD_gene": "YEATS2",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr13",
@@ -2839,7 +2896,8 @@
         "Incidence": "",
         "Prevalence": "Unknown ZIC2 specific",
         "STRipy_gene": "ZIC2",
-        "gnomAD_gene": "ZIC2"
+        "gnomAD_gene": "ZIC2",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chrX",
@@ -2888,7 +2946,8 @@
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "ZIC3",
-        "gnomAD_gene": "ZIC3"
+        "gnomAD_gene": "ZIC3",
+        "GeneReviews": "NBK535148"
     },
     {
         "chrom": "chr7",
@@ -2937,7 +2996,8 @@
         "Incidence": "",
         "Prevalence": "N/A",
         "STRipy_gene": "",
-        "gnomAD_gene": ""
+        "gnomAD_gene": "",
+        "GeneReviews": ""
     },
     {
         "chrom": "chr3",
@@ -2986,6 +3046,7 @@
         "Incidence": "",
         "Prevalence": "2.29/100,000",
         "STRipy_gene": "CNBP",
-        "gnomAD_gene": "CNBP"
+        "gnomAD_gene": "CNBP",
+        "GeneReviews": "NBK1466"
     }
 ]
