@@ -1,13 +1,19 @@
 import csv
 import json
+import sys
+sys.path.append('../')
+import reftogeneorientation
 
 def main():
 
     in_csv = 'data/STR-disease-loci.csv'
-    out_json = 'data/STR-disease-loci.json'
+    out_json = 'data/STR-disease-loci.processed.json'
+    out_csv = 'data/STR-disease-loci.processed.csv'
+
+    reftogeneorientation.process_csv(in_csv, out_csv)
 
     # Read CSV file
-    with open(in_csv, 'r') as csv_file:
+    with open(out_csv, 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         data = list(csv_reader)
 
