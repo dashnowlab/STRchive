@@ -68,10 +68,20 @@ def process_csv(in_csv, out_csv):
     for index, row in df.iterrows():
         gene_strand = row['gene_strand']
         reference_orientation = row['pathogenic_motif_reference_orientation']
-
         # Check if gene_strand is "+"
         if gene_strand == "+":
             pathogenic_motif_gene_orientation = reference_orientation
+            pathogenic_motifs = [motif.strip() for motif in re.split(r',', pathogenic_motif_gene_orientation)]
+            normalized_pathogenic_motifs = []
+            # print("reference motifs", reference_motifs)
+            # get the reverse complement of the reference orientation pathogenic motifs, and normalize
+            for motif in pathogenic_motifs:
+                print(motif)
+                normalized_pathogenic_motif = normalise_str(motif)
+                normalized_pathogenic_motifs.append(normalized_pathogenic_motif)
+                print(normalized_pathogenic_motifs)
+                pathogenic_motif_gene_orientation = normalized_pathogenic_motifs
+            print(pathogenic_motif_gene_orientation)
         # Deal with the commas
         elif ',' in reference_orientation:
             normalized_reference_rc = []
