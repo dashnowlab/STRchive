@@ -3,6 +3,7 @@ import pandas as pd
 from itertools import product
 import re
 import numpy as np
+import math
 
 def circular_permuted(x):
     """
@@ -56,81 +57,73 @@ def normalise_str(in_dna):
 
     return [min(all_possible)]
 
+
+def get_new_motif(motif, gene_strand):
+    """
+    Args:
+        motif (string)
+        gene_strand: either + or -
+    Returns:
+        the normalized output of the string
+    Get the new normalized motif for each row.
+    If gene_strand is +, reference orientation = gene orientation
+    If gene_strand is -, reverse_complement ref_ori for gene_ori
+    """
+    if gene_strand == "+":
+        normalized_motif = normalise_str(motif)
+    else:
+        seq = Seq(motif)
+        reverse_comp = str(seq.reverse_complement())
+        normalized_motif = normalise_str(reverse_comp)
+    return normalized_motif
+
 def process_csv(in_csv, out_csv):
 
     # Read the CSV file into a DataFrame
     df = pd.read_csv(in_csv, dtype=str)
 
-    # Create an empty list to store the results
-    results = []
+    pathogenic_results = []
+    benign_results = []
+    unknown_results = []
 
-    # Iterate through the rows of the DataFrame
     for index, row in df.iterrows():
         gene_strand = row['gene_strand']
-        reference_orientation = row['pathogenic_motif_reference_orientation']
-        # Check if gene_strand is "+"
-        if gene_strand == "+":
-            pathogenic_motif_gene_orientation = reference_orientation
-            pathogenic_motifs = [motif.strip() for motif in re.split(r',', pathogenic_motif_gene_orientation)]
-            normalized_pathogenic_motifs = []
-            # print("reference motifs", reference_motifs)
-            # get the reverse complement of the reference orientation pathogenic motifs, and normalize
-            for motif in pathogenic_motifs:
-                print(motif)
-                normalized_pathogenic_motif = normalise_str(motif)
-                normalized_pathogenic_motifs.append(normalized_pathogenic_motif)
-                print(normalized_pathogenic_motifs)
-                pathogenic_motif_gene_orientation = normalized_pathogenic_motifs
-            print(pathogenic_motif_gene_orientation)
-        # Deal with the commas
-        elif ',' in reference_orientation:
-            normalized_reference_rc = []
-            reference_motifs = [motif.strip() for motif in re.split(r',', reference_orientation)]
-            # print("reference motifs", reference_motifs)
-            # get the reverse complement of the reference orientation pathogenic motifs, and normalize
-            for motif in reference_motifs:
-                seq = Seq(motif)
-                reverse_comp = str(seq.reverse_complement())
-                normalized_reference_motifs_rc = normalise_str(reverse_comp)
-                normalized_reference_rc.append(str(normalized_reference_motifs_rc))  # Append reverse complement as a string to the list
-            pathogenic_motif_gene_orientation = normalized_reference_rc
+        pathogenic_reference_orientation = row['pathogenic_motif_reference_orientation']
+        benign_reference_orientation = row['benign_motif_reference_orientation']
+        unknown_reference_orientation = row['unknown_motif_reference_orientation']
+
+        pathogenic_motifs = [motif.strip() for motif in re.split(r',', pathogenic_reference_orientation)]
+        normalized_pathogenic_motifs = []
+
+        benign_motifs = [motif.strip() for motif in re.split(r',', benign_reference_orientation)]
+        normalized_benign_motifs = []
+
+        if isinstance(unknown_reference_orientation, str) and unknown_reference_orientation:
+            unknown_motifs = [motif.strip() for motif in re.split(r',', unknown_reference_orientation)]
         else:
-            # Reverse complement for gene_strand == "-"
-            reference_orientation_rc = str(Seq(reference_orientation).reverse_complement())
+            unknown_motifs = []
+        normalized_unknown_motifs = []
 
-            # Run normalise_str for reference_orientation and its reverse complement
-            normalized_reference_rc = normalise_str(reference_orientation_rc)
+        for motif in pathogenic_motifs:
+            normalized_pathogenic_motif = get_new_motif(motif, gene_strand)
+            normalized_pathogenic_motifs.append(normalized_pathogenic_motif)
 
-            pathogenic_motif_gene_orientation = normalized_reference_rc
+        for motif in benign_motifs:
+            normalized_benign_motif = get_new_motif(motif, gene_strand)
+            normalized_benign_motifs.append(normalized_benign_motif)
 
-        # Append the result to the results list
-        results.append(pathogenic_motif_gene_orientation)
+        for motif in unknown_motifs:
+            normalized_unknown_motif = get_new_motif(motif, gene_strand)
+            normalized_unknown_motifs.append(normalized_unknown_motif)
 
-    df['pathogenic_motif_gene_orientation'] = results
+    # Append the list of normalized motifs to results
+        pathogenic_results.append(normalized_pathogenic_motifs)
+        benign_results.append(normalized_benign_motifs)
+        unknown_results.append(normalized_unknown_motifs)
 
-    # Apply the normalization function to the filtered rows
-    # print(df['pathogenic_motif_gene_orientation'])
-
-    # df['pathogenic_motif_gene_orientation'] = df['pathogenic_motif_gene_orientation'].apply(
-    #     lambda x: ','.join(map(str, [normalise_str(m) for m in x.split(',')])) if ',' in x else normalise_str(x)
-    # )
-
-    # ### Pathogenic
-    #     df['pathogenic_motif_gene_orientation'] = df['pathogenic_motif_reference_orientation'].apply(lambda x: str(Seq(x).reverse_complement()))
-    # # Standardize the new column, handling multiple values separated by commas
-    #     df['pathogenic_motif_gene_orientation'] = df['pathogenic_motif_reference_orientation'].apply(lambda x: ','.join(map(str, [normalise_str(m) for m in x.split(',')])) if ',' in x else normalise_str(x))
-
-    ### Benign
-    df['benign_motif_gene_orientation'] = df['benign_motif_reference_orientation'].apply(lambda x: str(Seq(x).reverse_complement()))
-    # Standardize the new column, handling multiple values separated by commas
-    df['benign_motif_gene_orientation'] = df['benign_motif_gene_orientation'].apply(lambda x: ','.join(map(str, [normalise_str(m) for m in x.split(',')])) if ',' in x else normalise_str(x))
-
-    ### Unknown
-    df['unknown_motif_reference_orientation'] = df['unknown_motif_reference_orientation'].apply(lambda x: str(x) if isinstance(x, str) else (str(x) if x is not None else None))
-    # Apply transformations
-    df['unknown_motif_gene_orientation'] = df['unknown_motif_reference_orientation'].apply(lambda x: str(Seq(x).reverse_complement()) if isinstance(x, str) else None)
-    # Standardize the new column, handling multiple values separated by commas
-    df['unknown_motif_gene_orientation'] = df['unknown_motif_gene_orientation'].apply(lambda x: ','.join(map(str, [normalise_str(m) for m in x.split(',')])) if isinstance(x, str) and ',' in x else (normalise_str(x) if isinstance(x, str) else None))
+    df['pathogenic_motif_gene_orientation'] = pathogenic_results
+    df['benign_motif_gene_orientation'] = benign_results
+    df['unknown_motif_gene_orientation'] = unknown_results
 
     # df = reverse_complement_and_standardize(df, df['benign_motif_reference_orientation'], df['benign_motif_gene_orientation'])
     df = df.applymap(lambda x: str(x).replace('[', '').replace(']', '').replace("'", '').replace('"',''))
