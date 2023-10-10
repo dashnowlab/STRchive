@@ -28,8 +28,8 @@ def normalise_str(in_dna):
         in_dna (sequence)
     Returns:
         the normalized output of the string
-    Find all possible equivalent STR sequences and return the first alphabetically for each, with multiple possible
-    outputs for each replacement of 'N'.
+    Find all possible equivalent STR sequences and return the first alphabetically for each, with
+    multiple possible outputs for each replacement of 'N'.
     """
     if in_dna is None or len(in_dna) == 0:
         return ''
@@ -57,7 +57,6 @@ def normalise_str(in_dna):
 
     return [min(all_possible)]
 
-
 def get_new_motif(motif, gene_strand):
     """
     Args:
@@ -78,57 +77,64 @@ def get_new_motif(motif, gene_strand):
     return normalized_motif
 
 def process_csv(in_csv, out_csv):
-
+    """
+    Args:
+        in_csv: the input csv
+    Returns:
+        out_csv: the output csv, processed with the new columns
+   Add the gene orientation columns with normalized motifs
+    """
     # Read the CSV file into a DataFrame
     df = pd.read_csv(in_csv, dtype=str)
 
+
+    # we need these empty bits to fill with the new column results!
     pathogenic_results = []
     benign_results = []
     unknown_results = []
 
     for index, row in df.iterrows():
+        # input the rows we need: the gene strand and reference orientation
         gene_strand = row['gene_strand']
         pathogenic_reference_orientation = row['pathogenic_motif_reference_orientation']
         benign_reference_orientation = row['benign_motif_reference_orientation']
         unknown_reference_orientation = row['unknown_motif_reference_orientation']
 
-        pathogenic_motifs = [motif.strip() for motif in re.split(r',', pathogenic_reference_orientation)]
-        normalized_pathogenic_motifs = []
+        # because there can be multiple motifs, we need to check for commas/lists
+        # and then we can get our new motifs
+        pathogenic_motifs = [motif.strip() for motif in re.split(r',',
+                                                    pathogenic_reference_orientation) if motif.strip()]
+        normalized_pathogenic_motifs = [get_new_motif(motif, gene_strand) for motif in pathogenic_motifs]
 
-        benign_motifs = [motif.strip() for motif in re.split(r',', benign_reference_orientation)]
-        normalized_benign_motifs = []
+        benign_motifs = [motif.strip() for motif in re.split(r',',
+                                                    benign_reference_orientation) if motif.strip()]
+        normalized_benign_motifs = [get_new_motif(motif, gene_strand) for motif in benign_motifs]
 
-        if isinstance(unknown_reference_orientation, str) and unknown_reference_orientation:
+        # we don't always have unknown motifs, so we need to check the values before normalizing
+        if isinstance(unknown_reference_orientation, str) and unknown_reference_orientation.strip():
             unknown_motifs = [motif.strip() for motif in re.split(r',', unknown_reference_orientation)]
+            normalized_unknown_motifs = [get_new_motif(motif, gene_strand) for motif in unknown_motifs]
         else:
-            unknown_motifs = []
-        normalized_unknown_motifs = []
+            normalized_unknown_motifs = []
 
-        for motif in pathogenic_motifs:
-            normalized_pathogenic_motif = get_new_motif(motif, gene_strand)
-            normalized_pathogenic_motifs.append(normalized_pathogenic_motif)
-
-        for motif in benign_motifs:
-            normalized_benign_motif = get_new_motif(motif, gene_strand)
-            normalized_benign_motifs.append(normalized_benign_motif)
-
-        for motif in unknown_motifs:
-            normalized_unknown_motif = get_new_motif(motif, gene_strand)
-            normalized_unknown_motifs.append(normalized_unknown_motif)
-
-    # Append the list of normalized motifs to results
+        # Append the list of normalized motifs to results
         pathogenic_results.append(normalized_pathogenic_motifs)
         benign_results.append(normalized_benign_motifs)
+        # print(benign_results, type(benign_results))
+        # print("Normalized benign motifs: ", normalized_benign_motifs, type(normalized_benign_motifs))
         unknown_results.append(normalized_unknown_motifs)
+        # print(unknown_results, type(unknown_results))
+        # print("Normalized unknown motifs: ", normalized_unknown_motifs, type(normalized_unknown_motifs))
 
+    #update the dataframe
     df['pathogenic_motif_gene_orientation'] = pathogenic_results
     df['benign_motif_gene_orientation'] = benign_results
-    df['unknown_motif_gene_orientation'] = unknown_results
+    df['unknown_motif_gene_orientation'] = pd.Series(unknown_results)
 
-    # df = reverse_complement_and_standardize(df, df['benign_motif_reference_orientation'], df['benign_motif_gene_orientation'])
-    df = df.applymap(lambda x: str(x).replace('[', '').replace(']', '').replace("'", '').replace('"',''))
+    #this part is mainly for readability, take away the brackets and quotation marks of the lists
+    df = df.applymap(lambda x: str(x).replace('[', '').replace(']', '').replace("'", '').replace('"', ''))
 
-    # Replace 'NNT' values with blank (empty) values in the entire DataFrame
-    df = df.applymap(lambda x: '' if x == 'nnt' or x == 'nan' else x)
-    # Save the updated DataFrame to a CSV file
+    # Replace 'NNT'/'nan' values with blank (empty) values in the entire DataFrame
+    df = df.applymap(lambda x: '' if x == 'nnt' or x== 'nan' or pd.isna(x) else x)
+    # Save the updated
     df.to_csv(out_csv, index=False)

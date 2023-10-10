@@ -4,11 +4,18 @@ import sys
 sys.path.append('../')
 import reftogeneorientation
 
+in_csv = 'data/STR-disease-loci.csv'
+out_json = 'data/STR-disease-loci.processed.json'
+out_csv = 'data/STR-disease-loci.processed.csv'
+
 def main():
 
     in_csv = 'data/STR-disease-loci.csv'
     out_json = 'data/STR-disease-loci.processed.json'
     out_csv = 'data/STR-disease-loci.processed.csv'
+
+with open(out_csv, 'w') as csv_file:
+    pass
 
     reftogeneorientation.process_csv(in_csv, out_csv)
 
