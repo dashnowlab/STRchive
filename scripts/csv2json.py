@@ -4,22 +4,17 @@ import sys
 sys.path.append('../')
 import reftogeneorientation
 
-in_csv = 'data/STR-disease-loci.csv'
-out_json = 'data/STR-disease-loci.processed.json'
-out_csv = 'data/STR-disease-loci.processed.csv'
-
 def main():
-
+    #Here we are defining the original CSV as well as the output csv/json
     in_csv = 'data/STR-disease-loci.csv'
     out_json = 'data/STR-disease-loci.processed.json'
     out_csv = 'data/STR-disease-loci.processed.csv'
 
-with open(out_csv, 'w') as csv_file:
-    pass
-
+    #This will create the gene orientation columns from ref orientation for each motif type
+    # Reference/benign, pathogenic, and unknown
     reftogeneorientation.process_csv(in_csv, out_csv)
 
-    # Read CSV file
+    # Read CSV file, created by process_csv
     with open(out_csv, 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         data = list(csv_reader)

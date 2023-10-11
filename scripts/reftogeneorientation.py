@@ -14,11 +14,7 @@ def circular_permuted(x):
     """
     n = len(x)
     modified_sequences = []
-
-    # Replace 'N' with 'A', 'T', 'G', and 'C' separately and generate circular permutations for each
-    for replacement in ['A', 'T', 'G', 'C']:
-        modified_x = x.replace('N', replacement)
-        modified_sequences.extend([modified_x[i:] + modified_x[:i] for i in range(n)])
+    modified_sequences.extend([x[i:] + x[:i] for i in range(n)])
 
     return modified_sequences
 
@@ -36,26 +32,26 @@ def normalise_str(in_dna):
 
     all_possible = []
 
-    # Find all positions of 'N' in the input sequence
-    n_positions = [i for i, nucleotide in enumerate(in_dna) if nucleotide == 'N']
+    # # Find all positions of 'N' in the input sequence
+    # n_positions = [i for i, nucleotide in enumerate(in_dna) if nucleotide == 'N']
 
-    # If 'N' is present, replace each 'N' with 'A', 'T', 'G', and 'C' separately
-    if n_positions:
-        results = []
-        for replacement_combination in product('ATGC', repeat=len(n_positions)):
-            modified_dna = list(in_dna)
-            for i, replacement in zip(n_positions, replacement_combination):
-                modified_dna[i] = replacement
-            modified_results = circular_permuted("".join(modified_dna))
-            if modified_results:
-                results.append(min(modified_results))
-        return results
-    else:
+    # # If 'N' is present, replace each 'N' with 'A', 'T', 'G', and 'C' separately
+    # if n_positions:
+    #     results = []
+    #     for replacement_combination in product('ATGC', repeat=len(n_positions)):
+    #         modified_dna = list(in_dna)
+    #         for i, replacement in zip(n_positions, replacement_combination):
+    #             modified_dna[i] = replacement
+    #         modified_results = circular_permuted("".join(modified_dna))
+    #         if modified_results:
+    #             results.append(min(modified_results))
+    #     return results
+    # else:
         # Circularly permute the original sequence and reverse complement
-        for permuted_seq in circular_permuted(in_dna):
-            all_possible.append(permuted_seq)
+    for permuted_seq in circular_permuted(in_dna):
+        all_possible.append(permuted_seq)
 
-    return [min(all_possible)]
+    return min(all_possible)
 
 def get_new_motif(motif, gene_strand):
     """
@@ -63,17 +59,19 @@ def get_new_motif(motif, gene_strand):
         motif (string)
         gene_strand: either + or -
     Returns:
-        the normalized output of the string
+        the normalized output of the string from ref to gene orientation
     Get the new normalized motif for each row.
     If gene_strand is +, reference orientation = gene orientation
     If gene_strand is -, reverse_complement ref_ori for gene_ori
     """
     if gene_strand == "+":
         normalized_motif = normalise_str(motif)
-    else:
+    elif gene_strand == "-":
         seq = Seq(motif)
         reverse_comp = str(seq.reverse_complement())
         normalized_motif = normalise_str(reverse_comp)
+    else:
+        raise AssertionError(f'Gene strand {gene_strand} is not +/-')
     return normalized_motif
 
 def process_csv(in_csv, out_csv):
@@ -86,7 +84,6 @@ def process_csv(in_csv, out_csv):
     """
     # Read the CSV file into a DataFrame
     df = pd.read_csv(in_csv, dtype=str)
-
 
     # we need these empty bits to fill with the new column results!
     pathogenic_results = []
@@ -105,7 +102,6 @@ def process_csv(in_csv, out_csv):
         pathogenic_motifs = [motif.strip() for motif in re.split(r',',
                                                     pathogenic_reference_orientation) if motif.strip()]
         normalized_pathogenic_motifs = [get_new_motif(motif, gene_strand) for motif in pathogenic_motifs]
-
         benign_motifs = [motif.strip() for motif in re.split(r',',
                                                     benign_reference_orientation) if motif.strip()]
         normalized_benign_motifs = [get_new_motif(motif, gene_strand) for motif in benign_motifs]
@@ -120,21 +116,12 @@ def process_csv(in_csv, out_csv):
         # Append the list of normalized motifs to results
         pathogenic_results.append(normalized_pathogenic_motifs)
         benign_results.append(normalized_benign_motifs)
-        # print(benign_results, type(benign_results))
-        # print("Normalized benign motifs: ", normalized_benign_motifs, type(normalized_benign_motifs))
         unknown_results.append(normalized_unknown_motifs)
-        # print(unknown_results, type(unknown_results))
-        # print("Normalized unknown motifs: ", normalized_unknown_motifs, type(normalized_unknown_motifs))
 
     #update the dataframe
-    df['pathogenic_motif_gene_orientation'] = pathogenic_results
-    df['benign_motif_gene_orientation'] = benign_results
-    df['unknown_motif_gene_orientation'] = pd.Series(unknown_results)
+    df['pathogenic_motif_gene_orientation'] = [', '.join(x) for x in pathogenic_results]
+    df['benign_motif_gene_orientation'] = [', '.join(x) for x in benign_results]
+    df['unknown_motif_gene_orientation'] = [', '.join(x) for x in unknown_results]
 
-    #this part is mainly for readability, take away the brackets and quotation marks of the lists
-    df = df.applymap(lambda x: str(x).replace('[', '').replace(']', '').replace("'", '').replace('"', ''))
-
-    # Replace 'NNT'/'nan' values with blank (empty) values in the entire DataFrame
-    df = df.applymap(lambda x: '' if x == 'nnt' or x== 'nan' or pd.isna(x) else x)
     # Save the updated
     df.to_csv(out_csv, index=False)
