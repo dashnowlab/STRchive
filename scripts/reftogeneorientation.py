@@ -4,18 +4,26 @@ from itertools import product
 import re
 import numpy as np
 import math
+import doctest
 
 def circular_permuted(x):
     """
     Args:
         x (iterator)
     Returns:
-        list: All circular permutations of x, with all 'Ns' replaced by 'A', 'T', 'G', and 'C'
+        list: All circular permutations of x
+    >>> circular_permuted('GAG')
+    ['GAG', 'AGG', 'GGA']
+    >>> circular_permuted('AG')
+    ['AG', 'GA']
+    >>> circular_permuted('TAGAA')
+    ['TAGAA', 'AGAAT', 'GAATA', 'AATAG', 'ATAGA']
+    >>> circular_permuted('')
+    []
     """
     n = len(x)
     modified_sequences = []
     modified_sequences.extend([x[i:] + x[:i] for i in range(n)])
-
     return modified_sequences
 
 def normalise_str(in_dna):
@@ -24,30 +32,18 @@ def normalise_str(in_dna):
         in_dna (sequence)
     Returns:
         the normalized output of the string
-    Find all possible equivalent STR sequences and return the first alphabetically for each, with
-    multiple possible outputs for each replacement of 'N'.
+    Find all possible equivalent STR sequences and return the first alphabetically for each
+    >>> normalise_str('ATAG')
+    'AGAT'
+    >>> normalise_str('NGC')
+    'CNG'
+    >>> normalise_str('AAG')
+    'AAG'
     """
     if in_dna is None or len(in_dna) == 0:
         return ''
 
     all_possible = []
-
-    # # Find all positions of 'N' in the input sequence
-    # n_positions = [i for i, nucleotide in enumerate(in_dna) if nucleotide == 'N']
-
-    # # If 'N' is present, replace each 'N' with 'A', 'T', 'G', and 'C' separately
-    # if n_positions:
-    #     results = []
-    #     for replacement_combination in product('ATGC', repeat=len(n_positions)):
-    #         modified_dna = list(in_dna)
-    #         for i, replacement in zip(n_positions, replacement_combination):
-    #             modified_dna[i] = replacement
-    #         modified_results = circular_permuted("".join(modified_dna))
-    #         if modified_results:
-    #             results.append(min(modified_results))
-    #     return results
-    # else:
-        # Circularly permute the original sequence and reverse complement
     for permuted_seq in circular_permuted(in_dna):
         all_possible.append(permuted_seq)
 
@@ -63,6 +59,16 @@ def get_new_motif(motif, gene_strand):
     Get the new normalized motif for each row.
     If gene_strand is +, reference orientation = gene orientation
     If gene_strand is -, reverse_complement ref_ori for gene_ori
+    >>> get_new_motif('GAG', '+')
+    'AGG'
+    >>> get_new_motif('GAG', '-')
+    'CCT'
+    >>> get_new_motif('TCATC', '-')
+    'AGATG'
+    >>> get_new_motif('TAG', 'plus')
+    Traceback (most recent call last):
+    ...
+    AssertionError: Gene strand plus is not +/-
     """
     if gene_strand == "+":
         normalized_motif = normalise_str(motif)
@@ -73,6 +79,36 @@ def get_new_motif(motif, gene_strand):
     else:
         raise AssertionError(f'Gene strand {gene_strand} is not +/-')
     return normalized_motif
+
+def compare_and_print(old_results, new_results, name):
+    """
+    Args:
+        old_results: any values in the gene_orientation columns from input
+        new_results: the gene_ori results based on ref_ori and gene_strand
+        name: the specific result type (pathogenic, benign, unknown)
+    Returns:
+        print statements of differences for each result type, if any
+    >>> old_results = ['A', 'C', 'G']
+    >>> new_results = ['A', 'T', 'G']
+    >>> compare_and_print(old_results, new_results, 'pathogenic_results')
+    There are differences in pathogenic_results: [('C', 'T')]
+
+    >>> old_results = [None, 'C', 'G']
+    >>> new_results = ['A', 'C', None]
+    >>> compare_and_print(old_results, new_results, 'benign_results')
+
+    >>> old_results = ['A', 'C', 'G']
+    >>> new_results = ['A', 'C', 'G']
+    >>> compare_and_print(old_results, new_results, 'unknown_results')
+
+    """
+    differences = []
+    for old_item, new_item in zip(old_results, new_results):
+        if not pd.isna(old_item) and not pd.isna(new_item) and old_item != new_item:
+            differences.append((old_item, new_item))
+
+    if differences:
+        print(f"There are differences in {name}: {differences}")
 
 def process_csv(in_csv, out_csv):
     """
@@ -118,10 +154,27 @@ def process_csv(in_csv, out_csv):
         benign_results.append(normalized_benign_motifs)
         unknown_results.append(normalized_unknown_motifs)
 
-    #update the dataframe
-    df['pathogenic_motif_gene_orientation'] = [', '.join(x) for x in pathogenic_results]
-    df['benign_motif_gene_orientation'] = [', '.join(x) for x in benign_results]
-    df['unknown_motif_gene_orientation'] = [', '.join(x) for x in unknown_results]
+
+    # Initialize old results lists, for comparison of input and output data
+    old_pathogenic_results = []
+    old_benign_results = []
+    old_unknown_results = []
+
+    # for each new column, let's compare if there are any prev values
+    if 'pathogenic_motif_gene_orientation' in df.columns:
+        old_pathogenic_results = df['pathogenic_motif_gene_orientation'].apply(lambda x: x.split(',') if isinstance(x, str) else None).tolist()
+        compare_and_print(old_pathogenic_results, pathogenic_results, 'pathogenic_motif_gene_orientation')
+
+    if 'benign_motif_gene_orientation' in df.columns:
+        old_benign_results = df['benign_motif_gene_orientation'].apply(lambda x: x.split(',') if isinstance(x, str) else None).tolist()
+        compare_and_print(old_benign_results, benign_results, 'benign_motif_gene_orientation')
+
+    if 'unknown_motif_gene_orientation' in df.columns:
+        old_unknown_results = df['unknown_motif_gene_orientation'].apply(lambda x: x.split(',') if isinstance(x, str) else None).tolist()
+        compare_and_print(old_unknown_results, unknown_results, 'unknown_motif_gene_orientation')
 
     # Save the updated
     df.to_csv(out_csv, index=False)
+
+if __name__ == "__main__":
+    doctest.testmod()
