@@ -11,6 +11,9 @@ def main():
         csv_reader = csv.DictReader(csv_file)
         data = list(csv_reader)
 
+    # Sort by gene name
+    data.sort(key=lambda x: x['gene'])
+
     # Write JSON file
     with open(out_json, 'w') as json_file:
         json_file.write(json.dumps(data, indent=4))
