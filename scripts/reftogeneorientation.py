@@ -5,6 +5,7 @@ import re
 import numpy as np
 import math
 import doctest
+import sys
 
 def circular_permuted(x):
     """
@@ -108,7 +109,7 @@ def compare_and_print(old_results, new_results, name):
             differences.append((old_item, new_item))
 
     if differences:
-        print(f"There are differences in {name}: {differences}")
+        sys.stderr.write(f"The following differences in {name} were replaced: {differences}\n")
 
 def process_csv(in_csv, out_csv):
     """
@@ -164,14 +165,17 @@ def process_csv(in_csv, out_csv):
     if 'pathogenic_motif_gene_orientation' in df.columns:
         old_pathogenic_results = df['pathogenic_motif_gene_orientation'].apply(lambda x: x.split(',') if isinstance(x, str) else None).tolist()
         compare_and_print(old_pathogenic_results, pathogenic_results, 'pathogenic_motif_gene_orientation')
+        df['pathogenic_motif_gene_orientation'] = [','.join(x) for x in pathogenic_results]
 
     if 'benign_motif_gene_orientation' in df.columns:
         old_benign_results = df['benign_motif_gene_orientation'].apply(lambda x: x.split(',') if isinstance(x, str) else None).tolist()
         compare_and_print(old_benign_results, benign_results, 'benign_motif_gene_orientation')
+        df['benign_motif_gene_orientation'] = [','.join(x) for x in benign_results]
 
     if 'unknown_motif_gene_orientation' in df.columns:
         old_unknown_results = df['unknown_motif_gene_orientation'].apply(lambda x: x.split(',') if isinstance(x, str) else None).tolist()
         compare_and_print(old_unknown_results, unknown_results, 'unknown_motif_gene_orientation')
+        df['unknown_motif_gene_orientation'] = [','.join(x) for x in unknown_results]
 
     # Save the updated
     df.to_csv(out_csv, index=False)
