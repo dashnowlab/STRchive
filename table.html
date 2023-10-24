@@ -131,7 +131,7 @@
 
   $(function() {
 
-  $.getJSON('data/STR-disease-loci.json', function(data) {
+  $.getJSON('data/STR-disease-loci.processed.json', function(data) {
     
     $.each(data, function(i, f) {
       var tblRow =
@@ -139,8 +139,11 @@
         `<td><a href="#` + f.id + `">` + f.gene + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.disease_id + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.disease + `</a></td>` +
-        "<td>" + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + "</td>" +
-        "<td>" + f.repeatunit_pathogenic_geneorientation + "</td>" +
+        `<td><a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `">` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</a></td>` +
+        "<td>" + f.pathogenic_motif_gene_orientation + "</td>" +
+        "<td>" + f.pathogenic_motif_reference_orientation + "</td>" +
         "<td>" + f.Inheritance + "</td>" +
       "</tr>"
         $(tblRow).appendTo("#diseaseloci tbody");
@@ -188,7 +191,11 @@
         };
         this_row = this_row +
             `
-            <li><b>Reference motif:</b> ` + f.repeatunit_ref + `</li>
+            <li><b>hg38:</b> ` + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</li>
+            <li><b>T2T CHM13 v1.0:</b> ` + f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</li>
+            <li><b>Type:</b> ` + f.type + `</li>
+            <li><b>Location:</b> ` + f.location_in_gene + `</li>
+            <li><b>Reference motif:</b> ` + f.reference_motif_reference_orientation + `</li>
           </div>
         </div>
       </div>
@@ -240,7 +247,7 @@
         <div class="ui segment">
           <h4>Alleles</h4>
           <div class="ui list">
-            <li><b>Pathogenic motif:</b> ` + f.repeatunit_pathogenic_geneorientation + `</li>`
+            <li><b>Pathogenic motif (gene orientation):</b> ` + f.pathogenic_motif_gene_orientation + `</li>`
 
         if (f.normal_min != '') {
           if (f.normal_min == f.normal_max) {
@@ -388,7 +395,8 @@
         <th>Disease</th>
         <th>Description</th>
         <th>Position hg38</th>
-        <th>Pathogenic Motif 5'-3'</th>
+        <th>Pathogenic motif(s): gene orientation</th>
+        <th>Pathogenic motif(s): ref orientation</th>
         <th>Inheritance</th>
       </thead>
       <tbody>
