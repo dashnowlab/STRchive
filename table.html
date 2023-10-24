@@ -164,7 +164,28 @@
 
         if ((f.start_hg19) != '') {
           this_row = this_row +
-            `<li><b>hg19:</b> ` + f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</li>`
+            `<li><b>hg19:</b> <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&position=` +
+              f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `">` +
+              f.chrom + ":" + f.start_hg19 + "-" + f.stop_hg19 + `</a></li>`
+        };
+        if ((f.start_hg38) != '') {
+          this_row = this_row +
+            `<li><b>hg38:</b> <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `">` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</a></li>`
+        };
+        if ((f.start_t2t) != '') {
+          this_row = this_row +
+            `<li><b>T2T CHM13 v1.0:</b> <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&position=` +
+              f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `">` +
+              f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</a></li>`
+        };
+        this_row = this_row +
+            `
+            <li><b>Type:</b> ` + f.type + `</li>`
+        if (f.location_in_gene != '') {
+          this_row = this_row +
+            `<li><b>Location:</b> ` + f.location_in_gene + `</li>`
         };
         this_row = this_row +
             `
@@ -205,14 +226,18 @@
           }
         };
             
-        if ((f.Prevalence) != '') {
+        if (f.Prevalence != '' & f.Prevalence != 'N/A' & !f.Prevalence.startsWith('Unknown')) {
           this_row = this_row +
             `<li><b>Prevalence:</b> ` + f.Prevalence + `</li>`
         };
 
+        if (f.Mechanism != '' & f.Mechanism != 'N/A' & !f.Mechanism.startsWith('Unknown')) {
+          this_row = this_row +
+            `<li><b>Mechanism:</b> ` + f.Mechanism + `</li>`
+        };
+
         this_row = this_row +
             `
-            <li><b>Mechanism:</b> ` + f.Mechanism + `</li>
           </div>
         </div>
       </div>
@@ -268,16 +293,14 @@
           <h4>Resources</h4>
           <div class="ui list">`
 
-        if (f.gene != '') {
-          var firstgene = f.gene.split("/")[0]
+        if (f.gnomAD_gene != '') {
           this_row = this_row + 
-          `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/` + firstgene + `?dataset=gnomad_r3">` + firstgene + `</a></li>`
+          `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/` + f.gnomAD_gene + `?dataset=gnomad_r3">` + f.gnomAD_gene + `</a></li>`
         };
 
-        if (f.gene != '') {
-          var firstgene = f.gene.split("/")[0]
+        if (f.STRipy_gene != '') {
           this_row = this_row + 
-          `<li><b>STRipy:</b> <a href="https://stripy.org/database/` + firstgene + `">` + firstgene + `</a></li>`
+          `<li><b>STRipy:</b> <a href="https://stripy.org/database/` + f.STRipy_gene + `">` + f.STRipy_gene + `</a></li>`
         };
 
         if (f.OMIM != '') {
@@ -285,6 +308,14 @@
           f.OMIM.split(";").forEach(function (OMIMid) {
             this_row = this_row +
             `<a href="https://omim.org/entry/` + OMIMid.trim() + `">` + OMIMid + `</a>`
+          })
+          this_row = this_row + `</li>`
+        };
+        if (f.GeneReviews != '') {
+          this_row = this_row + `<li><b>GeneReviews:</b> `
+          f.GeneReviews.split(";").forEach(function (GeneReviewsid) {
+            this_row = this_row +
+            `<a href="https://www.ncbi.nlm.nih.gov/books/` + GeneReviewsid.trim() + `">` + GeneReviewsid + `</a>`
           })
           this_row = this_row + `</li>`
         };
@@ -401,6 +432,15 @@
           does not constitute and shall not be construed as constituting medical or legal advice of any kind whatsoever, 
           nor is it a substitute for professional medical advice, diagnosis and treatment.
         </p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img class="ui tiny image right floated" alt="Creative Commons License"
+          style="border:0.5px solid silver;"
+          src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+          <span xmlns:dct="http://purl.org/dc/terms/"
+          href="http://purl.org/dc/dcmitype/Dataset" property="dct:title"
+          rel="dct:type">STRchive</span> is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            Creative Commons Attribution 4.0 International License</a>.
       </div>
     </div>
   </div>
