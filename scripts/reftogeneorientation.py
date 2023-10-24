@@ -139,8 +139,14 @@ def process_csv(in_csv, out_csv):
         pathogenic_motifs = [motif.strip() for motif in re.split(r',',
                                                     pathogenic_reference_orientation) if motif.strip()]
         normalized_pathogenic_motifs = [get_new_motif(motif, gene_strand) for motif in pathogenic_motifs]
-        benign_motifs = [motif.strip() for motif in re.split(r',',
+
+        try:
+            benign_motifs = [motif.strip() for motif in re.split(r',',
                                                     benign_reference_orientation) if motif.strip()]
+        except TypeError as e:
+            sys.stderr.write(f"Unexpected value in benign_reference_orientation: {benign_reference_orientation}\n")
+            benign_motifs = []
+
         normalized_benign_motifs = [get_new_motif(motif, gene_strand) for motif in benign_motifs]
 
         # we don't always have unknown motifs, so we need to check the values before normalizing
