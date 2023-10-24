@@ -182,19 +182,15 @@
               f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `">` +
               f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</a></li>`
         };
-        this_row = this_row +
-            `
-            <li><b>Type:</b> ` + f.type + `</li>`
-        if (f.location_in_gene != '') {
+        if (f.type != '' | f.location_in_gene != '') {
           this_row = this_row +
-            `<li><b>Location:</b> ` + f.location_in_gene + `</li>`
+            `<li><b>Location:</b> ` + f.type + ` ` + f.location_in_gene + `</li>`
         };
         this_row = this_row +
             `
             <li><b>hg38:</b> ` + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</li>
             <li><b>T2T CHM13 v1.0:</b> ` + f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</li>
             <li><b>Type:</b> ` + f.type + `</li>
-            <li><b>Location:</b> ` + f.location_in_gene + `</li>
             <li><b>Reference motif:</b> ` + f.reference_motif_reference_orientation + `</li>
           </div>
         </div>
@@ -247,6 +243,7 @@
         <div class="ui segment">
           <h4>Alleles</h4>
           <div class="ui list">
+            <li><b>Pathogenic motif (ref orientation):</b> ` + f.pathogenic_motif_reference_orientation + `</li>
             <li><b>Pathogenic motif (gene orientation):</b> ` + f.pathogenic_motif_gene_orientation + `</li>`
 
         if (f.normal_min != '') {
