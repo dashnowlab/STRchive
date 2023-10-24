@@ -139,7 +139,9 @@
         `<td><a href="#` + f.id + `">` + f.gene + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.disease_id + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.disease + `</a></td>` +
-        "<td>" + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + "</td>" +
+        `<td><a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `">` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</a></td>` +
         "<td>" + f.pathogenic_motif_gene_orientation + "</td>" +
         "<td>" + f.pathogenic_motif_reference_orientation + "</td>" +
         "<td>" + f.Inheritance + "</td>" +
