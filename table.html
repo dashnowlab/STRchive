@@ -156,7 +156,7 @@
   <h2 id="` + f.id + `">` + f.disease + `</h2>
   </a>
 
-    <div class="four column row">
+    <div class="three column row">
 
       <div class="column">
         <div class="ui segment">
@@ -188,8 +188,6 @@
         };
         this_row = this_row +
             `
-            <li><b>hg38:</b> ` + f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</li>
-            <li><b>T2T CHM13 v1.0:</b> ` + f.chrom + ":" + f.start_t2t + "-" + f.stop_t2t + `</li>
             <li><b>Type:</b> ` + f.type + `</li>
             <li><b>Reference motif:</b> ` + f.reference_motif_reference_orientation + `</li>
           </div>
@@ -199,9 +197,27 @@
         <div class="ui segment">
           <h4>Disease</h4>
           <div class="ui list">
-            <li>` + f.disease + `</li>
             <li><b>ID:</b> ` + f.disease_id + `</li>
-            <li><b>Inheritance:</b> ` + f.Inheritance + `</li>`
+            <li><b>Description:</b> ` + f.disease + `</li>`
+        if (f.Inheritance != '') {
+          if (f.Inheritance == 'AD') {
+            inheritance_desc = 'Autosomal dominant'
+          }
+          if (f.Inheritance == 'AR') {
+            inheritance_desc = 'Autosomal recessive'
+          }
+          if (f.Inheritance == 'XLD' | f.Inheritance == 'XD') {
+            inheritance_desc = 'X-linked dominant'
+          }
+          if (f.Inheritance == 'XLR' | f.Inheritance == 'XR') {
+            inheritance_desc = 'X-linked recessive'
+          }
+          else {
+            inheritance_desc = f.Inheritance
+          }
+          this_row = this_row +
+            `<li><b>Inheritance:</b> ` + inheritance_desc + `</li>`
+        };
 
         if (f.age_onset_min != '' & f.age_onset_max != '') {
           if (f.age_onset_min == f.age_onset_max) {
@@ -286,6 +302,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="three column row">
 
       <div class="column">
         <div class="ui segment">
@@ -317,6 +335,22 @@
             `<a href="https://www.ncbi.nlm.nih.gov/books/` + GeneReviewsid.trim() + `">` + GeneReviewsid + `</a>`
           })
           this_row = this_row + `</li>`
+        };
+        if (f.source != '') {
+          this_row = this_row + `<li><b>Sources:</b></li>
+          `
+          f.source.split(", ").forEach(function (source) {
+            if (source.startsWith("http")) {
+              this_row = this_row +
+              `<li><a href="` + source.trim() + `">` + source + `</a></li>`
+            }
+            else {
+              this_row = this_row +
+              `<li><a href="https://www.google.com/search?q=` + source.trim() + `">` + source + `</a></li>`
+            }
+
+          })
+          
         };
         this_row = this_row +
             `
