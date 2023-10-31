@@ -140,16 +140,21 @@ def process_csv(in_csv, out_csv):
                                                     pathogenic_reference_orientation) if motif.strip()]
         normalized_pathogenic_motifs = [get_new_motif(motif, gene_strand) for motif in pathogenic_motifs]
 
-        try:
-            benign_motifs = [motif.strip() for motif in re.split(r',',
-                                                    benign_reference_orientation) if motif.strip()]
-        except TypeError as e:
-            sys.stderr.write(f"Unexpected value in benign_reference_orientation: {benign_reference_orientation}\n")
-            benign_motifs = []
+        # try:
+        #     benign_motifs = [motif.strip() for motif in re.split(r',',
+        #                                             benign_reference_orientation) if motif.strip()]
+        # except TypeError as e:
+        #     sys.stderr.write(f"Unexpected value in benign_reference_orientation: {benign_reference_orientation}\n")
+        #     benign_motifs = []
 
-        normalized_benign_motifs = [get_new_motif(motif, gene_strand) for motif in benign_motifs]
+        # we don't always have benign/unknown motifs, so we need to check the values before normalizing
 
-        # we don't always have unknown motifs, so we need to check the values before normalizing
+        if isinstance(benign_reference_orientation, str) and benign_reference_orientation.strip():
+            benign_motifs = [motif.strip() for motif in re.split(r',', benign_reference_orientation)]
+            normalized_benign_motifs = [get_new_motif(motif, gene_strand) for motif in benign_motifs]
+        else:
+            normalized_benign_motifs = []
+
         if isinstance(unknown_reference_orientation, str) and unknown_reference_orientation.strip():
             unknown_motifs = [motif.strip() for motif in re.split(r',', unknown_reference_orientation)]
             normalized_unknown_motifs = [get_new_motif(motif, gene_strand) for motif in unknown_motifs]
