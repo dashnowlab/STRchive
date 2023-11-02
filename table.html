@@ -132,17 +132,29 @@
   $(function() {
 
   $.getJSON('data/STR-disease-loci.processed.json', function(data) {
+    this_year = new Date().getFullYear()
     
     $.each(data, function(i, f) {
+      status = ''
+      formatting = ''
+      /// Flag potentially new or conflicting data
+      if (f.Year >= this_year - 1) {
+        status = `<i class="green star icon"></i>`
+        formatting = `positive`
+      }
+      if (f.details.indexOf('conflict') !== -1) {
+        status = `<i class="red attention icon"></i> `
+        formatting = `negative`
+      }
       var tblRow =
-      "<tr>" +
+      `<tr class="` + formatting + `">` +
+        `<td><a href="#` + f.id + `">` + status + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.gene + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.disease_id + `</a></td>` +
         `<td><a href="#` + f.id + `">` + f.disease + `</a></td>` +
         `<td><a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=` +
               f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `">` +
               f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</a></td>` +
-        "<td>" + f.pathogenic_motif_gene_orientation + "</td>" +
         "<td>" + f.pathogenic_motif_reference_orientation + "</td>" +
         "<td>" + f.Inheritance + "</td>" +
       "</tr>"
@@ -356,8 +368,23 @@
             `
           </div>
         </div>
+      </div>`
+      
+      if (f.details != '') {
+          this_row = this_row + `
+      <div class="ui column">
+        <div class="ui segment">   
+          <h4> ` + status + `Details</h4>
+          <div class="ui list">
+            <li>` + f.details + `</li>
+          </div>
+        </div>
       </div>
-    </div>
+          `
+    }
+              
+    this_row = this_row +
+    `</div>
     <a class="angle double up icon" href="#top"><i class="angle double up icon"></i></a>
       
     </div>
@@ -420,13 +447,16 @@
       </a>
     </p>
     <br>
+    <i class="green star icon"></i> New
+    <br>
+    <i class="red attention icon"></i> Conflicting evidence
     <table id="diseaseloci" class="ui striped table">
       <thead>
+        <th></th>
         <th>Gene</th>
         <th>Disease</th>
         <th>Description</th>
         <th>Position hg38</th>
-        <th>Pathogenic motif(s): gene orientation</th>
         <th>Pathogenic motif(s): ref orientation</th>
         <th>Inheritance</th>
       </thead>

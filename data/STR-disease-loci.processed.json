@@ -3,8 +3,8 @@
         "chrom": "chr1",
         "start_hg38": "94418422",
         "stop_hg38": "94418444",
-        "start_hg19": "",
-        "stop_hg19": "",
+        "start_hg19": "94883978",
+        "stop_hg19": "94884000",
         "start_t2t": "94266545",
         "stop_t2t": "94266567",
         "notes_t2t": "",
@@ -44,13 +44,15 @@
         "Mechanism_source": "",
         "source": "https://doi.org/10.1101/2023.10.09.23296582",
         "notes": "",
+        "details": "",
         "width": "",
         "OMIM": "",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": "2023"
     },
     {
         "chrom": "chrX",
@@ -97,13 +99,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg1691) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Mirkin 2007, OMIM, GeneReviews NBK535148",
         "notes": "",
+        "details": "",
         "width": "148",
         "OMIM": "309548",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "AFF2",
         "gnomAD_gene": "AFF2",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr2",
@@ -150,13 +154,15 @@
         "Mechanism_source": "malacard",
         "source": "https://doi.org/10.1038/s41580-021-00382-6, PMC3998887",
         "notes": "Path threshold may actually be higher than 300, assay was not sensitive enough",
+        "details": "",
         "width": "25",
         "OMIM": "",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chrX",
@@ -203,13 +209,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "",
+        "details": "",
         "width": "102",
         "OMIM": "313200",
         "Incidence": "",
         "Prevalence": "1:300,000 males (SBMA); 1/40,000 (Kennedy Disease)",
         "STRipy_gene": "AR",
         "gnomAD_gene": "AR",
-        "GeneReviews": "NBK1333"
+        "GeneReviews": "NBK1333",
+        "Year": ""
     },
     {
         "chrom": "chrX",
@@ -256,13 +264,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "GeneReviews NBK535148, OMIM",
         "notes": "Exon 2 aa 110-115",
+        "details": "",
         "width": "43",
         "OMIM": "308350; 300419; 300215",
         "Incidence": "1-2/100,000",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "ARX_1",
         "gnomAD_gene": "ARX_1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chrX",
@@ -309,13 +319,15 @@
         "Mechanism_source": "(OMIM) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "GeneReviews NBK535148, OMIM",
         "notes": "Novel, Exon 2 aa 144-155",
+        "details": "",
         "width": "35",
         "OMIM": "309510",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "ARX_2",
         "gnomAD_gene": "ARX_2",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr12",
@@ -362,13 +374,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "",
+        "details": "",
         "width": "58",
         "OMIM": "125370",
         "Incidence": "",
         "Prevalence": "2-7/1,000,000",
         "STRipy_gene": "ATN1",
         "gnomAD_gene": "ATN1",
-        "GeneReviews": "NBK1491"
+        "GeneReviews": "NBK1491",
+        "Year": ""
     },
     {
         "chrom": "chr6",
@@ -383,7 +397,7 @@
         "disease_id": "SCA1",
         "gene_strand": "-",
         "reference_motif_reference_orientation": "CTG",
-        "pathogenic_motif_reference_orientation": "TGC",
+        "pathogenic_motif_reference_orientation": "CTG",
         "pathogenic_motif_gene_orientation": "AGC",
         "benign_motif_reference_orientation": "",
         "benign_motif_gene_orientation": "",
@@ -415,13 +429,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK1184, s40478-021-01201-x",
         "notes": "Interruptions: CAT",
+        "details": "",
         "width": "90",
         "OMIM": "164400",
         "Incidence": "",
         "Prevalence": "1-2/100,000",
         "STRipy_gene": "ATXN1",
         "gnomAD_gene": "ATXN1",
-        "GeneReviews": "NBK1184"
+        "GeneReviews": "NBK1184",
+        "Year": ""
     },
     {
         "chrom": "chr22",
@@ -468,13 +484,15 @@
         "Mechanism_source": "(malacard)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "Interruptions: ATCCT",
+        "details": "",
         "width": "69",
         "OMIM": "603516",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "ATXN10",
         "gnomAD_gene": "ATXN10",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr12",
@@ -521,13 +539,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, GeneReviews NBK1275, s40478-021-01201-x",
         "notes": "29\u201332 repeats: increased ALS risk, Interruptions: CAA, CGG, CGC. Parkinson disease, late-onset, susceptibility.",
+        "details": "",
         "width": "69",
         "OMIM": "183090",
         "Incidence": "",
         "Prevalence": "1-2/100,000 (population dependent)",
         "STRipy_gene": "ATXN2",
         "gnomAD_gene": "ATXN2",
-        "GeneReviews": "NBK1275"
+        "GeneReviews": "NBK1275",
+        "Year": ""
     },
     {
         "chrom": "chr14",
@@ -574,13 +594,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "\"14:92071009-92071042\"",
+        "details": "",
         "width": "41",
         "OMIM": "109150",
         "Incidence": "",
         "Prevalence": "1\u20135/100,000",
         "STRipy_gene": "ATXN3",
         "gnomAD_gene": "ATXN3",
-        "GeneReviews": "NBK1196"
+        "GeneReviews": "NBK1196",
+        "Year": ""
     },
     {
         "chrom": "chr3",
@@ -627,13 +649,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "",
+        "details": "",
         "width": "31",
         "OMIM": "164500",
         "Incidence": "",
         "Prevalence": "<1/300,000",
         "STRipy_gene": "ATXN7",
         "gnomAD_gene": "ATXN7",
-        "GeneReviews": "NBK1256"
+        "GeneReviews": "NBK1256",
+        "Year": ""
     },
     {
         "chrom": "chr13",
@@ -680,13 +704,15 @@
         "Mechanism_source": "(OMIM) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, which encodes a nearly pure polyglutamine expansion protein in the CAG direction, and ATXN8OS (603680), which, when transcribed, produces a noncoding CUG expansion RNA (Moseley et al., 2006). Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease",
+        "details": "",
         "width": "46",
         "OMIM": "608768",
         "Incidence": "",
         "Prevalence": "<1/100,000",
         "STRipy_gene": "ATXN8OS",
         "gnomAD_gene": "ATXN8OS",
-        "GeneReviews": "NBK1268"
+        "GeneReviews": "NBK1268",
+        "Year": ""
     },
     {
         "chrom": "chr16",
@@ -733,13 +759,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "OMIM, Sato 2009, 19878914 (Pubmed), https://doi.org/10.1038/s41580-021-00382-6",
         "notes": "Novel, STR-containing insertion, not present in reference genome: Reds disagree on normal/pathogenic sizes",
+        "details": "",
         "width": "69",
         "OMIM": "117210",
         "Incidence": "",
         "Prevalence": "Unknown (more common in Japanese pop)",
         "STRipy_gene": "BEAN1",
         "gnomAD_gene": "BEAN1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr9",
@@ -786,13 +814,15 @@
         "Mechanism_source": "OMIM",
         "source": "Hannan 2018, GeneReviews NBK535148, OMIM, s40478-021-01201-x",
         "notes": "",
+        "details": "",
         "width": "62",
         "OMIM": "105500",
         "Incidence": "",
         "Prevalence": "The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population",
         "STRipy_gene": "C9ORF72",
         "gnomAD_gene": "C9ORF72",
-        "GeneReviews": "NBK268647"
+        "GeneReviews": "NBK268647",
+        "Year": ""
     },
     {
         "chrom": "chr19",
@@ -839,13 +869,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148, s40478-021-01201-x",
         "notes": "",
+        "details": "",
         "width": "39",
         "OMIM": "183086",
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "CACNA1A",
         "gnomAD_gene": "CACNA1A",
-        "GeneReviews": "NBK1140"
+        "GeneReviews": "NBK1140",
+        "Year": ""
     },
     {
         "chrom": "chr11",
@@ -892,13 +924,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "https://doi.org/10.1038/s41580-021-00382-6, 7603564 (PubMed)",
         "notes": "",
+        "details": "",
         "width": "33",
         "OMIM": "147791",
         "Incidence": "",
         "Prevalence": "1/100,000 births",
         "STRipy_gene": "CBL",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr19",
@@ -945,20 +979,22 @@
         "Mechanism_source": "(https://pubmed.ncbi.nlm.nih.gov/29530484/)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
         "notes": "Two diseases, same locus. Both expansions and contractions associated with disease",
+        "details": "",
         "width": "15",
         "OMIM": "132400; 177170",
         "Incidence": "",
         "Prevalence": "9-16/100,000 births",
         "STRipy_gene": "COMP",
         "gnomAD_gene": "COMP",
-        "GeneReviews": "NBK1123; NBK1487"
+        "GeneReviews": "NBK1123; NBK1487",
+        "Year": ""
     },
     {
         "chrom": "chr21",
         "start_hg38": "43776443",
         "stop_hg38": "43776479",
-        "start_hg19": "",
-        "stop_hg19": "",
+        "start_hg19": "45196324",
+        "stop_hg19": "45196360",
         "start_t2t": "42132055",
         "stop_t2t": "42132091",
         "notes_t2t": "",
@@ -998,13 +1034,15 @@
         "Mechanism_source": "",
         "source": "OMIM, https://www.ncbi.nlm.nih.gov/books/NBK1142/, PMID: 9126745",
         "notes": "",
+        "details": "",
         "width": "",
         "OMIM": "254800",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "CSTB",
-        "GeneReviews": "NBK1142"
+        "GeneReviews": "NBK1142",
+        "Year": ""
     },
     {
         "chrom": "chr1",
@@ -1051,13 +1089,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "Seixas et al 2017 AJHG, NBK541729, s40478-021-01201-x",
         "notes": "Novel. Normal: [(ATTTT)7\u2013400] Pathogenic: [(ATTTT)60\u201379(ATTTC)31\u201375(ATTTT)58\u201390], ATTTC within (ATTTT)7\u2013400 repeat region",
+        "details": "",
         "width": "81",
         "OMIM": "615945",
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "DAB1",
         "gnomAD_gene": "DAB1",
-        "GeneReviews": "NBK541729"
+        "GeneReviews": "NBK541729",
+        "Year": ""
     },
     {
         "chrom": "chr12",
@@ -1104,13 +1144,15 @@
         "Mechanism_source": "(OMIM, https://www.medrxiv.org/content/10.1101/2022.09.12.22279739v3.full-text)",
         "source": "OMIM, NBK535148, https://www.medrxiv.org/content/10.1101/2022.09.12.22279739v3.full-text",
         "notes": "",
+        "details": "",
         "width": "20",
         "OMIM": "136630",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "DIP2B",
         "gnomAD_gene": "DIP2B",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chrX",
@@ -1155,15 +1197,17 @@
         "Mechanism": "Protein LOF",
         "Mechanism_detail": "Functional defect in dystrophin/dystroglycan",
         "Mechanism_source": "(https://doi.org/10.1007/s10038-006-0056-7)",
-        "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
+        "source": "PMID: 27417533",
         "notes": "",
+        "details": "There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family (PMID: 27417533). The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
         "width": "48",
         "OMIM": "310200",
         "Incidence": "",
         "Prevalence": "1 in 3,500-5,000 live male births",
         "STRipy_gene": "DMD",
         "gnomAD_gene": "DMD",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr19",
@@ -1210,20 +1254,22 @@
         "Mechanism_source": "(doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK1165, s40478-021-01201-x",
         "notes": "Interruptions: CCG",
+        "details": "",
         "width": "62",
         "OMIM": "160900",
         "Incidence": "",
         "Prevalence": "5-20/100,000",
         "STRipy_gene": "DMPK",
         "gnomAD_gene": "DMPK",
-        "GeneReviews": "NBK1165"
+        "GeneReviews": "NBK1165",
+        "Year": ""
     },
     {
         "chrom": "chr17",
         "start_hg38": "80147059",
         "stop_hg38": "80147139",
-        "start_hg19": "",
-        "stop_hg19": "",
+        "start_hg19": "78120858",
+        "stop_hg19": "78120938",
         "start_t2t": "81047454",
         "stop_t2t": "81047534",
         "notes_t2t": "",
@@ -1263,20 +1309,22 @@
         "Mechanism_source": "",
         "source": "https://www.ncbi.nlm.nih.gov/books/NBK535148/",
         "notes": "",
+        "details": "",
         "width": "",
         "OMIM": "268305",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "EIF4A3",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr13",
         "start_hg38": "102161577",
         "stop_hg38": "102161726",
-        "start_hg19": "",
-        "stop_hg19": "",
+        "start_hg19": "102813927",
+        "stop_hg19": "102814076",
         "start_t2t": "101377640",
         "stop_t2t": "101377789",
         "notes_t2t": "",
@@ -1296,33 +1344,35 @@
         "Inheritance": "AD",
         "type": "Intronic",
         "location_in_gene": "Intron 1",
-        "normal": "",
-        "normal_min": "",
-        "normal_max": "",
-        "intermediate": "",
-        "intermediate_min": "",
-        "intermediate_max": "",
-        "pathogenic": "",
-        "pathogenic_min": "250",
-        "pathogenic_max": "450",
+        "normal": "8-249",
+        "normal_min": "8",
+        "normal_max": "249",
+        "intermediate": "250-299",
+        "intermediate_min": "250",
+        "intermediate_max": "299",
+        "pathogenic": ">300",
+        "pathogenic_min": "300",
+        "pathogenic_max": "637",
         "ref_copies": "50.3",
-        "repeatunitlen": "",
-        "age_onset": "",
-        "age_onset_min": "",
-        "age_onset_max": "",
-        "novel": "",
-        "Mechanism": "",
-        "Mechanism_detail": "",
-        "Mechanism_source": "",
-        "source": "https://www.omim.org/entry/620174, https://www.cell.com/ajhg/fulltext/S0002-9297(22)00506-7",
+        "repeatunitlen": "3",
+        "age_onset": "mean 55\u00b113 for episodic symptoms, 59\u00b111 for progressive ataxia",
+        "age_onset_min": "30",
+        "age_onset_max": "88",
+        "novel": "ref",
+        "Mechanism": "Haploinsufficiency",
+        "Mechanism_detail": "Reduced transcript 2",
+        "Mechanism_source": "PMCID: PMC10042577",
+        "source": "https://www.omim.org/entry/620174, https://www.cell.com/ajhg/fulltext/S0002-9297(22)00506-7, PMCID: PMC10042577, PMID: 37399286",
         "notes": "250-300 pathogenic with incomplete penetrance, >300 complete penetrance",
+        "details": "",
         "width": "",
         "OMIM": "620174",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "FGF14",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": "2023"
     },
     {
         "chrom": "chrX",
@@ -1369,13 +1419,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg1691) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, NBK1384",
         "notes": "FXTAS/POI 55\u2013200, FXS >200, late onset",
+        "details": "",
         "width": "74",
         "OMIM": "300624; 300623",
         "Incidence": "",
         "Prevalence": "16-25/100,000 males",
         "STRipy_gene": "FMR1",
         "gnomAD_gene": "FMR1",
-        "GeneReviews": "NBK1384"
+        "GeneReviews": "NBK1384",
+        "Year": ""
     },
     {
         "chrom": "chr3",
@@ -1422,13 +1474,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "NBK535148",
         "notes": "",
+        "details": "",
         "width": "42",
         "OMIM": "110100",
         "Incidence": "",
         "Prevalence": "1 in 50,000 births globally",
         "STRipy_gene": "FOXL2",
         "gnomAD_gene": "FOXL2",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr9",
@@ -1475,13 +1529,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg1691) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK535148",
         "notes": "Not annotated by TRF?",
+        "details": "",
         "width": "2",
         "OMIM": "229300",
         "Incidence": "",
         "Prevalence": "1/50,000 (US), 1/40,000 (global)",
         "STRipy_gene": "FXN",
         "gnomAD_gene": "FXN",
-        "GeneReviews": "NBK1281"
+        "GeneReviews": "NBK1281",
+        "Year": ""
     },
     {
         "chrom": "chr19",
@@ -1528,13 +1584,15 @@
         "Mechanism_source": "(OMIM), (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, 32413282 (Pubmed)",
         "notes": "",
+        "details": "",
         "width": "33",
         "OMIM": "618940",
         "Incidence": "",
         "Prevalence": "Population dependent",
         "STRipy_gene": "GIPC1",
         "gnomAD_gene": "GIPC1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr2",
@@ -1581,13 +1639,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "van Kuilenburg 2019 NEJM, 30970188 (Pubmed)",
         "notes": "Several compound het cases reported",
+        "details": "",
         "width": "47",
         "OMIM": "618412",
         "Incidence": "",
         "Prevalence": "As of 2019, only 7 cases",
         "STRipy_gene": "GLS",
         "gnomAD_gene": "GLS",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr7",
@@ -1634,13 +1694,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK1423",
         "notes": "There are 3 pathogenic polyalanine tracts in this gene",
+        "details": "",
         "width": "54",
         "OMIM": "140000",
         "Incidence": "",
         "Prevalence": "Rare",
         "STRipy_gene": "HOXA13_3",
         "gnomAD_gene": "HOXA13_3",
-        "GeneReviews": "NBK1423"
+        "GeneReviews": "NBK1423",
+        "Year": ""
     },
     {
         "chrom": "chr7",
@@ -1687,13 +1749,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2,  NBK1423",
         "notes": "There are 3 pathogenic polyalanine tracts in this gene",
+        "details": "",
         "width": "36",
         "OMIM": "140000",
         "Incidence": "",
         "Prevalence": "Rare",
         "STRipy_gene": "HOXA13_2",
         "gnomAD_gene": "HOXA13_2",
-        "GeneReviews": "NBK1423"
+        "GeneReviews": "NBK1423",
+        "Year": ""
     },
     {
         "chrom": "chr7",
@@ -1740,13 +1804,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats, Gnomad v3.1.2, NBK1423",
         "notes": "There are 3 pathogenic polyalanine tracts in this gene",
+        "details": "",
         "width": "42",
         "OMIM": "140000",
         "Incidence": "",
         "Prevalence": "Rare",
         "STRipy_gene": "HOXA13_1",
         "gnomAD_gene": "HOXA13_1",
-        "GeneReviews": "NBK1423"
+        "GeneReviews": "NBK1423",
+        "Year": ""
     },
     {
         "chrom": "chr2",
@@ -1793,13 +1859,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "45",
         "OMIM": "186000",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "HOXD13",
         "gnomAD_gene": "HOXD13",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr4",
@@ -1846,13 +1914,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews",
         "notes": "CAG exp only pathogenic. Interruptions impact pathogenicity. Age 4 onset reported, not yet published",
+        "details": "",
         "width": "63",
         "OMIM": "143100",
         "Incidence": "",
         "Prevalence": "1/10,000",
         "STRipy_gene": "HTT",
         "gnomAD_gene": "HTT",
-        "GeneReviews": "NBK1305"
+        "GeneReviews": "NBK1305",
+        "Year": ""
     },
     {
         "chrom": "chr16",
@@ -1899,13 +1969,15 @@
         "Mechanism_source": "(doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK1529",
         "notes": "reflen + pos from HipSTR",
+        "details": "",
         "width": "46",
         "OMIM": "606438",
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "JPH3",
         "gnomAD_gene": "JPH3",
-        "GeneReviews": "NBK1529"
+        "GeneReviews": "NBK1529",
+        "Year": ""
     },
     {
         "chrom": "chr8",
@@ -1952,13 +2024,15 @@
         "Mechanism_source": "(OMIM), (doi.org/10.1007/s11604-022-01343-5)",
         "source": "OMIM 164310, Ishiura et al [2019], Ehdn, NBK535148, PMID 31332380",
         "notes": "CGG/CGT",
+        "details": "",
         "width": "27",
         "OMIM": "164310",
         "Incidence": "",
         "Prevalence": "Population dependent",
         "STRipy_gene": "LRP12",
         "gnomAD_gene": "LRP12",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr5",
@@ -2005,13 +2079,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "Florian, R.T. Nat Comm. 2019",
         "notes": "TTTTA + TTTCA",
+        "details": "",
         "width": "72",
         "OMIM": "613608",
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "MARCHF6",
         "gnomAD_gene": "MARCHF6",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr15",
@@ -2058,13 +2134,15 @@
         "Mechanism_source": "N/A in GeneCard",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, 30342764 (Pubmed), path range from gnomAD",
         "notes": "Proposed modifier for ALS",
+        "details": "",
         "width": "24",
         "OMIM": "105400",
         "Incidence": "1.5-4.7 per 100,000 person-years (All ALS, Europe/NA)",
         "Prevalence": "2.7-7.4/100,000 (All ALS, not just this locus)",
         "STRipy_gene": "NIPA1",
         "gnomAD_gene": "NIPA1",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr20",
@@ -2111,13 +2189,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "GeneReviews, OMIM, NBK231880",
         "notes": "",
+        "details": "",
         "width": "42",
         "OMIM": "614153",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "NOP56",
         "gnomAD_gene": "NOP56",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr1",
@@ -2164,13 +2244,15 @@
         "Mechanism_source": "(OMIM) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "doi: 10.1038/s41588-019-0458-z, https://doi.org/10.1016/j.ajhg.2019.05.013, s40478-021-01201-x",
         "notes": "May be issues with parology between genes: C253572.1, NOTCH2, NOTCH2NL, NBPF14, NBPF19 ?? Motif variation in controls: (AGG)(CGG)n(AGG)0-3(CGG)0-2. Methylation involved",
+        "details": "",
         "width": "39",
         "OMIM": "603472",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "NOTCH2NLC",
         "gnomAD_gene": "NOTCH2NLC",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr10",
@@ -2217,13 +2299,15 @@
         "Mechanism_source": "(OMIM) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, Ishiura 2019, doi: 10.1038/s41588-019-0458-z, https://doi.org/10.1038/s41580-021-00382-6",
         "notes": "Not in TRF annotation, alt transcript in opposite direction: LOC642361",
+        "details": "",
         "width": "21",
         "OMIM": "618637",
         "Incidence": "",
         "Prevalence": "Couldn't find",
         "STRipy_gene": "NUTM2B-AS1",
         "gnomAD_gene": "NUTM2B-AS1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr14",
@@ -2270,13 +2354,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Mirkin 2007, GeneReviews NBK1126, s40478-021-01201-x",
         "notes": "AR for 11 repeats, AD >12 repeats. Most known patients have (GCG)+, but GCN or any polyalanine may be pathogenic",
+        "details": "",
         "width": "20",
         "OMIM": "164300",
         "Incidence": "",
         "Prevalence": "1/100,000 Western countries",
         "STRipy_gene": "PABPN1",
         "gnomAD_gene": "PABPN1",
-        "GeneReviews": "NBK1126"
+        "GeneReviews": "NBK1126",
+        "Year": ""
     },
     {
         "chrom": "chr4",
@@ -2323,13 +2409,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Mirkin 2007, GeneReviews NBK1427, s40478-021-01201-x",
         "notes": "ReferenceRegion: 4:41745971-41746032",
+        "details": "",
         "width": "46",
         "OMIM": "209880",
         "Incidence": "",
         "Prevalence": "1:148000-200000 births (Estimated)",
         "STRipy_gene": "PHOX2B",
         "gnomAD_gene": "PHOX2B",
-        "GeneReviews": "NBK1427"
+        "GeneReviews": "NBK1427",
+        "Year": ""
     },
     {
         "chrom": "chr15",
@@ -2374,15 +2462,17 @@
         "Mechanism": "",
         "Mechanism_detail": "No information found",
         "Mechanism_source": "N/A in GeneCard",
-        "source": "PMC2905783",
+        "source": "PMC2905783, PMID: 20399836, PMID: 10196696",
         "notes": "Unconfirmed association",
+        "details": "There is conflicting evidence for the association between this repeat expansion and Parkinson's risk (PMID: 20399836 and PMID: 10196696)",
         "width": "40",
         "OMIM": "Disease association unclear",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr5",
@@ -2429,13 +2519,15 @@
         "Mechanism_source": "N/A in GeneCard,",
         "source": "Hannan 2018, Mirkin 2007, OMIM, NBK535148, s40478-021-01201-x",
         "notes": "(Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease)",
+        "details": "",
         "width": "31",
         "OMIM": "604326",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "PPP2R2B",
         "gnomAD_gene": "PPP2R2B",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr9",
@@ -2482,20 +2574,22 @@
         "Mechanism_source": "OMIM",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
         "notes": "",
+        "details": "",
         "width": "33",
         "OMIM": "616488",
         "Incidence": "",
         "Prevalence": "<1/1,000,000",
         "STRipy_gene": "PRDM12",
         "gnomAD_gene": "PRDM12",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr20",
         "start_hg38": "4699397",
         "stop_hg38": "4699493",
-        "start_hg19": "",
-        "stop_hg19": "",
+        "start_hg19": "4680043",
+        "stop_hg19": "4680139",
         "start_t2t": "4738633",
         "stop_t2t": "4738705",
         "notes_t2t": "",
@@ -2535,13 +2629,15 @@
         "Mechanism_source": "",
         "source": "https://www.ncbi.nlm.nih.gov/books/NBK1229/",
         "notes": "",
+        "details": "",
         "width": "",
         "OMIM": "123400",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "PRNP",
-        "GeneReviews": "NBK1229"
+        "GeneReviews": "NBK1229",
+        "Year": ""
     },
     {
         "chrom": "chr4",
@@ -2588,13 +2684,15 @@
         "Mechanism_source": "(10.1038/s41588-018-0067-2)",
         "source": "Ishiura 2018, 29507423 (Pubmed), https://sci-hub.hkvisa.net/10.1111/ene.13848",
         "notes": "Novel, (TTTTA)exp(TTTCA)exp(TTTTA)n, but only the TTTCA is specific to affected individuals, Alu-associated repeat, incomplete penetrance",
+        "details": "",
         "width": "91",
         "OMIM": "618075",
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "RAPGEF2",
         "gnomAD_gene": "RAPGEF2",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr4",
@@ -2609,12 +2707,12 @@
         "disease_id": "CANVAS",
         "gene_strand": "-",
         "reference_motif_reference_orientation": "AAAAG",
-        "pathogenic_motif_reference_orientation": "AAGGG",
-        "pathogenic_motif_gene_orientation": "CCCTT",
-        "benign_motif_reference_orientation": "GAAAG",
-        "benign_motif_gene_orientation": "CCTTT",
-        "unknown_motif_reference_orientation": "AAAAA,AAAAC,AACGG,AAGAC,AAGAG,AAGGC,AAGGT,AGAAC,AGGGC,AGGGG,GAAAC,GGGAC,GTGAG,AAAAGA,AAAGGA,GGAAAG",
-        "unknown_motif_gene_orientation": "TTTTT,GTTTT,CCGTT,CTTGT,CTCTT,CCTTG,ACCTT,CTGTT,CCCTG,CCCCT,CGTTT,CCCGT,ACCTC,CTTTTT,CCTTTT,CCCTTT",
+        "pathogenic_motif_reference_orientation": "AAGGG, ACAGG",
+        "pathogenic_motif_gene_orientation": "CCCTT,CCTGT",
+        "benign_motif_reference_orientation": "AAAAG,AAAGG, AAGAG, AGAGG",
+        "benign_motif_gene_orientation": "CTTTT,CCTTT,CTCTT,CCTCT",
+        "unknown_motif_reference_orientation": "AAAAA,AAAAC,AACGG,AAGAC,AAGGC,AAGGT,AGAAC,AGGGC,AGGGG,GAAAC,GGGAC,GTGAG,AAAAGA,AAAGGA,GGAAAG",
+        "unknown_motif_gene_orientation": "TTTTT,GTTTT,CCGTT,CTTGT,CCTTG,ACCTT,CTGTT,CCCTG,CCCCT,CGTTT,CCCGT,ACCTC,CTTTTT,CCTTTT,CCCTTT",
         "disease": "Cerebellar ataxia, neuropathy, and vestibular areflexia syndrome",
         "gene": "RFC1",
         "locus_structure": "\"(AARRG)*\"",
@@ -2639,15 +2737,17 @@
         "Mechanism": "",
         "Mechanism_detail": "No information found",
         "Mechanism_source": "N/A in GeneCard",
-        "source": "OMIM, Cortese 2019, 30926972 (Pubmed), https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-021-01201-x/tables/1, s40478-021-01201-x",
+        "source": "OMIM, Cortese 2019, 30926972 (Pubmed), https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-021-01201-x/tables/1, s40478-021-01201-x, https://www.ncbi.nlm.nih.gov/books/NBK564656/, https://doi.org/10.1101/2023.05.12.540470",
         "notes": "Novel, ref is AAAAG(11), path: (AAGGG)400\u20132000 or (ACAGG)exp",
+        "details": "Pathogenic expansions may be flanked by other motifs. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 (PMID: 32851396). Motif heterogeneity is common in unaffected individuals",
         "width": "58",
         "OMIM": "614575",
         "Incidence": "",
         "Prevalence": "Unknown, <1/1,000,000",
         "STRipy_gene": "RFC1",
         "gnomAD_gene": "RFC1",
-        "GeneReviews": "NBK564656"
+        "GeneReviews": "NBK564656",
+        "Year": ""
     },
     {
         "chrom": "chr12",
@@ -2694,13 +2794,15 @@
         "Mechanism_source": "(Malacard)",
         "source": "Yu 2022 AJHG",
         "notes": "toxic poly-glycine protein and/or toxic RNA gain-of-function effects",
+        "details": "",
         "width": "35",
         "OMIM": "",
         "Incidence": "",
         "Prevalence": "Population dependent",
         "STRipy_gene": "RILPL1",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr6",
@@ -2747,13 +2849,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "42",
         "OMIM": "119600",
         "Incidence": "",
         "Prevalence": "1/1,000,000 births (likely underdiagnosed)",
         "STRipy_gene": "RUNX2",
         "gnomAD_gene": "RUNX2",
-        "GeneReviews": "NBK1513"
+        "GeneReviews": "NBK1513",
+        "Year": ""
     },
     {
         "chrom": "chr8",
@@ -2800,13 +2904,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "Ishiura 2018. https://movementdisorders.onlinelibrary.wiley.com/doi/full/10.1002/mds.27832",
         "notes": "Novel, pathogenic alleles include expansions of TTTTAn + TTTCAn, but only the TTTCA is specific to affected individuals, check reference and pathogenic sites with Stranger. TTTCA within TTTTA repeat region",
+        "details": "",
         "width": "105",
         "OMIM": "601068",
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "SAMD12",
         "gnomAD_gene": "SAMD12",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chrX",
@@ -2853,13 +2959,15 @@
         "Mechanism_source": "(doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "45",
         "OMIM": "300123",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "SOX3",
         "gnomAD_gene": "SOX3",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr2",
@@ -2906,13 +3014,15 @@
         "Mechanism_source": "(10.1038/s41467-019-12671-y)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
         "notes": "",
+        "details": "",
         "width": "54",
         "OMIM": "607876",
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "STARD7",
         "gnomAD_gene": "STARD7",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr6",
@@ -2959,13 +3069,15 @@
         "Mechanism_source": "(doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK1438",
         "notes": "Parkinson disease,late-onset",
+        "details": "",
         "width": "110",
         "OMIM": "607136",
         "Incidence": "",
         "Prevalence": "Unknown (global), 0.47:1,000,000 (Japanese)",
         "STRipy_gene": "TBP",
         "gnomAD_gene": "TBP",
-        "GeneReviews": "NBK1438"
+        "GeneReviews": "NBK1438",
+        "Year": ""
     },
     {
         "chrom": "chr22",
@@ -3012,13 +3124,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "45",
         "OMIM": "187500",
         "Incidence": "",
         "Prevalence": "Unknown for specific gene",
         "STRipy_gene": "TBX1",
         "gnomAD_gene": "TBX1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr18",
@@ -3065,13 +3179,15 @@
         "Mechanism_source": "(10.1074/jbc.M114.621607)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "72",
         "OMIM": "613267",
         "Incidence": "",
         "Prevalence": "~4/100 (over 40)",
         "STRipy_gene": "TCF4",
         "gnomAD_gene": "TCF4",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr16",
@@ -3118,20 +3234,22 @@
         "Mechanism_source": "(10.1038/s41588-018-0067-2)",
         "source": "Ishiura 2018; gnomad v3.1.2, 29507423 (Pubmed), https://doi.org/10.1038/s41597-020-00633-9, https://stripy.org/database/TNRC6A",
         "notes": "Novel, reported pathogenic alleles: (TTTTA)22 (TTTCA)exp (TTTTA)exp, but only the TTTCA is specific to affected individuals, Alu-associated repeat. Non-pathogenic reference TTTTA repeat was expanded in nine healthy subjects 40-120 repeats and in two individuals potentially even longer (Ishiura et al., 2018).",
+        "details": "",
         "width": "93",
         "OMIM": "618074",
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "TNRC6A",
         "gnomAD_gene": "TNRC6A",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr1",
         "start_hg38": "1435798",
         "stop_hg38": "1435818",
-        "start_hg19": "",
-        "stop_hg19": "",
+        "start_hg19": "1371178",
+        "stop_hg19": "1371198",
         "start_t2t": "870158",
         "stop_t2t": "870178",
         "notes_t2t": "",
@@ -3171,13 +3289,15 @@
         "Mechanism_source": "",
         "source": "",
         "notes": "",
+        "details": "",
         "width": "",
         "OMIM": "619216",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "VWA1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr16",
@@ -3224,13 +3344,15 @@
         "Mechanism_source": "(doi.org/10.1016/j.ajhg.2018.11.005)",
         "source": "LaCroix 2019, gnomad v3.1.2, 30554721",
         "notes": "Repeat is within a sequencing missing from hg38",
+        "details": "",
         "width": "1",
         "OMIM": "615777",
         "Incidence": "",
         "Prevalence": "<1 / 1,000,000 births",
         "STRipy_gene": "XYLT1",
         "gnomAD_gene": "XYLT1",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr3",
@@ -3277,13 +3399,15 @@
         "Mechanism_source": "(10.1093/brain/awz267)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
         "notes": "",
+        "details": "",
         "width": "34",
         "OMIM": "615127",
         "Incidence": "",
         "Prevalence": "~<1/35,000",
         "STRipy_gene": "YEATS2",
         "gnomAD_gene": "YEATS2",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr13",
@@ -3330,13 +3454,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "45",
         "OMIM": "609637",
         "Incidence": "",
         "Prevalence": "Unknown ZIC2 specific",
         "STRipy_gene": "ZIC2",
         "gnomAD_gene": "ZIC2",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chrX",
@@ -3383,13 +3509,15 @@
         "Mechanism_source": "(doi.org/10.1038/nature05977)",
         "source": "Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes": "",
+        "details": "",
         "width": "30",
         "OMIM": "314390",
         "Incidence": "",
         "Prevalence": "Unknown",
         "STRipy_gene": "ZIC3",
         "gnomAD_gene": "ZIC3",
-        "GeneReviews": "NBK535148"
+        "GeneReviews": "NBK535148",
+        "Year": ""
     },
     {
         "chrom": "chr7",
@@ -3436,13 +3564,15 @@
         "Mechanism_source": "(OMIM)",
         "source": "OMIM, https://pubmed.ncbi.nlm.nih.gov/25196122/",
         "notes": "",
+        "details": "",
         "width": "38",
         "OMIM": "616181",
         "Incidence": "",
         "Prevalence": "",
         "STRipy_gene": "",
         "gnomAD_gene": "",
-        "GeneReviews": ""
+        "GeneReviews": "",
+        "Year": ""
     },
     {
         "chrom": "chr3",
@@ -3489,12 +3619,14 @@
         "Mechanism_source": "(doi.org/10.1093/hmg/ddr568)",
         "source": "Hannan 2018, Mirkin 2007, GeneReviews NBK1466, https://doi.org/10.1038/s41580-021-00382-6",
         "notes": "(TG)n(TCTG)n(CCTG)n. CCTG expansion causes DM2 but the other repeat units are also variable.",
+        "details": "",
         "width": "82",
         "OMIM": "602668",
         "Incidence": "",
         "Prevalence": "2.29/100,000",
         "STRipy_gene": "CNBP",
         "gnomAD_gene": "CNBP",
-        "GeneReviews": "NBK1466"
+        "GeneReviews": "NBK1466",
+        "Year": ""
     }
 ]
