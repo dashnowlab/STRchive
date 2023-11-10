@@ -1,0 +1,219 @@
+---
+title: "STRchiveLiteratureAutomation"
+author: "Laurel Hiatt"
+date: "2023-11-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(biomaRt)
+library(rentrez)
+library(dplyr)
+library(easyPubMed)
+library(stringr)
+```
+
+## Automating STRchive Literature Management
+
+The goal for this Markdown is to be a repository of code that assists with 
+literature management for the living database, STRchive.
+
+Running tasks:
+- Plot number of papers by year of first publication for sanity check
+### Defining the Gene List
+```{r genelist}
+gene_list <- c("AFF2", "FMR2", "AFF3", "AR", "ARX", "ARX", "ATN1", "ATXN1", "ATXN10", "ATXN2",
+               "ATXN3", "ATXN7", "ATXN8OS", "ATXN8", "BEAN1", "C9orf72", "CACNA1A", "CBL2", "COMP",
+               "DAB1", "DIP2B", "DMD", "DMPK", "FMR1", "FOXL2", "FXN", "GIPC1", "GLS", "HOXA13",
+               "HOXA13", "HOXA13", "HOXD13", "HTT", "JPH3", "LRP12", "MARCH6", "NIPA1", "NOP56",
+               "NOTCH2NLC", "NUTM2B-AS1", "PABPN1", "PHOX2B", "POLG", "PPP2R2B", "PRDM12", "RAPGEF2",
+               "RFC1", "RILPL1", "RUNX2", "SAMD12", "SOX3", "STARD7", "TBP", "TBX1", "TCF4", "TNRC6A",
+               "XYLT1", "YEATS2", "ZIC2", "ZIC3", "ZNF713", "ZNF9", "CNBP1", "CSTB", "EIF4A3", "PRNP",
+               "VWA1", "ABCD3", "FGF14")
+```
+
+### Getting gene synonyms from biomaRt based on gene list
+
+```{r biomaRt}
+# Specify the dataset to use (in this case, HGNC in human, using GRCh38 assembly)
+mart <- useMart("ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl", 
+                host = "https://www.ensembl.org")
+
+# Retrieve the HGNC symbol and Gene Synonym for the genes in the list
+gene_info <- getBM(attributes = c("hgnc_symbol", "external_synonym"),
+                   filters = "hgnc_symbol",
+                   values = gene_list,
+                   mart = mart)
+
+#if I want to copy this whole thing
+#clipr::write_clip(gene_info)
+
+# Replace missing values in 'external_synonym' with 'hgnc_symbol'
+# This is because some gene_names have no synonyms, so it's easier to group this way
+gene_info$external_synonym[is.na(gene_info$external_synonym) | gene_info$external_synonym == ""] <- gene_info$hgnc_symbol[is.na(gene_info$external_synonym) | gene_info$external_synonym == ""]
+
+```
+
+
+### Get All Article Data for Each Locus in XML Format
+```{r article data}
+perform_pubmed_query <- function(gene_info) {
+  #set up publications to be filled out
+  publications <- list()
+
+  #I have to do the queries separately or it breaks things
+  for (i in 1:nrow(gene_info)) {
+    gene_name <- gene_info$hgnc_symbol[i]
+    gene_synonyms <- unlist(strsplit(gene_info$external_synonym[i], ", "))
+
+    #basically, I want to group all gene synonyms with the root gene name
+    search_terms <- c(gene_name, gene_synonyms)
+    search_terms <- unique(unlist(search_terms))
+
+    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[
+                    Title/Abstract] OR "repeat expansions"[Title/Abstract] OR
+                    "tandem repeats"[Title/Abstract]) AND (', paste(search_terms,
+                    collapse = '[Title/Abstract] OR '), '[Title/Abstract]) AND "English"[Language
+                    ] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "
+                    diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "
+                    syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract]) AND "
+                    journal article"[Publication Type]) NOT "review"[Publication Type])')
+
+
+    # Remove unnecessary slashes from search terms
+    query <- gsub("\"", "", query, fixed = TRUE)
+    
+    search_results <- entrez_search(db = "pubmed", term = query)
+    if (search_results$count > 0) {
+      article_ids <- entrez_search(db = "pubmed", term = query)$ids
+      articles <- entrez_fetch(db = "pubmed", id = article_ids, rettype = "xml")
+      publications[[gene_name]] <- articles
+    } else {
+      publications[[gene_name]] <- NULL
+    }
+  }
+
+  return(publications)
+}
+
+# Apply function
+pubmed_results <- perform_pubmed_query(gene_info)
+
+# Printing the PubMed query results for each gene
+# This is pretty ugly but it's here to build on if necessary
+for (gene_name in names(pubmed_results)) {
+  print(paste("Gene:", gene_name))
+  print(pubmed_results[[gene_name]])
+}
+
+```
+
+### Geting Only the PMIDs for Each Locus
+```{r PMIDs}
+get_pmids <- function(gene_info) {
+  pmid_list <- list()
+
+  for (i in 1:nrow(gene_info)) {
+    gene_name <- gene_info$hgnc_symbol[i]
+    gene_synonyms <- unlist(strsplit(gene_info$external_synonym[i], ", "))
+
+    search_terms <- c(gene_name, gene_synonyms)
+    search_terms <- unique(unlist(search_terms))
+    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[
+                    Title/Abstract] OR "repeat expansions"[Title/Abstract] OR
+                    "tandem repeats"[Title/Abstract]) AND (', paste(search_terms,
+                    collapse = '[Title/Abstract] OR '), '[Title/Abstract]) AND "English"[Language
+                    ] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "
+                    diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "
+                    syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract]) AND "
+                    journal article"[Publication Type]) NOT "review"[Publication Type])')
+
+    query <- gsub("\"", "", query, fixed = TRUE)
+    search_results <- entrez_search(db = "pubmed", term = query)
+
+    if (search_results$count > 0) {
+      article_ids <- entrez_search(db = "pubmed", term = query, retmax = 10000)$ids
+      pmid_list[[gene_name]] <- article_ids
+    } else {
+      pmid_list[[gene_name]] <- NULL
+    }
+  }
+
+  return(pmid_list)
+}
+
+# Apply the function
+pmid_results <- get_pmids(gene_info)
+
+# Printing the retrieved PMIDs for each gene (much prettier than XMLs)
+for (gene_name in names(pmid_results)) {
+  print(paste("Gene:", gene_name))
+  print(pmid_results[[gene_name]])
+}
+
+```
+
+
+### Getting Earliest Pubdates and Titles for Each Locus (NEEDS TO BE UPDATED)
+```{r df}
+# Initialize an empty data frame
+earliest_pub_dates_df <- data.frame(
+  Gene = character(0),
+  Earliest_Pub_Date = numeric(0),
+  NumPub = numeric(0),
+  Titles = I(list())
+)
+
+for (i in 1:length(pubmed_results)) {
+  gene <- names(pubmed_results)[i]
+  print(gene)
+  # Extract publication years for each gene using custom_grep
+  publication_years <- custom_grep(pubmed_results[[i]], "PubDate", "char")
+  publication_years <- str_extract(publication_years, "(?<=<Year>)\\d{4}(?=</Year>)")
+
+  # Convert years to numeric format
+  publication_years <- as.numeric(publication_years)
+
+  # Find the minimum publication year
+  min_year <- min(publication_years, na.rm = TRUE)
+
+  # Extract titles
+  titles <- custom_grep(pubmed_results[[i]], "ArticleTitle", "char")
+
+  # Count the number of titles
+  titles_count <- length(titles)
+
+  # Combine titles into a single string with index numbers
+  titles_string <- paste0(seq_along(titles), ". ", titles, collapse = ", ")
+
+  # Add values to the data frame
+  row_index <- nrow(earliest_pub_dates_df) + 1
+  earliest_pub_dates_df[row_index, ] <- list(gene, min_year, titles_count, I(titles_string))
+}
+
+```
+
+### Making a plot based on the earliest dates
+
+```{r plot}
+earliest_pub_dates_df <- read.table("/Users/quinlan/Documents/Git/STRchive/scripts/earliest_pub_dates_only.tsv", header = TRUE, sep = "\t")
+
+
+# Assuming 'pubs_and_dates' is your dataframe
+
+library(ggplot2)
+install.packages("ggrepel")
+library(ggrepel)
+
+ggplot(pubs_and_dates, aes(x = Earliest_Pub_Date, y = NumPub, label = Gene)) +
+  geom_point(size = 3) +
+  geom_text_repel(size = 3, nudge_x = 0.1, nudge_y = 0.2, angle = 90) +  # Adjust position of labels and rotate by 90 degrees
+  labs(x = "Earliest Publication Date", y = "Number of Publications") +
+  ggtitle("Earliest Publication Date vs Number of Publications") +
+  theme_minimal() +
+  theme(plot.title = element_text(size = 14),
+        axis.text = element_text(size = 10))
+
+
+```
