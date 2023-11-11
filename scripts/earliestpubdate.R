@@ -6,7 +6,7 @@ library(dplyr)
 library(easyPubMed)
 library(stringr)
 
-
+setwd('/Users/quinlan/Documents/Git/STRchive/data')
 # Define the list of genes
 gene_list <- c("AFF2", "FMR2", "AFF3", "AR", "ARX", "ARX", "ATN1", "ATXN1", "ATXN10", "ATXN2",
                "ATXN3", "ATXN7", "ATXN8OS", "ATXN8", "BEAN1", "C9orf72", "CACNA1A", "CBL2", "COMP",
@@ -153,9 +153,9 @@ write.table(earliest_pub_dates_df[, 1:3], "/Users/quinlan/Documents/Git/STRchive
 
 
 
+all_publications <- list()
 
-
-
+base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/'
 
 perform_pubmed_query <- function(gene_info) {
   gene_names <- unique(gene_info$hgnc_symbol)
@@ -184,20 +184,23 @@ perform_pubmed_query <- function(gene_info) {
     query <- gsub("  ", " ", query)  # Remove double spaces
     print(query)
 
-    out_file <- paste0(gene_name, "01.txt")
-    base_directory <- '/Users/quinlan/Documents/Git/STRchive/data'
+    out_file <- paste0(gene_name)
 
     # Include a separator ("/") between base_directory and gene_name
+    # Modify dest_file_prefix to include the full file path
     out.A <- batch_pubmed_download(pubmed_query_string = query,
                                    format = "xml",
                                    batch_size = 10000,
-                                   dest_file_prefix = paste0(base_directory, "/", gene_name),
+                                   dest_file_prefix = out_file,
                                    encoding = "ASCII")
 
-    # Read the contents of the downloaded file
-    current_publications <- readLines(out_file, warn = FALSE)
-    # Append to the overall list
-    all_publications[[gene_name]] <- current_publications
+    # Check if the file was created successfully
+    if (file.exists(out_file)) {
+      # Save the file path for later retrieval
+      all_publications[[gene_name]] <- out_file
+    } else {
+      cat("Error: File not created -", out_file, "\n")
+    }
   }
 
   return(all_publications)
@@ -214,7 +217,6 @@ publications_df <- data.frame(
 
 
 
-all_publications <- list()
 
 # Assuming file_paths is a list of file paths
 for (gene_name in names(file_paths)) {
@@ -234,4 +236,31 @@ for (gene_name in names(file_paths)) {
   })
 }
 
+
+gene_names <- names(all_publications)
+publications_df <- data.frame(GeneName = character(), TypeCount = numeric())  # Initialize dataframe for storing results
+
+for (gene_name in all_publications) {
+  current_publications <- all_publications[[gene_name]]
+
+  # Extract type counts from character strings and create a new dataframe
+  type_counts <- sapply(str_extract_all(current_publications, "\\[\\d+\\]"), function(x) as.numeric(str_extract(x, "\\d+")))
+
+  # Find the maximum length to ensure consistent lengths
+  max_length <- max(lengths(type_counts))
+
+  # Pad type_counts to match the maximum length
+  type_counts <- lapply(type_counts, function(x) c(x, rep(NA, max_length - length(x))))
+
+  # Combine the results into a matrix
+  type_counts_matrix <- do.call(rbind, type_counts)
+
+  # Create a dataframe from the matrix and add GeneName column
+  type_counts_df <- data.frame(GeneName = gene_name, TypeCount = colSums(type_counts_matrix, na.rm = TRUE))
+
+  # Append to the overall dataframe
+  publications_df <- rbind(publications_df, type_counts_df)
+}
+
+# Now, publications_df contains the desired information
 
