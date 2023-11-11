@@ -45,44 +45,69 @@ if (exists("mart")) {
 # Replace missing values in 'external_synonym' with 'hgnc_symbol'
 gene_info$external_synonym[is.na(gene_info$external_synonym) | gene_info$external_synonym == ""] <- gene_info$hgnc_symbol[is.na(gene_info$external_synonym) | gene_info$external_synonym == ""]
 
+gene_names <- unique(gene_info$hgnc_symbol)
+publications <- list()
+consolidated_strings <- gene_info %>%
+  group_by(hgnc_symbol) %>%
+  summarize(consolidated_strings = paste(unique(c(hgnc_symbol, external_synonym)), collapse = ' OR ')) %>%
+  pull(consolidated_strings)
+
+#gene_info <- gene_info[1:27,]
 perform_pubmed_query <- function(gene_info) {
-  publications <- list()
 
-  for (i in 1:nrow(gene_info)) {
-    gene_name <- gene_info$hgnc_symbol[i]
-    gene_synonyms <- unlist(strsplit(gene_info$external_synonym[i], ", "))
 
-    # Combine hgnc_symbol and external_synonym for the OR-based query
-    all_terms <- c(gene_name, gene_synonyms)
-    all_terms <- unique(unlist(all_terms))
+  for (i in seq_along(gene_names)) {
+    gene_name <- gene_names[i]
+    print(gene_name)
+    cat("Processing gene:", gene_name, "\n")
 
-    # Combine all the terms into a single OR statement without adding [Title/Abstract]
-    or_terms <- paste(all_terms, collapse = ' OR ')
+    # Use str_detect to check if gene_name is present in each consolidated string
+    idx <- str_detect(consolidated_strings, regex(gene_name, ignore_case = TRUE))
+
+    # Filter out the relevant consolidated strings
+    or_terms <- paste(consolidated_strings[idx], collapse = ' OR ')
 
     # Construct the query with 'AND' logic among [Title/Abstract] segments
     query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) AND (', or_terms, ')[Title/Abstract] AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
 
     # Clean up any unnecessary slashes from the query
     query <- gsub("\"", "", query, fixed = TRUE)
-    print(query)
+    query <- gsub("  ", " ", query)  # Remove double spaces
+    #print(query)
+    #print(length(query))
 
+    # Perform PubMed search using web history
     search_results <- entrez_search(db = "pubmed", term = query, retmax = 500)
-    if (search_results$count > 0) {
-      article_ids <- entrez_search(db = "pubmed", term = query)$ids
-      articles <- entrez_fetch(db = "pubmed", id = article_ids, rettype = "xml")
+    myIDlist <- search_results
+    print(paste0("Search results are: ", search_results))
+    #search_results <- get_pubmed_ids(query, api_key = NULL)
+    print(paste0("Search results are: ", search_results))
+    articles <- fetch_pubmed_data(search_results, retstart = 0,
+                                  retmax = 500, format = "xml",
+                      encoding = "UTF8")
+    #if (!is.na(search_results) && search_results$count > 0)  {
+     # fetch_pubmed_data(search_results,
+      #
+       #
+        #
+         #
+      #article_ids <- entrez_search(db = "pubmed", term = query)$ids
+      #print(length(article_ids))
+      #articles <- entrez_fetch(db = "pubmed", id = article_ids, rettype = "xml", retmax = 10000)
       publications[[gene_name]] <- articles
-    } else {
-      publications[[gene_name]] <- NULL
     }
-  }
 
   return(publications)
 }
 
 
+# Example usage:
+# gene_names <- unique(your_gene_info$hgnc_symbol)
+# result <- perform_pubmed_query(your_gene_info, gene_names)
+
+gene_info <- gene_info[4:10, ]
+gene_info_subset <- gene_info[4:27, ]
 pubmed_results <- perform_pubmed_query(gene_info)
-
-
 
 earliest_pub_dates_df <- data.frame(
   Gene = character(0),
@@ -92,7 +117,7 @@ earliest_pub_dates_df <- data.frame(
 )
 
 for (i in 1:length(pubmed_results)) {
-  gene <- names(pubmed_results)[i]
+  gene <- unique(gene_info$hgnc_symbol)[i]
 
   # Extract publication years for each gene using custom_grep
   publication_years <- custom_grep(pubmed_results[[i]], "PubDate", "char")
@@ -122,3 +147,71 @@ for (i in 1:length(pubmed_results)) {
 write.table(earliest_pub_dates_df, "/Users/quinlan/Documents/Git/STRchive/scripts/earliest_pub_dates.tsv", sep = "\t", quote = FALSE, row.names = FALSE)
 
 write.table(earliest_pub_dates_df[, 1:3], "/Users/quinlan/Documents/Git/STRchive/scripts/earliest_pub_dates_only.tsv", sep = "\t", quote = FALSE, row.names = FALSE)
+
+
+
+
+
+
+
+
+
+
+perform_pubmed_query <- function(gene_info) {
+  gene_names <- unique(gene_info$hgnc_symbol)
+  all_publications <- list()  # Initialize the list to store all publications
+  consolidated_strings <- gene_info %>%
+    group_by(hgnc_symbol) %>%
+    summarize(consolidated_strings = paste(unique(c(hgnc_symbol, external_synonym)), collapse = ' OR ')) %>%
+    pull(consolidated_strings)
+
+  for (i in seq_along(gene_names)) {
+    gene_name <- gene_names[i]
+    print(gene_name)
+    cat("Processing gene:", gene_name, "\n")
+
+    # Use str_detect to check if gene_name is present in each consolidated string
+    idx <- str_detect(consolidated_strings, regex(gene_name, ignore_case = TRUE))
+
+    # Filter out the relevant consolidated strings
+    or_terms <- paste(consolidated_strings[idx], collapse = ' OR ')
+
+    # Construct the query with 'AND' logic among [Title/Abstract] segments
+    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) AND (', or_terms, ')[Title/Abstract] AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
+
+    # Clean up any unnecessary slashes from the query
+    query <- gsub("\"", "", query, fixed = TRUE)
+    query <- gsub("  ", " ", query)  # Remove double spaces
+    print(query)
+
+    out_file <- paste0(gene_name, "01.txt")
+    base_directory <- '/Users/quinlan/Documents/Git/STRchive/data'
+
+    # Include a separator ("/") between base_directory and gene_name
+    out.A <- batch_pubmed_download(pubmed_query_string = query,
+                                   format = "xml",
+                                   batch_size = 10000,
+                                   dest_file_prefix = paste0(base_directory, "/", gene_name),
+                                   encoding = "ASCII")
+
+    # Read the contents of the downloaded file
+    current_publications <- readLines(out_file, warn = FALSE)
+    # Append to the overall list
+    all_publications[[gene_name]] <- current_publications
+  }
+
+  return(all_publications)
+}
+
+pubmed_results <- perform_pubmed_query(gene_info)
+
+
+publications_df <- data.frame(
+  gene_name = names(all_publications),
+  publications = I(all_publications),
+  stringsAsFactors = FALSE
+)
+
+
+
+
