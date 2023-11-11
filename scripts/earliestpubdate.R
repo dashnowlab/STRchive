@@ -214,4 +214,24 @@ publications_df <- data.frame(
 
 
 
+all_publications <- list()
+
+# Assuming file_paths is a list of file paths
+for (gene_name in names(file_paths)) {
+  # Append "01.txt" to the file path
+  file_path <- paste0(file_paths[[gene_name]], "01.txt")
+
+  tryCatch({
+    # Read the file into a character vector
+    current_publications <- readLines(file_path)
+
+    # Append to the overall list
+    all_publications[[gene_name]] <- current_publications
+  }, error = function(e) {
+    cat("Error reading file:", file_path, "\n")
+    # Append an empty character vector in case of an error
+    all_publications[[gene_name]] <- character(0)
+  })
+}
+
 
