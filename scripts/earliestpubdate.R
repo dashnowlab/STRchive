@@ -85,7 +85,7 @@ perform_pubmed_query <- function(gene_info) {
     # Include a separator ("/") between base_directory and gene_name
     # Modify dest_file_prefix to include the full file path
     out.A <- batch_pubmed_download(pubmed_query_string = query,
-                                   format = "xml",
+                                   format = "medline",
                                    batch_size = 10000,
                                    dest_file_prefix = out_file,
                                    encoding = "ASCII")
@@ -128,16 +128,16 @@ for (gene_name in names(file_paths)) {
   })
 }
 
-extract_pub_info <- function(xml_data_list, gene_name) {
+extract_pub_info <- function(medline_data_list, gene_name) {
   # Combine the list of XML strings into a single string
-  xml_string <- paste(xml_data_list, collapse = "")
+  medline_string <- paste(medline_data_list, collapse = "")
 
   # Use regular expressions to extract PMID and publication years
-  pmids <- custom_grep(xml_string, "PMID", "char")
-  pmids <- str_extract(pmids, "\\d+")
+  # Extract PMIDs
+  pmids <- str_extract_all(medline_string, "(?<=PMID- )\\d+")[[1]]
 
-  publication_years <- custom_grep(xml_string, "PubDate", "char")
-  publication_years <- str_extract(publication_years, "(?<=<Year>)\\d{4}(?=</Year>)")
+  # Extract Publication Years
+  publication_years <- str_extract_all(medline_string, "(?<=EDAT- )\\d{4}")[[1]]
 
   # Ensure both vectors have the same length
   length_diff <- length(pmids) - length(publication_years)

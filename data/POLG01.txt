@@ -1,4 +1,440 @@
-<?xml version="1.0" ?>
-<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2023//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_230101.dtd">
-<PubmedArticleSet>
-<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM"><PMID Version="1">28444220</PMID><DateCompleted><Year>2017</Year><Month>07</Month><Day>19</Day></DateCompleted><DateRevised><Year>2022</Year><Month>03</Month><Day>16</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Electronic">1460-2156</ISSN><JournalIssue CitedMedium="Internet"><Volume>140</Volume><Issue>6</Issue><PubDate><Year>2017</Year><Month>Jun</Month><Day>01</Day></PubDate></JournalIssue><Title>Brain : a journal of neurology</Title><ISOAbbreviation>Brain</ISOAbbreviation></Journal><ArticleTitle>A panel study on patients with dominant cerebellar ataxia highlights the frequency of channelopathies.</ArticleTitle><Pagination><StartPage>1579</StartPage><EndPage>1594</EndPage><MedlinePgn>1579-1594</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1093/brain/awx081</ELocationID><Abstract><AbstractText>Autosomal dominant cerebellar ataxias have a marked heterogeneous genetic background, with mutations in 34 genes identified so far. This large amount of implicated genes accounts for heterogeneous clinical presentations, making genotype-phenotype correlations a major challenge in the field. While polyglutamine ataxias, linked to CAG repeat expansions in genes such as ATXN1, ATXN2, ATXN3, ATXN7, CACNA1A and TBP, have been extensively characterized in large cohorts, there is a need for comprehensive assessment of frequency and phenotype of more 'conventional' ataxias. After exclusion of CAG/polyglutamine expansions in spinocerebellar ataxia genes in 412 index cases with dominantly inherited cerebellar ataxias, we aimed to establish the relative frequencies of mutations in other genes, with an approach combining panel sequencing and TaqMan&#xae; polymerase chain reaction assay. We found relevant genetic variants in 59 patients (14.3%). The most frequently mutated were channel genes [CACNA1A (n = 16), KCND3 (n = 4), KCNC3 (n = 2) and KCNA1 (n = 2)]. Deletions in ITPR1 (n = 11) were followed by biallelic variants in SPG7 (n = 9). Variants in AFG3L2 (n = 7) came next in frequency, and variants were rarely found in STBN2 (n = 2), ELOVL5, FGF14, STUB1 and TTBK2 (n = 1 each). Interestingly, possible risk factor variants were detected in SPG7 and POLG. Clinical comparisons showed that ataxias due to channelopathies had a significantly earlier age at onset with an average of 24.6 years, versus 40.9 years for polyglutamine expansion spinocerebellar ataxias and 37.8 years for SPG7-related forms (P = 0.001). In contrast, disease duration was significantly longer in the former (20.5 years versus 9.3 and 13.7, P=0.001), though for similar functional stages, indicating slower progression of the disease. Of interest, intellectual deficiency was more frequent in channel spinocerebellar ataxias, while cognitive impairment in adulthood was similar among the three groups. Similar differences were found among a single gene group, comparing 23 patients with CACNA1A expansions (spinocerebellar ataxia 6) to 22 patients with CACNA1A point mutations, which had lower average age at onset (25.2 versus 47.3 years) with longer disease duration (18.7 versus 10.9), but lower severity indexes (0.39 versus 0.44), indicating slower progression of the disease. In conclusion, we identified relevant genetic variations in up to 15% of cases after exclusion of polyglutamine expansion spinocerebellar ataxias, and confirmed CACNA1A and SPG7 as major ataxia genes. We could delineate firm genotype-phenotype correlations that are important for genetic counselling and of possible prognostic value.</AbstractText><CopyrightInformation>&#xa9; The Author (2017). Published by Oxford University Press on behalf of the Guarantors of Brain. All rights reserved. For Permissions, please email: journals.permissions@oup.com.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Coutelier</LastName><ForeName>Marie</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Laboratory of Human Molecular Genetics, de Duve Institute, Universit&#xe9; catholique de Louvain, 1200, Brussels, Belgium.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Coarelli</LastName><ForeName>Giulia</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Monin</LastName><ForeName>Marie-Lorraine</ForeName><Initials>ML</Initials><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Konop</LastName><ForeName>Juliette</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Davoine</LastName><ForeName>Claire-Sophie</ForeName><Initials>CS</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tesson</LastName><ForeName>Christelle</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Valter</LastName><ForeName>R&#xe9;mi</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Anheim</LastName><ForeName>Mathieu</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>F&#xe9;d&#xe9;ration de M&#xe9;decine Translationnelle de Strasbourg (FMTS), Universit&#xe9; de Strasbourg, 67200, Strasbourg, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>D&#xe9;partement de Neurologie, H&#xf4;pital de Hautepierre, CHU de Strasbourg, 67100, Strasbourg, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut de G&#xe9;n&#xe9;tique et de Biologie Mol&#xe9;culaire et Cellulaire (IGBMC), INSERM-U964/CNRS-UMR7104/Universit&#xe9; de Strasbourg, 67400, Illkirch, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Behin</LastName><ForeName>Anthony</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>AP-HP, Centre de R&#xe9;f&#xe9;rence de Pathologie Neuromusculaire Paris-Est, Institut de Myologie, GHU Piti&#xe9;-Salp&#xea;tri&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Castelnovo</LastName><ForeName>Giovanni</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>Service de Neurologie, Centre Hospitalier Universitaire Caremeau, 30900, N&#xee;mes, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Charles</LastName><ForeName>Perrine</ForeName><Initials>P</Initials><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>David</LastName><ForeName>Albert</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Service de G&#xe9;n&#xe9;tique M&#xe9;dicale Centre Hospitalier Universitaire de Nantes, 44093, Nantes, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ewenczyk</LastName><ForeName>Claire</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Fradin</LastName><ForeName>M&#xe9;lanie</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Service de G&#xe9;n&#xe9;tique M&#xe9;dicale, CHU de Rennes, 35033, Rennes, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Service de G&#xe9;n&#xe9;tique M&#xe9;dicale, Centre Hospitalier de Saint Brieuc, 22000, Saint-Brieuc, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Goizet</LastName><ForeName>Cyril</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>INSERM U1211, Universit&#xe9; de Bordeaux, Laboratoire Maladies Rares, G&#xe9;n&#xe9;tique et M&#xe9;tabolisme, 33000, Bordeaux, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>CHU Bordeaux, Service de G&#xe9;n&#xe9;tique M&#xe9;dicale, 33000, Bordeaux, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Hannequin</LastName><ForeName>Didier</ForeName><Initials>D</Initials><AffiliationInfo><Affiliation>Service de G&#xe9;n&#xe9;tique, Service de Neurologie, Inserm U1079, Rouen University Hospital, 76031, Rouen, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Labauge</LastName><ForeName>Pierre</ForeName><Initials>P</Initials><AffiliationInfo><Affiliation>Service de Neurologie, Hopital Gui de Chauliac, CHU de Montpellier, 34295, Montpellier Cedex 5, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Riant</LastName><ForeName>Florence</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>Assistance Publique - H&#xf4;pitaux de Paris, Groupe Hospitalier Lariboisiere-Fernand Widal, Laboratoire de G&#xe9;n&#xe9;tique, 75010, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sarda</LastName><ForeName>Pierre</ForeName><Initials>P</Initials><AffiliationInfo><Affiliation>D&#xe9;partement de G&#xe9;n&#xe9;tique M&#xe9;dicale, H&#xf4;pital Arnaud de Villeneuve, CHU de Montpellier, 34295 Montpellier, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sznajer</LastName><ForeName>Yves</ForeName><Initials>Y</Initials><AffiliationInfo><Affiliation>Cliniques Universitaires Saint-Luc, Centre for Human Genetics, 1200, Brussels, Belgium.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tison</LastName><ForeName>Fran&#xe7;ois</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>Institut des Maladies Neurod&#xe9;g&#xe9;n&#xe9;ratives, CHU de Bordeaux, Universit&#xe9; de Bordeaux, CNRS UMR 5293, 33076, Bordeaux, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ullmann</LastName><ForeName>Urielle</ForeName><Initials>U</Initials><AffiliationInfo><Affiliation>Centre de g&#xe9;n&#xe9;tique humaine, Institut de Pathologie et de G&#xe9;n&#xe9;tique, 6041, Gosselies, Belgium.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Van Maldergem</LastName><ForeName>Lionel</ForeName><Initials>L</Initials><AffiliationInfo><Affiliation>Centre de G&#xe9;n&#xe9;tique Humaine, Universit&#xe9; de Franche-Comt&#xe9;, 25000, Besan&#xe7;on, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence pour les Maladies M&#xe9;taboliques, Universit&#xe9; de Li&#xe8;ge, 4000, Li&#xe8;ge, Belgium.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Mochel</LastName><ForeName>Fanny</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Neurometabolic Research Group, University Pierre and Marie Curie, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Brice</LastName><ForeName>Alexis</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Stevanin</LastName><ForeName>Giovanni</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Durr</LastName><ForeName>Alexandra</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>INSERM U 1127, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>UMRS 1127, Universit&#xe9; Pierre et Marie Curie (Paris 06), Sorbonne Universit&#xe9;s, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut du Cerveau et de la Moelle Epini&#xe8;re, 75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre de R&#xe9;f&#xe9;rence de Neurog&#xe9;n&#xe9;tique, H&#xf4;pital de la Piti&#xe9;-Salp&#xea;tri&#xe8;re, Assistance Publique - H&#xf4;pitaux de Paris, 75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><CollectiveName>SPATAX network</CollectiveName></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Brain</MedlineTA><NlmUniqueID>0372537</NlmUniqueID><ISSNLinking>0006-8950</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="C105656">CACNA1A protein, human</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D015220">Calcium Channels</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 3.4.24.-</RegistryNumber><NameOfSubstance UI="D008666">Metalloendopeptidases</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 3.4.24.-</RegistryNumber><NameOfSubstance UI="C112889">SPG7 protein, human</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 3.6.4.-</RegistryNumber><NameOfSubstance UI="D000074183">ATPases Associated with Diverse Cellular Activities</NameOfSubstance></Chemical></ChemicalList><CitationSubset>IM</CitationSubset><CommentsCorrectionsList><CommentsCorrections RefType="CommentIn"><RefSource>Brain. 2018 Apr 1;141(4):e22</RefSource><PMID Version="1">29444203</PMID></CommentsCorrections><CommentsCorrections RefType="CommentIn"><RefSource>Brain. 2018 Apr 1;141(4):e23</RefSource><PMID Version="1">29444217</PMID></CommentsCorrections></CommentsCorrectionsList><MeshHeadingList><MeshHeading><DescriptorName UI="D000074183" MajorTopicYN="N">ATPases Associated with Diverse Cellular Activities</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D017668" MajorTopicYN="N">Age of Onset</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000369" MajorTopicYN="N">Aged, 80 and over</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D015220" MajorTopicYN="N">Calcium Channels</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D002524" MajorTopicYN="N">Cerebellar Ataxia</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName><QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D053447" MajorTopicYN="N">Channelopathies</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName><QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002675" MajorTopicYN="N">Child, Preschool</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D015331" MajorTopicYN="N">Cohort Studies</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005799" MajorTopicYN="N">Genes, Dominant</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005838" MajorTopicYN="N">Genotype</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008666" MajorTopicYN="N">Metalloendopeptidases</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D010641" MajorTopicYN="N">Phenotype</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">CACNA1A</Keyword><Keyword MajorTopicYN="N">SPG7</Keyword><Keyword MajorTopicYN="N">cerebellar ataxia</Keyword><Keyword MajorTopicYN="N">channelopathies</Keyword></KeywordList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2016</Year><Month>11</Month><Day>3</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2017</Year><Month>2</Month><Day>5</Day></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2017</Year><Month>4</Month><Day>27</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2017</Year><Month>7</Month><Day>20</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2017</Year><Month>4</Month><Day>27</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">28444220</ArticleId><ArticleId IdType="doi">10.1093/brain/awx081</ArticleId><ArticleId IdType="pii">3748166</ArticleId></ArticleIdList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM"><PMID Version="1">20803511</PMID><DateCompleted><Year>2011</Year><Month>02</Month><Day>25</Day></DateCompleted><DateRevised><Year>2022</Year><Month>12</Month><Day>07</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Electronic">1531-8257</ISSN><JournalIssue CitedMedium="Internet"><Volume>25</Volume><Issue>15</Issue><PubDate><Year>2010</Year><Month>Nov</Month><Day>15</Day></PubDate></JournalIssue><Title>Movement disorders : official journal of the Movement Disorder Society</Title><ISOAbbreviation>Mov Disord</ISOAbbreviation></Journal><ArticleTitle>POLG, but not PEO1, is a frequent cause of cerebellar ataxia in Central Europe.</ArticleTitle><Pagination><StartPage>2678</StartPage><EndPage>2682</EndPage><MedlinePgn>2678-82</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1002/mds.23286</ELocationID><Abstract><AbstractText>Nuclear genes, in particular mitochondrial polymerase gamma (POLG) and PEO1, have been increasingly recognized to cause mitochondrial diseases. Both genes assume a complementary role as part of the mitochondrial DNA (mtDNA) replication fork and, accordingly, seem to present with largely overlapping phenotypical spectra. We assessed the frequency and phenotypic spectrum of PEO1 compared to POLG mutations in a cohort of 80 patients with cerebellar ataxia for which common repeat expansion diseases had been excluded. Patients were selected to present additional features previously described for PEO1 mutations, namely early age of onset, progressive external ophthalmoplegia (PEO), or epilepsy. Whereas PEO1 mutations were not found in our cohort, POLG frequently caused ataxia with PEO (47%), psychiatric comorbidities (20%) and, more rarely, with epilepsy (14%). Thus, PEO1 is rare in Central Europe even in those patients displaying characteristic phenotypic features. In contrast, POLG is rather common in Central European ataxia patients. It should be particularly considered in ataxia patients with PEO, psychiatric comorbidities, and/or sensory neuropathy, even if characteristic mitochondrial extra-CNS features are absent.</AbstractText><CopyrightInformation>&#xa9; 2010 Movement Disorder Society.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Schicks</LastName><ForeName>Julia</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>Department of Neurodegenerative Diseases, Hertie-Institute for Clinical Brain Research, and German Research Centre of Neurodegenerative Diseases, University of T&#xfc;bingen, T&#xfc;bingen, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Synofzik</LastName><ForeName>Matthis</ForeName><Initials>M</Initials></Author><Author ValidYN="Y"><LastName>Schulte</LastName><ForeName>Claudia</ForeName><Initials>C</Initials></Author><Author ValidYN="Y"><LastName>Sch&#xf6;ls</LastName><ForeName>Ludger</ForeName><Initials>L</Initials></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>United States</Country><MedlineTA>Mov Disord</MedlineTA><NlmUniqueID>8610688</NlmUniqueID><ISSNLinking>0885-3185</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D024101">Mitochondrial Proteins</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 2.7.7.7</RegistryNumber><NameOfSubstance UI="D000074002">DNA Polymerase gamma</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 2.7.7.7</RegistryNumber><NameOfSubstance UI="D004259">DNA-Directed DNA Polymerase</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 2.7.7.7</RegistryNumber><NameOfSubstance UI="C413027">POLG protein, human</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 3.6.4.-</RegistryNumber><NameOfSubstance UI="D004265">DNA Helicases</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 3.6.4.12</RegistryNumber><NameOfSubstance UI="C431576">TWNK protein, human</NameOfSubstance></Chemical></ChemicalList><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002524" MajorTopicYN="N">Cerebellar Ataxia</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002675" MajorTopicYN="N">Child, Preschool</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004265" MajorTopicYN="N">DNA Helicases</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D000074002" MajorTopicYN="N">DNA Polymerase gamma</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004259" MajorTopicYN="N">DNA-Directed DNA Polymerase</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D005060" MajorTopicYN="N" Type="Geographic">Europe</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D007223" MajorTopicYN="N">Infant</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D024101" MajorTopicYN="N">Mitochondrial Proteins</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D009154" MajorTopicYN="N">Mutation</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D044465" MajorTopicYN="N">White People</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName></MeshHeading></MeshHeadingList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="entrez"><Year>2010</Year><Month>8</Month><Day>31</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2010</Year><Month>8</Month><Day>31</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2011</Year><Month>2</Month><Day>26</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">20803511</ArticleId><ArticleId IdType="doi">10.1002/mds.23286</ArticleId></ArticleIdList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM"><PMID Version="1">10196696</PMID><DateCompleted><Year>1999</Year><Month>06</Month><Day>15</Day></DateCompleted><DateRevised><Year>2017</Year><Month>11</Month><Day>16</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Print">1018-4813</ISSN><JournalIssue CitedMedium="Print"><Volume>7</Volume><Issue>2</Issue><PubDate><Year>1999</Year><Season>Feb-Mar</Season></PubDate></JournalIssue><Title>European journal of human genetics : EJHG</Title><ISOAbbreviation>Eur J Hum Genet</ISOAbbreviation></Journal><ArticleTitle>Analysis of the trinucleotide CAG repeat from the human mitochondrial DNA polymerase gene in healthy and diseased individuals.</ArticleTitle><Pagination><StartPage>140</StartPage><EndPage>146</EndPage><MedlinePgn>140-6</MedlinePgn></Pagination><Abstract><AbstractText>The human nuclear gene (POLG) for the catalytic subunit of mitochondrial DNA polymerase (DNA polymerase gamma) contains a trinucleotide CAG microsatellite repeat within the coding sequence. We have investigated the frequency of different repeat-length alleles in populations of diseased and healthy individuals. The predominant allele of 10 CAG repeats was found at a very similar frequency (approximately 88%) in both Finnish and ethnically mixed population samples, with homozygosity close to the equilibrium prediction. Other alleles of between 5 and 13 repeat units were detected, but no larger, expanded alleles were found. A series of 51 British myotonic dystrophy patients showed no significant variation from controls, indicating an absence of generalised CAG repeat instability. Patients with a variety of molecular lesions in mtDNA, including sporadic, clonal deletions, maternally inherited point mutations, autosomally transmitted mtDNA depletion and autosomal dominant multiple deletions showed no differences in POLG trinucleotide repeat-length distribution from controls. These findings rule out POLG repeat expansion as a common pathogenic mechanism in disorders characterised by mitochondrial genome instability.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Rovio</LastName><ForeName>A</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Institute of Medical Technology, University of Tampere, Finland.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tiranti</LastName><ForeName>V</ForeName><Initials>V</Initials></Author><Author ValidYN="Y"><LastName>Bednarz</LastName><ForeName>A L</ForeName><Initials>AL</Initials></Author><Author ValidYN="Y"><LastName>Suomalainen</LastName><ForeName>A</ForeName><Initials>A</Initials></Author><Author ValidYN="Y"><LastName>Spelbrink</LastName><ForeName>J N</ForeName><Initials>JN</Initials></Author><Author ValidYN="Y"><LastName>Lecrenier</LastName><ForeName>N</ForeName><Initials>N</Initials></Author><Author ValidYN="Y"><LastName>Melberg</LastName><ForeName>A</ForeName><Initials>A</Initials></Author><Author ValidYN="Y"><LastName>Zeviani</LastName><ForeName>M</ForeName><Initials>M</Initials></Author><Author ValidYN="Y"><LastName>Poulton</LastName><ForeName>J</ForeName><Initials>J</Initials></Author><Author ValidYN="Y"><LastName>Foury</LastName><ForeName>F</ForeName><Initials>F</Initials></Author><Author ValidYN="Y"><LastName>Jacobs</LastName><ForeName>H T</ForeName><Initials>HT</Initials></Author></AuthorList><Language>eng</Language><DataBankList CompleteYN="Y"><DataBank><DataBankName>GENBANK</DataBankName><AccessionNumberList><AccessionNumber>X98093</AccessionNumber></AccessionNumberList></DataBank></DataBankList><GrantList CompleteYN="Y"><Grant><Agency>Wellcome Trust</Agency><Country>United Kingdom</Country></Grant></GrantList><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Eur J Hum Genet</MedlineTA><NlmUniqueID>9302235</NlmUniqueID><ISSNLinking>1018-4813</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D018076">DNA, Complementary</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D004272">DNA, Mitochondrial</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 2.7.7.7</RegistryNumber><NameOfSubstance UI="D000074002">DNA Polymerase gamma</NameOfSubstance></Chemical><Chemical><RegistryNumber>EC 2.7.7.7</RegistryNumber><NameOfSubstance UI="D004259">DNA-Directed DNA Polymerase</NameOfSubstance></Chemical></ChemicalList><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000483" MajorTopicYN="N">Alleles</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000595" MajorTopicYN="N">Amino Acid Sequence</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D001483" MajorTopicYN="N">Base Sequence</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000074002" MajorTopicYN="N">DNA Polymerase gamma</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D018076" MajorTopicYN="N">DNA, Complementary</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004272" MajorTopicYN="Y">DNA, Mitochondrial</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004259" MajorTopicYN="N">DNA-Directed DNA Polymerase</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008928" MajorTopicYN="N">Mitochondria</DescriptorName><QualifierName UI="Q000201" MajorTopicYN="Y">enzymology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D008969" MajorTopicYN="N">Molecular Sequence Data</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D018911" MajorTopicYN="Y">Trinucleotide Repeats</DescriptorName></MeshHeading></MeshHeadingList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="pubmed"><Year>1999</Year><Month>4</Month><Day>10</Day></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>1999</Year><Month>4</Month><Day>10</Day><Hour>0</Hour><Minute>1</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>1999</Year><Month>4</Month><Day>10</Day><Hour>0</Hour><Minute>0</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">10196696</ArticleId><ArticleId IdType="doi">10.1038/sj.ejhg.5200244</ArticleId></ArticleIdList></PubmedData></PubmedArticle></PubmedArticleSet>
+
+PMID- 28444220
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20170719
+LR  - 20220316
+IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Linking)
+VI  - 140
+IP  - 6
+DP  - 2017 Jun 1
+TI  - A panel study on patients with dominant cerebellar ataxia highlights the 
+      frequency of channelopathies.
+PG  - 1579-1594
+LID - 10.1093/brain/awx081 [doi]
+AB  - Autosomal dominant cerebellar ataxias have a marked heterogeneous genetic 
+      background, with mutations in 34 genes identified so far. This large amount of 
+      implicated genes accounts for heterogeneous clinical presentations, making 
+      genotype-phenotype correlations a major challenge in the field. While 
+      polyglutamine ataxias, linked to CAG repeat expansions in genes such as ATXN1, 
+      ATXN2, ATXN3, ATXN7, CACNA1A and TBP, have been extensively characterized in 
+      large cohorts, there is a need for comprehensive assessment of frequency and 
+      phenotype of more 'conventional' ataxias. After exclusion of CAG/polyglutamine 
+      expansions in spinocerebellar ataxia genes in 412 index cases with dominantly 
+      inherited cerebellar ataxias, we aimed to establish the relative frequencies of 
+      mutations in other genes, with an approach combining panel sequencing and TaqMan(R) 
+      polymerase chain reaction assay. We found relevant genetic variants in 59 
+      patients (14.3%). The most frequently mutated were channel genes [CACNA1A (n = 
+      16), KCND3 (n = 4), KCNC3 (n = 2) and KCNA1 (n = 2)]. Deletions in ITPR1 (n = 11) 
+      were followed by biallelic variants in SPG7 (n = 9). Variants in AFG3L2 (n = 7) 
+      came next in frequency, and variants were rarely found in STBN2 (n = 2), ELOVL5, 
+      FGF14, STUB1 and TTBK2 (n = 1 each). Interestingly, possible risk factor variants 
+      were detected in SPG7 and POLG. Clinical comparisons showed that ataxias due to 
+      channelopathies had a significantly earlier age at onset with an average of 24.6 
+      years, versus 40.9 years for polyglutamine expansion spinocerebellar ataxias and 
+      37.8 years for SPG7-related forms (P = 0.001). In contrast, disease duration was 
+      significantly longer in the former (20.5 years versus 9.3 and 13.7, P=0.001), 
+      though for similar functional stages, indicating slower progression of the 
+      disease. Of interest, intellectual deficiency was more frequent in channel 
+      spinocerebellar ataxias, while cognitive impairment in adulthood was similar 
+      among the three groups. Similar differences were found among a single gene group, 
+      comparing 23 patients with CACNA1A expansions (spinocerebellar ataxia 6) to 22 
+      patients with CACNA1A point mutations, which had lower average age at onset (25.2 
+      versus 47.3 years) with longer disease duration (18.7 versus 10.9), but lower 
+      severity indexes (0.39 versus 0.44), indicating slower progression of the 
+      disease. In conclusion, we identified relevant genetic variations in up to 15% of 
+      cases after exclusion of polyglutamine expansion spinocerebellar ataxias, and 
+      confirmed CACNA1A and SPG7 as major ataxia genes. We could delineate firm 
+      genotype-phenotype correlations that are important for genetic counselling and of 
+      possible prognostic value.
+CI  - (c) The Author (2017). Published by Oxford University Press on behalf of the 
+      Guarantors of Brain. All rights reserved. For Permissions, please email: 
+      journals.permissions@oup.com.
+FAU - Coutelier, Marie
+AU  - Coutelier M
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Laboratory of Human Molecular Genetics, de Duve Institute, Universite catholique 
+      de Louvain, 1200, Brussels, Belgium.
+AD  - Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.
+FAU - Coarelli, Giulia
+AU  - Coarelli G
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+FAU - Monin, Marie-Lorraine
+AU  - Monin ML
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+FAU - Konop, Juliette
+AU  - Konop J
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.
+FAU - Davoine, Claire-Sophie
+AU  - Davoine CS
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+FAU - Tesson, Christelle
+AU  - Tesson C
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.
+FAU - Valter, Remi
+AU  - Valter R
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.
+FAU - Anheim, Mathieu
+AU  - Anheim M
+AD  - Federation de Medecine Translationnelle de Strasbourg (FMTS), Universite de 
+      Strasbourg, 67200, Strasbourg, France.
+AD  - Departement de Neurologie, Hopital de Hautepierre, CHU de Strasbourg, 67100, 
+      Strasbourg, France.
+AD  - Institut de Genetique et de Biologie Moleculaire et Cellulaire (IGBMC), 
+      INSERM-U964/CNRS-UMR7104/Universite de Strasbourg, 67400, Illkirch, France.
+FAU - Behin, Anthony
+AU  - Behin A
+AD  - AP-HP, Centre de Reference de Pathologie Neuromusculaire Paris-Est, Institut de 
+      Myologie, GHU Pitie-Salpetriere, 75013, Paris, France.
+FAU - Castelnovo, Giovanni
+AU  - Castelnovo G
+AD  - Service de Neurologie, Centre Hospitalier Universitaire Caremeau, 30900, Nimes, 
+      France.
+FAU - Charles, Perrine
+AU  - Charles P
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+FAU - David, Albert
+AU  - David A
+AD  - Service de Genetique Medicale Centre Hospitalier Universitaire de Nantes, 44093, 
+      Nantes, France.
+FAU - Ewenczyk, Claire
+AU  - Ewenczyk C
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+FAU - Fradin, Melanie
+AU  - Fradin M
+AD  - Service de Genetique Medicale, CHU de Rennes, 35033, Rennes, France.
+AD  - Service de Genetique Medicale, Centre Hospitalier de Saint Brieuc, 22000, 
+      Saint-Brieuc, France.
+FAU - Goizet, Cyril
+AU  - Goizet C
+AD  - INSERM U1211, Universite de Bordeaux, Laboratoire Maladies Rares, Genetique et 
+      Metabolisme, 33000, Bordeaux, France.
+AD  - CHU Bordeaux, Service de Genetique Medicale, 33000, Bordeaux, France.
+FAU - Hannequin, Didier
+AU  - Hannequin D
+AD  - Service de Genetique, Service de Neurologie, Inserm U1079, Rouen University 
+      Hospital, 76031, Rouen, France.
+FAU - Labauge, Pierre
+AU  - Labauge P
+AD  - Service de Neurologie, Hopital Gui de Chauliac, CHU de Montpellier, 34295, 
+      Montpellier Cedex 5, France.
+FAU - Riant, Florence
+AU  - Riant F
+AD  - Assistance Publique - Hopitaux de Paris, Groupe Hospitalier Lariboisiere-Fernand 
+      Widal, Laboratoire de Genetique, 75010, Paris, France.
+FAU - Sarda, Pierre
+AU  - Sarda P
+AD  - Departement de Genetique Medicale, Hopital Arnaud de Villeneuve, CHU de 
+      Montpellier, 34295 Montpellier, France.
+FAU - Sznajer, Yves
+AU  - Sznajer Y
+AD  - Cliniques Universitaires Saint-Luc, Centre for Human Genetics, 1200, Brussels, 
+      Belgium.
+FAU - Tison, Francois
+AU  - Tison F
+AD  - Institut des Maladies Neurodegeneratives, CHU de Bordeaux, Universite de 
+      Bordeaux, CNRS UMR 5293, 33076, Bordeaux, France.
+FAU - Ullmann, Urielle
+AU  - Ullmann U
+AD  - Centre de genetique humaine, Institut de Pathologie et de Genetique, 6041, 
+      Gosselies, Belgium.
+FAU - Van Maldergem, Lionel
+AU  - Van Maldergem L
+AD  - Centre de Genetique Humaine, Universite de Franche-Comte, 25000, Besancon, 
+      France.
+AD  - Centre de Reference pour les Maladies Metaboliques, Universite de Liege, 4000, 
+      Liege, Belgium.
+FAU - Mochel, Fanny
+AU  - Mochel F
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+AD  - Neurometabolic Research Group, University Pierre and Marie Curie, 75013, Paris, 
+      France.
+FAU - Brice, Alexis
+AU  - Brice A
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+FAU - Stevanin, Giovanni
+AU  - Stevanin G
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Ecole Pratique des Hautes Etudes, PSL Research University, 75014, Paris, France.
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+FAU - Durr, Alexandra
+AU  - Durr A
+AD  - INSERM U 1127, 75013, Paris, France.
+AD  - Centre National de la Recherche Scientifique UMR 7225, 75013, Paris, France.
+AD  - UMRS 1127, Universite Pierre et Marie Curie (Paris 06), Sorbonne Universites, 
+      75013, Paris, France.
+AD  - Institut du Cerveau et de la Moelle Epiniere, 75013, Paris, France.
+AD  - Centre de Reference de Neurogenetique, Hopital de la Pitie-Salpetriere, 
+      Assistance Publique - Hopitaux de Paris, 75013, Paris, France.
+CN  - SPATAX network
+LA  - eng
+PT  - Journal Article
+PL  - England
+TA  - Brain
+JT  - Brain : a journal of neurology
+JID - 0372537
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels)
+RN  - EC 3.4.24.- (Metalloendopeptidases)
+RN  - EC 3.4.24.- (SPG7 protein, human)
+RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
+SB  - IM
+CIN - Brain. 2018 Apr 1;141(4):e22. PMID: 29444203
+CIN - Brain. 2018 Apr 1;141(4):e23. PMID: 29444217
+MH  - ATPases Associated with Diverse Cellular Activities
+MH  - Adolescent
+MH  - Adult
+MH  - Age of Onset
+MH  - Aged
+MH  - Aged, 80 and over
+MH  - Calcium Channels/*genetics
+MH  - Cerebellar Ataxia/*genetics/*physiopathology
+MH  - Channelopathies/*genetics/*physiopathology
+MH  - Child
+MH  - Child, Preschool
+MH  - Cohort Studies
+MH  - Female
+MH  - Genes, Dominant
+MH  - Genotype
+MH  - Humans
+MH  - Male
+MH  - Metalloendopeptidases/*genetics
+MH  - Middle Aged
+MH  - Phenotype
+MH  - Young Adult
+OTO - NOTNLM
+OT  - CACNA1A
+OT  - SPG7
+OT  - cerebellar ataxia
+OT  - channelopathies
+EDAT- 2017/04/27 06:00
+MHDA- 2017/07/20 06:00
+CRDT- 2017/04/27 06:00
+PHST- 2016/11/03 00:00 [received]
+PHST- 2017/02/05 00:00 [accepted]
+PHST- 2017/04/27 06:00 [pubmed]
+PHST- 2017/07/20 06:00 [medline]
+PHST- 2017/04/27 06:00 [entrez]
+AID - 3748166 [pii]
+AID - 10.1093/brain/awx081 [doi]
+PST - ppublish
+SO  - Brain. 2017 Jun 1;140(6):1579-1594. doi: 10.1093/brain/awx081.
+
+PMID- 20803511
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20110225
+LR  - 20221207
+IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Linking)
+VI  - 25
+IP  - 15
+DP  - 2010 Nov 15
+TI  - POLG, but not PEO1, is a frequent cause of cerebellar ataxia in Central Europe.
+PG  - 2678-82
+LID - 10.1002/mds.23286 [doi]
+AB  - Nuclear genes, in particular mitochondrial polymerase gamma (POLG) and PEO1, have 
+      been increasingly recognized to cause mitochondrial diseases. Both genes assume a 
+      complementary role as part of the mitochondrial DNA (mtDNA) replication fork and, 
+      accordingly, seem to present with largely overlapping phenotypical spectra. We 
+      assessed the frequency and phenotypic spectrum of PEO1 compared to POLG mutations 
+      in a cohort of 80 patients with cerebellar ataxia for which common repeat 
+      expansion diseases had been excluded. Patients were selected to present 
+      additional features previously described for PEO1 mutations, namely early age of 
+      onset, progressive external ophthalmoplegia (PEO), or epilepsy. Whereas PEO1 
+      mutations were not found in our cohort, POLG frequently caused ataxia with PEO 
+      (47%), psychiatric comorbidities (20%) and, more rarely, with epilepsy (14%). 
+      Thus, PEO1 is rare in Central Europe even in those patients displaying 
+      characteristic phenotypic features. In contrast, POLG is rather common in Central 
+      European ataxia patients. It should be particularly considered in ataxia patients 
+      with PEO, psychiatric comorbidities, and/or sensory neuropathy, even if 
+      characteristic mitochondrial extra-CNS features are absent.
+CI  - (c) 2010 Movement Disorder Society.
+FAU - Schicks, Julia
+AU  - Schicks J
+AD  - Department of Neurodegenerative Diseases, Hertie-Institute for Clinical Brain 
+      Research, and German Research Centre of Neurodegenerative Diseases, University of 
+      Tubingen, Tubingen, Germany.
+FAU - Synofzik, Matthis
+AU  - Synofzik M
+FAU - Schulte, Claudia
+AU  - Schulte C
+FAU - Schols, Ludger
+AU  - Schols L
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PL  - United States
+TA  - Mov Disord
+JT  - Movement disorders : official journal of the Movement Disorder Society
+JID - 8610688
+RN  - 0 (Mitochondrial Proteins)
+RN  - EC 2.7.7.7 (DNA Polymerase gamma)
+RN  - EC 2.7.7.7 (DNA-Directed DNA Polymerase)
+RN  - EC 2.7.7.7 (POLG protein, human)
+RN  - EC 3.6.4.- (DNA Helicases)
+RN  - EC 3.6.4.12 (TWNK protein, human)
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Cerebellar Ataxia/*genetics
+MH  - Child
+MH  - Child, Preschool
+MH  - DNA Helicases/*genetics
+MH  - DNA Polymerase gamma
+MH  - DNA-Directed DNA Polymerase/*genetics
+MH  - Europe
+MH  - Female
+MH  - Humans
+MH  - Infant
+MH  - Male
+MH  - Middle Aged
+MH  - Mitochondrial Proteins
+MH  - Mutation
+MH  - White People/genetics
+EDAT- 2010/08/31 06:00
+MHDA- 2011/02/26 06:00
+CRDT- 2010/08/31 06:00
+PHST- 2010/08/31 06:00 [entrez]
+PHST- 2010/08/31 06:00 [pubmed]
+PHST- 2011/02/26 06:00 [medline]
+AID - 10.1002/mds.23286 [doi]
+PST - ppublish
+SO  - Mov Disord. 2010 Nov 15;25(15):2678-82. doi: 10.1002/mds.23286.
+
+PMID- 10196696
+OWN - NLM
+STAT- MEDLINE
+DCOM- 19990615
+LR  - 20171116
+IS  - 1018-4813 (Print)
+IS  - 1018-4813 (Linking)
+VI  - 7
+IP  - 2
+DP  - 1999 Feb-Mar
+TI  - Analysis of the trinucleotide CAG repeat from the human mitochondrial DNA 
+      polymerase gene in healthy and diseased individuals.
+PG  - 140-6
+AB  - The human nuclear gene (POLG) for the catalytic subunit of mitochondrial DNA 
+      polymerase (DNA polymerase gamma) contains a trinucleotide CAG microsatellite 
+      repeat within the coding sequence. We have investigated the frequency of 
+      different repeat-length alleles in populations of diseased and healthy 
+      individuals. The predominant allele of 10 CAG repeats was found at a very similar 
+      frequency (approximately 88%) in both Finnish and ethnically mixed population 
+      samples, with homozygosity close to the equilibrium prediction. Other alleles of 
+      between 5 and 13 repeat units were detected, but no larger, expanded alleles were 
+      found. A series of 51 British myotonic dystrophy patients showed no significant 
+      variation from controls, indicating an absence of generalised CAG repeat 
+      instability. Patients with a variety of molecular lesions in mtDNA, including 
+      sporadic, clonal deletions, maternally inherited point mutations, autosomally 
+      transmitted mtDNA depletion and autosomal dominant multiple deletions showed no 
+      differences in POLG trinucleotide repeat-length distribution from controls. These 
+      findings rule out POLG repeat expansion as a common pathogenic mechanism in 
+      disorders characterised by mitochondrial genome instability.
+FAU - Rovio, A
+AU  - Rovio A
+AD  - Institute of Medical Technology, University of Tampere, Finland.
+FAU - Tiranti, V
+AU  - Tiranti V
+FAU - Bednarz, A L
+AU  - Bednarz AL
+FAU - Suomalainen, A
+AU  - Suomalainen A
+FAU - Spelbrink, J N
+AU  - Spelbrink JN
+FAU - Lecrenier, N
+AU  - Lecrenier N
+FAU - Melberg, A
+AU  - Melberg A
+FAU - Zeviani, M
+AU  - Zeviani M
+FAU - Poulton, J
+AU  - Poulton J
+FAU - Foury, F
+AU  - Foury F
+FAU - Jacobs, H T
+AU  - Jacobs HT
+LA  - eng
+SI  - GENBANK/X98093
+GR  - Wellcome Trust/United Kingdom
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PL  - England
+TA  - Eur J Hum Genet
+JT  - European journal of human genetics : EJHG
+JID - 9302235
+RN  - 0 (DNA, Complementary)
+RN  - 0 (DNA, Mitochondrial)
+RN  - EC 2.7.7.7 (DNA Polymerase gamma)
+RN  - EC 2.7.7.7 (DNA-Directed DNA Polymerase)
+SB  - IM
+MH  - Alleles
+MH  - Amino Acid Sequence
+MH  - Base Sequence
+MH  - DNA Polymerase gamma
+MH  - DNA, Complementary
+MH  - *DNA, Mitochondrial
+MH  - DNA-Directed DNA Polymerase/*genetics
+MH  - Humans
+MH  - Mitochondria/*enzymology
+MH  - Molecular Sequence Data
+MH  - *Trinucleotide Repeats
+EDAT- 1999/04/10 00:00
+MHDA- 1999/04/10 00:01
+CRDT- 1999/04/10 00:00
+PHST- 1999/04/10 00:00 [pubmed]
+PHST- 1999/04/10 00:01 [medline]
+PHST- 1999/04/10 00:00 [entrez]
+AID - 10.1038/sj.ejhg.5200244 [doi]
+PST - ppublish
+SO  - Eur J Hum Genet. 1999 Feb-Mar;7(2):140-6. doi: 10.1038/sj.ejhg.5200244.

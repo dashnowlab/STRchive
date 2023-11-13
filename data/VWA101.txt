@@ -1,4 +1,501 @@
-<?xml version="1.0" ?>
-<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2023//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_230101.dtd">
-<PubmedArticleSet>
-<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM"><PMID Version="1">33559681</PMID><DateCompleted><Year>2021</Year><Month>04</Month><Day>19</Day></DateCompleted><DateRevised><Year>2022</Year><Month>07</Month><Day>16</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Electronic">1460-2156</ISSN><JournalIssue CitedMedium="Internet"><Volume>144</Volume><Issue>2</Issue><PubDate><Year>2021</Year><Month>Mar</Month><Day>03</Day></PubDate></JournalIssue><Title>Brain : a journal of neurology</Title><ISOAbbreviation>Brain</ISOAbbreviation></Journal><ArticleTitle>An ancestral 10-bp repeat expansion in VWA1 causes recessive hereditary motor neuropathy.</ArticleTitle><Pagination><StartPage>584</StartPage><EndPage>600</EndPage><MedlinePgn>584-600</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1093/brain/awaa420</ELocationID><Abstract><AbstractText>The extracellular matrix comprises a network of macromolecules such as collagens, proteoglycans and glycoproteins. VWA1 (von Willebrand factor A domain containing 1) encodes a component of the extracellular matrix that interacts with perlecan/collagen VI, appears to be involved in stabilizing extracellular matrix structures, and demonstrates high expression levels in tibial nerve. Vwa1-deficient mice manifest with abnormal peripheral nerve structure/function; however, VWA1 variants have not previously been associated with human disease. By interrogating the genome sequences of 74&#x2009;180 individuals from the 100K Genomes Project in combination with international gene-matching efforts and targeted sequencing, we identified 17 individuals from 15 families with an autosomal-recessive, non-length dependent, hereditary motor neuropathy and rare biallelic variants in VWA1. A single disease-associated allele p.(G25Rfs*74), a 10-bp repeat expansion, was observed in 14/15 families and was homozygous in 10/15. Given an allele frequency in European populations approaching 1/1000, the seven unrelated homozygote individuals ascertained from the 100K Genomes Project represents a substantial enrichment above expected. Haplotype analysis identified a shared 220 kb region suggesting that this founder mutation arose &gt;7000 years ago. A wide age-range of patients (6-83 years) helped delineate the clinical phenotype over time. The commonest disease presentation in the cohort was an early-onset (mean 2.0&#x2009;&#xb1;&#x2009;1.4 years) non-length-dependent axonal hereditary motor neuropathy, confirmed on electrophysiology, which will have to be differentiated from other predominantly or pure motor neuropathies and neuronopathies. Because of slow disease progression, ambulation was largely preserved. Neurophysiology, muscle histopathology, and muscle MRI findings typically revealed clear neurogenic changes with single isolated cases displaying additional myopathic process. We speculate that a few findings of myopathic changes might be secondary to chronic denervation rather than indicating an additional myopathic disease process. Duplex reverse transcription polymerase chain reaction and immunoblotting using patient fibroblasts revealed that the founder allele results in partial nonsense mediated decay and an absence of detectable protein. CRISPR and morpholino vwa1 modelling in zebrafish demonstrated reductions in motor neuron axonal growth, synaptic formation in the skeletal muscles and locomotive behaviour. In summary, we estimate that biallelic variants in VWA1 may be responsible for up to 1% of unexplained hereditary motor neuropathy cases in Europeans. The detailed clinical characterization provided here will facilitate targeted testing on suitable patient cohorts. This novel disease gene may have previously evaded detection because of high GC content, consequential low coverage and computational difficulties associated with robustly detecting repeat-expansions. Reviewing previously unsolved exomes using lower QC filters may generate further diagnoses.</AbstractText><CopyrightInformation>&#xa9; The Author(s) (2021). Published by Oxford University Press on behalf of the Guarantors of Brain.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Pagnamenta</LastName><ForeName>Alistair T</ForeName><Initials>AT</Initials><AffiliationInfo><Affiliation>NIHR Biomedical Research Centre, Wellcome Centre for Human Genetics, University of Oxford, Oxford, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kaiyrzhanov</LastName><ForeName>Rauan</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Zou</LastName><ForeName>Yaqun</ForeName><Initials>Y</Initials><AffiliationInfo><Affiliation>Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National Institutes of Health, Bethesda, MD, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Da'as</LastName><ForeName>Sahar I</ForeName><Initials>SI</Initials><AffiliationInfo><Affiliation>Department of Human Genetics, Sidra Medicine, Doha, Qatar.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Maroofian</LastName><ForeName>Reza</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Donkervoort</LastName><ForeName>Sandra</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National Institutes of Health, Bethesda, MD, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Dominik</LastName><ForeName>Natalia</ForeName><Initials>N</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Lauffer</LastName><ForeName>Marlen</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), Institute of Genetics, and Center for Rare Diseases Cologne, University of Cologne, Cologne, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ferla</LastName><ForeName>Matteo P</ForeName><Initials>MP</Initials><AffiliationInfo><Affiliation>NIHR Biomedical Research Centre, Wellcome Centre for Human Genetics, University of Oxford, Oxford, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Orioli</LastName><ForeName>Andrea</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>William Harvey Research Institute, Queen Mary University of London, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Genomics England, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Giess</LastName><ForeName>Adam</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>William Harvey Research Institute, Queen Mary University of London, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Genomics England, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tucci</LastName><ForeName>Arianna</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>William Harvey Research Institute, Queen Mary University of London, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Genomics England, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Beetz</LastName><ForeName>Christian</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>Centogene AG, Rostock, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sedghi</LastName><ForeName>Maryam</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Medical Genetics Laboratory, Alzahra University Hospital, Isfahan University of Medical Sciences, Isfahan, Iran.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ansari</LastName><ForeName>Behnaz</ForeName><Initials>B</Initials><AffiliationInfo><Affiliation>Department of Neurology, Faculty of Medicine, Isfahan University of Medical Sciences, Isfahan, Iran.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Barresi</LastName><ForeName>Rita</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>The John Walton Muscular Dystrophy Research Centre, Institute of Genetic Medicine, Newcastle University, Newcastle, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Newcastle upon Tyne Hospitals NHS Foundation Trust, Newcastle, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Basiri</LastName><ForeName>Keivan</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Department of Neurology, Faculty of Medicine, Isfahan University of Medical Sciences, Isfahan, Iran.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Cortese</LastName><ForeName>Andrea</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Elgar</LastName><ForeName>Greg</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>William Harvey Research Institute, Queen Mary University of London, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Genomics England, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Fernandez-Garcia</LastName><ForeName>Miguel A</ForeName><Initials>MA</Initials><AffiliationInfo><Affiliation>Department of Paediatric Neurology - Neuromuscular Service, Evelina Children's Hospital, Guy's &amp; St Thomas' NHS Foundation Trust, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Yip</LastName><ForeName>Janice</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Foley</LastName><ForeName>A Reghan</ForeName><Initials>AR</Initials><AffiliationInfo><Affiliation>Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National Institutes of Health, Bethesda, MD, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Gutowski</LastName><ForeName>Nicholas</ForeName><Initials>N</Initials><AffiliationInfo><Affiliation>Department of Neurology, Royal Devon and Exeter NHS Trust, Exeter, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Jungbluth</LastName><ForeName>Heinz</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>Department of Paediatric Neurology - Neuromuscular Service, Evelina Children's Hospital, Guy's &amp; St Thomas' NHS Foundation Trust, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Randall Division of Cell and Molecular Biophysics Muscle Signalling Section, King's College London, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Basic and Clinical Neuroscience, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Lassche</LastName><ForeName>Saskia</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Centre, Nijmegen, The Netherlands.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Lavin</LastName><ForeName>Tim</ForeName><Initials>T</Initials><AffiliationInfo><Affiliation>Department of Neurology, Salford Royal NHS Foundation Trust, Manchester, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Marcelis</LastName><ForeName>Carlo</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>Department of Genetics, Radboud University Medical Centre, Nijmegen, The Netherlands.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Marks</LastName><ForeName>Peter</ForeName><Initials>P</Initials><AffiliationInfo><Affiliation>West Midlands Regional Clinical Genetics Service and Birmingham Health Partners, Birmingham Women's and Children's Hospital NHS Foundation Trust, Birmingham, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Marini-Bettolo</LastName><ForeName>Chiara</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>The John Walton Muscular Dystrophy Research Centre, Institute of Genetic Medicine, Newcastle University, Newcastle, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Newcastle upon Tyne Hospitals NHS Foundation Trust, Newcastle, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Medne</LastName><ForeName>Livija</ForeName><Initials>L</Initials><AffiliationInfo><Affiliation>Divisions of Neurology and Human Genetics, Children's Hospital of Philadelphia, Philadelphia, PA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Moslemi</LastName><ForeName>Ali-Reza</ForeName><Initials>AR</Initials><AffiliationInfo><Affiliation>Department of Pathology, University of Gothenburg, Sahlgrenska University Hospital, Sweden.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sarkozy</LastName><ForeName>Anna</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>The Dubowitz Neuromuscular Centre, NIHR Great Ormond Street Hospital Biomedical Research Centre, UCL Great Ormond Street Institute of Child Health, and Great Ormond Street Hospital Trust, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Reilly</LastName><ForeName>Mary M</ForeName><Initials>MM</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Muntoni</LastName><ForeName>Francesco</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>The Dubowitz Neuromuscular Centre, NIHR Great Ormond Street Hospital Biomedical Research Centre, UCL Great Ormond Street Institute of Child Health, and Great Ormond Street Hospital Trust, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Millan</LastName><ForeName>Francisca</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>GeneDx, Gaithersburg, 20877 MD, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Muraresku</LastName><ForeName>Colleen C</ForeName><Initials>CC</Initials><AffiliationInfo><Affiliation>Mitochondrial Medicine Frontier Program, Division of Human Genetics, Children's Hospital of Philadelphia, PA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Need</LastName><ForeName>Anna C</ForeName><Initials>AC</Initials><AffiliationInfo><Affiliation>William Harvey Research Institute, Queen Mary University of London, London, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Genomics England, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Nemeth</LastName><ForeName>Andrea H</ForeName><Initials>AH</Initials><AffiliationInfo><Affiliation>Nuffield Department of Clinical Neurosciences, University of Oxford, Oxford, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Oxford Centre for Genomic Medicine, Oxford University Hospitals NHS Trust, Oxford, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Neuhaus</LastName><ForeName>Sarah B</ForeName><Initials>SB</Initials><AffiliationInfo><Affiliation>Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National Institutes of Health, Bethesda, MD, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Norwood</LastName><ForeName>Fiona</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>Department of Neurology, King's College Hospital, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>O'Donnell</LastName><ForeName>Marie</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>West Midlands Regional Clinical Genetics Service and Birmingham Health Partners, Birmingham Women's and Children's Hospital NHS Foundation Trust, Birmingham, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>O'Driscoll</LastName><ForeName>Mary</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>West Midlands Regional Clinical Genetics Service and Birmingham Health Partners, Birmingham Women's and Children's Hospital NHS Foundation Trust, Birmingham, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Rankin</LastName><ForeName>Julia</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>Peninsula Clinical Genetics Service, Royal Devon and Exeter NHS Trust, Exeter, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Yum</LastName><ForeName>Sabrina W</ForeName><Initials>SW</Initials><AffiliationInfo><Affiliation>Division of Pediatric Neurology, The Children's Hospital of Philadelphia, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Zolkipli-Cunningham</LastName><ForeName>Zarazuela</ForeName><Initials>Z</Initials><AffiliationInfo><Affiliation>Mitochondrial Medicine Frontier Program, Division of Human Genetics, Children's Hospital of Philadelphia, PA, USA.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Pediatrics, Perelman School of Medicine, Philadelphia, PA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Brusius</LastName><ForeName>Isabell</ForeName><Initials>I</Initials><AffiliationInfo><Affiliation>Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), Institute of Genetics, and Center for Rare Diseases Cologne, University of Cologne, Cologne, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Wunderlich</LastName><ForeName>Gilbert</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>Department of Neurology, Center for Rare Diseases Cologne, University Hospital Cologne, Cologne, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><CollectiveName>Genomics England Research Consortium</CollectiveName></Author><Author ValidYN="Y"><LastName>Karakaya</LastName><ForeName>Mert</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), Institute of Genetics, and Center for Rare Diseases Cologne, University of Cologne, Cologne, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Wirth</LastName><ForeName>Brunhilde</ForeName><Initials>B</Initials><AffiliationInfo><Affiliation>Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), Institute of Genetics, and Center for Rare Diseases Cologne, University of Cologne, Cologne, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Fakhro</LastName><ForeName>Khalid A</ForeName><Initials>KA</Initials><AffiliationInfo><Affiliation>Department of Human Genetics, Sidra Medicine, Doha, Qatar.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>College of Health and Life Sciences, Hamad Bin Khalifa University, Doha, Qatar.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Genetic Medicine, Weill Cornell Medical College, Doha, Qatar.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tajsharghi</LastName><ForeName>Homa</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>School of Health Science, Division Biomedicine and Translational Medicine, University of Skovde, Sweden.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>B&#xf6;nnemann</LastName><ForeName>Carsten G</ForeName><Initials>CG</Initials><AffiliationInfo><Affiliation>Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National Institutes of Health, Bethesda, MD, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Taylor</LastName><ForeName>Jenny C</ForeName><Initials>JC</Initials><AffiliationInfo><Affiliation>NIHR Biomedical Research Centre, Wellcome Centre for Human Genetics, University of Oxford, Oxford, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Houlden</LastName><ForeName>Henry</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, London, UK.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><GrantList CompleteYN="Y"><Grant><GrantID>MC_EX_MR/M009203/1</GrantID><Acronym>MRC_</Acronym><Agency>Medical Research Council</Agency><Country>United Kingdom</Country></Grant><Grant><GrantID>203141/Z/16/Z</GrantID><Acronym>WT_</Acronym><Agency>Wellcome Trust</Agency><Country>United Kingdom</Country></Grant><Grant><GrantID>MR/S006753/1</GrantID><Acronym>MRC_</Acronym><Agency>Medical Research Council</Agency><Country>United Kingdom</Country></Grant><Grant><GrantID>MR/M009203/1</GrantID><Acronym>MRC_</Acronym><Agency>Medical Research Council</Agency><Country>United Kingdom</Country></Grant><Grant><GrantID>MR/T001712/1</GrantID><Acronym>MRC_</Acronym><Agency>Medical Research Council</Agency><Country>United Kingdom</Country></Grant><Grant><GrantID>MC_PC_14089</GrantID><Acronym>MRC_</Acronym><Agency>Medical Research Council</Agency><Country>United Kingdom</Country></Grant></GrantList><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Brain</MedlineTA><NlmUniqueID>0372537</NlmUniqueID><ISSNLinking>0006-8950</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D016326">Extracellular Matrix Proteins</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="C460760">VWA1 protein, human</NameOfSubstance></Chemical></ChemicalList><CitationSubset>IM</CitationSubset><CommentsCorrectionsList><CommentsCorrections RefType="CommentIn"><RefSource>Brain. 2021 Mar 3;144(2):362-365</RefSource><PMID Version="1">33693694</PMID></CommentsCorrections></CommentsCorrectionsList><MeshHeadingList><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D001522" MajorTopicYN="N">Behavior, Animal</DescriptorName><QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D016326" MajorTopicYN="N">Extracellular Matrix Proteins</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D015417" MajorTopicYN="N">Hereditary Sensory and Motor Neuropathy</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName><QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D018482" MajorTopicYN="N">Muscle, Skeletal</DescriptorName><QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D009154" MajorTopicYN="N">Mutation</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D010375" MajorTopicYN="N">Pedigree</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D015027" MajorTopicYN="N">Zebrafish</DescriptorName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">EMG</Keyword><Keyword MajorTopicYN="N">genetics: neuropathy</Keyword><Keyword MajorTopicYN="N">hereditary motor and sensory neuropathies</Keyword><Keyword MajorTopicYN="N">nerve conduction studies</Keyword><Keyword MajorTopicYN="N">whole-genome sequencing</Keyword></KeywordList><InvestigatorList><Investigator ValidYN="Y"><LastName>Ambrose</LastName><ForeName>John C</ForeName><Initials>JC</Initials></Investigator><Investigator ValidYN="Y"><LastName>Arumugam</LastName><ForeName>Prabhu</ForeName><Initials>P</Initials></Investigator><Investigator ValidYN="Y"><LastName>Baple</LastName><ForeName>Emma L</ForeName><Initials>EL</Initials></Investigator><Investigator ValidYN="Y"><LastName>Bleda</LastName><ForeName>Marta</ForeName><Initials>M</Initials></Investigator><Investigator ValidYN="Y"><LastName>Boardman-Pretty</LastName><ForeName>Freya</ForeName><Initials>F</Initials></Investigator><Investigator ValidYN="Y"><LastName>Boissiere</LastName><ForeName>Jeanne M</ForeName><Initials>JM</Initials></Investigator><Investigator ValidYN="Y"><LastName>Boustred</LastName><ForeName>Christopher R</ForeName><Initials>CR</Initials></Investigator><Investigator ValidYN="Y"><LastName>Brittain</LastName><ForeName>Helen</ForeName><Initials>H</Initials></Investigator><Investigator ValidYN="Y"><LastName>Caulfield</LastName><ForeName>Mark J</ForeName><Initials>MJ</Initials></Investigator><Investigator ValidYN="Y"><LastName>Chan</LastName><ForeName>Georgia C</ForeName><Initials>GC</Initials></Investigator><Investigator ValidYN="Y"><LastName>Craig</LastName><ForeName>Clare E H</ForeName><Initials>CEH</Initials></Investigator><Investigator ValidYN="Y"><LastName>Daugherty</LastName><ForeName>Louise C</ForeName><Initials>LC</Initials></Investigator><Investigator ValidYN="Y"><LastName>Burca</LastName><ForeName>Anna de</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Devereau</LastName><ForeName>Andrew</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Elgar</LastName><ForeName>Greg</ForeName><Initials>G</Initials></Investigator><Investigator ValidYN="Y"><LastName>Foulger</LastName><ForeName>Rebecca E</ForeName><Initials>RE</Initials></Investigator><Investigator ValidYN="Y"><LastName>Fowler</LastName><ForeName>Tom</ForeName><Initials>T</Initials></Investigator><Investigator ValidYN="Y"><LastName>Furi&#xf3;-Tar&#xed;</LastName><ForeName>Pedro</ForeName><Initials>P</Initials></Investigator><Investigator ValidYN="Y"><LastName>Giess</LastName><ForeName>Adam</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Hackett</LastName><ForeName>Joanne M</ForeName><Initials>JM</Initials></Investigator><Investigator ValidYN="Y"><LastName>Halai</LastName><ForeName>Dina</ForeName><Initials>D</Initials></Investigator><Investigator ValidYN="Y"><LastName>Hamblin</LastName><ForeName>Angela</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Henderson</LastName><ForeName>Shirley</ForeName><Initials>S</Initials></Investigator><Investigator ValidYN="Y"><LastName>Holman</LastName><ForeName>James E</ForeName><Initials>JE</Initials></Investigator><Investigator ValidYN="Y"><LastName>Hubbard</LastName><ForeName>Tim J P</ForeName><Initials>TJP</Initials></Investigator><Investigator ValidYN="Y"><LastName>Ib&#xe1;&#xf1;ez</LastName><ForeName>Kristina</ForeName><Initials>K</Initials></Investigator><Investigator ValidYN="Y"><LastName>Jackson</LastName><ForeName>Rob</ForeName><Initials>R</Initials></Investigator><Investigator ValidYN="Y"><LastName>Jones</LastName><ForeName>Louise J</ForeName><Initials>LJ</Initials></Investigator><Investigator ValidYN="Y"><LastName>Kasperaviciute</LastName><ForeName>Dalia</ForeName><Initials>D</Initials></Investigator><Investigator ValidYN="Y"><LastName>Kayikci</LastName><ForeName>Melis</ForeName><Initials>M</Initials></Investigator><Investigator ValidYN="Y"><LastName>Kousathanas</LastName><ForeName>Athanasios</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Lahnstein</LastName><ForeName>Lea</ForeName><Initials>L</Initials></Investigator><Investigator ValidYN="Y"><LastName>Lawson</LastName><ForeName>Kay</ForeName><Initials>K</Initials></Investigator><Investigator ValidYN="Y"><LastName>Leigh</LastName><ForeName>Sarah E A</ForeName><Initials>SEA</Initials></Investigator><Investigator ValidYN="Y"><LastName>Leong</LastName><ForeName>Ivonne U S</ForeName><Initials>IUS</Initials></Investigator><Investigator ValidYN="Y"><LastName>Lopez</LastName><ForeName>Javier F</ForeName><Initials>JF</Initials></Investigator><Investigator ValidYN="Y"><LastName>Maleady-Crowe</LastName><ForeName>Fiona</ForeName><Initials>F</Initials></Investigator><Investigator ValidYN="Y"><LastName>Mason</LastName><ForeName>Joanne</ForeName><Initials>J</Initials></Investigator><Investigator ValidYN="Y"><LastName>McDonagh</LastName><ForeName>Ellen M</ForeName><Initials>EM</Initials></Investigator><Investigator ValidYN="Y"><LastName>Moutsianas</LastName><ForeName>Loukas</ForeName><Initials>L</Initials></Investigator><Investigator ValidYN="Y"><LastName>Mueller</LastName><ForeName>Michael</ForeName><Initials>M</Initials></Investigator><Investigator ValidYN="Y"><LastName>Murugaesu</LastName><ForeName>Nirupa</ForeName><Initials>N</Initials></Investigator><Investigator ValidYN="Y"><LastName>Need</LastName><ForeName>Anna C</ForeName><Initials>AC</Initials></Investigator><Investigator ValidYN="Y"><LastName>O'Donovan</LastName><ForeName>Peter</ForeName><Initials>P</Initials></Investigator><Investigator ValidYN="Y"><LastName>Odhams</LastName><ForeName>Chris A</ForeName><Initials>CA</Initials></Investigator><Investigator ValidYN="Y"><LastName>Orioli</LastName><ForeName>Andrea</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Patch</LastName><ForeName>Christine</ForeName><Initials>C</Initials></Investigator><Investigator ValidYN="Y"><LastName>Pereira</LastName><ForeName>Mariana Buongermino</ForeName><Initials>MB</Initials></Investigator><Investigator ValidYN="Y"><LastName>Perez-Gil</LastName><ForeName>Daniel</ForeName><Initials>D</Initials></Investigator><Investigator ValidYN="Y"><LastName>Polychronopoulos</LastName><ForeName>Dimitris</ForeName><Initials>D</Initials></Investigator><Investigator ValidYN="Y"><LastName>Pullinger</LastName><ForeName>John</ForeName><Initials>J</Initials></Investigator><Investigator ValidYN="Y"><LastName>Rahim</LastName><ForeName>Tahrima</ForeName><Initials>T</Initials></Investigator><Investigator ValidYN="Y"><LastName>Rendon</LastName><ForeName>Augusto</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Riesgo-Ferreiro</LastName><ForeName>Pablo</ForeName><Initials>P</Initials></Investigator><Investigator ValidYN="Y"><LastName>Rogers</LastName><ForeName>Tim</ForeName><Initials>T</Initials></Investigator><Investigator ValidYN="Y"><LastName>Ryten</LastName><ForeName>Mina</ForeName><Initials>M</Initials></Investigator><Investigator ValidYN="Y"><LastName>Savage</LastName><ForeName>Kevin</ForeName><Initials>K</Initials></Investigator><Investigator ValidYN="Y"><LastName>Sawant</LastName><ForeName>Kushmita</ForeName><Initials>K</Initials></Investigator><Investigator ValidYN="Y"><LastName>Scott</LastName><ForeName>Richard H</ForeName><Initials>RH</Initials></Investigator><Investigator ValidYN="Y"><LastName>Siddiq</LastName><ForeName>Afshan</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Sieghart</LastName><ForeName>Alexander</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Smedley</LastName><ForeName>Damian</ForeName><Initials>D</Initials></Investigator><Investigator ValidYN="Y"><LastName>Smith</LastName><ForeName>Katherine R</ForeName><Initials>KR</Initials></Investigator><Investigator ValidYN="Y"><LastName>Smith</LastName><ForeName>Samuel C</ForeName><Initials>SC</Initials></Investigator><Investigator ValidYN="Y"><LastName>Sosinsky</LastName><ForeName>Alona</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Spooner</LastName><ForeName>William</ForeName><Initials>W</Initials></Investigator><Investigator ValidYN="Y"><LastName>Stevens</LastName><ForeName>Helen E</ForeName><Initials>HE</Initials></Investigator><Investigator ValidYN="Y"><LastName>Stuckey</LastName><ForeName>Alexander</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Sultana</LastName><ForeName>Razvan</ForeName><Initials>R</Initials></Investigator><Investigator ValidYN="Y"><LastName>Tanguy</LastName><ForeName>M&#xe9;lanie</ForeName><Initials>M</Initials></Investigator><Investigator ValidYN="Y"><LastName>Thomas</LastName><ForeName>Ellen R A</ForeName><Initials>ERA</Initials></Investigator><Investigator ValidYN="Y"><LastName>Thompson</LastName><ForeName>Simon R</ForeName><Initials>SR</Initials></Investigator><Investigator ValidYN="Y"><LastName>Tregidgo</LastName><ForeName>Carolyn</ForeName><Initials>C</Initials></Investigator><Investigator ValidYN="Y"><LastName>Tucci</LastName><ForeName>Arianna</ForeName><Initials>A</Initials></Investigator><Investigator ValidYN="Y"><LastName>Walsh</LastName><ForeName>Emma</ForeName><Initials>E</Initials></Investigator><Investigator ValidYN="Y"><LastName>Watters</LastName><ForeName>Sarah A</ForeName><Initials>SA</Initials></Investigator><Investigator ValidYN="Y"><LastName>Welland</LastName><ForeName>Matthew J</ForeName><Initials>MJ</Initials></Investigator><Investigator ValidYN="Y"><LastName>Williams</LastName><ForeName>Eleanor</ForeName><Initials>E</Initials></Investigator><Investigator ValidYN="Y"><LastName>Witkowska</LastName><ForeName>Katarzyna</ForeName><Initials>K</Initials></Investigator><Investigator ValidYN="Y"><LastName>Wood</LastName><ForeName>Suzanne M</ForeName><Initials>SM</Initials></Investigator><Investigator ValidYN="Y"><LastName>Zarowiecki</LastName><ForeName>Magdalena</ForeName><Initials>M</Initials></Investigator></InvestigatorList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2020</Year><Month>6</Month><Day>18</Day></PubMedPubDate><PubMedPubDate PubStatus="revised"><Year>2020</Year><Month>9</Month><Day>16</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2020</Year><Month>10</Month><Day>15</Day></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2021</Year><Month>2</Month><Day>10</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2021</Year><Month>4</Month><Day>20</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2021</Year><Month>2</Month><Day>9</Day><Hour>8</Hour><Minute>45</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">33559681</ArticleId><ArticleId IdType="pmc">PMC8263055</ArticleId><ArticleId IdType="doi">10.1093/brain/awaa420</ArticleId><ArticleId IdType="pii">6103826</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Akawi N, McRae J, Ansari M, Balasubramanian M, Blyth M, Brady AF, et al.; the DDD study. Discovery of four recessive developmental disorders using probabilistic genotype and phenotype matching among 4,125 families. Nat Genet 2015; 47: 1363&#x2013;9.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5988033</ArticleId><ArticleId IdType="pubmed">26437029</ArticleId></ArticleIdList></Reference><Reference><Citation>Allen JM, Brachvogel B, Farlie PG, Fitzgerald J, Bateman JF.. The extracellular matrix protein WARP is a novel component of a distinct subset of basement membranes. Matrix Biol 2008; 27: 295&#x2013;305.</Citation><ArticleIdList><ArticleId IdType="pubmed">18314316</ArticleId></ArticleIdList></Reference><Reference><Citation>Allen JM, Zamurs L, Brachvogel B, Schlotzer-Schrehardt U, Hansen U, Lamande SR, et al.Mice lacking the extracellular matrix protein WARP develop normally but have compromised peripheral nerve structure and function. J Biol Chem 2009; 284: 12020&#x2013;30.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2673271</ArticleId><ArticleId IdType="pubmed">19279005</ArticleId></ArticleIdList></Reference><Reference><Citation>Bailey EC, Alrowaished SS, Kilroy EA, Crooks ES, Drinkert DM, Karunasiri CM, et al.NAD+ improves neuromuscular development in a zebrafish model of FKRP-associated dystroglycanopathy. Skelet Muscle 2019; 9: 21.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6685180</ArticleId><ArticleId IdType="pubmed">31391079</ArticleId></ArticleIdList></Reference><Reference><Citation>Basnet RM, Guarienti M, Memo M.. Zebrafish embryo as an in vivo model for behavioral and pharmacological characterization of methylxanthine drugs. Int J Mol Sci 2017; 18: 596.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5372612</ArticleId><ArticleId IdType="pubmed">28282918</ArticleId></ArticleIdList></Reference><Reference><Citation>Basnet RM, Zizioli D, Taweedet S, Finazzi D, Memo M.. Zebrafish larvae as a behavioral model in neuropharmacology. Biomedicines 2019; 7: 23.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6465999</ArticleId><ArticleId IdType="pubmed">30917585</ArticleId></ArticleIdList></Reference><Reference><Citation>Chaudhury S, Lyskov S, Gray JJ.. PyRosetta: a script-based interface for implementing molecular modeling algorithms using Rosetta. Bioinformatics 2010; 26: 689&#x2013;91.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2828115</ArticleId><ArticleId IdType="pubmed">20061306</ArticleId></ArticleIdList></Reference><Reference><Citation>Cortese A, Simone R, Sullivan R, Vandrovcova J, Tariq H, Yau WY, et al.Biallelic expansion of an intronic repeat in RFC1 is a common cause of late-onset ataxia. Nat Genet 2019; 51: 649&#x2013;58.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6709527</ArticleId><ArticleId IdType="pubmed">30926972</ArticleId></ArticleIdList></Reference><Reference><Citation>Cortese A, Zhu Y, Rebelo AP, Negri S, Courel S, Abreu L, et al.; Inherited Neuropathy Consortium. Biallelic mutations in SORD cause a common and potentially treatable hereditary neuropathy with implications for diabetes. Nat Genet 2020; 52: 640.</Citation><ArticleIdList><ArticleId IdType="pubmed">32457452</ArticleId></ArticleIdList></Reference><Reference><Citation>Da'as SI, Yalcin HC, Nasrallah GK, Mohamed IA, Nomikos M, Yacoub MH, et al.Functional characterization of human myosin-binding protein C3 variants associated with hypertrophic cardiomyopathy reveals exon-specific cardiac phenotypes in zebrafish model. J Cell Physiol 2020; 235: 7870&#x2013;7888.</Citation><ArticleIdList><ArticleId IdType="pubmed">31943169</ArticleId></ArticleIdList></Reference><Reference><Citation>Delbaere S, Van Damme T, Syx D, Symoens S, Coucke P, Willaert A, et al.Hypomorphic zebrafish models mimic the musculoskeletal phenotype of beta4GalT7-deficient Ehlers-Danlos syndrome. Matrix Biol 2019; 89: 59&#x2013;75.</Citation><ArticleIdList><ArticleId IdType="pubmed">31862401</ArticleId></ArticleIdList></Reference><Reference><Citation>Deschauer M, Hengel H, Rupprich K, Krei&#xdf; M, Schlotter-Weigel B, Grimmel M, et al.Bi-allelic truncating mutations in VWA1 cause neuromyopathy. Brain 2020. doi: 10.1093/brain/awaa418.</Citation><ArticleIdList><ArticleId IdType="pubmed">33459760</ArticleId></ArticleIdList></Reference><Reference><Citation>Drachman DB, Murphy SR, Nigam MP, Hills JR.. &#x201c;Myopathic&#x201d; changes in chronically denervated muscle. Arch Neurol 1967; 16: 14&#x2013;24.</Citation><ArticleIdList><ArticleId IdType="pubmed">6024250</ArticleId></ArticleIdList></Reference><Reference><Citation>Ferla MP, Pagnamenta AT, Damerell D, Taylor JC, Marsden BD.. MichelaNglo: sculpting protein views on web pages without coding. Bioinformatics 2020; 36: 3268&#x2013;70.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7214029</ArticleId><ArticleId IdType="pubmed">32061125</ArticleId></ArticleIdList></Reference><Reference><Citation>Fitzgerald J, Tay Ting S, Bateman JF.. WARP is a new member of the von Willebrand factor a-domain superfamily of extracellular matrix proteins. FEBS Lett 2002; 517: 61&#x2013;6.</Citation><ArticleIdList><ArticleId IdType="pubmed">12062410</ArticleId></ArticleIdList></Reference><Reference><Citation>Gandolfo LC, Bahlo M, Speed TP.. Dating rare mutations from small samples with dense marker data. Genetics 2014; 197: 1315&#x2013;27.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4125402</ArticleId><ArticleId IdType="pubmed">24879464</ArticleId></ArticleIdList></Reference><Reference><Citation>Garg N, Park SB, Vucic S, Yiannikas C, Spies J, Howells J, et al.Differentiating lower motor neuron syndromes. J Neurol Neurosurg Psychiatry 2017; 88: 474&#x2013;83.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5529975</ArticleId><ArticleId IdType="pubmed">28003344</ArticleId></ArticleIdList></Reference><Reference><Citation>Gebuijs IGE, Raterman ST, Metz JR, Swanenberg L, Zethof J, Van den Bos R, et al.Fgf8a mutation affects craniofacial development and skeletal gene expression in zebrafish larvae. Biol Open 2019; 8: bio039834.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6777363</ArticleId><ArticleId IdType="pubmed">31471293</ArticleId></ArticleIdList></Reference><Reference><Citation>GTEx Consortium. Human genomics. The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene regulation in humans. Science 2015; 348: 648&#x2013;60.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4547484</ArticleId><ArticleId IdType="pubmed">25954001</ArticleId></ArticleIdList></Reference><Reference><Citation>Howe K, Clark MD, Torroja CF, Torrance J, Berthelot C, Muffato M, et al.The zebrafish reference genome sequence and its relationship to the human genome. Nature 2013; 496: 498&#x2013;503.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3703927</ArticleId><ArticleId IdType="pubmed">23594743</ArticleId></ArticleIdList></Reference><Reference><Citation>MacArthur DG, Manolio TA, Dimmock DP, Rehm HL, Shendure J, Abecasis GR, et al.Guidelines for investigating causality of sequence variants in human disease. Nature 2014; 508: 469&#x2013;76.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4180223</ArticleId><ArticleId IdType="pubmed">24759409</ArticleId></ArticleIdList></Reference><Reference><Citation>Retterer K, Juusola J, Cho MT, Vitazka P, Millan F, Gibellini F, et al.Clinical application of whole-exome sequencing across clinical indications. Genet Med 2016; 18: 696&#x2013;704.</Citation><ArticleIdList><ArticleId IdType="pubmed">26633542</ArticleId></ArticleIdList></Reference><Reference><Citation>Rossor AM, Oates EC, Salter HK, Liu Y, Murphy SM, Schule R, et al.Phenotypic and molecular insights into spinal muscular atrophy due to mutations in BICD2. Brain 2015; 138: 293&#x2013;310.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4306822</ArticleId><ArticleId IdType="pubmed">25497877</ArticleId></ArticleIdList></Reference><Reference><Citation>Scoto M, Rossor AM, Harms MB, Cirak S, Calissano M, Robb S, et al.Novel mutations expand the clinical spectrum of DYNC1H1-associated spinal muscular atrophy. Neurology 2015; 84: 668&#x2013;79.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4336105</ArticleId><ArticleId IdType="pubmed">25609763</ArticleId></ArticleIdList></Reference><Reference><Citation>Shiba N, Daza RA, Shaffer LG, Barkovich AJ, Dobyns WB, Hevner RF.. Neuropathology of brain and spinal malformations in a case of monosomy 1p36. Acta Neuropathol Commun 2013; 1: 45.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3893467</ArticleId><ArticleId IdType="pubmed">24252393</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobreira N, Schiettecatte F, Valle D, Hamosh A.. GeneMatcher: a matching tool for connecting investigators with an interest in the same gene. Hum Mutat 2015; 36: 928&#x2013;30.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4833888</ArticleId><ArticleId IdType="pubmed">26220891</ArticleId></ArticleIdList></Reference><Reference><Citation>Speed D, Balding DJ.. Relatedness in the post-genomic era: is it still useful? Nat Rev Genet 2015; 16: 33&#x2013;44.</Citation><ArticleIdList><ArticleId IdType="pubmed">25404112</ArticleId></ArticleIdList></Reference><Reference><Citation>Sufian MS, Amin MR, Kanyo R, Allison WT, Ali DW.. CB1 and CB2 receptors play differential roles in early zebrafish locomotor development. J Exp Biol 2019; 222: jeb206680.</Citation><ArticleIdList><ArticleId IdType="pubmed">31253713</ArticleId></ArticleIdList></Reference><Reference><Citation>Tagliabracci VS, Wiley SE, Guo X, Kinch LN, Durrant E, Wen J, et al.A single kinase generates the majority of the secreted phosphoproteome. Cell 2015; 161: 1619&#x2013;32.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4963185</ArticleId><ArticleId IdType="pubmed">26091039</ArticleId></ArticleIdList></Reference><Reference><Citation>Trujillano D, Oprea GE, Schmitz Y, Bertoli-Avella AM, Abou Jamra R, Rolfs AA.. comprehensive global genotype-phenotype database for rare diseases. Mol Genet Genomic Med 2017; 5: 66&#x2013;75.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5241210</ArticleId><ArticleId IdType="pubmed">28116331</ArticleId></ArticleIdList></Reference><Reference><Citation>Turnbull C, Scott RH, Thomas E, Jones L, Murugaesu N, Pretty FB, et al.; 100&#x2009;000 Genomes Project. The 100 000 genomes project: bringing whole genome sequencing to the NHS. BMJ 2018; 361: k1687.</Citation><ArticleIdList><ArticleId IdType="pubmed">29691228</ArticleId></ArticleIdList></Reference><Reference><Citation>Turro E, Astle WJ, Megy K, Graf S, Greene D, Shamardina O, et al.; NIHR BioResource for the 100,000 Genomes Project. Whole-genome sequencing of patients with rare diseases in a national health system. Nature 2020; 583: 96&#x2013;102.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7610553</ArticleId><ArticleId IdType="pubmed">32581362</ArticleId></ArticleIdList></Reference><Reference><Citation>Veldman MB, Lin S.. Zebrafish as a developmental model organism for pediatric research. Pediatr Res 2008; 64: 470&#x2013;6.</Citation><ArticleIdList><ArticleId IdType="pubmed">18679162</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>
+
+PMID- 33559681
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210419
+LR  - 20220716
+IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Print)
+IS  - 0006-8950 (Linking)
+VI  - 144
+IP  - 2
+DP  - 2021 Mar 3
+TI  - An ancestral 10-bp repeat expansion in VWA1 causes recessive hereditary motor 
+      neuropathy.
+PG  - 584-600
+LID - 10.1093/brain/awaa420 [doi]
+AB  - The extracellular matrix comprises a network of macromolecules such as collagens, 
+      proteoglycans and glycoproteins. VWA1 (von Willebrand factor A domain containing 
+      1) encodes a component of the extracellular matrix that interacts with 
+      perlecan/collagen VI, appears to be involved in stabilizing extracellular matrix 
+      structures, and demonstrates high expression levels in tibial nerve. 
+      Vwa1-deficient mice manifest with abnormal peripheral nerve structure/function; 
+      however, VWA1 variants have not previously been associated with human disease. By 
+      interrogating the genome sequences of 74 180 individuals from the 100K Genomes 
+      Project in combination with international gene-matching efforts and targeted 
+      sequencing, we identified 17 individuals from 15 families with an 
+      autosomal-recessive, non-length dependent, hereditary motor neuropathy and rare 
+      biallelic variants in VWA1. A single disease-associated allele p.(G25Rfs*74), a 
+      10-bp repeat expansion, was observed in 14/15 families and was homozygous in 
+      10/15. Given an allele frequency in European populations approaching 1/1000, the 
+      seven unrelated homozygote individuals ascertained from the 100K Genomes Project 
+      represents a substantial enrichment above expected. Haplotype analysis identified 
+      a shared 220 kb region suggesting that this founder mutation arose >7000 years 
+      ago. A wide age-range of patients (6-83 years) helped delineate the clinical 
+      phenotype over time. The commonest disease presentation in the cohort was an 
+      early-onset (mean 2.0 +/- 1.4 years) non-length-dependent axonal hereditary motor 
+      neuropathy, confirmed on electrophysiology, which will have to be differentiated 
+      from other predominantly or pure motor neuropathies and neuronopathies. Because 
+      of slow disease progression, ambulation was largely preserved. Neurophysiology, 
+      muscle histopathology, and muscle MRI findings typically revealed clear 
+      neurogenic changes with single isolated cases displaying additional myopathic 
+      process. We speculate that a few findings of myopathic changes might be secondary 
+      to chronic denervation rather than indicating an additional myopathic disease 
+      process. Duplex reverse transcription polymerase chain reaction and 
+      immunoblotting using patient fibroblasts revealed that the founder allele results 
+      in partial nonsense mediated decay and an absence of detectable protein. CRISPR 
+      and morpholino vwa1 modelling in zebrafish demonstrated reductions in motor 
+      neuron axonal growth, synaptic formation in the skeletal muscles and locomotive 
+      behaviour. In summary, we estimate that biallelic variants in VWA1 may be 
+      responsible for up to 1% of unexplained hereditary motor neuropathy cases in 
+      Europeans. The detailed clinical characterization provided here will facilitate 
+      targeted testing on suitable patient cohorts. This novel disease gene may have 
+      previously evaded detection because of high GC content, consequential low 
+      coverage and computational difficulties associated with robustly detecting 
+      repeat-expansions. Reviewing previously unsolved exomes using lower QC filters 
+      may generate further diagnoses.
+CI  - (c) The Author(s) (2021). Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Pagnamenta, Alistair T
+AU  - Pagnamenta AT
+AD  - NIHR Biomedical Research Centre, Wellcome Centre for Human Genetics, University 
+      of Oxford, Oxford, UK.
+FAU - Kaiyrzhanov, Rauan
+AU  - Kaiyrzhanov R
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+FAU - Zou, Yaqun
+AU  - Zou Y
+AD  - Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National 
+      Institutes of Health, Bethesda, MD, USA.
+FAU - Da'as, Sahar I
+AU  - Da'as SI
+AD  - Department of Human Genetics, Sidra Medicine, Doha, Qatar.
+FAU - Maroofian, Reza
+AU  - Maroofian R
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+FAU - Donkervoort, Sandra
+AU  - Donkervoort S
+AD  - Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National 
+      Institutes of Health, Bethesda, MD, USA.
+FAU - Dominik, Natalia
+AU  - Dominik N
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+FAU - Lauffer, Marlen
+AU  - Lauffer M
+AD  - Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), 
+      Institute of Genetics, and Center for Rare Diseases Cologne, University of 
+      Cologne, Cologne, Germany.
+FAU - Ferla, Matteo P
+AU  - Ferla MP
+AD  - NIHR Biomedical Research Centre, Wellcome Centre for Human Genetics, University 
+      of Oxford, Oxford, UK.
+FAU - Orioli, Andrea
+AU  - Orioli A
+AD  - William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Genomics England, London, UK.
+FAU - Giess, Adam
+AU  - Giess A
+AD  - William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Genomics England, London, UK.
+FAU - Tucci, Arianna
+AU  - Tucci A
+AD  - William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Genomics England, London, UK.
+FAU - Beetz, Christian
+AU  - Beetz C
+AD  - Centogene AG, Rostock, Germany.
+FAU - Sedghi, Maryam
+AU  - Sedghi M
+AD  - Medical Genetics Laboratory, Alzahra University Hospital, Isfahan University of 
+      Medical Sciences, Isfahan, Iran.
+FAU - Ansari, Behnaz
+AU  - Ansari B
+AD  - Department of Neurology, Faculty of Medicine, Isfahan University of Medical 
+      Sciences, Isfahan, Iran.
+FAU - Barresi, Rita
+AU  - Barresi R
+AD  - The John Walton Muscular Dystrophy Research Centre, Institute of Genetic 
+      Medicine, Newcastle University, Newcastle, UK.
+AD  - Newcastle upon Tyne Hospitals NHS Foundation Trust, Newcastle, UK.
+FAU - Basiri, Keivan
+AU  - Basiri K
+AD  - Department of Neurology, Faculty of Medicine, Isfahan University of Medical 
+      Sciences, Isfahan, Iran.
+FAU - Cortese, Andrea
+AU  - Cortese A
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+FAU - Elgar, Greg
+AU  - Elgar G
+AD  - William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Genomics England, London, UK.
+FAU - Fernandez-Garcia, Miguel A
+AU  - Fernandez-Garcia MA
+AD  - Department of Paediatric Neurology - Neuromuscular Service, Evelina Children's 
+      Hospital, Guy's & St Thomas' NHS Foundation Trust, London, UK.
+FAU - Yip, Janice
+AU  - Yip J
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+FAU - Foley, A Reghan
+AU  - Foley AR
+AD  - Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National 
+      Institutes of Health, Bethesda, MD, USA.
+FAU - Gutowski, Nicholas
+AU  - Gutowski N
+AD  - Department of Neurology, Royal Devon and Exeter NHS Trust, Exeter, UK.
+FAU - Jungbluth, Heinz
+AU  - Jungbluth H
+AD  - Department of Paediatric Neurology - Neuromuscular Service, Evelina Children's 
+      Hospital, Guy's & St Thomas' NHS Foundation Trust, London, UK.
+AD  - Randall Division of Cell and Molecular Biophysics Muscle Signalling Section, 
+      King's College London, London, UK.
+AD  - Department of Basic and Clinical Neuroscience, Institute of Psychiatry, 
+      Psychology and Neuroscience, King's College London, London, UK.
+FAU - Lassche, Saskia
+AU  - Lassche S
+AD  - Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical 
+      Centre, Nijmegen, The Netherlands.
+FAU - Lavin, Tim
+AU  - Lavin T
+AD  - Department of Neurology, Salford Royal NHS Foundation Trust, Manchester, UK.
+FAU - Marcelis, Carlo
+AU  - Marcelis C
+AD  - Department of Genetics, Radboud University Medical Centre, Nijmegen, The 
+      Netherlands.
+FAU - Marks, Peter
+AU  - Marks P
+AD  - West Midlands Regional Clinical Genetics Service and Birmingham Health Partners, 
+      Birmingham Women's and Children's Hospital NHS Foundation Trust, Birmingham, UK.
+FAU - Marini-Bettolo, Chiara
+AU  - Marini-Bettolo C
+AD  - The John Walton Muscular Dystrophy Research Centre, Institute of Genetic 
+      Medicine, Newcastle University, Newcastle, UK.
+AD  - Newcastle upon Tyne Hospitals NHS Foundation Trust, Newcastle, UK.
+FAU - Medne, Livija
+AU  - Medne L
+AD  - Divisions of Neurology and Human Genetics, Children's Hospital of Philadelphia, 
+      Philadelphia, PA, USA.
+FAU - Moslemi, Ali-Reza
+AU  - Moslemi AR
+AD  - Department of Pathology, University of Gothenburg, Sahlgrenska University 
+      Hospital, Sweden.
+FAU - Sarkozy, Anna
+AU  - Sarkozy A
+AD  - The Dubowitz Neuromuscular Centre, NIHR Great Ormond Street Hospital Biomedical 
+      Research Centre, UCL Great Ormond Street Institute of Child Health, and Great 
+      Ormond Street Hospital Trust, London, UK.
+FAU - Reilly, Mary M
+AU  - Reilly MM
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+FAU - Muntoni, Francesco
+AU  - Muntoni F
+AD  - The Dubowitz Neuromuscular Centre, NIHR Great Ormond Street Hospital Biomedical 
+      Research Centre, UCL Great Ormond Street Institute of Child Health, and Great 
+      Ormond Street Hospital Trust, London, UK.
+FAU - Millan, Francisca
+AU  - Millan F
+AD  - GeneDx, Gaithersburg, 20877 MD, USA.
+FAU - Muraresku, Colleen C
+AU  - Muraresku CC
+AD  - Mitochondrial Medicine Frontier Program, Division of Human Genetics, Children's 
+      Hospital of Philadelphia, PA, USA.
+FAU - Need, Anna C
+AU  - Need AC
+AD  - William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Genomics England, London, UK.
+FAU - Nemeth, Andrea H
+AU  - Nemeth AH
+AD  - Nuffield Department of Clinical Neurosciences, University of Oxford, Oxford, UK.
+AD  - Oxford Centre for Genomic Medicine, Oxford University Hospitals NHS Trust, 
+      Oxford, UK.
+FAU - Neuhaus, Sarah B
+AU  - Neuhaus SB
+AD  - Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National 
+      Institutes of Health, Bethesda, MD, USA.
+FAU - Norwood, Fiona
+AU  - Norwood F
+AD  - Department of Neurology, King's College Hospital, London, UK.
+FAU - O'Donnell, Marie
+AU  - O'Donnell M
+AD  - West Midlands Regional Clinical Genetics Service and Birmingham Health Partners, 
+      Birmingham Women's and Children's Hospital NHS Foundation Trust, Birmingham, UK.
+FAU - O'Driscoll, Mary
+AU  - O'Driscoll M
+AD  - West Midlands Regional Clinical Genetics Service and Birmingham Health Partners, 
+      Birmingham Women's and Children's Hospital NHS Foundation Trust, Birmingham, UK.
+FAU - Rankin, Julia
+AU  - Rankin J
+AD  - Peninsula Clinical Genetics Service, Royal Devon and Exeter NHS Trust, Exeter, 
+      UK.
+FAU - Yum, Sabrina W
+AU  - Yum SW
+AD  - Division of Pediatric Neurology, The Children's Hospital of Philadelphia, 
+      Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, 
+      USA.
+FAU - Zolkipli-Cunningham, Zarazuela
+AU  - Zolkipli-Cunningham Z
+AD  - Mitochondrial Medicine Frontier Program, Division of Human Genetics, Children's 
+      Hospital of Philadelphia, PA, USA.
+AD  - Department of Pediatrics, Perelman School of Medicine, Philadelphia, PA, USA.
+FAU - Brusius, Isabell
+AU  - Brusius I
+AD  - Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), 
+      Institute of Genetics, and Center for Rare Diseases Cologne, University of 
+      Cologne, Cologne, Germany.
+FAU - Wunderlich, Gilbert
+AU  - Wunderlich G
+AD  - Department of Neurology, Center for Rare Diseases Cologne, University Hospital 
+      Cologne, Cologne, Germany.
+CN  - Genomics England Research Consortium
+FAU - Karakaya, Mert
+AU  - Karakaya M
+AD  - Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), 
+      Institute of Genetics, and Center for Rare Diseases Cologne, University of 
+      Cologne, Cologne, Germany.
+FAU - Wirth, Brunhilde
+AU  - Wirth B
+AD  - Institute of Human Genetics, Center for Molecular Medicine Cologne (CMMC), 
+      Institute of Genetics, and Center for Rare Diseases Cologne, University of 
+      Cologne, Cologne, Germany.
+FAU - Fakhro, Khalid A
+AU  - Fakhro KA
+AD  - Department of Human Genetics, Sidra Medicine, Doha, Qatar.
+AD  - College of Health and Life Sciences, Hamad Bin Khalifa University, Doha, Qatar.
+AD  - Department of Genetic Medicine, Weill Cornell Medical College, Doha, Qatar.
+FAU - Tajsharghi, Homa
+AU  - Tajsharghi H
+AD  - School of Health Science, Division Biomedicine and Translational Medicine, 
+      University of Skovde, Sweden.
+FAU - Bonnemann, Carsten G
+AU  - Bonnemann CG
+AD  - Neuromuscular and Neurogenetic Disorders of Childhood Section, NINDS, National 
+      Institutes of Health, Bethesda, MD, USA.
+FAU - Taylor, Jenny C
+AU  - Taylor JC
+AD  - NIHR Biomedical Research Centre, Wellcome Centre for Human Genetics, University 
+      of Oxford, Oxford, UK.
+FAU - Houlden, Henry
+AU  - Houlden H
+AD  - Department of Neuromuscular Disorders, UCL Queen Square Institute of Neurology, 
+      London, UK.
+LA  - eng
+GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
+GR  - 203141/Z/16/Z/WT_/Wellcome Trust/United Kingdom
+GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/M009203/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PL  - England
+TA  - Brain
+JT  - Brain : a journal of neurology
+JID - 0372537
+RN  - 0 (Extracellular Matrix Proteins)
+RN  - 0 (VWA1 protein, human)
+SB  - IM
+CIN - Brain. 2021 Mar 3;144(2):362-365. PMID: 33693694
+MH  - Adult
+MH  - Aged
+MH  - Animals
+MH  - Behavior, Animal/physiology
+MH  - Child
+MH  - Extracellular Matrix Proteins/*genetics
+MH  - Female
+MH  - Hereditary Sensory and Motor Neuropathy/*genetics/pathology
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - Muscle, Skeletal/pathology
+MH  - Mutation
+MH  - Pedigree
+MH  - Young Adult
+MH  - Zebrafish
+PMC - PMC8263055
+OTO - NOTNLM
+OT  - EMG
+OT  - genetics: neuropathy
+OT  - hereditary motor and sensory neuropathies
+OT  - nerve conduction studies
+OT  - whole-genome sequencing
+FIR - Ambrose, John C
+IR  - Ambrose JC
+FIR - Arumugam, Prabhu
+IR  - Arumugam P
+FIR - Baple, Emma L
+IR  - Baple EL
+FIR - Bleda, Marta
+IR  - Bleda M
+FIR - Boardman-Pretty, Freya
+IR  - Boardman-Pretty F
+FIR - Boissiere, Jeanne M
+IR  - Boissiere JM
+FIR - Boustred, Christopher R
+IR  - Boustred CR
+FIR - Brittain, Helen
+IR  - Brittain H
+FIR - Caulfield, Mark J
+IR  - Caulfield MJ
+FIR - Chan, Georgia C
+IR  - Chan GC
+FIR - Craig, Clare E H
+IR  - Craig CEH
+FIR - Daugherty, Louise C
+IR  - Daugherty LC
+FIR - Burca, Anna de
+IR  - Burca A
+FIR - Devereau, Andrew
+IR  - Devereau A
+FIR - Elgar, Greg
+IR  - Elgar G
+FIR - Foulger, Rebecca E
+IR  - Foulger RE
+FIR - Fowler, Tom
+IR  - Fowler T
+FIR - Furio-Tari, Pedro
+IR  - Furio-Tari P
+FIR - Giess, Adam
+IR  - Giess A
+FIR - Hackett, Joanne M
+IR  - Hackett JM
+FIR - Halai, Dina
+IR  - Halai D
+FIR - Hamblin, Angela
+IR  - Hamblin A
+FIR - Henderson, Shirley
+IR  - Henderson S
+FIR - Holman, James E
+IR  - Holman JE
+FIR - Hubbard, Tim J P
+IR  - Hubbard TJP
+FIR - Ibanez, Kristina
+IR  - Ibanez K
+FIR - Jackson, Rob
+IR  - Jackson R
+FIR - Jones, Louise J
+IR  - Jones LJ
+FIR - Kasperaviciute, Dalia
+IR  - Kasperaviciute D
+FIR - Kayikci, Melis
+IR  - Kayikci M
+FIR - Kousathanas, Athanasios
+IR  - Kousathanas A
+FIR - Lahnstein, Lea
+IR  - Lahnstein L
+FIR - Lawson, Kay
+IR  - Lawson K
+FIR - Leigh, Sarah E A
+IR  - Leigh SEA
+FIR - Leong, Ivonne U S
+IR  - Leong IUS
+FIR - Lopez, Javier F
+IR  - Lopez JF
+FIR - Maleady-Crowe, Fiona
+IR  - Maleady-Crowe F
+FIR - Mason, Joanne
+IR  - Mason J
+FIR - McDonagh, Ellen M
+IR  - McDonagh EM
+FIR - Moutsianas, Loukas
+IR  - Moutsianas L
+FIR - Mueller, Michael
+IR  - Mueller M
+FIR - Murugaesu, Nirupa
+IR  - Murugaesu N
+FIR - Need, Anna C
+IR  - Need AC
+FIR - O'Donovan, Peter
+IR  - O'Donovan P
+FIR - Odhams, Chris A
+IR  - Odhams CA
+FIR - Orioli, Andrea
+IR  - Orioli A
+FIR - Patch, Christine
+IR  - Patch C
+FIR - Pereira, Mariana Buongermino
+IR  - Pereira MB
+FIR - Perez-Gil, Daniel
+IR  - Perez-Gil D
+FIR - Polychronopoulos, Dimitris
+IR  - Polychronopoulos D
+FIR - Pullinger, John
+IR  - Pullinger J
+FIR - Rahim, Tahrima
+IR  - Rahim T
+FIR - Rendon, Augusto
+IR  - Rendon A
+FIR - Riesgo-Ferreiro, Pablo
+IR  - Riesgo-Ferreiro P
+FIR - Rogers, Tim
+IR  - Rogers T
+FIR - Ryten, Mina
+IR  - Ryten M
+FIR - Savage, Kevin
+IR  - Savage K
+FIR - Sawant, Kushmita
+IR  - Sawant K
+FIR - Scott, Richard H
+IR  - Scott RH
+FIR - Siddiq, Afshan
+IR  - Siddiq A
+FIR - Sieghart, Alexander
+IR  - Sieghart A
+FIR - Smedley, Damian
+IR  - Smedley D
+FIR - Smith, Katherine R
+IR  - Smith KR
+FIR - Smith, Samuel C
+IR  - Smith SC
+FIR - Sosinsky, Alona
+IR  - Sosinsky A
+FIR - Spooner, William
+IR  - Spooner W
+FIR - Stevens, Helen E
+IR  - Stevens HE
+FIR - Stuckey, Alexander
+IR  - Stuckey A
+FIR - Sultana, Razvan
+IR  - Sultana R
+FIR - Tanguy, Melanie
+IR  - Tanguy M
+FIR - Thomas, Ellen R A
+IR  - Thomas ERA
+FIR - Thompson, Simon R
+IR  - Thompson SR
+FIR - Tregidgo, Carolyn
+IR  - Tregidgo C
+FIR - Tucci, Arianna
+IR  - Tucci A
+FIR - Walsh, Emma
+IR  - Walsh E
+FIR - Watters, Sarah A
+IR  - Watters SA
+FIR - Welland, Matthew J
+IR  - Welland MJ
+FIR - Williams, Eleanor
+IR  - Williams E
+FIR - Witkowska, Katarzyna
+IR  - Witkowska K
+FIR - Wood, Suzanne M
+IR  - Wood SM
+FIR - Zarowiecki, Magdalena
+IR  - Zarowiecki M
+EDAT- 2021/02/10 06:00
+MHDA- 2021/04/20 06:00
+CRDT- 2021/02/09 08:45
+PHST- 2020/06/18 00:00 [received]
+PHST- 2020/09/16 00:00 [revised]
+PHST- 2020/10/15 00:00 [accepted]
+PHST- 2021/02/10 06:00 [pubmed]
+PHST- 2021/04/20 06:00 [medline]
+PHST- 2021/02/09 08:45 [entrez]
+AID - 6103826 [pii]
+AID - awaa420 [pii]
+AID - 10.1093/brain/awaa420 [doi]
+PST - ppublish
+SO  - Brain. 2021 Mar 3;144(2):584-600. doi: 10.1093/brain/awaa420.

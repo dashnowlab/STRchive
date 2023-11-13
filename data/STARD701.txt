@@ -1,4 +1,555 @@
-<?xml version="1.0" ?>
-<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2023//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_230101.dtd">
-<PubmedArticleSet>
-<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM"><PMID Version="1">33040085</PMID><DateCompleted><Year>2021</Year><Month>08</Month><Day>02</Day></DateCompleted><DateRevised><Year>2021</Year><Month>08</Month><Day>02</Day></DateRevised><Article PubModel="Print-Electronic"><Journal><ISSN IssnType="Electronic">1435-232X</ISSN><JournalIssue CitedMedium="Internet"><Volume>66</Volume><Issue>4</Issue><PubDate><Year>2021</Year><Month>Apr</Month></PubDate></JournalIssue><Title>Journal of human genetics</Title><ISOAbbreviation>J Hum Genet</ISOAbbreviation></Journal><ArticleTitle>DNA analysis of benign adult familial myoclonic epilepsy reveals associations between the pathogenic TTTCA repeat insertion in SAMD12 and the nonpathogenic TTTTA repeat expansion in TNRC6A.</ArticleTitle><Pagination><StartPage>419</StartPage><EndPage>429</EndPage><MedlinePgn>419-429</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1038/s10038-020-00855-0</ELocationID><Abstract><AbstractText>Benign adult familial myoclonic epilepsy (BAFME) is an autosomal dominant disease characterized by adult-onset tremulous hand movement, myoclonus, and infrequent epileptic seizures. Recently, intronic expansion of unstable TTTCA/TTTTA pentanucleotide repeats in SAMD12, TNRC6A, or RAPGEF2 was identified as pathological mutations in Japanese BAFME pedigrees. To confirm these mutations, we performed a genetic analysis on 12 Japanese BAFME pedigrees. A total of 143 participants, including 43 familial patients, 5 suspected patients, 3 sporadic nonfamilial patients, 22 unaffected familial members, and 70 unrelated controls, were screened for expanded abnormal pentanucleotide repeats in SAMD12, TNRC6A, RAPGEF2, YEAT2, MARCH6, and STARD7. DNA samples were analyzed using Southern blotting, long-range polymerase chain reaction (PCR), repeat-primed PCR, and long-range PCR followed by Southern blotting. Of the 51 individuals with clinically diagnosed or suspected BAFME, 49 carried a SAMD12 allele with an expanded TTTCA/TTTTA pentanucleotide repeat. Genetic and clinical anticipation was observed. As in previous reports, the one patient with homozygous mutant alleles showed more severe symptoms than the heterozygous carriers. In addition, screening for expanded pentanucleotide repeats in TNRC6A revealed that the frequency of expanded TTTTA repeat alleles in the BAFME group was significantly higher than in the control group. All patients who were clinically diagnosed with BAFME, including those in the original family reported by Yasuda, carried abnormally expanded TTTCA/TTTTA repeat alleles of SAMD12. Patients with BAFME also frequently carried a TTTTA repeat expansion in TNRC6A, suggesting that there may be unknown factors in the ancestry of patients with BAFME that make pentanucleotide repeats unstable.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Terasaki</LastName><ForeName>Akane</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Kagoshima University Graduate School of Medical and Dental Sciences, Kagoshima, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Nakamura</LastName><ForeName>Masayuki</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Kagoshima University Graduate School of Medical and Dental Sciences, Kagoshima, Japan. nakamu36@m.kufm.kagoshima-u.ac.jp.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Urata</LastName><ForeName>Yuka</ForeName><Initials>Y</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Kagoshima University Graduate School of Medical and Dental Sciences, Kagoshima, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Hiwatashi</LastName><ForeName>Hanae</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Kagoshima University Graduate School of Medical and Dental Sciences, Kagoshima, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Yokoyama</LastName><ForeName>Izumi</ForeName><Initials>I</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Kagoshima University Graduate School of Medical and Dental Sciences, Kagoshima, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Yasuda</LastName><ForeName>Takeshi</ForeName><Initials>T</Initials><AffiliationInfo><Affiliation>Department of Neurology, Kurashiki-kinen Hospital, Kurashiki, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Onuma</LastName><ForeName>Teiichi</ForeName><Initials>T</Initials><AffiliationInfo><Affiliation>Musashinokokubunji Clinic, Tokyo, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Wada</LastName><ForeName>Kazumaru</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Department of Comprehensive Rehabilitation Science, Hirosaki University Graduate School of Health Sciences, Hirosaki, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kaneko</LastName><ForeName>Sunao</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>North Tohoku Epilepsy Center, Minato Hospital, Aomori, Japan.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Neuropsychiatry, Hirosaki University Graduate School of Medicine, Hirosaki, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kan</LastName><ForeName>Rumiko</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Department of Neuropsychiatry, Fukushima Medical University School of Medicine, Fukushima, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Niwa</LastName><ForeName>Shin-Ichi</ForeName><Initials>SI</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Aizu Medical Center, Fukushima Medical University, Fukushima, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Hashimoto</LastName><ForeName>Ohiko</ForeName><Initials>O</Initials><AffiliationInfo><Affiliation>Hashimoto Clinic, Tokyo, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Komure</LastName><ForeName>Osamu</ForeName><Initials>O</Initials><AffiliationInfo><Affiliation>Department of Neurology, Amagasaki Daimotsu Hospital, Amagasaki, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Goto</LastName><ForeName>Yu-Ichi</ForeName><Initials>YI</Initials><Identifier Source="ORCID">0000-0002-2426-9739</Identifier><AffiliationInfo><Affiliation>Department of Mental Retardation and Birth Defect Research, National Institute of Neuroscience, National Center of Neurology and Psychiatry, Tokyo, Japan.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Medical Genome Center, National Center of Neurology and Psychiatry, Tokyo, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Yamagishi</LastName><ForeName>Yuko</ForeName><Initials>Y</Initials><AffiliationInfo><Affiliation>Department of Neurology, Kindai University Faculty of Medicine, Osaka, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Nakano</LastName><ForeName>Misa</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Department of Neurology, Suita Municipal Hospital, Osaka, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Furusawa</LastName><ForeName>Yoshihiko</ForeName><Initials>Y</Initials><AffiliationInfo><Affiliation>Department of Neurology, National Center Hospital, National Center of Neurology and Psychiatry, Tokyo, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sano</LastName><ForeName>Akira</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Department of Psychiatry, Kagoshima University Graduate School of Medical and Dental Sciences, Kagoshima, Japan.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2020</Year><Month>10</Month><Day>10</Day></ArticleDate></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>J Hum Genet</MedlineTA><NlmUniqueID>9808008</NlmUniqueID><ISSNLinking>1434-5161</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D001324">Autoantigens</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D009419">Nerve Tissue Proteins</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D016601">RNA-Binding Proteins</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="C000630916">SAMD12 protein, human</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="C465663">TNRC6A protein, human</NameOfSubstance></Chemical></ChemicalList><CitationSubset>IM</CitationSubset><CommentsCorrectionsList><CommentsCorrections RefType="ErratumIn"><RefSource>J Hum Genet. 2020 Nov 13;:</RefSource><PMID Version="1">33184460</PMID></CommentsCorrections></CommentsCorrectionsList><MeshHeadingList><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D017668" MajorTopicYN="N">Age of Onset</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D001324" MajorTopicYN="N">Autoantigens</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D016022" MajorTopicYN="N">Case-Control Studies</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004831" MajorTopicYN="N">Epilepsies, Myoclonic</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName><QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D018895" MajorTopicYN="Y">Microsatellite Repeats</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D009419" MajorTopicYN="N">Nerve Tissue Proteins</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D016601" MajorTopicYN="N">RNA-Binding Proteins</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading></MeshHeadingList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2020</Year><Month>6</Month><Day>4</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2020</Year><Month>9</Month><Day>28</Day></PubMedPubDate><PubMedPubDate PubStatus="revised"><Year>2020</Year><Month>9</Month><Day>25</Day></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2020</Year><Month>10</Month><Day>12</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2021</Year><Month>8</Month><Day>3</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2020</Year><Month>10</Month><Day>11</Day><Hour>20</Hour><Minute>35</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">33040085</ArticleId><ArticleId IdType="doi">10.1038/s10038-020-00855-0</ArticleId><ArticleId IdType="pii">10.1038/s10038-020-00855-0</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Yasuda T. Benign adult familial myoclonic epilepsy (BAFME). Kawasaki Med J. 1991;17:1&#x2013;13.</Citation></Reference><Reference><Citation>Inoue S. One pedigree of hereditary tremor with epileptiform seizures. Seishin Shinkeigaku Zasshi. 1951;53:33&#x2013;7.</Citation></Reference><Reference><Citation>Kudo J, Kudo T, Yamauchi T. Seven families of heredofamilial tremor with epilepsy. Clin Neurol. 1984;24:1&#x2013;8.</Citation></Reference><Reference><Citation>Ikeda A, Kakigi R, Funai N, Neshige R, Kuroda Y, Shibasaki H. Cortical tremor: a variant of cortical reflex myoclonus. Neurology. 1990;40:1561&#x2013;5.</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/WNL.40.10.1561</ArticleId></ArticleIdList></Reference><Reference><Citation>Inazuki G, Naito H, Ohama E, Kawase Y, Honma Y, Tokiguchi S, et al. A clinical study and neuropathological findings of a familial disease with myoclonus and epilepsy&#x2014;the nosological place of familial essential myoclonus and epilepsy (FEME). Seishin Shinkeigaku Zasshi. 1990;92:1&#x2013;21.</Citation><ArticleIdList><ArticleId IdType="pubmed">2112762</ArticleId></ArticleIdList></Reference><Reference><Citation>Uyama E, Tokunaga M, Murakami T, Kuwano A, Kondo I, Uchino M. Familial adult myoclonus epilepsy: a new phenotype of autosomal dominant myoclonic epilepsy. Ann Neurol. 1996;40:505.</Citation></Reference><Reference><Citation>Okino S. Familial benign myoclonus epilepsy of adult onset: a previously unrecognized myoclonic disorder. J Neurol Sci. 1997;145:113&#x2013;8.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0022-510X(96)00245-6</ArticleId></ArticleIdList></Reference><Reference><Citation>Okuma Y, Shimo Y, Shimura H, Hatori K, Hattori T, Tanaka S, et al. Familial cortical tremor with epilepsy: an under-recognized familial tremor. Clin Neurol Neurosurg. 1998;100:75&#x2013;8.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0303-8467(98)00003-1</ArticleId></ArticleIdList></Reference><Reference><Citation>Guerrini R, Bonanni P, Patrignani A, Brown P, Parmeggiani L, Grosse P, et al. Autosomal dominant cortical myoclonus and epilepsy (ADCME) with complex partial and generalized seizures: a newly recognized epilepsy syndrome with linkage to chromosome 2p11.1-q12.2. Brain. 2001;124:2459&#x2013;75.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/124.12.2459</ArticleId></ArticleIdList></Reference><Reference><Citation>Mikami M, Yasuda T, Terao A, Nakamura M, Ueno S, Tanabe H, et al. Localization of a gene for benign adult familial myoclonic epilepsy to chromosome 8q23.3-q24.1. Am J Hum Genet. 1999;65:745&#x2013;51.</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/302535</ArticleId></ArticleIdList></Reference><Reference><Citation>Mori S, Nakamura M, Yasuda T, Ueno SI, Kaneko S, Sano A. Remapping and mutation analysis of benign adult familial myoclonic epilepsy in a Japanese pedigree. J Hum Genet. 2011;56:742&#x2013;7.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/jhg.2011.93</ArticleId></ArticleIdList></Reference><Reference><Citation>Ishiura H, Doi K, Mitsui J, Yoshimura J, Matsukawa MK, Fujiyama A, et al. Expansions of intronic TTTCA and TTTTA repeats in benign adult familial myoclonic epilepsy. Nat Genet. 2018;50:581&#x2013;90.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/s41588-018-0067-2</ArticleId></ArticleIdList></Reference><Reference><Citation>Yeetong P, Pongpanich M, Srichomthong C, Assawapitaksakul A, Shotelersuk V, Tantirukdham N, et al. TTTCA repeat insertions in an intron of YEATS2 in benign adult familial myoclonic epilepsy type 4. Brain. 2019;142:3360&#x2013;6.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/awz267</ArticleId></ArticleIdList></Reference><Reference><Citation>Florian RT, Kraft F, Leit&#xe3;o E, Kaya S, Klebe S, Magnin E, et al. Unstable TTTTA/TTTCA expansions in MARCH6 are associated with familial adult myoclonic epilepsy type 3. Nat Commun. 2019;10:1&#x2013;14.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/s41467-019-12763-9</ArticleId></ArticleIdList></Reference><Reference><Citation>Corbett MA, Kroes T, Veneziano L, Bennett MF, Florian R, Schneider AL, et al. Intronic ATTTC repeat expansions in STARD7 in familial adult myoclonic epilepsy linked to chromosome 2. Nat Commun. 2019;10:1&#x2013;10.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/s41467-018-07882-8</ArticleId></ArticleIdList></Reference><Reference><Citation>Kobayashi K, Hitomi T, Matsumoto R, Watanabe M, Takahashi R, Ikeda A. Nationwide survey in Japan endorsed diagnostic criteria of benign adult familial myoclonus epilepsy. Seizure. 2018;61:14&#x2013;22.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.seizure.2018.07.014</ArticleId></ArticleIdList></Reference><Reference><Citation>Cen Z, Jiang Z, Chen Y, Zheng X, Xie F, Yang X, et al. Intronic pentanucleotide TTTCA repeat insertion in the SAMD12 gene causes familial cortical myoclonic tremor with epilepsy type I. Brain.2018;141:2280&#x2013;8.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/awy160</ArticleId></ArticleIdList></Reference><Reference><Citation>Lei XX, Liu Q, Lu Q, Huang Y, Zhou XQ, Sun HY, et al. TTTCA repeat expansion causes familial cortical myoclonic tremor with epilepsy. Eur J Neurol. 2019;26:513&#x2013;18.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/ene.13848</ArticleId></ArticleIdList></Reference><Reference><Citation>Zeng S, Zhang M, Wang X, Hu Z, Li J, Ki N, et al. Long-read sequencing identified intronic repeat expansions in SAMD12 from Chinese pedigrees affected with familial cortical myoclonic tremor with epilepsy. J Med Genet. 2019;56:265&#x2013;70.</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/jmedgenet-2018-105484</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM"><PMID Version="1">31664034</PMID><DateCompleted><Year>2020</Year><Month>02</Month><Day>25</Day></DateCompleted><DateRevised><Year>2023</Year><Month>10</Month><Day>14</Day></DateRevised><Article PubModel="Electronic"><Journal><ISSN IssnType="Electronic">2041-1723</ISSN><JournalIssue CitedMedium="Internet"><Volume>10</Volume><Issue>1</Issue><PubDate><Year>2019</Year><Month>Oct</Month><Day>29</Day></PubDate></JournalIssue><Title>Nature communications</Title><ISOAbbreviation>Nat Commun</ISOAbbreviation></Journal><ArticleTitle>Intronic ATTTC repeat expansions in STARD7 in familial adult myoclonic epilepsy linked to chromosome 2.</ArticleTitle><Pagination><StartPage>4920</StartPage><MedlinePgn>4920</MedlinePgn></Pagination><ELocationID EIdType="pii" ValidYN="Y">4920</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.1038/s41467-019-12671-y</ELocationID><Abstract><AbstractText>Familial Adult Myoclonic Epilepsy (FAME) is characterised by cortical myoclonic tremor usually from the second decade of life and overt myoclonic or generalised tonic-clonic seizures. Four independent loci have been implicated in FAME on chromosomes (chr) 2, 3, 5 and 8. Using whole genome sequencing and repeat primed PCR, we provide evidence that chr2-linked FAME (FAME2) is caused by an expansion of an ATTTC pentamer within the first intron of STARD7. The ATTTC expansions segregate in 158/158 individuals typically affected by FAME from 22 pedigrees including 16 previously reported families recruited worldwide. RNA sequencing from patient derived fibroblasts shows no accumulation of the AUUUU or AUUUC repeat sequences and STARD7 gene expression is not affected. These data, in combination with other genes bearing similar mutations that have been implicated in FAME, suggest ATTTC expansions may cause this disorder, irrespective of the genomic locus involved.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Corbett</LastName><ForeName>Mark A</ForeName><Initials>MA</Initials><Identifier Source="ORCID">0000-0001-9298-3072</Identifier><AffiliationInfo><Affiliation>Adelaide Medical School and Robinson Research Institute, University of Adelaide, Adelaide, 5005, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kroes</LastName><ForeName>Thessa</ForeName><Initials>T</Initials><AffiliationInfo><Affiliation>Adelaide Medical School and Robinson Research Institute, University of Adelaide, Adelaide, 5005, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Veneziano</LastName><ForeName>Liana</ForeName><Initials>L</Initials><Identifier Source="ORCID">0000-0002-9921-8450</Identifier><AffiliationInfo><Affiliation>Institute of Translational Pharmacology, National Research Council, Rome, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Bennett</LastName><ForeName>Mark F</ForeName><Initials>MF</Initials><Identifier Source="ORCID">0000-0002-3561-6804</Identifier><AffiliationInfo><Affiliation>Population Health and Immunity Division, the Walter and Eliza Hall Institute of Medical Research, Parkville, 3052, VIC, Australia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Medical Biology, the University of Melbourne, Melbourne, 3010, VIC, Australia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin Health, Heidelberg, 3084, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Florian</LastName><ForeName>Rahel</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Institut f&#xfc;r Humangenetik, Universit&#xe4;tsklinikum Essen, Universit&#xe4;t Duisburg-Essen, Essen, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Schneider</LastName><ForeName>Amy L</ForeName><Initials>AL</Initials><Identifier Source="ORCID">0000-0001-5260-7187</Identifier><AffiliationInfo><Affiliation>Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin Health, Heidelberg, 3084, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Coppola</LastName><ForeName>Antonietta</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Department of Neuroscience, Reproductive and Odontostomatological Sciences, Federico II University, Napoli, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Licchetta</LastName><ForeName>Laura</ForeName><Initials>L</Initials><AffiliationInfo><Affiliation>IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Franceschetti</LastName><ForeName>Silvana</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Neurophysiopathology, Fondazione IRCCS Istituto Neurologico Carlo Besta, Milan, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Member of the European Reference Network on Rare and Complex epilepsies, ERN EpiCARE, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Suppa</LastName><ForeName>Antonio</ForeName><Initials>A</Initials><Identifier Source="ORCID">0000-0001-9903-5550</Identifier><AffiliationInfo><Affiliation>Department of Human Neurosciences, Sapienza University of Rome, Viale dell'Universit&#xe0;, 30, 00185, Rome, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>IRCCS Neuromed, Pozzilli, IS, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Wenger</LastName><ForeName>Aaron</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Pacific Biosciences, Menlo Park, CA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Mei</LastName><ForeName>Davide</ForeName><Initials>D</Initials><Identifier Source="ORCID">0000-0001-6790-6251</Identifier><AffiliationInfo><Affiliation>Neuroscience and Neurogenetics Department, Meyer Children's Hospital, Florence, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Pendziwiat</LastName><ForeName>Manuela</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Department of Neuropediatrics, University Medical Center Schleswig-Holstein, Christian-Albrechts University, Kiel, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kaya</LastName><ForeName>Sabine</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Institut f&#xfc;r Humangenetik, Universit&#xe4;tsklinikum Essen, Universit&#xe4;t Duisburg-Essen, Essen, Germany.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Delledonne</LastName><ForeName>Massimo</ForeName><Initials>M</Initials><Identifier Source="ORCID">0000-0002-7100-4581</Identifier><AffiliationInfo><Affiliation>Department of Biotechnology, University of Verona, Strada le Grazie 15, 37134, Verona, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Straussberg</LastName><ForeName>Rachel</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Institute of Pediatric Neurology, Schneider Children's Medical Center of Israel, Petah Tikva, Israel.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Tel Aviv University Medical School, 69978, Tel Aviv, Israel.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Xumerle</LastName><ForeName>Luciano</ForeName><Initials>L</Initials><Identifier Source="ORCID">0000-0003-4518-3958</Identifier><AffiliationInfo><Affiliation>Personal Genomics, Strada le Grazie 15, 37134, Verona, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Regan</LastName><ForeName>Brigid</ForeName><Initials>B</Initials><AffiliationInfo><Affiliation>Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin Health, Heidelberg, 3084, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Crompton</LastName><ForeName>Douglas</ForeName><Initials>D</Initials><AffiliationInfo><Affiliation>Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin Health, Heidelberg, 3084, VIC, Australia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Neurology, Northern Health, Melbourne, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>van Rootselaar</LastName><ForeName>Anne-Fleur</ForeName><Initials>AF</Initials><Identifier Source="ORCID">0000-0002-8376-9098</Identifier><AffiliationInfo><Affiliation>Amsterdam UMC, University of Amsterdam, Department of Neurology and Clinical Neurophysiology, Amsterdam Neuroscience, Amsterdam, The Netherlands.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Correll</LastName><ForeName>Anthony</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Genetics and Molecular Pathology, SA Pathology, Adelaide, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Catford</LastName><ForeName>Rachael</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Genetics and Molecular Pathology, SA Pathology, Adelaide, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Bisulli</LastName><ForeName>Francesca</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Chakraborty</LastName><ForeName>Shreyasee</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Pacific Biosciences, Menlo Park, CA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Baldassari</LastName><ForeName>Sara</ForeName><Initials>S</Initials><Identifier Source="ORCID">0000-0003-4851-2796</Identifier><AffiliationInfo><Affiliation>IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tinuper</LastName><ForeName>Paolo</ForeName><Initials>P</Initials><AffiliationInfo><Affiliation>IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Barton</LastName><ForeName>Kirston</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, Darlinghurst, NSW, 2010, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Carswell</LastName><ForeName>Shaun</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, Darlinghurst, NSW, 2010, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Smith</LastName><ForeName>Martin</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, Darlinghurst, NSW, 2010, Australia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>St-Vincent's Clinical School, Faulty of Medicine, UNSW Sydney, Darlinghurst, NSW, 2010, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Berardelli</LastName><ForeName>Alfredo</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Department of Human Neurosciences, Sapienza University of Rome, Viale dell'Universit&#xe0;, 30, 00185, Rome, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>IRCCS Neuromed, Pozzilli, IS, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Carroll</LastName><ForeName>Renee</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Adelaide Medical School and Robinson Research Institute, University of Adelaide, Adelaide, 5005, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Gardner</LastName><ForeName>Alison</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Adelaide Medical School and Robinson Research Institute, University of Adelaide, Adelaide, 5005, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Friend</LastName><ForeName>Kathryn L</ForeName><Initials>KL</Initials><AffiliationInfo><Affiliation>Genetics and Molecular Pathology, SA Pathology, Adelaide, SA, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Blatt</LastName><ForeName>Ilan</ForeName><Initials>I</Initials><AffiliationInfo><Affiliation>Department of Neurology, Sheba Medical Center, Tel Hashomer, Israel.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Iacomino</LastName><ForeName>Michele</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Laboratory of Neurogenetics, IRCCS Istituto "G. Gaslini", Genova, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Di Bonaventura</LastName><ForeName>Carlo</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>Department of Human Neurosciences, Sapienza University of Rome, Viale dell'Universit&#xe0;, 30, 00185, Rome, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Striano</LastName><ForeName>Salvatore</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Department of Neurology, Federico II University, Napoli, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Buratti</LastName><ForeName>Julien</ForeName><Initials>J</Initials><Identifier Source="ORCID">0000-0002-0901-0905</Identifier><AffiliationInfo><Affiliation>AP-HP, H&#xf4;pital Piti&#xe9;-Salp&#xea;tri&#xe8;re, D&#xe9;partement de G&#xe9;n&#xe9;tique, F-75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Keren</LastName><ForeName>Boris</ForeName><Initials>B</Initials><AffiliationInfo><Affiliation>AP-HP, H&#xf4;pital Piti&#xe9;-Salp&#xea;tri&#xe8;re, D&#xe9;partement de G&#xe9;n&#xe9;tique, F-75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Nava</LastName><ForeName>Caroline</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>INSERM, U 1127, CNRS UMR 7225, Sorbonne Universit&#xe9;s, UPMC Univ Paris 06 UMR S 1127, Institut du Cerveau et de la Moelle &#xe9;pini&#xe8;re, ICM, F-75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Forlani</LastName><ForeName>Sylvie</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>INSERM, U 1127, CNRS UMR 7225, Sorbonne Universit&#xe9;s, UPMC Univ Paris 06 UMR S 1127, Institut du Cerveau et de la Moelle &#xe9;pini&#xe8;re, ICM, F-75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Rudolf</LastName><ForeName>Gabrielle</ForeName><Initials>G</Initials><Identifier Source="ORCID">0000-0002-2050-3911</Identifier><AffiliationInfo><Affiliation>Institut de G&#xe9;n&#xe9;tique et de Biologie Mol&#xe9;culaire et Cellulaire, Illkirch, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut National de la Sant&#xe9; et de la Recherche M&#xe9;dicale, U1258, Illkirch, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Universit&#xe9; de Strasbourg, Illkirch, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Neurology, Strasbourg University Hospital, Strasbourg, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique, U7104, Illkirch, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Hirsch</LastName><ForeName>Edouard</ForeName><Initials>E</Initials><AffiliationInfo><Affiliation>Department of Neurology, Strasbourg University Hospital, Strasbourg, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Leguern</LastName><ForeName>Eric</ForeName><Initials>E</Initials><AffiliationInfo><Affiliation>AP-HP, H&#xf4;pital Piti&#xe9;-Salp&#xea;tri&#xe8;re, D&#xe9;partement de G&#xe9;n&#xe9;tique, F-75013, Paris, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>INSERM, U 1127, CNRS UMR 7225, Sorbonne Universit&#xe9;s, UPMC Univ Paris 06 UMR S 1127, Institut du Cerveau et de la Moelle &#xe9;pini&#xe8;re, ICM, F-75013, Paris, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Labauge</LastName><ForeName>Pierre</ForeName><Initials>P</Initials><AffiliationInfo><Affiliation>MS Unit, Montpellier University Hospital, Montpellier, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Balestrini</LastName><ForeName>Simona</ForeName><Initials>S</Initials><Identifier Source="ORCID">0000-0001-5639-1969</Identifier><AffiliationInfo><Affiliation>Department of Clinical and Experimental Epilepsy, UCL Queen Square Institute of Neurology, London, WC1N 3BG, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Chalfont Centre for Epilepsy, Chalfont St Peter, SL9 0RJ, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sander</LastName><ForeName>Josemir W</ForeName><Initials>JW</Initials><AffiliationInfo><Affiliation>Department of Clinical and Experimental Epilepsy, UCL Queen Square Institute of Neurology, London, WC1N 3BG, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Chalfont Centre for Epilepsy, Chalfont St Peter, SL9 0RJ, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Afawi</LastName><ForeName>Zaid</ForeName><Initials>Z</Initials><AffiliationInfo><Affiliation>Tel Aviv University Medical School, 69978, Tel Aviv, Israel.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Helbig</LastName><ForeName>Ingo</ForeName><Initials>I</Initials><AffiliationInfo><Affiliation>Department of Neuropediatrics, University Medical Center Schleswig-Holstein, Christian-Albrechts University, Kiel, Germany.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Division of Neurology Children's Hospital of Philadelphia, Philadelphia, PA, USA.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ishiura</LastName><ForeName>Hiroyuki</ForeName><Initials>H</Initials><Identifier Source="ORCID">0000-0003-2975-7309</Identifier><AffiliationInfo><Affiliation>Department of Neurology, the University of Tokyo Hospital, Tokyo, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tsuji</LastName><ForeName>Shoji</ForeName><Initials>S</Initials><Identifier Source="ORCID">0000-0001-5602-5686</Identifier><AffiliationInfo><Affiliation>Department of Neurology, the University of Tokyo Hospital, Tokyo, Japan.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Medical Genome Center, the University of Tokyo Hospital, Tokyo, Japan.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>International University of Health and Welfare, Chiba, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sisodiya</LastName><ForeName>Sanjay M</ForeName><Initials>SM</Initials><AffiliationInfo><Affiliation>Department of Clinical and Experimental Epilepsy, UCL Queen Square Institute of Neurology, London, WC1N 3BG, UK.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Chalfont Centre for Epilepsy, Chalfont St Peter, SL9 0RJ, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Casari</LastName><ForeName>Giorgio</ForeName><Initials>G</Initials><Identifier Source="ORCID">0000-0002-0115-8980</Identifier><AffiliationInfo><Affiliation>TIGEM - Telethon Institute of Genetics and Medicine, Naples, and San Raffaele University, Milan, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sadleir</LastName><ForeName>Lynette G</ForeName><Initials>LG</Initials><AffiliationInfo><Affiliation>Department of Paediatrics and Child Health, University of Otago, Wellington, Wellington, New Zealand.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>van Coller</LastName><ForeName>Riaan</ForeName><Initials>R</Initials><Identifier Source="ORCID">0000-0001-6250-363X</Identifier><AffiliationInfo><Affiliation>University of Pretoria, Pretoria, South Africa.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tijssen</LastName><ForeName>Marina A J</ForeName><Initials>MAJ</Initials><Identifier Source="ORCID">0000-0001-5783-571X</Identifier><AffiliationInfo><Affiliation>Department of Neurology, University of Groningen, Groningen, The Netherlands.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Klein</LastName><ForeName>Karl Martin</ForeName><Initials>KM</Initials><Identifier Source="ORCID">0000-0002-6654-1665</Identifier><AffiliationInfo><Affiliation>Department of Neurology, Epilepsy Center Frankfurt Rhine-Main, Goethe University, Frankfurt am Main, Frankfurt, Germany.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Neurology, Epilepsy Center Hessen, Philipps University, Marburg, Marburg, Germany.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Departments of Clinical Neurosciences, Medical Genetics and Community Health Sciences, Hotchkiss Brain Institute &amp; Alberta Children's Hospital Research Institute, Cumming School of Medicine, University of Calgary, Calgary, AB, Canada.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>van den Maagdenberg</LastName><ForeName>Arn M J M</ForeName><Initials>AMJM</Initials><AffiliationInfo><Affiliation>Departments of Human Genetics &amp; Neurology, Leiden University Medical Centre, Leiden, The Netherlands.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Zara</LastName><ForeName>Federico</ForeName><Initials>F</Initials><AffiliationInfo><Affiliation>Laboratory of Neurogenetics, IRCCS Istituto "G. Gaslini", Genova, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Guerrini</LastName><ForeName>Renzo</ForeName><Initials>R</Initials><Identifier Source="ORCID">0000-0002-7272-7079</Identifier><AffiliationInfo><Affiliation>Neuroscience and Neurogenetics Department, Meyer Children's Hospital, Florence, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Berkovic</LastName><ForeName>Samuel F</ForeName><Initials>SF</Initials><Identifier Source="ORCID">0000-0003-4580-841X</Identifier><AffiliationInfo><Affiliation>Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin Health, Heidelberg, 3084, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Pippucci</LastName><ForeName>Tommaso</ForeName><Initials>T</Initials><AffiliationInfo><Affiliation>Medical Genetics Unit, Sant'Orsola-Malpighi University Hospital, Bologna, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Canafoglia</LastName><ForeName>Laura</ForeName><Initials>L</Initials><Identifier Source="ORCID">0000-0002-5385-761X</Identifier><AffiliationInfo><Affiliation>Neurophysiopathology, Fondazione IRCCS Istituto Neurologico Carlo Besta, Milan, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Member of the European Reference Network on Rare and Complex epilepsies, ERN EpiCARE, London, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Bahlo</LastName><ForeName>Melanie</ForeName><Initials>M</Initials><Identifier Source="ORCID">0000-0001-5132-0774</Identifier><AffiliationInfo><Affiliation>Population Health and Immunity Division, the Walter and Eliza Hall Institute of Medical Research, Parkville, 3052, VIC, Australia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Medical Biology, the University of Melbourne, Melbourne, 3010, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Striano</LastName><ForeName>Pasquale</ForeName><Initials>P</Initials><Identifier Source="ORCID">0000-0002-6065-1476</Identifier><AffiliationInfo><Affiliation>Pediatric Neurology and Muscular Diseases Unit, IRCCS Istituto "G. Gaslini", Genova, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Neurosciences, Rehabilitation, Ophthalmology, Genetics, Maternal and Child Health, University of Genoa, Genova, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Scheffer</LastName><ForeName>Ingrid E</ForeName><Initials>IE</Initials><Identifier Source="ORCID">0000-0002-2311-2174</Identifier><AffiliationInfo><Affiliation>Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin Health, Heidelberg, 3084, VIC, Australia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Royal Children's Hospital, Murdoch Children's Research Institute and Florey Institute, Melbourne, VIC, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Brancati</LastName><ForeName>Francesco</ForeName><Initials>F</Initials><Identifier Source="ORCID">0000-0003-3624-2354</Identifier><AffiliationInfo><Affiliation>Institute of Translational Pharmacology, National Research Council, Rome, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Medical Genetics, Department of Life, Health and Environmental Sciences, University of L'Aquila, L'Aquila, Italy.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Laboratory of Molecular and Cell Biology, Istituto Dermopatico dell'Immacolata, IDI-IRCCS, Rome, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Depienne</LastName><ForeName>Christel</ForeName><Initials>C</Initials><Identifier Source="ORCID">0000-0002-7212-9554</Identifier><AffiliationInfo><Affiliation>Institut f&#xfc;r Humangenetik, Universit&#xe4;tsklinikum Essen, Universit&#xe4;t Duisburg-Essen, Essen, Germany.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institut de G&#xe9;n&#xe9;tique et de Biologie Mol&#xe9;culaire et Cellulaire, Illkirch, France.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Centre National de la Recherche Scientifique, U7104, Illkirch, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Gecz</LastName><ForeName>Jozef</ForeName><Initials>J</Initials><Identifier Source="ORCID">0000-0002-7884-6861</Identifier><AffiliationInfo><Affiliation>Adelaide Medical School and Robinson Research Institute, University of Adelaide, Adelaide, 5005, SA, Australia. jozef.gecz@adelaide.edu.au.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>South Australian Health and Medical Research Institute, Adelaide, 5000, SA, Australia. jozef.gecz@adelaide.edu.au.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2019</Year><Month>10</Month><Day>29</Day></ArticleDate></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Nat Commun</MedlineTA><NlmUniqueID>101528555</NlmUniqueID><ISSNLinking>2041-1723</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D002352">Carrier Proteins</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="C483475">STARD7 protein, human</NameOfSubstance></Chemical></ChemicalList><SupplMeshList><SupplMeshName Type="Disease" UI="C564313">Epilepsy, Myoclonic, Benign Adult Familial, Type 2</SupplMeshName></SupplMeshList><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002352" MajorTopicYN="N">Carrier Proteins</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002675" MajorTopicYN="N">Child, Preschool</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002874" MajorTopicYN="N">Chromosome Mapping</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002889" MajorTopicYN="N">Chromosomes, Human, Pair 2</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D042622" MajorTopicYN="Y">DNA Repeat Expansion</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004831" MajorTopicYN="N">Epilepsies, Myoclonic</DescriptorName><QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D007438" MajorTopicYN="Y">Introns</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D010375" MajorTopicYN="N">Pedigree</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName></MeshHeading></MeshHeadingList><CoiStatement>A.W. and S. Chakraborty. are employees and shareholders of Pacific Biosciences. There are no other competing interests to declare.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2019</Year><Month>3</Month><Day>19</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2019</Year><Month>9</Month><Day>23</Day></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2019</Year><Month>10</Month><Day>31</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2019</Year><Month>10</Month><Day>31</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2020</Year><Month>2</Month><Day>26</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">31664034</ArticleId><ArticleId IdType="pmc">PMC6820779</ArticleId><ArticleId IdType="doi">10.1038/s41467-019-12671-y</ArticleId><ArticleId IdType="pii">10.1038/s41467-019-12671-y</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>van den Ende T, Sharifi S, van der Salm SMA, van Rootselaar A-F. Familial cortical myoclonic tremor and epilepsy, an enigmatic disorder: from phenotypes to pathophysiology and genetics. a systematic review. Tremor Hyperkinetic Mov. N. Y. N. 2018;8:503.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5801339</ArticleId><ArticleId IdType="pubmed">29416935</ArticleId></ArticleIdList></Reference><Reference><Citation>Crompton DE, et al. Familial adult myoclonic epilepsy: recognition of mild phenotypes and refinement of the 2q locus. Arch. Neurol. 2012;69:474&#x2013;481. doi: 10.1001/archneurol.2011.584.</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/archneurol.2011.584</ArticleId><ArticleId IdType="pubmed">22491192</ArticleId></ArticleIdList></Reference><Reference><Citation>Mikami M, et al. Localization of a gene for benign adult familial myoclonic epilepsy to chromosome 8q23.3-q24.1. Am. J. Hum. Genet. 1999;65:745&#x2013;751. doi: 10.1086/302535.</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/302535</ArticleId><ArticleId IdType="pmc">PMC1377981</ArticleId><ArticleId IdType="pubmed">10441581</ArticleId></ArticleIdList></Reference><Reference><Citation>Guerrini R, et al. Autosomal dominant cortical myoclonus and epilepsy (ADCME) with complex partial and generalized seizures: A newly recognized epilepsy syndrome with linkage to chromosome 2p11.1-q12.2. Brain J. Neurol. 2001;124:2459&#x2013;2475. doi: 10.1093/brain/124.12.2459.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/124.12.2459</ArticleId><ArticleId IdType="pubmed">11701600</ArticleId></ArticleIdList></Reference><Reference><Citation>Depienne C, et al. Familial cortical myoclonic tremor with epilepsy: the third locus (FCMTE3) maps to 5p. Neurology. 2010;74:2000&#x2013;2003. doi: 10.1212/WNL.0b013e3181e396a8.</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/WNL.0b013e3181e396a8</ArticleId><ArticleId IdType="pubmed">20548044</ArticleId></ArticleIdList></Reference><Reference><Citation>Yeetong P, et al. A newly identified locus for benign adult familial myoclonic epilepsy on chromosome 3q26.32-3q28. Eur. J. Hum. Genet. EJHG. 2013;21:225&#x2013;228. doi: 10.1038/ejhg.2012.133.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/ejhg.2012.133</ArticleId><ArticleId IdType="pmc">PMC3548266</ArticleId><ArticleId IdType="pubmed">22713812</ArticleId></ArticleIdList></Reference><Reference><Citation>Stogmann E, et al. Autosomal recessive cortical myoclonic tremor and epilepsy: association with a mutation in the potassium channel associated gene CNTN2. Brain J. Neurol. 2013;136:1155&#x2013;1160. doi: 10.1093/brain/awt068.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/awt068</ArticleId><ArticleId IdType="pubmed">23518707</ArticleId></ArticleIdList></Reference><Reference><Citation>Striano P, Zara F, Striano S, Minetti C. Autosomal recessive epilepsy associated with contactin 2 mutation is different from familial cortical tremor, myoclonus and epilepsy. Brain. 2013;136:e253&#x2013;e253. doi: 10.1093/brain/awt140.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/awt140</ArticleId><ArticleId IdType="pubmed">23803304</ArticleId></ArticleIdList></Reference><Reference><Citation>Henden L, et al. Identity by descent fine mapping of familial adult myoclonus epilepsy (FAME) to 2p11.2-2q11.2. Hum. Genet. 2016;135:1117&#x2013;1125. doi: 10.1007/s00439-016-1700-8.</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s00439-016-1700-8</ArticleId><ArticleId IdType="pubmed">27368338</ArticleId></ArticleIdList></Reference><Reference><Citation>Cen Z, et al. Intronic pentanucleotide TTTCA repeat insertion in the SAMD12 gene causes familial cortical myoclonic tremor with epilepsy type 1. Brain J. Neurol. 2018;141:2280&#x2013;2288. doi: 10.1093/brain/awy160.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/awy160</ArticleId><ArticleId IdType="pubmed">29939203</ArticleId></ArticleIdList></Reference><Reference><Citation>Ishiura H, et al. Expansions of intronic TTTCA and TTTTA repeats in benign adult familial myoclonic epilepsy. Nat. Genet. 2018;50:581&#x2013;590. doi: 10.1038/s41588-018-0067-2.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/s41588-018-0067-2</ArticleId><ArticleId IdType="pubmed">29507423</ArticleId></ArticleIdList></Reference><Reference><Citation>Suppa A, et al. Clinical, neuropsychological, neurophysiologic, and genetic features of a new Italian pedigree with familial cortical myoclonic tremor with epilepsy. Epilepsia. 2009;50:1284&#x2013;1288. doi: 10.1111/j.1528-1167.2008.01976.x.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1528-1167.2008.01976.x</ArticleId><ArticleId IdType="pubmed">19222544</ArticleId></ArticleIdList></Reference><Reference><Citation>Saint-Martin C, et al. Refinement of the 2p11.1-q12.2 locus responsible for cortical tremor associated with epilepsy and exclusion of candidate genes. Neurogenetics. 2008;9:69&#x2013;71. doi: 10.1007/s10048-007-0107-z.</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s10048-007-0107-z</ArticleId><ArticleId IdType="pubmed">17992546</ArticleId></ArticleIdList></Reference><Reference><Citation>Dolzhenko E, et al. Detection of long repeat expansions from PCR-free whole-genome sequence data. Genome Res. 2017;27:1895&#x2013;1903. doi: 10.1101/gr.225672.117.</Citation><ArticleIdList><ArticleId IdType="doi">10.1101/gr.225672.117</ArticleId><ArticleId IdType="pmc">PMC5668946</ArticleId><ArticleId IdType="pubmed">28887402</ArticleId></ArticleIdList></Reference><Reference><Citation>Tankard RM, et al. Detecting expansions of tandem repeats in cohorts sequenced with short-read sequencing Data. Am. J. Hum. Genet. 2018;103:858&#x2013;873. doi: 10.1016/j.ajhg.2018.10.015.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.ajhg.2018.10.015</ArticleId><ArticleId IdType="pmc">PMC6288141</ArticleId><ArticleId IdType="pubmed">30503517</ArticleId></ArticleIdList></Reference><Reference><Citation>Benson G. Tandem repeats finder: a program to analyze DNA sequences. Nucleic Acids Res. 1999;27:573&#x2013;580. doi: 10.1093/nar/27.2.573.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/nar/27.2.573</ArticleId><ArticleId IdType="pmc">PMC148217</ArticleId><ArticleId IdType="pubmed">9862982</ArticleId></ArticleIdList></Reference><Reference><Citation>De Fusco M, et al. The &#x3b1;2B -adrenergic receptor is mutant in cortical myoclonus and epilepsy. Ann. Neurol. 2013;75:77&#x2013;87. doi: 10.1002/ana.24028.</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/ana.24028</ArticleId><ArticleId IdType="pmc">PMC3932827</ArticleId><ArticleId IdType="pubmed">24114805</ArticleId></ArticleIdList></Reference><Reference><Citation>Saita S, et al. PARL partitions the lipid transfer protein STARD7 between the cytosol and mitochondria. EMBO J. 2018;37:e97909. doi: 10.15252/embj.201797909.</Citation><ArticleIdList><ArticleId IdType="doi">10.15252/embj.201797909</ArticleId><ArticleId IdType="pmc">PMC5813258</ArticleId><ArticleId IdType="pubmed">29301859</ArticleId></ArticleIdList></Reference><Reference><Citation>Zeng S, et al. Long-read sequencing identified intronic repeat expansions in SAMD12 from Chinese pedigrees affected with familial cortical myoclonic tremor with epilepsy. J. Med. Genet. 2018;56:265&#x2013;270. doi: 10.1136/jmedgenet-2018-105484.</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/jmedgenet-2018-105484</ArticleId><ArticleId IdType="pubmed">30194086</ArticleId></ArticleIdList></Reference><Reference><Citation>Florian, R. T. et al. Unstable TTTTA/TTTCA expansions in MARCH6 are associated with Familial Adult Myoclonic Epilepsy type 3. Nat. Commun.&#xa0;10.1038/s41467-019-12763-9 (2019).</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6820781</ArticleId><ArticleId IdType="pubmed">31664039</ArticleId></ArticleIdList></Reference><Reference><Citation>Seixas AI, et al. A Pentanucleotide ATTTC repeat insertion in the non-coding region of DAB1, mapping to SCA37, causes spinocerebellar ataxia. Am. J. Hum. Genet. 2017;101:87&#x2013;103. doi: 10.1016/j.ajhg.2017.06.007.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.ajhg.2017.06.007</ArticleId><ArticleId IdType="pmc">PMC5501871</ArticleId><ArticleId IdType="pubmed">28686858</ArticleId></ArticleIdList></Reference><Reference><Citation>Loureiro JR, et al. Mutational mechanism for DAB1 (ATTTC)n insertion in SCA37: ATTTT repeat lengthening and nucleotide substitution. Hum. Mutat. 2018;40:404&#x2013;412. doi: 10.1002/humu.23704.</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/humu.23704</ArticleId><ArticleId IdType="pubmed">30588707</ArticleId></ArticleIdList></Reference><Reference><Citation>GTEx Consortium, et al. Genetic effects on gene expression across human tissues. Nature. 2017;550:204&#x2013;213. doi: 10.1038/nature24277.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/nature24277</ArticleId><ArticleId IdType="pmc">PMC5776756</ArticleId><ArticleId IdType="pubmed">29022597</ArticleId></ArticleIdList></Reference><Reference><Citation>Flores-Martin J, Rena V, Angeletti S, Panzetta-Dutari GM, Genti-Raimondi S. The lipid transfer protein StarD7: structure, function, and regulation. Int. J. Mol. Sci. 2013;14:6170&#x2013;6186. doi: 10.3390/ijms14036170.</Citation><ArticleIdList><ArticleId IdType="doi">10.3390/ijms14036170</ArticleId><ArticleId IdType="pmc">PMC3634439</ArticleId><ArticleId IdType="pubmed">23507753</ArticleId></ArticleIdList></Reference><Reference><Citation>Striano P, et al. (1)H-MR spectroscopy indicates prominent cerebellar dysfunction in benign adult familial myoclonic epilepsy. Epilepsia. 2009;50:1491&#x2013;1497. doi: 10.1111/j.1528-1167.2008.01900.x.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1528-1167.2008.01900.x</ArticleId><ArticleId IdType="pubmed">19054410</ArticleId></ArticleIdList></Reference><Reference><Citation>Batra R, et al. Elimination of toxic microsatellite repeat expansion RNA by RNA-targeting Cas9. Cell. 2017;170:899&#x2013;912.e10. doi: 10.1016/j.cell.2017.07.010.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.cell.2017.07.010</ArticleId><ArticleId IdType="pmc">PMC5873302</ArticleId><ArticleId IdType="pubmed">28803727</ArticleId></ArticleIdList></Reference><Reference><Citation>Corbett MA, et al. Dominant KCNA2 mutation causes episodic ataxia and pharmacoresponsive epilepsy. Neurology. 2016;87:1975&#x2013;1984. doi: 10.1212/WNL.0000000000003309.</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/WNL.0000000000003309</ArticleId><ArticleId IdType="pmc">PMC5109949</ArticleId><ArticleId IdType="pubmed">27733563</ArticleId></ArticleIdList></Reference><Reference><Citation>Van der Auwera GA, et al. From FastQ data to high confidence variant calls: the Genome Analysis Toolkit best practices pipeline. Curr. Protoc. Bioinforma. 2013;11:11.10.1&#x2013;11.10.33.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4243306</ArticleId><ArticleId IdType="pubmed">25431634</ArticleId></ArticleIdList></Reference><Reference><Citation>Lek M, et al. Analysis of protein-coding genetic variation in 60,706 humans. Nature. 2016;536:285&#x2013;291. doi: 10.1038/nature19057.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/nature19057</ArticleId><ArticleId IdType="pmc">PMC5018207</ArticleId><ArticleId IdType="pubmed">27535533</ArticleId></ArticleIdList></Reference><Reference><Citation>Wang K, Li M, Hakonarson H. ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data. Nucleic Acids Res. 2010;38:e164. doi: 10.1093/nar/gkq603.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/nar/gkq603</ArticleId><ArticleId IdType="pmc">PMC2938201</ArticleId><ArticleId IdType="pubmed">20601685</ArticleId></ArticleIdList></Reference><Reference><Citation>Thorvaldsd&#xf3;ttir H, Robinson JT, Mesirov JP. Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration. Brief. Bioinform. 2013;14:178&#x2013;192. doi: 10.1093/bib/bbs017.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/bib/bbs017</ArticleId><ArticleId IdType="pmc">PMC3603213</ArticleId><ArticleId IdType="pubmed">22517427</ArticleId></ArticleIdList></Reference><Reference><Citation>Li H, Durbin R. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics. 2009;25:1754&#x2013;1760. doi: 10.1093/bioinformatics/btp324.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/bioinformatics/btp324</ArticleId><ArticleId IdType="pmc">PMC2705234</ArticleId><ArticleId IdType="pubmed">19451168</ArticleId></ArticleIdList></Reference><Reference><Citation>Layer RM, Chiang C, Quinlan AR, Hall IM. LUMPY: a probabilistic framework for structural variant discovery. Genome Biol. 2014;15:R84. doi: 10.1186/gb-2014-15-6-r84.</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/gb-2014-15-6-r84</ArticleId><ArticleId IdType="pmc">PMC4197822</ArticleId><ArticleId IdType="pubmed">24970577</ArticleId></ArticleIdList></Reference><Reference><Citation>Chen X, et al. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics. 2016;32:1220&#x2013;1222. doi: 10.1093/bioinformatics/btv710.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/bioinformatics/btv710</ArticleId><ArticleId IdType="pubmed">26647377</ArticleId></ArticleIdList></Reference><Reference><Citation>Sedlazeck FJ, et al. Accurate detection of complex structural variations using single-molecule sequencing. Nat. Methods. 2018;15:461&#x2013;468. doi: 10.1038/s41592-018-0001-7.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/s41592-018-0001-7</ArticleId><ArticleId IdType="pmc">PMC5990442</ArticleId><ArticleId IdType="pubmed">29713083</ArticleId></ArticleIdList></Reference><Reference><Citation>Pertea M, Kim D, Pertea GM, Leek JT, Salzberg SL. Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown. Nat. Protoc. 2016;11:1650&#x2013;1667. doi: 10.1038/nprot.2016.095.</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/nprot.2016.095</ArticleId><ArticleId IdType="pmc">PMC5032908</ArticleId><ArticleId IdType="pubmed">27560171</ArticleId></ArticleIdList></Reference><Reference><Citation>Robinson MD, McCarthy DJ, Smyth GK. edgeR: a Bioconductor package for differential expression analysis of digital gene expression data. Bioinformatics. 2010;26:139&#x2013;140. doi: 10.1093/bioinformatics/btp616.</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/bioinformatics/btp616</ArticleId><ArticleId IdType="pmc">PMC2796818</ArticleId><ArticleId IdType="pubmed">19910308</ArticleId></ArticleIdList></Reference><Reference><Citation>Licchetta L, et al. A novel pedigree with familial cortical myoclonic tremor and epilepsy (FCMTE): clinical characterization, refinement of the FCMTE2 locus, and confirmation of a founder haplotype. Epilepsia. 2013;54:1298&#x2013;1306. doi: 10.1111/epi.12216.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/epi.12216</ArticleId><ArticleId IdType="pubmed">23663087</ArticleId></ArticleIdList></Reference><Reference><Citation>Gardella E, et al. Autosomal dominant early-onset cortical myoclonus, photic-induced myoclonus, and epilepsy in a large pedigree. Epilepsia. 2006;47:1643&#x2013;1649. doi: 10.1111/j.1528-1167.2006.00636.x.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1528-1167.2006.00636.x</ArticleId><ArticleId IdType="pubmed">17054686</ArticleId></ArticleIdList></Reference><Reference><Citation>Madia F, et al. Benign adult familial myoclonic epilepsy (BAFME): evidence of an extended founder haplotype on chromosome 2p11.1-q12.2 in five Italian families. Neurogenetics. 2008;9:139&#x2013;142. doi: 10.1007/s10048-008-0118-4.</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s10048-008-0118-4</ArticleId><ArticleId IdType="pubmed">18231815</ArticleId></ArticleIdList></Reference><Reference><Citation>de Falco FA, et al. Benign adult familial myoclonic epilepsy: genetic heterogeneity and allelism with ADCME. Neurology. 2003;60:1381&#x2013;1385. doi: 10.1212/01.WNL.0000055874.24000.4A.</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/01.WNL.0000055874.24000.4A</ArticleId><ArticleId IdType="pubmed">12707452</ArticleId></ArticleIdList></Reference><Reference><Citation>Coppola A, et al. Psychiatric comorbidities in patients from seven families with autosomal dominant cortical tremor, myoclonus, and epilepsy. Epilepsy Behav. 2016;56:38&#x2013;43. doi: 10.1016/j.yebeh.2015.12.038.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.yebeh.2015.12.038</ArticleId><ArticleId IdType="pubmed">26827300</ArticleId></ArticleIdList></Reference><Reference><Citation>Striano P, Madia F, Minetti C, Striano S, Zara F. Electroclinical and genetic findings in a family with cortical tremor, myoclonus, and epilepsy. Epilepsia. 2005;46:1993&#x2013;1995. doi: 10.1111/j.1528-1167.2005.00346.x.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1528-1167.2005.00346.x</ArticleId><ArticleId IdType="pubmed">16393167</ArticleId></ArticleIdList></Reference><Reference><Citation>Striano P, et al. A New Benign Adult Familial Myoclonic Epilepsy (BAFME) Pedigree Suggesting Linkage to Chromosome 2p11.1-q12.2. Epilepsia. 2004;45:190&#x2013;192. doi: 10.1111/j.0013-9580.2004.39903.x.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.0013-9580.2004.39903.x</ArticleId><ArticleId IdType="pubmed">14738428</ArticleId></ArticleIdList></Reference><Reference><Citation>Coppola A, et al. Natural history and long-term evolution in families with autosomal dominant cortical tremor, myoclonus, and epilepsy. Epilepsia. 2011;52:1245&#x2013;1250. doi: 10.1111/j.1528-1167.2011.03017.x.</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1528-1167.2011.03017.x</ArticleId><ArticleId IdType="pubmed">21426326</ArticleId></ArticleIdList></Reference><Reference><Citation>van Coller R, van Rootselaar A-F, Schutte C, van der Meyden CH. Familial cortical myoclonic tremor and epilepsy: Description of a new South African pedigree with 30 year follow up. Parkinsonism Relat. Disord. 2017;38:35&#x2013;40. doi: 10.1016/j.parkreldis.2017.02.016.</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.parkreldis.2017.02.016</ArticleId><ArticleId IdType="pubmed">28237853</ArticleId></ArticleIdList></Reference><Reference><Citation>Labauge P, et al. Absence of linkage to 8q24 in a European family with familial adult myoclonic epilepsy (FAME) Neurology. 2002;58:941&#x2013;944. doi: 10.1212/WNL.58.6.941.</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/WNL.58.6.941</ArticleId><ArticleId IdType="pubmed">11914412</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>
+
+PMID- 33040085
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210802
+LR  - 20210802
+IS  - 1435-232X (Electronic)
+IS  - 1434-5161 (Linking)
+VI  - 66
+IP  - 4
+DP  - 2021 Apr
+TI  - DNA analysis of benign adult familial myoclonic epilepsy reveals associations 
+      between the pathogenic TTTCA repeat insertion in SAMD12 and the nonpathogenic 
+      TTTTA repeat expansion in TNRC6A.
+PG  - 419-429
+LID - 10.1038/s10038-020-00855-0 [doi]
+AB  - Benign adult familial myoclonic epilepsy (BAFME) is an autosomal dominant disease 
+      characterized by adult-onset tremulous hand movement, myoclonus, and infrequent 
+      epileptic seizures. Recently, intronic expansion of unstable TTTCA/TTTTA 
+      pentanucleotide repeats in SAMD12, TNRC6A, or RAPGEF2 was identified as 
+      pathological mutations in Japanese BAFME pedigrees. To confirm these mutations, 
+      we performed a genetic analysis on 12 Japanese BAFME pedigrees. A total of 143 
+      participants, including 43 familial patients, 5 suspected patients, 3 sporadic 
+      nonfamilial patients, 22 unaffected familial members, and 70 unrelated controls, 
+      were screened for expanded abnormal pentanucleotide repeats in SAMD12, TNRC6A, 
+      RAPGEF2, YEAT2, MARCH6, and STARD7. DNA samples were analyzed using Southern 
+      blotting, long-range polymerase chain reaction (PCR), repeat-primed PCR, and 
+      long-range PCR followed by Southern blotting. Of the 51 individuals with 
+      clinically diagnosed or suspected BAFME, 49 carried a SAMD12 allele with an 
+      expanded TTTCA/TTTTA pentanucleotide repeat. Genetic and clinical anticipation 
+      was observed. As in previous reports, the one patient with homozygous mutant 
+      alleles showed more severe symptoms than the heterozygous carriers. In addition, 
+      screening for expanded pentanucleotide repeats in TNRC6A revealed that the 
+      frequency of expanded TTTTA repeat alleles in the BAFME group was significantly 
+      higher than in the control group. All patients who were clinically diagnosed with 
+      BAFME, including those in the original family reported by Yasuda, carried 
+      abnormally expanded TTTCA/TTTTA repeat alleles of SAMD12. Patients with BAFME 
+      also frequently carried a TTTTA repeat expansion in TNRC6A, suggesting that there 
+      may be unknown factors in the ancestry of patients with BAFME that make 
+      pentanucleotide repeats unstable.
+FAU - Terasaki, Akane
+AU  - Terasaki A
+AD  - Department of Psychiatry, Kagoshima University Graduate School of Medical and 
+      Dental Sciences, Kagoshima, Japan.
+FAU - Nakamura, Masayuki
+AU  - Nakamura M
+AD  - Department of Psychiatry, Kagoshima University Graduate School of Medical and 
+      Dental Sciences, Kagoshima, Japan. nakamu36@m.kufm.kagoshima-u.ac.jp.
+FAU - Urata, Yuka
+AU  - Urata Y
+AD  - Department of Psychiatry, Kagoshima University Graduate School of Medical and 
+      Dental Sciences, Kagoshima, Japan.
+FAU - Hiwatashi, Hanae
+AU  - Hiwatashi H
+AD  - Department of Psychiatry, Kagoshima University Graduate School of Medical and 
+      Dental Sciences, Kagoshima, Japan.
+FAU - Yokoyama, Izumi
+AU  - Yokoyama I
+AD  - Department of Psychiatry, Kagoshima University Graduate School of Medical and 
+      Dental Sciences, Kagoshima, Japan.
+FAU - Yasuda, Takeshi
+AU  - Yasuda T
+AD  - Department of Neurology, Kurashiki-kinen Hospital, Kurashiki, Japan.
+FAU - Onuma, Teiichi
+AU  - Onuma T
+AD  - Musashinokokubunji Clinic, Tokyo, Japan.
+FAU - Wada, Kazumaru
+AU  - Wada K
+AD  - Department of Comprehensive Rehabilitation Science, Hirosaki University Graduate 
+      School of Health Sciences, Hirosaki, Japan.
+FAU - Kaneko, Sunao
+AU  - Kaneko S
+AD  - North Tohoku Epilepsy Center, Minato Hospital, Aomori, Japan.
+AD  - Department of Neuropsychiatry, Hirosaki University Graduate School of Medicine, 
+      Hirosaki, Japan.
+FAU - Kan, Rumiko
+AU  - Kan R
+AD  - Department of Neuropsychiatry, Fukushima Medical University School of Medicine, 
+      Fukushima, Japan.
+FAU - Niwa, Shin-Ichi
+AU  - Niwa SI
+AD  - Department of Psychiatry, Aizu Medical Center, Fukushima Medical University, 
+      Fukushima, Japan.
+FAU - Hashimoto, Ohiko
+AU  - Hashimoto O
+AD  - Hashimoto Clinic, Tokyo, Japan.
+FAU - Komure, Osamu
+AU  - Komure O
+AD  - Department of Neurology, Amagasaki Daimotsu Hospital, Amagasaki, Japan.
+FAU - Goto, Yu-Ichi
+AU  - Goto YI
+AUID- ORCID: 0000-0002-2426-9739
+AD  - Department of Mental Retardation and Birth Defect Research, National Institute of 
+      Neuroscience, National Center of Neurology and Psychiatry, Tokyo, Japan.
+AD  - Medical Genome Center, National Center of Neurology and Psychiatry, Tokyo, Japan.
+FAU - Yamagishi, Yuko
+AU  - Yamagishi Y
+AD  - Department of Neurology, Kindai University Faculty of Medicine, Osaka, Japan.
+FAU - Nakano, Misa
+AU  - Nakano M
+AD  - Department of Neurology, Suita Municipal Hospital, Osaka, Japan.
+FAU - Furusawa, Yoshihiko
+AU  - Furusawa Y
+AD  - Department of Neurology, National Center Hospital, National Center of Neurology 
+      and Psychiatry, Tokyo, Japan.
+FAU - Sano, Akira
+AU  - Sano A
+AD  - Department of Psychiatry, Kagoshima University Graduate School of Medical and 
+      Dental Sciences, Kagoshima, Japan.
+LA  - eng
+PT  - Journal Article
+DEP - 20201010
+PL  - England
+TA  - J Hum Genet
+JT  - Journal of human genetics
+JID - 9808008
+RN  - 0 (Autoantigens)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (RNA-Binding Proteins)
+RN  - 0 (SAMD12 protein, human)
+RN  - 0 (TNRC6A protein, human)
+SB  - IM
+EIN - J Hum Genet. 2020 Nov 13;:. PMID: 33184460
+MH  - Adult
+MH  - Age of Onset
+MH  - Autoantigens/*genetics
+MH  - Case-Control Studies
+MH  - Child
+MH  - Epilepsies, Myoclonic/genetics/*pathology
+MH  - Female
+MH  - Humans
+MH  - Male
+MH  - *Microsatellite Repeats
+MH  - Middle Aged
+MH  - Nerve Tissue Proteins/*genetics
+MH  - RNA-Binding Proteins/*genetics
+EDAT- 2020/10/12 06:00
+MHDA- 2021/08/03 06:00
+CRDT- 2020/10/11 20:35
+PHST- 2020/06/04 00:00 [received]
+PHST- 2020/09/28 00:00 [accepted]
+PHST- 2020/09/25 00:00 [revised]
+PHST- 2020/10/12 06:00 [pubmed]
+PHST- 2021/08/03 06:00 [medline]
+PHST- 2020/10/11 20:35 [entrez]
+AID - 10.1038/s10038-020-00855-0 [pii]
+AID - 10.1038/s10038-020-00855-0 [doi]
+PST - ppublish
+SO  - J Hum Genet. 2021 Apr;66(4):419-429. doi: 10.1038/s10038-020-00855-0. Epub 2020 
+      Oct 10.
+
+PMID- 31664034
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20200225
+LR  - 20231014
+IS  - 2041-1723 (Electronic)
+IS  - 2041-1723 (Linking)
+VI  - 10
+IP  - 1
+DP  - 2019 Oct 29
+TI  - Intronic ATTTC repeat expansions in STARD7 in familial adult myoclonic epilepsy 
+      linked to chromosome 2.
+PG  - 4920
+LID - 10.1038/s41467-019-12671-y [doi]
+LID - 4920
+AB  - Familial Adult Myoclonic Epilepsy (FAME) is characterised by cortical myoclonic 
+      tremor usually from the second decade of life and overt myoclonic or generalised 
+      tonic-clonic seizures. Four independent loci have been implicated in FAME on 
+      chromosomes (chr) 2, 3, 5 and 8. Using whole genome sequencing and repeat primed 
+      PCR, we provide evidence that chr2-linked FAME (FAME2) is caused by an expansion 
+      of an ATTTC pentamer within the first intron of STARD7. The ATTTC expansions 
+      segregate in 158/158 individuals typically affected by FAME from 22 pedigrees 
+      including 16 previously reported families recruited worldwide. RNA sequencing 
+      from patient derived fibroblasts shows no accumulation of the AUUUU or AUUUC 
+      repeat sequences and STARD7 gene expression is not affected. These data, in 
+      combination with other genes bearing similar mutations that have been implicated 
+      in FAME, suggest ATTTC expansions may cause this disorder, irrespective of the 
+      genomic locus involved.
+FAU - Corbett, Mark A
+AU  - Corbett MA
+AUID- ORCID: 0000-0001-9298-3072
+AD  - Adelaide Medical School and Robinson Research Institute, University of Adelaide, 
+      Adelaide, 5005, SA, Australia.
+FAU - Kroes, Thessa
+AU  - Kroes T
+AD  - Adelaide Medical School and Robinson Research Institute, University of Adelaide, 
+      Adelaide, 5005, SA, Australia.
+FAU - Veneziano, Liana
+AU  - Veneziano L
+AUID- ORCID: 0000-0002-9921-8450
+AD  - Institute of Translational Pharmacology, National Research Council, Rome, Italy.
+FAU - Bennett, Mark F
+AU  - Bennett MF
+AUID- ORCID: 0000-0002-3561-6804
+AD  - Population Health and Immunity Division, the Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, 3052, VIC, Australia.
+AD  - Department of Medical Biology, the University of Melbourne, Melbourne, 3010, VIC, 
+      Australia.
+AD  - Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin 
+      Health, Heidelberg, 3084, VIC, Australia.
+FAU - Florian, Rahel
+AU  - Florian R
+AD  - Institut fur Humangenetik, Universitatsklinikum Essen, Universitat 
+      Duisburg-Essen, Essen, Germany.
+FAU - Schneider, Amy L
+AU  - Schneider AL
+AUID- ORCID: 0000-0001-5260-7187
+AD  - Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin 
+      Health, Heidelberg, 3084, VIC, Australia.
+FAU - Coppola, Antonietta
+AU  - Coppola A
+AD  - Department of Neuroscience, Reproductive and Odontostomatological Sciences, 
+      Federico II University, Napoli, Italy.
+FAU - Licchetta, Laura
+AU  - Licchetta L
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      Italy.
+FAU - Franceschetti, Silvana
+AU  - Franceschetti S
+AD  - Neurophysiopathology, Fondazione IRCCS Istituto Neurologico Carlo Besta, Milan, 
+      Italy.
+AD  - Member of the European Reference Network on Rare and Complex epilepsies, ERN 
+      EpiCARE, London, UK.
+FAU - Suppa, Antonio
+AU  - Suppa A
+AUID- ORCID: 0000-0001-9903-5550
+AD  - Department of Human Neurosciences, Sapienza University of Rome, Viale 
+      dell'Universita, 30, 00185, Rome, Italy.
+AD  - IRCCS Neuromed, Pozzilli, IS, Italy.
+FAU - Wenger, Aaron
+AU  - Wenger A
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Mei, Davide
+AU  - Mei D
+AUID- ORCID: 0000-0001-6790-6251
+AD  - Neuroscience and Neurogenetics Department, Meyer Children's Hospital, Florence, 
+      Italy.
+FAU - Pendziwiat, Manuela
+AU  - Pendziwiat M
+AD  - Department of Neuropediatrics, University Medical Center Schleswig-Holstein, 
+      Christian-Albrechts University, Kiel, Germany.
+FAU - Kaya, Sabine
+AU  - Kaya S
+AD  - Institut fur Humangenetik, Universitatsklinikum Essen, Universitat 
+      Duisburg-Essen, Essen, Germany.
+FAU - Delledonne, Massimo
+AU  - Delledonne M
+AUID- ORCID: 0000-0002-7100-4581
+AD  - Department of Biotechnology, University of Verona, Strada le Grazie 15, 37134, 
+      Verona, Italy.
+FAU - Straussberg, Rachel
+AU  - Straussberg R
+AD  - Institute of Pediatric Neurology, Schneider Children's Medical Center of Israel, 
+      Petah Tikva, Israel.
+AD  - Tel Aviv University Medical School, 69978, Tel Aviv, Israel.
+FAU - Xumerle, Luciano
+AU  - Xumerle L
+AUID- ORCID: 0000-0003-4518-3958
+AD  - Personal Genomics, Strada le Grazie 15, 37134, Verona, Italy.
+FAU - Regan, Brigid
+AU  - Regan B
+AD  - Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin 
+      Health, Heidelberg, 3084, VIC, Australia.
+FAU - Crompton, Douglas
+AU  - Crompton D
+AD  - Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin 
+      Health, Heidelberg, 3084, VIC, Australia.
+AD  - Department of Neurology, Northern Health, Melbourne, VIC, Australia.
+FAU - van Rootselaar, Anne-Fleur
+AU  - van Rootselaar AF
+AUID- ORCID: 0000-0002-8376-9098
+AD  - Amsterdam UMC, University of Amsterdam, Department of Neurology and Clinical 
+      Neurophysiology, Amsterdam Neuroscience, Amsterdam, The Netherlands.
+FAU - Correll, Anthony
+AU  - Correll A
+AD  - Genetics and Molecular Pathology, SA Pathology, Adelaide, SA, Australia.
+FAU - Catford, Rachael
+AU  - Catford R
+AD  - Genetics and Molecular Pathology, SA Pathology, Adelaide, SA, Australia.
+FAU - Bisulli, Francesca
+AU  - Bisulli F
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      Italy.
+FAU - Chakraborty, Shreyasee
+AU  - Chakraborty S
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Baldassari, Sara
+AU  - Baldassari S
+AUID- ORCID: 0000-0003-4851-2796
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.
+FAU - Tinuper, Paolo
+AU  - Tinuper P
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      Italy.
+FAU - Barton, Kirston
+AU  - Barton K
+AD  - Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, 
+      Darlinghurst, NSW, 2010, Australia.
+FAU - Carswell, Shaun
+AU  - Carswell S
+AD  - Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, 
+      Darlinghurst, NSW, 2010, Australia.
+FAU - Smith, Martin
+AU  - Smith M
+AD  - Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, 
+      Darlinghurst, NSW, 2010, Australia.
+AD  - St-Vincent's Clinical School, Faulty of Medicine, UNSW Sydney, Darlinghurst, NSW, 
+      2010, Australia.
+FAU - Berardelli, Alfredo
+AU  - Berardelli A
+AD  - Department of Human Neurosciences, Sapienza University of Rome, Viale 
+      dell'Universita, 30, 00185, Rome, Italy.
+AD  - IRCCS Neuromed, Pozzilli, IS, Italy.
+FAU - Carroll, Renee
+AU  - Carroll R
+AD  - Adelaide Medical School and Robinson Research Institute, University of Adelaide, 
+      Adelaide, 5005, SA, Australia.
+FAU - Gardner, Alison
+AU  - Gardner A
+AD  - Adelaide Medical School and Robinson Research Institute, University of Adelaide, 
+      Adelaide, 5005, SA, Australia.
+FAU - Friend, Kathryn L
+AU  - Friend KL
+AD  - Genetics and Molecular Pathology, SA Pathology, Adelaide, SA, Australia.
+FAU - Blatt, Ilan
+AU  - Blatt I
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Israel.
+FAU - Iacomino, Michele
+AU  - Iacomino M
+AD  - Laboratory of Neurogenetics, IRCCS Istituto "G. Gaslini", Genova, Italy.
+FAU - Di Bonaventura, Carlo
+AU  - Di Bonaventura C
+AD  - Department of Human Neurosciences, Sapienza University of Rome, Viale 
+      dell'Universita, 30, 00185, Rome, Italy.
+FAU - Striano, Salvatore
+AU  - Striano S
+AD  - Department of Neurology, Federico II University, Napoli, Italy.
+FAU - Buratti, Julien
+AU  - Buratti J
+AUID- ORCID: 0000-0002-0901-0905
+AD  - AP-HP, Hopital Pitie-Salpetriere, Departement de Genetique, F-75013, Paris, 
+      France.
+FAU - Keren, Boris
+AU  - Keren B
+AD  - AP-HP, Hopital Pitie-Salpetriere, Departement de Genetique, F-75013, Paris, 
+      France.
+FAU - Nava, Caroline
+AU  - Nava C
+AD  - INSERM, U 1127, CNRS UMR 7225, Sorbonne Universites, UPMC Univ Paris 06 UMR S 
+      1127, Institut du Cerveau et de la Moelle epiniere, ICM, F-75013, Paris, France.
+FAU - Forlani, Sylvie
+AU  - Forlani S
+AD  - INSERM, U 1127, CNRS UMR 7225, Sorbonne Universites, UPMC Univ Paris 06 UMR S 
+      1127, Institut du Cerveau et de la Moelle epiniere, ICM, F-75013, Paris, France.
+FAU - Rudolf, Gabrielle
+AU  - Rudolf G
+AUID- ORCID: 0000-0002-2050-3911
+AD  - Institut de Genetique et de Biologie Moleculaire et Cellulaire, Illkirch, France.
+AD  - Institut National de la Sante et de la Recherche Medicale, U1258, Illkirch, 
+      France.
+AD  - Universite de Strasbourg, Illkirch, France.
+AD  - Department of Neurology, Strasbourg University Hospital, Strasbourg, France.
+AD  - Centre National de la Recherche Scientifique, U7104, Illkirch, France.
+FAU - Hirsch, Edouard
+AU  - Hirsch E
+AD  - Department of Neurology, Strasbourg University Hospital, Strasbourg, France.
+FAU - Leguern, Eric
+AU  - Leguern E
+AD  - AP-HP, Hopital Pitie-Salpetriere, Departement de Genetique, F-75013, Paris, 
+      France.
+AD  - INSERM, U 1127, CNRS UMR 7225, Sorbonne Universites, UPMC Univ Paris 06 UMR S 
+      1127, Institut du Cerveau et de la Moelle epiniere, ICM, F-75013, Paris, France.
+FAU - Labauge, Pierre
+AU  - Labauge P
+AD  - MS Unit, Montpellier University Hospital, Montpellier, France.
+FAU - Balestrini, Simona
+AU  - Balestrini S
+AUID- ORCID: 0000-0001-5639-1969
+AD  - Department of Clinical and Experimental Epilepsy, UCL Queen Square Institute of 
+      Neurology, London, WC1N 3BG, UK.
+AD  - Chalfont Centre for Epilepsy, Chalfont St Peter, SL9 0RJ, UK.
+FAU - Sander, Josemir W
+AU  - Sander JW
+AD  - Department of Clinical and Experimental Epilepsy, UCL Queen Square Institute of 
+      Neurology, London, WC1N 3BG, UK.
+AD  - Chalfont Centre for Epilepsy, Chalfont St Peter, SL9 0RJ, UK.
+FAU - Afawi, Zaid
+AU  - Afawi Z
+AD  - Tel Aviv University Medical School, 69978, Tel Aviv, Israel.
+FAU - Helbig, Ingo
+AU  - Helbig I
+AD  - Department of Neuropediatrics, University Medical Center Schleswig-Holstein, 
+      Christian-Albrechts University, Kiel, Germany.
+AD  - Division of Neurology Children's Hospital of Philadelphia, Philadelphia, PA, USA.
+FAU - Ishiura, Hiroyuki
+AU  - Ishiura H
+AUID- ORCID: 0000-0003-2975-7309
+AD  - Department of Neurology, the University of Tokyo Hospital, Tokyo, Japan.
+FAU - Tsuji, Shoji
+AU  - Tsuji S
+AUID- ORCID: 0000-0001-5602-5686
+AD  - Department of Neurology, the University of Tokyo Hospital, Tokyo, Japan.
+AD  - Medical Genome Center, the University of Tokyo Hospital, Tokyo, Japan.
+AD  - International University of Health and Welfare, Chiba, Japan.
+FAU - Sisodiya, Sanjay M
+AU  - Sisodiya SM
+AD  - Department of Clinical and Experimental Epilepsy, UCL Queen Square Institute of 
+      Neurology, London, WC1N 3BG, UK.
+AD  - Chalfont Centre for Epilepsy, Chalfont St Peter, SL9 0RJ, UK.
+FAU - Casari, Giorgio
+AU  - Casari G
+AUID- ORCID: 0000-0002-0115-8980
+AD  - TIGEM - Telethon Institute of Genetics and Medicine, Naples, and San Raffaele 
+      University, Milan, Italy.
+FAU - Sadleir, Lynette G
+AU  - Sadleir LG
+AD  - Department of Paediatrics and Child Health, University of Otago, Wellington, 
+      Wellington, New Zealand.
+FAU - van Coller, Riaan
+AU  - van Coller R
+AUID- ORCID: 0000-0001-6250-363X
+AD  - University of Pretoria, Pretoria, South Africa.
+FAU - Tijssen, Marina A J
+AU  - Tijssen MAJ
+AUID- ORCID: 0000-0001-5783-571X
+AD  - Department of Neurology, University of Groningen, Groningen, The Netherlands.
+FAU - Klein, Karl Martin
+AU  - Klein KM
+AUID- ORCID: 0000-0002-6654-1665
+AD  - Department of Neurology, Epilepsy Center Frankfurt Rhine-Main, Goethe University, 
+      Frankfurt am Main, Frankfurt, Germany.
+AD  - Department of Neurology, Epilepsy Center Hessen, Philipps University, Marburg, 
+      Marburg, Germany.
+AD  - Departments of Clinical Neurosciences, Medical Genetics and Community Health 
+      Sciences, Hotchkiss Brain Institute & Alberta Children's Hospital Research 
+      Institute, Cumming School of Medicine, University of Calgary, Calgary, AB, 
+      Canada.
+FAU - van den Maagdenberg, Arn M J M
+AU  - van den Maagdenberg AMJM
+AD  - Departments of Human Genetics & Neurology, Leiden University Medical Centre, 
+      Leiden, The Netherlands.
+FAU - Zara, Federico
+AU  - Zara F
+AD  - Laboratory of Neurogenetics, IRCCS Istituto "G. Gaslini", Genova, Italy.
+FAU - Guerrini, Renzo
+AU  - Guerrini R
+AUID- ORCID: 0000-0002-7272-7079
+AD  - Neuroscience and Neurogenetics Department, Meyer Children's Hospital, Florence, 
+      Italy.
+FAU - Berkovic, Samuel F
+AU  - Berkovic SF
+AUID- ORCID: 0000-0003-4580-841X
+AD  - Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin 
+      Health, Heidelberg, 3084, VIC, Australia.
+FAU - Pippucci, Tommaso
+AU  - Pippucci T
+AD  - Medical Genetics Unit, Sant'Orsola-Malpighi University Hospital, Bologna, Italy.
+FAU - Canafoglia, Laura
+AU  - Canafoglia L
+AUID- ORCID: 0000-0002-5385-761X
+AD  - Neurophysiopathology, Fondazione IRCCS Istituto Neurologico Carlo Besta, Milan, 
+      Italy.
+AD  - Member of the European Reference Network on Rare and Complex epilepsies, ERN 
+      EpiCARE, London, UK.
+FAU - Bahlo, Melanie
+AU  - Bahlo M
+AUID- ORCID: 0000-0001-5132-0774
+AD  - Population Health and Immunity Division, the Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, 3052, VIC, Australia.
+AD  - Department of Medical Biology, the University of Melbourne, Melbourne, 3010, VIC, 
+      Australia.
+FAU - Striano, Pasquale
+AU  - Striano P
+AUID- ORCID: 0000-0002-6065-1476
+AD  - Pediatric Neurology and Muscular Diseases Unit, IRCCS Istituto "G. Gaslini", 
+      Genova, Italy.
+AD  - Department of Neurosciences, Rehabilitation, Ophthalmology, Genetics, Maternal 
+      and Child Health, University of Genoa, Genova, Italy.
+FAU - Scheffer, Ingrid E
+AU  - Scheffer IE
+AUID- ORCID: 0000-0002-2311-2174
+AD  - Epilepsy Research Centre, Department of Medicine, University of Melbourne, Austin 
+      Health, Heidelberg, 3084, VIC, Australia.
+AD  - Royal Children's Hospital, Murdoch Children's Research Institute and Florey 
+      Institute, Melbourne, VIC, Australia.
+FAU - Brancati, Francesco
+AU  - Brancati F
+AUID- ORCID: 0000-0003-3624-2354
+AD  - Institute of Translational Pharmacology, National Research Council, Rome, Italy.
+AD  - Medical Genetics, Department of Life, Health and Environmental Sciences, 
+      University of L'Aquila, L'Aquila, Italy.
+AD  - Laboratory of Molecular and Cell Biology, Istituto Dermopatico dell'Immacolata, 
+      IDI-IRCCS, Rome, Italy.
+FAU - Depienne, Christel
+AU  - Depienne C
+AUID- ORCID: 0000-0002-7212-9554
+AD  - Institut fur Humangenetik, Universitatsklinikum Essen, Universitat 
+      Duisburg-Essen, Essen, Germany.
+AD  - Institut de Genetique et de Biologie Moleculaire et Cellulaire, Illkirch, France.
+AD  - Centre National de la Recherche Scientifique, U7104, Illkirch, France.
+FAU - Gecz, Jozef
+AU  - Gecz J
+AUID- ORCID: 0000-0002-7884-6861
+AD  - Adelaide Medical School and Robinson Research Institute, University of Adelaide, 
+      Adelaide, 5005, SA, Australia. jozef.gecz@adelaide.edu.au.
+AD  - South Australian Health and Medical Research Institute, Adelaide, 5000, SA, 
+      Australia. jozef.gecz@adelaide.edu.au.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20191029
+PL  - England
+TA  - Nat Commun
+JT  - Nature communications
+JID - 101528555
+RN  - 0 (Carrier Proteins)
+RN  - 0 (STARD7 protein, human)
+RN  - Epilepsy, Myoclonic, Benign Adult Familial, Type 2
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Carrier Proteins/*genetics
+MH  - Child
+MH  - Child, Preschool
+MH  - Chromosome Mapping
+MH  - Chromosomes, Human, Pair 2/*genetics
+MH  - *DNA Repeat Expansion
+MH  - Epilepsies, Myoclonic/*genetics
+MH  - Female
+MH  - Humans
+MH  - *Introns
+MH  - Male
+MH  - Middle Aged
+MH  - Pedigree
+MH  - Young Adult
+PMC - PMC6820779
+COIS- A.W. and S. Chakraborty. are employees and shareholders of Pacific Biosciences. 
+      There are no other competing interests to declare.
+EDAT- 2019/10/31 06:00
+MHDA- 2020/02/26 06:00
+CRDT- 2019/10/31 06:00
+PHST- 2019/03/19 00:00 [received]
+PHST- 2019/09/23 00:00 [accepted]
+PHST- 2019/10/31 06:00 [entrez]
+PHST- 2019/10/31 06:00 [pubmed]
+PHST- 2020/02/26 06:00 [medline]
+AID - 10.1038/s41467-019-12671-y [pii]
+AID - 12671 [pii]
+AID - 10.1038/s41467-019-12671-y [doi]
+PST - epublish
+SO  - Nat Commun. 2019 Oct 29;10(1):4920. doi: 10.1038/s41467-019-12671-y.
