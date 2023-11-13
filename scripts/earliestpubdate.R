@@ -52,9 +52,6 @@ consolidated_strings <- gene_info %>%
   summarize(consolidated_strings = paste(unique(c(hgnc_symbol, external_synonym)), collapse = ' OR ')) %>%
   pull(consolidated_strings)
 
-
-
-
 base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/'
 
 perform_pubmed_query <- function(gene_info) {
@@ -111,13 +108,6 @@ perform_pubmed_query <- function(gene_info) {
 
 file_paths <- perform_pubmed_query(gene_info)
 
-
-publications_df <- data.frame(
-  gene_name = names(all_publications),
-  publications = I(all_publications),
-  stringsAsFactors = FALSE
-)
-
 all_publications <- list()
 
 # Assuming file_paths is a list of file paths
@@ -138,57 +128,58 @@ for (gene_name in names(file_paths)) {
   })
 }
 
+extract_pub_info <- function(xml_data_list, gene_name) {
+  # Combine the list of XML strings into a single string
+  xml_string <- paste(xml_data_list, collapse = "")
 
-gene_names <- names(all_publications)
-publications_df <- data.frame(GeneName = character(), TypeCount = numeric())  # Initialize dataframe for storing results
+  # Use regular expressions to extract PMID and publication years
+  pmids <- custom_grep(xml_string, "PMID", "char")
+  pmids <- str_extract(pmids, "\\d+")
 
-for (gene_name in all_publications) {
-  current_publications <- all_publications[[gene_name]]
-
-  # Extract type counts from character strings and create a new dataframe
-  type_counts <- sapply(str_extract_all(current_publications, "\\[\\d+\\]"), function(x) as.numeric(str_extract(x, "\\d+")))
-
-  # Find the maximum length to ensure consistent lengths
-  max_length <- max(lengths(type_counts))
-
-  # Pad type_counts to match the maximum length
-  type_counts <- lapply(type_counts, function(x) c(x, rep(NA, max_length - length(x))))
-
-  # Combine the results into a matrix
-  type_counts_matrix <- do.call(rbind, type_counts)
-
-  # Create a dataframe from the matrix and add GeneName column
-  type_counts_df <- data.frame(GeneName = gene_name, TypeCount = colSums(type_counts_matrix, na.rm = TRUE))
-
-  # Append to the overall dataframe
-  publications_df <- rbind(publications_df, type_counts_df)
-}
-
-# Now, publications_df contains the desired information
-
-for (i in 1:length(pubmed_results)) {
-  gene <- unique(gene_info$hgnc_symbol)[i]
-
-  # Extract publication years for each gene using custom_grep
-  publication_years <- custom_grep(pubmed_results[[i]], "PubDate", "char")
+  publication_years <- custom_grep(xml_string, "PubDate", "char")
   publication_years <- str_extract(publication_years, "(?<=<Year>)\\d{4}(?=</Year>)")
 
-  # Convert years to numeric format
-  publication_years <- as.numeric(publication_years)
+  # Ensure both vectors have the same length
+  length_diff <- length(pmids) - length(publication_years)
+  if (length_diff > 0) {
+    publication_years <- c(publication_years, rep(NA, length_diff))
+  } else if (length_diff < 0) {
+    pmids <- c(pmids, rep(NA, -length_diff))
+  }
 
-  # Find the minimum publication year
-  min_year <- min(publication_years, na.rm = TRUE)
+  # Create a dataframe with gene_name, PMID, and PublicationYear
+  pub_info_df <- data.frame(GeneName = rep(gene_name, length(pmids)),
+                            PMID = pmids,
+                            PublicationYear = publication_years,
+                            stringsAsFactors = FALSE)
 
-  # Extract titles
-  titles <- custom_grep(pubmed_results[[i]], "ArticleTitle", "char")
-  print(titles)
-  # Count the number of titles
-  titles_count <- length(titles)
-
-  # Combine titles into a single string
-  titles_string <- paste(titles, collapse = ", ")
-
-  # Add values to the data frame
-  row_index <- nrow(earliest_pub_dates_df) + 1
-  earliest_pub_dates_df[row_index, ] <- list(gene, min_year, titles_count, I(titles_string))
+  return(pub_info_df)
 }
+
+
+# Initialize an empty list to store the results
+pub_info_list <- list()
+
+# Loop through each gene_name in all_publications
+for (gene_name in names(all_publications)) {
+  # Get the list of XML data for the current gene_name
+  xml_data_list <- all_publications[[gene_name]]
+  print(gene_name)
+  # Extract publication information using the function
+  pub_info_df <- extract_pub_info(xml_data_list, gene_name)
+
+  # Append the results to the list
+  pub_info_list[[gene_name]] <- pub_info_df
+}
+
+# Combine all the dataframes into a single dataframe
+all_pub_info_df <- do.call(rbind, pub_info_list)
+
+# Get the current date
+current_date <- format(Sys.Date(), "%Y%m%d")
+
+# Concatenate the date to the file name
+file_name <- paste0("/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_", current_date, ".tsv")
+
+# Write the table with the updated file name
+write.table(all_pub_info_df, file_name, sep = "\t", quote = FALSE, row.names = FALSE)
