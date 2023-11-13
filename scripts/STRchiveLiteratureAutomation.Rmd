@@ -194,26 +194,37 @@ for (i in 1:length(pubmed_results)) {
 
 ```
 
-### Making a plot based on the earliest dates
+### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-earliest_pub_dates_df <- read.table("/Users/quinlan/Documents/Git/STRchive/scripts/earliest_pub_dates_only.tsv", header = TRUE, sep = "\t")
+file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20231113.tsv"
 
+# Read the table into R
+all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
-# Assuming 'pubs_and_dates' is your dataframe
-
+library(dplyr)
 library(ggplot2)
-install.packages("ggrepel")
 library(ggrepel)
 
-ggplot(pubs_and_dates, aes(x = Earliest_Pub_Date, y = NumPub, label = Gene)) +
-  geom_point(size = 3) +
-  geom_text_repel(size = 3, nudge_x = 0.1, nudge_y = 0.2, angle = 90) +  # Adjust position of labels and rotate by 90 degrees
-  labs(x = "Earliest Publication Date", y = "Number of Publications") +
-  ggtitle("Earliest Publication Date vs Number of Publications") +
+# Assuming your data frame is named all_pub_info_df
+# Convert PublicationYear to numeric
+all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
+
+# Summarize data to get the minimum PublicationYear for each GeneName
+summary_data <- all_pub_info_df %>%
+  group_by(GeneName) %>%
+  summarize(MinPublicationYear = min(PublicationYear, na.rm = TRUE), MaxPublicationYear = max(PublicationYear, na.rm = TRUE),
+            TotalPMIDs = n_distinct(PMID))  # Use n_distinct to count unique PMIDs
+
+# Create a scatter plot
+ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_point() +
+  geom_text_repel(box.padding = 0.5, segment.color = "grey50", segment.size = 0.2) +  # Adjust ggrepel parameters
+  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
+       x = "Minimum Publication Year",
+       y = "Total Number of Unique PMIDs") +
   theme_minimal() +
-  theme(plot.title = element_text(size = 14),
-        axis.text = element_text(size = 10))
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8))
 
 
 ```
