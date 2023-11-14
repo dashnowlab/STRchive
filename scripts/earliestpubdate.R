@@ -45,6 +45,13 @@ if (exists("mart")) {
 # Replace missing values in 'external_synonym' with 'hgnc_symbol'
 gene_info$external_synonym[is.na(gene_info$external_synonym) | gene_info$external_synonym == ""] <- gene_info$hgnc_symbol[is.na(gene_info$external_synonym) | gene_info$external_synonym == ""]
 
+excluded_synonym_list <- c("B37", "MHP", "MED", "DM", "DM1", "FA", "GAC", "SPD",
+                           "PRP", "A1", "CCD", "PHP", "VCF")
+
+gene_info <- gene_info %>%
+  filter(!grepl(paste(excluded_synonym_list, collapse = '|'), external_synonym))
+
+
 gene_names <- unique(gene_info$hgnc_symbol)
 publications <- list()
 consolidated_strings <- gene_info %>%
@@ -163,10 +170,10 @@ pub_info_list <- list()
 # Loop through each gene_name in all_publications
 for (gene_name in names(all_publications)) {
   # Get the list of XML data for the current gene_name
-  xml_data_list <- all_publications[[gene_name]]
+  medline_data_list <- all_publications[[gene_name]]
   print(gene_name)
   # Extract publication information using the function
-  pub_info_df <- extract_pub_info(xml_data_list, gene_name)
+  pub_info_df <- extract_pub_info(medline_data_list, gene_name)
 
   # Append the results to the list
   pub_info_list[[gene_name]] <- pub_info_df
