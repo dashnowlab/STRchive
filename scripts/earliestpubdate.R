@@ -52,6 +52,9 @@ gene_info <- gene_info %>%
   filter(!grepl(paste(excluded_synonym_list, collapse = '|'), external_synonym))
 
 
+gene_info <- gene_info %>%
+  mutate(across(c(external_synonym, hgnc_symbol), ~sprintf('"%s"', .)))
+
 gene_names <- unique(gene_info$hgnc_symbol)
 publications <- list()
 consolidated_strings <- gene_info %>%
@@ -62,17 +65,10 @@ consolidated_strings <- gene_info %>%
 base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/'
 
 perform_pubmed_query <- function(gene_info) {
-  gene_names <- unique(gene_info$hgnc_symbol)
   file_paths <- list()  # Initialize the list to store all publications
-  consolidated_strings <- gene_info %>%
-    group_by(hgnc_symbol) %>%
-    summarize(consolidated_strings = paste(unique(c(hgnc_symbol, external_synonym)), collapse = ' OR ')) %>%
-    pull(consolidated_strings)
-
   for (i in seq_along(gene_names)) {
     gene_name <- gene_names[i]
     cat("Processing gene:", gene_name, "\n")
-
     # Use str_detect to check if gene_name is present in each consolidated string
     idx <- str_detect(consolidated_strings, regex(gene_name, ignore_case = TRUE))
 
@@ -83,10 +79,9 @@ perform_pubmed_query <- function(gene_info) {
     query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) AND (', or_terms, ')[Title/Abstract] AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
 
     # Clean up any unnecessary slashes from the query
-    query <- gsub("\"", "", query, fixed = TRUE)
     query <- gsub("  ", " ", query)  # Remove double spaces
     print(query)
-
+    gene_name <- gsub('"', '', gene_name)
     out_file <- paste0(base_directory, gene_name)
 
     # Include a separator ("/") between base_directory and gene_name

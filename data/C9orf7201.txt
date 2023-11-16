@@ -220,7 +220,7 @@ SO  - Antioxidants (Basel). 2023 Oct 23;12(10):1896. doi: 10.3390/antiox12101896
 PMID- 37847372
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20231111
+LR  - 20231115
 IS  - 2193-8253 (Print)
 IS  - 2193-6536 (Linking)
 VI  - 12
@@ -1586,23 +1586,27 @@ SO  - Elife. 2023 Sep 7;12:e83189. doi: 10.7554/eLife.83189.
 
 PMID- 37648532
 OWN - NLM
-STAT- Publisher
-LR  - 20230830
+STAT- MEDLINE
+DCOM- 20231115
+LR  - 20231115
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Linking)
-DP  - 2023 Aug 30
+VI  - 101
+IP  - 20
+DP  - 2023 Nov 14
 TI  - Pearls & Oy-sters: Familial Verbal Auditory Agnosia Due to C9orf72 Repeat 
       Expansion.
-LID - 10.1212/WNL.0000000000207832 [pii]
-AB  - Chromosome 9 open reading frame 72 (C9orf72) gene mutations have been typically 
-      associated with frontotemporal dementia (FTD) and amyotrophic lateral sclerosis 
-      (ALS), but recent studies suggest their involvement in other disorders. This 
-      report describes a family with an autosomal dominant pattern of inheritance of 
-      progressive verbal auditory agnosia due to GGGGCC repeat expansion in C9orf72. A 
-      60-year-old right-handed male truck driver presented with slowly progressive poor 
-      speech perception for 8 years, which became most troublesome when receiving 
+PG  - e2046-e2050
+LID - 10.1212/WNL.0000000000207832 [doi]
+AB  - Chromosome 9 open reading frame 72 (C9orf72) gene pathogenic variants have been 
+      typically associated with frontotemporal dementia (FTD) and amyotrophic lateral 
+      sclerosis (ALS), but recent studies suggest their involvement in other disorders. 
+      This report describes a family with an autosomal dominant pattern of inheritance 
+      of progressive verbal auditory agnosia due to GGGGCC repeat expansion in C9orf72. 
+      A 60-year-old right-handed male truck driver presented with slowly progressive 
+      poor speech perception for 8 years, which became most troublesome when receiving 
       verbal orders over the phone. He had difficulty recognizing single-syllable 
-      spoken words beyond his hearing loss, but had no problem understanding complex 
+      spoken words beyond his hearing loss but had no problem understanding complex 
       written language. He had a heterozygous pathogenic variant carrying 160 
       hexanucleotide repeats in the C9orf72 gene. His family history included his 
       deceased mother with similar symptoms that had progressed over 30 years, as well 
@@ -1615,44 +1619,113 @@ AB  - Chromosome 9 open reading frame 72 (C9orf72) gene mutations have been typi
       patients with C9orf72 pathogenic repeat expansion may be attributable to the slow 
       progression of their clinical course over time. The variable symptom presentation 
       of C9orf72 pathogenic repeat expansion highlights the importance of considering 
-      this mutation as a potential cause of autosomal dominant degenerative brain 
-      diseases beyond FTD and ALS.
+      this pathogenic variant as a potential cause of autosomal dominant degenerative 
+      brain diseases beyond FTD and ALS.
 CI  - (c) 2023 American Academy of Neurology.
 FAU - Kim, Yoon Seob
 AU  - Kim YS
 AUID- ORCID: 0000-0002-6363-1999
-AD  - Department of Neurology, Ajou University School of Medicine.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Kim, Young-Eun
 AU  - Kim YE
-AD  - Department of Laboratory Medicine, Hanyang University College of Medicine.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Choung, Yun-Hoon
 AU  - Choung YH
-AD  - Department of Otolaryngology, Ajou University School of Medicine.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Kim, Hwajung
 AU  - Kim H
-AD  - Department of Neurology, Ajou University School of Medicine.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Kim, Hee Jin
 AU  - Kim HJ
 AUID- ORCID: 0000-0002-3186-9441
-AD  - Department of Neurology, Samsung Medical Center, Sungkyunkwan University School 
-      of Medicine.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Jung, Na-Yeon
 AU  - Jung NY
 AUID- ORCID: 0000-0002-8265-9508
-AD  - Department of Neurology, Pusan National University Yangsan Hospital, Research 
-      Institute for Convergence of Biomedical Science and Technology.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Lee, Sun Min
 AU  - Lee SM
 AUID- ORCID: 0000-0001-5917-015X
-AD  - Department of Neurology, Ajou University School of Medicine.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Kim, Eun-Joo
 AU  - Kim EJ
-AD  - Department of Neurology, Pusan National University Hospital, Pusan National 
-      University School of Medicine and Medical Research Institute.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea.
 FAU - Moon, So Young
 AU  - Moon SY
 AUID- ORCID: 0000-0002-1025-1968
-AD  - Department of Neurology, Ajou University School of Medicine symoon.bv@gmail.com.
+AD  - From the Departments of Neurology (Y.S.K., H.K., S.M.L., S.Y.M.) and 
+      Otolaryngology (Y.-H.C.), Ajou University School of Medicine, Suwon; Department 
+      of Laboratory Medicine (Y.-E.K.), Hanyang University College of Medicine, Seoul; 
+      Department of Neurology (H.J.K.), Samsung Medical Center, Sungkyunkwan University 
+      School of Medicine, Seoul; Department of Neurology (N.-Y.J.), Pusan National 
+      University Yangsan Hospital, Research Institute for Convergence of Biomedical 
+      Science and Technology; and Department of Neurology (E.-J.K.), Pusan National 
+      University Hospital, Pusan National University School of Medicine and Medical 
+      Research Institute, Busan, South Korea. symoon.bv@gmail.com.
 LA  - eng
 PT  - Journal Article
 DEP - 20230830
@@ -1660,20 +1733,32 @@ PL  - United States
 TA  - Neurology
 JT  - Neurology
 JID - 0401060
+RN  - 0 (C9orf72 Protein)
+RN  - 0 (Proteins)
+RN  - 0 (C9orf72 protein, human)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - *Frontotemporal Dementia/genetics
+MH  - *Amyotrophic Lateral Sclerosis/genetics/pathology
+MH  - C9orf72 Protein/genetics
+MH  - Proteins/genetics
+MH  - DNA Repeat Expansion/genetics
+MH  - *Pick Disease of the Brain/genetics
 EDAT- 2023/08/31 00:41
-MHDA- 2023/08/31 00:41
+MHDA- 2023/11/15 06:42
 CRDT- 2023/08/30 21:54
 PHST- 2023/05/15 00:00 [received]
 PHST- 2023/07/19 00:00 [accepted]
-PHST- 2023/08/31 00:41 [medline]
+PHST- 2023/11/15 06:42 [medline]
 PHST- 2023/08/31 00:41 [pubmed]
 PHST- 2023/08/30 21:54 [entrez]
 AID - WNL.0000000000207832 [pii]
 AID - 10.1212/WNL.0000000000207832 [doi]
-PST - aheadofprint
-SO  - Neurology. 2023 Aug 30:10.1212/WNL.0000000000207832. doi: 
-      10.1212/WNL.0000000000207832.
+PST - ppublish
+SO  - Neurology. 2023 Nov 14;101(20):e2046-e2050. doi: 10.1212/WNL.0000000000207832. 
+      Epub 2023 Aug 30.
 
 PMID- 37590144
 OWN - NLM
@@ -12505,7 +12590,7 @@ PMID- 35876881
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220818
-LR  - 20231107
+LR  - 20231115
 IS  - 1432-0533 (Electronic)
 IS  - 0001-6322 (Print)
 IS  - 0001-6322 (Linking)
@@ -12635,6 +12720,7 @@ AD  - Sheffield Institute for Translational Neuroscience (SITraN), Department of
 AD  - Neuroscience Institute, University of Sheffield, Western Bank, Sheffield, S10 
       2TN, UK. k.de_vos@sheffield.ac.uk.
 LA  - eng
+GR  - DEVOS/OCT13/870-792/MNDA_/Motor Neurone Disease Association/United Kingdom
 GR  - MR/M013251/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S025979/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
@@ -16543,7 +16629,7 @@ SO  - Front Cell Dev Biol. 2022 Jan 12;9:809942. doi: 10.3389/fcell.2021.809942.
 PMID- 35091648
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20231107
+LR  - 20231115
 IS  - 2056-7944 (Electronic)
 IS  - 2056-7944 (Linking)
 VI  - 7
@@ -16791,15 +16877,20 @@ AD  - King's College Hospital, Denmark Hill, London, UK. ammar.al-chalabi@kcl.ac
 LA  - eng
 GR  - MR/L501529/1/MRC_/Medical Research Council/United Kingdom
 GR  - R56 NS073873/NS/NINDS NIH HHS/United States
-GR  - MR/L021803/1/MRC_/Medical Research Council/United Kingdom
+GR  - SHAW/APR18/864-791/MNDA_/Motor Neurone Disease Association/United Kingdom
 GR  - R01 NS073873/NS/NINDS NIH HHS/United States
 GR  - MC_PC_17214/MRC_/Medical Research Council/United Kingdom
 GR  - MCLAUGHLIN/OCT15/957-799/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - G1100695/MRC_/Medical Research Council/United Kingdom
 GR  - ALCHALABI-DOBSON/APR14/829-791/MNDA_/Motor Neurone Disease Association/United 
       Kingdom
 GR  - G0500289/MRC_/Medical Research Council/United Kingdom
 GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0300329/MRC_/Medical Research Council/United Kingdom
+GR  - SHAW/NOV14/985-797/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - G0900688/MRC_/Medical Research Council/United Kingdom
+GR  - MR/L021803/1/MRC_/Medical Research Council/United Kingdom
+GR  - G0900635/MRC_/Medical Research Council/United Kingdom
 GR  - SMITH/APR16/847-791/MNDA_/Motor Neurone Disease Association/United Kingdom
 GR  - MC_PC_17115/MRC_/Medical Research Council/United Kingdom
 GR  - ALCHALABI-TALBOT/APR14/926-794/MNDA_/Motor Neurone Disease Association/United 
@@ -25182,7 +25273,7 @@ PMID- 33837088
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220418
-LR  - 20231111
+LR  - 20231115
 IS  - 2375-2548 (Electronic)
 IS  - 2375-2548 (Linking)
 VI  - 7
@@ -25383,6 +25474,7 @@ AD  - Department of Neurology, University Hospitals Leuven, Leuven, Belgium.
 LA  - eng
 GR  - MC_U105178790/MRC_/Medical Research Council/United Kingdom
 GR  - MEHTA/JUL17/948-795/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - MR/L023784/2/MRC_/Medical Research Council/United Kingdom
 GR  - MR/R001162/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
@@ -26418,7 +26510,7 @@ PMID- 33663561
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20211105
-LR  - 20231107
+LR  - 20231115
 IS  - 1750-1326 (Electronic)
 IS  - 1750-1326 (Linking)
 VI  - 16
@@ -26569,6 +26661,7 @@ AD  - Sheffield Institute for Translational Neuroscience, University of Sheffiel
       Sheffield, S10 2HQ, UK. M.R.Livesey@Sheffield.ac.uk.
 LA  - eng
 GR  - MEHTA/JUL17/948-795/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - MR/L023784/2/MRC_/Medical Research Council/United Kingdom
 GR  - MR/R001162/1/MRC_/Medical Research Council/United Kingdom
 GR  - 092742/Z/10/Z/WT_/Wellcome Trust/United Kingdom
 PT  - Journal Article
@@ -37738,7 +37831,7 @@ PMID- 31582231
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200804
-LR  - 20231107
+LR  - 20231115
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Linking)
 VI  - 84
@@ -37834,6 +37927,7 @@ CN  - CROMIS-2 collaborators
 LA  - eng
 GR  - G1002605/MRC_/Medical Research Council/United Kingdom
 GR  - G108/638/MRC_/Medical Research Council/United Kingdom
+GR  - MC_UU_00019/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/M009106/1/MRC_/Medical Research Council/United Kingdom
 GR  - G0802760/MRC_/Medical Research Council/United Kingdom
 GR  - G1001253/MRC_/Medical Research Council/United Kingdom
@@ -39067,7 +39161,7 @@ PMID- 31327044
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200915
-LR  - 20231107
+LR  - 20231115
 IS  - 1432-0533 (Electronic)
 IS  - 0001-6322 (Print)
 IS  - 0001-6322 (Linking)
@@ -39205,23 +39299,24 @@ AD  - Translational Neuropathology Research Laboratory, Department of Pathology 
       Laboratories, 422 Curie Blvd, Philadelphia, PA, 19104, USA. 
       edward.lee@uphs.upenn.edu.
 LA  - eng
+GR  - R25 GM071745/GM/NIGMS NIH HHS/United States
 GR  - P01 AG017586/NH/NIH HHS/United States
 GR  - P30 AG010133/AG/NIA NIH HHS/United States
+GR  - MR/L016397/1/MRC_/Medical Research Council/United Kingdom
 GR  - P30 AG012300/AG/NIA NIH HHS/United States
 GR  - P30 AG062422/AG/NIA NIH HHS/United States
 GR  - P01 AG019724/AG/NIA NIH HHS/United States
+GR  - P50 AG025688/AG/NIA NIH HHS/United States
 GR  - U19 AG062418/AG/NIA NIH HHS/United States
 GR  - G0400074/MRC_/Medical Research Council/United Kingdom
+GR  - UG3 NS104095/NS/NINDS NIH HHS/United States
 GR  - U54 NS100693/NS/NINDS NIH HHS/United States
-GR  - R25 GM071745/GM/NIGMS NIH HHS/United States
 GR  - P30 AG010124/AG/NIA NIH HHS/United States
 GR  - P50 AG023501/AG/NIA NIH HHS/United States
 GR  - P50 AG005146/AG/NIA NIH HHS/United States
 GR  - P01 AG017586/AG/NIA NIH HHS/United States
-GR  - P50 AG025688/AG/NIA NIH HHS/United States
 GR  - R01 NS095793/NS/NINDS NIH HHS/United States
 GR  - P50 NS038377/NS/NINDS NIH HHS/United States
-GR  - UG3 NS104095/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
@@ -83485,7 +83580,7 @@ PMID- 23587638
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20140117
-LR  - 20231107
+LR  - 20231115
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Print)
 IS  - 0197-4580 (Linking)
@@ -83563,6 +83658,8 @@ GR  - 075615/WT_/Wellcome Trust/United Kingdom
 GR  - G0701420/MRC_/Medical Research Council/United Kingdom
 GR  - 075615/Z/04/z/WT_/Wellcome Trust/United Kingdom
 GR  - MR/K003771/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_G1000733/MRC_/Medical Research Council/United Kingdom
+GR  - G0900688/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 DEP - 20130412
@@ -89952,7 +90049,7 @@ PMID- 22406228
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120511
-LR  - 20231107
+LR  - 20231115
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -90123,15 +90220,17 @@ LA  - eng
 GR  - P01 AG032953/AG/NIA NIH HHS/United States
 GR  - ZIA AG000933-04/ImNIH/Intramural NIH HHS/United States
 GR  - 089701/WT_/Wellcome Trust/United Kingdom
-GR  - MC_U123192748/MRC_/Medical Research Council/United Kingdom
 GR  - P01 AG017586/AG/NIA NIH HHS/United States
 GR  - G0701441/MRC_/Medical Research Council/United Kingdom
 GR  - G0700943/MRC_/Medical Research Council/United Kingdom
 GR  - 089698/WT_/Wellcome Trust/United Kingdom
+GR  - G0701923/MRC_/Medical Research Council/United Kingdom
 GR  - Z01 AG000949/ImNIH/Intramural NIH HHS/United States
 GR  - MC_G1000735/MRC_/Medical Research Council/United Kingdom
 GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0701075/MRC_/Medical Research Council/United Kingdom
+GR  - MC_U123160651/MRC_/Medical Research Council/United Kingdom
+GR  - MC_U123192748/MRC_/Medical Research Council/United Kingdom
 GR  - G0802760/MRC_/Medical Research Council/United Kingdom
 GR  - G1001253/MRC_/Medical Research Council/United Kingdom
 GR  - G108/638/MRC_/Medical Research Council/United Kingdom

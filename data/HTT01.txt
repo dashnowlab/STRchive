@@ -2762,7 +2762,7 @@ PMID- 37177784
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230615
-LR  - 20231113
+LR  - 20231115
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Print)
 IS  - 1525-0016 (Linking)
@@ -11886,7 +11886,7 @@ PMID- 34469738
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220214
-LR  - 20231107
+LR  - 20231115
 IS  - 2211-1247 (Electronic)
 VI  - 36
 IP  - 9
@@ -11978,6 +11978,7 @@ AD  - UCL Huntington's Disease Centre, Department of Neurodegenerative Disease, 
       Electronic address: s.tabrizi@ucl.ac.uk.
 LA  - eng
 GR  - WT_/Wellcome Trust/United Kingdom
+GR  - MR/L023784/2/MRC_/Medical Research Council/United Kingdom
 GR  - 200181/Z/15/Z/WT_/Wellcome Trust/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
@@ -14666,7 +14667,7 @@ PMID- 33907289
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20211025
-LR  - 20231107
+LR  - 20231115
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 11
@@ -14725,6 +14726,7 @@ AD  - Huntington's Disease Centre, Department of Neurodegenerative Disease and U
       Dementia Research Institute at UCL, Queen Square Institute of Neurology, 
       University College London, London, WC1N 3BG, UK. gillian.bates@ucl.ac.uk.
 LA  - eng
+GR  - G0801314/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 DEP - 20210427
@@ -27566,7 +27568,7 @@ SO  - Am J Hum Genet. 2019 Jul 3;105(1):151-165. doi: 10.1016/j.ajhg.2019.05.016
 PMID- 31216018
 OWN - NLM
 STAT- Publisher
-LR  - 20231107
+LR  - 20231115
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -27639,6 +27641,7 @@ AD  - Department of Neurodegenerative Disease and Dementia Research Institute, U
 LA  - eng
 GR  - 200181/Z/15/Z/WT_/Wellcome Trust/United Kingdom
 GR  - MR/L010305/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/M008592/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 DEP - 20190619
 PL  - England
@@ -28377,7 +28380,7 @@ PMID- 31059641
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20190701
-LR  - 20231107
+LR  - 20231115
 IS  - 1533-4406 (Electronic)
 IS  - 0028-4793 (Linking)
 VI  - 380
@@ -29012,10 +29015,13 @@ AD  - From University College London (UCL) Huntington's Disease Centre, Departme
 CN  - Phase 1-2a IONIS-HTTRx Study Site Teams
 LA  - eng
 SI  - ClinicalTrials.gov/NCT02519036
-GR  - 200181/Z/15/Z/WT_/Wellcome Trust/United Kingdom
 GR  - MR/M008592/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/P001629/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/P008593/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/L010305/1/MRC_/Medical Research Council/United Kingdom
+GR  - G0801418/MRC_/Medical Research Council/United Kingdom
+GR  - 200181/Z/15/Z/WT_/Wellcome Trust/United Kingdom
+GR  - G9810900/MRC_/Medical Research Council/United Kingdom
+GR  - MR/P001629/1/MRC_/Medical Research Council/United Kingdom
 PT  - Clinical Trial, Phase I
 PT  - Clinical Trial, Phase II
 PT  - Journal Article
@@ -37904,7 +37910,7 @@ PMID- 28642124
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170904
-LR  - 20231107
+LR  - 20231115
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Linking)
 VI  - 16
@@ -38003,10 +38009,11 @@ AU  - Tabrizi SJ
 AD  - UCL Huntington's Disease Centre, University College London, London, UK. 
       Electronic address: s.tabrizi@ucl.ac.uk.
 LA  - eng
-GR  - 200181/Z/15/Z/WT_/Wellcome Trust/United Kingdom
-GR  - MC_PC_14108/MRC_/Medical Research Council/United Kingdom
 GR  - MC_U123160651/MRC_/Medical Research Council/United Kingdom
 GR  - MR/L010305/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_PC_16031/MRC_/Medical Research Council/United Kingdom
+GR  - 200181/Z/15/Z/WT_/Wellcome Trust/United Kingdom
+GR  - MC_PC_14108/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Multicenter Study
 PT  - Research Support, Non-U.S. Gov't
@@ -75621,7 +75628,7 @@ PMID- 18299573
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20080418
-LR  - 20231107
+LR  - 20231115
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Print)
 IS  - 0027-8424 (Linking)
@@ -75668,6 +75675,7 @@ AU  - Faull RL
 FAU - Bates, Gillian P
 AU  - Bates GP
 LA  - eng
+GR  - G9800001/MRC_/Medical Research Council/United Kingdom
 GR  - 66270/WT_/Wellcome Trust/United Kingdom
 GR  - 60360/WT_/Wellcome Trust/United Kingdom
 PT  - Journal Article
