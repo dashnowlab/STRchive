@@ -61,7 +61,7 @@ consolidated_strings <- gene_info %>%
   group_by(hgnc_symbol) %>%
   summarize(consolidated_strings = paste(unique(c(hgnc_symbol, external_synonym)), collapse = ' OR ')) %>%
   pull(consolidated_strings)
-
+consolidated_strings <- gsub("BMD", "Becker muscular dystrophy", consolidated_strings)
 base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/'
 
 perform_pubmed_query <- function(gene_info) {

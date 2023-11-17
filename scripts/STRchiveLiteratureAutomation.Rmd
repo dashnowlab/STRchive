@@ -197,7 +197,7 @@ for (i in 1:length(pubmed_results)) {
 ### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20231113.tsv"
+file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20231115.tsv"
 
 # Read the table into R
 all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
@@ -225,6 +225,13 @@ ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneNam
        y = "Total Number of Unique PMIDs") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8))
+
+
+
+
+library(dplyr)
+sorted_pub_info <- all_pub_info_df %>%
+  arrange(GeneName, PublicationYear)
 
 
 ```
