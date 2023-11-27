@@ -1,6 +1,7 @@
 import csv
 import json
 import sys
+import re
 
 def chrom_to_int(chrom):
     """
@@ -48,23 +49,49 @@ def trgt_catalog(row, genome = 'hg38'):
     :param genome: genome build (hg19, hg38 or T2T)
     :return: TRGT format catalog string
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': 'CAG', 'gene': 'mygene', 'id': 'myid'})
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': 'CAG', 'gene': 'mygene', 'id': 'myid', 'locus_structure': '', 'flank_motif': ''})
     'chr1\t100\t200\tID=myid;MOTIFS=CAG;STRUC=(CAG)n'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': 'CAG,CCG', 'gene': 'mygene', 'id': 'myid'})
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': 'CAG,CCG', 'gene': 'mygene', 'id': 'myid', 'locus_structure': '', 'flank_motif': ''})
     'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=(CAG)n(CCG)n'
-    """
-    start = row['start_' + genome]
-    stop = row['stop_' +genome]
 
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': 'CAGG', 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': '(CAGG)*(CAGA)*(CA)*', 'flank_motif': '(CAGG)n(CAGA)10(CA)19'})
+    'chr1\t100\t278\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)n(CA)n'
+    """
+    start = int(row['start_' + genome])
+    stop = int(row['stop_' + genome])
     struc = ''
-    motifs = []
-    for motif in row['pathogenic_motif_reference_orientation'].split(','):
-        motif = motif.strip() # remove leading and trailing whitespace
-        struc += f'({motif})n'
-        motifs.append(motif)
+
+    if row['flank_motif'] != '':
+        # get motifs in parentheses using regex
+        flank_motif = row['flank_motif']
+        motifs = re.findall('\((.*?)\)', flank_motif)
+        counts = re.findall('\)(.*?)[\(|$]', flank_motif.replace('n', 'n(') + '$')
+        n_found = False
+        for motif, count in zip(motifs, counts):
+            struc += f'({motif})n'
+            if count == 'n':
+                n_found = True
+                continue
+            else:
+                if n_found:
+                    stop += int(count) * len(motif)
+                else:
+                    start -= int(count) * len(motif)
+    elif row['locus_structure'] != '':
+        motifs = re.findall('\((.*?)\)', row['locus_structure'])
+        # Substitute * and + with n
+        struc = row['locus_structure'].replace('*', 'n').replace('+', 'n')
+    else:
+        motifs = []
+        for motif in row['pathogenic_motif_reference_orientation'].split(','):
+            motif = motif.strip() # remove leading and trailing whitespace
+            struc += f'({motif})n'
+            motifs.append(motif)
     if row['gene'] == 'RFC1':
         struc = '<RFC1>'
+    # unique motifs mainitaining order
+    motifs = list(dict.fromkeys(motifs))
     definition = f"{row['chrom']}\t{start}\t{stop}\tID={row['id']};MOTIFS={','.join(motifs)};STRUC={struc}"
 
     return definition
