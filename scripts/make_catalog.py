@@ -79,9 +79,10 @@ def trgt_catalog(row, genome = 'hg38'):
                 else:
                     start -= int(count) * len(motif)
     elif row['locus_structure'] != '':
-        motifs = re.findall('\((.*?)\)', row['locus_structure'])
+        locus_structure = row['locus_structure'].strip()
+        motifs = re.findall('\((.*?)\)', locus_structure)
         # Substitute * and + with n
-        struc = row['locus_structure'].replace('*', 'n').replace('+', 'n')
+        struc = locus_structure.replace('*', 'n').replace('+', 'n')
     else:
         motifs = []
         for motif in row['pathogenic_motif_reference_orientation'].split(','):
@@ -89,7 +90,7 @@ def trgt_catalog(row, genome = 'hg38'):
             struc += f'({motif})n'
             motifs.append(motif)
     if row['gene'] == 'RFC1':
-        struc = '<RFC1>'
+        struc = '<RFC1>' # special case for RFC1 coded as HMM by TRGT. May be removed in future versions of TRGT.
     # unique motifs mainitaining order
     motifs = list(dict.fromkeys(motifs))
     definition = f"{row['chrom']}\t{start}\t{stop}\tID={row['id']};MOTIFS={','.join(motifs)};STRUC={struc}"
