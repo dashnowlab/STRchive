@@ -420,3 +420,12 @@ sorted_pub_info <- all_pub_info_df %>%
 
 
 ```
+```{r compare}
+library(dplyr)
+
+minyear_sorted_pub_info <- sorted_pub_info %>%
+  group_by(GeneName) %>%
+  filter(PublicationYear == min(PublicationYear)) %>%
+  arrange(GeneName, PublicationYear)
+
+```
