@@ -1,0 +1,731 @@
+
+PMID- 37248219
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20230531
+LR  - 20230612
+IS  - 2041-1723 (Electronic)
+IS  - 2041-1723 (Linking)
+VI  - 14
+IP  - 1
+DP  - 2023 May 29
+TI  - Direct haplotype-resolved 5-base HiFi sequencing for genome-wide profiling of 
+      hypermethylation outliers in a rare disease cohort.
+PG  - 3090
+LID - 10.1038/s41467-023-38782-1 [doi]
+LID - 3090
+AB  - Long-read HiFi genome sequencing allows for accurate detection and direct phasing 
+      of single nucleotide variants, indels, and structural variants. Recent 
+      algorithmic development enables simultaneous detection of CpG methylation for 
+      analysis of regulatory element activity directly in HiFi reads. We present a 
+      comprehensive haplotype resolved 5-base HiFi genome sequencing dataset from a 
+      rare disease cohort of 276 samples in 152 families to identify rare (~0.5%) 
+      hypermethylation events. We find that 80% of these events are allele-specific and 
+      predicted to cause loss of regulatory element activity. We demonstrate 
+      heritability of extreme hypermethylation including rare cis variants associated 
+      with short (~200 bp) and large hypermethylation events (>1 kb), respectively. We 
+      identify repeat expansions in proximal promoters predicting allelic gene 
+      silencing via hypermethylation and demonstrate allelic transcriptional events 
+      downstream. On average 30-40 rare hypermethylation tiles overlap rare disease 
+      genes per patient, providing indications for variation prioritization including a 
+      previously undiagnosed pathogenic allele in DIP2B causing global developmental 
+      delay. We propose that use of HiFi genome sequencing in unsolved rare disease 
+      cases will allow detection of unconventional diseases alleles due to loss of 
+      regulatory element activity.
+CI  - (c) 2023. The Author(s).
+FAU - Cheung, Warren A
+AU  - Cheung WA
+AUID- ORCID: 0000-0003-0267-7464
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Johnson, Adam F
+AU  - Johnson AF
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Rowell, William J
+AU  - Rowell WJ
+AUID- ORCID: 0000-0002-7422-1194
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Farrow, Emily
+AU  - Farrow E
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+AD  - Department of Pediatrics, School of Medicine, University of Missouri Kansas City, 
+      Kansas City, MO, USA.
+FAU - Hall, Richard
+AU  - Hall R
+AUID- ORCID: 0000-0001-6490-8227
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Cohen, Ana S A
+AU  - Cohen ASA
+AD  - Department of Pediatrics, School of Medicine, University of Missouri Kansas City, 
+      Kansas City, MO, USA.
+AD  - Department of Pathology and Laboratory Medicine, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Means, John C
+AU  - Means JC
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Zion, Tricia N
+AU  - Zion TN
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Portik, Daniel M
+AU  - Portik DM
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Saunders, Christopher T
+AU  - Saunders CT
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Koseva, Boryana
+AU  - Koseva B
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Bi, Chengpeng
+AU  - Bi C
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Truong, Tina K
+AU  - Truong TK
+AD  - Center for Human Genetics and Genomics, Department of Pediatrics, Department of 
+      Neuroscience and Physiology, New York University Grossman School of Medicine, New 
+      York, NY, USA.
+FAU - Schwendinger-Schreck, Carl
+AU  - Schwendinger-Schreck C
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Yoo, Byunggil
+AU  - Yoo B
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Johnston, Jeffrey J
+AU  - Johnston JJ
+AUID- ORCID: 0000-0002-8962-6186
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Gibson, Margaret
+AU  - Gibson M
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Evrony, Gilad
+AU  - Evrony G
+AD  - Center for Human Genetics and Genomics, Department of Pediatrics, Department of 
+      Neuroscience and Physiology, New York University Grossman School of Medicine, New 
+      York, NY, USA.
+FAU - Rizzo, William B
+AU  - Rizzo WB
+AD  - Child Health Research Institute, Department of Pediatrics, Nebraska Medical 
+      Center, Omaha, NE, USA.
+FAU - Thiffault, Isabelle
+AU  - Thiffault I
+AUID- ORCID: 0000-0001-7987-6731
+AD  - Department of Pediatrics, School of Medicine, University of Missouri Kansas City, 
+      Kansas City, MO, USA.
+AD  - Department of Pathology and Laboratory Medicine, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+FAU - Younger, Scott T
+AU  - Younger ST
+AUID- ORCID: 0000-0002-6237-445X
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA.
+AD  - Department of Pediatrics, School of Medicine, University of Missouri Kansas City, 
+      Kansas City, MO, USA.
+FAU - Curran, Tom
+AU  - Curran T
+AUID- ORCID: 0000-0003-1444-7551
+AD  - Children's Mercy Research Institute, Kansas City, MO, USA.
+FAU - Wenger, Aaron M
+AU  - Wenger AM
+AD  - Pacific Biosciences, Menlo Park, CA, USA.
+FAU - Grundberg, Elin
+AU  - Grundberg E
+AUID- ORCID: 0000-0001-5415-7896
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA. egrundberg@cmh.edu.
+AD  - Department of Pediatrics, School of Medicine, University of Missouri Kansas City, 
+      Kansas City, MO, USA. egrundberg@cmh.edu.
+FAU - Pastinen, Tomi
+AU  - Pastinen T
+AUID- ORCID: 0000-0003-4016-5021
+AD  - Department of Pediatrics, Genomic Medicine Center, Children's Mercy Kansas City, 
+      Kansas City, MO, USA. tpastinen@cmh.edu.
+AD  - Department of Pediatrics, School of Medicine, University of Missouri Kansas City, 
+      Kansas City, MO, USA. tpastinen@cmh.edu.
+LA  - eng
+PT  - Journal Article
+DEP - 20230529
+PL  - England
+TA  - Nat Commun
+JT  - Nature communications
+JID - 101528555
+RN  - 0 (DIP2B protein, human)
+RN  - 0 (Nerve Tissue Proteins)
+SB  - IM
+MH  - Humans
+MH  - Haplotypes
+MH  - *Rare Diseases/genetics
+MH  - *DNA Methylation/genetics
+MH  - Sequence Analysis, DNA
+MH  - Base Sequence
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Nerve Tissue Proteins/genetics
+PMC - PMC10226990
+COIS- W.J.R., R.J.H., D.M.P., C.T.S., and A.M.W. are current or past employees of 
+      PacificBiosciences. The remaining authors declare no competing interests.
+EDAT- 2023/05/30 01:06
+MHDA- 2023/05/31 06:41
+CRDT- 2023/05/29 23:14
+PHST- 2022/09/19 00:00 [received]
+PHST- 2023/05/15 00:00 [accepted]
+PHST- 2023/05/31 06:41 [medline]
+PHST- 2023/05/30 01:06 [pubmed]
+PHST- 2023/05/29 23:14 [entrez]
+AID - 10.1038/s41467-023-38782-1 [pii]
+AID - 38782 [pii]
+AID - 10.1038/s41467-023-38782-1 [doi]
+PST - epublish
+SO  - Nat Commun. 2023 May 29;14(1):3090. doi: 10.1038/s41467-023-38782-1.
+
+PMID- 37090938
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20230909
+IS  - 2376-7839 (Print)
+IS  - 2376-7839 (Electronic)
+IS  - 2376-7839 (Linking)
+VI  - 9
+IP  - 2
+DP  - 2023 Apr
+TI  - Transcriptome and Genome Analysis Uncovers a DMD Structural Variant: A Case 
+      Report.
+PG  - e200064
+LID - 10.1212/NXG.0000000000200064 [doi]
+LID - e200064
+AB  - OBJECTIVE: Duchenne muscular dystrophy (DMD) is caused by pathogenic variants in 
+      the dystrophin gene (DMD). Hypermethylated CGG expansions within DIP2B 5' UTR are 
+      associated with an intellectual development disorder. Here, we demonstrate the 
+      diagnostic utility of genomic short-read sequencing (SRS) and transcriptome 
+      sequencing to identify a novel DMD structural variant (SV) and a DIP2B CGG 
+      expansion in a patient with DMD for whom conventional diagnostic testing failed 
+      to yield a genetic diagnosis. METHODS: We performed genomic SRS, skeletal muscle 
+      transcriptome sequencing, and targeted programmable long-read sequencing (LRS). 
+      RESULTS: The proband had a typical DMD clinical presentation, autism spectrum 
+      disorder (ASD), and dystrophinopathy on muscle biopsy. Transcriptome analysis 
+      identified 6 aberrantly expressed genes; DMD and DIP2B were the strongest 
+      underexpression and overexpression outliers, respectively. Genomic SRS identified 
+      a 216 kb paracentric inversion (NC_000023.11: g.33162217-33378800) overlapping 2 
+      DMD promoters. ExpansionHunter indicated an expansion of 109 CGG repeats within 
+      the 5' UTR of DIP2B. Targeted genomic LRS confirmed the SV and genotyped the 
+      DIP2B repeat expansion as 270 CGG repeats. DISCUSSION: Here, transcriptome data 
+      heavily guided genomic analysis to resolve a complex DMD inversion and a DIP2B 
+      repeat expansion. Longitudinal follow-up will be important for clarifying the 
+      clinical significance of the DIP2B genotype.
+CI  - Copyright (c) 2023 The Author(s). Published by Wolters Kluwer Health, Inc. on 
+      behalf of the American Academy of Neurology.
+FAU - Folland, Chiara
+AU  - Folland C
+AUID- ORCID: 0000-0002-6346-4828
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Ganesh, Vijay
+AU  - Ganesh V
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Weisburd, Ben
+AU  - Weisburd B
+AUID- ORCID: 0000-0001-9898-9109
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - McLean, Catriona
+AU  - McLean C
+AUID- ORCID: 0000-0002-0302-5727
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Kornberg, Andrew J
+AU  - Kornberg AJ
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - O'Donnell-Luria, Anne
+AU  - O'Donnell-Luria A
+AUID- ORCID: 0000-0001-6418-9592
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Rehm, Heidi L
+AU  - Rehm HL
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Stevanovski, Igor
+AU  - Stevanovski I
+AUID- ORCID: 0000-0002-7713-1979
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Chintalaphani, Sanjog R
+AU  - Chintalaphani SR
+AUID- ORCID: 0000-0002-8106-5011
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Kennedy, Paul
+AU  - Kennedy P
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Deveson, Ira W
+AU  - Deveson IW
+AUID- ORCID: 0000-0003-3861-0472
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+FAU - Ravenscroft, Gianina
+AU  - Ravenscroft G
+AUID- ORCID: 0000-0003-3634-211X
+AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.), Harry 
+      Perkins Institute of Medical Research, Perth, Australia; Center for Mendelian 
+      Genomics (V.G., B.W., A.O.-L., H.L.R.), Program in Medical and Population 
+      Genetics, Broad Institute of MIT and Harvard, Cambridge, MA; Department of 
+      Neurology (V.G.), Brigham and Women's Hospital; Division of Genetics and Genomics 
+      (V.G., A.O.-L.), Boston Children's Hospital, MA; Department of Anatomical 
+      Pathology (C.M., P.K.), Alfred Health; Department of Medicine (C.M., P.K.), 
+      Central Clinical School, Monash University, Melbourne; Murdoch Children's 
+      Research Institute (A.J.K.); Department of Neurology (A.J.K.), Royal Children's 
+      Hospital; Department of Paediatrics (A.J.K.), University of Melbourne, Victoria, 
+      Australia; Center for Genomic Medicine (A.O.-L., H.L.R.), Massachusetts General 
+      Hospital, Boston, MA; Genomics Pillar (I.S., S.R.C., I.W.D.), Garvan Institute of 
+      Medical Research, Sydney, Australia; Centre for Population Genomics (I.S., 
+      S.R.C., I.W.D.), Garvan Institute of Medical Research and Murdoch Children's 
+      Research Institute, Australia; School of Clinical Medicine (S.R.C., I.W.D.), 
+      Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
+      Sciences (G.R.), University of Western Australia, Perth, Australia.
+LA  - eng
+GR  - T32 HG010464/HG/NHGRI NIH HHS/United States
+PT  - Journal Article
+DEP - 20230314
+PL  - United States
+TA  - Neurol Genet
+JT  - Neurology. Genetics
+JID - 101671068
+PMC - PMC10117699
+EDAT- 2023/04/24 06:42
+MHDA- 2023/04/24 06:43
+CRDT- 2023/04/24 03:49
+PHST- 2022/09/20 00:00 [received]
+PHST- 2023/01/27 00:00 [accepted]
+PHST- 2023/04/24 06:43 [medline]
+PHST- 2023/04/24 06:42 [pubmed]
+PHST- 2023/04/24 03:49 [entrez]
+AID - NXG-2023-000007 [pii]
+AID - 10.1212/NXG.0000000000200064 [doi]
+PST - epublish
+SO  - Neurol Genet. 2023 Mar 14;9(2):e200064. doi: 10.1212/NXG.0000000000200064. 
+      eCollection 2023 Apr.
+
+PMID- 34622207
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20211009
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 3
+IP  - 3
+DP  - 2021
+TI  - Genome sequencing identifies rare tandem repeat expansions and copy number 
+      variants in Lennox-Gastaut syndrome.
+PG  - fcab207
+LID - 10.1093/braincomms/fcab207 [doi]
+LID - fcab207
+AB  - Epilepsies are a group of common neurological disorders with a substantial 
+      genetic basis. Despite this, the molecular diagnosis of epilepsies remains 
+      challenging due to its heterogeneity. Studies utilizing whole-genome sequencing 
+      may provide additional insights into genetic causes of epilepsies of unknown 
+      aetiology. Whole-genome sequencing was used to evaluate a cohort of adults with 
+      unexplained developmental and epileptic encephalopathies (n = 30), for whom prior 
+      genetic tests, including whole-exome sequencing in some cases, were negative or 
+      inconclusive. Rare single nucleotide variants, insertions/deletions, copy number 
+      variants and tandem repeat expansions were analysed. Seven pathogenic or likely 
+      pathogenic single nucleotide variants, and two pathogenic deleterious copy number 
+      variants were identified in nine patients (32.1% of the cohort). One of the copy 
+      number variants, identified in a patient with Lennox-Gastaut syndrome, was too 
+      small to be detected by chromosomal microarray techniques. We also identified two 
+      tandem repeat expansions with clinical implications in two other patients with 
+      Lennox-Gastaut syndrome: a CGG repeat expansion in the 5'untranslated region of 
+      DIP2B, and a CTG expansion in ATXN8OS (previously implicated in spinocerebellar 
+      ataxia type 8). Three patients had KCNA2 pathogenic variants. One of them died of 
+      sudden unexpected death in epilepsy. The other two patients had, in addition to a 
+      KCNA2 variant, a second de novo variant impacting potential epilepsy-relevant 
+      genes (KCNIP4 and UBR5). Overall, whole-genome sequencing provided a genetic 
+      explanation in 32.1% of the total cohort. This is also the first report of coding 
+      and non-coding tandem repeat expansions identified in patients with 
+      Lennox-Gastaut syndrome. This study demonstrates that using whole-genome 
+      sequencing, the examination of multiple types of rare genetic variation, 
+      including those found in the non-coding region of the genome, can help resolve 
+      unexplained epilepsies.
+CI  - (c) The Author(s) (2021). Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Qaiser, Farah
+AU  - Qaiser F
+AUID- ORCID: 0000-0003-1050-2533
+AD  - Department of Molecular Genetics, Faculty of Medicine, University of Toronto, 
+      Toronto, Canada.
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+AD  - Adult Epilepsy Genetics Research Program, Krembil Neurosciences Institute, 
+      Toronto Western Hospital, University Health Network, Toronto, Canada.
+FAU - Sadoway, Tara
+AU  - Sadoway T
+AD  - Adult Epilepsy Genetics Research Program, Krembil Neurosciences Institute, 
+      Toronto Western Hospital, University Health Network, Toronto, Canada.
+FAU - Yin, Yue
+AU  - Yin Y
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+FAU - Zulfiqar Ali, Quratulain
+AU  - Zulfiqar Ali Q
+AUID- ORCID: 0000-0002-3984-5276
+AD  - Adult Epilepsy Genetics Research Program, Krembil Neurosciences Institute, 
+      Toronto Western Hospital, University Health Network, Toronto, Canada.
+FAU - Nguyen, Charlotte M
+AU  - Nguyen CM
+AD  - Department of Molecular Genetics, Faculty of Medicine, University of Toronto, 
+      Toronto, Canada.
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+FAU - Shum, Natalie
+AU  - Shum N
+AD  - Department of Molecular Genetics, Faculty of Medicine, University of Toronto, 
+      Toronto, Canada.
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+FAU - Backstrom, Ian
+AU  - Backstrom I
+AUID- ORCID: 0000-0003-2203-540X
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+FAU - Marques, Paula T
+AU  - Marques PT
+AUID- ORCID: 0000-0003-1303-9273
+AD  - Adult Epilepsy Genetics Research Program, Krembil Neurosciences Institute, 
+      Toronto Western Hospital, University Health Network, Toronto, Canada.
+FAU - Tabarestani, Sepideh
+AU  - Tabarestani S
+AUID- ORCID: 0000-0003-0695-1889
+AD  - Adult Epilepsy Genetics Research Program, Krembil Neurosciences Institute, 
+      Toronto Western Hospital, University Health Network, Toronto, Canada.
+FAU - Munhoz, Renato P
+AU  - Munhoz RP
+AD  - Division of Neurology, Department of Medicine, University of Toronto, Toronto, 
+      Canada.
+AD  - Neuromodulation Unit and Ataxia Clinic, Toronto Western Hospital, University 
+      Health Network, Toronto, Canada.
+FAU - Krings, Timo
+AU  - Krings T
+AUID- ORCID: 0000-0001-6321-5787
+AD  - Department of Medical Imaging, University of Toronto, Toronto, Canada.
+AD  - Division of Neuroradiology, Toronto Western Hospital, University Health Network, 
+      Toronto, Canada.
+FAU - Pearson, Christopher E
+AU  - Pearson CE
+AD  - Department of Molecular Genetics, Faculty of Medicine, University of Toronto, 
+      Toronto, Canada.
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+FAU - Yuen, Ryan K C
+AU  - Yuen RKC
+AUID- ORCID: 0000-0001-7273-4968
+AD  - Department of Molecular Genetics, Faculty of Medicine, University of Toronto, 
+      Toronto, Canada.
+AD  - Genetics & Genome Biology Program, Peter Gilgan Centre for Research and Learning, 
+      The Hospital for Sick Children, Toronto, Canada.
+FAU - Andrade, Danielle M
+AU  - Andrade DM
+AUID- ORCID: 0000-0003-0953-2698
+AD  - Adult Epilepsy Genetics Research Program, Krembil Neurosciences Institute, 
+      Toronto Western Hospital, University Health Network, Toronto, Canada.
+AD  - Division of Neurology, Department of Medicine, University of Toronto, Toronto, 
+      Canada.
+AD  - Epilepsy Program, Krembil Neurosciences Institute, Toronto Western Hospital, 
+      University Health Network, University of Toronto, Toronto, Canada.
+LA  - eng
+PT  - Journal Article
+DEP - 20210914
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC8491034
+OTO - NOTNLM
+OT  - ATXN80S
+OT  - DIP2B
+OT  - Lennox-Gastaut syndrome
+OT  - tandem repeats
+OT  - whole-genome sequencing
+EDAT- 2021/10/09 06:00
+MHDA- 2021/10/09 06:01
+CRDT- 2021/10/08 07:17
+PHST- 2021/05/10 00:00 [received]
+PHST- 2021/07/23 00:00 [revised]
+PHST- 2021/07/29 00:00 [accepted]
+PHST- 2021/10/08 07:17 [entrez]
+PHST- 2021/10/09 06:00 [pubmed]
+PHST- 2021/10/09 06:01 [medline]
+AID - fcab207 [pii]
+AID - 10.1093/braincomms/fcab207 [doi]
+PST - epublish
+SO  - Brain Commun. 2021 Sep 14;3(3):fcab207. doi: 10.1093/braincomms/fcab207. 
+      eCollection 2021.
+
+PMID- 17236128
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20070313
+LR  - 20220129
+IS  - 0002-9297 (Print)
+IS  - 1537-6605 (Electronic)
+IS  - 0002-9297 (Linking)
+VI  - 80
+IP  - 2
+DP  - 2007 Feb
+TI  - CGG-repeat expansion in the DIP2B gene is associated with the fragile site FRA12A 
+      on chromosome 12q13.1.
+PG  - 221-31
+AB  - A high level of cytogenetic expression of the rare folate-sensitive fragile site 
+      FRA12A is significantly associated with mental retardation. Here, we identify an 
+      elongated polymorphic CGG repeat as the molecular basis of FRA12A. This repeat is 
+      in the 5' untranslated region of the gene DIP2B, which encodes a protein with a 
+      DMAP1-binding domain, which suggests a role in DNA methylation machinery. DIP2B 
+      mRNA levels were halved in two subjects with FRA12A with mental retardation in 
+      whom the repeat expansion was methylated. In two individuals without mental 
+      retardation but with an expanded and methylated repeat, DIP2B expression was 
+      reduced to approximately two-thirds of the values observed in controls. 
+      Interestingly, a carrier of an unmethylated CGG-repeat expansion showed increased 
+      levels of DIP2B mRNA, which suggests that the repeat elongation increases gene 
+      expression, as previously described for the fragile X-associated tremor/ataxia 
+      syndrome. These data suggest that deficiency of DIP2B, a brain-expressed gene, 
+      may mediate the neurocognitive problems associated with FRA12A.
+FAU - Winnepenninckx, Birgitta
+AU  - Winnepenninckx B
+AD  - Department of Medical Genetics, University of Antwerp, Antwerp, Belgium.
+FAU - Debacker, Kim
+AU  - Debacker K
+FAU - Ramsay, Jacqueline
+AU  - Ramsay J
+FAU - Smeets, Dominique
+AU  - Smeets D
+FAU - Smits, Arie
+AU  - Smits A
+FAU - FitzPatrick, David R
+AU  - FitzPatrick DR
+FAU - Kooy, R Frank
+AU  - Kooy RF
+LA  - eng
+SI  - GENBANK/BAC41762
+SI  - RefSeq/NP_055789
+SI  - RefSeq/NP_055966
+SI  - RefSeq/NP_766407
+SI  - RefSeq/XP_235656
+GR  - MC_U127561093/MRC_/Medical Research Council/United Kingdom
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20061212
+PL  - United States
+TA  - Am J Hum Genet
+JT  - American journal of human genetics
+JID - 0370475
+RN  - 0 (DIP2B protein, human)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (RNA, Messenger)
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Amino Acid Sequence
+MH  - Base Sequence
+MH  - Child, Preschool
+MH  - *Chromosome Fragile Sites
+MH  - Chromosomes, Human, Pair 12/*genetics
+MH  - DNA Methylation
+MH  - Female
+MH  - Heterozygote
+MH  - Humans
+MH  - Intellectual Disability/*genetics
+MH  - Likelihood Functions
+MH  - Male
+MH  - Molecular Sequence Data
+MH  - Nerve Tissue Proteins/*genetics
+MH  - Pedigree
+MH  - Protein Structure, Tertiary
+MH  - RNA, Messenger/genetics
+MH  - *Trinucleotide Repeat Expansion
+PMC - PMC1785358
+EDAT- 2007/01/20 09:00
+MHDA- 2007/03/14 09:00
+CRDT- 2007/01/20 09:00
+PHST- 2006/09/28 00:00 [received]
+PHST- 2006/11/10 00:00 [accepted]
+PHST- 2007/01/20 09:00 [pubmed]
+PHST- 2007/03/14 09:00 [medline]
+PHST- 2007/01/20 09:00 [entrez]
+AID - S0002-9297(07)62680-9 [pii]
+AID - 44228 [pii]
+AID - 10.1086/510800 [doi]
+PST - ppublish
+SO  - Am J Hum Genet. 2007 Feb;80(2):221-31. doi: 10.1086/510800. Epub 2006 Dec 12.
