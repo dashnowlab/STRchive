@@ -83,6 +83,7 @@ gene_info <- gene_info %>%
 gene_info <- gene_info %>%
   mutate(across(c(external_synonym, hgnc_symbol), ~sprintf('"%s"', .)))
 
+gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"FMR1\"", external_synonym = "\"FMR-1\""))
 gene_names <- unique(gene_info$hgnc_symbol)
 publications <- list()
 consolidated_strings <- gene_info %>%
@@ -164,7 +165,7 @@ perform_pubmed_query <- function(gene_info) {
     or_terms <- paste(consolidated_strings[idx], collapse = ' OR ')
 
     # Construct the query with 'AND' logic among [Title/Abstract] segments
-    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) AND (', or_terms, ')[Title/Abstract] AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
+    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) OR "repeat sequence"[Title/Abstract] OR "repeat sequences"[Title/Abstract] OR "repeat length"[Title/Abstract] OR "repeat lengths"[Title/Abstract] OR "expansion"[Title] OR "expansions"[Title] OR "repeats"[Title] AND (', or_terms, ')[Title/Abstract] AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
 
     # Clean up any unnecessary slashes from the query
     query <- gsub("  ", " ", query)  # Remove double spaces
@@ -289,7 +290,8 @@ get_pmids <- function(gene_info) {
     search_terms <- unique(unlist(search_terms))
     query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[
                     Title/Abstract] OR "repeat expansions"[Title/Abstract] OR
-                    "tandem repeats"[Title/Abstract]) AND (', paste(search_terms,
+                    "repeat sequence"[Title/Abstract] OR "tandem repeats"[Title/Abstract] OR
+                    "expansion"[Title]) OR "expansions"[Title] AND (', paste(search_terms,
                     collapse = '[Title/Abstract] OR '), '[Title/Abstract]) AND "English"[Language
                     ] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "
                     diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "
@@ -421,8 +423,6 @@ sorted_pub_info <- all_pub_info_df %>%
 
 ```
 ```{r compare}
-library(dplyr)
-
 minyear_sorted_pub_info <- sorted_pub_info %>%
   group_by(GeneName) %>%
   filter(PublicationYear == min(PublicationYear)) %>%
