@@ -84,6 +84,9 @@ gene_info <- gene_info %>%
   mutate(across(c(external_synonym, hgnc_symbol), ~sprintf('"%s"', .)))
 
 gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"FMR1\"", external_synonym = "\"FMR-1\""))
+#because pubmed hates slashes and ishi uses slashes
+gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"NUTM2B-AS1\"", external_synonym = "\"LOC642361/NUTM2B-AS1\""))
+
 gene_names <- unique(gene_info$hgnc_symbol)
 publications <- list()
 consolidated_strings <- gene_info %>%
@@ -161,11 +164,17 @@ perform_pubmed_query <- function(gene_info) {
     # Use str_detect to check if gene_name is present in each consolidated string
     idx <- str_detect(consolidated_strings, regex(gene_name, ignore_case = TRUE))
 
-    # Filter out the relevant consolidated strings
+    # Put together the relevant consolidated strings
     or_terms <- paste(consolidated_strings[idx], collapse = ' OR ')
+    # Splitting the or_terms into individual terms
+    individual_terms <- unlist(strsplit(or_terms, " OR "))
 
-    # Construct the query with 'AND' logic among [Title/Abstract] segments
-    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) OR "repeat sequence"[Title/Abstract] OR "repeat sequences"[Title/Abstract] OR "repeat length"[Title/Abstract] OR "repeat lengths"[Title/Abstract] OR "expansion"[Title] OR "expansions"[Title] OR "repeats"[Title] AND (', or_terms, ')[Title/Abstract] AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
+# Adding [Title/Abstract] to each term
+    joined_terms <- paste0(individual_terms, "[Title/Abstract]")
+    #joined_terms <- paste0('(', paste(or_terms, collapse = '[Title/Abstract] OR '), ')[Title/Abstract]')    
+    # Construct the query with organized or_terms
+    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract]) OR "repeat sequence"[Title/Abstract] OR "repeat sequences"[Title/Abstract] OR "repeat length"[Title/Abstract] OR "repeat lengths"[Title/Abstract] OR "expansion"[Title] OR "expansions"[Title] OR "repeats"[Title] AND (', paste(with_title_abstract, collapse = " OR "),') AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND "journal article"[Publication Type] NOT "review"[Publication Type]')
+
 
     # Clean up any unnecessary slashes from the query
     query <- gsub("  ", " ", query)  # Remove double spaces
