@@ -415,17 +415,28 @@ merged_df <- merge(firstpub, all_pub_info_df[, c("GeneName", "PMID", "Publicatio
                    by = c("GeneName", "PMID"),
                    all.x = TRUE)  # 'all.x = TRUE' retains all rows from 'firstpub'
 
+# what doesn't come up in our data bc of data types (2/3) or abstract not indexed (1/3)
+merged_df$PublicationYear[merged_df$PMID == 7951322] <- 1994
+merged_df$PublicationYear[merged_df$PMID == 11486088] <- 2001
+merged_df$PublicationYear[merged_df$PMID == 10581021] <- 1999
+
+
 # Convert PublicationYear to numeric
 all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
 
-# Summarize data to get the minimum PublicationYear for each GeneName
+# Summarize data to get the minimum PublicationYear (not actual earliest, but can compare) for each GeneName
 summary_data <- all_pub_info_df %>%
   group_by(GeneName) %>%
   summarize(MinPublicationYear = min(PublicationYear, na.rm = TRUE), MaxPublicationYear = max(PublicationYear, na.rm = TRUE),
             TotalPMIDs = n_distinct(PMID))  # Use n_distinct to count unique PMIDs
 
+
+# Merge based on 'GeneName'
+merged_df <- merge(merged_df, summary_data[, c("GeneName", "TotalPMIDs")],
+                   by = "GeneName", all.x = TRUE)  # 'all.x = TRUE' retains all rows from 'merged_df'
+
 # Create a scatter plot
-ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+ggplot(merged_df, aes(x = PublicationYear, y = TotalPMIDs, label = GeneName)) +
   geom_point() +
   geom_text_repel(box.padding = 0.5, segment.color = "grey50", segment.size = 0.2) +  # Adjust ggrepel parameters
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
