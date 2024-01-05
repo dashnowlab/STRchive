@@ -16,12 +16,10 @@ library(stringr)
 
 ## Automating STRchive Literature Management
 
-The goal for this Markdown is to be a repository of code that assists with 
-literature management for the living database, STRchive.
+The goal for this Markdown is to be a repository of code that assists with literature management for the living database, STRchive.
 
-Running tasks:
-- Plot number of papers by year of first publication for sanity check
-### Defining the Gene List
+Running tasks: - Plot number of papers by year of first publication for sanity check \### Defining the Gene List
+
 ```{r genelist}
 data <- read.csv("/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv", header = TRUE)
 
@@ -86,6 +84,7 @@ gene_info <- gene_info %>%
 gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"FMR1\"", external_synonym = "\"FMR-1\""))
 #because pubmed hates slashes and ishi uses slashes
 gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"NUTM2B-AS1\"", external_synonym = "\"LOC642361/NUTM2B-AS1\""))
+gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"ATXN10\"", external_synonym = "\"SCA10\""))
 
 gene_names <- unique(gene_info$hgnc_symbol)
 publications <- list()
@@ -98,8 +97,8 @@ base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/'
 
 ```
 
-
 ### Get All Article Data for Each Locus in XML Format
+
 ```{r article data}
 perform_pubmed_query <- function(gene_info) {
   #set up publications to be filled out
@@ -152,7 +151,6 @@ for (gene_name in names(pubmed_results)) {
 
 ```
 
-
 ### Good stuff
 
 ```{r get stuff}
@@ -173,7 +171,7 @@ perform_pubmed_query <- function(gene_info) {
     joined_terms <- paste0(individual_terms, "[Title/Abstract]")
     #joined_terms <- paste0('(', paste(or_terms, collapse = '[Title/Abstract] OR '), ')[Title/Abstract]')    
     # Construct the query with organized or_terms
-    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract] OR "repeat sequence"[Title/Abstract] OR "repeat sequences"[Title/Abstract] OR "repeat length"[Title/Abstract] OR "repeat lengths"[Title/Abstract] OR "expansion"[Title] OR "expansions"[Title] OR "repeats"[Title]) AND (', paste(joined_terms, collapse = " OR "),') AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type]) NOT "review"[Publication Type]')
+    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract] OR "repeat sequence"[Title/Abstract] OR "repeat sequences"[Title/Abstract] OR "repeat length"[Title/Abstract] OR "repeat lengths"[Title/Abstract] OR "expansion"[Title] OR "expansions"[Title] OR "repeats"[Title]) AND (', paste(joined_terms, collapse = " OR "),') AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type] or "Case Reports"[Publication Type]) NOT "review"[Publication Type]')
 
 
     # Clean up any unnecessary slashes from the query
@@ -287,6 +285,7 @@ write.table(all_pub_info_df, file_name, sep = "\t", quote = FALSE, row.names = F
 ```
 
 ### Geting Only the PMIDs for Each Locus
+
 ```{r PMIDs}
 get_pmids <- function(gene_info) {
   pmid_list <- list()
@@ -332,8 +331,8 @@ for (gene_name in names(pmid_results)) {
 
 ```
 
-
 ### Getting Earliest Pubdates and Titles for Each Locus (NEEDS TO BE UPDATED)
+
 ```{r df}
 # Initialize an empty data frame
 earliest_pub_dates_df <- data.frame(
@@ -375,14 +374,46 @@ for (i in 1:length(pubmed_results)) {
 ### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-#file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20231115.tsv"
+#file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240103.tsv"
 
 # Read the table into R
 #all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
-library(dplyr)
 library(ggplot2)
 library(ggrepel)
+
+firstpub <- data.frame(
+  stringsAsFactors = FALSE,
+                GeneName = c("AFF2","AFF3","AR","ARX",
+                       "ATN1","ATXN1","ATXN10","ATXN2","ATXN3","ATXN7",
+                       "ATXN8OS","BEAN1","C9orf72","CACNA1A","CBL","COMP",
+                       "CSTB","DAB1","DIP2B","DMD","DMPK","EIF4A3","FGF14",
+                       "FMR1","FOXL2","FXN","GIPC1","GLS","HOXA13","HOXD13",
+                       "HTT","JPH3","LRP12","MARCHF6","NIPA1","NOP56",
+                       "NOTCH2NLC","NUTM2B-AS1","PABPN1","PHOX2B","POLG","PRNP",
+                       "RAPGEF2","RFC1","RILPL1","RUNX2","SAMD12",
+                       "STARD7","TBP","TCF4","THAP11","TNRC6A","VWA1","XYLT1",
+                       "YEATS2","ZFHX3","ZIC2","ZIC3","ZNF713","CNBP",
+                       "PPP2R2B"),
+                PMID = c(8334699L,24763282L,1461383L,
+                       19587282L,7842016L,7951322L,11017075L,8896556L,
+                       7874163L,8908515L,10192387L,19878914L,22154785L,9371901L,
+                       7603564L,9887340L,9126745L,28686858L,17236128L,
+                       36048237L,8288237L,24360810L,36516086L,1605194L,
+                       15591279L,8596916L,32413282L,30970188L,15385446L,11543619L,
+                       8401589L,11694876L,31332380L,31664039L,31286297L,
+                       21683323L,31332380L,31332380L,9462747L,12640453L,
+                       22963882L,12805114L,30351492L,31230722L,35700120L,
+                       26220009L,30351492L,31664034L,10484774L,23185296L,24677642L,
+                       30351492L,33559681L,30554721L,31539032L,38035881L,
+                       11285244L,20452998L,25196122L,11486088L,10581021L)
+)
+
+
+# Merge based on 'GeneName' and 'PMID'
+merged_df <- merge(firstpub, all_pub_info_df[, c("GeneName", "PMID", "PublicationYear")],
+                   by = c("GeneName", "PMID"),
+                   all.x = TRUE)  # 'all.x = TRUE' retains all rows from 'firstpub'
 
 # Convert PublicationYear to numeric
 all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
@@ -431,6 +462,7 @@ sorted_pub_info <- all_pub_info_df %>%
 
 
 ```
+
 ```{r compare}
 minyear_sorted_pub_info <- sorted_pub_info %>%
   group_by(GeneName) %>%
