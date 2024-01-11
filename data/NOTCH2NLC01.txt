@@ -1,12 +1,13 @@
 
 PMID- 38145851
 OWN - NLM
-STAT- Publisher
-LR  - 20231228
+STAT- MEDLINE
+DCOM- 20240108
+LR  - 20240108
 IS  - 1095-953X (Electronic)
 IS  - 0969-9961 (Linking)
 VI  - 190
-DP  - 2023 Dec 23
+DP  - 2024 Jan
 TI  - Pathologic changes in neuronal intranuclear inclusion disease are linked to 
       aberrant FUS interaction under hyperosmotic stress.
 PG  - 106391
@@ -73,7 +74,15 @@ PL  - United States
 TA  - Neurobiol Dis
 JT  - Neurobiology of disease
 JID - 9500169
+RN  - 0 (RNA-Binding Protein FUS)
+RN  - 0 (FUS protein, human)
+RN  - Neuronal intranuclear inclusion disease
 SB  - IM
+MH  - Humans
+MH  - Intranuclear Inclusion Bodies/genetics/metabolism/pathology
+MH  - RNA-Binding Protein FUS/genetics/metabolism
+MH  - *Neuroblastoma/pathology
+MH  - *Neurodegenerative Diseases/metabolism
 OTO - NOTNLM
 OT  - CGG repeat expansion
 OT  - FUS
@@ -83,28 +92,32 @@ OT  - Stress granules
 OT  - polyG
 COIS- Declaration of Competing Interest The authors declare no competing interests.
 EDAT- 2023/12/26 00:42
-MHDA- 2023/12/26 00:42
+MHDA- 2024/01/08 06:43
 CRDT- 2023/12/25 19:26
 PHST- 2023/11/21 00:00 [received]
 PHST- 2023/12/20 00:00 [revised]
 PHST- 2023/12/20 00:00 [accepted]
+PHST- 2024/01/08 06:43 [medline]
 PHST- 2023/12/26 00:42 [pubmed]
-PHST- 2023/12/26 00:42 [medline]
 PHST- 2023/12/25 19:26 [entrez]
 AID - S0969-9961(23)00407-2 [pii]
 AID - 10.1016/j.nbd.2023.106391 [doi]
-PST - aheadofprint
-SO  - Neurobiol Dis. 2023 Dec 23;190:106391. doi: 10.1016/j.nbd.2023.106391.
+PST - ppublish
+SO  - Neurobiol Dis. 2024 Jan;190:106391. doi: 10.1016/j.nbd.2023.106391. Epub 2023 Dec 
+      23.
 
 PMID- 37975799
 OWN - NLM
-STAT- Publisher
-LR  - 20231117
+STAT- In-Process
+LR  - 20240109
 IS  - 1468-1331 (Electronic)
 IS  - 1351-5101 (Linking)
-DP  - 2023 Nov 17
+VI  - 31
+IP  - 2
+DP  - 2024 Feb
 TI  - GGC expansions in NOTCH2NLC contribute to Parkinson disease and dopaminergic 
       neuron degeneration.
+PG  - e16145
 LID - 10.1111/ene.16145 [doi]
 AB  - BACKGROUND AND PURPOSE: The role of GGC repeat expansions within NOTCH2NLC in 
       Parkinson's disease (PD) and the substantia nigra (SN) dopaminergic neuron 
@@ -294,12 +307,12 @@ CRDT- 2023/11/17 09:54
 PHST- 2023/09/24 00:00 [revised]
 PHST- 2023/05/27 00:00 [received]
 PHST- 2023/10/25 00:00 [accepted]
-PHST- 2023/11/17 15:27 [medline]
 PHST- 2023/11/17 15:27 [pubmed]
+PHST- 2023/11/17 15:27 [medline]
 PHST- 2023/11/17 09:54 [entrez]
 AID - 10.1111/ene.16145 [doi]
-PST - aheadofprint
-SO  - Eur J Neurol. 2023 Nov 17. doi: 10.1111/ene.16145.
+PST - ppublish
+SO  - Eur J Neurol. 2024 Feb;31(2):e16145. doi: 10.1111/ene.16145. Epub 2023 Nov 17.
 
 PMID- 37923380
 OWN - NLM

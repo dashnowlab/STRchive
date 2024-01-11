@@ -21,7 +21,10 @@ The goal for this Markdown is to be a repository of code that assists with liter
 Running tasks: - Plot number of papers by year of first publication for sanity check \### Defining the Gene List
 
 ```{r genelist}
-data <- read.csv("/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv", header = TRUE)
+#data <- read.csv("/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv", header = TRUE)
+
+
+data <- read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/STRpapercode/20240109_STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
 
 # Filter out NA values from the 'gene' column
 filtered_data <- data[!is.na(data$gene), ]

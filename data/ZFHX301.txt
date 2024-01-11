@@ -109,13 +109,17 @@ SO  - Parkinsonism Relat Disord. 2023 Dec 20;119:105961. doi:
 
 PMID- 38035881
 OWN - NLM
-STAT- Publisher
-LR  - 20231130
+STAT- MEDLINE
+DCOM- 20240108
+LR  - 20240108
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
-DP  - 2023 Nov 28
+VI  - 111
+IP  - 1
+DP  - 2024 Jan 4
 TI  - Exonic trinucleotide repeat expansions in ZFHX3 cause spinocerebellar ataxia type 
       4: A poly-glycine disease.
+PG  - 82-95
 LID - S0002-9297(23)00403-2 [pii]
 LID - 10.1016/j.ajhg.2023.11.008 [doi]
 AB  - Autosomal-dominant ataxia with sensory and autonomic neuropathy is a highly 
@@ -216,12 +220,22 @@ AD  - Neurology, Department of Clinical Sciences Lund, Lund University, Skane
       andreas.puschmann@med.lu.se.
 LA  - eng
 PT  - Journal Article
-DEP - 20231128
+DEP - 20231129
 PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
+RN  - 143258-00-8 (ZFHX3 protein, human)
+RN  - 0 (Homeodomain Proteins)
 SB  - IM
+MH  - Humans
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - *Spinocerebellar Ataxias/genetics
+MH  - Ataxia/genetics
+MH  - *Cerebellar Ataxia/genetics
+MH  - Phenotype
+MH  - *Spinocerebellar Degenerations/genetics
+MH  - Homeodomain Proteins/genetics
 OTO - NOTNLM
 OT  - GGC repeats
 OT  - SCA4
@@ -235,19 +249,19 @@ OT  - spinocerebellar ataxia 4
 OT  - trinucelotide repeats
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2023/12/01 00:43
-MHDA- 2023/12/01 00:43
+MHDA- 2024/01/08 06:42
 CRDT- 2023/11/30 21:46
 PHST- 2023/10/23 00:00 [received]
 PHST- 2023/11/17 00:00 [revised]
 PHST- 2023/11/19 00:00 [accepted]
-PHST- 2023/12/01 00:43 [medline]
+PHST- 2024/01/08 06:42 [medline]
 PHST- 2023/12/01 00:43 [pubmed]
 PHST- 2023/11/30 21:46 [entrez]
 AID - S0002-9297(23)00403-2 [pii]
 AID - 10.1016/j.ajhg.2023.11.008 [doi]
-PST - aheadofprint
-SO  - Am J Hum Genet. 2023 Nov 28:S0002-9297(23)00403-2. doi: 
-      10.1016/j.ajhg.2023.11.008.
+PST - ppublish
+SO  - Am J Hum Genet. 2024 Jan 4;111(1):82-95. doi: 10.1016/j.ajhg.2023.11.008. Epub 
+      2023 Nov 29.
 
 PMID- 20586826
 OWN - NLM
