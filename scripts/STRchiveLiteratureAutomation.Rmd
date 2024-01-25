@@ -377,10 +377,10 @@ for (i in 1:length(pubmed_results)) {
 ### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-#file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240103.tsv"
+file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240109.tsv"
 
 # Read the table into R
-#all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 library(ggplot2)
 library(ggrepel)
@@ -412,7 +412,12 @@ firstpub <- data.frame(
                        11285244L,20452998L,25196122L,11486088L,10581021L)
 )
 
+```
 
+
+
+
+``` {r more stuff}
 # Merge based on 'GeneName' and 'PMID'
 merged_df <- merge(firstpub, all_pub_info_df[, c("GeneName", "PMID", "PublicationYear")],
                    by = c("GeneName", "PMID"),
@@ -423,41 +428,38 @@ merged_df$PublicationYear[merged_df$PMID == 7951322] <- 1994
 merged_df$PublicationYear[merged_df$PMID == 11486088] <- 2001
 merged_df$PublicationYear[merged_df$PMID == 10581021] <- 1999
 
+```
 
+## Modify based on canonical first year
+```{r modify}
+
+library(dplyr)
+
+# Join 'earliest_years' with 'all_pmids' based on 'gene_name'
+merged_df <- inner_join(merged_df, all_pub_info_df, by = "GeneName")
+
+# Filter out rows where 'year' in 'earliest_years' is earlier than 'year' in 'all_pmids'
+filtered_df <- merged_df %>%
+  filter(PublicationYear.x <= PublicationYear.y)
+
+#filtered_df <- select(filtered_df, -PublicationYear.y)
+
+# Rename 'PublicationYear.x' to 'year'
+#filtered_df <- rename(filtered_df, year = year.x)
+
+
+```
+
+```{r plot}
 # Convert PublicationYear to numeric
 all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
 
-# Summarize data to get the minimum PublicationYear (not actual earliest, but can compare) for each GeneName
-summary_data <- all_pub_info_df %>%
+# Summarize data 
+summary_data <- filtered_df %>%
   group_by(GeneName) %>%
-  summarize(MinPublicationYear = min(PublicationYear, na.rm = TRUE), MaxPublicationYear = max(PublicationYear, na.rm = TRUE),
-            TotalPMIDs = n_distinct(PMID))  # Use n_distinct to count unique PMIDs
+  summarize(MinPublicationYear = min(PublicationYear.x, na.rm = TRUE), MaxPublicationYear = max(PublicationYear.y, na.rm = TRUE),
+            TotalPMIDs = n_distinct(PMID.y))  # Use n_distinct to count unique PMIDs
 
-
-# Merge based on 'GeneName'
-merged_df <- merge(merged_df, summary_data[, c("GeneName", "TotalPMIDs")],
-                   by = "GeneName", all.x = TRUE)  # 'all.x = TRUE' retains all rows from 'merged_df'
-
-# Create a scatter plot
-ggplot(merged_df, aes(x = PublicationYear, y = TotalPMIDs, label = GeneName)) +
-  geom_point() +
-  geom_text_repel(box.padding = 0.5, segment.color = "grey50", segment.size = 0.2) +  # Adjust ggrepel parameters
-  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
-       x = "Minimum Publication Year",
-       y = "Total Number of Unique PMIDs") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8))
-
-
-# Assuming your data frame is named all_pub_info_df
-# Convert PublicationYear to numeric
-all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
-
-# Summarize data to get the minimum PublicationYear for each GeneName
-summary_data <- all_pub_info_df %>%
-  group_by(GeneName) %>%
-  summarize(MinPublicationYear = min(PublicationYear, na.rm = TRUE),
-            TotalPMIDs = n_distinct(PMID))  # Use n_distinct to count unique PMIDs
 
 # Create a scatter plot with direct labels using ggrepel
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
@@ -473,6 +475,31 @@ ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneNam
 library(dplyr)
 sorted_pub_info <- all_pub_info_df %>%
   arrange(GeneName, PublicationYear)
+
+library(ggplot2)
+library(ggrepel)  # For geom_text_repel if you haven't loaded it already
+
+ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE, color = "blue") +  # Add line of best fit
+  geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 3) + 
+  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
+       x = "Minimum Publication Year",
+       y = "Total Number of Unique PMIDs") +
+  theme_minimal()
+
+
+ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_point() +
+  geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 3) + 
+  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
+       x = "Minimum Publication Year",
+       y = "Total Number of Unique PMIDs") +
+  scale_y_log10() +  # Set y-axis to log scale
+  theme_minimal()
+
 
 
 ```
