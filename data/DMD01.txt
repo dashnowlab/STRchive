@@ -1,4 +1,101 @@
 
+PMID- 38290145
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20240201
+LR  - 20240201
+IS  - 1531-5487 (Electronic)
+IS  - 1044-3983 (Linking)
+VI  - 35
+IP  - 2
+DP  - 2024 Mar 1
+TI  - Medicaid Expansion and Racial-Ethnic and Sex Disparities in Cardiovascular 
+      Diseases Over 6 Years: A Generalized Synthetic Control Approach.
+PG  - 263-272
+LID - 10.1097/EDE.0000000000001691 [doi]
+AB  - BACKGROUND: Studies have suggested Medicaid expansion enacted in 2014 has 
+      resulted in a reduction in overall cardiovascular disease (CVD) mortality in the 
+      United States. However, it is unknown whether Medicaid expansion has a similar 
+      effect across race-ethnicity and sex. We investigated the effect of Medicaid 
+      expansion on CVD mortality across race-ethnicity and sex. METHODS: Data come from 
+      the behavioral risk factor surveillance system and the US Centers for Disease 
+      Control's Wide-ranging Online Data for Epidemiologic Research, spanning the 
+      period 2000-2019. We used the generalized synthetic control method, a 
+      quasi-experimental approach, to estimate effects. RESULTS: Medicaid expansion was 
+      associated with -5.36 (mean difference [MD], 95% confidence interval [CI] = 
+      -22.63, 11.91) CVD deaths per 100,000 persons per year among Blacks; -4.28 (MD, 
+      95% CI = -30.08, 21.52) among Hispanics; -3.18 (MD, 95% CI = -8.30, 1.94) among 
+      Whites; -5.96 (MD, 95% CI = -15.42, 3.50) among men; and -3.34 (MD, 95% CI = 
+      -8.05, 1.37) among women. The difference in mean difference (DMD) between the 
+      effect of Medicaid expansion in Blacks compared with Whites was -2.18; (DMD, 95% 
+      CI = -20.20, 15.83); between that in Hispanics compared with Whites: -1.10; (DMD, 
+      95% CI = -27.40, 25.20) and between that in women compared with men: 2.62; (DMD, 
+      95% CI = -7.95, 13.19). CONCLUSIONS: Medicaid expansion was associated with a 
+      reduction in CVD mortality overall and in White, Black, Hispanic, male, and 
+      female subpopulations. Also, our study did not find any difference or disparity 
+      in the effect of Medicaid on CVD across race-ethnicity and sex-gender 
+      subpopulations, likely owing to imprecise estimates.
+CI  - Copyright (c) 2023 Wolters Kluwer Health, Inc. All rights reserved.
+FAU - Nianogo, Roch A
+AU  - Nianogo RA
+AUID- ORCID: 0000-0001-5932-6169
+AD  - From the Department of Epidemiology, Fielding School of Public Health, University 
+      of California, Los Angeles (UCLA), Los Angeles, CA.
+AD  - California Center for Population Research, UCLA, Los Angeles, CA.
+FAU - Zhao, Fan
+AU  - Zhao F
+AD  - From the Department of Epidemiology, Fielding School of Public Health, University 
+      of California, Los Angeles (UCLA), Los Angeles, CA.
+AD  - California Center for Population Research, UCLA, Los Angeles, CA.
+FAU - Li, Stephen
+AU  - Li S
+AD  - Los Angeles County Department of Public Health (LACDPH), Los Angeles, CA.
+FAU - Nishi, Akihiro
+AU  - Nishi A
+AD  - From the Department of Epidemiology, Fielding School of Public Health, University 
+      of California, Los Angeles (UCLA), Los Angeles, CA.
+AD  - California Center for Population Research, UCLA, Los Angeles, CA.
+AD  - Bedari Kindness Institute, University of California, Los Angeles, Los Angeles, 
+      CA.
+FAU - Basu, Sanjay
+AU  - Basu S
+AD  - Center for Primary Care, Harvard Medical School, Boston, MA.
+AD  - Research and Development, Waymark, San Francisco, CA.
+LA  - eng
+PT  - Journal Article
+DEP - 20230130
+PL  - United States
+TA  - Epidemiology
+JT  - Epidemiology (Cambridge, Mass.)
+JID - 9009644
+SB  - IM
+MH  - Female
+MH  - Humans
+MH  - Male
+MH  - *Cardiovascular Diseases/epidemiology
+MH  - Ethnicity
+MH  - Healthcare Disparities
+MH  - Hispanic or Latino
+MH  - Medicaid
+MH  - United States/epidemiology
+MH  - White
+MH  - Black or African American
+MH  - *Health Status Disparities
+MH  - Racial Groups
+MH  - Sex Factors
+COIS- The authors report no conflicts of interest.
+EDAT- 2024/01/30 18:42
+MHDA- 2024/02/01 06:42
+CRDT- 2024/01/30 17:25
+PHST- 2024/02/01 06:42 [medline]
+PHST- 2024/01/30 18:42 [pubmed]
+PHST- 2024/01/30 17:25 [entrez]
+AID - 00001648-202403000-00016 [pii]
+AID - 10.1097/EDE.0000000000001691 [doi]
+PST - ppublish
+SO  - Epidemiology. 2024 Mar 1;35(2):263-272. doi: 10.1097/EDE.0000000000001691. Epub 
+      2023 Jan 30.
+
 PMID- 37829280
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -295,7 +392,7 @@ SO  - Orphanet J Rare Dis. 2023 Jun 3;18(1):137. doi: 10.1186/s13023-023-02736-z
 PMID- 37090938
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20230909
+LR  - 20240211
 IS  - 2376-7839 (Print)
 IS  - 2376-7839 (Electronic)
 IS  - 2376-7839 (Linking)
@@ -565,7 +662,9 @@ AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.),
       Faculty of Medicine and Health, UNSW Sydney, Australia; and School of Biomedical 
       Sciences (G.R.), University of Western Australia, Perth, Australia.
 LA  - eng
+GR  - R01 HG009141/HG/NHGRI NIH HHS/United States
 GR  - T32 HG010464/HG/NHGRI NIH HHS/United States
+GR  - UM1 HG008900/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
 DEP - 20230314
 PL  - United States

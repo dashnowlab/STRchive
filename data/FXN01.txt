@@ -1,12 +1,13 @@
 
 PMID- 38141359
 OWN - NLM
-STAT- Publisher
-LR  - 20231223
+STAT- MEDLINE
+DCOM- 20240115
+LR  - 20240125
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Linking)
 VI  - 74
-DP  - 2023 Dec 16
+DP  - 2024 Feb
 TI  - Generation and characterization of two human iPSC lines, IGIBi014-A and 
       IGIBi015-A, from Friedreich's ataxia (FRDA) patients with pathogenic (GAA/TTC)n 
       repeat expansion in first intron of the Frataxin (FXN) gene.
@@ -44,33 +45,44 @@ AD  - Genomics and Molecular Medicine Division, CSIR - Institute of Genomics and
       of Human Pathology by Application Genomics and Stem Cells (iHPSCs-AG), India. 
       Electronic address: faruq.mohd@igib.in.
 LA  - eng
+GR  - RETE IDEA; RICERCA FINALIZZATA/ndian Council of Medical Research (ICMR)/
+GR  - 13(9173-A)/2021-POOL]/Senior Research Associate Fellowship/
 PT  - Journal Article
 DEP - 20231216
 PL  - England
 TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
+RN  - 0 (Frataxin)
 SB  - IM
+MH  - Humans
+MH  - *Friedreich Ataxia/metabolism
+MH  - Introns/genetics
+MH  - Frataxin
+MH  - *Induced Pluripotent Stem Cells/metabolism
+MH  - Cell Line
+MH  - Trinucleotide Repeat Expansion/genetics
 COIS- Declaration of competing interest The authors declare that they have no known 
       competing financial interests or personal relationships that could have appeared 
       to influence the work reported in this paper.
 EDAT- 2023/12/24 09:42
-MHDA- 2023/12/24 09:42
+MHDA- 2024/01/15 12:43
 CRDT- 2023/12/23 18:03
 PHST- 2023/11/01 00:00 [received]
 PHST- 2023/12/15 00:00 [accepted]
-PHST- 2023/12/24 09:42 [medline]
+PHST- 2024/01/15 12:43 [medline]
 PHST- 2023/12/24 09:42 [pubmed]
 PHST- 2023/12/23 18:03 [entrez]
 AID - S1873-5061(23)00275-1 [pii]
 AID - 10.1016/j.scr.2023.103289 [doi]
-PST - aheadofprint
-SO  - Stem Cell Res. 2023 Dec 16;74:103289. doi: 10.1016/j.scr.2023.103289.
+PST - ppublish
+SO  - Stem Cell Res. 2024 Feb;74:103289. doi: 10.1016/j.scr.2023.103289. Epub 2023 Dec 
+      16.
 
 PMID- 38063871
 OWN - NLM
 STAT- Publisher
-LR  - 20231208
+LR  - 20240122
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 DP  - 2023 Dec 8
@@ -143,9 +155,9 @@ AD  - Penn/CHOP Friedreich Ataxia Center of Excellence, Perelman School of Medic
 AD  - Department of Systems Pharmacology and Translational Therapeutics, Perelman 
       School of Medicine, University of Pennsylvania, Philadelphia, PA, 19104, USA.
 LA  - eng
+GR  - P30 ES013508/ES/NIEHS NIH HHS/United States
+GR  - 5P30ES013508./ES/NIEHS NIH HHS/United States
 GR  - U01NS114143/NS/NINDS NIH HHS/United States
-GR  - 5P30ES013508./ES/NIEHS NIH HHS/United States
-GR  - 5P30ES013508./ES/NIEHS NIH HHS/United States
 PT  - Journal Article
 DEP - 20231208
 PL  - Germany
@@ -177,7 +189,7 @@ PMID- 37891254
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231030
-LR  - 20231213
+LR  - 20240210
 IS  - 2399-3642 (Electronic)
 IS  - 2399-3642 (Linking)
 VI  - 6
@@ -2331,7 +2343,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20230322
+LR  - 20240207
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -2474,6 +2486,7 @@ GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
 GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
+GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0701075/MRC_/Medical Research Council/United Kingdom
 GR  - G0901254/MRC_/Medical Research Council/United Kingdom
 GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
@@ -8069,7 +8082,7 @@ PMID- 30761510
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200109
-LR  - 20200401
+LR  - 20240204
 IS  - 1878-7479 (Electronic)
 IS  - 1933-7213 (Print)
 IS  - 1878-7479 (Linking)
@@ -8201,7 +8214,7 @@ CRDT- 2019/02/15 06:00
 PHST- 2019/02/15 06:00 [pubmed]
 PHST- 2020/01/10 06:00 [medline]
 PHST- 2019/02/15 06:00 [entrez]
-AID - 10.1007/s13311-018-00706-z [pii]
+AID - S1878-7479(23)01887-1 [pii]
 AID - 706 [pii]
 AID - 10.1007/s13311-018-00706-z [doi]
 PST - ppublish

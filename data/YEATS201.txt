@@ -1,11 +1,13 @@
 
 PMID- 38128822
 OWN - NLM
-STAT- Publisher
-LR  - 20231221
+STAT- MEDLINE
+DCOM- 20240209
+LR  - 20240209
 IS  - 1873-5118 (Electronic)
 IS  - 0301-0082 (Linking)
-DP  - 2023 Dec 19
+VI  - 233
+DP  - 2024 Feb
 TI  - FAME4-associating YEATS2 knockdown impairs dopaminergic synaptic integrity and 
       leads to seizure-like behaviours in Drosophila melanogaster.
 PG  - 102558
@@ -28,9 +30,9 @@ AB  - Familial adult myoclonus epilepsy (FAME) is a neurological disorder caused
       by the administration of L-DOPA. This study reveals a novel role of YEATS2 in 
       neurons in regulating acute stress responses, locomotion, and complex behaviours, 
       and suggests that haploinsufficiency of YEATS2 may play a role in FAME4.
-CI  - Copyright (c) 2023 Elsevier Ltd. All rights reserved.
-FAU - Piccolo, Luca Lo
-AU  - Piccolo LL
+CI  - Copyright (c) 2024 Elsevier Ltd. All rights reserved.
+FAU - Lo Piccolo, Luca
+AU  - Lo Piccolo L
 AD  - Centre of Multidisciplinary Technology for Advanced Medicine (CMUTEAM), Faculty 
       of Medicine, Chiang Mai University, Chiang Mai, Thailand.
 FAU - Yeewa, Ranchana
@@ -52,13 +54,19 @@ AD  - Centre for the Advanced Study of Collective Behaviour, University of Konst
       Animal Behaviour, Konstanz, Germany.
 FAU - Phetcharaburanin, Jutarop
 AU  - Phetcharaburanin J
-AD  - International Phenome Laboratory, Khon Kaen University, Khon Kaen, Thailand.
+AD  - International Phenome Laboratory, Khon Kaen University, Khon Kaen, Thailand; 
+      Department of Systems Biosciences and Computational Medicine, Faculty of 
+      Medicine, Khon Kaen University, Khon Kaen, Thailand.
 FAU - Suksawat, Manida
 AU  - Suksawat M
-AD  - International Phenome Laboratory, Khon Kaen University, Khon Kaen, Thailand.
+AD  - International Phenome Laboratory, Khon Kaen University, Khon Kaen, Thailand; 
+      Department of Systems Biosciences and Computational Medicine, Faculty of 
+      Medicine, Khon Kaen University, Khon Kaen, Thailand.
 FAU - Kulthawatsiri, Thanaporn
 AU  - Kulthawatsiri T
-AD  - International Phenome Laboratory, Khon Kaen University, Khon Kaen, Thailand.
+AD  - International Phenome Laboratory, Khon Kaen University, Khon Kaen, Thailand; 
+      Department of Systems Biosciences and Computational Medicine, Faculty of 
+      Medicine, Khon Kaen University, Khon Kaen, Thailand.
 FAU - Shotelersuk, Vorasuk
 AU  - Shotelersuk V
 AD  - Centre of Excellence for Medical Genomics, Medical Genomics Cluster, Department 
@@ -74,33 +82,42 @@ AD  - Drosophila Centre for Human Diseases and Drug Discovery (DHD), Faculty of
       Electronic address: salinee.jan@cmu.ac.th.
 LA  - eng
 PT  - Journal Article
-DEP - 20231219
+DEP - 20231220
 PL  - England
 TA  - Prog Neurobiol
 JT  - Progress in neurobiology
 JID - 0370121
+RN  - VTD58H1Z2X (Dopamine)
 SB  - IM
+MH  - Animals
+MH  - *Drosophila melanogaster/genetics
+MH  - Dopamine
+MH  - Introns
+MH  - *Epilepsies, Myoclonic/genetics
+MH  - Seizures/genetics
 OTO - NOTNLM
+OT  - Dopamine
 OT  - Drosophila melanogaster
-OT  - dopamine
-OT  - familial adult myoclonic epilepsy type 4
-OT  - histone acylation
-OT  - tyrosine hydroxylase
-COIS- Declaration of Competing Interest The authors declare no competing interests in 
-      this work submitted in this paper.
+OT  - Familial adult myoclonic epilepsy type 4
+OT  - Histone acylation
+OT  - Tyrosine hydroxylase
+COIS- Declaration of Competing Interest The authors declare that they have no known 
+      competing financial interests or personal relationships that could have appeared 
+      to influence the work reported in this paper.
 EDAT- 2023/12/22 00:42
-MHDA- 2023/12/22 00:42
+MHDA- 2024/02/09 06:42
 CRDT- 2023/12/21 19:28
 PHST- 2023/05/03 00:00 [received]
 PHST- 2023/10/25 00:00 [revised]
 PHST- 2023/12/06 00:00 [accepted]
-PHST- 2023/12/22 00:42 [medline]
+PHST- 2024/02/09 06:42 [medline]
 PHST- 2023/12/22 00:42 [pubmed]
 PHST- 2023/12/21 19:28 [entrez]
 AID - S0301-0082(23)00159-4 [pii]
 AID - 10.1016/j.pneurobio.2023.102558 [doi]
-PST - aheadofprint
-SO  - Prog Neurobiol. 2023 Dec 19:102558. doi: 10.1016/j.pneurobio.2023.102558.
+PST - ppublish
+SO  - Prog Neurobiol. 2024 Feb;233:102558. doi: 10.1016/j.pneurobio.2023.102558. Epub 
+      2023 Dec 20.
 
 PMID- 31539032
 OWN - NLM

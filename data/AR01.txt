@@ -1,13 +1,261 @@
 
-PMID- 38171945
+PMID- 38326935
 OWN - NLM
 STAT- Publisher
-LR  - 20240103
+LR  - 20240207
+IS  - 1557-9042 (Electronic)
+IS  - 0897-7151 (Linking)
+DP  - 2024 Feb 7
+TI  - Predicting Hematoma Expansion and Prognosis in Cerebral Contusions: A 
+      Radiomics-Clinical Approach.
+LID - 10.1089/neu.2023.0410 [doi]
+AB  - Hemorrhagic progression of contusion (HPC) often occurs early in cerebral 
+      contusions (CC) patients, significantly impacting their prognosis. It is vital to 
+      promptly assess HPC and predict outcomes for effective tailored interventions, 
+      thereby enhancing prognosis in CC patients. We utilized the Attention-3DUNet 
+      neural network to semi-automatically segment hematomas from computed tomography 
+      (CT) images of 452 CC patients, incorporating 695 hematomas. Subsequently, 1,502 
+      radiomic features were extracted from 358 hematomas in 261 patients. After a 
+      selection process, these features were used to calculate the radiomic signature 
+      (Radscore). The Radscore, along with clinical features such as medical history, 
+      physical examinations, laboratory results, and radiological findings, was 
+      employed to develop predictive models. For prognosis (discharge Glasgow Outcome 
+      Scale score), radiomic features of each hematoma were augmented and fused for 
+      correlation. We employed various machine learning methodologies to create both a 
+      combined model, integrating radiomics and clinical features, and a clinical-only 
+      model. Nomograms based on logistic regression were constructed to visually 
+      represent the predictive procedure, and external validation was performed on 170 
+      patients from three additional centers. The results showed that for HPC, the 
+      combined model, incorporating hemoglobin levels, Rotterdam CT score of 3, 
+      multihematoma fuzzy sign (MFS), concurrent subdural hemorrhage (SDH), 
+      International normalized ratio (INR), and Radscore, achieved area under the 
+      receiver operating characteristic curve (AUC) values of 0.848 and 0.836 in the 
+      test and external validation cohorts, respectively. The clinical model predicting 
+      prognosis, utilizing age, Abbreviated Injury Scale for the head (AIS-Head), 
+      GCS-M, GCS-V, albumin, and Radscore, attained AUC values of 0.846 and 0.803 in 
+      the test and external validation cohorts, respectively. Selected radiomic 
+      features indicated that irregularly shaped and highly heterogeneous hematomas 
+      increased the likelihood of HPC, while larger weighted axial lengths and lower 
+      densities of hematomas were associated with a higher risk of poor prognosis. 
+      Predictive models that combine radiomic and clinical features exhibit robust 
+      performance in forecasting HPC and the risk of poor prognosis in CC patients. 
+      Radiomic features complement clinical features in predicting HPC, although their 
+      ability to enhance the predictive accuracy of the clinical model for adverse 
+      prognosis is limited.
+FAU - He, Haoyue
+AU  - He H
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China.
+AD  - Chongqing University, 47913, Bioengineering College, Chongqing, China; 
+      202119131010@cqu.edu.cn.
+FAU - Liu, Jinxin
+AU  - Liu J
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China.
+AD  - Chongqing University, 47913, School of Medicine, Chongqing, Chongqing, China; 
+      202237021008@stu.cqu.edu.cn.
+FAU - Li, Chuanming
+AU  - Li C
+AD  - Chongqing University Central Hospital, 159412, Medical Imaging Department, 
+      Chongqing, Chongqing, China; li_chuanming@yeah.net.
+FAU - Guo, Yi
+AU  - Guo Y
+AD  - Chongqing University Central Hospital, 159412, Medical Imaging Department, 
+      Chongqing, Chongqing, China; yiguo_0909@sina.com.
+FAU - Liang, Kaixin
+AU  - Liang K
+AD  - Yubei District Hospital of Traditional Chinese Medicine, Department of 
+      Neurosurgery, Chongqing, Chongqing, China; 44901620@qq.com.
+FAU - Du, Jun
+AU  - Du J
+AD  - Chongqing Qianjiang Central Hospital, 652654, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; 412766558@qq.com.
+FAU - Xue, Jun
+AU  - Xue J
+AD  - Bishan Hospital of Chongqing Medical University, 643861, Department of 
+      Neurosurgery, Chongqing, Chongqing, China; xuju0807@163.com.
+FAU - Liang, Yidan
+AU  - Liang Y
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; liangyidan0109@126.com.
+FAU - Chen, Peng
+AU  - Chen P
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; chenpengpph@163.com.
+FAU - Liu, Liu
+AU  - Liu L
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; drliu13845@163.com.
+FAU - Cui, Min
+AU  - Cui M
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; tocuimin@foxmail.com.
+FAU - Wang, Jia
+AU  - Wang J
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; sdwangjia@163.com.
+FAU - Liu, Ye
+AU  - Liu Y
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China.
+AD  - Chongqing University, 47913, School of Medicine, Chongqing, Chongqing, China; 
+      yeliu_medcqu@126.com.
+FAU - Tian, Shanshan
+AU  - Tian S
+AD  - Chongqing University Central Hospital, 159412, Department of Prehospital 
+      Emergency, Chongqing, Chongqing, China; 710836163@qq.com.
+FAU - Deng, Yongbing
+AU  - Deng Y
+AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
+      Chongqing, Chongqing, China; dyb0913@cqu.edu.cn.
+LA  - eng
+PT  - Journal Article
+DEP - 20240207
+PL  - United States
+TA  - J Neurotrauma
+JT  - Journal of neurotrauma
+JID - 8811626
+SB  - IM
+OTO - NOTNLM
+OT  - ASSESSMENT TOOLS
+OT  - CT SCANNING
+OT  - TRAUMATIC BRAIN INJURY
+EDAT- 2024/02/08 00:42
+MHDA- 2024/02/08 00:42
+CRDT- 2024/02/07 23:53
+PHST- 2024/02/08 00:42 [medline]
+PHST- 2024/02/08 00:42 [pubmed]
+PHST- 2024/02/07 23:53 [entrez]
+AID - 10.1089/neu.2023.0410 [doi]
+PST - aheadofprint
+SO  - J Neurotrauma. 2024 Feb 7. doi: 10.1089/neu.2023.0410.
+
+PMID- 38284836
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20240130
+LR  - 20240206
+IS  - 1097-4547 (Electronic)
+IS  - 0360-4012 (Linking)
+VI  - 102
+IP  - 1
+DP  - 2024 Jan
+TI  - A phenotypically robust model of spinal and bulbar muscular atrophy in 
+      Drosophila.
+PG  - e25278
+LID - 10.1002/jnr.25278 [doi]
+AB  - Spinal and bulbar muscular atrophy (SBMA) is an X-linked disorder that affects 
+      males who inherit the androgen receptor (AR) gene with an abnormal CAG triplet 
+      repeat expansion. The resulting protein contains an elongated polyglutamine 
+      (polyQ) tract and causes motor neuron degeneration in an androgen-dependent 
+      manner. The precise molecular sequelae of SBMA are unclear. To assist with its 
+      investigation and the identification of therapeutic options, we report here a new 
+      model of SBMA in Drosophila melanogaster. We generated transgenic flies that 
+      express the full-length, human AR with a wild-type or pathogenic polyQ repeat. 
+      Each transgene is inserted into the same safe harbor site on the third chromosome 
+      of the fly as a single copy and in the same orientation. Expression of pathogenic 
+      AR, but not of its wild-type variant, in neurons or muscles leads to consistent, 
+      progressive defects in longevity and motility that are concomitant with 
+      polyQ-expanded AR protein aggregation and reduced complexity in neuromuscular 
+      junctions. Additional assays show adult fly eye abnormalities associated with the 
+      pathogenic AR species. The detrimental effects of pathogenic AR are accentuated 
+      by feeding flies the androgen, dihydrotestosterone. This new, robust SBMA model 
+      can be a valuable tool toward future investigations of this incurable disease.
+CI  - (c) 2023 The Authors. Journal of Neuroscience Research published by Wiley 
+      Periodicals LLC.
+FAU - Richardson, Kristin
+AU  - Richardson K
+AUID- ORCID: 0000-0002-9146-8017
+AD  - Department of Physiology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+FAU - Sengupta, Medha
+AU  - Sengupta M
+AD  - Department of Biochemistry and Molecular Biology, Thomas Jefferson University 
+      Sidney Kimmel Medical College, Philadelphia, Pennsylvania, USA.
+FAU - Sujkowski, Alyson
+AU  - Sujkowski A
+AUID- ORCID: 0000-0002-9909-9279
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+FAU - Libohova, Kozeta
+AU  - Libohova K
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+FAU - Harris, Autumn C
+AU  - Harris AC
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+AD  - Maximizing Access to Science Careers Program, Wayne State University, Detroit, 
+      Michigan, USA.
+FAU - Wessells, Robert
+AU  - Wessells R
+AD  - Department of Physiology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+FAU - Merry, Diane E
+AU  - Merry DE
+AD  - Department of Biochemistry and Molecular Biology, Thomas Jefferson University 
+      Sidney Kimmel Medical College, Philadelphia, Pennsylvania, USA.
+FAU - Todi, Sokol V
+AU  - Todi SV
+AUID- ORCID: 0000-0003-4399-5549
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+AD  - Maximizing Access to Science Careers Program, Wayne State University, Detroit, 
+      Michigan, USA.
+AD  - Department of Neurology, Wayne State University School of Medicine, Detroit, 
+      Michigan, USA.
+LA  - eng
+GR  - GM/NIGMS NIH HHS/United States
+GR  - NS/NINDS NIH HHS/United States
+GR  - AG/NIA NIH HHS/United States
+PT  - Journal Article
+PL  - United States
+TA  - J Neurosci Res
+JT  - Journal of neuroscience research
+JID - 7600111
+RN  - 0 (Androgens)
+SB  - IM
+MH  - Adult
+MH  - Humans
+MH  - Male
+MH  - Animals
+MH  - *Drosophila
+MH  - Drosophila melanogaster
+MH  - Androgens
+MH  - *Bulbo-Spinal Atrophy, X-Linked/genetics
+MH  - Muscular Atrophy
+OTO - NOTNLM
+OT  - genetics
+OT  - muscle
+OT  - neuron
+OT  - polyglutamine
+OT  - triplet repeat
+EDAT- 2024/01/29 12:44
+MHDA- 2024/01/30 12:42
+CRDT- 2024/01/29 09:53
+PHST- 2023/10/14 00:00 [revised]
+PHST- 2023/07/19 00:00 [received]
+PHST- 2023/11/05 00:00 [accepted]
+PHST- 2024/01/30 12:42 [medline]
+PHST- 2024/01/29 12:44 [pubmed]
+PHST- 2024/01/29 09:53 [entrez]
+AID - 10.1002/jnr.25278 [doi]
+PST - ppublish
+SO  - J Neurosci Res. 2024 Jan;102(1):e25278. doi: 10.1002/jnr.25278.
+
+PMID- 38171945
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20240206
+LR  - 20240206
 IS  - 1938-0666 (Electronic)
 IS  - 1526-8209 (Linking)
-DP  - 2023 Nov 24
+VI  - 24
+IP  - 2
+DP  - 2024 Feb
 TI  - The Impact of Medicaid Expansion Under the Affordable Care Act on the Gap Between 
       American Indians and Whites in Breast Cancer Management and Prognosis.
+PG  - 142-155
 LID - S1526-8209(23)00301-4 [pii]
 LID - 10.1016/j.clbc.2023.11.006 [doi]
 AB  - BACKGROUND: Breast cancer (BC) death rates in the USA have not significantly 
@@ -69,6 +317,15 @@ TA  - Clin Breast Cancer
 JT  - Clinical breast cancer
 JID - 100898731
 SB  - IM
+MH  - United States/epidemiology
+MH  - Humans
+MH  - Female
+MH  - *Medicaid
+MH  - Patient Protection and Affordable Care Act
+MH  - *Breast Neoplasms/diagnosis/therapy
+MH  - American Indian or Alaska Native
+MH  - Retrospective Studies
+MH  - Prognosis
 OTO - NOTNLM
 OT  - Disparities
 OT  - National Cancer Database
@@ -76,19 +333,19 @@ COIS- Disclosure Ross D. Crosby is a paid statistical consultant for Health Outc
       Solutions, Winter Park, Florida. The remaining authors declare no conflict of 
       interest.
 EDAT- 2024/01/04 11:43
-MHDA- 2024/01/04 11:43
+MHDA- 2024/02/06 06:42
 CRDT- 2024/01/03 21:53
 PHST- 2023/05/22 00:00 [received]
 PHST- 2023/09/26 00:00 [revised]
 PHST- 2023/11/20 00:00 [accepted]
-PHST- 2024/01/04 11:43 [medline]
+PHST- 2024/02/06 06:42 [medline]
 PHST- 2024/01/04 11:43 [pubmed]
 PHST- 2024/01/03 21:53 [entrez]
 AID - S1526-8209(23)00301-4 [pii]
 AID - 10.1016/j.clbc.2023.11.006 [doi]
-PST - aheadofprint
-SO  - Clin Breast Cancer. 2023 Nov 24:S1526-8209(23)00301-4. doi: 
-      10.1016/j.clbc.2023.11.006.
+PST - ppublish
+SO  - Clin Breast Cancer. 2024 Feb;24(2):142-155. doi: 10.1016/j.clbc.2023.11.006. Epub 
+      2023 Nov 24.
 
 PMID- 38039182
 OWN - NLM
@@ -1372,7 +1629,7 @@ PMID- 36717478
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230425
-LR  - 20230427
+LR  - 20240204
 IS  - 1878-7479 (Electronic)
 IS  - 1933-7213 (Print)
 IS  - 1878-7479 (Linking)
@@ -1563,7 +1820,7 @@ PHST- 2023/01/07 00:00 [accepted]
 PHST- 2023/04/25 06:42 [medline]
 PHST- 2023/01/31 06:00 [pubmed]
 PHST- 2023/01/30 23:15 [entrez]
-AID - 10.1007/s13311-023-01343-x [pii]
+AID - S1878-7479(23)00096-X [pii]
 AID - 1343 [pii]
 AID - 10.1007/s13311-023-01343-x [doi]
 PST - ppublish
@@ -1680,13 +1937,17 @@ SO  - PLoS One. 2023 Jan 26;18(1):e0279430. doi: 10.1371/journal.pone.0279430.
 
 PMID- 36622568
 OWN - NLM
-STAT- Publisher
-LR  - 20230109
+STAT- MEDLINE
+DCOM- 20240111
+LR  - 20240116
 IS  - 2196-8837 (Electronic)
 IS  - 2196-8837 (Linking)
-DP  - 2023 Jan 9
+VI  - 11
+IP  - 1
+DP  - 2024 Feb
 TI  - Racial/Ethnic Differences in Association Between Medicaid Expansion and Causes 
       and Costs of Readmission After Acute Ischemic Stroke.
+PG  - 101-109
 LID - 10.1007/s40615-022-01501-5 [doi]
 AB  - OBJECTIVE: The purpose of this study was to examine whether the relative 
       frequency of leading causes and total associated costs of readmission after acute 
@@ -1734,24 +1995,32 @@ TA  - J Racial Ethn Health Disparities
 JT  - Journal of racial and ethnic health disparities
 JID - 101628476
 SB  - IM
+MH  - United States
+MH  - Humans
+MH  - Medicaid
+MH  - Patient Readmission
+MH  - *Ischemic Stroke
+MH  - Ethnicity
+MH  - *Sepsis
 OTO - NOTNLM
 OT  - Medicaid expansion
 OT  - Race/ethnic differences
 OT  - Readmissions
 OT  - Stroke
 EDAT- 2023/01/10 06:00
-MHDA- 2023/01/10 06:00
+MHDA- 2024/01/11 07:43
 CRDT- 2023/01/09 11:20
 PHST- 2022/08/07 00:00 [received]
 PHST- 2022/12/20 00:00 [accepted]
 PHST- 2022/12/16 00:00 [revised]
-PHST- 2023/01/09 11:20 [entrez]
+PHST- 2024/01/11 07:43 [medline]
 PHST- 2023/01/10 06:00 [pubmed]
-PHST- 2023/01/10 06:00 [medline]
+PHST- 2023/01/09 11:20 [entrez]
 AID - 10.1007/s40615-022-01501-5 [pii]
 AID - 10.1007/s40615-022-01501-5 [doi]
-PST - aheadofprint
-SO  - J Racial Ethn Health Disparities. 2023 Jan 9. doi: 10.1007/s40615-022-01501-5.
+PST - ppublish
+SO  - J Racial Ethn Health Disparities. 2024 Feb;11(1):101-109. doi: 
+      10.1007/s40615-022-01501-5. Epub 2023 Jan 9.
 
 PMID- 36599645
 OWN - NLM
@@ -3474,7 +3743,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20230322
+LR  - 20240207
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -3617,6 +3886,7 @@ GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
 GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
+GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0701075/MRC_/Medical Research Council/United Kingdom
 GR  - G0901254/MRC_/Medical Research Council/United Kingdom
 GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
@@ -6950,7 +7220,7 @@ PMID- 31303548
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200921
-LR  - 20220129
+LR  - 20240210
 IS  - 1875-9777 (Electronic)
 IS  - 1934-5909 (Print)
 IS  - 1875-9777 (Linking)
@@ -7089,8 +7359,8 @@ GR  - MC_UU_00016/7/MRC_/Medical Research Council/United Kingdom
 GR  - G0701761/MRC_/Medical Research Council/United Kingdom
 GR  - MR/L022982/1/MRC_/Medical Research Council/United Kingdom
 GR  - MC_UU_12009/7/MRC_/Medical Research Council/United Kingdom
-GR  - Wellcome Trust/United Kingdom
-GR  - CRUK_/Cancer Research UK/United Kingdom
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - 26670/CRUK_/Cancer Research UK/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 DEP - 20190711
@@ -12274,7 +12544,7 @@ PMID- 27669432
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170901
-LR  - 20181113
+LR  - 20240210
 IS  - 1476-5594 (Electronic)
 IS  - 0950-9232 (Print)
 IS  - 0950-9232 (Linking)
@@ -12391,6 +12661,7 @@ GR  - R01 CA193466/CA/NCI NIH HHS/United States
 GR  - R01 CA159945/CA/NCI NIH HHS/United States
 GR  - R01 CA176401/CA/NCI NIH HHS/United States
 GR  - R01 HG007538/HG/NHGRI NIH HHS/United States
+GR  - 20411/CRUK_/Cancer Research UK/United Kingdom
 GR  - P30 CA056036/CA/NCI NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural

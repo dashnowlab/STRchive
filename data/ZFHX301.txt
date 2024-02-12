@@ -1,12 +1,222 @@
 
-PMID- 38145611
+PMID- 38197134
 OWN - NLM
 STAT- Publisher
-LR  - 20231225
+LR  - 20240110
+IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Linking)
+DP  - 2024 Jan 10
+TI  - Adaptive Long-Read Sequencing Reveals GGC Repeat Expansion in ZFHX3 Associated 
+      with Spinocerebellar Ataxia Type 4.
+LID - 10.1002/mds.29704 [doi]
+AB  - BACKGROUND: Spinocerebellar ataxia type 4 (SCA4) is an autosomal dominant ataxia 
+      with invariable sensory neuropathy originally described in a family with Swedish 
+      ancestry residing in Utah more than 25 years ago. Despite tight linkage to the 
+      16q22 region, the molecular diagnosis has since remained elusive. OBJECTIVES: 
+      Inspired by pathogenic structural variation implicated in other 16q-ataxias with 
+      linkage to the same locus, we revisited the index SCA4 cases from the Utah family 
+      using novel technologies to investigate structural variation within the candidate 
+      region. METHODS: We adopted a targeted long-read sequencing approach with 
+      adaptive sampling on the Oxford Nanopore Technologies (ONT) platform that enables 
+      the detection of segregating structural variants within a genomic region without 
+      a priori assumptions about any variant features. RESULTS: Using this approach, we 
+      found a heterozygous (GGC)(n) repeat expansion in the last coding exon of the 
+      zinc finger homeobox 3 (ZFHX3) gene that segregates with disease, ranging between 
+      48 and 57 GGC repeats in affected probands. This finding was replicated in a 
+      separate family with SCA4. Furthermore, the estimation of this GGC repeat size in 
+      short-read whole genome sequencing (WGS) data of 21,836 individuals recruited to 
+      the 100,000 Genomes Project in the UK and our in-house dataset of 11,258 exomes 
+      did not reveal any pathogenic repeats, indicating that the variant is ultrarare. 
+      CONCLUSIONS: These findings support the utility of adaptive long-read sequencing 
+      as a powerful tool to decipher causative structural variation in unsolved cases 
+      of inherited neurological disease. (c) 2024 The Authors. Movement Disorders 
+      published by Wiley Periodicals LLC on behalf of International Parkinson and 
+      Movement Disorder Society.
+CI  - (c) 2024 The Authors. Movement Disorders published by Wiley Periodicals LLC on 
+      behalf of International Parkinson and Movement Disorder Society.
+FAU - Chen, Zhongbo
+AU  - Chen Z
+AUID- ORCID: 0000-0001-6668-7202
+AD  - Department of Neurodegenerative Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+AD  - Department of Genetics and Genomic Medicine, Great Ormond Street Institute of 
+      Child Health, University College London, London, United Kingdom.
+AD  - NIHR Great Ormond Street Hospital Biomedical Research Centre, University College 
+      London, London, United Kingdom.
+FAU - Gustavsson, Emil K
+AU  - Gustavsson EK
+AD  - Department of Genetics and Genomic Medicine, Great Ormond Street Institute of 
+      Child Health, University College London, London, United Kingdom.
+AD  - NIHR Great Ormond Street Hospital Biomedical Research Centre, University College 
+      London, London, United Kingdom.
+FAU - Macpherson, Hannah
+AU  - Macpherson H
+AD  - Department of Neurodegenerative Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+AD  - Department of Genetics and Genomic Medicine, Great Ormond Street Institute of 
+      Child Health, University College London, London, United Kingdom.
+FAU - Anderson, Claire
+AU  - Anderson C
+AD  - Department of Genetics and Genomic Medicine, Great Ormond Street Institute of 
+      Child Health, University College London, London, United Kingdom.
+AD  - NIHR Great Ormond Street Hospital Biomedical Research Centre, University College 
+      London, London, United Kingdom.
+FAU - Clarkson, Chris
+AU  - Clarkson C
+AD  - William Harvey Research Institute, Queen Mary University of London, London, 
+      United Kingdom.
+FAU - Rocca, Clarissa
+AU  - Rocca C
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+FAU - Self, Eleanor
+AU  - Self E
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+FAU - Alvarez Jerez, Pilar
+AU  - Alvarez Jerez P
+AD  - Department of Neurodegenerative Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, Maryland, USA.
+FAU - Scardamaglia, Annarita
+AU  - Scardamaglia A
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+FAU - Pellerin, David
+AU  - Pellerin D
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+FAU - Montgomery, Kylie
+AU  - Montgomery K
+AD  - Department of Genetics and Genomic Medicine, Great Ormond Street Institute of 
+      Child Health, University College London, London, United Kingdom.
+AD  - NIHR Great Ormond Street Hospital Biomedical Research Centre, University College 
+      London, London, United Kingdom.
+FAU - Lee, Jasmaine
+AU  - Lee J
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+FAU - Gagliardi, Delia
+AU  - Gagliardi D
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+FAU - Luo, Huihui
+AU  - Luo H
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+CN  - Genomics England Research Consortium
+FAU - Hardy, John
+AU  - Hardy J
+AD  - Department of Neurodegenerative Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+AD  - Reta Lila Weston Institute, Queen Square Institute of Neurology, University 
+      College London, London, United Kingdom.
+AD  - UK Dementia Research Institute, University College London, London, United 
+      Kingdom.
+AD  - NIHR University College London Hospitals Biomedical Research Centre, London, 
+      United Kingdom.
+AD  - Institute for Advanced Study, The Hong Kong University of Science and Technology, 
+      Hong Kong, China.
+FAU - Polke, James
+AU  - Polke J
+AD  - The Neurogenetics Laboratory, National Hospital for Neurology and Neurosurgery, 
+      London, United Kingdom.
+FAU - Singleton, Andrew B
+AU  - Singleton AB
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, Maryland, USA.
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, Maryland, USA.
+FAU - Blauwendraat, Cornelis
+AU  - Blauwendraat C
+AUID- ORCID: 0000-0001-9358-8111
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, Maryland, USA.
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, Maryland, USA.
+FAU - Mathews, Katherine D
+AU  - Mathews KD
+AD  - Department of Pediatrics, University of Iowa Carver College of Medicine, Iowa 
+      City, Iowa, USA.
+AD  - Department of Neurology, University of Iowa Carver College of Medicine, Iowa 
+      City, Iowa, USA.
+FAU - Tucci, Arianna
+AU  - Tucci A
+AD  - William Harvey Research Institute, Queen Mary University of London, London, 
+      United Kingdom.
+FAU - Fu, Ying-Hui
+AU  - Fu YH
+AD  - Department of Neurology, University of California San Francisco, San Francisco, 
+      California, USA.
+AD  - Institute for Human Genetics, University of California San Francisco, San 
+      Francisco, California, USA.
+AD  - Weill Institute for Neuroscience, University of California San Francisco, San 
+      Francisco, California, USA.
+AD  - Kavli Institute for Fundamental Neuroscience, University of California San 
+      Francisco, San Francisco, California, USA.
+FAU - Houlden, Henry
+AU  - Houlden H
+AUID- ORCID: 0000-0002-2866-7777
+AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
+      University College London, London, United Kingdom.
+AD  - The Neurogenetics Laboratory, National Hospital for Neurology and Neurosurgery, 
+      London, United Kingdom.
+FAU - Ryten, Mina
+AU  - Ryten M
+AD  - Department of Genetics and Genomic Medicine, Great Ormond Street Institute of 
+      Child Health, University College London, London, United Kingdom.
+AD  - NIHR Great Ormond Street Hospital Biomedical Research Centre, University College 
+      London, London, United Kingdom.
+FAU - Ptacek, Louis J
+AU  - Ptacek LJ
+AD  - Department of Neurology, University of California San Francisco, San Francisco, 
+      California, USA.
+AD  - Institute for Human Genetics, University of California San Francisco, San 
+      Francisco, California, USA.
+AD  - Weill Institute for Neuroscience, University of California San Francisco, San 
+      Francisco, California, USA.
+AD  - Kavli Institute for Fundamental Neuroscience, University of California San 
+      Francisco, San Francisco, California, USA.
+LA  - eng
+GR  - MRC/
+GR  - Leonard Wolfson Foundation/
+PT  - Journal Article
+DEP - 20240110
+PL  - United States
+TA  - Mov Disord
+JT  - Movement disorders : official journal of the Movement Disorder Society
+JID - 8610688
+SB  - IM
+OTO - NOTNLM
+OT  - ataxia
+OT  - long-read sequencing
+OT  - repeat expansion disorder
+EDAT- 2024/01/10 06:42
+MHDA- 2024/01/10 06:42
+CRDT- 2024/01/10 03:53
+PHST- 2023/11/29 00:00 [revised]
+PHST- 2023/11/03 00:00 [received]
+PHST- 2023/12/15 00:00 [accepted]
+PHST- 2024/01/10 06:42 [medline]
+PHST- 2024/01/10 06:42 [pubmed]
+PHST- 2024/01/10 03:53 [entrez]
+AID - 10.1002/mds.29704 [doi]
+PST - aheadofprint
+SO  - Mov Disord. 2024 Jan 10. doi: 10.1002/mds.29704.
+
+PMID- 38145611
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20240122
+LR  - 20240202
 IS  - 1873-5126 (Electronic)
 IS  - 1353-8020 (Linking)
 VI  - 119
-DP  - 2023 Dec 20
+DP  - 2024 Feb
 TI  - Unraveling the genetic landscape of undiagnosed cerebellar ataxia in Brazilian 
       patients.
 PG  - 105961
@@ -83,7 +293,17 @@ PL  - England
 TA  - Parkinsonism Relat Disord
 JT  - Parkinsonism & related disorders
 JID - 9513583
+RN  - 0 (KIF1A protein, human)
+RN  - EC 3.6.4.4 (Kinesins)
 SB  - IM
+MH  - Humans
+MH  - *Cerebellar Ataxia/diagnosis/genetics
+MH  - Brazil
+MH  - Ataxia/genetics
+MH  - Phenotype
+MH  - Mutation/genetics
+MH  - *Spinocerebellar Degenerations/complications
+MH  - Kinesins/genetics
 OTO - NOTNLM
 OT  - Expansion hunter
 OT  - Hereditary cerebellar ataxia
@@ -93,26 +313,27 @@ COIS- Declaration of competing interest The authors declare that they have no kn
       competing financial interests or personal relationships that could have appeared 
       to influence the work reported in this paper.
 EDAT- 2023/12/26 00:42
-MHDA- 2023/12/26 00:42
+MHDA- 2024/01/22 06:43
 CRDT- 2023/12/25 18:01
 PHST- 2023/10/10 00:00 [received]
 PHST- 2023/12/12 00:00 [revised]
 PHST- 2023/12/12 00:00 [accepted]
-PHST- 2023/12/26 00:42 [medline]
+PHST- 2024/01/22 06:43 [medline]
 PHST- 2023/12/26 00:42 [pubmed]
 PHST- 2023/12/25 18:01 [entrez]
 AID - S1353-8020(23)01040-4 [pii]
 AID - 10.1016/j.parkreldis.2023.105961 [doi]
-PST - aheadofprint
-SO  - Parkinsonism Relat Disord. 2023 Dec 20;119:105961. doi: 
-      10.1016/j.parkreldis.2023.105961.
+PST - ppublish
+SO  - Parkinsonism Relat Disord. 2024 Feb;119:105961. doi: 
+      10.1016/j.parkreldis.2023.105961. Epub 2023 Dec 20.
 
 PMID- 38035881
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240108
-LR  - 20240108
+LR  - 20240127
 IS  - 1537-6605 (Electronic)
+IS  - 0002-9297 (Print)
 IS  - 0002-9297 (Linking)
 VI  - 111
 IP  - 1
@@ -236,6 +457,7 @@ MH  - *Cerebellar Ataxia/genetics
 MH  - Phenotype
 MH  - *Spinocerebellar Degenerations/genetics
 MH  - Homeodomain Proteins/genetics
+PMC - PMC10806739
 OTO - NOTNLM
 OT  - GGC repeats
 OT  - SCA4

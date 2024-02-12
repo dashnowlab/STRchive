@@ -12,13 +12,13 @@ library(rentrez)
 library(dplyr)
 library(easyPubMed)
 library(stringr)
+library(ggplot2)
+library(ggrepel)
 ```
 
 ## Automating STRchive Literature Management
 
 The goal for this Markdown is to be a repository of code that assists with literature management for the living database, STRchive.
-
-Running tasks: - Plot number of papers by year of first publication for sanity check \### Defining the Gene List
 
 ```{r genelist}
 #data <- read.csv("/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv", header = TRUE)
@@ -377,13 +377,10 @@ for (i in 1:length(pubmed_results)) {
 ### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240109.tsv"
+#file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240109.tsv"
 
 # Read the table into R
-all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
-
-library(ggplot2)
-library(ggrepel)
+#all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 firstpub <- data.frame(
   stringsAsFactors = FALSE,
@@ -402,7 +399,7 @@ firstpub <- data.frame(
                        19587282L,7842016L,7951322L,11017075L,8896556L,
                        7874163L,8908515L,10192387L,19878914L,22154785L,9371901L,
                        7603564L,9887340L,9126745L,28686858L,17236128L,
-                       36048237L,8288237L,24360810L,36516086L,1605194L,
+                       27417533L,8288237L,24360810L,36516086L,1605194L,
                        15591279L,8596916L,32413282L,30970188L,15385446L,11543619L,
                        8401589L,11694876L,31332380L,31664039L,31286297L,
                        21683323L,31332380L,31332380L,9462747L,12640453L,
@@ -432,8 +429,7 @@ merged_df$PublicationYear[merged_df$PMID == 10581021] <- 1999
 
 ## Modify based on canonical first year
 ```{r modify}
-
-library(dplyr)
+all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
 
 # Join 'earliest_years' with 'all_pmids' based on 'gene_name'
 merged_df <- inner_join(merged_df, all_pub_info_df, by = "GeneName")
@@ -441,6 +437,11 @@ merged_df <- inner_join(merged_df, all_pub_info_df, by = "GeneName")
 # Filter out rows where 'year' in 'earliest_years' is earlier than 'year' in 'all_pmids'
 filtered_df <- merged_df %>%
   filter(PublicationYear.x <= PublicationYear.y)
+
+DMD_dont_trust <- c(27529242L, 27276190L, 27178005L, 29687370L, 30794581L, 33349121L, 34238289L, 34371182L, 35615378L, 37090938L, 37270548L, 37829280L)
+
+# Filter rows where PMID.y value does not match any value in DMD_dont_trust 
+filtered_df <- filtered_df[!(filtered_df$PMID.y %in% DMD_dont_trust & filtered_df$GeneName == "DMD"), ]
 
 #filtered_df <- select(filtered_df, -PublicationYear.y)
 
@@ -451,39 +452,31 @@ filtered_df <- merged_df %>%
 ```
 
 ```{r plot}
-# Convert PublicationYear to numeric
-all_pub_info_df$PublicationYear <- as.numeric(all_pub_info_df$PublicationYear)
-
 # Summarize data 
 summary_data <- filtered_df %>%
   group_by(GeneName) %>%
   summarize(MinPublicationYear = min(PublicationYear.x, na.rm = TRUE), MaxPublicationYear = max(PublicationYear.y, na.rm = TRUE),
             TotalPMIDs = n_distinct(PMID.y))  # Use n_distinct to count unique PMIDs
 
-
 # Create a scatter plot with direct labels using ggrepel
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
   geom_point() +
   geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
-                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 3) + 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 6) + 
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
        x = "Minimum Publication Year",
        y = "Total Number of Unique PMIDs") +
   theme_minimal()
 
 
-library(dplyr)
 sorted_pub_info <- all_pub_info_df %>%
   arrange(GeneName, PublicationYear)
-
-library(ggplot2)
-library(ggrepel)  # For geom_text_repel if you haven't loaded it already
 
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
   geom_point() +
   geom_smooth(method = "lm", se = TRUE, color = "blue") +  # Add line of best fit
   geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
-                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 3) + 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 6) + 
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
        x = "Minimum Publication Year",
        y = "Total Number of Unique PMIDs") +
@@ -493,7 +486,7 @@ ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneNam
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
   geom_point() +
   geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
-                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 3) + 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 6) + 
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
        x = "Minimum Publication Year",
        y = "Total Number of Unique PMIDs") +
