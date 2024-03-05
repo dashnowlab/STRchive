@@ -21,21 +21,32 @@ disease.loci$int_max_bp = disease.loci$intermediate_max * disease.loci$repeatuni
 disease.loci$path_min_bp = disease.loci$pathogenic_min * disease.loci$repeatunitlen
 disease.loci$path_max_bp = disease.loci$pathogenic_max * disease.loci$repeatunitlen
 
+disease.loci$norm_min_bp[disease.loci$norm_min_bp == 0] = NA
+disease.loci$norm_max_bp[disease.loci$norm_max_bp == 0] = NA
+
+disease.loci$disease_id = reorder(disease.loci$disease_id, -disease.loci$path_min_bp)
+
+disease.loci = subset(disease.loci, !grepl("conflicting evidence", disease.loci$details))
+
 # Allele size
 p_size = ggplot(disease.loci, aes(x = disease_id)) +
-  geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp + 1, color = 'Normal'
-                     ), linewidth = 1.5) +
   geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp + 1, color = 'Intermediate*'
-                     ), linewidth = 1.5) +
+  ), linewidth = 2) +
   geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp + 1, color = 'Pathogenic'
-                     ), linewidth = 1.5) +
+  ), linewidth = 2) +
+  geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp + 1, color = 'Benign'
+  ), linewidth = 2) +
   scale_y_continuous(name = 'Allele size in base pairs', trans = 'log10') +
   scale_x_discrete(name = 'Disease') +
-  scale_colour_brewer(palette = 'Accent', breaks = c('Normal', 'Intermediate*', 'Pathogenic'), name = 'Allele size') + 
+  scale_colour_manual(values = c('Benign' = '#00AFBB', 'Intermediate*' = '#E7B800', 'Pathogenic' = '#FC4E07'), 
+                      breaks = c('Benign', 'Intermediate*', 'Pathogenic'),
+                      name = 'Allele size') +
   theme(panel.grid.major.x = element_line(color = 'lightgrey', linetype = 'longdash')) +
   coord_flip()
 
 htmltools::save_html(ggplotly(p_size, height = 1000), "images/plotly_path_size.html")
+
+disease.loci$Inheritance = factor(disease.loci$Inheritance, levels = c("AD/AR", "AD", "AR", "XD", "XR"))
 
 # Age of onset
 p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease.loci$Inheritance != '') , 
@@ -46,6 +57,7 @@ p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease
   geom_point(aes(y = age_onset_max), size = 2.5) +
   scale_y_continuous(name = 'Age of onset (years)') +
   scale_x_discrete(name = 'Disease') +
+  scale_color_brewer(palette = 'Paired', direction = -1) +
   geom_segment(aes(x = 1, y = 18, xend = 58, yend = 18), linetype = 'longdash', color = 'lightgrey') +
   coord_flip()
 
