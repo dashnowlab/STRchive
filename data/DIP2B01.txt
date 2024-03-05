@@ -1,4 +1,248 @@
 
+PMID- 38418263
+OWN - NLM
+STAT- Publisher
+LR  - 20240228
+IS  - 2352-3964 (Electronic)
+IS  - 2352-3964 (Linking)
+DP  - 2024 Feb 26
+TI  - Genome-wide enhancer-associated tandem repeats are expanded in cardiomyopathy.
+PG  - 105027
+LID - S2352-3964(24)00062-8 [pii]
+LID - 10.1016/j.ebiom.2024.105027 [doi]
+AB  - BACKGROUND: Cardiomyopathy is a clinically and genetically heterogeneous heart 
+      condition that can lead to heart failure and sudden cardiac death in childhood. 
+      While it has a strong genetic basis, the genetic aetiology for over 50% of 
+      cardiomyopathy cases remains unknown. METHODS: In this study, we analyse the 
+      characteristics of tandem repeats from genome sequence data of unrelated 
+      individuals diagnosed with cardiomyopathy from Canada and the United Kingdom 
+      (n = 1216) and compare them to those found in the general population. We perform 
+      burden analysis to identify genomic and epigenomic features that are impacted by 
+      rare tandem repeat expansions (TREs), and enrichment analysis to identify 
+      functional pathways that are involved in the TRE-associated genes in 
+      cardiomyopathy. We use Oxford Nanopore targeted long-read sequencing to validate 
+      repeat size and methylation status of one of the most recurrent TREs. We also 
+      compare the TRE-associated genes to those that are dysregulated in the heart 
+      tissues of individuals with cardiomyopathy. FINDINGS: We demonstrate that tandem 
+      repeats that are rarely expanded in the general population are predominantly 
+      expanded in cardiomyopathy. We find that rare TREs are disproportionately present 
+      in constrained genes near transcriptional start sites, have high GC content, and 
+      frequently overlap active enhancer H3K27ac marks, where expansion-related DNA 
+      methylation may reduce gene expression. We demonstrate the gene silencing effect 
+      of expanded CGG tandem repeats in DIP2B through promoter hypermethylation. We 
+      show that the enhancer-associated loci are found in genes that are highly 
+      expressed in human cardiomyocytes and are differentially expressed in the left 
+      ventricle of the heart in individuals with cardiomyopathy. INTERPRETATION: Our 
+      findings highlight the underrecognized contribution of rare tandem repeat 
+      expansions to the risk of cardiomyopathy and suggest that rare TREs contribute to 
+       approximately 4% of cardiomyopathy risk. FUNDING: Government of Ontario (RKCY), The Canadian 
+      Institutes of Health Research PJT 175329 (RKCY), The Azrieli Foundation (RKCY), 
+      SickKids Catalyst Scholar in Genetics (RKCY), The University of Toronto 
+      McLaughlin Centre (RKCY, SM), Ted Rogers Centre for Heart Research (SM), Data 
+      Sciences Institute at the University of Toronto (SM), The Canadian Institutes of 
+      Health Research PJT 175034 (SM), The Canadian Institutes of Health Research ENP 
+      161429 under the frame of ERA PerMed (SM, RL), Heart and Stroke Foundation of 
+      Ontario & Robert M Freedom Chair in Cardiovascular Science (SM), Bitove Family 
+      Professorship of Adult Congenital Heart Disease (EO), Canada Foundation for 
+      Innovation (SWS, JR), Canada Research Chair (PS), Genome Canada (PS, JR), The 
+      Canadian Institutes of Health Research (PS).
+CI  - Copyright (c) 2024 The Author(s). Published by Elsevier B.V. All rights reserved.
+FAU - Mitina, Aleksandra
+AU  - Mitina A
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Khan, Mahreen
+AU  - Khan M
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; Department of Molecular Genetics, University of Toronto; Toronto, 
+      Ontario, Canada.
+FAU - Lesurf, Robert
+AU  - Lesurf R
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Yin, Yue
+AU  - Yin Y
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Engchuan, Worrawat
+AU  - Engchuan W
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Hamdan, Omar
+AU  - Hamdan O
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Pellecchia, Giovanna
+AU  - Pellecchia G
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Trost, Brett
+AU  - Trost B
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Backstrom, Ian
+AU  - Backstrom I
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Guo, Keyi
+AU  - Guo K
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Pallotto, Linda M
+AU  - Pallotto LM
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Lam Doong, Phoenix Hoi
+AU  - Lam Doong PH
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada.
+FAU - Wang, Zhuozhi
+AU  - Wang Z
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Nalpathamkalam, Thomas
+AU  - Nalpathamkalam T
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Thiruvahindrapuram, Bhooma
+AU  - Thiruvahindrapuram B
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada.
+FAU - Papaz, Tanya
+AU  - Papaz T
+AD  - Ted Rogers Centre for Heart Research; Toronto, Ontario, Canada; Division of 
+      Cardiology, Department of Pediatrics, The Hospital for Sick Children, University 
+      of Toronto; Toronto, Ontario, Canada.
+FAU - Pearson, Christopher E
+AU  - Pearson CE
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; Department of Molecular Genetics, University of Toronto; Toronto, 
+      Ontario, Canada.
+FAU - Ragoussis, Jiannis
+AU  - Ragoussis J
+AD  - McGill Genome Centre, Victor Phillip Dahdaleh Institute of Genomic Medicine, 
+      McGill University, Montreal, Quebec, Canada.
+FAU - Subbarao, Padmaja
+AU  - Subbarao P
+AD  - Department of Paediatrics, Faculty of Medicine, University of Toronto, Toronto, 
+      Ontario, Canada; Department of Physiology, University of Toronto, Toronto, 
+      Ontario, Canada; Program in Translation Medicine & Division of Respiratory 
+      Medicine, The Hospital for Sick Children, Toronto, Ontario, Canada.
+FAU - Azad, Meghan B
+AU  - Azad MB
+AD  - Department of Pediatrics and Child Health, University of Manitoba, Winnipeg, 
+      Manitoba, Canada.
+FAU - Turvey, Stuart E
+AU  - Turvey SE
+AD  - Department of Pediatrics, BC Children's Hospital, University of British Columbia, 
+      Vancouver, British Columbia, Canada.
+FAU - Mandhane, Piushkumar
+AU  - Mandhane P
+AD  - Department of Pediatrics, Faculty of Medicine and Dentistry, University of 
+      Alberta, Edmonton, Alberta, Canada.
+FAU - Moraes, Theo J
+AU  - Moraes TJ
+AD  - Department of Paediatrics, Faculty of Medicine, University of Toronto, Toronto, 
+      Ontario, Canada; Program in Translation Medicine & Division of Respiratory 
+      Medicine, The Hospital for Sick Children, Toronto, Ontario, Canada.
+FAU - Simons, Elinor
+AU  - Simons E
+AD  - Department of Pediatrics and Child Health, Section of Allergy and Clinical 
+      Immunology, University of Manitoba, Winnipeg, Manitoba, Canada; Children's 
+      Hospital Research Institute of Manitoba, Winnipeg, Manitoba, Canada.
+FAU - Scherer, Stephen W
+AU  - Scherer SW
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; The Centre for Applied Genomics, The Hospital for Sick Children; Toronto, 
+      Ontario, Canada; Department of Molecular Genetics and McLaughlin Centre, 
+      University of Toronto, Toronto, Ontario, Canada.
+FAU - Lougheed, Jane
+AU  - Lougheed J
+AD  - Division of Cardiology, Children's Hospital of Eastern Ontario, Ottawa, Ontario, 
+      Canada.
+FAU - Mondal, Tapas
+AU  - Mondal T
+AD  - Division of Cardiology, Department of Pediatrics, McMaster Children's Hospital, 
+      Hamilton, Ontario, Canada.
+FAU - Smythe, John
+AU  - Smythe J
+AD  - Division of Cardiology, Department of Pediatrics, Kingston General Hospital, 
+      Kingston, Ontario, Canada.
+FAU - Altamirano-Diaz, Luis
+AU  - Altamirano-Diaz L
+AD  - Division of Cardiology, Department of Pediatrics, London Health Sciences Centre, 
+      London, Ontario, Canada.
+FAU - Oechslin, Erwin
+AU  - Oechslin E
+AD  - Division of Cardiology, Toronto Adult Congenital Heart Disease Program at Peter 
+      Munk Cardiac Centre, Department of Medicine, University Health Network, and 
+      University of Toronto, Toronto, Ontario, Canada.
+FAU - Mital, Seema
+AU  - Mital S
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; Ted Rogers Centre for Heart Research; Toronto, Ontario, Canada; Division 
+      of Cardiology, Department of Pediatrics, The Hospital for Sick Children, 
+      University of Toronto; Toronto, Ontario, Canada. Electronic address: 
+      seema.mital@sickkids.ca.
+FAU - Yuen, Ryan K C
+AU  - Yuen RKC
+AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Ontario, 
+      Canada; Department of Molecular Genetics, University of Toronto; Toronto, 
+      Ontario, Canada; The Centre for Applied Genomics, The Hospital for Sick Children; 
+      Toronto, Ontario, Canada. Electronic address: ryan.yuen@sickkids.ca.
+LA  - eng
+PT  - Journal Article
+DEP - 20240226
+PL  - Netherlands
+TA  - EBioMedicine
+JT  - EBioMedicine
+JID - 101647039
+SB  - IM
+OTO - NOTNLM
+OT  - Cardiomyopathy (CMP)
+OT  - Long-read sequencing
+OT  - Tandem repeat expansions (TREs)
+OT  - Transcription regulation
+COIS- Declaration of interests SM holds the Heart and Stroke Foundation of 
+      Canada/Robert M Freedom Chair in Cardiovascular Science and serves on the 
+      Advisory Board for Bristol Myers Squibb and Tenaya Therapeutics. EO holds the 
+      Bitove Family Professorship of Adult Congenital Heart Disease. SWS is on the 
+      Scientific Advisory Committees of Population Bio, Inc. and Deep Genomics and 
+      serves as a Highly Cited Academic Advisor for the King Abdulaziz University. SWS 
+      and RY hold patent entitled "Genome-wide Detection of DNA Repeats Expanded in 
+      Disease" (WO2021119840A1). PM is a Senior Medical Director at Maternal Newborn 
+      Child Youth Strategic Clinical Network (Alberta Health Services) and was 
+      supported for attending Clinical Microbiology and Infectious Diseases, Long COVID 
+      and ENRICH meetings. TJM received support from CIHR, PSI and SickKids Foundation, 
+      CAMH and GSK. ES received support from COVID-19 Immune Task Force, Children's 
+      Hospital Foundation and CIHR, and is on the American Academy of Allergy, Asthma, 
+      and Immunology Credentials Committee. JR is supported by Canada Foundation for 
+      Innovation and received support for attending Ultima Biosciences and 10x Genomics 
+      meetings. Illumina, Inc. provided sequencing reagents for the CHILD cohort study. 
+      CHILD cohort study was supported by CIHR, AllerGen NCE, Alberta Health, Public 
+      Health Agency of Canada and Women's and Children's Health Research. Other authors 
+      declare that they have no competing interests.
+EDAT- 2024/02/29 00:43
+MHDA- 2024/02/29 00:43
+CRDT- 2024/02/28 21:52
+PHST- 2023/09/29 00:00 [received]
+PHST- 2024/02/05 00:00 [revised]
+PHST- 2024/02/06 00:00 [accepted]
+PHST- 2024/02/29 00:43 [medline]
+PHST- 2024/02/29 00:43 [pubmed]
+PHST- 2024/02/28 21:52 [entrez]
+AID - S2352-3964(24)00062-8 [pii]
+AID - 10.1016/j.ebiom.2024.105027 [doi]
+PST - aheadofprint
+SO  - EBioMedicine. 2024 Feb 26:105027. doi: 10.1016/j.ebiom.2024.105027.
+
 PMID- 37248219
 OWN - NLM
 STAT- MEDLINE

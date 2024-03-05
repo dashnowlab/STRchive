@@ -130,14 +130,18 @@ SO  - Cornea. 2024 Feb 1. doi: 10.1097/ICO.0000000000003488.
 
 PMID- 37747538
 OWN - NLM
-STAT- Publisher
-LR  - 20230925
+STAT- MEDLINE
+DCOM- 20240304
+LR  - 20240304
 IS  - 1435-702X (Electronic)
 IS  - 0721-832X (Linking)
-DP  - 2023 Sep 25
+VI  - 262
+IP  - 3
+DP  - 2024 Mar
 TI  - Nanopore sequencing method for CTG18.1 expansion in TCF4 in late-onset Fuchs 
       endothelial corneal dystrophy and a comparison of the structural features of 
       cornea with first-degree relatives.
+PG  - 903-911
 LID - 10.1007/s00417-023-06243-6 [doi]
 AB  - BACKGROUND: To evaluate the relationship between the number of trinucleotide 
       repeats (TNR) in late-onset Fuchs corneal endothelial dystrophy (FCED) and to 
@@ -182,7 +186,16 @@ TA  - Graefes Arch Clin Exp Ophthalmol
 JT  - Graefe's archive for clinical and experimental ophthalmology = Albrecht von 
       Graefes Archiv fur klinische und experimentelle Ophthalmologie
 JID - 8205248
+RN  - 0 (TCF4 protein, human)
+RN  - 0 (Transcription Factor 4)
+RN  - Corneal dystrophy, Fuchs' endothelial, 2
 SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/diagnosis/genetics
+MH  - Endothelial Cells
+MH  - *Nanopore Sequencing
+MH  - Cornea
+MH  - Transcription Factor 4/genetics
 OTO - NOTNLM
 OT  - CTG repeat
 OT  - Fuchs corneal endothelial dystrophy
@@ -190,18 +203,19 @@ OT  - Nanopore sequencing
 OT  - TCF-4
 OT  - Trinucleotide repeat number
 EDAT- 2023/09/25 12:42
-MHDA- 2023/09/25 12:42
+MHDA- 2024/03/04 06:44
 CRDT- 2023/09/25 11:07
 PHST- 2022/03/23 00:00 [received]
 PHST- 2023/09/15 00:00 [accepted]
 PHST- 2023/09/12 00:00 [revised]
-PHST- 2023/09/25 12:42 [medline]
+PHST- 2024/03/04 06:44 [medline]
 PHST- 2023/09/25 12:42 [pubmed]
 PHST- 2023/09/25 11:07 [entrez]
 AID - 10.1007/s00417-023-06243-6 [pii]
 AID - 10.1007/s00417-023-06243-6 [doi]
-PST - aheadofprint
-SO  - Graefes Arch Clin Exp Ophthalmol. 2023 Sep 25. doi: 10.1007/s00417-023-06243-6.
+PST - ppublish
+SO  - Graefes Arch Clin Exp Ophthalmol. 2024 Mar;262(3):903-911. doi: 
+      10.1007/s00417-023-06243-6. Epub 2023 Sep 25.
 
 PMID- 37204786
 OWN - NLM
@@ -2408,7 +2422,7 @@ PMID- 31276570
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200303
-LR  - 20221207
+LR  - 20240221
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 14
@@ -2500,7 +2514,6 @@ PL  - United States
 TA  - PLoS One
 JT  - PloS one
 JID - 101285081
-RN  - 0 (RNA, Guide)
 RN  - 0 (TCF4 protein, human)
 RN  - 0 (Transcription Factor 4)
 SB  - IM
@@ -2515,10 +2528,10 @@ MH  - Genomics/methods
 MH  - Genotype
 MH  - Humans
 MH  - Phenotype
-MH  - RNA, Guide, Kinetoplastida
 MH  - Transcription Factor 4/*genetics
 MH  - *Trinucleotide Repeat Expansion
 MH  - Trinucleotide Repeats
+MH  - RNA, Guide, CRISPR-Cas Systems
 PMC - PMC6611681
 COIS- B.B., I.J.M and J.M.E. are employees of Pacific Biosciences. All other authors 
       declare that no competing interests exist.

@@ -1,135 +1,4 @@
 
-PMID- 38326935
-OWN - NLM
-STAT- Publisher
-LR  - 20240207
-IS  - 1557-9042 (Electronic)
-IS  - 0897-7151 (Linking)
-DP  - 2024 Feb 7
-TI  - Predicting Hematoma Expansion and Prognosis in Cerebral Contusions: A 
-      Radiomics-Clinical Approach.
-LID - 10.1089/neu.2023.0410 [doi]
-AB  - Hemorrhagic progression of contusion (HPC) often occurs early in cerebral 
-      contusions (CC) patients, significantly impacting their prognosis. It is vital to 
-      promptly assess HPC and predict outcomes for effective tailored interventions, 
-      thereby enhancing prognosis in CC patients. We utilized the Attention-3DUNet 
-      neural network to semi-automatically segment hematomas from computed tomography 
-      (CT) images of 452 CC patients, incorporating 695 hematomas. Subsequently, 1,502 
-      radiomic features were extracted from 358 hematomas in 261 patients. After a 
-      selection process, these features were used to calculate the radiomic signature 
-      (Radscore). The Radscore, along with clinical features such as medical history, 
-      physical examinations, laboratory results, and radiological findings, was 
-      employed to develop predictive models. For prognosis (discharge Glasgow Outcome 
-      Scale score), radiomic features of each hematoma were augmented and fused for 
-      correlation. We employed various machine learning methodologies to create both a 
-      combined model, integrating radiomics and clinical features, and a clinical-only 
-      model. Nomograms based on logistic regression were constructed to visually 
-      represent the predictive procedure, and external validation was performed on 170 
-      patients from three additional centers. The results showed that for HPC, the 
-      combined model, incorporating hemoglobin levels, Rotterdam CT score of 3, 
-      multihematoma fuzzy sign (MFS), concurrent subdural hemorrhage (SDH), 
-      International normalized ratio (INR), and Radscore, achieved area under the 
-      receiver operating characteristic curve (AUC) values of 0.848 and 0.836 in the 
-      test and external validation cohorts, respectively. The clinical model predicting 
-      prognosis, utilizing age, Abbreviated Injury Scale for the head (AIS-Head), 
-      GCS-M, GCS-V, albumin, and Radscore, attained AUC values of 0.846 and 0.803 in 
-      the test and external validation cohorts, respectively. Selected radiomic 
-      features indicated that irregularly shaped and highly heterogeneous hematomas 
-      increased the likelihood of HPC, while larger weighted axial lengths and lower 
-      densities of hematomas were associated with a higher risk of poor prognosis. 
-      Predictive models that combine radiomic and clinical features exhibit robust 
-      performance in forecasting HPC and the risk of poor prognosis in CC patients. 
-      Radiomic features complement clinical features in predicting HPC, although their 
-      ability to enhance the predictive accuracy of the clinical model for adverse 
-      prognosis is limited.
-FAU - He, Haoyue
-AU  - He H
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China.
-AD  - Chongqing University, 47913, Bioengineering College, Chongqing, China; 
-      202119131010@cqu.edu.cn.
-FAU - Liu, Jinxin
-AU  - Liu J
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China.
-AD  - Chongqing University, 47913, School of Medicine, Chongqing, Chongqing, China; 
-      202237021008@stu.cqu.edu.cn.
-FAU - Li, Chuanming
-AU  - Li C
-AD  - Chongqing University Central Hospital, 159412, Medical Imaging Department, 
-      Chongqing, Chongqing, China; li_chuanming@yeah.net.
-FAU - Guo, Yi
-AU  - Guo Y
-AD  - Chongqing University Central Hospital, 159412, Medical Imaging Department, 
-      Chongqing, Chongqing, China; yiguo_0909@sina.com.
-FAU - Liang, Kaixin
-AU  - Liang K
-AD  - Yubei District Hospital of Traditional Chinese Medicine, Department of 
-      Neurosurgery, Chongqing, Chongqing, China; 44901620@qq.com.
-FAU - Du, Jun
-AU  - Du J
-AD  - Chongqing Qianjiang Central Hospital, 652654, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; 412766558@qq.com.
-FAU - Xue, Jun
-AU  - Xue J
-AD  - Bishan Hospital of Chongqing Medical University, 643861, Department of 
-      Neurosurgery, Chongqing, Chongqing, China; xuju0807@163.com.
-FAU - Liang, Yidan
-AU  - Liang Y
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; liangyidan0109@126.com.
-FAU - Chen, Peng
-AU  - Chen P
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; chenpengpph@163.com.
-FAU - Liu, Liu
-AU  - Liu L
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; drliu13845@163.com.
-FAU - Cui, Min
-AU  - Cui M
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; tocuimin@foxmail.com.
-FAU - Wang, Jia
-AU  - Wang J
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; sdwangjia@163.com.
-FAU - Liu, Ye
-AU  - Liu Y
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China.
-AD  - Chongqing University, 47913, School of Medicine, Chongqing, Chongqing, China; 
-      yeliu_medcqu@126.com.
-FAU - Tian, Shanshan
-AU  - Tian S
-AD  - Chongqing University Central Hospital, 159412, Department of Prehospital 
-      Emergency, Chongqing, Chongqing, China; 710836163@qq.com.
-FAU - Deng, Yongbing
-AU  - Deng Y
-AD  - Chongqing University Central Hospital, 159412, Department of Neurosurgery, 
-      Chongqing, Chongqing, China; dyb0913@cqu.edu.cn.
-LA  - eng
-PT  - Journal Article
-DEP - 20240207
-PL  - United States
-TA  - J Neurotrauma
-JT  - Journal of neurotrauma
-JID - 8811626
-SB  - IM
-OTO - NOTNLM
-OT  - ASSESSMENT TOOLS
-OT  - CT SCANNING
-OT  - TRAUMATIC BRAIN INJURY
-EDAT- 2024/02/08 00:42
-MHDA- 2024/02/08 00:42
-CRDT- 2024/02/07 23:53
-PHST- 2024/02/08 00:42 [medline]
-PHST- 2024/02/08 00:42 [pubmed]
-PHST- 2024/02/07 23:53 [entrez]
-AID - 10.1089/neu.2023.0410 [doi]
-PST - aheadofprint
-SO  - J Neurotrauma. 2024 Feb 7. doi: 10.1089/neu.2023.0410.
-
 PMID- 38284836
 OWN - NLM
 STAT- MEDLINE
@@ -247,7 +116,7 @@ PMID- 38171945
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240206
-LR  - 20240206
+LR  - 20240302
 IS  - 1938-0666 (Electronic)
 IS  - 1526-8209 (Linking)
 VI  - 24
@@ -310,6 +179,7 @@ FAU - Crosby, Ross D
 AU  - Crosby RD
 AD  - Sanford Center for Biobehavioral Research, Fargo, ND.
 LA  - eng
+PT  - Comparative Study
 PT  - Journal Article
 DEP - 20231124
 PL  - United States
@@ -317,15 +187,17 @@ TA  - Clin Breast Cancer
 JT  - Clinical breast cancer
 JID - 100898731
 SB  - IM
-MH  - United States/epidemiology
-MH  - Humans
 MH  - Female
+MH  - Humans
+MH  - American Indian or Alaska Native/statistics & numerical data
+MH  - *Breast Neoplasms/diagnosis/epidemiology/ethnology/therapy
 MH  - *Medicaid
-MH  - Patient Protection and Affordable Care Act
-MH  - *Breast Neoplasms/diagnosis/therapy
-MH  - American Indian or Alaska Native
-MH  - Retrospective Studies
+MH  - *Patient Protection and Affordable Care Act
 MH  - Prognosis
+MH  - Retrospective Studies
+MH  - United States/epidemiology
+MH  - White/statistics & numerical data
+MH  - Medically Uninsured/ethnology/statistics & numerical data
 OTO - NOTNLM
 OT  - Disparities
 OT  - National Cancer Database
@@ -959,7 +831,7 @@ PMID- 37269008
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230605
-LR  - 20230607
+LR  - 20240229
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 11
@@ -1034,8 +906,8 @@ AD  - Department of Biological Chemistry, University of California Irvine, Irvin
 AD  - UCI Institute for Neurotherapeutics, University of California Irvine, Irvine, CA, 
       92697, USA. alaspada@uci.edu.
 LA  - eng
-GR  - R35 NS122140/NS/NINDS NIH HHS/United States
 GR  - R01 NS100023/NS/NINDS NIH HHS/United States
+GR  - R35 NS122140/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
@@ -6597,7 +6469,7 @@ PMID- 32152060
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210610
-LR  - 20231002
+LR  - 20240229
 IS  - 1754-8411 (Electronic)
 IS  - 1754-8403 (Print)
 IS  - 1754-8403 (Linking)
@@ -18086,8 +17958,8 @@ SO  - Endocr Connect. 2014 May 6;3(2):99-109. doi: 10.1530/EC-14-0039. Print 201
 PMID- 24691874
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20221028
-LR  - 20221028
+DCOM- 20150213
+LR  - 20240229
 IS  - 1573-7330 (Electronic)
 IS  - 1058-0468 (Print)
 IS  - 1058-0468 (Linking)

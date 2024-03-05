@@ -462,11 +462,16 @@ summary_data <- filtered_df %>%
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
   geom_point() +
   geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
-                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 6) + 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 4,
+                  nudge_y = 75, nudge_x = 0) +  # Adjust nudge_y and nudge_x as needed
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
-       x = "Minimum Publication Year",
+       x = "Earliest Publication Year",
        y = "Total Number of Unique PMIDs") +
-  theme_minimal()
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14),  # Adjust the size as needed
+        axis.text.y = element_text(size = 14),  # Adjust the size as needed
+        axis.title = element_text(size = 30))  # Adjust the size as needed
+
 
 
 sorted_pub_info <- all_pub_info_df %>%
@@ -486,7 +491,7 @@ ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneNam
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
   geom_point() +
   geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
-                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 6) + 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 2) + 
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
        x = "Minimum Publication Year",
        y = "Total Number of Unique PMIDs") +

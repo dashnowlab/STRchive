@@ -1,36 +1,39 @@
 
 PMID- 38159879
 OWN - NLM
-STAT- Publisher
-LR  - 20240119
+STAT- MEDLINE
+DCOM- 20240222
+LR  - 20240222
 IS  - 1673-8527 (Print)
 IS  - 1673-8527 (Linking)
-DP  - 2023 Dec 29
+VI  - 51
+IP  - 2
+DP  - 2024 Feb
 TI  - CGG repeat expansion in LOC642361/NUTM2B-AS1 typically presents as 
       oculopharyngodistal myopathy.
+PG  - 184-196
 LID - S1673-8527(23)00266-7 [pii]
 LID - 10.1016/j.jgg.2023.12.009 [doi]
 AB  - CGG repeat expansions in LOC642361/NUTM2B-AS1 have recently been identified as a 
       cause of oculopharyngeal myopathy with leukoencephalopathy. However, since only 
       three patients from a single family were reported, it remains unknown whether 
       their clinicopathological features are typical for CGG repeat expansions in 
-      LOC642361/NUTM2B-AS1. Here, using repeat-primed-polymerase chain reaction 
-      (RP-PCR) and long-read sequencing, we identify 12 individuals from 3 unrelated 
-      families with CGG repeat expansions in LOC642361/NUTM2B-AS1, typically presenting 
-      with oculopharyngodistal myopathy. The CGG repeat expansions range from 161 to 
-      669 repeat units. Most of the patients present with ptosis, restricted eye 
-      movements, dysphagia, dysarthria, and diffuse limb muscle weakness. Only one 
-      patient shows T2-weighted hyperintensity in the cerebellar white matter 
-      surrounding the deep cerebellar nuclei on brain magnetic resonance imaging. 
-      Muscle biopsies from three patients show a myopathic pattern and rimmed vacuoles. 
-      Analyses of muscle biopsies suggest that CGG repeat expansions in 
-      LOC642361/NUTM2B-AS1 may deleteriously affect aggrephagic capacity, suggesting 
-      that ribonucleic acid (RNA) toxicity and mitochondrial dysfunction may contribute 
-      to pathogenesis. Our study thus expands the phenotypic spectrum for the CGG 
-      repeat expansion of LOC642361/NUTM2B-AS1 and indicates that this genetic variant 
-      typically manifests as oculopharyngodistal myopathy with chronic myopathic 
-      changes with rimmed vacuoles and filamentous intranuclear inclusions in muscle 
-      fibers.
+      LOC642361/NUTM2B-AS1. Here, using repeat-primed-polymerase chain reaction and 
+      long-read sequencing, we identify 12 individuals from 3 unrelated families with 
+      CGG repeat expansions in LOC642361/NUTM2B-AS1, typically presenting with 
+      oculopharyngodistal myopathy. The CGG repeat expansions range from 161 to 669 
+      repeat units. Most of the patients present with ptosis, restricted eye movements, 
+      dysphagia, dysarthria, and diffuse limb muscle weakness. Only one patient shows 
+      T2-weighted hyperintensity in the cerebellar white matter surrounding the deep 
+      cerebellar nuclei on brain magnetic resonance imaging. Muscle biopsies from three 
+      patients show a myopathic pattern and rimmed vacuoles. Analyses of muscle 
+      biopsies suggest that CGG repeat expansions in LOC642361/NUTM2B-AS1 may 
+      deleteriously affect aggrephagic capacity, suggesting that RNA toxicity and 
+      mitochondrial dysfunction may contribute to pathogenesis. Our study thus expands 
+      the phenotypic spectrum for the CGG repeat expansion of LOC642361/NUTM2B-AS1 and 
+      indicates that this genetic variant typically manifests as oculopharyngodistal 
+      myopathy with chronic myopathic changes with rimmed vacuoles and filamentous 
+      intranuclear inclusions in muscle fibers.
 CI  - Copyright (c) 2024. Published by Elsevier Ltd.
 FAU - Shi, Yan
 AU  - Shi Y
@@ -141,8 +144,8 @@ AD  - Department of Neurology and Institute of Neurology of First Affiliated Hos
       National Regional Medical Center, Binhai Campus of the First Affiliated Hospital, 
       Fujian Medical University, Fuzhou, Fujian 350212, China. Electronic address: 
       fmuwzq@fjmu.edu.cn.
-FAU - Chen, Wanjin
-AU  - Chen W
+FAU - Chen, Wan-Jin
+AU  - Chen WJ
 AD  - Department of Neurology and Institute of Neurology of First Affiliated Hospital, 
       Institute of Neuroscience, Fujian Key Laboratory of Molecular Neurology, Fujian 
       Medical University, Fuzhou, Fujian 350005, China; Department of Neurology, 
@@ -164,7 +167,13 @@ PL  - China
 TA  - J Genet Genomics
 JT  - Journal of genetics and genomics = Yi chuan xue bao
 JID - 101304616
+RN  - 0 (NUTM2B protein, human)
+RN  - Oculopharyngodistal Myopathy
 SB  - IM
+MH  - Humans
+MH  - Muscle Weakness
+MH  - *Muscular Diseases/genetics/pathology
+MH  - *Muscular Dystrophies/genetics/pathology
 OTO - NOTNLM
 OT  - CGG repeat expansion
 OT  - Oculopharyngeal myopathy with leukoencephalopathy
@@ -172,19 +181,19 @@ OT  - Oculopharyngodistal myopathy
 OT  - Rimmed vacuoles
 COIS- Conflict of interest The authors declare no competing interests.
 EDAT- 2024/01/02 11:44
-MHDA- 2024/01/02 11:44
+MHDA- 2024/02/20 11:50
 CRDT- 2023/12/30 19:18
 PHST- 2023/09/26 00:00 [received]
 PHST- 2023/12/25 00:00 [revised]
 PHST- 2023/12/25 00:00 [accepted]
+PHST- 2024/02/20 11:50 [medline]
 PHST- 2024/01/02 11:44 [pubmed]
-PHST- 2024/01/02 11:44 [medline]
 PHST- 2023/12/30 19:18 [entrez]
 AID - S1673-8527(23)00266-7 [pii]
 AID - 10.1016/j.jgg.2023.12.009 [doi]
-PST - aheadofprint
-SO  - J Genet Genomics. 2023 Dec 29:S1673-8527(23)00266-7. doi: 
-      10.1016/j.jgg.2023.12.009.
+PST - ppublish
+SO  - J Genet Genomics. 2024 Feb;51(2):184-196. doi: 10.1016/j.jgg.2023.12.009. Epub 
+      2023 Dec 29.
 
 PMID- 37923380
 OWN - NLM
