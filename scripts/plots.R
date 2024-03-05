@@ -30,9 +30,9 @@ disease.loci = subset(disease.loci, !grepl("conflicting evidence", disease.loci$
 
 # Allele size
 p_size = ggplot(disease.loci, aes(x = disease_id)) +
-  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp + 1, color = 'Intermediate*'
-  ), linewidth = 2) +
   geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp + 1, color = 'Pathogenic'
+  ), linewidth = 2) +
+  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp + 1, color = 'Intermediate*'
   ), linewidth = 2) +
   geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp + 1, color = 'Benign'
   ), linewidth = 2) +
