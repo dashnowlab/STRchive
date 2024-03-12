@@ -1,0 +1,2012 @@
+---
+title: "gnomADSTRanalysis"
+author: "Laurel Hiatt"
+date: "2023-04-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library('dplyr')
+library('stringr')
+library('ggplot2')
+library('cowplot')
+library("tidyverse")
+library("broom")
+library(DescTools)
+library(Biostrings)
+library(plotly)
+theme_set(theme_cowplot())
+options(stringsAsFactors = FALSE)
+
+calculate_ci <- function(df, successes_col, trials_col, conf_level, method) {
+
+  # Calculate the estimated proportion and confidence intervals for each row
+  est_props <- df[[successes_col]] / df[[trials_col]]
+  cis <- BinomCI(df[[successes_col]], df[[trials_col]], conf.level = conf_level, method = method)
+
+  # Extract the lower and upper confidence interval bounds
+  lower_cis <- cis[, "lwr.ci"]
+  upper_cis <- cis[, "upr.ci"]
+
+  # Add the confidence intervals to the original data frame with prefixed names
+  df[[paste0(successes_col, "_lower_ci")]] <- lower_cis*100
+  df[[paste0(successes_col, "_upper_ci")]] <- upper_cis*100
+
+  # Return the updated data frame
+  return(df)
+}
+
+```
+
+## This is where I will put cool explanations of things
+
+### Summary of STR table
+
+### Summary of gnomADSTRcalls
+
+https://gnomad.broadinstitute.org/news/2022-01-the-addition-of-short-tandem-repeat-calls-to-gnomad/
+```{r import}
+### full data set that is public
+#gnomADSTRcalls = read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/gnomAD_STR_genotypes__2022_01_20.tsv', sep = '\t', stringsAsFactors = FALSE)
+### data subset to just 1000G, sent by Ben
+# gnomADSTRcalls = read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/gnomAD_STR_genotypes__2023_06_15.tsv', sep = '\t', stringsAsFactors = FALSE)
+
+gnomADSTRcalls = read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/gnomAD_STR_genotypes__including_all_age_and_pcr_info__2023_06_28.tsv', sep = '\t', stringsAsFactors = FALSE)
+
+#STR_table <- read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/STRpapercode/20240305_STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
+
+# 
+
+#str(STR_table)
+
+#str(gnomADSTRcalls)
+
+STR_table$pathogenic_max[STR_table$pathogenic_max == "11,000"] <- 11000
+STR_table$pathogenic_max <- as.integer(STR_table$pathogenic_max)
+```
+
+
+## This clean up helps the STR resource table match the gnomad data
+``` {r cleanup}
+#cleaning up table to match gnomad syntax
+#STR_table$gene[STR_table$gene == "AFF2/FMR2"] <- "AFF2"
+#STR_table$gene[STR_table$gene == "MARCH6"] <- "MARCHF6"
+STR_table$gene[STR_table$gene == "C9orf72"] <- "C9ORF72"
+STR_table$gene[STR_table$gene == "ATXN8OS/ATXN8"] <- "ATXN8OS"
+STR_table$gene[STR_table$gene == "NUTM2B-AS1/NUTM2B-AS1"] <- "NUTM2B-AS1"
+STR_table$gene[STR_table$gene == "ZNF9 / CNBP1"] <- "CNBP"
+
+STR_table$gene[STR_table$gene == "ARX" & STR_table$stop_hg38 == 25013697] <- "ARX_1"
+STR_table$gene[STR_table$gene == "ARX" & STR_table$stop_hg38 == 25013565] <- "ARX_2"
+STR_table$gene[STR_table$gene == "HOXA13" & STR_table$stop_hg38 == 27199966] <- "HOXA13_1"
+STR_table$gene[STR_table$gene == "HOXA13" & STR_table$stop_hg38 == 27199861] <- "HOXA13_2"
+STR_table$gene[STR_table$gene == "HOXA13" & STR_table$stop_hg38 == 27199732] <- "HOXA13_3"
+
+
+#STR_table$repeatunit_ref[STR_table$repeatunit_ref == "GGC/CGC"] <- "NGC"
+
+
+```
+
+## This is just to check and see what doesn't match
+``` {r checkdata}
+unique(gnomADSTRcalls$Id) -> genelist
+unique(STR_table$gene) -> tablegenelist
+sort(tablegenelist) -> tablegenelist
+
+
+# what are the differences between the table and the gnomad gene list
+tablegenelist[!(tablegenelist %in% genelist)]
+
+genelist[!(genelist %in% tablegenelist)]
+
+# what are the same genesbetween the table and the gnomad gene list
+tablegenelist[(tablegenelist %in% genelist)]
+length(tablegenelist[(tablegenelist %in% genelist)])
+# CCG in HTT is non-pathogenic but also sometimes surveyed; there might be some association with disease as founder effect?
+```
+
+## Let's figure out the motif stuff
+``` {r motif}
+# MotifStuff
+gnomADSTRcalls[c("Allele1Motif", "Allele2Motif")] <- as.data.frame(do.call(rbind, strsplit(gnomADSTRcalls$Motif, "/")), stringsAsFactors = FALSE)
+#####Make MotifLargest
+
+gnomADSTRcalls$MotifLargest <- ifelse(is.na(gnomADSTRcalls$Allele2) | gnomADSTRcalls$Allele1 > gnomADSTRcalls$Allele2, 
+                                      gnomADSTRcalls$Allele1Motif, 
+                                      gnomADSTRcalls$Allele2Motif)
+
+
+# Only the AATAG is in the BEAN1 loci so... let's do that
+#subset(gnomADSTRcalls, gnomADSTRcalls$Id == "BEAN1" & gnomADSTRcalls$motif_norm == "AATGG")
+#subset(gnomADSTRcalls, gnomADSTRcalls$Id == "BEAN1" & gnomADSTRcalls$motif_norm == "AATAG")
+
+
+normalise_str <- function(in_dna) {
+  if (is.null(in_dna) || length(in_dna) == 0) {
+    return('')
+  }
+  # Generate all circular permutations of input sequence
+  all_possible <- sapply(0:(nchar(in_dna)-1), function(i) paste0(substr(in_dna, i+1, nchar(in_dna)), substr(in_dna, 1, i)))
+  # Sort permutations alphabetically and return the first
+  return(sort(all_possible)[1])
+}
+
+# normalise_str("TAAA")
+
+
+# toy <- gnomADSTRcalls[sample(nrow(gnomADSTRcalls), 20), ]
+# 
+# toy$motif_norm <- sapply(toy$MotifLargest, function(x) normalise_str(as.character(x)))
+
+
+gnomADSTRcalls$motif_norm <- sapply(gnomADSTRcalls$MotifLargest, function(x) normalise_str(as.character(x)))
+```
+
+## Let's merge some data
+### We are also going to make some new age columns
+### And then we're separating out the genotype confidence intervals
+
+```{r merge}
+STR_table_clean <-subset(STR_table, select=c("disease_id", "gene",
+                                             "reference_motif_reference_orientation", "Inheritance",
+                                             "type", "normal_min", "normal_max",
+                                             "intermediate_min", "intermediate_max",
+                                             "pathogenic_min", "pathogenic_max",
+                                             "repeatunitlen", "age_onset_min",
+                                             "age_onset_max", "novel", "pathogenic_motif_reference_orientation"))
+
+colnames(STR_table_clean)[2] = "Id"
+
+#match what's in data
+STR_table_clean$pathogenic_motif_reference_orientation[STR_table_clean$pathogenic_motif_reference_orientation == "TGGAA,TAGAA"] <- "TAGAA"
+
+
+STR_table_clean$repeatunit_path_normalized <- sapply(STR_table_clean$pathogenic_motif_reference_orientation, function(x) normalise_str(as.character(x)))
+
+
+STR_table_clean$repeatunit_ref_normalized <- sapply(STR_table_clean$reference_motif_reference_orientation, function(x) normalise_str(as.character(x)))
+
+
+
+gnomADSTRcalls$Age[gnomADSTRcalls$Age == '<20'] <- "03-19"
+gnomADSTRcalls$Age[gnomADSTRcalls$Age == '>80'] <- "81-99"
+
+gnomADSTRcalls$AgeMax = as.numeric(str_sub(gnomADSTRcalls$Age,-2,-1)) # get last two char in Age. Assumes all <100
+
+gnomADSTRcalls$AgeMin = as.numeric(str_sub(gnomADSTRcalls$Age,1,2)) # get last two char in Age. Assumes all <100
+
+
+gnomADSTRcalls[c("Allele1LowerBound", "Allele1HigherBound", "Allele2LowerBound", "Allele2HigherBound")] <- as.data.frame(do.call(rbind, strsplit(gsub("/", "-", gnomADSTRcalls$GenotypeConfidenceInterval), "-")), stringsAsFactors = FALSE)
+gnomADSTRcalls[c("Allele1LowerBound", "Allele1HigherBound", "Allele2LowerBound", "Allele2HigherBound")] <- lapply(gnomADSTRcalls[c("Allele1LowerBound", "Allele1HigherBound", "Allele2LowerBound", "Allele2HigherBound")], as.integer)
+
+gnomADSTRcalls[c("Allele1LowerBoundOTR", "Allele1HigherBoundOTR", "Allele2LowerBoundOTR", "Allele2HigherBoundOTR")] <- as.data.frame(do.call(rbind, strsplit(gsub("/", "-", gnomADSTRcalls$GenotypeConfidenceIntervalUsingOfftargetRegions), "-")), stringsAsFactors = FALSE)
+gnomADSTRcalls[c("Allele1LowerBoundOTR", "Allele1HigherBoundOTR", "Allele2LowerBoundOTR", "Allele2HigherBoundOTR")] <- lapply(gnomADSTRcalls[c("Allele1LowerBound", "Allele1HigherBoundOTR", "Allele2LowerBoundOTR", "Allele2HigherBoundOTR")], as.integer)
+
+
+#table(gnomADSTRcalls$Age)
+
+#table(gnomADSTRcalls$AgeMin)
+#table(gnomADSTRcalls$AgeMax)
+gnomADSTRcalls$AlleleLargest <- pmax(gnomADSTRcalls$Allele1, gnomADSTRcalls$Allele2, na.rm = TRUE)
+
+
+total <- merge(STR_table_clean,gnomADSTRcalls,by="Id")
+
+```
+# Now we subset if we desire to just samples from public data sets
+``` {r public DBs}
+total <- total[total$PublicProjectId %in% c("Human Genome Diversity Project", "1000 Genomes Project"), ]
+gnomADSTRcalls <- gnomADSTRcalls[gnomADSTRcalls$PublicProjectId %in% c("Human Genome Diversity Project", "1000 Genomes Project"), ]
+
+```
+
+
+``` {r comparing_norm_motifs}
+
+### regex ? 
+table(total$repeatunit_path_normalized == total$motif_norm)
+table(total$repeatunit_path_normalized == total$motif_norm | total$repeatunit_ref_normalized == total$motif_norm)
+
+
+subset(total, repeatunit_path_normalized != motif_norm & repeatunit_ref_normalized != motif_norm,
+       select = c("motif_norm", "repeatunit_ref_normalized", "repeatunit_path_normalized", "Id"))
+
+unique(subset(total, repeatunit_path_normalized != motif_norm & repeatunit_ref_normalized != motif_norm,
+       select = c("motif_norm", "repeatunit_ref_normalized", "repeatunit_path_normalized", "Id")))
+
+mismatchmotif <- total %>%
+  subset(repeatunit_path_normalized != motif_norm & repeatunit_ref_normalized != motif_norm,
+         select = c("motif_norm", "repeatunit_ref_normalized", "repeatunit_path_normalized", "Id")) %>%
+  count(Id, motif_norm, repeatunit_ref_normalized, repeatunit_path_normalized)
+
+subset(total, total$motif_norm == "ATGTT" & total$Id == "YEATS2")
+
+```
+
+
+## Let's subset the data based on motif, as discussed with Harriet
+Because the CNG motifs seem to be the ones causing the most trouble... let's
+not use those.
+
+``` {r no CNG}
+total <- subset(total, total$motif_norm != "CNG")
+
+gnomADSTRcalls <- subset(gnomADSTRcalls, gnomADSTRcalls$motif_norm != "CNG")
+
+```
+
+## Let's get a subset of the merged data (optional)
+``` {r subset}
+#total <- sample_n(total, 10000)
+```
+
+## Let's Ensure Allele2 > Allele1
+- Check max of allele1 and allele2 (na.rm = TRUE)
+
+``` {r allelecheck}
+table(gnomADSTRcalls$Allele2 >= gnomADSTRcalls$Allele1, useNA = "ifany")
+table(gnomADSTRcalls$Allele1 == gnomADSTRcalls$Allele1UsingOfftargetRegions, useNA = "ifany")
+#pmax(gnomADSTRcalls$Allele1, gnomADSTRcalls$Allele2, na.rm = TRUE)
+
+# gnomADSTRcalls_noallele2 <- gnomADSTRcalls[is.na(gnomADSTRcalls$Allele2),]
+# table(gnomADSTRcalls_noallele2$Allele1)
+
+#table(gnomADSTRcalls$AlleleLargest)
+#table(gnomADSTRcalls$AlleleLargest >= gnomADSTRcalls$Allele1, useNA = "ifany")
+
+```
+
+## Loop from harriet for allele distribution with age vs no age available
+```{r loop}
+for (locus in unique(gnomADSTRcalls$Id)) {
+  ggplot(subset(gnomADSTRcalls, Id == locus)) + 
+    geom_histogram(aes(x = Allele2, fill = Age), alpha = 0.5) + 
+    facet_wrap(~AgeMax == 'age_not_available', scales = 'free_y') +
+    ggtitle(locus)
+  ggsave(paste0(locus,'_allele2_age_available.png'))
+}
+
+for (locus in unique(gnomADSTRcalls$Id)) {
+  ggplot(subset(gnomADSTRcalls, Id == locus)) + 
+    geom_histogram(aes(x = Allele2UsingOfftargetRegions, fill = Age), alpha = 0.5) + 
+    facet_wrap(~AgeMax == '_OTR_age_not_available', scales = 'free_y') +
+    ggtitle(locus)
+  ggsave(paste0(locus,'_OTR_allele2_age_available.png'))
+}
+
+table(gnomADSTRcalls$Age)
+
+wilcox.test(subset(gnomADSTRcalls, Age == 'age_not_available')$Allele2, 
+                          subset(gnomADSTRcalls, Age != 'age_not_available')$Allele2)
+
+
+# results <- data.frame()  # create an empty dataframe to store results
+# 
+# for (locus in unique(gnomADSTRcalls$Id)) {
+#   p <- tidy(ks.test(subset(gnomADSTRcalls, Age == 'age_not_available' & Id == locus)$Allele2, 
+#                          subset(gnomADSTRcalls, Age != 'age_not_available'& Id == locus)$Allele2))
+#   results <- rbind(results, data.frame(Id = locus, statistic = p$statistic, p.value = p$p.value))
+# }
+# 
+# print(results)
+
+# NOT ENOUGH Y DATA!!!
+```
+
+## PCR comparison
+``` {r PCR, fig.width=15,fig.height=10}
+
+ggplot(gnomADSTRcalls) + 
+  geom_histogram(aes(x = Allele2, fill = PcrProtocol), alpha = 0.5) + 
+  facet_wrap(~PcrProtocol, scales = 'free_y') +
+  ggtitle('PCR Protocol')
+
+# 
+wilcox.test(subset(gnomADSTRcalls, PcrProtocol == 'pcr_free')$Allele2,
+             subset(gnomADSTRcalls, PcrProtocol == 'pcr_plus')$Allele2)
+p <- tidy(wilcox.test(subset(gnomADSTRcalls, PcrProtocol == 'pcr_free')$Allele2,
+             subset(gnomADSTRcalls, PcrProtocol == 'pcr_plus')$Allele2))
+
+
+# for (locus in unique(gnomADSTRcalls$Id)) {
+#   cat(paste0(locus))
+#   p <- tidy(wilcox.test(subset(gnomADSTRcalls, PcrProtocol == 'pcr_free' & Id == locus)$Allele2, 
+#              subset(gnomADSTRcalls, PcrProtocol == 'pcr_plus'& Id == locus)$Allele2))
+#   cat('\n') 
+#   cat("The statistic is \n")
+#   cat(p$statistic)
+#   cat('\n') 
+#   cat("The p-value is \n")
+#   cat(p$p.value)
+#   cat('\n') 
+# }
+
+results <- data.frame()  # create an empty dataframe to store results
+
+for (locus in unique(gnomADSTRcalls$Id)) {
+  p <- tidy(wilcox.test(subset(gnomADSTRcalls, PcrProtocol == 'pcr_free' & Id == locus)$Allele2, 
+                         subset(gnomADSTRcalls, PcrProtocol == 'pcr_plus'& Id == locus)$Allele2))
+  results <- rbind(results, data.frame(Id = locus, statistic = p$statistic, p.value = p$p.value))
+}
+
+print(results)
+
+ggplot(results, aes(x = Id, y = p.value, color = Id)) +
+  geom_point() +
+  geom_hline(yintercept = 0.05, linetype = "dashed") +
+  labs(x = "Locus", y = "p-value", color = "Locus") +
+  theme_bw() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend.position = "none")
+
+ggplot(results, aes(x = Id, y = -log10(p.value), color = Id)) +
+  geom_point() +
+  geom_hline(yintercept = -log10(0.05), linetype = "dashed") +
+  labs(x = "Locus", y = "-log(p-value)", color = "Locus") +
+  theme_bw() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend.position = "none") + scale_y_continuous(trans='log10')
+```
+
+## Let's look at Allele2 compared to Allele2UsingOfftargetRegions
+Consider plotting a loci with Allele2 AND Allele2UsingOffTarget (sanity check)
+Scatter (look for outliers in plot, maybe draw line of where we expect error)
+Could use Allele2UOT with more confidence…
+
+``` {r allele2check, fig.width=15}
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele2, y = Allele2UsingOfftargetRegions, col=Id)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ylim(0,400)
+```
+
+``` {r allele1check, fig.width=15}
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele1, y = Allele1UsingOfftargetRegions, col=Id)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ylim(0,400)
+```
+
+``` {r allele1vs2check, fig.width=15}
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele1, y = Allele2, col=Id)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ylim(0,400)
+```
+
+
+``` {r allele1vs2check, fig.width=15}
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele1UsingOfftargetRegions, y = Allele2UsingOfftargetRegions, col=Id)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ylim(0,400)
+```
+
+
+``` {r allele2check by loci, fig.width=15,fig.height=100}
+
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele2, y = Allele2UsingOfftargetRegions, col=Motif)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none") + facet_wrap(~Id, ncol=2, scales = "free") 
+
+
+ggplot(gnomADSTRcalls) + geom_point(aes(x = AlleleLargest, y = Allele2UsingOfftargetRegions, col=Motif)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none") + facet_wrap(Id~motif_norm, ncol=2, scales = "free") + geom_abline(slope=1,intercept=0, col="gray")
+
+
+ggplot(gnomADSTRcalls) + geom_point(aes(x = AlleleLargest, y = Allele2UsingOfftargetRegions, col=Motif)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none") + facet_wrap(~Id, ncol=2, scales = "free") + geom_abline(slope=1,intercept=0, col="gray")
+```
+
+``` {r allele1check by loci, fig.width=15,fig.height=100}
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele1, y = Allele1UsingOfftargetRegions, col=Motif)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none") + facet_wrap(~Id, ncol=2, scales = "free") 
+```
+
+``` {r allele1vs2check by loci, fig.width=15,fig.height=100}
+
+ggplot(gnomADSTRcalls) + geom_point(aes(x = Allele1, y = Allele2, col=Motif)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none") + ylim(0,400) + facet_wrap(~Id, ncol=2, scales = "free") 
+```
+
+``` {r lines}
+total_Hox1 <- subset(total, Id == 'HOXA13_1') # 3
+total_Hox2 <- subset(total, Id == 'HOXA13_2') # 3
+total_Hox3 <- subset(total, Id == 'HOXA13_3') # 3
+total_phox <- subset(total, Id == 'PHOX2B') # 3
+total_tbx1 <- subset(total, Id == 'TBX1') # 3
+total_zic2 <- subset(total, Id == 'ZIC2') # 3
+total_foxl2 <- subset(total, Id == 'FOXL2') # 3
+total_bean1 <- subset(total, Id == 'BEAN1') # 5
+total_rapgef2 <- subset(total, Id == 'RAPGEF2') # 5
+
+tail(sort(table(total_Hox1$Allele2)), 3)
+tail(sort(table(total_Hox2$Allele2)), 3)
+tail(sort(table(total_Hox3$Allele2)), 3)
+tail(sort(table(total_phox$Allele2)), 3)
+tail(sort(table(total_tbx1$Allele2)), 3)
+tail(sort(table(total_zic2$Allele2)), 3)
+tail(sort(table(total_foxl2$Allele2)), 3)
+tail(sort(table(total_bean1$Allele2)), 3)
+tail(sort(table(total_rapgef2$Allele2)), 3)
+
+unique(total_Hox1$End - total_Hox1$Start_0based)/3
+unique(total_Hox2$End - total_Hox2$Start_0based)/3
+unique(total_Hox3$End - total_Hox3$Start_0based)/3
+unique(total_phox$End - total_phox$Start_0based)/3
+unique(total_tbx1$End - total_tbx1$Start_0based)/3
+unique(total_zic2$End - total_zic2$Start_0based)/3
+unique(total_foxl2$End - total_foxl2$Start_0based)/3
+unique(total_bean1$End - total_bean1$Start_0based)/5
+unique(total_rapgef2$End - total_rapgef2$Start_0based)/5
+
+# conclusion: 3bp repeats are defaulting to range of loci, 5bp are not, they're just messy
+
+
+#total_dmd <- subset(total, Id == 'DMD') # 5
+#table(total_dmd$Sex)
+# XX    XY 
+# 8167 10970 
+# XYs for X-linked inheritance are filtered out!!!!!
+
+
+#table(total_Hox1$Motif)
+#table(total_Hox2$Motif)
+#table(total_Hox3$Motif)
+
+
+```
+
+# Here we have the histograms, and there is a lot of overlap. So it is ugly.
+https://stackoverflow.com/questions/6957549/overlaying-histograms-with-ggplot2-in-r
+``` {r histograms, fig.width=15,fig.height=100}
+ggplot(gnomADSTRcalls) + geom_histogram(aes(x = Allele1, fill = "Allele1", alpha = 0.2)) + geom_histogram(aes(x = Allele2, fill = "Allele2", alpha = 0.2)) + geom_histogram(aes(x = Allele1UsingOfftargetRegions, fill = "Allele1UsingOfftargetRegions", alpha = 0.2)) + geom_histogram(aes(x = Allele2UsingOfftargetRegions, fill = "Allele2UsingOfftargetRegions", alpha = 0.2)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + facet_wrap(~Id, ncol=2, scales = "free") 
+
+ggplot(gnomADSTRcalls) + geom_density(aes(x = Allele1, color = "Allele1", alpha = 0.2)) + geom_density(aes(x = Allele2, color = "Allele2", alpha = 0.2)) + geom_density(aes(x = Allele1UsingOfftargetRegions, color = "Allele1UsingOfftargetRegions", alpha = 0.2)) + geom_density(aes(x = Allele2UsingOfftargetRegions, color = "Allele2UsingOfftargetRegions", alpha = 0.2)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + facet_wrap(~Id, ncol=2, scales = "free") 
+
+```
+
+## Let's see if variants fall into type by category
+``` {r type}
+ggplot(total) + geom_point(aes(x = Id, y = Allele2UsingOfftargetRegions, col=type)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~type, scales = "free_x") + ylim(0,4000) + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
+
+# ggplot(total) + geom_point(aes(x = Id, y = Allele2UsingOfftargetRegions, col=type)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~type+IsNeuroCase, scales = "free_x") + ylim(0,4000) + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
+
+```
+
+``` {r type, fig.width = 20}
+ggplot(total) + geom_point(aes(x = Id, y = Allele2, col=motif_norm=="CNG")) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~type, scales = "free_x") + ylim(0,400) + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
+
+```
+
+
+
+``` {r type}
+ggplot(total) + geom_point(aes(x = Id, y = AlleleLargest, col=type)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~type, scales = "free_x") + ylim(0,400) + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
+
+```
+
+## Question 1
+Allele size beyond pathogenic in literature
+Penetrance lower than expected?
+
+```{r Q1}
+table(total$Allele2 >=  total$pathogenic_max, useNA = "ifany")
+table(total$Allele2UsingOfftargetRegion >=  total$pathogenic_max)
+
+# we care most about the min 
+table(total$Allele2 >=  total$pathogenic_min)
+table(total$Allele2UsingOfftargetRegion >=  total$pathogenic_min)
+
+#Subs1<-subset(total, (!is.na(total$Allele2)) & (!is.na(total$pathogenic_max)))
+#table(Subs1$Allele2 >=  Subs1$pathogenic_max)
+# it's not NA in these columns that are making the discrepancy
+#Allele2_greater_than_path_max <- Subs1$Allele2 > Subs1$pathogenic_max
+#result1 <- aggregate(cbind(Allele2_greater_than_path_max), by = list(Subs1$Id), FUN = sum, na.rm=TRUE)
+
+#Subs2<-subset(total, (!is.na(total$Allele2)) & (!is.na(total$pathogenic_max)) & (!is.na(total$Id)))
+#table(Subs2$Allele2 >=  Subs2$pathogenic_max)
+# it's not the three columns so like... what is it
+
+
+# Create a logical vector to represent whether x > y for each row
+# Allele2_greater_than_path_max <- total$AlleleLargest >= total$pathogenic_max
+# table(Allele2_greater_than_path_max)
+# 
+# # Use aggregate() to count occurrences of x > y by z value
+# result1 <- aggregate(cbind(Allele2_greater_than_path_max), by = list(total$Id), FUN = sum, na.rm=TRUE)
+# 
+# sum(result1$Allele2_greater_than_path_max)
+# 
+# df_summary <- total %>%
+#   group_by(Id) %>%
+#   summarize(Allele2_greater_than_path_max = sum(Allele2 >= pathogenic_max, na.rm = TRUE))
+# 
+# sum(df_summary$Allele2_greater_than_path_max)
+# 
+# sum(result1$Allele2_greater_than_path_max)
+# 
+# result2 <- aggregate(cbind(total$Allele2), by = list(total$Id), FUN = function(x) sum(!is.na(x)))
+# 
+# result <- merge(result1,result2)
+
+
+#MIN
+# Create a logical vector to represent whether x > y for each row
+Allele2_greater_than_path_min <- total$Allele2LowerBound >= total$pathogenic_min
+table(Allele2_greater_than_path_min)
+
+# Use aggregate() to count occurrences of x > y by z value
+result1 <- aggregate(cbind(Allele2_greater_than_path_min), by = list(total$Id), FUN = sum, na.rm=TRUE)
+
+sum(result1$Allele2_greater_than_path_min)
+
+result2 <- aggregate(cbind(total$Allele2), by = list(total$Id, total$repeatunit_path_normalized), FUN = function(x) sum(!is.na(x)))
+
+result <- merge(result1,result2)
+
+
+# Rename the columns of the result dataframe
+colnames(result) <- c("Id", "Allele2>pathogenic_min", "pathogenic_motif", "Total_Allele2Loci_for_Id")
+
+result$percent<- (result$`Allele2>pathogenic_min`/result$Total_Allele2Loci_for_Id)*100
+
+
+
+calculate_ci <- function(df, successes_col, trials_col, conf_level, method) {
+  
+  # Calculate the estimated proportion and confidence intervals for each row
+  est_props <- df[[successes_col]] / df[[trials_col]]
+  cis <- BinomCI(df[[successes_col]], df[[trials_col]], conf.level = conf_level, method = method)
+  
+  # Extract the lower and upper confidence interval bounds
+  lower_cis <- cis[, "lwr.ci"]
+  upper_cis <- cis[, "upr.ci"]
+  
+  # Add the confidence intervals to the original data frame
+  df$lower_ci <- lower_cis*100
+  df$upper_ci <- upper_cis*100
+  
+  # Return the updated data frame
+  return(df)
+}
+
+result <- calculate_ci(result, successes_col = "Allele2>pathogenic_min", trials_col = "Total_Allele2Loci_for_Id", conf_level = 0.95)
+
+ggplot(result, aes(x = reorder(Id,percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") +
+  ggtitle("Pathogenic Percentage by Id with 95% CI")
+
+
+ggplot(subset(result, percent > 1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id w/ 95% CI (Pct > 1)")
+
+ggplot(subset(result, percent <= 1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id w/ 95% CI (Pct<= 1)")
+
+ggplot(subset(result, percent <= 0.1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id w/ 95% CI (Pct<= 0.1)")
+
+
+#ggplot(total) +
+ # geom_histogram(aes(x = Allele2, fill = Id), alpha = 0.5) + facet_wrap(~Allele2 > pathogenic_max, scales = 'free_y') + theme(legend.position = "none")
+
+#total_pabpn1 <- subset(total, Id == 'PABPN1') # 5
+#table(total_pabpn1$Allele2)
+```
+
+
+```{r Q1 with motif}
+Allele2_greater_than_path_min_with_motif <- (total$Allele2LowerBound >= total$pathogenic_min) & (total$motif_norm == total$repeatunit_path_normalized)
+
+table(Allele2_greater_than_path_min_with_motif)
+
+result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_min_with_motif)), by = list(total$Id), FUN = sum)
+
+sum(result1$V1, na.rm= TRUE)
+
+result2 <- aggregate(cbind(total$disease_id), by = list(total$Id, total$repeatunit_path_normalized), FUN = function(x) sum(!is.na(x)))
+
+
+colnames(result1) <- c("Id", "Allele2>pathogenic_min&&motif_norm=motif_path")
+colnames(result2) <- c("Id", "pathogenic_motif", "Allele2_Loci_by_Id")
+
+
+result <- merge(result1,result2)
+
+result$percent <- result$`Allele2>pathogenic_min&&motif_norm=motif_path`/result$Allele2_Loci_by_Id*100
+
+result <- calculate_ci(result, successes_col = "Allele2>pathogenic_min&&motif_norm=motif_path", trials_col = "Allele2_Loci_by_Id", conf_level = 0.95)
+
+ggplot(result, aes(x = reorder(Id,percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + 
+  ggtitle("Pathogenic Percentage by Id AND Motif with 95% CI ")
+
+
+ggplot(subset(result, percent > 1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id+Motif w/ 95% CI (Pct > 1)")
+
+ggplot(subset(result, percent <= 1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id+Motif w/ 95% CI (Pct<= 1)")
+
+  
+  
+```
+Do i want to see how many alleles are within normal range? vs intermediate
+
+
+### Let's see about if we parse these out by sex
+Later, look at AD/AR
+```{r sex}
+
+total_sex <- subset(total, total$Inheritance == "XR" | total$Inheritance == "XD")
+
+table(total_sex$Inheritance)
+
+Allele2_greater_than_path_min <- total_sex$Allele2LowerBound >= total_sex$pathogenic_min
+table(Allele2_greater_than_path_min)
+
+# Use aggregate() to count occurrences of x > y by z value
+result1 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + Sex, data = total_sex, FUN = sum, na.rm = TRUE)
+
+sum(result1$Allele2_greater_than_path_min)
+
+result2 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + Sex, data = total_sex, FUN = function(x) sum(!is.na(x)))
+
+merge(result1,result2)
+
+sex_result <- result1 %>% inner_join( result2, 
+        by=c('Id', "Sex"))
+
+# Rename the columns of the result dataframe
+colnames(sex_result) <- c("Id", "Sex", "Allele2>pathogenic_min", "Total_Allele2Loci_for_Id")
+
+sex_result$percent<- (sex_result$`Allele2>pathogenic_min`/sex_result$Total_Allele2Loci_for_Id)*100
+
+sum(sex_result$Allele2_greater_than_path_min, na.rm= TRUE)
+
+print(sex_result)
+
+
+# https://cran.r-project.org/web/packages/interpretCI/vignettes/Confidence_interval_for_a_proportion.html
+# https://rcompanion.org/handbook/H_02.html
+
+calculate_ci <- function(df, successes_col, trials_col, conf_level, method) {
+  
+  # Calculate the estimated proportion and confidence intervals for each row
+  est_props <- df[[successes_col]] / df[[trials_col]]
+  cis <- BinomCI(df[[successes_col]], df[[trials_col]], conf.level = conf_level, method = method)
+  
+  # Extract the lower and upper confidence interval bounds
+  lower_cis <- cis[, "lwr.ci"]
+  upper_cis <- cis[, "upr.ci"]
+  
+  # Add the confidence intervals to the original data frame
+  df$lower_ci <- lower_cis*100
+  df$upper_ci <- upper_cis*100
+  
+  # Return the updated data frame
+  return(df)
+}
+
+sex_result <- calculate_ci(sex_result, successes_col = "Allele2>pathogenic_min", trials_col = "Total_Allele2Loci_for_Id", conf_level = 0.95)
+
+ggplot(sex_result, aes(x = reorder(Id,percent), y = percent, color = Sex)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") +
+  ggtitle("Pathogenic Percentage by Id with 95% CI with Sex Info")
+
+
+
+```
+
+
+### Inheritance patterns?
+```{r inheritance}
+
+Allele2_greater_than_path_min <- total$Allele2LowerBound >= total$pathogenic_min
+table(Allele2_greater_than_path_min)
+
+# Use aggregate() to count occurrences of x > y by z value
+result1 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + Inheritance, data = total, FUN = sum, na.rm = TRUE)
+
+sum(result1$Allele2_greater_than_path_min)
+
+result2 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + Inheritance, data = total, FUN = function(x) sum(!is.na(x)))
+
+merge(result1,result2)
+
+inheritance_result <- result1 %>% inner_join( result2, 
+        by=c('Id', "Inheritance"))
+
+# Rename the columns of the result dataframe
+colnames(inheritance_result) <- c("Id", "Inheritance", "Allele2>pathogenic_min", "Total_Allele2Loci_for_Id")
+
+inheritance_result$percent<- (inheritance_result$`Allele2>pathogenic_min`/inheritance_result$Total_Allele2Loci_for_Id)*100
+
+sum(inheritance_result$Allele2_greater_than_path_min, na.rm= TRUE)
+
+# https://cran.r-project.org/web/packages/interpretCI/vignettes/Confidence_interval_for_a_proportion.html
+# https://rcompanion.org/handbook/H_02.html
+
+# calculate_ci <- function(df, successes_col, trials_col, conf_level, method) {
+#   
+#   # Calculate the estimated proportion and confidence intervals for each row
+#   est_props <- df[[successes_col]] / df[[trials_col]]
+#   cis <- BinomCI(df[[successes_col]], df[[trials_col]], conf.level = conf_level, method = method)
+#   
+#   # Extract the lower and upper confidence interval bounds
+#   lower_cis <- cis[, "lwr.ci"]
+#   upper_cis <- cis[, "upr.ci"]
+#   
+#   # Add the confidence intervals to the original data frame
+#   df$lower_ci <- lower_cis*100
+#   df$upper_ci <- upper_cis*100
+#   
+#   # Return the updated data frame
+#   return(df)
+# }
+
+inheritance_result <- calculate_ci(inheritance_result, successes_col = "Allele2>pathogenic_min", trials_col = "Total_Allele2Loci_for_Id", conf_level = 0.95)
+
+ggplot(inheritance_result, aes(x = reorder(Id,percent), y = percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") +
+  ggtitle("Pathogenic Percentage by Id with 95% CI with Inheritance Info")
+
+
+```
+
+### Let's see about if we parse these out by PCR status
+```{r PCR}
+
+total_PCR <- subset(total, total$PcrProtocol == "pcr_free" | total$PcrProtocol == "pcr_plus")
+
+table(total_PCR$PcrProtocol)
+
+Allele2_greater_than_path_min <- total_PCR$Allele2LowerBound >= total_PCR$pathogenic_min
+table(Allele2_greater_than_path_min)
+
+# Use aggregate() to count occurrences of x > y by z value
+result1 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + PcrProtocol, data = total_PCR, FUN = sum, na.rm = TRUE)
+
+result2 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + PcrProtocol, data = total_PCR, FUN = function(x) sum(!is.na(x)))
+
+merge(result1,result2)
+
+PCR_result <- result1 %>% inner_join( result2, 
+        by=c('Id', "PcrProtocol"))
+
+# Rename the columns of the result dataframe
+colnames(PCR_result) <- c("Id", "PcrProtocol", "Allele2>pathogenic_min", "Total_Allele2Loci_for_Id")
+
+PCR_result$percent<- (PCR_result$`Allele2>pathogenic_min`/PCR_result$Total_Allele2Loci_for_Id)*100
+
+sum(PCR_result$Allele2_greater_than_path_max, na.rm= TRUE)
+
+
+# https://cran.r-project.org/web/packages/interpretCI/vignettes/Confidence_interval_for_a_proportion.html
+# https://rcompanion.org/handbook/H_02.html
+
+
+calculate_ci <- function(df, successes_col, trials_col, conf_level, method) {
+
+  # Calculate the estimated proportion and confidence intervals for each row
+  est_props <- df[[successes_col]] / df[[trials_col]]
+  cis <- BinomCI(df[[successes_col]], df[[trials_col]], conf.level = conf_level, method = method)
+
+  # Extract the lower and upper confidence interval bounds
+  lower_cis <- cis[, "lwr.ci"]
+  upper_cis <- cis[, "upr.ci"]
+
+  # Add the confidence intervals to the original data frame
+  df$lower_ci <- lower_cis*100
+  df$upper_ci <- upper_cis*100
+
+  # Return the updated data frame
+  return(df)
+}
+
+PCR_result <- calculate_ci(PCR_result, successes_col = "Allele2>pathogenic_min", trials_col = "Total_Allele2Loci_for_Id", conf_level = 0.95)
+
+#### PLOT WITH PERCENTAGE DATA!!!!!
+
+ggplot(PCR_result, aes(x = reorder(Id,percent), y = percent, color = PcrProtocol)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") +
+  ggtitle("Pathogenic Percentage by Id with 95% CI with Protocol Info")
+
+
+t.test(PCR_result$`Allele2>pathogenic_min` ~ PcrProtocol, data = PCR_result)
+
+
+# Welch Two Sample t-test
+# 
+# data:  PCR_result$`Allele2>pathogenic_min` by PcrProtocol
+# t = 1.7474, df = 60.672, p-value = 0.08563
+# alternative hypothesis: true difference in means between group pcr_free and group pcr_plus is not equal to 0
+# 95 percent confidence interval:
+#  -15.05869 223.53142
+# sample estimates:
+# mean in group pcr_free mean in group pcr_plus 
+#              146.78182               42.54545 
+
+```
+
+
+## Question 2
+Are there individuals in gnomad older than typical age of onset with pathogenic allele size? 
+Penetrance lower than expected?
+Age of onset max and age_max (but consider going to age min of range) & allele2* > pathogenic age min
+Could also do pathogenic age min - # to increase wiggle
+Number for each locus: how many individuals, and what sizes are the allele
+Off target would be nice… because gnomad uses conservative estimates
+
+```{r Q2 disease id}
+
+total_subset <- total[complete.cases(total$AgeMin), ]
+total_subset$AgeMin <- as.integer(total_subset$AgeMin)
+# # Apply the condition to each row of the data frame
+# condition <- (total_subset$AlleleLargest >= total_subset$pathogenic_min) & (total_subset$AgeMin > total_subset$age_onset_max)
+# 
+# # Use ifelse to print a message for each row where the condition is true
+# result <- ifelse(condition, 
+#                  paste("Allele2:", total_subset$Allele2, ", pathogenic_max:", total_subset$pathogenic_max),
+#                  "not")
+# 
+# # Print the result
+# cat(result, sep = "\n")
+# 
+# # just checking the number is right
+# n_not_missing_age <- table(total$Age != "age_not_available")[2]
+# Create a logical vector to represent whether x > y for each row
+Allele2_greater_than_path_max_with_age <- (total_subset$AlleleLargest >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max)
+table(Allele2_greater_than_path_max_with_age)
+result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_max_with_age)), by = list(total_subset$disease_id), FUN = sum)
+sum(result1$V1, na.rm= TRUE)
+result2 <- aggregate(cbind(total_subset$disease_id), by = list(total_subset$disease_id), FUN = function(x) sum(!is.na(x)))
+colnames(result1) <- c("disease_id", "Allele2>pathogenic_max&agemax>age_onset_max")
+colnames(result2) <- c("disease_id", "Allele2_Loci_by_Disease_Id")
+result <- merge(result1,result2)
+result$percent <- result$`Allele2>pathogenic_max&agemax>age_onset_max`/result$Allele2_Loci_by_Disease_Id*100
+# Print result
+print(result)
+# Summarize additional statistics by disease_id
+result2 <- total_subset %>%
+  group_by(disease_id) %>%
+  summarise(min_allele2 = min(as.numeric(Allele2)), max_allele2 = max(as.numeric(Allele2)), max_pathogenic_max = max(as.numeric(pathogenic_max)))
+# Merge results
+bigresult <- merge(result, result2)
+# Print bigresult
+print(bigresult)
+
+```
+
+```{r Q2 id}
+
+total_subset <- total[complete.cases(total$AgeMin), ]
+total_subset$AgeMin <- as.integer(total_subset$AgeMin)
+# # Apply the condition to each row of the data frame
+# condition <- (total_subset$AlleleLargest >= total_subset$pathogenic_min) & (total_subset$AgeMin > total_subset$age_onset_max)
+# 
+# # Use ifelse to print a message for each row where the condition is true
+# result <- ifelse(condition, 
+#                  paste("Allele2:", total_subset$Allele2, ", pathogenic_max:", total_subset$pathogenic_max),
+#                  "not")
+# 
+# # Print the result
+# cat(result, sep = "\n")
+# 
+# # just checking the number is right
+# n_not_missing_age <- table(total$Age != "age_not_available")[2]
+# Create a logical vector to represent whether x > y for each row
+Allele2_greater_than_path_max_with_age <- (total_subset$Allele2LowerBound >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max)
+table(Allele2_greater_than_path_max_with_age)
+result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_max_with_age)), by = list(total_subset$Id), FUN = sum)
+sum(result1$V1, na.rm= TRUE)
+result2 <- aggregate(cbind(total_subset$disease_id), by = list(total_subset$Id), FUN = function(x) sum(!is.na(x)))
+colnames(result1) <- c("Id", "Allele2>pathogenic_max&agemax>age_onset_max")
+colnames(result2) <- c("Id", "Allele2_Loci_by_Id")
+result <- merge(result1,result2)
+result$percent <- result$`Allele2>pathogenic_max&agemax>age_onset_max`/result$Allele2_Loci_by_Id*100
+result <- calculate_ci(result, successes_col = "Allele2>pathogenic_max&agemax>age_onset_max", trials_col = "Allele2_Loci_by_Id", conf_level = 0.95)
+ggplot(result, aes(x = reorder(Id,percent), y = percent, color = Id)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8), legend.position = "none") +
+  ylab("Pathogenic Percentage") + 
+  ggtitle("Pathogenic Percentage Over Age by Id with 95% CI ")
+
+
+# 
+# 
+# # Summarize additional statistics by disease_id
+# result2 <- total_subset %>%
+#   group_by(disease_id) %>%
+#   summarise(min_allele2 = min(as.numeric(Allele2)), max_allele2 = max(as.numeric(Allele2)), max_pathogenic_max = max(as.numeric(pathogenic_max)))
+# 
+# # Merge results
+# bigresult <- merge(result, result2)
+# 
+# # Print bigresult
+# print(bigresult)
+
+```
+
+
+### What about the percentage of folks where they are over the size, over the age, AND have the pathogenic motif?
+``` {r motif}
+total_subset <- total[complete.cases(total$AgeMin), ]
+
+total_subset$AgeMin <- as.integer(total_subset$AgeMin) 
+
+
+
+# # Apply the condition to each row of the data frame
+# condition <- (total_subset$Allele2LowerBound >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max) & (total_subset$motif_norm == total_subset$repeatunit_path_normalized)
+# 
+# # # Use ifelse to print a message for each row where the condition is true
+# resultmotif <- ifelse(condition,
+#                  paste(total_subset$Id, "Allele2 LB:", total_subset$Allele2LowerBound, ", pathogenic_max:", total_subset$pathogenic_max, total_subset$motif_norm, total_subset$repeatunit_path_normalized),
+#                  "")
+# 
+# # # Print the result
+# for (i in seq_along(resultmotif)) {
+#   if (resultmotif[i] != "") {
+#     cat(resultmotif[i], "\n")
+#   }
+# }
+# 
+# # just checking the number is right
+# n_not_missing_age <- table(total$Age != "age_not_available")[2]
+# Create a logical vector to represent whether x > y for each row
+
+Allele2_greater_than_path_min_with_age_and_motif <- (total_subset$Allele2LowerBound >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max) & (total_subset$motif_norm == total_subset$repeatunit_path_normalized)
+
+table(Allele2_greater_than_path_min_with_age_and_motif)
+
+result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_min_with_age_and_motif)), by = list(total_subset$Id), FUN = sum)
+
+sum(result1$V1, na.rm= TRUE)
+
+result2 <- aggregate(cbind(total_subset$disease_id), by = list(total_subset$Id, total_subset$repeatunit_path_normalized), FUN = function(x) sum(!is.na(x)))
+
+
+colnames(result1) <- c("Id", "Allele2>pathogenic_min&agemax>age_onset_max&motif_norm=motif_path")
+colnames(result2) <- c("Id", "pathogenic_motif", "Allele2_Loci_by_Id")
+
+
+result <- merge(result1,result2)
+
+result$percent <- result$`Allele2>pathogenic_min&agemax>age_onset_max&motif_norm=motif_path`/result$Allele2_Loci_by_Id*100
+
+result <- calculate_ci(result, successes_col = "Allele2>pathogenic_min&agemax>age_onset_max&motif_norm=motif_path", trials_col = "Allele2_Loci_by_Id", conf_level = 0.95)
+
+ggplot(result, aes(x = reorder(Id,percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + 
+  ggtitle("Pathogenic Percentage Over Age by Id AND Motif with 95% CI ")
+
+
+ggplot(subset(result, percent > 5), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % Over Age by Id+Motif with 95% CI (Pct > 5)")
+
+ggplot(subset(result, percent <= 5), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % Over Age by Id+Motif with 95% CI (Pct <= 5)")
+
+
+
+```
+
+
+### Let's do the inheritance pattern analysis
+
+```{r inheritance, fig.width=12, fig.height=4}
+total <- total %>%
+  mutate(Inheritance = ifelse(Id == 'ATXN2', 'AD', Inheritance))
+AD_total <- subset(total, Inheritance == "AD")
+AD_Allele2_greater_than_path_min <- (AD_total$Allele2LowerBound >= AD_total$pathogenic_min) & 
+  (AD_total$motif_norm == AD_total$repeatunit_path_normalized)
+AD_result1 <- aggregate(cbind(AD_Allele2_greater_than_path_min), by = list(AD_total$Id), FUN = sum, na.rm=TRUE)
+AD_result2 <- aggregate(cbind(AD_total$Allele2), by = list(AD_total$Id, AD_total$repeatunit_path_normalized, AD_total$Inheritance), FUN = function(x) sum(!is.na(x)))
+AD_result <- merge(AD_result1, AD_result2)
+
+
+AR_total <- subset(total, Inheritance == "AR")
+AR_Allele21_greater_than_path_min <- (AR_total$Allele2LowerBound >= AR_total$pathogenic_min) & 
+  (AR_total$motif_norm == AR_total$repeatunit_path_normalized) & (AR_total$Allele1LowerBound >= AR_total$pathogenic_min) 
+AR_Allele2_greater_than_path_min <- (AR_total$Allele2LowerBound >= AR_total$pathogenic_min) & 
+  (AR_total$Allele1LowerBound < AR_total$pathogenic_min) & 
+  (AR_total$motif_norm == AR_total$repeatunit_path_normalized) 
+AR_result1 <- aggregate(cbind(AR_Allele21_greater_than_path_min), by = list(AR_total$Id), FUN = sum, na.rm=TRUE)
+### pathogenic result for VWA1, which is deviation, not contraction
+AR_result1$AR_Allele21_greater_than_path_min[AR_result1$Group.1 == "VWA1"] <- sum(subset(AR_total, Id == "VWA1" & Allele1 != 2 & Allele2 != 2 & (AR_total$motif_norm == AR_total$repeatunit_path_normalized))$Id == "VWA1")
+AR_result2 <- aggregate(cbind(AR_Allele2_greater_than_path_min), by = list(AR_total$Id), FUN = sum, na.rm=TRUE)
+### carrier result for VWA1, which is deviation, not contraction
+AR_result2$AR_Allele2_greater_than_path_min[AR_result2$Group.1 == "VWA1"] <- sum(subset(AR_total, Id == "VWA1" & (Allele1 == 2 & Allele2 != 2) | (Allele1 != 2 & Allele2 == 2) & (AR_total$motif_norm == AR_total$repeatunit_path_normalized))$Id == "VWA1")
+AR_result3 <- aggregate(cbind(AR_total$Allele2), by = list(AR_total$Id, AR_total$repeatunit_path_normalized, AR_total$Inheritance), FUN = function(x) sum(!is.na(x)))
+AR_result <- merge(AR_result1, AR_result2)
+AR_result <- merge(AR_result, AR_result3)
+
+XR_XX_total_sex <- subset(total, Inheritance == "XR" & Sex == "XX")
+XR_XX_Allele21_greater_than_path_min <- (XR_XX_total_sex$Allele1LowerBound >= XR_XX_total_sex$pathogenic_min) & 
+  (XR_XX_total_sex$Allele2LowerBound >= XR_XX_total_sex$pathogenic_min) & 
+  (XR_XX_total_sex$motif_norm == XR_XX_total_sex$repeatunit_path_normalized)
+XR_XX_Allele2_greater_than_path_min <- (XR_XX_total_sex$Allele1LowerBound < XR_XX_total_sex$pathogenic_min) & 
+  (XR_XX_total_sex$Allele2LowerBound >= XR_XX_total_sex$pathogenic_min) & 
+  (XR_XX_total_sex$motif_norm == XR_XX_total_sex$repeatunit_path_normalized)
+XR_XX_result1 <- aggregate(cbind(XR_XX_Allele21_greater_than_path_min), by = list(XR_XX_total_sex$Id), FUN = sum, na.rm=TRUE)
+XR_XX_result2 <- aggregate(cbind(XR_XX_Allele2_greater_than_path_min), by = list(XR_XX_total_sex$Id), FUN = sum, na.rm=TRUE)
+XR_XX_result3 <- aggregate(cbind(XR_XX_total_sex$Allele1), by = list(XR_XX_total_sex$Id, XR_XX_total_sex$repeatunit_path_normalized, XR_XX_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
+XR_XX_result <- merge(XR_XX_result1, XR_XX_result2)
+XR_XX_result <- merge(XR_XX_result, XR_XX_result3)
+
+XR_XY_total_sex <- subset(total, Inheritance == "XR" & Sex == "XY")
+XR_XY_Allele1_greater_than_path_min <- (XR_XY_total_sex$Allele1LowerBound >= XR_XY_total_sex$pathogenic_min) &
+  (XR_XY_total_sex$repeatunit_path_normalized == XR_XY_total_sex$motif_norm)
+XR_XY_Allele2_greater_than_path_min <- XR_XY_total_sex$Allele2LowerBound >= XR_XY_total_sex$pathogenic_min &
+  (XR_XY_total_sex$repeatunit_path_normalized == XR_XY_total_sex$motif_norm)
+XR_XY_Allele_greater_than_path_min <- XR_XY_Allele1_greater_than_path_min | XR_XY_Allele2_greater_than_path_min
+XR_XY_result1 <- aggregate(cbind(XR_XY_Allele_greater_than_path_min), by = list(XR_XY_total_sex$Id), FUN = sum, na.rm=TRUE)
+XR_XY_result2 <- aggregate(cbind(XR_XY_total_sex$Allele1), by = list(XR_XY_total_sex$Id, XR_XY_total_sex$repeatunit_path_normalized, XR_XY_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
+XR_XY_result <- merge(XR_XY_result1, XR_XY_result2)
+
+XD_total_sex <- subset(total, Inheritance == "XD")
+XD_Allele_greater_than_path_min <- ((XD_total_sex$Allele1LowerBound >= XD_total_sex$pathogenic_min) | 
+                                      (XD_total_sex$Allele2LowerBound >= XD_total_sex$pathogenic_min)) & 
+  (XD_total_sex$motif_norm == XD_total_sex$repeatunit_path_normalized)
+XD_result1 <- aggregate(cbind(XD_Allele_greater_than_path_min), by = list(XD_total_sex$Id), FUN = sum, na.rm=TRUE)
+XD_result2 <- aggregate(cbind(XD_total_sex$Allele1), by = list(XD_total_sex$Id, XD_total_sex$repeatunit_path_normalized, XD_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
+XD_result <- merge(XD_result1, XD_result2)
+
+
+colnames(AD_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+colnames(AR_result) <- c("Id", "Pathogenic_Count", "Carrier_Count", "Motif", "Inheritance", "Total_Loci")
+colnames(XR_XX_result) <- c("Id", "Pathogenic_Count", "Carrier_Count", "Motif", "Inheritance", "Total_Loci")
+colnames(XR_XY_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+colnames(XD_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+
+XR_XY_result$Id <- paste0("XY_", XR_XY_result$Id)
+XR_XX_result$Id <- paste0("XX_", XR_XX_result$Id)
+
+AD_result <- transform(AD_result, Carrier_Count = NA)
+XR_XY_result <- transform(XR_XY_result, Carrier_Count = NA)
+XD_result <- transform(XD_result, Carrier_Count = NA)
+
+# combine data frames
+combined_df <- do.call(rbind, list(AD_result, AR_result, XR_XX_result, XR_XY_result, XD_result))
+
+combined_df$pathogenic_percent <- combined_df$Pathogenic_Count/combined_df$Total_Loci*100
+
+combined_df$carrier_percent <- combined_df$Carrier_Count/combined_df$Total_Loci*100
+
+
+combined_df <- calculate_ci(combined_df, successes_col = "Pathogenic_Count", trials_col = "Total_Loci", conf_level = 0.95)
+combined_df <- calculate_ci(combined_df, successes_col = "Carrier_Count", trials_col = "Total_Loci", conf_level = 0.95)
+
+
+ggplot(combined_df, aes(x = reorder(Id,pathogenic_percent), y = pathogenic_percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + 
+  ggtitle("Pathogenic % with Inheritance Logic, 95% CI")
+
+
+ggplot(subset(combined_df, percent > 1), aes(x = reorder(Id, percent), y = percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI(Pct > 1)")
+
+ggplot(subset(combined_df, percent <= 1), aes(x = reorder(Id, percent), y = percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI (Pct <= 1)")
+
+
+ggplot(combined_df) + geom_point(aes(x = Id, y = percent, col=Inheritance)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~Motif, scales = "free_x") + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
+
+# ggplot(subset(combined_df, Motif == "CNG")) + geom_point(aes(x = reorder(Id, percent), y = percent, col=Inheritance)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~Motif, scales = "free_x") + scale_x_discrete(guide = guide_axis(check.overlap = TRUE)) + xlab("Ids") + ylab("Pathogenic %") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI (CNG only)")
+
+ggplot(subset(combined_df, Motif != "CNG")) + geom_point(aes(x = reorder(Id, percent), y = percent, col=Inheritance)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~Motif, scales = "free_x") + scale_x_discrete(guide = guide_axis(check.overlap = TRUE)) + xlab("Ids") + ylab("Pathogenic %") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI (!= CNG)")
+
+
+```
+
+### Let's do the inheritance pattern analysis WITH Neurocase
+
+```{r inheritance, fig.width=12, fig.height=4}
+total_neuro <- subset(total, IsNeuroCase == "True")
+  
+total_non_neuro <- subset(total, IsNeuroCase == "False")
+
+process_data <- function(data) {
+  # Process AD data
+  AD_data <- subset(data, Inheritance == "AD")
+  AD_Allele2_greater_than_path_min <- (AD_data$Allele2LowerBound >= AD_data$pathogenic_min) & 
+    (AD_data$motif_norm == AD_data$repeatunit_path_normalized)
+  AD_result1 <- aggregate(
+    cbind(AD_Allele2_greater_than_path_min),
+    by = list(AD_data$Id),
+    FUN = sum,
+    na.rm = TRUE
+  )
+  AD_result2 <- aggregate(
+    cbind(AD_data$Allele2),
+    by = list(
+      AD_data$Id,
+      AD_data$repeatunit_path_normalized,
+      AD_data$Inheritance
+    ),
+    FUN = function(x) sum(!is.na(x))
+  )
+  AD_result <- merge(AD_result1, AD_result2)
+  
+  # Process AR data
+  AR_data <- subset(data, Inheritance == "AR")
+  AR_Allele21_greater_than_path_min <- (AR_data$Allele2LowerBound >= AR_data$pathogenic_min) & 
+    (AR_data$motif_norm == AR_data$repeatunit_path_normalized) & (AR_data$Allele1LowerBound >= AR_data$pathogenic_min) 
+  AR_result1 <- aggregate(
+    cbind(AR_Allele21_greater_than_path_min),
+    by = list(AR_data$Id),
+    FUN = sum,
+    na.rm = TRUE
+  )
+  AR_result2 <- aggregate(
+    cbind(AR_data$Allele2),
+    by = list(
+      AR_data$Id,
+      AR_data$repeatunit_path_normalized,
+      AR_data$Inheritance
+    ),
+    FUN = function(x) sum(!is.na(x))
+  )
+  AR_result <- merge(AR_result1, AR_result2)
+  
+  # Process XR (XX) data
+  XR_XX_data <- subset(data, Inheritance == "XR" & Sex == "XX")
+  XR_XX_Allele21_greater_than_path_min <- (XR_XX_data$Allele1LowerBound >= XR_XX_data$pathogenic_min) & 
+    (XR_XX_data$Allele2LowerBound >= XR_XX_data$pathogenic_min) & 
+    (XR_XX_data$motif_norm == XR_XX_data$repeatunit_path_normalized)
+  XR_XX_result1 <- aggregate(
+    cbind(XR_XX_Allele21_greater_than_path_min),
+    by = list(XR_XX_data$Id),
+    FUN = sum,
+    na.rm = TRUE
+  )
+  XR_XX_result2 <- aggregate(
+    cbind(XR_XX_data$Allele1),
+    by = list(
+      XR_XX_data$Id,
+      XR_XX_data$repeatunit_path_normalized,
+      XR_XX_data$Inheritance
+    ),
+    FUN = function(x) sum(!is.na(x))
+  )
+  XR_XX_result <- merge(XR_XX_result1, XR_XX_result2)
+  
+  # Process XR (XY) data
+  XR_XY_data <- subset(data, Inheritance == "XR" & Sex == "XY")
+  XR_XY_Allele1_greater_than_path_min <- (XR_XY_data$Allele1LowerBound >= XR_XY_data$pathogenic_min) &
+    (XR_XY_data$repeatunit_path_normalized == XR_XY_data$motif_norm)
+  XR_XY_Allele2_greater_than_path_min <- XR_XY_data$Allele2LowerBound >= XR_XY_data$pathogenic_min &
+    (XR_XY_data$repeatunit_path_normalized == XR_XY_data$motif_norm)
+  XR_XY_Allele_greater_than_path_min <- XR_XY_Allele1_greater_than_path_min | XR_XY_Allele2_greater_than_path_min
+  XR_XY_result1 <- aggregate(
+    cbind(XR_XY_Allele_greater_than_path_min),
+    by = list(XR_XY_data$Id),
+    FUN = sum,
+    na.rm = TRUE
+  )
+  XR_XY_result2 <- aggregate(
+    cbind(XR_XY_data$Allele1),
+    by = list(
+      XR_XY_data$Id,
+      XR_XY_data$repeatunit_path_normalized,
+      XR_XY_data$Inheritance
+    ),
+    FUN = function(x) sum(!is.na(x))
+  )
+  XR_XY_result <- merge(XR_XY_result1, XR_XY_result2)
+  
+  # Process XD data
+  XD_data <- subset(data, Inheritance == "XD")
+  XD_Allele_greater_than_path_min <- (
+    (XD_data$Allele1LowerBound >= XD_data$pathogenic_min) |
+      (XD_data$Allele2LowerBound >= XD_data$pathogenic_min)
+  ) & (XD_data$motif_norm == XD_data$repeatunit_path_normalized)
+  XD_result1 <- aggregate(
+    cbind(XD_Allele_greater_than_path_min),
+    by = list(XD_data$Id),
+    FUN = sum,
+    na.rm = TRUE
+  )
+  XD_result2 <- aggregate(
+    cbind(XD_data$Allele1),
+    by = list(
+      XD_data$Id,
+      XD_data$repeatunit_path_normalized,
+      XD_data$Inheritance
+    ),
+    FUN = function(x) sum(!is.na(x))
+  )
+  XD_result <- merge(XD_result1, XD_result2)
+  
+  # Assign column names
+  colnames(AD_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+  colnames(AR_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+  colnames(XR_XX_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+  colnames(XR_XY_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+  colnames(XD_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
+  
+  # Add "XX_" or "XY_" to XR results
+  XR_XX_result$Id <- paste0("XX_", XR_XX_result$Id)
+  XR_XY_result$Id <- paste0("XY_", XR_XY_result$Id)
+  
+  # Combine data frames
+  combined_df <- rbind(AD_result, AR_result, XR_XX_result, XR_XY_result, XD_result)
+  
+  combined_df$percent <- combined_df$Pathogenic_Count / combined_df$Total_Loci * 100
+  
+  combined_df <- calculate_ci(
+    combined_df,
+    successes_col = "Pathogenic_Count",
+    trials_col = "Total_Loci",
+    conf_level = 0.95
+  )
+  
+  return(combined_df)
+}
+
+combined_df_neuro <- process_data(total_neuro)
+combined_df_non_neuro <- process_data(total_non_neuro)
+
+# Add "IsNeuroCase" column to combined_df_neuro
+combined_df_neuro$IsNeuroCase <- TRUE
+
+# Add "IsNeuroCase" column to combined_df_non_neuro
+combined_df_non_neuro$IsNeuroCase <- FALSE
+
+# Merge both dataframes into combined_df_both_neuro_cases
+combined_df_both_neuro_cases <- rbind(combined_df_neuro, combined_df_non_neuro)
+
+
+#combined_total <- process_data(total)
+
+ggplot(combined_df_both_neuro_cases, aes(x = reorder(Id,percent), y = percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") +
+  ggtitle("Pathogenic % with Inheritance Logic, 95% CI") + facet_wrap(~IsNeuroCase)
+
+ggplot(subset(combined_df_both_neuro_cases, Motif != "CNG"), aes(x = reorder(Id, percent), y = percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8)) +
+  ylab("Pathogenic Percentage") +
+  ggtitle("Pathogenic % with Inheritance Logic, 95% CI") +
+  facet_wrap(~IsNeuroCase)
+
+
+```
+
+
+
+``` {r plot, fig.width=15,fig.height=20}
+
+ggplot(combined_df, aes(x = reorder(Id,percent), y = percent, color = Inheritance)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + 
+  ggtitle("Pathogenic % with Inheritance Logic, 95% CI") + facet_wrap(~Motif, ncol=2, scales = "free")
+
+
+ggplot(combined_df, aes(x = reorder(Id,percent), y = percent, color = Motif)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
+  ylab("Pathogenic Percentage") + 
+  ggtitle("Pathogenic % with Inheritance Logic, 95% CI") + facet_wrap(~Inheritance, ncol=2, scales = "free")
+
+```
+
+
+## Detour with Confidence Regions
+"First, split it into two columns so we can plot it. I can think of a few plots that might be useful. Probably to start with, does the width of the confidence interval increase with allele2 size?"
+
+```{r sanitycheck}
+table(gnomADSTRcalls$Allele2LowerBound <= gnomADSTRcalls$Allele2 & gnomADSTRcalls$Allele2 <= gnomADSTRcalls$Allele2HigherBound)
+
+table(gnomADSTRcalls$Allele2LowerBoundOTR <= gnomADSTRcalls$Allele2UsingOfftargetRegions & gnomADSTRcalls$Allele2UsingOfftargetRegions <= gnomADSTRcalls$Allele2HigherBoundOTR)
+
+```
+
+```{r confinterveal, fig.width=15,fig.height=100}
+
+ggplot(gnomADSTRcalls, aes(x = Allele2, y = (Allele2HigherBound - Allele2LowerBound), col=Id)) +
+  geom_point() + theme(legend.position = "none") + facet_wrap(~Id, ncol=2, scales = "free") +
+  labs(y = "Width of Allele2 Confidence Interval", x = "Allele2")
+```
+
+
+```{r confinterveal spread out, fig.width=15,fig.height=100}
+# ggplot(gnomADSTRcalls, aes(x = gnomADSTRcalls$Allele2, y = (gnomADSTRcalls$Allele2HigherBound - gnomADSTRcalls$Allele2LowerBound), col=Id)) +
+#   geom_point() + theme(legend.position = "none") + facet_grid(~Id) + 
+#   labs(y = "Width of Allele2 Confidence Interval", x = "Allele2")
+```
+
+
+
+
+# Do this after motifs have been separated. Then use one of the motifs sizes as the nchar bit. May need to finess RFC1 because it can have different motif sizes
+
+```{r harrietplot}
+# Combine Allele1 and Allele2
+
+gnomADSTRcalls$RefAllele = round((gnomADSTRcalls$End - gnomADSTRcalls$Start_0based)/nchar(gnomADSTRcalls$Motif))
+
+keep.cols = c('PcrProtocol', 'Age', 'Id', 'Motif', 'RefAllele')
+allele1and2 = rbind(gnomADSTRcalls[,keep.cols], gnomADSTRcalls[,keep.cols])
+allele1and2$Allele_withoutOTR = c(gnomADSTRcalls$Allele1, gnomADSTRcalls$Allele2)
+allele1and2$Allele_withOTR = c(gnomADSTRcalls$Allele1UsingOfftargetRegions, gnomADSTRcalls$Allele2UsingOfftargetRegions)
+allele1and2$Age[allele1and2$Age == 'age_not_available'] = NA
+
+ggplot(subset(allele1and2, !is.na(Allele_withoutOTR)), 
+              aes(x = Allele_withoutOTR,
+               fill = Allele_withoutOTR == RefAllele)) + 
+  geom_bar() + 
+  facet_wrap(~Id, ncol=3, scales = "free") + 
+  labs(x = 'Allele 1 or 2 withoutOTR')
+ggsave('Allele_withoutOTR_isref.pdf', height = 50, width = 20, limitsize = FALSE)
+
+ggplot(subset(allele1and2, !is.na(Allele_withOTR)), 
+       aes(x = Allele_withOTR,
+           fill = Allele_withOTR == RefAllele)) + 
+  geom_bar() + 
+  facet_wrap(~Id, ncol=3, scales = "free") + 
+  labs(x = 'Allele 1 or 2 withOTR')
+ggsave('Allele_withOTR_isref.pdf', height = 50, width = 20, limitsize = FALSE)
+
+
+```
+
+# Visualize things
+"We should go take a look at some of those DMD and TCF4 calls to make sure they look real. Would you be able to output the image file names for a few of the largest ones?" from Harriet
+Here's how to view them:
+In your browser...
+https://gnomad.broadinstitute.org/reads/gnomad_r3/short_tandem_repeats/[locus]/[filename].svg
+For example:
+https://gnomad.broadinstitute.org/reads/gnomad_r3/short_tandem_repeats/YEATS2/4b8c0a9ee270639517caa7472fe90ae9ff1.svg
+Here's how to interpret the images:
+https://gnomad.broadinstitute.org/news/2022-01-the-addition-of-short-tandem-repeat-calls-to-gnomad/#supplemental-details-f[…]ing-read-visualizations 
+
+``` {r visualize}
+library(clipr)
+# get largest allele2 from TCF4 to clipboard
+TCF4_gnomAd <- subset(gnomADSTRcalls, Id == "TCF4")
+TCF4_gnomAd <- TCF4_gnomAd[order(-TCF4_gnomAd$Allele2),]
+clipr::write_clip(head(TCF4_gnomAd))
+
+DMD_gnomAd <- subset(gnomADSTRcalls, Id == "DMD" & Sex == "XY")
+DMD_gnomAd <- DMD_gnomAd[order(-DMD_gnomAd$Allele1),]
+clipr::write_clip(head(DMD_gnomAd))
+
+#https://gnomad.broadinstitute.org/reads/gnomad_r3/short_tandem_repeats/DMD/c7c0bdc287555a02382f282043126a5ce60.svg
+
+
+$https://gnomad.broadinstitute.org/reads/gnomad_r3/short_tandem_repeats/DMD/[filename].svg
+
+$https://gnomad.broadinstitute.org/reads/gnomad_r3/short_tandem_repeats/TCF4/[filename].svg
+
+
+subset_ids_DMD <- DMD_gnomAd$PublicSampleId[DMD_gnomAd$AlleleLargest > 59]
+print(subset_ids_DMD)
+
+
+subset_ids_TCF4 <- TCF4_gnomAd$PublicSampleId[TCF4_gnomAd$AlleleLargest > 50]
+print(subset_ids_TCF4)
+
+intersect(subset_ids_DMD, subset_ids_TCF4)
+union(subset_ids_DMD, subset_ids_TCF4)
+
+```
+
+
+# Fill by motif first, then separate by motif if needed. (edited) 
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE, fig.width=20}
+valid_indices <- complete.cases(total$Allele2UsingOfftargetRegions, total$AlleleLargest)
+fold_change <- total$Allele2UsingOfftargetRegions[valid_indices] / total$AlleleLargest[valid_indices]
+
+# Create a new dataframe with fold_change and Id columns
+df <- data.frame(fold_change = fold_change,
+                 Id = total$Id[valid_indices],
+                 PublicProjectId = total$PublicProjectId[valid_indices],
+                 PublicSampleId = total$PublicSampleId[valid_indices],
+                 ReferenceRegion = total$ReferenceRegion[valid_indices],
+                 AlleleLargest = total$AlleleLargest[valid_indices],
+                 Allele2UsingOfftargetRegions = total$Allele2UsingOfftargetRegions[valid_indices],
+                 ReadvizFilename = total$ReadvizFilename[valid_indices]
+                 )
+
+
+df_motif <- data.frame(fold_change = fold_change,
+                 Id = total$Id[valid_indices],
+                 PublicProjectId = total$PublicProjectId[valid_indices],
+                 PublicSampleId = total$PublicSampleId[valid_indices],
+                 ReferenceRegion = total$ReferenceRegion[valid_indices],
+               
+                 Allele2 = total$Allele2[valid_indices],
+                 Allele2UsingOfftargetRegions = total$Allele2UsingOfftargetRegions[valid_indices],
+                 motif_norm= total$motif_norm[valid_indices],
+                 ReadvizFilename = total$ReadvizFilename[valid_indices]
+                 )
+
+#   Allele1 = total$Allele1[valid_indices],
+
+# # Create histogram plot with color by Id
+# ggplot(data = df, aes(x = fold_change, fill = Id)) +
+#   geom_histogram(binwidth = 1) +
+#   scale_fill_manual(values = rainbow(length(unique(df$Id)))) +
+#   scale_y_log10() +
+#   labs(x = "Fold Change (Allele2UsingOfftargetRegions / Allele2)",
+#        y = "Frequency",
+#        title = "Distribution of Fold Change") + xlim(0,60) +
+#   theme_minimal()
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+### 1000 Genomes Phase 3 (?X Illumina sequencing of 3202 individuals)
+
+- Crams: `/scratch/ucgd/lustre/UCGD_Datahub/IRBs/proj_UCGDCollab/A1290-220303-VAR-Masked_1KG_Phase3_WGS/UCGD/GRCh38/Data/PolishedCrams`
+- Ref genome: `/scratch/ucgd/lustre/common/data/Reference/GRCh38/human_g1k_v38_decoy_phix.fasta`
+
+
+JIGV to do programmatic 
+
+``` {r wrong motif?}
+# Create the histogram plot
+# ggplot(total[total$Id == "STARD7", ], aes(x = AlleleLargest, fill = motif_norm)) +
+#   geom_histogram(binwidth = 1) +
+#   scale_fill_discrete() +
+#   labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest (Id = STARD7)") +
+#   theme_minimal()
+
+# ggplot(data = subset(total, Id == "STARD7" & AlleleLargest > 10),
+#        aes(x = AlleleLargest, fill = motif_norm)) +
+#   geom_histogram(binwidth = 1) +
+#   scale_fill_discrete() +
+#   labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest (Id = STARD7)") +
+#   theme_minimal()
+
+# ggplot(data = subset(total, Id == "STARD7"),
+#        aes(x = Allele2UsingOfftargetRegions, fill = motif_norm)) +
+#   geom_histogram(binwidth = 1) +
+#   scale_fill_discrete() +
+#   labs(x = "Allele2UsingOfftargetRegions", y = "Frequency", title = "Histogram of Allele2UsingOfftargetRegions (Id = STARD7)") +
+#   theme_minimal() + ylim(0,3) + xlim(10,900)
+
+ggplot(df_motif[df_motif$Id == "STARD7", ], aes(x = fold_change, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "Fold Change", y = "Frequency", title = "Histogram of Fold Change (Id = STARD7)") +
+  theme_minimal()
+
+ggplot(data = subset(df_motif, Id == "STARD7" & fold_change > 10),
+       aes(x = fold_change, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() + 
+  labs(x = "Fold Change", y = "Frequency", title = "Histogram of Fold Change < 10(Id = STARD7)") +
+  theme_minimal()
+
+
+ggplot(data = subset(total, Id == "STARD7" & motif_norm != "AAAAT"), aes(x = AlleleLargest, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest w/o Most Common Motif (Id = RFC1)") +
+  theme_minimal() 
+
+
+# ggplot(data = subset(total, Id == "BEAN1"), aes(x = AlleleLargest, fill = motif_norm)) +
+#   geom_histogram(binwidth = 1) +
+#   scale_fill_discrete() +
+#   labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest (Id = BEAN1)") +
+#   theme_minimal() 
+
+ggplot(data = subset(total, Id == "BEAN1" & motif_norm != "AAAAT"), aes(x = AlleleLargest, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest (Id = BEAN1)") +
+  theme_minimal() 
+
+
+ggplot(data = subset(df_motif, Id == "BEAN1" & fold_change > 5),
+       aes(x = fold_change, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "Fold Change", y = "Frequency", title = "Histogram of Fold Change > 5 (Id = BEAN1)") +
+  theme_minimal()
+
+ggplot(total[total$Id == "DAB1", ], aes(x = AlleleLargest, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest (Id = DAB1)") +
+  theme_minimal()
+
+ggplot(data = subset(df_motif, Id == "DAB1" & fold_change > 5),
+       aes(x = fold_change, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "Fold Change", y = "Frequency", title = "Histogram of Fold Change > 5 (Id = DAB1)") +
+  theme_minimal()
+
+ggplot(total[total$Id == "RFC1", ], aes(x = AlleleLargest, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest (Id = RFC1)") +
+  theme_minimal()
+
+ggplot(data = subset(total, Id == "RFC1" & motif_norm != "AAAAG"), aes(x = AlleleLargest, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "AlleleLargest", y = "Frequency", title = "Histogram of AlleleLargest w/o Most Common Motif (Id = RFC1)") +
+  theme_minimal() 
+
+ggplot(data = subset(df_motif, Id == "RFC1" & fold_change > 10),
+       aes(x = fold_change, fill = motif_norm)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "Fold Change", y = "Frequency", title = "Histogram of Fold Change > 10 (Id = RFC1)") +
+  theme_minimal()
+```
+
+```{r Allele1 ~= Allele1OTR}
+
+ggplot(data = gnomADSTRcalls[gnomADSTRcalls$Allele1 != gnomADSTRcalls$Allele1UsingOfftargetRegions, ], 
+       aes(x = Allele1, fill = Id)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_discrete() +
+  labs(x = "Allele1", y = "Frequency", title = "Histogram of Allele1 (Unequal to Allele1UsingOfftargetRegions)") +
+  theme_minimal()
+
+
+ggplot(data = gnomADSTRcalls[gnomADSTRcalls$Allele1 != gnomADSTRcalls$Allele1UsingOfftargetRegions, ], 
+       aes(x = Allele1, y = Allele1UsingOfftargetRegions, color = Id)) +
+  geom_jitter() +
+  scale_fill_discrete() +
+  labs(x = "Allele1", y = "Allele1OTR", title = "Allele1 (Unequal to Allele1UsingOfftargetRegions)") +
+  theme_minimal()
+
+
+ggplot(data = gnomADSTRcalls[gnomADSTRcalls$Allele1 != gnomADSTRcalls$Allele1UsingOfftargetRegions, ], 
+       aes(x = Allele1, y = Allele1UsingOfftargetRegions, color = Id)) +
+  geom_jitter() +
+  scale_fill_discrete() +
+  labs(x = "Allele1", y = "Allele1OTR", title = "Allele1 (Unequal to Allele1UsingOfftargetRegions)") +
+  theme_minimal() + xlim(0,300) + ylim(0,300)
+
+data = gnomADSTRcalls[gnomADSTRcalls$Allele1 != gnomADSTRcalls$Allele1UsingOfftargetRegions, ]
+```
+
+
+
+Here are TRGT (STR) calls on a bunch of long read samples that may overlap with some of the samples Ben sent
+/uufs/chpc.utah.edu/common/HIPAA/u6026198/quinlan-shared/data-shared/datasets/HPRC/trgt
+
+``` {r prevalence and paper plots, fig.width=15}
+# Assuming 'STR_table' is your dataframe
+cat(paste(STR_table$disease_id, "Prevalence:", STR_table$Prevalence, "\n"))
+
+
+ggplot(total, aes(x = factor(Id), y = AlleleLargest)) +
+  geom_violin(width=7, linewidth=1) +
+  labs(title = "Motif_norm Distribution by Disease ID",
+       x = "Disease ID",
+       y = "Allele2") +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + facet_wrap(~Inheritance, scales = "free_y")
+
+# Assuming 'STR_table' is your dataframe
+motif_counts <- total %>%
+  group_by(disease_id, motif_norm) %>%
+  summarize(MotifCount = n()) %>%
+  pivot_wider(names_from = motif_norm, values_from = MotifCount, values_fill = 0)
+
+# Print the motif counts table
+print(motif_counts)
+
+total$length_characters <- str_length(total$motif_norm)
+
+total$length_characters[total$length_characters > 6] <- ">6"
+
+unique_motif_counts <- total %>%
+  group_by(Id) %>%
+  summarize(UniqueMotifCount = n_distinct(motif_norm),
+            length_characters = unique(length_characters))
+
+unique_motif_counts <- unique_motif_counts %>%
+  filter(UniqueMotifCount != 1)
+
+unique_motif_counts <- unique_motif_counts %>%
+  mutate(UniqueMotifCount = ifelse(Id == "RFC1" & length_characters == 5, 15,
+                                   ifelse(Id == "RFC1" & length_characters == 6, 1, UniqueMotifCount)))
+
+ggplot(unique_motif_counts, 
+       aes(x = reorder(Id, UniqueMotifCount), y = UniqueMotifCount, fill = as.character(length_characters))) +
+  geom_bar(stat = "identity", alpha = 0.8) +
+  labs(title = "gnomAD Motif Counts by ID",
+       x = "ID",
+       y = "Unique Motif Count") +
+  scale_fill_brewer(palette = "Pastel3", name = "Length of Motif Characters") +  # Adjust palette and legend title
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 14),  # Adjust size as needed
+        axis.text.y = element_text(size = 14),  # Adjust size as needed
+        axis.title.y = element_text(size = 16))  # Adjust size as needed
+
+
+
+```
+```{r harriet strchive plots}
+
+STR_table_adjusted <- STR_table %>%
+  mutate(
+    normal_min = coalesce(normal_min, normal_max),
+    pathogenic_max = coalesce(pathogenic_max, pathogenic_min)
+  )
+
+STR_table_adjusted <- STR_table_adjusted %>%
+  mutate(
+    normal_min = ifelse(gene == "MARCHF6", 0, normal_min),
+    normal_max = ifelse(gene == "MARCHF6", 0, normal_max)
+  )
+
+STR_table_adjusted$norm_min_bp = STR_table_adjusted$normal_min * STR_table_adjusted$repeatunitlen
+STR_table_adjusted$norm_max_bp = STR_table_adjusted$normal_max * STR_table_adjusted$repeatunitlen
+STR_table_adjusted$int_min_bp = STR_table_adjusted$intermediate_min * STR_table_adjusted$repeatunitlen
+STR_table_adjusted$int_max_bp = STR_table_adjusted$intermediate_max * STR_table_adjusted$repeatunitlen
+STR_table_adjusted$path_min_bp = STR_table_adjusted$pathogenic_min * STR_table_adjusted$repeatunitlen
+STR_table_adjusted$path_max_bp = STR_table_adjusted$pathogenic_max * STR_table_adjusted$repeatunitlen
+
+
+ggplot(STR_table_adjusted, aes(x = gene)) +
+  geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp + 1, color = 'Normal'), linewidth = 1.5) +
+  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp + 1, color = 'Intermediate*'), linewidth = 1.5) +
+  geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp + 1, color = 'Pathogenic'), linewidth = 1.5) +
+  scale_y_continuous(name = 'Allele size in base pairs', trans = 'log10') +
+  scale_x_discrete(name = 'Disease') +
+  geom_linerange(data = subset(STR_table_adjusted, gene == "VWA1"), 
+                 aes(ymin = 19.5, ymax = 20.5), color = "#00AFBB", linewidth = 1.5) + 
+  geom_linerange(data = subset(STR_table_adjusted, gene == "STARD7"), 
+                 aes(ymin = 272, ymax = 276), color = "#FC4E07", linewidth = 1.5) + 
+  geom_linerange(data = subset(STR_table_adjusted, gene == "RAPGEF"), 
+                 aes(ymin = 58, ymax = 62), color = "#FC4E07", linewidth = 1.5) + 
+  geom_linerange(data = subset(STR_table_adjusted, gene == "AFF3"), 
+                 aes(ymin = 295, ymax = 305), color = "#FC4E07", linewidth = 1.5) + 
+  geom_linerange(data = subset(STR_table_adjusted, gene == "NUTM2B-AS1"), 
+                 aes(ymin = 690, ymax = 710), color = "#FC4E07", linewidth = 1.5) + 
+  scale_colour_manual(values = c('Normal' = '#00AFBB', 'Intermediate*' = '#E7B800', 'Pathogenic' = '#FC4E07'), 
+                      breaks = c('Normal', 'Intermediate*', 'Pathogenic'),
+                      name = 'Allele size') + 
+  theme(panel.grid.major.x = element_line(color = 'lightgrey', linetype = 'longdash')) +
+  coord_flip()
+
+
+ggplot(subset(STR_table, !is.na(STR_table$age_onset_min) & STR_table$Inheritance != '') , 
+       aes(x = reorder(gene, -age_onset_min), color = Inheritance)) +
+  geom_linerange(aes(ymin = age_onset_min, ymax = age_onset_max,
+  )) +
+  geom_point(aes(y = age_onset_min), size = 2.5) +
+  geom_point(aes(y = age_onset_max), size = 2.5) +
+  scale_y_continuous(name = 'Age of onset (years)') +
+  scale_x_discrete(name = 'Disease') +
+  geom_segment(aes(x = 1, y = 18, xend = 58, yend = 18), linetype = 'longdash', color = 'lightgrey') +
+  coord_flip()
+
+```
+
+
+### Pie charts
+```{r pie charts}
+# Update the type column based on the Mechanism value (handling case sensitivity, whitespace, and NA values)
+STR_table$type <- ifelse(tolower(trimws(STR_table$Mechanism)) == "polyglutamine", "Coding:Polyglutamine",
+                  ifelse(tolower(trimws(STR_table$Mechanism)) == "polyalanine", "Coding:Polyalanine", STR_table$type))
+
+
+# Create a summary of the data by type
+pie_data <- table(STR_table$type)
+
+# Plot the pie chart with labels
+pie(pie_data, main = "Pie Chart of STR_table by Type", labels = paste(names(pie_data), " ", pie_data))
+
+
+pie_data <- table(STR_table$Inheritance)
+pie(pie_data, main = "STRchive by Inheritance", labels = paste(names(pie_data), " ", pie_data))
+
+```
+
+
+
+### Type and Motif Length
+```{r type and motif length}
+# Count the number of characters in pathogenic_motif_reference_orientation
+STR_table$length_characters <- str_length(STR_table$pathogenic_motif_reference_orientation)
+
+STR_table$length_characters[STR_table$length_characters > 6] <- ">6"
+
+
+# Plot
+ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
+  geom_bar() +
+  labs(title = "STR Loci Regions and Motif Length",
+       x = "Type",
+       y = "Count") +
+  scale_fill_brewer(palette = "Pastel3", name = "Length of Pathogenic Motif") +
+  theme_minimal()
+
+
+```
+```{r, plot in progress}
+
+#motif subset
+total_motif_match <- total %>%
+  filter(motif_norm == repeatunit_path_normalized)
+
+total_motif_match <- total_motif_match %>%
+  mutate(normal_min = ifelse(Id == 'PRNP', 3.8, normal_min))
+
+total_motif_match <- total_motif_match %>%
+  mutate(pathogenic_max = ifelse(Id == 'PRNP', 7, pathogenic_max))
+
+total_motif_match <- total_motif_match %>%
+  mutate(normal_min = ifelse(Id == 'VWA1', 1.9, normal_min))
+
+total_motif_match <- total_motif_match %>%
+  mutate(normal_max = ifelse(Id == 'VWA1', 2.1, normal_max))
+
+total_motif_match <- total_motif_match %>%
+  mutate(pathogenic_max = ifelse(Id == 'VWA1', 7, pathogenic_max))
+
+total_motif_match <- total_motif_match %>%
+  mutate(normal_max = ifelse(Id == 'COMP', 5.8, normal_max))
+
+#this is just to see it
+total_motif_match <- total_motif_match %>%
+  mutate(pathogenic_max = ifelse(Id == 'NUTM2B-AS1', 705, pathogenic_max))
+
+total_motif_match$Id <- ifelse(total_motif_match$Inheritance == "XR", paste0(total_motif_match$Sex, "_", total_motif_match$Id), total_motif_match$Id)
+
+# Reorder levels of Id based on pathogenic_percent
+total_motif_match$Id <- as.character(total_motif_match$Id)
+combined_df$Id <- as.character(combined_df$Id)
+
+total_motif_match <- merge(total_motif_match, combined_df[, c("Id", "pathogenic_percent", "carrier_percent")],
+                   by = "Id", all.x = TRUE)
+
+# Now reorder the levels based on pathogenic_percent
+total_motif_match$Id <- factor(total_motif_match$Id, 
+                               levels = combined_df$Id[order(combined_df$pathogenic_percent)])
+
+# Create the plot with colored points
+#ALLELE2LOWER BOUND!
+### I think I like this one
+AD_text <- total_motif_match %>%
+  filter(Inheritance == 'AD') %>%  
+  group_by(Id) %>%
+  summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE)) %>%
+    ungroup()
+
+
+# 'Normal' = '#00AFBB', 'Intermediate*' = '#E7B800', 'Pathogenic' = '#FC4E07'),
+ggplot(total_motif_match[total_motif_match$Inheritance == 'AD', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
+  geom_violin(fill = "black", scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  labs(title = "Allelic Distribution by Disease ID",
+       x = "Disease ID",
+       y = "Allele2") +
+  scale_y_log10() +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45)) +   
+  annotate("text", 
+         x = AD_text$Id, 
+         y = 200,
+         label = paste0(round(AD_text$avg_pathogenic_percent, 3), "%"),
+         vjust = -0.5, size = 2)
+
+# Now reorder the levels based on pathogenic_percent
+total_motif_match$Id <- factor(total_motif_match$Id, 
+                               levels = combined_df$Id[order(combined_df$carrier_percent)])
+
+
+AR_text <- total_motif_match %>%
+  filter(Inheritance == 'AR') %>%  
+  group_by(Id) %>%
+  summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE),
+            carrier_percent = mean(carrier_percent, na.rm = TRUE)) %>%
+  ungroup()
+
+## happy with it
+
+
+# order by genotype, then carrier next
+ggplot(total_motif_match[total_motif_match$Inheritance == 'AR', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = normal_min, ymax = normal_max), 
+            fill = "lightblue", alpha = 0.3) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
+    geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
+  geom_violin(fill = "gray", scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  labs(title = "Allelic Distribution by Disease ID",
+       x = "Disease ID",
+       y = "Allele2") +
+  scale_y_log10() +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45)) + 
+  annotate("text", 
+         x = AR_text$Id, 
+         y = 140,
+         label = ifelse(is.nan(AR_text$carrier_percent), 
+                        paste0(round(AR_text$avg_pathogenic_percent, 3), "%"),
+                        paste0(round(AR_text$avg_pathogenic_percent, 3), "% | ", 
+                               round(AR_text$carrier_percent, 3), "%")),
+         vjust = -0.5, size = 3)
+
+
+# Now reorder the levels based on pathogenic_percent
+
+total_motif_match$Id <- factor(total_motif_match$Id, 
+                               levels = combined_df$Id[order(combined_df$pathogenic_percent)])
+
+XR_text <- total_motif_match %>%
+  filter(Inheritance == 'XR') %>%  
+  group_by(Id) %>%
+  summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE),
+            carrier_percent = mean(carrier_percent, na.rm = TRUE)) %>%
+  ungroup()
+
+### good as is
+ggplot(total_motif_match[total_motif_match$Inheritance == 'XR', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
+    geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
+  geom_violin(fill = "gray", scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  labs(title = "Allelic Distribution by Disease ID",
+       x = "Disease ID",
+       y = "Allele2") +
+  scale_y_log10() +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45)) + 
+  annotate("text", 
+         x = XR_text$Id, 
+         y = 140,
+         label = ifelse(is.nan(XR_text$carrier_percent), 
+                        paste0(round(XR_text$avg_pathogenic_percent, 3), "%"),
+                        paste0(round(XR_text$avg_pathogenic_percent, 3), "% | ", 
+                               round(XR_text$carrier_percent, 3), "%")),
+         vjust = -0.5, size = 3)
+
+
+#good as is
+ggplot(total_motif_match[total_motif_match$Inheritance == 'XD', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
+  labs(title = "Allelic Distribution by Disease ID",
+       x = "Disease ID",
+       y = "Allele2") +
+  geom_violin(fill = "black", scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  scale_y_log10() +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45)) + 
+  facet_wrap(~Sex)
+
+
+```
+
+```{r, harriet's friend}
+
+total_motif_match$Id <- factor(total_motif_match$Id, 
+                               levels = combined_df$Id[order(combined_df$pathogenic_percent)])
+
+# Create the plot with colored points
+#ALLELE2LOWER BOUND!
+### I think I like this one
+AD_text <- total_motif_match %>%
+  filter(Inheritance == 'AD') %>%  
+  group_by(Id) %>%
+  summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE)) %>%
+    ungroup()
+
+ggplot(total_motif_match[total_motif_match$Inheritance == 'AD', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = normal_min, ymax = normal_max), fill = "lightblue", alpha = 0.3) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = intermediate_min, ymax = intermediate_max), fill = "yellow", alpha = 0.3) +
+  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+                ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "lightpink", alpha = 0.3) +
+  geom_violin(fill = "blue", scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              alpha = 1) +
+  labs(title = "Allelic Distribution by Disease ID",
+       x = "Disease ID",
+       y = "Allele2") +
+  scale_y_log10() +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45)) +   
+  annotate("text", 
+         x = AD_text$Id, 
+         y = 200,
+         label = paste0(round(AD_text$avg_pathogenic_percent, 3), "%"),
+         vjust = -0.5, size = 2)
+
+
+
+```
