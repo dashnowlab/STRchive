@@ -107,6 +107,7 @@ genelist[!(genelist %in% tablegenelist)]
 tablegenelist[(tablegenelist %in% genelist)]
 length(tablegenelist[(tablegenelist %in% genelist)])
 # CCG in HTT is non-pathogenic but also sometimes surveyed; there might be some association with disease as founder effect?
+
 ```
 
 ## Let's figure out the motif stuff
@@ -1017,10 +1018,17 @@ ggplot(subset(result, percent <= 5), aes(x = reorder(Id, percent), y = percent, 
 
 
 ### Let's do the inheritance pattern analysis
+*** VWA1 10bp repeat expansion as the biallelic, so can calculate again as 3/3. ???
 
-```{r inheritance, fig.width=12, fig.height=4}
+```{r inheritance}
+total <- subset(total, total$motif_norm != "CNG")
+
+#while both inheritances are possible... they're more AD, so, we use that here
 total <- total %>%
   mutate(Inheritance = ifelse(Id == 'ATXN2', 'AD', Inheritance))
+total <- total %>%
+  mutate(Inheritance = ifelse(Id == 'PABPN1', 'AD', Inheritance))
+
 AD_total <- subset(total, Inheritance == "AD")
 AD_Allele2_greater_than_path_min <- (AD_total$Allele2LowerBound >= AD_total$pathogenic_min) & 
   (AD_total$motif_norm == AD_total$repeatunit_path_normalized)
@@ -1097,219 +1105,29 @@ combined_df$pathogenic_percent <- combined_df$Pathogenic_Count/combined_df$Total
 
 combined_df$carrier_percent <- combined_df$Carrier_Count/combined_df$Total_Loci*100
 
-
 combined_df <- calculate_ci(combined_df, successes_col = "Pathogenic_Count", trials_col = "Total_Loci", conf_level = 0.95)
 combined_df <- calculate_ci(combined_df, successes_col = "Carrier_Count", trials_col = "Total_Loci", conf_level = 0.95)
 
+combined_df <- combined_df %>%
+  rename(gene = Id)
 
-ggplot(combined_df, aes(x = reorder(Id,pathogenic_percent), y = pathogenic_percent, color = Inheritance)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2) +
-  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + 
-  ggtitle("Pathogenic % with Inheritance Logic, 95% CI")
+combined_df <- left_join(combined_df, STR_table %>% select(gene, disease_freq_num), by = "gene") 
 
-
-ggplot(subset(combined_df, percent > 1), aes(x = reorder(Id, percent), y = percent, color = Inheritance)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI(Pct > 1)")
-
-ggplot(subset(combined_df, percent <= 1), aes(x = reorder(Id, percent), y = percent, color = Inheritance)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI (Pct <= 1)")
+# let's fix up the XR loci 
+combined_df$disease_freq_num[combined_df$gene == "XX_AFF2"] <- "N/A"
+combined_df$disease_freq_num[combined_df$gene == "XX_AR"] <- "N/A"
+combined_df$disease_freq_num[combined_df$gene == "XX_DMD"] <- "N/A"
+combined_df$disease_freq_num[combined_df$gene == "XY_AFF2"] <- 2/50000
+combined_df$disease_freq_num[combined_df$gene == "XY_AR"] <-  1/30000
+## XY_DMD 4.8/100,000 PMID: 35168641
+combined_df$disease_freq_num[combined_df$gene == "XY_DMD"] <- 4.8/100000
 
 
-ggplot(combined_df) + geom_point(aes(x = Id, y = percent, col=Inheritance)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~Motif, scales = "free_x") + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
-
-# ggplot(subset(combined_df, Motif == "CNG")) + geom_point(aes(x = reorder(Id, percent), y = percent, col=Inheritance)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~Motif, scales = "free_x") + scale_x_discrete(guide = guide_axis(check.overlap = TRUE)) + xlab("Ids") + ylab("Pathogenic %") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI (CNG only)")
-
-ggplot(subset(combined_df, Motif != "CNG")) + geom_point(aes(x = reorder(Id, percent), y = percent, col=Inheritance)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~Motif, scales = "free_x") + scale_x_discrete(guide = guide_axis(check.overlap = TRUE)) + xlab("Ids") + ylab("Pathogenic %") + ggtitle("Pathogenic % with Inheritance Logic, 95% CI (!= CNG)")
 
 
 ```
 
-### Let's do the inheritance pattern analysis WITH Neurocase
 
-```{r inheritance, fig.width=12, fig.height=4}
-total_neuro <- subset(total, IsNeuroCase == "True")
-  
-total_non_neuro <- subset(total, IsNeuroCase == "False")
-
-process_data <- function(data) {
-  # Process AD data
-  AD_data <- subset(data, Inheritance == "AD")
-  AD_Allele2_greater_than_path_min <- (AD_data$Allele2LowerBound >= AD_data$pathogenic_min) & 
-    (AD_data$motif_norm == AD_data$repeatunit_path_normalized)
-  AD_result1 <- aggregate(
-    cbind(AD_Allele2_greater_than_path_min),
-    by = list(AD_data$Id),
-    FUN = sum,
-    na.rm = TRUE
-  )
-  AD_result2 <- aggregate(
-    cbind(AD_data$Allele2),
-    by = list(
-      AD_data$Id,
-      AD_data$repeatunit_path_normalized,
-      AD_data$Inheritance
-    ),
-    FUN = function(x) sum(!is.na(x))
-  )
-  AD_result <- merge(AD_result1, AD_result2)
-  
-  # Process AR data
-  AR_data <- subset(data, Inheritance == "AR")
-  AR_Allele21_greater_than_path_min <- (AR_data$Allele2LowerBound >= AR_data$pathogenic_min) & 
-    (AR_data$motif_norm == AR_data$repeatunit_path_normalized) & (AR_data$Allele1LowerBound >= AR_data$pathogenic_min) 
-  AR_result1 <- aggregate(
-    cbind(AR_Allele21_greater_than_path_min),
-    by = list(AR_data$Id),
-    FUN = sum,
-    na.rm = TRUE
-  )
-  AR_result2 <- aggregate(
-    cbind(AR_data$Allele2),
-    by = list(
-      AR_data$Id,
-      AR_data$repeatunit_path_normalized,
-      AR_data$Inheritance
-    ),
-    FUN = function(x) sum(!is.na(x))
-  )
-  AR_result <- merge(AR_result1, AR_result2)
-  
-  # Process XR (XX) data
-  XR_XX_data <- subset(data, Inheritance == "XR" & Sex == "XX")
-  XR_XX_Allele21_greater_than_path_min <- (XR_XX_data$Allele1LowerBound >= XR_XX_data$pathogenic_min) & 
-    (XR_XX_data$Allele2LowerBound >= XR_XX_data$pathogenic_min) & 
-    (XR_XX_data$motif_norm == XR_XX_data$repeatunit_path_normalized)
-  XR_XX_result1 <- aggregate(
-    cbind(XR_XX_Allele21_greater_than_path_min),
-    by = list(XR_XX_data$Id),
-    FUN = sum,
-    na.rm = TRUE
-  )
-  XR_XX_result2 <- aggregate(
-    cbind(XR_XX_data$Allele1),
-    by = list(
-      XR_XX_data$Id,
-      XR_XX_data$repeatunit_path_normalized,
-      XR_XX_data$Inheritance
-    ),
-    FUN = function(x) sum(!is.na(x))
-  )
-  XR_XX_result <- merge(XR_XX_result1, XR_XX_result2)
-  
-  # Process XR (XY) data
-  XR_XY_data <- subset(data, Inheritance == "XR" & Sex == "XY")
-  XR_XY_Allele1_greater_than_path_min <- (XR_XY_data$Allele1LowerBound >= XR_XY_data$pathogenic_min) &
-    (XR_XY_data$repeatunit_path_normalized == XR_XY_data$motif_norm)
-  XR_XY_Allele2_greater_than_path_min <- XR_XY_data$Allele2LowerBound >= XR_XY_data$pathogenic_min &
-    (XR_XY_data$repeatunit_path_normalized == XR_XY_data$motif_norm)
-  XR_XY_Allele_greater_than_path_min <- XR_XY_Allele1_greater_than_path_min | XR_XY_Allele2_greater_than_path_min
-  XR_XY_result1 <- aggregate(
-    cbind(XR_XY_Allele_greater_than_path_min),
-    by = list(XR_XY_data$Id),
-    FUN = sum,
-    na.rm = TRUE
-  )
-  XR_XY_result2 <- aggregate(
-    cbind(XR_XY_data$Allele1),
-    by = list(
-      XR_XY_data$Id,
-      XR_XY_data$repeatunit_path_normalized,
-      XR_XY_data$Inheritance
-    ),
-    FUN = function(x) sum(!is.na(x))
-  )
-  XR_XY_result <- merge(XR_XY_result1, XR_XY_result2)
-  
-  # Process XD data
-  XD_data <- subset(data, Inheritance == "XD")
-  XD_Allele_greater_than_path_min <- (
-    (XD_data$Allele1LowerBound >= XD_data$pathogenic_min) |
-      (XD_data$Allele2LowerBound >= XD_data$pathogenic_min)
-  ) & (XD_data$motif_norm == XD_data$repeatunit_path_normalized)
-  XD_result1 <- aggregate(
-    cbind(XD_Allele_greater_than_path_min),
-    by = list(XD_data$Id),
-    FUN = sum,
-    na.rm = TRUE
-  )
-  XD_result2 <- aggregate(
-    cbind(XD_data$Allele1),
-    by = list(
-      XD_data$Id,
-      XD_data$repeatunit_path_normalized,
-      XD_data$Inheritance
-    ),
-    FUN = function(x) sum(!is.na(x))
-  )
-  XD_result <- merge(XD_result1, XD_result2)
-  
-  # Assign column names
-  colnames(AD_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
-  colnames(AR_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
-  colnames(XR_XX_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
-  colnames(XR_XY_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
-  colnames(XD_result) <- c("Id", "Pathogenic_Count", "Motif", "Inheritance", "Total_Loci")
-  
-  # Add "XX_" or "XY_" to XR results
-  XR_XX_result$Id <- paste0("XX_", XR_XX_result$Id)
-  XR_XY_result$Id <- paste0("XY_", XR_XY_result$Id)
-  
-  # Combine data frames
-  combined_df <- rbind(AD_result, AR_result, XR_XX_result, XR_XY_result, XD_result)
-  
-  combined_df$percent <- combined_df$Pathogenic_Count / combined_df$Total_Loci * 100
-  
-  combined_df <- calculate_ci(
-    combined_df,
-    successes_col = "Pathogenic_Count",
-    trials_col = "Total_Loci",
-    conf_level = 0.95
-  )
-  
-  return(combined_df)
-}
-
-combined_df_neuro <- process_data(total_neuro)
-combined_df_non_neuro <- process_data(total_non_neuro)
-
-# Add "IsNeuroCase" column to combined_df_neuro
-combined_df_neuro$IsNeuroCase <- TRUE
-
-# Add "IsNeuroCase" column to combined_df_non_neuro
-combined_df_non_neuro$IsNeuroCase <- FALSE
-
-# Merge both dataframes into combined_df_both_neuro_cases
-combined_df_both_neuro_cases <- rbind(combined_df_neuro, combined_df_non_neuro)
-
-
-#combined_total <- process_data(total)
-
-ggplot(combined_df_both_neuro_cases, aes(x = reorder(Id,percent), y = percent, color = Inheritance)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") +
-  ggtitle("Pathogenic % with Inheritance Logic, 95% CI") + facet_wrap(~IsNeuroCase)
-
-ggplot(subset(combined_df_both_neuro_cases, Motif != "CNG"), aes(x = reorder(Id, percent), y = percent, color = Inheritance)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8)) +
-  ylab("Pathogenic Percentage") +
-  ggtitle("Pathogenic % with Inheritance Logic, 95% CI") +
-  facet_wrap(~IsNeuroCase)
-
-
-```
 
 
 
@@ -1754,7 +1572,9 @@ ggplot(subset(STR_table, !is.na(STR_table$age_onset_min) & STR_table$Inheritance
   geom_text(aes(x = 63, y = 18, label = "18"), color = "black", hjust = -0.5, vjust = 0) +
   coord_flip()
 
-
+STR_table %>%
+  filter(age_onset_min < 1) %>%
+  summarise(number_of_genes = n())
 
 ```
 
