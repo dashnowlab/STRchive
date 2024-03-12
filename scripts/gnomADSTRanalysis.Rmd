@@ -56,7 +56,9 @@ gnomADSTRcalls = read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/gnomAD
 
 #STR_table <- read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/STRpapercode/20240305_STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
 
-STR_table <- read.csv('/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
+#STR_table <- read.csv('/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
+
+STR_table <- read.csv('/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv', stringsAsFactors = FALSE)
 
 #str(STR_table)
 
@@ -154,8 +156,8 @@ STR_table_clean <-subset(STR_table, select=c("disease_id", "gene",
                                              "type", "normal_min", "normal_max",
                                              "intermediate_min", "intermediate_max",
                                              "pathogenic_min", "pathogenic_max",
-                                             "repeatunitlen", "age_onset_min",
-                                             "age_onset_max", "novel", "pathogenic_motif_reference_orientation"))
+                                             "repeatunitlen", "age_onset_min","typ_age_onset_min",
+                                             "age_onset_max", "typ_age_onset_max", "novel", "pathogenic_motif_reference_orientation"))
 
 colnames(STR_table_clean)[2] = "Id"
 
@@ -1716,17 +1718,43 @@ ggplot(STR_table_adjusted, aes(x = gene)) +
   theme(panel.grid.major.x = element_line(color = 'lightgrey', linetype = 'longdash')) +
   coord_flip()
 
+```
+
+``` {r age of onset, fig.height = 10}
+
+
+# Loci with GeneReview Specific to Repeat Expansion Disease (>70% of variants)
+genes_to_bold <- c(
+  "AR", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3", "ATXN7", "ATXN8OS", 
+  "C9orf72", "CACNA1A", "DAB1", "DMPK", "FMR1", "FXN", "HTT", "JPH3", 
+  "PABPN1", "PHOX2B", "RFC1", "TBP", "TCF4", "CNBP", "CSTB", "FGF14"
+)
+
+bold_labels <- function(labels) {
+  lapply(labels, function(label) {
+    if (label %in% genes_to_bold) {
+      return(bquote(bold(.(label))))
+    } else {
+      return(as.character(label))
+    }
+  })
+}
 
 ggplot(subset(STR_table, !is.na(STR_table$age_onset_min) & STR_table$Inheritance != '') , 
        aes(x = reorder(gene, -age_onset_min), color = Inheritance)) +
+  scale_x_discrete(name = 'Gene', labels = bold_labels) +
   geom_linerange(aes(ymin = age_onset_min, ymax = age_onset_max,
-  )) +
+  ), size = 0.5) +
+  geom_linerange(aes(ymin = typ_age_onset_min, ymax = typ_age_onset_max,
+  ), size = 3) +
   geom_point(aes(y = age_onset_min), size = 2.5) +
   geom_point(aes(y = age_onset_max), size = 2.5) +
   scale_y_continuous(name = 'Age of onset (years)') +
-  scale_x_discrete(name = 'Disease') +
-  geom_segment(aes(x = 1, y = 18, xend = 58, yend = 18), linetype = 'longdash', color = 'lightgrey') +
+  geom_segment(aes(x = 1, y = 18, xend = 67, yend = 18), linetype = 'longdash', color = 'lightgrey') +
+  geom_text(aes(x = 63, y = 18, label = "18"), color = "black", hjust = -0.5, vjust = 0) +
   coord_flip()
+
+
 
 ```
 
