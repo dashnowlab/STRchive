@@ -56,7 +56,7 @@ gnomADSTRcalls = read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/gnomAD
 
 #STR_table <- read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/STRpapercode/20240305_STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
 
-# 
+STR_table <- read.csv('/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
 
 #str(STR_table)
 
