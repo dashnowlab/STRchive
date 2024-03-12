@@ -1122,8 +1122,42 @@ combined_df$disease_freq_num[combined_df$gene == "XY_AR"] <-  1/30000
 ## XY_DMD 4.8/100,000 PMID: 35168641
 combined_df$disease_freq_num[combined_df$gene == "XY_DMD"] <- 4.8/100000
 
+combined_df$disease_freq_num <- gsub(",", "", combined_df$disease_freq_num)
 
 
+ggplot(combined_df, aes(x = disease_freq_num, y = pathogenic_percent), color = gene) +
+  geom_point() + log
+
+
+combined_df <- combined_df_careful
+# Assuming combined_df is your dataframe
+
+
+parse_fraction <- function(x) {
+  if (is.na(x)) {
+    return(NA)  # Return NA for missing values
+  } else if (is.numeric(x)) {
+    return(x)   # Return numeric values unchanged
+  } else {
+    # Evaluate and parse fractions
+    eval(parse(text=x))
+  }
+}
+
+# Assuming combined_df is your dataframe
+combined_df$disease_freq_num <- sapply(combined_df$disease_freq_num, parse_fraction)
+
+
+# combined_df <- select(combined_df, -disease_freq_num)
+
+combined_df <- combined_df %>%
+  mutate(disease_freq_num = ifelse(disease_freq_num != "N/A", as.numeric(disease_freq_num), disease_freq_num))
+
+
+
+
+ggplot(combined_df, aes(x = disease_freq_num, y = pathogenic_percent), color = gene) +
+  geom_point() 
 
 ```
 
