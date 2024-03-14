@@ -13,6 +13,7 @@ library('ggplot2')
 library('cowplot')
 library("tidyverse")
 library("broom")
+library(ggridges)
 library(DescTools)
 library(Biostrings)
 library(plotly)
@@ -72,9 +73,6 @@ STR_table$pathogenic_max <- as.integer(STR_table$pathogenic_max)
 ## This clean up helps the STR resource table match the gnomad data
 ``` {r cleanup}
 STR_table$gene[STR_table$gene == "C9orf72"] <- "C9ORF72"
-STR_table$gene[STR_table$gene == "ATXN8OS/ATXN8"] <- "ATXN8OS"
-STR_table$gene[STR_table$gene == "NUTM2B-AS1/NUTM2B-AS1"] <- "NUTM2B-AS1"
-STR_table$gene[STR_table$gene == "ZNF9 / CNBP1"] <- "CNBP"
 
 STR_table$gene[STR_table$gene == "ARX" & STR_table$stop_hg38 == 25013697] <- "ARX_1"
 STR_table$gene[STR_table$gene == "ARX" & STR_table$stop_hg38 == 25013565] <- "ARX_2"
@@ -193,12 +191,6 @@ gnomADSTRcalls$AlleleLargest <- pmax(gnomADSTRcalls$Allele1, gnomADSTRcalls$Alle
 
 
 total <- merge(STR_table_clean,gnomADSTRcalls,by="Id")
-
-```
-# Now we subset if we desire to just samples from public data sets
-``` {r public DBs}
-total <- total[total$PublicProjectId %in% c("Human Genome Diversity Project", "1000 Genomes Project"), ]
-gnomADSTRcalls <- gnomADSTRcalls[gnomADSTRcalls$PublicProjectId %in% c("Human Genome Diversity Project", "1000 Genomes Project"), ]
 
 ```
 
@@ -1015,8 +1007,6 @@ ggplot(subset(result, percent <= 5), aes(x = reorder(Id, percent), y = percent, 
 
 
 ### Let's do the inheritance pattern analysis
-*** VWA1 10bp repeat expansion as the biallelic, so can calculate again as 3/3. ???
-
 ```{r inheritance}
 total <- subset(total, total$motif_norm != "CNG")
 
@@ -1110,49 +1100,42 @@ combined_df <- calculate_ci(combined_df, successes_col = "Carrier_Count", trials
 
 
 
+combined_df <- combined_df %>%
+  rename(gene = Id)
 
 ```
 
 ```{r comparison plot}
 
-
-combined_df <- combined_df %>%
-  rename(gene = Id)
-
 combined_df <- left_join(combined_df, STR_table %>% select(gene, disease_freq_num), by = "gene") 
 
-# let's fix up the XR loci 
-combined_df$disease_freq_num[combined_df$gene == "XX_AFF2"] <- "N/A"
-combined_df$disease_freq_num[combined_df$gene == "XX_AR"] <- "N/A"
-combined_df$disease_freq_num[combined_df$gene == "XX_DMD"] <- "N/A"
+#where we don't know or have sex-specific prevalence
+combined_df["disease_freq_num"][combined_df["disease_freq_num"] == ''] <- NA
 combined_df$disease_freq_num[combined_df$gene == "XY_AFF2"] <- 2/50000
 combined_df$disease_freq_num[combined_df$gene == "XY_AR"] <-  1/30000
-## XY_DMD 4.8/100,000 PMID: 35168641
 combined_df$disease_freq_num[combined_df$gene == "XY_DMD"] <- 4.8/100000
 
-combined_df$disease_freq_num <- gsub(",", "", combined_df$disease_freq_num)
-
-# Assuming combined_df$disease_freq_num is your vector
-combined_df$disease_freq_num <- gsub("N/A",  NA, combined_df$disease_freq_num)
 
 combined_df$disease_freq_num_dec <- sapply(combined_df$disease_freq_num, function(fraction) eval(parse(text = fraction)))
 
-combined_df$disease_freq_num_dec[is.na(combined_df$disease_freq_num_dec)] <- 1e-12
+```
 
+
+``` {r plots for IPG vs prev }
 
 ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
-  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
-  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
-  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
-  geom_errorbar(aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
-                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
+  geom_point(data = filter(combined_df), alpha = 0.5) + # Plot all genes except HTT with lower alpha
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
+    geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
+    geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
   labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
-       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
+       y = "Inferred Pathogenic Genotype Frequency")
 
 
 ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
@@ -1163,7 +1146,6 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
                 width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
   geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
   geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
-
   coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-10, 5)) +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
@@ -1193,8 +1175,70 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
 
+```
+
+
+``` {r options for side panel }
+ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
+  geom_point(data = filter(combined_df), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+  scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
+                     na.value = "gray") + 
+  theme_minimal() +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), width = 0.05, color = "black", alpha = 0.3) +  # Add error bars for confidence intervals
+  geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), width = 0.05, color = "black", alpha = 1) +  # Add error bars for confidence intervals
+  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency")
+
+total_motif_match$gene <- factor(total_motif_match$gene, 
+                                 levels = combined_df$gene[order(combined_df$pathogenic_percent)])
+
+ggplot(data = filter(total_motif_match, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), aes(x = factor(gene), y = Allele2LowerBound, fill = Inheritance)) +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
+              alpha = 0, bw = 0.02) +
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.4, xmax = as.numeric(factor(gene)) + 0.4, 
+                ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.4, xmax = as.numeric(factor(gene)) + 0.4, 
+                ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.4, xmax = as.numeric(factor(gene)) + 0.4, 
+                ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
+  geom_violin(scale = "width", width = 0.9, 
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
+              alpha = 1, bw = 0.02) +
+  labs(title = "Allelic Distribution by Gene",
+       x = "Gene",
+       y = "Allele2 (repeat units)") +
+  scale_y_log10() +
+  theme_minimal() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 45)) 
+
+
+# Assuming total_motif_match is your dataframe and it's already filtered as needed
+ggplot(data = filter(total_motif_match, gene %in% c("HTT", "XY_DMD", "ATXN8OS", "TCF4")), 
+       aes(x = Allele2LowerBound+0.1, y = factor(gene), fill = Inheritance)) + 
+  geom_density_ridges(scale = 0.6, alpha = 0) +
+  geom_rect(aes(ymin = as.numeric(factor(gene)), ymax = as.numeric(factor(gene)) + 0.7, 
+                xmin = normal_min, xmax = normal_max), fill = "#00c7d5") +
+  geom_rect(aes(ymin = as.numeric(factor(gene)), ymax = as.numeric(factor(gene)) + 0.7, 
+                xmin = intermediate_min, xmax = intermediate_max), fill = "#FFCB01") +
+  geom_rect(aes(ymin = as.numeric(factor(gene)), ymax = as.numeric(factor(gene)) + 0.7, 
+                xmin = pathogenic_min, xmax = pathogenic_max), fill = "#FD6853") +
+  geom_density_ridges(scale = 0.6) + scale_x_log10() + labs(title = "Allelic Distribution by Gene",
+                                                            y = "Gene",
+                                                            x = "Allele2 (repeat units)") +
+  theme_minimal() + coord_cartesian(xlim = c(1, 1000))
+
+
 
 ```
+
+
 
 ```{r scraps }
 
@@ -1211,8 +1255,6 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
   labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
-  scale_y_log10() + scale_x_log10()
-
 
 ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
   geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
@@ -1248,29 +1290,7 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
-       x = "Disease Prevalence",
-       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
-
-
-
-ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = Inheritance)) +
-  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
-  geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), 
-                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
-                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.05, color = "black", alpha = 0.5) +  
-  geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
-                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
-                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.05, color = "gray", alpha = 0.3) +
-  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
-  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
-  coord_cartesian(ylim = c(0, 0.75), xlim = c(0, 0.025)) +
-  scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
-                     na.value = "gray") + 
-  theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
 
@@ -1284,7 +1304,7 @@ ggplot(data = filter(combined_df, !(gene %in% c("HTT", "ATXN8OS"))), aes(x = dis
                 width = 0.05, color = "gray", alpha = 1) +
   geom_point(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), alpha = 1) +    # Plot HTT with full alpha
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Frequency") 
 
@@ -1779,6 +1799,9 @@ ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
 
 
 ```
+
+
+
 ```{r, plot in progress}
 
 #motif subset
@@ -1811,60 +1834,63 @@ total_motif_match$Id <- ifelse(total_motif_match$Inheritance == "XR", paste0(tot
 
 # Reorder levels of Id based on pathogenic_percent
 total_motif_match$Id <- as.character(total_motif_match$Id)
-combined_df$Id <- as.character(combined_df$Id)
+combined_df$gene <- as.character(combined_df$gene)
 
-total_motif_match <- merge(total_motif_match, combined_df[, c("Id", "pathogenic_percent", "carrier_percent")],
-                   by = "Id", all.x = TRUE)
+total_motif_match <- total_motif_match %>%
+  rename(gene = Id)
+
+total_motif_match <- merge(total_motif_match, combined_df[, c("gene", "pathogenic_percent", "carrier_percent")],
+                   by = "gene", all.x = TRUE)
 
 # Now reorder the levels based on pathogenic_percent
-total_motif_match$Id <- factor(total_motif_match$Id, 
-                               levels = combined_df$Id[order(combined_df$pathogenic_percent)])
+total_motif_match$gene <- factor(total_motif_match$gene, 
+                               levels = combined_df$gene[order(combined_df$pathogenic_percent)])
 
 # Create the plot with colored points
 #ALLELE2LOWER BOUND!
 ### I think I like this one
 AD_text <- total_motif_match %>%
   filter(Inheritance == 'AD') %>%  
-  group_by(Id) %>%
+  group_by(gene) %>%
   summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE)) %>%
     ungroup()
 
 
 # 'Normal' = '#00AFBB', 'Intermediate*' = '#E7B800', 'Pathogenic' = '#FC4E07'),
-ggplot(total_motif_match[total_motif_match$Inheritance == 'AD', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+ggplot(total_motif_match[total_motif_match$Inheritance == 'AD', ], aes(x = factor(gene), y = Allele2LowerBound)) +
   geom_violin(scale = "width", width = 0.9, 
-              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
               alpha = 1) +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
   geom_violin(fill = "black", scale = "width", width = 0.9, 
-              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
               alpha = 1) +
-  labs(title = "Allelic Distribution by Disease ID",
-       x = "Disease ID",
-       y = "Allele2") +
+  labs(title = "Allelic Distribution by Gene",
+       x = "Gene",
+       y = "Allele2 (repeat units)") +
   scale_y_log10() +
   theme_minimal() +
   coord_flip() +
   theme(axis.text.x = element_text(angle = 45)) +   
   annotate("text", 
-         x = AD_text$Id, 
+         x = AD_text$gene, 
          y = 200,
          label = paste0(round(AD_text$avg_pathogenic_percent, 3), "%"),
          vjust = -0.5, size = 2)
 
 # Now reorder the levels based on pathogenic_percent
-total_motif_match$Id <- factor(total_motif_match$Id, 
-                               levels = combined_df$Id[order(combined_df$carrier_percent)])
+total_motif_match$gene <- factor(total_motif_match$gene, 
+                               levels = combined_df$gene[order(combined_df$carrier_percent)])
 
 
 AR_text <- total_motif_match %>%
   filter(Inheritance == 'AR') %>%  
-  group_by(Id) %>%
+  group_by(gene) %>%
   summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE),
             carrier_percent = mean(carrier_percent, na.rm = TRUE)) %>%
   ungroup()
@@ -1873,31 +1899,31 @@ AR_text <- total_motif_match %>%
 
 
 # order by genotype, then carrier next
-ggplot(total_motif_match[total_motif_match$Inheritance == 'AR', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+ggplot(total_motif_match[total_motif_match$Inheritance == 'AR', ], aes(x = factor(gene), y = Allele2LowerBound)) +
   geom_violin(scale = "width", width = 0.9, 
-              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
               alpha = 1) +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = normal_min, ymax = normal_max), 
             fill = "lightblue", alpha = 0.3) +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
-    geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+    geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
   geom_violin(fill = "gray", scale = "width", width = 0.9, 
-              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
               alpha = 1) +
-  labs(title = "Allelic Distribution by Disease ID",
-       x = "Disease ID",
-       y = "Allele2") +
+  labs(title = "Allelic Distribution by Gene",
+       x = "Gene",
+       y = "Allele2 (repeat units)") +
   scale_y_log10() +
   theme_minimal() +
   coord_flip() +
   theme(axis.text.x = element_text(angle = 45)) + 
   annotate("text", 
-         x = AR_text$Id, 
+         x = AR_text$gene, 
          y = 140,
          label = ifelse(is.nan(AR_text$carrier_percent), 
                         paste0(round(AR_text$avg_pathogenic_percent, 3), "%"),
@@ -1908,39 +1934,39 @@ ggplot(total_motif_match[total_motif_match$Inheritance == 'AR', ], aes(x = facto
 
 # Now reorder the levels based on pathogenic_percent
 
-total_motif_match$Id <- factor(total_motif_match$Id, 
-                               levels = combined_df$Id[order(combined_df$pathogenic_percent)])
+total_motif_match$gene <- factor(total_motif_match$gene, 
+                               levels = combined_df$gene[order(combined_df$pathogenic_percent)])
 
 XR_text <- total_motif_match %>%
   filter(Inheritance == 'XR') %>%  
-  group_by(Id) %>%
+  group_by(gene) %>%
   summarise(avg_pathogenic_percent = mean(pathogenic_percent, na.rm = TRUE),
             carrier_percent = mean(carrier_percent, na.rm = TRUE)) %>%
   ungroup()
 
 ### good as is
-ggplot(total_motif_match[total_motif_match$Inheritance == 'XR', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+ggplot(total_motif_match[total_motif_match$Inheritance == 'XR', ], aes(x = factor(gene), y = Allele2LowerBound)) +
   geom_violin(scale = "width", width = 0.9, 
-              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
               alpha = 1) +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = intermediate_min, ymax = intermediate_max), fill = "#FFCB01") +
-  geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+  geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
-    geom_rect(aes(xmin = as.numeric(factor(Id)) - 0.5, xmax = as.numeric(factor(Id)) + 0.5, 
+    geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.5, xmax = as.numeric(factor(gene)) + 0.5, 
                 ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
   geom_violin(fill = "gray", scale = "width", width = 0.9, 
-              position = position_dodge(width = 0.9 / length(unique(total$Id))),
+              position = position_dodge(width = 0.9 / length(unique(total$gene))),
               alpha = 1) +
-  labs(title = "Allelic Distribution by Disease ID",
-       x = "Disease ID",
-       y = "Allele2") +
+  labs(title = "Allelic Distribution by Gene",
+       x = "Gene",
+       y = "Allele2 (repeat units)") +
   scale_y_log10() +
   theme_minimal() +
   coord_flip() +
   theme(axis.text.x = element_text(angle = 45)) + 
   annotate("text", 
-         x = XR_text$Id, 
+         x = XR_text$gene, 
          y = 140,
          label = ifelse(is.nan(XR_text$carrier_percent), 
                         paste0(round(XR_text$avg_pathogenic_percent, 3), "%"),
@@ -1950,7 +1976,7 @@ ggplot(total_motif_match[total_motif_match$Inheritance == 'XR', ], aes(x = facto
 
 
 #good as is
-ggplot(total_motif_match[total_motif_match$Inheritance == 'XD', ], aes(x = factor(Id), y = Allele2LowerBound)) +
+ggplot(total_motif_match[total_motif_match$Inheritance == 'XD', ], aes(x = factor(gene), y = Allele2LowerBound)) +
   geom_violin(scale = "width", width = 0.9, 
               position = position_dodge(width = 0.9 / length(unique(total$Id))),
               alpha = 1) +
@@ -1962,7 +1988,7 @@ ggplot(total_motif_match[total_motif_match$Inheritance == 'XD', ], aes(x = facto
                 ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
   labs(title = "Allelic Distribution by Disease ID",
        x = "Disease ID",
-       y = "Allele2") +
+       y = "Allele2 (repeat units)") +
   geom_violin(fill = "black", scale = "width", width = 0.9, 
               position = position_dodge(width = 0.9 / length(unique(total$Id))),
               alpha = 1) +
@@ -2004,7 +2030,7 @@ ggplot(total_motif_match[total_motif_match$Inheritance == 'AD', ], aes(x = facto
               alpha = 1) +
   labs(title = "Allelic Distribution by Disease ID",
        x = "Disease ID",
-       y = "Allele2") +
+       y = "Allele2 (repeat units)") +
   scale_y_log10() +
   theme_minimal() +
   coord_flip() +
