@@ -1150,9 +1150,9 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Cohort Pathogenic Genotype and Known Prevalence",
-       x = "Known Prevalence",
-       y = "Pathogenic Genotype") + scale_y_log10() + scale_x_log10()
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
 
 
 ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
@@ -1168,9 +1168,9 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Cohort Pathogenic Genotype and Known Prevalence",
-       x = "Known Prevalence",
-       y = "Pathogenic Genotype")
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
 
 
 ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
@@ -1189,9 +1189,104 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Cohort Pathogenic Genotype and Known Prevalence",
-       x = "Known Prevalence",
-       y = "Pathogenic Genotype")
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
+
+
+```
+
+```{r scraps }
+
+ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
+  geom_errorbar(aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
+  scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
+                     na.value = "gray") + 
+  theme_minimal() +
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
+  scale_y_log10() + scale_x_log10()
+
+
+ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
+  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
+  
+  coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-10, 5)) +
+  scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
+                     na.value = "gray") + 
+  theme_minimal() +
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
+
+
+ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "black", alpha = 0.5) +  
+  geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "gray", alpha = 0.3) +
+  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
+  coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-10, 5)) +
+  scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
+                     na.value = "gray") + 
+  theme_minimal() +
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
+
+
+
+ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = Inheritance)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "black", alpha = 0.5) +  
+  geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "gray", alpha = 0.3) +
+  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+  geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
+  coord_cartesian(ylim = c(0, 0.75), xlim = c(0, 0.025)) +
+  scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
+                     na.value = "gray") + 
+  theme_minimal() +
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
+
+
+
+ggplot(data = filter(combined_df, !(gene %in% c("HTT", "ATXN8OS"))), aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = Inheritance)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.05, color = "gray", alpha = 1) +
+  geom_point(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), alpha = 1) +    # Plot HTT with full alpha
+  theme_minimal() +
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+       x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Frequency") 
 
 
 ```
