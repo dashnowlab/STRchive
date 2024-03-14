@@ -1200,7 +1200,7 @@ total_motif_match$gene <- factor(total_motif_match$gene,
 ggplot(data = filter(total_motif_match, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), aes(x = factor(gene), y = Allele2LowerBound, fill = Inheritance)) +
   geom_violin(scale = "width", width = 0.9, 
               position = position_dodge(width = 0.9 / length(unique(total$gene))),
-              alpha = 0, bw = 0.02) +
+              alpha = 0, bw = 0.03) +
   geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.4, xmax = as.numeric(factor(gene)) + 0.4, 
                 ymin = normal_min, ymax = normal_max), fill = "#00c7d5") +
   geom_rect(aes(xmin = as.numeric(factor(gene)) - 0.4, xmax = as.numeric(factor(gene)) + 0.4, 
@@ -1209,7 +1209,7 @@ ggplot(data = filter(total_motif_match, gene %in% c("HTT","XY_DMD", "ATXN8OS", "
                 ymin = pathogenic_min, ymax = pathogenic_max+0.5), fill = "#FD6853") +
   geom_violin(scale = "width", width = 0.9, 
               position = position_dodge(width = 0.9 / length(unique(total$gene))),
-              alpha = 1, bw = 0.02) +
+              alpha = 1, bw = 0.03) +
   labs(title = "Allelic Distribution by Gene",
        x = "Gene",
        y = "Allele2 (repeat units)") +
@@ -1258,14 +1258,13 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
 
 ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
   geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
-  geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), 
-                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+  geom_errorbar(aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
                 width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
   geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
   geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
   
-  coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-10, 5)) +
+  coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-5, 5)) +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
@@ -1301,7 +1300,7 @@ ggplot(data = filter(combined_df, !(gene %in% c("HTT", "ATXN8OS"))), aes(x = dis
   geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
                 aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.05, color = "gray", alpha = 1) +
+                width = 0.0005, color = "gray", alpha = 1) +
   geom_point(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), alpha = 1) +    # Plot HTT with full alpha
   theme_minimal() +
   labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
