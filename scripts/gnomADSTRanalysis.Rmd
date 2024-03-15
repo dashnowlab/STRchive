@@ -1175,6 +1175,37 @@ ggplot(combined_df, aes(x = disease_freq_num_dec * 100, y = pathogenic_percent +
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Frequency") + scale_y_log10() + scale_x_log10()
 
+library(ggbreak) 
+library(patchwork)
+
+ggplot(subset(combined_df,combined_df$label_na != "*NA"), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) + scale_y_break(c(0.65, 4), scales = "free")
+
+
+
+# I think this one is kinda misleading
+# ggplot(subset(combined_df,combined_df$label_na != "*NA"), aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+#   geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+#   geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+#   geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+#   labs(x = "Gene", y = "Percentage (%)") +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+#         plot.title = element_text(hjust = 0.5)) + scale_y_break(c(0.65, 4), scales = 0.3)
+
+
+
+# 
+# I've got to go do some other stuff for a bit. Maybe try one or two options and see how it goes?
+# In my mind the goals are:
+# show the big differences
+# show the small range
+# avoid iffy 0 issues
 ```
 
 
@@ -1671,6 +1702,11 @@ ggplot(unique_motif_counts,
 
 
 ```
+
+
+
+
+
 ```{r harriet strchive plots}
 
 STR_table_adjusted <- STR_table %>%
@@ -1718,7 +1754,6 @@ ggplot(STR_table_adjusted, aes(x = gene)) +
 ```
 
 ``` {r age of onset, fig.height = 10}
-
 
 # Loci with GeneReview Specific to Repeat Expansion Disease (>70% of variants)
 genes_to_bold <- c(
@@ -1799,6 +1834,65 @@ ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
 
 ```
 
+
+```{r prev vs IGP}
+combined_df$label_na <- ifelse(is.na(combined_df$prevalence_num_dec), "*NA", "")
+gene_colors <- c("HTT" = "orange", "ATXN8OS" = "cyan", "TCF4" = "green", "XY_DMD" = "purple")
+
+
+ggplot(combined_df, aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_num_dec), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent/100), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci/100, ymax = Pathogenic_Count_upper_ci/100), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) + 
+  geom_text(aes(label = label_na, y = 0), angle = 90, hjust = -3, 
+            color = "blue", alpha = 0.9)  # Adjust vjust as needed to position the label appropriately
+
+
+ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) + 
+  geom_text(aes(label = label_na, y = 0), angle = 90, hjust = -3, 
+            color = "blue", alpha = 0.9) + ylim(0,0.7)# Adjust vjust as needed to position the label appropriately
+
+
+ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) + 
+  geom_text(aes(label = label_na, y = 0), angle = 90, hjust = -3, 
+            color = "blue", alpha = 0.9) + ylim(0,0.64)# Adjust vjust as needed to position the label appropriately
+
+
+```
 
 
 ```{r, plot in progress}
