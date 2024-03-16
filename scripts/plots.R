@@ -51,14 +51,15 @@ disease.loci$Inheritance = factor(disease.loci$Inheritance, levels = c("AD/AR", 
 # Age of onset
 p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease.loci$Inheritance != '') , 
                aes(x = reorder(disease_id, -age_onset_min), color = Inheritance)) +
-  geom_linerange(aes(ymin = age_onset_min, ymax = age_onset_max,
-                     )) +
-  geom_point(aes(y = age_onset_min), size = 2.5) +
-  geom_point(aes(y = age_onset_max), size = 2.5) +
+  geom_linerange(aes(ymin = age_onset_min, ymax = age_onset_max), linewidth = 1) +
+  geom_point(aes(y = age_onset_min), size = 0.5) +
+  geom_point(aes(y = age_onset_max), size = 0.5) +
+  geom_linerange(aes(ymin = typ_age_onset_min, ymax = typ_age_onset_max,
+  ), linewidth = 2) +
   scale_y_continuous(name = 'Age of onset (years)') +
   scale_x_discrete(name = 'Disease') +
   scale_color_brewer(palette = 'Paired', direction = -1) +
-  geom_segment(aes(x = 1, y = 18, xend = 58, yend = 18), linetype = 'longdash', color = 'lightgrey') +
+  geom_segment(aes(x = 1, y = 18, xend = 66, yend = 18), linetype = 'longdash', color = 'lightgrey') +
   coord_flip()
 
 htmltools::save_html(ggplotly(p_age, height = 1000), "images/plotly_age_onset.html")
