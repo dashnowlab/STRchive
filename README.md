@@ -13,9 +13,10 @@ If you notice an error, omission or update, feel free to leave a comment or crea
 
 ### Edit the STRchive locus data
 
-Edit `STR-disease-loci.csv`
+Edit either `STR-disease-loci.json` or `STR-disease-loci.csv` (not both!)
 
-Run `python scripts/csv2json.py`
+Run `python scripts/update_database.py`  
+This will overwrite the older file with your changes
 
 ### Update plots
 
