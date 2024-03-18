@@ -23,16 +23,21 @@ disease.loci = subset(disease.loci, !grepl("conflicting evidence", disease.loci$
 
 # Allele size
 p_size = ggplot(disease.loci, aes(x = disease_id)) +
-  geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp + 1, color = 'Pathogenic'
+  geom_linerange(aes(ymin = norm_max_bp, ymax = path_max_bp), 
+                 linewidth = 0.5, linetype = "dotted", alpha = 0.3, color = "gray") +
+  geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp, color = 'Pathogenic'
   ), linewidth = 2) +
-  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp + 1, color = 'Intermediate*'
+  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp, color = 'Intermediate'
   ), linewidth = 2) +
-  geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp + 1, color = 'Benign'
+  geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp, color = 'Benign'
   ), linewidth = 2) +
+  geom_point(data = subset(disease.loci, path_min_bp == path_max_bp), aes(y = path_min_bp, color = 'Pathogenic'), shape = 16, size = 2) +
+  geom_point(data = subset(disease.loci, int_min_bp == int_max_bp), aes(y = int_min_bp, color= 'Intermediate'), shape = 16, size = 2) +
+  geom_point(data = subset(disease.loci, norm_min_bp == norm_max_bp), aes(y = norm_min_bp, color= 'Benign'), shape = 16, size = 2) +
   scale_y_continuous(name = 'Allele size in base pairs', trans = 'log10') +
   scale_x_discrete(name = 'Disease') +
-  scale_colour_manual(values = c('Benign' = '#00AFBB', 'Intermediate*' = '#E7B800', 'Pathogenic' = '#FC4E07'), 
-                      breaks = c('Benign', 'Intermediate*', 'Pathogenic'),
+  scale_colour_manual(values = c('Benign' = '#00AFBB', 'Intermediate' = '#E7B800', 'Pathogenic' = '#FC4E07'), 
+                      breaks = c('Benign', 'Intermediate', 'Pathogenic'),
                       name = 'Allele size') +
   theme(panel.grid.major.x = element_line(color = 'lightgrey', linetype = 'longdash')) +
   coord_flip()
