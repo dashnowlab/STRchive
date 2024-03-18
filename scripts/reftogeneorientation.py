@@ -104,23 +104,26 @@ def compare_and_print(old_results, new_results, name):
 
     """
     differences = []
-    for old_item, new_item in zip(old_results, new_results):
-        if not pd.isna(old_item) and not pd.isna(new_item) and old_item != new_item:
-            differences.append((old_item, new_item))
+    # replace any None values with empty lists
+    old_results = [x if x else [] for x in old_results]
+    new_results = [x if x else [] for x in new_results]
+    
+    for old_list, new_list in zip(old_results, new_results):
+        for old_item, new_item in zip(old_list, new_list):
+            if not pd.isna(old_item) and not pd.isna(new_item) and old_item != new_item:
+                differences.append((old_item, new_item))
 
     if differences:
         sys.stderr.write(f"The following differences in {name} were replaced: {differences}\n")
 
-def process_csv(in_csv, out_csv):
+def process_df(df):
     """
+    Add or update the gene orientation columns with normalized motifs
     Args:
-        in_csv: the input csv
+        df: the input pandas DataFrame
     Returns:
-        out_csv: the output csv, processed with the new columns
-   Add the gene orientation columns with normalized motifs
+        out_df: the output pandas DataFrame, processed with the new columns
     """
-    # Read the CSV file into a DataFrame
-    df = pd.read_csv(in_csv, dtype=str)
 
     # we need these empty bits to fill with the new column results!
     pathogenic_results = []
@@ -166,7 +169,6 @@ def process_csv(in_csv, out_csv):
         benign_results.append(normalized_benign_motifs)
         unknown_results.append(normalized_unknown_motifs)
 
-
     # Initialize old results lists, for comparison of input and output data
     old_pathogenic_results = []
     old_benign_results = []
@@ -189,7 +191,7 @@ def process_csv(in_csv, out_csv):
         df['unknown_motif_gene_orientation'] = [','.join(x) for x in unknown_results]
 
     # Save the updated
-    df.to_csv(out_csv, index=False)
+    return df
 
 if __name__ == "__main__":
     doctest.testmod()

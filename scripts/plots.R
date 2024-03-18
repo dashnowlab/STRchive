@@ -4,14 +4,7 @@ library('cowplot')
 theme_set(theme_cowplot())
 options(stringsAsFactors = FALSE)
 
-# Reference genome: HG38
-
-# Pre-R data clean-up
-# ```{bash, eval=FALSE}
-# cut -f 5 str-disease-loci-2022.tsv > repeats.txt
-# python normalise_str.py > repeats_norm.txt
-
-disease.loci = read.csv('data/STR-disease-loci.csv')
+disease.loci = read.csv('data/STRchive-database.csv')
 
 # Switch between units
 disease.loci$norm_min_bp = disease.loci$normal_min * disease.loci$repeatunitlen
@@ -56,7 +49,8 @@ p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease
   geom_point(aes(y = age_onset_max), size = 0.5) +
   geom_linerange(aes(ymin = typ_age_onset_min, ymax = typ_age_onset_max,
   ), linewidth = 2) +
-  scale_y_continuous(name = 'Age of onset (years)') +
+  scale_y_continuous(name = 'Age of onset (years)', 
+                     breaks = c(seq(0, 90, 10), 18)) +
   scale_x_discrete(name = 'Disease') +
   scale_color_brewer(palette = 'Paired', direction = -1) +
   geom_segment(aes(x = 1, y = 18, xend = 66, yend = 18), linetype = 'longdash', color = 'lightgrey') +
