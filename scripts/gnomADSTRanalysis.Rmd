@@ -1089,7 +1089,6 @@ combined_df <- combined_df %>%
 
 ```{r comparison plot}
 
-
 combined_df <- left_join(combined_df, STR_table %>% dplyr::select(gene, prevalence), by = "gene") 
 
 
@@ -1720,23 +1719,17 @@ STR_table_adjusted$int_max_bp = STR_table_adjusted$intermediate_max * STR_table_
 STR_table_adjusted$path_min_bp = STR_table_adjusted$pathogenic_min * STR_table_adjusted$repeatunitlen
 STR_table_adjusted$path_max_bp = STR_table_adjusted$pathogenic_max * STR_table_adjusted$repeatunitlen
 
-
 ggplot(STR_table_adjusted, aes(x = gene)) +
-  geom_linerange(aes(ymin = norm_min_bp, ymax = norm_max_bp + 1, color = 'Normal'), linewidth = 1.5) +
-  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp + 1, color = 'Intermediate*'), linewidth = 1.5) +
-  geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp + 1, color = 'Pathogenic'), linewidth = 1.5) +
+  geom_linerange(aes(ymin = norm_max_bp, ymax = path_max_bp, color = "gray"), 
+                 linewidth = 1.5, linetype = "dotted", alpha = 0.3) +
+  geom_point(data = subset(STR_table_adjusted, int_min_bp == int_max_bp), aes(y = int_min_bp), shape = 16, color= "#E7B800", size = 2) +
+  geom_point(data = subset(STR_table_adjusted, path_min_bp == path_max_bp), aes(y = path_min_bp), shape = 16, color = "#FC4E07", size = 2) +
+  geom_point(data = subset(STR_table_adjusted, norm_min_bp == norm_max_bp), aes(y = norm_min_bp), shape = 16, color= "#00AFBB", size = 2) +
+  geom_linerange(aes(ymin = norm_min_bp+0.9, ymax = norm_max_bp, color = 'Normal'), linewidth = 1.5) +
+  geom_linerange(aes(ymin = int_min_bp, ymax = int_max_bp, color = 'Intermediate*'), linewidth = 1.5) +
+  geom_linerange(aes(ymin = path_min_bp, ymax = path_max_bp, color = 'Pathogenic'), linewidth = 1.5) +
   scale_y_continuous(name = 'Allele size in base pairs', trans = 'log10') +
   scale_x_discrete(name = 'Disease') +
-  geom_linerange(data = subset(STR_table_adjusted, gene == "VWA1"), 
-                 aes(ymin = 19.5, ymax = 20.5), color = "#00AFBB", linewidth = 1.5) + 
-  geom_linerange(data = subset(STR_table_adjusted, gene == "STARD7"), 
-                 aes(ymin = 272, ymax = 276), color = "#FC4E07", linewidth = 1.5) + 
-  geom_linerange(data = subset(STR_table_adjusted, gene == "RAPGEF"), 
-                 aes(ymin = 58, ymax = 62), color = "#FC4E07", linewidth = 1.5) + 
-  geom_linerange(data = subset(STR_table_adjusted, gene == "AFF3"), 
-                 aes(ymin = 295, ymax = 305), color = "#FC4E07", linewidth = 1.5) + 
-  geom_linerange(data = subset(STR_table_adjusted, gene == "NUTM2B-AS1"), 
-                 aes(ymin = 690, ymax = 710), color = "#FC4E07", linewidth = 1.5) + 
   scale_colour_manual(values = c('Normal' = '#00AFBB', 'Intermediate*' = '#E7B800', 'Pathogenic' = '#FC4E07'), 
                       breaks = c('Normal', 'Intermediate*', 'Pathogenic'),
                       name = 'Allele size') + 
@@ -1748,21 +1741,21 @@ ggplot(STR_table_adjusted, aes(x = gene)) +
 ``` {r age of onset, fig.height = 10}
 
 # Loci with GeneReview Specific to Repeat Expansion Disease (>70% of variants)
-genes_to_bold <- c(
-  "AR", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3", "ATXN7", "ATXN8OS",
-  "C9orf72", "CACNA1A", "DAB1", "DMPK", "FMR1", "FXN", "HTT", "JPH3",
-  "PABPN1", "PHOX2B", "RFC1", "TBP", "TCF4", "CNBP", "CSTB", "FGF14"
-)
-
-bold_labels <- function(labels) {
-  lapply(labels, function(label) {
-    if (label %in% genes_to_bold) {
-      return(bquote(bold(.(label))))
-    } else {
-      return(as.character(label))
-    }
-  })
-}
+# genes_to_bold <- c(
+#   "AR", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3", "ATXN7", "ATXN8OS",
+#   "C9orf72", "CACNA1A", "DAB1", "DMPK", "FMR1", "FXN", "HTT", "JPH3",
+#   "PABPN1", "PHOX2B", "RFC1", "TBP", "TCF4", "CNBP", "CSTB", "FGF14"
+# )
+# 
+# bold_labels <- function(labels) {
+#   lapply(labels, function(label) {
+#     if (label %in% genes_to_bold) {
+#       return(bquote(bold(.(label))))
+#     } else {
+#       return(as.character(label))
+#     }
+#   })
+# }
 
 evidence <- data.frame(
   gene = c("AFF2", "AFF3", "AR", "ARX_1", "ARX_2", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3",
@@ -1799,9 +1792,7 @@ ggplot(subset(STR_table_evidence, !is.na(age_onset_min) & Inheritance != ''),
              alpha = 1, shape = 17) +
   scale_y_continuous(name = 'Age of onset (years)') +
   geom_segment(aes(x = 1, y = 18, xend = 67, yend = 18), linetype = 'longdash', color = 'lightgrey') +
-  coord_flip() + scale_y_continuous(breaks=c(0,18, 25, 50, 75, 100)) + 
-  labs(title = "All Loci", y = "Age of Onset (years)")
-
+  coord_flip() + scale_y_continuous(breaks=c(0,18, 25, 50, 75, 100))
 
 ggplot(subset(STR_table_evidence, STR_table_evidence$ind_obs == "< 10" & !is.na(age_onset_min) & Inheritance != ''), 
        aes(x = reorder(gene, -age_onset_min), color = Inheritance)) +
