@@ -25,8 +25,8 @@ This will overwrite the older file with your changes
 ### Update genotyping catalogs
 
 ```
-python scripts/make_catalog.py -g T2T -f TRGT data/STR-disease-loci.processed.csv data/T2T-CHM13.STRchive-disease-loci.TRGT.bed
-python scripts/make_catalog.py -g hg38 -f TRGT data/STR-disease-loci.processed.csv data/hg38.STRchive-disease-loci.TRGT.bed
-python scripts/make_catalog.py -g hg19 -f TRGT data/STR-disease-loci.processed.csv data/hg19.STRchive-disease-loci.TRGT.bed
+python scripts/make_catalog.py -g T2T -f TRGT data/STRchive-database.csv data/T2T-CHM13.STRchive-disease-loci.TRGT.bed
+python scripts/make_catalog.py -g hg38 -f TRGT data/STRchive-database.csv data/hg38.STRchive-disease-loci.TRGT.bed
+python scripts/make_catalog.py -g hg19 -f TRGT data/STRchive-database.csv data/hg19.STRchive-disease-loci.TRGT.bed
 ```
 
