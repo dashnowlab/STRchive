@@ -125,7 +125,7 @@
   ;
   </script>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
 <script>
 
@@ -135,6 +135,14 @@
     this_year = new Date().getFullYear()
     
     $.each(data, function(i, f) {
+
+      /// Replace all null values with ''
+      for (var key in f) {
+        if (f[key] == null) {
+          f[key] = ''
+        }
+      }
+
       status = ''
       formatting = ''
       /// Flag potentially new or conflicting data
@@ -142,10 +150,12 @@
         status = `<i class="green star icon"></i>`
         formatting = `positive`
       }
+
       if (f.details.indexOf('conflict') !== -1) {
-        status = `<i class="red attention icon"></i> `
-        formatting = `negative`
+      status = `<i class="red attention icon"></i> `
+      formatting = `negative`
       }
+
       var tblRow =
       `<tr class="` + formatting + `">` +
         `<td><a href="#` + f.id + `">` + status + `</a></td>` +
@@ -211,7 +221,7 @@
           <div class="ui list">
             <li><b>ID:</b> ` + f.disease_id + `</li>
             <li><b>Description:</b> ` + f.disease + `</li>`
-        if (f.Inheritance != '') {
+        if (f.Inheritance != '' & f.Inheritance != 'N/A') {
           if (f.Inheritance == 'AD') {
             inheritance_desc = 'Autosomal dominant'
           }
@@ -231,35 +241,60 @@
             `<li><b>Inheritance:</b> ` + inheritance_desc + `</li>`
         };
 
-        if (f.age_onset_min != '' & f.age_onset_max != '') {
-          if (f.age_onset_min == f.age_onset_max) {
-            if (f.age_onset_min == 0) {
+        if (f.typ_age_onset_min != '' & f.typ_age_onset_max != '') {
+          if (f.typ_age_onset_min == f.typ_age_onset_max) {
+            if (f.typ_age_onset_min == 0) {
               this_row = this_row +
-              `<li><b>Age of onset:</b> <1 year</li>`
+              `<li><b>Age of onset, typical:</b> <1 year</li>`
             }
-            if (f.age_onset_min == 1) {
+            if (f.typ_age_onset_min == 1) {
               this_row = this_row +
-              `<li><b>Age of onset:</b> 1 year</li>`
+              `<li><b>Age of onset, typical:</b> 1 year</li>`
             }
             else {
               this_row = this_row +
-              `<li><b>Age of onset:</b> ` + f.age_onset_min + ` years</li>`
+              `<li><b>Age of onset, typical:</b> ` + f.typ_age_onset_min + ` years</li>`
             }
           }
           else {
           this_row = this_row +
-          `<li><b>Age of onset:</b> ` + f.age_onset_min + `-` + f.age_onset_max + ` years</li>`
+          `<li><b>Age of onset, typical:</b> ` + f.typ_age_onset_min + `-` + f.typ_age_onset_max + ` years</li>`
+          }
+        };
+
+        if (f.age_onset_min != '' & f.age_onset_max != '') {
+          if (f.age_onset_min == f.age_onset_max) {
+            if (f.age_onset_min == 0) {
+              this_row = this_row +
+              `<li><b>Age of onset, range:</b> <1 year</li>`
+            }
+            if (f.age_onset_min == 1) {
+              this_row = this_row +
+              `<li><b>Age of onset, range:</b> 1 year</li>`
+            }
+            else {
+              this_row = this_row +
+              `<li><b>Age of onset, range:</b> ` + f.age_onset_min + ` years</li>`
+            }
+          }
+          else {
+          this_row = this_row +
+          `<li><b>Age of onset, range:</b> ` + f.age_onset_min + `-` + f.age_onset_max + ` years</li>`
           }
         };
             
-        if (f.Prevalence != '' & f.Prevalence != 'N/A' & !f.Prevalence.startsWith('Unknown')) {
-          this_row = this_row +
-            `<li><b>Prevalence:</b> ` + f.Prevalence + `</li>`
+        if (f.Prevalence != '' & f.Prevalence != 'N/A') {
+          if(!f.Prevalence.startsWith('Unknown')) {
+            this_row = this_row +
+              `<li><b>Prevalence:</b> ` + f.Prevalence + `</li>`
+          }
         };
 
-        if (f.Mechanism != '' & f.Mechanism != 'N/A' & !f.Mechanism.startsWith('Unknown')) {
-          this_row = this_row +
-            `<li><b>Mechanism:</b> ` + f.Mechanism + `</li>`
+        if (f.Mechanism != '' & f.Mechanism != 'N/A') {
+          if(!f.Mechanism.startsWith('Unknown')) {
+            this_row = this_row +
+              `<li><b>Mechanism:</b> ` + f.Mechanism + `</li>`
+          }
         };
 
         this_row = this_row +
