@@ -17,6 +17,8 @@ library(ggridges)
 library(DescTools)
 library(Biostrings)
 library(plotly)
+library(ggbreak) 
+library(patchwork)
 theme_set(theme_cowplot())
 options(stringsAsFactors = FALSE)
 
@@ -1135,7 +1137,7 @@ ggplot(combined_df, aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
                 width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
     geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Percentage")
 
@@ -1152,62 +1154,40 @@ ggplot(combined_df, aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gNomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Percentage") + scale_y_log10() + scale_x_log10()
 
 
-ggplot(combined_df, aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10, color = gene)) +
+ggplot(combined_df, aes((x = prevalence_dec * 100) + 1e-10, y = pathogenic_percent + 1e-10, color = gene)) +
   geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
   geom_errorbar(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), 
                 aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.05, color = "black", alpha = 0.5) +  
+                width = 0.05, color = "black", alpha = 0.8) +  
   geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
                 aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
                 width = 0.05, color = "gray", alpha = 0.3) +
-  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.8) + # Plot all genes except HTT with lower alpha
   geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
-  coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-10, 5)) +
+  coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-5, 5)) +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Percentage") + scale_y_log10() + scale_x_log10()
 
-library(ggbreak) 
-library(patchwork)
-
-ggplot(subset(combined_df,combined_df$label_na != "*NA"), 
+ggplot(subset(combined_df, !is.na(combined_df$prevalence)), 
        aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
   geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
   geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
   labs(x = "Gene", y = "Percentage") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
         plot.title = element_text(hjust = 0.5)) + scale_y_break(c(0.65, 4), scales = "free")
 
-
-
-# I think this one is kinda misleading
-# ggplot(subset(combined_df,combined_df$label_na != "*NA"), aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-#   geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
-#   geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
-#   geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
-#   labs(x = "Gene", y = "Percentage (%)") +
-#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
-#         plot.title = element_text(hjust = 0.5)) + scale_y_break(c(0.65, 4), scales = 0.3)
-
-
-
-# 
-# I've got to go do some other stuff for a bit. Maybe try one or two options and see how it goes?
-# In my mind the goals are:
-# show the big differences
-# show the small range
-# avoid iffy 0 issues
 ```
 
 
@@ -1285,7 +1265,7 @@ ggplot(combined_df, aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Percentage") + scale_y_log10() + scale_x_log10()
 
@@ -1293,15 +1273,14 @@ ggplot(combined_df, aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10
   geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
   geom_errorbar(aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.05, color = "black", alpha = 0.5) +  # Add error bars for confidence intervals
-  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.5) + # Plot all genes except HTT with lower alpha
+                width = 0.05, color = "black", alpha = 0.8) +  # Add error bars for confidence intervals
+  geom_point(data = filter(combined_df, gene != "HTT"), alpha = 0.8) + # Plot all genes except HTT with lower alpha
   geom_point(data = filter(combined_df, gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4")), alpha = 1) +    # Plot HTT with full alpha
-  
   coord_cartesian(ylim = c(1e-10, 5), xlim = c(1e-5, 5)) +
   scale_color_manual(values = c("HTT" = "red", "TCF4" = "blue", "XY_DMD" = "orange", "ATXN8OS" = "purple"), 
                      na.value = "gray") + 
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gmomAD and Literature Known Prevalence",
+  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
        x = "Disease Prevalence",
        y = "Inferred Pathogenic Genotype Percentage") + scale_y_log10() + scale_x_log10()
 
@@ -1327,18 +1306,49 @@ ggplot(combined_df, aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10
        y = "Inferred Pathogenic Genotype Percentage") + scale_y_log10() + scale_x_log10()
 
 
+ggplot(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), aes(x = (prevalence_dec * 100)+ 1e-10, y = pathogenic_percent + 1e-10)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(data = filter(combined_df, !(gene %in% c("XY_DMD", "ATXN8OS", "TCF4"))), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.0005, color = "gray", alpha = 0.8) +
+  geom_point(data = filter(combined_df, !(gene %in% c("XY_DMD", "ATXN8OS", "TCF4"))), alpha = 1) +    # Plot HTT with full alpha
+  theme_minimal() +
+    geom_text_repel(data = filter(combined_df, !(gene %in% c("XY_DMD", "ATXN8OS", "TCF4"))), aes(label = gene), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, size = 4,
+                  nudge_y = 0, nudge_x = 0) +
+  labs(x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Percentage")
 
-ggplot(data = filter(combined_df, !(gene %in% c("HTT", "ATXN8OS"))), aes(x = prevalence_dec * 100, y = pathogenic_percent + 1e-10, color = Inheritance)) +
+
+
+ggplot(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), aes(x = (prevalence_dec * 100)+ 1e-10, y = pathogenic_percent + 1e-10)) +
   geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
   geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
                 aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
                     ymax = 1e-10 + Pathogenic_Count_upper_ci), 
-                width = 0.0005, color = "gray", alpha = 1) +
+                width = 0.0005, color = "black", alpha = 1) +
   geom_point(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), alpha = 1) +    # Plot HTT with full alpha
   theme_minimal() +
-  labs(title = "Comparison of Inferred Pathogenic Genotype from gnomAD and Literature Known Prevalence",
-       x = "Disease Prevalence",
-       y = "Inferred Pathogenic Genotype Percentage") 
+    geom_text_repel(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), aes(label = gene), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, size = 4,
+                  nudge_y = 0, nudge_x = 0) +
+  labs(x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Percentage") + scale_x_log10() + scale_y_log10()
+
+ggplot(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), aes(x = (prevalence_dec * 100)+ 1e-10, y = pathogenic_percent + 1e-10)) +
+  geom_abline(intercept = 0, linetype = 'longdash', color = 'lightgrey') +
+  geom_errorbar(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), 
+                aes(ymin = 1e-10 + Pathogenic_Count_lower_ci, 
+                    ymax = 1e-10 + Pathogenic_Count_upper_ci), 
+                width = 0.0005, color = "black", alpha = 1) +
+  geom_point(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), alpha = 1) +    # Plot HTT with full alpha
+  theme_minimal() +
+    geom_text_repel(data = filter(combined_df, !(gene %in% c("HTT","XY_DMD", "ATXN8OS", "TCF4"))), aes(label = gene), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, size = 4,
+                  nudge_y = 0, nudge_x = 0) +
+  labs(x = "Disease Prevalence",
+       y = "Inferred Pathogenic Genotype Percentage")
 
 
 ```
@@ -1758,21 +1768,21 @@ ggplot(STR_table_adjusted, aes(x = gene)) +
 ``` {r age of onset, fig.height = 10}
 
 # Loci with GeneReview Specific to Repeat Expansion Disease (>70% of variants)
-# genes_to_bold <- c(
-#   "AR", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3", "ATXN7", "ATXN8OS", 
-#   "C9orf72", "CACNA1A", "DAB1", "DMPK", "FMR1", "FXN", "HTT", "JPH3", 
-#   "PABPN1", "PHOX2B", "RFC1", "TBP", "TCF4", "CNBP", "CSTB", "FGF14"
-# )
-# 
-# bold_labels <- function(labels) {
-#   lapply(labels, function(label) {
-#     if (label %in% genes_to_bold) {
-#       return(bquote(bold(.(label))))
-#     } else {
-#       return(as.character(label))
-#     }
-#   })
-# }
+genes_to_bold <- c(
+  "AR", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3", "ATXN7", "ATXN8OS",
+  "C9orf72", "CACNA1A", "DAB1", "DMPK", "FMR1", "FXN", "HTT", "JPH3",
+  "PABPN1", "PHOX2B", "RFC1", "TBP", "TCF4", "CNBP", "CSTB", "FGF14"
+)
+
+bold_labels <- function(labels) {
+  lapply(labels, function(label) {
+    if (label %in% genes_to_bold) {
+      return(bquote(bold(.(label))))
+    } else {
+      return(as.character(label))
+    }
+  })
+}
 
 evidence <- data.frame(
   gene = c("AFF2", "AFF3", "AR", "ARX_1", "ARX_2", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3",
@@ -1915,67 +1925,76 @@ ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
 ```
 
 
-```{r prev vs IGP}
-combined_df$label_na <- ifelse(is.na(combined_df$prevalence_num_dec), "*NA", "")
-gene_colors <- c("HTT" = "orange", "ATXN8OS" = "cyan", "TCF4" = "green", "XY_DMD" = "purple")
-
+```{r roadblock plot}
+color_labels <- c('black', 'black', 'black', 'black', 'black', 
+                  'black', 'black', 'black', 'black', 'blue', 'black', 'black', 'black', 'black', 'black', 
+                  'purple', 'lightpink', 'orange')
 
 ggplot(combined_df, aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
   geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
   geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
   labs(x = "Gene", y = "Percentage") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
         plot.title = element_text(hjust = 0.5))
 
-ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+ggplot(data = filter(combined_df, !is.na(combined_df$prevalence)), aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) +
+  theme(axis.text.x = element_text(colour = color_labels))
+  
+
+ggplot(data = filter(combined_df, !is.na(combined_df$prevalence)), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) + 
+   ylim(0,0.64) +
+  theme(axis.text.x = element_text(colour = color_labels))
+
+
+ggplot(data = filter(combined_df, !is.na(combined_df$prevalence)), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
+  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
+  labs(x = "Gene", y = "Percentage") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
+        plot.title = element_text(hjust = 0.5)) + 
+  scale_y_log10()
+  theme(axis.text.x = element_text(colour = color_labels))
+
+iris1 <- ggplot(subset(combined_df, !is.na(combined_df$prevalence) & combined_df$pathogenic_percent < 1), 
+       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
   geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
   geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
   labs(x = "Gene", y = "Percentage") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
         plot.title = element_text(hjust = 0.5))
 
-ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), 
-       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-  geom_point(aes(y = prevalence_num_dec), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
-  geom_point(aes(y = pathogenic_percent/100), color = "red", size = 3, alpha = 0.9, shape = 20) +
-  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci/100, ymax = Pathogenic_Count_upper_ci/100), width = 0.2, color = "black") +
-  labs(x = "Gene", y = "Percentage") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
-        plot.title = element_text(hjust = 0.5)) + 
-  geom_text(aes(label = label_na, y = 0), angle = 90, hjust = -3, 
-            color = "blue", alpha = 0.9)  # Adjust vjust as needed to position the label appropriately
-
-
-ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), 
-       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
+iris2 <- ggplot(subset(combined_df, !is.na(combined_df$prevalence) & combined_df$pathogenic_percent > 1), 
+                aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
+  geom_point(aes(y = prevalence_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
   geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
   geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
   labs(x = "Gene", y = "Percentage") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
-        plot.title = element_text(hjust = 0.5)) + 
-  geom_text(aes(label = label_na, y = 0), angle = 90, hjust = -3, 
-            color = "blue", alpha = 0.9) + ylim(0,0.7)# Adjust vjust as needed to position the label appropriately
+        plot.title = element_text(hjust = 0.5))
 
-
-ggplot(data = filter(combined_df, combined_df$label_na != "*NA"), 
-       aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
-  geom_point(aes(y = prevalence_num_dec*100), fill = "blue", size = 3, alpha = 0.9, shape = 23) +
-  geom_point(aes(y = pathogenic_percent), color = "red", size = 3, alpha = 0.9, shape = 20) +
-  geom_errorbar(aes(ymin = Pathogenic_Count_lower_ci, ymax = Pathogenic_Count_upper_ci), width = 0.2, color = "black") +
-  labs(x = "Gene", y = "Percentage") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8),
-        plot.title = element_text(hjust = 0.5)) + 
-  geom_text(aes(label = label_na, y = 0), angle = 90, hjust = -3, 
-            color = "blue", alpha = 0.9) + ylim(0,0.64)# Adjust vjust as needed to position the label appropriately
-
+cowplot::plot_grid(iris1, iris2, labels = "AUTO")
 
 ```
 
 
-```{r, plot in progress}
+```{r, allelic distribution}
 
 #motif subset
 total_motif_match <- total %>%
