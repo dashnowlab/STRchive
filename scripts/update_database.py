@@ -7,6 +7,7 @@ import argparse
 import doctest
 import os
 import pandas as pd
+import time
 # in case person runs from data instead of scripts
 sys.path.append('../')
 import reftogeneorientation
@@ -16,12 +17,16 @@ def main(csv_fname, json_fname):
     # Check if the CSV file is newer than the JSON file
     if os.path.getmtime(csv_fname) > os.path.getmtime(json_fname):
         sys.stderr.write('CSV is newer, reading CSV and writing JSON\n')
+        sys.stderr.write(f'WARNING: overwriting {json_fname} in 10 seconds\n')
+        sys.stderr.write('Press Ctrl+C to cancel\n')
+        time.sleep(10)
+
         df = pd.read_csv(csv_fname)
         # Create/update gene orientation columns from ref orientation for each motif type:
         # Reference/benign, pathogenic, and unknown
         df = reftogeneorientation.process_df(df)
         # Sort by gene name
-        df.sort_values(by='gene', inplace=True)
+        df.sort_values(by=['gene', 'id'], inplace=True)
         # Write JSON file
         with open(json_fname, 'w') as json_file:
             json_string = df.to_json(orient='records', indent=4)
@@ -29,6 +34,10 @@ def main(csv_fname, json_fname):
 
     else:
         sys.stderr.write('JSON is newer, reading JSON and writing CSV\n')
+        sys.stderr.write(f'WARNING: overwriting {csv_fname} in 10 seconds\n')
+        sys.stderr.write('Press Ctrl+C to cancel\n')
+        time.sleep(10)
+
         # Check if file exists
         if not os.path.exists(json_fname):
             sys.stderr.write(f'Error: {json_fname} does not exist\n')
@@ -38,7 +47,7 @@ def main(csv_fname, json_fname):
         # Reference/benign, pathogenic, and unknown
         df = reftogeneorientation.process_df(df)
         # Sort by gene name
-        df.sort_values(by='gene', inplace=True)
+        df.sort_values(by=['gene', 'id'], inplace=True)
         # Write CSV file
         with open(csv_fname, 'w') as csv_file:
             df.to_csv(csv_file, index=False)
