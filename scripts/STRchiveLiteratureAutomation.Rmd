@@ -377,10 +377,10 @@ for (i in 1:length(pubmed_results)) {
 ### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-#file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240109.tsv"
+file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240109.tsv"
 
 # Read the table into R
-#all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 firstpub <- data.frame(
   stringsAsFactors = FALSE,
@@ -451,6 +451,38 @@ filtered_df <- filtered_df[!(filtered_df$PMID.y %in% DMD_dont_trust & filtered_d
 
 ```
 
+
+``` {r data evidence from cases}
+
+evidence <- data.frame(
+  GeneName = c("AFF2", "AFF3", "AR", "ARX", "ATN1", "ATXN1", "ATXN10", "ATXN2", "ATXN3",
+    "ATXN7", "ATXN8OS", "BEAN1", "C9orf72", "CACNA1A", "CBL", "COMP", "DAB1", "DIP2B",
+    "DMD", "DMPK", "FMR1", "FOXL2", "FXN", "GIPC1", "GLS", "HOXA13", "HOXD13", "HTT", "JPH3", "LRP12", "MARCHF6", "NOP56", "NIPA1", "NOTCH2NLC",
+    "NUTM2B-AS1", "PABPN1", "PHOX2B", "POLG", "PPP2R2B", "PRDM12", "RAPGEF2", "RFC1",
+    "RILPL1", "RUNX2", "SAMD12", "SOX3", "STARD7", "TBP", "TBX1", "TCF4", "TNRC6A",
+    "XYLT1", "YEATS2", "ZIC2", "ZIC3", "ZNF713", "CNBP", "CSTB", "EIF4A3", "PRNP",
+    "VWA1", "ABCD3", "FGF14", "ZFHX3", "THAP11"
+    ),
+  ind_obs = c("100 > x > 50","< 10","> 100","50 > x > 10","100 > x > 50",
+               "> 100","100 > x > 50","> 100","> 100","> 100","> 100","> 100",
+               "> 100","> 100","< 10","< 10","50 > x > 10","< 10","< 10","> 100","> 100",
+               "50 > x > 10","> 100","50 > x > 10","< 10","< 10","< 10","> 100",
+              "100 > x > 50","100 > x > 50","> 100","100 > x > 50","> 100","> 100","< 10","> 100",
+              "> 100","> 100","> 100","< 10","< 10","> 100","50 > x > 10","< 10","> 100","< 10",
+              "50 > x > 10","100 > x > 50","< 10","> 100","< 10","50 > x > 10","< 10","50 > x > 10",
+              "< 10","< 10","> 100","> 100","50 > x > 10","> 100","50 > x > 10","< 10","> 100",
+              "50 > x > 10","< 10"))
+```
+
+```{r merge}
+# Perform left join to merge evidence dataframe with summary_data
+merged_data <- merge(evidence, summary_data, by = "GeneName", all.x = FALSE)
+
+# Print the merged dataframe
+print(merged_data)
+
+```
+
 ```{r plot}
 # Summarize data 
 summary_data <- filtered_df %>%
@@ -478,10 +510,10 @@ sorted_pub_info <- all_pub_info_df %>%
   arrange(GeneName, PublicationYear)
 
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_smooth(method = "lm", se = TRUE, color = "blue", alpha = 0.4) +  # Add line of best fit
   geom_point() +
-  geom_smooth(method = "lm", se = TRUE, color = "blue") +  # Add line of best fit
   geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
-                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 6) + 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 2) + 
   labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
        x = "Minimum Publication Year",
        y = "Total Number of Unique PMIDs") +
@@ -498,7 +530,53 @@ ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneNam
   scale_y_log10() +  # Set y-axis to log scale
   theme_minimal()
 
+ggplot(merged_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_smooth(method = "lm", se = TRUE, color = "blue", alpha = 0.4) +  # Add line of best fit
+  geom_point(aes(color = ind_obs)) +
+  geom_text_repel(data = subset(merged_data, !duplicated(GeneName)), aes(label = GeneName), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 4,
+                  nudge_y = 75, nudge_x = 0) +  # Adjust nudge_y and nudge_x as needed
+  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
+       x = "Earliest Publication Year",
+       y = "Total Number of Unique PMIDs") +
+  theme_minimal() +
+  scale_color_manual(values = c("< 10" = "black", "50 > x > 10" = "#BDD7E7", 
+                                "100 > x > 50" = "#6BAED6", "> 100" = "#2171B5")) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 10),  # Adjust the size as needed
+        axis.text.y = element_text(size = 10),  # Adjust the size as needed
+        axis.title = element_text(size = 10))  # Adjust the size as needed
 
+
+ggplot(merged_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_point(aes(color = ind_obs)) +
+  geom_text_repel(data = subset(merged_data, !duplicated(GeneName)), aes(label = GeneName), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, angle = 90, size = 4,
+                  nudge_y = 0.2, nudge_x = 0) +  # Adjust nudge_y and nudge_x as needed
+  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
+       x = "Earliest Publication Year",
+       y = "Total Number of Unique PMIDs") +
+  scale_y_log10() +  # Set y-axis to log scale
+  theme_minimal() +
+  scale_color_manual(values = c("< 10" = "black", "50 > x > 10" = "#BDD7E7", 
+                                "100 > x > 50" = "#6BAED6", "> 100" = "#2171B5")) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 10),  # Adjust the size as needed
+        axis.text.y = element_text(size = 10),  # Adjust the size as needed
+        axis.title = element_text(size = 10))  # Adjust the size as needed
+  
+ggplot(merged_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
+  geom_point(aes(size = ind_obs, color = ind_obs)) +
+  geom_text_repel(data = subset(summary_data, !duplicated(GeneName)), aes(label = GeneName), 
+                  box.padding = 0.5, segment.color = "grey50", segment.size = 0.2, 
+                  nudge_y = 0.2, angle = 90, size = 2) + 
+  labs(title = "Minimum Publication Year by Total Number of Unique PMIDs",
+       x = "Minimum Publication Year",
+       y = "Total Number of Unique PMIDs") +
+  scale_y_log10() +  # Set y-axis to log scale
+  scale_size_manual(values = c("< 10" = 2, "50 > x > 10" = 3, 
+                               "100 > x > 50" = 4, "> 100" = 6)) + 
+  scale_color_manual(values = c("< 10" = "black", "50 > x > 10" = "#BDD7E7", 
+                               "100 > x > 50" = "#6BAED6", "> 100" = "#2171B5")) +
+  theme_minimal()
 
 ```
 
