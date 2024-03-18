@@ -231,26 +231,6 @@ gnomADSTRcalls <- subset(gnomADSTRcalls, gnomADSTRcalls$motif_norm != "CNG")
 
 ```
 
-## Let's get a subset of the merged data (optional)
-``` {r subset}
-#total <- sample_n(total, 10000)
-```
-
-## Let's Ensure Allele2 > Allele1
-- Check max of allele1 and allele2 (na.rm = TRUE)
-
-``` {r allelecheck}
-table(gnomADSTRcalls$Allele2 >= gnomADSTRcalls$Allele1, useNA = "ifany")
-table(gnomADSTRcalls$Allele1 == gnomADSTRcalls$Allele1UsingOfftargetRegions, useNA = "ifany")
-#pmax(gnomADSTRcalls$Allele1, gnomADSTRcalls$Allele2, na.rm = TRUE)
-
-# gnomADSTRcalls_noallele2 <- gnomADSTRcalls[is.na(gnomADSTRcalls$Allele2),]
-# table(gnomADSTRcalls_noallele2$Allele1)
-
-#table(gnomADSTRcalls$AlleleLargest)
-#table(gnomADSTRcalls$AlleleLargest >= gnomADSTRcalls$Allele1, useNA = "ifany")
-
-```
 
 ## Loop from harriet for allele distribution with age vs no age available
 ```{r loop}

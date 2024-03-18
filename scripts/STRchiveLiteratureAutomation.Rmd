@@ -24,7 +24,7 @@ The goal for this Markdown is to be a repository of code that assists with liter
 #data <- read.csv("/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv", header = TRUE)
 
 
-data <- read.csv('/Users/quinlan/Documents/Quinlan-PhD/UDN+STRdb/STRpapercode/20240109_STR-disease-loci.processed.csv', stringsAsFactors = FALSE)
+data <- read.csv('/Users/quinlan/Documents/Git/STRchive/data/STR-disease-loci.csv', stringsAsFactors = FALSE)
 
 # Filter out NA values from the 'gene' column
 filtered_data <- data[!is.na(data$gene), ]
@@ -377,10 +377,10 @@ for (i in 1:length(pubmed_results)) {
 ### Making a plot based on the earliest and latest dates
 
 ```{r plot}
-file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240109.tsv"
+#file_path <- "/Users/quinlan/Documents/Git/STRchive/data/all_pub_info_20240305.tsv"
 
 # Read the table into R
-all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+#all_pub_info_df <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 firstpub <- data.frame(
   stringsAsFactors = FALSE,
@@ -475,6 +475,12 @@ evidence <- data.frame(
 ```
 
 ```{r merge}
+
+summary_data <- filtered_df %>%
+  group_by(GeneName) %>%
+  summarize(MinPublicationYear = min(PublicationYear.x, na.rm = TRUE), MaxPublicationYear = max(PublicationYear.y, na.rm = TRUE),
+            TotalPMIDs = n_distinct(PMID.y))  # Use n_distinct to count unique PMIDs
+
 # Perform left join to merge evidence dataframe with summary_data
 merged_data <- merge(evidence, summary_data, by = "GeneName", all.x = FALSE)
 
@@ -484,11 +490,6 @@ print(merged_data)
 ```
 
 ```{r plot}
-# Summarize data 
-summary_data <- filtered_df %>%
-  group_by(GeneName) %>%
-  summarize(MinPublicationYear = min(PublicationYear.x, na.rm = TRUE), MaxPublicationYear = max(PublicationYear.y, na.rm = TRUE),
-            TotalPMIDs = n_distinct(PMID.y))  # Use n_distinct to count unique PMIDs
 
 # Create a scatter plot with direct labels using ggrepel
 ggplot(summary_data, aes(x = MinPublicationYear, y = TotalPMIDs, label = GeneName)) +
