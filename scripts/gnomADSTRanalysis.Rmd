@@ -124,13 +124,31 @@ gnomADSTRcalls$MotifLargest <- ifelse(is.na(gnomADSTRcalls$Allele2) | gnomADSTRc
 
 
 normalise_str <- function(in_dna) {
-  if (is.null(in_dna) || length(in_dna) == 0) {
-    return('')
+  # Split the input by comma if it contains one
+  if (grepl(",", in_dna)) {
+    in_dna <- unlist(strsplit(in_dna, ",", fixed = TRUE))
+  } else {
+    in_dna <- list(in_dna)  # Convert single string to list
   }
-  # Generate all circular permutations of input sequence
-  all_possible <- sapply(0:(nchar(in_dna)-1), function(i) paste0(substr(in_dna, i+1, nchar(in_dna)), substr(in_dna, 1, i)))
-  # Sort permutations alphabetically and return the first
-  return(sort(all_possible)[1])
+  
+  result <- character(length(in_dna))  # Initialize result vector
+  
+  for (i in seq_along(in_dna)) {
+    dna <- in_dna[i]
+    
+    if (is.null(dna) || length(dna) == 0) {
+      result[i] <- ''  # Return empty string for NULL or empty input
+    } else {
+      # Generate all circular permutations of input sequence
+      all_possible <- sapply(0:(nchar(dna)-1), function(j) 
+        paste0(substr(dna, j+1, nchar(dna)), substr(dna, 1, j)))
+      
+      # Sort permutations alphabetically and return the first
+      result[i] <- sort(all_possible)[1]
+    }
+  }
+  
+  return(result)
 }
 
 # normalise_str("TAAA")
@@ -1638,64 +1656,6 @@ data = gnomADSTRcalls[gnomADSTRcalls$Allele1 != gnomADSTRcalls$Allele1UsingOffta
 
 Here are TRGT (STR) calls on a bunch of long read samples that may overlap with some of the samples Ben sent
 /uufs/chpc.utah.edu/common/HIPAA/u6026198/quinlan-shared/data-shared/datasets/HPRC/trgt
-
-``` {r prevalence and paper plots, fig.width=15}
-# Assuming 'STR_table' is your dataframe
-cat(paste(STR_table$disease_id, "Prevalence:", STR_table$Prevalence, "\n"))
-
-
-ggplot(total, aes(x = factor(Id), y = AlleleLargest)) +
-  geom_violin(width=7, linewidth=1) +
-  labs(title = "Motif_norm Distribution by Disease ID",
-       x = "Disease ID",
-       y = "Allele2") +
-  theme_minimal() +
-  coord_flip() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + facet_wrap(~Inheritance, scales = "free_y")
-
-# Assuming 'STR_table' is your dataframe
-motif_counts <- total %>%
-  group_by(disease_id, motif_norm) %>%
-  summarize(MotifCount = n()) %>%
-  pivot_wider(names_from = motif_norm, values_from = MotifCount, values_fill = 0)
-
-# Print the motif counts table
-print(motif_counts)
-
-total$length_characters <- str_length(total$motif_norm)
-
-total$length_characters[total$length_characters > 6] <- ">6"
-
-unique_motif_counts <- total %>%
-  group_by(Id) %>%
-  summarize(UniqueMotifCount = n_distinct(motif_norm),
-            length_characters = unique(length_characters))
-
-unique_motif_counts <- unique_motif_counts %>%
-  filter(UniqueMotifCount != 1)
-
-unique_motif_counts <- unique_motif_counts %>%
-  mutate(UniqueMotifCount = ifelse(Id == "RFC1" & length_characters == 5, 15,
-                                   ifelse(Id == "RFC1" & length_characters == 6, 1, UniqueMotifCount)))
-
-ggplot(unique_motif_counts, 
-       aes(x = reorder(Id, UniqueMotifCount), y = UniqueMotifCount, fill = as.character(length_characters))) +
-  geom_bar(stat = "identity", alpha = 0.8) +
-  labs(title = "gnomAD Motif Counts by ID",
-       x = "ID",
-       y = "Unique Motif Count") +
-  scale_fill_brewer(palette = "Pastel3", name = "Length of Motif Characters") +  # Adjust palette and legend title
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 14),  # Adjust size as needed
-        axis.text.y = element_text(size = 14),  # Adjust size as needed
-        axis.title.y = element_text(size = 16))  # Adjust size as needed
-
-
-
-```
-
-
-
 
 
 ```{r harriet strchive plots}
