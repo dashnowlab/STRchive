@@ -151,12 +151,25 @@ normalise_str <- function(in_dna) {
   return(paste(result, collapse = ","))  # Combine result elements with commas
 }
 
+
+
 # toy <- gnomADSTRcalls[sample(nrow(gnomADSTRcalls), 20), ]
 # 
 # toy$motif_norm <- sapply(toy$MotifLargest, function(x) normalise_str(as.character(x)))
 
+normalise_call <- function(in_dna) {
+  if (is.null(in_dna) || length(in_dna) == 0) {
+    return('')
+  }
+  # Generate all circular permutations of input sequence
+  all_possible <- sapply(0:(nchar(in_dna)-1), function(i) paste0(substr(in_dna, i+1, nchar(in_dna)), substr(in_dna, 1, i)))
+  # Sort permutations alphabetically and return the first
+  return(sort(all_possible)[1])
+}
 
-gnomADSTRcalls$motif_norm <- sapply(gnomADSTRcalls$MotifLargest, function(x) normalise_str(as.character(x)))
+gnomADSTRcalls$motif_norm <- sapply(gnomADSTRcalls$MotifLargest, function(x) normalise_call(as.character(x)))
+
+
 ```
 
 ## Let's merge some data
@@ -173,10 +186,6 @@ STR_table_clean <-subset(STR_table, select=c("disease_id", "gene",
                                              "age_onset_max", "typ_age_onset_max", "novel", "pathogenic_motif_reference_orientation"))
 
 colnames(STR_table_clean)[2] = "Id"
-
-#match what's in data
-STR_table_clean$pathogenic_motif_reference_orientation[STR_table_clean$pathogenic_motif_reference_orientation == "TGGAA,TAGAA"] <- "TAGAA"
-
 
 STR_table_clean$repeatunit_path_normalized <- sapply(STR_table_clean$pathogenic_motif_reference_orientation, function(x) normalise_str(as.character(x)))
 
@@ -449,7 +458,6 @@ ggplot(total) + geom_point(aes(x = Id, y = Allele2, col=motif_norm=="CNG")) + th
 ```
 
 
-
 ``` {r type}
 ggplot(total) + geom_point(aes(x = Id, y = AlleleLargest, col=type)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) + facet_grid(~type, scales = "free_x") + ylim(0,400) + scale_x_discrete(guide = guide_axis(check.overlap = TRUE))
 
@@ -576,121 +584,6 @@ ggplot(subset(result, percent <= 0.1), aes(x = reorder(Id, percent), y = percent
 #table(total_pabpn1$Allele2)
 ```
 
-
-```{r Q1 with motif}
-Allele2_greater_than_path_min_with_motif <- (total$Allele2LowerBound >= total$pathogenic_min) & (total$motif_norm == total$repeatunit_path_normalized)
-
-table(Allele2_greater_than_path_min_with_motif)
-
-result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_min_with_motif)), by = list(total$Id), FUN = sum)
-
-sum(result1$V1, na.rm= TRUE)
-
-result2 <- aggregate(cbind(total$disease_id), by = list(total$Id, total$repeatunit_path_normalized), FUN = function(x) sum(!is.na(x)))
-
-
-colnames(result1) <- c("Id", "Allele2>pathogenic_min&&motif_norm=motif_path")
-colnames(result2) <- c("Id", "pathogenic_motif", "Allele2_Loci_by_Id")
-
-
-result <- merge(result1,result2)
-
-result$percent <- result$`Allele2>pathogenic_min&&motif_norm=motif_path`/result$Allele2_Loci_by_Id*100
-
-result <- calculate_ci(result, successes_col = "Allele2>pathogenic_min&&motif_norm=motif_path", trials_col = "Allele2_Loci_by_Id", conf_level = 0.95)
-
-ggplot(result, aes(x = reorder(Id,percent), y = percent, color = pathogenic_motif)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + 
-  ggtitle("Pathogenic Percentage by Id AND Motif with 95% CI ")
-
-
-ggplot(subset(result, percent > 1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id+Motif w/ 95% CI (Pct > 1)")
-
-ggplot(subset(result, percent <= 1), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % by Id+Motif w/ 95% CI (Pct<= 1)")
-
-  
-  
-```
-Do i want to see how many alleles are within normal range? vs intermediate
-
-
-### Let's see about if we parse these out by sex
-Later, look at AD/AR
-```{r sex}
-
-total_sex <- subset(total, total$Inheritance == "XR" | total$Inheritance == "XD")
-
-table(total_sex$Inheritance)
-
-Allele2_greater_than_path_min <- total_sex$Allele2LowerBound >= total_sex$pathogenic_min
-table(Allele2_greater_than_path_min)
-
-# Use aggregate() to count occurrences of x > y by z value
-result1 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + Sex, data = total_sex, FUN = sum, na.rm = TRUE)
-
-sum(result1$Allele2_greater_than_path_min)
-
-result2 <- aggregate(cbind(Allele2_greater_than_path_min) ~ Id + Sex, data = total_sex, FUN = function(x) sum(!is.na(x)))
-
-merge(result1,result2)
-
-sex_result <- result1 %>% inner_join( result2, 
-        by=c('Id', "Sex"))
-
-# Rename the columns of the result dataframe
-colnames(sex_result) <- c("Id", "Sex", "Allele2>pathogenic_min", "Total_Allele2Loci_for_Id")
-
-sex_result$percent<- (sex_result$`Allele2>pathogenic_min`/sex_result$Total_Allele2Loci_for_Id)*100
-
-sum(sex_result$Allele2_greater_than_path_min, na.rm= TRUE)
-
-print(sex_result)
-
-
-# https://cran.r-project.org/web/packages/interpretCI/vignettes/Confidence_interval_for_a_proportion.html
-# https://rcompanion.org/handbook/H_02.html
-
-calculate_ci <- function(df, successes_col, trials_col, conf_level, method) {
-  
-  # Calculate the estimated proportion and confidence intervals for each row
-  est_props <- df[[successes_col]] / df[[trials_col]]
-  cis <- BinomCI(df[[successes_col]], df[[trials_col]], conf.level = conf_level, method = method)
-  
-  # Extract the lower and upper confidence interval bounds
-  lower_cis <- cis[, "lwr.ci"]
-  upper_cis <- cis[, "upr.ci"]
-  
-  # Add the confidence intervals to the original data frame
-  df$lower_ci <- lower_cis*100
-  df$upper_ci <- upper_cis*100
-  
-  # Return the updated data frame
-  return(df)
-}
-
-sex_result <- calculate_ci(sex_result, successes_col = "Allele2>pathogenic_min", trials_col = "Total_Allele2Loci_for_Id", conf_level = 0.95)
-
-ggplot(sex_result, aes(x = reorder(Id,percent), y = percent, color = Sex)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") +
-  ggtitle("Pathogenic Percentage by Id with 95% CI with Sex Info")
-
-
-
-```
 
 
 ### Inheritance patterns?
@@ -830,190 +723,17 @@ t.test(PCR_result$`Allele2>pathogenic_min` ~ PcrProtocol, data = PCR_result)
 ```
 
 
-## Question 2
-Are there individuals in gnomad older than typical age of onset with pathogenic allele size? 
-Penetrance lower than expected?
-Age of onset max and age_max (but consider going to age min of range) & allele2* > pathogenic age min
-Could also do pathogenic age min - # to increase wiggle
-Number for each locus: how many individuals, and what sizes are the allele
-Off target would be nice… because gnomad uses conservative estimates
-
-```{r Q2 disease id}
-
-total_subset <- total[complete.cases(total$AgeMin), ]
-total_subset$AgeMin <- as.integer(total_subset$AgeMin)
-# # Apply the condition to each row of the data frame
-# condition <- (total_subset$AlleleLargest >= total_subset$pathogenic_min) & (total_subset$AgeMin > total_subset$age_onset_max)
-# 
-# # Use ifelse to print a message for each row where the condition is true
-# result <- ifelse(condition, 
-#                  paste("Allele2:", total_subset$Allele2, ", pathogenic_max:", total_subset$pathogenic_max),
-#                  "not")
-# 
-# # Print the result
-# cat(result, sep = "\n")
-# 
-# # just checking the number is right
-# n_not_missing_age <- table(total$Age != "age_not_available")[2]
-# Create a logical vector to represent whether x > y for each row
-Allele2_greater_than_path_max_with_age <- (total_subset$AlleleLargest >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max)
-table(Allele2_greater_than_path_max_with_age)
-result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_max_with_age)), by = list(total_subset$disease_id), FUN = sum)
-sum(result1$V1, na.rm= TRUE)
-result2 <- aggregate(cbind(total_subset$disease_id), by = list(total_subset$disease_id), FUN = function(x) sum(!is.na(x)))
-colnames(result1) <- c("disease_id", "Allele2>pathogenic_max&agemax>age_onset_max")
-colnames(result2) <- c("disease_id", "Allele2_Loci_by_Disease_Id")
-result <- merge(result1,result2)
-result$percent <- result$`Allele2>pathogenic_max&agemax>age_onset_max`/result$Allele2_Loci_by_Disease_Id*100
-# Print result
-print(result)
-# Summarize additional statistics by disease_id
-result2 <- total_subset %>%
-  group_by(disease_id) %>%
-  summarise(min_allele2 = min(as.numeric(Allele2)), max_allele2 = max(as.numeric(Allele2)), max_pathogenic_max = max(as.numeric(pathogenic_max)))
-# Merge results
-bigresult <- merge(result, result2)
-# Print bigresult
-print(bigresult)
-
-```
-
-```{r Q2 id}
-
-total_subset <- total[complete.cases(total$AgeMin), ]
-total_subset$AgeMin <- as.integer(total_subset$AgeMin)
-# # Apply the condition to each row of the data frame
-# condition <- (total_subset$AlleleLargest >= total_subset$pathogenic_min) & (total_subset$AgeMin > total_subset$age_onset_max)
-# 
-# # Use ifelse to print a message for each row where the condition is true
-# result <- ifelse(condition, 
-#                  paste("Allele2:", total_subset$Allele2, ", pathogenic_max:", total_subset$pathogenic_max),
-#                  "not")
-# 
-# # Print the result
-# cat(result, sep = "\n")
-# 
-# # just checking the number is right
-# n_not_missing_age <- table(total$Age != "age_not_available")[2]
-# Create a logical vector to represent whether x > y for each row
-Allele2_greater_than_path_max_with_age <- (total_subset$Allele2LowerBound >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max)
-table(Allele2_greater_than_path_max_with_age)
-result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_max_with_age)), by = list(total_subset$Id), FUN = sum)
-sum(result1$V1, na.rm= TRUE)
-result2 <- aggregate(cbind(total_subset$disease_id), by = list(total_subset$Id), FUN = function(x) sum(!is.na(x)))
-colnames(result1) <- c("Id", "Allele2>pathogenic_max&agemax>age_onset_max")
-colnames(result2) <- c("Id", "Allele2_Loci_by_Id")
-result <- merge(result1,result2)
-result$percent <- result$`Allele2>pathogenic_max&agemax>age_onset_max`/result$Allele2_Loci_by_Id*100
-result <- calculate_ci(result, successes_col = "Allele2>pathogenic_max&agemax>age_onset_max", trials_col = "Allele2_Loci_by_Id", conf_level = 0.95)
-ggplot(result, aes(x = reorder(Id,percent), y = percent, color = Id)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8), legend.position = "none") +
-  ylab("Pathogenic Percentage") + 
-  ggtitle("Pathogenic Percentage Over Age by Id with 95% CI ")
-
-
-# 
-# 
-# # Summarize additional statistics by disease_id
-# result2 <- total_subset %>%
-#   group_by(disease_id) %>%
-#   summarise(min_allele2 = min(as.numeric(Allele2)), max_allele2 = max(as.numeric(Allele2)), max_pathogenic_max = max(as.numeric(pathogenic_max)))
-# 
-# # Merge results
-# bigresult <- merge(result, result2)
-# 
-# # Print bigresult
-# print(bigresult)
-
-```
-
-
-### What about the percentage of folks where they are over the size, over the age, AND have the pathogenic motif?
-``` {r motif}
-total_subset <- total[complete.cases(total$AgeMin), ]
-
-total_subset$AgeMin <- as.integer(total_subset$AgeMin) 
-
-
-
-# # Apply the condition to each row of the data frame
-# condition <- (total_subset$Allele2LowerBound >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max) & (total_subset$motif_norm == total_subset$repeatunit_path_normalized)
-# 
-# # # Use ifelse to print a message for each row where the condition is true
-# resultmotif <- ifelse(condition,
-#                  paste(total_subset$Id, "Allele2 LB:", total_subset$Allele2LowerBound, ", pathogenic_max:", total_subset$pathogenic_max, total_subset$motif_norm, total_subset$repeatunit_path_normalized),
-#                  "")
-# 
-# # # Print the result
-# for (i in seq_along(resultmotif)) {
-#   if (resultmotif[i] != "") {
-#     cat(resultmotif[i], "\n")
-#   }
-# }
-# 
-# # just checking the number is right
-# n_not_missing_age <- table(total$Age != "age_not_available")[2]
-# Create a logical vector to represent whether x > y for each row
-
-Allele2_greater_than_path_min_with_age_and_motif <- (total_subset$Allele2LowerBound >= total_subset$pathogenic_max) & (total_subset$AgeMin >= total_subset$age_onset_max) & (total_subset$motif_norm == total_subset$repeatunit_path_normalized)
-
-table(Allele2_greater_than_path_min_with_age_and_motif)
-
-result1 <- aggregate(cbind(as.numeric(Allele2_greater_than_path_min_with_age_and_motif)), by = list(total_subset$Id), FUN = sum)
-
-sum(result1$V1, na.rm= TRUE)
-
-result2 <- aggregate(cbind(total_subset$disease_id), by = list(total_subset$Id, total_subset$repeatunit_path_normalized), FUN = function(x) sum(!is.na(x)))
-
-
-colnames(result1) <- c("Id", "Allele2>pathogenic_min&agemax>age_onset_max&motif_norm=motif_path")
-colnames(result2) <- c("Id", "pathogenic_motif", "Allele2_Loci_by_Id")
-
-
-result <- merge(result1,result2)
-
-result$percent <- result$`Allele2>pathogenic_min&agemax>age_onset_max&motif_norm=motif_path`/result$Allele2_Loci_by_Id*100
-
-result <- calculate_ci(result, successes_col = "Allele2>pathogenic_min&agemax>age_onset_max&motif_norm=motif_path", trials_col = "Allele2_Loci_by_Id", conf_level = 0.95)
-
-ggplot(result, aes(x = reorder(Id,percent), y = percent, color = pathogenic_motif)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") +  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + 
-  ggtitle("Pathogenic Percentage Over Age by Id AND Motif with 95% CI ")
-
-
-ggplot(subset(result, percent > 5), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % Over Age by Id+Motif with 95% CI (Pct > 5)")
-
-ggplot(subset(result, percent <= 5), aes(x = reorder(Id, percent), y = percent, color = pathogenic_motif)) +
-  geom_point() +
-  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
-  xlab("Id") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size =8)) +
-  ylab("Pathogenic Percentage") + ggtitle("Pathogenic % Over Age by Id+Motif with 95% CI (Pct <= 5)")
-
-
-
-```
-
-
 ### Let's do the inheritance pattern analysis
 ```{r inheritance}
-total <- subset(total, total$motif_norm != "CNG")
+total_prev <- subset(total, total$motif_norm != "CNG")
 
 #while both inheritances are possible... they're more AD, so, we use that here
-total <- total %>%
+total_prev <- total %>%
   mutate(Inheritance = ifelse(Id == 'ATXN2', 'AD', Inheritance))
-total <- total %>%
+total_prev <- total %>%
   mutate(Inheritance = ifelse(Id == 'PABPN1', 'AD', Inheritance))
 
-AD_total <- subset(total, Inheritance == "AD")
+AD_total <- subset(total_prev, Inheritance == "AD")
 AD_Allele2_greater_than_path_min <- (AD_total$Allele2LowerBound >= AD_total$pathogenic_min) & 
   (AD_total$motif_norm == AD_total$repeatunit_path_normalized)
 AD_result1 <- aggregate(cbind(AD_Allele2_greater_than_path_min), by = list(AD_total$Id), FUN = sum, na.rm=TRUE)
@@ -1021,7 +741,7 @@ AD_result2 <- aggregate(cbind(AD_total$Allele2), by = list(AD_total$Id, AD_total
 AD_result <- merge(AD_result1, AD_result2)
 
 
-AR_total <- subset(total, Inheritance == "AR")
+AR_total <- subset(total_prev, Inheritance == "AR")
 # path result if we're NOT doing contraction for VWA1
 AR_total <- AR_total %>%
   mutate(pathogenic_min = ifelse(Id == "VWA1", 3, pathogenic_min))
@@ -1040,7 +760,7 @@ AR_result3 <- aggregate(cbind(AR_total$Allele2), by = list(AR_total$Id, AR_total
 AR_result <- merge(AR_result1, AR_result2)
 AR_result <- merge(AR_result, AR_result3)
 
-XR_XX_total_sex <- subset(total, Inheritance == "XR" & Sex == "XX")
+XR_XX_total_sex <- subset(total_prev, Inheritance == "XR" & Sex == "XX")
 XR_XX_Allele21_greater_than_path_min <- (XR_XX_total_sex$Allele1LowerBound >= XR_XX_total_sex$pathogenic_min) & 
   (XR_XX_total_sex$Allele2LowerBound >= XR_XX_total_sex$pathogenic_min) & 
   (XR_XX_total_sex$motif_norm == XR_XX_total_sex$repeatunit_path_normalized)
@@ -1053,7 +773,7 @@ XR_XX_result3 <- aggregate(cbind(XR_XX_total_sex$Allele1), by = list(XR_XX_total
 XR_XX_result <- merge(XR_XX_result1, XR_XX_result2)
 XR_XX_result <- merge(XR_XX_result, XR_XX_result3)
 
-XR_XY_total_sex <- subset(total, Inheritance == "XR" & Sex == "XY")
+XR_XY_total_sex <- subset(total_prev, Inheritance == "XR" & Sex == "XY")
 XR_XY_Allele1_greater_than_path_min <- (XR_XY_total_sex$Allele1LowerBound >= XR_XY_total_sex$pathogenic_min) &
   (XR_XY_total_sex$repeatunit_path_normalized == XR_XY_total_sex$motif_norm)
 XR_XY_Allele2_greater_than_path_min <- XR_XY_total_sex$Allele2LowerBound >= XR_XY_total_sex$pathogenic_min &
@@ -1063,7 +783,7 @@ XR_XY_result1 <- aggregate(cbind(XR_XY_Allele_greater_than_path_min), by = list(
 XR_XY_result2 <- aggregate(cbind(XR_XY_total_sex$Allele1), by = list(XR_XY_total_sex$Id, XR_XY_total_sex$repeatunit_path_normalized, XR_XY_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
 XR_XY_result <- merge(XR_XY_result1, XR_XY_result2)
 
-XD_total_sex <- subset(total, Inheritance == "XD")
+XD_total_sex <- subset(total_prev, Inheritance == "XD")
 XD_Allele_greater_than_path_min <- ((XD_total_sex$Allele1LowerBound >= XD_total_sex$pathogenic_min) | 
                                       (XD_total_sex$Allele2LowerBound >= XD_total_sex$pathogenic_min)) & 
   (XD_total_sex$motif_norm == XD_total_sex$repeatunit_path_normalized)
@@ -1094,7 +814,6 @@ combined_df$carrier_percent <- combined_df$Carrier_Count/combined_df$Total_Loci*
 
 combined_df <- calculate_ci(combined_df, successes_col = "Pathogenic_Count", trials_col = "Total_Loci", conf_level = 0.95)
 combined_df <- calculate_ci(combined_df, successes_col = "Carrier_Count", trials_col = "Total_Loci", conf_level = 0.95)
-
 
 
 combined_df <- combined_df %>%
