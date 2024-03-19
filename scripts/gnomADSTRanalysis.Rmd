@@ -148,11 +148,8 @@ normalise_str <- function(in_dna) {
     }
   }
   
-  return(result)
+  return(paste(result, collapse = ","))  # Combine result elements with commas
 }
-
-# normalise_str("TAAA")
-
 
 # toy <- gnomADSTRcalls[sample(nrow(gnomADSTRcalls), 20), ]
 # 
