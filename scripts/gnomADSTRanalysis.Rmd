@@ -730,14 +730,18 @@ t.test(PCR_result$`Allele2>pathogenic_min` ~ PcrProtocol, data = PCR_result)
 total_prev <- subset(total, total$motif_norm != "CNG")
 
 #while both inheritances are possible... they're more AD, so, we use that here
-total_prev <- total %>%
+total_prev <- total_prev %>%
   mutate(Inheritance = ifelse(Id == 'ATXN2', 'AD', Inheritance))
-total_prev <- total %>%
+total_prev <- total_prev %>%
   mutate(Inheritance = ifelse(Id == 'PABPN1', 'AD', Inheritance))
+
+total_prev <- total_prev %>%
+  mutate(repeatunit_path_normalized = ifelse(repeatunit_path_normalized == 'CNG', 'CAG,CCG,CGG,CTG', repeatunit_path_normalized))
+total_prev$repeatunit_path_normalized_list <- strsplit(as.character(total_prev$repeatunit_path_normalized), ",")
 
 AD_total <- subset(total_prev, Inheritance == "AD")
 AD_Allele2_greater_than_path_min <- (AD_total$Allele2LowerBound >= AD_total$pathogenic_min) & 
-  (AD_total$motif_norm == AD_total$repeatunit_path_normalized)
+  (AD_total$motif_norm %in% AD_total$repeatunit_path_normalized_list)
 AD_result1 <- aggregate(cbind(AD_Allele2_greater_than_path_min), by = list(AD_total$Id), FUN = sum, na.rm=TRUE)
 AD_result2 <- aggregate(cbind(AD_total$Allele2), by = list(AD_total$Id, AD_total$repeatunit_path_normalized, AD_total$Inheritance), FUN = function(x) sum(!is.na(x)))
 AD_result <- merge(AD_result1, AD_result2)
@@ -748,10 +752,12 @@ AR_total <- subset(total_prev, Inheritance == "AR")
 AR_total <- AR_total %>%
   mutate(pathogenic_min = ifelse(Id == "VWA1", 3, pathogenic_min))
 AR_Allele21_greater_than_path_min <- (AR_total$Allele2LowerBound >= AR_total$pathogenic_min) & 
-  (AR_total$motif_norm == AR_total$repeatunit_path_normalized) & (AR_total$Allele1LowerBound >= AR_total$pathogenic_min) 
+  (AR_total$motif_norm %in% AR_total$repeatunit_path_normalized_list) & 
+  (AR_total$motif_norm_small %in% AR_total$repeatunit_path_normalized_list) &
+  (AR_total$Allele1LowerBound >= AR_total$pathogenic_min) 
 AR_Allele2_greater_than_path_min <- (AR_total$Allele2LowerBound >= AR_total$pathogenic_min) & 
   (AR_total$Allele1LowerBound < AR_total$pathogenic_min) & 
-  (AR_total$motif_norm == AR_total$repeatunit_path_normalized) 
+  (AR_total$motif_norm %in% AR_total$repeatunit_path_normalized) 
 AR_result1 <- aggregate(cbind(AR_Allele21_greater_than_path_min), by = list(AR_total$Id), FUN = sum, na.rm=TRUE)
 ### pathogenic result for VWA1, which is deviation, not contraction
 #AR_result1$AR_Allele21_greater_than_path_min[AR_result1$Group.1 == "VWA1"] <- sum(subset(AR_total, Id == "VWA1" & Allele1 != 2 & Allele2 != 2 & (AR_total$motif_norm == AR_total$repeatunit_path_normalized))$Id == "VWA1")
@@ -765,10 +771,11 @@ AR_result <- merge(AR_result, AR_result3)
 XR_XX_total_sex <- subset(total_prev, Inheritance == "XR" & Sex == "XX")
 XR_XX_Allele21_greater_than_path_min <- (XR_XX_total_sex$Allele1LowerBound >= XR_XX_total_sex$pathogenic_min) & 
   (XR_XX_total_sex$Allele2LowerBound >= XR_XX_total_sex$pathogenic_min) & 
-  (XR_XX_total_sex$motif_norm == XR_XX_total_sex$repeatunit_path_normalized)
+  (XR_XX_total_sex$motif_norm %in% XR_XX_total_sex$repeatunit_path_normalized) &
+  (XR_XX_total_sex$motif_norm_small %in% XR_XX_total_sex$repeatunit_path_normalized)
 XR_XX_Allele2_greater_than_path_min <- (XR_XX_total_sex$Allele1LowerBound < XR_XX_total_sex$pathogenic_min) & 
   (XR_XX_total_sex$Allele2LowerBound >= XR_XX_total_sex$pathogenic_min) & 
-  (XR_XX_total_sex$motif_norm == XR_XX_total_sex$repeatunit_path_normalized)
+  (XR_XX_total_sex$motif_norm %in% XR_XX_total_sex$repeatunit_path_normalized)
 XR_XX_result1 <- aggregate(cbind(XR_XX_Allele21_greater_than_path_min), by = list(XR_XX_total_sex$Id), FUN = sum, na.rm=TRUE)
 XR_XX_result2 <- aggregate(cbind(XR_XX_Allele2_greater_than_path_min), by = list(XR_XX_total_sex$Id), FUN = sum, na.rm=TRUE)
 XR_XX_result3 <- aggregate(cbind(XR_XX_total_sex$Allele1), by = list(XR_XX_total_sex$Id, XR_XX_total_sex$repeatunit_path_normalized, XR_XX_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
@@ -777,18 +784,19 @@ XR_XX_result <- merge(XR_XX_result, XR_XX_result3)
 
 XR_XY_total_sex <- subset(total_prev, Inheritance == "XR" & Sex == "XY")
 XR_XY_Allele1_greater_than_path_min <- (XR_XY_total_sex$Allele1LowerBound >= XR_XY_total_sex$pathogenic_min) &
-  (XR_XY_total_sex$repeatunit_path_normalized == XR_XY_total_sex$motif_norm)
+  (XR_XY_total_sex$motif_norm %in% XR_XY_total_sex$repeatunit_path_normalized_list)
 XR_XY_Allele2_greater_than_path_min <- XR_XY_total_sex$Allele2LowerBound >= XR_XY_total_sex$pathogenic_min &
-  (XR_XY_total_sex$repeatunit_path_normalized == XR_XY_total_sex$motif_norm)
+  (XR_XY_total_sex$motif_norm %in% XR_XY_total_sex$repeatunit_path_normalized_list)
 XR_XY_Allele_greater_than_path_min <- XR_XY_Allele1_greater_than_path_min | XR_XY_Allele2_greater_than_path_min
 XR_XY_result1 <- aggregate(cbind(XR_XY_Allele_greater_than_path_min), by = list(XR_XY_total_sex$Id), FUN = sum, na.rm=TRUE)
 XR_XY_result2 <- aggregate(cbind(XR_XY_total_sex$Allele1), by = list(XR_XY_total_sex$Id, XR_XY_total_sex$repeatunit_path_normalized, XR_XY_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
 XR_XY_result <- merge(XR_XY_result1, XR_XY_result2)
 
 XD_total_sex <- subset(total_prev, Inheritance == "XD")
-XD_Allele_greater_than_path_min <- ((XD_total_sex$Allele1LowerBound >= XD_total_sex$pathogenic_min) | 
-                                      (XD_total_sex$Allele2LowerBound >= XD_total_sex$pathogenic_min)) & 
-  (XD_total_sex$motif_norm == XD_total_sex$repeatunit_path_normalized)
+XD_Allele_greater_than_path_min <- ((XD_total_sex$Allele1LowerBound >= XD_total_sex$pathogenic_min) &
+                                      (XD_total_sex$motif_norm_small %in% XD_total_sex$repeatunit_path_normalized_list)) | 
+                                      ((XD_total_sex$Allele2LowerBound >= XD_total_sex$pathogenic_min)) & 
+  (XD_total_sex$motif_norm %in% XD_total_sex$repeatunit_path_normalized_list)
 XD_result1 <- aggregate(cbind(XD_Allele_greater_than_path_min), by = list(XD_total_sex$Id), FUN = sum, na.rm=TRUE)
 XD_result2 <- aggregate(cbind(XD_total_sex$Allele1), by = list(XD_total_sex$Id, XD_total_sex$repeatunit_path_normalized, XD_total_sex$Inheritance), FUN = function(x) sum(!is.na(x)))
 XD_result <- merge(XD_result1, XD_result2)
