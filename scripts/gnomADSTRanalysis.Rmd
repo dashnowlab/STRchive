@@ -165,9 +165,8 @@ normalise_call <- function(in_dna) {
   all_possible <- sapply(0:(nchar(in_dna)-1), function(i) paste0(substr(in_dna, i+1, nchar(in_dna)), substr(in_dna, 1, i)))
   # Sort permutations alphabetically and return the first
   return(sort(all_possible)[1])
-}
+  }
 
-gnomADSTRcalls$motif_norm <- sapply(gnomADSTRcalls$MotifLargest, function(x) normalise_call(as.character(x)))
 
 
 ```
@@ -217,6 +216,9 @@ gnomADSTRcalls$AlleleLargest <- pmax(gnomADSTRcalls$Allele1, gnomADSTRcalls$Alle
 
 
 total <- merge(STR_table_clean,gnomADSTRcalls,by="Id")
+
+total$motif_norm <- sapply(total$MotifLargest, function(x) normalise_call(as.character(x)))
+total$motif_norm_small <- sapply(total$Allele1Motif, function(x) normalise_call(as.character(x)))
 
 ```
 
