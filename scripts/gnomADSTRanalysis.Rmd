@@ -833,17 +833,17 @@ combined_df <- combined_df %>%
 
 ```{r comparison plot}
 
-combined_df <- left_join(combined_df, STR_table %>% dplyr::select(gene, prevalence), by = "gene") 
+combined_df <- left_join(combined_df, STR_table %>% dplyr::select(gene, Prevalence), by = "gene") 
 
 
 #where we don't know or have sex-specific prevalence
-combined_df["prevalence"][combined_df["prevalence"] == ''] <- NA
-combined_df$prevalence[combined_df$gene == "XY_AFF2"] <- 2/50000
-combined_df$prevalence[combined_df$gene == "XY_AR"] <-  1/30000
-combined_df$prevalence[combined_df$gene == "XY_DMD"] <- 4.8/100000
+combined_df["Prevalence"][combined_df["Prevalence"] == ''] <- NA
+combined_df$Prevalence[combined_df$gene == "XY_AFF2"] <- 2/50000
+combined_df$Prevalence[combined_df$gene == "XY_AR"] <-  1/30000
+combined_df$Prevalence[combined_df$gene == "XY_DMD"] <- 4.8/100000
 
 
-combined_df$prevalence_dec <- sapply(combined_df$prevalence, function(fraction) eval(parse(text = fraction)))
+combined_df$prevalence_dec <- sapply(combined_df$Prevalence, function(fraction) eval(parse(text = fraction)))
 
 ```
 
@@ -1584,7 +1584,7 @@ ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
 
 ```{r roadblock plot}
 color_labels <- c('black', 'black', 'black', 'black', 'black', 
-                  'black', 'black', 'black', 'black', 'blue', 'black', 'black', 'black', 'black', 'black', 
+                  'black', 'black', 'black', 'blue','black', 'black', 'black', 'black', 'black', 'black', 
                   'purple', 'lightpink', 'orange')
 
 ggplot(combined_df, aes(x = reorder(gene, pathogenic_percent), y = pathogenic_percent)) +
@@ -1651,11 +1651,17 @@ cowplot::plot_grid(iris1, iris2, labels = "AUTO")
 ```
 
 
-```{r, allelic distribution}
+```{r, allelic distribution, fig.height = 15}
 
 #motif subset
-total_motif_match <- total %>%
-  filter(motif_norm == repeatunit_path_normalized)
+total_motif_match <- total_prev %>%
+  filter(total_prev$motif_norm %in% total_prev$repeatunit_path_normalized_list)
+
+total_motif_match$Id <- ifelse(total_motif_match$Inheritance == "XR", paste0(total_motif_match$Sex, "_", total_motif_match$Id), total_motif_match$Id)
+
+# Reorder levels of Id based on pathogenic_percent
+total_motif_match$Id <- as.character(total_motif_match$Id)
+combined_df$gene <- as.character(combined_df$gene)
 
 total_motif_match <- total_motif_match %>%
   mutate(normal_min = ifelse(Id == 'PRNP', 3.8, normal_min))
@@ -1679,14 +1685,9 @@ total_motif_match <- total_motif_match %>%
 total_motif_match <- total_motif_match %>%
   mutate(pathogenic_max = ifelse(Id == 'NUTM2B-AS1', 705, pathogenic_max))
 
-total_motif_match$Id <- ifelse(total_motif_match$Inheritance == "XR", paste0(total_motif_match$Sex, "_", total_motif_match$Id), total_motif_match$Id)
-
-# Reorder levels of Id based on pathogenic_percent
-total_motif_match$Id <- as.character(total_motif_match$Id)
-combined_df$gene <- as.character(combined_df$gene)
-
 total_motif_match <- total_motif_match %>%
   rename(gene = Id)
+
 
 total_motif_match <- merge(total_motif_match, combined_df[, c("gene", "pathogenic_percent", "carrier_percent")],
                    by = "gene", all.x = TRUE)
