@@ -1903,6 +1903,13 @@ motif_counts <- motifs_by_allele %>%
   reframe(MotifCount = n()) %>%
   pivot_wider(names_from = motif, values_from = MotifCount, values_fill = 0)
 
+motif_counts_table <- motif_counts %>%
+  mutate(MotifCount = as.character(MotifCount),  # Convert MotifCount to character
+         MotifCount = paste(motif, MotifCount, sep = ": ")) %>%
+  group_by(Id) %>%
+  summarise(MotifCount = paste(MotifCount, collapse = ", ")) %>%
+  ungroup()
+
 #get unique motif counts
 unique_motif_counts <- motifs_by_allele %>%
   group_by(Id) %>%
