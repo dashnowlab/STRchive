@@ -1851,3 +1851,152 @@ ggplot(total_motif_match[total_motif_match$Inheritance == 'XD', ], aes(x = facto
 
 ```
 
+
+
+
+
+```{r unique motif counts}
+
+total_prev <- subset(total, total$motif_norm != "CNG")
+
+#let's get the motif information
+STR_table_motif <- STR_table[c("gene", "benign_motif_reference_orientation",
+                               "unknown_motif_reference_orientation")]
+
+
+#normalize motifs
+STR_table_motif$repeatunit_ref_normalized <- sapply(STR_table$reference_motif_reference_orientation, function(x) normalise_str(as.character(x)))
+STR_table_motif$repeatunit_path_normalized <- sapply(STR_table$pathogenic_motif_reference_orientation, function(x) normalise_str(as.character(x)))
+STR_table_motif$benign_motif_reference_orientation <- sapply(STR_table$benign_motif_reference_orientation, function(x) normalise_str(as.character(x)))
+STR_table_motif$unknown_motif_reference_orientation <- sapply(STR_table$unknown_motif_reference_orientation, function(x) normalise_str(as.character(x)))
+
+
+# account for CNG ambiguity
+STR_table_motif <- STR_table_motif %>%
+  mutate(repeatunit_path_normalized = ifelse(repeatunit_path_normalized == 'CNG', 'CAG,CCG,CGG,CTG', repeatunit_path_normalized))
+STR_table_motif <- STR_table_motif %>%
+  mutate(repeatunit_ref_normalized = ifelse(repeatunit_ref_normalized == 'CNG', 'CAG,CCG,CGG,CTG', repeatunit_ref_normalized))
+
+#get all motif counts
+#sometimes motif_norm (larger allele) and motif_norm_small aren't the same
+mismatched_rows <- total_prev %>%
+  filter(motif_norm != motif_norm_small)
+
+mismatched_summary <- total_prev %>%
+  filter(motif_norm != motif_norm_small) %>%
+  group_by(Id, motif_norm, motif_norm_small) %>%
+  reframe(count = n())
+
+#so, lets count both
+total_prev_with_row_number <- total_prev %>%
+  mutate(row_number = row_number())
+
+# Convert motif_norm and motif_norm_small to separate rows, keeping only Id, row number, and the motifs
+#you don't need row number but it's a good sanity check I think
+motifs_by_allele <- total_prev_with_row_number %>%
+  select(Id, motif_norm, motif_norm_small, row_number) %>%
+  pivot_longer(cols = c(motif_norm, motif_norm_small), names_to = "motif_type", values_to = "motif")
+
+# Count unique motifs by grouping by motif and Id
+motif_counts <- motifs_by_allele %>%
+  group_by(Id, motif) %>%
+  reframe(MotifCount = n()) %>%
+  pivot_wider(names_from = motif, values_from = MotifCount, values_fill = 0)
+
+#get unique motif counts
+unique_motif_counts <- motifs_by_allele %>%
+  group_by(Id) %>%
+  reframe(UniqueMotifCount = n_distinct(motif),
+          motif = paste0("", paste(unique(motif), collapse = ","), ""))
+
+# more than 1 is more interesting
+unique_motif_counts <- unique_motif_counts %>%
+  filter(UniqueMotifCount != 1)
+
+unique_motif_counts_long <- unique_motif_counts %>%
+  mutate(motif = strsplit(as.character(motif), ",")) %>%
+  unnest(motif)
+
+unique_motif_counts_long <- unique_motif_counts_long %>%
+  rename(gene = Id)
+
+##merge it
+unique_motif_counts_long <- merge(unique_motif_counts_long, STR_table_motif)
+
+
+unique_motif_counts_long$classification <- apply(unique_motif_counts_long, 1, function(row) {
+  m <- row['motif']
+  if (any(m == unlist(strsplit(row['benign_motif_reference_orientation'], ',')))) {
+    return("benign")
+  } else if (any(m == unlist(strsplit(row['unknown_motif_reference_orientation'], ',')))) {
+    return("unknown")
+  } else if (any(m == unlist(strsplit(row['repeatunit_path_normalized'], ',')))) {
+    return("path")
+  } else if (any(m == unlist(strsplit(row['repeatunit_ref_normalized'], ',')))) {
+    return("ref")
+  } else {
+    return("NEW_MOTIF?")
+  }
+})
+
+
+# Reorder levels of classification factor
+unique_motif_counts_long$classification <- factor(unique_motif_counts_long$classification,
+                                                  levels = c("path", "unknown", "benign", "ref"))
+
+# Plot with reordered levels
+ggplot(unique_motif_counts_long, aes(x = gene, fill = classification)) +
+  geom_bar() +
+  labs(x = "Gene", y = "Unique Motif Count", fill = "Classification") +
+  theme_minimal() +
+  scale_fill_manual(values = c("benign" = "#00c7d5", "ref" = "darkblue", "unknown" = "lightgray", "path" = "#FD6853"),
+                    labels = c("benign"= "Benign",
+                               "ref" = "Reference",
+                               "unknown" = "Unknown",
+                               "path" = "Pathogenic"))
+
+
+
+
+```
+
+
+``` {r rfc1}
+ RFC1_motif_counts <- subset(motifs_by_allele, motifs_by_allele$Id == 'RFC1')
+
+ RFC1_motif_counts <- RFC1_motif_counts %>%
+   rename(gene = Id)
+
+
+ ggplot(RFC1_motif_counts_motif_info, aes(x=motif, fill = classification)) +
+   geom_histogram(stat = "count") + scale_y_log10() +
+   labs(title = "Motif Counts for RFC1", x = "Motif", y = "Frequency") +
+   theme_minimal() +
+   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),  # Adjust size as needed
+         axis.text.y = element_text(size = 14),  # Adjust size as needed
+         axis.title.y = element_text(size = 16)) +
+   scale_fill_manual(values = c("BENIGN" = "#00c7d5", "REFERENCE" = "black", "UNKNOWN" = "lightgray", "PATHOGENIC" = "#FD6853"),
+                     labels = c("BENIGN" = "Benign",
+                                "REFERENCE" = "Reference",
+                                "UNKNOWN" = "Unknown",
+                                "PATHOGENIC" = "Pathogenic"))
+
+
+ ggplot(RFC1_motif_counts_motif_info, aes(x=motif, fill = classification)) +
+   geom_histogram(stat = "count") +
+   labs(title = "Motif Counts for RFC1", x = "Motif", y = "Frequency") +
+   theme_minimal() +
+   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),  # Adjust size as needed
+         axis.text.y = element_text(size = 14),  # Adjust size as needed
+         axis.title.y = element_text(size = 16)) +
+   scale_fill_manual(values = c("BENIGN" = "#00c7d5", "REFERENCE" = "black", "UNKNOWN" = "lightgray", "PATHOGENIC" = "#FD6853"),
+                     labels = c("BENIGN" = "Benign",
+                                "REFERENCE" = "Reference",
+                                "UNKNOWN" = "Unknown",
+                                "PATHOGENIC" = "Pathogenic"))
+
+
+
+
+```
+
