@@ -1967,6 +1967,28 @@ ggplot(unique_motif_counts_long, aes(x = gene, fill = classification)) +
  RFC1_motif_counts <- RFC1_motif_counts %>%
    rename(gene = Id)
 
+ RFC1_motif_counts_motif_info <- merge(RFC1_motif_counts, STR_table_motif, by = "gene")
+ 
+ 
+ RFC1_motif_counts_motif_info$classification <- apply(RFC1_motif_counts_motif_info, 1, function(row) {
+  m <- row['motif']
+  if (any(m == unlist(strsplit(row['benign_motif_reference_orientation'], ',')))) {
+    return("benign")
+  } else if (any(m == unlist(strsplit(row['unknown_motif_reference_orientation'], ',')))) {
+    return("unknown")
+  } else if (any(m == unlist(strsplit(row['repeatunit_path_normalized'], ',')))) {
+    return("path")
+  } else if (any(m == unlist(strsplit(row['repeatunit_ref_normalized'], ',')))) {
+    return("ref")
+  } else {
+    return("NEW_MOTIF?")
+  }
+})
+
+
+ # Reorder levels of classification factor
+RFC1_motif_counts_motif_info$classification <- factor(RFC1_motif_counts_motif_info$classification,
+                                                  levels = c("path", "unknown", "benign", "ref"))
 
  ggplot(RFC1_motif_counts_motif_info, aes(x=motif, fill = classification)) +
    geom_histogram(stat = "count") + scale_y_log10() +
@@ -1975,11 +1997,12 @@ ggplot(unique_motif_counts_long, aes(x = gene, fill = classification)) +
    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),  # Adjust size as needed
          axis.text.y = element_text(size = 14),  # Adjust size as needed
          axis.title.y = element_text(size = 16)) +
-   scale_fill_manual(values = c("BENIGN" = "#00c7d5", "REFERENCE" = "black", "UNKNOWN" = "lightgray", "PATHOGENIC" = "#FD6853"),
-                     labels = c("BENIGN" = "Benign",
-                                "REFERENCE" = "Reference",
-                                "UNKNOWN" = "Unknown",
-                                "PATHOGENIC" = "Pathogenic"))
+  scale_fill_manual(values = c("benign" = "#00c7d5", "ref" = "darkblue", "unknown" = "lightgray", "path" = "#FD6853"),
+                    labels = c("benign"= "Benign",
+                               "ref" = "Reference",
+                               "unknown" = "Unknown",
+                               "path" = "Pathogenic"))
+
 
 
  ggplot(RFC1_motif_counts_motif_info, aes(x=motif, fill = classification)) +
@@ -1989,11 +2012,12 @@ ggplot(unique_motif_counts_long, aes(x = gene, fill = classification)) +
    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),  # Adjust size as needed
          axis.text.y = element_text(size = 14),  # Adjust size as needed
          axis.title.y = element_text(size = 16)) +
-   scale_fill_manual(values = c("BENIGN" = "#00c7d5", "REFERENCE" = "black", "UNKNOWN" = "lightgray", "PATHOGENIC" = "#FD6853"),
-                     labels = c("BENIGN" = "Benign",
-                                "REFERENCE" = "Reference",
-                                "UNKNOWN" = "Unknown",
-                                "PATHOGENIC" = "Pathogenic"))
+  scale_fill_manual(values = c("benign" = "#00c7d5", "ref" = "darkblue", "unknown" = "lightgray", "path" = "#FD6853"),
+                    labels = c("benign"= "Benign",
+                               "ref" = "Reference",
+                               "unknown" = "Unknown",
+                               "path" = "Pathogenic"))
+
 
 
 
