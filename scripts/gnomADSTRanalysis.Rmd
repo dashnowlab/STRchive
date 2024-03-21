@@ -1543,12 +1543,23 @@ ggplot(subset(STR_table_evidence, STR_table_evidence$ind_obs == "> 100" & !is.na
 ### Pie charts
 ```{r pie charts}
 # Update the type column based on the Mechanism value (handling case sensitivity, whitespace, and NA values)
-STR_table$type <- ifelse(tolower(trimws(STR_table$Mechanism)) == "polyglutamine", "Coding:Polyglutamine",
-                  ifelse(tolower(trimws(STR_table$Mechanism)) == "polyalanine", "Coding:Polyalanine", STR_table$type))
+STR_table$type2 <- ifelse(tolower(trimws(STR_table$Mechanism)) == "polyglutamine", "PolyQ",
+                  ifelse(tolower(trimws(STR_table$Mechanism)) == "polyalanine", "PolyA", STR_table$type))
 
+STR_table <- STR_table %>%
+  mutate(type2 = ifelse(gene == 'NIPA1', 'PolyA', type2))
+
+STR_table <- STR_table %>%
+  mutate(type2 = ifelse(gene == 'POLG', 'PolyQ', type2))
+
+STR_table <- STR_table %>%
+  mutate(type2 = ifelse(gene == 'PRDM12', 'PolyA', type2))
+
+STR_table <- STR_table %>%
+  mutate(type2 = ifelse(gene == 'THAP11', 'PolyQ', type2))
 
 # Create a summary of the data by type
-pie_data <- table(STR_table$type)
+pie_data <- table(STR_table$type2)
 
 # Plot the pie chart with labels
 pie(pie_data, main = "Pie Chart of STR_table by Type", labels = paste(names(pie_data), " ", pie_data))
@@ -1559,15 +1570,60 @@ pie(pie_data, main = "STRchive by Inheritance", labels = paste(names(pie_data), 
 
 ```
 
+```{r coding breakdown}
+
+STR_table_coding <- subset(STR_table, type2 == "Coding" | type2 == "PolyA" | type2 == "PolyQ")
+
+STR_table_coding <- STR_table_coding %>%
+  mutate(type2 = ifelse(gene == 'ZFHX3', 'PolyG', type2))
+
+STR_table_coding <- STR_table_coding %>%
+  mutate(type2 = ifelse(gene == 'COMP', 'PolyD', type2))
+
+STR_table_coding <- STR_table_coding %>%
+  mutate(type2 = ifelse(gene == 'JPH3', 'Other', type2))
+
+STR_table_coding <- STR_table_coding %>%
+  mutate(type2 = ifelse(gene == 'PRNP', 'Other', type2))
+
+# STR_table_coding <- STR_table_coding %>%
+#   mutate(type2 = ifelse(gene == 'JPH3', 'Coding:Poly-A or PolyL', type2))
+# 
+# STR_table_coding <- STR_table_coding %>%
+#   mutate(type2 = ifelse(gene == 'PRNP', 'Coding:P, G, Q', type2))
+
+STR_table_coding <- STR_table_coding %>%
+  mutate(type2 = ifelse(gene == 'VWA1', 'Other', type2))
+
+
+pie_data <- table(STR_table_coding$type2)
+
+# Generate 5 shades of blue
+green_palette <- colorRampPalette(c("lightgreen", "darkgreen"))(5)
+
+
+# Plot the pie chart with labels
+pie(pie_data, col = green_palette, main = "Coding Subtypes", labels = paste(names(pie_data),"(",pie_data,")"))
+
+```
+
 
 
 ### Type and Motif Length
 ```{r type and motif length}
+library(RColorBrewer)
+
+# Generate 5 shades of blue
+blue_palette <- colorRampPalette(c("lightblue", "darkblue"))(5)
+
+
 # Count the number of characters in pathogenic_motif_reference_orientation
 STR_table$length_characters <- str_length(STR_table$pathogenic_motif_reference_orientation)
 
 STR_table$length_characters[STR_table$length_characters > 6] <- ">6"
 
+STR_table <- STR_table %>%
+  mutate(type = ifelse(gene == 'POLG', 'Coding', type))
 
 # Plot
 ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
@@ -1575,8 +1631,16 @@ ggplot(STR_table, aes(x = type, fill = as.character(length_characters))) +
   labs(title = "STR Loci Regions and Motif Length",
        x = "Type",
        y = "Count") +
-  scale_fill_brewer(palette = "Pastel3", name = "Length of Pathogenic Motif") +
+  scale_fill_manual(values = blue_palette, name = "Motif Length") +
   theme_minimal()
+
+
+# ggplot(subset(STR_table_coding, STR_table_coding$type == "Coding"), aes(x = type2, fill = as.character(length_characters))) +
+#   geom_bar() +
+#   labs(title = "Coding Type", x = "Subtypes",
+#        y = "Count") +
+#   theme(axis.text.x=element_text(angle = -90, hjust = 0)) +
+#   theme_minimal()
 
 
 ```
