@@ -1967,12 +1967,12 @@ motif_counts <- motifs_by_allele %>%
   reframe(MotifCount = n()) %>%
   pivot_wider(names_from = motif, values_from = MotifCount, values_fill = 0)
 
-motif_counts_table <- motif_counts %>%
-  mutate(MotifCount = as.character(MotifCount),  # Convert MotifCount to character
-         MotifCount = paste(motif, MotifCount, sep = ": ")) %>%
-  group_by(Id) %>%
-  summarise(MotifCount = paste(MotifCount, collapse = ", ")) %>%
-  ungroup()
+# motif_counts_table <- motif_counts %>%
+#   mutate(MotifCount = as.character(MotifCount),  # Convert MotifCount to character
+#          MotifCount = paste(motif, MotifCount, sep = ": ")) %>%
+#   group_by(Id) %>%
+#   summarise(MotifCount = paste(MotifCount, collapse = ", ")) %>%
+#   ungroup()
 
 #get unique motif counts
 unique_motif_counts <- motifs_by_allele %>%
@@ -1997,14 +1997,14 @@ unique_motif_counts_long <- merge(unique_motif_counts_long, STR_table_motif)
 
 unique_motif_counts_long$classification <- apply(unique_motif_counts_long, 1, function(row) {
   m <- row['motif']
-  if (any(m == unlist(strsplit(row['benign_motif_reference_orientation'], ',')))) {
-    return("benign")
+  if (any(m == unlist(strsplit(row['repeatunit_ref_normalized'], ',')))) {
+    return("ref")
   } else if (any(m == unlist(strsplit(row['unknown_motif_reference_orientation'], ',')))) {
     return("unknown")
   } else if (any(m == unlist(strsplit(row['repeatunit_path_normalized'], ',')))) {
     return("path")
-  } else if (any(m == unlist(strsplit(row['repeatunit_ref_normalized'], ',')))) {
-    return("ref")
+  } else if (any(m == unlist(strsplit(row['benign_motif_reference_orientation'], ',')))) {
+    return("benign")
   } else {
     return("NEW_MOTIF?")
   }
