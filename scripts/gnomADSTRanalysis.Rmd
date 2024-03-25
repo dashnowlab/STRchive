@@ -2043,18 +2043,19 @@ ggplot(unique_motif_counts_long, aes(x = gene, fill = classification)) +
  
  RFC1_motif_counts_motif_info$classification <- apply(RFC1_motif_counts_motif_info, 1, function(row) {
   m <- row['motif']
-  if (any(m == unlist(strsplit(row['benign_motif_reference_orientation'], ',')))) {
-    return("benign")
+  if (any(m == unlist(strsplit(row['repeatunit_ref_normalized'], ',')))) {
+    return("ref")
   } else if (any(m == unlist(strsplit(row['unknown_motif_reference_orientation'], ',')))) {
     return("unknown")
   } else if (any(m == unlist(strsplit(row['repeatunit_path_normalized'], ',')))) {
     return("path")
-  } else if (any(m == unlist(strsplit(row['repeatunit_ref_normalized'], ',')))) {
-    return("ref")
+  } else if (any(m == unlist(strsplit(row['benign_motif_reference_orientation'], ',')))) {
+    return("benign")
   } else {
     return("NEW_MOTIF?")
   }
 })
+
 
 
  # Reorder levels of classification factor
