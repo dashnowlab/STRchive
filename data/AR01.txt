@@ -116,8 +116,9 @@ PMID- 38171945
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240206
-LR  - 20240302
+LR  - 20240402
 IS  - 1938-0666 (Electronic)
+IS  - 1526-8209 (Print)
 IS  - 1526-8209 (Linking)
 VI  - 24
 IP  - 2
@@ -179,6 +180,7 @@ FAU - Crosby, Ross D
 AU  - Crosby RD
 AD  - Sanford Center for Biobehavioral Research, Fargo, ND.
 LA  - eng
+GR  - U54 GM128729/GM/NIGMS NIH HHS/United States
 PT  - Comparative Study
 PT  - Journal Article
 DEP - 20231124
@@ -198,6 +200,8 @@ MH  - Retrospective Studies
 MH  - United States/epidemiology
 MH  - White/statistics & numerical data
 MH  - Medically Uninsured/ethnology/statistics & numerical data
+PMC - PMC10984638
+MID - NIHMS1958228
 OTO - NOTNLM
 OT  - Disparities
 OT  - National Cancer Database
@@ -206,10 +210,12 @@ COIS- Disclosure Ross D. Crosby is a paid statistical consultant for Health Outc
       interest.
 EDAT- 2024/01/04 11:43
 MHDA- 2024/02/06 06:42
+PMCR- 2025/02/01
 CRDT- 2024/01/03 21:53
 PHST- 2023/05/22 00:00 [received]
 PHST- 2023/09/26 00:00 [revised]
 PHST- 2023/11/20 00:00 [accepted]
+PHST- 2025/02/01 00:00 [pmc-release]
 PHST- 2024/02/06 06:42 [medline]
 PHST- 2024/01/04 11:43 [pubmed]
 PHST- 2024/01/03 21:53 [entrez]
@@ -488,12 +494,14 @@ OT  - Polycystic ovary syndrome
 COIS- The authors declare no competing interests.
 EDAT- 2023/11/08 06:42
 MHDA- 2023/11/09 06:42
+PMCR- 2023/11/07
 CRDT- 2023/11/08 00:01
 PHST- 2023/07/10 00:00 [received]
 PHST- 2023/10/05 00:00 [accepted]
 PHST- 2023/11/09 06:42 [medline]
 PHST- 2023/11/08 06:42 [pubmed]
 PHST- 2023/11/08 00:01 [entrez]
+PHST- 2023/11/07 00:00 [pmc-release]
 AID - 10.1186/s13048-023-01295-y [pii]
 AID - 1295 [pii]
 AID - 10.1186/s13048-023-01295-y [doi]
@@ -934,12 +942,14 @@ PMC - PMC10239133
 COIS- The authors have nothing to declare.
 EDAT- 2023/06/03 11:42
 MHDA- 2023/06/05 06:42
+PMCR- 2023/06/02
 CRDT- 2023/06/02 23:38
 PHST- 2023/02/12 00:00 [received]
 PHST- 2023/05/11 00:00 [accepted]
 PHST- 2023/06/05 06:42 [medline]
 PHST- 2023/06/03 11:42 [pubmed]
 PHST- 2023/06/02 23:38 [entrez]
+PHST- 2023/06/02 00:00 [pmc-release]
 AID - 10.1186/s40478-023-01582-1 [pii]
 AID - 1582 [pii]
 AID - 10.1186/s40478-023-01582-1 [doi]
@@ -1484,6 +1494,7 @@ FIR - Veldink, Jan H
 IR  - Veldink JH
 EDAT- 2023/02/18 06:00
 MHDA- 2023/07/05 06:42
+PMCR- 2023/02/17
 CRDT- 2023/02/17 01:13
 PHST- 2022/07/28 00:00 [received]
 PHST- 2022/12/24 00:00 [revised]
@@ -1491,6 +1502,7 @@ PHST- 2023/01/15 00:00 [accepted]
 PHST- 2023/07/05 06:42 [medline]
 PHST- 2023/02/18 06:00 [pubmed]
 PHST- 2023/02/17 01:13 [entrez]
+PHST- 2023/02/17 00:00 [pmc-release]
 AID - 7043521 [pii]
 AID - awad050 [pii]
 AID - 10.1093/brain/awad050 [doi]
@@ -1687,11 +1699,13 @@ OT  - SBMA
 OT  - Skeletal muscle
 EDAT- 2023/01/31 06:00
 MHDA- 2023/04/25 06:42
+PMCR- 2023/01/30
 CRDT- 2023/01/30 23:15
 PHST- 2023/01/07 00:00 [accepted]
 PHST- 2023/04/25 06:42 [medline]
 PHST- 2023/01/31 06:00 [pubmed]
 PHST- 2023/01/30 23:15 [entrez]
+PHST- 2023/01/30 00:00 [pmc-release]
 AID - S1878-7479(23)00096-X [pii]
 AID - 1343 [pii]
 AID - 10.1007/s13311-023-01343-x [doi]
@@ -1795,12 +1809,14 @@ PMC - PMC9879404
 COIS- The authors have declared that no competing interests exist.
 EDAT- 2023/01/27 06:00
 MHDA- 2023/01/31 06:00
+PMCR- 2023/01/26
 CRDT- 2023/01/26 13:42
 PHST- 2022/08/10 00:00 [received]
 PHST- 2022/12/07 00:00 [accepted]
 PHST- 2023/01/26 13:42 [entrez]
 PHST- 2023/01/27 06:00 [pubmed]
 PHST- 2023/01/31 06:00 [medline]
+PHST- 2023/01/26 00:00 [pmc-release]
 AID - PONE-D-22-22440 [pii]
 AID - 10.1371/journal.pone.0279430 [doi]
 PST - epublish
@@ -2118,6 +2134,7 @@ PMC - PMC9803637
 COIS- The authors declare no competing interests.
 EDAT- 2022/12/31 06:00
 MHDA- 2023/01/04 06:00
+PMCR- 2022/12/30
 CRDT- 2022/12/30 23:12
 PHST- 2022/04/27 00:00 [received]
 PHST- 2022/12/05 00:00 [accepted]
@@ -2125,6 +2142,7 @@ PHST- 2022/11/30 00:00 [revised]
 PHST- 2022/12/30 23:12 [entrez]
 PHST- 2022/12/31 06:00 [pubmed]
 PHST- 2023/01/04 06:00 [medline]
+PHST- 2022/12/30 00:00 [pmc-release]
 AID - 10.1038/s41419-022-05494-1 [pii]
 AID - 5494 [pii]
 AID - 10.1038/s41419-022-05494-1 [doi]
@@ -2252,6 +2270,7 @@ OT  - semen quality
 COIS- The authors declare no conflict of interest for this article.
 EDAT- 2022/09/24 06:00
 MHDA- 2022/09/28 06:00
+PMCR- 2022/09/13
 CRDT- 2022/09/23 01:24
 PHST- 2022/08/12 00:00 [received]
 PHST- 2022/09/04 00:00 [revised]
@@ -2259,6 +2278,7 @@ PHST- 2022/09/09 00:00 [accepted]
 PHST- 2022/09/23 01:24 [entrez]
 PHST- 2022/09/24 06:00 [pubmed]
 PHST- 2022/09/28 06:00 [medline]
+PHST- 2022/09/13 00:00 [pmc-release]
 AID - ijms231810594 [pii]
 AID - ijms-23-10594 [pii]
 AID - 10.3390/ijms231810594 [doi]
@@ -2624,10 +2644,12 @@ OT  - surgery
 COIS- No competing financial interests exist.
 EDAT- 2022/07/26 06:00
 MHDA- 2022/12/15 06:00
+PMCR- 2022/11/30
 CRDT- 2022/07/25 08:32
 PHST- 2022/07/26 06:00 [pubmed]
 PHST- 2022/12/15 06:00 [medline]
 PHST- 2022/07/25 08:32 [entrez]
+PHST- 2022/11/30 00:00 [pmc-release]
 AID - 10.1089/neu.2022.0218 [pii]
 AID - 10.1089/neu.2022.0218 [doi]
 PST - ppublish
@@ -2859,6 +2881,7 @@ OT  - motor neuron degeneration
 COIS- The authors report no competing interests.
 EDAT- 2022/07/23 06:00
 MHDA- 2023/01/11 06:00
+PMCR- 2022/07/22
 CRDT- 2022/07/22 14:42
 PHST- 2022/03/26 00:00 [received]
 PHST- 2022/06/12 00:00 [revised]
@@ -2866,6 +2889,7 @@ PHST- 2022/07/03 00:00 [accepted]
 PHST- 2022/07/23 06:00 [pubmed]
 PHST- 2023/01/11 06:00 [medline]
 PHST- 2022/07/22 14:42 [entrez]
+PHST- 2022/07/22 00:00 [pmc-release]
 AID - 6648724 [pii]
 AID - awac269 [pii]
 AID - 10.1093/brain/awac269 [doi]
@@ -3085,12 +3109,14 @@ COIS- The authors declare that the research was conducted in the absence of any
       conflict of interest.
 EDAT- 2022/05/24 06:00
 MHDA- 2022/05/24 06:01
+PMCR- 2022/05/06
 CRDT- 2022/05/23 03:42
 PHST- 2021/11/08 00:00 [received]
 PHST- 2022/04/04 00:00 [accepted]
 PHST- 2022/05/23 03:42 [entrez]
 PHST- 2022/05/24 06:00 [pubmed]
 PHST- 2022/05/24 06:01 [medline]
+PHST- 2022/05/06 00:00 [pmc-release]
 AID - 10.3389/fneur.2022.811202 [doi]
 PST - epublish
 SO  - Front Neurol. 2022 May 6;13:811202. doi: 10.3389/fneur.2022.811202. eCollection 
@@ -3186,6 +3212,7 @@ OT  - Androgen receptor
 COIS- The authors declare that there is no conflict of interest.
 EDAT- 2022/05/17 06:00
 MHDA- 2022/05/17 06:01
+PMCR- 2022/04/21
 CRDT- 2022/05/16 03:59
 PHST- 2019/11/12 00:00 [received]
 PHST- 2021/08/15 00:00 [revised]
@@ -3193,6 +3220,7 @@ PHST- 2021/08/29 00:00 [accepted]
 PHST- 2022/05/16 03:59 [entrez]
 PHST- 2022/05/17 06:00 [pubmed]
 PHST- 2022/05/17 06:01 [medline]
+PHST- 2022/04/21 00:00 [pmc-release]
 AID - 10.18502/ijrm.v20i3.10711 [doi]
 PST - epublish
 SO  - Int J Reprod Biomed. 2022 Apr 21;20(3):195-202. doi: 10.18502/ijrm.v20i3.10711. 
@@ -3501,12 +3529,14 @@ COIS- AG received consulting fees from Besins Healthcare. The author has no othe
       competing interests declared
 EDAT- 2022/03/02 06:00
 MHDA- 2022/04/13 06:00
+PMCR- 2022/03/01
 CRDT- 2022/03/01 12:15
 PHST- 2021/10/12 00:00 [received]
 PHST- 2022/02/28 00:00 [accepted]
 PHST- 2022/03/02 06:00 [pubmed]
 PHST- 2022/04/13 06:00 [medline]
 PHST- 2022/03/01 12:15 [entrez]
+PHST- 2022/03/01 00:00 [pmc-release]
 AID - 74638 [pii]
 AID - 10.7554/eLife.74638 [doi]
 PST - epublish
@@ -3615,7 +3645,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20240207
+LR  - 20240306
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -3758,6 +3788,7 @@ GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
 GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_UU_00015/9/MRC_/Medical Research Council/United Kingdom
 GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0701075/MRC_/Medical Research Council/United Kingdom
 GR  - G0901254/MRC_/Medical Research Council/United Kingdom
@@ -4037,6 +4068,7 @@ FIR - Zarowiecki, Magdalena
 IR  - Zarowiecki M
 EDAT- 2022/02/20 06:00
 MHDA- 2022/03/22 06:00
+PMCR- 2022/03/01
 CRDT- 2022/02/19 20:09
 PHST- 2021/02/16 00:00 [received]
 PHST- 2021/11/09 00:00 [revised]
@@ -4044,6 +4076,7 @@ PHST- 2021/12/14 00:00 [accepted]
 PHST- 2022/02/20 06:00 [pubmed]
 PHST- 2022/03/22 06:00 [medline]
 PHST- 2022/02/19 20:09 [entrez]
+PHST- 2022/03/01 00:00 [pmc-release]
 AID - S1474-4422(21)00462-2 [pii]
 AID - 10.1016/S1474-4422(21)00462-2 [doi]
 PST - ppublish
@@ -4356,10 +4389,12 @@ COIS- Declaration of conflicting interests: The author(s) declared no potential
       publication of this article.
 EDAT- 2021/12/17 06:00
 MHDA- 2022/01/05 06:00
+PMCR- 2021/12/16
 CRDT- 2021/12/16 17:16
 PHST- 2021/12/16 17:16 [entrez]
 PHST- 2021/12/17 06:00 [pubmed]
 PHST- 2022/01/05 06:00 [medline]
+PHST- 2021/12/16 00:00 [pmc-release]
 AID - 10.1177_00469580211062438 [pii]
 AID - 10.1177/00469580211062438 [doi]
 PST - ppublish
@@ -4472,12 +4507,14 @@ COIS- The authors declare that the research was conducted in the absence of any
       conflict of interest.
 EDAT- 2021/11/09 06:00
 MHDA- 2021/11/09 06:01
+PMCR- 2021/10/20
 CRDT- 2021/11/08 06:34
 PHST- 2021/06/29 00:00 [received]
 PHST- 2021/09/23 00:00 [accepted]
 PHST- 2021/11/08 06:34 [entrez]
 PHST- 2021/11/09 06:00 [pubmed]
 PHST- 2021/11/09 06:01 [medline]
+PHST- 2021/10/20 00:00 [pmc-release]
 AID - 10.3389/fpsyt.2021.732759 [doi]
 PST - epublish
 SO  - Front Psychiatry. 2021 Oct 20;12:732759. doi: 10.3389/fpsyt.2021.732759. 
@@ -4555,6 +4592,7 @@ OT  - Infertility
 COIS- The authors declare that there is no conflict of interest.
 EDAT- 2021/11/02 06:00
 MHDA- 2021/11/02 06:01
+PMCR- 2021/10/10
 CRDT- 2021/11/01 09:31
 PHST- 2020/08/13 00:00 [received]
 PHST- 2020/10/10 00:00 [revised]
@@ -4562,6 +4600,7 @@ PHST- 2020/12/16 00:00 [accepted]
 PHST- 2021/11/01 09:31 [entrez]
 PHST- 2021/11/02 06:00 [pubmed]
 PHST- 2021/11/02 06:01 [medline]
+PHST- 2021/10/10 00:00 [pmc-release]
 AID - 10.18502/ijrm.v19i9.9717 [doi]
 PST - epublish
 SO  - Int J Reprod Biomed. 2021 Oct 10;19(9):845-851. doi: 10.18502/ijrm.v19i9.9717. 
@@ -4807,6 +4846,7 @@ OT  - urological oncology
 COIS- The authors declare no competing financial interests.
 EDAT- 2021/08/15 06:00
 MHDA- 2022/02/24 06:00
+PMCR- 2021/08/13
 CRDT- 2021/08/14 06:43
 PHST- 2021/07/12 00:00 [revised]
 PHST- 2021/04/22 00:00 [received]
@@ -4814,6 +4854,7 @@ PHST- 2021/07/15 00:00 [accepted]
 PHST- 2021/08/15 06:00 [pubmed]
 PHST- 2022/02/24 06:00 [medline]
 PHST- 2021/08/14 06:43 [entrez]
+PHST- 2021/08/13 00:00 [pmc-release]
 AID - CAM44165 [pii]
 AID - 10.1002/cam4.4165 [doi]
 PST - ppublish
@@ -4981,12 +5022,14 @@ FIR - Friedman, Jan
 IR  - Friedman J
 EDAT- 2021/08/11 06:00
 MHDA- 2022/02/17 06:00
+PMCR- 2021/08/09
 CRDT- 2021/08/10 05:38
 PHST- 2020/09/03 00:00 [received]
 PHST- 2021/07/05 00:00 [accepted]
 PHST- 2021/08/10 05:38 [entrez]
 PHST- 2021/08/11 06:00 [pubmed]
 PHST- 2022/02/17 06:00 [medline]
+PHST- 2021/08/09 00:00 [pmc-release]
 AID - 10.1186/s13073-021-00932-9 [pii]
 AID - 932 [pii]
 AID - 10.1186/s13073-021-00932-9 [doi]
@@ -5354,12 +5397,14 @@ COIS- K.T., A.I.L., M.N., R.M., P.P.K., and P.C. are employees of Arcturus
       Therapeutics.
 EDAT- 2021/03/20 06:00
 MHDA- 2021/03/20 06:01
+PMCR- 2021/02/15
 CRDT- 2021/03/19 07:25
 PHST- 2020/08/24 00:00 [received]
 PHST- 2021/02/09 00:00 [accepted]
 PHST- 2021/03/19 07:25 [entrez]
 PHST- 2021/03/20 06:00 [pubmed]
 PHST- 2021/03/20 06:01 [medline]
+PHST- 2021/02/15 00:00 [pmc-release]
 AID - S2162-2531(21)00042-1 [pii]
 AID - 10.1016/j.omtn.2021.02.007 [doi]
 PST - epublish
@@ -5659,12 +5704,14 @@ COIS- All authors (Jia-Nan Zhang, Si Chen, Cheng-Yi Huang, Chong Zhong, Jing Jin
       interest.
 EDAT- 2020/12/03 06:00
 MHDA- 2021/02/11 06:00
+PMCR- 2020/12/01
 CRDT- 2020/12/02 05:20
 PHST- 2020/09/08 00:00 [received]
 PHST- 2020/11/22 00:00 [accepted]
 PHST- 2020/12/02 05:20 [entrez]
 PHST- 2020/12/03 06:00 [pubmed]
 PHST- 2021/02/11 06:00 [medline]
+PHST- 2020/12/01 00:00 [pmc-release]
 AID - 10.1186/s12903-020-01344-8 [pii]
 AID - 1344 [pii]
 AID - 10.1186/s12903-020-01344-8 [doi]
@@ -6142,11 +6189,13 @@ OT  - X-chromosome (ChrX)
 OT  - haplotypes
 EDAT- 2020/08/29 06:00
 MHDA- 2021/06/04 06:00
+PMCR- 2020/10/01
 CRDT- 2020/08/29 06:00
 PHST- 2020/04/15 00:00 [received]
 PHST- 2020/08/29 06:00 [entrez]
 PHST- 2020/08/29 06:00 [pubmed]
 PHST- 2021/06/04 06:00 [medline]
+PHST- 2020/10/01 00:00 [pmc-release]
 AID - 89217 [pii]
 AID - 10.31557/APJCP.2020.21.8.2271 [doi]
 PST - epublish
@@ -6330,6 +6379,7 @@ OT  - androgen receptor
 COIS- The authors declare that there is no conflict of interests.
 EDAT- 2020/03/28 06:00
 MHDA- 2021/04/14 06:00
+PMCR- 2020/03/25
 CRDT- 2020/03/28 06:00
 PHST- 2019/08/23 00:00 [received]
 PHST- 2020/02/19 00:00 [revised]
@@ -6337,6 +6387,7 @@ PHST- 2020/02/22 00:00 [accepted]
 PHST- 2020/03/28 06:00 [pubmed]
 PHST- 2021/04/14 06:00 [medline]
 PHST- 2020/03/28 06:00 [entrez]
+PHST- 2020/03/25 00:00 [pmc-release]
 AID - MGG31207 [pii]
 AID - 10.1002/mgg3.1207 [doi]
 PST - ppublish
@@ -6579,12 +6630,14 @@ OT  - Spinal and bulbar muscular atrophy
 COIS- Competing interestsThe authors declare no competing or financial interests.
 EDAT- 2020/03/11 06:00
 MHDA- 2021/06/11 06:00
+PMCR- 2020/05/26
 CRDT- 2020/03/11 06:00
 PHST- 2019/10/29 00:00 [received]
 PHST- 2020/02/26 00:00 [accepted]
 PHST- 2020/03/11 06:00 [pubmed]
 PHST- 2021/06/11 06:00 [medline]
 PHST- 2020/03/11 06:00 [entrez]
+PHST- 2020/05/26 00:00 [pmc-release]
 AID - dmm.042424 [pii]
 AID - DMM042424 [pii]
 AID - 10.1242/dmm.042424 [doi]
@@ -6764,12 +6817,14 @@ COIS- H.O. is a paid member of the Scientific Advisory Board of SanBio Co., Ltd.
       of interests.
 EDAT- 2020/02/20 06:00
 MHDA- 2021/02/13 06:00
+PMCR- 2020/02/19
 CRDT- 2020/02/20 06:00
 PHST- 2019/12/29 00:00 [received]
 PHST- 2020/01/29 00:00 [accepted]
 PHST- 2020/02/20 06:00 [entrez]
 PHST- 2020/02/20 06:00 [pubmed]
 PHST- 2021/02/13 06:00 [medline]
+PHST- 2020/02/19 00:00 [pmc-release]
 AID - 10.1186/s13041-020-0561-1 [pii]
 AID - 561 [pii]
 AID - 10.1186/s13041-020-0561-1 [doi]
@@ -7279,6 +7334,7 @@ OT  - niche
 COIS- The authors declare no competing interests.
 EDAT- 2019/07/16 06:00
 MHDA- 2020/09/22 06:00
+PMCR- 2019/09/05
 CRDT- 2019/07/16 06:00
 PHST- 2018/07/30 00:00 [received]
 PHST- 2019/02/21 00:00 [revised]
@@ -7286,6 +7342,7 @@ PHST- 2019/06/10 00:00 [accepted]
 PHST- 2019/07/16 06:00 [pubmed]
 PHST- 2020/09/22 06:00 [medline]
 PHST- 2019/07/16 06:00 [entrez]
+PHST- 2019/09/05 00:00 [pmc-release]
 AID - S1934-5909(19)30271-1 [pii]
 AID - 10.1016/j.stem.2019.06.007 [doi]
 PST - ppublish
@@ -7383,12 +7440,14 @@ OT  - STR
 COIS- The authors declare there are no competing interests.
 EDAT- 2019/06/11 06:00
 MHDA- 2019/06/11 06:01
+PMCR- 2019/05/28
 CRDT- 2019/06/11 06:00
 PHST- 2019/01/15 00:00 [received]
 PHST- 2019/04/23 00:00 [accepted]
 PHST- 2019/06/11 06:00 [entrez]
 PHST- 2019/06/11 06:00 [pubmed]
 PHST- 2019/06/11 06:01 [medline]
+PHST- 2019/05/28 00:00 [pmc-release]
 AID - 7004 [pii]
 AID - 10.7717/peerj.7004 [doi]
 PST - epublish
@@ -7711,12 +7770,14 @@ OT  - Selective estrogen receptor modulator
 OT  - Sex steroids
 EDAT- 2019/04/26 06:00
 MHDA- 2019/04/26 06:01
+PMCR- 2020/03/01
 CRDT- 2019/04/26 06:00
 PHST- 2018/06/20 00:00 [received]
 PHST- 2018/11/01 00:00 [accepted]
 PHST- 2019/04/26 06:00 [entrez]
 PHST- 2019/04/26 06:00 [pubmed]
 PHST- 2019/04/26 06:01 [medline]
+PHST- 2020/03/01 00:00 [pmc-release]
 AID - mnp-0005-0028 [pii]
 AID - 10.1159/000495062 [doi]
 PST - ppublish
@@ -7867,10 +7928,12 @@ OT  - spinal and bulbar muscular atrophy
 COIS- The authors declare that they have no conflict of interest.
 EDAT- 2019/04/04 06:00
 MHDA- 2020/04/28 06:00
+PMCR- 2019/05/01
 CRDT- 2019/04/04 06:00
 PHST- 2019/04/04 06:00 [pubmed]
 PHST- 2020/04/28 06:00 [medline]
 PHST- 2019/04/04 06:00 [entrez]
+PHST- 2019/05/01 00:00 [pmc-release]
 AID - emmm.201708547 [pii]
 AID - EMMM201708547 [pii]
 AID - 10.15252/emmm.201708547 [doi]
@@ -7977,12 +8040,14 @@ COIS- J. Vissing has received research and travel support, speaker honoraria fro
       reports no disclosures. C. Thomsen reports no disclosures.
 EDAT- 2019/03/20 06:00
 MHDA- 2020/10/31 06:00
+PMCR- 2019/03/18
 CRDT- 2019/03/20 06:00
 PHST- 2018/12/11 00:00 [received]
 PHST- 2019/03/05 00:00 [accepted]
 PHST- 2019/03/20 06:00 [entrez]
 PHST- 2019/03/20 06:00 [pubmed]
 PHST- 2020/10/31 06:00 [medline]
+PHST- 2019/03/18 00:00 [pmc-release]
 AID - 10.1038/s41598-019-41240-y [pii]
 AID - 41240 [pii]
 AID - 10.1038/s41598-019-41240-y [doi]
@@ -8081,10 +8146,12 @@ OT  - non alcoholic fatty liver disease
 OT  - spinal-bulbar muscular atrophy
 EDAT- 2019/03/07 06:00
 MHDA- 2019/06/20 06:00
+PMCR- 2018/09/01
 CRDT- 2019/03/07 06:00
 PHST- 2019/03/07 06:00 [entrez]
 PHST- 2019/03/07 06:00 [pubmed]
 PHST- 2019/06/20 06:00 [medline]
+PHST- 2018/09/01 00:00 [pmc-release]
 AID - am-2018-03-204 [pii]
 PST - epublish
 SO  - Acta Myol. 2018 Sep 1;37(3):204-209. eCollection 2018 Sep.
@@ -8201,12 +8268,14 @@ PMC - PMC6401132
 COIS- The authors declare no competing interests.
 EDAT- 2019/03/07 06:00
 MHDA- 2020/09/29 06:00
+PMCR- 2019/03/05
 CRDT- 2019/03/07 06:00
 PHST- 2018/10/30 00:00 [received]
 PHST- 2019/02/04 00:00 [accepted]
 PHST- 2019/03/07 06:00 [entrez]
 PHST- 2019/03/07 06:00 [pubmed]
 PHST- 2020/09/29 06:00 [medline]
+PHST- 2019/03/05 00:00 [pmc-release]
 AID - 10.1038/s41598-019-40118-3 [pii]
 AID - 40118 [pii]
 AID - 10.1038/s41598-019-40118-3 [doi]
@@ -8963,12 +9032,14 @@ OT  - tooth-borne expander
 COIS- Conflict of Interest: No conflict of interest was declared by the authors.
 EDAT- 2018/09/13 06:00
 MHDA- 2018/09/13 06:01
+PMCR- 2018/09/01
 CRDT- 2018/09/13 06:00
 PHST- 2017/11/22 00:00 [received]
 PHST- 2018/02/08 00:00 [accepted]
 PHST- 2018/09/13 06:00 [entrez]
 PHST- 2018/09/13 06:00 [pubmed]
 PHST- 2018/09/13 06:01 [medline]
+PHST- 2018/09/01 00:00 [pmc-release]
 AID - tjo-31-3-67 [pii]
 AID - 10.5152/TurkJOrthod.2018.17051 [doi]
 PST - ppublish
@@ -8979,7 +9050,7 @@ PMID- 30206283
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20191028
-LR  - 20191028
+LR  - 20240331
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 8
@@ -9081,12 +9152,14 @@ PMC - PMC6134140
 COIS- The authors declare no competing interests.
 EDAT- 2018/09/13 06:00
 MHDA- 2019/10/29 06:00
+PMCR- 2018/09/11
 CRDT- 2018/09/13 06:00
 PHST- 2017/11/28 00:00 [received]
 PHST- 2018/08/02 00:00 [accepted]
 PHST- 2018/09/13 06:00 [entrez]
 PHST- 2018/09/13 06:00 [pubmed]
 PHST- 2019/10/29 06:00 [medline]
+PHST- 2018/09/11 00:00 [pmc-release]
 AID - 10.1038/s41598-018-32062-5 [pii]
 AID - 32062 [pii]
 AID - 10.1038/s41598-018-32062-5 [doi]
@@ -9417,10 +9490,12 @@ OT  - *polymorphism
 OT  - *prostate cancer (PCa)
 EDAT- 2018/08/25 06:00
 MHDA- 2018/12/15 06:00
+PMCR- 2018/03/01
 CRDT- 2018/08/25 06:00
 PHST- 2018/08/25 06:00 [entrez]
 PHST- 2018/08/25 06:00 [pubmed]
 PHST- 2018/12/15 06:00 [medline]
+PHST- 2018/03/01 00:00 [pmc-release]
 AID - APJCP-19-2241 [pii]
 AID - 10.22034/APJCP.2018.19.8.2241 [doi]
 PST - epublish
@@ -10286,12 +10361,14 @@ COIS- Conflict of interest: The authors have declared that no conflict of intere
       exists.
 EDAT- 2018/05/29 06:00
 MHDA- 2019/09/11 06:00
+PMCR- 2018/11/01
 CRDT- 2018/05/30 06:00
 PHST- 2017/12/05 00:00 [received]
 PHST- 2018/05/24 00:00 [accepted]
 PHST- 2018/05/29 06:00 [pubmed]
 PHST- 2019/09/11 06:00 [medline]
 PHST- 2018/05/30 06:00 [entrez]
+PHST- 2018/11/01 00:00 [pmc-release]
 AID - 99042 [pii]
 AID - 10.1172/JCI99042 [doi]
 PST - ppublish
@@ -10446,6 +10523,7 @@ OT  - Late-Onset Hypogonadism
 OT  - Testosterone
 EDAT- 2018/05/01 06:00
 MHDA- 2018/05/01 06:01
+PMCR- 2018/04/26
 CRDT- 2018/05/01 06:00
 PHST- 2017/11/23 00:00 [received]
 PHST- 2018/03/21 00:00 [revised]
@@ -10453,6 +10531,7 @@ PHST- 2018/04/01 00:00 [accepted]
 PHST- 2018/05/01 06:00 [pubmed]
 PHST- 2018/05/01 06:01 [medline]
 PHST- 2018/05/01 06:00 [entrez]
+PHST- 2018/04/26 00:00 [pmc-release]
 AID - S2050-1161(18)30034-5 [pii]
 AID - 10.1016/j.esxm.2018.04.002 [doi]
 PST - ppublish
@@ -10719,12 +10798,14 @@ COIS- The authors declare that they have no competing interests.Springer Nature 
       affiliations.
 EDAT- 2018/03/21 06:00
 MHDA- 2018/03/21 06:01
+PMCR- 2018/03/06
 CRDT- 2018/03/21 06:00
 PHST- 2017/07/14 00:00 [received]
 PHST- 2018/02/01 00:00 [accepted]
 PHST- 2018/03/21 06:00 [entrez]
 PHST- 2018/03/21 06:00 [pubmed]
 PHST- 2018/03/21 06:01 [medline]
+PHST- 2018/03/06 00:00 [pmc-release]
 AID - 68 [pii]
 AID - 10.1186/s12610-018-0068-0 [doi]
 PST - epublish
@@ -11125,6 +11206,7 @@ OT  - Trinucleotide repeats
 COIS- The authors have no potential conflicts of interest to disclose.
 EDAT- 2018/01/05 06:00
 MHDA- 2018/01/05 06:01
+PMCR- 2018/01/01
 CRDT- 2018/01/05 06:00
 PHST- 2017/07/26 00:00 [received]
 PHST- 2017/09/08 00:00 [revised]
@@ -11132,6 +11214,7 @@ PHST- 2017/09/22 00:00 [accepted]
 PHST- 2018/01/05 06:00 [entrez]
 PHST- 2018/01/05 06:00 [pubmed]
 PHST- 2018/01/05 06:01 [medline]
+PHST- 2018/01/01 00:00 [pmc-release]
 AID - 36.73 [pii]
 AID - 10.5534/wjmh.17029 [doi]
 PST - ppublish
@@ -11234,12 +11317,14 @@ OT  - polyglutamine diseases
 OT  - spinocerebellar ataxias
 EDAT- 2017/12/19 06:00
 MHDA- 2017/12/19 06:01
+PMCR- 2017/01/01
 CRDT- 2017/12/19 06:00
 PHST- 2017/08/14 00:00 [received]
 PHST- 2017/11/15 00:00 [accepted]
 PHST- 2017/12/19 06:00 [entrez]
 PHST- 2017/12/19 06:00 [pubmed]
 PHST- 2017/12/19 06:01 [medline]
+PHST- 2017/01/01 00:00 [pmc-release]
 AID - 10.3389/fnmol.2017.00399 [doi]
 PST - epublish
 SO  - Front Mol Neurosci. 2017 Nov 30;10:399. doi: 10.3389/fnmol.2017.00399. 
@@ -11444,6 +11529,7 @@ OT  - thrombectomy
 COIS- Competing interests: None declared.
 EDAT- 2017/10/01 06:00
 MHDA- 2018/09/04 06:00
+PMCR- 2018/05/25
 CRDT- 2017/10/01 06:00
 PHST- 2017/08/03 00:00 [received]
 PHST- 2017/09/07 00:00 [revised]
@@ -11451,6 +11537,7 @@ PHST- 2017/09/11 00:00 [accepted]
 PHST- 2017/10/01 06:00 [pubmed]
 PHST- 2018/09/04 06:00 [medline]
 PHST- 2017/10/01 06:00 [entrez]
+PHST- 2018/05/25 00:00 [pmc-release]
 AID - neurintsurg-2017-013371 [pii]
 AID - 10.1136/neurintsurg-2017-013371 [doi]
 PST - ppublish
@@ -11864,12 +11951,14 @@ PMC - PMC5534943
 COIS- The authors declare no conflict of interest.
 EDAT- 2017/06/07 06:00
 MHDA- 2018/04/06 06:00
+PMCR- 2017/06/01
 CRDT- 2017/06/07 06:00
 PHST- 2017/04/11 00:00 [received]
 PHST- 2017/04/20 00:00 [accepted]
 PHST- 2017/06/07 06:00 [entrez]
 PHST- 2017/06/07 06:00 [pubmed]
 PHST- 2018/04/06 06:00 [medline]
+PHST- 2017/06/01 00:00 [pmc-release]
 AID - tp2017116 [pii]
 AID - 10.1038/tp.2017.116 [doi]
 PST - epublish
@@ -12093,12 +12182,14 @@ OT  - Maxillary expansion
 OT  - Mixed dentition
 EDAT- 2017/04/04 06:00
 MHDA- 2018/04/14 06:00
+PMCR- 2017/04/03
 CRDT- 2017/04/04 06:00
 PHST- 2017/01/09 00:00 [received]
 PHST- 2017/03/20 00:00 [accepted]
 PHST- 2017/04/04 06:00 [entrez]
 PHST- 2017/04/04 06:00 [pubmed]
 PHST- 2018/04/14 06:00 [medline]
+PHST- 2017/04/03 00:00 [pmc-release]
 AID - 10.1186/s40510-017-0163-3 [pii]
 AID - 163 [pii]
 AID - 10.1186/s40510-017-0163-3 [doi]
@@ -12327,10 +12418,12 @@ MH  - Young Adult
 PMC - PMC5566846
 EDAT- 2016/11/23 06:00
 MHDA- 2018/05/05 06:00
+PMCR- 2017/09/01
 CRDT- 2016/11/23 06:00
 PHST- 2016/11/23 06:00 [pubmed]
 PHST- 2018/05/05 06:00 [medline]
 PHST- 2016/11/23 06:00 [entrez]
+PHST- 2017/09/01 00:00 [pmc-release]
 AID - 191126 [pii]
 AID - AJA-19-538 [pii]
 AID - 10.4103/1008-682X.191126 [doi]
@@ -12400,12 +12493,14 @@ OT  - Benign prostate hyperplasia
 OT  - Genetic polymorphism
 EDAT- 2016/11/04 06:00
 MHDA- 2016/11/04 06:01
+PMCR- 2016/10/31
 CRDT- 2016/11/04 06:00
 PHST- 2016/09/03 00:00 [received]
 PHST- 2016/10/05 00:00 [accepted]
 PHST- 2016/11/04 06:00 [pubmed]
 PHST- 2016/11/04 06:01 [medline]
 PHST- 2016/11/04 06:00 [entrez]
+PHST- 2016/10/31 00:00 [pmc-release]
 AID - jer-12-5-504 [pii]
 AID - 10.12965/jer.1632802.401 [doi]
 PST - epublish
@@ -12852,6 +12947,7 @@ OT  - skeletal muscle
 OT  - testicular feminization mutation
 EDAT- 2016/08/16 06:00
 MHDA- 2017/10/27 06:00
+PMCR- 2016/08/10
 CRDT- 2016/08/13 06:00
 PHST- 2016/03/15 00:00 [received]
 PHST- 2016/06/23 00:00 [revised]
@@ -12859,6 +12955,7 @@ PHST- 2016/07/14 00:00 [accepted]
 PHST- 2016/08/13 06:00 [entrez]
 PHST- 2016/08/16 06:00 [pubmed]
 PHST- 2017/10/27 06:00 [medline]
+PHST- 2016/08/10 00:00 [pmc-release]
 AID - eN-NWR-0062-16 [pii]
 AID - 10.1523/ENEURO.0062-16.2016 [doi]
 PST - epublish
@@ -13166,12 +13263,14 @@ JID - 101671068
 PMC - PMC4817899
 EDAT- 2016/04/12 06:00
 MHDA- 2016/04/12 06:01
+PMCR- 2016/02/03
 CRDT- 2016/04/12 06:00
 PHST- 2015/06/12 00:00 [received]
 PHST- 2015/11/17 00:00 [accepted]
 PHST- 2016/04/12 06:00 [entrez]
 PHST- 2016/04/12 06:00 [pubmed]
 PHST- 2016/04/12 06:01 [medline]
+PHST- 2016/02/03 00:00 [pmc-release]
 AID - NG2015000521 [pii]
 AID - 10.1212/NXG.0000000000000045 [doi]
 PST - epublish
@@ -13278,10 +13377,12 @@ PMC - PMC4998865
 COIS- The authors have no conflicts of interest to disclose.
 EDAT- 2016/03/11 06:00
 MHDA- 2016/12/15 06:00
+PMCR- 2016/03/11
 CRDT- 2016/03/11 06:00
 PHST- 2016/03/11 06:00 [entrez]
 PHST- 2016/03/11 06:00 [pubmed]
 PHST- 2016/12/15 06:00 [medline]
+PHST- 2016/03/11 00:00 [pmc-release]
 AID - 00005792-201603080-00021 [pii]
 AID - 10.1097/MD.0000000000002878 [doi]
 PST - ppublish
@@ -13932,12 +14033,14 @@ OT  - metastasis
 COIS- Disclosures: There are no affiliations or conflicts to disclose.
 EDAT- 2015/10/27 06:00
 MHDA- 2016/05/21 06:00
+PMCR- 2016/02/01
 CRDT- 2015/10/27 06:00
 PHST- 2015/08/24 00:00 [received]
 PHST- 2015/10/02 00:00 [accepted]
 PHST- 2015/10/27 06:00 [entrez]
 PHST- 2015/10/27 06:00 [pubmed]
 PHST- 2016/05/21 06:00 [medline]
+PHST- 2016/02/01 00:00 [pmc-release]
 AID - 10.1002/pros.23115 [doi]
 PST - ppublish
 SO  - Prostate. 2016 Feb;76(2):215-25. doi: 10.1002/pros.23115. Epub 2015 Oct 26.
@@ -14279,12 +14382,14 @@ OT  - teratoma
 COIS- CONFLICTS OF INTEREST The authors don't have conflicts of interest to declare.
 EDAT- 2015/09/12 06:00
 MHDA- 2016/08/05 06:00
+PMCR- 2015/09/08
 CRDT- 2015/09/11 06:00
 PHST- 2015/07/14 00:00 [received]
 PHST- 2015/08/20 00:00 [accepted]
 PHST- 2015/09/11 06:00 [entrez]
 PHST- 2015/09/12 06:00 [pubmed]
 PHST- 2016/08/05 06:00 [medline]
+PHST- 2015/09/08 00:00 [pmc-release]
 AID - 5146 [pii]
 AID - 10.18632/oncotarget.5146 [doi]
 PST - ppublish
@@ -14567,12 +14672,14 @@ PMC - PMC4534407
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2015/08/13 06:00
 MHDA- 2016/05/11 06:00
+PMCR- 2015/08/12
 CRDT- 2015/08/13 06:00
 PHST- 2015/04/22 00:00 [received]
 PHST- 2015/07/08 00:00 [accepted]
 PHST- 2015/08/13 06:00 [entrez]
 PHST- 2015/08/13 06:00 [pubmed]
 PHST- 2016/05/11 06:00 [medline]
+PHST- 2015/08/12 00:00 [pmc-release]
 AID - PONE-D-15-17253 [pii]
 AID - 10.1371/journal.pone.0134405 [doi]
 PST - epublish
@@ -14648,12 +14755,14 @@ OT  - Male Infertility
 OT  - Y Chromosome
 EDAT- 2015/08/08 06:00
 MHDA- 2015/08/08 06:01
+PMCR- 2015/07/01
 CRDT- 2015/08/07 06:00
 PHST- 2013/05/07 00:00 [received]
 PHST- 2014/11/26 00:00 [accepted]
 PHST- 2015/08/07 06:00 [entrez]
 PHST- 2015/08/08 06:00 [pubmed]
 PHST- 2015/08/08 06:01 [medline]
+PHST- 2015/07/01 00:00 [pmc-release]
 AID - 10.22074/ijfs.2015.4239 [doi]
 PST - ppublish
 SO  - Int J Fertil Steril. 2015 Jul-Sep;9(2):189-96. doi: 10.22074/ijfs.2015.4239. Epub 
@@ -14723,6 +14832,7 @@ OT  - Khuzestan
 OT  - Male infertility
 EDAT- 2015/07/30 06:00
 MHDA- 2015/07/30 06:01
+PMCR- 2015/05/01
 CRDT- 2015/07/30 06:00
 PHST- 2014/05/20 00:00 [received]
 PHST- 2014/08/20 00:00 [revised]
@@ -14730,6 +14840,7 @@ PHST- 2014/08/23 00:00 [accepted]
 PHST- 2015/07/30 06:00 [entrez]
 PHST- 2015/07/30 06:00 [pubmed]
 PHST- 2015/07/30 06:01 [medline]
+PHST- 2015/05/01 00:00 [pmc-release]
 AID - ijrm-13-305 [pii]
 PST - ppublish
 SO  - Iran J Reprod Med. 2015 May;13(5):305-10.
@@ -15022,12 +15133,14 @@ MH  - *Trinucleotide Repeats
 PMC - PMC4491081
 EDAT- 2015/05/01 06:00
 MHDA- 2016/05/06 06:00
+PMCR- 2016/06/01
 CRDT- 2015/05/01 06:00
 PHST- 2015/02/13 00:00 [received]
 PHST- 2015/04/13 00:00 [accepted]
 PHST- 2015/05/01 06:00 [entrez]
 PHST- 2015/05/01 06:00 [pubmed]
 PHST- 2016/05/06 06:00 [medline]
+PHST- 2016/06/01 00:00 [pmc-release]
 AID - 484 [pii]
 AID - 10.1007/s10815-015-0484-4 [doi]
 PST - ppublish
@@ -15145,12 +15258,14 @@ MH  - Thymus Gland/*pathology/surgery
 PMC - PMC4359394
 EDAT- 2015/04/19 06:00
 MHDA- 2016/03/08 06:00
+PMCR- 2015/02/27
 CRDT- 2015/04/19 06:00
 PHST- 2014/06/30 00:00 [received]
 PHST- 2015/01/23 00:00 [accepted]
 PHST- 2015/04/19 06:00 [entrez]
 PHST- 2015/04/19 06:00 [pubmed]
 PHST- 2016/03/08 06:00 [medline]
+PHST- 2015/02/27 00:00 [pmc-release]
 AID - 10.1186/s12974-015-0254-3 [pii]
 AID - 254 [pii]
 AID - 10.1186/s12974-015-0254-3 [doi]
@@ -15738,12 +15853,14 @@ OT  - length polymorphism
 OT  - prostate cancer
 EDAT- 2014/12/19 06:00
 MHDA- 2014/12/19 06:01
+PMCR- 2014/11/19
 CRDT- 2014/12/19 06:00
 PHST- 2014/08/26 00:00 [received]
 PHST- 2014/10/15 00:00 [accepted]
 PHST- 2014/12/19 06:00 [entrez]
 PHST- 2014/12/19 06:00 [pubmed]
 PHST- 2014/12/19 06:01 [medline]
+PHST- 2014/11/19 00:00 [pmc-release]
 PST - epublish
 SO  - Am J Cancer Res. 2014 Nov 19;4(6):886-96. eCollection 2014.
 
@@ -16420,10 +16537,12 @@ MH  - Trehalose/*pharmacology
 PMC - PMC4262493
 EDAT- 2014/08/15 06:00
 MHDA- 2015/08/25 06:00
+PMCR- 2014/08/13
 CRDT- 2014/08/15 06:00
 PHST- 2014/08/15 06:00 [entrez]
 PHST- 2014/08/15 06:00 [pubmed]
 PHST- 2015/08/25 06:00 [medline]
+PHST- 2014/08/13 00:00 [pmc-release]
 AID - ddu419 [pii]
 AID - 10.1093/hmg/ddu419 [doi]
 PST - ppublish
@@ -16570,12 +16689,14 @@ PMC - PMC4117532
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2014/08/01 06:00
 MHDA- 2015/11/11 06:00
+PMCR- 2014/07/31
 CRDT- 2014/08/01 06:00
 PHST- 2014/01/22 00:00 [received]
 PHST- 2014/07/04 00:00 [accepted]
 PHST- 2014/08/01 06:00 [entrez]
 PHST- 2014/08/01 06:00 [pubmed]
 PHST- 2015/11/11 06:00 [medline]
+PHST- 2014/07/31 00:00 [pmc-release]
 AID - PONE-D-14-03372 [pii]
 AID - 10.1371/journal.pone.0103714 [doi]
 PST - epublish
@@ -16697,12 +16818,14 @@ OT  - Motor neuron disease
 OT  - Spinal bulbar muscular atrophy
 EDAT- 2014/07/23 06:00
 MHDA- 2015/07/21 06:00
+PMCR- 2015/11/01
 CRDT- 2014/07/23 06:00
 PHST- 2014/05/18 00:00 [received]
 PHST- 2014/06/25 00:00 [accepted]
 PHST- 2014/07/23 06:00 [entrez]
 PHST- 2014/07/23 06:00 [pubmed]
 PHST- 2015/07/21 06:00 [medline]
+PHST- 2015/11/01 00:00 [pmc-release]
 AID - S0960-8966(14)00607-5 [pii]
 AID - 10.1016/j.nmd.2014.06.441 [doi]
 PST - ppublish
@@ -16797,10 +16920,12 @@ MH  - Trinucleotide Repeat Expansion/genetics
 PMC - PMC4140038
 EDAT- 2014/07/17 06:00
 MHDA- 2015/04/14 06:00
+PMCR- 2014/05/01
 CRDT- 2014/07/17 06:00
 PHST- 2014/07/17 06:00 [entrez]
 PHST- 2014/07/17 06:00 [pubmed]
 PHST- 2015/04/14 06:00 [medline]
+PHST- 2014/05/01 00:00 [pmc-release]
 AID - IndianJMedRes_2014_139_5_730_136507 [pii]
 AID - IJMR-139-730 [pii]
 PST - ppublish
@@ -16880,12 +17005,14 @@ MH  - Receptors, Androgen/*genetics
 PMC - PMC4156942
 EDAT- 2014/07/06 06:00
 MHDA- 2015/05/28 06:00
+PMCR- 2015/09/01
 CRDT- 2014/07/03 06:00
 PHST- 2014/05/10 00:00 [received]
 PHST- 2014/06/17 00:00 [accepted]
 PHST- 2014/07/03 06:00 [entrez]
 PHST- 2014/07/06 06:00 [pubmed]
 PHST- 2015/05/28 06:00 [medline]
+PHST- 2015/09/01 00:00 [pmc-release]
 AID - 286 [pii]
 AID - 10.1007/s10815-014-0286-0 [doi]
 PST - ppublish
@@ -17133,10 +17260,12 @@ OT  - behavior
 COIS- Disclosure: The authors report no conflicts of interest in this work.
 EDAT- 2014/06/27 06:00
 MHDA- 2014/06/27 06:01
+PMCR- 2014/06/23
 CRDT- 2014/06/27 06:00
 PHST- 2014/06/27 06:00 [entrez]
 PHST- 2014/06/27 06:00 [pubmed]
 PHST- 2014/06/27 06:01 [medline]
+PHST- 2014/06/23 00:00 [pmc-release]
 AID - 10.2147/AGG.S57771 [doi]
 PST - ppublish
 SO  - Adv Genomics Genet. 2014 Mar 1;4:5-13. doi: 10.2147/AGG.S57771.
@@ -17296,10 +17425,12 @@ MID - NIHMS605517
 COIS- The authors have no conflicts of interest to disclose.
 EDAT- 2014/06/14 06:00
 MHDA- 2015/08/01 06:00
+PMCR- 2015/10/01
 CRDT- 2014/06/14 06:00
 PHST- 2014/06/14 06:00 [entrez]
 PHST- 2014/06/14 06:00 [pubmed]
 PHST- 2015/08/01 06:00 [medline]
+PHST- 2015/10/01 00:00 [pmc-release]
 AID - 1055-9965.EPI-14-0020 [pii]
 AID - 10.1158/1055-9965.EPI-14-0020 [doi]
 PST - ppublish
@@ -17443,6 +17574,7 @@ OT  - Spinal and bulbar muscular atrophy
 COIS- Conflict of Interest None declared.
 EDAT- 2014/06/14 06:00
 MHDA- 2015/04/22 06:00
+PMCR- 2015/10/01
 CRDT- 2014/06/14 06:00
 PHST- 2014/01/28 00:00 [received]
 PHST- 2014/04/23 00:00 [revised]
@@ -17450,6 +17582,7 @@ PHST- 2014/05/30 00:00 [accepted]
 PHST- 2014/06/14 06:00 [entrez]
 PHST- 2014/06/14 06:00 [pubmed]
 PHST- 2015/04/22 06:00 [medline]
+PHST- 2015/10/01 00:00 [pmc-release]
 AID - S0969-9961(14)00164-8 [pii]
 AID - 10.1016/j.nbd.2014.05.038 [doi]
 PST - ppublish
@@ -17638,6 +17771,7 @@ PMC - PMC4077907
 MID - NIHMS580470
 EDAT- 2014/05/16 06:00
 MHDA- 2014/09/02 06:00
+PMCR- 2015/07/01
 CRDT- 2014/05/15 06:00
 PHST- 2014/02/10 00:00 [received]
 PHST- 2014/03/14 00:00 [revised]
@@ -17645,6 +17779,7 @@ PHST- 2014/03/17 00:00 [accepted]
 PHST- 2014/05/15 06:00 [entrez]
 PHST- 2014/05/16 06:00 [pubmed]
 PHST- 2014/09/02 06:00 [medline]
+PHST- 2015/07/01 00:00 [pmc-release]
 AID - S0090-4295(14)00272-6 [pii]
 AID - 10.1016/j.urology.2014.03.015 [doi]
 PST - ppublish
@@ -17882,11 +18017,13 @@ PMC - PMC4096235
 MID - NIHMS585870
 EDAT- 2014/04/20 06:00
 MHDA- 2014/06/06 06:00
+PMCR- 2015/04/16
 CRDT- 2014/04/19 06:00
 PHST- 2014/02/20 00:00 [accepted]
 PHST- 2014/04/19 06:00 [entrez]
 PHST- 2014/04/20 06:00 [pubmed]
 PHST- 2014/06/06 06:00 [medline]
+PHST- 2015/04/16 00:00 [pmc-release]
 AID - S0896-6273(14)00195-0 [pii]
 AID - 10.1016/j.neuron.2014.03.001 [doi]
 PST - ppublish
@@ -17945,10 +18082,12 @@ OT  - humoral autoimmunity
 OT  - lupus
 EDAT- 2014/04/09 06:00
 MHDA- 2014/04/09 06:01
+PMCR- 2014/05/05
 CRDT- 2014/04/09 06:00
 PHST- 2014/04/09 06:00 [entrez]
 PHST- 2014/04/09 06:00 [pubmed]
 PHST- 2014/04/09 06:01 [medline]
+PHST- 2014/05/05 00:00 [pmc-release]
 AID - EC-14-0039 [pii]
 AID - EC140039 [pii]
 AID - 10.1530/EC-14-0039 [doi]
@@ -18045,12 +18184,14 @@ MH  - *Trinucleotide Repeats/genetics
 PMC - PMC4048386
 EDAT- 2014/04/03 06:00
 MHDA- 2015/02/13 06:00
+PMCR- 2015/06/01
 CRDT- 2014/04/03 06:00
 PHST- 2013/10/23 00:00 [received]
 PHST- 2014/03/14 00:00 [accepted]
 PHST- 2014/04/03 06:00 [entrez]
 PHST- 2014/04/03 06:00 [pubmed]
 PHST- 2015/02/13 06:00 [medline]
+PHST- 2015/06/01 00:00 [pmc-release]
 AID - 221 [pii]
 AID - 10.1007/s10815-014-0221-4 [doi]
 PST - ppublish
@@ -18133,12 +18274,14 @@ MH  - *X Chromosome Inactivation
 PMC - PMC3975944
 EDAT- 2014/03/04 06:00
 MHDA- 2014/12/30 06:00
+PMCR- 2014/03/01
 CRDT- 2014/03/04 06:00
 PHST- 2013/08/22 00:00 [received]
 PHST- 2014/02/26 00:00 [accepted]
 PHST- 2014/03/04 06:00 [entrez]
 PHST- 2014/03/04 06:00 [pubmed]
 PHST- 2014/12/30 06:00 [medline]
+PHST- 2014/03/01 00:00 [pmc-release]
 AID - 1471-2407-14-144 [pii]
 AID - 10.1186/1471-2407-14-144 [doi]
 PST - epublish
@@ -18333,12 +18476,14 @@ PMC - PMC3877261
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2014/01/07 06:00
 MHDA- 2014/09/03 06:00
+PMCR- 2013/12/31
 CRDT- 2014/01/07 06:00
 PHST- 2013/08/09 00:00 [received]
 PHST- 2013/11/21 00:00 [accepted]
 PHST- 2014/01/07 06:00 [entrez]
 PHST- 2014/01/07 06:00 [pubmed]
 PHST- 2014/09/03 06:00 [medline]
+PHST- 2013/12/31 00:00 [pmc-release]
 AID - PONE-D-13-32769 [pii]
 AID - 10.1371/journal.pone.0084213 [doi]
 PST - epublish
@@ -18805,12 +18950,14 @@ PMC - PMC3792992
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2013/10/12 06:00
 MHDA- 2014/06/10 06:00
+PMCR- 2013/10/08
 CRDT- 2013/10/12 06:00
 PHST- 2013/02/08 00:00 [received]
 PHST- 2013/08/19 00:00 [accepted]
 PHST- 2013/10/12 06:00 [entrez]
 PHST- 2013/10/12 06:00 [pubmed]
 PHST- 2014/06/10 06:00 [medline]
+PHST- 2013/10/08 00:00 [pmc-release]
 AID - PONE-D-13-06745 [pii]
 AID - 10.1371/journal.pone.0075709 [doi]
 PST - epublish
@@ -18900,12 +19047,14 @@ OT  - Spinal bulbar muscular atrophy
 OT  - Trinucleotide
 EDAT- 2013/09/18 06:00
 MHDA- 2014/08/26 06:00
+PMCR- 2014/02/01
 CRDT- 2013/09/18 06:00
 PHST- 2013/07/09 00:00 [received]
 PHST- 2013/07/19 00:00 [accepted]
 PHST- 2013/09/18 06:00 [entrez]
 PHST- 2013/09/18 06:00 [pubmed]
 PHST- 2014/08/26 06:00 [medline]
+PHST- 2014/02/01 00:00 [pmc-release]
 AID - S0197-4580(13)00320-5 [pii]
 AID - 10.1016/j.neurobiolaging.2013.07.015 [doi]
 PST - ppublish
@@ -19107,12 +19256,14 @@ OT  - Prostatic neoplasms
 COIS- The authors have nothing to disclose.
 EDAT- 2013/06/22 06:00
 MHDA- 2013/06/22 06:01
+PMCR- 2013/06/01
 CRDT- 2013/06/22 06:00
 PHST- 2013/03/08 00:00 [received]
 PHST- 2013/04/21 00:00 [accepted]
 PHST- 2013/06/22 06:00 [entrez]
 PHST- 2013/06/22 06:00 [pubmed]
 PHST- 2013/06/22 06:01 [medline]
+PHST- 2013/06/01 00:00 [pmc-release]
 AID - 10.4111/kju.2013.54.6.404 [doi]
 PST - ppublish
 SO  - Korean J Urol. 2013 Jun;54(6):404-8. doi: 10.4111/kju.2013.54.6.404. Epub 2013 
@@ -19340,7 +19491,7 @@ PMID- 23545426
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20131104
-LR  - 20211021
+LR  - 20240321
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Print)
 IS  - 0197-4580 (Linking)
@@ -19424,12 +19575,14 @@ MID - NIHMS496408
 COIS- Disclosure statement The authors have no conflicts of interest to disclose.
 EDAT- 2013/04/03 06:00
 MHDA- 2013/11/05 06:00
+PMCR- 2014/08/01
 CRDT- 2013/04/03 06:00
 PHST- 2013/02/04 00:00 [received]
 PHST- 2013/02/22 00:00 [accepted]
 PHST- 2013/04/03 06:00 [entrez]
 PHST- 2013/04/03 06:00 [pubmed]
 PHST- 2013/11/05 06:00 [medline]
+PHST- 2014/08/01 00:00 [pmc-release]
 AID - S0197-4580(13)00096-1 [pii]
 AID - 10.1016/j.neurobiolaging.2013.02.017 [doi]
 PST - ppublish
@@ -19495,12 +19648,14 @@ OT  - androgen receptor
 OT  - microchip electrophoresis
 EDAT- 2013/03/22 06:00
 MHDA- 2013/03/22 06:01
+PMCR- 2013/03/08
 CRDT- 2013/03/22 06:00
 PHST- 2012/12/05 00:00 [received]
 PHST- 2013/01/15 00:00 [accepted]
 PHST- 2013/03/22 06:00 [entrez]
 PHST- 2013/03/22 06:00 [pubmed]
 PHST- 2013/03/22 06:01 [medline]
+PHST- 2013/03/08 00:00 [pmc-release]
 PST - ppublish
 SO  - Am J Neurodegener Dis. 2013;2(1):35-9. Epub 2013 Mar 8.
 
@@ -19561,12 +19716,14 @@ OT  - sexual conflict
 OT  - tandem-repeat accumulation
 EDAT- 2013/03/08 06:00
 MHDA- 2013/03/08 06:01
+PMCR- 2013/02/01
 CRDT- 2013/03/08 06:00
 PHST- 2012/01/18 00:00 [received]
 PHST- 2012/05/04 00:00 [accepted]
 PHST- 2013/03/08 06:00 [entrez]
 PHST- 2013/03/08 06:00 [pubmed]
 PHST- 2013/03/08 06:01 [medline]
+PHST- 2013/02/01 00:00 [pmc-release]
 AID - 10.1111/j.1752-4571.2012.00275.x [doi]
 PST - ppublish
 SO  - Evol Appl. 2013 Feb;6(2):180-96. doi: 10.1111/j.1752-4571.2012.00275.x. Epub 2012 
@@ -19957,10 +20114,12 @@ MH  - Trinucleotide Repeats
 PMC - PMC3605623
 EDAT- 2013/02/01 06:00
 MHDA- 2013/05/17 06:00
+PMCR- 2014/03/22
 CRDT- 2013/02/01 06:00
 PHST- 2013/02/01 06:00 [entrez]
 PHST- 2013/02/01 06:00 [pubmed]
 PHST- 2013/05/17 06:00 [medline]
+PHST- 2014/03/22 00:00 [pmc-release]
 AID - S0021-9258(19)33454-4 [pii]
 AID - M112.408211 [pii]
 AID - 10.1074/jbc.M112.408211 [doi]
@@ -20045,12 +20204,14 @@ PMC - PMC3554749
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2013/01/30 06:00
 MHDA- 2013/09/07 06:00
+PMCR- 2013/01/24
 CRDT- 2013/01/30 06:00
 PHST- 2012/09/06 00:00 [received]
 PHST- 2012/12/13 00:00 [accepted]
 PHST- 2013/01/30 06:00 [entrez]
 PHST- 2013/01/30 06:00 [pubmed]
 PHST- 2013/09/07 06:00 [medline]
+PHST- 2013/01/24 00:00 [pmc-release]
 AID - PONE-D-12-26980 [pii]
 AID - 10.1371/journal.pone.0054627 [doi]
 PST - ppublish
@@ -20145,12 +20306,14 @@ PMC - PMC3522691
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2012/12/29 06:00
 MHDA- 2013/06/12 06:00
+PMCR- 2012/12/14
 CRDT- 2012/12/29 06:00
 PHST- 2012/09/06 00:00 [received]
 PHST- 2012/11/12 00:00 [accepted]
 PHST- 2012/12/29 06:00 [entrez]
 PHST- 2012/12/29 06:00 [pubmed]
 PHST- 2013/06/12 06:00 [medline]
+PHST- 2012/12/14 00:00 [pmc-release]
 AID - PONE-D-12-27136 [pii]
 AID - 10.1371/journal.pone.0052271 [doi]
 PST - ppublish
@@ -20305,12 +20468,14 @@ MH  - White People/*genetics
 PMC - PMC3560208
 EDAT- 2012/11/22 06:00
 MHDA- 2013/03/30 06:00
+PMCR- 2012/11/20
 CRDT- 2012/11/22 06:00
 PHST- 2012/04/01 00:00 [received]
 PHST- 2012/10/31 00:00 [accepted]
 PHST- 2012/11/22 06:00 [entrez]
 PHST- 2012/11/22 06:00 [pubmed]
 PHST- 2013/03/30 06:00 [medline]
+PHST- 2012/11/20 00:00 [pmc-release]
 AID - 1471-2350-13-109 [pii]
 AID - 10.1186/1471-2350-13-109 [doi]
 PST - epublish
@@ -20388,10 +20553,12 @@ OT  - CAG repeat polymorphism
 OT  - androgen receptor
 EDAT- 2012/11/09 06:00
 MHDA- 2012/11/09 06:01
+PMCR- 2012/10/31
 CRDT- 2012/11/09 06:00
 PHST- 2012/11/09 06:00 [entrez]
 PHST- 2012/11/09 06:00 [pubmed]
 PHST- 2012/11/09 06:01 [medline]
+PHST- 2012/10/31 00:00 [pmc-release]
 AID - cmc-6-2012-145 [pii]
 AID - 10.4137/CMC.S10553 [doi]
 PST - ppublish
@@ -20744,12 +20911,14 @@ PMC - PMC3394707
 COIS- Competing Interests: The authors have declared that no competing interests exist.
 EDAT- 2012/07/14 06:00
 MHDA- 2013/01/11 06:00
+PMCR- 2012/07/11
 CRDT- 2012/07/14 06:00
 PHST- 2012/03/13 00:00 [received]
 PHST- 2012/06/08 00:00 [accepted]
 PHST- 2012/07/14 06:00 [entrez]
 PHST- 2012/07/14 06:00 [pubmed]
 PHST- 2013/01/11 06:00 [medline]
+PHST- 2012/07/11 00:00 [pmc-release]
 AID - PONE-D-12-07457 [pii]
 AID - 10.1371/journal.pone.0040494 [doi]
 PST - ppublish
@@ -20916,10 +21085,12 @@ MH  - *Trinucleotide Repeat Expansion
 PMC - PMC3441122
 EDAT- 2012/06/28 06:00
 MHDA- 2013/03/15 06:00
+PMCR- 2013/10/01
 CRDT- 2012/06/28 06:00
 PHST- 2012/06/28 06:00 [entrez]
 PHST- 2012/06/28 06:00 [pubmed]
 PHST- 2013/03/15 06:00 [medline]
+PHST- 2013/10/01 00:00 [pmc-release]
 AID - dds246 [pii]
 AID - 10.1093/hmg/dds246 [doi]
 PST - ppublish
@@ -21244,10 +21415,12 @@ OT  - CAG repeat
 OT  - Prostrate cancer (PC)
 EDAT- 2012/06/01 00:00
 MHDA- 2012/06/01 00:01
+PMCR- 2012/06/01
 CRDT- 2013/09/21 06:00
 PHST- 2013/09/21 06:00 [entrez]
 PHST- 2012/06/01 00:00 [pubmed]
 PHST- 2012/06/01 00:01 [medline]
+PHST- 2012/06/01 00:00 [pmc-release]
 AID - bjmg-15-01-31 [pii]
 AID - 10.2478/v10034-012-0005-z [doi]
 PST - ppublish
@@ -21975,6 +22148,7 @@ PMC - PMC3314496
 MID - NIHMS308521
 EDAT- 2011/06/15 06:00
 MHDA- 2012/01/21 06:00
+PMCR- 2012/08/06
 CRDT- 2011/06/14 06:00
 PHST- 2011/01/25 00:00 [received]
 PHST- 2011/04/12 00:00 [revised]
@@ -21982,6 +22156,7 @@ PHST- 2011/05/09 00:00 [accepted]
 PHST- 2011/06/14 06:00 [entrez]
 PHST- 2011/06/15 06:00 [pubmed]
 PHST- 2012/01/21 06:00 [medline]
+PHST- 2012/08/06 00:00 [pmc-release]
 AID - S0303-7207(11)00275-9 [pii]
 AID - 10.1016/j.mce.2011.05.023 [doi]
 PST - ppublish
@@ -22179,10 +22354,12 @@ MH  - Testicular Neoplasms/*classification/epidemiology/*genetics
 PMC - PMC3202310
 EDAT- 2011/06/07 06:00
 MHDA- 2011/10/01 06:00
+PMCR- 2012/08/01
 CRDT- 2011/06/07 06:00
 PHST- 2011/06/07 06:00 [entrez]
 PHST- 2011/06/07 06:00 [pubmed]
 PHST- 2011/10/01 06:00 [medline]
+PHST- 2012/08/01 00:00 [pmc-release]
 AID - bgr104 [pii]
 AID - 10.1093/carcin/bgr104 [doi]
 PST - ppublish
@@ -22344,12 +22521,14 @@ PMC - PMC3156391
 MID - NIHMS298942
 EDAT- 2011/03/30 06:00
 MHDA- 2012/02/04 06:00
+PMCR- 2012/08/01
 CRDT- 2011/03/30 06:00
 PHST- 2011/02/06 00:00 [received]
 PHST- 2011/03/10 00:00 [accepted]
 PHST- 2011/03/30 06:00 [entrez]
 PHST- 2011/03/30 06:00 [pubmed]
 PHST- 2012/02/04 06:00 [medline]
+PHST- 2012/08/01 00:00 [pmc-release]
 AID - 10.1007/s10875-011-9519-5 [doi]
 PST - ppublish
 SO  - J Clin Immunol. 2011 Aug;31(4):567-73. doi: 10.1007/s10875-011-9519-5. Epub 2011 
@@ -22620,10 +22799,12 @@ MH  - *Trinucleotide Repeat Expansion
 PMC - PMC3089464
 EDAT- 2011/01/21 06:00
 MHDA- 2011/08/02 06:00
+PMCR- 2011/01/18
 CRDT- 2011/01/21 06:00
 PHST- 2011/01/21 06:00 [entrez]
 PHST- 2011/01/21 06:00 [pubmed]
 PHST- 2011/08/02 06:00 [medline]
+PHST- 2011/01/18 00:00 [pmc-release]
 AID - gkq1323 [pii]
 AID - 10.1093/nar/gkq1323 [doi]
 PST - ppublish
@@ -22914,12 +23095,14 @@ MH  - Survival
 PMC - PMC3030474
 EDAT- 2010/08/07 06:00
 MHDA- 2011/04/07 06:00
+PMCR- 2011/12/01
 CRDT- 2010/08/07 06:00
 PHST- 2009/12/23 00:00 [received]
 PHST- 2010/04/14 00:00 [accepted]
 PHST- 2010/08/07 06:00 [entrez]
 PHST- 2010/08/07 06:00 [pubmed]
 PHST- 2011/04/07 06:00 [medline]
+PHST- 2011/12/01 00:00 [pmc-release]
 AID - 000313682 [pii]
 AID - ndd0008-0025 [pii]
 AID - 10.1159/000313682 [doi]
@@ -23517,12 +23700,14 @@ OT  - molecular genetics
 OT  - prognosis
 EDAT- 2009/12/04 06:00
 MHDA- 2009/12/04 06:01
+PMCR- 2009/04/20
 CRDT- 2009/12/04 06:00
 PHST- 2009/04/14 00:00 [received]
 PHST- 2009/04/17 00:00 [accepted]
 PHST- 2009/12/04 06:00 [entrez]
 PHST- 2009/12/04 06:00 [pubmed]
 PHST- 2009/12/04 06:01 [medline]
+PHST- 2009/04/20 00:00 [pmc-release]
 PST - epublish
 SO  - Am J Transl Res. 2009 Apr 20;1(3):235-48.
 
@@ -23701,10 +23886,12 @@ MH  - Troponin T/metabolism
 PMC - PMC2737058
 EDAT- 2009/08/21 09:00
 MHDA- 2010/01/13 06:00
+PMCR- 2010/09/01
 CRDT- 2009/08/21 09:00
 PHST- 2009/08/21 09:00 [entrez]
 PHST- 2009/08/21 09:00 [pubmed]
 PHST- 2010/01/13 06:00 [medline]
+PHST- 2010/09/01 00:00 [pmc-release]
 AID - dmm.003301 [pii]
 AID - 0020500 [pii]
 AID - 10.1242/dmm.003301 [doi]
@@ -23798,7 +23985,7 @@ PMID- 19497852
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090928
-LR  - 20211020
+LR  - 20240317
 IS  - 0021-9258 (Print)
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Linking)
@@ -23882,10 +24069,12 @@ MH  - Transcription, Genetic
 PMC - PMC2755854
 EDAT- 2009/06/06 09:00
 MHDA- 2009/09/29 06:00
+PMCR- 2010/08/07
 CRDT- 2009/06/06 09:00
 PHST- 2009/06/06 09:00 [entrez]
 PHST- 2009/06/06 09:00 [pubmed]
 PHST- 2009/09/29 06:00 [medline]
+PHST- 2010/08/07 00:00 [pmc-release]
 AID - S0021-9258(18)49482-3 [pii]
 AID - M109.011494 [pii]
 AID - 10.1074/jbc.M109.011494 [doi]
@@ -24087,10 +24276,12 @@ PMC - PMC2656163
 COIS- The authors declare no conflict of interest.
 EDAT- 2009/02/25 09:00
 MHDA- 2009/03/27 09:00
+PMCR- 2009/09/10
 CRDT- 2009/02/25 09:00
 PHST- 2009/02/25 09:00 [entrez]
 PHST- 2009/02/25 09:00 [pubmed]
 PHST- 2009/03/27 09:00 [medline]
+PHST- 2009/09/10 00:00 [pmc-release]
 AID - 0809819106 [pii]
 AID - 6904 [pii]
 AID - 10.1073/pnas.0809819106 [doi]
@@ -24216,10 +24407,12 @@ PMC - PMC2746676
 MID - NIHMS96954
 EDAT- 2009/02/21 09:00
 MHDA- 2009/04/17 09:00
+PMCR- 2009/08/18
 CRDT- 2009/02/21 09:00
 PHST- 2009/02/21 09:00 [entrez]
 PHST- 2009/02/21 09:00 [pubmed]
 PHST- 2009/04/17 09:00 [medline]
+PHST- 2009/08/18 00:00 [pmc-release]
 AID - 29/7/1987 [pii]
 AID - 3451545 [pii]
 AID - 10.1523/JNEUROSCI.4072-08.2009 [doi]
@@ -24396,12 +24589,14 @@ PMC - PMC4209964
 MID - NIHMS205186
 EDAT- 2009/02/13 09:00
 MHDA- 2009/05/06 09:00
+PMCR- 2014/10/27
 CRDT- 2009/02/13 09:00
 PHST- 2008/12/05 00:00 [received]
 PHST- 2008/12/20 00:00 [accepted]
 PHST- 2009/02/13 09:00 [entrez]
 PHST- 2009/02/13 09:00 [pubmed]
 PHST- 2009/05/06 09:00 [medline]
+PHST- 2014/10/27 00:00 [pmc-release]
 AID - S0969-9961(08)00321-5 [pii]
 AID - 10.1016/j.nbd.2008.12.009 [doi]
 PST - ppublish
@@ -24877,6 +25072,7 @@ PMC - PMC3402034
 MID - NIHMS369145
 EDAT- 2008/10/31 09:00
 MHDA- 2009/03/11 09:00
+PMCR- 2012/07/23
 CRDT- 2008/10/31 09:00
 PHST- 2008/04/15 00:00 [received]
 PHST- 2008/08/13 00:00 [revised]
@@ -24884,6 +25080,7 @@ PHST- 2008/08/25 00:00 [accepted]
 PHST- 2008/10/31 09:00 [pubmed]
 PHST- 2009/03/11 09:00 [medline]
 PHST- 2008/10/31 09:00 [entrez]
+PHST- 2012/07/23 00:00 [pmc-release]
 AID - S0006-3223(08)01087-1 [pii]
 AID - 10.1016/j.biopsych.2008.08.033 [doi]
 PST - ppublish
@@ -26289,10 +26486,12 @@ COIS- Conflict of interest statement: D.A.M., S.M.B., and C.L.J. have filed a pa
       concerning the role of muscle fiber androgen receptor in neuromuscular disease.
 EDAT- 2007/11/07 09:00
 MHDA- 2008/01/11 09:00
+PMCR- 2008/05/13
 CRDT- 2007/11/07 09:00
 PHST- 2007/11/07 09:00 [pubmed]
 PHST- 2008/01/11 09:00 [medline]
 PHST- 2007/11/07 09:00 [entrez]
+PHST- 2008/05/13 00:00 [pmc-release]
 AID - 0705501104 [pii]
 AID - 8242 [pii]
 AID - 10.1073/pnas.0705501104 [doi]
@@ -28481,12 +28680,14 @@ JID - 101190741
 PMC - PMC1488873
 EDAT- 2006/05/16 09:00
 MHDA- 2006/05/16 09:01
+PMCR- 2006/05/12
 CRDT- 2006/05/16 09:00
 PHST- 2006/04/25 00:00 [received]
 PHST- 2006/05/12 00:00 [accepted]
 PHST- 2006/05/16 09:00 [pubmed]
 PHST- 2006/05/16 09:01 [medline]
 PHST- 2006/05/16 09:00 [entrez]
+PHST- 2006/05/12 00:00 [pmc-release]
 AID - 1479-5876-4-21 [pii]
 AID - 10.1186/1479-5876-4-21 [doi]
 PST - epublish
@@ -30856,12 +31057,14 @@ MH  - Risk
 PMC - PMC1196436
 EDAT- 2004/12/01 09:00
 MHDA- 2005/01/26 09:00
+PMCR- 2005/07/01
 CRDT- 2004/12/01 09:00
 PHST- 2004/06/08 00:00 [received]
 PHST- 2004/11/02 00:00 [accepted]
 PHST- 2004/12/01 09:00 [pubmed]
 PHST- 2005/01/26 09:00 [medline]
 PHST- 2004/12/01 09:00 [entrez]
+PHST- 2005/07/01 00:00 [pmc-release]
 AID - S0002-9297(07)62545-2 [pii]
 AID - 41435 [pii]
 AID - 10.1086/427224 [doi]
@@ -31350,10 +31553,12 @@ MH  - Trinucleotide Repeats/*genetics
 PMC - PMC6147814
 EDAT- 2004/08/18 05:00
 MHDA- 2004/11/05 09:00
+PMCR- 2004/01/01
 CRDT- 2004/08/18 05:00
 PHST- 2004/08/18 05:00 [pubmed]
 PHST- 2004/11/05 09:00 [medline]
 PHST- 2004/08/18 05:00 [entrez]
+PHST- 2004/01/01 00:00 [pmc-release]
 AID - asm-1-21 [pii]
 AID - 10.5144/0256-4947.2004.21 [doi]
 PST - ppublish
@@ -37983,10 +38188,12 @@ MH  - Tumor Cells, Cultured
 PMC - PMC16027
 EDAT- 2000/03/16 09:00
 MHDA- 2000/04/29 09:00
+PMCR- 2000/09/14
 CRDT- 2000/03/16 09:00
 PHST- 2000/03/16 09:00 [pubmed]
 PHST- 2000/04/29 09:00 [medline]
 PHST- 2000/03/16 09:00 [entrez]
+PHST- 2000/09/14 00:00 [pmc-release]
 AID - 97/6/2898 [pii]
 AID - 5830 [pii]
 AID - 10.1073/pnas.97.6.2898 [doi]
@@ -38643,10 +38850,12 @@ MH  - Trinucleotide Repeats/*genetics
 PMC - PMC1288267
 EDAT- 1999/09/16 09:00
 MHDA- 2000/10/07 11:01
+PMCR- 2000/04/01
 CRDT- 1999/09/16 09:00
 PHST- 1999/09/16 09:00 [pubmed]
 PHST- 2000/10/07 11:01 [medline]
 PHST- 1999/09/16 09:00 [entrez]
+PHST- 2000/04/01 00:00 [pmc-release]
 AID - S0002-9297(07)62599-3 [pii]
 AID - 990016 [pii]
 AID - 10.1086/302578 [doi]
@@ -38724,10 +38933,12 @@ MH  - Sex Factors
 PMC - PMC1752923
 EDAT- 1999/07/27 00:00
 MHDA- 1999/07/27 00:01
+PMCR- 2002/08/01
 CRDT- 1999/07/27 00:00
 PHST- 1999/07/27 00:00 [pubmed]
 PHST- 1999/07/27 00:01 [medline]
 PHST- 1999/07/27 00:00 [entrez]
+PHST- 2002/08/01 00:00 [pmc-release]
 AID - 10.1136/ard.58.8.500 [doi]
 PST - ppublish
 SO  - Ann Rheum Dis. 1999 Aug;58(8):500-2. doi: 10.1136/ard.58.8.500.
@@ -40052,10 +40263,12 @@ MH  - *X Chromosome
 PMC - PMC1716002
 EDAT- 1997/10/23 00:00
 MHDA- 1997/10/23 00:01
+PMCR- 1998/04/01
 CRDT- 1997/10/23 00:00
 PHST- 1997/10/23 00:00 [pubmed]
 PHST- 1997/10/23 00:01 [medline]
 PHST- 1997/10/23 00:00 [entrez]
+PHST- 1998/04/01 00:00 [pmc-release]
 AID - S0002-9297(07)64207-4 [pii]
 AID - 10.1086/514872 [doi]
 PST - ppublish
@@ -40201,10 +40414,12 @@ MH  - Sequence Analysis, DNA
 PMC - PMC1858174
 EDAT- 1997/04/01 00:00
 MHDA- 1997/04/01 00:01
+PMCR- 1997/10/01
 CRDT- 1997/04/01 00:00
 PHST- 1997/04/01 00:00 [pubmed]
 PHST- 1997/04/01 00:01 [medline]
 PHST- 1997/04/01 00:00 [entrez]
+PHST- 1997/10/01 00:00 [pmc-release]
 PST - ppublish
 SO  - Am J Pathol. 1997 Apr;150(4):1173-8.
 
@@ -40569,10 +40784,12 @@ MH  - X Chromosome
 PMC - PMC507623
 EDAT- 1996/10/15 00:00
 MHDA- 1996/10/15 00:01
+PMCR- 1996/10/15
 CRDT- 1996/10/15 00:00
 PHST- 1996/10/15 00:00 [pubmed]
 PHST- 1996/10/15 00:01 [medline]
 PHST- 1996/10/15 00:00 [entrez]
+PHST- 1996/10/15 00:00 [pmc-release]
 AID - 10.1172/JCI118984 [doi]
 PST - ppublish
 SO  - J Clin Invest. 1996 Oct 15;98(8):1835-42. doi: 10.1172/JCI118984.

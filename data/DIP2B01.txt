@@ -1,15 +1,18 @@
 
 PMID- 38418263
 OWN - NLM
-STAT- Publisher
-LR  - 20240228
+STAT- MEDLINE
+DCOM- 20240318
+LR  - 20240318
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
-DP  - 2024 Feb 26
+VI  - 101
+DP  - 2024 Mar
 TI  - Genome-wide enhancer-associated tandem repeats are expanded in cardiomyopathy.
 PG  - 105027
 LID - S2352-3964(24)00062-8 [pii]
 LID - 10.1016/j.ebiom.2024.105027 [doi]
+LID - 105027
 AB  - BACKGROUND: Cardiomyopathy is a clinically and genetically heterogeneous heart 
       condition that can lead to heart failure and sudden cardiac death in childhood. 
       While it has a strong genetic basis, the genetic aetiology for over 50% of 
@@ -199,12 +202,23 @@ AD  - Genetics and Genome Biology, The Hospital for Sick Children; Toronto, Onta
       Toronto, Ontario, Canada. Electronic address: ryan.yuen@sickkids.ca.
 LA  - eng
 PT  - Journal Article
-DEP - 20240226
+DEP - 20240227
 PL  - Netherlands
 TA  - EBioMedicine
 JT  - EBioMedicine
 JID - 101647039
+RN  - 0 (DIP2B protein, human)
+RN  - 0 (Nerve Tissue Proteins)
 SB  - IM
+MH  - Humans
+MH  - Adult
+MH  - *Heart Defects, Congenital/genetics
+MH  - Tandem Repeat Sequences/genetics
+MH  - DNA Methylation
+MH  - *Cardiomyopathies/genetics
+MH  - Ontario
+MH  - Nerve Tissue Proteins/genetics
+PMC - PMC10944212
 OTO - NOTNLM
 OT  - Cardiomyopathy (CMP)
 OT  - Long-read sequencing
@@ -230,18 +244,22 @@ COIS- Declaration of interests SM holds the Heart and Stroke Foundation of
       Health Agency of Canada and Women's and Children's Health Research. Other authors 
       declare that they have no competing interests.
 EDAT- 2024/02/29 00:43
-MHDA- 2024/02/29 00:43
+MHDA- 2024/03/18 06:44
+PMCR- 2024/02/27
 CRDT- 2024/02/28 21:52
 PHST- 2023/09/29 00:00 [received]
 PHST- 2024/02/05 00:00 [revised]
 PHST- 2024/02/06 00:00 [accepted]
-PHST- 2024/02/29 00:43 [medline]
+PHST- 2024/03/18 06:44 [medline]
 PHST- 2024/02/29 00:43 [pubmed]
 PHST- 2024/02/28 21:52 [entrez]
+PHST- 2024/02/27 00:00 [pmc-release]
 AID - S2352-3964(24)00062-8 [pii]
+AID - 105027 [pii]
 AID - 10.1016/j.ebiom.2024.105027 [doi]
-PST - aheadofprint
-SO  - EBioMedicine. 2024 Feb 26:105027. doi: 10.1016/j.ebiom.2024.105027.
+PST - ppublish
+SO  - EBioMedicine. 2024 Mar;101:105027. doi: 10.1016/j.ebiom.2024.105027. Epub 2024 
+      Feb 27.
 
 PMID- 37248219
 OWN - NLM
@@ -417,12 +435,14 @@ COIS- W.J.R., R.J.H., D.M.P., C.T.S., and A.M.W. are current or past employees o
       PacificBiosciences. The remaining authors declare no competing interests.
 EDAT- 2023/05/30 01:06
 MHDA- 2023/05/31 06:41
+PMCR- 2023/05/29
 CRDT- 2023/05/29 23:14
 PHST- 2022/09/19 00:00 [received]
 PHST- 2023/05/15 00:00 [accepted]
 PHST- 2023/05/31 06:41 [medline]
 PHST- 2023/05/30 01:06 [pubmed]
 PHST- 2023/05/29 23:14 [entrez]
+PHST- 2023/05/29 00:00 [pmc-release]
 AID - 10.1038/s41467-023-38782-1 [pii]
 AID - 38782 [pii]
 AID - 10.1038/s41467-023-38782-1 [doi]
@@ -714,12 +734,14 @@ JID - 101671068
 PMC - PMC10117699
 EDAT- 2023/04/24 06:42
 MHDA- 2023/04/24 06:43
+PMCR- 2023/03/14
 CRDT- 2023/04/24 03:49
 PHST- 2022/09/20 00:00 [received]
 PHST- 2023/01/27 00:00 [accepted]
 PHST- 2023/04/24 06:43 [medline]
 PHST- 2023/04/24 06:42 [pubmed]
 PHST- 2023/04/24 03:49 [entrez]
+PHST- 2023/03/14 00:00 [pmc-release]
 AID - NXG-2023-000007 [pii]
 AID - 10.1212/NXG.0000000000200064 [doi]
 PST - epublish
@@ -867,6 +889,7 @@ OT  - tandem repeats
 OT  - whole-genome sequencing
 EDAT- 2021/10/09 06:00
 MHDA- 2021/10/09 06:01
+PMCR- 2021/09/14
 CRDT- 2021/10/08 07:17
 PHST- 2021/05/10 00:00 [received]
 PHST- 2021/07/23 00:00 [revised]
@@ -874,6 +897,7 @@ PHST- 2021/07/29 00:00 [accepted]
 PHST- 2021/10/08 07:17 [entrez]
 PHST- 2021/10/09 06:00 [pubmed]
 PHST- 2021/10/09 06:01 [medline]
+PHST- 2021/09/14 00:00 [pmc-release]
 AID - fcab207 [pii]
 AID - 10.1093/braincomms/fcab207 [doi]
 PST - epublish
@@ -964,12 +988,14 @@ MH  - *Trinucleotide Repeat Expansion
 PMC - PMC1785358
 EDAT- 2007/01/20 09:00
 MHDA- 2007/03/14 09:00
+PMCR- 2007/08/01
 CRDT- 2007/01/20 09:00
 PHST- 2006/09/28 00:00 [received]
 PHST- 2006/11/10 00:00 [accepted]
 PHST- 2007/01/20 09:00 [pubmed]
 PHST- 2007/03/14 09:00 [medline]
 PHST- 2007/01/20 09:00 [entrez]
+PHST- 2007/08/01 00:00 [pmc-release]
 AID - S0002-9297(07)62680-9 [pii]
 AID - 44228 [pii]
 AID - 10.1086/510800 [doi]

@@ -123,7 +123,7 @@ SO  - Mol Biol Rep. 2024 Jan 16;51(1):113. doi: 10.1007/s11033-023-09023-x.
 PMID- 37810464
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20240210
+LR  - 20240320
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 5
@@ -220,6 +220,8 @@ AD  - Clinical Pharmacology, William Harvey Research Institute, School of Medici
 LA  - eng
 GR  - WT_/Wellcome Trust/United Kingdom
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 DEP - 20230914
 PL  - England
@@ -356,6 +358,7 @@ FIR - Zarowiecki, M
 IR  - Zarowiecki M
 EDAT- 2023/10/09 12:42
 MHDA- 2023/10/09 12:43
+PMCR- 2023/09/14
 CRDT- 2023/10/09 06:04
 PHST- 2023/01/16 00:00 [received]
 PHST- 2023/07/11 00:00 [revised]
@@ -363,6 +366,7 @@ PHST- 2023/09/12 00:00 [accepted]
 PHST- 2023/10/09 12:43 [medline]
 PHST- 2023/10/09 12:42 [pubmed]
 PHST- 2023/10/09 06:04 [entrez]
+PHST- 2023/09/14 00:00 [pmc-release]
 AID - fcad244 [pii]
 AID - 10.1093/braincomms/fcad244 [doi]
 PST - epublish
@@ -509,6 +513,7 @@ OT  - haplotype
 OT  - spinocerebellar ataxia
 EDAT- 2023/06/19 06:42
 MHDA- 2023/06/19 06:43
+PMCR- 2023/05/05
 CRDT- 2023/06/19 02:39
 PHST- 2022/12/28 00:00 [received]
 PHST- 2023/03/09 00:00 [revised]
@@ -516,6 +521,7 @@ PHST- 2023/03/29 00:00 [accepted]
 PHST- 2023/06/19 06:43 [medline]
 PHST- 2023/06/19 06:42 [pubmed]
 PHST- 2023/06/19 02:39 [entrez]
+PHST- 2023/05/05 00:00 [pmc-release]
 AID - MDC313740 [pii]
 AID - 10.1002/mdc3.13740 [doi]
 PST - epublish
@@ -626,12 +632,14 @@ COIS- The authors declare that the research was conducted in the absence of any
       conflict of interest.
 EDAT- 2023/04/14 06:00
 MHDA- 2023/04/14 06:01
+PMCR- 2023/03/27
 CRDT- 2023/04/13 02:05
 PHST- 2022/11/28 00:00 [received]
 PHST- 2023/03/15 00:00 [accepted]
 PHST- 2023/04/14 06:01 [medline]
 PHST- 2023/04/13 02:05 [entrez]
 PHST- 2023/04/14 06:00 [pubmed]
+PHST- 2023/03/27 00:00 [pmc-release]
 AID - 1110307 [pii]
 AID - 10.3389/fgene.2023.1110307 [doi]
 PST - epublish
@@ -1253,12 +1261,14 @@ JID - 101671068
 PMC - PMC9749935
 EDAT- 2022/12/20 06:00
 MHDA- 2022/12/20 06:01
+PMCR- 2022/11/14
 CRDT- 2022/12/19 03:39
 PHST- 2022/04/29 00:00 [received]
 PHST- 2022/09/01 00:00 [accepted]
 PHST- 2022/12/19 03:39 [entrez]
 PHST- 2022/12/20 06:00 [pubmed]
 PHST- 2022/12/20 06:01 [medline]
+PHST- 2022/11/14 00:00 [pmc-release]
 AID - NXG-2022-200041 [pii]
 AID - 10.1212/NXG.0000000000200038 [doi]
 PST - epublish
@@ -1382,12 +1392,14 @@ COIS- The authors declare that the research was conducted in the absence of any
       conflict of interest.
 EDAT- 2022/05/24 06:00
 MHDA- 2022/05/24 06:01
+PMCR- 2022/05/06
 CRDT- 2022/05/23 03:42
 PHST- 2021/11/08 00:00 [received]
 PHST- 2022/04/04 00:00 [accepted]
 PHST- 2022/05/23 03:42 [entrez]
 PHST- 2022/05/24 06:00 [pubmed]
 PHST- 2022/05/24 06:01 [medline]
+PHST- 2022/05/06 00:00 [pmc-release]
 AID - 10.3389/fneur.2022.811202 [doi]
 PST - epublish
 SO  - Front Neurol. 2022 May 6;13:811202. doi: 10.3389/fneur.2022.811202. eCollection 
@@ -1502,7 +1514,7 @@ SO  - Int J Biol Macromol. 2022 Mar 15;201:607-615. doi:
 PMID- 34179866
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20220716
+LR  - 20240402
 IS  - 2667-2421 (Electronic)
 IS  - 2667-2421 (Linking)
 VI  - 10
@@ -1594,6 +1606,7 @@ AD  - Neurology Research Group, Neuroscience Institute, University of Cape Town,
 AD  - Neurology division, Department of Medicine, University of Cape Town, Cape Town, 
       South Africa.
 LA  - eng
+GR  - U24 HG006941/HG/NHGRI NIH HHS/United States
 GR  - U54 NS092091/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20210210
@@ -1610,12 +1623,14 @@ OT  - Repeat expansion
 COIS- None.
 EDAT- 2021/06/29 06:00
 MHDA- 2021/06/29 06:01
+PMCR- 2021/02/10
 CRDT- 2021/06/28 06:15
 PHST- 2020/09/22 00:00 [received]
 PHST- 2021/02/03 00:00 [accepted]
 PHST- 2021/06/28 06:15 [entrez]
 PHST- 2021/06/29 06:00 [pubmed]
 PHST- 2021/06/29 06:01 [medline]
+PHST- 2021/02/10 00:00 [pmc-release]
 AID - S2667-2421(21)00011-7 [pii]
 AID - 10.1016/j.ibneur.2021.02.002 [doi]
 PST - epublish
@@ -2310,6 +2325,7 @@ OT  - neurodegeneration
 COIS- Declaration of Interests The authors declare no competing interests.
 EDAT- 2020/05/07 06:00
 MHDA- 2020/10/21 06:00
+PMCR- 2021/07/22
 CRDT- 2020/05/07 06:00
 PHST- 2019/12/03 00:00 [received]
 PHST- 2020/03/11 00:00 [revised]
@@ -2317,6 +2333,7 @@ PHST- 2020/04/06 00:00 [accepted]
 PHST- 2020/05/07 06:00 [pubmed]
 PHST- 2020/10/21 06:00 [medline]
 PHST- 2020/05/07 06:00 [entrez]
+PHST- 2021/07/22 00:00 [pmc-release]
 AID - S0896-6273(20)30280-4 [pii]
 AID - 10.1016/j.neuron.2020.04.011 [doi]
 PST - ppublish
@@ -2494,6 +2511,7 @@ OT  - poly(PR)
 COIS- Declaration of Interests The authors declare no competing interests.
 EDAT- 2020/05/07 06:00
 MHDA- 2021/06/04 06:00
+PMCR- 2020/09/09
 CRDT- 2020/05/07 06:00
 PHST- 2019/12/03 00:00 [received]
 PHST- 2020/02/25 00:00 [revised]
@@ -2501,6 +2519,7 @@ PHST- 2020/04/14 00:00 [accepted]
 PHST- 2020/05/07 06:00 [entrez]
 PHST- 2020/05/07 06:00 [pubmed]
 PHST- 2021/06/04 06:00 [medline]
+PHST- 2020/09/09 00:00 [pmc-release]
 AID - S2211-1247(20)30565-9 [pii]
 AID - 10.1016/j.celrep.2020.107616 [doi]
 PST - ppublish
@@ -2740,6 +2759,7 @@ OT  - Spinocerebellar ataxia
 COIS- The authors declare no conflict of interest.
 EDAT- 2019/11/19 06:00
 MHDA- 2019/11/19 06:01
+PMCR- 2019/10/24
 CRDT- 2019/11/19 06:00
 PHST- 2019/05/22 00:00 [received]
 PHST- 2019/09/20 00:00 [revised]
@@ -2747,6 +2767,7 @@ PHST- 2019/10/10 00:00 [accepted]
 PHST- 2019/11/19 06:00 [entrez]
 PHST- 2019/11/19 06:00 [pubmed]
 PHST- 2019/11/19 06:01 [medline]
+PHST- 2019/10/24 00:00 [pmc-release]
 AID - S2405-6502(19)30035-8 [pii]
 AID - 100211 [pii]
 AID - 10.1016/j.ensci.2019.100211 [doi]
@@ -2935,12 +2956,14 @@ JID - 101671068
 PMC - PMC6089696
 EDAT- 2018/08/16 06:00
 MHDA- 2018/08/16 06:01
+PMCR- 2018/08/01
 CRDT- 2018/08/16 06:00
 PHST- 2018/01/25 00:00 [received]
 PHST- 2018/05/07 00:00 [accepted]
 PHST- 2018/08/16 06:00 [entrez]
 PHST- 2018/08/16 06:00 [pubmed]
 PHST- 2018/08/16 06:01 [medline]
+PHST- 2018/08/01 00:00 [pmc-release]
 AID - NG2018007443 [pii]
 AID - 10.1212/NXG.0000000000000252 [doi]
 PST - epublish
@@ -2951,7 +2974,7 @@ PMID- 29316893
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180620
-LR  - 20220331
+LR  - 20240315
 IS  - 1471-2377 (Electronic)
 IS  - 1471-2377 (Linking)
 VI  - 18
@@ -3057,12 +3080,14 @@ COIS- ETHICS APPROVAL AND CONSENT TO PARTICIPATE: All participants gave their in
       published maps and institutional affiliations.
 EDAT- 2018/01/11 06:00
 MHDA- 2018/06/21 06:00
+PMCR- 2018/01/09
 CRDT- 2018/01/11 06:00
 PHST- 2017/06/22 00:00 [received]
 PHST- 2017/12/20 00:00 [accepted]
 PHST- 2018/01/11 06:00 [entrez]
 PHST- 2018/01/11 06:00 [pubmed]
 PHST- 2018/06/21 06:00 [medline]
+PHST- 2018/01/09 00:00 [pmc-release]
 AID - 10.1186/s12883-017-1009-9 [pii]
 AID - 1009 [pii]
 AID - 10.1186/s12883-017-1009-9 [doi]
@@ -3160,10 +3185,12 @@ OT  - hexanucleotide repeats
 COIS- The authors declare no competing financial interest.
 EDAT- 2017/12/28 06:00
 MHDA- 2019/05/22 06:00
+PMCR- 2019/04/01
 CRDT- 2017/12/28 06:00
 PHST- 2017/12/28 06:00 [pubmed]
 PHST- 2019/05/22 06:00 [medline]
 PHST- 2017/12/28 06:00 [entrez]
+PHST- 2019/04/01 00:00 [pmc-release]
 AID - 10.1021/acschemneuro.7b00476 [doi]
 PST - ppublish
 SO  - ACS Chem Neurosci. 2018 May 16;9(5):1104-1117. doi: 10.1021/acschemneuro.7b00476. 
@@ -3263,6 +3290,7 @@ OT  - iPSC
 OT  - motor neuron
 EDAT- 2017/09/18 06:00
 MHDA- 2017/09/18 06:01
+PMCR- 2017/06/23
 CRDT- 2017/09/18 06:00
 PHST- 2016/12/29 00:00 [received]
 PHST- 2017/06/21 00:00 [revised]
@@ -3270,6 +3298,7 @@ PHST- 2017/06/21 00:00 [accepted]
 PHST- 2017/09/18 06:00 [entrez]
 PHST- 2017/09/18 06:00 [pubmed]
 PHST- 2017/09/18 06:01 [medline]
+PHST- 2017/06/23 00:00 [pmc-release]
 AID - S2162-2531(17)30203-2 [pii]
 AID - 10.1016/j.omtn.2017.06.017 [doi]
 PST - ppublish
@@ -3609,12 +3638,14 @@ JID - 101671068
 PMC - PMC5515602
 EDAT- 2017/08/02 06:00
 MHDA- 2017/08/02 06:01
+PMCR- 2017/07/18
 CRDT- 2017/08/02 06:00
 PHST- 2016/09/20 00:00 [received]
 PHST- 2017/05/10 00:00 [accepted]
 PHST- 2017/08/02 06:00 [entrez]
 PHST- 2017/08/02 06:00 [pubmed]
 PHST- 2017/08/02 06:01 [medline]
+PHST- 2017/07/18 00:00 [pmc-release]
 AID - NG2016003707 [pii]
 AID - 10.1212/NXG.0000000000000174 [doi]
 PST - epublish
@@ -3731,12 +3762,14 @@ JID - 101671068
 PMC - PMC4830187
 EDAT- 2016/04/29 06:00
 MHDA- 2016/04/29 06:01
+PMCR- 2016/04/12
 CRDT- 2016/04/29 06:00
 PHST- 2015/08/04 00:00 [received]
 PHST- 2016/03/01 00:00 [accepted]
 PHST- 2016/04/29 06:00 [entrez]
 PHST- 2016/04/29 06:00 [pubmed]
 PHST- 2016/04/29 06:01 [medline]
+PHST- 2016/04/12 00:00 [pmc-release]
 AID - NG2015000976 [pii]
 AID - 10.1212/NXG.0000000000000068 [doi]
 PST - epublish
@@ -4259,6 +4292,7 @@ COIS- Disclosure Statement: The authors state no actual or potential conflicts o
       interest exist
 EDAT- 2013/11/26 06:00
 MHDA- 2014/09/30 06:00
+PMCR- 2015/04/01
 CRDT- 2013/11/26 06:00
 PHST- 2013/08/27 00:00 [received]
 PHST- 2013/09/16 00:00 [revised]
@@ -4266,6 +4300,7 @@ PHST- 2013/09/19 00:00 [accepted]
 PHST- 2013/11/26 06:00 [entrez]
 PHST- 2013/11/26 06:00 [pubmed]
 PHST- 2014/09/30 06:00 [medline]
+PHST- 2015/04/01 00:00 [pmc-release]
 AID - S0197-4580(13)00426-0 [pii]
 AID - 10.1016/j.neurobiolaging.2013.09.024 [doi]
 PST - ppublish
@@ -4372,7 +4407,7 @@ PMID- 22492559
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120625
-LR  - 20211021
+LR  - 20240322
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -4481,10 +4516,12 @@ MH  - Trinucleotide Repeat Expansion/*genetics
 PMC - PMC3338928
 EDAT- 2012/04/12 06:00
 MHDA- 2012/06/26 06:00
+PMCR- 2012/04/03
 CRDT- 2012/04/12 06:00
 PHST- 2012/04/12 06:00 [entrez]
 PHST- 2012/04/12 06:00 [pubmed]
 PHST- 2012/06/26 06:00 [medline]
+PHST- 2012/04/03 00:00 [pmc-release]
 AID - aws069 [pii]
 AID - 10.1093/brain/aws069 [doi]
 PST - ppublish
@@ -4591,6 +4628,7 @@ MH  - Spinocerebellar Ataxias/classification/*genetics/pathology
 PMC - PMC3135815
 EDAT- 2011/06/21 06:00
 MHDA- 2011/09/20 06:00
+PMCR- 2012/01/15
 CRDT- 2011/06/21 06:00
 PHST- 2011/02/23 00:00 [received]
 PHST- 2011/05/08 00:00 [revised]
@@ -4598,6 +4636,7 @@ PHST- 2011/05/18 00:00 [accepted]
 PHST- 2011/06/21 06:00 [entrez]
 PHST- 2011/06/21 06:00 [pubmed]
 PHST- 2011/09/20 06:00 [medline]
+PHST- 2012/01/15 00:00 [pmc-release]
 AID - S0002-9297(11)00208-4 [pii]
 AID - AJHG912 [pii]
 AID - 10.1016/j.ajhg.2011.05.015 [doi]

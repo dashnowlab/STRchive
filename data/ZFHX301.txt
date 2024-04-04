@@ -1,13 +1,105 @@
 
-PMID- 38197134
+PMID- 38472396
 OWN - NLM
 STAT- Publisher
-LR  - 20240110
+LR  - 20240313
+IS  - 1432-1459 (Electronic)
+IS  - 0340-5354 (Linking)
+DP  - 2024 Mar 12
+TI  - FGF14 GAA repeat expansion and ZFHX3 GGC repeat expansion in clinically diagnosed 
+      multiple system atrophy patients.
+LID - 10.1007/s00415-024-12308-1 [doi]
+FAU - Matsushima, Masaaki
+AU  - Matsushima M
+AD  - Department of Neurology, Faculty of Medicine and Graduate School of Medicine, 
+      Hokkaido University, Kita-15, Nishi-7, Kita-ku, Sapporo, 060-8638, Japan.
+FAU - Yaguchi, Hiroaki
+AU  - Yaguchi H
+AD  - Department of Neurology, Faculty of Medicine and Graduate School of Medicine, 
+      Hokkaido University, Kita-15, Nishi-7, Kita-ku, Sapporo, 060-8638, Japan.
+FAU - Koshimizu, Eriko
+AU  - Koshimizu E
+AD  - Department of Human Genetics, Yokohama City University Graduate School of 
+      Medicine, Yokohama, Japan.
+FAU - Kudo, Akihiko
+AU  - Kudo A
+AD  - Department of Neurology, Faculty of Medicine and Graduate School of Medicine, 
+      Hokkaido University, Kita-15, Nishi-7, Kita-ku, Sapporo, 060-8638, Japan.
+FAU - Shirai, Shinichi
+AU  - Shirai S
+AD  - Department of Neurology, Faculty of Medicine and Graduate School of Medicine, 
+      Hokkaido University, Kita-15, Nishi-7, Kita-ku, Sapporo, 060-8638, Japan.
+FAU - Matsuoka, Takeshi
+AU  - Matsuoka T
+AD  - Department of Neurology, Date Red Cross Hospital, Date, Japan.
+FAU - Ura, Shigehisa
+AU  - Ura S
+AD  - Department of Neurology, Japanese Red Cross Asahikawa Hospital, Asahikawa, Japan.
+FAU - Kawashima, Atsushi
+AU  - Kawashima A
+AD  - Sapporo Neurology Hospital, Sapporo, Japan.
+FAU - Fukazawa, Toshiyuki
+AU  - Fukazawa T
+AD  - Sapporo Neurology Hospital, Sapporo, Japan.
+FAU - Miyatake, Satoko
+AU  - Miyatake S
+AD  - Department of Human Genetics, Yokohama City University Graduate School of 
+      Medicine, Yokohama, Japan.
+AD  - Department of Clinical Genetics, Yokohama City University Hospital, Yokohama, 
+      Japan.
+FAU - Matsumoto, Naomichi
+AU  - Matsumoto N
+AD  - Department of Human Genetics, Yokohama City University Graduate School of 
+      Medicine, Yokohama, Japan.
+FAU - Yabe, Ichiro
+AU  - Yabe I
+AUID- ORCID: 0000-0002-1734-7997
+AD  - Department of Neurology, Faculty of Medicine and Graduate School of Medicine, 
+      Hokkaido University, Kita-15, Nishi-7, Kita-ku, Sapporo, 060-8638, Japan. 
+      yabe@med.hokudai.ac.jp.
+LA  - eng
+GR  - JP23ek0109674/Japan Agency for Medical Research and Development/
+GR  - JP23ek0109549/Japan Agency for Medical Research and Development/
+GR  - JP23ek0109617/Japan Agency for Medical Research and Development/
+GR  - JP23ek0109648/Japan Agency for Medical Research and Development/
+GR  - JP23ek0109677/Japan Agency for Medical Research and Development/
+GR  - JP23H02829/Japan Society for the Promotion of Science/
+GR  - JP21K07869/Japan Society for the Promotion of Science/
+GR  - 23FC1010/Research Committee for Ataxic Disease/
+PT  - Letter
+DEP - 20240312
+PL  - Germany
+TA  - J Neurol
+JT  - Journal of neurology
+JID - 0423161
+SB  - IM
+EDAT- 2024/03/13 06:47
+MHDA- 2024/03/13 06:47
+CRDT- 2024/03/13 00:59
+PHST- 2024/01/11 00:00 [received]
+PHST- 2024/03/04 00:00 [accepted]
+PHST- 2024/03/02 00:00 [revised]
+PHST- 2024/03/13 06:47 [medline]
+PHST- 2024/03/13 06:47 [pubmed]
+PHST- 2024/03/13 00:59 [entrez]
+AID - 10.1007/s00415-024-12308-1 [pii]
+AID - 10.1007/s00415-024-12308-1 [doi]
+PST - aheadofprint
+SO  - J Neurol. 2024 Mar 12. doi: 10.1007/s00415-024-12308-1.
+
+PMID- 38197134
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20240326
+LR  - 20240326
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
-DP  - 2024 Jan 10
+VI  - 39
+IP  - 3
+DP  - 2024 Mar
 TI  - Adaptive Long-Read Sequencing Reveals GGC Repeat Expansion in ZFHX3 Associated 
       with Spinocerebellar Ataxia Type 4.
+PG  - 486-497
 LID - 10.1002/mds.29704 [doi]
 AB  - BACKGROUND: Spinocerebellar ataxia type 4 (SCA4) is an autosomal dominant ataxia 
       with invariable sensory neuropathy originally described in a family with Swedish 
@@ -182,31 +274,38 @@ AD  - Weill Institute for Neuroscience, University of California San Francisco, 
 AD  - Kavli Institute for Fundamental Neuroscience, University of California San 
       Francisco, San Francisco, California, USA.
 LA  - eng
-GR  - MRC/
-GR  - Leonard Wolfson Foundation/
+GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 DEP - 20240110
 PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
+RN  - 143258-00-8 (ZFHX3 protein, human)
+RN  - 0 (Homeodomain Proteins)
 SB  - IM
+MH  - Humans
+MH  - Pedigree
+MH  - *Spinocerebellar Ataxias/genetics
+MH  - *Cerebellar Ataxia/genetics
+MH  - Exons
+MH  - Homeodomain Proteins/genetics
 OTO - NOTNLM
 OT  - ataxia
 OT  - long-read sequencing
 OT  - repeat expansion disorder
 EDAT- 2024/01/10 06:42
-MHDA- 2024/01/10 06:42
+MHDA- 2024/03/26 06:45
 CRDT- 2024/01/10 03:53
 PHST- 2023/11/29 00:00 [revised]
 PHST- 2023/11/03 00:00 [received]
 PHST- 2023/12/15 00:00 [accepted]
-PHST- 2024/01/10 06:42 [medline]
+PHST- 2024/03/26 06:45 [medline]
 PHST- 2024/01/10 06:42 [pubmed]
 PHST- 2024/01/10 03:53 [entrez]
 AID - 10.1002/mds.29704 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2024 Jan 10. doi: 10.1002/mds.29704.
+PST - ppublish
+SO  - Mov Disord. 2024 Mar;39(3):486-497. doi: 10.1002/mds.29704. Epub 2024 Jan 10.
 
 PMID- 38145611
 OWN - NLM
@@ -473,6 +572,7 @@ OT  - trinucelotide repeats
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2023/12/01 00:43
 MHDA- 2024/01/08 06:42
+PMCR- 2023/11/29
 CRDT- 2023/11/30 21:46
 PHST- 2023/10/23 00:00 [received]
 PHST- 2023/11/17 00:00 [revised]
@@ -480,6 +580,7 @@ PHST- 2023/11/19 00:00 [accepted]
 PHST- 2024/01/08 06:42 [medline]
 PHST- 2023/12/01 00:43 [pubmed]
 PHST- 2023/11/30 21:46 [entrez]
+PHST- 2023/11/29 00:00 [pmc-release]
 AID - S0002-9297(23)00403-2 [pii]
 AID - 10.1016/j.ajhg.2023.11.008 [doi]
 PST - ppublish
