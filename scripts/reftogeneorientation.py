@@ -1,9 +1,7 @@
 from Bio.Seq import Seq
 import pandas as pd
-from itertools import product
 import re
 import numpy as np
-import math
 import doctest
 import sys
 
