@@ -269,13 +269,17 @@ SO  - Mol Cell. 2024 Feb 1;84(3):413-414. doi: 10.1016/j.molcel.2023.12.042.
 
 PMID- 38164622
 OWN - NLM
-STAT- Publisher
-LR  - 20240319
+STAT- MEDLINE
+DCOM- 20240411
+LR  - 20240411
 IS  - 1552-4833 (Electronic)
 IS  - 1552-4825 (Linking)
-DP  - 2024 Jan 2
+VI  - 194
+IP  - 5
+DP  - 2024 May
 TI  - Fragile X syndrome in the largest world clustering. I. Genetic epidemiology and 
       founder effect outline.
+PG  - e63523
 LID - 10.1002/ajmg.a.63523 [doi]
 AB  - The FMR1 5' regulation gene region harbors a CGG trinucleotide repeat expansion 
       (CGG-TRE) that causes Fragile X syndrome (FXS) when it expands to more than 200 
@@ -322,7 +326,18 @@ PL  - United States
 TA  - Am J Med Genet A
 JT  - American journal of medical genetics. Part A
 JID - 101235741
+RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
+MH  - Male
+MH  - Humans
+MH  - Female
+MH  - *Fragile X Syndrome/epidemiology/genetics
+MH  - Founder Effect
+MH  - Molecular Epidemiology
+MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Trinucleotide Repeat Expansion
+MH  - Mutation
 OTO - NOTNLM
 OT  - Colombia
 OT  - FMR1
@@ -331,17 +346,18 @@ OT  - exomic sequencing
 OT  - founder effect
 OT  - population isolates
 EDAT- 2024/01/02 11:45
-MHDA- 2024/01/02 11:45
+MHDA- 2024/04/11 06:43
 CRDT- 2024/01/02 03:53
 PHST- 2023/09/19 00:00 [revised]
 PHST- 2023/04/04 00:00 [received]
 PHST- 2023/12/16 00:00 [accepted]
+PHST- 2024/04/11 06:43 [medline]
 PHST- 2024/01/02 11:45 [pubmed]
-PHST- 2024/01/02 11:45 [medline]
 PHST- 2024/01/02 03:53 [entrez]
 AID - 10.1002/ajmg.a.63523 [doi]
-PST - aheadofprint
-SO  - Am J Med Genet A. 2024 Jan 2. doi: 10.1002/ajmg.a.63523.
+PST - ppublish
+SO  - Am J Med Genet A. 2024 May;194(5):e63523. doi: 10.1002/ajmg.a.63523. Epub 2024 
+      Jan 2.
 
 PMID- 38162443
 OWN - NLM
@@ -1682,7 +1698,7 @@ PMID- 37508562
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230731
-LR  - 20230803
+LR  - 20240406
 IS  - 2073-4409 (Electronic)
 IS  - 2073-4409 (Linking)
 VI  - 12
@@ -1740,8 +1756,9 @@ AD  - MIND Institute, University of California Davis Health, Sacramento, CA 9581
 AD  - Institute for Pediatric Regenerative Medicine and Shriners Hospitals for Children 
       Northern California, Sacramento, CA 95817, USA.
 LA  - eng
-GR  - R01 1NS107131/NS/NINDS NIH HHS/United States
 GR  - R01 HD036071/HD/NICHD NIH HHS/United States
+GR  - R01 NS107131/NS/NINDS NIH HHS/United States
+GR  - R01 1NS107131/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
@@ -1801,7 +1818,7 @@ PMID- 37364131
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230628
-LR  - 20231227
+LR  - 20240406
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Print)
 IS  - 0027-8424 (Linking)
@@ -1872,10 +1889,11 @@ AD  - Program in Molecular Medicine, University of Massachusetts Chan Medical Sc
 AD  - Li Weibo Rare Disease Institute, University of Massachusetts Chan Medical School, 
       Worcester, MA 01605.
 LA  - eng
-GR  - R01 GM046779/GM/NIGMS NIH HHS/United States
-GR  - R01 GM135087/GM/NIGMS NIH HHS/United States
-GR  - R01 NS111990/NS/NINDS NIH HHS/United States
 GR  - UL1 TR001453/TR/NCATS NIH HHS/United States
+GR  - R01 GM135087/GM/NIGMS NIH HHS/United States
+GR  - R01 GM046779/GM/NIGMS NIH HHS/United States
+GR  - R01 NS111990/NS/NINDS NIH HHS/United States
+GR  - R01 NS132935/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
@@ -2580,7 +2598,7 @@ PMID- 37120588
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230510
-LR  - 20230510
+LR  - 20240406
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 13
@@ -10777,7 +10795,7 @@ SO  - Eur J Med Genet. 2020 Dec;63(12):104081. doi: 10.1016/j.ejmg.2020.104081. 
 PMID- 33008014
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20201103
+LR  - 20240411
 IS  - 2076-3425 (Print)
 IS  - 2076-3425 (Electronic)
 IS  - 2076-3425 (Linking)
@@ -10904,6 +10922,7 @@ AU  - Latham GJ
 AUID- ORCID: 0000-0002-9263-3475
 AD  - Asuragen, Inc., Austin, TX 78744, USA.
 LA  - eng
+GR  - R43 HD082900/HD/NICHD NIH HHS/United States
 PT  - Journal Article
 DEP - 20200930
 PL  - Switzerland
@@ -14137,7 +14156,7 @@ PMID- 31481131
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200730
-LR  - 20240328
+LR  - 20240411
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 7
@@ -14230,12 +14249,12 @@ GR  - R01 ES030318/NH/NIH HHS/United States
 GR  - R01 NS107131/NS/NINDS NIH HHS/United States
 GR  - R01 NS107131/NH/NIH HHS/United States
 GR  - P01 ES011269/NH/NIH HHS/United States
+GR  - R01 GM113929/GM/NIGMS NIH HHS/United States
 GR  - R01 ES030318/ES/NIEHS NIH HHS/United States
 GR  - P50 HD103526/HD/NICHD NIH HHS/United States
 GR  - T32OD010931/NH/NIH HHS/United States
 GR  - R01 HD036071/HD/NICHD NIH HHS/United States
 GR  - R01GM113929/NH/NIH HHS/United States
-GR  - R01 GM113929/GM/NIGMS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
@@ -16246,7 +16265,7 @@ PMID- 30808398
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200330
-LR  - 20200330
+LR  - 20240410
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 7
@@ -16340,10 +16359,13 @@ AD  - Department of Neurological Surgery, University of California, Davis, Davis
       USA. rfberman@ucdavis.edu.
 LA  - eng
 GR  - R01 NS079775/NS/NINDS NIH HHS/United States
-GR  - AG032119/AG/NIA NIH HHS/United States
-GR  - U54D079125/National Institute of Child Health and Human Development/International
-GR  - AG033082/AG/NIA NIH HHS/United States
+GR  - R01 AG033082/AG/NIA NIH HHS/United States
 GR  - RL1 NS062411/NS/NINDS NIH HHS/United States
+GR  - RL1 AG032119/AG/NIA NIH HHS/United States
+GR  - AG032119/AG/NIA NIH HHS/United States
+GR  - UL1 DE019583/DE/NIDCR NIH HHS/United States
+GR  - AG033082/AG/NIA NIH HHS/United States
+GR  - RF1 AG033082/AG/NIA NIH HHS/United States
 GR  - DE19583/DE/NIDCR NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
@@ -50430,7 +50452,7 @@ PMID- 12232854
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20021028
-LR  - 20240104
+LR  - 20240411
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
