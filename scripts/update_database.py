@@ -10,6 +10,7 @@ import time
 # in case person runs from data instead of scripts
 sys.path.append('../')
 import reftogeneorientation
+from genepages import generate_gene_pages
 
 
 def main(csv_fname, json_fname, pause):
@@ -56,6 +57,9 @@ def main(csv_fname, json_fname, pause):
     # ref_genomes = ['hg19', 'hg38', 'T2T']
     # for genome in ref_genomes:
     #     os.system(f'python scripts/make_catalog.py -g {genome} -f TRGT data/STRchive-database.csv data/{genome}.STRchive-disease-loci.TRGT.bed')
+
+    # Generate HTML for each gene
+    generate_gene_pages('data/STRchive-database.json', 'templates/gene_template.html', 'database')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Read CSV and JSON versions of the database and overwrite the older one to match the newer one.')

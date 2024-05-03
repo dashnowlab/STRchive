@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -125,30 +124,61 @@
     })
   ;
   </script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+  $(function() {
+
+  $.getJSON('/data/STRchive-database.json', function(data) {
+    this_year = new Date().getFullYear()
+    
+    $.each(data, function(i, f) {
+
+      /// Replace all null values with ''
+      for (var key in f) {
+        if (f[key] == null) {
+          f[key] = ''
+        }
+      }
+
+      status = ''
+      formatting = ''
+      /// Flag potentially new or conflicting data
+      if (f.Year >= this_year - 1) {
+        status = `<i class="green star icon"></i>`
+        formatting = `positive`
+      }
+
+      if (f.details.indexOf('conflict') !== -1) {
+      status = `<i class="red attention icon"></i> `
+      formatting = `negative`
+      }
+
+      // Need to point to gene pages instead of scrolling
+      var tblRow =
+      `<tr class="` + formatting + `">` +
+        `<td><a href="/database/${f.gene}.html">` + status + `</a></td>` +
+        `<td><a href="/database/${f.gene}.html">` + f.gene + `</a></td>` +
+        `<td><a href="/database/${f.gene}.html">` + f.disease_id + `</a></td>` +
+        `<td><a href="/database/${f.gene}.html">` + f.disease + `</a></td>` +
+        `<td><a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `">` +
+              f.chrom + ":" + f.start_hg38 + "-" + f.stop_hg38 + `</a></td>` +
+        "<td>" + f.pathogenic_motif_reference_orientation + "</td>" +
+        "<td>" + f.Inheritance + "</td>" +
+      "</tr>"
+        $(tblRow).appendTo("#diseaseloci tbody");
+
+     });
+
+   });
+
+});
+</script>
 </head>
 <body>
-
-<!-- Following Menu -->
-<!-- <div class="ui large top fixed hidden menu">
-  <div class="ui container">
-    <a class="active item">Home</a>
-    <a class="item">About</a>
-    <a class="item">Contribute</a>
-    <div class="right menu">
-      <div class="item">
-        <a class="ui primary button">GitHub</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<!-- Sidebar Menu -->
-<!-- <div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
-  <a class="item">About</a>
-  <a class="item">Contribute</a>
-  <a class="item">GitHub</a>
-</div> -->
 
 <!-- Header -->
 <div class="pusher">
@@ -159,14 +189,14 @@
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="item" href="index.html">Home</a>
-        <a class="item" href="about.html">About</a>
-        <a class="item" href="/database/index.html">STR Database</a>
-        <a class="active item" href="plots.html">Plots</a>
-        <a class="item" href="resources.html">Resources</a>
-        <a class="item" href="contribute.html">Contribute</a>
+        <a class="item" href="/index.html">Home</a>
+        <a class="item" href="/about.html">About</a>
+        <a class="active item" href="/database">STR Database</a>
+        <a class="item" href="/plots.html">Plots</a>
+        <a class="item" href="/resources.html">Resources</a>
+        <a class="item" href="/contribute.html">Contribute</a>
         <div class="right item">
-          <a class="ui inverted button" href="index.html">STRchive</a>
+          <a class="ui inverted button" href="/index.html">STRchive</a>
           <a class="ui icon inverted button" href="https://github.com/hdashnow/STRchive">
             <i class="github icon"></i>
           </a>
@@ -176,59 +206,75 @@
   </div>
 </div>
 
-<!-- Page Contents -->
+<div class="ui vertical stripe segment">
 
 
-  <div class="ui vertical stripe segment">
-    <div class="ui equal width stackable horizontally padded grid">
+  <div class="ui middle aligned container">
+    <h1 class="ui header">STRchive</h1>
+    <p>STRchive (Short Tandem Repeat Archive) is a database of STRs associated with disease in humans.</p>
+    <p>The full dataset is available on
+      <a class="ui icon button label" href="https://github.com/hdashnow/STRchive">
+        <i class="github icon"> GitHub</i>
+      </a>
+    </p>
+    <h4 class="ui header">
+      Download
+      <a href="https://github.com/PacificBiosciences/trgt">TRGT</a>
+      definitions for genotyping in PacBio HiFi reads
+    </h4>
+    <p>
+      <a class="ui download icon button label" href="data/T2T-chm13.STRchive-disease-loci.TRGT.bed">
+        <i class="download icon"></i>
+        T2T-chm13 TRGT definitions
+      </a>
+      <a class="ui download icon button label" href="data/hg38.STRchive-disease-loci.TRGT.bed">
+        <i class="download icon"></i>
+        hg38 TRGT definitions
+      </a>
+      <a class="ui download icon button label" href="data/hg19.STRchive-disease-loci.TRGT.bed">
+        <i class="download icon"></i>
+        hg19 TRGT definitions
+      </a>
+    </p>
+    <br>
+    <i class="green star icon"></i> New
+    <br>
+    <i class="red attention icon"></i> Conflicting evidence
+    <table id="diseaseloci" class="ui striped table">
+      <thead>
+        <th></th>
+        <th>Gene</th>
+        <th>Disease</th>
+        <th>Description</th>
+        <th>Position hg38</th>
+        <th>Pathogenic motif(s): ref orientation</th>
+        <th>Inheritance</th>
+      </thead>
+      <tbody>
 
-      <div class="column">
-        <h2 class="ui header">Pathogenic Size Range</h2>
-        <iframe id="igraph" scrolling="no" style="border:none;" 
-          seamless="seamless" src="images/plotly_path_size.html" 
-          height="1010" width="100%">
-        </iframe>
-      </div>
-
-      <div class="column">
-        <h2 class="ui header">Age of Onset</h2>
-        <iframe id="igraph" scrolling="no" style="border:none;" 
-          seamless="seamless" src="images/plotly_age_onset.html" 
-          height="1010" width="100%">
-        </iframe>
-      </div>
-
-    </div>
+      </tbody>
+    </table>
   </div>
+    
+
+</div>
 
 
-
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-
-      
-    </div>
-  </div>
 
 <!-- Footer -->
 <div class="ui inverted vertical footer segment">
   <div class="ui container">
     <div class="ui stackable inverted divided equal height stackable grid">
       <div class="three wide column">
-        <a class="item" href="about.html"> 
-          <h4 class="ui inverted header">About</h4>
-        </a>
+        <h4 class="ui inverted header" href="/about.html">About</h4>
         <div class="ui inverted link list">
           <a class="item" href="https://github.com/hdashnow/STRchive/issues">Contact Us</a>
         </div>
       </div>
       <div class="three wide column">
-        <a class="item" href="contribute.html"> 
-          <h4 class="ui inverted header">Contribute</h4>
-        </a>
+        <h4 class="ui inverted header" href="/contribute.html">Contribute</h4>
         <div class="ui inverted link list">
-          <a class="item" href="contribute.html">How To Contribute</a>
+          <a class="item" href="/contribute.html">How To Contribute</a>
         </div>
       </div>
       <div class="ten wide column">
@@ -250,7 +296,7 @@
     </div>
   </div>
 </div>
-
+</div>
 
 </body>
 
