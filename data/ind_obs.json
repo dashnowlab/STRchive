@@ -11,7 +11,7 @@
     "independent_observations":[
         1 [
      "doi": "10.1101/2023.10.09.23296582",
-     "year": "2023"
+     "year": 2023,
      "type": "Preprint",
      "description": "35 OPDM individuals, 8 unrelated families"]
     ],
@@ -22,13 +22,13 @@
 "independent_observations": [
     1 [
     "doi": "10.1017/S0003480000007983",
-    "year": "2000"
+    "year": 2000,
     "type": "Review",
     "description": "More than 50 families known worldwide; cites those listed below."
     ],
     2 [
     "doi": "10.3389/fnmol.2022.795840",
-    "year": "2022",
+    "year": 2022,
     "type": "Article",
     "description": "Describes 28 families in Supp Table 1, previously documented."
     ]
@@ -39,18 +39,19 @@
 {"independent_observations": [
     1 [
     "doi": "10.1371/journal.pgen.1004242",
-    "year": "2014",
-    "type": "Article"
+    "year": 2014,
+    "type": "Article",
     "description": "3 families"
     ],
     2 [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ]
+    "doi": "10.1101/2023.05.03.23289461"
+    "year": 2023,
+    "type": "Preprint"
+    "description": "Pathogenicity inferred with expanded/methylated alleles. Population; not conclusive diagnoses."
+    ],
+
 ],
-    "total_ind_obs":
+    "total_ind_obs":3
 }
 
 "SBMA_AR":
