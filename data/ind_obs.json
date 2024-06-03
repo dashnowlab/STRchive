@@ -1,10 +1,9 @@
-{
+    [
     "doi":
     "year":
     "type":
     "description":
-
-}
+    ]
 
 {
 "OPDM_ABCD3" : {
@@ -35,8 +34,8 @@
 ],
     "total_ind_obs":">50"
 },
-"FRA2A_AFF3":
-{"independent_observations": [
+"FRA2A_AFF3":{
+    "independent_observations": [
     1 [
     "doi": "10.1371/journal.pgen.1004242",
     "year": 2014,
@@ -50,13 +49,562 @@
     "description": "Pathogenicity inferred with expanded/methylated alleles. Population; not conclusive diagnoses."
     ],
 
+
 ],
     "total_ind_obs":3
 }
 
 "SBMA_AR":
-{"independent_observations":
+{"independent_observations":[
+    1 [
+        "doi": "10.1001/archneur.1990.00530100087018",
+        "year":1990,
+        "type": "Article",
+        "description": "Mentions previous 31 families and presents one new for a total of 32 families as of 1990.",
+    ],
+    2 [
+        "doi": "10.1038/352077a0",
+        "year": 1991,
+        "type": "Letter",
+        "description": "Amplified repeats are found in 35 unrelated patients.",
+    ],
+    3 [
+        "doi": "10.1212/wnl.42.12.2300",
+        "year": 1992,
+        "type": "Brief Communication",
+        "description": "Evidence of correlation between expansion and disease severity. Investigates 19 patients.",
+        ],
+    4 [
+        "doi": "10.1002/ana.410320517",
+        "year": 1992,
+        "type": "Brief Communication",
+        "description": "21 families investigated; repeat corresponds to age of onset.",
+        ],
+    5   [
+        "doi": "10.1212/WNL.42.11.2181",
+        "year": 1992,
+        "type": "Article",
+        "description": "4 families.",
+        ],
+    6 [
+        "doi": "10.1136/jnnp.55.5.394",
+        "year": 1992,
+        "type": "Article",
+        "description": "12 patients.",
+        ],
+    7   [
+        "doi": "10.1212/WNL.43.4.791",
+        "year": 1993,
+        "type": "Article",
+        "description": "7 families. Early detection is possible.",
+        ],
+    8    [
+        "doi": "10.1016/0022-510x(94)90054-x",
+        "year": 1994,
+        "type": "Article",
+        "description": "1 patient",
+        ],
+    8    [
+        "doi": "10.1016/0022-510x(94)90054-x",
+        "year": 1994,
+        "type": "Article",
+        "description": "1 patient",
+        ],
+    9   [
+        "doi": "10.1002/ajmg.1320550125",
+        "year": 1995,
+        "type": "Article",
+        "description": "25 sporadic patients and 1 family: 26 independent observations.",
+        ],
+    10  [
+        "doi": "10.1002/(SICI)1098-1004(1996)8:1<32::AID-HUMU4>3.0.CO;2-R",
+        "year": 1996,
+        "type": "Article",
+        "description": "2 patients.",
+        ],
+    11 [
+        "doi": "10.1016/0303-7207(95)03741-1",
+        "year": 1996,
+        "type": "Article",
+        "description": "1 family",
+        ],
+    12 [
+        "doi": "10.1016/0022-510x(95)00249-2",
+        "year": 1996,
+        "type": "Article",
+        "description": "1 patient; looked at repeats in different tissues.",
+        ],
+    13 [
+        "doi": "10.1016/0022-510x(95)00285-a",
+        "year": 1996,
+        "type": "Article",
+        "description": "1 family (2 brothers).",
+        ],
+    14 [
+        "doi": "10.1212/WNL.49.2.568",
+        "year": 1997,
+        "type": "Article",
+        "description": "12 patients. SBMA can be misdiagnosed as ALS.",
+        ],
+    15 [
+        "doi": "10.1111/j.1600-0404.1998.tb01732.x",
+        "year": 1998,
+        "type": "Article",
+        "description": "10 families in Western Finland: point prevalence is 13 patients per 85,000 male inhabitants.",
+        ],
+    16 [
+        "doi": "10.1086/302578",
+        "year": 1999,
+        "type": "Article",
+        "description": "20 patients, evaluating somatic mosaicism across tissues.",
+        ],
+    17 [
+        "doi": "10.1038/sj.ejhg.5200517",
+        "year": 2000,
+        "type": "Article",
+        "description": "37 families, establshing country specific founder haplotypes.",
+        ],
+    18 [
+        "doi": "10.1016/s0960-8966(99)00132-7",
+        "year": 2000,
+        "type": "Article",
+        "description": "28 families newly described (2 families described previously.",
+        ],
+    19 [
+        "doi": "10.1023/A:1014580219761",
+        "year": 2001,
+        "type": "Article",
+        "description": "Clinical assessment of five different pedigrees.",
+        ],
+    20 [
+        "doi": "10.1038/sj.ejhg.5200656",
+        "year": 2001,
+        "type": "Article",
+        "description": "123 families from different parts of the world. Longer repeats indicate more severe and earlier onset disease.",
+        ],
+    21 [
+        "doi": "10.1212/01.wnl.0000033325.01878.13",
+        "year": 2002,
+        "type": "Article",
+        "description": "2 patients with jaw drop.",
+        ],
+    22 [
+        "doi": "10.1210/jcem.87.8.8780",
+        "year": 2002,
+        "type": "Article",
+        "description": "22 patients; showed androgen insensitivity in Kennedy Disease.",
+        ],
+    23 [
+        "doi": "10.1001/archneur.59.12.1921",
+        "year": 2002,
+        "type": "Article",
+        "description": "34 patients. Environmental factors may influence specific disease presentation."
+        ],
+    24 [
+        "doi": "10.1212/01.WNL.0000158617.41819.F3",
+        "year": 2005,
+        "type": "Article",
+        "description": "Family with early onset (youngest onset was 8yos) and rapid progression (50-54 repeats).",
+        ],
+    25 [
+        "doi": "10.1212/01.WNL.0000151978.74467",
+        "year": 2005,
+        "type": "Brief Communications",
+        "description": "49 patients assessed; almost half had recurrent laryngospasm.",
+        ],
+    26 [
+        "doi": "10.1093/brain/awh381",
+        "year": 2005,
+        "type": "Article",
+        "description": "11 patients evaluated at autopsy.",
+        ],
+    27 [
+        "doi": null,
+        "year": 2005,
+        "type": "Brief Communication",
+        "description": "21 patients had diagnosis confirmed. PMID: 15876692.",
+        ],
+    28 [
+        "doi": "10.1002/ana.20735",
+        "year": 2006,
+        "type": "Article",
+        "description": "Scrotal skin of 23 patients evaluated.",
+        ],
+    29 [
+        "doi": "10.1093/brain/awl096",
+        "year": 2006,
+        "type": "Article",
+        "description": "Natural history of 223 Japanese patients evaluated."
+        ],
+    30 [
+        "doi": "10.1212/01.wnl.0000279521.81846.59",
+        "year": 2007,
+        "type": "Article",
+        "description": "Axonal function assessed in 7 patients.",
+        ],
+    31 [
+        "doi": null,
+        "year": 2008,
+        "type": "Article",
+        "description": "1 patients; appears similar to ALS.",
+        ],
+    32 [
+        "doi": "10.1007/s10067-008-0946-5",
+        "year": 2008,
+        "type": "Article",
+        "description": "1 patient with KD and antisynthetase syndrome.",
+        ],
+    33 [
+        "doi": "10.1080/17482960701553915",
+        "year": 2008,
+        "type": "Article",
+        "description": "1 patient with atypical phenotype (pure bulbar motor neuron involvement).",
+        ],
+    34 [
+        "doi": "10.1159/000116008",
+        "year": 2008,
+        "type": "Article",
+        "description": "1 Italian kindred.",
+        ],
+    35 [
+        "doi": "10.1016/j.jns.2007.08.012",
+        "year": 2008,
+        "type": "Article",
+        "description": "8 patients biopsied (as well as 3 female carriers).",
+        ],
+    36 [
+        "doi": "10.1212/01.wnl.0000312510.49768.eb",
+        "year": 2008,
+        "type": "Article",
+        "description": "Natural history of 39 patients evaluated.",
+        ],
+    37 [
+        "doi": "10.1002/mds.22566",
+        "year": 2009,
+        "type": "Article",
+        "description": "Eight patients, postural tremor evaluated.",
+        ],
+    38 [
+        "doi": "10.1002/ana.21540",
+        "year": 2009,
+        "type": "Article",
+        "description": "Clinical trial for 50 patients.",
+        ],
+    39 [
+        "doi": "10.5692/clinicalneurol.49.22",
+        "year": 2009,
+        "type": "Article",
+        "description": "1 family of two brothers with very late onset (78 the latest).",
+        ],
+    40 [
+        "doi": "10.1093/brain/awp258",
+        "year": 2009,
+        "type": "Article",
+        "description": "Clinical features of 57 patients.",
+        ],
+    41    [
+        "doi": "10.1007/s00415-009-5212-5",
+        "year": 2009,
+        "type": "Article",
+        "description": "Neuropsychological study of 20 patients.",
+        ],
+    42    [
+        "doi": "10.1016/S1474-4422(10)70182-4",
+        "year": 2010,
+        "type": "Article",
+        "description": "Randomized controlled trial for 204 patients.",
+        ],
+    43    [
+        "doi": "10.3109/17482960802445086",
+        "year": 2010,
+        "type": "Article",
+        "description": "Phenotypic differences in one very large, clinically heterogeneous family.",
+        ],
+    44    [
+        "doi": "10.1016/S1474-4422(10)70321-5",
+        "year": 2011,
+        "type": "Article",
+        "description": "Clinical trial of 50 patients",
+        ],
+    45   [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
 
+        [
+    "doi":
+    "year":
+    "type":
+    "description":
+    ]
+
+    "total_ind_obs":
 }
 
 "EIEE1_ARX":
