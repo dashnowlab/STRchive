@@ -523,107 +523,111 @@
 },
 
 "EIEE1_ARX":
-{"independent_observations":
-[
-    "doi":
-    "year":
-    "type":
-    "description":
+{"independent_observations": [
+1 [
+    "doi": "10.1002/humu.21288",
+    "year": 2010,
+    "type": "Review",
+    "description": "Review of ARX mutations through 2010. 3 cases of EIEE, 4 of IEDE, 1 of DEE with dystonia, and 9 with West Syndrome."
     ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
+2   [
+    "doi": "10.1002/mgg3.133",
+    "year": 2015,
+    "type": "Review",
+    "description": "10 cases from Mirza et al. and 4 from Cossee et al that are DEE/EIEE. The rest are already included in the 2010 review."
     ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
+3    [
+    "doi": "10.1097/MPG.0000000000000542",
+    "year": 2015,
+    "type": "Article",
+    "description": "1 new patient presented."
     ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
+4    [
+    "doi": null,
+    "year": 2022,
+    "type": "Article",
+    "description": "1 case of West syndrome caused by ARX expansion. PMID: 36571524.",
     ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-        [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-        [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-    [
-    "doi":
-    "year":
-    "type":
-    "description":
-    ],
-
-    [
-"doi":
-"year":
-"type":
-"description":
-]
+  ],
+  "total_ind_obs": 33
 }
 
 "PRTS_ARX":
-{"independent_observations":
-
+{"independent_observations": [
+1    [
+    "doi": "10.1002/humu.21288",
+    "year": 2010,
+    "type": "Review",
+    "description": "A review with 7 cases of Partington Syndrome.",
+    ],
+2    [
+    "doi": "10.1002/ajmg.a.40382",
+    "year": 2018,
+    "type": "Article",
+    "description": "Clinical diagnosis of one case of Partington Syndrome."
+    ],
+3    [
+    "doi": "10.1155/2023/3636748",
+    "year": 2023,
+    "type": "Article",
+    "description": "Diagnosis of a adult with life-long disease with Partington syndrome."
+    ],
+],
+    "total_ind_obs": 9
 }
 
 "DRPLA_ATN1":
-{"independent_observations":
+{"independent_observations": [
+    [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+            [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+        [
+        "doi":
+        "year":
+        "type":
+        "description":
+        ],
+
+        [
+    "doi":
+    "year":
+    "type":
+    "description":
+    ]
+]
 
 }
 
