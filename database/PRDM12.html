@@ -333,13 +333,45 @@ var locus_html =
           if (f.pathogenic_min != '') {
             if (f.pathogenic_min == f.pathogenic_max) {
               locus_html = locus_html +
-            `<li><b>Pathogenic:</b> ${f.pathogenic_min} motifs</li>`
+              `<li><b>Pathogenic:</b> ${f.pathogenic_min} motifs</li>`
             }
+          
             else {
-              locus_html = locus_html +
-              `<li><b>Pathogenic:</b> ${f.pathogenic_min}-${f.pathogenic_max} motifs</li>`
+              // Exception for loci like VWA1 where benign range is within the pathogenic range
+              if (f.pathogenic_min < f.normal_max) {
+                if (f.pathogenic_min == f.normal_min - 1) {
+                  locus_html = locus_html +
+                  `<li><b>Pathogenic:</b> ${f.pathogenic_min}, `
+                }
+                else {
+                  `<li><b>Pathogenic:</b> ${f.pathogenic_min}-${f.normal_min - 1}, `
+                }
+                if (f.pathogenic_max == f.normal_min + 1) {
+                  locus_html = locus_html +
+                  `${f.pathogenic_max} motifs</li>`
+                }
+                else {
+                  locus_html = locus_html +
+                  `${f.normal_min + 1}-${f.pathogenic_max} motifs</li>`
+                }
+              }
+              else {
+                locus_html = locus_html +
+                `<li><b>Pathogenic:</b> ${f.pathogenic_min}-${f.pathogenic_max} motifs</li>`
+              }
             }
-          };
+          }
+          locus_html = locus_html + 
+            `
+            <br>
+            <b>Notes:</b> 
+            
+            <li>
+            These ranges refer to the minimum and maximum allele sizes reported in the literature 
+            predominately consisting of a pathogenic motif. 
+            Allele sizes larger than the pathogenic max are typically expected to be pathogenic.
+            </li>
+            `
 
           locus_html = locus_html +
               `
@@ -449,8 +481,8 @@ var locus_html =
 
         if (lit_gene == gene) {
           $.each(f, function(pmid, dict) {
-            console.log(pmid)
-            console.log(dict.Title)
+            //console.log(pmid)
+            //console.log(dict.Title)
             citation_html = citation_html +
             `
             <div class="ui list">
