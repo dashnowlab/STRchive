@@ -1,0 +1,11 @@
+name: strchive
+
+channels:
+  - bioconda
+
+dependencies:
+  - pandas
+  - jinja2
+  - numpy
+  - biopython
+  - defopt
