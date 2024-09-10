@@ -404,6 +404,14 @@ var locus_html =
             })
             locus_html = locus_html + `</li>`
           };
+          if (f.Mondo != '') {
+            locus_html = locus_html + `<li><b>Mondo:</b> `
+            f.Mondo.split(";").forEach(function (Mondoid) {
+              locus_html = locus_html +
+              `<a href="http://purl.obolibrary.org/obo/MONDO_${Mondoid.trim()}">${Mondoid}</a>`
+            })
+            locus_html = locus_html + `</li>`
+          };
           if (f.GeneReviews != '') {
             locus_html = locus_html + `<li><b>GeneReviews:</b> `
             f.GeneReviews.split(";").forEach(function (GeneReviewsid) {
