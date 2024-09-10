@@ -55,6 +55,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo": "0025193",
         "Year":2023.0
     },
     {
@@ -113,6 +114,7 @@
         "STRipy_gene":"AFF2",
         "gnomAD_gene":"AFF2",
         "GeneReviews":"NBK535148",
+        "Mondo": "0010659",
         "Year":1993.0
     },
     {
@@ -171,6 +173,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":null,
         "Year":2014.0
     },
     {
@@ -229,6 +232,7 @@
         "STRipy_gene":"AR",
         "gnomAD_gene":"AR",
         "GeneReviews":"NBK1333",
+        "Mondo":"0010735",
         "Year":1991.0
     },
     {
@@ -287,6 +291,7 @@
         "STRipy_gene":"ARX_1",
         "gnomAD_gene":"ARX_1",
         "GeneReviews":"NBK535148",
+        "Mondo":":0010632",
         "Year":null
     },
     {
@@ -345,6 +350,7 @@
         "STRipy_gene":"ARX_2",
         "gnomAD_gene":"ARX_2",
         "GeneReviews":"NBK535148",
+        "Mondo":"0010654",
         "Year":null
     },
     {
@@ -403,6 +409,7 @@
         "STRipy_gene":"ATN1",
         "gnomAD_gene":"ATN1",
         "GeneReviews":"NBK1491",
+        "Mondo":"0007435",
         "Year":1994.0
     },
     {
@@ -461,6 +468,7 @@
         "STRipy_gene":"ATXN1",
         "gnomAD_gene":"ATXN1",
         "GeneReviews":"NBK1184",
+        "Mondo":"0008119",
         "Year":1993.0
     },
     {
@@ -519,6 +527,7 @@
         "STRipy_gene":"ATXN10",
         "gnomAD_gene":"ATXN10",
         "GeneReviews":null,
+        "Mondo":"0011330",
         "Year":2000.0
     },
     {
@@ -577,6 +586,7 @@
         "STRipy_gene":"ATXN2",
         "gnomAD_gene":"ATXN2",
         "GeneReviews":"NBK1275",
+        "Mondo":"0008458",
         "Year":1996.0
     },
     {
@@ -635,6 +645,7 @@
         "STRipy_gene":"ATXN3",
         "gnomAD_gene":"ATXN3",
         "GeneReviews":"NBK1196",
+        "Mondo":"0007182",
         "Year":1994.0
     },
     {
@@ -693,6 +704,7 @@
         "STRipy_gene":"ATXN7",
         "gnomAD_gene":"ATXN7",
         "GeneReviews":"NBK1256",
+        "Mondo":"0016163",
         "Year":1996.0
     },
     {
@@ -751,6 +763,7 @@
         "STRipy_gene":"ATXN8OS",
         "gnomAD_gene":"ATXN8OS",
         "GeneReviews":"NBK1268",
+        "Mondo":"0012116",
         "Year":1999.0
     },
     {
@@ -809,6 +822,7 @@
         "STRipy_gene":"BEAN1",
         "gnomAD_gene":"BEAN1",
         "GeneReviews":"NBK535148",
+        "Mondo":"0007296",
         "Year":2009.0
     },
     {
@@ -867,6 +881,7 @@
         "STRipy_gene":"C9ORF72",
         "gnomAD_gene":"C9ORF72",
         "GeneReviews":"NBK268647",
+        "Mondo":"0007105",
         "Year":2011.0
     },
     {
@@ -925,6 +940,7 @@
         "STRipy_gene":"CACNA1A",
         "gnomAD_gene":"CACNA1A",
         "GeneReviews":"NBK1140",
+        "Mondo":"0008457",
         "Year":1997.0
     },
     {
@@ -983,6 +999,7 @@
         "STRipy_gene":"CBL",
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":"0007838",
         "Year":null
     },
     {
@@ -1041,6 +1058,7 @@
         "STRipy_gene":"CNBP",
         "gnomAD_gene":"CNBP",
         "GeneReviews":"NBK1466",
+        "Mondo":"0011266",
         "Year":2001.0
     },
     {
@@ -1099,6 +1117,7 @@
         "STRipy_gene":"COMP",
         "gnomAD_gene":"COMP",
         "GeneReviews":"NBK1123; NBK1487",
+        "Mondo":"0008322; 0007561",
         "Year":null
     },
     {
@@ -1157,6 +1176,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":"CSTB",
         "GeneReviews":"NBK1142",
+        "Mondo":"0009698",
         "Year":1997.0
     },
     {
@@ -1215,6 +1235,7 @@
         "STRipy_gene":"DAB1",
         "gnomAD_gene":"DAB1",
         "GeneReviews":"NBK541729",
+        "Mondo":"0014410",
         "Year":2017.0
     },
     {
@@ -1273,6 +1294,7 @@
         "STRipy_gene":"DIP2B",
         "gnomAD_gene":"DIP2B",
         "GeneReviews":"NBK535148",
+        "Mondo": "0007634",
         "Year":null
     },
     {
@@ -1331,6 +1353,7 @@
         "STRipy_gene":"DMD",
         "gnomAD_gene":"DMD",
         "GeneReviews":"NBK535148",
+        "Mondo":"0010679",
         "Year":null
     },
     {
@@ -1389,6 +1412,7 @@
         "STRipy_gene":"DMPK",
         "gnomAD_gene":"DMPK",
         "GeneReviews":"NBK1165",
+        "Mondo":"0008056",
         "Year":1992.0
     },
     {
@@ -1447,6 +1471,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":"EIF4A3",
         "GeneReviews":"NBK535148",
+        "Mondo":"0009998",
         "Year":null
     },
     {
@@ -1505,6 +1530,7 @@
         "STRipy_gene":"FGF14",
         "gnomAD_gene":null,
         "GeneReviews":"NBK599589",
+        "Mondo": "0859340",
         "Year":2023.0
     },
     {
@@ -1563,6 +1589,7 @@
         "STRipy_gene":"FMR1",
         "gnomAD_gene":"FMR1",
         "GeneReviews":"NBK1384",
+        "Mondo":"0010383; 0010706; 0010382",
         "Year":1991.0
     },
     {
@@ -1621,6 +1648,7 @@
         "STRipy_gene":"FOXL2",
         "gnomAD_gene":"FOXL2",
         "GeneReviews":"NBK535148",
+        "Mondo":"0007201",
         "Year":2001.0
     },
     {
@@ -1679,6 +1707,7 @@
         "STRipy_gene":"FXN",
         "gnomAD_gene":"FXN",
         "GeneReviews":"NBK1281",
+        "Mondo":"0100340",
         "Year":1996.0
     },
     {
@@ -1737,6 +1766,7 @@
         "STRipy_gene":"GIPC1",
         "gnomAD_gene":"GIPC1",
         "GeneReviews":"NBK535148",
+        "Mondo":"0030134",
         "Year":2020.0
     },
     {
@@ -1795,6 +1825,7 @@
         "STRipy_gene":"GLS",
         "gnomAD_gene":"GLS",
         "GeneReviews":"NBK535148",
+        "Mondo":"600001",
         "Year":2019.0
     },
     {
@@ -1853,6 +1884,7 @@
         "STRipy_gene":"HOXA13_1",
         "gnomAD_gene":"HOXA13_1",
         "GeneReviews":"NBK1423",
+        "Mondo":"0007698",
         "Year":2000.0
     },
     {
@@ -1911,6 +1943,7 @@
         "STRipy_gene":"HOXA13_2",
         "gnomAD_gene":"HOXA13_2",
         "GeneReviews":"NBK1423",
+        "Mondo":"0007698",
         "Year":2000.0
     },
     {
@@ -1969,6 +2002,7 @@
         "STRipy_gene":"HOXA13_3",
         "gnomAD_gene":"HOXA13_3",
         "GeneReviews":"NBK1423",
+        "Mondo":"0007698",
         "Year":2000.0
     },
     {
@@ -2027,6 +2061,7 @@
         "STRipy_gene":"HOXD13",
         "gnomAD_gene":"HOXD13",
         "GeneReviews":"NBK535148",
+        "Mondo":"0008513",
         "Year":1996.0
     },
     {
@@ -2085,6 +2120,7 @@
         "STRipy_gene":"HTT",
         "gnomAD_gene":"HTT",
         "GeneReviews":"NBK1305",
+        "Mondo":"0007739",
         "Year":1993.0
     },
     {
@@ -2143,6 +2179,7 @@
         "STRipy_gene":"JPH3",
         "gnomAD_gene":"JPH3",
         "GeneReviews":"NBK1529",
+        "Mondo":"0011671",
         "Year":2001.0
     },
     {
@@ -2201,6 +2238,7 @@
         "STRipy_gene":"LRP12",
         "gnomAD_gene":"LRP12",
         "GeneReviews":"NBK535148",
+        "Mondo":"0020793",
         "Year":2019.0
     },
     {
@@ -2259,6 +2297,7 @@
         "STRipy_gene":"MARCHF6",
         "gnomAD_gene":"MARCHF6",
         "GeneReviews":"NBK535148",
+        "Mondo":"0013322",
         "Year":2019.0
     },
     {
@@ -2317,6 +2356,7 @@
         "STRipy_gene":"NIPA1",
         "gnomAD_gene":"NIPA1",
         "GeneReviews":null,
+        "Mondo":"0007103",
         "Year":null
     },
     {
@@ -2375,6 +2415,7 @@
         "STRipy_gene":"NOP56",
         "gnomAD_gene":"NOP56",
         "GeneReviews":null,
+        "Mondo":"0013594",
         "Year":2011.0
     },
     {
@@ -2433,6 +2474,7 @@
         "STRipy_gene":"NOTCH2NLC",
         "gnomAD_gene":"NOTCH2NLC",
         "GeneReviews":"NBK535148",
+        "Mondo":"0011327",
         "Year":2019.0
     },
     {
@@ -2491,6 +2533,7 @@
         "STRipy_gene":"NUTM2B-AS1",
         "gnomAD_gene":"NUTM2B-AS1",
         "GeneReviews":"NBK535148",
+        "Mondo":"0032843",
         "Year":2019.0
     },
     {
@@ -2549,6 +2592,7 @@
         "STRipy_gene":"PABPN1",
         "gnomAD_gene":"PABPN1",
         "GeneReviews":"NBK1126",
+        "Mondo":"0958176",
         "Year":1998.0
     },
     {
@@ -2607,6 +2651,7 @@
         "STRipy_gene":"PHOX2B",
         "gnomAD_gene":"PHOX2B",
         "GeneReviews":"NBK1427",
+        "Mondo":"0800026",
         "Year":2003.0
     },
     {
@@ -2665,6 +2710,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":"0009783; 0024528",
         "Year":null
     },
     {
@@ -2723,6 +2769,7 @@
         "STRipy_gene":"PPP2R2B",
         "gnomAD_gene":"PPP2R2B",
         "GeneReviews":"NBK535148",
+        "Mondo":"0011439",
         "Year":1999.0
     },
     {
@@ -2781,6 +2828,7 @@
         "STRipy_gene":"PRDM12",
         "gnomAD_gene":"PRDM12",
         "GeneReviews":"NBK535148",
+        "Mondo":"0014662",
         "Year":null
     },
     {
@@ -2839,6 +2887,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":"PRNP",
         "GeneReviews":"NBK1229",
+        "Mondo":"0007403",
         "Year":null
     },
     {
@@ -2897,6 +2946,7 @@
         "STRipy_gene":"RAPGEF2",
         "gnomAD_gene":"RAPGEF2",
         "GeneReviews":"NBK535148",
+        "Mondo":"0054847",
         "Year":2018.0
     },
     {
@@ -2955,6 +3005,7 @@
         "STRipy_gene":"RFC1",
         "gnomAD_gene":"RFC1",
         "GeneReviews":"NBK564656",
+        "Mondo":"0044720",
         "Year":2019.0
     },
     {
@@ -3013,6 +3064,7 @@
         "STRipy_gene":"RILPL1",
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":"0030712",
         "Year":2022.0
     },
     {
@@ -3071,6 +3123,7 @@
         "STRipy_gene":"RUNX2",
         "gnomAD_gene":"RUNX2",
         "GeneReviews":"NBK1513",
+        "Mondo":"0007340",
         "Year":1997.0
     },
     {
@@ -3129,6 +3182,7 @@
         "STRipy_gene":"SAMD12",
         "gnomAD_gene":"SAMD12",
         "GeneReviews":"NBK535148",
+        "Mondo":"0010985",
         "Year":2018.0
     },
     {
@@ -3187,6 +3241,7 @@
         "STRipy_gene":"SOX3",
         "gnomAD_gene":"SOX3",
         "GeneReviews":"NBK535148",
+        "Mondo":"0010252",
         "Year":2002.0
     },
     {
@@ -3245,6 +3300,7 @@
         "STRipy_gene":"STARD7",
         "gnomAD_gene":"STARD7",
         "GeneReviews":"NBK535148",
+        "Mondo":"0011930",
         "Year":2019.0
     },
     {
@@ -3303,6 +3359,7 @@
         "STRipy_gene":"TBP",
         "gnomAD_gene":"TBP",
         "GeneReviews":"NBK1438",
+        "Mondo":"0011781",
         "Year":1999.0
     },
     {
@@ -3361,6 +3418,7 @@
         "STRipy_gene":"TBX1",
         "gnomAD_gene":"TBX1",
         "GeneReviews":"NBK535148",
+        "Mondo":"0008542",
         "Year":null
     },
     {
@@ -3419,6 +3477,7 @@
         "STRipy_gene":"TCF4",
         "gnomAD_gene":"TCF4",
         "GeneReviews":"NBK535148",
+        "Mondo":"0013203",
         "Year":2015.0
     },
     {
@@ -3469,7 +3528,7 @@
         "Mechanism_source":"https:\/\/doi.org\/10.1002\/mds.29412",
         "source":"https:\/\/doi.org\/10.1002\/mds.29412, https:\/\/doi.org\/10.1042\/ETLS20230018",
         "notes":"CAA interruptions can reduce toxicity (PMID: 37148549)",
-        "details":"Expansion found in affected individuals from 2 families and not in 500 controls. Longer alleles were associated wither earlier age of onset. For example, an individual with 100 repeats had age of onset at 4 years.",
+        "details":"Expansion found in affected individuals from 2 families and not in 500 controls. Longer alleles were associated with earlier age of onset. For example, an individual with 100 repeats had age of onset at 4 years.",
         "width":null,
         "OMIM":null,
         "Prevalence":null,
@@ -3477,6 +3536,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":null,
         "Year":2023.0
     },
     {
@@ -3535,6 +3595,7 @@
         "STRipy_gene":"TNRC6A",
         "gnomAD_gene":"TNRC6A",
         "GeneReviews":"NBK535148",
+        "Mondo":"0054846",
         "Year":2018.0
     },
     {
@@ -3593,6 +3654,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":"VWA1",
         "GeneReviews":"NBK535148",
+        "Mondo":"0030977",
         "Year":null
     },
     {
@@ -3651,6 +3713,7 @@
         "STRipy_gene":"XYLT1",
         "gnomAD_gene":"XYLT1",
         "GeneReviews":"NBK535148",
+        "Mondo":"0014343",
         "Year":2019.0
     },
     {
@@ -3709,6 +3772,7 @@
         "STRipy_gene":"YEATS2",
         "gnomAD_gene":"YEATS2",
         "GeneReviews":"NBK535148",
+        "Mondo":"0014055",
         "Year":2019.0
     },
     {
@@ -3767,6 +3831,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":"0010847",
         "Year":2023.0
     },
     {
@@ -3825,6 +3890,7 @@
         "STRipy_gene":"ZIC2",
         "gnomAD_gene":"ZIC2",
         "GeneReviews":"NBK1530",
+        "Mondo":"0012322",
         "Year":2001.0
     },
     {
@@ -3883,6 +3949,7 @@
         "STRipy_gene":"ZIC3",
         "gnomAD_gene":"ZIC3",
         "GeneReviews":"NBK535148",
+        "Mondo":"0010752",
         "Year":null
     },
     {
@@ -3941,6 +4008,7 @@
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
+        "Mondo":null,
         "Year":null
     }
 ]
