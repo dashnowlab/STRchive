@@ -56,7 +56,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":"0025193",
-        "Year":2023.0
+        "Year":2023.0,
+        "MedGen":"320250",
+        "Orphanet":"98897",
+        "GARD":"12592",
+        "WebSTR_hg38":"1164141; 6329150",
+        "WebSTR_hg19":"STR_58687"
     },
     {
         "chrom":"chrX",
@@ -115,7 +120,12 @@
         "gnomAD_gene":"AFF2",
         "GeneReviews":"NBK535148",
         "Mondo":"0010659",
-        "Year":1993.0
+        "Year":1993.0,
+        "MedGen":"155512",
+        "Orphanet":"100973",
+        "GARD":"2378",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr2",
@@ -174,7 +184,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":null,
-        "Year":2014.0
+        "Year":2014.0,
+        "MedGen":null,
+        "Orphanet":null,
+        "GARD":null,
+        "WebSTR_hg38":"288936",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chrX",
@@ -233,7 +248,12 @@
         "gnomAD_gene":"AR",
         "GeneReviews":"NBK1333",
         "Mondo":"0010735",
-        "Year":1991.0
+        "Year":1991.0,
+        "MedGen":"333282",
+        "Orphanet":"481",
+        "GARD":"6818",
+        "WebSTR_hg38":"859199",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chrX",
@@ -292,7 +312,12 @@
         "gnomAD_gene":"ARX_1",
         "GeneReviews":"NBK535148",
         "Mondo":"0010632",
-        "Year":null
+        "Year":null,
+        "MedGen":"483052",
+        "Orphanet":"182079",
+        "GARD":"15298",
+        "WebSTR_hg38":"843651",
+        "WebSTR_hg19":"STR_1542607"
     },
     {
         "chrom":"chrX",
@@ -351,7 +376,12 @@
         "gnomAD_gene":"ARX_2",
         "GeneReviews":"NBK535148",
         "Mondo":"0010654",
-        "Year":null
+        "Year":null,
+        "MedGen":"163237",
+        "Orphanet":"94083",
+        "GARD":"4235",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr12",
@@ -410,7 +440,12 @@
         "gnomAD_gene":"ATN1",
         "GeneReviews":"NBK1491",
         "Mondo":"0007435",
-        "Year":1994.0
+        "Year":1994.0,
+        "MedGen":"155630",
+        "Orphanet":"101",
+        "GARD":"5643",
+        "WebSTR_hg38":"5050156",
+        "WebSTR_hg19":"Expansion_ATN1\/DRPLA"
     },
     {
         "chrom":"chr6",
@@ -469,7 +504,12 @@
         "gnomAD_gene":"ATXN1",
         "GeneReviews":"NBK1184",
         "Mondo":"0008119",
-        "Year":1993.0
+        "Year":1993.0,
+        "MedGen":"155703",
+        "Orphanet":"98755",
+        "GARD":"4071",
+        "WebSTR_hg38":"5767842",
+        "WebSTR_hg19":"Expansion_SCA1\/ATXN1"
     },
     {
         "chrom":"chr22",
@@ -528,7 +568,12 @@
         "gnomAD_gene":"ATXN10",
         "GeneReviews":"NBK1175",
         "Mondo":"0011330",
-        "Year":2000.0
+        "Year":2000.0,
+        "MedGen":"369786",
+        "Orphanet":"98761",
+        "GARD":"10474",
+        "WebSTR_hg38":"1027359; 4921433",
+        "WebSTR_hg19":"STR_909210"
     },
     {
         "chrom":"chr12",
@@ -587,7 +632,12 @@
         "gnomAD_gene":"ATXN2",
         "GeneReviews":"NBK1275",
         "Mondo":"0008458",
-        "Year":1996.0
+        "Year":1996.0,
+        "MedGen":"155704",
+        "Orphanet":"98756",
+        "GARD":"4072",
+        "WebSTR_hg38":"598560; 5117050",
+        "WebSTR_hg19":"Expansion_SCA2\/ATXN2"
     },
     {
         "chrom":"chr14",
@@ -646,7 +696,12 @@
         "gnomAD_gene":"ATXN3",
         "GeneReviews":"NBK1196",
         "Mondo":"0007182",
-        "Year":1994.0
+        "Year":1994.0,
+        "MedGen":"9841",
+        "Orphanet":"98757",
+        "GARD":"6801",
+        "WebSTR_hg38":"5316666; 1481402",
+        "WebSTR_hg19":"Expansion_SCA3_MJD\/ATXN3"
     },
     {
         "chrom":"chr3",
@@ -705,7 +760,12 @@
         "gnomAD_gene":"ATXN7",
         "GeneReviews":"NBK1256",
         "Mondo":"0016163",
-        "Year":1996.0
+        "Year":1996.0,
+        "MedGen":"156006",
+        "Orphanet":"94147",
+        "GARD":"20405",
+        "WebSTR_hg38":"4965588",
+        "WebSTR_hg19":"Expansion_SCA7\/ATXN7"
     },
     {
         "chrom":"chr13",
@@ -764,7 +824,12 @@
         "gnomAD_gene":"ATXN8OS",
         "GeneReviews":"NBK1268",
         "Mondo":"0012116",
-        "Year":1999.0
+        "Year":1999.0,
+        "MedGen":"332457",
+        "Orphanet":"98760",
+        "GARD":"4956",
+        "WebSTR_hg38":"5356762",
+        "WebSTR_hg19":"Expansion_SCA8\/ATXN8"
     },
     {
         "chrom":"chr16",
@@ -823,7 +888,12 @@
         "gnomAD_gene":"BEAN1",
         "GeneReviews":"NBK535148",
         "Mondo":"0007296",
-        "Year":2009.0
+        "Year":2009.0,
+        "MedGen":"348439",
+        "Orphanet":"217012",
+        "GARD":"9975",
+        "WebSTR_hg38":"812447; 5971756",
+        "WebSTR_hg19":"STR_539736"
     },
     {
         "chrom":"chr9",
@@ -882,7 +952,12 @@
         "gnomAD_gene":"C9ORF72",
         "GeneReviews":"NBK268647",
         "Mondo":"0007105",
-        "Year":2011.0
+        "Year":2011.0,
+        "MedGen":"1830423",
+        "Orphanet":"275872",
+        "GARD":"18396",
+        "WebSTR_hg38":"5877863; 1502453",
+        "WebSTR_hg19":"STR_1475506"
     },
     {
         "chrom":"chr19",
@@ -941,7 +1016,12 @@
         "gnomAD_gene":"CACNA1A",
         "GeneReviews":"NBK1140",
         "Mondo":"0008457",
-        "Year":1997.0
+        "Year":1997.0,
+        "MedGen":"148458",
+        "Orphanet":"98758",
+        "GARD":"10351",
+        "WebSTR_hg38":"5624835",
+        "WebSTR_hg19":"Expansion_SCA6\/CACNA1A"
     },
     {
         "chrom":"chr11",
@@ -1000,7 +1080,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":"0007838",
-        "Year":null
+        "Year":null,
+        "MedGen":"162878",
+        "Orphanet":"2308",
+        "GARD":"307",
+        "WebSTR_hg38":"6166081; 430025",
+        "WebSTR_hg19":"STR_266122"
     },
     {
         "chrom":"chr3",
@@ -1059,7 +1144,12 @@
         "gnomAD_gene":"CNBP",
         "GeneReviews":"NBK1466",
         "Mondo":"0011266",
-        "Year":2001.0
+        "Year":2001.0,
+        "MedGen":"419137",
+        "Orphanet":"606",
+        "GARD":"9728",
+        "WebSTR_hg38":"741073",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr19",
@@ -1118,7 +1208,12 @@
         "gnomAD_gene":"COMP",
         "GeneReviews":"NBK1123; NBK1487",
         "Mondo":"0008322; 0007561",
-        "Year":null
+        "Year":null,
+        "MedGen":"98378; 325376",
+        "Orphanet":"750; 93308",
+        "GARD":"4540; 2180",
+        "WebSTR_hg38":"1317658",
+        "WebSTR_hg19":"STR_673389"
     },
     {
         "chrom":"chr21",
@@ -1177,7 +1272,12 @@
         "gnomAD_gene":"CSTB",
         "GeneReviews":"NBK1142",
         "Mondo":"0009698",
-        "Year":1997.0
+        "Year":1997.0,
+        "MedGen":"155923",
+        "Orphanet":"308",
+        "GARD":"3876",
+        "WebSTR_hg38":"5547429",
+        "WebSTR_hg19":"STR_886261"
     },
     {
         "chrom":"chr1",
@@ -1236,7 +1336,12 @@
         "gnomAD_gene":"DAB1",
         "GeneReviews":"NBK541729",
         "Mondo":"0014410",
-        "Year":2017.0
+        "Year":2017.0,
+        "MedGen":"855217",
+        "Orphanet":"363710",
+        "GARD":"12368",
+        "WebSTR_hg38":"1144531",
+        "WebSTR_hg19":"STR_39393"
     },
     {
         "chrom":"chr12",
@@ -1295,7 +1400,12 @@
         "gnomAD_gene":"DIP2B",
         "GeneReviews":"NBK535148",
         "Mondo":"0007634",
-        "Year":null
+        "Year":null,
+        "MedGen":"369613",
+        "Orphanet":null,
+        "GARD":null,
+        "WebSTR_hg38":"5075695",
+        "WebSTR_hg19":"Expansion_FRA12A_MR\/DIP2B"
     },
     {
         "chrom":"chrX",
@@ -1354,7 +1464,12 @@
         "gnomAD_gene":"DMD",
         "GeneReviews":"NBK535148",
         "Mondo":"0010679",
-        "Year":null
+        "Year":null,
+        "MedGen":"3925",
+        "Orphanet":"98896",
+        "GARD":"6291",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":"STR_1545664"
     },
     {
         "chrom":"chr19",
@@ -1413,7 +1528,12 @@
         "gnomAD_gene":"DMPK",
         "GeneReviews":"NBK1165",
         "Mondo":"0008056",
-        "Year":1992.0
+        "Year":1992.0,
+        "MedGen":"886881",
+        "Orphanet":"273",
+        "GARD":"8310",
+        "WebSTR_hg38":"5650727",
+        "WebSTR_hg19":"Expansion_DM1\/DMPK"
     },
     {
         "chrom":"chr17",
@@ -1472,7 +1592,12 @@
         "gnomAD_gene":"EIF4A3",
         "GeneReviews":"NBK535148",
         "Mondo":"0009998",
-        "Year":null
+        "Year":null,
+        "MedGen":"336581",
+        "Orphanet":"3102",
+        "GARD":"4718",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr13",
@@ -1531,7 +1656,12 @@
         "gnomAD_gene":null,
         "GeneReviews":"NBK599589",
         "Mondo":"0859340",
-        "Year":2023.0
+        "Year":2023.0,
+        "MedGen":"1824051",
+        "Orphanet":"675216",
+        "GARD":null,
+        "WebSTR_hg38":"1272528",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chrX",
@@ -1590,7 +1720,12 @@
         "gnomAD_gene":"FMR1",
         "GeneReviews":"NBK1384",
         "Mondo":"0010383; 0010706; 0010382",
-        "Year":1991.0
+        "Year":1991.0,
+        "MedGen":"8912; 1644269; 333403",
+        "Orphanet":"908; 642691; 93256",
+        "GARD":"6464; 16806",
+        "WebSTR_hg38":"885222",
+        "WebSTR_hg19":"Expansion_FXS\/FMR1"
     },
     {
         "chrom":"chr3",
@@ -1649,7 +1784,12 @@
         "gnomAD_gene":"FOXL2",
         "GeneReviews":"NBK535148",
         "Mondo":"0007201",
-        "Year":2001.0
+        "Year":2001.0,
+        "MedGen":"66312",
+        "Orphanet":"126",
+        "GARD":"23",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr9",
@@ -1708,7 +1848,12 @@
         "gnomAD_gene":"FXN",
         "GeneReviews":"NBK1281",
         "Mondo":"0100340",
-        "Year":1996.0
+        "Year":1996.0,
+        "MedGen":"383962",
+        "Orphanet":"95",
+        "GARD":"6468",
+        "WebSTR_hg38":"1509872",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr19",
@@ -1767,7 +1912,12 @@
         "gnomAD_gene":"GIPC1",
         "GeneReviews":"NBK535148",
         "Mondo":"0030134",
-        "Year":2020.0
+        "Year":2020.0,
+        "MedGen":"1718769",
+        "Orphanet":null,
+        "GARD":"16397",
+        "WebSTR_hg38":"5626440",
+        "WebSTR_hg19":"STR_668861"
     },
     {
         "chrom":"chr2",
@@ -1826,7 +1976,12 @@
         "gnomAD_gene":"GLS",
         "GeneReviews":"NBK535148",
         "Mondo":"600001",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"987241",
+        "Orphanet":null,
+        "GARD":null,
+        "WebSTR_hg38":"333878; 5494902",
+        "WebSTR_hg19":"STR_803303"
     },
     {
         "chrom":"chr7",
@@ -1885,7 +2040,12 @@
         "gnomAD_gene":"HOXA13_1",
         "GeneReviews":"NBK1423",
         "Mondo":"0007698",
-        "Year":2000.0
+        "Year":2000.0,
+        "MedGen":"331103",
+        "Orphanet":"2438",
+        "GARD":"2594",
+        "WebSTR_hg38":"5679832",
+        "WebSTR_hg19":"STR_1311037"
     },
     {
         "chrom":"chr7",
@@ -1944,7 +2104,12 @@
         "gnomAD_gene":"HOXA13_2",
         "GeneReviews":"NBK1423",
         "Mondo":"0007698",
-        "Year":2000.0
+        "Year":2000.0,
+        "MedGen":"331103",
+        "Orphanet":"2438",
+        "GARD":"2594",
+        "WebSTR_hg38":"5679831",
+        "WebSTR_hg19":"STR_1311036"
     },
     {
         "chrom":"chr7",
@@ -2003,7 +2168,12 @@
         "gnomAD_gene":"HOXA13_3",
         "GeneReviews":"NBK1423",
         "Mondo":"0007698",
-        "Year":2000.0
+        "Year":2000.0,
+        "MedGen":"331103",
+        "Orphanet":"2438",
+        "GARD":"2594",
+        "WebSTR_hg38":"1365344",
+        "WebSTR_hg19":"STR_1311035"
     },
     {
         "chrom":"chr2",
@@ -2062,7 +2232,12 @@
         "gnomAD_gene":"HOXD13",
         "GeneReviews":"NBK535148",
         "Mondo":"0008513",
-        "Year":1996.0
+        "Year":1996.0,
+        "MedGen":"1809573",
+        "Orphanet":"295195",
+        "GARD":"17358",
+        "WebSTR_hg38":"5486677",
+        "WebSTR_hg19":"STR_796395"
     },
     {
         "chrom":"chr4",
@@ -2121,7 +2296,12 @@
         "gnomAD_gene":"HTT",
         "GeneReviews":"NBK1305",
         "Mondo":"0007739",
-        "Year":1993.0
+        "Year":1993.0,
+        "MedGen":"5654",
+        "Orphanet":"399",
+        "GARD":"6677",
+        "WebSTR_hg38":"4701738; 86468; 86467",
+        "WebSTR_hg19":"Expansion_HD\/HTT"
     },
     {
         "chrom":"chr16",
@@ -2180,7 +2360,12 @@
         "gnomAD_gene":"JPH3",
         "GeneReviews":"NBK1529",
         "Mondo":"0011671",
-        "Year":2001.0
+        "Year":2001.0,
+        "MedGen":"341120",
+        "Orphanet":"98934",
+        "GARD":"16874",
+        "WebSTR_hg38":"828516; 5987878",
+        "WebSTR_hg19":"Expansion_HDL2\/JPH3"
     },
     {
         "chrom":"chr8",
@@ -2239,7 +2424,12 @@
         "gnomAD_gene":"LRP12",
         "GeneReviews":"NBK535148",
         "Mondo":"0020793",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"1684682",
+        "Orphanet":null,
+        "GARD":"15097",
+        "WebSTR_hg38":"1082178; 4874587",
+        "WebSTR_hg19":"STR_1441036"
     },
     {
         "chrom":"chr5",
@@ -2298,7 +2488,12 @@
         "gnomAD_gene":"MARCHF6",
         "GeneReviews":"NBK535148",
         "Mondo":"0013322",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"462210",
+        "Orphanet":"86814",
+        "GARD":"18084",
+        "WebSTR_hg38":"5994579",
+        "WebSTR_hg19":"STR_1116660"
     },
     {
         "chrom":"chr15",
@@ -2357,7 +2552,12 @@
         "gnomAD_gene":"NIPA1",
         "GeneReviews":null,
         "Mondo":"0007103",
-        "Year":null
+        "Year":null,
+        "MedGen":"400169",
+        "Orphanet":null,
+        "GARD":null,
+        "WebSTR_hg38":"5135087",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr20",
@@ -2416,7 +2616,12 @@
         "gnomAD_gene":"NOP56",
         "GeneReviews":null,
         "Mondo":"0013594",
-        "Year":2011.0
+        "Year":2011.0,
+        "MedGen":"483339",
+        "Orphanet":"276198",
+        "GARD":"12367",
+        "WebSTR_hg38":"6177296; 890490",
+        "WebSTR_hg19":"STR_833720"
     },
     {
         "chrom":"chr1",
@@ -2475,7 +2680,12 @@
         "gnomAD_gene":"NOTCH2NLC",
         "GeneReviews":"NBK535148",
         "Mondo":"0011327",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"355075",
+        "Orphanet":"2289",
+        "GARD":"3971",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr10",
@@ -2534,7 +2744,12 @@
         "gnomAD_gene":"NUTM2B-AS1",
         "GeneReviews":"NBK535148",
         "Mondo":"0032843",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"1684701",
+        "Orphanet":null,
+        "GARD":null,
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":"STR_173942"
     },
     {
         "chrom":"chr14",
@@ -2593,7 +2808,12 @@
         "gnomAD_gene":"PABPN1",
         "GeneReviews":"NBK1126",
         "Mondo":"0958176",
-        "Year":1998.0
+        "Year":1998.0,
+        "MedGen":"1054618",
+        "Orphanet":"270",
+        "GARD":"7245",
+        "WebSTR_hg38":"1442709; 5271481",
+        "WebSTR_hg19":"Expansion_OPMD\/PAPBN1"
     },
     {
         "chrom":"chr4",
@@ -2652,7 +2872,12 @@
         "gnomAD_gene":"PHOX2B",
         "GeneReviews":"NBK1427",
         "Mondo":"0800026",
-        "Year":2003.0
+        "Year":2003.0,
+        "MedGen":"1794285",
+        "Orphanet":"661",
+        "GARD":"8535",
+        "WebSTR_hg38":"4725362",
+        "WebSTR_hg19":"Expansion_CCHS\/PHOX2B"
     },
     {
         "chrom":"chr15",
@@ -2711,7 +2936,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":"0009783; 0024528",
-        "Year":null
+        "Year":null,
+        "MedGen":"897191; 371919",
+        "Orphanet":"520820",
+        "GARD":"15215; 13174",
+        "WebSTR_hg38":"5177947",
+        "WebSTR_hg19":"STR_493430"
     },
     {
         "chrom":"chr5",
@@ -2770,7 +3000,12 @@
         "gnomAD_gene":"PPP2R2B",
         "GeneReviews":"NBK535148",
         "Mondo":"0011439",
-        "Year":1999.0
+        "Year":1999.0,
+        "MedGen":"347653",
+        "Orphanet":"98762",
+        "GARD":"10476",
+        "WebSTR_hg38":"985593; 6072892",
+        "WebSTR_hg19":"Expansion_SCA12\/PPP2R2B"
     },
     {
         "chrom":"chr9",
@@ -2829,7 +3064,12 @@
         "gnomAD_gene":"PRDM12",
         "GeneReviews":"NBK535148",
         "Mondo":"0014662",
-        "Year":null
+        "Year":null,
+        "MedGen":"894363",
+        "Orphanet":"478664",
+        "GARD":"17866",
+        "WebSTR_hg38":"1543400",
+        "WebSTR_hg19":"STR_1521945"
     },
     {
         "chrom":"chr20",
@@ -2888,7 +3128,12 @@
         "gnomAD_gene":"PRNP",
         "GeneReviews":"NBK1229",
         "Mondo":"0007403",
-        "Year":null
+        "Year":null,
+        "MedGen":"155837",
+        "Orphanet":"282166",
+        "GARD":"17307",
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr4",
@@ -2947,7 +3192,12 @@
         "gnomAD_gene":"RAPGEF2",
         "GeneReviews":"NBK535148",
         "Mondo":"0054847",
-        "Year":2018.0
+        "Year":2018.0,
+        "MedGen":"1648435",
+        "Orphanet":"86814",
+        "GARD":"16758",
+        "WebSTR_hg38":"154264; 4792219",
+        "WebSTR_hg19":"STR_1096016"
     },
     {
         "chrom":"chr4",
@@ -3006,7 +3256,12 @@
         "gnomAD_gene":"RFC1",
         "GeneReviews":"NBK564656",
         "Mondo":"0044720",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"482853",
+        "Orphanet":"504476",
+        "GARD":"17937",
+        "WebSTR_hg38":"4722884; 99101",
+        "WebSTR_hg19":"STR_1036603"
     },
     {
         "chrom":"chr12",
@@ -3065,7 +3320,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":"0030712",
-        "Year":2022.0
+        "Year":2022.0,
+        "MedGen":"1809981",
+        "Orphanet":"98897",
+        "GARD":"12592",
+        "WebSTR_hg38":"5128610; 609239",
+        "WebSTR_hg19":"STR_347096"
     },
     {
         "chrom":"chr6",
@@ -3124,7 +3384,12 @@
         "gnomAD_gene":"RUNX2",
         "GeneReviews":"NBK1513",
         "Mondo":"0007340",
-        "Year":1997.0
+        "Year":1997.0,
+        "MedGen":"3486",
+        "Orphanet":"1452",
+        "GARD":"6118",
+        "WebSTR_hg38":"5789216",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr8",
@@ -3183,7 +3448,12 @@
         "gnomAD_gene":"SAMD12",
         "GeneReviews":"NBK535148",
         "Mondo":"0010985",
-        "Year":2018.0
+        "Year":2018.0,
+        "MedGen":"371424",
+        "Orphanet":"86814",
+        "GARD":"18082",
+        "WebSTR_hg38":"1087693",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chrX",
@@ -3242,7 +3512,12 @@
         "gnomAD_gene":"SOX3",
         "GeneReviews":"NBK535148",
         "Mondo":"0010252",
-        "Year":2002.0
+        "Year":2002.0,
+        "MedGen":"394771",
+        "Orphanet":"67045",
+        "GARD":null,
+        "WebSTR_hg38":null,
+        "WebSTR_hg19":"STR_1597784"
     },
     {
         "chrom":"chr2",
@@ -3301,7 +3576,12 @@
         "gnomAD_gene":"STARD7",
         "GeneReviews":"NBK535148",
         "Mondo":"0011930",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"375031",
+        "Orphanet":"86814",
+        "GARD":"18083",
+        "WebSTR_hg38":"286156",
+        "WebSTR_hg19":"STR_754470"
     },
     {
         "chrom":"chr6",
@@ -3360,7 +3640,12 @@
         "gnomAD_gene":"TBP",
         "GeneReviews":"NBK1438",
         "Mondo":"0011781",
-        "Year":1999.0
+        "Year":1999.0,
+        "MedGen":"337637",
+        "Orphanet":"98759",
+        "GARD":"10469",
+        "WebSTR_hg38":"83566",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr22",
@@ -3419,7 +3704,12 @@
         "gnomAD_gene":"TBX1",
         "GeneReviews":"NBK535148",
         "Mondo":"0008542",
-        "Year":null
+        "Year":null,
+        "MedGen":"21498",
+        "Orphanet":"3303",
+        "GARD":"2245",
+        "WebSTR_hg38":"4900984",
+        "WebSTR_hg19":"STR_889797"
     },
     {
         "chrom":"chr18",
@@ -3478,7 +3768,12 @@
         "gnomAD_gene":"TCF4",
         "GeneReviews":"NBK535148",
         "Mondo":"0013203",
-        "Year":2015.0
+        "Year":2015.0,
+        "MedGen":"442479",
+        "Orphanet":"98974",
+        "GARD":"10018",
+        "WebSTR_hg38":"6247607; 463325",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr16",
@@ -3537,7 +3832,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":null,
-        "Year":2023.0
+        "Year":2023.0,
+        "MedGen":"431598",
+        "Orphanet":null,
+        "GARD":"10748",
+        "WebSTR_hg38":"814002; 5973136",
+        "WebSTR_hg19":"STR_540982"
     },
     {
         "chrom":"chr16",
@@ -3596,7 +3896,12 @@
         "gnomAD_gene":"TNRC6A",
         "GeneReviews":"NBK535148",
         "Mondo":"0054846",
-        "Year":2018.0
+        "Year":2018.0,
+        "MedGen":"1648448",
+        "Orphanet":"86814",
+        "GARD":"16758",
+        "WebSTR_hg38":"5951520",
+        "WebSTR_hg19":"STR_519979"
     },
     {
         "chrom":"chr1",
@@ -3655,7 +3960,12 @@
         "gnomAD_gene":"VWA1",
         "GeneReviews":"NBK535148",
         "Mondo":"0030977",
-        "Year":null
+        "Year":null,
+        "MedGen":"1786836",
+        "Orphanet":"314485",
+        "GARD":"18444",
+        "WebSTR_hg38":"1099767",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr16",
@@ -3714,7 +4024,12 @@
         "gnomAD_gene":"XYLT1",
         "GeneReviews":"NBK535148",
         "Mondo":"0014343",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"862731",
+        "Orphanet":"1425",
+        "GARD":"16466",
+        "WebSTR_hg38":"793606",
+        "WebSTR_hg19":null
     },
     {
         "chrom":"chr3",
@@ -3773,7 +4088,12 @@
         "gnomAD_gene":"YEATS2",
         "GeneReviews":"NBK535148",
         "Mondo":"0014055",
-        "Year":2019.0
+        "Year":2019.0,
+        "MedGen":"767474",
+        "Orphanet":"86814",
+        "GARD":"16758",
+        "WebSTR_hg38":"5034940; 769177",
+        "WebSTR_hg19":"STR_1006941"
     },
     {
         "chrom":"chr16",
@@ -3832,7 +4152,12 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":"0010847",
-        "Year":2023.0
+        "Year":2023.0,
+        "MedGen":"199815",
+        "Orphanet":"98765",
+        "GARD":"9970",
+        "WebSTR_hg38":"5977326",
+        "WebSTR_hg19":"STR_545217"
     },
     {
         "chrom":"chr13",
@@ -3891,7 +4216,12 @@
         "gnomAD_gene":"ZIC2",
         "GeneReviews":"NBK1530",
         "Mondo":"0012322",
-        "Year":2001.0
+        "Year":2001.0,
+        "MedGen":"355304",
+        "Orphanet":"2162",
+        "GARD":"6665",
+        "WebSTR_hg38":"5374719",
+        "WebSTR_hg19":"STR_395661"
     },
     {
         "chrom":"chrX",
@@ -3950,7 +4280,12 @@
         "gnomAD_gene":"ZIC3",
         "GeneReviews":"NBK535148",
         "Mondo":"0010752",
-        "Year":null
+        "Year":null,
+        "MedGen":"419019",
+        "Orphanet":null,
+        "GARD":"15309",
+        "WebSTR_hg38":"883856",
+        "WebSTR_hg19":"STR_1596381"
     },
     {
         "chrom":"chr7",
@@ -4009,6 +4344,11 @@
         "gnomAD_gene":null,
         "GeneReviews":null,
         "Mondo":null,
-        "Year":null
+        "Year":null,
+        "MedGen":null,
+        "Orphanet":null,
+        "GARD":null,
+        "WebSTR_hg38":"1380240; 5696269",
+        "WebSTR_hg19":"STR_1325788"
     }
 ]
