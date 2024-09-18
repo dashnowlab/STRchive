@@ -421,6 +421,30 @@ var locus_html =
             })
             locus_html = locus_html + `</li>`
           };
+          if (f.MedGen != '') {
+            locus_html = locus_html + `<li><b>MedGen:</b> `
+            f.MedGen.split(";").forEach(function (MedGenID) {
+              locus_html = locus_html +
+              `<a href="https://www.ncbi.nlm.nih.gov/medgen/?term=${MedGenID.trim()}">${MedGenID}</a>`
+            })
+            locus_html = locus_html + `</li>`
+          };
+          if (f.Orphanet != '') {
+            locus_html = locus_html + `<li><b>Orphanet:</b> `
+            f.Orphanet.split(";").forEach(function (OrphanetID) {
+              locus_html = locus_html +
+              `<a href="https://www.orpha.net/en/disease/detail/${OrphanetID.trim()}">${OrphanetID}</a>`
+            })
+            locus_html = locus_html + `</li>`
+          };
+          if (f.GARD != '') {
+            locus_html = locus_html + `<li><b>GARD:</b> `
+            f.GARD.split(";").forEach(function (GARDid) {
+              locus_html = locus_html +
+              `<a href="https://rarediseases.info.nih.gov/diseases/${GARDid.trim()}/index">${GARDid}</a>`
+            })
+            locus_html = locus_html + `</li>`
+          };
           if (f.source != '') {
             locus_html = locus_html + `<li><b>Sources reviewed for STRchive:</b></li>
             `
