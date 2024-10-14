@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <style>
+    svg {
+      --a: #534b52;
+      --b: #e0ddcf;
+      fill: none;
+    }
+
+    .draw {
+      --delay: 0s;
+      animation: draw 3s var(--delay) ease both;
+      stroke-dasharray: 1;
+    }
+
+    @keyframes draw {
+      from {
+        stroke-dashoffset: 1;
+      }
+    }
+
+    .fade {
+      --delay: 0s;
+      animation: fade 3s var(--delay) ease both;
+      stroke-dasharray: 1;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <!-- S -->
+  <g transform="translate(30, 50)">
+    <path
+      id="S"
+      fill="none"
+      d="
+        M 25 -40
+        L 0 -40
+        A 20 20 0 0 0 0 0
+        A 20 20 0 0 1 0 40
+        L -25 40
+      "
+      pathLength="1"
+    />
+    <use
+      href="#S"
+      class="draw"
+      stroke="var(--a)"
+      stroke-width="20"
+    />
+    <use
+      href="#S"
+      class="draw"
+      style="--delay: 0.25s"
+      stroke="var(--b)"
+      stroke-width="10"
+    />
+    <use
+      href="#S"
+      class="draw"
+      style="--delay: 0.5s"
+      stroke="var(--a)"
+      stroke-width="4"
+    />
+  </g>
+
+  <!-- T -->
+  <g transform="translate(100, 50)">
+    <path
+      class="draw"
+      pathLength="1"
+      fill="none"
+      stroke="var(--a)"
+      stroke-width="20"
+      d="
+        M -35 -40
+        L 35 -40
+      "
+    />
+    <path
+      class="draw"
+      pathLength="1"
+      fill="none"
+      stroke="var(--a)"
+      stroke-width="20"
+      d="
+        M 0 -25
+        L 0 50
+      "
+    />
+    <path
+      class="fade"
+      pathLength="1"
+      style="--delay: 2s"
+      fill="none"
+      stroke="var(--b)"
+      stroke-width="10"
+      d="
+        M -30 -40
+        L -10 -40
+        M 0 -40
+        L 10 -40
+        M 20 -40
+        L 30 -40
+        M 0 35
+        L 0 45
+      "
+    />
+  </g>
+
+  <!-- R -->
+  <g transform="translate(180, 50)">
+    <path
+      class="draw"
+      pathLength="1"
+      fill="none"
+      stroke="var(--a)"
+      stroke-width="20"
+      d="
+        M -25 -50
+        L -25 50
+      "
+    />
+    <path
+      class="draw"
+      pathLength="1"
+      fill="none"
+      stroke="var(--a)"
+      stroke-width="20"
+      d="
+        M 5 0
+        A 20 20 0 0 1 25 20
+        L 25 50
+      "
+    />
+    <path
+      id="R"
+      pathLength="1"
+      fill="none"
+      d="
+        M -15 -40
+        L 5 -40
+        A 20 20 0 0 1 5 0
+        L -10 0
+      "
+    />
+    <use
+      href="#R"
+      class="draw"
+      stroke="var(--a)"
+      stroke-width="20"
+    />
+    <use
+      href="#R"
+      class="draw"
+      style="--delay: 0.25s"
+      stroke="var(--b)"
+      stroke-width="10"
+    />
+    <use
+      href="#R"
+      class="draw"
+      style="--delay: 0.5s"
+      stroke="var(--a)"
+      stroke-width="4"
+    />
+
+    <path
+      class="fade"
+      pathLength="1"
+      style="--delay: 2s"
+      fill="none"
+      stroke="var(--b)"
+      stroke-width="10"
+      d="
+        M -25 -45
+        L -25 -10
+        M -25 35
+        L -25 45
+      "
+    />
+  </g>
+
+  <!-- chive -->
+  <text
+    x="220"
+    y="99"
+    fill="var(--a)"
+    class="fade"
+    style="--delay: 3s; font-family: 'Barlow'; font-size: 80px"
+  >
+    chive
+  </text>
+</svg>
