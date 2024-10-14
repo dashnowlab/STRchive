@@ -1,0 +1,59 @@
+:root {
+  --black: hsl(280, 5%, 0%);
+  --dark-gray: hsl(280, 5%, 25%);
+  --gray: hsl(280, 5%, 50%);
+  --light-gray: hsl(280, 5%, 75%);
+  --white: hsl(280, 5%, 100%);
+
+  --primary: hsl(190, 100%, 35%);
+  --secondary: hsl(330, 75%, 45%);
+
+  --content: 1000px;
+  --fast: 0.25s ease;
+
+  --shadow: #00000020;
+  --box-shadow: 0 0 2px var(--shadow), 2px 2px 5px var(--shadow);
+}
+
+* {
+  font-family: Lato, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header,
+footer,
+section {
+  padding: var(--padding) max(var(--padding), (100% - var(--content)) / 2);
+}
+
+header,
+footer {
+  --padding: 20px;
+}
+
+section {
+  --padding: 40px;
+}
+
+header a,
+footer a {
+  padding: 5px;
+  color: var(--white);
+  text-decoration: none;
+  transition: color var(--fast);
+}
+
+header a:hover,
+footer a:hover {
+  color: var(--primary);
+}

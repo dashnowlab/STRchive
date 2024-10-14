@@ -1,14 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 450 100"
+  style="overflow: visible"
+>
   <style>
     svg {
-      --a: #534b52;
-      --b: #e0ddcf;
+      --a: var(--white);
+      --b: var(--black);
+      --duration: 1s;
       fill: none;
+      filter: url(#filter);
     }
 
     .draw {
-      --delay: 0s;
-      animation: draw 3s var(--delay) ease both;
+      --delay: 0;
+      animation: draw var(--duration) calc(var(--delay) * var(--duration)) ease
+        both;
       stroke-dasharray: 1;
     }
 
@@ -20,7 +27,8 @@
 
     .fade {
       --delay: 0s;
-      animation: fade 3s var(--delay) ease both;
+      animation: fade var(--duration) calc(var(--delay) * var(--duration)) ease
+        both;
       stroke-dasharray: 1;
     }
 
@@ -30,6 +38,36 @@
       }
     }
   </style>
+
+  <filter id="filter" primitiveUnits="objectBoundingBox">
+    <feSpecularLighting
+      specularExponent="50"
+      lighting-color="cyan"
+      specularConstant="0.5"
+      surfaceScale="0"
+      result="light1"
+    >
+      <fePointLight x="0" y="0" z="1"></fePointLight>
+    </feSpecularLighting>
+    <feSpecularLighting
+      in="light1"
+      specularExponent="50"
+      lighting-color="magenta"
+      specularConstant="0.5"
+      surfaceScale="0"
+      result="light2"
+    >
+      <fePointLight x="0.5" y="1" z="1"></fePointLight>
+    </feSpecularLighting>
+    <feBlend in="light1" in2="light2" result="lights" />
+    <feComposite
+      in="lights"
+      in2="SourceGraphic"
+      operator="in"
+      result="composite"
+    />
+    <feBlend in="SourceGraphic" in2="composite" mode="overlay" />
+  </filter>
 
   <!-- S -->
   <g transform="translate(30, 50)">
@@ -45,26 +83,9 @@
       "
       pathLength="1"
     />
-    <use
-      href="#S"
-      class="draw"
-      stroke="var(--a)"
-      stroke-width="20"
-    />
-    <use
-      href="#S"
-      class="draw"
-      style="--delay: 0.25s"
-      stroke="var(--b)"
-      stroke-width="10"
-    />
-    <use
-      href="#S"
-      class="draw"
-      style="--delay: 0.5s"
-      stroke="var(--a)"
-      stroke-width="4"
-    />
+    <use href="#S" class="draw" stroke="var(--a)" stroke-width="20" />
+    <use href="#S" class="draw" stroke="var(--b)" stroke-width="10" />
+    <use href="#S" class="draw" stroke="var(--a)" stroke-width="4" />
   </g>
 
   <!-- T -->
@@ -94,7 +115,7 @@
     <path
       class="fade"
       pathLength="1"
-      style="--delay: 2s"
+      style="--delay: 0.5"
       fill="none"
       stroke="var(--b)"
       stroke-width="10"
@@ -105,7 +126,7 @@
         L 10 -40
         M 20 -40
         L 30 -40
-        M 0 35
+        M 0 15
         L 0 45
       "
     />
@@ -147,31 +168,13 @@
         L -10 0
       "
     />
-    <use
-      href="#R"
-      class="draw"
-      stroke="var(--a)"
-      stroke-width="20"
-    />
-    <use
-      href="#R"
-      class="draw"
-      style="--delay: 0.25s"
-      stroke="var(--b)"
-      stroke-width="10"
-    />
-    <use
-      href="#R"
-      class="draw"
-      style="--delay: 0.5s"
-      stroke="var(--a)"
-      stroke-width="4"
-    />
-
+    <use href="#R" class="draw" stroke="var(--a)" stroke-width="20" />
+    <use href="#R" class="draw" stroke="var(--b)" stroke-width="10" />
+    <use href="#R" class="draw" stroke="var(--a)" stroke-width="4" />
     <path
       class="fade"
       pathLength="1"
-      style="--delay: 2s"
+      style="--delay: 0.5"
       fill="none"
       stroke="var(--b)"
       stroke-width="10"
@@ -190,7 +193,7 @@
     y="99"
     fill="var(--a)"
     class="fade"
-    style="--delay: 3s; font-family: 'Barlow'; font-size: 80px"
+    style="--delay: 0.5; font-family: Barlow; font-size: 100px"
   >
     chive
   </text>
