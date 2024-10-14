@@ -1,15 +1,15 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 450 100"
-  style="overflow: visible"
->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100">
   <style>
     svg {
       --a: var(--white);
       --b: var(--black);
-      --duration: 1s;
+      --duration: 0s;
       fill: none;
       filter: url(#filter);
+    }
+
+    svg[data-animated] {
+      --duration: 3s;
     }
 
     path {
@@ -42,7 +42,7 @@
   <filter id="filter" primitiveUnits="objectBoundingBox">
     <feSpecularLighting
       specularExponent="50"
-      lighting-color="cyan"
+      lighting-color="var(--primary)"
       specularConstant="0.4"
       surfaceScale="0"
       result="light1"
@@ -52,12 +52,12 @@
     <feSpecularLighting
       in="light1"
       specularExponent="50"
-      lighting-color="magenta"
+      lighting-color="var(--secondary)"
       specularConstant="0.5"
       surfaceScale="0"
       result="light2"
     >
-      <fePointLight x="0.65" y="1" z="1"></fePointLight>
+      <fePointLight x="0.5" y="1" z="1"></fePointLight>
     </feSpecularLighting>
     <feBlend in="light1" in2="light2" result="lights" />
     <feComposite

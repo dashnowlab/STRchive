@@ -1,12 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Svg from "@cxa/astro-inline-svg";
+import logo from "@/assets/logo.svg?raw";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Home">
+  <section class="hero dark">
+    <Svg raw={logo} class="logo" data-animated />
+  </section>
+
   <section>
-    Hello World
-    <br />
-    <br />
     <div class="colors">
       <span class="color" style="background: var(--primary)"></span>
       <span class="color" style="background: var(--secondary)"></span>
@@ -20,13 +23,27 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+  .hero {
+    --padding: 100px;
+    background: radial-gradient(
+      ellipse at top center,
+      var(--dark-gray),
+      var(--black)
+    );
+    color: var(--white);
+  }
+
+  .logo {
+    height: 100px;
+  }
+
   .colors {
     display: inline-flex;
     box-shadow: var(--box-shadow);
   }
 
   .color {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 </style>

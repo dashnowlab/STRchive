@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 import "./global.css";
 
 const { title } = Astro.props;
@@ -12,23 +13,25 @@ const {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" transition:animate="initial">
   <head>
+    <ViewTransitions />
+
     <!-- basic -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title} | {TITLE}</title>
-    <meta name="title" content=`${TITLE}` />
-    <meta name="description" content=`${DESCRIPTION}` />
+    <meta name="title" content={TITLE} />
+    <meta name="description" content={DESCRIPTION} />
 
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
 
     <!-- open graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content=`${URL}` />
-    <meta property="og:title" content=`${TITLE}` />
-    <meta property="og:description" content=`${DESCRIPTION}` />
+    <meta property="og:url" content={URL} />
+    <meta property="og:title" content={TITLE} />
+    <meta property="og:description" content={DESCRIPTION} />
     <meta property="og:image" content="share.jpg" />
 
     <!-- fonts -->

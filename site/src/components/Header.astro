@@ -1,21 +1,42 @@
 ---
 import Svg from "@cxa/astro-inline-svg";
 import logo from "@/assets/logo.svg?raw";
+const path = Astro.url.pathname;
+
+const links = [
+  { href: "/", name: "Home" },
+  { href: "/data", name: "Data" },
+  { href: "/resources", name: "Resources" },
+  { href: "/about", name: "About" },
+];
 ---
 
 <header>
-  <Svg raw={logo} class="logo" aria-label="STRchive" />
   <nav>
-    <a href="/">Link 1</a>
-    <a href="/">Link 2</a>
-    <a href="/">Link 3</a>
+    {
+      path !== "/" && (
+        <a href="/">
+          <Svg raw={logo} class="logo" />
+        </a>
+      )
+    }
+    {
+      links.map(({ href, name }) => (
+        <a href={href} class:list={["link", href === path && "active"]}>
+          {name}
+        </a>
+      ))
+    }
   </nav>
 </header>
 
 <style>
   header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
     gap: 20px;
     background: var(--black);
     color: var(--white);
@@ -23,12 +44,37 @@ import logo from "@/assets/logo.svg?raw";
   }
 
   .logo {
-    height: 40px;
+    height: 30px;
+    margin-right: 20px;
   }
 
   nav {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  .link {
+    position: relative;
+    padding: 10px;
+  }
+
+  .link::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    scale: 0 1;
+    background: currentColor;
+    content: "";
+    transition: scale var(--fast);
+  }
+
+  .link.active::after,
+  .link:hover::after {
+    scale: 1 1;
   }
 </style>
