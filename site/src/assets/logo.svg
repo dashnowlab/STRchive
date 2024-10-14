@@ -25,14 +25,14 @@
       }
     }
 
-    .fade {
-      --delay: 0s;
-      animation: fade var(--duration) calc(var(--delay) * var(--duration)) ease
+    text {
+      --delay: 0;
+      animation: text var(--duration) calc(var(--delay) * var(--duration)) ease
         both;
       stroke-dasharray: 1;
     }
 
-    @keyframes fade {
+    @keyframes text {
       from {
         opacity: 0;
       }
