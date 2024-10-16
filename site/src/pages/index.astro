@@ -5,45 +5,49 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-  <section class="hero dark">
-    <Svg raw={logo} class="logo" data-animated />
+  <section class="hero dark gradient">
+    <Svg raw={logo} class="logo" data-dark data-animated />
   </section>
 
   <section>
-    <div class="colors">
-      <span class="color" style="background: var(--primary)"></span>
-      <span class="color" style="background: var(--secondary)"></span>
-      <span class="color" style="background: var(--white)"></span>
-      <span class="color" style="background: var(--light-gray)"></span>
-      <span class="color" style="background: var(--gray)"></span>
-      <span class="color" style="background: var(--dark-gray)"></span>
-      <span class="color" style="background: var(--black)"></span>
-    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
   </section>
 </Layout>
 
 <style>
   .hero {
     --padding: 100px;
+    z-index: 0;
+    position: relative;
+  }
+
+  .hero::after {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
     background: radial-gradient(
-      ellipse at top center,
-      var(--dark-gray),
-      var(--black)
-    );
-    color: var(--white);
+        ellipse at bottom left,
+        var(--primary),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at bottom right,
+        var(--secondary),
+        transparent 50%
+      );
+    content: "";
+    opacity: 0.5;
   }
 
   .logo {
     height: 100px;
-  }
-
-  .colors {
-    display: inline-flex;
-    box-shadow: var(--box-shadow);
-  }
-
-  .color {
-    width: 40px;
-    height: 40px;
   }
 </style>

@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 450 100"
+  style="overflow: visible"
+>
   <style>
     svg {
-      --a: var(--white);
-      --b: var(--black);
-      --duration: 0s;
       fill: none;
-      filter: url(#filter);
     }
 
     svg[data-animated] {
@@ -39,36 +39,6 @@
     }
   </style>
 
-  <filter id="filter" primitiveUnits="objectBoundingBox">
-    <feSpecularLighting
-      specularExponent="50"
-      lighting-color="var(--primary)"
-      specularConstant="0.4"
-      surfaceScale="0"
-      result="light1"
-    >
-      <fePointLight x="0" y="0" z="1"></fePointLight>
-    </feSpecularLighting>
-    <feSpecularLighting
-      in="light1"
-      specularExponent="50"
-      lighting-color="var(--secondary)"
-      specularConstant="0.5"
-      surfaceScale="0"
-      result="light2"
-    >
-      <fePointLight x="0.5" y="1" z="1"></fePointLight>
-    </feSpecularLighting>
-    <feBlend in="light1" in2="light2" result="lights" />
-    <feComposite
-      in="lights"
-      in2="SourceGraphic"
-      operator="in"
-      result="composite"
-    />
-    <feBlend in="SourceGraphic" in2="composite" mode="overlay" />
-  </filter>
-
   <!-- S -->
   <g transform="translate(30, 50)">
     <path
@@ -76,18 +46,18 @@
       d="M 25 -40 L 0 -40 A 20 20 0 0 0 0 0 A 20 20 0 0 1 0 40 L -25 40"
       pathLength="1"
     />
-    <use href="#S" stroke="var(--a)" stroke-width="20" />
-    <use href="#S" stroke="var(--b)" stroke-width="10" />
-    <use href="#S" stroke="var(--a)" stroke-width="4" />
+    <use href="#S" stroke="currentColor" stroke-width="20" />
+    <use href="#S" stroke="url(#gradient)" stroke-width="10" />
+    <use href="#S" stroke="currentColor" stroke-width="4" />
   </g>
 
   <!-- T -->
   <g transform="translate(100, 50)">
-    <g stroke="var(--a)" stroke-width="20">
+    <g stroke="currentColor" stroke-width="20">
       <path pathLength="1" d="M -35 -40 L 35 -40" />
       <path pathLength="1" d="M 0 -25 L 0 50" />
     </g>
-    <g stroke="var(--b)" stroke-width="5">
+    <g stroke="url(#gradient)" stroke-width="3">
       <path pathLength="1" style="--delay: 0.1" d="M -30 -40 L -10 -40" />
       <path pathLength="1" style="--delay: 0.3" d="M 0 -40 L 10 -40" />
       <path pathLength="1" style="--delay: 0.5" d="M 20 -40 L 30 -40" />
@@ -97,7 +67,7 @@
 
   <!-- R -->
   <g transform="translate(180, 50)">
-    <g stroke="var(--a)" stroke-width="20">
+    <g stroke="currentColor" stroke-width="20">
       <path pathLength="1" d="M -25 -50 L -25 50" />
       <path pathLength="1" d="M 5 0 A 20 20 0 0 1 25 20 L 25 50" />
     </g>
@@ -107,21 +77,34 @@
       pathLength="1"
       d="M -15 -40 L 5 -40 A 20 20 0 0 1 5 0 L -10 0"
     />
-    <use href="#R" stroke="var(--a)" stroke-width="20" />
-    <use href="#R" stroke="var(--b)" stroke-width="10" />
-    <use href="#R" stroke="var(--a)" stroke-width="4" />
+    <use href="#R" stroke="currentColor" stroke-width="20" />
+    <use href="#R" stroke="url(#gradient)" stroke-width="10" />
+    <use href="#R" stroke="currentColor" stroke-width="4" />
 
-    <g stroke="var(--b)" stroke-width="5">
+    <g stroke="url(#gradient)" stroke-width="3">
       <path pathLength="1" style="--delay: 0.1" d="M -25 -45 L -25 -10" />
       <path pathLength="1" style="--delay: 0.6" d="M -25 35 L -25 45" />
     </g>
   </g>
 
+  <linearGradient
+    id="gradient"
+    gradientUnits="userSpaceOnUse"
+    x1="0%"
+    y1="-50%"
+    x2="0%"
+    y2="50%"
+  >
+    <stop offset="0%" stop-color="var(--primary)" />
+    <stop offset="50%" stop-color="var(--tertiary)" />
+    <stop offset="100%" stop-color="var(--secondary)" />
+  </linearGradient>
+
   <!-- chive -->
   <text
-    x="220"
+    x="225"
     y="99"
-    fill="var(--a)"
+    fill="currentColor"
     class="fade"
     style="--delay: 0.5; font-family: Barlow; font-size: 100px"
   >

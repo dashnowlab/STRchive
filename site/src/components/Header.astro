@@ -16,7 +16,7 @@ const links = [
     {
       path !== "/" && (
         <a href="/">
-          <Svg raw={logo} class="logo" />
+          <Svg raw={logo} class="logo" data-dark />
         </a>
       )
     }
@@ -44,6 +44,7 @@ const links = [
   }
 
   .logo {
+    color: var(--white);
     height: 30px;
     margin-right: 20px;
   }

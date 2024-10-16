@@ -5,8 +5,9 @@
   --light-gray: hsl(280, 5%, 80%);
   --white: hsl(280, 5%, 100%);
 
-  --primary: hsl(190, 100%, 50%);
+  --primary: hsl(200, 100%, 50%);
   --secondary: hsl(330, 80%, 50%);
+  --tertiary: hsl(260, 40%, 50%);
 
   --content: 1000px;
   --rounded: 3px;
@@ -59,6 +60,7 @@ section {
   gap: 40px;
 }
 
-section.dark {
-  background: var(--dark-gray);
+.dark {
+  background: var(--black);
+  color: var(--white);
 }
