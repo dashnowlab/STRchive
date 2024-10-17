@@ -2,7 +2,18 @@
 
 <style>
   footer {
+    padding: 30px max(40px, (100% - var(--content)) / 2);
     background: var(--black);
     color: var(--white);
+  }
+
+  footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color var(--fast);
+  }
+
+  footer a:hover {
+    color: var(--primary);
   }
 </style>

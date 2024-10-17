@@ -1,15 +1,57 @@
 ---
 import Svg from "@cxa/astro-inline-svg";
 import logo from "@/assets/logo.svg?raw";
+import data from "@/assets/data.svg?raw";
+import paper from "@/assets/paper.svg?raw";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-  <section class="hero dark gradient">
-    <Svg raw={logo} class="logo" data-dark data-animated />
+  <section class="hero">
+    <div class="title">
+      <Svg raw={logo} class="logo" data-animated />
+      <div class="subtitle">short tandem repeat archive</div>
+    </div>
+
+    <p class="center tagline">
+      An archive of STRs associated with human diseases
+    </p>
+
+    <div class="buttons">
+      <a href="/data" class="button">
+        Data<Svg raw={data} class="icon" />
+      </a>
+      <a
+        href="https://www.medrxiv.org/content/10.1101/2024.05.21.24307682v1"
+        class="button"
+        target="_blank"
+      >
+        Preprint<Svg raw={paper} class="icon" />
+      </a>
+    </div>
   </section>
 
   <section>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -24,9 +66,11 @@ import Layout from "@/layouts/Layout.astro";
 
 <style>
   .hero {
-    --padding: 100px;
     z-index: 0;
     position: relative;
+    padding-bottom: 80px;
+    background: var(--black);
+    color: var(--white);
   }
 
   .hero::after {
@@ -34,20 +78,26 @@ import Layout from "@/layouts/Layout.astro";
     position: absolute;
     inset: 0;
     background: radial-gradient(
-        ellipse at bottom left,
+        ellipse at 0% 200%,
         var(--primary),
-        transparent 50%
+        transparent 75%
       ),
-      radial-gradient(
-        ellipse at bottom right,
-        var(--secondary),
-        transparent 50%
-      );
+      radial-gradient(ellipse at 100% 200%, var(--secondary), transparent 75%);
     content: "";
     opacity: 0.5;
   }
 
-  .logo {
-    height: 100px;
+  .title {
+    display: inline-block;
+  }
+
+  .subtitle {
+    margin-top: 5px;
+    letter-spacing: 0.21em;
+    text-transform: lowercase;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
   }
 </style>

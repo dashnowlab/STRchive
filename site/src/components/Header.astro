@@ -1,5 +1,6 @@
 ---
 import Svg from "@cxa/astro-inline-svg";
+import github from "@/assets/github.svg?raw";
 import logo from "@/assets/logo.svg?raw";
 const path = Astro.url.pathname;
 
@@ -15,49 +16,83 @@ const links = [
   <nav>
     {
       path !== "/" && (
-        <a href="/">
-          <Svg raw={logo} class="logo" data-dark />
+        <a href="/" class="logo-link">
+          <Svg raw={logo} class="logo" />
         </a>
       )
     }
     {
       links.map(({ href, name }) => (
-        <a href={href} class:list={["link", href === path && "active"]}>
+        <a
+          href={href}
+          class:list={["link", href === path && "active"]}
+          aria-label="GitHub"
+        >
           {name}
         </a>
       ))
     }
+
+    <div class="spacer"></div>
+
+    <a
+      href="https://github.com/dashnowlab/STRchive"
+      class="link"
+      target="_blank"
+    >
+      <Svg raw={github} class="icon" />
+    </a>
   </nav>
 </header>
 
 <style>
   header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    gap: 20px;
+    padding: 30px max(40px, (100% - var(--content)) / 2);
     background: var(--black);
     color: var(--white);
     font-size: 1.1rem;
   }
 
-  .logo {
+  header a {
     color: var(--white);
-    height: 30px;
-    margin-right: 20px;
+    text-decoration: none;
+    transition: color var(--fast);
+  }
+
+  header a:hover {
+    color: var(--primary);
   }
 
   nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+  }
+
+  .logo-link {
+    height: 30px;
+    margin-right: 20px;
+    color: var(--white);
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      /* flex-direction: column; */
+    }
   }
 
   .link {
     position: relative;
-    padding: 10px;
+    padding: 5px;
   }
 
   .link::after {

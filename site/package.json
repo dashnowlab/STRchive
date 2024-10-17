@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@cxa/astro-inline-svg": "^0.5.1",
-    "astro": "^4.16.3"
+    "astro": "^4.16.3",
+    "astro-icon": "^1.1.1"
   },
   "devDependencies": {
     "postcss": "^8.4.47",

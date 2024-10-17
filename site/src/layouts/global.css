@@ -5,15 +5,20 @@
   --light-gray: hsl(280, 5%, 80%);
   --white: hsl(280, 5%, 100%);
 
-  --primary: hsl(200, 100%, 50%);
-  --secondary: hsl(330, 80%, 50%);
-  --tertiary: hsl(260, 40%, 50%);
+  --primary: hsl(190, 60%, 50%);
+  --secondary: hsl(5, 70%, 60%);
 
   --content: 1000px;
-  --rounded: 3px;
+  --rounded: 999px;
   --fast: 0.25s ease;
   --shadow: #00000020;
   --box-shadow: 0 0 2px var(--shadow), 2px 2px 5px var(--shadow);
+
+  --spacing: 2;
+  --compact: 1.5;
+
+  --regular: 300;
+  --bold: 600;
 
   font-size: 13pt;
 }
@@ -28,39 +33,70 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  background: var(--white);
+  color: var(--black);
+  font-weight: var(--regular);
+  line-height: var(--compact);
 }
 
 main {
   flex-grow: 1;
 }
 
-header,
-footer,
 section {
-  --padding: 40px;
-  padding: var(--padding) max(var(--padding), (100% - var(--content)) / 2);
+  padding: 40px max(40px, (100% - var(--content)) / 2);
+  gap: 40px;
+  text-align: center;
 }
 
-header a,
-footer a {
-  color: var(--white);
-  text-decoration: none;
-  transition: color var(--fast);
+p {
+  margin: 30px 0;
+  line-height: var(--spacing);
+  text-align: justify;
 }
 
-header a:hover,
-footer a:hover {
+a {
   color: var(--primary);
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+a:hover {
+  color: currentColor;
 }
 
-.dark {
-  background: var(--black);
+.center {
+  text-align: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  padding: 7.5px 15px;
+  gap: 10px;
+  border: solid 2px currentColor;
+  border-radius: var(--rounded);
   color: var(--white);
+  text-decoration: none;
+  transition:
+    color var(--fast),
+    background var(--fast),
+    box-shadow var(--fast);
+}
+
+.button:hover {
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px var(--secondary);
+  color: var(--white);
+}
+
+.buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  height: 1.2em;
 }
