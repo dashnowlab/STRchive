@@ -1,9 +1,134 @@
 ---
+import lodash from "lodash";
+import Svg from "@cxa/astro-inline-svg";
 import Layout from "@/layouts/Layout.astro";
+import github from "@/assets/github.svg?raw";
+
+const team = [
+  {
+    name: "Harriet Dashnow",
+    role: "Postdoc",
+    affiliation: "University of Utah",
+    link: "https://harrietdashnow.com/",
+  },
+  {
+    name: "Laurel Hiatt",
+    role: "MD/PhD candidate",
+    affiliation: "University of Utah",
+    link: "https://twitter.com/laurel_hiatt",
+  },
+  {
+    name: "Ben Weisburd",
+    role: "Computational Scientist",
+    affiliation: "Broad Institute",
+    link: "https://www.broadinstitute.org/bios/ben-weisburd",
+  },
+  {
+    name: "Egor Dolzhenko",
+    role: "Bioinformatics Scientist",
+    affiliation: "PacBio",
+    link: "https://twitter.com/egor_dolzhenko",
+  },
+];
 ---
 
 <Layout title="About">
   <section>
     <h1>About</h1>
   </section>
+
+  <section>
+    <h2 id="contact">Contact</h2>
+
+    <p class="center">
+      The best way to get in touch about STRchive is to start a discussion on
+      GitHub:
+    </p>
+
+    <div class="buttons">
+      <a
+        href="https://github.com/dashnowlab/STRchive/discussions"
+        class="button"
+      >
+        <Svg raw={github} class="icon" />GitHub</a
+      >
+    </div>
+  </section>
+
+  <section>
+    <h2 id="cite">Cite</h2>
+    <blockquote>
+      <span>
+        Hiatt, L., Weisburd, B., Dolzhenko, E., VanNoy, G.E., Kurtas, E.N.,
+        Rehm, H.L., Quinlan, A. and Dashnow, H., 2024.
+      </span>
+      <b>
+        STRchive: a dynamic resource detailing population-level and
+        locus-specific insights at tandem repeat disease loci.
+      </b>
+      <span
+        >medRxiv doi: <a href="https://doi.org/10.1101/2024.05.21.24307682"
+          >https://doi.org/10.1101/2024.05.21.24307682</a
+        ></span
+      >
+    </blockquote>
+  </section>
+
+  <section>
+    <h2 id="contribute">Contribute</h2>
+
+    <p>
+      STRchive welcomes community contributions. An accurate and up to date
+      resource helps everyone. If you find this data useful, consider adding new
+      STR loci or updating existing ones by submitting an issue or pull request
+      on GitHub:
+    </p>
+
+    <div class="buttons">
+      <a href="https://github.com/dashnowlab/STRchive" class="button">
+        <Svg raw={github} class="icon" />GitHub</a
+      >
+    </div>
+  </section>
+
+  <section>
+    <h2 id="team">Team</h2>
+
+    <div class="members">
+      {
+        team.map((member) => (
+          <a class="member" href={member.link} target="_blank">
+            <img src={`images/team/${lodash.kebabCase(member.name)}.jpg`} />
+            <b>{member.name}</b>
+            <span>{member.role}</span>
+            <span>{member.affiliation}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .member > img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 999px;
+    box-shadow: var(--box-shadow);
+  }
+</style>

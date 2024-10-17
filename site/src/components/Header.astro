@@ -1,7 +1,8 @@
 ---
 import Svg from "@cxa/astro-inline-svg";
-import github from "@/assets/github.svg?raw";
 import logo from "@/assets/logo.svg?raw";
+import github from "@/assets/github.svg?raw";
+
 const path = Astro.url.pathname;
 
 const links = [
@@ -16,7 +17,7 @@ const links = [
   <nav>
     {
       path !== "/" && (
-        <a href="/" class="logo-link">
+        <a href="/" class="logo-link" aria-label="Home">
           <Svg raw={logo} class="logo" />
         </a>
       )
@@ -25,7 +26,7 @@ const links = [
       links.map(({ href, name }) => (
         <a
           href={href}
-          class:list={["link", href === path && "active"]}
+          class:list={["nav-link", href === path && "active"]}
           aria-label="GitHub"
         >
           {name}
@@ -37,8 +38,9 @@ const links = [
 
     <a
       href="https://github.com/dashnowlab/STRchive"
-      class="link"
+      class="nav-link"
       target="_blank"
+      aria-label="GitHub"
     >
       <Svg raw={github} class="icon" />
     </a>
@@ -56,7 +58,6 @@ const links = [
   header a {
     color: var(--white);
     text-decoration: none;
-    transition: color var(--fast);
   }
 
   header a:hover {
@@ -73,7 +74,6 @@ const links = [
   .logo-link {
     height: 30px;
     margin-right: 20px;
-    color: var(--white);
   }
 
   .logo {
@@ -84,18 +84,12 @@ const links = [
     flex-grow: 1;
   }
 
-  @media (max-width: 600px) {
-    nav {
-      /* flex-direction: column; */
-    }
-  }
-
-  .link {
+  .nav-link {
     position: relative;
     padding: 5px;
   }
 
-  .link::after {
+  .nav-link::after {
     display: block;
     position: absolute;
     right: 0;
@@ -109,8 +103,8 @@ const links = [
     transition: scale var(--fast);
   }
 
-  .link.active::after,
-  .link:hover::after {
+  .nav-link.active::after,
+  .nav-link:hover::after {
     scale: 1 1;
   }
 </style>

@@ -2,22 +2,22 @@
   --black: hsl(280, 5%, 0%);
   --dark-gray: hsl(280, 5%, 20%);
   --gray: hsl(280, 5%, 60%);
-  --light-gray: hsl(280, 5%, 80%);
+  --light-gray: hsl(280, 5%, 95%);
   --white: hsl(280, 5%, 100%);
 
-  --primary: hsl(190, 60%, 50%);
+  --primary: hsl(190, 60%, 45%);
   --secondary: hsl(5, 70%, 60%);
 
   --content: 1000px;
-  --rounded: 999px;
+  --rounded: 30px;
   --fast: 0.25s ease;
   --shadow: #00000020;
-  --box-shadow: 0 0 2px var(--shadow), 2px 2px 5px var(--shadow);
+  --box-shadow: 0 0 10px var(--shadow), 2px 2px 4px var(--shadow);
 
   --spacing: 2;
   --compact: 1.5;
 
-  --regular: 300;
+  --regular: 400;
   --bold: 600;
 
   font-size: 13pt;
@@ -25,7 +25,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 body {
@@ -49,6 +49,26 @@ section {
   text-align: center;
 }
 
+section:nth-child(even) {
+  background: color-mix(in hsl, var(--white), var(--light-gray) 50%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--bold);
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+b {
+  font-weight: var(--bold);
+}
+
 p {
   margin: 30px 0;
   line-height: var(--spacing);
@@ -57,10 +77,38 @@ p {
 
 a {
   color: var(--primary);
+  transition: color var(--fast);
 }
 
 a:hover {
   color: currentColor;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px 30px;
+  gap: 5px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  text-align: left;
+}
+
+ul {
+  padding: 0;
+  padding-left: 20px;
+  line-height: var(--spacing);
+  list-style-type: ">";
+  text-align: left;
+}
+
+li {
+  padding-left: 10px;
+}
+
+li::marker {
+  color: var(--dark-gray);
 }
 
 .center {
@@ -76,11 +124,11 @@ a:hover {
   gap: 10px;
   border: solid 2px currentColor;
   border-radius: var(--rounded);
-  color: var(--white);
+  color: currentColor;
   text-decoration: none;
   transition:
-    color var(--fast),
     background var(--fast),
+    color var(--fast),
     box-shadow var(--fast);
 }
 
@@ -94,6 +142,7 @@ a:hover {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
