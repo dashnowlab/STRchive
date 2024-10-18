@@ -45,7 +45,7 @@ const team = [
       GitHub:
     </p>
 
-    <div class="buttons">
+    <div class="center">
       <a
         href="https://github.com/dashnowlab/STRchive/discussions"
         class="button"
@@ -61,11 +61,11 @@ const team = [
       <span>
         Hiatt, L., Weisburd, B., Dolzhenko, E., VanNoy, G.E., Kurtas, E.N.,
         Rehm, H.L., Quinlan, A. and Dashnow, H., 2024.
-      </span>
+      </span><br/>
       <b>
         STRchive: a dynamic resource detailing population-level and
         locus-specific insights at tandem repeat disease loci.
-      </b>
+      </b><br/>
       <span
         >medRxiv doi: <a href="https://doi.org/10.1101/2024.05.21.24307682"
           >https://doi.org/10.1101/2024.05.21.24307682</a
@@ -84,7 +84,7 @@ const team = [
       on GitHub:
     </p>
 
-    <div class="buttons">
+    <div class="center">
       <a href="https://github.com/dashnowlab/STRchive" class="button">
         <Svg raw={github} class="icon" />GitHub</a
       >
@@ -130,5 +130,10 @@ const team = [
     margin-bottom: 10px;
     border-radius: 999px;
     box-shadow: var(--box-shadow);
+    transition: filter var(--fast);
+  }
+
+  .member:hover > img {
+    filter: saturate(0);
   }
 </style>

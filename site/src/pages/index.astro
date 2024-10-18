@@ -10,14 +10,16 @@ import Layout from "@/layouts/Layout.astro";
   <section class="hero">
     <div class="title">
       <Svg raw={logo} class="logo" data-animated />
-      <div class="subtitle">short tandem repeat archive</div>
+      <div class="subtitle" role="heading" aria-level="1">
+        short tandem repeat archive
+      </div>
     </div>
 
     <p class="center tagline">
       An archive of STRs associated with human diseases
     </p>
 
-    <div class="buttons">
+    <div class="center">
       <a href="/data" class="button">
         Data<Svg raw={data} class="icon" />
       </a>
@@ -47,7 +49,6 @@ import Layout from "@/layouts/Layout.astro";
   .hero {
     z-index: 0;
     position: relative;
-    padding-bottom: 80px;
     background: var(--black);
     color: var(--white);
   }
@@ -66,14 +67,14 @@ import Layout from "@/layouts/Layout.astro";
     opacity: 0.5;
   }
 
-  .title {
-    display: inline-block;
+  .logo {
+    width: 350px;
   }
 
   .subtitle {
-    margin-top: 5px;
-    letter-spacing: 0.21em;
-    text-transform: lowercase;
+    margin-top: 10px;
+    font-weight: var(--thin);
+    letter-spacing: 0.05em;
   }
 
   .tagline {
