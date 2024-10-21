@@ -99,7 +99,10 @@ const team = [
       {
         team.map((member) => (
           <Link class="member" to={member.link}>
-            <img src={`images/team/${lodash.kebabCase(member.name)}.jpg`} />
+            <img
+              src={`images/team/${lodash.kebabCase(member.name)}.jpg`}
+              alt=""
+            />
             <b>{member.name}</b>
             <span>{member.role}</span>
             <span>{member.affiliation}</span>
