@@ -1,4 +1,5 @@
 ---
+import Link from "@/components/Link.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -15,8 +16,8 @@ import Layout from "@/layouts/Layout.astro";
         <p>
           A selection of computational methods that we have either developed or
           used in our research. For a more comprehensive review of methods, see
-          <a href="https://doi.org/10.1038/s41576-024-00692-3" target="_blank">
-            Tanudisastro et al. (2024)</a
+          <Link to="https://doi.org/10.1038/s41576-024-00692-3">
+            Tanudisastro et al. (2024)</Link
           >.
         </p>
       </div>
@@ -26,20 +27,15 @@ import Layout from "@/layouts/Layout.astro";
 
         <ul>
           <li>
-            <a
-              href="https://github.com/Illumina/ExpansionHunter"
-              target="_blank">ExpansionHunter</a
+            <Link to="https://github.com/Illumina/ExpansionHunter"
+              >ExpansionHunter</Link
             >
           </li>
           <li>
-            <a href="https://github.com/gymrek-lab/HipSTR" target="_blank"
-              >HipSTR</a
-            >
+            <Link to="https://github.com/gymrek-lab/HipSTR">HipSTR</Link>
           </li>
           <li>
-            <a href="https://github.com/gymreklab/gangstr" target="_blank"
-              >gangSTR</a
-            >
+            <Link to="https://github.com/gymreklab/gangstr">gangSTR</Link>
           </li>
         </ul>
       </div>
@@ -49,13 +45,11 @@ import Layout from "@/layouts/Layout.astro";
 
         <ul>
           <li>
-            <a href="https://github.com/quinlan-lab/STRling" target="_blank"
-              >STRling</a
-            >
+            <Link to="https://github.com/quinlan-lab/STRling">STRling</Link>
           </li>
           <li>
-            <a href="https://github.com/Illumina/ExpansionHunterDenovo"
-              >ExpansionHunter Denovo</a
+            <Link to="https://github.com/Illumina/ExpansionHunterDenovo"
+              >ExpansionHunter Denovo</Link
             >
           </li>
         </ul>
@@ -66,14 +60,11 @@ import Layout from "@/layouts/Layout.astro";
 
         <ul>
           <li>
-            <a href="https://github.com/PacificBiosciences/trgt" target="_blank"
-              >TRGT</a
-            >
+            <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link>
           </li>
           <li>
-            <a
-              href="https://github.com/PacificBiosciences/trgt-denovo"
-              target="_blank">TRGT-denovo</a
+            <Link to="https://github.com/PacificBiosciences/trgt-denovo"
+              >TRGT-denovo</Link
             >
           </li>
         </ul>
@@ -88,21 +79,19 @@ import Layout from "@/layouts/Layout.astro";
 
         <ul>
           <li>
-            <a href="https://strchive.org/database/" target="_blank"
-              >STRchive disease loci: TRGT format</a
+            <Link to="https://strchive.org/database/"
+              >STRchive disease loci: TRGT format</Link
             >
           </li>
           <li>
-            <a
-              href="https://github.com/broadinstitute/str-analysis/tree/main/str_analysis/variant_catalogs"
-              target="_blank"
-              >gnomAD disease loci: ExpansionHunter and TRGT formats</a
+            <Link
+              to="https://github.com/broadinstitute/str-analysis/tree/main/str_analysis/variant_catalogs"
+              >gnomAD disease loci: ExpansionHunter and TRGT formats</Link
             >
           </li>
           <li>
-            <a
-              href="https://stripy.org/expansionhunter-catalog-creator"
-              target="_blank">STRipy disease loci: ExpansionHunter format</a
+            <Link to="https://stripy.org/expansionhunter-catalog-creator"
+              >STRipy disease loci: ExpansionHunter format</Link
             >
           </li>
         </ul>
@@ -113,19 +102,19 @@ import Layout from "@/layouts/Layout.astro";
 
         <ul>
           <li>
-            <a href="https://zenodo.org/records/13178746" target="_blank"
-              >PlatinumTRs: 7.8 million reference TRs in TRGT format</a
+            <Link to="https://zenodo.org/records/13178746"
+              >PlatinumTRs: 7.8 million reference TRs in TRGT format</Link
             >
           </li>
           <li>
-            <a href="https://github.com/Illumina/RepeatCatalogs" target="_blank"
-              >174,293 polymorphic STRs: ExpansionHunter format</a
+            <Link to="https://github.com/Illumina/RepeatCatalogs"
+              >174,293 polymorphic STRs: ExpansionHunter format</Link
             >
           </li>
           <li>
-            <a
-              href="https://github.com/PacificBiosciences/trgt/blob/main/repeats/repeat_catalog.hg38.bed"
-              target="_blank">174,293 polymorphic STRs: TRGT format</a
+            <Link
+              to="https://github.com/PacificBiosciences/trgt/blob/main/repeats/repeat_catalog.hg38.bed"
+              >174,293 polymorphic STRs: TRGT format</Link
             >
           </li>
         </ul>
@@ -136,26 +125,24 @@ import Layout from "@/layouts/Layout.astro";
 
         <ul>
           <li>
-            <a
-              href="https://gnomad.broadinstitute.org/short-tandem-repeats"
-              target="_blank">gnomAD: Tandem Repeats</a
+            <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats"
+              >gnomAD: Tandem Repeats</Link
             >
           </li>
           <li>
-            <a href="https://stripy.org/" target="_blank">STRipy</a>
+            <Link to="https://stripy.org/">STRipy</Link>
           </li>
           <li>
-            <a
-              href="https://www.ncbi.nlm.nih.gov/books/NBK535148/"
-              target="_blank">GeneReviews: Tandem Repeat Disorders</a
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK535148/"
+              >GeneReviews: Tandem Repeat Disorders</Link
             >
           </li>
           <li>
-            <a href="https://omim.org/" target="_blank">OMIM</a>
+            <Link to="https://omim.org/">OMIM</Link>
           </li>
           <li>
-            <a href="https://webstr.ucsd.edu/pathogenic" target="_blank"
-              >WebSTR pathogenic STRs</a
+            <Link to="https://webstr.ucsd.edu/pathogenic"
+              >WebSTR pathogenic STRs</Link
             >
           </li>
         </ul>
@@ -190,17 +177,15 @@ import Layout from "@/layouts/Layout.astro";
       locus will overlap with a relevant variant call when STRchive is used to
       annotate a VCF file. It is also the preferred approach to defining loci
       for improved genotyping accuracy with
-      <a href="https://github.com/PacificBiosciences/trgt" target="_blank"
-        >TRGT</a
-      >. In contrast,
-      <a href="https://github.com/Illumina/ExpansionHunter" target="_blank"
-        >ExpansionHunter</a
+      <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link>. In
+      contrast,
+      <Link to="https://github.com/Illumina/ExpansionHunter"
+        >ExpansionHunter</Link
       >
       tends to perform better with narrower loci that exclude repeat interruptions.
       For this reason, repeat definitions used in
-      <a
-        href="https://gnomad.broadinstitute.org/short-tandem-repeats"
-        target="_blank">gnomAD</a
+      <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats"
+        >gnomAD</Link
       >
       tend to be narrower than those used in STRchive.
     </p>

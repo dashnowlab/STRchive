@@ -4,6 +4,7 @@ import logo from "@/assets/logo.svg?raw";
 import data from "@/assets/data.svg?raw";
 import paper from "@/assets/paper.svg?raw";
 import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/Link.astro";
 ---
 
 <Layout title="Home">
@@ -20,16 +21,15 @@ import Layout from "@/layouts/Layout.astro";
     </p>
 
     <div class="center">
-      <a href="/data" class="button">
+      <Link to="/data" class="button">
         Data<Svg raw={data} class="icon" />
-      </a>
-      <a
-        href="https://www.medrxiv.org/content/10.1101/2024.05.21.24307682v1"
+      </Link>
+      <Link
+        to="https://www.medrxiv.org/content/10.1101/2024.05.21.24307682v1"
         class="button"
-        target="_blank"
       >
         Preprint<Svg raw={paper} class="icon" />
-      </a>
+      </Link>
     </div>
   </section>
 

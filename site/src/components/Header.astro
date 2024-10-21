@@ -2,14 +2,15 @@
 import Svg from "@cxa/astro-inline-svg";
 import logo from "@/assets/logo.svg?raw";
 import github from "@/assets/github.svg?raw";
+import Link from "@/components/Link.astro";
 
 const path = Astro.url.pathname;
 
 const links = [
-  { href: "/", name: "Home" },
-  { href: "/data", name: "Data" },
-  { href: "/resources", name: "Resources" },
-  { href: "/about", name: "About" },
+  { to: "/", name: "Home" },
+  { to: "/data", name: "Data" },
+  { to: "/resources", name: "Resources" },
+  { to: "/about", name: "About" },
 ];
 ---
 
@@ -17,33 +18,32 @@ const links = [
   <nav>
     {
       path !== "/" && (
-        <a href="/" class="logo-link" aria-label="Home">
+        <Link to="/" class="logo-link" aria-label="Home">
           <Svg raw={logo} class="logo" />
-        </a>
+        </Link>
       )
     }
     {
-      links.map(({ href, name }) => (
-        <a
-          href={href}
-          class:list={["nav-link", href === path && "active"]}
+      links.map(({ to, name }) => (
+        <Link
+          to={to}
+          class:list={["nav-link", to === path && "active"]}
           aria-label="GitHub"
         >
           {name}
-        </a>
+        </Link>
       ))
     }
 
     <div class="spacer"></div>
 
-    <a
-      href="https://github.com/dashnowlab/STRchive"
+    <Link
+      to="https://github.com/dashnowlab/STRchive"
       class="nav-link"
-      target="_blank"
       aria-label="GitHub"
     >
       <Svg raw={github} class="icon" />
-    </a>
+    </Link>
   </nav>
 </header>
 

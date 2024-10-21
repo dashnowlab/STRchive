@@ -1,8 +1,12 @@
+---
+import Link from "@/components/Link.astro";
+---
+
 <footer>
   <div class="links">
-    <a href="/about#contact">Contact</a>
-    <a href="/about#cite">Cite</a>
-    <a href="/about#contribute">Contribute</a>
+    <Link to="/about#contact">Contact</Link>
+    <Link to="/about#cite">Cite</Link>
+    <Link to="/about#contribute">Contribute</Link>
   </div>
 
   <div class="divider"></div>
@@ -17,15 +21,13 @@
 
   <div class="license">
     <span>Licensed under</span>
-    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
-      >CC BY 4.0</a
-    >
-    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
+    <Link to="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</Link>
+    <Link to="https://creativecommons.org/licenses/by/4.0/"
       ><img
         class="badge"
         src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"
         alt="CC BY 4.0"
-      /></a
+      /></Link
     >
   </div>
 </footer>
@@ -33,8 +35,8 @@
 <style>
   footer {
     display: grid;
-    grid-template-columns: 1fr 2px 2fr 2px 1fr;
     grid-template-rows: min-content;
+    grid-template-columns: 1fr 2px 2fr 2px 1fr;
     align-items: center;
     padding: 40px max(40px, (100% - var(--content)) / 2);
     gap: 20px 20px;
