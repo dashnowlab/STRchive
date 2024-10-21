@@ -2,6 +2,6 @@
 const { to, ...props } = Astro.props;
 ---
 
-<a href={to} target={to.startsWith("https://") ? "_blank" : ""} {...props}>
-  <slot />
-</a>
+<a href={to} target={to.startsWith("https://") ? "_blank" : ""} {...props}
+  ><slot /></a
+>
