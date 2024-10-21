@@ -61,7 +61,8 @@
         "Orphanet":"98897",
         "GARD":"12592",
         "WebSTR_hg38":"1164141; 6329150",
-        "WebSTR_hg19":"STR_58687"
+        "WebSTR_hg19":"STR_58687",
+        "TR-gnomAD":"TR5671"
     },
     {
         "chrom":"chrX",
@@ -125,7 +126,8 @@
         "Orphanet":"100973",
         "GARD":"2378",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR173976"
     },
     {
         "chrom":"chr2",
@@ -189,7 +191,8 @@
         "Orphanet":null,
         "GARD":null,
         "WebSTR_hg38":"288936",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR252468"
     },
     {
         "chrom":"chrX",
@@ -253,7 +256,8 @@
         "Orphanet":"481",
         "GARD":"6818",
         "WebSTR_hg38":"859199",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR169377"
     },
     {
         "chrom":"chrX",
@@ -317,7 +321,8 @@
         "Orphanet":"182079",
         "GARD":"15298",
         "WebSTR_hg38":"843651",
-        "WebSTR_hg19":"STR_1542607"
+        "WebSTR_hg19":"STR_1542607",
+        "TR-gnomAD":"TR167317"
     },
     {
         "chrom":"chrX",
@@ -381,7 +386,8 @@
         "Orphanet":"94083",
         "GARD":"4235",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR167316"
     },
     {
         "chrom":"chr12",
@@ -445,7 +451,8 @@
         "Orphanet":"101",
         "GARD":"5643",
         "WebSTR_hg38":"5050156",
-        "WebSTR_hg19":"Expansion_ATN1\/DRPLA"
+        "WebSTR_hg19":"Expansion_ATN1\/DRPLA",
+        "TR-gnomAD":"TR114246"
     },
     {
         "chrom":"chr6",
@@ -509,7 +516,8 @@
         "Orphanet":"98755",
         "GARD":"4071",
         "WebSTR_hg38":"5767842",
-        "WebSTR_hg19":"Expansion_SCA1\/ATXN1"
+        "WebSTR_hg19":"Expansion_SCA1\/ATXN1",
+        "TR-gnomAD":"TR63118"
     },
     {
         "chrom":"chr22",
@@ -573,7 +581,8 @@
         "Orphanet":"98761",
         "GARD":"10474",
         "WebSTR_hg38":"1027359; 4921433",
-        "WebSTR_hg19":"STR_909210"
+        "WebSTR_hg19":"STR_909210",
+        "TR-gnomAD":"TR165509"
     },
     {
         "chrom":"chr12",
@@ -637,7 +646,8 @@
         "Orphanet":"98756",
         "GARD":"4072",
         "WebSTR_hg38":"598560; 5117050",
-        "WebSTR_hg19":"Expansion_SCA2\/ATXN2"
+        "WebSTR_hg19":"Expansion_SCA2\/ATXN2",
+        "TR-gnomAD":"TR120465"
     },
     {
         "chrom":"chr14",
@@ -701,7 +711,8 @@
         "Orphanet":"98757",
         "GARD":"6801",
         "WebSTR_hg38":"5316666; 1481402",
-        "WebSTR_hg19":"Expansion_SCA3_MJD\/ATXN3"
+        "WebSTR_hg19":"Expansion_SCA3_MJD\/ATXN3",
+        "TR-gnomAD":"TR132758"
     },
     {
         "chrom":"chr3",
@@ -765,7 +776,8 @@
         "Orphanet":"94147",
         "GARD":"20405",
         "WebSTR_hg38":"4965588",
-        "WebSTR_hg19":"Expansion_SCA7\/ATXN7"
+        "WebSTR_hg19":"Expansion_SCA7\/ATXN7",
+        "TR-gnomAD":"TR31879; TR31880"
     },
     {
         "chrom":"chr13",
@@ -829,7 +841,8 @@
         "Orphanet":"98760",
         "GARD":"4956",
         "WebSTR_hg38":"5356762",
-        "WebSTR_hg19":"Expansion_SCA8\/ATXN8"
+        "WebSTR_hg19":"Expansion_SCA8\/ATXN8",
+        "TR-gnomAD":"TR125263; TR125264"
     },
     {
         "chrom":"chr16",
@@ -893,7 +906,8 @@
         "Orphanet":"217012",
         "GARD":"9975",
         "WebSTR_hg38":"812447; 5971756",
-        "WebSTR_hg19":"STR_539736"
+        "WebSTR_hg19":"STR_539736",
+        "TR-gnomAD":"TR141992"
     },
     {
         "chrom":"chr9",
@@ -957,7 +971,8 @@
         "Orphanet":"275872",
         "GARD":"18396",
         "WebSTR_hg38":"5877863; 1502453",
-        "WebSTR_hg19":"STR_1475506"
+        "WebSTR_hg19":"STR_1475506",
+        "TR-gnomAD":"TR92417"
     },
     {
         "chrom":"chr19",
@@ -1021,7 +1036,8 @@
         "Orphanet":"98758",
         "GARD":"10351",
         "WebSTR_hg38":"5624835",
-        "WebSTR_hg19":"Expansion_SCA6\/CACNA1A"
+        "WebSTR_hg19":"Expansion_SCA6\/CACNA1A",
+        "TR-gnomAD":"TR154515"
     },
     {
         "chrom":"chr11",
@@ -1085,7 +1101,8 @@
         "Orphanet":"2308",
         "GARD":"307",
         "WebSTR_hg38":"6166081; 430025",
-        "WebSTR_hg19":"STR_266122"
+        "WebSTR_hg19":"STR_266122",
+        "TR-gnomAD":"TR112816"
     },
     {
         "chrom":"chr3",
@@ -1149,7 +1166,8 @@
         "Orphanet":"606",
         "GARD":"9728",
         "WebSTR_hg38":"741073",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR35563; TR35564; TR35565"
     },
     {
         "chrom":"chr19",
@@ -1213,7 +1231,8 @@
         "Orphanet":"750; 93308",
         "GARD":"4540; 2180",
         "WebSTR_hg38":"1317658",
-        "WebSTR_hg19":"STR_673389"
+        "WebSTR_hg19":"STR_673389",
+        "TR-gnomAD":"TR155017"
     },
     {
         "chrom":"chr21",
@@ -1277,7 +1296,8 @@
         "Orphanet":"308",
         "GARD":"3876",
         "WebSTR_hg38":"5547429",
-        "WebSTR_hg19":"STR_886261"
+        "WebSTR_hg19":"STR_886261",
+        "TR-gnomAD":"TR163552"
     },
     {
         "chrom":"chr1",
@@ -1341,7 +1361,8 @@
         "Orphanet":"363710",
         "GARD":"12368",
         "WebSTR_hg38":"1144531",
-        "WebSTR_hg19":"STR_39393"
+        "WebSTR_hg19":"STR_39393",
+        "TR-gnomAD":"TR3445"
     },
     {
         "chrom":"chr12",
@@ -1405,7 +1426,8 @@
         "Orphanet":null,
         "GARD":null,
         "WebSTR_hg38":"5075695",
-        "WebSTR_hg19":"Expansion_FRA12A_MR\/DIP2B"
+        "WebSTR_hg19":"Expansion_FRA12A_MR\/DIP2B",
+        "TR-gnomAD":"TR116656"
     },
     {
         "chrom":"chrX",
@@ -1469,7 +1491,8 @@
         "Orphanet":"98896",
         "GARD":"6291",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":"STR_1545664"
+        "WebSTR_hg19":"STR_1545664",
+        "TR-gnomAD":"TR167703"
     },
     {
         "chrom":"chr19",
@@ -1533,7 +1556,8 @@
         "Orphanet":"273",
         "GARD":"8310",
         "WebSTR_hg38":"5650727",
-        "WebSTR_hg19":"Expansion_DM1\/DMPK"
+        "WebSTR_hg19":"Expansion_DM1\/DMPK",
+        "TR-gnomAD":"TR156684"
     },
     {
         "chrom":"chr17",
@@ -1597,7 +1621,8 @@
         "Orphanet":"3102",
         "GARD":"4718",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR148462"
     },
     {
         "chrom":"chr13",
@@ -1661,7 +1686,8 @@
         "Orphanet":"675216",
         "GARD":null,
         "WebSTR_hg38":"1272528",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":null
     },
     {
         "chrom":"chrX",
@@ -1725,7 +1751,8 @@
         "Orphanet":"908; 642691; 93256",
         "GARD":"6464; 16806",
         "WebSTR_hg38":"885222",
-        "WebSTR_hg19":"Expansion_FXS\/FMR1"
+        "WebSTR_hg19":"Expansion_FXS\/FMR1",
+        "TR-gnomAD":"TR173944"
     },
     {
         "chrom":"chr3",
@@ -1789,7 +1816,8 @@
         "Orphanet":"126",
         "GARD":"23",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR36092"
     },
     {
         "chrom":"chr9",
@@ -1853,7 +1881,8 @@
         "Orphanet":"95",
         "GARD":"6468",
         "WebSTR_hg38":"1509872",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR93516"
     },
     {
         "chrom":"chr19",
@@ -1917,7 +1946,8 @@
         "Orphanet":null,
         "GARD":"16397",
         "WebSTR_hg38":"5626440",
-        "WebSTR_hg19":"STR_668861"
+        "WebSTR_hg19":"STR_668861",
+        "TR-gnomAD":"TR154638"
     },
     {
         "chrom":"chr2",
@@ -1981,7 +2011,8 @@
         "Orphanet":null,
         "GARD":null,
         "WebSTR_hg38":"333878; 5494902",
-        "WebSTR_hg19":"STR_803303"
+        "WebSTR_hg19":"STR_803303",
+        "TR-gnomAD":"TR24838"
     },
     {
         "chrom":"chr7",
@@ -2045,7 +2076,8 @@
         "Orphanet":"2438",
         "GARD":"2594",
         "WebSTR_hg38":"5679832",
-        "WebSTR_hg19":"STR_1311037"
+        "WebSTR_hg19":"STR_1311037",
+        "TR-gnomAD":"TR74138"
     },
     {
         "chrom":"chr7",
@@ -2109,7 +2141,8 @@
         "Orphanet":"2438",
         "GARD":"2594",
         "WebSTR_hg38":"5679831",
-        "WebSTR_hg19":"STR_1311036"
+        "WebSTR_hg19":"STR_1311036",
+        "TR-gnomAD":"TR74137"
     },
     {
         "chrom":"chr7",
@@ -2173,7 +2206,8 @@
         "Orphanet":"2438",
         "GARD":"2594",
         "WebSTR_hg38":"1365344",
-        "WebSTR_hg19":"STR_1311035"
+        "WebSTR_hg19":"STR_1311035",
+        "TR-gnomAD":"TR74136"
     },
     {
         "chrom":"chr2",
@@ -2237,7 +2271,8 @@
         "Orphanet":"295195",
         "GARD":"17358",
         "WebSTR_hg38":"5486677",
-        "WebSTR_hg19":"STR_796395"
+        "WebSTR_hg19":"STR_796395",
+        "TR-gnomAD":"TR24032"
     },
     {
         "chrom":"chr4",
@@ -2301,7 +2336,8 @@
         "Orphanet":"399",
         "GARD":"6677",
         "WebSTR_hg38":"4701738; 86468; 86467",
-        "WebSTR_hg19":"Expansion_HD\/HTT"
+        "WebSTR_hg19":"Expansion_HD\/HTT",
+        "TR-gnomAD":"TR40017; TR40018"
     },
     {
         "chrom":"chr16",
@@ -2365,7 +2401,8 @@
         "Orphanet":"98934",
         "GARD":"16874",
         "WebSTR_hg38":"828516; 5987878",
-        "WebSTR_hg19":"Expansion_HDL2\/JPH3"
+        "WebSTR_hg19":"Expansion_HDL2\/JPH3",
+        "TR-gnomAD":"TR143309"
     },
     {
         "chrom":"chr8",
@@ -2429,7 +2466,8 @@
         "Orphanet":null,
         "GARD":"15097",
         "WebSTR_hg38":"1082178; 4874587",
-        "WebSTR_hg19":"STR_1441036"
+        "WebSTR_hg19":"STR_1441036",
+        "TR-gnomAD":"TR88348"
     },
     {
         "chrom":"chr5",
@@ -2493,7 +2531,8 @@
         "Orphanet":"86814",
         "GARD":"18084",
         "WebSTR_hg38":"5994579",
-        "WebSTR_hg19":"STR_1116660"
+        "WebSTR_hg19":"STR_1116660",
+        "TR-gnomAD":"TR51895"
     },
     {
         "chrom":"chr15",
@@ -2557,7 +2596,8 @@
         "Orphanet":null,
         "GARD":null,
         "WebSTR_hg38":"5135087",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR133649"
     },
     {
         "chrom":"chr20",
@@ -2621,7 +2661,8 @@
         "Orphanet":"276198",
         "GARD":"12367",
         "WebSTR_hg38":"6177296; 890490",
-        "WebSTR_hg19":"STR_833720"
+        "WebSTR_hg19":"STR_833720",
+        "TR-gnomAD":"TR157810; TR157811"
     },
     {
         "chrom":"chr1",
@@ -2685,7 +2726,8 @@
         "Orphanet":"2289",
         "GARD":"3971",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR7525"
     },
     {
         "chrom":"chr10",
@@ -2749,7 +2791,8 @@
         "Orphanet":null,
         "GARD":null,
         "WebSTR_hg38":null,
-        "WebSTR_hg19":"STR_173942"
+        "WebSTR_hg19":"STR_173942",
+        "TR-gnomAD":"TR102881"
     },
     {
         "chrom":"chr14",
@@ -2813,7 +2856,8 @@
         "Orphanet":"270",
         "GARD":"7245",
         "WebSTR_hg38":"1442709; 5271481",
-        "WebSTR_hg19":"Expansion_OPMD\/PAPBN1"
+        "WebSTR_hg19":"Expansion_OPMD\/PAPBN1",
+        "TR-gnomAD":"TR128439"
     },
     {
         "chrom":"chr4",
@@ -2877,7 +2921,8 @@
         "Orphanet":"661",
         "GARD":"8535",
         "WebSTR_hg38":"4725362",
-        "WebSTR_hg19":"Expansion_CCHS\/PHOX2B"
+        "WebSTR_hg19":"Expansion_CCHS\/PHOX2B",
+        "TR-gnomAD":"TR42548"
     },
     {
         "chrom":"chr15",
@@ -2941,7 +2986,8 @@
         "Orphanet":"520820",
         "GARD":"15215; 13174",
         "WebSTR_hg38":"5177947",
-        "WebSTR_hg19":"STR_493430"
+        "WebSTR_hg19":"STR_493430",
+        "TR-gnomAD":"TR137533"
     },
     {
         "chrom":"chr5",
@@ -3005,7 +3051,8 @@
         "Orphanet":"98762",
         "GARD":"10476",
         "WebSTR_hg38":"985593; 6072892",
-        "WebSTR_hg19":"Expansion_SCA12\/PPP2R2B"
+        "WebSTR_hg19":"Expansion_SCA12\/PPP2R2B",
+        "TR-gnomAD":"TR59714"
     },
     {
         "chrom":"chr9",
@@ -3069,7 +3116,8 @@
         "Orphanet":"478664",
         "GARD":"17866",
         "WebSTR_hg38":"1543400",
-        "WebSTR_hg19":"STR_1521945"
+        "WebSTR_hg19":"STR_1521945",
+        "TR-gnomAD":"TR97506"
     },
     {
         "chrom":"chr20",
@@ -3133,7 +3181,8 @@
         "Orphanet":"282166",
         "GARD":"17307",
         "WebSTR_hg38":null,
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR157963; TR157964"
     },
     {
         "chrom":"chr4",
@@ -3197,7 +3246,8 @@
         "Orphanet":"86814",
         "GARD":"16758",
         "WebSTR_hg38":"154264; 4792219",
-        "WebSTR_hg19":"STR_1096016"
+        "WebSTR_hg19":"STR_1096016",
+        "TR-gnomAD":"TR49300"
     },
     {
         "chrom":"chr4",
@@ -3261,7 +3311,8 @@
         "Orphanet":"504476",
         "GARD":"17937",
         "WebSTR_hg38":"4722884; 99101",
-        "WebSTR_hg19":"STR_1036603"
+        "WebSTR_hg19":"STR_1036603",
+        "TR-gnomAD":"TR42349"
     },
     {
         "chrom":"chr12",
@@ -3325,7 +3376,8 @@
         "Orphanet":"98897",
         "GARD":"12592",
         "WebSTR_hg38":"5128610; 609239",
-        "WebSTR_hg19":"STR_347096"
+        "WebSTR_hg19":"STR_347096",
+        "TR-gnomAD":"TR121403"
     },
     {
         "chrom":"chr6",
@@ -3389,7 +3441,8 @@
         "Orphanet":"1452",
         "GARD":"6118",
         "WebSTR_hg38":"5789216",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR65117"
     },
     {
         "chrom":"chr8",
@@ -3453,7 +3506,8 @@
         "Orphanet":"86814",
         "GARD":"18082",
         "WebSTR_hg38":"1087693",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR89226"
     },
     {
         "chrom":"chrX",
@@ -3517,7 +3571,8 @@
         "Orphanet":"67045",
         "GARD":null,
         "WebSTR_hg38":null,
-        "WebSTR_hg19":"STR_1597784"
+        "WebSTR_hg19":"STR_1597784",
+        "TR-gnomAD":"TR173479"
     },
     {
         "chrom":"chr2",
@@ -3581,7 +3636,8 @@
         "Orphanet":"86814",
         "GARD":"18083",
         "WebSTR_hg38":"286156",
-        "WebSTR_hg19":"STR_754470"
+        "WebSTR_hg19":"STR_754470",
+        "TR-gnomAD":"TR19329"
     },
     {
         "chrom":"chr6",
@@ -3645,7 +3701,8 @@
         "Orphanet":"98759",
         "GARD":"10469",
         "WebSTR_hg38":"83566",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR72502"
     },
     {
         "chrom":"chr22",
@@ -3709,7 +3766,8 @@
         "Orphanet":"3303",
         "GARD":"2245",
         "WebSTR_hg38":"4900984",
-        "WebSTR_hg19":"STR_889797"
+        "WebSTR_hg19":"STR_889797",
+        "TR-gnomAD":"TR163862"
     },
     {
         "chrom":"chr18",
@@ -3773,7 +3831,8 @@
         "Orphanet":"98974",
         "GARD":"10018",
         "WebSTR_hg38":"6247607; 463325",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR151784"
     },
     {
         "chrom":"chr16",
@@ -3837,7 +3896,8 @@
         "Orphanet":null,
         "GARD":"10748",
         "WebSTR_hg38":"814002; 5973136",
-        "WebSTR_hg19":"STR_540982"
+        "WebSTR_hg19":"STR_540982",
+        "TR-gnomAD":"TR142069"
     },
     {
         "chrom":"chr16",
@@ -3901,7 +3961,8 @@
         "Orphanet":"86814",
         "GARD":"16758",
         "WebSTR_hg38":"5951520",
-        "WebSTR_hg19":"STR_519979"
+        "WebSTR_hg19":"STR_519979",
+        "TR-gnomAD":"TR139999"
     },
     {
         "chrom":"chr1",
@@ -3965,7 +4026,8 @@
         "Orphanet":"314485",
         "GARD":"18444",
         "WebSTR_hg38":"1099767",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR32"
     },
     {
         "chrom":"chr16",
@@ -4029,7 +4091,8 @@
         "Orphanet":"1425",
         "GARD":"16466",
         "WebSTR_hg38":"793606",
-        "WebSTR_hg19":null
+        "WebSTR_hg19":null,
+        "TR-gnomAD":"TR139509"
     },
     {
         "chrom":"chr3",
@@ -4093,7 +4156,8 @@
         "Orphanet":"86814",
         "GARD":"16758",
         "WebSTR_hg38":"5034940; 769177",
-        "WebSTR_hg19":"STR_1006941"
+        "WebSTR_hg19":"STR_1006941",
+        "TR-gnomAD":"TR38932"
     },
     {
         "chrom":"chr16",
@@ -4157,7 +4221,8 @@
         "Orphanet":"98765",
         "GARD":"9970",
         "WebSTR_hg38":"5977326",
-        "WebSTR_hg19":"STR_545217"
+        "WebSTR_hg19":"STR_545217",
+        "TR-gnomAD":"TR142346"
     },
     {
         "chrom":"chr13",
@@ -4221,7 +4286,8 @@
         "Orphanet":"2162",
         "GARD":"6665",
         "WebSTR_hg38":"5374719",
-        "WebSTR_hg19":"STR_395661"
+        "WebSTR_hg19":"STR_395661",
+        "TR-gnomAD":"TR127312"
     },
     {
         "chrom":"chrX",
@@ -4285,7 +4351,8 @@
         "Orphanet":null,
         "GARD":"15309",
         "WebSTR_hg38":"883856",
-        "WebSTR_hg19":"STR_1596381"
+        "WebSTR_hg19":"STR_1596381",
+        "TR-gnomAD":"TR173313"
     },
     {
         "chrom":"chr7",
@@ -4349,6 +4416,7 @@
         "Orphanet":null,
         "GARD":null,
         "WebSTR_hg38":"1380240; 5696269",
-        "WebSTR_hg19":"STR_1325788"
+        "WebSTR_hg19":"STR_1325788",
+        "TR-gnomAD":"TR300995"
     }
 ]
