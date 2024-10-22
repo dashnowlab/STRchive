@@ -4,7 +4,7 @@ import Footer from "@/components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 import "./global.css";
 
-const title = Astro.props.frontmatter.title || Astro.props.title;
+const title = Astro.props.frontmatter?.title || Astro.props.title;
 
 const {
   PUBLIC_TITLE: TITLE,
