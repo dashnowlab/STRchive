@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^3.1.8",
     "@cxa/astro-inline-svg": "^0.5.1",
     "astro": "^4.16.3",
     "astro-icon": "^1.1.1",

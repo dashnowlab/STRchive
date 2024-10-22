@@ -4,7 +4,8 @@ import Footer from "@/components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 import "./global.css";
 
-const { title } = Astro.props;
+const title = Astro.props.frontmatter.title || Astro.props.title;
+
 const {
   PUBLIC_TITLE: TITLE,
   PUBLIC_DESCRIPTION: DESCRIPTION,
@@ -20,7 +21,7 @@ const {
     <!-- basic -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>{title} | {TITLE}</title>
+    <title>{[title, TITLE].filter(Boolean).join(" | ")}</title>
     <meta name="title" content={TITLE} />
     <meta name="description" content={DESCRIPTION} />
 
