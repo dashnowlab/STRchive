@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" fill="none">
+  <style>
+    svg[data-animated] {
+      --duration: 3s;
+    }
+
+    path {
+      --delay: 0;
+      animation: draw var(--duration) calc(var(--delay) * var(--duration)) ease
+        both;
+      stroke-dasharray: 1;
+    }
+
+    @keyframes draw {
+      from {
+        stroke-dashoffset: 1;
+      }
+    }
+
+    text {
+      --delay: 0;
+      animation: text var(--duration) calc(var(--delay) * var(--duration)) ease
+        both;
+      stroke-dasharray: 1;
+    }
+
+    @keyframes text {
+      from {
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <!-- S -->
+  <g transform="translate(30, 50)">
+    <path
+      id="S"
+      d="M 25 -40 L 0 -40 A 20 20 0 0 0 0 0 A 20 20 0 0 1 0 40 L -25 40"
+      pathLength="1"
+    />
+    <use href="#S" stroke="currentColor" stroke-width="20" />
+    <use href="#S" stroke="var(--primary)" stroke-width="10" />
+    <use href="#S" stroke="currentColor" stroke-width="4" />
+  </g>
+
+  <!-- T -->
+  <g transform="translate(100, 50)">
+    <g stroke="currentColor" stroke-width="20">
+      <path pathLength="1" d="M -35 -40 L 35 -40" />
+      <path pathLength="1" d="M 0 -25 L 0 50" />
+    </g>
+    <g stroke="var(--primary)" stroke-width="5">
+      <path pathLength="1" style="--delay: 0.1" d="M -30 -40 L -10 -40" />
+      <path pathLength="1" style="--delay: 0.3" d="M 0 -40 L 10 -40" />
+      <path pathLength="1" style="--delay: 0.5" d="M 20 -40 L 30 -40" />
+      <path pathLength="1" style="--delay: 0.3" d="M 0 15 L 0 45" />
+    </g>
+  </g>
+
+  <!-- R -->
+  <g transform="translate(180, 50)">
+    <g stroke="currentColor" stroke-width="20">
+      <path pathLength="1" d="M -25 -50 L -25 50" />
+      <path pathLength="1" d="M 5 0 A 20 20 0 0 1 25 20 L 25 50" />
+    </g>
+
+    <path
+      id="R"
+      pathLength="1"
+      d="M -15 -40 L 5 -40 A 20 20 0 0 1 5 0 L -10 0"
+    />
+    <use href="#R" stroke="currentColor" stroke-width="20" />
+    <use href="#R" stroke="var(--primary)" stroke-width="10" />
+    <use href="#R" stroke="currentColor" stroke-width="4" />
+
+    <g stroke="var(--primary)" stroke-width="5">
+      <path pathLength="1" style="--delay: 0.1" d="M -25 -45 L -25 -10" />
+      <path pathLength="1" style="--delay: 0.6" d="M -25 35 L -25 45" />
+    </g>
+  </g>
+
+  <!-- chive -->
+  <text
+    x="225"
+    y="99"
+    fill="currentColor"
+    class="fade"
+    style="--delay: 0.5; font-family: Barlow, sans-serif; font-size: 100px"
+  >
+    chive
+  </text>
+</svg>

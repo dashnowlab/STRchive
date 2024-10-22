@@ -1,0 +1,84 @@
+---
+import Svg from "@cxa/astro-inline-svg";
+import logo from "@/assets/logo.svg?raw";
+import data from "@/assets/data.svg?raw";
+import paper from "@/assets/paper.svg?raw";
+import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/Link.astro";
+---
+
+<Layout title="Home">
+  <section class="hero">
+    <div class="title">
+      <Svg raw={logo} class="logo" data-animated />
+      <div class="subtitle" role="heading" aria-level="1">
+        short tandem repeat archive
+      </div>
+    </div>
+
+    <p class="center tagline">
+      An archive of STRs associated with human diseases
+    </p>
+
+    <div class="center">
+      <Link to="/data" class="button">
+        Data<Svg raw={data} class="icon" />
+      </Link>
+      <Link
+        to="https://www.medrxiv.org/content/10.1101/2024.05.21.24307682v1"
+        class="button"
+      >
+        Preprint<Svg raw={paper} class="icon" />
+      </Link>
+    </div>
+  </section>
+
+  <section>
+    <p>
+      Short Tandem Repeats (STRs) are a type of genetic variation that are
+      associated with many rare diseases. Information about pathogenic STRs is
+      often out-of-date and scattered across different databases, making it
+      difficult to find and interpret STR variants.
+      <b>STRchive</b> (<i>"ess tee archive"</i>) aims to solve this problem by
+      providing a central community resource.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    z-index: 0;
+    position: relative;
+    background: var(--black);
+    color: var(--white);
+  }
+
+  .hero::after {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at 0% 200%,
+        var(--primary),
+        transparent 75%
+      ),
+      radial-gradient(ellipse at 100% 200%, var(--secondary), transparent 75%);
+    content: "";
+    opacity: 0.5;
+  }
+
+  .logo {
+    width: 350px;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-weight: var(--thin);
+    letter-spacing: 0.05em;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+</style>

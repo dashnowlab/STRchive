@@ -1,0 +1,160 @@
+:root {
+  --black: hsl(280, 5%, 0%);
+  --dark-gray: hsl(280, 5%, 20%);
+  --gray: hsl(280, 5%, 60%);
+  --light-gray: hsl(280, 5%, 95%);
+  --white: hsl(280, 5%, 100%);
+
+  --primary: hsl(190, 60%, 45%);
+  --secondary: hsl(5, 70%, 60%);
+
+  --content: 1000px;
+  --rounded: 30px;
+  --fast: 0.25s ease;
+  --shadow: #00000020;
+  --box-shadow: 0 0 10px var(--shadow), 2px 2px 4px var(--shadow);
+
+  --spacing: 2;
+  --compact: 1.5;
+
+  --thin: 200;
+  --regular: 400;
+  --bold: 600;
+
+  font-size: 13pt;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+  font-weight: var(--regular);
+  line-height: var(--compact);
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+section {
+  padding: 40px max(40px, (100% - var(--content)) / 2);
+  gap: 40px;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background: color-mix(in hsl, var(--white), var(--light-gray) 50%);
+}
+
+section:last-child {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--bold);
+}
+
+h1 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+b {
+  font-weight: var(--bold);
+}
+
+p {
+  margin: 30px 0;
+  line-height: var(--spacing);
+  text-align: justify;
+}
+
+a {
+  color: var(--primary);
+  transition: color var(--fast);
+}
+
+a:hover {
+  color: currentColor;
+}
+
+blockquote {
+  padding: 20px 30px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  text-align: left;
+}
+
+ul {
+  padding: 0;
+  padding-left: 20px;
+  line-height: var(--spacing);
+  list-style-type: ">";
+  text-align: left;
+}
+
+li {
+  padding-left: 10px;
+}
+
+li::marker {
+  color: var(--dark-gray);
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  margin: 10px;
+  padding: 7.5px 15px;
+  gap: 10px;
+  border: solid 2px currentColor;
+  border-radius: var(--rounded);
+  color: currentColor;
+  text-decoration: none;
+  transition:
+    background var(--fast),
+    color var(--fast),
+    box-shadow var(--fast);
+}
+
+.button:hover {
+  background: var(--secondary);
+  box-shadow: 0 0 0 3px var(--secondary);
+  color: var(--white);
+}
+
+.icon {
+  height: 1.2em;
+}

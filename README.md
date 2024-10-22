@@ -1,4 +1,5 @@
 # STRchive
+
 Short Tandem Repeat disease loci resource
 
 Contributors: Harriet Dashnow, Laurel Hiatt
@@ -29,4 +30,3 @@ python scripts/make_catalog.py -g T2T -f TRGT data/STRchive-database.csv data/T2
 python scripts/make_catalog.py -g hg38 -f TRGT data/STRchive-database.csv data/hg38.STRchive-disease-loci.TRGT.bed
 python scripts/make_catalog.py -g hg19 -f TRGT data/STRchive-database.csv data/hg19.STRchive-disease-loci.TRGT.bed
 ```
-

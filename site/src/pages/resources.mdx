@@ -1,0 +1,101 @@
+---
+title: "Resources"
+layout: "@/layouts/Layout.astro"
+---
+
+import Link from "@/components/Link.astro";
+import styles from "./resources.module.css";
+
+<section>
+
+# Resources
+
+</section>
+
+<section>
+  <div class={styles.grid}>
+
+    <div>
+      ## Computational Methods
+
+      A selection of computational methods that we have either developed or
+      used in our research.
+      For a more comprehensive review of methods, see <Link to="https://doi.org/10.1038/s41576-024-00692-3">
+      Tanudisastro et al. (2024)</Link>.
+    </div>
+
+    <div>
+      ### Short-read genotyping
+
+      - <Link to="https://github.com/Illumina/ExpansionHunter">ExpansionHunter</Link>
+      - <Link to="https://github.com/gymrek-lab/HipSTR">HipSTR</Link>
+      - <Link to="https://github.com/gymreklab/gangstr">gangSTR</Link>
+    </div>
+
+    <div>
+      ### Short-read novel locus detection
+
+      - <Link to="https://github.com/quinlan-lab/STRling">STRling</Link>
+      - <Link to="https://github.com/Illumina/ExpansionHunterDenovo">ExpansionHunter Denovo</Link>
+    </div>
+
+    <div>
+      ### Long-read genotyping
+
+      - <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link>
+      - <Link to="https://github.com/PacificBiosciences/trgt-denovo">TRGT-denovo</Link>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class={styles.grid}>
+
+    <div>
+      ## Disease Repeat Catalogs
+
+      - <Link to="https://strchive.org/database/">STRchive disease loci: TRGT format</Link>
+      - <Link to="https://github.com/broadinstitute/str-analysis/tree/main/str_analysis/variant_catalogs">gnomAD disease loci: ExpansionHunter and TRGT formats</Link>
+      - <Link to="https://stripy.org/expansionhunter-catalog-creator">STRipy disease loci: ExpansionHunter format</Link>
+    </div>
+
+    <div>
+      ## Genome Repeat Catalogs
+
+      - <Link to="https://zenodo.org/records/13178746">PlatinumTRs: 7.8 million reference TRs in TRGT format</Link>
+      - <Link to="https://github.com/Illumina/RepeatCatalogs">174,293 polymorphic STRs: ExpansionHunter format</Link>
+      - <Link to="https://github.com/PacificBiosciences/trgt/blob/main/repeats/repeat_catalog.hg38.bed">174,293 polymorphic STRs: TRGT format</Link>
+    </div>
+
+    <div>
+      ## Databases
+
+      - <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats">gnomAD: Tandem Repeats</Link>
+      - <Link to="https://stripy.org/">STRipy</Link>
+      - <Link to="https://www.ncbi.nlm.nih.gov/books/NBK535148/">GeneReviews: Tandem Repeat Disorders</Link>
+      - <Link to="https://omim.org/">OMIM</Link>
+      - <Link to="https://webstr.ucsd.edu/pathogenic">WebSTR pathogenic STRs</Link>
+    </div>
+
+  </div>
+</section>
+
+<section>
+
+### Why do repeat locus definitions differ between resources?
+
+There are often multiple ways to define a given repeat locus.
+For example, defining a locus as a stretch of perfectly repeting motifs tends to result in a narrower locus than strategies allowing for interruptions.
+In coding regions the locus boundary might be chosen to align with the reading frame.
+
+There are often multiple "correct" ways to define a given repeat locus, however careful consideration must be made to the downstream uses of the data.
+In particular, genotyping accuracy can be affected by the choice of locus definition.
+
+The loci in STRchive were defined to be broader, allowing for interruptions, and with consideration to the biological context and clinical utility of the locus.
+This strategy increases the chance that the locus will overlap with a relevant variant call when STRchive is used to annotate a VCF file.
+It is also the preferred approach to defining loci for improved genotyping accuracy with <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link>.
+In contrast, <Link to="https://github.com/Illumina/ExpansionHunter">ExpansionHunter</Link> tends to perform better with narrower loci that exclude repeat interruptions.
+For this reason, repeat definitions used in <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats">gnomAD</Link> tend to be narrower than those used in STRchive.
+
+</section>
