@@ -1,0 +1,17 @@
+---
+import data from "../../../../data/STRchive-database.json";
+
+/** generate pages for each datum, paths based on gene name */
+export const getStaticPaths = async () =>
+  data.map(({ gene }) => ({ params: { gene } }));
+
+/** current page gene name in url */
+const { gene } = Astro.params;
+
+/** look up full data entry from gene name  */
+const datum = data.find((entry) => entry.gene === gene);
+---
+
+<pre>
+  {JSON.stringify(datum, null, 2)}
+</pre>
