@@ -3297,7 +3297,7 @@
         "WebSTR_hg38":"154264; 4792219",
         "WebSTR_hg19":"STR_1096016",
         "TR-gnomAD":"TR49300",
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset ("
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)"
     },
     {
         "chrom":"chr4",
@@ -3363,7 +3363,7 @@
         "WebSTR_hg38":"4722884; 99101",
         "WebSTR_hg19":"STR_1036603",
         "TR-gnomAD":"TR42349",
-        "disease_description":null
+        "disease_description":"Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia (PMID: 38876750); Late-onset ataxia, sensory neuropathy, vestibular areflexia syndrome (PMID: 39349043)"
     },
     {
         "chrom":"chr12",
@@ -3429,7 +3429,7 @@
         "WebSTR_hg38":"5128610; 609239",
         "WebSTR_hg19":"STR_347096",
         "TR-gnomAD":"TR121403",
-        "disease_description":null
+        "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750)"
     },
     {
         "chrom":"chr6",
@@ -3561,7 +3561,7 @@
         "WebSTR_hg38":"1087693",
         "WebSTR_hg19":null,
         "TR-gnomAD":"TR89226",
-        "disease_description":null
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750); Adult-onset cortical myoclonus, with seizures in up to a half of patients (PMID: 39349043)"
     },
     {
         "chrom":"chrX",
@@ -3582,7 +3582,7 @@
         "benign_motif_gene_orientation":"",
         "unknown_motif_reference_orientation":null,
         "unknown_motif_gene_orientation":"",
-        "disease":"X-linked panhypopituitarism ; X-linked mental retardation with isolated growth hormone    ",
+        "disease":"X-linked panhypopituitarism ; X-linked mental retardation with isolated growth hormone",
         "gene":"SOX3",
         "flank_motif":null,
         "locus_structure":"(NGC)*",
