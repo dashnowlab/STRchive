@@ -296,6 +296,9 @@ var locus_html =
           };
 
           locus_html = locus_html +
+          `<li>${f.disease_description}</li>`
+
+          locus_html = locus_html +
               `
                   </div>
                 </div>
@@ -390,10 +393,16 @@ var locus_html =
             `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/${f.gnomAD_gene}?dataset=gnomad_r3">${f.gnomAD_gene}</a></li>`
           };
 
+          if (f.TRgnomAD != '') {
+            locus_html = locus_html +
+            `<li><b>TR-gnomAD:</b> <a href="https://wlcb.oit.uci.edu/TRgnomAD/Distribution.php?index_id=${f.TRgnomAD}">${f.TRgnomAD}</a></li>`
+          };
+
           if (f.STRipy_gene != '') {
             locus_html = locus_html + 
             `<li><b>STRipy:</b> <a href="https://stripy.org/database/${f.STRipy_gene}">${f.STRipy_gene}</a></li>`
           };
+
           if (f.WebSTR_hg38 != '' | f.WebSTR_hg19 != '') {
             locus_html = locus_html + `<li><b>WebSTR:</b> 
               <ul>`
