@@ -1,9 +1,8 @@
 ---
 import lodash from "lodash";
-import Svg from "@cxa/astro-inline-svg";
 import Layout from "@/layouts/Layout.astro";
-import github from "@/assets/github.svg?raw";
-import Link from "@/components/Link.astro";
+import Link from "@/components/Link";
+import GitHub from "@/assets/github.svg?react";
 
 const team = [
   {
@@ -49,9 +48,9 @@ const team = [
     <div class="center">
       <Link
         to="https://github.com/dashnowlab/STRchive/discussions"
-        class="button"
+        className="button"
       >
-        <Svg raw={github} class="icon" />GitHub</Link
+        <GitHub />GitHub</Link
       >
     </div>
   </section>
@@ -86,8 +85,8 @@ const team = [
     </p>
 
     <div class="center">
-      <Link to="https://github.com/dashnowlab/STRchive" class="button">
-        <Svg raw={github} class="icon" />GitHub</Link
+      <Link to="https://github.com/dashnowlab/STRchive" className="button">
+        <GitHub />GitHub</Link
       >
     </div>
   </section>
@@ -98,7 +97,7 @@ const team = [
     <div class="members">
       {
         team.map((member) => (
-          <Link class="member" to={member.link}>
+          <Link className="member" to={member.link}>
             <img
               src={`/images/team/${lodash.kebabCase(member.name)}.jpg`}
               alt=""

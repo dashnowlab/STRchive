@@ -1,6 +1,14 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 0 40px;
+  gap: 40px;
   text-align: left;
+}
+
+.grid > * > :first-child {
+  margin-top: 0 !important;
+}
+
+.grid > * > :last-child {
+  margin-bottom: 0 !important;
 }

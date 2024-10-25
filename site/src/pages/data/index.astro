@@ -1,22 +1,59 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Link from "@/components/Link.astro";
+import Link from "@/components/Link";
+import Table from "./_table.jsx";
+import GitHub from "@/assets/github.svg?react";
+import Download from "@/assets/download.svg?react";
+import Sparkle from "@/assets/sparkle.svg?react";
+import Error from "@/assets/error.svg?react";
+
 import data from "../../../../data/STRchive-database.json";
+
+import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
+import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
+import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?url";
 ---
 
 <Layout title="Data">
   <section>
     <h1>Data</h1>
+  </section>
 
-    <p>
-      {
-        data.map((d) => (
-          <>
-            <Link to={`/data/${d.gene}`}>{d.gene}</Link>
-            <br />
-          </>
-        ))
-      }
-    </p>
+  <section>
+    <Table client:load data={data} />
+
+    <dl>
+      <dt>
+        <Sparkle className="success" aria-label="New" />
+      </dt>
+      <dd>New</dd>
+      <dt>
+        <Error className="error" aria-label="Conflicting" />
+      </dt>
+      <dd>Conflicting evidence</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Downloads</h2>
+
+    <Link
+      to="https://github.com/dashnowlab/STRchive/tree/main/data"
+      className="button"
+    >
+      <GitHub />Full Dataset<Download />
+    </Link>
+    <br />
+    <br />
+
+    <Link to="https://github.com/PacificBiosciences/trgt">TRGT definitions</Link
+    > for genotyping in PacBio HiFi reads:
+
+    <br />
+    <br />
+
+    <Link to={hg19defs} className="button" download>hg19<Download /></Link>
+    <Link to={hg38defs} className="button" download>hg38<Download /></Link>
+    <Link to={t2tdefs} className="button" download>T2T-chm13<Download /></Link>
   </section>
 </Layout>

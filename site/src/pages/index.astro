@@ -1,16 +1,15 @@
 ---
-import Svg from "@cxa/astro-inline-svg";
-import logo from "@/assets/logo.svg?raw";
-import data from "@/assets/data.svg?raw";
-import paper from "@/assets/paper.svg?raw";
+import Logo from "@/assets/logo.svg?react";
+import Data from "@/assets/data.svg?react";
+import Paper from "@/assets/paper.svg?react";
 import Layout from "@/layouts/Layout.astro";
-import Link from "@/components/Link.astro";
+import Link from "@/components/Link";
 ---
 
 <Layout title="Home">
   <section class="hero">
     <div class="title">
-      <Svg raw={logo} class="logo" data-animated />
+      <Logo className="logo" data-animated />
       <div class="subtitle" role="heading" aria-level="1">
         short tandem repeat archive
       </div>
@@ -21,14 +20,14 @@ import Link from "@/components/Link.astro";
     </p>
 
     <div class="center">
-      <Link to="/data" class="button">
-        Data<Svg raw={data} class="icon" />
+      <Link to="/data" className="button">
+        Data<Data />
       </Link>
       <Link
         to="https://www.medrxiv.org/content/10.1101/2024.05.21.24307682v1"
-        class="button"
+        className="button"
       >
-        Preprint<Svg raw={paper} class="icon" />
+        Preprint<Paper />
       </Link>
     </div>
   </section>
@@ -68,7 +67,7 @@ import Link from "@/components/Link.astro";
   }
 
   .logo {
-    width: 350px;
+    height: 75px;
     max-width: 100%;
   }
 

@@ -11,15 +11,21 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.8",
-    "@cxa/astro-inline-svg": "^0.5.1",
+    "@astrojs/react": "^3.6.2",
+    "@tanstack/react-table": "^8.20.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "astro": "^4.16.3",
     "astro-icon": "^1.1.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-css-order": "^2.1.2"
+    "prettier-plugin-css-order": "^2.1.2",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }
