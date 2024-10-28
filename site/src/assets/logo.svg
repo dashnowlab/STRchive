@@ -31,51 +31,53 @@
     }
   </style>
 
-  <!-- S -->
-  <g transform="translate(30, 50)">
-    <path
-      id="S"
-      d="M 25 -40 L 0 -40 A 20 20 0 0 0 0 0 A 20 20 0 0 1 0 40 L -25 40"
-      pathLength="1"
-    />
-    <use href="#S" stroke="currentColor" stroke-width="20" />
-    <use href="#S" stroke="var(--primary)" stroke-width="10" />
-    <use href="#S" stroke="currentColor" stroke-width="4" />
-  </g>
-
-  <!-- T -->
-  <g transform="translate(100, 50)">
-    <g stroke="currentColor" stroke-width="20">
-      <path pathLength="1" d="M -35 -40 L 35 -40" />
-      <path pathLength="1" d="M 0 -25 L 0 50" />
-    </g>
-    <g stroke="var(--primary)" stroke-width="5">
-      <path pathLength="1" style="--delay: 0.1" d="M -30 -40 L -10 -40" />
-      <path pathLength="1" style="--delay: 0.3" d="M 0 -40 L 10 -40" />
-      <path pathLength="1" style="--delay: 0.5" d="M 20 -40 L 30 -40" />
-      <path pathLength="1" style="--delay: 0.3" d="M 0 15 L 0 45" />
-    </g>
-  </g>
-
-  <!-- R -->
-  <g transform="translate(180, 50)">
-    <g stroke="currentColor" stroke-width="20">
-      <path pathLength="1" d="M -25 -50 L -25 50" />
-      <path pathLength="1" d="M 5 0 A 20 20 0 0 1 25 20 L 25 50" />
+  <g filter="url(#filter)">
+    <!-- S -->
+    <g transform="translate(30, 50)">
+      <path
+        id="S"
+        d="M 25 -40 L 0 -40 A 20 20 0 0 0 0 0 A 20 20 0 0 1 0 40 L -25 40"
+        pathLength="1"
+      />
+      <use href="#S" stroke="currentColor" stroke-width="20" />
+      <use href="#S" stroke="var(--primary)" stroke-width="10" opacity="0.5" />
+      <use href="#S" stroke="currentColor" stroke-width="4" />
     </g>
 
-    <path
-      id="R"
-      pathLength="1"
-      d="M -15 -40 L 5 -40 A 20 20 0 0 1 5 0 L -10 0"
-    />
-    <use href="#R" stroke="currentColor" stroke-width="20" />
-    <use href="#R" stroke="var(--primary)" stroke-width="10" />
-    <use href="#R" stroke="currentColor" stroke-width="4" />
+    <!-- T -->
+    <g transform="translate(100, 50)">
+      <g stroke="currentColor" stroke-width="20">
+        <path pathLength="1" d="M -35 -40 L 35 -40" />
+        <path pathLength="1" d="M 0 -25 L 0 50" />
+      </g>
+      <g stroke="var(--primary)" stroke-width="5" opacity="0.5">
+        <path pathLength="1" style="--delay: 0.1" d="M -30 -40 L -10 -40" />
+        <path pathLength="1" style="--delay: 0.3" d="M 0 -40 L 10 -40" />
+        <path pathLength="1" style="--delay: 0.5" d="M 20 -40 L 30 -40" />
+        <path pathLength="1" style="--delay: 0.3" d="M 0 15 L 0 45" />
+      </g>
+    </g>
 
-    <g stroke="var(--primary)" stroke-width="5">
-      <path pathLength="1" style="--delay: 0.1" d="M -25 -45 L -25 -10" />
-      <path pathLength="1" style="--delay: 0.6" d="M -25 35 L -25 45" />
+    <!-- R -->
+    <g transform="translate(180, 50)">
+      <g stroke="currentColor" stroke-width="20">
+        <path pathLength="1" d="M -25 -50 L -25 50" />
+        <path pathLength="1" d="M 5 0 A 20 20 0 0 1 25 20 L 25 50" />
+      </g>
+
+      <path
+        id="R"
+        pathLength="1"
+        d="M -15.5 -40 L 5 -40 A 20 20 0 0 1 5 0 L -10 0"
+      />
+      <use href="#R" stroke="currentColor" stroke-width="20" />
+      <use href="#R" stroke="var(--primary)" stroke-width="10" opacity="0.5" />
+      <use href="#R" stroke="currentColor" stroke-width="4" />
+
+      <g stroke="var(--primary)" stroke-width="5" opacity="0.5">
+        <path pathLength="1" style="--delay: 0.1" d="M -25 -45 L -25 -10" />
+        <path pathLength="1" style="--delay: 0.6" d="M -25 35 L -25 45" />
+      </g>
     </g>
   </g>
 
@@ -89,4 +91,31 @@
   >
     chive
   </text>
+
+  <filter id="filter" primitiveUnits="objectBoundingBox">
+    <feFlood flood-color="black" result="flood" />
+    <feSpecularLighting
+      surfaceScale="100"
+      specularExponent="10"
+      specularConstant="1"
+      lighting-color="var(--primary)"
+      in="flood"
+      result="light1"
+    >
+      <fePointLight x="0" y="0" z="1" />
+    </feSpecularLighting>
+    <feSpecularLighting
+      surfaceScale="100"
+      specularExponent="10"
+      specularConstant="1"
+      lighting-color="var(--secondary)"
+      in="flood"
+      result="light2"
+    >
+      <fePointLight x="1" y="1" z="1" />
+    </feSpecularLighting>
+    <feBlend mode="overlay" in="SourceGraphic" in2="light2" />
+    <feBlend mode="overlay" in2="light1" />
+    <feComposite in2="SourceGraphic" operator="in" />
+  </filter>
 </svg>
