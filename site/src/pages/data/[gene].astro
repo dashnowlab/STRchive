@@ -1,4 +1,5 @@
 ---
+import Layout from "@/layouts/Layout.astro";
 import data from "../../../../data/STRchive-database.json";
 
 /** generate pages for each datum, paths based on gene name */
@@ -9,9 +10,77 @@ export const getStaticPaths = async () =>
 const { gene } = Astro.params;
 
 /** look up full data entry from gene name  */
-const datum = data.find((entry) => entry.gene === gene);
+const d = data.find((entry) => entry.gene === gene);
 ---
 
-<pre>
-  {JSON.stringify(datum, null, 2)}
-</pre>
+<Layout title={d.gene}>
+  <section>
+    <h1>{d.disease}</h1>
+
+    <div class="box">
+      <div>ID</div>
+      <div>{d.disease_id}</div>
+    </div>
+
+    <div class="box">
+      <div>Inheritance</div>
+      <div>{d.Inheritance}</div>
+    </div>
+
+    <div class="box">
+      <div>Age of Onset</div>
+      <div>{d.age_onset_min} &ndash; {d.age_onset_max}</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="table">
+      {
+        Object.entries(d)
+          .flat()
+          .map((entry) => <div>{entry}</div>)
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .box {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px 20px;
+    gap: 5px;
+    border-radius: var(--rounded);
+    background: var(--light-gray);
+  }
+
+  .box > :first-child {
+    color: var(--gray);
+  }
+
+  .box > :not(:first-child) {
+    font-size: 1.1rem;
+  }
+
+  .table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    overflow-wrap: anywhere;
+  }
+
+  .table > :nth-child(odd) {
+    color: var(--gray);
+    text-align: right;
+  }
+
+  .table > :nth-child(even) {
+    text-align: left;
+  }
+
+  .table > :global(:nth-child(even):empty::before) {
+    content: "-";
+    color: var(--gray);
+  }
+</style>
