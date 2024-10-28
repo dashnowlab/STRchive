@@ -2,6 +2,7 @@
   max-width: 100%;
   overflow-x: auto;
   border-radius: var(--rounded);
+  background: var(--white);
   box-shadow: var(--box-shadow);
 }
 
