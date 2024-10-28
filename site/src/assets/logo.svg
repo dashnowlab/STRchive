@@ -4,10 +4,6 @@
       --duration: 3s;
     }
 
-    svg:hover * {
-      filter: none;
-    }
-
     path {
       --delay: 0;
       animation: draw var(--duration) calc(var(--delay) * var(--duration)) ease
