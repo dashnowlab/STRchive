@@ -191,7 +191,6 @@ textarea {
   border: none;
   border-radius: var(--rounded);
   background: var(--white);
-  background: none;
   box-shadow: inset 0 0 0 2px var(--dark-gray);
   font: inherit;
 }

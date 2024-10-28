@@ -35,6 +35,25 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
   </section>
 
   <section>
+    <h2>Overview</h2>
+
+    <p class="center">The data, at a high level.</p>
+
+    <div class="plot-container">
+      <div class="plots">
+        <div>
+          <h3>Pathogenic Size Range</h3>
+          <iframe class="plot" src="/plots/path-size.html"></iframe>
+        </div>
+        <div>
+          <h3>Age of Onset</h3>
+          <iframe class="plot" src="/plots/age-onset.html"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <h2>Downloads</h2>
 
     <Link
@@ -57,3 +76,37 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     <Link to={t2tdefs} className="button" download>T2T-chm13<Download /></Link>
   </section>
 </Layout>
+
+<style>
+  iframe {
+    border: none;
+  }
+
+  .plot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plots {
+    --gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: stretch;
+    width: calc(100vw - 120px);
+    gap: 40px;
+  }
+
+  @media (max-width: 800px) {
+    .plots {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .plot {
+    width: 100%;
+    height: 1030px;
+    border-radius: var(--rounded);
+    box-shadow: var(--box-shadow);
+  }
+</style>
