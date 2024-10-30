@@ -227,7 +227,6 @@ var locus_html =
             }
           locus_html = locus_html +
                   `
-                  <li><b>Type:</b> ${f.type}</li>
                   <li><b>Reference motif:</b> ${f.reference_motif_reference_orientation}</li>
                 </div>
               </div>
@@ -237,7 +236,6 @@ var locus_html =
                 <h4>Disease</h4>
                 <div class="ui list">
                   <li><b>ID:</b> ${f.disease_id}</li>
-                  <li><b>Description:</b> ${f.disease}</li>
                   <li><b>Inheritance:</b> ${inheritance_desc}</li>`
           };
 
@@ -296,6 +294,9 @@ var locus_html =
                 `<li><b>Mechanism:</b> ${f.Mechanism}</li>`
             }
           };
+
+          locus_html = locus_html +
+          `<li>${f.disease_description}</li>`
 
           locus_html = locus_html +
               `
@@ -384,7 +385,7 @@ var locus_html =
 
               <div class="column">
                 <div class="ui segment">
-                  <h4>Resources</h4>
+                  <h4>Tandem Repeat Resources</h4>
                   <div class="ui list">`
 
           if (f.gnomAD_gene != '') {
@@ -392,10 +393,67 @@ var locus_html =
             `<li><b>gnomAD:</b> <a href="https://gnomad.broadinstitute.org/short-tandem-repeat/${f.gnomAD_gene}?dataset=gnomad_r3">${f.gnomAD_gene}</a></li>`
           };
 
+          if (f.TRgnomAD != '') {
+            locus_html = locus_html +
+            `<li><b>TR-gnomAD:</b> <a href="https://wlcb.oit.uci.edu/TRgnomAD/Distribution.php?index_id=${f.TRgnomAD}">${f.TRgnomAD}</a></li>`
+          };
+
           if (f.STRipy_gene != '') {
             locus_html = locus_html + 
             `<li><b>STRipy:</b> <a href="https://stripy.org/database/${f.STRipy_gene}">${f.STRipy_gene}</a></li>`
           };
+
+          if (f.WebSTR_hg38 != '' | f.WebSTR_hg19 != '') {
+            locus_html = locus_html + `<li><b>WebSTR:</b> 
+              <ul>`
+            if (f.WebSTR_hg19 != '') {
+              locus_html = locus_html + `<li><b>hg19:</b> `
+              f.WebSTR_hg19.split(";").forEach(function (WebSTR_hg19_ID) {
+              locus_html = locus_html +
+              `<a href="https://webstr.ucsd.edu/locus?repeat_id=${WebSTR_hg19_ID.trim()}">${WebSTR_hg19_ID}</a>`
+              })
+              locus_html = locus_html + `</li>`
+            }
+            if (f.WebSTR_hg38 != '') {
+              locus_html = locus_html + `<li><b>hg38:</b> `
+              f.WebSTR_hg38.split(";").forEach(function (WebSTR_hg38_ID) {
+              locus_html = locus_html +
+              `<a href="https://webstr.ucsd.edu/locus?repeat_id=${WebSTR_hg38_ID.trim()}&genome=hg38">${WebSTR_hg38_ID}</a>`
+              })
+              locus_html = locus_html + `</li>`
+            }
+
+            locus_html = locus_html + `</ul>`
+          };
+          
+          if (f.source != '') {
+            locus_html = locus_html + `<li><b>Sources reviewed for STRchive:</b></li>
+            `
+            f.source.split(", ").forEach(function (source) {
+              if (source.startsWith("http")) {
+                locus_html = locus_html +
+                `<li><a href="${source.trim()}">${source}</a></li>`
+              }
+              else {
+                locus_html = locus_html +
+                `<li><a href="https://www.google.com/search?q=${source.trim()}">${source}</a></li>`
+              }
+
+            })
+            
+          };
+          locus_html = locus_html +
+              `
+                </div>
+              </div>
+            </div>`
+
+          locus_html = locus_html +
+              `
+              <div class="column">
+                <div class="ui segment">
+                  <h4>Disease Resources</h4>
+                  <div class="ui list">`
 
           if (f.OMIM != '') {
             locus_html = locus_html + `<li><b>OMIM:</b> `
@@ -421,28 +479,37 @@ var locus_html =
             })
             locus_html = locus_html + `</li>`
           };
-          if (f.source != '') {
-            locus_html = locus_html + `<li><b>Sources reviewed for STRchive:</b></li>
-            `
-            f.source.split(", ").forEach(function (source) {
-              if (source.startsWith("http")) {
-                locus_html = locus_html +
-                `<li><a href="${source.trim()}">${source}</a></li>`
-              }
-              else {
-                locus_html = locus_html +
-                `<li><a href="https://www.google.com/search?q=${source.trim()}">${source}</a></li>`
-              }
-
+          if (f.MedGen != '') {
+            locus_html = locus_html + `<li><b>MedGen:</b> `
+            f.MedGen.split(";").forEach(function (MedGenID) {
+              locus_html = locus_html +
+              `<a href="https://www.ncbi.nlm.nih.gov/medgen/?term=${MedGenID.trim()}">${MedGenID}</a>`
             })
-            
+            locus_html = locus_html + `</li>`
           };
+          if (f.Orphanet != '') {
+            locus_html = locus_html + `<li><b>Orphanet:</b> `
+            f.Orphanet.split(";").forEach(function (OrphanetID) {
+              locus_html = locus_html +
+              `<a href="https://www.orpha.net/en/disease/detail/${OrphanetID.trim()}">${OrphanetID}</a>`
+            })
+            locus_html = locus_html + `</li>`
+          };
+          if (f.GARD != '') {
+            locus_html = locus_html + `<li><b>GARD:</b> `
+            f.GARD.split(";").forEach(function (GARDid) {
+              locus_html = locus_html +
+              `<a href="https://rarediseases.info.nih.gov/diseases/${GARDid.trim()}/index">${GARDid}</a>`
+            })
+            locus_html = locus_html + `</li>`
+          };
+          
           locus_html = locus_html +
               `
                 </div>
               </div>
             </div>`
-        
+
             if (f.details != '') {
                 locus_html = locus_html + `
                   <div class="ui column">
