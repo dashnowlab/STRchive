@@ -51,7 +51,7 @@
         "width":null,
         "OMIM":null,
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Found in individuals of European ancestry [pmid:38876750]",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -64,7 +64,6 @@
         "WebSTR_hg38":"1164141; 6329150",
         "WebSTR_hg19":"STR_58687",
         "TRgnomAD":"TR5671",
-        "affected_pops":"European ancestry (PMID: 38876750)",
         "disease_description":"Oculopharyngodistal myopathy (OPDM) is a rare, adult-onset hereditary muscle disease. People with OPDM present with progressive eye and throat (pharyngeal) problems and involvement of the muscles of the lower legs and arms. Symptoms may include eyelid drooping (ptosis), swallowing difficulty, hoarse and nasal voice, leg and arm weakness, as well as muscle wasting in the face and in the legs and arms. Many people have respiratory problems due to respiratory muscle weakness. In rare cases, there is also hearing loss, as well as severe weakness in muscles of the forearms and thighs. As the disease progresses, other muscles may be affected. A blood exam may show an increased creatine kinase level and an abnormal EMG. (Mondo)"
     },
     {
@@ -119,7 +118,7 @@
         "width":148.0,
         "OMIM":"309548",
         "Prevalence":"2\/50000",
-        "Prevalence_details":"1-4\/100,000 males (https:\/\/medlineplus.gov\/genetics\/condition\/fragile-xe-syndrome); 1\/50-100,000 males, more than 50 families (PMID: 11246464)",
+        "Prevalence_details":"1-4\/100,000 males (https:\/\/medlineplus.gov\/genetics\/condition\/fragile-xe-syndrome); 1\/50-100,000 males, more than 50 families [pmid:11246464]. Found in populations around the globe, including in the UK, US, Canada, Taiwan, Germany, Greece, Cyprus, Spain, and Finland [pmid:11246464]",
         "STRipy_gene":"AFF2",
         "gnomAD_gene":"AFF2",
         "GeneReviews":"NBK535148",
@@ -132,7 +131,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":null,
         "TRgnomAD":"TR173976",
-        "affected_pops":"Found in populations around the globe, including in the UK, US, Canada, Taiwan, Germany, Greece, Cyprus, Spain, and Finland (PMID: 11246464)",
         "disease_description":"A nonsyndromic X-linked mental retardation (NS-XLMR) characterized by mild intellectual deficit. FRAXE is the most common form of NS-XLMR. (Mondo)"
     },
     {
@@ -187,7 +185,7 @@
         "width":25.0,
         "OMIM":"601464",
         "Prevalence":null,
-        "Prevalence_details":"1\/862 (1\/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) https:\/\/www.medrxiv.org\/content\/10.1101\/2023.05.03.23289461v1.full.pdf",
+        "Prevalence_details":"1\/862 (1\/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) https:\/\/www.medrxiv.org\/content\/10.1101\/2023.05.03.23289461v1.full.pdf . Clinical cases have been observed in South Australia (PMID: 24763282)",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -200,7 +198,6 @@
         "WebSTR_hg38":"288936",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR252468",
-        "affected_pops":"Clinical cases in South Australia (PMID: 24763282)",
         "disease_description":"These expansions are associated with intellectual disability and clinical phenotypes such as delayed motor development or delays in speech\/language (PMID: 24763282)"
     },
     {
@@ -255,7 +252,7 @@
         "width":102.0,
         "OMIM":"313200",
         "Prevalence":"1\/30000",
-        "Prevalence_details":"1-2\/100,000 (population-specific, higher in Finnish population, Canadian population) (PMID: 37628685); 1\/30,000  (Orphanet) ; mutation frequency of 1:3182 10x more frequent than reported disease prevalence of 1 in 30,000 (PMID: 36797998); Tang et al., 2017: 0.67-2.5\/100,000",
+        "Prevalence_details":"1-2\/100,000 (population-specific, higher in Finnish population, Canadian population) (PMID: 37628685); 1\/30,000  (Orphanet) ; mutation frequency of 1:3182 10x more frequent than reported disease prevalence of 1 in 30,000 (PMID: 36797998); Tang et al., 2017: 0.67-2.5\/100,000 . Only documented in patients with European/Asian ancestry, including Scandinavian, English, Belgian, French, Italian, German, Polish, Spanish, Swiss, Moroccan, Turkish, Chinese, Japanese (more common because of a founder effect), Korean, and Vietnamese populations (NBK1333)",
         "STRipy_gene":"AR",
         "gnomAD_gene":"AR",
         "GeneReviews":"NBK1333",
@@ -268,7 +265,6 @@
         "WebSTR_hg38":"859199",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR169377",
-        "affected_pops":"Only documented in patients with European/Asian ancestry, including Scandinavian, English, Belgian, French, Italian, German, Polish, Spanish, Swiss, Moroccan, Turkish, Chinese, Japanese (more common because of a founder effect), Korean, and Vietnamese populations (NBK1333)",
         "disease_description":"Kennedy's disease, also known as bulbospinal muscular atrophy (BSMA), is a rare X-linked recessive motor neuron disease characterized by proximal and bulbar muscle wasting. (Mondo)"
     },
     {
@@ -323,7 +319,7 @@
         "width":43.0,
         "OMIM":"308350; 300419; 300215",
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Found in individuals of multiple ethnicities, including European and Asian ancestry (PMID: 12874418)",
         "STRipy_gene":"ARX_1",
         "gnomAD_gene":"ARX_1",
         "GeneReviews":"NBK535148",
@@ -336,7 +332,6 @@
         "WebSTR_hg38":"843651",
         "WebSTR_hg19":"STR_1542607",
         "TRgnomAD":"TR167317",
-        "affected_pops":"Multiple ethnicities, including European and Asian ancestry (PMID: 12874418)",
         "disease_description":"Developmental and epileptic encephalopathy-1 (DEE1) is a severe form of epilepsy characterized by frequent tonic seizures or spasms beginning in infancy with a specific EEG finding of suppression-burst patterns, characterized by high-voltage bursts alternating with almost flat suppression phases. (OMIM: 308350)"
     },
     {
@@ -391,7 +386,7 @@
         "width":35.0,
         "OMIM":"309510",
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Limited clinical cases of predominantly European ancestry, such as Welsh/Belgian (OMIM: 309510)",
         "STRipy_gene":"ARX_2",
         "gnomAD_gene":"ARX_2",
         "GeneReviews":"NBK535148",
@@ -404,7 +399,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":null,
         "TRgnomAD":"TR167316",
-        "affected_pops":"Limited clinical cases of predominantly European ancestry, such as Welsh/Belgian (OMIM: 309510)",
         "disease_description":"A rare neurological condition that is primarily characterized by mild to moderate intellectual disability and dystonia of the hands. Other signs and symptoms may include dysarthria, behavioral abnormalities, recurrent seizures and\/or an unusual gait (style of walking). Partington syndrome usually occurs in males; when it occurs in females, the signs and symptoms are often less severe. It is caused by changes (mutations) in the ARX gene and is inherited in an X-linked recessive manner. Treatment is based on the signs and symptoms present in each person. (Mondo)"
     },
     {
@@ -459,7 +453,7 @@
         "width":58.0,
         "OMIM":"125370",
         "Prevalence":"4.5\/1000000",
-        "Prevalence_details":"2-7\/1,000,000",
+        "Prevalence_details":"2-7\/1,000,000. More prevalent in Japanese populations, also reported in North America, South America, Europe, and Australia (NBK1491)",
         "STRipy_gene":"ATN1",
         "gnomAD_gene":"ATN1",
         "GeneReviews":"NBK1491",
@@ -472,7 +466,6 @@
         "WebSTR_hg38":"5050156",
         "WebSTR_hg19":"Expansion_ATN1\/DRPLA",
         "TRgnomAD":"TR114246",
-        "affected_pops":"More prevalent in Japanese populations, also reported in North America, South America, Europe, and Australia (NBK1491)",
         "disease_description":"Dentatorubral pallidoluysian atrophy (DRPLA) is a rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by involuntary movements, ataxia, epilepsy, mental disorders, cognitive decline and prominent anticipation. (Mondo)"
     },
     {
@@ -527,7 +520,7 @@
         "width":90.0,
         "OMIM":"164400",
         "Prevalence":"1.5\/100000",
-        "Prevalence_details":"1-2\/100,000",
+        "Prevalence_details":"1-2\/100,000. Cases have been reported worldwide, although prevalences varies by ancestry/ethnicity (NBK1184)",
         "STRipy_gene":"ATXN1",
         "gnomAD_gene":"ATXN1",
         "GeneReviews":"NBK1184",
@@ -540,7 +533,6 @@
         "WebSTR_hg38":"5767842",
         "WebSTR_hg19":"Expansion_SCA1\/ATXN1",
         "TRgnomAD":"TR63118",
-        "affected_pops":"Worldwide, although prevalences varies by ancestry/ethnicity (NBK1184)",
         "disease_description":"Spinocerebellar ataxia type 1 (SCA1) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by dysarthria, writing difficulties, limb ataxia, and commonly nystagmus and saccadic abnormalities. (Mondo)"
     },
     {
@@ -595,7 +587,7 @@
         "width":69.0,
         "OMIM":"603516",
         "Prevalence":null,
-        "Prevalence_details":"Unknown; >300 individuals (GeneReview)",
+        "Prevalence_details":"Unknown prevalence, >300 individuals (GeneReview). Cases have been identified in Mexico, Brazil, China, and Japan (NBK1175)",
         "STRipy_gene":"ATXN10",
         "gnomAD_gene":"ATXN10",
         "GeneReviews":"NBK1175",
@@ -608,7 +600,6 @@
         "WebSTR_hg38":"1027359; 4921433",
         "WebSTR_hg19":"STR_909210",
         "TRgnomAD":"TR165509",
-        "affected_pops":"Identified in Mexico, Brazil, China, and Japan (NBK1175)",
         "disease_description":"Spinocerebellar ataxia type 10 (SCA10) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by slowly progressive cerebellar syndrome and epilepsy, sometimes mild pyramidal signs, peripheral neuropathy and neuropsychological disturbances (Mondo)"
     },
     {
@@ -663,7 +654,7 @@
         "width":69.0,
         "OMIM":"183090",
         "Prevalence":"1.5\/100000",
-        "Prevalence_details":"1-2\/100,000 (Tang et al., 2017) (population dependent)",
+        "Prevalence_details":"1-2\/100,000 (Tang et al., 2017) (population dependent). Cases have been found across ethnicities/ancestries, with population-dependent prevalence (NBK1275)",
         "STRipy_gene":"ATXN2",
         "gnomAD_gene":"ATXN2",
         "GeneReviews":"NBK1275",
@@ -676,7 +667,6 @@
         "WebSTR_hg38":"598560; 5117050",
         "WebSTR_hg19":"Expansion_SCA2\/ATXN2",
         "TRgnomAD":"TR120465",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence (NBK1275)",
         "disease_description":"A subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by truncal ataxia, dysarthria, slowed saccades and less commonly ophthalmoparesis and chorea. (Mondo)"
     },
     {
@@ -731,7 +721,7 @@
         "width":41.0,
         "OMIM":"109150",
         "Prevalence":"2.1\/100000",
-        "Prevalence_details":"1\u20135\/100,000, Tang et al., 2017; Most prevalent SCA subtype (NBK557816)",
+        "Prevalence_details":"1-5\/100,000, Tang et al., 2017; Most prevalent SCA subtype (NBK557816). Found worldwide across ancestries/ethnicities (NBK1196)",
         "STRipy_gene":"ATXN3",
         "gnomAD_gene":"ATXN3",
         "GeneReviews":"NBK1196",
@@ -744,7 +734,6 @@
         "WebSTR_hg38":"5316666; 1481402",
         "WebSTR_hg19":"Expansion_SCA3_MJD\/ATXN3",
         "TRgnomAD":"TR132758",
-        "affected_pops":"Found worldwide across ancestries/ethnicities (NBK1196)",
         "disease_description":"Spinocerebellar ataxia type 3 (SCA3), also known as Machado-Joseph disease, is the most common subtype of type 1 autosomal dominant cerebellar ataxia (ADCA type 1), a neurodegenerative disorder, and is characterized by ataxia, external progressive ophthalmoplegia, and other neurological manifestations. (Mondo)"
     },
     {
@@ -799,7 +788,7 @@
         "width":31.0,
         "OMIM":"164500",
         "Prevalence":".999\/300000",
-        "Prevalence_details":"<1\/300,000 (GeneReview)",
+        "Prevalence_details":"<1\/300,000 (GeneReview). Predominantly found in those with North European and African ancestry(NBK1256)",
         "STRipy_gene":"ATXN7",
         "gnomAD_gene":"ATXN7",
         "GeneReviews":"NBK1256",
@@ -812,7 +801,6 @@
         "WebSTR_hg38":"4965588",
         "WebSTR_hg19":"Expansion_SCA7\/ATXN7",
         "TRgnomAD":"TR31879; TR31880",
-        "affected_pops":"Predominantly in those with North European and African ancestry(NBK1256)",
         "disease_description":"Spinocerebellar ataxia-7 (SCA7) is an autosomal dominant neurodegenerative disorder characterized by adult onset of progressive cerebellar ataxia associated with pigmental macular dystrophy. OMIM: 164500"
     },
     {
@@ -867,7 +855,7 @@
         "width":46.0,
         "OMIM":"608768",
         "Prevalence":"0.5\/100000",
-        "Prevalence_details":"<1\/100,000; Tang et al., 2017; Expansion in 1:100-1200 chromosomes (GeneReview)",
+        "Prevalence_details":"<1\/100,000; Tang et al., 2017; Expansion in 1:100-1200 chromosomes (GeneReview). Found across ethnicities/ancestries, with population-dependent prevalence (NBK1268)",
         "STRipy_gene":"ATXN8OS",
         "gnomAD_gene":"ATXN8OS",
         "GeneReviews":"NBK1268",
@@ -880,7 +868,6 @@
         "WebSTR_hg38":"5356762",
         "WebSTR_hg19":"Expansion_SCA8\/ATXN8",
         "TRgnomAD":"TR125263; TR125264",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence (NBK1268)",
         "disease_description":"Spinocerebellar ataxia type 8 (SCA8) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by cerebellar ataxia and cognitive dysfunction in almost three quarters of patients and pyramidal and sensory signs in approximately a third of patients. (Mondo)"
     },
     {
@@ -935,7 +922,7 @@
         "width":69.0,
         "OMIM":"117210",
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Has been found in Japanese populations (OMIM: 117210)",
         "STRipy_gene":"BEAN1",
         "gnomAD_gene":"BEAN1",
         "GeneReviews":"NBK535148",
@@ -948,7 +935,6 @@
         "WebSTR_hg38":"812447; 5971756",
         "WebSTR_hg19":"STR_539736",
         "TRgnomAD":"TR141992",
-        "affected_pops":"Japanese (OMIM: 117210)",
         "disease_description":"Spinocerebellar ataxia type 31 (SCA31) is a very rare subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by the late-onset of cerebral ataxia, dysarthria and horizontal gaze nystagmus, and that is occasionally accompanied by pyramidal signs, tremor, decreased vibration sense and hearing difficulties. (Mondo)"
     },
     {
@@ -1003,7 +989,7 @@
         "width":62.0,
         "OMIM":"105500",
         "Prevalence":null,
-        "Prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2\/100,000 person-years, point prevalence is 3-5\/100,000 (Europe\/US); lifetime risk is 1 in 300 (PMID: 31315673). C9orf72-FTD is estimated to be 0.04-134:100,000 (GeneReview), and by our estimates 0.65-1.56\/100,000 for C9orf72-ALS. ",
+        "Prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2\/100,000 person-years, point prevalence is 3-5\/100,000 (Europe\/US); lifetime risk is 1 in 300 (PMID: 31315673). C9orf72-FTD is estimated to be 0.04-134:100,000 (GeneReview), and by our estimates 0.65-1.56\/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry (NBK268647)",
         "STRipy_gene":"C9ORF72",
         "gnomAD_gene":"C9ORF72",
         "GeneReviews":"NBK268647",
@@ -1016,7 +1002,6 @@
         "WebSTR_hg38":"5877863; 1502453",
         "WebSTR_hg19":"STR_1475506",
         "TRgnomAD":"TR92417",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry (NBK268647)",
         "disease_description":"Pure frontotemporal dementia, pure amyotrophic lateral sclerosis or combination of the two (PMID: 39349043)"
     },
     {
@@ -1071,7 +1056,7 @@
         "width":39.0,
         "OMIM":"183086",
         "Prevalence":"2.65\/100000",
-        "Prevalence_details":"13-15% of global SCA prevalence, estimated to be 0.02-31\/100,000 (GeneReview); Tang et al., 2017: 0.3-5\/100,000",
+        "Prevalence_details":"13-15% of global SCA prevalence, estimated to be 0.02-31\/100,000 (GeneReview); Tang et al., 2017: 0.3-5\/100,000. Found across ethnicities/ancestries, with population-dependent prevalence (NBK1140)",
         "STRipy_gene":"CACNA1A",
         "gnomAD_gene":"CACNA1A",
         "GeneReviews":"NBK1140",
@@ -1084,7 +1069,6 @@
         "WebSTR_hg38":"5624835",
         "WebSTR_hg19":"Expansion_SCA6\/CACNA1A",
         "TRgnomAD":"TR154515",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence (NBK1140)",
         "disease_description":"Spinocerebellar ataxia type 6 (SCA6) is the most common subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by late-onset and slowly progressive gait ataxia and other cerebellar signs such as impaired muscle coordination and nystagmus. (Mondo)"
     },
     {
@@ -1135,11 +1119,11 @@
         "Mechanism_source":"PMID: 38467784",
         "source":"https:\/\/doi.org\/10.1038\/s41580-021-00382-6, 7603564 (PubMed)",
         "notes":null,
-        "details":null,
+        "details":"The CGG repeat expansion can lead to a fragile site and subsequent deletion 11q (shown in 2 cases) but total causality is unclear.",
         "width":33.0,
         "OMIM":"147791",
         "Prevalence":null,
-        "Prevalence_details":"1\/100,000 births; female\/male ratio 2:1 (PMID: 19267933); expansion can lead to deletion (shown in 2 cases) but total causality is unclear",
+        "Prevalence_details":"1\/100,000 births; female\/male ratio 2:1 (PMID: 19267933). Found across ancestries/ethnicities (OMIM: 147791)",
         "STRipy_gene":"CBL",
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -1152,7 +1136,6 @@
         "WebSTR_hg38":"6166081; 430025",
         "WebSTR_hg19":"STR_266122",
         "TRgnomAD":"TR112816",
-        "affected_pops":"Found across ancestries/ethnicities (OMIM: 147791)",
         "disease_description":"A multiple congenital anomaly\/intellectual disability contiguous gene syndrome caused by partial deletion of the long arm of chromosome 11. (Mondo)"
     },
     {
@@ -1207,7 +1190,7 @@
         "width":82.0,
         "OMIM":"602668",
         "Prevalence":"2.29\/100000",
-        "Prevalence_details":"2.29\/100,000 (PMID: 35483324); population specific prevalence (GeneReview)",
+        "Prevalence_details":"2.29\/100,000 (PMID: 35483324); population specific prevalence (GeneReview). Most cases have European ancestry, but has been reported worldwide (NBK1466)",
         "STRipy_gene":"CNBP",
         "gnomAD_gene":"CNBP",
         "GeneReviews":"NBK1466",
@@ -1220,7 +1203,6 @@
         "WebSTR_hg38":"741073",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR35563; TR35564; TR35565",
-        "affected_pops":"Most cases have European ancestry, but has been reported worldwide (NBK1466)",
         "disease_description":"Myotonic dystrophy type 2 (MD2), also known as proximal myotonic myopathy, is a very rare genetic multi-system disorder of late childhood or adult-onset characterized by mild myotonia, muscle weakness, and rarely cardiac conduction disorders. (Mondo)"
     },
     {
@@ -1275,7 +1257,7 @@
         "width":15.0,
         "OMIM":"132400; 177170",
         "Prevalence":null,
-        "Prevalence_details":"Specific contribution of COMP repeats to EDM1 is unknown (~300 COMP mutation variants for both phenotypes); likely 1:90,000 prevalence for COMP-PSACH that is repeat-specific.",
+        "Prevalence_details":"Specific contribution of COMP repeats to EDM1 is unknown (~300 COMP mutation variants for both phenotypes); likely 1:90,000 prevalence for COMP-PSACH that is repeat-specific. Found across ancestries/ethnicities (NBK1123, NBK1487)",
         "STRipy_gene":"COMP",
         "gnomAD_gene":"COMP",
         "GeneReviews":"NBK1123; NBK1487",
@@ -1288,7 +1270,6 @@
         "WebSTR_hg38":"1317658",
         "WebSTR_hg19":"STR_673389",
         "TRgnomAD":"TR155017",
-        "affected_pops":"Found across ancestries/ethnicities (NBK1123, NBK1487)",
         "disease_description":"Pseudoachondroplasia is characterized by severe growth deficiency and deformations such as bow legs and hyperlordosis.; Multiple epiphyseal dysplasia type 1 (MED 1) is a form of multiple epiphyseal dysplasia that is characterized by normal or mild short stature, pain in the hips and\/or knees, progressive deformity of extremities and early-onset osteoarthrosis. Specific features to MED 1 include a more pronounced involvement of hip joints and gait abnormality and a shorter adult height. MED1 is allelic to pseudoachondroplasia with which it shares clinical and radiological features. The disease follows an autosomal dominant mode of transmission. (Mondo)"
     },
     {
@@ -1343,7 +1324,7 @@
         "width":null,
         "OMIM":"254800",
         "Prevalence":null,
-        "Prevalence_details":"Worldwide prevalence unknown; Finland prevalence 2-4\/100,000",
+        "Prevalence_details":"Worldwide prevalence unknown; Finland prevalence 2-4\/100,000. Found across ethnicities/ancestries, with population-dependent prevalence; highest in Tunisia, Algeria, Morocco, and Finland (NBK1142)",
         "STRipy_gene":null,
         "gnomAD_gene":"CSTB",
         "GeneReviews":"NBK1142",
@@ -1356,7 +1337,6 @@
         "WebSTR_hg38":"5547429",
         "WebSTR_hg19":"STR_886261",
         "TRgnomAD":"TR163552",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence; highest in Tunisia, Algeria, Morocco, and Finland (NBK1142)",
         "disease_description":"Unverricht-Lundborg disease (ULD) is a rare progressive myoclonic epilepsy disorder characterized by action- and stimulus-sensitive myoclonus, and tonic-clonic seizures with ataxia, but with only a mild cognitive decline over time. (Mondo)"
     },
     {
@@ -1411,7 +1391,7 @@
         "width":81.0,
         "OMIM":"615945",
         "Prevalence":null,
-        "Prevalence_details":"0.20\/100,000 specific to Portugal; not yet found in other geographic regions",
+        "Prevalence_details":"0.20\/100,000 specific to Portugal; not yet found in other geographic regions. Founder effect from Iberian Peninsula (NBK541729)",
         "STRipy_gene":"DAB1",
         "gnomAD_gene":"DAB1",
         "GeneReviews":"NBK541729",
@@ -1424,7 +1404,6 @@
         "WebSTR_hg38":"1144531",
         "WebSTR_hg19":"STR_39393",
         "TRgnomAD":"TR3445",
-        "affected_pops":"Founder effect from Iberian Peninsula (NBK541729)",
         "disease_description":"Spinocerebellar ataxia type 37 (SCA37) is a subtype of autosomal dominant cerebellar ataxia type 1 (ADCA type 1), characterized by a cerebellar syndrome along with altered vertical eye movements. (Mondo)"
     },
     {
@@ -1479,7 +1458,7 @@
         "width":20.0,
         "OMIM":"136630",
         "Prevalence":null,
-        "Prevalence_details":null,
+        "Prevalence_details":"Appears to occur in those of European ancestry/ethnicity (OMIM: 136630)",
         "STRipy_gene":"DIP2B",
         "gnomAD_gene":"DIP2B",
         "GeneReviews":"NBK535148",
@@ -1492,7 +1471,6 @@
         "WebSTR_hg38":"5075695",
         "WebSTR_hg19":"Expansion_FRA12A_MR\/DIP2B",
         "TRgnomAD":"TR116656",
-        "affected_pops":"Appears to occur in those of European ancestry/ethnicity (OMIM: 136630)",
         "disease_description":"...impaired intellectual development with or without other anomalies has been described in patients with over 40% of cells expressing FRA12A (OMIM:136630)."
     },
     {
@@ -1547,7 +1525,7 @@
         "width":48.0,
         "OMIM":"310200",
         "Prevalence":"4.8\/100000",
-        "Prevalence_details":"Believed to be 0 for disease specific to STR expansion. 1\/3500-4700 male births (incidence) for overall DMD (one of the most common and severe congenital myopathies). 4.8\/100,000 prevalence PMID: 35168641",
+        "Prevalence_details":"Believed to be 0 for disease specific to STR expansion. 1\/3500-4700 male births (incidence) for overall DMD (one of the most common and severe congenital myopathies). 4.8\/100,000 prevalence PMID: 35168641. DMD repeat locus expansion only identified in one Greek family (PMID: 27417533)",
         "STRipy_gene":"DMD",
         "gnomAD_gene":"DMD",
         "GeneReviews":"NBK535148",
@@ -1560,7 +1538,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":"STR_1545664",
         "TRgnomAD":"TR167703",
-        "affected_pops":"DMD repeat locus only identified in one Greek family (PMID: 27417533)",
         "disease_description":"Duchenne muscular dystrophy (DMD) is a neuromuscular disease characterized by rapidly progressive muscle weakness and wasting due to degeneration of skeletal, smooth and cardiac muscle. (Mondo)"
     },
     {
@@ -1615,7 +1592,7 @@
         "width":62.0,
         "OMIM":"160900",
         "Prevalence":"9.27\/100000",
-        "Prevalence_details":"5-20\/100,000 (GeneReview); Tang et al., 2017: 0.5-18.1\/100,000; 6.5\/100,000 (PMID: 31159885) ; 9.27 cases (95% CI: 4.73-15.21) per 100,000, ranging from 0.37 to 36.29 cases per 100,000 (PMID: 35483324)",
+        "Prevalence_details":"5-20\/100,000 (GeneReview); Tang et al., 2017: 0.5-18.1\/100,000; 6.5\/100,000 (PMID: 31159885) ; 9.27 cases (95% CI: 4.73-15.21) per 100,000, ranging from 0.37 to 36.29 cases per 100,000 (PMID: 35483324). Found across ethnicities/ancestries, with population-dependent prevalence (NBK1165)",
         "STRipy_gene":"DMPK",
         "gnomAD_gene":"DMPK",
         "GeneReviews":"NBK1165",
@@ -1628,7 +1605,6 @@
         "WebSTR_hg38":"5650727",
         "WebSTR_hg19":"Expansion_DM1\/DMPK",
         "TRgnomAD":"TR156684",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence (NBK1165)",
         "disease_description":"Steinert disease, also known as myotonic dystrophy type 1, is a muscle disease characterized by myotonia and by multiorgan damage that combines various degrees of muscle weakness, arrhythmia and\/or cardiac conduction disorders, cataract, endocrine damage, sleep disorders and baldness. (Mondo)"
     },
     {
@@ -1683,7 +1659,7 @@
         "width":null,
         "OMIM":"268305",
         "Prevalence":null,
-        "Prevalence_details":"49 cases as of Nov 2023 (doi.org\/10.1016\/j.omsc.2023.100340)",
+        "Prevalence_details":"49 cases as of Nov 2023 (doi.org\/10.1016\/j.omsc.2023.100340). Found in Brazilian families and one unrelated French patient (MONDO:0009998)",
         "STRipy_gene":null,
         "gnomAD_gene":"EIF4A3",
         "GeneReviews":"NBK535148",
@@ -1696,7 +1672,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":null,
         "TRgnomAD":"TR148462",
-        "affected_pops":"Found in Brazilian families and one unrelated French patient (MONDO:0009998)",
         "disease_description":"Richieri Costa-Pereira syndrome is characterized by short stature, Robin sequence, cleft mandible, pre\/postaxial hand anomalies (including hypoplastic thumbs), and clubfoot. It has been described in 14 Brazilian families and in one unrelated French patient. Prominent low set ears and a highly arched palate were also observed. Transmission is autosomal recessive. (Mondo)"
     },
     {
@@ -1751,7 +1726,7 @@
         "width":null,
         "OMIM":"620174",
         "Prevalence":null,
-        "Prevalence_details":"Intermediate expansions 1-2% of population, but non-GAA-pure without relation to ataxia. (GeneReview)",
+        "Prevalence_details":"Intermediate expansions 1-2% of population, but non-GAA-pure without relation to ataxia. (GeneReview). Found in multiple ethnicities (PMID: 38876750); diagnosed patients in America, Brazil, Japan, Germany, Spain, Canada, France, Austria and Australia (NBK599589)",
         "STRipy_gene":"FGF14",
         "gnomAD_gene":null,
         "GeneReviews":"NBK599589",
@@ -1764,7 +1739,6 @@
         "WebSTR_hg38":"1272528",
         "WebSTR_hg19":null,
         "TRgnomAD":null,
-        "affected_pops":"Multiple ethnicities (PMID: 38876750); diagnosed patients in America, Brazil, Japan, Germany, Spain, Canada, France, Austria and Australia (NBK599589)",
         "disease_description":"Late-onset ataxia, may have episodic onset, downbeat nystagmus, vertigo, neuropathy (PMID: 39349043)"
     },
     {
@@ -1819,7 +1793,7 @@
         "width":74.0,
         "OMIM":"300624; 300623",
         "Prevalence":"14\/100000",
-        "Prevalence_details":"Incidence of full mutation in males 19\/100,000; prevalence 14\/100,000 (GeneReviews). Female prevalence 9\/100,000 (PMID: 24700618). Tang et al., 2017: known carrier frequency 300-500\/100,000 but detected was 11\/100,000. 10.1007\/978-3-031-66932-3_14: FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females.",
+        "Prevalence_details":"Incidence of full mutation in males 19\/100,000; prevalence 14\/100,000 (GeneReviews). Female prevalence 9\/100,000 (PMID: 24700618). Tang et al., 2017: known carrier frequency 300-500\/100,000 but detected was 11\/100,000. 10.1007\/978-3-031-66932-3_14: FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females. Found worldwide (NBK1384)",
         "STRipy_gene":"FMR1",
         "gnomAD_gene":"FMR1",
         "GeneReviews":"NBK1384",
@@ -1832,7 +1806,6 @@
         "WebSTR_hg38":"885222",
         "WebSTR_hg19":"Expansion_FXS\/FMR1",
         "TRgnomAD":"TR173944",
-        "affected_pops":"Found worldwide (NBK1384)",
         "disease_description":"A genetic syndrome caused by mutations in the FMR1 gene which is responsible for the expression of the fragile X mental retardation 1 protein. This protein participates in neural development. This syndrome is manifested with mental, emotional, behavioral, physical, and learning disabilities.; Any primary ovarian failure in which the cause of the disease is a mutation in the FMR1 gene.; Fragile X-associated tremor\/ataxia syndrome (FXTAS) is a rare neurodegenerative disorder characterized by adult-onset progressive intention tremor and gait ataxia. (Mondo)"
     },
     {
@@ -1887,7 +1860,7 @@
         "width":42.0,
         "OMIM":"110100",
         "Prevalence":"0.3\/50000",
-        "Prevalence_details":"1 in 50,000 births globally for all BPES, with FOXL2 expansions 30% of pathogenic variants (NBK1441; NBK535148 (PMID: 12529855))",
+        "Prevalence_details":"1 in 50,000 births globally for all BPES, with FOXL2 expansions 30% of pathogenic variants (NBK1441; NBK535148 (PMID: 12529855)). Found worldwide, without differences in prevalence based on sex/ethnicity (NBK1441).",
         "STRipy_gene":"FOXL2",
         "gnomAD_gene":"FOXL2",
         "GeneReviews":"NBK1441",
@@ -1900,7 +1873,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":null,
         "TRgnomAD":"TR36092",
-        "affected_pops":"Found worldwide, without differences in prevalence based on sex/ethnicity (NBK1441)",
         "disease_description":"Blepharophimosis, Ptosis, and Epicanthus Inversus syndrome (BPES) is an ophthalmic disorder characterized by blepharophimosis, ptosis, epicanthus inversus, and telecanthus, that can appear associated with (type I) or without premature ovarian failure (POF) (type II). (Mondo)"
     },
     {
@@ -1955,7 +1927,7 @@
         "width":2.0,
         "OMIM":"229300",
         "Prevalence":"1\/50000",
-        "Prevalence_details":"1\/50,000 (OMIM); Tang et al., 2017: Known carrier frequency 1000\/100,000; observed 421\/100,000",
+        "Prevalence_details":"1\/50,000 (OMIM); Tang et al., 2017: Known carrier frequency 1000\/100,000; observed 421\/100,000. Most common inherited ataxia in Europe, the Middle East, India, and North Africa; not documented in Southeast Asia, in sub-Saharan Africa, or among Native Americans (NBK1281)",
         "STRipy_gene":"FXN",
         "gnomAD_gene":"FXN",
         "GeneReviews":"NBK1281",
@@ -1968,7 +1940,6 @@
         "WebSTR_hg38":"1509872",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR93516",
-        "affected_pops":"Most common inherited ataxia in Europe, the Middle East, India, and North Africa; not documented in Southeast Asia, in sub-Saharan Africa, or among Native Americans (NBK1281)",
         "disease_description":"Any Friedreich ataxia in which the cause of the disease is a mutation in the FXN gene. (Mondo)"
     },
     {
@@ -2023,7 +1994,7 @@
         "width":33.0,
         "OMIM":"618940",
         "Prevalence":null,
-        "Prevalence_details":"Population dependent; presumed rare.",
+        "Prevalence_details":"Population dependent; presumed rare. Predominantly found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"GIPC1",
         "gnomAD_gene":"GIPC1",
         "GeneReviews":"NBK535148",
@@ -2036,7 +2007,6 @@
         "WebSTR_hg38":"5626440",
         "WebSTR_hg19":"STR_668861",
         "TRgnomAD":"TR154638",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750); Slowly progressive distal weakness, ophthalmoplegia, facial and bulbar weakness (PMID: 39349043)"
     },
     {
@@ -2091,7 +2061,7 @@
         "width":47.0,
         "OMIM":"618412",
         "Prevalence":null,
-        "Prevalence_details":"As of 2019, only 7 cases total of GLS deficiency, including non-repeat",
+        "Prevalence_details":"As of 2019, only 7 cases total of GLS deficiency, including non-repeat. Identified patients have been Canadian (PMID: 30970188), Kurdish (Turkey; PMID: 35913761) and US-American (Northern European/Native American descen; PMID: 35913761)",
         "STRipy_gene":"GLS",
         "gnomAD_gene":"GLS",
         "GeneReviews":"NBK535148",
@@ -2104,7 +2074,6 @@
         "WebSTR_hg38":"333878; 5494902",
         "WebSTR_hg19":"STR_803303",
         "TRgnomAD":"TR24838",
-        "affected_pops":"Identified patients have been Canadian (PMID: 30970188), Kurdish (Turkey; PMID: 35913761) and US-American (Northern European/Native American descen; PMID: 35913761)",
         "disease_description":"Glutaminase deficiency is characterized by refractory seizures, respiratory failure, brain abnormalities and death in the neonatal period, though milder cases with spastic ataxia-dysarthria have also been reported. This condition is caused by mutations in the glutaminase (GLS) gene. (Mondo)"
     },
     {
@@ -2159,7 +2128,7 @@
         "width":42.0,
         "OMIM":"140000",
         "Prevalence":null,
-        "Prevalence_details":"\"Extremely rare\" (GeneReview)",
+        "Prevalence_details":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235, GeneReview)",
         "STRipy_gene":"HOXA13_1",
         "gnomAD_gene":"HOXA13_1",
         "GeneReviews":"NBK1423",
@@ -2172,7 +2141,6 @@
         "WebSTR_hg38":"5679832",
         "WebSTR_hg19":"STR_1311037",
         "TRgnomAD":"TR74138",
-        "affected_pops":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235)",
         "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects. (Mondo)"
     },
     {
@@ -2227,7 +2195,7 @@
         "width":36.0,
         "OMIM":"140000",
         "Prevalence":null,
-        "Prevalence_details":"\"Extremely rare\" (GeneReview)",
+        "Prevalence_details":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235, GeneReview)",
         "STRipy_gene":"HOXA13_2",
         "gnomAD_gene":"HOXA13_2",
         "GeneReviews":"NBK1423",
@@ -2240,7 +2208,6 @@
         "WebSTR_hg38":"5679831",
         "WebSTR_hg19":"STR_1311036",
         "TRgnomAD":"TR74137",
-        "affected_pops":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235)",
         "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects. (Mondo)"
     },
     {
@@ -2295,7 +2262,7 @@
         "width":54.0,
         "OMIM":"140000",
         "Prevalence":null,
-        "Prevalence_details":"\"Extremely rare\" (GeneReview)",
+        "Prevalence_details":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235, GeneReview)",
         "STRipy_gene":"HOXA13_3",
         "gnomAD_gene":"HOXA13_3",
         "GeneReviews":"NBK1423",
@@ -2308,7 +2275,6 @@
         "WebSTR_hg38":"1365344",
         "WebSTR_hg19":"STR_1311035",
         "TRgnomAD":"TR74136",
-        "affected_pops":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235)",
         "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects. (Mondo)"
     },
     {
@@ -2363,7 +2329,7 @@
         "width":45.0,
         "OMIM":"186000",
         "Prevalence":null,
-        "Prevalence_details":"3 individuals (GeneReview)",
+        "Prevalence_details":"Found across dozens of unrelated families worldwide (PMID: 24038517)",
         "STRipy_gene":"HOXD13",
         "gnomAD_gene":"HOXD13",
         "GeneReviews":"NBK535148",
@@ -2376,7 +2342,6 @@
         "WebSTR_hg38":"5486677",
         "WebSTR_hg19":"STR_796395",
         "TRgnomAD":"TR24032",
-        "affected_pops":"Found across dozens of unrelated families worldwide (PMID: 24038517)",
         "disease_description":"Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present (OMIM: 186000)"
     },
     {
@@ -2431,7 +2396,7 @@
         "width":63.0,
         "OMIM":"143100",
         "Prevalence":"1\/10000",
-        "Prevalence_details":"Tang et al., 2017: 6.5-15\/100,000; 9.71-17:100,000 (European) vs. 0.1-2\/100,000 (African), as many as 1 in 400 have reduced penetrance (0.2-2% for 36-38 CAG) HTT alleles (GeneReview)",
+        "Prevalence_details":"Tang et al., 2017: 6.5-15\/100,000; 9.71-17:100,000 (European) vs. 0.1-2\/100,000 (African), as many as 1 in 400 have reduced penetrance (0.2-2% for 36-38 CAG) HTT alleles (GeneReview). Found across ethnicities/ancestries, with population-dependent prevalence (NBK1305)",
         "STRipy_gene":"HTT",
         "gnomAD_gene":"HTT",
         "GeneReviews":"NBK1305",
@@ -2444,7 +2409,6 @@
         "WebSTR_hg38":"4701738; 86468; 86467",
         "WebSTR_hg19":"Expansion_HD\/HTT",
         "TRgnomAD":"TR40017; TR40018",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence (NBK1305)",
         "disease_description":"Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia. (Mondo)"
     },
     {
@@ -2499,7 +2463,7 @@
         "width":46.0,
         "OMIM":"606438",
         "Prevalence":null,
-        "Prevalence_details":"<1\/1,000,000 (Orphanet); largely in individuals of African descent",
+        "Prevalence_details":"<1\/1,000,000 (Orphanet); largely in individuals of African ancestry (NBK1529)",
         "STRipy_gene":"JPH3",
         "gnomAD_gene":"JPH3",
         "GeneReviews":"NBK1529",
@@ -2512,7 +2476,6 @@
         "WebSTR_hg38":"828516; 5987878",
         "WebSTR_hg19":"Expansion_HDL2\/JPH3",
         "TRgnomAD":"TR143309",
-        "affected_pops":"African ancestry (NBK1529)",
         "disease_description":"Huntington disease-like 2 (HDL2) is a severe neurodegenerative disorder considered part of the neuroacanthocytosis syndromes characterized by a triad of movement, psychiatric, and cognitive abnormalities. (Mondo)"
     },
     {
@@ -2567,7 +2530,7 @@
         "width":27.0,
         "OMIM":"164310",
         "Prevalence":null,
-        "Prevalence_details":"Population dependent; unknown percentage of LRP12 pathogenic variants.",
+        "Prevalence_details":"Population dependent; unknown percentage of LRP12 pathogenic variants. Typically East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"LRP12",
         "gnomAD_gene":"LRP12",
         "GeneReviews":"NBK535148",
@@ -2580,7 +2543,6 @@
         "WebSTR_hg38":"1082178; 4874587",
         "WebSTR_hg19":"STR_1441036",
         "TRgnomAD":"TR88348",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Adult-onset ptosis, ophthalmoplegia, facial, distal limb weakness, dysphagia (PMID: 39349043); Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750)"
     },
     {
@@ -2635,7 +2597,7 @@
         "width":72.0,
         "OMIM":"613608",
         "Prevalence":null,
-        "Prevalence_details":"Overall FAME prevalence is < 1\/35,000; MARCHF6-caused much smaller",
+        "Prevalence_details":"Overall FAME prevalence is < 1\/35,000; MARCHF6-caused much smaller. Most cases have European ancestry (PMID: 38876750)",
         "STRipy_gene":"MARCHF6",
         "gnomAD_gene":"MARCHF6",
         "GeneReviews":"NBK535148",
@@ -2648,7 +2610,6 @@
         "WebSTR_hg38":"5994579",
         "WebSTR_hg19":"STR_1116660",
         "TRgnomAD":"TR51895",
-        "affected_pops":"European ancestry (PMID: 38876750)",
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750); Adult-onset cortical tremor with epilepsy (PMID: 39349043)"
     },
     {
@@ -2703,7 +2664,7 @@
         "width":24.0,
         "OMIM":"105400",
         "Prevalence":null,
-        "Prevalence_details":"2.7-7.4\/100,000 (All ALS, not just this locus), NIPA1 + C9orf72 is 0.37% of ALS patients; frequency of NIPA1 expansion in controls is 3.74% (PMID: 31286297)",
+        "Prevalence_details":"2.7-7.4\/100,000 (All ALS, not just this locus), NIPA1 + C9orf72 is 0.37% of ALS patients; frequency of NIPA1 expansion in controls is 3.74% (PMID: 31286297). The repeat expansion is associated with disease globally (PMID: 30342764), but likely unassociated in African probands (PMID: 34179866)",
         "STRipy_gene":"NIPA1",
         "gnomAD_gene":"NIPA1",
         "GeneReviews":null,
@@ -2716,7 +2677,6 @@
         "WebSTR_hg38":"5135087",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR133649",
-        "affected_pops":"Associated with disease globally (PMID: 30342764), but likely unassociated in African probands (PMID: 34179866)",
         "disease_description":"Amyotrophic lateral sclerosis is a neurodegenerative disorder characterized by the death of motor neurons in the brain, brainstem, and spinal cord, resulting in fatal paralysis. ALS usually begins with asymmetric involvement of the muscles in middle adult life. (OMIM: 105400)"
     },
     {
@@ -2771,7 +2731,7 @@
         "width":42.0,
         "OMIM":"614153",
         "Prevalence":null,
-        "Prevalence_details":"Western Japan: 3.6% of all SCA; Costa da Morte region of Spain: 6.3% of all SCA(PMID: 37332636); US: 0.7% of large undiagnosed ataxia cohort (PMID: 28761930)",
+        "Prevalence_details":"Western Japan: 3.6% of all SCA; Costa da Morte region of Spain: 6.3% of all SCA(PMID: 37332636); US: 0.7% of large undiagnosed ataxia cohort (PMID: 28761930). Found across ancestries/ethnicities (OMIM: 614153)",
         "STRipy_gene":"NOP56",
         "gnomAD_gene":"NOP56",
         "GeneReviews":null,
@@ -2784,7 +2744,6 @@
         "WebSTR_hg38":"6177296; 890490",
         "WebSTR_hg19":"STR_833720",
         "TRgnomAD":"TR157810; TR157811",
-        "affected_pops":"Found across ancestries/ethnicities (OMIM: 614153)",
         "disease_description":"Spinocerebellar ataxia type 36 (SCA36) is a subtype of autosomal dominant cerebellar ataxia type 1 (ADCA type 1) characterized by gait and limb ataxia, lower limb spasticity, dysarthria, muscle fasiculations, tongue atrophy and hyperreflexia. (Mondo)"
     },
     {
@@ -2839,7 +2798,7 @@
         "width":39.0,
         "OMIM":"603472",
         "Prevalence":null,
-        "Prevalence_details":">400 patients reported in literature (PMID: 37371433)",
+        "Prevalence_details":">400 patients reported in literature (PMID: 37371433). Found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"NOTCH2NLC",
         "gnomAD_gene":"NOTCH2NLC",
         "GeneReviews":"NBK535148",
@@ -2852,7 +2811,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":null,
         "TRgnomAD":"TR7525",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Neuronal intranuclear inclusion disease (NIID) is a very rare multisystem neurodegenerative disorder characterized by the presence of eosinophilic intranuclear inclusions in neuronal and glial cells, and neuronal loss. (Mondo)"
     },
     {
@@ -2907,7 +2865,7 @@
         "width":21.0,
         "OMIM":"618637",
         "Prevalence":null,
-        "Prevalence_details":"\"Rare\"",
+        "Prevalence_details":"Rare. Found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"NUTM2B-AS1",
         "gnomAD_gene":"NUTM2B-AS1",
         "GeneReviews":"NBK535148",
@@ -2920,7 +2878,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":"STR_173942",
         "TRgnomAD":"TR102881",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Oculopharyngodistal myopathy and white matter abnormalities (PMID: 38876750); Ptosis, ophthalmoplegia, dysphagia, dysarthria (PMID: 39349043)"
     },
     {
@@ -2975,7 +2932,7 @@
         "width":20.0,
         "OMIM":"164300",
         "Prevalence":"1\/100000",
-        "Prevalence_details":"Tang et al., 2017: 1\/100,000; population specific; frequency of GCN[11] alleles is 1-2% of North America\/Europe\/Japan (GeneReview)",
+        "Prevalence_details":"Tang et al., 2017: 1\/100,000; population specific; frequency of GCN[11] alleles is 1-2% of North America\/Europe\/Japan (GeneReview). Found worldwide, in more than 30 countries (NBK1126)",
         "STRipy_gene":"PABPN1",
         "gnomAD_gene":"PABPN1",
         "GeneReviews":"NBK1126",
@@ -2988,7 +2945,6 @@
         "WebSTR_hg38":"1442709; 5271481",
         "WebSTR_hg19":"Expansion_OPMD\/PAPBN1",
         "TRgnomAD":"TR128439",
-        "affected_pops":"Found worldwide, in more than 30 countries (NBK1126)",
         "disease_description":"Ptosis and dysphagia (PMID: 39349043); facial weakness, ptosis (PMID: 38876750)"
     },
     {
@@ -3043,7 +2999,7 @@
         "width":46.0,
         "OMIM":"209880",
         "Prevalence":null,
-        "Prevalence_details":"Incidence is 1:148000-200000 births (Estimated, may include mild\/undiagnosed or be overestimate globally) (GeneReview)",
+        "Prevalence_details":"Incidence is 1:148000-200000 births (Estimated, may include mild\/undiagnosed or be overestimate globally) (GeneReview). Rare, but reported worldwide (PMID: 15121777)",
         "STRipy_gene":"PHOX2B",
         "gnomAD_gene":"PHOX2B",
         "GeneReviews":"NBK1427",
@@ -3056,7 +3012,6 @@
         "WebSTR_hg38":"4725362",
         "WebSTR_hg19":"Expansion_CCHS\/PHOX2B",
         "TRgnomAD":"TR42548",
-        "affected_pops":"Rare, but reported worldwide (PMID: 15121777)",
         "disease_description":"A rare disease due to a severely impaired central autonomic control of breathing and dysfunction of the autonomous nervous system. The incidence is estimated to be at 1 of 200 000 livebirths. A heterozygous mutation of PHOX-2B gene is found in 90% of the patients. Association with a Hirschsprung's disease is observed in 16% of the cases. (adapted from Mondo)"
     },
     {
@@ -3111,7 +3066,7 @@
         "width":40.0,
         "OMIM":"258450;157640",
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Disease association unclear but largely studied in European cohorts/patients (OMIM: 258450/157640)",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":"NBK26471",
@@ -3124,7 +3079,6 @@
         "WebSTR_hg38":"5177947",
         "WebSTR_hg19":"STR_493430",
         "TRgnomAD":"TR137533",
-        "affected_pops":"Disease association unclear but largely studied in European cohorts/patients (OMIM: 258450/157640)",
         "disease_description":"sensory ataxic neuropathy, dysarthria, and ophtalmoparesis (PMID: 38876750)"
     },
     {
@@ -3179,7 +3133,7 @@
         "width":31.0,
         "OMIM":"604326",
         "Prevalence":null,
-        "Prevalence_details":"Unknown. ",
+        "Prevalence_details":"Frequent in India; rare in other populations (PMID: 34711523)",
         "STRipy_gene":"PPP2R2B",
         "gnomAD_gene":"PPP2R2B",
         "GeneReviews":"NBK535148",
@@ -3192,7 +3146,6 @@
         "WebSTR_hg38":"985593; 6072892",
         "WebSTR_hg19":"Expansion_SCA12\/PPP2R2B",
         "TRgnomAD":"TR59714",
-        "affected_pops":"Frequent in India; rare in other places (PMID: 34711523)",
         "disease_description":"Spinocerebellar ataxia type 12 (SCA12) is a very rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by the presence of action tremor associated with relatively mild cerebellar ataxia. Associated pyramidal and extrapyramidal signs and dementia have been reported. (Mondo)"
     },
     {
@@ -3247,7 +3200,7 @@
         "width":33.0,
         "OMIM":"616488",
         "Prevalence":null,
-        "Prevalence_details":"Found in 2 families. All PRDM12 disease mutations < 1\/1,000,000",
+        "Prevalence_details":"Repeat expansion found in 2 families from Pakistan and Saudi Arabia (PMID: 26005867). All PRDM12 disease mutations < 1\/1,000,000",
         "STRipy_gene":"PRDM12",
         "gnomAD_gene":"PRDM12",
         "GeneReviews":"NBK535148",
@@ -3260,7 +3213,6 @@
         "WebSTR_hg38":"1543400",
         "WebSTR_hg19":"STR_1521945",
         "TRgnomAD":"TR97506",
-        "affected_pops":"Found in 2 families from Pakistan and Saudi Arabia (PMID: 26005867)",
         "disease_description":"A hereditary sensory neuropathy characterized by congenital insensitivity to pain and decreased sweating and tear production that has material basis in homozygous mutation in the PRDM12 gene on chromosome 9q34. (Mondo)"
     },
     {
@@ -3315,7 +3267,7 @@
         "width":null,
         "OMIM":"123400",
         "Prevalence":null,
-        "Prevalence_details":"<0.0225\/1,000,000: <15% of CJ variants are repeat expansions (NBK535148). 15% newly diagnosed prion disease cases are genetic (GeneReview) 1 individual per million per year worldwide (350 cases annually in US) (PMID: 29939637)",
+        "Prevalence_details":"<0.0225\/1,000,000: <15% of CJ variants are repeat expansions (NBK535148). 15% newly diagnosed prion disease cases are genetic (GeneReview) 1 individual per million per year worldwide (350 cases annually in US) (PMID: 29939637). Found worldwide (NBK1229).",
         "STRipy_gene":null,
         "gnomAD_gene":"PRNP",
         "GeneReviews":"NBK1229",
@@ -3328,7 +3280,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":null,
         "TRgnomAD":"TR157963; TR157964",
-        "affected_pops":"Found worldwide (NBK1229)",
         "disease_description":"Inherited or familial Creutzfeldt-Jakob disease (fCJD) is a very rare form of genetic prion disease characterized by typical CJD features (rapidly progressive dementia, personality\/behavioral changes, psychiatric disorders, myoclonus, and ataxia) with a genetic cause and sometimes a family history of dementia. (Mondo)"
     },
     {
@@ -3383,7 +3334,7 @@
         "width":91.0,
         "OMIM":"618075",
         "Prevalence":null,
-        "Prevalence_details":"FAME overall is 1\/35,000 in Japan",
+        "Prevalence_details":"FAME overall is 1\/35,000 in Japan. Repeat expansion found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"RAPGEF2",
         "gnomAD_gene":"RAPGEF2",
         "GeneReviews":"NBK535148",
@@ -3396,7 +3347,6 @@
         "WebSTR_hg38":"154264; 4792219",
         "WebSTR_hg19":"STR_1096016",
         "TRgnomAD":"TR49300",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)"
     },
     {
@@ -3451,7 +3401,7 @@
         "width":58.0,
         "OMIM":"614575",
         "Prevalence":null,
-        "Prevalence_details":"Carrier frequency in European is 0.7-4% and in Chinese Han population is 2.24%; estimated prevalence of 1\/20,000 to 1\/625 (NBK564656). Many cases are likely not diagnosed due to heterogeneous presentation (PMID: 39230846).",
+        "Prevalence_details":"Carrier frequency in European is 0.7-4% and in Chinese Han population is 2.24%; estimated prevalence of 1\/20,000 to 1\/625 (NBK564656). Many cases are likely not diagnosed due to heterogeneous presentation (PMID: 39230846). Observed in multiple ethnicities (PMID: 38876750); patients diagnosed with European, Chinese Han, and Maori ancestry, as well as found in Japan, Canada, Brazil, the UK, Italy, Germany, and Australia (NBK564656)",
         "STRipy_gene":"RFC1",
         "gnomAD_gene":"RFC1",
         "GeneReviews":"NBK564656",
@@ -3464,7 +3414,6 @@
         "WebSTR_hg38":"4722884; 99101",
         "WebSTR_hg19":"STR_1036603",
         "TRgnomAD":"TR42349",
-        "affected_pops":"Multiple ethnicities (PMID: 38876750); patients diagnosed with European, Chinese Han, and Maori ancestry, as well as found in Japan, Canada, Brazil, the UK, Italy, Germany, and Australia (NBK564656)",
         "disease_description":"Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia (PMID: 38876750); Late-onset ataxia, sensory neuropathy, vestibular areflexia syndrome (PMID: 39349043)"
     },
     {
@@ -3519,7 +3468,7 @@
         "width":35.0,
         "OMIM":null,
         "Prevalence":null,
-        "Prevalence_details":"Population dependent. 21.6% of one OPDM cohort (PMID: 35148830)",
+        "Prevalence_details":"Population dependent. 21.6% of one OPDM cohort (PMID: 35148830). Typically found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"RILPL1",
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -3532,7 +3481,6 @@
         "WebSTR_hg38":"5128610; 609239",
         "WebSTR_hg19":"STR_347096",
         "TRgnomAD":"TR121403",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750)"
     },
     {
@@ -3587,7 +3535,7 @@
         "width":42.0,
         "OMIM":"119600",
         "Prevalence":null,
-        "Prevalence_details":"All conditions 1\/1,000,000 births (likely underdiagnosed); Utah population frequency 0.12\/10,000",
+        "Prevalence_details":"All conditions 1\/1,000,000 births (likely underdiagnosed); Utah population frequency 0.12\/10,000. Found in many ethnic groups (Orphanet: 1452)",
         "STRipy_gene":"RUNX2",
         "gnomAD_gene":"RUNX2",
         "GeneReviews":"NBK1513",
@@ -3600,7 +3548,6 @@
         "WebSTR_hg38":"5789216",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR65117",
-        "affected_pops":"Found in many ethnic groups (Orphanet: 1452)",
         "disease_description":"A condition that primarily affects the development of the bones and teeth. Characteristic features include underdeveloped or absent collarbones (clavicles); dental abnormalities; and delayed closing of the spaces between the skull bones (fontanels). Other features may include decreased bone density (osteopenia), osteoporosis, hearing loss, bone abnormalities of the hands, and recurrent sinus and ear infections. CCD is caused by changes (mutations) in the RUNX2 gene and inheritance is autosomal dominant. It may be inherited from an affected parent or occur due to a new mutation in the RUNX2 gene. Management may include dental procedures, treatment of sinus and ear infections, use of helmets for high-risk activities, and\/or surgery for skeletal problems. (Mondo)"
     },
     {
@@ -3655,7 +3602,7 @@
         "width":105.0,
         "OMIM":"601068",
         "Prevalence":null,
-        "Prevalence_details":"FAME overall is 1\/35,000 in Japan",
+        "Prevalence_details":"FAME overall is 1\/35,000 in Japan. Typically found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"SAMD12",
         "gnomAD_gene":"SAMD12",
         "GeneReviews":"NBK535148",
@@ -3668,7 +3615,6 @@
         "WebSTR_hg38":"1087693",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR89226",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750); Adult-onset cortical myoclonus, with seizures in up to a half of patients (PMID: 39349043)"
     },
     {
@@ -3723,7 +3669,7 @@
         "width":45.0,
         "OMIM":"300123; 312000",
         "Prevalence":null,
-        "Prevalence_details":"3 families.",
+        "Prevalence_details":"3 families reported, however they were distributed across the world (OMIM: 300123)",
         "STRipy_gene":"SOX3",
         "gnomAD_gene":"SOX3",
         "GeneReviews":"NBK535148",
@@ -3736,7 +3682,6 @@
         "WebSTR_hg38":null,
         "WebSTR_hg19":"STR_1597784",
         "TRgnomAD":"TR173479",
-        "affected_pops":"Found across the world (OMIM: 300123)",
         "disease_description":"X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without [intellectual disability] (PMID: 24346842)"
     },
     {
@@ -3791,7 +3736,7 @@
         "width":54.0,
         "OMIM":"607876",
         "Prevalence":null,
-        "Prevalence_details":"FAME overall is 1\/35,000 in Japan",
+        "Prevalence_details":"FAME overall is 1\/35,000 in Japan. This repeat expansion is typically found in individuals of European ancestry (PMID: 38876750)",
         "STRipy_gene":"STARD7",
         "gnomAD_gene":"STARD7",
         "GeneReviews":"NBK535148",
@@ -3804,7 +3749,6 @@
         "WebSTR_hg38":"286156",
         "WebSTR_hg19":"STR_754470",
         "TRgnomAD":"TR19329",
-        "affected_pops":"European ancestry (PMID: 38876750)",
         "disease_description":"Finger, hand tremor with later-onset myoclonus and generalised tonic-clonic seizures (PMID: 39349043)"
     },
     {
@@ -3859,7 +3803,7 @@
         "width":null,
         "OMIM":"314250",
         "Prevalence":null,
-        "Prevalence_details":"Philippines overall 0.34:100,000. Panay Islands 5.24:100,000. Capiz province 18.9:100,000.",
+        "Prevalence_details":"Philippines overall 0.34:100,000. Panay Islands 5.24:100,000. Capiz province 18.9:100,000. To date, all known cases to date are of Filipino descent (PMID: 38876750)",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":"NBK1489",
@@ -3872,7 +3816,6 @@
         "WebSTR_hg38":"861907",
         "WebSTR_hg19":"STR_1564408",
         "TRgnomAD":"TR592600",
-        "affected_pops":"Filipino (PMID: 38876750)",
         "disease_description":"X-linked dystonia-parkinsonism (XDP) associated with antisense insertion of a SINE-VNTR-Alu (SVA)-type retrotransposon within an intron of TAF1. Clinical features include focal and generalised dystonia, parkinsonism, cognitive dysfunction. XX individuals who are heterozygous carriers usually do not develop the full syndrome, although some patients have non-progressive focal dystonia with parkinsonism. Disease severity is associated with number of hexanucleotide repeats within the SVA. (Adapted from PMID: 38876750)"
     },
     {
@@ -3927,7 +3870,7 @@
         "width":110.0,
         "OMIM":"607136",
         "Prevalence":"0.2\/100000",
-        "Prevalence_details":"Unknown (global), <100 families, 0.47:1,000,000 (Japanese), 0.16\/100,000 (England) (GeneReview); Tang et al., 2017: 0.2\/100,000",
+        "Prevalence_details":"Unknown (global), <100 families, 0.47:1,000,000 (Japanese), 0.16\/100,000 (England) (GeneReview); Tang et al., 2017: 0.2\/100,000. Found across ethnicities/ancestries, with population-dependent prevalence (NBK1438)",
         "STRipy_gene":"TBP",
         "gnomAD_gene":"TBP",
         "GeneReviews":"NBK1438",
@@ -3940,7 +3883,6 @@
         "WebSTR_hg38":"83566",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR72502",
-        "affected_pops":"Found across ethnicities/ancestries, with population-dependent prevalence (NBK1438)",
         "disease_description":"A rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by a variable clinical picture which can include dementia, psychiatric disorders, parkinsonism, dystonia, chorea, spasticity, and epilepsy. (Mondo)"
     },
     {
@@ -3995,7 +3937,7 @@
         "width":45.0,
         "OMIM":"187500",
         "Prevalence":null,
-        "Prevalence_details":"1 individual with STR mutation (GeneReview)",
+        "Prevalence_details":"Found in one Turkish individual (GeneReview NBK535148)",
         "STRipy_gene":"TBX1",
         "gnomAD_gene":"TBX1",
         "GeneReviews":"NBK535148",
@@ -4008,7 +3950,6 @@
         "WebSTR_hg38":"4900984",
         "WebSTR_hg19":"STR_889797",
         "TRgnomAD":"TR163862",
-        "affected_pops":"Found in one Turkish individual (NBK535148)",
         "disease_description":"Tetralogy of Fallot is a congenital cardiac malformation that consists of an interventricular communication, also known as a ventricular septal defect, obstruction of the right ventricular outflow tract, override of the ventricular septum by the aortic root, and right ventricular hypertrophy. (Mondo)"
     },
     {
@@ -4059,7 +4000,7 @@
         "Mechanism_source":"(10.1074\/jbc.M114.621607)",
         "source":"Pathogenic Short Tandem Repeats Gnomad v3.1.2, NBK535148",
         "notes":null,
-        "details":"Penetrance is <100%; reduced penetrance has been reported in individuals with >80 CTG repeats [Wieben et al 2014]. Predominantly in women (~75%) (PMID: 16769829). \u201cAlthough studies on the prevalence of FECD worldwide are limited, the disorder is thought to be more common in Eurasian populations, with its corneal manifestations documented in 11% of females and 7% of males in Reykjavik, Iceland,3 8.5 % of Singapore Chinese,4 and 5.5% of Japanese.4 (PMID: 25722209)  ",
+        "details":"Penetrance is <100%; reduced penetrance has been reported in individuals with >80 CTG repeats [Wieben et al 2014]. Predominantly in women (~75%) (PMID: 16769829). Although studies on the prevalence of FECD worldwide are limited, the disorder is thought to be more common in Eurasian populations (PMID: 26401622), with its corneal manifestations documented in 11% of females and 7% of males in Reykjavik, Iceland, 8.5 % of Singapore Chinese, and 5.5% of Japanese. (PMID: 25722209). Uncommon/rare in Saudi Arabia, Singaporean Chinese, and Japan (Orphanet: 98974)",
         "width":72.0,
         "OMIM":"613267",
         "Prevalence":"4.5\/100",
@@ -4076,7 +4017,6 @@
         "WebSTR_hg38":"6247607; 463325",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR151784",
-        "affected_pops":"Common in Eurasian populations (PMID: 26401622); uncommon/rare in Saudi Arabia, Singaporean Chinese, and Japan (Orphanet: 98974)",
         "disease_description":"Late-onset Fuchs endothelial corneal dystrophy (FECD) is a degenerative disorder ... distinguished from other corneal disorders by the progressive formation of guttae (OMIM: 613267)"
     },
     {
@@ -4131,7 +4071,7 @@
         "width":null,
         "OMIM":null,
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Has been observed in Chinese families (PMID: 37148549; PMID: 24677642)",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -4144,7 +4084,6 @@
         "WebSTR_hg38":"814002; 5973136",
         "WebSTR_hg19":"STR_540982",
         "TRgnomAD":"TR142069",
-        "affected_pops":"Chinese families (PMID: 37148549; PMID: 24677642)",
         "disease_description":"THAP11-caused SCA involves symptoms including gait ataxia, dysarthia, dysphagia, slow saccades, ptosis, and\/or nystagmus (PMID: 37148549)"
     },
     {
@@ -4199,7 +4138,7 @@
         "width":93.0,
         "OMIM":"618074",
         "Prevalence":null,
-        "Prevalence_details":"FAME overall is 1\/35,000 in Japan",
+        "Prevalence_details":"FAME overall is 1\/35,000 in Japan. This repeat expansion is typically found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"TNRC6A",
         "gnomAD_gene":"TNRC6A",
         "GeneReviews":"NBK535148",
@@ -4212,7 +4151,6 @@
         "WebSTR_hg38":"5951520",
         "WebSTR_hg19":"STR_519979",
         "TRgnomAD":"TR139999",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)"
     },
     {
@@ -4267,7 +4205,7 @@
         "width":null,
         "OMIM":"619216",
         "Prevalence":null,
-        "Prevalence_details":"Biallelic variants found in 0.01% of 100 KGP participants; enriched in those with motor disease. 80% of VWA1 pathogenic variants are expansions\/contractions (GeneReview)",
+        "Prevalence_details":"Biallelic variants found in 0.01% of 100 KGP participants; enriched in those with motor disease. 80% of VWA1 pathogenic variants are expansions\/contractions (GeneReview). The repeat expansion was found in several ethnicities; founder mutation 7,000 years prior (PMID: 33559681)",
         "STRipy_gene":null,
         "gnomAD_gene":"VWA1",
         "GeneReviews":"NBK535148",
@@ -4280,7 +4218,6 @@
         "WebSTR_hg38":"1099767",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR32",
-        "affected_pops":"Found in several ethnicities; founder mutation 7,000 years prior (PMID: 33559681)",
         "disease_description":"Autosomal recessive distal hereditary motor neuronopathy-7 (HMNR7) is characterized by onset of lower leg weakness in the first decade. Affected individuals have difficulty climbing stairs and problems standing on the heels... Most patients have foot deformities, and some may have leg muscle atrophy. The disorder is slowly progressive and often involves the upper limbs (OMIM: 619216)"
     },
     {
@@ -4335,7 +4272,7 @@
         "width":1.0,
         "OMIM":"615777",
         "Prevalence":null,
-        "Prevalence_details":"<1 \/ 1,000,000 births (orphanet); \u00bd of DBQD variants (GeneReview). <50 DBQD cases",
+        "Prevalence_details":"<1 \/ 1,000,000 births (orphanet); half of DBQD variants (GeneReview). <50 DBQD cases. Has been found in Belgian, Emirati families",
         "STRipy_gene":"XYLT1",
         "gnomAD_gene":"XYLT1",
         "GeneReviews":"NBK535148",
@@ -4348,7 +4285,6 @@
         "WebSTR_hg38":"793606",
         "WebSTR_hg19":null,
         "TRgnomAD":"TR139509",
-        "affected_pops":"Belgian, Emirati, ",
         "disease_description":"Desbuquois dysplasia, which belongs to the multiple dislocation group of disorders, is characterized by dislocations of large joints, severe pre- and postnatal growth retardation, joint laxity, and flat face with prominent eyes. Radiologic features include short long bones with an exaggerated trochanter that gives a 'monkey wrench' appearance to the proximal femur, and advanced carpal and tarsal ossification (PMID: 24581741)"
     },
     {
@@ -4403,7 +4339,7 @@
         "width":34.0,
         "OMIM":"615127",
         "Prevalence":null,
-        "Prevalence_details":"FAME overall is 1\/35,000 in Japan",
+        "Prevalence_details":"FAME overall is 1\/35,000 in Japan. This repeat expansion is typically found in individuals of East Asian ancestry (PMID: 38876750)",
         "STRipy_gene":"YEATS2",
         "gnomAD_gene":"YEATS2",
         "GeneReviews":"NBK535148",
@@ -4416,7 +4352,6 @@
         "WebSTR_hg38":"5034940; 769177",
         "WebSTR_hg19":"STR_1006941",
         "TRgnomAD":"TR38932",
-        "affected_pops":"East Asian ancestry (PMID: 38876750)",
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)"
     },
     {
@@ -4471,7 +4406,7 @@
         "width":null,
         "OMIM":"600223",
         "Prevalence":null,
-        "Prevalence_details":"Unknown",
+        "Prevalence_details":"Observed in Swedish individuals (OMIM: 600223)",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -4484,7 +4419,6 @@
         "WebSTR_hg38":"5977326",
         "WebSTR_hg19":"STR_545217",
         "TRgnomAD":"TR142346",
-        "affected_pops":"Swedish (OMIM: 600223)",
         "disease_description":"Spinocerebellar ataxia type 4 (SCA4) is a very rare progressive subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by ataxia with sensory neuropathy. (adapted from Mondo)"
     },
     {
@@ -4539,7 +4473,7 @@
         "width":45.0,
         "OMIM":"609637",
         "Prevalence":"1.4\/1000000",
-        "Prevalence_details":"0.05-0.23\/100,000; math done by 40% of pathogenic variants in ZIC2 are expansion (GeneReview); 5% of non-syndromic HPE are ZIC2 gene (NBK1530), and nonsyndromic HPE is [25]-50% of HPE, which affects 1\/10,000 newborns (Medline non-syndromic HPE) - ZIC2 is 9.2% of HPE cases, whicho ccur in 1\/16,000 live births (PMID: 17274816)",
+        "Prevalence_details":"0.05-0.23\/100,000; math done by 40% of pathogenic variants in ZIC2 are expansion (GeneReview); 5% of non-syndromic HPE are ZIC2 gene (NBK1530), and nonsyndromic HPE is [25]-50% of HPE, which affects 1\/10,000 newborns (Medline non-syndromic HPE) - ZIC2 is 9.2% of HPE cases, whicho ccur in 1\/16,000 live births (PMID: 17274816). Holoprosencephaly has worldwide distribution (Orphanet: 2162), but STR-specific distribution is unknown",
         "STRipy_gene":"ZIC2",
         "gnomAD_gene":"ZIC2",
         "GeneReviews":"NBK1530",
@@ -4552,7 +4486,6 @@
         "WebSTR_hg38":"5374719",
         "WebSTR_hg19":"STR_395661",
         "TRgnomAD":"TR127312",
-        "affected_pops":"Holoprosencephaly has worldwide distribution (Orphanet: 2162), but STR-specific distribution is unknown",
         "disease_description":"Holoprosencephaly associated with mutations in the ZIC2 gene. (Mondo)"
     },
     {
@@ -4607,7 +4540,7 @@
         "width":30.0,
         "OMIM":"314390",
         "Prevalence":null,
-        "Prevalence_details":"1 patient with VACTERL died at birth. 8 patients with X-linked OAVS at 11 motifs; 1 individual in OAVS cohort with 12 repeats. ",
+        "Prevalence_details":"1 patient with VACTERL died at birth. 8 patients with X-linked OAVS at 11 motifs; 1 individual in OAVS cohort with 12 repeats. Found in one patient (NBK535148) with European ancestry (PMID: 20452998)",
         "STRipy_gene":"ZIC3",
         "gnomAD_gene":"ZIC3",
         "GeneReviews":"NBK535148",
@@ -4620,7 +4553,6 @@
         "WebSTR_hg38":"883856",
         "WebSTR_hg19":"STR_1596381",
         "TRgnomAD":"TR173313",
-        "affected_pops":"Found in one patient (NBK535148) with European ancestry (PMID: 20452998)",
         "disease_description":"VACTERL is an acronym for vertebral anomalies (similar to those of spondylocostal dysplasia), anal atresia, cardiac malformations, tracheoesophageal fistula, renal anomalies (urethral atresia with hydronephrosis), and limb anomalies (OMIM: 314390)"
     },
     {
@@ -4675,7 +4607,7 @@
         "width":38.0,
         "OMIM":"616181",
         "Prevalence":null,
-        "Prevalence_details":"4 individuals",
+        "Prevalence_details":"4 individuals reported. Found in 2 families without discussion of ancestry/ethnicity (PMID: 25196122)",
         "STRipy_gene":null,
         "gnomAD_gene":null,
         "GeneReviews":null,
@@ -4688,7 +4620,6 @@
         "WebSTR_hg38":"1380240; 5696269",
         "WebSTR_hg19":"STR_1325788",
         "TRgnomAD":"TR300995",
-        "affected_pops":"Found in 2 families without discussion of ancestry/ethnicity (PMID: 25196122)",
         "disease_description":"A spectrum of developmental disorders that includes autism, and Asperger syndrome. Signs and symptoms include poor communication skills, defective social interactions, and repetitive behaviors (MONDO:0005258)."
     }
 ]
