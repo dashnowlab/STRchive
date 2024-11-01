@@ -50,7 +50,7 @@ const cols = [
   },
   {
     key: "pathogenic_motif_reference_orientation",
-    name: "Ref. Orient.",
+    name: "Motif",
     render: (cell) =>
       cell.match(/.{1,5}/g).map((part, index) => (
         <Fragment key={index}>

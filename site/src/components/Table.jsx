@@ -20,11 +20,18 @@ import AnglesLeft from "@/assets/angles-left.svg?react";
 import classes from "./Table.module.css";
 import { useState } from "react";
 
-const perPageOptions = [5, 10, 20, 50, 100];
-const defaultPerPage = perPageOptions[0];
+const perPageOptions = [
+  { value: 5, label: "5" },
+  { value: 10, label: "10" },
+  { value: 25, label: "25" },
+  { value: 50, label: "50" },
+  { value: 100, label: "100" },
+  { value: 999999, label: "All" },
+];
+const defaultPerPage = perPageOptions.at(-1);
 
 const Table = ({ cols, rows, sort = undefined }) => {
-  const [perPage, setPerPage] = useState(defaultPerPage);
+  const [perPage] = useState(defaultPerPage.value);
   const [search, setSearch] = useState("");
 
   const columnHelper = createColumnHelper();
@@ -87,12 +94,12 @@ const Table = ({ cols, rows, sort = undefined }) => {
         <label className={classes["control-row"]}>
           Per page
           <select
-            defaultValue={defaultPerPage}
+            defaultValue={defaultPerPage.value}
             onChange={(event) => table.setPageSize(Number(event.target.value))}
           >
-            {perPageOptions.map((value, index) => (
+            {perPageOptions.map(({ value, label }, index) => (
               <option key={index} value={value}>
-                {value}
+                {label}
               </option>
             ))}
           </select>

@@ -50,11 +50,13 @@
         <path pathLength="1" d="M -35 -40 L 35 -40" />
         <path pathLength="1" d="M 0 -25 L 0 50" />
       </g>
+
       <g stroke="var(--primary)" stroke-width="5" opacity="0.5">
-        <path pathLength="1" style="--delay: 0.1" d="M -30 -40 L -10 -40" />
-        <path pathLength="1" style="--delay: 0.3" d="M 0 -40 L 10 -40" />
-        <path pathLength="1" style="--delay: 0.5" d="M 20 -40 L 30 -40" />
-        <path pathLength="1" style="--delay: 0.3" d="M 0 15 L 0 45" />
+        <path pathLength="1" style="--delay: 0.2" d="M -27 -40 L -7 -40" />
+        <path pathLength="1" style="--delay: 0.3" d="M 2 -40 L 7 -40" />
+        <path pathLength="1" style="--delay: 0.4" d="M 12 -40 L 17 -40" />
+        <path pathLength="1" style="--delay: 0.5" d="M 22 -40 L 27 -40" />
+        <path pathLength="1" style="--delay: 0.2" d="M 0 2 L 0 42" />
       </g>
     </g>
 
@@ -75,8 +77,8 @@
       <use href="#R" stroke="currentColor" stroke-width="4" />
 
       <g stroke="var(--primary)" stroke-width="5" opacity="0.5">
-        <path pathLength="1" style="--delay: 0.1" d="M -25 -45 L -25 -10" />
-        <path pathLength="1" style="--delay: 0.6" d="M -25 35 L -25 45" />
+        <path pathLength="1" style="--delay: 0.1" d="M -25 -42 L -25 -2" />
+        <path pathLength="1" style="--delay: 0.5" d="M -25 32 L -25 42" />
       </g>
     </g>
   </g>
@@ -97,7 +99,7 @@
     <feSpecularLighting
       surfaceScale="100"
       specularExponent="10"
-      specularConstant="1"
+      specularConstant="0.75"
       lighting-color="var(--primary)"
       in="flood"
       result="light1"
@@ -107,7 +109,7 @@
     <feSpecularLighting
       surfaceScale="100"
       specularExponent="10"
-      specularConstant="1"
+      specularConstant="0.75"
       lighting-color="var(--secondary)"
       in="flood"
       result="light2"

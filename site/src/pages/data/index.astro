@@ -6,6 +6,7 @@ import GitHub from "@/assets/github.svg?react";
 import Download from "@/assets/download.svg?react";
 import Sparkle from "@/assets/sparkle.svg?react";
 import Error from "@/assets/error.svg?react";
+import AnglesDown from "@/assets/angles-down.svg?react";
 
 import data from "../../../../data/STRchive-database.json";
 
@@ -17,9 +18,41 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
 <Layout title="Data">
   <section>
     <h1>Data</h1>
+
+    Jump to:
+    <Link to="#downloads" className="button">Downloads<AnglesDown /></Link>
+    <Link to="#all-loci" className="button">All Loci<AnglesDown /></Link>
+    <Link to="#visual-overview" className="button"
+      >Visual Overview<AnglesDown /></Link
+    >
   </section>
 
   <section>
+    <h2 id="downloads">Downloads</h2>
+
+    <Link
+      to="https://github.com/dashnowlab/STRchive/tree/main/data"
+      className="button"
+    >
+      <GitHub />Full Dataset
+    </Link>
+    <br />
+    <br />
+
+    <Link to="https://github.com/PacificBiosciences/trgt">TRGT definitions</Link
+    > for genotyping in PacBio HiFi reads:
+
+    <br />
+    <br />
+
+    <Link to={hg19defs} className="button" download>hg19<Download /></Link>
+    <Link to={hg38defs} className="button" download>hg38<Download /></Link>
+    <Link to={t2tdefs} className="button" download>T2T-chm13<Download /></Link>
+  </section>
+
+  <section>
+    <h2 id="all-loci">All Loci</h2>
+
     <Table client:load data={data} />
 
     <dl>
@@ -35,7 +68,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
   </section>
 
   <section>
-    <h2>Overview</h2>
+    <h2 id="visual-overview">Visual Overview</h2>
 
     <p class="center">The data, at a high level.</p>
 
@@ -51,29 +84,6 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
         </div>
       </div>
     </div>
-  </section>
-
-  <section>
-    <h2>Downloads</h2>
-
-    <Link
-      to="https://github.com/dashnowlab/STRchive/tree/main/data"
-      className="button"
-    >
-      <GitHub />Full Dataset<Download />
-    </Link>
-    <br />
-    <br />
-
-    <Link to="https://github.com/PacificBiosciences/trgt">TRGT definitions</Link
-    > for genotyping in PacBio HiFi reads:
-
-    <br />
-    <br />
-
-    <Link to={hg19defs} className="button" download>hg19<Download /></Link>
-    <Link to={hg38defs} className="button" download>hg38<Download /></Link>
-    <Link to={t2tdefs} className="button" download>T2T-chm13<Download /></Link>
   </section>
 </Layout>
 

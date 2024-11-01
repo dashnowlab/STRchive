@@ -25,6 +25,7 @@
   --bold: 600;
 
   font-size: 13pt;
+  scroll-behavior: smooth;
 }
 
 * {
