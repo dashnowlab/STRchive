@@ -51,7 +51,7 @@
         <path pathLength="1" d="M 0 -25 L 0 50" />
       </g>
 
-      <g stroke="var(--primary)" stroke-width="5" opacity="0.5">
+      <g stroke="var(--primary)" stroke-width="5" opacity="0.4">
         <path pathLength="1" style="--delay: 0.2" d="M -27 -40 L -7 -40" />
         <path pathLength="1" style="--delay: 0.3" d="M 2 -40 L 7 -40" />
         <path pathLength="1" style="--delay: 0.4" d="M 12 -40 L 17 -40" />
@@ -76,7 +76,7 @@
       <use href="#R" stroke="var(--primary)" stroke-width="10" opacity="0.5" />
       <use href="#R" stroke="currentColor" stroke-width="4" />
 
-      <g stroke="var(--primary)" stroke-width="5" opacity="0.5">
+      <g stroke="var(--primary)" stroke-width="5" opacity="0.4">
         <path pathLength="1" style="--delay: 0.1" d="M -25 -42 L -25 -2" />
         <path pathLength="1" style="--delay: 0.5" d="M -25 32 L -25 42" />
       </g>

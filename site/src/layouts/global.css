@@ -239,7 +239,28 @@ td {
 
 .button:hover {
   background: var(--secondary);
-  box-shadow: 0 0 0 3px var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
+  color: var(--white);
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px 15px;
+  gap: 10px;
+  border-radius: 999px;
+  background: var(--light-gray);
+  color: var(--black);
+  text-decoration: none;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+.button-secondary:hover {
+  background: var(--gray);
   color: var(--white);
 }
 
