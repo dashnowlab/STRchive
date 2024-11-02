@@ -186,6 +186,16 @@ select:hover {
   color: var(--white);
 }
 
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
 input:not([type="checkbox"]),
 textarea {
   padding: 7.5px 15px;
@@ -196,7 +206,14 @@ textarea {
   font: inherit;
 }
 
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
 table {
+  margin: 20px 0;
   border-collapse: collapse;
 }
 

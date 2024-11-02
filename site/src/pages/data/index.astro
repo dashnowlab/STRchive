@@ -1,18 +1,23 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Link from "@/components/Link";
-import Table from "./_table.jsx";
-import GitHub from "@/assets/github.svg?react";
-import Download from "@/assets/download.svg?react";
-import Sparkle from "@/assets/sparkle.svg?react";
-import Error from "@/assets/error.svg?react";
 import AnglesDown from "@/assets/angles-down.svg?react";
-
-import data from "../../../../data/STRchive-database.json";
-
+import Download from "@/assets/download.svg?react";
+import GitHub from "@/assets/github.svg?react";
+import Link from "@/components/Link";
+import Layout from "@/layouts/Layout.astro";
+import Table from "./_table.jsx";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
 import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
+import data from "../../../../data/STRchive-database.json";
 import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?url";
+
+const processedData = data.map((d) => ({
+  ...d,
+  position_hg38: `${d.chrom}:${d.start_hg38}-${d.stop_hg38}`,
+  tags: [
+    ...(d.tags ?? []),
+    d.details?.match(/conflict/i) && "conflicting",
+  ].filter(Boolean),
+}));
 ---
 
 <Layout title="Data">
@@ -57,18 +62,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
   <section>
     <h2 id="all-loci">All Loci</h2>
 
-    <Table client:load data={data} />
-
-    <dl>
-      <dt>
-        <Sparkle className="success" aria-label="New" />
-      </dt>
-      <dd>New</dd>
-      <dt>
-        <Error className="error" aria-label="Conflicting" />
-      </dt>
-      <dd>Conflicting evidence</dd>
-    </dl>
+    <Table client:load data={processedData} />
   </section>
 
   <section>

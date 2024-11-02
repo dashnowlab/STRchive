@@ -1,5 +1,6 @@
 .scroll {
   max-width: 100%;
+  margin: 20px 0;
   overflow-x: auto;
   border-radius: var(--rounded);
   background: var(--white);
@@ -7,6 +8,7 @@
 }
 
 .table {
+  margin: 0;
   min-width: 100%;
 }
 
@@ -50,7 +52,7 @@
   gap: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .controls {
     flex-direction: column;
   }

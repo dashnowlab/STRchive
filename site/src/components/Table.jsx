@@ -1,6 +1,4 @@
-import SortUp from "@/assets/sort-up.svg?react";
-import SortDown from "@/assets/sort-down.svg?react";
-import Sort from "@/assets/sort.svg?react";
+import { useState } from "react";
 import {
   createColumnHelper,
   flexRender,
@@ -13,12 +11,16 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import AngleRight from "@/assets/angle-right.svg?react";
 import AngleLeft from "@/assets/angle-left.svg?react";
-import AnglesRight from "@/assets/angles-right.svg?react";
+import AngleRight from "@/assets/angle-right.svg?react";
 import AnglesLeft from "@/assets/angles-left.svg?react";
+import AnglesRight from "@/assets/angles-right.svg?react";
+import SortDown from "@/assets/sort-down.svg?react";
+import SortUp from "@/assets/sort-up.svg?react";
+import Sort from "@/assets/sort.svg?react";
+import { preserveScroll } from "@/util/dom";
+import Select from "./Select";
 import classes from "./Table.module.css";
-import { useState } from "react";
 
 const perPageOptions = [
   { value: 5, label: "5" },
@@ -32,7 +34,6 @@ const defaultPerPage = perPageOptions.at(-1);
 
 const Table = ({ cols, rows, sort = undefined }) => {
   const [perPage] = useState(defaultPerPage.value);
-  const [search, setSearch] = useState("");
 
   const columnHelper = createColumnHelper();
   /** column definitions */
@@ -81,93 +82,11 @@ const Table = ({ cols, rows, sort = undefined }) => {
         pageSize: perPage,
       },
     },
-    state: {
-      globalFilter: search,
-    },
   });
 
   return (
     <>
-      {/* controls */}
-      <div className={classes.controls}>
-        {/* per page */}
-        <label className={classes["control-row"]}>
-          Per page
-          <select
-            defaultValue={defaultPerPage.value}
-            onChange={(event) => table.setPageSize(Number(event.target.value))}
-          >
-            {perPageOptions.map(({ value, label }, index) => (
-              <option key={index} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        {/* search */}
-        <div className={classes["control-row"]}>
-          <input
-            placeholder="Search"
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-          />
-          {table.getRowCount().toLocaleString()} results
-        </div>
-
-        {/* pagination */}
-        <div className={classes["control-row"]}>
-          <button
-            type="button"
-            className={classes["page-button"]}
-            onClick={() => table.setPageIndex(0)}
-            disabled={!table.getCanPreviousPage()}
-            aria-label="First page"
-          >
-            <AnglesLeft />
-          </button>
-          <button
-            type="button"
-            className={classes["page-button"]}
-            onClick={table.previousPage}
-            disabled={!table.getCanPreviousPage()}
-            aria-label="Previous page"
-          >
-            <AngleLeft />
-          </button>
-          <button
-            type="button"
-            className={classes["page-button"]}
-            onClick={() => {
-              const page = parseInt(window.prompt("Jump to page") || "");
-              if (Number.isNaN(page)) return;
-              table.setPageIndex(page);
-            }}
-          >
-            Page {(table.getState().pagination.pageIndex + 1).toLocaleString()}{" "}
-            of {table.getPageCount().toLocaleString()}
-          </button>
-          <button
-            type="button"
-            className={classes["page-button"]}
-            onClick={table.nextPage}
-            disabled={!table.getCanNextPage()}
-            aria-label="Next page"
-          >
-            <AngleRight />
-          </button>
-          <button
-            type="button"
-            className={classes["page-button"]}
-            onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-            disabled={!table.getCanNextPage()}
-            aria-label="Last page"
-          >
-            <AnglesRight />
-          </button>
-        </div>
-      </div>
-
+      {table.getRowCount().toLocaleString()} rows
       <div className={classes.scroll}>
         {/* table */}
         <table
@@ -256,6 +175,84 @@ const Table = ({ cols, rows, sort = undefined }) => {
             )}
           </tbody>
         </table>
+      </div>
+      {/* controls */}
+      <div className={classes.controls}>
+        {/* per page */}
+        <Select
+          label="Per page"
+          options={perPageOptions}
+          defaultValue={defaultPerPage.value}
+          onChange={(value, event) => {
+            table.setPageSize(Number(value));
+            preserveScroll(event.currentTarget);
+          }}
+        />
+
+        {/* pagination */}
+        <div className={classes["control-row"]}>
+          <button
+            type="button"
+            className={classes["page-button"]}
+            onClick={(event) => {
+              table.setPageIndex(0);
+              preserveScroll(event.currentTarget);
+            }}
+            disabled={!table.getCanPreviousPage()}
+            aria-label="First page"
+          >
+            <AnglesLeft />
+          </button>
+          <button
+            type="button"
+            className={classes["page-button"]}
+            onClick={(event) => {
+              table.previousPage();
+              preserveScroll(event.currentTarget);
+            }}
+            disabled={!table.getCanPreviousPage()}
+            aria-label="Previous page"
+          >
+            <AngleLeft />
+          </button>
+          <button
+            type="button"
+            className={classes["page-button"]}
+            onClick={(event) => {
+              const page = parseInt(window.prompt("Jump to page") || "");
+              if (Number.isNaN(page)) return;
+              table.setPageIndex(page);
+              preserveScroll(event.currentTarget);
+            }}
+          >
+            Page {(table.getState().pagination.pageIndex + 1).toLocaleString()}{" "}
+            of {table.getPageCount().toLocaleString()}
+          </button>
+          <button
+            type="button"
+            className={classes["page-button"]}
+            onClick={(event) => {
+              table.nextPage();
+              preserveScroll(event.currentTarget);
+            }}
+            disabled={!table.getCanNextPage()}
+            aria-label="Next page"
+          >
+            <AngleRight />
+          </button>
+          <button
+            type="button"
+            className={classes["page-button"]}
+            onClick={(event) => {
+              table.setPageIndex(table.getPageCount() - 1);
+              preserveScroll(event.currentTarget);
+            }}
+            disabled={!table.getCanNextPage()}
+            aria-label="Last page"
+          >
+            <AnglesRight />
+          </button>
+        </div>
       </div>
     </>
   );

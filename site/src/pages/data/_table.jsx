@@ -1,8 +1,22 @@
-import { Fragment } from "react";
-import TableComponent from "@/components/Table";
-import Link from "@/components/Link";
-import Sparkle from "@/assets/sparkle.svg?react";
+import { Fragment, useState } from "react";
 import Error from "@/assets/error.svg?react";
+import Sparkle from "@/assets/sparkle.svg?react";
+import CheckBox from "@/components/Checkbox";
+import Link from "@/components/Link";
+import NumberBox from "@/components/NumberBox";
+import Select from "@/components/Select";
+import TableComponent from "@/components/Table";
+import { getValues } from "@/util/object";
+import { capitalize } from "@/util/string";
+import classes from "./_table.module.css";
+
+const tagOptions = [
+  {
+    value: "conflicting",
+    icon: <Error className="error" aria-label="Conflicting evidence" />,
+  },
+  { value: "new", icon: <Sparkle className="success" aria-label="New" /> },
+];
 
 const cols = [
   {
@@ -15,14 +29,12 @@ const cols = [
     sortable: false,
   },
   {
-    render: (cell, row) => (
-      <>
-        {row.new && <Sparkle className="success" aria-label="New" />}
-        {row.conflict && (
-          <Error className="error" aria-label="Conflicting evidence" />
-        )}
-      </>
-    ),
+    key: "tags",
+    render: (cell) => {
+      return tagOptions
+        .filter(({ value }) => cell.includes(value))
+        .map(({ icon }) => icon);
+    },
     sortable: false,
   },
   {
@@ -66,16 +78,104 @@ const cols = [
   },
 ];
 
-const Table = ({ data }) => (
-  <TableComponent
-    cols={cols}
-    rows={data.map((d) => ({
-      ...d,
-      new: new Date().getFullYear() - d.Year < 3,
-      conflict: !!d.details?.match(/conflict/i),
-      position_hg38: `${d.chrom}:${d.start_hg38}-${d.stop_hg38}`,
-    }))}
-  />
-);
+const Table = ({ data }) => {
+  const [tags, setTags] = useState(Array(tagOptions.length).fill(false));
+  const [motif, setMotif] = useState(
+    Math.max(
+      ...data
+        .map((d) => d?.pathogenic_motif_reference_orientation.length || 0)
+        .filter(Boolean),
+    ),
+  );
+
+  const [inheritance, setInheritance] = useState("all");
+  const [search, setSearch] = useState("");
+
+  /** derive some props at load time */
+  const derivedData = data.map((d) => ({
+    ...d,
+    tags: [
+      ...(d.tags ?? []),
+      new Date().getFullYear() - d.Year < 3 && "new",
+    ].filter(Boolean),
+  }));
+
+  const filteredData = derivedData
+    /** filter data */
+    .filter(
+      (d) =>
+        /** free text search */
+        getValues(d).join(" ").match(new RegExp(search.trim(), "i")) &&
+        /** tags */
+        (tags.filter(Boolean).length
+          ? tagOptions
+              .filter((_, index) => tags[index])
+              .every(({ value }) => d.tags.includes(value))
+          : true) &&
+        /** motif */
+        d.pathogenic_motif_reference_orientation.length <=
+          (motif || Infinity) &&
+        /** inheritance */
+        (inheritance === "all" || d.Inheritance === inheritance),
+    );
+
+  const inheritanceOptions = [{ value: "all", label: "All" }].concat(
+    /** unique inheritance values */
+    [...new Set(derivedData.map((d) => d.Inheritance))]
+      .filter(Boolean)
+      .map((inheritance) => ({
+        value: inheritance,
+        label: inheritance,
+      })),
+  );
+
+  return (
+    <>
+      <div className={classes.filters}>
+        <input
+          placeholder="Search"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+        />
+        <div className={classes["filter-row"]}>
+          {tagOptions.map(({ value, icon }, index) => (
+            <CheckBox
+              key={index}
+              label={
+                <>
+                  {icon}
+                  {capitalize(value)}
+                </>
+              }
+              value={tags[index]}
+              onChange={(value) => {
+                const newTags = [...tags];
+                newTags[index] = value;
+                setTags(newTags);
+              }}
+            />
+          ))}
+        </div>
+        <NumberBox
+          label="Max motif length"
+          value={motif}
+          onChange={setMotif}
+          min={1}
+          max={100}
+        />
+        <div>
+          <Select
+            label="Inheritance"
+            value={inheritance}
+            onChange={setInheritance}
+            options={inheritanceOptions}
+          />
+        </div>
+      </div>
+
+      <TableComponent cols={cols} rows={filteredData} />
+    </>
+  );
+};
 
 export default Table;
