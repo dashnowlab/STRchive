@@ -18,6 +18,76 @@ const { gene } = Astro.params;
 
 /** look up full data entry from gene name  */
 const d = deriveDatum(data.find((entry) => entry.gene === gene));
+
+/** list of identifiers */
+const identifiers = [
+  {
+    key: "OMIM",
+    name: "OMIM",
+    link: "https://omim.org/entry/$ID",
+    Icon: FaDisease,
+  },
+  {
+    key: "Mondo",
+    name: "Mondo",
+    link: "https://purl.obolibrary.org/obo/MONDO_$ID",
+    Icon: FaDisease,
+  },
+  {
+    key: "MedGen",
+    name: "MedGen",
+    link: "https://www.ncbi.nlm.nih.gov/medgen/?term=$ID",
+    Icon: FaBookMedical,
+  },
+  {
+    key: "Orphanet",
+    name: "Orphanet",
+    link: "https://www.orpha.net/en/disease/detail/$ID",
+    Icon: FaPills,
+  },
+  {
+    key: "GARD",
+    name: "GARD",
+    link: "https://rarediseases.info.nih.gov/diseases/$ID/index",
+    Icon: FaDna,
+  },
+  {
+    key: "GeneReviews",
+    name: "GeneReviews",
+    link: "https://www.ncbi.nlm.nih.gov/books/$ID",
+    Icon: FaDna,
+  },
+  {
+    key: "gnomAD_gene",
+    name: "gnomAD",
+    link: "https://gnomad.broadinstitute.org/short-tandem-repeat/$ID?dataset=gnomad_r4",
+    Icon: FaDna,
+  },
+  {
+    key: "STRipy_gene",
+    name: "STRipy",
+    link: "https://stripy.org/database/$ID",
+    Icon: FaDna,
+  },
+  {
+    key: "WebSTR_hg38",
+    name: "WebSTR hg38",
+    link: "https://webstr.ucsd.edu/search?genome=hg38&query=$ID",
+    Icon: FaDna,
+  },
+  {
+    key: "WebSTR_hg19",
+    name: "WebSTR hg19",
+    link: "https://webstr.ucsd.edu/search?genome=hg19&query=$ID",
+    Icon: FaDna,
+  },
+]
+  .map(({ key, link, ...rest }) => ({
+    ...rest,
+    value: d[key],
+    link: link.replace("$ID", d[key]),
+  }))
+  .filter(({ value }) => value);
 ---
 
 <Layout title={d.gene}>
@@ -47,34 +117,15 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
     </div>
 
     <div class="identifiers">
-      <div class="identifier">
-        <FaDisease />
-        <span>Mondo</span>
-        <Link to={`https://purl.obolibrary.org/obo/MONDO_${d.Mondo}`}
-          >{d.Mondo}</Link
-        >
-      </div>
-      <div class="identifier">
-        <FaBookMedical />
-        <span>MedGen</span>
-        <Link to={`https://www.ncbi.nlm.nih.gov/medgen/?term=${d.MedGen}`}
-          >{d.MedGen}</Link
-        >
-      </div>
-      <div class="identifier">
-        <FaPills />
-        <span>Orphanet</span>
-        <Link to={`https://www.orpha.net/en/disease/detail/${d.Orphanet}`}
-          >{d.Orphanet}</Link
-        >
-      </div>
-      <div class="identifier">
-        <FaDna />
-        <span>GARD</span>
-        <Link to={`https://rarediseases.info.nih.gov/diseases/${d.GARD}/index`}
-          >{d.GARD}</Link
-        >
-      </div>
+      {
+        identifiers.map(({ name, value, Icon, link }) => (
+          <div class="identifier">
+            <Icon />
+            <span>{name}</span>
+            <Link to={link}>{value}</Link>
+          </div>
+        ))
+      }
     </div>
 
     <div class="tags">
