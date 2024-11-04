@@ -5,7 +5,7 @@ export const tagOptions = [
   {
     value: "conflicting",
     Icon: FaCircleExclamation,
-    color: "var(--error)",
+    color: "var(--secondary)",
   },
   {
     value: "new",
