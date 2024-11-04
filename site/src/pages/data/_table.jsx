@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
-import Error from "@/assets/error.svg?react";
-import Sparkle from "@/assets/sparkle.svg?react";
-import CheckBox from "@/components/Checkbox";
+import { BsStars } from "react-icons/bs";
+import { FaCircleExclamation } from "react-icons/fa6";
+import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
@@ -13,9 +13,14 @@ import classes from "./_table.module.css";
 const tagOptions = [
   {
     value: "conflicting",
-    icon: <Error className="error" aria-label="Conflicting evidence" />,
+    icon: (
+      <FaCircleExclamation
+        className="error"
+        aria-label="Conflicting evidence"
+      />
+    ),
   },
-  { value: "new", icon: <Sparkle className="success" aria-label="New" /> },
+  { value: "new", icon: <BsStars className="success" aria-label="New" /> },
 ];
 
 const cols = [
@@ -157,7 +162,7 @@ const Table = ({ data }) => {
           ))}
         </div>
         <NumberBox
-          label="Max motif length"
+          label="Motif max"
           value={motif}
           onChange={setMotif}
           min={1}

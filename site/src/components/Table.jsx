@@ -1,5 +1,14 @@
 import { useState } from "react";
 import {
+  FaAngleLeft,
+  FaAngleRight,
+  FaAnglesLeft,
+  FaAnglesRight,
+  FaSort,
+  FaSortDown,
+  FaSortUp,
+} from "react-icons/fa6";
+import {
   createColumnHelper,
   flexRender,
   getCoreRowModel,
@@ -11,13 +20,6 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import AngleLeft from "@/assets/angle-left.svg?react";
-import AngleRight from "@/assets/angle-right.svg?react";
-import AnglesLeft from "@/assets/angles-left.svg?react";
-import AnglesRight from "@/assets/angles-right.svg?react";
-import SortDown from "@/assets/sort-down.svg?react";
-import SortUp from "@/assets/sort-up.svg?react";
-import Sort from "@/assets/sort.svg?react";
 import { preserveScroll } from "@/util/dom";
 import Select from "./Select";
 import classes from "./Table.module.css";
@@ -125,10 +127,12 @@ const Table = ({ cols, rows, sort = undefined }) => {
                           )}
                         </span>
 
-                        {header.column.getIsSorted() === "asc" && <SortUp />}
-                        {header.column.getIsSorted() === "desc" && <SortDown />}
+                        {header.column.getIsSorted() === "asc" && <FaSortUp />}
+                        {header.column.getIsSorted() === "desc" && (
+                          <FaSortDown />
+                        )}
                         {header.column.getIsSorted() === false && (
-                          <Sort style={{ opacity: 0 }} />
+                          <FaSort style={{ opacity: 0 }} />
                         )}
                       </button>
                     )}
@@ -201,7 +205,7 @@ const Table = ({ cols, rows, sort = undefined }) => {
             disabled={!table.getCanPreviousPage()}
             aria-label="First page"
           >
-            <AnglesLeft />
+            <FaAnglesLeft />
           </button>
           <button
             type="button"
@@ -213,7 +217,7 @@ const Table = ({ cols, rows, sort = undefined }) => {
             disabled={!table.getCanPreviousPage()}
             aria-label="Previous page"
           >
-            <AngleLeft />
+            <FaAngleLeft />
           </button>
           <button
             type="button"
@@ -238,7 +242,7 @@ const Table = ({ cols, rows, sort = undefined }) => {
             disabled={!table.getCanNextPage()}
             aria-label="Next page"
           >
-            <AngleRight />
+            <FaAngleRight />
           </button>
           <button
             type="button"
@@ -250,7 +254,7 @@ const Table = ({ cols, rows, sort = undefined }) => {
             disabled={!table.getCanNextPage()}
             aria-label="Last page"
           >
-            <AnglesRight />
+            <FaAnglesRight />
           </button>
         </div>
       </div>

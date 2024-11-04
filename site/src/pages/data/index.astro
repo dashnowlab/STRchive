@@ -1,7 +1,6 @@
 ---
-import AnglesDown from "@/assets/angles-down.svg?react";
-import Download from "@/assets/download.svg?react";
-import GitHub from "@/assets/github.svg?react";
+import { FaAngleDown, FaGithub } from "react-icons/fa6";
+import { LuDownload } from "react-icons/lu";
 import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
 import Table from "./_table.jsx";
@@ -26,13 +25,13 @@ const processedData = data.map((d) => ({
 
     Jump to:
     <Link to="#downloads" className="button-secondary"
-      >Downloads<AnglesDown /></Link
+      >Downloads<FaAngleDown /></Link
     >
     <Link to="#all-loci" className="button-secondary"
-      >All Loci<AnglesDown /></Link
+      >All Loci<FaAngleDown /></Link
     >
     <Link to="#visual-overview" className="button-secondary"
-      >Visual Overview<AnglesDown /></Link
+      >Visual Overview<FaAngleDown /></Link
     >
   </section>
 
@@ -43,7 +42,7 @@ const processedData = data.map((d) => ({
       to="https://github.com/dashnowlab/STRchive/tree/main/data"
       className="button"
     >
-      <GitHub />Full Dataset
+      <FaGithub />Full Dataset
     </Link>
     <br />
     <br />
@@ -54,9 +53,10 @@ const processedData = data.map((d) => ({
     <br />
     <br />
 
-    <Link to={hg19defs} className="button" download>hg19<Download /></Link>
-    <Link to={hg38defs} className="button" download>hg38<Download /></Link>
-    <Link to={t2tdefs} className="button" download>T2T-chm13<Download /></Link>
+    <Link to={hg19defs} className="button" download>hg19<LuDownload /></Link>
+    <Link to={hg38defs} className="button" download>hg38<LuDownload /></Link>
+    <Link to={t2tdefs} className="button" download>T2T-chm13<LuDownload /></Link
+    >
   </section>
 
   <section>

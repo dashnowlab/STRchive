@@ -1,5 +1,5 @@
 ---
-import GitHub from "@/assets/github.svg?react";
+import { FaGithub } from "react-icons/fa6";
 import Logo from "@/assets/logo.svg?react";
 import Link from "@/components/Link";
 
@@ -41,7 +41,7 @@ const links = [
       className="nav-link"
       aria-label="GitHub"
     >
-      <GitHub />
+      <FaGithub />
     </Link>
   </nav>
 </header>
@@ -90,7 +90,6 @@ const links = [
   }
 
   .nav-link::after {
-    display: block;
     position: absolute;
     right: 0;
     bottom: 0;
