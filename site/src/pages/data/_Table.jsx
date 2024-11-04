@@ -22,6 +22,7 @@ const cols = [
   },
   {
     key: "tags",
+    name: "Tags",
     render: (cell) => {
       return tagOptions
         .filter(({ value }) => cell.includes(value))
