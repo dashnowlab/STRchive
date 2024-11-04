@@ -112,6 +112,7 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
         unit: d.repeatunitlen,
         notes: d[`notes_${assembly}`],
       }))}
+      showControls={false}
     />
   </section>
 
