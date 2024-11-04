@@ -76,8 +76,16 @@ h1,
 h2,
 h3,
 h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 2em 0 1em 0;
+  gap: 20px;
   font-weight: var(--bold);
+}
+
+:is(h1, h2, h3, h4) svg {
+  opacity: 0.25;
 }
 
 h1 {
@@ -315,19 +323,6 @@ td {
 .button-secondary:hover {
   background: var(--gray);
   color: var(--white);
-}
-
-.icon {
-  flex-shrink: 0;
-  height: 1.2em;
-}
-
-.success {
-  color: var(--success);
-}
-
-.error {
-  color: var(--error);
 }
 
 :not(html) ::-webkit-scrollbar {

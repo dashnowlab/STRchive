@@ -78,7 +78,7 @@ const Table = ({ cols, rows, sort = undefined }) => {
     autoResetPageIndex: true,
     columnResizeMode: "onChange",
     initialState: {
-      sorting: sort ?? [{ id: "2", desc: false }],
+      sorting: sort,
       pagination: {
         pageIndex: 0,
         pageSize: perPage,

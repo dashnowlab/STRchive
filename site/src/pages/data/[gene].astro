@@ -1,7 +1,11 @@
 ---
 import { FaBookMedical, FaDisease, FaDna, FaPills } from "react-icons/fa6";
 import Link from "@/components/Link";
+import Table from "@/components/Table";
 import Layout from "@/layouts/Layout.astro";
+import { capitalize } from "@/util/string";
+import { deriveDatum } from "./_derived";
+import { tagOptions } from "./_tags";
 import data from "../../../../data/STRchive-database.json";
 
 /** generate pages for each datum, paths based on gene name */
@@ -12,12 +16,12 @@ export const getStaticPaths = async () =>
 const { gene } = Astro.params;
 
 /** look up full data entry from gene name  */
-const d = data.find((entry) => entry.gene === gene);
+const d = deriveDatum(data.find((entry) => entry.gene === gene));
 ---
 
 <Layout title={d.gene}>
   <section>
-    <h1>{d.gene}</h1>
+    <h1><FaDna /> {d.gene}</h1>
 
     <div class="boxes">
       <div class="box">
@@ -63,6 +67,46 @@ const d = data.find((entry) => entry.gene === gene);
         <Link to={`https://some-link.org/?id=${d.GARD}`}>{d.GARD}</Link>
       </div>
     </div>
+
+    <div class="tags">
+      {
+        d.tags?.map((tag) => {
+          const { Icon, color } = tagOptions.find((t) => t.value === tag);
+          return (
+            <div class="tag" style={{ background: color }}>
+              <Icon />
+              {capitalize(tag)}
+            </div>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2>Locus</h2>
+
+    <Table
+      client:load
+      cols={[
+        { key: "assembly", name: "Assembly" },
+        { key: "chrom", name: "Chrom" },
+        { key: "start", name: "Start" },
+        { key: "stop", name: "Stop" },
+        { key: "full", name: "Full" },
+        { key: "unit", name: "Unit" },
+        { key: "notes", name: "Notes" },
+      ]}
+      rows={["hg19", "hg38", "t2t"].map((assembly) => ({
+        assembly,
+        chrom: d.chrom,
+        start: d[`start_${assembly}`],
+        stop: d[`start_${assembly}`],
+        full: `${d.chrom}:${d[`start_${assembly}`]}-${d[`stop_${assembly}`]}`,
+        unit: d.repeatunitlen,
+        notes: d[`notes_${assembly}`],
+      }))}
+    />
   </section>
 
   <section>
@@ -127,6 +171,23 @@ const d = data.find((entry) => entry.gene === gene);
 
   .identifier span {
     font-weight: var(--bold);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 999px;
+    color: var(--white);
   }
 
   .table {

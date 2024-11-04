@@ -3,20 +3,14 @@ import { FaAngleDown, FaGithub } from "react-icons/fa6";
 import { LuDownload } from "react-icons/lu";
 import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
-import Table from "./_table.jsx";
+import { deriveDatum } from "@/pages/data/_derived";
+import Table from "./_Table";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
 import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
 import data from "../../../../data/STRchive-database.json";
 import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?url";
 
-const processedData = data.map((d) => ({
-  ...d,
-  position_hg38: `${d.chrom}:${d.start_hg38}-${d.stop_hg38}`,
-  tags: [
-    ...(d.tags ?? []),
-    d.details?.match(/conflict/i) && "conflicting",
-  ].filter(Boolean),
-}));
+const derivedData = data.map(deriveDatum);
 ---
 
 <Layout title="Data">
@@ -62,7 +56,7 @@ const processedData = data.map((d) => ({
   <section>
     <h2 id="all-loci">All Loci</h2>
 
-    <Table client:load data={processedData} />
+    <Table client:load data={derivedData} />
   </section>
 
   <section>
