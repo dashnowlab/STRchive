@@ -49,22 +49,22 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
     <div class="identifiers">
       <div class="identifier">
         <FaDisease />
-        <span>Mondo:</span>
+        <span>Mondo</span>
         <Link to={`https://some-link.org/?id=${d.Mondo}`}>{d.Mondo}</Link>
       </div>
       <div class="identifier">
         <FaBookMedical />
-        <span>MedGen:</span>
+        <span>MedGen</span>
         <Link to={`https://some-link.org/?id=${d.MedGen}`}>{d.MedGen}</Link>
       </div>
       <div class="identifier">
         <FaPills />
-        <span>Orphanet:</span>
+        <span>Orphanet</span>
         <Link to={`https://some-link.org/?id=${d.Orphanet}`}>{d.Orphanet}</Link>
       </div>
       <div class="identifier">
         <FaDna />
-        <span>GARD:</span>
+        <span>GARD</span>
         <Link to={`https://some-link.org/?id=${d.GARD}`}>{d.GARD}</Link>
       </div>
     </div>
