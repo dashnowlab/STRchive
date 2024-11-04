@@ -88,7 +88,6 @@ const Table = ({ cols, rows, sort = undefined }) => {
 
   return (
     <>
-      {table.getRowCount().toLocaleString()} rows
       <div className={classes.scroll}>
         {/* table */}
         <table
@@ -192,6 +191,8 @@ const Table = ({ cols, rows, sort = undefined }) => {
             preserveScroll(event.currentTarget);
           }}
         />
+
+        <span>{table.getRowCount().toLocaleString()} rows</span>
 
         {/* pagination */}
         <div className={classes["control-row"]}>

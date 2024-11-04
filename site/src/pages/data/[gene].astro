@@ -3,6 +3,7 @@ import { FaBookMedical, FaDisease, FaDna, FaPills } from "react-icons/fa6";
 import Link from "@/components/Link";
 import Table from "@/components/Table";
 import Layout from "@/layouts/Layout.astro";
+import { lerp } from "@/util/math";
 import { capitalize } from "@/util/string";
 import { deriveDatum } from "./_derived";
 import { tagOptions } from "./_tags";
@@ -71,10 +72,15 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
     <div class="tags">
       {
         d.tags?.map((tag) => {
-          const { Icon, color } = tagOptions.find((t) => t.value === tag);
+          const option = tagOptions.find((t) => t.value === tag);
+          if (!option) return tag;
+          const { Icon, color } = option;
           return (
-            <div class="tag" style={{ background: color }}>
-              <Icon />
+            <div
+              class="tag"
+              style={{ background: `color-mix(in srgb, white, 25% ${color})` }}
+            >
+              <Icon style={{ color }} />
               {capitalize(tag)}
             </div>
           );
@@ -110,17 +116,140 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
   </section>
 
   <section>
-    <details>
-      <summary>Raw datum</summary>
-      <div class="table">
-        {
-          Object.entries(d)
-            .flat()
-            .map((entry) => <div>{entry}</div>)
-        }
+    <h2>Alleles</h2>
+
+    <div class="boxes">
+      <div class="box">
+        <div>Most</div>
+        <div>{d.reference_motif_reference_orientation}</div>
       </div>
-    </details>
+      <div class="box">
+        <div>Patho. Motif (ref.)</div>
+        <div>{d.pathogenic_motif_reference_orientation}</div>
+      </div>
+      <div class="box">
+        <div>Patho. Motif (gene.)</div>
+        <div>{d.pathogenic_motif_gene_orientation}</div>
+      </div>
+    </div>
+
+    {
+      () => {
+        /** get allele values */
+        let { normal_min, normal_max, pathogenic_min, pathogenic_max } = d;
+
+        /** all values */
+        const minMaxes = [
+          normal_min,
+          normal_max,
+          pathogenic_min,
+          pathogenic_max,
+        ];
+        if (!minMaxes.every(Boolean)) return "";
+
+        /** size in svg units */
+        const width = 200;
+        const height = 50;
+        const fontSize = 7;
+        const row1 = height * 0.3;
+        const row2 = height * 0.7;
+
+        /** map value to svg units */
+        const min = Math.min(...minMaxes);
+        const max = Math.max(...minMaxes);
+        const scale = (value) =>
+          lerp(value, min, max, fontSize * 2, width - fontSize * 2);
+        normal_min = scale(normal_min);
+        normal_max = scale(normal_max);
+        pathogenic_min = scale(pathogenic_min);
+        pathogenic_max = scale(pathogenic_max);
+
+        const makeCaret = (x, y, sign) =>
+          [
+            "M",
+            x,
+            y - fontSize * 0.25,
+            "l",
+            sign * fontSize * 0.5,
+            -fontSize * 0.5,
+            "h",
+            -sign * fontSize * 0.5,
+            "z",
+          ].join(" ");
+
+        return (
+          <svg class="alleles" style={{ fontSize: fontSize + "px" }}>
+            <path
+              fill="none"
+              stroke="black"
+              d={`M 0 0 L 0 ${height} L ${width} ${height}`}
+            />
+
+            <g text-anchor="end" dominant-baseline="central">
+              <text x={-fontSize * 0.5} y={row1}>
+                Benign
+              </text>
+              <text x={-fontSize * 0.5} y={row2}>
+                Pathogenic
+              </text>
+            </g>
+
+            <text
+              x={width / 2}
+              y={height + fontSize * 0.5}
+              text-anchor="middle"
+              dominant-baseline="hanging"
+            >
+              Units
+            </text>
+
+            <rect
+              fill="var(--primary)"
+              x={normal_min}
+              y={row1 - fontSize * 0.25}
+              width={normal_max - normal_min}
+              height={fontSize * 0.5}
+            />
+
+            <rect
+              fill="var(--secondary)"
+              x={pathogenic_min}
+              y={row2 - fontSize * 0.25}
+              width={pathogenic_max - pathogenic_min}
+              height={fontSize * 0.5}
+            />
+
+            <path d={makeCaret(normal_min, row1, -1)} />
+            <path d={makeCaret(normal_max, row1, 1)} />
+            <path d={makeCaret(pathogenic_min, row2, -1)} />
+            <path d={makeCaret(pathogenic_max, row2, 1)} />
+
+            <text x={normal_min} y={row1 - fontSize * 1} text-anchor="end">
+              {d.normal_min.toLocaleString()}&nbsp;
+            </text>
+            <text x={normal_max} y={row1 - fontSize * 1}>
+              &nbsp;{d.normal_max.toLocaleString()}
+            </text>
+            <text x={pathogenic_min} y={row2 - fontSize * 1} text-anchor="end">
+              {d.pathogenic_min.toLocaleString()}&nbsp;
+            </text>
+            <text x={pathogenic_max} y={row2 - fontSize * 1}>
+              &nbsp;{d.pathogenic_max.toLocaleString()}
+            </text>
+          </svg>
+        );
+      }
+    }
+    <script>
+      import { fitViewBox } from "@/util/dom";
+
+      fitViewBox(document.querySelector(".alleles"), 5);
+    </script>
   </section>
+
+  <script define:vars={{ d }}>
+    console.debug(d);
+  </script>
 </Layout>
 
 <style>
@@ -147,6 +276,7 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
   }
 
   .box > :not(:first-child) {
+    font-weight: var(--medium);
     font-size: 1.1rem;
   }
 
@@ -187,27 +317,12 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
     padding: 5px 10px;
     gap: 5px;
     border-radius: 999px;
-    color: var(--white);
   }
 
-  .table {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
-    overflow-wrap: anywhere;
-  }
-
-  .table > :nth-child(odd) {
-    color: var(--gray);
-    text-align: right;
-  }
-
-  .table > :nth-child(even) {
-    text-align: left;
-  }
-
-  .table > :global(:nth-child(even):empty::before) {
-    content: "-";
-    color: var(--gray);
+  .alleles {
+    max-width: 100%;
+    height: 200px;
+    margin: 20px 0;
+    overflow: visible;
   }
 </style>

@@ -1,10 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" fill="none">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 450 100"
+  fill="none"
+  data-logo=""
+>
   <style>
-    svg[data-animated] {
+    [data-logo][data-animated] {
       --duration: 3s;
     }
 
-    path {
+    [data-logo] path {
       --delay: 0;
       animation: draw var(--duration) calc(var(--delay) * var(--duration)) ease
         both;
@@ -17,7 +22,7 @@
       }
     }
 
-    text {
+    [data-logo] text {
       --delay: 0;
       animation: text var(--duration) calc(var(--delay) * var(--duration)) ease
         both;

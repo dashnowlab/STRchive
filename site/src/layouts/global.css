@@ -8,9 +8,6 @@
   --primary: hsl(190, 60%, 45%);
   --secondary: hsl(5, 70%, 60%);
 
-  --success: var(--primary);
-  --error: var(--secondary);
-
   --content: 1000px;
   --rounded: 10px;
   --fast: 0.25s ease;
@@ -22,6 +19,7 @@
 
   --thin: 200;
   --regular: 400;
+  --medium: 500;
   --bold: 600;
 
   font-size: 13pt;
