@@ -1,4 +1,6 @@
 ---
+import { FaBookMedical, FaDisease, FaDna, FaPills } from "react-icons/fa6";
+import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
 import data from "../../../../data/STRchive-database.json";
 
@@ -15,44 +17,85 @@ const d = data.find((entry) => entry.gene === gene);
 
 <Layout title={d.gene}>
   <section>
-    <h1>{d.disease}</h1>
+    <h1>{d.gene}</h1>
 
-    <div class="box">
-      <div>ID</div>
-      <div>{d.disease_id}</div>
+    <div class="boxes">
+      <div class="box">
+        <div>Disease</div>
+        <div>{d.disease}</div>
+      </div>
+
+      <div class="box">
+        <div>Disease ID</div>
+        <div>{d.disease_id}</div>
+      </div>
+
+      <div class="box">
+        <div>Inheritance</div>
+        <div>{d.Inheritance}</div>
+      </div>
+
+      <div class="box">
+        <div>Age of Onset</div>
+        <div>{d.age_onset_min} &ndash; {d.age_onset_max}</div>
+      </div>
     </div>
 
-    <div class="box">
-      <div>Inheritance</div>
-      <div>{d.Inheritance}</div>
-    </div>
-
-    <div class="box">
-      <div>Age of Onset</div>
-      <div>{d.age_onset_min} &ndash; {d.age_onset_max}</div>
+    <div class="identifiers">
+      <div class="identifier">
+        <FaDisease />
+        <span>Mondo:</span>
+        <Link to={`https://some-link.org/?id=${d.Mondo}`}>{d.Mondo}</Link>
+      </div>
+      <div class="identifier">
+        <FaBookMedical />
+        <span>MedGen:</span>
+        <Link to={`https://some-link.org/?id=${d.MedGen}`}>{d.MedGen}</Link>
+      </div>
+      <div class="identifier">
+        <FaPills />
+        <span>Orphanet:</span>
+        <Link to={`https://some-link.org/?id=${d.Orphanet}`}>{d.Orphanet}</Link>
+      </div>
+      <div class="identifier">
+        <FaDna />
+        <span>GARD:</span>
+        <Link to={`https://some-link.org/?id=${d.GARD}`}>{d.GARD}</Link>
+      </div>
     </div>
   </section>
 
   <section>
-    <div class="table">
-      {
-        Object.entries(d)
-          .flat()
-          .map((entry) => <div>{entry}</div>)
-      }
-    </div>
+    <details>
+      <summary>Raw datum</summary>
+      <div class="table">
+        {
+          Object.entries(d)
+            .flat()
+            .map((entry) => <div>{entry}</div>)
+        }
+      </div>
+    </details>
   </section>
 </Layout>
 
 <style>
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+  }
+
   .box {
     display: inline-flex;
     flex-direction: column;
-    margin: 10px;
     padding: 10px 20px;
     gap: 5px;
     border-radius: var(--rounded);
     background: var(--light-gray);
+    overflow-wrap: anywhere;
   }
 
   .box > :first-child {
@@ -61,6 +104,29 @@ const d = data.find((entry) => entry.gene === gene);
 
   .box > :not(:first-child) {
     font-size: 1.1rem;
+  }
+
+  .identifiers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px 40px;
+  }
+
+  .identifier {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .identifier svg {
+    color: var(--gray);
+  }
+
+  .identifier span {
+    font-weight: var(--bold);
   }
 
   .table {
