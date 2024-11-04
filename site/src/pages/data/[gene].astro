@@ -50,22 +50,30 @@ const d = deriveDatum(data.find((entry) => entry.gene === gene));
       <div class="identifier">
         <FaDisease />
         <span>Mondo</span>
-        <Link to={`https://some-link.org/?id=${d.Mondo}`}>{d.Mondo}</Link>
+        <Link to={`http://purl.obolibrary.org/obo/MONDO_${d.Mondo}`}
+          >{d.Mondo}</Link
+        >
       </div>
       <div class="identifier">
         <FaBookMedical />
         <span>MedGen</span>
-        <Link to={`https://some-link.org/?id=${d.MedGen}`}>{d.MedGen}</Link>
+        <Link to={`https://www.ncbi.nlm.nih.gov/medgen/?term=${d.MedGen}`}
+          >{d.MedGen}</Link
+        >
       </div>
       <div class="identifier">
         <FaPills />
         <span>Orphanet</span>
-        <Link to={`https://some-link.org/?id=${d.Orphanet}`}>{d.Orphanet}</Link>
+        <Link to={`https://www.orpha.net/en/disease/detail/${d.Orphanet}`}
+          >{d.Orphanet}</Link
+        >
       </div>
       <div class="identifier">
         <FaDna />
         <span>GARD</span>
-        <Link to={`https://some-link.org/?id=${d.GARD}`}>{d.GARD}</Link>
+        <Link to={`https://rarediseases.info.nih.gov/diseases/${d.GARD}/index`}
+          >{d.GARD}</Link
+        >
       </div>
     </div>
 
