@@ -347,6 +347,11 @@ td {
   font-size: 1rem;
 }
 
+.big-icon {
+  width: unset;
+  height: 1.2em;
+}
+
 .tippy-arrow {
   z-index: 99;
   color: var(--dark-gray);
