@@ -307,6 +307,11 @@ td {
   color: var(--white);
 }
 
+.button > * {
+  top: 0;
+  margin: 0;
+}
+
 .button-secondary {
   display: inline-flex;
   align-items: center;
@@ -326,6 +331,11 @@ td {
 .button-secondary:hover {
   background: var(--gray);
   color: var(--white);
+}
+
+.button-secondary > * {
+  top: 0;
+  margin: 0;
 }
 
 .tippy-box {
