@@ -26,11 +26,10 @@ const cols = [
     render: (cell) => {
       return tagOptions
         .filter(({ value }) => cell.includes(value))
-        .map(({ Icon, color }, index) => (
-          <Icon key={index} style={{ color }} />
+        .map(({ Icon, color, tooltip }, index) => (
+          <Icon key={index} style={{ color }} data-tooltip={tooltip} />
         ));
     },
-    sortable: false,
   },
   {
     key: "gene",
@@ -74,14 +73,14 @@ const cols = [
 ];
 
 const Table = ({ data }) => {
-  const [tags, setTags] = useState(Array(tagOptions.length).fill(false));
-  const [motif, setMotif] = useState(
-    Math.max(
-      ...data
-        .map((d) => d?.pathogenic_motif_reference_orientation.length || 0)
-        .filter(Boolean),
-    ),
+  const maxMotif = Math.max(
+    ...data
+      .map((d) => d?.pathogenic_motif_reference_orientation.length || 0)
+      .filter(Boolean),
   );
+
+  const [tags, setTags] = useState(Array(tagOptions.length).fill(false));
+  const [motif, setMotif] = useState(maxMotif);
 
   const [inheritance, setInheritance] = useState("all");
   const [search, setSearch] = useState("");
@@ -123,7 +122,7 @@ const Table = ({ data }) => {
           onChange={(event) => setSearch(event.target.value)}
         />
         <div className={classes["filter-row"]}>
-          {tagOptions.map(({ value, Icon, color }, index) => (
+          {tagOptions.map(({ value, Icon, color, tooltip }, index) => (
             <CheckBox
               key={index}
               label={
@@ -138,6 +137,7 @@ const Table = ({ data }) => {
                 newTags[index] = value;
                 setTags(newTags);
               }}
+              tooltip={tooltip}
             />
           ))}
         </div>
@@ -146,7 +146,7 @@ const Table = ({ data }) => {
           value={motif}
           onChange={setMotif}
           min={1}
-          max={100}
+          max={maxMotif}
         />
         <div>
           <Select

@@ -166,6 +166,10 @@ a:hover {
   color: currentColor;
 }
 
+[title] {
+  cursor: help;
+}
+
 button,
 select {
   display: inline-flex;
@@ -322,6 +326,24 @@ td {
 .button-secondary:hover {
   background: var(--gray);
   color: var(--white);
+}
+
+.tippy-box {
+  max-width: 350px;
+  padding: 10px 15px;
+  border-radius: var(--rounded);
+  background: var(--dark-gray);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.tippy-arrow {
+  z-index: 99;
+  color: var(--dark-gray);
+}
+
+.tippy-content {
+  padding: 0;
 }
 
 :not(html) ::-webkit-scrollbar {

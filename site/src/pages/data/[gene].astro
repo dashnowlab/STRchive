@@ -1,7 +1,6 @@
 ---
 import { FaBookMedical, FaDisease, FaDna, FaPills } from "react-icons/fa6";
 import Link from "@/components/Link";
-import Table from "@/components/Table";
 import Layout from "@/layouts/Layout.astro";
 import { lerp } from "@/util/math";
 import { capitalize } from "@/util/string";
@@ -122,7 +121,9 @@ const identifiers = [
           <div class="identifier">
             <Icon />
             <span>{name}</span>
-            <Link to={link}>{value}</Link>
+            {value.map((value) => (
+              <Link to={link}>{value}</Link>
+            ))}
           </div>
         ))
       }
@@ -138,6 +139,7 @@ const identifiers = [
             <div
               class="tag"
               style={{ background: `color-mix(in srgb, white, 25% ${color})` }}
+              data-tooltip={option.tooltip}
             >
               <Icon style={{ color }} />
               {capitalize(tag)}
@@ -151,44 +153,32 @@ const identifiers = [
   <section>
     <h2>Locus</h2>
 
-    <Table
-      client:load
-      cols={[
-        { key: "assembly", name: "Assembly" },
-        { key: "chrom", name: "Chrom" },
-        { key: "start", name: "Start" },
-        { key: "stop", name: "Stop" },
-        { key: "full", name: "Full" },
-        { key: "unit", name: "Unit" },
-        { key: "notes", name: "Notes" },
-      ]}
-      rows={["hg19", "hg38", "t2t"].map((assembly) => ({
-        assembly,
-        chrom: d.chrom,
-        start: d[`start_${assembly}`],
-        stop: d[`start_${assembly}`],
-        full: `${d.chrom}:${d[`start_${assembly}`]}-${d[`stop_${assembly}`]}`,
-        unit: d.repeatunitlen,
-        notes: d[`notes_${assembly}`],
-      }))}
-      showControls={false}
-    />
-  </section>
+    <div class="boxes">
+      {
+        ["hg19", "hg38", "t2t"].map((assembly) => (
+          <div class="box">
+            <div>{assembly}</div>
+            <div>
+              {d.chrom}:{d[`start_${assembly}`]}-{d[`stop_${assembly}`]}
+            </div>
+          </div>
+        ))
+      }
+    </div>
 
-  <section>
     <h2>Alleles</h2>
 
     <div class="boxes">
-      <div class="box">
-        <div>Most</div>
+      <div class="box" data-tooltip="Reference motif, reference orientation">
+        <div>Ref. Motif</div>
         <div>{d.reference_motif_reference_orientation}</div>
       </div>
-      <div class="box">
-        <div>Patho. Motif (ref.)</div>
+      <div class="box" data-tooltip="Pathogenic motif, reference orientation">
+        <div>Pathogenic (ref.)</div>
         <div>{d.pathogenic_motif_reference_orientation}</div>
       </div>
-      <div class="box">
-        <div>Patho. Motif (gene.)</div>
+      <div class="box" data-tooltip="Pathogenic motif, gene orientation">
+        <div>Pathogenic (gene)</div>
         <div>{d.pathogenic_motif_gene_orientation}</div>
       </div>
     </div>

@@ -6,10 +6,12 @@ export const tagOptions = [
     value: "conflicting",
     Icon: FaCircleExclamation,
     color: "var(--secondary)",
+    tooltip: "Conflicting evidence"
   },
   {
     value: "new",
     Icon: BsStars,
     color: `var(--primary)`,
+    tooltip: "Relatively new"
   },
 ];
