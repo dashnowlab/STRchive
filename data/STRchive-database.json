@@ -4103,7 +4103,7 @@
         "flank_motif":null,
         "locus_structure":"(GCN)*",
         "inheritance":[
-            "AD/AR"
+            "AD", "AR"
         ],
         "type":"Coding",
         "location_in_gene":"Exon 1",
