@@ -75,9 +75,13 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
       <div class="box">
         <div>Inheritance</div>
-        <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/"
-          >{getInheritance(d.Inheritance)}</Link
-        >
+        {
+          d.Inheritance.split("/").map((inheritance) => (
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+              {getInheritance(inheritance)}
+            </Link>
+          ))
+        }
       </div>
     </div>
 
@@ -229,6 +233,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   .boxes {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
     margin: 40px 0;
     gap: 20px;
