@@ -10,6 +10,3 @@ export const deriveDatum = (d) => ({
     new Date().getFullYear() - d.year < 3 && "new",
   ].filter(Boolean),
 });
-
-/** get unique values */
-export const getUnique = (data) => uniq(data).filter(Boolean);

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { map } from "lodash-es";
+import { map, uniq } from "lodash-es";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
@@ -7,7 +7,7 @@ import Select from "@/components/Select";
 import TableComponent from "@/components/Table";
 import { getValues } from "@/util/object";
 import { capitalize } from "@/util/string";
-import { deriveDatum, getUnique } from "./_derived";
+import { deriveDatum } from "./_derived";
 import classes from "./_Table.module.css";
 import { tagOptions } from "./_tags";
 
@@ -118,11 +118,11 @@ const Table = ({ data }) => {
           (m) => m.length <= (motif || Infinity),
         ) &&
         /** inheritance */
-        (inheritance === "all" || d.Inheritance === inheritance),
+        (inheritance === "all" || d.inheritance.includes(inheritance)),
     );
 
   const inheritanceOptions = [{ value: "all", label: "All" }].concat(
-    getUnique(map(derivedData, "inheritance")).map((inheritance) => ({
+    uniq(map(derivedData, "inheritance").flat()).map((inheritance) => ({
       value: inheritance,
       label: inheritance,
     })),
