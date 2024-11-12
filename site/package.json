@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "prettier **/*.{astro,js,jsx,ts,mdx,mjs,module.css,css,html,md} --write --no-error-on-unmatched-pattern"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.8",

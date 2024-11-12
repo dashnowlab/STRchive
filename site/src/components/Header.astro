@@ -7,7 +7,7 @@ const path = Astro.url.pathname;
 
 const links = [
   { to: "/", name: "Home" },
-  { to: "/data", name: "Data" },
+  { to: "/loci", name: "Loci" },
   { to: "/resources", name: "Resources" },
   { to: "/about", name: "About" },
 ];
@@ -40,9 +40,8 @@ const links = [
       to="https://github.com/dashnowlab/STRchive"
       className="nav-link"
       aria-label="GitHub"
-      noIcon
     >
-      <FaGithub className="big-icon"/>
+      <FaGithub className="big-icon" />
     </Link>
   </nav>
 </header>

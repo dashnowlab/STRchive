@@ -9,11 +9,12 @@ export const preserveScroll = async (element) => {
 };
 
 /** fit svg viewbox to content */
-export const fitViewBox = (element, padding) => {
+export const fitViewBox = (element, padding = 0) => {
   let { x, y, width, height } = element.getBBox();
   x -= padding;
   y -= padding;
   width += 2 * padding;
   height += 2 * padding;
   element.setAttribute("viewBox", [x, y, width, height].join(" "));
+  return { x, y, width, height };
 };

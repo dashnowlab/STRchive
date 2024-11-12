@@ -1,9 +1,10 @@
 ---
 import { FaAngleDown, FaGithub } from "react-icons/fa6";
+import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
 import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
-import { deriveDatum } from "@/pages/data/_derived";
+import { deriveDatum } from "@/pages/loci/_derived";
 import Table from "./_Table";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
 import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
@@ -13,9 +14,9 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
 const derivedData = data.map(deriveDatum);
 ---
 
-<Layout title="Data">
+<Layout title="Loci">
   <section>
-    <h1>Data</h1>
+    <h1><LiaBarcodeSolid />Loci</h1>
 
     Jump to:
     <Link to="#downloads" className="button-secondary"
@@ -35,7 +36,6 @@ const derivedData = data.map(deriveDatum);
     <Link
       to="https://github.com/dashnowlab/STRchive/tree/main/data"
       className="button"
-      noIcon
     >
       <FaGithub />Full Dataset
     </Link>
@@ -55,15 +55,20 @@ const derivedData = data.map(deriveDatum);
   </section>
 
   <section>
-    <h2 id="all-loci">All Loci</h2>
+    <h2 id="table">Table</h2>
+
+    <p class="center">
+      Comprehensive table of tandem repeat loci associated with Mendelian
+      disease.
+    </p>
 
     <Table client:load data={derivedData} />
   </section>
 
   <section>
-    <h2 id="visual-overview">Visual Overview</h2>
+    <h2 id="plots">Plots</h2>
 
-    <p class="center">The data, at a high level.</p>
+    <p class="center">High level, visual overview of loci.</p>
 
     <div class="plot-container">
       <div class="plots">

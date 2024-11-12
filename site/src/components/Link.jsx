@@ -3,6 +3,7 @@ import classes from "./Link.module.css";
 
 const Link = ({ to, noIcon = false, children, ...props }) => {
   const external = !!to.match(/^(https|http|ftp|mailto)/);
+
   return (
     <a
       href={to}
@@ -10,11 +11,7 @@ const Link = ({ to, noIcon = false, children, ...props }) => {
       {...props}
     >
       {children}
-      {external && !noIcon ? (
-        <FaExternalLinkAlt className={classes.icon} />
-      ) : (
-        <></>
-      )}
+      {external && !noIcon && <FaExternalLinkAlt className={classes.icon} />}
     </a>
   );
 };

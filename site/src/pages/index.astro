@@ -1,8 +1,8 @@
 ---
+import { FaNewspaper, FaTableList } from "react-icons/fa6";
 import Logo from "@/assets/logo.svg?react";
 import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
-import { FaBoxOpen, FaNewspaper } from "react-icons/fa6";
 ---
 
 <Layout title="Home">
@@ -19,13 +19,12 @@ import { FaBoxOpen, FaNewspaper } from "react-icons/fa6";
     </p>
 
     <div class="center">
-      <Link to="/data" className="button">
-        Data<FaBoxOpen className="big-icon" />
+      <Link to="/loci" className="button">
+        Loci<FaTableList className="big-icon" />
       </Link>
       <Link
         to="https://www.medrxiv.org/content/10.1101/2024.05.21.24307682v1"
         className="button"
-        noIcon
       >
         Preprint<FaNewspaper className="big-icon" />
       </Link>

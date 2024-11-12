@@ -1,4 +1,5 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
+import { map } from "lodash-es";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
@@ -6,15 +7,15 @@ import Select from "@/components/Select";
 import TableComponent from "@/components/Table";
 import { getValues } from "@/util/object";
 import { capitalize } from "@/util/string";
-import { deriveDatum, getUniqueInheritance } from "./_derived";
+import { deriveDatum, getUnique } from "./_derived";
 import classes from "./_Table.module.css";
 import { tagOptions } from "./_tags";
 
 const cols = [
   {
-    key: "gene",
+    key: "id",
     render: (cell) => (
-      <Link to={`/data/${cell}`} className="button">
+      <Link to={`/loci/${cell}`} className="button">
         View
       </Link>
     ),
@@ -57,14 +58,20 @@ const cols = [
   {
     key: "pathogenic_motif_reference_orientation",
     name: "Motif",
-    render: (cell) =>
-      cell.match(/.{1,5}/g).map((part, index) => (
-        <Fragment key={index}>
-          {part}
-          <wbr />
-        </Fragment>
-      )),
-    attrs: { width: "100px" },
+    render: (cell) => (
+      <div
+        data-tooltip={cell}
+        style={{
+          display: "inline-block",
+          maxWidth: "80px",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          textOverflow: "ellipsis",
+        }}
+      >
+        {cell}
+      </div>
+    ),
   },
   {
     key: "Inheritance",
@@ -107,7 +114,7 @@ const Table = ({ data }) => {
     );
 
   const inheritanceOptions = [{ value: "all", label: "All" }].concat(
-    getUniqueInheritance(derivedData).map((inheritance) => ({
+    getUnique(map(derivedData, "inheritance")).map((inheritance) => ({
       value: inheritance,
       label: inheritance,
     })),

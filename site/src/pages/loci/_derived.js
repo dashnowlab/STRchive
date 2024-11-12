@@ -1,4 +1,4 @@
-import { mapValues } from "lodash-es";
+import { mapValues, uniq } from "lodash-es";
 
 /** derive/compute some props from existing props on datum  */
 export const deriveDatum = (d) =>
@@ -29,6 +29,5 @@ export const deriveDatum = (d) =>
         : value,
   );
 
-/** get unique inheritance values */
-export const getUniqueInheritance = (data) =>
-  [...new Set(data.map((d) => d.Inheritance))].filter(Boolean);
+/** get unique values */
+export const getUnique = (data) => uniq(data).filter(Boolean);

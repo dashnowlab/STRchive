@@ -4,3 +4,7 @@
   margin-left: 0.1em;
   scale: 0.75;
 }
+
+.icon:not(:only-child) {
+  display: none;
+}
