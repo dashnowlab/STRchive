@@ -1,7 +1,7 @@
 :root {
   --black: hsl(280, 5%, 0%);
   --dark-gray: hsl(280, 5%, 20%);
-  --gray: hsl(280, 5%, 60%);
+  --gray: hsl(280, 5%, 50%);
   --light-gray: hsl(280, 5%, 95%);
   --white: hsl(280, 5%, 100%);
 
@@ -9,7 +9,7 @@
   --secondary: hsl(5, 70%, 60%);
 
   --content: 1000px;
-  --rounded: 30px;
+  --rounded: 10px;
   --fast: 0.25s ease;
   --shadow: #00000020;
   --box-shadow: 0 0 10px var(--shadow), 2px 2px 4px var(--shadow);
@@ -19,9 +19,11 @@
 
   --thin: 200;
   --regular: 400;
+  --medium: 500;
   --bold: 600;
 
   font-size: 13pt;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -47,8 +49,7 @@ main {
 }
 
 section {
-  padding: 40px max(40px, (100% - var(--content)) / 2);
-  gap: 40px;
+  padding: 60px max(40px, (100% - var(--content)) / 2);
   text-align: center;
 }
 
@@ -60,11 +61,28 @@ section:last-child {
   flex-grow: 1;
 }
 
+section > :first-child {
+  margin-top: 0 !important;
+}
+
+section > :last-child {
+  margin-bottom: 0 !important;
+}
+
 h1,
 h2,
 h3,
 h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0 1em 0;
+  gap: 20px;
   font-weight: var(--bold);
+}
+
+:is(h1, h2, h3, h4) svg {
+  opacity: 0.25;
 }
 
 h1 {
@@ -90,18 +108,9 @@ b {
 }
 
 p {
-  margin: 30px 0;
+  margin: 20px 0;
   line-height: var(--spacing);
   text-align: justify;
-}
-
-a {
-  color: var(--primary);
-  transition: color var(--fast);
-}
-
-a:hover {
-  color: currentColor;
 }
 
 blockquote {
@@ -127,6 +136,156 @@ li::marker {
   color: var(--dark-gray);
 }
 
+hr {
+  height: 2px;
+  margin: 40px 0;
+  border: none;
+  background: var(--light-gray);
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+dd {
+  display: inline-flex;
+  margin: 0;
+}
+
+dt {
+  display: inline-flex;
+}
+
+a {
+  color: var(--primary);
+  transition: color var(--fast);
+}
+
+a:hover {
+  color: currentColor;
+}
+
+[title] {
+  cursor: help;
+}
+
+button,
+select {
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5px 15px;
+  gap: 10px;
+  border: none;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  color: currentColor;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+button:hover,
+select:hover {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+label:has(input[type="checkbox"]) {
+  cursor: pointer;
+}
+
+input:not([type="checkbox"]),
+textarea {
+  padding: 7.5px 15px;
+  border: none;
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: inset 0 0 0 2px var(--dark-gray);
+  font: inherit;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+summary {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  list-style: none;
+  cursor: pointer;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  padding: 10px;
+  content: "►";
+  opacity: 0.25;
+}
+
+details[open] summary::before {
+  content: "▼";
+}
+
+summary:hover {
+  background: var(--gray);
+  color: var(--white);
+}
+
+table {
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px 10px;
+  border-bottom: solid 2px var(--light-gray);
+  vertical-align: bottom;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+[disabled] {
+  filter: saturate(0);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .center {
   text-align: center;
 }
@@ -135,12 +294,11 @@ li::marker {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 150px;
   margin: 10px;
   padding: 7.5px 15px;
   gap: 10px;
   border: solid 2px currentColor;
-  border-radius: var(--rounded);
+  border-radius: 999px;
   color: currentColor;
   text-decoration: none;
   transition:
@@ -151,10 +309,72 @@ li::marker {
 
 .button:hover {
   background: var(--secondary);
-  box-shadow: 0 0 0 3px var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
   color: var(--white);
 }
 
-.icon {
+.button > * {
+  top: 0;
+  margin: 0;
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px 15px;
+  gap: 10px;
+  border-radius: 999px;
+  background: var(--light-gray);
+  color: var(--black);
+  text-decoration: none;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+.button-secondary:hover {
+  background: var(--gray);
+  color: var(--white);
+}
+
+.button-secondary > * {
+  top: 0;
+  margin: 0;
+}
+
+.tippy-box {
+  max-width: 350px;
+  padding: 10px 15px;
+  border-radius: var(--rounded);
+  background: var(--dark-gray);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.big-icon {
+  width: unset;
   height: 1.2em;
+}
+
+.tippy-arrow {
+  z-index: 99;
+  color: var(--dark-gray);
+}
+
+.tippy-content {
+  padding: 0;
+}
+
+:not(html) ::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background-color: var(--light-gray);
+}
+
+:not(html) ::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background-color: var(--gray);
 }

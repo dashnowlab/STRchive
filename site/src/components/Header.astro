@@ -1,14 +1,13 @@
 ---
-import Svg from "@cxa/astro-inline-svg";
-import logo from "@/assets/logo.svg?raw";
-import github from "@/assets/github.svg?raw";
-import Link from "@/components/Link.astro";
+import { FaGithub } from "react-icons/fa6";
+import Logo from "@/assets/logo.svg?react";
+import Link from "@/components/Link";
 
 const path = Astro.url.pathname;
 
 const links = [
   { to: "/", name: "Home" },
-  { to: "/data", name: "Data" },
+  { to: "/loci", name: "Loci" },
   { to: "/resources", name: "Resources" },
   { to: "/about", name: "About" },
 ];
@@ -18,8 +17,8 @@ const links = [
   <nav>
     {
       path !== "/" && (
-        <Link to="/" class="logo-link" aria-label="Home">
-          <Svg raw={logo} class="logo" />
+        <Link to="/" className="logo-link" aria-label="Home">
+          <Logo className="logo" />
         </Link>
       )
     }
@@ -27,7 +26,7 @@ const links = [
       links.map(({ to, name }) => (
         <Link
           to={to}
-          class:list={["nav-link", to === path && "active"]}
+          className={["nav-link", to === path ? "active" : ""].join(" ")}
           aria-label="GitHub"
         >
           {name}
@@ -39,10 +38,10 @@ const links = [
 
     <Link
       to="https://github.com/dashnowlab/STRchive"
-      class="nav-link"
+      className="nav-link"
       aria-label="GitHub"
     >
-      <Svg raw={github} class="icon" />
+      <FaGithub className="big-icon" />
     </Link>
   </nav>
 </header>
@@ -91,7 +90,6 @@ const links = [
   }
 
   .nav-link::after {
-    display: block;
     position: absolute;
     right: 0;
     bottom: 0;

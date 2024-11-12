@@ -1,0 +1,330 @@
+---
+import { LiaBarcodeSolid } from "react-icons/lia";
+import { TbDna2, TbVirus } from "react-icons/tb";
+import LineChart from "@/components/LineChart";
+import Link from "@/components/Link";
+import Layout from "@/layouts/Layout.astro";
+import { capitalize } from "@/util/string";
+import { deriveDatum } from "./_derived";
+import { getInheritance } from "./_inheritance";
+import { getReferences } from "./_references";
+import { tagOptions } from "./_tags";
+import data from "../../../../data/STRchive-database.json";
+
+/** generate pages for each datum, paths based on gene name */
+export const getStaticPaths = async () =>
+  data.map(({ id }) => ({ params: { id } }));
+
+/** current page loci id in url */
+const { id } = Astro.params;
+
+/** look up full data entry from id */
+const d = deriveDatum(data.find((d) => d.id === id));
+
+/** "nice" id */
+const niceId = id.replace("_", " ");
+
+/** same genes, different locus */
+const genes = data.filter(({ gene }) => gene === d.gene);
+---
+
+<Layout title={`Locus: ${niceId}`}>
+  <section>
+    <h1><LiaBarcodeSolid />Locus: {niceId}</h1>
+
+    {
+      !!d.tags.length && (
+        <div class="tags">
+          {d.tags?.map((tag) => {
+            const option = tagOptions.find((t) => t.value === tag);
+            if (!option) return tag;
+            const { Icon, color } = option;
+            return (
+              <div
+                class="tag"
+                style={{
+                  background: `color-mix(in srgb, white, 25% ${color})`,
+                }}
+                data-tooltip={option.tooltip}
+              >
+                <Icon style={{ color }} />
+                {capitalize(tag)}
+              </div>
+            );
+          })}
+        </div>
+      )
+    }
+
+    <div class="boxes">
+      <div class="box">
+        <div>Disease</div>
+        <div>{d.disease}</div>
+      </div>
+
+      <div class="box">
+        <div><TbVirus />Disease ID</div>
+        <div>{d.disease_id}</div>
+      </div>
+
+      <div class="box">
+        <div><TbDna2 />Gene ID</div>
+        <div>{d.gene}</div>
+      </div>
+
+      <div class="box">
+        <div>Inheritance</div>
+        {
+          (d.Inheritance || "")
+            .split("/")
+            .map((inheritance) => (
+              <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+                {getInheritance(inheritance)}
+              </Link>
+            ))
+        }
+      </div>
+    </div>
+
+    <div class="onset">
+      <LineChart
+        client:load
+        rows={[
+          {
+            name: "Age of Onset",
+            color: "var(--primary)",
+            values: [d.age_onset_min, d.age_onset_max],
+          },
+          {
+            name: "(Typical)",
+            color: "var(--secondary)",
+            values: [d.typ_age_onset_min, d.typ_age_onset_max],
+          },
+        ]}
+        min={0}
+        max={90}
+        xAxis="Years"
+      />
+    </div>
+
+    {
+      genes.length > 1 && (
+        <div class="genes">
+          <div class="heading">
+            <TbDna2 />
+            Other gene loci ({genes.length.toLocaleString()})
+          </div>
+          <div class="gene-grid">
+            {genes.map((gene) =>
+              d.id === gene.id ? (
+                <span>{gene.id}</span>
+              ) : (
+                <Link to={gene.id}>{gene.id}</Link>
+              ),
+            )}
+          </div>
+        </div>
+      )
+    }
+
+    <div class="references">
+      {
+        getReferences(d).map(({ name, Icon, ids }) => (
+          <div>
+            <div class="heading">
+              <Icon />
+              <span>{name}</span>
+            </div>
+            <div class="reference-list">
+              {ids.map(({ name, value, link, tooltip, info }) => (
+                <>
+                  <Link to={info} data-tooltip={tooltip} noIcon>
+                    {name}
+                  </Link>
+                  <div class="reference">
+                    {value.map((value) => (
+                      <Link to={link}>{value}</Link>
+                    ))}
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2>Locus</h2>
+
+    <div class="boxes">
+      {
+        ["hg19", "hg38", "t2t"].map((assembly) => (
+          <div class="box">
+            <div>{assembly}</div>
+            <div>
+              {d.chrom}:{d[`start_${assembly}`]}-{d[`stop_${assembly}`]}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h2>Alleles</h2>
+
+    <div class="boxes">
+      <div class="box" data-tooltip="Reference motif, reference orientation">
+        <div>Ref. Motif</div>
+        <div>{d.reference_motif_reference_orientation}</div>
+      </div>
+      <div class="box" data-tooltip="Pathogenic motif, reference orientation">
+        <div>Pathogenic (ref.)</div>
+        <div>{d.pathogenic_motif_reference_orientation}</div>
+      </div>
+      <div class="box" data-tooltip="Pathogenic motif, gene orientation">
+        <div>Pathogenic (gene)</div>
+        <div>{d.pathogenic_motif_gene_orientation}</div>
+      </div>
+    </div>
+
+    <div class="alleles">
+      <LineChart
+        client:load
+        rows={[
+          {
+            name: "Benign",
+            color: "var(--primary)",
+            values: [d.normal_min, d.normal_max],
+          },
+          {
+            name: "Pathogenic",
+            color: "var(--secondary)",
+            values: [d.pathogenic_min, d.pathogenic_max],
+          },
+        ]}
+        xAxis="Units"
+      />
+    </div>
+  </section>
+
+  <script define:vars={{ d }}>
+    console.debug(d);
+  </script>
+</Layout>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 5px 10px;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 999px;
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+
+  .box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    border-radius: var(--rounded);
+    background: var(--light-gray);
+    overflow-wrap: anywhere;
+  }
+
+  .box > :first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--gray);
+  }
+
+  .box > :first-child svg {
+    opacity: 0.5;
+  }
+
+  .box > :not(:first-child) {
+    font-weight: var(--medium);
+    font-size: 1.1rem;
+  }
+
+  .onset {
+    margin: 40px 0;
+  }
+
+  .genes {
+    margin: 40px 0;
+  }
+
+  .heading {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-weight: var(--bold);
+  }
+
+  .heading svg {
+    opacity: 0.5;
+  }
+
+  .gene-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+    place-content: center;
+    place-items: center;
+    gap: 10px 20px;
+  }
+
+  .references {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .reference-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: flex-start;
+    place-items: flex-start;
+    gap: 5px 20px;
+  }
+
+  .reference-list > :nth-child(odd) {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .reference {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .alleles {
+    margin: 40px 0;
+  }
+</style>
