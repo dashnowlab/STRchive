@@ -31,7 +31,7 @@
             "AD"
         ],
         "type":"5' UTR",
-        "location_in_gene":"5' UTR",
+        "location_in_gene":null,
         "benign_min":3.0,
         "benign_max":44.0,
         "intermediate_min":null,
@@ -40,18 +40,18 @@
         "pathogenic_max":694.0,
         "ref_copies":7.7,
         "motif_len":3,
-        "age_onset":"Typical: 24-30; Range: 10-50 (doi.org/10.1101/2023.10.09.23296582)",
+        "age_onset":"Typical: 24-30; Range: 10-50 [url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
         "age_onset_min":10,
         "age_onset_max":50,
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":null,
         "mechanism":null,
-        "mechanism_detail":null,
+        "mechanism_detail":"Potentially over-expression of transcripts [url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
         "source":[
-            "https://doi.org/10.1101/2023.10.09.23296582"
+            "[url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]"
         ],
-        "details":null,
+        "details":"Characterized in eight unrelated families, used to establish allelic ranges [url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
         "omim":[],
         "prevalence":null,
         "prevalence_details":"Found in individuals of European ancestry [pmid:38876750]",
@@ -82,7 +82,7 @@
         "tr_gnomad":[
             "TR5671"
         ],
-        "disease_description":"Oculopharyngodistal myopathy (OPDM) is a rare, adult-onset hereditary muscle disease. People with OPDM present with progressive eye and throat (pharyngeal) problems and involvement of the muscles of the lower legs and arms. Symptoms may include eyelid drooping (ptosis), swallowing difficulty, hoarse and nasal voice, leg and arm weakness, as well as muscle wasting in the face and in the legs and arms. Many people have respiratory problems due to respiratory muscle weakness. In rare cases, there is also hearing loss, as well as severe weakness in muscles of the forearms and thighs. As the disease progresses, other muscles may be affected. A blood exam may show an increased creatine kinase level and an abnormal EMG. (Mondo)",
+        "disease_description":"Oculopharyngodistal myopathy (OPDM) is a rare, adult-onset hereditary muscle disease. People with OPDM present with progressive eye and throat (pharyngeal) problems and involvement of the muscles of the lower legs and arms. Symptoms may include eyelid drooping (ptosis), swallowing difficulty, hoarse and nasal voice, leg and arm weakness, as well as muscle wasting in the face and in the legs and arms. Many people have respiratory problems due to respiratory muscle weakness. In rare cases, there is also hearing loss, as well as severe weakness in muscles of the forearms and thighs. As the disease progresses, other muscles may be affected. A blood exam may show an increased creatine kinase level and an abnormal EMG.[mondo: 0025193]",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -121,7 +121,7 @@
         "location_in_gene":null,
         "benign_min":4.0,
         "benign_max":39.0,
-        "intermediate_min":null,
+        "intermediate_min":40.0,
         "intermediate_max":null,
         "pathogenic_min":200.0,
         "pathogenic_max":2000.0,
@@ -176,7 +176,7 @@
         "tr_gnomad":[
             "TR173976"
         ],
-        "disease_description":"A nonsyndromic X-linked mental retardation (NS-XLMR) characterized by mild intellectual deficit. FRAXE is the most common form of NS-XLMR. (Mondo)",
+        "disease_description":"A nonsyndromic X-linked mental retardation (NS-XLMR) characterized by mild intellectual deficit. FRAXE is the most common form of NS-XLMR.[mondo:0010659",
         "locus_tags":[],
         "disease_tags":[]
     },
