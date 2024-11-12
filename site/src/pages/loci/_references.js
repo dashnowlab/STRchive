@@ -8,14 +8,14 @@ export const getReferences = (d) =>
       Icon: FaBookMedical,
       ids: [
         {
-          key: "GARD",
+          key: "gard",
           name: "GARD",
           link: "https://rarediseases.info.nih.gov/diseases/$ID/index",
           tooltip: "Easy-to-understand rare disease information and resources",
           info: "https://rarediseases.info.nih.gov",
         },
         {
-          key: "GeneReviews",
+          key: "genereviews",
           name: "GeneReviews",
           link: "https://www.ncbi.nlm.nih.gov/books/$ID",
           tooltip:
@@ -31,7 +31,7 @@ export const getReferences = (d) =>
           info: "https://www.malacards.org",
         },
         {
-          key: "MedGen",
+          key: "medgen",
           name: "MedGen",
           link: "https://www.ncbi.nlm.nih.gov/medgen/?term=$ID",
           tooltip:
@@ -40,7 +40,7 @@ export const getReferences = (d) =>
         },
 
         {
-          key: "Mondo",
+          key: "mondo",
           name: "Mondo",
           link: "https://purl.obolibrary.org/obo/MONDO_$ID",
           tooltip:
@@ -48,7 +48,7 @@ export const getReferences = (d) =>
           info: "http://obofoundry.org/ontology/mondo.html",
         },
         {
-          key: "OMIM",
+          key: "omim",
           name: "OMIM",
           link: "https://omim.org/entry/$ID",
           tooltip:
@@ -56,7 +56,7 @@ export const getReferences = (d) =>
           info: "https://omim.org",
         },
         {
-          key: "Orphanet",
+          key: "orphanet",
           name: "Orphanet",
           link: "https://www.orpha.net/en/disease/detail/$ID",
           tooltip: "High-quality information on rare diseases",
@@ -69,7 +69,7 @@ export const getReferences = (d) =>
       Icon: FaLaptopMedical,
       ids: [
         {
-          key: "gnomAD_gene",
+          key: "gnomad",
           name: "gnomAD",
           link: "https://gnomad.broadinstitute.org/short-tandem-repeat/$ID?dataset=gnomad_r4",
           tooltip:
@@ -77,7 +77,7 @@ export const getReferences = (d) =>
           info: "https://gnomad.broadinstitute.org/news/2022-01-the-addition-of-short-tandem-repeat-calls-to-gnomad",
         },
         {
-          key: "STRipy_gene",
+          key: "stripy",
           name: "STRipy",
           link: "https://stripy.org/database/$ID",
           tooltip:
@@ -94,7 +94,7 @@ export const getReferences = (d) =>
         },
 
         {
-          key: "WebSTR_hg38",
+          key: "webstr_hg38",
           name: "WebSTR hg38",
           link: "https://webstr.ucsd.edu/search?genome=hg38&query=$ID",
           tooltip:
@@ -102,7 +102,7 @@ export const getReferences = (d) =>
           info: "https://webstr.ucsd.edu",
         },
         {
-          key: "WebSTR_hg19",
+          key: "webstr_hg19",
           name: "WebSTR hg19",
           link: "https://webstr.ucsd.edu/search?genome=hg19&query=$ID",
           tooltip:
@@ -119,5 +119,5 @@ export const getReferences = (d) =>
         value: d[key],
         link: link.replace("$ID", d[key]),
       }))
-      .filter(({ value }) => value),
+      .filter(({ value }) => value?.length),
   }));

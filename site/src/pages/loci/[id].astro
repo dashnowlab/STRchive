@@ -33,9 +33,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     <h1><LiaBarcodeSolid />Locus: {niceId}</h1>
 
     {
-      !!d.tags.length && (
+      !!d.locus_tags.length && (
         <div class="tags">
-          {d.tags?.map((tag) => {
+          {d.locus_tags?.map((tag) => {
             const option = tagOptions.find((t) => t.value === tag);
             if (!option) return tag;
             const { Icon, color } = option;
@@ -75,13 +75,11 @@ const genes = data.filter(({ gene }) => gene === d.gene);
       <div class="box">
         <div>Inheritance</div>
         {
-          (d.Inheritance || "")
-            .split("/")
-            .map((inheritance) => (
-              <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-                {getInheritance(inheritance)}
-              </Link>
-            ))
+          (d.inheritance.length ? d.inheritance : [""]).map((inheritance) => (
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+              {getInheritance(inheritance)}
+            </Link>
+          ))
         }
       </div>
     </div>
@@ -195,7 +193,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
           {
             name: "Benign",
             color: "var(--primary)",
-            values: [d.normal_min, d.normal_max],
+            values: [d.benign_min, d.benign_max],
           },
           {
             name: "Pathogenic",

@@ -49,6 +49,9 @@ const LineChart = ({
     ref.current.style.height = 1.9 * height + "px";
   });
 
+  /** if no rows, don't render anything */
+  if (!_rows.length) return <></>;
+
   return (
     <svg
       ref={ref}

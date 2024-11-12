@@ -22,7 +22,7 @@ const cols = [
     sortable: false,
   },
   {
-    key: "tags",
+    key: "locus_tags",
     name: "Tags",
     render: (cell) => {
       return tagOptions
@@ -60,7 +60,7 @@ const cols = [
     name: "Motif",
     render: (cell) => (
       <div
-        data-tooltip={cell}
+        data-tooltip={cell.join(", ")}
         style={{
           display: "inline-block",
           maxWidth: "80px",
@@ -69,20 +69,27 @@ const cols = [
           textOverflow: "ellipsis",
         }}
       >
-        {cell}
+        {cell.join(", ")}
       </div>
     ),
   },
   {
-    key: "Inheritance",
+    key: "inheritance",
     name: "Inheritance",
+    render: (cell) => cell?.join("/"),
   },
 ];
 
 const Table = ({ data }) => {
   const maxMotif = Math.max(
     ...data
-      .map((d) => d?.pathogenic_motif_reference_orientation.length || 0)
+      .map(
+        (d) =>
+          d?.pathogenic_motif_reference_orientation.map(
+            (motif) => motif.length,
+          ) || 0,
+      )
+      .flat()
       .filter(Boolean),
   );
 
@@ -104,11 +111,12 @@ const Table = ({ data }) => {
         (tags.filter(Boolean).length
           ? tagOptions
               .filter((_, index) => tags[index])
-              .every(({ value }) => d.tags.includes(value))
+              .every(({ value }) => d.locus_tags.includes(value))
           : true) &&
         /** motif */
-        d.pathogenic_motif_reference_orientation.length <=
-          (motif || Infinity) &&
+        d.pathogenic_motif_reference_orientation.every(
+          (m) => m.length <= (motif || Infinity),
+        ) &&
         /** inheritance */
         (inheritance === "all" || d.Inheritance === inheritance),
     );
