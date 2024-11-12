@@ -4,7 +4,6 @@ import { TbDna2, TbVirus } from "react-icons/tb";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
-import { lerp } from "@/util/math";
 import { capitalize } from "@/util/string";
 import { deriveDatum } from "./_derived";
 import { getInheritance } from "./_inheritance";
@@ -31,7 +30,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
 <Layout title={`Locus: ${niceId}`}>
   <section>
-    <h1><LiaBarcodeSolid />{niceId}</h1>
+    <h1><LiaBarcodeSolid />Locus: {niceId}</h1>
 
     {
       !!d.tags.length && (

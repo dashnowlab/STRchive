@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { fitViewBox } from "@/util/dom";
 import { lerp } from "@/util/math";
 import classes from "./LineChart.module.css";
@@ -29,13 +29,18 @@ const LineChart = ({
     .filter(({ values }) =>
       values.every((value) => value !== undefined && value !== null),
     )
-    .map((row, index, rows) => ({
-      ...row,
+    .map((row, index, rows) => {
       /** value x svg coords */
-      xs: row.values.map(scale),
+      const x = row.values.map(scale);
+      /** if same value, nudge apart to give bar nominal width */
+      if (x[0] === x[1]) {
+        x[0] -= fontSize * 0.1;
+        x[1] += fontSize * 0.1;
+      }
       /** y svg coord */
-      y: height * ((index + 1) / (rows.length + 1)),
-    }));
+      const y = height * ((index + 1) / (rows.length + 1));
+      return { ...row, x, y };
+    });
 
   /** fit to contents */
   useEffect(() => {
@@ -74,23 +79,23 @@ const LineChart = ({
         {xAxis}
       </text>
 
-      {_rows.map(({ y, color, values: [min, max] }, index) => (
+      {_rows.map(({ x, y, color, values: [min, max] }, index) => (
         <rect
           key={index}
           fill={color}
-          x={scale(min)}
+          x={x[0]}
           y={y - fontSize * 0.5}
-          width={scale(max) - scale(min)}
+          width={x[1] - x[0]}
           height={fontSize * 1}
         />
       ))}
 
-      {_rows.map(({ y, values: [min, max] }, index) => (
+      {_rows.map(({ x, y, values: [min, max] }, index) => (
         <g key={index} dominantBaseline="central">
-          <text x={scale(min)} y={y} textAnchor="end">
+          <text x={x[0]} y={y} textAnchor="end">
             {min.toLocaleString()}&nbsp;
           </text>
-          <text x={scale(max)} y={y}>
+          <text x={x[1]} y={y}>
             &nbsp;{max.toLocaleString()}
           </text>
         </g>
