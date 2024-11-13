@@ -4,6 +4,7 @@ import { LiaBarcodeSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
+import ShowMore from "@/components/ShowMore";
 import Layout from "@/layouts/Layout.astro";
 import { capitalize } from "@/util/string";
 import { deriveDatum } from "./_derived";
@@ -143,7 +144,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         d.disease_description && (
           <div class="box full">
             <div>Description</div>
-            <div>{d.disease_description}</div>
+            <ShowMore client:load>{d.disease_description}</ShowMore>
           </div>
         )
       }
@@ -153,7 +154,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
           <div class="box full">
             <div>Prevalence</div>
             {d.prevalence && <div>{d.prevalence}</div>}
-            {d.prevalence_details && <div>{d.prevalence_details}</div>}
+            {d.prevalence_details && (
+              <ShowMore client:load>{d.prevalence_details}</ShowMore>
+            )}
           </div>
         )
       }
@@ -218,7 +221,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
           <div class="box">
             <div>Mechanism</div>
             {d.mechanism && <div>{d.mechanism}</div>}
-            {d.mechanism_detail && <div>{d.mechanism_detail}</div>}
+            {d.mechanism_detail && (
+              <ShowMore client:load>{d.mechanism_detail}</ShowMore>
+            )}
           </div>
         )
       }
@@ -419,6 +424,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
   .full {
     max-width: unset;
+    text-align: justify;
   }
 
   .box > :first-child {
