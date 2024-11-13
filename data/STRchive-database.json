@@ -45,13 +45,13 @@
         "age_onset_max":50,
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
-        "novel":null,
+        "novel":"ref",
         "mechanism":null,
         "mechanism_detail":"Potentially over-expression of transcripts [url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
         "source":[
             "[url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]"
         ],
-        "details":"Characterized in eight unrelated families, used to establish allelic ranges [url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
+        "details":"Characterized in eight unrelated families which were used to establish benign (3-44) and pathogenic (118-694) ranges [url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
         "omim":[],
         "prevalence":null,
         "prevalence_details":"Found in individuals of European ancestry [pmid:38876750]",
@@ -61,7 +61,7 @@
         "mondo":[
             "0025193"
         ],
-        "year":2023.0,
+        "year":"2023[url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
         "medgen":[
             "320250"
         ],
@@ -82,7 +82,7 @@
         "tr_gnomad":[
             "TR5671"
         ],
-        "disease_description":"Oculopharyngodistal myopathy (OPDM) is a rare, adult-onset hereditary muscle disease. People with OPDM present with progressive eye and throat (pharyngeal) problems and involvement of the muscles of the lower legs and arms. Symptoms may include eyelid drooping (ptosis), swallowing difficulty, hoarse and nasal voice, leg and arm weakness, as well as muscle wasting in the face and in the legs and arms. Many people have respiratory problems due to respiratory muscle weakness. In rare cases, there is also hearing loss, as well as severe weakness in muscles of the forearms and thighs. As the disease progresses, other muscles may be affected. A blood exam may show an increased creatine kinase level and an abnormal EMG.[mondo: 0025193]",
+        "disease_description":"Oculopharyngodistal myopathy (OPDM) is a rare, adult-onset hereditary muscle disease. People with OPDM present with progressive eye and throat (pharyngeal) problems and involvement of the muscles of the lower legs and arms. Symptoms may include eyelid drooping (ptosis), swallowing difficulty, hoarse and nasal voice, leg and arm weakness, as well as muscle wasting in the face and in the legs and arms. Many people have respiratory problems due to respiratory muscle weakness. In rare cases, there is also hearing loss, as well as severe weakness in muscles of the forearms and thighs. As the disease progresses, other muscles may be affected. A blood exam may show an increased creatine kinase level and an abnormal EMG.[mondo:0025193]",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -122,30 +122,28 @@
         "benign_min":4.0,
         "benign_max":39.0,
         "intermediate_min":40.0,
-        "intermediate_max":null,
-        "pathogenic_min":200.0,
+        "intermediate_max":200,
+        "pathogenic_min":201.0,
         "pathogenic_max":2000.0,
         "ref_copies":50.3,
         "motif_len":3,
-        "age_onset":"Typical: 2-10; Range: 1-10 (developmental delays without physical features can make onset difficult to detect until schooling)",
+        "age_onset":"Typical: 2-10 [pmid:11246464]. Range: 1-10; developmental delays without physical features can make onset difficult to detect until schooling) [omim:309548].",
         "age_onset_min":1,
         "age_onset_max":10,
         "typ_age_onset_min":2.0,
         "typ_age_onset_max":10.0,
         "novel":"ref",
-        "mechanism":"LOF, reduced gene expression",
-        "mechanism_detail":"Loss of function via transcriptional silencing (doi.org/10.1038/nrg1691) (doi.org/10.1007/s11604-022-01343-5)",
+        "mechanism":"LOF",
+        "mechanism_detail":"Loss of function via transcriptional silencing [doi:10.1038/nrg1691, doi:10.1007/s11604-022-01343-5]",
         "source":[
-            "Mirkin 2007",
-            "OMIM",
-            "GeneReviews NBK535148"
+
         ],
-        "details":null,
+        "details":"Allele ranges (benign:4-39; pathogenic: >200) inferred from The Human Gene Mutation Database[genereviews:NBK535148]. Intermediate alleles correspond to a premutation[pmid:23914978]",
         "omim":[
             "309548"
         ],
         "prevalence":"2/50000",
-        "prevalence_details":"1-4/100,000 males (https://medlineplus.gov/genetics/condition/fragile-xe-syndrome); 1/50-100,000 males, more than 50 families [pmid:11246464]. Found in populations around the globe, including in the UK, US, Canada, Taiwan, Germany, Greece, Cyprus, Spain, and Finland [pmid:11246464]",
+        "prevalence_details":"1-4/100,000 males (url:medlineplus.gov/genetics/condition/fragile-xe-syndrome); 1/50-100,000 males, more than 50 families [pmid:11246464]. Found in populations around the globe, including in the UK, US, Canada, Taiwan, Germany, Greece, Cyprus, Spain, and Finland [pmid:11246464]",
         "stripy":[
             "AFF2"
         ],
@@ -158,7 +156,7 @@
         "mondo":[
             "0010659"
         ],
-        "year":1993.0,
+        "year":"1993[pmid:8334699]",
         "medgen":[
             "155512"
         ],
@@ -176,7 +174,7 @@
         "tr_gnomad":[
             "TR173976"
         ],
-        "disease_description":"A nonsyndromic X-linked mental retardation (NS-XLMR) characterized by mild intellectual deficit. FRAXE is the most common form of NS-XLMR.[mondo:0010659",
+        "disease_description":"A nonsyndromic X-linked mental retardation (NS-XLMR) characterized by mild intellectual deficit. FRAXE is the most common form of NS-XLMR.[mondo:0010659]",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -221,29 +219,26 @@
         "pathogenic_max":300.0,
         "ref_copies":8.7,
         "motif_len":3,
-        "age_onset":"Early childhood (small sample size) (PMID: 24763282)",
+        "age_onset":"Early childhood (small sample size) [pmid:24763282]",
         "age_onset_min":1,
         "age_onset_max":7,
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Decreased gene expression, methylation",
-        "mechanism_detail":"Silencing of the FMR2 gene as a consequence of a CCG expansion located upstream of this gene (Malacard)",
-        "source":[
-            "https://doi.org/10.1038/s41580-021-00382-6",
-            "PMC3998887"
-        ],
-        "details":"Pathogenic threshold may be higher than 300 as this was the largest allele that could be accurately sized by the assay.",
+        "mechanism":"LoF/methylation",
+        "mechanism_detail":"Silencing of the FMR2 gene as a consequence of a CCG expansion located upstream of this gene [malacard:KNS007]",
+        "source":[],
+        "details":"Allele ranges established in study of 3 families; intermediate alleles likely premutations [pmid:24763282]. Pathogenic threshold may be higher than 300 as this was the largest allele that could be accurately sized by the assay.",
         "omim":[
             "601464"
         ],
         "prevalence":null,
-        "prevalence_details":"1/862 (1/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) https://www.medrxiv.org/content/10.1101/2023.05.03.23289461v1.full.pdf . Clinical cases have been observed in South Australia (PMID: 24763282)",
+        "prevalence_details":"1/862 (1/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) [url:medrxiv.org/content/10.1101/2023.05.03.23289461v1.full.pdf]. Disease cases observed in South Australia [pmid:24763282]",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
         "mondo":[],
-        "year":2014.0,
+        "year":"2014[pmid:24763282]",
         "medgen":[],
         "orphanet":[],
         "gard":[],
@@ -257,7 +252,7 @@
         "tr_gnomad":[
             "TR252468"
         ],
-        "disease_description":"These expansions are associated with intellectual disability and clinical phenotypes such as delayed motor development or delays in speech/language (PMID: 24763282)",
+        "disease_description":"These expansions are associated with intellectual disability and clinical phenotypes such as delayed motor development or delays in speech/language [pmid:24763282]",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -302,31 +297,23 @@
         "pathogenic_max":68.0,
         "ref_copies":34.0,
         "motif_len":3,
-        "age_onset":"Typical: 20-49 (OMIM), Range: 8(PMID: 15851746)-78 (PMID: 19227892)",
+        "age_onset":"Typical: 20-49 [doi:10.1038/sj.ejhg.5200656], Range: 8[pmid:15851746]-78[pmid:19227892]",
         "age_onset_min":8,
         "age_onset_max":78,
         "typ_age_onset_min":20.0,
         "typ_age_onset_max":49.0,
         "novel":"ref",
-        "mechanism":"Polyglutamine",
-        "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5)",
+        "mechanism":"GoF",
+        "mechanism_detail":"Polyglutamine alters protein conformation leading to gain-of-function neurodegeneration [doi:10.1038/nrg.2017.115, doi:10.1007/s11604-022-01343-5]. Transcriptional dysregulation, axonal transport disruption, and mitochondrial dysfunction also play causative roles in the neurodegeneration[doi:10.1016/j.pneurobio.2012.05.007]",
         "source":[
-            "Hannan 2018",
-            "Mirkin 2007",
-            "GeneReviews NBK535148",
-            "s40478-021-01201-x",
-            "doi.org/10.1016/j.neurol.2017.03.019",
-            "doi.org/10.1016/j.pneurobio.2012.05.007",
-            "doi.org/10.1111/odi.12121",
-            "DOI: 10.1007/s00415-018-8968-7",
-            "DOI: 10.1007/s12031-015-0684-5"
+            "[pmid:2062380]"
         ],
-        "details":"Expansions larger than the pathogenic threshold in the AR gene should be evaluated carefully. Interruptions have not been observed in patient cases and it has been proposed that longer alleles with interruptions may not be pathogenic (PMID: 24041967). Expansions are also detected ten-fold more often in a general population than would be expected by disease prevalence (PMID: 36797998). Clinical evaluation and phenotypic matching may be necessary to determine diagnosis even in the presence of a pure expanded allele. It has been proposed that contractions may play a role in disease (PMID: 10398229). May be subclinical in females (PMID: 34922802). Can be clinically heterogeneous even within the same family (PMID: 20184516). AR was the first triplet disease to be discovered (doi:10.1001/archneur.61.8.1324)",
+        "details":"Intermediate alleles indicate reduced penetrance [generevies:NBK1333]. Expansions larger than the pathogenic threshold in the AR gene should be evaluated carefully. Interruptions have not been observed in patient cases; it has been proposed that longer alleles with interruptions may not be pathogenic [pmid:24041967]. Expansions are also detected ten-fold more often in a general population than would be expected by disease prevalence [pmid:36797998]. Clinical evaluation and phenotypic matching may be necessary to determine diagnosis even in the presence of a pure expanded allele. It has been proposed that contractions may play a role in disease [pmid:10398229]. Disease may be subclinical in females [pmid:34922802], and can be clinically heterogeneous even within the same family [pmid:20184516].",
         "omim":[
             "313200"
         ],
         "prevalence":"1/30000",
-        "prevalence_details":"1-2/100,000 (population-specific, higher in Finnish population, Canadian population) (PMID: 37628685); 1/30,000  (Orphanet) ; mutation frequency of 1:3182 10x more frequent than reported disease prevalence of 1 in 30,000 (PMID: 36797998); Tang et al., 2017: 0.67-2.5/100,000 . Only documented in patients with European/Asian ancestry, including Scandinavian, English, Belgian, French, Italian, German, Polish, Spanish, Swiss, Moroccan, Turkish, Chinese, Japanese (more common because of a founder effect), Korean, and Vietnamese populations (NBK1333)",
+        "prevalence_details":"1-2/100,000 (population-specific, higher in Finnish population, Canadian population) [pmid:37628685); 1/30,000 [orphanet:481]; mutation frequency of 1:3182 10x more frequent than reported disease prevalence of 1 in 30,000 [pmid:36797998). Only documented in patients with European/Asian ancestry, including Scandinavian, English, Belgian, French, Italian, German, Polish, Spanish, Swiss, Moroccan, Turkish, Chinese, Japanese (more common because of a founder effect), Korean, and Vietnamese populations [genereviews:NBK1333]",
         "stripy":[
             "AR"
         ],
@@ -339,7 +326,7 @@
         "mondo":[
             "0010735"
         ],
-        "year":1991.0,
+        "year":"1991[pmid:2062380](the first triplet disease to be discovered)[doi:10.1001/archneur.61.8.1324]",
         "medgen":[
             "333282"
         ],
@@ -359,7 +346,7 @@
         "tr_gnomad":[
             "TR169377"
         ],
-        "disease_description":"Kennedy's disease, also known as bulbospinal muscular atrophy (BSMA), is a rare X-linked recessive motor neuron disease characterized by proximal and bulbar muscle wasting. (Mondo)",
+        "disease_description":"Kennedy's disease, also known as bulbospinal muscular atrophy (BSMA), is a rare X-linked recessive motor neuron disease characterized by proximal and bulbar muscle wasting. [mondo:0010735]",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -404,7 +391,7 @@
         "pathogenic_max":27.0,
         "ref_copies":14.7,
         "motif_len":3,
-        "age_onset":"Typical: 0 (PMID: 21204215, PMID: 9307258, OMIM); Range: 0-4 (Childhood epilepsy, cognitive disability,  \u223c70% of cases infantile spasms -->  seizures by 3 or 4 years re: PMID: 19587282)",
+        "age_onset":"Typical: 0 [pmid:21204215, PMID: 9307258, OMIM); Range: 0-4 (Childhood epilepsy, cognitive disability,  \u223c70% of cases infantile spasms -->  seizures by 3 or 4 years re: PMID: 19587282)",
         "age_onset_min":0,
         "age_onset_max":4,
         "typ_age_onset_min":0.0,
@@ -423,7 +410,7 @@
             "300215"
         ],
         "prevalence":null,
-        "prevalence_details":"Found in individuals of multiple ethnicities, including European and Asian ancestry (PMID: 12874418)",
+        "prevalence_details":"Found in individuals of multiple ethnicities, including European and Asian ancestry [pmid:12874418)",
         "stripy":[
             "ARX_1"
         ],
@@ -596,7 +583,7 @@
         "pathogenic_max":93.0,
         "ref_copies":19.0,
         "motif_len":3,
-        "age_onset":"Typical: 20-40 (PMID: 6808417, NBK1491); Range: 0 (PMID: 11160976) - 72 (NBK1491)",
+        "age_onset":"Typical: 20-40 [pmid:6808417, NBK1491); Range: 0 [pmid:11160976) - 72 (NBK1491)",
         "age_onset_min":0,
         "age_onset_max":72,
         "typ_age_onset_min":20.0,
@@ -610,7 +597,7 @@
             "GeneReviews NBK535148",
             "s40478-021-01201-x"
         ],
-        "details":"CAA interruptions have been observed (PMID: 35245110)",
+        "details":"CAA interruptions have been observed [pmid:35245110)",
         "omim":[
             "125370"
         ],
@@ -698,7 +685,7 @@
         "pathogenic_max":91.0,
         "ref_copies":30.3,
         "motif_len":3,
-        "age_onset":"Typical: 20-39 (UptoDate); Range: 6(PMID: 3165612)-63 (PMID: 8825276)",
+        "age_onset":"Typical: 20-39 (UptoDate); Range: 6[pmid:3165612)-63 [pmid:8825276)",
         "age_onset_min":6,
         "age_onset_max":63,
         "typ_age_onset_min":20.0,
@@ -712,7 +699,7 @@
             "GeneReviews NBK1184",
             "s40478-021-01201-x"
         ],
-        "details":"CAT interruptions have been observed (PMID: 35245110)",
+        "details":"CAT interruptions have been observed [pmid:35245110)",
         "omim":[
             "164400"
         ],
@@ -813,7 +800,7 @@
             "GeneReviews NBK535148",
             "s40478-021-01201-x"
         ],
-        "details":"SCA10 expansions are frequently interrupted by ATCCT, ATCCC, ATTCC, ATTTCT, ATATTCT, ATTCTTCT, or ATTCTTCT; also interruptions of ATTGT, TTTCT, ATTTTCT, ATTCTCT (PMID: 36199580). Additional interruption ATGCT (PMID: 19234597). ATCCT interruption motif is associated with a higher prevalence of epileptic seizures [McFarland et al 2014].",
+        "details":"SCA10 expansions are frequently interrupted by ATCCT, ATCCC, ATTCC, ATTTCT, ATATTCT, ATTCTTCT, or ATTCTTCT; also interruptions of ATTGT, TTTCT, ATTTTCT, ATTCTCT [pmid:36199580). Additional interruption ATGCT [pmid:19234597). ATCCT interruption motif is associated with a higher prevalence of epileptic seizures [McFarland et al 2014].",
         "omim":[
             "603516"
         ],
@@ -1017,7 +1004,7 @@
             "GeneReviews NBK535148",
             "s40478-021-01201-x"
         ],
-        "details":"Interruptions: CAA (PMID: 35245110); AAG is present in hg38 reference sequence",
+        "details":"Interruptions: CAA [pmid:35245110); AAG is present in hg38 reference sequence",
         "omim":[
             "109150"
         ],
@@ -1105,7 +1092,7 @@
         "pathogenic_max":460.0,
         "ref_copies":10.7,
         "motif_len":3,
-        "age_onset":"Typical: 4-48 (PMID: 20739808); Range: 0-65 (GeneReview)",
+        "age_onset":"Typical: 4-48 [pmid:20739808); Range: 0-65 (GeneReview)",
         "age_onset_min":0,
         "age_onset_max":65,
         "typ_age_onset_min":4.0,
@@ -1119,7 +1106,7 @@
             "GeneReviews NBK535148",
             "s40478-021-01201-x"
         ],
-        "details":"Interruptions observed: CAA (PMID: 35245110)",
+        "details":"Interruptions observed: CAA [pmid:35245110)",
         "omim":[
             "164500"
         ],
@@ -1221,7 +1208,7 @@
             "GeneReviews NBK535148",
             "s40478-021-01201-x"
         ],
-        "details":"Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, which encodes a nearly pure polyglutamine expansion protein in the CAG direction, and ATXN8OS (603680), which, when transcribed, produces a noncoding CUG expansion RNA (Moseley et al., 2006). Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increased RAN translation and protein toxicity (PMID: 34632710); Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [Moseley et al 2006; Authors, unpublished data]. (GeneReviews)",
+        "details":"Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, which encodes a nearly pure polyglutamine expansion protein in the CAG direction, and ATXN8OS (603680), which, when transcribed, produces a noncoding CUG expansion RNA (Moseley et al., 2006). Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increased RAN translation and protein toxicity [pmid:34632710); Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [Moseley et al 2006; Authors, unpublished data]. (GeneReviews)",
         "omim":[
             "608768"
         ],
@@ -1333,7 +1320,7 @@
         "pathogenic_max":760.0,
         "ref_copies":14.4,
         "motif_len":5,
-        "age_onset":"Typical: 56-62 (PMID: 36563608); Range: 8-83 (PMID: 23331413) ",
+        "age_onset":"Typical: 56-62 [pmid:36563608); Range: 8-83 [pmid:23331413) ",
         "age_onset_min":8,
         "age_onset_max":83,
         "typ_age_onset_min":56.0,
@@ -1449,12 +1436,12 @@
             "OMIM",
             "s40478-021-01201-x"
         ],
-        "details":"FTD and ALS form a clinical spectrum (PMID: 37388914). Pathogenic lower range is controversial (STRipy).",
+        "details":"FTD and ALS form a clinical spectrum [pmid:37388914). Pathogenic lower range is controversial (STRipy).",
         "omim":[
             "105500"
         ],
         "prevalence":null,
-        "prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2/100,000 person-years, point prevalence is 3-5/100,000 (Europe/US); lifetime risk is 1 in 300 (PMID: 31315673). C9orf72-FTD is estimated to be 0.04-134:100,000 (GeneReview), and by our estimates 0.65-1.56/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry (NBK268647)",
+        "prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2/100,000 person-years, point prevalence is 3-5/100,000 (Europe/US); lifetime risk is 1 in 300 [pmid:31315673). C9orf72-FTD is estimated to be 0.04-134:100,000 (GeneReview), and by our estimates 0.65-1.56/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry (NBK268647)",
         "stripy":[
             "C9ORF72"
         ],
@@ -1490,7 +1477,7 @@
         "tr_gnomad":[
             "TR92417"
         ],
-        "disease_description":"Pure frontotemporal dementia, pure amyotrophic lateral sclerosis or combination of the two (PMID: 39349043)",
+        "disease_description":"Pure frontotemporal dementia, pure amyotrophic lateral sclerosis or combination of the two [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -1535,7 +1522,7 @@
         "pathogenic_max":33.0,
         "ref_copies":13.3,
         "motif_len":3,
-        "age_onset":"Typical: 43-52 (GeneReview); Range: 16 (PMID: 23331413) - 73 (NBK1140)",
+        "age_onset":"Typical: 43-52 (GeneReview); Range: 16 [pmid:23331413) - 73 (NBK1140)",
         "age_onset_min":16,
         "age_onset_max":73,
         "typ_age_onset_min":43.0,
@@ -1653,7 +1640,7 @@
             "147791"
         ],
         "prevalence":null,
-        "prevalence_details":"1/100,000 births; female/male ratio 2:1 (PMID: 19267933). Found across ancestries/ethnicities (OMIM: 147791)",
+        "prevalence_details":"1/100,000 births; female/male ratio 2:1 [pmid:19267933). Found across ancestries/ethnicities (OMIM: 147791)",
         "stripy":[
             "CBL"
         ],
@@ -1730,7 +1717,7 @@
         "pathogenic_max":11000.0,
         "ref_copies":20.8,
         "motif_len":4,
-        "age_onset":"Typical: 28-56 (PMID: 29086017); Range: 0-73 (PMID: 31159885)",
+        "age_onset":"Typical: 28-56 [pmid:29086017); Range: 0-73 [pmid:31159885)",
         "age_onset_min":0,
         "age_onset_max":73,
         "typ_age_onset_min":28.0,
@@ -1744,12 +1731,12 @@
             "GeneReviews NBK1466",
             "https://doi.org/10.1038/s41580-021-00382-6"
         ],
-        "details":"Penetrance is age-dependent and approaches 100%. Locus structure is (TG)n(TCTG)n(CCTG)n. CCTG expansion causes DM2 but the other repeat units are also variable. Interruptions include GCTG/TCTG/GGCT (PMID: 35245110)",
+        "details":"Penetrance is age-dependent and approaches 100%. Locus structure is (TG)n(TCTG)n(CCTG)n. CCTG expansion causes DM2 but the other repeat units are also variable. Interruptions include GCTG/TCTG/GGCT [pmid:35245110)",
         "omim":[
             "602668"
         ],
         "prevalence":"2.29/100000",
-        "prevalence_details":"2.29/100,000 (PMID: 35483324); population specific prevalence (GeneReview). Most cases have European ancestry, but has been reported worldwide (NBK1466)",
+        "prevalence_details":"2.29/100,000 [pmid:35483324); population specific prevalence (GeneReview). Most cases have European ancestry, but has been reported worldwide (NBK1466)",
         "stripy":[
             "CNBP"
         ],
@@ -1932,7 +1919,7 @@
         "pathogenic_max":81.0,
         "ref_copies":null,
         "motif_len":12,
-        "age_onset":"Typical: 6-15  (GeneReview); Range: 6-16 (PMID: 9012407)",
+        "age_onset":"Typical: 6-15  (GeneReview); Range: 6-16 [pmid:9012407)",
         "age_onset_min":6,
         "age_onset_max":16,
         "typ_age_onset_min":6.0,
@@ -2134,7 +2121,7 @@
         "pathogenic_max":306.0,
         "ref_copies":7.0,
         "motif_len":3,
-        "age_onset":"Typical: 0-1 (PMID: 3742859) (small sample size); Range: 0-3 (PMID: 4042396)",
+        "age_onset":"Typical: 0-1 [pmid:3742859) (small sample size); Range: 0-3 [pmid:4042396)",
         "age_onset_min":0,
         "age_onset_max":3,
         "typ_age_onset_min":null,
@@ -2239,12 +2226,12 @@
         "source":[
             "PMID: 27417533"
         ],
-        "details":"There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family (PMID: 27417533). The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
+        "details":"There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family [pmid:27417533). The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
         "omim":[
             "310200"
         ],
         "prevalence":"4.8/100000",
-        "prevalence_details":"Believed to be 0 for disease specific to STR expansion. 1/3500-4700 male births (incidence) for overall DMD (one of the most common and severe congenital myopathies). 4.8/100,000 prevalence PMID: 35168641. DMD repeat locus expansion only identified in one Greek family (PMID: 27417533)",
+        "prevalence_details":"Believed to be 0 for disease specific to STR expansion. 1/3500-4700 male births (incidence) for overall DMD (one of the most common and severe congenital myopathies). 4.8/100,000 prevalence PMID: 35168641. DMD repeat locus expansion only identified in one Greek family [pmid:27417533)",
         "stripy":[
             "DMD"
         ],
@@ -2322,7 +2309,7 @@
         "pathogenic_max":1000.0,
         "ref_copies":20.7,
         "motif_len":3,
-        "age_onset":"Typical: 10-30 (\"classic\", GeneReview); Range: 0-74 (PMID: 38454488)",
+        "age_onset":"Typical: 10-30 (\"classic\", GeneReview); Range: 0-74 [pmid:38454488)",
         "age_onset_min":0,
         "age_onset_max":74,
         "typ_age_onset_min":10.0,
@@ -2336,12 +2323,12 @@
             "GeneReviews NBK1165",
             "s40478-021-01201-x"
         ],
-        "details":"'3%-8% of DM1 expansions contain variant repeats such as CCG and CGG. These are referred to as variant repeat interruptions and may be associated with later onset and milder phenotype [Miller et al 2020].'(GeneReviews) 'Interruptions of the CTG repeat with CCG, GGC, CTC or CAG motifs are estimated to occur in 3-11% of DM1 patients' (PMID: 35741732)",
+        "details":"'3%-8% of DM1 expansions contain variant repeats such as CCG and CGG. These are referred to as variant repeat interruptions and may be associated with later onset and milder phenotype [Miller et al 2020].'(GeneReviews) 'Interruptions of the CTG repeat with CCG, GGC, CTC or CAG motifs are estimated to occur in 3-11% of DM1 patients' [pmid:35741732)",
         "omim":[
             "160900"
         ],
         "prevalence":"9.27/100000",
-        "prevalence_details":"5-20/100,000 (GeneReview); Tang et al., 2017: 0.5-18.1/100,000; 6.5/100,000 (PMID: 31159885) ; 9.27 cases (95% CI: 4.73-15.21) per 100,000, ranging from 0.37 to 36.29 cases per 100,000 (PMID: 35483324). Found across ethnicities/ancestries, with population-dependent prevalence (NBK1165)",
+        "prevalence_details":"5-20/100,000 (GeneReview); Tang et al., 2017: 0.5-18.1/100,000; 6.5/100,000 [pmid:31159885) ; 9.27 cases (95% CI: 4.73-15.21) per 100,000, ranging from 0.37 to 36.29 cases per 100,000 [pmid:35483324). Found across ethnicities/ancestries, with population-dependent prevalence (NBK1165)",
         "stripy":[
             "DMPK"
         ],
@@ -2532,12 +2519,12 @@
             "PMID: 37399286",
             "PMID: 39227614"
         ],
-        "details":"Higher repeat size is associated with earlier age of onset (PMID: 39263992). The 250-300 repeats range is linked to incomplete penetrance and >300 repeats with complete penetrance in some studies and resources (NBK599589; PMID: 37399286; PMID: 39227614). However, our thresholds are taken from suggestions made by Mohren et al upon evaluation of 169 cases and 802 controls; the authors propose lower thresholds based on pathogenic cases of shorter pure repeats (PMID: 39227614). Additionally, this study suggests that benign motifs may disrupt the formation of secondary structures in DNA/RNA, leading to reduced pathogenicity. Variantion in flanking regions appear to correlate with repeat size (PMID: 39227614, PMID: 38937606).",
+        "details":"Higher repeat size is associated with earlier age of onset [pmid:39263992). The 250-300 repeats range is linked to incomplete penetrance and >300 repeats with complete penetrance in some studies and resources (NBK599589; PMID: 37399286; PMID: 39227614). However, our thresholds are taken from suggestions made by Mohren et al upon evaluation of 169 cases and 802 controls; the authors propose lower thresholds based on pathogenic cases of shorter pure repeats [pmid:39227614). Additionally, this study suggests that benign motifs may disrupt the formation of secondary structures in DNA/RNA, leading to reduced pathogenicity. Variantion in flanking regions appear to correlate with repeat size [pmid:39227614, PMID: 38937606).",
         "omim":[
             "620174"
         ],
         "prevalence":null,
-        "prevalence_details":"Intermediate expansions 1-2% of population, but non-GAA-pure without relation to ataxia. (GeneReview). Found in multiple ethnicities (PMID: 38876750); diagnosed patients in America, Brazil, Japan, Germany, Spain, Canada, France, Austria and Australia (NBK599589)",
+        "prevalence_details":"Intermediate expansions 1-2% of population, but non-GAA-pure without relation to ataxia. (GeneReview). Found in multiple ethnicities [pmid:38876750); diagnosed patients in America, Brazil, Japan, Germany, Spain, Canada, France, Austria and Australia (NBK599589)",
         "stripy":[
             "FGF14"
         ],
@@ -2564,7 +2551,7 @@
         ],
         "webstr_hg19":[],
         "tr_gnomad":[],
-        "disease_description":"Late-onset ataxia, may have episodic onset, downbeat nystagmus, vertigo, neuropathy (PMID: 39349043)",
+        "disease_description":"Late-onset ataxia, may have episodic onset, downbeat nystagmus, vertigo, neuropathy [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[
             "ataxia"
@@ -2611,7 +2598,7 @@
         "pathogenic_max":2000.0,
         "ref_copies":20.6667,
         "motif_len":3,
-        "age_onset":"Typical: FXS 1 to \"first several years of life\", FXTAS 60-65 (GeneReview); Range: 0 (FXS, UptoDate) - 78 (PMID: 17427188); detailed description of typical symptom onset and diagnosis available at 10.1007/978-3-031-66932-3_14",
+        "age_onset":"Typical: FXS 1 to \"first several years of life\", FXTAS 60-65 (GeneReview); Range: 0 (FXS, UptoDate) - 78 [pmid:17427188); detailed description of typical symptom onset and diagnosis available at 10.1007/978-3-031-66932-3_14",
         "age_onset_min":0,
         "age_onset_max":78,
         "typ_age_onset_min":1.0,
@@ -2630,7 +2617,7 @@
             "300623"
         ],
         "prevalence":"14/100000",
-        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 (GeneReviews). Female prevalence 9/100,000 (PMID: 24700618). Tang et al., 2017: known carrier frequency 300-500/100,000 but detected was 11/100,000. 10.1007/978-3-031-66932-3_14: FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females. Found worldwide (NBK1384)",
+        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 (GeneReviews). Female prevalence 9/100,000 [pmid:24700618). Tang et al., 2017: known carrier frequency 300-500/100,000 but detected was 11/100,000. 10.1007/978-3-031-66932-3_14: FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females. Found worldwide (NBK1384)",
         "stripy":[
             "FMR1"
         ],
@@ -2737,7 +2724,7 @@
             "110100"
         ],
         "prevalence":"0.3/50000",
-        "prevalence_details":"1 in 50,000 births globally for all BPES, with FOXL2 expansions 30% of pathogenic variants (NBK1441; NBK535148 (PMID: 12529855)). Found worldwide, without differences in prevalence based on sex/ethnicity (NBK1441).",
+        "prevalence_details":"1 in 50,000 births globally for all BPES, with FOXL2 expansions 30% of pathogenic variants (NBK1441; NBK535148 [pmid:12529855)). Found worldwide, without differences in prevalence based on sex/ethnicity (NBK1441).",
         "stripy":[
             "FOXL2"
         ],
@@ -2826,7 +2813,7 @@
             "Mirkin 2007",
             "GeneReviews NBK535148"
         ],
-        "details":"The expanded repeats were interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences (PMID: 11748752)",
+        "details":"The expanded repeats were interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences [pmid:11748752)",
         "omim":[
             "229300"
         ],
@@ -2911,7 +2898,7 @@
         "pathogenic_max":138.0,
         "ref_copies":14.7,
         "motif_len":3,
-        "age_onset":"Typical: 20-34 (PMID: 32413282); Range: 14 (PMID: ...282) - 70 (PMID: 33374016)",
+        "age_onset":"Typical: 20-34 [pmid:32413282); Range: 14 [pmid:...282) - 70 [pmid:33374016)",
         "age_onset_min":14,
         "age_onset_max":70,
         "typ_age_onset_min":20.0,
@@ -2923,12 +2910,12 @@
             "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
             "32413282 (Pubmed)"
         ],
-        "details":"Interruptions Seen: CGA (PMID: 35245110); Interruptions mentioned but not confirmed in primary literature: TCG/CCT/TTG (PMID: 38467784)",
+        "details":"Interruptions Seen: CGA [pmid:35245110); Interruptions mentioned but not confirmed in primary literature: TCG/CCT/TTG [pmid:38467784)",
         "omim":[
             "618940"
         ],
         "prevalence":null,
-        "prevalence_details":"Population dependent; presumed rare. Predominantly found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"Population dependent; presumed rare. Predominantly found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "GIPC1"
         ],
@@ -2961,7 +2948,7 @@
         "tr_gnomad":[
             "TR154638"
         ],
-        "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750); Slowly progressive distal weakness, ophthalmoplegia, facial and bulbar weakness (PMID: 39349043)",
+        "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness [pmid:38876750); Slowly progressive distal weakness, ophthalmoplegia, facial and bulbar weakness [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -3023,7 +3010,7 @@
             "618412"
         ],
         "prevalence":null,
-        "prevalence_details":"As of 2019, only 7 cases total of GLS deficiency, including non-repeat. Identified patients have been Canadian (PMID: 30970188), Kurdish (Turkey; PMID: 35913761) and US-American (Northern European/Native American descen; PMID: 35913761)",
+        "prevalence_details":"As of 2019, only 7 cases total of GLS deficiency, including non-repeat. Identified patients have been Canadian [pmid:30970188), Kurdish (Turkey; PMID: 35913761) and US-American (Northern European/Native American descen; PMID: 35913761)",
         "stripy":[
             "GLS"
         ],
@@ -3120,7 +3107,7 @@
             "140000"
         ],
         "prevalence":null,
-        "prevalence_details":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235, GeneReview)",
+        "prevalence_details":"Extremely rare, published cases generally European ancestry or unknown [pmid:15385446; PMID: 17935235, GeneReview)",
         "stripy":[
             "HOXA13_1"
         ],
@@ -3217,7 +3204,7 @@
             "140000"
         ],
         "prevalence":null,
-        "prevalence_details":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235, GeneReview)",
+        "prevalence_details":"Extremely rare, published cases generally European ancestry or unknown [pmid:15385446; PMID: 17935235, GeneReview)",
         "stripy":[
             "HOXA13_2"
         ],
@@ -3314,7 +3301,7 @@
             "140000"
         ],
         "prevalence":null,
-        "prevalence_details":"Extremely rare, published cases generally European ancestry or unknown (PMID: 15385446; PMID: 17935235, GeneReview)",
+        "prevalence_details":"Extremely rare, published cases generally European ancestry or unknown [pmid:15385446; PMID: 17935235, GeneReview)",
         "stripy":[
             "HOXA13_3"
         ],
@@ -3411,7 +3398,7 @@
             "186000"
         ],
         "prevalence":null,
-        "prevalence_details":"Found across dozens of unrelated families worldwide (PMID: 24038517)",
+        "prevalence_details":"Found across dozens of unrelated families worldwide [pmid:24038517)",
         "stripy":[
             "HOXD13"
         ],
@@ -3491,7 +3478,7 @@
         "pathogenic_max":250.0,
         "ref_copies":21.3,
         "motif_len":3,
-        "age_onset":"Typical: 35-44 (GeneReview); Range: 2-85 (PMID: 21171977)",
+        "age_onset":"Typical: 35-44 (GeneReview); Range: 2-85 [pmid:21171977)",
         "age_onset_min":2,
         "age_onset_max":85,
         "typ_age_onset_min":35.0,
@@ -3692,7 +3679,7 @@
         "pathogenic_max":90.0,
         "ref_copies":11.7,
         "motif_len":3,
-        "age_onset":"Typical: 31-51 (PMID: 34047774); Range: 7-66 (PMID: 2124290)",
+        "age_onset":"Typical: 31-51 [pmid:34047774); Range: 7-66 [pmid:2124290)",
         "age_onset_min":7,
         "age_onset_max":66,
         "typ_age_onset_min":31.0,
@@ -3707,12 +3694,12 @@
             "NBK535148",
             "PMID 31332380"
         ],
-        "details":"Possible milder clinical phenotype of inherited peripheral neuropathy (IPN) associated with shorter expansions (https://doi.org/10.1212/WNL.000000000020478). Interruptions Seen: ACG, CCA (PMID: 35245110)",
+        "details":"Possible milder clinical phenotype of inherited peripheral neuropathy (IPN) associated with shorter expansions (https://doi.org/10.1212/WNL.000000000020478). Interruptions Seen: ACG, CCA [pmid:35245110)",
         "omim":[
             "164310"
         ],
         "prevalence":null,
-        "prevalence_details":"Population dependent; unknown percentage of LRP12 pathogenic variants. Typically East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"Population dependent; unknown percentage of LRP12 pathogenic variants. Typically East Asian ancestry [pmid:38876750)",
         "stripy":[
             "LRP12"
         ],
@@ -3748,7 +3735,7 @@
         "tr_gnomad":[
             "TR88348"
         ],
-        "disease_description":"Adult-onset ptosis, ophthalmoplegia, facial, distal limb weakness, dysphagia (PMID: 39349043); Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750)",
+        "disease_description":"Adult-onset ptosis, ophthalmoplegia, facial, distal limb weakness, dysphagia [pmid:39349043); Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -3803,7 +3790,7 @@
         "pathogenic_max":1035.0,
         "ref_copies":14.8,
         "motif_len":5,
-        "age_onset":"Typical: 24-41 (PMID: 19616813; based on one 76 member pedigree); Range: 10 (OMIM) - 46 (PMID: 31664039)",
+        "age_onset":"Typical: 24-41 [pmid:19616813; based on one 76 member pedigree); Range: 10 (OMIM) - 46 [pmid:31664039)",
         "age_onset_min":10,
         "age_onset_max":46,
         "typ_age_onset_min":null,
@@ -3820,7 +3807,7 @@
             "613608"
         ],
         "prevalence":null,
-        "prevalence_details":"Overall FAME prevalence is < 1/35,000; MARCHF6-caused much smaller. Most cases have European ancestry (PMID: 38876750)",
+        "prevalence_details":"Overall FAME prevalence is < 1/35,000; MARCHF6-caused much smaller. Most cases have European ancestry [pmid:38876750)",
         "stripy":[
             "MARCHF6"
         ],
@@ -3855,7 +3842,7 @@
         "tr_gnomad":[
             "TR51895"
         ],
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750); Adult-onset cortical tremor with epilepsy (PMID: 39349043)",
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [pmid:38876750); Adult-onset cortical tremor with epilepsy [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -3900,7 +3887,7 @@
         "pathogenic_max":56.0,
         "ref_copies":10.7,
         "motif_len":3,
-        "age_onset":"Typical: 44-60 (PMID: 26777436); Range: 25 (PMID: 22378146) - 77 (PMID: 26777436)",
+        "age_onset":"Typical: 44-60 [pmid:26777436); Range: 25 [pmid:22378146) - 77 [pmid:26777436)",
         "age_onset_min":25,
         "age_onset_max":77,
         "typ_age_onset_min":44.0,
@@ -3918,7 +3905,7 @@
             "105400"
         ],
         "prevalence":null,
-        "prevalence_details":"2.7-7.4/100,000 (All ALS, not just this locus), NIPA1 + C9orf72 is 0.37% of ALS patients; frequency of NIPA1 expansion in controls is 3.74% (PMID: 31286297). The repeat expansion is associated with disease globally (PMID: 30342764), but likely unassociated in African probands (PMID: 34179866)",
+        "prevalence_details":"2.7-7.4/100,000 (All ALS, not just this locus), NIPA1 + C9orf72 is 0.37% of ALS patients; frequency of NIPA1 expansion in controls is 3.74% [pmid:31286297). The repeat expansion is associated with disease globally [pmid:30342764), but likely unassociated in African probands [pmid:34179866)",
         "stripy":[
             "NIPA1"
         ],
@@ -3995,7 +3982,7 @@
         "pathogenic_max":2500.0,
         "ref_copies":7.2,
         "motif_len":6,
-        "age_onset":"Typical: 40-60 (NBK231880); Range: 28 (PMID: 37810464) - 67 (PMID: 37332636)",
+        "age_onset":"Typical: 40-60 (NBK231880); Range: 28 [pmid:37810464) - 67 [pmid:37332636)",
         "age_onset_min":28,
         "age_onset_max":67,
         "typ_age_onset_min":40.0,
@@ -4008,12 +3995,12 @@
             "OMIM",
             "NBK231880"
         ],
-        "details":"Interruptions: GGCTG, GGCCCTG, GGCCG, and GGCCTTG (PMID: 37051597)",
+        "details":"Interruptions: GGCTG, GGCCCTG, GGCCG, and GGCCTTG [pmid:37051597)",
         "omim":[
             "614153"
         ],
         "prevalence":null,
-        "prevalence_details":"Western Japan: 3.6% of all SCA; Costa da Morte region of Spain: 6.3% of all SCA(PMID: 37332636); US: 0.7% of large undiagnosed ataxia cohort (PMID: 28761930). Found across ancestries/ethnicities (OMIM: 614153)",
+        "prevalence_details":"Western Japan: 3.6% of all SCA; Costa da Morte region of Spain: 6.3% of all SCA[pmid:37332636); US: 0.7% of large undiagnosed ataxia cohort [pmid:28761930). Found across ancestries/ethnicities (OMIM: 614153)",
         "stripy":[
             "NOP56"
         ],
@@ -4095,7 +4082,7 @@
         "pathogenic_max":517.0,
         "ref_copies":13.3,
         "motif_len":3,
-        "age_onset":"Typical: 30-70 (OMIM); Range: 10 (PMID: 37090934) - 78 (PMID: 37305750)",
+        "age_onset":"Typical: 30-70 (OMIM); Range: 10 [pmid:37090934) - 78 [pmid:37305750)",
         "age_onset_min":10,
         "age_onset_max":78,
         "typ_age_onset_min":30.0,
@@ -4108,12 +4095,12 @@
             "https://doi.org/10.1016/j.ajhg.2019.05.013",
             "s40478-021-01201-x"
         ],
-        "details":"Age of onset inversely related to allele size (PMID: 38377026). Motif variation in controls: (AGG)(CGG)n(AGG)0-3(CGG)0-2. Methylation involved. GGA and AGC interruptions may influence phenotype (PMID: 34718964); Interruptions Seen: GGA, GGG (PMID: 35245110); ACCGAGAAGATGCCCGCCCTGC interruption mentioned but not confirmed in PMID: 38467784. Detection may be challenging due to parology between genes: C253572.1, NOTCH2, NOTCH2NL, NBPF14, NBPF19",
+        "details":"Age of onset inversely related to allele size [pmid:38377026). Motif variation in controls: (AGG)(CGG)n(AGG)0-3(CGG)0-2. Methylation involved. GGA and AGC interruptions may influence phenotype [pmid:34718964); Interruptions Seen: GGA, GGG [pmid:35245110); ACCGAGAAGATGCCCGCCCTGC interruption mentioned but not confirmed in PMID: 38467784. Detection may be challenging due to parology between genes: C253572.1, NOTCH2, NOTCH2NL, NBPF14, NBPF19",
         "omim":[
             "603472"
         ],
         "prevalence":null,
-        "prevalence_details":">400 patients reported in literature (PMID: 37371433). Found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":">400 patients reported in literature [pmid:37371433). Found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "NOTCH2NLC"
         ],
@@ -4189,7 +4176,7 @@
         "pathogenic_max":700.0,
         "ref_copies":7.0,
         "motif_len":3,
-        "age_onset":"15-40 (PMID: 31332380; only characterized in one family)",
+        "age_onset":"15-40 [pmid:31332380; only characterized in one family)",
         "age_onset_min":15,
         "age_onset_max":40,
         "typ_age_onset_min":null,
@@ -4208,7 +4195,7 @@
             "618637"
         ],
         "prevalence":null,
-        "prevalence_details":"Rare. Found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"Rare. Found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "NUTM2B-AS1"
         ],
@@ -4237,7 +4224,7 @@
         "tr_gnomad":[
             "TR102881"
         ],
-        "disease_description":"Oculopharyngodistal myopathy and white matter abnormalities (PMID: 38876750); Ptosis, ophthalmoplegia, dysphagia, dysarthria (PMID: 39349043)",
+        "disease_description":"Oculopharyngodistal myopathy and white matter abnormalities [pmid:38876750); Ptosis, ophthalmoplegia, dysphagia, dysarthria [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -4282,7 +4269,7 @@
         "pathogenic_max":18.0,
         "ref_copies":7.0,
         "motif_len":3,
-        "age_onset":"Typical: 40-59 (PMID: 37519616); Range: 20-79 (PMID: 35112761)",
+        "age_onset":"Typical: 40-59 [pmid:37519616); Range: 20-79 [pmid:35112761)",
         "age_onset_min":20,
         "age_onset_max":79,
         "typ_age_onset_min":40.0,
@@ -4336,7 +4323,7 @@
         "tr_gnomad":[
             "TR128439"
         ],
-        "disease_description":"Ptosis and dysphagia (PMID: 39349043); facial weakness, ptosis (PMID: 38876750)",
+        "disease_description":"Ptosis and dysphagia [pmid:39349043); facial weakness, ptosis [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -4381,7 +4368,7 @@
         "pathogenic_max":33.0,
         "ref_copies":15.7,
         "motif_len":3,
-        "age_onset":"Typical: 0-2 (GeneReview/PMID: 15121777); Range: 0-36 (PMID: 16873766)",
+        "age_onset":"Typical: 0-2 (GeneReview/PMID: 15121777); Range: 0-36 [pmid:16873766)",
         "age_onset_min":0,
         "age_onset_max":36,
         "typ_age_onset_min":0.0,
@@ -4399,7 +4386,7 @@
             "209880"
         ],
         "prevalence":null,
-        "prevalence_details":"Incidence is 1:148000-200000 births (Estimated, may include mild/undiagnosed or be overestimate globally) (GeneReview). Rare, but reported worldwide (PMID: 15121777)",
+        "prevalence_details":"Incidence is 1:148000-200000 births (Estimated, may include mild/undiagnosed or be overestimate globally) (GeneReview). Rare, but reported worldwide [pmid:15121777)",
         "stripy":[
             "PHOX2B"
         ],
@@ -4477,7 +4464,7 @@
         "pathogenic_max":null,
         "ref_copies":13.7,
         "motif_len":3,
-        "age_onset":"Typical: 57 (PMID: 20399836) - 59 (PMID: 20826197); Range: 23-87 (PMID: 20399836)",
+        "age_onset":"Typical: 57 [pmid:20399836) - 59 [pmid:20826197); Range: 23-87 [pmid:20399836)",
         "age_onset_min":23,
         "age_onset_max":87,
         "typ_age_onset_min":57.0,
@@ -4490,7 +4477,7 @@
             "PMID: 20399836",
             "PMID: 10196696"
         ],
-        "details":"There is conflicting evidence for the association between this repeat expansion and Parkinson's risk (PMID: 20399836 and PMID: 10196696). Deviation from 10 may impart disease risk with variable penetrance. May be predisposing factor in earlier age of onset in FRDA patients (PMID: 19043662)",
+        "details":"There is conflicting evidence for the association between this repeat expansion and Parkinson's risk [pmid:20399836 and PMID: 10196696). Deviation from 10 may impart disease risk with variable penetrance. May be predisposing factor in earlier age of onset in FRDA patients [pmid:19043662)",
         "omim":[
             "258450",
             "157640"
@@ -4531,7 +4518,7 @@
         "tr_gnomad":[
             "TR137533"
         ],
-        "disease_description":"sensory ataxic neuropathy, dysarthria, and ophtalmoparesis (PMID: 38876750)",
+        "disease_description":"sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -4596,7 +4583,7 @@
             "604326"
         ],
         "prevalence":null,
-        "prevalence_details":"Frequent in India; rare in other populations (PMID: 34711523)",
+        "prevalence_details":"Frequent in India; rare in other populations [pmid:34711523)",
         "stripy":[
             "PPP2R2B"
         ],
@@ -4696,7 +4683,7 @@
             "616488"
         ],
         "prevalence":null,
-        "prevalence_details":"Repeat expansion found in 2 families from Pakistan and Saudi Arabia (PMID: 26005867). All PRDM12 disease mutations < 1/1,000,000",
+        "prevalence_details":"Repeat expansion found in 2 families from Pakistan and Saudi Arabia [pmid:26005867). All PRDM12 disease mutations < 1/1,000,000",
         "stripy":[
             "PRDM12"
         ],
@@ -4776,7 +4763,7 @@
         "pathogenic_max":null,
         "ref_copies":null,
         "motif_len":24,
-        "age_onset":"Typical: 50-60 (GeneReview); Range: 31-63 (PMID: 37379724)",
+        "age_onset":"Typical: 50-60 (GeneReview); Range: 31-63 [pmid:37379724)",
         "age_onset_min":31,
         "age_onset_max":63,
         "typ_age_onset_min":50.0,
@@ -4792,7 +4779,7 @@
             "123400"
         ],
         "prevalence":null,
-        "prevalence_details":"<0.0225/1,000,000: <15% of CJ variants are repeat expansions (NBK535148). 15% newly diagnosed prion disease cases are genetic (GeneReview) 1 individual per million per year worldwide (350 cases annually in US) (PMID: 29939637). Found worldwide (NBK1229).",
+        "prevalence_details":"<0.0225/1,000,000: <15% of CJ variants are repeat expansions (NBK535148). 15% newly diagnosed prion disease cases are genetic (GeneReview) 1 individual per million per year worldwide (350 cases annually in US) [pmid:29939637). Found worldwide (NBK1229).",
         "stripy":[],
         "gnomad":[
             "PRNP"
@@ -4889,10 +4876,10 @@
             "https://doi.org/10.1002/mds.29654",
             "PMID: 38876750"
         ],
-        "details":"TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali (PMID: 37994247). Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in (PMID: 38876750). It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note, locus is partially deleted in T2T reference genome",
+        "details":"TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali [pmid:37994247). Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in [pmid:38876750). It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note, locus is partially deleted in T2T reference genome",
         "omim":[],
         "prevalence":null,
-        "prevalence_details":"Observed in a single family from Mali with ten affected individuals (PMID: 37994247)",
+        "prevalence_details":"Observed in a single family from Mali with ten affected individuals [pmid:37994247)",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
@@ -4911,7 +4898,7 @@
         ],
         "webstr_hg19":[],
         "tr_gnomad":[],
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)",
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -4962,7 +4949,7 @@
         "pathogenic_max":60.0,
         "ref_copies":17.4,
         "motif_len":5,
-        "age_onset":"Typical: 20-33 (PMID: 30351492); Range: 18 (PMID: 29507423) - 37 (PMID: 30351492)",
+        "age_onset":"Typical: 20-33 [pmid:30351492); Range: 18 [pmid:29507423) - 37 [pmid:30351492)",
         "age_onset_min":18,
         "age_onset_max":37,
         "typ_age_onset_min":null,
@@ -4975,12 +4962,12 @@
             "29507423 (Pubmed)",
             "https://sci-hub.hkvisa.net/10.1111/ene.13848"
         ],
-        "details":"Novel, (TTTTA)exp(TTTCA)exp(TTTTA)n, but only the TTTCA is specific to affected individuals, Alu-associated repeat, incomplete penetrance. Interruptions Seen: TATTA, TTTTTA (PMID: 35245110)",
+        "details":"Novel, (TTTTA)exp(TTTCA)exp(TTTTA)n, but only the TTTCA is specific to affected individuals, Alu-associated repeat, incomplete penetrance. Interruptions Seen: TATTA, TTTTTA [pmid:35245110)",
         "omim":[
             "618075"
         ],
         "prevalence":null,
-        "prevalence_details":"FAME overall is 1/35,000 in Japan. Repeat expansion found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"FAME overall is 1/35,000 in Japan. Repeat expansion found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "RAPGEF2"
         ],
@@ -5016,7 +5003,7 @@
         "tr_gnomad":[
             "TR49300"
         ],
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)",
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -5122,12 +5109,12 @@
             "https://www.ncbi.nlm.nih.gov/books/NBK564656/",
             "https://doi.org/10.1101/2023.05.12.540470"
         ],
-        "details":"Pathogenic expansions may be flanked by other motifs. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 (PMID: 32851396). Motif heterogeneity is common in unaffected individuals. The pathogenic size threshold appears to differ for the AAAGG motif. AAAGG expansions >= 600 repeats have been observed in CANVAS patients, while ~100-380 repeats have been observed in controls, and so are not predicted to be pathogenic (PMID: 37450567).",
+        "details":"Pathogenic expansions may be flanked by other motifs. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [pmid:32851396). Motif heterogeneity is common in unaffected individuals. The pathogenic size threshold appears to differ for the AAAGG motif. AAAGG expansions >= 600 repeats have been observed in CANVAS patients, while ~100-380 repeats have been observed in controls, and so are not predicted to be pathogenic [pmid:37450567).",
         "omim":[
             "614575"
         ],
         "prevalence":null,
-        "prevalence_details":"Carrier frequency in European is 0.7-4% and in Chinese Han population is 2.24%; estimated prevalence of 1/20,000 to 1/625 (NBK564656). Many cases are likely not diagnosed due to heterogeneous presentation (PMID: 39230846). Observed in multiple ethnicities (PMID: 38876750); patients diagnosed with European, Chinese Han, and Maori ancestry, as well as found in Japan, Canada, Brazil, the UK, Italy, Germany, and Australia (NBK564656)",
+        "prevalence_details":"Carrier frequency in European is 0.7-4% and in Chinese Han population is 2.24%; estimated prevalence of 1/20,000 to 1/625 (NBK564656). Many cases are likely not diagnosed due to heterogeneous presentation [pmid:39230846). Observed in multiple ethnicities [pmid:38876750); patients diagnosed with European, Chinese Han, and Maori ancestry, as well as found in Japan, Canada, Brazil, the UK, Italy, Germany, and Australia (NBK564656)",
         "stripy":[
             "RFC1"
         ],
@@ -5163,7 +5150,7 @@
         "tr_gnomad":[
             "TR42349"
         ],
-        "disease_description":"Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia (PMID: 38876750); Late-onset ataxia, sensory neuropathy, vestibular areflexia syndrome (PMID: 39349043)",
+        "disease_description":"Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [pmid:38876750); Late-onset ataxia, sensory neuropathy, vestibular areflexia syndrome [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[
             "ataxia"
@@ -5210,7 +5197,7 @@
         "pathogenic_max":197.0,
         "ref_copies":11.7,
         "motif_len":3,
-        "age_onset":"Typical: 18-30 (PMID: 35148830); Range: 10-30 (PMID: 35700120)",
+        "age_onset":"Typical: 18-30 [pmid:35148830); Range: 10-30 [pmid:35700120)",
         "age_onset_min":10,
         "age_onset_max":30,
         "typ_age_onset_min":18.0,
@@ -5221,10 +5208,10 @@
         "source":[
             "Yu 2022 AJHG"
         ],
-        "details":"toxic poly-glycine protein and/or toxic RNA gain-of-function effects. AGG and TGG interruptions (PMID: 35148830)",
+        "details":"toxic poly-glycine protein and/or toxic RNA gain-of-function effects. AGG and TGG interruptions [pmid:35148830)",
         "omim":[],
         "prevalence":null,
-        "prevalence_details":"Population dependent. 21.6% of one OPDM cohort (PMID: 35148830). Typically found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"Population dependent. 21.6% of one OPDM cohort [pmid:35148830). Typically found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "RILPL1"
         ],
@@ -5256,7 +5243,7 @@
         "tr_gnomad":[
             "TR121403"
         ],
-        "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness (PMID: 38876750)",
+        "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -5408,7 +5395,7 @@
         "pathogenic_max":3680.0,
         "ref_copies":21.6,
         "motif_len":5,
-        "age_onset":"Typical: 21-39 (PMID: 29939203); Range: 12 (PMID: 29939203) - 68 (PMID: 29507423)",
+        "age_onset":"Typical: 21-39 [pmid:29939203); Range: 12 [pmid:29939203) - 68 [pmid:29507423)",
         "age_onset_min":12,
         "age_onset_max":68,
         "typ_age_onset_min":21.0,
@@ -5424,7 +5411,7 @@
             "601068"
         ],
         "prevalence":null,
-        "prevalence_details":"FAME overall is 1/35,000 in Japan. Typically found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"FAME overall is 1/35,000 in Japan. Typically found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "SAMD12"
         ],
@@ -5457,7 +5444,7 @@
         "tr_gnomad":[
             "TR89226"
         ],
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750); Adult-onset cortical myoclonus, with seizures in up to a half of patients (PMID: 39349043)",
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [pmid:38876750); Adult-onset cortical myoclonus, with seizures in up to a half of patients [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -5502,7 +5489,7 @@
         "pathogenic_max":26.0,
         "ref_copies":15.0,
         "motif_len":3,
-        "age_onset":"Typical: 0-3 (PMID: 19654509, PMID: 21289259; small sample size); Range: 0-9 (PMID: 19654509) ",
+        "age_onset":"Typical: 0-3 [pmid:19654509, PMID: 21289259; small sample size); Range: 0-9 [pmid:19654509) ",
         "age_onset_min":0,
         "age_onset_max":9,
         "typ_age_onset_min":null,
@@ -5552,7 +5539,7 @@
         "tr_gnomad":[
             "TR173479"
         ],
-        "disease_description":"X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without [intellectual disability] (PMID: 24346842)",
+        "disease_description":"X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without [intellectual disability] [pmid:24346842)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -5619,7 +5606,7 @@
         "pathogenic_max":274.0,
         "ref_copies":11.6,
         "motif_len":5,
-        "age_onset":"Typical: 12-30; Range: 4-60 (PMID: 31664034)",
+        "age_onset":"Typical: 12-30; Range: 4-60 [pmid:31664034)",
         "age_onset_min":4,
         "age_onset_max":60,
         "typ_age_onset_min":12.0,
@@ -5635,7 +5622,7 @@
             "607876"
         ],
         "prevalence":null,
-        "prevalence_details":"FAME overall is 1/35,000 in Japan. This repeat expansion is typically found in individuals of European ancestry (PMID: 38876750)",
+        "prevalence_details":"FAME overall is 1/35,000 in Japan. This repeat expansion is typically found in individuals of European ancestry [pmid:38876750)",
         "stripy":[
             "STARD7"
         ],
@@ -5670,7 +5657,7 @@
         "tr_gnomad":[
             "TR19329"
         ],
-        "disease_description":"Finger, hand tremor with later-onset myoclonus and generalised tonic-clonic seizures (PMID: 39349043)",
+        "disease_description":"Finger, hand tremor with later-onset myoclonus and generalised tonic-clonic seizures [pmid:39349043)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -5715,7 +5702,7 @@
         "pathogenic_max":52.0,
         "ref_copies":4.0,
         "motif_len":6,
-        "age_onset":"Average age of onset for XDP is 39.7 years in males, 52 years in females, range 12-79 years. ~99% of cases are male (PMID: 29229810, PMID: 38876750, PMID: 15596620)",
+        "age_onset":"Average age of onset for XDP is 39.7 years in males, 52 years in females, range 12-79 years. ~99% of cases are male [pmid:29229810, PMID: 38876750, PMID: 15596620)",
         "age_onset_min":12,
         "age_onset_max":79,
         "typ_age_onset_min":39.7,
@@ -5736,7 +5723,7 @@
             "314250"
         ],
         "prevalence":null,
-        "prevalence_details":"Philippines overall 0.34:100,000. Panay Islands 5.24:100,000. Capiz province 18.9:100,000. To date, all known cases to date are of Filipino descent (PMID: 38876750)",
+        "prevalence_details":"Philippines overall 0.34:100,000. Panay Islands 5.24:100,000. Capiz province 18.9:100,000. To date, all known cases to date are of Filipino descent [pmid:38876750)",
         "stripy":[],
         "gnomad":[],
         "genereviews":[
@@ -5825,7 +5812,7 @@
             "Mirkin 2007",
             "GeneReviews NBK1438"
         ],
-        "details":"Interruptions Seen: CAA (PMID: 35245110)",
+        "details":"Interruptions Seen: CAA [pmid:35245110)",
         "omim":[
             "607136"
         ],
@@ -6007,7 +5994,7 @@
         "pathogenic_max":150.0,
         "ref_copies":25.3,
         "motif_len":3,
-        "age_onset":"Typical: 40-59 (PMID: 1676829); Range: 32 (PMID: 21245398) - 70 (PMID: 25168903)",
+        "age_onset":"Typical: 40-59 [pmid:1676829); Range: 32 [pmid:21245398) - 70 [pmid:25168903)",
         "age_onset_min":32,
         "age_onset_max":70,
         "typ_age_onset_min":40.0,
@@ -6019,12 +6006,12 @@
             "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
             "NBK535148"
         ],
-        "details":"Penetrance is <100%; reduced penetrance has been reported in individuals with >80 CTG repeats [Wieben et al 2014]. Predominantly in women (~75%) (PMID: 16769829). Although studies on the prevalence of FECD worldwide are limited, the disorder is thought to be more common in Eurasian populations (PMID: 26401622), with its corneal manifestations documented in 11% of females and 7% of males in Reykjavik, Iceland, 8.5 % of Singapore Chinese, and 5.5% of Japanese. (PMID: 25722209). Uncommon/rare in Saudi Arabia, Singaporean Chinese, and Japan (Orphanet: 98974)",
+        "details":"Penetrance is <100%; reduced penetrance has been reported in individuals with >80 CTG repeats [Wieben et al 2014]. Predominantly in women (~75%) [pmid:16769829). Although studies on the prevalence of FECD worldwide are limited, the disorder is thought to be more common in Eurasian populations [pmid:26401622), with its corneal manifestations documented in 11% of females and 7% of males in Reykjavik, Iceland, 8.5 % of Singapore Chinese, and 5.5% of Japanese. [pmid:25722209). Uncommon/rare in Saudi Arabia, Singaporean Chinese, and Japan (Orphanet: 98974)",
         "omim":[
             "613267"
         ],
         "prevalence":"4.5/100",
-        "prevalence_details":"~4/100 (over 40) (OMIM); 5/100 (PMID: 20825314)",
+        "prevalence_details":"~4/100 (over 40) (OMIM); 5/100 [pmid:20825314)",
         "stripy":[
             "TCF4"
         ],
@@ -6104,7 +6091,7 @@
         "pathogenic_max":100.0,
         "ref_copies":29.3,
         "motif_len":3,
-        "age_onset":"Typical: 8-40 (small sample size); Range: 4-51 (PMID: 37148549)",
+        "age_onset":"Typical: 8-40 (small sample size); Range: 4-51 [pmid:37148549)",
         "age_onset_min":4,
         "age_onset_max":51,
         "typ_age_onset_min":null,
@@ -6116,10 +6103,10 @@
             "https://doi.org/10.1002/mds.29412",
             "https://doi.org/10.1042/ETLS20230018"
         ],
-        "details":"Expansion found in affected individuals from 2 families and not in 500 controls. Longer alleles were associated with earlier age of onset. For example, an individual with 100 repeats had age of onset at 4 years. CAA interruptions can reduce toxicity (PMID: 37148549)",
+        "details":"Expansion found in affected individuals from 2 families and not in 500 controls. Longer alleles were associated with earlier age of onset. For example, an individual with 100 repeats had age of onset at 4 years. CAA interruptions can reduce toxicity [pmid:37148549)",
         "omim":[],
         "prevalence":null,
-        "prevalence_details":"Has been observed in Chinese families (PMID: 37148549; PMID: 24677642)",
+        "prevalence_details":"Has been observed in Chinese families [pmid:37148549; PMID: 24677642)",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
@@ -6143,7 +6130,7 @@
         "tr_gnomad":[
             "TR142069"
         ],
-        "disease_description":"THAP11-caused SCA involves symptoms including gait ataxia, dysarthia, dysphagia, slow saccades, ptosis, and/or nystagmus (PMID: 37148549)",
+        "disease_description":"THAP11-caused SCA involves symptoms including gait ataxia, dysarthia, dysphagia, slow saccades, ptosis, and/or nystagmus [pmid:37148549)",
         "locus_tags":[],
         "disease_tags":[
             "ataxia"
@@ -6211,7 +6198,7 @@
             "618074"
         ],
         "prevalence":null,
-        "prevalence_details":"FAME overall is 1/35,000 in Japan. This repeat expansion is typically found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"FAME overall is 1/35,000 in Japan. This repeat expansion is typically found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "TNRC6A"
         ],
@@ -6246,7 +6233,7 @@
         "tr_gnomad":[
             "TR139999"
         ],
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)",
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -6291,7 +6278,7 @@
         "pathogenic_max":3.0,
         "ref_copies":null,
         "motif_len":10,
-        "age_onset":"Typical: 1-3 (PMID: 33559681); Range: 0-10 (OMIM)",
+        "age_onset":"Typical: 1-3 [pmid:33559681); Range: 0-10 (OMIM)",
         "age_onset_min":0,
         "age_onset_max":10,
         "typ_age_onset_min":1.0,
@@ -6305,7 +6292,7 @@
             "619216"
         ],
         "prevalence":null,
-        "prevalence_details":"Biallelic variants found in 0.01% of 100 KGP participants; enriched in those with motor disease. 80% of VWA1 pathogenic variants are expansions/contractions (GeneReview). The repeat expansion was found in several ethnicities; founder mutation 7,000 years prior (PMID: 33559681)",
+        "prevalence_details":"Biallelic variants found in 0.01% of 100 KGP participants; enriched in those with motor disease. 80% of VWA1 pathogenic variants are expansions/contractions (GeneReview). The repeat expansion was found in several ethnicities; founder mutation 7,000 years prior [pmid:33559681)",
         "stripy":[],
         "gnomad":[
             "VWA1"
@@ -6432,7 +6419,7 @@
         "tr_gnomad":[
             "TR139509"
         ],
-        "disease_description":"Desbuquois dysplasia, which belongs to the multiple dislocation group of disorders, is characterized by dislocations of large joints, severe pre- and postnatal growth retardation, joint laxity, and flat face with prominent eyes. Radiologic features include short long bones with an exaggerated trochanter that gives a 'monkey wrench' appearance to the proximal femur, and advanced carpal and tarsal ossification (PMID: 24581741)",
+        "disease_description":"Desbuquois dysplasia, which belongs to the multiple dislocation group of disorders, is characterized by dislocations of large joints, severe pre- and postnatal growth retardation, joint laxity, and flat face with prominent eyes. Radiologic features include short long bones with an exaggerated trochanter that gives a 'monkey wrench' appearance to the proximal femur, and advanced carpal and tarsal ossification [pmid:24581741)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -6483,7 +6470,7 @@
         "pathogenic_max":1000.0,
         "ref_copies":10.0,
         "motif_len":5,
-        "age_onset":"Typical: 20-25 (PMID: 22713812); Range: 10-33 (PMID: 31539032)",
+        "age_onset":"Typical: 20-25 [pmid:22713812); Range: 10-33 [pmid:31539032)",
         "age_onset_min":10,
         "age_onset_max":33,
         "typ_age_onset_min":null,
@@ -6499,7 +6486,7 @@
             "615127"
         ],
         "prevalence":null,
-        "prevalence_details":"FAME overall is 1/35,000 in Japan. This repeat expansion is typically found in individuals of East Asian ancestry (PMID: 38876750)",
+        "prevalence_details":"FAME overall is 1/35,000 in Japan. This repeat expansion is typically found in individuals of East Asian ancestry [pmid:38876750)",
         "stripy":[
             "YEATS2"
         ],
@@ -6535,7 +6522,7 @@
         "tr_gnomad":[
             "TR38932"
         ],
-        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset (PMID: 38876750)",
+        "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [pmid:38876750)",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -6580,7 +6567,7 @@
         "pathogenic_max":64.0,
         "ref_copies":21.3,
         "motif_len":3,
-        "age_onset":"Typical: 37- 56; Range: 15 - 60 (PMID: 38035881 - https://doi.org/10.1101/2023.10.03.23296230) ",
+        "age_onset":"Typical: 37- 56; Range: 15 - 60 [pmid:38035881 - https://doi.org/10.1101/2023.10.03.23296230) ",
         "age_onset_min":15,
         "age_onset_max":60,
         "typ_age_onset_min":37.0,
@@ -6591,7 +6578,7 @@
         "source":[
             "https://doi.org/10.1101/2023.10.03.23296230"
         ],
-        "details":"Expansion found in affected individuals from 3 families and not in any of the 1001 controls. Possible anticipation (PMID: 38197134, PMID: 38035881). Most unaffected individuals had 21 motifs.",
+        "details":"Expansion found in affected individuals from 3 families and not in any of the 1001 controls. Possible anticipation [pmid:38197134, PMID: 38035881). Most unaffected individuals had 21 motifs.",
         "omim":[
             "600223"
         ],
@@ -6689,7 +6676,7 @@
             "609637"
         ],
         "prevalence":"1.4/1000000",
-        "prevalence_details":"0.05-0.23/100,000; math done by 40% of pathogenic variants in ZIC2 are expansion (GeneReview); 5% of non-syndromic HPE are ZIC2 gene (NBK1530), and nonsyndromic HPE is [25]-50% of HPE, which affects 1/10,000 newborns (Medline non-syndromic HPE) - ZIC2 is 9.2% of HPE cases, whicho ccur in 1/16,000 live births (PMID: 17274816). Holoprosencephaly has worldwide distribution (Orphanet: 2162), but STR-specific distribution is unknown",
+        "prevalence_details":"0.05-0.23/100,000; math done by 40% of pathogenic variants in ZIC2 are expansion (GeneReview); 5% of non-syndromic HPE are ZIC2 gene (NBK1530), and nonsyndromic HPE is [25]-50% of HPE, which affects 1/10,000 newborns (Medline non-syndromic HPE) - ZIC2 is 9.2% of HPE cases, whicho ccur in 1/16,000 live births [pmid:17274816). Holoprosencephaly has worldwide distribution (Orphanet: 2162), but STR-specific distribution is unknown",
         "stripy":[
             "ZIC2"
         ],
@@ -6786,7 +6773,7 @@
             "314390"
         ],
         "prevalence":null,
-        "prevalence_details":"1 patient with VACTERL died at birth. 8 patients with X-linked OAVS at 11 motifs; 1 individual in OAVS cohort with 12 repeats. Found in one patient (NBK535148) with European ancestry (PMID: 20452998)",
+        "prevalence_details":"1 patient with VACTERL died at birth. 8 patients with X-linked OAVS at 11 motifs; 1 individual in OAVS cohort with 12 repeats. Found in one patient (NBK535148) with European ancestry [pmid:20452998)",
         "stripy":[
             "ZIC3"
         ],
@@ -6881,7 +6868,7 @@
             "616181"
         ],
         "prevalence":null,
-        "prevalence_details":"4 individuals reported. Found in 2 families without discussion of ancestry/ethnicity (PMID: 25196122)",
+        "prevalence_details":"4 individuals reported. Found in 2 families without discussion of ancestry/ethnicity [pmid:25196122)",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
