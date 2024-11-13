@@ -16,15 +16,20 @@ const LineChart = ({
 }) => {
   const ref = useRef();
 
+  /** rows with missing values filtered out */
+  const filteredRows = rows.filter(({ values }) =>
+    values.every((value) => value !== undefined && value !== null),
+  );
+
   /** map value to svg units */
-  const values = rows.map((row) => row.values).flat();
+  const values = filteredRows.map((row) => row.values).flat();
   min ??= Math.min(...values);
   max ??= Math.max(...values);
   const scale = (value) =>
     lerp(value, min, max, fontSize * 2, width - fontSize * 2);
 
-  /** rows, filtered and with derived props */
-  const _rows = rows
+  /** rows with derived props */
+  const mappedRows = rows
     /** don't show row if we're missing values */
     .filter(({ values }) =>
       values.every((value) => value !== undefined && value !== null),
@@ -50,7 +55,7 @@ const LineChart = ({
   });
 
   /** if no rows, don't render anything */
-  if (!_rows.length) return <></>;
+  if (!mappedRows.length) return <></>;
 
   return (
     <svg
@@ -66,7 +71,7 @@ const LineChart = ({
         d={`M 0 0 L 0 ${height} L ${width} ${height}`}
       />
       <g textAnchor="end" dominantBaseline="central">
-        {_rows.map(({ name, y }, index) => (
+        {mappedRows.map(({ name, y }, index) => (
           <text x={-fontSize * 0.5} y={y} key={index}>
             {name}
           </text>
@@ -82,7 +87,7 @@ const LineChart = ({
         {xAxis}
       </text>
 
-      {_rows.map(({ x, y, color, values: [min, max] }, index) => (
+      {mappedRows.map(({ x, y, color, values: [min, max] }, index) => (
         <rect
           key={index}
           fill={color}
@@ -93,7 +98,7 @@ const LineChart = ({
         />
       ))}
 
-      {_rows.map(({ x, y, values: [min, max] }, index) => (
+      {mappedRows.map(({ x, y, values: [min, max] }, index) => (
         <g key={index} dominantBaseline="central">
           <text x={x[0]} y={y} textAnchor="end">
             {min.toLocaleString()}&nbsp;
