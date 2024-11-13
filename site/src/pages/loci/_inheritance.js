@@ -5,5 +5,5 @@ export const getInheritance = (abbreviation) => {
   if (abbreviation == "XLD" || abbreviation == "XD") return "X-linked dominant";
   if (abbreviation == "XLR" || abbreviation == "XR")
     return "X-linked recessive";
-  return "-";
+  return "";
 };
