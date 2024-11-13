@@ -127,14 +127,14 @@
         "pathogenic_max":2000.0,
         "ref_copies":50.3,
         "motif_len":3,
-        "age_onset":"Typical: 2-10 [@pmid:11246464]. Range: 1-10; developmental delays without physical features can make onset difficult to detect until schooling) [@omim:309548].",
+        "age_onset":"Typical: 2-10 [@pmid:11246464]. Range: 1-10; developmental delays without physical features can make onset difficult to detect until schooling [@omim:309548].",
         "age_onset_min":1,
         "age_onset_max":10,
         "typ_age_onset_min":2.0,
         "typ_age_onset_max":10.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Loss of function via transcriptional silencing [@doi:10.1038/nrg1691; doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"Loss of function via transcriptional silencing [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5].",
         "source":[],
         "details":"Allele ranges (benign:4-39; pathogenic: >200) inferred from The Human Gene Mutation Database [@genereviews:NBK535148]. Intermediate alleles correspond to a premutation [@pmid:23914978].",
         "omim":[
@@ -295,14 +295,14 @@
         "pathogenic_max":68.0,
         "ref_copies":34.0,
         "motif_len":3,
-        "age_onset":"Typical: 20-49 [@doi:10.1038/sj.ejhg.5200656], Range: 8 [@pmid:15851746]-78 [@pmid:19227892].",
+        "age_onset":"Typical: 20-49 [@doi:10.1038/sj.ejhg.5200656], Range: 8 [@pmid:15851746] - 78 [@pmid:19227892].",
         "age_onset_min":8,
         "age_onset_max":78,
         "typ_age_onset_min":20.0,
         "typ_age_onset_max":49.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyglutamine alters protein conformation leading to gain-of-function neurodegeneration [@doi:10.1038/nrg.2017.115; doi:10.1007/s11604-022-01343-5]. Transcriptional dysregulation, axonal transport disruption, and mitochondrial dysfunction also play causative roles in the neurodegeneration [@doi:10.1016/j.pneurobio.2012.05.007].",
+        "mechanism_detail":"Polyglutamine alters protein conformation leading to gain-of-function neurodegeneration [@doi:10.1038/nrg.2017.115; @doi:10.1007/s11604-022-01343-5]. Transcriptional dysregulation, axonal transport disruption, and mitochondrial dysfunction also play causative roles in the neurodegeneration [@doi:10.1016/j.pneurobio.2012.05.007].",
         "source":[
             "[@pmid:2062380]."
         ],
@@ -324,7 +324,7 @@
         "mondo":[
             "0010735"
         ],
-        "year":"1991 [@pmid:2062380]; (the first triplet disease to be discovered) [@doi:10.1001/archneur.61.8.1324].",
+        "year":"1991 [@pmid:2062380]; the first triplet disease to be discovered [@doi:10.1001/archneur.61.8.1324].",
         "medgen":[
             "333282"
         ],
@@ -672,7 +672,7 @@
         "pathogenic_max":91.0,
         "ref_copies":30.3,
         "motif_len":3,
-        "age_onset":"Typical: 20-39 [@uptodate:'Autosomal dominant spinocerebellar ataxias']; Range: 6 [@pmid:3165612] -63 [@pmid:8825276].",
+        "age_onset":"Typical: 20-39 [@uptodate:'Autosomal dominant spinocerebellar ataxias']; Range: 6 [@pmid:3165612] - 63 [@pmid:8825276].",
         "age_onset_min":6,
         "age_onset_max":63,
         "typ_age_onset_min":20.0,
@@ -1167,7 +1167,7 @@
         "mechanism":"GoF",
         "mechanism_detail":"Polyglutamine/toxic gain-of-function [@omim:608768; @genereviews:NBK1268].",
         "source":[],
-        "details":"Reduced penetrance is found in alleles of all sizes, although penetrance appears higher at 71+ repeats and repeats at 50-70 appear less likely to result in disease [@genereviews:NBK1268; @pmid:20373340]. Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, a nearly pure polyglutamine repeat protein in the CAG direction, and ATXN8OS, which is transcribed to a noncoding CUG repeat RNA [@pmid:16804541]. Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [@pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increase RAN translation and protein toxicity [@pmid:34632710]; Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [@pmid:16804541; @genereviews:NBK1268].",
+        "details":"Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, a nearly pure polyglutamine repeat protein in the CAG direction, and ATXN8OS, which is transcribed to a noncoding CUG repeat RNA [@pmid:16804541]. Reduced penetrance is found in alleles of all sizes, although penetrance appears higher at 71+ repeats and repeats at 50-70 appear less likely to result in disease [@genereviews:NBK1268; @pmid:20373340]. Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [@pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increase RAN translation and protein toxicity [@pmid:34632710]; Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [@pmid:16804541; @genereviews:NBK1268].",
         "omim":[
             "608768"
         ],
@@ -2507,7 +2507,7 @@
         "pathogenic_max":2000.0,
         "ref_copies":20.6667,
         "motif_len":3,
-        "age_onset":"Typical: FXS 1 to 'first several years of life', FXTAS 60-65 [@genereviews:NBK1384]; Range: 0 [@uptodate:'Fragile X syndrome: Clinical features and diagnosis in children and adolescents'] - 78 [@pmid:17427188]; detailed description of typical symptom onset and diagnosis available be Arnold et al [@doi:10.1007/978-3-031-66932-3_14].",
+        "age_onset":"Typical: FXS 1 to 'first several years of life', FXTAS 60-65 [@genereviews:NBK1384]; Range: 0 [@uptodate:'Fragile X syndrome: Clinical features and diagnosis in children and adolescents'] - 78 [@pmid:17427188]; detailed description of typical symptom onset and diagnosis available from Arnold et al [@doi:10.1007/978-3-031-66932-3_14].",
         "age_onset_min":0,
         "age_onset_max":78,
         "typ_age_onset_min":1.0,
@@ -2522,7 +2522,7 @@
             "300623"
         ],
         "prevalence":"14/100000",
-        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 [@genereviews:NBK1384]. Female prevalence 9/100,000 [@pmid:24700618]. Known carrier frequency is approximately 300-500/100,000 but detected was 11/100,000 [@pmid:29100084]. 10.1007/978-3-031-66932-3_14: FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females. Found worldwide [@genereviews:NBK1384].",
+        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 [@genereviews:NBK1384]. Female prevalence 9/100,000 [@pmid:24700618]. Known carrier frequency is approximately 300-500/100,000 but detected was 11/100,000 [@pmid:29100084]. FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females [@doi:10.1007/978-3-031-66932-3_14]. Found worldwide [@genereviews:NBK1384].",
         "stripy":[
             "FMR1"
         ],
@@ -3560,7 +3560,7 @@
         "mechanism":"GoF?",
         "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@doi:10.1038/s41576-024-00696-z].",
         "source":[],
-        "details":"Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranges from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@doi:10.1136/jnnp-2024-333403]. Interruptions seen: ACG, CCA [@pmid:35245110].",
+        "details":"Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@doi:10.1136/jnnp-2024-333403]. Interruptions seen: ACG, CCA [@pmid:35245110].",
         "omim":[
             "164310"
         ],
@@ -4438,7 +4438,7 @@
         "tr_gnomad":[
             "TR137533"
         ],
-        "disease_description":"sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [@pmid:38876750].",
+        "disease_description":"Sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [@pmid:38876750].",
         "locus_tags":["conflicting_evidence"],
         "disease_tags":[]
     },
@@ -5092,7 +5092,7 @@
         "mechanism":"LoF",
         "mechanism_detail":"LoF [@pmid:38467784].",
         "source":[],
-        "details":"Disease is caused by an insertion of a pathogenic motif, although motif presence is variable and can expand up to 200 repeats without apparently causing a phenotype [@genereviews:NBK564656]. Pathogenic expansions (ranging from 400-2750 pathogenic motifs) may be flanked by other motifs [@genereviews:NBK564656]. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656], and motif associations are described by Delforge et al [@doi:10.1016/j.neurol.2024.03.006]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients (vs 400 with other pathogenic motifs), while ~100-380 AAAGG repeats were found in unaffected controls [@pmid:37450567].",
+        "details":"Disease is caused by an insertion of a pathogenic motif, although motif presence is variable and can expand up to 200 repeats without apparently causing a phenotype [@genereviews:NBK564656]. Pathogenic expansions (ranging from 400-2750 pathogenic motifs) may be flanked by other motifs [@genereviews:NBK564656]. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656], and motif associations are described by Delforge et al [@doi:10.1016/j.neurol.2024.03.006]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients (vs 400 with established pathogenic motif AAGGG), while ~100-380 AAAGG repeats were found in unaffected controls [@pmid:37450567].",
         "omim":[
             "614575"
         ],
@@ -6613,7 +6613,7 @@
             "609637"
         ],
         "prevalence":"1.4/1000000",
-        "prevalence_details":"0.05-0.23/100,000; math done by 40% of pathogenic variants in ZIC2 are expansion [@genereviews:NBK1530]; 5% of non-syndromic HPE are ZIC2 gene [@genereviews:NBK1530], and nonsyndromic HPE is [25]-50% of HPE, which affects 1/10,000 newborns [@url:medlineplus.gov/genetics/condition/nonsyndromic-holoprosencephaly/] - ZIC2 is 9.2% of HPE cases, which occur in 1/16,000 live births [@pmid:17274816]. Holoprosencephaly has worldwide distribution [@orphanet:2162], but STR-specific distribution is unknown.",
+        "prevalence_details":"0.05-0.23/100,000; math done by 40% of pathogenic variants in ZIC2 are expansion [@genereviews:NBK1530]; 5% of non-syndromic HPE are ZIC2 gene [@genereviews:NBK1530], and nonsyndromic HPE is 25-50% of HPE, which affects 1/10,000 newborns [@url:medlineplus.gov/genetics/condition/nonsyndromic-holoprosencephaly/] - ZIC2 is 9.2% of HPE cases, which occur in 1/16,000 live births [@pmid:17274816]. Holoprosencephaly has worldwide distribution [@orphanet:2162], but STR-specific distribution is unknown.",
         "stripy":[
             "ZIC2"
         ],
@@ -6707,7 +6707,7 @@
             "314390"
         ],
         "prevalence":null,
-        "prevalence_details":"Found in one patient [@genereviews:NBK535148) with European ancestry [@pmid:20452998].",
+        "prevalence_details":"Found in one patient [@genereviews:NBK535148] with European ancestry [@pmid:20452998].",
         "stripy":[
             "ZIC3"
         ],
