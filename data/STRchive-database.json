@@ -398,7 +398,7 @@
         "mechanism":"Polyalanine",
         "mechanism_detail":"Polyalanine [@doi:10.1007/s11604-022-01343-5].",
         "source":[],
-        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; doi:10.1002/humu.21288].",
+        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; @doi:10.1002/humu.21288].",
         "omim":[
             "308350",
             "300419",
@@ -485,7 +485,7 @@
         "pathogenic_max":20.0,
         "ref_copies":12.0,
         "motif_len":3,
-        "age_onset":"Typical: 1-3; Range: 0-4. Mild phenotypes can make diagnosis difficult (epansions are particularly mild/absent in females) [@omim:309510].",
+        "age_onset":"Typical: 1-3; Range: 0-4. Mild phenotypes can make diagnosis difficult (expansions are particularly mild/absent in females) [@omim:309510].",
         "age_onset_min":0,
         "age_onset_max":4,
         "typ_age_onset_min":null,
@@ -494,7 +494,7 @@
         "mechanism":"Polyalanine",
         "mechanism_detail":"Polyalanine [@doi:10.1007/s11604-022-01343-5].",
         "source":[],
-        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; doi:10.1002/humu.21288].",
+        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; @doi:10.1002/humu.21288].",
         "omim":[
             "309510"
         ],
@@ -680,7 +680,7 @@
         "novel":"ref",
         "mechanism":"Polyglutamine",
         "mechanism_detail":"Polyglutamine leading to loss of function/dominant negative [@genereviews:NBK1184].",
-        "source":["[@doi:10.1038/ng0793-221]."],
+        "source":"[@doi:10.1038/ng0793-221]",
         "details":"Penetrance is dependent on sequence purity in addition to expansion length: pure repeats are pathogenic at 39 repeats [@pmid:37906407], while CAT interruptions [@pmid:35245110] can lead to reduced penetrance at comparable lengths [@genereviews:NBK1184]. Regardless, intermediate alleles are considered premutations which may lead to disease upon transmission [@genereviews:NBK1184].",
         "omim":[
             "164400"
@@ -699,7 +699,7 @@
         "mondo":[
             "0008119"
         ],
-        "year":"1993[@doi:10.1038/ng0793-221].",
+        "year":"1993 [@doi:10.1038/ng0793-221].",
         "medgen":[
             "155703"
         ],
