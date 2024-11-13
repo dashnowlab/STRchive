@@ -253,9 +253,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         )
       }
     </div>
-  </section>
 
-  <section>
     <h2>Alleles</h2>
 
     <div class="boxes grid">
@@ -398,6 +396,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: max-content;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (max-width: 600px) {

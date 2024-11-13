@@ -62,11 +62,13 @@ section:last-child {
   flex-grow: 1;
 }
 
-section > :first-child {
+section > :first-child,
+section > astro-island:first-child > * {
   margin-top: 0 !important;
 }
 
-section > :last-child {
+section > :last-child,
+section > astro-island:last-child > * {
   margin-bottom: 0 !important;
 }
 
