@@ -82,7 +82,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
               d.id === gene.id ? (
                 <span>{gene.id}</span>
               ) : (
-                <Link to={gene.id}>{gene.id}</Link>
+                <Link to={`/loci/${gene.id}`}>{gene.id}</Link>
               ),
             )}
           </div>
