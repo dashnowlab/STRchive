@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { map, uniq } from "lodash-es";
+import { map, pick, uniq } from "lodash-es";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
@@ -80,6 +80,9 @@ const cols = [
   },
 ];
 
+/** column keys */
+const colKeys = cols.map((col) => col.key);
+
 const Table = ({ data }) => {
   const maxMotif = Math.max(
     ...data
@@ -105,8 +108,10 @@ const Table = ({ data }) => {
     /** filter data */
     .filter(
       (d) =>
-        /** free text search */
-        getValues(d).join(" ").match(new RegExp(search.trim(), "i")) &&
+        /** free text search visible columns */
+        getValues(pick(d, colKeys))
+          .join(" ")
+          .match(new RegExp(search.trim(), "i")) &&
         /** tags */
         (tags.filter(Boolean).length
           ? tagOptions
