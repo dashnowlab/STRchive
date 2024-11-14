@@ -5,6 +5,7 @@
 }
 
 .button {
+  background: none;
   padding: 2px 5px;
   color: var(--primary);
 }
