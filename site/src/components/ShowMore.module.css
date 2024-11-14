@@ -1,0 +1,11 @@
+.box {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.button {
+  background: none;
+  padding: 2px 5px;
+  color: var(--primary);
+}

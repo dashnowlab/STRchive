@@ -1,8 +1,10 @@
 ---
-import { LiaBarcodeSolid } from "react-icons/lia";
+import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
+import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
+import ShowMore from "@/components/ShowMore";
 import Layout from "@/layouts/Layout.astro";
 import { capitalize } from "@/util/string";
 import { deriveDatum } from "./_derived";
@@ -28,9 +30,9 @@ const niceId = id.replace("_", " ");
 const genes = data.filter(({ gene }) => gene === d.gene);
 ---
 
-<Layout title={`Locus: ${niceId}`}>
+<Layout title={niceId}>
   <section>
-    <h1><LiaBarcodeSolid />Locus: {niceId}</h1>
+    <h1><LiaBarcodeSolid />{niceId}</h1>
 
     {
       !!d.locus_tags.length && (
@@ -58,11 +60,6 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
     <div class="boxes">
       <div class="box">
-        <div>Disease</div>
-        <div>{d.disease}</div>
-      </div>
-
-      <div class="box">
         <div><TbVirus />Disease ID</div>
         <div>{d.disease_id}</div>
       </div>
@@ -71,38 +68,6 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         <div><TbDna2 />Gene ID</div>
         <div>{d.gene}</div>
       </div>
-
-      <div class="box">
-        <div>Inheritance</div>
-        {
-          (d.inheritance.length ? d.inheritance : [""]).map((inheritance) => (
-            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-              {getInheritance(inheritance)}
-            </Link>
-          ))
-        }
-      </div>
-    </div>
-
-    <div class="onset">
-      <LineChart
-        client:load
-        rows={[
-          {
-            name: "Age of Onset",
-            color: "var(--primary)",
-            values: [d.age_onset_min, d.age_onset_max],
-          },
-          {
-            name: "(Typical)",
-            color: "var(--secondary)",
-            values: [d.typ_age_onset_min, d.typ_age_onset_max],
-          },
-        ]}
-        min={0}
-        max={90}
-        xAxis="Years"
-      />
     </div>
 
     {
@@ -117,7 +82,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
               d.id === gene.id ? (
                 <span>{gene.id}</span>
               ) : (
-                <Link to={gene.id}>{gene.id}</Link>
+                <Link to={`/loci/${gene.id}`}>{gene.id}</Link>
               ),
             )}
           </div>
@@ -154,56 +119,244 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   </section>
 
   <section>
+    <h2>Disease</h2>
+
+    <div class="boxes">
+      <div class="box">
+        <div>Name</div>
+        <div>{d.disease}</div>
+      </div>
+
+      <div class="box">
+        <div>Inheritance</div>
+        {
+          (d.inheritance.length ? d.inheritance : [""]).map((inheritance) => (
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+              {getInheritance(inheritance) || "-"}
+            </Link>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="boxes">
+      {
+        d.disease_description && (
+          <div class="box full">
+            <div>Description</div>
+            <ShowMore client:load>{d.disease_description}</ShowMore>
+          </div>
+        )
+      }
+
+      {
+        (d.prevalence || d.prevalence_details) && (
+          <div class="box full">
+            <div>Prevalence</div>
+            {d.prevalence && (
+              <div class="fraction">
+                <span>{d.prevalence[0]}</span>
+                <LiaSlashSolid />
+                <span>{d.prevalence[1]}</span>
+              </div>
+            )}
+            {d.prevalence_details && (
+              <ShowMore client:load>{d.prevalence_details}</ShowMore>
+            )}
+          </div>
+        )
+      }
+    </div>
+
+    <LineChart
+      client:load
+      rows={[
+        {
+          name: "Age of Onset",
+          color: "var(--primary)",
+          values: [d.age_onset_min, d.age_onset_max],
+        },
+        {
+          name: "(Typical)",
+          color: "var(--secondary)",
+          values: [d.typ_age_onset_min, d.typ_age_onset_max],
+        },
+      ]}
+      min={0}
+      max={90}
+      xAxis="Years"
+    />
+  </section>
+
+  <section>
     <h2>Locus</h2>
 
     <div class="boxes">
       {
-        ["hg19", "hg38", "t2t"].map((assembly) => (
+        [
+          { assembly: "hg19", db: "hg19" },
+          { assembly: "hg38", db: "hg38" },
+          { assembly: "t2t", db: "hub_3671779_hs1" },
+        ].map(({ assembly, db }) => (
           <div class="box">
             <div>{assembly}</div>
-            <div>
-              {d.chrom}:{d[`start_${assembly}`]}-{d[`stop_${assembly}`]}
-            </div>
+            <Link
+              to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${d[`position_${assembly}`]}`}
+            >
+              {d[`position_${assembly}`]}
+            </Link>
           </div>
         ))
       }
     </div>
 
-    <h2>Alleles</h2>
+    <div class="boxes">
+      {
+        d.details && (
+          <div class="box full">
+            <div>Description</div>
+            <div>{d.details}</div>
+          </div>
+        )
+      }
+    </div>
 
     <div class="boxes">
-      <div class="box" data-tooltip="Reference motif, reference orientation">
-        <div>Ref. Motif</div>
-        <div>{d.reference_motif_reference_orientation}</div>
-      </div>
-      <div class="box" data-tooltip="Pathogenic motif, reference orientation">
-        <div>Pathogenic (ref.)</div>
-        <div>{d.pathogenic_motif_reference_orientation}</div>
-      </div>
-      <div class="box" data-tooltip="Pathogenic motif, gene orientation">
-        <div>Pathogenic (gene)</div>
-        <div>{d.pathogenic_motif_gene_orientation}</div>
-      </div>
+      {
+        (d.mechanism || d.mechanism_detail) && (
+          <div class="box">
+            <div>Mechanism</div>
+            {d.mechanism && <div>{d.mechanism}</div>}
+            {d.mechanism_detail && (
+              <ShowMore client:load>{d.mechanism_detail}</ShowMore>
+            )}
+          </div>
+        )
+      }
+
+      {
+        d.location_in_gene && (
+          <div class="box">
+            <div>Location in Gene</div>
+            <div>{d.location_in_gene}</div>
+          </div>
+        )
+      }
+
+      {
+        d.gene_strand && (
+          <div class="box">
+            <div>Gene Strand</div>
+            <div>
+              {d.gene_strand === "+" && (
+                <FaCirclePlus style={{ color: "var(--primary)" }} />
+              )}
+              {d.gene_strand === "-" && (
+                <FaCircleMinus style={{ color: "var(--secondary)" }} />
+              )}
+            </div>
+          </div>
+        )
+      }
     </div>
 
-    <div class="alleles">
-      <LineChart
-        client:load
-        rows={[
-          {
-            name: "Benign",
-            color: "var(--primary)",
-            values: [d.benign_min, d.benign_max],
-          },
-          {
-            name: "Pathogenic",
-            color: "var(--secondary)",
-            values: [d.pathogenic_min, d.pathogenic_max],
-          },
-        ]}
-        xAxis="Units"
-      />
+    <h2>Alleles</h2>
+
+    <div class="boxes grid">
+      {
+        !!d.reference_motif_reference_orientation.length && (
+          <div class="box" style={{ gridColumn: "1 / -1" }}>
+            <div data-tooltip="Reference motif, reference orientation">
+              Ref. Motif
+            </div>
+            <div>{d.reference_motif_reference_orientation.join(", ")}</div>
+          </div>
+        )
+      }
+
+      {
+        (!!d.benign_motif_reference_orientation.length ||
+          !!d.benign_motif_gene_orientation.length) && (
+          <>
+            <div class="box benign">
+              <div data-tooltip="Benign motif, reference orientation">
+                Benign (ref.)
+              </div>
+              <div>
+                {d.benign_motif_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box benign">
+              <div data-tooltip="Benign motif, gene orientation">
+                Benign (gene)
+              </div>
+              <div>{d.benign_motif_gene_orientation.join(", ") || "-"}</div>
+            </div>
+          </>
+        )
+      }
+
+      {
+        (!!d.pathogenic_motif_reference_orientation.length ||
+          !!d.pathogenic_motif_gene_orientation.length) && (
+          <>
+            <div class="box pathogenic">
+              <div data-tooltip="Pathogenic motif, reference orientation">
+                Pathogenic (ref.)
+              </div>
+              <div>
+                {d.pathogenic_motif_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box pathogenic">
+              <div data-tooltip="Pathogenic motif, gene orientation">
+                Pathogenic (gene)
+              </div>
+              <div>{d.pathogenic_motif_gene_orientation.join(", ") || "-"}</div>
+            </div>
+          </>
+        )
+      }
+
+      {
+        (!!d.unknown_motif_reference_orientation.length ||
+          !!d.unknown_motif_gene_orientation.length) && (
+          <>
+            <div class="box unknown">
+              <div data-tooltip="Unknown motif, reference orientation">
+                Unknown (ref.)
+              </div>
+              <div>
+                {d.unknown_motif_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box unknown">
+              <div data-tooltip="Unknown motif, gene orientation">
+                Unknown (gene)
+              </div>
+              <div>{d.unknown_motif_gene_orientation.join(", ") || "-"}</div>
+            </div>
+          </>
+        )
+      }
     </div>
+
+    <LineChart
+      client:load
+      rows={[
+        {
+          name: "Benign",
+          color: "var(--primary)",
+          values: [d.benign_min, d.benign_max],
+        },
+        {
+          name: "Pathogenic",
+          color: "var(--secondary)",
+          values: [d.pathogenic_min, d.pathogenic_max],
+        },
+      ]}
+      xAxis="Units"
+    />
   </section>
 
   <script define:vars={{ d }}>
@@ -234,19 +387,43 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    margin: 40px 0;
+    margin: 20px 0;
     gap: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .grid > * {
+    max-width: unset;
   }
 
   .box {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    max-width: 300px;
     padding: 10px 20px;
-    gap: 5px;
+    gap: 10px;
     border-radius: var(--rounded);
     background: var(--light-gray);
     overflow-wrap: anywhere;
+  }
+
+  .full {
+    max-width: unset;
+    text-align: justify;
   }
 
   .box > :first-child {
@@ -255,19 +432,45 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     justify-content: center;
     gap: 5px;
     color: var(--gray);
+    font-weight: var(--bold);
+  }
+
+  .fraction {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .fraction > * {
+    position: relative;
+  }
+
+  .fraction > :nth-child(1) {
+    top: -0.5em;
+  }
+
+  .fraction > :nth-child(2) {
+    color: var(--gray);
+  }
+
+  .fraction > :nth-child(3) {
+    top: 0.5em;
+  }
+
+  .benign {
+    background: color-mix(in srgb, var(--primary), white 90%);
+  }
+
+  .pathogenic {
+    background: color-mix(in srgb, var(--secondary), white 90%);
+  }
+
+  .unknown {
+    background: color-mix(in srgb, var(--tertiary), white 90%);
   }
 
   .box > :first-child svg {
     opacity: 0.5;
-  }
-
-  .box > :not(:first-child) {
-    font-weight: var(--medium);
-    font-size: 1.1rem;
-  }
-
-  .onset {
-    margin: 40px 0;
   }
 
   .genes {
@@ -320,9 +523,5 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-
-  .alleles {
-    margin: 40px 0;
   }
 </style>
