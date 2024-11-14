@@ -80,9 +80,6 @@ const cols = [
   },
 ];
 
-/** column keys */
-const colKeys = cols.map((col) => col.key);
-
 const Table = ({ data }) => {
   const maxMotif = Math.max(
     ...data
@@ -109,7 +106,7 @@ const Table = ({ data }) => {
     .filter(
       (d) =>
         /** free text search visible columns */
-        getValues(pick(d, colKeys))
+        getValues(pick(d, map(cols, "key")))
           .join(" ")
           .match(new RegExp(search.trim(), "i")) &&
         /** tags */
