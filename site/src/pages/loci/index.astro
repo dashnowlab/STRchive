@@ -6,9 +6,9 @@ import Link from "@/components/Link";
 import Plot from "@/components/Plot";
 import Layout from "@/layouts/Layout.astro";
 import Table from "./_Table";
-import ageOnset from "../../../../data/plots/age-onset.json";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
 import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
+import ageOnset from "../../../../data/plots/age-onset.json";
 import pathSize from "../../../../data/plots/path-size.json";
 import data from "../../../../data/STRchive-database.json";
 import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?url";
@@ -60,64 +60,47 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     <Table client:load data={data} />
   </section>
 
-  <section>
+  <section class="full">
     <h2 id="plots">Plots</h2>
 
     <p class="center">High-level, visual overview of loci.</p>
 
-    <div class="plot-container">
-      <div class="plots">
-        <div>
-          <h3>Pathogenic Size Range</h3>
-          <Plot
-            client:only="react"
-            data={pathSize.x.data}
-            layout={pathSize.x.layout}
-          />
-        </div>
-        <div>
-          <h3>Age of Onset</h3>
-          <Plot
-            client:only="react"
-            data={ageOnset.x.data}
-            layout={ageOnset.x.layout}
-          />
-        </div>
+    <div class="plots">
+      <div>
+        <h3>Pathogenic Size Range</h3>
+        <Plot
+          client:only="react"
+          data={pathSize.x.data}
+          layout={pathSize.x.layout}
+        />
+      </div>
+      <div>
+        <h3>Age of Onset</h3>
+        <Plot
+          client:only="react"
+          data={ageOnset.x.data}
+          layout={ageOnset.x.layout}
+        />
       </div>
     </div>
   </section>
 </Layout>
 
 <style>
-  iframe {
-    border: none;
-  }
-
-  .plot-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .plots {
-    --gap: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: stretch;
-    width: calc(100vw - 120px);
     gap: 40px;
   }
 
-  @media (max-width: 800px) {
+  .plots h3 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 1000px) {
     .plots {
       grid-template-columns: 1fr;
     }
-  }
-
-  .plot {
-    width: 100%;
-    height: 1030px;
-    border-radius: var(--rounded);
-    box-shadow: var(--box-shadow);
   }
 </style>

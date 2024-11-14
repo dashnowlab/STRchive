@@ -54,6 +54,10 @@ section {
   text-align: center;
 }
 
+section.full {
+  padding: 60px;
+}
+
 section:nth-child(even) {
   background: color-mix(in hsl, var(--white), var(--light-gray) 50%);
 }
