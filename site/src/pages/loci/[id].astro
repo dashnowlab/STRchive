@@ -1,6 +1,6 @@
 ---
 import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
-import { LiaBarcodeSolid } from "react-icons/lia";
+import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
@@ -153,7 +153,13 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         (d.prevalence || d.prevalence_details) && (
           <div class="box full">
             <div>Prevalence</div>
-            {d.prevalence && <div>{d.prevalence}</div>}
+            {d.prevalence && (
+              <div class="fraction">
+                <span>{d.prevalence[0]}</span>
+                <LiaSlashSolid />
+                <span>{d.prevalence[1]}</span>
+              </div>
+            )}
             {d.prevalence_details && (
               <ShowMore client:load>{d.prevalence_details}</ShowMore>
             )}
@@ -427,6 +433,28 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     gap: 5px;
     color: var(--gray);
     font-weight: var(--bold);
+  }
+
+  .fraction {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .fraction > * {
+    position: relative;
+  }
+
+  .fraction > :nth-child(1) {
+    top: -0.5em;
+  }
+
+  .fraction > :nth-child(2) {
+    color: var(--gray);
+  }
+
+  .fraction > :nth-child(3) {
+    top: 0.5em;
   }
 
   .benign {

@@ -13,6 +13,13 @@ export const deriveDatum = (d) => {
     d[`position_${assembly}`] =
       `${d.chrom}:${d[`start_${assembly}`]}-${d[`stop_${assembly}`]}`;
 
+  /** make prevalence fraction */
+  if (d.prevalence)
+    d.prevalence = d.prevalence
+      .split("/")
+      .map(Number)
+      .map((value) => (value || 0).toLocaleString());
+
   /** init tags */
   d.locus_tags ??= [];
 
