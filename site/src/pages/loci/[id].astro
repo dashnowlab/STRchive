@@ -259,12 +259,10 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     <div class="boxes grid">
       {
         !!d.reference_motif_reference_orientation.length && (
-          <div
-            class="box"
-            data-tooltip="Reference motif, reference orientation"
-            style={{ gridColumn: "1 / -1" }}
-          >
-            <div>Ref. Motif</div>
+          <div class="box" style={{ gridColumn: "1 / -1" }}>
+            <div data-tooltip="Reference motif, reference orientation">
+              Ref. Motif
+            </div>
             <div>{d.reference_motif_reference_orientation.join(", ")}</div>
           </div>
         )
@@ -274,20 +272,18 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         (!!d.benign_motif_reference_orientation.length ||
           !!d.benign_motif_gene_orientation.length) && (
           <>
-            <div
-              class="box benign"
-              data-tooltip="Benign motif, reference orientation"
-            >
-              <div>Benign (ref.)</div>
+            <div class="box benign">
+              <div data-tooltip="Benign motif, reference orientation">
+                Benign (ref.)
+              </div>
               <div>
                 {d.benign_motif_reference_orientation.join(", ") || "-"}
               </div>
             </div>
-            <div
-              class="box benign"
-              data-tooltip="Benign motif, gene orientation"
-            >
-              <div>Benign (gene)</div>
+            <div class="box benign">
+              <div data-tooltip="Benign motif, gene orientation">
+                Benign (gene)
+              </div>
               <div>{d.benign_motif_gene_orientation.join(", ") || "-"}</div>
             </div>
           </>
@@ -298,20 +294,18 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         (!!d.pathogenic_motif_reference_orientation.length ||
           !!d.pathogenic_motif_gene_orientation.length) && (
           <>
-            <div
-              class="box pathogenic"
-              data-tooltip="Pathogenic motif, reference orientation"
-            >
-              <div>Pathogenic (ref.)</div>
+            <div class="box pathogenic">
+              <div data-tooltip="Pathogenic motif, reference orientation">
+                Pathogenic (ref.)
+              </div>
               <div>
                 {d.pathogenic_motif_reference_orientation.join(", ") || "-"}
               </div>
             </div>
-            <div
-              class="box pathogenic"
-              data-tooltip="Pathogenic motif, gene orientation"
-            >
-              <div>Pathogenic (gene)</div>
+            <div class="box pathogenic">
+              <div data-tooltip="Pathogenic motif, gene orientation">
+                Pathogenic (gene)
+              </div>
               <div>{d.pathogenic_motif_gene_orientation.join(", ") || "-"}</div>
             </div>
           </>
@@ -322,20 +316,18 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         (!!d.unknown_motif_reference_orientation.length ||
           !!d.unknown_motif_gene_orientation.length) && (
           <>
-            <div
-              class="box unknown"
-              data-tooltip="Unknown motif, reference orientation"
-            >
-              <div>Unknown (ref.)</div>
+            <div class="box unknown">
+              <div data-tooltip="Unknown motif, reference orientation">
+                Unknown (ref.)
+              </div>
               <div>
                 {d.unknown_motif_reference_orientation.join(", ") || "-"}
               </div>
             </div>
-            <div
-              class="box unknown"
-              data-tooltip="Unknown motif, gene orientation"
-            >
-              <div>Unknown (gene)</div>
+            <div class="box unknown">
+              <div data-tooltip="Unknown motif, gene orientation">
+                Unknown (gene)
+              </div>
               <div>{d.unknown_motif_gene_orientation.join(", ") || "-"}</div>
             </div>
           </>
