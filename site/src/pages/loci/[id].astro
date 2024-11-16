@@ -142,7 +142,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     <div class="boxes">
       {
         d.disease_description && (
-          <div class="box full">
+          <div class="box wide">
             <div>Description</div>
             <ShowMore client:load>{d.disease_description}</ShowMore>
           </div>
@@ -151,7 +151,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
       {
         (d.prevalence || d.prevalence_details) && (
-          <div class="box full">
+          <div class="box wide">
             <div>Prevalence</div>
             {d.prevalence && (
               <div class="fraction">
@@ -213,18 +213,16 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     <div class="boxes">
       {
         d.details && (
-          <div class="box full">
-            <div>Description</div>
-            <div>{d.details}</div>
+          <div class="box wide">
+            <div>Details</div>
+            <ShowMore client:load>{d.details}</ShowMore>
           </div>
         )
       }
-    </div>
 
-    <div class="boxes">
       {
         (d.mechanism || d.mechanism_detail) && (
-          <div class="box">
+          <div class="box wide">
             <div>Mechanism</div>
             {d.mechanism && <div>{d.mechanism}</div>}
             {d.mechanism_detail && (
@@ -233,7 +231,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
           </div>
         )
       }
+    </div>
 
+    <div class="boxes">
       {
         d.location_in_gene && (
           <div class="box">
@@ -413,7 +413,6 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
     padding: 10px 20px;
     gap: 10px;
     border-radius: var(--rounded);
@@ -421,9 +420,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     overflow-wrap: anywhere;
   }
 
-  .full {
-    max-width: unset;
-    text-align: justify;
+  .wide {
+    max-width: calc(50% - 10px);
+    text-align: left;
   }
 
   .box > :first-child {
