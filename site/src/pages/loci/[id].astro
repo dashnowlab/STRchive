@@ -77,7 +77,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
             <TbDna2 />
             Other gene loci ({genes.length.toLocaleString()})
           </div>
-          <div class="gene-grid">
+          <div class="gene-list">
             {genes.map((gene) =>
               d.id === gene.id ? (
                 <span>{gene.id}</span>
@@ -262,10 +262,10 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
     <h2>Alleles</h2>
 
-    <div class="boxes grid">
+    <div class="allele-list">
       {
         !!d.reference_motif_reference_orientation.length && (
-          <div class="box" style={{ gridColumn: "1 / -1" }}>
+          <div class="box">
             <div data-tooltip="Reference motif, reference orientation">
               Ref. Motif
             </div>
@@ -383,30 +383,13 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   }
 
   .boxes {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px auto;
     gap: 20px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: max-content;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @media (max-width: 600px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .grid > * {
-    max-width: unset;
   }
 
   .box {
@@ -421,8 +404,8 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   }
 
   .wide {
+    /* grid-column-end: span 2; */
     max-width: calc(50% - 10px);
-    text-align: left;
   }
 
   .box > :first-child {
@@ -454,6 +437,24 @@ const genes = data.filter(({ gene }) => gene === d.gene);
 
   .fraction > :nth-child(3) {
     top: 0.5em;
+  }
+
+  .allele-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: max-content;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .allele-list > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 600px) {
+    .allele-list {
+      grid-template-columns: 1fr;
+    }
   }
 
   .benign {
@@ -488,7 +489,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     opacity: 0.5;
   }
 
-  .gene-grid {
+  .gene-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
     place-content: center;
