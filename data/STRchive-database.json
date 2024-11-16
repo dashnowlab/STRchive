@@ -2624,7 +2624,7 @@
         "mechanism":"LoF",
         "mechanism_detail":"Polyalanine expansion leads to haploinsufficiency, likely due to decreased protein availibility following mislocalization following nuclear inclusion [@genereviews:NBK1441; @pmid:15591279]",
         "source":[],
-        "details":"14 repeats appears highly constrained in humans: homozygous expansions from 14 polyalanines to 19 leads to disease, which can be limited to isolated palpebral defects [pmid:15591279]. Heterozygous expansions to 24 polyalanines also lead to disease [@pmid:15591279]",
+        "details":"14 repeats appears highly constrained in humans: homozygous expansions from 14 polyalanines to 19 leads to disease, which can be limited to isolated palpebral defects [pmid:15591279]. Heterozygous expansions to 24 polyalanines also lead to disease [@pmid:15591279]. Locus start can differ between catalogs, which can affect genotyping.",
         "omim":[
             "110100"
         ],
@@ -2700,27 +2700,27 @@
         "benign_min":5.0,
         "benign_max":33.0,
         "intermediate_min":34.0,
-        "intermediate_max":65.0,
-        "pathogenic_min":66.0,
+        "intermediate_max":55.0,
+        "pathogenic_min":56.0,
         "pathogenic_max":1700.0,
         "ref_copies":6.0,
         "motif_len":3,
-        "age_onset":"Typical: 10-15; Range: 2-80 [@genereviews:].",
+        "age_onset":"Typical: 10-15; Range: 2-80 [@genereviews:NBK1281].",
         "age_onset_min":2,
         "age_onset_max":80,
         "typ_age_onset_min":10.0,
         "typ_age_onset_max":15.0,
         "novel":"ref",
-        "mechanism":"LoF, reduced gene expression",
+        "mechanism":"LoF",
         "mechanism_detail":"Loss of function via transcriptional silencing [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5].",
         "source":[
         ],
-        "details":"The expanded repeats were interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences [@pmid:11748752].",
+        "details":"96% of FA patients have biallelic GAA expansions in intron 1 (compared to compound heterozygous with another mutation type), in which the reference allele is conventionally 5-33 repeats [@genereviews:NBK1281]. Intermediate alleles (34-55) are associated with premutations, but may lead to disease as exact pathogenicity/penetrance thresholds have not been demarcated [@genereviews:NBK1281]. The expanded repeats can interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences, leading to differential phenotypes [@pmid:11748752]. Allele size is correlated with disease severity and inversely correlated to age of onset, and expansions can reach 1700 repeats [@doi:10.1056/NEJM19961017335160].",
         "omim":[
             "229300"
         ],
         "prevalence":"1/50000",
-        "prevalence_details":"1/50,000 [@omim:]; [@pmid:29100084]: Known carrier frequency 1000/100,000; observed 421/100,000. Most common inherited ataxia in Europe, the Middle East, India, and North Africa; not documented in Southeast Asia, in sub-Saharan Africa, or among Native Americans [@genereviews:NBK1281].",
+        "prevalence_details":"1/50,000 [@omim:229300; @pmid:29100084]: Known carrier frequency 1000/100,000; observed 421/100,000. Most common inherited ataxia in Europe, the Middle East, India, and North Africa; not documented in Southeast Asia, in sub-Saharan Africa, or among Native Americans [@genereviews:NBK1281].",
         "stripy":[
             "FXN"
         ],
@@ -2733,7 +2733,7 @@
         "mondo":[
             "0100340"
         ],
-        "year":1996.0,
+        "year":"1996 [@pmid:8596916]",
         "medgen":[
             "383962"
         ],
@@ -2792,12 +2792,12 @@
         ],
         "type":"5' UTR",
         "location_in_gene":null,
-        "benign_min":6.0,
-        "benign_max":29.0,
+        "benign_min":0.0,
+        "benign_max":32.0,
         "intermediate_min":null,
         "intermediate_max":null,
-        "pathogenic_min":70.0,
-        "pathogenic_max":138.0,
+        "pathogenic_min":73.0,
+        "pathogenic_max":164.0,
         "ref_copies":14.7,
         "motif_len":3,
         "age_onset":"Typical: 20-34 [@pmid:32413282]; Range: 14 [@pmid:32413282] - 70 [@pmid:33374016].",
@@ -2808,10 +2808,8 @@
         "novel":"ref",
         "mechanism":"RNA toxicity",
         "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:618940], still unknown [@doi:10.1007/s11604-022-01343-5].",
-        "source":[
-            "32413282 (Pubmed]."
-        ],
-        "details":"Interruptions Seen: CGA [@pmid:35245110]; Interruptions mentioned but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784].",
+        "source":[],
+        "details":"Benign repeats range from absent [@gnomad: GIPC1] to 32 [@genereviews:NBK535148], while pathogenic alleles range from 73-164 repeats [@pmid:38876750; @genereviews:NBK535148]. Intermediate alleles have undetermined significance but may represent a phenotypic spectrum [@pmid:32413282]. Interruptions documented: CGA [@pmid:35245110]. Interruptions proposed but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784].",
         "omim":[
             "618940"
         ],
@@ -2829,7 +2827,7 @@
         "mondo":[
             "0030134"
         ],
-        "year":2020.0,
+        "year":"2020 [@pmid:32413282]",
         "medgen":[
             "1718769"
         ],
@@ -2887,10 +2885,10 @@
         "type":"5' UTR",
         "location_in_gene":null,
         "benign_min":5.0,
-        "benign_max":26.0,
+        "benign_max":38.0,
         "intermediate_min":null,
         "intermediate_max":null,
-        "pathogenic_min":90.0,
+        "pathogenic_min":680.0,
         "pathogenic_max":1500.0,
         "ref_copies":16.0,
         "motif_len":3,
@@ -2900,18 +2898,15 @@
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Decreased gene expression, methylation",
-        "mechanism_detail":"Change in histone modification decreases transcription [@omim:].",
-        "source":[
-            "van Kuilenburg 2019 NEJM",
-            "30970188 (Pubmed]."
-        ],
-        "details":"Several compound het cases have been reported",
+        "mechanism":"LoF",
+        "mechanism_detail":"Change in histone modification decreases transcription [@omim:618412].",
+        "source":[],
+        "details":"Pathogenic range from 3 unrelated probands; benign range inferred from mutation data [@genereviews:NBK535148]. Disease cases can be caused by homozygosity or compund heterozygotes [@omim:618412].",
         "omim":[
             "618412"
         ],
         "prevalence":null,
-        "prevalence_details":"As of 2019, only 7 cases total of GLS deficiency, including non-repeat. Identified patients have been Canadian [@pmid:30970188), Kurdish (Turkey) [@pmid:35913761] and US-American (Northern European/Native American descent [@pmid:35913761].",
+        "prevalence_details":"As of 2019, only 7 cases total of GLS deficiency, including non-repeat. Identified unrelated patients have been Canadian [@pmid:30970188), Kurdish (Turkey) [@pmid:35913761] and US-American (Northern European/Native American descent [@pmid:35913761].",
         "stripy":[
             "GLS"
         ],
@@ -2924,7 +2919,7 @@
         "mondo":[
             "0600001"
         ],
-        "year":2019.0,
+        "year":"2019 [@pmid:30970188]",
         "medgen":[
             "987241"
         ],
@@ -2945,7 +2940,7 @@
         "tr_gnomad":[
             "TR24838"
         ],
-        "disease_description":"Glutaminase deficiency is characterized by refractory seizures, respiratory failure, brain abnormalities and death in the neonatal period, though milder cases with spastic ataxia-dysarthria have also been reported. This condition is caused by mutations in the glutaminase (GLS) gene [@mondo:].",
+        "disease_description":"Glutaminase deficiency is characterized by refractory seizures, respiratory failure, brain abnormalities and death in the neonatal period, though milder cases with spastic ataxia-dysarthria have also been reported. This condition is caused by mutations in the glutaminase (GLS) gene [@mondo:0600001].",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -2996,14 +2991,10 @@
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Polyalanine",
-        "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5].",
-        "source":[
-            "Pathogenic Short Tandem Repeats",
-            "Gnomad v3.1.2",
-            "NBK1423"
-        ],
-        "details":"There are 3 pathogenic polyalanine tracts in this gene",
+        "mechanism":"LoF",
+        "mechanism_detail":"Polyalanine expansions leading to haploinsufficiency [@genereviews:NBK1423]",
+        "source":[],
+        "details":"Anticipation does not occur, and expansions appear fully penetrant [@genereviews:NBK1423].",
         "omim":[
             "140000"
         ],
@@ -3021,7 +3012,7 @@
         "mondo":[
             "0007698"
         ],
-        "year":2000.0,
+        "year":"2004 [@pmid:15385446]",
         "medgen":[
             "331103"
         ],
@@ -3043,7 +3034,7 @@
         "tr_gnomad":[
             "TR74138"
         ],
-        "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:].",
+        "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:0007698].",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -3094,10 +3085,10 @@
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Polyalanine",
-        "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5].",
+        "mechanism":"LoF",
+        "mechanism_detail":"Polyalanine expansions leading to haploinsufficiency [@genereviews:NBK1423]",
         "source":[],
-        "details":"There are 3 pathogenic polyalanine tracts in this gene",
+        "details":"Anticipation does not occur, and expansions appear fully penetrant [@genereviews:NBK1423].",
         "omim":[
             "140000"
         ],
@@ -3115,7 +3106,7 @@
         "mondo":[
             "0007698"
         ],
-        "year":2000.0,
+        "year":"2003 [@pmid:12676922]",
         "medgen":[
             "331103"
         ],
@@ -3137,7 +3128,7 @@
         "tr_gnomad":[
             "TR74137"
         ],
-        "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:].",
+        "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:0007698].",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -3178,7 +3169,7 @@
         "benign_max":18.0,
         "intermediate_min":null,
         "intermediate_max":null,
-        "pathogenic_min":24.0,
+        "pathogenic_min":22.0,
         "pathogenic_max":32.0,
         "ref_copies":18.0,
         "motif_len":3,
@@ -3188,10 +3179,10 @@
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Polyalanine",
-        "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5].",
+        "mechanism":"LoF",
+        "mechanism_detail":"Polyalanine expansions leading to haploinsufficiency [@genereviews:NBK1423]",
         "source":[],
-        "details":"There are 3 pathogenic polyalanine tracts in this gene",
+        "details":"Anticipation does not occur, and expansions appear fully penetrant; it is unknown if contractions also lead to phenotypic variation [@genereviews:NBK1423].",
         "omim":[
             "140000"
         ],
@@ -3209,7 +3200,7 @@
         "mondo":[
             "0007698"
         ],
-        "year":2000.0,
+        "year":"2000 [@pmid:10839976]",
         "medgen":[
             "331103"
         ],
@@ -3231,7 +3222,7 @@
         "tr_gnomad":[
             "TR74136"
         ],
-        "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:].",
+        "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:0007698].",
         "locus_tags":[],
         "disease_tags":[]
     },
@@ -3268,12 +3259,12 @@
         ],
         "type":"Coding",
         "location_in_gene":"Exon 1",
-        "benign_min":14.0,
+        "benign_min":15.0,
         "benign_max":15.0,
         "intermediate_min":null,
         "intermediate_max":null,
         "pathogenic_min":22.0,
-        "pathogenic_max":22.0,
+        "pathogenic_max":23.0,
         "ref_copies":14.0,
         "motif_len":3,
         "age_onset":"0 (birth)",
@@ -3282,15 +3273,15 @@
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Polyalanine",
-        "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5].",
+        "mechanism":"GoF",
+        "mechanism_detail":"Polyalanine expansion leading to GoF [@doi:10.1038/s41576-024-00696-z]",
         "source":[],
-        "details":null,
+        "details":"Benign alleles are highly conserved to be 15 repeats, with disease observed in individuals with 22-23 repeats [@pmid:8614804; @doi:10.1016/j.gene.2012.02.046] as well as in individuals with 8-11 repeats [@genereviews:NBK535148].",
         "omim":[
             "186000"
         ],
         "prevalence":null,
-        "prevalence_details":"Found across dozens of unrelated families worldwide [@pmid:24038517].",
+        "prevalence_details":"Syndactly is found across dozens of unrelated families worldwide [@pmid:24038517]. However, syndactyly-5 specific to STR expansion has been found in 3 individuals [@genereviews:NBK535148].",
         "stripy":[
             "HOXD13"
         ],
@@ -3303,7 +3294,7 @@
         "mondo":[
             "0008513"
         ],
-        "year":1996.0,
+        "year":"1996 [@pmid:8614804]",
         "medgen":[
             "1809573"
         ],
@@ -3326,7 +3317,7 @@
             "TR24032"
         ],
         "disease_description":"Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present [@omim:186000].",
-        "locus_tags":[],
+        "locus_tags":["contraction", "expansion"],
         "disease_tags":[]
     },
     {
@@ -3370,23 +3361,23 @@
         "pathogenic_max":250.0,
         "ref_copies":21.3,
         "motif_len":3,
-        "age_onset":"Typical: 35-44 [@genereviews:]; Range: 2-85 [@pmid:21171977].",
+        "age_onset":"Typical: 35-44 [@genereviews:NBK1305]; Range: 2-85 [@pmid:21171977].",
         "age_onset_min":2,
         "age_onset_max":85,
         "typ_age_onset_min":35.0,
         "typ_age_onset_max":44.0,
         "novel":"ref",
-        "mechanism":"Polyglutamine",
-        "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5].",
+        "mechanism":"GoF/LoF",
+        "mechanism_detail":"While the primary pathogenic mechanism is gain of function of the protein product, pathogenesis is complex and multifactorial [@pmcid:PMC5495055].",
         "source":[
             "pmid: 12791042"
         ],
-        "details":"27-35 motifs are unstable, 36-39 motifs have reduced penetrance. >60 motifs assocated with onset age <20 years. Only CAG expansions are considered pathogenic. Interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110].",
+        "details":"27-35 motifs are unstable/premutations, 36-39 motifs have reduced penetrance. >60 motifs assocated with onset age <20 years [@genereviews:NBK1305]. Only CAG expansions are considered pathogenic, but interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110].",
         "omim":[
             "143100"
         ],
         "prevalence":"1/10000",
-        "prevalence_details":"[@pmid:29100084]: 6.5-15/100,000; 9.71-17:100,000 (European) vs. 0.1-2/100,000 (African), as many as 1 in 400 have reduced penetrance (0.2-2% for 36-38 CAG) HTT alleles [@genereviews:]. Found across ethnicities/ancestries, with population-dependent prevalence [@genereviews:NBK1305].",
+        "prevalence_details":"6.5-15/100,000 [@pmid:29100084]. 9.71-17:100,000 (European) vs. 0.1-2/100,000 (African), as many as 1 in 400 have reduced penetrance (0.2-2% for 36-38 CAG) HTT alleles [@genereviews:NBK1305]. Found across ethnicities/ancestries, with population-dependent prevalence [@genereviews:NBK1305].",
         "stripy":[
             "HTT"
         ],
@@ -3399,7 +3390,7 @@
         "mondo":[
             "0007739"
         ],
-        "year":1993.0,
+        "year":"1993 [@pmid:8458085]",
         "medgen":[
             "5654"
         ],
@@ -3424,7 +3415,7 @@
             "TR40017",
             "TR40018"
         ],
-        "disease_description":"Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia [@mondo:].",
+        "disease_description":"Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia [@mondo:0007739].",
         "locus_tags":[],
         "disease_tags":[]
     },
