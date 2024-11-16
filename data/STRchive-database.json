@@ -880,7 +880,7 @@
             "183090"
         ],
         "prevalence":"1.5/100000",
-        "prevalence_details":"1-2/100,000 (population dependent) [@pmid:29100084]. Cases have been found across ethnicities/ancestries, with population-dependent prevalence [@genereviews:NBK1275]",
+        "prevalence_details":"1-2/100,000 (population-dependent) [@pmid:29100084]. Cases have been found across ethnicities/ancestries, with population-dependent prevalence [@genereviews:NBK1275]",
         "stripy":[
             "ATXN2"
         ],
@@ -969,15 +969,15 @@
         "typ_age_onset_min":10.0,
         "typ_age_onset_max":49.0,
         "novel":"ref",
-        "mechanism":"Polyglutamine",
-        "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism":"GoF",
+        "mechanism_detail":"Polyglutamine expansion leading to gain of function; aggregated and mislocalized proteins in neurons [@doi:10.1007/s11604-022-01343-5; @genereviews:NBK1196]",
         "source":[],
         "details":"Benign alleles range from 11-44 repeats [@pmid:37906407], with intermediate alleles (45-59) associated with incomplete penetrance and non-classic phenotypes [@genereviews:NBK1196]. The threshold between incomplete and full penetrance is unclear, but presumed to occur at ~60 repeats [@genereviews:NBK1196; @pmid: 37906407]. The interruption CAA has been observed [@pmid:35245110]; AAG is present in hg38 reference sequence.",
         "omim":[
             "109150"
         ],
         "prevalence":"2.1/100000",
-        "prevalence_details":"1-5/100,000 [@pmid:29100084]; Most prevalent SCA subtype [@genereviews:NBK557816]. Found worldwide across ancestries/ethnicities [@genereviews:NBK1196]",
+        "prevalence_details":"1-5/100,000 [@pmid:29100084]. Most prevalent SCA subtype [@genereviews:NBK557816]. Found worldwide across ancestries/ethnicities [@genereviews:NBK1196]",
         "stripy":[
             "ATXN3"
         ],
@@ -1060,22 +1060,22 @@
         "pathogenic_max":460.0,
         "ref_copies":10.7,
         "motif_len":3,
-        "age_onset":"Typical: 4-48 [@pmid:20739808]; Range: 0-65 [@genereviews:NBK1256]",
+        "age_onset":"Typical: 4-48 [@pmid:20739808]; Range: 0-90 [@genereviews:NBK1256; @doi:10.1038/sj.ejhg.5201108]",
         "age_onset_min":0,
         "age_onset_max":65,
         "typ_age_onset_min":4.0,
         "typ_age_onset_max":48.0,
         "novel":"ref",
-        "mechanism":"Polyglutamine ",
-        "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism":"GoF",
+        "mechanism_detail":"Polyglutamine expansion leading to gain of function; toxic misfolded intermediated suspected [@genereviews:NBK1256; @pmcid:PMC4195584]",
         "source":[
         ],
-        "details":"Benign alleles range from 4-27 [@pmid:37906407], with intermediate alleles ranging from premutations (28-33) to reduced penetrance (34-36) [@genereview:NBK1256]. Interruptions observed include CAA [@pmid:35245110]",
+        "details":"Benign alleles range from 4-27 [@pmid:37906407], with intermediate alleles ranging from premutations (28-33) to reduced penetrance (34-36) [@genereview:NBK1256]. Interruptions observed include CAA [@pmid:35245110].",
         "omim":[
             "164500"
         ],
         "prevalence":".999/300000",
-        "prevalence_details":"<1/300,000: Predominantly found in those with North European and African ancestry [@genereviews:NBK1256]",
+        "prevalence_details":"<1/300,000: predominantly found in those with North European and African ancestry [@genereviews:NBK1256]",
         "stripy":[
             "ATXN7"
         ],
@@ -1088,7 +1088,7 @@
         "mondo":[
             "0016163"
         ],
-        "year":1996.0,
+        "year":"1996 [@pmid:8908515]",
         "medgen":[
             "156006"
         ],
@@ -1111,7 +1111,7 @@
             "TR31879",
             "TR31880"
         ],
-        "disease_description":"Spinocerebellar ataxia-7 (SCA7) is an autosomal dominant neurodegenerative disorder characterized by adult onset of progressive cerebellar ataxia associated with pigmental macular dystrophy. [@omim:164500]",
+        "disease_description":"Spinocerebellar ataxia-7 (SCA7) is an autosomal dominant neurodegenerative disorder characterized by adult onset of progressive cerebellar ataxia associated with pigmental macular dystrophy [@omim:164500].",
         "locus_tags":[],
         "disease_tags":[
             "ataxia"
@@ -1158,23 +1158,21 @@
         "pathogenic_max":1300.0,
         "ref_copies":15.3,
         "motif_len":3,
-        "age_onset":"Typical: 20-40; Range: 0-73 [@genereviews:]",
+        "age_onset":"Typical: 20-40; Range: 0-73 [@genereviews:NBK1268]",
         "age_onset_min":1,
         "age_onset_max":73,
         "typ_age_onset_min":20.0,
         "typ_age_onset_max":49.0,
         "novel":"ref",
-        "mechanism":"Polyglutamine/toxic gain-of-function",
-        "mechanism_detail":"Polyglutamine/toxic gain-of-function [@omim:] (doi.org/10.1007/s11604-022-01343-5]",
-        "source":[
-            "s40478-021-01201-x"
-        ],
-        "details":"Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, which encodes a nearly pure polyglutamine expansion protein in the CAG direction, and ATXN8OS (603680), which, when transcribed, produces a noncoding CUG expansion RNA (Moseley et al., 2006]. Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [@pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increased RAN translation and protein toxicity [@pmid:34632710]; Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [Moseley et al 2006; Authors, unpublished data]. [@genereviews:]",
+        "mechanism":"GoF",
+        "mechanism_detail":"Polyglutamine/toxic gain-of-function [@omim:608768; @genereviews:NBK1268]",
+        "source":[],
+        "details":"Reduced penetrance is found in alleles of all sizes, although penetrance appears higher at 71+ repeats and repeats at 50-70 appear less likely to result in disease [genereviews:NBK1268; @pmid:20373340]. Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, a nearly pure polyglutamine repeat protein in the CAG direction, and ATXN8OS, which is transcribed to a noncoding CUG repeat RNA [@pmid:16804541]. Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [@pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increase RAN translation and protein toxicity [@pmid:34632710]; Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [@pmid:16804541; @genereviews:NBK1268]",
         "omim":[
             "608768"
         ],
         "prevalence":"0.5/100000",
-        "prevalence_details":"<1/100,000; [@pmid:29100084]; Expansion in 1:100-1200 chromosomes [@genereviews:]. Found across ethnicities/ancestries, with population-dependent prevalence [@genereviews:NBK1268]",
+        "prevalence_details":"<1/100,000 [@pmid:29100084]; expansion in 1:100-1200 chromosomes [@genereviews:NBK1268]. Found across ethnicities/ancestries, with population-dependent prevalence [@genereviews:NBK1268]",
         "stripy":[
             "ATXN8OS"
         ],
@@ -1187,7 +1185,7 @@
         "mondo":[
             "0012116"
         ],
-        "year":1999.0,
+        "year":"1999 [@pmid:10192387]",
         "medgen":[
             "332457"
         ],
@@ -1210,7 +1208,7 @@
             "TR125263",
             "TR125264"
         ],
-        "disease_description":"Spinocerebellar ataxia type 8 (SCA8) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by cerebellar ataxia and cognitive dysfunction in almost three quarters of patients and pyramidal and sensory signs in approximately a third of patients. [@mondo:]",
+        "disease_description":"Spinocerebellar ataxia type 8 (SCA8) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by cerebellar ataxia and cognitive dysfunction in almost three quarters of patients and pyramidal and sensory signs in approximately a third of patients [@mondo:0012116].",
         "locus_tags":[],
         "disease_tags":[
             "ataxia"
@@ -1281,25 +1279,21 @@
         "pathogenic_max":760.0,
         "ref_copies":14.4,
         "motif_len":5,
-        "age_onset":"Typical: 56-62 [@pmid:36563608]; Range: 8-83 [@pmid:23331413) ",
+        "age_onset":"Typical: 56-62 [@pmid:36563608]; Range: 8-83 [@pmid:23331413]",
         "age_onset_min":8,
         "age_onset_max":83,
         "typ_age_onset_min":56.0,
         "typ_age_onset_max":62.0,
         "novel":"novel",
-        "mechanism":"Epigenetic",
-        "mechanism_detail":"Role in heterochromatin or chromosomal structure theorized [@omim:]",
-        "source":[
-            "Sato 2009",
-            "19878914 (Pubmed)",
-            "https://doi.org/10.1038/s41580-021-00382-6"
-        ],
-        "details":"Novel, STR-containing insertion, not present in reference genome",
+        "mechanism":"RNA toxicity/GoF",
+        "mechanism_detail":"RNA toxicity and gain of function leading to neurodegeneration [@doi:10.1016/j.neurol.2022.09.004]. Role in heterochromatin or chromosomal structure theorized [@omim:117210]",
+        "source":[],
+        "details":"This locus is a novel STR-containing insertion, not present in reference genome; the pathogenic threshold (110-760) is based on the pure repeat of the pathogenic motif within the insertion [@pmid:19878914].",
         "omim":[
             "117210"
         ],
         "prevalence":null,
-        "prevalence_details":"Has been found in Japanese populations [@omim:117210]",
+        "prevalence_details":"Has been found in Japanese populations [@omim:117210] and then once respectively in a Korean and a Chinese family [@doi:10.1016/j.jns.2022.120527]",
         "stripy":[
             "BEAN1"
         ],
@@ -1312,7 +1306,7 @@
         "mondo":[
             "0007296"
         ],
-        "year":2009.0,
+        "year":"2009 [@pmid: 19878914]",
         "medgen":[
             "348439"
         ],
@@ -1335,7 +1329,7 @@
         "tr_gnomad":[
             "TR141992"
         ],
-        "disease_description":"Spinocerebellar ataxia type 31 (SCA31) is a very rare subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by the late-onset of cerebral ataxia, dysarthria and horizontal gaze nystagmus, and that is occasionally accompanied by pyramidal signs, tremor, decreased vibration sense and hearing difficulties. [@mondo:]",
+        "disease_description":"Spinocerebellar ataxia type 31 (SCA31) is a very rare subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by the late-onset of cerebral ataxia, dysarthria and horizontal gaze nystagmus, and that is occasionally accompanied by pyramidal signs, tremor, decreased vibration sense and hearing difficulties [@mondo:0007296].",
         "locus_tags":[],
         "disease_tags":[
             "ataxia"
@@ -1373,26 +1367,26 @@
             "AD"
         ],
         "type":"5' UTR/Intronic",
-        "location_in_gene":"Intron 1 or 5' depending on transcript",
+        "location_in_gene":"Intron 1 or 5' UTR depending on transcript",
         "benign_min":2.0,
-        "benign_max":20.0,
-        "intermediate_min":20.0,
+        "benign_max":23.0,
+        "intermediate_min":24.0,
         "intermediate_max":60.0,
         "pathogenic_min":250.0,
-        "pathogenic_max":2000.0,
+        "pathogenic_max":4000.0,
         "ref_copies":10.8,
         "motif_len":6,
-        "age_onset":"Typical: 50-64; Range: 20-91 [@genereviews:]",
+        "age_onset":"Typical: 50-64; Range: 20-91 [@genereviews:NBK268647]",
         "age_onset_min":20,
         "age_onset_max":91,
         "typ_age_onset_min":50.0,
         "typ_age_onset_max":64.0,
         "novel":"ref",
         "mechanism":"RNA toxicity proposed",
-        "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region. [@omim:]",
+        "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region. [@omim:105500]",
         "source":[
         ],
-        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914]. Pathogenic lower range is controversial (STRipy).",
+        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges at the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@doi: 10.1016/j.gde.2017.02.008] yet 24-30 repeats are associated with ALS [@doi:10.1186/s40478-019-0724-4] and repeats up to size 60 have ambiguous. Pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605].",
         "omim":[
             "105500"
         ],
@@ -1676,7 +1670,7 @@
         "typ_age_onset_max":56.0,
         "novel":"ref",
         "mechanism":"Aberrant splicing",
-        "mechanism_detail":"Aberrant splicing (doi.org/10.1093/hmg/ddr568]",
+        "mechanism_detail":"Aberrant splicing [@doi:10.1093/hmg/ddr568]",
         "source":[
             "https://doi.org/10.1038/s41580-021-00382-6"
         ],
@@ -2171,7 +2165,7 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"Protein LOF",
-        "mechanism_detail":"Functional defect in dystrophin/dystroglycan (https://doi.org/10.1007/s10038-006-0056-7]",
+        "mechanism_detail":"Functional defect in dystrophin/dystroglycan [@doi:10.1007/s10038-006-0056-7]",
         "source":[
             "pmid: 27417533"
         ],
@@ -2265,7 +2259,7 @@
         "typ_age_onset_max":30.0,
         "novel":"ref",
         "mechanism":"RNA GOF",
-        "mechanism_detail":"RNA gain-of-function - RNA gelation leading to misregulation of alternative splicing (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism_detail":"RNA gain-of-function - RNA gelation leading to misregulation of alternative splicing [@doi:10.1007/s11604-022-01343-5]",
         "source":[
             "s40478-021-01201-x"
         ],
@@ -2551,7 +2545,7 @@
         "typ_age_onset_max":65.0,
         "novel":"ref",
         "mechanism":"LOF via decreased gene expression in FXS, GOF in FXTAS",
-        "mechanism_detail":"Loss of function via transcriptional silencing in FXSRNA GOF in FXTAS (doi.org/10.1038/nrg1691) (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism_detail":"Loss of function via transcriptional silencing in FXSRNA GOF in FXTAS [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5]",
         "source":[
             "Hannan 2018",
             "Mirkin 2007",
@@ -2753,7 +2747,7 @@
         "typ_age_onset_max":15.0,
         "novel":"ref",
         "mechanism":"LOF, reduced gene expression",
-        "mechanism_detail":"Loss of function via transcriptional silencing (doi.org/10.1038/nrg1691) (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism_detail":"Loss of function via transcriptional silencing [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5]",
         "source":[
         ],
         "details":"The expanded repeats were interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences [@pmid:11748752]",
@@ -2848,9 +2842,8 @@
         "typ_age_onset_max":34.0,
         "novel":"ref",
         "mechanism":"RNA toxicity",
-        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:], or unknown (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:618940], still unknown [@doi:10.1007/s11604-022-01343-5]",
         "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
             "32413282 (Pubmed]"
         ],
         "details":"Interruptions Seen: CGA [@pmid:35245110]; Interruptions mentioned but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784]",
@@ -3138,10 +3131,7 @@
         "novel":"ref",
         "mechanism":"Polyalanine",
         "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5]",
-        "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
-            "NBK1423"
-        ],
+        "source":[],
         "details":"There are 3 pathogenic polyalanine tracts in this gene",
         "omim":[
             "140000"
@@ -3235,10 +3225,7 @@
         "novel":"ref",
         "mechanism":"Polyalanine",
         "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5]",
-        "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
-            "NBK1423"
-        ],
+        "source":[],
         "details":"There are 3 pathogenic polyalanine tracts in this gene",
         "omim":[
             "140000"
@@ -3332,10 +3319,7 @@
         "novel":"ref",
         "mechanism":"Polyalanine",
         "mechanism_detail":"Polyalanine (doi.org/10.1038/nature05977) (doi.org/10.1007/s11604-022-01343-5]",
-        "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
-            "NBK535148"
-        ],
+        "source":[],
         "details":null,
         "omim":[
             "186000"
@@ -3430,9 +3414,6 @@
         "mechanism":"Polyglutamine",
         "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5]",
         "source":[
-            "Hannan 2018",
-            "Mirkin 2007",
-            "GeneReviews",
             "pmid: 12791042"
         ],
         "details":"27-35 motifs are unstable, 36-39 motifs have reduced penetrance. >60 motifs assocated with onset age <20 years. Only CAG expansions are considered pathogenic. Interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110].",
@@ -3530,7 +3511,7 @@
         "typ_age_onset_max":52.0,
         "novel":"ref",
         "mechanism":"LoF/GoF (RNA)",
-        "mechanism_detail":"unstable vertical transmission (doi.org/10.1007/s11604-022-01343-5), [@pmid:38467784]",
+        "mechanism_detail":"Unstable vertical transmission (doi.org/10.1007/s11604-022-01343-5), [@pmid:38467784]",
         "source":[],
         "details":null,
         "omim":[
@@ -3625,15 +3606,12 @@
         "typ_age_onset_max":51.0,
         "novel":"ref",
         "mechanism":"RNA toxicity",
-        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:]; unknown (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:164310]; unknown (doi.org/10.1007/s11604-022-01343-5]",
         "source":[
-            "omim 164310",
             "Ishiura et al [2019]",
-            "Ehdn",
-            "NBK535148",
             "PMID 31332380"
         ],
-        "details":"Possible milder clinical phenotype of inherited peripheral neuropathy (IPN) associated with shorter expansions (https://doi.org/10.1212/WNL.000000000020478]. Interruptions Seen: ACG, CCA [@pmid:35245110]",
+        "details":"Possible milder clinical phenotype of inherited peripheral neuropathy (IPN) associated with shorter expansions [@doi:10.1212/WNL.000000000020478]. Interruptions Seen: ACG, CCA [@pmid:35245110]",
         "omim":[
             "164310"
         ],
@@ -4122,9 +4100,8 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"RNA toxicity",
-        "mechanism_detail":"RNA mediated toxicity hypothesized, unknown [@omim:] (doi.org/10.1007/s11604-022-01343-5]",
+        "mechanism_detail":"RNA mediated toxicity hypothesized, overall unknown [@omim:618637; @doi:10.1007/s11604-022-01343-5]",
         "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
             "Ishiura 2019",
             "doi: 10.1038/s41588-019-0458-z",
             "https://doi.org/10.1038/s41580-021-00382-6"
@@ -4606,7 +4583,6 @@
         "mechanism":"LOF, epigenetic",
         "mechanism_detail":"mutations abrogated the histone-modifying potential of PRDM12, consistent with a loss of function [@omim:]",
         "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
             "https://doi.org/10.1038/ng.3308"
         ],
         "details":null,
@@ -5032,7 +5008,6 @@
         "mechanism":"LoF",
         "mechanism_detail":"LoF [@pmid:38467784]",
         "source":[
-            "omim",
             "Cortese 2019",
             "30926972 (Pubmed]",
             "https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-021-01201-x/tables/1",
@@ -6022,7 +5997,7 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"PolyQ toxicity",
-        "mechanism_detail":"PolyQ toxicity (https://doi.org/10.1002/mds.29412]",
+        "mechanism_detail":"PolyQ toxicity [@doi:10.1002/mds.29412]",
         "source":[
             "https://doi.org/10.1002/mds.29412",
             "https://doi.org/10.1042/ETLS20230018"
@@ -6115,7 +6090,7 @@
         "mechanism_detail":"RNA toxicity hypothesized (10.1038/s41588-018-0067-2]",
         "source":[
             "Ishiura 2018",
-            "gnomad v3.1.2, 29507423 (Pubmed), https://doi.org/10.1038/s41597-020-00633-9, https://stripy.org/database/TNRC6A"
+            "29507423 (Pubmed), https://doi.org/10.1038/s41597-020-00633-9, https://stripy.org/database/TNRC6A"
         ],
         "details":"Novel, reported pathogenic alleles: (TTTTA)22 (TTTCA)exp (TTTTA)exp, but only the TTTCA is specific to affected individuals, Alu-associated repeat. Non-pathogenic reference TTTTA repeat was expanded in nine healthy subjects 40-120 repeats and in two individuals potentially even longer (Ishiura et al., 2018].",
         "omim":[
@@ -6299,7 +6274,7 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"Methylation",
-        "mechanism_detail":"Methylation (doi.org/10.1016/j.ajhg.2018.11.005]",
+        "mechanism_detail":"Methylation [@doi:10.1016/j.ajhg.2018.11.005]",
         "source":[
             "LaCroix 2019",
             "gnomad v3.1.2",
@@ -6491,7 +6466,7 @@
         "pathogenic_max":64.0,
         "ref_copies":21.3,
         "motif_len":3,
-        "age_onset":"Typical: 37- 56; Range: 15 - 60 [@pmid:38035881 - https://doi.org/10.1101/2023.10.03.23296230) ",
+        "age_onset":"Typical: 37- 56; Range: 15 - 60 [@pmid:38035881; @doi:10.1101/2023.10.03.23296230]",
         "age_onset_min":15,
         "age_onset_max":60,
         "typ_age_onset_min":37.0,
@@ -6590,11 +6565,8 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"Polyalanine ",
-        "mechanism_detail":"Polyalanine [@doi:doi.org/10.1038/nature05977, doi:doi.org/10.1007/s11604-022-01343-5]",
-        "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
-            "NBK535148"
-        ],
+        "mechanism_detail":"Polyalanine [@doi:doi.org/10.1038/nature05977; @doi:doi.org/10.1007/s11604-022-01343-5]",
+        "source":[],
         "details":null,
         "omim":[
             "609637"
@@ -6688,10 +6660,7 @@
         "novel":"ref",
         "mechanism":"Polyalanine",
         "mechanism_detail":"Polyalanine [@doi:doi.org/10.1038/nature05977]",
-        "source":[
-            "Pathogenic Short Tandem Repeats Gnomad v3.1.2",
-            "NBK535148"
-        ],
+        "source":[],
         "details":null,
         "omim":[
             "314390"
