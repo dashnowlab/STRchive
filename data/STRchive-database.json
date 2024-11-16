@@ -1372,7 +1372,7 @@
         "benign_max":23.0,
         "intermediate_min":24.0,
         "intermediate_max":60.0,
-        "pathogenic_min":250.0,
+        "pathogenic_min":251.0,
         "pathogenic_max":4000.0,
         "ref_copies":10.8,
         "motif_len":6,
@@ -1382,16 +1382,16 @@
         "typ_age_onset_min":50.0,
         "typ_age_onset_max":64.0,
         "novel":"ref",
-        "mechanism":"RNA toxicity proposed",
-        "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region. [@omim:105500]",
+        "mechanism":"Ambiguous",
+        "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region [@omim:105500]. Addiitonal mechanisms theorized include protein loss of function and RNA gain of function [@pmid:37847372].",
         "source":[
         ],
-        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges at the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@doi: 10.1016/j.gde.2017.02.008] yet 24-30 repeats are associated with ALS [@doi:10.1186/s40478-019-0724-4] and repeats up to size 60 have ambiguous. Pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605].",
+        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges of the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@doi: 10.1016/j.gde.2017.02.008] yet 24-30 repeats are associated with ALS [@doi:10.1186/s40478-019-0724-4] and while 60 repeats is frequently used as a threshold for uncertain alleles, the exact threshold of pathogenicity remains unclear [@genereviews:NBK268647; @pmid:38099605]. Repeat of 80 motifs and lower appear to have delayed onset for any phenotype [@doi:10.1016/j.gde.2017.02.008]. >250 repeats are associated with a full FTD/ALS disease state [@pmid:31048495], but pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605]. Penetrance appears to also be age-dependent, with environmental factors and specific phenotypes associated with sex and age at onset [@pmid:28522837]",
         "omim":[
             "105500"
         ],
         "prevalence":null,
-        "prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2/100,000 person-years, point prevalence is 3-5/100,000 (Europe/US); lifetime risk is 1 in 300 [@pmid:31315673]. C9orf72-FTD is estimated to be 0.04-134:100,000 [@genereviews:], and by our estimates 0.65-1.56/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry [@genereviews:NBK268647]",
+        "prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2/100,000 person-years, point prevalence is 3-5/100,000 (Europe/US); lifetime risk is 1 in 300 [@pmid:31315673]. Related individuals to patients with C9orf72-ALS appear at an increased risk of disease regardless of carrier status [@pmid:38149039]. C9orf72-FTD is estimated to be 0.04-134:100,000 [@genereviews:NBK268647], and by our estimates 0.65-1.56/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry [@genereviews:NBK268647]",
         "stripy":[
             "C9ORF72"
         ],
@@ -1404,7 +1404,7 @@
         "mondo":[
             "0007105"
         ],
-        "year":2011.0,
+        "year":"2011 [@pmid:21944778]",
         "medgen":[
             "1830423"
         ],
@@ -1482,7 +1482,7 @@
         "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5]",
         "source":[
         ],
-        "details":null,
+        "details":"The intermediate range (19 motifs) [@pmid:37906407]",
         "omim":[
             "183086"
         ],
