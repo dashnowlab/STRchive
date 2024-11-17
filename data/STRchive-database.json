@@ -4586,12 +4586,12 @@
         ],
         "type":"Coding",
         "location_in_gene":"Exon 2",
-        "benign_min":null,
+        "benign_min":4.0,
         "benign_max":4.0,
         "intermediate_min":null,
         "intermediate_max":null,
         "pathogenic_min":5.0,
-        "pathogenic_max":null,
+        "pathogenic_max":16.0,
         "ref_copies":null,
         "motif_len":24,
         "age_onset":"Typical: 50-60 [@genereviews:NBK1229]; Range: 31-63 [@pmid:37379724].",
@@ -4599,18 +4599,16 @@
         "age_onset_max":63,
         "typ_age_onset_min":50.0,
         "typ_age_onset_max":60.0,
-        "novel":null,
+        "novel":"ref",
         "mechanism":null,
         "mechanism_detail":null,
-        "source":[
-            "https://www.ncbi.nlm.nih.gov/books/NBK1229/"
-        ],
-        "details":null,
+        "source":[],
+        "details":"Normal PRNP alleles have one nonapeptide followed by four octapeptide tandem repeat sequences, each of which comprises the  amino acids: Pro-(His/Gln)-Gly-Gly-Gly-(-/Trp)-Gly-Gln; any additional repeat leads to pathogenicity, with the largest repeat observed 16 motifs [@genereviews:NBK1229].",
         "omim":[
             "123400"
         ],
         "prevalence":null,
-        "prevalence_details":"<0.0225/1,000,000: <15% of CJ variants are repeat expansions [@genereviews:NBK535148]. 15% newly diagnosed prion disease cases are genetic [@genereviews:NBK1229] 1 individual per million per year worldwide (350 cases annually in US) [@pmid:29939637]. Found worldwide [@genereviews:NBK1229].",
+        "prevalence_details":"<0.0225/1,000,000: <15% of CJ variants are repeat expansions [@genereviews:NBK535148]. 15% newly diagnosed prion disease cases are genetic [@genereviews:NBK1229], 1 individual per million per year worldwide (350 cases annually in US) [@pmid:29939637]. Found worldwide [@genereviews:NBK1229].",
         "stripy":[],
         "gnomad":[
             "PRNP"
@@ -4621,7 +4619,7 @@
         "mondo":[
             "0007403"
         ],
-        "year":null,
+        "year":"1991 [@pmid:1683708]",
         "medgen":[
             "155837"
         ],
@@ -4702,12 +4700,9 @@
         "typ_age_onset_max":null,
         "novel":"novel",
         "mechanism":"Unknown",
-        "mechanism_detail":"Expression isn't changed (https://doi.org/10.1002/mds.29654].",
-        "source":[
-            "https://doi.org/10.1002/mds.29654",
-            "pmid: 38876750"
-        ],
-        "details":"TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali [@pmid:37994247]. Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in [@pmid:38876750]. It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note, locus is partially deleted in T2T reference genome",
+        "mechanism_detail":"Expression isn't changed [@pmid:PMID: 37994247].",
+        "source":[],
+        "details":"TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali [@pmid:37994247]. Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in [@pmid:38876750]. It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note: locus is partially deleted in T2T reference genome",
         "omim":[],
         "prevalence":null,
         "prevalence_details":"Observed in a single family from Mali with ten affected individuals [@pmid:37994247].",
@@ -4715,7 +4710,7 @@
         "gnomad":[],
         "genereviews":[],
         "mondo":[],
-        "year":2024.0,
+        "year":"2024 [@pmid:PMID: 37994247]",
         "medgen":[],
         "orphanet":[
             "86814"
@@ -4772,12 +4767,12 @@
         ],
         "type":"Intronic",
         "location_in_gene":"Intron 14",
-        "benign_min":0.0,
-        "benign_max":1.0,
+        "benign_min":null,
+        "benign_max":null,
         "intermediate_min":null,
         "intermediate_max":null,
         "pathogenic_min":60.0,
-        "pathogenic_max":60.0,
+        "pathogenic_max":2200.0,
         "ref_copies":17.4,
         "motif_len":5,
         "age_onset":"Typical: 20-33 [@pmid:30351492]; Range: 18 [@pmid:29507423] - 37 [@pmid:30351492].",
@@ -4789,11 +4784,9 @@
         "mechanism":"RNA toxicity",
         "mechanism_detail":"RNA toxicity hypothesized (10.1038/s41588-018-0067-2].",
         "source":[
-            "Ishiura 2018",
-            "29507423 (Pubmed].",
             "https://sci-hub.hkvisa.net/10.1111/ene.13848"
         ],
-        "details":"Novel, (TTTTA)exp(TTTCA)exp(TTTTA)n, but only the TTTCA is specific to affected individuals, Alu-associated repeat, incomplete penetrance. Interruptions Seen: TATTA, TTTTTA [@pmid:35245110].",
+        "details":"The locus structure is (TTTTA)exp(TTTCA)exp(TTTTA)n, where only the TTTCA is specific to affected individuals as a pathogenic insertion [@pmid:29507423; @pmid:30351492]. Pathogenic expansions range from 60 to thousands of repeats [@pmid:29507423; @pmid:30351492]. Interruptions seen: TATTA, TTTTTA [@pmid:35245110].",
         "omim":[
             "618075"
         ],
@@ -4811,7 +4804,7 @@
         "mondo":[
             "0054847"
         ],
-        "year":2018.0,
+        "year":"2018 [@pmid:29507423]",
         "medgen":[
             "1648435"
         ],
@@ -4920,7 +4913,7 @@
         "intermediate_min":null,
         "intermediate_max":null,
         "pathogenic_min":400.0,
-        "pathogenic_max":2000.0,
+        "pathogenic_max":2750.0,
         "ref_copies":11.8,
         "motif_len":5,
         "age_onset":"Typical: 36-52; Range: 19-76 [@genereviews:NBK564656].",
@@ -4935,10 +4928,9 @@
             "Cortese 2019",
             "30926972 (Pubmed].",
             "https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-021-01201-x/tables/1",
-            "https://www.ncbi.nlm.nih.gov/books/NBK564656/",
             "https://doi.org/10.1101/2023.05.12.540470"
         ],
-        "details":"Pathogenic expansions may be flanked by other motifs. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals. The pathogenic size threshold appears to differ for the AAAGG motif. AAAGG expansions >= 600 repeats have been observed in CANVAS patients, while ~100-380 repeats have been observed in controls, and so are not predicted to be pathogenic [@pmid:37450567].",
+        "details":"Pathogenic expansions may be flanked by other motifs. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients, while ~100-380 repeats have been observed in controls, and so are not predicted to be pathogenic [@pmid:37450567].",
         "omim":[
             "614575"
         ],
@@ -4956,7 +4948,7 @@
         "mondo":[
             "0044720"
         ],
-        "year":2019.0,
+        "year":"2019 [@pmid:31230722]",
         "medgen":[
             "482853"
         ],
@@ -5253,7 +5245,7 @@
         "mondo":[
             "0010985"
         ],
-        "year":2018.0,
+        "year":"2018 [@pmid:29507423]",
         "medgen":[
             "371424"
         ],
@@ -5637,7 +5629,7 @@
         "mechanism":"Polyglutamine",
         "mechanism_detail":"Polyglutamine (doi.org/10.1038/nrg.2017.115) (doi.org/10.1007/s11604-022-01343-5].",
         "source":[],
-        "details":"Interruptions Seen: CAA [@pmid:35245110].",
+        "details":"Huntington's disease like phenotype [@pmid:12805114]. Interruptions Seen: CAA [@pmid:35245110].",
         "omim":[
             "607136"
         ],
@@ -6033,7 +6025,7 @@
         "mondo":[
             "0054846"
         ],
-        "year":2018.0,
+        "year":"2018 [@pmid:29507423]",
         "medgen":[
             "1648448"
         ],
