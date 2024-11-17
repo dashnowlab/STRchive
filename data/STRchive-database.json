@@ -3710,6 +3710,94 @@
         "disease_tags":[]
     },
     {
+
+   "chrom":"chr15",
+       "start_hg38":156591766,
+       "stop_hg38":156591783,
+       "start_hg19":156561558,
+       "stop_hg19":156561575,
+       "start_t2t":155728132,
+       "stop_t2t":155728149,
+       "id":"NME_NAXE",
+       "disease_id":"NME",
+       "gene_strand":"+",
+       "reference_motif_reference_orientation":[
+           "GGGCC"
+       ],
+       "pathogenic_motif_reference_orientation":[
+           "GGGCC"
+       ],
+       "pathogenic_motif_gene_orientation":[
+           "GGGCC"
+       ],
+       "benign_motif_reference_orientation":[],
+       "benign_motif_gene_orientation":[],
+       "unknown_motif_reference_orientation":[],
+       "unknown_motif_gene_orientation":[],
+       "disease":"NAXE-related mitochondrial encephalopathy",
+       "gene":"NAXE",
+       "flank_motif":null,
+       "locus_structure":"(GGGCC)*",
+       "inheritance":[
+           "AR"
+       ],
+       "type":"5' UTR",
+       "location_in_gene":null,
+       "benign_min":2.0,
+       "benign_max":7.0,
+       "intermediate_min":null,
+       "intermediate_max":null,
+       "pathogenic_min":200.0,
+       "pathogenic_max":200.0,
+       "ref_copies":null,
+       "motif_len":5,
+       "age_onset":"Predominately infantile onset, extending to 20y or older for general disease; proband onset at one year [@doi:10.1038/s41525-024-00429-5].",
+       "age_onset_min":1,
+       "age_onset_max":1,
+       "typ_age_onset_min":0,
+       "typ_age_onset_max":0,
+       "novel":"ref",
+       "mechanism":"LoF",
+       "mechanism_detail":"Reduced NAXE expression from expansion in promoter [@doi:10.1038/s41525-024-00429-5]",
+       "source":[],
+       "details":"Normal range (2-7) alleles established by 484 control alleles and validated with orthogonal databases, while proband had expansion of ~200 repeats [@doi:10.1038/s41525-024-00429-5].",
+       "omim":[
+           "617186"
+       ],
+       "prevalence":null,
+       "prevalence_details":"Proband found in Japanese cohort [@doi:10.1038/s41525-024-00429-5].",
+       "stripy":[],
+       "gnomad":[],
+       "genereviews":[],
+       "mondo":[
+           "0020781"
+       ],
+       "year":"2024 [@doi:10.1038/s41525-024-00429-5]",
+       "medgen":[
+           "934642"
+       ],
+       "orphanet":[
+           "555407"
+       ],
+       "gard":[
+           "17991"
+       ],
+       "malacard":[
+           "ENC069"
+       ],
+       "webstr_hg38":[
+           "1184343",
+           "6351240"
+       ],
+       "webstr_hg19":[],
+       "tr_gnomad":[
+           "TR7952"
+       ],
+       "disease_description":"Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@doi:10.1038/s41525-024-00429-5].",
+       "locus_tags":[],
+       "disease_tags":[]
+   },
+    {
         "chrom":"chr15",
         "start_hg38":22786677,
         "stop_hg38":22786701,
