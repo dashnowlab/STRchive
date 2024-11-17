@@ -345,7 +345,7 @@
             "TR169377"
         ],
         "disease_description":"Kennedy's disease, also known as bulbospinal muscular atrophy (BSMA), is a rare X-linked recessive motor neuron disease characterized by proximal and bulbar muscle wasting [@mondo:0010735].",
-        "locus_tags":[],
+        "locus_tags":["contraction"],
         "disease_tags":[]
     },
     {
@@ -1811,7 +1811,7 @@
             "TR155017"
         ],
         "disease_description":"Pseudoachondroplasia is characterized by severe growth deficiency and deformations such as bow legs and hyperlordosis.; Multiple epiphyseal dysplasia type 1 (MED 1) is a form of multiple epiphyseal dysplasia that is characterized by normal or mild short stature, pain in the hips and/or knees, progressive deformity of extremities and early-onset osteoarthrosis. Specific features to MED 1 include a more pronounced involvement of hip joints and gait abnormality and a shorter adult height. MED1 is allelic to pseudoachondroplasia with which it shares clinical and radiological features. The disease follows an autosomal dominant mode of transmission [@mondo:0008322; @mondo:0007561].",
-        "locus_tags":["contraction", "expansion"],
+        "locus_tags":["contraction"],
         "disease_tags":[]
     },
     {
