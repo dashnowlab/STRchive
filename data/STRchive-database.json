@@ -1386,7 +1386,7 @@
         "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region [@omim:105500]. Addiitonal mechanisms theorized include protein loss of function and RNA gain of function [@pmid:37847372].",
         "source":[
         ],
-        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges of the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@doi: 10.1016/j.gde.2017.02.008] yet 24-30 repeats are associated with ALS [@doi:10.1186/s40478-019-0724-4] and while 60 repeats is frequently used as a threshold for uncertain alleles, the exact threshold of pathogenicity remains unclear [@genereviews:NBK268647; @pmid:38099605]. Repeat of 80 motifs and lower appear to have delayed onset for any phenotype [@doi:10.1016/j.gde.2017.02.008]. >250 repeats are associated with a full FTD/ALS disease state [@pmid:31048495], but pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605]. Penetrance appears to also be age-dependent, with environmental factors and specific phenotypes associated with sex and age at onset [@pmid:28522837].",
+        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges of the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@doi:10.1016/j.gde.2017.02.008] yet 24-30 repeats are associated with ALS [@doi:10.1186/s40478-019-0724-4] and while 60 repeats is frequently used as a threshold for uncertain alleles, the exact threshold of pathogenicity remains unclear [@genereviews:NBK268647; @pmid:38099605]. Repeat of 80 motifs and lower appear to have delayed onset for any phenotype [@doi:10.1016/j.gde.2017.02.008]. >250 repeats are associated with a full FTD/ALS disease state [@pmid:31048495], but pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605]. Penetrance appears to also be age-dependent, with environmental factors and specific phenotypes associated with sex and age at onset [@pmid:28522837].",
         "omim":[
             "105500"
         ],
@@ -2147,9 +2147,7 @@
         "novel":"ref",
         "mechanism":"LoF",
         "mechanism_detail":"Functional defect in dystrophin/dystroglycan [@doi:10.1007/s10038-006-0056-7].",
-        "source":[
-            "pmid: 27417533"
-        ],
+        "source":[],
         "details":"There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family, from which the benign and pathogenic ranges were inferred from affected and unaffected family members [@pmid:27417533]. The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
         "omim":[
             "310200"
@@ -3369,9 +3367,7 @@
         "novel":"ref",
         "mechanism":"GoF/LoF",
         "mechanism_detail":"While the primary pathogenic mechanism is gain of function of the protein product, pathogenesis is complex and multifactorial [@pmcid:PMC5495055].",
-        "source":[
-            "pmid: 12791042"
-        ],
+        "source":[],
         "details":"27-35 motifs are unstable/premutations, while 36-39 motifs are associated with reduced penetrance. >60 motifs assocated with onset age <20 years [@genereviews:NBK1305]. Only CAG expansions are considered pathogenic, but interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110]. Only fathers with premutations are considered at risk of transmitting pathogenic alleles [@mpid:19507258].",
         "omim":[
             "143100"
@@ -4214,7 +4210,7 @@
         "pathogenic_max":33.0,
         "ref_copies":15.7,
         "motif_len":3,
-        "age_onset":"Typical: 0-2 [@genereviews:NBK1427; @pmid: 15121777]; Range: 0-36 [@pmid:16873766].",
+        "age_onset":"Typical: 0-2 [@genereviews:NBK1427; @pmid:15121777]; Range: 0-36 [@pmid:16873766].",
         "age_onset_min":0,
         "age_onset_max":36,
         "typ_age_onset_min":0.0,
@@ -4314,11 +4310,7 @@
         "novel":"ref",
         "mechanism":null,
         "mechanism_detail":null,
-        "source":[
-            "PMC2905783",
-            "pmid: 20399836",
-            "pmid: 10196696"
-        ],
+        "source":[],
         "details":"There is conflicting evidence for the association between this repeat expansion and Parkinson's risk [@pmid:20399836; @pmid:10196696; @pmid:22963882], as well as overall disease significance. May be predisposing factor in earlier age of onset in FRDA patients [@pmid:19043662].",
         "omim":[
             "258450",
@@ -5307,8 +5299,8 @@
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
-        "mechanism":"Polyalanine",
-        "mechanism_detail":"Polyalanine (doi.org/10.1007/s11604-022-01343-5].",
+        "mechanism":"LoF",
+        "mechanism_detail":"Polyalanine expansions leading to aggresome formation and impaired transcriptional activity [@pmid:17127446].",
         "source":[],
         "details":null,
         "omim":[
