@@ -4546,6 +4546,90 @@
         "disease_tags":[]
     },
     {
+        "chrom":"chr15",
+        "start_hg38":88569434,
+        "stop_hg38":88569449,
+        "start_hg19":89112665,
+        "stop_hg19":89112680,
+        "start_t2t":86324039,
+        "stop_t2t":86324054,
+        "id":"pre-MIR7-2_CHNG3",
+        "disease_id":"CHNG3",
+        "gene_strand":"-",
+        "reference_motif_reference_orientation":[
+            "AAAC"
+        ],
+        "pathogenic_motif_reference_orientation":[
+            "AAAC"
+        ],
+        "pathogenic_motif_gene_orientation":[
+            "GTTT"
+        ],
+        "benign_motif_reference_orientation":[],
+        "benign_motif_gene_orientation":[],
+        "unknown_motif_reference_orientation":[],
+        "unknown_motif_gene_orientation":[],
+        "disease":"Nongoitrous congenital hypothyroidism-3",
+        "gene":"pre-MIR7-2",
+        "flank_motif":null,
+        "locus_structure":"(TTTG)*",
+        "inheritance":[
+            "AD"
+        ],
+        "type":"Non-coding",
+        "location_in_gene":null,
+        "benign_min":4.0,
+        "benign_max":4.0,
+        "intermediate_min":null,
+        "intermediate_max":null,
+        "pathogenic_min":3.0,
+        "pathogenic_max":3.0,
+        "ref_copies":null,
+        "motif_len":4,
+        "age_onset":"0 (birth)",
+        "age_onset_min":0.0,
+        "age_onset_max":0.0,
+        "typ_age_onset_min":null,
+        "typ_age_onset_max":null,
+        "novel":"ref",
+        "mechanism":"GoF",
+        "mechanism_detail":"Activates a thyroid-specific enhancer [@pmid:38714868; @pmid:38714869].",
+        "source":[],
+        "details":"Deletion of one repeat (4 to 3 repeats) found in 10 unrelated families with unsolved disease [@pmid:38714869]; a heterozygous T-to-G transversion in the third repeat can also lead to disease [@pmid:38714868].",
+        "omim":[
+            "609893"
+        ],
+        "prevalence":null,
+        "prevalence_details":"Found in 12 families, with ancestry including: Irish, White European, French (Normandie), Ashkenazi, French Canadian, Danish/White European, Welsh, Scottish, Italian, British/White European, Italian/Turkish/Lebanese, German/Palestinian, and South Chinese [@pmid:38714868].",
+        "stripy":null,
+        "gnomad":null,
+        "genereviews":[],
+        "mondo":[
+            "0012360"
+        ],
+        "year":"2024 [@pmid:38714869]",
+        "medgen":[
+            "424853"
+        ],
+        "orphanet":[],
+        "gard":[
+            "1487"
+        ],
+        "malacard":["HYP355"],
+        "webstr_hg38":[
+            "5177365"
+        ],
+        "webstr_hg19":[
+            "STR_492924"
+        ],
+        "tr_gnomad":[
+            "TR192005"
+        ],
+        "disease_description":"Nongoitrous congenital hypothyroidism-3 (CHNG3) is characterized by infantile-onset clinical and subclinical hypothyroidism associated with a small thyroid gland, high circulating TSH, normal free T4 levels, and normal or mildly increased serum thyroglobulin. Untreated patients or patients who discontinue treatment show a characteristic transition to multinodular goiter (MNG) with age [@omim:609893].",
+        "locus_tags":["contraction"],
+        "disease_tags":[]
+    },
+    {
         "chrom":"chr20",
         "start_hg38":4699397,
         "stop_hg38":4699493,
