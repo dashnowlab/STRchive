@@ -4913,8 +4913,8 @@
         "location_in_gene":"Intron 2",
         "benign_min":0.0,
         "benign_max":11.0,
-        "intermediate_min":null,
-        "intermediate_max":null,
+        "intermediate_min":11.0,
+        "intermediate_max":200.0,
         "pathogenic_min":400.0,
         "pathogenic_max":2750.0,
         "ref_copies":11.8,
@@ -4928,7 +4928,7 @@
         "mechanism":"LoF",
         "mechanism_detail":"LoF [@pmid:38467784].",
         "source":[],
-        "details":"Pathogenic expansions (ranging from 400-2750 pathogenic motifs) may be flanked by other motifs [@genereviews:NBK564656]. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656], and motif associations are described by Delforge et al [@doi:10.1016/j.neurol.2024.03.006]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients (vs 400 with other pathogenic motifs), while ~100-380 AAAGG repeats were found in unaffected controls [@pmid:37450567].",
+        "details":"Disease is caused by an insertion of a pathogenic motif, although motif presence is variable and can expand up to 200 repeats without apparently causing a phenotype [@genereviews:NBK564656]. Pathogenic expansions (ranging from 400-2750 pathogenic motifs) may be flanked by other motifs [@genereviews:NBK564656]. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656], and motif associations are described by Delforge et al [@doi:10.1016/j.neurol.2024.03.006]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients (vs 400 with other pathogenic motifs), while ~100-380 AAAGG repeats were found in unaffected controls [@pmid:37450567].",
         "omim":[
             "614575"
         ],
