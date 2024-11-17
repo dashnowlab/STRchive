@@ -3710,93 +3710,165 @@
         "disease_tags":[]
     },
     {
+        "chrom":"chr1",
+        "start_hg38":155188487,
+        "stop_hg38":155192239,
+        "start_hg19":155160963,
+        "stop_hg19":155162030,
+        "start_t2t":154328103,
+        "stop_t2t":154330802,
+        "id":"ADTKD_MUC1",
+        "disease_id":"ADTKD",
+        "gene_strand":"+",
+        "reference_motif_reference_orientation":[
+          "C"
+          ],
+        "pathogenic_motif_reference_orientation":[
+            "C"
+          ],
+        "pathogenic_motif_gene_orientation":[
+            "C"
+          ],
+        "benign_motif_reference_orientation":[],
+        "benign_motif_gene_orientation":[],
+        "unknown_motif_reference_orientation":[],
+        "unknown_motif_gene_orientation":[],
+        "disease":"Autosomal dominant tubulointerstitial kidney disease",
+        "gene":"MUC1",
+        "flank_motif":null,
+        "locus_structure":"(C)*",
+        "inheritance":[
+            "AD"
+          ],
+        "type":"Coding",
+        "location_in_gene":"Exon 2",
+        "benign_min":7.0,
+        "benign_max":7.0,
+        "intermediate_min":null,
+        "intermediate_max":null,
+        "pathogenic_min":8.0,
+        "pathogenic_max":8.0,
+        "ref_copies":null,
+        "motif_len":1.0,
+        "age_onset":"",
+        "age_onset_min":20,
+        "age_onset_max":70,
+        "typ_age_onset_min":null,
+        "typ_age_onset_max":null,
+        "novel":"ref",
+        "mechanism":"GoF",
+        "mechanism_detail":"Toxic protein product accumulates in kidneys [@genereviews:NBK153723]",
+        "source":[],
+        "details":"Disease is caused by duplicated cytosine in a heptanucleotide cytosine tract within one copy of a 20-125 copy number VNTR; the specific VNTR involved varies by family but is consistent within a family [@genereviews:NBK535148]. This VNTR is particularly difficult to genotype [@pmid:23396133].",
+          "omim":[
+            "174000"],
+        "prevalence":"2.5/1000000",
+        "prevalence_details":"Disease is affected 1-4/1,000,000 (likely an underestimate due to unremarkable findings); repeat expansion responsibile for 95% of disease [@genereviews:NBK153723]",
+        "stripy":null,
+        "gnomad":null,
+        "genereviews":["NBK153723"],
+        "mondo":[
+            "0020726"],
+        "year":"2013 [@pmid:23396133]",
+        "medgen":[
+            "358137"],
+        "orphanet":[
+         "88949"],
+        "gard":[
+           "7002"],
+        "malacard":["TBL032"],
+        "webstr_hg38":[],
+        "webstr_hg19":[],
+        "tr_gnomad":[],
+        "disease_description":"An inherited disorder that causes a gradual loss of kidney function, caused by a mutation in the MUC1 gene that leads to production of an abnormal mucin 1 protein, which deposits in the kidney and leads to slow loss of kidney function [@mondo:0020726].",
+        "locus_tags":[],
+        "disease_tags":[]
+      },
+      {
+        "chrom":"chr15",
+        "start_hg38":156591766,
+        "stop_hg38":156591783,
+        "start_hg19":156561558,
+        "stop_hg19":156561575,
+        "start_t2t":155728132,
+        "stop_t2t":155728149,
+        "id":"NME_NAXE",
+        "disease_id":"NME",
+        "gene_strand":"+",
+        "reference_motif_reference_orientation":[
+           "GGGCC"],
+        "pathogenic_motif_reference_orientation":[
+           "GGGCC"],
+        "pathogenic_motif_gene_orientation":[
+           "GGGCC"],
+        "benign_motif_reference_orientation":[],
+        "benign_motif_gene_orientation":[],
+        "unknown_motif_reference_orientation":[],
+        "unknown_motif_gene_orientation":[],
+        "disease":"NAXE-related mitochondrial encephalopathy",
+        "gene":"NAXE",
+        "flank_motif":null,
+        "locus_structure":"(GGGCC)*",
+        "inheritance":[
+               "AR"],
+        "type":"5' UTR",
+        "location_in_gene":null,
+        "benign_min":2.0,
+        "benign_max":7.0,
+        "intermediate_min":null,
+        "intermediate_max":null,
+        "pathogenic_min":200.0,
+        "pathogenic_max":200.0,
+        "ref_copies":null,
+        "motif_len":5,
+        "age_onset":"Single repeat expansion case had onset at 13 months, while NAXE-related mitochondrial encephalopathy more generally has predominately infantile onset, extending to 20y or older [@doi:10.1038/s41525-024-00429-5].",
+        "age_onset_min":1,
+        "age_onset_max":1,
+        "typ_age_onset_min":0,
+        "typ_age_onset_max":0,
+        "novel":"ref",
+        "mechanism":"LoF",
+        "mechanism_detail":"Reduced NAXE expression from expansion in promoter; hypermethylation was detected at and downstream of the repeat sequence in the proband as well as the maternal copy of the expanded allele, which was not present in the maternal normal range allele nor in the controls [@doi:10.1038/s41525-024-00429-5]",
+        "source":[],
+        "details":"Benign range (2-7) alleles established by 484 control alleles and validated with orthogonal databases, while single proband had expansion of ~200 repeats inherited from mother via uniparental disomy [@doi:10.1038/s41525-024-00429-5]. While the repeat expansion is newly reported, other variants in the NAXE gene have previously been associated with mitochondrial encephalopathy.",
+        "omim":[
+               "617186"
+           ],
+        "prevalence":null,
+        "prevalence_details":"Single proband found in Japanese cohort [@doi:10.1038/s41525-024-00429-5].",
+        "stripy":[],
+        "gnomad":[],
+        "genereviews":[],
+        "mondo":[
+               "0020781"
+           ],
+        "year":"2024 [@doi:10.1038/s41525-024-00429-5]",
+        "medgen":[
+               "934642"
+           ],
+        "orphanet":[
+               "555407"
+           ],
+        "gard":[
+               "17991"
+           ],
+        "malacard":[
+               "ENC069"
+           ],
+        "webstr_hg38":[
+               "1184343",
+               "6351240"
+           ],
+        "webstr_hg19":[],
+        "tr_gnomad":[
+               "TR7952"
+           ],
+        "disease_description":"Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@doi:10.1038/s41525-024-00429-5].",
+        "locus_tags":[],
+        "disease_tags":[]
+      },
 
-   "chrom":"chr15",
-       "start_hg38":156591766,
-       "stop_hg38":156591783,
-       "start_hg19":156561558,
-       "stop_hg19":156561575,
-       "start_t2t":155728132,
-       "stop_t2t":155728149,
-       "id":"NME_NAXE",
-       "disease_id":"NME",
-       "gene_strand":"+",
-       "reference_motif_reference_orientation":[
-           "GGGCC"
-       ],
-       "pathogenic_motif_reference_orientation":[
-           "GGGCC"
-       ],
-       "pathogenic_motif_gene_orientation":[
-           "GGGCC"
-       ],
-       "benign_motif_reference_orientation":[],
-       "benign_motif_gene_orientation":[],
-       "unknown_motif_reference_orientation":[],
-       "unknown_motif_gene_orientation":[],
-       "disease":"NAXE-related mitochondrial encephalopathy",
-       "gene":"NAXE",
-       "flank_motif":null,
-       "locus_structure":"(GGGCC)*",
-       "inheritance":[
-           "AR"
-       ],
-       "type":"5' UTR",
-       "location_in_gene":null,
-       "benign_min":2.0,
-       "benign_max":7.0,
-       "intermediate_min":null,
-       "intermediate_max":null,
-       "pathogenic_min":200.0,
-       "pathogenic_max":200.0,
-       "ref_copies":null,
-       "motif_len":5,
-       "age_onset":"Single repeat expansion case had onset at 13 months, while NAXE-related mitochondrial encephalopathy more generally has predominately infantile onset, extending to 20y or older [@doi:10.1038/s41525-024-00429-5].",
-       "age_onset_min":1,
-       "age_onset_max":1,
-       "typ_age_onset_min":0,
-       "typ_age_onset_max":0,
-       "novel":"ref",
-       "mechanism":"LoF",
-       "mechanism_detail":"Reduced NAXE expression from expansion in promoter; hypermethylation was detected at and downstream of the repeat sequence in the proband as well as the maternal copy of the expanded allele, which was not present in the maternal normal range allele nor in the controls [@doi:10.1038/s41525-024-00429-5]",
-       "source":[],
-       "details":"Benign range (2-7) alleles established by 484 control alleles and validated with orthogonal databases, while single proband had expansion of ~200 repeats inherited from mother via uniparental disomy [@doi:10.1038/s41525-024-00429-5]. While the repeat expansion is newly reported, other variants in the NAXE gene have previously been associated with mitochondrial encephalopathy.",
-       "omim":[
-           "617186"
-       ],
-       "prevalence":null,
-       "prevalence_details":"Single proband found in Japanese cohort [@doi:10.1038/s41525-024-00429-5].",
-       "stripy":[],
-       "gnomad":[],
-       "genereviews":[],
-       "mondo":[
-           "0020781"
-       ],
-       "year":"2024 [@doi:10.1038/s41525-024-00429-5]",
-       "medgen":[
-           "934642"
-       ],
-       "orphanet":[
-           "555407"
-       ],
-       "gard":[
-           "17991"
-       ],
-       "malacard":[
-           "ENC069"
-       ],
-       "webstr_hg38":[
-           "1184343",
-           "6351240"
-       ],
-       "webstr_hg19":[],
-       "tr_gnomad":[
-           "TR7952"
-       ],
-       "disease_description":"Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@doi:10.1038/s41525-024-00429-5].",
-       "locus_tags":[],
-       "disease_tags":[]
-   },
+
     {
         "chrom":"chr15",
         "start_hg38":22786677,
