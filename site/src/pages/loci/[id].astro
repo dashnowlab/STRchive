@@ -3,6 +3,7 @@ import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import LineChart from "@/components/LineChart";
+import GnomADChart from "@/components/GnomADChart";
 import Link from "@/components/Link";
 import ShowMore from "@/components/ShowMore";
 import Layout from "@/layouts/Layout.astro";
@@ -357,6 +358,11 @@ const genes = data.filter(({ gene }) => gene === d.gene);
       ]}
       xAxis="Units"
     />
+  </section>
+
+  <section>
+    <h2>GnomAD data</h2>
+    <GnomADChart client:load id={d.id} sex={"XY"}/>
   </section>
 
   <script define:vars={{ d }}>
