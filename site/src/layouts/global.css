@@ -59,7 +59,7 @@ section.full {
 }
 
 section:nth-child(even) {
-  background: color-mix(in hsl, var(--white), var(--light-gray) 50%);
+  background: color-mix(in srgb, var(--white), var(--light-gray) 35%);
 }
 
 section:last-child {
@@ -210,7 +210,7 @@ select:hover {
 }
 
 label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 5px;
 }
@@ -343,13 +343,30 @@ td {
 }
 
 .button-secondary:hover {
-  background: var(--gray);
+  background: var(--dark-gray);
   color: var(--white);
 }
 
 .button-secondary > * {
   top: 0;
   margin: 0;
+}
+
+.big-icon {
+  width: unset;
+  height: 1.2em;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+  place-items: stretch;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.charts h3 {
+  margin-top: 0;
 }
 
 .tippy-box {
@@ -359,11 +376,6 @@ td {
   background: var(--dark-gray);
   color: var(--white);
   font-size: 1rem;
-}
-
-.big-icon {
-  width: unset;
-  height: 1.2em;
 }
 
 .tippy-arrow {

@@ -2,8 +2,8 @@
 import { FaAngleDown, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
+import BoxChart from "@/components/BoxChart";
 import Link from "@/components/Link";
-import Plot from "@/components/Plot";
 import Layout from "@/layouts/Layout.astro";
 import Table from "./_Table";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
@@ -65,10 +65,10 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
 
     <p class="center">High-level, visual overview of loci.</p>
 
-    <div class="plots">
+    <div class="charts">
       <div>
         <h3>Pathogenic Size Range</h3>
-        <Plot
+        <BoxChart
           client:only="react"
           data={pathSize.x.data}
           layout={pathSize.x.layout}
@@ -76,7 +76,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
       </div>
       <div>
         <h3>Age of Onset</h3>
-        <Plot
+        <BoxChart
           client:only="react"
           data={ageOnset.x.data}
           layout={ageOnset.x.layout}
@@ -85,22 +85,3 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     </div>
   </section>
 </Layout>
-
-<style>
-  .plots {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: stretch;
-    gap: 40px;
-  }
-
-  .plots h3 {
-    margin-top: 0;
-  }
-
-  @media (max-width: 1000px) {
-    .plots {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

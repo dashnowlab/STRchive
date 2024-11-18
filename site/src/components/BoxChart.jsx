@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import Plotly from "plotly.js-dist";
-import classes from "./Plot.module.css";
+import classes from "./BoxChart.module.css";
 
-const Plot = ({ data, layout, ...props }) => {
+const BoxChart = ({ data, layout, ...props }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Plot = ({ data, layout, ...props }) => {
     });
   }, []);
 
-  return <div ref={ref} className={classes.plot} {...props}></div>;
+  return <div ref={ref} className={classes.chart} {...props}></div>;
 };
 
-export default Plot;
+export default BoxChart;
