@@ -396,7 +396,7 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@doi:10.1007/s11604-022-01343-5; @pmid:38467784].",
+        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@doi:10.1007/s11604-022-01343-5; @pmid:38467784]. Apparent aggregation and mis-localisation of mutan protein, increased with expansion length [@genereviews:NBK51932].",
         "source":[],
         "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; @doi:10.1002/humu.21288].",
         "omim":[
@@ -492,7 +492,7 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@doi:10.1007/s11604-022-01343-5; @pmid:38467784].",
+        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@doi:10.1007/s11604-022-01343-5; @pmid:38467784]. Apparent aggregation and mis-localisation of mutan protein, increased with expansion length [@genereviews:NBK51932].",
         "source":[],
         "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; @doi:10.1002/humu.21288].",
         "omim":[
@@ -2620,7 +2620,7 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"GoF/LoF",
-        "mechanism_detail":"Polyalanine expansion leads to haploinsufficiency, likely due to decreased protein availibility following mislocalization following nuclear inclusion [@genereviews:NBK1441; @pmid:15591279]",
+        "mechanism_detail":"Polyalanine expansion leads to haploinsufficiency, likely due to decreased protein availibility due to mislocalization following nuclear inclusion [@genereviews:NBK1441; @pmid:15591279]",
         "source":[],
         "details":"14 repeats appears highly constrained in humans: homozygous expansions from 14 polyalanines to 19 leads to disease, which can be limited to isolated palpebral defects [@pmid:15591279]. Heterozygous expansions to 24 polyalanines also lead to disease [@pmid:15591279]. Locus start can differ between catalogs, which can affect genotyping.",
         "omim":[
@@ -4377,7 +4377,7 @@
         "typ_age_onset_max":2.0,
         "novel":"ref",
         "mechanism":"LoF/GoF",
-        "mechanism_detail":"Polyalanine expansion leading to loss or gain of function, dependent on altered protein product [@doi:10.1038/s41576-024-00696-z; @genereviews:NBK1427]].",
+        "mechanism_detail":"Polyalanine expansion leading to loss or gain of function, dependent on altered protein product [@doi:10.1038/s41576-024-00696-z; @genereviews:NBK1427]. Correlation between length and reduced transcriptional activity [@pmid:15888479].",
         "source":[],
         "details":"Alleles of 24 repeats (and sometimes 25 repeats) correspond to delayed disease onset and/or milder phenotype; alleles above benign range (9-20 repeats) and below the pathogenic range (26-33 repeats) have uncertain significance [@genereviews:NBK1427].",
         "omim":[
