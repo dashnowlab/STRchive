@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import classes from "./ShowMore.module.css";
 
-/** line limit */
-const lines = 2;
-
 /** collapse long lines of text */
-const ShowMore = ({ children }) => {
+const ShowMore = ({ lines = 2, children }) => {
   const ref = useRef();
   const [enabled, setEnabled] = useState(false);
   const [expanded, setExpanded] = useState(false);

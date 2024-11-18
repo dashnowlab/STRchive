@@ -13,6 +13,7 @@ import { getInheritance } from "./_inheritance";
 import { getReferences } from "./_references";
 import { tagOptions } from "./_tags";
 import gnomad from "../../../../data/plots/gnomad.json";
+import citationData from "../../../../data/STRchive-citations.json";
 import data from "../../../../data/STRchive-database.json";
 
 /** generate pages for each datum, paths based on gene name */
@@ -30,6 +31,13 @@ const niceId = id.replace("_", " ");
 
 /** same genes, different locus */
 const genes = data.filter(({ gene }) => gene === d.gene);
+
+/** look up full citation details */
+const citations =
+  d.literature?.map((literature) => {
+    const id = literature.slice(1);
+    return { ...(citationData[id] ?? {}), id };
+  }) ?? [];
 ---
 
 <Layout title={niceId}>
@@ -370,6 +378,21 @@ const genes = data.filter(({ gene }) => gene === d.gene);
       </section>
     )
   }
+  <section>
+    <h2>Citations</h2>
+
+    <div class="citations">
+      {
+        citations.map(({ id, title, year }, index) => (
+          <div id={`citation-${index + 1}`} class="citation">
+            <strong class="citation-number">{index + 1}</strong>
+            <ShowMore client:load>{title}</ShowMore>
+            <div set:html={[year, id].join("&nbsp; · &nbsp;")} />
+          </div>
+        ))
+      }
+    </div>
+  </section>
 
   <script define:vars={{ d }}>
     console.debug(d);
@@ -535,5 +558,34 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  .citations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .citation {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    gap: 5px;
+    text-align: left;
+  }
+
+  .citation-number {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--primary), var(--white) 75%);
   }
 </style>

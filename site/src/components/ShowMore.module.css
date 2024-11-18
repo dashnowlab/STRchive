@@ -5,7 +5,12 @@
 }
 
 .button {
-  padding: 2px 5px;
+  padding: 0;
   background: none;
   color: var(--primary);
+}
+
+.button:hover {
+  background: none;
+  color: var(--black);
 }
