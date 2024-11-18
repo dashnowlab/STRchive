@@ -361,26 +361,28 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     />
   </section>
 
-  <section>
-    <h2>GnomAD</h2>
+  {
+    gnomad[id] && (
+      <section>
+        <h2>GnomAD</h2>
 
-    <div class="charts">
-      {
-        Object.entries(gnomad[id]).map(([sex, data]) => (
-          <RangeChart
-            client:only
-            title={`${d.gene} (${sex.replace("_", " ")})`}
-            xLabel="Pathogenic Genotype (%)"
-            yLabels={data.labels}
-            counts={data.counts}
-            values={data.values}
-            lowerBounds={data.confidence_lower_bounds}
-            upperBounds={data.confidence_upper_bounds}
-          />
-        ))
-      }
-    </div>
-  </section>
+        <div class="charts">
+          {Object.entries(gnomad[id]).map(([sex, data]) => (
+            <RangeChart
+              client:only="react"
+              title={`${d.gene} (${sex.replace("_", " ")})`}
+              xLabel="Pathogenic Genotype (%)"
+              yLabels={data.labels}
+              counts={data.counts}
+              values={data.values}
+              lowerBounds={data.confidence_lower_bounds}
+              upperBounds={data.confidence_upper_bounds}
+            />
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <script define:vars={{ d }}>
     console.debug(d);
