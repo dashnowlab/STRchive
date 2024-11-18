@@ -917,7 +917,7 @@
             "TR120465"
         ],
         "disease_description":"A subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by truncal ataxia, dysarthria, slowed saccades and less commonly ophthalmoparesis and chorea [@mondo:0008458].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "maternal expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability", "motif_affects_phenotype"],
+        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "maternal expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability", "motif_affects_phenotype", "proposed_modifier"],
         "disease_tags":[
             "spinocerebellar ataxia"
         ]
@@ -1812,7 +1812,7 @@
         ],
         "disease_description":"Pseudoachondroplasia is characterized by severe growth deficiency and deformations such as bow legs and hyperlordosis.; Multiple epiphyseal dysplasia type 1 (MED 1) is a form of multiple epiphyseal dysplasia that is characterized by normal or mild short stature, pain in the hips and/or knees, progressive deformity of extremities and early-onset osteoarthrosis. Specific features to MED 1 include a more pronounced involvement of hip joints and gait abnormality and a shorter adult height. MED1 is allelic to pseudoachondroplasia with which it shares clinical and radiological features. The disease follows an autosomal dominant mode of transmission [@mondo:0008322; @mondo:0007561].",
         "locus_tags":["contraction"],
-        "disease_tags":[]
+        "disease_tags":["phenotypic spectrum"]
     },
     {
         "chrom":"chr21",
@@ -1903,7 +1903,7 @@
             "TR163552"
         ],
         "disease_description":"Unverricht-Lundborg disease (ULD) is a rare progressive myoclonic epilepsy disorder characterized by action- and stimulus-sensitive myoclonus, and tonic-clonic seizures with ataxia, but with only a mild cognitive decline over time [@mondo:0009698].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_onset", "length_affects_severity"],
         "disease_tags":[
             "ataxia"
         ]
@@ -2939,7 +2939,7 @@
             "TR24838"
         ],
         "disease_description":"Glutaminase deficiency is characterized by refractory seizures, respiratory failure, brain abnormalities and death in the neonatal period, though milder cases with spastic ataxia-dysarthria have also been reported. This condition is caused by mutations in the glutaminase (GLS) gene [@mondo:0600001].",
-        "locus_tags":[],
+        "locus_tags":["sparse_evidence"],
         "disease_tags":[]
     },
     {
@@ -3315,7 +3315,7 @@
             "TR24032"
         ],
         "disease_description":"Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present [@omim:186000].",
-        "locus_tags":["contraction"],
+        "locus_tags":["contraction", "sparse_evidence"],
         "disease_tags":[]
     },
     {
@@ -3507,7 +3507,7 @@
             "TR143309"
         ],
         "disease_description":"Huntington disease-like 2 (HDL2) is a severe neurodegenerative disorder considered part of the neuroacanthocytosis syndromes characterized by a triad of movement, psychiatric, and cognitive abnormalities [@mondo:0011671].",
-        "locus_tags":[],
+        "locus_tags":["somatic_instability", "length_affects_phenotype", "length_affects_onset", "length_affects_penetrance", "length_affects_severity"],
         "disease_tags":[]
     },
     {
@@ -3885,7 +3885,7 @@
             "TR133649"
         ],
         "disease_description":"Amyotrophic lateral sclerosis is a neurodegenerative disorder characterized by the death of motor neurons in the brain, brainstem, and spinal cord, resulting in fatal paralysis. ALS usually begins with asymmetric involvement of the muscles in middle adult life [@omim:105400].",
-        "locus_tags":["conflicting_evidence"],
+        "locus_tags":["conflicting_evidence", "proposed_modifier"],
         "disease_tags":[]
     },
     {
@@ -4159,7 +4159,7 @@
             "TR102881"
         ],
         "disease_description":"Oculopharyngodistal myopathy and white matter abnormalities [@pmid:38876750]; Ptosis, ophthalmoplegia, dysphagia, dysarthria [@pmid:39349043].",
-        "locus_tags":["sparse_evidence"],
+        "locus_tags":["sparse_evidence", "length_affects_severity", "length_affects_phenotype"],
         "disease_tags":[]
     },
     {
@@ -4254,7 +4254,7 @@
             "TR128439"
         ],
         "disease_description":"Ptosis and dysphagia [@pmid:39349043]; facial weakness, ptosis [@pmid:38876750].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_onset", "length_affects_severity"],
         "disease_tags":[]
     },
     {
@@ -4348,7 +4348,7 @@
             "TR42548"
         ],
         "disease_description":"A rare disease due to a severely impaired central autonomic control of breathing and dysfunction of the autonomous nervous system. The incidence is estimated to be at 1 of 200 000 livebirths. A heterozygous mutation of PHOX-2B gene is found in 90% of the patients. Association with a Hirschsprung's disease is observed in 16% of the cases (adapted from Mondo) [@mondo:0800026].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_onset", "length_affects_severity"],
         "disease_tags":[]
     },
     {
@@ -4438,8 +4438,8 @@
         "tr_gnomad":[
             "TR137533"
         ],
-        "disease_description":"Sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [@pmid:38876750].",
-        "locus_tags":["conflicting_evidence"],
+        "disease_description":"sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [@pmid:38876750].",
+        "locus_tags":["conflicting_evidence", "proposed_modifier"],
         "disease_tags":[]
     },
     {
@@ -4534,7 +4534,7 @@
             "TR59714"
         ],
         "disease_description":"Spinocerebellar ataxia type 12 (SCA12) is a very rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by the presence of action tremor associated with relatively mild cerebellar ataxia. Associated pyramidal and extrapyramidal signs and dementia have been reported [@mondo:0011439].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_penetrance"],
         "disease_tags":[
             "spinocerebellar ataxia"
         ]
@@ -4630,7 +4630,7 @@
             "TR97506"
         ],
         "disease_description":"A hereditary sensory neuropathy characterized by congenital insensitivity to pain and decreased sweating and tear production that has material basis in homozygous mutation in the PRDM12 gene on chromosome 9q34 [@mondo:0014662].",
-        "locus_tags":[],
+        "locus_tags":["sparse_evidence"],
         "disease_tags":[]
     },
     {
@@ -4767,7 +4767,7 @@
         "mechanism":null,
         "mechanism_detail":null,
         "source":[],
-        "details":"Normal PRNP alleles have one nonapeptide followed by four octapeptide tandem repeat sequences, each of which comprises the  amino acids: Pro-(His/Gln)-Gly-Gly-Gly-(-/Trp)-Gly-Gln; any additional repeat leads to pathogenicity, with the largest repeat observed 16 motifs [@genereviews:NBK1229].",
+        "details":"Normal PRNP alleles have one nonapeptide followed by four octapeptide tandem repeat sequences, each of which comprises the  amino acids: Pro-(His/Gln)-Gly-Gly-Gly-(-/Trp)-Gly-Gln; any additional repeat leads to pathogenicity, with the largest repeat observed 16 motifs [@genereviews:NBK1229]. Insertion length may correspond to phenotype, such as CJD versus frontotemporal dementia [@pmid:36977684].",
         "omim":[
             "123400"
         ],
@@ -4803,7 +4803,7 @@
             "TR157964"
         ],
         "disease_description":"Inherited or familial Creutzfeldt-Jakob disease (fCJD) is a very rare form of genetic prion disease characterized by typical CJD features (rapidly progressive dementia, personality/behavioral changes, psychiatric disorders, myoclonus, and ataxia) with a genetic cause and sometimes a family history of dementia [@mondo:0007403].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_phenotype"],
         "disease_tags":[]
     },
     {
@@ -4990,7 +4990,7 @@
             "TR49300"
         ],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-        "locus_tags":[],
+        "locus_tags":["motif_affects_penetrance"],
         "disease_tags":["Familial adult myoclonic epilepsy"]
     },
     {
@@ -5511,7 +5511,7 @@
             "TR173479"
         ],
         "disease_description":"X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without [intellectual disability] [@pmid:24346842].",
-        "locus_tags":["contraction"],
+        "locus_tags":["sparse_evidence", "contraction"],
         "disease_tags":[]
     },
     {
@@ -5717,7 +5717,7 @@
             "TR592600"
         ],
         "disease_description":"X-linked dystonia-parkinsonism (XDP) associated with antisense insertion of a SINE-VNTR-Alu (SVA)-type retrotransposon within an intron of TAF1. Clinical features include focal and generalised dystonia, parkinsonism, cognitive dysfunction. XX individuals who are heterozygous carriers usually do not develop the full syndrome, although some patients have non-progressive focal dystonia with parkinsonism. Disease severity is associated with number of hexanucleotide repeats within the SVA. (Adapted) [@pmid:38876750].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_onset"],
         "disease_tags":[]
     },
     {
@@ -5999,7 +5999,7 @@
             "TR151784"
         ],
         "disease_description":"Late-onset Fuchs endothelial corneal dystrophy (FECD) is a degenerative disorder ... distinguished from other corneal disorders by the progressive formation of guttae [@omim:613267].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_penetrance"],
         "disease_tags":[]
     },
     {
@@ -6551,7 +6551,7 @@
             "TR142346"
         ],
         "disease_description":"Spinocerebellar ataxia type 4 (SCA4) is a very rare progressive subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by ataxia with sensory neuropathy (adapted from Mondo) [@mondo:0010847].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_onset"],
         "disease_tags":[
             "spinocerebellar ataxia"
         ]
@@ -6820,7 +6820,7 @@
             "TR300995"
         ],
         "disease_description":"A spectrum of developmental disorders that includes autism, and Asperger syndrome. Signs and symptoms include poor communication skills, defective social interactions, and repetitive behaviors [@mondo:0005258].",
-        "locus_tags":[],
+        "locus_tags":["sparse_evidence"],
         "disease_tags":[]
     }
 ]
