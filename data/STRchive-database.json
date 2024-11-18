@@ -5388,7 +5388,7 @@
         "mechanism":"LoF",
         "mechanism_detail":"Polyalanine expansions leading to aggresome formation and impaired transcriptional activity [@pmid:17127446].",
         "source":[],
-        "details":null,
+        "details":"Expansion to 22-26 repeats or contraction to 8 repeats can cause disease, as reported in 3 families [@genereviews:NBK535148].",
         "omim":[
             "300123",
             "312000"
@@ -5427,7 +5427,7 @@
             "TR173479"
         ],
         "disease_description":"X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without [intellectual disability] [@pmid:24346842].",
-        "locus_tags":[],
+        "locus_tags":["contraction"],
         "disease_tags":[]
     },
     {
