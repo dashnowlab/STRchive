@@ -3,8 +3,8 @@ import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import LineChart from "@/components/LineChart";
-import GnomADChart from "@/components/GnomADChart";
 import Link from "@/components/Link";
+import RangeChart from "@/components/RangeChart";
 import ShowMore from "@/components/ShowMore";
 import Layout from "@/layouts/Layout.astro";
 import { capitalize } from "@/util/string";
@@ -12,6 +12,7 @@ import { deriveDatum } from "./_derived";
 import { getInheritance } from "./_inheritance";
 import { getReferences } from "./_references";
 import { tagOptions } from "./_tags";
+import gnomad from "../../../../data/plots/gnomad.json";
 import data from "../../../../data/STRchive-database.json";
 
 /** generate pages for each datum, paths based on gene name */
@@ -80,7 +81,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
           </div>
           <div class="gene-list">
             {genes.map((gene) =>
-              d.id === gene.id ? (
+              id === gene.id ? (
                 <span>{gene.id}</span>
               ) : (
                 <Link to={`/loci/${gene.id}`}>{gene.id}</Link>
@@ -361,8 +362,24 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   </section>
 
   <section>
-    <h2>GnomAD data</h2>
-    <GnomADChart client:load id={d.id} sex={"XY"}/>
+    <h2>GnomAD</h2>
+
+    <div class="charts">
+      {
+        Object.entries(gnomad[id]).map(([sex, data]) => (
+          <RangeChart
+            client:only
+            title={`${d.gene} (${sex.replace("_", " ")})`}
+            xLabel="Pathogenic Genotype (%)"
+            yLabels={data.labels}
+            counts={data.counts}
+            values={data.values}
+            lowerBounds={data.confidence_lower_bounds}
+            upperBounds={data.confidence_upper_bounds}
+          />
+        ))
+      }
+    </div>
   </section>
 
   <script define:vars={{ d }}>

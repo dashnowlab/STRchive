@@ -352,6 +352,22 @@ td {
   margin: 0;
 }
 
+.big-icon {
+  width: unset;
+  height: 1.2em;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+  place-items: stretch;
+  gap: 40px;
+}
+
+.charts h3 {
+  margin-top: 0;
+}
+
 .tippy-box {
   max-width: 350px;
   padding: 10px 15px;
@@ -359,11 +375,6 @@ td {
   background: var(--dark-gray);
   color: var(--white);
   font-size: 1rem;
-}
-
-.big-icon {
-  width: unset;
-  height: 1.2em;
 }
 
 .tippy-arrow {
