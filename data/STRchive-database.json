@@ -441,8 +441,8 @@
             "TR167317"
         ],
         "disease_description":"Developmental and epileptic encephalopathy-1 (DEE1) is a severe form of epilepsy characterized by frequent tonic seizures or spasms beginning in infancy with a specific EEG finding of suppression-burst patterns, characterized by high-voltage bursts alternating with almost flat suppression phases [@omim:308350].",
-        "locus_tags":[],
-        "disease_tags":[]
+        "locus_tags":["length_affects_phenotype"],
+        "disease_tags":["phenotypic spectrum"]
     },
     {
         "chrom":"chrX",
@@ -531,8 +531,8 @@
             "TR167316"
         ],
         "disease_description":"A rare neurological condition that is primarily characterized by mild to moderate intellectual disability and dystonia of the hands. Other signs and symptoms may include dysarthria, behavioral abnormalities, recurrent seizures and/or an unusual gait (style of walking). Partington syndrome usually occurs in males; when it occurs in females, the signs and symptoms are often less severe. It is caused by changes (mutations) in the ARX gene and is inherited in an X-linked recessive manner. Treatment is based on the signs and symptoms present in each person [@mondo:0010654].",
-        "locus_tags":[],
-        "disease_tags":[]
+        "locus_tags":["length_affects_phenotype"],
+        "disease_tags":["phenotypic spectrum"]
     },
     {
         "chrom":"chr12",
@@ -1428,8 +1428,8 @@
             "TR92417"
         ],
         "disease_description":"Pure frontotemporal dementia, pure amyotrophic lateral sclerosis or combination of the two [@pmid:39349043].",
-        "locus_tags":[],
-        "disease_tags":[]
+        "locus_tags":["length_affects_phenotype", "length_affects_onset"],
+        "disease_tags":["phenotypic spectrum"]
     },
     {
         "chrom":"chr19",
@@ -1523,7 +1523,7 @@
             "TR154515"
         ],
         "disease_description":"Spinocerebellar ataxia type 6 (SCA6) is the most common subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by late-onset and slowly progressive gait ataxia and other cerebellar signs such as impaired muscle coordination and nystagmus [@mondo:0008457].",
-        "locus_tags":[],
+        "locus_tags":["length_affects_phenotype", "length_affects_penetrance", "length_affects_onset"],
         "disease_tags":[
             "spinocerebellar ataxia"
         ]
@@ -2568,7 +2568,7 @@
         ],
         "disease_description":"A genetic syndrome caused by mutations in the FMR1 gene which is responsible for the expression of the fragile X mental retardation 1 protein. This protein participates in neural development. This syndrome is manifested with mental, emotional, behavioral, physical, and learning disabilities.; Any primary ovarian failure in which the cause of the disease is a mutation in the FMR1 gene.; Fragile X-associated tremor/ataxia syndrome (FXTAS) is a rare neurodegenerative disorder characterized by adult-onset progressive intention tremor and gait ataxia [@mondo:0010383; @mondo:0010706; @mondo:0010382].",
         "locus_tags":["somatic_instability", "anticipation", "maternal expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability"],
-        "disease_tags":[
+        "disease_tags":["phenotypic spectrum",
             "ataxia"
         ]
     },
@@ -2807,7 +2807,7 @@
         "mechanism":"RNA toxicity",
         "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:618940], still unknown [@doi:10.1007/s11604-022-01343-5].",
         "source":[],
-        "details":"Benign repeats range from absent [@gnomad: GIPC1] to 32 [@genereviews:NBK535148], while pathogenic alleles range from 73-164 repeats [@pmid:38876750; @genereviews:NBK535148]. Intermediate alleles have undetermined significance but may represent a phenotypic spectrum [@pmid:32413282]. Interruptions documented: CGA [@pmid:35245110]. Interruptions proposed but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784].",
+        "details":"Benign repeats range from absent [@gnomad:GIPC1] to 32 [@genereviews:NBK535148], while pathogenic alleles range from 73-164 repeats [@pmid:38876750; @genereviews:NBK535148]. Intermediate alleles have undetermined significance but may represent a phenotypic spectrum [@pmid:32413282]. Interruptions documented: CGA [@pmid:35245110]. Interruptions proposed but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784].",
         "omim":[
             "618940"
         ],
@@ -4072,7 +4072,7 @@
         ],
         "disease_description":"Neuronal intranuclear inclusion disease (NIID) is a very rare multisystem neurodegenerative disorder characterized by the presence of eosinophilic intranuclear inclusions in neuronal and glial cells, and neuronal loss [@mondo:0011327].",
         "locus_tags":["somatic_instability", "paternal_expansion", "length_affects_onset", "length_affects_phenotype", "motif_affects_onset", "motif_affects_phenotype"],
-        "disease_tags":[]
+        "disease_tags":["phenotypic spectrum"]
     },
     {
         "chrom":"chr10",
@@ -6739,8 +6739,8 @@
             "TR173313"
         ],
         "disease_description":"VACTERL is an acronym for vertebral anomalies (similar to those of spondylocostal dysplasia), anal atresia, cardiac malformations, tracheoesophageal fistula, renal anomalies (urethral atresia with hydronephrosis), and limb anomalies [@omim:314390].",
-        "locus_tags":["phenotypic_spectrum", "sparse_evidence"],
-        "disease_tags":[]
+        "locus_tags":["sparse_evidence"],
+        "disease_tags":["phenotypic_spectrum"]
     },
     {
         "chrom":"chr7",
