@@ -59,7 +59,7 @@ section.full {
 }
 
 section:nth-child(even) {
-  background: color-mix(in hsl, var(--white), var(--light-gray) 50%);
+  background: color-mix(in hsl, var(--white), var(--light-gray) 25%);
 }
 
 section:last-child {
@@ -210,7 +210,7 @@ select:hover {
 }
 
 label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 5px;
 }
@@ -361,6 +361,7 @@ td {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
   place-items: stretch;
+  margin: 40px 0;
   gap: 40px;
 }
 

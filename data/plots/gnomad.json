@@ -1,6 +1,6 @@
 {
   "DRPLA_ATN1": {
-    "both_sexes": {
+    "both": {
       "id": "DRPLA_ATN1",
       "labels": [
         "Admixed American",
@@ -26,7 +26,7 @@
     }
   },
   "SCA1_ATXN1": {
-    "both_sexes": {
+    "both": {
       "id": "SCA1_ATXN1",
       "labels": [
         "Admixed American",
@@ -58,7 +58,7 @@
     }
   },
   "SCA10_ATXN10": {
-    "both_sexes": {
+    "both": {
       "id": "SCA10_ATXN10",
       "labels": [
         "Admixed American",
@@ -84,7 +84,7 @@
     }
   },
   "SCA2_ATXN2": {
-    "both_sexes": {
+    "both": {
       "id": "SCA2_ATXN2",
       "labels": [
         "Admixed American",
@@ -114,7 +114,7 @@
     }
   },
   "SCA3_ATXN3": {
-    "both_sexes": {
+    "both": {
       "id": "SCA3_ATXN3",
       "labels": [
         "Admixed American",
@@ -140,7 +140,7 @@
     }
   },
   "SCA7_ATXN7": {
-    "both_sexes": {
+    "both": {
       "id": "SCA7_ATXN7",
       "labels": [
         "Admixed American",
@@ -170,7 +170,7 @@
     }
   },
   "SCA8_ATXN8OS": {
-    "both_sexes": {
+    "both": {
       "id": "SCA8_ATXN8OS",
       "labels": [
         "Admixed American",
@@ -204,7 +204,7 @@
     }
   },
   "SCA31_BEAN1": {
-    "both_sexes": {
+    "both": {
       "id": "SCA31_BEAN1",
       "labels": [
         "Admixed American",
@@ -230,7 +230,7 @@
     }
   },
   "FTDALS1_C9orf72": {
-    "both_sexes": {
+    "both": {
       "id": "FTDALS1_C9orf72",
       "labels": [
         "Admixed American",
@@ -256,7 +256,7 @@
     }
   },
   "SCA6_CACNA1A": {
-    "both_sexes": {
+    "both": {
       "id": "SCA6_CACNA1A",
       "labels": [
         "Admixed American",
@@ -282,7 +282,7 @@
     }
   },
   "DM2_CNBP": {
-    "both_sexes": {
+    "both": {
       "id": "DM2_CNBP",
       "labels": [
         "Admixed American",
@@ -310,7 +310,7 @@
     }
   },
   "EDM1-PSACH_COMP": {
-    "both_sexes": {
+    "both": {
       "id": "EDM1-PSACH_COMP",
       "labels": [
         "Admixed American",
@@ -336,7 +336,7 @@
     }
   },
   "EPM1_CSTB": {
-    "both_sexes": {
+    "both": {
       "id": "EPM1_CSTB",
       "labels": [
         "Admixed American",
@@ -362,7 +362,7 @@
     }
   },
   "SCA37_DAB1": {
-    "both_sexes": {
+    "both": {
       "id": "SCA37_DAB1",
       "labels": [
         "Admixed American",
@@ -388,7 +388,7 @@
     }
   },
   "FRA12A_DIP2B": {
-    "both_sexes": {
+    "both": {
       "id": "FRA12A_DIP2B",
       "labels": [
         "Admixed American",
@@ -414,7 +414,7 @@
     }
   },
   "DM1_DMPK": {
-    "both_sexes": {
+    "both": {
       "id": "DM1_DMPK",
       "labels": [
         "Admixed American",
@@ -446,7 +446,7 @@
     }
   },
   "RCPS_EIF4A3": {
-    "both_sexes": {
+    "both": {
       "id": "RCPS_EIF4A3",
       "labels": [
         "Admixed American",
@@ -472,7 +472,7 @@
     }
   },
   "BPES_FOXL2": {
-    "both_sexes": {
+    "both": {
       "id": "BPES_FOXL2",
       "labels": [
         "Admixed American",
@@ -504,7 +504,7 @@
     }
   },
   "FRDA_FXN": {
-    "both_sexes": {
+    "both": {
       "id": "FRDA_FXN",
       "labels": [
         "Admixed American",
@@ -530,7 +530,7 @@
     }
   },
   "OPDM2_GIPC1": {
-    "both_sexes": {
+    "both": {
       "id": "OPDM2_GIPC1",
       "labels": [
         "Admixed American",
@@ -558,7 +558,7 @@
     }
   },
   "GDPAG_GLS": {
-    "both_sexes": {
+    "both": {
       "id": "GDPAG_GLS",
       "labels": [
         "Admixed American",
@@ -584,7 +584,7 @@
     }
   },
   "HFG_HOXA13-I": {
-    "both_sexes": {
+    "both": {
       "id": "HFG_HOXA13-I",
       "labels": [
         "Admixed American",
@@ -618,7 +618,7 @@
     }
   },
   "HFG_HOXA13-II": {
-    "both_sexes": {
+    "both": {
       "id": "HFG_HOXA13-II",
       "labels": [
         "Admixed American",
@@ -653,7 +653,7 @@
     }
   },
   "HFG_HOXA13-III": {
-    "both_sexes": {
+    "both": {
       "id": "HFG_HOXA13-III",
       "labels": [
         "Admixed American",
@@ -689,7 +689,7 @@
     }
   },
   "SD5_HOXD13": {
-    "both_sexes": {
+    "both": {
       "id": "SD5_HOXD13",
       "labels": [
         "Admixed American",
@@ -717,7 +717,7 @@
     }
   },
   "HD_HTT": {
-    "both_sexes": {
+    "both": {
       "id": "HD_HTT",
       "labels": [
         "Admixed American",
@@ -747,7 +747,7 @@
     }
   },
   "HDL2_JPH3": {
-    "both_sexes": {
+    "both": {
       "id": "HDL2_JPH3",
       "labels": [
         "Admixed American",
@@ -775,7 +775,7 @@
     }
   },
   "OPDM1_LRP12": {
-    "both_sexes": {
+    "both": {
       "id": "OPDM1_LRP12",
       "labels": [
         "Admixed American",
@@ -801,7 +801,7 @@
     }
   },
   "FAME3_MARCHF6": {
-    "both_sexes": {
+    "both": {
       "id": "FAME3_MARCHF6",
       "labels": [
         "Admixed American",
@@ -827,7 +827,7 @@
     }
   },
   "ALS1_NIPA1": {
-    "both_sexes": {
+    "both": {
       "id": "ALS1_NIPA1",
       "labels": [
         "Admixed American",
@@ -859,7 +859,7 @@
     }
   },
   "SCA36_NOP56": {
-    "both_sexes": {
+    "both": {
       "id": "SCA36_NOP56",
       "labels": [
         "Admixed American",
@@ -885,7 +885,7 @@
     }
   },
   "NIID_NOTCH2NLC": {
-    "both_sexes": {
+    "both": {
       "id": "NIID_NOTCH2NLC",
       "labels": [
         "Admixed American",
@@ -911,7 +911,7 @@
     }
   },
   "OPML1_NUTM2B-AS1": {
-    "both_sexes": {
+    "both": {
       "id": "OPML1_NUTM2B-AS1",
       "labels": [
         "Admixed American",
@@ -937,7 +937,7 @@
     }
   },
   "OPMD_PABPN1": {
-    "both_sexes": {
+    "both": {
       "id": "OPMD_PABPN1",
       "labels": [
         "Admixed American",
@@ -967,7 +967,7 @@
     }
   },
   "CCHS_PHOX2B": {
-    "both_sexes": {
+    "both": {
       "id": "CCHS_PHOX2B",
       "labels": [
         "Admixed American",
@@ -1001,7 +1001,7 @@
     }
   },
   "SCA12_PPP2R2B": {
-    "both_sexes": {
+    "both": {
       "id": "SCA12_PPP2R2B",
       "labels": [
         "Admixed American",
@@ -1027,7 +1027,7 @@
     }
   },
   "HSAN-VIII_PRDM12": {
-    "both_sexes": {
+    "both": {
       "id": "HSAN-VIII_PRDM12",
       "labels": [
         "Admixed American",
@@ -1053,7 +1053,7 @@
     }
   },
   "CJD_PRNP": {
-    "both_sexes": {
+    "both": {
       "id": "CJD_PRNP",
       "labels": [
         "Admixed American",
@@ -1083,7 +1083,7 @@
     }
   },
   "FAME7_RAPGEF2": {
-    "both_sexes": {
+    "both": {
       "id": "FAME7_RAPGEF2",
       "labels": [
         "Admixed American",
@@ -1109,7 +1109,7 @@
     }
   },
   "CANVAS_RFC1": {
-    "both_sexes": {
+    "both": {
       "id": "CANVAS_RFC1",
       "labels": [
         "Admixed American",
@@ -1135,7 +1135,7 @@
     }
   },
   "OPDM4_RILPL1": {
-    "both_sexes": {
+    "both": {
       "id": "OPDM4_RILPL1",
       "labels": [
         "Admixed American",
@@ -1161,7 +1161,7 @@
     }
   },
   "CCD_RUNX2": {
-    "both_sexes": {
+    "both": {
       "id": "CCD_RUNX2",
       "labels": [
         "Admixed American",
@@ -1195,7 +1195,7 @@
     }
   },
   "FAME1_SAMD12": {
-    "both_sexes": {
+    "both": {
       "id": "FAME1_SAMD12",
       "labels": [
         "Admixed American",
@@ -1221,7 +1221,7 @@
     }
   },
   "FAME2_STARD7": {
-    "both_sexes": {
+    "both": {
       "id": "FAME2_STARD7",
       "labels": [
         "Admixed American",
@@ -1247,7 +1247,7 @@
     }
   },
   "SCA17_TBP": {
-    "both_sexes": {
+    "both": {
       "id": "SCA17_TBP",
       "labels": [
         "Admixed American",
@@ -1273,7 +1273,7 @@
     }
   },
   "TOF_TBX1": {
-    "both_sexes": {
+    "both": {
       "id": "TOF_TBX1",
       "labels": [
         "Admixed American",
@@ -1305,7 +1305,7 @@
     }
   },
   "FECD3_TCF4": {
-    "both_sexes": {
+    "both": {
       "id": "FECD3_TCF4",
       "labels": [
         "Admixed American",
@@ -1341,7 +1341,7 @@
     }
   },
   "FAME6_TNRC6A": {
-    "both_sexes": {
+    "both": {
       "id": "FAME6_TNRC6A",
       "labels": [
         "Admixed American",
@@ -1367,7 +1367,7 @@
     }
   },
   "HMNR7_VWA1": {
-    "both_sexes": {
+    "both": {
       "id": "HMNR7_VWA1",
       "labels": [
         "Admixed American",
@@ -1399,7 +1399,7 @@
     }
   },
   "DBQD2_XYLT1": {
-    "both_sexes": {
+    "both": {
       "id": "DBQD2_XYLT1",
       "labels": [
         "Admixed American",
@@ -1425,7 +1425,7 @@
     }
   },
   "FAME4_YEATS2": {
-    "both_sexes": {
+    "both": {
       "id": "FAME4_YEATS2",
       "labels": [
         "Admixed American",
@@ -1451,7 +1451,7 @@
     }
   },
   "HPE5_ZIC2": {
-    "both_sexes": {
+    "both": {
       "id": "HPE5_ZIC2",
       "labels": [
         "Admixed American",
@@ -1531,7 +1531,7 @@
         5.894387055227531
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "FRAXE_AFF2",
       "labels": [
         "Admixed American",
@@ -1611,7 +1611,7 @@
         5.894387055227531
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "SBMA_AR",
       "labels": [
         "Admixed American",
@@ -1699,7 +1699,7 @@
         12.015698118917378
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "EIEE1_ARX",
       "labels": [
         "Admixed American",
@@ -1785,7 +1785,7 @@
         5.894387055227531
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "PRTS_ARX",
       "labels": [
         "Admixed American",
@@ -1877,7 +1877,7 @@
         9.349062542783109
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "DMD_DMD",
       "labels": [
         "Admixed American",
@@ -1959,7 +1959,7 @@
         5.894387055227531
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "FXS_FMR1",
       "labels": [
         "Admixed American",
@@ -2039,7 +2039,7 @@
         5.894387055227531
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "XLMR_SOX3",
       "labels": [
         "Admixed American",
@@ -2121,7 +2121,7 @@
         5.894387055227531
       ]
     },
-    "both_sexes": {
+    "both": {
       "id": "VACTERLX_ZIC3",
       "labels": [
         "Admixed American",

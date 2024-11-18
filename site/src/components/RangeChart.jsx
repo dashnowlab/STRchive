@@ -10,6 +10,7 @@ const RangeChart = ({
   counts,
   lowerBounds,
   upperBounds,
+  tooltip = () => "",
 }) => {
   const upperMinusLower = lowerBounds.map(
     (_, index) => upperBounds[index] - lowerBounds[index],
@@ -101,23 +102,9 @@ const RangeChart = ({
         axisPointer: {
           type: "shadow",
         },
-        formatter: ([lower, upperMinusLower, value]) =>
+        formatter: ([series]) =>
           `<div class="${classes.tooltip}">
-            <p>
-              <b>${value.name}</b>
-            </p>
-            <p>
-              <span>Value:</span><br/>
-              <b>${value.value.toFixed(2)}%</b>
-            </p>
-            <p>
-              <span>95% Confidence Interval:</span><br/>
-              <b>${lower.value.toFixed(2)}% &ndash; ${(lower.value + upperMinusLower.value).toFixed(2)}%</b>
-            </p>
-            <p>
-              <span>Samples:</span><br/>
-              <b>${counts[lower.dataIndex].toLocaleString()}</b>
-            </p>
+            ${tooltip(series.dataIndex)}
           </div>`,
       }}
     />
