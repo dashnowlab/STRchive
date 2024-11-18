@@ -59,7 +59,7 @@ section.full {
 }
 
 section:nth-child(even) {
-  background: color-mix(in hsl, var(--white), var(--light-gray) 25%);
+  background: color-mix(in srgb, var(--white), var(--light-gray) 35%);
 }
 
 section:last-child {
@@ -343,7 +343,7 @@ td {
 }
 
 .button-secondary:hover {
-  background: var(--gray);
+  background: var(--dark-gray);
   color: var(--white);
 }
 

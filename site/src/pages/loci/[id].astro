@@ -364,9 +364,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
   {
     gnomad[id] && (
       <section>
-        <h2>GnomAD</h2>
+        <h2>gnomAD</h2>
 
-        <Gnomad client:only title={d.gene} data={gnomad[id]} />
+        <Gnomad client:only="react" title={d.gene} data={gnomad[id]} />
       </section>
     )
   }

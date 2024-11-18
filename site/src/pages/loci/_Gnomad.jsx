@@ -4,7 +4,7 @@ import RangeChart from "@/components/RangeChart";
 import Select from "@/components/Select";
 
 const Gnomad = ({ title, data = {} }) => {
-  const options = Object.keys(data)
+  const sexes = Object.keys(data)
     .map((key) => ({
       value: key,
       label: startCase(key),
@@ -12,7 +12,7 @@ const Gnomad = ({ title, data = {} }) => {
     .sort()
     .reverse();
 
-  const [sex, setSex] = useState(options[0].value);
+  const [sex, setSex] = useState(sexes[0].value);
 
   const d = data[sex];
 
@@ -20,13 +20,15 @@ const Gnomad = ({ title, data = {} }) => {
 
   return (
     <>
-      {options.length > 1 && (
-        <Select label="Sex" options={options} value={sex} onChange={setSex} />
+      {sexes.length > 1 && (
+        <Select label="Sex" options={sexes} value={sex} onChange={setSex} />
       )}
 
       <div className="charts">
         <RangeChart
-          title={`${title} (${sex.replace("_", " ")})`}
+          title={
+            sexes.length > 1 ? `${title} (${sex.replace("_", " ")})` : title
+          }
           xLabel="Pathogenic Genotype (%)"
           yLabels={d.labels}
           counts={d.counts}
