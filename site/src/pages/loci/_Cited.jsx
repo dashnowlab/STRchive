@@ -30,9 +30,15 @@ const Cited = ({ text, literature }) => {
             .replaceAll("]", "")
             /** split multiple */
             .split(";")
+            .map((ref) => ref.trim())
             .map(
-              /** look up full citation details from list of literature */
-              (ref) => literature.find((lit) => lit.id === ref.trim()) ?? {},
+              (ref) =>
+                /** look up full citation details from list of literature */
+                literature.find(
+                  (lit) => lit.id === ref,
+                ) /** if citation doesn't exist, fall-back to plain text */ ?? {
+                  text: ref,
+                },
             ),
         };
       /** else, return plain text */ else return { text };
@@ -44,12 +50,17 @@ const Cited = ({ text, literature }) => {
       <span key={index}>{text}</span>
     ) : (
       <sup key={index}>
-        {citations.map(({ number, title }, index) => (
+        {citations.map(({ text, number, title }, index) => (
           <Fragment key={index}>
-            {/* link to citation id */}
-            <Link to={`#citation-${number}`} data-tooltip={`${title ?? "-"}`}>
-              {number}
-            </Link>
+            {text ? (
+              /** plain text fallback */
+              <span data-tooltip={text}>#</span>
+            ) : (
+              /** link to citation id below */
+              <Link to={`#citation-${number}`} data-tooltip={`${title ?? "-"}`}>
+                {number}
+              </Link>
+            )}
             {index < citations.length - 1 && ","}
           </Fragment>
         ))}

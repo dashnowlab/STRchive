@@ -182,7 +182,11 @@ const literature =
             )}
             {d.prevalence_details && (
               <ShowMore client:load lines={1}>
-                {d.prevalence_details}
+                <Cited
+                  client:load
+                  text={d.prevalence_details}
+                  literature={literature}
+                />
               </ShowMore>
             )}
           </div>
@@ -403,21 +407,23 @@ const literature =
   }
 
   <!-- citations -->
-  <section>
-    <h2>Literature</h2>
+  {
+    !!literature.length && (
+      <section>
+        <h2>Literature</h2>
 
-    <div class="literature">
-      {
-        literature.map(({ number, id, title, year }) => (
-          <div id={`citation-${number}`} class="citation">
-            <strong class="citation-number">{number}</strong>
-            <ShowMore client:load>{title ?? "-"}</ShowMore>
-            <div set:html={[year, id].join("&nbsp; · &nbsp;")} />
-          </div>
-        ))
-      }
-    </div>
-  </section>
+        <div class="literature">
+          {literature.map(({ number, id, title, year }) => (
+            <div id={`citation-${number}`} class="citation">
+              <strong class="citation-number">{number}</strong>
+              <ShowMore client:load>{title ?? "-"}</ShowMore>
+              <div set:html={[year, id].join("&nbsp; · &nbsp;")} />
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <script define:vars={{ d }}>
     console.debug(d);
