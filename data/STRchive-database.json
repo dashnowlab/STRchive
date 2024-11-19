@@ -2394,11 +2394,13 @@
         ],
         "benign_motif_reference_orientation":[
             "GAAGGA",
-            "GAAGAAGAAGAAGCA"
+            "GAAGAAGAAGAAGCA",
+            "AAGGAG"
         ],
         "benign_motif_gene_orientation":[
             "CCTTCT",
-            "CTGCTTCTTCTTCTT"
+            "CTGCTTCTTCTTCTT",
+            "CTCCTT"
         ],
         "unknown_motif_reference_orientation":[],
         "unknown_motif_gene_orientation":[],
@@ -2428,7 +2430,7 @@
         "mechanism":"LoF",
         "mechanism_detail":"Reduced transcript 2 [@pmcid:PMC10042577].",
         "source":[],
-        "details":"Higher repeat size is associated with earlier age of onset [@pmid:39263992]. The 250-300 repeats range is linked to incomplete penetrance and >300 repeats with complete penetrance in some studies and resources [@genereviews:NBK599589; @pmid:37399286; @pmid:39227614]. However, our thresholds are taken from suggestions made by Mohren et al upon evaluation of 169 cases and 802 controls; the authors propose lower thresholds based on pathogenic cases of shorter pure repeats [@pmid:39227614]. Additionally, this study suggests that benign motifs may disrupt the formation of secondary structures in DNA/RNA, leading to reduced pathogenicity. Variantion in flanking regions appear to correlate with repeat size [@pmid:39227614; @pmid:38937606].",
+        "details":"Higher repeat size is associated with earlier age of onset [@pmid:39263992]. The 250-300 repeats range is linked to incomplete penetrance and >300 repeats with complete penetrance in some studies and resources [@genereviews:NBK599589; @pmid:37399286; @pmid:39227614]. However, our thresholds are taken from suggestions made by Mohren et al upon evaluation of 169 cases and 802 controls; the authors propose lower thresholds based on pathogenic cases of shorter pure repeats [@pmid:39227614]. Additionally, this study suggests that benign motifs may disrupt the formation of secondary structures in DNA/RNA, leading to reduced pathogenicity. Variation in flanking regions appear to correlate with repeat size [@pmid:39227614; @pmid:38937606]. Intermediate alleles make pose as susceptibility factors [@pmid:39227614].",
         "omim":[
             "620174"
         ],
