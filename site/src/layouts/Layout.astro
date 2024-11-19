@@ -58,8 +58,13 @@ const {
       import { sleep } from "@/util/misc";
 
       const hashChange = async () => {
+        /** get hash in url */
+        const { hash } = window.location;
+
+        if (!hash) return;
+
         /** find element whose id matches hash */
-        const element = document.querySelector(window.location.hash);
+        const element = document.querySelector(hash);
 
         if (!element) return;
 
