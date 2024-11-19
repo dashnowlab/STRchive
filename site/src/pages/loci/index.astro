@@ -2,8 +2,8 @@
 import { FaAngleDown, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
-import BoxChart from "@/components/BoxChart";
 import Link from "@/components/Link";
+import PlotlyChart from "@/components/PlotlyChart";
 import Layout from "@/layouts/Layout.astro";
 import Table from "./_Table";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
@@ -26,6 +26,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     <Link to="#plots" className="button-secondary">Plots<FaAngleDown /></Link>
   </section>
 
+  <!-- downloads -->
   <section>
     <h2 id="downloads">Downloads</h2>
 
@@ -50,6 +51,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     >
   </section>
 
+  <!-- table -->
   <section>
     <h2 id="table">Table</h2>
 
@@ -60,6 +62,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     <Table client:load data={data} />
   </section>
 
+  <!-- plots -->
   <section class="full">
     <h2 id="plots">Plots</h2>
 
@@ -68,7 +71,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     <div class="charts">
       <div>
         <h3>Pathogenic Size Range</h3>
-        <BoxChart
+        <PlotlyChart
           client:only="react"
           data={pathSize.x.data}
           layout={pathSize.x.layout}
@@ -76,7 +79,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
       </div>
       <div>
         <h3>Age of Onset</h3>
-        <BoxChart
+        <PlotlyChart
           client:only="react"
           data={ageOnset.x.data}
           layout={ageOnset.x.layout}

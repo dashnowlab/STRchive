@@ -24,21 +24,26 @@ import { preserveScroll } from "@/util/dom";
 import Select from "./Select";
 import classes from "./Table.module.css";
 
+/** options for per-page select */
 const perPageOptions = [
   { value: 5, label: "5" },
   { value: 10, label: "10" },
   { value: 25, label: "25" },
   { value: 50, label: "50" },
   { value: 100, label: "100" },
-  { value: 999999, label: "All" },
+  { value: 9999, label: "All" },
 ];
+
+/** per-page option selected at start */
 const defaultPerPage = perPageOptions.at(-1);
 
+/** table component with sorting, filtering, and more */
 const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
+  /** current per-page selection */
   const [perPage] = useState(defaultPerPage.value);
 
-  const columnHelper = createColumnHelper();
   /** column definitions */
+  const columnHelper = createColumnHelper();
   const columns = cols.map((col, index) =>
     columnHelper.accessor((row) => row[col.key], {
       id: String(index),
@@ -66,7 +71,6 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
   const table = useReactTable({
     data: rows,
     columns,
-
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
@@ -179,6 +183,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
           </tbody>
         </table>
       </div>
+
       {/* controls */}
       {showControls && (
         <div className={classes.controls}>

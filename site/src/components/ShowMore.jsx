@@ -1,35 +1,43 @@
 import { useEffect, useRef, useState } from "react";
 import classes from "./ShowMore.module.css";
 
-/** collapse long lines of text */
+/** add "show more/less" control to long lines of content if needed */
 const ShowMore = ({ lines = 2, children }) => {
   const ref = useRef();
-  const [enabled, setEnabled] = useState(false);
+  /** whether to show the control at all */
+  const [show, setShow] = useState(false);
+  /** whether to show all content */
   const [expanded, setExpanded] = useState(false);
 
   /** on first render */
   useEffect(() => {
     if (!ref.current) return;
-    /** select text */
-    const range = document.createRange();
-    range.setStartBefore(ref.current);
-    range.setEndAfter(ref.current);
-    /** get number of lines */
-    const rects = range.getClientRects();
-    /** if line limit exceeded, enable component */
-    if (rects.length - 1 > lines) setEnabled(true);
+
+    /** height of full content */
+    const { height } = ref.current.getBoundingClientRect();
+
+    /** height of each line */
+    const lineHeight = parseFloat(
+      window.getComputedStyle(ref.current).lineHeight,
+    );
+
+    /** estimate number of lines of full content */
+    const lineCount = Math.round(height / lineHeight);
+
+    /** hide control if content can fit within limit */
+    setShow(lineCount > lines);
   }, []);
 
   return (
     <>
       <span
         ref={ref}
-        className={enabled && !expanded ? classes.box : undefined}
-        style={{ WebkitLineClamp: enabled && !expanded ? lines : undefined }}
+        className={show && !expanded ? classes.box : undefined}
+        style={{ WebkitLineClamp: show && !expanded ? lines : undefined }}
       >
         {children}
       </span>
-      {enabled && (
+      {show && (
         <button
           className={classes.button}
           onClick={() => setExpanded(!expanded)}

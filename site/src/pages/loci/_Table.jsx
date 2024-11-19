@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { map, pick, uniq } from "lodash-es";
+import { map, pick, startCase, uniq } from "lodash-es";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
 import TableComponent from "@/components/Table";
 import { getValues } from "@/util/object";
-import { capitalize } from "@/util/string";
 import { deriveDatum } from "./_derived";
 import classes from "./_Table.module.css";
 import { tagOptions } from "./_tags";
 
+/** column definitions */
 const cols = [
   {
     key: "id",
@@ -80,7 +80,9 @@ const cols = [
   },
 ];
 
+/** table for main loci page */
 const Table = ({ data }) => {
+  /** find longest motif length */
   const maxMotif = Math.max(
     ...data
       .map(
@@ -93,36 +95,9 @@ const Table = ({ data }) => {
       .filter(Boolean),
   );
 
-  const [tags, setTags] = useState(Array(tagOptions.length).fill(false));
-  const [motif, setMotif] = useState(maxMotif);
-
-  const [inheritance, setInheritance] = useState("all");
-  const [search, setSearch] = useState("");
-
   const derivedData = data.map(deriveDatum);
 
-  const filteredData = derivedData
-    /** filter data */
-    .filter(
-      (d) =>
-        /** free text search visible columns */
-        getValues(pick(d, map(cols, "key")))
-          .join(" ")
-          .match(new RegExp(search.trim(), "i")) &&
-        /** tags */
-        (tags.filter(Boolean).length
-          ? tagOptions
-              .filter((_, index) => tags[index])
-              .every(({ value }) => d.locus_tags.includes(value))
-          : true) &&
-        /** motif */
-        d.pathogenic_motif_reference_orientation.every(
-          (m) => m.length <= (motif || Infinity),
-        ) &&
-        /** inheritance */
-        (inheritance === "all" || d.inheritance.includes(inheritance)),
-    );
-
+  /** options for inheritance filter */
   const inheritanceOptions = [{ value: "all", label: "All" }].concat(
     uniq(map(derivedData, "inheritance").flat()).map((inheritance) => ({
       value: inheritance,
@@ -130,8 +105,39 @@ const Table = ({ data }) => {
     })),
   );
 
+  /** selected tag filters */
+  const [tags, setTags] = useState(Array(tagOptions.length).fill(false));
+  /** motif filter state */
+  const [motif, setMotif] = useState(maxMotif);
+  /** inheritance filter state */
+  const [inheritance, setInheritance] = useState("all");
+  /** search filter state */
+  const [search, setSearch] = useState("");
+
+  /** filter data */
+  const filteredData = derivedData.filter(
+    (d) =>
+      /** free text search visible columns */
+      getValues(pick(d, map(cols, "key")))
+        .join(" ")
+        .match(new RegExp(search.trim(), "i")) &&
+      /** tags */
+      (tags.filter(Boolean).length
+        ? tagOptions
+            .filter((_, index) => tags[index])
+            .every(({ value }) => d.locus_tags.includes(value))
+        : true) &&
+      /** motif */
+      d.pathogenic_motif_reference_orientation.every(
+        (m) => m.length <= (motif || Infinity),
+      ) &&
+      /** inheritance */
+      (inheritance === "all" || d.inheritance.includes(inheritance)),
+  );
+
   return (
     <>
+      {/* filters */}
       <div className={classes.filters}>
         <input
           placeholder="Search"
@@ -145,7 +151,7 @@ const Table = ({ data }) => {
               label={
                 <>
                   <Icon style={{ color }} />
-                  {capitalize(value)}
+                  {startCase(value)}
                 </>
               }
               value={tags[index]}
@@ -175,6 +181,7 @@ const Table = ({ data }) => {
         </div>
       </div>
 
+      {/* table */}
       <TableComponent cols={cols} rows={filteredData} />
     </>
   );

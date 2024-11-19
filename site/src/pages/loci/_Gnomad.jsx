@@ -3,7 +3,9 @@ import { startCase } from "lodash-es";
 import RangeChart from "@/components/RangeChart";
 import Select from "@/components/Select";
 
+/** charts for gnomad data */
 const Gnomad = ({ title, data = {} }) => {
+  /** sex options */
   const sexes = Object.keys(data)
     .map((key) => ({
       value: key,
@@ -12,14 +14,17 @@ const Gnomad = ({ title, data = {} }) => {
     .sort()
     .reverse();
 
+  /** selected sex */
   const [sex, setSex] = useState(sexes[0].value);
 
+  /** datum object */
   const d = data[sex];
 
   if (!d) return <></>;
 
   return (
     <>
+      {/* sex dropdown */}
       {sexes.length > 1 && (
         <Select label="Sex" options={sexes} value={sex} onChange={setSex} />
       )}
@@ -31,7 +36,6 @@ const Gnomad = ({ title, data = {} }) => {
           }
           xLabel="Pathogenic Genotype (%)"
           yLabels={d.labels}
-          counts={d.counts}
           values={d.values}
           lowerBounds={d.confidence_lower_bounds}
           upperBounds={d.confidence_upper_bounds}

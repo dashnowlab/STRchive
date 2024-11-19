@@ -1,12 +1,13 @@
 import { FaBookMedical, FaLaptopMedical } from "react-icons/fa6";
 
-/** list of references */
+/** get references for datum */
 export const getReferences = (d) =>
+  /** list of reference types */
   [
     {
       name: "Clinical References",
       Icon: FaBookMedical,
-      ids: [
+      references: [
         {
           key: "gard",
           name: "GARD",
@@ -67,7 +68,7 @@ export const getReferences = (d) =>
     {
       name: "Bioinformatical References",
       Icon: FaLaptopMedical,
-      ids: [
+      references: [
         {
           key: "gnomad",
           name: "gnomAD",
@@ -111,13 +112,17 @@ export const getReferences = (d) =>
         },
       ],
     },
-  ].map(({ ids, ...rest }) => ({
+  ].map(({ references, ...rest }) => ({
     ...rest,
-    ids: ids
+    references: references
+      /** for each reference type */
       .map(({ key, link, ...rest }) => ({
         ...rest,
-        value: d[key],
+        /** link text */
+        label: d[key],
+        /** link target, with id inserted */
         link: link.replace("$ID", d[key]),
       }))
-      .filter(({ value }) => value?.length),
+      /** remove types with no references */
+      .filter(({ label }) => label?.length),
   }));

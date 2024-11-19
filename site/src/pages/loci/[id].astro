@@ -2,11 +2,11 @@
 import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
+import { startCase } from "lodash-es";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMore from "@/components/ShowMore";
 import Layout from "@/layouts/Layout.astro";
-import { capitalize } from "@/util/string";
 import Cited from "./_Cited";
 import { deriveDatum } from "./_derived";
 import Gnomad from "./_Gnomad";
@@ -14,10 +14,10 @@ import { getInheritance } from "./_inheritance";
 import { getReferences } from "./_references";
 import { tagOptions } from "./_tags";
 import gnomad from "../../../../data/plots/gnomad.json";
-import citationData from "../../../../data/STRchive-citations.json";
+import citations from "../../../../data/STRchive-citations.json";
 import data from "../../../../data/STRchive-database.json";
 
-/** generate pages for each datum, paths based on gene name */
+/** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
   data.map(({ id }) => ({ params: { id } }));
 
@@ -27,18 +27,23 @@ const { id } = Astro.params;
 /** look up full data entry from id */
 const d = deriveDatum(data.find((d) => d.id === id));
 
-/** "nice" id */
+/** nice looking id, for labels */
 const niceId = id.replace("_", " ");
 
 /** same genes, different locus */
 const genes = data.filter(({ gene }) => gene === d.gene);
 
-/** look up full citation details */
-const citations =
-  d.literature?.map((id) => ({ ...(citationData[id] ?? {}), id })) ?? [];
+/** look up full literature citation details */
+const literature =
+  d.literature?.map((id, index) => ({
+    ...(citations[id] ?? {}),
+    id,
+    number: index + 1,
+  })) ?? [];
 ---
 
 <Layout title={niceId}>
+  <!-- overview -->
   <section>
     <h1><LiaBarcodeSolid />{niceId}</h1>
 
@@ -58,7 +63,7 @@ const citations =
                 data-tooltip={option.tooltip}
               >
                 <Icon style={{ color }} />
-                {capitalize(tag)}
+                {startCase(tag)}
               </div>
             );
           })}
@@ -100,21 +105,21 @@ const citations =
 
     <div class="references">
       {
-        getReferences(d).map(({ name, Icon, ids }) => (
+        getReferences(d).map(({ name, Icon, references }) => (
           <div>
             <div class="heading">
               <Icon />
               <span>{name}</span>
             </div>
             <div class="reference-list">
-              {ids.map(({ name, value, link, tooltip, info }) => (
+              {references.map(({ name, label, link, tooltip, info }) => (
                 <>
                   <Link to={info} data-tooltip={tooltip} noIcon>
                     {name}
                   </Link>
                   <div class="reference">
-                    {value.map((value) => (
-                      <Link to={link}>{value}</Link>
+                    {label.map((label) => (
+                      <Link to={link}>{label}</Link>
                     ))}
                   </div>
                 </>
@@ -126,6 +131,7 @@ const citations =
     </div>
   </section>
 
+  <!-- disease info -->
   <section>
     <h2>Disease</h2>
 
@@ -152,7 +158,13 @@ const citations =
         d.disease_description && (
           <div class="box wide">
             <div>Description</div>
-            <ShowMore client:load>{d.disease_description}</ShowMore>
+            <ShowMore client:load lines={3}>
+              <Cited
+                client:load
+                text={d.disease_description}
+                literature={literature}
+              />
+            </ShowMore>
           </div>
         )
       }
@@ -169,7 +181,9 @@ const citations =
               </div>
             )}
             {d.prevalence_details && (
-              <ShowMore client:load>{d.prevalence_details}</ShowMore>
+              <ShowMore client:load lines={1}>
+                {d.prevalence_details}
+              </ShowMore>
             )}
           </div>
         )
@@ -196,6 +210,7 @@ const citations =
     />
   </section>
 
+  <!-- locus info -->
   <section>
     <h2>Locus</h2>
 
@@ -223,7 +238,9 @@ const citations =
         d.details && (
           <div class="box wide">
             <div>Details</div>
-            <ShowMore client:load>{d.details}</ShowMore>
+            <ShowMore client:load lines={3}>
+              <Cited client:load text={d.details} literature={literature} />
+            </ShowMore>
           </div>
         )
       }
@@ -234,8 +251,12 @@ const citations =
             <div>Mechanism</div>
             {d.mechanism && <div>{d.mechanism}</div>}
             {d.mechanism_detail && (
-              <ShowMore client:load>
-                <Cited client:load text={d.mechanism_detail} />
+              <ShowMore client:load lines={1}>
+                <Cited
+                  client:load
+                  text={d.mechanism_detail}
+                  literature={literature}
+                />
               </ShowMore>
             )}
           </div>
@@ -270,6 +291,7 @@ const citations =
       }
     </div>
 
+    <!-- allele info -->
     <h2>Alleles</h2>
 
     <div class="allele-list">
@@ -369,6 +391,7 @@ const citations =
     />
   </section>
 
+  <!-- gnomad data -->
   {
     gnomad[id] && (
       <section>
@@ -378,15 +401,17 @@ const citations =
       </section>
     )
   }
-  <section>
-    <h2>Citations</h2>
 
-    <div class="citations">
+  <!-- citations -->
+  <section>
+    <h2>Literature</h2>
+
+    <div class="literature">
       {
-        citations.map(({ id, title, year }, index) => (
-          <div id={`citation-${index + 1}`} class="citation">
-            <strong class="citation-number">{index + 1}</strong>
-            <ShowMore client:load>{title}</ShowMore>
+        literature.map(({ number, id, title, year }) => (
+          <div id={`citation-${number}`} class="citation">
+            <strong class="citation-number">{number}</strong>
+            <ShowMore client:load>{title ?? "-"}</ShowMore>
             <div set:html={[year, id].join("&nbsp; · &nbsp;")} />
           </div>
         ))
@@ -560,7 +585,7 @@ const citations =
     gap: 10px;
   }
 
-  .citations {
+  .literature {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -573,6 +598,7 @@ const citations =
     align-items: flex-start;
     padding-left: 40px;
     gap: 5px;
+    border-radius: var(--rounded);
     text-align: left;
   }
 

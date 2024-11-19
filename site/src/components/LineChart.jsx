@@ -65,11 +65,14 @@ const LineChart = ({
         fontSize: fontSize + "px",
       }}
     >
+      {/* axis lines */}
       <path
         fill="none"
         stroke="var(--black)"
         d={`M 0 0 L 0 ${height} L ${width} ${height}`}
       />
+
+      {/* y-axis label */}
       <g textAnchor="end" dominantBaseline="central">
         {mappedRows.map(({ name, y }, index) => (
           <text x={-fontSize * 0.5} y={y} key={index}>
@@ -78,6 +81,7 @@ const LineChart = ({
         ))}
       </g>
 
+      {/* x-axis label */}
       <text
         x={width * 0.5}
         y={height + fontSize * 0.5}
@@ -87,6 +91,7 @@ const LineChart = ({
         {xAxis}
       </text>
 
+      {/* colored bars */}
       {mappedRows.map(({ x, y, color, values: [min, max] }, index) => (
         <rect
           key={index}
@@ -98,6 +103,7 @@ const LineChart = ({
         />
       ))}
 
+      {/* bar labels */}
       {mappedRows.map(({ x, y, values: [min, max] }, index) => (
         <g key={index} dominantBaseline="central">
           <text x={x[0]} y={y} textAnchor="end">
