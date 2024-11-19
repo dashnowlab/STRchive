@@ -1391,7 +1391,7 @@
             "105500"
         ],
         "prevalence":null,
-        "prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2/100,000 person-years, point prevalence is 3-5/100,000 (Europe/US); lifetime risk is 1 in 300 [@pmid:31315673]. Related individuals to patients with C9orf72-ALS appear at an increased risk of disease regardless of carrier status [@pmid:38149039]. C9orf72-FTD is estimated to be 0.04-134:100,000 [@genereviews:NBK268647], and by our estimates 0.65-1.56/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry [@genereviews:NBK268647].",
+        "prevalence_details":"The expansion of a hexanucleotide repeat GGGGCC in C9orf72 is the most common known cause of ALS accounting for ~ 40% familial cases and ~ 7% sporadic cases in the European population; overall ALS incidence is 1-2/100,000 person-years, point prevalence is 3-5/100,000 (Europe/US); lifetime risk is 1 in 300 [@pmid:31315673]. Related individuals to patients with C9orf72-ALS appear at an increased risk of disease regardless of carrier status [@pmid:38149039; @pmid:39315390]. C9orf72-FTD is estimated to be 0.04-134:100,000 [@genereviews:NBK268647], and by our estimates 0.65-1.56/100,000 for C9orf72-ALS. The expansion has been found across ethnicities/ancestries, with population-dependent prevalence, highest in those with northern European ancestry [@genereviews:NBK268647].",
         "stripy":[
             "C9ORF72"
         ],
@@ -2522,7 +2522,7 @@
             "300623"
         ],
         "prevalence":"14/100000",
-        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 [@genereviews:NBK1384]. Female prevalence 9/100,000 [@pmid:24700618]. Known carrier frequency is approximately 300-500/100,000 but detected was 11/100,000 [@pmid:29100084]. FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females [@doi:10.1007/978-3-031-66932-3_14]. Found worldwide [@genereviews:NBK1384].",
+        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 [@genereviews:NBK1384]. Female prevalence 9/100,000 [@pmid:24700618]. Known carrier frequency is approximately 300-500/100,000 but detected was 11/100,000 [@pmid:29100084]. FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females [@doi:10.1007/978-3-031-66932-3_14]. Found worldwide [@genereviews:NBK1384]. In Thailand, 1 in 600 women carry a premutation, and 1 in 400 carry a 'gray zone' allele [@pmid:39320553].",
         "stripy":[
             "FMR1"
         ],
@@ -3359,8 +3359,8 @@
         "pathogenic_max":250.0,
         "ref_copies":21.3,
         "motif_len":3,
-        "age_onset":"Typical: 35-44 [@genereviews:NBK1305]; Range: 2-85 [@pmid:21171977].",
-        "age_onset_min":2,
+        "age_onset":"Typical: 35-44 [@genereviews:NBK1305]; Range: 1-85 [@doi:10.1002/ajmg.a.63894; @pmid:21171977].",
+        "age_onset_min":1,
         "age_onset_max":85,
         "typ_age_onset_min":35.0,
         "typ_age_onset_max":44.0,
