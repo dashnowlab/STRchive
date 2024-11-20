@@ -23,7 +23,7 @@ const Cited = ({ text, citations }) => {
     )
     .map((text) => {
       /** if citation */
-      if (text.includes("@"))
+      if (text.startsWith("["))
         return {
           citations: text
             /** widdle down to just citation id */
