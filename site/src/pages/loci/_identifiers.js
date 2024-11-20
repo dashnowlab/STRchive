@@ -5,7 +5,7 @@ export const getIdentifiers = (d) =>
   /** list of identifier types */
   [
     {
-      name: "Clinical IDs",
+      name: "Clinical Links",
       Icon: FaBookMedical,
       identifiers: [
         {
@@ -66,7 +66,7 @@ export const getIdentifiers = (d) =>
       ],
     },
     {
-      name: "Bioinformatical IDs",
+      name: "Bioinformatical Links",
       Icon: FaLaptopMedical,
       identifiers: [
         {
