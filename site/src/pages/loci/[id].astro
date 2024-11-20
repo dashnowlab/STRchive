@@ -2,20 +2,24 @@
 import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
+import { startCase } from "lodash-es";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
-import ShowMore from "@/components/ShowMore";
+import ShowMoreLines from "@/components/ShowMoreLines";
 import Layout from "@/layouts/Layout.astro";
-import { capitalize } from "@/util/string";
+import AdditionalLiterature from "./_AdditionalLiterature";
+import Citation from "./_Citation";
+import Cited from "./_Cited";
 import { deriveDatum } from "./_derived";
 import Gnomad from "./_Gnomad";
+import { getIdentifiers } from "./_identifiers";
 import { getInheritance } from "./_inheritance";
-import { getReferences } from "./_references";
 import { tagOptions } from "./_tags";
 import gnomad from "../../../../data/plots/gnomad.json";
+import citations from "../../../../data/STRchive-citations.json";
 import data from "../../../../data/STRchive-database.json";
 
-/** generate pages for each datum, paths based on gene name */
+/** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
   data.map(({ id }) => ({ params: { id } }));
 
@@ -25,14 +29,30 @@ const { id } = Astro.params;
 /** look up full data entry from id */
 const d = deriveDatum(data.find((d) => d.id === id));
 
-/** "nice" id */
+/** nice looking id, for labels */
 const niceId = id.replace("_", " ");
 
 /** same genes, different locus */
 const genes = data.filter(({ gene }) => gene === d.gene);
+
+/** look up full citations details for references  */
+const references =
+  d.references?.map((id, index) => ({
+    id,
+    number: index + 1,
+    ...(citations[id] ?? {}),
+  })) ?? [];
+
+/** look up full citations details for additional literature */
+const additionalLiterature =
+  d.additional_literature?.map((id) => ({
+    id,
+    ...(citations[id] ?? {}),
+  })) ?? [];
 ---
 
 <Layout title={niceId}>
+  <!-- overview -->
   <section>
     <h1><LiaBarcodeSolid />{niceId}</h1>
 
@@ -52,7 +72,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
                 data-tooltip={option.tooltip}
               >
                 <Icon style={{ color }} />
-                {capitalize(tag)}
+                {startCase(tag)}
               </div>
             );
           })}
@@ -92,23 +112,23 @@ const genes = data.filter(({ gene }) => gene === d.gene);
       )
     }
 
-    <div class="references">
+    <div class="identifiers">
       {
-        getReferences(d).map(({ name, Icon, ids }) => (
+        getIdentifiers(d).map(({ name, Icon, identifiers }) => (
           <div>
             <div class="heading">
               <Icon />
               <span>{name}</span>
             </div>
-            <div class="reference-list">
-              {ids.map(({ name, value, link, tooltip, info }) => (
+            <div class="identifier-list">
+              {identifiers.map(({ name, label, link, tooltip, info }) => (
                 <>
                   <Link to={info} data-tooltip={tooltip} noIcon>
                     {name}
                   </Link>
-                  <div class="reference">
-                    {value.map((value) => (
-                      <Link to={link}>{value}</Link>
+                  <div class="identifier-links">
+                    {label.map((label) => (
+                      <Link to={link}>{label}</Link>
                     ))}
                   </div>
                 </>
@@ -120,6 +140,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     </div>
   </section>
 
+  <!-- disease info -->
   <section>
     <h2>Disease</h2>
 
@@ -146,7 +167,13 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         d.disease_description && (
           <div class="box wide">
             <div>Description</div>
-            <ShowMore client:load>{d.disease_description}</ShowMore>
+            <ShowMoreLines client:load lines={3}>
+              <Cited
+                client:load
+                text={d.disease_description}
+                citations={references}
+              />
+            </ShowMoreLines>
           </div>
         )
       }
@@ -163,33 +190,53 @@ const genes = data.filter(({ gene }) => gene === d.gene);
               </div>
             )}
             {d.prevalence_details && (
-              <ShowMore client:load>{d.prevalence_details}</ShowMore>
+              <ShowMoreLines client:load lines={1}>
+                <Cited
+                  client:load
+                  text={d.prevalence_details}
+                  citations={references}
+                />
+              </ShowMoreLines>
             )}
           </div>
         )
       }
     </div>
 
-    <LineChart
-      client:load
-      rows={[
-        {
-          name: "Age of Onset",
-          color: "var(--primary)",
-          values: [d.age_onset_min, d.age_onset_max],
-        },
-        {
-          name: "(Typical)",
-          color: "var(--secondary)",
-          values: [d.typ_age_onset_min, d.typ_age_onset_max],
-        },
-      ]}
-      min={0}
-      max={90}
-      xAxis="Years"
-    />
+    <div class="boxes">
+      <LineChart
+        client:load
+        rows={[
+          {
+            name: "Age of Onset",
+            color: "var(--primary)",
+            values: [d.age_onset_min, d.age_onset_max],
+          },
+          {
+            name: "(Typical)",
+            color: "var(--secondary)",
+            values: [d.typ_age_onset_min, d.typ_age_onset_max],
+          },
+        ]}
+        min={0}
+        max={90}
+        xAxis="Years"
+      />
+
+      {
+        d.age_onset && (
+          <div class="box wide">
+            <div>Age of Onset Details</div>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load text={d.age_onset} citations={references} />
+            </ShowMoreLines>
+          </div>
+        )
+      }
+    </div>
   </section>
 
+  <!-- locus info -->
   <section>
     <h2>Locus</h2>
 
@@ -217,7 +264,9 @@ const genes = data.filter(({ gene }) => gene === d.gene);
         d.details && (
           <div class="box wide">
             <div>Details</div>
-            <ShowMore client:load>{d.details}</ShowMore>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load text={d.details} citations={references} />
+            </ShowMoreLines>
           </div>
         )
       }
@@ -228,7 +277,13 @@ const genes = data.filter(({ gene }) => gene === d.gene);
             <div>Mechanism</div>
             {d.mechanism && <div>{d.mechanism}</div>}
             {d.mechanism_detail && (
-              <ShowMore client:load>{d.mechanism_detail}</ShowMore>
+              <ShowMoreLines client:load lines={1}>
+                <Cited
+                  client:load
+                  text={d.mechanism_detail}
+                  citations={references}
+                />
+              </ShowMoreLines>
             )}
           </div>
         )
@@ -262,6 +317,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
       }
     </div>
 
+    <!-- allele info -->
     <h2>Alleles</h2>
 
     <div class="allele-list">
@@ -361,12 +417,50 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     />
   </section>
 
+  <!-- gnomad data -->
   {
     gnomad[id] && (
       <section>
         <h2>gnomAD</h2>
 
         <Gnomad client:only="react" title={d.gene} data={gnomad[id]} />
+      </section>
+    )
+  }
+
+  <!-- references -->
+  {
+    !!references.length && (
+      <section>
+        <h2>References</h2>
+
+        <p class="center">
+          Direct supporting references for info on this page.
+        </p>
+
+        <div class="citations">
+          {references.map((citation) => (
+            <Citation client:load {...citation} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- additional literature -->
+  {
+    !!additionalLiterature.length && (
+      <section>
+        <h2>Additional Literature</h2>
+
+        <p class="center">Additional literature related to this locus.</p>
+
+        <div class="citations">
+          <AdditionalLiterature
+            client:load
+            additionalLiterature={additionalLiterature}
+          />
+        </div>
       </section>
     )
   }
@@ -404,6 +498,10 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     gap: 20px;
   }
 
+  .boxes :global(svg) {
+    margin: 0;
+  }
+
   .box {
     display: inline-flex;
     flex-direction: column;
@@ -413,6 +511,10 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     border-radius: var(--rounded);
     background: var(--light-gray);
     overflow-wrap: anywhere;
+  }
+
+  .box > :first-child svg {
+    opacity: 0.5;
   }
 
   .wide {
@@ -481,10 +583,6 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     background: color-mix(in srgb, var(--tertiary), white 90%);
   }
 
-  .box > :first-child svg {
-    opacity: 0.5;
-  }
-
   .genes {
     margin: 40px 0;
   }
@@ -509,7 +607,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     gap: 10px 20px;
   }
 
-  .references {
+  .identifiers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -518,7 +616,7 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     text-align: left;
   }
 
-  .reference-list {
+  .identifier-list {
     display: grid;
     grid-template-columns: auto auto;
     place-content: flex-start;
@@ -526,14 +624,20 @@ const genes = data.filter(({ gene }) => gene === d.gene);
     gap: 5px 20px;
   }
 
-  .reference-list > :nth-child(odd) {
+  .identifier-list > :nth-child(odd) {
     color: var(--black);
     text-decoration: none;
   }
 
-  .reference {
+  .identifier-links {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .citations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
 </style>

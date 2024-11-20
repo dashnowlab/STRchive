@@ -2,17 +2,18 @@ import { truncate } from "lodash-es";
 import { EChart } from "@kbox-labs/react-echarts";
 import classes from "./RangeChart.module.css";
 
+/** chart that shows values as points and ranges as bars */
 const RangeChart = ({
   title,
   xLabel,
   yLabels,
   values,
-  counts,
   lowerBounds,
   upperBounds,
   tooltip = () => "",
 }) => {
-  const upperMinusLower = lowerBounds.map(
+  /** difference between upper and lower */
+  const upperLowerDiff = lowerBounds.map(
     (_, index) => upperBounds[index] - lowerBounds[index],
   );
 
@@ -22,7 +23,7 @@ const RangeChart = ({
       className={classes.chart}
       grid={{ containLabel: true }}
       renderer="svg"
-      textStyle={{ fontFamily: "inherit" }}
+      textStyle={{ fontFamily: "inherit", color: "var(--black)" }}
       title={{
         text: title,
         left: "center",
@@ -67,7 +68,7 @@ const RangeChart = ({
           },
         },
         {
-          data: upperMinusLower,
+          data: upperLowerDiff,
           type: "bar",
           barWidth: 10,
           stack: "group",

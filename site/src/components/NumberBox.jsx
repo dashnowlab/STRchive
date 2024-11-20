@@ -1,3 +1,4 @@
+/** number input with label */
 const NumberBox = ({ label, value, onChange, ...props }) => (
   <label>
     {label}

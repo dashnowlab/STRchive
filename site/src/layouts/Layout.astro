@@ -53,5 +53,45 @@ const {
       <slot />
     </main>
     <Footer />
+
+    <script>
+      import { sleep } from "@/util/misc";
+
+      const hashChange = async () => {
+        /** get hash in url */
+        const { hash } = window.location;
+
+        if (!hash) return;
+
+        /** find element whose id matches hash */
+        const element = document.querySelector(hash);
+
+        if (!element) return;
+
+        /** wait for layout changes */
+        await sleep(100);
+
+        /** glow element */
+        element.animate(
+          [
+            {
+              background: "var(--primary)",
+              boxShadow: "0 0 0 10px var(--primary)",
+            },
+            {
+              background: "transparent",
+              boxShadow: "0 0 0 10px transparent",
+            },
+          ],
+          { duration: 2000, iterations: 1 },
+        );
+
+        /** scroll to element */
+        element.scrollIntoView({ block: "start" });
+      };
+
+      window.addEventListener("load", hashChange);
+      window.addEventListener("hashchange", hashChange);
+    </script>
   </body>
 </html>

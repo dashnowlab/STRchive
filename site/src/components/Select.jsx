@@ -1,3 +1,4 @@
+/** dropdown select with label */
 const Select = ({ label, options, onChange, ...props }) => (
   <label>
     {label}

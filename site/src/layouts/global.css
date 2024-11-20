@@ -357,6 +357,19 @@ td {
   height: 1.2em;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.truncate-lines {
+  -webkit-line-clamp: var(--lines, 1);
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
 .charts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));

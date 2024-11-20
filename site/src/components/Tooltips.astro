@@ -6,6 +6,8 @@
   import tippy from "tippy.js";
   import "tippy.js/dist/tippy.css";
 
+  /** add tooltips to any element with data-tooltip attribute */
+
   /** tippy options */
   const options = {
     delay: [50, 0],
@@ -13,6 +15,8 @@
     offset: [0, 15],
     allowHTML: true,
     appendTo: document.body,
+
+    /** for debugging */
     // onHide: () => false,
   };
 
