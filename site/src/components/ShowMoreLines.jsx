@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import classes from "./ShowMore.module.css";
+import classes from "./ShowMoreLines.module.css";
 
 /** add "show more/less" control to long lines of content if needed */
-const ShowMore = ({ lines = 2, children }) => {
+const ShowMoreLines = ({ lines = 2, children }) => {
   const ref = useRef();
   /** whether to show the control at all */
   const [show, setShow] = useState(false);
@@ -28,25 +28,25 @@ const ShowMore = ({ lines = 2, children }) => {
     setShow(lineCount > lines);
   }, []);
 
-  return (
-    <>
-      <span
-        ref={ref}
-        className={show && !expanded ? classes.box : undefined}
-        style={{ WebkitLineClamp: show && !expanded ? lines : undefined }}
-      >
-        {children}
-      </span>
-      {show && (
-        <button
-          className={classes.button}
-          onClick={() => setExpanded(!expanded)}
-        >
-          {expanded ? "Show less" : "Show more"}
-        </button>
-      )}
-    </>
+  return show ? (
+    <div
+      className={[
+        classes.content,
+        expanded ? classes.expanded : classes.collapsed,
+        !expanded ? "truncate-lines" : "",
+      ].join(" ")}
+      style={{ "--lines": show && !expanded ? lines : undefined }}
+      onClick={() => setExpanded(!expanded)}
+      onKeyUp={(event) => event.key === "Enter" && setExpanded(!expanded)}
+      role="button"
+      tabIndex={0}
+      aria-expanded={expanded}
+    >
+      {children}
+    </div>
+  ) : (
+    <div ref={ref}>{children}</div>
   );
 };
 
-export default ShowMore;
+export default ShowMoreLines;

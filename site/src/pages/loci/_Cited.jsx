@@ -3,7 +3,7 @@ import { uniq } from "lodash-es";
 import Link from "@/components/Link";
 
 /** render free text with citations */
-const Cited = ({ text, literature }) => {
+const Cited = ({ text, citations }) => {
   if (!text) return "";
 
   /** find sub-string indices in text that match citation format */
@@ -18,7 +18,9 @@ const Cited = ({ text, literature }) => {
   const split = Array(indices.length - 1)
     .fill(null)
     /** extract sub-strings from pairs of indices */
-    .map((_, index) => text.substring(indices[index], indices[index + 1]))
+    .map((_, index) =>
+      text.substring(indices[index], indices[index + 1]).trim(),
+    )
     .map((text) => {
       /** if citation */
       if (text.includes("@"))
@@ -30,14 +32,14 @@ const Cited = ({ text, literature }) => {
             .replaceAll("]", "")
             /** split multiple */
             .split(";")
-            .map((ref) => ref.trim())
+            .map((citation) => citation.trim())
             .map(
-              (ref) =>
-                /** look up full citation details from list of literature */
-                literature.find(
-                  (lit) => lit.id === ref,
+              (citation) =>
+                /** look up full citation details  */
+                citations.find(
+                  ({ id }) => id === citation,
                 ) /** if citation doesn't exist, fall-back to plain text */ ?? {
-                  text: ref,
+                  text: citation,
                 },
             ),
         };
@@ -50,20 +52,28 @@ const Cited = ({ text, literature }) => {
       <span key={index}>{text}</span>
     ) : (
       <sup key={index}>
-        {citations.map(({ text, number, title }, index) => (
-          <Fragment key={index}>
-            {text ? (
-              /** plain text fallback */
-              <span data-tooltip={text}>#</span>
-            ) : (
-              /** link to citation id below */
-              <Link to={`#citation-${number}`} data-tooltip={`${title ?? "-"}`}>
-                {number}
-              </Link>
-            )}
-            {index < citations.length - 1 && ","}
-          </Fragment>
-        ))}
+        {citations?.map(
+          ({ text, number, title, authors, publisher }, index) => (
+            <Fragment key={index}>
+              {text ? (
+                /** plain text fallback */
+                <span data-tooltip={text}>#</span>
+              ) : (
+                /** link to citation id below */
+                <Link
+                  to={`#citation-${number}`}
+                  data-tooltip={[title, authors?.join(", "), publisher]
+                    .filter(Boolean)
+                    .map((line) => `<div class="truncate-lines">${line}</div>`)
+                    .join("")}
+                >
+                  {number}
+                </Link>
+              )}
+              {index < citations.length - 1 && ","}
+            </Fragment>
+          ),
+        )}{" "}
       </sup>
     ),
   );

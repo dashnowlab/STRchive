@@ -23,7 +23,7 @@ const RangeChart = ({
       className={classes.chart}
       grid={{ containLabel: true }}
       renderer="svg"
-      textStyle={{ fontFamily: "inherit" }}
+      textStyle={{ fontFamily: "inherit", color: "var(--black)" }}
       title={{
         text: title,
         left: "center",

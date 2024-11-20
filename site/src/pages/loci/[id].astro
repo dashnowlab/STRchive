@@ -5,13 +5,15 @@ import { TbDna2, TbVirus } from "react-icons/tb";
 import { startCase } from "lodash-es";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
-import ShowMore from "@/components/ShowMore";
+import ShowMoreLines from "@/components/ShowMoreLines";
 import Layout from "@/layouts/Layout.astro";
+import AdditionalLiterature from "./_AdditionalLiterature";
+import Citation from "./_Citation";
 import Cited from "./_Cited";
 import { deriveDatum } from "./_derived";
 import Gnomad from "./_Gnomad";
+import { getIdentifiers } from "./_identifiers";
 import { getInheritance } from "./_inheritance";
-import { getReferences } from "./_references";
 import { tagOptions } from "./_tags";
 import gnomad from "../../../../data/plots/gnomad.json";
 import citations from "../../../../data/STRchive-citations.json";
@@ -33,12 +35,19 @@ const niceId = id.replace("_", " ");
 /** same genes, different locus */
 const genes = data.filter(({ gene }) => gene === d.gene);
 
-/** look up full literature citation details */
-const literature =
-  d.literature?.map((id, index) => ({
-    ...(citations[id] ?? {}),
+/** look up full citations details for references  */
+const references =
+  d.references?.map((id, index) => ({
     id,
     number: index + 1,
+    ...(citations[id] ?? {}),
+  })) ?? [];
+
+/** look up full citations details for additional literature */
+const additionalLiterature =
+  d.additional_literature?.map((id) => ({
+    id,
+    ...(citations[id] ?? {}),
   })) ?? [];
 ---
 
@@ -103,21 +112,21 @@ const literature =
       )
     }
 
-    <div class="references">
+    <div class="identifiers">
       {
-        getReferences(d).map(({ name, Icon, references }) => (
+        getIdentifiers(d).map(({ name, Icon, identifiers }) => (
           <div>
             <div class="heading">
               <Icon />
               <span>{name}</span>
             </div>
-            <div class="reference-list">
-              {references.map(({ name, label, link, tooltip, info }) => (
+            <div class="identifier-list">
+              {identifiers.map(({ name, label, link, tooltip, info }) => (
                 <>
                   <Link to={info} data-tooltip={tooltip} noIcon>
                     {name}
                   </Link>
-                  <div class="reference">
+                  <div>
                     {label.map((label) => (
                       <Link to={link}>{label}</Link>
                     ))}
@@ -158,13 +167,13 @@ const literature =
         d.disease_description && (
           <div class="box wide">
             <div>Description</div>
-            <ShowMore client:load lines={3}>
+            <ShowMoreLines client:load lines={3}>
               <Cited
                 client:load
                 text={d.disease_description}
-                literature={literature}
+                citations={references}
               />
-            </ShowMore>
+            </ShowMoreLines>
           </div>
         )
       }
@@ -181,37 +190,50 @@ const literature =
               </div>
             )}
             {d.prevalence_details && (
-              <ShowMore client:load lines={1}>
+              <ShowMoreLines client:load lines={1}>
                 <Cited
                   client:load
                   text={d.prevalence_details}
-                  literature={literature}
+                  citations={references}
                 />
-              </ShowMore>
+              </ShowMoreLines>
             )}
           </div>
         )
       }
     </div>
 
-    <LineChart
-      client:load
-      rows={[
-        {
-          name: "Age of Onset",
-          color: "var(--primary)",
-          values: [d.age_onset_min, d.age_onset_max],
-        },
-        {
-          name: "(Typical)",
-          color: "var(--secondary)",
-          values: [d.typ_age_onset_min, d.typ_age_onset_max],
-        },
-      ]}
-      min={0}
-      max={90}
-      xAxis="Years"
-    />
+    <div class="boxes">
+      <LineChart
+        client:load
+        rows={[
+          {
+            name: "Age of Onset",
+            color: "var(--primary)",
+            values: [d.age_onset_min, d.age_onset_max],
+          },
+          {
+            name: "(Typical)",
+            color: "var(--secondary)",
+            values: [d.typ_age_onset_min, d.typ_age_onset_max],
+          },
+        ]}
+        min={0}
+        max={90}
+        xAxis="Years"
+      />
+
+      {
+        d.age_onset && (
+          <div class="box wide">
+            <div>Age of Onset Details</div>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load text={d.age_onset} citations={references} />
+            </ShowMoreLines>
+          </div>
+        )
+      }
+    </div>
   </section>
 
   <!-- locus info -->
@@ -242,9 +264,9 @@ const literature =
         d.details && (
           <div class="box wide">
             <div>Details</div>
-            <ShowMore client:load lines={3}>
-              <Cited client:load text={d.details} literature={literature} />
-            </ShowMore>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load text={d.details} citations={references} />
+            </ShowMoreLines>
           </div>
         )
       }
@@ -255,13 +277,13 @@ const literature =
             <div>Mechanism</div>
             {d.mechanism && <div>{d.mechanism}</div>}
             {d.mechanism_detail && (
-              <ShowMore client:load lines={1}>
+              <ShowMoreLines client:load lines={1}>
                 <Cited
                   client:load
                   text={d.mechanism_detail}
-                  literature={literature}
+                  citations={references}
                 />
-              </ShowMore>
+              </ShowMoreLines>
             )}
           </div>
         )
@@ -406,20 +428,38 @@ const literature =
     )
   }
 
-  <!-- citations -->
+  <!-- references -->
   {
-    !!literature.length && (
+    !!references.length && (
       <section>
-        <h2>Literature</h2>
+        <h2>References</h2>
 
-        <div class="literature">
-          {literature.map(({ number, id, title, year }) => (
-            <div id={`citation-${number}`} class="citation">
-              <strong class="citation-number">{number}</strong>
-              <ShowMore client:load>{title ?? "-"}</ShowMore>
-              <div set:html={[year, id].join("&nbsp; · &nbsp;")} />
-            </div>
+        <p class="center">
+          Direct supporting references for info on this page.
+        </p>
+
+        <div class="citations">
+          {references.map((citation) => (
+            <Citation client:load {...citation} />
           ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- additional literature -->
+  {
+    !!additionalLiterature.length && (
+      <section>
+        <h2>Additional Literature</h2>
+
+        <p class="center">All additional literature related to this locus.</p>
+
+        <div class="citations">
+          <AdditionalLiterature
+            client:load
+            additionalLiterature={additionalLiterature}
+          />
         </div>
       </section>
     )
@@ -456,6 +496,10 @@ const literature =
     justify-content: center;
     margin: 20px auto;
     gap: 20px;
+  }
+
+  .boxes :global(svg) {
+    margin: 0;
   }
 
   .box {
@@ -563,7 +607,7 @@ const literature =
     gap: 10px 20px;
   }
 
-  .references {
+  .identifiers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -572,7 +616,7 @@ const literature =
     text-align: left;
   }
 
-  .reference-list {
+  .identifier-list {
     display: grid;
     grid-template-columns: auto auto;
     place-content: flex-start;
@@ -580,44 +624,14 @@ const literature =
     gap: 5px 20px;
   }
 
-  .reference-list > :nth-child(odd) {
+  .identifier-list > :nth-child(odd) {
     color: var(--black);
     text-decoration: none;
   }
 
-  .reference {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .literature {
+  .citations {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-  }
-
-  .citation {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 40px;
-    gap: 5px;
-    border-radius: var(--rounded);
-    text-align: left;
-  }
-
-  .citation-number {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--primary), var(--white) 75%);
   }
 </style>
