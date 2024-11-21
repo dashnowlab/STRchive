@@ -8,6 +8,7 @@ library(rentrez)
 #library(dbplyr)
 library(easyPubMed)
 library(stringr)
+library(purrr)
 # solution for potential error based on library versions
 #devtools::install_version("dbplyr", version = "2.3.4")
 
@@ -15,6 +16,21 @@ library(stringr)
 # change to STRchive directory
 data <- fromJSON("/Users/quinlan/Documents/Git/STRchive-1/STRchive/data/STRchive-database.json")
 #data <- fromJSON("/data/STRchive-database.json")
+
+# get unique references used in the json for each entry
+data <- data %>%
+  mutate(references = apply(data[, c("age_onset", "mechanism_detail", "details", "source",
+                                     "prevalence_details", "year", "disease_description")], 1, function(row) {
+                                       # Extract content inside square brackets
+                                       matches <- unlist(regmatches(row, gregexpr("(?<=\\[)[^\\]]+(?=\\])", row, perl = TRUE)))
+
+                                       # Collapse matches into a single string, remove duplicates, and trim whitespaces
+                                       unique_matches <- unique(trimws(matches))
+
+                                       # Return the cleaned references
+                                       paste(unique_matches, collapse = ", ")
+                                     }))
+
 
 
 # Extract STRchive gene names into a list
@@ -110,7 +126,7 @@ perform_pubmed_query <- function(gene_info) {
 
     # Clean up any unnecessary slashes from the query
     query <- gsub("  ", " ", query)  # Remove double spaces
-    print(query)
+    #print(query)
     gene_name <- gsub('"', '', gene_name)
     out_file <- paste0(base_directory, gene_name)
 
@@ -123,7 +139,7 @@ perform_pubmed_query <- function(gene_info) {
                                    encoding = "ASCII")
     # the function adds 01.txt so, gotta fix that here
     out_file <- paste0(base_directory, gene_name, "01.txt")
-    print(out_file)
+    #print(out_file)
 
     # Check if the file was created successfully
     cat("Full file path:", out_file, "\n")
@@ -172,13 +188,13 @@ extract_citation_info <- function(medline_data_list, gene_name) {
   # Use regular expressions to extract PMID, publication years, and titles
   # Extract PMIDs
   pmids <- str_extract_all(medline_string, "(?<=PMID- )\\d+")[[1]]
-  print(pmids)
+  #print(pmids)
   # Extract Publication Dates
   publication_dates <- str_extract_all(medline_string, "(?<=DP  - )\\d+")[[1]]
-  print(publication_dates)
+  #print(publication_dates)
   # Extract Titles
   title <- str_extract_all(medline_string, "(?<=TI  - ).+?(?=\\.|\\?)")[[1]]
-  print(title)
+  #print(title)
 
   # Ensure all vectors have the same length
   length_diff <- length(pmids) - length(publication_dates)
@@ -196,7 +212,7 @@ extract_citation_info <- function(medline_data_list, gene_name) {
   }
 
   # Create a dataframe with gene_name, PMID, PublicationYear, and Title
-  pub_info_df <- data.frame(GeneName = rep(gene_name, length(pmids)),
+  pub_info_df <- data.frame(gene = rep(gene_name, length(pmids)),
                             PMID = pmids,
                             PublicationDate = publication_dates,
                             Title = title,
@@ -208,7 +224,7 @@ extract_citation_info <- function(medline_data_list, gene_name) {
 for (gene_name in names(all_publications)) {
   # Get the list of XML data for the current gene_name
   medline_data_list <- all_publications[[gene_name]]
-  print(gene_name)
+  #print(gene_name)
   # Extract publication information using the function
   pub_info_df <- extract_citation_info(medline_data_list, gene_name)
 
@@ -219,4 +235,44 @@ for (gene_name in names(all_publications)) {
 # Combine all the dataframes into a single dataframe
 all_pub_info_df <- do.call(rbind, pub_info_list)
 
+# add pubmed search results to literature field for entry
+data <- data %>%
+  mutate(additional_literature = map_chr(gene, function(g) {
+    # Find matching PMIDs from all_pub_info_df for each gene
+    matching_pmids <- all_pub_info_df %>%
+      filter(gene == g) %>%
+      pull(PMID) %>%
+      unique() %>%
+      paste0("@pmid:", ., collapse = ",")
 
+    # If there are no matches, return an empty string
+    if (length(matching_pmids) == 0) {
+      return("")
+    }
+    return(matching_pmids)
+  }))
+
+# remove any redundant pmids from additional_literature that are in references
+data <- data %>%
+  mutate(additional_literature = mapply(function(lit, refs) {
+    # Split the strings by commas to create lists
+    lit_list <- unlist(str_split(lit, ",\\s*"))  # Split and remove extra spaces
+    refs_list <- unlist(str_split(refs, ",\\s*"))  # Split and remove extra spaces
+
+    # Find common elements between additional_literature and references
+    common_elements <- intersect(lit_list, refs_list)
+
+    # Print common elements being removed (if any)
+    if (length(common_elements) > 0) {
+      cat("Removing the following elements from additional_literature: ", paste(common_elements, collapse = ", "), "\n")
+    }
+
+    # Remove common elements from additional_literature
+    lit_list <- setdiff(lit_list, common_elements)
+
+    # Join the remaining elements back into a string
+    cleaned_lit <- paste(lit_list, collapse = ",")
+
+    # Return the cleaned additional_literature
+    return(cleaned_lit)
+  }, data$additional_literature, data$references))
