@@ -11,6 +11,8 @@ library(stringr)
 library(purrr)
 # solution for potential error based on library versions
 #devtools::install_version("dbplyr", version = "2.3.4")
+library(reticulate)
+use_python("/Users/quinlan/miniforge3/envs/manubot/bin/python", required = TRUE)
 
 ### Data Setup
 # change to STRchive directory
@@ -24,15 +26,18 @@ data <- data %>%
                                        # Extract content inside square brackets
                                        matches <- unlist(regmatches(row, gregexpr("(?<=\\[)[^\\]]+(?=\\])", row, perl = TRUE)))
 
+                                       # Replace "; " with "," for multiple citations within one
+                                       matches <- gsub("; ", ",", matches)
+
                                        # Collapse matches into a single string, remove duplicates, and trim whitespaces
                                        unique_matches <- unique(trimws(matches))
 
                                        # Return the cleaned references
-                                       paste(unique_matches, collapse = ", ")
+                                       paste(unique_matches, collapse = ",")
                                      }))
 
 
-
+### Established loci lit  retrieval
 # Extract STRchive gene names into a list
 gene_list <- as.character(unique(data$gene))
 
@@ -276,3 +281,26 @@ data <- data %>%
     # Return the cleaned additional_literature
     return(cleaned_lit)
   }, data$additional_literature, data$references))
+
+
+#### New locus lit retrieval
+#new locus query found from reviewing pertinent terms in discovery papers
+query <- '("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract]) AND
+            ("discovered"[Title/Abstract] OR "identified"[Title/Abstract] OR "causative"[Title/Abstract] OR "underlie"[Title/Abstract] OR "basis"[Title/Abstract]) AND
+            "English"[Language] AND
+            ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "condition*"[Title/Abstract]) AND
+            ("journal article"[Publication Type] OR "letter"[Publication Type] OR "Case Reports"[Publication Type])
+            NOT "review"[Publication Type]'
+
+# Define the output file name (change base_directory if needed)
+out_file <- paste0(base_directory, "new_locus")
+
+# Perform the PubMed query and download results
+out.A <- batch_pubmed_download(pubmed_query_string = query,
+                               format = "medline",
+                               batch_size = 10000,
+                               dest_file_prefix = out_file,
+                               encoding = "ASCII")
+
+### Manubot time
+py_config()
