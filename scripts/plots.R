@@ -42,7 +42,7 @@ p_size = ggplot(disease.loci, aes(x = disease_id)) +
   theme(panel.grid.major.x = element_line(color = 'lightgrey', linetype = 'longdash')) +
   coord_flip()
 
-htmltools::save_html(ggplotly(p_size, height = 1000), "images/plotly_path_size.html")
+htmltools::save_html(ggplotly(p_size, height = 1000), "site/public/plots/plotly_path_size.html")
 
 disease.loci$Inheritance = factor(disease.loci$Inheritance, levels = c("AD/AR", "AD", "AR", "XD", "XR"))
 
@@ -61,4 +61,4 @@ p_age = ggplot(subset(disease.loci, !is.na(disease.loci$age_onset_min) & disease
   geom_segment(aes(x = 1, y = 18, xend = 66, yend = 18), linetype = 'longdash', color = 'lightgrey') +
   coord_flip()
 
-htmltools::save_html(ggplotly(p_age, height = 1000), "images/plotly_age_onset.html")
+htmltools::save_html(ggplotly(p_age, height = 1000), "site/public/plots/plotly_age_onset.html")
