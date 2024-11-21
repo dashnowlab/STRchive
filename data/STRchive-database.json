@@ -1060,14 +1060,14 @@
         "pathogenic_max":460.0,
         "ref_copies":10.7,
         "motif_len":3,
-        "age_onset":"Typical: 4-48 [@pmid:20739808]; Range: 0-90 [@genereviews:NBK1256; @doi:10.1038/sj.ejhg.5201108].",
+        "age_onset":"Typical: 4-48 [@pmid:20739808]; Range: 0-90 [@genereviews:NBK1256; @pmid:14571264].",
         "age_onset_min":0,
         "age_onset_max":65,
         "typ_age_onset_min":4.0,
         "typ_age_onset_max":48.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyglutamine expansion leading to gain of function; toxic misfolded intermediated suspected [@genereviews:NBK1256; @pmcid:PMC4195584].",
+        "mechanism_detail":"Polyglutamine expansion leading to gain of function; toxic misfolded intermediated suspected [@genereviews:NBK1256; @pmid:18418675].",
         "source":[
         ],
         "details":"Benign alleles range from 4-27 [@pmid:37906407], with intermediate alleles ranging from premutations (28-33) to reduced penetrance (34-36) [@genereviews:NBK1256]. Interruptions observed include CAA [@pmid:35245110].",
@@ -1286,14 +1286,14 @@
         "typ_age_onset_max":62.0,
         "novel":"novel",
         "mechanism":"GoF",
-        "mechanism_detail":"RNA toxicity and gain of function leading to neurodegeneration [@doi:10.1016/j.neurol.2022.09.004]. Role in heterochromatin or chromosomal structure theorized [@omim:117210].",
+        "mechanism_detail":"RNA toxicity and gain of function leading to neurodegeneration [@pmid:36371266]. Role in heterochromatin or chromosomal structure theorized [@omim:117210].",
         "source":[],
         "details":"This locus is a novel STR-containing insertion, not present in reference genome; the pathogenic threshold (110-760) is based on the pure repeat of the pathogenic motif within the insertion [@pmid:19878914].",
         "omim":[
             "117210"
         ],
         "prevalence":null,
-        "prevalence_details":"Has been found in Japanese populations [@omim:117210] and then once respectively in a Korean and a Chinese family [@doi:10.1016/j.jns.2022.120527].",
+        "prevalence_details":"Has been found in Japanese populations [@omim:117210] and then once respectively in a Korean and a Chinese family [@pmid:36563608].",
         "stripy":[
             "BEAN1"
         ],
@@ -1386,7 +1386,7 @@
         "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region [@omim:105500]. Addiitonal mechanisms theorized include protein loss of function and RNA gain of function [@pmid:37847372].",
         "source":[
         ],
-        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges of the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@doi:10.1016/j.gde.2017.02.008] yet 24-30 repeats are associated with ALS [@doi:10.1186/s40478-019-0724-4] and while 60 repeats is frequently used as a threshold for uncertain alleles, the exact threshold of pathogenicity remains unclear [@genereviews:NBK268647; @pmid:38099605]. Repeat of 80 motifs and lower appear to have delayed onset for any phenotype [@doi:10.1016/j.gde.2017.02.008]. >250 repeats are associated with a full FTD/ALS disease state [@pmid:31048495], but pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605]. Penetrance appears to also be age-dependent, with environmental factors and specific phenotypes associated with sex and age at onset [@pmid:28522837].",
+        "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges of the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@pmid:28319737] yet 24-30 repeats are associated with ALS [@pmid:31315673] and while 60 repeats is frequently used as a threshold for uncertain alleles, the exact threshold of pathogenicity remains unclear [@genereviews:NBK268647; @pmid:38099605]. Repeat of 80 motifs and lower appear to have delayed onset for any phenotype [@pmid:28319737]. >250 repeats are associated with a full FTD/ALS disease state [@pmid:31048495], but pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605]. Penetrance appears to also be age-dependent, with environmental factors and specific phenotypes associated with sex and age at onset [@pmid:28522837].",
         "omim":[
             "105500"
         ],
@@ -1578,7 +1578,7 @@
         "mechanism":"Hypermethylation",
         "mechanism_detail":"DNA hypermethylation/11q deletion in sporadic cases [@pmid:38467784].",
         "source":[],
-        "details":"70% of individuals have 11 repeats [@doi:10.1038/376145a0], but pathogenic expansion can span hundreds of motifs [@doi:10.1093/hmg/9.8.1201]. The CGG repeat expansion can lead to a fragile site and subsequent deletion of 11q (shown in 2 cases) but total causality is unclear; intermediate alleles are associated with a premutation [@pmcid:PMC2670819].",
+        "details":"70% of individuals have 11 repeats [@pmid:7603564], but pathogenic expansion can span hundreds of motifs [@pmid:10767345]. The CGG repeat expansion can lead to a fragile site and subsequent deletion of 11q (shown in 2 cases) but total causality is unclear; intermediate alleles are associated with a premutation [@pmid:19267933].",
         "omim":[
             "147791"
         ],
@@ -1592,7 +1592,7 @@
         "mondo":[
             "0007838"
         ],
-        "year":"1995 [@doi:10.1038/376145a0]",
+        "year":"1995 [@pmid:7603564]",
         "medgen":[
             "162878"
         ],
@@ -1667,7 +1667,7 @@
         "typ_age_onset_max":56.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Aberrant splicing, RAN translation [@doi:10.1093/hmg/ddr568; @pmid:38467784].",
+        "mechanism_detail":"Aberrant splicing, RAN translation [@pmid:22140091; @pmid:38467784].",
         "source":[],
         "details":"≤30 uninterrupted CCTG repeats or 11-26 CCTG repeats with GCTC/TCTG interruptions are considered benign; 27-29 repeats with interruptions have currently unknown significance, ~30-~54 repeats are considered premutations, ~55-74 repeats are premutations with possible reduced penetrance, and >74 repeat alleles are considered pathogenic [@genereviews:NBK1466]. Penetrance is age-dependent and approaches 100%. Locus structure is (TG)n(TCTG)n(CCTG)n. CCTG expansion causes DM2 but the other repeat units are also variable. Interruptions include GCTG/TCTG/GGCT [@pmid:35245110].",
         "omim":[
@@ -1754,14 +1754,14 @@
         "pathogenic_max":7.0,
         "ref_copies":5.0,
         "motif_len":3,
-        "age_onset":"Typical: 0-2 (COMP-PSACH)/ 1-12 (EDM1); Range: 0 (PSACH) - 13 (EDM1). 3-13 specific to trinucleotide expansions (duplications) [@pmcid:PMC6129439], several contractions but unknown exact AoO [@genereviews:NBK1123; @genereviews:NBK1487].",
+        "age_onset":"Typical: 0-2 (COMP-PSACH)/ 1-12 (EDM1); Range: 0 (PSACH) - 13 (EDM1). 3-13 specific to trinucleotide expansions (duplications) [@pmid:29530484], several contractions but unknown exact AoO [@genereviews:NBK1123; @genereviews:NBK1487].",
         "age_onset_min":3,
         "age_onset_max":13,
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"LoF/GoF?",
-        "mechanism_detail":"Poly-aspartic acid expansions, domain dependent [@pmcid:PMC6129439]; may involve misfolding but still unestablished [@genereviews:NBK1123].",
+        "mechanism_detail":"Poly-aspartic acid expansions, domain dependent [@pmid:29530484]; may involve misfolding but still unestablished [@genereviews:NBK1123].",
         "source":[],
         "details":"Both expansions to (GTC)6-7 and contractions to (GTC)4 are associated with disease [@genereviews:NBK1487].",
         "omim":[
@@ -1855,7 +1855,7 @@
         "pathogenic_max":81.0,
         "ref_copies":null,
         "motif_len":12,
-        "age_onset":"Typical: 6-15 [@genereviews:NBK1142]; Range: 6-18 [@doi:10.1111/j.1528-1167.2008.01546.x].",
+        "age_onset":"Typical: 6-15 [@genereviews:NBK1142]; Range: 6-18 [@pmid:18325013].",
         "age_onset_min":6,
         "age_onset_max":18,
         "typ_age_onset_min":6.0,
@@ -1960,7 +1960,7 @@
         "typ_age_onset_max":53.0,
         "novel":"novel",
         "mechanism":"GoF",
-        "mechanism_detail":"Toxic gain-of-function mechanism in protein, associated with alternative splicing, an RNA switch, and an upregulation of reelin-DAB1 signalling [@omim:615945; @pmcid:PMC6373366].",
+        "mechanism_detail":"Toxic gain-of-function mechanism in protein, associated with alternative splicing, an RNA switch, and an upregulation of reelin-DAB1 signalling [@omim:615945; @pmid:30284037].",
         "source":[],
         "details":"Pathogenicity only associated with pathogenic motif >30 repeats, flanked by at least 58 repeats of reference motif on either side; reference repeat (AAAAT) can range from 1 to 400 repeats, although typically less than 30 [@genereviews:NBK541729]. The pathogenic motif is unstable, particularly when transmitted by the father [@genereviews:NBK541729].",
         "omim":[
@@ -2146,7 +2146,7 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Functional defect in dystrophin/dystroglycan [@doi:10.1007/s10038-006-0056-7].",
+        "mechanism_detail":"Functional defect in dystrophin/dystroglycan [@pmid:16969582].",
         "source":[],
         "details":"There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family, from which the benign and pathogenic ranges were inferred from affected and unaffected family members [@pmid:27417533]. The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
         "omim":[
@@ -2332,7 +2332,7 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"LoF from a hypomorphic allele [@doi:10.1016/j.ajhg.2013.11.020].",
+        "mechanism_detail":"LoF from a hypomorphic allele [@pmid:24360810].",
         "source":[],
         "details":"Complex repeat of 18-20 nucleotides expands to cause diease: disease is found in individuals with 14-16 repeats [@pmid:24360810], while controls have typically 3-12 repeats with as low as 1 repeat [@genereviews:NBK535148; @gnomad:EIF4A3]. Significance of intermediate alleles is unknown [@pmid:29112243].",
         "omim":[
@@ -2350,7 +2350,7 @@
         "mondo":[
             "0009998"
         ],
-        "year":"2014 [@pmid:24360810]; syndrome described in 1992 [@doi:10.1002/ajmg.1320420511]",
+        "year":"2014 [@pmid:24360810]; syndrome described in 1992 [@pmid:1632438]",
         "medgen":[
             "336581"
         ],
@@ -2428,7 +2428,7 @@
         "typ_age_onset_max":70.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Reduced transcript 2 [@pmcid:PMC10042577].",
+        "mechanism_detail":"Reduced transcript 2 [@pmid:36516086].",
         "source":[],
         "details":"Higher repeat size is associated with earlier age of onset [@pmid:39263992]. The 250-300 repeats range is linked to incomplete penetrance and >300 repeats with complete penetrance in some studies and resources [@genereviews:NBK599589; @pmid:37399286; @pmid:39227614]. However, our thresholds are taken from suggestions made by Mohren et al upon evaluation of 169 cases and 802 controls; the authors propose lower thresholds based on pathogenic cases of shorter pure repeats [@pmid:39227614]. Additionally, this study suggests that benign motifs may disrupt the formation of secondary structures in DNA/RNA, leading to reduced pathogenicity. Variation in flanking regions appear to correlate with repeat size [@pmid:39227614; @pmid:38937606]. Intermediate alleles make pose as susceptibility factors [@pmid:39227614].",
         "omim":[
@@ -2446,7 +2446,7 @@
         "mondo":[
             "0859340"
         ],
-        "year":"2023 [@doi:10.1016/j.ajhg.2022.11.015]",
+        "year":"2023 [@pmid:36493768]",
         "medgen":[
             "1824051"
         ],
@@ -2509,7 +2509,7 @@
         "pathogenic_max":2000.0,
         "ref_copies":20.6667,
         "motif_len":3,
-        "age_onset":"Typical: FXS 1 to 'first several years of life', FXTAS 60-65 [@genereviews:NBK1384]; Range: 0 [@uptodate:'Fragile X syndrome: Clinical features and diagnosis in children and adolescents'] - 78 [@pmid:17427188]; detailed description of typical symptom onset and diagnosis available from Arnold et al [@doi:10.1007/978-3-031-66932-3_14].",
+        "age_onset":"Typical: FXS 1 to 'first several years of life', FXTAS 60-65 [@genereviews:NBK1384]; Range: 0 [@uptodate:'Fragile X syndrome: Clinical features and diagnosis in children and adolescents'] - 78 [@pmid:17427188]; detailed description of typical symptom onset and diagnosis available from Arnold et al [@isbn:978-3-031-66932-3].",
         "age_onset_min":0,
         "age_onset_max":78,
         "typ_age_onset_min":1.0,
@@ -2518,13 +2518,13 @@
         "mechanism":"LoF/GoF",
         "mechanism_detail":"Loss of function via transcriptional silencing in FXS, RNA gain of function in FXTAS/FXPOI [@pmid:16205714; @pmid:36169768].",
         "source":[],
-        "details":"Intermediate or 'gray zone' occur at 45-54 alleles and may be unstable enough to expand into the premutation range, as well as associate with parkinsonism [@doi:10.1002/mds.28086; @genereviews:NBK1384]. FXTAS/POI occurs at 55-200 repeats, FXS >200, late onset; AGG and CTG interruptions documented [@genereviews:NBK1384; @pmid:29868108].",
+        "details":"Intermediate or 'gray zone' occur at 45-54 alleles and may be unstable enough to expand into the premutation range, as well as associate with parkinsonism [@pmid:32463542; @genereviews:NBK1384]. FXTAS/POI occurs at 55-200 repeats, FXS >200, late onset; AGG and CTG interruptions documented [@genereviews:NBK1384; @pmid:29868108].",
         "omim":[
             "300624",
             "300623"
         ],
         "prevalence":"14/100000",
-        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 [@genereviews:NBK1384]. Female prevalence 9/100,000 [@pmid:24700618]. Known carrier frequency is approximately 300-500/100,000 but detected was 11/100,000 [@pmid:29100084]. FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females [@doi:10.1007/978-3-031-66932-3_14]. Found worldwide [@genereviews:NBK1384]. In Thailand, 1 in 600 women carry a premutation, and 1 in 400 carry a 'gray zone' allele [@pmid:39320553].",
+        "prevalence_details":"Incidence of full mutation in males 19/100,000; prevalence 14/100,000 [@genereviews:NBK1384]. Female prevalence 9/100,000 [@pmid:24700618]. Known carrier frequency is approximately 300-500/100,000 but detected was 11/100,000 [@pmid:29100084]. FXS prevalence 1:7000 males, 1:11,000 females; FX premutation carriers 1:290-855 males, 1:148-300 females [@isbn:978-3-031-66932-3]. Found worldwide [@genereviews:NBK1384]. In Thailand, 1 in 600 women carry a premutation, and 1 in 400 carry a 'gray zone' allele [@pmid:39320553].",
         "stripy":[
             "FMR1"
         ],
@@ -3368,7 +3368,7 @@
         "typ_age_onset_max":44.0,
         "novel":"ref",
         "mechanism":"GoF/LoF",
-        "mechanism_detail":"While the primary pathogenic mechanism is gain of function of the protein product, pathogenesis is complex and multifactorial [@pmcid:PMC5495055].",
+        "mechanism_detail":"While the primary pathogenic mechanism is gain of function of the protein product, pathogenesis is complex and multifactorial [@pmid:27940602].",
         "source":[],
         "details":"27-35 motifs are unstable/premutations, while 36-39 motifs are associated with reduced penetrance. >60 motifs assocated with onset age <20 years [@genereviews:NBK1305]. Only CAG expansions are considered pathogenic, but interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110]. Only fathers with premutations are considered at risk of transmitting pathogenic alleles [@mpid:19507258].",
         "omim":[
@@ -4566,7 +4566,7 @@
         "mechanism":"GoF",
         "mechanism_detail":"Polyalanine gain of function associated with RAN translation [@pmid:38467784].",
         "source":[],
-        "details":"Benign range  is 6-32 repeats, intermediate range 40-49, and pathogenic range is 51-78 [@pmcid:PMC11102406]; intermediate alleles are associated with reduced penetrance [@pmid:11198281].",
+        "details":"Benign range  is 6-32 repeats, intermediate range 40-49, and pathogenic range is 51-78 [@pmid:37906407]; intermediate alleles are associated with reduced penetrance [@pmid:11198281].",
         "omim":[
             "604326"
         ],
@@ -4938,7 +4938,7 @@
         "typ_age_onset_max":null,
         "novel":"novel",
         "mechanism":"Unknown",
-        "mechanism_detail":"Expression isn't changed [@pmid:PMID: 37994247].",
+        "mechanism_detail":"Expression isn't changed [@pmid:7994247].",
         "source":[],
         "details":"TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali [@pmid:37994247]. Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in [@pmid:38876750]. It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note: locus is partially deleted in T2T reference genome",
         "omim":[],
@@ -5164,7 +5164,7 @@
         "mechanism":"LoF",
         "mechanism_detail":"LoF; exact mechanism unknown [@pmid:38467784].",
         "source":[],
-        "details":"Disease is caused by an insertion of a pathogenic motif, although motif presence is variable and can expand up to 200 repeats without apparently causing a phenotype [@genereviews:NBK564656]. Pathogenic expansions (ranging from 400-2750 pathogenic motifs) may be flanked by other motifs [@genereviews:NBK564656]. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656], and motif associations are described by Delforge et al [@doi:10.1016/j.neurol.2024.03.006]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients (vs 400 with established pathogenic motif AAGGG), while ~100-380 AAAGG repeats were found in unaffected controls [@pmid:37450567]. Length appears to impact age of onset and disease severity, with particular impact from the smaller allele [@doi:10.1136/jnnp-2024-ABN.259].",
+        "details":"Disease is caused by an insertion of a pathogenic motif, although motif presence is variable and can expand up to 200 repeats without apparently causing a phenotype [@genereviews:NBK564656]. Pathogenic expansions (ranging from 400-2750 pathogenic motifs) may be flanked by other motifs [@genereviews:NBK564656]. For example, (AAAGG)10-25(AAGGG)exp(AAAGG)4-6 [@pmid:32851396]. Motif heterogeneity is common in unaffected individuals [@genereviews:NBK564656], and motif associations are described by Delforge et al [pmid:38627134]. The pathogenic size threshold appears to differ for the AAAGG motif: AAAGG expansions >= 600 repeats have been observed in CANVAS patients (vs 400 with established pathogenic motif AAGGG), while ~100-380 AAAGG repeats were found in unaffected controls [@pmid:37450567]. Length appears to impact age of onset and disease severity, with particular impact from the smaller allele [@doi:10.1136/jnnp-2024-ABN.259].",
         "omim":[
             "614575"
         ],
@@ -5658,7 +5658,7 @@
         "typ_age_onset_max":30.0,
         "novel":"novel",
         "mechanism":"GoF?",
-        "mechanism_detail":"RNA toxicity theorized [@doi:10.1038/s41467-019-12671-y; @pmid:38467784].",
+        "mechanism_detail":"RNA toxicity theorized [@pmid:31664034; @pmid:38467784].",
         "source":[],
         "details":"Disease caused by novel insertion of pathogenic motif (not found in any controls); size of pathogenic motif observed in two probands ranged from ~274-558 repeats, while the expanded reference motif ranged from 340-390 [@pmid:31664034].",
         "omim":[
@@ -5842,7 +5842,7 @@
         "typ_age_onset_max":48.0,
         "novel":"ref",
         "mechanism":"LoF/GoF",
-        "mechanism_detail":"Polyglutamine expansion leading to transcriptional dysregulation [@pmcid:PMC8773600].",
+        "mechanism_detail":"Polyglutamine expansion leading to transcriptional dysregulation [@pmid:35053321].",
         "source":[],
         "details":"Benign range is 25-40 repeats, pathogenic range is 49+ repeats (largest to date 66 motifs, with mild correlation between size and age of onset), and intermediate alleles (41-48 repeats) are associated with reduced penetrance and potentially milder phenotypes [@genereviews:NBK1438]. Huntington's disease like phenotype [@pmid:12805114]. Interruptions seen: CAA [@pmid:35245110]; CAA CAG CAA interruption is seen in all alleles stably transmitted across generations [@genereviews:NBK1438].",
         "omim":[
@@ -6030,7 +6030,7 @@
         "typ_age_onset_max":59.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Sequestration of MBNL1 in RNA foci, similar to the mechanism underlying myotonic dystrophy-1 [@doi:10.1074/jbc.M114.621607]. Variation in RAN translation [@pmid:38467784].",
+        "mechanism_detail":"Sequestration of MBNL1 in RNA foci, similar to the mechanism underlying myotonic dystrophy-1 [@pmid:25593321]. Variation in RAN translation [@pmid:38467784].",
         "source":[],
         "details":"Most controls have <40 repeats while majority of patients have >50 repeats; penetrance is <100%, as unaffected individuals have been documented with >80 repeats and alleles of affected individuals range from 12-2600 [@genereviews:NBK535148; @pmid:25168903]. Expansions are causative in approximately 70% of disease cases [@genereviews:NBK535148].",
         "omim":[
@@ -6395,7 +6395,7 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Methylation [@doi:10.1016/j.ajhg.2018.11.005].",
+        "mechanism_detail":"Methylation [@pmid:30554721].",
         "source":[],
         "details":"Benign range (0-20) taken from primary literatre of unaffected individuals and gnomAD data [@pmid:30554721; @gnomad:XYLT1]. Minimum repeat size to cause disease thought to range between 72 and 110 repeats [@pmid:30554721]. Repeat is within a 238bp sequence which is missing from hg38 but present in T2T-CHM13",
         "omim":[
@@ -6772,7 +6772,7 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"Unknown",
-        "mechanism_detail":"Polyalanine expansion with unknown mechanism [@doi:10.1038/nature05977].",
+        "mechanism_detail":"Polyalanine expansion with unknown mechanism [@pmid:17581576].",
         "source":[],
         "details":"Frequently genotyped as (NGC)*, although locus structure has been reported as (GCC)8(GCT)(GCC) [@pmid:38467784]. 1 patient with VACTERL died at birth with 12 repeats [@pmid:20452998]. 8 patients with X-linked oculo-auriculo-vertebral spectrum (OAVS) had 11 repeats (intermediate allele size); 1 individual in OAVS cohort with 12 repeats; likely phenotypic spectrum [@pmid:32639022].",
         "omim":[
