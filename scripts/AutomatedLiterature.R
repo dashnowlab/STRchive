@@ -4,13 +4,11 @@ library(dplyr)
 library(biomaRt)
 library(rentrez)
 # solution for potential error based on library versions
-#devtools::install_version("dbplyr", version = "2.3.4")
+devtools::install_version("dbplyr", version = "2.3.4")
 #library(dbplyr)
 library(easyPubMed)
 library(stringr)
 library(purrr)
-# solution for potential error based on library versions
-#devtools::install_version("dbplyr", version = "2.3.4")
 library(reticulate)
 use_python("/Users/quinlan/miniforge3/envs/manubot/bin/python", required = TRUE)
 
@@ -131,7 +129,7 @@ perform_pubmed_query <- function(gene_info) {
 
     # Clean up any unnecessary slashes from the query
     query <- gsub("  ", " ", query)  # Remove double spaces
-    #print(query)
+    print(query)
     gene_name <- gsub('"', '', gene_name)
     out_file <- paste0(base_directory, gene_name)
 
