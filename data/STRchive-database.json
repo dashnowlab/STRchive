@@ -134,7 +134,7 @@
         "typ_age_onset_max":10.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Loss of function via transcriptional silencing [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"Loss of function via transcriptional silencing [@pmid:16205714; @pmid:36169768].",
         "source":[],
         "details":"Allele ranges (benign:4-39; pathogenic: >200) inferred from The Human Gene Mutation Database [@genereviews:NBK535148]. Intermediate alleles correspond to a premutation [@pmid:23914978]. Non-canonical motifs include: CGG/CCT/GTG/CAG/CTG3 [@pmid:35245110; @pmid:34111553].",
         "omim":[
@@ -295,14 +295,14 @@
         "pathogenic_max":68.0,
         "ref_copies":34.0,
         "motif_len":3,
-        "age_onset":"Typical: 20-49 [@doi:10.1038/sj.ejhg.5200656], Range: 8 [@pmid:15851746] - 78 [@pmid:19227892].",
+        "age_onset":"Typical: 20-49 [@pmid:11436124], Range: 8 [@pmid:15851746] - 78 [@pmid:19227892].",
         "age_onset_min":8,
         "age_onset_max":78,
         "typ_age_onset_min":20.0,
         "typ_age_onset_max":49.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyglutamine alters protein conformation leading to gain-of-function neurodegeneration [@doi:10.1038/nrg.2017.115; @doi:10.1007/s11604-022-01343-5]. Transcriptional dysregulation, axonal transport disruption, and mitochondrial dysfunction also play causative roles in the neurodegeneration [@doi:10.1016/j.pneurobio.2012.05.007].",
+        "mechanism_detail":"Polyglutamine alters protein conformation leading to gain-of-function neurodegeneration [@pmid:29398703; @pmid:36169768]. Transcriptional dysregulation, axonal transport disruption, and mitochondrial dysfunction also play causative roles in the neurodegeneration [@pmid:22609045].",
         "source":[
             "[@pmid:2062380]."
         ],
@@ -324,7 +324,7 @@
         "mondo":[
             "0010735"
         ],
-        "year":"1991 [@pmid:2062380]; the first triplet disease to be discovered [@doi:10.1001/archneur.61.8.1324]",
+        "year":"1991 [@pmid:2062380]; the first triplet disease to be discovered [@pmid:15313856]",
         "medgen":[
             "333282"
         ],
@@ -396,9 +396,9 @@
         "typ_age_onset_max":0.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@doi:10.1007/s11604-022-01343-5; @pmid:38467784]. Apparent aggregation and mis-localisation of mutan protein, increased with expansion length [@genereviews:NBK51932].",
+        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@pmid:36169768; @pmid:38467784]. Apparent aggregation and mis-localisation of mutan protein, increased with expansion length [@genereviews:NBK51932].",
         "source":[],
-        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; @doi:10.1002/humu.21288].",
+        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@pmid:26029707; @pmid:20506206].",
         "omim":[
             "308350",
             "300419",
@@ -418,7 +418,7 @@
         "mondo":[
             "0010632"
         ],
-        "year":"2002 [@doi:10.1038/ng862]",
+        "year":"2002 [@pmid:11889467]",
         "medgen":[
             "483052"
         ],
@@ -492,9 +492,9 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@doi:10.1007/s11604-022-01343-5; @pmid:38467784]. Apparent aggregation and mis-localisation of mutan protein, increased with expansion length [@genereviews:NBK51932].",
+        "mechanism_detail":"Polyalanine expansions lead to reduction in protein product through unclear mechanism [@pmid:36169768; @pmid:38467784]. Apparent aggregation and mis-localisation of mutan protein, increased with expansion length [@genereviews:NBK51932].",
         "source":[],
-        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@doi:10.1002/mgg3.133; @doi:10.1002/humu.21288].",
+        "details":"ARX expansions [@genereviews:NBK535148] result in a phenotypic spectrum of conditions including Partington syndrome [@omim:309510], Early Infantile Epileptic Encephalopathy [@omim:308350], Agenesis of Corpus Callosum with Abnormal Genitalia [@omim:300004], and X-Linked Lissencephaly with Ambiguous Genitalia [@omim:300215], described in the literature [@pmid:26029707; @pmid:20506206].",
         "omim":[
             "309510"
         ],
@@ -512,7 +512,7 @@
         "mondo":[
             "0010654"
         ],
-        "year":"2002 [@doi:10.1038/ng862]",
+        "year":"2002 [@pmid:11889467]",
         "medgen":[
             "163237"
         ],
@@ -680,7 +680,7 @@
         "novel":"ref",
         "mechanism":"GoF/LoF",
         "mechanism_detail":"Polyglutamine expansion leading to toxic gain of function with eventual misregulation-based loss of function/dominant negative [@genereviews:NBK1184; @pmid:35573049].",
-        "source":["[@doi:10.1038/ng0793-221]."],
+        "source":["[@pmid:8358429]"],
         "details":"Penetrance is dependent on sequence purity in addition to expansion length: pure repeats are pathogenic at 39 repeats [@pmid:37906407], while CAT interruptions [@pmid:35245110] can lead to reduced penetrance at comparable lengths [@genereviews:NBK1184]. Regardless, intermediate alleles are considered premutations which may lead to disease upon transmission [@genereviews:NBK1184].",
         "omim":[
             "164400"
@@ -699,7 +699,7 @@
         "mondo":[
             "0008119"
         ],
-        "year":"1993 [@doi:10.1038/ng0793-221]",
+        "year":"1993 [@pmid:8358429]",
         "medgen":[
             "155703"
         ],
@@ -776,7 +776,7 @@
         "novel":"ref",
         "mechanism":"GoF",
         "mechanism_detail":"Transdominant mechanism theorized [@pmid:38467784].",
-        "source":"[@doi:10.1038/79911]",
+        "source":"[@pmid:11017075]",
         "details":"Unaffected individuals are usually (82%) compound heterozygotes in the benign range [@genereviews:NBK1175]. Intermediate alleles show reduced penetrance, and exact distinction between intermediate and the lower end of the pathogenic range is unclear [@genereviews:NBK1175]. Expansions are frequently interrupted by ATCCT, ATCCC, ATTCC, ATTTCT, ATATTCT, ATTCTTCT, or ATTCTTCT; interruptions of ATTGT, TTTCT, ATTTTCT, ATTCTCT have been noted [@pmid:36199580] as has the interruption ATGCT [@pmid:19234597]. The ATCCT interruption motif is associated with a higher prevalence of epileptic seizures [@pmid:24318420].",
         "omim":[
             "603516"
@@ -795,7 +795,7 @@
         "mondo":[
             "0011330"
         ],
-        "year":"2000 [@doi:10.1038/79911]",
+        "year":"2000 [@pmid:8358429]",
         "medgen":[
             "369786"
         ],
@@ -875,7 +875,7 @@
         "mechanism":"GoF/LoF",
         "mechanism_detail":"Polyglutamine cytoplasmic aggregates leading to cellular apoptosis; RAN translation implicated [@genereviews:NBK1275].",
         "source":[],
-        "details":"Full penetrance of single alleles occurs at ~35 repeats [@genereviews:NBK1275; @pmid:37906407] and pathogenic expansions have been documented as large as 500 repeats [@doi:10.1002/ajmg.10467]. 33-34 length repeats are associated with reduced penetrance [@genereviews:NBK1275]. Homozygous 31 repeat alleles may lead to disease, while a single 30-32 repeat is associated with increased ALS risk and 33 [@genereviews:NBK1275]. Interruptions observed include CAA, CGG, CGC, which appear to stabilize the allele in transmission [@genereviews:NBK1275]. May confer risk for amyotrophic lateral sclerosis [@pmid:32954321].",
+        "details":"Full penetrance of single alleles occurs at ~35 repeats [@genereviews:NBK1275; @pmid:37906407] and pathogenic expansions have been documented as large as 500 repeats [@pmid:12116207]. 33-34 length repeats are associated with reduced penetrance [@genereviews:NBK1275]. Homozygous 31 repeat alleles may lead to disease, while a single 30-32 repeat is associated with increased ALS risk and 33 [@genereviews:NBK1275]. Interruptions observed include CAA, CGG, CGC, which appear to stabilize the allele in transmission [@genereviews:NBK1275]. May confer risk for amyotrophic lateral sclerosis [@pmid:32954321].",
         "omim":[
             "183090"
         ],
@@ -970,7 +970,7 @@
         "typ_age_onset_max":49.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyglutamine expansion leading to gain of function; aggregated and mislocalized proteins in neurons [@doi:10.1007/s11604-022-01343-5; @genereviews:NBK1196].",
+        "mechanism_detail":"Polyglutamine expansion leading to gain of function; aggregated and mislocalized proteins in neurons [@pmid:36169768; @genereviews:NBK1196].",
         "source":[],
         "details":"Benign alleles range from 11-44 repeats [@pmid:37906407], with intermediate alleles (45-59) associated with incomplete penetrance and non-classic phenotypes [@genereviews:NBK1196]. The threshold between incomplete and full penetrance is unclear, but presumed to occur at ~60 repeats [@genereviews:NBK1196; @pmid:37906407]. The interruption CAA has been observed [@pmid:35245110]; AAG is present in hg38 reference sequence.",
         "omim":[
@@ -2238,7 +2238,7 @@
         "typ_age_onset_max":30.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"RNA gain-of-function: RNA gelation leading to misregulation of alternative splicing [@doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"RNA gain-of-function: RNA gelation leading to misregulation of alternative splicing [@pmid:36169768].",
         "source":[],
         "details":"Intermediate alleles (35-49) associated with premutation [@genereviews:NBK1165]. 3%-8% of DM1 expansions contain variant repeats such as CCG and CGG, associated with later onset and milder phenotype [@pmid:32851192]. In another study, interruptions of the CTG repeat with CCG, GGC, CTC or CAG motifs are estimated to occur in 3-11% of DM1 patients [@pmid:35741732].",
         "omim":[
@@ -2516,7 +2516,7 @@
         "typ_age_onset_max":65.0,
         "novel":"ref",
         "mechanism":"LoF/GoF",
-        "mechanism_detail":"Loss of function via transcriptional silencing in FXS, RNA gain of function in FXTAS/FXPOI [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"Loss of function via transcriptional silencing in FXS, RNA gain of function in FXTAS/FXPOI [@pmid:16205714; @pmid:36169768].",
         "source":[],
         "details":"Intermediate or 'gray zone' occur at 45-54 alleles and may be unstable enough to expand into the premutation range, as well as associate with parkinsonism [@doi:10.1002/mds.28086; @genereviews:NBK1384]. FXTAS/POI occurs at 55-200 repeats, FXS >200, late onset; AGG and CTG interruptions documented [@genereviews:NBK1384; @pmid:29868108].",
         "omim":[
@@ -2712,10 +2712,10 @@
         "typ_age_onset_max":15.0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Loss of function via transcriptional silencing [@doi:10.1038/nrg1691; @doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"Loss of function via transcriptional silencing [@pmid:16205714; @pmid:36169768].",
         "source":[
         ],
-        "details":"96% of FA patients have biallelic GAA expansions in intron 1 (compared to compound heterozygous with another mutation type), in which the reference allele is conventionally 5-33 repeats [@genereviews:NBK1281]. Intermediate alleles (34-55) are associated with premutations, but may lead to disease as exact pathogenicity/penetrance thresholds have not been demarcated [@genereviews:NBK1281]. The expanded repeats can interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences, leading to differential phenotypes [@pmid:11748752]. Allele size is correlated with disease severity and inversely correlated to age of onset, and expansions can reach 1700 repeats [@doi:10.1056/NEJM19961017335160].",
+        "details":"96% of FA patients have biallelic GAA expansions in intron 1 (compared to compound heterozygous with another mutation type), in which the reference allele is conventionally 5-33 repeats [@genereviews:NBK1281]. Intermediate alleles (34-55) are associated with premutations, but may lead to disease as exact pathogenicity/penetrance thresholds have not been demarcated [@genereviews:NBK1281]. The expanded repeats can interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences, leading to differential phenotypes [@pmid:11748752]. Allele size is correlated with disease severity and inversely correlated to age of onset, and expansions can reach 1700 repeats [@pmid:8815938].",
         "omim":[
             "229300"
         ],
@@ -2807,7 +2807,7 @@
         "typ_age_onset_max":34.0,
         "novel":"ref",
         "mechanism":"LoF/GoF?",
-        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:618940], still unknown [@doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:618940], still unknown [@pmid:36169768].",
         "source":[],
         "details":"Benign repeats range from absent [@gnomad:GIPC1] to 32 [@genereviews:NBK535148], while pathogenic alleles range from 73-164 repeats [@pmid:38876750; @genereviews:NBK535148]. Intermediate alleles have undetermined significance but may represent a phenotypic spectrum [@pmid:32413282]. Interruptions documented: CGA [@pmid:35245110]. Interruptions proposed but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784].",
         "omim":[
@@ -3274,9 +3274,9 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyalanine expansion leading to GoF [@doi:10.1038/s41576-024-00696-z]",
+        "mechanism_detail":"Polyalanine expansion leading to GoF [@pmid:38467784]",
         "source":[],
-        "details":"Benign alleles are highly conserved to be 15 repeats, with disease observed in individuals with 22-23 repeats [@pmid:8614804; @doi:10.1016/j.gene.2012.02.046] as well as in individuals with 8-11 repeats [@genereviews:NBK535148].",
+        "details":"Benign alleles are highly conserved to be 15 repeats, with disease observed in individuals with 22-23 repeats [@pmid:8614804; @pmid:22406499] as well as in individuals with 8-11 repeats [@genereviews:NBK535148].",
         "omim":[
             "186000"
         ],
@@ -3361,7 +3361,7 @@
         "pathogenic_max":250.0,
         "ref_copies":21.3,
         "motif_len":3,
-        "age_onset":"Typical: 35-44 [@genereviews:NBK1305]; Range: 1-85 [@doi:10.1002/ajmg.a.63894; @pmid:21171977].",
+        "age_onset":"Typical: 35-44 [@genereviews:NBK1305]; Range: 1-85 [@pmid:39441074; @pmid:21171977].",
         "age_onset_min":1,
         "age_onset_max":85,
         "typ_age_onset_min":35.0,
@@ -3560,9 +3560,9 @@
         "typ_age_onset_max":51.0,
         "novel":"ref",
         "mechanism":"GoF?",
-        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@doi:10.1038/s41576-024-00696-z].",
+        "mechanism_detail":"RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@pmid:38467784].",
         "source":[],
-        "details":"Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@doi:10.1136/jnnp-2024-333403]. Interruptions seen: ACG, CCA [@pmid:35245110].",
+        "details":"Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@pmid:39013564]. Interruptions seen: ACG, CCA [@pmid:35245110].",
         "omim":[
             "164310"
         ],
@@ -3823,28 +3823,28 @@
         "pathogenic_max":200.0,
         "ref_copies":null,
         "motif_len":5,
-        "age_onset":"Single repeat expansion case had onset at 13 months, while NAXE-related mitochondrial encephalopathy more generally has predominately infantile onset, extending to 20y or older [@doi:10.1038/s41525-024-00429-5].",
+        "age_onset":"Single repeat expansion case had onset at 13 months, while NAXE-related mitochondrial encephalopathy more generally has predominately infantile onset, extending to 20y or older [@pmid:39455596].",
         "age_onset_min":1,
         "age_onset_max":1,
         "typ_age_onset_min":0,
         "typ_age_onset_max":0,
         "novel":"ref",
         "mechanism":"LoF",
-        "mechanism_detail":"Reduced NAXE expression from expansion in promoter; hypermethylation was detected at and downstream of the repeat sequence in the proband as well as the maternal copy of the expanded allele, which was not present in the maternal normal range allele nor in the controls [@doi:10.1038/s41525-024-00429-5]",
+        "mechanism_detail":"Reduced NAXE expression from expansion in promoter; hypermethylation was detected at and downstream of the repeat sequence in the proband as well as the maternal copy of the expanded allele, which was not present in the maternal normal range allele nor in the controls [@pmid:39455596]",
         "source":[],
-        "details":"Benign range (2-7) alleles established by 484 control alleles and validated with orthogonal databases, while single proband had expansion of ~200 repeats inherited from mother via uniparental disomy [@doi:10.1038/s41525-024-00429-5]. While the repeat expansion is newly reported, other variants in the NAXE gene have previously been associated with mitochondrial encephalopathy.",
+        "details":"Benign range (2-7) alleles established by 484 control alleles and validated with orthogonal databases, while single proband had expansion of ~200 repeats inherited from mother via uniparental disomy [@pmid:39455596]. While the repeat expansion is newly reported, other variants in the NAXE gene have previously been associated with mitochondrial encephalopathy.",
         "omim":[
                "617186"
            ],
         "prevalence":null,
-        "prevalence_details":"Single proband found in Japanese cohort [@doi:10.1038/s41525-024-00429-5].",
+        "prevalence_details":"Single proband found in Japanese cohort [@pmid:39455596].",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
         "mondo":[
                "0020781"
            ],
-        "year":"2024 [@doi:10.1038/s41525-024-00429-5]",
+        "year":"2024 [@pmid:39455596]",
         "medgen":[
                "934642"
            ],
@@ -3865,7 +3865,7 @@
         "tr_gnomad":[
                "TR7952"
            ],
-        "disease_description":"Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@doi:10.1038/s41525-024-00429-5].",
+        "disease_description":"Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@pmid:39455596].",
         "locus_tags":[],
         "disease_tags":[]
       },
@@ -4106,9 +4106,9 @@
         "typ_age_onset_max":70.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyglutamine expansion; may relate to methylation or RNA pathogenicity [@omim:603472; @doi:10.1007/s11604-022-01343-5); @pmid:38467784].",
+        "mechanism_detail":"Polyglutamine expansion; may relate to methylation or RNA pathogenicity [@omim:603472; @pmid:36169768; @pmid:38467784].",
         "source":[],
-        "details":"Benign alleles are less than 38 repeats, while pathogenic alleles contain 66+ repeats [@genereviews:NBK535148]. Intermediate alleles may be associated with a phenotypic spectrum, and even pathogenic cases can have variable phenotype [@pmid:PMC11110025; @doi:10.1097/MD.0000000000040279]: NOTCH2NLC expansions have been linked Alzheimer's disease and Parkinson's disease, leading to a potential role in NIID-related disorders [@pmid:31178126]. Age of onset inversely related to allele size [@pmid:38377026]. Motif variation in controls: (AGG)(CGG)n(AGG)0-3(CGG)0-2. GGA and AGC interruptions may influence phenotype [@pmid:34718964]. Interruptions documented: GGA, GGG [@pmid:35245110]; ACCGAGAAGATGCCCGCCCTGC interruption proposed but not confirmed [@pmid:38467784]. Detection may be challenging due to parology between genes: C253572.1, NOTCH2, NOTCH2NL, NBPF14, NBPF19.",
+        "details":"Benign alleles are less than 38 repeats, while pathogenic alleles contain 66+ repeats [@genereviews:NBK535148]. Intermediate alleles may be associated with a phenotypic spectrum, and even pathogenic cases can have variable phenotype [@pmid:39055960; @pmid:39496005]: NOTCH2NLC expansions have been linked Alzheimer's disease and Parkinson's disease, leading to a potential role in NIID-related disorders [@pmid:31178126]. Age of onset inversely related to allele size [@pmid:38377026]. Motif variation in controls: (AGG)(CGG)n(AGG)0-3(CGG)0-2. GGA and AGC interruptions may influence phenotype [@pmid:34718964]. Interruptions documented: GGA, GGG [@pmid:35245110]; ACCGAGAAGATGCCCGCCCTGC interruption proposed but not confirmed [@pmid:38467784]. Detection may be challenging due to parology between genes: C253572.1, NOTCH2, NOTCH2NL, NBPF14, NBPF19.",
         "omim":[
             "603472"
         ],
@@ -4196,9 +4196,9 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"GoF?",
-        "mechanism_detail":"RNA mediated toxicity hypothesized, overall mechanism unknown [@omim:618637; @doi:10.1007/s11604-022-01343-5].",
+        "mechanism_detail":"RNA mediated toxicity hypothesized, overall mechanism unknown [@omim:618637; @pmid:36169768].",
         "source":[],
-        "details":"Benign range (3-16 repeats) established in 1000 controls, studied alongside pathogenic probands of up to 700 repeats [@pmid:31332380]. Pathogenicity occurs at repeats as short as 161 motifs [@doi:10.1016/j.jgg.2023.12.009; @doi:10.1136/jmg-2023-109345], while intermediate alleles may correlate to milder phenotypes [@doi:10.1016/j.jgg.2023.12.009]. Alt transcript in opposite direction: LOC642361.",
+        "details":"Benign range (3-16 repeats) established in 1000 controls, studied alongside pathogenic probands of up to 700 repeats [@pmid:31332380]. Pathogenicity occurs at repeats as short as 161 motifs [@pmid:38159879; @pmid:37923380], while intermediate alleles may correlate to milder phenotypes [@pmid:38159879]. Alt transcript in opposite direction: LOC642361.",
         "omim":[
             "618637"
         ],
@@ -4379,7 +4379,7 @@
         "typ_age_onset_max":2.0,
         "novel":"ref",
         "mechanism":"LoF/GoF",
-        "mechanism_detail":"Polyalanine expansion leading to loss or gain of function, dependent on altered protein product [@doi:10.1038/s41576-024-00696-z; @genereviews:NBK1427]. Correlation between length and reduced transcriptional activity [@pmid:15888479].",
+        "mechanism_detail":"Polyalanine expansion leading to loss or gain of function, dependent on altered protein product [@pmid:38467784; @genereviews:NBK1427]. Correlation between length and reduced transcriptional activity [@pmid:15888479].",
         "source":[],
         "details":"Alleles of 24 repeats (and sometimes 25 repeats) correspond to delayed disease onset and/or milder phenotype; alleles above benign range (9-20 repeats) and below the pathogenic range (26-33 repeats) have uncertain significance [@genereviews:NBK1427].",
         "omim":[
@@ -5020,7 +5020,7 @@
         "typ_age_onset_max":null,
         "novel":"novel",
         "mechanism":"GoF?",
-        "mechanism_detail":"RNA toxicity hypothesized [@doi:10.1038/s41588-018-0067-2].",
+        "mechanism_detail":"RNA toxicity hypothesized [@pmid:29507423].",
         "source":[],
         "details":"The locus structure is (TTTTA)exp(TTTCA)exp(TTTTA)n, where only the TTTCA is specific to affected individuals as a pathogenic insertion [@pmid:29507423; @pmid:30351492]. Pathogenic expansions range from 60 to thousands of repeats [@pmid:29507423; @pmid:30351492]. Interruptions seen: TATTA, TTTTTA [@pmid:35245110].",
         "omim":[
@@ -5259,7 +5259,7 @@
         "typ_age_onset_max":30.0,
         "novel":"ref",
         "mechanism":"GoF",
-        "mechanism_detail":"Polyglutamine expansion leading to RNA-mediated gain-of-function mechanism [@doi:10.1038/s41576-024-00696-z].",
+        "mechanism_detail":"Polyglutamine expansion leading to RNA-mediated gain-of-function mechanism [@pmid:38467784].",
         "source":[],
         "details":"Benign alleles have been documented to have 6-16 repeats [@pmid:37864208], while pathogenic repeats range from 120 to 197 repeats; there is no apparent relationship between allele size and age of onset [@pmid:37864208; @pmid:35148830]. Intermediate alleles amy be associated with incomplete penetrance, or milder phenotypes [@pmid:35148830]. AGG and TGG interruptions observed [@pmid:35148830].",
         "omim":[],
@@ -6211,7 +6211,7 @@
         "typ_age_onset_max":null,
         "novel":"novel",
         "mechanism":"GoF?",
-        "mechanism_detail":"RNA toxicity hypothesized [@doi:10.1038/s41588-018-0067-2; @pmid:38467784].",
+        "mechanism_detail":"RNA toxicity hypothesized [@pmid:29507423; @pmid:38467784].",
         "source":[],
         "details":"Novel, reported pathogenic alleles: (TTTTA)22 (TTTCA)exp (TTTTA)exp, but only the TTTCA is specific to affected individuals (size: 1100 repeats). Non-pathogenic reference TTTTA repeat was expanded in nine healthy subjects 40-120 repeats and in two individuals was potentially even longer [@pmid:29507423].",
         "omim":[
@@ -6493,7 +6493,7 @@
         "typ_age_onset_max":null,
         "novel":"novel",
         "mechanism":"GoF?",
-        "mechanism_detail":"RNA toxicity hypothesized [@doi:10.1093/brain/awz267].",
+        "mechanism_detail":"RNA toxicity hypothesized [@pmid:31539032].",
         "source":[],
         "details":"Novel insertion of ~1000 repeats observed to cause disease [@pmid:31539032].",
         "omim":[
@@ -6772,7 +6772,7 @@
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":"Unknown",
-        "mechanism_detail":"Polyalanine expansion with unknown mechanism [@doi:doi.org/10.1038/nature05977].",
+        "mechanism_detail":"Polyalanine expansion with unknown mechanism [@doi:10.1038/nature05977].",
         "source":[],
         "details":"Frequently genotyped as (NGC)*, although locus structure has been reported as (GCC)8(GCT)(GCC) [@pmid:38467784]. 1 patient with VACTERL died at birth with 12 repeats [@pmid:20452998]. 8 patients with X-linked oculo-auriculo-vertebral spectrum (OAVS) had 11 repeats (intermediate allele size); 1 individual in OAVS cohort with 12 repeats; likely phenotypic spectrum [@pmid:32639022].",
         "omim":[
