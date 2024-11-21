@@ -88,8 +88,8 @@ h4 {
   font-weight: var(--bold);
 }
 
-:is(h1, h2, h3, h4) svg {
-  opacity: 0.25;
+:is(h1, h2, h3, h4) > svg:first-child {
+  opacity: 0.5;
 }
 
 h1 {

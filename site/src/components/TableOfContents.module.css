@@ -1,0 +1,56 @@
+.aside {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.aside svg {
+  opacity: 0.5;
+}
+
+.table {
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  max-width: 300px;
+  overflow: hidden;
+  gap: 10px;
+  border-radius: 0 0 var(--rounded) 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.button {
+  justify-content: space-between;
+  border-radius: 0;
+  background: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 7.5px 15px;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+.link:hover {
+  background: var(--light-gray);
+  color: var(--primary);
+}
+
+.link[data-active] {
+  font-weight: var(--bold);
+}

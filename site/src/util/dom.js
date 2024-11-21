@@ -18,3 +18,9 @@ export const fitViewBox = (element, padding = 0) => {
   element.setAttribute("viewBox", [x, y, width, height].join(" "));
   return { x, y, width, height };
 };
+
+/** find index of first element "in view". model behavior off of wikiwand.com. */
+export const firstInView = (elements) => {
+  for (const element of elements.reverse())
+    if (element.getBoundingClientRect()?.top < 100) return element;
+};

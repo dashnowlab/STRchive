@@ -1,9 +1,11 @@
 ---
-import { FaAngleDown, FaGithub } from "react-icons/fa6";
+import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
+import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
+import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
 import Table from "./_Table";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
@@ -15,20 +17,15 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
 ---
 
 <Layout title="Loci">
-  <section>
-    <h1><LiaBarcodeSolid />Loci</h1>
+  <TableOfContents client:only="react" />
 
-    Jump to:
-    <Link to="#downloads" className="button-secondary"
-      >Downloads<FaAngleDown /></Link
-    >
-    <Link to="#table" className="button-secondary">Table<FaAngleDown /></Link>
-    <Link to="#plots" className="button-secondary">Plots<FaAngleDown /></Link>
+  <section>
+    <Heading level={1}><LiaBarcodeSolid />Loci</Heading>
   </section>
 
   <!-- downloads -->
   <section>
-    <h2 id="downloads">Downloads</h2>
+    <Heading level={2}><FaArrowDown />Downloads</Heading>
 
     <Link
       to="https://github.com/dashnowlab/STRchive/tree/main/data"
@@ -53,7 +50,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
 
   <!-- table -->
   <section>
-    <h2 id="table">Table</h2>
+    <Heading level={2}><FaTable />Table</Heading>
 
     <p class="center">
       Table of all tandem repeat loci associated with Mendelian disease.
@@ -64,13 +61,13 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
 
   <!-- plots -->
   <section class="full">
-    <h2 id="plots">Plots</h2>
+    <Heading level={2}><FaChartLine />Plots</Heading>
 
     <p class="center">High-level, visual overview of loci.</p>
 
     <div class="charts">
       <div>
-        <h3>Pathogenic Size Range</h3>
+        <Heading level={3}>Pathogenic Size Range</Heading>
         <PlotlyChart
           client:only="react"
           data={pathSize.x.data}
@@ -78,7 +75,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
         />
       </div>
       <div>
-        <h3>Age of Onset</h3>
+        <Heading level={3}>Age of Onset</Heading>
         <PlotlyChart
           client:only="react"
           data={ageOnset.x.data}

@@ -3,9 +3,11 @@ import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import { startCase } from "lodash-es";
+import Heading from "@/components/Heading.astro";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
+import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
 import AdditionalLiterature from "./_AdditionalLiterature";
 import Citation from "./_Citation";
@@ -52,9 +54,11 @@ const additionalLiterature =
 ---
 
 <Layout title={niceId}>
+  <TableOfContents client:only="react" />
+
   <!-- overview -->
   <section>
-    <h1><LiaBarcodeSolid />{niceId}</h1>
+    <Heading level={1}><LiaBarcodeSolid />{niceId}</Heading>
 
     {
       !!d.locus_tags.length && (
@@ -142,7 +146,7 @@ const additionalLiterature =
 
   <!-- disease info -->
   <section>
-    <h2>Disease</h2>
+    <Heading level={2}>Disease</Heading>
 
     <div class="boxes">
       <div class="box">
@@ -238,7 +242,7 @@ const additionalLiterature =
 
   <!-- locus info -->
   <section>
-    <h2>Locus</h2>
+    <Heading level={2}>Locus</Heading>
 
     <div class="boxes">
       {
@@ -318,7 +322,7 @@ const additionalLiterature =
     </div>
 
     <!-- allele info -->
-    <h2>Alleles</h2>
+    <Heading level={2}>Alleles</Heading>
 
     <div class="allele-list">
       {
@@ -421,7 +425,7 @@ const additionalLiterature =
   {
     gnomad[id] && (
       <section>
-        <h2>gnomAD</h2>
+        <Heading level={2}>gnomAD</Heading>
 
         <Gnomad client:only="react" title={d.gene} data={gnomad[id]} />
       </section>
@@ -432,7 +436,7 @@ const additionalLiterature =
   {
     !!references.length && (
       <section>
-        <h2>References</h2>
+        <Heading level={2}>References</Heading>
 
         <p class="center">
           Direct supporting references for info on this page.
@@ -451,7 +455,7 @@ const additionalLiterature =
   {
     !!additionalLiterature.length && (
       <section>
-        <h2>Additional Literature</h2>
+        <Heading level={2}>Additional Literature</Heading>
 
         <p class="center">Additional literature related to this locus.</p>
 

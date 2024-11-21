@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa6";
 import { LuBadgeInfo } from "react-icons/lu";
 import { kebabCase } from "lodash-es";
+import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import Layout from "@/layouts/Layout.astro";
 import { team } from "./_team";
@@ -9,11 +10,11 @@ import { team } from "./_team";
 
 <Layout title="About">
   <section>
-    <h1><LuBadgeInfo />About</h1>
+    <Heading level={1}><LuBadgeInfo />About</Heading>
   </section>
 
   <section>
-    <h2 id="contact">Contact</h2>
+    <Heading level={2}>Contact</Heading>
 
     <p class="center">
       The best way to get in touch about STRchive is to start a discussion on
@@ -31,7 +32,8 @@ import { team } from "./_team";
   </section>
 
   <section>
-    <h2 id="cite">Cite</h2>
+    <Heading level={2}>Cite</Heading>
+
     <blockquote>
       <span>
         Hiatt, L., Weisburd, B., Dolzhenko, E., VanNoy, G.E., Kurtas, E.N.,
@@ -50,7 +52,7 @@ import { team } from "./_team";
   </section>
 
   <section>
-    <h2 id="contribute">Contribute</h2>
+    <Heading level={2}>Contribute</Heading>
 
     <p>
       STRchive welcomes community contributions. An accurate and up to date
@@ -67,7 +69,7 @@ import { team } from "./_team";
   </section>
 
   <section>
-    <h2 id="team">Team</h2>
+    <Heading level={2}>Team</Heading>
 
     <div class="members">
       {
