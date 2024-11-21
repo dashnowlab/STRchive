@@ -1,0 +1,94 @@
+---
+import Link from "@/components/Link";
+---
+
+<footer>
+  <div class="links">
+    <Link to="/about#contact">Contact</Link>
+    <Link to="/about#cite">Cite</Link>
+    <Link to="/about#contribute">Contribute</Link>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="terms">
+    <strong>Research use only.</strong>
+    The content on and linked from this website does not constitute professional
+    medical guidance.
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="license">
+    <span>Licensed under</span>
+    <Link to="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</Link>
+    <Link to="https://creativecommons.org/licenses/by/4.0/"
+      ><img
+        class="badge"
+        src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"
+        alt="CC BY 4.0"
+      /></Link
+    >
+  </div>
+</footer>
+
+<style>
+  footer {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: 1fr 2px 2fr 2px 1fr;
+    align-items: center;
+    padding: 40px max(40px, (100% - var(--content)) / 2);
+    gap: 20px 20px;
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+  }
+
+  footer a {
+    color: var(--white);
+  }
+
+  footer a:hover {
+    color: var(--primary);
+  }
+
+  .divider {
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    opacity: 0.25;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .links > * {
+    text-decoration: none;
+  }
+
+  .license {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .badge {
+    height: 30px;
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      grid-template-columns: 1fr;
+    }
+
+    .divider {
+      display: none;
+    }
+  }
+</style>

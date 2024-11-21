@@ -1,0 +1,45 @@
+---
+import { FaLink } from "react-icons/fa6";
+import { kebabCase } from "lodash-es";
+import { stripHtml } from "string-strip-html";
+
+let { level, id = "" } = Astro.props;
+if (!id) id = stripHtml(await Astro.slots.render("default")).result;
+id = kebabCase(id);
+const Component = `h${level}`;
+---
+
+<Component id={id} class="heading">
+  <slot />
+  {
+    id && (
+      <a href={"#" + id} class="anchor" aria-label="Heading link">
+        <FaLink />
+      </a>
+    )
+  }
+</Component>
+
+<style>
+  .anchor {
+    width: 0;
+    margin-left: -20px;
+    color: var(--primary);
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity var(--fast);
+  }
+
+  .anchor svg {
+    position: relative;
+    top: -0.1em;
+    left: 20px;
+    height: 1em;
+    vertical-align: middle;
+  }
+
+  .heading:hover .anchor,
+  .anchor:focus {
+    opacity: 1;
+  }
+</style>
