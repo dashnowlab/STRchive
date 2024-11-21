@@ -1,0 +1,109 @@
+---
+import { FaGithub } from "react-icons/fa6";
+import Logo from "@/assets/logo.svg?react";
+import Link from "@/components/Link";
+
+const path = Astro.url.pathname;
+
+const links = [
+  { to: "/", name: "Home" },
+  { to: "/loci", name: "Loci" },
+  { to: "/resources", name: "Resources" },
+  { to: "/about", name: "About" },
+];
+---
+
+<header>
+  <nav>
+    {
+      path !== "/" && (
+        <Link to="/" className="logo-link" aria-label="Home">
+          <Logo className="logo" />
+        </Link>
+      )
+    }
+    {
+      links.map(({ to, name }) => (
+        <Link
+          to={to}
+          className={["nav-link", to === path ? "active" : ""].join(" ")}
+          aria-label="GitHub"
+        >
+          {name}
+        </Link>
+      ))
+    }
+
+    <div class="spacer"></div>
+
+    <Link
+      to="https://github.com/dashnowlab/STRchive"
+      className="nav-link"
+      aria-label="GitHub"
+    >
+      <FaGithub className="big-icon" />
+    </Link>
+  </nav>
+</header>
+
+<style>
+  header {
+    padding: 30px max(40px, (100% - var(--content)) / 2);
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.1rem;
+  }
+
+  header a {
+    display: inline-flex;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  header a:hover {
+    color: var(--primary);
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-link {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 5px;
+  }
+
+  .nav-link::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    scale: 0 1;
+    background: currentColor;
+    content: "";
+    transition: scale var(--fast);
+  }
+
+  .nav-link.active::after,
+  .nav-link:hover::after {
+    scale: 1 1;
+  }
+</style>

@@ -1,0 +1,21 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+}

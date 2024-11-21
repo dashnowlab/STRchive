@@ -1,0 +1,647 @@
+---
+import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
+import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
+import { TbDna2, TbVirus } from "react-icons/tb";
+import { startCase } from "lodash-es";
+import Heading from "@/components/Heading.astro";
+import LineChart from "@/components/LineChart";
+import Link from "@/components/Link";
+import ShowMoreLines from "@/components/ShowMoreLines";
+import TableOfContents from "@/components/TableOfContents";
+import Layout from "@/layouts/Layout.astro";
+import AdditionalLiterature from "./_AdditionalLiterature";
+import Citation from "./_Citation";
+import Cited from "./_Cited";
+import { deriveDatum } from "./_derived";
+import Gnomad from "./_Gnomad";
+import { getIdentifiers } from "./_identifiers";
+import { getInheritance } from "./_inheritance";
+import { tagOptions } from "./_tags";
+import gnomad from "../../../../data/plots/gnomad.json";
+import citations from "../../../../data/STRchive-citations.json";
+import data from "../../../../data/STRchive-database.json";
+
+/** generate pages for each datum, paths based on id */
+export const getStaticPaths = async () =>
+  data.map(({ id }) => ({ params: { id } }));
+
+/** current page loci id in url */
+const { id } = Astro.params;
+
+/** look up full data entry from id */
+const d = deriveDatum(data.find((d) => d.id === id));
+
+/** nice looking id, for labels */
+const niceId = id.replace("_", " ");
+
+/** same genes, different locus */
+const genes = data.filter(({ gene }) => gene === d.gene);
+
+/** look up full citations details for references  */
+const references =
+  d.references?.map((id, index) => ({
+    id,
+    number: index + 1,
+    ...(citations[id] ?? {}),
+  })) ?? [];
+
+/** look up full citations details for additional literature */
+const additionalLiterature =
+  d.additional_literature?.map((id) => ({
+    id,
+    ...(citations[id] ?? {}),
+  })) ?? [];
+---
+
+<Layout title={niceId}>
+  <TableOfContents client:only="react" />
+
+  <!-- overview -->
+  <section>
+    <Heading level={1}><LiaBarcodeSolid />{niceId}</Heading>
+
+    {
+      !!d.locus_tags.length && (
+        <div class="tags">
+          {d.locus_tags?.map((tag) => {
+            const option = tagOptions.find((t) => t.value === tag);
+            if (!option) return tag;
+            const { Icon, color } = option;
+            return (
+              <div
+                class="tag"
+                style={{
+                  background: `color-mix(in srgb, white, 25% ${color})`,
+                }}
+                data-tooltip={option.tooltip}
+              >
+                <Icon style={{ color }} />
+                {startCase(tag)}
+              </div>
+            );
+          })}
+        </div>
+      )
+    }
+
+    <div class="boxes">
+      <div class="box">
+        <div><TbVirus />Disease ID</div>
+        <div>{d.disease_id}</div>
+      </div>
+
+      <div class="box">
+        <div><TbDna2 />Gene ID</div>
+        <div>{d.gene}</div>
+      </div>
+    </div>
+
+    {
+      genes.length > 1 && (
+        <div class="genes">
+          <div class="heading">
+            <TbDna2 />
+            Other gene loci ({genes.length.toLocaleString()})
+          </div>
+          <div class="gene-list">
+            {genes.map((gene) =>
+              id === gene.id ? (
+                <span>{gene.id}</span>
+              ) : (
+                <Link to={`/loci/${gene.id}`}>{gene.id}</Link>
+              ),
+            )}
+          </div>
+        </div>
+      )
+    }
+
+    <div class="identifiers">
+      {
+        getIdentifiers(d).map(({ name, Icon, identifiers }) => (
+          <div>
+            <div class="heading">
+              <Icon />
+              <span>{name}</span>
+            </div>
+            <div class="identifier-list">
+              {identifiers.map(({ name, label, link, tooltip, info }) => (
+                <>
+                  <Link to={info} data-tooltip={tooltip} noIcon>
+                    {name}
+                  </Link>
+                  <div class="identifier-links">
+                    {label.map((label) => (
+                      <Link to={link}>{label}</Link>
+                    ))}
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- disease info -->
+  <section>
+    <Heading level={2}>Disease</Heading>
+
+    <div class="boxes">
+      <div class="box">
+        <div>Name</div>
+        <div>{d.disease}</div>
+      </div>
+
+      <div class="box">
+        <div>Inheritance</div>
+        {
+          (d.inheritance.length ? d.inheritance : [""]).map((inheritance) => (
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+              {getInheritance(inheritance) || "-"}
+            </Link>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="boxes">
+      {
+        d.disease_description && (
+          <div class="box wide">
+            <div>Description</div>
+            <ShowMoreLines client:load lines={3}>
+              <Cited
+                client:load
+                text={d.disease_description}
+                citations={references}
+              />
+            </ShowMoreLines>
+          </div>
+        )
+      }
+
+      {
+        (d.prevalence || d.prevalence_details) && (
+          <div class="box wide">
+            <div>Prevalence</div>
+            {d.prevalence && (
+              <div class="fraction">
+                <span>{d.prevalence[0]}</span>
+                <LiaSlashSolid />
+                <span>{d.prevalence[1]}</span>
+              </div>
+            )}
+            {d.prevalence_details && (
+              <ShowMoreLines client:load lines={1}>
+                <Cited
+                  client:load
+                  text={d.prevalence_details}
+                  citations={references}
+                />
+              </ShowMoreLines>
+            )}
+          </div>
+        )
+      }
+    </div>
+
+    <div class="boxes">
+      <LineChart
+        client:load
+        rows={[
+          {
+            name: "Age of Onset",
+            color: "var(--primary)",
+            values: [d.age_onset_min, d.age_onset_max],
+          },
+          {
+            name: "(Typical)",
+            color: "var(--secondary)",
+            values: [d.typ_age_onset_min, d.typ_age_onset_max],
+          },
+        ]}
+        min={0}
+        max={90}
+        xAxis="Years"
+      />
+
+      {
+        d.age_onset && (
+          <div class="box wide">
+            <div>Age of Onset Details</div>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load text={d.age_onset} citations={references} />
+            </ShowMoreLines>
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <!-- locus info -->
+  <section>
+    <Heading level={2}>Locus</Heading>
+
+    <div class="boxes">
+      {
+        [
+          { assembly: "hg19", db: "hg19" },
+          { assembly: "hg38", db: "hg38" },
+          { assembly: "t2t", db: "hub_3671779_hs1" },
+        ].map(({ assembly, db }) => (
+          <div class="box">
+            <div>{assembly}</div>
+            <Link
+              to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${d[`position_${assembly}`]}`}
+            >
+              {d[`position_${assembly}`]}
+            </Link>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="boxes">
+      {
+        d.details && (
+          <div class="box wide">
+            <div>Details</div>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load text={d.details} citations={references} />
+            </ShowMoreLines>
+          </div>
+        )
+      }
+
+      {
+        (d.mechanism || d.mechanism_detail) && (
+          <div class="box wide">
+            <div>Mechanism</div>
+            {d.mechanism && <div>{d.mechanism}</div>}
+            {d.mechanism_detail && (
+              <ShowMoreLines client:load lines={1}>
+                <Cited
+                  client:load
+                  text={d.mechanism_detail}
+                  citations={references}
+                />
+              </ShowMoreLines>
+            )}
+          </div>
+        )
+      }
+    </div>
+
+    <div class="boxes">
+      {
+        d.location_in_gene && (
+          <div class="box">
+            <div>Location in Gene</div>
+            <div>{d.location_in_gene}</div>
+          </div>
+        )
+      }
+
+      {
+        d.gene_strand && (
+          <div class="box">
+            <div>Gene Strand</div>
+            <div>
+              {d.gene_strand === "+" && (
+                <FaCirclePlus style={{ color: "var(--primary)" }} />
+              )}
+              {d.gene_strand === "-" && (
+                <FaCircleMinus style={{ color: "var(--secondary)" }} />
+              )}
+            </div>
+          </div>
+        )
+      }
+    </div>
+
+    <!-- allele info -->
+    <Heading level={2}>Alleles</Heading>
+
+    <div class="allele-list">
+      {
+        !!d.reference_motif_reference_orientation.length && (
+          <div class="box">
+            <div data-tooltip="Reference motif, reference orientation">
+              Ref. Motif
+            </div>
+            <div>{d.reference_motif_reference_orientation.join(", ")}</div>
+          </div>
+        )
+      }
+
+      {
+        (!!d.benign_motif_reference_orientation.length ||
+          !!d.benign_motif_gene_orientation.length) && (
+          <>
+            <div class="box benign">
+              <div data-tooltip="Benign motif, reference orientation">
+                Benign (ref.)
+              </div>
+              <div>
+                {d.benign_motif_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box benign">
+              <div data-tooltip="Benign motif, gene orientation">
+                Benign (gene)
+              </div>
+              <div>{d.benign_motif_gene_orientation.join(", ") || "-"}</div>
+            </div>
+          </>
+        )
+      }
+
+      {
+        (!!d.pathogenic_motif_reference_orientation.length ||
+          !!d.pathogenic_motif_gene_orientation.length) && (
+          <>
+            <div class="box pathogenic">
+              <div data-tooltip="Pathogenic motif, reference orientation">
+                Pathogenic (ref.)
+              </div>
+              <div>
+                {d.pathogenic_motif_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box pathogenic">
+              <div data-tooltip="Pathogenic motif, gene orientation">
+                Pathogenic (gene)
+              </div>
+              <div>{d.pathogenic_motif_gene_orientation.join(", ") || "-"}</div>
+            </div>
+          </>
+        )
+      }
+
+      {
+        (!!d.unknown_motif_reference_orientation.length ||
+          !!d.unknown_motif_gene_orientation.length) && (
+          <>
+            <div class="box unknown">
+              <div data-tooltip="Unknown motif, reference orientation">
+                Unknown (ref.)
+              </div>
+              <div>
+                {d.unknown_motif_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box unknown">
+              <div data-tooltip="Unknown motif, gene orientation">
+                Unknown (gene)
+              </div>
+              <div>{d.unknown_motif_gene_orientation.join(", ") || "-"}</div>
+            </div>
+          </>
+        )
+      }
+    </div>
+
+    <LineChart
+      client:load
+      rows={[
+        {
+          name: "Benign",
+          color: "var(--primary)",
+          values: [d.benign_min, d.benign_max],
+        },
+        {
+          name: "Pathogenic",
+          color: "var(--secondary)",
+          values: [d.pathogenic_min, d.pathogenic_max],
+        },
+      ]}
+      xAxis="Units"
+    />
+  </section>
+
+  <!-- gnomad data -->
+  {
+    gnomad[id] && (
+      <section>
+        <Heading level={2}>gnomAD</Heading>
+
+        <Gnomad client:only="react" title={d.gene} data={gnomad[id]} />
+      </section>
+    )
+  }
+
+  <!-- references -->
+  {
+    !!references.length && (
+      <section>
+        <Heading level={2}>References</Heading>
+
+        <p class="center">
+          Direct supporting references for info on this page.
+        </p>
+
+        <div class="citations">
+          {references.map((citation) => (
+            <Citation client:load {...citation} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- additional literature -->
+  {
+    !!additionalLiterature.length && (
+      <section>
+        <Heading level={2}>Additional Literature</Heading>
+
+        <p class="center">Additional literature related to this locus.</p>
+
+        <div class="citations">
+          <AdditionalLiterature
+            client:load
+            additionalLiterature={additionalLiterature}
+          />
+        </div>
+      </section>
+    )
+  }
+
+  <script define:vars={{ d }}>
+    console.debug(d);
+  </script>
+</Layout>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 5px 10px;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 999px;
+  }
+
+  .boxes {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .boxes :global(svg) {
+    margin: 0;
+  }
+
+  .box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: var(--rounded);
+    background: var(--light-gray);
+    overflow-wrap: anywhere;
+  }
+
+  .box > :first-child svg {
+    opacity: 0.5;
+  }
+
+  .wide {
+    /* grid-column-end: span 2; */
+    max-width: calc(50% - 10px);
+  }
+
+  .box > :first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--gray);
+    font-weight: var(--bold);
+  }
+
+  .fraction {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .fraction > * {
+    position: relative;
+  }
+
+  .fraction > :nth-child(1) {
+    top: -0.5em;
+  }
+
+  .fraction > :nth-child(2) {
+    color: var(--gray);
+  }
+
+  .fraction > :nth-child(3) {
+    top: 0.5em;
+  }
+
+  .allele-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: max-content;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .allele-list > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 600px) {
+    .allele-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .benign {
+    background: color-mix(in srgb, var(--primary), white 90%);
+  }
+
+  .pathogenic {
+    background: color-mix(in srgb, var(--secondary), white 90%);
+  }
+
+  .unknown {
+    background: color-mix(in srgb, var(--tertiary), white 90%);
+  }
+
+  .genes {
+    margin: 40px 0;
+  }
+
+  .heading {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-weight: var(--bold);
+  }
+
+  .heading svg {
+    opacity: 0.5;
+  }
+
+  .gene-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+    place-content: center;
+    place-items: center;
+    gap: 10px 20px;
+  }
+
+  .identifiers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .identifier-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: flex-start;
+    place-items: flex-start;
+    gap: 5px 20px;
+  }
+
+  .identifier-list > :nth-child(odd) {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .identifier-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .citations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+</style>
