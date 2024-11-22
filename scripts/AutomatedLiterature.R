@@ -101,8 +101,8 @@ consolidated_strings <- gene_info %>%
 #substitute to avoid unrelated PMIDs
 consolidated_strings <- gsub("BMD", "Becker muscular dystrophy", consolidated_strings)
 
-base_directory <- '/Users/quinlan/Documents/Git/STRchive-1/STRchive/data/literature/'
-#base_directory <- '/data/'
+#where results will be stored
+base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/literature/'
 
 # function to perform the pubmed query
 # Function printout includes gene name and if there are results, confirms
@@ -142,7 +142,7 @@ perform_pubmed_query <- function(gene_info) {
                                    encoding = "ASCII")
     # the function adds 01.txt so, gotta fix that here
     out_file <- paste0(base_directory, gene_name, "01.txt")
-    #print(out_file)
+    print(out_file)
 
     # Check if the file was created successfully
     cat("Full file path:", out_file, "\n")
@@ -181,7 +181,7 @@ for (gene_name in names(file_paths)) {
   })
 }
 
-# empty list for the pubication info
+# empty list for the publication info
 pub_info_list <- list()
 
 extract_citation_info <- function(medline_data_list, gene_name) {
@@ -283,22 +283,39 @@ data <- data %>%
 
 #### New locus lit retrieval
 #new locus query found from reviewing pertinent terms in discovery papers
-query <- '("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract]) AND
-            ("discovered"[Title/Abstract] OR "identified"[Title/Abstract] OR "causative"[Title/Abstract] OR "underlie"[Title/Abstract] OR "basis"[Title/Abstract]) AND
-            "English"[Language] AND
-            ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "condition*"[Title/Abstract]) AND
-            ("journal article"[Publication Type] OR "letter"[Publication Type] OR "Case Reports"[Publication Type])
-            NOT "review"[Publication Type]'
+perform_new_pubmed_query <- function() {
+  file_path <- list()  # Initialize the list to store all publications
+  #joined_terms <- paste0('(', paste(or_terms, collapse = '[Title/Abstract] OR '), ')[Title/Abstract]')
+  # Construct the query with organized or_terms
+  query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract]) AND ("discovered"[Title/Abstract] OR "identified"[Title/Abstract] OR "causative"[Title/Abstract] OR "underlie"[Title/Abstract] OR "basis"[Title/Abstract]) AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "condition*"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type] OR "Case Reports"[Publication Type]) NOT "review"[Publication Type])')
 
-# Define the output file name (change base_directory if needed)
-out_file <- paste0(base_directory, "new_locus")
+  # Clean up any unnecessary slashes from the query
+  query <- gsub("  ", " ", query)  # Remove double spaces
+  print(query)
+  out_file <- paste0(base_directory, "new_loci")
 
-# Perform the PubMed query and download results
-out.A <- batch_pubmed_download(pubmed_query_string = query,
-                               format = "medline",
-                               batch_size = 10000,
-                               dest_file_prefix = out_file,
-                               encoding = "ASCII")
+  # Include a separator ("/") between base_directory and gene_name
+  # Modify dest_file_prefix to include the full file path
+  out.A <- batch_pubmed_download(pubmed_query_string = query,
+                                 format = "medline",
+                                 batch_size = 10000,
+                                 dest_file_prefix = out_file,
+                                 encoding = "ASCII")
+  # the function adds 01.txt so, gotta fix that here
+  out_file <- paste0(base_directory, "new_loci", "01.txt")
+  print(out_file)
 
-### Manubot time
-py_config()
+  # Check if the file was created successfully
+  cat("Full file path:", out_file, "\n")
+  if (file.exists(out_file)) {
+    cat("File exists.\n")
+    file_path <- out_file
+  } else {
+    cat("Error: File not found -", out_file, "\n")
+  }
+
+
+  return(file_path)
+}
+
+perform_new_pubmed_query()
