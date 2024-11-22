@@ -1,5 +1,5 @@
 import ShowMoreLines from "@/components/ShowMoreLines";
-import classes from "./_Citation.module.css";
+import classes from "./Citation.module.css";
 
 /** full citation details for a source */
 const Citation = ({ number, id, title, authors, publisher, date }) => (

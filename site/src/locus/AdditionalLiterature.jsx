@@ -1,5 +1,5 @@
 import ShowMoreItems from "@/components/ShowMoreItems";
-import Citation from "./_Citation";
+import Citation from "./Citation";
 
 /** additional literature section */
 const AdditionalLiterature = ({ additionalLiterature }) => (
