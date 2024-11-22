@@ -14,6 +14,7 @@ const TextBox = ({ label, onChange, ...props }) => (
         event.currentTarget.previousElementSibling.value == "";
         onChange("");
       }}
+      aria-label="Clear textbox"
     >
       <FaXmark />
     </button>
