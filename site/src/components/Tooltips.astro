@@ -30,10 +30,12 @@
       mutations
         .map((mutation) => [...mutation.addedNodes, ...mutation.removedNodes])
         .flat()
-        .filter(
-          (node) =>
-            node instanceof Element && node.getAttribute("data-tooltip"),
-        )
+        .filter((node) => node instanceof Element)
+        .map((element) => [
+          ...(element.matches("[data-tooltip]") ? [element] : []),
+          ...element.querySelectorAll("[data-tooltip]"),
+        ])
+        .flat()
         .forEach(update),
     ).observe(document.body, {
       childList: true,

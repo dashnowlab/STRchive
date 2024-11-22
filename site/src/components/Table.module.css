@@ -1,6 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 10px;
+}
+
 .scroll {
   max-width: 100%;
-  margin: 20px 0;
   overflow-x: auto;
   border-radius: var(--rounded);
   background: var(--white);
@@ -48,7 +54,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0;
   gap: 10px 20px;
 }
 

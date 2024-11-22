@@ -15,7 +15,7 @@ const TableOfContents = () => {
   const list = useRef(null);
 
   /** open/closed state */
-  const [open, setOpen] = useState(window.innerWidth > 1000);
+  const [open, setOpen] = useState(window.innerWidth > 1400);
 
   /** full heading details */
   const [headings, setHeadings] = useState([]);
@@ -66,7 +66,7 @@ const TableOfContents = () => {
           <>
             <button
               className={classes.button}
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              onClick={() => window.scrollTo({ top: 0 })}
             >
               Top
             </button>
