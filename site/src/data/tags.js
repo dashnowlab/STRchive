@@ -24,7 +24,7 @@ export const tagOptions = [
   {
     value: "sparse_evidence",
     label: "Sparse",
-    tooltip: "Sparse evidence",
+    tooltip: "Sparse evidence (< 5 independent cases after 5 years)",
     Icon: FaCircleQuestion,
     color: `var(--tertiary)`,
     important: true,
@@ -110,7 +110,7 @@ export const tagOptions = [
   /** disease tags */
   {
     value: "oculopharyngodistal_myopathy",
-    label: "Oculo. Myo.",
+    label: "OPDM",
     tooltip: "Oculopharyngodistal myopathy",
   },
   {
@@ -130,7 +130,7 @@ export const tagOptions = [
   },
   {
     value: "spinocerebellar_ataxia",
-    label: "Spino. Atax.",
+    label: "SCA",
     tooltip: "Spinocerebellar ataxia",
   },
   {
@@ -140,12 +140,12 @@ export const tagOptions = [
   },
   {
     value: "hand_foot_genital_syndrome",
-    label: "Hnd. Ft. Gen. Syn.",
+    label: "HFGS",
     tooltip: "Hand-foot-genital syndrome",
   },
   {
     value: "familial_adult_myoclonic_epilepsy",
-    label: "Fam. Ad. My. Ep.",
+    label: "FAME",
     tooltip: "Familial adult myoclonic epilepsy",
   },
   {

@@ -221,6 +221,8 @@ const additionalLiterature =
         min={0}
         max={90}
         xAxis="Years"
+        width={200}
+        height={50}
       />
 
       {
@@ -408,12 +410,19 @@ const additionalLiterature =
           values: [d.benign_min, d.benign_max],
         },
         {
+          name: "Intermediate",
+          color: "var(--tertiary)",
+          values: [d.intermediate_min, d.intermediate_max],
+        },
+        {
           name: "Pathogenic",
           color: "var(--secondary)",
           values: [d.pathogenic_min, d.pathogenic_max],
         },
       ]}
       xAxis="Units"
+      width={200}
+      height={75}
     />
   </section>
 

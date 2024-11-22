@@ -65,7 +65,7 @@ const RangeChart = ({
           ]),
           type: "boxplot",
           itemStyle: {
-            borderWidth: 2,
+            borderWidth: 3,
             borderColor: "var(--primary)",
           },
         },
@@ -82,7 +82,7 @@ const RangeChart = ({
             },
           },
           symbol: "diamond",
-          symbolSize: 15,
+          symbolSize: 20,
         },
       ]}
       tooltip={{
