@@ -222,8 +222,8 @@ label:has(select) select {
 label:has(select)::after {
   position: absolute;
   right: 10px;
-  content: "▾";
   translate: 0 -2px;
+  content: "▾";
   pointer-events: none;
   transition: color var(--fast);
 }

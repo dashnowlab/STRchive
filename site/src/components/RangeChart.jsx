@@ -62,20 +62,11 @@ const RangeChart = ({
             value,
             value,
             upperBounds[index],
-            ,
           ]),
           type: "boxplot",
           itemStyle: {
-            borderWidth: 3,
+            borderWidth: 2,
             borderColor: "var(--primary)",
-          },
-          
-          emphasis: {
-            itemStyle: {
-              borderWidth: 3,
-              borderColor:
-                "color-mix(in srgb, var(--primary), var(--white) 50%)",
-            },
           },
         },
         {
@@ -87,9 +78,10 @@ const RangeChart = ({
           },
           emphasis: {
             itemStyle: {
-              color: "color-mix(in srgb, var(--secondary), var(--white) 50%)",
+              color: "var(--secondary)",
             },
           },
+          symbol: "diamond",
           symbolSize: 15,
         },
       ]}

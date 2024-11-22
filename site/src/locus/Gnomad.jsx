@@ -67,8 +67,8 @@ const Gnomad = ({ title, data = {} }) => {
       </div>
 
       <p className="center">
-        <b>Pathogenic Genotype (%):</b> % of individuals predicted to be affected based
-        on their genotype
+        <b>Pathogenic Genotype (%):</b> % of individuals predicted to be
+        affected based on their genotype
       </p>
     </>
   );
