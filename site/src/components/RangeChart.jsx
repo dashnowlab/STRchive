@@ -12,11 +12,6 @@ const RangeChart = ({
   upperBounds,
   tooltip = () => "",
 }) => {
-  /** difference between upper and lower */
-  const upperLowerDiff = lowerBounds.map(
-    (_, index) => upperBounds[index] - lowerBounds[index],
-  );
-
   return (
     <EChart
       height={50 + values.length * 40}
@@ -60,25 +55,26 @@ const RangeChart = ({
       }}
       series={[
         {
-          data: lowerBounds,
-          type: "bar",
-          stack: "group",
+          /** https://echarts.apache.org/en/option.html#series-boxplot.data */
+          data: values.map((value, index) => [
+            lowerBounds[index],
+            value,
+            value,
+            value,
+            upperBounds[index],
+            ,
+          ]),
+          type: "boxplot",
           itemStyle: {
-            opacity: 0,
+            borderWidth: 3,
+            borderColor: "var(--primary)",
           },
-        },
-        {
-          data: upperLowerDiff,
-          type: "bar",
-          barWidth: 10,
-          stack: "group",
-          itemStyle: {
-            color: "var(--primary)",
-            opacity: 1,
-          },
+          
           emphasis: {
             itemStyle: {
-              color: "color-mix(in srgb, var(--primary), var(--white) 50%)",
+              borderWidth: 3,
+              borderColor:
+                "color-mix(in srgb, var(--primary), var(--white) 50%)",
             },
           },
         },
@@ -94,15 +90,11 @@ const RangeChart = ({
               color: "color-mix(in srgb, var(--secondary), var(--white) 50%)",
             },
           },
-          symbol: "diamond",
-          symbolSize: 20,
+          symbolSize: 15,
         },
       ]}
       tooltip={{
         trigger: "axis",
-        axisPointer: {
-          type: "shadow",
-        },
         formatter: ([series]) =>
           `<div class="${classes.tooltip}">
             ${tooltip(series.dataIndex)}

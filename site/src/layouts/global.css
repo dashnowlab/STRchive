@@ -210,8 +210,26 @@ select:hover {
 label {
   display: inline-flex;
   position: relative;
+  position: relative;
   align-items: center;
   gap: 5px;
+}
+
+label:has(select) select {
+  padding-right: 30px;
+}
+
+label:has(select)::after {
+  position: absolute;
+  right: 10px;
+  content: "▾";
+  translate: 0 -2px;
+  pointer-events: none;
+  transition: color var(--fast);
+}
+
+label:hover:has(select)::after {
+  color: var(--white);
 }
 
 label:has(input) {
