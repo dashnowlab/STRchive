@@ -1,4 +1,6 @@
 ---
+/** LOCI PAGE */
+
 import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
@@ -7,7 +9,7 @@ import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
-import Table from "./_Table";
+import Table from "@/loci/Table";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
 import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
 import ageOnset from "../../../../data/plots/age-onset.json";
@@ -53,7 +55,7 @@ import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?u
     <Heading level={2}><FaTable />Table</Heading>
 
     <p class="center">
-      Table of all tandem repeat loci associated with Mendelian disease.
+      Full table of tandem repeat loci associated with Mendelian diseases.
     </p>
 
     <Table client:load data={data} />

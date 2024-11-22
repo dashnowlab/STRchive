@@ -4,11 +4,13 @@ import { LuBadgeInfo } from "react-icons/lu";
 import { kebabCase } from "lodash-es";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
+import TableOfContents from "@/components/TableOfContents";
+import { team } from "@/data/team";
 import Layout from "@/layouts/Layout.astro";
-import { team } from "./_team";
 ---
 
 <Layout title="About">
+  <TableOfContents client:only="react" />
   <section>
     <Heading level={1}><LuBadgeInfo />About</Heading>
   </section>
@@ -107,10 +109,13 @@ import { team } from "./_team";
     margin-bottom: 10px;
     border-radius: 999px;
     box-shadow: var(--box-shadow);
-    transition: filter var(--fast);
+    transition:
+      filter var(--fast),
+      scale var(--fast);
   }
 
   .member:hover > img {
+    scale: 1.05;
     filter: saturate(0);
   }
 </style>

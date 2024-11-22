@@ -91,7 +91,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
   });
 
   return (
-    <>
+    <div className={classes.root}>
       <div className={classes.scroll}>
         {/* table */}
         <table
@@ -135,7 +135,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
                           <FaSortDown />
                         )}
                         {header.column.getIsSorted() === false && (
-                          <FaSort style={{ opacity: 0 }} />
+                          <FaSort style={{ opacity: 0.1 }} />
                         )}
                       </button>
                     )}
@@ -187,19 +187,6 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
       {/* controls */}
       {showControls && (
         <div className={classes.controls}>
-          {/* per page */}
-          <Select
-            label="Per page"
-            options={perPageOptions}
-            defaultValue={defaultPerPage.value}
-            onChange={(value, event) => {
-              table.setPageSize(Number(value));
-              preserveScroll(event.currentTarget);
-            }}
-          />
-
-          <span>{table.getRowCount().toLocaleString()} rows</span>
-
           {/* pagination */}
           <div className={classes["control-row"]}>
             <button
@@ -238,7 +225,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
             >
               Page{" "}
               {(table.getState().pagination.pageIndex + 1).toLocaleString()} of{" "}
-              {table.getPageCount().toLocaleString()}
+              {(table.getPageCount() || 1).toLocaleString()}
             </button>
             <button
               type="button"
@@ -265,9 +252,23 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               <FaAnglesRight />
             </button>
           </div>
+
+          {/* row count */}
+          <>{table.getRowCount().toLocaleString()} rows</>
+
+          {/* per page */}
+          <Select
+            label="Per page"
+            options={perPageOptions}
+            defaultValue={defaultPerPage.value}
+            onChange={(value, event) => {
+              table.setPageSize(Number(value));
+              preserveScroll(event.currentTarget);
+            }}
+          />
         </div>
       )}
-    </>
+    </div>
   );
 };
 

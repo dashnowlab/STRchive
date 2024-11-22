@@ -1,5 +1,5 @@
 /** checkbox with label */
-const CheckBox = ({ label, value, onChange, tooltip, ...props }) => (
+const CheckBox = ({ label, onChange, tooltip, ...props }) => (
   <label data-tooltip={tooltip}>
     <input
       {...props}

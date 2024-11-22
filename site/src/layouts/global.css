@@ -66,13 +66,11 @@ section:last-child {
   flex-grow: 1;
 }
 
-section > :first-child,
-section > astro-island:first-child > * {
+section > :first-child {
   margin-top: 0 !important;
 }
 
-section > :last-child,
-section > astro-island:last-child > * {
+section > :last-child {
   margin-bottom: 0 !important;
 }
 
@@ -211,12 +209,30 @@ select:hover {
 
 label {
   display: inline-flex;
+  position: relative;
+  position: relative;
   align-items: center;
   gap: 5px;
 }
 
-label:has(select),
-label:has(input[type="checkbox"]) {
+label:has(select) select {
+  padding-right: 30px;
+}
+
+label:has(select)::after {
+  position: absolute;
+  right: 10px;
+  translate: 0 -2px;
+  content: "▾";
+  pointer-events: none;
+  transition: color var(--fast);
+}
+
+label:hover:has(select)::after {
+  color: var(--white);
+}
+
+label:has(input) {
   cursor: pointer;
 }
 
@@ -230,8 +246,20 @@ textarea {
   font: inherit;
 }
 
+label:has(input) > button {
+  position: absolute;
+  right: 5px;
+  padding: 5px;
+  background: none;
+}
+
+label:has(input):has(button) > input {
+  padding-right: 40px !important;
+}
+
 input[type="number"] {
-  width: 100px;
+  width: 70px;
+  padding-right: 5px;
 }
 
 input[type="checkbox"] {
@@ -322,32 +350,6 @@ td {
 }
 
 .button > * {
-  top: 0;
-  margin: 0;
-}
-
-.button-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 5px 15px;
-  gap: 10px;
-  border-radius: 999px;
-  background: var(--light-gray);
-  color: var(--black);
-  text-decoration: none;
-  transition:
-    background var(--fast),
-    color var(--fast);
-}
-
-.button-secondary:hover {
-  background: var(--dark-gray);
-  color: var(--white);
-}
-
-.button-secondary > * {
   top: 0;
   margin: 0;
 }
