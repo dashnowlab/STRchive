@@ -24,8 +24,7 @@ export const deriveDatum = (d) => {
   d.locus_tags ??= [];
 
   /** add tags */
-  if (d.details?.match(/conflict/i)) d.locus_tags.push("conflicting");
-  if (new Date().getFullYear() - d.year <= newThreshold)
+  if (new Date().getFullYear() - parseInt(d.year) <= newThreshold)
     d.locus_tags.push("new");
 
   /** clean up tags */

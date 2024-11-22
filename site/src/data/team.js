@@ -2,8 +2,8 @@
 export const team = [
   {
     name: "Harriet Dashnow",
-    role: "Postdoc",
-    affiliation: "University of Utah",
+    role: "PI",
+    affiliation: "University of Colorado",
     link: "https://harrietdashnow.com/",
   },
   {
@@ -11,6 +11,18 @@ export const team = [
     role: "MD/PhD candidate",
     affiliation: "University of Utah",
     link: "https://twitter.com/laurel_hiatt",
+  },
+  {
+    name: "Akshay Avvaru",
+    role: "Postdoc",
+    affiliation: "University of Colorado",
+    link: "https://in.linkedin.com/in/avvaru-akshay-a56472a4",
+  },
+  {
+    name: "Vincent Rubinetti",
+    role: "Web Developer",
+    affiliation: "University of Colorado",
+    link: "https://vincentrubinetti.com",
   },
   {
     name: "Ben Weisburd",
