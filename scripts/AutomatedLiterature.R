@@ -319,3 +319,46 @@ perform_new_pubmed_query <- function() {
 }
 
 perform_new_pubmed_query()
+
+### Let's get all the citations to run manubot on
+extract_citations <- function(column) {
+  column %>%
+    str_split(",") %>%                  # Split on commas
+    unlist() %>%                        # Flatten list to vector
+    str_trim() %>%                      # Trim whitespace
+    str_subset("^@\\S+") %>%            # Ensure only terms starting with @ are included
+    str_remove("^@") %>%                # Remove the @ symbol from each term
+    unique()                            # Remove duplicates
+}
+
+# Extract citations from `references` and `additional_literature`
+citations_references <- extract_citations(data$references)
+citations_additional <- extract_citations(data$additional_literature)
+
+# Combine citations into a single list and remove duplicates
+all_citations <- unique(c(citations_references, citations_additional))
+
+bash_script <- file.path("/Users/quinlan/Documents/Git/STRchive/data/literature/run_manubot.sh")  # Adjust path if script is in a different directory
+# Run the script using its full path
+citation_chunks <- split(all_citations, ceiling(seq_along(all_citations) / 50)) # Process 50 citations at a time
+
+# Initialize a list to collect all JSON results
+all_json_results <- list()
+
+# Process each chunk
+for (chunk in citation_chunks) {
+  # Convert the chunk into a space-separated string
+  citation_string <- paste(chunk, collapse = " ")
+
+  # Run the bash script and capture output
+  json_output <- system(paste(bash_script, citation_string), intern = TRUE)
+
+  # Parse JSON output in R
+  json_results <- jsonlite::fromJSON(paste(json_output, collapse = "\n"))
+
+  # Append results to the list
+  all_json_results <- c(all_json_results, list(json_results))
+}
+
+# Combine all JSON results into one consolidated list
+consolidated_json <- do.call(c, all_json_results)
