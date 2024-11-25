@@ -1,0 +1,39 @@
+configfile: '../data/config.yaml'
+in_json: str = config["input_file"]
+base_dir: str = config["base_directory"]
+#out_json: str = config["output_file"]
+
+### IMPORTS ###
+import os
+import re
+
+# Wildcard constraints; should all be alphanumeric
+wildcard_constraints:
+    base_dir = base_dir
+
+rule all:
+    input:
+        expand("{base_dir}/STRchive_citations.json", base_dir = base_dir)
+
+rule retrieve:
+    input:
+        in_json = in_json,
+        base_dir = base_dir,
+        script_path = "AutomatedLiterature.R"
+    output:
+        citations = temp("{base_dir}/citations.json")
+    shell:
+        """
+        Rscript {input.script_path} {input.in_json} {input.base_dir} {output.citations}
+        """
+
+rule run_manubot:
+    input:
+        citations = "{base_dir}/citations.json"
+    output:
+        results = "{base_dir}/STRchive_citations.json"
+    shell:
+        """
+        bash run_manubot.sh {input.citations} {output.results}
+        """
+
