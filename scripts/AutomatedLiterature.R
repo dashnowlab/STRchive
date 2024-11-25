@@ -295,7 +295,7 @@ perform_new_pubmed_query <- function() {
   # Clean up any unnecessary slashes from the query
   query <- gsub("  ", " ", query)  # Remove double spaces
   print(query)
-  out_file <- paste0(base_directory, "new_loci")
+  out_file <- paste0(base_directory, "/new_loci")
 
   # Include a separator ("/") between base_directory and gene_name
   # Modify dest_file_prefix to include the full file path
