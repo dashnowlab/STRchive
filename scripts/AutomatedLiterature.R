@@ -1,21 +1,24 @@
-#install.packages("jsonlite")
 library(jsonlite)
 library(dplyr)
 library(biomaRt)
 library(rentrez)
 # solution for potential error based on library versions
-devtools::install_version("dbplyr", version = "2.3.4")
+#devtools::install_version("dbplyr", version = "2.3.4")
 #library(dbplyr)
 library(easyPubMed)
 library(stringr)
 library(purrr)
-library(reticulate)
-use_python("/Users/quinlan/miniforge3/envs/manubot/bin/python", required = TRUE)
 
 ### Data Setup
-# change to STRchive directory
+args <- commandArgs(trailingOnly = TRUE)
+
 data <- fromJSON("/Users/quinlan/Documents/Git/STRchive-1/STRchive/data/STRchive-database.json")
-#data <- fromJSON("/data/STRchive-database.json")
+
+if (length(args) < 3) {
+  stop("Need input json, base directory, and output json")
+}
+
+data <- fromJSON(args[1])
 
 # get unique references used in the json for each entry
 data <- data %>%
@@ -102,7 +105,7 @@ consolidated_strings <- gene_info %>%
 consolidated_strings <- gsub("BMD", "Becker muscular dystrophy", consolidated_strings)
 
 #where results will be stored
-base_directory <- '/Users/quinlan/Documents/Git/STRchive/data/literature/'
+base_directory <- args[2]
 
 # function to perform the pubmed query
 # Function printout includes gene name and if there are results, confirms
@@ -131,7 +134,7 @@ perform_pubmed_query <- function(gene_info) {
     query <- gsub("  ", " ", query)  # Remove double spaces
     print(query)
     gene_name <- gsub('"', '', gene_name)
-    out_file <- paste0(base_directory, gene_name)
+    out_file <- paste0(base_directory, "/", gene_name)
 
     # Include a separator ("/") between base_directory and gene_name
     # Modify dest_file_prefix to include the full file path
@@ -141,7 +144,7 @@ perform_pubmed_query <- function(gene_info) {
                                    dest_file_prefix = out_file,
                                    encoding = "ASCII")
     # the function adds 01.txt so, gotta fix that here
-    out_file <- paste0(base_directory, gene_name, "01.txt")
+    out_file <- paste0(base_directory, "/", gene_name, "01.txt")
     print(out_file)
 
     # Check if the file was created successfully
@@ -302,7 +305,7 @@ perform_new_pubmed_query <- function() {
                                  dest_file_prefix = out_file,
                                  encoding = "ASCII")
   # the function adds 01.txt so, gotta fix that here
-  out_file <- paste0(base_directory, "new_loci", "01.txt")
+  out_file <- paste0(base_directory, "/new_loci", "01.txt")
   print(out_file)
 
   # Check if the file was created successfully
@@ -318,9 +321,11 @@ perform_new_pubmed_query <- function() {
   return(file_path)
 }
 
-perform_new_pubmed_query()
 
-### Let's get all the citations to run manubot on
+
+perform_new_pubmed_query()
+#
+# ### Let's get all the citations to run manubot on
 extract_citations <- function(column) {
   column %>%
     str_split(",") %>%                  # Split on commas
@@ -338,27 +343,31 @@ citations_additional <- extract_citations(data$additional_literature)
 # Combine citations into a single list and remove duplicates
 all_citations <- unique(c(citations_references, citations_additional))
 
-bash_script <- file.path("/Users/quinlan/Documents/Git/STRchive/data/literature/run_manubot.sh")  # Adjust path if script is in a different directory
-# Run the script using its full path
-citation_chunks <- split(all_citations, ceiling(seq_along(all_citations) / 50)) # Process 50 citations at a time
+myfile = toJSON(all_citations)
 
-# Initialize a list to collect all JSON results
-all_json_results <- list()
-
-# Process each chunk
-for (chunk in citation_chunks) {
-  # Convert the chunk into a space-separated string
-  citation_string <- paste(chunk, collapse = " ")
-
-  # Run the bash script and capture output
-  json_output <- system(paste(bash_script, citation_string), intern = TRUE)
-
-  # Parse JSON output in R
-  json_results <- jsonlite::fromJSON(paste(json_output, collapse = "\n"))
-
-  # Append results to the list
-  all_json_results <- c(all_json_results, list(json_results))
-}
-
-# Combine all JSON results into one consolidated list
-consolidated_json <- do.call(c, all_json_results)
+write(myfile, args[3])
+#
+# bash_script <- file.path("/Users/quinlan/Documents/Git/STRchive/data/literature/run_manubot.sh")  # Adjust path if script is in a different directory
+# # Run the script using its full path
+# citation_chunks <- split(all_citations, ceiling(seq_along(all_citations) / 50)) # Process 50 citations at a time
+#
+# # Initialize a list to collect all JSON results
+# all_json_results <- list()
+#
+# # Process each chunk
+# for (chunk in citation_chunks) {
+#   # Convert the chunk into a space-separated string
+#   citation_string <- paste(chunk, collapse = " ")
+#
+#   # Run the bash script and capture output
+#   json_output <- system(paste(bash_script, citation_string), intern = TRUE)
+#
+#   # Parse JSON output in R
+#   json_results <- jsonlite::fromJSON(paste(json_output, collapse = "\n"))
+#
+#   # Append results to the list
+#   all_json_results <- c(all_json_results, list(json_results))
+# }
+#
+# # Combine all JSON results into one consolidated list
+# consolidated_json <- do.call(c, all_json_results)
