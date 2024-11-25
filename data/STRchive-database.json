@@ -40,18 +40,16 @@
         "pathogenic_max":694.0,
         "ref_copies":7.7,
         "motif_len":3,
-        "age_onset":"Typical: 24-30; Range: 10-50 [@url:medrxiv.org/content/10.1101/2023.10.09.23296582v1].",
+        "age_onset":"Typical: 24-30; Range: 10-50 [@pmid:39068203].",
         "age_onset_min":10,
         "age_onset_max":50,
         "typ_age_onset_min":null,
         "typ_age_onset_max":null,
         "novel":"ref",
         "mechanism":null,
-        "mechanism_detail":"Potentially over-expression of transcripts [@url:medrxiv.org/content/10.1101/2023.10.09.23296582v1].",
-        "source":[
-            "[@url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]."
-        ],
-        "details":"Characterized in eight unrelated families which were used to establish benign (3-44) and pathogenic (118-694) ranges [@url:medrxiv.org/content/10.1101/2023.10.09.23296582v1].",
+        "mechanism_detail":"Potentially over-expression of transcripts [@pmid:39068203].",
+        "source":[],
+        "details":"Characterized in eight unrelated families which were used to establish benign (3-44) and pathogenic (118-694) ranges [@pmid:39068203].",
         "omim":[],
         "prevalence":null,
         "prevalence_details":"Found in individuals of European ancestry [@pmid:38876750].",
@@ -61,7 +59,7 @@
         "mondo":[
             "0025193"
         ],
-        "year":"2023 [@url:medrxiv.org/content/10.1101/2023.10.09.23296582v1]",
+        "year":"2023 [@pmid:39068203]",
         "medgen":[
             "320250"
         ],
@@ -4948,7 +4946,7 @@
         "gnomad":[],
         "genereviews":[],
         "mondo":[],
-        "year":"2024 [@pmid:PMID:37994247]",
+        "year":"2024 [@pmid:37994247]",
         "medgen":[],
         "orphanet":[
             "86814"
