@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { LuDownload } from "react-icons/lu";
 import { map, pick, uniq } from "lodash-es";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
@@ -8,6 +9,7 @@ import TableComponent from "@/components/Table";
 import TextBox from "@/components/TextBox";
 import { deriveDatum } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
+import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
 import classes from "./Table.module.css";
 
@@ -218,7 +220,22 @@ const Table = ({ data }) => {
       </div>
 
       {/* row count */}
-      <strong>{filteredData.length.toLocaleString()} loci</strong>
+      <div className={classes["filter-row"]}>
+        <strong>{filteredData.length.toLocaleString()} loci</strong>
+        <button
+          className={classes.download}
+          onClick={() =>
+            /** download filtered data */
+            downloadJson(filteredData, [
+              filteredData.length < derivedData.length ? "filtered" : "",
+              "loci",
+            ])
+          }
+          data-tooltip="Download filtered loci"
+        >
+          Download <LuDownload />
+        </button>
+      </div>
 
       {/* table */}
       <TableComponent cols={cols} rows={filteredData} />
