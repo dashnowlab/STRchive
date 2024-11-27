@@ -73,16 +73,15 @@ const RangeChart = ({
           data: values,
           type: "scatter",
           itemStyle: {
-            color: "var(--secondary)",
+            color: "var(--black)",
             opacity: 1,
           },
           emphasis: {
             itemStyle: {
-              color: "var(--secondary)",
+              color: "var(--black)",
             },
           },
-          symbol: "diamond",
-          symbolSize: 20,
+          symbolSize: 12,
         },
       ]}
       tooltip={{

@@ -428,7 +428,7 @@ const additionalLiterature =
 
   <!-- gnomad data -->
   {
-    gnomad[id] && (
+    gnomad[id] && gnomad[id].reliable && (
       <section>
         <Heading level={2}>gnomAD</Heading>
 

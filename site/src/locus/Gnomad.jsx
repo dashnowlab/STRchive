@@ -6,13 +6,11 @@ import Select from "@/components/Select";
 /** charts for gnomad data */
 const Gnomad = ({ title, data = {} }) => {
   /** sex options */
-  const sexes = Object.keys(data)
-    .map((key) => ({
-      value: key,
-      label: startCase(key),
-    }))
-    .sort()
-    .reverse();
+  const sexes = [
+    { value: "XX", label: "XX" },
+    { value: "XY", label: "XY" },
+    { value: "both", label: "Both" },
+  ];
 
   /** selected sex */
   const [sex, setSex] = useState(sexes[0].value);
