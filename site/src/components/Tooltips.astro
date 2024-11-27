@@ -23,27 +23,20 @@
   /** set up tippy */
   const init = () => {
     /** attach tooltips to already-present (statically generated) elements */
-    document.querySelectorAll("[data-tooltip]").forEach(update);
+    updateAll();
 
     /** listen for changes to document */
-    new MutationObserver((mutations) =>
-      mutations
-        .map((mutation) => [...mutation.addedNodes, ...mutation.removedNodes])
-        .flat()
-        .filter((node) => node instanceof Element)
-        .map((element) => [
-          ...(element.matches("[data-tooltip]") ? [element] : []),
-          ...element.querySelectorAll("[data-tooltip]"),
-        ])
-        .flat()
-        .forEach(update),
-    ).observe(document.body, {
+    new MutationObserver(updateAll).observe(document.body, {
       childList: true,
       subtree: true,
       attributes: true,
       attributeFilter: ["data-tooltip"],
     });
   };
+
+  /** update all tooltips in document */
+  const updateAll = () =>
+    document.querySelectorAll("[data-tooltip]").forEach(update);
 
   /**  update tippy instance */
   const update = (element) => {
