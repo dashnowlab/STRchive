@@ -86,12 +86,12 @@ export const getIdentifiers = (d) =>
           info: "https://stripy.org",
         },
         {
-          key: "tr_gnomad",
-          name: "TR-gnomAD",
-          link: "https://wlcb.oit.uci.edu/TRgnomAD/Distribution.php?index_id=$ID",
+          key: "tr_atlas",
+          name: "TR-Atlas",
+          link: "https://wlcb.oit.uci.edu/TRatlas/Distribution.php?index_id=$ID",
           tooltip:
             "Biobank-scale reference of 0.86 million TRs derived from 338,963 diverse samples",
-          info: "https://wlcb.oit.uci.edu/TRgnomAD",
+          info: "https://wlcb.oit.uci.edu/TRatlas",
         },
 
         {
