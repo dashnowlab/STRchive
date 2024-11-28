@@ -13,15 +13,15 @@ wildcard_constraints:
 
 rule all:
     input:
-        expand("{base_dir}/STRchive_citations.json", base_dir = base_dir)
+        expand("{base_dir}STRchive_citations.json", base_dir = base_dir)
 
 rule retrieve:
     input:
         in_json = in_json,
-        lit_dir = "{base_dir}/literature",
+        lit_dir = "{base_dir}literature",
         script_path = "AutomatedLiterature.R"
     output:
-        citations = temp("{base_dir}/citations.json")
+        citations = temp("{base_dir}citations.json")
     shell:
         """
         Rscript {input.script_path} {input.in_json} {input.lit_dir} {output.citations}
@@ -29,9 +29,9 @@ rule retrieve:
 
 rule run_manubot:
     input:
-        citations = "{base_dir}/literature/citations.json"
+        citations = "{base_dir}citations.json"
     output:
-        results = "{base_dir}/STRchive_citations.json"
+        results = "{base_dir}STRchive_citations.json"
     shell:
         """
         bash run_manubot.sh {input.citations} {output.results}
