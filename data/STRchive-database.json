@@ -4269,9 +4269,9 @@
         "location_in_gene":"Exon 1",
         "benign_min":10.0,
         "benign_max":10.0,
-        "intermediate_min":null,
-        "intermediate_max":null,
-        "pathogenic_min":11.0,
+        "intermediate_min":11,
+        "intermediate_max":11,
+        "pathogenic_min":12.0,
         "pathogenic_max":18.0,
         "ref_copies":7.0,
         "motif_len":3,
@@ -4284,7 +4284,7 @@
         "mechanism":"GoF/LoF",
         "mechanism_detail":"Polyalanine expansions leading to cellular toxicity (loss of function) as well as abnormal aggregation and inefficient protein degradation, which may impact mRNA processing [@genereviews:NBK1126].",
         "source":[],
-        "details":"Disease is autosomal dominant when an expansion of 11 motifs is in the first exon of PABPN1 (90% of cases), and autosomal recessive when both alleles are at least 11 motifs; age of onset is inverse to allele size [@genereviews:NBK1126]. Most known patients have (GCG)+, but GCN or any polyalanine may be pathogenic.[@genereviews:NBK1126]",
+        "details":"Disease is autosomal dominant when an expansion of 12+ motifs is in the first exon of PABPN1 (90% of cases), and autosomal recessive when both alleles are at least 11 motifs; age of onset is inverse to allele size [@genereviews:NBK1126]. Most known patients have (GCG)+, but GCN or any polyalanine may be pathogenic [@genereviews:NBK1126]. This additionally explains the 4 motif difference between primary literature (which uses thresholds of 7 and 8 motifs, in a locus definition of only GCG) [@pmid:9462747], versus the GCN-inclusive locus definition that extends the sequence by four motifs [@genereviews:NBK1126; @pmid:39349043].",
         "omim":[
             "164300"
         ],
