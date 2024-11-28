@@ -65,8 +65,8 @@ def trgt_catalog(row, genome = 'hg38'):
     if row['flank_motif'] != '':
         # get motifs in parentheses using regex
         flank_motif = row['flank_motif']
-        motifs = re.findall('\((.*?)\)', flank_motif)
-        counts = re.findall('\)(.*?)[\(|$]', flank_motif.replace('n', 'n(') + '$')
+        motifs = re.findall(r'\((.*?)\)', flank_motif)
+        counts = re.findall(r'\)(.*?)[\(|$]', flank_motif.replace('n', 'n(') + '$')
         n_found = False
         for motif, count in zip(motifs, counts):
             struc += f'({motif})n'
@@ -80,7 +80,7 @@ def trgt_catalog(row, genome = 'hg38'):
                     start -= int(count) * len(motif)
     elif row['locus_structure'] != '':
         locus_structure = row['locus_structure'].strip()
-        motifs = re.findall('\((.*?)\)', locus_structure)
+        motifs = re.findall(r'\((.*?)\)', locus_structure)
         # Substitute * and + with n
         struc = locus_structure.replace('*', 'n').replace('+', 'n')
     else:
