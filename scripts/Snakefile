@@ -27,13 +27,13 @@ rule retrieve:
         Rscript {input.script_path} {input.in_json} {input.lit_dir} {output.citations}
         """
 
-rule run_manubot:
+rule manubot:
     input:
         citations = "{base_dir}citations.json"
     output:
         results = "{base_dir}STRchive_citations.json"
     shell:
         """
-        bash run_manubot.sh {input.citations} {output.results}
+        bash run-manubot.sh {input.citations} {output.results}
         """
 
