@@ -19,7 +19,7 @@ rule retrieve:
     input:
         in_json = in_json,
         lit_dir = "{base_dir}literature",
-        script_path = "AutomatedLiterature.R"
+        script_path = "get-literature.R"
     output:
         citations = temp("{base_dir}citations.json")
     shell:
