@@ -2,10 +2,18 @@ name: strchive
 
 channels:
   - bioconda
+  - conda-forge
 
 dependencies:
   - pandas
-  - jinja2
   - numpy
   - biopython
   - defopt
+  - snakemake
+  - r-essentials
+  - r-jsonlite
+  - r-dplyr
+  - r-rentrez
+  - r-easypubmed
+  - r-stringr
+  - r-purrr
