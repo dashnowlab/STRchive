@@ -142,13 +142,13 @@ def extended_bed(row, fields = [], genome = 'hg38'):
 
 default_fields = ','.join(['id', 'gene', 'pathogenic_motif_reference_orientation', 'pathogenic_min', 'inheritance', 'disease'])
 
-def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38', fields: str = default_fields):
+def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38', cols: str = default_fields):
     """
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
     :param format: Variant caller catalog file format BED format (TRGT or BED)
-    :param fields: Comma separated list of fields to include in the extended BED format beyond chrom,start,stop (no spaces in list)
+    :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 
     genome = genome.lower()
@@ -163,6 +163,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     else:
         raise ValueError(f'Unknown input file extension: {input} \nExpected .json')
 
+    fields = cols
     if fields != default_fields and format.lower() != 'bed':
         raise ValueError('Fields option is only available for BED format output.')
 
