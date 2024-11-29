@@ -82,7 +82,9 @@
         ],
         "disease_description":"Oculopharyngodistal myopathy (OPDM) is a rare, adult-onset hereditary muscle disease. People with OPDM present with progressive eye and throat (pharyngeal) problems and involvement of the muscles of the lower legs and arms. Symptoms may include eyelid drooping (ptosis), swallowing difficulty, hoarse and nasal voice, leg and arm weakness, as well as muscle wasting in the face and in the legs and arms. Many people have respiratory problems due to respiratory muscle weakness. In rare cases, there is also hearing loss, as well as severe weakness in muscles of the forearms and thighs. As the disease progresses, other muscles may be affected. A blood exam may show an increased creatine kinase level and an abnormal EMG [@mondo:0025193].",
         "locus_tags":[],
-        "disease_tags":["oculopharyngodistal_myopathy"]
+        "disease_tags":[
+            "oculopharyngodistal_myopathy"
+        ]
     },
     {
         "chrom":"chrX",
@@ -171,7 +173,13 @@
             "TR173976"
         ],
         "disease_description":"A nonsyndromic X-linked mental retardation (NS-XLMR) characterized by mild intellectual deficit. FRAXE is the most common form of NS-XLMR [@mondo:0010659].",
-        "locus_tags":["somatic_instability", "anticipation", "maternal_expansion", "length_affects_penetrance", "length_affects_severity"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "maternal_expansion",
+            "length_affects_penetrance",
+            "length_affects_severity"
+        ],
         "disease_tags":[]
     },
     {
@@ -343,7 +351,15 @@
             "TR169377"
         ],
         "disease_description":"Kennedy's disease, also known as bulbospinal muscular atrophy (BSMA), is a rare X-linked recessive motor neuron disease characterized by proximal and bulbar muscle wasting [@mondo:0010735].",
-        "locus_tags":["contraction", "somatic_instability", "anticipation", "paternal_expansion", "length_affects_severity", "length_affects_penetrance", "length_affects_onset"],
+        "locus_tags":[
+            "contraction",
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "length_affects_severity",
+            "length_affects_penetrance",
+            "length_affects_onset"
+        ],
         "disease_tags":[]
     },
     {
@@ -439,8 +455,12 @@
             "TR167317"
         ],
         "disease_description":"Developmental and epileptic encephalopathy-1 (DEE1) is a severe form of epilepsy characterized by frequent tonic seizures or spasms beginning in infancy with a specific EEG finding of suppression-burst patterns, characterized by high-voltage bursts alternating with almost flat suppression phases [@omim:308350].",
-        "locus_tags":["length_affects_phenotype"],
-        "disease_tags":["phenotypic_spectrum"]
+        "locus_tags":[
+            "length_affects_phenotype"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum"
+        ]
     },
     {
         "chrom":"chrX",
@@ -529,8 +549,12 @@
             "TR167316"
         ],
         "disease_description":"A rare neurological condition that is primarily characterized by mild to moderate intellectual disability and dystonia of the hands. Other signs and symptoms may include dysarthria, behavioral abnormalities, recurrent seizures and/or an unusual gait (style of walking). Partington syndrome usually occurs in males; when it occurs in females, the signs and symptoms are often less severe. It is caused by changes (mutations) in the ARX gene and is inherited in an X-linked recessive manner. Treatment is based on the signs and symptoms present in each person [@mondo:0010654].",
-        "locus_tags":["length_affects_phenotype"],
-        "disease_tags":["phenotypic_spectrum"]
+        "locus_tags":[
+            "length_affects_phenotype"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum"
+        ]
     },
     {
         "chrom":"chr12",
@@ -623,7 +647,14 @@
             "TR114246"
         ],
         "disease_description":"Dentatorubral pallidoluysian atrophy (DRPLA) is a rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by involuntary movements, ataxia, epilepsy, mental disorders, cognitive decline and prominent anticipation [@mondo:0007435].",
-        "locus_tags":["anticipation", "somatic_instability", "paternal_expansion", "length_affects_onset", "length_affects_severity", "length_affects_phenotype"],
+        "locus_tags":[
+            "anticipation",
+            "somatic_instability",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_severity",
+            "length_affects_phenotype"
+        ],
         "disease_tags":[
             "ataxia",
             "epilepsy"
@@ -678,7 +709,9 @@
         "novel":"ref",
         "mechanism":"GoF/LoF",
         "mechanism_detail":"Polyglutamine expansion leading to toxic gain of function with eventual misregulation-based loss of function/dominant negative [@genereviews:NBK1184; @pmid:35573049].",
-        "source":["[@pmid:8358429]"],
+        "source":[
+            "[@pmid:8358429]"
+        ],
         "details":"Penetrance is dependent on sequence purity in addition to expansion length: pure repeats are pathogenic at 39 repeats [@pmid:37906407], while CAT interruptions [@pmid:35245110] can lead to reduced penetrance at comparable lengths [@genereviews:NBK1184]. Regardless, intermediate alleles are considered premutations which may lead to disease upon transmission [@genereviews:NBK1184].",
         "omim":[
             "164400"
@@ -720,7 +753,18 @@
             "TR63118"
         ],
         "disease_description":"Spinocerebellar ataxia type 1 (SCA1) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by dysarthria, writing difficulties, limb ataxia, and commonly nystagmus and saccadic abnormalities [@mondo:0008119].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_severity", "motif_affects_instability", "motif_affects_onset", "motif_affects_penetrance", "motif_affects_severity"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_severity",
+            "motif_affects_instability",
+            "motif_affects_onset",
+            "motif_affects_penetrance",
+            "motif_affects_severity"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -774,7 +818,9 @@
         "novel":"ref",
         "mechanism":"GoF",
         "mechanism_detail":"Transdominant mechanism theorized [@pmid:38467784].",
-        "source":"[@pmid:11017075]",
+        "source":[
+            "[@pmid:11017075]"
+        ],
         "details":"Unaffected individuals are usually (82%) compound heterozygotes in the benign range [@genereviews:NBK1175]. Intermediate alleles show reduced penetrance, and exact distinction between intermediate and the lower end of the pathogenic range is unclear [@genereviews:NBK1175]. Expansions are frequently interrupted by ATCCT, ATCCC, ATTCC, ATTTCT, ATATTCT, ATTCTTCT, or ATTCTTCT; interruptions of ATTGT, TTTCT, ATTTTCT, ATTCTCT have been noted [@pmid:36199580] as has the interruption ATGCT [@pmid:19234597]. The ATCCT interruption motif is associated with a higher prevalence of epileptic seizures [@pmid:24318420].",
         "omim":[
             "603516"
@@ -817,7 +863,17 @@
             "TR165509"
         ],
         "disease_description":"Spinocerebellar ataxia type 10 (SCA10) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by slowly progressive cerebellar syndrome and epilepsy, sometimes mild pyramidal signs, peripheral neuropathy and neuropsychological disturbances [@mondo:0011330].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "motif_affects_instability", "motif_affects_penetrance", "motif_affects_phenotype"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_phenotype",
+            "motif_affects_instability",
+            "motif_affects_penetrance",
+            "motif_affects_phenotype"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -915,7 +971,19 @@
             "TR120465"
         ],
         "disease_description":"A subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by truncal ataxia, dysarthria, slowed saccades and less commonly ophthalmoparesis and chorea [@mondo:0008458].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "maternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability", "motif_affects_phenotype", "proposed_modifier"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "maternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_phenotype",
+            "length_affects_severity",
+            "motif_affects_instability",
+            "motif_affects_phenotype",
+            "proposed_modifier"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -1012,7 +1080,15 @@
             "TR132758"
         ],
         "disease_description":"Spinocerebellar ataxia type 3 (SCA3), also known as Machado-Joseph disease, is the most common subtype of type 1 autosomal dominant cerebellar ataxia (ADCA type 1), a neurodegenerative disorder, and is characterized by ataxia, external progressive ophthalmoplegia, and other neurological manifestations [@mondo:0007182].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "maternal_expansion", "length_affects_onset", "length_affects_phenotype", "length_affects_severity"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "maternal_expansion",
+            "length_affects_onset",
+            "length_affects_phenotype",
+            "length_affects_severity"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -1066,8 +1142,7 @@
         "novel":"ref",
         "mechanism":"GoF",
         "mechanism_detail":"Polyglutamine expansion leading to gain of function; toxic misfolded intermediated suspected [@genereviews:NBK1256; @pmid:18418675].",
-        "source":[
-        ],
+        "source":[],
         "details":"Benign alleles range from 4-27 [@pmid:37906407], with intermediate alleles ranging from premutations (28-33) to reduced penetrance (34-36) [@genereviews:NBK1256]. Interruptions observed include CAA [@pmid:35245110].",
         "omim":[
             "164500"
@@ -1110,7 +1185,15 @@
             "TR31880"
         ],
         "disease_description":"Spinocerebellar ataxia-7 (SCA7) is an autosomal dominant neurodegenerative disorder characterized by adult onset of progressive cerebellar ataxia associated with pigmental macular dystrophy [@omim:164500].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_phenotype",
+            "length_affects_severity"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -1207,7 +1290,13 @@
             "TR125264"
         ],
         "disease_description":"Spinocerebellar ataxia type 8 (SCA8) is a subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by cerebellar ataxia and cognitive dysfunction in almost three quarters of patients and pyramidal and sensory signs in approximately a third of patients [@mondo:0012116].",
-        "locus_tags":["somatic_instability", "anticipation", "maternal_expansion", "motif_affects_onset", "motif_affects_penetrance"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "maternal_expansion",
+            "motif_affects_onset",
+            "motif_affects_penetrance"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -1328,7 +1417,11 @@
             "TR141992"
         ],
         "disease_description":"Spinocerebellar ataxia type 31 (SCA31) is a very rare subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by the late-onset of cerebral ataxia, dysarthria and horizontal gaze nystagmus, and that is occasionally accompanied by pyramidal signs, tremor, decreased vibration sense and hearing difficulties [@mondo:0007296].",
-        "locus_tags":["anticipation", "motif_affects_onset", "motif_affects_penetrance"],
+        "locus_tags":[
+            "anticipation",
+            "motif_affects_onset",
+            "motif_affects_penetrance"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -1382,8 +1475,7 @@
         "novel":"ref",
         "mechanism":"Ambiguous",
         "mechanism_detail":"The HRE forms DNA and RNA G-quadruplexes with distinct structures and promotes RNA/DNA hybrids (R-loops). The structural polymorphism causes a repeat length-dependent accumulation of transcripts aborted in the HRE region [@omim:105500]. Addiitonal mechanisms theorized include protein loss of function and RNA gain of function [@pmid:37847372].",
-        "source":[
-        ],
+        "source":[],
         "details":"FTD and ALS form a clinical spectrum [@pmid:37388914; @pmid:22406228]. The clinical ranges of the C9orf72 locus remain ambiguous [@stripy:C9ORF72]: most healthy controls have alleles up to 24 repeats [@pmid:28319737] yet 24-30 repeats are associated with ALS [@pmid:31315673] and while 60 repeats is frequently used as a threshold for uncertain alleles, the exact threshold of pathogenicity remains unclear [@genereviews:NBK268647; @pmid:38099605]. Repeat of 80 motifs and lower appear to have delayed onset for any phenotype [@pmid:28319737]. >250 repeats are associated with a full FTD/ALS disease state [@pmid:31048495], but pathogenic alleles can range from 30 to more than 4000 repeats [@pmid:38099605]. Penetrance appears to also be age-dependent, with environmental factors and specific phenotypes associated with sex and age at onset [@pmid:28522837].",
         "omim":[
             "105500"
@@ -1426,8 +1518,13 @@
             "TR92417"
         ],
         "disease_description":"Pure frontotemporal dementia, pure amyotrophic lateral sclerosis or combination of the two [@pmid:39349043].",
-        "locus_tags":["length_affects_phenotype", "length_affects_onset"],
-        "disease_tags":["phenotypic_spectrum"]
+        "locus_tags":[
+            "length_affects_phenotype",
+            "length_affects_onset"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum"
+        ]
     },
     {
         "chrom":"chr19",
@@ -1478,8 +1575,7 @@
         "novel":"ref",
         "mechanism":"GoF/LoF",
         "mechanism_detail":"Polyglutamine expansions associated increased expression of altered product leading to impaired gene binding and transcription factor function as well as cellular toxicity [@genereviews: NBK1140].",
-        "source":[
-        ],
+        "source":[],
         "details":"The intermediate range (19 motifs) [@pmid:37906407; @genereviews:NBK1140] can be associated with a premutation, reduced penetrance, atypical phenotype, or a disease state when homozygous [@genereviews:NBK1140].",
         "omim":[
             "183086"
@@ -1521,7 +1617,11 @@
             "TR154515"
         ],
         "disease_description":"Spinocerebellar ataxia type 6 (SCA6) is the most common subtype of autosomal dominant cerebellar ataxia type III (ADCA type III) characterized by late-onset and slowly progressive gait ataxia and other cerebellar signs such as impaired muscle coordination and nystagmus [@mondo:0008457].",
-        "locus_tags":["length_affects_phenotype", "length_affects_penetrance", "length_affects_onset"],
+        "locus_tags":[
+            "length_affects_phenotype",
+            "length_affects_penetrance",
+            "length_affects_onset"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -1708,8 +1808,13 @@
             "TR35565"
         ],
         "disease_description":"Myotonic dystrophy type 2 (MD2), also known as proximal myotonic myopathy, is a very rare genetic multi-system disorder of late childhood or adult-onset characterized by mild myotonia, muscle weakness, and rarely cardiac conduction disorders [@mondo:0011266].",
-        "locus_tags":["somatic_instability", "motif_affects_instability"],
-        "disease_tags":["myotonic_dystrophy"]
+        "locus_tags":[
+            "somatic_instability",
+            "motif_affects_instability"
+        ],
+        "disease_tags":[
+            "myotonic_dystrophy"
+        ]
     },
     {
         "chrom":"chr19",
@@ -1809,8 +1914,12 @@
             "TR155017"
         ],
         "disease_description":"Pseudoachondroplasia is characterized by severe growth deficiency and deformations such as bow legs and hyperlordosis.; Multiple epiphyseal dysplasia type 1 (MED 1) is a form of multiple epiphyseal dysplasia that is characterized by normal or mild short stature, pain in the hips and/or knees, progressive deformity of extremities and early-onset osteoarthrosis. Specific features to MED 1 include a more pronounced involvement of hip joints and gait abnormality and a shorter adult height. MED1 is allelic to pseudoachondroplasia with which it shares clinical and radiological features. The disease follows an autosomal dominant mode of transmission [@mondo:0008322; @mondo:0007561].",
-        "locus_tags":["contraction"],
-        "disease_tags":["phenotypic_spectrum"]
+        "locus_tags":[
+            "contraction"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum"
+        ]
     },
     {
         "chrom":"chr21",
@@ -1901,7 +2010,10 @@
             "TR163552"
         ],
         "disease_description":"Unverricht-Lundborg disease (ULD) is a rare progressive myoclonic epilepsy disorder characterized by action- and stimulus-sensitive myoclonus, and tonic-clonic seizures with ataxia, but with only a mild cognitive decline over time [@mondo:0009698].",
-        "locus_tags":["length_affects_onset", "length_affects_severity"],
+        "locus_tags":[
+            "length_affects_onset",
+            "length_affects_severity"
+        ],
         "disease_tags":[
             "ataxia"
         ]
@@ -2001,7 +2113,12 @@
             "TR3445"
         ],
         "disease_description":"Spinocerebellar ataxia type 37 (SCA37) is a subtype of autosomal dominant cerebellar ataxia type 1 (ADCA type 1), characterized by a cerebellar syndrome along with altered vertical eye movements [@mondo:0014410].",
-        "locus_tags":["maternal_expansion", "paternal_expansion", "motif_affects_onset", "motif_affects_penetrance"],
+        "locus_tags":[
+            "maternal_expansion",
+            "paternal_expansion",
+            "motif_affects_onset",
+            "motif_affects_penetrance"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -2185,7 +2302,10 @@
             "TR167703"
         ],
         "disease_description":"Duchenne muscular dystrophy (DMD) is a neuromuscular disease characterized by rapidly progressive muscle weakness and wasting due to degeneration of skeletal, smooth and cardiac muscle [@mondo:0010679].",
-        "locus_tags":["conflicting_evidence", "sparse_evidence"],
+        "locus_tags":[
+            "conflicting_evidence",
+            "sparse_evidence"
+        ],
         "disease_tags":[]
     },
     {
@@ -2279,8 +2399,21 @@
             "TR156684"
         ],
         "disease_description":"Steinert disease, also known as myotonic dystrophy type 1, is a muscle disease characterized by myotonia and by multiorgan damage that combines various degrees of muscle weakness, arrhythmia and/or cardiac conduction disorders, cataract, endocrine damage, sleep disorders and baldness [@mondo:0008056].",
-        "locus_tags":["somatic_instability", "anticipation", "maternal_expansion", "length_affects_onset", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability", "motif_affects_onset", "motif_affects_phenotype", "motif_affects_severity"],
-        "disease_tags":["myotonic_dystrophy"]
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "maternal_expansion",
+            "length_affects_onset",
+            "length_affects_phenotype",
+            "length_affects_severity",
+            "motif_affects_instability",
+            "motif_affects_onset",
+            "motif_affects_phenotype",
+            "motif_affects_severity"
+        ],
+        "disease_tags":[
+            "myotonic_dystrophy"
+        ]
     },
     {
         "chrom":"chr17",
@@ -2398,7 +2531,7 @@
         "benign_motif_gene_orientation":[
             "CCTTCT",
             "CTGCTTCTTCTTCTT",
-            "CTCCTT"
+            "CCTTCT"
         ],
         "unknown_motif_reference_orientation":[],
         "unknown_motif_gene_orientation":[],
@@ -2461,7 +2594,12 @@
         "webstr_hg19":[],
         "tr_atlas":[],
         "disease_description":"Late-onset ataxia, may have episodic onset, downbeat nystagmus, vertigo, neuropathy [@pmid:39349043].",
-        "locus_tags":["maternal_expansion", "length_affects_onset", "length_affects_penetrance","motif_affects_penetrance"],
+        "locus_tags":[
+            "maternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "motif_affects_penetrance"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -2567,8 +2705,18 @@
             "TR173944"
         ],
         "disease_description":"A genetic syndrome caused by mutations in the FMR1 gene which is responsible for the expression of the fragile X mental retardation 1 protein. This protein participates in neural development. This syndrome is manifested with mental, emotional, behavioral, physical, and learning disabilities.; Any primary ovarian failure in which the cause of the disease is a mutation in the FMR1 gene.; Fragile X-associated tremor/ataxia syndrome (FXTAS) is a rare neurodegenerative disorder characterized by adult-onset progressive intention tremor and gait ataxia [@mondo:0010383; @mondo:0010706; @mondo:0010382].",
-        "locus_tags":["somatic_instability", "anticipation", "maternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability"],
-        "disease_tags":["phenotypic_spectrum",
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "maternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_phenotype",
+            "length_affects_severity",
+            "motif_affects_instability"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum",
             "ataxia"
         ]
     },
@@ -2601,7 +2749,8 @@
         "flank_motif":null,
         "locus_structure":"(NGC)*",
         "inheritance":[
-            "AD", "AR"
+            "AD",
+            "AR"
         ],
         "type":"Coding",
         "location_in_gene":"Exon 1",
@@ -2640,7 +2789,7 @@
         "mondo":[
             "0007201"
         ],
-        "year":"2003 [@pmid:12529855]" ,
+        "year":"2003 [@pmid:12529855]",
         "medgen":[
             "66312"
         ],
@@ -2711,8 +2860,7 @@
         "novel":"ref",
         "mechanism":"LoF",
         "mechanism_detail":"Loss of function via transcriptional silencing [@pmid:16205714; @pmid:36169768].",
-        "source":[
-        ],
+        "source":[],
         "details":"96% of FA patients have biallelic GAA expansions in intron 1 (compared to compound heterozygous with another mutation type), in which the reference allele is conventionally 5-33 repeats [@genereviews:NBK1281]. Intermediate alleles (34-55) are associated with premutations, but may lead to disease as exact pathogenicity/penetrance thresholds have not been demarcated [@genereviews:NBK1281]. The expanded repeats can interrupted either with GAAGAG, GAAGGA, or GAAGAAAA sequences, leading to differential phenotypes [@pmid:11748752]. Allele size is correlated with disease severity and inversely correlated to age of onset, and expansions can reach 1700 repeats [@pmid:8815938].",
         "omim":[
             "229300"
@@ -2752,7 +2900,15 @@
             "TR93516"
         ],
         "disease_description":"Any Friedreich ataxia in which the cause of the disease is a mutation in the FXN gene [@mondo:0100340].",
-        "locus_tags":["somatic_instability", "maternal_expansion", "length_affects_onset", "length_affects_phenotype", "motif_affects_instability", "motif_affects_onset", "motif_affects_penetrance"],
+        "locus_tags":[
+            "somatic_instability",
+            "maternal_expansion",
+            "length_affects_onset",
+            "length_affects_phenotype",
+            "motif_affects_instability",
+            "motif_affects_onset",
+            "motif_affects_penetrance"
+        ],
         "disease_tags":[
             "ataxia"
         ]
@@ -2846,8 +3002,13 @@
             "TR154638"
         ],
         "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness [@pmid:38876750]; Slowly progressive distal weakness, ophthalmoplegia, facial and bulbar weakness [@pmid:39349043].",
-        "locus_tags":["length_affects_onset", "length_affects_severity"],
-        "disease_tags":["oculopharyngodistal_myopathy"]
+        "locus_tags":[
+            "length_affects_onset",
+            "length_affects_severity"
+        ],
+        "disease_tags":[
+            "oculopharyngodistal_myopathy"
+        ]
     },
     {
         "chrom":"chr2",
@@ -2939,7 +3100,9 @@
             "TR24838"
         ],
         "disease_description":"Glutaminase deficiency is characterized by refractory seizures, respiratory failure, brain abnormalities and death in the neonatal period, though milder cases with spastic ataxia-dysarthria have also been reported. This condition is caused by mutations in the glutaminase (GLS) gene [@mondo:0600001].",
-        "locus_tags":["sparse_evidence"],
+        "locus_tags":[
+            "sparse_evidence"
+        ],
         "disease_tags":[]
     },
     {
@@ -3034,7 +3197,9 @@
         ],
         "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:0007698].",
         "locus_tags":[],
-        "disease_tags":["hand_foot_genital_syndrome"]
+        "disease_tags":[
+            "hand_foot_genital_syndrome"
+        ]
     },
     {
         "chrom":"chr7",
@@ -3128,7 +3293,9 @@
         ],
         "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:0007698].",
         "locus_tags":[],
-        "disease_tags":["hand_foot_genital_syndrome"]
+        "disease_tags":[
+            "hand_foot_genital_syndrome"
+        ]
     },
     {
         "chrom":"chr7",
@@ -3222,7 +3389,9 @@
         ],
         "disease_description":"Hand-foot-genital syndrome (HFGS) is a very rare multiple congenital abnormality syndrome characterized by distal limb malformations and urogenital defects [@mondo:0007698].",
         "locus_tags":[],
-        "disease_tags":["hand_foot_genital_syndrome"]
+        "disease_tags":[
+            "hand_foot_genital_syndrome"
+        ]
     },
     {
         "chrom":"chr2",
@@ -3315,7 +3484,10 @@
             "TR24032"
         ],
         "disease_description":"Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present [@omim:186000].",
-        "locus_tags":["contraction", "sparse_evidence"],
+        "locus_tags":[
+            "contraction",
+            "sparse_evidence"
+        ],
         "disease_tags":[]
     },
     {
@@ -3412,7 +3584,18 @@
             "TR40018"
         ],
         "disease_description":"Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia [@mondo:0007739].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "length_affects_severity", "motif_affects_instability", "motif_affects_onset", "motif_affects_penetrance"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_phenotype",
+            "length_affects_severity",
+            "motif_affects_instability",
+            "motif_affects_onset",
+            "motif_affects_penetrance"
+        ],
         "disease_tags":[]
     },
     {
@@ -3507,7 +3690,13 @@
             "TR143309"
         ],
         "disease_description":"Huntington disease-like 2 (HDL2) is a severe neurodegenerative disorder considered part of the neuroacanthocytosis syndromes characterized by a triad of movement, psychiatric, and cognitive abnormalities [@mondo:0011671].",
-        "locus_tags":["somatic_instability", "length_affects_phenotype", "length_affects_onset", "length_affects_penetrance", "length_affects_severity"],
+        "locus_tags":[
+            "somatic_instability",
+            "length_affects_phenotype",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_severity"
+        ],
         "disease_tags":[]
     },
     {
@@ -3602,8 +3791,14 @@
             "TR88348"
         ],
         "disease_description":"Adult-onset ptosis, dysphagia [@pmid:39349043]; External ophthalmoplegia, facial weakness, pharyngeal, and distal limb weakness [@pmid:38876750]; May be slight male predominance [@pmid:34047774].",
-        "locus_tags":["somatic_instability", "anticipation", "length_affects_onset"],
-        "disease_tags":["oculopharyngodistal_myopathy"]
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "length_affects_onset"
+        ],
+        "disease_tags":[
+            "oculopharyngodistal_myopathy"
+        ]
     },
     {
         "chrom":"chr5",
@@ -3706,8 +3901,15 @@
             "TR51895"
         ],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750]; Adult-onset cortical tremor with epilepsy [@pmid:39349043].",
-        "locus_tags":["somatic_instability", "motif_affects_onset", "motif_affects_penetrance", "motif_affects_severity"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "somatic_instability",
+            "motif_affects_onset",
+            "motif_affects_penetrance",
+            "motif_affects_severity"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chr1",
@@ -3721,14 +3923,14 @@
         "disease_id":"ADTKD",
         "gene_strand":"+",
         "reference_motif_reference_orientation":[
-          "C"
-          ],
+            "C"
+        ],
         "pathogenic_motif_reference_orientation":[
             "C"
-          ],
+        ],
         "pathogenic_motif_gene_orientation":[
             "C"
-          ],
+        ],
         "benign_motif_reference_orientation":[],
         "benign_motif_gene_orientation":[],
         "unknown_motif_reference_orientation":[],
@@ -3739,7 +3941,7 @@
         "locus_structure":"(C)*",
         "inheritance":[
             "AD"
-          ],
+        ],
         "type":"Coding",
         "location_in_gene":"Exon 2",
         "benign_min":7.0,
@@ -3760,31 +3962,40 @@
         "mechanism_detail":"Toxic protein product accumulates in kidneys [@genereviews:NBK153723]",
         "source":[],
         "details":"Disease is caused by the single base expansion of a heptanucleotide (7) cytosine homopolymer tract within one copy of a coding VNTR, resulting in a frameshift mutation. This VNTR has a 60 bp motif which ranges in copy number from 20-125 (~1.5-5 kb) and is GC-rich (>80%). The specific copy of the VNTR motif involved varies by family but is consistent within a family [@genereviews:NBK535148]. This locus is particularly difficult to genotype [@pmid:23396133].",
-          "omim":[
-            "174000"],
+        "omim":[
+            "174000"
+        ],
         "prevalence":"2.5/1000000",
         "prevalence_details":"Disease is affected 1-4/1,000,000 (likely an underestimate due to unremarkable findings); repeat expansion responsibile for 95% of disease [@genereviews:NBK153723]",
-        "stripy":null,
-        "gnomad":null,
-        "genereviews":["NBK153723"],
+        "stripy":[],
+        "gnomad":[],
+        "genereviews":[
+            "NBK153723"
+        ],
         "mondo":[
-            "0020726"],
+            "0020726"
+        ],
         "year":"2013 [@pmid:23396133]",
         "medgen":[
-            "358137"],
+            "358137"
+        ],
         "orphanet":[
-         "88949"],
+            "88949"
+        ],
         "gard":[
-           "7002"],
-        "malacard":["TBL032"],
+            "7002"
+        ],
+        "malacard":[
+            "TBL032"
+        ],
         "webstr_hg38":[],
         "webstr_hg19":[],
         "tr_atlas":[],
         "disease_description":"An inherited disorder that causes a gradual loss of kidney function, caused by a mutation in the MUC1 gene that leads to production of an abnormal mucin 1 protein, which deposits in the kidney and leads to slow loss of kidney function [@mondo:0020726].",
         "locus_tags":[],
         "disease_tags":[]
-      },
-      {
+    },
+    {
         "chrom":"chr15",
         "start_hg38":156591766,
         "stop_hg38":156591783,
@@ -3796,11 +4007,14 @@
         "disease_id":"NME",
         "gene_strand":"+",
         "reference_motif_reference_orientation":[
-           "GGGCC"],
+            "GGGCC"
+        ],
         "pathogenic_motif_reference_orientation":[
-           "GGGCC"],
+            "GGGCC"
+        ],
         "pathogenic_motif_gene_orientation":[
-           "GGGCC"],
+            "CCGGG"
+        ],
         "benign_motif_reference_orientation":[],
         "benign_motif_gene_orientation":[],
         "unknown_motif_reference_orientation":[],
@@ -3810,7 +4024,8 @@
         "flank_motif":null,
         "locus_structure":"(GGGCC)*",
         "inheritance":[
-               "AR"],
+            "AR"
+        ],
         "type":"5' UTR",
         "location_in_gene":null,
         "benign_min":2.0,
@@ -3832,43 +4047,41 @@
         "source":[],
         "details":"Benign range (2-7) alleles established by 484 control alleles and validated with orthogonal databases, while single proband had expansion of ~200 repeats inherited from mother via uniparental disomy [@pmid:39455596]. While the repeat expansion is newly reported, other variants in the NAXE gene have previously been associated with mitochondrial encephalopathy.",
         "omim":[
-               "617186"
-           ],
+            "617186"
+        ],
         "prevalence":null,
         "prevalence_details":"Single proband found in Japanese cohort [@pmid:39455596].",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
         "mondo":[
-               "0020781"
-           ],
+            "0020781"
+        ],
         "year":"2024 [@pmid:39455596]",
         "medgen":[
-               "934642"
-           ],
+            "934642"
+        ],
         "orphanet":[
-               "555407"
-           ],
+            "555407"
+        ],
         "gard":[
-               "17991"
-           ],
+            "17991"
+        ],
         "malacard":[
-               "ENC069"
-           ],
+            "ENC069"
+        ],
         "webstr_hg38":[
-               "1184343",
-               "6351240"
-           ],
+            "1184343",
+            "6351240"
+        ],
         "webstr_hg19":[],
         "tr_atlas":[
-               "TR7952"
-           ],
+            "TR7952"
+        ],
         "disease_description":"Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@pmid:39455596].",
         "locus_tags":[],
         "disease_tags":[]
-      },
-
-
+    },
     {
         "chrom":"chr15",
         "start_hg38":22786677,
@@ -3957,7 +4170,10 @@
             "TR133649"
         ],
         "disease_description":"Amyotrophic lateral sclerosis is a neurodegenerative disorder characterized by the death of motor neurons in the brain, brainstem, and spinal cord, resulting in fatal paralysis. ALS usually begins with asymmetric involvement of the muscles in middle adult life [@omim:105400].",
-        "locus_tags":["conflicting_evidence", "proposed_modifier"],
+        "locus_tags":[
+            "conflicting_evidence",
+            "proposed_modifier"
+        ],
         "disease_tags":[]
     },
     {
@@ -4022,7 +4238,9 @@
         "gnomad":[
             "NOP56"
         ],
-        "genereviews":["NBK535148"],
+        "genereviews":[
+            "NBK535148"
+        ],
         "mondo":[
             "0013594"
         ],
@@ -4051,7 +4269,11 @@
             "TR157811"
         ],
         "disease_description":"Spinocerebellar ataxia type 36 (SCA36) is a subtype of autosomal dominant cerebellar ataxia type 1 (ADCA type 1) characterized by gait and limb ataxia, lower limb spasticity, dysarthria, muscle fasiculations, tongue atrophy and hyperreflexia [@mondo:0013594].",
-        "locus_tags":["somatic_instability", "length_affects_onset", "length_affects_severity"],
+        "locus_tags":[
+            "somatic_instability",
+            "length_affects_onset",
+            "length_affects_severity"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -4143,8 +4365,17 @@
             "TR7525"
         ],
         "disease_description":"Neuronal intranuclear inclusion disease (NIID) is a very rare multisystem neurodegenerative disorder characterized by the presence of eosinophilic intranuclear inclusions in neuronal and glial cells, and neuronal loss [@mondo:0011327].",
-        "locus_tags":["somatic_instability", "paternal_expansion", "length_affects_onset", "length_affects_phenotype", "motif_affects_onset", "motif_affects_phenotype"],
-        "disease_tags":["phenotypic_spectrum"]
+        "locus_tags":[
+            "somatic_instability",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_phenotype",
+            "motif_affects_onset",
+            "motif_affects_phenotype"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum"
+        ]
     },
     {
         "chrom":"chr10",
@@ -4231,7 +4462,11 @@
             "TR102881"
         ],
         "disease_description":"Oculopharyngodistal myopathy and white matter abnormalities [@pmid:38876750]; Ptosis, ophthalmoplegia, dysphagia, dysarthria [@pmid:39349043].",
-        "locus_tags":["sparse_evidence", "length_affects_severity", "length_affects_phenotype"],
+        "locus_tags":[
+            "sparse_evidence",
+            "length_affects_severity",
+            "length_affects_phenotype"
+        ],
         "disease_tags":[]
     },
     {
@@ -4263,7 +4498,8 @@
         "flank_motif":null,
         "locus_structure":"(GCN)*",
         "inheritance":[
-            "AD", "AR"
+            "AD",
+            "AR"
         ],
         "type":"Coding",
         "location_in_gene":"Exon 1",
@@ -4326,7 +4562,10 @@
             "TR128439"
         ],
         "disease_description":"Ptosis and dysphagia [@pmid:39349043]; facial weakness, ptosis [@pmid:38876750].",
-        "locus_tags":["length_affects_onset", "length_affects_severity"],
+        "locus_tags":[
+            "length_affects_onset",
+            "length_affects_severity"
+        ],
         "disease_tags":[]
     },
     {
@@ -4420,7 +4659,10 @@
             "TR42548"
         ],
         "disease_description":"A rare disease due to a severely impaired central autonomic control of breathing and dysfunction of the autonomous nervous system. The incidence is estimated to be at 1 of 200 000 livebirths. A heterozygous mutation of PHOX-2B gene is found in 90% of the patients. Association with a Hirschsprung's disease is observed in 16% of the cases (adapted from Mondo) [@mondo:0800026].",
-        "locus_tags":["length_affects_onset", "length_affects_severity"],
+        "locus_tags":[
+            "length_affects_onset",
+            "length_affects_severity"
+        ],
         "disease_tags":[]
     },
     {
@@ -4511,7 +4753,10 @@
             "TR137533"
         ],
         "disease_description":"sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [@pmid:38876750].",
-        "locus_tags":["conflicting_evidence", "proposed_modifier"],
+        "locus_tags":[
+            "conflicting_evidence",
+            "proposed_modifier"
+        ],
         "disease_tags":[]
     },
     {
@@ -4606,7 +4851,9 @@
             "TR59714"
         ],
         "disease_description":"Spinocerebellar ataxia type 12 (SCA12) is a very rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by the presence of action tremor associated with relatively mild cerebellar ataxia. Associated pyramidal and extrapyramidal signs and dementia have been reported [@mondo:0011439].",
-        "locus_tags":["length_affects_penetrance"],
+        "locus_tags":[
+            "length_affects_penetrance"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -4702,91 +4949,9 @@
             "TR97506"
         ],
         "disease_description":"A hereditary sensory neuropathy characterized by congenital insensitivity to pain and decreased sweating and tear production that has material basis in homozygous mutation in the PRDM12 gene on chromosome 9q34 [@mondo:0014662].",
-        "locus_tags":["sparse_evidence"],
-        "disease_tags":[]
-    },
-    {
-        "chrom":"chr15",
-        "start_hg38":88569434,
-        "stop_hg38":88569449,
-        "start_hg19":89112665,
-        "stop_hg19":89112680,
-        "start_t2t":86324039,
-        "stop_t2t":86324054,
-        "id":"pre-MIR7-2_CHNG3",
-        "disease_id":"CHNG3",
-        "gene_strand":"-",
-        "reference_motif_reference_orientation":[
-            "AAAC"
+        "locus_tags":[
+            "sparse_evidence"
         ],
-        "pathogenic_motif_reference_orientation":[
-            "AAAC"
-        ],
-        "pathogenic_motif_gene_orientation":[
-            "GTTT"
-        ],
-        "benign_motif_reference_orientation":[],
-        "benign_motif_gene_orientation":[],
-        "unknown_motif_reference_orientation":[],
-        "unknown_motif_gene_orientation":[],
-        "disease":"Nongoitrous congenital hypothyroidism-3",
-        "gene":"pre-MIR7-2",
-        "flank_motif":null,
-        "locus_structure":"(TTTG)*",
-        "inheritance":[
-            "AD"
-        ],
-        "type":"Non-coding",
-        "location_in_gene":null,
-        "benign_min":4.0,
-        "benign_max":4.0,
-        "intermediate_min":null,
-        "intermediate_max":null,
-        "pathogenic_min":3.0,
-        "pathogenic_max":3.0,
-        "ref_copies":null,
-        "motif_len":4,
-        "age_onset":"0 (birth)",
-        "age_onset_min":0.0,
-        "age_onset_max":0.0,
-        "typ_age_onset_min":null,
-        "typ_age_onset_max":null,
-        "novel":"ref",
-        "mechanism":"GoF",
-        "mechanism_detail":"Activates a thyroid-specific enhancer [@pmid:38714868; @pmid:38714869].",
-        "source":[],
-        "details":"Deletion of one repeat (4 to 3 repeats) found in 10 unrelated families with unsolved disease [@pmid:38714869]; a heterozygous T-to-G transversion in the third repeat can also lead to disease [@pmid:38714868].",
-        "omim":[
-            "609893"
-        ],
-        "prevalence":null,
-        "prevalence_details":"Found in 12 families, with ancestry including: Irish, White European, French (Normandie), Ashkenazi, French Canadian, Danish/White European, Welsh, Scottish, Italian, British/White European, Italian/Turkish/Lebanese, German/Palestinian, and South Chinese [@pmid:38714868].",
-        "stripy":null,
-        "gnomad":null,
-        "genereviews":[],
-        "mondo":[
-            "0012360"
-        ],
-        "year":"2024 [@pmid:38714869]",
-        "medgen":[
-            "424853"
-        ],
-        "orphanet":[],
-        "gard":[
-            "1487"
-        ],
-        "malacard":["HYP355"],
-        "webstr_hg38":[
-            "5177365"
-        ],
-        "webstr_hg19":[
-            "STR_492924"
-        ],
-        "tr_atlas":[
-            "TR192005"
-        ],
-        "disease_description":"Nongoitrous congenital hypothyroidism-3 (CHNG3) is characterized by infantile-onset clinical and subclinical hypothyroidism associated with a small thyroid gland, high circulating TSH, normal free T4 levels, and normal or mildly increased serum thyroglobulin. Untreated patients or patients who discontinue treatment show a characteristic transition to multinodular goiter (MNG) with age [@omim:609893].",
-        "locus_tags":["contraction"],
         "disease_tags":[]
     },
     {
@@ -4875,7 +5040,9 @@
             "TR157964"
         ],
         "disease_description":"Inherited or familial Creutzfeldt-Jakob disease (fCJD) is a very rare form of genetic prion disease characterized by typical CJD features (rapidly progressive dementia, personality/behavioral changes, psychiatric disorders, myoclonus, and ataxia) with a genetic cause and sometimes a family history of dementia [@mondo:0007403].",
-        "locus_tags":["length_affects_phenotype"],
+        "locus_tags":[
+            "length_affects_phenotype"
+        ],
         "disease_tags":[]
     },
     {
@@ -4961,8 +5128,12 @@
         "webstr_hg19":[],
         "tr_atlas":[],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-        "locus_tags":["motif_affects_onset"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "motif_affects_onset"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chr4",
@@ -5062,8 +5233,12 @@
             "TR49300"
         ],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-        "locus_tags":["motif_affects_penetrance"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "motif_affects_penetrance"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chr4",
@@ -5098,7 +5273,6 @@
             "AAAGG",
             "AAGAG",
             "AAAGGG"
-
         ],
         "benign_motif_gene_orientation":[
             "CTTTT",
@@ -5204,7 +5378,11 @@
             "TR42349"
         ],
         "disease_description":"Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [@pmid:38876750]; Late-onset ataxia, sensory neuropathy, vestibular areflexia syndrome [@pmid:39349043].",
-        "locus_tags":["motif_affects_penetrance", "length_affects_onset", "length_affects_severity"],
+        "locus_tags":[
+            "motif_affects_penetrance",
+            "length_affects_onset",
+            "length_affects_severity"
+        ],
         "disease_tags":[
             "ataxia"
         ]
@@ -5296,7 +5474,9 @@
         ],
         "disease_description":"Ptosis, external ophthalmoplegia, facial weakness, and pharyngeal and distal limb weakness [@pmid:38876750].",
         "locus_tags":[],
-        "disease_tags":["oculopharyngodistal_myopathy"]
+        "disease_tags":[
+            "oculopharyngodistal_myopathy"
+        ]
     },
     {
         "chrom":"chr6",
@@ -5491,8 +5671,16 @@
             "TR89226"
         ],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750]; Adult-onset cortical myoclonus, with seizures in up to a half of patients [@pmid:39349043].",
-        "locus_tags":["somatic_instability", "anticipation", "motif_affects_instability", "motif_affects_onset", "motif_affects_penetrance"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "motif_affects_instability",
+            "motif_affects_onset",
+            "motif_affects_penetrance"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chrX",
@@ -5583,7 +5771,10 @@
             "TR173479"
         ],
         "disease_description":"X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without [intellectual disability] [@pmid:24346842].",
-        "locus_tags":["sparse_evidence", "contraction"],
+        "locus_tags":[
+            "sparse_evidence",
+            "contraction"
+        ],
         "disease_tags":[]
     },
     {
@@ -5699,8 +5890,14 @@
             "TR19329"
         ],
         "disease_description":"Finger, hand tremor with later-onset myoclonus and generalised tonic-clonic seizures [@pmid:39349043].",
-        "locus_tags":["somatic_instability", "motif_affects_instability", "motif_affects_penetrance"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "somatic_instability",
+            "motif_affects_instability",
+            "motif_affects_penetrance"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chrX",
@@ -5789,7 +5986,9 @@
             "TR592600"
         ],
         "disease_description":"X-linked dystonia-parkinsonism (XDP) associated with antisense insertion of a SINE-VNTR-Alu (SVA)-type retrotransposon within an intron of TAF1. Clinical features include focal and generalised dystonia, parkinsonism, cognitive dysfunction. XX individuals who are heterozygous carriers usually do not develop the full syndrome, although some patients have non-progressive focal dystonia with parkinsonism. Disease severity is associated with number of hexanucleotide repeats within the SVA. (Adapted) [@pmid:38876750].",
-        "locus_tags":["length_affects_onset"],
+        "locus_tags":[
+            "length_affects_onset"
+        ],
         "disease_tags":[]
     },
     {
@@ -5881,7 +6080,15 @@
             "TR72502"
         ],
         "disease_description":"A rare subtype of type I autosomal dominant cerebellar ataxia (ADCA type I). It is characterized by a variable clinical picture which can include dementia, psychiatric disorders, parkinsonism, dystonia, chorea, spasticity, and epilepsy [@mondo:0011781].",
-        "locus_tags":["somatic_instability", "anticipation", "paternal_expansion", "length_affects_onset", "length_affects_penetrance", "length_affects_phenotype", "motif_affects_instability"],
+        "locus_tags":[
+            "somatic_instability",
+            "anticipation",
+            "paternal_expansion",
+            "length_affects_onset",
+            "length_affects_penetrance",
+            "length_affects_phenotype",
+            "motif_affects_instability"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -5977,7 +6184,9 @@
             "TR163862"
         ],
         "disease_description":"Tetralogy of Fallot is a congenital cardiac malformation that consists of an interventricular communication, also known as a ventricular septal defect, obstruction of the right ventricular outflow tract, override of the ventricular septum by the aortic root, and right ventricular hypertrophy [@mondo:0008542].",
-        "locus_tags":["sparse_evidence"],
+        "locus_tags":[
+            "sparse_evidence"
+        ],
         "disease_tags":[]
     },
     {
@@ -6071,7 +6280,9 @@
             "TR151784"
         ],
         "disease_description":"Late-onset Fuchs endothelial corneal dystrophy (FECD) is a degenerative disorder ... distinguished from other corneal disorders by the progressive formation of guttae [@omim:613267].",
-        "locus_tags":["length_affects_penetrance"],
+        "locus_tags":[
+            "length_affects_penetrance"
+        ],
         "disease_tags":[]
     },
     {
@@ -6152,7 +6363,13 @@
             "TR142069"
         ],
         "disease_description":"THAP11-caused SCA involves symptoms including gait ataxia, dysarthia, dysphagia, slow saccades, ptosis, and/or nystagmus [@pmid:37148549].",
-        "locus_tags":["anticipation", "length_affects_onset", "length_affects_severity", "motif_affects_onset", "motif_affects_severity"],
+        "locus_tags":[
+            "anticipation",
+            "length_affects_onset",
+            "length_affects_severity",
+            "motif_affects_onset",
+            "motif_affects_severity"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -6252,8 +6469,13 @@
             "TR139999"
         ],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-        "locus_tags":["sparse_evidence", "motif_affects_penetrance"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "sparse_evidence",
+            "motif_affects_penetrance"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chr1",
@@ -6342,7 +6564,9 @@
             "TR32"
         ],
         "disease_description":"Autosomal recessive distal hereditary motor neuronopathy-7 (HMNR7) is characterized by onset of lower leg weakness in the first decade. Affected individuals have difficulty climbing stairs and problems standing on the heels... Most patients have foot deformities, and some may have leg muscle atrophy. The disorder is slowly progressive and often involves the upper limbs [@omim:619216].",
-        "locus_tags":["contraction"],
+        "locus_tags":[
+            "contraction"
+        ],
         "disease_tags":[]
     },
     {
@@ -6535,8 +6759,13 @@
             "TR38932"
         ],
         "disease_description":"Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-        "locus_tags":["sparse_evidence", "motif_affects_penetrance"],
-        "disease_tags":["familial_adult_myoclonic_epilepsy"]
+        "locus_tags":[
+            "sparse_evidence",
+            "motif_affects_penetrance"
+        ],
+        "disease_tags":[
+            "familial_adult_myoclonic_epilepsy"
+        ]
     },
     {
         "chrom":"chr16",
@@ -6623,7 +6852,9 @@
             "TR142346"
         ],
         "disease_description":"Spinocerebellar ataxia type 4 (SCA4) is a very rare progressive subtype of type I autosomal dominant cerebellar ataxia (ADCA type I) characterized by ataxia with sensory neuropathy (adapted from Mondo) [@mondo:0010847].",
-        "locus_tags":["length_affects_onset"],
+        "locus_tags":[
+            "length_affects_onset"
+        ],
         "disease_tags":[
             "spinocerebellar_ataxia"
         ]
@@ -6811,8 +7042,12 @@
             "TR173313"
         ],
         "disease_description":"VACTERL is an acronym for vertebral anomalies (similar to those of spondylocostal dysplasia), anal atresia, cardiac malformations, tracheoesophageal fistula, renal anomalies (urethral atresia with hydronephrosis), and limb anomalies [@omim:314390].",
-        "locus_tags":["sparse_evidence"],
-        "disease_tags":["phenotypic_spectrum"]
+        "locus_tags":[
+            "sparse_evidence"
+        ],
+        "disease_tags":[
+            "phenotypic_spectrum"
+        ]
     },
     {
         "chrom":"chr7",
@@ -6892,7 +7127,97 @@
             "TR300995"
         ],
         "disease_description":"A spectrum of developmental disorders that includes autism, and Asperger syndrome. Signs and symptoms include poor communication skills, defective social interactions, and repetitive behaviors [@mondo:0005258].",
-        "locus_tags":["sparse_evidence"],
+        "locus_tags":[
+            "sparse_evidence"
+        ],
+        "disease_tags":[]
+    },
+    {
+        "chrom":"chr15",
+        "start_hg38":88569434,
+        "stop_hg38":88569449,
+        "start_hg19":89112665,
+        "stop_hg19":89112680,
+        "start_t2t":86324039,
+        "stop_t2t":86324054,
+        "id":"pre-MIR7-2_CHNG3",
+        "disease_id":"CHNG3",
+        "gene_strand":"-",
+        "reference_motif_reference_orientation":[
+            "AAAC"
+        ],
+        "pathogenic_motif_reference_orientation":[
+            "AAAC"
+        ],
+        "pathogenic_motif_gene_orientation":[
+            "GTTT"
+        ],
+        "benign_motif_reference_orientation":[],
+        "benign_motif_gene_orientation":[],
+        "unknown_motif_reference_orientation":[],
+        "unknown_motif_gene_orientation":[],
+        "disease":"Nongoitrous congenital hypothyroidism-3",
+        "gene":"pre-MIR7-2",
+        "flank_motif":null,
+        "locus_structure":"(TTTG)*",
+        "inheritance":[
+            "AD"
+        ],
+        "type":"Non-coding",
+        "location_in_gene":null,
+        "benign_min":4.0,
+        "benign_max":4.0,
+        "intermediate_min":null,
+        "intermediate_max":null,
+        "pathogenic_min":3.0,
+        "pathogenic_max":3.0,
+        "ref_copies":null,
+        "motif_len":4,
+        "age_onset":"0 (birth)",
+        "age_onset_min":0.0,
+        "age_onset_max":0.0,
+        "typ_age_onset_min":null,
+        "typ_age_onset_max":null,
+        "novel":"ref",
+        "mechanism":"GoF",
+        "mechanism_detail":"Activates a thyroid-specific enhancer [@pmid:38714868; @pmid:38714869].",
+        "source":[],
+        "details":"Deletion of one repeat (4 to 3 repeats) found in 10 unrelated families with unsolved disease [@pmid:38714869]; a heterozygous T-to-G transversion in the third repeat can also lead to disease [@pmid:38714868].",
+        "omim":[
+            "609893"
+        ],
+        "prevalence":null,
+        "prevalence_details":"Found in 12 families, with ancestry including: Irish, White European, French (Normandie), Ashkenazi, French Canadian, Danish/White European, Welsh, Scottish, Italian, British/White European, Italian/Turkish/Lebanese, German/Palestinian, and South Chinese [@pmid:38714868].",
+        "stripy":[],
+        "gnomad":[],
+        "genereviews":[],
+        "mondo":[
+            "0012360"
+        ],
+        "year":"2024 [@pmid:38714869]",
+        "medgen":[
+            "424853"
+        ],
+        "orphanet":[],
+        "gard":[
+            "1487"
+        ],
+        "malacard":[
+            "HYP355"
+        ],
+        "webstr_hg38":[
+            "5177365"
+        ],
+        "webstr_hg19":[
+            "STR_492924"
+        ],
+        "tr_atlas":[
+            "TR192005"
+        ],
+        "disease_description":"Nongoitrous congenital hypothyroidism-3 (CHNG3) is characterized by infantile-onset clinical and subclinical hypothyroidism associated with a small thyroid gland, high circulating TSH, normal free T4 levels, and normal or mildly increased serum thyroglobulin. Untreated patients or patients who discontinue treatment show a characteristic transition to multinodular goiter (MNG) with age [@omim:609893].",
+        "locus_tags":[
+            "contraction"
+        ],
         "disease_tags":[]
     }
 ]

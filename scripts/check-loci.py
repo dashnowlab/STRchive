@@ -197,7 +197,7 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5):
         
         # Write JSON file
         with open(out_json, 'w') as out_json_file:
-            json.dump(data, out_json_file, indent=4, separators=(',', ':'))
+            json.dump(data, out_json_file, indent=4, separators=(',', ':'), ensure_ascii=False)
 
 if __name__ == '__main__':
     doctest.testmod()
