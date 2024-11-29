@@ -30,7 +30,7 @@ def clean_loci(data, genome):
         for field in ['chrom', 'start_' + genome, 'stop_' + genome, 'pathogenic_motif_reference_orientation', 'gene', 'id']:
             if field not in row:
                 raise ValueError(f'Missing field {field} in input file.')
-            if row[field].strip() == '':
+            if row[field] is None or row[field] == '':
                 sys.stderr.write(f'Missing value for field {field} in input file. Skipping {row["id"]}\n')
                 complete = False
         if complete:
@@ -62,7 +62,7 @@ def trgt_catalog(row, genome = 'hg38'):
     stop = int(row['stop_' + genome])
     struc = ''
 
-    if row['flank_motif'] != '':
+    if row['flank_motif'] != '' and row['flank_motif'] is not None:
         # get motifs in parentheses using regex
         flank_motif = row['flank_motif']
         motifs = re.findall(r'\((.*?)\)', flank_motif)
@@ -101,11 +101,15 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38')
     """
     :param input: STRchive database file name (CSV or JSON)
     :param output: Output file name
-    :param genome: Genome build (hg19, hg38 or T2T)
+    :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
     :param format: Variant caller catalog file format (TRGT)
     """
 
     genome = genome.lower()
+    if genome not in ['hg19', 'hg38', 't2t', 'chm13', 'chm13-t2t', 't2t-chm13']:
+        raise ValueError(f'Unknown genome build: {genome}\nExpected hg19, hg38, T2T, chm13, chm13-T2T or T2T-chm13.')
+    if genome in ['chm13', 'chm13-t2t', 't2t-chm13']:
+        genome = 't2t'
 
     if input.lower().endswith('.csv'):
         with open(input, 'r') as csv_file:
