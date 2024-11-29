@@ -2,7 +2,14 @@ Note: all commands are assumed to be run from this directory (`scripts`)
 
 # Install dependencies
 
-`conda env update --file environment.yml --prune`
+New install:  
+`conda env create --file environment.yml`
+
+Update existing installation:  
+```
+conda activate strchive
+conda env update --file environment.yml --prune
+```
 
 ## Install biomaRt
 
