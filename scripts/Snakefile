@@ -12,6 +12,8 @@ wildcard_constraints:
 
 rule all:
     input:
+        # Check loci
+        expand("{base_dir}check-loci.json", base_dir = base_dir),
         # Citations
         expand("{base_dir}STRchive-citations.json", base_dir = base_dir),
         # TRGT bed files
@@ -25,11 +27,22 @@ rule all:
 
         # To do: add STRchive version number to all the bed files?
 
+rule check_loci:
+    input:
+        in_json = in_json
+    output:
+        check = temp("{base_dir}check-loci.json")
+    shell:
+        """
+        python check-loci.py {input.in_json} 2> {output.check}
+        """
+
 rule retrieve:
     input:
         in_json = in_json,
         lit_dir = "{base_dir}literature",
-        script_path = "get-literature.R"
+        script_path = "get-literature.R",
+        check = "{base_dir}check-loci.json"
     output:
         citations = temp("{base_dir}citations-tmp.json")
     shell:
@@ -40,7 +53,8 @@ rule retrieve:
 # Note, this currently takes hours to run
 rule manubot:
     input:
-        citations = "{base_dir}citations-tmp.json"
+        citations = "{base_dir}citations-tmp.json",
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}STRchive-citations.json"
     shell:
@@ -50,7 +64,8 @@ rule manubot:
 
 rule TRGT_hg38:
     input:
-        in_json = in_json
+        in_json = in_json,
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}hg38.STRchive-disease-loci.TRGT.bed"
     shell:
@@ -60,7 +75,8 @@ rule TRGT_hg38:
 
 rule TRGT_hg19:
     input:
-        in_json = in_json
+        in_json = in_json,
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}hg19.STRchive-disease-loci.TRGT.bed"
     shell:
@@ -70,7 +86,8 @@ rule TRGT_hg19:
 
 rule TRGT_T2T:
     input:
-        in_json = in_json
+        in_json = in_json,
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed"
     shell:
@@ -80,7 +97,8 @@ rule TRGT_T2T:
 
 rule bed_hg38:
     input:
-        in_json = in_json
+        in_json = in_json,
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}hg38.STRchive-disease-loci.bed"
     shell:
@@ -90,7 +108,8 @@ rule bed_hg38:
 
 rule bed_hg19:
     input:
-        in_json = in_json
+        in_json = in_json,
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}hg19.STRchive-disease-loci.bed"
     shell:
@@ -100,7 +119,8 @@ rule bed_hg19:
 
 rule bed_T2T:
     input:
-        in_json = in_json
+        in_json = in_json,
+        check = "{base_dir}check-loci.json"
     output:
         results = "{base_dir}T2T-chm13.STRchive-disease-loci.bed"
     shell:
