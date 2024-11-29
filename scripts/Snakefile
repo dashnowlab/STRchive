@@ -1,7 +1,6 @@
 configfile: '../data/config.yaml'
 in_json: str = config["input_file"]
 base_dir: str = config["base_directory"]
-#out_json: str = config["output_file"]
 
 ### IMPORTS ###
 import os
@@ -13,7 +12,7 @@ wildcard_constraints:
 
 rule all:
     input:
-        expand("{base_dir}STRchive_citations.json", base_dir = base_dir)
+        expand("{base_dir}STRchive-citations.json", base_dir = base_dir)
 
 rule retrieve:
     input:
@@ -21,7 +20,7 @@ rule retrieve:
         lit_dir = "{base_dir}literature",
         script_path = "get-literature.R"
     output:
-        citations = temp("{base_dir}citations.json")
+        citations = "{base_dir}citations-tmp.json"
     shell:
         """
         Rscript {input.script_path} {input.in_json} {input.lit_dir} {output.citations}
@@ -29,11 +28,11 @@ rule retrieve:
 
 rule manubot:
     input:
-        citations = "{base_dir}citations.json"
+        citations = "{base_dir}citations-tmp.json"
     output:
-        results = "{base_dir}STRchive_citations.json"
+        results = "{base_dir}STRchive-citations.json"
     shell:
         """
-        bash run-manubot.sh {input.citations} {output.results}
+        python run-manubot.py {input.citations} {output.results}
         """
 

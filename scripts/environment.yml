@@ -17,3 +17,6 @@ dependencies:
   - r-easypubmed
   - r-stringr
   - r-purrr
+  - pip
+  - pip:
+    - manubot
