@@ -191,6 +191,9 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5):
         for record in data:
             record = check_list_fields(record)
             record = check_motif_orientation(record)
+
+        # Sort records by gene name then id
+        data = sorted(data, key = lambda x: (x['gene'], x['id']))
         
         # Write JSON file
         with open(out_json, 'w') as out_json_file:
