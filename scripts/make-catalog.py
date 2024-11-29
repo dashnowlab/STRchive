@@ -1,7 +1,7 @@
-import csv
 import json
 import sys
 import re
+import decimal
 
 def chrom_to_int(chrom):
     """
@@ -18,7 +18,21 @@ def chrom_to_int(chrom):
         return 102
     else:
         return int(chrom)
-    
+
+def remove_exponent(d):
+    """
+    >>> remove_exponent(5.00)
+    Decimal('5')
+
+    >>> remove_exponent(5.500)
+    Decimal('5.5')
+
+    >>> remove_exponent(10000.0)
+    Decimal('10000')
+    """
+    d = decimal.Decimal(d)
+    return d.quantize(decimal.Decimal(1)) if d == d.to_integral() else d.normalize()
+
 def clean_loci(data, genome):
     """Exclude incomplete entries. Warn about multiple nearby entries in same gene.
     :param data: list of dictionaries with STR data
@@ -97,12 +111,44 @@ def trgt_catalog(row, genome = 'hg38'):
 
     return definition
 
-def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38'):
+def extended_bed(row, fields = [], genome = 'hg38'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param fields: list of fields to include in the extended BED format beyond chrom, start, stop
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: BED format catalog string
+
+    >>> extended_bed({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'pathogenic_motif_reference_orientation': 'CAG', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': '10', 'inheritance': 'AD', 'disease': 'Disease Name'}, ['id', 'gene', 'pathogenic_motif_reference_orientation', 'pathogenic_min', 'inheritance', 'disease'])
+    'chr1\t100\t200\tmyid\tmygene\tCAG\t10\tAD\tDisease Name'
+
+    >>> extended_bed({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'pathogenic_motif_reference_orientation': 'CAG', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': '10', 'inheritance': 'AD', 'disease': 'Disease Name'})
+    'chr1\t100\t200'
     """
-    :param input: STRchive database file name (CSV or JSON)
-    :param output: Output file name
+    start = int(row['start_' + genome])
+    stop = int(row['stop_' + genome])
+
+    bed_string = f"{row['chrom']}\t{start}\t{stop}"
+    if len(fields) > 0:
+        for field in fields:
+            if isinstance(row[field], list):
+                row[field] = ','.join(row[field])
+            if isinstance(row[field], float):
+                row[field] = remove_exponent(row[field])
+            # ensure field does not contain tabs
+            if isinstance(row[field], str) and '\t' in row[field]:
+                raise ValueError(f'Tab character found in field {field} value: {row[field]}')
+            bed_string += f"\t{row[field]}" 
+    return bed_string
+
+default_fields = ','.join(['id', 'gene', 'pathogenic_motif_reference_orientation', 'pathogenic_min', 'inheritance', 'disease'])
+
+def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38', fields: str = default_fields):
+    """
+    :param input: STRchive database file name in JSON format
+    :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format (TRGT)
+    :param format: Variant caller catalog file format BED format (TRGT or BED)
+    :param fields: Comma separated list of fields to include in the extended BED format beyond chrom,start,stop (no spaces in list)
     """
 
     genome = genome.lower()
@@ -111,36 +157,33 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38')
     if genome in ['chm13', 'chm13-t2t', 't2t-chm13']:
         genome = 't2t'
 
-    if input.lower().endswith('.csv'):
-        with open(input, 'r') as csv_file:
-            csv_reader = csv.DictReader(csv_file)
-            # convert to dictionary
-            data = []
-            for row in csv_reader:
-                row_dict = {}
-                for k,v in row.items():
-                    row_dict[k] = v
-                data.append(row_dict)
-    elif input.lower().endswith('.json'):
+    if input.lower().endswith('.json'):
         with open(input, 'r') as json_file:
-            data = json.load(json_file)
-            
+            data = json.load(json_file)    
     else:
-        raise ValueError('Unknown input file format. Expected .csv or .json.')
+        raise ValueError(f'Unknown input file extension: {input} \nExpected .json')
+
+    if fields != default_fields and format.lower() != 'bed':
+        raise ValueError('Fields option is only available for BED format output.')
 
     data = clean_loci(data, genome)
 
     # sort by chromosome and start position
     data = sorted(data, key = lambda x: (chrom_to_int(x['chrom']), int(x['start_' + genome])))
 
-    if format.upper() == 'TRGT':
+    if format.lower() == 'trgt':
         with open(output, 'w') as out_file:
             for row in data:
                 out_file.write(trgt_catalog(row, genome) + '\n')
+    elif format.lower() == 'bed':
+        fields_list = fields.split(',')
+        header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
+        with open(output, 'w') as out_file:
+            out_file.write(header)
+            for row in data:
+                out_file.write(extended_bed(row, fields_list, genome) + '\n')
     else:
-        raise ValueError('Unknown output file format. Expected TRGT.')
-    
-
+        raise ValueError('Unknown output file format. Expected TRGT or BED.')
 
 if __name__ == "__main__":
     import doctest
