@@ -12,7 +12,10 @@ wildcard_constraints:
 
 rule all:
     input:
-        expand("{base_dir}STRchive-citations.json", base_dir = base_dir)
+        expand("{base_dir}STRchive-citations.json", base_dir = base_dir),
+        expand("{base_dir}hg38.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
+        expand("{base_dir}hg19.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
+        expand("{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed", base_dir = base_dir)
 
 rule retrieve:
     input:
@@ -20,7 +23,7 @@ rule retrieve:
         lit_dir = "{base_dir}literature",
         script_path = "get-literature.R"
     output:
-        citations = "{base_dir}citations-tmp.json"
+        citations = temp("{base_dir}citations-tmp.json")
     shell:
         """
         Rscript {input.script_path} {input.in_json} {input.lit_dir} {output.citations}
@@ -36,3 +39,34 @@ rule manubot:
         python run-manubot.py {input.citations} {output.results}
         """
 
+# To do: add STRchive version to the bed files?
+
+rule TRGT_hg38:
+    input:
+        in_json = in_json
+    output:
+        results = "{base_dir}hg38.STRchive-disease-loci.TRGT.bed"
+    shell:
+        """
+        python make-catalog.py -f TRGT -g hg38 {input.in_json} {output.results}
+        """
+
+rule TRGT_hg19:
+    input:
+        in_json = in_json
+    output:
+        results = "{base_dir}hg19.STRchive-disease-loci.TRGT.bed"
+    shell:
+        """
+        python make-catalog.py -f TRGT -g hg19 {input.in_json} {output.results}
+        """
+
+rule TRGT_T2T:
+    input:
+        in_json = in_json
+    output:
+        results = "{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed"
+    shell:
+        """
+        python make-catalog.py -f TRGT -g T2T {input.in_json} {output.results}
+        """
