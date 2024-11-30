@@ -1,4 +1,13 @@
+# More useful error messages
 options(error=traceback)
+
+# Install biomaRt if not already installed
+if (!requireNamespace("biomaRt", quietly = TRUE)) {
+  if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager")
+  }
+  BiocManager::install("biomaRt")
+}
 
 suppressPackageStartupMessages({
   library(jsonlite)

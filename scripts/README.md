@@ -11,19 +11,7 @@ conda activate strchive
 conda env update --file environment.yml --prune
 ```
 
-## Install biomaRt
-
-I can't figure out how to get biomaRt to play nicely with conda, so installing it manually within the R environment:
-
-```
-$ conda activate strchive
-
-$ R
-
-> if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-> BiocManager::install("biomaRt")
-```
+Note: biomaRt isn't playing nicely with conda, so installing it within the R script where it is used.
 
 # Run all scripts to update STRchive
 
