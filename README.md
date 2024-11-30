@@ -26,6 +26,14 @@ Then run the "linting" script and fix any errors:
 
 ## Development
 
+### Run all scripts to update STRchive
+
+From the root directory, run:  
+`snakemake`
+
+Or to skip retrieve and manubot stages, which will speed things up substantially:  
+`snakemake --config stages="skip-refs"`
+
 ### Update TRGT genotyping catalogs
 
 ```
@@ -41,3 +49,20 @@ python scripts/make-catalog.py -f bed -g hg38 data/STRchive-loci.json data/hg38.
 python scripts/make-catalog.py -f bed -g T2T data/STRchive-loci.json data/T2T-chm13.STRchive-disease-loci.bed
 python scripts/make-catalog.py -f bed -g hg19 data/STRchive-loci.json data/hg19.STRchive-disease-loci.bed
 ```
+
+### Install dependencies
+
+New install:  
+```
+conda env create --file scripts/environment.yml
+conda activate strchive
+```
+
+Update existing installation:  
+```
+conda activate strchive
+conda env update --file scripts/environment.yml --prune
+conda activate strchive
+```
+
+Note: biomaRt isn't playing nicely with conda, so installing it within the R script where it is used.

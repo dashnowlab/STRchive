@@ -9,9 +9,10 @@
 # snakemake --config stages="skip-refs"
 
 
-configfile: '../data/config.yaml'
+configfile: 'workflow/config.yaml'
 in_json: str = config["input_file"]
 base_dir: str = config["base_directory"]
+scripts_dir: str = config["scripts_directory"]
 stages: str = config["stages"]
 
 #XXX To do: add STRchive version number to all the bed files?
@@ -62,20 +63,19 @@ rule check_loci:
         check = temp("{base_dir}check-loci.txt")
     shell:
         """
-        python check-loci.py {input.in_json} 2> {output.check}
+        python {scripts_dir}check-loci.py {input.in_json} 2> {output.check}
         """
 
 rule retrieve:
     input:
         in_json = in_json,
         lit_dir = "{base_dir}literature",
-        script_path = "get-literature.R",
         check = "{base_dir}check-loci.txt"
     output:
         citations = temp("{base_dir}citations-tmp.json")
     shell:
         """
-        Rscript {input.script_path} {input.in_json} {input.lit_dir} {output.citations}
+        Rscript {scripts_dir}get-literature.R {input.in_json} {input.lit_dir} {output.citations}
         """
 
 # Note, this currently takes hours to run
@@ -87,7 +87,7 @@ rule manubot:
         results = "{base_dir}STRchive-citations.json"
     shell:
         """
-        python run-manubot.py {input.citations} {output.results}
+        python {scripts_dir}run-manubot.py {input.citations} {output.results}
         """
 
 rule TRGT_hg38:
@@ -98,7 +98,7 @@ rule TRGT_hg38:
         results = "{base_dir}hg38.STRchive-disease-loci.TRGT.bed"
     shell:
         """
-        python make-catalog.py -f TRGT -g hg38 {input.in_json} {output.results}
+        python {scripts_dir}make-catalog.py -f TRGT -g hg38 {input.in_json} {output.results}
         """
 
 rule TRGT_hg19:
@@ -109,7 +109,7 @@ rule TRGT_hg19:
         results = "{base_dir}hg19.STRchive-disease-loci.TRGT.bed"
     shell:
         """
-        python make-catalog.py -f TRGT -g hg19 {input.in_json} {output.results}
+        python {scripts_dir}make-catalog.py -f TRGT -g hg19 {input.in_json} {output.results}
         """
 
 rule TRGT_T2T:
@@ -120,7 +120,7 @@ rule TRGT_T2T:
         results = "{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed"
     shell:
         """
-        python make-catalog.py -f TRGT -g T2T {input.in_json} {output.results}
+        python {scripts_dir}make-catalog.py -f TRGT -g T2T {input.in_json} {output.results}
         """
 
 rule bed_hg38:
@@ -131,7 +131,7 @@ rule bed_hg38:
         results = "{base_dir}hg38.STRchive-disease-loci.bed"
     shell:
         """
-        python make-catalog.py -f bed -g hg38 {input.in_json} {output.results}
+        python {scripts_dir}make-catalog.py -f bed -g hg38 {input.in_json} {output.results}
         """
 
 rule bed_hg19:
@@ -142,7 +142,7 @@ rule bed_hg19:
         results = "{base_dir}hg19.STRchive-disease-loci.bed"
     shell:
         """
-        python make-catalog.py -f bed -g hg19 {input.in_json} {output.results}
+        python {scripts_dir}make-catalog.py -f bed -g hg19 {input.in_json} {output.results}
         """
 
 rule bed_T2T:
@@ -153,5 +153,5 @@ rule bed_T2T:
         results = "{base_dir}T2T-chm13.STRchive-disease-loci.bed"
     shell:
         """
-        python make-catalog.py -f bed -g T2T {input.in_json} {output.results}
+        python {scripts_dir}make-catalog.py -f bed -g T2T {input.in_json} {output.results}
         """
