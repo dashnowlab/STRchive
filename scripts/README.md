@@ -15,7 +15,12 @@ Note: biomaRt isn't playing nicely with conda, so installing it within the R scr
 
 # Run all scripts to update STRchive
 
-From the `scripts` directory, run `snakemake`
+From the `scripts` directory, run:  
+`snakemake`
+
+Or to skip retrieve and manubot stages, which will speed things up substantially:  
+`snakemake --config stages="skip-refs"`
+
 
 # Script details
 
