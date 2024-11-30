@@ -1,27 +1,3 @@
-Note: all commands are assumed to be run from this directory (`scripts`)
-
-# Install dependencies
-
-New install:  
-`conda env create --file environment.yml`
-
-Update existing installation:  
-```
-conda activate strchive
-conda env update --file environment.yml --prune
-```
-
-Note: biomaRt isn't playing nicely with conda, so installing it within the R script where it is used.
-
-# Run all scripts to update STRchive
-
-From the `scripts` directory, run:  
-`snakemake`
-
-Or to skip retrieve and manubot stages, which will speed things up substantially:  
-`snakemake --config stages="skip-refs"`
-
-
 # Script details
 
 - `Snakefile`: runs all scripts below using the above `snakemake` command
