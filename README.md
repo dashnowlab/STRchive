@@ -19,14 +19,25 @@ Short Tandem Repeat disease loci resource
 
 If you notice an error, omission, or update, feel free to leave a comment or create a pull request.
 
-To make a change to the data itself, edit either `data/STRchive-database.json` or `data/STRchive-database.csv` (not both!)
+To make a change to the STRchive data itself, please edit `data/STRchive-loci.json`
+
+Then run the "linting" script and fix any errors:  
+`python scripts/check-loci.py data/STRchive-loci.json`
 
 ## Development
 
-### Update genotyping catalogs
+### Update TRGT genotyping catalogs
 
 ```
-python scripts/make_catalog.py -g T2T -f TRGT data/STRchive-database.csv data/T2T-CHM13.STRchive-disease-loci.TRGT.bed
-python scripts/make_catalog.py -g hg38 -f TRGT data/STRchive-database.csv data/hg38.STRchive-disease-loci.TRGT.bed
-python scripts/make_catalog.py -g hg19 -f TRGT data/STRchive-database.csv data/hg19.STRchive-disease-loci.TRGT.bed
+python scripts/make-catalog.py -g hg38 -f TRGT data/STRchive-loci.json data/hg38.STRchive-disease-loci.TRGT.bed
+python scripts/make-catalog.py -g T2T -f TRGT data/STRchive-loci.json data/T2T-chm13.STRchive-disease-loci.TRGT.bed
+python scripts/make-catalog.py -g hg19 -f TRGT data/STRchive-loci.json data/hg19.STRchive-disease-loci.TRGT.bed
+```
+
+### Update extended BED files
+
+```
+python scripts/make-catalog.py -f bed -g hg38 data/STRchive-loci.json data/hg38.STRchive-disease-loci.bed
+python scripts/make-catalog.py -f bed -g T2T data/STRchive-loci.json data/T2T-chm13.STRchive-disease-loci.bed
+python scripts/make-catalog.py -f bed -g hg19 data/STRchive-loci.json data/hg19.STRchive-disease-loci.bed
 ```

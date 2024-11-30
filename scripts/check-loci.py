@@ -43,7 +43,7 @@ list_fields = [
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Validate the STRchive loci JSON file and overwrite it with changes if needed.')
-    parser.add_argument('json', default='data/STRchive-database.json', help='STRchive loci JSON input file path')
+    parser.add_argument('json', default='data/STRchive-loci.json', help='STRchive loci JSON input file path')
     parser.add_argument('--schema', default=None, help='JSON schema file path (optional)')
     parser.add_argument('--out', default=None, help='Defaults to same as input JSON file path (overwriting)')
     parser.add_argument('--pause', default=5, help='Pause time in seconds before overwriting the file. Default: 5')
