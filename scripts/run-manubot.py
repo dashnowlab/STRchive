@@ -6,6 +6,12 @@ import subprocess
 import json
 import argparse
 
+# Special cases not handled by Manubot
+database_urls = {
+    "malacard": "https://www.malacards.org/card/{id}",
+    "genereviews": "https://www.ncbi.nlm.nih.gov/books/{id}",
+    }
+
 def parse_args():
     """
     Parse command line arguments
@@ -27,6 +33,13 @@ def cite_with_manubot(ids):
     for _id in ids:
         # new citation
         citation = {}
+
+        if _id.split(":")[0] in database_urls:
+            print(_id)
+            id_type = database_urls[_id.split(":")[0]]
+            url = database_urls[_id.split(":")[0]].format(id=_id.split(":")[1])
+            print(f"WARNING: Manubot does not support {_id}. Converted to URL: {url}")
+            _id = "url:" + url
 
         # original id
         citation["id"] = _id
