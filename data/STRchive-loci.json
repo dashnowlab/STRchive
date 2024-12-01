@@ -237,7 +237,7 @@
             "601464"
         ],
         "prevalence":null,
-        "prevalence_details":"1/862 (1/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) [@url:medrxiv.org/content/10.1101/2023.05.03.23289461v1.full.pdf]. Disease cases observed in South Australia [@pmid:24763282].",
+        "prevalence_details":"1/862 (1/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) [@doi:10.1101/2023.05.03.23289461]. Disease cases observed in South Australia [@pmid:24763282].",
         "stripy":[],
         "gnomad":[],
         "genereviews":[],
@@ -701,7 +701,7 @@
         "pathogenic_max":91.0,
         "ref_copies":30.3,
         "motif_len":3,
-        "age_onset":"Typical: 20-39 [@uptodate:'Autosomal dominant spinocerebellar ataxias']; Range: 6 [@pmid:3165612] - 63 [@pmid:8825276].",
+        "age_onset":"Typical: 20-39 [@url:https://www.uptodate.com/contents/autosomal-dominant-spinocerebellar-ataxias]; Range: 6 [@pmid:3165612] - 63 [@pmid:8825276].",
         "age_onset_min":6,
         "age_onset_max":63,
         "typ_age_onset_min":20.0,
@@ -2645,7 +2645,7 @@
         "pathogenic_max":2000.0,
         "ref_copies":20.6667,
         "motif_len":3,
-        "age_onset":"Typical: FXS 1 to 'first several years of life', FXTAS 60-65 [@genereviews:NBK1384]; Range: 0 [@uptodate:'Fragile X syndrome: Clinical features and diagnosis in children and adolescents'] - 78 [@pmid:17427188]; detailed description of typical symptom onset and diagnosis available from Arnold et al [@isbn:978-3-031-66932-3].",
+        "age_onset":"Typical: FXS 1 to 'first several years of life', FXTAS 60-65 [@genereviews:NBK1384]; Range: 0 [@url:https://www.uptodate.com/contents/fragile-x-syndrome-clinical-features-and-diagnosis-in-children-and-adolescents] - 78 [@pmid:17427188]; detailed description of typical symptom onset and diagnosis available from Arnold et al [@isbn:978-3-031-66932-3].",
         "age_onset_min":0,
         "age_onset_max":78,
         "typ_age_onset_min":1.0,
@@ -3540,7 +3540,7 @@
         "mechanism":"GoF/LoF",
         "mechanism_detail":"While the primary pathogenic mechanism is gain of function of the protein product, pathogenesis is complex and multifactorial [@pmid:27940602].",
         "source":[],
-        "details":"27-35 motifs are unstable/premutations, while 36-39 motifs are associated with reduced penetrance. >60 motifs assocated with onset age <20 years [@genereviews:NBK1305]. Only CAG expansions are considered pathogenic, but interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110]. Only fathers with premutations are considered at risk of transmitting pathogenic alleles [@mpid:19507258].",
+        "details":"27-35 motifs are unstable/premutations, while 36-39 motifs are associated with reduced penetrance. >60 motifs assocated with onset age <20 years [@genereviews:NBK1305]. Only CAG expansions are considered pathogenic, but interruptions impact pathogenicity (e.g. CAA) [@pmid:35245110]. Only fathers with premutations are considered at risk of transmitting pathogenic alleles [@pmid:19507258].",
         "omim":[
             "143100"
         ],
