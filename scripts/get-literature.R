@@ -49,6 +49,7 @@ data <- data %>%
 ### Established loci lit  retrieval
 # Extract STRchive gene names into a list
 gene_list <- as.character(unique(data$gene))
+cat("Searching for genes:", gene_list, "\n", file=stderr())
 
 # Filter out NA values, if there are any, from the 'gene' column
 filtered_data <- data[!is.na(data$gene), ]
@@ -59,8 +60,16 @@ gene_list <- as.character(unique(filtered_data$gene))
 ### Use biomaRt to get gene synonyms
 # This is necessary because gene names have evolved over time and can differ
 # by publication
-mart <- useMart("ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl",
-                host = "https://www.ensembl.org")
+hosts <- c("https://useast.ensembl.org", "https://asia.ensembl.org", "https://www.ensembl.org")
+for (host in hosts) {
+  tryCatch({
+    mart <- useMart("ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl",
+                    host = host, verbose = TRUE)
+    break
+  }, error = function(e) {
+    cat("Failed to create the mart object for host:", host, ". Trying another.\n", file=stderr())
+  })
+}
 
 # Retrieve the HGNC symbol and Gene Synonym for the genes in the list
 # Check if the mart object is created
@@ -72,7 +81,8 @@ if (exists("mart")) {
                      mart = mart)
 
 } else {
-  cat("Failed to create the mart object. Check your internet connection and try again.")
+  cat("Failed to create the mart object. Check your internet connection and try again.", file=stderr())
+  quit(status = 1)
 }
 
 # Replace missing values in 'external_synonym' with 'hgnc_symbol'
@@ -93,12 +103,18 @@ gene_info <- gene_info %>%
 gene_info <- gene_info %>%
   mutate(across(c(external_synonym, hgnc_symbol), ~sprintf('"%s"', .)))
 
-# adding gene synonym missed by biomaRt #XXX should check if gene is in list first
-gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"FMR1\"", external_synonym = "\"FMR-1\""))
+# adding gene synonym missed by biomaRt
+if ("FMR1" %in% gene_list) {
+  gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"FMR1\"", external_synonym = "\"FMR-1\""))
+}
 
 #because pubmed hates slashes and these use slashes
-gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"NUTM2B-AS1\"", external_synonym = "\"LOC642361/NUTM2B-AS1\""))
-gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"ATXN10\"", external_synonym = "\"SCA10\""))
+if ("NUTM2B-AS1" %in% gene_list) {
+  gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"NUTM2B-AS1\"", external_synonym = "\"LOC642361/NUTM2B-AS1\""))
+}
+if ("ATXN10" %in% gene_list) {
+  gene_info <- rbind(gene_info, data.frame(hgnc_symbol = "\"ATXN10\"", external_synonym = "\"SCA10\""))
+}
 
 # collapse to gene names
 gene_names <- unique(gene_info$hgnc_symbol)
@@ -122,7 +138,7 @@ perform_pubmed_query <- function(gene_info) {
   file_paths <- list()  # Initialize the list to store all publications
   for (i in seq_along(gene_names)) {
     gene_name <- gene_names[i]
-    cat("Processing gene:", gene_name, "\n")
+    cat("Processing gene:", gene_name, "\n", file=stderr())
     # Use str_detect to check if gene_name is present in each consolidated string
     idx <- str_detect(consolidated_strings, regex(gene_name, ignore_case = TRUE))
 
@@ -140,7 +156,7 @@ perform_pubmed_query <- function(gene_info) {
 
     # Clean up any unnecessary slashes from the query
     query <- gsub("  ", " ", query)  # Remove double spaces
-    print(query)
+    #print(query)
     gene_name <- gsub('"', '', gene_name)
     out_file <- paste0(base_directory, "/", gene_name)
 
@@ -151,17 +167,18 @@ perform_pubmed_query <- function(gene_info) {
                                    batch_size = 10000,
                                    dest_file_prefix = out_file,
                                    encoding = "ASCII")
-    # the function adds 01.txt so, gotta fix that here
+    # output file name
     out_file <- paste0(base_directory, "/", gene_name, "01.txt")
-    print(out_file)
+    cat(out_file, "\n", file=stderr())
 
-    # Check if the file was created successfully
-    cat("Full file path:", out_file, "\n")
+    # Check if the file was created successfully XXX What if file existed before script ran?
+    cat("Full file path:", out_file, "\n", file=stderr())
     if (file.exists(out_file)) {
-      cat("File exists.\n")
+      #cat("File exists.\n", file=stderr())
       file_paths[[gene_name]] <- out_file
     } else {
-      cat("Error: File not found -", out_file, "\n")
+      cat("Error: File not found -", out_file, "\n", file=stderr())
+      #quit(status = 1)
     }
   }
 
@@ -178,6 +195,7 @@ all_publications <- list()
 for (gene_name in names(file_paths)) {
   # Append "01.txt" to the file path
   file_path <- paste0(file_paths[[gene_name]])
+  cat("Reading file:", file_path, "\n", file=stderr())
 
   tryCatch({
     # Read the file into a character vector
@@ -186,7 +204,7 @@ for (gene_name in names(file_paths)) {
     # Append to the overall list
     all_publications[[gene_name]] <- current_publications
   }, error = function(e) {
-    cat("Error reading file:", file_path, "\n")
+    cat("Warning: error reading file:", file_path, "\n", file=stderr())
     # Append an empty character vector in case of an error
     all_publications[[gene_name]] <- character(0)
   })
@@ -278,7 +296,7 @@ data <- data %>%
 
     # Print common elements being removed (if any)
     if (length(common_elements) > 0) {
-      cat("Removing the following elements from additional_literature: ", paste(common_elements, collapse = ", "), "\n")
+      cat("Removing the following elements from additional_literature: ", paste(common_elements, collapse = ", "), "\n", file=stderr())
     }
 
     # Remove common elements from additional_literature
@@ -302,7 +320,7 @@ perform_new_pubmed_query <- function() {
 
   # Clean up any unnecessary slashes from the query
   query <- gsub("  ", " ", query)  # Remove double spaces
-  print(query)
+  #print(query)
   out_file <- paste0(base_directory, "/new_loci")
 
   # Include a separator ("/") between base_directory and gene_name
@@ -314,15 +332,16 @@ perform_new_pubmed_query <- function() {
                                  encoding = "ASCII")
   # the function adds 01.txt so, gotta fix that here
   out_file <- paste0(base_directory, "/new_loci", "01.txt")
-  print(out_file)
+  #print(out_file)
 
-  # Check if the file was created successfully
-  cat("Full file path:", out_file, "\n")
+  # Check if the file was created successfully XXX What if file existed before script ran?
+  cat("Full file path:", out_file, "\n", file=stderr())
   if (file.exists(out_file)) {
-    cat("File exists.\n")
+    #cat("File exists.\n", file=stderr())
     file_path <- out_file
   } else {
-    cat("Error: File not found -", out_file, "\n")
+    cat("Error: File not found -", out_file, "\n", file=stderr())
+    #quit(status = 1)
   }
 
 
@@ -354,3 +373,6 @@ all_citations <- unique(c(citations_references, citations_additional))
 myfile = toJSON(all_citations)
 
 write(myfile, args[3])
+
+cat(paste0("Wrote all citations to ", args[3], "\n"), file=stderr())
+quit(status = 0)
