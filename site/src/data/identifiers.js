@@ -112,17 +112,23 @@ export const getIdentifiers = (d) =>
         },
       ],
     },
-  ].map(({ identifiers, ...rest }) => ({
-    ...rest,
-    identifiers: identifiers
-      /** for each reference type */
-      .map(({ key, link, ...rest }) => ({
-        ...rest,
-        /** link text */
-        label: d[key],
-        /** link target, with id inserted */
-        link: link.replace("$ID", d[key]),
-      }))
-      /** remove types with no identifiers */
-      .filter(({ label }) => label?.length),
-  }));
+  ]
+    .map(({ identifiers, ...rest }) => ({
+      ...rest,
+      identifiers: identifiers
+        /** for each reference type */
+        .map(({ key, link, ...rest }) => ({
+          ...rest,
+          links:
+            d[key]?.map((id) => ({
+              /** link text */
+              label: id,
+              /** link target, with id inserted */
+              link: link.replace("$ID", id),
+            })) || [],
+        }))
+        /** remove identifiers with no links */
+        .filter(({ links }) => links?.length),
+    }))
+    /** remove types with no identifiers */
+    .filter(({ identifiers }) => identifiers.length);

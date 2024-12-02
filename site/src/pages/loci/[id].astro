@@ -112,13 +112,13 @@ const additionalLiterature =
               <span>{name}</span>
             </div>
             <div class="identifier-list">
-              {identifiers.map(({ name, label, link, tooltip, info }) => (
+              {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
                   <Link to={info} data-tooltip={tooltip} noIcon>
                     {name}
                   </Link>
                   <div class="identifier-links">
-                    {label.map((label) => (
+                    {links.map(({ label, link }) => (
                       <Link to={link}>{label}</Link>
                     ))}
                   </div>
