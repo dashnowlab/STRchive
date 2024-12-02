@@ -10,15 +10,15 @@ import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
 import Table from "@/loci/Table";
+import hg19bed from "../../../../data/hg19.STRchive-disease-loci.bed?url";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
+import hg38bed from "../../../../data/hg38.STRchive-disease-loci.bed?url";
 import hg38defs from "../../../../data/hg38.STRchive-disease-loci.TRGT.bed?url";
 import ageOnset from "../../../../data/plots/age-onset.json";
 import pathSize from "../../../../data/plots/path-size.json";
 import data from "../../../../data/STRchive-loci.json";
-import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?url";
-import hg19bed from "../../../../data/hg19.STRchive-disease-loci.bed?url";
-import hg38bed from "../../../../data/hg38.STRchive-disease-loci.bed?url";
 import t2tbed from "../../../../data/T2T-chm13.STRchive-disease-loci.bed?url";
+import t2tdefs from "../../../../data/T2T-chm13.STRchive-disease-loci.TRGT.bed?url";
 ---
 
 <Layout title="Loci">
@@ -38,11 +38,12 @@ import t2tbed from "../../../../data/T2T-chm13.STRchive-disease-loci.bed?url";
     >
       <FaGithub />Full Dataset
     </Link>
+
     <br />
     <br />
 
-    <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link
-    > definitions for genotyping in PacBio HiFi reads:
+    <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions
+    for genotyping in PacBio HiFi reads:
 
     <br />
 
@@ -60,8 +61,7 @@ import t2tbed from "../../../../data/T2T-chm13.STRchive-disease-loci.bed?url";
 
     <Link to={hg19bed} className="button" download>hg19<LuDownload /></Link>
     <Link to={hg38bed} className="button" download>hg38<LuDownload /></Link>
-    <Link to={t2tbed} className="button" download>T2T-chm13<LuDownload /></Link
-    >
+    <Link to={t2tbed} className="button" download>T2T-chm13<LuDownload /></Link>
   </section>
 
   <!-- table -->
