@@ -36,6 +36,8 @@ def cite_with_manubot(ids, append_ids=None):
     if append_ids:
         ids = [i for i in ids if i not in append_ids]
 
+    # ids = ids[:10] #XXX for testing only
+
     # output list of full citation details
     citations = []
 
@@ -50,7 +52,7 @@ def cite_with_manubot(ids, append_ids=None):
 
     # process ids by type (useful for testing)
     for id_type, id_list in id_types.items():
-        # if id_type != "gnomad": #XXX for testig only, remove
+        # if id_type != "gnomad": #XXX for testig only
         #     continue
         sys.stderr.write(f"Processing {len(id_list)} citations of type: {id_type}\n")
 
@@ -65,8 +67,6 @@ def cite_with_manubot(ids, append_ids=None):
 
             # Convert some types to URLs using the rules above
             if id_type in database_urls:
-                print(_id)
-                print(_id[len(id_type)+1:])
                 url = database_urls[id_type].format(id=_id[len(id_type)+1:])
                 sys.stderr.write(f"WARNING: Manubot does not support {_id}. Converted to URL: {url}\n")
                 _id = "url:" + url
@@ -193,14 +193,14 @@ def main(args):
     # read "append" JSON
     append_ids = []
     if args.append:
-        with open(args.append, "r") as file:
-            try:
+        try:
+            with open(args.append, "r") as file:
                 append_json = json.load(file)
                 append_ids = [cite["id"] for cite in append_json]
-            except Exception as e:
-                sys.stderr.write(f"WARNING: Couldn't read append JSON\n")
-                sys.stderr.write(f"{e}\n")
-                append_json = []
+        except Exception as e:
+            sys.stderr.write(f"WARNING: Couldn't read append JSON\n")
+            sys.stderr.write(f"{e}\n")
+            append_json = []
     sys.stderr.write(f"Skipping lookup of {len(append_ids)} existing citations\n")
 
     # read input JSON
