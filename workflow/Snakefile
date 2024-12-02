@@ -1,12 +1,15 @@
 # Usage:
 
-# Run all stages (default):
+# Run all stages (default, takes hours):
 # snakemake
 # or
 # snakemake --config stages="all"
 
-# Skip retrieve and manubot, which will speed things up substantially:
+# Skip retrieve and manubot, which will speed things up substantially (runs in seconds):
 # snakemake --config stages="skip-refs"
+
+# Fetches new citations but doesn't update exising ones. Slow, but faster than "all".
+# snakemake --config stages="new-refs"
 
 
 configfile: 'workflow/config.yaml'
@@ -25,7 +28,7 @@ import re
 wildcard_constraints:
     base_dir = base_dir
 
-if stages == "all":
+if stages == "all" or stages == "new-refs":
     rule all:
         input:
             # Check loci
@@ -54,7 +57,8 @@ elif stages == "skip-refs":
             expand("{base_dir}hg19.STRchive-disease-loci.bed", base_dir = base_dir),
             expand("{base_dir}T2T-chm13.STRchive-disease-loci.bed", base_dir = base_dir)
 else:
-    raise ValueError("Invalid stages value. Must be 'all' or 'skip-refs'")
+    raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
+
 
 rule check_loci:
     input:
@@ -78,17 +82,40 @@ rule retrieve:
         Rscript {scripts_dir}get-literature.R {input.in_json} {input.lit_dir} {output.citations}
         """
 
-# Note, this currently takes hours to run
-rule manubot:
+rule backup_citations:
     input:
-        citations = "{base_dir}citations-tmp.json",
-        check = "{base_dir}check-loci.txt"
+        citations = "{base_dir}STRchive-citations.json"
     output:
-        results = "{base_dir}STRchive-citations.json"
+        backup = temp("{base_dir}STRchive-citations-backup.json")
     shell:
         """
-        python {scripts_dir}run-manubot.py {input.citations} {output.results}
+        cp {input.citations} {output.backup}
         """
+
+# Note, this currently takes hours to run
+if stages == "new-refs":
+    rule manubot:
+        input:
+            citations = "{base_dir}citations-tmp.json",
+            backup = "{base_dir}STRchive-citations-backup.json",
+            check = "{base_dir}check-loci.txt"
+        output:
+            results = "{base_dir}STRchive-citations.json"
+        shell:
+            """
+            python {scripts_dir}run-manubot.py {input.citations} {output.results} --append {input.backup}
+            """
+if stages == "all" or stages == "skip-refs":
+    rule manubot:
+        input:
+            citations = "{base_dir}citations-tmp.json",
+            check = "{base_dir}check-loci.txt"
+        output:
+            results = "{base_dir}STRchive-citations.json"
+        shell:
+            """
+            python {scripts_dir}run-manubot.py {input.citations} {output.results}
+            """
 
 rule TRGT_hg38:
     input:
