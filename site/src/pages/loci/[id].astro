@@ -43,14 +43,14 @@ const references =
   d.references?.map((id, index) => ({
     id,
     number: index + 1,
-    ...(citations[id] ?? {}),
+    ...(citations.find((citation) => citation.id === id) ?? {}),
   })) ?? [];
 
 /** look up full citations details for additional literature */
 const additionalLiterature =
   d.additional_literature?.map((id) => ({
     id,
-    ...(citations[id] ?? {}),
+    ...(citations.find((citation) => citation.id === id) ?? {}),
   })) ?? [];
 ---
 
