@@ -10,6 +10,7 @@ dependencies:
   - biopython
   - defopt
   - snakemake
+  - jsbeautifier
   - r-essentials
   - r-jsonlite
   - r-dplyr

@@ -59,7 +59,6 @@ elif stages == "skip-refs":
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
 
-
 rule check_loci:
     input:
         in_json = in_json
@@ -76,10 +75,11 @@ rule retrieve:
         lit_dir = "{base_dir}literature",
         check = "{base_dir}check-loci.txt"
     output:
-        citations = temp("{base_dir}citations-tmp.json")
+        citations = temp("{base_dir}citations-tmp.json"),
+        loci_citations = temp("{base_dir}loci-citations-tmp.json")
     shell:
         """
-        Rscript {scripts_dir}get-literature.R {input.in_json} {input.lit_dir} {output.citations}
+        Rscript {scripts_dir}get-literature.R {input.in_json} {input.lit_dir} {output.citations} {output.loci_citations}
         """
 
 rule backup_citations:
@@ -92,13 +92,26 @@ rule backup_citations:
         cp {input.citations} {output.backup}
         """
 
+# Incorporate all citations per locus into the STRchive loci JSON file
+rule add_citations:
+    input:
+        in_json = in_json,
+        loci_citations = "{base_dir}loci-citations-tmp.json"
+    output:
+        check = temp("{base_dir}check-loci-citations.txt")
+    shell:
+        """
+        python {scripts_dir}check-loci.py {input.in_json} --lit {input.loci_citations} 2> {output.check}
+        """
+
 # Note, this currently takes hours to run
 if stages == "new-refs":
     rule manubot:
         input:
             citations = "{base_dir}citations-tmp.json",
             backup = "{base_dir}STRchive-citations-backup.json",
-            check = "{base_dir}check-loci.txt"
+            check = "{base_dir}check-loci.txt",
+            check2 = "{base_dir}check-loci-citations.txt"
         output:
             results = "{base_dir}STRchive-citations.json"
         shell:
@@ -109,7 +122,8 @@ if stages == "all" or stages == "skip-refs":
     rule manubot:
         input:
             citations = "{base_dir}citations-tmp.json",
-            check = "{base_dir}check-loci.txt"
+            check = "{base_dir}check-loci.txt",
+            check2 = "{base_dir}check-loci-citations.txt"
         output:
             results = "{base_dir}STRchive-citations.json"
         shell:

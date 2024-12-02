@@ -550,8 +550,9 @@ PMID- 39406499
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241120
-LR  - 20241120
+LR  - 20241203
 IS  - 1549-5469 (Electronic)
+IS  - 1088-9051 (Print)
 IS  - 1088-9051 (Linking)
 VI  - 34
 IP  - 11
@@ -686,14 +687,17 @@ MH  - Software
 MH  - Computational Biology/methods
 MH  - Genotype
 MH  - Nanopore Sequencing/methods
+PMC - PMC11610572
 EDAT- 2024/10/16 04:19
 MHDA- 2024/11/21 00:22
+PMCR- 2024/11/01
 CRDT- 2024/10/15 21:22
 PHST- 2024/03/15 00:00 [received]
 PHST- 2024/10/03 00:00 [accepted]
 PHST- 2024/11/21 00:22 [medline]
 PHST- 2024/10/16 04:19 [pubmed]
 PHST- 2024/10/15 21:22 [entrez]
+PHST- 2024/11/01 00:00 [pmc-release]
 AID - gr.279351.124 [pii]
 AID - 10.1101/gr.279351.124 [doi]
 PST - epublish
@@ -3126,7 +3130,7 @@ PMID- 38193360
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240503
-LR  - 20240505
+LR  - 20241203
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -3432,6 +3436,7 @@ AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurol
 AD  - Department of Brain and Behavioral Sciences, University of Pavia, 27100 Pavia, 
       Italy.
 LA  - eng
+GR  - R01 NS124854/NS/NINDS NIH HHS/United States
 GR  - G1000848/MRC_/Medical Research Council/United Kingdom
 GR  - MR/N025431/2/MRC_/Medical Research Council/United Kingdom
 GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
