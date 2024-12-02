@@ -97,7 +97,7 @@ export const getIdentifiers = (d) =>
         {
           key: "webstr_hg38",
           name: "WebSTR hg38",
-          link: "https://webstr.ucsd.edu/search?genome=hg38&query=$ID",
+          link: "https://webstr.ucsd.edu/locus?repeat_id=$ID&genome=hg38",
           tooltip:
             "Genome-wide STR data across populations, with details on variation, expression, constraint, and imputation metrics",
           info: "https://webstr.ucsd.edu",
@@ -105,7 +105,7 @@ export const getIdentifiers = (d) =>
         {
           key: "webstr_hg19",
           name: "WebSTR hg19",
-          link: "https://webstr.ucsd.edu/search?genome=hg19&query=$ID",
+          link: "https://webstr.ucsd.edu/locus?repeat_id=$ID",
           tooltip:
             "Genome-wide STR data across populations, with details on variation, expression, constraint, and imputation metrics",
           info: "https://webstr.ucsd.edu",
