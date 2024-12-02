@@ -7,6 +7,7 @@ import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import { team } from "@/data/team";
 import Layout from "@/layouts/Layout.astro";
+import { repo } from "@/layouts/meta";
 ---
 
 <Layout title="About">
@@ -24,10 +25,7 @@ import Layout from "@/layouts/Layout.astro";
     </p>
 
     <div class="center">
-      <Link
-        to="https://github.com/dashnowlab/STRchive/discussions"
-        className="button"
-      >
+      <Link to={`${repo}/discussions`} className="button">
         <FaGithub />GitHub</Link
       >
     </div>
@@ -64,9 +62,7 @@ import Layout from "@/layouts/Layout.astro";
     </p>
 
     <div class="center">
-      <Link to="https://github.com/dashnowlab/STRchive" className="button">
-        <FaGithub />GitHub</Link
-      >
+      <Link to={repo} className="button"> <FaGithub />GitHub</Link>
     </div>
   </section>
 

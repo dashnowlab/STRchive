@@ -9,7 +9,7 @@ import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
-import { version } from "@/layouts/meta";
+import { repo, version } from "@/layouts/meta";
 import Table from "@/loci/Table";
 import hg19bed from "../../../../data/hg19.STRchive-disease-loci.bed?url";
 import hg19defs from "../../../../data/hg19.STRchive-disease-loci.TRGT.bed?url";
@@ -55,10 +55,7 @@ const bedDownloads = downloads.slice(3);
   <section>
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
-    <Link
-      to="https://github.com/dashnowlab/STRchive/tree/main/data"
-      className="button"
-    >
+    <Link to={`${repo}/tree/main/data`} className="button">
       <FaGithub />Full Dataset
     </Link>
 

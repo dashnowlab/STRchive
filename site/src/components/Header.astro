@@ -2,7 +2,7 @@
 import { FaGithub } from "react-icons/fa6";
 import Logo from "@/assets/logo.svg?react";
 import Link from "@/components/Link";
-import { version } from "@/layouts/meta";
+import { repo, version } from "@/layouts/meta";
 
 const path = Astro.url.pathname;
 
@@ -17,15 +17,17 @@ const links = [
 <header>
   <nav>
     {
-      path !== "/" ? (
+      path !== "/" && (
         <Link to="/" className="logo-link" aria-label="Home">
           <Logo className="logo" />
-          <span class="version">{version}</span>
         </Link>
-      ) : (
-        <span class="version">{version}</span>
       )
     }
+
+    <Link to={`${repo}/blob/main/CITATION.cff`} className="version" noIcon
+      >{version}</Link
+    >
+
     {
       links.map(({ to, name }) => (
         <Link
@@ -41,7 +43,7 @@ const links = [
     <div class="spacer"></div>
 
     <Link
-      to="https://github.com/dashnowlab/STRchive"
+      to={repo}
       className="nav-link"
       aria-label="GitHub"
     >
@@ -79,7 +81,6 @@ const links = [
     display: flex;
     align-items: flex-start;
     height: 30px;
-    margin-right: 20px;
     gap: 10px;
   }
 
@@ -88,8 +89,8 @@ const links = [
   }
 
   .version {
+    color: var(--gray) !important;
     font-size: 0.75rem;
-    opacity: 0.5;
   }
 
   .spacer {
