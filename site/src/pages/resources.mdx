@@ -88,11 +88,11 @@ import styles from "./_resources.module.css";
 ### Why do repeat locus definitions differ between resources?
 
 There are often multiple ways to define a given repeat locus.
-For example, defining a locus as a stretch of perfectly repeting motifs tends to result in a narrower locus than strategies allowing for interruptions.
-In coding regions the locus boundary might be chosen to align with the reading frame.
+For example, defining a locus as a stretch of perfectly repeating motifs tends to result in a narrower locus than strategies allowing for interruptions.
+In coding regions, the locus boundary might be chosen to align with the reading frame.
 
 There are often multiple "correct" ways to define a given repeat locus, however careful consideration must be made to the downstream uses of the data.
-In particular, genotyping accuracy can be affected by the choice of locus definition.
+In particular, genotyping accuracy can be affected by the choice of locus definition. Locus definitions can affect the expected allele size, which in turn may have an impact on how allelic thresholds are defined and determined.
 
 The loci in STRchive were defined to be broader, allowing for interruptions, and with consideration to the biological context and clinical utility of the locus.
 This strategy increases the chance that the locus will overlap with a relevant variant call when STRchive is used to annotate a VCF file.
