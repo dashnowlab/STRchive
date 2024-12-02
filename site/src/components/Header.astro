@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa6";
 import Logo from "@/assets/logo.svg?react";
 import Link from "@/components/Link";
+import { version } from "@/layouts/meta";
 
 const path = Astro.url.pathname;
 
@@ -16,10 +17,13 @@ const links = [
 <header>
   <nav>
     {
-      path !== "/" && (
+      path !== "/" ? (
         <Link to="/" className="logo-link" aria-label="Home">
           <Logo className="logo" />
+          <span class="version">{version}</span>
         </Link>
+      ) : (
+        <span class="version">{version}</span>
       )
     }
     {
@@ -72,12 +76,20 @@ const links = [
   }
 
   .logo-link {
+    display: flex;
+    align-items: flex-start;
     height: 30px;
     margin-right: 20px;
+    gap: 10px;
   }
 
   .logo {
     height: 100%;
+  }
+
+  .version {
+    font-size: 0.75rem;
+    opacity: 0.5;
   }
 
   .spacer {
