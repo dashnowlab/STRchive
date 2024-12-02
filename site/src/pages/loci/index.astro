@@ -71,7 +71,7 @@ const bedDownloads = downloads.slice(3);
     <br />
 
     {
-      defDownloads.slice(0, 3).map(({ file, label, filename }) => (
+      defDownloads.map(({ file, label, filename }) => (
         <Link to={file} className="button" download={filename}>
           {label}
           <LuDownload />
@@ -87,7 +87,7 @@ const bedDownloads = downloads.slice(3);
     <br />
 
     {
-      bedDownloads.slice(0, 3).map(({ file, label, filename }) => (
+      bedDownloads.map(({ file, label, filename }) => (
         <Link to={file} className="button" download={filename}>
           {label}
           <LuDownload />
