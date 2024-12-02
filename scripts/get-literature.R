@@ -1,3 +1,6 @@
+# Usage:
+# Rscript get-literature.R STRchive-loci.json literature-directory out-citations.json STRchive-loci-literature.json
+
 # More useful error messages
 options(error=traceback)
 
@@ -22,9 +25,14 @@ suppressPackageStartupMessages({
 ### Data Setup
 args <- commandArgs(trailingOnly = TRUE)
 
-if (length(args) < 3) {
-  stop("Need input json, base directory, and output json")
+if (length(args) < 4) {
+  stop("Need input json, base directory, output json for all citations and output json for citations per locus")
 }
+
+cat("Arguments: ", args, "\n", file=stderr())
+
+# Manually downloaded from biomart
+synonym_file = 'data/literature/gene_synonyms.tsv' # should make an arg with default?
 
 data <- fromJSON(args[1])
 
@@ -81,8 +89,10 @@ if (exists("mart")) {
                      mart = mart)
 
 } else {
-  cat("Failed to create the mart object. Check your internet connection and try again.", file=stderr())
-  quit(status = 1)
+  cat(paste0("Failed to create the mart object. Using previous gene synonyms from file: ", synonym_file), file=stderr())
+  gene_info = read.csv(synonym_file, sep = '\t')
+  gene_info = merge(gene_info, data.frame(hgnc_symbol = gene_list, external_synonym = NA), all = TRUE)
+  gene_info = unique(gene_info)
 }
 
 # Replace missing values in 'external_synonym' with 'hgnc_symbol'
@@ -309,6 +319,9 @@ data <- data %>%
     return(cleaned_lit)
   }, data$additional_literature, data$references))
 
+# Write out a json with just the locus id and the two literature fields
+lit_data <- data[, c("id", "additional_literature", "references")]
+write_json(lit_data, args[4])
 
 #### New locus lit retrieval
 #new locus query found from reviewing pertinent terms in discovery papers

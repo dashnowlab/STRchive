@@ -6,13 +6,10 @@ import doctest
 import os
 import time
 import json
+import jsbeautifier
 from Bio.Seq import Seq
 import pandas as pd
 import re
-#import numpy as np
-
-# in case person runs from data instead of scripts
-sys.path.append('../')
 
 # This should be overwritten if schema json file provided
 list_fields = [
@@ -39,7 +36,11 @@ list_fields = [
     "tr_atlas",
     "locus_tags",
     "disease_tags",
+    "references",
+    "additional_literature",
 ]
+
+citation_fields = ["references", "additional_literature"]
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Validate the STRchive loci JSON file and overwrite it with changes if needed.')
@@ -47,6 +48,7 @@ def parse_args():
     parser.add_argument('--schema', default=None, help='JSON schema file path (optional)')
     parser.add_argument('--out', default=None, help='Defaults to same as input JSON file path (overwriting)')
     parser.add_argument('--pause', default=5, help='Pause time in seconds before overwriting the file. Default: 5')
+    parser.add_argument('--lit', default=None, help='json file of literature with at least the fields "id", "additional_literature", "references". This will overwrite these literature fields in the STRchive loci json if they are present')
     return parser.parse_args()
 
 def circular_permuted(x):
@@ -156,7 +158,11 @@ def check_list_fields(record, list_fields = list_fields):
         record (dict): the record with any fields that should be lists converted to lists
     """
     for field in list_fields:
-        old = record[field]
+        try:
+            old = record[field]
+        except KeyError:
+            record[field] = []
+            continue
         if record[field] == "" or record[field] is None or record[field] == []:
             record[field] = [] #XXX need to decide if Null or empty list is preferred
         elif isinstance(record[field], str):
@@ -166,12 +172,15 @@ def check_list_fields(record, list_fields = list_fields):
                 record[field] = [x.strip() for x in record[field].split(',')]
             else:
                 record[field] = [record[field].strip()]
+        
+        if field in citation_fields:
+            record[field] = [x.strip('@') for x in record[field]]
+
         if old != record[field]:
             sys.stderr.write(f'Updating {record['id']} {field} from {old} to {record[field]}\n')
     return record
 
-def main(json_fname, json_schema = None, out_json = None, pause = 5):
-    sys.stderr.write('Reading JSON and overwriting it with fixed version\n')
+def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None):
     if out_json == json_fname:
         sys.stderr.write(f'WARNING: overwriting {json_fname} in {pause} seconds\n')
         sys.stderr.write('Press Ctrl+C to cancel\n')
@@ -187,6 +196,15 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5):
     with open(json_fname, 'r') as json_file:
         data = json.load(json_file)
 
+        if lit:
+            with open(lit, 'r') as lit_file:
+                lit_data = json.load(lit_file)
+                lit_dict = {x['id']: x for x in lit_data}
+                for record in data:
+                    if record['id'] in lit_dict:
+                        record['references'] = lit_dict[record['id']]['references']
+                        record['additional_literature'] = lit_dict[record['id']]['additional_literature']
+
         # Check if the field contains a string that should be a list
         for record in data:
             record = check_list_fields(record)
@@ -197,11 +215,13 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5):
         
         # Write JSON file
         with open(out_json, 'w') as out_json_file:
-            json.dump(data, out_json_file, indent=4, separators=(',', ':'), ensure_ascii=False)
+            options = jsbeautifier.default_options()
+            options.indent_size = 4
+            out_json_file.write(jsbeautifier.beautify(json.dumps(data, ensure_ascii=False)))
 
 if __name__ == '__main__':
     doctest.testmod()
     args = parse_args()
     if args.out is None:
         args.out = args.json
-    main(args.json, args.schema, args.out, args.pause)
+    main(args.json, args.schema, args.out, args.pause, args.lit)

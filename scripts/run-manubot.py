@@ -127,7 +127,7 @@ def cite_with_manubot(ids, append_ids=None):
 
             # dates
             # citation["accessed_date"] = get_date(get_safe(manubot, "accessed", {}))
-            citation["issued_date"] = get_date(get_safe(manubot, "issued", {}))
+            citation["date"] = get_date(get_safe(manubot, "issued", {}))
 
             # link
             citation["link"] = get_safe(manubot, "URL").strip()
