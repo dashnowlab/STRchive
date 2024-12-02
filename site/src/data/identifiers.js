@@ -97,7 +97,7 @@ export const getIdentifiers = (d) =>
         {
           key: "webstr_hg38",
           name: "WebSTR hg38",
-          link: "https://webstr.ucsd.edu/locus?repeat_id=$ID&genome=hg38",
+          link: "https://webstr.ucsd.edu/locus?genome=hg38&repeat_id=$ID",
           tooltip:
             "Genome-wide STR data across populations, with details on variation, expression, constraint, and imputation metrics",
           info: "https://webstr.ucsd.edu",
