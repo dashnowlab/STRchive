@@ -7,23 +7,23 @@ import Select from "@/components/Select";
 const Gnomad = ({ title, data = {} }) => {
   /** sex options */
   const sexes = [
+    { value: "both", label: "Both" },
     { value: "XX", label: "XX" },
     { value: "XY", label: "XY" },
-    { value: "both", label: "Both" },
-  ];
+  ].filter(({ value }) => value in data);
 
   /** selected sex */
   const [sex, setSex] = useState(sexes[0].value);
 
+  if (!sexes.length) return <></>;
+
   /** datum object */
   const d = data[sex];
-
-  if (!d) return <></>;
 
   return (
     <>
       {/* sex dropdown */}
-      {sexes.length > 1 && (
+      {!(sexes.length === 1 && sexes[0].value === "both") && (
         <Select label="Sex" options={sexes} value={sex} onChange={setSex} />
       )}
 
