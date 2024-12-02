@@ -325,84 +325,6 @@ AID - 10.1101/2024.11.01.621616 [doi]
 PST - epublish
 SO  - bioRxiv [Preprint]. 2024 Nov 3:2024.11.01.621616. doi: 10.1101/2024.11.01.621616.
 
-PMID- 39549538
-OWN - NLM
-STAT- Publisher
-LR  - 20241116
-IS  - 1568-7856 (Electronic)
-IS  - 1568-7856 (Linking)
-VI  - 144
-DP  - 2024 Nov 7
-TI  - Intersection of the fragile X-related disorders and the DNA damage response.
-PG  - 103785
-LID - S1568-7864(24)00161-7 [pii]
-LID - 10.1016/j.dnarep.2024.103785 [doi]
-AB  - The Repeat Expansion Diseases (REDs) are a large group of human genetic disorders 
-      that result from an increase in the number of repeats in a disease-specific 
-      tandem repeat or microsatellite. Emerging evidence suggests that the repeats 
-      trigger an error-prone form of DNA repair that causes the expansion mutation by 
-      exploiting a limitation in normal mismatch repair. Furthermore, while much 
-      remains to be understood about how the mutation causes pathology in different 
-      diseases in this group, there is evidence to suggest that some of the downstream 
-      consequences of repeat expansion trigger the DNA damage response in ways that 
-      contribute to disease pathology. This review will discuss these subjects in the 
-      context of the Fragile X-related disorders (aka the FMR1 disorders) that provide 
-      a particularly interesting example of the intersection between the repeats and 
-      the DNA damage response that may also be relevant for many other diseases in this 
-      group.
-CI  - Published by Elsevier B.V.
-FAU - Kumari, Daman
-AU  - Kumari D
-AD  - Section on Gene Structure and Disease, Laboratory of Cell and Molecular Biology, 
-      National Institute of Diabetes, Digestive and Kidney Diseases, National 
-      Institutes of Health, Bethesda, MD 20892, USA.
-FAU - Grant-Bier, Jessalyn
-AU  - Grant-Bier J
-AD  - Section on Gene Structure and Disease, Laboratory of Cell and Molecular Biology, 
-      National Institute of Diabetes, Digestive and Kidney Diseases, National 
-      Institutes of Health, Bethesda, MD 20892, USA.
-FAU - Kadyrov, Farid
-AU  - Kadyrov F
-AD  - Division of Biochemistry and Molecular Biology, Department of Biomedical 
-      Sciences, Southern Illinois University School of Medicine, Carbondale, IL 
-      62901, USA.
-FAU - Usdin, Karen
-AU  - Usdin K
-AD  - Section on Gene Structure and Disease, Laboratory of Cell and Molecular Biology, 
-      National Institute of Diabetes, Digestive and Kidney Diseases, National 
-      Institutes of Health, Bethesda, MD 20892, USA. Electronic address: 
-      karenu@nih.gov.
-LA  - eng
-PT  - Journal Article
-DEP - 20241107
-PL  - Netherlands
-TA  - DNA Repair (Amst)
-JT  - DNA repair
-JID - 101139138
-SB  - IM
-OTO - NOTNLM
-OT  - Chromosome fragility
-OT  - Double-strand breaks (DSBs)
-OT  - Microsatellite instability
-OT  - Mismatch repair (MMR)
-OT  - MutLalpha
-OT  - Non-homologous end-joining (NHEJ)
-OT  - Repeat expansion diseases
-COIS- Declaration of Competing Interest All of the authors have nothing to declare.
-EDAT- 2024/11/17 04:19
-MHDA- 2024/11/17 04:19
-CRDT- 2024/11/16 18:08
-PHST- 2024/08/07 00:00 [received]
-PHST- 2024/10/31 00:00 [revised]
-PHST- 2024/11/04 00:00 [accepted]
-PHST- 2024/11/17 04:19 [medline]
-PHST- 2024/11/17 04:19 [pubmed]
-PHST- 2024/11/16 18:08 [entrez]
-AID - S1568-7864(24)00161-7 [pii]
-AID - 10.1016/j.dnarep.2024.103785 [doi]
-PST - aheadofprint
-SO  - DNA Repair (Amst). 2024 Nov 7;144:103785. doi: 10.1016/j.dnarep.2024.103785.
-
 PMID- 39492694
 OWN - NLM
 STAT- Publisher
@@ -636,7 +558,7 @@ PMID- 39488698
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241103
-LR  - 20241108
+LR  - 20241202
 IS  - 2040-2392 (Electronic)
 VI  - 15
 IP  - 1
@@ -707,10 +629,7 @@ AD  - Department of Pediatrics, Section on Developmental and Behavioral Pediatri
       ethri@ou.edu.
 LA  - eng
 GR  - HD076189/NH/NIH HHS/United States
-PT  - Clinical Trial, Phase II
 PT  - Journal Article
-PT  - Randomized Controlled Trial
-PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
 DEP - 20241102
 PL  - England
@@ -721,16 +640,16 @@ RN  - EC 3.1.4.17 (Cyclic Nucleotide Phosphodiesterases, Type 4)
 SB  - IM
 UOF - Res Sq. 2024 Jun 14:rs.3.rs-4474353. doi: 10.21203/rs.3.rs-4474353/v1. PMID: 
       38946987
-MH  - Humans
-MH  - *Fragile X Syndrome/blood/drug therapy/physiopathology
-MH  - Male
 MH  - Adult
-MH  - *Electroencephalography
-MH  - Evoked Potentials, Auditory/drug effects
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
 MH  - Young Adult
 MH  - Cyclic Nucleotide Phosphodiesterases, Type 4/metabolism
+MH  - *Electroencephalography
 MH  - Evoked Potentials
-MH  - Middle Aged
+MH  - Evoked Potentials, Auditory/drug effects
+MH  - *Fragile X Syndrome/blood/drug therapy/physiopathology
 PMC - PMC11531107
 OTO - NOTNLM
 OT  - Biomarker
