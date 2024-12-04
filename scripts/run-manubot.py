@@ -211,6 +211,7 @@ def main(args):
     """
     # read "append" JSON
     append_ids = []
+    append_json = []
     if args.append:
         try:
             with open(args.append, "r") as file:
