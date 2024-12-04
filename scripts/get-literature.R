@@ -298,8 +298,8 @@ data <- data %>%
 data <- data %>%
   mutate(additional_literature = mapply(function(lit, refs) {
     # Split the strings by commas to create lists
-    lit_list <- unlist(str_split(lit, ",\\s*"))  # Split and remove extra spaces
-    refs_list <- unlist(str_split(refs, ",\\s*"))  # Split and remove extra spaces
+    lit_list <- unique(unlist(str_split(lit, ",\\s*")))  # Split and remove extra spaces
+    refs_list <- unique(unlist(str_split(refs, ",\\s*")))  # Split and remove extra spaces
 
     # Find common elements between additional_literature and references
     common_elements <- intersect(lit_list, refs_list)
