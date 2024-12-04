@@ -3,6 +3,7 @@ title: "Resources"
 layout: "@/layouts/Layout.astro"
 ---
 
+import { FaCompassDrafting } from "react-icons/fa6";
 import { PiBooksBold } from "react-icons/pi";
 import Link from "@/components/Link";
 import styles from "./_resources.module.css";
@@ -100,7 +101,17 @@ It is also the preferred approach to defining loci for improved genotyping accur
 In contrast, <Link to="https://github.com/Illumina/ExpansionHunter">ExpansionHunter</Link> tends to perform better with narrower loci that exclude repeat interruptions.
 For this reason, repeat definitions used in <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats">gnomAD</Link> tend to be narrower than those used in STRchive.
 
-### Blueprint for STR evaluation/interpretation, with current resources relevant to each point.
-<a href="/STRchive_Blueprint.html">Download Here</a>
+</section>
+
+<section>
+
+### Blueprint for STR evaluation/interpretation
+
+<p class="center">With current resources relevant to each point.</p>
+
+<Link to="blueprint.html" newTab className="button">
+  <FaCompassDrafting />
+  Blueprint
+</Link>
 
 </section>

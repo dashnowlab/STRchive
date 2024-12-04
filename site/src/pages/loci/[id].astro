@@ -114,7 +114,7 @@ const additionalLiterature =
             <div class="identifier-list">
               {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
-                  <Link to={info} data-tooltip={tooltip} noIcon>
+                  <Link to={info} data-tooltip={tooltip} showArrow={false}>
                     {name}
                   </Link>
                   <div class="identifier-links">
