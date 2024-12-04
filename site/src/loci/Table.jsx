@@ -7,7 +7,7 @@ import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
 import TableComponent from "@/components/Table";
 import TextBox from "@/components/TextBox";
-import { deriveDatum } from "@/data/derived";
+import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
@@ -97,10 +97,10 @@ const normalize = (string) =>
     .trim();
 
 /** table for main loci page */
-const Table = ({ data }) => {
+const Table = ({ loci }) => {
   /** find longest motif length */
   const maxMotif = Math.max(
-    ...data
+    ...loci
       .map(
         (d) =>
           d?.pathogenic_motif_reference_orientation.map(
@@ -111,11 +111,11 @@ const Table = ({ data }) => {
       .filter(Boolean),
   );
 
-  const derivedData = data.map(deriveDatum);
+  const derivedLoci = loci.map((locus) => deriveLocus(locus, loci));
 
   /** options for inheritance filter */
   const inheritanceOptions = [{ value: "all", label: "All" }].concat(
-    uniq(map(derivedData, "inheritance").flat()).map((inheritance) => ({
+    uniq(map(derivedLoci, "inheritance").flat()).map((inheritance) => ({
       value: inheritance,
       label: inheritance,
     })),
@@ -154,8 +154,8 @@ const Table = ({ data }) => {
 
   const normalizedSearch = normalize(search);
 
-  /** filter data */
-  const filteredData = derivedData.filter(
+  /** filter loci */
+  const filteredLoci = derivedLoci.filter(
     (d) =>
       /** free text search visible columns */
       normalize(
@@ -221,13 +221,13 @@ const Table = ({ data }) => {
 
       {/* row count */}
       <div className={classes["filter-row"]}>
-        <strong>{filteredData.length.toLocaleString()} loci</strong>
+        <strong>{filteredLoci.length.toLocaleString()} loci</strong>
         <button
           className={classes.download}
           onClick={() =>
-            /** download filtered data */
-            downloadJson(filteredData, [
-              filteredData.length < derivedData.length ? "filtered" : "",
+            /** download filtered loci */
+            downloadJson(filteredLoci, [
+              filteredLoci.length < derivedLoci.length ? "filtered" : "",
               "loci",
             ])
           }
@@ -238,7 +238,7 @@ const Table = ({ data }) => {
       </div>
 
       {/* table */}
-      <TableComponent cols={cols} rows={filteredData} />
+      <TableComponent cols={cols} rows={filteredLoci} />
     </>
   );
 };

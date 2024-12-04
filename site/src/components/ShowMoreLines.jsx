@@ -33,7 +33,7 @@ const ShowMoreLines = ({ lines = 2, children }) => {
       className={[
         classes.content,
         expanded ? classes.expanded : classes.collapsed,
-        !expanded ? "truncate-lines" : "",
+        expanded ? "" : "truncate-lines",
       ].join(" ")}
       style={{ "--lines": show && !expanded ? lines : undefined }}
       onClick={() => setExpanded(!expanded)}
