@@ -112,7 +112,6 @@ def cite_with_manubot(ids, append_ids=None):
                 sys.stderr.write("WARNING: Couldn't parse Manubot response\n")
                 sys.stderr.write(f"{e}\n")
                 sys.stderr.write(f"{output}\n")
-                sys.stderr.write(f"{output[0]}\n")
                 citation["note"] = f"WARNING: Couldn't parse Manubot response: {e}"
                 citations.append(citation)
                 continue
