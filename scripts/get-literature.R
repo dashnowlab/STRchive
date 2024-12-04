@@ -95,6 +95,9 @@ if (exists("mart")) {
   gene_info = unique(gene_info)
 }
 
+# Sort gene_info by 'hgnc_symbol' to ensure consistency
+gene_info <- gene_info[order(gene_info$hgnc_symbol), ]
+
 # Replace missing values in 'external_synonym' with 'hgnc_symbol'
 # This is because some gene_names have no synonyms, so it's easier to group this way
 gene_info$external_synonym[is.na(gene_info$external_synonym) |
