@@ -13,6 +13,7 @@ import { deriveLocus } from "@/data/derived";
 import { getIdentifiers } from "@/data/identifiers";
 import { getInheritance } from "@/data/inheritance";
 import Layout from "@/layouts/Layout.astro";
+import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
@@ -269,7 +270,7 @@ const locus = deriveLocus(
       {
         locus.year && (
           <div class="box">
-            <div>Year</div>
+            <div data-tooltip="Year first published">Year</div>
             <div>
               <Cited client:load value={locus.year} />
             </div>
@@ -445,22 +446,29 @@ const locus = deriveLocus(
   }
 
   <!-- additional literature -->
-  {
-    !!locus.additional_literature.length && (
-      <section>
-        <Heading level={2}>Additional Literature</Heading>
+  <section>
+    <Heading level={2}>Additional Literature</Heading>
 
-        <p class="center">Additional literature related to this locus.</p>
+    <p class="center">
+      Additional literature related to this locus.
+      <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}
+        >All results from locus-specific query</Link
+      >
+    </p>
 
-        <div class="citations">
-          <AdditionalLiterature
-            client:load
-            additionalLiterature={locus.additional_literature}
-          />
-        </div>
-      </section>
-    )
-  }
+    {
+      !!locus.additional_literature.length && (
+        <>
+          <div class="citations">
+            <AdditionalLiterature
+              client:load
+              additionalLiterature={locus.additional_literature}
+            />
+          </div>
+        </>
+      )
+    }
+  </section>
 
   <script define:vars={{ locus }}>
     console.debug(locus);
