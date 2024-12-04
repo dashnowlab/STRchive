@@ -67,7 +67,7 @@ const {
         if (!hash) return;
 
         /** find element whose id matches hash */
-        const element = document.querySelector(hash);
+        const element = document.getElementById(hash.slice(1));
 
         if (!element) return;
 
@@ -79,11 +79,11 @@ const {
           [
             {
               background: "var(--primary)",
-              boxShadow: "0 0 0 10px var(--primary)",
+              borderRadius: "var(--rounded)",
             },
             {
-              background: "transparent",
-              boxShadow: "0 0 0 10px transparent",
+              background: "",
+              borderRadius: "var(--rounded)",
             },
           ],
           { duration: 2000, iterations: 1 },

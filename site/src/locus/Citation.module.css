@@ -5,7 +5,7 @@
   align-items: flex-start;
   padding: 10px 20px;
   gap: 5px;
-  border-radius: var(--rounded);
+  /* border-radius: var(--rounded); */
   /* background: var(--light-gray); */
   text-align: left;
 }

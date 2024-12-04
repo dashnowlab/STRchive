@@ -1,19 +1,12 @@
-.content {
-  transition: color var(--fast);
-}
-
-.content:hover:not(:has(:is(sup):hover)) {
-  color: var(--primary);
-}
-
-.content:not(:has(:is(span, sup))) {
-  text-decoration: underline dotted 2px;
-  text-underline-offset: 2px;
-}
-
+.content:not(:has(:is(span, sup))),
 .content:has(sup) span {
   text-decoration: underline dotted 1px;
   text-underline-offset: 2px;
+}
+
+.content:not(:has(:is(span, sup))):hover,
+.content:has(sup):has(span:hover) span {
+  text-decoration: none;
 }
 
 .collapsed:hover:not(:has(:is(sup):hover)) {
