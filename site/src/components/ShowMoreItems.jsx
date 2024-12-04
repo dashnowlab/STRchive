@@ -15,7 +15,9 @@ const ShowMoreItems = ({ items, limit = 9 }) => {
           onClick={() => setExpanded(!expanded)}
           aria-expanded={expanded}
         >
-          {expanded ? "Show Less" : "Show All"}
+          {expanded
+            ? "Show Less"
+            : `Show All (+${(items.length - limit).toLocaleString()})`}
         </button>
       )}
     </>
