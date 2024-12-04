@@ -24,8 +24,10 @@ const links = [
       )
     }
 
-    <Link to={`${repo}/blob/main/CITATION.cff`} className="version" noIcon
-      >{version}</Link
+    <Link
+      to={`${repo}/blob/main/CITATION.cff`}
+      className="version"
+      showArrow={false}>{version}</Link
     >
 
     {
