@@ -41,8 +41,11 @@ export const deriveLocus = (locus, loci, citations) => {
   if (citations) {
     /** map for quick lookup of citation by id */
     const citationLookup = Object.fromEntries(
-      citations.map((citation) => [citation.id, citation]),
+      citations.map((citation) => [citation.id, { ...citation }]),
     );
+
+    /** incrementing counter for order of citations */
+    let number = 0;
 
     /** fields that may contain in-text citations, in order they appear on locus page (so number increases as you go down page) */
     const inTextFields = [
@@ -51,10 +54,8 @@ export const deriveLocus = (locus, loci, citations) => {
       "age_onset",
       "details",
       "mechanism_detail",
+      "year",
     ];
-
-    /** incrementing counter for order of citations */
-    let number = 0;
 
     /** extract in-text citations */
     for (const key of inTextFields)

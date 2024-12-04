@@ -267,6 +267,17 @@ const locus = deriveLocus(
 
     <div class="boxes">
       {
+        locus.year && (
+          <div class="box">
+            <div>Year</div>
+            <div>
+              <Cited client:load value={locus.year} />
+            </div>
+          </div>
+        )
+      }
+
+      {
         locus.location_in_gene && (
           <div class="box">
             <div>Location in Gene</div>
