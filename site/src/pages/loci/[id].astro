@@ -9,7 +9,7 @@ import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
 import TableOfContents from "@/components/TableOfContents";
-import { deriveDatum } from "@/data/derived";
+import { deriveLocus } from "@/data/derived";
 import { getIdentifiers } from "@/data/identifiers";
 import { getInheritance } from "@/data/inheritance";
 import Layout from "@/layouts/Layout.astro";
@@ -20,51 +20,34 @@ import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import gnomad from "../../../../data/plots/gnomad.json";
 import citations from "../../../../data/STRchive-citations.json";
-import data from "../../../../data/STRchive-loci.json";
+import loci from "../../../../data/STRchive-loci.json";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
-  data.map(({ id }) => ({ params: { id } }));
+  loci.map(({ id }) => ({ params: { id } }));
 
 /** current page loci id in url */
 const { id } = Astro.params;
 
-/** look up full data entry from id */
-const d = deriveDatum(data.find((d) => d.id === id));
-
-/** nice looking id, for labels */
-const niceId = id.replace("_", " ");
-
-/** same genes, different locus */
-const genes = data.filter(({ gene }) => gene === d.gene);
-
-/** look up full citations details for references  */
-const references =
-  d.references?.map((id, index) => ({
-    id,
-    number: index + 1,
-    ...(citations.find((citation) => citation.id === id) ?? {}),
-  })) ?? [];
-
-/** look up full citations details for additional literature */
-const additionalLiterature =
-  d.additional_literature?.map((id) => ({
-    id,
-    ...(citations.find((citation) => citation.id === id) ?? {}),
-  })) ?? [];
+/** look up full locus entry from id */
+const locus = deriveLocus(
+  loci.find((locus) => locus.id === id) || {},
+  loci,
+  citations,
+);
 ---
 
-<Layout title={niceId}>
+<Layout title={locus.nice_id}>
   <TableOfContents client:only="react" />
 
   <!-- overview -->
   <section>
-    <Heading level={1}><LiaBarcodeSolid />{niceId}</Heading>
+    <Heading level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
     {
-      !!d.locus_tags.length && (
+      !!locus.locus_tags.length && (
         <div class="tags">
-          {d.locus_tags?.map((tag) => (
+          {locus.locus_tags?.map((tag) => (
             <Tag value={tag} />
           ))}
         </div>
@@ -74,24 +57,24 @@ const additionalLiterature =
     <div class="boxes">
       <div class="box">
         <div><TbVirus />Disease ID</div>
-        <div>{d.disease_id}</div>
+        <div>{locus.disease_id}</div>
       </div>
 
       <div class="box">
         <div><TbDna2 />Gene ID</div>
-        <div>{d.gene}</div>
+        <div>{locus.gene}</div>
       </div>
     </div>
 
     {
-      genes.length > 1 && (
+      locus.genes.length > 1 && (
         <div class="genes">
           <div class="heading">
             <TbDna2 />
-            Other gene loci ({genes.length.toLocaleString()})
+            Other gene loci ({locus.genes.length.toLocaleString()})
           </div>
           <div class="gene-list">
-            {genes.map((gene) =>
+            {locus.genes.map((gene) =>
               id === gene.id ? (
                 <span>{gene.id}</span>
               ) : (
@@ -105,7 +88,7 @@ const additionalLiterature =
 
     <div class="identifiers">
       {
-        getIdentifiers(d).map(({ name, Icon, identifiers }) => (
+        getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
           <div>
             <div class="heading">
               <Icon />
@@ -135,9 +118,9 @@ const additionalLiterature =
   <section>
     <Heading level={2}>Disease</Heading>
     {
-      !!d.disease_tags.length && (
+      !!locus.disease_tags.length && (
         <div class="tags">
-          {d.disease_tags?.map((tag) => (
+          {locus.disease_tags?.map((tag) => (
             <Tag value={tag} />
           ))}
         </div>
@@ -147,55 +130,49 @@ const additionalLiterature =
     <div class="boxes">
       <div class="box">
         <div>Name</div>
-        <div>{d.disease}</div>
+        <div>{locus.disease}</div>
       </div>
 
       <div class="box">
         <div>Inheritance</div>
         {
-          (d.inheritance.length ? d.inheritance : [""]).map((inheritance) => (
-            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-              {getInheritance(inheritance) || "-"}
-            </Link>
-          ))
+          (locus.inheritance.length ? locus.inheritance : [""]).map(
+            (inheritance) => (
+              <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+                {getInheritance(inheritance) || "-"}
+              </Link>
+            ),
+          )
         }
       </div>
     </div>
 
     <div class="boxes">
       {
-        d.disease_description && (
+        locus.disease_description && (
           <div class="box wide">
             <div>Description</div>
             <ShowMoreLines client:load lines={3}>
-              <Cited
-                client:load
-                text={d.disease_description}
-                citations={references}
-              />
+              <Cited client:load value={locus.disease_description} />
             </ShowMoreLines>
           </div>
         )
       }
 
       {
-        (d.prevalence || d.prevalence_details) && (
+        (locus.prevalence || locus.prevalence_details) && (
           <div class="box wide">
             <div>Prevalence</div>
-            {d.prevalence && (
+            {locus.prevalence && (
               <div class="fraction">
-                <span>{d.prevalence[0]}</span>
+                <span>{locus.prevalence[0]}</span>
                 <LiaSlashSolid />
-                <span>{d.prevalence[1]}</span>
+                <span>{locus.prevalence[1]}</span>
               </div>
             )}
-            {d.prevalence_details && (
+            {locus.prevalence_details && (
               <ShowMoreLines client:load lines={1}>
-                <Cited
-                  client:load
-                  text={d.prevalence_details}
-                  citations={references}
-                />
+                <Cited client:load value={locus.prevalence_details} />
               </ShowMoreLines>
             )}
           </div>
@@ -210,12 +187,12 @@ const additionalLiterature =
           {
             name: "Age of Onset",
             color: "var(--primary)",
-            values: [d.age_onset_min, d.age_onset_max],
+            values: [locus.age_onset_min, locus.age_onset_max],
           },
           {
             name: "(Typical)",
             color: "var(--secondary)",
-            values: [d.typ_age_onset_min, d.typ_age_onset_max],
+            values: [locus.typ_age_onset_min, locus.typ_age_onset_max],
           },
         ]}
         min={0}
@@ -226,11 +203,11 @@ const additionalLiterature =
       />
 
       {
-        d.age_onset && (
+        locus.age_onset && (
           <div class="box wide">
             <div>Age of Onset Details</div>
             <ShowMoreLines client:load lines={3}>
-              <Cited client:load text={d.age_onset} citations={references} />
+              <Cited client:load value={locus.age_onset} />
             </ShowMoreLines>
           </div>
         )
@@ -252,9 +229,9 @@ const additionalLiterature =
           <div class="box">
             <div>{assembly}</div>
             <Link
-              to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${d[`position_${assembly}`]}`}
+              to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${locus[`position_${assembly}`]}`}
             >
-              {d[`position_${assembly}`]}
+              {locus[`position_${assembly}`]}
             </Link>
           </div>
         ))
@@ -263,28 +240,24 @@ const additionalLiterature =
 
     <div class="boxes">
       {
-        d.details && (
+        locus.details && (
           <div class="box wide">
             <div>Details</div>
             <ShowMoreLines client:load lines={3}>
-              <Cited client:load text={d.details} citations={references} />
+              <Cited client:load value={locus.details} />
             </ShowMoreLines>
           </div>
         )
       }
 
       {
-        (d.mechanism || d.mechanism_detail) && (
+        (locus.mechanism || locus.mechanism_detail) && (
           <div class="box wide">
             <div>Mechanism</div>
-            {d.mechanism && <div>{d.mechanism}</div>}
-            {d.mechanism_detail && (
+            {locus.mechanism && <div>{locus.mechanism}</div>}
+            {locus.mechanism_detail && (
               <ShowMoreLines client:load lines={1}>
-                <Cited
-                  client:load
-                  text={d.mechanism_detail}
-                  citations={references}
-                />
+                <Cited client:load value={locus.mechanism_detail} />
               </ShowMoreLines>
             )}
           </div>
@@ -294,23 +267,23 @@ const additionalLiterature =
 
     <div class="boxes">
       {
-        d.location_in_gene && (
+        locus.location_in_gene && (
           <div class="box">
             <div>Location in Gene</div>
-            <div>{d.location_in_gene}</div>
+            <div>{locus.location_in_gene}</div>
           </div>
         )
       }
 
       {
-        d.gene_strand && (
+        locus.gene_strand && (
           <div class="box">
             <div>Gene Strand</div>
             <div>
-              {d.gene_strand === "+" && (
+              {locus.gene_strand === "+" && (
                 <FaCirclePlus style={{ color: "var(--primary)" }} />
               )}
-              {d.gene_strand === "-" && (
+              {locus.gene_strand === "-" && (
                 <FaCircleMinus style={{ color: "var(--secondary)" }} />
               )}
             </div>
@@ -324,77 +297,81 @@ const additionalLiterature =
 
     <div class="allele-list">
       {
-        !!d.reference_motif_reference_orientation.length && (
+        !!locus.reference_motif_reference_orientation.length && (
           <div class="box">
             <div data-tooltip="Reference motif, reference orientation">
               Ref. Motif
             </div>
-            <div>{d.reference_motif_reference_orientation.join(", ")}</div>
+            <div>{locus.reference_motif_reference_orientation.join(", ")}</div>
           </div>
         )
       }
 
       {
-        (!!d.benign_motif_reference_orientation.length ||
-          !!d.benign_motif_gene_orientation.length) && (
+        (!!locus.benign_motif_reference_orientation.length ||
+          !!locus.benign_motif_gene_orientation.length) && (
           <>
             <div class="box benign">
               <div data-tooltip="Benign motif, reference orientation">
                 Benign (ref.)
               </div>
               <div>
-                {d.benign_motif_reference_orientation.join(", ") || "-"}
+                {locus.benign_motif_reference_orientation.join(", ") || "-"}
               </div>
             </div>
             <div class="box benign">
               <div data-tooltip="Benign motif, gene orientation">
                 Benign (gene)
               </div>
-              <div>{d.benign_motif_gene_orientation.join(", ") || "-"}</div>
+              <div>{locus.benign_motif_gene_orientation.join(", ") || "-"}</div>
             </div>
           </>
         )
       }
 
       {
-        (!!d.pathogenic_motif_reference_orientation.length ||
-          !!d.pathogenic_motif_gene_orientation.length) && (
+        (!!locus.pathogenic_motif_reference_orientation.length ||
+          !!locus.pathogenic_motif_gene_orientation.length) && (
           <>
             <div class="box pathogenic">
               <div data-tooltip="Pathogenic motif, reference orientation">
                 Pathogenic (ref.)
               </div>
               <div>
-                {d.pathogenic_motif_reference_orientation.join(", ") || "-"}
+                {locus.pathogenic_motif_reference_orientation.join(", ") || "-"}
               </div>
             </div>
             <div class="box pathogenic">
               <div data-tooltip="Pathogenic motif, gene orientation">
                 Pathogenic (gene)
               </div>
-              <div>{d.pathogenic_motif_gene_orientation.join(", ") || "-"}</div>
+              <div>
+                {locus.pathogenic_motif_gene_orientation.join(", ") || "-"}
+              </div>
             </div>
           </>
         )
       }
 
       {
-        (!!d.unknown_motif_reference_orientation.length ||
-          !!d.unknown_motif_gene_orientation.length) && (
+        (!!locus.unknown_motif_reference_orientation.length ||
+          !!locus.unknown_motif_gene_orientation.length) && (
           <>
             <div class="box unknown">
               <div data-tooltip="Unknown motif, reference orientation">
                 Unknown (ref.)
               </div>
               <div>
-                {d.unknown_motif_reference_orientation.join(", ") || "-"}
+                {locus.unknown_motif_reference_orientation.join(", ") || "-"}
               </div>
             </div>
             <div class="box unknown">
               <div data-tooltip="Unknown motif, gene orientation">
                 Unknown (gene)
               </div>
-              <div>{d.unknown_motif_gene_orientation.join(", ") || "-"}</div>
+              <div>
+                {locus.unknown_motif_gene_orientation.join(", ") || "-"}
+              </div>
             </div>
           </>
         )
@@ -407,17 +384,17 @@ const additionalLiterature =
         {
           name: "Benign",
           color: "var(--primary)",
-          values: [d.benign_min, d.benign_max],
+          values: [locus.benign_min, locus.benign_max],
         },
         {
           name: "Intermediate",
           color: "var(--tertiary)",
-          values: [d.intermediate_min, d.intermediate_max],
+          values: [locus.intermediate_min, locus.intermediate_max],
         },
         {
           name: "Pathogenic",
           color: "var(--secondary)",
-          values: [d.pathogenic_min, d.pathogenic_max],
+          values: [locus.pathogenic_min, locus.pathogenic_max],
         },
       ]}
       xAxis="Units"
@@ -432,14 +409,14 @@ const additionalLiterature =
       <section>
         <Heading level={2}>gnomAD</Heading>
 
-        <Gnomad client:only="react" title={d.gene} data={gnomad[id]} />
+        <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
       </section>
     )
   }
 
   <!-- references -->
   {
-    !!references.length && (
+    !!locus.references.length && (
       <section>
         <Heading level={2}>References</Heading>
 
@@ -448,7 +425,7 @@ const additionalLiterature =
         </p>
 
         <div class="citations">
-          {references.map((citation) => (
+          {locus.references.map((citation) => (
             <Citation client:load {...citation} />
           ))}
         </div>
@@ -458,7 +435,7 @@ const additionalLiterature =
 
   <!-- additional literature -->
   {
-    !!additionalLiterature.length && (
+    !!locus.additional_literature.length && (
       <section>
         <Heading level={2}>Additional Literature</Heading>
 
@@ -467,15 +444,15 @@ const additionalLiterature =
         <div class="citations">
           <AdditionalLiterature
             client:load
-            additionalLiterature={additionalLiterature}
+            additionalLiterature={locus.additional_literature}
           />
         </div>
       </section>
     )
   }
 
-  <script define:vars={{ d }}>
-    console.debug(d);
+  <script define:vars={{ locus }}>
+    console.debug(locus);
   </script>
 </Layout>
 
@@ -486,7 +463,7 @@ const additionalLiterature =
     align-items: center;
     justify-content: center;
     margin: 40px 0;
-    gap: 5px 10px;
+    gap: 10px;
   }
 
   .boxes {
@@ -639,6 +616,7 @@ const additionalLiterature =
   .citations {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: flex-start;
     gap: 20px;
   }
 </style>

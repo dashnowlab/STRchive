@@ -6,11 +6,8 @@ import classes from "./Citation.module.css";
 const Citation = ({ number, id, title, authors, publisher, date, link }) => {
   const details = [publisher, date].filter(Boolean);
   return (
-    <div
-      className={classes.citation}
-      id={number ? `citation-${number}` : undefined}
-    >
-      {number && <strong className={classes.number}>{number}</strong>}
+    <div className={classes.citation} id={id}>
+      {number && <div className={classes.number}>{number}</div>}
       {title && <ShowMoreLines lines={1}>{title}</ShowMoreLines>}
       {!!authors?.length && (
         <ShowMoreLines lines={1}>{authors?.join(", ")}</ShowMoreLines>
