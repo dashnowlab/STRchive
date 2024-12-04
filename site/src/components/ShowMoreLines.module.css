@@ -1,8 +1,6 @@
 .content:not(:has(:is(span, sup))),
 .content:has(sup) span {
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 1px;
+  text-decoration: underline dotted 1px;
   text-underline-offset: 2px;
 }
 
