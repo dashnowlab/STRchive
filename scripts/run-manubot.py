@@ -4,16 +4,27 @@ adapted from: https://github.com/greenelab/lab-website-template/blob/main/_cite/
 
 import subprocess
 import json
+import jsbeautifier
 import argparse
 import sys
 
-# Special cases not handled by Manubot
+# Special cases not handled by Manubot. 
+# In future should pull these from identifiers.js or the json spec
+
+# These will be converted to the citation type "url" before being passed to Manubot
 database_urls = {
     "malacard": "https://www.malacards.org/card/{id}",
     "genereviews": "https://www.ncbi.nlm.nih.gov/books/{id}",
     "stripy": "https://stripy.org/database/{id}",
     "gnomad": "https://gnomad.broadinstitute.org/short-tandem-repeat/{id}?dataset=gnomad_r4",
     "omim": "https://omim.org/entry/{id}",
+    "orphanet": "https://www.orpha.net/en/disease/detail/{id}",
+    }
+
+# These the URL will be added to use if Manubot can't generate a citation
+# But the citation type will be preserved
+citation_urls = {
+    "pmid": "https://pubmed.ncbi.nlm.nih.gov/{id}",
     }
 
 def parse_args():
@@ -63,14 +74,20 @@ def cite_with_manubot(ids, append_ids=None):
             # original id
             citation["id"] = _id
 
+            # Manubot success flag
+            citation["manubot_success"] = False
+
             id_type = _id.split(":")[0]
 
             # Convert some types to URLs using the rules above
             if id_type in database_urls:
-                url = database_urls[id_type].format(id=_id[len(id_type)+1:])
+                url = database_urls[id_type].format(id=_id[len(id_type)+1:]) # effectively splitting on first colon only
                 sys.stderr.write(f"WARNING: Manubot does not support {_id}. Converted to URL: {url}\n")
                 _id = "url:" + url
                 citation["link"] = url
+            
+            if id_type in citation_urls:
+                citation["link"] = citation_urls[id_type].format(id=_id[len(id_type)+1:])
 
             # run Manubot
             try:
@@ -141,6 +158,9 @@ def cite_with_manubot(ids, append_ids=None):
             # note
             citation["note"] = get_safe(manubot, "note").strip()
 
+            # successfully generated citation with manubot
+            citation["manubot_success"] = True
+
             # add citation to list
             citations.append(citation)
 
@@ -196,7 +216,19 @@ def main(args):
         try:
             with open(args.append, "r") as file:
                 append_json = json.load(file)
-                append_ids = [cite["id"] for cite in append_json]
+                for cite in append_json:
+                    status = True
+                    try:
+                        status = cite["manubot_success"]
+                    except KeyError:
+                        try:
+                            if cite["note"].startswith("WARNING"):
+                                status = False
+                        except KeyError:
+                            status = False
+                    cite["manubot_success"] = status
+                    if status == True:
+                        append_ids.append(cite["id"])
         except Exception as e:
             sys.stderr.write(f"WARNING: Couldn't read append JSON\n")
             sys.stderr.write(f"{e}\n")
@@ -210,7 +242,7 @@ def main(args):
     # write output JSON
     with open(args.output, "w") as file:
         new_json = cite_with_manubot(data, append_ids=append_ids)
-        json.dump(append_json + new_json, file, indent=4)
+        file.write(jsbeautifier.beautify(json.dumps(append_json + new_json)))
 
 #test = ["doi:10.1101/2023.10.09.23296582", "pmid:11246464"]
 #print(json.dumps(cite_with_manubot(test), indent=4))
