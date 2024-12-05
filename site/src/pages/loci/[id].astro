@@ -38,7 +38,7 @@ const locus = deriveLocus(
 );
 
 /** whether there is raw gene search text file associated with this gene */
-const hasRawGeneSearch = Object.keys(
+const hasRawSearch = Object.keys(
   await import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
 ).some((file) => file.includes(locus.gene));
 ---
@@ -452,7 +452,7 @@ const hasRawGeneSearch = Object.keys(
 
   <!-- additional literature -->
   {
-    (!!locus.additional_literature.length || hasRawGeneSearch) && (
+    (!!locus.additional_literature.length || hasRawSearch) && (
       <section>
         <Heading level={2}>Additional Literature</Heading>
 
@@ -460,10 +460,10 @@ const hasRawGeneSearch = Object.keys(
           <p class="center">Additional literature related to this locus.</p>
         )}
 
-        {hasRawGeneSearch && (
+        {hasRawSearch && (
           <p class="center">
             <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}>
-              Raw PubMed gene search results
+              Raw PubMed search results
             </Link>{" "}
             <br />
             (All PubMed results returned by searching for this gene, tandem
