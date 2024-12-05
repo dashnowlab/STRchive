@@ -37,11 +37,9 @@ const locus = deriveLocus(
   citations,
 );
 
-/** whether */
+/** whether there is raw gene search text file associated with this gene */
 const hasRawGeneSearch = Object.keys(
-  await import.meta.glob("../../../../data/literature/*.txt", {
-    eager: true,
-  }),
+  await import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
 ).some((file) => file.includes(locus.gene));
 ---
 
