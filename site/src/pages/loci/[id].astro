@@ -36,6 +36,13 @@ const locus = deriveLocus(
   loci,
   citations,
 );
+
+/** whether */
+const hasRawGeneSearch = Object.keys(
+  await import.meta.glob("../../../../data/literature/*.txt", {
+    eager: true,
+  }),
+).some((file) => file.includes(locus.gene));
 ---
 
 <Layout title={locus.nice_id}>
@@ -446,29 +453,37 @@ const locus = deriveLocus(
   }
 
   <!-- additional literature -->
-  <section>
-    <Heading level={2}>Additional Literature</Heading>
+  {
+    (!!locus.additional_literature.length || hasRawGeneSearch) && (
+      <section>
+        <Heading level={2}>Additional Literature</Heading>
 
-    <p class="center">
-      Additional literature related to this locus.
-      <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}
-        >All results from locus-specific query</Link
-      >
-    </p>
+        {!!locus.additional_literature.length && (
+          <p class="center">Additional literature related to this locus.</p>
+        )}
 
-    {
-      !!locus.additional_literature.length && (
-        <>
+        {hasRawGeneSearch && (
+          <p class="center">
+            <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}>
+              Raw PubMed gene search results
+            </Link>{" "}
+            <br />
+            (All PubMed results returned by searching for this gene, tandem
+            repeats, and disease, in medline format)
+          </p>
+        )}
+
+        {!!locus.additional_literature.length && (
           <div class="citations">
             <AdditionalLiterature
               client:load
               additionalLiterature={locus.additional_literature}
             />
           </div>
-        </>
-      )
-    }
-  </section>
+        )}
+      </section>
+    )
+  }
 
   <script define:vars={{ locus }}>
     console.debug(locus);
