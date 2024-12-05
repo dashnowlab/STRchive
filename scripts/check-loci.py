@@ -51,6 +51,33 @@ def parse_args():
     parser.add_argument('--lit', default=None, help='json file of literature with at least the fields "id", "additional_literature", "references". This will overwrite these literature fields in the STRchive loci json if they are present')
     return parser.parse_args()
 
+def unique_list(mylist):
+    """
+    Args:
+        lst (list)
+    Returns:
+        list: unique values in lst
+    >>> unique_list([1, 2, 2, 3, 3, 3])
+    [1, 2, 3]
+    >>> unique_list([])
+    []
+    >>> unique_list([1, 2, 3])
+    [1, 2, 3]
+    >>> unique_list([3, 3, 1, 2, 3])
+    [3, 1, 2]
+    >>> unique_list(['a', 'lazy', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'])
+    ['a', 'lazy', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'dog']
+    """
+    unique_list = []
+    seen = set()
+
+    for item in mylist:
+        if item not in seen:
+            unique_list.append(item)
+            seen.add(item)
+
+    return unique_list
+
 def circular_permuted(x):
     """
     Args:
@@ -175,6 +202,8 @@ def check_list_fields(record, list_fields = list_fields):
         
         if field in citation_fields:
             record[field] = [x.strip('@') for x in record[field]]
+            # Ensure citation lists are unique
+            record[field] = unique_list(record[field])
 
         if old != record[field]:
             sys.stderr.write(f'Updating {record['id']} {field} from {old} to {record[field]}\n')
