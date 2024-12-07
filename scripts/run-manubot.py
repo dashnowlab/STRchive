@@ -242,7 +242,10 @@ def main(args):
     # write output JSON
     with open(args.output, "w") as file:
         new_json = cite_with_manubot(data, append_ids=append_ids)
-        file.write(jsbeautifier.beautify(json.dumps(append_json + new_json)))
+        options = jsbeautifier.default_options()
+        options.indent_size = 2
+        options.brace_style="expand"
+        file.write(jsbeautifier.beautify(json.dumps(append_json + new_json), options))
 
 #test = ["doi:10.1101/2023.10.09.23296582", "pmid:11246464"]
 #print(json.dumps(cite_with_manubot(test), indent=4))
