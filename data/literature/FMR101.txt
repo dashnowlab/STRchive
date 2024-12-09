@@ -679,12 +679,17 @@ SO  - Mol Autism. 2024 Nov 2;15(1):47. doi: 10.1186/s13229-024-00626-0.
 
 PMID- 39320553
 OWN - NLM
-STAT- Publisher
-LR  - 20240925
+STAT- MEDLINE
+DCOM- 20241205
+LR  - 20241208
 IS  - 1573-7330 (Electronic)
+IS  - 1058-0468 (Print)
 IS  - 1058-0468 (Linking)
-DP  - 2024 Sep 25
+VI  - 41
+IP  - 11
+DP  - 2024 Nov
 TI  - Population-based FMR1 carrier screening among reproductive women.
+PG  - 3237-3243
 LID - 10.1007/s10815-024-03242-2 [doi]
 AB  - PURPOSE: Fragile X syndrome (FXS) is a neurodevelopmental disorder, caused by an 
       CGG repeat expansion (FM, > 200 CGG) in the fragile X messenger ribonucleoprotein 
@@ -753,25 +758,48 @@ PL  - Netherlands
 TA  - J Assist Reprod Genet
 JT  - Journal of assisted reproduction and genetics
 JID - 9206495
+RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
+MH  - Humans
+MH  - Female
+MH  - *Fragile X Mental Retardation Protein/genetics
+MH  - Adult
+MH  - *Fragile X Syndrome/genetics/epidemiology/diagnosis
+MH  - *Genetic Carrier Screening/methods
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Heterozygote
+MH  - Young Adult
+MH  - *Alleles
+MH  - Middle Aged
+MH  - Thailand/epidemiology
+MH  - Genetic Testing/methods
+MH  - Primary Ovarian Insufficiency/genetics/epidemiology/pathology
+MH  - Mutation/genetics
+PMC - PMC11621265
 OTO - NOTNLM
 OT  - Carrier screening
 OT  - FXPAC
 OT  - FXPOI
 OT  - Premutation
 OT  - Prevalence
+COIS- Declarations. Conflict of interest: The authors declare no competing interests.
 EDAT- 2024/09/25 12:43
-MHDA- 2024/09/25 12:43
+MHDA- 2024/12/05 17:31
+PMCR- 2024/09/25
 CRDT- 2024/09/25 11:17
 PHST- 2024/07/15 00:00 [received]
 PHST- 2024/08/22 00:00 [accepted]
-PHST- 2024/09/25 12:43 [medline]
+PHST- 2024/12/05 17:31 [medline]
 PHST- 2024/09/25 12:43 [pubmed]
 PHST- 2024/09/25 11:17 [entrez]
+PHST- 2024/09/25 00:00 [pmc-release]
 AID - 10.1007/s10815-024-03242-2 [pii]
+AID - 3242 [pii]
 AID - 10.1007/s10815-024-03242-2 [doi]
-PST - aheadofprint
-SO  - J Assist Reprod Genet. 2024 Sep 25. doi: 10.1007/s10815-024-03242-2.
+PST - ppublish
+SO  - J Assist Reprod Genet. 2024 Nov;41(11):3237-3243. doi: 
+      10.1007/s10815-024-03242-2. Epub 2024 Sep 25.
 
 PMID- 39095619
 OWN - NLM
@@ -51373,7 +51401,7 @@ PMID- 14560307
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040506
-LR  - 20241122
+LR  - 20241203
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)
 VI  - 12
@@ -53105,7 +53133,7 @@ PMID- 11410685
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20011018
-LR  - 20241122
+LR  - 20241203
 IS  - 1011-8934 (Print)
 IS  - 1598-6357 (Electronic)
 IS  - 1011-8934 (Linking)
