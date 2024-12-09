@@ -1,0 +1,23 @@
+name: strchive
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - pandas
+  - numpy
+  - biopython
+  - defopt
+  - snakemake
+  - jsbeautifier
+  - r-base
+  - r-essentials
+  - r-jsonlite
+  - r-dplyr
+  - r-rentrez
+  - r-easypubmed
+  - r-stringr
+  - r-purrr
+  - pip
+  - pip:
+      - manubot
+  - python=3.12
