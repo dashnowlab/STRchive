@@ -40,6 +40,9 @@ jobs:
       - run: |
           conda info
 
+      - name: SSH debug
+        uses: mxschmitt/action-tmate@v3
+
       - name: Check loci and update bed files (short)
         if: ${{ github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'}}
         run: snakemake --config stages="skip-refs"
