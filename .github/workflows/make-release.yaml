@@ -1,0 +1,75 @@
+name: Make release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - CITATION.cff
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Debug dump
+        uses: crazy-max/ghaction-dump-context@v2
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get previous version file
+        run: git show HEAD~1:CITATION.cff >> CITATION-previous.cff
+
+      - name: Install packages
+        run: npm install yaml@v2 semver@v7 glob@v11
+
+      - name: Get version
+        id: version
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const { readFileSync, renameSync } = require("fs");
+            const { valid, eq, lt } = require("semver");
+            const { parse } = require("yaml");
+            const { globSync } = require("glob");
+
+            // load and parse file contents
+            const { version: newVersion } = parse(readFileSync("CITATION.cff").toString());
+            const { version: oldVersion } = parse(readFileSync("CITATION-previous.cff").toString());
+
+            console.log(`Old version: ${oldVersion}`);
+            console.log(`New version: ${newVersion}`);
+
+            // check version
+            if (!valid(newVersion) || lt(newVersion, oldVersion))
+              throw Error("Version not valid");
+            if (eq(oldVersion, newVersion)) {
+              console.log("Version unchanged");
+              return "";
+            }
+
+            // add version to artifact filenames
+            for (const file of globSync("**/STRchive-*.json"))
+              renameSync(file, file.replace(".json", `_v${newVersion}.json`));
+            for (const file of globSync("**/*STRchive-disease-loci*.bed"))
+              renameSync(file, file.replace("-loci", `-loci_v${newVersion}`));
+
+            return newVersion;
+
+      - name: SSH debug
+        if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: ${{ steps.version.outputs.result }}
+        with:
+          tag_name: v${{ steps.version.outputs.result }}
+          files: |
+            **/STRchive-loci*.json
+            **/STRchive-citations*.json
+            **/*STRchive-disease-loci*.bed
