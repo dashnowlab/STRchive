@@ -36,26 +36,26 @@ if stages == "all" or stages == "new-refs":
             # Citations
             expand("{base_dir}STRchive-citations.json", base_dir = base_dir),
             # TRGT bed files
-            expand("{base_dir}hg38.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}hg19.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
             # Extended BED files
-            expand("{base_dir}hg38.STRchive-disease-loci.bed", base_dir = base_dir),
-            expand("{base_dir}hg19.STRchive-disease-loci.bed", base_dir = base_dir),
-            expand("{base_dir}T2T-chm13.STRchive-disease-loci.bed", base_dir = base_dir)
+            expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir)
 elif stages == "skip-refs":
     rule all:
         input:
             # Check loci
             expand("{base_dir}check-loci.txt", base_dir = base_dir),
             # TRGT bed files
-            expand("{base_dir}hg38.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}hg19.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
             # Extended BED files
-            expand("{base_dir}hg38.STRchive-disease-loci.bed", base_dir = base_dir),
-            expand("{base_dir}hg19.STRchive-disease-loci.bed", base_dir = base_dir),
-            expand("{base_dir}T2T-chm13.STRchive-disease-loci.bed", base_dir = base_dir)
+            expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir)
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
 
@@ -136,7 +136,7 @@ rule TRGT_hg38:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}hg38.STRchive-disease-loci.TRGT.bed"
+        results = "{base_dir}STRchive-disease-loci.hg38.TRGT.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g hg38 {input.in_json} {output.results}
@@ -147,7 +147,7 @@ rule TRGT_hg19:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}hg19.STRchive-disease-loci.TRGT.bed"
+        results = "{base_dir}STRchive-disease-loci.hg19.TRGT.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g hg19 {input.in_json} {output.results}
@@ -158,7 +158,7 @@ rule TRGT_T2T:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}T2T-chm13.STRchive-disease-loci.TRGT.bed"
+        results = "{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g T2T {input.in_json} {output.results}
@@ -169,7 +169,7 @@ rule bed_hg38:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}hg38.STRchive-disease-loci.bed"
+        results = "{base_dir}STRchive-disease-loci.hg38.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g hg38 {input.in_json} {output.results}
@@ -180,7 +180,7 @@ rule bed_hg19:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}hg19.STRchive-disease-loci.bed"
+        results = "{base_dir}STRchive-disease-loci.hg19.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g hg19 {input.in_json} {output.results}
@@ -191,7 +191,7 @@ rule bed_T2T:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}T2T-chm13.STRchive-disease-loci.bed"
+        results = "{base_dir}STRchive-disease-loci.T2T-chm13.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g T2T {input.in_json} {output.results}
