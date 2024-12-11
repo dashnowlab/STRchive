@@ -53,10 +53,12 @@ jobs:
             }
 
             // add version to artifact filenames
-            for (const file of globSync("**/STRchive-*.json"))
-              renameSync(file, file.replace(".json", `_v${newVersion}.json`));
-            for (const file of globSync("**/*STRchive-disease-loci*.bed"))
-              renameSync(file, file.replace("-loci", `-loci_v${newVersion}`));
+            for (const file of globSync("**/STRchive-citations*.json"))
+              renameSync(file, file.replace("STRchive-citations", `STRchive-citations-v${newVersion}`));
+            for (const file of globSync("**/STRchive-loci.json"))
+              renameSync(file, file.replace("STRchive-loci", `STRchive-loci-v${newVersion}`));
+            for (const file of globSync("**/STRchive-disease-loci*.bed"))
+              renameSync(file, file.replace("STRchive-disease-loci", `STRchive-disease-loci-v${newVersion}`));
 
             return newVersion;
 
@@ -72,4 +74,4 @@ jobs:
           files: |
             **/STRchive-loci*.json
             **/STRchive-citations*.json
-            **/*STRchive-disease-loci*.bed
+            **/STRchive-disease-loci*.bed

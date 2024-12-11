@@ -670,14 +670,17 @@ SO  - Neurol Sci. 2024 Jun;45(6):2877-2880. doi: 10.1007/s10072-024-07453-4. Epu
 
 PMID- 37855597
 OWN - NLM
-STAT- Publisher
-LR  - 20231019
+STAT- MEDLINE
+DCOM- 20241209
+LR  - 20241209
 IS  - 1563-5279 (Electronic)
 IS  - 0020-7454 (Linking)
-DP  - 2023 Oct 19
-TI  - Dilemma in Differentiation of Spinocerebellar Ataxia Type 17 from Huntington's 
-      Disease...Comorbidity or Independent Disease?
-PG  - 1-9
+VI  - 134
+IP  - 12
+DP  - 2024 Dec
+TI  - Dilemma in differentiation of spinocerebellar ataxia type 17 from Huntington's 
+      disease: comorbidity or independent disease?
+PG  - 1564-1568
 LID - 10.1080/00207454.2023.2273766 [doi]
 AB  - Both Huntington's disease (HD) and Spinocerebellar ataxia 17 (SCA17) mutations 
       showed expanded CAG repeats, with overlapping clinical manifestation: motor 
@@ -687,8 +690,8 @@ AB  - Both Huntington's disease (HD) and Spinocerebellar ataxia 17 (SCA17) mutat
       TBP gene. There is a dilemma in differentiation of SCA 17 from HD in one patient, 
       never been reported before. Is the diagnosis comorbidity of HD with SCA17 or HD 
       only?
-FAU - Li, An
-AU  - Li A
+FAU - An, Li
+AU  - An L
 AD  - Department of Neurology, The Sixth Medical Center of PLA General Hospital, 
       Beijing, China.
 FAU - Yao, Sheng
@@ -713,26 +716,45 @@ AUID- ORCID: 0000-0002-6162-383X
 AD  - Department of Neurology, The Sixth Medical Center of PLA General Hospital, 
       Beijing, China.
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
-DEP - 20231019
+DEP - 20231031
 PL  - England
 TA  - Int J Neurosci
 JT  - The International journal of neuroscience
 JID - 0270707
+RN  - 0 (TATA-Box Binding Protein)
+RN  - 0 (Huntingtin Protein)
+RN  - 0 (TBP protein, human)
+RN  - 0 (HTT protein, human)
+RN  - Spinocerebellar Ataxia 17
 SB  - IM
+MH  - Humans
+MH  - *Huntington Disease/genetics/epidemiology/complications
+MH  - *Spinocerebellar Ataxias/genetics/epidemiology
+MH  - *TATA-Box Binding Protein/genetics
+MH  - *Huntingtin Protein/genetics
+MH  - Male
+MH  - Comorbidity
+MH  - Diagnosis, Differential
+MH  - Adult
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Middle Aged
+MH  - Female
 OTO - NOTNLM
 OT  - Huntington's disease
 OT  - Repeat expansion diseases
-OT  - Spinocerebellar ataxia 17
+OT  - spinocerebellar ataxia 17
 EDAT- 2023/10/19 12:44
-MHDA- 2023/10/19 12:44
+MHDA- 2024/12/10 00:22
 CRDT- 2023/10/19 09:03
-PHST- 2023/10/19 12:44 [medline]
+PHST- 2024/12/10 00:22 [medline]
 PHST- 2023/10/19 12:44 [pubmed]
 PHST- 2023/10/19 09:03 [entrez]
 AID - 10.1080/00207454.2023.2273766 [doi]
-PST - aheadofprint
-SO  - Int J Neurosci. 2023 Oct 19:1-9. doi: 10.1080/00207454.2023.2273766.
+PST - ppublish
+SO  - Int J Neurosci. 2024 Dec;134(12):1564-1568. doi: 10.1080/00207454.2023.2273766. 
+      Epub 2023 Oct 31.
 
 PMID- 37632648
 OWN - NLM
@@ -2044,7 +2066,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20240306
+LR  - 20241211
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -2182,7 +2204,6 @@ LA  - eng
 GR  - MR/K01417X/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/K000608/1/MRC_/Medical Research Council/United Kingdom
 GR  - G1001253/MRC_/Medical Research Council/United Kingdom
-GR  - MR/L501542/1/MRC_/Medical Research Council/United Kingdom
 GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
 GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
@@ -2192,6 +2213,8 @@ GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0701075/MRC_/Medical Research Council/United Kingdom
 GR  - G0901254/MRC_/Medical Research Council/United Kingdom
 GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
+GR  - MR/L501542/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S035699/1/MRC_/Medical Research Council/United Kingdom
 GR  - DH_/Department of Health/United Kingdom
 GR  - G-0907/PUK_/Parkinson's UK/United Kingdom
 GR  - MR/M009203/1/MRC_/Medical Research Council/United Kingdom
