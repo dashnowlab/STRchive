@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - CITATION.cff
+  workflow_dispatch:
 
 jobs:
   release:
