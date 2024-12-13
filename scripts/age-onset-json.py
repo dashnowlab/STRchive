@@ -123,8 +123,7 @@ def build_JSON(args):
         name="Age 18"
     ))
 
-    fig.update_layout(autosize=False, 
-                    width=800,
+    fig.update_layout(width=800,
                     height=len(diseases)*20,
                     template="plotly_white",
                     legend_title="Inheritance",
