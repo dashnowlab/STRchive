@@ -123,14 +123,14 @@ def build_JSON(args):
         name="Age 18"
     ))
 
-    fig.update_layout(
+    fig.update_layout(height=len(diseases)*15,
                     template="plotly_white",
                     legend_title="Inheritance",
                     margin=dict(l=10, r=10, t=10, b=10),
-                    minreducedheight=len(diseases)*15
                     ) 
     fig.update_xaxes(title_text="Age of onset (years)", range=[-10,100])
     fig.update_yaxes(title_text="Disease")
+    fig.update_yaxes(automargin=True)
     #fig.show()
     fig_json = fig.to_json()
 

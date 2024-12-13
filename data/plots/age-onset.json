@@ -740,7 +740,8 @@
       "title":
       {
         "text": "Disease"
-      }
+      },
+      "automargin": true
     },
     "margin":
     {
@@ -749,6 +750,7 @@
       "t": 10,
       "b": 10
     },
+    "height": 840,
     "legend":
     {
       "title":
@@ -756,7 +758,6 @@
         "text": "Inheritance"
       }
     },
-    "minreducedheight": 840,
     "xaxis":
     {
       "title":
