@@ -9,6 +9,8 @@ dependencies:
   - defopt
   - snakemake
   - jsbeautifier
+  - statsmodels
+  - plotly
   - r-essentials
   - r-jsonlite
   - r-dplyr
