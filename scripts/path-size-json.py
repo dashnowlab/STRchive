@@ -140,7 +140,7 @@ def build_JSON(args):
             showlegend=False
         ))
 
-    fig.update_layout(autosize=False, width=800, height=len(diseases)*20,
+    fig.update_layout(width=800, height=len(diseases)*20,
                     margin=dict(l=10, r=10, t=10, b=10))
     fig.update_layout(template="plotly_white", legend_title='Allele size')
     fig.update_xaxes(title_text="Allele size in base pairs", type="log")
