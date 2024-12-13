@@ -749,8 +749,6 @@
       "t": 10,
       "b": 10
     },
-    "width": 800,
-    "height": 1120,
     "legend":
     {
       "title":
@@ -758,6 +756,7 @@
         "text": "Inheritance"
       }
     },
+    "minreducedheight": 840,
     "xaxis":
     {
       "title":
