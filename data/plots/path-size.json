@@ -1,1 +1,1585 @@
-{"x":{"data":[{"x":[2.12057393120585,3.3184807251745174,null,2.0681858617461617,3.7781512503836434,null,1.7781512503836436,2.9542425094393248,null,2.0086001717619175,2.3096301674258988,null,1.6812412373755872,1.9084850188786497,null,1.5563025007672873,1.7781512503836436,null,2.0211892990699383,2.4456042032735974,null,2.0211892990699383,2.436162647040756,null,2.2041199826559246,4.3521825181113627,null,1.954242509439325,3.1760912590556813,null,2.12057393120585,2.4166405073382808,null,1.9084850188786497,3.1398790864012365,null,2.1760912590556813,3.5910646070264991,null,null,3.5797835966168101,null,2.1398790864012365,4.3802112417116064,null,1.7323937598229686,1.9956351945975499,null,2.374748346010104,2.9542425094393248,null,2.0170333392987803,4.6434526764861879,null,1.1760912590556813,1.3222192947339193,null,1.5563025007672873,2.9876662649262746,null,2.1760912590556813,2.5740312677277188,null,1.8388490907372552,2.9628426812012423,null,2.0086001717619175,3.4771212547196626,null,2.3802112417116059,2.5051499783199058,null,2.7299742856995555,3.4488608456074408,null,2.12057393120585,3.7781512503836434,null,1.6232492903979006,1.8573324964312685,null,1.9956351945975499,3.7075701760979363,null,1.9822712330395684,2.6919651027673601,null,2.0569048513364727,3.6532125137753435,null,1.6232492903979006,1.8195439355418688,null,1.5563025007672873,1.7323937598229686,null,1.7323937598229686,1.9822712330395684,null,1.6532125137753437,1.8388490907372552,null,1.8920946026904804,2.8750612633917001,null,1.9242792860618816,2.255272505103306,null,2.1303337684950061,2.9380190974762104,null,null,3.7139103541289553,null,0.84509804001425681,0.90308998699194354,null,1.5440680443502757,3,null,1.4771212547196624,2.2253092817258628,null,1.9242792860618816,4.1760912590556813,null,2.0453229787866576,3.190611797813605,null,1.6812412373755872,3.3222192947339191,null,1.4771212547196624,1.7323937598229686,null,1.7781512503836436,1.9956351945975499,null,1.9822712330395684,2.369215857410143,null,1.6232492903979006,1.7558748556724915,null,1.9822712330395684,2.5843312243675309,null,null,3.2227164711475833,null,null,4.0413926851582254,null,1.7403626894942439,4.1383026981662816,null,1.6812412373755872,2.7715874808812555,null,1.7075701760979363,1.9084850188786497,null,null,4.2648178230095368,null,1.6532125137753437,1.8920946026904804,null,null,3.4456042032735974,null,null,2.4941545940184429,null,2.0791812460476247,2.2966651902615309,null,1.6532125137753437,1.8750612633917001,null,2.0681858617461617,3.8920946026904804,null,2.0569048513364727,2.4771212547196626,null,null,3.5185139398778875,null,1.3010299956639813,1.4771212547196624,null,1.7781512503836436,2.5185139398778875,null,null,3.6989700043360187,null,1.8920946026904804,2.3463529744506388,null,1.6532125137753437,1.8750612633917001,null,1.4771212547196624,1.5563025007672873,null,1.8195439355418688,3.1303337684950061,null,1.2041199826559248,1.0791812460476249],"y":[22,22,null,15,15,null,13,13,null,47,47,null,62,62,null,58,58,null,40,40,null,46,46,null,2,2,null,49,49,null,33,33,null,48,48,null,30,30,null,17,17,null,8,8,null,59,59,null,23,23,null,24,24,null,68,68,null,20,20,null,35,35,null,14,14,null,38,38,null,26,26,null,12,12,null,16,16,null,63,63,null,34,34,null,28,28,null,6,6,null,53,53,null,60,60,null,54,54,null,55,55,null,44,44,null,45,45,null,27,27,null,3,3,null,71,71,null,11,11,null,67,67,null,4,4,null,32,32,null,19,19,null,65,65,null,50,50,null,37,37,null,61,61,null,43,43,null,64,64,null,25,25,null,7,7,null,21,21,null,57,57,null,18,18,null,56,56,null,9,9,null,31,31,null,39,39,null,52,52,null,36,36,null,42,42,null,5,5,null,70,70,null,29,29,null,1,1,null,41,41,null,51,51,null,66,66,null,10,10,null,69,69],"text":["disease_id: OPDM<br />benign_max_bp: 2.120574<br />path_max_bp: 3.318481","disease_id: OPDM<br />benign_max_bp: 2.120574<br />path_max_bp: 3.318481",null,"disease_id: FRAXE<br />benign_max_bp: 2.068186<br />path_max_bp: 3.778151","disease_id: FRAXE<br />benign_max_bp: 2.068186<br />path_max_bp: 3.778151",null,"disease_id: FRA2A<br />benign_max_bp: 1.778151<br />path_max_bp: 2.954243","disease_id: FRA2A<br />benign_max_bp: 1.778151<br />path_max_bp: 2.954243",null,"disease_id: SBMA<br />benign_max_bp: 2.008600<br />path_max_bp: 2.309630","disease_id: SBMA<br />benign_max_bp: 2.008600<br />path_max_bp: 2.309630",null,"disease_id: EIEE1<br />benign_max_bp: 1.681241<br />path_max_bp: 1.908485","disease_id: EIEE1<br />benign_max_bp: 1.681241<br />path_max_bp: 1.908485",null,"disease_id: PRTS<br />benign_max_bp: 1.556303<br />path_max_bp: 1.778151","disease_id: PRTS<br />benign_max_bp: 1.556303<br />path_max_bp: 1.778151",null,"disease_id: DRPLA<br />benign_max_bp: 2.021189<br />path_max_bp: 2.445604","disease_id: DRPLA<br />benign_max_bp: 2.021189<br />path_max_bp: 2.445604",null,"disease_id: SCA1<br />benign_max_bp: 2.021189<br />path_max_bp: 2.436163","disease_id: SCA1<br />benign_max_bp: 2.021189<br />path_max_bp: 2.436163",null,"disease_id: SCA10<br />benign_max_bp: 2.204120<br />path_max_bp: 4.352183","disease_id: SCA10<br />benign_max_bp: 2.204120<br />path_max_bp: 4.352183",null,"disease_id: SCA2<br />benign_max_bp: 1.954243<br />path_max_bp: 3.176091","disease_id: SCA2<br />benign_max_bp: 1.954243<br />path_max_bp: 3.176091",null,"disease_id: SCA3, MJD<br />benign_max_bp: 2.120574<br />path_max_bp: 2.416641","disease_id: SCA3, MJD<br />benign_max_bp: 2.120574<br />path_max_bp: 2.416641",null,"disease_id: SCA7<br />benign_max_bp: 1.908485<br />path_max_bp: 3.139879","disease_id: SCA7<br />benign_max_bp: 1.908485<br />path_max_bp: 3.139879",null,"disease_id: SCA8<br />benign_max_bp: 2.176091<br />path_max_bp: 3.591065","disease_id: SCA8<br />benign_max_bp: 2.176091<br />path_max_bp: 3.591065",null,"disease_id: SCA31<br />benign_max_bp:       NA<br />path_max_bp: 3.579784","disease_id: SCA31<br />benign_max_bp:       NA<br />path_max_bp: 3.579784",null,"disease_id: FTDALS1<br />benign_max_bp: 2.139879<br />path_max_bp: 4.380211","disease_id: FTDALS1<br />benign_max_bp: 2.139879<br />path_max_bp: 4.380211",null,"disease_id: SCA6<br />benign_max_bp: 1.732394<br />path_max_bp: 1.995635","disease_id: SCA6<br />benign_max_bp: 1.732394<br />path_max_bp: 1.995635",null,"disease_id: JBS<br />benign_max_bp: 2.374748<br />path_max_bp: 2.954243","disease_id: JBS<br />benign_max_bp: 2.374748<br />path_max_bp: 2.954243",null,"disease_id: DM2<br />benign_max_bp: 2.017033<br />path_max_bp: 4.643453","disease_id: DM2<br />benign_max_bp: 2.017033<br />path_max_bp: 4.643453",null,"disease_id: EDM1, PSACH<br />benign_max_bp: 1.176091<br />path_max_bp: 1.322219","disease_id: EDM1, PSACH<br />benign_max_bp: 1.176091<br />path_max_bp: 1.322219",null,"disease_id: EPM1<br />benign_max_bp: 1.556303<br />path_max_bp: 2.987666","disease_id: EPM1<br />benign_max_bp: 1.556303<br />path_max_bp: 2.987666",null,"disease_id: SCA37<br />benign_max_bp: 2.176091<br />path_max_bp: 2.574031","disease_id: SCA37<br />benign_max_bp: 2.176091<br />path_max_bp: 2.574031",null,"disease_id: FRA12A<br />benign_max_bp: 1.838849<br />path_max_bp: 2.962843","disease_id: FRA12A<br />benign_max_bp: 1.838849<br />path_max_bp: 2.962843",null,"disease_id: DM1<br />benign_max_bp: 2.008600<br />path_max_bp: 3.477121","disease_id: DM1<br />benign_max_bp: 2.008600<br />path_max_bp: 3.477121",null,"disease_id: RCPS<br />benign_max_bp: 2.380211<br />path_max_bp: 2.505150","disease_id: RCPS<br />benign_max_bp: 2.380211<br />path_max_bp: 2.505150",null,"disease_id: SCA27B<br />benign_max_bp: 2.729974<br />path_max_bp: 3.448861","disease_id: SCA27B<br />benign_max_bp: 2.729974<br />path_max_bp: 3.448861",null,"disease_id: FXS, FXTAS, POF1<br />benign_max_bp: 2.120574<br />path_max_bp: 3.778151","disease_id: FXS, FXTAS, POF1<br />benign_max_bp: 2.120574<br />path_max_bp: 3.778151",null,"disease_id: BPES<br />benign_max_bp: 1.623249<br />path_max_bp: 1.857332","disease_id: BPES<br />benign_max_bp: 1.623249<br />path_max_bp: 1.857332",null,"disease_id: FRDA<br />benign_max_bp: 1.995635<br />path_max_bp: 3.707570","disease_id: FRDA<br />benign_max_bp: 1.995635<br />path_max_bp: 3.707570",null,"disease_id: OPDM2<br />benign_max_bp: 1.982271<br />path_max_bp: 2.691965","disease_id: OPDM2<br />benign_max_bp: 1.982271<br />path_max_bp: 2.691965",null,"disease_id: GDPAG<br />benign_max_bp: 2.056905<br />path_max_bp: 3.653213","disease_id: GDPAG<br />benign_max_bp: 2.056905<br />path_max_bp: 3.653213",null,"disease_id: HFG-I<br />benign_max_bp: 1.623249<br />path_max_bp: 1.819544","disease_id: HFG-I<br />benign_max_bp: 1.623249<br />path_max_bp: 1.819544",null,"disease_id: HFG-II<br />benign_max_bp: 1.556303<br />path_max_bp: 1.732394","disease_id: HFG-II<br />benign_max_bp: 1.556303<br />path_max_bp: 1.732394",null,"disease_id: HFG-III<br />benign_max_bp: 1.732394<br />path_max_bp: 1.982271","disease_id: HFG-III<br />benign_max_bp: 1.732394<br />path_max_bp: 1.982271",null,"disease_id: SD5<br />benign_max_bp: 1.653213<br />path_max_bp: 1.838849","disease_id: SD5<br />benign_max_bp: 1.653213<br />path_max_bp: 1.838849",null,"disease_id: HD<br />benign_max_bp: 1.892095<br />path_max_bp: 2.875061","disease_id: HD<br />benign_max_bp: 1.892095<br />path_max_bp: 2.875061",null,"disease_id: HDL2<br />benign_max_bp: 1.924279<br />path_max_bp: 2.255273","disease_id: HDL2<br />benign_max_bp: 1.924279<br />path_max_bp: 2.255273",null,"disease_id: OPDM1<br />benign_max_bp: 2.130334<br />path_max_bp: 2.938019","disease_id: OPDM1<br />benign_max_bp: 2.130334<br />path_max_bp: 2.938019",null,"disease_id: FAME3<br />benign_max_bp:       NA<br />path_max_bp: 3.713910","disease_id: FAME3<br />benign_max_bp:       NA<br />path_max_bp: 3.713910",null,"disease_id: ADTKD<br />benign_max_bp: 0.845098<br />path_max_bp: 0.903090","disease_id: ADTKD<br />benign_max_bp: 0.845098<br />path_max_bp: 0.903090",null,"disease_id: NME<br />benign_max_bp: 1.544068<br />path_max_bp: 3.000000","disease_id: NME<br />benign_max_bp: 1.544068<br />path_max_bp: 3.000000",null,"disease_id: ALS1<br />benign_max_bp: 1.477121<br />path_max_bp: 2.225309","disease_id: ALS1<br />benign_max_bp: 1.477121<br />path_max_bp: 2.225309",null,"disease_id: SCA36<br />benign_max_bp: 1.924279<br />path_max_bp: 4.176091","disease_id: SCA36<br />benign_max_bp: 1.924279<br />path_max_bp: 4.176091",null,"disease_id: NIID<br />benign_max_bp: 2.045323<br />path_max_bp: 3.190612","disease_id: NIID<br />benign_max_bp: 2.045323<br />path_max_bp: 3.190612",null,"disease_id: OPML1<br />benign_max_bp: 1.681241<br />path_max_bp: 3.322219","disease_id: OPML1<br />benign_max_bp: 1.681241<br />path_max_bp: 3.322219",null,"disease_id: OPMD<br />benign_max_bp: 1.477121<br />path_max_bp: 1.732394","disease_id: OPMD<br />benign_max_bp: 1.477121<br />path_max_bp: 1.732394",null,"disease_id: CCHS<br />benign_max_bp: 1.778151<br />path_max_bp: 1.995635","disease_id: CCHS<br />benign_max_bp: 1.778151<br />path_max_bp: 1.995635",null,"disease_id: SCA12<br />benign_max_bp: 1.982271<br />path_max_bp: 2.369216","disease_id: SCA12<br />benign_max_bp: 1.982271<br />path_max_bp: 2.369216",null,"disease_id: HSAN VIII<br />benign_max_bp: 1.623249<br />path_max_bp: 1.755875","disease_id: HSAN VIII<br />benign_max_bp: 1.623249<br />path_max_bp: 1.755875",null,"disease_id: CJD<br />benign_max_bp: 1.982271<br />path_max_bp: 2.584331","disease_id: CJD<br />benign_max_bp: 1.982271<br />path_max_bp: 2.584331",null,"disease_id: FAME8<br />benign_max_bp:       NA<br />path_max_bp: 3.222716","disease_id: FAME8<br />benign_max_bp:       NA<br />path_max_bp: 3.222716",null,"disease_id: FAME7<br />benign_max_bp:       NA<br />path_max_bp: 4.041393","disease_id: FAME7<br />benign_max_bp:       NA<br />path_max_bp: 4.041393",null,"disease_id: CANVAS<br />benign_max_bp: 1.740363<br />path_max_bp: 4.138303","disease_id: CANVAS<br />benign_max_bp: 1.740363<br />path_max_bp: 4.138303",null,"disease_id: OPDM4<br />benign_max_bp: 1.681241<br />path_max_bp: 2.771587","disease_id: OPDM4<br />benign_max_bp: 1.681241<br />path_max_bp: 2.771587",null,"disease_id: CCD<br />benign_max_bp: 1.707570<br />path_max_bp: 1.908485","disease_id: CCD<br />benign_max_bp: 1.707570<br />path_max_bp: 1.908485",null,"disease_id: FAME1<br />benign_max_bp:       NA<br />path_max_bp: 4.264818","disease_id: FAME1<br />benign_max_bp:       NA<br />path_max_bp: 4.264818",null,"disease_id: XLMR<br />benign_max_bp: 1.653213<br />path_max_bp: 1.892095","disease_id: XLMR<br />benign_max_bp: 1.653213<br />path_max_bp: 1.892095",null,"disease_id: FAME2<br />benign_max_bp:       NA<br />path_max_bp: 3.445604","disease_id: FAME2<br />benign_max_bp:       NA<br />path_max_bp: 3.445604",null,"disease_id: XDP<br />benign_max_bp:       NA<br />path_max_bp: 2.494155","disease_id: XDP<br />benign_max_bp:       NA<br />path_max_bp: 2.494155",null,"disease_id: SCA17<br />benign_max_bp: 2.079181<br />path_max_bp: 2.296665","disease_id: SCA17<br />benign_max_bp: 2.079181<br />path_max_bp: 2.296665",null,"disease_id: TOF<br />benign_max_bp: 1.653213<br />path_max_bp: 1.875061","disease_id: TOF<br />benign_max_bp: 1.653213<br />path_max_bp: 1.875061",null,"disease_id: FECD3<br />benign_max_bp: 2.068186<br />path_max_bp: 3.892095","disease_id: FECD3<br />benign_max_bp: 2.068186<br />path_max_bp: 3.892095",null,"disease_id: SCA<br />benign_max_bp: 2.056905<br />path_max_bp: 2.477121","disease_id: SCA<br />benign_max_bp: 2.056905<br />path_max_bp: 2.477121",null,"disease_id: FAME6<br />benign_max_bp:       NA<br />path_max_bp: 3.518514","disease_id: FAME6<br />benign_max_bp:       NA<br />path_max_bp: 3.518514",null,"disease_id: HMNR7<br />benign_max_bp: 1.301030<br />path_max_bp: 1.477121","disease_id: HMNR7<br />benign_max_bp: 1.301030<br />path_max_bp: 1.477121",null,"disease_id: DBQD2, BSS<br />benign_max_bp: 1.778151<br />path_max_bp: 2.518514","disease_id: DBQD2, BSS<br />benign_max_bp: 1.778151<br />path_max_bp: 2.518514",null,"disease_id: FAME4<br />benign_max_bp:       NA<br />path_max_bp: 3.698970","disease_id: FAME4<br />benign_max_bp:       NA<br />path_max_bp: 3.698970",null,"disease_id: SCA4<br />benign_max_bp: 1.892095<br />path_max_bp: 2.346353","disease_id: SCA4<br />benign_max_bp: 1.892095<br />path_max_bp: 2.346353",null,"disease_id: HPE5<br />benign_max_bp: 1.653213<br />path_max_bp: 1.875061","disease_id: HPE5<br />benign_max_bp: 1.653213<br />path_max_bp: 1.875061",null,"disease_id: VACTERLX<br />benign_max_bp: 1.477121<br />path_max_bp: 1.556303","disease_id: VACTERLX<br />benign_max_bp: 1.477121<br />path_max_bp: 1.556303",null,"disease_id: FRA7A<br />benign_max_bp: 1.819544<br />path_max_bp: 3.130334","disease_id: FRA7A<br />benign_max_bp: 1.819544<br />path_max_bp: 3.130334",null,"disease_id: CHNG3<br />benign_max_bp: 1.204120<br />path_max_bp: 1.079181","disease_id: CHNG3<br />benign_max_bp: 1.204120<br />path_max_bp: 1.079181"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(190,190,190,0.3)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.5490032620257876,3.3184807251745174,null,2.7803173121401512,3.7781512503836434,null,2.9542425094393248,2.9542425094393248,null,2.0569048513364727,2.3096301674258988,null,1.7075701760979363,1.9084850188786497,null,1.7781512503836436,1.7781512503836436,null,2.1583624920952498,2.4456042032735974,null,2.0681858617461617,2.436162647040756,null,3.6020599913279625,4.3521825181113627,null,2.0211892990699383,3.1760912590556813,null,2.255272505103306,2.4166405073382808,null,2.0453229787866576,3.1398790864012365,null,2.3283796034387376,3.5910646070264991,null,2.7403626894942437,3.5797835966168101,null,3.1778249718646818,4.3802112417116064,null,1.7781512503836436,1.9956351945975499,null,2.4814426285023048,2.9542425094393248,null,2.4771212547196626,4.6434526764861879,null,1.255272505103306,1.3222192947339193,null,2.5563025007672873,2.9876662649262746,null,2.1903316981702914,2.5740312677277188,null,2.9132839017604186,2.9628426812012423,null,2.1760912590556813,3.4771212547196626,null,2.4471580313422194,2.5051499783199058,null,2.9822712330395684,3.4488608456074408,null,2.7803173121401512,3.7781512503836434,null,1.6532125137753437,1.8573324964312685,null,2.2253092817258628,3.7075701760979363,null,2.3404441148401185,2.6919651027673601,null,3.3096301674258988,3.6532125137753435,null,1.8195439355418688,1.8195439355418688,null,1.7323937598229686,1.7323937598229686,null,1.8195439355418688,1.9822712330395684,null,1.8195439355418688,1.8388490907372552,null,2.0791812460476247,2.8750612633917001,null,2.0791812460476247,2.255272505103306,null,2.406540180433955,2.9380190974762104,null,3.5971464878336952,3.7139103541289553,null,0.90308998699194354,0.90308998699194354,null,3,3,null,1.5185139398778875,2.2253092817258628,null,3.5910646070264991,4.1760912590556813,null,2.2966651902615309,3.190611797813605,null,2.6839471307515121,3.3222192947339191,null,1.5563025007672873,1.7323937598229686,null,1.8920946026904804,1.9956351945975499,null,2.1846914308175989,2.369215857410143,null,1.7323937598229686,1.7558748556724915,null,2.0791812460476247,2.5843312243675309,null,1.6532125137753437,3.2227164711475833,null,2.4771212547196626,4.0413926851582254,null,3.3010299956639813,4.1383026981662816,null,2.5563025007672873,2.7715874808812555,null,1.7781512503836436,1.9084850188786497,null,2.720159303405957,4.2648178230095368,null,1.8195439355418688,1.8920946026904804,null,3.1367205671564067,3.4456042032735974,null,2.3222192947339191,2.4941545940184429,null,2.167317334748176,2.2966651902615309,null,1.8750612633917001,1.8750612633917001,null,2.1846914308175989,3.8920946026904804,null,2.1303337684950061,2.4771212547196626,null,3.5185139398778875,3.5185139398778875,null,1,1.4771212547196624,null,2.3344537511509307,2.5185139398778875,null,3.6989700043360187,3.6989700043360187,null,2.1398790864012365,2.3463529744506388,null,1.8750612633917001,1.8750612633917001,null,1.5563025007672873,1.5563025007672873,null,3.1303337684950061,3.1303337684950061,null,1.0791812460476249,1.0791812460476249],"y":[22,22,null,15,15,null,13,13,null,47,47,null,62,62,null,58,58,null,40,40,null,46,46,null,2,2,null,49,49,null,33,33,null,48,48,null,30,30,null,17,17,null,8,8,null,59,59,null,23,23,null,24,24,null,68,68,null,20,20,null,35,35,null,14,14,null,38,38,null,26,26,null,12,12,null,16,16,null,63,63,null,34,34,null,28,28,null,6,6,null,53,53,null,60,60,null,54,54,null,55,55,null,44,44,null,45,45,null,27,27,null,3,3,null,71,71,null,11,11,null,67,67,null,4,4,null,32,32,null,19,19,null,65,65,null,50,50,null,37,37,null,61,61,null,43,43,null,64,64,null,25,25,null,7,7,null,21,21,null,57,57,null,18,18,null,56,56,null,9,9,null,31,31,null,39,39,null,52,52,null,36,36,null,42,42,null,5,5,null,70,70,null,29,29,null,1,1,null,41,41,null,51,51,null,66,66,null,10,10,null,69,69],"text":["disease_id: OPDM<br />path_min_bp: 2.549003<br />path_max_bp: 3.318481<br />colour: Pathogenic","disease_id: OPDM<br />path_min_bp: 2.549003<br />path_max_bp: 3.318481<br />colour: Pathogenic",null,"disease_id: FRAXE<br />path_min_bp: 2.780317<br />path_max_bp: 3.778151<br />colour: Pathogenic","disease_id: FRAXE<br />path_min_bp: 2.780317<br />path_max_bp: 3.778151<br />colour: Pathogenic",null,"disease_id: FRA2A<br />path_min_bp: 2.954243<br />path_max_bp: 2.954243<br />colour: Pathogenic","disease_id: FRA2A<br />path_min_bp: 2.954243<br />path_max_bp: 2.954243<br />colour: Pathogenic",null,"disease_id: SBMA<br />path_min_bp: 2.056905<br />path_max_bp: 2.309630<br />colour: Pathogenic","disease_id: SBMA<br />path_min_bp: 2.056905<br />path_max_bp: 2.309630<br />colour: Pathogenic",null,"disease_id: EIEE1<br />path_min_bp: 1.707570<br />path_max_bp: 1.908485<br />colour: Pathogenic","disease_id: EIEE1<br />path_min_bp: 1.707570<br />path_max_bp: 1.908485<br />colour: Pathogenic",null,"disease_id: PRTS<br />path_min_bp: 1.778151<br />path_max_bp: 1.778151<br />colour: Pathogenic","disease_id: PRTS<br />path_min_bp: 1.778151<br />path_max_bp: 1.778151<br />colour: Pathogenic",null,"disease_id: DRPLA<br />path_min_bp: 2.158362<br />path_max_bp: 2.445604<br />colour: Pathogenic","disease_id: DRPLA<br />path_min_bp: 2.158362<br />path_max_bp: 2.445604<br />colour: Pathogenic",null,"disease_id: SCA1<br />path_min_bp: 2.068186<br />path_max_bp: 2.436163<br />colour: Pathogenic","disease_id: SCA1<br />path_min_bp: 2.068186<br />path_max_bp: 2.436163<br />colour: Pathogenic",null,"disease_id: SCA10<br />path_min_bp: 3.602060<br />path_max_bp: 4.352183<br />colour: Pathogenic","disease_id: SCA10<br />path_min_bp: 3.602060<br />path_max_bp: 4.352183<br />colour: Pathogenic",null,"disease_id: SCA2<br />path_min_bp: 2.021189<br />path_max_bp: 3.176091<br />colour: Pathogenic","disease_id: SCA2<br />path_min_bp: 2.021189<br />path_max_bp: 3.176091<br />colour: Pathogenic",null,"disease_id: SCA3, MJD<br />path_min_bp: 2.255273<br />path_max_bp: 2.416641<br />colour: Pathogenic","disease_id: SCA3, MJD<br />path_min_bp: 2.255273<br />path_max_bp: 2.416641<br />colour: Pathogenic",null,"disease_id: SCA7<br />path_min_bp: 2.045323<br />path_max_bp: 3.139879<br />colour: Pathogenic","disease_id: SCA7<br />path_min_bp: 2.045323<br />path_max_bp: 3.139879<br />colour: Pathogenic",null,"disease_id: SCA8<br />path_min_bp: 2.328380<br />path_max_bp: 3.591065<br />colour: Pathogenic","disease_id: SCA8<br />path_min_bp: 2.328380<br />path_max_bp: 3.591065<br />colour: Pathogenic",null,"disease_id: SCA31<br />path_min_bp: 2.740363<br />path_max_bp: 3.579784<br />colour: Pathogenic","disease_id: SCA31<br />path_min_bp: 2.740363<br />path_max_bp: 3.579784<br />colour: Pathogenic",null,"disease_id: FTDALS1<br />path_min_bp: 3.177825<br />path_max_bp: 4.380211<br />colour: Pathogenic","disease_id: FTDALS1<br />path_min_bp: 3.177825<br />path_max_bp: 4.380211<br />colour: Pathogenic",null,"disease_id: SCA6<br />path_min_bp: 1.778151<br />path_max_bp: 1.995635<br />colour: Pathogenic","disease_id: SCA6<br />path_min_bp: 1.778151<br />path_max_bp: 1.995635<br />colour: Pathogenic",null,"disease_id: JBS<br />path_min_bp: 2.481443<br />path_max_bp: 2.954243<br />colour: Pathogenic","disease_id: JBS<br />path_min_bp: 2.481443<br />path_max_bp: 2.954243<br />colour: Pathogenic",null,"disease_id: DM2<br />path_min_bp: 2.477121<br />path_max_bp: 4.643453<br />colour: Pathogenic","disease_id: DM2<br />path_min_bp: 2.477121<br />path_max_bp: 4.643453<br />colour: Pathogenic",null,"disease_id: EDM1, PSACH<br />path_min_bp: 1.255273<br />path_max_bp: 1.322219<br />colour: Pathogenic","disease_id: EDM1, PSACH<br />path_min_bp: 1.255273<br />path_max_bp: 1.322219<br />colour: Pathogenic",null,"disease_id: EPM1<br />path_min_bp: 2.556303<br />path_max_bp: 2.987666<br />colour: Pathogenic","disease_id: EPM1<br />path_min_bp: 2.556303<br />path_max_bp: 2.987666<br />colour: Pathogenic",null,"disease_id: SCA37<br />path_min_bp: 2.190332<br />path_max_bp: 2.574031<br />colour: Pathogenic","disease_id: SCA37<br />path_min_bp: 2.190332<br />path_max_bp: 2.574031<br />colour: Pathogenic",null,"disease_id: FRA12A<br />path_min_bp: 2.913284<br />path_max_bp: 2.962843<br />colour: Pathogenic","disease_id: FRA12A<br />path_min_bp: 2.913284<br />path_max_bp: 2.962843<br />colour: Pathogenic",null,"disease_id: DM1<br />path_min_bp: 2.176091<br />path_max_bp: 3.477121<br />colour: Pathogenic","disease_id: DM1<br />path_min_bp: 2.176091<br />path_max_bp: 3.477121<br />colour: Pathogenic",null,"disease_id: RCPS<br />path_min_bp: 2.447158<br />path_max_bp: 2.505150<br />colour: Pathogenic","disease_id: RCPS<br />path_min_bp: 2.447158<br />path_max_bp: 2.505150<br />colour: Pathogenic",null,"disease_id: SCA27B<br />path_min_bp: 2.982271<br />path_max_bp: 3.448861<br />colour: Pathogenic","disease_id: SCA27B<br />path_min_bp: 2.982271<br />path_max_bp: 3.448861<br />colour: Pathogenic",null,"disease_id: FXS, FXTAS, POF1<br />path_min_bp: 2.780317<br />path_max_bp: 3.778151<br />colour: Pathogenic","disease_id: FXS, FXTAS, POF1<br />path_min_bp: 2.780317<br />path_max_bp: 3.778151<br />colour: Pathogenic",null,"disease_id: BPES<br />path_min_bp: 1.653213<br />path_max_bp: 1.857332<br />colour: Pathogenic","disease_id: BPES<br />path_min_bp: 1.653213<br />path_max_bp: 1.857332<br />colour: Pathogenic",null,"disease_id: FRDA<br />path_min_bp: 2.225309<br />path_max_bp: 3.707570<br />colour: Pathogenic","disease_id: FRDA<br />path_min_bp: 2.225309<br />path_max_bp: 3.707570<br />colour: Pathogenic",null,"disease_id: OPDM2<br />path_min_bp: 2.340444<br />path_max_bp: 2.691965<br />colour: Pathogenic","disease_id: OPDM2<br />path_min_bp: 2.340444<br />path_max_bp: 2.691965<br />colour: Pathogenic",null,"disease_id: GDPAG<br />path_min_bp: 3.309630<br />path_max_bp: 3.653213<br />colour: Pathogenic","disease_id: GDPAG<br />path_min_bp: 3.309630<br />path_max_bp: 3.653213<br />colour: Pathogenic",null,"disease_id: HFG-I<br />path_min_bp: 1.819544<br />path_max_bp: 1.819544<br />colour: Pathogenic","disease_id: HFG-I<br />path_min_bp: 1.819544<br />path_max_bp: 1.819544<br />colour: Pathogenic",null,"disease_id: HFG-II<br />path_min_bp: 1.732394<br />path_max_bp: 1.732394<br />colour: Pathogenic","disease_id: HFG-II<br />path_min_bp: 1.732394<br />path_max_bp: 1.732394<br />colour: Pathogenic",null,"disease_id: HFG-III<br />path_min_bp: 1.819544<br />path_max_bp: 1.982271<br />colour: Pathogenic","disease_id: HFG-III<br />path_min_bp: 1.819544<br />path_max_bp: 1.982271<br />colour: Pathogenic",null,"disease_id: SD5<br />path_min_bp: 1.819544<br />path_max_bp: 1.838849<br />colour: Pathogenic","disease_id: SD5<br />path_min_bp: 1.819544<br />path_max_bp: 1.838849<br />colour: Pathogenic",null,"disease_id: HD<br />path_min_bp: 2.079181<br />path_max_bp: 2.875061<br />colour: Pathogenic","disease_id: HD<br />path_min_bp: 2.079181<br />path_max_bp: 2.875061<br />colour: Pathogenic",null,"disease_id: HDL2<br />path_min_bp: 2.079181<br />path_max_bp: 2.255273<br />colour: Pathogenic","disease_id: HDL2<br />path_min_bp: 2.079181<br />path_max_bp: 2.255273<br />colour: Pathogenic",null,"disease_id: OPDM1<br />path_min_bp: 2.406540<br />path_max_bp: 2.938019<br />colour: Pathogenic","disease_id: OPDM1<br />path_min_bp: 2.406540<br />path_max_bp: 2.938019<br />colour: Pathogenic",null,"disease_id: FAME3<br />path_min_bp: 3.597146<br />path_max_bp: 3.713910<br />colour: Pathogenic","disease_id: FAME3<br />path_min_bp: 3.597146<br />path_max_bp: 3.713910<br />colour: Pathogenic",null,"disease_id: ADTKD<br />path_min_bp: 0.903090<br />path_max_bp: 0.903090<br />colour: Pathogenic","disease_id: ADTKD<br />path_min_bp: 0.903090<br />path_max_bp: 0.903090<br />colour: Pathogenic",null,"disease_id: NME<br />path_min_bp: 3.000000<br />path_max_bp: 3.000000<br />colour: Pathogenic","disease_id: NME<br />path_min_bp: 3.000000<br />path_max_bp: 3.000000<br />colour: Pathogenic",null,"disease_id: ALS1<br />path_min_bp: 1.518514<br />path_max_bp: 2.225309<br />colour: Pathogenic","disease_id: ALS1<br />path_min_bp: 1.518514<br />path_max_bp: 2.225309<br />colour: Pathogenic",null,"disease_id: SCA36<br />path_min_bp: 3.591065<br />path_max_bp: 4.176091<br />colour: Pathogenic","disease_id: SCA36<br />path_min_bp: 3.591065<br />path_max_bp: 4.176091<br />colour: Pathogenic",null,"disease_id: NIID<br />path_min_bp: 2.296665<br />path_max_bp: 3.190612<br />colour: Pathogenic","disease_id: NIID<br />path_min_bp: 2.296665<br />path_max_bp: 3.190612<br />colour: Pathogenic",null,"disease_id: OPML1<br />path_min_bp: 2.683947<br />path_max_bp: 3.322219<br />colour: Pathogenic","disease_id: OPML1<br />path_min_bp: 2.683947<br />path_max_bp: 3.322219<br />colour: Pathogenic",null,"disease_id: OPMD<br />path_min_bp: 1.556303<br />path_max_bp: 1.732394<br />colour: Pathogenic","disease_id: OPMD<br />path_min_bp: 1.556303<br />path_max_bp: 1.732394<br />colour: Pathogenic",null,"disease_id: CCHS<br />path_min_bp: 1.892095<br />path_max_bp: 1.995635<br />colour: Pathogenic","disease_id: CCHS<br />path_min_bp: 1.892095<br />path_max_bp: 1.995635<br />colour: Pathogenic",null,"disease_id: SCA12<br />path_min_bp: 2.184691<br />path_max_bp: 2.369216<br />colour: Pathogenic","disease_id: SCA12<br />path_min_bp: 2.184691<br />path_max_bp: 2.369216<br />colour: Pathogenic",null,"disease_id: HSAN VIII<br />path_min_bp: 1.732394<br />path_max_bp: 1.755875<br />colour: Pathogenic","disease_id: HSAN VIII<br />path_min_bp: 1.732394<br />path_max_bp: 1.755875<br />colour: Pathogenic",null,"disease_id: CJD<br />path_min_bp: 2.079181<br />path_max_bp: 2.584331<br />colour: Pathogenic","disease_id: CJD<br />path_min_bp: 2.079181<br />path_max_bp: 2.584331<br />colour: Pathogenic",null,"disease_id: FAME8<br />path_min_bp: 1.653213<br />path_max_bp: 3.222716<br />colour: Pathogenic","disease_id: FAME8<br />path_min_bp: 1.653213<br />path_max_bp: 3.222716<br />colour: Pathogenic",null,"disease_id: FAME7<br />path_min_bp: 2.477121<br />path_max_bp: 4.041393<br />colour: Pathogenic","disease_id: FAME7<br />path_min_bp: 2.477121<br />path_max_bp: 4.041393<br />colour: Pathogenic",null,"disease_id: CANVAS<br />path_min_bp: 3.301030<br />path_max_bp: 4.138303<br />colour: Pathogenic","disease_id: CANVAS<br />path_min_bp: 3.301030<br />path_max_bp: 4.138303<br />colour: Pathogenic",null,"disease_id: OPDM4<br />path_min_bp: 2.556303<br />path_max_bp: 2.771587<br />colour: Pathogenic","disease_id: OPDM4<br />path_min_bp: 2.556303<br />path_max_bp: 2.771587<br />colour: Pathogenic",null,"disease_id: CCD<br />path_min_bp: 1.778151<br />path_max_bp: 1.908485<br />colour: Pathogenic","disease_id: CCD<br />path_min_bp: 1.778151<br />path_max_bp: 1.908485<br />colour: Pathogenic",null,"disease_id: FAME1<br />path_min_bp: 2.720159<br />path_max_bp: 4.264818<br />colour: Pathogenic","disease_id: FAME1<br />path_min_bp: 2.720159<br />path_max_bp: 4.264818<br />colour: Pathogenic",null,"disease_id: XLMR<br />path_min_bp: 1.819544<br />path_max_bp: 1.892095<br />colour: Pathogenic","disease_id: XLMR<br />path_min_bp: 1.819544<br />path_max_bp: 1.892095<br />colour: Pathogenic",null,"disease_id: FAME2<br />path_min_bp: 3.136721<br />path_max_bp: 3.445604<br />colour: Pathogenic","disease_id: FAME2<br />path_min_bp: 3.136721<br />path_max_bp: 3.445604<br />colour: Pathogenic",null,"disease_id: XDP<br />path_min_bp: 2.322219<br />path_max_bp: 2.494155<br />colour: Pathogenic","disease_id: XDP<br />path_min_bp: 2.322219<br />path_max_bp: 2.494155<br />colour: Pathogenic",null,"disease_id: SCA17<br />path_min_bp: 2.167317<br />path_max_bp: 2.296665<br />colour: Pathogenic","disease_id: SCA17<br />path_min_bp: 2.167317<br />path_max_bp: 2.296665<br />colour: Pathogenic",null,"disease_id: TOF<br />path_min_bp: 1.875061<br />path_max_bp: 1.875061<br />colour: Pathogenic","disease_id: TOF<br />path_min_bp: 1.875061<br />path_max_bp: 1.875061<br />colour: Pathogenic",null,"disease_id: FECD3<br />path_min_bp: 2.184691<br />path_max_bp: 3.892095<br />colour: Pathogenic","disease_id: FECD3<br />path_min_bp: 2.184691<br />path_max_bp: 3.892095<br />colour: Pathogenic",null,"disease_id: SCA<br />path_min_bp: 2.130334<br />path_max_bp: 2.477121<br />colour: Pathogenic","disease_id: SCA<br />path_min_bp: 2.130334<br />path_max_bp: 2.477121<br />colour: Pathogenic",null,"disease_id: FAME6<br />path_min_bp: 3.518514<br />path_max_bp: 3.518514<br />colour: Pathogenic","disease_id: FAME6<br />path_min_bp: 3.518514<br />path_max_bp: 3.518514<br />colour: Pathogenic",null,"disease_id: HMNR7<br />path_min_bp: 1.000000<br />path_max_bp: 1.477121<br />colour: Pathogenic","disease_id: HMNR7<br />path_min_bp: 1.000000<br />path_max_bp: 1.477121<br />colour: Pathogenic",null,"disease_id: DBQD2, BSS<br />path_min_bp: 2.334454<br />path_max_bp: 2.518514<br />colour: Pathogenic","disease_id: DBQD2, BSS<br />path_min_bp: 2.334454<br />path_max_bp: 2.518514<br />colour: Pathogenic",null,"disease_id: FAME4<br />path_min_bp: 3.698970<br />path_max_bp: 3.698970<br />colour: Pathogenic","disease_id: FAME4<br />path_min_bp: 3.698970<br />path_max_bp: 3.698970<br />colour: Pathogenic",null,"disease_id: SCA4<br />path_min_bp: 2.139879<br />path_max_bp: 2.346353<br />colour: Pathogenic","disease_id: SCA4<br />path_min_bp: 2.139879<br />path_max_bp: 2.346353<br />colour: Pathogenic",null,"disease_id: HPE5<br />path_min_bp: 1.875061<br />path_max_bp: 1.875061<br />colour: Pathogenic","disease_id: HPE5<br />path_min_bp: 1.875061<br />path_max_bp: 1.875061<br />colour: Pathogenic",null,"disease_id: VACTERLX<br />path_min_bp: 1.556303<br />path_max_bp: 1.556303<br />colour: Pathogenic","disease_id: VACTERLX<br />path_min_bp: 1.556303<br />path_max_bp: 1.556303<br />colour: Pathogenic",null,"disease_id: FRA7A<br />path_min_bp: 3.130334<br />path_max_bp: 3.130334<br />colour: Pathogenic","disease_id: FRA7A<br />path_min_bp: 3.130334<br />path_max_bp: 3.130334<br />colour: Pathogenic",null,"disease_id: CHNG3<br />path_min_bp: 1.079181<br />path_max_bp: 1.079181<br />colour: Pathogenic","disease_id: CHNG3<br />path_min_bp: 1.079181<br />path_max_bp: 1.079181<br />colour: Pathogenic"],"type":"scatter","mode":"lines","line":{"width":7.559055118110237,"color":"rgba(252,78,7,1)","dash":"solid"},"hoveron":"points","name":"Pathogenic","legendgroup":"Pathogenic","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[null,null,null,2.0791812460476247,2.7781512503836434,null,null,null,null,2.0334237554869499,2.0453229787866576,null,null,null,null,null,null,null,2.0334237554869499,2.1492191126553797,null,2.0334237554869499,2.0569048513364727,null,2.2174839442139063,3.6283889300503116,null,1.968482948553935,2.0086001717619175,null,2.1303337684950061,2.2479732663618068,null,1.9242792860618816,2.0211892990699383,null,2.1760912590556813,2.3222192947339191,null,null,null,null,2.1583624920952498,2.5563025007672873,null,1.7558748556724915,1.7558748556724915,null,2.3802112417116059,2.4771212547196626,null,2.0334237554869499,2.4712917110589387,null,null,null,null,2.1583624920952498,2.3096301674258988,null,null,null,null,2.6201360549737576,2.7909884750888159,null,2.0211892990699383,2.167317334748176,null,2.4149733479708178,2.4149733479708178,null,2.7323937598229686,2.9809119377768436,null,2.1303337684950061,2.7781512503836434,null,null,null,null,2.0086001717619175,2.2174839442139063,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.9084850188786497,2.0681858617461617,null,1.9395192526186185,2.0681858617461617,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.954242509439325,3.590395947184013,null,2.0569048513364727,2.2900346113625178,null,null,null,null,1.5185139398778875,1.5185139398778875,null,1.7993405494535817,1.8750612633917001,null,2.0791812460476247,2.167317334748176,null,null,null,null,null,null,null,null,null,null,null,null,null,1.7403626894942439,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.0899051114393981,2.1583624920952498,null,null,null,null,2.0791812460476247,2.1760912590556813,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.9084850188786497,2.1303337684950061,null,null,null,null,1.5185139398778875,1.5185139398778875,null,2.1003705451175629,2.406540180433955,null,null,null],"y":[22,22,null,15,15,null,13,13,null,47,47,null,62,62,null,58,58,null,40,40,null,46,46,null,2,2,null,49,49,null,33,33,null,48,48,null,30,30,null,17,17,null,8,8,null,59,59,null,23,23,null,24,24,null,68,68,null,20,20,null,35,35,null,14,14,null,38,38,null,26,26,null,12,12,null,16,16,null,63,63,null,34,34,null,28,28,null,6,6,null,53,53,null,60,60,null,54,54,null,55,55,null,44,44,null,45,45,null,27,27,null,3,3,null,71,71,null,11,11,null,67,67,null,4,4,null,32,32,null,19,19,null,65,65,null,50,50,null,37,37,null,61,61,null,43,43,null,64,64,null,25,25,null,7,7,null,21,21,null,57,57,null,18,18,null,56,56,null,9,9,null,31,31,null,39,39,null,52,52,null,36,36,null,42,42,null,5,5,null,70,70,null,29,29,null,1,1,null,41,41,null,51,51,null,66,66,null,10,10,null,69,69],"text":["disease_id: OPDM<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: OPDM<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FRAXE<br />int_min_bp: 2.079181<br />int_max_bp: 2.778151<br />colour: Intermediate","disease_id: FRAXE<br />int_min_bp: 2.079181<br />int_max_bp: 2.778151<br />colour: Intermediate",null,"disease_id: FRA2A<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FRA2A<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: SBMA<br />int_min_bp: 2.033424<br />int_max_bp: 2.045323<br />colour: Intermediate","disease_id: SBMA<br />int_min_bp: 2.033424<br />int_max_bp: 2.045323<br />colour: Intermediate",null,"disease_id: EIEE1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: EIEE1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: PRTS<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: PRTS<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: DRPLA<br />int_min_bp: 2.033424<br />int_max_bp: 2.149219<br />colour: Intermediate","disease_id: DRPLA<br />int_min_bp: 2.033424<br />int_max_bp: 2.149219<br />colour: Intermediate",null,"disease_id: SCA1<br />int_min_bp: 2.033424<br />int_max_bp: 2.056905<br />colour: Intermediate","disease_id: SCA1<br />int_min_bp: 2.033424<br />int_max_bp: 2.056905<br />colour: Intermediate",null,"disease_id: SCA10<br />int_min_bp: 2.217484<br />int_max_bp: 3.628389<br />colour: Intermediate","disease_id: SCA10<br />int_min_bp: 2.217484<br />int_max_bp: 3.628389<br />colour: Intermediate",null,"disease_id: SCA2<br />int_min_bp: 1.968483<br />int_max_bp: 2.008600<br />colour: Intermediate","disease_id: SCA2<br />int_min_bp: 1.968483<br />int_max_bp: 2.008600<br />colour: Intermediate",null,"disease_id: SCA3, MJD<br />int_min_bp: 2.130334<br />int_max_bp: 2.247973<br />colour: Intermediate","disease_id: SCA3, MJD<br />int_min_bp: 2.130334<br />int_max_bp: 2.247973<br />colour: Intermediate",null,"disease_id: SCA7<br />int_min_bp: 1.924279<br />int_max_bp: 2.021189<br />colour: Intermediate","disease_id: SCA7<br />int_min_bp: 1.924279<br />int_max_bp: 2.021189<br />colour: Intermediate",null,"disease_id: SCA8<br />int_min_bp: 2.176091<br />int_max_bp: 2.322219<br />colour: Intermediate","disease_id: SCA8<br />int_min_bp: 2.176091<br />int_max_bp: 2.322219<br />colour: Intermediate",null,"disease_id: SCA31<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: SCA31<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FTDALS1<br />int_min_bp: 2.158362<br />int_max_bp: 2.556303<br />colour: Intermediate","disease_id: FTDALS1<br />int_min_bp: 2.158362<br />int_max_bp: 2.556303<br />colour: Intermediate",null,"disease_id: SCA6<br />int_min_bp: 1.755875<br />int_max_bp: 1.755875<br />colour: Intermediate","disease_id: SCA6<br />int_min_bp: 1.755875<br />int_max_bp: 1.755875<br />colour: Intermediate",null,"disease_id: JBS<br />int_min_bp: 2.380211<br />int_max_bp: 2.477121<br />colour: Intermediate","disease_id: JBS<br />int_min_bp: 2.380211<br />int_max_bp: 2.477121<br />colour: Intermediate",null,"disease_id: DM2<br />int_min_bp: 2.033424<br />int_max_bp: 2.471292<br />colour: Intermediate","disease_id: DM2<br />int_min_bp: 2.033424<br />int_max_bp: 2.471292<br />colour: Intermediate",null,"disease_id: EDM1, PSACH<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: EDM1, PSACH<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: EPM1<br />int_min_bp: 2.158362<br />int_max_bp: 2.309630<br />colour: Intermediate","disease_id: EPM1<br />int_min_bp: 2.158362<br />int_max_bp: 2.309630<br />colour: Intermediate",null,"disease_id: SCA37<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: SCA37<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FRA12A<br />int_min_bp: 2.620136<br />int_max_bp: 2.790988<br />colour: Intermediate","disease_id: FRA12A<br />int_min_bp: 2.620136<br />int_max_bp: 2.790988<br />colour: Intermediate",null,"disease_id: DM1<br />int_min_bp: 2.021189<br />int_max_bp: 2.167317<br />colour: Intermediate","disease_id: DM1<br />int_min_bp: 2.021189<br />int_max_bp: 2.167317<br />colour: Intermediate",null,"disease_id: RCPS<br />int_min_bp: 2.414973<br />int_max_bp: 2.414973<br />colour: Intermediate","disease_id: RCPS<br />int_min_bp: 2.414973<br />int_max_bp: 2.414973<br />colour: Intermediate",null,"disease_id: SCA27B<br />int_min_bp: 2.732394<br />int_max_bp: 2.980912<br />colour: Intermediate","disease_id: SCA27B<br />int_min_bp: 2.732394<br />int_max_bp: 2.980912<br />colour: Intermediate",null,"disease_id: FXS, FXTAS, POF1<br />int_min_bp: 2.130334<br />int_max_bp: 2.778151<br />colour: Intermediate","disease_id: FXS, FXTAS, POF1<br />int_min_bp: 2.130334<br />int_max_bp: 2.778151<br />colour: Intermediate",null,"disease_id: BPES<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: BPES<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FRDA<br />int_min_bp: 2.008600<br />int_max_bp: 2.217484<br />colour: Intermediate","disease_id: FRDA<br />int_min_bp: 2.008600<br />int_max_bp: 2.217484<br />colour: Intermediate",null,"disease_id: OPDM2<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: OPDM2<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: GDPAG<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: GDPAG<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: HFG-I<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: HFG-I<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: HFG-II<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: HFG-II<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: HFG-III<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: HFG-III<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: SD5<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: SD5<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: HD<br />int_min_bp: 1.908485<br />int_max_bp: 2.068186<br />colour: Intermediate","disease_id: HD<br />int_min_bp: 1.908485<br />int_max_bp: 2.068186<br />colour: Intermediate",null,"disease_id: HDL2<br />int_min_bp: 1.939519<br />int_max_bp: 2.068186<br />colour: Intermediate","disease_id: HDL2<br />int_min_bp: 1.939519<br />int_max_bp: 2.068186<br />colour: Intermediate",null,"disease_id: OPDM1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: OPDM1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME3<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME3<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: ADTKD<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: ADTKD<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: NME<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: NME<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: ALS1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: ALS1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: SCA36<br />int_min_bp: 1.954243<br />int_max_bp: 3.590396<br />colour: Intermediate","disease_id: SCA36<br />int_min_bp: 1.954243<br />int_max_bp: 3.590396<br />colour: Intermediate",null,"disease_id: NIID<br />int_min_bp: 2.056905<br />int_max_bp: 2.290035<br />colour: Intermediate","disease_id: NIID<br />int_min_bp: 2.056905<br />int_max_bp: 2.290035<br />colour: Intermediate",null,"disease_id: OPML1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: OPML1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: OPMD<br />int_min_bp: 1.518514<br />int_max_bp: 1.518514<br />colour: Intermediate","disease_id: OPMD<br />int_min_bp: 1.518514<br />int_max_bp: 1.518514<br />colour: Intermediate",null,"disease_id: CCHS<br />int_min_bp: 1.799341<br />int_max_bp: 1.875061<br />colour: Intermediate","disease_id: CCHS<br />int_min_bp: 1.799341<br />int_max_bp: 1.875061<br />colour: Intermediate",null,"disease_id: SCA12<br />int_min_bp: 2.079181<br />int_max_bp: 2.167317<br />colour: Intermediate","disease_id: SCA12<br />int_min_bp: 2.079181<br />int_max_bp: 2.167317<br />colour: Intermediate",null,"disease_id: HSAN VIII<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: HSAN VIII<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: CJD<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: CJD<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME8<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME8<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME7<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME7<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: CANVAS<br />int_min_bp: 1.740363<br />int_max_bp: 3.000000<br />colour: Intermediate","disease_id: CANVAS<br />int_min_bp: 1.740363<br />int_max_bp: 3.000000<br />colour: Intermediate",null,"disease_id: OPDM4<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: OPDM4<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: CCD<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: CCD<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME1<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: XLMR<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: XLMR<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME2<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME2<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: XDP<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: XDP<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: SCA17<br />int_min_bp: 2.089905<br />int_max_bp: 2.158362<br />colour: Intermediate","disease_id: SCA17<br />int_min_bp: 2.089905<br />int_max_bp: 2.158362<br />colour: Intermediate",null,"disease_id: TOF<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: TOF<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FECD3<br />int_min_bp: 2.079181<br />int_max_bp: 2.176091<br />colour: Intermediate","disease_id: FECD3<br />int_min_bp: 2.079181<br />int_max_bp: 2.176091<br />colour: Intermediate",null,"disease_id: SCA<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: SCA<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME6<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME6<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: HMNR7<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: HMNR7<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: DBQD2, BSS<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: DBQD2, BSS<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: FAME4<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: FAME4<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: SCA4<br />int_min_bp: 1.908485<br />int_max_bp: 2.130334<br />colour: Intermediate","disease_id: SCA4<br />int_min_bp: 1.908485<br />int_max_bp: 2.130334<br />colour: Intermediate",null,"disease_id: HPE5<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: HPE5<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate",null,"disease_id: VACTERLX<br />int_min_bp: 1.518514<br />int_max_bp: 1.518514<br />colour: Intermediate","disease_id: VACTERLX<br />int_min_bp: 1.518514<br />int_max_bp: 1.518514<br />colour: Intermediate",null,"disease_id: FRA7A<br />int_min_bp: 2.100371<br />int_max_bp: 2.406540<br />colour: Intermediate","disease_id: FRA7A<br />int_min_bp: 2.100371<br />int_max_bp: 2.406540<br />colour: Intermediate",null,"disease_id: CHNG3<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate","disease_id: CHNG3<br />int_min_bp:       NA<br />int_max_bp:       NA<br />colour: Intermediate"],"type":"scatter","mode":"lines","line":{"width":7.559055118110237,"color":"rgba(231,184,0,1)","dash":"solid"},"hoveron":"points","name":"Intermediate","legendgroup":"Intermediate","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95424250943932487,2.12057393120585,null,1.0791812460476249,2.0681858617461617,null,0.95424250943932487,1.7781512503836436,null,1.4313637641589874,2.0086001717619175,null,1.4771212547196624,1.6812412373755872,null,1.5563025007672873,1.5563025007672873,null,1.255272505103306,2.0211892990699383,null,1.255272505103306,2.0211892990699383,null,1.6989700043360187,2.2041199826559246,null,1.6232492903979006,1.954242509439325,null,1.5185139398778875,2.12057393120585,null,1.0791812460476249,1.9084850188786497,null,1.6532125137753437,2.1760912590556813,null,null,null,null,1.0791812460476249,2.1398790864012365,null,1.0791812460476249,1.7323937598229686,null,1.1760912590556813,2.374748346010104,null,1.6434526764861874,2.0170333392987803,null,1.1760912590556813,1.1760912590556813,null,1.3802112417116059,1.5563025007672873,null,null,2.1760912590556813,null,1.255272505103306,1.8388490907372552,null,1.1760912590556813,2.0086001717619175,null,1.3010299956639813,2.3802112417116059,null,1.3802112417116059,2.7299742856995555,null,1.1760912590556813,2.12057393120585,null,1.6232492903979006,1.6232492903979006,null,1.1760912590556813,1.9956351945975499,null,null,1.9822712330395684,null,1.1760912590556813,2.0569048513364727,null,1.6232492903979006,1.6232492903979006,null,1.5563025007672873,1.5563025007672873,null,1.3802112417116059,1.7323937598229686,null,1.6532125137753437,1.6532125137753437,null,1.255272505103306,1.8920946026904804,null,1.255272505103306,1.9242792860618816,null,1.5910646070264991,2.1303337684950061,null,null,null,null,0.84509804001425681,0.84509804001425681,null,1,1.5440680443502757,null,1.255272505103306,1.4771212547196624,null,1.255272505103306,1.9242792860618816,null,1.3222192947339193,2.0453229787866576,null,0.95424250943932487,1.6812412373755872,null,1.4771212547196624,1.4771212547196624,null,1.4313637641589874,1.7781512503836436,null,1.255272505103306,1.9822712330395684,null,1.3222192947339193,1.6232492903979006,null,1.9822712330395684,1.9822712330395684,null,null,null,null,null,null,null,null,1.7403626894942439,null,1.255272505103306,1.6812412373755872,null,1.0791812460476249,1.7075701760979363,null,null,null,null,1.6532125137753437,1.6532125137753437,null,null,null,null,null,null,null,1.8750612633917001,2.0791812460476247,null,1.6532125137753437,1.6532125137753437,null,1.4771212547196624,2.0681858617461617,null,1.7781512503836436,2.0569048513364727,null,null,null,null,1.3010299956639813,1.3010299956639813,null,null,1.7781512503836436,null,null,null,null,1.6232492903979006,1.8920946026904804,null,1.6532125137753437,1.6532125137753437,null,1.4771212547196624,1.4771212547196624,null,1.1760912590556813,1.8195439355418688,null,1.2041199826559248,1.2041199826559248],"y":[22,22,null,15,15,null,13,13,null,47,47,null,62,62,null,58,58,null,40,40,null,46,46,null,2,2,null,49,49,null,33,33,null,48,48,null,30,30,null,17,17,null,8,8,null,59,59,null,23,23,null,24,24,null,68,68,null,20,20,null,35,35,null,14,14,null,38,38,null,26,26,null,12,12,null,16,16,null,63,63,null,34,34,null,28,28,null,6,6,null,53,53,null,60,60,null,54,54,null,55,55,null,44,44,null,45,45,null,27,27,null,3,3,null,71,71,null,11,11,null,67,67,null,4,4,null,32,32,null,19,19,null,65,65,null,50,50,null,37,37,null,61,61,null,43,43,null,64,64,null,25,25,null,7,7,null,21,21,null,57,57,null,18,18,null,56,56,null,9,9,null,31,31,null,39,39,null,52,52,null,36,36,null,42,42,null,5,5,null,70,70,null,29,29,null,1,1,null,41,41,null,51,51,null,66,66,null,10,10,null,69,69],"text":["disease_id: OPDM<br />benign_min_bp: 0.9542425<br />benign_max_bp: 2.120574<br />colour: Benign","disease_id: OPDM<br />benign_min_bp: 0.9542425<br />benign_max_bp: 2.120574<br />colour: Benign",null,"disease_id: FRAXE<br />benign_min_bp: 1.0791812<br />benign_max_bp: 2.068186<br />colour: Benign","disease_id: FRAXE<br />benign_min_bp: 1.0791812<br />benign_max_bp: 2.068186<br />colour: Benign",null,"disease_id: FRA2A<br />benign_min_bp: 0.9542425<br />benign_max_bp: 1.778151<br />colour: Benign","disease_id: FRA2A<br />benign_min_bp: 0.9542425<br />benign_max_bp: 1.778151<br />colour: Benign",null,"disease_id: SBMA<br />benign_min_bp: 1.4313638<br />benign_max_bp: 2.008600<br />colour: Benign","disease_id: SBMA<br />benign_min_bp: 1.4313638<br />benign_max_bp: 2.008600<br />colour: Benign",null,"disease_id: EIEE1<br />benign_min_bp: 1.4771213<br />benign_max_bp: 1.681241<br />colour: Benign","disease_id: EIEE1<br />benign_min_bp: 1.4771213<br />benign_max_bp: 1.681241<br />colour: Benign",null,"disease_id: PRTS<br />benign_min_bp: 1.5563025<br />benign_max_bp: 1.556303<br />colour: Benign","disease_id: PRTS<br />benign_min_bp: 1.5563025<br />benign_max_bp: 1.556303<br />colour: Benign",null,"disease_id: DRPLA<br />benign_min_bp: 1.2552725<br />benign_max_bp: 2.021189<br />colour: Benign","disease_id: DRPLA<br />benign_min_bp: 1.2552725<br />benign_max_bp: 2.021189<br />colour: Benign",null,"disease_id: SCA1<br />benign_min_bp: 1.2552725<br />benign_max_bp: 2.021189<br />colour: Benign","disease_id: SCA1<br />benign_min_bp: 1.2552725<br />benign_max_bp: 2.021189<br />colour: Benign",null,"disease_id: SCA10<br />benign_min_bp: 1.6989700<br />benign_max_bp: 2.204120<br />colour: Benign","disease_id: SCA10<br />benign_min_bp: 1.6989700<br />benign_max_bp: 2.204120<br />colour: Benign",null,"disease_id: SCA2<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.954243<br />colour: Benign","disease_id: SCA2<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.954243<br />colour: Benign",null,"disease_id: SCA3, MJD<br />benign_min_bp: 1.5185139<br />benign_max_bp: 2.120574<br />colour: Benign","disease_id: SCA3, MJD<br />benign_min_bp: 1.5185139<br />benign_max_bp: 2.120574<br />colour: Benign",null,"disease_id: SCA7<br />benign_min_bp: 1.0791812<br />benign_max_bp: 1.908485<br />colour: Benign","disease_id: SCA7<br />benign_min_bp: 1.0791812<br />benign_max_bp: 1.908485<br />colour: Benign",null,"disease_id: SCA8<br />benign_min_bp: 1.6532125<br />benign_max_bp: 2.176091<br />colour: Benign","disease_id: SCA8<br />benign_min_bp: 1.6532125<br />benign_max_bp: 2.176091<br />colour: Benign",null,"disease_id: SCA31<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: SCA31<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: FTDALS1<br />benign_min_bp: 1.0791812<br />benign_max_bp: 2.139879<br />colour: Benign","disease_id: FTDALS1<br />benign_min_bp: 1.0791812<br />benign_max_bp: 2.139879<br />colour: Benign",null,"disease_id: SCA6<br />benign_min_bp: 1.0791812<br />benign_max_bp: 1.732394<br />colour: Benign","disease_id: SCA6<br />benign_min_bp: 1.0791812<br />benign_max_bp: 1.732394<br />colour: Benign",null,"disease_id: JBS<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.374748<br />colour: Benign","disease_id: JBS<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.374748<br />colour: Benign",null,"disease_id: DM2<br />benign_min_bp: 1.6434527<br />benign_max_bp: 2.017033<br />colour: Benign","disease_id: DM2<br />benign_min_bp: 1.6434527<br />benign_max_bp: 2.017033<br />colour: Benign",null,"disease_id: EDM1, PSACH<br />benign_min_bp: 1.1760913<br />benign_max_bp: 1.176091<br />colour: Benign","disease_id: EDM1, PSACH<br />benign_min_bp: 1.1760913<br />benign_max_bp: 1.176091<br />colour: Benign",null,"disease_id: EPM1<br />benign_min_bp: 1.3802112<br />benign_max_bp: 1.556303<br />colour: Benign","disease_id: EPM1<br />benign_min_bp: 1.3802112<br />benign_max_bp: 1.556303<br />colour: Benign",null,"disease_id: SCA37<br />benign_min_bp:        NA<br />benign_max_bp: 2.176091<br />colour: Benign","disease_id: SCA37<br />benign_min_bp:        NA<br />benign_max_bp: 2.176091<br />colour: Benign",null,"disease_id: FRA12A<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.838849<br />colour: Benign","disease_id: FRA12A<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.838849<br />colour: Benign",null,"disease_id: DM1<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.008600<br />colour: Benign","disease_id: DM1<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.008600<br />colour: Benign",null,"disease_id: RCPS<br />benign_min_bp: 1.3010300<br />benign_max_bp: 2.380211<br />colour: Benign","disease_id: RCPS<br />benign_min_bp: 1.3010300<br />benign_max_bp: 2.380211<br />colour: Benign",null,"disease_id: SCA27B<br />benign_min_bp: 1.3802112<br />benign_max_bp: 2.729974<br />colour: Benign","disease_id: SCA27B<br />benign_min_bp: 1.3802112<br />benign_max_bp: 2.729974<br />colour: Benign",null,"disease_id: FXS, FXTAS, POF1<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.120574<br />colour: Benign","disease_id: FXS, FXTAS, POF1<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.120574<br />colour: Benign",null,"disease_id: BPES<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.623249<br />colour: Benign","disease_id: BPES<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.623249<br />colour: Benign",null,"disease_id: FRDA<br />benign_min_bp: 1.1760913<br />benign_max_bp: 1.995635<br />colour: Benign","disease_id: FRDA<br />benign_min_bp: 1.1760913<br />benign_max_bp: 1.995635<br />colour: Benign",null,"disease_id: OPDM2<br />benign_min_bp:        NA<br />benign_max_bp: 1.982271<br />colour: Benign","disease_id: OPDM2<br />benign_min_bp:        NA<br />benign_max_bp: 1.982271<br />colour: Benign",null,"disease_id: GDPAG<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.056905<br />colour: Benign","disease_id: GDPAG<br />benign_min_bp: 1.1760913<br />benign_max_bp: 2.056905<br />colour: Benign",null,"disease_id: HFG-I<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.623249<br />colour: Benign","disease_id: HFG-I<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.623249<br />colour: Benign",null,"disease_id: HFG-II<br />benign_min_bp: 1.5563025<br />benign_max_bp: 1.556303<br />colour: Benign","disease_id: HFG-II<br />benign_min_bp: 1.5563025<br />benign_max_bp: 1.556303<br />colour: Benign",null,"disease_id: HFG-III<br />benign_min_bp: 1.3802112<br />benign_max_bp: 1.732394<br />colour: Benign","disease_id: HFG-III<br />benign_min_bp: 1.3802112<br />benign_max_bp: 1.732394<br />colour: Benign",null,"disease_id: SD5<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign","disease_id: SD5<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign",null,"disease_id: HD<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.892095<br />colour: Benign","disease_id: HD<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.892095<br />colour: Benign",null,"disease_id: HDL2<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.924279<br />colour: Benign","disease_id: HDL2<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.924279<br />colour: Benign",null,"disease_id: OPDM1<br />benign_min_bp: 1.5910646<br />benign_max_bp: 2.130334<br />colour: Benign","disease_id: OPDM1<br />benign_min_bp: 1.5910646<br />benign_max_bp: 2.130334<br />colour: Benign",null,"disease_id: FAME3<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME3<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: ADTKD<br />benign_min_bp: 0.8450980<br />benign_max_bp: 0.845098<br />colour: Benign","disease_id: ADTKD<br />benign_min_bp: 0.8450980<br />benign_max_bp: 0.845098<br />colour: Benign",null,"disease_id: NME<br />benign_min_bp: 1.0000000<br />benign_max_bp: 1.544068<br />colour: Benign","disease_id: NME<br />benign_min_bp: 1.0000000<br />benign_max_bp: 1.544068<br />colour: Benign",null,"disease_id: ALS1<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.477121<br />colour: Benign","disease_id: ALS1<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.477121<br />colour: Benign",null,"disease_id: SCA36<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.924279<br />colour: Benign","disease_id: SCA36<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.924279<br />colour: Benign",null,"disease_id: NIID<br />benign_min_bp: 1.3222193<br />benign_max_bp: 2.045323<br />colour: Benign","disease_id: NIID<br />benign_min_bp: 1.3222193<br />benign_max_bp: 2.045323<br />colour: Benign",null,"disease_id: OPML1<br />benign_min_bp: 0.9542425<br />benign_max_bp: 1.681241<br />colour: Benign","disease_id: OPML1<br />benign_min_bp: 0.9542425<br />benign_max_bp: 1.681241<br />colour: Benign",null,"disease_id: OPMD<br />benign_min_bp: 1.4771213<br />benign_max_bp: 1.477121<br />colour: Benign","disease_id: OPMD<br />benign_min_bp: 1.4771213<br />benign_max_bp: 1.477121<br />colour: Benign",null,"disease_id: CCHS<br />benign_min_bp: 1.4313638<br />benign_max_bp: 1.778151<br />colour: Benign","disease_id: CCHS<br />benign_min_bp: 1.4313638<br />benign_max_bp: 1.778151<br />colour: Benign",null,"disease_id: SCA12<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.982271<br />colour: Benign","disease_id: SCA12<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.982271<br />colour: Benign",null,"disease_id: HSAN VIII<br />benign_min_bp: 1.3222193<br />benign_max_bp: 1.623249<br />colour: Benign","disease_id: HSAN VIII<br />benign_min_bp: 1.3222193<br />benign_max_bp: 1.623249<br />colour: Benign",null,"disease_id: CJD<br />benign_min_bp: 1.9822712<br />benign_max_bp: 1.982271<br />colour: Benign","disease_id: CJD<br />benign_min_bp: 1.9822712<br />benign_max_bp: 1.982271<br />colour: Benign",null,"disease_id: FAME8<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME8<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: FAME7<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME7<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: CANVAS<br />benign_min_bp:        NA<br />benign_max_bp: 1.740363<br />colour: Benign","disease_id: CANVAS<br />benign_min_bp:        NA<br />benign_max_bp: 1.740363<br />colour: Benign",null,"disease_id: OPDM4<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.681241<br />colour: Benign","disease_id: OPDM4<br />benign_min_bp: 1.2552725<br />benign_max_bp: 1.681241<br />colour: Benign",null,"disease_id: CCD<br />benign_min_bp: 1.0791812<br />benign_max_bp: 1.707570<br />colour: Benign","disease_id: CCD<br />benign_min_bp: 1.0791812<br />benign_max_bp: 1.707570<br />colour: Benign",null,"disease_id: FAME1<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME1<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: XLMR<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign","disease_id: XLMR<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign",null,"disease_id: FAME2<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME2<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: XDP<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: XDP<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: SCA17<br />benign_min_bp: 1.8750613<br />benign_max_bp: 2.079181<br />colour: Benign","disease_id: SCA17<br />benign_min_bp: 1.8750613<br />benign_max_bp: 2.079181<br />colour: Benign",null,"disease_id: TOF<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign","disease_id: TOF<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign",null,"disease_id: FECD3<br />benign_min_bp: 1.4771213<br />benign_max_bp: 2.068186<br />colour: Benign","disease_id: FECD3<br />benign_min_bp: 1.4771213<br />benign_max_bp: 2.068186<br />colour: Benign",null,"disease_id: SCA<br />benign_min_bp: 1.7781513<br />benign_max_bp: 2.056905<br />colour: Benign","disease_id: SCA<br />benign_min_bp: 1.7781513<br />benign_max_bp: 2.056905<br />colour: Benign",null,"disease_id: FAME6<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME6<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: HMNR7<br />benign_min_bp: 1.3010300<br />benign_max_bp: 1.301030<br />colour: Benign","disease_id: HMNR7<br />benign_min_bp: 1.3010300<br />benign_max_bp: 1.301030<br />colour: Benign",null,"disease_id: DBQD2, BSS<br />benign_min_bp:        NA<br />benign_max_bp: 1.778151<br />colour: Benign","disease_id: DBQD2, BSS<br />benign_min_bp:        NA<br />benign_max_bp: 1.778151<br />colour: Benign",null,"disease_id: FAME4<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign","disease_id: FAME4<br />benign_min_bp:        NA<br />benign_max_bp:       NA<br />colour: Benign",null,"disease_id: SCA4<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.892095<br />colour: Benign","disease_id: SCA4<br />benign_min_bp: 1.6232493<br />benign_max_bp: 1.892095<br />colour: Benign",null,"disease_id: HPE5<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign","disease_id: HPE5<br />benign_min_bp: 1.6532125<br />benign_max_bp: 1.653213<br />colour: Benign",null,"disease_id: VACTERLX<br />benign_min_bp: 1.4771213<br />benign_max_bp: 1.477121<br />colour: Benign","disease_id: VACTERLX<br />benign_min_bp: 1.4771213<br />benign_max_bp: 1.477121<br />colour: Benign",null,"disease_id: FRA7A<br />benign_min_bp: 1.1760913<br />benign_max_bp: 1.819544<br />colour: Benign","disease_id: FRA7A<br />benign_min_bp: 1.1760913<br />benign_max_bp: 1.819544<br />colour: Benign",null,"disease_id: CHNG3<br />benign_min_bp: 1.2041200<br />benign_max_bp: 1.204120<br />colour: Benign","disease_id: CHNG3<br />benign_min_bp: 1.2041200<br />benign_max_bp: 1.204120<br />colour: Benign"],"type":"scatter","mode":"lines","line":{"width":7.559055118110237,"color":"rgba(0,175,187,1)","dash":"solid"},"hoveron":"points","name":"Benign","legendgroup":"Benign","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9542425094393248,1.7781512503836436,1.8195439355418688,1.7323937598229686,0.90308998699194354,3,1.8750612633917001,3.5185139398778875,3.6989700043360187,1.8750612633917001,1.5563025007672873,3.1303337684950061,1.0791812460476249],"y":[13,58,53,60,71,11,52,5,1,51,66,10,69],"text":["disease_id: FRA2A<br />path_min_bp:  900<br />colour: Pathogenic","disease_id: PRTS<br />path_min_bp:   60<br />colour: Pathogenic","disease_id: HFG-I<br />path_min_bp:   66<br />colour: Pathogenic","disease_id: HFG-II<br />path_min_bp:   54<br />colour: Pathogenic","disease_id: ADTKD<br />path_min_bp:    8<br />colour: Pathogenic","disease_id: NME<br />path_min_bp: 1000<br />colour: Pathogenic","disease_id: TOF<br />path_min_bp:   75<br />colour: Pathogenic","disease_id: FAME6<br />path_min_bp: 3300<br />colour: Pathogenic","disease_id: FAME4<br />path_min_bp: 5000<br />colour: Pathogenic","disease_id: HPE5<br />path_min_bp:   75<br />colour: Pathogenic","disease_id: VACTERLX<br />path_min_bp:   36<br />colour: Pathogenic","disease_id: FRA7A<br />path_min_bp: 1350<br />colour: Pathogenic","disease_id: CHNG3<br />path_min_bp:   12<br />colour: Pathogenic"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(252,78,7,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,78,7,1)"}},"hoveron":"points","name":"Pathogenic","legendgroup":"Pathogenic","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.7558748556724915,2.4149733479708178,1.5185139398778875,1.5185139398778875],"y":[59,26,65,66],"text":["disease_id: SCA6<br />int_min_bp:  57<br />colour: Intermediate","disease_id: RCPS<br />int_min_bp: 260<br />colour: Intermediate","disease_id: OPMD<br />int_min_bp:  33<br />colour: Intermediate","disease_id: VACTERLX<br />int_min_bp:  33<br />colour: Intermediate"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(231,184,0,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,184,0,1)"}},"hoveron":"points","name":"Intermediate","legendgroup":"Intermediate","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.5563025007672873,1.1760912590556813,1.6232492903979006,1.6232492903979006,1.5563025007672873,1.6532125137753437,0.84509804001425681,1.4771212547196624,1.9822712330395684,1.6532125137753437,1.6532125137753437,1.3010299956639813,1.6532125137753437,1.4771212547196624,1.2041199826559248],"y":[58,68,63,53,60,55,71,65,43,56,52,70,51,66,69],"text":["disease_id: PRTS<br />benign_min_bp: 36<br />colour: Benign","disease_id: EDM1, PSACH<br />benign_min_bp: 15<br />colour: Benign","disease_id: BPES<br />benign_min_bp: 42<br />colour: Benign","disease_id: HFG-I<br />benign_min_bp: 42<br />colour: Benign","disease_id: HFG-II<br />benign_min_bp: 36<br />colour: Benign","disease_id: SD5<br />benign_min_bp: 45<br />colour: Benign","disease_id: ADTKD<br />benign_min_bp:  7<br />colour: Benign","disease_id: OPMD<br />benign_min_bp: 30<br />colour: Benign","disease_id: CJD<br />benign_min_bp: 96<br />colour: Benign","disease_id: XLMR<br />benign_min_bp: 45<br />colour: Benign","disease_id: TOF<br />benign_min_bp: 45<br />colour: Benign","disease_id: HMNR7<br />benign_min_bp: 20<br />colour: Benign","disease_id: HPE5<br />benign_min_bp: 45<br />colour: Benign","disease_id: VACTERLX<br />benign_min_bp: 30<br />colour: Benign","disease_id: CHNG3<br />benign_min_bp: 16<br />colour: Benign"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,175,187,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,175,187,1)"}},"hoveron":"points","name":"Benign","legendgroup":"Benign","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":20.184308841843091,"r":9.2984640929846432,"b":43.370693233706938,"l":160.06641760066421},"font":{"color":"rgba(0,0,0,1)","family":"","size":18.596928185969286},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.6551803081906602,4.8333704083097846],"tickmode":"array","ticktext":["10","100","1000","10000"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["10","100","1000","10000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.6492320464923216,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402241},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(211,211,211,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Allele size in base pairs","font":{"color":"rgba(0,0,0,1)","family":"","size":18.596928185969286}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,71.599999999999994],"tickmode":"array","ticktext":["FAME4","SCA10","FAME3","SCA36","FAME6","GDPAG","CANVAS","FTDALS1","FAME2","FRA7A","NME","SCA27B","FRA2A","FRA12A","FRAXE","FXS, FXTAS, POF1","SCA31","FAME1","OPML1","EPM1","OPDM4","OPDM","JBS","DM2","FAME7","RCPS","OPDM1","OPDM2","DBQD2, BSS","SCA8","XDP","NIID","SCA3, MJD","FRDA","SCA37","FECD3","SCA12","DM1","SCA17","DRPLA","SCA4","SCA","CJD","HD","HDL2","SCA1","SBMA","SCA7","SCA2","CCHS","HPE5","TOF","HFG-I","HFG-III","SD5","XLMR","CCD","PRTS","SCA6","HFG-II","HSAN VIII","EIEE1","BPES","FAME8","OPMD","VACTERLX","ALS1","EDM1, PSACH","CHNG3","HMNR7","ADTKD"],"tickvals":[1,2,3,4.0000000000000009,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,20.999999999999996,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39.000000000000007,40,41,42,43,44,45,46,47,48,49,50,51,52,52.999999999999993,54,55,56,57,58.000000000000007,59,60,61,62,63,64,65,66,67,68,69,70,71],"categoryorder":"array","categoryarray":["FAME4","SCA10","FAME3","SCA36","FAME6","GDPAG","CANVAS","FTDALS1","FAME2","FRA7A","NME","SCA27B","FRA2A","FRA12A","FRAXE","FXS, FXTAS, POF1","SCA31","FAME1","OPML1","EPM1","OPDM4","OPDM","JBS","DM2","FAME7","RCPS","OPDM1","OPDM2","DBQD2, BSS","SCA8","XDP","NIID","SCA3, MJD","FRDA","SCA37","FECD3","SCA12","DM1","SCA17","DRPLA","SCA4","SCA","CJD","HD","HDL2","SCA1","SBMA","SCA7","SCA2","CCHS","HPE5","TOF","HFG-I","HFG-III","SD5","XLMR","CCD","PRTS","SCA6","HFG-II","HSAN VIII","EIEE1","BPES","FAME8","OPMD","VACTERLX","ALS1","EDM1, PSACH","CHNG3","HMNR7","ADTKD"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.6492320464923216,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Disease","font":{"color":"rgba(0,0,0,1)","family":"","size":18.596928185969286}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402241},"title":{"text":"Allele size","font":{"color":"rgba(0,0,0,1)","family":"","size":18.596928185969286}}},"hovermode":"closest","height":1200,"barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"d99c732b70f":{"x":{},"ymin":{},"ymax":{},"type":"scatter"},"d99c12903d7a":{"x":{},"ymin":{},"ymax":{},"colour":{}},"d99c3bb41e1b":{"x":{},"ymin":{},"ymax":{},"colour":{}},"d99c2e249d3c":{"x":{},"ymin":{},"ymax":{},"colour":{}},"d99c65cee5ce":{"x":{},"y":{},"colour":{}},"d99c72516b99":{"x":{},"y":{},"colour":{}},"d99c3f6f4471":{"x":{},"y":{},"colour":{}}},"cur_data":"d99c732b70f","visdat":{"d99c732b70f":["function (y) ","x"],"d99c12903d7a":["function (y) ","x"],"d99c3bb41e1b":["function (y) ","x"],"d99c2e249d3c":["function (y) ","x"],"d99c65cee5ce":["function (y) ","x"],"d99c72516b99":["function (y) ","x"],"d99c3f6f4471":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}
+{
+    "data": [{
+        "base": [0, 0, 10, 0, 5, 3, 5, 11, 8, 3, 0, 6, 2, 4, 5, 2, 3, 6, 3, 0, 0, 5, 13, 11, 32, 20, 15, 7, 11, 0, 5, 6, 10, 5, 25, 6, 14, 20, 6, 6, 6, 9, 4, 14, 0, 30, 2, 9, 15, 15, 14, 8, 15, 15, 12, 4, 4, 12, 7, 10, 14, 1, 10, 10, 0, 7, 5, 4, 4, 2],
+        "hovertemplate": "Disease: %{y} \u003cbr\u003e Range: %{base} - %{x}",
+        "legendgroup": "Benign",
+        "marker": {
+            "color": "#00afbb"
+        },
+        "name": "Benign",
+        "offset": -0.3,
+        "orientation": "h",
+        "width": 0.6,
+        "x": [0, 0, 22, 0, 33, 11, 17, 0, 171, 17, 0, 17, 21, 35, 39, 5, 13, 10, 41, 0, 0, 74, 32, 15, 0, 0, 35, 30, 33, 0, 28, 26, 29, 29, 15, 29, 12, 18, 20, 22, 29, 25, 23, 16, 0, 0, 1, 11, 0, 0, 0, 10, 0, 0, 0, 14, 13, 0, 7, 6, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0],
+        "y": ["FAME6", "FAME4", "SCA10", "FAME3", "GDPAG", "SCA36", "FRA7A", "CANVAS", "SCA27B", "FRA2A", "FAME2", "FRA12A", "FTDALS1", "FRAXE", "FXS, FXTAS, POF1", "NME", "OPML1", "OPDM4", "OPDM", "SCA31", "FAME1", "JBS", "OPDM1", "DM2", "OPDM2", "DBQD2, BSS", "SCA8", "NIID", "SCA3, MJD", "FAME7", "FRDA", "SCA12", "FECD3", "DM1", "SCA17", "DRPLA", "SCA4", "SCA", "HD", "HDL2", "SCA1", "SBMA", "SCA7", "SCA2", "XDP", "SCA37", "EPM1", "CCHS", "TOF", "HPE5", "HFG-I", "HFG-III", "SD5", "XLMR", "PRTS", "SCA6", "CCD", "HFG-II", "HSAN VIII", "EIEE1", "BPES", "RCPS", "OPMD", "VACTERLX", "FAME8", "ADTKD", "EDM1, PSACH", "CJD", "CHNG3", "HMNR7"],
+        "type": "bar"
+    }, {
+        "base": [0, 0, 33, 0, 0, 15, 42, 11, 180, 0, 0, 139, 24, 40, 45, 0, 0, 0, 0, 0, 0, 80, 0, 27, 0, 0, 50, 38, 45, 0, 34, 40, 40, 35, 41, 36, 27, 0, 27, 29, 36, 36, 28, 31, 0, 0, 12, 21, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 13, 11, 11, 0, 0, 0, 0, 0, 0],
+        "hovertemplate": "Disease: %{y} \u003cbr\u003e Range: %{base} - %{x}",
+        "legendgroup": "Intermediate",
+        "marker": {
+            "color": "#e7b800"
+        },
+        "name": "Intermediate",
+        "offset": -0.3,
+        "orientation": "h",
+        "width": 0.6,
+        "x": [0, 0, 817, 0, 0, 634, 43, 189, 139, 0, 0, 67, 36, 160, 155, 0, 0, 0, 0, 0, 0, 20, 0, 47, 0, 0, 20, 27, 14, 0, 21, 9, 10, 14, 7, 11, 18, 0, 12, 10, 2, 1, 7, 3, 0, 0, 5, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "y": ["FAME6", "FAME4", "SCA10", "FAME3", "GDPAG", "SCA36", "FRA7A", "CANVAS", "SCA27B", "FRA2A", "FAME2", "FRA12A", "FTDALS1", "FRAXE", "FXS, FXTAS, POF1", "NME", "OPML1", "OPDM4", "OPDM", "SCA31", "FAME1", "JBS", "OPDM1", "DM2", "OPDM2", "DBQD2, BSS", "SCA8", "NIID", "SCA3, MJD", "FAME7", "FRDA", "SCA12", "FECD3", "DM1", "SCA17", "DRPLA", "SCA4", "SCA", "HD", "HDL2", "SCA1", "SBMA", "SCA7", "SCA2", "XDP", "SCA37", "EPM1", "CCHS", "TOF", "HPE5", "HFG-I", "HFG-III", "SD5", "XLMR", "PRTS", "SCA6", "CCD", "HFG-II", "HSAN VIII", "EIEE1", "BPES", "RCPS", "OPMD", "VACTERLX", "FAME8", "ADTKD", "EDM1, PSACH", "CJD", "CHNG3", "HMNR7"],
+        "type": "bar"
+    }, {
+        "base": [1100, 1000, 800, 791, 680, 650, 450, 400, 320, 300, 274, 273, 251, 201, 201, 200, 161, 120, 118, 110, 105, 101, 85, 75, 73, 72, 71, 66, 60, 60, 56, 51, 51, 50, 49, 48, 46, 45, 40, 40, 39, 38, 37, 35, 35, 31, 30, 26, 25, 25, 22, 22, 22, 22, 20, 20, 20, 18, 18, 17, 15, 14, 12, 12, 9, 8, 6, 5, 3, 1],
+        "hovertemplate": "Disease: %{y} \u003cbr\u003e Range: %{base} - %{x}",
+        "legendgroup": "Pathogenic",
+        "marker": {
+            "color": "#fc4e07"
+        },
+        "name": "Pathogenic",
+        "offset": -0.3,
+        "orientation": "h",
+        "width": 0.6,
+        "x": [0, 0, 3700, 244, 820, 1850, 0, 2350, 617, 0, 284, 33, 3749, 1799, 1799, 0, 539, 77, 576, 650, 3575, 199, 204, 10925, 91, 38, 1229, 451, 27, 2140, 1644, 27, 2549, 950, 17, 45, 28, 55, 210, 20, 52, 30, 423, 465, 17, 44, 51, 7, 0, 0, 0, 10, 1, 4, 0, 13, 7, 0, 1, 10, 9, 2, 6, 0, 325, 0, 1, 11, 0, 2],
+        "y": ["FAME6", "FAME4", "SCA10", "FAME3", "GDPAG", "SCA36", "FRA7A", "CANVAS", "SCA27B", "FRA2A", "FAME2", "FRA12A", "FTDALS1", "FRAXE", "FXS, FXTAS, POF1", "NME", "OPML1", "OPDM4", "OPDM", "SCA31", "FAME1", "JBS", "OPDM1", "DM2", "OPDM2", "DBQD2, BSS", "SCA8", "NIID", "SCA3, MJD", "FAME7", "FRDA", "SCA12", "FECD3", "DM1", "SCA17", "DRPLA", "SCA4", "SCA", "HD", "HDL2", "SCA1", "SBMA", "SCA7", "SCA2", "XDP", "SCA37", "EPM1", "CCHS", "TOF", "HPE5", "HFG-I", "HFG-III", "SD5", "XLMR", "PRTS", "SCA6", "CCD", "HFG-II", "HSAN VIII", "EIEE1", "BPES", "RCPS", "OPMD", "VACTERLX", "FAME8", "ADTKD", "EDM1, PSACH", "CJD", "CHNG3", "HMNR7"],
+        "type": "bar"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [32, 33],
+        "y": ["SCA10", "SCA10"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [38, 680],
+        "y": ["GDPAG", "GDPAG"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [14, 15],
+        "y": ["SCA36", "SCA36"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [649, 650],
+        "y": ["SCA36", "SCA36"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [22, 42],
+        "y": ["FRA7A", "FRA7A"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [85, 450],
+        "y": ["FRA7A", "FRA7A"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [200, 400],
+        "y": ["CANVAS", "CANVAS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [179, 180],
+        "y": ["SCA27B", "SCA27B"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [319, 320],
+        "y": ["SCA27B", "SCA27B"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [20, 300],
+        "y": ["FRA2A", "FRA2A"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [23, 139],
+        "y": ["FRA12A", "FRA12A"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [206, 273],
+        "y": ["FRA12A", "FRA12A"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [23, 24],
+        "y": ["FTDALS1", "FTDALS1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [60, 251],
+        "y": ["FTDALS1", "FTDALS1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [39, 40],
+        "y": ["FRAXE", "FRAXE"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [200, 201],
+        "y": ["FRAXE", "FRAXE"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [44, 45],
+        "y": ["FXS, FXTAS, POF1", "FXS, FXTAS, POF1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [200, 201],
+        "y": ["FXS, FXTAS, POF1", "FXS, FXTAS, POF1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [7, 200],
+        "y": ["NME", "NME"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [16, 161],
+        "y": ["OPML1", "OPML1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [16, 120],
+        "y": ["OPDM4", "OPDM4"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [44, 118],
+        "y": ["OPDM", "OPDM"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [79, 80],
+        "y": ["JBS", "JBS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [100, 101],
+        "y": ["JBS", "JBS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [45, 85],
+        "y": ["OPDM1", "OPDM1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [26, 27],
+        "y": ["DM2", "DM2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [74, 75],
+        "y": ["DM2", "DM2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [32, 73],
+        "y": ["OPDM2", "OPDM2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [20, 72],
+        "y": ["DBQD2, BSS", "DBQD2, BSS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [70, 71],
+        "y": ["SCA8", "SCA8"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [37, 38],
+        "y": ["NIID", "NIID"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [65, 66],
+        "y": ["NIID", "NIID"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [44, 45],
+        "y": ["SCA3, MJD", "SCA3, MJD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [59, 60],
+        "y": ["SCA3, MJD", "SCA3, MJD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [33, 34],
+        "y": ["FRDA", "FRDA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [55, 56],
+        "y": ["FRDA", "FRDA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [32, 40],
+        "y": ["SCA12", "SCA12"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [49, 51],
+        "y": ["SCA12", "SCA12"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [39, 40],
+        "y": ["FECD3", "FECD3"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [50, 51],
+        "y": ["FECD3", "FECD3"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [34, 35],
+        "y": ["DM1", "DM1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [49, 50],
+        "y": ["DM1", "DM1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [40, 41],
+        "y": ["SCA17", "SCA17"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [48, 49],
+        "y": ["SCA17", "SCA17"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [35, 36],
+        "y": ["DRPLA", "DRPLA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [47, 48],
+        "y": ["DRPLA", "DRPLA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [26, 27],
+        "y": ["SCA4", "SCA4"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [45, 46],
+        "y": ["SCA4", "SCA4"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [38, 45],
+        "y": ["SCA", "SCA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [26, 27],
+        "y": ["HD", "HD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [39, 40],
+        "y": ["HD", "HD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [28, 29],
+        "y": ["HDL2", "HDL2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [39, 40],
+        "y": ["HDL2", "HDL2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [35, 36],
+        "y": ["SCA1", "SCA1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [38, 39],
+        "y": ["SCA1", "SCA1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [34, 36],
+        "y": ["SBMA", "SBMA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [37, 38],
+        "y": ["SBMA", "SBMA"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [27, 28],
+        "y": ["SCA7", "SCA7"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [35, 37],
+        "y": ["SCA7", "SCA7"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [30, 31],
+        "y": ["SCA2", "SCA2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [34, 35],
+        "y": ["SCA2", "SCA2"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [30, 31],
+        "y": ["SCA37", "SCA37"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [3, 12],
+        "y": ["EPM1", "EPM1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [17, 30],
+        "y": ["EPM1", "EPM1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [20, 21],
+        "y": ["CCHS", "CCHS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [25, 26],
+        "y": ["CCHS", "CCHS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [15, 25],
+        "y": ["TOF", "TOF"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [15, 25],
+        "y": ["HPE5", "HPE5"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [14, 22],
+        "y": ["HFG-I", "HFG-I"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [18, 22],
+        "y": ["HFG-III", "HFG-III"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [15, 22],
+        "y": ["SD5", "SD5"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [15, 22],
+        "y": ["XLMR", "XLMR"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [12, 20],
+        "y": ["PRTS", "PRTS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [18, 19],
+        "y": ["SCA6", "SCA6"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [19, 20],
+        "y": ["SCA6", "SCA6"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [17, 20],
+        "y": ["CCD", "CCD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [12, 18],
+        "y": ["HFG-II", "HFG-II"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [14, 18],
+        "y": ["HSAN VIII", "HSAN VIII"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [16, 17],
+        "y": ["EIEE1", "EIEE1"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [14, 15],
+        "y": ["BPES", "BPES"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [12, 13],
+        "y": ["RCPS", "RCPS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [13, 14],
+        "y": ["RCPS", "RCPS"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [10, 11],
+        "y": ["OPMD", "OPMD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [11, 12],
+        "y": ["OPMD", "OPMD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [10, 11],
+        "y": ["VACTERLX", "VACTERLX"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [11, 12],
+        "y": ["VACTERLX", "VACTERLX"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [7, 8],
+        "y": ["ADTKD", "ADTKD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [5, 6],
+        "y": ["EDM1, PSACH", "EDM1, PSACH"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [4, 5],
+        "y": ["CJD", "CJD"],
+        "type": "scatter"
+    }, {
+        "hoverinfo": "skip",
+        "line": {
+            "color": "#aeaeae",
+            "dash": "dot"
+        },
+        "mode": "lines",
+        "showlegend": false,
+        "x": [3, 4],
+        "y": ["CHNG3", "CHNG3"],
+        "type": "scatter"
+    }, {
+        "hovertemplate": "Disease: %{y} \u003cbr\u003e Value: %{x}",
+        "legendgroup": "Benign",
+        "marker": {
+            "color": "#00afbb",
+            "size": 8
+        },
+        "mode": "markers",
+        "name": "Benign",
+        "showlegend": false,
+        "x": [11, 32, 20, 30, 15, 15, 14, 15, 15, 12, 12, 14, 10, 10, 7, 5, 4, 4, 2],
+        "y": ["CANVAS", "OPDM2", "DBQD2, BSS", "SCA37", "TOF", "HPE5", "HFG-I", "SD5", "XLMR", "PRTS", "HFG-II", "BPES", "OPMD", "VACTERLX", "ADTKD", "EDM1, PSACH", "CJD", "CHNG3", "HMNR7"],
+        "type": "scatter"
+    }, {
+        "hovertemplate": "Disease: %{y} \u003cbr\u003e Value: %{x}",
+        "legendgroup": "Intermediate",
+        "marker": {
+            "color": "#e7b800",
+            "size": 8
+        },
+        "mode": "markers",
+        "name": "Intermediate",
+        "showlegend": false,
+        "x": [19, 13, 11, 11],
+        "y": ["SCA6", "RCPS", "OPMD", "VACTERLX"],
+        "type": "scatter"
+    }, {
+        "hovertemplate": "Disease: %{y} \u003cbr\u003e Value: %{x}",
+        "legendgroup": "Pathogenic",
+        "marker": {
+            "color": "#fc4e07",
+            "size": 8
+        },
+        "mode": "markers",
+        "name": "Pathogenic",
+        "showlegend": false,
+        "x": [1100, 1000, 450, 300, 200, 25, 25, 22, 20, 18, 12, 8, 3],
+        "y": ["FAME6", "FAME4", "FRA7A", "FRA2A", "NME", "TOF", "HPE5", "HFG-I", "PRTS", "HFG-II", "VACTERLX", "ADTKD", "CHNG3"],
+        "type": "scatter"
+    }],
+    "layout": {
+        "template": {
+            "data": {
+                "barpolar": [{
+                    "marker": {
+                        "line": {
+                            "color": "white",
+                            "width": 0.5
+                        },
+                        "pattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        }
+                    },
+                    "type": "barpolar"
+                }],
+                "bar": [{
+                    "error_x": {
+                        "color": "#2a3f5f"
+                    },
+                    "error_y": {
+                        "color": "#2a3f5f"
+                    },
+                    "marker": {
+                        "line": {
+                            "color": "white",
+                            "width": 0.5
+                        },
+                        "pattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        }
+                    },
+                    "type": "bar"
+                }],
+                "carpet": [{
+                    "aaxis": {
+                        "endlinecolor": "#2a3f5f",
+                        "gridcolor": "#C8D4E3",
+                        "linecolor": "#C8D4E3",
+                        "minorgridcolor": "#C8D4E3",
+                        "startlinecolor": "#2a3f5f"
+                    },
+                    "baxis": {
+                        "endlinecolor": "#2a3f5f",
+                        "gridcolor": "#C8D4E3",
+                        "linecolor": "#C8D4E3",
+                        "minorgridcolor": "#C8D4E3",
+                        "startlinecolor": "#2a3f5f"
+                    },
+                    "type": "carpet"
+                }],
+                "choropleth": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "type": "choropleth"
+                }],
+                "contourcarpet": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "type": "contourcarpet"
+                }],
+                "contour": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "colorscale": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "type": "contour"
+                }],
+                "heatmapgl": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "colorscale": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "type": "heatmapgl"
+                }],
+                "heatmap": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "colorscale": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "type": "heatmap"
+                }],
+                "histogram2dcontour": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "colorscale": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "type": "histogram2dcontour"
+                }],
+                "histogram2d": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "colorscale": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "type": "histogram2d"
+                }],
+                "histogram": [{
+                    "marker": {
+                        "pattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        }
+                    },
+                    "type": "histogram"
+                }],
+                "mesh3d": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "type": "mesh3d"
+                }],
+                "parcoords": [{
+                    "line": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "parcoords"
+                }],
+                "pie": [{
+                    "automargin": true,
+                    "type": "pie"
+                }],
+                "scatter3d": [{
+                    "line": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scatter3d"
+                }],
+                "scattercarpet": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scattercarpet"
+                }],
+                "scattergeo": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scattergeo"
+                }],
+                "scattergl": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scattergl"
+                }],
+                "scattermapbox": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scattermapbox"
+                }],
+                "scatterpolargl": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scatterpolargl"
+                }],
+                "scatterpolar": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scatterpolar"
+                }],
+                "scatter": [{
+                    "fillpattern": {
+                        "fillmode": "overlay",
+                        "size": 10,
+                        "solidity": 0.2
+                    },
+                    "type": "scatter"
+                }],
+                "scatterternary": [{
+                    "marker": {
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    },
+                    "type": "scatterternary"
+                }],
+                "surface": [{
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    },
+                    "colorscale": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "type": "surface"
+                }],
+                "table": [{
+                    "cells": {
+                        "fill": {
+                            "color": "#EBF0F8"
+                        },
+                        "line": {
+                            "color": "white"
+                        }
+                    },
+                    "header": {
+                        "fill": {
+                            "color": "#C8D4E3"
+                        },
+                        "line": {
+                            "color": "white"
+                        }
+                    },
+                    "type": "table"
+                }]
+            },
+            "layout": {
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "autotypenumbers": "strict",
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "diverging": [
+                        [0, "#8e0152"],
+                        [0.1, "#c51b7d"],
+                        [0.2, "#de77ae"],
+                        [0.3, "#f1b6da"],
+                        [0.4, "#fde0ef"],
+                        [0.5, "#f7f7f7"],
+                        [0.6, "#e6f5d0"],
+                        [0.7, "#b8e186"],
+                        [0.8, "#7fbc41"],
+                        [0.9, "#4d9221"],
+                        [1, "#276419"]
+                    ],
+                    "sequential": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ],
+                    "sequentialminus": [
+                        [0.0, "#0d0887"],
+                        [0.1111111111111111, "#46039f"],
+                        [0.2222222222222222, "#7201a8"],
+                        [0.3333333333333333, "#9c179e"],
+                        [0.4444444444444444, "#bd3786"],
+                        [0.5555555555555556, "#d8576b"],
+                        [0.6666666666666666, "#ed7953"],
+                        [0.7777777777777778, "#fb9f3a"],
+                        [0.8888888888888888, "#fdca26"],
+                        [1.0, "#f0f921"]
+                    ]
+                },
+                "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "lakecolor": "white",
+                    "landcolor": "white",
+                    "showlakes": true,
+                    "showland": true,
+                    "subunitcolor": "#C8D4E3"
+                },
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "hovermode": "closest",
+                "mapbox": {
+                    "style": "light"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "white",
+                "polar": {
+                    "angularaxis": {
+                        "gridcolor": "#EBF0F8",
+                        "linecolor": "#EBF0F8",
+                        "ticks": ""
+                    },
+                    "bgcolor": "white",
+                    "radialaxis": {
+                        "gridcolor": "#EBF0F8",
+                        "linecolor": "#EBF0F8",
+                        "ticks": ""
+                    }
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "white",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "#EBF0F8"
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "white",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "#EBF0F8"
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "white",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "#EBF0F8"
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "ternary": {
+                    "aaxis": {
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6",
+                        "ticks": ""
+                    },
+                    "bgcolor": "white",
+                    "caxis": {
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6",
+                        "ticks": ""
+                    }
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "xaxis": {
+                    "automargin": true,
+                    "gridcolor": "#EBF0F8",
+                    "linecolor": "#EBF0F8",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "#EBF0F8",
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "gridcolor": "#EBF0F8",
+                    "linecolor": "#EBF0F8",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "#EBF0F8",
+                    "zerolinewidth": 2
+                }
+            }
+        },
+        "yaxis": {
+            "tickmode": "array",
+            "tickvals": ["FAME6", "FAME4", "SCA10", "FAME3", "GDPAG", "SCA36", "FRA7A", "CANVAS", "SCA27B", "FRA2A", "FAME2", "FRA12A", "FTDALS1", "FRAXE", "FXS, FXTAS, POF1", "NME", "OPML1", "OPDM4", "OPDM", "SCA31", "FAME1", "JBS", "OPDM1", "DM2", "OPDM2", "DBQD2, BSS", "SCA8", "NIID", "SCA3, MJD", "FAME7", "FRDA", "SCA12", "FECD3", "DM1", "SCA17", "DRPLA", "SCA4", "SCA", "HD", "HDL2", "SCA1", "SBMA", "SCA7", "SCA2", "XDP", "SCA37", "EPM1", "CCHS", "TOF", "HPE5", "HFG-I", "HFG-III", "SD5", "XLMR", "PRTS", "SCA6", "CCD", "HFG-II", "HSAN VIII", "EIEE1", "BPES", "RCPS", "OPMD", "VACTERLX", "FAME8", "ADTKD", "EDM1, PSACH", "CJD", "CHNG3", "HMNR7"],
+            "title": {
+                "text": "Disease"
+            }
+        },
+        "margin": {
+            "l": 10,
+            "r": 10,
+            "t": 10,
+            "b": 10
+        },
+        "autosize": false,
+        "width": 800,
+        "height": 1050,
+        "legend": {
+            "title": {
+                "text": "Allele size"
+            }
+        },
+        "xaxis": {
+            "title": {
+                "text": "Allele size in base pairs"
+            },
+            "type": "log"
+        }
+    }
+}

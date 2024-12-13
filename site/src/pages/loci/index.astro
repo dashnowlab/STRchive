@@ -115,16 +115,16 @@ const bedDownloads = downloads.slice(3);
         <Heading level={3}>Pathogenic Size Range</Heading>
         <PlotlyChart
           client:only="react"
-          data={pathSize.x.data}
-          layout={pathSize.x.layout}
+          data={pathSize.data}
+          layout={pathSize.layout}
         />
       </div>
       <div>
         <Heading level={3}>Age of Onset</Heading>
         <PlotlyChart
           client:only="react"
-          data={ageOnset.x.data}
-          layout={ageOnset.x.layout}
+          data={ageOnset.data}
+          layout={ageOnset.layout}
         />
       </div>
     </div>
