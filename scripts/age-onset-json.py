@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
-import plotly.io as pio
 import json
+import jsbeautifier
 import argparse
 
 def parse_args():
@@ -95,7 +95,7 @@ def build_JSON(args):
             marker=dict(color=colors[key]),
             width=0.2,
             offset=-0.1,
-            hovertemplate="Disease: %{y} <br> Range: %{base} - %{x}"
+            hovertemplate="Disease: %{y} <br> Range onset: %{base} - %{x} years"
         ))
     for key in plot_data:
         fig.add_trace(go.Bar(
@@ -108,7 +108,7 @@ def build_JSON(args):
             marker=dict(color=colors[key]),
             width=0.6,
             offset=-0.3,
-            hovertemplate="Disease: %{y} <br> Range: %{base} - %{x}",
+            hovertemplate="Disease: %{y} <br> Typical onset: %{base} - %{x} years",
             showlegend=False
         ))
 
@@ -118,19 +118,29 @@ def build_JSON(args):
         mode="lines",
         line=dict(dash='dot', color='#aeaeae'),
         showlegend=False,
-        hoverinfo='skip'
+        hoverinfo='text',
+        hovertemplate="Age 18",
+        name="Age 18"
     ))
 
     fig.update_layout(autosize=False, 
                     width=800,
-                    height=len(diseases)*15,
+                    height=len(diseases)*20,
                     template="plotly_white",
                     legend_title="Inheritance",
                     margin=dict(l=10, r=10, t=10, b=10)
                     ) 
     fig.update_xaxes(title_text="Age of onset (years)", range=[-10,100])
     fig.update_yaxes(title_text="Disease")
-    pio.write_json(fig, args.output)
+    #fig.show()
+    fig_json = fig.to_json()
+
+    with open(args.output, "w") as file:
+        options = jsbeautifier.default_options()
+        options.indent_size = 2
+        options.brace_style="expand"
+        file.write(jsbeautifier.beautify(fig_json, options))
+
 
 if __name__=="__main__":
     args = parse_args()

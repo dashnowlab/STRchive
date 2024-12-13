@@ -1,6 +1,7 @@
 import sys
 import pandas as pd
 import json
+import jsbeautifier
 from statsmodels.stats import proportion
 import argparse
 
@@ -86,8 +87,6 @@ def build_JSON(args):
     strchive_info = json.loads(json_txt)
     
     df = pd.read_csv(args.gnomad_tsv, sep='\t')
-
-    json_out = open(args.output, 'w')
 
     plot_data = {}
     for info in strchive_info:
@@ -187,9 +186,12 @@ def build_JSON(args):
                 "confidence_upperbounds": xconf_upperbound,
                 "title": gene
             }
-            
-    print(json.dumps(plot_data, indent=4), file=json_out)
-    json_out.close()
+  
+    with open(args.output, "w") as file:
+        options = jsbeautifier.default_options()
+        options.indent_size = 2
+        options.brace_style="expand"
+        file.write(jsbeautifier.beautify(json.dumps(plot_data), options))
 
 if __name__ == "__main__":
     args = parse_args()
