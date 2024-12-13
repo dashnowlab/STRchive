@@ -42,7 +42,10 @@ if stages == "all" or stages == "new-refs":
             # Extended BED files
             expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
-            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir)
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir),
+            # Plots
+            expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
+            expand("{base_dir}plots/path-size.json", base_dir = base_dir)
 elif stages == "skip-refs":
     rule all:
         input:
@@ -55,7 +58,10 @@ elif stages == "skip-refs":
             # Extended BED files
             expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
-            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir)
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir),
+            # Plots
+            expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
+            expand("{base_dir}plots/path-size.json", base_dir = base_dir)
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
 
@@ -195,4 +201,26 @@ rule bed_T2T:
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g T2T {input.in_json} {output.results}
+        """
+
+rule age_onset_plot:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}plots/age-onset.json"
+    shell:
+        """
+        python {scripts_dir}age-onset-json.py {input.in_json} {output.results}
+        """
+
+rule path_size_plot:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}plots/path-size.json"
+    shell:
+        """
+        python {scripts_dir}path-size-json.py {input.in_json} {output.results}
         """
