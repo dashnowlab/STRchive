@@ -5,6 +5,66 @@ import jsbeautifier
 from statsmodels.stats import proportion
 import argparse
 
+reliability = {
+	"AFF2" : False,
+	"ARX_1" : False,
+	"NOTCH2NLC" : False,
+	"TBP" : False,
+	"ARX_2" : False,
+	"FOXL2" : False,
+	"HOXA13_1" : False,
+	"HOXA13_2" : False,
+	"HOXA13_3" : False,
+	"NIPA1" : False,
+	"PABPN1" : False,
+	"PHOX2B" : False,
+	"RUNX2" : False,
+	"SOX3" : False,
+	"TBX1" : False,
+	"ZIC2" : False,
+	"COMP" : True,
+	"CSTB" : True,
+	"FMR1" : True,
+	"HOXD13" : True,
+	"NUTM2B-AS1" : True,
+	"PRDM12" : True,
+	"RFC1" : True,
+	"AR" : True,
+	"ATN1" : True,
+	"ATXN1" : True,
+	"ATXN10" : True,
+	"ATXN2" : True,
+	"ATXN3" : True,
+	"ATXN7" : True,
+	"ATXN8OS" : True,
+	"BEAN1" : True,
+	"C9ORF72" : True,
+	"CACNA1A" : True,
+	"CNBP" : True,
+	"DAB1" : True,
+	"DIP2B" : True,
+	"DMPK" : True,
+	"EIF4A3" : True,
+	"FXN" : True,
+	"GIPC1" : True,
+	"GLS" : True,
+	"HTT" : True,
+	"JPH3" : True,
+	"LRP12" : True,
+	"MARCHF6" : True,
+	"NOP56" : True,
+	"PPP2R2B" : True,
+	"PRNP" : True,
+	"RAPGEF2" : True,
+	"SAMD12" : True,
+	"STARD7" : True,
+	"TCF4" : True,
+	"TNRC6A" : True,
+	"VWA1" : True,
+	"YEATS2" : True,
+	"ZIC3" : True
+}
+
 def parse_args():
     """
     Parse command line arguments
@@ -90,10 +150,15 @@ def build_JSON(args):
 
     plot_data = {}
     for info in strchive_info:
+        
+        reliable = False
 
         # looks for gnomad specific gene name otherwise takes the default gene name
         try: gene = info['gnomad'][0]
         except IndexError: gene = info['gene']
+
+        if gene in reliability: reliable = reliability[gene]
+        else: reliable = False
         
         sub_df = df[df['Id'] == gene]
         
@@ -136,7 +201,7 @@ def build_JSON(args):
                 sub_df_XY['Pathogenic'] = sub_df_XY['Pathogenic1']
                 sub_df = pd.concat([sub_df_XX, sub_df_XY])
             
-            plot_data[info["id"]] = {'XX': "", 'XY': ""}
+            plot_data[info["id"]] = {'XX': "", 'XY': "", 'both': ""}
 
             for sex, plot_df in zip(['XX', 'XY'], [sub_df_XX, sub_df_XY]):
                 values, labels, counts, xconf_lowerbound, xconf_upperbound = calc_plotdata(plot_df)
@@ -145,21 +210,24 @@ def build_JSON(args):
                     "labels": labels,
                     "values": values,
                     "counts": counts,
-                    "confidence_lowerbounds": xconf_lowerbound,
-                    "confidence_upperbounds": xconf_upperbound,
+                    "confidence_lower_bounds": xconf_lowerbound,
+                    "confidence_upper_bounds": xconf_upperbound,
                     "title": gene+"_"+sex
                 }
 
             sub_df = pd.concat([sub_df_XX, sub_df_XY])
             values, labels, counts, xconf_lowerbound, xconf_upperbound = calc_plotdata(sub_df)
 
-            plot_data[info["id"]]["id"] = info["id"]
-            plot_data[info["id"]]["labels"] = labels
-            plot_data[info["id"]]["values"] = values
-            plot_data[info["id"]]["counts"] = counts
-            plot_data[info["id"]]["confidence_lowerbounds"] = xconf_lowerbound
-            plot_data[info["id"]]["confidence_upperbounds"] = xconf_upperbound
-            plot_data[info["id"]]["title"] = gene
+            plot_data[info["id"]]["both"] = {
+                "id": info["id"],
+                "labels": labels,
+                "values": values,
+                "counts": counts,
+                "confidence_lower_bounds": xconf_lowerbound,
+                "confidence_upper_bounds": xconf_upperbound,
+                "title": gene
+            }
+            plot_data[info["id"]]["reliable"] = reliable
         
         else:
             sub_df = sub_df.assign(MinAllele1  = sub_df["GenotypeConfidenceInterval"].apply(lambda x: min([int(a) for a in x.split('/')[0].split('-')])))
@@ -177,14 +245,18 @@ def build_JSON(args):
             elif inheritance == 'AR': sub_df = sub_df.assign(Pathogenic = (sub_df['Pathogenic1'] & sub_df['Pathogenic2']) & sub_df['PathogenicMotif'])
         
             values, labels, counts, xconf_lowerbound, xconf_upperbound = calc_plotdata(sub_df)
+            
             plot_data[info["id"]] = {
-                "id": info["id"],
-                "labels": labels,
-                "values": values,
-                "counts": counts,
-                "confidence_lowerbounds": xconf_lowerbound,
-                "confidence_upperbounds": xconf_upperbound,
-                "title": gene
+                "both": {
+                    "id": info["id"],
+                    "labels": labels,
+                    "values": values,
+                    "counts": counts,
+                    "confidence_lower_bounds": xconf_lowerbound,
+                    "confidence_upper_bounds": xconf_upperbound,
+                    "title": gene
+                },
+                "reliable": reliable
             }
   
     with open(args.output, "w") as file:
