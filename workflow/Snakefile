@@ -44,6 +44,7 @@ if stages == "all" or stages == "new-refs":
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir),
             # Plots
+            # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
             expand("{base_dir}plots/path-size.json", base_dir = base_dir)
 elif stages == "skip-refs":
@@ -60,6 +61,7 @@ elif stages == "skip-refs":
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir),
             # Plots
+            # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
             expand("{base_dir}plots/path-size.json", base_dir = base_dir)
 else:
@@ -224,3 +226,16 @@ rule path_size_plot:
         """
         python {scripts_dir}path-size-json.py {input.in_json} {output.results}
         """
+
+# Input data not in repo
+# rule gnomad_plots:
+#     input:
+#         in_json = in_json,
+#         tsv = "{base_dir}plots/gnomAD_STR_genotypes__2023_06_15.tsv.gz",
+#         check = "{base_dir}check-loci.txt"
+#     output:
+#         results = "{base_dir}plots/gnomad.json"
+#     shell:
+#         """
+#         python {scripts_dir}gnomad-json.py {input.in_json} {input.tsv} {output.results}
+#         """
