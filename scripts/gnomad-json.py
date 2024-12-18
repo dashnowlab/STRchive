@@ -22,6 +22,8 @@ reliability = {
 	"SOX3" : False,
 	"TBX1" : False,
 	"ZIC2" : False,
+    "RILPL1" : True,
+    "ABCD3" : True,
 	"COMP" : True,
 	"CSTB" : True,
 	"FMR1" : True,
@@ -62,7 +64,9 @@ reliability = {
 	"TNRC6A" : True,
 	"VWA1" : True,
 	"YEATS2" : True,
-	"ZIC3" : True
+	"ZIC3" : True,
+    "DMD" : False,
+    "XYLT1" : False
 }
 
 def parse_args():
