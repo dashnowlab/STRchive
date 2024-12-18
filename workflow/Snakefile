@@ -227,11 +227,12 @@ rule path_size_plot:
         python {scripts_dir}path-size-json.py {input.in_json} {output.results}
         """
 
-# Input data not in repo
+#Input data not in repo
+
 # rule gnomad_plots:
 #     input:
 #         in_json = in_json,
-#         tsv = "{base_dir}plots/gnomAD_STR_genotypes__2023_06_15.tsv.gz",
+#         tsv = "{base_dir}plots/gnomAD_STR_genotypes__including_all_age_and_pcr_info__2023_06_28.tsv.gz",
 #         check = "{base_dir}check-loci.txt"
 #     output:
 #         results = "{base_dir}plots/gnomad.json"
