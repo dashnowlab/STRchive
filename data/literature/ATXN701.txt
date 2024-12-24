@@ -2,7 +2,7 @@
 PMID- 39649105
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20241210
+LR  - 20241214
 IS  - 1662-5099 (Print)
 IS  - 1662-5099 (Electronic)
 IS  - 1662-5099 (Linking)
@@ -68,6 +68,8 @@ AD  - Department of Neurobiology and Behavior, University of California, Irvine,
 AD  - UCI Center for Neurotherapeutics, University of California, Irvine, Irvine, CA, 
       United States.
 LA  - eng
+GR  - R01 EY014061/EY/NEI NIH HHS/United States
+GR  - R35 NS122140/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20241122
 PL  - Switzerland
@@ -104,12 +106,13 @@ SO  - Front Mol Neurosci. 2024 Nov 22;17:1478110. doi: 10.3389/fnmol.2024.147811
 
 PMID- 39571249
 OWN - NLM
-STAT- Publisher
-LR  - 20241121
+STAT- MEDLINE
+DCOM- 20241212
+LR  - 20241212
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Linking)
 VI  - 467
-DP  - 2024 Nov 15
+DP  - 2024 Dec 15
 TI  - Screening for SCA27B, CANVAS and other repeat expansion disorders in Greek 
       patients with late-onset cerebellar ataxia suggests a need to update current 
       diagnostic algorithms.
@@ -238,7 +241,29 @@ PL  - Netherlands
 TA  - J Neurol Sci
 JT  - Journal of the neurological sciences
 JID - 0375403
+RN  - 0 (RFC1 protein, human)
+RN  - EC 3.6.4.- (Replication Protein C)
+RN  - 0 (fibroblast growth factor 14)
+RN  - 62031-54-3 (Fibroblast Growth Factors)
+RN  - Spinocerebellar ataxia 27
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - Aged
+MH  - Female
+MH  - Greece/epidemiology
+MH  - Adult
+MH  - Aged, 80 and over
+MH  - *Cerebellar Ataxia/genetics/diagnosis/epidemiology
+MH  - Algorithms
+MH  - Genetic Testing/methods
+MH  - Replication Protein C/genetics
+MH  - Spinocerebellar Ataxias/genetics/epidemiology/diagnosis
+MH  - Age of Onset
+MH  - Fibroblast Growth Factors/genetics
+MH  - DNA Repeat Expansion/genetics
+MH  - Spinocerebellar Degenerations
 OTO - NOTNLM
 OT  - FGF14
 OT  - Greek population
@@ -248,18 +273,19 @@ OT  - Tandem repeat expansions
 OT  - ataxia
 COIS- Declaration of competing interest The authors report no conflict of interest.
 EDAT- 2024/11/22 00:23
-MHDA- 2024/11/22 00:23
+MHDA- 2024/12/13 00:23
 CRDT- 2024/11/21 18:02
 PHST- 2024/08/27 00:00 [received]
 PHST- 2024/11/03 00:00 [revised]
 PHST- 2024/11/12 00:00 [accepted]
-PHST- 2024/11/22 00:23 [medline]
+PHST- 2024/12/13 00:23 [medline]
 PHST- 2024/11/22 00:23 [pubmed]
 PHST- 2024/11/21 18:02 [entrez]
 AID - S0022-510X(24)00445-3 [pii]
 AID - 10.1016/j.jns.2024.123309 [doi]
-PST - aheadofprint
-SO  - J Neurol Sci. 2024 Nov 15;467:123309. doi: 10.1016/j.jns.2024.123309.
+PST - ppublish
+SO  - J Neurol Sci. 2024 Dec 15;467:123309. doi: 10.1016/j.jns.2024.123309. Epub 2024 
+      Nov 15.
 
 PMID- 39504355
 OWN - NLM
