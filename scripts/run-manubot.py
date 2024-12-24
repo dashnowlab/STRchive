@@ -21,6 +21,9 @@ database_urls = {
     "orphanet": "https://www.orpha.net/en/disease/detail/{id}",
     }
 
+# These types currently always fail with Manubot and should be skipped
+skip_types = ["omim"]
+
 # These the URL will be added to use if Manubot can't generate a citation
 # But the citation type will be preserved
 citation_urls = {
@@ -88,6 +91,13 @@ def cite_with_manubot(ids, append_ids=None):
             
             if id_type in citation_urls:
                 citation["link"] = citation_urls[id_type].format(id=_id[len(id_type)+1:])
+
+            # Skip types that always fail
+            if id_type in skip_types:
+                sys.stderr.write(f"WARNING: Manubot does not support {_id}. Skipping\n")
+                citation["note"] = f"WARNING: Manubot does not support {_id}. Skipping"
+                citations.append(citation)
+                continue
 
             # run Manubot
             try:
