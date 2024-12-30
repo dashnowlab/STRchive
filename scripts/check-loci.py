@@ -201,9 +201,12 @@ def check_list_fields(record, list_fields = list_fields):
                 record[field] = [record[field].strip()]
         
         if field in citation_fields:
+            # Remove leading @
             record[field] = [x.strip('@') for x in record[field]]
             # Ensure citation lists are unique
             record[field] = unique_list(record[field])
+            # Remove empty strings
+            record[field] = [x for x in record[field] if x.split(':')[-1] != '']
 
         if old != record[field]:
             sys.stderr.write(f'Updating {record['id']} {field} from {old} to {record[field]}\n')
