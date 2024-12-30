@@ -11,7 +11,9 @@ dependencies:
   - jsbeautifier
   - statsmodels
   - plotly
+  - zlib
   - r-essentials
+  - r-base
   - r-jsonlite
   - r-dplyr
   - r-rentrez
