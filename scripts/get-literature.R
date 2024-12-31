@@ -4,14 +4,26 @@
 # More useful error messages
 options(error=traceback)
 
-# Install biomaRt if not already installed
-if (!requireNamespace("biomaRt", quietly = TRUE)) {
-  if (!requireNamespace("BiocManager", quietly = TRUE)) {
-    install.packages("BiocManager")
-  }
-  BiocManager::install("biomaRt")
-}
+## Set default CRAN mirror
+local({r <- getOption("repos")
+       r["CRAN"] <- "https://cran.r-project.org"
+       options(repos=r)
+})
 
+# Install biomaRt if not already installed
+tryCatch({
+  if (!requireNamespace("biomaRt", quietly = TRUE)) {
+    if (!requireNamespace("BiocManager", quietly = TRUE)) {
+      install.packages("BiocManager", ask = FALSE, update = FALSE)
+    }
+    BiocManager::install("biomaRt", ask = FALSE)
+  }
+}, error = function(e) {
+  cat("Error installing biomaRt package.\n", file=stderr())
+  quit(status = 1)
+})
+
+tryCatch({
 suppressPackageStartupMessages({
   library(jsonlite)
   library(dplyr)
@@ -20,6 +32,10 @@ suppressPackageStartupMessages({
   library(easyPubMed)
   library(stringr)
   library(purrr)
+})
+}, error = function(e) {
+  cat("Error loading required packages.\n", file=stderr())
+  quit(status = 1)
 })
 
 ### Data Setup

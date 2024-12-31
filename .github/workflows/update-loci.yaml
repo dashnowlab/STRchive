@@ -2,6 +2,7 @@ name: Update data
 
 permissions:
   contents: write
+  pull-requests: write
 
 on:
   pull_request:
@@ -11,6 +12,8 @@ on:
       - "scripts/**"
       - "workflow/**"
       - ".github/workflows/**"
+  schedule:
+    - cron: "45 2 1 * *" # Run monthly at 2:45 am
   workflow_dispatch:
 
 jobs:
@@ -41,8 +44,28 @@ jobs:
           conda info
 
       - name: Check loci and update bed files (short)
-        #if: ${{ github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'}}
+        if: ${{ github.event_name == 'pull_request'}}
         run: snakemake --config stages="skip-refs"
+
+      # Enable this step to open an SSH session for debugging
+      # - name: SSH debug
+      #   uses: mxschmitt/action-tmate@v3
+
+      - name: Find new literature (intermediate)
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          conda init
+          source /home/runner/.bashrc
+          conda activate strchive
+          snakemake --config stages="new-refs"
+
+      - name: Update all literature (long)
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          conda init
+          source /home/runner/.bashrc
+          conda activate strchive
+          snakemake
 
       - name: Open pull request with updated files
         if: ${{ !(github.event_name == 'pull_request') }}
