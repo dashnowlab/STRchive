@@ -68,7 +68,7 @@ jobs:
           snakemake
 
       - name: Open pull request with updated files
-        if: ${{ !(github.event_name == 'pull_request') || github.event_name == 'schedule' }}
+        if: ${{ !(github.event_name == 'pull_request') }}
         uses: peter-evans/create-pull-request@v7
         with:
           branch: update-data
