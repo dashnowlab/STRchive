@@ -1100,7 +1100,7 @@
   "gene_strand": "-",
   "reference_motif_reference_orientation": ["CAGG"],
   "pathogenic_motif_reference_orientation": ["CAGG", "CAGA"],
-  "pathogenic_motif_gene_orientation": ["CCTG", "TCTG"],
+  "pathogenic_motif_gene_orientation": ["CCTG", "CTGT"],
   "benign_motif_reference_orientation": [],
   "benign_motif_gene_orientation": [],
   "unknown_motif_reference_orientation": [],
