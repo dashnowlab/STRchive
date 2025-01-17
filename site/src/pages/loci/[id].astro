@@ -1,7 +1,7 @@
 ---
 /** LOCUS PAGE */
 
-import { FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
+import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import Heading from "@/components/Heading.astro";
@@ -19,6 +19,7 @@ import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
+import { getJsonBlame } from "@/util/git";
 import gnomad from "../../../../data/plots/gnomad.json";
 import citations from "../../../../data/STRchive-citations.json";
 import loci from "../../../../data/STRchive-loci.json";
@@ -41,6 +42,12 @@ const locus = deriveLocus(
 const hasRawSearch = Object.keys(
   await import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
 ).some((file) => file.includes(locus.gene));
+
+/** get blame info of locus */
+const blame = getJsonBlame(
+  "../data/STRchive-loci.json",
+  `"id":\\s*"${id}"\\s*,`,
+);
 ---
 
 <Layout title={locus.nice_id}>
@@ -69,6 +76,15 @@ const hasRawSearch = Object.keys(
       <div class="box">
         <div><TbDna2 />Gene ID</div>
         <div>{locus.gene}</div>
+      </div>
+
+      <div class="box">
+        <div><FaRegCalendar />Updated</div>
+        <div>
+          {blame.date}
+          <br />
+          {blame.version}
+        </div>
       </div>
     </div>
 
