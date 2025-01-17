@@ -2,9 +2,8 @@ import { execSync } from "child_process";
 import { readFileSync } from "fs";
 import { maxBy } from "lodash-es";
 
-/** get git blame info of json file entry */
+/** get git blame info of json file entry. makes assumptions about structure and formatting. */
 export const getJsonBlame = (file, regex) => {
-  console.log(file);
   /** split file into lines */
   const lines = readFileSync(file, "utf-8").split("\n");
 
