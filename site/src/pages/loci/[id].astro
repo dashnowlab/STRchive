@@ -438,14 +438,24 @@ const blame = getJsonBlame(
 
   <!-- gnomad data -->
   {
-    gnomad[id] && gnomad[id].reliable && (
-      <section>
-        <Heading level={2}>gnomAD</Heading>
+    gnomad[id] ? (
+      gnomad[id].reliable ? (
+        <section>
+          <Heading level={2}>gnomAD</Heading>
 
-        <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
-      </section>
-    )
+          <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
+          </section>
+      ) : (
+        <p>
+          <em>
+            *Pathogenic genotypes from gnomAD cohort not displayed for loci deemed unreliable
+            following manual review of largest alleles by gnomAD.
+          </em>
+          </p>
+          )
+      ) : null
   }
+
 
   <!-- references -->
   {
