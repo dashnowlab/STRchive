@@ -444,9 +444,9 @@ const blame = getJsonBlame(
       {gnomad[id].reliable ? (
         <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
       ) : (
-        <p className="center">
+        <p >
           <em>
-            *Pathogenic genotypes from gnomAD cohort not displayed for loci deemed unreliable 
+            Pathogenic genotypes from gnomAD cohort not displayed for loci deemed unreliable 
             following manual review of largest alleles by gnomAD.
           </em>
         </p>
