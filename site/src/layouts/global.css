@@ -324,6 +324,7 @@ td {
 
 .center {
   text-align: center;
+  text-wrap: balance;
 }
 
 .button {
