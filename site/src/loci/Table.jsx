@@ -53,11 +53,11 @@ const cols = [
     name: "Description",
   },
   {
-    key: "position_hg38",
+    key: "position_base0_hg38",
     name: "Position hg38",
-    render: (cell) => (
+    render: (cell, row) => (
       <Link
-        to={`https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=${cell}`}
+        to={`https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=${row.position_base1_hg38}`}
       >
         {cell}
       </Link>
