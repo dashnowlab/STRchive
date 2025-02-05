@@ -1407,7 +1407,7 @@ PMID- 38667292
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240426
-LR  - 20240430
+LR  - 20250117
 IS  - 2073-4409 (Electronic)
 IS  - 2073-4409 (Linking)
 VI  - 13
@@ -1763,12 +1763,15 @@ SO  - Neuropathology. 2024 Oct;44(5):351-365. doi: 10.1111/neup.12971. Epub 2024
 PMID- 38377026
 OWN - NLM
 STAT- Publisher
-LR  - 20240220
+LR  - 20250129
 IS  - 2152-5250 (Electronic)
 IS  - 2152-5250 (Linking)
+VI  - 16
+IP  - 1
 DP  - 2024 Feb 16
 TI  - Neuronal Intranuclear Inclusion Disease with NOTCH2NLC GGC Repeat Expansion: A 
       Systematic Review and Challenges of Phenotypic Characterization.
+PG  - 578-97
 LID - 10.14336/AD.2024.0131-1 [doi]
 AB  - Neuronal intranuclear inclusion disease (NIID) is a highly clinically 
       heterogeneous neurodegenerative disorder primarily attributed to abnormal GGC 
@@ -1842,18 +1845,23 @@ TA  - Aging Dis
 JT  - Aging and disease
 JID - 101540533
 SB  - IM
+PMC - PMC11745434
+COIS- The authors declare that they have no competing interests.
 EDAT- 2024/02/20 18:42
 MHDA- 2024/02/20 18:42
+PMCR- 2025/02/01
 CRDT- 2024/02/20 12:53
 PHST- 2023/10/23 00:00 [received]
 PHST- 2024/01/31 00:00 [accepted]
+PHST- 2025/02/01 00:00 [pmc-release]
 PHST- 2024/02/20 18:42 [medline]
 PHST- 2024/02/20 18:42 [pubmed]
 PHST- 2024/02/20 12:53 [entrez]
 AID - AD.2024.0131-1 [pii]
+AID - ad-16-1-578 [pii]
 AID - 10.14336/AD.2024.0131-1 [doi]
 PST - aheadofprint
-SO  - Aging Dis. 2024 Feb 16. doi: 10.14336/AD.2024.0131-1.
+SO  - Aging Dis. 2024 Feb 16;16(1):578-97. doi: 10.14336/AD.2024.0131-1.
 
 PMID- 38288273
 OWN - NLM
@@ -3268,6 +3276,7 @@ AU  - Mao X
 AD  - Department of Neurology, The Third Hospital of Changsha, Changsha, Hunan, China.
 LA  - eng
 PT  - Case Reports
+PT  - Journal Article
 DEP - 20230525
 PL  - Switzerland
 TA  - Front Neurol
@@ -6209,6 +6218,7 @@ AD  - Department of Neurology, Huainan First People's Hospital Affiliated to Auh
       University of Science and Technology, Huainan 232000, Anhui Province, China.
 LA  - eng
 PT  - Case Reports
+PT  - Journal Article
 PL  - United States
 TA  - World J Clin Cases
 JT  - World journal of clinical cases
@@ -7260,6 +7270,7 @@ AD  - Division of Child Neurology, Department of Brain and Neurosciences, Facult
       Medicine, Tottori University, 36-1 Nishi-Cho, Yonago, Tottori 683-8504, Japan.
 LA  - eng
 PT  - Case Reports
+PT  - Journal Article
 DEP - 20220921
 PL  - Netherlands
 TA  - Brain Dev
@@ -7802,6 +7813,7 @@ AD  - Department of Neurology, Hirosaki University Graduate School of Medicine,
       Hirosaki, Japan.
 LA  - eng
 PT  - Case Reports
+PT  - Journal Article
 DEP - 20220810
 PL  - Switzerland
 TA  - Front Neurosci
@@ -12731,6 +12743,7 @@ AD  - Department of Neurology, Shanghai Jiao Tong University Affiliated Sixth Pe
       Hospital, Shanghai, China.
 LA  - eng
 PT  - Case Reports
+PT  - Journal Article
 DEP - 20210211
 PL  - Switzerland
 TA  - Front Neurol
@@ -14759,6 +14772,7 @@ AU  - Orimo S
 AD  - Department of Neurology, Kanto Central Hospital, Tokyo, Japan.
 LA  - eng
 PT  - Case Reports
+PT  - Journal Article
 DEP - 20200811
 PL  - England
 TA  - Heliyon
@@ -14802,7 +14816,7 @@ PMID- 32777174
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20211018
-LR  - 20240428
+LR  - 20250108
 IS  - 2328-9503 (Electronic)
 IS  - 2328-9503 (Linking)
 VI  - 7
@@ -14993,12 +15007,15 @@ AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, 
       London, UK.
 LA  - eng
 GR  - MR/L501542/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - G-0907/PUK_/Parkinson's UK/United Kingdom
 GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - WT104033AIA/WT_/Wellcome Trust/United Kingdom
 GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0701075/MRC_/Medical Research Council/United Kingdom
 GR  - G0901254/MRC_/Medical Research Council/United Kingdom
+GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
 GR  - MR/N008324/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/N026004/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
