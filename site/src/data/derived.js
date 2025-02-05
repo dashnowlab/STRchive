@@ -13,8 +13,11 @@ export const deriveLocus = (locus, loci, citations) => {
 
   /** construct full position strings */
   for (const assembly of ["hg19", "hg38", "t2t"])
-    locus[`position_${assembly}`] =
+    locus[`position_base0_${assembly}`] =
       `${locus.chrom}:${locus[`start_${assembly}`]}-${locus[`stop_${assembly}`]}`;
+  for (const assembly of ["hg19", "hg38", "t2t"])
+    locus[`position_base1_${assembly}`] =
+      `${locus.chrom}:${locus[`start_${assembly}`] + 1}-${locus[`stop_${assembly}`]}`;
 
   /** make prevalence fraction */
   if (locus.prevalence)

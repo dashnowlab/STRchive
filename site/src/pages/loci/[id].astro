@@ -251,9 +251,9 @@ const blame = getJsonBlame(
           <div class="box">
             <div>{assembly}</div>
             <Link
-              to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${locus[`position_${assembly}`]}`}
+              to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${locus[`position_base1_${assembly}`]}`}
             >
-              {locus[`position_${assembly}`]}
+              {locus[`position_base0_${assembly}`]}
             </Link>
           </div>
         ))

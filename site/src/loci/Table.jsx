@@ -53,7 +53,7 @@ const cols = [
     name: "Description",
   },
   {
-    key: "position_hg38",
+    key: "position_base0_hg38",
     name: "Position hg38",
     render: (cell) => (
       <Link
