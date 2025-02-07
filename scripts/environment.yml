@@ -24,6 +24,7 @@ dependencies:
   - r-purrr
   - pysam
   - nodejs # build website locally
+  - pyliftover
   - pip
   - pip:
     - manubot
