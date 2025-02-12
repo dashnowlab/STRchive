@@ -87,6 +87,9 @@ def get_ref(fasta, ref_directory='.'):
     Check if the reference genome can be used remotely or if file exists locally, if not download it
     Returns the reference genome object
     """
+    # If directory doesn't exist, create it
+    if not os.path.isdir(ref_directory):
+        os.makedirs(ref_directory)
     # Try to use the ref genome remotely
     try:
         ref = pysam.Fastafile(fasta)
