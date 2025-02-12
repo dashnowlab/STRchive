@@ -1,4 +1,5 @@
 input_file: "data/STRchive-loci.json"
 base_directory: "data/"
 scripts_directory: "scripts/"
+ref_directory: "ref-data/"
 stages: "all" # Run all stages or "skip-refs" to skip retrieve and manubot (long!) stages
