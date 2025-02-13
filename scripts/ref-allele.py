@@ -8,12 +8,9 @@ def split_repeat_sequence(motifs, sequence):
     """
     Splits repeat sequence based on the defined motifs
 
-    Args:
-        motifs  : the list of motifs defined for the locus
-        sequence: sequence of the locus
-    
-    Returns:
-        the formatted sequence string split based on the motifs
+    :param motifs  : the list of motifs defined for the locus
+    :param sequence: sequence of the locus
+    :return the formatted sequence string split based on the motifs
     """
     
     # initialisers
@@ -52,13 +49,11 @@ def read_bed(bed, format):
     """
     Reads the bed file and returns the locus information as a dictionary
 
-    Args:
-        bed: the bed file
-        format: the format of the bed file (strchive or pacbio)
-    
-    Returns:
-        the list of loci information
+    :param bed: the bed file
+    :param format: the format of the bed file (strchive or pacbio)
+    :return: the list of loci information
     """
+    
     with open(bed) as fh:
         for line in fh:
             if line.startswith('#'):
