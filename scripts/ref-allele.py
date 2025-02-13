@@ -8,9 +8,9 @@ def split_repeat_sequence(motifs, sequence):
     """
     Splits repeat sequence based on the defined motifs
 
-    :param motifs  : the list of motifs defined for the locus
+    :param motifs: the list of motifs defined for the locus
     :param sequence: sequence of the locus
-    :return the formatted sequence string split based on the motifs
+    :return: the formatted sequence string split based on the motifs
     """
     
     # initialisers
@@ -217,30 +217,6 @@ def main(bed1: str, bed2: str, fasta: str, out: str, storage: str = '.', flank: 
             outfh.write("\n")
 
     ref.close()
-
-# To do
-# Check the coordintes in the STRchive json (or bed?) for each reference genome
-# Also check the TRGT bed file for the coordinates
-
-
-# main('/Users/dashnowh/Downloads/STRchive-disease-loci.v2.2.1.hg38.bed',
-#      '/Users/dashnowh/Downloads/STRchive-disease-loci.v2.2.1.hg38.TRGT.bed',
-#      'https://storage.googleapis.com/genomics-public-data/references/GRCh38_Verily/GRCh38_Verily_v1.genome.fa',
-#      'ref-alleles.hg38.txt')
-
-# main('/Users/dashnowh/Documents/git/STRchive/data/STRchive-disease-loci.hg19.bed',
-#      '/Users/dashnowh/Documents/git/STRchive/data/STRchive-disease-loci.hg19.TRGT.bed',
-#      'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz',
-#      'ref-alleles.hg19.txt')
-
-# main('/Users/dashnowh/Documents/git/STRchive/data/STRchive-disease-loci.T2T-chm13.bed',
-#      '/Users/dashnowh/Documents/git/STRchive/data/STRchive-disease-loci.T2T-chm13.TRGT.bed',
-#      'https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0_maskedY_rCRS.fa.gz',
-#      'ref-alleles.T2T-chm13.txt')
-
-# Next: run this from snakemake instead of here. 
-# Maybe host these genomes somewhere so I don't have to download them?
-# https://zenodo.org/records/14853928/files/chm13v2.0_maskedY_rCRS.fa.gz
      
 if __name__ == "__main__":
     import doctest
