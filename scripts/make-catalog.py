@@ -111,8 +111,8 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     if struc_type == 'motif':
         full_struc = f";STRUC{struc}"
     elif struc_type == 'default':
-        # Add all known motifs
-        for motif_field in ['pathogenic_motif_reference_orientation', 'reference_motif_reference_orientation', 'benign_motif_reference_orientation', 'unknown_motif_reference_orientation']:
+        # Add all motifs with known function
+        for motif_field in ['pathogenic_motif_reference_orientation', 'reference_motif_reference_orientation', 'benign_motif_reference_orientation']:
             motifs.extend(row[motif_field])
         motifs = list(dict.fromkeys(motifs)) # remove duplicates
         full_struc = ';STRUC=<TR>'
