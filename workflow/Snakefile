@@ -49,9 +49,9 @@ if stages == "all" or stages == "new-refs":
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
             expand("{base_dir}plots/path-size.json", base_dir = base_dir),
             # Reference alleles
-            expand("{base_dir}ref-alleles.hg19.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles.hg38.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles.T2T-chm13.txt", base_dir = base_dir)
+            expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
+            expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
+            expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 elif stages == "skip-refs":
     rule all:
         input:
@@ -70,9 +70,9 @@ elif stages == "skip-refs":
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
             expand("{base_dir}plots/path-size.json", base_dir = base_dir),
             # Reference alleles
-            expand("{base_dir}ref-alleles.hg19.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles.hg38.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles.T2T-chm13.txt", base_dir = base_dir)
+            expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
+            expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
+            expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
 
@@ -245,9 +245,9 @@ rule get_ref_alleles:
         bed_T2T = "{base_dir}STRchive-disease-loci.T2T-chm13.bed",
         TRGT_T2T = "{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed"
     output:
-        result_hg19 = "{base_dir}ref-alleles.hg19.txt",
-        result_hg38 = "{base_dir}ref-alleles.hg38.txt",
-        result_T2T = "{base_dir}ref-alleles.T2T-chm13.txt"
+        result_hg19 = "{base_dir}ref-alleles/ref-alleles.hg19.txt",
+        result_hg38 = "{base_dir}ref-alleles/ref-alleles.hg38.txt",
+        result_T2T = "{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt"
     shell:
         """
         python {scripts_dir}ref-allele.py {input.bed_hg19} {input.TRGT_hg19} 'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz' {output.result_hg19} {ref_directory}
