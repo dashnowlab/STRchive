@@ -111,6 +111,26 @@ def trgt_catalog(row, genome = 'hg38'):
 
     return definition
 
+def longtr_catalog(row, genome = 'hg38'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: LongTR format catalog string
+
+    Note, LongTR uses 1-based coordinates (i.e. is non-standard BED format)
+    """
+    start = int(row['start_' + genome]) + 1
+    stop = int(row['stop_' + genome])
+    motifs = row['pathogenic_motif_reference_orientation'] + row['benign_motif_reference_orientation'] + row['reference_motif_reference_orientation']
+    # remove duplicates
+    motifs = list(dict.fromkeys([x.strip() for x in motifs]))
+    motifs_string = ','.join(motifs)
+
+    definition = f"{row['chrom']}\t{start}\t{stop}\t{motifs_string}\t{row['id']}"
+
+    return definition
+
+
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
     :param row: dictionary with STR data for a single locus
@@ -147,7 +167,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format BED format (TRGT or BED)
+    :param format: Variant caller catalog file format BED format (TRGT, LongTR or BED)
     :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 
@@ -176,6 +196,10 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
         with open(output, 'w') as out_file:
             for row in data:
                 out_file.write(trgt_catalog(row, genome) + '\n')
+    elif format.lower() == 'longtr':
+        with open(output, 'w') as out_file:
+            for row in data:
+                out_file.write(longtr_catalog(row, genome) + '\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
         header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
