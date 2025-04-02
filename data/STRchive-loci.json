@@ -172,7 +172,7 @@
   "details": "Allele ranges established in study of 3 families; intermediate alleles likely premutations [@pmid:24763282]. Pathogenic threshold may be higher than 300 as this was the largest allele that could be accurately sized by the assay.",
   "omim": ["601464"],
   "prevalence": null,
-  "prevalence_details": "1/862 (1/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) [@pmid:37205357]. Disease cases observed in South Australia [@pmid:24763282].",
+  "prevalence_details": "1/862 (1/654-1266) population prevalence of methylated AFF3 expansions (mild cognitive disability) [@pmid:39313615]. Disease cases observed in South Australia [@pmid:24763282].",
   "stripy": [],
   "gnomad": [],
   "genereviews": [],
@@ -188,8 +188,8 @@
   "disease_description": "These expansions are associated with intellectual disability and clinical phenotypes such as delayed motor development or delays in speech/language [@pmid:24763282].",
   "locus_tags": [],
   "disease_tags": [],
-  "references": ["pmid:24763282", "malacard:KNS007", "pmid:37205357"],
-  "additional_literature": ["pmid:39313615"]
+  "references": ["pmid:24763282", "malacard:KNS007", "pmid:39313615"],
+  "additional_literature": []
 },
 {
   "chrom": "chrX",
