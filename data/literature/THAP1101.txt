@@ -1,13 +1,18 @@
 
 PMID- 39651830
 OWN - NLM
-STAT- Publisher
-LR  - 20241209
+STAT- MEDLINE
+DCOM- 20250321
+LR  - 20250323
 IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
-DP  - 2024 Dec 9
+VI  - 40
+IP  - 3
+DP  - 2025 Mar
 TI  - A Population-Wide Exploration of the THAP11 CAG Repeat Size and Structure in the 
       100,000 Genomes Project and UK Biobank.
+PG  - 561-566
 LID - 10.1002/mds.30073 [doi]
 AB  - BACKGROUND: A CAG repeat expansion in THAP11 was recently found to be associated 
       with spinocerebellar ataxia in two Chinese families. Expanded repeats ranged from 
@@ -75,6 +80,8 @@ AD  - Clinical Pharmacology and Precision Medicine, William Harvey Research Inst
 AD  - Department of Neurodegenerative Disease, UCL Queen Square Institute of Neurology, 
       London, UK.
 LA  - eng
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - RF1 AG075051/AG/NIA NIH HHS/United States
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 DEP - 20241209
@@ -83,18 +90,33 @@ TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
 SB  - IM
+MH  - Humans
+MH  - United Kingdom
+MH  - Male
+MH  - Female
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Biological Specimen Banks
+MH  - Middle Aged
+MH  - Adult
+MH  - Spinocerebellar Ataxias/genetics
+MH  - Aged
+MH  - UK Biobank
+PMC - PMC11926500
 EDAT- 2024/12/09 17:33
-MHDA- 2024/12/09 17:33
+MHDA- 2025/03/21 11:16
+PMCR- 2025/03/21
 CRDT- 2024/12/09 08:43
 PHST- 2024/10/23 00:00 [revised]
 PHST- 2024/08/13 00:00 [received]
 PHST- 2024/11/14 00:00 [accepted]
-PHST- 2024/12/09 17:33 [medline]
+PHST- 2025/03/21 11:16 [medline]
 PHST- 2024/12/09 17:33 [pubmed]
 PHST- 2024/12/09 08:43 [entrez]
+PHST- 2025/03/21 00:00 [pmc-release]
+AID - MDS30073 [pii]
 AID - 10.1002/mds.30073 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2024 Dec 9. doi: 10.1002/mds.30073.
+PST - ppublish
+SO  - Mov Disord. 2025 Mar;40(3):561-566. doi: 10.1002/mds.30073. Epub 2024 Dec 9.
 
 PMID- 37148549
 OWN - NLM

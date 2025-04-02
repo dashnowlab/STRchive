@@ -1,13 +1,138 @@
 
+PMID- 40166539
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20250401
+DP  - 2025 Mar 19
+TI  - Identification of GGC Repeat Expansions in ZFHX3 Among Chilean Movement Disorder 
+      Patients.
+LID - 2025.03.17.25323863 [pii]
+LID - 10.1101/2025.03.17.25323863 [doi]
+AB  - BACKGROUND: Hereditary ataxias are genetically diverse, yet up to 75% remain 
+      undiagnosed due to technological and financial barriers. A pathogenic ZFHX3 GGC 
+      repeat expansion was recently linked to spinocerebellar ataxia type 4 (SCA4), 
+      characterized by progressive ataxia and sensory neuropathy, with all reported 
+      cases in individuals of Northern European ancestry. METHODS: We performed Oxford 
+      Nanopore Technologies (ONT) genome long-read sequencing (>115 GB per sample) on a 
+      total of 15 individuals from Chile; 14 patients with suspected hereditary 
+      movement disorders and one unrelated family member. Variants were identified 
+      using PEPPER-Margin-DeepVariant 0.8 (SNVs), Sniffles 2.4 (SVs), and Vamos 2.1.3 
+      (STRs). Ancestry was inferred using GenoTools with reference data from the 1000 
+      Genomes Project, Human Genome Diversity Project, and an Ashkenazi Jewish panel. 
+      Haplotype analysis was conducted by phasing SNVs within ZFHX3 , and methylation 
+      profiling was performed with modbamtools. RESULTS: We identified ZFHX3 GGC repeat 
+      expansions (47-55 repeats) in four individuals with progressive ataxia, 
+      polyneuropathy, and vermis atrophy. One case presented parkinsonism-ataxia, 
+      expanding the phenotype. Longer expansions correlated with earlier onset and 
+      greater severity. Hypermethylation was detected on the expanded allele, and 
+      haplotype analysis linked ultra-rare ZFHX3 variants to distant Swedish ancestry. 
+      CONCLUSION: This is the first report of SCA4 outside Northern Europe, confirming 
+      a shared founder haplotype and expansion instability. The presence of 
+      parkinsonism broadens the clinical spectrum. Comprehensive genetic testing across 
+      diverse populations is crucial, and long-read sequencing enhances diagnostic 
+      yield by detecting repeat expansions and SNVs in a single assay.
+FAU - Saffie-Awad, Paula
+AU  - Saffie-Awad P
+AUID- ORCID: 0000-0002-8056-365X
+FAU - Moller, Abraham
+AU  - Moller A
+FAU - Daida, Kensuke
+AU  - Daida K
+AUID- ORCID: 0000-0002-9177-9587
+FAU - Alvarez Jerez, Pilar
+AU  - Alvarez Jerez P
+AUID- ORCID: 0000-0002-5812-1898
+FAU - Chen, Zhongbo
+AU  - Chen Z
+AUID- ORCID: 0000-0001-6668-7202
+FAU - Anderson, Zachary B
+AU  - Anderson ZB
+FAU - Isayan, Mariam
+AU  - Isayan M
+AUID- ORCID: 0009-0002-2387-5347
+FAU - Paquette, Kimberly
+AU  - Paquette K
+AUID- ORCID: 0000-0003-3989-4614
+FAU - Gibson, Sophia B
+AU  - Gibson SB
+AUID- ORCID: 0000-0001-9839-9045
+FAU - Fulcher, Madison
+AU  - Fulcher M
+FAU - Miano-Burkhardt, Abigail
+AU  - Miano-Burkhardt A
+AUID- ORCID: 0000-0002-0447-4698
+FAU - Malik, Laksh
+AU  - Malik L
+AUID- ORCID: 0000-0002-2498-146X
+FAU - Baker, Breeana
+AU  - Baker B
+AUID- ORCID: 0009-0006-0193-6558
+FAU - Jarreau, Paige
+AU  - Jarreau P
+FAU - Houlden, Henry
+AU  - Houlden H
+AUID- ORCID: 0000-0002-2866-7777
+FAU - Ryten, Mina
+AU  - Ryten M
+AUID- ORCID: 0000-0001-9520-6957
+FAU - Gu, Bida
+AU  - Gu B
+AUID- ORCID: 0000-0001-8575-997X
+FAU - Chaisson, Mark Jp
+AU  - Chaisson MJ
+AUID- ORCID: 0000-0001-5395-1457
+FAU - Miller, Danny E
+AU  - Miller DE
+AUID- ORCID: 0000-0001-6096-8601
+FAU - Chana-Cuevas, Pedro
+AU  - Chana-Cuevas P
+AUID- ORCID: 0000-0001-9946-3299
+FAU - Blauwendraat, Cornelis
+AU  - Blauwendraat C
+AUID- ORCID: 0000-0001-9358-8111
+FAU - Singleton, Andrew B
+AU  - Singleton AB
+AUID- ORCID: 0000-0001-5606-700X
+FAU - Billingsley, Kimberley J
+AU  - Billingsley KJ
+AUID- ORCID: 0000-0002-8003-4029
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20250319
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC11957069
+EDAT- 2025/04/01 06:26
+MHDA- 2025/04/01 06:27
+PMCR- 2025/03/31
+CRDT- 2025/04/01 05:03
+PHST- 2025/04/01 06:27 [medline]
+PHST- 2025/04/01 06:26 [pubmed]
+PHST- 2025/04/01 05:03 [entrez]
+PHST- 2025/03/31 00:00 [pmc-release]
+AID - 2025.03.17.25323863 [pii]
+AID - 10.1101/2025.03.17.25323863 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2025 Mar 19:2025.03.17.25323863. doi: 
+      10.1101/2025.03.17.25323863.
+
 PMID- 39635987
 OWN - NLM
-STAT- Publisher
-LR  - 20241205
+STAT- MEDLINE
+DCOM- 20250218
+LR  - 20250220
 IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
-DP  - 2024 Dec 5
+VI  - 40
+IP  - 2
+DP  - 2025 Feb
 TI  - The ZFHX3 GGC Repeat Expansion Underlying Spinocerebellar Ataxia Type 4 has a 
       Common Ancestral Founder.
+PG  - 363-369
 LID - 10.1002/mds.30077 [doi]
 AB  - BACKGROUND: The identification of a heterozygous exonic GGC repeat expansion in 
       ZFHX3 underlying spinocerebellar ataxia type 4 (SCA4) has solved a 25-year 
@@ -173,16 +298,35 @@ AUID- ORCID: 0000-0002-2866-7777
 AD  - Department of Neuromuscular Disease, Queen Square Institute of Neurology, UCL, 
       London, UK.
 LA  - eng
-GR  - NH/NIH HHS/United States
+GR  - ZIA AG000542/ImNIH/Intramural NIH HHS/United States
 GR  - MRC_/Medical Research Council/United Kingdom
 GR  - Michael J. Fox Foundation for Parkinson's Research/
+GR  - NH/NIH HHS/United States
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - ZIA AG000538/ImNIH/Intramural NIH HHS/United States
 PT  - Journal Article
 DEP - 20241205
 PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
+RN  - 0 (Homeodomain Proteins)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Female
+MH  - *Founder Effect
+MH  - Sweden
+MH  - Homeodomain Proteins/genetics
+MH  - Pedigree
+MH  - Machado-Joseph Disease/genetics
+MH  - Haplotypes
+MH  - Spinocerebellar Ataxias/genetics
+MH  - Middle Aged
+MH  - Utah
+MH  - Adult
+PMC - PMC11832790
 OTO - NOTNLM
 OT  - ataxia
 OT  - haplotype
@@ -190,17 +334,20 @@ OT  - long-read sequencing
 OT  - repeat expansion disorder
 OT  - spinocerebellar ataxia type 4
 EDAT- 2024/12/05 17:31
-MHDA- 2024/12/05 17:31
+MHDA- 2025/02/18 06:22
+PMCR- 2025/02/18
 CRDT- 2024/12/05 08:03
 PHST- 2024/10/14 00:00 [revised]
 PHST- 2024/08/07 00:00 [received]
 PHST- 2024/11/18 00:00 [accepted]
-PHST- 2024/12/05 17:31 [medline]
+PHST- 2025/02/18 06:22 [medline]
 PHST- 2024/12/05 17:31 [pubmed]
 PHST- 2024/12/05 08:03 [entrez]
+PHST- 2025/02/18 00:00 [pmc-release]
+AID - MDS30077 [pii]
 AID - 10.1002/mds.30077 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2024 Dec 5. doi: 10.1002/mds.30077.
+PST - ppublish
+SO  - Mov Disord. 2025 Feb;40(2):363-369. doi: 10.1002/mds.30077. Epub 2024 Dec 5.
 
 PMID- 39095619
 OWN - NLM

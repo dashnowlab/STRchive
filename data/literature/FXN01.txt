@@ -1,9 +1,113 @@
 
+PMID- 40141365
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250327
+LR  - 20250329
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 26
+IP  - 6
+DP  - 2025 Mar 18
+TI  - ONT in Clinical Diagnostics of Repeat Expansion Disorders: Detection and 
+      Reporting Challenges.
+LID - 10.3390/ijms26062725 [doi]
+LID - 2725
+AB  - While whole-genome sequencing (WGS) using short-read technology has become a 
+      standard diagnostic test, this technology has limitations in analyzing certain 
+      genomic regions, particularly short tandem repeats (STRs). These repetitive 
+      sequences are associated with over 50 diseases, primarily affecting neurological 
+      function, including Huntington disease, frontotemporal dementia, and Friedreich's 
+      ataxia. We analyzed 2689 cases with movement disorders and dementia-related 
+      phenotypes processed at Variantyx in 2023-2024 using a two-tiered approach, with 
+      an initial short-read WGS followed by ONT long-read sequencing (when necessary) 
+      for variant characterization. Of the 2038 cases (75.8%) with clinically relevant 
+      genetic variants, 327 (16.0%) required additional long-read analysis. STR 
+      variants were reported in 338 cases (16.6% of positive cases), with approximately 
+      half requiring long-read sequencing for definitive classification. The combined 
+      approach enabled the precise determination of repeat length, composition, somatic 
+      mosaicism, and methylation status. Notable advantages included the detection of 
+      complex repeat structures in several genes such as RFC1, FGF14, and FXN, where 
+      long-read sequencing allowed to determine somatic repeat unit variations and 
+      accurate allele phasing. Further studies are needed to establish 
+      technology-specific guidelines for the standardized interpretation of long-read 
+      sequencing data for the clinical diagnostics of repeat expansion disorders.
+FAU - Kaplun, Ludmila
+AU  - Kaplun L
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Krautz-Peterson, Greice
+AU  - Krautz-Peterson G
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Neerman, Nir
+AU  - Neerman N
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Schindler, Yocheved
+AU  - Schindler Y
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Dehan, Elinor
+AU  - Dehan E
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Huettner, Claudia S
+AU  - Huettner CS
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Baumgartner, Brett K
+AU  - Baumgartner BK
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Stanley, Christine
+AU  - Stanley C
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+FAU - Kaplun, Alexander
+AU  - Kaplun A
+AD  - Variantyx Inc., Framingham, MA 01701, USA.
+LA  - eng
+PT  - Journal Article
+DEP - 20250318
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - Whole Genome Sequencing/methods
+MH  - DNA Repeat Expansion
+MH  - High-Throughput Nucleotide Sequencing/methods
+PMC - PMC11942491
+OTO - NOTNLM
+OT  - Nanopore
+OT  - ONT
+OT  - WGS
+OT  - ataxia
+OT  - dementia
+OT  - genetic testing
+OT  - long reads
+OT  - repeat expansion
+COIS- Authors Ludmila Kaplun, Greice Krautz-Peterson, Nir Neerman, Yocheved Schindler, 
+      Elinor Dehan, Claudia S. Huettner, Brett K. Baumgartner, Christine Stanley, and 
+      Alexander Kaplun were employed by the company Variantyx, Framingham, MA 01701, 
+      USA.
+EDAT- 2025/03/27 06:29
+MHDA- 2025/03/27 06:30
+PMCR- 2025/03/18
+CRDT- 2025/03/27 01:06
+PHST- 2025/02/05 00:00 [received]
+PHST- 2025/03/15 00:00 [revised]
+PHST- 2025/03/17 00:00 [accepted]
+PHST- 2025/03/27 06:30 [medline]
+PHST- 2025/03/27 06:29 [pubmed]
+PHST- 2025/03/27 01:06 [entrez]
+PHST- 2025/03/18 00:00 [pmc-release]
+AID - ijms26062725 [pii]
+AID - ijms-26-02725 [pii]
+AID - 10.3390/ijms26062725 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2025 Mar 18;26(6):2725. doi: 10.3390/ijms26062725.
+
 PMID- 39812846
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250115
-LR  - 20250115
+LR  - 20250215
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 272
@@ -233,71 +337,6 @@ AID - 10.1212/NXG.0000000000200236 [doi]
 PST - epublish
 SO  - Neurol Genet. 2025 Jan 13;11(1):e200236. doi: 10.1212/NXG.0000000000200236. 
       eCollection 2025 Feb.
-
-PMID- 39810561
-OWN - NLM
-STAT- Publisher
-LR  - 20250115
-IS  - 1758-2032 (Electronic)
-IS  - 1758-2024 (Linking)
-DP  - 2025 Jan 15
-TI  - Friedreich ataxia: what can we learn from non-GAA repeat mutations?
-PG  - 1-10
-LID - 10.1080/17582024.2025.2452147 [doi]
-AB  - Friedreich ataxia (FRDA) is a slowly progressive neurological disease resulting 
-      from decreased levels of the protein frataxin, a small mitochondrial protein that 
-      facilitates the synthesis of iron-sulfur clusters in the mitochondrion. It is 
-      caused by GAA (guanine-adenine-adenine) repeat expansions in the FXN gene in 96% 
-      of patients, with 4% of patients carrying other mutations (missense, nonsense, 
-      deletion) in the FXN gene. Compound heterozygote patients with one expanded GAA 
-      allele and a non-GAA repeat mutation can have subtle differences in phenotype 
-      from typical FRDA, including, in patients with selected missense mutations, both 
-      more severe features and less severe features in the same patient. In this 
-      review, we propose explanations for such phenotypes based on the potential for 
-      activities of frataxin other than enhancement of iron-sulfur cluster synthesis, 
-      as well as crucial future experiments for fully understanding the role of 
-      frataxin in cells.
-FAU - Lynch, David R
-AU  - Lynch DR
-AUID- ORCID: 0000-0001-7168-214X
-AD  - Friedreich Ataxia Program, Division of Neurology, The Children's Hospital of 
-      Philadelphia, Philadelphia, PA, USA.
-AD  - Perelman School of Medicine of the University of Pennsylvania, Philadelphia, PA, 
-      USA.
-FAU - Shen, M
-AU  - Shen M
-AD  - Perelman School of Medicine of the University of Pennsylvania, Philadelphia, PA, 
-      USA.
-FAU - Wilson, Robert B
-AU  - Wilson RB
-AD  - Perelman School of Medicine of the University of Pennsylvania, Philadelphia, PA, 
-      USA.
-AD  - Department of Pathology, The Children's Hospital of Philadelphia, Philadelphia, 
-      PA, USA.
-LA  - eng
-PT  - Journal Article
-DEP - 20250115
-PL  - England
-TA  - Neurodegener Dis Manag
-JT  - Neurodegenerative disease management
-JID - 101517977
-SB  - IM
-OTO - NOTNLM
-OT  - GRP75
-OT  - Triplet repeat
-OT  - frataxin
-OT  - iron sulfur cluster
-OT  - mitochondrion
-OT  - point mutation
-EDAT- 2025/01/15 06:21
-MHDA- 2025/01/15 06:21
-CRDT- 2025/01/15 03:12
-PHST- 2025/01/15 06:21 [medline]
-PHST- 2025/01/15 06:21 [pubmed]
-PHST- 2025/01/15 03:12 [entrez]
-AID - 10.1080/17582024.2025.2452147 [doi]
-PST - aheadofprint
-SO  - Neurodegener Dis Manag. 2025 Jan 15:1-10. doi: 10.1080/17582024.2025.2452147.
 
 PMID- 39574782
 OWN - NLM
@@ -1011,7 +1050,7 @@ PMID- 39324476
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250103
-LR  - 20250105
+LR  - 20250325
 IS  - 1552-4833 (Electronic)
 IS  - 1552-4825 (Print)
 IS  - 1552-4825 (Linking)
@@ -1100,6 +1139,7 @@ AD  - Rosamund Stone Zander Translational Neuroscience Center, Boston Children's
 AD  - Cerebral Palsy and Spasticity Center, Boston Children's Hospital, Boston, 
       Massachusetts, USA.
 LA  - eng
+GR  - P50 HD105351/HD/NICHD NIH HHS/United States
 GR  - K23 NS119666/NS/NINDS NIH HHS/United States
 GR  - K23NS119666/NS/NINDS NIH HHS/United States
 GR  - Boston Children's Hospital Translational Research Program/
@@ -4476,7 +4516,7 @@ PMID- 35301072
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220504
-LR  - 20230704
+LR  - 20250226
 IS  - 1872-8227 (Electronic)
 IS  - 0168-8227 (Print)
 IS  - 0168-8227 (Linking)
@@ -4551,9 +4591,10 @@ AD  - Division of Endocrinology and Diabetes, Children's Hospital of Philadelphi
       Medicine at the University of Pennsylvania, Philadelphia, PA, USA.
 LA  - eng
 GR  - F32 DK128970/DK/NIDDK NIH HHS/United States
-GR  - K08 DK131253/DK/NIDDK NIH HHS/United States
 GR  - K12 DK094723/DK/NIDDK NIH HHS/United States
 GR  - T32 DK063688/DK/NIDDK NIH HHS/United States
+GR  - R01 HL149722/HL/NHLBI NIH HHS/United States
+GR  - K08 DK131253/DK/NIDDK NIH HHS/United States
 PT  - Journal Article
 PT  - Multicenter Study
 DEP - 20220314
@@ -5299,7 +5340,7 @@ SO  - Genetics. 2021 Oct 2;219(2):iyab125. doi: 10.1093/genetics/iyab125.
 PMID- 34786480
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20220428
+LR  - 20250226
 IS  - 2376-7839 (Print)
 IS  - 2376-7839 (Electronic)
 IS  - 2376-7839 (Linking)
@@ -5745,6 +5786,7 @@ AD  - Division of Neurology (M.P., A.M.C., J.F., D.L.), Children's Hospital of
       Medicine, Gainesville, Florida; Department of Neurology (T.Z.), University of 
       South Florida, Tampa, Florida.
 LA  - eng
+GR  - R01 CA254955/CA/NCI NIH HHS/United States
 PT  - Journal Article
 DEP - 20211112
 PL  - United States
@@ -10539,7 +10581,7 @@ PMID- 30635474
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20191226
-LR  - 20231213
+LR  - 20250306
 IS  - 1521-0103 (Electronic)
 IS  - 0022-3565 (Linking)
 VI  - 369
@@ -10687,7 +10729,7 @@ PHST- 2019/01/04 00:00 [accepted]
 PHST- 2019/01/13 06:00 [pubmed]
 PHST- 2019/12/27 06:00 [medline]
 PHST- 2019/01/13 06:00 [entrez]
-AID - jpet.118.252759 [pii]
+AID - S0022-3565(24)25962-0 [pii]
 AID - 10.1124/jpet.118.252759 [doi]
 PST - ppublish
 SO  - J Pharmacol Exp Ther. 2019 Apr;369(1):47-54. doi: 10.1124/jpet.118.252759. Epub 

@@ -1,15 +1,18 @@
 
 PMID- 39874107
 OWN - NLM
-STAT- Publisher
-LR  - 20250130
+STAT- MEDLINE
+DCOM- 20250310
+LR  - 20250329
 IS  - 2379-3708 (Electronic)
 IS  - 2379-3708 (Linking)
+VI  - 10
+IP  - 5
 DP  - 2025 Jan 28
 TI  - Fibroblast growth factor-inducible 14 regulates satellite cell self-renewal and 
       expansion during skeletal muscle repair.
-LID - e187825 [pii]
 LID - 10.1172/jci.insight.187825 [doi]
+LID - e187825
 AB  - Skeletal muscle regeneration in adults is predominantly driven by satellite 
       cells. Loss of satellite cell pool and function leads to skeletal muscle wasting 
       in many conditions and disease states. Here, we demonstrate that the levels of 
@@ -23,23 +26,26 @@ AB  - Skeletal muscle regeneration in adults is predominantly driven by satellit
       cells. Silencing of STAT3 improved proliferation and inhibited premature 
       differentiation of Fn14-deficient satellite cells. Furthermore, conditional 
       ablation of Fn14 in satellite cells exacerbated myopathy in the mdx mouse model 
-      of Duchenne muscular dystrophy (DMD) whereas its overexpression improved the 
+      of Duchenne muscular dystrophy (DMD), whereas its overexpression improved the 
       engraftment of exogenous muscle progenitor cells into the dystrophic muscle of 
       mdx mice. Altogether, our study highlights the crucial role of Fn14 in the 
       regulation of satellite cell fate and function and suggests that Fn14 can be a 
       potential molecular target to improve muscle regeneration in muscular disorders.
 FAU - Tomaz da Silva, Meiricris
 AU  - Tomaz da Silva M
-AD  - Institute of Muscle Biology and Cachexia, University of Houston College of 
-      Pharmacy, Houston, United States of America.
+AD  - Institute of Muscle Biology and Cachexia, and.
+AD  - Department of Pharmacological and Pharmaceutical Sciences, University of Houston 
+      College of Pharmacy, Houston, Texas, USA.
 FAU - Joshi, Aniket S
 AU  - Joshi AS
-AD  - Institute of Muscle Biology and Cachexia, University of Houston College of 
-      Pharmacy, Houston, United States of America.
+AD  - Institute of Muscle Biology and Cachexia, and.
+AD  - Department of Pharmacological and Pharmaceutical Sciences, University of Houston 
+      College of Pharmacy, Houston, Texas, USA.
 FAU - Kumar, Ashok
 AU  - Kumar A
-AD  - Institute of Muscle Biology and Cachexia, University of Houston College of 
-      Pharmacy, Houston, United States of America.
+AD  - Institute of Muscle Biology and Cachexia, and.
+AD  - Department of Pharmacological and Pharmaceutical Sciences, University of Houston 
+      College of Pharmacy, Houston, Texas, USA.
 LA  - eng
 GR  - R01 AR081487/AR/NIAMS NIH HHS/United States
 PT  - Journal Article
@@ -48,7 +54,28 @@ PL  - United States
 TA  - JCI Insight
 JT  - JCI insight
 JID - 101676073
+RN  - 0 (STAT3 Transcription Factor)
+RN  - 0 (PAX7 Transcription Factor)
+RN  - 0 (Stat3 protein, mouse)
 SB  - IM
+UOF - bioRxiv. 2025 Jan 02:2024.10.06.616900. doi: 10.1101/2024.10.06.616900. PMID: 
+      39803454
+MH  - Animals
+MH  - *Satellite Cells, Skeletal Muscle/metabolism
+MH  - Mice
+MH  - *Muscle, Skeletal/metabolism/pathology
+MH  - *Regeneration
+MH  - *Mice, Inbred mdx
+MH  - *Muscular Dystrophy, Duchenne/metabolism/pathology/genetics
+MH  - *Cell Differentiation
+MH  - Cell Proliferation
+MH  - Cell Self Renewal
+MH  - STAT3 Transcription Factor/metabolism
+MH  - Signal Transduction
+MH  - Male
+MH  - Disease Models, Animal
+MH  - PAX7 Transcription Factor/metabolism/genetics
+PMC - PMC11949035
 OTO - NOTNLM
 OT  - Cell biology
 OT  - Muscle biology
@@ -56,21 +83,27 @@ OT  - Neuromuscular disease
 OT  - Signal transduction
 OT  - Skeletal muscle
 OT  - Stem cells
+COIS- Conflict of interest: The authors have declared that no conflict of interest 
+      exists.
 EDAT- 2025/01/28 18:21
-MHDA- 2025/01/28 18:21
+MHDA- 2025/03/10 12:32
+PMCR- 2025/01/28
 CRDT- 2025/01/28 12:04
-PHST- 2025/01/28 18:21 [medline]
+PHST- 2024/10/08 00:00 [received]
+PHST- 2025/01/22 00:00 [accepted]
+PHST- 2025/03/10 12:32 [medline]
 PHST- 2025/01/28 18:21 [pubmed]
 PHST- 2025/01/28 12:04 [entrez]
+PHST- 2025/01/28 00:00 [pmc-release]
 AID - 187825 [pii]
 AID - 10.1172/jci.insight.187825 [doi]
-PST - aheadofprint
-SO  - JCI Insight. 2025 Jan 28:e187825. doi: 10.1172/jci.insight.187825.
+PST - epublish
+SO  - JCI Insight. 2025 Jan 28;10(5):e187825. doi: 10.1172/jci.insight.187825.
 
 PMID- 39803454
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250117
+LR  - 20250310
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Jan 2
@@ -124,6 +157,8 @@ PL  - United States
 TA  - bioRxiv
 JT  - bioRxiv : the preprint server for biology
 JID - 101680187
+UIN - JCI Insight. 2025 Jan 28;10(5):e187825. doi: 10.1172/jci.insight.187825. PMID: 
+      39874107
 PMC - PMC11722277
 OTO - NOTNLM
 OT  - Muscle regeneration
@@ -359,8 +394,9 @@ PMID- 38290145
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240201
-LR  - 20240201
+LR  - 20250222
 IS  - 1531-5487 (Electronic)
+IS  - 1044-3983 (Print)
 IS  - 1044-3983 (Linking)
 VI  - 35
 IP  - 2
@@ -418,6 +454,8 @@ AU  - Basu S
 AD  - Center for Primary Care, Harvard Medical School, Boston, MA.
 AD  - Research and Development, Waymark, San Francisco, CA.
 LA  - eng
+GR  - K01 MD014163/MD/NIMHD NIH HHS/United States
+GR  - P2C HD041022/HD/NICHD NIH HHS/United States
 PT  - Journal Article
 DEP - 20230130
 PL  - United States
@@ -439,13 +477,17 @@ MH  - Black or African American
 MH  - *Health Status Disparities
 MH  - Racial Groups
 MH  - Sex Factors
+PMC - PMC11839283
+MID - NIHMS2055570
 COIS- The authors report no conflicts of interest.
 EDAT- 2024/01/30 18:42
 MHDA- 2024/02/01 06:42
+PMCR- 2025/02/19
 CRDT- 2024/01/30 17:25
 PHST- 2024/02/01 06:42 [medline]
 PHST- 2024/01/30 18:42 [pubmed]
 PHST- 2024/01/30 17:25 [entrez]
+PHST- 2025/02/19 00:00 [pmc-release]
 AID - 00001648-202403000-00016 [pii]
 AID - 10.1097/EDE.0000000000001691 [doi]
 PST - ppublish
