@@ -45,7 +45,7 @@ jobs:
 
       - name: Check loci and update bed files (short)
         if: ${{ github.event_name == 'pull_request'}}
-        run: snakemake --config stages="skip-refs"
+        run: snakemake --cores all --config stages="skip-refs"
 
       # Enable this step to open an SSH session for debugging
       # - name: SSH debug
@@ -57,7 +57,7 @@ jobs:
           conda init
           source /home/runner/.bashrc
           conda activate strchive
-          snakemake --config stages="new-refs"
+          snakemake --cores all --config stages="new-refs"
 
       - name: Update all literature (long)
         if: ${{ github.event_name == 'schedule' }}
@@ -65,7 +65,7 @@ jobs:
           conda init
           source /home/runner/.bashrc
           conda activate strchive
-          snakemake
+          snakemake --cores all
 
       - name: Open pull request with updated files
         if: ${{ !(github.event_name == 'pull_request') }}
