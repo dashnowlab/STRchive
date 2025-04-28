@@ -1,8 +1,6 @@
 # STRchive
 
-("ess-tee-archive")
-
-Short Tandem Repeat disease loci resource
+Short Tandem Repeats (STRs) are a type of genetic variation that are associated with many rare diseases. Information about pathogenic STRs is often out-of-date and scattered across different databases, making it difficult to find and interpret STR variants. STRchive ("ess tee archive") aims to solve this problem by providing a central community resource.
 
 [⭐️ View the data at strchive.org ⭐️](http://strchive.org/)
 
