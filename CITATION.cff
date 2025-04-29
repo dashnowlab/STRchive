@@ -7,3 +7,34 @@ authors:
     given-names: Harriet
     orcid: https://orcid.org/0000-0001-8433-6270
 cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Hiatt
+      given-names: Laurel
+    - family-names: Weisburd
+      given-names: Ben
+    - family-names: Dolzhenko
+      given-names: Egor
+    - family-names: Rubinetti
+      given-names: Vincent
+    - family-names: Avvaru
+      given-names: Akshay K.
+    - family-names: VanNoy
+      given-names: Grace E.
+    - family-names: Kurtas
+      given-names: Nehir Edibe
+    - family-names: Rehm
+      given-names: Heidi L.
+    - family-names: Quinlan
+      given-names: Aaron R.
+    - family-names: Dashnow
+      given-names: Harriet
+  doi: 10.1186/s13073-025-01454-4
+  journal: "Genome Medicine"
+  month: 3
+  title: "STRchive: a dynamic resource detailing population-level and locus-specific insights at tandem repeat disease loci"
+  issue: 1
+  volume: 17
+  year: 2025
