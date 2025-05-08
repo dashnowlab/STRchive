@@ -1,13 +1,154 @@
 
-PMID- 39848530
+PMID- 40244446
 OWN - NLM
 STAT- Publisher
-LR  - 20250315
+LR  - 20250417
+IS  - 1437-7799 (Electronic)
+IS  - 1342-1751 (Linking)
+DP  - 2025 Apr 17
+TI  - Clinical use of the VNtyper-Kestrel pipeline for MUC1 variant detection in 
+      autosomal-dominant tubulointerstitial kidney disease.
+LID - 10.1007/s10157-025-02675-y [doi]
+AB  - BACKGROUND: Autosomal-dominant tubulointerstitial kidney disease caused by MUC1 
+      (ADTKD-MUC1) is a rare disorder characterized by progressive kidney dysfunction. 
+      Pathogenic variants in MUC1 are difficult to detect owing to the variable number 
+      tandem repeat region. To address this issue, VNtyper-Kestrel, a bioinformatics 
+      pipeline for short-read sequencing data, was recently developed. In this study, 
+      the performance of VNtyper-Kestrel for detecting MUC1 variants in clinical 
+      settings was evaluated. METHODS: We used VNtyper-Kestrel to retrospectively 
+      analyze short-read sequencing data for 209 individuals with suspected ADTKD who 
+      were previously evaluated through long-read sequencing. Data from a panel 
+      including ~ 180 genes and an ADTKD-specific panel were used. In addition, the 
+      pipeline was applied to 976 patients with suspected hereditary kidney diseases 
+      other than ADTKD and positive cases were validated using long-read sequencing. 
+      Accuracy was assessed by comparisons with the results of long-read sequencing. 
+      RESULTS: Using VNtyper-Kestrel, we identified MUC1 variants in 16 of 19 confirmed 
+      cases of ADTKD-MUC1. Three initially negative cases were reanalyzed using the 
+      ADTKD-specific panel, yielding positive detection results with high confidence. 
+      We obtained two low-confidence positive results from 190 cases of suspected ADTKD 
+      and 10 low-confidence positive results among 976 non-ADTKD cases; however, all 
+      were classified as false positives upon long-read sequencing validation. 
+      CONCLUSIONS: VNtyper-Kestrel demonstrated high sensitivity in identifying MUC1 
+      variants when sequencing coverage was adequate, supporting its potential as a 
+      rapid and cost-effective screening tool. However, confirmatory long-read 
+      sequencing is needed in uncertain cases. Optimizing coverage and refining patient 
+      selection criteria could improve the clinical utility of this approach.
+CI  - (c) 2025. The Author(s).
+FAU - Nagano, China
+AU  - Nagano C
+AUID- ORCID: 0000-0003-4946-1345
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan. china@med.kobe-u.ac.jp.
+FAU - Morisada, Naoya
+AU  - Morisada N
+AD  - Department of Clinical Genetics, Hyogo Prefectural Kobe Children's Hospital, 
+      1-6-7 Minatojima-Minamimachi, Chuo-Ku, Kobe, Hyogo, 650-0047, Japan.
+FAU - Inoki, Yuta
+AU  - Inoki Y
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Tanaka, Yu
+AU  - Tanaka Y
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Ichikawa, Yuta
+AU  - Ichikawa Y
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Ueda, Chika
+AU  - Ueda C
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Kitakado, Hideaki
+AU  - Kitakado H
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Aoto, Yuya
+AU  - Aoto Y
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Sakakibara, Nana
+AU  - Sakakibara N
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Horinouchi, Tomoko
+AU  - Horinouchi T
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Yamamura, Tomohiko
+AU  - Yamamura T
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Ishimori, Shingo
+AU  - Ishimori S
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+FAU - Nozu, Kandai
+AU  - Nozu K
+AD  - Department of Pediatrics, Kobe University Graduate School of Medicine, 7-5-2 
+      Kusunoki-Cho, Chuo-Ku, Kobe, Hyogo, 650-0017, Japan.
+LA  - eng
+GR  - 23K07698/Grants-in-Aid for Scientific Research/
+GR  - 23FC1047/Health, Labour and Welfare Sciences Research Grants/
+GR  - H29-nanchi-ippan-039/Health Labor Sciences Research Grant/
+GR  - 23FC1047/Health Labor Sciences Research Grant/
+GR  - JP15K09261/Japan Society for the Promotion of Science/
+GR  - 18K08243/Japan Society for the Promotion of Science/
+GR  - 22K08351/Japan Society for the Promotion of Science/
+PT  - Journal Article
+DEP - 20250417
+PL  - Japan
+TA  - Clin Exp Nephrol
+JT  - Clinical and experimental nephrology
+JID - 9709923
+SB  - IM
+OTO - NOTNLM
+OT  - ADTKD
+OT  - MUC1
+OT  - VNtyper
+OT  - Variable number tandem repeat
+COIS- Declarations. Conflict of interest: Kandai Nozu is a member of advisory groups 
+      for Kyowa Kirin Co. Ltd., Toa Eiyo Ltd., Zenyaku Kogyo Co. Ltd., and Taisho 
+      Pharmaceutical Co. Ltd. Kandai Nozu received lecture fees from Ono Pharma, 
+      Astellas Pharma, Novo Nordisk Pharma, Alexion Pharma, Sumitomo Pharma, Sanofi, 
+      Otsuka Pharma, Daiichi Sankyo, and Miyarisan. Kandai Nozu received grants from 
+      Zenyaku Kogyo and Torii Co. Ltd. Kandai Nozu received a patent for an exon 
+      skipping therapy for Alport syndrome. Tomoko Horinouchi received research funding 
+      from Otsuka Pharmaceutical Co., Ltd., Sysmex Corporation, and Zenyaku Kogyo Co., 
+      Ltd. All the other authors have nothing to disclose. Ethical approval: All the 
+      procedures involving human participants were performed in accordance with the 
+      ethical standards of the Institutional Review Board of Kobe University Graduate 
+      School of Medicine (IRB approval number 301) and with the 1964 Helsinki 
+      Declaration and its later amendments or comparable ethical standards. Informed 
+      consent was obtained from all individual participants included in the study. 
+      Informed consent: Informed consent was obtained from all individual participants 
+      included in the study.
+EDAT- 2025/04/17 12:26
+MHDA- 2025/04/17 12:26
+CRDT- 2025/04/17 11:16
+PHST- 2025/03/04 00:00 [received]
+PHST- 2025/04/03 00:00 [accepted]
+PHST- 2025/04/17 12:26 [medline]
+PHST- 2025/04/17 12:26 [pubmed]
+PHST- 2025/04/17 11:16 [entrez]
+AID - 10.1007/s10157-025-02675-y [pii]
+AID - 10.1007/s10157-025-02675-y [doi]
+PST - aheadofprint
+SO  - Clin Exp Nephrol. 2025 Apr 17. doi: 10.1007/s10157-025-02675-y.
+
+PMID- 39848530
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250424
+LR  - 20250430
 IS  - 1523-6838 (Electronic)
 IS  - 0272-6386 (Linking)
-DP  - 2025 Jan 22
+VI  - 85
+IP  - 5
+DP  - 2025 May
 TI  - Phenotypic Heterogeneity of ADTKD-MUC1 Diagnosed Using VNtyper, a Novel Genetic 
       Technique.
+PG  - 603-609.e1
 LID - S0272-6386(25)00038-1 [pii]
 LID - 10.1053/j.ajkd.2024.11.010 [doi]
 AB  - RATIONALE & OBJECTIVE: Molecular diagnosis of autosomal dominant 
@@ -124,13 +265,26 @@ AD  - Hereditary Kidney Diseases Laboratory, Inserm UMR 1163, Imagine Institute,
       Paris, France. Electronic address: guillaume.dorval@inserm.fr.
 LA  - eng
 PT  - Journal Article
+PT  - Observational Study
 DEP - 20250122
 PL  - United States
 TA  - Am J Kidney Dis
 JT  - American journal of kidney diseases : the official journal of the National Kidney 
       Foundation
 JID - 8110075
+RN  - 0 (Mucin-1)
+RN  - 0 (MUC1 protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Mucin-1/genetics
+MH  - Cross-Sectional Studies
+MH  - Male
+MH  - Female
+MH  - Phenotype
+MH  - Middle Aged
+MH  - Adult
+MH  - *Genetic Testing/methods
+MH  - *Nephritis, Hereditary/genetics/diagnosis
 OTO - NOTNLM
 OT  - ADTKD
 OT  - MUC1 gene
@@ -140,19 +294,19 @@ OT  - genetic testing
 OT  - genetics
 OT  - hereditary kidney disease
 EDAT- 2025/01/24 00:26
-MHDA- 2025/01/24 00:26
+MHDA- 2025/04/24 06:27
 CRDT- 2025/01/23 19:17
 PHST- 2024/07/16 00:00 [received]
 PHST- 2024/11/05 00:00 [revised]
 PHST- 2024/11/14 00:00 [accepted]
+PHST- 2025/04/24 06:27 [medline]
 PHST- 2025/01/24 00:26 [pubmed]
-PHST- 2025/01/24 00:26 [medline]
 PHST- 2025/01/23 19:17 [entrez]
 AID - S0272-6386(25)00038-1 [pii]
 AID - 10.1053/j.ajkd.2024.11.010 [doi]
-PST - aheadofprint
-SO  - Am J Kidney Dis. 2025 Jan 22:S0272-6386(25)00038-1. doi: 
-      10.1053/j.ajkd.2024.11.010.
+PST - ppublish
+SO  - Am J Kidney Dis. 2025 May;85(5):603-609.e1. doi: 10.1053/j.ajkd.2024.11.010. Epub 
+      2025 Jan 22.
 
 PMID- 39781475
 OWN - NLM
@@ -586,8 +740,8 @@ SO  - iScience. 2024 Aug 31;27(9):110866. doi: 10.1016/j.isci.2024.110866. eColl
 PMID- 38605207
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250322
-LR  - 20250322
+DCOM- 20250422
+LR  - 20250422
 IS  - 1573-4927 (Electronic)
 IS  - 0006-2928 (Linking)
 VI  - 63
@@ -662,10 +816,9 @@ MH  - Female
 MH  - Middle Aged
 MH  - Case-Control Studies
 MH  - *Galectin 4/genetics
-MH  - *Genetic Predisposition to Disease
+MH  - Genetic Predisposition to Disease
 MH  - Aged
 MH  - Haplotypes
-MH  - Linkage Disequilibrium
 MH  - Genotype
 OTO - NOTNLM
 OT  - Esophageal squamous cell carcinoma
@@ -11886,7 +12039,7 @@ GR  - R01-CA59992/CA/NCI NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 PT  - Research Support, U.S. Gov't, P.H.S.
-PL  - United States
+PL  - England
 TA  - J Immunol
 JT  - Journal of immunology (Baltimore, Md. : 1950)
 JID - 2985117R

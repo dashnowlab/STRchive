@@ -1,13 +1,17 @@
 
 PMID- 40007153
 OWN - NLM
-STAT- Publisher
-LR  - 20250226
+STAT- MEDLINE
+DCOM- 20250429
+LR  - 20250501
 IS  - 2328-9503 (Electronic)
 IS  - 2328-9503 (Linking)
-DP  - 2025 Feb 25
+VI  - 12
+IP  - 4
+DP  - 2025 Apr
 TI  - Targeted Long-Read Sequencing as a Single Assay Improves the Diagnosis of 
       Spastic-Ataxia Disorders.
+PG  - 832-841
 LID - 10.1002/acn3.70008 [doi]
 AB  - OBJECTIVE: The hereditary spastic-ataxia spectrum disorders are a group of 
       disabling neurological diseases. The traditional genetic testing pathway is 
@@ -179,23 +183,43 @@ PL  - United States
 TA  - Ann Clin Transl Neurol
 JT  - Annals of clinical and translational neurology
 JID - 101623278
+RN  - Spastic Ataxia
 SB  - IM
+MH  - Humans
+MH  - *Spinocerebellar Ataxias/genetics/diagnosis
+MH  - *Muscle Spasticity/genetics/diagnosis
+MH  - *Genetic Testing/methods
+MH  - Male
+MH  - Female
+MH  - Adult
+MH  - *Optic Atrophy/genetics/diagnosis
+MH  - Middle Aged
+MH  - Adolescent
+MH  - Young Adult
+MH  - Child
+MH  - Intellectual Disability
+PMC - PMC12040508
 OTO - NOTNLM
 OT  - hereditary cerebellar ataxia
 OT  - hereditary spastic paraplegia
 OT  - nanopore sequencing
 OT  - spinocerebellar ataxia
+COIS- The authors declare no conflicts of interest.
 EDAT- 2025/02/26 06:29
-MHDA- 2025/02/26 06:29
+MHDA- 2025/04/30 05:02
+PMCR- 2025/02/25
 CRDT- 2025/02/26 01:53
 PHST- 2024/12/26 00:00 [received]
 PHST- 2025/01/19 00:00 [accepted]
-PHST- 2025/02/26 06:29 [medline]
+PHST- 2025/04/30 05:02 [medline]
 PHST- 2025/02/26 06:29 [pubmed]
 PHST- 2025/02/26 01:53 [entrez]
+PHST- 2025/02/25 00:00 [pmc-release]
+AID - ACN370008 [pii]
 AID - 10.1002/acn3.70008 [doi]
-PST - aheadofprint
-SO  - Ann Clin Transl Neurol. 2025 Feb 25. doi: 10.1002/acn3.70008.
+PST - ppublish
+SO  - Ann Clin Transl Neurol. 2025 Apr;12(4):832-841. doi: 10.1002/acn3.70008. Epub 
+      2025 Feb 25.
 
 PMID- 38961870
 OWN - NLM

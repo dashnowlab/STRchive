@@ -218,8 +218,8 @@ SO  - Autophagy. 2025 Feb 25:1-18. doi: 10.1080/15548627.2025.2466144.
 PMID- 39492694
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250203
-LR  - 20250203
+DCOM- 20250425
+LR  - 20250425
 IS  - 1530-8561 (Electronic)
 IS  - 0009-9147 (Linking)
 VI  - 71
@@ -328,18 +328,13 @@ TA  - Clin Chem
 JT  - Clinical chemistry
 JID - 9421549
 RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - 0 (FMR1 protein, human)
-RN  - 0 (DMPK protein, human)
-RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
 SB  - IM
 MH  - Humans
+MH  - *High-Throughput Nucleotide Sequencing/methods
 MH  - *Tandem Repeat Sequences/genetics
-MH  - High-Throughput Nucleotide Sequencing/methods
+MH  - *Sequence Analysis, DNA/methods
 MH  - Mutation
 MH  - Fragile X Mental Retardation Protein/genetics
-MH  - Sequence Analysis, DNA/methods
-MH  - Myotonic Dystrophy/genetics/diagnosis
-MH  - Myotonin-Protein Kinase/genetics
 EDAT- 2024/11/04 06:22
 MHDA- 2025/02/03 18:20
 CRDT- 2024/11/04 03:53
@@ -357,7 +352,7 @@ PMID- 39418922
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241117
-LR  - 20241117
+LR  - 20250403
 IS  - 1873-2364 (Electronic)
 IS  - 0960-8966 (Linking)
 VI  - 44
@@ -433,17 +428,19 @@ PL  - England
 TA  - Neuromuscul Disord
 JT  - Neuromuscular disorders : NMD
 JID - 9111470
+RN  - 0 (GIPC1 protein, human)
+RN  - 0 (Adaptor Proteins, Signal Transducing)
 RN  - Oculopharyngodistal Myopathy
 SB  - IM
-MH  - Humans
-MH  - *Parkinsonian Disorders/genetics
-MH  - Male
-MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Adult
 MH  - Female
+MH  - Humans
+MH  - Male
 MH  - Middle Aged
 MH  - Muscular Dystrophy, Oculopharyngeal/genetics/complications
-MH  - Adult
-MH  - Muscular Dystrophies
+MH  - *Parkinsonian Disorders/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Adaptor Proteins, Signal Transducing/genetics
 OTO - NOTNLM
 OT  - CGG repeat expansion
 OT  - GIPC1
@@ -470,8 +467,8 @@ SO  - Neuromuscul Disord. 2024 Nov;44:104465. doi: 10.1016/j.nmd.2024.104465. Ep
 PMID- 39013564
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250117
-LR  - 20250306
+DCOM- 20250422
+LR  - 20250422
 IS  - 1468-330X (Electronic)
 IS  - 0022-3050 (Print)
 IS  - 0022-3050 (Linking)
@@ -605,18 +602,17 @@ SB  - IM
 MH  - Humans
 MH  - Male
 MH  - Female
-MH  - Middle Aged
-MH  - *Peripheral Nervous System Diseases/genetics
 MH  - Adult
+MH  - Middle Aged
+MH  - *Peripheral Nervous System Diseases/genetics/physiopathology
+MH  - *Trinucleotide Repeat Expansion/genetics
 MH  - Aged
-MH  - Trinucleotide Repeat Expansion/genetics
-MH  - LDL-Receptor Related Proteins/genetics
 MH  - Adolescent
 MH  - Young Adult
-MH  - Japan
-MH  - Charcot-Marie-Tooth Disease/genetics
-MH  - Asian People/genetics
+MH  - *LDL-Receptor Related Proteins/genetics
+MH  - Child
 MH  - Neural Conduction
+MH  - Genetic Testing
 PMC - PMC11877035
 OTO - NOTNLM
 OT  - HMSN (CHARCOT-MARIE-TOOTH)

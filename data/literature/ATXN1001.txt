@@ -3,7 +3,7 @@ PMID- 40067487
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250311
-LR  - 20250311
+LR  - 20250418
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 272
@@ -154,9 +154,8 @@ SO  - J Neurol. 2025 Mar 11;272(4):261. doi: 10.1007/s00415-025-13003-5.
 
 PMID- 39820777
 OWN - NLM
-STAT- MEDLINE
-DCOM- 20250117
-LR  - 20250311
+STAT- In-Process
+LR  - 20250501
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -3719,6 +3718,126 @@ AID - 10.1073/pnas.1009409108 [doi]
 PST - ppublish
 SO  - Proc Natl Acad Sci U S A. 2011 Feb 15;108(7):2843-8. doi: 
       10.1073/pnas.1009409108. Epub 2011 Jan 31.
+
+PMID- 20065034
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20100409
+LR  - 20211020
+IS  - 1098-5549 (Electronic)
+IS  - 0270-7306 (Print)
+IS  - 0270-7306 (Linking)
+VI  - 30
+IP  - 6
+DP  - 2010 Mar
+TI  - The DNA unwinding element binding protein DUE-B interacts with Cdc45 in 
+      preinitiation complex formation.
+PG  - 1495-507
+LID - 10.1128/MCB.00710-09 [doi]
+AB  - Template unwinding during DNA replication initiation requires the loading of the 
+      MCM helicase activator Cdc45 at replication origins. We show that Cdc45 interacts 
+      with the DNA unwinding element (DUE) binding protein DUE-B and that these 
+      proteins localize to the DUEs of active replication origins. DUE-B and Cdc45 are 
+      not bound at the inactive c-myc replicator in the absence of a functional DUE or 
+      at the recently identified ataxin 10 (ATX10) origin, which is silent before 
+      disease-related (ATTCT)(n) repeat length expansion of its DUE sequence, despite 
+      the presence of the origin recognition complex (ORC) and MCM proteins at these 
+      origins. Addition of a heterologous DUE to the ectopic c-myc origin, or expansion 
+      of the ATX10 DUE, leads to origin activation, DUE-B binding, and Cdc45 binding. 
+      DUE-B, Cdc45, and topoisomerase IIbeta binding protein 1 (TopBP1) form complexes 
+      in cell extracts and when expressed from baculovirus vectors. During replication 
+      in Xenopus egg extracts, DUE-B and Cdc45 bind to chromatin with similar kinetics, 
+      and DUE-B immunodepletion blocks replication and the loading of Cdc45 and a 
+      fraction of TopBP1. The coordinated binding of DUE-B and Cdc45 to origins and the 
+      physical interactions of DUE-B, Cdc45, and TopBP1 suggest that complexes of these 
+      proteins are necessary for replication initiation.
+FAU - Chowdhury, A
+AU  - Chowdhury A
+AD  - Department of Biochemistry and Molecular Biology, Boonshoft School of Medicine, 
+      Wright State University, Dayton, Ohio 45435, USA.
+FAU - Liu, G
+AU  - Liu G
+FAU - Kemp, M
+AU  - Kemp M
+FAU - Chen, X
+AU  - Chen X
+FAU - Katrangi, N
+AU  - Katrangi N
+FAU - Myers, S
+AU  - Myers S
+FAU - Ghosh, M
+AU  - Ghosh M
+FAU - Yao, J
+AU  - Yao J
+FAU - Gao, Y
+AU  - Gao Y
+FAU - Bubulya, P
+AU  - Bubulya P
+FAU - Leffak, M
+AU  - Leffak M
+LA  - eng
+GR  - R01 GM053819/GM/NIGMS NIH HHS/United States
+GR  - R15 GM084407/GM/NIGMS NIH HHS/United States
+GR  - GM82995/GM/NIGMS NIH HHS/United States
+GR  - R01 GM082995/GM/NIGMS NIH HHS/United States
+GR  - GM53819/GM/NIGMS NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20100111
+PL  - United States
+TA  - Mol Cell Biol
+JT  - Molecular and cellular biology
+JID - 8109087
+RN  - 0 (CDC45 protein, human)
+RN  - 0 (Carrier Proteins)
+RN  - 0 (Cell Cycle Proteins)
+RN  - 0 (Chromatin)
+RN  - 0 (DNA-Binding Proteins)
+RN  - 0 (DTD1 protein, human)
+RN  - 0 (Nuclear Proteins)
+RN  - 0 (ORC2 protein, human)
+RN  - 0 (Origin Recognition Complex)
+RN  - 0 (Saccharomyces cerevisiae Proteins)
+RN  - 0 (Sld3 protein, S cerevisiae)
+RN  - 0 (TOPBP1 protein, human)
+SB  - IM
+MH  - Amino Acid Sequence
+MH  - Animals
+MH  - Carrier Proteins/metabolism
+MH  - Cell Cycle Proteins/chemistry/*metabolism
+MH  - Chromatin/metabolism
+MH  - DNA-Binding Proteins/chemistry/*metabolism
+MH  - Fluorescent Antibody Technique
+MH  - HCT116 Cells
+MH  - HeLa Cells
+MH  - Humans
+MH  - Intracellular Space/metabolism
+MH  - Models, Biological
+MH  - Molecular Sequence Data
+MH  - Nuclear Proteins/metabolism
+MH  - Origin Recognition Complex/metabolism
+MH  - Phosphorylation
+MH  - Protein Binding
+MH  - Protein Transport
+MH  - *Replication Origin
+MH  - Saccharomyces cerevisiae Proteins/chemistry
+MH  - Xenopus
+PMC - PMC2832489
+EDAT- 2010/01/13 06:00
+MHDA- 2010/04/10 06:00
+PMCR- 2010/09/01
+CRDT- 2010/01/13 06:00
+PHST- 2010/01/13 06:00 [entrez]
+PHST- 2010/01/13 06:00 [pubmed]
+PHST- 2010/04/10 06:00 [medline]
+PHST- 2010/09/01 00:00 [pmc-release]
+AID - MCB.00710-09 [pii]
+AID - 0710-09 [pii]
+AID - 10.1128/MCB.00710-09 [doi]
+PST - ppublish
+SO  - Mol Cell Biol. 2010 Mar;30(6):1495-507. doi: 10.1128/MCB.00710-09. Epub 2010 Jan 
+      11.
 
 PMID- 19651850
 OWN - NLM
