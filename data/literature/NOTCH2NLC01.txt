@@ -1,4 +1,94 @@
 
+PMID- 40267536
+OWN - NLM
+STAT- Publisher
+LR  - 20250423
+IS  - 1876-7753 (Electronic)
+IS  - 1873-5061 (Linking)
+VI  - 86
+DP  - 2025 Apr 16
+TI  - Generation of an induced pluripotent stem cell line (PNUYHi003-A) from peripheral 
+      blood mononuclear cells of a patient with neuronal intranuclear inclusion 
+      disease.
+PG  - 103717
+LID - S1873-5061(25)00067-4 [pii]
+LID - 10.1016/j.scr.2025.103717 [doi]
+AB  - Neuronal intranuclear inclusion disease (NIID) is a rare neurodegenerative 
+      disordercharacterized by eosinophilic hyaline intranuclear inclusions in the 
+      nervous system. NIID is associated with GGC repeat expansions in the 5' 
+      untranslatedregion of the NOTCH2NLC gene. The induced pluripotent stem cells 
+      (iPSC), generated from peripheral blood mononuclear cells of a 75-year-old male 
+      patient with NIID, exhibited stem cell marker expression, normal karyotype, 
+      absence of viral factors, successful differentiation into the three germ layers, 
+      and were analyzed for GGC repeat expansion. These patient-derived iPSCs have 
+      promising potential for exploring the genetic mechanisms underlying NIID.
+CI  - Copyright (c) 2025 The Author(s). Published by Elsevier B.V. All rights reserved.
+FAU - Kim, Tae-Yun
+AU  - Kim TY
+AD  - Department of Convergence Medical Sciences, Graduate School, Pusan National 
+      University, Busan, Republic of Korea; Department of Neurology, Pusan National 
+      University Yangsan Hospital, Pusan National University School of Medicine, 
+      Yangsan, Gyeongsangnam-do, Republic of Korea; Research Institute for Convergence 
+      of Biomedical Science and Technology, Pusan National University Yangsan Hospital, 
+      Yangsan, Gyeongsangnam-do, Republic of Korea.
+FAU - Kim, Mi Kyoung
+AU  - Kim MK
+AD  - Department of Neurology, Pusan National University Yangsan Hospital, Pusan 
+      National University School of Medicine, Yangsan, Gyeongsangnam-do, Republic of 
+      Korea; Research Institute for Convergence of Biomedical Science and Technology, 
+      Pusan National University Yangsan Hospital, Yangsan, Gyeongsangnam-do, Republic 
+      of Korea.
+FAU - Mizuguchi, Takeshi
+AU  - Mizuguchi T
+AD  - Department of Human Genetics, Yokohama City University Graduate School of 
+      Medicine, Yokohama, Japan.
+FAU - Matsumoto, Naomichi
+AU  - Matsumoto N
+AD  - Department of Human Genetics, Yokohama City University Graduate School of 
+      Medicine, Yokohama, Japan.
+FAU - Lee, Jae-Hyeok
+AU  - Lee JH
+AD  - Department of Neurology, Pusan National University Yangsan Hospital, Pusan 
+      National University School of Medicine, Yangsan, Gyeongsangnam-do, Republic of 
+      Korea; Research Institute for Convergence of Biomedical Science and Technology, 
+      Pusan National University Yangsan Hospital, Yangsan, Gyeongsangnam-do, Republic 
+      of Korea.
+FAU - Kim, Eun-Joo
+AU  - Kim EJ
+AD  - Department of Neurology, Pusan National University Hospital, Pusan National 
+      University School of Medicine, Busan, Republic of Korea.
+FAU - Jung, Na-Yeon
+AU  - Jung NY
+AD  - Department of Neurology, Pusan National University Yangsan Hospital, Pusan 
+      National University School of Medicine, Yangsan, Gyeongsangnam-do, Republic of 
+      Korea; Research Institute for Convergence of Biomedical Science and Technology, 
+      Pusan National University Yangsan Hospital, Yangsan, Gyeongsangnam-do, Republic 
+      of Korea. Electronic address: nyjung@pusan.ac.kr.
+LA  - eng
+PT  - Journal Article
+DEP - 20250416
+PL  - England
+TA  - Stem Cell Res
+JT  - Stem cell research
+JID - 101316957
+SB  - IM
+COIS- Declaration of competing interest The authors declare that they have no known 
+      competing financial interests or personal relationships that could have appeared 
+      to influence the work reported in this paper.
+EDAT- 2025/04/23 18:28
+MHDA- 2025/04/23 18:28
+CRDT- 2025/04/23 18:00
+PHST- 2025/03/12 00:00 [received]
+PHST- 2025/04/11 00:00 [revised]
+PHST- 2025/04/13 00:00 [accepted]
+PHST- 2025/04/23 18:28 [medline]
+PHST- 2025/04/23 18:28 [pubmed]
+PHST- 2025/04/23 18:00 [entrez]
+AID - S1873-5061(25)00067-4 [pii]
+AID - 10.1016/j.scr.2025.103717 [doi]
+PST - aheadofprint
+SO  - Stem Cell Res. 2025 Apr 16;86:103717. doi: 10.1016/j.scr.2025.103717.
+
 PMID- 40084170
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -840,8 +930,8 @@ SO  - J Clin Neurol. 2024 Nov;20(6):580-590. doi: 10.3988/jcn.2023.0486.
 PMID- 39492694
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250203
-LR  - 20250203
+DCOM- 20250425
+LR  - 20250425
 IS  - 1530-8561 (Electronic)
 IS  - 0009-9147 (Linking)
 VI  - 71
@@ -950,18 +1040,13 @@ TA  - Clin Chem
 JT  - Clinical chemistry
 JID - 9421549
 RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - 0 (FMR1 protein, human)
-RN  - 0 (DMPK protein, human)
-RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
 SB  - IM
 MH  - Humans
+MH  - *High-Throughput Nucleotide Sequencing/methods
 MH  - *Tandem Repeat Sequences/genetics
-MH  - High-Throughput Nucleotide Sequencing/methods
+MH  - *Sequence Analysis, DNA/methods
 MH  - Mutation
 MH  - Fragile X Mental Retardation Protein/genetics
-MH  - Sequence Analysis, DNA/methods
-MH  - Myotonic Dystrophy/genetics/diagnosis
-MH  - Myotonin-Protein Kinase/genetics
 EDAT- 2024/11/04 06:22
 MHDA- 2025/02/03 18:20
 CRDT- 2024/11/04 03:53
@@ -979,7 +1064,7 @@ PMID- 39418922
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241117
-LR  - 20241117
+LR  - 20250403
 IS  - 1873-2364 (Electronic)
 IS  - 0960-8966 (Linking)
 VI  - 44
@@ -1055,17 +1140,19 @@ PL  - England
 TA  - Neuromuscul Disord
 JT  - Neuromuscular disorders : NMD
 JID - 9111470
+RN  - 0 (GIPC1 protein, human)
+RN  - 0 (Adaptor Proteins, Signal Transducing)
 RN  - Oculopharyngodistal Myopathy
 SB  - IM
-MH  - Humans
-MH  - *Parkinsonian Disorders/genetics
-MH  - Male
-MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Adult
 MH  - Female
+MH  - Humans
+MH  - Male
 MH  - Middle Aged
 MH  - Muscular Dystrophy, Oculopharyngeal/genetics/complications
-MH  - Adult
-MH  - Muscular Dystrophies
+MH  - *Parkinsonian Disorders/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Adaptor Proteins, Signal Transducing/genetics
 OTO - NOTNLM
 OT  - CGG repeat expansion
 OT  - GIPC1
@@ -1092,8 +1179,8 @@ SO  - Neuromuscul Disord. 2024 Nov;44:104465. doi: 10.1016/j.nmd.2024.104465. Ep
 PMID- 39167540
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250203
-LR  - 20250203
+DCOM- 20250423
+LR  - 20250423
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 148
@@ -1214,17 +1301,18 @@ SB  - IM
 MH  - Humans
 MH  - Male
 MH  - Female
-MH  - *Cerebral Amyloid Angiopathy/genetics/pathology/diagnostic imaging
+MH  - *Cerebral Amyloid Angiopathy/genetics/diagnostic imaging/pathology/complications
 MH  - Middle Aged
 MH  - Aged
-MH  - *Receptor, Notch2/genetics/metabolism
-MH  - Intranuclear Inclusion Bodies/pathology/metabolism
-MH  - Trinucleotide Repeat Expansion/genetics
-MH  - Cerebral Hemorrhage/pathology/genetics/diagnostic imaging/metabolism
-MH  - Brain/pathology/metabolism/diagnostic imaging
+MH  - *Receptor, Notch2/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
 MH  - Magnetic Resonance Imaging
+MH  - Brain/pathology/diagnostic imaging
 MH  - Adult
-MH  - Neurodegenerative Diseases
+MH  - Cerebral Hemorrhage/genetics/diagnostic imaging
+MH  - Neurodegenerative Diseases/genetics
+MH  - Aged, 80 and over
+MH  - Intranuclear Inclusion Bodies
 OTO - NOTNLM
 OT  - NOTCH2NLC GGC repeat expansions
 OT  - cerebral amyloid angiopathy

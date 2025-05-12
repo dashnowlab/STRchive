@@ -4,7 +4,7 @@ export const team = [
     name: "Harriet Dashnow",
     role: "PI",
     affiliation: "University of Colorado",
-    link: "https://harrietdashnow.com/",
+    link: "https://dashnowlab.org/members/harriet-dashnow.html",
   },
   {
     name: "Laurel Hiatt",
@@ -35,5 +35,11 @@ export const team = [
     role: "Bioinformatics Scientist",
     affiliation: "PacBio",
     link: "https://twitter.com/egor_dolzhenko",
+  },
+  {
+    name: "Macayla Weiner",
+    role: "Research Assistant",
+    affiliation: "University of Colorado",
+    link: "https://dashnowlab.org/members/macayla-weiner.html",
   },
 ];
