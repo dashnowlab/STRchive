@@ -23,6 +23,8 @@ dependencies:
   - r-stringr
   - r-purrr
   - pysam
+  - htslib
+  - bedtools
   - nodejs # build website locally
   - pyliftover
   - pip
