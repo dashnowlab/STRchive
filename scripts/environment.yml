@@ -9,7 +9,7 @@ dependencies:
   - numpy
   - biopython
   - defopt
-  - snakemake
+  - snakemake=7.25.0
   - jsbeautifier
   - statsmodels
   - plotly
@@ -23,6 +23,8 @@ dependencies:
   - r-stringr
   - r-purrr
   - pysam
+  - htslib
+  - bedtools
   - nodejs # build website locally
   - pyliftover
   - pip
