@@ -2,8 +2,8 @@
 PMID- 40067487
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250311
-LR  - 20250418
+DCOM- 20250512
+LR  - 20250512
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 272
@@ -114,18 +114,19 @@ SB  - IM
 MH  - Humans
 MH  - Male
 MH  - Female
-MH  - *Spinocerebellar Ataxias/genetics/diagnosis
-MH  - *Ataxin-10/genetics
+MH  - *Spinocerebellar Ataxias/genetics/physiopathology/complications
 MH  - Adult
 MH  - Middle Aged
-MH  - *Age of Onset
-MH  - DNA Repeat Expansion
+MH  - *Ataxin-10/genetics
+MH  - Age of Onset
+MH  - Brazil/epidemiology
 MH  - Aged
-MH  - Brazil
-MH  - Severity of Illness Index
-MH  - Young Adult
-MH  - Adolescent
+MH  - *DNA Repeat Expansion/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
 MH  - Seizures/genetics
+MH  - Young Adult
+MH  - Severity of Illness Index
+MH  - Epilepsy/genetics
 OTO - NOTNLM
 OT  - ATXN10
 OT  - ATTCT interruptions
@@ -154,8 +155,9 @@ SO  - J Neurol. 2025 Mar 11;272(4):261. doi: 10.1007/s00415-025-13003-5.
 
 PMID- 39820777
 OWN - NLM
-STAT- In-Process
-LR  - 20250501
+STAT- MEDLINE
+DCOM- 20250501
+LR  - 20250522
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -247,19 +249,19 @@ RN  - Spinocerebellar Ataxia 10
 SB  - IM
 MH  - Humans
 MH  - Mexico/epidemiology
-MH  - Female
 MH  - Male
-MH  - Adult
+MH  - Female
 MH  - Middle Aged
-MH  - Cross-Sectional Studies
 MH  - *Ataxin-10/genetics
+MH  - Adult
+MH  - Cross-Sectional Studies
 MH  - Retrospective Studies
-MH  - *Spinocerebellar Ataxias/genetics/epidemiology
+MH  - Epilepsy/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Spinocerebellar Ataxias/genetics
 MH  - Aged
 MH  - Young Adult
-MH  - Epilepsy/genetics/epidemiology
 MH  - Adolescent
-MH  - Trinucleotide Repeat Expansion/genetics
 MH  - DNA Repeat Expansion
 OTO - NOTNLM
 OT  - ATXN10 gene
@@ -449,8 +451,9 @@ PMID- 38832639
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240904
-LR  - 20241112
+LR  - 20250525
 IS  - 1460-2083 (Electronic)
+IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
 VI  - 33
 IP  - 18
@@ -573,21 +576,26 @@ MH  - MicroRNAs/genetics
 MH  - Alleles
 MH  - Gene Frequency
 MH  - DNA Repeat Expansion
+PMC - PMC12099295
 OTO - NOTNLM
 OT  - ATXN10
 OT  - SCA10
 OT  - human migration
 OT  - repeat expansion
 OT  - rs41524547
+COIS- None of the authors have conflicts of interest.
 EDAT- 2024/06/04 12:42
 MHDA- 2024/09/04 12:42
+PMCR- 2024/06/04
 CRDT- 2024/06/04 06:43
 PHST- 2023/11/21 00:00 [received]
 PHST- 2024/05/20 00:00 [revised]
 PHST- 2024/09/04 12:42 [medline]
 PHST- 2024/06/04 12:42 [pubmed]
 PHST- 2024/06/04 06:43 [entrez]
+PHST- 2024/06/04 00:00 [pmc-release]
 AID - 7687426 [pii]
+AID - ddae092 [pii]
 AID - 10.1093/hmg/ddae092 [doi]
 PST - ppublish
 SO  - Hum Mol Genet. 2024 Sep 3;33(18):1567-1574. doi: 10.1093/hmg/ddae092.
@@ -3436,7 +3444,7 @@ PMID- 22065565
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120719
-LR  - 20211021
+LR  - 20250529
 IS  - 1097-4547 (Electronic)
 IS  - 0360-4012 (Print)
 IS  - 0360-4012 (Linking)
@@ -3491,7 +3499,6 @@ FAU - Ashizawa, Tetsuo
 AU  - Ashizawa T
 LA  - eng
 GR  - R01 NS041547/NS/NINDS NIH HHS/United States
-GR  - R01 NS041547-09/NS/NINDS NIH HHS/United States
 GR  - UL1 TR000064/TR/NCATS NIH HHS/United States
 GR  - NS041547/NS/NINDS NIH HHS/United States
 PT  - Journal Article
@@ -4446,7 +4453,7 @@ PMID- 16924013
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20060913
-LR  - 20161122
+LR  - 20250529
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Linking)
 VI  - 67
@@ -4492,7 +4499,6 @@ FAU - Ashizawa, T
 AU  - Ashizawa T
 LA  - eng
 GR  - R01 NS041547/NS/NINDS NIH HHS/United States
-GR  - R01 NS041547-06A1/NS/NINDS NIH HHS/United States
 GR  - R01-NS041547/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
@@ -4534,7 +4540,7 @@ PMID- 16498633
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20060725
-LR  - 20191210
+LR  - 20250529
 IS  - 0360-4012 (Print)
 IS  - 0360-4012 (Linking)
 VI  - 83
@@ -4576,7 +4582,6 @@ FAU - Ashizawa, Tetsuo
 AU  - Ashizawa T
 LA  - eng
 GR  - R01 NS041547/NS/NINDS NIH HHS/United States
-GR  - R01 NS041547-06A1/NS/NINDS NIH HHS/United States
 GR  - R01-NS041547/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural

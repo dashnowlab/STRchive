@@ -1,14 +1,15 @@
 
 PMID- 40015643
 OWN - NLM
-STAT- Publisher
-LR  - 20250411
+STAT- MEDLINE
+DCOM- 20250515
+LR  - 20250515
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
 VI  - 301
 IP  - 4
-DP  - 2025 Feb 25
+DP  - 2025 Apr
 TI  - Dissecting the mechanism of NOP56 GGCCUG repeat-associated non-AUG translation 
       using cell-free translation systems.
 PG  - 108360
@@ -72,37 +73,53 @@ PL  - United States
 TA  - J Biol Chem
 JT  - The Journal of biological chemistry
 JID - 2985121R
+RN  - 0 (NOP56 protein, human)
+RN  - 0 (Nuclear Proteins)
+RN  - 0 (Codon, Initiator)
+RN  - 0 (RNA, Small Nucleolar)
 SB  - IM
+MH  - Humans
+MH  - Cell-Free System
+MH  - *Protein Biosynthesis
+MH  - *Nuclear Proteins/genetics/metabolism
+MH  - Introns
+MH  - Spinocerebellar Ataxias/genetics/metabolism
+MH  - Codon, Initiator/genetics
+MH  - *RNA, Small Nucleolar/genetics/metabolism
+MH  - *Trinucleotide Repeat Expansion
 PMC - PMC11979933
 OTO - NOTNLM
-OT  - MyoD
-OT  - O-GlcNAcylation modification
-OT  - muscle fiber differentiation
-OT  - skeletal muscle
+OT  - NOP56
+OT  - RAN translation
+OT  - SCA
+OT  - cell-free translation
+OT  - non-AUG translation
+OT  - spinocerebellar ataxia
 COIS- Conflict of interest The authors declare that they have no conflict of interests 
       with the contents of this article.
 EDAT- 2025/02/28 00:20
-MHDA- 2025/02/28 00:20
+MHDA- 2025/05/15 12:37
 PMCR- 2025/02/25
 CRDT- 2025/02/27 19:36
 PHST- 2024/12/06 00:00 [received]
 PHST- 2025/02/18 00:00 [revised]
 PHST- 2025/02/20 00:00 [accepted]
+PHST- 2025/05/15 12:37 [medline]
 PHST- 2025/02/28 00:20 [pubmed]
-PHST- 2025/02/28 00:20 [medline]
 PHST- 2025/02/27 19:36 [entrez]
 PHST- 2025/02/25 00:00 [pmc-release]
 AID - S0021-9258(25)00209-1 [pii]
 AID - 108360 [pii]
 AID - 10.1016/j.jbc.2025.108360 [doi]
-PST - aheadofprint
-SO  - J Biol Chem. 2025 Feb 25;301(4):108360. doi: 10.1016/j.jbc.2025.108360.
+PST - ppublish
+SO  - J Biol Chem. 2025 Apr;301(4):108360. doi: 10.1016/j.jbc.2025.108360. Epub 2025 
+      Feb 25.
 
 PMID- 40004498
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250226
-LR  - 20250228
+DCOM- 20250510
+LR  - 20250510
 IS  - 2073-4425 (Electronic)
 IS  - 2073-4425 (Linking)
 VI  - 16
@@ -223,17 +240,17 @@ SB  - IM
 MH  - Humans
 MH  - *Nervous System Diseases/genetics
 MH  - *Microsatellite Repeats/genetics
+MH  - *DNA Repeat Expansion/genetics
+MH  - Exome Sequencing/methods
 MH  - *Exome/genetics
 MH  - High-Throughput Nucleotide Sequencing/methods
-MH  - Exome Sequencing/methods
-MH  - Cohort Studies
-MH  - Male
-MH  - Genotype
-MH  - Female
-MH  - DNA Repeat Expansion/genetics
-MH  - Genotyping Techniques/methods
 MH  - Myotonic Dystrophy/genetics
 MH  - Spinocerebellar Ataxias/genetics
+MH  - Genotype
+MH  - Male
+MH  - Cohort Studies
+MH  - Genotyping Techniques/methods
+MH  - Female
 PMC - PMC11855749
 OTO - NOTNLM
 OT  - ExpansionHunter
@@ -866,7 +883,7 @@ SO  - Mol Biol Rep. 2024 Jan 16;51(1):113. doi: 10.1007/s11033-023-09023-x.
 PMID- 37810464
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20240320
+LR  - 20250530
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 5

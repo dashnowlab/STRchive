@@ -2,8 +2,8 @@
 PMID- 39874107
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250310
-LR  - 20250329
+DCOM- 20250504
+LR  - 20250504
 IS  - 2379-3708 (Electronic)
 IS  - 2379-3708 (Linking)
 VI  - 10
@@ -55,26 +55,30 @@ TA  - JCI Insight
 JT  - JCI insight
 JID - 101676073
 RN  - 0 (STAT3 Transcription Factor)
-RN  - 0 (PAX7 Transcription Factor)
+RN  - 0 (TWEAK Receptor)
 RN  - 0 (Stat3 protein, mouse)
+RN  - 0 (PAX7 Transcription Factor)
+RN  - 0 (Pax7 protein, mouse)
 SB  - IM
 UOF - bioRxiv. 2025 Jan 02:2024.10.06.616900. doi: 10.1101/2024.10.06.616900. PMID: 
       39803454
 MH  - Animals
 MH  - *Satellite Cells, Skeletal Muscle/metabolism
 MH  - Mice
-MH  - *Muscle, Skeletal/metabolism/pathology
-MH  - *Regeneration
-MH  - *Mice, Inbred mdx
-MH  - *Muscular Dystrophy, Duchenne/metabolism/pathology/genetics
-MH  - *Cell Differentiation
+MH  - *Muscle, Skeletal/metabolism/pathology/injuries/physiology
+MH  - *Regeneration/physiology
+MH  - Mice, Inbred mdx
+MH  - Cell Differentiation
+MH  - STAT3 Transcription Factor/metabolism/genetics
+MH  - *TWEAK Receptor/metabolism/genetics
 MH  - Cell Proliferation
-MH  - Cell Self Renewal
-MH  - STAT3 Transcription Factor/metabolism
+MH  - *Muscular Dystrophy, Duchenne/pathology/metabolism/genetics
 MH  - Signal Transduction
-MH  - Male
+MH  - Cell Self Renewal
 MH  - Disease Models, Animal
-MH  - PAX7 Transcription Factor/metabolism/genetics
+MH  - PAX7 Transcription Factor/metabolism
+MH  - Male
+MH  - Mice, Inbred C57BL
 PMC - PMC11949035
 OTO - NOTNLM
 OT  - Cell biology
@@ -4203,7 +4207,7 @@ PMID- 19108751
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100322
-LR  - 20211020
+LR  - 20250529
 IS  - 1743-1328 (Electronic)
 IS  - 0161-6412 (Linking)
 VI  - 32

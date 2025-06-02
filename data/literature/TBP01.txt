@@ -1,12 +1,16 @@
 
 PMID- 39950762
 OWN - NLM
-STAT- Publisher
-LR  - 20250214
+STAT- MEDLINE
+DCOM- 20250520
+LR  - 20250520
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
-DP  - 2025 Feb 14
+VI  - 40
+IP  - 5
+DP  - 2025 May
 TI  - TBP Repeat Expansion Analysis in Patients Carrying Heterozygous STUB1 Variants.
+PG  - 980-985
 LID - 10.1002/mds.30147 [doi]
 AB  - BACKGROUND: The cooccurrence of intermediate (40-49 CAG/CAA) TBP repeat 
       expansions with STUB1 variants questions the pathogenicity of monoallelic STUB1 
@@ -101,7 +105,25 @@ PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
+RN  - 0 (TATA-Box Binding Protein)
+RN  - EC 2.3.2.27 (STUB1 protein, human)
+RN  - EC 2.3.2.27 (Ubiquitin-Protein Ligases)
+RN  - 0 (TBP protein, human)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - *TATA-Box Binding Protein/genetics
+MH  - *Cerebellar Ataxia/genetics
+MH  - Heterozygote
+MH  - Adult
+MH  - Aged
+MH  - *Ubiquitin-Protein Ligases/genetics
+MH  - Pedigree
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Phenotype
+MH  - Cognitive Dysfunction/genetics
 OTO - NOTNLM
 OT  - autosomal recessive spinocerebellar ataxia type 16
 OT  - digenic inheritance
@@ -109,22 +131,23 @@ OT  - reduced penetrance
 OT  - spinocerebellar ataxia type 17
 OT  - spinocerebellar ataxia type 48
 EDAT- 2025/02/14 12:30
-MHDA- 2025/02/14 12:30
+MHDA- 2025/05/20 06:28
 CRDT- 2025/02/14 08:53
 PHST- 2025/01/22 00:00 [revised]
 PHST- 2024/10/04 00:00 [received]
 PHST- 2025/01/27 00:00 [accepted]
-PHST- 2025/02/14 12:30 [medline]
+PHST- 2025/05/20 06:28 [medline]
 PHST- 2025/02/14 12:30 [pubmed]
 PHST- 2025/02/14 08:53 [entrez]
 AID - 10.1002/mds.30147 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2025 Feb 14. doi: 10.1002/mds.30147.
+PST - ppublish
+SO  - Mov Disord. 2025 May;40(5):980-985. doi: 10.1002/mds.30147. Epub 2025 Feb 14.
 
 PMID- 39820777
 OWN - NLM
-STAT- In-Process
-LR  - 20250501
+STAT- MEDLINE
+DCOM- 20250501
+LR  - 20250522
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -216,19 +239,19 @@ RN  - Spinocerebellar Ataxia 10
 SB  - IM
 MH  - Humans
 MH  - Mexico/epidemiology
-MH  - Female
 MH  - Male
-MH  - Adult
+MH  - Female
 MH  - Middle Aged
-MH  - Cross-Sectional Studies
 MH  - *Ataxin-10/genetics
+MH  - Adult
+MH  - Cross-Sectional Studies
 MH  - Retrospective Studies
-MH  - *Spinocerebellar Ataxias/genetics/epidemiology
+MH  - Epilepsy/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Spinocerebellar Ataxias/genetics
 MH  - Aged
 MH  - Young Adult
-MH  - Epilepsy/genetics/epidemiology
 MH  - Adolescent
-MH  - Trinucleotide Repeat Expansion/genetics
 MH  - DNA Repeat Expansion
 OTO - NOTNLM
 OT  - ATXN10 gene
@@ -2463,7 +2486,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20241211
+LR  - 20250530
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -2598,24 +2621,23 @@ AD  - Genomics England, Queen Mary University of London, London, UK; William Har
       address: a.tucci@qmul.ac.uk.
 CN  - Genomics England Research Consortium
 LA  - eng
-GR  - MR/K01417X/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/K000608/1/MRC_/Medical Research Council/United Kingdom
-GR  - G1001253/MRC_/Medical Research Council/United Kingdom
-GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
-GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
-GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
-GR  - MC_UU_00015/9/MRC_/Medical Research Council/United Kingdom
-GR  - WT_/Wellcome Trust/United Kingdom
-GR  - G0701075/MRC_/Medical Research Council/United Kingdom
-GR  - G0901254/MRC_/Medical Research Council/United Kingdom
-GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
 GR  - MR/L501542/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/S035699/1/MRC_/Medical Research Council/United Kingdom
-GR  - DH_/Department of Health/United Kingdom
-GR  - G-0907/PUK_/Parkinson's UK/United Kingdom
+GR  - G1001253/MRC_/Medical Research Council/United Kingdom
+GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
 GR  - MR/M009203/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S035699/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/J004758/1/MRC_/Medical Research Council/United Kingdom
+GR  - G0901254/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/K01417X/1/MRC_/Medical Research Council/United Kingdom
+GR  - G-0907/PUK_/Parkinson's UK/United Kingdom
+GR  - G0701075/MRC_/Medical Research Council/United Kingdom
+GR  - MR/K000608/1/MRC_/Medical Research Council/United Kingdom
+GR  - DH_/Department of Health/United Kingdom
+GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
+GR  - MC_UU_00015/9/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 PL  - England
@@ -7751,7 +7773,7 @@ PMID- 24972706
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141106
-LR  - 20221207
+LR  - 20250529
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -7931,6 +7953,7 @@ AD  - 4 AP-HP, Groupe Hospitalier Pitie-Salpetriere, Department of Genetics and
 LA  - eng
 GR  - K08 NS083738/NS/NINDS NIH HHS/United States
 GR  - R01 NS085054/NS/NINDS NIH HHS/United States
+GR  - RC1 NS068897/NS/NINDS NIH HHS/United States
 GR  - NS068897/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
@@ -9298,7 +9321,7 @@ PMID- 18043721
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20080422
-LR  - 20211020
+LR  - 20250529
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)
 VI  - 16
@@ -9348,7 +9371,6 @@ FAU - Lin, Xi
 AU  - Lin X
 LA  - eng
 GR  - R01 NS041547/NS/NINDS NIH HHS/United States
-GR  - R01 NS041547-07/NS/NINDS NIH HHS/United States
 GR  - CA112508/CA/NCI NIH HHS/United States
 GR  - NS41547/NS/NINDS NIH HHS/United States
 PT  - Journal Article
@@ -9789,7 +9811,7 @@ PMID- 16858508
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20061006
-LR  - 20240313
+LR  - 20250529
 IS  - 1434-5161 (Print)
 IS  - 1435-232X (Electronic)
 IS  - 1434-5161 (Linking)
@@ -9871,7 +9893,7 @@ AD  - Life and Health Sciences Research Institute (ICVS), School of Health Scien
       University of Minho, Campus de Gualtar, 4710-057, Braga, Portugal. 
       pmaciel@ecsaude.uminho.pt.
 LA  - eng
-GR  - 44045/Canadian Institutes of Health Research/Canada
+GR  - 44045/CAPMC/CIHR/Canada
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 DEP - 20060721
@@ -11376,7 +11398,7 @@ PMID- 12758065
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20030731
-LR  - 20221207
+LR  - 20250529
 IS  - 0969-9961 (Print)
 IS  - 0969-9961 (Linking)
 VI  - 13
@@ -11875,7 +11897,7 @@ PMID- 9399691
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980115
-LR  - 20220129
+LR  - 20250529
 IS  - 1359-4184 (Print)
 IS  - 1359-4184 (Linking)
 VI  - 2
