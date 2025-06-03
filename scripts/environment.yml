@@ -23,6 +23,7 @@ dependencies:
   - r-easypubmed
   - r-stringr
   - r-purrr
+  - gfortran
   - pysam
   - nodejs # build website locally
   - pyliftover

@@ -21,6 +21,7 @@ dependencies:
   - r-easypubmed
   - r-stringr
   - r-purrr
+  - gfortran
   - pysam
   - nodejs
   - pyliftover
