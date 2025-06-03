@@ -30,8 +30,7 @@ def main():
             except jsonschema.exceptions.ValidationError as e:
                 any_errors = True
                 sys.stderr.write(f"JSON data is invalid: {e}\n")
-                sys.stderr.write(f"Locus: {locus["id"]}, Field: {field}, Value: {locus[field]}\n")
-    if any_errors:
+                sys.stderr.write(f"Locus: {locus['id']}, Field: {field}, Value: {locus[field]}\n")
         sys.exit(1)
 
 if __name__ == "__main__":
