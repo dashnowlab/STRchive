@@ -360,7 +360,7 @@
       },
       "locus_tags": {
         "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics",
-        "examples": [ "somatic_instability", "anticipation", "conflicting_evidence", "sparse_evidence" ],
+        "examples": [ "somatic_instability", "contraction", "anticipation", "conflicting_evidence", "sparse_evidence", "maternal_expansion", "length_affects_penetrance", "length_affects_severity", "length_affects_onset" ],
         "type": "array",
         "items": {
           "type": [ "string", "null" ]
