@@ -127,14 +127,18 @@ SO  - Front Genet. 2025 Feb 27;16:1472907. doi: 10.3389/fgene.2025.1472907. eCol
 
 PMID- 39936620
 OWN - NLM
-STAT- Publisher
-LR  - 20250225
+STAT- MEDLINE
+DCOM- 20250516
+LR  - 20250521
 IS  - 1554-8635 (Electronic)
+IS  - 1554-8627 (Print)
 IS  - 1554-8627 (Linking)
-DP  - 2025 Feb 25
+VI  - 21
+IP  - 6
+DP  - 2025 Jun
 TI  - Heat-shock chaperone HSPB1 mitigates poly-glycine-induced neurodegeneration via 
       restoration of autophagic flux.
-PG  - 1-18
+PG  - 1298-1315
 LID - 10.1080/15548627.2025.2466144 [doi]
 AB  - The CGG repeat expansions in the 5'-UTR regions of certain genes have been 
       implicated in various neurodegenerative and muscular disorders. However, the 
@@ -197,7 +201,21 @@ PL  - United States
 TA  - Autophagy
 JT  - Autophagy
 JID - 101265188
+RN  - 0 (Molecular Chaperones)
+RN  - 0 (Sequestosome-1 Protein)
+RN  - 0 (Heat-Shock Proteins)
+RN  - 0 (HSPB1 protein, human)
 SB  - IM
+MH  - Animals
+MH  - *Autophagy/drug effects
+MH  - Humans
+MH  - Mice
+MH  - *Molecular Chaperones/metabolism
+MH  - Sequestosome-1 Protein/metabolism
+MH  - *Heat-Shock Proteins/metabolism
+MH  - *Neurodegenerative Diseases/metabolism/pathology
+MH  - Autophagosomes/metabolism
+PMC - PMC12087658
 OTO - NOTNLM
 OT  - Autophagy receptors
 OT  - CGG repeat expansions
@@ -205,21 +223,26 @@ OT  - HSPB1
 OT  - RAN translation
 OT  - p62
 OT  - poly-glycine
+COIS- No potential conflict of interest was reported by the author(s).
 EDAT- 2025/02/12 12:25
-MHDA- 2025/02/12 12:25
+MHDA- 2025/05/16 11:43
+PMCR- 2026/02/25
 CRDT- 2025/02/12 07:44
+PHST- 2026/02/25 00:00 [pmc-release]
+PHST- 2025/05/16 11:43 [medline]
 PHST- 2025/02/12 12:25 [pubmed]
-PHST- 2025/02/12 12:25 [medline]
 PHST- 2025/02/12 07:44 [entrez]
+AID - 2466144 [pii]
 AID - 10.1080/15548627.2025.2466144 [doi]
-PST - aheadofprint
-SO  - Autophagy. 2025 Feb 25:1-18. doi: 10.1080/15548627.2025.2466144.
+PST - ppublish
+SO  - Autophagy. 2025 Jun;21(6):1298-1315. doi: 10.1080/15548627.2025.2466144. Epub 
+      2025 Feb 25.
 
 PMID- 39492694
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250425
-LR  - 20250425
+LR  - 20250516
 IS  - 1530-8561 (Electronic)
 IS  - 0009-9147 (Linking)
 VI  - 71
@@ -468,7 +491,7 @@ PMID- 39013564
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250422
-LR  - 20250422
+LR  - 20250514
 IS  - 1468-330X (Electronic)
 IS  - 0022-3050 (Print)
 IS  - 0022-3050 (Linking)

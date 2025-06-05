@@ -3,8 +3,9 @@ PMID- 40113266
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250414
-LR  - 20250414
+LR  - 20250504
 IS  - 1549-5469 (Electronic)
+IS  - 1088-9051 (Print)
 IS  - 1088-9051 (Linking)
 VI  - 35
 IP  - 4
@@ -159,14 +160,17 @@ MH  - Microsatellite Repeats
 MH  - Replication Protein C/genetics
 MH  - Myotonic Dystrophy/genetics/diagnosis
 MH  - Cerebellar Ataxia/genetics
+PMC - PMC12047237
 EDAT- 2025/03/21 00:22
 MHDA- 2025/04/15 00:25
+PMCR- 2025/04/01
 CRDT- 2025/03/20 21:23
 PHST- 2024/04/19 00:00 [received]
 PHST- 2025/02/24 00:00 [accepted]
 PHST- 2025/04/15 00:25 [medline]
 PHST- 2025/03/21 00:22 [pubmed]
 PHST- 2025/03/20 21:23 [entrez]
+PHST- 2025/04/01 00:00 [pmc-release]
 AID - gr.279491.124 [pii]
 AID - 10.1101/gr.279491.124 [doi]
 PST - epublish
@@ -175,8 +179,8 @@ SO  - Genome Res. 2025 Apr 14;35(4):810-823. doi: 10.1101/gr.279491.124.
 PMID- 39894140
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250215
-LR  - 20250215
+DCOM- 20250505
+LR  - 20250505
 IS  - 1096-0309 (Electronic)
 IS  - 0003-2697 (Linking)
 VI  - 700
@@ -280,8 +284,10 @@ MH  - Humans
 MH  - *Myotonic Dystrophy/genetics/diagnosis
 MH  - *Whole Genome Sequencing/methods
 MH  - Alleles
-MH  - Tandem Repeat Sequences/genetics
+MH  - *Tandem Repeat Sequences
 MH  - Genotype
+MH  - Male
+MH  - Female
 OTO - NOTNLM
 OT  - Massively parallel sequencing
 OT  - Myotonic dystrophy type 2
@@ -459,7 +465,7 @@ PMID- 39240646
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250219
-LR  - 20250423
+LR  - 20250515
 IS  - 2214-3602 (Electronic)
 IS  - 2214-3599 (Linking)
 VI  - 11
@@ -4292,7 +4298,7 @@ PMID- 21303839
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110830
-LR  - 20230530
+LR  - 20250529
 IS  - 1754-8411 (Electronic)
 IS  - 1754-8403 (Print)
 IS  - 1754-8403 (Linking)
@@ -5136,7 +5142,7 @@ PMID- 18804219
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090409
-LR  - 20220129
+LR  - 20250529
 IS  - 0022-510X (Print)
 IS  - 0022-510X (Linking)
 VI  - 275

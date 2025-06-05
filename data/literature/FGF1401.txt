@@ -1,18 +1,178 @@
 
-PMID- 40273470
+PMID- 40379261
 OWN - NLM
 STAT- Publisher
-LR  - 20250424
+LR  - 20250516
+IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Linking)
+DP  - 2025 May 17
+TI  - FGF14 repeat length and mosaic interruptions: modifiers of spinocerebellar ataxia 
+      27B?
+LID - awaf183 [pii]
+LID - 10.1093/brain/awaf183 [doi]
+AB  - Deep intronic FGF14 repeat expansions have been identified as a frequent genetic 
+      cause of late-onset cerebellar ataxias, explaining up to 30% of patients. 
+      Interruptions between repeats have previously been identified to impact the 
+      penetrance in other repeat expansion disorders. Repeat interruptions within FGF14 
+      have yet to be characterized in detail. We utilized long-range PCR, Sanger 
+      sequencing, repeat-primed PCR, Nanopore, and PacBio sequencing to distinguish the 
+      repeat motifs, mosaicism, and number of repeat interruptions present in 
+      FGF14-related ataxia patients and unaffected individuals. A total of 304 patients 
+      with late-onset ataxia and 190 unaffected individuals were previously screened 
+      for repeat expansions in the FGF14 gene by long-range PCR, identifying 37 
+      individuals with expanded repeat lengths (>/=250 repeats). These, along with three 
+      newly identified expansion carriers were included in the present study, and 
+      advanced genetic methods were applied to investigate the repeat composition in 27 
+      patients and 13 unaffected individuals. The expansions, based on Nanopore data, 
+      ranged from 236 to 486 repeats (SD = 60), with 20 individuals showing repeat 
+      interruptions, including complex motifs such as GAG, GAAGGA, GAAGAAAGAA, 
+      GAAAAGAAGAAGGAAGAAGGAA, GAAAAGAAGAAGGAA, and GCAGAAGAAGAAGAA. We calculated the 
+      longest pure GAA length from the long-read data for all 40 individuals. When 
+      comparing the pure GAA tract between patients and unaffected individuals, 
+      clusters were apparent based on greater or less than 200 repeats. Five ataxia 
+      patients with interruptions still had a remaining pure GAA expansion <200. We 
+      observed an association of the pure GAA length with age at onset (p=0.016, 
+      R2=0.256). Somatically-incurred mosaic divergent repeat interruptions were 
+      discovered that affect motif length and sequence (mDRILS), which varied in number 
+      and mosaicism (frequency: 0.37-0.93). The mDRILS correlated with pure GAA length 
+      (p=0.022, R2=0.334), with a higher mosaic frequency of interruptions in 
+      unaffected individuals compared to patients (unaffected: 0.90; patients: 0.67; 
+      p=0.009). We demonstrate that i) long-read sequencing is required to detect 
+      complex repeat interruptions accurately; ii) repeat interruptions in FGF14 are 
+      mosaic, have various lengths and start positions in the repeat tract, and can 
+      thereby be annotated as mDRILS, which iii) enabled us to establish a 
+      categorization based on remaining pure GAA repeats quantifying the impact of 
+      mDRILS on pathogenicity or age at onset, dependent on the interruption length and 
+      position, with high accuracy. Finally, we iv) provide evidence that mosaicism 
+      stabilizes pure GAA repeats in interrupted FGF14 repeat expansions.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Lass, Joshua
+AU  - Lass J
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Thomsen, Mirja
+AU  - Thomsen M
+AUID- ORCID: 0009-0004-1148-5493
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Borsche, Max
+AU  - Borsche M
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+AD  - Department of Neurology, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Luth, Theresa
+AU  - Luth T
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Prietzsche, Julia C
+AU  - Prietzsche JC
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Schaake, Susen
+AU  - Schaake S
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Milovanovic, Andona
+AU  - Milovanovic A
+AD  - Neurology Clinic, University Clinical Center of Serbia, Belgrade, 11000, Serbia.
+FAU - Macpherson, Hannah
+AU  - Macpherson H
+AD  - Department of Genetics and Genomic Medicine, UCL GOS Institute of Child Health, 
+      London, WC1E 6BT, UK.
+AD  - Department of Neurodegenerative Diseases, Institute of Neurology, UCL, London, 
+      WC1E 6BT, UK.
+FAU - Gustavsson, Emil K
+AU  - Gustavsson EK
+AUID- ORCID: 0000-0003-0541-7537
+AD  - Department of Genetics and Genomic Medicine, UCL GOS Institute of Child Health, 
+      London, WC1E 6BT, UK.
+AD  - Department of Neurodegenerative Diseases, Institute of Neurology, UCL, London, 
+      WC1E 6BT, UK.
+FAU - Saffie Awad, Paula
+AU  - Saffie Awad P
+AD  - Programa de Pos-Graduacao em Ciencias Medicas, Universidade Federal do Rio Grande 
+      do Sul, Porto Alegre, 90035003, Brazil.
+AD  - Servicio de Neurologia, Clinica Santa Maria, Santiago, 7520349, Chile.
+FAU - Dragasevic-Miskovic, Natasa
+AU  - Dragasevic-Miskovic N
+AD  - Neurology Clinic, University Clinical Center of Serbia, Belgrade, 11000, Serbia.
+FAU - Laabs, Bjorn-Hergen
+AU  - Laabs BH
+AD  - Institute of Medical Biometry and Statistics, University of Lubeck, 23538 Lubeck, 
+      Germany.
+FAU - Konig, Inke R
+AU  - Konig IR
+AD  - Institute of Medical Biometry and Statistics, University of Lubeck, 23538 Lubeck, 
+      Germany.
+FAU - Westenberger, Ana
+AU  - Westenberger A
+AUID- ORCID: 0000-0001-8062-6959
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Pearson, Christopher E
+AU  - Pearson CE
+AUID- ORCID: 0000-0001-9545-4205
+AD  - The Hospital for Sick Children, Genetics & Genome Biology; Department of 
+      Molecular Genetics, University of Toronto, Toronto, ON M5G 0A4, Canada.
+FAU - Bruggemann, Norbert
+AU  - Bruggemann N
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+AD  - Department of Neurology, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Klein, Christine
+AU  - Klein C
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+FAU - Trinh, Joanne
+AU  - Trinh J
+AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
+      Schleswig-Holstein, 23538 Lubeck, Germany.
+LA  - eng
+PT  - Journal Article
+DEP - 20250517
+PL  - England
+TA  - Brain
+JT  - Brain : a journal of neurology
+JID - 0372537
+SB  - IM
+OTO - NOTNLM
+OT  - SCA27B
+OT  - interruptions
+OT  - long-read sequencing
+OT  - repeat expansion
+EDAT- 2025/05/17 17:01
+MHDA- 2025/05/17 17:01
+CRDT- 2025/05/16 20:02
+PHST- 2024/11/13 00:00 [received]
+PHST- 2025/03/24 00:00 [revised]
+PHST- 2025/04/26 00:00 [accepted]
+PHST- 2025/05/17 17:01 [medline]
+PHST- 2025/05/17 17:01 [pubmed]
+PHST- 2025/05/16 20:02 [entrez]
+AID - 8133976 [pii]
+AID - 10.1093/brain/awaf183 [doi]
+PST - aheadofprint
+SO  - Brain. 2025 May 17:awaf183. doi: 10.1093/brain/awaf183.
+
+PMID- 40273470
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250516
+LR  - 20250528
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 115
-DP  - 2025 Apr 23
+DP  - 2025 May
 TI  - The genetic landscape of sporadic adult-onset degenerative ataxia: a multi-modal 
       genetic study of 377 consecutive patients from the longitudinal multi-centre 
       SPORTAX cohort.
 PG  - 105715
 LID - S2352-3964(25)00159-8 [pii]
 LID - 10.1016/j.ebiom.2025.105715 [doi]
+LID - 105715
 AB  - BACKGROUND: While most sporadic adult-onset neurodegenerative diseases have only 
       a minor monogenic component, given several recently identified late adult-onset 
       ataxia genes, the genetic burden may be substantial in sporadic adult-onset 
@@ -173,12 +333,28 @@ AD  - Division of Translational Genomics of Neurodegenerative Diseases,
       Tubingen, Germany. Electronic address: matthis.synofzik@uni-tuebingen.de.
 LA  - eng
 PT  - Journal Article
+PT  - Multicenter Study
 DEP - 20250423
 PL  - Netherlands
 TA  - EBioMedicine
 JT  - EBioMedicine
 JID - 101647039
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - Adult
+MH  - Age of Onset
+MH  - Aged
+MH  - Longitudinal Studies
+MH  - *Ataxia/genetics/diagnosis
+MH  - High-Throughput Nucleotide Sequencing
+MH  - *Genetic Predisposition to Disease
+MH  - Genetic Testing
+MH  - Genetic Association Studies
+MH  - Prospective Studies
+PMC - PMC12051541
 OTO - NOTNLM
 OT  - Adult-onset ataxia
 OT  - CANVAS
@@ -263,18 +439,22 @@ IR  - Grobe-Einsler M
 FIR - Giordano, Ilaria
 IR  - Giordano I
 EDAT- 2025/04/24 18:53
-MHDA- 2025/04/24 18:53
+MHDA- 2025/05/17 17:01
+PMCR- 2025/04/23
 CRDT- 2025/04/24 18:00
 PHST- 2024/08/20 00:00 [received]
 PHST- 2025/03/28 00:00 [revised]
 PHST- 2025/04/04 00:00 [accepted]
-PHST- 2025/04/24 18:53 [medline]
+PHST- 2025/05/17 17:01 [medline]
 PHST- 2025/04/24 18:53 [pubmed]
 PHST- 2025/04/24 18:00 [entrez]
+PHST- 2025/04/23 00:00 [pmc-release]
 AID - S2352-3964(25)00159-8 [pii]
+AID - 105715 [pii]
 AID - 10.1016/j.ebiom.2025.105715 [doi]
-PST - aheadofprint
-SO  - EBioMedicine. 2025 Apr 23;115:105715. doi: 10.1016/j.ebiom.2025.105715.
+PST - ppublish
+SO  - EBioMedicine. 2025 May;115:105715. doi: 10.1016/j.ebiom.2025.105715. Epub 2025 
+      Apr 23.
 
 PMID- 40239008
 OWN - NLM
@@ -791,8 +971,8 @@ SO  - Ann Clin Transl Neurol. 2025 Apr 7. doi: 10.1002/acn3.70016.
 PMID- 40141365
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250327
-LR  - 20250329
+DCOM- 20250515
+LR  - 20250515
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -857,9 +1037,10 @@ JT  - International journal of molecular sciences
 JID - 101092791
 SB  - IM
 MH  - Humans
-MH  - *Microsatellite Repeats/genetics
 MH  - Whole Genome Sequencing/methods
-MH  - DNA Repeat Expansion
+MH  - Microsatellite Repeats/genetics
+MH  - *DNA Repeat Expansion
+MH  - Huntington Disease/genetics/diagnosis
 MH  - High-Throughput Nucleotide Sequencing/methods
 PMC - PMC11942491
 OTO - NOTNLM
@@ -895,8 +1076,8 @@ SO  - Int J Mol Sci. 2025 Mar 18;26(6):2725. doi: 10.3390/ijms26062725.
 PMID- 40024931
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250302
-LR  - 20250318
+DCOM- 20250510
+LR  - 20250510
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 272
@@ -1040,19 +1221,23 @@ PL  - Germany
 TA  - J Neurol
 JT  - Journal of neurology
 JID - 0423161
+RN  - 0 (fibroblast growth factor 14)
+RN  - 62031-54-3 (Fibroblast Growth Factors)
 SB  - IM
 MH  - Humans
 MH  - Male
 MH  - Female
 MH  - Middle Aged
 MH  - Aged
-MH  - *Age of Onset
-MH  - *Cerebellar Ataxia/genetics/epidemiology
-MH  - Adult
+MH  - *Cerebellar Ataxia/genetics/epidemiology/physiopathology/drug therapy
 MH  - Follow-Up Studies
+MH  - Age of Onset
 MH  - Disease Progression
-MH  - Aged, 80 and over
+MH  - Adult
 MH  - Cohort Studies
+MH  - Aged, 80 and over
+MH  - Magnetic Resonance Imaging
+MH  - Fibroblast Growth Factors
 OTO - NOTNLM
 OT  - Episodic ataxia
 OT  - Genetic diagnosis
@@ -1605,9 +1790,9 @@ SO  - Neurol Genet. 2025 Feb 21;11(2):e200253. doi: 10.1212/NXG.0000000000200253
 
 PMID- 39821862
 OWN - NLM
-STAT- In-Process
+STAT- MEDLINE
 DCOM- 20250117
-LR  - 20250501
+LR  - 20250522
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -1659,26 +1844,25 @@ AU  - van de Warrenburg B
 AD  - Department of Neurology, Donders Institute for Brain, Cognition & Behaviour, 
       Radboud University Medical Center, Nijmegen, The Netherlands.
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20250116
 PL  - United States
 TA  - Cerebellum
 JT  - Cerebellum (London, England)
 JID - 101089443
-RN  - 0 (fibroblast growth factor 14)
 RN  - 62031-54-3 (Fibroblast Growth Factors)
-RN  - Spinocerebellar ataxia 27
+RN  - 0 (fibroblast growth factor 14)
 SB  - IM
 MH  - Humans
 MH  - Female
-MH  - *Disease Progression
-MH  - Spinocerebellar Ataxias/genetics/diagnostic imaging/pathology/complications
-MH  - Cerebellar Ataxia/genetics/diagnostic imaging/pathology
-MH  - Cerebellum/pathology/diagnostic imaging
-MH  - Fibroblast Growth Factors/genetics
-MH  - Meningeal Neoplasms/genetics/surgery/diagnostic imaging/pathology/complications
+MH  - Disease Progression
+MH  - *Cerebellar Ataxia/genetics/diagnostic imaging
+MH  - *Cerebellum/diagnostic imaging/pathology
 MH  - Middle Aged
-MH  - Spinocerebellar Degenerations
+MH  - *Spinocerebellar Ataxias/genetics/diagnostic imaging
+MH  - Fibroblast Growth Factors/genetics
+MH  - Magnetic Resonance Imaging
 PMC - PMC11739311
 OTO - NOTNLM
 OT  - FGF14 mutation
@@ -2193,7 +2377,7 @@ PMID- 39604554
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250426
-LR  - 20250426
+LR  - 20250517
 IS  - 1476-5438 (Electronic)
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)
@@ -2915,7 +3099,7 @@ PMID- 39378335
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250424
-LR  - 20250424
+LR  - 20250515
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -6653,7 +6837,7 @@ SO  - Ann Clin Transl Neurol. 2024 Jan;11(1):96-104. doi: 10.1002/acn3.51936. Ep
 PMID- 37646005
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250104
+LR  - 20250530
 IS  - 2376-7839 (Print)
 IS  - 2376-7839 (Electronic)
 IS  - 2376-7839 (Linking)
@@ -7191,7 +7375,7 @@ PMID- 37578187
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231110
-LR  - 20240320
+LR  - 20250530
 IS  - 1468-1331 (Electronic)
 IS  - 1351-5101 (Linking)
 VI  - 30
@@ -7519,7 +7703,7 @@ PMID- 37399286
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240117
-LR  - 20240808
+LR  - 20250530
 IS  - 1468-330X (Electronic)
 IS  - 0022-3050 (Print)
 IS  - 0022-3050 (Linking)
@@ -7956,7 +8140,7 @@ PMID- 37165652
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231010
-LR  - 20240320
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 146
@@ -8137,7 +8321,7 @@ PMID- 36516086
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230117
-LR  - 20250402
+LR  - 20250530
 IS  - 1533-4406 (Electronic)
 IS  - 0028-4793 (Print)
 IS  - 0028-4793 (Linking)
@@ -10623,10 +10807,10 @@ AD  - From the Departments of Neurology and Neurosurgery (D.P., M.-J.D., J.A.S.,
       Laboratory, Department of Psychiatry (M.P.), National Institute of Mental Health 
       and Neurosciences, Bengaluru, India.
 LA  - eng
-GR  - 2R01NS072248-11A1/NS/NINDS NIH HHS/United States
-GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 GR  - WT_/Wellcome Trust/United Kingdom
+GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 GR  - R01 NS072248/NS/NINDS NIH HHS/United States
+GR  - 2R01NS072248-11A1/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't

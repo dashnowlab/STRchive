@@ -1,18 +1,261 @@
 
-PMID- 40273470
+PMID- 40417743
 OWN - NLM
 STAT- Publisher
-LR  - 20250424
+LR  - 20250526
+IS  - 1530-0366 (Electronic)
+IS  - 1098-3600 (Linking)
+DP  - 2025 May 22
+TI  - A genome-wide approach for the discovery of novel repeat expansion disorders in 
+      the Undiagnosed Diseases Network cohort.
+PG  - 101462
+LID - S1098-3600(25)00109-1 [pii]
+LID - 10.1016/j.gim.2025.101462 [doi]
+AB  - Purpose The Undiagnosed Diseases Network (UDN) is a National Institutes of Health 
+      funded research study that aims to solve a broad clinical spectrum of challenging 
+      rare disease cases. Participants receive care from multiple clinical specialists, 
+      who collaborate to perform deep phenotyping and state-of-the-art multi-omics 
+      analyses. As bioinformatics of short-read sequencing has matured, the discovery 
+      of repeat expansion disorders (REDs) is accelerating. REDs comprise  approximately 60 
+      characterized disorders, which exhibit a broad spectrum of phenotypes. Thus, a 
+      largely unbiased genome-wide approach in a phenotypically diverse sample will add 
+      to the diagnostic depth, explore the limits of short-read genome analysis, and 
+      establish novel candidate RED loci. Methods Here, we present a genome-wide 
+      analysis of repeat expansions conducted on 1,018 genomes from the UDN. By 
+      leveraging two distinct bioinformatics tools, ExpansionHunter Denovo and STRling, 
+      we show that repeat expansions can be accurately detected in short-read genomes. 
+      Results We demonstrate that a genotype-first approach can diagnose atypical cases 
+      of known REDs and provide valuable clinical insights. We present clinical details 
+      on participants with expansions in ATXN7, DMPK, FMR1, GLS, HTT, RFC1, AFF3, and 
+      MARCH6. Importantly, we highlight two cases of juvenile Huntington disease that 
+      were discovered through our analysis. Finally, we present a list of novel 
+      candidate TRs that could potentially be pathogenic if expanded. Conclusion 
+      Importantly, our approach showcases the bioinformatic advancements in genome 
+      analysis for RED detection and highlights its practical applications.
+CI  - Copyright (c) 2025. Published by Elsevier Inc.
+FAU - Fazal, Sarah
+AU  - Fazal S
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+FAU - Dashnow, Harriet
+AU  - Dashnow H
+AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
+FAU - Dohrn, Maike F
+AU  - Dohrn MF
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL; Department of Neurology, RWTH Aachen University Faculty of Medicine, 
+      Aachen, Germany.
+FAU - Raposo, Jacquelyn
+AU  - Raposo J
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+FAU - Hiatt, Laurel
+AU  - Hiatt L
+AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
+FAU - Danzi, Matt C
+AU  - Danzi MC
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+FAU - Xu, Isaac R L
+AU  - Xu IRL
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+FAU - Toro, Camilo
+AU  - Toro C
+AD  - NIH Undiagnosed Diseases Program, Common Fund, Office of the Director, National 
+      Institutes of Health, Bethesda, MD.
+FAU - Adams, David R
+AU  - Adams DR
+AD  - NIH Undiagnosed Diseases Program, Common Fund, Office of the Director, National 
+      Institutes of Health, Bethesda, MD.
+FAU - Usdin, Karen
+AU  - Usdin K
+AD  - Gene Structure and Disease Section, Laboratory of Cell and Molecular Biology, 
+      National Institute of Diabetes and Digestive and Kidney Diseases, National 
+      Institutes of Health, Bethesda, MD.
+FAU - Hayward, Bruce
+AU  - Hayward B
+AD  - Gene Structure and Disease Section, Laboratory of Cell and Molecular Biology, 
+      National Institute of Diabetes and Digestive and Kidney Diseases, National 
+      Institutes of Health, Bethesda, MD.
+FAU - Kobren, Shilpa Nadimpalli
+AU  - Kobren SN
+AD  - Department of Biomedical Informatics, Harvard Medical School, Boston, MA.
+FAU - Sunyaev, Shamil R
+AU  - Sunyaev SR
+AD  - Department of Biomedical Informatics, Harvard Medical School, Boston, MA.
+FAU - Spillmann, Rebecca C
+AU  - Spillmann RC
+AD  - Division of Medical Genetics, Department of Pediatrics, Duke University School of 
+      Medicine, Durham, NC.
+FAU - Shashi, Vandana
+AU  - Shashi V
+AD  - Division of Medical Genetics, Department of Pediatrics, Duke University School of 
+      Medicine, Durham, NC.
+FAU - Rebelo, Adriana
+AU  - Rebelo A
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+FAU - Bademci, Guney
+AU  - Bademci G
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+CN  - Undiagnosed Diseases Network
+FAU - Tekin, Mustafa
+AU  - Tekin M
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+FAU - Quinlan, Aaron R
+AU  - Quinlan AR
+AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
+FAU - Zuchner, Stephan
+AU  - Zuchner S
+AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genetics, University of Miami Miller School of Medicine, 
+      Miami, FL.
+LA  - eng
+PT  - Journal Article
+DEP - 20250522
+PL  - United States
+TA  - Genet Med
+JT  - Genetics in medicine : official journal of the American College of Medical 
+      Genetics
+JID - 9815831
+SB  - IM
+OTO - NOTNLM
+OT  - bioinformatics
+OT  - repeat expansion
+OT  - undiagnosed
+EDAT- 2025/05/26 12:37
+MHDA- 2025/05/26 12:37
+CRDT- 2025/05/26 06:18
+PHST- 2024/08/07 00:00 [received]
+PHST- 2025/05/15 00:00 [revised]
+PHST- 2025/05/16 00:00 [accepted]
+PHST- 2025/05/26 12:37 [medline]
+PHST- 2025/05/26 12:37 [pubmed]
+PHST- 2025/05/26 06:18 [entrez]
+AID - S1098-3600(25)00109-1 [pii]
+AID - 10.1016/j.gim.2025.101462 [doi]
+PST - aheadofprint
+SO  - Genet Med. 2025 May 22:101462. doi: 10.1016/j.gim.2025.101462.
+
+PMID- 40313272
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20250502
+DP  - 2025 Apr 23
+TI  - Heterozygous and Homozygous RFC1 AAGGG Repeat Expansions are Common in Idiopathic 
+      Peripheral Neuropathy.
+LID - 2025.04.18.25325809 [pii]
+LID - 10.1101/2025.04.18.25325809 [doi]
+AB  - OBJECTIVE: Biallelic intronic AAGGG repeat expansions in RFC1 cause Cerebellar 
+      Ataxia with Neuropathy and Vestibular Areflexia Syndrome and may also contribute 
+      to isolated sensory neuropathy. The clinical significance of both heterozygous 
+      and biallelic RFC1 expansions in more diverse patient populations remains 
+      unclear-partly due to the absence of accurate, user-friendly computational tools 
+      specifically tailored for tandem repeat analysis. METHODS: To discern the 
+      relationship between RFC1 expansions and idiopathic peripheral neuropathy (iPN), 
+      we performed whole-genome sequencing (WGS) followed by PCR-based confirmation in 
+      a large, well-characterized U.S. cohort consisting of 788 iPN patients (369 pure 
+      small fiber neuropathy (SFN), 266 sensorimotor, 144 pure sensory, and 9 pure 
+      motor). We developed an integrative pipeline combining ExpansionHunter Denovo and 
+      Expansion Hunter coupled with unsupervised clustering to reliably detect and 
+      genotype RFC1 expansions from short-read WGS data, achieving 98.2% concordance 
+      with repeat-primed PCR based validation. RESULTS: Biallelic RFC1 expansions were 
+      absent in 879 controls but present in 2.8% of iPN patients (Fisher's exact p = 
+      5.9x10 (-8) ), including 6.2% of pure sensory, 2.2% of SFN, and 1.5% of 
+      sensorimotor neuropathy, indicating that motor nerve involvement should not 
+      exclude patients from RFC1 repeat screening. We also observed a markedly 
+      increased frequency of monoallelic expansions in iPN compared to controls (13.2% 
+      versus 2.5%; Fisher's exact p = 3.4x10 (-17) ), without evidence of secondary 
+      mutations or expansions on the other allele. INTERPRETATION: Our approach 
+      provides a robust, cost-effective method for detecting RFC1 expansions from WGS 
+      data. Our findings indicate that both heterozygous and homozygous AAGGG repeat 
+      expansions in RFC1 can contribute to development of iPN.
+FAU - Tang, Zitian
+AU  - Tang Z
+AUID- ORCID: 0000-0002-5159-5695
+FAU - Ovunc, Sinem S
+AU  - Ovunc SS
+FAU - Mehinovic, Elle
+AU  - Mehinovic E
+FAU - Thomas, Simone
+AU  - Thomas S
+AUID- ORCID: 0009-0003-9172-2876
+FAU - Ulibarri, Jenna
+AU  - Ulibarri J
+FAU - Li, Zefan
+AU  - Li Z
+FAU - Baldridge, Dustin
+AU  - Baldridge D
+FAU - Cruchaga, Carlos
+AU  - Cruchaga C
+AUID- ORCID: 0000-0002-0276-2899
+FAU - Johnson, Matt
+AU  - Johnson M
+FAU - Milbrandt, Jeffrey
+AU  - Milbrandt J
+AUID- ORCID: 0000-0002-5477-7689
+FAU - Callaghan, Brian
+AU  - Callaghan B
+CN  - PNRR Study Group
+FAU - Hoke, Ahmet
+AU  - Hoke A
+AUID- ORCID: 0000-0003-1215-3373
+FAU - Todd, Peter K
+AU  - Todd PK
+AUID- ORCID: 0000-0003-4781-6376
+FAU - Jin, Sheng Chih
+AU  - Jin SC
+AUID- ORCID: 0000-0002-5777-7262
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20250423
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC12045428
+EDAT- 2025/05/02 11:06
+MHDA- 2025/05/02 11:07
+PMCR- 2025/05/01
+CRDT- 2025/05/02 04:23
+PHST- 2025/05/02 11:07 [medline]
+PHST- 2025/05/02 11:06 [pubmed]
+PHST- 2025/05/02 04:23 [entrez]
+PHST- 2025/05/01 00:00 [pmc-release]
+AID - 2025.04.18.25325809 [pii]
+AID - 10.1101/2025.04.18.25325809 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2025 Apr 23:2025.04.18.25325809. doi: 
+      10.1101/2025.04.18.25325809.
+
+PMID- 40273470
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250516
+LR  - 20250528
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 115
-DP  - 2025 Apr 23
+DP  - 2025 May
 TI  - The genetic landscape of sporadic adult-onset degenerative ataxia: a multi-modal 
       genetic study of 377 consecutive patients from the longitudinal multi-centre 
       SPORTAX cohort.
 PG  - 105715
 LID - S2352-3964(25)00159-8 [pii]
 LID - 10.1016/j.ebiom.2025.105715 [doi]
+LID - 105715
 AB  - BACKGROUND: While most sporadic adult-onset neurodegenerative diseases have only 
       a minor monogenic component, given several recently identified late adult-onset 
       ataxia genes, the genetic burden may be substantial in sporadic adult-onset 
@@ -173,12 +416,28 @@ AD  - Division of Translational Genomics of Neurodegenerative Diseases,
       Tubingen, Germany. Electronic address: matthis.synofzik@uni-tuebingen.de.
 LA  - eng
 PT  - Journal Article
+PT  - Multicenter Study
 DEP - 20250423
 PL  - Netherlands
 TA  - EBioMedicine
 JT  - EBioMedicine
 JID - 101647039
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - Adult
+MH  - Age of Onset
+MH  - Aged
+MH  - Longitudinal Studies
+MH  - *Ataxia/genetics/diagnosis
+MH  - High-Throughput Nucleotide Sequencing
+MH  - *Genetic Predisposition to Disease
+MH  - Genetic Testing
+MH  - Genetic Association Studies
+MH  - Prospective Studies
+PMC - PMC12051541
 OTO - NOTNLM
 OT  - Adult-onset ataxia
 OT  - CANVAS
@@ -263,18 +522,22 @@ IR  - Grobe-Einsler M
 FIR - Giordano, Ilaria
 IR  - Giordano I
 EDAT- 2025/04/24 18:53
-MHDA- 2025/04/24 18:53
+MHDA- 2025/05/17 17:01
+PMCR- 2025/04/23
 CRDT- 2025/04/24 18:00
 PHST- 2024/08/20 00:00 [received]
 PHST- 2025/03/28 00:00 [revised]
 PHST- 2025/04/04 00:00 [accepted]
-PHST- 2025/04/24 18:53 [medline]
+PHST- 2025/05/17 17:01 [medline]
 PHST- 2025/04/24 18:53 [pubmed]
 PHST- 2025/04/24 18:00 [entrez]
+PHST- 2025/04/23 00:00 [pmc-release]
 AID - S2352-3964(25)00159-8 [pii]
+AID - 105715 [pii]
 AID - 10.1016/j.ebiom.2025.105715 [doi]
-PST - aheadofprint
-SO  - EBioMedicine. 2025 Apr 23;115:105715. doi: 10.1016/j.ebiom.2025.105715.
+PST - ppublish
+SO  - EBioMedicine. 2025 May;115:105715. doi: 10.1016/j.ebiom.2025.105715. Epub 2025 
+      Apr 23.
 
 PMID- 40241639
 OWN - NLM
@@ -343,15 +606,17 @@ SO  - Neurol Neurochir Pol. 2025 Apr 17. doi: 10.5603/pjnns.103747.
 
 PMID- 40221271
 OWN - NLM
-STAT- Publisher
-LR  - 20250412
+STAT- In-Process
+LR  - 20250521
 IS  - 1872-8952 (Electronic)
 IS  - 1388-2457 (Linking)
-DP  - 2025 Apr 5
-TI  - This is a response to the letter to the editor submitted by Dr. Berciano 
-      regarding the article entitled: "Spectrum disorder of RFC1 expansions/CANVAS: 
-      Clinical and electrophysiological characterization of a group of 31 patients." 
+VI  - 174
+DP  - 2025 Jun
+TI  - Response to the letter to the editor submitted by Dr. Berciano regarding the 
+      article entitled: "Spectrum disorder of RFC1 expansions/CANVAS: Clinical and 
+      electrophysiological characterization of a group of 31 patients." 
       https://doi.org/10.1016/j.clinph.2024.12.007.
+PG  - 222
 LID - S1388-2457(25)00456-0 [pii]
 LID - 10.1016/j.clinph.2025.03.036 [doi]
 FAU - Lainez, Elena
@@ -377,14 +642,14 @@ MHDA- 2025/04/13 00:44
 CRDT- 2025/04/12 21:58
 PHST- 2025/03/18 00:00 [received]
 PHST- 2025/03/23 00:00 [accepted]
-PHST- 2025/04/13 00:44 [medline]
 PHST- 2025/04/13 00:44 [pubmed]
+PHST- 2025/04/13 00:44 [medline]
 PHST- 2025/04/12 21:58 [entrez]
 AID - S1388-2457(25)00456-0 [pii]
 AID - 10.1016/j.clinph.2025.03.036 [doi]
-PST - aheadofprint
-SO  - Clin Neurophysiol. 2025 Apr 5:S1388-2457(25)00456-0. doi: 
-      10.1016/j.clinph.2025.03.036.
+PST - ppublish
+SO  - Clin Neurophysiol. 2025 Jun;174:222. doi: 10.1016/j.clinph.2025.03.036. Epub 2025 
+      Apr 5.
 
 PMID- 40211677
 OWN - NLM
@@ -533,13 +798,15 @@ SO  - J Peripher Nerv Syst. 2025 Jun;30(2):e70020. doi: 10.1111/jns.70020.
 
 PMID- 40204545
 OWN - NLM
-STAT- Publisher
-LR  - 20250409
+STAT- In-Process
+LR  - 20250521
 IS  - 1872-8952 (Electronic)
 IS  - 1388-2457 (Linking)
-DP  - 2025 Apr 5
+VI  - 174
+DP  - 2025 Jun
 TI  - Comment on "Spectrum disorder of RFC1 expansions/CANVAS: Clinical and 
       electrophysiological characterization of a group of 31 patients".
+PG  - 220-221
 LID - S1388-2457(25)00457-2 [pii]
 LID - 10.1016/j.clinph.2025.03.037 [doi]
 FAU - Berciano, Jose
@@ -574,20 +841,20 @@ CRDT- 2025/04/09 21:58
 PHST- 2025/03/02 00:00 [received]
 PHST- 2025/03/10 00:00 [revised]
 PHST- 2025/03/23 00:00 [accepted]
-PHST- 2025/04/10 00:20 [medline]
 PHST- 2025/04/10 00:20 [pubmed]
+PHST- 2025/04/10 00:20 [medline]
 PHST- 2025/04/09 21:58 [entrez]
 AID - S1388-2457(25)00457-2 [pii]
 AID - 10.1016/j.clinph.2025.03.037 [doi]
-PST - aheadofprint
-SO  - Clin Neurophysiol. 2025 Apr 5:S1388-2457(25)00457-2. doi: 
-      10.1016/j.clinph.2025.03.037.
+PST - ppublish
+SO  - Clin Neurophysiol. 2025 Jun;174:220-221. doi: 10.1016/j.clinph.2025.03.037. Epub 
+      2025 Apr 5.
 
 PMID- 40141365
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20250327
-LR  - 20250329
+DCOM- 20250515
+LR  - 20250515
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -652,9 +919,10 @@ JT  - International journal of molecular sciences
 JID - 101092791
 SB  - IM
 MH  - Humans
-MH  - *Microsatellite Repeats/genetics
 MH  - Whole Genome Sequencing/methods
-MH  - DNA Repeat Expansion
+MH  - Microsatellite Repeats/genetics
+MH  - *DNA Repeat Expansion
+MH  - Huntington Disease/genetics/diagnosis
 MH  - High-Throughput Nucleotide Sequencing/methods
 PMC - PMC11942491
 OTO - NOTNLM
@@ -691,8 +959,9 @@ PMID- 40113266
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250414
-LR  - 20250414
+LR  - 20250504
 IS  - 1549-5469 (Electronic)
+IS  - 1088-9051 (Print)
 IS  - 1088-9051 (Linking)
 VI  - 35
 IP  - 4
@@ -847,14 +1116,17 @@ MH  - Microsatellite Repeats
 MH  - Replication Protein C/genetics
 MH  - Myotonic Dystrophy/genetics/diagnosis
 MH  - Cerebellar Ataxia/genetics
+PMC - PMC12047237
 EDAT- 2025/03/21 00:22
 MHDA- 2025/04/15 00:25
+PMCR- 2025/04/01
 CRDT- 2025/03/20 21:23
 PHST- 2024/04/19 00:00 [received]
 PHST- 2025/02/24 00:00 [accepted]
 PHST- 2025/04/15 00:25 [medline]
 PHST- 2025/03/21 00:22 [pubmed]
 PHST- 2025/03/20 21:23 [entrez]
+PHST- 2025/04/01 00:00 [pmc-release]
 AID - gr.279491.124 [pii]
 AID - 10.1101/gr.279491.124 [doi]
 PST - epublish
@@ -1216,7 +1488,7 @@ PMID- 39812846
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250501
-LR  - 20250501
+LR  - 20250521
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 272
@@ -1527,7 +1799,7 @@ PMID- 39721397
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250428
-LR  - 20250428
+LR  - 20250519
 IS  - 1872-8952 (Electronic)
 IS  - 1388-2457 (Linking)
 VI  - 170
@@ -2642,7 +2914,7 @@ PMID- 39231235
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240904
-LR  - 20250218
+LR  - 20250530
 IS  - 2375-2548 (Electronic)
 IS  - 2375-2548 (Linking)
 VI  - 10
@@ -2761,9 +3033,9 @@ AD  - Ann Arbor Veterans Administration Healthcare, Ann Arbor, MI, USA.
 LA  - eng
 GR  - R01 NS086810/NS/NINDS NIH HHS/United States
 GR  - P50 HD104463/HD/NICHD NIH HHS/United States
+GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
 GR  - R25 GM086262/GM/NIGMS NIH HHS/United States
 GR  - I01 BX004842/BX/BLRD VA/United States
-GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
 GR  - R01 NS113943/NS/NINDS NIH HHS/United States
 GR  - R21 NS129096/NS/NINDS NIH HHS/United States
 GR  - R01 NS097542/NS/NINDS NIH HHS/United States
@@ -4851,7 +5123,7 @@ PMID- 38193360
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240503
-LR  - 20241203
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -5161,9 +5433,9 @@ GR  - R01 NS124854/NS/NINDS NIH HHS/United States
 GR  - G1000848/MRC_/Medical Research Council/United Kingdom
 GR  - MR/N025431/2/MRC_/Medical Research Council/United Kingdom
 GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
-GR  - WT_/Wellcome Trust/United Kingdom
 GR  - MR/V009346/1/MRC_/Medical Research Council/United Kingdom
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 PL  - England
@@ -5557,7 +5829,7 @@ PMID- 38145611
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240122
-LR  - 20240214
+LR  - 20250530
 IS  - 1873-5126 (Electronic)
 IS  - 1353-8020 (Linking)
 VI  - 119
@@ -6731,7 +7003,7 @@ PMID- 37578187
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231110
-LR  - 20240320
+LR  - 20250530
 IS  - 1468-1331 (Electronic)
 IS  - 1351-5101 (Linking)
 VI  - 30
@@ -7359,7 +7631,7 @@ PMID- 37450567
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231215
-LR  - 20240320
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -7597,11 +7869,11 @@ AD  - Department of Neuromuscular Diseases, University College London, London WC
 AD  - Department of Brain and Behavioral Sciences, University of Pavia, Pavia 27100, 
       Italy.
 LA  - eng
-GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
 GR  - MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
-GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
+GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 PL  - England
@@ -7801,7 +8073,7 @@ PMID- 37414537
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240117
-LR  - 20240808
+LR  - 20250530
 IS  - 1468-330X (Electronic)
 IS  - 0022-3050 (Print)
 IS  - 0022-3050 (Linking)
@@ -7913,7 +8185,7 @@ PMID- 37399286
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240117
-LR  - 20240808
+LR  - 20250530
 IS  - 1468-330X (Electronic)
 IS  - 0022-3050 (Print)
 IS  - 0022-3050 (Linking)
@@ -8604,7 +8876,7 @@ PMID- 36289003
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230201
-LR  - 20230915
+LR  - 20250530
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Print)
 IS  - 0028-3878 (Linking)
@@ -9738,7 +10010,7 @@ PMID- 36214978
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230714
-LR  - 20230718
+LR  - 20250530
 IS  - 2240-2993 (Electronic)
 IS  - 0300-9009 (Linking)
 VI  - 123
@@ -11963,7 +12235,7 @@ PMID- 34927205
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220704
-LR  - 20220728
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 145
@@ -12314,7 +12586,7 @@ PMID- 34537679
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20211116
-LR  - 20240826
+LR  - 20250530
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Print)
 IS  - 0022-510X (Linking)
@@ -12536,7 +12808,7 @@ PMID- 33969391
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210923
-LR  - 20220627
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -15094,7 +15366,7 @@ PMID- 33103729
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210216
-LR  - 20221207
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -15269,7 +15541,7 @@ PMID- 33068477
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20201117
-LR  - 20210406
+LR  - 20250530
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
 VI  - 35
@@ -15789,7 +16061,7 @@ PMID- 32910249
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210618
-LR  - 20220129
+LR  - 20250530
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -16124,7 +16396,7 @@ PMID- 32851396
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210216
-LR  - 20241205
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -16231,7 +16503,7 @@ LA  - eng
 GR  - 204841/Z/16/Z/WT_/Wellcome Trust/United Kingdom
 GR  - U54 NS065712/NS/NINDS NIH HHS/United States
 GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
-GR  - Wellcome Trust/United Kingdom
+GR  - WT_/Wellcome Trust/United Kingdom
 GR  - G0601943/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
@@ -16390,7 +16662,7 @@ PMID- 32694621
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210618
-LR  - 20210710
+LR  - 20250530
 IS  - 1435-232X (Electronic)
 IS  - 1434-5161 (Linking)
 VI  - 65
@@ -17100,7 +17372,7 @@ PMID- 32040566
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200706
-LR  - 20250129
+LR  - 20250530
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -17313,20 +17585,19 @@ AD  - Department of Neuromuscular Disease, UCL Queen Square Institute of Neurolo
       The National Hospital for Neurology, London, UK.
 LA  - eng
 GR  - 206675/Z/17/Z/WT_/Wellcome Trust/United Kingdom
-GR  - MR/N025431/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/N010035/1/MRC_/Medical Research Council/United Kingdom
-GR  - U54 NS065712/NS/NINDS NIH HHS/United States
 GR  - G1000848/MRC_/Medical Research Council/United Kingdom
+GR  - U54 NS065712/NS/NINDS NIH HHS/United States
+GR  - MR/N025431/2/MRC_/Medical Research Council/United Kingdom
 GR  - 309548/ERC_/European Research Council/International
-GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/T001712/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/N025431/1/MRC_/Medical Research Council/United Kingdom
 GR  - MC_UU_00015/9/MRC_/Medical Research Council/United Kingdom
-GR  - WT_/Wellcome Trust/United Kingdom
+GR  - 212219/Z/18/Z/WT_/Wellcome Trust/United Kingdom
 GR  - 203148/Z/16/Z/WT_/Wellcome Trust/United Kingdom
 GR  - MC_UU_00015/7/MRC_/Medical Research Council/United Kingdom
-GR  - MR/N025431/2/MRC_/Medical Research Council/United Kingdom
-GR  - 212219/Z/18/Z/WT_/Wellcome Trust/United Kingdom
+GR  - MR/N010035/1/MRC_/Medical Research Council/United Kingdom
 GR  - G0601943/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 PL  - England
@@ -17970,7 +18241,7 @@ PMID- 30926972
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20190419
-LR  - 20241211
+LR  - 20250530
 IS  - 1546-1718 (Electronic)
 IS  - 1061-4036 (Print)
 IS  - 1061-4036 (Linking)
@@ -18127,23 +18398,23 @@ AD  - Neurogenetics Laboratory, UCL Queen Square Institute of Neurology and The
       National Hospital for Neurology and Neurosurgery, London, UK. 
       h.houlden@ucl.ac.uk.
 LA  - eng
-GR  - FRATTA/JAN15/946-795/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G108/638/MRC_/Medical Research Council/United Kingdom
-GR  - MR/S006508/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/J004758/1/MRC_/Medical Research Council/United Kingdom
-GR  - WT_/Wellcome Trust/United Kingdom
-GR  - G0601943/MRC_/Medical Research Council/United Kingdom
 GR  - G0701018/MRC_/Medical Research Council/United Kingdom
-GR  - MR/M008606/1/MRC_/Medical Research Council/United Kingdom
-GR  - G0802760/MRC_/Medical Research Council/United Kingdom
-GR  - G1001253/MRC_/Medical Research Council/United Kingdom
-GR  - U54 NS065712/NS/NINDS NIH HHS/United States
-GR  - R605/0717/DMT_/The Dunhill Medical Trust/United Kingdom
-GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/N004272/1/MRC_/Medical Research Council/United Kingdom
-GR  - R01 NS072248/NS/NINDS NIH HHS/United States
 GR  - G1100578/MRC_/Medical Research Council/United Kingdom
+GR  - MR/N004272/1/MRC_/Medical Research Council/United Kingdom
+GR  - U54 NS065712/NS/NINDS NIH HHS/United States
+GR  - G1001253/MRC_/Medical Research Council/United Kingdom
+GR  - FRATTA/JAN15/946-795/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - MR/J004758/1/MRC_/Medical Research Council/United Kingdom
+GR  - G0802760/MRC_/Medical Research Council/United Kingdom
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - R605/0717/DMT_/The Dunhill Medical Trust/United Kingdom
+GR  - MR/M008606/1/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S006508/1/MRC_/Medical Research Council/United Kingdom
+GR  - G108/638/MRC_/Medical Research Council/United Kingdom
+GR  - R01 NS072248/NS/NINDS NIH HHS/United States
 GR  - R01 NS075764/NS/NINDS NIH HHS/United States
+GR  - G0601943/MRC_/Medical Research Council/United Kingdom
+GR  - MR/S01165X/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
