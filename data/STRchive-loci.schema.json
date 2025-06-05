@@ -361,16 +361,16 @@
         "type": [ "string", "null" ]
       },
       "locus_tags": {
-        "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics",
-        "examples": [ "somatic_instability", "contraction", "anticipation", "conflicting_evidence", "sparse_evidence", "maternal_expansion", "length_affects_penetrance", "length_affects_severity", "length_affects_onset" ],
+        "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters. Some tags have specific meanings, such as sparse_evidence for loci with < 5 independent cases after 5 years of publication, or conflicting_evidence for loci where there is evidence for and against pathogenicity in the literature resulting in concern that the locus may not be pathogenic.",
+        "examples": [ "somatic_instability", "contraction", "anticipation", "conflicting_evidence", "sparse_evidence", "maternal_expansion", "paternal_expansion", "length_affects_penetrance", "length_affects_severity", "length_affects_onset", "motif_affects_onset", "motif_affects_penetrance" ],
         "type": "array",
         "items": {
           "type": [ "string", "null" ]
         }
       },
       "disease_tags": {
-        "description": "Tags for the disease, used for grouping similar diseases",
-        "examples": [ "ataxia" ],
+        "description": "Tags for the disease, used for grouping similar diseases and for flagging diseases with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters.",
+        "examples": [ "ataxia", "epilepsy", "phenotypic_spectrum" ],
         "type": "array",
         "items": {
           "type": [ "string", "null" ]
