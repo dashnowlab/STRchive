@@ -12,27 +12,27 @@
         "type": [ "string", "null" ]
       },
       "start_hg38": {
-        "description": "Start position in hg38 reference genome",
+        "description": "Start position in hg38 reference genome. Coordinates are 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "stop_hg38": {
-        "description": "Stop position in hg38 reference genome",
+        "description": "Stop position in hg38 reference genome. Coordinates are 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "start_hg19": {
-        "description": "Start position in hg19 reference genome",
+        "description": "Start position in hg19 reference genome. Coordinates are 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "stop_hg19": {
-        "description": "Stop position in hg19 reference genome",
+        "description": "Stop position in hg19 reference genome. Coordinates are 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "start_t2t": {
-        "description": "Start position in chm13-T2T reference genome",
+        "description": "Start position in chm13-T2T reference genome. Coordinates are 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "stop_t2t": {
-        "description": "Stop position in chm13-T2T reference genome",
+        "description": "Stop position in chm13-T2T reference genome. Coordinates are 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "id": {
@@ -110,7 +110,8 @@
         "type": [ "string", "null" ]
       },
       "flank_motif": {
-        "description": "Structure of the locus with any flanking motifs. The pathogenic locus should be indicated with n copies. For example (CAG)nCAACAG(CCG)12",
+        "description": "Structure of the locus with any flanking motifs. The pathogenic locus should be indicated with n copies.",
+        "examples": [ "(CAG)nCAACAG(CCG)12" ],
         "type": [ "string", "null" ]
       },
       "locus_structure": {
@@ -213,7 +214,7 @@
         "type": [ "string", "null" ]
       },
       "mechanism_detail": {
-        "description": "Detailed mechanism of disease with citations e.g. Loss of function [pmid:38467784]",
+        "description": "Detailed mechanism of disease with citations e.g. Loss of function [@pmid:38467784]",
         "type": [ "string", "null" ]
       },
       "source": {
@@ -226,7 +227,7 @@
         }
       },
       "details": {
-        "description": "Detailed information about the locus and evidence for pathogenicity, with citations in the format [pmid:38467784]",
+        "description": "Detailed information about the repeat locus and evidence for pathogenicity, with citations in the format [@pmid:38467784]. This could include information about motifs, interruptions, and other features of the repeat.",
         "type": [ "string", "null" ]
       },
       "omim": {
@@ -245,7 +246,8 @@
         "pattern": "^(?:[0-9]*[.])?[0-9]+\/[0-9]+$"
       },
       "prevalence_details": {
-        "description": "Details about the prevalence of the disease including affected populations and citations in the format [pmid:38467784]",
+        "description": "Details about the prevalence of the disease including affected populations and citations in the format [@pmid:38467784]",
+        "examples": [ "1/100000 in European populations [@pmid:38467784]" ],
         "type": [ "string", "null" ]
       },
       "stripy": {
@@ -287,7 +289,7 @@
       },
       "year": {
         "description": "Year of first publication of the tandem repeat disease locus with citations",
-        "examples": [ "2023", "2021 [pmid:38467784]" ],
+        "examples": [ "2023", "2021 [@pmid:38467784]" ],
         "type": [ "string", "null" ]
       },
       "medgen": {
@@ -355,7 +357,7 @@
       },
       "disease_description": {
         "description": "Description of the disease with citations",
-        "examples": [ "Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [pmid:38876750]" ],
+        "examples": [ "Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [@pmid:38876750]" ],
         "type": [ "string", "null" ]
       },
       "locus_tags": {
@@ -375,7 +377,7 @@
         }
       },
       "references": {
-        "description": "All references from the fields above in the format. Automatically generated.",
+        "description": "All references from the fields above. Automatically generated from all in-text citations.",
         "examples": [ "pmid:38467784" ],
         "type": "array",
         "items": {
@@ -384,7 +386,7 @@
         }
       },
       "additional_literature": {
-        "description": "Additional literature related to this locus in the format. Should not be included in the references field. Automatically generated.",
+        "description": "Additional literature related to this locus in the format. Should not be included in the references field. Automatically generated from scripts that search the literature.",
         "examples": [ "pmid:38467784" ],
         "type": "array",
         "items": {
