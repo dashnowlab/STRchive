@@ -78,10 +78,10 @@ COIS- Declarations. Ethics Approval: Not applicable. Consent to Participate: Not
 EDAT- 2025/06/01 00:45
 MHDA- 2025/06/01 00:45
 CRDT- 2025/05/31 23:20
-PHST- 2025/06/01 00:45 [medline]
-PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/01/17 00:00 [received]
 PHST- 2025/05/18 00:00 [accepted]
+PHST- 2025/06/01 00:45 [medline]
+PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/05/31 23:20 [entrez]
 AID - 10.1007/s12035-025-05089-9 [pii]
 AID - 10.1007/s12035-025-05089-9 [doi]
@@ -687,13 +687,17 @@ SO  - Stem Cell Res. 2025 Feb;82:103638. doi: 10.1016/j.scr.2024.103638. Epub 20
 
 PMID- 39694906
 OWN - NLM
-STAT- Publisher
-LR  - 20241218
+STAT- MEDLINE
+DCOM- 20250603
+LR  - 20250603
 IS  - 1432-5241 (Electronic)
 IS  - 0364-216X (Linking)
-DP  - 2024 Dec 18
+VI  - 49
+IP  - 9
+DP  - 2025 May
 TI  - Enhancing Aesthetics in Bilateral DIEP Flap Breast Reconstruction: the Role of 
       Tissue Pre-Expansion.
+PG  - 2459-2466
 LID - 10.1007/s00266-024-04610-0 [doi]
 AB  - BACKGROUND: Achieving symmetrical outcomes in bilateral autologous breast 
       reconstruction is challenging, particularly in cases of asymmetrical recipient 
@@ -802,6 +806,20 @@ TA  - Aesthetic Plast Surg
 JT  - Aesthetic plastic surgery
 JID - 7701756
 SB  - IM
+MH  - Humans
+MH  - *Mammaplasty/methods
+MH  - Female
+MH  - Middle Aged
+MH  - Adult
+MH  - Esthetics
+MH  - Retrospective Studies
+MH  - *Perforator Flap/transplantation/blood supply
+MH  - Aged
+MH  - *Tissue Expansion/methods
+MH  - Treatment Outcome
+MH  - Mastectomy/methods
+MH  - *Breast Neoplasms/surgery
+MH  - Patient Satisfaction
 OTO - NOTNLM
 OT  - Aesthetic outcomes
 OT  - Autologous reconstruction
@@ -817,17 +835,18 @@ COIS- Declarations. Conflicts of interest: The authors declare that they have no
       standards. Informed Consent: For this type of study, informed consent is not 
       required.
 EDAT- 2024/12/19 00:20
-MHDA- 2024/12/19 00:20
+MHDA- 2025/06/04 00:29
 CRDT- 2024/12/18 23:13
 PHST- 2024/02/28 00:00 [received]
 PHST- 2024/12/01 00:00 [accepted]
-PHST- 2024/12/19 00:20 [medline]
+PHST- 2025/06/04 00:29 [medline]
 PHST- 2024/12/19 00:20 [pubmed]
 PHST- 2024/12/18 23:13 [entrez]
 AID - 10.1007/s00266-024-04610-0 [pii]
 AID - 10.1007/s00266-024-04610-0 [doi]
-PST - aheadofprint
-SO  - Aesthetic Plast Surg. 2024 Dec 18. doi: 10.1007/s00266-024-04610-0.
+PST - ppublish
+SO  - Aesthetic Plast Surg. 2025 May;49(9):2459-2466. doi: 10.1007/s00266-024-04610-0. 
+      Epub 2024 Dec 18.
 
 PMID- 39570490
 OWN - NLM

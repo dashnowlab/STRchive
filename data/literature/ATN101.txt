@@ -78,10 +78,10 @@ COIS- Declarations. Ethics Approval: Not applicable. Consent to Participate: Not
 EDAT- 2025/06/01 00:45
 MHDA- 2025/06/01 00:45
 CRDT- 2025/05/31 23:20
-PHST- 2025/06/01 00:45 [medline]
-PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/01/17 00:00 [received]
 PHST- 2025/05/18 00:00 [accepted]
+PHST- 2025/06/01 00:45 [medline]
+PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/05/31 23:20 [entrez]
 AID - 10.1007/s12035-025-05089-9 [pii]
 AID - 10.1007/s12035-025-05089-9 [doi]
@@ -280,14 +280,17 @@ SO  - Neuroradiology. 2025 Apr 29. doi: 10.1007/s00234-025-03624-y.
 
 PMID- 40263757
 OWN - NLM
-STAT- Publisher
-LR  - 20250423
+STAT- MEDLINE
+DCOM- 20250605
+LR  - 20250605
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Linking)
-DP  - 2025 Apr 23
+VI  - 34
+IP  - 12
+DP  - 2025 Jun 4
 TI  - The nuclear export signal mediates mutant atrophin-1-induced neuropathology in a 
       mouse model of DRPLA.
-LID - ddaf048 [pii]
+PG  - 1017-1025
 LID - 10.1093/hmg/ddaf048 [doi]
 AB  - Dentatorubral and pallidoluysian atrophy (DRPLA) is an autosomal dominant 
       neurodegenerative disorder, caused by a CAG expansion in the atrophin-1 gene. The 
@@ -353,12 +356,27 @@ AD  - Department of Psychiatry, Division of Neurobiology, Johns Hopkins Universi
       School of Medicine, 600 North Wolfe Street, Baltimore, MD 21287, United States.
 LA  - eng
 PT  - Journal Article
-DEP - 20250423
 PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
+RN  - 0 (atrophin-1)
+RN  - 0 (Nuclear Export Signals)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Nuclear Localization Signals)
 SB  - IM
+MH  - Animals
+MH  - Mice
+MH  - Disease Models, Animal
+MH  - Mice, Transgenic
+MH  - *Nuclear Export Signals/genetics
+MH  - *Nerve Tissue Proteins/genetics/metabolism
+MH  - *Myoclonic Epilepsies, Progressive/genetics/pathology/metabolism
+MH  - Humans
+MH  - Cell Nucleus/metabolism
+MH  - Mutation
+MH  - Nuclear Localization Signals/genetics
+MH  - Brain/pathology/metabolism
 OTO - NOTNLM
 OT  - CAG repeat
 OT  - DRPLA
@@ -366,18 +384,18 @@ OT  - NES
 OT  - NLS
 OT  - atrophin-1
 EDAT- 2025/04/23 06:26
-MHDA- 2025/04/23 06:26
+MHDA- 2025/06/05 12:31
 CRDT- 2025/04/23 00:43
 PHST- 2025/01/13 00:00 [received]
 PHST- 2025/03/12 00:00 [revised]
 PHST- 2025/03/28 00:00 [accepted]
-PHST- 2025/04/23 06:26 [medline]
 PHST- 2025/04/23 06:26 [pubmed]
+PHST- 2025/06/05 12:31 [medline]
 PHST- 2025/04/23 00:43 [entrez]
 AID - 8117958 [pii]
 AID - 10.1093/hmg/ddaf048 [doi]
-PST - aheadofprint
-SO  - Hum Mol Genet. 2025 Apr 23:ddaf048. doi: 10.1093/hmg/ddaf048.
+PST - ppublish
+SO  - Hum Mol Genet. 2025 Jun 4;34(12):1017-1025. doi: 10.1093/hmg/ddaf048.
 
 PMID- 40237283
 OWN - NLM

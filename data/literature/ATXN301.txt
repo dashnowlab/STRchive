@@ -78,10 +78,10 @@ COIS- Declarations. Ethics Approval: Not applicable. Consent to Participate: Not
 EDAT- 2025/06/01 00:45
 MHDA- 2025/06/01 00:45
 CRDT- 2025/05/31 23:20
-PHST- 2025/06/01 00:45 [medline]
-PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/01/17 00:00 [received]
 PHST- 2025/05/18 00:00 [accepted]
+PHST- 2025/06/01 00:45 [medline]
+PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/05/31 23:20 [entrez]
 AID - 10.1007/s12035-025-05089-9 [pii]
 AID - 10.1007/s12035-025-05089-9 [doi]
@@ -410,7 +410,7 @@ PMID- 40152810
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250523
-LR  - 20250523
+LR  - 20250605
 IS  - 1998-4022 (Electronic)
 IS  - 0028-3886 (Linking)
 VI  - 73
@@ -466,7 +466,6 @@ AU  - Jarullah B
 AD  - Department of Biotechnology and Microbiology, SMMPISR, Kadi Sarva 
       Vishwavidyalaya, Gandhinagar, Gujarat, India.
 LA  - eng
-PT  - Case Reports
 PT  - Journal Article
 DEP - 20250328
 PL  - India
@@ -21773,7 +21772,7 @@ PMID- 25700012
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160203
-LR  - 20250529
+LR  - 20250601
 IS  - 1535-9484 (Electronic)
 IS  - 1535-9476 (Print)
 IS  - 1535-9476 (Linking)
@@ -21842,10 +21841,11 @@ AD  - From the double daggerAstbury Centre for Structural Molecular Biology, Sch
       a.e.ashcroft@leeds.ac.uk s.e.radford@leeds.ac.uk.
 LA  - eng
 SI  - PDB/1YZB
+GR  - 092896/WT_/Wellcome Trust/United Kingdom
 GR  - 322408/ERC_/European Research Council/International
-GR  - BB/E012558/1/BB_/Biotechnology and Biological Sciences Research Council/United 
-      Kingdom
 GR  - BB/H024875/1/BB_/Biotechnology and Biological Sciences Research Council/United 
+      Kingdom
+GR  - BB/E012558/1/BB_/Biotechnology and Biological Sciences Research Council/United 
       Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
