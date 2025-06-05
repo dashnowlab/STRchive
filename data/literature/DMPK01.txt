@@ -1523,14 +1523,17 @@ SO  - Nat Commun. 2024 Oct 21;15(1):9062. doi: 10.1038/s41467-024-53378-z.
 
 PMID- 39415708
 OWN - NLM
-STAT- Publisher
-LR  - 20241017
+STAT- MEDLINE
+DCOM- 20250604
+LR  - 20250604
 IS  - 1098-5549 (Electronic)
 IS  - 0270-7306 (Linking)
-DP  - 2024 Oct 17
+VI  - 45
+IP  - 6
+DP  - 2025
 TI  - Small Molecule Screening Identifies HSP90 as a Modifier of RNA Foci in Myotonic 
       Dystrophy Type 1.
-PG  - 1-13
+PG  - 225-237
 LID - 10.1080/10985549.2024.2408025 [doi]
 AB  - Myotonic dystrophy type 1 (DM1) is a multisystemic disorder caused by a CTG 
       triplet repeat expansion within the 3' untranslated region of the DMPK gene. 
@@ -1592,21 +1595,39 @@ PL  - United States
 TA  - Mol Cell Biol
 JT  - Molecular and cellular biology
 JID - 8109087
+RN  - 0 (HSP90 Heat-Shock Proteins)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (RNA, Messenger)
+RN  - 0 (DMPK protein, human)
+RN  - 0 (STAT3 Transcription Factor)
+RN  - 0 (Small Molecule Libraries)
+RN  - 0 (STAT3 protein, human)
 SB  - IM
+MH  - *HSP90 Heat-Shock Proteins/metabolism/genetics/antagonists & inhibitors
+MH  - *Myotonic Dystrophy/genetics/metabolism
+MH  - Humans
+MH  - Myotonin-Protein Kinase/genetics/metabolism
+MH  - Cell Line
+MH  - RNA, Messenger/metabolism/genetics
+MH  - Myoblasts/metabolism/drug effects
+MH  - Trinucleotide Repeat Expansion
+MH  - STAT3 Transcription Factor/metabolism
+MH  - Small Molecule Libraries/pharmacology
 OTO - NOTNLM
 OT  - HSP90
 OT  - Myotonic dystrophy
 OT  - RNA foci
 OT  - small molecule screening
 EDAT- 2024/10/17 10:05
-MHDA- 2024/10/17 10:05
+MHDA- 2025/06/05 00:28
 CRDT- 2024/10/17 04:22
-PHST- 2024/10/17 10:05 [medline]
 PHST- 2024/10/17 10:05 [pubmed]
+PHST- 2025/06/05 00:28 [medline]
 PHST- 2024/10/17 04:22 [entrez]
 AID - 10.1080/10985549.2024.2408025 [doi]
-PST - aheadofprint
-SO  - Mol Cell Biol. 2024 Oct 17:1-13. doi: 10.1080/10985549.2024.2408025.
+PST - ppublish
+SO  - Mol Cell Biol. 2025;45(6):225-237. doi: 10.1080/10985549.2024.2408025. Epub 2024 
+      Oct 17.
 
 PMID- 39391712
 OWN - NLM
