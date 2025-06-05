@@ -2794,7 +2794,7 @@
   "mechanism_detail": "Polyglycine expansion; may relate to methylation or RNA pathogenicity [@omim:603472; @pmid:36169768; @pmid:38467784]. The polyglycine-containing protein sequesters a key subunit of transcription factor NF-κB in nuclear inclusions, leading to impaired autophagy [@doi:10.1186/s12964-025-02079-1].",
   "source": [],
   "details": "Benign alleles are less than 38 repeats, while pathogenic alleles contain 66+ repeats [@genereviews:NBK535148]. Intermediate alleles may be associated with a phenotypic spectrum, and even pathogenic cases can have variable phenotype [@pmid:39055960; @pmid:39496005]: NOTCH2NLC expansions have been linked Alzheimer's disease and Parkinson's disease, leading to a potential role in NIID-related disorders [@pmid:31178126]. Age of onset inversely related to allele size [@pmid:38377026]. Motif variation in controls: (AGG)(CGG)n(AGG)0-3(CGG)0-2. GGA and AGC interruptions may influence phenotype [@pmid:34718964]. Interruptions documented: GGA, GGG [@pmid:35245110]; ACCGAGAAGATGCCCGCCCTGC interruption proposed but not confirmed [@pmid:38467784]. Detection may be challenging due to parology between genes: C253572.1, NOTCH2, NOTCH2NL, NBPF14, NBPF19.",
-  "omim": ["603472"],
+  "omim": ["603472", "619473"],
   "prevalence": null,
   "prevalence_details": ">400 patients reported in literature [@pmid:37371433]. Found in individuals of East Asian ancestry [@pmid:38876750].",
   "stripy": ["NOTCH2NLC"],
