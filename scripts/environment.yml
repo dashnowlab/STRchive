@@ -14,6 +14,7 @@ dependencies:
   - statsmodels
   - plotly
   - zlib
+  - jsonschema
   - r-essentials
   - r-base
   - r-jsonlite
