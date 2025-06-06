@@ -1,15 +1,15 @@
 # Usage:
 
 # Run all stages (default, takes hours):
-# snakemake
+# snakemake --cores 'all'
 # or
-# snakemake --config stages="all"
+# snakemake --config stages="all" --cores 'all'
 
 # Skip retrieve and manubot, which will speed things up substantially (runs in seconds):
-# snakemake --config stages="skip-refs"
+# snakemake --config stages="skip-refs" --cores 'all'
 
 # Fetches new citations but doesn't update exising ones. Slow, but faster than "all".
-# snakemake --config stages="new-refs"
+# snakemake --config stages="new-refs" --cores 'all'
 
 
 configfile: 'workflow/config.yaml'
@@ -40,6 +40,10 @@ if stages == "all" or stages == "new-refs":
             expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
+            # Atarva bed files
+            expand("{base_dir}STRchive-disease-loci.hg38.atarva.bed.gz", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.atarva.bed.gz", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.atarva.bed.gz", base_dir = base_dir),
             # Extended BED files
             expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
@@ -61,6 +65,10 @@ elif stages == "skip-refs":
             expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
+            # Atarva bed files
+            expand("{base_dir}STRchive-disease-loci.hg38.atarva.bed.gz", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.atarva.bed.gz", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.atarva.bed.gz", base_dir = base_dir),
             # Extended BED files
             expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
@@ -68,11 +76,11 @@ elif stages == "skip-refs":
             # Plots
             # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
-            expand("{base_dir}plots/path-size.json", base_dir = base_dir),
+            expand("{base_dir}plots/path-size.json", base_dir = base_dir)#,
             # Reference alleles
-            expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
+            # expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
+            # expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
+            # expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
 
@@ -181,6 +189,51 @@ rule TRGT_T2T:
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g T2T {input.in_json} {output.results}
+        """
+
+rule atarva_hg38:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        bed = "{base_dir}STRchive-disease-loci.hg38.atarva.bed",
+        bed_gz = "{base_dir}STRchive-disease-loci.hg38.atarva.bed.gz",
+        tbi = "{base_dir}STRchive-disease-loci.hg38.atarva.bed.gz.tbi"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f atarva -g hg38 {input.in_json} {output.bed}
+        bedtools sort -i {output.bed} | bgzip -c > {output.bed_gz}
+        tabix -p bed {output.bed_gz}
+        """
+
+rule atarva_hg19:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        bed = "{base_dir}STRchive-disease-loci.hg19.atarva.bed",
+        bed_gz = "{base_dir}STRchive-disease-loci.hg19.atarva.bed.gz",
+        tbi = "{base_dir}STRchive-disease-loci.hg19.atarva.bed.gz.tbi"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f atarva -g hg19 {input.in_json} {output.bed}
+        bedtools sort -i {output.bed} | bgzip -c > {output.bed_gz}
+        tabix -p bed {output.bed_gz}
+        """
+
+rule atarva_T2T:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        bed = "{base_dir}STRchive-disease-loci.T2T-chm13.atarva.bed",
+        bed_gz = "{base_dir}STRchive-disease-loci.T2T-chm13.atarva.bed.gz",
+        tbi = "{base_dir}STRchive-disease-loci.T2T-chm13.atarva.bed.gz.tbi"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f atarva -g T2T {input.in_json} {output.bed}
+        bedtools sort -i {output.bed} | bgzip -c > {output.bed_gz}
+        tabix -p bed {output.bed_gz}
         """
 
 rule bed_hg38:
