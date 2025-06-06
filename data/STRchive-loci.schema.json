@@ -12,27 +12,27 @@
         "type": [ "string", "null" ]
       },
       "start_hg38": {
-        "description": "Start position in hg38 reference genome. Coordinates are 0-based, half-open.",
+        "description": "Start position in hg38 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "stop_hg38": {
-        "description": "Stop position in hg38 reference genome. Coordinates are 0-based, half-open.",
+        "description": "Stop position in hg38 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "start_hg19": {
-        "description": "Start position in hg19 reference genome. Coordinates are 0-based, half-open.",
+        "description": "Start position in hg19 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "stop_hg19": {
-        "description": "Stop position in hg19 reference genome. Coordinates are 0-based, half-open.",
+        "description": "Stop position in hg19 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "start_t2t": {
-        "description": "Start position in chm13-T2T reference genome. Coordinates are 0-based, half-open.",
+        "description": "Start position in chm13-T2T reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "stop_t2t": {
-        "description": "Stop position in chm13-T2T reference genome. Coordinates are 0-based, half-open.",
+        "description": "Stop position in chm13-T2T reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ]
       },
       "id": {
