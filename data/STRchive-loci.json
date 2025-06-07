@@ -3049,7 +3049,7 @@
   "mechanism": "GoF",
   "mechanism_detail": "The present disease is characterized by dominantly inherited progressively increasing mobilization of aggrephagy at sites of progressive accumulation of a mutated protein, suggesting that the mutation is leading to aggregation, likely through misfolding, exceeding aggrephagic capacity. [@pmid:32451610]",
   "source": [],
-  "details": "Skeletal muscle biopsy shows myopathic features, rimmed vacuoles, and abnormal subsarcolemmal protein aggregation with activation of the autophagy pathway [@omim:601846]. This is an expanded variable number tandem repeat (VNTR) in the PLIN4 gene, located in exon 3. This repeat consists of a 99 bp motif encoding a 32 unit repeat, and expansion beyond the normal range leads to insertion of multiple imperfect 33–amino acid repeats within the perilipin-4 protein. These repetitive sequences are thought to contribute to abnormal protein aggregation and dysregulated autophagy seen in affected muscle tissue [@omim:601846].",
+  "details": "This is an expanded variable number tandem repeat (VNTR) in the PLIN4 gene, located in exon 3. This repeat consists of a 99 bp motif which encodes 33 amino-acids within the perilipin-4 protein. Typically 32 copies of this motif are present, and expansion beyond the normal range leads to insertion of multiple imperfect 33–amino acid repeats. These repetitive sequences are thought to contribute to abnormal protein aggregation and dysregulated autophagy seen in affected muscle tissue [@omim:601846].",
   "omim": ["601846"],
   "prevalence": null,
   "prevalence_details": "Studied in patients of chinese ancestry [@pmid:36151849].",
@@ -3069,7 +3069,7 @@
   "locus_tags": ["sparse_evidence", "anticipation", "length_affects_onset"],
   "disease_tags": [],
   "references": ["pmid:36151849", "pmid:37145156", "pmid:32451610", "omim:601846"],
-  "additional_literature": []
+  "additional_literature": ["pmid:39492694"]
 },
 {
   "chrom": "chr15",
