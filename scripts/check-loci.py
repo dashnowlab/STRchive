@@ -178,6 +178,13 @@ def check_motif_orientation(record):
                 if old_motif != new_motif:
                     sys.stderr.write(f'Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n')
         record[gene_field] = new
+
+    # Replace locus_structure with a string of the motifs in reference orientation
+    if record['locus_structure'] is None:
+        record['locus_structure'] = ''
+        for motif in record['pathogenic_motif_reference_orientation']:
+            record['locus_structure'] += f'({motif})*'
+
     return record
 
 def check_list_fields(record, list_fields = list_fields):
