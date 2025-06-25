@@ -4692,7 +4692,7 @@
   "disease": "Congenital Progressive Universal Melanosis",
   "gene": "TYMS",
   "flank_motif": null,
-  "locus_structure": null,
+  "locus_structure": "(GATGGT)*",
   "inheritance": ["AR"],
   "type": "Non-coding",
   "location_in_gene": "Intron 3",
@@ -4704,7 +4704,7 @@
   "pathogenic_max": 259,
   "ref_copies": null,
   "motif_len": 6,
-  "age_onset": "0 (birth)",
+  "age_onset": "0 (birth) [@doi:10.3892/br.2025.2016]",
   "age_onset_min": 0.0,
   "age_onset_max": 0.0,
   "typ_age_onset_min": null,
@@ -4732,6 +4732,6 @@
   "disease_description": "CPUM is characterized by progressive widespread hyperpigmentation beginning at birth without accompanying symptoms. Studied children with CPUM have been born to unaffected parents [@doi:10.3892/br.2025.2016].",
   "locus_tags": ["sparse_evidence"],
   "disease_tags": [],
-  "references": [],
+  "references": ["@doi:10.3892/br.2025.2016"],
   "additional_literature": []
 }]
