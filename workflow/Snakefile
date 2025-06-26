@@ -1,15 +1,15 @@
 # Usage:
 
 # Run all stages (default, takes hours):
-# snakemake
+# snakemake --cores "all"
 # or
-# snakemake --config stages="all"
+# snakemake --cores "all" --config stages="all"
 
 # Skip retrieve and manubot, which will speed things up substantially (runs in seconds):
-# snakemake --config stages="skip-refs"
+# snakemake --cores "all" --config stages="skip-refs"
 
 # Fetches new citations but doesn't update exising ones. Slow, but faster than "all".
-# snakemake --config stages="new-refs"
+# snakemake --cores "all" --config stages="new-refs"
 
 
 configfile: 'workflow/config.yaml'
@@ -18,8 +18,6 @@ base_dir: str = config["base_directory"]
 scripts_dir: str = config["scripts_directory"]
 ref_directory: str = config["ref_directory"]
 stages: str = config["stages"]
-
-#XXX To do: add STRchive version number to all the bed files?
 
 ### IMPORTS ###
 import os
