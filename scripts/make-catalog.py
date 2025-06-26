@@ -93,7 +93,7 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
                     stop += int(count) * len(motif)
                 else:
                     start -= int(count) * len(motif)
-    elif row['locus_structure'] != '':
+    elif row['locus_structure'] != '' and row['locus_structure'] != None:
         locus_structure = row['locus_structure'].strip()
         motifs = re.findall(r'\((.*?)\)', locus_structure)
         # Substitute * and + with n
