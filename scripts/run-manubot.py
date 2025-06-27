@@ -39,6 +39,7 @@ def parse_args():
     parser.add_argument("input", help="JSON file of ids to generate citations for")
     parser.add_argument("output", help="Output JSON file off full citations")
     parser.add_argument("--append", help="JSON file of previous citations to be skipped and appended to the output", default=None)
+    parser.add_argument("--inloci", help="JSON input is in STRchive loci format. Only items in the references field will be queried. Recommend using with --append", action='store_true')
     return parser.parse_args()
 
 def cite_with_manubot(ids, append_ids=None):
@@ -216,8 +217,14 @@ def get_safe(item, path, default=""):
 def main(args):
     """
     Expecting:
+
+    Files:
     args.input: JSON file of ids to generate citations for
     args.output: Output JSON file of full citations
+
+    Options:
+    args.append
+    args.inloci
     """
     # read "append" JSON
     append_ids = []
@@ -247,7 +254,16 @@ def main(args):
 
     # read input JSON
     with open(args.input, "r") as file:
-        data = json.load(file)
+        if args.inloci:
+            data = []
+            loci_data = json.load(file)
+            for record in loci_data:
+                data = data + [x.lstrip('@') for x in record['references']]
+                #data = data + [x.lstrip('@') for x in record['additional_literature']]
+            # remove duplicates, preserves order python 3.7+
+            data = list(dict.fromkeys(data))
+        else:
+            data = json.load(file)
 
     # write output JSON
     with open(args.output, "w") as file:

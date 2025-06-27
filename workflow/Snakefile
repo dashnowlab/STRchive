@@ -8,6 +8,9 @@
 # Skip retrieve and manubot, which will speed things up substantially (runs in seconds):
 # snakemake --cores "all" --config stages="skip-refs"
 
+# Skip fetching new papers with retrieve, run manubot only on new citations already in STRchive loci json, which will speed things up (runs in minutes):
+# snakemake --cores "all" --config stages="old-refs"
+
 # Fetches new citations but doesn't update exising ones. Slow, but faster than "all".
 # snakemake --cores "all" --config stages="new-refs"
 
@@ -27,7 +30,7 @@ import re
 wildcard_constraints:
     base_dir = base_dir
 
-if stages == "all" or stages == "new-refs":
+if stages == "all" or stages == "new-refs" or stages == "old-refs":
     rule all:
         input:
             # Check loci
@@ -72,7 +75,7 @@ elif stages == "skip-refs":
             expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
             expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 else:
-    raise ValueError("Invalid stages value. Must be 'all', 'new-refs', or 'skip-refs'")
+    raise ValueError("Invalid stages value. Must be 'all', 'new-refs', 'old-refs', or 'skip-refs'")
 
 rule check_loci:
     input:
@@ -135,6 +138,19 @@ if stages == "new-refs":
             """
             python {scripts_dir}run-manubot.py {input.citations} {output.results} --append {input.backup}
             """
+if stages == "old-refs":
+    rule manubot:
+        input:
+            in_json = in_json,
+            backup = "{base_dir}STRchive-citations-backup.json",
+            check = "{base_dir}check-loci.txt"
+        output:
+            results = "{base_dir}STRchive-citations.json"
+        shell:
+            """
+            python {scripts_dir}run-manubot.py {input.in_json} {output.results} --append {input.backup} --inloci
+            """
+
 if stages == "all" or stages == "skip-refs":
     rule manubot:
         input:
