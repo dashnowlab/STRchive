@@ -72,13 +72,16 @@ def build_JSON(args):
     line_data = {'y': [], 'xmin': [], 'xmax': []}
     colors = {'Benign': '#00afbb', 'Intermediate': '#e7b800', 'Pathogenic': '#fc4e07'}
     for info in strchive_info:
-        diseases.append(info['disease_id'])
         motif_len = info['motif_len']
         benign_min, benign_max = valid_range(info['benign_min'], info['benign_max'], motif_len)
         pathogenic_min, pathogenic_max = valid_range(info['pathogenic_min'], info['pathogenic_max'], motif_len)
         intermediate_min, intermediate_max = valid_range(info['intermediate_min'], info['intermediate_max'], motif_len)
-        
+
         values = [[benign_min, benign_max], [intermediate_min, intermediate_max], [pathogenic_min, pathogenic_max]]
+        # Skip locus if all values are 0 or None
+        if all([item == 0 for sublist in values for item in sublist]) or all([item == None for sublist in values for item in sublist]):
+             continue
+        diseases.append(info['disease_id'])
         values = sorted(values, key=lambda x: x[0])
         if values[0][1] != 0 and values[1][0] > values[0][1]:
                 line_data['y'].append(info['disease_id'])
