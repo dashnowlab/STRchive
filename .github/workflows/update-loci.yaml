@@ -43,9 +43,13 @@ jobs:
       - run: |
           conda info
 
-      - name: Check loci and update bed files (short)
+      # - name: Check loci and update bed files (short)
+      #   if: ${{ github.event_name == 'pull_request'}}
+      #   run: snakemake --cores all --config stages="skip-refs"
+
+      - name: Check loci, fetch citations already in the loci json, and update bed files (shorter)
         if: ${{ github.event_name == 'pull_request'}}
-        run: snakemake --cores all --config stages="skip-refs"
+        run: snakemake --cores all --config stages="old-refs"
 
       # Enable this step to open an SSH session for debugging
       # - name: SSH debug
