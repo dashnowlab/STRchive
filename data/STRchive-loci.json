@@ -3561,7 +3561,7 @@
   "mechanism": "LoF",
   "mechanism_detail": "Polyalanine expansion leading to haploinsufficiency [@pmid:26220009].",
   "source": [],
-  "details": "Benign range (4-17 repeats) established from gnomAD and primary literature; pathogenic ranges (20-27) reflect two clinical cases to date [@gnomad:RUNX2; @pmid:26220009]. Intermediate alleles (i.e, 18 repeats; 19 not reported) appear to not be associated with disease [@pmid:20560987; @pmid:26220009].",
+  "details": "Benign range (4-17 repeats) established from gnomAD and primary literature; pathogenic ranges (20-27) reflect two clinical cases to date [@gnomad:RUNX2; @pmid:26220009]. Intermediate alleles (i.e, 18 repeats; 19 not reported) appear to not be associated with disease [@pmid:20560987; @pmid:26220009]. The gene RUNX2 was previously called CBFA1, as reflected in some of the literature [@pmid:9182765]",
   "omim": ["119600"],
   "prevalence": null,
   "prevalence_details": "All conditions 1/1,000,000 births (likely underdiagnosed); Utah population frequency 0.12/10,000. Found in many ethnic groups [@orphanet:1452]. TR expansions causative in 2 individuals [@genereviews:NBK535148].",
