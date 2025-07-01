@@ -2516,7 +2516,7 @@
   "disease": "Autosomal dominant tubulointerstitial kidney disease",
   "gene": "MUC1",
   "flank_motif": null,
-  "locus_structure": null,
+  "locus_structure": "(GCCCACGGTGTCACCTCGGCCCCGGACACCAGGCCGGCCCCGGGCTCCACCGCCCCCCCCA)*",
   "inheritance": ["AD"],
   "type": "Coding",
   "location_in_gene": "Exon 2",
