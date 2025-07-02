@@ -1,4 +1,641 @@
 
+PMID- 40570888
+OWN - NLM
+STAT- Publisher
+LR  - 20250626
+IS  - 1361-6528 (Electronic)
+IS  - 0957-4484 (Linking)
+DP  - 2025 Jun 26
+TI  - Computer Vision Techniques for High-Speed Atomic Force Microscopy of DNA 
+      Molecules.
+LID - 10.1088/1361-6528/ade888 [doi]
+AB  - High- speed atomic force microscopy (HSAFM) can produce thousands of topographic, 
+      nanoscale images over a small area. One emerging application of this technique is 
+      the detection and sizing of single DNA molecules derived from biological 
+      experiments and genetic testing. Using HSAFM images, researchers can visually 
+      categorize healthy and mutant DNA based on size and sequence-specific labelling, 
+      leading to rapid, high precision diagnostics. However, manually sifting through 
+      large numbers of images is time consuming and labor intensive, presenting a 
+      bottleneck for sample analysis. In this paper we look at how deep learning 
+      methods like object detection and image classification can assist in streamlining 
+      the process. To instantly assess image quality on data collected from 
+      trinucleotide repeat expansion disease samples, a fully convolutional network 
+      (FCN) was compared against Laplacian of Gaussian (LOG) and fast Fourier Transform 
+      (FFT) methods. The FCN performed the best, reproducing human categorizations with 
+      an accuracy of 96% and an AUC of 0.990. Additionally, using the YOLOv8 
+      architecture, we have developed an object detection model capable of detecting 
+      marked DNA enriched from the FMR1 gene locus, which is mutated in from patients 
+      with Fragile X syndrome, with an average precision (AP) of 0.966. The integration 
+      of machine learning techniques in HSAFM systems shows promise to enhance the data 
+      collection and analysis process for genomics-based disease diagnosis.
+CI  - Creative Commons Attribution license.
+FAU - Driver, Nicholas
+AU  - Driver N
+AUID- ORCID: 0000-0002-3164-3178
+AD  - Department of Physics, Virginia Commonwealth University, 701 W Grace St, 
+      Richmond, Virginia, 23284-2512, UNITED STATES.
+FAU - Mikheykin, Andrey
+AU  - Mikheykin A
+AD  - Department of Physics, Virginia Commonwealth University, 701 West Grace St, 
+      Richmond, Virginia, 23284-2512, UNITED STATES.
+FAU - Kobley, Sean
+AU  - Kobley S
+AD  - Department of Physics, Virginia Commonwealth University, 701 West Grace St, 
+      Richmond, Virginia, 23284-2512, UNITED STATES.
+FAU - Mostashari, Morteza
+AU  - Mostashari M
+AUID- ORCID: 0009-0002-5539-4951
+AD  - Physics, Virginia Commonwealth University, 701 W Grace St, Richmond, Virginia, 
+      23284-2512, UNITED STATES.
+FAU - Picco, Loren
+AU  - Picco L
+AUID- ORCID: 0000-0002-3758-0972
+AD  - Department of Physics, University of Bristol, Royal Fort, Tyndall Avenue, 
+      Bristol, BS8 1TL, Bristol, England, BS8 1QU, UNITED KINGDOM OF GREAT BRITAIN AND 
+      NORTHERN IRELAND.
+FAU - Berger, Seth
+AU  - Berger S
+AD  - Children's National Medical Center, 111 Michigan Ave NW, Washington, District of 
+      Columbia, 20010-2916, UNITED STATES.
+FAU - Reed, Jason
+AU  - Reed J
+AUID- ORCID: 0000-0002-3314-8699
+AD  - Department of Physics, Virginia Commonwealth University, 701 W Grace St, 
+      Richmond, Virginia, 23284-2512, UNITED STATES.
+LA  - eng
+PT  - Journal Article
+DEP - 20250626
+PL  - England
+TA  - Nanotechnology
+JT  - Nanotechnology
+JID - 101241272
+SB  - IM
+OTO - NOTNLM
+OT  - Atomic Force Microscopy
+OT  - CRISPR
+OT  - DNA
+OT  - Inherited Disease
+OT  - Neural Network
+EDAT- 2025/06/27 00:28
+MHDA- 2025/06/27 00:28
+CRDT- 2025/06/26 18:52
+PHST- 2025/06/27 00:28 [medline]
+PHST- 2025/06/27 00:28 [pubmed]
+PHST- 2025/06/26 18:52 [entrez]
+AID - 10.1088/1361-6528/ade888 [doi]
+PST - aheadofprint
+SO  - Nanotechnology. 2025 Jun 26. doi: 10.1088/1361-6528/ade888.
+
+PMID- 40534679
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20250620
+IS  - 2575-9108 (Electronic)
+IS  - 2575-9108 (Linking)
+VI  - 8
+IP  - 6
+DP  - 2025 Jun 13
+TI  - Tyrosine Peptides Alleviates Multifaceted Toxicity Linked to Expanded CGG Repeats 
+      in Fragile X...Associated Tremor/Ataxia Syndrome.
+PG  - 1536-1555
+LID - 10.1021/acsptsci.4c00647 [doi]
+AB  - Fragile X-associated Tremor/Ataxia Syndrome (FXTAS)/Fragile X-associated Primary 
+      Ovarian Insufficiency (FXPOI) are conditions caused by an elevated level of CGG 
+      repeats in the 5' untranslated region (5'-UTR) of the Fragile X Mental 
+      Retardation 1 (FMR1) gene. These trinucleotide extended RNA repeats 
+      [r-(CGG)(exp)] produce toxic homopolymeric proteins in neuronal cells via 
+      repeat-associated non-ATG (RAN) translation or formation of RNA foci. A promising 
+      therapeutic approach for such conditions involves identifying potent modulators, 
+      particularly those with high binding affinity and selectivity toward these 
+      expanded RNA repeats. We investigated the therapeutic potential of homoaromatic 
+      tyrosine peptides (2Y, 3Y, and 4Y) toward CGG repeat RNA by employing biophysical 
+      and cell model-based studies. Furthermore, administering the peptides from the 
+      early developmental stages in the Drosophila model of FXTAS also mitigated the 
+      disease symptoms. Results revealed that the peptides interact with r-(CGG)(exp) 
+      in a thermodynamically advantageous manner and are highly selective for the 
+      GG-rich RNA motif. All three peptides correct alternative splicing flaws linked 
+      to FXTAS, reduce the synthesis and buildup of the FMR1polyG protein inclusion, 
+      and rapidly suppress cell cytotoxicity in both the cellular and Drosophila 
+      models. These findings show that homo aromatic tyrosine-based peptides targeting 
+      treacherous repeat RNAs are potential therapeutic tools for treating FXTAS/FXPOI.
+CI  - (c) 2025 American Chemical Society.
+FAU - Singh, Krishna
+AU  - Singh K
+AD  - Department of Biosciences and Biomedical Engineering, Indian Institute of 
+      Technology Indore, Simrol, Indore 453552, India. RINGGOLD: 226957
+FAU - Shukla, Sakshi
+AU  - Shukla S
+AD  - Department of Biosciences and Biomedical Engineering, Indian Institute of 
+      Technology Indore, Simrol, Indore 453552, India. RINGGOLD: 226957
+FAU - Ghosh, Tapas
+AU  - Ghosh T
+AUID- ORCID: 0000-0002-0256-2467
+AD  - Department of Chemistry, Indian Institute of Technology Indore, Simrol, Indore 
+      453552, India. RINGGOLD: 226957
+FAU - Das, Apurba K
+AU  - Das AK
+AUID- ORCID: 0000-0002-8141-6854
+AD  - Department of Chemistry, Indian Institute of Technology Indore, Simrol, Indore 
+      453552, India. RINGGOLD: 226957
+FAU - Kumar, Amit
+AU  - Kumar A
+AUID- ORCID: 0000-0002-5913-4308
+AD  - Department of Biosciences and Biomedical Engineering, Indian Institute of 
+      Technology Indore, Simrol, Indore 453552, India. RINGGOLD: 226957
+LA  - eng
+PT  - Journal Article
+DEP - 20250225
+PL  - United States
+TA  - ACS Pharmacol Transl Sci
+JT  - ACS pharmacology & translational science
+JID - 101721411
+PMC - PMC12171881
+OTO - NOTNLM
+OT  - FMR1poly-G
+OT  - FXTAS/FXPOI
+OT  - homoaromatic tyrosine-based peptides
+OT  - r(CGG)exp
+OT  - repeat-associated non-ATG (RAN)
+OT  - trinucleotide repeats
+EDAT- 2025/06/19 07:54
+MHDA- 2025/06/19 07:55
+PMCR- 2026/02/25
+CRDT- 2025/06/19 05:15
+PHST- 2024/11/07 00:00 [received]
+PHST- 2025/02/07 00:00 [revised]
+PHST- 2025/02/19 00:00 [accepted]
+PHST- 2026/02/25 00:00 [pmc-release]
+PHST- 2025/06/19 07:55 [medline]
+PHST- 2025/06/19 07:54 [pubmed]
+PHST- 2025/06/19 05:15 [entrez]
+AID - 10.1021/acsptsci.4c00647 [doi]
+PST - epublish
+SO  - ACS Pharmacol Transl Sci. 2025 Feb 25;8(6):1536-1555. doi: 
+      10.1021/acsptsci.4c00647. eCollection 2025 Jun 13.
+
+PMID- 40488180
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20250611
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 3
+DP  - 2025
+TI  - Diagnostic yield and limitations of whole-genome sequencing for hereditary 
+      cerebellar ataxia.
+PG  - fcaf188
+LID - 10.1093/braincomms/fcaf188 [doi]
+LID - fcaf188
+AB  - Less than half of the individuals with hereditary cerebellar ataxia receives a 
+      genetic diagnosis. Repeat expansions account for disproportionate number of 
+      hereditary cerebellar ataxia and have genetically heterogeneous causes. These 
+      genetic loci include ATXN1, ATXN2, ATXN3, CACNA1A, ATXN7, ATXN8OS, ATXN10, 
+      PPP2R2B, TBP, ATN1, FMR1, BEAN1, NOP56, GLS, THAP11, GAA-FGF14, ZFHX3, FXN and 
+      RFC1. This study aims to assess the yield of short-read whole genome sequencing 
+      in the molecular diagnosis of hereditary cerebellar ataxia. We recruited 380 
+      patients (351 probands) from a national ataxia centre in United Kingdom. They 
+      underwent short-read whole genome sequencing as a part of the 100 000 Genomes 
+      Project. Bioinformatic pipeline of whole genome sequencing include variant 
+      prioritization in selected virtual gene panels, customized analysis with a focus 
+      on repeat expansions, structural variants and recently reported hereditary 
+      cerebellar ataxia genes. All potential genetic variants were reviewed in a 
+      multidisciplinary team, and further confirmation tests were performed as 
+      appropriate. Whole genome sequencing identified causative variants in 115 (33%) 
+      out of 351 probands. We established 46 distinct presumptive molecular diagnoses 
+      with the most frequent being SPG7 (n = 22), RFC1 (n = 20) and CACNA1A (n = 10). 
+      However, it failed to detect any probands with novel ataxia gene GAA-FGF14, which 
+      was subsequently identified on polymerase chain reaction screening in 10 unsolved 
+      probands. In conclusion, whole genome sequencing is a useful diagnostic test in 
+      hereditary cerebellar ataxia patients and can be used to detect repeat 
+      expansions, structural and mitochondrial variants. However, identification of 
+      complex structural variants and sizing of large repeat expansions remains a 
+      challenge and require alternative molecular testing techniques.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Yau, Wai Yan
+AU  - Yau WY
+AUID- ORCID: 0000-0001-6284-9163
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology, 
+      University College London, London WC1N 3BG, United Kingdom.
+AD  - Perron Institute for Neurological and Translational Science, the University of 
+      Western Australia, Nedlands, Western Australia 6009, Australia.
+FAU - Sullivan, Roisin
+AU  - Sullivan R
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology, 
+      University College London, London WC1N 3BG, United Kingdom.
+FAU - O'Connor, Emer
+AU  - O'Connor E
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology, 
+      University College London, London WC1N 3BG, United Kingdom.
+FAU - Pellerin, David
+AU  - Pellerin D
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology, 
+      University College London, London WC1N 3BG, United Kingdom.
+FAU - Parkinson, Michael H
+AU  - Parkinson MH
+AD  - Ataxia Centre, UCL Queen Square Institute of Neurology, University College 
+      London, London WC1N 3BG, UK.
+AD  - National Hospital for Neurology and Neurosurgery, University College London 
+      Hospitals NHS Foundation Trust, London WC1N 3BG, UK.
+FAU - Giunti, Paola
+AU  - Giunti P
+AUID- ORCID: 0000-0003-3508-4788
+AD  - Ataxia Centre, UCL Queen Square Institute of Neurology, University College 
+      London, London WC1N 3BG, UK.
+AD  - National Hospital for Neurology and Neurosurgery, University College London 
+      Hospitals NHS Foundation Trust, London WC1N 3BG, UK.
+FAU - Dicaire, Marie-Josee
+AU  - Dicaire MJ
+AD  - Department of Neurology and Neurosurgery, Montreal Neurological Hospital and 
+      Institute, McGill University, Montreal, QC, Canada, H3A 2B4.
+FAU - Danzi, Matt C
+AU  - Danzi MC
+AD  - Dr John T Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genomics, University of Miami Miller School of Medicine, 
+      Miami, FL 33136, USA.
+FAU - Zuchner, Stephan
+AU  - Zuchner S
+AUID- ORCID: 0000-0002-8498-5235
+AD  - Dr John T Macdonald Foundation Department of Human Genetics and John P. Hussman 
+      Institute for Human Genomics, University of Miami Miller School of Medicine, 
+      Miami, FL 33136, USA.
+FAU - Brais, Bernard
+AU  - Brais B
+AUID- ORCID: 0000-0003-1394-3561
+AD  - Department of Neurology and Neurosurgery, Montreal Neurological Hospital and 
+      Institute, McGill University, Montreal, QC, Canada, H3A 2B4.
+AD  - Department of Human Genetics, McGill University, Montreal, QC, Canada, H3A 2B4.
+FAU - Wood, Nicholas W
+AU  - Wood NW
+AD  - National Hospital for Neurology and Neurosurgery, University College London 
+      Hospitals NHS Foundation Trust, London WC1N 3BG, UK.
+AD  - Department of Clinical and Movement Neurosciences, UCL Queen Square Institute of 
+      Neurology, London WC1N 3BG, United Kingdom.
+FAU - Houlden, Henry
+AU  - Houlden H
+AUID- ORCID: 0000-0002-2866-7777
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology, 
+      University College London, London WC1N 3BG, United Kingdom.
+AD  - National Hospital for Neurology and Neurosurgery, University College London 
+      Hospitals NHS Foundation Trust, London WC1N 3BG, UK.
+FAU - Vandrovcova, Jana
+AU  - Vandrovcova J
+AUID- ORCID: 0000-0001-9508-0477
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology, 
+      University College London, London WC1N 3BG, United Kingdom.
+LA  - eng
+PT  - Journal Article
+DEP - 20250517
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12142459
+OTO - NOTNLM
+OT  - ataxia
+OT  - movement disorders
+OT  - neurogenetics
+OT  - whole-genome sequencing
+COIS- The authors declare no competing interests.
+EDAT- 2025/06/09 12:30
+MHDA- 2025/06/09 12:31
+PMCR- 2025/05/17
+CRDT- 2025/06/09 07:03
+PHST- 2024/09/11 00:00 [received]
+PHST- 2025/02/06 00:00 [revised]
+PHST- 2025/05/15 00:00 [accepted]
+PHST- 2025/06/09 12:31 [medline]
+PHST- 2025/06/09 12:30 [pubmed]
+PHST- 2025/06/09 07:03 [entrez]
+PHST- 2025/05/17 00:00 [pmc-release]
+AID - fcaf188 [pii]
+AID - 10.1093/braincomms/fcaf188 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 May 17;7(3):fcaf188. doi: 10.1093/braincomms/fcaf188. 
+      eCollection 2025.
+
+PMID- 40480633
+OWN - NLM
+STAT- Publisher
+LR  - 20250627
+IS  - 1083-351X (Electronic)
+IS  - 0021-9258 (Linking)
+VI  - 301
+IP  - 7
+DP  - 2025 Jun 4
+TI  - Interactome of FMRP-N-tat therapeutic unveils key interactions for cellular 
+      function in Fragile X neurons.
+PG  - 110341
+LID - S0021-9258(25)02191-X [pii]
+LID - 10.1016/j.jbc.2025.110341 [doi]
+AB  - Therapeutic protein replacement has demonstrated preclinical and clinical 
+      efficacy in neurological disorders but has not been used clinically for Fragile X 
+      syndrome (FXS), a genetic neurodevelopmental disorder caused by loss of Fragile X 
+      messenger ribonucleoprotein (FMRP). FXS results from a triplet repeat expansion 
+      of more than 200 CGG repeats in the 5'-UTR of the FMR1 gene leading to epigenetic 
+      silencing of FMRP. Currently, no clinically approved disease-modifying treatments 
+      for FXS exist. Recently, a tat-conjugated FMRP fragment encompassing residues 1 
+      to 297 (FMRP N-tat) was shown to restore aspects of neuronal function in a mouse 
+      model of FXS. Promising in vivo data hinted to the therapeutic potential of FMRP 
+      N-tat. Herein, affinity purification mass spectrometry was used to identify the 
+      FMRP N-tat interactome in tsA-201 FMR1 knockout cells and FXS patient 
+      iPSC-derived neurons. The FMRP N-tat interactome included RNA binding proteins 
+      and constituents of the ribosome, which aligned closely with the known functions 
+      of FMRP. Further, the FMRP N-tat associated proteins included FXR2, STAU1, 
+      TRIM28, C1QBP, VDAC2, and several ribosomal proteins to regulate mRNA stability, 
+      cellular stress responses, mitochondrial function, and translation. The results 
+      highlight the potential of FMRP N-tat to orchestrate assembly of factors to 
+      correct lost function in FMRP deficient cells.
+CI  - Copyright (c) 2025 The Authors. Published by Elsevier Inc. All rights reserved.
+FAU - Leguay, Kevin
+AU  - Leguay K
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Acevedo, Mariana
+AU  - Acevedo M
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Colic, Eva
+AU  - Colic E
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Patel, Preya U
+AU  - Patel PU
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Shamsi, Saeideh
+AU  - Shamsi S
+AD  - Department of Pharmacology, adMare BioInnovations, Vancouver, British Columbia, 
+      Canada.
+FAU - Chan, Helen Lb
+AU  - Chan HL
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Sun, Sharon
+AU  - Sun S
+AD  - Pharmaceutical Development Group, adMare BioInnovations, Vancouver, British 
+      Columbia, Canada.
+FAU - Lang-Ouellette, Daneck
+AU  - Lang-Ouellette D
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Chan, Benny
+AU  - Chan B
+AD  - Pharmaceutical Development Group, adMare BioInnovations, Vancouver, British 
+      Columbia, Canada.
+FAU - Zhan, Xiaoqin
+AU  - Zhan X
+AD  - Hotchkiss Brain Institute, University of Calgary, Calgary, Alberta, Canada.
+FAU - Turner, Ray W
+AU  - Turner RW
+AD  - Hotchkiss Brain Institute, University of Calgary, Calgary, Alberta, Canada.
+FAU - Mancini, Joseph
+AU  - Mancini J
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada.
+FAU - Kent, Oliver A
+AU  - Kent OA
+AD  - Department of Pharmacology, adMare BioInnovations, Montreal, Quebec, Canada. 
+      Electronic address: kent.uhn@gmail.com.
+LA  - eng
+PT  - Journal Article
+DEP - 20250604
+PL  - United States
+TA  - J Biol Chem
+JT  - The Journal of biological chemistry
+JID - 2985121R
+SB  - IM
+OTO - NOTNLM
+OT  - FMRP
+OT  - Fragile X syndrome
+OT  - cell-penetrating peptide
+OT  - mass spectrometry
+OT  - peptide interaction
+COIS- Conflict of interest The authors declare the following financial 
+      interests/personal relationships which may be considered as potential competing 
+      interests: Dr R. W. Turner is inventor of a patent application on FMRP N-tat and 
+      its use as a therapeutic filed by UTI Limited Partnership (PCT/CA2019/000,001, 
+      1/10/2019). The other authors declare no conflict of interest.
+EDAT- 2025/06/07 16:44
+MHDA- 2025/06/07 16:44
+CRDT- 2025/06/06 19:42
+PHST- 2025/05/14 00:00 [received]
+PHST- 2025/05/31 00:00 [accepted]
+PHST- 2025/06/07 16:44 [pubmed]
+PHST- 2025/06/07 16:44 [medline]
+PHST- 2025/06/06 19:42 [entrez]
+AID - S0021-9258(25)02191-X [pii]
+AID - 10.1016/j.jbc.2025.110341 [doi]
+PST - aheadofprint
+SO  - J Biol Chem. 2025 Jun 4;301(7):110341. doi: 10.1016/j.jbc.2025.110341.
+
+PMID- 40459253
+OWN - NLM
+STAT- Publisher
+LR  - 20250603
+IS  - 1531-8249 (Electronic)
+IS  - 0364-5134 (Linking)
+DP  - 2025 Jun 3
+TI  - Longitudinal Analysis of Neuroradiological Biomarkers for Fragile X-Associated 
+      Tremor/Ataxia Syndrome and Implications for Clinical Trials.
+LID - 10.1002/ana.27267 [doi]
+AB  - OBJECTIVE: The objective of this study was to show the capacity of structural 
+      brain magnetic resonance imaging (MRI) measures to serve as monitoring biomarkers 
+      for Fragile X-Associated Tremor/Ataxia Syndrome (FXTAS). METHODS: From 2 
+      longitudinal studies of male FMR1 premutation carriers, 2 brain MRI scans were 
+      selected from each participant, collected within a period of 2 years (12 healthy 
+      controls, 17 carriers without FXTAS, and 51 carriers with FXTAS; all men, ages 40 
+      to 80 years), along with clinical measurements and FMR1 cytosine-guanine-guanine 
+      (CGG) repeat numbers. Candidate MRI biomarkers included whole brain white matter 
+      hyperintensity (WMH) and cerebellar, brainstem, and whole brain volumes. RESULTS: 
+      In the FXTAS group, mixed-effects models demonstrated significant volume loss 
+      across an average interval of 1.32 years for the whole brain, cerebellum and 
+      brain stem volumes, and significant increases in WMH, with large magnitude 
+      effects for whole brain and WMH volumes. All MRI measures showed deterioration 
+      with advancing FXTAS stage, with the strongest pattern shown in WMH volume. CGG 
+      repeat number showed significant nonlinear associations with all 4 brain MRI 
+      metrics, with mid-range CGG repeat carriers evidencing the worst brain atrophy 
+      and WMHs. INTERPRETATION: Structural brain MRI measurements, especially those 
+      capturing white matter deterioration, are correlated with FMR1 premutation size 
+      of CGG repeat length and sensitive to FXTAS disease progression across a 
+      relatively short interval of less than 2 years, making them potentially suitable 
+      as surrogate end points for clinical trials. ANN NEUROL 2025.
+CI  - (c) 2025 The Author(s). Annals of Neurology published by Wiley Periodicals LLC on 
+      behalf of American Neurological Association.
+FAU - Hessl, David
+AU  - Hessl D
+AUID- ORCID: 0000-0002-3460-9805
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Department of Psychiatry and Behavioral Sciences, University of California Davis 
+      School of Medicine, Sacramento, CA, USA.
+FAU - Wang, Jun Yi
+AU  - Wang JY
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Center for Mind and Brain, University of California Davis, Davis, CA, USA.
+FAU - Espinal, Glenda
+AU  - Espinal G
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Department of Psychiatry and Behavioral Sciences, University of California Davis 
+      School of Medicine, Sacramento, CA, USA.
+FAU - Santos, Ellery
+AU  - Santos E
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Department of Pediatrics, University of California Davis School of Medicine, 
+      Sacramento, CA, USA.
+FAU - Tassone, Flora
+AU  - Tassone F
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Department of Biochemistry and Molecular Medicine, University of California Davis 
+      School of Medicine, Davis, CA, USA.
+FAU - Hagerman, Randi J
+AU  - Hagerman RJ
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Department of Pediatrics, University of California Davis School of Medicine, 
+      Sacramento, CA, USA.
+FAU - Rivera, Susan M
+AU  - Rivera SM
+AD  - MIND Institute, University of California Davis Health, Sacramento, CA, USA.
+AD  - Center for Mind and Brain, University of California Davis, Davis, CA, USA.
+AD  - Department of Psychology, University of California Davis, Davis, CA, USA.
+AD  - Department of Psychology, University of Maryland College Park, College Park, MD, 
+      USA.
+LA  - eng
+GR  - HD036071/National Institute of Child Health and Human Development/
+GR  - HD103526/National Institute of Child Health and Human Development/
+GR  - MH078041/MH/NIMH NIH HHS/United States
+GR  - NS110100/NS/NINDS NIH HHS/United States
+PT  - Journal Article
+DEP - 20250603
+PL  - United States
+TA  - Ann Neurol
+JT  - Annals of neurology
+JID - 7707449
+SB  - IM
+EDAT- 2025/06/03 12:33
+MHDA- 2025/06/03 12:33
+CRDT- 2025/06/03 08:54
+PHST- 2025/04/06 00:00 [revised]
+PHST- 2025/01/18 00:00 [received]
+PHST- 2025/04/26 00:00 [accepted]
+PHST- 2025/06/03 12:33 [medline]
+PHST- 2025/06/03 12:33 [pubmed]
+PHST- 2025/06/03 08:54 [entrez]
+AID - 10.1002/ana.27267 [doi]
+PST - aheadofprint
+SO  - Ann Neurol. 2025 Jun 3. doi: 10.1002/ana.27267.
+
+PMID- 40455869
+OWN - NLM
+STAT- Publisher
+LR  - 20250602
+IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Linking)
+DP  - 2025 Jun 2
+TI  - Modelling fragile X-associated neuropsychiatric disorders in young inducible 
+      90CGG premutation mice.
+LID - awaf203 [pii]
+LID - 10.1093/brain/awaf203 [doi]
+AB  - Fragile X-associated tremor/ataxia syndrome (FXTAS) is a late-onset 
+      neurodegenerative disorder caused by a preCGG repeat expansion in the FMR1 gene. 
+      Individuals with the FMR1 premutation often exhibit neuropsychiatric symptoms 
+      before FXTAS onset, leading to the identification of fragile X-associated 
+      neuropsychiatric disorders (FXAND). Rodent models of FXTAS show motor 
+      impairments, pathological intranuclear inclusions, and heightened anxiety. 
+      However, the early onset of neuropsychiatric features and underlying mechanisms 
+      remain poorly understood. To address the above issues, we used the doxycycline 
+      (dox)-inducible 90CGG mouse model, with transgene activation at two developmental 
+      stages: adolescence and young adulthood. Mice were evaluated in a behavioural 
+      battery to assess anxiety-like behaviour, exploration, and motor coordination and 
+      learning. Next, we conducted a combination of ex vivo extracellular local field 
+      potential recordings to measure synaptic physiology and oscillatory activity in 
+      the limbic system, particularly in the basolateral amygdala (BLA) and ventral 
+      hippocampus (vH) regions. Parvalbumin interneurons and intranuclear inclusions in 
+      the amygdala and hippocampus were investigated by immunofluorescence, while mass 
+      spectrometry and gene set enrichment were used to identify differentially 
+      expressed proteins molecular pathways. Adolescent 90CGG mice displayed 
+      early-onset hyperactivity, transitioning to heightened anxiety in young 
+      adulthood, coinciding with the accumulation of intranuclear inclusions in the BLA 
+      and vH. Electrophysiological analysis revealed augmented gamma oscillations in 
+      the vH, emerging during adolescence and persisting in young adulthood. These 
+      changes correlated with a reduction in parvalbumin interneurons in these regions, 
+      and together likely contribute to enhanced BLA excitability and impaired vH 
+      plasticity. Finally, proteomic analysis of the vH revealed altered proteins 
+      linked to attention deficit hyperactivity disorder in adolescence and 
+      anxiety/depression in adulthood, aligning well with behavioural findings. 
+      Importantly, these behavioural, electrophysiological, and cellular alterations 
+      were reversible upon transgene inactivation. This study reveals a temporal 
+      progression of CGG premutation effects on behaviour, from hyperactivity to 
+      heightened anxiety to late onset motor dysfunction. Moreover, these findings 
+      provide altered network activity in the limbic system as a putative mechanism in 
+      neuropsychiatric features of premutation carriers.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Caliskan, Gursel
+AU  - Caliskan G
+AUID- ORCID: 0000-0003-4832-0807
+AD  - Research Group "Synapto-Oscillopathies", Institute of Biology, 
+      Otto-von-Guericke-University, D 39120 Magdeburg, Germany.
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+AD  - Center for Behavioral Brain Sciences (CBBS), D 39106 Magdeburg, Germany.
+FAU - Lacalle, Sara Enrile
+AU  - Lacalle SE
+AD  - Research Group "Synapto-Oscillopathies", Institute of Biology, 
+      Otto-von-Guericke-University, D 39120 Magdeburg, Germany.
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+AD  - Center for Behavioral Brain Sciences (CBBS), D 39106 Magdeburg, Germany.
+FAU - Kul, Emre
+AU  - Kul E
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+FAU - Del Angel, Miguel
+AU  - Del Angel M
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+FAU - Zambrano, Allison Loaiza
+AU  - Zambrano AL
+AD  - Research Group "Synapto-Oscillopathies", Institute of Biology, 
+      Otto-von-Guericke-University, D 39120 Magdeburg, Germany.
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+FAU - Hukema, Renate
+AU  - Hukema R
+AD  - Department of Clinical Genetics, Erasmus MC, 3015 GD Rotterdam, The Netherlands.
+FAU - Santos, Monica
+AU  - Santos M
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+FAU - Stork, Oliver
+AU  - Stork O
+AD  - Department of Genetics and Molecular Neurobiology, Institute of Biology, 
+      Otto-von-Guericke University, D 39120 Magdeburg, Germany.
+AD  - Center for Behavioral Brain Sciences (CBBS), D 39106 Magdeburg, Germany.
+AD  - Center for Intervention and Research on Adaptive and Maladaptive Brain Circuits 
+      Underlying Mental Health (C-I-R-C), Jena-Magdeburg-Halle, Germany.
+AD  - German Center for Mental Health (DZPG), Site Jena-Magdeburg-Halle.
+LA  - eng
+PT  - Journal Article
+DEP - 20250602
+PL  - England
+TA  - Brain
+JT  - Brain : a journal of neurology
+JID - 0372537
+SB  - IM
+OTO - NOTNLM
+OT  - anxiety
+OT  - fragile X-associated neuropsychiatric disorders (FXAND)
+OT  - gamma oscillations
+OT  - parvalbumin+ interneurons
+OT  - transgenic mouse model
+OT  - ventral hippocampus
+EDAT- 2025/06/02 18:30
+MHDA- 2025/06/02 18:30
+CRDT- 2025/06/02 14:13
+PHST- 2024/12/25 00:00 [received]
+PHST- 2025/05/13 00:00 [accepted]
+PHST- 2025/06/02 18:30 [medline]
+PHST- 2025/06/02 18:30 [pubmed]
+PHST- 2025/06/02 14:13 [entrez]
+AID - 8155330 [pii]
+AID - 10.1093/brain/awaf203 [doi]
+PST - aheadofprint
+SO  - Brain. 2025 Jun 2:awaf203. doi: 10.1093/brain/awaf203.
+
 PMID- 40418066
 OWN - NLM
 STAT- Publisher
@@ -2258,7 +2895,7 @@ SO  - Mol Genet Genomic Med. 2024 Nov;12(11):e70043. doi: 10.1002/mgg3.70043.
 PMID- 39574643
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250530
+LR  - 20250611
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2024 Nov 6
@@ -3595,7 +4232,7 @@ PMID- 38772058
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240611
-LR  - 20250418
+LR  - 20250617
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Print)
 IS  - 0022-510X (Linking)
@@ -3735,10 +4372,10 @@ CRDT- 2024/05/21 18:00
 PHST- 2023/10/11 00:00 [received]
 PHST- 2024/05/15 00:00 [revised]
 PHST- 2024/05/16 00:00 [accepted]
-PHST- 2025/06/15 00:00 [pmc-release]
 PHST- 2024/06/12 00:41 [medline]
 PHST- 2024/05/21 18:44 [pubmed]
 PHST- 2024/05/21 18:00 [entrez]
+PHST- 2025/06/15 00:00 [pmc-release]
 AID - S0022-510X(24)00191-6 [pii]
 AID - 10.1016/j.jns.2024.123056 [doi]
 PST - ppublish
@@ -3867,7 +4504,7 @@ PMID- 38522837
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240518
-LR  - 20250412
+LR  - 20250602
 IS  - 1943-7811 (Electronic)
 IS  - 1525-1578 (Print)
 IS  - 1525-1578 (Linking)
@@ -3984,10 +4621,10 @@ CRDT- 2024/03/24 20:31
 PHST- 2023/08/15 00:00 [received]
 PHST- 2024/02/15 00:00 [revised]
 PHST- 2024/02/23 00:00 [accepted]
-PHST- 2025/06/01 00:00 [pmc-release]
 PHST- 2024/05/19 00:42 [medline]
 PHST- 2024/03/25 00:42 [pubmed]
 PHST- 2024/03/24 20:31 [entrez]
+PHST- 2025/06/01 00:00 [pmc-release]
 AID - S1525-1578(24)00058-8 [pii]
 AID - 10.1016/j.jmoldx.2024.02.007 [doi]
 PST - ppublish
