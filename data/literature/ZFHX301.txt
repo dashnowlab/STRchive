@@ -1,4 +1,147 @@
 
+PMID- 40594369
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250702
+LR  - 20250704
+IS  - 2045-2322 (Electronic)
+IS  - 2045-2322 (Linking)
+VI  - 15
+IP  - 1
+DP  - 2025 Jul 1
+TI  - Feasibility of long-read sequencing to identify molecular alterations in an 
+      Indonesian cohort of locally advanced to advanced nasopharyngeal cancer.
+PG  - 21087
+LID - 10.1038/s41598-025-06096-5 [doi]
+LID - 21087
+AB  - Nasopharyngeal carcinoma (NPC) is prevalent in Southeast Asia, particularly in 
+      Indonesia. Despite advances in treatment, patients with advanced NPC face poor 
+      outcomes. Examining the NPC mutational landscape is crucial for understanding its 
+      biology and enable potential new therapeutic strategy. To characterize the 
+      landscape of single nucleotide variants (SNVs), structural variants (SVs), copy 
+      number variations (CNVs), and short tandem repeats (STRs) in locally advanced to 
+      advanced NPC within an Indonesian cohort using long-read sequencing. Six 
+      fresh-frozen nasopharyngeal biopsy samples were collected from the NPC biobank. 
+      DNA was extracted and sequenced using Oxford Nanopore's Promethion 2 Solo 
+      long-read sequencer. Structural and small variants were identified and annotated. 
+      The SNVs, SVs, and CNVs were categorized based on predicted effects, and key 
+      findings were validated using external RNA-seq data. Copy number loss genes were 
+      checked against the Tumour Suppressor Gene database (TSGene v2.0). Genetic 
+      findings were correlated with patient clinical histories. Approximately 4.4 to 
+      5.1 million SNVs were identified per sample, with 0.023% categorized as high 
+      consequence. Notable tumour suppressor genes, such as LIMD1 and CNDP2, were 
+      frequently mutated. Around 30,000 to 41,599 SVs were detected per sample. 
+      High-consequence tumour suppressor gene SVs were identified in EPHA3, CASP8, 
+      DMBT1, ZFHX3, and IRF5 gene. Common copy number tumour suppressor gene loss 
+      observed in RNH1, H19, CDKN1C, and others, suggesting their role in NPC 
+      carcinogenesis. Copy number gains were found in potential oncogenes such as Y 
+      RNA, LTO1, and FADD. Pathogenic short tandem repeats (STRs) in PABPN1 and RFC1 
+      were identified in three samples, presenting a novel association with NPC. NPC 
+      sample which exhibited significant genomic instability had the shortest survival, 
+      potentially linked to multiple defective DNA repair genes. This study utilized 
+      long-read sequencing to identify a complex spectrum of genetic alterations, 
+      including numerous SVs and potentially pathogenic STRs, in Indonesian NPC. 
+      Extensive DNA repair gene defects, primarily complex SVs detectable by long 
+      reads, were observed and highly possibly associated with poor survival. These 
+      findings underscore the potential of long-read sequencing for uncovering 
+      clinically relevant mutations in NPC.
+CI  - (c) 2025. The Author(s).
+FAU - Handoko
+AU  - Handoko
+AD  - Doctoral Program in Biomedical Sciences, Faculty of Medicine, Universitas 
+      Indonesia, Jakarta, Indonesia. handoko12@ui.ac.id.
+AD  - Department of Radiation Oncology, Faculty of Medicine, Universitas Indonesia, 
+      Cipto Mangunkusumo National General Hospital, 10430, Jl. Salemba Raya No.4, DKI, 
+      Jakarta, Indonesia. handoko12@ui.ac.id.
+FAU - Adham, Marlinda
+AU  - Adham M
+AD  - Department of Otorhinolaryngology - Head and Neck Surgery, Faculty of Medicine, 
+      Universitas Indonesia, Cipto Mangunkusumo National General Hospital, Jakarta, 
+      Indonesia.
+FAU - Rachmadi, Lisnawati
+AU  - Rachmadi L
+AD  - Department of Anatomical Pathology, Faculty of Medicine, Universitas Indonesia, 
+      Cipto Mangunkusumo National General Hospital, Jakarta, Indonesia.
+FAU - Tobing, Demak Lumban
+AU  - Tobing DL
+AD  - Department of Clinical Pathology, Dharmais Cancer Hospital, Jakarta, Indonesia.
+FAU - Asmarinah
+AU  - Asmarinah
+AD  - Medical Biology Department, Faculty of Medicine, Universitas Indonesia, Jakarta, 
+      Indonesia.
+FAU - Fadilah
+AU  - Fadilah
+AD  - Department of Medical Chemistry, Faculty of Medicine, Universitas Indonesia, 
+      Jakarta, Indonesia.
+AD  - Bioinformatics Core Facilities, Faculty of Medicine, Indonesian Medical Education 
+      and Research Institute (IMERI), Universitas Indonesia, Jakarta, Indonesia.
+FAU - Dai, Wei
+AU  - Dai W
+AD  - Department of Clinical Oncology, Centre of Cancer Medicine, School of Clinical 
+      Medicine, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong 
+      (SAR), PR China.
+AD  - Clinical Oncology Center, University of Hong Kong - Shenzhen Hospital, Shenzhen, 
+      People's Republic of China.
+FAU - Lee, Anne Wing Mui
+AU  - Lee AWM
+AD  - Clinical Oncology Center, University of Hong Kong - Shenzhen Hospital, Shenzhen, 
+      People's Republic of China.
+FAU - Gondhowiardjo, Soehartati A
+AU  - Gondhowiardjo SA
+AD  - Department of Radiation Oncology, Faculty of Medicine, Universitas Indonesia, 
+      Cipto Mangunkusumo National General Hospital, 10430, Jl. Salemba Raya No.4, DKI, 
+      Jakarta, Indonesia. gondhow@gmail.com.
+LA  - eng
+GR  - NKB-602/UN2.RST/HKP.05.00/2022/Universitas Indonesia/
+PT  - Journal Article
+DEP - 20250701
+PL  - England
+TA  - Sci Rep
+JT  - Scientific reports
+JID - 101563288
+SB  - IM
+MH  - Humans
+MH  - Indonesia/epidemiology
+MH  - DNA Copy Number Variations
+MH  - Female
+MH  - Male
+MH  - *Nasopharyngeal Neoplasms/genetics/pathology
+MH  - *Nasopharyngeal Carcinoma/genetics/pathology
+MH  - Middle Aged
+MH  - Adult
+MH  - Cohort Studies
+MH  - Polymorphism, Single Nucleotide
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Mutation
+MH  - Aged
+PMC - PMC12215144
+OTO - NOTNLM
+OT  - CNVs
+OT  - Copy number variation
+OT  - DNA repair
+OT  - Indonesia
+OT  - Mutational landscape
+OT  - Nasopharyngeal carcinoma
+OT  - SNVs
+OT  - SVs
+OT  - Tumour suppressor genes
+COIS- Declarations. Competing interests: The authors declare no competing interests.
+EDAT- 2025/07/02 06:28
+MHDA- 2025/07/02 06:29
+PMCR- 2025/07/01
+CRDT- 2025/07/02 01:01
+PHST- 2024/09/30 00:00 [received]
+PHST- 2025/06/05 00:00 [accepted]
+PHST- 2025/07/02 06:29 [medline]
+PHST- 2025/07/02 06:28 [pubmed]
+PHST- 2025/07/02 01:01 [entrez]
+PHST- 2025/07/01 00:00 [pmc-release]
+AID - 10.1038/s41598-025-06096-5 [pii]
+AID - 6096 [pii]
+AID - 10.1038/s41598-025-06096-5 [doi]
+PST - epublish
+SO  - Sci Rep. 2025 Jul 1;15(1):21087. doi: 10.1038/s41598-025-06096-5.
+
 PMID- 40488180
 OWN - NLM
 STAT- PubMed-not-MEDLINE

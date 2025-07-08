@@ -144,40 +144,44 @@ SO  - Brain Commun. 2025 May 17;7(3):fcaf188. doi: 10.1093/braincomms/fcaf188.
 PMID- 40417743
 OWN - NLM
 STAT- Publisher
-LR  - 20250526
+LR  - 20250706
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Linking)
+VI  - 27
+IP  - 8
 DP  - 2025 May 22
 TI  - A genome-wide approach for the discovery of novel repeat expansion disorders in 
       the Undiagnosed Diseases Network cohort.
 PG  - 101462
 LID - S1098-3600(25)00109-1 [pii]
 LID - 10.1016/j.gim.2025.101462 [doi]
-AB  - Purpose The Undiagnosed Diseases Network (UDN) is a National Institutes of Health 
+AB  - PURPOSE: The Undiagnosed Diseases Network is a National Institutes of Health 
       funded research study that aims to solve a broad clinical spectrum of challenging 
       rare disease cases. Participants receive care from multiple clinical specialists, 
-      who collaborate to perform deep phenotyping and state-of-the-art multi-omics 
+      who collaborate to perform deep phenotyping and state-of-the-art multiomics 
       analyses. As bioinformatics of short-read sequencing has matured, the discovery 
-      of repeat expansion disorders (REDs) is accelerating. REDs comprise  approximately 60 
-      characterized disorders, which exhibit a broad spectrum of phenotypes. Thus, a 
+      of repeat expansion disorders (REDs) is accelerating. REDs comprise approximately 
+      60 characterized disorders, which exhibit a broad spectrum of phenotypes. Thus, a 
       largely unbiased genome-wide approach in a phenotypically diverse sample will add 
       to the diagnostic depth, explore the limits of short-read genome analysis, and 
-      establish novel candidate RED loci. Methods Here, we present a genome-wide 
-      analysis of repeat expansions conducted on 1,018 genomes from the UDN. By 
-      leveraging two distinct bioinformatics tools, ExpansionHunter Denovo and STRling, 
-      we show that repeat expansions can be accurately detected in short-read genomes. 
-      Results We demonstrate that a genotype-first approach can diagnose atypical cases 
-      of known REDs and provide valuable clinical insights. We present clinical details 
-      on participants with expansions in ATXN7, DMPK, FMR1, GLS, HTT, RFC1, AFF3, and 
-      MARCH6. Importantly, we highlight two cases of juvenile Huntington disease that 
-      were discovered through our analysis. Finally, we present a list of novel 
-      candidate TRs that could potentially be pathogenic if expanded. Conclusion 
-      Importantly, our approach showcases the bioinformatic advancements in genome 
-      analysis for RED detection and highlights its practical applications.
-CI  - Copyright (c) 2025. Published by Elsevier Inc.
+      establish novel candidate RED loci. METHODS: Here, we present a genome-wide 
+      analysis of repeat expansions conducted on 1018 genomes from the Undiagnosed 
+      Diseases Network. By leveraging 2 distinct bioinformatics tools, ExpansionHunter 
+      Denovo and STRling, we showed that repeat expansions can be accurately detected 
+      in short-read genomes. RESULTS: We demonstrated that a genotype-first approach 
+      can diagnose atypical cases of known REDs and provide valuable clinical insights. 
+      We present clinical details on participants with expansions in ATXN7, DMPK, FMR1, 
+      GLS, HTT, RFC1, AFF3, and MARCH6. Importantly, we highlight 2 cases of juvenile 
+      Huntington disease that were discovered through our analysis. Finally, we present 
+      a list of novel candidate short tandem repeats (TR) that could potentially be 
+      pathogenic if expanded. CONCLUSION: Importantly, our approach showcases the 
+      bioinformatic advancements in genome analysis for RED detection and highlights 
+      its practical applications.
+CI  - Copyright (c) 2025 American College of Medical Genetics and Genomics. Published by 
+      Elsevier Inc. All rights reserved.
 FAU - Fazal, Sarah
 AU  - Fazal S
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Dashnow, Harriet
@@ -185,13 +189,13 @@ AU  - Dashnow H
 AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
 FAU - Dohrn, Maike F
 AU  - Dohrn MF
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL; Department of Neurology, RWTH Aachen University Faculty of Medicine, 
       Aachen, Germany.
 FAU - Raposo, Jacquelyn
 AU  - Raposo J
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Hiatt, Laurel
@@ -199,12 +203,12 @@ AU  - Hiatt L
 AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
 FAU - Danzi, Matt C
 AU  - Danzi MC
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Xu, Isaac R L
 AU  - Xu IRL
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Toro, Camilo
@@ -241,18 +245,18 @@ AD  - Division of Medical Genetics, Department of Pediatrics, Duke University Sc
       Medicine, Durham, NC.
 FAU - Rebelo, Adriana
 AU  - Rebelo A
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Bademci, Guney
 AU  - Bademci G
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 CN  - Undiagnosed Diseases Network
 FAU - Tekin, Mustafa
 AU  - Tekin M
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Quinlan, Aaron R
@@ -260,9 +264,9 @@ AU  - Quinlan AR
 AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
 FAU - Zuchner, Stephan
 AU  - Zuchner S
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
-      Miami, FL.
+      Miami, FL. Electronic address: szuchner@med.miami.edu.
 LA  - eng
 PT  - Journal Article
 DEP - 20250522
@@ -273,22 +277,659 @@ JT  - Genetics in medicine : official journal of the American College of Medical
 JID - 9815831
 SB  - IM
 OTO - NOTNLM
-OT  - bioinformatics
-OT  - repeat expansion
-OT  - undiagnosed
+OT  - Bioinformatics
+OT  - Rare disease
+OT  - Rare diseases
+OT  - Short tandem repeats
+OT  - Tandem repeat expansion disorders
+COIS- Conflict of Interest The authors declare no conflicts of interest.
+FIR - Quinlan, Aaron
+IR  - Quinlan A
+FIR - Elkadri, Abdul
+IR  - Elkadri A
+FIR - Vanderver, Adeline
+IR  - Vanderver A
+FIR - Rebelo, Adriana
+IR  - Rebelo A
+FIR - Beggs, Alan H
+IR  - Beggs AH
+FIR - La Spada, Albert R
+IR  - La Spada AR
+FIR - Huang, Alden
+IR  - Huang A
+FIR - Paul, Alex
+IR  - Paul A
+FIR - Miller, Alexander
+IR  - Miller A
+FIR - Al-Beshri, Ali
+IR  - Al-Beshri A
+FIR - Ward, Alistair
+IR  - Ward A
+FIR - Bale, Allen
+IR  - Bale A
+FIR - McConkie-Rosell, Allyn
+IR  - McConkie-Rosell A
+FIR - Tran, Alyssa A
+IR  - Tran AA
+FIR - Gropman, Andrea
+IR  - Gropman A
+FIR - Vargas, Andres
+IR  - Vargas A
+FIR - Crouse, Andrew B
+IR  - Crouse AB
+FIR - Stergachis, Andrew
+IR  - Stergachis A
+FIR - Hurst, Anna
+IR  - Hurst A
+FIR - Raper, Anna
+IR  - Raper A
+FIR - Tarakad, Arjun
+IR  - Tarakad A
+FIR - Andrews, Ashley
+IR  - Andrews A
+FIR - McMinn, Ashley
+IR  - McMinn A
+FIR - Balasubramanyam, Ashok
+IR  - Balasubramanyam A
+FIR - Pusey Swerdzewski, Barbara N
+IR  - Pusey Swerdzewski BN
+FIR - Anguiano, Beatriz
+IR  - Anguiano B
+FIR - Afzali, Ben
+IR  - Afzali B
+FIR - Solomon, Ben
+IR  - Solomon B
+FIR - Martin, Beth A
+IR  - Martin BA
+FIR - Russell, Bianca E
+IR  - Russell BE
+FIR - Wilk, Brandon M
+IR  - Wilk BM
+FIR - Mitchell, Breanna
+IR  - Mitchell B
+FIR - Lanpher, Brendan C
+IR  - Lanpher BC
+FIR - Lee, Brendan H
+IR  - Lee BH
+FIR - Fogel, Brent L
+IR  - Fogel BL
+FIR - Bordini, Brett
+IR  - Bordini B
+FIR - Graham, Brett H
+IR  - Graham BH
+FIR - Corner, Brian
+IR  - Corner B
+FIR - Tucker, Brianna
+IR  - Tucker B
+FIR - Korf, Bruce
+IR  - Korf B
+FIR - MacRae, Calum A
+IR  - MacRae CA
+FIR - Toro, Camilo
+IR  - Toro C
+FIR - Skraban, Cara
+IR  - Skraban C
+FIR - Bacino, Carlos A
+IR  - Bacino CA
+FIR - Oladele, Carol
+IR  - Oladele C
+FIR - Hendry, Caroline
+IR  - Hendry C
+FIR - Smith, Carson A
+IR  - Smith CA
+FIR - Esteves, Cecilia
+IR  - Esteves C
+FIR - Xiao, Changrui
+IR  - Xiao C
+FIR - Reuter, Chloe M
+IR  - Reuter CM
+FIR - Eng, Christine M
+IR  - Eng CM
+FIR - Chan, Chun-Hung
+IR  - Chan CH
+FIR - Wahl, Colleen E
+IR  - Wahl CE
+FIR - Welt, Corrine K
+IR  - Welt CK
+FIR - Tifft, Cynthia J
+IR  - Tifft CJ
+FIR - Kiley, Dana
+IR  - Kiley D
+FIR - Rader, Daniel J
+IR  - Rader DJ
+FIR - Wegner, Daniel
+IR  - Wegner D
+FIR - Miller, Danny
+IR  - Miller D
+FIR - Scott, Daryl A
+IR  - Scott DA
+FIR - Viskochil, Dave
+IR  - Viskochil D
+FIR - Sweetser, David A
+IR  - Sweetser DA
+FIR - Adams, David R
+IR  - Adams DR
+FIR - Barbouth, Deborah
+IR  - Barbouth D
+FIR - Rao, Deepak A
+IR  - Rao DA
+FIR - Oglesbee, Devin
+IR  - Oglesbee D
+FIR - Bonner, Devon
+IR  - Bonner D
+FIR - Basel, Donald
+IR  - Basel D
+FIR - Novacic, Donna
+IR  - Novacic D
+FIR - Bustos Velasq, Francisco
+IR  - Bustos Velasq F
+FIR - Baldridge, Dustin
+IR  - Baldridge D
+FIR - Behrens, Edward
+IR  - Behrens E
+FIR - Silverman, Edwin K
+IR  - Silverman EK
+FIR - Seto, Elaine
+IR  - Seto E
+FIR - Kravets, Elijah
+IR  - Kravets E
+FIR - Rosenthal, Elisabeth
+IR  - Rosenthal E
+FIR - Worthey, Elizabeth A
+IR  - Worthey EA
+FIR - Burke, Elizabeth A
+IR  - Burke EA
+FIR - Blue, Elizabeth
+IR  - Blue E
+FIR - Chao, Elizabeth C
+IR  - Chao EC
+FIR - Fieg, Elizabeth L
+IR  - Fieg EL
+FIR - Macnamara, Ellen F
+IR  - Macnamara EF
+FIR - Balton, Elsa
+IR  - Balton E
+FIR - Glanton, Emily
+IR  - Glanton E
+FIR - Shelkowitz, Emily
+IR  - Shelkowitz E
+FIR - Wang, Emily
+IR  - Wang E
+FIR - Allenspach, Eric
+IR  - Allenspach E
+FIR - Klee, Eric
+IR  - Klee E
+FIR - Vilain, Eric
+IR  - Vilain E
+FIR - Conboy, Erin
+IR  - Conboy E
+FIR - Baldwin, Erin E
+IR  - Baldwin EE
+FIR - McRoy, Erin
+IR  - McRoy E
+FIR - Dell'Angelica, Esteban C
+IR  - Dell'Angelica EC
+FIR - Ashley, Euan A
+IR  - Ashley EA
+FIR - Cole, F Sessions
+IR  - Cole FS
+FIR - Pinto E Vairo, Filippo
+IR  - Pinto E Vairo F
+FIR - High, Frances
+IR  - High F
+FIR - Vetrini, Francesco
+IR  - Vetrini F
+FIR - Rossignol, Francis
+IR  - Rossignol F
+FIR - Hisama, Fuki M
+IR  - Hisama FM
+FIR - Marth, Gabor
+IR  - Marth G
+FIR - Jarvik, Gail P
+IR  - Jarvik GP
+FIR - Clark, Gary D
+IR  - Clark GD
+FIR - Carvalho, George
+IR  - Carvalho G
+FIR - Berry, Gerard T
+IR  - Berry GT
+FIR - Mirzaa, Ghayda
+IR  - Mirzaa G
+FIR - Sirugo, Giorgio
+IR  - Sirugo G
+FIR - Kilich, Gonench
+IR  - Kilich G
+FIR - Bademci, Guney
+IR  - Bademci G
+FIR - Mendez, Hector Rodrigo
+IR  - Mendez HR
+FIR - Wood, Heidi
+IR  - Wood H
+FIR - Taylor, Herman
+IR  - Taylor H
+FIR - Tabor, Holly K
+IR  - Tabor HK
+FIR - Dai, Hongzheng
+IR  - Dai H
+FIR - Chao, Hsiao-Tuan
+IR  - Chao HT
+FIR - Xu, Hua
+IR  - Xu H
+FIR - Bellen, Hugo J
+IR  - Bellen HJ
+FIR - Zhang, Hui
+IR  - Zhang H
+FIR - Glass, Ian
+IR  - Glass I
+FIR - Lanza, Ian R
+IR  - Lanza IR
+FIR - Holm, Ingrid A
+IR  - Holm IA
+FIR - Kohane, Isaac S
+IR  - Kohane IS
+FIR - Ward, Isum
+IR  - Ward I
+FIR - Chinn, Ivan
+IR  - Chinn I
+FIR - Pallais, J Carl
+IR  - Pallais JC
+FIR - Sampson, Jacinda B
+IR  - Sampson JB
+FIR - Orengo, James P
+IR  - Orengo JP
+FIR - Verbsky, James
+IR  - Verbsky J
+FIR - Sninsky, Jared
+IR  - Sninsky J
+FIR - Hom, Jason
+IR  - Hom J
+FIR - Schend, Jason
+IR  - Schend J
+FIR - Kohler, Jennefer N
+IR  - Kohler JN
+FIR - Posey, Jennifer E
+IR  - Posey JE
+FIR - Morgan, Jennifer
+IR  - Morgan J
+FIR - Schymick, Jennifer
+IR  - Schymick J
+FIR - Wambach, Jennifer
+IR  - Wambach J
+FIR - Douglas, Jessica
+IR  - Douglas J
+FIR - Fu, Jiayu
+IR  - Fu J
+FIR - Rosenfeld, Jill A
+IR  - Rosenfeld JA
+FIR - Shin, Jimann
+IR  - Shin J
+FIR - Stoler, Joan M
+IR  - Stoler JM
+FIR - Gonzalez, Joanna M
+IR  - Gonzalez JM
+FIR - Phillips, John A 3rd
+IR  - Phillips JA 3rd
+FIR - Carey, John
+IR  - Carey J
+FIR - Gorzynski, John E
+IR  - Gorzynski JE
+FIR - Mulvihill, John J
+IR  - Mulvihill JJ
+FIR - Davis, Joie
+IR  - Davis J
+FIR - Bernstein, Jonathan A
+IR  - Bernstein JA
+FIR - Whitlock, Jordan
+IR  - Whitlock J
+FIR - Abdenur, Jose
+IR  - Abdenur J
+FIR - Loscalzo, Joseph
+IR  - Loscalzo J
+FIR - Cogan, Joy D
+IR  - Cogan JD
+FIR - Martinez-Agosto, Julian A
+IR  - Martinez-Agosto JA
+FIR - McCarrier, Julie
+IR  - McCarrier J
+FIR - Alvey, Justin
+IR  - Alvey J
+FIR - Darr, Kahlen
+IR  - Darr K
+FIR - Callaway, Kaitlin
+IR  - Callaway K
+FIR - Leppig, Kathleen A
+IR  - Leppig KA
+FIR - Sullivan, Kathleen
+IR  - Sullivan K
+FIR - Sisco, Kathy
+IR  - Sisco K
+FIR - Singh, Kathyrn
+IR  - Singh K
+FIR - Dipple, Katrina
+IR  - Dipple K
+FIR - Treat, Kayla M
+IR  - Treat KM
+FIR - Hassey, Kelly
+IR  - Hassey K
+FIR - Schoch, Kelly
+IR  - Schoch K
+FIR - Smith, Kevin S
+IR  - Smith KS
+FIR - Liaqat, Khurram
+IR  - Liaqat K
+FIR - Worley, Kim
+IR  - Worley K
+FIR - Ezell, Kimberly
+IR  - Ezell K
+FIR - LeBlanc, Kimberly
+IR  - LeBlanc K
+FIR - Latchman, Kumarie
+IR  - Latchman K
+FIR - Rodan, Lance H
+IR  - Rodan LH
+FIR - Keehan, Laura
+IR  - Keehan L
+FIR - Pace, Laura
+IR  - Pace L
+FIR - Cobban, Laurel A
+IR  - Cobban LA
+FIR - Blieden, Lauren
+IR  - Blieden L
+FIR - Briere, Lauren C
+IR  - Briere LC
+FIR - Jeffries, Lauren
+IR  - Jeffries L
+FIR - Wiel, Laurens
+IR  - Wiel L
+FIR - Abi Farraj, Layal F
+IR  - Abi Farraj LF
+FIR - Petcharet, Leoyklang
+IR  - Petcharet L
+FIR - Peart, LeShon
+IR  - Peart L
+FIR - Mantcheva, Lili
+IR  - Mantcheva L
+FIR - Solnica-Krezel, Lilianna
+IR  - Solnica-Krezel L
+FIR - Burrage, Lindsay C
+IR  - Burrage LC
+FIR - Mulvihill, Lindsay
+IR  - Mulvihill L
+FIR - Schimmenti, Lisa
+IR  - Schimmenti L
+FIR - Emrick, Lisa T
+IR  - Emrick LT
+FIR - Botto, Lorenzo
+IR  - Botto L
+FIR - Potocki, Lorraine
+IR  - Potocki L
+FIR - Rives, Lynette
+IR  - Rives L
+FIR - Wolfe, Lynne A
+IR  - Wolfe LA
+FIR - Steenari, Maija-Rikka
+IR  - Steenari MR
+FIR - Butte, Manish J
+IR  - Butte MJ
+FIR - Delgado, Margaret
+IR  - Delgado M
+FIR - Romero, Maria Jose Ortuno
+IR  - Romero MJO
+FIR - Acosta, Maria T
+IR  - Acosta MT
+FIR - Morimoto, Marie
+IR  - Morimoto M
+FIR - Nakano-Okuno, Mariko
+IR  - Nakano-Okuno M
+FIR - Gerstein, Mark
+IR  - Gerstein M
+FIR - Wener, Mark
+IR  - Wener M
+FIR - Sabaii, Marla
+IR  - Sabaii M
+FIR - Horike-Pyne, Martha
+IR  - Horike-Pyne M
+FIR - Martin, Martin G
+IR  - Martin MG
+FIR - Rodriguez, Martin
+IR  - Rodriguez M
+FIR - Velinder, Matt
+IR  - Velinder M
+FIR - Coggins, Matthew
+IR  - Coggins M
+FIR - Might, Matthew
+IR  - Might M
+FIR - Wheeler, Matthew T
+IR  - Wheeler MT
+FIR - Malicdan, MayChristine V
+IR  - Malicdan MV
+FIR - Bell, Megan
+IR  - Bell M
+FIR - Halley, Meghan C
+IR  - Halley MC
+FIR - Walker, Melissa
+IR  - Walker M
+FIR - Levanto, Mia
+IR  - Levanto M
+FIR - Bamshad, Michael
+IR  - Bamshad M
+FIR - Wangler, Michael F
+IR  - Wangler MF
+FIR - Muriello, Michael
+IR  - Muriello M
+FIR - Zimmermann, Michael
+IR  - Zimmermann M
+FIR - Spencer-Manzon, Michele
+IR  - Spencer-Manzon M
+FIR - Leitheiser, Miranda
+IR  - Leitheiser M
+FIR - Mikati, Mohamad
+IR  - Mikati M
+FIR - Saifeddine, Mohamad
+IR  - Saifeddine M
+FIR - Weisz Hubshman, Monika
+IR  - Weisz Hubshman M
+FIR - Lek, Monkol
+IR  - Lek M
+FIR - Westerfield, Monte
+IR  - Westerfield M
+FIR - Tekin, Mustafa
+IR  - Tekin M
+FIR - Derar, Nada
+IR  - Derar N
+FIR - Dorrani, Naghmeh
+IR  - Dorrani N
+FIR - Parker, Neil H
+IR  - Parker NH
+FIR - Hanchard, Neil
+IR  - Hanchard N
+FIR - Borja, Nicholas
+IR  - Borja N
+FIR - Longo, Nicola
+IR  - Longo N
+FIR - Walley, Nicole M
+IR  - Walley NM
+FIR - Dargie, Nitsuh K
+IR  - Dargie NK
+FIR - Kaufman, Odelya
+IR  - Kaufman O
+FIR - Kanca, Oguz
+IR  - Kanca O
+FIR - Jean-Marie, Orpa
+IR  - Jean-Marie O
+FIR - Goddard, Page C
+IR  - Goddard PC
+FIR - Moretti, Paolo
+IR  - Moretti P
+FIR - Ward, Patricia A
+IR  - Ward PA
+FIR - Dickson, Patricia
+IR  - Dickson P
+FIR - Berger, Paul
+IR  - Berger P
+FIR - Fisher, Paul G
+IR  - Fisher PG
+FIR - Liu, Pengfei
+IR  - Liu P
+FIR - Byers, Peter
+IR  - Byers P
+FIR - Bayrak-Toydemir, Pinar
+IR  - Bayrak-Toydemir P
+FIR - D'Souza, Precilla
+IR  - D'Souza P
+FIR - Tan, Queenie
+IR  - Tan Q
+FIR - Ungar, Rachel A
+IR  - Ungar RA
+FIR - Li, Rachel
+IR  - Li R
+FIR - Mahoney, Rachel
+IR  - Mahoney R
+FIR - Rajagopalan, Ramakrishnan
+IR  - Rajagopalan R
+FIR - Alvarez, Raquel L
+IR  - Alvarez RL
+FIR - Spillmann, Rebecca C
+IR  - Spillmann RC
+FIR - Ganetzky, Rebecca
+IR  - Ganetzky R
+FIR - Overbury, Rebecca
+IR  - Overbury R
+FIR - Barrick, Rebekah
+IR  - Barrick R
+FIR - Lewis, Richard A
+IR  - Lewis RA
+FIR - Maas, Richard L
+IR  - Maas RL
+FIR - Hamid, Rizwan
+IR  - Hamid R
+FIR - Mao, Rong
+IR  - Mao R
+FIR - Marom, Ronit
+IR  - Marom R
+FIR - Corona, Rosario I
+IR  - Corona RI
+FIR - Kumar, Runjun
+IR  - Kumar R
+FIR - Butterfield, Russell
+IR  - Butterfield R
+FIR - Attaripour, Sanaz
+IR  - Attaripour S
+FIR - Nagamani, Sandesh
+IR  - Nagamani S
+FIR - Emami, Sara
+IR  - Emami S
+FIR - Lalani, Seema R
+IR  - Lalani SR
+FIR - Neumann, Serena
+IR  - Neumann S
+FIR - Perlman, Seth
+IR  - Perlman S
+FIR - Ketkar, Shamika
+IR  - Ketkar S
+FIR - Sunyaev, Shamil R
+IR  - Sunyaev SR
+FIR - Kobren, Shilpa N
+IR  - Kobren SN
+FIR - Yamamoto, Shinya
+IR  - Yamamoto S
+FIR - Mane, Shrikant
+IR  - Mane S
+FIR - Marwaha, Shruti
+IR  - Marwaha S
+FIR - Chanprasert, Sirisak
+IR  - Chanprasert S
+FIR - Nelson, Stanley F
+IR  - Nelson SF
+FIR - Zuchner, Stephan
+IR  - Zuchner S
+FIR - Bivona, Stephanie
+IR  - Bivona S
+FIR - Ware, Stephanie M
+IR  - Ware SM
+FIR - Montgomery, Stephen B
+IR  - Montgomery SB
+FIR - Pak, Stephen
+IR  - Pak S
+FIR - Boyden, Steven
+IR  - Boyden S
+FIR - Bachir, Suha
+IR  - Bachir S
+FIR - Dasari, Surendra
+IR  - Dasari S
+FIR - Korrick, Susan
+IR  - Korrick S
+FIR - Sandmeyer, Suzanne
+IR  - Sandmeyer S
+FIR - Mozaffar, Tahseen
+IR  - Mozaffar T
+FIR - Skelton, Tammi
+IR  - Skelton T
+FIR - Jensen, Tanner D
+IR  - Jensen TD
+FIR - Mamidi, Tarun Kk
+IR  - Mamidi TK
+FIR - Beagle, Taylor
+IR  - Beagle T
+FIR - Maurer, Taylor
+IR  - Maurer T
+FIR - Serrano, Teodoro Jerves
+IR  - Serrano TJ
+FIR - Coakley, Terra R
+IR  - Coakley TR
+FIR - Cassini, Thomas
+IR  - Cassini T
+FIR - Nicholas, Thomas J
+IR  - Nicholas TJ
+FIR - Schedl, Timothy
+IR  - Schedl T
+FIR - Vogel, Tiphanie P
+IR  - Vogel TP
+FIR - Jobanputra, Vaidehi
+IR  - Jobanputra V
+FIR - Maduro, Valerie V
+IR  - Maduro VV
+FIR - Shashi, Vandana
+IR  - Shashi V
+FIR - Vasiliou, Vasilis
+IR  - Vasiliou V
+FIR - Sybert, Virginia
+IR  - Sybert V
+FIR - Cuddapah, Vishnu
+IR  - Cuddapah V
+FIR - Introne, Wendy
+IR  - Introne W
+FIR - Raskind, Wendy
+IR  - Raskind W
+FIR - Thorson, Willa
+IR  - Thorson W
+FIR - Gahl, William A
+IR  - Gahl WA
+FIR - Byrd, William E
+IR  - Byrd WE
+FIR - Craigen, William J
+IR  - Craigen WJ
+FIR - Halstead, Winston
+IR  - Halstead W
+FIR - Huang, Yan
+IR  - Huang Y
+FIR - Karasozen, Yigit
+IR  - Karasozen Y
+FIR - Jiang, Yong-Hui
+IR  - Jiang YH
 EDAT- 2025/05/26 12:37
 MHDA- 2025/05/26 12:37
 CRDT- 2025/05/26 06:18
 PHST- 2024/08/07 00:00 [received]
 PHST- 2025/05/15 00:00 [revised]
 PHST- 2025/05/16 00:00 [accepted]
-PHST- 2025/05/26 12:37 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
+PHST- 2025/05/26 12:37 [medline]
 PHST- 2025/05/26 06:18 [entrez]
 AID - S1098-3600(25)00109-1 [pii]
 AID - 10.1016/j.gim.2025.101462 [doi]
 PST - aheadofprint
-SO  - Genet Med. 2025 May 22:101462. doi: 10.1016/j.gim.2025.101462.
+SO  - Genet Med. 2025 May 22;27(8):101462. doi: 10.1016/j.gim.2025.101462.
 
 PMID- 39699045
 OWN - NLM
@@ -3440,7 +4081,7 @@ PT  - Research Support, Non-U.S. Gov't
 PT  - Research Support, U.S. Gov't, P.H.S.
 PL  - United States
 TA  - Diabetes
-JT  - Diabetes
+JT  - Diabetes..
 JID - 0372763
 RN  - 0 (DNA Primers)
 RN  - 0 (DNA, Complementary)
