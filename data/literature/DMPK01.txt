@@ -276,13 +276,18 @@ SO  - Epigenetics Chromatin. 2025 Apr 28;18(1):24. doi: 10.1186/s13072-025-00588
 
 PMID- 40259070
 OWN - NLM
-STAT- Publisher
-LR  - 20250429
+STAT- MEDLINE
+DCOM- 20250609
+LR  - 20250613
 IS  - 1546-1726 (Electronic)
+IS  - 1097-6256 (Print)
 IS  - 1097-6256 (Linking)
-DP  - 2025 Apr 21
+VI  - 28
+IP  - 6
+DP  - 2025 Jun
 TI  - Autism-related traits in myotonic dystrophy type 1 model mice are due to MBNL 
       sequestration and RNA mis-splicing of autism-risk genes.
+PG  - 1199-1212
 LID - 10.1038/s41593-025-01943-0 [doi]
 AB  - Genome-wide enrichment of gene-specific tandem repeat expansions has been linked 
       to autism spectrum disorder. One such mutation is the CTG tandem repeat expansion 
@@ -370,45 +375,76 @@ AD  - Genetics and Genome Biology, The Hospital for Sick Children, Toronto, Onta
 AD  - Centre for Applied Genomics, The Hospital for Sick Children, Toronto, Ontario, 
       Canada.
 LA  - eng
-GR  - R16GM154702/U.S. Department of Health & Human Services | NIH | National Institute 
-      of General Medical Sciences (NIGMS)/
-GR  - MDA546770/Muscular Dystrophy Association (Muscular Dystrophy Association Inc.)/
-GR  - 2020/39/D/NZ3/01658/Narodowe Centrum Nauki (National Science Centre)/
+GR  - R01NS103172/U.S. Department of Health & Human Services | NIH | National Institute 
+      of Neurological Disorders and Stroke (NINDS)/
+GR  - R01 MH094714/MH/NIMH NIH HHS/United States
+GR  - P20 GM103440/GM/NIGMS NIH HHS/United States
+GR  - R01 GM129325/GM/NIGMS NIH HHS/United States
+GR  - P50NS132955/U.S. Department of Health & Human Services | NIH | National Institute 
+      of Neurological Disorders and Stroke (NINDS)/
+GR  - R15 NS124008/NS/NINDS NIH HHS/United States
 GR  - 2020/38/A/NZ3/00498/Narodowe Centrum Nauki (National Science Centre)/
+GR  - P50 NS132955/NS/NINDS NIH HHS/United States
 GR  - FRN-148910/Gouvernement du Canada | Canadian Institutes of Health Research 
       (Instituts de Recherche en Sante du Canada)/
 GR  - FRN-173282/Gouvernement du Canada | Canadian Institutes of Health Research 
       (Instituts de Recherche en Sante du Canada)/
-GR  - P50NS132955/U.S. Department of Health & Human Services | NIH | National Institute 
-      of Neurological Disorders and Stroke (NINDS)/
-GR  - R01NS103172/U.S. Department of Health & Human Services | NIH | National Institute 
-      of Neurological Disorders and Stroke (NINDS)/
+GR  - MDA546770/Muscular Dystrophy Association (Muscular Dystrophy Association Inc.)/
 GR  - R15NS124008/U.S. Department of Health & Human Services | NIH | National Institute 
       of Neurological Disorders and Stroke (NINDS)/
+GR  - P20 GM121325/GM/NIGMS NIH HHS/United States
+GR  - R16GM154702/U.S. Department of Health & Human Services | NIH | National Institute 
+      of General Medical Sciences (NIGMS)/
+GR  - 2020/39/D/NZ3/01658/Narodowe Centrum Nauki (National Science Centre)/
+GR  - R16 GM154702/GM/NIGMS NIH HHS/United States
+GR  - R01 NS103172/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20250421
 PL  - United States
 TA  - Nat Neurosci
 JT  - Nature neuroscience
 JID - 9809671
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (RNA-Binding Proteins)
+RN  - 0 (Mbnl1 protein, mouse)
+RN  - 0 (DMPK protein, mouse)
+RN  - 0 (DNA-Binding Proteins)
 SB  - IM
 UOF - Res Sq. 2023 Aug 14:rs.3.rs-3221704. doi: 10.21203/rs.3.rs-3221704/v1. PMID: 
       37645891
+MH  - Animals
+MH  - *Myotonic Dystrophy/genetics/complications
+MH  - Mice
+MH  - *Autistic Disorder/genetics
+MH  - Myotonin-Protein Kinase/genetics
+MH  - *RNA-Binding Proteins/genetics/metabolism
+MH  - Disease Models, Animal
+MH  - *RNA Splicing/genetics
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Mice, Knockout
+MH  - Male
+MH  - Mice, Inbred C57BL
+MH  - DNA-Binding Proteins
+PMC - PMC12148930
 COIS- Competing interests: M.S.S. is a Scientific Advisory Board member of Skyhawk 
       Therapeutics and Tacit Therapeutics. The other authors declare no competing 
       interests.
 EDAT- 2025/04/22 00:27
-MHDA- 2025/04/22 00:27
+MHDA- 2025/06/10 00:30
+PMCR- 2025/04/21
 CRDT- 2025/04/21 23:26
 PHST- 2023/07/31 00:00 [received]
 PHST- 2025/03/14 00:00 [accepted]
-PHST- 2025/04/22 00:27 [medline]
+PHST- 2025/06/10 00:30 [medline]
 PHST- 2025/04/22 00:27 [pubmed]
 PHST- 2025/04/21 23:26 [entrez]
+PHST- 2025/04/21 00:00 [pmc-release]
 AID - 10.1038/s41593-025-01943-0 [pii]
+AID - 1943 [pii]
 AID - 10.1038/s41593-025-01943-0 [doi]
-PST - aheadofprint
-SO  - Nat Neurosci. 2025 Apr 21. doi: 10.1038/s41593-025-01943-0.
+PST - ppublish
+SO  - Nat Neurosci. 2025 Jun;28(6):1199-1212. doi: 10.1038/s41593-025-01943-0. Epub 
+      2025 Apr 21.
 
 PMID- 40113266
 OWN - NLM
@@ -1523,14 +1559,17 @@ SO  - Nat Commun. 2024 Oct 21;15(1):9062. doi: 10.1038/s41467-024-53378-z.
 
 PMID- 39415708
 OWN - NLM
-STAT- Publisher
-LR  - 20241017
+STAT- MEDLINE
+DCOM- 20250604
+LR  - 20250604
 IS  - 1098-5549 (Electronic)
 IS  - 0270-7306 (Linking)
-DP  - 2024 Oct 17
+VI  - 45
+IP  - 6
+DP  - 2025
 TI  - Small Molecule Screening Identifies HSP90 as a Modifier of RNA Foci in Myotonic 
       Dystrophy Type 1.
-PG  - 1-13
+PG  - 225-237
 LID - 10.1080/10985549.2024.2408025 [doi]
 AB  - Myotonic dystrophy type 1 (DM1) is a multisystemic disorder caused by a CTG 
       triplet repeat expansion within the 3' untranslated region of the DMPK gene. 
@@ -1592,21 +1631,39 @@ PL  - United States
 TA  - Mol Cell Biol
 JT  - Molecular and cellular biology
 JID - 8109087
+RN  - 0 (HSP90 Heat-Shock Proteins)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (RNA, Messenger)
+RN  - 0 (DMPK protein, human)
+RN  - 0 (STAT3 Transcription Factor)
+RN  - 0 (Small Molecule Libraries)
+RN  - 0 (STAT3 protein, human)
 SB  - IM
+MH  - *HSP90 Heat-Shock Proteins/metabolism/genetics/antagonists & inhibitors
+MH  - *Myotonic Dystrophy/genetics/metabolism
+MH  - Humans
+MH  - Myotonin-Protein Kinase/genetics/metabolism
+MH  - Cell Line
+MH  - RNA, Messenger/metabolism/genetics
+MH  - Myoblasts/metabolism/drug effects
+MH  - Trinucleotide Repeat Expansion
+MH  - STAT3 Transcription Factor/metabolism
+MH  - Small Molecule Libraries/pharmacology
 OTO - NOTNLM
 OT  - HSP90
 OT  - Myotonic dystrophy
 OT  - RNA foci
 OT  - small molecule screening
 EDAT- 2024/10/17 10:05
-MHDA- 2024/10/17 10:05
+MHDA- 2025/06/05 00:28
 CRDT- 2024/10/17 04:22
-PHST- 2024/10/17 10:05 [medline]
+PHST- 2025/06/05 00:28 [medline]
 PHST- 2024/10/17 10:05 [pubmed]
 PHST- 2024/10/17 04:22 [entrez]
 AID - 10.1080/10985549.2024.2408025 [doi]
-PST - aheadofprint
-SO  - Mol Cell Biol. 2024 Oct 17:1-13. doi: 10.1080/10985549.2024.2408025.
+PST - ppublish
+SO  - Mol Cell Biol. 2025;45(6):225-237. doi: 10.1080/10985549.2024.2408025. Epub 2024 
+      Oct 17.
 
 PMID- 39391712
 OWN - NLM
@@ -2774,7 +2831,7 @@ PMID- 38704930
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240601
-LR  - 20240601
+LR  - 20250609
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Linking)
 VI  - 77
@@ -2819,6 +2876,8 @@ AD  - CERVO Brain Research Centre, Institut Universitaire en Sante Mentale de Qu
       mohamed.chahine@phc.ulaval.ca.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
 DEP - 20240428
 PL  - England
 TA  - Stem Cell Res
@@ -3360,7 +3419,7 @@ SO  - Mol Ther Nucleic Acids. 2023 Sep 5;34:102024. doi: 10.1016/j.omtn.2023.09.
 PMID- 37645891
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250429
+LR  - 20250609
 IS  - 2693-5015 (Electronic)
 IS  - 2693-5015 (Linking)
 DP  - 2023 Aug 14
@@ -3431,7 +3490,8 @@ PL  - United States
 TA  - Res Sq
 JT  - Research square
 JID - 101768035
-UIN - Nat Neurosci. 2025 Apr 21. doi: 10.1038/s41593-025-01943-0. PMID: 40259070
+UIN - Nat Neurosci. 2025 Jun;28(6):1199-1212. doi: 10.1038/s41593-025-01943-0. PMID: 
+      40259070
 PMC - PMC10462192
 OTO - NOTNLM
 OT  - ANK2
@@ -14855,9 +14915,8 @@ AD  - Resident, GGMC and JJ Hospital, Mumbai, Maharashtra.
 LA  - eng
 PT  - Journal Article
 PT  - Observational Study
-PL  - India
 TA  - J Assoc Physicians India
-JT  - The Journal of the Association of Physicians of India
+JT  - The Journal of the Association of Physicians of India..
 JID - 7505585
 RN  - 0 (DMPK protein, human)
 RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
@@ -24282,9 +24341,8 @@ PT  - Comparative Study
 PT  - Journal Article
 PT  - Randomized Controlled Trial
 PT  - Research Support, Non-U.S. Gov't
-PL  - India
 TA  - Indian J Exp Biol
-JT  - Indian journal of experimental biology
+JT  - Indian journal of experimental biology..
 JID - 0233411
 RN  - 0 (3' Untranslated Regions)
 RN  - 0 (DMPK protein, human)
