@@ -260,7 +260,7 @@ def main(args):
             loci_data = json.load(file)
             for record in loci_data:
                 data = data + [x.lstrip('@') for x in record['references']]
-                #data = data + [x.lstrip('@') for x in record['additional_literature']]
+                data = data + [x.lstrip('@') for x in record['additional_literature']]
             # remove duplicates, preserves order python 3.7+
             data = list(dict.fromkeys(data))
         else:
