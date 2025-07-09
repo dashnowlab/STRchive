@@ -47,6 +47,10 @@ def cite_with_manubot(ids, append_ids=None):
     generate full citations from ids with Manubot
     """
 
+    # remove duplicates, preserves order python 3.7+
+    ids = list(dict.fromkeys(ids))
+    append_ids = list(dict.fromkeys(append_ids))
+
     # Remove ids that are already in the append list
     if append_ids:
         ids = [i for i in ids if i not in append_ids]
@@ -232,8 +236,8 @@ def main(args):
     if args.append:
         try:
             with open(args.append, "r") as file:
-                append_json = json.load(file)
-                for cite in append_json:
+                append_json_all = json.load(file)
+                for cite in append_json_all:
                     status = True
                     try:
                         status = cite["manubot_success"]
@@ -245,7 +249,11 @@ def main(args):
                             status = False
                     cite["manubot_success"] = status
                     if status == True:
-                        append_ids.append(cite["id"])
+                        if cite["id"] not in append_ids:
+                            # only append if id is not already in the list
+                            # this is to avoid duplicates in the append list
+                            append_ids.append(cite["id"])
+                            append_json.append(cite)
         except Exception as e:
             sys.stderr.write(f"WARNING: Couldn't read append JSON\n")
             sys.stderr.write(f"{e}\n")
@@ -259,9 +267,7 @@ def main(args):
             loci_data = json.load(file)
             for record in loci_data:
                 data = data + [x.lstrip('@') for x in record['references']]
-                #data = data + [x.lstrip('@') for x in record['additional_literature']]
-            # remove duplicates, preserves order python 3.7+
-            data = list(dict.fromkeys(data))
+                data = data + [x.lstrip('@') for x in record['additional_literature']]
         else:
             data = json.load(file)
 
