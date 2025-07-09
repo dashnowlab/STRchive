@@ -232,8 +232,8 @@ def main(args):
     if args.append:
         try:
             with open(args.append, "r") as file:
-                append_json = json.load(file)
-                for cite in append_json:
+                append_json_all = json.load(file)
+                for cite in append_json_all:
                     status = True
                     try:
                         status = cite["manubot_success"]
@@ -246,6 +246,7 @@ def main(args):
                     cite["manubot_success"] = status
                     if status == True:
                         append_ids.append(cite["id"])
+                        append_json.append(cite)
         except Exception as e:
             sys.stderr.write(f"WARNING: Couldn't read append JSON\n")
             sys.stderr.write(f"{e}\n")
