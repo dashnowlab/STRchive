@@ -1,7 +1,7 @@
 {
   "data": [
   {
-    "base": [32, 31, 28, 23, 22, 21, 20, 20, 0, 18, 18, 18, 16, 15, 14, 12, 0, 12, 11, 10, 10, 10, 10, 10, 0, 8, 8, 8, 7, 7, 6, 0, 4, 4, 3, 3, 3, 2, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 2, 3, 3, 3, 4, 4, 0, 6, 7, 7, 0, 8, 8, 8, 10, 10, 10, 10, 10, 11, 12, 12, 0, 14, 15, 16, 18, 18, 18, 0, 20, 20, 21, 22, 23, 28, 31, 32],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Range onset: %{base} - %{x} years",
     "legendgroup": "AD",
     "marker":
@@ -12,12 +12,12 @@
     "offset": -0.1,
     "orientation": "h",
     "width": 0.2,
-    "x": [47, 32, 39, 51, 43, 66, 71, 59, 0, 46, 52, 19, 57, 25, 56, 54, 0, 53, 72, 40, 36, 68, 20, 23, 0, 75, 54, 60, 59, 61, 57, 0, 56, 47, 70, 10, 59, 84, 0, 0, 1, 0, 6, 84, 0, 0, 0, 72, 65, 76, 73, 3, 74, 0, 36, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [0, 0, 36, 3, 0, 0, 65, 0, 74, 72, 76, 73, 0, 0, 6, 84, 1, 0, 0, 84, 70, 10, 59, 56, 47, 0, 57, 59, 61, 0, 60, 54, 75, 20, 40, 68, 23, 36, 72, 54, 53, 0, 56, 25, 57, 46, 19, 52, 0, 59, 71, 66, 43, 51, 39, 32, 47],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
-    "base": [0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Range onset: %{base} - %{x} years",
     "legendgroup": "AR",
     "marker":
@@ -28,8 +28,8 @@
     "offset": -0.1,
     "orientation": "h",
     "width": 0.2,
-    "x": [0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 78, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 78, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
@@ -44,12 +44,12 @@
     "offset": -0.1,
     "orientation": "h",
     "width": 0.2,
-    "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 78, 0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
-    "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Range onset: %{base} - %{x} years",
     "legendgroup": "XR",
     "marker":
@@ -60,12 +60,12 @@
     "offset": -0.1,
     "orientation": "h",
     "width": 0.2,
-    "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [0, 0, 0, 0, 4, 4, 0, 9, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
-    "base": [40.0, 50.0, 40.0, 0, 0, 42.0, 50.0, 40.0, 0, 33.0, 0, 0, 43.0, 0, 20.0, 30.0, 0, 37.0, 12.0, 24, 0, 30.0, 18.0, 0, 0, 56.0, 26.0, 21.0, 31.0, 0, 20.0, 0, 12.0, 0, 10.0, 0, 19.0, 30.0, 0, 0, 0, 0, 0, 35.0, 0, 0, 0, 20.0, 4.0, 20.0, 28.0, 0, 10.0, 0, 0.0, 0, 0],
+    "base": [0, 0, 0.0, 0, 0, 0, 4.0, 0, 10.0, 20.0, 20.0, 28.0, 0, 0, 0, 35.0, 0, 0, 0, 30.0, 10.0, 0, 19.0, 12.0, 0, 0, 20.0, 31.0, 0, 0, 21.0, 26.0, 56.0, 18.0, 24, 30.0, 0, 0, 12.0, 30.0, 37.0, 0, 20.0, 0, 43.0, 33.0, 0, 0, 0, 40.0, 50.0, 42.0, 0, 0, 40.0, 50.0, 40.0],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Typical onset: %{base} - %{x} years",
     "legendgroup": "AD",
     "marker":
@@ -77,12 +77,12 @@
     "orientation": "h",
     "showlegend": false,
     "width": 0.6,
-    "x": [19.0, 10.0, 20.0, 0, 0, 28.0, 14.0, 19.0, 0, 20.0, 0, 0, 9.0, 0, 14.0, 22.0, 0, 19.0, 36.0, 6, 0, 40.0, 12.0, 0, 0, 6.0, 24.0, 18.0, 20.0, 0, 19.0, 0, 18.0, 0, 39.0, 0, 29.0, 9.0, 0, 0, 0, 0, 0, 9.0, 0, 0, 0, 20.0, 44.0, 29.0, 28.0, 0, 20.0, 0, 2.0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [0, 0, 2.0, 0, 0, 0, 44.0, 0, 20.0, 20.0, 29.0, 28.0, 0, 0, 0, 9.0, 0, 0, 0, 9.0, 39.0, 0, 29.0, 18.0, 0, 0, 19.0, 20.0, 0, 0, 18.0, 24.0, 6.0, 12.0, 6, 40.0, 0, 0, 36.0, 22.0, 19.0, 0, 14.0, 0, 9.0, 20.0, 0, 0, 0, 19.0, 14.0, 28.0, 0, 0, 20.0, 10.0, 19.0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
-    "base": [0, 0, 0, 0, 0, 0, 0, 0, 36.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.0, 0, 0, 0, 0, 0, 0, 10.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0],
+    "base": [1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10.0, 0, 0, 0, 0, 0, 0, 6.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36.0, 0, 0, 0, 0, 0, 0, 0, 0],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Typical onset: %{base} - %{x} years",
     "legendgroup": "AR",
     "marker":
@@ -94,12 +94,12 @@
     "orientation": "h",
     "showlegend": false,
     "width": 0.6,
-    "x": [0, 0, 0, 0, 0, 0, 0, 0, 16.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9.0, 0, 0, 0, 0, 0, 0, 5.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [2.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.0, 0, 0, 0, 0, 0, 0, 9.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16.0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
-    "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0],
+    "base": [0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Typical onset: %{base} - %{x} years",
     "legendgroup": "XD",
     "marker":
@@ -111,12 +111,12 @@
     "orientation": "h",
     "showlegend": false,
     "width": 0.6,
-    "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64.0, 0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [0, 64.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
-    "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39.7, 0, 0, 0, 0, 0, 0, 0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "base": [0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39.7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "hovertemplate": "Disease: %{y} \u003cbr\u003e Typical onset: %{base} - %{x} years",
     "legendgroup": "XR",
     "marker":
@@ -128,8 +128,8 @@
     "orientation": "h",
     "showlegend": false,
     "width": 0.6,
-    "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 29.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8.0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+    "x": [0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 8.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "y": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
     "type": "bar"
   },
   {
@@ -144,7 +144,7 @@
     "name": "Age 18",
     "showlegend": false,
     "x": [18, 18],
-    "y": ["FECD3", "HMNR7"],
+    "y": ["HMNR7", "FECD3"],
     "type": "scatter"
   }],
   "layout":
@@ -727,7 +727,7 @@
     "yaxis":
     {
       "tickmode": "array",
-      "tickvals": ["FECD3", "CJD", "SCA36", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "SCA37", "ADTKD", "FAME7", "SCA6", "OPML1", "OPDM2", "HDL2", "XDP", "SCA4", "SCA10", "OPDM5", "FAME3", "NIID", "OPDM4", "FAME4", "SBMA", "SCA31", "SCA12", "FAME1", "OPDM1", "FAME8", "SCA1", "EPM1", "FAME2", "SCA", "SCA3, MJD", "EDM1, PSACH", "SCA17", "SCA2", "FRDA", "GDPAG", "FRA7A", "FRAXE", "FRA2A", "HD", "NME", "EIEE1", "PRTS", "DRPLA", "SCA7", "SCA8", "DM2", "FRA12A", "DM1", "FXS, FXTAS, POF1", "CCHS", "XLMR", "HMNR7"],
+      "tickvals": ["HMNR7", "FXS, FXTAS, POF1", "CCHS", "FRA12A", "EIEE1", "PRTS", "SCA7", "XLMR", "DM1", "DRPLA", "SCA8", "DM2", "NME", "FRAXE", "FRA2A", "HD", "FRA7A", "GDPAG", "FRDA", "SCA2", "SCA3, MJD", "EDM1, PSACH", "SCA17", "FAME2", "SCA", "EPM1", "SCA1", "OPDM1", "FAME8", "SBMA", "FAME1", "SCA12", "SCA31", "OPDM4", "OPDM5", "NIID", "FAME4", "FAME3", "SCA10", "HDL2", "SCA4", "XDP", "OPDM2", "OPML1", "SCA6", "SCA37", "FAME7", "ADTKD", "CANVAS", "OPMD", "FTDALS1", "SCA27B", "MRUPAV", "FAME6", "SCA36", "CJD", "FECD3"],
       "title":
       {
         "text": "Disease"
