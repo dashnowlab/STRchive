@@ -59,7 +59,7 @@ def build_JSON(args):
     strchive_info = list(filter(lambda x: "conflicting_evidence" not in x["locus_tags"], strchive_info))
     # sort by minimum age of onset, then by typical then by maximum
     # sort by multiple outputs of get_min_age
-    strchive_info = sorted(strchive_info, key=lambda x: (get_min_age(x, 0), get_min_age(x, 1), get_min_age(x, 2)))
+    strchive_info = sorted(strchive_info, key=lambda x: (get_min_age(x, 0), get_min_age(x, 1), get_min_age(x, 2)), reverse=True)
 
     plot_data = {}
     diseases = []
