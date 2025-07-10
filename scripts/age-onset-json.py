@@ -21,17 +21,33 @@ def valid_range(amin, amax):
     if amax is None: return [amin, amin+1]
     return [amin, amax]
 
-def get_minimum_value(info):
+def get_min_age(info, i = 0):
+    """ Get the minimum age of onset from the info dictionary.
+    If i is provided, it will return the i-th smallest value from the list of ages.
+    For example, if i = 0, it will return the minimum age of onset.
+    If i = 1, it will return the second smallest age of onset, and so on.
+    If no ages are available, it will return 0.
+    """
     values = []
     try: values.append(int(info['age_onset_min']))
     except TypeError: pass
     try: values.append(int(info['age_onset_max']))
     except TypeError: pass
+    try: values.append(int(info['typ_age_onset_min']))
+    except TypeError: pass
+    try: values.append(int(info['typ_age_onset_max']))
+    except TypeError: pass
 
     # values = list(filter(lambda x: x>0, values))
     if len(values) == 0: return 0
 
-    return -1*min(values)
+    # ensure that the values are unique and sorted
+    values = sorted(set(values))
+
+    try:
+        return values[i]
+    except IndexError:
+        return 0
 
 
 def build_JSON(args):
@@ -41,7 +57,9 @@ def build_JSON(args):
     strchive_info = json.loads(json_txt)
 
     strchive_info = list(filter(lambda x: "conflicting_evidence" not in x["locus_tags"], strchive_info))
-    strchive_info = sorted(strchive_info, key=get_minimum_value)
+    # sort by minimum age of onset, then by typical then by maximum
+    # sort by multiple outputs of get_min_age
+    strchive_info = sorted(strchive_info, key=lambda x: (get_min_age(x, 0), get_min_age(x, 1), get_min_age(x, 2)), reverse=True)
 
     plot_data = {}
     diseases = []
