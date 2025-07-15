@@ -1,5 +1,5 @@
 import { BsStars } from "react-icons/bs";
-import { FaCircleExclamation, FaCircleQuestion } from "react-icons/fa6";
+import { FaCircleExclamation, FaCircleQuestion, FaCircleStop, FaCircleCheck, FaHourglassStart } from "react-icons/fa6";
 import { newThreshold } from "./derived";
 
 /** top-level tag types */
@@ -8,25 +8,40 @@ export const tagOptions = [
   {
     value: "new",
     label: "New",
-    tooltip: `Relatively new (less than ~${newThreshold} years old)`,
+    tooltip: `Less than ~${newThreshold} years old`,
     Icon: BsStars,
     color: `var(--primary)`,
     important: true,
   },
   {
-    value: "conflicting_evidence",
-    label: "Conflicting",
-    tooltip: "Conflicting evidence",
+    value: "contradictory_evidence",
+    label: "Contradictory",
+    tooltip: "Evidence either disputes or refutes gene-disease relationship",
     Icon: FaCircleExclamation,
     color: "var(--secondary)",
     important: true,
   },
   {
-    value: "sparse_evidence",
-    label: "Sparse",
-    tooltip: "Sparse evidence (< 5 independent cases after 5 years)",
+    value: "limited_evidence",
+    label: "Limited",
+    tooltip: "There is limited evidence for this locus-disease relationship",
     Icon: FaCircleQuestion,
     color: `var(--tertiary)`,
+    important: true,
+  },
+  {
+    value: "supported_evidence",
+    label: "Supported",
+    tooltip: "There is compelling evidence for this locus-disease relationship",
+    Icon: FaCircleCheck,
+    color: "var(--primary)",
+    important: true,
+  },
+  {
+    value: "unknown_evidence",
+    label: "Not Evaluated",
+    tooltip: "This locus-disease relationship has not yet been evaluated",
+    Icon: FaHourglassStart,
     important: true,
   },
 
