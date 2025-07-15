@@ -28,6 +28,7 @@ export const tagOptions = [
     Icon: FaCircleQuestion,
     color: `var(--tertiary)`,
     important: true,
+  },
   {
     value: "limited_evidence",
     label: "Limited",
@@ -35,7 +36,8 @@ export const tagOptions = [
     Icon: FaCircleStop,
     color: "var(--secondary)",
     important: true,
-{
+  },
+  {
     value: "supported_evidence",
     label: "Supported",
     tooltip: "There is compelling evidence toward the relationship",
