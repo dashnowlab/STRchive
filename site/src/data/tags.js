@@ -1,5 +1,5 @@
 import { BsStars } from "react-icons/bs";
-import { FaCircleExclamation, FaCircleQuestion } from "react-icons/fa6";
+import { FaCircleExclamation, FaCircleQuestion, FaCircleStop, FaCircleCheck } from "react-icons/fa6";
 import { newThreshold } from "./derived";
 
 /** top-level tag types */
@@ -14,19 +14,27 @@ export const tagOptions = [
     important: true,
   },
   {
-    value: "conflicting_evidence",
-    label: "Conflicting",
-    tooltip: "Conflicting evidence",
+    value: "contradictory_evidence",
+    label: "Contradictory",
+    tooltip: "Evidence either disputes or refutes gene-disease relationship",
     Icon: FaCircleExclamation,
     color: "var(--secondary)",
     important: true,
   },
   {
-    value: "sparse_evidence",
-    label: "Sparse",
-    tooltip: "Sparse evidence (< 5 independent cases after 5 years)",
-    Icon: FaCircleQuestion,
-    color: `var(--tertiary)`,
+    value: "limited_evidence",
+    label: "Limited",
+    tooltip: "There is limited amount of compelling evidence toward relationship",
+    Icon: FaCircleStop,
+    color: "var(--secondary)",
+    important: true,
+  },
+  {
+    value: "supported_evidence",
+    label: "Supported",
+    tooltip: "There is compelling evidence toward the relationship",
+    Icon: FaCircleCheck,
+    color: "var(--secondary)",
     important: true,
   },
 
