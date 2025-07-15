@@ -22,14 +22,6 @@ export const tagOptions = [
     important: true,
   },
   {
-    value: "sparse_evidence",
-    label: "Sparse",
-    tooltip: "Sparse evidence (< 5 independent cases after 5 years)",
-    Icon: FaCircleQuestion,
-    color: `var(--tertiary)`,
-    important: true,
-  },
-  {
     value: "limited_evidence",
     label: "Limited",
     tooltip: "There is limited amount of compelling evidence toward relationship",
