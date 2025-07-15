@@ -1466,7 +1466,7 @@
   "webstr_hg19": ["STR_1545664"],
   "tr_atlas": ["TR167703"],
   "disease_description": "Duchenne muscular dystrophy (DMD) is a neuromuscular disease characterized by rapidly progressive muscle weakness and wasting due to degeneration of skeletal, smooth and cardiac muscle [@mondo:0010679].",
-  "locus_tags": ["contradictory_evidence", "sparse_evidence"],
+  "locus_tags": ["contradictory_evidence"],
   "disease_tags": [],
   "references": ["pmid:27417533", "pmid:16969582", "genereviews:NBK1119", "pmid:35168641", "mondo:0010679"],
   "additional_literature": ["pmid:39874107", "pmid:39803454", "pmid:39713478", "pmid:39251998", "pmid:38290145", "pmid:37829280", "pmid:37270548", "pmid:37090938", "pmid:36975100", "pmid:36048237", "pmid:35615378", "pmid:35093299", "pmid:34371182", "pmid:34238289", "pmid:33349121", "pmid:30914715", "pmid:30349485", "pmid:29687370", "pmid:27924830", "pmid:27178005", "pmid:27529242", "pmid:27276190", "pmid:24411039", "pmid:25804023", "pmid:24191945", "pmid:23894429", "pmid:23695957", "pmid:23659897", "pmid:23574351", "pmid:23538453", "pmid:21901138", "pmid:21305566", "pmid:22830166", "pmid:19927354", "pmid:19907931", "pmid:19309270", "pmid:19158820", "pmid:19108751", "pmid:18393226", "pmid:18359022", "pmid:17439955", "pmid:16553208", "pmid:16415967", "pmid:12132577", "pmid:11807410", "pmid:11593558", "pmid:11280167", "pmid:11185740", "pmid:10445321", "pmid:9894797", "pmid:8588583", "pmid:7633442", "pmid:7705851"]
@@ -1978,7 +1978,7 @@
   "webstr_hg19": ["STR_803303"],
   "tr_atlas": ["TR24838"],
   "disease_description": "Glutaminase deficiency is characterized by refractory seizures, respiratory failure, brain abnormalities and death in the neonatal period, though milder cases with spastic ataxia-dysarthria have also been reported. This condition is caused by mutations in the glutaminase (GLS) gene [@mondo:0600001].",
-  "locus_tags": ["supported_evidence", "sparse_evidence"],
+  "locus_tags": ["supported_evidence"],
   "disease_tags": [],
   "references": ["pmid:30970188", "pmid:35913761", "omim:618412", "genereviews:NBK535148", "mondo:0600001"],
   "additional_literature": ["pmid:40488180", "pmid:40417743", "pmid:39699045", "pmid:39651202", "pmid:38877099", "pmid:38871700", "pmid:38260514", "pmid:34285061", "pmid:34013182", "pmid:33691262", "pmid:33413375", "pmid:14510958", "pmid:7729621"]
@@ -2234,7 +2234,7 @@
   "webstr_hg19": ["STR_796395"],
   "tr_atlas": ["TR24032"],
   "disease_description": "Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present [@omim:186000].",
-  "locus_tags": ["contraction", "sparse_evidence"],
+  "locus_tags": ["contraction"],
   "disease_tags": ["limited_evidence"],
   "references": ["pmid:38467784", "pmid:8614804", "pmid:22406499", "genereviews:NBK535148", "pmid:24038517", "omim:186000"],
   "additional_literature": ["pmid:34159400", "pmid:32652111", "pmid:32386547", "pmid:19841179", "pmid:19546318", "pmid:17935235", "pmid:12414828", "pmid:12116248", "pmid:11543619"]
@@ -2874,7 +2874,7 @@
   "webstr_hg19": ["STR_173942"],
   "tr_atlas": ["TR102881"],
   "disease_description": "Oculopharyngodistal myopathy and white matter abnormalities [@pmid:38876750]; Ptosis, ophthalmoplegia, dysphagia, dysarthria [@pmid:39349043].",
-  "locus_tags": ["limited_evidence", "sparse_evidence", "length_affects_severity", "length_affects_phenotype"],
+  "locus_tags": ["limited_evidence", "length_affects_severity", "length_affects_phenotype"],
   "disease_tags": [],
   "references": ["pmid:31332380", "omim:618637", "pmid:36169768", "pmid:38159879", "pmid:37923380", "pmid:38876750", "pmid:39349043"],
   "additional_literature": ["pmid:39308795", "pmid:35152460"]
@@ -3066,7 +3066,7 @@
   "webstr_hg19": [],
   "tr_atlas": [],
   "disease_description": "Autosomal dominant myopathy with rimmed ubiquitin-positive autophagic vacuolation (MRUPAV) is characterized by adult onset of slowly progressive skeletal muscle weakness variably affecting the distal or proximal lower limbs. Some patients may also have upper limb involvement or neck muscle weakness, but respiratory and bulbar involvement only rarely occurs. EMG studies show a myopathic process, and myotonia may also be observed [@omim:601846]. An early characterisation of the disease was reported in Blasi, et al. [@pmid:15236412].",
-  "locus_tags": ["supported_evidence", "sparse_evidence", "anticipation", "length_affects_onset"],
+  "locus_tags": ["supported_evidence", "anticipation", "length_affects_onset"],
   "disease_tags": [],
   "references": ["pmid:36151849", "pmid:37145156", "pmid:35499779", "pmid:32451610", "omim:601846", "pmid:15236412"],
   "additional_literature": ["pmid:40488265", "pmid:39492694"]
@@ -3258,7 +3258,7 @@
   "webstr_hg19": ["STR_1521945"],
   "tr_atlas": ["TR97506"],
   "disease_description": "A hereditary sensory neuropathy characterized by congenital insensitivity to pain and decreased sweating and tear production that has material basis in homozygous mutation in the PRDM12 gene on chromosome 9q34 [@mondo:0014662].",
-  "locus_tags": ["limited_evidence", "sparse_evidence"],
+  "locus_tags": ["limited_evidence"],
   "disease_tags": [],
   "references": ["omim:616488", "pmid:26005867", "genereviews:NBK535148", "mondo:0014662"],
   "additional_literature": []
@@ -3770,7 +3770,7 @@
   "webstr_hg19": ["STR_1597784"],
   "tr_atlas": ["TR173479"],
   "disease_description": "X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without intellectual disability [@pmid:24346842].",
-  "locus_tags": ["supported_evidence", "sparse_evidence", "contraction"],
+  "locus_tags": ["supported_evidence", "contraction"],
   "disease_tags": [],
   "references": ["pmid:19654509", "pmid:21289259", "pmid:17127446", "genereviews:NBK535148", "omim:300123", "pmid:12428212", "pmid:24346842"],
   "additional_literature": []
@@ -4026,7 +4026,7 @@
   "webstr_hg19": ["STR_889797"],
   "tr_atlas": ["TR163862"],
   "disease_description": "Tetralogy of Fallot is a congenital cardiac malformation that consists of an interventricular communication, also known as a ventricular septal defect, obstruction of the right ventricular outflow tract, override of the ventricular septum by the aortic root, and right ventricular hypertrophy [@mondo:0008542].",
-  "locus_tags": ["limited_evidence", "sparse_evidence"],
+  "locus_tags": ["limited_evidence"],
   "disease_tags": [],
   "references": ["omim:187500", "pmid:19948535", "genereviews:NBK535148", "mondo:0008542"],
   "additional_literature": ["pmid:24797903", "pmid:16141220", "pmid:10440825"]
@@ -4218,7 +4218,7 @@
   "webstr_hg19": ["STR_519979"],
   "tr_atlas": ["TR139999"],
   "disease_description": "Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-  "locus_tags": ["limited_evidence", "sparse_evidence", "motif_affects_penetrance"],
+  "locus_tags": ["limited_evidence", "motif_affects_penetrance"],
   "disease_tags": ["familial_adult_myoclonic_epilepsy"],
   "references": ["pmid:29507423", "pmid:38467784", "pmid:38876750"],
   "additional_literature": ["pmid:36092952", "pmid:33040085", "pmid:31483537", "pmid:30351492", "pmid:23042244"]
@@ -4282,7 +4282,7 @@
   "webstr_hg19": [],
   "tr_atlas": [],
   "disease_description": "CPUM is characterized by progressive widespread hyperpigmentation beginning at birth without accompanying symptoms. Studied children with CPUM have been born to unaffected parents. The children studied have been born with diffuse, universal, and progressive hyperpigmentaion at 15 years of age. At this time the hyperpigmentation had fully progressed [@doi:10.3892/br.2025.2016]. It is not entirely clear that this is a distinct disease as it shares features with acquired universal melanosis (most similar), erythema dyschromicum perstans, lichen planus pigmentosus, and familial progressive hypigmentation.",
-  "locus_tags": ["limited_evidence", "sparse_evidence"],
+  "locus_tags": ["limited_evidence"],
   "disease_tags": [],
   "references": ["doi:10.3892/br.2025.2016"],
   "additional_literature": ["pmid:40589716", "pmid:40471691", "pmid:40195828", "pmid:38625071", "pmid:38411001", "pmid:38379425", "pmid:38311638", "pmid:38280392", "pmid:38134936", "pmid:36398398", "pmid:36209056", "pmid:35608245", "pmid:35233526", "pmid:35055435", "pmid:34650802", "pmid:34526668", "pmid:34197619", "pmid:34149004", "pmid:33805940", "pmid:33086767", "pmid:32813677", "pmid:32695278", "pmid:32612964", "pmid:32110891", "pmid:31817852", "pmid:31370354", "pmid:31161452", "pmid:30838312", "pmid:30823845", "pmid:30533396", "pmid:30464574", "pmid:30222710", "pmid:30122542", "pmid:29995270", "pmid:29660633", "pmid:29394274", "pmid:29321350", "pmid:29162511", "pmid:28895423", "pmid:28349270", "pmid:28280649", "pmid:28074308", "pmid:28074022", "pmid:27995989", "pmid:27868347", "pmid:27864985", "pmid:27685916", "pmid:27375073", "pmid:29767611", "pmid:26745074", "pmid:26621114", "pmid:26277606", "pmid:26196219", "pmid:26189437", "pmid:25955097", "pmid:25648260", "pmid:25536611", "pmid:25366766", "pmid:25341694", "pmid:25294632", "pmid:25279663", "pmid:25258183", "pmid:25246386", "pmid:25028118", "pmid:25007187", "pmid:24726028", "pmid:24686188", "pmid:24641398", "pmid:24596472", "pmid:24554028", "pmid:24422758", "pmid:24415354", "pmid:24302747", "pmid:24137384", "pmid:23968134", "pmid:23571497", "pmid:23481061", "pmid:23232805", "pmid:23226765", "pmid:23148637", "pmid:22799365", "pmid:22763757", "pmid:22576918", "pmid:22086855", "pmid:22044939", "pmid:21630057", "pmid:21449681", "pmid:21269855", "pmid:21196216", "pmid:21075014", "pmid:20966539", "pmid:20962453", "pmid:20932673", "pmid:20880668", "pmid:20824655", "pmid:20651387", "pmid:20645403", "pmid:20570968", "pmid:20531375", "pmid:20372856", "pmid:20005374", "pmid:19998340", "pmid:19917450", "pmid:19798689", "pmid:19632929", "pmid:19349389", "pmid:19306093", "pmid:19200948", "pmid:19082493", "pmid:18843018", "pmid:18728661", "pmid:18704422", "pmid:18661526", "pmid:18406541", "pmid:18273818", "pmid:18267032", "pmid:18203297", "pmid:18095031", "pmid:17508355", "pmid:17396161", "pmid:17278107", "pmid:17273745", "pmid:17220568", "pmid:17201138", "pmid:17187508", "pmid:17047490", "pmid:17018589", "pmid:16929515", "pmid:16818689", "pmid:16596248", "pmid:16456808", "pmid:16334126", "pmid:16333305", "pmid:16234002", "pmid:16182121", "pmid:15897576", "pmid:15817609", "pmid:15749593", "pmid:15646842", "pmid:15579479", "pmid:15571262", "pmid:15510613", "pmid:15457444", "pmid:15386371", "pmid:15284183", "pmid:15115918", "pmid:14522928", "pmid:12684695", "pmid:12604405", "pmid:12460463", "pmid:12232785", "pmid:12215845", "pmid:12039668", "pmid:11913730", "pmid:11867566", "pmid:11751507", "pmid:11445856", "pmid:10652619", "pmid:10636923", "pmid:8751943", "pmid:3002689"]
@@ -4474,7 +4474,7 @@
   "webstr_hg19": ["STR_1006941"],
   "tr_atlas": ["TR38932"],
   "disease_description": "Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-  "locus_tags": ["limited_evidence", "sparse_evidence", "motif_affects_penetrance"],
+  "locus_tags": ["limited_evidence", "motif_affects_penetrance"],
   "disease_tags": ["familial_adult_myoclonic_epilepsy"],
   "references": ["pmid:22713812", "pmid:31539032", "pmid:38876750"],
   "additional_literature": ["pmid:38128822"]
@@ -4666,7 +4666,7 @@
   "webstr_hg19": ["STR_1596381"],
   "tr_atlas": ["TR173313"],
   "disease_description": "VACTERL is an acronym for vertebral anomalies (similar to those of spondylocostal dysplasia), anal atresia, cardiac malformations, tracheoesophageal fistula, renal anomalies (urethral atresia with hydronephrosis), and limb anomalies [@omim:314390].",
-  "locus_tags": ["supported_evidence", "sparse_evidence"],
+  "locus_tags": ["supported_evidence"],
   "disease_tags": ["phenotypic_spectrum"],
   "references": ["pmid:17581576", "pmid:38467784", "pmid:20452998", "pmid:32639022", "genereviews:NBK535148", "omim:314390"],
   "additional_literature": ["pmid:40585427"]
@@ -4730,7 +4730,7 @@
   "webstr_hg19": ["STR_1325788"],
   "tr_atlas": ["TR300995"],
   "disease_description": "A spectrum of developmental disorders that includes autism, and Asperger syndrome. Signs and symptoms include poor communication skills, defective social interactions, and repetitive behaviors [@mondo:0005258].",
-  "locus_tags": ["limited_evidence", "sparse_evidence"],
+  "locus_tags": ["limited_evidence"],
   "disease_tags": [],
   "references": ["pmid:25196122", "omim:616181", "mondo:0005258"],
   "additional_literature": []
