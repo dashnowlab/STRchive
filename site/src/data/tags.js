@@ -1,5 +1,5 @@
 import { BsStars } from "react-icons/bs";
-import { FaCircleExclamation, FaCircleQuestion, FaCircleStop, FaCircleCheck } from "react-icons/fa6";
+import { FaCircleExclamation, FaCircleQuestion, FaCircleStop, FaCircleCheck, FaHourglassStart } from "react-icons/fa6";
 import { newThreshold } from "./derived";
 
 /** top-level tag types */
@@ -35,6 +35,13 @@ export const tagOptions = [
     tooltip: "There is compelling evidence for this locus-disease relationship",
     Icon: FaCircleCheck,
     color: "var(--primary)",
+    important: false,
+  },
+  {
+    value: "unknown_evidence",
+    label: "Not Evaluated",
+    tooltip: "This locus-disease relationship has not yet been evaluated",
+    Icon: FaHourglassStart,
     important: true,
   },
 

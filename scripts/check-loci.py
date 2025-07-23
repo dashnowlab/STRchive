@@ -302,6 +302,16 @@ def lift_over(loci_data, ref_dir):
 
     return loci_data
 
+def check_tags(record):
+    """
+    Check if an evidence tag is present, and if not add the "unknown_evidence" tag.
+    """
+    if not any(tag.endswith('_evidence') for tag in record["locus_tags"]):
+        record["locus_tags"].append("unknown_evidence")
+        sys.stderr.write(f'Adding unknown_evidence tag to {record["id"]}\n')
+
+    return record
+
 def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None, liftover = False, ref_dir = "ref-data/"):
     if out_json == json_fname:
         sys.stderr.write(f'WARNING: overwriting {json_fname} in {pause} seconds\n')
@@ -331,6 +341,7 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None,
         for record in data:
             record = check_list_fields(record)
             record = check_motif_orientation(record)
+            record = check_tags(record)
 
         # Lift over coordinates
         if liftover:
