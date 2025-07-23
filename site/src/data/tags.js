@@ -8,7 +8,7 @@ export const tagOptions = [
   {
     value: "new",
     label: "New",
-    tooltip: `Relatively new (less than ~${newThreshold} years old)`,
+    tooltip: `Less than ~${newThreshold} years old`,
     Icon: BsStars,
     color: `var(--primary)`,
     important: true,
@@ -24,17 +24,17 @@ export const tagOptions = [
   {
     value: "limited_evidence",
     label: "Limited",
-    tooltip: "There is limited amount of compelling evidence toward relationship",
-    Icon: FaCircleStop,
-    color: "var(--secondary)",
+    tooltip: "There is limited evidence for this locus-disease relationship",
+    Icon: FaCircleQuestion,
+    color: `var(--tertiary)`,
     important: true,
   },
   {
     value: "supported_evidence",
     label: "Supported",
-    tooltip: "There is compelling evidence toward the relationship",
+    tooltip: "There is compelling evidence for this locus-disease relationship",
     Icon: FaCircleCheck,
-    color: "var(--secondary)",
+    color: "var(--primary)",
     important: true,
   },
 
