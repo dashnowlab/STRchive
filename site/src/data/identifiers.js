@@ -63,6 +63,13 @@ export const getIdentifiers = (d) =>
           tooltip: "High-quality information on rare diseases",
           info: "https://www.orpha.net",
         },
+        {
+          key: "gene",
+          name: "DECIPHER",
+          link: "https://www.deciphergenomics.org/gene/$ID/overview/clinical-info",
+          tooltip: "Share and compare phenotypic and genotypic data.",
+          info: "https://www.deciphergenomics.org/",
+        },
       ],
     },
     {
