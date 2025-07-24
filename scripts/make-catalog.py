@@ -142,7 +142,7 @@ def atarva_catalog(row, genome = 'hg38'):
     'chr1\t100\t200\tAAGGG\t5\tmyid'
 
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)nCAACAG(CCG)12', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t206\tCAACAG\t6\tmyid_flank\nchr1\t206\t242\tCCG\t3\tmyid_flank'
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t206\t242\tCCG\t3\tmyid_flank'
 
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t230\tCCG\t3\tmyid_flank\nchr1\t230\t260\tCAA\t3\tmyid_flank'
