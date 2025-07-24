@@ -62,13 +62,13 @@ Note: biomaRt isn't playing nicely with conda, so installing it within the R scr
 
 ### LongTR
 
-A sample command using [LongTR](https://github.com/gymrek-lab/LongTR) to genotype the STRchive catalog in Oxford Nanoport data. The genotyping accuracy has not been assessed.
+A sample command using [LongTR](https://github.com/gymrek-lab/LongTR) to genotype the STRchive catalog in Oxford Nanoport data. The alignment parameters were suggested in https://github.com/gymrek-lab/LongTR/issues/21. The genotyping accuracy has not been assessed.
 
 ```
 module load gcc     # or otherwise satisfy this dependency
 LongTR \
     --max-tr-len 10000 \    # largest locus in STRChive currently ~4000 bp
-    --alignment-params -1.0,-0.458675,-1.0,-0.458675,-0.00005800168,-1,-1 \ # ONT parameters suggested in https://github.com/gymrek-lab/LongTR/issues/21
+    --alignment-params -1.0,-0.458675,-1.0,-0.458675,-0.00005800168,-1,-1 \
     --fasta human_GRCh38_no_alt_analysis_set.fasta \
     --regions STRchive-disease-loci.hg38.longTR.bed \
     --bams sample.bam \
