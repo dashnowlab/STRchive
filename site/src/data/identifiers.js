@@ -110,6 +110,14 @@ export const getIdentifiers = (d) =>
             "Genome-wide STR data across populations, with details on variation, expression, constraint, and imputation metrics",
           info: "https://webstr.ucsd.edu",
         },
+        {
+          key: "position_base1_hg38",
+          name: "TR Explorer",
+          link: "https://trexplorer.broadinstitute.org/#sc=isPathogenic&sd=DESC&showRs=1&searchQuery=$ID&showColumns=0i1i2i3i4i7i21i17",
+          tooltip:
+            "An online portal for exploring genome-wide tandem repeat (TR) catalogs",
+          info: "https://trexplorer.broadinstitute.org/",
+        },
       ],
     },
   ]
@@ -120,12 +128,18 @@ export const getIdentifiers = (d) =>
         .map(({ key, link, ...rest }) => ({
           ...rest,
           links:
-            d[key]?.map((id) => ({
-              /** link text */
-              label: id,
-              /** link target, with id inserted */
-              link: link.replace("$ID", id),
-            })) || [],
+            /** access key field, normalize to array */
+            [d[key] ?? []]
+              .flat()
+              /** normalize to string */
+              .map((id) => String(id))
+              /** make links */
+              .map((id) => ({
+                /** link text */
+                label: id,
+                /** link target, with id inserted */
+                link: link.replace("$ID", id),
+              })) || [],
         }))
         /** remove identifiers with no links */
         .filter(({ links }) => links?.length),
