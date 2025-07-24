@@ -126,6 +126,75 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
 
     return definition
 
+def atarva_catalog(row, genome = 'hg38'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: atarva format catalog string which is a modified BED format with fields: chrom start stop motif motif_len [id]
+
+    Note, compound loci will be split into multiple entries, one for each motif. Overlapping loci are okay.
+    For loci with multiple pathogenic motifs, only the first motif will be used. Atarva does motif decomposition, so alternate motifs should be detected by the caller.
+
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid'
+
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'flank_motif': '', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tAAGGG\t5\tmyid'
+
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)nCAACAG(CCG)12', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t206\tCAACAG\t6\tmyid_flank\nchr1\t206\t242\tCCG\t3\tmyid_flank'
+
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t230\tCCG\t3\tmyid_flank\nchr1\t230\t260\tCAA\t3\tmyid_flank'
+    """
+    bed_string = ''
+
+    motif_field = 'pathogenic_motif_reference_orientation'
+    id_field = 'id'
+    start = int(row['start_' + genome])
+    stop = int(row['stop_' + genome])
+
+    motifs = row[motif_field]
+    this_id = row[id_field]
+
+    motif = motifs[0] # use first motif only
+    motif_len = len(motif)
+    bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
+
+    # check for flanking motif(s)
+    if row['flank_motif'] != '' and row['flank_motif'] is not None:
+    # get motifs in parentheses using regex
+        flank_motif = row['flank_motif']
+    
+        split_flank_counts = re.split(r"[ATCGN]+", flank_motif, )
+        all_flank_motifs_counts = []
+        for i in range(1, len(split_flank_counts)):
+            all_flank_motifs_counts.append(split_flank_counts[i].replace('(', '').replace(')', ''))
+
+        all_flank_motifs = ''
+        for char in flank_motif:
+            if char in ['(', ')', 'n', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                all_flank_motifs += ' '
+            else:
+                all_flank_motifs += char
+
+        all_flank_motifs = all_flank_motifs.split()
+
+        flank_start = stop
+        flank_stop = stop
+        for motif, count in zip(all_flank_motifs, all_flank_motifs_counts):
+            if count == '':
+                count = 1
+            if count == 'n':
+                continue
+            else:
+                flank_stop += int(count) * len(motif)
+            bed_string += f"{row['chrom']}\t{flank_start}\t{flank_stop}\t{motif}\t{len(motif)}\t{this_id}_flank\n"
+            flank_start = flank_stop
+
+    return bed_string.rstrip('\n')
+
+
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
     :param row: dictionary with STR data for a single locus
@@ -191,6 +260,12 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
         with open(output, 'w') as out_file:
             for row in data:
                 out_file.write(trgt_catalog(row, genome) + '\n')
+    elif format.lower() == 'atarva':
+        with open(output, 'w') as out_file:
+            header = '#' + '\t'.join(['chrom', 'start', 'stop', 'motif', 'motif_len', 'id']) + '\n'
+            out_file.write(header)
+            for row in data:
+                out_file.write(atarva_catalog(row, genome) + '\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
         header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
