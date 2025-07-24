@@ -474,6 +474,48 @@ def stranger_catalog(row, genome = 'hg38'):
 
     return locus_dict
 
+def straglr_catalog(row, genome = 'hg38', format = 'default'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :param format: options: 'default' or 'wf-human-variation'. If 'default', use chrom, start, stop, motif. If 'wf-human-variation', use chrom, start, stop, motif, gene, id.
+    :return: straglr format catalog string which is a modified BED format with fields: chrom start stop motif [gene id]
+
+    Example format:
+    https://github.com/epi2me-labs/wf-human-variation/blob/master/data/wf_str_repeats.bed
+
+    chr1	149390802	149390841	GGC	NOTCH2NLC	NOTCH2NLC
+    chr2	190880872	190880920	GCA	GLS	GLS
+    chr3	63912684	63912714	GCA	ATXN7	ATXN7
+
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
+
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
+
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
+    'chr1\t100\t200\tCAG\tmygene\tmyid\nchr1\t200\t230\tCCG\tmygene\tmyid_CCG\nchr1\t230\t260\tCAA\tmygene\tmyid_CAA'
+    """
+    bed_list = []
+    # Use the same approach as atarva_catalog, but only return the first 4 columns (chrom, start, stop)
+    atarva_list = [x.split('\t') for x in atarva_catalog(row, genome).split('\n')]  
+    if format == 'default':
+        for bed_row in atarva_list:
+            bed_list.append('\t'.join(bed_row[0:4]))
+    elif format == 'wf-human-variation':
+        for bed_row in atarva_list:
+            motif = bed_row[3]
+            # replace the word "flank" with the motif name in the id
+            bed_row[5] = bed_row[5].replace('_flank', f'_{motif}')
+            bed_list.append('\t'.join(bed_row[0:4] + [row['gene'], bed_row[5]]))
+    else:
+        raise ValueError(f'Unknown format: {format}. Expected default or wf-human-variation.')
+
+    bed_string = '\n'.join(bed_list)
+
+    return bed_string
+
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
     :param row: dictionary with STR data for a single locus
@@ -510,7 +552,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format BED format (TRGT, LongTR or BED)
+    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, straglr, stranger, ExpansionHunter or BED)
     :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 
@@ -576,6 +618,11 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
             options.brace_style="expand"
             out_json_file.write(jsbeautifier.beautify(json.dumps(stranger_loci, ensure_ascii=False), options))
             out_json_file.write('\n')
+    elif format.lower() == 'straglr':
+        with open(output, 'w') as out_file:
+            # No header for straglr format
+            for row in data:
+                out_file.write(straglr_catalog(row, genome, format = 'wf-human-variation') + '\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
         header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
@@ -584,7 +631,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
             for row in data:
                 out_file.write(extended_bed(row, fields_list, genome) + '\n')
     else:
-        raise ValueError('Unknown output file format. Expected TRGT or BED.')
+        raise ValueError('Unknown output file format. Expected TRGT, atarva, straglr or BED.')
 
 if __name__ == "__main__":
     import doctest
