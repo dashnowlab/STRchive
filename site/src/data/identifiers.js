@@ -78,14 +78,6 @@ export const getIdentifiers = (d) =>
           info: "https://gnomad.broadinstitute.org/news/2022-01-the-addition-of-short-tandem-repeat-calls-to-gnomad",
         },
         {
-          key: "gnomad",
-          name: "TR Explorer",
-          link: "https://trexplorer.broadinstitute.org/#sc=isPathogenic&sd=DESC&showRs=1&searchQuery=$ID&showColumns=0i1i2i3i4i7i21i17",
-          tooltip:
-            "An online portal for exploring genome-wide tandem repeat (TR) catalogs",
-          info: "https://trexplorer.broadinstitute.org/",
-        },
-        {
           key: "stripy",
           name: "STRipy",
           link: "https://stripy.org/database/$ID",
@@ -117,6 +109,14 @@ export const getIdentifiers = (d) =>
           tooltip:
             "Genome-wide STR data across populations, with details on variation, expression, constraint, and imputation metrics",
           info: "https://webstr.ucsd.edu",
+        },
+        {
+          key: "position_base1_hg38",
+          name: "TR Explorer",
+          link: "https://trexplorer.broadinstitute.org/#sc=isPathogenic&sd=DESC&showRs=1&searchQuery=$ID&showColumns=0i1i2i3i4i7i21i17",
+          tooltip:
+            "An online portal for exploring genome-wide tandem repeat (TR) catalogs",
+          info: "https://trexplorer.broadinstitute.org/",
         },
       ],
     },
