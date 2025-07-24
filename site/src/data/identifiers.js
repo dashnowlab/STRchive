@@ -128,12 +128,18 @@ export const getIdentifiers = (d) =>
         .map(({ key, link, ...rest }) => ({
           ...rest,
           links:
-            d[key]?.map((id) => ({
-              /** link text */
-              label: id,
-              /** link target, with id inserted */
-              link: link.replace("$ID", id),
-            })) || [],
+            /** access key field, normalize to array */
+            [d[key] ?? []]
+              .flat()
+              /** normalize to string */
+              .map((id) => String(id))
+              /** make links */
+              .map((id) => ({
+                /** link text */
+                label: id,
+                /** link target, with id inserted */
+                link: link.replace("$ID", id),
+              })) || [],
         }))
         /** remove identifiers with no links */
         .filter(({ links }) => links?.length),
