@@ -39,17 +39,17 @@ Or to skip retrieve and manubot stages, which will speed things up substantially
 ### Update TRGT genotyping catalogs
 
 ```
-python scripts/make-catalog.py -g hg38 -f TRGT data/STRchive-loci.json data/STRchive-disease-loci.hg38.TRGT.bed
-python scripts/make-catalog.py -g T2T -f TRGT data/STRchive-loci.json data/STRchive-disease-loci.T2T-chm13.TRGT.bed
-python scripts/make-catalog.py -g hg19 -f TRGT data/STRchive-loci.json data/STRchive-disease-loci.hg19.TRGT.bed
+python scripts/make-catalog.py -g hg38 -f TRGT data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg38.TRGT.bed
+python scripts/make-catalog.py -g T2T -f TRGT data/STRchive-loci.json data/catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed
+python scripts/make-catalog.py -g hg19 -f TRGT data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg19.TRGT.bed
 ```
 
 ### Update extended BED files
 
 ```
-python scripts/make-catalog.py -f bed -g hg38 data/STRchive-loci.json data/STRchive-disease-loci.hg38.bed
-python scripts/make-catalog.py -f bed -g T2T data/STRchive-loci.json data/STRchive-disease-loci.T2T-chm13.bed
-python scripts/make-catalog.py -f bed -g hg19 data/STRchive-loci.json data/STRchive-disease-loci.hg19.bed
+python scripts/make-catalog.py -f bed -g hg38 data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg38.bed
+python scripts/make-catalog.py -f bed -g T2T data/STRchive-loci.json data/catalogs/STRchive-disease-loci.T2T-chm13.bed
+python scripts/make-catalog.py -f bed -g hg19 data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg19.bed
 ```
 
 ### Install dependencies
