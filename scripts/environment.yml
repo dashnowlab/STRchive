@@ -25,6 +25,8 @@ dependencies:
   - r-purrr
   - gfortran
   - pysam
+  - htslib
+  - bedtools
   - nodejs # build website locally
   - pyliftover
   - pip
