@@ -36,21 +36,9 @@ From the root directory, run:
 Or to skip retrieve and manubot stages, which will speed things up substantially:  
 `snakemake --config stages="skip-refs"`
 
-### Update TRGT genotyping catalogs
+### Making/updating genotyper catalogs
 
-```
-python scripts/make-catalog.py -g hg38 -f TRGT data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg38.TRGT.bed
-python scripts/make-catalog.py -g T2T -f TRGT data/STRchive-loci.json data/catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed
-python scripts/make-catalog.py -g hg19 -f TRGT data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg19.TRGT.bed
-```
-
-### Update extended BED files
-
-```
-python scripts/make-catalog.py -f bed -g hg38 data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg38.bed
-python scripts/make-catalog.py -f bed -g T2T data/STRchive-loci.json data/catalogs/STRchive-disease-loci.T2T-chm13.bed
-python scripts/make-catalog.py -f bed -g hg19 data/STRchive-loci.json data/catalogs/STRchive-disease-loci.hg19.bed
-```
+See `workflow/Snakefile` for example commands
 
 ### Install dependencies
 
@@ -68,3 +56,21 @@ conda activate strchive
 ```
 
 Note: biomaRt isn't playing nicely with conda, so installing it within the R script where it is used.
+
+
+## Using STRchive catalogs
+
+### LongTR
+
+A sample command using [LongTR](https://github.com/gymrek-lab/LongTR) to genotype the STRchive catalog in Oxford Nanoport data. The alignment parameters were suggested in https://github.com/gymrek-lab/LongTR/issues/21. The genotyping accuracy has not been assessed.
+
+```
+module load gcc     # or otherwise satisfy this dependency
+LongTR \
+    --max-tr-len 10000 \    # largest locus in STRChive currently ~4000 bp
+    --alignment-params -1.0,-0.458675,-1.0,-0.458675,-0.00005800168,-1,-1 \
+    --fasta human_GRCh38_no_alt_analysis_set.fasta \
+    --regions STRchive-disease-loci.hg38.longTR.bed \
+    --bams sample.bam \
+    --tr-vcf sample.longTR.vcf.gz
+```
