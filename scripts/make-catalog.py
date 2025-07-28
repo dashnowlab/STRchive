@@ -2,6 +2,7 @@ import json
 import sys
 import re
 import decimal
+import jsbeautifier
 
 def chrom_to_int(chrom):
     """
@@ -57,6 +58,97 @@ def clean_loci(data, genome):
 
     return keep_rows
 
+def add_flank_coordinates(row, genome = 'hg38'):
+    """
+    Get the start and stop coordinates of the flanking motif(s) in the locus structure. Only one of the motifs can be missing a count, the rest must have a count.
+
+    example input
+
+    "locus_structure": [
+        {
+        "motif": "CAG",
+        "count": null,
+        "type": "main_repeat"
+        },
+        {
+        "motif": "CAACAG",
+        "count": 1,
+        "type": "interruption"
+        },
+        {
+        "motif": "CCG",
+        "count": 12,
+        "type": "flank_repeat"
+        }
+    ]
+
+    example output
+        "locus_structure": [
+        {
+        "motif": "CAG",
+        "count": null,
+        "type": "main_repeat"
+        "position": "chr1:100-200"
+        },
+        {
+        "motif": "CAACAG",
+        "count": 1,
+        "type": "interruption"
+        "position": "chr1:200-206"
+        },
+        {
+        "motif": "CCG",
+        "count": 12,
+        "type": "flank_repeat"
+        "position": "chr1:206-242"
+        }
+    ]
+
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: updated locus_structure with positions for each motif
+
+    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}]}, genome='hg38')
+    [{'motif': 'CAG', 'count': None, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 158}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 158, 'stop_hg38': 164}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat', 'start_hg38': 164, 'stop_hg38': 200}]
+
+    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': 10, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': None, 'type': 'flank_repeat'}]}, genome='hg38')
+    [{'motif': 'CAG', 'count': 10, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 130}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 130, 'stop_hg38': 136}, {'motif': 'CCG', 'count': None, 'type': 'flank_repeat', 'start_hg38': 136, 'stop_hg38': 200}]
+    
+    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': []}, genome='hg38')
+    []
+    """
+    if len(row['locus_structure']) == 0:
+        # No locus structure, return empty list
+        return []
+
+    total_length = row['stop_' + genome] - row['start_' + genome]
+    known_lengths = []
+    for struct_dict in row['locus_structure']:
+        if struct_dict['count'] is not None:
+            known_lengths.append(len(struct_dict['motif']) * struct_dict['count'])
+        else:
+            known_lengths.append(None)
+    # Check if more than one unknown length is present
+    if known_lengths.count(None) > 1:
+        raise ValueError(f"Multiple unknown lengths found in locus structure for {row['id']}. Please check the input data.")
+    unknown_length = total_length - sum([x for x in known_lengths if x is not None])
+    if unknown_length < 0:
+        raise ValueError(f"Total length of locus structure for {row['id']} is less than the sum of known lengths. Please check the input data.")
+    # Replace None value with the unknown length
+    for i in range(len(known_lengths)):
+        if known_lengths[i] is None:
+            known_lengths[i] = unknown_length
+
+    # Calculate start and stop coordinates for each motif in the locus structure
+    this_start = row['start_' + genome]
+    for i, struct_dict in enumerate(row['locus_structure']):
+        this_stop = this_start + known_lengths[i]
+        row['locus_structure'][i]['start_' + genome] = this_start
+        row['locus_structure'][i]['stop_' + genome] = this_stop
+        this_start = this_stop
+    
+    return row['locus_structure']
+
 def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     r"""
     :param row: dictionary with STR data for a single locus
@@ -64,42 +156,36 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     :param struc_type: options: 'motif', 'default' or 'none'. If 'motif', use pathogenic_motif_reference_orientation as locus structure. If 'default', use <TR>. If 'none', do not include locus structure.
     :return: TRGT format catalog string
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': '', 'flank_motif': '', 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
     'chr1\t100\t200\tID=myid;MOTIFS=CAG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': '', 'flank_motif': '', 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
     'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': '100', 'stop_hg38': '200', 'period': '3', 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': '(CAGG)*(CAGA)*(CA)*', 'flank_motif': '(CAGG)n(CAGA)10(CA)19', 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    'chr1\t100\t278\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=<TR>'
-    """
-    start = int(row['start_' + genome])
-    stop = int(row['stop_' + genome])
-    struc = ''
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'interruption'}, {'motif': 'CA', 'count': 19, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
+    'chr1\t100\t200\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)10(CA)19'
 
-    if row['flank_motif'] != '' and row['flank_motif'] is not None:
-        # get motifs in parentheses using regex
-        flank_motif = row['flank_motif']
-        motifs = re.findall(r'\((.*?)\)', flank_motif)
-        counts = re.findall(r'\)(.*?)[\(|$]', flank_motif.replace('n', 'n(') + '$')
-        n_found = False
-        for motif, count in zip(motifs, counts):
-            struc += f'({motif})n'
-            if count == 'n':
-                n_found = True
-                continue
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    """
+
+    # Add flank coordinates to locus structure
+    row['locus_structure'] = add_flank_coordinates(row, genome)
+
+    start = row['start_' + genome]
+    stop = row['stop_' + genome]
+    struc = ''
+    motifs = []
+
+    if len(row['locus_structure']) > 0:
+        for struct_dict in row['locus_structure']:
+            motifs.append(struct_dict['motif'])
+            if struct_dict['count'] is None:
+                struc += f"({struct_dict['motif']})n"
             else:
-                if n_found:
-                    stop += int(count) * len(motif)
-                else:
-                    start -= int(count) * len(motif)
-    elif row['locus_structure'] != '' and row['locus_structure'] != None:
-        locus_structure = row['locus_structure'].strip()
-        motifs = re.findall(r'\((.*?)\)', locus_structure)
-        # Substitute * and + with n
-        struc = locus_structure.replace('*', 'n').replace('+', 'n')
-    else:
-        motifs = []
+                struc += f"({struct_dict['motif']}){struct_dict['count']}"
+
+    else: # should just do this always?
         for motif in row['pathogenic_motif_reference_orientation']:
             motif = motif.strip() # remove leading and trailing whitespace
             struc += f'({motif})n'
@@ -109,7 +195,7 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     # unique motifs mainitaining order
 
     if struc_type == 'motif':
-        full_struc = f";STRUC{struc}"
+        full_struc = f";STRUC={struc}"
     elif struc_type == 'default':
         # Add all motifs with known function
         for motif_field in ['pathogenic_motif_reference_orientation', 'reference_motif_reference_orientation', 'benign_motif_reference_orientation']:
@@ -135,18 +221,22 @@ def atarva_catalog(row, genome = 'hg38'):
     Note, compound loci will be split into multiple entries, one for each motif. Overlapping loci are okay.
     For loci with multiple pathogenic motifs, only the first motif will be used. Atarva does motif decomposition, so alternate motifs should be detected by the caller.
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\t3\tmyid'
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'flank_motif': '', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tAAGGG\t5\tmyid'
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)nCAACAG(CCG)12', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t206\tCAACAG\t6\tmyid_flank\nchr1\t206\t242\tCCG\t3\tmyid_flank'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t155\tCAG\t3\tmyid\nchr1\t155\t191\tCAACAG\t6\tmyid_flank\nchr1\t191\t200\tCCG\t3\tmyid_flank'
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t230\tCCG\t3\tmyid_flank\nchr1\t230\t260\tCAA\t3\tmyid_flank'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t155\tCAG\t3\tmyid\nchr1\t155\t191\tCAACAG\t6\tmyid_flank\nchr1\t191\t200\tCCG\t3\tmyid_flank'
     """
+
+    # Add flank coordinates to locus structure
+    row['locus_structure'] = add_flank_coordinates(row, genome)
+
     bed_string = ''
 
     motif_field = 'pathogenic_motif_reference_orientation'
@@ -157,40 +247,24 @@ def atarva_catalog(row, genome = 'hg38'):
     motifs = row[motif_field]
     this_id = row[id_field]
 
-    motif = motifs[0] # use first motif only
-    motif_len = len(motif)
-    bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
-
     # check for flanking motif(s)
-    if row['flank_motif'] != '' and row['flank_motif'] is not None:
-    # get motifs in parentheses using regex
-        flank_motif = row['flank_motif']
-    
-        split_flank_counts = re.split(r"[ATCGN]+", flank_motif, )
-        all_flank_motifs_counts = []
-        for i in range(1, len(split_flank_counts)):
-            all_flank_motifs_counts.append(split_flank_counts[i].replace('(', '').replace(')', ''))
-
-        all_flank_motifs = ''
-        for char in flank_motif:
-            if char in ['(', ')', 'n', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
-                all_flank_motifs += ' '
+    if len(row['locus_structure']) > 0:
+        for struct_dict in row['locus_structure']:
+            motif = struct_dict['motif']
+            motif_len = len(motif)
+            start = struct_dict['start_' + genome]
+            stop = struct_dict['stop_' + genome]
+            if struct_dict['count'] is None:
+                # this is the main repeat
+                bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
             else:
-                all_flank_motifs += char
+                # this is a flank repeat
+                bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}_flank\n"
 
-        all_flank_motifs = all_flank_motifs.split()
-
-        flank_start = stop
-        flank_stop = stop
-        for motif, count in zip(all_flank_motifs, all_flank_motifs_counts):
-            if count == '':
-                count = 1
-            if count == 'n':
-                continue
-            else:
-                flank_stop += int(count) * len(motif)
-            bed_string += f"{row['chrom']}\t{flank_start}\t{flank_stop}\t{motif}\t{len(motif)}\t{this_id}_flank\n"
-            flank_start = flank_stop
+    else:
+        motif = motifs[0] # use first motif only
+        motif_len = len(motif)
+        bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
 
     return bed_string.rstrip('\n')
 
@@ -200,7 +274,9 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     :param genome: genome build (hg19, hg38 or T2T)
     :return: ExpansionHunter format catalog dictionary for a single locus
 
-    Example: 
+    See format description at https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md
+
+    Example from gnomAD:
     {
         "LocusId": "ABCD3",
         "ReferenceRegion": "chr1:94418421-94418442",
@@ -225,35 +301,52 @@ def expansionhunter_catalog(row, genome = 'hg38'):
         "Inheritance": "AD"
     }
 
+    Simple example from ExpansionHunter:
     {
     "LocusId": "DMPK",
     "LocusStructure": "(CAG)*",
     "ReferenceRegion": "19:46273462-46273522", # 0-based coordinates
     "VariantType": "Repeat"
     },
+    {
+    "LocusId": "HTT",
+    "LocusStructure": "(CAG)*CAACAG(CCG)*",
+    "ReferenceRegion": ["4:3076604-3076660", "4:3076666-3076693"],
+    "VariantType": ["Repeat", "Repeat"]
+    }
 
-    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
-    {'LocusId': 'myid', 'ReferenceRegion': 'chr1:100-200', 'LocusStructure': '(CAG)*', 'VariantType': 'Repeat', 'RepeatUnit': 'CAG', 'Gene': 'mygene', 'GeneRegion': '', 'DiscoveryYear': 2023, 'Diseases': [{'Symbol': 'disease_id', 'Name': 'Disease Name', 'Inheritance': 'AD', 'NormalMax': None, 'PathogenicMin': 10}], 'MainReferenceRegion': 'chr1:100-200', 'Inheritance': 'AD'}
+    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    {'LocusId': 'myid', 'LocusStructure': '(CAG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat'}
     """
-    
+
+    # Add flank coordinates to locus structure
+    row['locus_structure'] = add_flank_coordinates(row, genome)
+
     locus_dict = {}
+
+    # Required/standard fields
     locus_dict['LocusId'] = row['id']
-    locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
     locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*"
+
+    # One value of these for each motif within a compound locus
+    locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}" # 0-based coordinates
     locus_dict['VariantType'] = 'Repeat'
-    locus_dict['RepeatUnit'] = row['pathogenic_motif_reference_orientation'][0]
-    locus_dict['Gene'] = row['gene']
-    locus_dict['GeneRegion'] = row['type']
-    locus_dict['DiscoveryYear'] = row['year']
-    locus_dict['Diseases'] = [{
-        'Symbol': row['disease_id'],
-        'Name': row['disease'],
-        'Inheritance': row['inheritance'],
-        'NormalMax': row['benign_max'],
-        'PathogenicMin': row['pathogenic_min']
-    }]
-    locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
-    locus_dict['Inheritance'] = row['inheritance']
+
+    # Optional fields used by gnomAD:
+    # locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
+    # locus_dict['Inheritance'] = row['inheritance']
+    # locus_dict['Gene'] = row['gene']
+    # locus_dict['GeneRegion'] = row['type']
+    # locus_dict['DiscoveryYear'] = row['year']
+    # locus_dict['Diseases'] = [{
+    #     'Symbol': row['disease_id'],
+    #     'Name': row['disease'],
+    #     'Inheritance': row['inheritance'],
+    #     'NormalMax': row['benign_max'],
+    #     'PathogenicMin': row['pathogenic_min']
+    # }]
+
+    return locus_dict
 
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
@@ -326,6 +419,19 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
             out_file.write(header)
             for row in data:
                 out_file.write(atarva_catalog(row, genome) + '\n')
+    elif format.lower() == 'expansionhunter':
+        eh_loci = []
+        for row in data:
+            locus = expansionhunter_catalog(row, genome)
+            eh_loci.append(locus)
+        # Write the catalog as a JSON array
+        output = output if output.endswith('.json') else output + '.json'
+        with open(output, 'w') as out_json_file:
+            options = jsbeautifier.default_options()
+            options.indent_size = 2
+            options.brace_style="expand"
+            out_json_file.write(jsbeautifier.beautify(json.dumps(eh_loci, ensure_ascii=False), options))
+            out_json_file.write('\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
         header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
