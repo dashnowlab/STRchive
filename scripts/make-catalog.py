@@ -194,6 +194,66 @@ def atarva_catalog(row, genome = 'hg38'):
 
     return bed_string.rstrip('\n')
 
+def expansionhunter_catalog(row, genome = 'hg38'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: ExpansionHunter format catalog dictionary for a single locus
+
+    Example: 
+    {
+        "LocusId": "ABCD3",
+        "ReferenceRegion": "chr1:94418421-94418442",
+        "LocusStructure": "(GCC)*",
+        "VariantType": "Repeat",
+        "RepeatUnit": "GCC",
+        "Gene": "ABCD3",
+        "GeneRegion": "5'-UTR",
+        "GeneId": "ENSG00000117528",
+        "DiscoveryMethod": "WGS",
+        "DiscoveryYear": 2023,
+        "Diseases": [
+            {
+                "Symbol": "OPDM",
+                "Name": "Oculopharyngodistal myopathy",
+                "Inheritance": "AD",
+                "NormalMax": 44,
+                "PathogenicMin": 118
+            }
+        ],
+        "MainReferenceRegion": "chr1:94418421-94418442",
+        "Inheritance": "AD"
+    }
+
+    {
+    "LocusId": "DMPK",
+    "LocusStructure": "(CAG)*",
+    "ReferenceRegion": "19:46273462-46273522", # 0-based coordinates
+    "VariantType": "Repeat"
+    },
+
+    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    {'LocusId': 'myid', 'ReferenceRegion': 'chr1:100-200', 'LocusStructure': '(CAG)*', 'VariantType': 'Repeat', 'RepeatUnit': 'CAG', 'Gene': 'mygene', 'GeneRegion': '', 'DiscoveryYear': 2023, 'Diseases': [{'Symbol': 'disease_id', 'Name': 'Disease Name', 'Inheritance': 'AD', 'NormalMax': None, 'PathogenicMin': 10}], 'MainReferenceRegion': 'chr1:100-200', 'Inheritance': 'AD'}
+    """
+    
+    locus_dict = {}
+    locus_dict['LocusId'] = row['id']
+    locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
+    locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*"
+    locus_dict['VariantType'] = 'Repeat'
+    locus_dict['RepeatUnit'] = row['pathogenic_motif_reference_orientation'][0]
+    locus_dict['Gene'] = row['gene']
+    locus_dict['GeneRegion'] = row['type']
+    locus_dict['DiscoveryYear'] = row['year']
+    locus_dict['Diseases'] = [{
+        'Symbol': row['disease_id'],
+        'Name': row['disease'],
+        'Inheritance': row['inheritance'],
+        'NormalMax': row['benign_max'],
+        'PathogenicMin': row['pathogenic_min']
+    }]
+    locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
+    locus_dict['Inheritance'] = row['inheritance']
 
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
