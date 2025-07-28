@@ -142,7 +142,7 @@ def atarva_catalog(row, genome = 'hg38'):
     'chr1\t100\t200\tAAGGG\t5\tmyid'
 
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)nCAACAG(CCG)12', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t206\tCAACAG\t6\tmyid_flank\nchr1\t206\t242\tCCG\t3\tmyid_flank'
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t206\t242\tCCG\t3\tmyid_flank'
 
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t230\tCCG\t3\tmyid_flank\nchr1\t230\t260\tCAA\t3\tmyid_flank'
@@ -189,11 +189,30 @@ def atarva_catalog(row, genome = 'hg38'):
                 continue
             else:
                 flank_stop += int(count) * len(motif)
-            bed_string += f"{row['chrom']}\t{flank_start}\t{flank_stop}\t{motif}\t{len(motif)}\t{this_id}_flank\n"
+            if count != 1:
+                bed_string += f"{row['chrom']}\t{flank_start}\t{flank_stop}\t{motif}\t{len(motif)}\t{this_id}_flank\n"
             flank_start = flank_stop
 
     return bed_string.rstrip('\n')
 
+def straglr_catalog(row, genome = 'hg38'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: straglr format catalog string which is a modified BED format with fields: chrom start stop motif
+
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
+    """
+    bed_list = []
+    # Use the same approach as atarva_catalog, but only return the first 4 columns (chrom, start, stop)
+    atarva_string = atarva_catalog(row, genome)
+    for bed_row in atarva_string.split('\n'):
+        bed_list.append('\t'.join(bed_row.split('\t')[0:4]))
+
+    bed_string = '\n'.join(bed_list)
+
+    return bed_string
 
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
@@ -231,7 +250,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format BED format (TRGT or BED)
+    :param format: Variant caller catalog file format or BED format (TRGT, atarva, straglr or BED)
     :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 
@@ -266,6 +285,11 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
             out_file.write(header)
             for row in data:
                 out_file.write(atarva_catalog(row, genome) + '\n')
+    elif format.lower() == 'straglr':
+        with open(output, 'w') as out_file:
+            # No header for straglr format
+            for row in data:
+                out_file.write(straglr_catalog(row, genome) + '\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
         header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
@@ -274,7 +298,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
             for row in data:
                 out_file.write(extended_bed(row, fields_list, genome) + '\n')
     else:
-        raise ValueError('Unknown output file format. Expected TRGT or BED.')
+        raise ValueError('Unknown output file format. Expected TRGT, atarva, straglr or BED.')
 
 if __name__ == "__main__":
     import doctest
