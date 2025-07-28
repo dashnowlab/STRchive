@@ -287,8 +287,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
                 out_file.write(atarva_catalog(row, genome) + '\n')
     elif format.lower() == 'straglr':
         with open(output, 'w') as out_file:
-            header = '#' + '\t'.join(['chrom', 'start', 'stop', 'motif']) + '\n'
-            out_file.write(header)
+            # No header for straglr format
             for row in data:
                 out_file.write(straglr_catalog(row, genome) + '\n')
     elif format.lower() == 'bed':
