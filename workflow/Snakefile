@@ -85,11 +85,11 @@ elif stages == "skip-refs":
             # Plots
             # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
-            expand("{base_dir}plots/path-size.json", base_dir = base_dir)#,
+            expand("{base_dir}plots/path-size.json", base_dir = base_dir),
             # Reference alleles
-            # expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
-            # expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
-            # expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
+            expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
+            expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
+            expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', 'old-refs', or 'skip-refs'")
 
@@ -360,10 +360,11 @@ rule get_ref_alleles:
         result_T2T = "{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt"
     shell:
         """
-        python {scripts_dir}ref-allele.py {input.bed_hg19} {input.TRGT_hg19} 'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz' {output.result_hg19} {ref_directory}
-        python {scripts_dir}ref-allele.py {input.bed_hg38} {input.TRGT_hg38} 'https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz' {output.result_hg38} {ref_directory}
-        python {scripts_dir}ref-allele.py {input.bed_T2T} {input.TRGT_T2T} 'https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0_maskedY_rCRS.fa.gz' {output.result_T2T} {ref_directory}
+        python {scripts_dir}ref-allele.py --beds {input.bed_hg19} {input.TRGT_hg19} --names STRchive TRGT --fasta 'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz' --out {output.result_hg19} --storage {ref_directory}
+        python {scripts_dir}ref-allele.py --beds {input.bed_hg38} {input.TRGT_hg38} --names STRchive TRGT --fasta 'https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz' --out {output.result_hg38} --storage {ref_directory}
+        python {scripts_dir}ref-allele.py --beds {input.bed_T2T} {input.TRGT_T2T} --names STRchive TRGT --fasta 'https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0_maskedY_rCRS.fa.gz' --out {output.result_T2T} --storage {ref_directory}
         """
+
 
 #Input data not in repo
 
