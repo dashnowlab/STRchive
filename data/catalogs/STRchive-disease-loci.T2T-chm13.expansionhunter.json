@@ -258,7 +258,7 @@
 },
 {
   "LocusId": "HOXA13",
-  "LocusStructure": "(NGC)*",
+  "LocusStructure": "(NGC)*(NGC)*(NGC)*",
   "ReferenceRegion": ["chr7:27335684-27335720", "chr7:27335813-27335849", "chr7:27335912-27335954"],
   "VariantType": ["Repeat", "Repeat", "Repeat"],
   "InheritanceMode": ["AD"],
@@ -716,7 +716,7 @@
 },
 {
   "LocusId": "ARX",
-  "LocusStructure": "(NGC)*",
+  "LocusStructure": "(NGC)*(NGC)*",
   "ReferenceRegion": ["chrX:24597766-24597802", "chrX:24597886-24597934"],
   "VariantType": ["Repeat", "Repeat"],
   "InheritanceMode": ["XR"],

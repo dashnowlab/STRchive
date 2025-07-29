@@ -419,7 +419,7 @@ def merge_expansionhunter_loci(loci):
     :return: list of merged loci
 
     >>> merge_expansionhunter_loci([{'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': 'chr7:27199678-27199732', 'VariantType': 'Repeat', 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': 'HFG-III', 'NormalMax': 18.0, 'PathologicMin': 22.0}, {'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': 'chr7:27199825-27199861', 'VariantType': 'Repeat', 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': 'HFG-II', 'NormalMax': 12.0, 'PathologicMin': 18.0}, {'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': 'chr7:27199924-27199966', 'VariantType': 'Repeat', 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': 'HFG-I', 'NormalMax': 14.0, 'PathologicMin': 22.0}])
-    [{'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': ['chr7:27199678-27199732', 'chr7:27199825-27199861', 'chr7:27199924-27199966'], 'VariantType': ['Repeat', 'Repeat', 'Repeat'], 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': ['HFG-III', 'HFG-II', 'HFG-I'], 'NormalMax': [18.0, 12.0, 14.0], 'PathologicMin': [22.0, 18.0, 22.0], 'VariantId': ['HFG-III', 'HFG-II', 'HFG-I']}]
+    [{'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*(NGC)*(NGC)*', 'ReferenceRegion': ['chr7:27199678-27199732', 'chr7:27199825-27199861', 'chr7:27199924-27199966'], 'VariantType': ['Repeat', 'Repeat', 'Repeat'], 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': ['HFG-III', 'HFG-II', 'HFG-I'], 'NormalMax': [18.0, 12.0, 14.0], 'PathologicMin': [22.0, 18.0, 22.0], 'VariantId': ['HFG-III', 'HFG-II', 'HFG-I']}]
     """
     merged_loci = {}
     for locus in loci:
@@ -450,6 +450,8 @@ def merge_expansionhunter_loci(loci):
             if not isinstance(merged_loci[locus_id].get('PathologicMin', []), list):
                 merged_loci[locus_id]['PathologicMin'] = [merged_loci[locus_id].get('PathologicMin', [])]
             merged_loci[locus_id]['PathologicMin'].append(locus['PathologicMin'])
+
+            merged_loci[locus_id]['LocusStructure'] += locus['LocusStructure']
 
     return list(merged_loci.values())
 
