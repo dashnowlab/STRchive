@@ -337,6 +337,8 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     "VariantType": ["Repeat", "Repeat"]
     }
 
+
+
     Example from STRanger:
     {
         "LocusId": "ABCD3",
@@ -355,7 +357,7 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     {'LocusId': 'mygene', 'LocusStructure': '(CAG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat', 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10}
 
     >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
-    {'LocusId': 'mygene', 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat', 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10}
+    {'LocusId': 'mygene', 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'ReferenceRegion': ['chr1:100-200', 'chr1:206-215'], 'VariantType': ['Repeat', 'Repeat'], 'VariantId': ['mygene', 'mygene_CCG'], 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10}
     """
 
     # Add flank coordinates to locus structure
@@ -367,17 +369,25 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     locus_dict['LocusId'] = row['gene'] # note, this wont be unique if multiple loci in the same gene e.g. HOXA13 - could add these as multiple loci in the same gene?
     if len(row['locus_structure']) > 0:
         locus_dict['LocusStructure'] = ''
+        locus_dict['ReferenceRegion'] = []
+        locus_dict['VariantType'] = []
+        locus_dict['VariantId'] = [] # used to store the ID of the variant, e.g. myid_CCG for the CCG motif in the locus structure
         for struct_dict in row['locus_structure']:
             if struct_dict['type'] == 'interruption':
-                locus_dict['LocusStructure'] += f"{struct_dict['motif']*struct_dict['count']}" # interruptions are not included in the structure
+                locus_dict['LocusStructure'] += f"{struct_dict['motif']*struct_dict['count']}" # interruptions are included in the structure but not in the variant list
             else:
                 locus_dict['LocusStructure'] += f"({struct_dict['motif']})*"
+                locus_dict['ReferenceRegion'].append(f"{row['chrom']}:{struct_dict['start_' + genome]}-{struct_dict['stop_' + genome]}")
+                locus_dict['VariantType'].append('Repeat')
+                if struct_dict['count'] is None:
+                    locus_dict['VariantId'].append(row['gene'])
+                else:
+                    locus_dict['VariantId'].append(f"{row['gene']}_{struct_dict['motif']}")
     else:
         locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*" # Just use the first pathogenic motif for the structure
+        locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}" # 0-based coordinates
+        locus_dict['VariantType'] = 'Repeat'
 
-    # One value of these for each motif within a compound locus
-    locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}" # 0-based coordinates
-    locus_dict['VariantType'] = 'Repeat'
 
     # Optional fields used by STRanger:
     locus_dict['InheritanceMode'] = row['inheritance']
@@ -401,6 +411,47 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     # }]
 
     return locus_dict
+
+def merge_expansionhunter_loci(loci):
+    """
+    Merge loci with the same LocusId into a single entry. This is really only relevant for HOXA13, which has multiple loci with the same LocusId but different ReferenceRegion.
+    :param loci: list of dictionaries with STR data for multiple loci
+    :return: list of merged loci
+
+    >>> merge_expansionhunter_loci([{'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': 'chr7:27199678-27199732', 'VariantType': 'Repeat', 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': 'HFG-III', 'NormalMax': 18.0, 'PathologicMin': 22.0}, {'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': 'chr7:27199825-27199861', 'VariantType': 'Repeat', 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': 'HFG-II', 'NormalMax': 12.0, 'PathologicMin': 18.0}, {'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': 'chr7:27199924-27199966', 'VariantType': 'Repeat', 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': 'HFG-I', 'NormalMax': 14.0, 'PathologicMin': 22.0}])
+    [{'LocusId': 'HOXA13', 'LocusStructure': '(NGC)*', 'ReferenceRegion': ['chr7:27199678-27199732', 'chr7:27199825-27199861', 'chr7:27199924-27199966'], 'VariantType': ['Repeat', 'Repeat', 'Repeat'], 'InheritanceMode': ['AD'], 'DisplayRU': 'NGC', 'Disease': ['HFG-III', 'HFG-II', 'HFG-I'], 'NormalMax': [18.0, 12.0, 14.0], 'PathologicMin': [22.0, 18.0, 22.0], 'VariantId': ['HFG-III', 'HFG-II', 'HFG-I']}]
+    """
+    merged_loci = {}
+    for locus in loci:
+        locus_id = locus['LocusId']
+        if locus_id not in merged_loci:
+            merged_loci[locus_id] = locus
+        else:
+            # Merge ReferenceRegion, VariantType and VariantId. May need to change them into lists first.
+            if not isinstance(merged_loci[locus_id]['ReferenceRegion'], list):
+                merged_loci[locus_id]['ReferenceRegion'] = [merged_loci[locus_id]['ReferenceRegion']]
+            if not isinstance(merged_loci[locus_id]['VariantType'], list):
+                merged_loci[locus_id]['VariantType'] = [merged_loci[locus_id]['VariantType']]
+            # VariantId is not always present, so check if it exists
+            if 'VariantId' not in merged_loci[locus_id]:
+                merged_loci[locus_id]['VariantId'] = [merged_loci[locus_id].get('Disease', [])]
+            merged_loci[locus_id]['VariantId'].append(locus['Disease'])  # Use Disease as VariantId
+
+            merged_loci[locus_id]['ReferenceRegion'].append(locus['ReferenceRegion'])
+            merged_loci[locus_id]['VariantType'].append(locus['VariantType'])
+            
+            # Also merge disease, NormalMax and PathologicMin if they exist
+            if not isinstance(merged_loci[locus_id].get('Disease', []), list):
+                merged_loci[locus_id]['Disease'] = [merged_loci[locus_id].get('Disease', [])]
+            merged_loci[locus_id]['Disease'].append(locus['Disease'])
+            if not isinstance(merged_loci[locus_id].get('NormalMax', []), list):
+                merged_loci[locus_id]['NormalMax'] = [merged_loci[locus_id].get('NormalMax', [])]
+            merged_loci[locus_id]['NormalMax'].append(locus['NormalMax'])
+            if not isinstance(merged_loci[locus_id].get('PathologicMin', []), list):
+                merged_loci[locus_id]['PathologicMin'] = [merged_loci[locus_id].get('PathologicMin', [])]
+            merged_loci[locus_id]['PathologicMin'].append(locus['PathologicMin'])
+
+    return list(merged_loci.values())
 
 def extended_bed(row, fields = [], genome = 'hg38'):
     r"""
@@ -478,6 +529,9 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
         for row in data:
             locus = expansionhunter_catalog(row, genome)
             eh_loci.append(locus)
+
+        # Merge loci with the same LocusId into a single entry
+        eh_loci = merge_expansionhunter_loci(eh_loci)
         # Write the catalog as a JSON array
         output = output if output.endswith('.json') else output + '.json'
         with open(output, 'w') as out_json_file:
