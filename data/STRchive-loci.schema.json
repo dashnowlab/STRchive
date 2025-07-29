@@ -110,7 +110,7 @@
         "type": [ "string", "null" ]
       },
       "locus_structure": {
-        "description": "Structure of the locus including the order of motifs and any interruptions",
+        "description": "Structure of the locus including the order of motifs and any interruptions. The main_repeat will typically have a count of null. Only one motif can have a null count.",
         "type": "array",
         "items": {
           "type": "object",
