@@ -109,10 +109,10 @@ def add_flank_coordinates(row, genome = 'hg38'):
     :return: updated locus_structure with positions for each motif
 
     >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}]}, genome='hg38')
-    [{'motif': 'CAG', 'count': None, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 158}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 158, 'stop_hg38': 164}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat', 'start_hg38': 164, 'stop_hg38': 200}]
+    [{'motif': 'CAG', 'count': None, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 200}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 200, 'stop_hg38': 206}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat', 'start_hg38': 206, 'stop_hg38': 242}]
 
-    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': 10, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': None, 'type': 'flank_repeat'}]}, genome='hg38')
-    [{'motif': 'CAG', 'count': 10, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 130}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 130, 'stop_hg38': 136}, {'motif': 'CCG', 'count': None, 'type': 'flank_repeat', 'start_hg38': 136, 'stop_hg38': 200}]
+    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': None, 'type': 'main_repeat'}]}, genome='hg38')
+    [{'motif': 'CAG', 'count': 10, 'type': 'flank_repeat', 'start_hg38': 64, 'stop_hg38': 94}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 94, 'stop_hg38': 100}, {'motif': 'CCG', 'count': None, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 200}]
     
     >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': []}, genome='hg38')
     []
@@ -123,15 +123,31 @@ def add_flank_coordinates(row, genome = 'hg38'):
 
     total_length = row['stop_' + genome] - row['start_' + genome]
     known_lengths = []
+    left_flank = 0
+    right_flank = 0
+    main_repeat_found = False
     for struct_dict in row['locus_structure']:
-        if struct_dict['count'] is not None:
-            known_lengths.append(len(struct_dict['motif']) * struct_dict['count'])
-        else:
+        if struct_dict['type'] == 'main_repeat' and struct_dict['count'] is None:
             known_lengths.append(None)
+            main_repeat_found = True
+        elif struct_dict['count'] is not None:
+            known_lengths.append(len(struct_dict['motif']) * struct_dict['count'])
+            # This assumes than anything without a defined count is in the flanking region.
+            if main_repeat_found:
+                # Add to right flank
+                right_flank += len(struct_dict['motif']) * struct_dict['count']
+            else:
+                # Add to left flank
+                left_flank += len(struct_dict['motif']) * struct_dict['count']
+        else:
+            # Error case: if a motif is not a main repeat and has no count, it should not be in the locus structure
+            raise ValueError(f"Motif {struct_dict['motif']} has no count defined. Please check the input data.")
+
     # Check if more than one unknown length is present
     if known_lengths.count(None) > 1:
         raise ValueError(f"Multiple unknown lengths found in locus structure for {row['id']}. Please check the input data.")
-    unknown_length = total_length - sum([x for x in known_lengths if x is not None])
+    unknown_length = total_length + left_flank + right_flank - sum([x for x in known_lengths if x is not None])
+    #print(f"Total length of locus structure for {row['id']} is {total_length}, known lengths are {known_lengths}, flank lengths are {flank_length}, unknown length is {unknown_length}.")
     if unknown_length < 0:
         raise ValueError(f"Total length of locus structure for {row['id']} is less than the sum of known lengths. Please check the input data.")
     # Replace None value with the unknown length
@@ -140,7 +156,7 @@ def add_flank_coordinates(row, genome = 'hg38'):
             known_lengths[i] = unknown_length
 
     # Calculate start and stop coordinates for each motif in the locus structure
-    this_start = row['start_' + genome]
+    this_start = row['start_' + genome] - left_flank
     for i, struct_dict in enumerate(row['locus_structure']):
         this_stop = this_start + known_lengths[i]
         row['locus_structure'][i]['start_' + genome] = this_start
@@ -233,11 +249,11 @@ def atarva_catalog(row, genome = 'hg38'):
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tAAGGG\t5\tmyid'
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    'chr1\t100\t155\tCAG\t3\tmyid\nchr1\t155\t191\tCAACAG\t6\tmyid_flank\nchr1\t191\t200\tCCG\t3\tmyid_flank'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 2, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t212\tCAACAG\t6\tmyid_flank\nchr1\t212\t221\tCCG\t3\tmyid_flank'
 
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    'chr1\t100\t155\tCAG\t3\tmyid\nchr1\t155\t191\tCAACAG\t6\tmyid_flank\nchr1\t191\t200\tCCG\t3\tmyid_flank'
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t236\tCAACAG\t6\tmyid_flank\nchr1\t236\t245\tCCG\t3\tmyid_flank'
     """
 
     # Add flank coordinates to locus structure
@@ -321,8 +337,25 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     "VariantType": ["Repeat", "Repeat"]
     }
 
-    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
-    {'LocusId': 'myid', 'LocusStructure': '(CAG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat'}
+    Example from STRanger:
+    {
+        "LocusId": "ABCD3",
+        "HGNCId": 67,                     # Currently not implemented
+        "InheritanceMode": "AD",
+        "DisplayRU": "CCG",
+        "LocusStructure": "(CCG)*",
+        "ReferenceRegion": "1:94418422-94418444",
+        "VariantType": "Repeat",
+        "Disease": "OPDM",
+        "NormalMax": 50,
+        "PathologicMin": 118
+    },
+
+    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    {'LocusId': 'mygene', 'LocusStructure': '(CAG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat', 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10}
+
+    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    {'LocusId': 'mygene', 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat', 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10}
     """
 
     # Add flank coordinates to locus structure
@@ -331,12 +364,27 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     locus_dict = {}
 
     # Required/standard fields
-    locus_dict['LocusId'] = row['id']
-    locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*"
+    locus_dict['LocusId'] = row['gene'] # note, this wont be unique if multiple loci in the same gene e.g. HOXA13 - could add these as multiple loci in the same gene?
+    if len(row['locus_structure']) > 0:
+        locus_dict['LocusStructure'] = ''
+        for struct_dict in row['locus_structure']:
+            if struct_dict['type'] == 'interruption':
+                locus_dict['LocusStructure'] += f"{struct_dict['motif']*struct_dict['count']}" # interruptions are not included in the structure
+            else:
+                locus_dict['LocusStructure'] += f"({struct_dict['motif']})*"
+    else:
+        locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*" # Just use the first pathogenic motif for the structure
 
     # One value of these for each motif within a compound locus
     locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}" # 0-based coordinates
     locus_dict['VariantType'] = 'Repeat'
+
+    # Optional fields used by STRanger:
+    locus_dict['InheritanceMode'] = row['inheritance']
+    locus_dict['DisplayRU'] = row['pathogenic_motif_reference_orientation'][0] # use first pathogenic motif for display
+    locus_dict['Disease'] = row['disease_id'] # disease ID
+    locus_dict['NormalMax'] = row['benign_max']
+    locus_dict['PathologicMin'] = row['pathogenic_min']
 
     # Optional fields used by gnomAD:
     # locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
