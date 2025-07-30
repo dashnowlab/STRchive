@@ -12,7 +12,7 @@ const TextBox = ({ label, onChange, ...props }) => (
     <button
       onClick={(event) => {
         event.currentTarget.previousElementSibling.value == "";
-        onChange("");
+        onChange?.("");
       }}
       aria-label="Clear textbox"
     >
