@@ -56,35 +56,25 @@ const TableOfContents = () => {
           className={classes.button}
           aria-expanded={open}
           onClick={() => setOpen(!open)}
-          data-tooltip={open ? "Close" : "Table of contents"}
+          data-tooltip={open ? "Close" : "Open"}
         >
           Table of Contents{open ? <FaXmark /> : <FaBars />}
         </button>
 
         {/* links */}
         {open && (
-          <>
-            <button
-              type="button"
-              className={classes.button}
-              onClick={() => window.scrollTo({ top: 0 })}
-            >
-              Top
-            </button>
-
-            <div ref={list} className={classes.list}>
-              {headings.map(({ id, level, html }, index) => (
-                <a
-                  key={index}
-                  data-active={id === activeId ? "" : undefined}
-                  className={classes.link}
-                  href={`#${id}`}
-                  style={{ paddingLeft: level * 15 }}
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
-              ))}
-            </div>
-          </>
+          <div ref={list} className={classes.list}>
+            {headings.map(({ id, level, html }, index) => (
+              <a
+                key={index}
+                data-active={id === activeId ? "" : undefined}
+                className={classes.link}
+                href={`#${id}`}
+                style={{ paddingLeft: level * 15 }}
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            ))}
+          </div>
         )}
       </div>
     </aside>

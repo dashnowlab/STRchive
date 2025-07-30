@@ -7,7 +7,7 @@ const CheckBox = ({ label, onChange, tooltip, ...props }) => (
       onChange={(event) => onChange?.(event.target.checked)}
       aria-label={tooltip}
     />
-    {label}
+    <span>{label}</span>
   </label>
 );
 

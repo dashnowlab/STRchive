@@ -321,7 +321,7 @@ td {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 7.5px 15px;
+  padding: 7.5px;
   gap: 10px;
   border: solid 2px currentColor;
   border-radius: 999px;
@@ -331,6 +331,10 @@ td {
     background var(--fast),
     color var(--fast),
     box-shadow var(--fast);
+}
+
+.button:has(span) {
+  padding: 7.5px 15px;
 }
 
 .button:hover {

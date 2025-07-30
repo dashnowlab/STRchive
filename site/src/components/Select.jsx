@@ -4,7 +4,7 @@ import classes from "./Select.module.css";
 /** dropdown select with label */
 const Select = ({ label, options, onChange, ...props }) => (
   <label>
-    {label}
+    <span>{label}</span>
     <div className={classes.container}>
       <select
         {...props}

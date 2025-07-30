@@ -17,7 +17,6 @@ import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
-import Feedback from "@/locus/Feedback";
 import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
@@ -56,8 +55,6 @@ const blame = getJsonBlame(
 
   <!-- overview -->
   <section>
-    <Feedback client:only="react" />
-
     <Heading level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
     {

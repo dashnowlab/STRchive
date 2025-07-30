@@ -57,7 +57,7 @@ const bedDownloads = downloads.slice(3);
 
     <div class="row">
       <Link to={`${repo}/tree/main/data`} className="button">
-        <FaGithub />Full Dataset
+        <FaGithub /><span>Full Dataset</span>
       </Link>
     </div>
 
@@ -71,7 +71,7 @@ const bedDownloads = downloads.slice(3);
         {
           defDownloads.map(({ file, label, filename }) => (
             <Link to={file} className="button" download={filename}>
-              {label}
+              <span>{label}</span>
               <LuDownload />
             </Link>
           ))
@@ -86,7 +86,7 @@ const bedDownloads = downloads.slice(3);
         {
           bedDownloads.map(({ file, label, filename }) => (
             <Link to={file} className="button" download={filename}>
-              {label}
+              <span>{label}</span>
               <LuDownload />
             </Link>
           ))

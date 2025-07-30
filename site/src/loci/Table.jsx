@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import clsx from "clsx";
 import { map, pick, uniq } from "lodash-es";
@@ -22,8 +23,12 @@ const cols = [
   {
     key: "id",
     render: (cell) => (
-      <Link to={`/loci/${cell}`} className="button">
-        View
+      <Link
+        to={`/loci/${cell}`}
+        className="button"
+        data-tooltip="Go to locus page"
+      >
+        <FaArrowRight />
       </Link>
     ),
     sortable: false,

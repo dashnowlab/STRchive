@@ -8,7 +8,7 @@ const TextBox = ({ label, onChange, ...props }) => {
 
   return (
     <label>
-      {label}
+      <span>{label}</span>
       <div className={classes.container}>
         <input
           ref={ref}
