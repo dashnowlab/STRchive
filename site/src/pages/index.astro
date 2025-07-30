@@ -19,14 +19,11 @@ import Layout from "@/layouts/Layout.astro";
       An archive of STRs associated with human diseases
     </p>
 
-    <div class="center">
+    <div class="row">
       <Link to="/loci" className="button">
         Loci<LiaBarcodeSolid className="big-icon" />
       </Link>
-      <Link
-        to="https://doi.org/10.1186/s13073-025-01454-4"
-        className="button"
-      >
+      <Link to="https://doi.org/10.1186/s13073-025-01454-4" className="button">
         Paper<FaNewspaper className="big-icon" />
       </Link>
     </div>
@@ -56,11 +53,8 @@ import Layout from "@/layouts/Layout.astro";
     z-index: -1;
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-        ellipse at 0% 200%,
-        var(--primary),
-        transparent 75%
-      ),
+    background:
+      radial-gradient(ellipse at 0% 200%, var(--primary), transparent 75%),
       radial-gradient(ellipse at 100% 200%, var(--secondary), transparent 75%);
     content: "";
     opacity: 0.5;

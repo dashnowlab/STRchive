@@ -8,6 +8,7 @@ import {
   FaSortDown,
   FaSortUp,
 } from "react-icons/fa6";
+import clsx from "clsx";
 import {
   createColumnHelper,
   flexRender,
@@ -91,7 +92,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
   });
 
   return (
-    <div className={classes.root}>
+    <div className={clsx("col", classes.root)}>
       <div className={classes.scroll}>
         {/* table */}
         <table
@@ -186,9 +187,9 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
 
       {/* controls */}
       {showControls && (
-        <div className={classes.controls}>
+        <div className={clsx("row", classes.controls)}>
           {/* pagination */}
-          <div className={classes["control-row"]}>
+          <div className={clsx("row", classes["control-row"])}>
             <button
               type="button"
               className={classes["page-button"]}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { LuDownload } from "react-icons/lu";
+import clsx from "clsx";
 import { map, pick, uniq } from "lodash-es";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
@@ -31,7 +32,7 @@ const cols = [
     key: "locus_tags",
     name: "Tags",
     render: (cell) => (
-      <div className={classes["tags-cell"]}>
+      <div className={clsx("row", classes["tags-cell"])}>
         {importantTagOptions
           .filter(({ value }) => cell.includes(value))
           .map(({ Icon, color, tooltip }, index) => (
@@ -178,11 +179,11 @@ const Table = ({ loci }) => {
   );
 
   return (
-    <>
+    <div className="col">
       {/* filters */}
-      <div className={classes.filters}>
+      <div className={clsx("row", classes.filters)}>
         <TextBox placeholder="Search" value={search} onChange={setSearch} />
-        <div className={classes["filter-row"]}>
+        <div className="row">
           {importantTagOptions.map(({ Icon, label, color, tooltip }, index) => (
             <CheckBox
               key={index}
@@ -220,10 +221,9 @@ const Table = ({ loci }) => {
       </div>
 
       {/* row count */}
-      <div className={classes["filter-row"]}>
+      <div className="row">
         <strong>{filteredLoci.length.toLocaleString()} loci</strong>
         <button
-          className={classes.download}
           onClick={() =>
             /** download filtered loci */
             downloadJson(filteredLoci, [
@@ -239,7 +239,7 @@ const Table = ({ loci }) => {
 
       {/* table */}
       <TableComponent cols={cols} rows={filteredLoci} />
-    </>
+    </div>
   );
 };
 

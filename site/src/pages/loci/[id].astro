@@ -17,13 +17,13 @@ import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
+import Feedback from "@/locus/Feedback";
 import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
 import gnomad from "../../../../data/plots/gnomad.json";
 import citations from "../../../../data/STRchive-citations.json";
 import loci from "../../../../data/STRchive-loci.json";
-import Feedback from "@/locus/Feedback";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -53,7 +53,7 @@ const blame = getJsonBlame(
 
 <Layout title={locus.nice_id}>
   <TableOfContents client:only="react" />
-  
+
   <!-- overview -->
   <section>
     <Feedback client:only="react" />
@@ -62,7 +62,7 @@ const blame = getJsonBlame(
 
     {
       !!locus.locus_tags.length && (
-        <div class="tags">
+        <div class="row">
           {locus.locus_tags?.map((tag) => (
             <Tag value={tag} />
           ))}
@@ -111,7 +111,7 @@ const blame = getJsonBlame(
       )
     }
 
-    <div class="identifiers">
+    <div class="row identifiers">
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
           <div>
@@ -144,7 +144,7 @@ const blame = getJsonBlame(
     <Heading level={2}>Disease</Heading>
     {
       !!locus.disease_tags.length && (
-        <div class="tags">
+        <div class="row">
           {locus.disease_tags?.map((tag) => (
             <Tag value={tag} />
           ))}
@@ -441,23 +441,23 @@ const blame = getJsonBlame(
 
   <!-- gnomad data -->
   {
-  gnomad[id] && (
-    <section>
-      <Heading level={2}>gnomAD</Heading>
-      {gnomad[id].reliable ? (
-        <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
-      ) : (
-        <p class="center">
-          <em>
-            Pathogenic genotype frequency data is not displayed for this locus because a substantial number of large alleles failed manual review by the gnomAD team.
-          </em>
-        </p>
-      )}
-    </section>
-  )
-}
-
-
+    gnomad[id] && (
+      <section>
+        <Heading level={2}>gnomAD</Heading>
+        {gnomad[id].reliable ? (
+          <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
+        ) : (
+          <p class="center">
+            <em>
+              Pathogenic genotype frequency data is not displayed for this locus
+              because a substantial number of large alleles failed manual review
+              by the gnomAD team.
+            </em>
+          </p>
+        )}
+      </section>
+    )
+  }
 
   <!-- references -->
   {
@@ -517,27 +517,13 @@ const blame = getJsonBlame(
 </Layout>
 
 <style>
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-    gap: 10px;
-  }
-
   .boxes {
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
     gap: 20px;
-  }
-
-  .boxes :global(svg) {
-    margin: 0;
   }
 
   .box {
@@ -595,7 +581,6 @@ const blame = getJsonBlame(
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: max-content;
-    margin: 20px auto;
     gap: 20px;
   }
 
@@ -621,14 +606,9 @@ const blame = getJsonBlame(
     background: color-mix(in srgb, var(--tertiary), white 90%);
   }
 
-  .genes {
-    margin: 40px 0;
-  }
-
   .heading {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 10px;
     gap: 10px;
     font-weight: var(--bold);
   }
@@ -646,10 +626,6 @@ const blame = getJsonBlame(
   }
 
   .identifiers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 40px 0;
     gap: 40px;
     text-align: left;
   }

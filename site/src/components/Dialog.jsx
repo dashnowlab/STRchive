@@ -1,5 +1,6 @@
 import { cloneElement, useRef, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
+import clsx from "clsx";
 import {
   useClickOutside,
   useEventListener,
@@ -32,7 +33,7 @@ const Dialog = ({ trigger, title, children }) => {
     <>
       {cloneElement(trigger, { onClick: open })}
 
-      <dialog ref={ref} className={classes.dialog}>
+      <dialog ref={ref} className={clsx("col", classes.dialog)}>
         <div className={classes.title}>
           <span>{title}</span>
           <button onClick={close} autoFocus>
@@ -40,7 +41,7 @@ const Dialog = ({ trigger, title, children }) => {
           </button>
         </div>
 
-        <div className={classes.content}>{children}</div>
+        <div className={clsx("col", classes.content)}>{children}</div>
       </dialog>
     </>
   );

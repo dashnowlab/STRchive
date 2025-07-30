@@ -3,7 +3,7 @@ import Link from "@/components/Link";
 ---
 
 <footer>
-  <div class="links">
+  <div class="row">
     <Link to="/about#contact">Contact</Link>
     <Link to="/about#cite">Cite</Link>
     <Link to="/about#contribute">Contribute</Link>
@@ -47,6 +47,7 @@ import Link from "@/components/Link";
 
   footer a {
     color: var(--white);
+    /* text-decoration: none; */
   }
 
   footer a:hover {
@@ -58,12 +59,6 @@ import Link from "@/components/Link";
     height: 100%;
     background: currentColor;
     opacity: 0.25;
-  }
-
-  .links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
   }
 
   .links > * {

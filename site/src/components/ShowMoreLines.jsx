@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import clsx from "clsx";
 import classes from "./ShowMoreLines.module.css";
 
 /** add "show more/less" control to long lines of content if needed */
@@ -30,11 +31,11 @@ const ShowMoreLines = ({ lines = 2, children }) => {
 
   return show ? (
     <div
-      className={[
+      className={clsx(
         classes.content,
         expanded ? classes.expanded : classes.collapsed,
-        expanded ? "" : "truncate-lines",
-      ].join(" ")}
+        !expanded && "truncate-lines",
+      )}
       style={{ "--lines": show && !expanded ? lines : undefined }}
       onClick={() => setExpanded(!expanded)}
       onKeyUp={(event) => event.key === "Enter" && setExpanded(!expanded)}

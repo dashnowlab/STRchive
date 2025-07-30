@@ -1,14 +1,12 @@
 .dialog {
-  display: flex;
   z-index: 9;
   position: fixed;
-  flex-direction: column;
+
   max-width: min(calc(100vw - 80px), var(--content));
   max-height: calc(100vh - 80px);
   margin: auto;
   inset: 0;
   padding: 20px;
-  gap: 20px;
   border: none;
   border-radius: var(--rounded);
   background: var(--white);
@@ -30,6 +28,7 @@
 
 .title {
   display: flex;
+  width: 100%;
 }
 
 .title > :first-child {

@@ -50,7 +50,11 @@ main {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 60px max(40px, (100% - var(--content)) / 2);
+  gap: 40px;
   text-align: center;
 }
 
@@ -66,14 +70,6 @@ section:last-child {
   flex-grow: 1;
 }
 
-section > :first-child {
-  margin-top: 0 !important;
-}
-
-section > :last-child {
-  margin-bottom: 0 !important;
-}
-
 h1,
 h2,
 h3,
@@ -81,7 +77,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2.5em 0 1.5em 0;
+  margin: 0;
   gap: 20px;
   font-weight: var(--bold);
 }
@@ -113,19 +109,22 @@ b {
 }
 
 p {
-  margin: 20px 0;
+  margin: 0;
   line-height: var(--spacing);
   text-align: justify;
 }
 
 blockquote {
+  margin: 0;
   padding: 20px 30px;
   border-radius: var(--rounded);
   background: var(--light-gray);
   text-align: left;
 }
 
-ul {
+ul,
+ol {
+  margin: 0;
   padding: 0;
   padding-left: 20px;
   line-height: var(--spacing);
@@ -143,7 +142,7 @@ li::marker {
 
 hr {
   height: 2px;
-  margin: 40px 0;
+  margin: 0;
   border: none;
   background: var(--light-gray);
 }
@@ -155,7 +154,7 @@ dl {
   align-items: center;
   justify-content: flex-start;
   justify-items: flex-start;
-  margin: 20px 0;
+  margin: 0;
   gap: 10px;
 }
 
@@ -187,6 +186,7 @@ select {
   appearance: none;
   align-items: center;
   justify-content: center;
+  margin: 0;
   padding: 7.5px 15px;
   gap: 10px;
   border: none;
@@ -210,26 +210,9 @@ select:hover {
 label {
   display: inline-flex;
   position: relative;
-  position: relative;
   align-items: center;
+  margin: 0;
   gap: 5px;
-}
-
-label:has(select) select {
-  padding-right: 30px;
-}
-
-label:has(select)::after {
-  position: absolute;
-  right: 10px;
-  translate: 0 -2px;
-  content: "▾";
-  pointer-events: none;
-  transition: color var(--fast);
-}
-
-label:hover:has(select)::after {
-  color: var(--white);
 }
 
 label:has(input) {
@@ -238,23 +221,13 @@ label:has(input) {
 
 input:not([type="checkbox"]),
 textarea {
+  margin: 0;
   padding: 7.5px 15px;
   border: none;
   border-radius: var(--rounded);
   background: var(--white);
   box-shadow: inset 0 0 0 2px var(--dark-gray);
   font: inherit;
-}
-
-label:has(input) > button {
-  position: absolute;
-  right: 5px;
-  padding: 5px;
-  background: none;
-}
-
-label:has(input):has(button) > input {
-  padding-right: 40px !important;
 }
 
 input[type="number"] {
@@ -270,7 +243,7 @@ input[type="checkbox"] {
 }
 
 summary {
-  margin-bottom: 10px;
+  margin: 0;
   padding: 5px 10px;
   border-radius: var(--rounded);
   background: var(--light-gray);
@@ -302,7 +275,7 @@ summary:hover {
 }
 
 table {
-  margin: 20px 0;
+  margin: 0;
   border-collapse: collapse;
 }
 
@@ -327,11 +300,27 @@ td {
   text-wrap: balance;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  gap: 10px 20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
   padding: 7.5px 15px;
   gap: 10px;
   border: solid 2px currentColor;
@@ -377,12 +366,8 @@ td {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
   place-items: stretch;
-  margin: 40px 0;
+  width: 100%;
   gap: 40px;
-}
-
-.charts h3 {
-  margin-top: 0;
 }
 
 .tippy-box {

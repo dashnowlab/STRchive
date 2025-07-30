@@ -24,7 +24,7 @@ import { repo } from "@/layouts/meta";
       GitHub:
     </p>
 
-    <div class="center">
+    <div class="row">
       <Link to={`${repo}/discussions`} className="button">
         <FaGithub />GitHub</Link
       >
@@ -36,8 +36,9 @@ import { repo } from "@/layouts/meta";
 
     <blockquote>
       <span>
-	Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K., 
-	VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H., 2025.
+        Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K.,
+        VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H.,
+        2025.
       </span><br />
       <b>
         STRchive: a dynamic resource detailing population-level and
@@ -61,7 +62,7 @@ import { repo } from "@/layouts/meta";
       on GitHub:
     </p>
 
-    <div class="center">
+    <div class="row">
       <Link to={repo} className="button"> <FaGithub />GitHub</Link>
     </div>
   </section>
@@ -69,7 +70,7 @@ import { repo } from "@/layouts/meta";
   <section>
     <Heading level={2}>Team</Heading>
 
-    <div class="members">
+    <div class="row">
       {
         team.map((member) => (
           <Link className="member" to={member.link}>
@@ -85,13 +86,6 @@ import { repo } from "@/layouts/meta";
 </Layout>
 
 <style>
-  .members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
   .member {
     display: flex;
     flex-direction: column;
