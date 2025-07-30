@@ -23,6 +23,7 @@ import { getJsonBlame } from "@/util/git";
 import gnomad from "../../../../data/plots/gnomad.json";
 import citations from "../../../../data/STRchive-citations.json";
 import loci from "../../../../data/STRchive-loci.json";
+import Feedback from "@/locus/Feedback";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -53,8 +54,11 @@ const blame = getJsonBlame(
 <Layout title={locus.nice_id}>
   <TableOfContents client:only="react" />
 
+  
   <!-- overview -->
   <section>
+    <Feedback client:only="react" />
+
     <Heading level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
     {

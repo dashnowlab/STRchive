@@ -1,0 +1,46 @@
+.dialog {
+  display: flex;
+  z-index: 9;
+  position: fixed;
+  flex-direction: column;
+  max-width: min(calc(100vw - 80px), var(--content));
+  max-height: calc(100vh - 80px);
+  margin: auto;
+  inset: 0;
+  padding: 20px;
+  gap: 20px;
+  border: none;
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--fast);
+}
+
+.dialog:open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dialog::backdrop {
+  background: var(--shadow);
+  pointer-events: none;
+}
+
+.title {
+  display: flex;
+}
+
+.title > :first-child {
+  flex-grow: 1;
+  font-weight: var(--bold);
+}
+
+.title > button {
+  padding: 5px;
+}
+
+.content {
+  overflow-y: auto;
+}
