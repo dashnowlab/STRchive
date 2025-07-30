@@ -215,7 +215,7 @@ label {
   gap: 5px;
 }
 
-label:has(input) {
+label:has(input, textarea, select) {
   cursor: pointer;
 }
 

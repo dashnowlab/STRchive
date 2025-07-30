@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  position: relative;
+}
+
+.container select {
+  padding-right: 25px;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  align-self: center;
+  pointer-events: none;
+  transition: color var(--fast);
+}
+
+select:hover + .icon {
+  color: var(--white);
+}
