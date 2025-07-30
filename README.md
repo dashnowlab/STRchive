@@ -5,7 +5,7 @@ Short Tandem Repeats (STRs) are a type of genetic variation that are associated 
 [⭐️ View the data at strchive.org ⭐️](http://strchive.org/)
 
 If you use STRchive in your research, please cite:
-Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K., VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H.✉, 2025. STRchive: a dynamic resource detailing population-level and locus-specific insights at tandem repeat disease loci. Genome medicine doi: [https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-025-01454-4].
+Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K., VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H.✉, 2025. STRchive: a dynamic resource detailing population-level and locus-specific insights at tandem repeat disease loci. Genome medicine doi: [https://doi.org/10.1186/s13073-025-01454-4](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-025-01454-4).
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://strchive.org/">STRchive</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/hdashnow">Harriet Dashnow</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
