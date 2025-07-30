@@ -224,6 +224,7 @@ const Table = ({ loci }) => {
       <div className="row">
         <strong>{filteredLoci.length.toLocaleString()} loci</strong>
         <button
+          type="button"
           onClick={() =>
             /** download filtered loci */
             downloadJson(filteredLoci, [

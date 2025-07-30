@@ -65,6 +65,7 @@ const TableOfContents = () => {
         {open && (
           <>
             <button
+              type="button"
               className={classes.button}
               onClick={() => window.scrollTo({ top: 0 })}
             >

@@ -36,7 +36,7 @@ const Dialog = ({ trigger, title, children }) => {
       <dialog ref={ref} className={clsx("col", classes.dialog)}>
         <div className={classes.title}>
           <span>{title}</span>
-          <button onClick={close} autoFocus>
+          <button type="button" onClick={close} autoFocus>
             <FaXmark />
           </button>
         </div>

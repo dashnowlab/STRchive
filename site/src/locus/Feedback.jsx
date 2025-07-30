@@ -3,7 +3,7 @@ import Form from "@/components/Form";
 import TextBox from "@/components/TextBox";
 
 const Feedback = () => (
-  <Dialog title="Dialog" trigger={<button>Open Dialog</button>}>
+  <Dialog title="Dialog" trigger={<button type="button">Open Dialog</button>}>
     <Form onSubmit={console.log}>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -37,7 +37,7 @@ const Feedback = () => (
 
       <TextBox label="Field" name="field" />
 
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </Form>
   </Dialog>
 );
