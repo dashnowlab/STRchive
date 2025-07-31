@@ -3,14 +3,16 @@ import { FaXmark } from "react-icons/fa6";
 import classes from "./TextBox.module.css";
 
 /** text input with label */
-const TextBox = ({ label, onChange, ...props }) => {
+const TextBox = ({ label, multi, onChange, ...props }) => {
   const ref = useRef();
+
+  const Component = multi ? "textarea" : "input";
 
   return (
     <label>
       <span>{label}</span>
       <div className={classes.container}>
-        <input
+        <Component
           ref={ref}
           {...props}
           type="text"

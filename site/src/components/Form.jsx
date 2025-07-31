@@ -1,50 +1,36 @@
-import { useEffect, useRef, useState } from "react";
-
 /** form wrapper around set of fields */
-const Form = ({ onSubmit, ...props }) => {
-  const ref = useRef();
+const Form = ({ onSubmit, ...props }) => (
+  <form
+    style={{ display: "contents" }}
+    onSubmit={(event) => {
+      /** prevent page navigation */
+      event.preventDefault();
 
-  const [inDialog, setInDialog] = useState(false);
+      /** get data from form */
+      const form = event.currentTarget;
+      const formData = new FormData(form);
 
-  useEffect(() => {
-    setInDialog(!!ref.current.closest("dialog"));
-  }, []);
+      const data = {};
 
-  return (
-    <form
-      ref={ref}
-      method={inDialog ? "dialog" : undefined}
-      style={{ display: "contents" }}
-      onSubmit={(event) => {
-        /** prevent page navigation */
-        if (!inDialog) event.preventDefault();
+      /** transform form data into nicer format */
+      for (const [key, value] of formData.entries()) {
+        /** if we can parse as number, do it */
+        if (
+          typeof value === "string" &&
+          value.trim() &&
+          !Number.isNaN(Number(value))
+        )
+          data[key] = Number(value);
+        else
+          /** raw (string) value */
+          data[key] = String(value);
+      }
 
-        /** get data from form */
-        const form = event.currentTarget;
-        const formData = new FormData(form);
-
-        const data = {};
-
-        /** transform form data into nicer format */
-        for (const [key, value] of formData.entries()) {
-          /** if we can parse as number, do it */
-          if (
-            typeof value === "string" &&
-            value.trim() &&
-            !Number.isNaN(Number(value))
-          )
-            data[key] = Number(value);
-          else
-            /** raw (string) value */
-            data[key] = String(value);
-        }
-
-        /** call callback with data */
-        onSubmit(data);
-      }}
-      {...props}
-    />
-  );
-};
+      /** call callback with data */
+      onSubmit(data);
+    }}
+    {...props}
+  />
+);
 
 export default Form;
