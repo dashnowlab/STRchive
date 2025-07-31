@@ -290,12 +290,8 @@ def atarva_catalog(row, genome = 'hg38'):
 
     return bed_string.rstrip('\n')
 
-def expansionhunter_catalog(row, genome = 'hg38'):
-    r"""
-    :param row: dictionary with STR data for a single locus
-    :param genome: genome build (hg19, hg38 or T2T)
-    :return: ExpansionHunter format catalog dictionary for a single locus
-
+def expansionhunter_catalog(row, genome):
+    """
     See format description at https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md
 
     Example from gnomAD:
@@ -336,8 +332,33 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     "ReferenceRegion": ["4:3076604-3076660", "4:3076666-3076693"],
     "VariantType": ["Repeat", "Repeat"]
     }
+    """
+    raise NotImplementedError
 
+    # Optional fields used by gnomAD:
+    # locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
+    # locus_dict['Inheritance'] = row['inheritance']
+    # locus_dict['Gene'] = row['gene']
+    # locus_dict['GeneRegion'] = row['type']
+    # locus_dict['DiscoveryYear'] = row['year']
+    # locus_dict['Diseases'] = [{
+    #     'Symbol': row['disease_id'],
+    #     'Name': row['disease'],
+    #     'Inheritance': row['inheritance'],
+    #     'NormalMax': row['benign_max'],
+    #     'PathogenicMin': row['pathogenic_min']
+    # }]
 
+def stranger_catalog(row, genome = 'hg38'):
+    r"""
+    :param row: dictionary with STR data for a single locus
+    :param genome: genome build (hg19, hg38 or T2T)
+    :return: STRanger format catalog dictionary for a single locus
+
+    Note, the stranger catalog is similar to the ExpansionHunter catalog and in some cases they are used for both purposes.
+    However, the STRanger catalog is for annotation, and in this case is designed to be used with long-read genotype data.
+    It is critical that the start coordinates of the stranger catalog match the start coordinates of the catalog used for genotyping.
+    For this reason, no flanking coordinates are added to the locus structure.
 
     Example from STRanger:
     {
@@ -352,24 +373,38 @@ def expansionhunter_catalog(row, genome = 'hg38'):
         "NormalMax": 50,
         "PathologicMin": 118
     },
+    {
+        "LocusId": "FXN",
+        "HGNCId": 3951,
+        "InheritanceMode": "AR",
+        "DisplayRU": "GAA",
+        "SourceDisplay": "GeneReviews Internet 2019-11-07",
+        "Source": "GeneReviews",
+        "SourceId": "NBK535148",
+        "LocusStructure": "(A)*(GAA)*",
+        "ReferenceRegion": "chr9:69037286-69037304",
+        "VariantId": "FXN",
+        "VariantType": "Repeat",
+        "Disease": "FRDA",
+        "NormalMax": 35,
+        "PathologicMin": 51,
+        "PathologicRegion": "chr9:69037286-69037304"
+    },
 
-    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
-    {'LocusId': 'myid', 'LocusStructure': '(CAG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
+    >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    {'LocusId': 'myid', 'ReferenceRegion': 'chr1:100-200', 'LocusStructure': '(CAG)*', 'VariantType': 'Repeat', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
 
-    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
-    {'LocusId': 'myid', 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'ReferenceRegion': ['chr1:100-200', 'chr1:206-215'], 'VariantType': ['Repeat', 'Repeat'], 'VariantId': ['myid', 'myid_CCG'], 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
+    >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    {'LocusId': 'myid', 'ReferenceRegion': 'chr1:100-200', 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'VariantType': ['Repeat', 'Repeat'], 'VariantId': ['myid', 'myid_CCG'], 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
     """
-
-    # Add flank coordinates to locus structure
-    row['locus_structure'] = add_flank_coordinates(row, genome)
 
     locus_dict = {}
 
-    # Required/standard fields
+    # Required/standard fields from ExpansionHunter:
     locus_dict['LocusId'] = row['id']
+    locus_dict['ReferenceRegion'] = row['chrom'] + ':' + str(row['start_' + genome]) + '-' + str(row['stop_' + genome]) # 0-based coordinates
     if len(row['locus_structure']) > 0:
         locus_dict['LocusStructure'] = ''
-        locus_dict['ReferenceRegion'] = []
         locus_dict['VariantType'] = []
         locus_dict['VariantId'] = [] # used to store the ID of the variant, e.g. myid_CCG for the CCG motif in the locus structure
         for struct_dict in row['locus_structure']:
@@ -377,7 +412,6 @@ def expansionhunter_catalog(row, genome = 'hg38'):
                 locus_dict['LocusStructure'] += f"{struct_dict['motif']*struct_dict['count']}" # interruptions are included in the structure but not in the variant list
             else:
                 locus_dict['LocusStructure'] += f"({struct_dict['motif']})*"
-                locus_dict['ReferenceRegion'].append(f"{row['chrom']}:{struct_dict['start_' + genome]}-{struct_dict['stop_' + genome]}")
                 locus_dict['VariantType'].append('Repeat')
                 if struct_dict['count'] is None:
                     locus_dict['VariantId'].append(row['id'])
@@ -385,11 +419,10 @@ def expansionhunter_catalog(row, genome = 'hg38'):
                     locus_dict['VariantId'].append(f"{row['id']}_{struct_dict['motif']}")
     else:
         locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*" # Just use the first pathogenic motif for the structure
-        locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}" # 0-based coordinates
         locus_dict['VariantType'] = 'Repeat'
 
 
-    # Optional fields used by STRanger:
+    # Fields used by STRanger:
     locus_dict['HGNCId'] = None # Currently not implemented, would require mapping of gene names to HGNC IDs
     locus_dict['InheritanceMode'] = row['inheritance']
     locus_dict['DisplayRU'] = row['pathogenic_motif_reference_orientation'][0] # use first pathogenic motif for display
@@ -397,19 +430,8 @@ def expansionhunter_catalog(row, genome = 'hg38'):
     locus_dict['NormalMax'] = row['benign_max']
     locus_dict['PathologicMin'] = row['pathogenic_min']
 
-    # Optional fields used by gnomAD:
-    # locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
-    # locus_dict['Inheritance'] = row['inheritance']
+    # Optional extra fields:
     locus_dict['Gene'] = row['gene']
-    # locus_dict['GeneRegion'] = row['type']
-    # locus_dict['DiscoveryYear'] = row['year']
-    # locus_dict['Diseases'] = [{
-    #     'Symbol': row['disease_id'],
-    #     'Name': row['disease'],
-    #     'Inheritance': row['inheritance'],
-    #     'NormalMax': row['benign_max'],
-    #     'PathogenicMin': row['pathogenic_min']
-    # }]
 
     return locus_dict
 
@@ -489,7 +511,6 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
         for row in data:
             locus = expansionhunter_catalog(row, genome)
             eh_loci.append(locus)
-
         # Write the catalog as a JSON array
         output = output if output.endswith('.json') else output + '.json'
         with open(output, 'w') as out_json_file:
@@ -497,6 +518,19 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
             options.indent_size = 2
             options.brace_style="expand"
             out_json_file.write(jsbeautifier.beautify(json.dumps(eh_loci, ensure_ascii=False), options))
+            out_json_file.write('\n')
+    elif format.lower() == 'stranger':
+        stranger_loci = []
+        for row in data:
+            locus = stranger_catalog(row, genome)
+            stranger_loci.append(locus)
+        # Write the catalog as a JSON array
+        output = output if output.endswith('.json') else output + '.json'
+        with open(output, 'w') as out_json_file:
+            options = jsbeautifier.default_options()
+            options.indent_size = 2
+            options.brace_style="expand"
+            out_json_file.write(jsbeautifier.beautify(json.dumps(stranger_loci, ensure_ascii=False), options))
             out_json_file.write('\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
