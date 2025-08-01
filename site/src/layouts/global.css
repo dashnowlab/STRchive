@@ -171,6 +171,7 @@ dt {
 a {
   color: var(--primary);
   transition: color var(--fast);
+  overflow-wrap: break-word;
 }
 
 a:hover {
