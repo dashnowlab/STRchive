@@ -9,39 +9,42 @@ import {
 import classes from "./Dialog.module.css";
 
 const Dialog = ({ trigger, title, children }) => {
-  const ref = useRef(null);
+  const dialogRef = useRef(null);
+  const boxRef = useRef(null);
   const [, setIsOpen] = useState(false);
 
   const [, setLock] = useScrollLock(document.body);
 
   const open = () => {
     setIsOpen(true);
-    ref.current?.showModal();
+    dialogRef.current?.showModal();
     setLock(true);
   };
 
   const close = () => {
     setIsOpen(false);
-    ref.current?.close();
+    dialogRef.current?.close();
     setLock(false);
   };
 
-  useEventListener("close", () => setIsOpen(false), ref);
-  useClickOutside(ref, close);
+  useEventListener("close", () => setIsOpen(false), dialogRef);
+  useClickOutside(boxRef, close);
 
   return (
     <>
       {cloneElement(trigger, { onClick: open })}
 
-      <dialog ref={ref} className={clsx("col", classes.dialog)}>
-        <div className={classes.title}>
-          <span>{title}</span>
-          <button type="button" onClick={close} autoFocus>
-            <FaXmark />
-          </button>
-        </div>
+      <dialog ref={dialogRef} className={clsx("col", classes.dialog)}>
+        <div ref={boxRef} className={clsx("col", classes.box)}>
+          <div className={classes.title}>
+            <span>{title}</span>
+            <button type="button" onClick={close} autoFocus>
+              <FaXmark />
+            </button>
+          </div>
 
-        <div className={clsx("col", classes.content)}>{children}</div>
+          <div className={clsx("col", classes.body)}>{children}</div>
+        </div>
       </dialog>
     </>
   );

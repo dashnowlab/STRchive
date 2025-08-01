@@ -1,29 +1,29 @@
 .dialog {
-  z-index: 9;
+  display: none;
   position: fixed;
+  width: 100vw;
+  max-width: unset;
+  height: 100vh;
+  max-height: unset;
+  margin: 0;
+  inset: 0;
+  padding: 0;
+  border: none;
+  background: var(--shadow);
+}
 
+.dialog[open] {
+  display: grid;
+}
+
+.box {
   max-width: min(calc(100vw - 80px), var(--content));
   max-height: calc(100vh - 80px);
   margin: auto;
-  inset: 0;
   padding: 20px;
-  border: none;
   border-radius: var(--rounded);
   background: var(--white);
   box-shadow: var(--box-shadow);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--fast);
-}
-
-.dialog:open {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.dialog::backdrop {
-  background: var(--shadow);
-  pointer-events: none;
 }
 
 .title {
@@ -40,6 +40,6 @@
   padding: 5px;
 }
 
-.content {
+.body {
   overflow-y: auto;
 }

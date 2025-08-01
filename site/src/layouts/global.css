@@ -158,13 +158,15 @@ dl {
   gap: 10px;
 }
 
+dt,
 dd {
   display: inline-flex;
   margin: 0;
 }
 
 dt {
-  display: inline-flex;
+  color: var(--gray);
+  font-weight: var(--medium);
 }
 
 a {
@@ -215,6 +217,17 @@ label {
   gap: 5px;
 }
 
+label span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+label:has([required]) span::after {
+  content: "*";
+  color: var(--secondary);
+}
+
 label:has(input, textarea, select) {
   cursor: pointer;
 }
@@ -242,9 +255,15 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+details {
+  max-width: fit-content;
+}
+
 summary {
-  margin: 0;
+  display: flex;
+  appearance: none;
   padding: 5px 10px;
+  gap: 10px;
   border-radius: var(--rounded);
   background: var(--light-gray);
   list-style: none;
@@ -254,19 +273,19 @@ summary {
     color var(--fast);
 }
 
-summary::marker,
-summary::-webkit-details-marker {
-  display: none;
+details[open] summary {
+  margin-bottom: 10px;
 }
 
 summary::before {
-  padding: 10px;
-  content: "►";
-  opacity: 0.25;
+  display: inline-block;
+  rotate: 90deg;
+  content: "⌃";
+  opacity: 0.5;
 }
 
 details[open] summary::before {
-  content: "▼";
+  rotate: 180deg;
 }
 
 summary:hover {
@@ -384,7 +403,7 @@ td {
 }
 
 .tippy-arrow {
-  z-index: 99;
+  z-index: 1;
   color: var(--dark-gray);
 }
 

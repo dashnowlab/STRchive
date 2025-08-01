@@ -1,3 +1,5 @@
+import { FaPaperPlane } from "react-icons/fa6";
+import { Fragment } from "react/jsx-runtime";
 import clsx from "clsx";
 import { mapValues, startCase, truncate } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
@@ -10,6 +12,7 @@ import { sleep } from "@/util/misc";
 import { shortenUrl } from "@/util/string";
 import Alert from "./Alert";
 import classes from "./Feedback.module.css";
+import Help from "./Help";
 import Link from "./Link";
 
 const Feedback = () => {
@@ -84,18 +87,68 @@ const Feedback = () => {
   return (
     <Form onSubmit={submit}>
       <div className={clsx("col", classes.feedback)}>
-        <TextBox label="Name" value={name} onChange={setName} />
-        <TextBox label="Username" value={username} onChange={setUsername} />
-        <TextBox label="Email" value={email} onChange={setEmail} />
+        <TextBox
+          label={
+            <>
+              Name<Help>Optional. So we know who you are.</Help>
+            </>
+          }
+          placeholder="Your Name"
+          value={name}
+          onChange={setName}
+        />
+        <TextBox
+          label={
+            <>
+              Username
+              <Help>
+                Optional. So we can tag you in the post and you can follow it.
+              </Help>
+            </>
+          }
+          placeholder="@username"
+          value={username}
+          onChange={setUsername}
+        />
+        <TextBox
+          label={
+            <>
+              Email
+              <Help>Optional. So we can contact you directly if needed.</Help>
+            </>
+          }
+          placeholder="your.name@email.com"
+          value={email}
+          onChange={setEmail}
+        />
         <TextBox
           label="Feedback"
+          placeholder="Comments, questions, issues, bugs, etc."
           value={feedback}
           onChange={setFeedback}
           multi
+          required
         />
       </div>
 
-      {status === "" && <button type="submit">Submit</button>}
+      <details>
+        <summary>Included details</summary>
+        <dl>
+          {Object.entries(details).map(([key, value]) => (
+            <Fragment key={key}>
+              <dt>{key}</dt>
+              <dd>{value}</dd>
+            </Fragment>
+          ))}
+        </dl>
+        <span>test</span>
+      </details>
+
+      {status === "" && (
+        <button type="submit">
+          <FaPaperPlane /> Submit
+        </button>
+      )}
 
       {status !== "" && (
         <Alert type={status}>

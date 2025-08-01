@@ -2,11 +2,16 @@
   position: relative;
 }
 
+.container input,
+.container textarea {
+  padding-right: 40px;
+}
+
 .container:has(textarea) {
-  resize: both;
-  overflow: hidden;
-  min-height: 80px;
   height: 120px;
+  min-height: 80px;
+  overflow: hidden;
+  resize: both;
 }
 
 .container textarea {

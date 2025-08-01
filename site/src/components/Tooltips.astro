@@ -14,7 +14,6 @@
     duration: [100, 100],
     offset: [0, 15],
     allowHTML: true,
-    appendTo: document.body,
     hideOnClick: false,
 
     /** for debugging */
@@ -50,8 +49,10 @@
     /** don't show if content blank */
     if (!content) return element._tippy?.destroy();
 
+    const appendTo = element.closest("dialog") || document.body;
+
     /** get existing tippy instance or create new */
-    const instance = element._tippy ?? tippy(element, options);
+    const instance = element._tippy ?? tippy(element, { ...options, appendTo });
 
     /** update tippy content */
     instance.setContent(content);
