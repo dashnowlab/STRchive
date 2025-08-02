@@ -1,95 +1,253 @@
 
-PMID- 40570888
+PMID- 40653294
 OWN - NLM
 STAT- Publisher
-LR  - 20250626
-IS  - 1361-6528 (Electronic)
-IS  - 0957-4484 (Linking)
-DP  - 2025 Jun 26
-TI  - Computer Vision Techniques for High-Speed Atomic Force Microscopy of DNA 
-      Molecules.
-LID - 10.1088/1361-6528/ade888 [doi]
-AB  - High- speed atomic force microscopy (HSAFM) can produce thousands of topographic, 
-      nanoscale images over a small area. One emerging application of this technique is 
-      the detection and sizing of single DNA molecules derived from biological 
-      experiments and genetic testing. Using HSAFM images, researchers can visually 
-      categorize healthy and mutant DNA based on size and sequence-specific labelling, 
-      leading to rapid, high precision diagnostics. However, manually sifting through 
-      large numbers of images is time consuming and labor intensive, presenting a 
-      bottleneck for sample analysis. In this paper we look at how deep learning 
-      methods like object detection and image classification can assist in streamlining 
-      the process. To instantly assess image quality on data collected from 
-      trinucleotide repeat expansion disease samples, a fully convolutional network 
-      (FCN) was compared against Laplacian of Gaussian (LOG) and fast Fourier Transform 
-      (FFT) methods. The FCN performed the best, reproducing human categorizations with 
-      an accuracy of 96% and an AUC of 0.990. Additionally, using the YOLOv8 
-      architecture, we have developed an object detection model capable of detecting 
-      marked DNA enriched from the FMR1 gene locus, which is mutated in from patients 
-      with Fragile X syndrome, with an average precision (AP) of 0.966. The integration 
-      of machine learning techniques in HSAFM systems shows promise to enhance the data 
-      collection and analysis process for genomics-based disease diagnosis.
-CI  - Creative Commons Attribution license.
-FAU - Driver, Nicholas
-AU  - Driver N
-AUID- ORCID: 0000-0002-3164-3178
-AD  - Department of Physics, Virginia Commonwealth University, 701 W Grace St, 
-      Richmond, Virginia, 23284-2512, UNITED STATES.
-FAU - Mikheykin, Andrey
-AU  - Mikheykin A
-AD  - Department of Physics, Virginia Commonwealth University, 701 West Grace St, 
-      Richmond, Virginia, 23284-2512, UNITED STATES.
-FAU - Kobley, Sean
-AU  - Kobley S
-AD  - Department of Physics, Virginia Commonwealth University, 701 West Grace St, 
-      Richmond, Virginia, 23284-2512, UNITED STATES.
-FAU - Mostashari, Morteza
-AU  - Mostashari M
-AUID- ORCID: 0009-0002-5539-4951
-AD  - Physics, Virginia Commonwealth University, 701 W Grace St, Richmond, Virginia, 
-      23284-2512, UNITED STATES.
-FAU - Picco, Loren
-AU  - Picco L
-AUID- ORCID: 0000-0002-3758-0972
-AD  - Department of Physics, University of Bristol, Royal Fort, Tyndall Avenue, 
-      Bristol, BS8 1TL, Bristol, England, BS8 1QU, UNITED KINGDOM OF GREAT BRITAIN AND 
-      NORTHERN IRELAND.
-FAU - Berger, Seth
-AU  - Berger S
-AD  - Children's National Medical Center, 111 Michigan Ave NW, Washington, District of 
-      Columbia, 20010-2916, UNITED STATES.
-FAU - Reed, Jason
-AU  - Reed J
-AUID- ORCID: 0000-0002-3314-8699
-AD  - Department of Physics, Virginia Commonwealth University, 701 W Grace St, 
-      Richmond, Virginia, 23284-2512, UNITED STATES.
+LR  - 20250719
+IS  - 1096-0309 (Electronic)
+IS  - 0003-2697 (Linking)
+VI  - 706
+DP  - 2025 Jul 11
+TI  - Oxford Nanopore third generation sequencing for analysis of FMR1 5'UTR CGG repeat 
+      expansions.
+PG  - 115931
+LID - S0003-2697(25)00170-8 [pii]
+LID - 10.1016/j.ab.2025.115931 [doi]
+AB  - OBJECTIVE: Fragile X syndrome is mainly caused by the expansion of GC-rich 
+      cytosine-guanine-guanine (CGG) repeat in FMR1 5'UTR region, as well as rare gene 
+      point mutations or deletions in its open reading frame. Currently, 
+      third-generation long-read sequencing is a potential technology for 
+      simultaneously detecting CGG repeat expansions, point mutations, and deletions. 
+      However, a major challenge remains in obtaining the target long-fragment CGG 
+      repeat region with ultra-high GC content for sequencing. METHODS: We developed a 
+      novel approach combining long-fragment ultra-high GC polymerase chain reaction 
+      (PCR) amplification with Oxford Nanopore sequencing to detect the full spectrum 
+      of FMR1 5'UTR CGG repeat mutations. The method was validated using 10 standard 
+      cell line samples (males: n(normal) = 1, n(intermediate) = 1, 
+      n(pre-mutation) = 1, and n(full mutation) = 2; females: n(normal) = 1, 
+      n(intermediate) = 1, n(pre-mutation) = 2, and n(full mutation) = 1) and 53 
+      retrospective clinical blood samples (males: n(normal) = 7, n(pre-mutation) = 3, 
+      n(full mutation) = 15, and n(mosaic)(mutaion) = 2; females: n(normal) = 9, 
+      n(pre-mutation) = 13, and n(full mutation) = 4). RESULTS: Our method demonstrated 
+      that the 100 % concordance with the triplet repeat-primed PCR and Southern blot 
+      analysis in genotyping 10 cell line samples and 53 clinical samples. 
+      Additionally, CGG repeat numbers showed strong correlation with reference mehods 
+      (male cell lines, n = 5, R(2) = 0.9996; female cell lines, n = 5, R(2) = 0.9972; 
+      clinical male samples, n = 26, R(2) = 1.0000; clinical female samples, n = 25, 
+      R(2) = 0.9854). CONCLUSION: This study presents a simple and cost-effective 
+      strategy for preparing FMR1 5'UTR CGG repeat regions with long-fragment 
+      ultra-high GC content for third-generation sequencing. The approach could serve 
+      as a model for detecting other challenging disorders caused by short tandem 
+      repeat expansions, such as myotonic dystrophy and Huntington' s disease.
+CI  - Copyright (c) 2025 Elsevier Inc. All rights reserved.
+FAU - Yang, Xu
+AU  - Yang X
+AD  - Institute of Antibody Engineering, School of Laboratory Medicine and 
+      Biotechnology, Southern Medical University, Guangzhou, China; Guangzhou Darui 
+      Biotechnology Co., Ltd., Guangzhou, China.
+FAU - Han, Bowei
+AU  - Han B
+AD  - Institute of Antibody Engineering, School of Laboratory Medicine and 
+      Biotechnology, Southern Medical University, Guangzhou, China.
+FAU - Huang, Jie
+AU  - Huang J
+AD  - Department of in vitro Diagnostic Reagent, National Institutes for Food and Drug 
+      Control, Beijing, China.
+FAU - Zhang, Min
+AU  - Zhang M
+AD  - Institute of Antibody Engineering, School of Laboratory Medicine and 
+      Biotechnology, Southern Medical University, Guangzhou, China.
+FAU - Weng, Shi
+AU  - Weng S
+AD  - Institute of Antibody Engineering, School of Laboratory Medicine and 
+      Biotechnology, Southern Medical University, Guangzhou, China.
+FAU - Ouyang, Guojun
+AU  - Ouyang G
+AD  - Guangzhou Darui Biotechnology Co., Ltd., Guangzhou, China.
+FAU - Han, Wanqing
+AU  - Han W
+AD  - Guangzhou Darui Biotechnology Co., Ltd., Guangzhou, China.
+FAU - Wang, Wenyu
+AU  - Wang W
+AD  - Guangzhou Darui Biotechnology Co., Ltd., Guangzhou, China.
+FAU - Zhang, Li
+AU  - Zhang L
+AD  - Guangzhou Darui Biotechnology Co., Ltd., Guangzhou, China.
+FAU - Chen, Juanjuan
+AU  - Chen J
+AD  - School of Laboratory Medicine and Biotechnology, Southern Medical University, 
+      Guangzhou, China.
+FAU - Du, Juan
+AU  - Du J
+AD  - Institute of Reproductive and Stem Cell Engineering, School of Basic Medical 
+      Science, Central South University, Changsha, China; Reproductive and Genetic 
+      Hospital of CITIC-Xiangya, Changsha, China; National Engineering and Research 
+      Center of Human Stem Cells, Changsha, China. Electronic address: 
+      tandujuan@csu.edu.cn.
+FAU - Wu, Yingsong
+AU  - Wu Y
+AD  - Institute of Antibody Engineering, School of Laboratory Medicine and 
+      Biotechnology, Southern Medical University, Guangzhou, China. Electronic address: 
+      wg@smu.edu.cn.
+FAU - Yang, Xuexi
+AU  - Yang X
+AD  - Institute of Antibody Engineering, School of Laboratory Medicine and 
+      Biotechnology, Southern Medical University, Guangzhou, China. Electronic address: 
+      yxx1214@smu.edu.cn.
 LA  - eng
 PT  - Journal Article
-DEP - 20250626
-PL  - England
-TA  - Nanotechnology
-JT  - Nanotechnology
-JID - 101241272
+DEP - 20250711
+PL  - United States
+TA  - Anal Biochem
+JT  - Analytical biochemistry
+JID - 0370535
 SB  - IM
 OTO - NOTNLM
-OT  - Atomic Force Microscopy
-OT  - CRISPR
-OT  - DNA
-OT  - Inherited Disease
-OT  - Neural Network
-EDAT- 2025/06/27 00:28
-MHDA- 2025/06/27 00:28
-CRDT- 2025/06/26 18:52
-PHST- 2025/06/27 00:28 [medline]
-PHST- 2025/06/27 00:28 [pubmed]
-PHST- 2025/06/26 18:52 [entrez]
-AID - 10.1088/1361-6528/ade888 [doi]
+OT  - CGG repeat expansion
+OT  - FMR1
+OT  - Long read
+OT  - Oxford Nanopore sequencing
+OT  - Ultra-high GC
+COIS- Declaration of competing interest The authors have no relevant financial interest 
+      in the products or companies described in this article. All authors consent for 
+      publication.
+EDAT- 2025/07/14 00:28
+MHDA- 2025/07/14 00:28
+CRDT- 2025/07/13 19:37
+PHST- 2025/06/01 00:00 [received]
+PHST- 2025/06/27 00:00 [revised]
+PHST- 2025/07/07 00:00 [accepted]
+PHST- 2025/07/14 00:28 [pubmed]
+PHST- 2025/07/14 00:28 [medline]
+PHST- 2025/07/13 19:37 [entrez]
+AID - S0003-2697(25)00170-8 [pii]
+AID - 10.1016/j.ab.2025.115931 [doi]
 PST - aheadofprint
-SO  - Nanotechnology. 2025 Jun 26. doi: 10.1088/1361-6528/ade888.
+SO  - Anal Biochem. 2025 Jul 11;706:115931. doi: 10.1016/j.ab.2025.115931.
+
+PMID- 40600017
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250702
+LR  - 20250703
+IS  - 1664-2392 (Print)
+IS  - 1664-2392 (Electronic)
+IS  - 1664-2392 (Linking)
+VI  - 16
+DP  - 2025
+TI  - The association of CGG repeat length and AGG interruption patterns on FMR1 
+      alleles with female infertility.
+PG  - 1609471
+LID - 10.3389/fendo.2025.1609471 [doi]
+LID - 1609471
+AB  - BACKGROUND: The aim of the present study was to investigate whether the CGG 
+      repeat length and AGG interruption patterns on the FMR1 gene affect female 
+      fecundity. METHODS: A total of 266 infertile patients and 276 fertile controls 
+      were included in the study. All participants received FMR1 testing using triplet 
+      repeat primed PCR and capillary electrophoresis. The allele with the smaller 
+      number of CGG repeats was defined as "allele 1", and the allele with the larger 
+      number of CGG repeats was defined as "allele 2". RESULTS: The mean number of CGG 
+      repeat length at allele 2 in the secondary infertility group was higher than that 
+      in the control group (33.1 +/- 6.7 vs 30.9 +/- 3.3, Bonferroni corrected p=0.003). 
+      The proportion of 35-44 CGG repeat at both FMR1 alleles showed a higher trend in 
+      the secondary infertility group as compared to the control group after adjusting 
+      for age, education, smoking status, cohort and the CGG repeats of the other FMR1 
+      allele (aOR=7.812, 95% CI 0.884-69.001; p=0.064 for allele 1; aOR=3.657, 95% CI 
+      2.193-6.098; p<0.001 for allele 2, respectively). Lower AMH levels were 
+      associated with increased CGG repeat length at allele 1 in infertile patients 
+      (Adjusted R(2) = 0.178, p=0.003) after adjusting for age, education, smoking 
+      status, infertility type and the CGG repeats of FMR1 allele 2. However, no 
+      significant correlation was found between the number of CGG repeats at allele 2 
+      and AMH levels (Adjusted R(2) = 0.150, p=0.086). Although the difference was not 
+      statistically significant, there was a higher proportion of 3 AGG interruptions 
+      at both alleles in the secondary infertility group as compared to the control 
+      group (6.1% vs 0%, p=0.146 for allele 1, 30.6% vs 11.3%, p=0.099 for allele 2). 
+      Patients with 35-44 CGG repeat length showed a higher carrier rate of 3 AGG 
+      interruptions at both alleles (p<0.001 for both). CONCLUSIONS: Overall, the high 
+      normal sized (35-44 CGG) repeat length at both FMR1 alleles may serve a promoting 
+      role in the development of secondary infertility in Asian women. In addition, the 
+      CGG repeat length at allele 1 appears to have a mild correlation with AMH levels 
+      in infertile patients.
+CI  - Copyright (c) 2025 Xuanyou, Naixin, Xianling, Weihui, Shuyuan, Songchang and 
+      Chenming.
+FAU - Xuanyou, Zhou
+AU  - Xuanyou Z
+AD  - Obstetrics and Gynecology Hospital, Institute of Reproduction and Development, 
+      Fudan University, Shanghai, China.
+FAU - Naixin, Xu
+AU  - Naixin X
+AD  - Departments of Obstetrics and Gynecology, Peking Union Medical College Hospital, 
+      Chinese Academy of Medical Sciences and Peking Union Medical College, Beijing, 
+      China.
+AD  - Research Units of Embryo Original Diseases, Chinese Academy of Medical Sciences, 
+      Shanghai, China.
+FAU - Xianling, Cao
+AU  - Xianling C
+AD  - Obstetrics and Gynecology Hospital, Institute of Reproduction and Development, 
+      Fudan University, Shanghai, China.
+FAU - Weihui, Shi
+AU  - Weihui S
+AD  - Obstetrics and Gynecology Hospital, Institute of Reproduction and Development, 
+      Fudan University, Shanghai, China.
+FAU - Shuyuan, Li
+AU  - Shuyuan L
+AD  - International Peace Maternity and Child Health Hospital, School of Medicine, 
+      Shanghai Jiao Tong University, Shanghai, China.
+FAU - Songchang, Chen
+AU  - Songchang C
+AD  - Obstetrics and Gynecology Hospital, Institute of Reproduction and Development, 
+      Fudan University, Shanghai, China.
+FAU - Chenming, Xu
+AU  - Chenming X
+AD  - Obstetrics and Gynecology Hospital, Institute of Reproduction and Development, 
+      Fudan University, Shanghai, China.
+LA  - eng
+PT  - Journal Article
+DEP - 20250617
+PL  - Switzerland
+TA  - Front Endocrinol (Lausanne)
+JT  - Frontiers in endocrinology
+JID - 101555782
+RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
+SB  - IM
+MH  - Humans
+MH  - Female
+MH  - *Fragile X Mental Retardation Protein/genetics
+MH  - Adult
+MH  - *Infertility, Female/genetics
+MH  - *Alleles
+MH  - *Trinucleotide Repeats/genetics
+MH  - Case-Control Studies
+MH  - *Trinucleotide Repeat Expansion
+PMC - PMC12208826
+OTO - NOTNLM
+OT  - AGG interruption
+OT  - FMR1 gene
+OT  - allele 1
+OT  - female fecundity
+OT  - fragile X screening
+COIS- The authors declare that the research was conducted in the absence of any 
+      commercial or financial relationships that could be construed as a potential 
+      conflict of interest.
+EDAT- 2025/07/02 11:22
+MHDA- 2025/07/02 12:29
+PMCR- 2025/06/17
+CRDT- 2025/07/02 05:28
+PHST- 2025/04/10 00:00 [received]
+PHST- 2025/05/21 00:00 [accepted]
+PHST- 2025/07/02 12:29 [medline]
+PHST- 2025/07/02 11:22 [pubmed]
+PHST- 2025/07/02 05:28 [entrez]
+PHST- 2025/06/17 00:00 [pmc-release]
+AID - 10.3389/fendo.2025.1609471 [doi]
+PST - epublish
+SO  - Front Endocrinol (Lausanne). 2025 Jun 17;16:1609471. doi: 
+      10.3389/fendo.2025.1609471. eCollection 2025.
 
 PMID- 40534679
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250620
+LR  - 20250708
 IS  - 2575-9108 (Electronic)
 IS  - 2575-9108 (Linking)
 VI  - 8
@@ -318,8 +476,9 @@ SO  - Brain Commun. 2025 May 17;7(3):fcaf188. doi: 10.1093/braincomms/fcaf188.
 PMID- 40480633
 OWN - NLM
 STAT- Publisher
-LR  - 20250627
+LR  - 20250713
 IS  - 1083-351X (Electronic)
+IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
 VI  - 301
 IP  - 7
@@ -329,6 +488,7 @@ TI  - Interactome of FMRP-N-tat therapeutic unveils key interactions for cellula
 PG  - 110341
 LID - S0021-9258(25)02191-X [pii]
 LID - 10.1016/j.jbc.2025.110341 [doi]
+LID - 110341
 AB  - Therapeutic protein replacement has demonstrated preclinical and clinical 
       efficacy in neurological disorders but has not been used clinically for Fragile X 
       syndrome (FXS), a genetic neurodevelopmental disorder caused by loss of Fragile X 
@@ -399,6 +559,7 @@ TA  - J Biol Chem
 JT  - The Journal of biological chemistry
 JID - 2985121R
 SB  - IM
+PMC - PMC12246597
 OTO - NOTNLM
 OT  - FMRP
 OT  - Fragile X syndrome
@@ -412,13 +573,16 @@ COIS- Conflict of interest The authors declare the following financial
       1/10/2019). The other authors declare no conflict of interest.
 EDAT- 2025/06/07 16:44
 MHDA- 2025/06/07 16:44
+PMCR- 2025/06/04
 CRDT- 2025/06/06 19:42
 PHST- 2025/05/14 00:00 [received]
 PHST- 2025/05/31 00:00 [accepted]
 PHST- 2025/06/07 16:44 [pubmed]
 PHST- 2025/06/07 16:44 [medline]
 PHST- 2025/06/06 19:42 [entrez]
+PHST- 2025/06/04 00:00 [pmc-release]
 AID - S0021-9258(25)02191-X [pii]
+AID - 110341 [pii]
 AID - 10.1016/j.jbc.2025.110341 [doi]
 PST - aheadofprint
 SO  - J Biol Chem. 2025 Jun 4;301(7):110341. doi: 10.1016/j.jbc.2025.110341.
@@ -521,7 +685,7 @@ SO  - Ann Neurol. 2025 Jun 3. doi: 10.1002/ana.27267.
 PMID- 40455869
 OWN - NLM
 STAT- Publisher
-LR  - 20250602
+LR  - 20250718
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 DP  - 2025 Jun 2
@@ -616,6 +780,7 @@ TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
 SB  - IM
+CIN - Brain. 2025 Jul 18:awaf265. doi: 10.1093/brain/awaf265. PMID: 40681964
 OTO - NOTNLM
 OT  - anxiety
 OT  - fragile X-associated neuropsychiatric disorders (FXAND)
@@ -639,7 +804,7 @@ SO  - Brain. 2025 Jun 2:awaf203. doi: 10.1093/brain/awaf203.
 PMID- 40418066
 OWN - NLM
 STAT- Publisher
-LR  - 20250526
+LR  - 20250723
 IS  - 1552-485X (Electronic)
 IS  - 1552-4841 (Linking)
 DP  - 2025 May 26
@@ -706,6 +871,7 @@ AU  - Roberts JE
 AD  - Department of Psychology, University of South Carolina, Columbia, South Carolina, 
       USA.
 LA  - eng
+GR  - P50 HD103526/HD/NICHD NIH HHS/United States
 GR  - NH/NIH HHS/United States
 PT  - Journal Article
 DEP - 20250526
@@ -740,40 +906,44 @@ SO  - Am J Med Genet B Neuropsychiatr Genet. 2025 May 26:e33033. doi:
 PMID- 40417743
 OWN - NLM
 STAT- Publisher
-LR  - 20250526
+LR  - 20250721
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Linking)
+VI  - 27
+IP  - 8
 DP  - 2025 May 22
 TI  - A genome-wide approach for the discovery of novel repeat expansion disorders in 
       the Undiagnosed Diseases Network cohort.
 PG  - 101462
 LID - S1098-3600(25)00109-1 [pii]
 LID - 10.1016/j.gim.2025.101462 [doi]
-AB  - Purpose The Undiagnosed Diseases Network (UDN) is a National Institutes of Health 
+AB  - PURPOSE: The Undiagnosed Diseases Network is a National Institutes of Health 
       funded research study that aims to solve a broad clinical spectrum of challenging 
       rare disease cases. Participants receive care from multiple clinical specialists, 
-      who collaborate to perform deep phenotyping and state-of-the-art multi-omics 
+      who collaborate to perform deep phenotyping and state-of-the-art multiomics 
       analyses. As bioinformatics of short-read sequencing has matured, the discovery 
-      of repeat expansion disorders (REDs) is accelerating. REDs comprise  approximately 60 
-      characterized disorders, which exhibit a broad spectrum of phenotypes. Thus, a 
+      of repeat expansion disorders (REDs) is accelerating. REDs comprise approximately 
+      60 characterized disorders, which exhibit a broad spectrum of phenotypes. Thus, a 
       largely unbiased genome-wide approach in a phenotypically diverse sample will add 
       to the diagnostic depth, explore the limits of short-read genome analysis, and 
-      establish novel candidate RED loci. Methods Here, we present a genome-wide 
-      analysis of repeat expansions conducted on 1,018 genomes from the UDN. By 
-      leveraging two distinct bioinformatics tools, ExpansionHunter Denovo and STRling, 
-      we show that repeat expansions can be accurately detected in short-read genomes. 
-      Results We demonstrate that a genotype-first approach can diagnose atypical cases 
-      of known REDs and provide valuable clinical insights. We present clinical details 
-      on participants with expansions in ATXN7, DMPK, FMR1, GLS, HTT, RFC1, AFF3, and 
-      MARCH6. Importantly, we highlight two cases of juvenile Huntington disease that 
-      were discovered through our analysis. Finally, we present a list of novel 
-      candidate TRs that could potentially be pathogenic if expanded. Conclusion 
-      Importantly, our approach showcases the bioinformatic advancements in genome 
-      analysis for RED detection and highlights its practical applications.
-CI  - Copyright (c) 2025. Published by Elsevier Inc.
+      establish novel candidate RED loci. METHODS: Here, we present a genome-wide 
+      analysis of repeat expansions conducted on 1018 genomes from the Undiagnosed 
+      Diseases Network. By leveraging 2 distinct bioinformatics tools, ExpansionHunter 
+      Denovo and STRling, we showed that repeat expansions can be accurately detected 
+      in short-read genomes. RESULTS: We demonstrated that a genotype-first approach 
+      can diagnose atypical cases of known REDs and provide valuable clinical insights. 
+      We present clinical details on participants with expansions in ATXN7, DMPK, FMR1, 
+      GLS, HTT, RFC1, AFF3, and MARCH6. Importantly, we highlight 2 cases of juvenile 
+      Huntington disease that were discovered through our analysis. Finally, we present 
+      a list of novel candidate short tandem repeats (TR) that could potentially be 
+      pathogenic if expanded. CONCLUSION: Importantly, our approach showcases the 
+      bioinformatic advancements in genome analysis for RED detection and highlights 
+      its practical applications.
+CI  - Copyright (c) 2025 American College of Medical Genetics and Genomics. Published by 
+      Elsevier Inc. All rights reserved.
 FAU - Fazal, Sarah
 AU  - Fazal S
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Dashnow, Harriet
@@ -781,13 +951,13 @@ AU  - Dashnow H
 AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
 FAU - Dohrn, Maike F
 AU  - Dohrn MF
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL; Department of Neurology, RWTH Aachen University Faculty of Medicine, 
       Aachen, Germany.
 FAU - Raposo, Jacquelyn
 AU  - Raposo J
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Hiatt, Laurel
@@ -795,12 +965,12 @@ AU  - Hiatt L
 AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
 FAU - Danzi, Matt C
 AU  - Danzi MC
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Xu, Isaac R L
 AU  - Xu IRL
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Toro, Camilo
@@ -837,18 +1007,18 @@ AD  - Division of Medical Genetics, Department of Pediatrics, Duke University Sc
       Medicine, Durham, NC.
 FAU - Rebelo, Adriana
 AU  - Rebelo A
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Bademci, Guney
 AU  - Bademci G
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 CN  - Undiagnosed Diseases Network
 FAU - Tekin, Mustafa
 AU  - Tekin M
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL.
 FAU - Quinlan, Aaron R
@@ -856,10 +1026,11 @@ AU  - Quinlan AR
 AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT.
 FAU - Zuchner, Stephan
 AU  - Zuchner S
-AD  - Dr. John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
+AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. Hussman 
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
-      Miami, FL.
+      Miami, FL. Electronic address: szuchner@med.miami.edu.
 LA  - eng
+GR  - U01 NS134353/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20250522
 PL  - United States
@@ -869,22 +1040,659 @@ JT  - Genetics in medicine : official journal of the American College of Medical
 JID - 9815831
 SB  - IM
 OTO - NOTNLM
-OT  - bioinformatics
-OT  - repeat expansion
-OT  - undiagnosed
+OT  - Bioinformatics
+OT  - Rare disease
+OT  - Rare diseases
+OT  - Short tandem repeats
+OT  - Tandem repeat expansion disorders
+COIS- Conflict of Interest The authors declare no conflicts of interest.
+FIR - Quinlan, Aaron
+IR  - Quinlan A
+FIR - Elkadri, Abdul
+IR  - Elkadri A
+FIR - Vanderver, Adeline
+IR  - Vanderver A
+FIR - Rebelo, Adriana
+IR  - Rebelo A
+FIR - Beggs, Alan H
+IR  - Beggs AH
+FIR - La Spada, Albert R
+IR  - La Spada AR
+FIR - Huang, Alden
+IR  - Huang A
+FIR - Paul, Alex
+IR  - Paul A
+FIR - Miller, Alexander
+IR  - Miller A
+FIR - Al-Beshri, Ali
+IR  - Al-Beshri A
+FIR - Ward, Alistair
+IR  - Ward A
+FIR - Bale, Allen
+IR  - Bale A
+FIR - McConkie-Rosell, Allyn
+IR  - McConkie-Rosell A
+FIR - Tran, Alyssa A
+IR  - Tran AA
+FIR - Gropman, Andrea
+IR  - Gropman A
+FIR - Vargas, Andres
+IR  - Vargas A
+FIR - Crouse, Andrew B
+IR  - Crouse AB
+FIR - Stergachis, Andrew
+IR  - Stergachis A
+FIR - Hurst, Anna
+IR  - Hurst A
+FIR - Raper, Anna
+IR  - Raper A
+FIR - Tarakad, Arjun
+IR  - Tarakad A
+FIR - Andrews, Ashley
+IR  - Andrews A
+FIR - McMinn, Ashley
+IR  - McMinn A
+FIR - Balasubramanyam, Ashok
+IR  - Balasubramanyam A
+FIR - Pusey Swerdzewski, Barbara N
+IR  - Pusey Swerdzewski BN
+FIR - Anguiano, Beatriz
+IR  - Anguiano B
+FIR - Afzali, Ben
+IR  - Afzali B
+FIR - Solomon, Ben
+IR  - Solomon B
+FIR - Martin, Beth A
+IR  - Martin BA
+FIR - Russell, Bianca E
+IR  - Russell BE
+FIR - Wilk, Brandon M
+IR  - Wilk BM
+FIR - Mitchell, Breanna
+IR  - Mitchell B
+FIR - Lanpher, Brendan C
+IR  - Lanpher BC
+FIR - Lee, Brendan H
+IR  - Lee BH
+FIR - Fogel, Brent L
+IR  - Fogel BL
+FIR - Bordini, Brett
+IR  - Bordini B
+FIR - Graham, Brett H
+IR  - Graham BH
+FIR - Corner, Brian
+IR  - Corner B
+FIR - Tucker, Brianna
+IR  - Tucker B
+FIR - Korf, Bruce
+IR  - Korf B
+FIR - MacRae, Calum A
+IR  - MacRae CA
+FIR - Toro, Camilo
+IR  - Toro C
+FIR - Skraban, Cara
+IR  - Skraban C
+FIR - Bacino, Carlos A
+IR  - Bacino CA
+FIR - Oladele, Carol
+IR  - Oladele C
+FIR - Hendry, Caroline
+IR  - Hendry C
+FIR - Smith, Carson A
+IR  - Smith CA
+FIR - Esteves, Cecilia
+IR  - Esteves C
+FIR - Xiao, Changrui
+IR  - Xiao C
+FIR - Reuter, Chloe M
+IR  - Reuter CM
+FIR - Eng, Christine M
+IR  - Eng CM
+FIR - Chan, Chun-Hung
+IR  - Chan CH
+FIR - Wahl, Colleen E
+IR  - Wahl CE
+FIR - Welt, Corrine K
+IR  - Welt CK
+FIR - Tifft, Cynthia J
+IR  - Tifft CJ
+FIR - Kiley, Dana
+IR  - Kiley D
+FIR - Rader, Daniel J
+IR  - Rader DJ
+FIR - Wegner, Daniel
+IR  - Wegner D
+FIR - Miller, Danny
+IR  - Miller D
+FIR - Scott, Daryl A
+IR  - Scott DA
+FIR - Viskochil, Dave
+IR  - Viskochil D
+FIR - Sweetser, David A
+IR  - Sweetser DA
+FIR - Adams, David R
+IR  - Adams DR
+FIR - Barbouth, Deborah
+IR  - Barbouth D
+FIR - Rao, Deepak A
+IR  - Rao DA
+FIR - Oglesbee, Devin
+IR  - Oglesbee D
+FIR - Bonner, Devon
+IR  - Bonner D
+FIR - Basel, Donald
+IR  - Basel D
+FIR - Novacic, Donna
+IR  - Novacic D
+FIR - Bustos Velasq, Francisco
+IR  - Bustos Velasq F
+FIR - Baldridge, Dustin
+IR  - Baldridge D
+FIR - Behrens, Edward
+IR  - Behrens E
+FIR - Silverman, Edwin K
+IR  - Silverman EK
+FIR - Seto, Elaine
+IR  - Seto E
+FIR - Kravets, Elijah
+IR  - Kravets E
+FIR - Rosenthal, Elisabeth
+IR  - Rosenthal E
+FIR - Worthey, Elizabeth A
+IR  - Worthey EA
+FIR - Burke, Elizabeth A
+IR  - Burke EA
+FIR - Blue, Elizabeth
+IR  - Blue E
+FIR - Chao, Elizabeth C
+IR  - Chao EC
+FIR - Fieg, Elizabeth L
+IR  - Fieg EL
+FIR - Macnamara, Ellen F
+IR  - Macnamara EF
+FIR - Balton, Elsa
+IR  - Balton E
+FIR - Glanton, Emily
+IR  - Glanton E
+FIR - Shelkowitz, Emily
+IR  - Shelkowitz E
+FIR - Wang, Emily
+IR  - Wang E
+FIR - Allenspach, Eric
+IR  - Allenspach E
+FIR - Klee, Eric
+IR  - Klee E
+FIR - Vilain, Eric
+IR  - Vilain E
+FIR - Conboy, Erin
+IR  - Conboy E
+FIR - Baldwin, Erin E
+IR  - Baldwin EE
+FIR - McRoy, Erin
+IR  - McRoy E
+FIR - Dell'Angelica, Esteban C
+IR  - Dell'Angelica EC
+FIR - Ashley, Euan A
+IR  - Ashley EA
+FIR - Cole, F Sessions
+IR  - Cole FS
+FIR - Pinto E Vairo, Filippo
+IR  - Pinto E Vairo F
+FIR - High, Frances
+IR  - High F
+FIR - Vetrini, Francesco
+IR  - Vetrini F
+FIR - Rossignol, Francis
+IR  - Rossignol F
+FIR - Hisama, Fuki M
+IR  - Hisama FM
+FIR - Marth, Gabor
+IR  - Marth G
+FIR - Jarvik, Gail P
+IR  - Jarvik GP
+FIR - Clark, Gary D
+IR  - Clark GD
+FIR - Carvalho, George
+IR  - Carvalho G
+FIR - Berry, Gerard T
+IR  - Berry GT
+FIR - Mirzaa, Ghayda
+IR  - Mirzaa G
+FIR - Sirugo, Giorgio
+IR  - Sirugo G
+FIR - Kilich, Gonench
+IR  - Kilich G
+FIR - Bademci, Guney
+IR  - Bademci G
+FIR - Mendez, Hector Rodrigo
+IR  - Mendez HR
+FIR - Wood, Heidi
+IR  - Wood H
+FIR - Taylor, Herman
+IR  - Taylor H
+FIR - Tabor, Holly K
+IR  - Tabor HK
+FIR - Dai, Hongzheng
+IR  - Dai H
+FIR - Chao, Hsiao-Tuan
+IR  - Chao HT
+FIR - Xu, Hua
+IR  - Xu H
+FIR - Bellen, Hugo J
+IR  - Bellen HJ
+FIR - Zhang, Hui
+IR  - Zhang H
+FIR - Glass, Ian
+IR  - Glass I
+FIR - Lanza, Ian R
+IR  - Lanza IR
+FIR - Holm, Ingrid A
+IR  - Holm IA
+FIR - Kohane, Isaac S
+IR  - Kohane IS
+FIR - Ward, Isum
+IR  - Ward I
+FIR - Chinn, Ivan
+IR  - Chinn I
+FIR - Pallais, J Carl
+IR  - Pallais JC
+FIR - Sampson, Jacinda B
+IR  - Sampson JB
+FIR - Orengo, James P
+IR  - Orengo JP
+FIR - Verbsky, James
+IR  - Verbsky J
+FIR - Sninsky, Jared
+IR  - Sninsky J
+FIR - Hom, Jason
+IR  - Hom J
+FIR - Schend, Jason
+IR  - Schend J
+FIR - Kohler, Jennefer N
+IR  - Kohler JN
+FIR - Posey, Jennifer E
+IR  - Posey JE
+FIR - Morgan, Jennifer
+IR  - Morgan J
+FIR - Schymick, Jennifer
+IR  - Schymick J
+FIR - Wambach, Jennifer
+IR  - Wambach J
+FIR - Douglas, Jessica
+IR  - Douglas J
+FIR - Fu, Jiayu
+IR  - Fu J
+FIR - Rosenfeld, Jill A
+IR  - Rosenfeld JA
+FIR - Shin, Jimann
+IR  - Shin J
+FIR - Stoler, Joan M
+IR  - Stoler JM
+FIR - Gonzalez, Joanna M
+IR  - Gonzalez JM
+FIR - Phillips, John A 3rd
+IR  - Phillips JA 3rd
+FIR - Carey, John
+IR  - Carey J
+FIR - Gorzynski, John E
+IR  - Gorzynski JE
+FIR - Mulvihill, John J
+IR  - Mulvihill JJ
+FIR - Davis, Joie
+IR  - Davis J
+FIR - Bernstein, Jonathan A
+IR  - Bernstein JA
+FIR - Whitlock, Jordan
+IR  - Whitlock J
+FIR - Abdenur, Jose
+IR  - Abdenur J
+FIR - Loscalzo, Joseph
+IR  - Loscalzo J
+FIR - Cogan, Joy D
+IR  - Cogan JD
+FIR - Martinez-Agosto, Julian A
+IR  - Martinez-Agosto JA
+FIR - McCarrier, Julie
+IR  - McCarrier J
+FIR - Alvey, Justin
+IR  - Alvey J
+FIR - Darr, Kahlen
+IR  - Darr K
+FIR - Callaway, Kaitlin
+IR  - Callaway K
+FIR - Leppig, Kathleen A
+IR  - Leppig KA
+FIR - Sullivan, Kathleen
+IR  - Sullivan K
+FIR - Sisco, Kathy
+IR  - Sisco K
+FIR - Singh, Kathyrn
+IR  - Singh K
+FIR - Dipple, Katrina
+IR  - Dipple K
+FIR - Treat, Kayla M
+IR  - Treat KM
+FIR - Hassey, Kelly
+IR  - Hassey K
+FIR - Schoch, Kelly
+IR  - Schoch K
+FIR - Smith, Kevin S
+IR  - Smith KS
+FIR - Liaqat, Khurram
+IR  - Liaqat K
+FIR - Worley, Kim
+IR  - Worley K
+FIR - Ezell, Kimberly
+IR  - Ezell K
+FIR - LeBlanc, Kimberly
+IR  - LeBlanc K
+FIR - Latchman, Kumarie
+IR  - Latchman K
+FIR - Rodan, Lance H
+IR  - Rodan LH
+FIR - Keehan, Laura
+IR  - Keehan L
+FIR - Pace, Laura
+IR  - Pace L
+FIR - Cobban, Laurel A
+IR  - Cobban LA
+FIR - Blieden, Lauren
+IR  - Blieden L
+FIR - Briere, Lauren C
+IR  - Briere LC
+FIR - Jeffries, Lauren
+IR  - Jeffries L
+FIR - Wiel, Laurens
+IR  - Wiel L
+FIR - Abi Farraj, Layal F
+IR  - Abi Farraj LF
+FIR - Petcharet, Leoyklang
+IR  - Petcharet L
+FIR - Peart, LeShon
+IR  - Peart L
+FIR - Mantcheva, Lili
+IR  - Mantcheva L
+FIR - Solnica-Krezel, Lilianna
+IR  - Solnica-Krezel L
+FIR - Burrage, Lindsay C
+IR  - Burrage LC
+FIR - Mulvihill, Lindsay
+IR  - Mulvihill L
+FIR - Schimmenti, Lisa
+IR  - Schimmenti L
+FIR - Emrick, Lisa T
+IR  - Emrick LT
+FIR - Botto, Lorenzo
+IR  - Botto L
+FIR - Potocki, Lorraine
+IR  - Potocki L
+FIR - Rives, Lynette
+IR  - Rives L
+FIR - Wolfe, Lynne A
+IR  - Wolfe LA
+FIR - Steenari, Maija-Rikka
+IR  - Steenari MR
+FIR - Butte, Manish J
+IR  - Butte MJ
+FIR - Delgado, Margaret
+IR  - Delgado M
+FIR - Romero, Maria Jose Ortuno
+IR  - Romero MJO
+FIR - Acosta, Maria T
+IR  - Acosta MT
+FIR - Morimoto, Marie
+IR  - Morimoto M
+FIR - Nakano-Okuno, Mariko
+IR  - Nakano-Okuno M
+FIR - Gerstein, Mark
+IR  - Gerstein M
+FIR - Wener, Mark
+IR  - Wener M
+FIR - Sabaii, Marla
+IR  - Sabaii M
+FIR - Horike-Pyne, Martha
+IR  - Horike-Pyne M
+FIR - Martin, Martin G
+IR  - Martin MG
+FIR - Rodriguez, Martin
+IR  - Rodriguez M
+FIR - Velinder, Matt
+IR  - Velinder M
+FIR - Coggins, Matthew
+IR  - Coggins M
+FIR - Might, Matthew
+IR  - Might M
+FIR - Wheeler, Matthew T
+IR  - Wheeler MT
+FIR - Malicdan, MayChristine V
+IR  - Malicdan MV
+FIR - Bell, Megan
+IR  - Bell M
+FIR - Halley, Meghan C
+IR  - Halley MC
+FIR - Walker, Melissa
+IR  - Walker M
+FIR - Levanto, Mia
+IR  - Levanto M
+FIR - Bamshad, Michael
+IR  - Bamshad M
+FIR - Wangler, Michael F
+IR  - Wangler MF
+FIR - Muriello, Michael
+IR  - Muriello M
+FIR - Zimmermann, Michael
+IR  - Zimmermann M
+FIR - Spencer-Manzon, Michele
+IR  - Spencer-Manzon M
+FIR - Leitheiser, Miranda
+IR  - Leitheiser M
+FIR - Mikati, Mohamad
+IR  - Mikati M
+FIR - Saifeddine, Mohamad
+IR  - Saifeddine M
+FIR - Weisz Hubshman, Monika
+IR  - Weisz Hubshman M
+FIR - Lek, Monkol
+IR  - Lek M
+FIR - Westerfield, Monte
+IR  - Westerfield M
+FIR - Tekin, Mustafa
+IR  - Tekin M
+FIR - Derar, Nada
+IR  - Derar N
+FIR - Dorrani, Naghmeh
+IR  - Dorrani N
+FIR - Parker, Neil H
+IR  - Parker NH
+FIR - Hanchard, Neil
+IR  - Hanchard N
+FIR - Borja, Nicholas
+IR  - Borja N
+FIR - Longo, Nicola
+IR  - Longo N
+FIR - Walley, Nicole M
+IR  - Walley NM
+FIR - Dargie, Nitsuh K
+IR  - Dargie NK
+FIR - Kaufman, Odelya
+IR  - Kaufman O
+FIR - Kanca, Oguz
+IR  - Kanca O
+FIR - Jean-Marie, Orpa
+IR  - Jean-Marie O
+FIR - Goddard, Page C
+IR  - Goddard PC
+FIR - Moretti, Paolo
+IR  - Moretti P
+FIR - Ward, Patricia A
+IR  - Ward PA
+FIR - Dickson, Patricia
+IR  - Dickson P
+FIR - Berger, Paul
+IR  - Berger P
+FIR - Fisher, Paul G
+IR  - Fisher PG
+FIR - Liu, Pengfei
+IR  - Liu P
+FIR - Byers, Peter
+IR  - Byers P
+FIR - Bayrak-Toydemir, Pinar
+IR  - Bayrak-Toydemir P
+FIR - D'Souza, Precilla
+IR  - D'Souza P
+FIR - Tan, Queenie
+IR  - Tan Q
+FIR - Ungar, Rachel A
+IR  - Ungar RA
+FIR - Li, Rachel
+IR  - Li R
+FIR - Mahoney, Rachel
+IR  - Mahoney R
+FIR - Rajagopalan, Ramakrishnan
+IR  - Rajagopalan R
+FIR - Alvarez, Raquel L
+IR  - Alvarez RL
+FIR - Spillmann, Rebecca C
+IR  - Spillmann RC
+FIR - Ganetzky, Rebecca
+IR  - Ganetzky R
+FIR - Overbury, Rebecca
+IR  - Overbury R
+FIR - Barrick, Rebekah
+IR  - Barrick R
+FIR - Lewis, Richard A
+IR  - Lewis RA
+FIR - Maas, Richard L
+IR  - Maas RL
+FIR - Hamid, Rizwan
+IR  - Hamid R
+FIR - Mao, Rong
+IR  - Mao R
+FIR - Marom, Ronit
+IR  - Marom R
+FIR - Corona, Rosario I
+IR  - Corona RI
+FIR - Kumar, Runjun
+IR  - Kumar R
+FIR - Butterfield, Russell
+IR  - Butterfield R
+FIR - Attaripour, Sanaz
+IR  - Attaripour S
+FIR - Nagamani, Sandesh
+IR  - Nagamani S
+FIR - Emami, Sara
+IR  - Emami S
+FIR - Lalani, Seema R
+IR  - Lalani SR
+FIR - Neumann, Serena
+IR  - Neumann S
+FIR - Perlman, Seth
+IR  - Perlman S
+FIR - Ketkar, Shamika
+IR  - Ketkar S
+FIR - Sunyaev, Shamil R
+IR  - Sunyaev SR
+FIR - Kobren, Shilpa N
+IR  - Kobren SN
+FIR - Yamamoto, Shinya
+IR  - Yamamoto S
+FIR - Mane, Shrikant
+IR  - Mane S
+FIR - Marwaha, Shruti
+IR  - Marwaha S
+FIR - Chanprasert, Sirisak
+IR  - Chanprasert S
+FIR - Nelson, Stanley F
+IR  - Nelson SF
+FIR - Zuchner, Stephan
+IR  - Zuchner S
+FIR - Bivona, Stephanie
+IR  - Bivona S
+FIR - Ware, Stephanie M
+IR  - Ware SM
+FIR - Montgomery, Stephen B
+IR  - Montgomery SB
+FIR - Pak, Stephen
+IR  - Pak S
+FIR - Boyden, Steven
+IR  - Boyden S
+FIR - Bachir, Suha
+IR  - Bachir S
+FIR - Dasari, Surendra
+IR  - Dasari S
+FIR - Korrick, Susan
+IR  - Korrick S
+FIR - Sandmeyer, Suzanne
+IR  - Sandmeyer S
+FIR - Mozaffar, Tahseen
+IR  - Mozaffar T
+FIR - Skelton, Tammi
+IR  - Skelton T
+FIR - Jensen, Tanner D
+IR  - Jensen TD
+FIR - Mamidi, Tarun Kk
+IR  - Mamidi TK
+FIR - Beagle, Taylor
+IR  - Beagle T
+FIR - Maurer, Taylor
+IR  - Maurer T
+FIR - Serrano, Teodoro Jerves
+IR  - Serrano TJ
+FIR - Coakley, Terra R
+IR  - Coakley TR
+FIR - Cassini, Thomas
+IR  - Cassini T
+FIR - Nicholas, Thomas J
+IR  - Nicholas TJ
+FIR - Schedl, Timothy
+IR  - Schedl T
+FIR - Vogel, Tiphanie P
+IR  - Vogel TP
+FIR - Jobanputra, Vaidehi
+IR  - Jobanputra V
+FIR - Maduro, Valerie V
+IR  - Maduro VV
+FIR - Shashi, Vandana
+IR  - Shashi V
+FIR - Vasiliou, Vasilis
+IR  - Vasiliou V
+FIR - Sybert, Virginia
+IR  - Sybert V
+FIR - Cuddapah, Vishnu
+IR  - Cuddapah V
+FIR - Introne, Wendy
+IR  - Introne W
+FIR - Raskind, Wendy
+IR  - Raskind W
+FIR - Thorson, Willa
+IR  - Thorson W
+FIR - Gahl, William A
+IR  - Gahl WA
+FIR - Byrd, William E
+IR  - Byrd WE
+FIR - Craigen, William J
+IR  - Craigen WJ
+FIR - Halstead, Winston
+IR  - Halstead W
+FIR - Huang, Yan
+IR  - Huang Y
+FIR - Karasozen, Yigit
+IR  - Karasozen Y
+FIR - Jiang, Yong-Hui
+IR  - Jiang YH
 EDAT- 2025/05/26 12:37
 MHDA- 2025/05/26 12:37
 CRDT- 2025/05/26 06:18
 PHST- 2024/08/07 00:00 [received]
 PHST- 2025/05/15 00:00 [revised]
 PHST- 2025/05/16 00:00 [accepted]
-PHST- 2025/05/26 12:37 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
+PHST- 2025/05/26 12:37 [medline]
 PHST- 2025/05/26 06:18 [entrez]
 AID - S1098-3600(25)00109-1 [pii]
 AID - 10.1016/j.gim.2025.101462 [doi]
 PST - aheadofprint
-SO  - Genet Med. 2025 May 22:101462. doi: 10.1016/j.gim.2025.101462.
+SO  - Genet Med. 2025 May 22;27(8):101462. doi: 10.1016/j.gim.2025.101462.
 
 PMID- 40296143
 OWN - NLM
@@ -1800,7 +2608,7 @@ PMID- 40149430
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250515
-LR  - 20250515
+LR  - 20250721
 IS  - 2073-4425 (Electronic)
 IS  - 2073-4425 (Linking)
 VI  - 16
@@ -1870,6 +2678,7 @@ AUID- ORCID: 0000-0003-3615-6958
 AD  - Department of Pharmacology, Weill Medical College, Cornell University, New York, 
       NY 10065, USA.
 LA  - eng
+GR  - P30 CA008748/CA/NCI NIH HHS/United States
 GR  - 1R35NS111631-05X1/NH/NIH HHS/United States
 PT  - Journal Article
 DEP - 20250225
@@ -1922,7 +2731,7 @@ PMID- 40141467
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250515
-LR  - 20250515
+LR  - 20250719
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -2036,7 +2845,7 @@ AD  - Medical Investigation of Neurodevelopmental Disorders (MIND) Institute,
       University of California Davis Health, Sacramento, CA 95817, USA.
 LA  - eng
 GR  - P50 HD103526/HD/NICHD NIH HHS/United States
-GR  - R01 HD036071/HD/NICHD NIH HHS/United States
+GR  - R21 AG080923/AG/NIA NIH HHS/United States
 GR  - 1R01HD036071-14A1/NH/NIH HHS/United States
 PT  - Case Reports
 PT  - Journal Article
@@ -2282,7 +3091,7 @@ PMID- 39934227
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250506
-LR  - 20250506
+LR  - 20250720
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 15
@@ -2348,6 +3157,7 @@ AD  - Section on Gene Structure and Disease, Laboratory of Cell and Molecular Bi
 AD  - National Institutes of Health, 8 Center Drive MSC 0830, Building 8, Room 2A19, 
       Bethesda, MD, USA. karenu@nih.gov.
 LA  - eng
+GR  - P01 CA247773/CA/NCI NIH HHS/United States
 PT  - Journal Article
 DEP - 20250211
 PL  - England
@@ -2744,7 +3554,7 @@ PMID- 39588919
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241126
-LR  - 20241128
+LR  - 20250722
 IS  - 2324-9269 (Electronic)
 IS  - 2324-9269 (Linking)
 VI  - 12
@@ -2830,14 +3640,15 @@ AD  - Department of Biochemistry and Molecular Medicine, University of Californi
 AD  - School of Medicine and MIND Institute, University of California Davis Medical 
       Center, Davis, California, USA.
 LA  - eng
-GR  - HD 036071/Eunice Kennedy Shriver National Institute of Child Health and Human 
-      Development/
+GR  - CF06/0269/National Health and Medical Research Council/
+GR  - F20231230/Rebecca L Cooper Medical Research Foundation/
+GR  - APP1172990/National Health and Medical Research Council/
 GR  - IDDRC P50 HD103526/Eunice Kennedy Shriver National Institute of Child Health and 
       Human Development/
-GR  - APP1172990/National Health and Medical Research Council/
-GR  - CF06/0269/National Health and Medical Research Council/
+GR  - HD 036071/Eunice Kennedy Shriver National Institute of Child Health and Human 
+      Development/
+GR  - R01 HD036071/HD/NICHD NIH HHS/United States
 GR  - National Institute of Child Health and Human Development/
-GR  - F20231230/Rebecca L Cooper Medical Research Foundation/
 PT  - Journal Article
 PL  - United States
 TA  - Mol Genet Genomic Med
@@ -4232,7 +5043,7 @@ PMID- 38772058
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240611
-LR  - 20250617
+LR  - 20250730
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Print)
 IS  - 0022-510X (Linking)
@@ -4317,6 +5128,7 @@ GR  - R01 HD036071/HD/NICHD NIH HHS/United States
 GR  - R01 MH078041/MH/NIMH NIH HHS/United States
 GR  - R01 NS110100/NS/NINDS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240517
 PL  - Netherlands
 TA  - J Neurol Sci
@@ -4504,7 +5316,7 @@ PMID- 38522837
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240518
-LR  - 20250602
+LR  - 20250703
 IS  - 1943-7811 (Electronic)
 IS  - 1525-1578 (Print)
 IS  - 1525-1578 (Linking)
@@ -4587,6 +5399,8 @@ LA  - eng
 GR  - P50 HD103526/HD/NICHD NIH HHS/United States
 GR  - R01 HD036071/HD/NICHD NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240322
 PL  - United States
 TA  - J Mol Diagn
@@ -5063,7 +5877,7 @@ PMID- 38134876
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231225
-LR  - 20250104
+LR  - 20250722
 IS  - 1097-4172 (Electronic)
 IS  - 0092-8674 (Print)
 IS  - 0092-8674 (Linking)
@@ -5179,12 +5993,13 @@ AD  - Department of Bioengineering, University of Pennsylvania, Philadelphia, PA
       Department of Genetics, University of Pennsylvania, Philadelphia, PA, USA. 
       Electronic address: jcremins@seas.upenn.edu.
 LA  - eng
-GR  - R01 MH120269/MH/NIMH NIH HHS/United States
 GR  - DP1 MH129957/MH/NIMH NIH HHS/United States
 GR  - U01 DA052715/DA/NIDA NIH HHS/United States
 GR  - F30 HD098015/HD/NICHD NIH HHS/United States
 GR  - F31 NS129317/NS/NINDS NIH HHS/United States
 GR  - U01 DK127405/DK/NIDDK NIH HHS/United States
+GR  - R35 GM128903/GM/NIGMS NIH HHS/United States
+GR  - R01 MH120269/MH/NIMH NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't

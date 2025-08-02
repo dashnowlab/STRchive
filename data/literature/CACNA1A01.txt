@@ -1,4 +1,119 @@
 
+PMID- 40746751
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250801
+LR  - 20250801
+IS  - 1535-3699 (Electronic)
+IS  - 1535-3702 (Print)
+IS  - 1535-3699 (Linking)
+VI  - 250
+DP  - 2025
+TI  - Comprehensive identification of pathogenic tandem repeat expansions in sporadic 
+      amyotrophic lateral sclerosis: advantages of long-read vs. short-read sequencing.
+PG  - 10593
+LID - 10.3389/ebm.2025.10593 [doi]
+LID - 10593
+AB  - Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disorder presenting 
+      progressive weakness of the bulbar and extremity muscles, leading to a 
+      wide-ranging clinical phenotype. More than 30 genes have been associated to 
+      genetically inherited ALS yet, approximately 85%-90% of ALS cases are sporadic. 
+      Short tandem repeats expansions, have recently been found in clinically diagnosed 
+      ALS patients and are currently investigated as potential genetic biomarkers. In 
+      this paper we compare the investigation of pathological tandem repeat expansions 
+      on a group of ALS patients by comparing the standard short-read sequencing (SRS) 
+      technique with a long-read-sequencing (LRS) method which has recently become more 
+      accessible. Blood samples from 47 sporadic ALS cases were subjected to SRS by 
+      Illumina Whole Genome Sequencing. The genome-wide tandem repeat expansions were 
+      genotyped using GangSTR, while wANNOVAR was used for variant annotation. 
+      Uncertain cases were further explored using LRS. SRS identified pathological 
+      expansions in HTT, ATXN2, and CACNA1A genes in one patient, which were not 
+      confirmed with LRS. The latter identified large tandem repeat expansions in the 
+      C9orf72 gene of one patient that were missed by SRS. Our findings suggest that 
+      LRS should be preferred to SRS for accurate identification of pathological tandem 
+      repeat expansions.
+CI  - Copyright (c) 2025 Sabetta, Rallmann, Bergquist, Taba, Pfaff, Poudel, Ferrari, 
+      Locatelli and Koks.
+FAU - Sabetta, Eleonora
+AU  - Sabetta E
+AD  - IRCCS Ospedale San Raffaele, Milan, Italy.
+FAU - Rallmann, Karin
+AU  - Rallmann K
+AD  - Department of Neurology, Tartu University Hospital, Tartu, Estonia.
+FAU - Bergquist, Jonas
+AU  - Bergquist J
+AD  - Analytical Chemistry and Neurochemistry, Department of Chemistry - Biomedical 
+      Center, Uppsala University, Uppsala, Sweden.
+FAU - Taba, Pille
+AU  - Taba P
+AD  - Department of Neurology, Tartu University Hospital, Tartu, Estonia.
+AD  - Institute of Clinical Medicine, University Tartu, Tartu, Estonia.
+FAU - Pfaff, Abigail L
+AU  - Pfaff AL
+AD  - Perron Institute for Neurological and Translational Science, Perth, WA, 
+      Australia.
+AD  - Personalised Medicine Center, Murdoch University, Perth, WA, Australia.
+FAU - Poudel, Bal Hari
+AU  - Poudel BH
+AD  - Personalised Medicine Center, Murdoch University, Perth, WA, Australia.
+FAU - Ferrari, Davide
+AU  - Ferrari D
+AD  - Scienze Chimiche della Vita e della Sostenibilita Ambientale (SCVSA) Department, 
+      University of Parma, Parma, Italy.
+FAU - Locatelli, Massimo
+AU  - Locatelli M
+AD  - IRCCS Ospedale San Raffaele, Milan, Italy.
+FAU - Koks, Sulev
+AU  - Koks S
+AD  - Perron Institute for Neurological and Translational Science, Perth, WA, 
+      Australia.
+AD  - Personalised Medicine Center, Murdoch University, Perth, WA, Australia.
+LA  - eng
+PT  - Comparative Study
+PT  - Journal Article
+DEP - 20250717
+PL  - Switzerland
+TA  - Exp Biol Med (Maywood)
+JT  - Experimental biology and medicine (Maywood, N.J.)
+JID - 100973463
+SB  - IM
+MH  - Humans
+MH  - *Amyotrophic Lateral Sclerosis/genetics
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - *DNA Repeat Expansion/genetics
+MH  - Aged
+MH  - Adult
+MH  - *Sequence Analysis, DNA/methods
+MH  - High-Throughput Nucleotide Sequencing/methods
+MH  - Whole Genome Sequencing/methods
+PMC - PMC12310560
+OTO - NOTNLM
+OT  - genetic architecture
+OT  - long-read sequencing
+OT  - neurodegenerative disorders
+OT  - short-read sequencing
+OT  - sporadic amyotrophic lateral sclerosis (ALS)
+OT  - tandem repeats
+COIS- The author(s) declared no potential conflicts of interest with respect to the 
+      research, authorship, and/or publication of this article.
+EDAT- 2025/08/01 11:33
+MHDA- 2025/08/01 11:34
+PMCR- 2025/07/17
+CRDT- 2025/08/01 05:03
+PHST- 2025/04/24 00:00 [received]
+PHST- 2025/07/02 00:00 [accepted]
+PHST- 2025/08/01 11:34 [medline]
+PHST- 2025/08/01 11:33 [pubmed]
+PHST- 2025/08/01 05:03 [entrez]
+PHST- 2025/07/17 00:00 [pmc-release]
+AID - 10593 [pii]
+AID - 10.3389/ebm.2025.10593 [doi]
+PST - epublish
+SO  - Exp Biol Med (Maywood). 2025 Jul 17;250:10593. doi: 10.3389/ebm.2025.10593. 
+      eCollection 2025.
+
 PMID- 40488180
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -1160,7 +1275,7 @@ PMID- 38165578
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240724
-LR  - 20240802
+LR  - 20250722
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -1292,9 +1407,10 @@ AD  - Department of Neurology, Ataxia Center, Cognitive Behavioral Neurology Uni
 LA  - eng
 GR  - R01 NS124854/NS/NINDS NIH HHS/United States
 GR  - R01 NS104423/NS/NINDS NIH HHS/United States
-GR  - R56 AG055619/AG/NIA NIH HHS/United States
 GR  - R01 NS118179/NS/NINDS NIH HHS/United States
 GR  - R01 AG062562/AG/NIA NIH HHS/United States
+GR  - R56 AG055619/AG/NIA NIH HHS/United States
+GR  - R01 NS082351/NS/NINDS NIH HHS/United States
 GR  - R01 AG031189/AG/NIA NIH HHS/United States
 GR  - U01 NS104326/NS/NINDS NIH HHS/United States
 PT  - Journal Article

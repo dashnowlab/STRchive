@@ -1,8 +1,128 @@
 
+PMID- 40720054
+OWN - NLM
+STAT- Publisher
+LR  - 20250728
+IS  - 1179-2000 (Electronic)
+IS  - 1177-1062 (Linking)
+DP  - 2025 Jul 28
+TI  - Long-Range PCR and Nanopore Sequencing Enables High-Throughput Detection of TCF4 
+      Trinucleotide Repeat Expansions in Fuchs Endothelial Corneal Dystrophy.
+LID - 10.1007/s40291-025-00803-8 [doi]
+AB  - INTRODUCTION: Trinucleotide repeat expansion in CTG18.1, in intron 2 of TCF4 (MIM 
+      *602272, #613267), is the main cause of Fuchs endothelial corneal dystrophy 
+      (FECD), accounting for around 75% of cases in Caucasians. CTG18.1 repeat 
+      expansion has typically been detected in peripheral blood genomic DNA by Southern 
+      blotting or short tandem repeat polymerase chain reaction (STR-PCR) combined with 
+      triplet-repeat primed PCR (TP-PCR) if needed. However both methods estimate the 
+      size of the expanded repeat relative to a size standard, and the former requires 
+      microgram amounts of DNA. To support the development of therapies, a 
+      high-throughput screening approach for repeat expansions in FECD is required. 
+      Here, we present a sensitive assay using long-range PCR and nanopore sequencing 
+      of genomic DNA to accurately resolve the CTG18.1 repeat. METHODS: The CTG18.1 
+      locus was analysed in genomic DNA from peripheral blood leukocytes by two 
+      different methods, and results were compared. The first approach used STR-PCR and 
+      capillary electrophoresis, followed by confirmatory testing of apparent 
+      homozygotes by TP-PCR. The second used long-range PCR, library preparation and 
+      long-read sequencing on an Oxford Nanopore Technologies MinION, with resolution 
+      of repeat length using the STRique algorithm. RESULTS: CTG18.1 expansion was 
+      screened for in 119 patients with FECD and 83 controls, by STR/TP-PCR genotyping 
+      and, independently, by long-range PCR/long-read nanopore sequencing. Both methods 
+      gave comparable results, but the latter was also able to measure repeat length. A 
+      total of 73.1% of FECD cases (87/119) and 1.2% of age-matched controls (1/83) had 
+      at least one CTG18.1 expansion that was >/= 50 repeats. The expanded CTG18.1 allele 
+      was inherited across multiple generations in four larger families, in a manner 
+      consistent with causing a dominant phenotype, revealing that some younger family 
+      members may be at risk. The G allele of SNP rs599550, ~1kb away from the 
+      expansion, is linked (in cis) with expanded alleles in 80.8% of FECD alleles with 
+      an expansion, compared with 12.5% in FECD alleles in cases without an expansion 
+      and 14.6% in Europeans. DISCUSSION: We demonstrate that long-range PCR and 
+      long-read nanopore sequencing is a sensitive method requiring only nanograms of 
+      DNA, which can be scaled up for high-throughput detection and accurate sizing of 
+      CTG18.1 in peripheral blood DNA. The SNP, rs599550, is in linkage disequilibrium 
+      with the expansion and physically closer than rs613872, previously used in FECD 
+      association studies, making it better for use in diagnostic or association 
+      studies.
+CI  - (c) 2025. Crown.
+FAU - Alayed, Bushra
+AU  - Alayed B
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - Department of Medical Laboratories, College of Applied Medical Sciences, Qassim 
+      University, Buraydah, Saudi Arabia.
+FAU - Siddiqui, Salina
+AU  - Siddiqui S
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - The Eye Department, St James's University Hospital, Leeds, UK.
+FAU - Anand, Seema
+AU  - Anand S
+AD  - The Eye Department, St James's University Hospital, Leeds, UK.
+FAU - Inglehearn, Chris F
+AU  - Inglehearn CF
+AUID- ORCID: 0000-0002-5143-2562
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St James's 
+      University Hospital, University of Leeds, Leeds, UK.
+FAU - Watson, Christopher M
+AU  - Watson CM
+AUID- ORCID: 0000-0003-2371-1844
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - North East and Yorkshire Genomic Laboratory Hub, Central Lab, St James's 
+      University Hospital, Leeds Teaching Hospitals NHS Trust, Leeds, UK.
+FAU - Ali, Manir
+AU  - Ali M
+AUID- ORCID: 0000-0003-3204-3788
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St James's 
+      University Hospital, University of Leeds, Leeds, UK. m.ali@leeds.ac.uk.
+LA  - eng
+GR  - Bushra Alayed/Saudi Arabian Cultural Bureau/
+GR  - G1002002/1/MRC_/Medical Research Council/United Kingdom
+PT  - Journal Article
+DEP - 20250728
+PL  - New Zealand
+TA  - Mol Diagn Ther
+JT  - Molecular diagnosis & therapy
+JID - 101264260
+SB  - IM
+COIS- Declarations. Funding: This study was funded by a Saudi Arabian Government 
+      Scholarship to B.A. and an MRC Clinical Research Training Fellowship to S.S. 
+      (Grant no. G1002002/1). Conflict of interest: Dr Christopher Watson has received 
+      travel expenses from Oxford Nanopore Technologies. Bushra Alayed, Salina 
+      Siddiqui, Seema Anand, Chris F. Inglehearn and Manir Ali declare no competing 
+      financial interests of relevance to the contents of this manuscript. Ethics 
+      approval and consent: The study has ethical approval from the Leeds East Research 
+      Ethics Committee (reference no. 17/YH/0032). Individuals were recruited in the 
+      Eye Department at St James's University Hospital in Leeds, with informed consent 
+      using a process that followed the ethical principles of the Declaration of 
+      Helsinki. Data availability: All the data supporting the findings of this study 
+      are available within the paper and Supplementary Information. Code availability: 
+      Not applicable. Author contributions: B.A. contributed to study design; acquired, 
+      analysed and interpreted data; and wrote the first draft of the manuscript. S.S. 
+      acquired and analysed data and commented on the manuscript draft. S.A. acquired 
+      data and commented on the manuscript draft. C.F.I. contributed to study 
+      conception and design, interpreted data and critically revised the initial 
+      manuscript draft for important intellectual content. C.W. contributed to study 
+      design, interpreted data and commented on the manuscript draft. M.A. contributed 
+      to study conception and design, analysed and interpreted data and critically 
+      revised the initial manuscript draft for important intellectual content. All 
+      authors read and approved the final manuscript.
+EDAT- 2025/07/28 18:58
+MHDA- 2025/07/28 18:58
+CRDT- 2025/07/28 11:22
+PHST- 2025/07/13 00:00 [accepted]
+PHST- 2025/07/28 18:58 [medline]
+PHST- 2025/07/28 18:58 [pubmed]
+PHST- 2025/07/28 11:22 [entrez]
+AID - 10.1007/s40291-025-00803-8 [pii]
+AID - 10.1007/s40291-025-00803-8 [doi]
+PST - aheadofprint
+SO  - Mol Diagn Ther. 2025 Jul 28. doi: 10.1007/s40291-025-00803-8.
+
 PMID- 40585427
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250630
+LR  - 20250702
 IS  - 2376-7839 (Print)
 IS  - 2376-7839 (Electronic)
 IS  - 2376-7839 (Linking)
@@ -119,7 +239,7 @@ PMID- 40374208
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250516
-LR  - 20250518
+LR  - 20250707
 IS  - 2397-3269 (Electronic)
 IS  - 2397-3269 (Linking)
 VI  - 10
@@ -884,7 +1004,7 @@ SO  - Ophthalmol Sci. 2024 Aug 30;5(1):100611. doi: 10.1016/j.xops.2024.100611.
 PMID- 39651202
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20241209
+LR  - 20250721
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2024 Nov 26
@@ -935,6 +1055,10 @@ AU  - McCarroll SA
 FAU - Loh, Po-Ru
 AU  - Loh PR
 LA  - eng
+GR  - F31 DE034283/DE/NIDCR NIH HHS/United States
+GR  - R01 HG006855/HG/NHGRI NIH HHS/United States
+GR  - R01 HG013110/HG/NHGRI NIH HHS/United States
+GR  - R56 HG012698/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20241126
@@ -1470,7 +1594,7 @@ PMID- 39231626
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250701
-LR  - 20250701
+LR  - 20250703
 IS  - 1536-4798 (Electronic)
 IS  - 0277-3740 (Print)
 IS  - 0277-3740 (Linking)
@@ -1531,12 +1655,11 @@ AD  - McDermott Center for Human Growth and Development, UT Southwestern Medical
       Center, Dallas, TX.
 AD  - Department of Ophthalmology, UT Southwestern Medical Center, Dallas, TX.
 LA  - eng
+GR  - P30EY030413/EY/NEI NIH HHS/United States
+GR  - P30 EY030413/EY/NEI NIH HHS/United States
 GR  - R01 EY022161/EY/NEI NIH HHS/United States
+GR  - R01EY022161/EY/NEI NIH HHS/United States
 GR  - Challenge Grant/Research to Prevent Blindness/
-GR  - R01EY022161/EY/NEI NIH HHS/United States
-GR  - P30EY030413/EY/NEI NIH HHS/United States
-GR  - R01EY022161/EY/NEI NIH HHS/United States
-GR  - P30EY030413/EY/NEI NIH HHS/United States
 PT  - Journal Article
 DEP - 20240903
 PL  - United States
@@ -1576,8 +1699,8 @@ PMCR- 2025/06/30
 CRDT- 2024/09/04 21:12
 PHST- 2024/05/01 00:00 [received]
 PHST- 2024/07/24 00:00 [accepted]
-PHST- 2024/09/05 00:50 [pubmed]
 PHST- 2025/07/01 21:17 [medline]
+PHST- 2024/09/05 00:50 [pubmed]
 PHST- 2024/09/04 21:12 [entrez]
 PHST- 2025/06/30 00:00 [pmc-release]
 AID - 00003226-990000000-00678 [pii]
@@ -1895,7 +2018,7 @@ PMID- 38300219
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241008
-LR  - 20241024
+LR  - 20250723
 IS  - 1536-4798 (Electronic)
 IS  - 0277-3740 (Linking)
 VI  - 43
@@ -2040,7 +2163,7 @@ PHST- 2023/12/22 00:00 [accepted]
 PHST- 2024/10/08 12:24 [medline]
 PHST- 2024/02/01 12:42 [pubmed]
 PHST- 2024/02/01 10:43 [entrez]
-AID - 00003226-990000000-00473 [pii]
+AID - 00003226-202407000-00001 [pii]
 AID - 10.1097/ICO.0000000000003488 [doi]
 PST - ppublish
 SO  - Cornea. 2024 Jul 1;43(7):805-811. doi: 10.1097/ICO.0000000000003488. Epub 2024 
