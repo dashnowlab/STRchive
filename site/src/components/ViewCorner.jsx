@@ -1,12 +1,13 @@
-import { FaAngleUp, FaComment } from "react-icons/fa";
+import { FaAngleUp, FaRegEnvelope } from "react-icons/fa";
 import { useWindowScroll } from "@reactuses/core";
 import Dialog from "@/components/Dialog";
-import Feedback from "./Feedback";
+import ContactForm from "./ContactForm";
 import classes from "./ViewCorner.module.css";
 
 /** controls that float in corner of screen */
 const ViewCorner = () => {
   const { y } = useWindowScroll();
+
   return (
     <div className={classes.corner}>
       {y > 100 && (
@@ -19,18 +20,14 @@ const ViewCorner = () => {
         </button>
       )}
       <Dialog
-        title="Feedback"
+        title="Contact Us"
         trigger={
-          <button
-            type="button"
-            className="button"
-            data-tooltip="Give us feedback"
-          >
-            <FaComment />
+          <button type="button" className="button" data-tooltip="Contact us">
+            <FaRegEnvelope />
           </button>
         }
       >
-        <Feedback />
+        <ContactForm />
       </Dialog>
     </div>
   );

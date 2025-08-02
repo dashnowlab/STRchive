@@ -4,7 +4,7 @@ const { Octokit } = require("octokit");
 /** settings */
 const owner = "dashnowlab";
 const repo = "STRchive";
-const labels = ["feedback"];
+const labels = ["contact"];
 const auth = process.env.GITHUB_TOKEN;
 
 /** entry point */

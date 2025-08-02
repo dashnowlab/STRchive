@@ -1,0 +1,25 @@
+.form {
+  display: grid;
+  grid-template-columns: auto minmax(200px, 400px);
+}
+
+.form > * {
+  display: contents;
+}
+
+.form > * > * {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.link {
+  padding: 0;
+  background: none;
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.link:hover {
+  background: none;
+  color: var(--primary);
+}

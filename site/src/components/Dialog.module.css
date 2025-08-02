@@ -10,6 +10,7 @@
   padding: 0;
   border: none;
   background: var(--shadow);
+  text-align: left;
 }
 
 .dialog[open] {
@@ -29,6 +30,7 @@
 .title {
   display: flex;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 .title > :first-child {

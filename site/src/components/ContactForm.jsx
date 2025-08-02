@@ -3,30 +3,31 @@ import { Fragment } from "react/jsx-runtime";
 import clsx from "clsx";
 import { mapValues, startCase, truncate } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
-import { submitFeedback } from "@/api/feedback";
+import { submitContact } from "@/api/contact";
 import Form from "@/components/Form";
 import TextBox from "@/components/TextBox";
+import { repo } from "@/layouts/meta";
 import { userAgent } from "@/util/browser";
 import { useQuery } from "@/util/hooks";
 import { sleep } from "@/util/misc";
 import { shortenUrl } from "@/util/string";
 import Alert from "./Alert";
-import classes from "./Feedback.module.css";
+import classes from "./Contact.module.css";
 import Help from "./Help";
 import Link from "./Link";
 
-const Feedback = () => {
+const ContactForm = () => {
   /** form state, saved to local storage */
-  let [name, setName] = useLocalStorage("feedback-name", "");
-  let [username, setUsername] = useLocalStorage("feedback-username", "");
-  let [email, setEmail] = useLocalStorage("feedback-email", "");
-  let [feedback, setFeedback] = useLocalStorage("feedback-body", "");
+  let [name, setName] = useLocalStorage("contact-name", "");
+  let [username, setUsername] = useLocalStorage("contact-username", "");
+  let [email, setEmail] = useLocalStorage("contact-email", "");
+  let [message, setMessage] = useLocalStorage("contact-message", "");
 
   /** set fallbacks */
   name ||= "";
   username ||= "";
   email ||= "";
-  feedback ||= "";
+  message ||= "";
 
   /** validate username */
   if (username && username.length > 0)
@@ -47,16 +48,16 @@ const Feedback = () => {
     (value) => value.filter(Boolean).join(" "),
   );
 
-  /** feedback title */
+  /** message title */
   const title = truncate(
-    [name.trim() || username.trim(), feedback.trim()]
+    [name.trim() || username.trim(), message.trim()]
       .filter(Boolean)
       .join(" - "),
     { length: 250 },
   );
 
-  /** feedback body */
-  const body = [{ name, username, email }, details, { feedback }]
+  /** message body */
+  const body = [{ name, username, email }, details, { message }]
     .map((group) =>
       Object.entries(group)
         .map(([key, value]) => [
@@ -77,7 +78,7 @@ const Feedback = () => {
       /** test loading spinner */
       await sleep(1000);
       /** will fail because endpoint not set up yet */
-      await submitFeedback(title, body);
+      await submitContact(title, body);
     } catch (error) {
       /** prevent error and return fake response */
       return { link: "https://github.com/fake-link" };
@@ -86,7 +87,7 @@ const Feedback = () => {
 
   return (
     <Form onSubmit={submit}>
-      <div className={clsx("col", classes.feedback)}>
+      <div className={clsx("col", classes.form)}>
         <TextBox
           label={
             <>
@@ -100,7 +101,7 @@ const Feedback = () => {
         <TextBox
           label={
             <>
-              Username
+              GitHub Username
               <Help>
                 Optional. So we can tag you in the post and you can follow it.
               </Help>
@@ -122,10 +123,10 @@ const Feedback = () => {
           onChange={setEmail}
         />
         <TextBox
-          label="Feedback"
-          placeholder="Comments, questions, issues, bugs, etc."
-          value={feedback}
-          onChange={setFeedback}
+          label="Message"
+          placeholder="Comments, questions, issues, etc."
+          value={message}
+          onChange={setMessage}
           multi
           required
         />
@@ -141,25 +142,31 @@ const Feedback = () => {
             </Fragment>
           ))}
         </dl>
-        <span>test</span>
       </details>
+
+      <Alert type={status || "info"} style={{ width: 0, minWidth: "100%" }}>
+        {status === "" && (
+          <>
+            This will make a <strong>public</strong> post on{" "}
+            <Link to={repo}>our GitHub</Link> with{" "}
+            <em>all of the information above</em>. You'll get a link to it once
+            it's created.
+          </>
+        )}
+        {startCase(status)}{" "}
+        {response && (
+          <Link to={response.link}>{shortenUrl(response.link)}</Link>
+        )}
+      </Alert>
 
       {status === "" && (
         <button type="submit">
-          <FaPaperPlane /> Submit
+          <FaPaperPlane />
+          Submit
         </button>
-      )}
-
-      {status !== "" && (
-        <Alert type={status}>
-          {startCase(status)}{" "}
-          {response && (
-            <Link to={response.link}>{shortenUrl(response.link)}</Link>
-          )}
-        </Alert>
       )}
     </Form>
   );
 };
 
-export default Feedback;
+export default ContactForm;

@@ -18,10 +18,18 @@ export const types = {
 };
 
 /** colored box with icon and text */
-const Alert = ({ type = "info", icon, className, children }) => (
+const Alert = ({
+  type = "info",
+  icon,
+  className = "",
+  style = {},
+  children,
+  ...props
+}) => (
   <div
     className={clsx(className, classes.alert)}
-    style={{ "--color": types[type].color }}
+    style={{ "--color": types[type].color, ...style }}
+    {...props}
   >
     {icon ?? types[type].icon}
     <div>{children}</div>
