@@ -6,15 +6,6 @@
   font: inherit;
 }
 
-.tooltip > p {
-  margin: 8px 0;
+.tooltip {
   line-height: var(--compact);
-}
-
-.tooltip > :first-child {
-  margin-top: 0;
-}
-
-.tooltip > :last-child {
-  margin-bottom: 0;
 }

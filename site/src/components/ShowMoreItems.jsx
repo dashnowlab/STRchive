@@ -11,6 +11,7 @@ const ShowMoreItems = ({ items, limit = 9 }) => {
       {items.slice(0, expanded ? Infinity : limit)}
       {items.length > limit && (
         <button
+          type="button"
           className={classes.button}
           onClick={() => setExpanded(!expanded)}
           aria-expanded={expanded}

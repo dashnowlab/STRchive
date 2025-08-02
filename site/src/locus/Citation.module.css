@@ -1,12 +1,8 @@
 .citation {
-  display: flex;
   position: relative;
-  flex-direction: column;
   align-items: flex-start;
   padding: 10px 20px;
   gap: 5px;
-  /* border-radius: var(--rounded); */
-  /* background: var(--light-gray); */
   text-align: left;
 }
 
@@ -15,12 +11,9 @@
 }
 
 .number {
-  display: flex;
   position: absolute;
   top: 10px;
   left: 10px;
-  align-items: center;
-  justify-content: center;
   width: 25px;
   height: 25px;
   border-radius: 999px;

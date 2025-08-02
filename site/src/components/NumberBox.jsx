@@ -1,7 +1,7 @@
 /** number input with label */
 const NumberBox = ({ label, value, onChange, ...props }) => (
   <label>
-    {label}
+    <span>{label}</span>
     <input
       {...props}
       type="number"

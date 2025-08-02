@@ -15,7 +15,7 @@ const links = [
 ---
 
 <header>
-  <nav>
+  <nav class="row">
     {
       path !== "/" && (
         <Link to="/" className="logo-link" aria-label="Home">
@@ -68,18 +68,8 @@ const links = [
     color: var(--primary);
   }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-  }
-
   .logo-link {
-    display: flex;
-    align-items: flex-start;
     height: 30px;
-    gap: 10px;
   }
 
   .logo {

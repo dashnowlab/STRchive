@@ -50,7 +50,11 @@ main {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 60px max(40px, (100% - var(--content)) / 2);
+  gap: 40px;
   text-align: center;
 }
 
@@ -66,14 +70,6 @@ section:last-child {
   flex-grow: 1;
 }
 
-section > :first-child {
-  margin-top: 0 !important;
-}
-
-section > :last-child {
-  margin-bottom: 0 !important;
-}
-
 h1,
 h2,
 h3,
@@ -81,7 +77,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2.5em 0 1.5em 0;
+  margin: 0;
   gap: 20px;
   font-weight: var(--bold);
 }
@@ -112,62 +108,6 @@ b {
   font-weight: var(--bold);
 }
 
-p {
-  margin: 20px 0;
-  line-height: var(--spacing);
-  text-align: justify;
-}
-
-blockquote {
-  padding: 20px 30px;
-  border-radius: var(--rounded);
-  background: var(--light-gray);
-  text-align: left;
-}
-
-ul {
-  padding: 0;
-  padding-left: 20px;
-  line-height: var(--spacing);
-  list-style-type: ">";
-  text-align: left;
-}
-
-li {
-  padding-left: 10px;
-}
-
-li::marker {
-  color: var(--dark-gray);
-}
-
-hr {
-  height: 2px;
-  margin: 40px 0;
-  border: none;
-  background: var(--light-gray);
-}
-
-dl {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  justify-items: flex-start;
-  margin: 20px 0;
-  gap: 10px;
-}
-
-dd {
-  display: inline-flex;
-  margin: 0;
-}
-
-dt {
-  display: inline-flex;
-}
-
 a {
   color: var(--primary);
   transition: color var(--fast);
@@ -178,8 +118,23 @@ a:hover {
   color: currentColor;
 }
 
-[title] {
-  cursor: help;
+img,
+svg {
+  flex-shrink: 0;
+}
+
+p {
+  margin: 0;
+  line-height: var(--spacing);
+  text-align: justify;
+}
+
+blockquote {
+  margin: 0;
+  padding: 20px 30px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  text-align: left;
 }
 
 button,
@@ -188,6 +143,7 @@ select {
   appearance: none;
   align-items: center;
   justify-content: center;
+  margin: 0;
   padding: 7.5px 15px;
   gap: 10px;
   border: none;
@@ -211,51 +167,35 @@ select:hover {
 label {
   display: inline-flex;
   position: relative;
-  position: relative;
+  align-items: center;
+  margin: 0;
+  gap: 5px;
+}
+
+label span:first-child {
+  display: flex;
   align-items: center;
   gap: 5px;
 }
 
-label:has(select) select {
-  padding-right: 30px;
+label:has([required]) span::after {
+  content: "*";
+  color: var(--secondary);
 }
 
-label:has(select)::after {
-  position: absolute;
-  right: 10px;
-  translate: 0 -2px;
-  content: "▾";
-  pointer-events: none;
-  transition: color var(--fast);
-}
-
-label:hover:has(select)::after {
-  color: var(--white);
-}
-
-label:has(input) {
+label:has(input, textarea, select) {
   cursor: pointer;
 }
 
 input:not([type="checkbox"]),
 textarea {
+  margin: 0;
   padding: 7.5px 15px;
   border: none;
   border-radius: var(--rounded);
   background: var(--white);
   box-shadow: inset 0 0 0 2px var(--dark-gray);
   font: inherit;
-}
-
-label:has(input) > button {
-  position: absolute;
-  right: 5px;
-  padding: 5px;
-  background: none;
-}
-
-label:has(input):has(button) > input {
-  padding-right: 40px !important;
 }
 
 input[type="number"] {
@@ -270,40 +210,33 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-summary {
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  border-radius: var(--rounded);
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  line-height: var(--spacing);
+  list-style-type: ">";
+  text-align: left;
+}
+
+li {
+  padding-left: 10px;
+}
+
+li::marker {
+  color: var(--dark-gray);
+}
+
+hr {
+  height: 2px;
+  margin: 0;
+  border: none;
   background: var(--light-gray);
-  list-style: none;
-  cursor: pointer;
-  transition:
-    background var(--fast),
-    color var(--fast);
-}
-
-summary::marker,
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::before {
-  padding: 10px;
-  content: "►";
-  opacity: 0.25;
-}
-
-details[open] summary::before {
-  content: "▼";
-}
-
-summary:hover {
-  background: var(--gray);
-  color: var(--white);
 }
 
 table {
-  margin: 20px 0;
+  margin: 0;
   border-collapse: collapse;
 }
 
@@ -317,6 +250,71 @@ td {
   padding: 5px 10px;
 }
 
+details {
+  max-width: fit-content;
+}
+
+summary {
+  display: flex;
+  appearance: none;
+  padding: 5px 10px;
+  gap: 10px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  list-style: none;
+  cursor: pointer;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+summary::before {
+  display: inline-block;
+  rotate: 90deg;
+  content: "⌃";
+  opacity: 0.5;
+}
+
+details[open] summary::before {
+  rotate: 180deg;
+}
+
+summary:hover {
+  background: var(--gray);
+  color: var(--white);
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  margin: 0;
+  gap: 10px;
+}
+
+dt,
+dd {
+  display: inline-flex;
+  margin: 0;
+}
+
+dt {
+  color: var(--gray);
+  font-weight: var(--medium);
+}
+
+dd:empty::after {
+  content: "-";
+  opacity: 0.5;
+}
+
 [disabled] {
   filter: saturate(0);
   opacity: 0.5;
@@ -328,12 +326,28 @@ td {
   text-wrap: balance;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  gap: 10px 20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  padding: 7.5px 15px;
+  padding: 7.5px;
   gap: 10px;
   border: solid 2px currentColor;
   border-radius: 999px;
@@ -343,6 +357,10 @@ td {
     background var(--fast),
     color var(--fast),
     box-shadow var(--fast);
+}
+
+.button:has(span) {
+  padding: 7.5px 15px;
 }
 
 .button:hover {
@@ -378,12 +396,8 @@ td {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
   place-items: stretch;
-  margin: 40px 0;
+  width: 100%;
   gap: 40px;
-}
-
-.charts h3 {
-  margin-top: 0;
 }
 
 .tippy-box {
@@ -396,7 +410,7 @@ td {
 }
 
 .tippy-arrow {
-  z-index: 99;
+  z-index: 1;
   color: var(--dark-gray);
 }
 
