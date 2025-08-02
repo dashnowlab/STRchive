@@ -1,16 +1,20 @@
 
 PMID- 40541176
 OWN - NLM
-STAT- Publisher
-LR  - 20250623
+STAT- MEDLINE
+DCOM- 20250709
+LR  - 20250724
 IS  - 2213-6711 (Electronic)
 IS  - 2213-6711 (Linking)
-DP  - 2025 Jun 16
+VI  - 20
+IP  - 7
+DP  - 2025 Jul 8
 TI  - Telmisartan is neuroprotective in a hiPSC-derived spinal microtissue model for 
       C9orf72 ALS via inhibition of neuroinflammation.
 PG  - 102535
 LID - S2213-6711(25)00139-0 [pii]
 LID - 10.1016/j.stemcr.2025.102535 [doi]
+LID - 102535
 AB  - Amyotrophic lateral sclerosis (ALS) is a fatal neurodegenerative disease 
       characterized by progressive motor neuron (MN) loss. The most common genetic 
       cause, a hexanucleotide repeat expansion in C9orf72 (C9-ALS), disrupts microglial 
@@ -104,12 +108,30 @@ AD  - Developmental Biology Program & Center for Stem Cell Biology, Memorial Slo
       address: studerl@mskcc.org.
 LA  - eng
 PT  - Journal Article
-DEP - 20250616
+DEP - 20250619
 PL  - United States
 TA  - Stem Cell Reports
 JT  - Stem cell reports
 JID - 101611300
+RN  - U5SYW473RQ (Telmisartan)
+RN  - 0 (Neuroprotective Agents)
+RN  - 0 (C9orf72 Protein)
+RN  - 0 (Angiotensin II Type 1 Receptor Blockers)
 SB  - IM
+MH  - *Telmisartan/pharmacology
+MH  - Humans
+MH  - *Induced Pluripotent Stem Cells/metabolism/cytology/drug effects
+MH  - *Amyotrophic Lateral Sclerosis/pathology/drug therapy/metabolism/genetics
+MH  - *Neuroprotective Agents/pharmacology
+MH  - Microglia/drug effects/metabolism
+MH  - Motor Neurons/drug effects/metabolism/pathology
+MH  - *C9orf72 Protein/genetics/metabolism
+MH  - *Spinal Cord/pathology/drug effects/metabolism
+MH  - *Neuroinflammatory Diseases/drug therapy/pathology
+MH  - Inflammation/drug therapy/pathology
+MH  - Astrocytes/drug effects/metabolism
+MH  - Angiotensin II Type 1 Receptor Blockers/pharmacology
+PMC - PMC12277806
 OTO - NOTNLM
 OT  - 3D microtissue
 OT  - C9orf72
@@ -124,18 +146,22 @@ OT  - triculture
 COIS- Declaration of interests L.S. is a scientific cofounder and paid consultant of 
       BlueRock Therapeutics Inc. and a scientific cofounder of DaCapo Brainscience.
 EDAT- 2025/06/21 00:32
-MHDA- 2025/06/21 00:32
+MHDA- 2025/07/10 00:35
+PMCR- 2025/06/19
 CRDT- 2025/06/20 18:41
 PHST- 2025/02/26 00:00 [received]
 PHST- 2025/05/19 00:00 [revised]
 PHST- 2025/05/20 00:00 [accepted]
-PHST- 2025/06/21 00:32 [medline]
+PHST- 2025/07/10 00:35 [medline]
 PHST- 2025/06/21 00:32 [pubmed]
 PHST- 2025/06/20 18:41 [entrez]
+PHST- 2025/06/19 00:00 [pmc-release]
 AID - S2213-6711(25)00139-0 [pii]
+AID - 102535 [pii]
 AID - 10.1016/j.stemcr.2025.102535 [doi]
-PST - aheadofprint
-SO  - Stem Cell Reports. 2025 Jun 16:102535. doi: 10.1016/j.stemcr.2025.102535.
+PST - ppublish
+SO  - Stem Cell Reports. 2025 Jul 8;20(7):102535. doi: 10.1016/j.stemcr.2025.102535. 
+      Epub 2025 Jun 19.
 
 PMID- 38871700
 OWN - NLM
