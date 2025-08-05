@@ -67,4 +67,5 @@ conda env update --file scripts/environment.yml --prune
 conda activate strchive
 ```
 
+
 Note: biomaRt isn't playing nicely with conda, so installing it within the R script where it is used.
