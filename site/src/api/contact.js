@@ -7,7 +7,7 @@ export const submitContact = async (title, body) => {
   body = JSON.stringify({ title, body });
   const options = { method: "POST", headers, body };
   /** cloud func entry point */
-  const url = "https://strchive-contact-XXXXXXXXXXXX.us-central1.run.app";
+  const url = "https://strchive-contact-467600139623.us-central1.run.app";
   const created = await request(url, options);
   return { link: created.html_url };
 };
