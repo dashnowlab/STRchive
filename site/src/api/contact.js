@@ -2,7 +2,6 @@ import { request } from "./";
 
 /** contact form */
 export const submitContact = async (title, body) => {
-  return { link: "https://fake-link.com" };
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
   body = JSON.stringify({ title, body });
