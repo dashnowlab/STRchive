@@ -4,6 +4,7 @@
 import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
+import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
@@ -56,9 +57,9 @@ const bedDownloads = downloads.slice(3);
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
     <div class="row">
-      <Link to={`${repo}/tree/main/data`} className="button">
+      <Button to={`${repo}/tree/main/data`} design="bubble">
         <FaGithub /><span>Full Dataset</span>
-      </Link>
+      </Button>
     </div>
 
     <div class="col">
@@ -70,10 +71,10 @@ const bedDownloads = downloads.slice(3);
       <div class="row">
         {
           defDownloads.map(({ file, label, filename }) => (
-            <Link to={file} className="button" download={filename}>
+            <Button to={file} design="bubble" download={filename}>
               <span>{label}</span>
               <LuDownload />
-            </Link>
+            </Button>
           ))
         }
       </div>
@@ -85,10 +86,10 @@ const bedDownloads = downloads.slice(3);
       <div class="row">
         {
           bedDownloads.map(({ file, label, filename }) => (
-            <Link to={file} className="button" download={filename}>
+            <Button to={file} design="bubble" download={filename}>
               <span>{label}</span>
               <LuDownload />
-            </Link>
+            </Button>
           ))
         }
       </div>

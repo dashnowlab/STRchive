@@ -3,18 +3,30 @@
   position: relative;
 }
 
-.container select {
+.select {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 7.5px;
   padding-right: 25px;
+  gap: 10px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+}
+
+.select:hover {
+  background: var(--dark-gray);
+  color: var(--white);
 }
 
 .icon {
   position: absolute;
   right: 5px;
   align-self: center;
+  opacity: 0.5;
   pointer-events: none;
   transition: color var(--fast);
 }
 
-select:hover + .icon {
+.select:hover + .icon {
   color: var(--white);
 }

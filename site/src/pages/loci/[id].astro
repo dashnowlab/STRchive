@@ -108,10 +108,10 @@ const blame = getJsonBlame(
       )
     }
 
-    <div class="row identifiers">
+    <div class="identifiers">
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
-          <div>
+          <div class="col">
             <div class="heading">
               <Icon />
               <span>{name}</span>
@@ -623,8 +623,12 @@ const blame = getJsonBlame(
   }
 
   .identifiers {
+    display: flex;
     gap: 40px;
-    text-align: left;
+  }
+
+  .identifiers > * {
+    align-items: flex-start;
   }
 
   .identifier-list {

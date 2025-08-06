@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { FaXmark } from "react-icons/fa6";
+import Button from "./Button";
 import classes from "./TextBox.module.css";
 
 /** text input with label */
@@ -14,14 +15,13 @@ const TextBox = ({ label, multi, onChange, ...props }) => {
       <div className={classes.container}>
         <Component
           ref={ref}
-          {...props}
           type="text"
           onChange={(event) => onChange?.(event.target.value)}
+          {...props}
         />
 
         <div className={classes.buttons}>
-          <button
-            type="button"
+          <Button
             onClick={() => {
               if (ref.current) ref.current.value = "";
               onChange?.("");
@@ -29,7 +29,7 @@ const TextBox = ({ label, multi, onChange, ...props }) => {
             aria-label="Clear textbox"
           >
             <FaXmark />
-          </button>
+          </Button>
         </div>
       </div>
     </label>

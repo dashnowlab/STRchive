@@ -5,6 +5,7 @@ layout: "@/layouts/Layout.astro"
 
 import { FaCompassDrafting } from "react-icons/fa6";
 import { PiBooksBold } from "react-icons/pi";
+import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import styles from "./_resources.module.css";
@@ -122,9 +123,9 @@ To generate TRGT repeat definitions, we further extended the above coordinates t
 
 <p class="center">With current resources relevant to each point.</p>
 
-<Link to="/blueprint.html" newTab className="button">
+<Button to="/blueprint.html" design="bubble" newTab>
   <FaCompassDrafting />
   <span>Blueprint</span>
-</Link>
+</Button>
 
 </section>

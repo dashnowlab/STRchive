@@ -2,7 +2,7 @@
 import { FaNewspaper } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import Logo from "@/assets/logo.svg?react";
-import Link from "@/components/Link";
+import Button from "@/components/Button";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -20,12 +20,12 @@ import Layout from "@/layouts/Layout.astro";
     </p>
 
     <div class="row">
-      <Link to="/loci" className="button">
+      <Button to="/loci" design="bubble">
         <span>Loci</span><LiaBarcodeSolid className="big-icon" />
-      </Link>
-      <Link to="https://doi.org/10.1186/s13073-025-01454-4" className="button">
+      </Button>
+      <Button to="https://doi.org/10.1186/s13073-025-01454-4" design="bubble">
         <span>Paper</span><FaNewspaper className="big-icon" />
-      </Link>
+      </Button>
     </div>
   </section>
 

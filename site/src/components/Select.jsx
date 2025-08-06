@@ -7,8 +7,9 @@ const Select = ({ label, options, onChange, ...props }) => (
     <span>{label}</span>
     <div className={classes.container}>
       <select
-        {...props}
+        className={classes.select}
         onChange={(event) => onChange?.(event.target.value, event)}
+        {...props}
       >
         {options.map(({ value, label }, index) => (
           <option key={index} value={value}>

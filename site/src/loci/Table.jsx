@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import clsx from "clsx";
 import { map, pick, uniq } from "lodash-es";
+import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
@@ -23,13 +24,13 @@ const cols = [
   {
     key: "id",
     render: (cell) => (
-      <Link
+      <Button
         to={`/loci/${cell}`}
-        className="button"
+        design="bubble"
         data-tooltip="Go to locus page"
       >
         <FaArrowRight />
-      </Link>
+      </Button>
     ),
     sortable: false,
   },
@@ -228,8 +229,8 @@ const Table = ({ loci }) => {
       {/* row count */}
       <div className="row">
         <strong>{filteredLoci.length.toLocaleString()} loci</strong>
-        <button
-          type="button"
+        <Button
+          design="plain"
           onClick={() =>
             /** download filtered loci */
             downloadJson(filteredLoci, [
@@ -240,7 +241,7 @@ const Table = ({ loci }) => {
           data-tooltip="Download filtered loci"
         >
           Download <LuDownload />
-        </button>
+        </Button>
       </div>
 
       {/* table */}

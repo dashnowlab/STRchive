@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { useEventListener } from "@reactuses/core";
 import { firstInView } from "@/util/dom";
+import Button from "./Button";
 import classes from "./TableOfContents.module.css";
 
 /** all used heading elements */
@@ -51,15 +52,15 @@ const TableOfContents = () => {
     <aside className={classes.aside} aria-label="Table of contents">
       <div className={classes.table}>
         {/* toggle button */}
-        <button
-          type="button"
+        <Button
           className={classes.button}
           aria-expanded={open}
           onClick={() => setOpen(!open)}
           data-tooltip={open ? "Close" : "Open"}
         >
-          Table of Contents{open ? <FaXmark /> : <FaBars />}
-        </button>
+          <span>Table of Contents</span>
+          {open ? <FaXmark /> : <FaBars />}
+        </Button>
 
         {/* links */}
         {open && (

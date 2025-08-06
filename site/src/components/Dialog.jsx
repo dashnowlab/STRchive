@@ -1,11 +1,8 @@
 import { cloneElement, createContext, useRef, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 import clsx from "clsx";
-import {
-  useClickOutside,
-  useEventListener,
-  useScrollLock,
-} from "@reactuses/core";
+import { useClickOutside, useEventListener } from "@reactuses/core";
+import Button from "./Button";
 import classes from "./Dialog.module.css";
 
 export const DialogContext = createContext({});
@@ -15,18 +12,14 @@ const Dialog = ({ trigger, title, children }) => {
   const boxRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const [, setLock] = useScrollLock(document.body);
-
   const open = () => {
     setIsOpen(true);
     dialogRef.current?.showModal();
-    setLock(true);
   };
 
   const close = () => {
     setIsOpen(false);
     dialogRef.current?.close();
-    setLock(false);
   };
 
   useEventListener("close", () => setIsOpen(false), dialogRef);
@@ -40,9 +33,9 @@ const Dialog = ({ trigger, title, children }) => {
         <div ref={boxRef} className={clsx("col", classes.box)}>
           <div className={classes.title}>
             <span>{title}</span>
-            <button type="button" onClick={close} autoFocus>
+            <Button onClick={close} autoFocus>
               <FaXmark />
-            </button>
+            </Button>
           </div>
 
           <div className={clsx("col", classes.body)}>

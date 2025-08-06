@@ -1,6 +1,6 @@
 .form {
   display: grid;
-  grid-template-columns: auto minmax(200px, 400px);
+  grid-template-columns: auto minmax(200px, 600px);
 }
 
 @media (max-width: 600px) {
@@ -9,23 +9,10 @@
   }
 }
 
-.form > * {
+.form > label {
   display: contents;
 }
 
-.form > * > * {
-  display: grid;
-  grid-template-columns: subgrid;
-}
-
 .link {
-  padding: 0;
-  background: none;
-  color: var(--white);
   text-decoration: underline;
-}
-
-.link:hover {
-  background: none;
-  color: var(--primary);
 }

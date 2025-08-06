@@ -10,9 +10,10 @@ import TextBox from "@/components/TextBox";
 import { repo } from "@/layouts/meta";
 import { userAgent } from "@/util/browser";
 import { useQuery } from "@/util/hooks";
-import { sleep } from "@/util/misc";
 import { shortenUrl } from "@/util/string";
 import Alert from "./Alert";
+import Button from "./Button";
+import Collapsible from "./Collapsible";
 import classes from "./Contact.module.css";
 import { DialogContext } from "./Dialog";
 import Help from "./Help";
@@ -142,8 +143,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <details>
-        <summary>Included details</summary>
+      <Collapsible label="Details">
         <dl>
           {Object.entries(details).map(([key, value]) => (
             <Fragment key={key}>
@@ -152,15 +152,14 @@ const ContactForm = () => {
             </Fragment>
           ))}
         </dl>
-      </details>
+      </Collapsible>
 
       <Alert type={status || "info"} style={{ width: 0, minWidth: "100%" }}>
         {status === "" && (
           <>
             This will make a <strong>public</strong> post on{" "}
-            <Link to={repo}>our GitHub</Link> with{" "}
-            <em>all of the information above</em>. You'll get a link to it once
-            it's created.
+            <Link to={repo}>our GitHub</Link> with <em>all the info above</em>.
+            You'll get a link once it's created.
           </>
         )}
         {startCase(status)}{" "}
@@ -170,10 +169,10 @@ const ContactForm = () => {
       </Alert>
 
       {status === "" && (
-        <button type="submit">
+        <Button design="plain" type="submit">
           <FaPaperPlane />
-          Submit
-        </button>
+          <span>Submit</span>
+        </Button>
       )}
     </Form>
   );

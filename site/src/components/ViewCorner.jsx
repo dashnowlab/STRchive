@@ -1,6 +1,7 @@
 import { FaAngleUp, FaRegEnvelope } from "react-icons/fa";
 import { useWindowScroll } from "@reactuses/core";
 import Dialog from "@/components/Dialog";
+import Button from "./Button";
 import ContactForm from "./ContactForm";
 import classes from "./ViewCorner.module.css";
 
@@ -11,20 +12,20 @@ const ViewCorner = () => {
   return (
     <div className={classes.corner}>
       {y > 100 && (
-        <button
-          className="button"
+        <Button
+          design="bubble"
           data-tooltip="Jump to top"
           onClick={() => window.scrollTo({ top: 0 })}
         >
           <FaAngleUp />
-        </button>
+        </Button>
       )}
       <Dialog
         title="Contact Us"
         trigger={
-          <button type="button" className="button" data-tooltip="Contact us">
+          <Button design="bubble" id="corner-contact" data-tooltip="Contact us">
             <FaRegEnvelope />
-          </button>
+          </Button>
         }
       >
         <ContactForm />
