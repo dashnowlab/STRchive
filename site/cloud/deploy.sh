@@ -1,5 +1,4 @@
 #!/bin/bash
-# run from /site
 
 name=$1
 project=gap-som-dbmi-strchive-app-60

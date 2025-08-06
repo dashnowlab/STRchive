@@ -30,6 +30,8 @@ export const useQuery = (
     }
   }, [func]);
 
+  const reset = useCallback(() => setState({ status: "" }), []);
+
   return {
     /** query function */
     query,
@@ -37,5 +39,7 @@ export const useQuery = (
     status: state.status,
     /** current data */
     data: state.data,
+    /** reset data and status */
+    reset,
   };
 };

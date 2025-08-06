@@ -1,4 +1,4 @@
-import { cloneElement, useRef, useState } from "react";
+import { cloneElement, createContext, useRef, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 import clsx from "clsx";
 import {
@@ -8,10 +8,12 @@ import {
 } from "@reactuses/core";
 import classes from "./Dialog.module.css";
 
+export const DialogContext = createContext({});
+
 const Dialog = ({ trigger, title, children }) => {
   const dialogRef = useRef(null);
   const boxRef = useRef(null);
-  const [, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [, setLock] = useScrollLock(document.body);
 
@@ -43,7 +45,11 @@ const Dialog = ({ trigger, title, children }) => {
             </button>
           </div>
 
-          <div className={clsx("col", classes.body)}>{children}</div>
+          <div className={clsx("col", classes.body)}>
+            <DialogContext.Provider value={{ isOpen }}>
+              {children}
+            </DialogContext.Provider>
+          </div>
         </div>
       </dialog>
     </>

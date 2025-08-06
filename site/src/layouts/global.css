@@ -287,6 +287,10 @@ summary:hover {
   color: var(--white);
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 dl {
   display: grid;
   grid-template-columns: auto auto;
@@ -371,6 +375,11 @@ dd:empty::after {
 .button > * {
   top: 0;
   margin: 0;
+}
+
+.icon {
+  width: unset;
+  height: 1em;
 }
 
 .big-icon {

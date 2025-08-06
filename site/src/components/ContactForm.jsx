@@ -1,3 +1,4 @@
+import { useContext, useEffect } from "react";
 import { FaPaperPlane } from "react-icons/fa6";
 import { Fragment } from "react/jsx-runtime";
 import clsx from "clsx";
@@ -13,6 +14,7 @@ import { sleep } from "@/util/misc";
 import { shortenUrl } from "@/util/string";
 import Alert from "./Alert";
 import classes from "./Contact.module.css";
+import { DialogContext } from "./Dialog";
 import Help from "./Help";
 import Link from "./Link";
 
@@ -21,12 +23,14 @@ const ContactForm = () => {
   let [name, setName] = useLocalStorage("contact-name", "");
   let [username, setUsername] = useLocalStorage("contact-username", "");
   let [email, setEmail] = useLocalStorage("contact-email", "");
+  let [subject, setSubject] = useLocalStorage("contact-subject", "");
   let [message, setMessage] = useLocalStorage("contact-message", "");
 
   /** set fallbacks */
   name ||= "";
   username ||= "";
   email ||= "";
+  subject ||= "";
   message ||= "";
 
   /** validate username */
@@ -50,7 +54,7 @@ const ContactForm = () => {
 
   /** message title */
   const title = truncate(
-    [name.trim() || username.trim(), message.trim()]
+    [name.trim() || username.trim(), subject.trim()]
       .filter(Boolean)
       .join(" - "),
     { length: 250 },
@@ -69,21 +73,20 @@ const ContactForm = () => {
     )
     .join("\n\n");
 
+  /** submission query */
   const {
     query: submit,
     data: response,
     status,
-  } = useQuery(async () => {
-    try {
-      /** test loading spinner */
-      await sleep(1000);
-      /** will fail because endpoint not set up yet */
-      await submitContact(title, body);
-    } catch (error) {
-      /** prevent error and return fake response */
-      return { link: "https://github.com/fake-link" };
-    }
-  });
+    reset,
+  } = useQuery(() => submitContact(title, body));
+
+  const { isOpen } = useContext(DialogContext);
+
+  /** reset query when dialog re-opened */
+  useEffect(() => {
+    if (isOpen) reset();
+  }, [isOpen]);
 
   return (
     <Form onSubmit={submit}>
@@ -121,6 +124,13 @@ const ContactForm = () => {
           placeholder="your.name@email.com"
           value={email}
           onChange={setEmail}
+        />
+        <TextBox
+          label="Subject"
+          placeholder="Subject"
+          value={subject}
+          onChange={setSubject}
+          required
         />
         <TextBox
           label="Message"
