@@ -3,6 +3,12 @@
   grid-template-columns: auto minmax(200px, 400px);
 }
 
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: auto;
+  }
+}
+
 .form > * {
   display: contents;
 }

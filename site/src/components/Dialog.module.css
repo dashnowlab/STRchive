@@ -1,9 +1,9 @@
 .dialog {
   display: none;
   position: fixed;
-  width: 100vw;
+  width: 100dvw;
   max-width: unset;
-  height: 100vh;
+  height: 100dvh;
   max-height: unset;
   margin: 0;
   inset: 0;
@@ -18,8 +18,8 @@
 }
 
 .box {
-  max-width: min(calc(100vw - 80px), var(--content));
-  max-height: calc(100vh - 80px);
+  max-width: min(calc(100dvw - 80px), var(--content));
+  max-height: calc(100dvh - 80px);
   margin: auto;
   padding: 20px;
   border-radius: var(--rounded);

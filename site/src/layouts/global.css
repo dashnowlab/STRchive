@@ -256,7 +256,7 @@ details {
 summary {
   display: flex;
   appearance: none;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 15px;
   gap: 10px;
   border-radius: var(--rounded);
   background: var(--light-gray);
@@ -272,7 +272,6 @@ details[open] summary {
 }
 
 summary::before {
-  display: inline-block;
   rotate: 90deg;
   content: "⌃";
   opacity: 0.5;
@@ -426,14 +425,14 @@ dd:empty::after {
   padding: 0;
 }
 
-:not(html) ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 7px;
   height: 7px;
   border-radius: 999px;
   background-color: var(--light-gray);
 }
 
-:not(html) ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background-color: var(--gray);
 }
