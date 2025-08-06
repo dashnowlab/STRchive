@@ -276,9 +276,12 @@ def atarva_catalog(row, genome = 'hg38'):
             motif_len = len(motif)
             start = struct_dict['start_' + genome]
             stop = struct_dict['stop_' + genome]
-            if struct_dict['count'] is None:
+            if struct_dict['type'] == 'main_repeat':
                 # this is the main repeat
                 bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
+            elif struct_dict['type'] == 'interruption':
+                # interruptions are not included in the structure
+                continue
             else:
                 # this is a flank repeat
                 bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}_flank\n"
@@ -412,6 +415,7 @@ def stranger_catalog(row, genome = 'hg38'):
 
     >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
     {'LocusId': 'myid', 'ReferenceRegion': 'chr1:100-200', 'LocusStructure': '(CAG)*', 'VariantType': 'Repeat', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
+
     >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
     {'LocusId': 'myid', 'ReferenceRegion': ['chr1:100-200', 'chr1:206-215'], 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'VariantType': ['Repeat', 'Repeat'], 'VariantId': ['myid', 'myid_CCG'], 'PathologicRegion': 'chr1:100-200', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
     """
@@ -488,15 +492,21 @@ def straglr_catalog(row, genome = 'hg38', format = 'default'):
     chr2	190880872	190880920	GCA	GLS	GLS
     chr3	63912684	63912714	GCA	ATXN7	ATXN7
 
-    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
-    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
-    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'flank_motif': '(CAG)n(CCG)10(CAA)10', 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
     'chr1\t100\t200\tCAG\tmygene\tmyid\nchr1\t200\t230\tCCG\tmygene\tmyid_CCG\nchr1\t230\t260\tCAA\tmygene\tmyid_CAA'
     """
+
+    # Do some special handling for missing values and unusual cases:
+    # If both pathogenic min and benign max are missing, skip the locus
+    if row['pathogenic_min'] is None and row['benign_max'] is None:
+        return None
+    
     bed_list = []
     # Use the same approach as atarva_catalog, but only return the first 4 columns (chrom, start, stop)
     atarva_list = [x.split('\t') for x in atarva_catalog(row, genome).split('\n')]  
@@ -622,7 +632,9 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
         with open(output, 'w') as out_file:
             # No header for straglr format
             for row in data:
-                out_file.write(straglr_catalog(row, genome, format = 'wf-human-variation') + '\n')
+                straglr_string = straglr_catalog(row, genome, format = 'wf-human-variation')
+                if straglr_string is not None:  # Check if the string is not None
+                    out_file.write(straglr_string + '\n')
     elif format.lower() == 'bed':
         fields_list = fields.split(',')
         header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
