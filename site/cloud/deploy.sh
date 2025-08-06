@@ -7,6 +7,7 @@ function=strchive-$name
 build=cloudrunfunction-builder
 run=cloudrunfunction-runtime
 region=us-central1
+instances=2
 
 source .env.local
 github=$GITHUB_TOKEN
@@ -19,6 +20,6 @@ gcloud run deploy $function \
   --project $project \
   --build-service-account projects/$project/serviceAccounts/$build@$project.iam.gserviceaccount.com \
   --service-account $run@$project.iam.gserviceaccount.com \
-  --max-instances 2 \
+  --max-instances $instances \
   --no-invoker-iam-check \
   --set-env-vars GITHUB_TOKEN=$github
