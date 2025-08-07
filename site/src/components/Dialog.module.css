@@ -44,4 +44,5 @@
 
 .body {
   overflow-y: auto;
+  overscroll-behavior: none;
 }

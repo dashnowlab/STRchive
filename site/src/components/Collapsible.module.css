@@ -3,9 +3,11 @@
 }
 
 .summary {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  max-width: max-content;
+  margin: 0 auto;
   padding: 5px 10px;
   gap: 10px;
   border-radius: var(--rounded);
