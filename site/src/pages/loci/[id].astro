@@ -543,6 +543,12 @@ const blame = getJsonBlame(
     max-width: calc(50% - 10px);
   }
 
+  @media (max-width: 400px) {
+    .wide {
+      max-width: unset;
+    }
+  }
+
   .box > :first-child {
     display: flex;
     align-items: center;
@@ -624,6 +630,8 @@ const blame = getJsonBlame(
 
   .identifiers {
     display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
     gap: 40px;
   }
 
@@ -652,7 +660,7 @@ const blame = getJsonBlame(
 
   .citations {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     align-items: flex-start;
     gap: 20px;
   }

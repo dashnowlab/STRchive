@@ -16,31 +16,35 @@ const links = [
 
 <header>
   <nav class="row">
-    {
-      path !== "/" && (
-        <Link to="/" className="logo-link" aria-label="Home">
-          <Logo className="logo" />
-        </Link>
-      )
-    }
+    <div class="row logo-row">
+      {
+        path !== "/" && (
+          <Link to="/" className="logo-link" aria-label="Home">
+            <Logo className="logo" />
+          </Link>
+        )
+      }
 
-    <Link
-      to={`${repo}/blob/main/CITATION.cff`}
-      className="version"
-      showArrow={false}>{version}</Link
-    >
+      <Link
+        to={`${repo}/blob/main/CITATION.cff`}
+        className="version"
+        showArrow={false}>{version}</Link
+      >
+    </div>
 
-    {
-      links.map(({ to, name }) => (
-        <Link
-          to={to}
-          className={["nav-link", to === path ? "active" : ""].join(" ")}
-          aria-label="GitHub"
-        >
-          {name}
-        </Link>
-      ))
-    }
+    <div class="row link-row">
+      {
+        links.map(({ to, name }) => (
+          <Link
+            to={to}
+            className={["nav-link", to === path ? "active" : ""].join(" ")}
+            aria-label="GitHub"
+          >
+            {name}
+          </Link>
+        ))
+      }
+    </div>
 
     <div class="spacer"></div>
 
@@ -106,5 +110,26 @@ const links = [
   .nav-link.active::after,
   .nav-link:hover::after {
     scale: 1 1;
+  }
+
+  @media (max-width: 700px) {
+    .logo-row {
+      width: 100%;
+    }
+
+    .spacer {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .link-row {
+      flex-direction: column;
+    }
   }
 </style>

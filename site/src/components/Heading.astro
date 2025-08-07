@@ -21,21 +21,23 @@ const Component = `h${level}`;
 </Component>
 
 <style>
-  .anchor {
-    width: 0;
-    margin-left: -20px;
-    color: var(--primary);
-    vertical-align: middle;
-    opacity: 0;
-    transition: opacity var(--fast);
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    overflow-wrap: anywhere;
   }
 
-  .anchor svg {
-    position: relative;
-    top: -0.1em;
-    left: 20px;
-    height: 1em;
-    vertical-align: middle;
+  .heading :global(svg:first-child) {
+    opacity: 0.5;
+  }
+
+  .anchor {
+    color: var(--primary);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity var(--fast);
+    width: 0;
   }
 
   .heading:hover .anchor,
