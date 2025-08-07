@@ -3,7 +3,7 @@ PMID- 40507780
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250613
-LR  - 20250615
+LR  - 20250717
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -111,19 +111,17 @@ PL  - Switzerland
 TA  - Int J Mol Sci
 JT  - International journal of molecular sciences
 JID - 101092791
-RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Frataxin)
+RN  - 0 (Iron-Binding Proteins)
 SB  - IM
 MH  - Humans
-MH  - *Friedreich Ataxia/genetics/diagnosis
-MH  - *Trinucleotide Repeat Expansion/genetics
 MH  - Young Adult
-MH  - Male
-MH  - *Iron-Binding Proteins/genetics
 MH  - Frataxin
-MH  - *Mosaicism
+MH  - *Friedreich Ataxia/genetics/diagnosis
 MH  - Heterozygote
-MH  - Female
+MH  - *Iron-Binding Proteins/genetics
+MH  - *Mosaicism
+MH  - *Trinucleotide Repeat Expansion/genetics
 PMC - PMC12154355
 OTO - NOTNLM
 OT  - FRDA
@@ -1679,7 +1677,7 @@ PMID- 39496895
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250109
-LR  - 20250114
+LR  - 20250708
 IS  - 1476-5438 (Electronic)
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)
@@ -3663,7 +3661,7 @@ PMID- 36800320
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230302
-LR  - 20231213
+LR  - 20250719
 IS  - 1520-6882 (Electronic)
 IS  - 0003-2700 (Print)
 IS  - 0003-2700 (Linking)
@@ -3751,8 +3749,8 @@ AD  - Center of Excellence in Environmental Toxicology, Department of Systems
       University of Pennsylvania, Philadelphia, Pennsylvania 19104, United States.
 LA  - eng
 GR  - P30 ES013508/ES/NIEHS NIH HHS/United States
-GR  - R21 TR003035/TR/NCATS NIH HHS/United States
 GR  - U01 NS114143/NS/NINDS NIH HHS/United States
+GR  - R21 TR003035/TR/NCATS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, U.S. Gov't, Non-P.H.S.
