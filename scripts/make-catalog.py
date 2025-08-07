@@ -499,7 +499,7 @@ def straglr_catalog(row, genome = 'hg38', format = 'default'):
     'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
     >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
-    'chr1\t100\t200\tCAG\tmygene\tmyid\nchr1\t200\t230\tCCG\tmygene\tmyid_CCG\nchr1\t230\t260\tCAA\tmygene\tmyid_CAA'
+    'chr1\t100\t200\tCAG\tmyid\tmyid\nchr1\t200\t230\tCCG\tmyid\tmyid_CCG\nchr1\t230\t260\tCAA\tmyid\tmyid_CAA'
     """
 
     # Do some special handling for missing values and unusual cases:
@@ -518,7 +518,7 @@ def straglr_catalog(row, genome = 'hg38', format = 'default'):
             motif = bed_row[3]
             # replace the word "flank" with the motif name in the id
             bed_row[5] = bed_row[5].replace('_flank', f'_{motif}')
-            bed_list.append('\t'.join(bed_row[0:4] + [row['gene'], bed_row[5]]))
+            bed_list.append('\t'.join(bed_row[0:4] + [row['id'], bed_row[5]]))
     else:
         raise ValueError(f'Unknown format: {format}. Expected default or wf-human-variation.')
 
