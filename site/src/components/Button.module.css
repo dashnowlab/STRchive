@@ -1,0 +1,38 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 7.5px;
+  gap: 10px;
+  border-radius: var(--rounded);
+}
+
+.button:has(span) {
+  padding: 7.5px 15px;
+}
+
+.plain {
+  background: var(--light-gray);
+}
+
+.plain:hover {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+.bubble {
+  gap: 10px;
+  border: solid 2px currentColor;
+  border-radius: 999px;
+  background: none;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.bubble:hover {
+  background: var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
+  color: var(--white);
+}

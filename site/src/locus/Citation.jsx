@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
 import classes from "./Citation.module.css";
@@ -6,8 +7,8 @@ import classes from "./Citation.module.css";
 const Citation = ({ number, id, title, authors, publisher, date, link }) => {
   const details = [publisher, date].filter(Boolean);
   return (
-    <div className={classes.citation} id={id}>
-      {number && <div className={classes.number}>{number}</div>}
+    <div className={clsx("col", classes.citation)} id={id}>
+      {number && <div className={clsx("row", classes.number)}>{number}</div>}
       {title && <ShowMoreLines lines={1}>{title}</ShowMoreLines>}
       {!!authors?.length && (
         <ShowMoreLines lines={1}>{authors?.join(", ")}</ShowMoreLines>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+  <style>
+    .loading-spin {
+      animation:
+        loading-draw 2s linear infinite,
+        loading-spin 4s linear infinite;
+      stroke-dasharray: 1;
+    }
+
+    @keyframes loading-draw {
+      from {
+        stroke-dashoffset: 2;
+      }
+    }
+
+    @keyframes loading-spin {
+      to {
+        rotate: 360deg;
+      }
+    }
+  </style>
+  <circle
+    class="loading-spin"
+    r="40"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="20"
+    pathLength="1"
+  />
+</svg>

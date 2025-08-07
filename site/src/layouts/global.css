@@ -50,7 +50,11 @@ main {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 60px max(40px, (100% - var(--content)) / 2);
+  gap: 40px;
   text-align: center;
 }
 
@@ -66,28 +70,12 @@ section:last-child {
   flex-grow: 1;
 }
 
-section > :first-child {
-  margin-top: 0 !important;
-}
-
-section > :last-child {
-  margin-bottom: 0 !important;
-}
-
 h1,
 h2,
 h3,
 h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2.5em 0 1.5em 0;
-  gap: 20px;
+  margin: 0;
   font-weight: var(--bold);
-}
-
-:is(h1, h2, h3, h4) > svg:first-child {
-  opacity: 0.5;
 }
 
 h1 {
@@ -112,20 +100,108 @@ b {
   font-weight: var(--bold);
 }
 
+a {
+  color: var(--primary);
+  overflow-wrap: break-word;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+a:hover {
+  color: currentColor;
+}
+
+img,
+svg {
+  flex-shrink: 0;
+}
+
 p {
-  margin: 20px 0;
+  margin: 0;
   line-height: var(--spacing);
   text-align: justify;
 }
 
 blockquote {
+  max-width: 100%;
+  margin: 0;
   padding: 20px 30px;
   border-radius: var(--rounded);
   background: var(--light-gray);
   text-align: left;
 }
 
-ul {
+label {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  margin: 0;
+  gap: 5px;
+}
+
+label > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+label:has([required]) > span::after {
+  content: "*";
+  color: var(--secondary);
+}
+
+label:has(input, textarea, select) {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button,
+select {
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: currentColor;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background var(--fast),
+    color var(--fast),
+    box-shadow var(--fast);
+}
+
+button:hover,
+select:hover {
+  color: var(--primary);
+}
+
+p > button,
+p > [tabindex] {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2em;
+}
+
+ul,
+ol {
+  margin: 0;
   padding: 0;
   padding-left: 20px;
   line-height: var(--spacing);
@@ -143,167 +219,13 @@ li::marker {
 
 hr {
   height: 2px;
-  margin: 40px 0;
-  border: none;
-  background: var(--light-gray);
-}
-
-dl {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  justify-items: flex-start;
-  margin: 20px 0;
-  gap: 10px;
-}
-
-dd {
-  display: inline-flex;
   margin: 0;
-}
-
-dt {
-  display: inline-flex;
-}
-
-a {
-  color: var(--primary);
-  transition: color var(--fast);
-  overflow-wrap: break-word;
-}
-
-a:hover {
-  color: currentColor;
-}
-
-[title] {
-  cursor: help;
-}
-
-button,
-select {
-  display: inline-flex;
-  appearance: none;
-  align-items: center;
-  justify-content: center;
-  padding: 7.5px 15px;
-  gap: 10px;
   border: none;
-  border-radius: var(--rounded);
   background: var(--light-gray);
-  color: currentColor;
-  font: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  transition:
-    background var(--fast),
-    color var(--fast);
-}
-
-button:hover,
-select:hover {
-  background: var(--dark-gray);
-  color: var(--white);
-}
-
-label {
-  display: inline-flex;
-  position: relative;
-  position: relative;
-  align-items: center;
-  gap: 5px;
-}
-
-label:has(select) select {
-  padding-right: 30px;
-}
-
-label:has(select)::after {
-  position: absolute;
-  right: 10px;
-  translate: 0 -2px;
-  content: "▾";
-  pointer-events: none;
-  transition: color var(--fast);
-}
-
-label:hover:has(select)::after {
-  color: var(--white);
-}
-
-label:has(input) {
-  cursor: pointer;
-}
-
-input:not([type="checkbox"]),
-textarea {
-  padding: 7.5px 15px;
-  border: none;
-  border-radius: var(--rounded);
-  background: var(--white);
-  box-shadow: inset 0 0 0 2px var(--dark-gray);
-  font: inherit;
-}
-
-label:has(input) > button {
-  position: absolute;
-  right: 5px;
-  padding: 5px;
-  background: none;
-}
-
-label:has(input):has(button) > input {
-  padding-right: 40px !important;
-}
-
-input[type="number"] {
-  width: 70px;
-  padding-right: 5px;
-}
-
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  accent-color: var(--primary);
-  cursor: pointer;
-}
-
-summary {
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  border-radius: var(--rounded);
-  background: var(--light-gray);
-  list-style: none;
-  cursor: pointer;
-  transition:
-    background var(--fast),
-    color var(--fast);
-}
-
-summary::marker,
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::before {
-  padding: 10px;
-  content: "►";
-  opacity: 0.25;
-}
-
-details[open] summary::before {
-  content: "▼";
-}
-
-summary:hover {
-  background: var(--gray);
-  color: var(--white);
 }
 
 table {
-  margin: 20px 0;
+  margin: 0;
   border-collapse: collapse;
 }
 
@@ -317,6 +239,57 @@ td {
   padding: 5px 10px;
 }
 
+summary {
+  appearance: none;
+  list-style: none;
+  cursor: pointer;
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+dl {
+  --cols: 3;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), auto auto);
+  gap: 10px 20px;
+}
+
+:has(> dl) {
+  container-type: inline-size;
+}
+
+@container (max-width: 600px) {
+  dl {
+    --cols: 2;
+  }
+}
+@container (max-width: 300px) {
+  dl {
+    --cols: 1;
+  }
+}
+
+dt,
+dd {
+  display: inline-flex;
+  margin: 0;
+}
+
+dt {
+  color: var(--gray);
+  font-weight: var(--medium);
+}
+
+dd:empty::after {
+  content: "-";
+  opacity: 0.5;
+}
+
 [disabled] {
   filter: saturate(0);
   opacity: 0.5;
@@ -328,32 +301,26 @@ td {
   text-wrap: balance;
 }
 
-.button {
-  display: inline-flex;
+.row {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  padding: 7.5px 15px;
-  gap: 10px;
-  border: solid 2px currentColor;
-  border-radius: 999px;
-  color: currentColor;
-  text-decoration: none;
-  transition:
-    background var(--fast),
-    color var(--fast),
-    box-shadow var(--fast);
+  max-width: 100%;
+  gap: 10px 20px;
 }
 
-.button:hover {
-  background: var(--secondary);
-  box-shadow: 0 0 0 2px var(--secondary);
-  color: var(--white);
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
 }
 
-.button > * {
-  top: 0;
-  margin: 0;
+.icon {
+  width: unset;
+  height: 1em;
 }
 
 .big-icon {
@@ -376,14 +343,10 @@ td {
 
 .charts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
   place-items: stretch;
-  margin: 40px 0;
+  width: 100%;
   gap: 40px;
-}
-
-.charts h3 {
-  margin-top: 0;
 }
 
 .tippy-box {
@@ -396,7 +359,7 @@ td {
 }
 
 .tippy-arrow {
-  z-index: 99;
+  z-index: 1;
   color: var(--dark-gray);
 }
 
@@ -404,14 +367,14 @@ td {
   padding: 0;
 }
 
-:not(html) ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 7px;
   height: 7px;
   border-radius: 999px;
   background-color: var(--light-gray);
 }
 
-:not(html) ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background-color: var(--gray);
 }

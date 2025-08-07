@@ -59,7 +59,7 @@ const blame = getJsonBlame(
 
     {
       !!locus.locus_tags.length && (
-        <div class="tags">
+        <div class="row">
           {locus.locus_tags?.map((tag) => (
             <Tag value={tag} />
           ))}
@@ -111,7 +111,7 @@ const blame = getJsonBlame(
     <div class="identifiers">
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
-          <div>
+          <div class="col">
             <div class="heading">
               <Icon />
               <span>{name}</span>
@@ -141,7 +141,7 @@ const blame = getJsonBlame(
     <Heading level={2}>Disease</Heading>
     {
       !!locus.disease_tags.length && (
-        <div class="tags">
+        <div class="row">
           {locus.disease_tags?.map((tag) => (
             <Tag value={tag} />
           ))}
@@ -438,23 +438,23 @@ const blame = getJsonBlame(
 
   <!-- gnomad data -->
   {
-  gnomad[id] && (
-    <section>
-      <Heading level={2}>gnomAD</Heading>
-      {gnomad[id].reliable ? (
-        <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
-      ) : (
-        <p class="center">
-          <em>
-            Pathogenic genotype frequency data is not displayed for this locus because a substantial number of large alleles failed manual review by the gnomAD team.
-          </em>
-        </p>
-      )}
-    </section>
-  )
-}
-
-
+    gnomad[id] && (
+      <section>
+        <Heading level={2}>gnomAD</Heading>
+        {gnomad[id].reliable ? (
+          <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
+        ) : (
+          <p class="center">
+            <em>
+              Pathogenic genotype frequency data is not displayed for this locus
+              because a substantial number of large alleles failed manual review
+              by the gnomAD team.
+            </em>
+          </p>
+        )}
+      </section>
+    )
+  }
 
   <!-- references -->
   {
@@ -514,27 +514,13 @@ const blame = getJsonBlame(
 </Layout>
 
 <style>
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-    gap: 10px;
-  }
-
   .boxes {
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
     gap: 20px;
-  }
-
-  .boxes :global(svg) {
-    margin: 0;
   }
 
   .box {
@@ -555,6 +541,12 @@ const blame = getJsonBlame(
   .wide {
     /* grid-column-end: span 2; */
     max-width: calc(50% - 10px);
+  }
+
+  @media (max-width: 400px) {
+    .wide {
+      max-width: unset;
+    }
   }
 
   .box > :first-child {
@@ -592,7 +584,6 @@ const blame = getJsonBlame(
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: max-content;
-    margin: 20px auto;
     gap: 20px;
   }
 
@@ -618,14 +609,9 @@ const blame = getJsonBlame(
     background: color-mix(in srgb, var(--tertiary), white 90%);
   }
 
-  .genes {
-    margin: 40px 0;
-  }
-
   .heading {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 10px;
     gap: 10px;
     font-weight: var(--bold);
   }
@@ -645,10 +631,12 @@ const blame = getJsonBlame(
   .identifiers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 40px 0;
+    /* justify-content: center; */
     gap: 40px;
-    text-align: left;
+  }
+
+  .identifiers > * {
+    align-items: flex-start;
   }
 
   .identifier-list {
@@ -672,7 +660,7 @@ const blame = getJsonBlame(
 
   .citations {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     align-items: flex-start;
     gap: 20px;
   }

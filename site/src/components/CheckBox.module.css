@@ -1,0 +1,17 @@
+.box {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: calc(var(--rounded) / 2);
+  background: var(--white);
+  box-shadow: inset 0 0 0 2px var(--dark-gray);
+  accent-color: var(--primary);
+}
+
+.box:checked {
+  background-image: url("../assets/check.svg");
+  background-position: center;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-color: var(--primary);
+}

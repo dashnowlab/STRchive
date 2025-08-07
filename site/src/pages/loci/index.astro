@@ -4,6 +4,7 @@
 import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuDownload } from "react-icons/lu";
+import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
@@ -11,15 +12,15 @@ import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
 import { repo, version } from "@/layouts/meta";
 import Table from "@/loci/Table";
+import ageOnset from "../../../../data/plots/age-onset.json";
+import pathSize from "../../../../data/plots/path-size.json";
 import hg19bed from "../../../../data/STRchive-disease-loci.hg19.bed?url";
 import hg19defs from "../../../../data/STRchive-disease-loci.hg19.TRGT.bed?url";
 import hg38bed from "../../../../data/STRchive-disease-loci.hg38.bed?url";
 import hg38defs from "../../../../data/STRchive-disease-loci.hg38.TRGT.bed?url";
-import ageOnset from "../../../../data/plots/age-onset.json";
-import pathSize from "../../../../data/plots/path-size.json";
-import loci from "../../../../data/STRchive-loci.json";
 import t2tbed from "../../../../data/STRchive-disease-loci.T2T-chm13.bed?url";
 import t2tdefs from "../../../../data/STRchive-disease-loci.T2T-chm13.TRGT.bed?url";
+import loci from "../../../../data/STRchive-loci.json";
 
 /** download links */
 const downloads = [
@@ -55,42 +56,44 @@ const bedDownloads = downloads.slice(3);
   <section>
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
-    <Link to={`${repo}/tree/main/data`} className="button">
-      <FaGithub />Full Dataset
-    </Link>
+    <div class="row">
+      <Button to={`${repo}/tree/main/data`} design="bubble">
+        <FaGithub /><span>Full Dataset</span>
+      </Button>
+    </div>
 
-    <br />
-    <br />
+    <div class="col">
+      <p>
+        <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions
+        for genotyping in PacBio HiFi reads:
+      </p>
 
-    <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions
-    for genotyping in PacBio HiFi reads:
+      <div class="row">
+        {
+          defDownloads.map(({ file, label, filename }) => (
+            <Button to={file} design="bubble" download={filename}>
+              <span>{label}</span>
+              <LuDownload />
+            </Button>
+          ))
+        }
+      </div>
+    </div>
 
-    <br />
+    <div class="col">
+      <p>Extended BED format for filtering genomic data:</p>
 
-    {
-      defDownloads.map(({ file, label, filename }) => (
-        <Link to={file} className="button" download={filename}>
-          {label}
-          <LuDownload />
-        </Link>
-      ))
-    }
-
-    <br />
-    <br />
-
-    Extended BED format for filtering genomic data:
-
-    <br />
-
-    {
-      bedDownloads.map(({ file, label, filename }) => (
-        <Link to={file} className="button" download={filename}>
-          {label}
-          <LuDownload />
-        </Link>
-      ))
-    }
+      <div class="row">
+        {
+          bedDownloads.map(({ file, label, filename }) => (
+            <Button to={file} design="bubble" download={filename}>
+              <span>{label}</span>
+              <LuDownload />
+            </Button>
+          ))
+        }
+      </div>
+    </div>
   </section>
 
   <!-- table -->
@@ -111,7 +114,7 @@ const bedDownloads = downloads.slice(3);
     <p class="center">High-level, visual overview of loci.</p>
 
     <div class="charts">
-      <div>
+      <div class="col">
         <Heading level={3}>Pathogenic Size Range</Heading>
         <PlotlyChart
           client:only="react"
@@ -119,7 +122,8 @@ const bedDownloads = downloads.slice(3);
           layout={pathSize.layout}
         />
       </div>
-      <div>
+
+      <div class="col">
         <Heading level={3}>Age of Onset</Heading>
         <PlotlyChart
           client:only="react"

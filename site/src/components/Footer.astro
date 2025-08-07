@@ -1,10 +1,11 @@
 ---
+import ContactLink from "@/components/ContactLink";
 import Link from "@/components/Link";
 ---
 
 <footer>
-  <div class="links">
-    <Link to="/about#contact">Contact</Link>
+  <div class="row">
+    <ContactLink client:only="react" />
     <Link to="/about#cite">Cite</Link>
     <Link to="/about#contribute">Contribute</Link>
   </div>
@@ -22,13 +23,13 @@ import Link from "@/components/Link";
   <div class="license">
     <span>Licensed under</span>
     <Link to="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</Link>
-    <Link to="https://creativecommons.org/licenses/by/4.0/"
-      ><img
+    <Link to="https://creativecommons.org/licenses/by/4.0/">
+      <img
         class="badge"
         src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"
         alt="CC BY 4.0"
-      /></Link
-    >
+      />
+    </Link>
   </div>
 </footer>
 
@@ -47,6 +48,7 @@ import Link from "@/components/Link";
 
   footer a {
     color: var(--white);
+    /* text-decoration: none; */
   }
 
   footer a:hover {
@@ -58,12 +60,6 @@ import Link from "@/components/Link";
     height: 100%;
     background: currentColor;
     opacity: 0.25;
-  }
-
-  .links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
   }
 
   .links > * {

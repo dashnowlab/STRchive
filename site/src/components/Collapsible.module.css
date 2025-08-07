@@ -1,0 +1,36 @@
+.details {
+  width: 100%;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 5px 10px;
+  gap: 10px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  transition:
+    background var(--fast),
+    color var(--fast);
+}
+
+.details[open] .summary {
+  margin-bottom: 10px;
+}
+
+.summary:hover {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+.icon {
+  rotate: -90deg;
+  opacity: 0.5;
+}
+
+.details[open] .icon {
+  rotate: 0deg;
+}

@@ -1,0 +1,48 @@
+.dialog {
+  display: none;
+  position: fixed;
+  width: 100dvw;
+  max-width: unset;
+  height: 100dvh;
+  max-height: unset;
+  margin: 0;
+  inset: 0;
+  padding: 0;
+  border: none;
+  background: var(--shadow);
+  text-align: left;
+}
+
+.dialog[open] {
+  display: grid;
+}
+
+.box {
+  max-width: min(calc(100dvw - 80px), var(--content));
+  max-height: calc(100dvh - 80px);
+  margin: auto;
+  padding: 20px;
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.title > :first-child {
+  flex-grow: 1;
+  font-weight: var(--bold);
+}
+
+.title > button {
+  padding: 5px;
+}
+
+.body {
+  overflow-y: auto;
+  overscroll-behavior: none;
+}

@@ -8,6 +8,7 @@ import {
   FaSortDown,
   FaSortUp,
 } from "react-icons/fa6";
+import clsx from "clsx";
 import {
   createColumnHelper,
   flexRender,
@@ -21,6 +22,7 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { preserveScroll } from "@/util/dom";
+import Button from "./Button";
 import Select from "./Select";
 import classes from "./Table.module.css";
 
@@ -91,7 +93,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
   });
 
   return (
-    <div className={classes.root}>
+    <div className={clsx("col", classes.root)}>
       <div className={classes.scroll}>
         {/* table */}
         <table
@@ -112,8 +114,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
                     {...getCol(header.column.id)?.attrs}
                   >
                     {header.isPlaceholder ? null : (
-                      <button
-                        type="button"
+                      <Button
                         disabled={!header.column.getCanSort()}
                         className={classes.th}
                         data-active={
@@ -137,7 +138,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
                         {header.column.getIsSorted() === false && (
                           <FaSort style={{ opacity: 0.1 }} />
                         )}
-                      </button>
+                      </Button>
                     )}
                   </th>
                 ))}
@@ -186,12 +187,10 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
 
       {/* controls */}
       {showControls && (
-        <div className={classes.controls}>
+        <div className={clsx("row", classes.controls)}>
           {/* pagination */}
-          <div className={classes["control-row"]}>
-            <button
-              type="button"
-              className={classes["page-button"]}
+          <div className={clsx("row", classes["control-row"])}>
+            <Button
               onClick={(event) => {
                 table.setPageIndex(0);
                 preserveScroll(event.currentTarget);
@@ -200,10 +199,8 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               aria-label="First page"
             >
               <FaAnglesLeft />
-            </button>
-            <button
-              type="button"
-              className={classes["page-button"]}
+            </Button>
+            <Button
               onClick={(event) => {
                 table.previousPage();
                 preserveScroll(event.currentTarget);
@@ -212,10 +209,8 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               aria-label="Previous page"
             >
               <FaAngleLeft />
-            </button>
-            <button
-              type="button"
-              className={classes["page-button"]}
+            </Button>
+            <Button
               onClick={(event) => {
                 const page = parseInt(window.prompt("Jump to page") || "");
                 if (Number.isNaN(page)) return;
@@ -226,10 +221,8 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               Page{" "}
               {(table.getState().pagination.pageIndex + 1).toLocaleString()} of{" "}
               {(table.getPageCount() || 1).toLocaleString()}
-            </button>
-            <button
-              type="button"
-              className={classes["page-button"]}
+            </Button>
+            <Button
               onClick={(event) => {
                 table.nextPage();
                 preserveScroll(event.currentTarget);
@@ -238,10 +231,8 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               aria-label="Next page"
             >
               <FaAngleRight />
-            </button>
-            <button
-              type="button"
-              className={classes["page-button"]}
+            </Button>
+            <Button
               onClick={(event) => {
                 table.setPageIndex(table.getPageCount() - 1);
                 preserveScroll(event.currentTarget);
@@ -250,7 +241,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               aria-label="Last page"
             >
               <FaAnglesRight />
-            </button>
+            </Button>
           </div>
 
           {/* row count */}

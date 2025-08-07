@@ -1,0 +1,13 @@
+.corner {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.1rem;
+}
+
+.corner > button {
+  background: var(--white);
+}

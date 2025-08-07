@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa6";
 import { LuBadgeInfo } from "react-icons/lu";
 import { kebabCase } from "lodash-es";
+import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
@@ -20,15 +21,26 @@ import { repo } from "@/layouts/meta";
     <Heading level={2}>Contact</Heading>
 
     <p class="center">
-      The best way to get in touch about STRchive is to start a discussion on
-      GitHub:
+      To get in touch about STRchive, use the contact buttons on <strong
+        >any page</strong
+      >, found in the <button data-spotlight="#corner-contact"
+        >corner of the screen</button
+      >
+      or the
+      <button data-spotlight="#footer-contact">bottom of the page</button>.
     </p>
 
-    <div class="center">
-      <Link to={`${repo}/discussions`} className="button">
-        <FaGithub />GitHub</Link
-      >
-    </div>
+    <script>
+      import { spotlight } from "@/util/dom";
+
+      document
+        .querySelectorAll("[data-spotlight]")
+        .forEach((element) =>
+          element.addEventListener("click", () =>
+            spotlight(element.dataset.spotlight),
+          ),
+        );
+    </script>
   </section>
 
   <section>
@@ -36,8 +48,9 @@ import { repo } from "@/layouts/meta";
 
     <blockquote>
       <span>
-	Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K., 
-	VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H., 2025.
+        Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K.,
+        VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H.,
+        2025.
       </span><br />
       <b>
         STRchive: a dynamic resource detailing population-level and
@@ -61,15 +74,17 @@ import { repo } from "@/layouts/meta";
       on GitHub:
     </p>
 
-    <div class="center">
-      <Link to={repo} className="button"> <FaGithub />GitHub</Link>
+    <div class="row">
+      <Button to={repo} design="bubble">
+        <FaGithub /><span>GitHub</span>
+      </Button>
     </div>
   </section>
 
   <section>
     <Heading level={2}>Team</Heading>
 
-    <div class="members">
+    <div class="row">
       {
         team.map((member) => (
           <Link className="member" to={member.link}>
@@ -85,13 +100,6 @@ import { repo } from "@/layouts/meta";
 </Layout>
 
 <style>
-  .members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
   .member {
     display: flex;
     flex-direction: column;

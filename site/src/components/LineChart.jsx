@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import clsx from "clsx";
 import { fitViewBox } from "@/util/dom";
 import { lerp } from "@/util/math";
 import classes from "./LineChart.module.css";
@@ -60,7 +61,7 @@ const LineChart = ({
   return (
     <svg
       ref={ref}
-      className={[className, classes.chart].join(" ")}
+      className={clsx(className, classes.chart)}
       style={{
         fontSize: fontSize + "px",
       }}

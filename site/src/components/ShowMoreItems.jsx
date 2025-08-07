@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 import classes from "./ShowMoreItems.module.css";
 
 /** add "show more/less" control to group of items if needed */
@@ -10,7 +11,8 @@ const ShowMoreItems = ({ items, limit = 9 }) => {
     <>
       {items.slice(0, expanded ? Infinity : limit)}
       {items.length > limit && (
-        <button
+        <Button
+          design="plain"
           className={classes.button}
           onClick={() => setExpanded(!expanded)}
           aria-expanded={expanded}
@@ -18,7 +20,7 @@ const ShowMoreItems = ({ items, limit = 9 }) => {
           {expanded
             ? "Show Less"
             : `Show All (+${(items.length - limit).toLocaleString()})`}
-        </button>
+        </Button>
       )}
     </>
   );

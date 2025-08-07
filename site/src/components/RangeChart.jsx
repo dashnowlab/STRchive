@@ -87,7 +87,7 @@ const RangeChart = ({
       tooltip={{
         trigger: "axis",
         formatter: ([series]) =>
-          `<div class="${classes.tooltip}">
+          `<div class="col ${classes.tooltip}">
             ${tooltip(series.dataIndex)}
           </div>`,
       }}
