@@ -36,7 +36,7 @@
         "type": [ "integer", "null" ]
       },
       "id": {
-        "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene] e.g. CANVAS_RFC1",
+        "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene] e.g. CANVAS_RFC1. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II",
         "type": "string"
       },
       "disease_id": {
