@@ -349,24 +349,6 @@ dd:empty::after {
   gap: 40px;
 }
 
-.tippy-box {
-  max-width: 350px;
-  padding: 10px 15px;
-  border-radius: var(--rounded);
-  background: var(--dark-gray);
-  color: var(--white);
-  font-size: 1rem;
-}
-
-.tippy-arrow {
-  z-index: 1;
-  color: var(--dark-gray);
-}
-
-.tippy-content {
-  padding: 0;
-}
-
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
