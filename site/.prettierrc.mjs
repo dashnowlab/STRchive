@@ -6,6 +6,7 @@ export default {
     "prettier-plugin-css-order",
   ],
   importOrder: [
+    "^@/layouts/Layout.astro",
     "^react",
     "^[a-zA-Z]",
     "^@[a-zA-Z]",

@@ -1,6 +1,7 @@
 ---
 /** LOCUS PAGE */
 
+import Layout from "@/layouts/Layout.astro";
 import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { TbDna2, TbVirus } from "react-icons/tb";
@@ -12,7 +13,6 @@ import TableOfContents from "@/components/TableOfContents";
 import { deriveLocus } from "@/data/derived";
 import { getIdentifiers } from "@/data/identifiers";
 import { getInheritance } from "@/data/inheritance";
-import Layout from "@/layouts/Layout.astro";
 import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
@@ -633,6 +633,7 @@ const blame = getJsonBlame(
     flex-wrap: wrap;
     /* justify-content: center; */
     gap: 40px;
+    text-align: left;
   }
 
   .identifiers > * {
