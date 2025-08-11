@@ -4,7 +4,6 @@
 
 <script>
   import tippy from "tippy.js";
-  import "tippy.js/dist/tippy.css";
 
   /** add tooltips to any element with data-tooltip attribute */
 
@@ -64,3 +63,31 @@
 
   window.addEventListener("load", init);
 </script>
+
+<style is:global>
+  .tippy-box {
+    max-width: 350px;
+    padding: 10px 15px;
+    border-radius: var(--rounded);
+    background: var(--dark-gray);
+    color: var(--white);
+  }
+
+  .tippy-arrow {
+    z-index: -1;
+  }
+
+  .tippy-arrow::after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    translate: 0 50%;
+    rotate: 45deg;
+    background: var(--dark-gray);
+    content: "";
+  }
+
+  [data-placement="bottom"] .tippy-arrow {
+    bottom: 100%;
+  }
+</style>

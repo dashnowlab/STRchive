@@ -1,13 +1,3 @@
-.filters {
-  justify-content: space-between;
-}
-
-@media (max-width: 600px) {
-  .filters {
-    flex-direction: column;
-  }
-}
-
 .tags-cell {
   gap: 5px;
 }

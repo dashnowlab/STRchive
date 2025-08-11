@@ -187,8 +187,7 @@ const Table = ({ loci }) => {
   return (
     <div className="col">
       {/* filters */}
-      <div className={clsx("row", classes.filters)}>
-        <TextBox placeholder="Search" value={search} onChange={setSearch} />
+      <div className="row">
         <div className="row">
           {importantTagOptions.map(({ Icon, label, color, tooltip }, index) => (
             <CheckBox
@@ -209,14 +208,18 @@ const Table = ({ loci }) => {
             />
           ))}
         </div>
-        <NumberBox
-          label="Motif max"
-          value={motif}
-          onChange={setMotif}
-          min={1}
-          max={maxMotif}
-        />
-        <div>
+
+        <div className="row">
+          <TextBox placeholder="Search" value={search} onChange={setSearch} />
+
+          <NumberBox
+            label="Motif max"
+            value={motif}
+            onChange={setMotif}
+            min={1}
+            max={maxMotif}
+          />
+
           <Select
             label="Inheritance"
             value={inheritance}
@@ -224,24 +227,24 @@ const Table = ({ loci }) => {
             options={inheritanceOptions}
           />
         </div>
-      </div>
 
-      {/* row count */}
-      <div className="row">
-        <strong>{filteredLoci.length.toLocaleString()} loci</strong>
-        <Button
-          design="plain"
-          onClick={() =>
-            /** download filtered loci */
-            downloadJson(filteredLoci, [
-              filteredLoci.length < derivedLoci.length ? "filtered" : "",
-              "loci",
-            ])
-          }
-          data-tooltip="Download filtered loci"
-        >
-          Download <LuDownload />
-        </Button>
+        {/* row count */}
+        <div className="row">
+          <strong>{filteredLoci.length.toLocaleString()} loci</strong>
+          <Button
+            design="plain"
+            onClick={() =>
+              /** download filtered loci */
+              downloadJson(filteredLoci, [
+                filteredLoci.length < derivedLoci.length ? "filtered" : "",
+                "loci",
+              ])
+            }
+            data-tooltip="Download filtered loci"
+          >
+            Download <LuDownload />
+          </Button>
+        </div>
       </div>
 
       {/* table */}

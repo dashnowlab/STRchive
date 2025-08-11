@@ -1,6 +1,14 @@
 import { BsStars } from "react-icons/bs";
-import { FaCircleExclamation, FaCircleQuestion, FaCircleStop, FaCircleCheck, FaHourglassStart } from "react-icons/fa6";
+import {
+  FaCircleCheck,
+  FaCircleExclamation,
+  FaCircleQuestion,
+  FaCircleStop,
+  FaHourglassStart,
+} from "react-icons/fa6";
 import { newThreshold } from "./derived";
+
+/** https://tailwindcss.com/docs/colors */
 
 /** top-level tag types */
 export const tagOptions = [
@@ -10,7 +18,7 @@ export const tagOptions = [
     label: "New",
     tooltip: `Less than ~${newThreshold} years old`,
     Icon: BsStars,
-    color: `var(--primary)`,
+    color: "#0ea5e9",
     important: true,
   },
   {
@@ -18,7 +26,7 @@ export const tagOptions = [
     label: "Contradictory",
     tooltip: "Evidence either disputes or refutes gene-disease relationship",
     Icon: FaCircleExclamation,
-    color: "var(--secondary)",
+    color: "#ef4444",
     important: true,
   },
   {
@@ -26,7 +34,7 @@ export const tagOptions = [
     label: "Limited",
     tooltip: "There is limited evidence for this locus-disease relationship",
     Icon: FaCircleQuestion,
-    color: `var(--tertiary)`,
+    color: "#f59e0b",
     important: true,
   },
   {
@@ -34,7 +42,7 @@ export const tagOptions = [
     label: "Supported",
     tooltip: "There is compelling evidence for this locus-disease relationship",
     Icon: FaCircleCheck,
-    color: "var(--primary)",
+    color: "#10b981",
     important: true,
   },
   {
@@ -42,6 +50,7 @@ export const tagOptions = [
     label: "Not Evaluated",
     tooltip: "This locus-disease relationship has not yet been evaluated",
     Icon: FaHourglassStart,
+    color: "#64748b",
     important: true,
   },
 
