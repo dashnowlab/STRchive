@@ -7,3 +7,4 @@ scripts/__pycache__/*
 .snakemake/incomplete/*
 .snakemake/*
 ref-data/*
+data/check-loci.txt
