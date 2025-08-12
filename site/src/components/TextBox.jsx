@@ -5,7 +5,7 @@ import classes from "./TextBox.module.css";
 
 /** text input with label */
 const TextBox = ({ label, multi, onChange, ...props }) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   const Component = multi ? "textarea" : "input";
 

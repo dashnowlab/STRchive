@@ -4,7 +4,7 @@ import classes from "./PlotlyChart.module.css";
 
 /** plotly chart that supports any plotly options */
 const PlotlyChart = ({ data, layout, ...props }) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
     if (!ref.current) return;
