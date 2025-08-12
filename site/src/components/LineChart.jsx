@@ -15,7 +15,7 @@ const LineChart = ({
   max = undefined,
   className = "",
 }) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   /** rows with missing values filtered out */
   const filteredRows = rows.filter(({ values }) =>

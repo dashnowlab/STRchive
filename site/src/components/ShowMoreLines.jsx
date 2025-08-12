@@ -4,7 +4,7 @@ import classes from "./ShowMoreLines.module.css";
 
 /** add "show more/less" control to long lines of content if needed */
 const ShowMoreLines = ({ lines = 2, children }) => {
-  const ref = useRef();
+  const ref = useRef(null);
   /** whether to show the control at all */
   const [show, setShow] = useState(false);
   /** whether to show all content */
