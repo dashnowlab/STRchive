@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import clsx from "clsx";
-import { map, pick, uniq } from "lodash-es";
+import { map, max, min, pick, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
@@ -105,19 +105,19 @@ const normalize = (string) =>
 
 /** table for main loci page */
 const Table = ({ loci }) => {
-  /** find longest motif length */
-  const maxMotif = Math.max(
-    ...loci
-      .map(
-        (d) =>
-          d?.pathogenic_motif_reference_orientation.map(
-            (motif) => motif.length,
-          ) || 0,
-      )
-      .flat()
-      .filter(Boolean),
-  );
+  /** find shortest/longest motif lengths */
+  const motifLengths = loci
+    .map(
+      (d) =>
+        d?.pathogenic_motif_reference_orientation.map(
+          (motif) => motif.length,
+        ) || 0,
+    )
+    .flat();
+  const shortestMotif = min(motifLengths);
+  const longestMotif = max(motifLengths);
 
+  /** loci with extra derived props */
   const derivedLoci = loci.map((locus) => deriveLocus(locus, loci));
 
   /** options for inheritance filter */
@@ -136,24 +136,25 @@ const Table = ({ loci }) => {
 
     /** set states. don't do as default useState values due to window obj and url param being blank on first SSR. */
 
-    const checked = map(importantTagOptions, "value").map(
-      (value) => value === tag,
-    );
-    if (checked.some(Boolean)) {
-      /** set checkboxes */
-      setTags(checked);
-    } else {
-      /** set search */
+    /** if url tag not one of important tags (checkboxes), search for tag */
+    if (!map(importantTagOptions, "value").includes(tag))
       setSearch(normalize(tag));
-    }
+    else
+      /** set checkboxes */
+      setTags(
+        map(importantTagOptions, "value").map((value) =>
+          value === tag ? true : "mixed",
+        ),
+      );
   }, []);
 
   /** selected tag filters */
   const [tags, setTags] = useState(
-    Array(importantTagOptions.length).fill(false),
+    Array(importantTagOptions.length).fill("mixed"),
   );
   /** motif filter state */
-  const [motif, setMotif] = useState(maxMotif);
+  const [motifMin, setMotifMin] = useState(shortestMotif);
+  const [motifMax, setMotifMax] = useState(longestMotif);
   /** inheritance filter state */
   const [inheritance, setInheritance] = useState("all");
   /** search filter state */
@@ -161,26 +162,28 @@ const Table = ({ loci }) => {
 
   const normalizedSearch = normalize(search);
 
-  /** filter loci */
   const filteredLoci = derivedLoci.filter(
     (d) =>
-      /** free text search visible columns */
+      /** filter by free text search visible columns */
       normalize(
         getValues(
           pick(d, [...map(cols, "key"), "locus_tags", "disease_tags"]),
         ).join(" "),
       ).includes(normalizedSearch) &&
-      /** tags */
-      (tags.filter(Boolean).length
-        ? tagOptions
-            .filter((_, index) => tags[index])
-            .every(({ value }) => d.locus_tags.includes(value))
-        : true) &&
-      /** motif */
+      /** filter by tags */
+      importantTagOptions.every(({ value }, index) => {
+        const filter = tags[index];
+        if (filter === undefined) return;
+        /** if "mixed", keep locus whether it includes tag or not */
+        if (filter === "mixed") return true;
+        /** if true, keep locus if includes tag. if false, keep if doesn't. */ else
+          return d.locus_tags.includes(value) === filter;
+      }) &&
+      /** filter by motif lengths */
       d.pathogenic_motif_reference_orientation.every(
-        (m) => m.length <= (motif || Infinity),
+        (m) => m.length >= motifMin && m.length <= motifMax,
       ) &&
-      /** inheritance */
+      /** filter by inheritance type */
       (inheritance === "all" || d.inheritance.includes(inheritance)),
   );
 
@@ -212,13 +215,26 @@ const Table = ({ loci }) => {
         <div className="row">
           <TextBox placeholder="Search" value={search} onChange={setSearch} />
 
-          <NumberBox
-            label="Motif max"
-            value={motif}
-            onChange={setMotif}
-            min={1}
-            max={maxMotif}
-          />
+          <div className={classes["motif-length"]}>
+            Motif length
+            <NumberBox
+              data-tooltip="Motif length min"
+              value={motifMin}
+              onChange={setMotifMin}
+              min={shortestMotif}
+              max={Math.min(longestMotif, motifMax)}
+              snapValues={motifLengths}
+            />
+            &ndash;
+            <NumberBox
+              data-tooltip="Motif length max"
+              value={motifMax}
+              onChange={setMotifMax}
+              min={Math.max(shortestMotif, motifMin)}
+              max={longestMotif}
+              snapValues={motifLengths}
+            />
+          </div>
 
           <Select
             label="Inheritance"

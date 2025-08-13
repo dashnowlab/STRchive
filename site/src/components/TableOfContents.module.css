@@ -4,10 +4,6 @@
   top: 0;
 }
 
-.aside svg {
-  opacity: 0.5;
-}
-
 .table {
   display: flex;
   position: absolute;
@@ -51,4 +47,8 @@
 
 .link[data-active] {
   font-weight: var(--bold);
+}
+
+.link svg {
+  opacity: 0.25;
 }

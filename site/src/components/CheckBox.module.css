@@ -3,15 +3,20 @@
   width: 20px;
   height: 20px;
   border-radius: calc(var(--rounded) / 2);
-  background: var(--white);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--white);
   box-shadow: inset 0 0 0 2px var(--dark-gray);
   accent-color: var(--primary);
 }
 
-.box:checked {
+.box[aria-checked="true"] {
   background-image: url("../assets/check.svg");
-  background-position: center;
-  background-size: 65%;
-  background-repeat: no-repeat;
   background-color: var(--primary);
+}
+
+.box[aria-checked="false"] {
+  background-image: url("../assets/x.svg");
+  background-color: var(--secondary);
 }
