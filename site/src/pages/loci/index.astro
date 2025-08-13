@@ -51,9 +51,9 @@ const bedDownloads = downloads.slice(3);
   <section>
     <Heading level={1}><LiaBarcodeSolid />Loci</Heading>
 
-    <p class="center">Tandem repeat loci associated with Mendelian diseases.</p>
-
     <div class="row">
+      <span> Tandem repeat loci associated with Mendelian diseases. </span>
+
       <Button to={`${repo}/tree/main/data`} design="bubble">
         <FaGithub /><span>Full Dataset</span>
       </Button>
@@ -66,37 +66,36 @@ const bedDownloads = downloads.slice(3);
   <section>
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
-    <div class="col">
-      <p>
-        <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions
-        for genotyping in PacBio HiFi reads:
-      </p>
+    <div class="downloads">
+      <span>
+        <strong
+          ><Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions</strong
+        >
+        <br />
+        for genotyping in PacBio HiFi reads
+      </span>
 
-      <div class="row">
-        {
-          defDownloads.map(({ file, label, filename }) => (
-            <Button to={file} design="bubble" download={filename}>
-              {label && <span>{label}</span>}
-              <LuDownload />
-            </Button>
-          ))
-        }
-      </div>
-    </div>
+      {
+        defDownloads.map(({ file, label, filename }) => (
+          <Button to={file} design="bubble" download={filename}>
+            {label && <span>{label}</span>}
+          </Button>
+        ))
+      }
 
-    <div class="col">
-      <p>Extended BED format for filtering genomic data:</p>
+      <span>
+        <strong>Extended BED format</strong>
+        <br />
+        for filtering genomic data
+      </span>
 
-      <div class="row">
-        {
-          bedDownloads.map(({ file, label, filename }) => (
-            <Button to={file} design="bubble" download={filename}>
-              {label && <span>{label}</span>}
-              <LuDownload />
-            </Button>
-          ))
-        }
-      </div>
+      {
+        bedDownloads.map(({ file, label, filename }) => (
+          <Button to={file} design="bubble" download={filename}>
+            {label && <span>{label}</span>}
+          </Button>
+        ))
+      }
     </div>
   </section>
 
@@ -127,3 +126,13 @@ const bedDownloads = downloads.slice(3);
     </div>
   </section>
 </Layout>
+
+<style>
+  .downloads {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+</style>

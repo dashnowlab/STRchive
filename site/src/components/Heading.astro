@@ -22,9 +22,10 @@ const Component = `h${level}`;
 
 <style>
   .heading {
+    --gap: 0.5em;
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: var(--gap);
     overflow-wrap: anywhere;
   }
 
@@ -34,6 +35,8 @@ const Component = `h${level}`;
 
   .anchor {
     width: 0;
+    margin-left: calc(-1 * var(--gap));
+    translate: var(--gap) 0;
     color: var(--primary);
     white-space: nowrap;
     opacity: 0;
