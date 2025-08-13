@@ -75,13 +75,15 @@ const bedDownloads = downloads.slice(3);
         for genotyping in PacBio HiFi reads
       </span>
 
-      {
-        defDownloads.map(({ file, label, filename }) => (
-          <Button to={file} design="bubble" download={filename}>
-            {label && <span>{label}</span>}
-          </Button>
-        ))
-      }
+      <span class="row">
+        {
+          defDownloads.map(({ file, label, filename }) => (
+            <Button to={file} design="bubble" download={filename}>
+              {label && <span>{label}</span>}
+            </Button>
+          ))
+        }
+      </span>
 
       <span>
         <strong>Extended BED format</strong>
@@ -89,13 +91,15 @@ const bedDownloads = downloads.slice(3);
         for filtering genomic data
       </span>
 
-      {
-        bedDownloads.map(({ file, label, filename }) => (
-          <Button to={file} design="bubble" download={filename}>
-            {label && <span>{label}</span>}
-          </Button>
-        ))
-      }
+      <span class="row">
+        {
+          bedDownloads.map(({ file, label, filename }) => (
+            <Button to={file} design="bubble" download={filename}>
+              {label && <span>{label}</span>}
+            </Button>
+          ))
+        }
+      </span>
     </div>
   </section>
 
@@ -130,9 +134,15 @@ const bedDownloads = downloads.slice(3);
 <style>
   .downloads {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: auto max-content;
     align-items: center;
     gap: 20px;
     text-align: left;
+  }
+
+  @media (max-width: 600px) {
+    .downloads {
+      grid-template-columns: auto;
+    }
   }
 </style>
