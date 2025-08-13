@@ -11,7 +11,7 @@ const TextBox = ({ label, multi, onChange, ...props }) => {
 
   return (
     <label>
-      <span>{label}</span>
+      {label && <span>{label}</span>}
       <div className={classes.container}>
         <Component
           ref={ref}

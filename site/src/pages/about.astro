@@ -1,7 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { FaGithub } from "react-icons/fa6";
-import { LuBadgeInfo } from "react-icons/lu";
+import {
+  LuBadgeInfo,
+  LuBookMarked,
+  LuHandHeart,
+  LuMail,
+  LuUsers,
+} from "react-icons/lu";
 import { kebabCase } from "lodash-es";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
@@ -18,7 +24,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}>Contact</Heading>
+    <Heading level={2}><LuMail />Contact</Heading>
 
     <p class="center">
       To get in touch about STRchive, use the contact buttons on <strong
@@ -44,7 +50,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}>Cite</Heading>
+    <Heading level={2}><LuBookMarked />Cite</Heading>
 
     <blockquote>
       <span>
@@ -65,7 +71,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}>Contribute</Heading>
+    <Heading level={2}><LuHandHeart />Contribute</Heading>
 
     <p>
       STRchive welcomes community contributions. An accurate and up to date
@@ -82,7 +88,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}>Team</Heading>
+    <Heading level={2}><LuUsers />Team</Heading>
 
     <div class="row">
       {

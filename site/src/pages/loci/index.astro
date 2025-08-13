@@ -4,7 +4,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuDownload } from "react-icons/lu";
+import { LuChartCandlestick, LuChartGantt, LuDownload } from "react-icons/lu";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
@@ -50,17 +50,21 @@ const bedDownloads = downloads.slice(3);
 
   <section>
     <Heading level={1}><LiaBarcodeSolid />Loci</Heading>
-  </section>
 
-  <!-- downloads -->
-  <section>
-    <Heading level={2}><FaArrowDown />Downloads</Heading>
+    <p class="center">Tandem repeat loci associated with Mendelian diseases.</p>
 
     <div class="row">
       <Button to={`${repo}/tree/main/data`} design="bubble">
         <FaGithub /><span>Full Dataset</span>
       </Button>
     </div>
+
+    <Table client:load loci={loci} />
+  </section>
+
+  <!-- downloads -->
+  <section>
+    <Heading level={2}><FaArrowDown />Downloads</Heading>
 
     <div class="col">
       <p>
@@ -72,7 +76,7 @@ const bedDownloads = downloads.slice(3);
         {
           defDownloads.map(({ file, label, filename }) => (
             <Button to={file} design="bubble" download={filename}>
-              <span>{label}</span>
+              {label && <span>{label}</span>}
               <LuDownload />
             </Button>
           ))
@@ -87,24 +91,13 @@ const bedDownloads = downloads.slice(3);
         {
           bedDownloads.map(({ file, label, filename }) => (
             <Button to={file} design="bubble" download={filename}>
-              <span>{label}</span>
+              {label && <span>{label}</span>}
               <LuDownload />
             </Button>
           ))
         }
       </div>
     </div>
-  </section>
-
-  <!-- table -->
-  <section>
-    <Heading level={2}><FaTable />Table</Heading>
-
-    <p class="center">
-      Full table of tandem repeat loci associated with Mendelian diseases.
-    </p>
-
-    <Table client:load loci={loci} />
   </section>
 
   <!-- plots -->
@@ -115,7 +108,7 @@ const bedDownloads = downloads.slice(3);
 
     <div class="charts">
       <div class="col">
-        <Heading level={3}>Pathogenic Size Range</Heading>
+        <Heading level={3}><LuChartGantt />Pathogenic Size Range</Heading>
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -124,7 +117,7 @@ const bedDownloads = downloads.slice(3);
       </div>
 
       <div class="col">
-        <Heading level={3}>Age of Onset</Heading>
+        <Heading level={3}><LuChartCandlestick />Age of Onset</Heading>
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}

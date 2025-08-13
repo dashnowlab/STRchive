@@ -117,6 +117,10 @@ svg {
   flex-shrink: 0;
 }
 
+svg[width="1em"] {
+  width: unset !important;
+}
+
 p {
   margin: 0;
   line-height: var(--spacing);

@@ -1,3 +1,9 @@
 .tags-cell {
   gap: 5px;
 }
+
+.motif-length {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
