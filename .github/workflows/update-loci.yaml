@@ -50,7 +50,9 @@ jobs:
 
       - name: Check loci, fetch citations already in the loci json, and update bed files (shorter)
         if: ${{ github.event_name == 'pull_request'}}
-        run: snakemake --cores all --config stages="old-refs"
+        run: |
+          rm data/check-loci.txt
+          snakemake --cores all --config stages="old-refs"
 
       # Enable this step to open an SSH session for debugging
       # - name: SSH debug
