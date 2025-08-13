@@ -1,7 +1,7 @@
 #chrom	start	stop	id	gene	reference_motif_reference_orientation	pathogenic_motif_reference_orientation	pathogenic_min	inheritance	disease
 chr1	1435798	1435818	HMNR7_VWA1	VWA1	GGCGCGGAGC	GGCGCGGAGC	1	AR	Neuronopathy, distal hereditary motor, autosomal recessive 7
 chr1	57367043	57367121	SCA37_DAB1	DAB1	AAAAT	GAAAT	31	AD	Spinocerebellar ataxia type 37
-chr1	94418421	94418444	OPDM5_ABCD3	ABCD3	GCC	GCC	118	AD	Oculopharyngodistal myopathy type 5
+chr1	94418421	94418444	OPDM5_ABCD3	ABCD3	GCC	GCC	1	AD	Oculopharyngodistal myopathy type 5
 chr1	149390802	149390842	NIID_NOTCH2NLC	NOTCH2NLC	GGC	GGC	66	AD	Neuronal intranuclear inclusion disease, Alzheimer disease and parkinsonism phenotype, Oculopharyngodistal myopathy (OPDM) type 3
 chr1	155188505	155192239	ADTKD_MUC1	MUC1	GGCTNNGGGNGCGGTGGAGCCCGGGGCNGGNCTGNTNTCCGGGGCCGAGGTGACANCNTG	GCCCACGGTGTCACCTCGGCCCCGGACACCAGGCCGGCCCCGGGCTCCACCGCCCCCCCCA	None	AD	Autosomal dominant tubulointerstitial kidney disease
 chr1	156591765	156591783	NME_NAXE	NAXE	GGGCC	GGGCC	200	AR	NAXE-related mitochondrial encephalopathy
