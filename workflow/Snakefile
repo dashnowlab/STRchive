@@ -33,8 +33,6 @@ wildcard_constraints:
 if stages == "all" or stages == "new-refs" or stages == "old-refs":
     rule all:
         input:
-            # Check loci
-            expand("{base_dir}check-loci.txt", base_dir = base_dir),
             # Citations
             expand("{base_dir}STRchive-citations.json", base_dir = base_dir),
             # TRGT bed files
@@ -56,8 +54,6 @@ if stages == "all" or stages == "new-refs" or stages == "old-refs":
 elif stages == "skip-refs":
     rule all:
         input:
-            # Check loci
-            expand("{base_dir}check-loci.txt", base_dir = base_dir),
             # TRGT bed files
             expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
