@@ -14,6 +14,9 @@ This directory contains various genotyping and annotation catalogs and based on 
 
 ## Genotypers and File Descriptions
 
+File format:
+`STRchive-disease-loci.[reference genome].[software].[file extension(s) e.g. bed, json, bed.gz]`
+
 ### TRGT
 - `STRchive-disease-loci.hg19.TRGT.bed`
 
