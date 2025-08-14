@@ -571,7 +571,7 @@
   "Gene": "NIPA1"
 },
 {
-  "LocusId": "pre-MIR7-2_CHNG3",
+  "LocusId": "MIR7-2_CHNG3",
   "ReferenceRegion": "chr15:88569433-88569452",
   "LocusStructure": "(TTTG)*",
   "VariantType": "Repeat",
@@ -581,7 +581,7 @@
   "Disease": "CHNG3",
   "NormalMax": 4.0,
   "PathologicMin": 5.0,
-  "Gene": "pre-MIR7-2"
+  "Gene": "MIR7-2"
 },
 {
   "LocusId": "CPEO_POLG",
@@ -740,7 +740,7 @@
   "DisplayRU": "TGGTGTCCACGCCGGTCTGGATGGTTCCTTTGGCCACATTCATGGCACCAGTCACCCCACTACAGACGGTGTCCTTGGTACCTGTTAGGACAGTCTTAC",
   "Disease": "MRUPAV",
   "NormalMax": 31.0,
-  "PathologicMin": 39.0,
+  "PathologicMin": 37.0,
   "Gene": "PLIN4"
 },
 {
