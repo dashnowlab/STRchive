@@ -228,6 +228,11 @@ hr {
   background: var(--light-gray);
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
 table {
   margin: 0;
   border-collapse: collapse;
