@@ -2,9 +2,10 @@
 /** LOCI PAGE */
 
 import Layout from "@/layouts/Layout.astro";
-import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
+import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuChartCandlestick, LuChartGantt, LuDownload } from "react-icons/lu";
+import { LuChartCandlestick, LuChartGantt } from "react-icons/lu";
+import { filter, groupBy, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
@@ -15,34 +16,34 @@ import Table from "@/loci/Table";
 import ageOnset from "../../../../data/plots/age-onset.json";
 import pathSize from "../../../../data/plots/path-size.json";
 import loci from "../../../../data/STRchive-loci.json";
-import hg19bed from "../../../../data/catalogs/STRchive-disease-loci.hg19.bed?url";
-import hg19defs from "../../../../data/catalogs/STRchive-disease-loci.hg19.TRGT.bed?url";
-import hg38bed from "../../../../data/catalogs/STRchive-disease-loci.hg38.bed?url";
-import hg38defs from "../../../../data/catalogs/STRchive-disease-loci.hg38.TRGT.bed?url";
-import t2tbed from "../../../../data/catalogs/STRchive-disease-loci.T2T-chm13.bed?url";
-import t2tdefs from "../../../../data/catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed?url";
 
-/** download links */
-const downloads = [
-  { file: hg19defs, label: "hg19" },
-  { file: hg38defs, label: "hg38" },
-  { file: t2tdefs, label: "T2T-chm13" },
-  { file: hg19bed, label: "hg19" },
-  { file: hg38bed, label: "hg38" },
-  { file: t2tbed, label: "T2T-chm13" },
-].map(({ ...download }) => ({
-  ...download,
-  filename:
-    /** get raw filename */
-    download.file
-      .split("/")
-      .pop()
-      /** insert version in download filename */
-      .replace(/(STRchive-disease-loci)/, `$1-v${version}`),
-}));
+/** import catalog files */
+const catalogs = Object.keys(
+  import.meta.glob(`../../../../data/catalogs/STRchive-disease-loci*.*`, {
+    query: "?url",
+    import: "default",
+    eager: true,
+  }),
+).map((path) => {
+  /** last part of path */
+  let filename = path.split("/").pop();
+  /** filename parts */
+  const [prefix, genome, software, ...extensions] = filename.split(".");
+  /** insert version in download filename */
+  filename = filename.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
+  return {
+    path,
+    filename,
+    genome,
+    software,
+    extension: ["", ...extensions].join("."),
+  };
+});
 
-const defDownloads = downloads.slice(0, 3);
-const bedDownloads = downloads.slice(3);
+/** group into cols by genome */
+const genomes = uniq(map(catalogs, "genome"));
+/** group into rows by software */
+const softwares = groupBy(catalogs, "software");
 ---
 
 <Layout title="Loci">
@@ -66,41 +67,42 @@ const bedDownloads = downloads.slice(3);
   <section>
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
-    <div class="downloads">
-      <span>
-        <strong
-          ><Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions</strong
-        >
-        <br />
-        for genotyping in PacBio HiFi reads
-      </span>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {genomes.map((genome, index) => <th>{genome}</th>)}
+        </tr>
+      </thead>
 
-      <span class="row">
+      <tbody>
         {
-          defDownloads.map(({ file, label, filename }) => (
-            <Button to={file} design="bubble" download={filename}>
-              {label && <span>{label}</span>}
-            </Button>
+          Object.entries(softwares).map(([software, entries]) => (
+            <tr>
+              <td>{software}</td>
+              {genomes.map((genome) => (
+                <td>
+                  {filter(entries, (entry) => entry.genome === genome).map(
+                    (download) => (
+                      <>
+                        <Button
+                          to={download.path}
+                          download={download.filename}
+                          design="plain"
+                        >
+                          {download.extension}
+                        </Button>
+                        &nbsp;
+                      </>
+                    ),
+                  )}
+                </td>
+              ))}
+            </tr>
           ))
         }
-      </span>
-
-      <span>
-        <strong>Extended BED format</strong>
-        <br />
-        for filtering genomic data
-      </span>
-
-      <span class="row">
-        {
-          bedDownloads.map(({ file, label, filename }) => (
-            <Button to={file} design="bubble" download={filename}>
-              {label && <span>{label}</span>}
-            </Button>
-          ))
-        }
-      </span>
-    </div>
+      </tbody>
+    </table>
   </section>
 
   <!-- plots -->
@@ -130,19 +132,3 @@ const bedDownloads = downloads.slice(3);
     </div>
   </section>
 </Layout>
-
-<style>
-  .downloads {
-    display: grid;
-    grid-template-columns: auto max-content;
-    align-items: center;
-    gap: 20px;
-    text-align: left;
-  }
-
-  @media (max-width: 600px) {
-    .downloads {
-      grid-template-columns: auto;
-    }
-  }
-</style>
