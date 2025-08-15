@@ -3,6 +3,7 @@
   --dark-gray: hsl(280, 5%, 20%);
   --gray: hsl(280, 5%, 50%);
   --light-gray: hsl(280, 5%, 95%);
+  --off-white: hsl(280, 5%, 98%);
   --white: hsl(280, 5%, 100%);
 
   --primary: hsl(190, 60%, 45%);
@@ -63,7 +64,7 @@ section.full {
 }
 
 section:nth-child(even) {
-  background: color-mix(in srgb, var(--white), var(--light-gray) 35%);
+  background: var(--off-white);
 }
 
 section:last-child {
@@ -228,9 +229,11 @@ hr {
   background: var(--light-gray);
 }
 
-.table-wrapper {
-  width: 100%;
+.table-scroll {
+  max-width: 100%;
   overflow-x: auto;
+  border-radius: var(--rounded);
+  box-shadow: var(--box-shadow);
 }
 
 table {
@@ -246,6 +249,15 @@ th {
 
 td {
   padding: 5px 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--white);
+}
+
+thead tr,
+tbody tr:nth-child(even) {
+  background: var(--off-white);
 }
 
 summary {
