@@ -26,11 +26,11 @@ const catalogs = Object.keys(
   }),
 ).map((path) => {
   /** last part of path */
-  let filename = path.split("/").pop();
+  path = path.split("/").pop();
   /** filename parts */
-  const [prefix, genome, software, ...extensions] = filename.split(".");
+  const [prefix, genome, software, ...extensions] = path.split(".");
   /** insert version in download filename */
-  filename = filename.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
+  const filename = path.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
   return {
     path,
     filename,
@@ -45,8 +45,10 @@ const rows = [
   {
     key: "general",
     primary: "General",
-    secondary: "a general-purpose extended bed file for filtering and annotating loci",
+    secondary:
+      "a general-purpose extended bed file for filtering and annotating loci",
   },
+
   {
     key: "TRGT",
     primary: "TRGT",
@@ -74,7 +76,8 @@ const rows = [
   {
     key: "stranger",
     primary: "Stranger",
-    secondary: "for annotating straglr, TRGT or ExpansionHunter allele sizes with pathologic implications",
+    secondary:
+      "for annotating TRGT or ExpansionHunter allele sizes with pathologic implications.",
     link: "https://github.com/Clinical-Genomics/stranger",
   },
 ];
@@ -118,13 +121,16 @@ const cols = uniq(map(catalogs, "genome"));
             rows.map((row) => (
               <tr>
                 <td>
-                
                   {row.link ? (
-                    <Link to={row.link}><strong>{row.primary}</strong></Link>
+                    <Link to={row.link}>
+                      <strong>{row.primary}</strong>
+                    </Link>
                   ) : (
-                    <div><strong>{row.primary}</strong></div>
+                    <div>
+                      <strong>{row.primary}</strong>
+                    </div>
                   )}
-                  
+
                   <div>{row.secondary}</div>
                 </td>
                 {cols.map((col) => (
@@ -136,9 +142,10 @@ const cols = uniq(map(catalogs, "genome"));
                           catalog.software == row.key && catalog.genome === col,
                       ).map((download) => (
                         <Button
-                          to={download.path}
+                          to={`${repo}/blob/main/data/catalogs/${download.path}`}
                           download={download.filename}
                           design="plain"
+                          arrow={false}
                         >
                           {download.extension}
                         </Button>

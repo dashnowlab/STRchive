@@ -119,7 +119,7 @@ const blame = getJsonBlame(
             <div class="identifier-list">
               {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
-                  <Link to={info} data-tooltip={tooltip} showArrow={false}>
+                  <Link to={info} data-tooltip={tooltip} arrow={false}>
                     {name}
                   </Link>
                   <div class="identifier-links">
