@@ -11,7 +11,7 @@ import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
-import { repo, version } from "@/layouts/meta";
+import { repo, repoRaw, version } from "@/layouts/meta";
 import Table from "@/loci/Table";
 import ageOnset from "../../../../data/plots/age-onset.json";
 import pathSize from "../../../../data/plots/path-size.json";
@@ -142,7 +142,7 @@ const cols = uniq(map(catalogs, "genome"));
                           catalog.software == row.key && catalog.genome === col,
                       ).map((download) => (
                         <Button
-                          to={`${repo}/blob/main/data/catalogs/${download.path}`}
+                          to={`${repoRaw}/refs/heads/main/data/catalogs/${download.path}`}
                           download={download.filename}
                           design="plain"
                           arrow={false}
