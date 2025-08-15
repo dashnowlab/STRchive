@@ -45,33 +45,37 @@ const rows = [
   {
     key: "general",
     primary: "General",
-    secondary: "Lorem ipsum",
+    secondary: "a general-purpose extended bed file for filtering and annotating loci",
   },
   {
     key: "stranger",
     primary: "Stranger",
-    secondary: "Lorem ipsum",
+    secondary: "for annotating TRGT or ExpansionHunter allele sizes with pathologic implications.",
+    link: "https://github.com/Clinical-Genomics/stranger",
   },
   {
     key: "TRGT",
     primary: "TRGT",
-    secondary: "for genotyping in PacBio HiFi reads",
+    secondary: "for genotyping full allele sequences in PacBio HiFi reads",
     link: "https://github.com/PacificBiosciences/trgt",
   },
   {
     key: "atarva",
     primary: "Atarva",
-    secondary: "Lorem ipsum",
+    secondary: "for genotyping full allele sequences in long-read data",
+    link: "https://github.com/SowpatiLab/ATaRVa",
   },
   {
     key: "longTR",
     primary: "LongTR",
-    secondary: "Lorem ipsum",
+    secondary: "for genotyping full allele sequences in long-read data",
+    link: "https://github.com/gymrek-lab/LongTR",
   },
   {
     key: "straglr",
     primary: "Straglr",
-    secondary: "Lorem ipsum",
+    secondary: "for genotyping allele sizes in long read-data",
+    link: "https://github.com/bcgsc/straglr",
   },
 ];
 
@@ -114,13 +118,14 @@ const cols = uniq(map(catalogs, "genome"));
             rows.map((row) => (
               <tr>
                 <td>
-                  <strong>{row.primary}</strong>
-                  <br />
+                
                   {row.link ? (
-                    <Link to={row.link}>{row.secondary}</Link>
+                    <Link to={row.link}><strong>{row.primary}</strong></Link>
                   ) : (
-                    <div>{row.secondary}</div>
+                    <div><strong>{row.primary}</strong></div>
                   )}
+                  
+                  <div>{row.secondary}</div>
                 </td>
                 {cols.map((col) => (
                   <td>
