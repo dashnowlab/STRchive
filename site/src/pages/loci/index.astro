@@ -40,10 +40,43 @@ const catalogs = Object.keys(
   };
 });
 
-/** group into cols by genome */
-const genomes = uniq(map(catalogs, "genome"));
-/** group into rows by software */
-const softwares = groupBy(catalogs, "software");
+/** rows, by software */
+const rows = [
+  {
+    key: "general",
+    primary: "Lorem ipsum",
+    secondary: "Lorem ipsum",
+  },
+  {
+    key: "stranger",
+    primary: "Lorem ipsum",
+    secondary: "Lorem ipsum",
+  },
+  {
+    key: "TRGT",
+    primary: "TRGT definitions",
+    secondary: "for genotyping in PacBio HiFi reads",
+    link: "https://github.com/PacificBiosciences/trgt",
+  },
+  {
+    key: "atarva",
+    primary: "Lorem ipsum",
+    secondary: "Lorem ipsum",
+  },
+  {
+    key: "longTR",
+    primary: "Lorem ipsum",
+    secondary: "Lorem ipsum",
+  },
+  {
+    key: "straglr",
+    primary: "Lorem ipsum",
+    secondary: "Lorem ipsum",
+  },
+];
+
+/** columns, by genome */
+const cols = uniq(map(catalogs, "genome"));
 ---
 
 <Layout title="Loci">
@@ -67,24 +100,36 @@ const softwares = groupBy(catalogs, "software");
   <section>
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          {genomes.map((genome, index) => <th>{genome}</th>)}
-        </tr>
-      </thead>
+    <div class="table-scroll">
+      <table class="downloads">
+        <thead>
+          <tr>
+            <th></th>
+            {cols.map((col) => <th>{col}</th>)}
+          </tr>
+        </thead>
 
-      <tbody>
-        {
-          Object.entries(softwares).map(([software, entries]) => (
-            <tr>
-              <td>{software}</td>
-              {genomes.map((genome) => (
+        <tbody>
+          {
+            rows.map((row) => (
+              <tr>
                 <td>
-                  {filter(entries, (entry) => entry.genome === genome).map(
-                    (download) => (
-                      <>
+                  <strong>{row.primary}</strong>
+                  <br />
+                  {row.link ? (
+                    <Link to={row.link}>{row.secondary}</Link>
+                  ) : (
+                    <div>{row.secondary}</div>
+                  )}
+                </td>
+                {cols.map((col) => (
+                  <td>
+                    <div class="buttons">
+                      {filter(
+                        catalogs,
+                        (catalog) =>
+                          catalog.software == row.key && catalog.genome === col,
+                      ).map((download) => (
                         <Button
                           to={download.path}
                           download={download.filename}
@@ -92,17 +137,16 @@ const softwares = groupBy(catalogs, "software");
                         >
                           {download.extension}
                         </Button>
-                        &nbsp;
-                      </>
-                    ),
-                  )}
-                </td>
-              ))}
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
+                      ))}
+                    </div>
+                  </td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- plots -->
@@ -132,3 +176,17 @@ const softwares = groupBy(catalogs, "software");
     </div>
   </section>
 </Layout>
+
+<style>
+  .downloads td:first-child {
+    width: 35%;
+    text-align: left;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+</style>
