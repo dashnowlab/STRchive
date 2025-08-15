@@ -7,3 +7,4 @@ const metadata = parse(metadataFile);
 export const version = metadata.version;
 export const date = metadata["date-released"];
 export const repo = "https://github.com/dashnowlab/STRchive";
+export const repoRaw = "https://raw.githubusercontent.com/dashnowlab/STRchive";

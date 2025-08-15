@@ -2,14 +2,6 @@
   gap: 10px;
 }
 
-.scroll {
-  max-width: 100%;
-  overflow-x: auto;
-  border-radius: var(--rounded);
-  background: var(--white);
-  box-shadow: var(--box-shadow);
-}
-
 .table {
   min-width: 100%;
 }

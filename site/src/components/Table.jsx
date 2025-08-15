@@ -94,7 +94,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
 
   return (
     <div className={clsx("col", classes.root)}>
-      <div className={classes.scroll}>
+      <div className="table-scroll">
         {/* table */}
         <table
           className={classes.table}

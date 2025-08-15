@@ -1,4 +1,4 @@
-import { debounce, now } from "lodash-es";
+import { debounce } from "lodash-es";
 import { sleep } from "@/util/misc";
 
 /** scroll page so that mouse stays at same position in document */

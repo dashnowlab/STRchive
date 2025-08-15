@@ -2,47 +2,88 @@
 /** LOCI PAGE */
 
 import Layout from "@/layouts/Layout.astro";
-import { FaArrowDown, FaChartLine, FaGithub, FaTable } from "react-icons/fa6";
+import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuChartCandlestick, LuChartGantt, LuDownload } from "react-icons/lu";
+import { LuChartCandlestick, LuChartGantt } from "react-icons/lu";
+import { filter, groupBy, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
-import { repo, version } from "@/layouts/meta";
+import { repo, repoRaw, version } from "@/layouts/meta";
 import Table from "@/loci/Table";
 import ageOnset from "../../../../data/plots/age-onset.json";
 import pathSize from "../../../../data/plots/path-size.json";
-import hg19bed from "../../../../data/STRchive-disease-loci.hg19.bed?url";
-import hg19defs from "../../../../data/STRchive-disease-loci.hg19.TRGT.bed?url";
-import hg38bed from "../../../../data/STRchive-disease-loci.hg38.bed?url";
-import hg38defs from "../../../../data/STRchive-disease-loci.hg38.TRGT.bed?url";
-import t2tbed from "../../../../data/STRchive-disease-loci.T2T-chm13.bed?url";
-import t2tdefs from "../../../../data/STRchive-disease-loci.T2T-chm13.TRGT.bed?url";
 import loci from "../../../../data/STRchive-loci.json";
 
-/** download links */
-const downloads = [
-  { file: hg19defs, label: "hg19" },
-  { file: hg38defs, label: "hg38" },
-  { file: t2tdefs, label: "T2T-chm13" },
-  { file: hg19bed, label: "hg19" },
-  { file: hg38bed, label: "hg38" },
-  { file: t2tbed, label: "T2T-chm13" },
-].map(({ ...download }) => ({
-  ...download,
-  filename:
-    /** get raw filename */
-    download.file
-      .split("/")
-      .pop()
-      /** insert version in download filename */
-      .replace(/(STRchive-disease-loci)/, `$1-v${version}`),
-}));
+/** import catalog files */
+const catalogs = Object.keys(
+  import.meta.glob(`../../../../data/catalogs/STRchive-disease-loci*.*`, {
+    query: "?url",
+    import: "default",
+    eager: true,
+  }),
+).map((path) => {
+  /** last part of path */
+  path = path.split("/").pop();
+  /** filename parts */
+  const [prefix, genome, software, ...extensions] = path.split(".");
+  /** insert version in download filename */
+  const filename = path.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
+  return {
+    path,
+    filename,
+    genome,
+    software,
+    extension: ["", ...extensions].join("."),
+  };
+});
 
-const defDownloads = downloads.slice(0, 3);
-const bedDownloads = downloads.slice(3);
+/** rows, by software */
+const rows = [
+  {
+    key: "general",
+    primary: "General",
+    secondary:
+      "a general-purpose extended bed file for filtering and annotating loci",
+  },
+
+  {
+    key: "TRGT",
+    primary: "TRGT",
+    secondary: "for genotyping full allele sequences in PacBio HiFi reads",
+    link: "https://github.com/PacificBiosciences/trgt",
+  },
+  {
+    key: "atarva",
+    primary: "Atarva",
+    secondary: "for genotyping full allele sequences in long-read data",
+    link: "https://github.com/SowpatiLab/ATaRVa",
+  },
+  {
+    key: "longTR",
+    primary: "LongTR",
+    secondary: "for genotyping full allele sequences in long-read data",
+    link: "https://github.com/gymrek-lab/LongTR",
+  },
+  {
+    key: "straglr",
+    primary: "Straglr",
+    secondary: "for genotyping allele sizes in long read-data",
+    link: "https://github.com/bcgsc/straglr",
+  },
+  {
+    key: "stranger",
+    primary: "Stranger",
+    secondary:
+      "for annotating TRGT or ExpansionHunter allele sizes with pathologic implications.",
+    link: "https://github.com/Clinical-Genomics/stranger",
+  },
+];
+
+/** columns, by genome */
+const cols = uniq(map(catalogs, "genome"));
 ---
 
 <Layout title="Loci">
@@ -66,40 +107,57 @@ const bedDownloads = downloads.slice(3);
   <section>
     <Heading level={2}><FaArrowDown />Downloads</Heading>
 
-    <div class="downloads">
-      <span>
-        <strong
-          ><Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link> definitions</strong
-        >
-        <br />
-        for genotyping in PacBio HiFi reads
-      </span>
+    <div class="table-scroll">
+      <table class="downloads">
+        <thead>
+          <tr>
+            <th></th>
+            {cols.map((col) => <th>{col}</th>)}
+          </tr>
+        </thead>
 
-      <span class="row">
-        {
-          defDownloads.map(({ file, label, filename }) => (
-            <Button to={file} design="bubble" download={filename}>
-              {label && <span>{label}</span>}
-            </Button>
-          ))
-        }
-      </span>
+        <tbody>
+          {
+            rows.map((row) => (
+              <tr>
+                <td>
+                  {row.link ? (
+                    <Link to={row.link}>
+                      <strong>{row.primary}</strong>
+                    </Link>
+                  ) : (
+                    <div>
+                      <strong>{row.primary}</strong>
+                    </div>
+                  )}
 
-      <span>
-        <strong>Extended BED format</strong>
-        <br />
-        for filtering genomic data
-      </span>
-
-      <span class="row">
-        {
-          bedDownloads.map(({ file, label, filename }) => (
-            <Button to={file} design="bubble" download={filename}>
-              {label && <span>{label}</span>}
-            </Button>
-          ))
-        }
-      </span>
+                  <div>{row.secondary}</div>
+                </td>
+                {cols.map((col) => (
+                  <td>
+                    <div class="buttons">
+                      {filter(
+                        catalogs,
+                        (catalog) =>
+                          catalog.software == row.key && catalog.genome === col,
+                      ).map((download) => (
+                        <Button
+                          to={`${repoRaw}/refs/heads/main/data/catalogs/${download.path}`}
+                          download={download.filename}
+                          design="plain"
+                          arrow={false}
+                        >
+                          {download.extension}
+                        </Button>
+                      ))}
+                    </div>
+                  </td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -132,17 +190,15 @@ const bedDownloads = downloads.slice(3);
 </Layout>
 
 <style>
-  .downloads {
-    display: grid;
-    grid-template-columns: auto max-content;
-    align-items: center;
-    gap: 20px;
+  .downloads td:first-child {
+    width: 35%;
     text-align: left;
   }
 
-  @media (max-width: 600px) {
-    .downloads {
-      grid-template-columns: auto;
-    }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
   }
 </style>

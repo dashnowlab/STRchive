@@ -7,6 +7,7 @@
   padding: 7.5px;
   gap: 10px;
   border-radius: var(--rounded);
+  text-decoration: none;
 }
 
 .button:has(span) {
@@ -28,7 +29,6 @@
   border-radius: 999px;
   background: none;
   color: currentColor;
-  text-decoration: none;
 }
 
 .bubble:hover {

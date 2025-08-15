@@ -109,14 +109,27 @@
         "description": "Gene symbol e.g. RFC1",
         "type": [ "string", "null" ]
       },
-      "flank_motif": {
-        "description": "Structure of the locus with any flanking motifs. The pathogenic locus should be indicated with n copies.",
-        "examples": [ "(CAG)nCAACAG(CCG)12" ],
-        "type": [ "string", "null" ]
-      },
       "locus_structure": {
-        "description": "Structure of the locus including the order of motifs and any interruptions e.g. (CAG)*CAACAG(CCG)*",
-        "type": [ "string", "null" ]
+        "description": "Structure of the locus including the order of motifs and any interruptions. The main_repeat will typically have a count of null. Only one motif can have a null count.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "motif": {
+              "type": [ "string", "null" ],
+              "pattern": "^[ACGTN]+$"
+            },
+            "count": {
+              "type": [ "integer", "null" ],
+              "minimum": 0
+            },
+            "type": {
+              "type": [ "string", "null" ],
+              "enum": [ "main_repeat", "interruption", "flank_repeat" ]
+            }
+          },
+          "required": [ "motif", "count", "type" ]
+        }
       },
       "inheritance": {
         "description": "Inheritance pattern(s) of the disease e.g. AD for autosomal dominant",
@@ -415,7 +428,6 @@
       "unknown_motif_gene_orientation",
       "disease",
       "gene",
-      "flank_motif",
       "locus_structure",
       "inheritance",
       "location_in_gene",
