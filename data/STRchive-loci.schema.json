@@ -110,7 +110,7 @@
         "type": [ "string", "null" ]
       },
       "locus_structure": {
-        "description": "Structure of the locus including the order of motifs and any interruptions. The main_repeat will typically have a count of null. Only one motif can have a null count.",
+        "description": "Structure of the locus including the order of motifs and any interruptions. Only one motif can have a null count.",
         "type": "array",
         "items": {
           "type": "object",
@@ -124,8 +124,24 @@
               "minimum": 0
             },
             "type": {
-              "type": [ "string", "null" ],
-              "enum": [ "main_repeat", "interruption", "flank_repeat" ]
+              "anyOf": [
+                {
+                  "const": "pathogenic_repeat",
+                  "title": "The pathogenic_repeat will typically have a count of null."
+                },
+                {
+                  "const": "flank_repeat",
+                  "title": "Flanking repeat. Must be outside the locus coordinates. The order in the json will be used to determine the location. For example, if it occurs before the pathogenic repeat, it will be considered 5' flanking. These are expected to be present in the reference genome."
+                },
+                {
+                  "const": "internal_repeat",
+                  "title": "A repeat that is located within the locus coordinates. It may occur in only some alleles and may be absent from the reference genome."
+                },
+                {
+                  "const": "interruption",
+                  "title": "A non-repetitive interruption in the repeat structure, e.g. an insertion that doesn't match the surrounding motif. Must be within the locus coordinates."
+                }
+              ]
             }
           },
           "required": [ "motif", "count", "type" ]

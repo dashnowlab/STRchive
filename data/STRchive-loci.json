@@ -716,7 +716,7 @@
   {
     "motif": "CAG",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   },
   {
     "motif": "CCG",
@@ -794,7 +794,7 @@
   {
     "motif": "CTG",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   }],
   "inheritance": ["AD"],
   "type": "Coding/3' UTR",
@@ -1114,7 +1114,7 @@
   {
     "motif": "CAGG",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   },
   {
     "motif": "CAGA",
@@ -1318,12 +1318,12 @@
   {
     "motif": "AAAAT",
     "count": 7,
-    "type": "flank_repeat"
+    "type": "internal_repeat"
   },
   {
     "motif": "GAAAT",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   }],
   "inheritance": ["AD"],
   "type": "Intronic",
@@ -1454,7 +1454,7 @@
   {
     "motif": "TTC",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   },
   {
     "motif": "T",
@@ -1847,7 +1847,7 @@
   {
     "motif": "GAA",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   }],
   "inheritance": ["AR"],
   "type": "Intronic",
@@ -2293,7 +2293,7 @@
   {
     "motif": "CAG",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   },
   {
     "motif": "CAACAG",
@@ -2812,7 +2812,7 @@
   {
     "motif": "GGCCTG",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   },
   {
     "motif": "CGCCTG",
@@ -3210,7 +3210,7 @@
   {
     "motif": "GCT",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   }],
   "inheritance": [],
   "type": "Coding",
@@ -3409,7 +3409,7 @@
   {
     "motif": "CCTCATGGTGGTGGCTGGGGGCAG",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   }],
   "inheritance": ["AD"],
   "type": "Coding",
@@ -4485,7 +4485,7 @@
   {
     "motif": "GCC",
     "count": 7,
-    "type": "flank_repeat"
+    "type": "internal_repeat"
   },
   {
     "motif": "TCGGCTCGCCGCTGCTCCTCCTCC",
@@ -4495,7 +4495,7 @@
   {
     "motif": "GCC",
     "count": null,
-    "type": "main_repeat"
+    "type": "pathogenic_repeat"
   }],
   "inheritance": ["AR"],
   "type": "5' UTR",
