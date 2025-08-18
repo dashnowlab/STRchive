@@ -2234,7 +2234,7 @@
   "webstr_hg19": ["STR_796395"],
   "tr_atlas": ["TR24032"],
   "disease_description": "Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present [@omim:186000].",
-  "locus_tags": ["limited_evidence", "contraction"],
+  "locus_tags": ["supported_evidence", "contraction"],
   "disease_tags": [],
   "references": ["pmid:38467784", "pmid:8614804", "pmid:22406499", "genereviews:NBK535148", "pmid:24038517", "omim:186000"],
   "additional_literature": ["pmid:34159400", "pmid:32652111", "pmid:32386547", "pmid:19841179", "pmid:19546318", "pmid:17935235", "pmid:12414828", "pmid:12116248", "pmid:11543619"]
@@ -2554,7 +2554,7 @@
   "webstr_hg19": ["STR_492924"],
   "tr_atlas": ["TR192005"],
   "disease_description": "Nongoitrous congenital hypothyroidism-3 (CHNG3) is characterized by infantile-onset clinical and subclinical hypothyroidism associated with a small thyroid gland, high circulating TSH, normal free T4 levels, and normal or mildly increased serum thyroglobulin. Untreated patients or patients who discontinue treatment show a characteristic transition to multinodular goiter (MNG) with age [@omim:609893].",
-  "locus_tags": ["limited_evidence", "contraction"],
+  "locus_tags": ["supported_evidence", "contraction"],
   "disease_tags": [],
   "references": ["pmid:38714868", "pmid:38714869", "omim:609893"],
   "additional_literature": []
@@ -2682,7 +2682,7 @@
   "webstr_hg19": [],
   "tr_atlas": ["TR7952"],
   "disease_description": "Patients with NAXE-related mitochondrial encephalopathy exhibit developmental delay, cognitive regression, altered consciousness, abnormalities in eye movement (including nystagmus), muscle weakness, respiratory failure, seizure, ataxia, and gait disturbance at the age of 1 to 2 years. The disease is characterized by fluctuating symptoms over time, often exacerbated by febrile illness; it is progressive and fatal in the long term [@pmid:39455596].",
-  "locus_tags": ["supported_evidence"],
+  "locus_tags": ["limited_evidence"],
   "disease_tags": [],
   "references": ["pmid:39455596"],
   "additional_literature": []
@@ -2938,7 +2938,7 @@
   "webstr_hg19": ["STR_173942"],
   "tr_atlas": ["TR102881"],
   "disease_description": "Oculopharyngodistal myopathy and white matter abnormalities [@pmid:38876750]; Ptosis, ophthalmoplegia, dysphagia, dysarthria [@pmid:39349043].",
-  "locus_tags": ["limited_evidence", "length_affects_severity", "length_affects_phenotype"],
+  "locus_tags": ["supported_evidence", "length_affects_severity", "length_affects_phenotype"],
   "disease_tags": [],
   "references": ["pmid:31332380", "omim:618637", "pmid:36169768", "pmid:38159879", "pmid:37923380", "pmid:38876750", "pmid:39349043"],
   "additional_literature": ["pmid:40645757", "pmid:39308795", "pmid:35152460"]
@@ -3194,7 +3194,7 @@
   "webstr_hg19": ["STR_493430"],
   "tr_atlas": ["TR137533"],
   "disease_description": "sensory ataxic neuropathy, dysarthria, and ophtalmoparesis [@pmid:38876750].",
-  "locus_tags": ["limited_evidence", "proposed_modifier"],
+  "locus_tags": ["conflicting_evidence", "proposed_modifier"],
   "disease_tags": [],
   "references": ["pmid:20399836", "pmid:20826197", "pmid:10196696", "pmid:22963882", "pmid:19043662", "omim:258450", "omim:157640", "pmid:38876750"],
   "additional_literature": ["pmid:39812846", "pmid:34600502", "pmid:29029963", "pmid:28444220", "pmid:25767537", "pmid:24491464", "pmid:23912752", "pmid:23493802", "pmid:20803511", "pmid:15694274", "pmid:12036482"]
@@ -3514,7 +3514,7 @@
   "webstr_hg19": ["STR_1096016"],
   "tr_atlas": ["TR49300"],
   "disease_description": "Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-  "locus_tags": ["supported_evidence", "motif_affects_penetrance"],
+  "locus_tags": ["limited_evidence", "motif_affects_penetrance"],
   "disease_tags": ["familial_adult_myoclonic_epilepsy"],
   "references": ["pmid:30351492", "pmid:29507423", "pmid:35245110", "pmid:38876750"],
   "additional_literature": ["pmid:36092952", "pmid:33040085", "pmid:31483537"]
@@ -4410,7 +4410,7 @@
   "webstr_hg19": [],
   "tr_atlas": ["TR32"],
   "disease_description": "Autosomal recessive distal hereditary motor neuronopathy-7 (HMNR7) is characterized by onset of lower leg weakness in the first decade. Affected individuals have difficulty climbing stairs and problems standing on the heels... Most patients have foot deformities, and some may have leg muscle atrophy. The disorder is slowly progressive and often involves the upper limbs [@omim:619216].",
-  "locus_tags": ["limited_evidence", "contraction"],
+  "locus_tags": ["supported_evidence", "contraction"],
   "disease_tags": [],
   "references": ["pmid:33559681", "omim:619216", "pmid:38467784", "genereviews:NBK535148"],
   "additional_literature": []
@@ -4538,7 +4538,7 @@
   "webstr_hg19": ["STR_1006941"],
   "tr_atlas": ["TR38932"],
   "disease_description": "Cortical tremor, seizures with generalised motor (tonic-clonic) onset [@pmid:38876750].",
-  "locus_tags": ["limited_evidence", "motif_affects_penetrance"],
+  "locus_tags": ["supported_evidence", "motif_affects_penetrance"],
   "disease_tags": ["familial_adult_myoclonic_epilepsy"],
   "references": ["pmid:22713812", "pmid:31539032", "pmid:38876750"],
   "additional_literature": ["pmid:38128822"]
@@ -4730,7 +4730,7 @@
   "webstr_hg19": ["STR_1596381"],
   "tr_atlas": ["TR173313"],
   "disease_description": "VACTERL is an acronym for vertebral anomalies (similar to those of spondylocostal dysplasia), anal atresia, cardiac malformations, tracheoesophageal fistula, renal anomalies (urethral atresia with hydronephrosis), and limb anomalies [@omim:314390].",
-  "locus_tags": ["supported_evidence"],
+  "locus_tags": ["limited_evidence"],
   "disease_tags": ["phenotypic_spectrum"],
   "references": ["pmid:17581576", "pmid:38467784", "pmid:20452998", "pmid:32639022", "genereviews:NBK535148", "omim:314390"],
   "additional_literature": ["pmid:40585427"]
@@ -4794,7 +4794,7 @@
   "webstr_hg19": ["STR_1325788"],
   "tr_atlas": ["TR300995"],
   "disease_description": "A spectrum of developmental disorders that includes autism, and Asperger syndrome. Signs and symptoms include poor communication skills, defective social interactions, and repetitive behaviors [@mondo:0005258].",
-  "locus_tags": ["limited_evidence"],
+  "locus_tags": ["supported_evidence"],
   "disease_tags": [],
   "references": ["pmid:25196122", "omim:616181", "mondo:0005258"],
   "additional_literature": []
