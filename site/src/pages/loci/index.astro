@@ -22,7 +22,10 @@ import schema from "../../../../data/STRchive-loci.schema.json";
 /** test schema validation */
 const ajv = new Ajv({ strict: false });
 const validate = ajv.compile(schema);
-const isValid = loci.map((locus) => validate(locus));
+const isValid = loci.map((locus) => {
+  validate(locus);
+  return validate.errors;
+});
 console.log(isValid);
 
 /** import catalog files */
