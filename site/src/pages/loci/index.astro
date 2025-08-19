@@ -5,6 +5,7 @@ import Layout from "@/layouts/Layout.astro";
 import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuChartCandlestick, LuChartGantt } from "react-icons/lu";
+import Ajv from "ajv/dist/2020";
 import { filter, groupBy, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
@@ -16,6 +17,13 @@ import Table from "@/loci/Table";
 import ageOnset from "../../../../data/plots/age-onset.json";
 import pathSize from "../../../../data/plots/path-size.json";
 import loci from "../../../../data/STRchive-loci.json";
+import schema from "../../../../data/STRchive-loci.schema.json";
+
+/** test schema validation */
+const ajv = new Ajv({ strict: false });
+const validate = ajv.compile(schema);
+const isValid = loci.map((locus) => validate(locus));
+console.log(isValid);
 
 /** import catalog files */
 const catalogs = Object.keys(
