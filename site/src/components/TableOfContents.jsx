@@ -6,7 +6,7 @@ import Button from "./Button";
 import classes from "./TableOfContents.module.css";
 
 /** all used heading elements */
-const headingSelector = "h1, h2, h3, h4";
+const headingSelector = "h1[id], h2[id], h3[id], h4[id]";
 
 /**
  * floating table of contents that outlines sections/headings on page. can be

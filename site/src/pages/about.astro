@@ -10,7 +10,7 @@ import {
 } from "react-icons/lu";
 import { kebabCase } from "lodash-es";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading.astro";
+import Heading from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import { team } from "@/data/team";
@@ -20,11 +20,11 @@ import { repo } from "@/layouts/meta";
 <Layout title="About">
   <TableOfContents client:only="react" />
   <section>
-    <Heading level={1}><LuBadgeInfo />About</Heading>
+    <Heading client:load level={1}><LuBadgeInfo />About</Heading>
   </section>
 
   <section>
-    <Heading level={2}><LuMail />Contact</Heading>
+    <Heading client:load level={2}><LuMail />Contact</Heading>
 
     <p class="center">
       To get in touch about STRchive, use the contact buttons on <strong
@@ -50,7 +50,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}><LuBookMarked />Cite</Heading>
+    <Heading client:load level={2}><LuBookMarked />Cite</Heading>
 
     <blockquote>
       <span>
@@ -71,7 +71,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}><LuHandHeart />Contribute</Heading>
+    <Heading client:load level={2}><LuHandHeart />Contribute</Heading>
 
     <p>
       STRchive welcomes community contributions. An accurate and up to date
@@ -88,7 +88,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading level={2}><LuUsers />Team</Heading>
+    <Heading client:load level={2}><LuUsers />Team</Heading>
 
     <div class="row">
       {

@@ -3,7 +3,7 @@
 
 import Layout from "@/layouts/Layout.astro";
 import { LuFeather } from "react-icons/lu";
-import Heading from "@/components/Heading.astro";
+import Heading from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import Form from "@/edit/Form";
 import loci from "~/STRchive-loci.json";
@@ -23,7 +23,7 @@ const locus = loci.find((locus) => locus.id === id) || {};
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading level={1}><LuFeather />Edit Locus</Heading>
+    <Heading client:load level={1}><LuFeather />Edit Locus</Heading>
   </section>
 
   <Form client:load data={locus} />

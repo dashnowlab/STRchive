@@ -7,7 +7,7 @@ import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { LuFeather } from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading.astro";
+import Heading from "@/components/Heading";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
@@ -57,7 +57,7 @@ const blame = getJsonBlame(
 
   <!-- overview -->
   <section>
-    <Heading level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
+    <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
     {
       !!locus.locus_tags.length && (
@@ -145,7 +145,7 @@ const blame = getJsonBlame(
 
   <!-- disease info -->
   <section>
-    <Heading level={2}>Disease</Heading>
+    <Heading client:load level={2}>Disease</Heading>
     {
       !!locus.disease_tags.length && (
         <div class="row">
@@ -246,7 +246,7 @@ const blame = getJsonBlame(
 
   <!-- locus info -->
   <section>
-    <Heading level={2}>Locus</Heading>
+    <Heading client:load level={2}>Locus</Heading>
 
     <div class="boxes">
       {
@@ -333,7 +333,7 @@ const blame = getJsonBlame(
     </div>
 
     <!-- allele info -->
-    <Heading level={2}>Alleles</Heading>
+    <Heading client:load level={2}>Alleles</Heading>
 
     <div class="allele-list">
       {
@@ -447,7 +447,9 @@ const blame = getJsonBlame(
   {
     gnomad[id] && (
       <section>
-        <Heading level={2}>gnomAD</Heading>
+        <Heading client:load level={2}>
+          gnomAD
+        </Heading>
         {gnomad[id].reliable ? (
           <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
         ) : (
@@ -467,7 +469,9 @@ const blame = getJsonBlame(
   {
     !!locus.references.length && (
       <section>
-        <Heading level={2}>References</Heading>
+        <Heading client:load level={2}>
+          References
+        </Heading>
 
         <p class="center">
           Direct supporting references for info on this page.
@@ -486,7 +490,9 @@ const blame = getJsonBlame(
   {
     (!!locus.additional_literature.length || hasRawSearch) && (
       <section>
-        <Heading level={2}>Additional Literature</Heading>
+        <Heading client:load level={2}>
+          Additional Literature
+        </Heading>
 
         {!!locus.additional_literature.length && (
           <p class="center">Additional literature related to this locus.</p>

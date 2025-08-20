@@ -7,7 +7,7 @@ import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuChartCandlestick, LuChartGantt, LuPlus } from "react-icons/lu";
 import { filter, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading.astro";
+import Heading from "@/components/Heading";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
@@ -90,7 +90,7 @@ const cols = uniq(map(catalogs, "genome"));
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading level={1}><LiaBarcodeSolid />Loci</Heading>
+    <Heading client:load level={1}><LiaBarcodeSolid />Loci</Heading>
 
     <div class="row">
       <span> Tandem repeat loci associated with Mendelian diseases. </span>
@@ -110,7 +110,7 @@ const cols = uniq(map(catalogs, "genome"));
 
   <!-- downloads -->
   <section>
-    <Heading level={2}><FaArrowDown />Downloads</Heading>
+    <Heading client:load level={2}><FaArrowDown />Downloads</Heading>
 
     <div class="table-scroll">
       <table class="downloads">
@@ -168,13 +168,15 @@ const cols = uniq(map(catalogs, "genome"));
 
   <!-- plots -->
   <section class="full">
-    <Heading level={2}><FaChartLine />Plots</Heading>
+    <Heading client:load level={2}><FaChartLine />Plots</Heading>
 
     <p class="center">High-level, visual overview of loci.</p>
 
     <div class="charts">
       <div class="col">
-        <Heading level={3}><LuChartGantt />Pathogenic Size Range</Heading>
+        <Heading client:load level={3}
+          ><LuChartGantt />Pathogenic Size Range</Heading
+        >
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -183,7 +185,9 @@ const cols = uniq(map(catalogs, "genome"));
       </div>
 
       <div class="col">
-        <Heading level={3}><LuChartCandlestick />Age of Onset</Heading>
+        <Heading client:load level={3}
+          ><LuChartCandlestick />Age of Onset</Heading
+        >
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}
