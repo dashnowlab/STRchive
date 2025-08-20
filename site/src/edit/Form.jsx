@@ -1,6 +1,6 @@
 import { Fragment, useCallback, useState } from "react";
 import { LuSend } from "react-icons/lu";
-import { groupBy } from "lodash-es";
+import { groupBy, mapValues } from "lodash-es";
 import Button from "@/components/Button";
 import FormWrapper from "@/components/Form";
 import Heading from "@/components/Heading";
@@ -18,7 +18,7 @@ const sections = groupBy(
   "section",
 );
 
-const Form = ({ data: initialData }) => {
+const Form = ({ data: initialData = {} }) => {
   const [data, _setData] = useState(initialData);
   const [errors, _setErrors] = useState(null);
 
