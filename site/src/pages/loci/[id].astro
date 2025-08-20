@@ -4,7 +4,9 @@
 import Layout from "@/layouts/Layout.astro";
 import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
+import { LuFeather } from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
+import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
@@ -20,9 +22,9 @@ import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
-import gnomad from "../../../../data/plots/gnomad.json";
-import citations from "../../../../data/STRchive-citations.json";
-import loci from "../../../../data/STRchive-loci.json";
+import gnomad from "~/plots/gnomad.json";
+import citations from "~/STRchive-citations.json";
+import loci from "~/STRchive-loci.json";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -40,7 +42,7 @@ const locus = deriveLocus(
 
 /** whether there is raw gene search text file associated with this gene */
 const hasRawSearch = Object.keys(
-  import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
+  import.meta.glob("~/literature/*.txt", { eager: true }),
 ).some((file) => file.includes(locus.gene));
 
 /** get blame info of locus */
@@ -134,6 +136,11 @@ const blame = getJsonBlame(
         ))
       }
     </div>
+
+    <Button to={`${id}/edit`} design="bubble">
+      <LuFeather />
+      <span>Suggest Edit</span>
+    </Button>
   </section>
 
   <!-- disease info -->

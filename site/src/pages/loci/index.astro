@@ -4,9 +4,8 @@
 import Layout from "@/layouts/Layout.astro";
 import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuChartCandlestick, LuChartGantt } from "react-icons/lu";
-import Ajv from "ajv/dist/2020";
-import { filter, groupBy, map, uniq } from "lodash-es";
+import { LuChartCandlestick, LuChartGantt, LuPlus } from "react-icons/lu";
+import { filter, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link";
@@ -14,23 +13,13 @@ import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import { repo, repoRaw, version } from "@/layouts/meta";
 import Table from "@/loci/Table";
-import ageOnset from "../../../../data/plots/age-onset.json";
-import pathSize from "../../../../data/plots/path-size.json";
-import loci from "../../../../data/STRchive-loci.json";
-import schema from "../../../../data/STRchive-loci.schema.json";
-
-/** test schema validation */
-const ajv = new Ajv({ strict: false });
-const validate = ajv.compile(schema);
-const isValid = loci.map((locus) => {
-  validate(locus);
-  return validate.errors;
-});
-console.log(isValid);
+import ageOnset from "~/plots/age-onset.json";
+import pathSize from "~/plots/path-size.json";
+import loci from "~/STRchive-loci.json";
 
 /** import catalog files */
 const catalogs = Object.keys(
-  import.meta.glob(`../../../../data/catalogs/STRchive-disease-loci*.*`, {
+  import.meta.glob(`~/catalogs/STRchive-disease-loci*.*`, {
     query: "?url",
     import: "default",
     eager: true,
@@ -112,6 +101,11 @@ const cols = uniq(map(catalogs, "genome"));
     </div>
 
     <Table client:load loci={loci} />
+
+    <Button to="loci/new" design="bubble">
+      <LuPlus />
+      <span>Suggest New</span>
+    </Button>
   </section>
 
   <!-- downloads -->

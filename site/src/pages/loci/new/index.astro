@@ -1,0 +1,21 @@
+---
+/** LOCI EDIT PAGE */
+
+import Layout from "@/layouts/Layout.astro";
+import { LuFeather } from "react-icons/lu";
+import Heading from "@/components/Heading.astro";
+import TableOfContents from "@/components/TableOfContents";
+import Form from "@/edit/Form";
+---
+
+<Layout title="Loci">
+  <TableOfContents client:only="react" />
+
+  <section>
+    <Heading level={1}><LuFeather />New Locus</Heading>
+  </section>
+
+  <section>
+    <Form client:load />
+  </section>
+</Layout>

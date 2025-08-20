@@ -1,0 +1,32 @@
+---
+/** LOCI EDIT PAGE */
+
+import Layout from "@/layouts/Layout.astro";
+import { LuFeather } from "react-icons/lu";
+import Heading from "@/components/Heading.astro";
+import TableOfContents from "@/components/TableOfContents";
+import Form from "@/edit/Form";
+import loci from "~/STRchive-loci.json";
+
+/** generate pages for each datum, paths based on id */
+export const getStaticPaths = async () =>
+  loci.map(({ id }) => ({ params: { id } }));
+
+/** current page loci id in url */
+const { id } = Astro.params;
+
+/** look up full locus entry from id */
+const locus = loci.find((locus) => locus.id === id) || {};
+---
+
+<Layout title="Loci">
+  <TableOfContents client:only="react" />
+
+  <section>
+    <Heading level={1}><LuFeather />Edit Locus</Heading>
+  </section>
+
+  <section>
+    <Form client:load data={locus} />
+  </section>
+</Layout>
