@@ -14,6 +14,14 @@
   display: contents;
 }
 
-.link {
-  text-decoration: underline;
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  grid-column: 2;
+  margin-top: -10px;
+  color: var(--secondary);
+  text-align: left;
 }
