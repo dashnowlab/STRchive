@@ -90,8 +90,7 @@ const Form = ({ data: initialData = {} }) => {
                 /** ref function */
                 const ref = (el) => {
                   /** even though we show our own error messages, also set
-                   * native browser form validity for possibly better
-                   * accessibility support */
+                   * native browser form validity */
                   if (error) el?.setCustomValidity(errorMessage);
                   else el?.setCustomValidity("");
                 };

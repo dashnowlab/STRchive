@@ -17,7 +17,7 @@ ajv.addKeyword({
     )
       return true;
     /** test */
-    const valid = value < otherValue;
+    const valid = value <= otherValue;
     /** custom error message */
     if (!valid)
       validate.errors = [
@@ -44,7 +44,7 @@ ajv.addKeyword({
     )
       return true;
     /** test */
-    const valid = value > otherValue;
+    const valid = value >= otherValue;
     /** custom error message */
     if (!valid)
       validate.errors = [
