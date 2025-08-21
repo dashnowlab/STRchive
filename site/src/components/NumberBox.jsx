@@ -7,15 +7,16 @@ const NumberBox = ({
   label,
   value,
   onChange,
-  className,
   snapValues,
+  className,
+  tooltip,
   ...props
 }) => (
-  <label>
+  <label data-tooltip={tooltip}>
     {label && <span>{label}</span>}
     <input
       type="number"
-      className={clsx(className, classes.box)}
+      className={clsx(className, classes.input)}
       value={typeof value === "number" && !Number.isNaN(value) ? value : ""}
       onChange={(event) => {
         let newValue = Number(event.target.value) || 0;
