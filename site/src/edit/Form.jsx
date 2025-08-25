@@ -2,7 +2,7 @@ import { Fragment, useRef, useState } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { LuSend } from "react-icons/lu";
 import clsx from "clsx";
-import { upperFirst } from "lodash-es";
+import { uniq, upperFirst } from "lodash-es";
 import { useDebounceFn } from "@reactuses/core";
 import ReactForm from "@rjsf/core";
 import Button from "@/components/Button";
@@ -79,15 +79,7 @@ const Form = ({ data: initialData }) => {
       onSubmit={({ formData }) => console.info(formData)}
     >
       <section>
-        <Button
-          type="submit"
-          design="bubble"
-          onClick={() => {
-            document.querySelectorAll("form *").forEach((el) => {
-              el.addEventListener("invalid", console.log, { once: true });
-            });
-          }}
-        >
+        <Button type="submit" design="bubble">
           <LuSend />
           <span>Submit</span>
         </Button>
@@ -282,8 +274,11 @@ const StringField = ({
         name={name}
         label={label}
         required={required}
-        options={_enum.map((value) => ({ value, label: upperFirst(value) }))}
-        value={value}
+        options={uniq(["", ..._enum]).map((value) => ({
+          value,
+          label: upperFirst(value),
+        }))}
+        value={value || ""}
         onChange={onChange}
       />
     );
@@ -296,7 +291,7 @@ const StringField = ({
         label={label}
         required={required}
         pattern={pattern}
-        value={value ?? ""}
+        value={value || ""}
         onChange={onChange}
       />
     );
