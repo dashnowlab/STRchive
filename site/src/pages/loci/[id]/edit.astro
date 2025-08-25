@@ -26,5 +26,5 @@ const locus = loci.find((locus) => locus.id === id) || {};
     <Heading client:load level={1}><LuFeather />Edit Locus</Heading>
   </section>
 
-  <Form client:load data={locus} />
+  <Form client:only="react" data={locus} />
 </Layout>

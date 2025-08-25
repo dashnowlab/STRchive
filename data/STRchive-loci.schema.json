@@ -9,49 +9,49 @@
     "chrom": {
       "title": "Chrom",
       "description": "Chromosome name, assumed to be the same for all reference genomes",
-      "section": "Overview",
+      "section": "Locus",
       "examples": ["chr1"],
       "type": ["string", "null"]
     },
     "start_hg38": {
       "title": "Start hg38",
       "description": "Start position in hg38 reference genome. Coordinates are BED style: 0-based, half-open.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["integer", "null"],
       "less_than": "stop_hg38"
     },
     "stop_hg38": {
       "title": "Stop hg38",
       "description": "Stop position in hg38 reference genome. Coordinates are BED style: 0-based, half-open.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["integer", "null"],
       "greater_than": "start_hg38"
     },
     "start_hg19": {
       "title": "Start hg19",
       "description": "Start position in hg19 reference genome. Coordinates are BED style: 0-based, half-open.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["integer", "null"],
       "less_than": "stop_hg19"
     },
     "stop_hg19": {
       "title": "Stop hg19",
       "description": "Stop position in hg19 reference genome. Coordinates are BED style: 0-based, half-open.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["integer", "null"],
       "greater_than": "start_hg19"
     },
     "start_t2t": {
       "title": "Start t2t",
       "description": "Start position in chm13-T2T reference genome. Coordinates are BED style: 0-based, half-open.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["integer", "null"],
       "less_than": "stop_t2t"
     },
     "stop_t2t": {
       "title": "Stop t2t",
       "description": "Stop position in chm13-T2T reference genome. Coordinates are BED style: 0-based, half-open.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["integer", "null"],
       "greater_than": "start_t2t"
     },
@@ -70,16 +70,17 @@
     "gene_strand": {
       "title": "Gene Strand",
       "description": "Direction of gene transcription relative to reference genome e.g. + or -",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["string", "null"],
       "enum": ["+", "-"]
     },
     "reference_motif_reference_orientation": {
       "title": "Ref. Motif Ref. Orient.",
       "description": "Motif in the reference genome in the + reference orientation (regardless of if it is pathogenic) e.g. AAAAG",
-      "section": "Overview",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
@@ -87,9 +88,10 @@
     "pathogenic_motif_reference_orientation": {
       "title": "Path. Motif Ref. Orient.",
       "description": "Pathogenic motif(s) in the + reference orientation e.g. AAGGG,ACAGG",
-      "section": "Overview",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
@@ -97,9 +99,10 @@
     "pathogenic_motif_gene_orientation": {
       "title": "Path. Motif Gene Orient.",
       "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand e.g. CCCTT,CCTGT",
-      "section": "Overview",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
@@ -107,33 +110,40 @@
     "benign_motif_reference_orientation": {
       "title": "Ben. Motif Ref. Orient.",
       "description": "Pathogenic motif(s) in the + reference orientation e.g. AAAAG",
-      "section": "Overview",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
     },
     "benign_motif_gene_orientation": {
       "title": "Ben. Motif Gene Orient.",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
     },
     "unknown_motif_reference_orientation": {
       "title": "Unk. Motif Ref. Orient.",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
     },
     "unknown_motif_gene_orientation": {
       "title": "Unk. Motif Gene Orient.",
+      "section": "Alleles",
       "type": "array",
       "items": {
+        "title": "Motif",
         "type": ["string", "null"],
         "pattern": "^[ACGTN]+$"
       }
@@ -141,7 +151,7 @@
     "disease": {
       "title": "Disease",
       "description": "Disease name in words e.g. Cerebellar ataxia, neuropathy, and vestibular areflexia syndrome",
-      "section": "Overview",
+      "section": "Disease",
       "type": ["string", "null"]
     },
     "gene": {
@@ -151,22 +161,26 @@
       "type": ["string", "null"]
     },
     "locus_structure": {
-      "title": "LocusStructure",
+      "title": "Locus Structure",
       "description": "Structure of the locus including the order of motifs and any interruptions. The main_repeat will typically have a count of null. Only one motif can have a null count.",
-      "section": "Overview",
+      "section": "Locus",
       "type": "array",
       "items": {
+        "title": "Part",
         "type": "object",
         "properties": {
           "motif": {
+            "title": "Motif",
             "type": ["string", "null"],
             "pattern": "^[ACGTN]+$"
           },
           "count": {
+            "title": "Count",
             "type": ["integer", "null"],
             "minimum": 0
           },
           "type": {
+            "title": "Type",
             "type": ["string", "null"],
             "enum": ["main_repeat", "interruption", "flank_repeat"]
           }
@@ -177,9 +191,10 @@
     "inheritance": {
       "title": "Inheritance",
       "description": "Inheritance pattern(s) of the disease e.g. AD for autosomal dominant",
-      "section": "Overview",
+      "section": "Disease",
       "type": "array",
       "items": {
+        "title": "Inheritance",
         "type": ["string", "null"],
         "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR"]
       }
@@ -187,20 +202,20 @@
     "type": {
       "title": "Type",
       "description": "Type of locus e.g. 5' UTR",
-      "section": "Overview",
+      "section": "Locus",
       "deprecated": true,
       "type": ["string", "null"]
     },
     "location_in_gene": {
       "title": "Location In Gene",
       "description": "Location of the repeat locus in the gene e.g. Intron 2",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["string", "null"]
     },
     "benign_min": {
       "title": "Benign Min",
       "description": "Minimum number of repeats in the benign (normal) range",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0,
       "less_than": "benign_max"
@@ -208,7 +223,7 @@
     "benign_max": {
       "title": "Benign Max",
       "description": "Maximum number of repeats in the benign (normal) range. Must be >= benign_min",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0,
       "greater_than": "benign_min"
@@ -216,7 +231,7 @@
     "intermediate_min": {
       "title": "Intermediate Min",
       "description": "Minimum number of repeats in the intermediate range",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0,
       "less_than": "intermediate_max"
@@ -224,7 +239,7 @@
     "intermediate_max": {
       "title": "Intermediate Max",
       "description": "Maximum number of repeats in the intermediate range. Must be >= intermediate_min",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0,
       "greater_than": "intermediate_min"
@@ -232,7 +247,7 @@
     "pathogenic_min": {
       "title": "Pathogenic Min",
       "description": "Minimum number of repeats in the pathogenic range",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0,
       "less_than": "pathogenic_max"
@@ -240,7 +255,7 @@
     "pathogenic_max": {
       "title": "Pathogenic Max",
       "description": "Maximum number of repeats in the pathogenic range. Must be >= pathogenic_min",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0,
       "greater_than": "pathogenic_min"
@@ -248,14 +263,14 @@
     "ref_copies": {
       "title": "Ref Copies",
       "description": "Number of motif copies in the reference genome",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["number", "null"],
       "minimum": 0
     },
     "motif_len": {
       "title": "Motif Len",
       "description": "Length of the motif in base pairs",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["integer", "null"],
       "minimum": 0,
       "maximum": 1000
@@ -263,13 +278,13 @@
     "age_onset": {
       "title": "Age Onset",
       "description": "Description of the age of onset of the disease with citations",
-      "section": "Overview",
+      "section": "Disease",
       "type": ["string", "null"]
     },
     "age_onset_min": {
       "title": "Age Onset Min",
       "description": "Minimum age of onset reported in the literatre (years)",
-      "section": "Overview",
+      "section": "Disease",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -278,7 +293,7 @@
     "age_onset_max": {
       "title": "Age Onset Max",
       "description": "Maximum age of onset reported in the literatre (years). Must be >= age_onset_min",
-      "section": "Overview",
+      "section": "Disease",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -287,7 +302,7 @@
     "typ_age_onset_min": {
       "title": "Typ. Age Onset Min",
       "description": "Minimum of the typical age of onset range reported in the literatre (years)",
-      "section": "Overview",
+      "section": "Disease",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -296,7 +311,7 @@
     "typ_age_onset_max": {
       "title": "Typ. Age Onset Max",
       "description": "Maximum of the typical age of onset range reported in the literatre (years). Must be >= typ_age_onset_min",
-      "section": "Overview",
+      "section": "Disease",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -305,20 +320,20 @@
     "novel": {
       "title": "Novel",
       "description": "If the pathogenic motif is in the reference genome, ref, otherwise, novel",
-      "section": "Overview",
+      "section": "Alleles",
       "type": ["string", "null"],
       "enum": ["novel", "ref", null]
     },
     "mechanism": {
       "title": "Mechanism",
       "description": "Brief/categorical mechanism of disease e.g. LoF",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["string", "null"]
     },
     "mechanism_detail": {
       "title": "Mechanism Detail",
       "description": "Detailed mechanism of disease with citations e.g. Loss of function [@pmid:38467784]",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["string", "null"]
     },
     "source": {
@@ -329,30 +344,32 @@
       "deprecated": true,
       "type": "array",
       "items": {
+        "title": "Source",
         "type": ["string", "null"]
       }
     },
     "details": {
       "title": "Details",
       "description": "Detailed information about the repeat locus and evidence for pathogenicity, with citations in the format [@pmid:38467784]. This could include information about motifs, interruptions, and other features of the repeat.",
-      "section": "Overview",
+      "section": "Locus",
       "type": ["string", "null"]
     },
     "omim": {
       "title": "OMIM",
       "description": "OMIM ID(s) for the disease",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["614575"],
       "uri-template": "https://omim.org/entry/{id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "prevalence": {
       "title": "Prevalence",
       "description": "Prevalence of the disease as a fraction",
-      "section": "Overview",
+      "section": "Disease",
       "examples": ["1/100000"],
       "type": ["string", "null"],
       "pattern": "^(?:[0-9]*[.])?[0-9]+/[0-9]+$"
@@ -360,40 +377,43 @@
     "prevalence_details": {
       "title": "Prevalence Details",
       "description": "Details about the prevalence of the disease including affected populations and citations in the format [@pmid:38467784]",
-      "section": "Overview",
+      "section": "Disease",
       "examples": ["1/100000 in European populations [@pmid:38467784]"],
       "type": ["string", "null"]
     },
     "stripy": {
       "title": "STRIpy",
       "description": "STRIpy ID(s) for the disease, typically the gene ID",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["RFC1"],
       "uri-template": "https://stripy.org/database/{id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "gnomad": {
       "title": "gnomAD",
       "description": "gnomAD ID(s) for the gene, typically the gene ID",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["RFC1"],
       "uri-template": "https://gnomad.broadinstitute.org/short-tandem-repeat/{id}?dataset=gnomad_r4",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "genereviews": {
       "title": "GeneReviews",
       "description": "GeneReviews ID(s) for the gene",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["NBK564656"],
       "uri-template": "https://www.ncbi.nlm.nih.gov/books/{id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"],
         "pattern": "^NBK[0-9]+$"
       }
@@ -401,102 +421,110 @@
     "mondo": {
       "title": "MONDO",
       "description": "MONDO ID(s) for the disease",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["0044720"],
       "uri-template": "https://purl.obolibrary.org/obo/MONDO_{id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "year": {
       "title": "Year",
       "description": "Year of first publication of the tandem repeat disease locus with citations",
-      "section": "Overview",
+      "section": "Locus",
       "examples": ["2023", "2021 [@pmid:38467784]"],
       "type": ["string", "null"]
     },
     "medgen": {
       "title": "MedGen",
       "description": "MedGen ID(s) for the disease",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["482853"],
       "uri-template": "https://www.ncbi.nlm.nih.gov/medgen/?term={id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "orphanet": {
       "title": "Orphanet",
       "description": "Orphanet ID(s) for the disease",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["504476"],
       "uri-template": "https://www.orpha.net/en/disease/detail/{id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "gard": {
       "title": "GARD",
       "description": "GARD ID(s) for the disease",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["17937"],
       "uri-template": "https://rarediseases.info.nih.gov/diseases/{id}/index",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "malacard": {
       "title": "MalaCard",
       "description": "MalaCard ID(s) for the disease",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["CRB196"],
       "uri-template": "https://www.malacards.org/card/{id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "webstr_hg38": {
       "title": "WebSTR hg38",
       "description": "WebSTR ID(s) for the locus in hg38",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["4722884"],
       "uri-template": "https://webstr.ucsd.edu/locus?genome=hg38&repeat_id={id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "webstr_hg19": {
       "title": "WebSTR hg19",
       "description": "WebSTR ID(s) for the locus in hg19",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["STR_1036603"],
       "uri-template": "https://webstr.ucsd.edu/locus?repeat_id={id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "tr_atlas": {
       "title": "TRatlas",
       "description": "Tandem Repeat Atlas ID(s) for the locus",
-      "section": "Overview",
+      "section": "IDs",
       "examples": ["TR42349"],
       "uri-template": "https://wlcb.oit.uci.edu/TRatlas/Distribution.php?index_id={id}",
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"]
       }
     },
     "disease_description": {
       "title": "Disease Description",
       "description": "Description of the disease with citations",
-      "section": "Overview",
+      "section": "Disease",
       "examples": [
         "Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [@pmid:38876750]"
       ],
@@ -505,7 +533,7 @@
     "locus_tags": {
       "title": "Locus Tags",
       "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters. Some tags have specific meanings, such as sparse_evidence for loci with < 5 independent cases after 5 years of publication, or conflicting_evidence for loci where there is evidence for and against pathogenicity in the literature resulting in concern that the locus may not be pathogenic.",
-      "section": "Overview",
+      "section": "Locus",
       "examples": [
         "somatic_instability",
         "contraction",
@@ -522,26 +550,29 @@
       ],
       "type": "array",
       "items": {
+        "title": "Tag",
         "type": ["string", "null"]
       }
     },
     "disease_tags": {
       "title": "Disease Tags",
       "description": "Tags for the disease, used for grouping similar diseases and for flagging diseases with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters.",
-      "section": "Overview",
+      "section": "Disease",
       "examples": ["ataxia", "epilepsy", "phenotypic_spectrum"],
       "type": "array",
       "items": {
+        "title": "Tag",
         "type": ["string", "null"]
       }
     },
     "references": {
       "title": "References",
       "description": "All references from the fields above. Automatically generated from all in-text citations.",
-      "section": "Overview",
+      "section": "References",
       "examples": ["pmid:38467784"],
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"],
         "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
       }
@@ -549,10 +580,11 @@
     "additional_literature": {
       "title": "Additional Literature",
       "description": "Additional literature related to this locus in the format. Should not be included in the references field. Automatically generated from scripts that search the literature.",
-      "section": "Overview",
+      "section": "Additional Literature",
       "examples": ["pmid:38467784"],
       "type": "array",
       "items": {
+        "title": "ID",
         "type": ["string", "null"],
         "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
       }

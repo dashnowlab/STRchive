@@ -1,11 +1,13 @@
-import Ajv, { ValidationError } from "ajv/dist/2020";
-import schema from "~/STRchive-loci.schema.json";
+import Ajv from "ajv/dist/2020";
+import { customizeValidator } from "@rjsf/validator-ajv8";
 
-/** validator library */
-export const ajv = new Ajv({ strict: false, allErrors: true });
+export const validator = customizeValidator({
+  ajvOptionsOverrides: { strict: false },
+  AjvClass: Ajv,
+});
 
 /** add custom keyword for validating one value less than other value */
-ajv.addKeyword({
+validator.ajv.addKeyword({
   keyword: "less_than",
   validate: function validate(otherKey, value, parentSchema, { parentData }) {
     /** value of referenced property */
@@ -24,15 +26,17 @@ ajv.addKeyword({
         {
           keyword: "less_than",
           message: `Value must be less than ${otherKey}`,
+          params: { deps: null },
         },
       ];
+    else validate.errors = null;
     return valid;
   },
   errors: true,
 });
 
 /** add custom keyword for validating one value greater than other value */
-ajv.addKeyword({
+validator.ajv.addKeyword({
   keyword: "greater_than",
   validate: function validate(otherKey, value, parentSchema, { parentData }) {
     /** value of referenced property */
@@ -51,18 +55,11 @@ ajv.addKeyword({
         {
           keyword: "greater_than",
           message: `Value must be greater than ${otherKey}`,
+          params: { deps: null },
         },
       ];
+    else validate.errors = null;
     return valid;
   },
   errors: true,
 });
-
-/** compile schema */
-export const validator = ajv.compile(schema);
-
-/** validator function */
-export const validate = (data) => {
-  validator(data);
-  return validator.errors;
-};

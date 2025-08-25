@@ -32,7 +32,7 @@ const Form = ({ onSubmit, ...props }) => {
         }
 
         /** call callback with data */
-        onSubmit(data);
+        onSubmit(data, event);
       }}
       {...props}
     />

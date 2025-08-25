@@ -165,13 +165,11 @@ const blame = getJsonBlame(
       <div class="box">
         <div>Inheritance</div>
         {
-          (locus.inheritance.length ? locus.inheritance : [""]).map(
-            (inheritance) => (
-              <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-                {getInheritance(inheritance) || "-"}
-              </Link>
-            ),
-          )
+          (locus.inheritance ?? [""]).map((inheritance) => (
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+              {getInheritance(inheritance) || "-"}
+            </Link>
+          ))
         }
       </div>
     </div>
