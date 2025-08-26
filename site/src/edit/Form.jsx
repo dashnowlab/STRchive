@@ -244,7 +244,10 @@ const FieldTemplate = ({ children, errors }) => (
 const FieldErrorTemplate = ({ errors }) =>
   errors?.length ? (
     <div className={classes.error}>
-      {errors.map((error) => error).join(", ")}
+      {errors
+        .map((error) => upperFirst(error))
+        .join(", ")
+        .replaceAll(/(\w),(\w)/g, "$1 | $2")}
     </div>
   ) : null;
 
@@ -274,7 +277,7 @@ const StringField = ({
         name={name}
         label={label}
         required={required}
-        options={uniq(["", ..._enum]).map((value) => ({
+        options={uniq(["", ..._enum.filter(Boolean)]).map((value) => ({
           value,
           label: upperFirst(value),
         }))}

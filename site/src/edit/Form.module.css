@@ -50,6 +50,7 @@
   margin-top: -10px;
   color: var(--secondary);
   text-align: left;
+  overflow-wrap: break-word;
 }
 
 .full {
