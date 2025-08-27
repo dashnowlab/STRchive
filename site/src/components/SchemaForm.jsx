@@ -4,7 +4,7 @@ import { LuSend } from "react-icons/lu";
 import clsx from "clsx";
 import { uniq, upperFirst } from "lodash-es";
 import { useDebounceFn } from "@reactuses/core";
-import ReactForm from "@rjsf/core";
+import Form from "@rjsf/core";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Help from "@/components/Help";
@@ -12,25 +12,10 @@ import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
 import TextBox from "@/components/TextBox";
 import { validator } from "@/data/schema";
-import classes from "./Form.module.css";
-import schema from "~/STRchive-loci.schema.json";
+import classes from "./SchemaForm.module.css";
 
-/** edit/new locus page */
-
-const { required: requiredKeys } = schema;
-
-/** order of sections */
-const sections = [
-  "Overview",
-  "IDs",
-  "Locus",
-  "Alleles",
-  "Disease",
-  "References",
-  "Additional Literature",
-];
-
-const Form = ({ data: initialData }) => {
+/** form automatically generated from json schema */
+const SchemaForm = ({ schema, sections, data: initialData = {} }) => {
   const ref = useRef(null);
   const [formData, setFormData] = useState(initialData);
 
@@ -47,15 +32,17 @@ const Form = ({ data: initialData }) => {
     };
 
   return (
-    <ReactForm
+    <Form
       ref={ref}
       className={classes.form}
       /** full form data */
       formData={formData}
       onChange={(event) => setFormData(event.formData)}
+      /** allow certain info to be accessed from any field */
       formContext={{
-        /** allow full form data to be accessed from any field */
+        fullSchema: schema,
         fullData: formData,
+        sections,
         triggerValidate,
       }}
       /** shape of data */
@@ -84,11 +71,11 @@ const Form = ({ data: initialData }) => {
           <span>Submit</span>
         </Button>
       </section>
-    </ReactForm>
+    </Form>
   );
 };
 
-export default Form;
+export default SchemaForm;
 
 /** @param {import("@rjsf/utils").ObjectFieldTemplateProps} props */
 const ObjectFieldTemplate = ({
@@ -97,6 +84,7 @@ const ObjectFieldTemplate = ({
   title,
   description,
   properties,
+  formContext: { sections },
 }) =>
   /** if at top level of schema */
   idSchema.$id === "root" ? (
@@ -257,15 +245,15 @@ const StringField = ({
   name,
   formData: value,
   onChange,
-  formContext,
+  formContext: { fullSchema, triggerValidate },
 }) => {
   const types = getTypes(schema);
-  const required = getRequired(schema);
+  const required = getRequired(schema, fullSchema);
   const tooltip = getTooltip(schema);
   const label = getLabel(schema, tooltip);
 
   /** modify onChange func */
-  onChange = formContext.triggerValidate(onChange);
+  onChange = triggerValidate(onChange);
 
   /** get different fields on property */
   const { pattern, enum: _enum } = schema;
@@ -306,15 +294,15 @@ const NumberField = ({
   name,
   formData: value,
   onChange,
-  formContext,
+  formContext: { fullSchema, fullData, triggerValidate },
 }) => {
   const types = getTypes(schema);
-  const required = getRequired(schema);
+  const required = getRequired(schema, fullSchema);
   const tooltip = getTooltip(schema);
   const label = getLabel(schema, tooltip);
 
   /** modify onChange func */
-  onChange = formContext.triggerValidate(onChange);
+  onChange = triggerValidate(onChange);
 
   /** get different fields on property */
   const {
@@ -328,13 +316,13 @@ const NumberField = ({
 
   /** min value allowed to be input */
   const min = Math.max(
-    ...[minimum, formContext.fullData[greater_than]].filter(
+    ...[minimum, fullData[greater_than]].filter(
       (value) => typeof value === "number",
     ),
   );
   /** max value allowed to be input */
   const max = Math.min(
-    ...[maximum, formContext.fullData[less_than]].filter(
+    ...[maximum, fullData[less_than]].filter(
       (value) => typeof value === "number",
     ),
   );
@@ -368,8 +356,8 @@ const getTooltip = ({ description, examples }) =>
     .join("<br/>");
 
 /** is the field required to be set */
-const getRequired = ({ name, type }) =>
-  requiredKeys.includes(name) && !getTypes(type).includes("null");
+const getRequired = ({ name, type }, { required }) =>
+  required.includes(name) && !getTypes(type).includes("null");
 
 /** full label elements to show */
 const getLabel = ({ title, name }, tooltip) => (
