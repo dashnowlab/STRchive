@@ -349,6 +349,15 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None,
 
         # Sort records by gene name then id
         data = sorted(data, key = lambda x: (x['gene'], x['id']))
+
+        # Make sure json is sorted within each record based on the schema order
+        if json_schema is not None:
+            with open(json_schema, 'r') as schema_file:
+                schema = json.load(schema_file)
+                schema_order = list(schema['properties'].keys())
+                def sort_record(record):
+                    return {key: record.get(key, None) for key in schema_order}
+                data = [sort_record(record) for record in data]
         
         # Write JSON file
         with open(out_json, 'w') as out_json_file:
