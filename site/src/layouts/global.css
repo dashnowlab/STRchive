@@ -19,6 +19,9 @@
   --spacing: 2;
   --compact: 1.5;
 
+  --sans: "Barlow", sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+
   --thin: 200;
   --regular: 400;
   --medium: 500;
@@ -30,7 +33,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
+  font-family: var(--sans);
 }
 
 body {
@@ -258,6 +261,13 @@ tbody tr:nth-child(odd) {
 thead tr,
 tbody tr:nth-child(even) {
   background: var(--off-white);
+}
+
+code {
+  padding: 2px 5px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  font-family: var(--mono);
 }
 
 summary {
