@@ -89,8 +89,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -101,8 +100,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -113,8 +111,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -125,8 +122,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -136,8 +132,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -147,8 +142,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -158,8 +152,7 @@
       "type": "array",
       "items": {
         "title": "Motif",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^[ACGTN]+$"
       }
     },
@@ -215,8 +208,7 @@
       "type": "array",
       "items": {
         "title": "Inheritance",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR"]
       }
     },
@@ -384,8 +376,7 @@
       "type": "array",
       "items": {
         "title": "Source",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "details": {
@@ -404,8 +395,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "prevalence": {
@@ -434,8 +424,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "gnomad": {
@@ -447,8 +436,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "genereviews": {
@@ -460,8 +448,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^NBK[0-9]+$"
       }
     },
@@ -474,8 +461,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "year": {
@@ -495,8 +481,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "orphanet": {
@@ -508,8 +493,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "gard": {
@@ -521,8 +505,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "malacard": {
@@ -534,8 +517,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "webstr_hg38": {
@@ -547,8 +529,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "webstr_hg19": {
@@ -560,8 +541,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "tr_atlas": {
@@ -573,8 +553,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "disease_description": {
@@ -608,8 +587,7 @@
       "type": "array",
       "items": {
         "title": "Tag",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "disease_tags": {
@@ -620,8 +598,7 @@
       "type": "array",
       "items": {
         "title": "Tag",
-        "type": ["string", "null"],
-        "default": null
+        "type": ["string"]
       }
     },
     "references": {
@@ -632,8 +609,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
       }
     },
@@ -645,8 +621,7 @@
       "type": "array",
       "items": {
         "title": "ID",
-        "type": ["string", "null"],
-        "default": null,
+        "type": ["string"],
         "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
       }
     }

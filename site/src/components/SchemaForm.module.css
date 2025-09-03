@@ -18,7 +18,8 @@
 
 .array {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(200px, 1fr) auto;
+  grid-auto-flow: row dense;
   align-items: center;
   width: 100%;
   gap: 20px;
@@ -40,13 +41,7 @@
   min-width: 40px;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-}
-
 .error {
-  grid-column: 1 / -1;
   margin-top: -10px;
   color: var(--secondary);
   text-align: left;
