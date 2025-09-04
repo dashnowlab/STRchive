@@ -4,10 +4,9 @@
 import Layout from "@/layouts/Layout.astro";
 import { LuFeather } from "react-icons/lu";
 import Heading from "@/components/Heading";
-import SchemaForm from "@/components/SchemaForm";
 import TableOfContents from "@/components/TableOfContents";
+import EditForm from "@/locus/EditForm";
 import loci from "~/STRchive-loci.json";
-import schema from "~/STRchive-loci.schema.json";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -27,18 +26,5 @@ const locus = loci.find((locus) => locus.id === id) || {};
     <Heading client:load level={1}><LuFeather />Edit Locus</Heading>
   </section>
 
-  <SchemaForm
-    client:only="react"
-    schema={schema}
-    data={locus}
-    sections={[
-      "Overview",
-      "IDs",
-      "Locus",
-      "Alleles",
-      "Disease",
-      "References",
-      "Additional Literature",
-    ]}
-  />
+  <EditForm client:only="react" locus={locus} />
 </Layout>

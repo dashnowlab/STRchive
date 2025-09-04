@@ -4,16 +4,19 @@
   grid-column: 1 / -1;
   align-items: center;
   width: 100%;
-  padding: 20px;
   gap: 20px;
-  border-radius: var(--rounded);
-  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 600px) {
   .object {
     grid-template-columns: auto;
   }
+}
+
+:not(section) > .object {
+  padding: 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--box-shadow);
 }
 
 .object > label {
@@ -41,6 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  grid-column: 2;
 }
 
 .actions > * {

@@ -4,9 +4,8 @@
 import Layout from "@/layouts/Layout.astro";
 import { LuFeather } from "react-icons/lu";
 import Heading from "@/components/Heading";
-import SchemaForm from "@/components/SchemaForm";
 import TableOfContents from "@/components/TableOfContents";
-import schema from "~/STRchive-loci.schema.json";
+import EditForm from "@/locus/EditForm";
 ---
 
 <Layout title="Loci">
@@ -16,17 +15,5 @@ import schema from "~/STRchive-loci.schema.json";
     <Heading client:load level={1}><LuFeather />New Locus</Heading>
   </section>
 
-  <SchemaForm
-    client:only="react"
-    schema={schema}
-    sections={[
-      "Overview",
-      "IDs",
-      "Locus",
-      "Alleles",
-      "Disease",
-      "References",
-      "Additional Literature",
-    ]}
-  />
+  <EditForm client:only="react" />
 </Layout>

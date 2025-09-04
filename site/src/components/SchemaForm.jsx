@@ -3,6 +3,7 @@ import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { LuSend } from "react-icons/lu";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import { cloneDeep, range, uniq, upperFirst } from "lodash-es";
+import { useLocalStorage } from "@reactuses/core";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
@@ -14,8 +15,11 @@ import { makeList } from "@/util/format";
 import Form from "./Form";
 import classes from "./SchemaForm.module.css";
 
+/** for testing */
+window.localStorage.clear();
+
 /** form automatically generated from json schema */
-const SchemaForm = ({ schema, sections, data: initialData }) => {
+const SchemaForm = ({ schema, sections, data: initialData, onSubmit }) => {
   /** compile schema */
   const rootNode = useMemo(
     () => compileSchema(schema, { drafts: [draft] }),
@@ -25,10 +29,11 @@ const SchemaForm = ({ schema, sections, data: initialData }) => {
   /** if no initial data, generate blank values */
   initialData ??= rootNode.getData(null, { extendDefaults: false });
 
-  /** current form data state */
-  const [data, setData] = useState(initialData);
+  /** unique key for saving form data */
+  const storageKey = window.location.pathname;
 
-  console.log(data);
+  /** current form data state */
+  const [data, setData] = useLocalStorage(storageKey, initialData);
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
@@ -37,7 +42,7 @@ const SchemaForm = ({ schema, sections, data: initialData }) => {
   }, [rootNode, data]);
 
   return (
-    <Form className={classes.form} onSubmit={console.info}>
+    <Form className={classes.form} onSubmit={() => onSubmit(data)}>
       {/* correct section coloring */}
       <span></span>
 
@@ -148,6 +153,7 @@ const Field = ({
     maximum,
     less_than,
     greater_than,
+    multiline,
   } = node.schema;
 
   /** normalize type to array */
@@ -159,14 +165,14 @@ const Field = ({
   /** help tooltip to show */
   const tooltip = [
     description,
-    ...(examples?.length ? [" "] : []),
     examples?.length ? `Examples: ${examples.join(", ")}` : "",
   ]
     .filter(Boolean)
     .join("<br/>");
 
   /** is the field required to be set */
-  const required = schema.required?.includes(name) && !types.includes("null");
+  const required =
+    schema.required?.includes(split(name).pop()) && !types.includes("null");
 
   /** full label elements to show */
   const label = (
@@ -360,8 +366,10 @@ const Field = ({
     /** text input */
     control = (
       <TextBox
+        multi={multiline}
         pattern={pattern}
         value={value || ""}
+        minLength={required ? 0 : undefined}
         onChange={(value) => onChange(value || null)}
       />
     );
