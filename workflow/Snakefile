@@ -36,9 +36,9 @@ if stages == "all" or stages == "new-refs" or stages == "old-refs":
             # Citations
             expand("{base_dir}STRchive-citations.json", base_dir = base_dir),
             # TRGT bed files
-            expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
             # Extended BED files
             expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
@@ -46,18 +46,18 @@ if stages == "all" or stages == "new-refs" or stages == "old-refs":
             # Plots
             # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
-            expand("{base_dir}plots/path-size.json", base_dir = base_dir),
+            expand("{base_dir}plots/path-size.json", base_dir = base_dir)#,
             # Reference alleles
-            expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
+            # expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
+            # expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
+            # expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 elif stages == "skip-refs":
     rule all:
         input:
             # TRGT bed files
-            expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
             # Extended BED files
             expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
             expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
@@ -65,11 +65,11 @@ elif stages == "skip-refs":
             # Plots
             # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
-            expand("{base_dir}plots/path-size.json", base_dir = base_dir),
+            expand("{base_dir}plots/path-size.json", base_dir = base_dir)#,
             # Reference alleles
-            expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
-            expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
+            # expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir),
+            # expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir),
+            # expand("{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt", base_dir = base_dir)
 else:
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', 'old-refs', or 'skip-refs'")
 
