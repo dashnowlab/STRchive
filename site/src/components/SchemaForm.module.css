@@ -1,32 +1,38 @@
-.grid {
+.object {
   display: grid;
   grid-template-columns: auto minmax(200px, 1fr);
-  grid-auto-flow: row dense;
+  grid-column: 1 / -1;
+  align-items: center;
   width: 100%;
+  padding: 20px;
   gap: 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .object {
     grid-template-columns: auto;
   }
 }
 
-.grid > label {
+.object > label {
   display: contents;
+}
+
+.object:empty {
+  display: none;
 }
 
 .array {
   display: grid;
   grid-template-columns: minmax(200px, 1fr) auto;
   grid-auto-flow: row dense;
+  grid-column: 1 / -1;
   align-items: center;
   width: 100%;
-  gap: 20px;
-}
-
-.card {
   padding: 20px;
+  gap: 20px;
   border-radius: var(--rounded);
   box-shadow: var(--box-shadow);
 }
@@ -42,18 +48,16 @@
 }
 
 .error {
+  grid-column: 1 / -1;
   margin-top: -10px;
   color: var(--secondary);
   text-align: left;
   overflow-wrap: break-word;
 }
 
-.full {
-  grid-column: 1 / -1;
-}
-
 .heading {
   display: flex;
+  grid-column: 1 / -1;
   align-items: center;
   align-self: flex-start;
   gap: 10px;

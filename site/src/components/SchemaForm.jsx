@@ -1,9 +1,8 @@
 import { cloneElement, Fragment, useMemo, useState } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { LuSend } from "react-icons/lu";
-import clsx from "clsx";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
-import { cloneDeep, uniq, upperFirst } from "lodash-es";
+import { cloneDeep, range, uniq, upperFirst } from "lodash-es";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
@@ -29,26 +28,7 @@ const SchemaForm = ({ schema, sections, data: initialData }) => {
   /** current form data state */
   const [data, setData] = useState(initialData);
 
-  if (!data.locus_structure?.length)
-    data.locus_structure = [
-      {
-        motif: "111",
-        count: 111,
-        type: "main_repeat",
-      },
-      {
-        motif: "222",
-        count: 222,
-        type: "main_repeat",
-      },
-      {
-        motif: "333",
-        count: 333,
-        type: "main_repeat",
-      },
-    ];
-
-  console.log(data.locus_structure);
+  console.log(data);
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
@@ -144,15 +124,12 @@ const Field = ({
   rootNode,
   schema,
   section,
-  index,
   node,
+  path = "",
   data,
   setData,
   errors,
 }) => {
-  /** path to field, without root part */
-  let path = node.evaluationPath.replace(/^#\/properties/, "");
-
   /** are we at top level of schema */
   const level = split(path).length;
 
@@ -177,7 +154,7 @@ const Field = ({
   const types = [type].flat();
 
   /** form data name */
-  const name = split(path).pop();
+  const name = path;
 
   /** help tooltip to show */
   const tooltip = [
@@ -189,7 +166,7 @@ const Field = ({
     .join("<br/>");
 
   /** is the field required to be set */
-  const required = schema.required.includes(name) && !types.includes("null");
+  const required = schema.required?.includes(name) && !types.includes("null");
 
   /** full label elements to show */
   const label = (
@@ -210,13 +187,15 @@ const Field = ({
   };
 
   /** get validation errors associated with this field */
-  const fieldErrors = errors.filter(({ data }) => data.pointer.endsWith(path));
+  const fieldErrors = errors.filter(
+    ({ data }) => data.pointer === path.replace(/^#?\/?/, "#/"),
+  );
   /** is there an error on this field */
   const isError = !!fieldErrors.length;
 
   /** error component to show */
   const error = isError ? (
-    <span className={clsx(classes.error, classes.full)}>
+    <span className={classes.error}>
       {fieldErrors
         .map(({ code, data, message }) => {
           /** prettify error message */
@@ -231,6 +210,18 @@ const Field = ({
           if (code === "compare-value-error") return <>{data.schema.message}</>;
           if (code === "type-error")
             return <>Must be {makeList(data.expected, "code")}</>;
+          if (code === "maximum-error")
+            return (
+              <>
+                Maximum <code>{data.maximum}</code>
+              </>
+            );
+          if (code === "minimum-error")
+            return (
+              <>
+                Minimum <code>{data.minimum}</code>
+              </>
+            );
           return message;
         })
         .map((error, index) => (
@@ -240,7 +231,7 @@ const Field = ({
   ) : null;
 
   /** field control to show */
-  let control = <span className={classes.full}>missing control</span>;
+  let control = <span className={classes.error}>missing control</span>;
 
   /** ref function */
   const ref = (el) => {
@@ -253,10 +244,8 @@ const Field = ({
   if (types.includes("object"))
     /** object group */
     control = (
-      <div className={clsx(classes.grid, classes.card)}>
-        {level > 0 && (
-          <div className={clsx(classes.full, classes.heading)}>{label}</div>
-        )}
+      <div className={classes.object}>
+        {level > 0 && <div className={classes.heading}>{label}</div>}
         {Object.keys(node.schema.properties).map((key) => {
           return (
             <Field
@@ -265,6 +254,7 @@ const Field = ({
               schema={schema}
               section={section}
               node={node.getChildSelection(key)[0]}
+              path={`${path}/${key}`}
               data={data}
               setData={setData}
               errors={errors}
@@ -275,73 +265,72 @@ const Field = ({
     );
   else if (types.includes("array")) {
     /** array group */
-    const items = get(data, path) ?? [];
+    const items = get(data, path)?.length ?? 0;
+
     control = (
-      <div className={clsx(classes.full, classes.grid, classes.card)}>
-        <div className={clsx(classes.full, classes.heading)}>{label}</div>
-        <div className={clsx(classes.full, classes.array)}>
-          {items.map((item, index) => {
-            return (
-              <Fragment key={index}>
-                <Field
-                  key={index}
-                  index={index}
-                  schema={schema}
-                  section={section}
-                  node={node.getChildSelection("items")[0]}
-                  data={data}
-                  setData={setData}
-                  errors={errors}
-                />
-                <div className={classes.actions}>
-                  <Button
-                    disabled={index === 0}
-                    data-tooltip="Move up"
-                    onClick={() => {
-                      data = cloneDeep(data);
-                      const aPath = join(path, String(index - 1));
-                      const bPath = join(path, String(index));
-                      const aValue = get(data, aPath);
-                      const bValue = get(data, bPath);
-                      data = set(data, aPath, bValue);
-                      data = set(data, bPath, aValue);
-                      setData(data);
-                    }}
-                  >
-                    <FaArrowUp />
-                  </Button>
-                  <Button
-                    disabled={index === items.length - 1}
-                    data-tooltip="Move down"
-                    onClick={() => {
-                      data = cloneDeep(data);
-                      const aPath = join(path, String(index));
-                      const bPath = join(path, String(index + 1));
-                      const aValue = get(data, aPath);
-                      const bValue = get(data, bPath);
-                      data = set(data, aPath, bValue);
-                      data = set(data, bPath, aValue);
-                      setData(data);
-                    }}
-                  >
-                    <FaArrowDown />
-                  </Button>
-                  <Button
-                    data-tooltip="Remove"
-                    onClick={() => {
-                      data = cloneDeep(data);
-                      data = remove(data, join(path, String(index)));
-                      setData(data);
-                    }}
-                  >
-                    <FaTrash />
-                  </Button>
-                </div>
-              </Fragment>
-            );
-          })}
-        </div>
+      <div className={classes.array}>
+        <div className={classes.heading}>{label}</div>
+        {range(items).map((index) => (
+          <Fragment key={index}>
+            <Field
+              key={index}
+              schema={schema}
+              section={section}
+              node={node.getChildSelection()[0]}
+              path={`${path}/${index}`}
+              data={data}
+              setData={setData}
+              errors={errors}
+            />
+            <div className={classes.actions}>
+              <Button
+                disabled={index === 0}
+                data-tooltip="Move up"
+                onClick={(event) => {
+                  data = cloneDeep(data);
+                  const aPath = join(path, String(index - 1));
+                  const bPath = join(path, String(index));
+                  const aValue = get(data, aPath);
+                  const bValue = get(data, bPath);
+                  data = set(data, aPath, bValue);
+                  data = set(data, bPath, aValue);
+                  setData(data);
+                }}
+              >
+                <FaArrowUp />
+              </Button>
+              <Button
+                disabled={index === items - 1}
+                data-tooltip="Move down"
+                onClick={(event) => {
+                  data = cloneDeep(data);
+                  const aPath = join(path, String(index));
+                  const bPath = join(path, String(index + 1));
+                  const aValue = get(data, aPath);
+                  const bValue = get(data, bPath);
+                  data = set(data, aPath, bValue);
+                  data = set(data, bPath, aValue);
+                  setData(data);
+                }}
+              >
+                <FaArrowDown />
+              </Button>
+              <Button
+                data-tooltip="Remove"
+                onClick={() => {
+                  data = cloneDeep(data);
+                  data = remove(data, join(path, String(index)));
+                  setData(data);
+                }}
+              >
+                <FaTrash />
+              </Button>
+            </div>
+          </Fragment>
+        ))}
+
         <Button
+          style={{ gridColumn: "1 / -1" }}
           design="plain"
           onClick={() => {
             data = cloneDeep(data);
