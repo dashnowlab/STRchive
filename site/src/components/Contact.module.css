@@ -17,3 +17,8 @@
 .link {
   text-decoration: underline;
 }
+
+.shrink {
+  width: 0;
+  min-width: 100%;
+}

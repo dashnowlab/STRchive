@@ -8,7 +8,7 @@
   overflow: hidden;
   gap: 20px;
   border-radius: var(--rounded);
-  line-height: var(--spacing);
+  line-height: var(--compact);
 }
 
 .alert::before {

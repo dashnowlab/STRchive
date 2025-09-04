@@ -21,7 +21,7 @@
   max-width: min(calc(100dvw - 80px), var(--content));
   max-height: calc(100dvh - 80px);
   margin: auto;
-  padding: 20px;
+  gap: 0;
   border-radius: var(--rounded);
   background: var(--white);
   box-shadow: var(--box-shadow);
@@ -29,7 +29,10 @@
 
 .title {
   display: flex;
+  align-items: center;
   width: 100%;
+  padding: 20px;
+  padding-bottom: 0;
   font-size: 1.1rem;
 }
 
@@ -38,11 +41,8 @@
   font-weight: var(--bold);
 }
 
-.title > button {
-  padding: 5px;
-}
-
 .body {
+  padding: 20px;
   overflow-y: auto;
   overscroll-behavior: none;
 }

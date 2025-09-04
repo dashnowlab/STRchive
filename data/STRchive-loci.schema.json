@@ -66,13 +66,15 @@
       "title": "ID",
       "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene] e.g. CANVAS_RFC1. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II",
       "section": "Overview",
-      "type": "string"
+      "type": "string",
+      "default": null
     },
     "disease_id": {
       "title": "Disease ID",
       "description": "Disease abbreviation e.g. CANVAS",
       "section": "Overview",
-      "type": "string"
+      "type": "string",
+      "default": null
     },
     "gene_strand": {
       "title": "Gene Strand",

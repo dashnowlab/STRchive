@@ -91,6 +91,13 @@ const ContactForm = () => {
 
   return (
     <Form onSubmit={submit}>
+      <Alert type="info" className={classes.shrink}>
+        Want to suggest a new locus or an edit to an existing one? Use the{" "}
+        <Link to="/loci/new">new locus form</Link> or go to an{" "}
+        <Link to="/loci#loci">existing locus</Link> and use the{" "}
+        <em>suggest edit</em> form.
+      </Alert>
+
       <div className={clsx("col", classes.form)}>
         <TextBox
           label={
@@ -154,7 +161,7 @@ const ContactForm = () => {
         </dl>
       </Collapsible>
 
-      <Alert type={status || "info"} style={{ width: 0, minWidth: "100%" }}>
+      <Alert type={status || "info"} className={classes.shrink}>
         {status === "" && (
           <>
             This will make a <strong>public</strong> post on{" "}

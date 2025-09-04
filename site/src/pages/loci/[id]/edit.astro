@@ -24,6 +24,13 @@ const locus = loci.find((locus) => locus.id === id) || {};
 
   <section>
     <Heading client:load level={1}><LuFeather />Edit Locus</Heading>
+
+    <dl>
+      <dt>Disease</dt>
+      <dd>{locus.disease_id}</dd>
+      <dt>Gene</dt>
+      <dd>{locus.gene}</dd>
+    </dl>
   </section>
 
   <EditForm client:only="react" locus={locus} />

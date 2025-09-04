@@ -1,4 +1,4 @@
-import { cloneElement, Fragment, useMemo, useState } from "react";
+import { cloneElement, Fragment, useMemo } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { LuSend } from "react-icons/lu";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
@@ -19,7 +19,13 @@ import classes from "./SchemaForm.module.css";
 window.localStorage.clear();
 
 /** form automatically generated from json schema */
-const SchemaForm = ({ schema, sections, data: initialData, onSubmit }) => {
+const SchemaForm = ({
+  schema,
+  sections,
+  data: initialData,
+  onSubmit,
+  children,
+}) => {
   /** compile schema */
   const rootNode = useMemo(
     () => compileSchema(schema, { drafts: [draft] }),
@@ -43,8 +49,10 @@ const SchemaForm = ({ schema, sections, data: initialData, onSubmit }) => {
 
   return (
     <Form className={classes.form} onSubmit={() => onSubmit(data)}>
-      {/* correct section coloring */}
+      {/* maintain correct section coloring */}
       <span></span>
+
+      {children && <section>{children}</section>}
 
       {sections.map((section, index) => (
         <section key={index}>
@@ -63,7 +71,14 @@ const SchemaForm = ({ schema, sections, data: initialData, onSubmit }) => {
       ))}
 
       <section>
-        <Button type="submit" design="bubble">
+        <Button
+          type="submit"
+          design="bubble"
+          onClick={() =>
+            /** force revalidation of data */
+            setData({ ...data })
+          }
+        >
           <LuSend />
           <span>Submit</span>
         </Button>
@@ -147,13 +162,14 @@ const Field = ({
     title,
     description,
     examples,
+    placeholder,
+    multiline,
     pattern,
     enum: _enum,
     minimum,
     maximum,
     less_than,
     greater_than,
-    multiline,
   } = node.schema;
 
   /** normalize type to array */
@@ -214,8 +230,14 @@ const Field = ({
           if (code === "enum-error")
             return <>Must be {makeList(data.schema.enum, "code")}</>;
           if (code === "compare-value-error") return <>{data.schema.message}</>;
-          if (code === "type-error")
-            return <>Must be {makeList(data.expected, "code")}</>;
+          if (code === "type-error") {
+            if (
+              [data.expected].flat().includes("string") &&
+              (data.value === "" || data.value == null)
+            )
+              return <>Must not be blank</>;
+            else return <>Must be {makeList(data.expected, "code")}</>;
+          }
           if (code === "maximum-error")
             return (
               <>
@@ -292,7 +314,7 @@ const Field = ({
               <Button
                 disabled={index === 0}
                 data-tooltip="Move up"
-                onClick={(event) => {
+                onClick={() => {
                   data = cloneDeep(data);
                   const aPath = join(path, String(index - 1));
                   const bPath = join(path, String(index));
@@ -308,7 +330,7 @@ const Field = ({
               <Button
                 disabled={index === items - 1}
                 data-tooltip="Move down"
-                onClick={(event) => {
+                onClick={() => {
                   data = cloneDeep(data);
                   const aPath = join(path, String(index));
                   const bPath = join(path, String(index + 1));
@@ -366,6 +388,7 @@ const Field = ({
     /** text input */
     control = (
       <TextBox
+        placeholder={placeholder}
         multi={multiline}
         pattern={pattern}
         value={value || ""}
