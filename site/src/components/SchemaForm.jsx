@@ -4,7 +4,7 @@ import { LuSend } from "react-icons/lu";
 import clsx from "clsx";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import { cloneDeep, uniq, upperFirst } from "lodash-es";
-import { get, set, split } from "@sagold/json-pointer";
+import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Help from "@/components/Help";
@@ -28,6 +28,27 @@ const SchemaForm = ({ schema, sections, data: initialData }) => {
 
   /** current form data state */
   const [data, setData] = useState(initialData);
+
+  if (!data.locus_structure?.length)
+    data.locus_structure = [
+      {
+        motif: "111",
+        count: 111,
+        type: "main_repeat",
+      },
+      {
+        motif: "222",
+        count: 222,
+        type: "main_repeat",
+      },
+      {
+        motif: "333",
+        count: 333,
+        type: "main_repeat",
+      },
+    ];
+
+  console.log(data.locus_structure);
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
@@ -132,8 +153,6 @@ const Field = ({
   /** path to field, without root part */
   let path = node.evaluationPath.replace(/^#\/properties/, "");
 
-  if (index !== undefined) path = path.replace(/\/items$/, `/${index}`);
-
   /** are we at top level of schema */
   const level = split(path).length;
 
@@ -185,8 +204,9 @@ const Field = ({
 
   /** set nested data value from path */
   const onChange = (value) => {
-    console.log(path);
-    setData(set(cloneDeep(data), path, value));
+    data = cloneDeep(data);
+    data = set(data, path, value);
+    setData(data);
   };
 
   /** get validation errors associated with this field */
@@ -233,7 +253,7 @@ const Field = ({
   if (types.includes("object"))
     /** object group */
     control = (
-      <div className={clsx(classes.full, classes.grid, classes.card)}>
+      <div className={clsx(classes.grid, classes.card)}>
         {level > 0 && (
           <div className={clsx(classes.full, classes.heading)}>{label}</div>
         )}
@@ -274,14 +294,46 @@ const Field = ({
                   errors={errors}
                 />
                 <div className={classes.actions}>
-                  <span>{index + 1}</span>
-                  <Button data-tooltip="Move up">
+                  <Button
+                    disabled={index === 0}
+                    data-tooltip="Move up"
+                    onClick={() => {
+                      data = cloneDeep(data);
+                      const aPath = join(path, String(index - 1));
+                      const bPath = join(path, String(index));
+                      const aValue = get(data, aPath);
+                      const bValue = get(data, bPath);
+                      data = set(data, aPath, bValue);
+                      data = set(data, bPath, aValue);
+                      setData(data);
+                    }}
+                  >
                     <FaArrowUp />
                   </Button>
-                  <Button data-tooltip="Move down">
+                  <Button
+                    disabled={index === items.length - 1}
+                    data-tooltip="Move down"
+                    onClick={() => {
+                      data = cloneDeep(data);
+                      const aPath = join(path, String(index));
+                      const bPath = join(path, String(index + 1));
+                      const aValue = get(data, aPath);
+                      const bValue = get(data, bPath);
+                      data = set(data, aPath, bValue);
+                      data = set(data, bPath, aValue);
+                      setData(data);
+                    }}
+                  >
                     <FaArrowDown />
                   </Button>
-                  <Button data-tooltip="Remove">
+                  <Button
+                    data-tooltip="Remove"
+                    onClick={() => {
+                      data = cloneDeep(data);
+                      data = remove(data, join(path, String(index)));
+                      setData(data);
+                    }}
+                  >
                     <FaTrash />
                   </Button>
                 </div>
@@ -292,13 +344,13 @@ const Field = ({
         <Button
           design="plain"
           onClick={() => {
-            const _data = cloneDeep(data);
-            const list = get(_data, path) ?? [];
+            data = cloneDeep(data);
             let newItem = node
               .getNodeChild("items")
               .node.getData(undefined, {});
             if (newItem === "") newItem = null;
-            setData(set(_data, path, [...list, newItem]));
+            data = set(data, [...split(path), "[]"], newItem);
+            setData(data);
           }}
         >
           <FaPlus />
@@ -339,10 +391,6 @@ const Field = ({
     );
     control = (
       <NumberBox
-        name={name}
-        label={label}
-        required={required}
-        pattern={pattern}
         step={types.includes("integer") ? 1 : "any"}
         min={Number.isFinite(min) ? min : undefined}
         max={Number.isFinite(max) ? max : undefined}
@@ -354,8 +402,13 @@ const Field = ({
 
   return (
     <Fragment>
-      {/* props that should be on all fields */}
-      {cloneElement(control, { ref, name, label, required })}
+      {typeof control.type === "function"
+        ? cloneElement(
+            control,
+            /** props that should be on all component controls */
+            { ref, name, label, required },
+          )
+        : control}
       {error}
     </Fragment>
   );
