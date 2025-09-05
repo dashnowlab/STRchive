@@ -1,4 +1,193 @@
 
+PMID- 40890629
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250902
+LR  - 20250904
+IS  - 1471-2377 (Electronic)
+IS  - 1471-2377 (Linking)
+VI  - 25
+IP  - 1
+DP  - 2025 Sep 1
+TI  - Long-read sequencing identifies ATXN3 repeat expansions, and transcriptomics 
+      reveals disease progression biomarkers and druggable targets for spinocerebellar 
+      ataxia type 3.
+PG  - 370
+LID - 10.1186/s12883-025-04378-z [doi]
+LID - 370
+AB  - BACKGROUND: Hereditary ataxias (HAs) are neurodegenerative disorders 
+      characterized by progressive cerebellar degeneration, with autosomal dominant 
+      spinocerebellar ataxias (SCAs) representing the most prevalent subtype. SCA3, the 
+      most common form worldwide, is caused by CAG repeat expansions in ATXN3, 
+      resulting in pathogenic ataxin-3 aggregation. However, the underlying molecular 
+      mechanisms driving disease progression remain incompletely understood. METHODS: 
+      We utilized an integrated multi-omics strategy to investigate a five-generation 
+      Chinese HA pedigree. Genetic analyses included targeted ataxia panel sequencing 
+      (TS), whole-exome sequencing (WES), and long-read whole-genome sequencing 
+      (LR-WGS) of blood-derived DNA to identify causal variants and confirm diagnosis. 
+      Transcriptomic profiling revealed disease-associated gene expression signatures, 
+      followed by functional annotation and cross-species validation. To ensure 
+      analytical rigor, we further validated our bioinformatic pipeline using an 
+      independent ulcerative colitis (UC) dataset. RESULTS: Genetic analysis identified 
+      pathogenic ATXN3-CAG repeat expansions that co-segregated with clinical symptoms 
+      in affected family members. Transcriptomic profiling showed significant 
+      enrichment in ECM-receptor interaction and focal adhesion pathways, along with 
+      immune dysregulation and RNA splicing defects associated with disease 
+      progression. Cross-species analysis discovered conserved blood biomarkers 
+      (C3/ALS2/SLC35A2 downward arrow and THBS1/CAMTA1 upward arrow), strongly correlated with clinical 
+      progression. Protein-protein interaction network emphasized AKT1 as a central 
+      regulator, along with other key hubs (e.g., TGFB1, MAPK3, CALM3, APP), while 
+      brain-specific analyses highlighted Mobp, Mal, Gja1 and Klk6 as potential 
+      therapeutic targets. CONCLUSIONS: This study genetically confirms SCA3 in a 
+      Chinese pedigree using LR-WGS, overcoming the diagnostic limitations of 
+      short-read sequencing. Comprehensive analyses revealed conserved SCA3 progression 
+      signatures with potential biomarkers for future non-invasive monitoring. 
+      Mechanistically, this study identified dysregulation in ECM-receptor 
+      interaction/focal adhesion, immune response, and RNA splicing as key pathogenic 
+      contributors. These findings provide both actionable therapeutic targets and 
+      demonstrate the clinical utility of integrated multi-omics approaches for SCA3 
+      diagnosis and patient stratification, with broader implications for repeat 
+      expansion disorders. TRIAL REGISTRATION: Not Applicable.
+CI  - (c) 2025. The Author(s).
+FAU - Liu, Chang
+AU  - Liu C
+AD  - Department of Neurology, The First Traditional Chinese Medicine Hospital in 
+      Changde City, Changde, 415000, China.
+FAU - Wang, Xin
+AU  - Wang X
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - College of Bioinformatics Science and Technology, Harbin Medical University, 
+      Harbin, 150081, China.
+FAU - Xu, Chao
+AU  - Xu C
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - Department of Pediatrics, The Second Hospital of Harbin Medical University, 
+      Harbin, 150001, China.
+FAU - Liu, Xiaoxiang
+AU  - Liu X
+AD  - Department of Radiology, The First People's Hospital of Changde City, Changde, 
+      415000, China.
+FAU - Ke, Liyan
+AU  - Ke L
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - Department of Medical Genetics, College of Basic Medical Sciences, Harbin Medical 
+      University, Harbin, 150081, China.
+FAU - Li, Ying
+AU  - Li Y
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - Department of Child and Adolescent Health, School of Public Health, Harbin 
+      Medical University, Harbin, 150081, China.
+FAU - Zhang, Hang
+AU  - Zhang H
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - Department of Medical Genetics, College of Basic Medical Sciences, Harbin Medical 
+      University, Harbin, 150081, China.
+FAU - Tan, Jianqiang
+AU  - Tan J
+AD  - Department of Genetics and Endocrinology, Liuzhou Maternity and Child Health Care 
+      Hospital, Liuzhou, 545001, China.
+FAU - Tan, Senwei
+AU  - Tan S
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - College of Bioinformatics Science and Technology, Harbin Medical University, 
+      Harbin, 150081, China.
+FAU - Zhang, Zitong
+AU  - Zhang Z
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China.
+AD  - Department of Medical Genetics, College of Basic Medical Sciences, Harbin Medical 
+      University, Harbin, 150081, China.
+FAU - Cheng, Liang
+AU  - Cheng L
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China. 
+      liangcheng@hrbmu.edu.cn.
+AD  - College of Bioinformatics Science and Technology, Harbin Medical University, 
+      Harbin, 150081, China. liangcheng@hrbmu.edu.cn.
+FAU - Ren, Yaqiong
+AU  - Ren Y
+AD  - McKusick-Zhang Center for Genetic Medicine, State Key Laboratory of Medical 
+      Molecular Biology, Institute of Basic Medical Sciences, Chinese Academy of 
+      Medical Science and Peking Union Medical College, Beijing, 100005, China. 
+      ryq327@163.com.
+AD  - Laboratory of Pediatric Research, Children's Hospital of Wujiang District, 
+      Suzhou, 215234, China. ryq327@163.com.
+FAU - Shi, Lei
+AU  - Shi L
+AD  - National Health Commission Key Laboratory of Molecular Probes and Targeted 
+      Diagnosis and Therapy, Harbin Medical University, Harbin, 150081, China. 
+      shilei_0328@hrbmu.edu.cn.
+AD  - Department of Medical Genetics, College of Basic Medical Sciences, Harbin Medical 
+      University, Harbin, 150081, China. shilei_0328@hrbmu.edu.cn.
+LA  - eng
+GR  - 62222104/National Natural Science Foundation of China/
+GR  - 2020YFA0804000/National Key Research and Development Program of China/
+PT  - Journal Article
+DEP - 20250901
+PL  - England
+TA  - BMC Neurol
+JT  - BMC neurology
+JID - 100968555
+RN  - EC 3.4.19.12 (Ataxin-3)
+RN  - EC 3.4.19.12 (ATXN3 protein, human)
+RN  - 0 (Biomarkers)
+RN  - 0 (Repressor Proteins)
+SB  - IM
+MH  - Humans
+MH  - *Ataxin-3/genetics
+MH  - Male
+MH  - *Machado-Joseph Disease/genetics/drug therapy
+MH  - Disease Progression
+MH  - Female
+MH  - Middle Aged
+MH  - Adult
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Transcriptome
+MH  - Pedigree
+MH  - Gene Expression Profiling
+MH  - Biomarkers
+MH  - Exome Sequencing
+MH  - Whole Genome Sequencing
+MH  - Repressor Proteins
+PMC - PMC12403609
+OTO - NOTNLM
+OT  - ATXN3
+OT  - Biomarker
+OT  - Long-read Whole-genome Sequencing
+OT  - MJD
+OT  - Machado-Joseph Disease
+OT  - Repeat Expansion
+OT  - SCA3
+OT  - Spinocerebellar Ataxia Type 3
+COIS- Declarations. Ethics approval: The study was conducted in accordance with the 
+      Declaration of Helsinki, and approved by the Ethics Committee of the First 
+      Traditional Chinese Medicine Hospital in Changde City (Approval Number: 
+      2020-020528) and Harbin Medical University (Approval Number: HMUIRB2022006). 
+      Informed consent: Informed consent was obtained from all subjects involved in the 
+      study. Written informed consent has been obtained from the patient(s) to publish 
+      this paper. Competing interests: The authors declare no competing interests.
+EDAT- 2025/09/02 00:44
+MHDA- 2025/09/03 02:19
+PMCR- 2025/09/01
+CRDT- 2025/09/01 23:50
+PHST- 2025/02/26 00:00 [received]
+PHST- 2025/07/30 00:00 [accepted]
+PHST- 2025/09/03 02:19 [medline]
+PHST- 2025/09/02 00:44 [pubmed]
+PHST- 2025/09/01 23:50 [entrez]
+PHST- 2025/09/01 00:00 [pmc-release]
+AID - 10.1186/s12883-025-04378-z [pii]
+AID - 4378 [pii]
+AID - 10.1186/s12883-025-04378-z [doi]
+PST - epublish
+SO  - BMC Neurol. 2025 Sep 1;25(1):370. doi: 10.1186/s12883-025-04378-z.
+
 PMID- 40589716
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -9295,7 +9484,7 @@ FAU - Padh, Harish
 AU  - Padh H
 LA  - eng
 PT  - Journal Article
-PL  - India
+PL  - United States
 TA  - Indian J Med Res
 JT  - The Indian journal of medical research
 JID - 0374701
@@ -16881,6 +17070,96 @@ PHST- 2002/03/28 10:01 [medline]
 PHST- 2001/12/26 10:00 [entrez]
 PST - ppublish
 SO  - Clin Cancer Res. 2001 Dec;7(12):4096-101.
+
+PMID- 11529907
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20010920
+LR  - 20190513
+IS  - 0009-9104 (Print)
+IS  - 1365-2249 (Electronic)
+IS  - 0009-9104 (Linking)
+VI  - 125
+IP  - 2
+DP  - 2001 Aug
+TI  - Children with atopic dermatitis who carry toxin-positive Staphylococcus aureus 
+      strains have an expansion of blood CD5- B lymphocytes without an increase in 
+      disease severity.
+PG  - 184-9
+AB  - Toxin-positive strains of Staphylococcus aureus (T + S. aureus) are present on 
+      the skin of some but not all patients with atopic dermatitis. Many staphylococcal 
+      toxins are superantigens, which can stimulate the immune response and thus may 
+      potentially lead to the very high levels of IgE characteristic of this condition, 
+      as well as exacerbating the clinical disease. The aim of this study was to 
+      determine whether the presence of T + S. aureus on the skin of children with 
+      atopic dermatitis was associated with in vivo evidence of a heightened humoral 
+      immune response, higher IgE levels and more severe clinical disease. Toxin gene 
+      expression in S. aureus isolated from the eczematous lesions of 28 children with 
+      atopic dermatitis was assessed by PCR. Clinical and immune data were also 
+      collected from this cohort. Thirteen of the 28 children (46%) were colonized with 
+      T + S. aureus strains. The presence of T + S. aureus was associated with a 
+      significant expansion in peripheral blood CD5- B cells (P = 0.01), and the more 
+      toxin types identified the greater the B-cell expansion (P = 0.002). However, in 
+      this cohort of children with atopic dermatitis, despite th in vivo expansion of B 
+      cells in children harbouring T + S. aureus, there was no associated increase in 
+      IgE levels or in clinical disease severity scores.
+FAU - Arkwright, P D
+AU  - Arkwright PD
+AD  - Academic Unit of Child Health, University of Manchester, Booth Hall Children's 
+      Hospital, Manchester, UK. peter_arkwright@lineone.net
+FAU - Cookson, B D
+AU  - Cookson BD
+FAU - Haeney, M R
+AU  - Haeney MR
+FAU - Sanyal, D
+AU  - Sanyal D
+FAU - Potter, M R
+AU  - Potter MR
+FAU - David, T J
+AU  - David TJ
+LA  - eng
+PT  - Journal Article
+PL  - England
+TA  - Clin Exp Immunol
+JT  - Clinical and experimental immunology
+JID - 0057202
+RN  - 0 (CD5 Antigens)
+RN  - 0 (Enterotoxins)
+RN  - 0 (Immunoglobulin G)
+RN  - 0 (Superantigens)
+RN  - 37341-29-0 (Immunoglobulin E)
+SB  - IM
+MH  - Adolescent
+MH  - B-Lymphocytes/chemistry/*immunology
+MH  - Blood/immunology
+MH  - CD5 Antigens/*analysis
+MH  - Child
+MH  - Child, Preschool
+MH  - Dermatitis, Atopic/diagnosis/*immunology/*microbiology
+MH  - Enterotoxins/*analysis
+MH  - Eosinophils
+MH  - Humans
+MH  - Immunoglobulin E/blood
+MH  - Immunoglobulin G/blood
+MH  - Leukocyte Count
+MH  - Lymphocyte Activation
+MH  - Lymphocyte Count
+MH  - Nasal Cavity/microbiology
+MH  - Staphylococcus aureus/chemistry/*pathogenicity
+MH  - Superantigens/analysis
+PMC - PMC1906122
+EDAT- 2001/09/01 10:00
+MHDA- 2001/09/21 10:01
+PMCR- 2002/08/01
+CRDT- 2001/09/01 10:00
+PHST- 2001/09/01 10:00 [pubmed]
+PHST- 2001/09/21 10:01 [medline]
+PHST- 2001/09/01 10:00 [entrez]
+PHST- 2002/08/01 00:00 [pmc-release]
+AID - cei1620 [pii]
+AID - 10.1046/j.1365-2249.2001.01620.x [doi]
+PST - ppublish
+SO  - Clin Exp Immunol. 2001 Aug;125(2):184-9. doi: 10.1046/j.1365-2249.2001.01620.x.
 
 PMID- 11445856
 OWN - NLM

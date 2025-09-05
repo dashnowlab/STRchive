@@ -1,13 +1,15 @@
 
 PMID- 40417743
 OWN - NLM
-STAT- Publisher
-LR  - 20250721
+STAT- MEDLINE
+DCOM- 20250803
+LR  - 20250806
 IS  - 1530-0366 (Electronic)
+IS  - 1098-3600 (Print)
 IS  - 1098-3600 (Linking)
 VI  - 27
 IP  - 8
-DP  - 2025 May 22
+DP  - 2025 Aug
 TI  - A genome-wide approach for the discovery of novel repeat expansion disorders in 
       the Undiagnosed Diseases Network cohort.
 PG  - 101462
@@ -135,6 +137,19 @@ JT  - Genetics in medicine : official journal of the American College of Medical
       Genetics
 JID - 9815831
 SB  - IM
+MH  - Humans
+MH  - *Genome-Wide Association Study/methods
+MH  - Computational Biology/methods
+MH  - *Undiagnosed Diseases/genetics/diagnosis
+MH  - Cohort Studies
+MH  - *Rare Diseases/genetics/diagnosis
+MH  - *DNA Repeat Expansion/genetics
+MH  - Genome, Human
+MH  - Phenotype
+MH  - Genotype
+MH  - Male
+PMC - PMC12318663
+MID - NIHMS2084600
 OTO - NOTNLM
 OT  - Bioinformatics
 OT  - Rare disease
@@ -777,18 +792,21 @@ IR  - Karasozen Y
 FIR - Jiang, Yong-Hui
 IR  - Jiang YH
 EDAT- 2025/05/26 12:37
-MHDA- 2025/05/26 12:37
+MHDA- 2025/08/03 12:31
+PMCR- 2026/05/22
 CRDT- 2025/05/26 06:18
 PHST- 2024/08/07 00:00 [received]
 PHST- 2025/05/15 00:00 [revised]
 PHST- 2025/05/16 00:00 [accepted]
+PHST- 2026/05/22 00:00 [pmc-release]
+PHST- 2025/08/03 12:31 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
-PHST- 2025/05/26 12:37 [medline]
 PHST- 2025/05/26 06:18 [entrez]
 AID - S1098-3600(25)00109-1 [pii]
 AID - 10.1016/j.gim.2025.101462 [doi]
-PST - aheadofprint
-SO  - Genet Med. 2025 May 22;27(8):101462. doi: 10.1016/j.gim.2025.101462.
+PST - ppublish
+SO  - Genet Med. 2025 Aug;27(8):101462. doi: 10.1016/j.gim.2025.101462. Epub 2025 May 
+      22.
 
 PMID- 39313615
 OWN - NLM
