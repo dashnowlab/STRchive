@@ -23,8 +23,6 @@ dependencies:
   - r-purrr
   - gfortran
   - pysam
-  - htslib
-  - bedtools
   - nodejs
   - pyliftover
   - pip

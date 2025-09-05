@@ -64,20 +64,13 @@ def read_bed(bed, format):
                 continue
             line = line.strip().split('\t')
 
-            if format.lower() == 'strchive':
+            if format == 'strchive':
                 motifs = list(dict.fromkeys([x.strip().upper() for x in line[ref_motif_index].split(',')] + [x.strip().upper() for x in line[path_motif_index].split(',')]))
                 locusid = line[locusid_index]
-            elif format.lower() == 'pacbio' or format.lower() == 'trgt':
+            elif format == 'pacbio':
                 annotations = line[3].split(';')
                 motifs = [x.strip().upper() for x in annotations[1].split('=')[1].split(',')]
                 locusid = annotations[0].split('=')[1]
-            elif format.lower() == 'atarva':
-                # motifs are in the 4th column, locusid in the 6th column
-                motifs = [x.strip().upper() for x in line[3].split(',')]
-                locusid = line[5]
-
-            else:
-                raise ValueError(f"Unknown format: {format}. Supported formats are 'strchive', 'pacbio', 'trgt', and 'atarva'.")
 
             locus = {
                 'chrom': line[0],
@@ -132,94 +125,13 @@ def get_ref(fasta, ref_directory='.'):
     # If the file is not found, raise an error
     raise FileNotFoundError(f"Reference genome file not found and couldn't be downloaded: {fasta}")
 
-def compare_beds(bed1, bed2, name1, name2, ref, flank=10):
-    for bed1_info, bed2_info in zip(read_bed(bed1, name1), read_bed(bed2, name2)):
-
-        if bed1_info['id'] != bed2_info['id']:
-            raise ValueError(f"IDs do not match: {bed1_info['id']} != {bed2_info['id']}")
-
-        # choose the start of the left flank based on the smallest start coordinate
-        lflank_start = bed1_info['start'] - flank if bed1_info['start'] < bed2_info['start'] else bed2_info['start'] - flank
-        
-        # choose the end of the right flank based on the largest end coordinate
-        rflank_end = bed1_info['end'] + flank if bed1_info['end'] > bed2_info['end'] else bed2_info['end'] + flank
-        
-        # fetching the sequences
-        # NOTE: the flank sequences are extracted from the start and end of bed1_info locus
-        lflank            = ref.fetch(bed1_info['chrom'], lflank_start, bed1_info['start']).upper()
-        rflank            = ref.fetch(bed1_info['chrom'], bed1_info['end'], rflank_end).upper()
-        bed1_info_seq = ref.fetch(bed1_info['chrom'], bed1_info['start'], bed1_info['end']).upper()
-        bed2_info_seq   = ""
-
-        # flank sequence initialisers
-        bed1_info_lflank = ""; bed1_info_rflank = ""
-        bed2_info_lflank = ""; bed2_info_rflank = ""
-            
-        if bed1_info['start'] > bed2_info['start']:
-            # if bed1_info start is greater than bed2_info start
-            diff = bed1_info['start'] - bed2_info['start']
-            # pull difference bases into the repeat for bed2_info and add gaps in the flank
-            bed2_info_seq    = lflank[-diff:] + bed1_info_seq
-            bed2_info_lflank = lflank[:-diff] + " "*diff
-            # add difference gaps in the repeat for bed2_info and unchanged flank
-            bed1_info_seq  = " "*diff + bed1_info_seq
-            bed1_info_lflank = lflank
-            
-        elif bed1_info['start'] < bed2_info['start']:
-            # if bed2_info start is greater than bed1_info start
-            diff = bed2_info['start'] - bed1_info['start']
-            # add difference gaps to bed2_info repeat sequence and different bases to flank
-            bed2_info_seq = " "*diff + bed1_info_seq[diff:]
-            bed2_info_lflank = lflank + bed1_info_seq[:diff]
-            # add difference gaps to bed1_info flank 
-            bed1_info_lflank = lflank[:-diff] + " "*diff
-        else:
-            # start coordinates are same
-            bed2_info_lflank   = lflank
-            bed1_info_lflank = lflank
-            bed2_info_seq = bed1_info_seq
-            
-        if bed1_info['end'] < bed2_info['end']:
-            # if bed1_info end is smaller than bed2_info end
-            diff = bed2_info['end'] - bed1_info['end']
-            # add the difference based from flank to bed2_info repeat and gaps in flank
-            bed2_info_seq = bed2_info_seq + rflank[:diff]
-            bed2_info_rflank = " "*diff + rflank[diff:]
-            # add the difference gaps bed1_info repeat and unchanged flank
-            bed1_info_seq += " "*diff
-            bed1_info_rflank = rflank
-        
-        elif bed2_info['end'] < bed1_info['end']:
-            # if bed2_info end is smalled than bed1_info end
-            diff = bed1_info['end'] - bed2_info['end']
-            # remove difference bases from bed2_info repeat and add gaps and add difference bases to the flank
-            bed2_info_seq = bed2_info_seq[:-diff] + " "*diff
-            bed2_info_rflank = bed2_info_seq[-diff:] + rflank
-            # unchanged bed1_info repeat sequence and add difference gaps to bed1_info flank
-            bed1_info_rflank = " "*diff + rflank
-        else:
-            # if the end coordinates are the same
-            bed1_info_rflank = rflank
-            bed2_info_rflank = rflank
-
-        bed1_info_seq = split_repeat_sequence(bed1_info['motifs'], bed1_info_seq)
-        bed2_info_seq = split_repeat_sequence(bed2_info['motifs'], bed2_info_seq)
-
-        yield f"{bed1_info['id']}\n"
-        yield f"{bed1_info['chrom']}\t{bed1_info['start']}\t{bed1_info['end']}\t{','.join(bed1_info['motifs'])}\t{name1}\n"
-        yield f"{bed2_info['chrom']}\t{bed2_info['start']}\t{bed2_info['end']}\t{','.join(bed2_info['motifs'])}\t{name2}\n"
-        yield f"{bed1_info_lflank}\t{bed1_info_seq}\t{bed1_info_rflank}\n"
-        yield f"{bed2_info_lflank}\t{bed2_info_seq}\t{bed2_info_rflank}\n"
-        yield "\n"
-
-def main(beds: list[str], names: list[str], fasta: str, out: str, storage: str = '.', flank: int = 10):
+def main(bed1: str, bed2: str, fasta: str, out: str, storage: str = '.', flank: int = 10):
     """
     Extracts the flanking sequences and the repeat sequence for tandem repeat loci from the reference genome
 
-    # Accept one or more bedfiles and a corresponding list of names.
-    :param list[str] beds: List of input bed files containing the tandem repeat loci
-    :param list[str] names: List of names corresponding to each bed file
-    :param fasta: Reference genome fasta file (required)
+    :param bed1: Input bed file containing the tandem repeat loci from STRchive
+    :param bed2: Input bed file containing the tandem repeat loci from PacBio
+    :param fasta: Reference genome fasta file
     :param output: Output file name for the extracted sequences
     :param storage: Reference genome storage directory (default: current directory)
     :param flank: Flanking sequence length to extract (default: 10)
@@ -229,10 +141,84 @@ def main(beds: list[str], names: list[str], fasta: str, out: str, storage: str =
 
     # Assuming the bed files are sorted and contain the same loci
     with open(out, 'w') as outfh:
-        
-        for line in compare_beds(beds[0], beds[1], names[0], names[1], ref, flank):
-            outfh.write(line)
+        for strchive, pacbio in zip(read_bed(bed1, 'strchive'), read_bed(bed2, 'pacbio')):
+            if strchive['id'] != pacbio['id']:
+                raise ValueError(f"IDs do not match: {strchive['id']} != {pacbio['id']}")
 
+            # choose the start of the left flank based on the smallest start coordinate
+            lflank_start = strchive['start'] - flank if strchive['start'] < pacbio['start'] else pacbio['start'] - flank
+            
+            # choose the end of the right flank based on the largest end coordinate
+            rflank_end = strchive['end'] + flank if strchive['end'] > pacbio['end'] else pacbio['end'] + flank
+            
+            # fetching the sequences
+            # NOTE: the flank sequences are extracted from the start and end of strchive locus
+            lflank            = ref.fetch(strchive['chrom'], lflank_start, strchive['start']).upper()
+            rflank            = ref.fetch(strchive['chrom'], strchive['end'], rflank_end).upper()
+            strchive_seq = ref.fetch(strchive['chrom'], strchive['start'], strchive['end']).upper()
+            pacbio_seq   = ""
+
+            # flank sequence initialisers
+            strchive_lflank = ""; strchive_rflank = ""
+            pacbio_lflank = ""; pacbio_rflank = ""
+                
+            if strchive['start'] > pacbio['start']:
+                # if strchive start is greater than pacbio start
+                diff = strchive['start'] - pacbio['start']
+                # pull difference bases into the repeat for pacbio and add gaps in the flank
+                pacbio_seq    = lflank[-diff:] + strchive_seq
+                pacbio_lflank = lflank[:-diff] + " "*diff
+                # add difference gaps in the repeat for pacbio and unchanged flank
+                strchive_seq  = " "*diff + strchive_seq
+                strchive_lflank = lflank
+                
+            elif strchive['start'] < pacbio['start']:
+                # if pacbio start is greater than strchive start
+                diff = pacbio['start'] - strchive['start']
+                # add difference gaps to pacbio repeat sequence and different bases to flank
+                pacbio_seq = " "*diff + strchive_seq[diff:]
+                pacbio_lflank = lflank + strchive_seq[:diff]
+                # add difference gaps to strchive flank 
+                strchive_lflank = lflank[:-diff] + " "*diff
+            else:
+                # start coordinates are same
+                pacbio_lflank   = lflank
+                strchive_lflank = lflank
+                pacbio_seq = strchive_seq
+                
+            if strchive['end'] < pacbio['end']:
+                # if strchive end is smaller than pacbio end
+                diff = pacbio['end'] - strchive['end']
+                # add the difference based from flank to pacbio repeat and gaps in flank
+                pacbio_seq = pacbio_seq + rflank[:diff]
+                pacbio_rflank = " "*diff + rflank[diff:]
+                # add the difference gaps strchive repeat and unchanged flank
+                strchive_seq += " "*diff
+                strchive_rflank = rflank
+            
+            elif pacbio['end'] < strchive['end']:
+                # if pacbio end is smalled than strchive end
+                diff = strchive['end'] - pacbio['end']
+                # remove difference bases from pacbio repeat and add gaps and add difference bases to the flank
+                pacbio_seq = pacbio_seq[:-diff] + " "*diff
+                pacbio_rflank = pacbio_seq[-diff:] + rflank
+                # unchanged strchive repeat sequence and add difference gaps to strchive flank
+                strchive_rflank = " "*diff + rflank
+            else:
+                # if the end coordinates are the same
+                strchive_rflank = rflank
+                pacbio_rflank = rflank
+
+
+            strchive_seq = split_repeat_sequence(strchive['motifs'], strchive_seq)
+            pacbio_seq = split_repeat_sequence(pacbio['motifs'], pacbio_seq)
+            
+            outfh.write(f"{strchive['id']}\n")
+            outfh.write(f"{strchive['chrom']}\t{strchive['start']}\t{strchive['end']}\t{','.join(strchive['motifs'])}\tSTRchive\n")
+            outfh.write(f"{pacbio['chrom']}\t{pacbio['start']}\t{pacbio['end']}\t{','.join(pacbio['motifs'])}\tTRGT\n")
+            outfh.write(f"{strchive_lflank}\t{strchive_seq}\t{strchive_rflank}\n")
+            outfh.write(f"{pacbio_lflank}\t{pacbio_seq}\t{pacbio_rflank}\n")
+            outfh.write("\n")
 
     ref.close()
      
@@ -240,4 +226,4 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
     import defopt
-    defopt.run(main, cli_options='all')
+    defopt.run(main)

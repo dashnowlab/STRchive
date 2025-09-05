@@ -36,29 +36,13 @@ if stages == "all" or stages == "new-refs" or stages == "old-refs":
             # Citations
             expand("{base_dir}STRchive-citations.json", base_dir = base_dir),
             # TRGT bed files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
-            # Atarva bed files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.atarva.bed.gz", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.atarva.bed.gz", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.atarva.bed.gz", base_dir = base_dir),
-            # stranger catalogs
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.stranger.json", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.stranger.json", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.stranger.json", base_dir = base_dir),
-            # Straglr bed files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.straglr.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.straglr.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.straglr.bed", base_dir = base_dir),
-            # General BED files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.general.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.general.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.general.bed", base_dir = base_dir),
-            # longTR catalog BED files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.longTR.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.longTR.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.longTR.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
+            # Extended BED files
+            expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir),
             # Plots
             # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
@@ -71,29 +55,13 @@ elif stages == "skip-refs":
     rule all:
         input:
             # TRGT bed files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
-            # Atarva bed files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.atarva.bed.gz", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.atarva.bed.gz", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.atarva.bed.gz", base_dir = base_dir),
-            # stranger catalogs
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.stranger.json", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.stranger.json", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.stranger.json", base_dir = base_dir),
-            # Straglr bed files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.straglr.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.straglr.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.straglr.bed", base_dir = base_dir),
-            # General BED files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.general.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.general.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.general.bed", base_dir = base_dir),
-            # longTR catalog BED files
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg38.longTR.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.hg19.longTR.bed", base_dir = base_dir),
-            expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.longTR.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg38.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.hg19.TRGT.bed", base_dir = base_dir),
+            # expand("{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed", base_dir = base_dir),
+            # Extended BED files
+            expand("{base_dir}STRchive-disease-loci.hg38.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.hg19.bed", base_dir = base_dir),
+            expand("{base_dir}STRchive-disease-loci.T2T-chm13.bed", base_dir = base_dir),
             # Plots
             # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
             expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
@@ -197,7 +165,7 @@ rule TRGT_hg38:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.TRGT.bed"
+        results = "{base_dir}STRchive-disease-loci.hg38.TRGT.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g hg38 {input.in_json} {output.results}
@@ -208,7 +176,7 @@ rule TRGT_hg19:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.TRGT.bed"
+        results = "{base_dir}STRchive-disease-loci.hg19.TRGT.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g hg19 {input.in_json} {output.results}
@@ -219,121 +187,10 @@ rule TRGT_T2T:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed"
+        results = "{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f TRGT -g T2T {input.in_json} {output.results}
-        """
-
-rule atarva_hg38:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        bed = "{base_dir}catalogs/STRchive-disease-loci.hg38.atarva.bed",
-        bed_gz = "{base_dir}catalogs/STRchive-disease-loci.hg38.atarva.bed.gz",
-        tbi = "{base_dir}catalogs/STRchive-disease-loci.hg38.atarva.bed.gz.tbi"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f atarva -g hg38 {input.in_json} {output.bed}
-        bedtools sort -i {output.bed} | bgzip -c > {output.bed_gz}
-        tabix -p bed {output.bed_gz}
-        """
-
-rule atarva_hg19:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        bed = "{base_dir}catalogs/STRchive-disease-loci.hg19.atarva.bed",
-        bed_gz = "{base_dir}catalogs/STRchive-disease-loci.hg19.atarva.bed.gz",
-        tbi = "{base_dir}catalogs/STRchive-disease-loci.hg19.atarva.bed.gz.tbi"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f atarva -g hg19 {input.in_json} {output.bed}
-        bedtools sort -i {output.bed} | bgzip -c > {output.bed_gz}
-        tabix -p bed {output.bed_gz}
-        """
-
-rule atarva_T2T:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        bed = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.atarva.bed",
-        bed_gz = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.atarva.bed.gz",
-        tbi = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.atarva.bed.gz.tbi"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f atarva -g T2T {input.in_json} {output.bed}
-        bedtools sort -i {output.bed} | bgzip -c > {output.bed_gz}
-        tabix -p bed {output.bed_gz}
-        """
-
-rule stranger_hg38:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.stranger.json"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f stranger -g hg38 {input.in_json} {output.results}
-        """
-
-rule stranger_hg19:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.stranger.json"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f stranger -g hg19 {input.in_json} {output.results}
-        """
-
-rule stranger_T2T:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.stranger.json"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f stranger -g T2T {input.in_json} {output.results}
-        """
-
-rule straglr_hg38:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        bed = "{base_dir}catalogs/STRchive-disease-loci.hg38.straglr.bed",
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f straglr -g hg38 {input.in_json} {output.bed}
-        """
-
-rule straglr_hg19:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        bed = "{base_dir}catalogs/STRchive-disease-loci.hg19.straglr.bed",
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f straglr -g hg19 {input.in_json} {output.bed}
-        """
-
-rule straglr_T2T:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        bed = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.straglr.bed",
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f straglr -g T2T {input.in_json} {output.bed}
         """
 
 rule bed_hg38:
@@ -341,7 +198,7 @@ rule bed_hg38:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.general.bed"
+        results = "{base_dir}STRchive-disease-loci.hg38.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g hg38 {input.in_json} {output.results}
@@ -352,7 +209,7 @@ rule bed_hg19:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.general.bed"
+        results = "{base_dir}STRchive-disease-loci.hg19.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g hg19 {input.in_json} {output.results}
@@ -363,43 +220,10 @@ rule bed_T2T:
         in_json = in_json,
         check = "{base_dir}check-loci.txt"
     output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.general.bed"
+        results = "{base_dir}STRchive-disease-loci.T2T-chm13.bed"
     shell:
         """
         python {scripts_dir}make-catalog.py -f bed -g T2T {input.in_json} {output.results}
-        """
-
-rule longTR_hg38:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.longTR.bed"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f longTR -g hg38 {input.in_json} {output.results}
-        """
-
-rule longTR_hg19:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.longTR.bed"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f longTR -g hg19 {input.in_json} {output.results}
-        """
-
-rule longTR_T2T:
-    input:
-        in_json = in_json,
-        check = "{base_dir}check-loci.txt"
-    output:
-        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.longTR.bed"
-    shell:
-        """
-        python {scripts_dir}make-catalog.py -f longTR -g T2T {input.in_json} {output.results}
         """
 
 rule age_onset_plot:
@@ -426,23 +250,22 @@ rule path_size_plot:
 
 rule get_ref_alleles:
     input:
-        bed_hg19 = "{base_dir}catalogs/STRchive-disease-loci.hg19.bed",
-        TRGT_hg19 = "{base_dir}catalogs/STRchive-disease-loci.hg19.TRGT.bed",
-        bed_hg38 = "{base_dir}catalogs/STRchive-disease-loci.hg38.bed",
-        TRGT_hg38 = "{base_dir}catalogs/STRchive-disease-loci.hg38.TRGT.bed",
-        bed_T2T = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.bed",
-        TRGT_T2T = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed"
+        bed_hg19 = "{base_dir}STRchive-disease-loci.hg19.bed",
+        TRGT_hg19 = "{base_dir}STRchive-disease-loci.hg19.TRGT.bed",
+        bed_hg38 = "{base_dir}STRchive-disease-loci.hg38.bed",
+        TRGT_hg38 = "{base_dir}STRchive-disease-loci.hg38.TRGT.bed",
+        bed_T2T = "{base_dir}STRchive-disease-loci.T2T-chm13.bed",
+        TRGT_T2T = "{base_dir}STRchive-disease-loci.T2T-chm13.TRGT.bed"
     output:
         result_hg19 = "{base_dir}ref-alleles/ref-alleles.hg19.txt",
         result_hg38 = "{base_dir}ref-alleles/ref-alleles.hg38.txt",
         result_T2T = "{base_dir}ref-alleles/ref-alleles.T2T-chm13.txt"
     shell:
         """
-        python {scripts_dir}ref-allele.py --beds {input.bed_hg19} {input.TRGT_hg19} --names STRchive TRGT --fasta 'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz' --out {output.result_hg19} --storage {ref_directory}
-        python {scripts_dir}ref-allele.py --beds {input.bed_hg38} {input.TRGT_hg38} --names STRchive TRGT --fasta 'https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz' --out {output.result_hg38} --storage {ref_directory}
-        python {scripts_dir}ref-allele.py --beds {input.bed_T2T} {input.TRGT_T2T} --names STRchive TRGT --fasta 'https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0_maskedY_rCRS.fa.gz' --out {output.result_T2T} --storage {ref_directory}
+        python {scripts_dir}ref-allele.py {input.bed_hg19} {input.TRGT_hg19} 'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz' {output.result_hg19} {ref_directory}
+        python {scripts_dir}ref-allele.py {input.bed_hg38} {input.TRGT_hg38} 'https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz' {output.result_hg38} {ref_directory}
+        python {scripts_dir}ref-allele.py {input.bed_T2T} {input.TRGT_T2T} 'https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0_maskedY_rCRS.fa.gz' {output.result_T2T} {ref_directory}
         """
-
 
 #Input data not in repo
 
