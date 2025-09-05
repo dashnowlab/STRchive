@@ -68,7 +68,7 @@ def add_flank_coordinates(row, genome = 'hg38'):
         {
         "motif": "CAG",
         "count": null,
-        "type": "main_repeat"
+        "type": "pathogenic_repeat"
         },
         {
         "motif": "CAACAG",
@@ -87,7 +87,7 @@ def add_flank_coordinates(row, genome = 'hg38'):
         {
         "motif": "CAG",
         "count": null,
-        "type": "main_repeat"
+        "type": "pathogenic_repeat"
         "position": "chr1:100-200"
         },
         {
@@ -108,11 +108,11 @@ def add_flank_coordinates(row, genome = 'hg38'):
     :param genome: genome build (hg19, hg38 or T2T)
     :return: updated locus_structure with positions for each motif
 
-    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}]}, genome='hg38')
-    [{'motif': 'CAG', 'count': None, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 200}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 200, 'stop_hg38': 206}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat', 'start_hg38': 206, 'stop_hg38': 242}]
+    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}]}, genome='hg38')
+    [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat', 'start_hg38': 100, 'stop_hg38': 200}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 200, 'stop_hg38': 206}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat', 'start_hg38': 206, 'stop_hg38': 242}]
 
-    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': None, 'type': 'main_repeat'}]}, genome='hg38')
-    [{'motif': 'CAG', 'count': 10, 'type': 'flank_repeat', 'start_hg38': 64, 'stop_hg38': 94}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 94, 'stop_hg38': 100}, {'motif': 'CCG', 'count': None, 'type': 'main_repeat', 'start_hg38': 100, 'stop_hg38': 200}]
+    >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': [{'motif': 'CAG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': None, 'type': 'pathogenic_repeat'}]}, genome='hg38')
+    [{'motif': 'CAG', 'count': 10, 'type': 'flank_repeat', 'start_hg38': 64, 'stop_hg38': 94}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption', 'start_hg38': 94, 'stop_hg38': 100}, {'motif': 'CCG', 'count': None, 'type': 'pathogenic_repeat', 'start_hg38': 100, 'stop_hg38': 200}]
     
     >>> add_flank_coordinates({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'locus_structure': []}, genome='hg38')
     []
@@ -125,15 +125,15 @@ def add_flank_coordinates(row, genome = 'hg38'):
     known_lengths = []
     left_flank = 0
     right_flank = 0
-    main_repeat_found = False
+    pathogenic_repeat_found = False
     for struct_dict in row['locus_structure']:
-        if struct_dict['type'] == 'main_repeat' and struct_dict['count'] is None:
+        if struct_dict['type'] == 'pathogenic_repeat' and struct_dict['count'] is None:
             known_lengths.append(None)
-            main_repeat_found = True
+            pathogenic_repeat_found = True
         elif struct_dict['count'] is not None:
             known_lengths.append(len(struct_dict['motif']) * struct_dict['count'])
             # This assumes than anything without a defined count is in the flanking region.
-            if main_repeat_found:
+            if pathogenic_repeat_found:
                 # Add to right flank
                 right_flank += len(struct_dict['motif']) * struct_dict['count']
             else:
@@ -178,10 +178,10 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
     'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
     'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CA', 'count': 19, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CA', 'count': 19, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
     'chr1\t100\t200\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)10(CA)19'
 
     >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
@@ -249,10 +249,10 @@ def atarva_catalog(row, genome = 'hg38'):
     >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tAAGGG\t5\tmyid'
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 2, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 2, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t212\tCAACAG\t6\tmyid_flank\nchr1\t212\t221\tCCG\t3\tmyid_flank'
 
-    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t236\tCAACAG\t6\tmyid_flank\nchr1\t236\t245\tCCG\t3\tmyid_flank'
     """
 
@@ -276,7 +276,7 @@ def atarva_catalog(row, genome = 'hg38'):
             motif_len = len(motif)
             start = struct_dict['start_' + genome]
             stop = struct_dict['stop_' + genome]
-            if struct_dict['type'] == 'main_repeat':
+            if struct_dict['type'] == 'pathogenic_repeat':
                 # this is the main repeat
                 bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
             elif struct_dict['type'] == 'interruption':
@@ -416,7 +416,7 @@ def stranger_catalog(row, genome = 'hg38'):
     >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
     {'LocusId': 'myid', 'ReferenceRegion': 'chr1:100-200', 'LocusStructure': '(CAG)*', 'VariantType': 'Repeat', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
 
-    >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
+    >>> stranger_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'benign_max': 5, 'pathogenic_min': 10, 'inheritance': 'AD', 'disease_id': 'disease_id', 'disease': 'Disease Name', 'year': 2023}, genome='hg38')
     {'LocusId': 'myid', 'ReferenceRegion': ['chr1:100-200', 'chr1:206-215'], 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'VariantType': ['Repeat', 'Repeat'], 'VariantId': ['myid', 'myid_CCG'], 'PathologicRegion': 'chr1:100-200', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
     """
 
@@ -439,7 +439,7 @@ def stranger_catalog(row, genome = 'hg38'):
                 locus_dict['ReferenceRegion'].append(f"{row['chrom']}:{struct_dict['start_' + genome]}-{struct_dict['stop_' + genome]}") # 0-based coordinates
                 locus_dict['LocusStructure'] += f"({struct_dict['motif']})*"
                 locus_dict['VariantType'].append('Repeat')
-                if struct_dict['type'] == 'main_repeat':
+                if struct_dict['type'] == 'pathogenic_repeat':
                     locus_dict['VariantId'].append(row['id'])
                     locus_dict['PathologicRegion'] = f"{row['chrom']}:{struct_dict['start_' + genome]}-{struct_dict['stop_' + genome]}"
                 else:
@@ -492,13 +492,13 @@ def straglr_catalog(row, genome = 'hg38', format = 'default'):
     chr2	190880872	190880920	GCA	GLS	GLS
     chr3	63912684	63912714	GCA	ATXN7	ATXN7
 
-    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
-    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
     'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
-    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'main_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
     'chr1\t100\t200\tCAG\tmyid\tmyid\nchr1\t200\t230\tCCG\tmyid\tmyid_CCG\nchr1\t230\t260\tCAA\tmyid\tmyid_CAA'
     """
 
