@@ -1,4 +1,392 @@
 
+PMID- 40898875
+OWN - NLM
+STAT- Publisher
+LR  - 20250903
+IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Linking)
+DP  - 2025 Sep 3
+TI  - Repeat-associated ataxias in a German patient cohort analysed by targeted 
+      parallel long-read sequencing.
+LID - awaf318 [pii]
+LID - 10.1093/brain/awaf318 [doi]
+AB  - Hereditary adult-onset ataxias are a heterogeneous group of phenotypically 
+      overlapping conditions, often caused by pathogenic expansions of short tandem 
+      repeats. Currently, 18 repeat disorders with a core phenotype of adult-onset 
+      ataxia are known. Diagnosis typically relies on sequential PCR-based methods, 
+      which are labour-intensive and lack precision. Long-read sequencing (LRS) has the 
+      potential to overcome these limitations and is currently implemented and 
+      validated in clinical genetics. Using clinical nanopore Cas9-targeted sequencing 
+      (Clin-CATS) for parallel in-depth repeat analysis, we evaluated a diagnostic 
+      cohort of 513 adult-onset ataxia patients, determining frequencies of all known 
+      repeat-associated ataxias except Spinocerebellar ataxia 4 (SCA4), as well as the 
+      carrier frequencies for autosomal-recessive disorders, RFC1 spectrum disorder and 
+      Friedreich's ataxia (FRDA). Additionally, phenotypes of patients with established 
+      genetic diagnoses were characterized, especially those of patients living with 
+      RFC1 spectrum disorder and SCA27B. Repeat-associated ataxias were confirmed in 
+      33.3% of cases, including rare ataxias, such as SCA10, SCA36 and SCA37, alongside 
+      as the most prevalent conditions SCA27B and RFC1 spectrum disorder. Potentially 
+      pathogenic expansions in FGF14 were identified in an additional 4.7% of patients. 
+      Testing of another 347 patients for ZFHX3 expansions linked to SCA4 did not 
+      identify any cases. Dual diagnoses were frequent, occuring in 6.4% of patients 
+      with repeat-associated ataxia. We confirmed a high RFC1 spectrum disorder carrier 
+      frequency (7.2%) and reclassified certain FXN expansions as likely 
+      non-pathogenic, resulting in a lower than estimated carrier frequency for FRDA of 
+      0.8%. We also identified novel repeat configurations in several loci and 
+      illustrated the high heterogeneity of repeat expansions in RFC1, highlighting it 
+      as a potential source of false results when using PCR-based methods. This study 
+      underscores the diagnostic advantages of LRS for comprehensive repeat analysis 
+      and recommends its adoption as a standard in clinical genetics, replacing 
+      Southern blot and PCR-based approaches. Furthermore, based on our findings in a 
+      large patient cohort a re-evaluation of existing phenotype-genotype correlations 
+      is recommended as well as evaluating additional parameters besides repeat length 
+      to improve diagnostic precision of repeat analysis.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Erdmann, Hannes
+AU  - Erdmann H
+AUID- ORCID: 0000-0002-2620-1850
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+AD  - Friedrich Baur Institute at the Department of Neurology, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+FAU - Schaub, Annalisa
+AU  - Schaub A
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+AD  - Friedrich Baur Institute at the Department of Neurology, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+FAU - Lucas, Morghan C
+AU  - Lucas MC
+AUID- ORCID: 0000-0001-7654-9137
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+AD  - Friedrich Baur Institute at the Department of Neurology, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+AD  - Department of Medicine IV, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+FAU - Scholz, Veronika
+AU  - Scholz V
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Benet-Pages, Anna
+AU  - Benet-Pages A
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Center Munich, 85764 Neuherberg, Germany.
+FAU - Becker, Kerstin
+AU  - Becker K
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Dineiger, Christine
+AU  - Dineiger C
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Mayer, Veronika
+AU  - Mayer V
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - van Buren, Inga
+AU  - van Buren I
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Breithausen, Eva
+AU  - Breithausen E
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Akbari, Karl
+AU  - Akbari K
+AD  - School of International Business, Hochschule Bremen, 28199 Bremen, Germany.
+FAU - Cordts, Isabell
+AU  - Cordts I
+AUID- ORCID: 0000-0002-2078-1997
+AD  - Department of Neurology, Department of Neurology, Klinikum Rechts der Isar, 
+      Technical University of Munich, 81675 Munich, Germany.
+AD  - Department of Neuroscience, Mayo Clinic, Jacksonville, FL 32224, USA.
+FAU - Sauer, Mayra
+AU  - Sauer M
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Schneider, Christine
+AU  - Schneider C
+AD  - Department of Neurology, University Medical Center Augsburg, 86156 Augsburg, 
+      Germany.
+FAU - Krakowsky, Rosanna
+AU  - Krakowsky R
+AD  - Institute of Human Genetics, University of Leipzig Medical Center, 04103 Leipzig, 
+      Germany.
+FAU - Schnabel, Franziska
+AU  - Schnabel F
+AD  - Institute of Human Genetics, University of Leipzig Medical Center, 04103 Leipzig, 
+      Germany.
+FAU - Dunker, Konstanze
+AU  - Dunker K
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Fabritius, Lena
+AU  - Fabritius L
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Gerb, Johannes
+AU  - Gerb J
+AUID- ORCID: 0000-0002-5053-1462
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+FAU - Grabova, Denis
+AU  - Grabova D
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Mohwald, Ken
+AU  - Mohwald K
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+FAU - Naher, Marius
+AU  - Naher M
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Steinmetz, Karoline
+AU  - Steinmetz K
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Thiessen, Franziska
+AU  - Thiessen F
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Jack, Alexander
+AU  - Jack A
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+AD  - German Center for Neurodegenerative Diseases (DZNE) Munich, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Schneider-Gold, Christiane
+AU  - Schneider-Gold C
+AD  - Department of Neurology, St Josef Hospital, Ruhr-University of Bochum, 44791 
+      Bochum, Germany.
+FAU - Zittel, Simone
+AU  - Zittel S
+AD  - Department of Neurology, University Medical Center Hamburg-Eppendorf, 20246 
+      Hamburg, Germany.
+FAU - Petersen, Christina
+AU  - Petersen C
+AD  - Praxis fur Humangenetik, Zentrum fur ambulante Medizin, Institute of Human 
+      Genetics, University of Jena, 07743 Jena, Germany.
+FAU - Schreyer, Isolde
+AU  - Schreyer I
+AD  - Praxis fur Humangenetik, Zentrum fur ambulante Medizin, Institute of Human 
+      Genetics, University of Jena, 07743 Jena, Germany.
+FAU - Mamecke, Larissa
+AU  - Mamecke L
+AD  - Mitteldeutscher Praxisverbund Humangenetik, 06110 Halle/Saale, Germany.
+FAU - Wilfling, Sibylle
+AU  - Wilfling S
+AD  - Center for Human Genetics Regensburg, 93047 Regensburg, Germany.
+FAU - Wunderlich, Gilbert
+AU  - Wunderlich G
+AD  - Department of Neurology and Center for Rare Diseases, Faculty of Medicine and 
+      University Hospital, University of Cologne, 50937 Cologne, Germany.
+FAU - Brenner, David
+AU  - Brenner D
+AUID- ORCID: 0000-0002-1535-3146
+AD  - Department of Neurology, Ulm University, 89081 Ulm, Germany.
+AD  - German Center for Neurodegenerative Diseases (DZNE) Ulm, 89081 Ulm, Germany.
+AD  - Center for Rare Diseases (ZSE) Ulm, Ulm University Hospital Center for Rare 
+      Diseases, Ulm, 89081 Ulm, Germany.
+FAU - Hellenbroich, Yorck
+AU  - Hellenbroich Y
+AD  - Institute of Human Genetics, University Hospital Schleswig-Holstein, University 
+      of Luebeck and Kiel, 23538 Luebeck, Germany.
+FAU - Muhle, Kirsten
+AU  - Muhle K
+AD  - Department of Neurology, University Hospital Munster, 48149 Munster, Germany.
+FAU - Huchtemann, Tessa
+AU  - Huchtemann T
+AD  - Department of Neurology, University Hospital Munster, 48149 Munster, Germany.
+FAU - Claus, Inga
+AU  - Claus I
+AD  - Department of Neurology, University Hospital Munster, 48149 Munster, Germany.
+FAU - Klopstock, Thomas
+AU  - Klopstock T
+AD  - Friedrich Baur Institute at the Department of Neurology, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+AD  - German Center for Neurodegenerative Diseases (DZNE) Munich, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Munich Center for Systems Neurology (SyNergy), 81377 Munich, Germany.
+FAU - Strupp, Michael
+AU  - Strupp M
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+FAU - Levin, Johannes
+AU  - Levin J
+AUID- ORCID: 0000-0001-5092-4306
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+AD  - German Center for Neurodegenerative Diseases (DZNE) Munich, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Munich Center for Systems Neurology (SyNergy), 81377 Munich, Germany.
+FAU - Hoglinger, Gunter
+AU  - Hoglinger G
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+AD  - German Center for Neurodegenerative Diseases (DZNE) Munich, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Munich Center for Systems Neurology (SyNergy), 81377 Munich, Germany.
+FAU - Huppert, Doreen
+AU  - Huppert D
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Becker-Bense, Sandra
+AU  - Becker-Bense S
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+FAU - Filippopulos, Filipp
+AU  - Filippopulos F
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+FAU - Kilpert, Fabian
+AU  - Kilpert F
+AUID- ORCID: 0000-0001-6401-2180
+AD  - Institute of Human Genetics, University Hospital Essen, University of 
+      Duisburg-Essen, 45122, Essen, Germany.
+FAU - Leitao, Elsa
+AU  - Leitao E
+AD  - Institute of Human Genetics, University Hospital Essen, University of 
+      Duisburg-Essen, 45122, Essen, Germany.
+FAU - Kaya, Sabine
+AU  - Kaya S
+AD  - Institute of Human Genetics, University Hospital Essen, University of 
+      Duisburg-Essen, 45122, Essen, Germany.
+FAU - Depienne, Christel
+AU  - Depienne C
+AUID- ORCID: 0000-0002-7212-9554
+AD  - Institute of Human Genetics, University Hospital Essen, University of 
+      Duisburg-Essen, 45122, Essen, Germany.
+FAU - Schoberl, Florian
+AU  - Schoberl F
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+FAU - Neuhann, Teresa
+AU  - Neuhann T
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+FAU - Holinski-Feder, Elke
+AU  - Holinski-Feder E
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+AD  - Department of Medicine IV, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+FAU - Zwergal, Andreas
+AU  - Zwergal A
+AUID- ORCID: 0000-0002-3839-8398
+AD  - German Center for Vertigo and Balance Disorders, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 81377 Munich, Germany.
+AD  - Department of Neurology, LMU University Hospital, Ludwig-Maximilians-Universitat 
+      Munchen, 81377 Munich, Germany.
+FAU - Abicht, Angela
+AU  - Abicht A
+AUID- ORCID: 0000-0002-2757-8131
+AD  - Medical Genetics Center (MGZ) Munich, 80335 Munich, Germany.
+AD  - Friedrich Baur Institute at the Department of Neurology, LMU University Hospital, 
+      Ludwig-Maximilians-Universitat Munchen, 80336 Munich, Germany.
+LA  - eng
+PT  - Journal Article
+DEP - 20250903
+PL  - England
+TA  - Brain
+JT  - Brain : a journal of neurology
+JID - 0372537
+SB  - IM
+OTO - NOTNLM
+OT  - RFC1
+OT  - hereditary ataxia
+OT  - long-read sequencing
+OT  - repeat analysis
+OT  - repeat expansion disorders
+EDAT- 2025/09/03 06:36
+MHDA- 2025/09/03 06:36
+CRDT- 2025/09/03 03:23
+PHST- 2025/03/06 00:00 [received]
+PHST- 2025/06/25 00:00 [revised]
+PHST- 2025/08/03 00:00 [accepted]
+PHST- 2025/09/03 06:36 [medline]
+PHST- 2025/09/03 06:36 [pubmed]
+PHST- 2025/09/03 03:23 [entrez]
+AID - 8246405 [pii]
+AID - 10.1093/brain/awaf318 [doi]
+PST - aheadofprint
+SO  - Brain. 2025 Sep 3:awaf318. doi: 10.1093/brain/awaf318.
+
+PMID- 40880907
+OWN - NLM
+STAT- In-Process
+LR  - 20250902
+IS  - 2376-7839 (Print)
+IS  - 2376-7839 (Electronic)
+IS  - 2376-7839 (Linking)
+VI  - 11
+IP  - 1
+DP  - 2025 Feb
+TI  - Genetic and Phenotypic Variability in Siblings With Friedreich Ataxia.
+PG  - e200234
+LID - 10.1212/NXG.0000000000200234 [doi]
+LID - e200234
+AB  - OBJECTIVES: Friedreich ataxia (FRDA) is an autosomal recessive disorder caused by 
+      FXN gene mutations involving GAA trinucleotide repeat expansions. This study 
+      explores phenotypic heterogeneity between siblings, focusing on differences in 
+      age at onset (AAO) and shorter GAA repeat (GAA1) length to improve understanding 
+      of disease variability. METHODS: We analyzed AAO and genotype of siblings with 
+      FRDA. Linear regression examined AAO differences and genetic predictors (GAA1 
+      length and SIRT6 S46N single nucleotide polymorphism), while logistic regression 
+      assessed discordant clinical manifestations and GAA1 heterogeneity. RESULTS: This 
+      study included 150 siblings with FRDA from 70 families. GAA1 and AAO differences 
+      between siblings were not significant, although discordance between siblings in 
+      the diagnosis of hypertrophic cardiomyopathy and scoliosis was noted in 
+      approximately a quarter of the families. Differences in GAA1 length predicted a 
+      modest amount of AAO heterogeneity (R(2) = 0.075). The S46N polymorphism in SIRT6 
+      did not predict the differences in AAO. DISCUSSION: Genetic and phenotypic 
+      variability between paired siblings with FRDA was moderate to small, with GAA1 
+      differences explaining some of the variance in AAO. Other factors (genetic or 
+      environmental) or data collection bias may explain the remaining variance. These 
+      findings highlight the complexity of FRDA and reiterate the role of GAA1 length 
+      in disease severity.
+CI  - Copyright (c) 2025 The Author(s). Published by Wolters Kluwer Health, Inc. on 
+      behalf of the American Academy of Neurology.
+FAU - Eshaghi, Khashayar
+AU  - Eshaghi K
+AUID- ORCID: 0009-0002-2093-134X
+AD  - Perelman School of Medicine, University of Pennsylvania, Philadelphia; and.
+AD  - Division of Neurology, The Children's Hospital of Philadelphia, PA.
+FAU - Rao, Prima H
+AU  - Rao PH
+AUID- ORCID: 0009-0008-4630-193X
+AD  - Division of Neurology, The Children's Hospital of Philadelphia, PA.
+FAU - Shen, Megan M
+AU  - Shen MM
+AUID- ORCID: 0000-0003-4422-0198
+AD  - Division of Neurology, The Children's Hospital of Philadelphia, PA.
+FAU - Lynch, David R
+AU  - Lynch DR
+AUID- ORCID: 0000-0001-7168-214X
+AD  - Perelman School of Medicine, University of Pennsylvania, Philadelphia; and.
+AD  - Division of Neurology, The Children's Hospital of Philadelphia, PA.
+LA  - eng
+PT  - Journal Article
+DEP - 20250113
+PL  - United States
+TA  - Neurol Genet
+JT  - Neurology. Genetics
+JID - 101671068
+PMC - PMC11731371
+COIS- The authors report no relevant disclosures. Go to Neurology.org/NG for full 
+      disclosures.
+EDAT- 2025/08/29 20:44
+MHDA- 2025/08/29 20:44
+PMCR- 2026/01/13
+CRDT- 2025/08/29 14:18
+PHST- 2024/07/30 00:00 [received]
+PHST- 2024/11/21 00:00 [accepted]
+PHST- 2026/01/13 00:00 [pmc-release]
+PHST- 2025/08/29 20:44 [medline]
+PHST- 2025/08/29 20:44 [pubmed]
+PHST- 2025/08/29 14:18 [entrez]
+AID - NXG-2024-100213 [pii]
+AID - 10.1212/NXG.0000000000200234 [doi]
+PST - epublish
+SO  - Neurol Genet. 2025 Jan 13;11(1):e200234. doi: 10.1212/NXG.0000000000200234. 
+      eCollection 2025 Feb.
+
 PMID- 40507780
 OWN - NLM
 STAT- MEDLINE
@@ -3023,8 +3411,9 @@ PMID- 38063871
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240328
-LR  - 20240517
+LR  - 20250808
 IS  - 1432-1459 (Electronic)
+IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
 VI  - 271
 IP  - 4
@@ -3100,11 +3489,9 @@ AD  - Department of Systems Pharmacology and Translational Therapeutics, Perelma
       School of Medicine, University of Pennsylvania, Philadelphia, PA, 19104, USA.
 LA  - eng
 GR  - P30 ES013508/ES/NIEHS NIH HHS/United States
+GR  - U01 NS114143/NS/NINDS NIH HHS/United States
 GR  - 5P30ES013508./ES/NIEHS NIH HHS/United States
 GR  - U01NS114143/NS/NINDS NIH HHS/United States
-GR  - U01NS114143/NS/NINDS NIH HHS/United States
-GR  - 5P30ES013508./ES/NIEHS NIH HHS/United States
-GR  - 5P30ES013508./ES/NIEHS NIH HHS/United States
 PT  - Journal Article
 DEP - 20231208
 PL  - Germany
@@ -3121,14 +3508,18 @@ MH  - *Friedreich Ataxia/genetics
 MH  - Mitochondrial Proteins/genetics
 MH  - Mass Spectrometry
 MH  - Iron-Binding Proteins/genetics/metabolism
+PMC - PMC12327059
+MID - NIHMS2094452
 OTO - NOTNLM
 OT  - Disability status
 OT  - Frataxin blood levels
 OT  - Friedreich Ataxia Rating scale
 OT  - GAA repeat length
 OT  - Mitochondrial protein
+COIS- Declarations Conflicts of interest None
 EDAT- 2023/12/08 12:43
 MHDA- 2024/03/28 06:45
+PMCR- 2025/08/06
 CRDT- 2023/12/08 11:04
 PHST- 2023/10/25 00:00 [received]
 PHST- 2023/11/14 00:00 [accepted]
@@ -3136,6 +3527,7 @@ PHST- 2023/11/13 00:00 [revised]
 PHST- 2024/03/28 06:45 [medline]
 PHST- 2023/12/08 12:43 [pubmed]
 PHST- 2023/12/08 11:04 [entrez]
+PHST- 2025/08/06 00:00 [pmc-release]
 AID - 10.1007/s00415-023-12118-x [pii]
 AID - 10.1007/s00415-023-12118-x [doi]
 PST - ppublish
@@ -5188,7 +5580,7 @@ PMID- 35595154
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220809
-LR  - 20220911
+LR  - 20250728
 IS  - 1943-7811 (Electronic)
 IS  - 1525-1578 (Linking)
 VI  - 24

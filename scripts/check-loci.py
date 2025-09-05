@@ -24,7 +24,6 @@ list_fields = [
     "unknown_motif_reference_orientation",
     "unknown_motif_gene_orientation",
     "inheritance",
-    "source",
     "omim",
     "stripy",
     "gnomad",

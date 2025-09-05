@@ -3,7 +3,7 @@ PMID- 40187026
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250724
-LR  - 20250724
+LR  - 20250801
 IS  - 1873-5487 (Electronic)
 IS  - 0188-4409 (Linking)
 VI  - 56
@@ -78,24 +78,25 @@ PL  - United States
 TA  - Arch Med Res
 JT  - Archives of medical research
 JID - 9312706
-RN  - 0 (Membrane Proteins)
 RN  - 0 (junctophilin)
+RN  - 0 (Membrane Proteins)
 RN  - Huntington Disease-Like 2
 SB  - IM
-MH  - Humans
-MH  - Mexico
-MH  - *Huntington Disease/genetics/ethnology
-MH  - Haplotypes
-MH  - Male
+MH  - Adult
 MH  - Female
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
 MH  - *Black People/genetics
 MH  - *Founder Effect
-MH  - *Trinucleotide Repeat Expansion/genetics
-MH  - *Mutation
+MH  - Haplotypes
+MH  - *Huntington Disease/genetics/ethnology
 MH  - *Membrane Proteins/genetics
-MH  - Adult
+MH  - Mexico
+MH  - Mutation
 MH  - Polymorphism, Single Nucleotide
-MH  - Middle Aged
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Indians, North American/genetics
 MH  - Chorea
 MH  - Cognition Disorders
 MH  - Dementia
@@ -333,7 +334,7 @@ PMID- 38617831
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240416
-LR  - 20240425
+LR  - 20250818
 IS  - 2160-8288 (Electronic)
 IS  - 2160-8288 (Linking)
 VI  - 14
@@ -404,6 +405,8 @@ LA  - eng
 GR  - U01 HG007044/HG/NHGRI NIH HHS/United States
 PT  - Case Reports
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240402
 PL  - England
 TA  - Tremor Other Hyperkinet Mov (N Y)
