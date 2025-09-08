@@ -201,20 +201,20 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     :param struc_type: options: 'motif', 'default' or 'none'. If 'motif', use pathogenic_motif_reference_orientation as locus structure. If 'default', use <TR>. If 'none', do not include locus structure.
     :return: TRGT format catalog string
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    'chr1\t100\t200\tID=myid;MOTIFS=CAG;STRUC=<TR>'
+    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CA', 'count': 19, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
-    'chr1\t100\t200\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)10(CA)19'
+    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CA', 'count': 19, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
+    # 'chr1\t100\t200\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)10(CA)19'
 
-    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
     """
 
     # Add flank coordinates to locus structure
@@ -227,6 +227,10 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
 
     if len(row['locus_structure']) > 0:
         for struct_dict in row['locus_structure']:
+            # Extend start and end coordinates if needed
+            start = min(start, struct_dict['start_' + genome])
+            stop = max(stop, struct_dict['stop_' + genome])
+
             if struct_dict['type'] == 'interruption':
                 # interruptions are not included in the structure
                 continue
