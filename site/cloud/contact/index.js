@@ -22,15 +22,20 @@ functions.http("entrypoint", async (request, response) => {
     octokit = new Octokit({ auth });
   } catch (error) {
     /** https://github.com/octokit/request-error.js */
-    return response.status(error.status).send(error.message);
+    return response
+      .status(error.status)
+      .send(`Couldn't authenticate with GitHub: ${error.message}`);
   }
 
   /** get params */
   const { title, body } = request.body || {};
 
   /** check for missing params */
-  if (!title) return response.status(400).send("Missing title");
-  if (!body) return response.status(400).send("Missing body");
+  const missing = [];
+  if (!branch) missing.push("branch");
+  if (!title) missing.push("title");
+  if (missing.length)
+    return response.status(400).send(`Missing params: ${missing.join(", ")}`);
 
   /** create issue */
   try {
@@ -46,6 +51,8 @@ functions.http("entrypoint", async (request, response) => {
     return response.status(200).json(data);
   } catch (error) {
     /** https://github.com/octokit/request-error.js */
-    return response.status(error.status).send(error.message);
+    return response
+      .status(error.status)
+      .send(`Couldn't create issue: ${error.message}`);
   }
 });

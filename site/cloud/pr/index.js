@@ -1,11 +1,11 @@
-/** source for cloud func, not auto-deployed, copy/paste */
-
 const functions = require("@google-cloud/functions-framework");
 const { Octokit } = require("octokit");
 
-const auth = process.env.GITHUB_API_KEY;
-const owner = "owner";
-const repo = "repo";
+/** settings */
+const owner = "dashnowlab";
+const repo = "STRchive";
+const labels = ["locus-edit"];
+const auth = process.env.GITHUB_TOKEN;
 
 /** endpoint */
 functions.http("entrypoint", async (request, response) => {
@@ -13,20 +13,19 @@ functions.http("entrypoint", async (request, response) => {
   response.set("Access-Control-Allow-Methods", "OPTIONS, POST");
   response.set("Access-Control-Allow-Headers", "Accept, Content-Type");
 
+  /** handle pre-flight */
   if (request.method == "OPTIONS") return response.status(200).send();
 
+  let octokit;
   try {
-    const pr = await createPr(request.body);
-    return response.status(200).json(pr);
+    /** auth with github https://octokit.github.io/rest.js/v22/#authentication */
+    octokit = new Octokit({ auth });
   } catch (error) {
-    return response.status(400).send(error.message);
+    /** https://github.com/octokit/request-error.js */
+    return response
+      .status(error.status)
+      .send(`Couldn't authenticate with GitHub: ${error.message}`);
   }
-});
-
-/** create/update branch, file, pr */
-async function createPr(params, debug = false) {
-  /** auth with github */
-  const octokit = new Octokit({ auth });
 
   /** get params */
   const { branch, title, body, files = [] } = params || {};
@@ -38,13 +37,16 @@ async function createPr(params, debug = false) {
   if (!body) missing.push("body");
   if (!files.length) missing.push("files");
   files.forEach(({ path, content }, index) => {
-    if (!path || !content) missing.push(`file ${index}`);
+    if (!path) missing.push(`file path ${index}`);
+    if (!content) missing.push(`file content ${index}`);
   });
-  if (missing.length) throw Error(`Insufficient ${missing.join(", ")}`);
+  if (missing.length)
+    return response.status(400).send(`Missing params: ${missing.join(", ")}`);
 
   /** get main branch */
   let main;
   try {
+    /** https://octokit.github.io/rest.js/v22/#git-get-ref */
     main = (
       await octokit.rest.git.getRef({
         owner,
@@ -53,23 +55,44 @@ async function createPr(params, debug = false) {
       })
     ).data.object.sha;
   } catch (error) {
-    if (debug) console.warn(error);
-    throw Error(`Couldn't get main branch: ${error?.response?.data?.message}`);
+    return response
+      .status(error.status)
+      .send(`Couldn't get main branch: ${error.message}`);
+  }
+
+  /** check if branch already exists */
+  for (let tries = 1; tries <= 10; tries++) {
+    try {
+      octokit.rest.repos.getBranch({
+        owner,
+        repo,
+        branch,
+      });
+      /** branch exists, add suffix to name to avoid duplicate */
+      branch = branch.replace(/(-?\d*)$/, `-${tries}`);
+    } catch (error) {
+      /** branch doesn't exist */
+      if (error.status === 404) break;
+      return response
+        .status(error.status)
+        .send(`Couldn't get branch ${branch}: ${error.message}`);
+    }
   }
 
   /** create new branch */
   try {
+    /** https://octokit.github.io/rest.js/v22/#git-create-ref */
     await octokit.rest.git.createRef({
       owner,
       repo,
       ref: `refs/heads/${branch}`,
+      /** create branch off of main */
       sha: main,
     });
   } catch (error) {
-    if (debug) console.warn(error);
-    throw Error(
-      `Couldn't create new branch ${branch}: ${error?.response?.data?.message}`,
-    );
+    return response
+      .status(error.status)
+      .send(`Couldn't create new branch ${branch}: ${error.message}`);
   }
 
   /** update files */
@@ -77,6 +100,7 @@ async function createPr(params, debug = false) {
     /** get existing file */
     let existing;
     try {
+      /** https://octokit.github.io/rest.js/v22/#repos-get-content */
       existing = (
         await octokit.rest.repos.getContent({
           owner,
@@ -86,66 +110,61 @@ async function createPr(params, debug = false) {
         })
       ).data.sha;
     } catch (error) {
-      if (debug) console.warn(error);
-      console.warn(
-        `Couldn't get existing file ${path}: ${error?.response?.data?.message}`,
-      );
+      console.warn(`Couldn't get existing file ${path}: ${error.message}`);
     }
 
-    /** create or update file */
+    /** create/update file */
     try {
+      /** https://octokit.github.io/rest.js/v22/#repos-create-or-update-file-contents */
       await octokit.rest.repos.createOrUpdateFileContents({
         owner,
         repo,
         branch,
         path,
         message: title,
-        content: Buffer.from(
-          content.endsWith("\n") ? content : content + "\n",
-        ).toString("base64"),
+        content: Buffer.from(content.replace(/\n?$/m, "\n")).toString("base64"),
         sha: existing,
       });
     } catch (error) {
-      if (debug) console.warn(error);
-      throw Error(
-        `Couldn't create/update file ${path}: ${error?.response?.data?.message}`,
-      );
+      return response
+        .status(error.status)
+        .send(`Couldn't update file ${path}: ${error.message}`);
     }
   }
 
   let pr;
-
   /** create pull request */
   try {
-    pr = await octokit.rest.pulls.create({
+    /** https://octokit.github.io/rest.js/v22/#pulls-create */
+    pr = await octokit.rest.pulls.update({
       owner,
       repo,
       base: "main",
       head: branch,
       title,
       body,
+      maintainer_can_modify: true,
+      draft: true,
     });
   } catch (error) {
-    if (debug) console.warn(error);
-    throw Error(
-      `Couldn't create PR ${branch}: ${error?.response?.data?.message}`,
-    );
+    return response
+      .status(error.status)
+      .send(`Couldn't create PR ${branch}: ${error.message}`);
   }
 
-  /** add label */
+  /** add labels */
   try {
     await octokit.rest.issues.addLabels({
       owner,
       repo,
       issue_number: pr.data.number,
-      labels: ["app"],
+      labels,
     });
   } catch (error) {
-    if (debug) console.warn(error);
-    console.warn(
-      `Couldn't add label to PR ${pr?.data?.number}: ${error?.response?.data?.message}`,
-    );
+    return response
+      .status(error.status)
+      .send(`Couldn't add label: ${error.message}`);
   }
 
   return pr;
-}
+});
