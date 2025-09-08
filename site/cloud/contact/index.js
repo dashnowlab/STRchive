@@ -38,21 +38,24 @@ functions.http("entrypoint", async (request, response) => {
     return response.status(400).send(`Missing params: ${missing.join(", ")}`);
 
   /** create issue */
+  let issue;
   try {
-    const { data } = await octokit.rest.issues.create({
-      owner,
-      repo,
-      title,
-      body,
-      labels,
-    });
-
-    /** return created issue */
-    return response.status(200).json(data);
+    issue = (
+      await octokit.rest.issues.create({
+        owner,
+        repo,
+        title,
+        body,
+        labels,
+      })
+    ).data;
   } catch (error) {
     /** https://github.com/octokit/request-error.js */
     return response
-      .status(error.status)
+      .status(error.status || 500)
       .send(`Couldn't create issue: ${error.message}`);
   }
+
+  /** return created issue */
+  return response.status(200).json(issue);
 });

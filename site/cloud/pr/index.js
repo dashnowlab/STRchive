@@ -21,14 +21,15 @@ functions.http("entrypoint", async (request, response) => {
     /** auth with github https://octokit.github.io/rest.js/v22/#authentication */
     octokit = new Octokit({ auth });
   } catch (error) {
+    console.error(error);
     /** https://github.com/octokit/request-error.js */
     return response
-      .status(error.status)
+      .status(error.status || 500)
       .send(`Couldn't authenticate with GitHub: ${error.message}`);
   }
 
   /** get params */
-  const { branch, title, body, files = [] } = params || {};
+  let { branch, title, body, files = [] } = request.body || {};
 
   /** check for missing params */
   const missing = [];
@@ -55,15 +56,16 @@ functions.http("entrypoint", async (request, response) => {
       })
     ).data.object.sha;
   } catch (error) {
+    console.error(error);
     return response
-      .status(error.status)
+      .status(error.status || 500)
       .send(`Couldn't get main branch: ${error.message}`);
   }
 
   /** check if branch already exists */
   for (let tries = 1; tries <= 10; tries++) {
     try {
-      octokit.rest.repos.getBranch({
+      await octokit.rest.repos.getBranch({
         owner,
         repo,
         branch,
@@ -71,10 +73,11 @@ functions.http("entrypoint", async (request, response) => {
       /** branch exists, add suffix to name to avoid duplicate */
       branch = branch.replace(/(-?\d*)$/, `-${tries}`);
     } catch (error) {
-      /** branch doesn't exist */
+      console.error(error);
+      /** branch name isn't taken */
       if (error.status === 404) break;
       return response
-        .status(error.status)
+        .status(error.status || 500)
         .send(`Couldn't get branch ${branch}: ${error.message}`);
     }
   }
@@ -90,8 +93,9 @@ functions.http("entrypoint", async (request, response) => {
       sha: main,
     });
   } catch (error) {
+    console.error(error);
     return response
-      .status(error.status)
+      .status(error.status || 500)
       .send(`Couldn't create new branch ${branch}: ${error.message}`);
   }
 
@@ -110,6 +114,7 @@ functions.http("entrypoint", async (request, response) => {
         })
       ).data.sha;
     } catch (error) {
+      console.error(error);
       console.warn(`Couldn't get existing file ${path}: ${error.message}`);
     }
 
@@ -126,8 +131,9 @@ functions.http("entrypoint", async (request, response) => {
         sha: existing,
       });
     } catch (error) {
+      console.error(error);
       return response
-        .status(error.status)
+        .status(error.status || 500)
         .send(`Couldn't update file ${path}: ${error.message}`);
     }
   }
@@ -136,7 +142,7 @@ functions.http("entrypoint", async (request, response) => {
   /** create pull request */
   try {
     /** https://octokit.github.io/rest.js/v22/#pulls-create */
-    pr = await octokit.rest.pulls.update({
+    pr = await octokit.rest.pulls.create({
       owner,
       repo,
       base: "main",
@@ -147,8 +153,9 @@ functions.http("entrypoint", async (request, response) => {
       draft: true,
     });
   } catch (error) {
+    console.error(error);
     return response
-      .status(error.status)
+      .status(error.status || 500)
       .send(`Couldn't create PR ${branch}: ${error.message}`);
   }
 
@@ -161,10 +168,12 @@ functions.http("entrypoint", async (request, response) => {
       labels,
     });
   } catch (error) {
+    console.error(error);
     return response
-      .status(error.status)
+      .status(error.status || 500)
       .send(`Couldn't add label: ${error.message}`);
   }
 
-  return pr;
+  /** return created pr */
+  return response.status(200).json(pr);
 });
