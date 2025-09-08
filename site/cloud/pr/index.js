@@ -6,6 +6,10 @@ const owner = "dashnowlab";
 const repo = "STRchive";
 const labels = ["locus-edit"];
 const auth = process.env.GITHUB_TOKEN;
+/**
+ * token permissions:
+ * issues, read/write
+ */
 
 /** endpoint */
 functions.http("entrypoint", async (request, response) => {

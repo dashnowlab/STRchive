@@ -6,6 +6,11 @@ const owner = "dashnowlab";
 const repo = "STRchive";
 const labels = ["contact"];
 const auth = process.env.GITHUB_TOKEN;
+/**
+ * token permissions:
+ * contents, read/write
+ * pull requests, read/write
+ */
 
 /** entry point */
 functions.http("entrypoint", async (request, response) => {
