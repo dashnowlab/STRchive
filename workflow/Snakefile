@@ -426,11 +426,11 @@ rule path_size_plot:
 
 rule get_ref_alleles:
     input:
-        bed_hg19 = "{base_dir}catalogs/STRchive-disease-loci.hg19.bed",
+        bed_hg19 = "{base_dir}catalogs/STRchive-disease-loci.hg19.general.bed",
         TRGT_hg19 = "{base_dir}catalogs/STRchive-disease-loci.hg19.TRGT.bed",
-        bed_hg38 = "{base_dir}catalogs/STRchive-disease-loci.hg38.bed",
+        bed_hg38 = "{base_dir}catalogs/STRchive-disease-loci.hg38.general.bed",
         TRGT_hg38 = "{base_dir}catalogs/STRchive-disease-loci.hg38.TRGT.bed",
-        bed_T2T = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.bed",
+        bed_T2T = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.general.bed",
         TRGT_T2T = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.TRGT.bed"
     output:
         result_hg19 = "{base_dir}ref-alleles/ref-alleles.hg19.txt",
