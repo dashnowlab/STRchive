@@ -175,7 +175,7 @@ def add_flank_coordinates(row, genome = 'hg38'):
     if unknown_length < 0:
         # sys.stdout.write(f'{row}\n\n')
         # sys.stdout.write(f'{new_locus_structure}\n\n')
-        raise ValueError(f"Total length of locus structure for {row['id']} is less than the sum of known lengths. Please check the input data.")
+        raise ValueError(f"Total length of locus structure for {row['id']} is {-unknown_length} less than the sum of known lengths. Please check the input data.")
 
     # Iterate over the new locus structure again
     # Calculate start and stop coordinates for each motif in the locus structure
