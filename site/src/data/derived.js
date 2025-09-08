@@ -34,9 +34,7 @@ export const deriveLocus = (locus, loci, citations) => {
     locus.locus_tags.push("new");
 
   /** clean up tags */
-  console.log(locus.locus_tags.length);
   locus.locus_tags = uniq(locus.locus_tags.filter(Boolean));
-  console.log(locus.locus_tags.length);
 
   if (loci) {
     /** find other loci that are the same gene */

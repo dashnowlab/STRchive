@@ -181,10 +181,15 @@ const Field = ({
   /** help tooltip to show */
   const tooltip = [
     description,
-    examples?.length ? `Examples: ${examples.join(", ")}` : "",
+    examples?.length > 1
+      ? `Examples:<br> ${examples.map((ex) => `- ${ex}<br>`).join("")}`
+      : examples?.length === 1
+        ? `Example: ${examples[0]}`
+        : "",
   ]
     .filter(Boolean)
-    .join("<br/>");
+    .map((line) => `<div>${line}</div>`)
+    .join("");
 
   /** is the field required to be set */
   const required =
@@ -388,7 +393,9 @@ const Field = ({
     /** text input */
     control = (
       <TextBox
-        placeholder={placeholder}
+        placeholder={
+          placeholder ?? (examples?.length ? `Ex: ${examples[0]}` : "")
+        }
         multi={multiline}
         pattern={pattern}
         value={value || ""}

@@ -287,7 +287,6 @@ dl {
   --cols: 3;
   display: grid;
   grid-template-columns: repeat(var(--cols), auto auto);
-  gap: 10px 20px;
 }
 
 :has(> dl) {
@@ -309,11 +308,17 @@ dt,
 dd {
   display: inline-flex;
   margin: 0;
+  padding: 5px 10px;
 }
 
 dt {
+  background: var(--light-gray);
   color: var(--gray);
   font-weight: var(--medium);
+}
+
+dd {
+  background: var(--off-white);
 }
 
 dd:empty::after {
