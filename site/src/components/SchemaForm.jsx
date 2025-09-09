@@ -1,6 +1,5 @@
-import { cloneElement, Fragment, useMemo } from "react";
+import { cloneElement, Fragment, useImperativeHandle, useMemo } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
-import { LuSend } from "react-icons/lu";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import {
   cloneDeep,
@@ -14,7 +13,6 @@ import { useLocalStorage } from "@reactuses/core";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
 import ComboBox from "@/components/ComboBox";
-import Form from "@/components/Form";
 import Heading from "@/components/Heading";
 import Help from "@/components/Help";
 import NumberBox from "@/components/NumberBox";
@@ -27,13 +25,7 @@ import classes from "./SchemaForm.module.css";
 window.localStorage.clear();
 
 /** form automatically generated from json schema */
-const SchemaForm = ({
-  schema,
-  sections,
-  data: initialData,
-  onSubmit,
-  children,
-}) => {
+const SchemaForm = ({ ref, schema, sections, data: initialData, children }) => {
   /** compile schema */
   const rootNode = useMemo(
     () => compileSchema(schema, { drafts: [draft] }),
@@ -49,7 +41,10 @@ const SchemaForm = ({
   /** current form data state */
   const [data, setData] = useLocalStorage(storageKey, initialData);
 
-  console.log(data);
+  /** expose data to parent */
+  useImperativeHandle(ref, () => {
+    return { data };
+  }, [data]);
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
@@ -58,10 +53,7 @@ const SchemaForm = ({
   }, [rootNode, data]);
 
   return (
-    <Form className={classes.form} onSubmit={() => onSubmit(data)}>
-      {/* maintain correct section coloring */}
-      <span></span>
-
+    <>
       {children && <section>{children}</section>}
 
       {sections.map((section, index) => (
@@ -79,21 +71,7 @@ const SchemaForm = ({
           />
         </section>
       ))}
-
-      <section>
-        <Button
-          type="submit"
-          design="bubble"
-          onClick={() =>
-            /** force revalidation of data */
-            setData({ ...data })
-          }
-        >
-          <LuSend />
-          <span>Submit</span>
-        </Button>
-      </section>
-    </Form>
+    </>
   );
 };
 

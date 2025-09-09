@@ -4,7 +4,6 @@ const { Octokit } = require("octokit");
 /** settings */
 const owner = "dashnowlab";
 const repo = "STRchive";
-const labels = ["contact"];
 const auth = process.env.GITHUB_TOKEN;
 /**
  * token permissions:
@@ -33,12 +32,13 @@ functions.http("entrypoint", async (request, response) => {
   }
 
   /** get params */
-  const { title, body } = request.body || {};
+  const { title, body, labels } = request.body || {};
 
   /** check for missing params */
   const missing = [];
-  if (!branch) missing.push("branch");
   if (!title) missing.push("title");
+  if (!body) missing.push("body");
+  if (!labels) missing.push("labels");
   if (missing.length)
     return response.status(400).send(`Missing params: ${missing.join(", ")}`);
 

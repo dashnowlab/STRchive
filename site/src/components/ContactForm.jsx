@@ -4,7 +4,7 @@ import { Fragment } from "react/jsx-runtime";
 import clsx from "clsx";
 import { mapValues, startCase, truncate } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
-import { submitContact } from "@/api/contact";
+import { createIssue } from "@/api/issue";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
 import Collapsible from "@/components/Collapsible";
@@ -80,7 +80,7 @@ const ContactForm = () => {
     data: response,
     status,
     reset,
-  } = useQuery(() => submitContact(title, body));
+  } = useQuery(() => createIssue({ title, body, labels: ["contact"] }));
 
   const { isOpen } = useContext(DialogContext);
 

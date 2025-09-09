@@ -1,13 +1,11 @@
 import { request } from "./";
 
-/** contact form */
-export const submitContact = async (title, body) => {
+export const createPR = async ({ branch, title, body, files, labels }) => {
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
-  body = JSON.stringify({ title, body });
+  body = JSON.stringify({ branch, title, body, files, labels });
   const options = { method: "POST", headers, body };
-  /** cloud func entry point */
-  const url = "https://strchive-contact-467600139623.us-central1.run.app";
+  const url = "https://strchive-pr-467600139623.us-central1.run.app";
   const created = await request(url, options);
   return { link: created.html_url };
 };

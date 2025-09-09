@@ -313,14 +313,12 @@ dd {
 }
 
 dt {
-  background: var(--light-gray);
   color: var(--gray);
-  font-weight: var(--medium);
+  font-weight: var(--bold);
 }
 
 dd {
-  margin-right: 20px;
-  background: var(--off-white);
+  margin-right: 10px;
 }
 
 dd:empty::after {

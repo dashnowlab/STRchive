@@ -4,7 +4,6 @@ const { Octokit } = require("octokit");
 /** settings */
 const owner = "dashnowlab";
 const repo = "STRchive";
-const labels = ["locus-edit"];
 const auth = process.env.GITHUB_TOKEN;
 /**
  * token permissions:
@@ -33,18 +32,19 @@ functions.http("entrypoint", async (request, response) => {
   }
 
   /** get params */
-  let { branch, title, body, files = [] } = request.body || {};
+  let { branch, title, body, files, labels } = request.body || {};
 
   /** check for missing params */
   const missing = [];
   if (!branch) missing.push("branch");
   if (!title) missing.push("title");
   if (!body) missing.push("body");
-  if (!files.length) missing.push("files");
-  files.forEach(({ path, content }, index) => {
+  if (!files) missing.push("files");
+  files?.forEach(({ path, content }, index) => {
     if (!path) missing.push(`file path ${index}`);
     if (!content) missing.push(`file content ${index}`);
   });
+  if (!labels) missing.push("labels");
   if (missing.length)
     return response.status(400).send(`Missing params: ${missing.join(", ")}`);
 
@@ -67,7 +67,7 @@ functions.http("entrypoint", async (request, response) => {
   }
 
   /** check if branch already exists */
-  for (let tries = 1; tries <= 10; tries++) {
+  for (let suffix = 1; suffix <= 10; suffix++) {
     try {
       await octokit.rest.repos.getBranch({
         owner,
@@ -75,7 +75,7 @@ functions.http("entrypoint", async (request, response) => {
         branch,
       });
       /** branch exists, add suffix to name to avoid duplicate */
-      branch = branch.replace(/(-?\d*)$/, `-${tries}`);
+      branch = branch.replace(/(-?\d*)$/, `-${suffix}`);
     } catch (error) {
       console.error(error);
       /** branch name isn't taken */
