@@ -42,9 +42,9 @@
 
 .actions {
   display: flex;
+  grid-column: 2;
   flex-wrap: wrap;
   align-items: center;
-  grid-column: 2;
 }
 
 .actions > * {

@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import classes from "./Button.module.css";
 import Link from "@/components/Link";
+import classes from "./Button.module.css";
 
 /** looks like a button, and either does something or goes somewhere */
 const Button = ({ design, className, ...props }) => {
