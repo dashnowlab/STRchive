@@ -171,14 +171,10 @@ def add_flank_coordinates(row, genome = 'hg38'):
     if known_lengths.count(None) > 1:
         raise ValueError(f"Multiple unknown lengths found in locus structure for {row['id']}. Please check the input data.")
     unknown_length = internal_length - sum([x for x in known_lengths if x is not None])
-    #print(f"Total length of locus structure for {row['id']} is {total_length}, known lengths are {known_lengths}, flank lengths are {flank_length}, unknown length is {unknown_length}.")
     if unknown_length < 0:
-        # sys.stdout.write(f'{row}\n\n')
-        # sys.stdout.write(f'{new_locus_structure}\n\n')
         raise ValueError(f"Total length of locus structure for {row['id']} is {-unknown_length} less than the sum of known lengths. Please check the input data.")
 
-    # Iterate over the new locus structure again
-    # Calculate start and stop coordinates for each motif in the locus structure
+    # Iterate over the new locus structure again and add coordinates
     this_start = row['start_' + genome] - left_flank
     for struct_dict in new_locus_structure:
         if struct_dict['length'] is None:
@@ -201,20 +197,23 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     :param struc_type: options: 'motif', 'default' or 'none'. If 'motif', use pathogenic_motif_reference_orientation as locus structure. If 'default', use <TR>. If 'none', do not include locus structure.
     :return: TRGT format catalog string
 
-    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG;STRUC=<TR>'
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    'chr1\t100\t200\tID=myid;MOTIFS=CAG;STRUC=<TR>'
 
-    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'internal_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 12, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    'chr1\t100\t236\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
 
-    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CA', 'count': 19, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
-    # 'chr1\t100\t200\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)10(CA)19'
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAGG'], 'gene': 'CNBP', 'id': 'DM2_CNBP', 'locus_structure': [{'motif': 'CAGG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAGA', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CA', 'count': 5, 'type': 'flank_repeat'}], 'reference_motif_reference_orientation': [], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []}, struc_type='motif')
+    'chr1\t100\t250\tID=DM2_CNBP;MOTIFS=CAGG,CAGA,CA;STRUC=(CAGG)n(CAGA)10(CA)5'
 
-    # >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
-    # 'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
+    >>> trgt_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'period': 3, 'pathogenic_motif_reference_orientation': ['CAG', 'CCG'], 'gene': 'mygene', 'id': 'myid', 'locus_structure': [], 'reference_motif_reference_orientation': ['CAG'], 'benign_motif_reference_orientation': [], 'unknown_motif_reference_orientation': []})
+    'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
     """
 
     # Add flank coordinates to locus structure
@@ -276,17 +275,17 @@ def atarva_catalog(row, genome = 'hg38'):
     Note, compound loci will be split into multiple entries, one for each motif. Overlapping loci are okay.
     For loci with multiple pathogenic motifs, only the first motif will be used. Atarva does motif decomposition, so alternate motifs should be detected by the caller.
 
-    # >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    # 'chr1\t100\t200\tCAG\t3\tmyid'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid'
 
-    # >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    # 'chr1\t100\t200\tAAGGG\t5\tmyid'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['AAGGG', 'ACAGG'], 'locus_structure': [], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tAAGGG\t5\tmyid'
 
-    # >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 2, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    # 'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t212\tCAACAG\t6\tmyid_flank\nchr1\t212\t221\tCCG\t3\tmyid_flank'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 2, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t212\tCAACAG\t6\tmyid_flank\nchr1\t212\t221\tCCG\t3\tmyid_flank'
 
-    # >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    # 'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t236\tCAACAG\t6\tmyid_flank\nchr1\t236\t245\tCCG\t3\tmyid_flank'
+    >>> atarva_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 6, 'type': 'flank_repeat'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t236\tCAACAG\t6\tmyid_flank\nchr1\t236\t245\tCCG\t3\tmyid_flank'
     """
 
     # Add flank coordinates to locus structure
@@ -312,8 +311,8 @@ def atarva_catalog(row, genome = 'hg38'):
             if struct_dict['type'] == 'pathogenic_repeat':
                 # this is the main repeat
                 bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
-            elif struct_dict['type'] == 'interruption':
-                # interruptions are not included in the structure
+            elif struct_dict['type'] == 'interruption' or struct_dict['type'] == 'internal_repeat':
+                # interruptions and internal repeats are not included in the structure
                 continue
             else:
                 # this is a flank repeat
@@ -525,14 +524,14 @@ def straglr_catalog(row, genome = 'hg38', format = 'default'):
     chr2	190880872	190880920	GCA	GLS	GLS
     chr3	63912684	63912714	GCA	ATXN7	ATXN7
 
-    # >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    # 'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
-    # >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
-    # 'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38')
+    'chr1\t100\t200\tCAG\nchr1\t200\t230\tCCG\nchr1\t230\t260\tCAA'
 
-    # >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
-    # 'chr1\t100\t200\tCAG\tmyid\tmyid\nchr1\t200\t230\tCCG\tmyid\tmyid_CCG\nchr1\t230\t260\tCAA\tmyid\tmyid_CAA'
+    >>> straglr_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CCG', 'count': 10, 'type': 'flank_repeat'}, {'motif': 'CAA', 'count': 10, 'type': 'flank_repeat'}], 'gene': 'mygene', 'id': 'myid', 'pathogenic_min': 10, 'inheritance': 'AD', 'disease': 'Disease Name'}, 'hg38', format='wf-human-variation')
+    'chr1\t100\t200\tCAG\tmyid\tmyid\nchr1\t200\t230\tCCG\tmyid\tmyid_CCG\nchr1\t230\t260\tCAA\tmyid\tmyid_CAA'
     """
 
     # Do some special handling for missing values and unusual cases:
