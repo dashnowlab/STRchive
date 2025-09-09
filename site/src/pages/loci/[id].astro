@@ -40,7 +40,7 @@ const locus = deriveLocus(
 
 /** whether there is raw gene search text file associated with this gene */
 const hasRawSearch = Object.keys(
-  await import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
+  import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
 ).some((file) => file.includes(locus.gene));
 
 /** get blame info of locus */
@@ -119,7 +119,7 @@ const blame = getJsonBlame(
             <div class="identifier-list">
               {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
-                  <Link to={info} data-tooltip={tooltip} showArrow={false}>
+                  <Link to={info} data-tooltip={tooltip} arrow={false}>
                     {name}
                   </Link>
                   <div class="identifier-links">

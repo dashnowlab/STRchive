@@ -4,7 +4,7 @@ import classes from "./Link.module.css";
 const Link = ({
   to,
   newTab = undefined,
-  showArrow = undefined,
+  arrow = undefined,
   children,
   ...props
 }) => {
@@ -20,9 +20,7 @@ const Link = ({
     >
       {children}
       {/* indicate third-party site with icon  */}
-      {(showArrow ?? external) && (
-        <FaExternalLinkAlt className={classes.icon} />
-      )}
+      {(arrow ?? external) && <FaExternalLinkAlt className={classes.icon} />}
     </a>
   );
 };

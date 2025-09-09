@@ -2434,7 +2434,7 @@
   "locus_structure": [
   {
     "motif": "TTTTA",
-    "count": 14,
+    "count": 12,
     "type": "internal_repeat"
   },
   {
@@ -2449,7 +2449,7 @@
   "pathogenic_min": 791.0,
   "pathogenic_max": 1035.0,
   "motif_len": 5,
-  "ref_copies": 14.8,
+  "ref_copies": 13.6,
   "novel": "novel",
   "gard": ["18084"],
   "genereviews": ["NBK535148"],
@@ -3131,7 +3131,7 @@
   {
     "motif": "GTT",
     "count": 1,
-    "type": "interruption"
+    "type": "flank_repeat"
   },
   {
     "motif": "GCT",
@@ -4237,7 +4237,7 @@
   "locus_structure": [
   {
     "motif": "TTTTA",
-    "count": 18,
+    "count": 10,
     "type": "internal_repeat"
   },
   {
@@ -4430,12 +4430,12 @@
   "locus_structure": [
   {
     "motif": "GCC",
-    "count": 7,
+    "count": 0,
     "type": "internal_repeat"
   },
   {
     "motif": "TCGGCTCGCCGCTGCTCCTCCTCC",
-    "count": 1,
+    "count": 0,
     "type": "interruption"
   },
   {

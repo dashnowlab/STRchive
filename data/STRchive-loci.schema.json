@@ -192,7 +192,8 @@
       },
 
       "locus_structure": {
-        "description": "Structure of the locus including the order of motifs and any interruptions. Only one motif can have a null count. If this is missing it will be inferred to be a simple repeat based on the first reference motif.",
+        "description": "Structure of the locus including the order of motifs and any interruptions. Only one motif can have a null count. If locus_structure is missing the locus will be inferred to be a simple repeat based on the first reference motif.",
+
         "type": "array",
         "items": {
           "type": "object",
