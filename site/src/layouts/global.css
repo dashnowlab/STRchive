@@ -168,6 +168,7 @@ textarea {
   margin: 0;
   padding: 0;
   border: none;
+  background: none;
   font: inherit;
 }
 
@@ -319,6 +320,7 @@ dt {
 
 dd {
   background: var(--off-white);
+  margin-right: 20px;
 }
 
 dd:empty::after {

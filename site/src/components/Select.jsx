@@ -1,4 +1,4 @@
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa6";
 import clsx from "clsx";
 import { preserveScroll } from "@/util/dom";
 import classes from "./Select.module.css";

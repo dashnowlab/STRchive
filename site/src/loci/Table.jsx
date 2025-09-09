@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 import { LuDownload } from "react-icons/lu";
 import clsx from "clsx";
 import { map, max, min, pick, uniq } from "lodash-es";
@@ -258,7 +258,8 @@ const Table = ({ loci }) => {
             }
             data-tooltip="Download filtered loci"
           >
-            Download <LuDownload />
+            <span>Download</span>
+            <LuDownload />
           </Button>
         </div>
       </div>

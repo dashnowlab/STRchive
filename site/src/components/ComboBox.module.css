@@ -1,0 +1,82 @@
+.select {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  min-width: 40px;
+  min-height: 40px;
+  gap: 10px;
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: inset 0 0 0 2px var(--dark-gray);
+}
+
+.input,
+.selected {
+  padding: 5px 10px;
+  padding-right: 30px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  color: currentColor;
+}
+
+.selected {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  inset: 0;
+  text-align: left;
+}
+
+.select:focus-within .selected {
+  opacity: 0;
+}
+
+.select:not(:focus-within) .input {
+  opacity: 0;
+}
+
+.button {
+  display: grid;
+  position: absolute;
+  right: 0;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  transition: color var(--fast);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  width: var(--input-width);
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  cursor: pointer;
+  transition: background var(--fast);
+}
+
+.option[data-focus],
+.option:hover {
+  background: var(--light-gray);
+}
+
+.check {
+  padding-left: 5px;
+  color: var(--primary);
+}
+
+.option-label {
+  flex-grow: 1;
+}

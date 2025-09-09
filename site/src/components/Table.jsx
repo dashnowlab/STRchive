@@ -21,8 +21,8 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import Button from "./Button";
-import Select from "./Select";
+import Button from "@/components/Button";
+import Select from "@/components/Select";
 import classes from "./Table.module.css";
 
 /** options for per-page select */

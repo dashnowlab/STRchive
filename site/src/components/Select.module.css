@@ -8,8 +8,8 @@
   width: 100%;
   min-width: 40px;
   min-height: 40px;
-  padding: 7.5px;
-  padding-right: 25px;
+  padding: 5px 10px;
+  padding-right: 30px;
   gap: 10px;
   border-radius: var(--rounded);
   background: var(--light-gray);
@@ -22,7 +22,7 @@
 
 .icon {
   position: absolute;
-  right: 5px;
+  right: 10px;
   align-self: center;
   opacity: 0.5;
   pointer-events: none;

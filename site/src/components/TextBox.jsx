@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { FaXmark } from "react-icons/fa6";
 import clsx from "clsx";
-import Button from "./Button";
+import Button from "@/components/Button";
 import classes from "./TextBox.module.css";
 
 /** text input with label */

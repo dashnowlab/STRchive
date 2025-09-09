@@ -1,8 +1,8 @@
-import { FaAngleUp, FaRegEnvelope } from "react-icons/fa";
+import { FaAngleUp, FaRegEnvelope } from "react-icons/fa6";
 import { useWindowScroll } from "@reactuses/core";
 import Dialog from "@/components/Dialog";
-import Button from "./Button";
-import ContactForm from "./ContactForm";
+import Button from "@/components/Button";
+import ContactForm from "@/components/ContactForm";
 import classes from "./ViewCorner.module.css";
 
 /** controls that float in corner of screen */

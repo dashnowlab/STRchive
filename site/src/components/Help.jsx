@@ -1,8 +1,9 @@
-import { FaRegQuestionCircle } from "react-icons/fa";
+
+import { FaRegCircleQuestion } from "react-icons/fa6";
 import classes from "./Help.module.css";
 
 const Help = ({ children }) => (
-  <FaRegQuestionCircle className={classes.help} data-tooltip={children} />
+  <FaRegCircleQuestion className={classes.help} data-tooltip={children} />
 );
 
 export default Help;

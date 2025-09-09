@@ -5,19 +5,19 @@ import clsx from "clsx";
 import { mapValues, startCase, truncate } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
 import { submitContact } from "@/api/contact";
+import Alert from "@/components/Alert";
+import Button from "@/components/Button";
+import Collapsible from "@/components/Collapsible";
+import { DialogContext } from "@/components/Dialog";
 import Form from "@/components/Form";
+import Help from "@/components/Help";
+import Link from "@/components/Link";
 import TextBox from "@/components/TextBox";
 import { repo } from "@/layouts/meta";
 import { userAgent } from "@/util/browser";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
-import Alert from "./Alert";
-import Button from "./Button";
-import Collapsible from "./Collapsible";
 import classes from "./Contact.module.css";
-import { DialogContext } from "./Dialog";
-import Help from "./Help";
-import Link from "./Link";
 
 const ContactForm = () => {
   /** form state, saved to local storage */

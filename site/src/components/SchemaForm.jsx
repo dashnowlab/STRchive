@@ -6,13 +6,14 @@ import { cloneDeep, range, uniq, upperFirst } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
+import ComboBox from "@/components/ComboBox";
+import Form from "@/components/Form";
 import Heading from "@/components/Heading";
 import Help from "@/components/Help";
 import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
 import TextBox from "@/components/TextBox";
 import { makeList } from "@/util/format";
-import Form from "./Form";
 import classes from "./SchemaForm.module.css";
 
 /** for testing */
@@ -170,6 +171,7 @@ const Field = ({
     maximum,
     less_than,
     greater_than,
+    combobox,
   } = node.schema;
 
   /** normalize type to array */
@@ -181,7 +183,7 @@ const Field = ({
   /** help tooltip to show */
   const tooltip = [
     description,
-    examples?.length > 1
+    examples?.length > 1 && !combobox
       ? `Examples:<br> ${examples.map((ex) => `- ${ex}<br>`).join("")}`
       : examples?.length === 1
         ? `Example: ${examples[0]}`
@@ -258,7 +260,7 @@ const Field = ({
           return message;
         })
         .map((error, index) => (
-          <Fragment key={index}>{error}</Fragment>
+          <Fragment key={index}>{error}. </Fragment>
         ))}
     </span>
   ) : null;
@@ -390,19 +392,32 @@ const Field = ({
       <Select options={options} value={value || ""} onChange={onChange} />
     );
   } else if (types.includes("string"))
-    /** text input */
-    control = (
-      <TextBox
-        placeholder={
-          placeholder ?? (examples?.length ? `Ex: ${examples[0]}` : "")
-        }
-        multi={multiline}
-        pattern={pattern}
-        value={value || ""}
-        minLength={required ? 0 : undefined}
-        onChange={(value) => onChange(value || null)}
-      />
-    );
+    if (combobox && examples) {
+      /** text input with autocomplete suggestions */
+      control = (
+        <ComboBox
+          options={examples.map((example) => ({
+            value: example,
+            label: example,
+          }))}
+          value={[value || null]}
+          onChange={(value) => onChange(value[0] || null)}
+        />
+      );
+    } else
+      /** plain text input */
+      control = (
+        <TextBox
+          placeholder={
+            placeholder ?? (examples?.length ? `Ex: ${examples[0]}` : "")
+          }
+          multi={multiline}
+          pattern={pattern}
+          value={value || ""}
+          minLength={required ? 0 : undefined}
+          onChange={(value) => onChange(value || null)}
+        />
+      );
   else if (types.includes("number") || types.includes("integer")) {
     /** min value allowed to be input */
     const min = Math.max(

@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/mdx": "4.3.3",
     "@astrojs/react": "4.3.0",
+    "@headlessui/react": "^2.2.7",
     "@kbox-labs/react-echarts": "^1.4.2",
     "@reactuses/core": "^6.0.6",
     "@sagold/json-pointer": "^7.1.2",
