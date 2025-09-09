@@ -61,8 +61,7 @@
 .option {
   display: flex;
   align-items: center;
-  padding: 5px;
-  gap: 5px;
+  padding: 5px 15px;
   cursor: pointer;
   transition: background var(--fast);
 }
@@ -70,13 +69,4 @@
 .option[data-focus],
 .option:hover {
   background: var(--light-gray);
-}
-
-.check {
-  padding-left: 5px;
-  color: var(--primary);
-}
-
-.option-label {
-  flex-grow: 1;
 }

@@ -11,57 +11,48 @@ import {
 import Button from "@/components/Button";
 import classes from "./ComboBox.module.css";
 
+/** textbox with autocomplete */
 const ComboBox = ({
-  multi = false,
   label,
   options = [],
-  value = [],
+  value,
   onChange,
   placeholder,
   tooltip,
 }) => {
   const [query, setQuery] = useState("");
 
-  const customOptions = value
-    .filter((value) => !options.find((option) => option.value === value))
-    .map((value) => ({ value, label: value }));
+  /** find option matching current selected value */
+  const matchingOption = options.find((option) => option.value === value);
 
-  options = [...customOptions, ...options];
+  if (value && !matchingOption) options = [{ value, label: value }, ...options];
 
-  const filtered =
-    query === ""
-      ? options
-      : options.filter((option) =>
-          [option.value, option.label]
-            .join(" ")
-            .toLowerCase()
-            .includes(query.toLowerCase()),
-        );
-
-  let selected = "";
-  if (value.length === 0) selected = "None selected";
-  else if (value.length === options.length) selected = "All selected";
-  else if (value.length === 1)
-    selected = options.find((option) => option.value === value[0]).label;
-  else if (value.length > 1) selected = `${value.length} selected`;
+  const filtered = options.filter((option) =>
+    [option.value, option.label]
+      .join(" ")
+      .toLowerCase()
+      .includes(query.toLowerCase()),
+  );
 
   return (
     <label data-tooltip={tooltip}>
       {label && <span>{label}</span>}
       <Combobox
-        multiple
-        value={multi ? value : value.slice(0, 1)}
-        onChange={(options) =>
-          onChange?.(multi ? options : options.slice(1, 2))
-        }
-        onClose={() => setQuery("")}
+        value={value}
+        onChange={onChange}
+        immediate
+        onClose={() => {
+          if (query) onChange?.(query);
+          setQuery("");
+        }}
       >
         <div className={classes.select}>
-          <span className={clsx("truncate", classes.selected)}>{selected}</span>
+          <span className={clsx("truncate", classes.selected)}>
+            {matchingOption?.label || value}
+          </span>
           <ComboboxInput
             className={classes.input}
             placeholder={placeholder || "Search"}
-            displayValue={(option) => option.label}
             onChange={(event) => setQuery(event.target.value)}
           />
           <ComboboxButton as={Button} className={classes.button}>
@@ -84,14 +75,7 @@ const ComboBox = ({
               className={classes.option}
               value={option.value}
             >
-              <FaCheck
-                className={classes.check}
-                style={{ opacity: value.includes(option.value) ? 1 : 0 }}
-              />
-              <div className={classes["option-label"]}>
-                {option.label || <>&nbsp;</>}
-              </div>
-              {option.extra}
+              {option.label || <>&nbsp;</>}
             </ComboboxOption>
           ))}
         </ComboboxOptions>

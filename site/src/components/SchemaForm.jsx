@@ -257,6 +257,8 @@ const Field = ({
                 Minimum <code>{data.minimum}</code>
               </>
             );
+          if (code === "unique-items-error")
+            return <>Must not be duplicate</>;
           return message;
         })
         .map((error, index) => (
@@ -400,8 +402,8 @@ const Field = ({
             value: example,
             label: example,
           }))}
-          value={[value || null]}
-          onChange={(value) => onChange(value[0] || null)}
+          value={value}
+          onChange={onChange}
         />
       );
     } else

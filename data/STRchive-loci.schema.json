@@ -95,6 +95,7 @@
       "description": "Inheritance pattern(s) of the disease",
       "examples": ["AD for autosomal dominant"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "Type",
         "type": ["string", "null"],
@@ -217,6 +218,7 @@
       "description": "Motif in the reference genome in the + reference orientation (regardless of if it is pathogenic)",
       "examples": ["AAAAG"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string", "null"],
@@ -229,6 +231,7 @@
       "description": "Pathogenic motif(s) in the + reference orientation. May be the same as the reference motif if it is pathogenic when expanded or contracted.",
       "examples": ["AAGGG", "ACAGG"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -241,6 +244,7 @@
       "description": "Benign motif(s) in the + reference orientation. Benign motifs are not known to be pathogenic at any size. May be the same as the reference motif if it is benign.",
       "examples": ["AAAAG"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -253,6 +257,7 @@
       "description": "Motif(s) of unknown consequence in the + reference orientation. Only include motifs that have been observed in individuals but are not classified elsewhere.",
       "examples": ["AAAAG"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -265,6 +270,7 @@
       "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from pathogenic_motif_reference_orientation and gene_strand.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -277,6 +283,7 @@
       "description": "Benign motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from benign_motif_reference_orientation and gene_strand.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -289,6 +296,7 @@
       "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -300,6 +308,7 @@
       "title": "Locus Structure",
       "description": "Structure of the locus including the order of motifs and any interruptions. Only one motif can have a null count. If this is missing it will be inferred to be a simple repeat based on the first reference motif.",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": "object",
@@ -420,6 +429,7 @@
       "examples": ["17937"],
       "uri-template": "https://rarediseases.info.nih.gov/diseases/{id}/index",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -432,6 +442,7 @@
       "examples": ["NBK564656"],
       "uri-template": "https://www.ncbi.nlm.nih.gov/books/{id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -445,6 +456,7 @@
       "examples": ["CRB196"],
       "uri-template": "https://www.malacards.org/card/{id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -457,6 +469,7 @@
       "examples": ["482853"],
       "uri-template": "https://www.ncbi.nlm.nih.gov/medgen/?term={id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -469,6 +482,7 @@
       "examples": ["0044720"],
       "uri-template": "https://purl.obolibrary.org/obo/MONDO_{id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -481,6 +495,7 @@
       "examples": ["614575"],
       "uri-template": "https://omim.org/entry/{id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -493,6 +508,7 @@
       "examples": ["504476"],
       "uri-template": "https://www.orpha.net/en/disease/detail/{id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -505,6 +521,7 @@
       "examples": ["RFC1"],
       "uri-template": "https://gnomad.broadinstitute.org/short-tandem-repeat/{id}?dataset=gnomad_r4",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -517,6 +534,7 @@
       "examples": ["RFC1"],
       "uri-template": "https://stripy.org/database/{id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -529,6 +547,7 @@
       "examples": ["TR42349"],
       "uri-template": "https://wlcb.oit.uci.edu/TRatlas/Distribution.php?index_id={id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -541,6 +560,7 @@
       "examples": ["4722884"],
       "uri-template": "https://webstr.ucsd.edu/locus?genome=hg38&repeat_id={id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -553,6 +573,7 @@
       "examples": ["STR_1036603"],
       "uri-template": "https://webstr.ucsd.edu/locus?repeat_id={id}",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"]
@@ -563,6 +584,7 @@
       "title": "Locus Tags",
       "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters. Some tags have specific meanings, such as sparse_evidence for loci with < 5 independent cases after 5 years of publication, or conflicting_evidence for loci where there is evidence for and against pathogenicity in the literature resulting in concern that the locus may not be pathogenic.",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "examples": [
@@ -586,6 +608,7 @@
           "contradictory_evidence"
         ],
         "type": ["string"],
+        "pattern": "^[a-z0-9_]+$",
         "combobox": true
       }
     },
@@ -593,12 +616,13 @@
       "section": "Disease",
       "title": "Disease Tags",
       "description": "Tags for the disease, used for grouping similar diseases and for flagging diseases with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters.",
-
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "examples": ["ataxia", "epilepsy", "phenotypic_spectrum"],
         "type": ["string"],
+        "pattern": "^[a-z0-9_]+$",
         "combobox": true
       }
     },
@@ -608,6 +632,7 @@
       "description": "All references from the fields above. Automatically generated from all in-text citations.",
       "examples": ["pmid:38467784"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
@@ -620,6 +645,7 @@
       "description": "Additional literature related to this locus in the format. Should not be included in the references field. Automatically generated from scripts that search the literature.",
       "examples": ["pmid:38467784"],
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "",
         "type": ["string"],
