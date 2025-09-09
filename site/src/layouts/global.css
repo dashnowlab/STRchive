@@ -145,7 +145,7 @@ label {
   position: relative;
   align-items: center;
   margin: 0;
-  gap: 5px;
+  gap: 10px;
 }
 
 label > span {
@@ -234,7 +234,7 @@ hr {
 }
 
 .table-scroll {
-  max-width: 100%;
+  width: 100%;
   overflow-x: auto;
   border-radius: var(--rounded);
   box-shadow: var(--box-shadow);

@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight } from "react-icons/fa6";
-import { LuDownload } from "react-icons/lu";
+import { FaArrowRight, FaCheck, FaXmark } from "react-icons/fa6";
+import { LuDownload, LuTag } from "react-icons/lu";
 import clsx from "clsx";
-import { map, max, min, pick, uniq } from "lodash-es";
+import { countBy, map, max, min, pick, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
+import Popover from "@/components/Popover";
 import Select from "@/components/Select";
 import TableComponent from "@/components/Table";
 import TextBox from "@/components/TextBox";
@@ -188,32 +189,64 @@ const Table = ({ loci }) => {
   );
 
   return (
-    <div className="col">
+    <div className={clsx("col", classes.table)}>
       {/* filters */}
       <div className="row">
         <div className="row">
-          {importantTagOptions.map(({ Icon, label, color, tooltip }, index) => (
-            <CheckBox
-              key={index}
-              label={
+          <Popover
+            label="Tags"
+            button={(() => {
+              const counts = countBy(tags);
+              if (counts.mixed === tags.length) return <>Any</>;
+
+              return (
                 <>
-                  <Icon style={{ color }} />
-                  {label}
+                  {counts.true && (
+                    <>
+                      {counts.true}
+                      <FaCheck style={{ color: "var(--primary)" }} />
+                    </>
+                  )}
+                  {counts.false && (
+                    <>
+                      {counts.false}
+                      <FaXmark style={{ color: "var(--secondary)" }} />
+                    </>
+                  )}
                 </>
-              }
-              checked={tags[index]}
-              onChange={(value) => {
-                const newTags = [...tags];
-                newTags[index] = value;
-                setTags(newTags);
-              }}
-              tooltip={tooltip}
-            />
-          ))}
+              );
+            })()}
+          >
+            {importantTagOptions.map(
+              ({ Icon, label, color, tooltip }, index) => (
+                <CheckBox
+                  key={index}
+                  label={
+                    <>
+                      <Icon style={{ color }} />
+                      {label}
+                    </>
+                  }
+                  checked={tags[index]}
+                  onChange={(value) => {
+                    const newTags = [...tags];
+                    newTags[index] = value;
+                    setTags(newTags);
+                  }}
+                  tooltip={tooltip}
+                />
+              ),
+            )}
+          </Popover>
         </div>
 
         <div className="row">
-          <TextBox placeholder="Search" value={search} onChange={setSearch} />
+          <TextBox
+            className={classes.search}
+            placeholder="Search"
+            value={search}
+            onChange={setSearch}
+          />
 
           <div className={classes["motif-length"]}>
             Motif length

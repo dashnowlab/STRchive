@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { FaAngleDown, FaCheck } from "react-icons/fa6";
 import clsx from "clsx";
 import {
@@ -7,6 +8,7 @@ import {
   ListboxOptions,
 } from "@headlessui/react";
 import Button from "@/components/Button";
+import { preserveScroll } from "@/util/dom";
 import classes from "./Select.module.css";
 
 /** dropdown select with label */
@@ -19,8 +21,13 @@ const Select = ({
   onChange,
   tooltip,
 }) => {
+  const labelRef = useRef(null);
+
+  /** track open state */
+  const isOpen = useRef(false);
+
   return (
-    <label data-tooltip={tooltip}>
+    <label ref={labelRef} data-tooltip={tooltip}>
       {label && <span>{label}</span>}
       <Listbox
         value={value}
@@ -28,7 +35,11 @@ const Select = ({
         multiple={multi}
         defaultValue={defaultValue}
       >
-        {({ value }) => {
+        {({ value, open }) => {
+          /** on close */
+          if (!open && isOpen.current) preserveScroll(labelRef.current);
+          isOpen.current = open;
+
           /** label for selected value */
           let selected = "";
           if (multi) {
@@ -50,7 +61,7 @@ const Select = ({
             /** https://github.com/tailwindlabs/headlessui/issues/3597 */
             <div style={{ display: "contents" }}>
               <ListboxButton as={Button} className={classes.select}>
-                <span className={clsx(!selected && classes.label)}>
+                <span className={clsx(!selected && classes.secondary)}>
                   {selected || "No Selection"}
                 </span>
                 <FaAngleDown />
@@ -79,7 +90,7 @@ const Select = ({
                           : 0,
                       }}
                     />
-                    <span className={clsx(!option.label && classes.label)}>
+                    <span className={clsx(!option.label && classes.secondary)}>
                       {option.label || "No Selection"}
                     </span>
                   </ListboxOption>

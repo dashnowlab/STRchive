@@ -1,8 +1,8 @@
 .select {
   display: flex;
   position: relative;
+  flex-grow: 1;
   align-items: center;
-  width: 100%;
   min-width: 40px;
   min-height: 40px;
   gap: 10px;
@@ -37,7 +37,7 @@
   color: var(--primary);
 }
 
-.label {
+.secondary {
   color: var(--gray);
 }
 
