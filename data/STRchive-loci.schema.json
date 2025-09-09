@@ -12,7 +12,7 @@
       "placeholder": "[disease_id]_[gene]",
       "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II",
       "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
-      "type": "string",
+      "type": ["string"],
       "pattern": "^[\\S]+_[\\S]+$"
     },
     "disease_id": {
@@ -20,7 +20,7 @@
       "title": "Disease ID",
       "description": "Disease abbreviation",
       "examples": ["CANVAS"],
-      "type": "string"
+      "type": ["string"]
     },
     "gene": {
       "section": "Overview",
@@ -325,28 +325,21 @@
           },
           "type": {
             "title": "Type",
-            "anyOf": [
-              {
-                "const": "pathogenic_repeat",
-                "title": "Pathogenic Repeat",
-                "description": "The pathogenic_repeat will typically have a count of null."
-              },
-              {
-                "const": "flank_repeat",
-                "title": "Flank Repeat",
-                "description": "Must be outside the locus coordinates. The order in the json will be used to determine the location. For example, if it occurs before the pathogenic repeat, it will be considered 5' flanking. These are expected to be present in the reference genome."
-              },
-              {
-                "const": "internal_repeat",
-                "title": "Internal Repeat",
-                "description": "A repeat that is located within the locus coordinates. It may occur in only some alleles and may be absent from the reference genome."
-              },
-              {
-                "const": "interruption",
-                "title": "Interruption",
-                "description": "A non-repetitive interruption in the repeat structure, e.g. an insertion that doesn't match the surrounding motif. Must be within the locus coordinates."
-              }
-            ]
+            "description": "Type of motif in the locus structure",
+            "type": ["string", "null"],
+            "enum": [
+              "pathogenic_repeat",
+              "flank_repeat",
+              "internal_repeat",
+              "interruption",
+              null
+            ],
+            "enum_descriptions": {
+              "pathogenic_repeat": "The pathogenic_repeat will typically have a count of null.",
+              "flank_repeat": "Must be outside the locus coordinates. The order in the json will be used to determine the location. For example, if it occurs before the pathogenic repeat, it will be considered 5' flanking. These are expected to be present in the reference genome.",
+              "internal_repeat": "A repeat that is located within the locus coordinates. It may occur in only some alleles and may be absent from the reference genome.",
+              "interruption": "A non-repetitive interruption in the repeat structure, e.g. an insertion that doesn't match the surrounding motif. Must be within the locus coordinates."
+            }
           }
         },
         "required": ["motif", "count", "type"]

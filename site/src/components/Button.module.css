@@ -18,11 +18,6 @@
   background: var(--light-gray);
 }
 
-.plain:hover {
-  background: var(--dark-gray);
-  color: var(--white);
-}
-
 .bubble {
   gap: 10px;
   border: solid 2px currentColor;

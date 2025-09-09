@@ -223,7 +223,7 @@ li {
 }
 
 li::marker {
-  color: var(--dark-gray);
+  color: color-mix(in srgb, currentColor, transparent 50%);
 }
 
 hr {
@@ -319,8 +319,8 @@ dt {
 }
 
 dd {
-  background: var(--off-white);
   margin-right: 20px;
+  background: var(--off-white);
 }
 
 dd:empty::after {

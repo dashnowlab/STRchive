@@ -238,7 +238,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
             label="Per page"
             options={perPageOptions}
             defaultValue={defaultPerPage.value}
-            onChange={(value) => table.setPageSize(Number(value))}
+            onChange={(value) => table.setPageSize(value)}
           />
         </div>
       )}

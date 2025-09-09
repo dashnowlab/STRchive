@@ -2,7 +2,14 @@ import { cloneElement, Fragment, useMemo } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { LuSend } from "react-icons/lu";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
-import { cloneDeep, range, uniq, upperFirst } from "lodash-es";
+import {
+  cloneDeep,
+  isEmpty,
+  isObject,
+  mapValues,
+  range,
+  uniq,
+} from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
@@ -41,6 +48,8 @@ const SchemaForm = ({
 
   /** current form data state */
   const [data, setData] = useLocalStorage(storageKey, initialData);
+
+  console.log(data);
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
@@ -164,13 +173,14 @@ const Field = ({
     description,
     examples,
     placeholder,
-    multiline,
     pattern,
     enum: _enum,
+    enum_descriptions,
     minimum,
     maximum,
     less_than,
     greater_than,
+    multiline,
     combobox,
   } = node.schema;
 
@@ -180,14 +190,28 @@ const Field = ({
   /** form data name */
   const name = path;
 
+  /** get nested data value from path */
+  const value = get(data, path);
+
+  /** set nested data value from path */
+  const onChange = (value) => {
+    data = cloneDeep(data);
+    data = set(data, path, value);
+    setData(data);
+  };
+
   /** help tooltip to show */
   const tooltip = [
     description,
-    examples?.length > 1 && !combobox
-      ? `Examples:<br> ${examples.map((ex) => `- ${ex}<br>`).join("")}`
-      : examples?.length === 1
-        ? `Example: ${examples[0]}`
-        : "",
+    ...(examples?.length
+      ? [
+          "Examples:",
+          `<ul>${examples.map((ex) => `<li>${ex}</li>`).join("")}</ul>`,
+        ]
+      : []),
+    ...(!isEmpty(enum_descriptions) && value in enum_descriptions
+      ? [`${value}: ${enum_descriptions[value]}`]
+      : []),
   ]
     .filter(Boolean)
     .map((line) => `<div>${line}</div>`)
@@ -204,16 +228,6 @@ const Field = ({
       {tooltip && <Help>{tooltip}</Help>}
     </>
   );
-
-  /** get nested data value from path */
-  const value = get(data, path);
-
-  /** set nested data value from path */
-  const onChange = (value) => {
-    data = cloneDeep(data);
-    data = set(data, path, value);
-    setData(data);
-  };
 
   /** get validation errors associated with this field */
   const fieldErrors = errors.filter(
@@ -257,8 +271,19 @@ const Field = ({
                 Minimum <code>{data.minimum}</code>
               </>
             );
-          if (code === "unique-items-error")
-            return <>Must not be duplicate</>;
+          if (code === "unique-items-error") return <>Must not be duplicate</>;
+          if (code === "min-items-error")
+            return (
+              <>
+                Must have at least <code>{data.minItems}</code> items
+              </>
+            );
+          if (code === "max-items-error")
+            return (
+              <>
+                Must have at most <code>{data.maxItems}</code> items
+              </>
+            );
           return message;
         })
         .map((error, index) => (
@@ -370,11 +395,16 @@ const Field = ({
           style={{ gridColumn: "1 / -1" }}
           design="plain"
           onClick={() => {
+            /** add new item to array */
             data = cloneDeep(data);
+            /** get child schema */
             let newItem = node
               .getNodeChild("items")
               .node.getData(undefined, {});
+            /** modify default value fills */
             if (newItem === "") newItem = null;
+            if (isObject(newItem)) newItem = mapValues(newItem, () => null);
+            /** insert item */
             data = set(data, [...split(path), "[]"], newItem);
             setData(data);
           }}
@@ -388,10 +418,15 @@ const Field = ({
     /** single select */
     const options = uniq(["", ..._enum.filter(Boolean)]).map((value) => ({
       value,
-      label: upperFirst(value),
+      label: value,
+      tooltip: enum_descriptions?.[value],
     }));
     control = (
-      <Select options={options} value={value || ""} onChange={onChange} />
+      <Select
+        options={options}
+        value={value || ""}
+        onChange={(value) => onChange(value || null)}
+      />
     );
   } else if (types.includes("string"))
     if (combobox && examples) {
@@ -415,8 +450,8 @@ const Field = ({
           }
           multi={multiline}
           pattern={pattern}
-          value={value || ""}
           minLength={required ? 0 : undefined}
+          value={value || ""}
           onChange={(value) => onChange(value || null)}
         />
       );
