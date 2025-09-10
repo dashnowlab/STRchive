@@ -1,15 +1,12 @@
 const functions = require("@google-cloud/functions-framework");
 const { Octokit } = require("octokit");
 
-/** settings */
-const owner = "dashnowlab";
-const repo = "STRchive";
-const auth = process.env.GITHUB_TOKEN;
 /**
  * token permissions:
  * contents, read/write
  * pull requests, read/write
  */
+const auth = process.env.GITHUB_TOKEN;
 
 /** entry point */
 functions.http("entrypoint", async (request, response) => {
@@ -32,10 +29,12 @@ functions.http("entrypoint", async (request, response) => {
   }
 
   /** get params */
-  const { title, body, labels } = request.body || {};
+  const { owner, repo, title, body, labels } = request.body || {};
 
   /** check for missing params */
   const missing = [];
+  if (!owner) missing.push("owner");
+  if (!repo) missing.push("repo");
   if (!title) missing.push("title");
   if (!body) missing.push("body");
   if (!labels) missing.push("labels");

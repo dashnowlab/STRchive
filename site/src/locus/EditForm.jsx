@@ -87,12 +87,6 @@ const EditForm = ({ heading, locus }) => {
     data: response,
     status,
   } = useQuery(async () => {
-    /** pr branch name */
-    const branch = locus.id;
-
-    /** pr title */
-    const title = data["edit-title"];
-
     /** pr body */
     const name = data["edit-name"];
     const username = data["edit-username"];
@@ -126,10 +120,15 @@ const EditForm = ({ heading, locus }) => {
       },
     ];
 
-    /** pr labels */
-    const labels = ["locus-edit"];
-
-    return await createPR({ branch, title, body, files, labels });
+    return await createPR({
+      owner: "dashnowlab",
+      repo: "STRchive",
+      branch: locus.id,
+      title: data["edit-title"],
+      body,
+      files,
+      labels: ["locus-edit"],
+    });
   });
 
   return (

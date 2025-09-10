@@ -113,7 +113,15 @@ const ContactForm = () => {
     data: response,
     status,
     reset,
-  } = useQuery(() => createIssue({ title, body, labels: ["contact"] }));
+  } = useQuery(() =>
+    createIssue({
+      owner: "dashnowlab",
+      repo: "STRchive",
+      title,
+      body,
+      labels: ["contact"],
+    }),
+  );
 
   const { isOpen } = useContext(DialogContext);
 
