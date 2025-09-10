@@ -9,6 +9,7 @@
   gap: 20px;
   border-radius: var(--rounded);
   line-height: var(--compact);
+  text-align: left;
 }
 
 .alert::before {

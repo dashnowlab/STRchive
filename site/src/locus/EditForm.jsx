@@ -40,16 +40,20 @@ schema.properties = {
   },
   "edit-title": {
     section: "Edit",
-    title: "Title",
+    title: "Edit Title",
     description: "Succinct title describing these changes",
-    examples: ["Fix allele details", "Update locus information"],
+    examples: ["Fix mechanism details", "Update disease onset information"],
     type: "string",
     default: null,
   },
   "edit-description": {
     section: "Edit",
-    title: "Description",
-    description: "High-level summary and justification of these changes",
+    title: "Edit Description",
+    description:
+      "Summary of changes, justification for changes, uncertainty in literature, or anything else we should know for review. Please be detailed. Provide at least 2-3 sentences.",
+    examples: [
+      "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This edit corrects the reference and updates...",
+    ],
     multiline: true,
     type: "string",
     default: null,
@@ -138,6 +142,11 @@ const EditForm = ({ heading, locus }) => {
           <LuFeather />
           {heading}
         </Heading>
+
+        <Alert type="info">
+          Every suggestion is reviewed by our team before inclusion in STRchive.
+          Please enter as much accurate information as possible.
+        </Alert>
 
         {storageExists && (
           <div className="row">
