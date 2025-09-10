@@ -3,14 +3,14 @@
   "$id": "STRchive-loci.schema",
   "title": "STRchive-loci",
   "description": "STRchive tandem repeat disease locus",
-  "type": "object",
   "citation_format": "In text: [@pmid:20560987; @pmid:26220009], individual citations in a list: [pmid:20560987, pmid:26220009]",
+  "type": "object",
   "properties": {
     "id": {
       "section": "Overview",
       "title": "ID",
-      "placeholder": "[disease_id]_[gene]",
       "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II",
+      "placeholder": "[disease_id]_[gene]",
       "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
       "type": ["string"],
       "pattern": "^[\\S]+_[\\S]+$"
