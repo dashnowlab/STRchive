@@ -1,32 +1,46 @@
-.container {
+.select {
   display: flex;
   position: relative;
-}
-
-.select {
+  flex-grow: 1;
+  align-items: center;
   min-width: 40px;
   min-height: 40px;
-  padding: 7.5px;
-  padding-right: 25px;
   gap: 10px;
   border-radius: var(--rounded);
   background: var(--light-gray);
 }
 
-.select:hover {
-  background: var(--dark-gray);
-  color: var(--white);
+.options {
+  display: flex;
+  flex-direction: column;
+  width: var(--button-width);
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  cursor: pointer;
+  transition: background var(--fast);
+}
+
+.option[data-focus],
+.option:hover {
+  background: var(--light-gray);
 }
 
 .icon {
-  position: absolute;
-  right: 5px;
-  align-self: center;
-  opacity: 0.5;
-  pointer-events: none;
-  transition: color var(--fast);
+  color: var(--primary);
 }
 
-.select:hover + .icon {
-  color: var(--white);
+.secondary {
+  color: var(--gray);
+}
+
+.select > :first-child {
+  flex-grow: 1;
 }

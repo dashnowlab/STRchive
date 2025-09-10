@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "./Button";
+import Button from "@/components/Button";
 import classes from "./ShowMoreItems.module.css";
 
 /** add "show more/less" control to group of items if needed */

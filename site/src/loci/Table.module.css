@@ -1,5 +1,13 @@
+.table {
+  width: 100%;
+}
+
 .tags-cell {
   gap: 5px;
+}
+
+.search {
+  width: 120px !important;
 }
 
 .motif-length {

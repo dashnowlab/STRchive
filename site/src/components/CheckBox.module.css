@@ -1,4 +1,4 @@
-.box {
+.input {
   appearance: none;
   width: 20px;
   height: 20px;
@@ -11,12 +11,12 @@
   accent-color: var(--primary);
 }
 
-.box[aria-checked="true"] {
+.input[aria-checked="true"] {
   background-image: url("../assets/check.svg");
   background-color: var(--primary);
 }
 
-.box[aria-checked="false"] {
+.input[aria-checked="false"] {
   background-image: url("../assets/x.svg");
   background-color: var(--secondary);
 }

@@ -4,8 +4,10 @@
 import Layout from "@/layouts/Layout.astro";
 import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
+import { LuFeather } from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
-import Heading from "@/components/Heading.astro";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
@@ -20,9 +22,9 @@ import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
-import gnomad from "../../../../data/plots/gnomad.json";
-import citations from "../../../../data/STRchive-citations.json";
-import loci from "../../../../data/STRchive-loci.json";
+import gnomad from "~/plots/gnomad.json";
+import citations from "~/STRchive-citations.json";
+import loci from "~/STRchive-loci.json";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -40,7 +42,7 @@ const locus = deriveLocus(
 
 /** whether there is raw gene search text file associated with this gene */
 const hasRawSearch = Object.keys(
-  import.meta.glob("../../../../data/literature/*.txt", { eager: true }),
+  import.meta.glob("~/literature/*.txt", { eager: true }),
 ).some((file) => file.includes(locus.gene));
 
 /** get blame info of locus */
@@ -55,7 +57,7 @@ const blame = getJsonBlame(
 
   <!-- overview -->
   <section>
-    <Heading level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
+    <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
     {
       !!locus.locus_tags.length && (
@@ -134,11 +136,16 @@ const blame = getJsonBlame(
         ))
       }
     </div>
+
+    <Button to={`${id}/edit`} design="bubble">
+      <LuFeather />
+      <span>Suggest Edit</span>
+    </Button>
   </section>
 
   <!-- disease info -->
   <section>
-    <Heading level={2}>Disease</Heading>
+    <Heading client:load level={2}>Disease</Heading>
     {
       !!locus.disease_tags.length && (
         <div class="row">
@@ -158,13 +165,11 @@ const blame = getJsonBlame(
       <div class="box">
         <div>Inheritance</div>
         {
-          (locus.inheritance.length ? locus.inheritance : [""]).map(
-            (inheritance) => (
-              <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-                {getInheritance(inheritance) || "-"}
-              </Link>
-            ),
-          )
+          (locus.inheritance ?? [""]).map((inheritance) => (
+            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+              {getInheritance(inheritance) || "-"}
+            </Link>
+          ))
         }
       </div>
     </div>
@@ -239,7 +244,7 @@ const blame = getJsonBlame(
 
   <!-- locus info -->
   <section>
-    <Heading level={2}>Locus</Heading>
+    <Heading client:load level={2}>Locus</Heading>
 
     <div class="boxes">
       {
@@ -326,7 +331,7 @@ const blame = getJsonBlame(
     </div>
 
     <!-- allele info -->
-    <Heading level={2}>Alleles</Heading>
+    <Heading client:load level={2}>Alleles</Heading>
 
     <div class="allele-list">
       {
@@ -440,7 +445,9 @@ const blame = getJsonBlame(
   {
     gnomad[id] && (
       <section>
-        <Heading level={2}>gnomAD</Heading>
+        <Heading client:load level={2}>
+          gnomAD
+        </Heading>
         {gnomad[id].reliable ? (
           <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
         ) : (
@@ -460,7 +467,9 @@ const blame = getJsonBlame(
   {
     !!locus.references.length && (
       <section>
-        <Heading level={2}>References</Heading>
+        <Heading client:load level={2}>
+          References
+        </Heading>
 
         <p class="center">
           Direct supporting references for info on this page.
@@ -479,7 +488,9 @@ const blame = getJsonBlame(
   {
     (!!locus.additional_literature.length || hasRawSearch) && (
       <section>
-        <Heading level={2}>Additional Literature</Heading>
+        <Heading client:load level={2}>
+          Additional Literature
+        </Heading>
 
         {!!locus.additional_literature.length && (
           <p class="center">Additional literature related to this locus.</p>

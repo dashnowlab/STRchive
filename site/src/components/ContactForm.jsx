@@ -4,23 +4,56 @@ import { Fragment } from "react/jsx-runtime";
 import clsx from "clsx";
 import { mapValues, startCase, truncate } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
-import { submitContact } from "@/api/contact";
+import { createIssue } from "@/api/issue";
+import Alert from "@/components/Alert";
+import Button from "@/components/Button";
+import Collapsible from "@/components/Collapsible";
+import { DialogContext } from "@/components/Dialog";
 import Form from "@/components/Form";
+import Help from "@/components/Help";
+import Link from "@/components/Link";
 import TextBox from "@/components/TextBox";
 import { repo } from "@/layouts/meta";
 import { userAgent } from "@/util/browser";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
-import Alert from "./Alert";
-import Button from "./Button";
-import Collapsible from "./Collapsible";
 import classes from "./Contact.module.css";
-import { DialogContext } from "./Dialog";
-import Help from "./Help";
-import Link from "./Link";
+
+/** shared schema info for user contact info */
+export const contactSchema = {
+  name: {
+    title: "Name",
+    description: "Optional. So we know who you are.",
+    placeholder: "Your Name",
+  },
+  username: {
+    title: "GitHub Username",
+    description: "Optional. So we can tag you and you can follow activity.",
+    placeholder: "@username",
+  },
+  email: {
+    title: "Email",
+    description: "Optional. So we can contact you directly if needed.",
+    placeholder: "you@example.com",
+  },
+};
+
+/** contact field component props */
+const contactFields = mapValues(
+  contactSchema,
+  ({ title, description, placeholder }) => ({
+    label: (
+      <>
+        {title}
+        <Help>{description}</Help>
+      </>
+    ),
+    placeholder,
+  }),
+);
 
 const ContactForm = () => {
-  /** form state, saved to local storage */
+  /** form state */
   let [name, setName] = useLocalStorage("contact-name", "");
   let [username, setUsername] = useLocalStorage("contact-username", "");
   let [email, setEmail] = useLocalStorage("contact-email", "");
@@ -80,7 +113,7 @@ const ContactForm = () => {
     data: response,
     status,
     reset,
-  } = useQuery(() => submitContact(title, body));
+  } = useQuery(() => createIssue({ title, body, labels: ["contact"] }));
 
   const { isOpen } = useContext(DialogContext);
 
@@ -91,41 +124,22 @@ const ContactForm = () => {
 
   return (
     <Form onSubmit={submit}>
+      <Alert type="info" className={classes.shrink}>
+        Want to suggest a new locus or an edit to an existing one? Use the{" "}
+        <Link to="/loci/new">new locus form</Link> or go to an{" "}
+        <Link to="/loci#loci">existing locus</Link> and use the{" "}
+        <em>suggest edit</em> form.
+      </Alert>
+
       <div className={clsx("col", classes.form)}>
+        <TextBox {...contactFields.name} value={name} onChange={setName} />
         <TextBox
-          label={
-            <>
-              Name<Help>Optional. So we know who you are.</Help>
-            </>
-          }
-          placeholder="Your Name"
-          value={name}
-          onChange={setName}
-        />
-        <TextBox
-          label={
-            <>
-              GitHub Username
-              <Help>
-                Optional. So we can tag you in the post and you can follow it.
-              </Help>
-            </>
-          }
-          placeholder="@username"
+          {...contactFields.username}
           value={username}
           onChange={setUsername}
         />
-        <TextBox
-          label={
-            <>
-              Email
-              <Help>Optional. So we can contact you directly if needed.</Help>
-            </>
-          }
-          placeholder="your.name@email.com"
-          value={email}
-          onChange={setEmail}
-        />
+        <TextBox {...contactFields.email} value={email} onChange={setEmail} />
+
         <TextBox
           label="Subject"
           placeholder="Subject"
@@ -154,7 +168,7 @@ const ContactForm = () => {
         </dl>
       </Collapsible>
 
-      <Alert type={status || "info"} style={{ width: 0, minWidth: "100%" }}>
+      <Alert type={status || "info"} className={classes.shrink}>
         {status === "" && (
           <>
             This will make a <strong>public</strong> post on{" "}

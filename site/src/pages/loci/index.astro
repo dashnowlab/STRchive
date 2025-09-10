@@ -4,22 +4,22 @@
 import Layout from "@/layouts/Layout.astro";
 import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuChartCandlestick, LuChartGantt } from "react-icons/lu";
-import { filter, groupBy, map, uniq } from "lodash-es";
+import { LuChartCandlestick, LuChartGantt, LuPlus } from "react-icons/lu";
+import { filter, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading.astro";
+import Heading from "@/components/Heading";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import { repo, repoRaw, version } from "@/layouts/meta";
 import Table from "@/loci/Table";
-import ageOnset from "../../../../data/plots/age-onset.json";
-import pathSize from "../../../../data/plots/path-size.json";
-import loci from "../../../../data/STRchive-loci.json";
+import ageOnset from "~/plots/age-onset.json";
+import pathSize from "~/plots/path-size.json";
+import loci from "~/STRchive-loci.json";
 
 /** import catalog files */
 const catalogs = Object.keys(
-  import.meta.glob(`../../../../data/catalogs/STRchive-disease-loci*.*`, {
+  import.meta.glob(`~/catalogs/STRchive-disease-loci*.*`, {
     query: "?url",
     import: "default",
     eager: true,
@@ -57,27 +57,27 @@ const rows = [
   },
   {
     key: "atarva",
-    primary: "ATaRVa",
-    secondary: "⚠️ for genotyping full allele sequences in long-read data",
+    primary: "Atarva",
+    secondary: "for genotyping full allele sequences in long-read data",
     link: "https://github.com/SowpatiLab/ATaRVa",
   },
   {
     key: "longTR",
     primary: "LongTR",
-    secondary: "⚠️ for genotyping full allele sequences in long-read data",
+    secondary: "for genotyping full allele sequences in long-read data",
     link: "https://github.com/gymrek-lab/LongTR",
   },
   {
     key: "straglr",
     primary: "Straglr",
-    secondary: "⚠️ for genotyping allele sizes in long read-data",
+    secondary: "for genotyping allele sizes in long read-data",
     link: "https://github.com/bcgsc/straglr",
   },
   {
     key: "stranger",
     primary: "Stranger",
     secondary:
-      "⚠️ for annotating straglr, TRGT or ExpansionHunter allele sizes with pathologic implications",
+      "for annotating TRGT or ExpansionHunter allele sizes with pathologic implications.",
     link: "https://github.com/Clinical-Genomics/stranger",
   },
 ];
@@ -90,7 +90,7 @@ const cols = uniq(map(catalogs, "genome"));
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading level={1}><LiaBarcodeSolid />Loci</Heading>
+    <Heading client:load level={1}><LiaBarcodeSolid />Loci</Heading>
 
     <div class="row">
       <span> Tandem repeat loci associated with Mendelian diseases. </span>
@@ -101,11 +101,16 @@ const cols = uniq(map(catalogs, "genome"));
     </div>
 
     <Table client:load loci={loci} />
+
+    <Button to="loci/new" design="bubble">
+      <LuPlus />
+      <span>Suggest New</span>
+    </Button>
   </section>
 
   <!-- downloads -->
   <section>
-    <Heading level={2}><FaArrowDown />Downloads</Heading>
+    <Heading client:load level={2}><FaArrowDown />Downloads</Heading>
 
     <div class="table-scroll">
       <table class="downloads">
@@ -158,19 +163,20 @@ const cols = uniq(map(catalogs, "genome"));
           }
         </tbody>
       </table>
-      ⚠️ These catalogs are still under development
     </div>
   </section>
 
   <!-- plots -->
   <section class="full">
-    <Heading level={2}><FaChartLine />Plots</Heading>
+    <Heading client:load level={2}><FaChartLine />Plots</Heading>
 
     <p class="center">High-level, visual overview of loci.</p>
 
     <div class="charts">
       <div class="col">
-        <Heading level={3}><LuChartGantt />Pathogenic Size Range</Heading>
+        <Heading client:load level={3}
+          ><LuChartGantt />Pathogenic Size Range</Heading
+        >
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -179,7 +185,9 @@ const cols = uniq(map(catalogs, "genome"));
       </div>
 
       <div class="col">
-        <Heading level={3}><LuChartCandlestick />Age of Onset</Heading>
+        <Heading client:load level={3}
+          ><LuChartCandlestick />Age of Onset</Heading
+        >
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}

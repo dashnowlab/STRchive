@@ -1,0 +1,13 @@
+---
+/** NEW LOCUS PAGE */
+
+import Layout from "@/layouts/Layout.astro";
+import TableOfContents from "@/components/TableOfContents";
+import EditForm from "@/locus/EditForm";
+---
+
+<Layout title="New Locus">
+  <TableOfContents client:only="react" />
+
+  <EditForm client:only="react" heading="New Locus" />
+</Layout>

@@ -4,16 +4,14 @@ layout: "@/layouts/Layout.astro"
 ---
 
 import { FaCompassDrafting } from "react-icons/fa6";
-import { PiBooksBold } from "react-icons/pi";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading.astro";
+import Heading from "@/components/Heading";
 import Link from "@/components/Link";
 import styles from "./_resources.module.css";
 
 <section>
 
-<Heading level={1}>
-  <PiBooksBold client:only="react" />
+<Heading client:load level={1}>
   Resources
 </Heading>
 
@@ -23,7 +21,7 @@ import styles from "./_resources.module.css";
   <div class={styles.grid}>
 
     <div class="col">
-      <Heading level={2}>Computational Methods</Heading>
+      <Heading client:load level={2}>Computational Methods</Heading>
 
       A selection of computational methods that we have either developed or
       used in our research.
@@ -32,7 +30,7 @@ import styles from "./_resources.module.css";
     </div>
 
     <div class="col">
-    <Heading level={3}>Short-read genotyping</Heading>
+    <Heading client:load level={3}>Short-read genotyping</Heading>
 
       - <Link to="https://github.com/Illumina/ExpansionHunter">ExpansionHunter</Link>
       - <Link to="https://github.com/gymrek-lab/HipSTR">HipSTR</Link>
@@ -40,14 +38,14 @@ import styles from "./_resources.module.css";
     </div>
 
     <div class="col">
-    <Heading level={3}>Short-read novel locus detection</Heading>
+    <Heading client:load level={3}>Short-read novel locus detection</Heading>
 
       - <Link to="https://github.com/quinlan-lab/STRling">STRling</Link>
       - <Link to="https://github.com/Illumina/ExpansionHunterDenovo">ExpansionHunter Denovo</Link>
     </div>
 
     <div class="col">
-    <Heading level={3}>Long-read genotyping</Heading>
+    <Heading client:load level={3}>Long-read genotyping</Heading>
 
       - <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link>
       - <Link to="https://github.com/PacificBiosciences/trgt-denovo">TRGT-denovo</Link>
@@ -60,7 +58,7 @@ import styles from "./_resources.module.css";
   <div class={styles.grid}>
 
     <div class="col">
-    <Heading level={2}>Disease Repeat Catalogs</Heading>
+    <Heading client:load level={2}>Disease Repeat Catalogs</Heading>
 
       - <Link to="/loci/#downloads">STRchive disease loci: TRGT, extended BED and JSON formats</Link>
       - <Link to="https://github.com/broadinstitute/str-analysis/tree/main/str_analysis/variant_catalogs">gnomAD disease loci: ExpansionHunter and TRGT formats</Link>
@@ -68,7 +66,7 @@ import styles from "./_resources.module.css";
     </div>
 
     <div class="col">
-    <Heading level={2}>Genome Repeat Catalogs</Heading>
+    <Heading client:load level={2}>Genome Repeat Catalogs</Heading>
 
       - <Link to="https://trexplorer.broadinstitute.org/">TR Explorer: Explore genome-wide TR catalogs</Link>
       - <Link to="https://zenodo.org/records/13178746">PlatinumTRs: 7.8 million reference TRs in TRGT format</Link>
@@ -77,7 +75,7 @@ import styles from "./_resources.module.css";
     </div>
 
     <div class="col">
-    <Heading level={2}>Databases</Heading>
+    <Heading client:load level={2}>Databases</Heading>
 
       - <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats">gnomAD: Tandem Repeats</Link>
       - <Link to="https://stripy.org/">STRipy</Link>
@@ -92,7 +90,7 @@ import styles from "./_resources.module.css";
 
 <section>
 
-<Heading level={3}>
+<Heading client:load level={3}>
   Why do repeat locus definitions differ between resources?
 </Heading>
 
@@ -109,7 +107,9 @@ It is also the preferred approach to defining loci for improved genotyping accur
 In contrast, <Link to="https://github.com/Illumina/ExpansionHunter">ExpansionHunter</Link> tends to perform better with narrower loci that exclude repeat interruptions.
 For this reason, repeat definitions used in <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats">gnomAD</Link> tend to be narrower than those used in STRchive.
 
-<Heading level={3}>Defining loci in STRchive</Heading>
+<Heading client:load level={3}>
+  Defining loci in STRchive
+</Heading>
 
 We followed a consistent protocol to arrive at the coordinates within our repeat locus definitions.
 We began with the region defined in the literature and used TRF annotations or similar to identify or refine the coordinates if needed.
@@ -118,18 +118,13 @@ We included interrupted motifs if described in the literature or where they occu
 We conducted a manual review to ensure the coordinates in all genome builds met the above criteria, adjusting as necessary.
 To generate TRGT repeat definitions, we further extended the above coordinates to include flanking motifs.
 
-**Additional considerions for specific catalogs:**
-- **TRGT**: Coordinates were extended to include any flanking repeats. All relevent motifs are given where possible.
-- **Atarva**: Flanking repeats were included on separate lines. Only one motif is given per locus as the tool infers other motifs automatically.
-- **LongTR**: 1-based coordinates (i.e. non-standard BED format). All relevent motifs are given where possible.
-- **Straglr**: Uses the version of this format required for <Link to="https://github.com/epi2me-labs/wf-human-variation/">wf-human-variation</Link>. Some loci are ommitted if they cannot match the format e.g. where only motif change or contraction is pathogenic.
-- **Stranger**: Coordinates and names are set to match the Stragler catalog so that they can be used together. Uses the version of this format required for <Link to="https://github.com/epi2me-labs/wf-human-variation/">wf-human-variation</Link>.
-
 </section>
 
 <section>
 
-<Heading level={3}>Blueprint for STR evaluation/interpretation</Heading>
+<Heading client:load level={3}>
+  Blueprint for STR evaluation/interpretation
+</Heading>
 
 <p class="center">With current resources relevant to each point.</p>
 

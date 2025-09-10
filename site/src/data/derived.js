@@ -1,4 +1,4 @@
-import { sortBy, uniq } from "lodash-es";
+import { cloneDeep, sortBy, uniq } from "lodash-es";
 
 /** years old before not "new" anymore */
 export const newThreshold = 2;
@@ -6,7 +6,7 @@ export const newThreshold = 2;
 /** derive/compute some props from existing props on locus  */
 export const deriveLocus = (locus, loci, citations) => {
   /** keep existing data */
-  locus = { ...locus };
+  locus = cloneDeep(locus);
 
   /** nice looking id, for labels */
   locus.nice_id = locus.id.replace("_", " ");
