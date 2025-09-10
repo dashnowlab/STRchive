@@ -118,6 +118,14 @@ We included interrupted motifs if described in the literature or where they occu
 We conducted a manual review to ensure the coordinates in all genome builds met the above criteria, adjusting as necessary.
 To generate TRGT repeat definitions, we further extended the above coordinates to include flanking motifs.
 
+**Additional considerions for specific catalogs:**
+
+- **TRGT**: Coordinates were extended to include any flanking repeats. All relevent motifs are given where possible.
+- **Atarva**: Flanking repeats were included on separate lines. Only one motif is given per locus as the tool infers other motifs automatically.
+- **LongTR**: 1-based coordinates (i.e. non-standard BED format). All relevent motifs are given where possible.
+- **Straglr**: Uses the version of this format required for <Link to="https://github.com/epi2me-labs/wf-human-variation/">wf-human-variation</Link>. Some loci are ommitted if they cannot match the format e.g. where only motif change or contraction is pathogenic.
+- **Stranger**: Coordinates and names are set to match the Stragler catalog so that they can be used together. Uses the version of this format required for <Link to="https://github.com/epi2me-labs/wf-human-variation/">wf-human-variation</Link>.
+
 </section>
 
 <section>
