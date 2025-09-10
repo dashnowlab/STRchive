@@ -2,7 +2,7 @@
 export const shortenUrl = (value) => {
   try {
     const url = new URL(value);
-    return url.hostname + url.pathname;
+    return (url.hostname + url.pathname).replace(/\/+$/, "");
   } catch (error) {
     return value;
   }
