@@ -163,12 +163,11 @@ const EditForm = ({ heading, locus }) => {
         sections={[
           "Edit",
           "Overview",
-          "IDs",
+          "Disease",
           "Locus",
           "Alleles",
-          "Disease",
+          "IDs",
           "References",
-          "Additional Literature",
         ]}
         onSubmit={(data) => submit(data)}
       />

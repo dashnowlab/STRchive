@@ -27,7 +27,7 @@
       "title": "Gene",
       "description": "Gene symbol",
       "examples": ["RFC1"],
-      "type": ["string", "null"]
+      "type": ["string"]
     },
     "chrom": {
       "section": "Locus",

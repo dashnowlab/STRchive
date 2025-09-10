@@ -145,7 +145,11 @@ const Field = ({
     greater_than,
     multiline,
     combobox,
+    hide,
   } = node.schema;
+
+  /** explicitly hide field */
+  if (hide) return;
 
   /** normalize type to array */
   const types = [type].flat();
