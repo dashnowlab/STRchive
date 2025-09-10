@@ -145,7 +145,7 @@
       "age_onset_max": {
         "section": "Disease",
         "title": "Max Age Onset",
-        "description": "Maximum age of onset reported in the literature (years). Must be >= age_onset_min",
+        "description": "Maximum age of onset reported in the literature (years)",
         "type": [ "number", "null" ],
         "minimum": 0,
         "maximum": 150,
@@ -163,7 +163,7 @@
       "typ_age_onset_max": {
         "section": "Disease",
         "title": "Max Typical Age Onset",
-        "description": "Maximum of the typical age of onset range reported in the literature (years). Must be >= typ_age_onset_min",
+        "description": "Maximum of the typical age of onset range reported in the literature (years)",
         "type": [ "number", "null" ],
         "minimum": 0,
         "maximum": 150,
@@ -356,7 +356,7 @@
       "benign_max": {
         "section": "Alleles",
         "title": "Benign Max",
-        "description": "Maximum number of repeats in the benign (normal) range. Must be >= benign_min",
+        "description": "Maximum number of repeats in the benign (normal) range",
         "type": [ "number", "null" ],
         "minimum": 0,
         "greater_than": "benign_min"
@@ -372,7 +372,7 @@
       "intermediate_max": {
         "section": "Alleles",
         "title": "Intermediate Max",
-        "description": "Maximum number of repeats in the intermediate range. Must be >= intermediate_min",
+        "description": "Maximum number of repeats in the intermediate range",
         "type": [ "number", "null" ],
         "minimum": 0,
         "greater_than": "intermediate_min"
@@ -388,7 +388,7 @@
       "pathogenic_max": {
         "section": "Alleles",
         "title": "Pathogenic Max",
-        "description": "Maximum number of repeats in the pathogenic range. Must be >= pathogenic_min",
+        "description": "Maximum number of repeats in the pathogenic range",
         "type": [ "number", "null" ],
         "minimum": 0,
         "greater_than": "pathogenic_min"
