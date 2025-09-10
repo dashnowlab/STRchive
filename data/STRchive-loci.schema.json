@@ -34,13 +34,15 @@
         "title": "Chromosome",
         "description": "Chromosome name, assumed to be the same for all reference genomes",
         "examples": [ "chr1" ],
-        "type": [ "string", "null" ]
+        "type": [ "string", "null" ],
+        "pattern": "^chr[0-9]+|X|Y|M$"
       },
       "start_hg38": {
         "section": "Locus",
         "title": "Start (hg38)",
         "description": "Start position in hg38 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ],
+        "minimum": 0,
         "less_than": "stop_hg38"
       },
       "stop_hg38": {
@@ -48,6 +50,7 @@
         "title": "Stop (hg38)",
         "description": "Stop position in hg38 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ],
+        "minimum": 0,
         "greater_than": "start_hg38"
       },
       "start_hg19": {
@@ -55,6 +58,7 @@
         "title": "Start (hg19)",
         "description": "Start position in hg19 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ],
+        "minimum": 0,
         "less_than": "stop_hg19"
       },
       "stop_hg19": {
@@ -62,6 +66,7 @@
         "title": "Stop (hg19)",
         "description": "Stop position in hg19 reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ],
+        "minimum": 0,
         "greater_than": "start_hg19"
       },
       "start_t2t": {
@@ -69,6 +74,7 @@
         "title": "Start (T2T)",
         "description": "Start position in chm13-T2T reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ],
+        "minimum": 0,
         "less_than": "stop_t2t"
       },
       "stop_t2t": {
@@ -76,6 +82,7 @@
         "title": "Stop (T2T)",
         "description": "Stop position in chm13-T2T reference genome. Coordinates are BED style: 0-based, half-open.",
         "type": [ "integer", "null" ],
+        "minimum": 0,
         "greater_than": "start_t2t"
       },
       "disease": {
@@ -201,8 +208,8 @@
       "location_in_gene": {
         "section": "Locus",
         "title": "Location in Gene",
-        "description": "Location of the repeat locus in the gene",
-        "examples": [ "Intron 2" ],
+        "description": "Location of the repeat locus in the gene or relative to other genomic features",
+        "examples": [ "Intron 2", "Coding exon 3", "5' UTR" ],
         "type": [ "string", "null" ]
       },
       "gene_strand": {
