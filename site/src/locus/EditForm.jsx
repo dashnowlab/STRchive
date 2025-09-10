@@ -1,41 +1,40 @@
-import { useRef } from "react";
-import { LuSend } from "react-icons/lu";
-import { startCase } from "lodash-es";
+import { useMemo } from "react";
+import { FaXmark } from "react-icons/fa6";
+import { LuFeather, LuSend } from "react-icons/lu";
+import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
+import { useLocalStorage } from "@reactuses/core";
 import { createPR } from "@/api/pr";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
+import { contactSchema } from "@/components/ContactForm";
 import Form from "@/components/Form";
+import Heading from "@/components/Heading";
 import Link from "@/components/Link";
 import SchemaForm from "@/components/SchemaForm";
 import { repo } from "@/layouts/meta";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
+import loci from "~/STRchive-loci.json";
 import schema from "~/STRchive-loci.schema.json";
 
-/** add some metadata fields */
+/** add extra fields for edit metadata */
 schema.properties = {
   "edit-name": {
     section: "Edit",
-    title: "Name",
-    placeholder: "Your Name",
-    description: "Optional. So we know who you are.",
+    ...contactSchema.name,
     type: ["string", "null"],
     default: "",
   },
   "edit-username": {
     section: "Edit",
-    title: "GitHub Username",
-    placeholder: "@username",
-    description: "Optional. So we can tag you.",
+    ...contactSchema.username,
     type: ["string", "null"],
     pattern: "^@",
     default: "",
   },
   "edit-email": {
     section: "Edit",
-    title: "Email",
-    placeholder: "your.name@email.com",
-    description: "Optional. So we can contact you directly if needed.",
+    ...contactSchema.email,
     type: ["string", "null"],
     default: "",
   },
@@ -61,11 +60,26 @@ schema.properties = {
 schema.required.push("edit-title", "edit-description");
 
 /** new/edit locus form */
-const EditForm = ({ locus }) => {
-  const ref = useRef();
-
+const EditForm = ({ heading, locus }) => {
   /** confirm with user before leaving page */
   // window.onbeforeunload = () => "";
+
+  /** unique storage key for this page and form */
+  const storageKey = `edit-locus-${locus?.id ?? "new"}`;
+
+  /** form data state */
+  let [data, setData] = useLocalStorage(storageKey, {
+    ["edit-title"]: null,
+    ["edit-description"]: null,
+    ...cloneDeep(locus),
+  });
+
+  /** was data loaded from storage */
+  const storageExists = useMemo(() => {
+    const fromStorage = window.localStorage.getItem(storageKey);
+    /** if saved draft exists and is different from initial data */
+    return fromStorage && !isEqual(JSON.parse(fromStorage), data);
+  }, []);
 
   /** submission query */
   const {
@@ -73,9 +87,6 @@ const EditForm = ({ locus }) => {
     data: response,
     status,
   } = useQuery(async () => {
-    /** get current form data */
-    const { data } = ref.current;
-
     /** pr branch name */
     const branch = locus.id;
 
@@ -99,6 +110,14 @@ const EditForm = ({ locus }) => {
       )
       .join("\n\n");
 
+    /** remove edit metadata */
+    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
+
+    /** merge with locus data */
+    data = cloneDeep(loci).map((locus) =>
+      locus.id === data.id ? data : locus,
+    );
+
     /** pr files to change */
     const files = [
       {
@@ -115,13 +134,33 @@ const EditForm = ({ locus }) => {
 
   return (
     <Form onSubmit={submit}>
-      {/* maintain correct section coloring */}
-      <span></span>
+      <section>
+        <Heading level={1}>
+          <LuFeather />
+          {heading}
+        </Heading>
+
+        {storageExists && (
+          <div className="row">
+            Loaded saved draft
+            <Button
+              design="plain"
+              onClick={() => {
+                window.localStorage.removeItem(storageKey);
+                window.location.reload();
+              }}
+            >
+              <span>Forget</span>
+              <FaXmark />
+            </Button>
+          </div>
+        )}
+      </section>
 
       <SchemaForm
-        ref={ref}
         schema={schema}
-        data={{ ["edit-title"]: null, ["edit-description"]: null, ...locus }}
+        data={data}
+        onChange={setData}
         sections={[
           "Edit",
           "Overview",

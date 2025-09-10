@@ -2,8 +2,6 @@
 /** NEW LOCUS PAGE */
 
 import Layout from "@/layouts/Layout.astro";
-import { LuFeather } from "react-icons/lu";
-import Heading from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import EditForm from "@/locus/EditForm";
 ---
@@ -11,9 +9,5 @@ import EditForm from "@/locus/EditForm";
 <Layout title="New Locus">
   <TableOfContents client:only="react" />
 
-  <section>
-    <Heading client:load level={1}><LuFeather />New Locus</Heading>
-  </section>
-
-  <EditForm client:only="react" />
+  <EditForm client:only="react" heading="New Locus" />
 </Layout>

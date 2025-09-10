@@ -1,4 +1,4 @@
-import { cloneElement, Fragment, useImperativeHandle, useMemo } from "react";
+import { cloneElement, Fragment, useMemo } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import {
@@ -9,7 +9,6 @@ import {
   range,
   uniq,
 } from "lodash-es";
-import { useLocalStorage } from "@reactuses/core";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import Button from "@/components/Button";
 import ComboBox from "@/components/ComboBox";
@@ -21,11 +20,8 @@ import TextBox from "@/components/TextBox";
 import { makeList } from "@/util/format";
 import classes from "./SchemaForm.module.css";
 
-/** for testing */
-window.localStorage.clear();
-
 /** form automatically generated from json schema */
-const SchemaForm = ({ ref, schema, sections, data: initialData, children }) => {
+const SchemaForm = ({ schema, sections, data, onChange, children }) => {
   /** compile schema */
   const rootNode = useMemo(
     () => compileSchema(schema, { drafts: [draft] }),
@@ -33,18 +29,7 @@ const SchemaForm = ({ ref, schema, sections, data: initialData, children }) => {
   );
 
   /** if no initial data, generate blank values */
-  initialData ??= rootNode.getData(null, { extendDefaults: false });
-
-  /** unique key for saving form data */
-  const storageKey = window.location.pathname;
-
-  /** current form data state */
-  const [data, setData] = useLocalStorage(storageKey, initialData);
-
-  /** expose data to parent */
-  useImperativeHandle(ref, () => {
-    return { data };
-  }, [data]);
+  data ??= rootNode.getData(null, { extendDefaults: false });
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
@@ -66,7 +51,7 @@ const SchemaForm = ({ ref, schema, sections, data: initialData, children }) => {
             section={section}
             node={rootNode}
             data={data}
-            setData={setData}
+            setData={onChange}
             errors={errors}
           />
         </section>
@@ -173,9 +158,9 @@ const Field = ({
 
   /** set nested data value from path */
   const onChange = (value) => {
-    data = cloneDeep(data);
-    data = set(data, path, value);
-    setData(data);
+    let _data = cloneDeep(data);
+    _data = set(_data, path, value);
+    setData(_data);
   };
 
   /** help tooltip to show */
@@ -327,14 +312,14 @@ const Field = ({
                 disabled={index === 0}
                 data-tooltip="Move up"
                 onClick={() => {
-                  data = cloneDeep(data);
+                  let _data = cloneDeep(data);
                   const aPath = join(path, String(index - 1));
                   const bPath = join(path, String(index));
                   const aValue = get(data, aPath);
                   const bValue = get(data, bPath);
-                  data = set(data, aPath, bValue);
-                  data = set(data, bPath, aValue);
-                  setData(data);
+                  _data = set(_data, aPath, bValue);
+                  _data = set(_data, bPath, aValue);
+                  setData(_data);
                 }}
               >
                 <FaArrowUp />
@@ -343,14 +328,14 @@ const Field = ({
                 disabled={index === items - 1}
                 data-tooltip="Move down"
                 onClick={() => {
-                  data = cloneDeep(data);
+                  let _data = cloneDeep(data);
                   const aPath = join(path, String(index));
                   const bPath = join(path, String(index + 1));
                   const aValue = get(data, aPath);
                   const bValue = get(data, bPath);
-                  data = set(data, aPath, bValue);
-                  data = set(data, bPath, aValue);
-                  setData(data);
+                  _data = set(_data, aPath, bValue);
+                  _data = set(_data, bPath, aValue);
+                  setData(_data);
                 }}
               >
                 <FaArrowDown />
@@ -358,9 +343,9 @@ const Field = ({
               <Button
                 data-tooltip="Remove"
                 onClick={() => {
-                  data = cloneDeep(data);
-                  data = remove(data, join(path, String(index)));
-                  setData(data);
+                  let _data = cloneDeep(data);
+                  _data = remove(_data, join(path, String(index)));
+                  setData(_data);
                 }}
               >
                 <FaTrash />
@@ -374,7 +359,7 @@ const Field = ({
           design="plain"
           onClick={() => {
             /** add new item to array */
-            data = cloneDeep(data);
+            let _data = cloneDeep(data);
             /** get child schema */
             let newItem = node
               .getNodeChild("items")
@@ -383,8 +368,8 @@ const Field = ({
             if (newItem === "") newItem = null;
             if (isObject(newItem)) newItem = mapValues(newItem, () => null);
             /** insert item */
-            data = set(data, [...split(path), "[]"], newItem);
-            setData(data);
+            _data = set(_data, [...split(path), "[]"], newItem);
+            setData(_data);
           }}
         >
           <FaPlus />
@@ -436,13 +421,13 @@ const Field = ({
   else if (types.includes("number") || types.includes("integer")) {
     /** min value allowed to be input */
     const min = Math.max(
-      ...[minimum, data[greater_than]].filter(
+      ...[minimum, get(data, greater_than)].filter(
         (value) => typeof value === "number",
       ),
     );
     /** max value allowed to be input */
     const max = Math.min(
-      ...[maximum, data[less_than]].filter(
+      ...[maximum, get(data, less_than)].filter(
         (value) => typeof value === "number",
       ),
     );

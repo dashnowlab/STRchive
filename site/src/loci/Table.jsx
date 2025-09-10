@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowRight, FaCheck, FaXmark } from "react-icons/fa6";
-import { LuDownload, LuTag } from "react-icons/lu";
+import { LuDownload } from "react-icons/lu";
 import clsx from "clsx";
 import { countBy, map, max, min, pick, uniq } from "lodash-es";
 import Button from "@/components/Button";

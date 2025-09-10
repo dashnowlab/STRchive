@@ -2,8 +2,6 @@
 /** EDIT LOCUS PAGE */
 
 import Layout from "@/layouts/Layout.astro";
-import { LuFeather } from "react-icons/lu";
-import Heading from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import EditForm from "@/locus/EditForm";
 import loci from "~/STRchive-loci.json";
@@ -22,9 +20,9 @@ const locus = loci.find((locus) => locus.id === id) || {};
 <Layout title="Edit Locus">
   <TableOfContents client:only="react" />
 
-  <section>
-    <Heading client:load level={1}><LuFeather />Edit Locus {locus.id}</Heading>
-  </section>
-
-  <EditForm client:only="react" locus={locus} />
+  <EditForm
+    client:only="react"
+    heading={`Edit Locus ${locus.id}`}
+    locus={locus}
+  />
 </Layout>

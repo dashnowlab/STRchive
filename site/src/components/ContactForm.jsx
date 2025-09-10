@@ -19,8 +19,41 @@ import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
 import classes from "./Contact.module.css";
 
+/** shared schema info for user contact info */
+export const contactSchema = {
+  name: {
+    title: "Name",
+    description: "Optional. So we know who you are.",
+    placeholder: "Your Name",
+  },
+  username: {
+    title: "GitHub Username",
+    description: "Optional. So we can tag you and you can follow activity.",
+    placeholder: "@username",
+  },
+  email: {
+    title: "Email",
+    description: "Optional. So we can contact you directly if needed.",
+    placeholder: "you@example.com",
+  },
+};
+
+/** contact field component props */
+const contactFields = mapValues(
+  contactSchema,
+  ({ title, description, placeholder }) => ({
+    label: (
+      <>
+        {title}
+        <Help>{description}</Help>
+      </>
+    ),
+    placeholder,
+  }),
+);
+
 const ContactForm = () => {
-  /** form state, saved to local storage */
+  /** form state */
   let [name, setName] = useLocalStorage("contact-name", "");
   let [username, setUsername] = useLocalStorage("contact-username", "");
   let [email, setEmail] = useLocalStorage("contact-email", "");
@@ -99,40 +132,14 @@ const ContactForm = () => {
       </Alert>
 
       <div className={clsx("col", classes.form)}>
+        <TextBox {...contactFields.name} value={name} onChange={setName} />
         <TextBox
-          label={
-            <>
-              Name<Help>Optional. So we know who you are.</Help>
-            </>
-          }
-          placeholder="Your Name"
-          value={name}
-          onChange={setName}
-        />
-        <TextBox
-          label={
-            <>
-              GitHub Username
-              <Help>
-                Optional. So we can tag you in the post and you can follow it.
-              </Help>
-            </>
-          }
-          placeholder="@username"
+          {...contactFields.username}
           value={username}
           onChange={setUsername}
         />
-        <TextBox
-          label={
-            <>
-              Email
-              <Help>Optional. So we can contact you directly if needed.</Help>
-            </>
-          }
-          placeholder="your.name@email.com"
-          value={email}
-          onChange={setEmail}
-        />
+        <TextBox {...contactFields.email} value={email} onChange={setEmail} />
+
         <TextBox
           label="Subject"
           placeholder="Subject"
