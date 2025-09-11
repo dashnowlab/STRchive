@@ -181,7 +181,7 @@ const ContactForm = () => {
           <>
             This will make a <strong>public</strong> post on{" "}
             <Link to={repo}>our GitHub</Link> with <em>all the info above</em>.
-            You'll get a link once it's created.
+            You'll get a link to it once it's created.
           </>
         )}
         {startCase(status)}{" "}

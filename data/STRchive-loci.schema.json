@@ -3,7 +3,7 @@
   "$id": "STRchive-loci.schema",
   "title": "STRchive-loci",
   "description": "STRchive tandem repeat disease locus",
-  "citation_format": "In text: [@pmid:20560987; @pmid:26220009], individual citations in a list: [pmid:20560987, pmid:26220009]",
+  "citation_format": "In free text strings: 'Some text [@doi:12345; @pmid:12345]'. In regular lists: ['doi:12345', 'pmid:12345']",
   "type": "object",
   "properties": {
     "id": {
@@ -112,7 +112,7 @@
     "disease_description": {
       "section": "Disease",
       "title": "Disease Description",
-      "description": "Description of the disease with citations",
+      "description": "Description of the disease, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": [
         "Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [@pmid:38876750]"
       ],
@@ -129,7 +129,7 @@
     "prevalence_details": {
       "section": "Disease",
       "title": "Prevalence Details",
-      "description": "Details about the prevalence of the disease including affected populations and citations in the format [@pmid:38467784]",
+      "description": "Details about the prevalence of the disease including affected populations, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": ["1/100000 in European populations [@pmid:38467784]"],
       "type": ["string", "null"],
       "multiline": true
@@ -137,7 +137,8 @@
     "age_onset": {
       "section": "Disease",
       "title": "Age of Onset",
-      "description": "Description of the age of onset of the disease with citations",
+      "description": "Description of the age of onset of the disease, with citations in the format e.g. [@doi:12345; @pmid:12345]",
+      "examples": ["HARRIET PLEASE ADD EXAMPLE WITH CITATION"],
       "type": ["string", "null"]
     },
     "age_onset_min": {
@@ -179,7 +180,8 @@
     "details": {
       "section": "Locus",
       "title": "Details",
-      "description": "Detailed information about the repeat locus and evidence for pathogenicity, with citations in the format [@pmid:38467784]. This could include information about motifs, interruptions, and other features of the repeat.",
+      "description": "Detailed information about the repeat locus and evidence for pathogenicity, with citations in the format e.g. [@doi:12345; @pmid:12345]. This could include information about motifs, interruptions, and other features of the repeat.",
+      "examples": ["HARRIET PLEASE ADD EXAMPLE WITH CITATION"],
       "type": ["string", "null"],
       "multiline": true
     },
@@ -193,7 +195,7 @@
     "mechanism_detail": {
       "section": "Locus",
       "title": "Mechanism Detail",
-      "description": "Detailed mechanism of disease with citations",
+      "description": "Detailed mechanism of disease, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": ["Loss of function [@pmid:38467784]"],
       "type": ["string", "null"],
       "multiline": true
@@ -201,7 +203,7 @@
     "year": {
       "section": "Locus",
       "title": "Year",
-      "description": "Year of first publication of the tandem repeat disease locus with citations",
+      "description": "Year of first publication of the tandem repeat disease locus, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": ["2023", "2021 [@pmid:38467784]"],
       "type": ["string", "null"]
     },
@@ -629,7 +631,7 @@
     "references": {
       "section": "References",
       "title": "References",
-      "description": "All references from the fields above. Automatically generated from all in-text citations.",
+      "description": "Sources that provide evidence for the information in this locus. Populated automatically from other fields that have in-text citations.",
       "examples": ["pmid:38467784"],
       "type": "array",
       "uniqueItems": true,
@@ -642,7 +644,7 @@
     "additional_literature": {
       "section": "Additional Literature",
       "title": "Additional Literature",
-      "description": "Additional literature related to this locus in the format. Should not be included in the references field. Automatically generated from scripts that search the literature.",
+      "description": "Additional literature related to this locus. Should not be included in the references field. Automatically populated from scripts that search the literature.",
       "examples": ["pmid:38467784"],
       "type": "array",
       "uniqueItems": true,
