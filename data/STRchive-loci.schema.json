@@ -9,7 +9,7 @@
     "id": {
       "section": "Overview",
       "title": "ID",
-      "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II",
+      "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II.",
       "placeholder": "[disease_id]_[gene]",
       "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
       "type": ["string"],
@@ -138,13 +138,15 @@
       "section": "Disease",
       "title": "Age of Onset",
       "description": "Description of the age of onset of the disease, with citations in the format e.g. [@doi:12345; @pmid:12345]",
-      "examples": ["Typically adult onset (age 30-40), but juvenile and older onset cases have been reported (range 10-70) [@pmid:38467784]"],
+      "examples": [
+        "Typically adult onset (age 30-40), but juvenile and older onset cases have been reported (range 10-70) [@pmid:38467784]"
+      ],
       "type": ["string", "null"]
     },
     "age_onset_min": {
       "section": "Disease",
       "title": "Min Age Onset",
-      "description": "Minimum age of onset reported in the literature (years). Onset age is the age at which symptoms first appear, not the age at diagnosis. A value of 0 indicates onset before their first birthday.",
+      "description": "Minimum age of onset reported in the literature (years). Onset is the age at which symptoms first appear, not the age at diagnosis. 0 indicates onset before their first birthday.",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -162,7 +164,7 @@
     "typ_age_onset_min": {
       "section": "Disease",
       "title": "Min Typical Age Onset",
-      "description": "Minimum of the typical age of onset range reported in the literature (years). Onset age is the age at which symptoms first appear, not the age at diagnosis. A value of 0 indicates onset before their first birthday.",
+      "description": "Minimum of the typical age of onset range reported in the literature (years)",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -181,7 +183,9 @@
       "section": "Locus",
       "title": "Details",
       "description": "Detailed information about the repeat locus and evidence for pathogenicity, with citations in the format e.g. [@doi:12345; @pmid:12345]. This could include information about motifs, interruptions, and other features of the repeat.",
-      "examples": ["Motif interruptions have been observed in affected individuals and are associated with decreased severity [@pmid:12345]"],
+      "examples": [
+        "Motif interruptions have been observed in affected individuals and are associated with decreased severity [@pmid:12345]"
+      ],
       "type": ["string", "null"],
       "multiline": true
     },
@@ -277,7 +281,7 @@
       "section": "Alleles",
       "title": "Pathogenic Motif (Gene Orientation)",
       "hide": true,
-      "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from pathogenic_motif_reference_orientation and gene_strand.",
+      "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from pathogenic_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "uniqueItems": true,
@@ -291,7 +295,7 @@
       "section": "Alleles",
       "title": "Benign Motif (Gene Orientation)",
       "hide": true,
-      "description": "Benign motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from benign_motif_reference_orientation and gene_strand.",
+      "description": "Benign motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from benign_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "uniqueItems": true,
@@ -305,7 +309,7 @@
       "section": "Alleles",
       "title": "Unknown Motif (Gene Orientation)",
       "hide": true,
-      "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand.",
+      "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "uniqueItems": true,
@@ -348,7 +352,7 @@
             ],
             "enum_descriptions": {
               "pathogenic_repeat": "The pathogenic_repeat will typically have a count of null.",
-              "flank_repeat": "Must be outside the locus coordinates. The order in the json will be used to determine the location. For example, if it occurs before the pathogenic repeat, it will be considered 5' flanking. These are expected to be present in the reference genome.",
+              "flank_repeat": "Must be outside the locus coordinates. The order in the locus structure list will be used to determine the location. For example, if it occurs before the pathogenic repeat, it will be considered 5' flanking. These are expected to be present in the reference genome.",
               "internal_repeat": "A repeat that is located within the locus coordinates. It may occur in only some alleles and may be absent from the reference genome.",
               "interruption": "A non-repetitive interruption in the repeat structure, e.g. an insertion that doesn't match the surrounding motif. Must be within the locus coordinates."
             }
@@ -423,7 +427,7 @@
     "novel": {
       "section": "Alleles",
       "title": "Novel",
-      "description": "If the pathogenic motif is in the hg38 reference genome, ref, otherwise, novel",
+      "description": "If the pathogenic motif is in the hg38 reference genome: ref. Otherwise: novel.",
       "type": ["string", "null"],
       "enum": ["novel", "ref", null]
     },
@@ -625,7 +629,16 @@
       "uniqueItems": true,
       "items": {
         "title": "",
-        "examples": ["ataxia", "epilepsy", "phenotypic_spectrum"],
+        "examples": [
+          "oculopharyngodistal_myopathy",
+          "phenotypic_spectrum",
+          "ataxia",
+          "epilepsy",
+          "spinocerebellar_ataxia",
+          "myotonic_dystrophy",
+          "hand_foot_genital_syndrome",
+          "familial_adult_myoclonic_epilepsy"
+        ],
         "type": ["string"],
         "pattern": "^[a-z0-9_]+$",
         "combobox": true
@@ -634,7 +647,7 @@
     "references": {
       "section": "References",
       "title": "References",
-      "description": "Sources that provide evidence for the information presented about this locus. These should include all in-text citations in the free text fields but may include additional references that are not cited in the text.",
+      "description": "Sources that provide evidence for the information presented about this locus. Should include all in-text citations in other fields, and may also include additional citations not already in other fields.",
       "examples": ["pmid:38467784"],
       "type": "array",
       "uniqueItems": true,
@@ -648,7 +661,7 @@
       "section": "Additional Literature",
       "title": "Additional Literature",
       "hide": true,
-      "description": "Additional literature related to this locus. This field is automatically populated (typically monthly) from scripts that search the literature and so should not be manually edited. Citations already present in the references field will not be duplicated here.",
+      "description": "Additional literature related to this locus. Automatically and regularly generated from scripts that search the literature. Should not be manually edited. Citations already in references will not be duplicated here.",
       "examples": ["pmid:38467784"],
       "type": "array",
       "uniqueItems": true,
