@@ -106,7 +106,7 @@
       "items": {
         "title": "Type",
         "type": ["string", "null"],
-        "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR"]
+        "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT"]
       }
     },
     "disease_description": {
@@ -138,13 +138,13 @@
       "section": "Disease",
       "title": "Age of Onset",
       "description": "Description of the age of onset of the disease, with citations in the format e.g. [@doi:12345; @pmid:12345]",
-      "examples": ["HARRIET PLEASE ADD EXAMPLE WITH CITATION"],
+      "examples": ["Typically adult onset (age 30-40), but juvenile and older onset cases have been reported (range 10-70) [@pmid:38467784]"],
       "type": ["string", "null"]
     },
     "age_onset_min": {
       "section": "Disease",
       "title": "Min Age Onset",
-      "description": "Minimum age of onset reported in the literature (years)",
+      "description": "Minimum age of onset reported in the literature (years). Onset age is the age at which symptoms first appear, not the age at diagnosis. A value of 0 indicates onset before their first birthday.",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -162,7 +162,7 @@
     "typ_age_onset_min": {
       "section": "Disease",
       "title": "Min Typical Age Onset",
-      "description": "Minimum of the typical age of onset range reported in the literature (years)",
+      "description": "Minimum of the typical age of onset range reported in the literature (years). Onset age is the age at which symptoms first appear, not the age at diagnosis. A value of 0 indicates onset before their first birthday.",
       "type": ["number", "null"],
       "minimum": 0,
       "maximum": 150,
@@ -181,7 +181,7 @@
       "section": "Locus",
       "title": "Details",
       "description": "Detailed information about the repeat locus and evidence for pathogenicity, with citations in the format e.g. [@doi:12345; @pmid:12345]. This could include information about motifs, interruptions, and other features of the repeat.",
-      "examples": ["HARRIET PLEASE ADD EXAMPLE WITH CITATION"],
+      "examples": ["Motif interruptions have been observed in affected individuals and are associated with decreased severity [@pmid:12345]"],
       "type": ["string", "null"],
       "multiline": true
     },
