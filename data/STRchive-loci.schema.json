@@ -276,6 +276,7 @@
     "pathogenic_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Pathogenic Motif (Gene Orientation)",
+      "hide": true,
       "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from pathogenic_motif_reference_orientation and gene_strand.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
@@ -289,6 +290,7 @@
     "benign_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Benign Motif (Gene Orientation)",
+      "hide": true,
       "description": "Benign motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from benign_motif_reference_orientation and gene_strand.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
@@ -302,6 +304,7 @@
     "unknown_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Unknown Motif (Gene Orientation)",
+      "hide": true,
       "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
@@ -631,7 +634,7 @@
     "references": {
       "section": "References",
       "title": "References",
-      "description": "Sources that provide evidence for the information in this locus. Populated automatically from other fields that have in-text citations.",
+      "description": "Sources that provide evidence for the information presented about this locus. These should include all in-text citations in the free text fields but may include additional references that are not cited in the text.",
       "examples": ["pmid:38467784"],
       "type": "array",
       "uniqueItems": true,
@@ -644,7 +647,8 @@
     "additional_literature": {
       "section": "Additional Literature",
       "title": "Additional Literature",
-      "description": "Additional literature related to this locus. Should not be included in the references field. Automatically populated from scripts that search the literature.",
+      "hide": true,
+      "description": "Additional literature related to this locus. This field is automatically populated (typically monthly) from scripts that search the literature and so should not be manually edited. Citations already present in the references field will not be duplicated here.",
       "examples": ["pmid:38467784"],
       "type": "array",
       "uniqueItems": true,
