@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
+---
+
+<Layout title="Home">
+  <section>
+    <Heading level={1}>Page Not Found</Heading>
+
+    <p>The content you're looking for does not exist or has been moved.</p>
+
+    <div class="row">
+      <Button design="plain" to="/loci">
+        <span>Find Locus</span>
+      </Button>
+      <Button design="plain" to="/">
+        <span>Home Page</span>
+      </Button>
+    </div>
+  </section>
+</Layout>
