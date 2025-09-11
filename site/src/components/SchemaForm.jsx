@@ -131,11 +131,11 @@ const Field = ({
 
   /** schema props */
   const {
-    type,
     title,
     description,
-    examples,
     placeholder,
+    examples,
+    type,
     pattern,
     enum: _enum,
     enum_descriptions,
@@ -143,9 +143,9 @@ const Field = ({
     maximum,
     less_than,
     greater_than,
+    hide,
     multiline,
     combobox,
-    hide,
   } = node.schema;
 
   /** explicitly hide field */

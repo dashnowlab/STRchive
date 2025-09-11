@@ -116,7 +116,8 @@
       "examples": [
         "Sensory disturbances, imbalance, oscillopsia, chronic dry cough, dysarthria and dysphagia [@pmid:38876750]"
       ],
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "in_text_citations": true
     },
     "prevalence": {
       "section": "Disease",
@@ -132,6 +133,7 @@
       "description": "Details about the prevalence of the disease including affected populations, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": ["1/100000 in European populations [@pmid:38467784]"],
       "type": ["string", "null"],
+      "in_text_citations": true,
       "multiline": true
     },
     "age_onset": {
@@ -141,7 +143,8 @@
       "examples": [
         "Typically adult onset (age 30-40), but juvenile and older onset cases have been reported (range 10-70) [@pmid:38467784]"
       ],
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "in_text_citations": true
     },
     "age_onset_min": {
       "section": "Disease",
@@ -187,6 +190,7 @@
         "Motif interruptions have been observed in affected individuals and are associated with decreased severity [@pmid:12345]"
       ],
       "type": ["string", "null"],
+      "in_text_citations": true,
       "multiline": true
     },
     "mechanism": {
@@ -202,6 +206,7 @@
       "description": "Detailed mechanism of disease, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": ["Loss of function [@pmid:38467784]"],
       "type": ["string", "null"],
+      "in_text_citations": true,
       "multiline": true
     },
     "year": {
@@ -209,7 +214,8 @@
       "title": "Year",
       "description": "Year of first publication of the tandem repeat disease locus, with citations in the format e.g. [@doi:12345; @pmid:12345]",
       "examples": ["2023", "2021 [@pmid:38467784]"],
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "in_text_citations": true
     },
     "location_in_gene": {
       "section": "Locus",
@@ -280,10 +286,11 @@
     "pathogenic_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Pathogenic Motif (Gene Orientation)",
-      "hide": true,
       "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from pathogenic_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -294,10 +301,11 @@
     "benign_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Benign Motif (Gene Orientation)",
-      "hide": true,
       "description": "Benign motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from benign_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -308,10 +316,11 @@
     "unknown_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Unknown Motif (Gene Orientation)",
-      "hide": true,
       "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -660,10 +669,11 @@
     "additional_literature": {
       "section": "Additional Literature",
       "title": "Additional Literature",
-      "hide": true,
       "description": "Additional literature related to this locus. Automatically and regularly generated from scripts that search the literature. Should not be manually edited. Citations already in references will not be duplicated here.",
       "examples": ["pmid:38467784"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
