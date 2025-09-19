@@ -196,7 +196,7 @@ const EditForm = ({ heading, locus }) => {
           )}
         </Alert>
 
-        <Button type="submit" design="bubble">
+        <Button type="submit" design="bubble" disabled={status === "success"}>
           <LuSend />
           <span>Submit</span>
         </Button>
