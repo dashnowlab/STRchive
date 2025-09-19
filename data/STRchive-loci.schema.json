@@ -119,6 +119,20 @@
       "type": ["string", "null"],
       "in_text_citations": true
     },
+    "hpo_terms": {
+      "section": "Disease",
+      "title": "HPO Terms",
+      "description": "Human Phenotype Ontology (HPO) terms associated with the disease",
+      "examples": [
+        "HP:0002066 Gait ataxia",
+        "HP:0001250 Seizure"
+      ],
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "pattern": "^HP:[0-9]{7} .+$"
+      }
+    },
     "prevalence": {
       "section": "Disease",
       "title": "Prevalence",
@@ -696,6 +710,7 @@
     "disease",
     "inheritance",
     "disease_description",
+    "hpo_terms",
     "prevalence",
     "prevalence_details",
     "age_onset",
