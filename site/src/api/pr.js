@@ -4,7 +4,7 @@ import { mock, request } from "./";
 export const createPR = async (params) => {
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
-  body = JSON.stringify(params);
+  const body = JSON.stringify(params);
   const options = { method: "POST", headers, body };
   const url = "https://strchive-pr-467600139623.us-central1.run.app";
   if (mock) {
