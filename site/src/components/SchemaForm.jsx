@@ -72,6 +72,7 @@ const lessThan = {
     const fullData = node.context.data;
     const otherKey = node.schema.less_than;
     const otherValue = get(fullData, otherKey);
+    if (thisValue === null || otherValue === null) return;
     if (thisValue <= otherValue) return;
     return node.createError("compare-value-error", {
       pointer,
@@ -91,6 +92,7 @@ const greaterThan = {
     const fullData = node.context.data;
     const otherKey = node.schema.greater_than;
     const otherValue = get(fullData, otherKey);
+    if (thisValue === null || otherValue === null) return;
     if (thisValue >= otherValue) return;
     return node.createError("compare-value-error", {
       pointer,
