@@ -145,16 +145,18 @@ functions.http("entrypoint", async (request, response) => {
   /** create pull request */
   try {
     /** https://octokit.github.io/rest.js/v22/#pulls-create */
-    pr = await octokit.rest.pulls.create({
-      owner,
-      repo,
-      base: "main",
-      head: branch,
-      title,
-      body,
-      maintainer_can_modify: true,
-      draft: true,
-    });
+    pr = (
+      await octokit.rest.pulls.create({
+        owner,
+        repo,
+        base: "main",
+        head: branch,
+        title,
+        body,
+        maintainer_can_modify: true,
+        draft: true,
+      })
+    ).data;
   } catch (error) {
     console.error(error);
     return response
