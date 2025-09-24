@@ -1,3 +1,6 @@
+/** whether to mock (fake) network requests */
+export const mock = new URL(window.location.href).searchParams.has("mock");
+
 /** general request */
 export async function request(
   /** request url */

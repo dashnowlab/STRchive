@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: grid;
+        grid-template-rows: 1fr 1fr auto auto;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      button {
+        padding: 20px;
+        font: inherit;
+      }
+    </style>
+
+    <script src="https://unpkg.com/lodash@latest"></script>
+    <script src="https://unpkg.com/prettier@latest/standalone.js"></script>
+    <script src="https://unpkg.com/prettier@latest/plugins/estree.js"></script>
+    <script src="https://unpkg.com/prettier@latest/plugins/babel.js"></script>
+  </head>
+  <body>
+    <textarea id="schema-textbox" placeholder="JSON Schema"></textarea>
+    <textarea id="order-textbox" placeholder="key order"></textarea>
+    <button id="format">Format</button>
+    <button id="copy">Copy</button>
+
+    <script>
+      // page elements
+      const schemaTextbox = document.getElementById("schema-textbox");
+      const orderTextbox = document.getElementById("order-textbox");
+      const format = document.getElementById("format");
+      const button = document.getElementById("copy");
+
+      // util funcs
+      const { isPlainObject, isArray } = _;
+
+      // default key order
+      if (!localStorage.getItem("orderTextbox"))
+        localStorage.setItem(
+          "orderTextbox",
+          [
+            "$schema",
+            "$id",
+            "section",
+            "title",
+            "description",
+            "citation_format",
+            "placeholder",
+            "examples",
+            "uri-template",
+            "type",
+            "pattern",
+            "enum",
+            "enum_descriptions",
+            "minimum",
+            "maximum",
+            "less_than",
+            "greater_than",
+            "in_text_citations",
+            "auto_generated",
+            "hide",
+            "multiline",
+            "combobox",
+            "properties",
+            "uniqueItems",
+            "items",
+            "required",
+          ].join("\n")
+        );
+
+      // sync textboxes with local storage
+      schemaTextbox.value = localStorage.getItem("schemaTextbox") || "";
+      schemaTextbox.addEventListener("input", () =>
+        localStorage.setItem("schemaTextbox", schemaTextbox.value)
+      );
+      orderTextbox.value = localStorage.getItem("orderTextbox") || "";
+      orderTextbox.addEventListener("input", () =>
+        localStorage.setItem("orderTextbox", orderTextbox.value)
+      );
+
+      // map values of object
+      const mapValues = (object, func) =>
+        Object.fromEntries(
+          Object.entries(object).map(([key, value]) => [key, func(value, key)])
+        );
+
+      // sort keys of object in particular order
+      const sortKeys = (object, order) =>
+        Object.fromEntries(
+          Object.entries(object).sort(([aKey], [bKey]) => {
+            // if not in order list, put at end
+            a = order.includes(aKey) ? order.indexOf(aKey) : 99999;
+            b = order.includes(bKey) ? order.indexOf(bKey) : 99999;
+            if (a > b) return 1;
+            if (a < b) return -1;
+            // if both equal, stable sort
+            return 0;
+          })
+        );
+
+      // go through nested json structure
+      const deepMap = (value, key, func) => {
+        if (isPlainObject(value))
+          return mapValues(func(value, key, "object"), (value, key) =>
+            deepMap(value, key, func)
+          );
+        else if (isArray(value))
+          return func(value, key, "array").map((value, key) =>
+            deepMap(value, key, func)
+          );
+        else return func(value, key, "primitive");
+      };
+
+      // on format button click
+      format.addEventListener("click", async () => {
+        // parse json into schema object
+        let schema = JSON.parse(schemaTextbox.value);
+
+        // key order
+        const keyOrder = orderTextbox.value
+          .split("\n")
+          .map((line) => line.trim())
+          .filter((line) => line.length);
+
+        // deeply map through schema
+        schema = deepMap(schema, "", (value, key, type) => {
+          // sort keys in consistent order
+          if (type === "object" && key !== "properties")
+            value = sortKeys(value, keyOrder);
+
+          return value;
+        });
+
+        // make sure all top level keys are marked as required, in same order
+        schema.required = Object.keys(schema.properties);
+
+        // format with prettier
+        const formatted = await prettier.format(
+          JSON.stringify(schema, null, 2),
+          {
+            parser: "json",
+            plugins: prettierPlugins,
+            objectWrap: "preserve",
+          }
+        );
+
+        // update textbox with formatted json
+        schemaTextbox.value = formatted;
+      });
+
+      // copy button
+      button.addEventListener("click", () =>
+        navigator.clipboard.writeText(schemaTextbox.value)
+      );
+    </script>
+  </body>
+</html>

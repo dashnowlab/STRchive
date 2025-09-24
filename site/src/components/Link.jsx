@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import classes from "./Link.module.css";
 
 const Link = ({
@@ -20,7 +20,9 @@ const Link = ({
     >
       {children}
       {/* indicate third-party site with icon  */}
-      {(arrow ?? external) && <FaExternalLinkAlt className={classes.icon} />}
+      {(arrow ?? external) && (
+        <FaArrowUpRightFromSquare className={classes.icon} />
+      )}
     </a>
   );
 };

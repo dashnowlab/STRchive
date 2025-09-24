@@ -7,8 +7,8 @@ const CheckBox = ({
   label,
   checked,
   onChange,
-  tooltip,
   className,
+  tooltip,
   ...props
 }) => {
   const ref = useRef(null);
@@ -22,7 +22,7 @@ const CheckBox = ({
       <input
         ref={ref}
         type="checkbox"
-        className={clsx(className, classes.box)}
+        className={clsx(className, classes.input)}
         checked={!!checked}
         onChange={() => {
           if (checked === "mixed") onChange?.(true);

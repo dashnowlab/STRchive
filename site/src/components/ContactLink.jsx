@@ -1,7 +1,7 @@
-import Button from "./Button";
+import Button from "@/components/Button";
+import ContactForm from "@/components/ContactForm";
+import Dialog from "@/components/Dialog";
 import classes from "./Contact.module.css";
-import ContactForm from "./ContactForm";
-import Dialog from "./Dialog";
 
 const ContactLink = () => (
   <Dialog

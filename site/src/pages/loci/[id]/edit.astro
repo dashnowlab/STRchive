@@ -1,0 +1,28 @@
+---
+/** EDIT LOCUS PAGE */
+
+import Layout from "@/layouts/Layout.astro";
+import TableOfContents from "@/components/TableOfContents";
+import EditForm from "@/locus/EditForm";
+import loci from "~/STRchive-loci.json";
+
+/** generate pages for each datum, paths based on id */
+export const getStaticPaths = async () =>
+  loci.map(({ id }) => ({ params: { id } }));
+
+/** current page loci id in url */
+const { id } = Astro.params;
+
+/** look up full locus entry from id */
+const locus = loci.find((locus) => locus.id === id) || {};
+---
+
+<Layout title="Edit Locus">
+  <TableOfContents client:only="react" />
+
+  <EditForm
+    client:only="react"
+    heading={`Suggest Edit for Locus ${locus.id}`}
+    locus={locus}
+  />
+</Layout>

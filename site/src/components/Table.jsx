@@ -21,9 +21,8 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { preserveScroll } from "@/util/dom";
-import Button from "./Button";
-import Select from "./Select";
+import Button from "@/components/Button";
+import Select from "@/components/Select";
 import classes from "./Table.module.css";
 
 /** options for per-page select */
@@ -191,31 +190,24 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
           {/* pagination */}
           <div className={clsx("row", classes["control-row"])}>
             <Button
-              onClick={(event) => {
-                table.setPageIndex(0);
-                preserveScroll(event.currentTarget);
-              }}
+              onClick={() => table.setPageIndex(0)}
               disabled={!table.getCanPreviousPage()}
               aria-label="First page"
             >
               <FaAnglesLeft />
             </Button>
             <Button
-              onClick={(event) => {
-                table.previousPage();
-                preserveScroll(event.currentTarget);
-              }}
+              onClick={() => table.previousPage()}
               disabled={!table.getCanPreviousPage()}
               aria-label="Previous page"
             >
               <FaAngleLeft />
             </Button>
             <Button
-              onClick={(event) => {
+              onClick={() => {
                 const page = parseInt(window.prompt("Jump to page") || "");
                 if (Number.isNaN(page)) return;
                 table.setPageIndex(page);
-                preserveScroll(event.currentTarget);
               }}
             >
               Page{" "}
@@ -223,20 +215,14 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               {(table.getPageCount() || 1).toLocaleString()}
             </Button>
             <Button
-              onClick={(event) => {
-                table.nextPage();
-                preserveScroll(event.currentTarget);
-              }}
+              onClick={() => table.nextPage()}
               disabled={!table.getCanNextPage()}
               aria-label="Next page"
             >
               <FaAngleRight />
             </Button>
             <Button
-              onClick={(event) => {
-                table.setPageIndex(table.getPageCount() - 1);
-                preserveScroll(event.currentTarget);
-              }}
+              onClick={() => table.setPageIndex(table.getPageCount() - 1)}
               disabled={!table.getCanNextPage()}
               aria-label="Last page"
             >
@@ -252,10 +238,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
             label="Per page"
             options={perPageOptions}
             defaultValue={defaultPerPage.value}
-            onChange={(value, event) => {
-              table.setPageSize(Number(value));
-              preserveScroll(event.currentTarget);
-            }}
+            onChange={(value) => table.setPageSize(value)}
           />
         </div>
       )}

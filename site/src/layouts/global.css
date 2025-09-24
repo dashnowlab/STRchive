@@ -19,6 +19,9 @@
   --spacing: 2;
   --compact: 1.5;
 
+  --sans: "Barlow", sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+
   --thin: 200;
   --regular: 400;
   --medium: 500;
@@ -30,7 +33,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
+  font-family: var(--sans);
 }
 
 body {
@@ -142,7 +145,7 @@ label {
   position: relative;
   align-items: center;
   margin: 0;
-  gap: 5px;
+  gap: 10px;
 }
 
 label > span {
@@ -165,6 +168,7 @@ textarea {
   margin: 0;
   padding: 0;
   border: none;
+  background: none;
   font: inherit;
 }
 
@@ -219,7 +223,7 @@ li {
 }
 
 li::marker {
-  color: var(--dark-gray);
+  color: color-mix(in srgb, currentColor, transparent 50%);
 }
 
 hr {
@@ -230,7 +234,7 @@ hr {
 }
 
 .table-scroll {
-  max-width: 100%;
+  width: 100%;
   overflow-x: auto;
   border-radius: var(--rounded);
   box-shadow: var(--box-shadow);
@@ -260,6 +264,13 @@ tbody tr:nth-child(even) {
   background: var(--off-white);
 }
 
+code {
+  padding: 2px 5px;
+  border-radius: var(--rounded);
+  background: var(--light-gray);
+  font-family: var(--mono);
+}
+
 summary {
   appearance: none;
   list-style: none;
@@ -277,7 +288,6 @@ dl {
   --cols: 3;
   display: grid;
   grid-template-columns: repeat(var(--cols), auto auto);
-  gap: 10px 20px;
 }
 
 :has(> dl) {
@@ -299,11 +309,16 @@ dt,
 dd {
   display: inline-flex;
   margin: 0;
+  padding: 5px 10px;
 }
 
 dt {
   color: var(--gray);
-  font-weight: var(--medium);
+  font-weight: var(--bold);
+}
+
+dd {
+  margin-right: 10px;
 }
 
 dd:empty::after {

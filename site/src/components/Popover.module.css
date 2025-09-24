@@ -1,0 +1,10 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: var(--button-width);
+  padding: 10px;
+  gap: 5px;
+  border-radius: var(--rounded);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}

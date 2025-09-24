@@ -9,7 +9,7 @@
 
   /** tippy options */
   const options = {
-    delay: [50, 0],
+    delay: [100, 0],
     duration: [100, 100],
     offset: [0, 15],
     allowHTML: true,
@@ -71,6 +71,11 @@
     border-radius: var(--rounded);
     background: var(--dark-gray);
     color: var(--white);
+    /* pointer-events: all; */
+  }
+
+  .tippy-box * {
+    line-height: inherit;
   }
 
   .tippy-arrow {
@@ -89,5 +94,11 @@
 
   [data-placement="bottom"] .tippy-arrow {
     bottom: 100%;
+  }
+
+  .tippy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 </style>

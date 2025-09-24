@@ -6,7 +6,7 @@ import {
   useEventListener,
   useScrollLock,
 } from "@reactuses/core";
-import Button from "./Button";
+import Button from "@/components/Button";
 import classes from "./Dialog.module.css";
 
 export const DialogContext = createContext({});

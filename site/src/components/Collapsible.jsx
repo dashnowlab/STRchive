@@ -1,4 +1,4 @@
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa6";
 import classes from "./Collapsible.module.css";
 
 /** collapsible section */

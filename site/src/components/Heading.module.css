@@ -1,0 +1,26 @@
+.heading {
+  --gap: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  overflow-wrap: anywhere;
+}
+
+.heading :global(svg:first-child) {
+  opacity: 0.5;
+}
+
+.anchor {
+  width: 0;
+  margin-left: calc(-1 * var(--gap));
+  translate: var(--gap) 0;
+  color: var(--primary);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity var(--fast);
+}
+
+.heading:hover .anchor,
+.anchor:focus {
+  opacity: 1;
+}

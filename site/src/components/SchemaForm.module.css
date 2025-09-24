@@ -1,0 +1,69 @@
+.object {
+  display: grid;
+  grid-template-columns: auto minmax(200px, 1fr);
+  grid-column: 1 / -1;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .object {
+    grid-template-columns: auto;
+  }
+}
+
+:not(section) > .object {
+  padding: 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--box-shadow);
+}
+
+.object > label {
+  display: contents;
+}
+
+.object:empty {
+  display: none;
+}
+
+.array {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) auto;
+  grid-auto-flow: row dense;
+  grid-column: 1 / -1;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--box-shadow);
+}
+
+.actions {
+  display: flex;
+  grid-column: 2;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.actions > * {
+  min-width: 40px;
+}
+
+.error {
+  grid-column: 1 / -1;
+  margin-top: -10px;
+  color: var(--secondary);
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.heading {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  align-self: flex-start;
+  gap: 10px;
+  text-align: left;
+}
