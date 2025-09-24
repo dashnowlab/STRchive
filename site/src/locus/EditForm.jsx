@@ -108,14 +108,17 @@ const EditForm = ({ heading, locus }) => {
       )
       .join("\n\n");
 
-    /** remove edit metadata */
-    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
-
     /** branch name from locus id */
     const branch = data?.id;
 
+    /** pr title */
+    const title = data["edit-title"];
+
+    /** remove edit metadata */
+    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
+
     /** merge with locus data */
-    data = cloneDeep(loci).map((locus) =>
+    const newLoci = cloneDeep(loci).map((locus) =>
       locus?.id === data?.id ? data : locus,
     );
 
@@ -123,7 +126,7 @@ const EditForm = ({ heading, locus }) => {
     const files = [
       {
         path: "data/STRchive-loci.json",
-        content: JSON.stringify(data, null, 2),
+        content: JSON.stringify(newLoci, null, 2),
       },
     ];
 
@@ -131,7 +134,7 @@ const EditForm = ({ heading, locus }) => {
       owner: "dashnowlab",
       repo: "STRchive",
       branch,
-      title: data["edit-title"],
+      title,
       body,
       files,
       labels: ["locus-edit"],
