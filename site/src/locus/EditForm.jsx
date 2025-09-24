@@ -29,7 +29,7 @@ schema.properties = {
     section: "Edit",
     ...contactSchema.username,
     type: ["string", "null"],
-    pattern: "^@",
+    pattern: "^@.+",
     default: "",
   },
   "edit-email": {
@@ -111,9 +111,12 @@ const EditForm = ({ heading, locus }) => {
     /** remove edit metadata */
     data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
 
+    /** branch name from locus id */
+    const branch = data?.id;
+
     /** merge with locus data */
     data = cloneDeep(loci).map((locus) =>
-      locus.id === data.id ? data : locus,
+      locus?.id === data?.id ? data : locus,
     );
 
     /** pr files to change */
@@ -127,7 +130,7 @@ const EditForm = ({ heading, locus }) => {
     return await createPR({
       owner: "dashnowlab",
       repo: "STRchive",
-      branch: locus.id,
+      branch,
       title: data["edit-title"],
       body,
       files,
