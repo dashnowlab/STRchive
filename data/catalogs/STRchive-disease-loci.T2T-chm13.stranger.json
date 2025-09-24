@@ -8,8 +8,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "GGCGCGGAGC",
   "Disease": "HMNR7",
-  "NormalMax": 2.0,
-  "PathologicMin": 3.0,
+  "NormalMax": 2,
+  "PathologicMin": 3,
   "Gene": "VWA1"
 },
 {
@@ -23,8 +23,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GAAAT",
   "Disease": "SCA37",
-  "NormalMax": 30.0,
-  "PathologicMin": 31.0,
+  "NormalMax": 30,
+  "PathologicMin": 31,
   "Gene": "DAB1"
 },
 {
@@ -36,8 +36,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCC",
   "Disease": "OPDM5",
-  "NormalMax": 44.0,
-  "PathologicMin": 118.0,
+  "NormalMax": 44,
+  "PathologicMin": 118,
   "Gene": "ABCD3"
 },
 {
@@ -49,8 +49,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GGC",
   "Disease": "NIID",
-  "NormalMax": 37.0,
-  "PathologicMin": 66.0,
+  "NormalMax": 37,
+  "PathologicMin": 66,
   "Gene": "NOTCH2NLC"
 },
 {
@@ -62,8 +62,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "GGGCC",
   "Disease": "NME",
-  "NormalMax": 7.0,
-  "PathologicMin": 200.0,
+  "NormalMax": 7,
+  "PathologicMin": 200,
   "Gene": "NAXE"
 },
 {
@@ -77,8 +77,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "AAATG",
   "Disease": "FAME2",
-  "NormalMax": 273.0,
-  "PathologicMin": 274.0,
+  "NormalMax": 273,
+  "PathologicMin": 274,
   "Gene": "STARD7"
 },
 {
@@ -90,8 +90,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCC",
   "Disease": "FRA2A",
-  "NormalMax": 20.0,
-  "PathologicMin": 300.0,
+  "NormalMax": 20,
+  "PathologicMin": 300,
   "Gene": "AFF3"
 },
 {
@@ -103,8 +103,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCN",
   "Disease": "SD5",
-  "NormalMax": 15.0,
-  "PathologicMin": 22.0,
+  "NormalMax": 15,
+  "PathologicMin": 22,
   "Gene": "HOXD13"
 },
 {
@@ -116,8 +116,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "GCA",
   "Disease": "GDPAG",
-  "NormalMax": 38.0,
-  "PathologicMin": 680.0,
+  "NormalMax": 38,
+  "PathologicMin": 680,
   "Gene": "GLS"
 },
 {
@@ -131,8 +131,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAG",
   "Disease": "SCA7",
-  "NormalMax": 27.0,
-  "PathologicMin": 37.0,
+  "NormalMax": 27,
+  "PathologicMin": 37,
   "Gene": "ATXN7"
 },
 {
@@ -146,8 +146,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAGG",
   "Disease": "DM2",
-  "NormalMax": 26.0,
-  "PathologicMin": 75.0,
+  "NormalMax": 26,
+  "PathologicMin": 75,
   "Gene": "CNBP"
 },
 {
@@ -159,8 +159,8 @@
   "InheritanceMode": ["AD", "AR"],
   "DisplayRU": "NGC",
   "Disease": "BPES",
-  "NormalMax": 14.0,
-  "PathologicMin": 15.0,
+  "NormalMax": 14,
+  "PathologicMin": 15,
   "Gene": "FOXL2"
 },
 {
@@ -174,8 +174,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TTTCA",
   "Disease": "FAME4",
-  "NormalMax": 999.0,
-  "PathologicMin": 1000.0,
+  "NormalMax": 999,
+  "PathologicMin": 1000,
   "Gene": "YEATS2"
 },
 {
@@ -189,8 +189,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAG",
   "Disease": "HD",
-  "NormalMax": 26.0,
-  "PathologicMin": 36.0,
+  "NormalMax": 26,
+  "PathologicMin": 36,
   "Gene": "HTT"
 },
 {
@@ -204,8 +204,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "AAGGG",
   "Disease": "CANVAS",
-  "NormalMax": 11.0,
-  "PathologicMin": 400.0,
+  "NormalMax": 11,
+  "PathologicMin": 400,
   "Gene": "RFC1"
 },
 {
@@ -217,8 +217,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCN",
   "Disease": "CCHS",
-  "NormalMax": 20.0,
-  "PathologicMin": 26.0,
+  "NormalMax": 20,
+  "PathologicMin": 26,
   "Gene": "PHOX2B"
 },
 {
@@ -232,8 +232,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TTTCA",
   "Disease": "FAME7",
-  "NormalMax": 59.0,
-  "PathologicMin": 60.0,
+  "NormalMax": 59,
+  "PathologicMin": 60,
   "Gene": "RAPGEF2"
 },
 {
@@ -247,8 +247,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TTTCA",
   "Disease": "FAME3",
-  "NormalMax": 790.0,
-  "PathologicMin": 791.0,
+  "NormalMax": 790,
+  "PathologicMin": 791,
   "Gene": "MARCHF6"
 },
 {
@@ -260,8 +260,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCT",
   "Disease": "SCA12",
-  "NormalMax": 32.0,
-  "PathologicMin": 51.0,
+  "NormalMax": 32,
+  "PathologicMin": 51,
   "Gene": "PPP2R2B"
 },
 {
@@ -273,8 +273,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CTG",
   "Disease": "SCA1",
-  "NormalMax": 35.0,
-  "PathologicMin": 39.0,
+  "NormalMax": 35,
+  "PathologicMin": 39,
   "Gene": "ATXN1"
 },
 {
@@ -286,8 +286,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCN",
   "Disease": "CCD",
-  "NormalMax": 17.0,
-  "PathologicMin": 20.0,
+  "NormalMax": 17,
+  "PathologicMin": 20,
   "Gene": "RUNX2"
 },
 {
@@ -299,8 +299,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCA",
   "Disease": "SCA17",
-  "NormalMax": 40.0,
-  "PathologicMin": 49.0,
+  "NormalMax": 40,
+  "PathologicMin": 49,
   "Gene": "TBP"
 },
 {
@@ -312,8 +312,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "NGC",
   "Disease": "HFG-III",
-  "NormalMax": 18.0,
-  "PathologicMin": 22.0,
+  "NormalMax": 18,
+  "PathologicMin": 22,
   "Gene": "HOXA13"
 },
 {
@@ -325,8 +325,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "NGC",
   "Disease": "HFG-II",
-  "NormalMax": 12.0,
-  "PathologicMin": 18.0,
+  "NormalMax": 12,
+  "PathologicMin": 18,
   "Gene": "HOXA13"
 },
 {
@@ -338,8 +338,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "NGC",
   "Disease": "HFG-I",
-  "NormalMax": 14.0,
-  "PathologicMin": 22.0,
+  "NormalMax": 14,
+  "PathologicMin": 22,
   "Gene": "HOXA13"
 },
 {
@@ -351,8 +351,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCG",
   "Disease": "FRA7A",
-  "NormalMax": 22.0,
-  "PathologicMin": 450.0,
+  "NormalMax": 22,
+  "PathologicMin": 450,
   "Gene": "ZNF713"
 },
 {
@@ -364,8 +364,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CGC",
   "Disease": "OPDM1",
-  "NormalMax": 45.0,
-  "PathologicMin": 85.0,
+  "NormalMax": 45,
+  "PathologicMin": 85,
   "Gene": "LRP12"
 },
 {
@@ -379,8 +379,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TGAAA",
   "Disease": "FAME1",
-  "NormalMax": 104.0,
-  "PathologicMin": 105.0,
+  "NormalMax": 104,
+  "PathologicMin": 105,
   "Gene": "SAMD12"
 },
 {
@@ -392,8 +392,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GGCCCC",
   "Disease": "FTDALS1",
-  "NormalMax": 23.0,
-  "PathologicMin": 251.0,
+  "NormalMax": 23,
+  "PathologicMin": 251,
   "Gene": "C9orf72"
 },
 {
@@ -407,8 +407,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "GAA",
   "Disease": "FRDA",
-  "NormalMax": 33.0,
-  "PathologicMin": 56.0,
+  "NormalMax": 33,
+  "PathologicMin": 56,
   "Gene": "FXN"
 },
 {
@@ -420,8 +420,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "GCC",
   "Disease": "HSAN VIII",
-  "NormalMax": 14.0,
-  "PathologicMin": 18.0,
+  "NormalMax": 14,
+  "PathologicMin": 18,
   "Gene": "PRDM12"
 },
 {
@@ -433,8 +433,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GGC",
   "Disease": "OPML1",
-  "NormalMax": 16.0,
-  "PathologicMin": 161.0,
+  "NormalMax": 16,
+  "PathologicMin": 161,
   "Gene": "NUTM2B-AS1"
 },
 {
@@ -446,8 +446,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CGG",
   "Disease": "JBS",
-  "NormalMax": 79.0,
-  "PathologicMin": 101.0,
+  "NormalMax": 79,
+  "PathologicMin": 101,
   "Gene": "CBL"
 },
 {
@@ -459,8 +459,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAG",
   "Disease": "DRPLA",
-  "NormalMax": 35.0,
-  "PathologicMin": 48.0,
+  "NormalMax": 35,
+  "PathologicMin": 48,
   "Gene": "ATN1"
 },
 {
@@ -472,8 +472,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GGC",
   "Disease": "FRA12A",
-  "NormalMax": 23.0,
-  "PathologicMin": 273.0,
+  "NormalMax": 23,
+  "PathologicMin": 273,
   "Gene": "DIP2B"
 },
 {
@@ -485,8 +485,8 @@
   "InheritanceMode": ["AD", "AR"],
   "DisplayRU": "CTG",
   "Disease": "SCA2",
-  "NormalMax": 30.0,
-  "PathologicMin": 35.0,
+  "NormalMax": 30,
+  "PathologicMin": 35,
   "Gene": "ATXN2"
 },
 {
@@ -498,8 +498,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GGC",
   "Disease": "OPDM4",
-  "NormalMax": 16.0,
-  "PathologicMin": 120.0,
+  "NormalMax": 16,
+  "PathologicMin": 120,
   "Gene": "RILPL1"
 },
 {
@@ -513,8 +513,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CTG",
   "Disease": "SCA8",
-  "NormalMax": 50.0,
-  "PathologicMin": 71.0,
+  "NormalMax": 50,
+  "PathologicMin": 71,
   "Gene": "ATXN8OS"
 },
 {
@@ -526,8 +526,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCN",
   "Disease": "HPE5",
-  "NormalMax": 15.0,
-  "PathologicMin": 25.0,
+  "NormalMax": 15,
+  "PathologicMin": 25,
   "Gene": "ZIC2"
 },
 {
@@ -539,8 +539,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GAA",
   "Disease": "SCA27B",
-  "NormalMax": 179.0,
-  "PathologicMin": 320.0,
+  "NormalMax": 179,
+  "PathologicMin": 320,
   "Gene": "FGF14"
 },
 {
@@ -552,8 +552,8 @@
   "InheritanceMode": ["AD", "AR"],
   "DisplayRU": "GCN",
   "Disease": "OPMD",
-  "NormalMax": 10.0,
-  "PathologicMin": 12.0,
+  "NormalMax": 10,
+  "PathologicMin": 12,
   "Gene": "PABPN1"
 },
 {
@@ -565,8 +565,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CTG",
   "Disease": "SCA3, MJD",
-  "NormalMax": 44.0,
-  "PathologicMin": 60.0,
+  "NormalMax": 44,
+  "PathologicMin": 60,
   "Gene": "ATXN3"
 },
 {
@@ -578,8 +578,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCG",
   "Disease": "ALS1",
-  "NormalMax": 10.0,
-  "PathologicMin": 11.0,
+  "NormalMax": 10,
+  "PathologicMin": 11,
   "Gene": "NIPA1"
 },
 {
@@ -591,8 +591,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TTTG",
   "Disease": "CHNG3",
-  "NormalMax": 4.0,
-  "PathologicMin": 5.0,
+  "NormalMax": 4,
+  "PathologicMin": 5,
   "Gene": "MIR7-2"
 },
 {
@@ -606,8 +606,8 @@
   "InheritanceMode": [],
   "DisplayRU": "GCT",
   "Disease": "CPEO",
-  "NormalMax": 10.0,
-  "PathologicMin": 11.0,
+  "NormalMax": 10,
+  "PathologicMin": 11,
   "Gene": "POLG"
 },
 {
@@ -621,8 +621,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "GCC",
   "Disease": "DBQD2, BSS",
-  "NormalMax": 20.0,
-  "PathologicMin": 72.0,
+  "NormalMax": 20,
+  "PathologicMin": 72,
   "Gene": "XYLT1"
 },
 {
@@ -636,8 +636,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TTTCA",
   "Disease": "FAME6",
-  "NormalMax": 1099.0,
-  "PathologicMin": 1100.0,
+  "NormalMax": 1099,
+  "PathologicMin": 1100,
   "Gene": "TNRC6A"
 },
 {
@@ -649,8 +649,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TGGAA",
   "Disease": "SCA31",
-  "NormalMax": 109.0,
-  "PathologicMin": 110.0,
+  "NormalMax": 109,
+  "PathologicMin": 110,
   "Gene": "BEAN1"
 },
 {
@@ -662,8 +662,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAG",
   "Disease": "SCA",
-  "NormalMax": 38.0,
-  "PathologicMin": 45.0,
+  "NormalMax": 38,
+  "PathologicMin": 45,
   "Gene": "THAP11"
 },
 {
@@ -675,8 +675,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCC",
   "Disease": "SCA4",
-  "NormalMax": 26.0,
-  "PathologicMin": 46.0,
+  "NormalMax": 26,
+  "PathologicMin": 46,
   "Gene": "ZFHX3"
 },
 {
@@ -688,8 +688,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CTG",
   "Disease": "HDL2",
-  "NormalMax": 28.0,
-  "PathologicMin": 40.0,
+  "NormalMax": 28,
+  "PathologicMin": 40,
   "Gene": "JPH3"
 },
 {
@@ -703,8 +703,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TTTCA",
   "Disease": "FAME8",
-  "NormalMax": 8.0,
-  "PathologicMin": 9.0,
+  "NormalMax": 8,
+  "PathologicMin": 9,
   "Gene": "RAI1"
 },
 {
@@ -716,8 +716,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "CCTCGCTGTGCCGCTGCCGA",
   "Disease": "RCPS",
-  "NormalMax": 12.0,
-  "PathologicMin": 14.0,
+  "NormalMax": 12,
+  "PathologicMin": 14,
   "Gene": "EIF4A3"
 },
 {
@@ -742,8 +742,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAG",
   "Disease": "FECD3",
-  "NormalMax": 39.0,
-  "PathologicMin": 51.0,
+  "NormalMax": 39,
+  "PathologicMin": 51,
   "Gene": "TCF4"
 },
 {
@@ -755,8 +755,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "TGGTGTCCACGCCGGTCTGGATGGTTCCTTTGGCCACATTCATGGCACCAGTCACCCCACTACAGACGGTGTCCTTGGTACCTGTTAGGACAGTCTTAC",
   "Disease": "MRUPAV",
-  "NormalMax": 31.0,
-  "PathologicMin": 37.0,
+  "NormalMax": 31,
+  "PathologicMin": 37,
   "Gene": "PLIN4"
 },
 {
@@ -768,8 +768,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CTG",
   "Disease": "SCA6",
-  "NormalMax": 18.0,
-  "PathologicMin": 21.0,
+  "NormalMax": 18,
+  "PathologicMin": 21,
   "Gene": "CACNA1A"
 },
 {
@@ -781,8 +781,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CCG",
   "Disease": "OPDM2",
-  "NormalMax": 32.0,
-  "PathologicMin": 73.0,
+  "NormalMax": 32,
+  "PathologicMin": 73,
   "Gene": "GIPC1"
 },
 {
@@ -794,8 +794,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GTC",
   "Disease": "EDM1, PSACH",
-  "NormalMax": 5.0,
-  "PathologicMin": 6.0,
+  "NormalMax": 5,
+  "PathologicMin": 6,
   "Gene": "COMP"
 },
 {
@@ -807,8 +807,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CAG",
   "Disease": "DM1",
-  "NormalMax": 34.0,
-  "PathologicMin": 50.0,
+  "NormalMax": 34,
+  "PathologicMin": 50,
   "Gene": "DMPK"
 },
 {
@@ -822,8 +822,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GGCCTG",
   "Disease": "SCA36",
-  "NormalMax": 14.0,
-  "PathologicMin": 650.0,
+  "NormalMax": 14,
+  "PathologicMin": 650,
   "Gene": "NOP56"
 },
 {
@@ -837,8 +837,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "CCTCATGGTGGTGGCTGGGGGCAG",
   "Disease": "CJD",
-  "NormalMax": 4.0,
-  "PathologicMin": 5.0,
+  "NormalMax": 4,
+  "PathologicMin": 5,
   "Gene": "PRNP"
 },
 {
@@ -850,8 +850,8 @@
   "InheritanceMode": ["AR"],
   "DisplayRU": "CGCGGGGCGGGG",
   "Disease": "EPM1",
-  "NormalMax": 3.0,
-  "PathologicMin": 30.0,
+  "NormalMax": 3,
+  "PathologicMin": 30,
   "Gene": "CSTB"
 },
 {
@@ -863,8 +863,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCN",
   "Disease": "TOF",
-  "NormalMax": 15.0,
-  "PathologicMin": 25.0,
+  "NormalMax": 15,
+  "PathologicMin": 25,
   "Gene": "TBX1"
 },
 {
@@ -876,8 +876,8 @@
   "InheritanceMode": ["AD"],
   "DisplayRU": "ATTCT",
   "Disease": "SCA10",
-  "NormalMax": 32.0,
-  "PathologicMin": 800.0,
+  "NormalMax": 32,
+  "PathologicMin": 800,
   "Gene": "ATXN10"
 },
 {
@@ -889,8 +889,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "NGC",
   "Disease": "PRTS",
-  "NormalMax": 12.0,
-  "PathologicMin": 20.0,
+  "NormalMax": 12,
+  "PathologicMin": 20,
   "Gene": "ARX"
 },
 {
@@ -902,8 +902,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "NGC",
   "Disease": "EIEE1",
-  "NormalMax": 16.0,
-  "PathologicMin": 17.0,
+  "NormalMax": 16,
+  "PathologicMin": 17,
   "Gene": "ARX"
 },
 {
@@ -917,8 +917,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "TTC",
   "Disease": "DMD",
-  "NormalMax": 33.0,
-  "PathologicMin": 59.0,
+  "NormalMax": 33,
+  "PathologicMin": 59,
   "Gene": "DMD"
 },
 {
@@ -930,8 +930,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "GCA",
   "Disease": "SBMA",
-  "NormalMax": 34.0,
-  "PathologicMin": 38.0,
+  "NormalMax": 34,
+  "PathologicMin": 38,
   "Gene": "AR"
 },
 {
@@ -943,8 +943,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "AGAGGG",
   "Disease": "XDP",
-  "NormalMax": 34.0,
-  "PathologicMin": 35.0,
+  "NormalMax": 34,
+  "PathologicMin": 35,
   "Gene": "TAF1"
 },
 {
@@ -956,8 +956,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "GCN",
   "Disease": "VACTERLX",
-  "NormalMax": 10.0,
-  "PathologicMin": 12.0,
+  "NormalMax": 10,
+  "PathologicMin": 12,
   "Gene": "ZIC3"
 },
 {
@@ -969,8 +969,8 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "NGC",
   "Disease": "XLMR",
-  "NormalMax": 15.0,
-  "PathologicMin": 22.0,
+  "NormalMax": 15,
+  "PathologicMin": 22,
   "Gene": "SOX3"
 },
 {
@@ -982,8 +982,8 @@
   "InheritanceMode": ["XD"],
   "DisplayRU": "CGG",
   "Disease": "FXS, FXTAS, POF1",
-  "NormalMax": 44.0,
-  "PathologicMin": 201.0,
+  "NormalMax": 44,
+  "PathologicMin": 201,
   "Gene": "FMR1"
 },
 {
@@ -995,7 +995,7 @@
   "InheritanceMode": ["XR"],
   "DisplayRU": "GCC",
   "Disease": "FRAXE",
-  "NormalMax": 39.0,
-  "PathologicMin": 201.0,
+  "NormalMax": 39,
+  "PathologicMin": 201,
   "Gene": "AFF2"
 }]
