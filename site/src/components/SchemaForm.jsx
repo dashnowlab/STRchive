@@ -210,6 +210,7 @@ const Field = ({
     <span className={classes.error}>
       {fieldErrors
         .map(({ code, data, message }) => {
+          console.log(code, data, message);
           /** prettify error message */
           if (code === "pattern-error")
             return (
@@ -418,7 +419,7 @@ const Field = ({
             placeholder ?? (examples?.length ? `Ex: ${examples[0]}` : "")
           }
           multi={multiline}
-          pattern={pattern}
+          // pattern={pattern}
           minLength={required ? 0 : undefined}
           value={value || ""}
           onChange={(value) => onChange(value || null)}
