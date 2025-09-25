@@ -1,4 +1,86 @@
 
+PMID- 40832356
+OWN - NLM
+STAT- In-Process
+LR  - 20250903
+IS  - 2692-8205 (Electronic)
+IS  - 2692-8205 (Linking)
+DP  - 2025 Aug 12
+TI  - Disrupted Transcriptional Networks by Mutant Atrophin-1 in a Cell Culture Model 
+      of Dentatorubral-Pallidoluysian Atrophy.
+LID - 2025.08.08.669318 [pii]
+LID - 10.1101/2025.08.08.669318 [doi]
+AB  - Dentatorubral-Pallidoluysian Atrophy (DRPLA) is a dominant neurodegenerative 
+      disease caused by CAG triplet repeat expansion in ATN1, which encodes the 
+      transcriptional co-repressor Atrophin-1. DRPLA features motor, cognitive, and 
+      epileptic symptoms and shares pathogenic mechanisms with other polyglutamine 
+      (polyQ) disorders, including protein misfolding, impaired autophagy, and 
+      transcriptional dysregulation. To understand disease mechanisms, we performed 
+      RNA-seq on HEK293T cells stably expressing wild-type or polyQ-expanded ATN1. 
+      Cells expressing pathogenic ATN1 exhibited a distinct transcriptomic profile, 
+      including disruptions in synaptic organization, extracellular matrix remodeling, 
+      ion channel expression, and neurotransmission. Several genes tied to 
+      neurodevelopmental, neurodegenerative, and oncogenic pathways were fully 
+      activated or silenced. Dysregulated pathways also included inflammation, 
+      chromatin remodeling, stress responses, and redox imbalance. Heat shock protein 
+      expression changes suggested proteotoxic stress and impaired protein quality 
+      control, with some findings conserved in a previously reported Drosophila 
+      melanogaster model of DRPLA. These transcriptomic signatures expand our 
+      understanding of molecular events related to degeneration in DRPLA and may lead 
+      to the identification of therapeutic targets.
+FAU - Nuga, Oluwademilade
+AU  - Nuga O
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      MI 48201, USA.
+FAU - Pourhadi, Masoumeh
+AU  - Pourhadi M
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      MI 48201, USA.
+FAU - Rausch, Julia P
+AU  - Rausch JP
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      MI 48201, USA.
+FAU - Todi, Sokol V
+AU  - Todi SV
+AUID- ORCID: 0000-0003-4399-5549
+AD  - Department of Pharmacology, Wayne State University School of Medicine, Detroit, 
+      MI 48201, USA.
+AD  - Department of Neurology, Wayne State University School of Medicine, Detroit, MI 
+      48201, USA.
+LA  - eng
+GR  - R01 NS086778/NS/NINDS NIH HHS/United States
+PT  - Journal Article
+PT  - Preprint
+DEP - 20250812
+PL  - United States
+TA  - bioRxiv
+JT  - bioRxiv : the preprint server for biology
+JID - 101680187
+PMC - PMC12363894
+OTO - NOTNLM
+OT  - HEK293
+OT  - misfolding
+OT  - neurodegeneration
+OT  - oxidative stress
+OT  - polyglutamine
+OT  - quality control
+OT  - sequencing
+COIS- DECLARATIONS OF COMPETING INTERESTS The authors declare that they have no 
+      competing interests.
+EDAT- 2025/08/20 06:31
+MHDA- 2025/08/20 06:31
+PMCR- 2025/08/19
+CRDT- 2025/08/20 05:11
+PHST- 2025/08/20 06:31 [pubmed]
+PHST- 2025/08/20 06:31 [medline]
+PHST- 2025/08/20 05:11 [entrez]
+PHST- 2025/08/19 00:00 [pmc-release]
+AID - 2025.08.08.669318 [pii]
+AID - 10.1101/2025.08.08.669318 [doi]
+PST - epublish
+SO  - bioRxiv [Preprint]. 2025 Aug 12:2025.08.08.669318. doi: 
+      10.1101/2025.08.08.669318.
+
 PMID- 40488180
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -232,13 +314,16 @@ SO  - Mol Neurobiol. 2025 May 31. doi: 10.1007/s12035-025-05089-9.
 
 PMID- 40340521
 OWN - NLM
-STAT- Publisher
-LR  - 20250509
+STAT- MEDLINE
+DCOM- 20250808
+LR  - 20250813
 IS  - 1708-8283 (Electronic)
 IS  - 0883-0738 (Linking)
-DP  - 2025 May 8
+VI  - 40
+IP  - 8
+DP  - 2025 Sep
 TI  - Approach to Progressive Myoclonic Epilepsies: Clinical Clues for Genetic Testing.
-PG  - 8830738251337972
+PG  - 686-690
 LID - 10.1177/08830738251337972 [doi]
 AB  - Progressive myoclonic epilepsy is a heterogeneous group of disorders 
       characterized by drug-resistant epilepsy, cognitive decline, and ataxia. Genetic 
@@ -262,26 +347,40 @@ AUID- ORCID: 0000-0002-7512-2593
 AD  - Bajaj Allianz Comprehensive Center for Epilepsy Care, Deenanath Mangeshkar 
       Hospital and Research Centre, Pune, Maharashtra, India. RINGGOLD: 76038
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20250508
 PL  - United States
 TA  - J Child Neurol
 JT  - Journal of child neurology
 JID - 8606714
+RN  - 0 (atrophin-1)
+RN  - 0 (Nerve Tissue Proteins)
 SB  - IM
+MH  - Humans
+MH  - *Myoclonic Epilepsies, Progressive/genetics/diagnosis
+MH  - Male
+MH  - *Genetic Testing/methods
+MH  - Adult
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Nerve Tissue Proteins/genetics
 OTO - NOTNLM
 OT  - dentatorubral-pallidoluysian atrophy
 OT  - progressive myoclonic epilepsy
 OT  - whole exome sequencing
+COIS- Declaration of Conflicting InterestsThe authors declared no potential conflicts 
+      of interest with respect to the research, authorship, and/or publication of this 
+      article.
 EDAT- 2025/05/09 12:36
-MHDA- 2025/05/09 12:36
+MHDA- 2025/08/08 12:30
 CRDT- 2025/05/09 11:03
-PHST- 2025/05/09 12:36 [medline]
+PHST- 2025/08/08 12:30 [medline]
 PHST- 2025/05/09 12:36 [pubmed]
 PHST- 2025/05/09 11:03 [entrez]
 AID - 10.1177/08830738251337972 [doi]
-PST - aheadofprint
-SO  - J Child Neurol. 2025 May 8:8830738251337972. doi: 10.1177/08830738251337972.
+PST - ppublish
+SO  - J Child Neurol. 2025 Sep;40(8):686-690. doi: 10.1177/08830738251337972. Epub 2025 
+      May 8.
 
 PMID- 40298952
 OWN - NLM
@@ -541,13 +640,17 @@ SO  - Hum Mol Genet. 2025 Jun 4;34(12):1017-1025. doi: 10.1093/hmg/ddaf048.
 
 PMID- 40237283
 OWN - NLM
-STAT- Publisher
-LR  - 20250416
+STAT- MEDLINE
+DCOM- 20250822
+LR  - 20250827
 IS  - 2330-1619 (Electronic)
 IS  - 2330-1619 (Linking)
-DP  - 2025 Apr 16
+VI  - 12
+IP  - 8
+DP  - 2025 Aug
 TI  - Natural History and Progression of Dentatorubral-Pallidoluysian Atrophy (DRPLA): 
       A Retrospective Study of 22 Patients.
+PG  - 1097-1104
 LID - 10.1002/mdc3.70088 [doi]
 AB  - BACKGROUND: Dentatorubral-pallidoluysian atrophy (DRPLA) is a rare 
       neurodegenerative disorder and exhibits diverse clinical phenotypes depending on 
@@ -595,24 +698,52 @@ TA  - Mov Disord Clin Pract
 JT  - Movement disorders clinical practice
 JID - 101630279
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Adult
+MH  - Retrospective Studies
+MH  - *Myoclonic Epilepsies, Progressive/physiopathology/complications
+MH  - Adolescent
+MH  - Disease Progression
+MH  - Young Adult
+MH  - Child
+MH  - Age of Onset
+MH  - Middle Aged
+PMC - PMC12371440
 OTO - NOTNLM
 OT  - CAG repeat length
 OT  - Dentatorubral-pallidoluysian atrophy (DRPLA)
 OT  - clinical features
 OT  - disability milestone
 OT  - natural history
+COIS- Ethical Compliance Statement: This study was approved by the Ethics Committee of 
+      our hospital (approval number: 24-03; date: June 17, 2024). Informed consent was 
+      obtained from all study participants through the institution's website using the 
+      opt-out method. We confirm that we have read the Journal's position on issues 
+      involved in ethical publication and affirm that this work is consistent with 
+      those guidelines. Funding Sources and Conflicts of Interest: This work was 
+      supported by Grants-in-Aid from the Research Committee of Ataxia, Health Labour 
+      Sciences Research Grant, the Ministry of Health, Labour and Welfare, Japan 
+      (JPMH20FC1041). The authors declare that there are no conflicts of interest 
+      relevant to this work. Financial Disclosures for the previous 12 months: The 
+      authors declare that there are no additional disclosures to report.
 EDAT- 2025/04/16 14:34
-MHDA- 2025/04/16 14:34
+MHDA- 2025/08/27 12:47
+PMCR- 2026/04/16
 CRDT- 2025/04/16 07:33
 PHST- 2025/01/28 00:00 [revised]
 PHST- 2024/10/14 00:00 [received]
 PHST- 2025/03/27 00:00 [accepted]
-PHST- 2025/04/16 14:34 [medline]
+PHST- 2026/04/16 00:00 [pmc-release]
 PHST- 2025/04/16 14:34 [pubmed]
+PHST- 2025/08/27 12:47 [medline]
 PHST- 2025/04/16 07:33 [entrez]
+AID - MDC370088 [pii]
 AID - 10.1002/mdc3.70088 [doi]
-PST - aheadofprint
-SO  - Mov Disord Clin Pract. 2025 Apr 16. doi: 10.1002/mdc3.70088.
+PST - ppublish
+SO  - Mov Disord Clin Pract. 2025 Aug;12(8):1097-1104. doi: 10.1002/mdc3.70088. Epub 
+      2025 Apr 16.
 
 PMID- 39820777
 OWN - NLM
@@ -914,14 +1045,17 @@ SO  - J Neurol. 2025 Jan 15;272(2):111. doi: 10.1007/s00415-024-12772-9.
 
 PMID- 39742457
 OWN - NLM
-STAT- Publisher
-LR  - 20250101
+STAT- MEDLINE
+DCOM- 20250825
+LR  - 20250828
 IS  - 1465-3656 (Electronic)
 IS  - 1355-4794 (Linking)
-DP  - 2025 Jan 1
+VI  - 31
+IP  - 4
+DP  - 2025 Aug
 TI  - Dentatorubral pallidoluysian atrophy with cognitive impairment, epilepsy, 
       movement disorders, and psychosis - a case.
-PG  - 1-3
+PG  - 173-175
 LID - 10.1080/13554794.2024.2447116 [doi]
 AB  - Dentatorubral-Pallidoluysian Atrophy (DRPLA) is a rare autosomal dominant 
       neurodegenerative disorder caused by CAG repeat expansion in the ATN1 gene, 
@@ -944,6 +1078,7 @@ AUID- ORCID: 0000-0001-6498-6882
 AD  - Department of Neurology, Dongguk University College of Medicine, Dongguk 
       University Gyeongju Hospital, Gyeongju, Republic of Korea.
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20250101
 PL  - England
@@ -951,6 +1086,16 @@ TA  - Neurocase
 JT  - Neurocase
 JID - 9511374
 SB  - IM
+MH  - Adult
+MH  - Humans
+MH  - Young Adult
+MH  - *Cognitive Dysfunction/etiology/genetics
+MH  - *Epilepsy/genetics/etiology
+MH  - Magnetic Resonance Imaging
+MH  - *Movement Disorders/genetics/complications/etiology
+MH  - *Myoclonic Epilepsies, 
+      Progressive/complications/diagnosis/genetics/physiopathology
+MH  - *Psychotic Disorders/etiology/genetics
 OTO - NOTNLM
 OT  - ATN1
 OT  - DRPLA
@@ -958,14 +1103,15 @@ OT  - ataxia
 OT  - epilepsy
 OT  - psychosis
 EDAT- 2025/01/02 00:20
-MHDA- 2025/01/02 00:20
+MHDA- 2025/08/31 19:44
 CRDT- 2025/01/01 12:52
-PHST- 2025/01/02 00:20 [medline]
+PHST- 2025/08/31 19:44 [medline]
 PHST- 2025/01/02 00:20 [pubmed]
 PHST- 2025/01/01 12:52 [entrez]
 AID - 10.1080/13554794.2024.2447116 [doi]
-PST - aheadofprint
-SO  - Neurocase. 2025 Jan 1:1-3. doi: 10.1080/13554794.2024.2447116.
+PST - ppublish
+SO  - Neurocase. 2025 Aug;31(4):173-175. doi: 10.1080/13554794.2024.2447116. Epub 2025 
+      Jan 1.
 
 PMID- 39224955
 OWN - NLM
