@@ -187,6 +187,41 @@ def check_motif_orientation(record):
 
     return record
 
+def fix_type(record, schema):
+    """
+    Args:
+        record (dict): a dictionary containing a single locus from the STRchive json
+        schema (dict): the JSON schema dictionary
+    Returns:
+        record (dict): the record with any fields that should be integers or floats converted to the correct type
+    """
+    for field, field_info in schema['properties'].items():
+        if 'type' not in field_info:
+            continue
+        if field not in record:
+            continue
+        if record[field] is None:
+            continue
+        if 'integer' in field_info['type']:
+            try:
+                old = record[field]
+                record[field] = int(record[field])
+                if old != record[field]:
+                    sys.stderr.write(f'ERROR: Updating {record['id']} {field} from {old} to {record[field]} (type: int) would result in a value change\n')
+                    sys.exit(1)
+            except ValueError:
+                sys.stderr.write(f'WARNING: {record['id']} {field} value {record[field]} cannot be converted to integer. Skipping.\n')
+        elif 'number' in field_info['type'] or 'float' in field_info['type']:
+            try:
+                old = record[field]
+                record[field] = float(record[field])
+                if old != record[field]:
+                    sys.stderr.write(f'ERROR: Updating {record['id']} {field} from {old} to {record[field]} (type: float) would result in a value change\n')
+                    sys.exit(1)
+            except ValueError:
+                sys.stderr.write(f'WARNING: {record['id']} {field} value {record[field]} cannot be converted to float. Skipping.\n')
+    return record
+
 def check_list_fields(record, list_fields = list_fields):
     """
     Args:
@@ -358,6 +393,10 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None,
                 def sort_record(record):
                     return {key: record.get(key, None) for key in schema_order}
                 data = [sort_record(record) for record in data]
+
+                # Fix types based on schema
+                for record in data:
+                    record = fix_type(record, schema)
         
         # Write JSON file
         with open(out_json, 'w') as out_json_file:

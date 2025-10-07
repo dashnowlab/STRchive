@@ -388,7 +388,7 @@
       "section": "Alleles",
       "title": "Benign Min",
       "description": "Minimum number of repeats in the benign (normal) range",
-      "type": ["number", "null"],
+      "type": ["integer", "null"],
       "minimum": 0,
       "less_than": "benign_max"
     },
@@ -396,7 +396,7 @@
       "section": "Alleles",
       "title": "Benign Max",
       "description": "Maximum number of repeats in the benign (normal) range",
-      "type": ["number", "null"],
+      "type": ["integer", "null"],
       "minimum": 0,
       "greater_than": "benign_min"
     },
@@ -404,7 +404,7 @@
       "section": "Alleles",
       "title": "Intermediate Min",
       "description": "Minimum number of repeats in the intermediate range",
-      "type": ["number", "null"],
+      "type": ["integer", "null"],
       "minimum": 0,
       "less_than": "intermediate_max"
     },
@@ -412,7 +412,7 @@
       "section": "Alleles",
       "title": "Intermediate Max",
       "description": "Maximum number of repeats in the intermediate range",
-      "type": ["number", "null"],
+      "type": ["integer", "null"],
       "minimum": 0,
       "greater_than": "intermediate_min"
     },
@@ -420,7 +420,7 @@
       "section": "Alleles",
       "title": "Pathogenic Min",
       "description": "Minimum number of repeats in the pathogenic range",
-      "type": ["number", "null"],
+      "type": ["integer", "null"],
       "minimum": 0,
       "less_than": "pathogenic_max"
     },
@@ -428,7 +428,7 @@
       "section": "Alleles",
       "title": "Pathogenic Max",
       "description": "Maximum number of repeats in the pathogenic range",
-      "type": ["number", "null"],
+      "type": ["integer", "null"],
       "minimum": 0,
       "greater_than": "pathogenic_min"
     },
