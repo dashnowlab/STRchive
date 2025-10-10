@@ -109,7 +109,7 @@ const EditForm = ({ heading, locus }) => {
       .join("\n\n");
 
     /** branch name from locus id */
-    const branch = data?.id;
+    const branch = data.id;
 
     /** pr title */
     const title = data["edit-title"];
@@ -119,7 +119,7 @@ const EditForm = ({ heading, locus }) => {
 
     /** merge with locus data */
     const newLoci = cloneDeep(loci).map((locus) =>
-      locus?.id === data?.id ? data : locus,
+      locus.id === data.id ? data : locus,
     );
 
     /** pr files to change */

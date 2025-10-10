@@ -74,7 +74,7 @@ functions.http("entrypoint", async (request, response) => {
         branch,
       });
       /** branch exists, add suffix to name to avoid duplicate */
-      branch = branch.replace(/(-?\d*)$/, `-${suffix}`);
+      branch = branch.replace(/(-\d*)?$/, `-${suffix}`);
     } catch (error) {
       console.error(error);
       /** branch name isn't taken */
@@ -169,7 +169,7 @@ functions.http("entrypoint", async (request, response) => {
     await octokit.rest.issues.addLabels({
       owner,
       repo,
-      issue_number: pr.data.number,
+      issue_number: pr.number,
       labels,
     });
   } catch (error) {
