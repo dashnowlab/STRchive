@@ -1,8 +1,9 @@
 
 PMID- 40832356
 OWN - NLM
-STAT- In-Process
-LR  - 20250903
+STAT- PubMed-not-MEDLINE
+DCOM- 20250914
+LR  - 20250925
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Aug 12
@@ -68,11 +69,11 @@ OT  - sequencing
 COIS- DECLARATIONS OF COMPETING INTERESTS The authors declare that they have no 
       competing interests.
 EDAT- 2025/08/20 06:31
-MHDA- 2025/08/20 06:31
+MHDA- 2025/08/20 06:32
 PMCR- 2025/08/19
 CRDT- 2025/08/20 05:11
+PHST- 2025/08/20 06:32 [medline]
 PHST- 2025/08/20 06:31 [pubmed]
-PHST- 2025/08/20 06:31 [medline]
 PHST- 2025/08/20 05:11 [entrez]
 PHST- 2025/08/19 00:00 [pmc-release]
 AID - 2025.08.08.669318 [pii]
@@ -225,13 +226,18 @@ SO  - Brain Commun. 2025 May 17;7(3):fcaf188. doi: 10.1093/braincomms/fcaf188.
 
 PMID- 40450087
 OWN - NLM
-STAT- Publisher
-LR  - 20250531
+STAT- MEDLINE
+DCOM- 20250916
+LR  - 20250916
 IS  - 1559-1182 (Electronic)
+IS  - 0893-7648 (Print)
 IS  - 0893-7648 (Linking)
-DP  - 2025 May 31
+VI  - 62
+IP  - 10
+DP  - 2025 Oct
 TI  - Accurate Quantification of Mutant and Wild-Type polyQ Proteins Using Simple 
       Western Capillary Immunoassays.
+PG  - 12768-12790
 LID - 10.1007/s12035-025-05089-9 [doi]
 AB  - Polyglutamine (polyQ) diseases are monogenic fatal neurodegenerative disorders 
       caused by a CAG repeat expansion that is translated into a toxic polyQ tract. 
@@ -287,7 +293,20 @@ PL  - United States
 TA  - Mol Neurobiol
 JT  - Molecular neurobiology
 JID - 8900963
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
+RN  - 0 (Mutant Proteins)
+RN  - 0 (Huntingtin Protein)
 SB  - IM
+MH  - *Peptides/analysis/genetics/metabolism
+MH  - Humans
+MH  - Immunoassay/methods
+MH  - *Mutation/genetics
+MH  - *Mutant Proteins/analysis/metabolism
+MH  - Huntingtin Protein
+MH  - Animals
+MH  - *Blotting, Western/methods
+PMC - PMC12433360
 OTO - NOTNLM
 OT  - Assay development
 OT  - Capillary immunoassay
@@ -300,17 +319,21 @@ COIS- Declarations. Ethics Approval: Not applicable. Consent to Participate: Not
       Financial interest: All authors are employed and paid by VICO Therapeutics B.V. 
       and hold employee stock options. 
 EDAT- 2025/06/01 00:45
-MHDA- 2025/06/01 00:45
+MHDA- 2025/09/16 13:02
+PMCR- 2025/05/31
 CRDT- 2025/05/31 23:20
 PHST- 2025/01/17 00:00 [received]
 PHST- 2025/05/18 00:00 [accepted]
-PHST- 2025/06/01 00:45 [medline]
+PHST- 2025/09/16 13:02 [medline]
 PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/05/31 23:20 [entrez]
+PHST- 2025/05/31 00:00 [pmc-release]
 AID - 10.1007/s12035-025-05089-9 [pii]
+AID - 5089 [pii]
 AID - 10.1007/s12035-025-05089-9 [doi]
-PST - aheadofprint
-SO  - Mol Neurobiol. 2025 May 31. doi: 10.1007/s12035-025-05089-9.
+PST - ppublish
+SO  - Mol Neurobiol. 2025 Oct;62(10):12768-12790. doi: 10.1007/s12035-025-05089-9. Epub 
+      2025 May 31.
 
 PMID- 40340521
 OWN - NLM
@@ -729,15 +752,15 @@ COIS- Ethical Compliance Statement: This study was approved by the Ethics Commit
       relevant to this work. Financial Disclosures for the previous 12 months: The 
       authors declare that there are no additional disclosures to report.
 EDAT- 2025/04/16 14:34
-MHDA- 2025/08/27 12:47
+MHDA- 2025/09/08 07:55
 PMCR- 2026/04/16
 CRDT- 2025/04/16 07:33
 PHST- 2025/01/28 00:00 [revised]
 PHST- 2024/10/14 00:00 [received]
 PHST- 2025/03/27 00:00 [accepted]
 PHST- 2026/04/16 00:00 [pmc-release]
+PHST- 2025/09/08 07:55 [medline]
 PHST- 2025/04/16 14:34 [pubmed]
-PHST- 2025/08/27 12:47 [medline]
 PHST- 2025/04/16 07:33 [entrez]
 AID - MDC370088 [pii]
 AID - 10.1002/mdc3.70088 [doi]

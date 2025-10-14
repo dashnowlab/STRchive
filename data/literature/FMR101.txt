@@ -1,4 +1,635 @@
 
+PMID- 41028987
+OWN - NLM
+STAT- Publisher
+LR  - 20251001
+IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Linking)
+DP  - 2025 Sep 30
+TI  - Integrating Long-Read Nanopore Sequencing for Precision Resolution of Genomic 
+      Variants in Dystonia.
+LID - 10.1002/mds.70072 [doi]
+AB  - BACKGROUND: Although many individuals with dystonia present with features 
+      indicative of single-gene etiologies, obtaining definitive genetic diagnoses can 
+      be challenging. OBJECTIVE: We assessed the value of nanopore-based long-read 
+      sequencing (LRS) in achieving molecular clarification of dystonic syndromes. 
+      METHODS: From a large dystonia cohort with short-read sequencing (SRS) data, 14 
+      cases with unclear, difficult-to-evaluate, or missing causative variants were 
+      recruited. Long-read whole-genome sequencing was performed according to Oxford 
+      Nanopore Technologies (ONT) protocols. RESULTS: ONT sequencing produced 
+      long-range haplotypes, variant calls inaccessible to short-read technology, as 
+      well as methylation data. Phase inference allowed for changes in variant 
+      classification, establishing compound heterozygosity of causative variants in 
+      four cases. We illustrate an important advantage of LRS compared with SRS in 
+      (re)defining the identity of dystonia-causing structural variants and repeat 
+      expansions for seven individuals. One patient was found to harbor a novel exonic 
+      LINE-1 insertion in SGCE, expanding the genetic mechanism in myoclonus-dystonia. 
+      ONT data also provided unexpected insights into apparent mosaic expanded repeats 
+      in FMR1 in a subject with isolated focal dystonia. We further showed that LRS 
+      outperformed SRS in avoiding erroneous calls resulting from confounding 
+      pseudogene sequences and in discovering pathogenic alterations missed by 
+      conventional pipeline utilization (three cases). Moreover, simultaneous methylome 
+      analysis aided in directing the interpretation of three variants, including a 
+      KMT2B variant of uncertain significance that was reclassified as causal by 
+      LRS-based episignature profiling. CONCLUSIONS: ONT-based LRS uniquely improves 
+      analysis of dystonia-associated variations that had not previously been resolved 
+      by SRS, implying broad utility for future exploration of the molecular origins of 
+      the condition. (c) 2025 The Author(s). Movement Disorders published by Wiley 
+      Periodicals LLC on behalf of International Parkinson and Movement Disorder 
+      Society.
+CI  - (c) 2025 The Author(s). Movement Disorders published by Wiley Periodicals LLC on 
+      behalf of International Parkinson and Movement Disorder Society.
+FAU - Sorrentino, Ugo
+AU  - Sorrentino U
+AUID- ORCID: 0000-0001-8139-6198
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+FAU - Pavlov, Martin
+AU  - Pavlov M
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+FAU - Mirza-Schreiber, Nazanin
+AU  - Mirza-Schreiber N
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Neurogenetic Systems Analysis Group, Institute of Neurogenomics, Helmholtz 
+      Munich, Neuherberg, Germany.
+FAU - Brugger, Melanie
+AU  - Brugger M
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+FAU - Brunet, Theresa
+AU  - Brunet T
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+FAU - Tsoma, Eugenia
+AU  - Tsoma E
+AUID- ORCID: 0000-0002-0788-2961
+AD  - Regional Clinical Center of Neurosurgery and Neurology, Department of Family 
+      Medicine and Outpatient Care, Uzhhorod National University, Uzhhorod, Ukraine.
+AD  - Department of Neurology and Center of Clinical Neuroscience, First Faculty of 
+      Medicine Charles University and General University Hospital in Prague, Prague, 
+      Czech Republic.
+FAU - Saparov, Alice
+AU  - Saparov A
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+FAU - Dzinovic, Ivana
+AU  - Dzinovic I
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+FAU - Harrer, Philip
+AU  - Harrer P
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+FAU - Stehr, Antonia M
+AU  - Stehr AM
+AUID- ORCID: 0000-0001-9932-5187
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+FAU - Wagner, Matias
+AU  - Wagner M
+AUID- ORCID: 0000-0002-4454-8823
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+AD  - Division of Pediatric Neurology and Developmental Medicine and LMU Center for 
+      Children with Medical Complexity, Dr. von Hauner Children's Hospital, LMU 
+      Hospital, Ludwig-Maximilians-Universitat, Munich, Germany.
+FAU - Tilch, Erik
+AU  - Tilch E
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+FAU - Wallacher, Barbara
+AU  - Wallacher B
+AD  - Division of Pediatric Neurology and Developmental Medicine and LMU Center for 
+      Children with Medical Complexity, Dr. von Hauner Children's Hospital, LMU 
+      Hospital, Ludwig-Maximilians-Universitat, Munich, Germany.
+FAU - Alhasan, Shiraz
+AU  - Alhasan S
+AD  - Specialist Center for Pediatric Neurology, Neurorehabilitation and Epileptology, 
+      Schon Clinic, Vogtareuth, Germany.
+FAU - Koy, Anne
+AU  - Koy A
+AUID- ORCID: 0000-0002-7991-4432
+AD  - Department of Pediatrics, Faculty of Medicine and University Hospital Cologne, 
+      University of Cologne, Cologne, Germany.
+AD  - Center for Rare Diseases, Faculty of Medicine and University Hospital Cologne, 
+      University of Cologne, Cologne, Germany.
+FAU - Di Fonzo, Alessio
+AU  - Di Fonzo A
+AUID- ORCID: 0000-0001-6478-026X
+AD  - Dino Ferrari Center, Neuroscience Section, Department of Pathophysiology and 
+      Transplantation, University of Milan, Milan, Italy.
+AD  - Foundation IRCCS Ca' Granda Ospedale Maggiore Policlinico, Neurology Unit, Milan, 
+      Italy.
+FAU - Kolnikova, Miriam
+AU  - Kolnikova M
+AD  - Department of Pediatric Neurology, Faculty of Medicine, Comenius University, 
+      University Hospital Bratislava and National Institute of Children's Diseases, 
+      Bratislava, Slovakia.
+FAU - Kusikova, Katarina
+AU  - Kusikova K
+AD  - Department of Pediatric Neurology, Faculty of Medicine, Comenius University, 
+      University Hospital Bratislava and National Institute of Children's Diseases, 
+      Bratislava, Slovakia.
+FAU - Havrankova, Petra
+AU  - Havrankova P
+AUID- ORCID: 0000-0002-7731-5129
+AD  - Department of Neurology and Center of Clinical Neuroscience, First Faculty of 
+      Medicine Charles University and General University Hospital in Prague, Prague, 
+      Czech Republic.
+FAU - Tautanova, Raushana
+AU  - Tautanova R
+AD  - Department of Neurosurgery, Medical Centre Hospital of the President's Affairs 
+      Administration of the Republic of Kazakhstan, Astana, Kazakhstan.
+FAU - Losecke, Sandy
+AU  - Losecke S
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+FAU - Eck, Sebastian
+AU  - Eck S
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+FAU - Boesch, Sylvia
+AU  - Boesch S
+AD  - Department of Neurology, Medical University of Innsbruck, Innsbruk, Austria.
+FAU - Necpal, Jan
+AU  - Necpal J
+AUID- ORCID: 0000-0002-4626-9588
+AD  - Department of Neurology, Zvolen Hospital, Zvolen, Slovakia.
+AD  - Parkinsonism and Movement Disorders Treatment Center, Zvolen Hospital, Zvolen, 
+      Slovakia.
+AD  - Department of Neurology, P. J. Safarik University, Kosice, Slovakia.
+FAU - Skorvanek, Matej
+AU  - Skorvanek M
+AUID- ORCID: 0000-0001-5497-8715
+AD  - Department of Neurology, P. J. Safarik University, Kosice, Slovakia.
+AD  - Department of Neurology, University Hospital of L. Pasteur, Kosice, Slovakia.
+FAU - Jech, Robert
+AU  - Jech R
+AUID- ORCID: 0000-0002-9732-8947
+AD  - Department of Neurology and Center of Clinical Neuroscience, First Faculty of 
+      Medicine Charles University and General University Hospital in Prague, Prague, 
+      Czech Republic.
+FAU - Prokisch, Holger
+AU  - Prokisch H
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Deutsches Zentrum Fur Kinder- und Jugendgesundheit, Munich, Germany.
+FAU - Winkelmann, Juliane
+AU  - Winkelmann J
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+AD  - Deutsches Zentrum Fur Psychische Gesundheit, Munich, Germany.
+AD  - Munich Cluster for Systems Neurology, SyNergy, Munich, Germany.
+FAU - Oexle, Konrad
+AU  - Oexle K
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Neurogenetic Systems Analysis Group, Institute of Neurogenomics, Helmholtz 
+      Munich, Neuherberg, Germany.
+FAU - Graf, Elisabeth
+AU  - Graf E
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+FAU - Zech, Michael
+AU  - Zech M
+AUID- ORCID: 0000-0001-8112-9153
+AD  - Institute of Human Genetics, School of Medicine and Health, Technical University 
+      of Munich, Munich, Germany.
+AD  - Institute of Neurogenomics, Helmholtz Zentrum Munchen, Munich, Germany.
+AD  - Bavarian Genomes Network for Rare Disorders, Munich, Germany.
+AD  - Institute for Advanced Study, Technical University of Munich, Garching, Germany.
+LA  - eng
+PT  - Journal Article
+DEP - 20250930
+PL  - United States
+TA  - Mov Disord
+JT  - Movement disorders : official journal of the Movement Disorder Society
+JID - 8610688
+SB  - IM
+OTO - NOTNLM
+OT  - complex structural variants
+OT  - dystonia
+OT  - long-range phasing
+OT  - long-read sequencing
+OT  - nanopore technology
+OT  - repeat expansions
+EDAT- 2025/10/01 06:30
+MHDA- 2025/10/01 06:30
+CRDT- 2025/10/01 00:34
+PHST- 2025/09/16 00:00 [revised]
+PHST- 2025/07/11 00:00 [received]
+PHST- 2025/09/17 00:00 [accepted]
+PHST- 2025/10/01 06:30 [medline]
+PHST- 2025/10/01 06:30 [pubmed]
+PHST- 2025/10/01 00:34 [entrez]
+AID - 10.1002/mds.70072 [doi]
+PST - aheadofprint
+SO  - Mov Disord. 2025 Sep 30. doi: 10.1002/mds.70072.
+
+PMID- 41015363
+OWN - NLM
+STAT- Publisher
+LR  - 20250930
+IS  - 1879-0003 (Electronic)
+IS  - 0141-8130 (Linking)
+VI  - 329
+IP  - Pt 2
+DP  - 2025 Sep 25
+TI  - Repurposing Nitazoxanide to target the expanded r(CGG)(n) repeat RNA for 
+      therapeutic intervention in fragile-X tremor/ataxia syndrome.
+PG  - 147864
+LID - S0141-8130(25)08421-1 [pii]
+LID - 10.1016/j.ijbiomac.2025.147864 [doi]
+AB  - Fragile X-associated Tremor/Ataxia Syndrome (FXTAS) is a debilitating 
+      neurodegenerative disorder linked to CGG trinucleotide repeat expansions in the 
+      FMR1 gene. These expanded repeats produce toxic FMR1poly-Glycine (FMR1polyG) 
+      proteins in neurons through mechanisms such as Repeat-Associated Non-AUG (RAN) 
+      translation and RNA foci formation, driving disease progression. In this study, 
+      we investigate the potential of Nitazoxanide (NTZ), a broad-spectrum 
+      antiparasitic and antiviral medication, as a therapeutic agent for FXTAS by 
+      targeting CGG repeat-associated toxicity. This comprehensive approach utilizing 
+      biophysical techniques, bioinformatic studies, cellular assays, and Drosophila 
+      models reveals NTZ's remarkable ability to bind specifically to toxic CGG repeat 
+      RNA, particularly GG mismatches, and to inhibit FMR1polyG aggregation. 
+      Biophysical methods, including Circular Dichroism (CD), Isothermal Titration 
+      Calorimetry (ITC), Electrophoretic Mobility Shift assays (EMSA), and Nuclear 
+      Magnetic Resonance (NMR) spectroscopy, accompanied with Molecular Docking, 
+      confirmed that NTZ effectively binds to CGG repeat RNA and mitigates its 
+      toxicity. Moreover, treatment with NTZ significantly reduced FMR1polyG-associated 
+      toxicity, corrected the splicing defects in FXTAS cell models, and improved 
+      different phenotypes in the Drosophila model of FXTAS. These compelling findings 
+      position NTZ as a promising candidate for neuroprotection in FXTAS, indicating 
+      its remarkable therapeutic potential and paving the way for future clinical 
+      applications to improve outcomes for the affected patients.
+CI  - Copyright (c) 2025 Elsevier B.V. All rights reserved.
+FAU - Singh, Krishna
+AU  - Singh K
+AD  - Mehta Family School of Biosciences and Biomedical Engineering, Indian Institute 
+      of Technology Indore, Simrol, Indore, 453552, India.
+FAU - Shukla, Sakshi
+AU  - Shukla S
+AD  - Mehta Family School of Biosciences and Biomedical Engineering, Indian Institute 
+      of Technology Indore, Simrol, Indore, 453552, India.
+FAU - Kumari, Aditi Pramod
+AU  - Kumari AP
+AD  - Mehta Family School of Biosciences and Biomedical Engineering, Indian Institute 
+      of Technology Indore, Simrol, Indore, 453552, India.
+FAU - Qurashi, Abrar
+AU  - Qurashi A
+AD  - Department of Biotechnology, University of Kashmir, Srinagar, Jammu and Kashmir, 
+      190006, India.
+FAU - Verma, Arun Kumar
+AU  - Verma AK
+AD  - Institute of Lung Health and Immunity, Comprehensive Pneumology Center, Helmholtz 
+      Zentrum Munchen, Max-Lebsche-Platz 31D, 81377, Munchen, Germany.
+FAU - Kumar, Amit
+AU  - Kumar A
+AD  - Mehta Family School of Biosciences and Biomedical Engineering, Indian Institute 
+      of Technology Indore, Simrol, Indore, 453552, India. Electronic address: 
+      amitk@iiti.ac.in.
+LA  - eng
+PT  - Journal Article
+DEP - 20250925
+PL  - Netherlands
+TA  - Int J Biol Macromol
+JT  - International journal of biological macromolecules
+JID - 7909578
+SB  - IM
+OTO - NOTNLM
+OT  - CGG
+OT  - Drosophila
+OT  - Drug repurposing
+OT  - FXTAS
+OT  - Nitazoxanide (NTZ)
+OT  - Small molecules
+COIS- Declaration of competing interest The authors declare the following competing 
+      financial interest(s): These studies are part of our drug discovery approach and 
+      subject of intellectual property protection, including Indian Patent Application 
+      No. 202421100303 and 202421100304, filed on December 18, 2024, as well as related 
+      disclosures.
+EDAT- 2025/09/28 01:02
+MHDA- 2025/09/28 01:02
+CRDT- 2025/09/27 19:28
+PHST- 2025/04/03 00:00 [received]
+PHST- 2025/08/05 00:00 [revised]
+PHST- 2025/09/22 00:00 [accepted]
+PHST- 2025/09/28 01:02 [pubmed]
+PHST- 2025/09/28 01:02 [medline]
+PHST- 2025/09/27 19:28 [entrez]
+AID - S0141-8130(25)08421-1 [pii]
+AID - 10.1016/j.ijbiomac.2025.147864 [doi]
+PST - aheadofprint
+SO  - Int J Biol Macromol. 2025 Sep 25;329(Pt 2):147864. doi: 
+      10.1016/j.ijbiomac.2025.147864.
+
+PMID- 40980401
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20250922
+LR  - 20250924
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 5
+DP  - 2025
+TI  - Age-dependent impairment of dopamine D1 receptor signalling in mouse striatum by 
+      FMR1 variant P626L.
+PG  - fcaf338
+LID - 10.1093/braincomms/fcaf338 [doi]
+LID - fcaf338
+AB  - Non-coding CGG repeat expansions in fragile X messenger ribonucleoprotein 1 
+      (FMR1) gene lead to fragile X-related disorders. Other than the CGG repeat 
+      expansion, several FMR1 coding variants have recently been identified to impair 
+      the molecular functions of fragile X messenger ribonucleoprotein 1 (FMRP), 
+      implicating in FMR1-associated phenotypes. This study aims to investigate the 
+      pathogenic role of a novel FMR1 missense variant from a parkinsonism patient 
+      without the typical CGG repeat expansion. Pathogenicity of the FMRP-P626L mutant 
+      was predicted using in silico analysis and structural prediction. A mouse model 
+      of FMRP-P608L mutation matched with the human FMRP-P626L was established. The 
+      effects on dopamine pathway in FMRP-P608L mice were investigated using 
+      behavioural test, immunohistochemistry, ELISA, quantitative PCR (qPCR), western 
+      blotting, co-immunoprecipitation and pharmacological intervention. We identified 
+      a missense variant (c.1877 C>T, p.P626L) in coding region of FMR1 gene from a 
+      patient diagnosed with progressive rigidity and bradykinesia, which was predicted 
+      to be a damaging mutation. The corresponding mutation (P608L) mice at 6 months 
+      old exhibited impaired motor behaviours and decreased in striatal dopamine level 
+      in an age-dependent fashion. The mutant reduced FMRP binding to G protein-coupled 
+      receptor kinase 2 (GRK2), which resulted in abnormal localization of GRK2 and 
+      impairment of dopamine D1 receptor (D1R) pathways. Administration of D1R agonist 
+      rescued the motor disabilities observed in the mutation mice. This is the first 
+      report linking a point mutation in FMR1 to parkinsonism, demonstrating that the 
+      FMRP-P608L mutation impairs the D1R pathway by reducing its binding to GRK2. Our 
+      findings enhance the understanding of pathogenic mechanisms underlying selective 
+      functional impairment by mutations.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Fu, Junyi
+AU  - Fu J
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+FAU - Jiang, Wei
+AU  - Jiang W
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+AD  - Department of Neurology, The Third People's Hospital of Huizhou, Affiliated 
+      Hospital of Guangzhou Medical University, Huizhou, Guangdong 516002, China.
+FAU - Shen, Liping
+AU  - Shen L
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+FAU - Fu, Jiaming
+AU  - Fu J
+AD  - School of of Life Sciences and Biopharmaceutics, Guangdong Pharmaceutical 
+      University, Guangzhou, Guangdong 510006, China.
+FAU - Duan, Xianlai
+AU  - Duan X
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+AD  - Department of Neurology, The Third Hospital of Changsha, Hunan 410015, China.
+FAU - Liu, Detian
+AU  - Liu D
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+AD  - Department of Neurology, Longgang District Central Hospital of Shenzhen, 
+      Shenzhen, Guangdong 510120, China.
+FAU - Long, Jingyi
+AU  - Long J
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+AD  - Department of Human Genetics, Donders Institute for Brain, Cognition and 
+      Behavior, Radboud University Medical Center, Nijmegen 6525 GA, The Netherlands.
+FAU - Ye, Shunhua
+AU  - Ye S
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+AD  - Department of Emergency, Sun Yat-sen Memorial Hospital, Sun Yat-sen University, 
+      Guangzhou, Guangdong 518116, China.
+FAU - Tang, Lingjia
+AU  - Tang L
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+AD  - Department of Geriatrics, The Second Hospital of Ningbo, Ningbo, Zhejiang 315010, 
+      China.
+FAU - Yi, Yong-Hong
+AU  - Yi YH
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+FAU - Long, Yue-Sheng
+AU  - Long YS
+AUID- ORCID: 0000-0002-9184-1475
+AD  - Department of Neurology, Institute of Neuroscience, Key Laboratory of 
+      Neurogenetics and Channelopathies of Guangdong Province and Ministry of Education 
+      of China, The Second Affiliated Hospital of Guangzhou Medical University, 
+      Guangzhou, Guangdong 510260, China.
+LA  - eng
+PT  - Journal Article
+DEP - 20250910
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12448934
+OTO - NOTNLM
+OT  - dopamine receptor
+OT  - fragile X messenger ribonucleoprotein 1 gene
+OT  - fragile X-associated tremor/ataxia syndrome
+OT  - missense mutation
+OT  - parkinsonism
+COIS- The authors report no competing interests that could be perceived as prejudicing 
+      the impartiality of the research reported.
+EDAT- 2025/09/22 12:45
+MHDA- 2025/09/22 12:46
+PMCR- 2025/09/10
+CRDT- 2025/09/22 08:23
+PHST- 2025/03/25 00:00 [received]
+PHST- 2025/08/09 00:00 [revised]
+PHST- 2025/09/04 00:00 [accepted]
+PHST- 2025/09/22 12:46 [medline]
+PHST- 2025/09/22 12:45 [pubmed]
+PHST- 2025/09/22 08:23 [entrez]
+PHST- 2025/09/10 00:00 [pmc-release]
+AID - fcaf338 [pii]
+AID - 10.1093/braincomms/fcaf338 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 Sep 10;7(5):fcaf338. doi: 10.1093/braincomms/fcaf338. 
+      eCollection 2025.
+
+PMID- 40940631
+OWN - NLM
+STAT- Publisher
+LR  - 20250912
+IS  - 1867-0687 (Electronic)
+DP  - 2025 Sep 12
+TI  - Enhanced accuracy and sensitivity in detecting FMR1 CGG repeats: a multicenter 
+      evaluation of a novel PCR-capillary electrophoresis assay.
+LID - 10.1007/s12519-025-00977-5 [doi]
+AB  - BACKGROUND: Fragile X syndrome (FXS) is primarily caused by the expansion of CGG 
+      repeats in the 5' untranslated region of the FMR1 gene. Accurate detection of 
+      expanded FMR1 alleles is essential for timely diagnosis and management. 
+      Triplet-repeat primed PCR is the most widely used method for detecting FXS; 
+      however, it has limitations in detecting low DNA input (< 10 ng/muL) and low-level 
+      mosaicism (< 5%). This study aimed to develop an improved method for detecting 
+      FMR1 CGG repeat expansions, outperforming existing methods in efficiency, 
+      reliability and sensitivity. METHODS: We developed a novel four-primer PCR with 
+      capillary electrophoresis assay (FP-PCR/CE) and validated its performance in 
+      identifying and sizing FMR1 alleles using DNA standards and multi-center clinical 
+      samples (N = 1690). Comparative analyses were performed against the AmplideX FMR1 
+      PCR/CE assay and Southern blot to assess the accuracy, sensitivity, and clinical 
+      reliability of this assay. RESULTS: The FP-PCR/CE assay demonstrated 100% 
+      concordance with DNA standards for CGG repeat sizing and mosaicism detection. It 
+      detected DNA input >/= 2.5 ng/muL and mosaic alleles at a mass fraction as low as 
+      1%. In clinical validation, FP-PCR/CE achieved 100% concordance in FMR1 allele 
+      characterization with both the AmplideX assay and Southern blot, while exhibiting 
+      higher sensitivity for detecting mosaicism. Additionally, the assay identified 
+      AGG interruptions within FMR1 alleles. The FP-PCR/CE assay also reduced testing 
+      time to under 7 h and lowered the cost to < $80 per test. CONCLUSIONS: The 
+      FP-PCR/CE assay is a rapid, accurate, and cost-effective method for FMR1 CGG 
+      repeat analysis, offering improved sensitivity for mosaicism detection. Its 
+      scalability and reliability support its potential for broader use in FXS carrier 
+      screening, clinical diagnosis and research.
+CI  - (c) 2025. The Author(s).
+FAU - Shou, Xin-Yi
+AU  - Shou XY
+AD  - Children's Hospital, Zhejiang University School of Medicine, National Clinical 
+      Research Center for Child Health, National Children's Regional Medical Center, 
+      Hangzhou, China.
+FAU - Zhu, Zhi-Wei
+AU  - Zhu ZW
+AD  - Department of Developmental and Behavioral Pediatrics, Children's Hospital, 
+      Zhejiang University School of Medicine, National Clinical Research Center for 
+      Child Health, National Children's Regional Medical Center, Hangzhou, China.
+FAU - Jin, Hua
+AU  - Jin H
+AD  - Department of Prenatal Diagnosis, Jinan Maternal and Child Health Hospital, 
+      Jinan, China.
+FAU - Hu, Ji-Hong
+AU  - Hu JH
+AD  - Department of Rehabilitation, Hunan Children's Hospital, Hunan, China.
+FAU - Yan, Ti-Zhen
+AU  - Yan TZ
+AD  - Institute of Reproductive Genetics, Dongguan Maternal and Child Health Hospital, 
+      Dongguan, China.
+FAU - Zhong, Qing-Yan
+AU  - Zhong QY
+AD  - Department of Medical Genetics, Liuzhou Matermal and Child Health Care Hospital, 
+      Guangxi, China.
+FAU - Li, Wen-Hao
+AU  - Li WH
+AD  - Department of Developmental and Behavioral Pediatrics, Children's Hospital, 
+      Zhejiang University School of Medicine, National Clinical Research Center for 
+      Child Health, National Children's Regional Medical Center, Hangzhou, China.
+FAU - Mao, Jian-Hua
+AU  - Mao JH
+AD  - Department of Nephrology, Children's Hospital, Zhejiang University School of 
+      Medicine, National Clinical Research Center for Child Health, National Children's 
+      Regional Medical Center & Liangzhu Laboratory, Zhejiang University School of 
+      Medicine, No. 3333, Binsheng Road, Binjiang District, Hangzhou, China. 
+      maojh88@zju.edu.cn.
+FAU - Dong, Min-Yue
+AU  - Dong MY
+AD  - Department of Reproductive Genetics, Women's Hospital, Zhejiang University School 
+      of Medicine, Hangzhou, China. dongmy@zju.edu.cn.
+FAU - Xu, Qiong
+AU  - Xu Q
+AD  - Department of Child Health Care, Children's Hospital of Fudan University, 
+      Shanghai, China. xuqiong@fudan.edu.cn.
+FAU - Ni, Shao-Qing
+AU  - Ni SQ
+AD  - Clinical Trial Institute, Children's Hospital of Zhejiang University School of 
+      Medicine, National Clinical Research Center for Child Health, National Children's 
+      Regional Medical Center, No. 3333, Binsheng Road, Binjiang District, Hangzhou, 
+      China. chnsq@zju.edu.cn.
+AD  - Research Center for Clinical Pharmacy, College of Pharmaceutical Sciences, 
+      Zhejiang University, Hangzhou, China. chnsq@zju.edu.cn.
+LA  - eng
+GR  - 2023C03003/Key Research and Development Program of Zhejiang Province/
+GR  - 82373971/National Natural Science Foundation of China/
+GR  - 2023YFC2706100/Key Technologies Research and Development Program/
+PT  - Journal Article
+DEP - 20250912
+PL  - Switzerland
+TA  - World J Pediatr
+JT  - World journal of pediatrics : WJP
+JID - 101278599
+SB  - IM
+OTO - NOTNLM
+OT  - Capillary electrophoresis
+OT  - Diagnosis
+OT  - FMR1
+OT  - Fragile X syndrome
+OT  - Genetic counseling
+OT  - Trinucleotide repeat expansion
+COIS- Declarations. Conflict of interest: The clinical trial was supported by Xiamen 
+      Biofast Biotechnology Co., Ltd., Xiamen, P.R. China. No other financial or 
+      non-financial benefits have been received or will be received from any party 
+      related directly or indirectly to the subject of this article. Ethical approval: 
+      The study was conducted in accordance with the Declaration of Helsinki and was 
+      approved by the respective institutional ethics committees. The approval numbers 
+      are as follows: Children's Hospital, Zhejiang University School of Medicine: 
+      2020-IEC-003, 2022-IEC-0034-P-01; Women's Hospital, Zhejiang University School of 
+      Medicine: IRB-20200079-K; Jinan Maternity and Child Care Hospital: IEC20200301; 
+      Liuzhou Maternity and Child Healthcare Hospital: YJ202101401; Children's Hospital 
+      of Fudan University: IRB[2022]389; Hunan Children's Hospital: HNSETYYLL2023005. 
+      This study is registered under the trial number ChiCTR2500102175. All enrolled 
+      patients provided written informed consent for molecular analyses prior to the 
+      collection of tissue specimens. The use of residual EDTA-anticoagulated 
+      peripheral blood from previous clinical tests was exempt from informed consent. 
+      Test results were communicated to the patients' physicians, who incorporated the 
+      genetic findings with clinical presentations to establish a final diagnosis.
+EDAT- 2025/09/13 00:29
+MHDA- 2025/09/13 00:29
+CRDT- 2025/09/12 23:30
+PHST- 2025/08/03 00:00 [received]
+PHST- 2025/09/03 00:00 [accepted]
+PHST- 2025/09/01 00:00 [revised]
+PHST- 2025/09/13 00:29 [medline]
+PHST- 2025/09/13 00:29 [pubmed]
+PHST- 2025/09/12 23:30 [entrez]
+AID - 10.1007/s12519-025-00977-5 [pii]
+AID - 10.1007/s12519-025-00977-5 [doi]
+PST - aheadofprint
+SO  - World J Pediatr. 2025 Sep 12. doi: 10.1007/s12519-025-00977-5.
+
 PMID- 40877251
 OWN - NLM
 STAT- MEDLINE
@@ -280,13 +911,17 @@ SO  - Genes (Basel). 2025 Jul 29;16(8):903. doi: 10.3390/genes16080903.
 
 PMID- 40879637
 OWN - NLM
-STAT- Publisher
-LR  - 20250829
+STAT- MEDLINE
+DCOM- 20251001
+LR  - 20251001
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
-DP  - 2025 Jul 15
+VI  - 40
+IP  - 9
+DP  - 2025 Sep
 TI  - Prevalence of NOTCH2NLC and FMR1 Repeat Expansions in Atypical Parkinsonism 
       Compared to Asymptomatic Elderly Individuals.
+PG  - 2002-2008
 LID - 10.1002/mds.30290 [doi]
 AB  - BACKGROUND: Repeat expansions in NOTCH2NLC and FMR1 share clinical features, 
       including parkinsonism and ataxia, resembling atypical parkinsonian syndromes. We 
@@ -430,7 +1065,29 @@ PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
+RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
+RN  - 0 (NOTCH2NLC protein, human)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Intercellular Signaling Peptides and Proteins)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Aged
+MH  - *Fragile X Mental Retardation Protein/genetics
+MH  - *Parkinsonian Disorders/genetics/epidemiology
+MH  - *Supranuclear Palsy, Progressive/genetics/epidemiology
+MH  - Middle Aged
+MH  - Multiple System Atrophy/genetics/epidemiology
+MH  - Prevalence
+MH  - Aged, 80 and over
+MH  - Taiwan/epidemiology
+MH  - Trinucleotide Repeat Expansion
+MH  - *DNA Repeat Expansion/genetics
+MH  - Corticobasal Degeneration/genetics/epidemiology
+MH  - Nerve Tissue Proteins
+MH  - Intercellular Signaling Peptides and Proteins
 OTO - NOTNLM
 OT  - fragile X-associated tremor/ataxia syndrome
 OT  - multiple system atrophy
@@ -438,22 +1095,23 @@ OT  - neuronal intranuclear inclusion body disease
 OT  - progressive supranuclear palsy
 OT  - repeat expansion
 EDAT- 2025/08/29 12:47
-MHDA- 2025/08/29 12:47
+MHDA- 2025/10/01 06:30
 CRDT- 2025/08/29 10:44
 PHST- 2025/06/03 00:00 [revised]
 PHST- 2025/03/17 00:00 [received]
 PHST- 2025/06/23 00:00 [accepted]
-PHST- 2025/08/29 12:47 [medline]
+PHST- 2025/10/01 06:30 [medline]
 PHST- 2025/08/29 12:47 [pubmed]
 PHST- 2025/08/29 10:44 [entrez]
 AID - 10.1002/mds.30290 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2025 Jul 15. doi: 10.1002/mds.30290.
+PST - ppublish
+SO  - Mov Disord. 2025 Sep;40(9):2002-2008. doi: 10.1002/mds.30290. Epub 2025 Jul 15.
 
 PMID- 40778130
 OWN - NLM
-STAT- In-Process
-LR  - 20250827
+STAT- PubMed-not-MEDLINE
+DCOM- 20250914
+LR  - 20250914
 DP  - 2025 Jul 23
 TI  - Long Read Genome Sequencing Elucidates Diverse Functional Consequences of 
       Structural and Repeat Variation in Autism.
@@ -689,13 +1347,13 @@ COIS- Declaration of competing interest The authors have no relevant financial i
       in the products or companies described in this article. All authors consent for 
       publication.
 EDAT- 2025/07/14 00:28
-MHDA- 2025/08/26 00:45
+MHDA- 2025/09/08 08:04
 CRDT- 2025/07/13 19:37
 PHST- 2025/06/01 00:00 [received]
 PHST- 2025/06/27 00:00 [revised]
 PHST- 2025/07/07 00:00 [accepted]
+PHST- 2025/09/08 08:04 [medline]
 PHST- 2025/07/14 00:28 [pubmed]
-PHST- 2025/08/26 00:45 [medline]
 PHST- 2025/07/13 19:37 [entrez]
 AID - S0003-2697(25)00170-8 [pii]
 AID - 10.1016/j.ab.2025.115931 [doi]
@@ -1294,14 +1952,14 @@ MH  - White Matter/diagnostic imaging/pathology
 PMC - PMC12392051
 COIS- Nothing to report.
 EDAT- 2025/06/03 12:33
-MHDA- 2025/08/31 20:45
+MHDA- 2025/09/08 08:00
 PMCR- 2025/08/28
 CRDT- 2025/06/03 08:54
 PHST- 2025/04/06 00:00 [revised]
 PHST- 2025/01/18 00:00 [received]
 PHST- 2025/04/26 00:00 [accepted]
+PHST- 2025/09/08 08:00 [medline]
 PHST- 2025/06/03 12:33 [pubmed]
-PHST- 2025/08/31 20:45 [medline]
 PHST- 2025/06/03 08:54 [entrez]
 PHST- 2025/08/28 00:00 [pmc-release]
 AID - ANA27267 [pii]
@@ -1465,15 +2123,18 @@ SO  - Brain. 2025 Sep 3;148(9):3266-3279. doi: 10.1093/brain/awaf203.
 
 PMID- 40418066
 OWN - NLM
-STAT- Publisher
-LR  - 20250817
+STAT- MEDLINE
+DCOM- 20250908
+LR  - 20250910
 IS  - 1552-485X (Electronic)
 IS  - 1552-4841 (Print)
 IS  - 1552-4841 (Linking)
-DP  - 2025 May 26
+VI  - 198
+IP  - 7
+DP  - 2025 Oct
 TI  - Depression Symptom Trajectories in Mothers With the FMR1 Premutation Vary by CGG 
       Repeat Length: A Longitudinal Study of 73 Women Spanning 20-75 Years of Age.
-PG  - e33033
+PG  - 103-119
 LID - 10.1002/ajmg.b.33033 [doi]
 AB  - Women with the FMR1 premutation (FXpm) are at heightened genetic vulnerability 
       for depression, with risk compounded by the stressors of parenting a disabled 
@@ -1545,6 +2206,7 @@ GR  - F32 DC013934/DC/NIDCD NIH HHS/United States
 GR  - R21 DC017804/DC/NIDCD NIH HHS/United States
 GR  - F31 MH095318/MH/NIMH NIH HHS/United States
 GR  - R01 HD024356/HD/NICHD NIH HHS/United States
+GR  - NH/NIH HHS/United States
 PT  - Journal Article
 DEP - 20250526
 PL  - United States
@@ -1552,7 +2214,24 @@ TA  - Am J Med Genet B Neuropsychiatr Genet
 JT  - American journal of medical genetics. Part B, Neuropsychiatric genetics : the 
       official publication of the International Society of Psychiatric Genetics
 JID - 101235742
+RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
+MH  - Humans
+MH  - Female
+MH  - Longitudinal Studies
+MH  - *Fragile X Mental Retardation Protein/genetics
+MH  - Middle Aged
+MH  - Adult
+MH  - *Depression/genetics
+MH  - Mothers/psychology
+MH  - Aged
+MH  - Fragile X Syndrome/genetics/psychology
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Young Adult
+MH  - Genetic Predisposition to Disease
+MH  - Risk Factors
+MH  - Mutation/genetics
 PMC - PMC12355380
 MID - NIHMS2082990
 OTO - NOTNLM
@@ -1576,20 +2255,20 @@ COIS- Conflict of Interest Disclosure Dr. Berry-Kravis has received funding from
       relevant financial interest in any of the commercial entities listed. The authors 
       have no other conflicts of interest to disclose.
 EDAT- 2025/05/26 12:37
-MHDA- 2025/05/26 12:37
+MHDA- 2025/09/08 12:44
 PMCR- 2026/05/26
 CRDT- 2025/05/26 08:44
 PHST- 2025/04/01 00:00 [revised]
 PHST- 2025/01/22 00:00 [received]
 PHST- 2025/05/07 00:00 [accepted]
 PHST- 2026/05/26 00:00 [pmc-release]
-PHST- 2025/05/26 12:37 [medline]
+PHST- 2025/09/08 12:44 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
 PHST- 2025/05/26 08:44 [entrez]
 AID - 10.1002/ajmg.b.33033 [doi]
-PST - aheadofprint
-SO  - Am J Med Genet B Neuropsychiatr Genet. 2025 May 26:e33033. doi: 
-      10.1002/ajmg.b.33033.
+PST - ppublish
+SO  - Am J Med Genet B Neuropsychiatr Genet. 2025 Oct;198(7):103-119. doi: 
+      10.1002/ajmg.b.33033. Epub 2025 May 26.
 
 PMID- 40417743
 OWN - NLM
@@ -3208,7 +3887,7 @@ SO  - Neurobiol Dis. 2025 Jun 1;209:106903. doi: 10.1016/j.nbd.2025.106903. Epub
 PMID- 40166285
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250424
+LR  - 20250916
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Mar 19
@@ -3286,8 +3965,9 @@ GR  - R01 MH120269/MH/NIMH NIH HHS/United States
 GR  - F30 HD114405/HD/NICHD NIH HHS/United States
 GR  - DP1 MH129957/MH/NIMH NIH HHS/United States
 GR  - U01 DA052715/DA/NIDA NIH HHS/United States
-GR  - F31 NS129317/NS/NINDS NIH HHS/United States
 GR  - U01 DK127405/DK/NIDDK NIH HHS/United States
+GR  - R37 MH120269/MH/NIMH NIH HHS/United States
+GR  - F31 NS129317/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20250319
@@ -6155,7 +6835,7 @@ PMID- 38412259
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240609
-LR  - 20250312
+LR  - 20250906
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -6245,6 +6925,7 @@ AD  - Ann Arbor Veterans Administration Healthcare, Ann Arbor, MI 48109, USA.
 LA  - eng
 GR  - Alzheimer's Association Research Fellowship/
 GR  - RF1 AG062077/AG/NIA NIH HHS/United States
+GR  - T32 GM007863/GM/NIGMS NIH HHS/United States
 GR  - BX004842/VA BLRD/
 GR  - I01 BX004842/BX/BLRD VA/United States
 GR  - R01 NS099280/NS/NINDS NIH HHS/United States
@@ -6583,7 +7264,7 @@ PMID- 38134876
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231225
-LR  - 20250722
+LR  - 20250916
 IS  - 1097-4172 (Electronic)
 IS  - 0092-8674 (Print)
 IS  - 0092-8674 (Linking)
@@ -6702,10 +7383,11 @@ LA  - eng
 GR  - DP1 MH129957/MH/NIMH NIH HHS/United States
 GR  - U01 DA052715/DA/NIDA NIH HHS/United States
 GR  - F30 HD098015/HD/NICHD NIH HHS/United States
-GR  - F31 NS129317/NS/NINDS NIH HHS/United States
 GR  - U01 DK127405/DK/NIDDK NIH HHS/United States
 GR  - R35 GM128903/GM/NIGMS NIH HHS/United States
 GR  - R01 MH120269/MH/NIMH NIH HHS/United States
+GR  - R37 MH120269/MH/NIMH NIH HHS/United States
+GR  - F31 NS129317/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
@@ -8318,7 +9000,7 @@ SO  - Exp Brain Res. 2023 Aug;241(8):1975-1987. doi: 10.1007/s00221-023-06653-2.
 PMID- 37333274
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20240609
+LR  - 20250909
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2023 Jun 7
@@ -8395,6 +9077,7 @@ GR  - RF1 AG062171/AG/NIA NIH HHS/United States
 GR  - R01 NS086810/NS/NINDS NIH HHS/United States
 GR  - P50 HD104463/HD/NICHD NIH HHS/United States
 GR  - RF1 AG062077/AG/NIA NIH HHS/United States
+GR  - T32 GM007863/GM/NIGMS NIH HHS/United States
 GR  - I01 BX004842/BX/BLRD VA/United States
 GR  - P01 NS084974/NS/NINDS NIH HHS/United States
 GR  - P30 AG072931/AG/NIA NIH HHS/United States
