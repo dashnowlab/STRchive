@@ -54,7 +54,7 @@ data <- fromJSON(args[1])
 
 # get unique references used in the json for each entry
 data <- data %>%
-  mutate(references = apply(data[, c("age_onset", "mechanism_detail", "details", "source",
+  mutate(references = apply(data[, c("age_onset", "mechanism_detail", "details",
                                      "prevalence_details", "year", "disease_description")], 1, function(row) {
                                        # Extract content inside square brackets
                                        matches <- unlist(regmatches(row, gregexpr("(?<=\\[)[^\\]]+(?=\\])", row, perl = TRUE)))
