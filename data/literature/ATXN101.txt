@@ -3,7 +3,7 @@ PMID- 40900235
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250903
-LR  - 20250903
+LR  - 20250920
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -261,13 +261,18 @@ SO  - Brain Commun. 2025 May 17;7(3):fcaf188. doi: 10.1093/braincomms/fcaf188.
 
 PMID- 40450087
 OWN - NLM
-STAT- Publisher
-LR  - 20250531
+STAT- MEDLINE
+DCOM- 20250916
+LR  - 20250916
 IS  - 1559-1182 (Electronic)
+IS  - 0893-7648 (Print)
 IS  - 0893-7648 (Linking)
-DP  - 2025 May 31
+VI  - 62
+IP  - 10
+DP  - 2025 Oct
 TI  - Accurate Quantification of Mutant and Wild-Type polyQ Proteins Using Simple 
       Western Capillary Immunoassays.
+PG  - 12768-12790
 LID - 10.1007/s12035-025-05089-9 [doi]
 AB  - Polyglutamine (polyQ) diseases are monogenic fatal neurodegenerative disorders 
       caused by a CAG repeat expansion that is translated into a toxic polyQ tract. 
@@ -323,7 +328,20 @@ PL  - United States
 TA  - Mol Neurobiol
 JT  - Molecular neurobiology
 JID - 8900963
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
+RN  - 0 (Mutant Proteins)
+RN  - 0 (Huntingtin Protein)
 SB  - IM
+MH  - *Peptides/analysis/genetics/metabolism
+MH  - Humans
+MH  - Immunoassay/methods
+MH  - *Mutation/genetics
+MH  - *Mutant Proteins/analysis/metabolism
+MH  - Huntingtin Protein
+MH  - Animals
+MH  - *Blotting, Western/methods
+PMC - PMC12433360
 OTO - NOTNLM
 OT  - Assay development
 OT  - Capillary immunoassay
@@ -336,17 +354,21 @@ COIS- Declarations. Ethics Approval: Not applicable. Consent to Participate: Not
       Financial interest: All authors are employed and paid by VICO Therapeutics B.V. 
       and hold employee stock options. 
 EDAT- 2025/06/01 00:45
-MHDA- 2025/06/01 00:45
+MHDA- 2025/09/16 13:02
+PMCR- 2025/05/31
 CRDT- 2025/05/31 23:20
 PHST- 2025/01/17 00:00 [received]
 PHST- 2025/05/18 00:00 [accepted]
-PHST- 2025/06/01 00:45 [medline]
+PHST- 2025/09/16 13:02 [medline]
 PHST- 2025/06/01 00:45 [pubmed]
 PHST- 2025/05/31 23:20 [entrez]
+PHST- 2025/05/31 00:00 [pmc-release]
 AID - 10.1007/s12035-025-05089-9 [pii]
+AID - 5089 [pii]
 AID - 10.1007/s12035-025-05089-9 [doi]
-PST - aheadofprint
-SO  - Mol Neurobiol. 2025 May 31. doi: 10.1007/s12035-025-05089-9.
+PST - ppublish
+SO  - Mol Neurobiol. 2025 Oct;62(10):12768-12790. doi: 10.1007/s12035-025-05089-9. Epub 
+      2025 May 31.
 
 PMID- 39820777
 OWN - NLM
