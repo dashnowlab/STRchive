@@ -1,61 +1,175 @@
 
+PMID- 40961119
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250917
+LR  - 20250921
+IS  - 1932-6203 (Electronic)
+IS  - 1932-6203 (Linking)
+VI  - 20
+IP  - 9
+DP  - 2025
+TI  - Transcriptomic analysis implicates the involvement of RBM20 in Fuchs' endothelial 
+      corneal dystrophy with TCF4 repeat expansion.
+PG  - e0332512
+LID - 10.1371/journal.pone.0332512 [doi]
+LID - e0332512
+AB  - BACKGROUND: Late-onset Fuchs' endothelial corneal dystrophy (FECD) is a 
+      degenerative disease of cornea manifesting during the fourth decade of life or 
+      later. An intronic trinucleotide repeat expansion (CTG18.1) in the transcription 
+      factor 4 (TCF4) gene is estimated to account for two thirds of FECD cases. There 
+      is a high degree of similarity between the transcriptomic profiles with (RE+) and 
+      without (RE-) the expansion. The molecular mechanisms of FECD and the difference 
+      between the two FECD types remain to be elucidated. METHOD: Analyses were based 
+      on publicly available RNA sequencing datasets of human corneal endothelial 
+      tissues. We compared the distributions of differentially expressed genes between 
+      the RE+ and RE- transcriptomic profiles for a given co-expression network module. 
+      Upstream regulator analysis, alternative splicing analysis, motif enrichment 
+      analysis, and structure prediction were conducted. RESULTS: The expression levels 
+      of ribonucleic acid binding motif protein 20 (RBM20) were upregulated in both RE+ 
+      cases and RE+ controls. Consistently, its motif was enriched in the skipped exon 
+      events of RE+ subjects compared with RE- subjects. There were skipped exon events 
+      in three genes-DST, FNBP1 and SORBS1- consistently identified in RE+ subjects out 
+      of the documented RBM20 target genes in the literature. CONCLUSION: RBM20 may 
+      represent an RE+ specific factor in the pathogenesis of FECD. The increase of 
+      RBM20 expression in RE+ individuals may contribute to the disease by repressing 
+      the inclusion of exons.
+CI  - Copyright: (c) 2025 Zhang et al. This is an open access article distributed under 
+      the terms of the Creative Commons Attribution License, which permits unrestricted 
+      use, distribution, and reproduction in any medium, provided the original author 
+      and source are credited.
+FAU - Zhang, Xunzhi
+AU  - Zhang X
+AD  - Eugene McDermott Center for Human Growth and Development, University of Texas 
+      Southwestern Medical Center, Dallas, Texas, United States of America.
+FAU - Yu, Ze
+AU  - Yu Z
+AUID- ORCID: 0000-0002-0583-1351
+AD  - Eugene McDermott Center for Human Growth and Development, University of Texas 
+      Southwestern Medical Center, Dallas, Texas, United States of America.
+FAU - Westfall, Aundrea K
+AU  - Westfall AK
+AD  - Eugene McDermott Center for Human Growth and Development, University of Texas 
+      Southwestern Medical Center, Dallas, Texas, United States of America.
+AD  - Children's Medical Center Research Institute, Dallas, Texas, United States of 
+      America.
+FAU - Han, Kunyi
+AU  - Han K
+AD  - Eugene McDermott Center for Human Growth and Development, University of Texas 
+      Southwestern Medical Center, Dallas, Texas, United States of America.
+AD  - Department of Statistics, University of Wisconsin, Madison, Wisconsin, United 
+      States of America.
+FAU - Mootha, V Vinod
+AU  - Mootha VV
+AD  - Eugene McDermott Center for Human Growth and Development, University of Texas 
+      Southwestern Medical Center, Dallas, Texas, United States of America.
+AD  - Department of Ophthalmology, University of Texas Southwestern Medical Center, 
+      Dallas, Texas, United States of America.
+FAU - Xing, Chao
+AU  - Xing C
+AUID- ORCID: 0000-0002-1838-0502
+AD  - Eugene McDermott Center for Human Growth and Development, University of Texas 
+      Southwestern Medical Center, Dallas, Texas, United States of America.
+AD  - Lyda Hill Department of Bioinformatics, University of Texas Southwestern Medical 
+      Center, Dallas, Texas, United States of America.
+AD  - O'Donnell School of Public Health, University of Texas Southwestern Medical 
+      Center, Dallas, Texas, United States of America.
+LA  - eng
+PT  - Journal Article
+DEP - 20250917
+PL  - United States
+TA  - PLoS One
+JT  - PloS one
+JID - 101285081
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (TCF4 protein, human)
+RN  - 0 (RNA-Binding Proteins)
+SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology/metabolism
+MH  - *Transcription Factor 4/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *RNA-Binding Proteins/genetics/metabolism
+MH  - Gene Expression Profiling
+MH  - *Transcriptome
+MH  - Alternative Splicing
+PMC - PMC12443318
+COIS- The authors have declared that no competing interests exist.
+EDAT- 2025/09/17 18:31
+MHDA- 2025/09/17 18:32
+PMCR- 2025/09/17
+CRDT- 2025/09/17 13:44
+PHST- 2024/12/23 00:00 [received]
+PHST- 2025/09/01 00:00 [accepted]
+PHST- 2025/09/17 18:32 [medline]
+PHST- 2025/09/17 18:31 [pubmed]
+PHST- 2025/09/17 13:44 [entrez]
+PHST- 2025/09/17 00:00 [pmc-release]
+AID - PONE-D-24-59284 [pii]
+AID - 10.1371/journal.pone.0332512 [doi]
+PST - epublish
+SO  - PLoS One. 2025 Sep 17;20(9):e0332512. doi: 10.1371/journal.pone.0332512. 
+      eCollection 2025.
+
 PMID- 40852795
 OWN - NLM
 STAT- Publisher
-LR  - 20250825
+LR  - 20250922
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Linking)
+VI  - 27
+IP  - 11
 DP  - 2025 Aug 21
 TI  - Rare variants in MIR184 are a novel genetic cause of Fuchs endothelial corneal 
       dystrophy.
 PG  - 101562
 LID - S1098-3600(25)00209-6 [pii]
 LID - 10.1016/j.gim.2025.101562 [doi]
-AB  - PURPOSE: To identify novel genetic causes of Fuchs Endothelial Corneal Dystrophy 
+AB  - PURPOSE: To identify novel genetic causes of Fuchs endothelial corneal dystrophy 
       (FECD) within a genetically unsolved patient cohort lacking repeat expansions in 
       the TCF4 gene (Exp-). METHODS: A rare variant analysis framework (CoCoRV) was 
-      applied to exome data, in combination with in silico modelling, luciferase 
-      reporter and RNA-Seq analysis to characterise transcriptome-wide consequences of 
+      applied to exome data, in combination with in silico modeling, luciferase 
+      reporter, and RNA-seq analysis to characterize transcriptome-wide consequences of 
       identified variants. RESULTS: A gene burden analysis identified MIR184, a 
       microRNA encoding gene, to be enriched for rare pathogenic variants within the 
-      studied Exp- FECD cohort. In total, two non-coding rare variants were identified 
-      in four unrelated FECD probands: NR_029705.1:n.58G>A and n.73G>T. Both variants 
-      altered highly conserved mature sequence residues, were predicted to induce 
-      hairpin structural changes and were experimentally determined to disrupt 
-      miRNA-mRNA interactions. RNA-Seq of transfected human corneal endothelial cells 
-      revealed that the mutants elicited distinct transcriptomic profiles. Enriched 
-      KEGG pathways included PI3K-Akt signaling, focal adhesion, and immune response, 
+      studied Exp- FECD cohort. In total, 2 noncoding rare variants were identified in 
+      4 unrelated FECD probands: NR_029705.1:n.58G>A and n.73G>T. Both variants altered 
+      highly conserved mature sequence residues, were predicted to induce hairpin 
+      structural changes, and were experimentally determined to disrupt microRNA-mRNA 
+      interactions. RNA-seq of transfected human corneal endothelial cells revealed 
+      that the mutants elicited distinct transcriptomic profiles. Enriched KEGG 
+      pathways included PI3K-Akt signaling, focal adhesion, and immune response, 
       revealing shared pathogenic mechanisms between MIR184-associated FECD and the 
       more common TCF4 repeat expansion-mediated form of disease. CONCLUSION: MIR184 
-      variants are a novel rare genetic cause of FECD and common pathways of 
+      variants are a novel rare genetic cause of FECD, and common pathways of 
       transcriptomic dysregulation are shared across genetically distinct subtypes of 
       the disease. These pathways may serve as future gene agnostic targets for 
       therapeutic interventions.
-CI  - Copyright (c) 2025. Published by Elsevier Inc.
+CI  - Copyright (c) 2025 The Authors. Published by Elsevier Inc. All rights reserved.
 FAU - Abreu Costa, Marcos
 AU  - Abreu Costa M
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Sadan, Amanda N
 AU  - Sadan AN
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Bhattacharyya, Nihar
 AU  - Bhattacharyya N
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Chai, Niuzheng
 AU  - Chai N
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Zarouchlioti, Christina
 AU  - Zarouchlioti C
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Liu, Siyin
 AU  - Liu S
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Szabo, Anita
 AU  - Szabo A
-AD  - UCL Institute of Ophthalmology, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom.
 FAU - Murphy, Cian
 AU  - Murphy C
-AD  - UCL Genetics Institute, London, UK.
+AD  - UCL Genetics Institute, London, United Kingdom.
 FAU - Dudakova, Lubica
 AU  - Dudakova L
 AD  - Department of Paediatrics and Inherited Metabolic Disorders, First Faculty of 
@@ -63,20 +177,20 @@ AD  - Department of Paediatrics and Inherited Metabolic Disorders, First Faculty
       Czech Republic.
 FAU - Muthusamy, Kirithika
 AU  - Muthusamy K
-AD  - UCL Institute of Ophthalmology, London, UK; Moorfields Eye Hospital NHS 
-      Foundation Trust, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom; Moorfields Eye Hospital 
+      NHS Foundation Trust, London, United Kingdom.
 FAU - Skalicka, Pavlina
 AU  - Skalicka P
 AD  - Department of Ophthalmology, First Faculty of Medicine, Charles University and 
       General University Hospital in Prague, Prague, Czech Republic.
 FAU - Moghul, Ismail
 AU  - Moghul I
-AD  - UCL Institute of Ophthalmology, London, UK; Moorfields Eye Hospital NHS 
-      Foundation Trust, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom; Moorfields Eye Hospital 
+      NHS Foundation Trust, London, United Kingdom.
 FAU - Pontikos, Nikolas
 AU  - Pontikos N
-AD  - UCL Institute of Ophthalmology, London, UK; Moorfields Eye Hospital NHS 
-      Foundation Trust, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom; Moorfields Eye Hospital 
+      NHS Foundation Trust, London, United Kingdom.
 FAU - Liskova, Petra
 AU  - Liskova P
 AD  - Department of Paediatrics and Inherited Metabolic Disorders, First Faculty of 
@@ -85,12 +199,13 @@ AD  - Department of Paediatrics and Inherited Metabolic Disorders, First Faculty
       University and General University Hospital in Prague, Prague, Czech Republic.
 FAU - Tuft, Stephen J
 AU  - Tuft SJ
-AD  - UCL Institute of Ophthalmology, London, UK; Moorfields Eye Hospital NHS 
-      Foundation Trust, London, UK.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom; Moorfields Eye Hospital 
+      NHS Foundation Trust, London, United Kingdom.
 FAU - Davidson, Alice E
 AU  - Davidson AE
-AD  - UCL Institute of Ophthalmology, London, UK; Moorfields Eye Hospital NHS 
-      Foundation Trust, London, UK. Electronic address: alice.davidson@ucl.ac.uk.
+AD  - UCL Institute of Ophthalmology, London, United Kingdom; Moorfields Eye Hospital 
+      NHS Foundation Trust, London, United Kingdom. Electronic address: 
+      alice.davidson@ucl.ac.uk.
 LA  - eng
 PT  - Journal Article
 DEP - 20250821
@@ -102,23 +217,29 @@ JID - 9815831
 SB  - IM
 OTO - NOTNLM
 OT  - Fuchs endothelial corneal dystrophy
+OT  - Gene burden
 OT  - MIR184
-OT  - RNA-Seq
-OT  - gene burden
-OT  - microRNA
+OT  - MicroRNA
+OT  - RNA-seq
+COIS- Conflict of Interest Alice E. Davidson has previously acted as a paid consultant 
+      for Triplet Therapeutics Ltd, LoQus23 Therapeutics Ltd, and Design Therapeutics 
+      Ltd and had a research collaboration with ProQR Therapeutics. Alice E. Davidson 
+      has an ongoing research collaboration with Prime Medicine. This work was 
+      performed within the framework of ERN-EYE. All other authors declare no conflicts 
+      of interest.
 EDAT- 2025/08/25 08:44
 MHDA- 2025/08/25 08:44
 CRDT- 2025/08/25 05:58
 PHST- 2025/04/01 00:00 [received]
 PHST- 2025/08/13 00:00 [revised]
 PHST- 2025/08/13 00:00 [accepted]
-PHST- 2025/08/25 08:44 [medline]
 PHST- 2025/08/25 08:44 [pubmed]
+PHST- 2025/08/25 08:44 [medline]
 PHST- 2025/08/25 05:58 [entrez]
 AID - S1098-3600(25)00209-6 [pii]
 AID - 10.1016/j.gim.2025.101562 [doi]
 PST - aheadofprint
-SO  - Genet Med. 2025 Aug 21:101562. doi: 10.1016/j.gim.2025.101562.
+SO  - Genet Med. 2025 Aug 21;27(11):101562. doi: 10.1016/j.gim.2025.101562.
 
 PMID- 40767442
 OWN - NLM
