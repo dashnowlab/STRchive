@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "STRtr-kit-evidence.schema",
+  "title": "STRtr-kit Evidence",
+  "description": "Evidence to support pathogenicity of tandem repeat loci in human disease. Each entry describes evidence from a single publication or similar source. There will typically be multiple entries per locus, each describing evidence from different sources.",
+  "citation_format": "In free text strings: 'Some text [@doi:12345; @pmid:12345]'. In regular lists: ['doi:12345', 'pmid:12345']",
+  "type": "object",
+  "properties": {
+    "id": {
+      "section": "Locus",
+      "title": "ID",
+      "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II.",
+      "placeholder": "[disease_id]_[gene]",
+      "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
+      "type": ["string"],
+      "pattern": "^[\\S]+_[\\S]+$"
+    },
+    "disease_id": {
+      "section": "Locus",
+      "title": "Disease ID",
+      "description": "Disease abbreviation",
+      "examples": ["CANVAS"],
+      "type": ["string"]
+    },
+    "gene": {
+      "section": "Locus",
+      "title": "Gene",
+      "description": "Gene symbol",
+      "examples": ["RFC1"],
+      "type": ["string"]
+    },
+    "citation": {
+      "section": "Source",
+      "title": "Citation",
+      "description": "Citation for the source of the evidence",
+      "examples": ["pmid:29507423"],
+      "type": ["string", "null"],
+      "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
+
+    },
+    "genetic_evidence": {
+      "section": "Genetic Evidence",
+      "title": "Genetic Evidence",
+      "description": "One or more pieces of genetic evidence provided in the source",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": "object",
+        "properties": {
+          "genetic_evidence_type": {
+            "title": "Genetic Evidence Type",
+            "description": "The type(s) of genetic evidence provided in the source",
+            "type": ["string", "null"],
+            "enum": [
+              "probands",
+              "allele_effect",
+              "method",
+              "segregation",
+              "case_control"
+            ],
+            "enum_descriptions": {
+              "probands": "Unrelated Probands",
+              "allele_effect": "Relationship between allele size and/or motif sequence and phenotype e.g. age of onset and/or severity",
+              "method": "Method of predicting Pathogenicity",
+              "segregation": "Linkage Region for disease",
+              "case_control": "Case-control study"
+            }
+          },
+          "probands_count": {
+            "title": "Number of probands",
+            "description": "Number of probands with the pathogenic expansion reported in the source",
+            "type": ["integer", "null"],
+            "minimum": 0
+          },
+          "points_genetic": {
+            "title": "Points (Genetic Evidence)",
+            "description": "Points assigned to this locus based on the genetic evidence provided in the source, according to the STRtr-kit scoring system.",
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 12
+          },
+          "notes_genetic": {
+            "title": "Notes (Genetic Evidence)",
+            "description": "Additional notes about the genetic evidence provided in the source including point upgrades/downgrades",
+            "examples": [
+              "Segregation analysis in 3 affected families with LOD score of 3.5"
+            ],
+            "type": ["string", "null"],
+            "multiline": true
+          }
+        },
+        "required": ["genetic_evidence_type", "points_genetic"]
+      },
+    "experimental_evidence": {
+      "section": "Experimental Evidence",
+      "title": "Experimental Evidence",
+      "description": "One or more pieces of experimental evidence provided in the source",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": "object",
+        "properties": {
+          "experimental_evidence_type": {
+            "title": "Experimental Evidence Type",
+            "description": "The type(s) of experimental evidence provided in the source",
+            "type": ["string", "null"],
+            "enum": [
+              "probands",
+              "allele_effect",
+              "method",
+              "segregation",
+              "case_control"
+            ],
+            "enum_descriptions": {
+              "function_biochemical": "Biochemical function",
+              "function_protein_interaction": "Protein Interaction function",
+              "function_regulatory_impact": "Regulatory Impact function",
+              "altfunction_patient_cells": "Functional Alteration in Patient Cells Model",
+              "altfunction_non_patient_cells": "Functional Alteration in Non-patient Cells Model",
+              "model_non_human": "Non-Human Model Organism",
+              "model_cell_culture": "Cell Culture Model",
+              "rescue_human_control": "Human (control) Rescue",
+              "rescue_non_human_model_organism": "Non-Human Model Organism Rescue",
+              "rescue_cell_culture": "Cell Culture Rescue",
+              "rescue_patient_cells": "Patient Cells Rescue"
+            }
+          },
+          "points_experimental": {
+            "title": "Points (Experimental Evidence)",
+            "description": "Points assigned to this locus based on the experimental evidence provided in the source, according to the STRtr-kit scoring system.",
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 6
+          },
+          "notes_experimental": {
+            "title": "Notes (Experimental Evidence)",
+            "description": "Additional notes about the experimental evidence provided in the source including point upgrades/downgrades",
+            "examples": [
+              "Functional alteration demonstrated in patient-derived cell lines"
+            ],
+            "type": ["string", "null"],
+            "multiline": true
+          }
+        },
+        "required": ["experimental_evidence_type", "points_experimental"]
+        }
+      }
+    }
+  }
+}
