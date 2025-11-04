@@ -1,13 +1,17 @@
 
 PMID- 40886825
 OWN - NLM
-STAT- Publisher
-LR  - 20250913
+STAT- MEDLINE
+DCOM- 20251015
+LR  - 20251015
 IS  - 1673-8527 (Print)
 IS  - 1673-8527 (Linking)
-DP  - 2025 Aug 29
+VI  - 52
+IP  - 10
+DP  - 2025 Oct
 TI  - Rapamycin alleviates neurodegeneration in a Drosophila model of spinocerebellar 
       ataxia type 51.
+PG  - 1259-1267
 LID - S1673-8527(25)00232-2 [pii]
 LID - 10.1016/j.jgg.2025.08.010 [doi]
 AB  - Spinocerebellar ataxia (SCA) type 51 is a neurodegenerative disease caused by CAG 
@@ -70,10 +74,10 @@ AD  - Department of Neurology, Peking University First Hospital, Beijing 100034,
       China. Electronic address: jianwendeng@pkufh.com.
 FAU - Xiong, Hui
 AU  - Xiong H
-AD  - Department of Neurology, Beijing Children's Hospital, Capital Medical University, 
-      National Center for Children's Health, Beijing 100045, China; Department of 
-      Neurology, Children's Medical Center, Peking University First Hospital, Beijing 
-      102627, China. Electronic address: xh_bjbj@163.com.
+AD  - Department of Neurology, Children's Medical Center, Peking University First 
+      Hospital, Beijing 102627, China; Department of Neurology, Beijing Children's 
+      Hospital, Capital Medical University, National Center for Children's Health, 
+      Beijing 100045, China. Electronic address: xh_bjbj@163.com.
 LA  - eng
 PT  - Journal Article
 DEP - 20250829
@@ -81,7 +85,27 @@ PL  - China
 TA  - J Genet Genomics
 JT  - Journal of genetics and genomics = Yi chuan xue bao
 JID - 101304616
+RN  - W36ZG6FT64 (Sirolimus)
+RN  - 26700-71-0 (polyglutamine)
+RN  - EC 2.7.11.1 (TOR Serine-Threonine Kinases)
+RN  - 0 (Drosophila Proteins)
+RN  - 0 (Peptides)
+RN  - 0 (Repressor Proteins)
 SB  - IM
+MH  - Animals
+MH  - Disease Models, Animal
+MH  - *Spinocerebellar Ataxias/drug therapy/genetics/pathology/metabolism
+MH  - *Sirolimus/pharmacology
+MH  - Animals, Genetically Modified
+MH  - Humans
+MH  - Autophagy/drug effects
+MH  - TOR Serine-Threonine Kinases/metabolism
+MH  - Drosophila melanogaster/genetics
+MH  - Drosophila Proteins/genetics/metabolism
+MH  - Peptides/genetics/metabolism
+MH  - Drosophila
+MH  - Repressor Proteins/genetics/metabolism
+MH  - Neurons/drug effects/metabolism/pathology
 OTO - NOTNLM
 OT  - Drosophila model
 OT  - PolyQ disease
@@ -90,19 +114,19 @@ OT  - Spinocerebellar ataxia type 51
 OT  - THAP11 gene
 COIS- Conflict of interest The authors report no competing interests.
 EDAT- 2025/09/01 00:45
-MHDA- 2025/09/01 00:45
+MHDA- 2025/10/16 05:32
 CRDT- 2025/08/31 19:13
 PHST- 2025/02/25 00:00 [received]
 PHST- 2025/08/23 00:00 [revised]
 PHST- 2025/08/26 00:00 [accepted]
+PHST- 2025/10/16 05:32 [medline]
 PHST- 2025/09/01 00:45 [pubmed]
-PHST- 2025/09/01 00:45 [medline]
 PHST- 2025/08/31 19:13 [entrez]
 AID - S1673-8527(25)00232-2 [pii]
 AID - 10.1016/j.jgg.2025.08.010 [doi]
-PST - aheadofprint
-SO  - J Genet Genomics. 2025 Aug 29:S1673-8527(25)00232-2. doi: 
-      10.1016/j.jgg.2025.08.010.
+PST - ppublish
+SO  - J Genet Genomics. 2025 Oct;52(10):1259-1267. doi: 10.1016/j.jgg.2025.08.010. Epub 
+      2025 Aug 29.
 
 PMID- 40488180
 OWN - NLM

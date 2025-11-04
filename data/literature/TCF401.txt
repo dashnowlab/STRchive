@@ -1,4 +1,82 @@
 
+PMID- 41074692
+OWN - NLM
+STAT- Publisher
+LR  - 20251011
+IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Linking)
+DP  - 2025 Oct 11
+TI  - Association of Non-Coding Repeat Expansions with Parkinson's Disease Risk: 
+      Evidence from a UK Biobank-Based Whole-Genome Sequencing Study.
+LID - 10.1002/mds.70081 [doi]
+AB  - BACKGROUND: Nucleotide repeat expansions are a potential factor in Parkinson's 
+      disease (PD) risk, but previous studies were inconsistent. We investigated 14 
+      non-coding repeat expansion genes (C9ORF72, FMR1, AFF2, ATXN8OS, ATXN10, CNBP, 
+      CSTB, DMPK, FXN, NOP56, NOTCH2NLC, PPP2R2B, RFC1, and TCF4) in a large cohort. 
+      METHODS: We used whole-genome sequencing (WGS) data from the United Kingdom (UK) 
+      Biobank, including 3588 PD cases and 388,532 controls. Repeat sizes were 
+      determined using ExpansionHunter. We also conducted a sensitivity analysis. 
+      RESULTS: After Bonferroni correction, no genes showed a statistically significant 
+      association with PD risk. However, nominal associations were found for pathogenic 
+      repeats in C9ORF72 (odds ratio [OR] = 1.780, P = 0.037) and for gray zone repeats 
+      in FMR1 (OR = 0.695, P = 0.016), which suggests a potential protective effect. 
+      CONCLUSION: Our large-scale study provides hypothesis-generating evidence. We 
+      report a nominal association linking pathogenic C9ORF72 repeats to increased PD 
+      risk and, importantly, a novel observation that FMR1 repeats may be protective. (c) 
+      2025 International Parkinson and Movement Disorder Society.
+CI  - (c) 2025 International Parkinson and Movement Disorder Society.
+FAU - Hu, Zhen
+AU  - Hu Z
+AD  - Department of Neurology and Institute of Neurology, Ruijin Hospital, Shanghai 
+      Jiao Tong University School of Medicine, Shanghai, China.
+FAU - Yan, Qin-Qin
+AU  - Yan QQ
+AD  - Department of Radiology, Ruijin Hospital, Shanghai Jiao Tong University School of 
+      Medicine, Shanghai, China.
+FAU - Wan, Jing-Jin
+AU  - Wan JJ
+AD  - Department of Surgery, Renji Hospital, Shanghai Jiao Tong University School of 
+      Medicine, Shanghai, China.
+FAU - Fan, Yu
+AU  - Fan Y
+AUID- ORCID: 0000-0003-4437-1682
+AD  - Department of Neurology and Institute of Neurology, Ruijin Hospital, Shanghai 
+      Jiao Tong University School of Medicine, Shanghai, China.
+FAU - Liu, Jun
+AU  - Liu J
+AUID- ORCID: 0000-0001-8300-8646
+AD  - Department of Neurology and Institute of Neurology, Ruijin Hospital, Shanghai 
+      Jiao Tong University School of Medicine, Shanghai, China.
+LA  - eng
+GR  - 2024M752018/China Postdoctoral Science Foundation/
+GR  - 81873778/National Natural Science Foundation of China/
+GR  - 82071415/National Natural Science Foundation of China/
+GR  - 82230040/National Natural Science Foundation of China/
+GR  - 82401649/National Natural Science Foundation of China/
+PT  - Journal Article
+DEP - 20251011
+PL  - United States
+TA  - Mov Disord
+JT  - Movement disorders : official journal of the Movement Disorder Society
+JID - 8610688
+SB  - IM
+OTO - NOTNLM
+OT  - Parkinson's disease
+OT  - non-coding repeat expansion
+OT  - whole-genome sequencing
+EDAT- 2025/10/11 12:31
+MHDA- 2025/10/11 12:31
+CRDT- 2025/10/11 06:13
+PHST- 2025/09/15 00:00 [revised]
+PHST- 2025/08/13 00:00 [received]
+PHST- 2025/09/19 00:00 [accepted]
+PHST- 2025/10/11 12:31 [medline]
+PHST- 2025/10/11 12:31 [pubmed]
+PHST- 2025/10/11 06:13 [entrez]
+AID - 10.1002/mds.70081 [doi]
+PST - aheadofprint
+SO  - Mov Disord. 2025 Oct 11. doi: 10.1002/mds.70081.
+
 PMID- 40961119
 OWN - NLM
 STAT- MEDLINE
@@ -113,13 +191,14 @@ SO  - PLoS One. 2025 Sep 17;20(9):e0332512. doi: 10.1371/journal.pone.0332512.
 
 PMID- 40852795
 OWN - NLM
-STAT- Publisher
-LR  - 20250922
+STAT- MEDLINE
+DCOM- 20251104
+LR  - 20251104
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Linking)
 VI  - 27
 IP  - 11
-DP  - 2025 Aug 21
+DP  - 2025 Nov
 TI  - Rare variants in MIR184 are a novel genetic cause of Fuchs endothelial corneal 
       dystrophy.
 PG  - 101562
@@ -214,7 +293,21 @@ TA  - Genet Med
 JT  - Genetics in medicine : official journal of the American College of Medical 
       Genetics
 JID - 9815831
+RN  - 0 (MicroRNAs)
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (TCF4 protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology
+MH  - *MicroRNAs/genetics
+MH  - Transcription Factor 4/genetics
+MH  - Male
+MH  - Female
+MH  - Genetic Predisposition to Disease
+MH  - Middle Aged
+MH  - Exome/genetics
+MH  - Mutation
+MH  - Transcriptome/genetics
 OTO - NOTNLM
 OT  - Fuchs endothelial corneal dystrophy
 OT  - Gene burden
@@ -228,18 +321,19 @@ COIS- Conflict of Interest Alice E. Davidson has previously acted as a paid cons
       performed within the framework of ERN-EYE. All other authors declare no conflicts 
       of interest.
 EDAT- 2025/08/25 08:44
-MHDA- 2025/08/25 08:44
+MHDA- 2025/11/04 12:28
 CRDT- 2025/08/25 05:58
 PHST- 2025/04/01 00:00 [received]
 PHST- 2025/08/13 00:00 [revised]
 PHST- 2025/08/13 00:00 [accepted]
 PHST- 2025/08/25 08:44 [pubmed]
-PHST- 2025/08/25 08:44 [medline]
+PHST- 2025/11/04 12:28 [medline]
 PHST- 2025/08/25 05:58 [entrez]
 AID - S1098-3600(25)00209-6 [pii]
 AID - 10.1016/j.gim.2025.101562 [doi]
-PST - aheadofprint
-SO  - Genet Med. 2025 Aug 21;27(11):101562. doi: 10.1016/j.gim.2025.101562.
+PST - ppublish
+SO  - Genet Med. 2025 Nov;27(11):101562. doi: 10.1016/j.gim.2025.101562. Epub 2025 Aug 
+      21.
 
 PMID- 40767442
 OWN - NLM
@@ -362,13 +456,18 @@ SO  - Invest Ophthalmol Vis Sci. 2025 Aug 1;66(11):14. doi: 10.1167/iovs.66.11.1
 
 PMID- 40720054
 OWN - NLM
-STAT- Publisher
-LR  - 20250728
+STAT- MEDLINE
+DCOM- 20251101
+LR  - 20251103
 IS  - 1179-2000 (Electronic)
+IS  - 1177-1062 (Print)
 IS  - 1177-1062 (Linking)
-DP  - 2025 Jul 28
+VI  - 29
+IP  - 6
+DP  - 2025 Nov
 TI  - Long-Range PCR and Nanopore Sequencing Enables High-Throughput Detection of TCF4 
       Trinucleotide Repeat Expansions in Fuchs Endothelial Corneal Dystrophy.
+PG  - 801-812
 LID - 10.1007/s40291-025-00803-8 [doi]
 AB  - INTRODUCTION: Trinucleotide repeat expansion in CTG18.1, in intron 2 of TCF4 (MIM 
       *602272, #613267), is the main cause of Fuchs endothelial corneal dystrophy 
@@ -445,7 +544,20 @@ PL  - New Zealand
 TA  - Mol Diagn Ther
 JT  - Molecular diagnosis & therapy
 JID - 101264260
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (TCF4 protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics/diagnosis
+MH  - *Transcription Factor 4/genetics
+MH  - *Trinucleotide Repeat Expansion
+MH  - *Polymerase Chain Reaction/methods
+MH  - *Nanopore Sequencing/methods
+MH  - High-Throughput Nucleotide Sequencing/methods
+MH  - Alleles
+MH  - Male
+MH  - Female
+PMC - PMC12578760
 COIS- Declarations. Funding: This study was funded by a Saudi Arabian Government 
       Scholarship to B.A. and an MRC Clinical Research Training Fellowship to S.S. 
       (Grant no. G1002002/1). Conflict of interest: Dr Christopher Watson has received 
@@ -469,16 +581,20 @@ COIS- Declarations. Funding: This study was funded by a Saudi Arabian Government
       revised the initial manuscript draft for important intellectual content. All 
       authors read and approved the final manuscript.
 EDAT- 2025/07/28 18:58
-MHDA- 2025/07/28 18:58
+MHDA- 2025/11/01 05:37
+PMCR- 2025/07/28
 CRDT- 2025/07/28 11:22
 PHST- 2025/07/13 00:00 [accepted]
-PHST- 2025/07/28 18:58 [medline]
+PHST- 2025/11/01 05:37 [medline]
 PHST- 2025/07/28 18:58 [pubmed]
 PHST- 2025/07/28 11:22 [entrez]
+PHST- 2025/07/28 00:00 [pmc-release]
 AID - 10.1007/s40291-025-00803-8 [pii]
+AID - 803 [pii]
 AID - 10.1007/s40291-025-00803-8 [doi]
-PST - aheadofprint
-SO  - Mol Diagn Ther. 2025 Jul 28. doi: 10.1007/s40291-025-00803-8.
+PST - ppublish
+SO  - Mol Diagn Ther. 2025 Nov;29(6):801-812. doi: 10.1007/s40291-025-00803-8. Epub 
+      2025 Jul 28.
 
 PMID- 40585427
 OWN - NLM
