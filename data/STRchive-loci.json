@@ -1886,7 +1886,7 @@
   "typ_age_onset_max": 34.0,
   "details": "Benign repeats range from absent [@gnomad:GIPC1] to 32 [@genereviews:NBK535148], while pathogenic alleles range from 73-164 repeats [@pmid:38876750; @genereviews:NBK535148]. Intermediate alleles have undetermined significance but may represent a phenotypic spectrum [@pmid:32413282]. Interruptions documented: CGA [@pmid:35245110]. Interruptions proposed but not confirmed in primary literature: TCG/CCT/TTG [@pmid:38467784].",
   "mechanism": "LoF/GoF?",
-  "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:618940], still unknown [@pmid:36169768].",
+  "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:618940], still unknown [@pmid:36169768]. RAN translation has been reported [@pmid:41121761].",
   "year": "2020 [@pmid:32413282]",
   "location_in_gene": "5' UTR",
   "gene_strand": "-",
@@ -1921,7 +1921,7 @@
   "webstr_hg19": ["STR_668861"],
   "locus_tags": ["supported_evidence", "length_affects_onset", "length_affects_severity"],
   "disease_tags": ["oculopharyngodistal_myopathy"],
-  "references": ["pmid:32413282", "pmid:33374016", "omim:618940", "pmid:36169768", "gnomad:GIPC1", "genereviews:NBK535148", "pmid:38876750", "pmid:35245110", "pmid:38467784", "pmid:39349043"],
+  "references": ["pmid:32413282", "pmid:33374016", "omim:618940", "pmid:36169768", "gnomad:GIPC1", "genereviews:NBK535148", "pmid:38876750", "pmid:35245110", "pmid:38467784", "pmid:39349043", "pmid:41121761"],
   "additional_literature": ["pmid:40645757", "pmid:40084170", "pmid:39936620", "pmid:39492694", "pmid:39418922", "pmid:39013564", "pmid:38871700", "pmid:37923380", "pmid:37550168", "pmid:36108428", "pmid:36055118", "pmid:35700120", "pmid:35521937", "pmid:35314910", "pmid:35152460", "pmid:35148830", "pmid:34927285", "pmid:33693509", "pmid:33239111", "pmid:22521844"]
 },
 {
