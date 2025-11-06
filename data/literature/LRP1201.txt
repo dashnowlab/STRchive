@@ -1,4 +1,239 @@
 
+PMID- 41131788
+OWN - NLM
+STAT- Publisher
+LR  - 20251024
+IS  - 2210-3244 (Electronic)
+IS  - 1672-0229 (Linking)
+DP  - 2025 Oct 22
+TI  - Comparative Analysis of CRISPR/Cas9-targeted Nanopore Sequencing Approaches in 
+      Repeat Expansion Disorders.
+LID - qzaf094 [pii]
+LID - 10.1093/gpbjnl/qzaf094 [doi]
+AB  - More than 50 repeat expansion disorders have been identified, with long-read 
+      sequencing marking a new milestone in the diagnosis of these disorders. Despite 
+      these major achievements, the comprehensive characterization of short tandem 
+      repeats in a pathological context remains challenging, primarily due to their 
+      inherent characteristics such as motif complexity, high GC content, and variable 
+      length. In this study, our aim was to thoroughly characterize repeat expansions 
+      in two neuromuscular diseases: myotonic dystrophy type 1 (DM1) and 
+      oculopharyngodistal myopathy (OPDM) using CRISPR/Cas9-targeted long-read 
+      sequencing (Oxford Nanopore Technologies, ONT). We conducted precise analyses of 
+      the DM1 and OPDM loci, determining repeat size, repeat length distribution, 
+      expansion architecture, and DNA methylation, using three different basecalling 
+      strategies (MinKnow software, Dorado, and Bonito). We demonstrated the importance 
+      of the basecalling strategy in repeat expansion characterization. We proposed 
+      guidelines to perform CRISPR-Cas9 targeted long-read sequencing (no longer 
+      supported by ONT), from library preparation to bioinformatical analyses. Finally, 
+      we showed, for the first time, somatic mosaicism, hypermethylation of LRP12 locus 
+      in OPDM symptomatic patients and changes in the repeat tract structure of these 
+      patients. We propose a strategy based on CRISPR/Cas9-enrichment long-read 
+      sequencing for repeat expansion diseases, which can be readily applicable not 
+      only in research but also in diagnostic settings.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press and Science Press on 
+      behalf of the Beijing Institute of Genomics, Chinese Academy of Sciences / China 
+      National Center for Bioinformation and Genetics Society of China.
+FAU - Benarroch, Louise
+AU  - Benarroch L
+AUID- ORCID: 0000-0003-2805-9170
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+FAU - Boelle, Pierre-Yves
+AU  - Boelle PY
+AUID- ORCID: 0000-0002-5367-8232
+AD  - Sorbonne Universite, UMS Pass, Center for Informatics-Bioanalysis Sorbonne 
+      Universite (CINBIOS), Paris 75013, France.
+FAU - Madry, Helene
+AU  - Madry H
+AUID- ORCID: 0000-0002-8658-4400
+AD  - Sorbonne Universite, Inserm, UMS Pass, Plateforme Post-genomique de la 
+      Pitie-Salpetriere (P3S), Paris 75013, France.
+FAU - Mohand Oumoussa, Badreddine
+AU  - Mohand Oumoussa B
+AUID- ORCID: 0000-0001-8581-094X
+AD  - Sorbonne Universite, Inserm, UMS Pass, Plateforme Post-genomique de la 
+      Pitie-Salpetriere (P3S), Paris 75013, France.
+FAU - Eura, Nobuyuki
+AU  - Eura N
+AUID- ORCID: 0000-0002-4943-3152
+AD  - Department of Neuromuscular Research, National Center of Neurology and Psychiatry 
+      (NCNP), Tokyo 187-8502, Japan.
+FAU - Nishino, Ichizo
+AU  - Nishino I
+AUID- ORCID: 0000-0001-9452-112X
+AD  - Department of Neuromuscular Research, National Center of Neurology and Psychiatry 
+      (NCNP), Tokyo 187-8502, Japan.
+FAU - Labreche, Karim
+AU  - Labreche K
+AUID- ORCID: 0009-0002-6549-9933
+AD  - Sorbonne Universite, UMS Pass, Center for Informatics-Bioanalysis Sorbonne 
+      Universite (CINBIOS), Paris 75013, France.
+FAU - Gorbunova, Valeriia
+AU  - Gorbunova V
+AUID- ORCID: 0009-0004-0811-478X
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+FAU - Bassez, Guillaume
+AU  - Bassez G
+AUID- ORCID: 0000-0002-2044-1052
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+AD  - Centre de Reference des Maladies Neuromusculaires Nord-Est/Ile-de-France, 
+      Institut de Myologie, GHU Pitie-Salpetriere, Assistance Publique-Hopitaux de 
+      Paris, Paris 75013, France.
+FAU - Stojkovic, Tanya
+AU  - Stojkovic T
+AUID- ORCID: 0000-0002-4054-2838
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+AD  - Centre de Reference des Maladies Neuromusculaires Nord-Est/Ile-de-France, 
+      Institut de Myologie, GHU Pitie-Salpetriere, Assistance Publique-Hopitaux de 
+      Paris, Paris 75013, France.
+FAU - Gourdon, Genevieve
+AU  - Gourdon G
+AUID- ORCID: 0000-0002-3319-1347
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+FAU - Bonne, Gisele
+AU  - Bonne G
+AUID- ORCID: 0000-0002-2516-3258
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+FAU - Tome, Stephanie
+AU  - Tome S
+AUID- ORCID: 0000-0002-0135-9256
+AD  - Sorbonne Universite, Inserm, Institut de Myologie, Centre de Recherche en 
+      myologie, Paris 75013, France.
+LA  - eng
+PT  - Journal Article
+DEP - 20251022
+PL  - England
+TA  - Genomics Proteomics Bioinformatics
+JT  - Genomics, proteomics & bioinformatics
+JID - 101197608
+SB  - IM
+OTO - NOTNLM
+OT  - Basecallers
+OT  - Long-read sequencing
+OT  - Myotonic dystrophy type 1
+OT  - Oculopharyngodistal myopathy
+OT  - Repeat expansion
+EDAT- 2025/10/24 06:26
+MHDA- 2025/10/24 06:26
+CRDT- 2025/10/24 01:13
+PHST- 2024/07/30 00:00 [received]
+PHST- 2025/05/15 00:00 [revised]
+PHST- 2025/10/16 00:00 [accepted]
+PHST- 2025/10/24 06:26 [medline]
+PHST- 2025/10/24 06:26 [pubmed]
+PHST- 2025/10/24 01:13 [entrez]
+AID - 8300547 [pii]
+AID - 10.1093/gpbjnl/qzaf094 [doi]
+PST - aheadofprint
+SO  - Genomics Proteomics Bioinformatics. 2025 Oct 22:qzaf094. doi: 
+      10.1093/gpbjnl/qzaf094.
+
+PMID- 41125376
+OWN - NLM
+STAT- Publisher
+LR  - 20251022
+IS  - 1349-7235 (Electronic)
+IS  - 0918-2918 (Linking)
+DP  - 2025 Oct 23
+TI  - A Family with Patients Manifesting Different Phenotypes of Neuromuscular Disease 
+      Depending on the CGG Repeat Number in LRP12.
+LID - 10.2169/internalmedicine.6194-25 [doi]
+AB  - This study describes a family of patients with distal muscle atrophy and 
+      oculopharyngodistal myopathy (OPDM). Patients with distal muscle atrophy 
+      exhibited slowly progressive distal-predominant muscle weakness without ptosis, 
+      ophthalmoplegia, or facial weakness. Long-read sequencing confirmed the presence 
+      of intermediate and pathogenic CGG repeat expansions in LRP12 in the patients 
+      with distal muscle atrophy and OPDM, respectively. This family demonstrated a 
+      similar phenotype-genotype correlation dependent on the LRP12 repeat length, as 
+      in a previous study, but the case with intermediate repeats could not be 
+      classified into a single etiology, even after comprehensive electrophysiological 
+      assessments and muscle biopsy.
+FAU - Iguchi, Yohei
+AU  - Iguchi Y
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+FAU - Tsujikawa, Koyo
+AU  - Tsujikawa K
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
+      University, Japan.
+FAU - Murakami, Ayuka
+AU  - Murakami A
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+FAU - Kume, Kodai
+AU  - Kume K
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
+FAU - Nakazawa, Yuka
+AU  - Nakazawa Y
+AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
+      University, Japan.
+AD  - Department of Human Genetics and Molecular Biology, Graduate School of Medicine, 
+      Nagoya University, Japan.
+FAU - Oso, Taichi
+AU  - Oso T
+AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
+      University, Japan.
+AD  - Department of Human Genetics and Molecular Biology, Graduate School of Medicine, 
+      Nagoya University, Japan.
+FAU - Nishio, Yosuke
+AU  - Nishio Y
+AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
+      University, Japan.
+FAU - Matsuo, Koji
+AU  - Matsuo K
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+FAU - Fukami, Yuki
+AU  - Fukami Y
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+FAU - Araki, Kunihiko
+AU  - Araki K
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+FAU - Ogi, Tomoo
+AU  - Ogi T
+AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
+      University, Japan.
+AD  - Department of Human Genetics and Molecular Biology, Graduate School of Medicine, 
+      Nagoya University, Japan.
+AD  - Division of Animal Medical Science, Center for One Medicine Innovative 
+      Translational Research, Nagoya University, Japan.
+AD  - Division of Molecular Physiology and Dynamics, Institute for Glyco-core Research, 
+      Nagoya University, Japan.
+FAU - Kawakami, Hideshi
+AU  - Kawakami H
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
+FAU - Katsuno, Masahisa
+AU  - Katsuno M
+AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
+LA  - eng
+PT  - Journal Article
+DEP - 20251023
+PL  - Japan
+TA  - Intern Med
+JT  - Internal medicine (Tokyo, Japan)
+JID - 9204241
+SB  - IM
+OTO - NOTNLM
+OT  - CGG repeat expansions
+OT  - Distal muscular atrophy
+OT  - LRP12
+OT  - long read sequencing
+OT  - oculopharyngodistal myopathy
+EDAT- 2025/10/23 00:26
+MHDA- 2025/10/23 00:26
+CRDT- 2025/10/22 21:24
+PHST- 2025/10/23 00:26 [medline]
+PHST- 2025/10/23 00:26 [pubmed]
+PHST- 2025/10/22 21:24 [entrez]
+AID - 10.2169/internalmedicine.6194-25 [doi]
+PST - aheadofprint
+SO  - Intern Med. 2025 Oct 23. doi: 10.2169/internalmedicine.6194-25.
+
 PMID- 40645757
 OWN - NLM
 STAT- Publisher
