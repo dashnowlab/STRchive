@@ -2397,7 +2397,7 @@
   "typ_age_onset_max": 51.0,
   "details": "Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@pmid:39013564]. Interruptions seen: ACG, CCA [@pmid:35245110].",
   "mechanism": "GoF?",
-  "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@pmid:38467784].",
+  "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@pmid:38467784]. Somatic mosicism and hypermethylation have also been reported [@pmid:41131788].",
   "year": "2019 [@pmid:31332380]",
   "location_in_gene": "5' UTR",
   "gene_strand": "-",
@@ -2432,8 +2432,8 @@
   "webstr_hg19": ["STR_1441036"],
   "locus_tags": ["supported_evidence", "somatic_instability", "anticipation", "length_affects_onset"],
   "disease_tags": ["oculopharyngodistal_myopathy"],
-  "references": ["pmid:34047774", "pmid:2124290", "omim:164310", "pmid:38467784", "genereviews:NBK535148", "pmid:39013564", "pmid:35245110", "pmid:38876750", "pmid:31332380", "pmid:39349043"],
-  "additional_literature": ["pmid:41131788", "pmid:41125376", "pmid:40645757", "pmid:40417202", "pmid:40084170", "pmid:38726482", "pmid:37923380", "pmid:37864208", "pmid:37339631", "pmid:36052448", "pmid:35700120", "pmid:35314910", "pmid:35152460", "pmid:35148830", "pmid:34927285", "pmid:33693509", "pmid:33374016", "pmid:33239111", "pmid:32493488", "pmid:27072820"]
+  "references": ["pmid:34047774", "pmid:2124290", "omim:164310", "pmid:38467784", "genereviews:NBK535148", "pmid:39013564", "pmid:35245110", "pmid:38876750", "pmid:31332380", "pmid:39349043", "pmid:41131788"],
+  "additional_literature": ["pmid:41125376", "pmid:40645757", "pmid:40417202", "pmid:40084170", "pmid:38726482", "pmid:37923380", "pmid:37864208", "pmid:37339631", "pmid:36052448", "pmid:35700120", "pmid:35314910", "pmid:35152460", "pmid:35148830", "pmid:34927285", "pmid:33693509", "pmid:33374016", "pmid:33239111", "pmid:32493488", "pmid:27072820"]
 },
 {
   "id": "FAME3_MARCHF6",
