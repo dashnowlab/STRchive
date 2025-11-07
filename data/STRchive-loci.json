@@ -2397,7 +2397,7 @@
   "typ_age_onset_max": 51.0,
   "details": "Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@pmid:39013564]. Interruptions seen: ACG, CCA [@pmid:35245110].",
   "mechanism": "GoF?",
-  "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@pmid:38467784].",
+  "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@pmid:38467784]. Somatic mosicism and hypermethylation have also been reported [@pmid:41131788].",
   "year": "2019 [@pmid:31332380]",
   "location_in_gene": "5' UTR",
   "gene_strand": "-",
