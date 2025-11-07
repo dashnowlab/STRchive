@@ -9767,7 +9767,7 @@ TI  - A Novel Minor Groove Binder as a Potential Therapeutic Agent for Myotonic
 PG  - 2638-2644
 LID - 10.1002/cmdc.202100243 [doi]
 AB  - Myotonic dystrophy type 1 (DM1) is a multisystemic neuromuscular disorder that is 
-      inherited in an autosomal dominant manner. DM1 originates in a (CTG...CAG) repeat 
+      inherited in an autosomal dominant manner. DM1 originates in a (CTG⋅CAG) repeat 
       expansion in the 3'-UTR of the dystrophia myotonic protein kinase (DMPK) gene on 
       chromosome 19. One of the transcripts, r(CUG)(exp) , is toxic in various ways. 
       Herein we report a rationally designed small molecule with a thiazole 
@@ -17168,12 +17168,12 @@ IS  - 1525-0016 (Linking)
 VI  - 25
 IP  - 1
 DP  - 2017 Jan 4
-TI  - CRISPR/Cas9-Induced (CTG...CAG)(n) Repeat Instability in the Myotonic Dystrophy 
+TI  - CRISPR/Cas9-Induced (CTG⋅CAG)(n) Repeat Instability in the Myotonic Dystrophy 
       Type 1 Locus: Implications for Therapeutic Genome Editing.
 PG  - 24-43
 LID - S1525-0016(16)45369-4 [pii]
 LID - 10.1016/j.ymthe.2016.10.014 [doi]
-AB  - Myotonic dystrophy type 1 (DM1) is caused by (CTG...CAG)(n)-repeat expansion within 
+AB  - Myotonic dystrophy type 1 (DM1) is caused by (CTG⋅CAG)(n)-repeat expansion within 
       the DMPK gene and thought to be mediated by a toxic RNA gain of function. Current 
       attempts to develop therapy for this disease mainly aim at destroying or blocking 
       abnormal properties of mutant DMPK (CUG)n RNA. Here, we explored a DNA-directed 
@@ -17184,12 +17184,12 @@ AB  - Myotonic dystrophy type 1 (DM1) is caused by (CTG...CAG)(n)-repeat expansi
       double-strand break repair. Complete and precise excision of the repeat tract 
       from normal and large expanded DMPK alleles in myoblasts from unaffected 
       individuals, DM1 patients, and a DM1 mouse model could be achieved at high 
-      frequency by dual CRISPR/Cas9-cleavage at either side of the (CTG...CAG)n sequence. 
+      frequency by dual CRISPR/Cas9-cleavage at either side of the (CTG⋅CAG)n sequence. 
       Importantly, removal of the repeat appeared to have no detrimental effects on the 
       expression of genes in the DM1 locus. Moreover, myogenic capacity, 
       nucleocytoplasmic distribution, and abnormal RNP-binding behavior of transcripts 
       from the edited DMPK gene were normalized. Dual sgRNA-guided excision of the 
-      (CTG...CAG)n tract by CRISPR/Cas9 technology is applicable for developing isogenic 
+      (CTG⋅CAG)n tract by CRISPR/Cas9 technology is applicable for developing isogenic 
       cell lines for research and may provide new therapeutic opportunities for 
       patients with DM1.
 CI  - Copyright (c) 2017 The Author(s). Published by Elsevier Inc. All rights reserved.
@@ -17290,7 +17290,7 @@ MH  - *Trinucleotide Repeat Expansion
 MH  - *Trinucleotide Repeats
 PMC - PMC5363205
 OTO - NOTNLM
-OT  - (CTG...CAG)n repeat
+OT  - (CTG⋅CAG)n repeat
 OT  - CRISPR/Cas9
 OT  - DM1 myoblasts
 OT  - NHEJ
@@ -31595,3 +31595,4 @@ AID - S0888-7543(83)71474-6 [pii]
 AID - 10.1006/geno.1993.1474 [doi]
 PST - ppublish
 SO  - Genomics. 1993 Nov;18(2):340-8. doi: 10.1006/geno.1993.1474.
+

@@ -1848,29 +1848,29 @@ IS  - 1873-5126 (Electronic)
 IS  - 1353-8020 (Linking)
 VI  - 137
 DP  - 2025 Aug
-TI  - FGF14 (GAA...TTC) repeat expansion-related ataxia SCA27B is common in Northern 
+TI  - FGF14 (GAA∙TTC) repeat expansion-related ataxia SCA27B is common in Northern 
       Finland.
 PG  - 107943
 LID - S1353-8020(25)00684-4 [pii]
 LID - 10.1016/j.parkreldis.2025.107943 [doi]
-AB  - INTRODUCTION: An intronic repeat expansion (GAA...TTC)(exp) in the FGF14 gene 
-      (FGF14 (GAA...TTC)(exp)) has recently been found to cause dominantly inherited 
+AB  - INTRODUCTION: An intronic repeat expansion (GAA∙TTC)(exp) in the FGF14 gene 
+      (FGF14 (GAA∙TTC)(exp)) has recently been found to cause dominantly inherited 
       ataxia SCA27B. The core phenotype consists of late-onset and slowly progressing 
       ataxia with down-beat nystagmus and episodic features. Disease penetrance depends 
       on the number of repeat units and >/=300 is widely used pathogenic threshold for 
       complete penetrance. The Finnish population is genetically unique and SCA27B has 
       not previously been reported in Finland. METHODS: We investigated FGF14 
-      (GAA...TTC)(exp) in a cohort of 96 Finnish patients with suspected hereditary 
+      (GAA∙TTC)(exp) in a cohort of 96 Finnish patients with suspected hereditary 
       ataxia or ataxia of unknown etiology, of whom 62 patients had no previous genetic 
-      diagnosis. We also assessed FGF14 (GAA...TTC)(exp) in 561 controls in order to 
+      diagnosis. We also assessed FGF14 (GAA∙TTC)(exp) in 561 controls in order to 
       estimate its population prevalence in North Ostrobothnia. RESULTS: We found five 
-      patients with FGF14 (GAA...TTC)(>/=250) giving a frequency of 5.2 % in the ataxia 
+      patients with FGF14 (GAA∙TTC)(>/=250) giving a frequency of 5.2 % in the ataxia 
       cohort. One patient had a rare biallelic genotype. Four patients had the 
       classical SCA27B phenotype with no atypical features. Two of the patients had a 
       previous genetic diagnosis and digenic contribution could not be excluded. 
       Moreover, we found one patient with suspected FGF14 disease and with 
-      (GAA...TTC)(248), but the segregation analysis remained inconclusive. The 
-      (GAA...TTC)(>/=250) frequency was 2.7 % in the general population. Population 
+      (GAA∙TTC)(248), but the segregation analysis remained inconclusive. The 
+      (GAA∙TTC)(>/=250) frequency was 2.7 % in the general population. Population 
       prevalence was 1.7 per 100 000 in North Ostrobothnia. The frequency of alleles 
       harboring 200-249 repeats was 2.2 % in patients and 1.5 % in controls. 
       CONCLUSION: Our results suggest that screening of FGF14 expansion should be 
@@ -2556,161 +2556,191 @@ SO  - Brain Commun. 2025 May 17;7(3):fcaf188. doi: 10.1093/braincomms/fcaf188.
 
 PMID- 40379261
 OWN - NLM
-STAT- Publisher
-LR  - 20250516
+STAT- MEDLINE
+DCOM- 20251105
+LR  - 20251105
 IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
-DP  - 2025 May 17
+VI  - 148
+IP  - 11
+DP  - 2025 Nov 4
 TI  - FGF14 repeat length and mosaic interruptions: modifiers of spinocerebellar ataxia 
       27B?
-LID - awaf183 [pii]
+PG  - 4072-4083
 LID - 10.1093/brain/awaf183 [doi]
 AB  - Deep intronic FGF14 repeat expansions have been identified as a frequent genetic 
-      cause of late-onset cerebellar ataxias, explaining up to 30% of patients. 
+      cause of late-onset cerebellar ataxias, explaining </=30% of patients. 
       Interruptions between repeats have previously been identified to impact the 
       penetrance in other repeat expansion disorders. Repeat interruptions within FGF14 
-      have yet to be characterized in detail. We utilized long-range PCR, Sanger 
-      sequencing, repeat-primed PCR, Nanopore, and PacBio sequencing to distinguish the 
-      repeat motifs, mosaicism, and number of repeat interruptions present in 
+      have yet to be characterized in detail. We used long-range PCR, Sanger 
+      sequencing, repeat-primed PCR, Nanopore and PacBio sequencing to distinguish the 
+      repeat motifs, mosaicism and number of repeat interruptions present in 
       FGF14-related ataxia patients and unaffected individuals. A total of 304 patients 
       with late-onset ataxia and 190 unaffected individuals were previously screened 
-      for repeat expansions in the FGF14 gene by long-range PCR, identifying 37 
-      individuals with expanded repeat lengths (>/=250 repeats). These, along with three 
-      newly identified expansion carriers were included in the present study, and 
-      advanced genetic methods were applied to investigate the repeat composition in 27 
-      patients and 13 unaffected individuals. The expansions, based on Nanopore data, 
-      ranged from 236 to 486 repeats (SD = 60), with 20 individuals showing repeat 
+      for repeat expansions in FGF14 by long-range PCR, identifying 37 individuals with 
+      expanded repeat lengths (>/=250 repeats). These, along with three newly identified 
+      expansion carriers were included in the present study, and advanced genetic 
+      methods were applied to investigate the repeat composition in 27 patients and 13 
+      unaffected individuals. The expansions, based on Nanopore data, ranged from 236 
+      to 486 repeats (standard deviation = 60), with 20 individuals showing repeat 
       interruptions, including complex motifs such as GAG, GAAGGA, GAAGAAAGAA, 
-      GAAAAGAAGAAGGAAGAAGGAA, GAAAAGAAGAAGGAA, and GCAGAAGAAGAAGAA. We calculated the 
+      GAAAAGAAGAAGGAAGAAGGAA, GAAAAGAAGAAGGAA and GCAGAAGAAGAAGAA. We calculated the 
       longest pure GAA length from the long-read data for all 40 individuals. When 
       comparing the pure GAA tract between patients and unaffected individuals, 
-      clusters were apparent based on greater or less than 200 repeats. Five ataxia 
-      patients with interruptions still had a remaining pure GAA expansion <200. We 
-      observed an association of the pure GAA length with age at onset (p=0.016, 
-      R2=0.256). Somatically-incurred mosaic divergent repeat interruptions were 
-      discovered that affect motif length and sequence (mDRILS), which varied in number 
-      and mosaicism (frequency: 0.37-0.93). The mDRILS correlated with pure GAA length 
-      (p=0.022, R2=0.334), with a higher mosaic frequency of interruptions in 
-      unaffected individuals compared to patients (unaffected: 0.90; patients: 0.67; 
-      p=0.009). We demonstrate that i) long-read sequencing is required to detect 
-      complex repeat interruptions accurately; ii) repeat interruptions in FGF14 are 
-      mosaic, have various lengths and start positions in the repeat tract, and can 
-      thereby be annotated as mDRILS, which iii) enabled us to establish a 
-      categorization based on remaining pure GAA repeats quantifying the impact of 
-      mDRILS on pathogenicity or age at onset, dependent on the interruption length and 
-      position, with high accuracy. Finally, we iv) provide evidence that mosaicism 
-      stabilizes pure GAA repeats in interrupted FGF14 repeat expansions.
+      clusters were apparent based on >200 or <200 repeats. Five ataxia patients with 
+      interruptions still had a remaining pure GAA expansion <200. We observed an 
+      association of the pure GAA length with age at onset (P = 0.016, R2 = 0.256). 
+      Somatically incurred mosaic divergent repeat interruptions were discovered that 
+      affect motif length and sequence (mDRILS), which varied in number and mosaicism 
+      (frequency: 0.37-0.93). The mDRILS were correlated with pure GAA length (P = 
+      0.022, R2 = 0.334), with a higher mosaic frequency of interruptions in unaffected 
+      individuals compared with patients (unaffected: 0.90; patients: 0.67; P = 0.009). 
+      We demonstrate that: (i) long-read sequencing is required to detect complex 
+      repeat interruptions accurately; (ii) repeat interruptions in FGF14 are mosaic, 
+      have various lengths and start positions in the repeat tract, and can thereby be 
+      annotated as mDRILS; which (iii) enabled us to establish a categorization based 
+      on remaining pure GAA repeats quantifying the impact of mDRILS on pathogenicity 
+      or age at onset, dependent on the interruption length and position, with high 
+      accuracy; and (iv) we provide evidence that mosaicism stabilizes pure GAA repeats 
+      in interrupted FGF14 repeat expansions.
 CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
       Guarantors of Brain.
 FAU - Lass, Joshua
 AU  - Lass J
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Thomsen, Mirja
 AU  - Thomsen M
 AUID- ORCID: 0009-0004-1148-5493
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Borsche, Max
 AU  - Borsche M
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 AD  - Department of Neurology, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Luth, Theresa
 AU  - Luth T
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Prietzsche, Julia C
 AU  - Prietzsche JC
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Schaake, Susen
 AU  - Schaake S
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Milovanovic, Andona
 AU  - Milovanovic A
-AD  - Neurology Clinic, University Clinical Center of Serbia, Belgrade, 11000, Serbia.
+AD  - Neurology Clinic, University Clinical Center of Serbia, Belgrade 11000, Serbia.
 FAU - Macpherson, Hannah
 AU  - Macpherson H
 AD  - Department of Genetics and Genomic Medicine, UCL GOS Institute of Child Health, 
-      London, WC1E 6BT, UK.
-AD  - Department of Neurodegenerative Diseases, Institute of Neurology, UCL, London, 
+      London WC1E 6BT, UK.
+AD  - Department of Neurodegenerative Diseases, Institute of Neurology, UCL, London 
       WC1E 6BT, UK.
 FAU - Gustavsson, Emil K
 AU  - Gustavsson EK
 AUID- ORCID: 0000-0003-0541-7537
 AD  - Department of Genetics and Genomic Medicine, UCL GOS Institute of Child Health, 
-      London, WC1E 6BT, UK.
-AD  - Department of Neurodegenerative Diseases, Institute of Neurology, UCL, London, 
+      London WC1E 6BT, UK.
+AD  - Department of Neurodegenerative Diseases, Institute of Neurology, UCL, London 
       WC1E 6BT, UK.
 FAU - Saffie Awad, Paula
 AU  - Saffie Awad P
 AD  - Programa de Pos-Graduacao em Ciencias Medicas, Universidade Federal do Rio Grande 
-      do Sul, Porto Alegre, 90035003, Brazil.
-AD  - Servicio de Neurologia, Clinica Santa Maria, Santiago, 7520349, Chile.
+      do Sul, Porto Alegre 90035003, Brazil.
+AD  - Servicio de Neurologia, Clinica Santa Maria, Santiago 7520349, Chile.
 FAU - Dragasevic-Miskovic, Natasa
 AU  - Dragasevic-Miskovic N
-AD  - Neurology Clinic, University Clinical Center of Serbia, Belgrade, 11000, Serbia.
+AD  - Neurology Clinic, University Clinical Center of Serbia, Belgrade 11000, Serbia.
 FAU - Laabs, Bjorn-Hergen
 AU  - Laabs BH
-AD  - Institute of Medical Biometry and Statistics, University of Lubeck, 23538 Lubeck, 
+AD  - Institute of Medical Biometry and Statistics, University of Lubeck, Lubeck 23538, 
       Germany.
 FAU - Konig, Inke R
 AU  - Konig IR
-AD  - Institute of Medical Biometry and Statistics, University of Lubeck, 23538 Lubeck, 
+AD  - Institute of Medical Biometry and Statistics, University of Lubeck, Lubeck 23538, 
       Germany.
 FAU - Westenberger, Ana
 AU  - Westenberger A
 AUID- ORCID: 0000-0001-8062-6959
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Pearson, Christopher E
 AU  - Pearson CE
 AUID- ORCID: 0000-0001-9545-4205
-AD  - The Hospital for Sick Children, Genetics & Genome Biology; Department of 
-      Molecular Genetics, University of Toronto, Toronto, ON M5G 0A4, Canada.
+AD  - Department of Molecular Genetics, The Hospital for Sick Children, Genetics & 
+      Genome Biology, University of Toronto, Toronto, ON M5G 0A4, Canada.
 FAU - Bruggemann, Norbert
 AU  - Bruggemann N
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 AD  - Department of Neurology, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Klein, Christine
 AU  - Klein C
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 FAU - Trinh, Joanne
 AU  - Trinh J
 AD  - Institute of Neurogenetics, University of Lubeck and University Hospital 
-      Schleswig-Holstein, 23538 Lubeck, Germany.
+      Schleswig-Holstein, Lubeck 23538, Germany.
 LA  - eng
+GR  - FOR2488/German Research Foundation/
+GR  - BR4328.2-1/German Research Foundation/
+GR  - GRK1957/German Research Foundation/
+GR  - FRN-148910/CAPMC/CIHR/Canada
+GR  - FRN-173282/CAPMC/CIHR/Canada
 PT  - Journal Article
-DEP - 20250517
 PL  - England
 TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
+RN  - 62031-54-3 (Fibroblast Growth Factors)
+RN  - 0 (fibroblast growth factor 14)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - *Fibroblast Growth Factors/genetics
+MH  - Middle Aged
+MH  - *Mosaicism
+MH  - Aged
+MH  - Adult
+MH  - *DNA Repeat Expansion/genetics
+MH  - *Spinocerebellar Ataxias/genetics
+PMC - PMC12588676
 OTO - NOTNLM
 OT  - SCA27B
 OT  - interruptions
 OT  - long-read sequencing
 OT  - repeat expansion
+COIS- C.K. serves as a medical advisor to Centogene, Takeda and Retromer Therapeutics 
+      and received speaking honoraria from Desitin and Bial. A.W. serves as an advisor 
+      for medical writing to CENTOGENE GmbH. N.B. received honoraria from Abbott, 
+      Abbvie, Biogen, Biomarin, Bridgebio, Centogene, Esteve, Ipsen, Merz, Teva and 
+      Zambon. M.B. receives honoraria by Bial. J.T. is a consultant to Acurex. The 
+      remaining authors report no competing interests.
 EDAT- 2025/05/17 17:01
-MHDA- 2025/05/17 17:01
+MHDA- 2025/11/06 00:27
+PMCR- 2025/05/17
 CRDT- 2025/05/16 20:02
 PHST- 2024/11/13 00:00 [received]
 PHST- 2025/03/24 00:00 [revised]
 PHST- 2025/04/26 00:00 [accepted]
-PHST- 2025/05/17 17:01 [medline]
+PHST- 2025/11/06 00:27 [medline]
 PHST- 2025/05/17 17:01 [pubmed]
 PHST- 2025/05/16 20:02 [entrez]
+PHST- 2025/05/17 00:00 [pmc-release]
 AID - 8133976 [pii]
+AID - awaf183 [pii]
 AID - 10.1093/brain/awaf183 [doi]
-PST - aheadofprint
-SO  - Brain. 2025 May 17:awaf183. doi: 10.1093/brain/awaf183.
+PST - ppublish
+SO  - Brain. 2025 Nov 4;148(11):4072-4083. doi: 10.1093/brain/awaf183.
 
 PMID- 40273470
 OWN - NLM
@@ -14767,3 +14797,4 @@ AID - 61/5/727 [pii]
 AID - 10.1001/archneur.61.5.727 [doi]
 PST - ppublish
 SO  - Arch Neurol. 2004 May;61(5):727-33. doi: 10.1001/archneur.61.5.727.
+

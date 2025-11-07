@@ -137,7 +137,7 @@ AB  - Elucidating the genetic contributions to Parkinson's disease (PD) etiology
       being compound heterozygous or homozygous in early-onset cases, providing further 
       insights into the genetic underpinnings in early-onset juvenile PD in these 
       populations. Short tandem repeat analysis also identified ATXN3 repeat expansions 
-      within the pathogenic range (CAGn...>...45) in three PD patients of African ancestry. 
+      within the pathogenic range (CAGn > 45) in three PD patients of African ancestry. 
       Novel genetic variation overrepresented in cases versus controls among screened 
       genes warrants further replication and functional prioritization to unravel their 
       pathogenic potential. Here, we created the most comprehensive genetic catalog of 
@@ -804,14 +804,14 @@ AB  - BACKGROUND: Spinocerebellar ataxias (SCAs) exhibit substantial clinical an
       (NGS) panel, negative cases received SCA repeat expansion testing. Genetically 
       confirmed SCA cases received comprehensive clinical-genetic characterization. 
       RESULTS: Four SCA cases were identified in the hypokinetic movement disorders 
-      group (n...=...28), accounting for 14.29% (4/28). Notably, an SCA8-associated 
+      group (n = 28), accounting for 14.29% (4/28). Notably, an SCA8-associated 
       familial parkinsonism pedigree manifested a novel clinical constellation: 
       Parkinson's disease -like phenotype with spastic paraplegia and levodopa 
       responsive parkinsonism with dystonia. Additionally, we observed: (i) An SCA2 
       pedigree demonstrating intrafamilial phenotypic heterogeneity; (ii) Two sporadic 
       early-onset parkinsonism cases harboring pathogenic expansions in SCA8 (CTA/CTG 
       55 repeats) and SCA3, respectively. Two SCA cases were detected in the 
-      hyperkinetic movement disorders group (n...=...7), representing 28.57% (2/7). We 
+      hyperkinetic movement disorders group (n = 7), representing 28.57% (2/7). We 
       observed: (i) an SCA3 preataxic carrier presenting with Tourette syndrome; (ii) 
       an SCA17 case (CAG/CAA 41 repeats) manifesting dystonia and spastic paraplegia. 
       CONCLUSION: We characterized a novel clinical constellation in an SCA8-associated 
@@ -1803,14 +1803,17 @@ SO  - Neurobiol Dis. 2025 Oct 1;214:107044. doi: 10.1016/j.nbd.2025.107044. Epub
 
 PMID- 40692435
 OWN - NLM
-STAT- Publisher
-LR  - 20250722
+STAT- MEDLINE
+DCOM- 20251105
+LR  - 20251105
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
-DP  - 2025 Jul 22
+VI  - 148
+IP  - 11
+DP  - 2025 Nov 4
 TI  - Circadian rhythms are disrupted in patients and preclinical models of 
       Machado-Joseph disease.
-LID - awaf199 [pii]
+PG  - 4127-4142
 LID - 10.1093/brain/awaf199 [doi]
 AB  - Machado-Joseph disease (MJD) is caused by an abnormal CAG repeat expansion in the 
       ATXN3 gene, leading to the expression of a mutant ataxin-3 (mutATXN3) protein. 
@@ -2027,12 +2030,35 @@ GR  - COVID/BD/152130/2021/HORIZON EUROPE/
 GR  - 2020.04499.BD/HORIZON EUROPE/
 GR  - 2020.04850.BD/HORIZON EUROPE/
 PT  - Journal Article
-DEP - 20250722
 PL  - England
 TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
+RN  - EC 3.4.19.12 (Ataxin-3)
+RN  - 37221-79-7 (Vasoactive Intestinal Peptide)
+RN  - EC 3.4.19.12 (ATXN3 protein, human)
+RN  - 0 (Period Circadian Proteins)
+RN  - 113-79-1 (Arginine Vasopressin)
+RN  - 0 (Repressor Proteins)
 SB  - IM
+MH  - *Machado-Joseph Disease/physiopathology/genetics
+MH  - Animals
+MH  - Mice, Transgenic
+MH  - Humans
+MH  - *Circadian Rhythm/physiology/genetics
+MH  - Male
+MH  - Mice
+MH  - Female
+MH  - Ataxin-3/genetics
+MH  - Disease Models, Animal
+MH  - Middle Aged
+MH  - Adult
+MH  - Suprachiasmatic Nucleus/metabolism
+MH  - Vasoactive Intestinal Peptide/metabolism
+MH  - Mice, Inbred C57BL
+MH  - Period Circadian Proteins/metabolism/genetics
+MH  - Arginine Vasopressin/metabolism
+MH  - Repressor Proteins
 OTO - NOTNLM
 OT  - Machado-Joseph disease
 OT  - circadian rest-activity rhythms
@@ -2041,18 +2067,18 @@ OT  - core clock genes
 OT  - spinocerebellar ataxia type 3
 OT  - suprachiasmatic nucleus
 EDAT- 2025/07/22 06:26
-MHDA- 2025/07/22 06:26
+MHDA- 2025/11/06 00:27
 CRDT- 2025/07/22 04:03
 PHST- 2025/01/03 00:00 [received]
 PHST- 2025/04/03 00:00 [revised]
 PHST- 2025/04/29 00:00 [accepted]
-PHST- 2025/07/22 06:26 [medline]
+PHST- 2025/11/06 00:27 [medline]
 PHST- 2025/07/22 06:26 [pubmed]
 PHST- 2025/07/22 04:03 [entrez]
 AID - 8205847 [pii]
 AID - 10.1093/brain/awaf199 [doi]
-PST - aheadofprint
-SO  - Brain. 2025 Jul 22:awaf199. doi: 10.1093/brain/awaf199.
+PST - ppublish
+SO  - Brain. 2025 Nov 4;148(11):4127-4142. doi: 10.1093/brain/awaf199.
 
 PMID- 40684213
 OWN - NLM
@@ -2324,8 +2350,8 @@ AB  - BACKGROUND AND OBJECTIVE: Hereditary ataxia (HA) encompasses a diverse gro
       ataxia-telangiectasia in three families, ataxia with vitamin E deficiency in one 
       family, ATP1A3-associated ataxia in one family, and SPTBN2-associated ataxia in 
       one family. Further subtyping of SCA revealed the presence of SCA types 1, 2, and 
-      3 among the patients. The participants were enrolled an average of 8.5...years 
-      after symptom onset, with the age of onset ranging from 1 to 50...years. Gait 
+      3 among the patients. The participants were enrolled an average of 8.5 years 
+      after symptom onset, with the age of onset ranging from 1 to 50 years. Gait 
       instability was the most prevalent clinical feature observed in our cohort. 
       CONCLUSION: We identified 12 families with HA, including four genetic mutations 
       that have not been previously documented. SCA3 was the most frequently inherited 
@@ -2423,7 +2449,7 @@ AB  - INTRODUCTION: Spinocerebellar ataxia type 3 (SCA3) poses challenges for pa
       (rTMS) as a treatment for SCA3-related NMS. METHODS: This is a secondary analysis 
       of a randomized, double-blind, sham-controlled trial (The Chinese Clinical Trial 
       Registry identifier is ChiCTR1800020133). Thirty-seven SCA3 patients included 
-      underwent either real (n...=...21) or sham (n...=...16) rTMS over 15...days, targeting the 
+      underwent either real (n = 21) or sham (n = 16) rTMS over 15 days, targeting the 
       cerebellum. Study outcomes included the Pittsburgh Sleep Quality Index (PSQI), 
       Athens Insomnia Scale (AIS), Mini-Mental State Examination (MMSE), Montreal 
       Cognitive Assessment (MoCA), Hamilton Anxiety Rating Scale (HARS), and Hamilton 
@@ -4517,7 +4543,7 @@ LID - 10.1007/s12311-024-01745-3 [doi]
 AB  - Spinocerebellar ataxias (SCAs) are a diverse group of hereditary 
       neurodegenerative disorders characterized by progressive degeneration of the 
       cerebellum and other parts of the nervous system. In this study, we examined the 
-      genotype...phenotype correlations in SCAs within the Brazilian population by 
+      genotype‒phenotype correlations in SCAs within the Brazilian population by 
       leveraging a comprehensive dataset of 763 individuals from SARAH Network of 
       Rehabilitation Hospitals. Using a retrospective, cross-sectional, observational, 
       multicentric approach, we analysed medical records and conducted standardized 
@@ -4531,7 +4557,7 @@ AB  - Spinocerebellar ataxias (SCAs) are a diverse group of hereditary
       repeat expansions, which correlates larger expansions with earlier onset and 
       specific symptomatology. This extensive analysis underscores the critical 
       importance of genetic testing in the diagnosis and management of SCAs and 
-      enlightens the intricate genotype...phenotype interplay within a genetically 
+      enlightens the intricate genotype‒phenotype interplay within a genetically 
       diverse population. Despite certain limitations, such as potential selection bias 
       and the retrospective nature of the study, our research provides invaluable 
       insights into the prevalence, genetic underpinnings, and clinical variability of 
@@ -4585,7 +4611,7 @@ OTO - NOTNLM
 OT  - Brazil
 OT  - CAG repeat expansions
 OT  - Genetic testing
-OT  - Genotype...phenotype correlation
+OT  - Genotype‒phenotype correlation
 OT  - Spinocerebellar ataxias
 COIS- Declarations. Human Ethics and Consent to Participate: Not applicable. 
       Considering that this retrospective study was conducted only from data collected 
@@ -12075,7 +12101,7 @@ GR  - 2020JGB136/the Degree & Postgraduate Education Reform Project of Central S
 GR  - 2020LCJJ13/the Project Program of National Clinical Research Center for Geriatric 
       Disorders (Xiangya Hospital)/
 PT  - Journal Article
-TT  - CAG.............................................2...............................
+TT  - CAG重复序列对中国脊髓小脑共济失调2型患者发病年龄的影响.
 PL  - China
 TA  - Zhong Nan Da Xue Xue Bao Yi Xue Ban
 JT  - Zhong nan da xue xue bao. Yi xue ban = Journal of Central South University. 
@@ -12105,7 +12131,7 @@ PHST- 2021/09/28 06:00 [pubmed]
 PHST- 2021/09/29 06:00 [medline]
 PHST- 2021/08/28 00:00 [pmc-release]
 AID - 1672-7347(2021)08-0793-07 [pii]
-AID - 1672-7347...2021...08-0793-07 [pii]
+AID - 1672-7347（2021）08-0793-07 [pii]
 AID - 10.11817/j.issn.1672-7347.2021.210230 [doi]
 PST - ppublish
 SO  - Zhong Nan Da Xue Xue Bao Yi Xue Ban. 2021 Aug 28;46(8):793-799. doi: 
@@ -21958,19 +21984,19 @@ TI  - Clinical features and genetic diagnosis of hereditary spinocerebellar atax
 PG  - 3731-4
 LID - 10.3892/mmr.2016.5707 [doi]
 AB  - Spinocerebellar ataxia type 3 (SCA3) is a rare inherited autosomal dominant 
-      progressive neurological disorder, which results from a CAG...repeat expansion in 
-      the gene encoding the deubiquitinating enzyme, ataxin...3. At present, no effective 
+      progressive neurological disorder, which results from a CAG‑repeat expansion in 
+      the gene encoding the deubiquitinating enzyme, ataxin‑3. At present, no effective 
       treatment is available for this fatal disorder; however, certain studies have 
-      suggested that reducing the levels of mutant ataxin...3 protein may reverse or halt 
+      suggested that reducing the levels of mutant ataxin‑3 protein may reverse or halt 
       the progression of disease in patients with SCA3. In the present study, clinical 
       examinations were performed on a patient with SCA3 who exhibited disease features 
       including coughing, expectoration and was bedridden with mobility limitation. CAG 
-      repetitions at SCA...associated genes were detected in the patient's family by 
-      performing standard polymerase chain reaction (PCR) and triple...repeat primed PCR. 
-      The numbers of CAG...repeats within the two alleles of the gene of interest in the 
+      repetitions at SCA‑associated genes were detected in the patient's family by 
+      performing standard polymerase chain reaction (PCR) and triple‑repeat primed PCR. 
+      The numbers of CAG‑repeats within the two alleles of the gene of interest in the 
       patient were 15 and 78. Notably, the patient's brother, who harbored 
-      76 CAG...repeats in one allele of the gene of interest, did not exhibit severe 
-      disease symptoms. These results suggest that the number of CAG...repeats is a 
+      76 CAG‑repeats in one allele of the gene of interest, did not exhibit severe 
+      disease symptoms. These results suggest that the number of CAG‑repeats is a 
       critical for determination of SCA3 disease severity and time of onset. In 
       addition, the de fi ned phenotypic characteristics of the patient in the present 
       study provide useful insight for more accurate clinical diagnosis and genotyping 
@@ -44120,3 +44146,4 @@ PHST- 1994/11/01 00:00 [entrez]
 AID - 10.1038/ng1194-221 [doi]
 PST - ppublish
 SO  - Nat Genet. 1994 Nov;8(3):221-8. doi: 10.1038/ng1194-221.
+

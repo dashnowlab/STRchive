@@ -3,7 +3,7 @@ PMID- 41176519
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251102
-LR  - 20251104
+LR  - 20251105
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -144,31 +144,32 @@ SO  - J Neurol. 2025 Nov 1;272(11):742. doi: 10.1007/s00415-025-13487-1.
 PMID- 41137390
 OWN - NLM
 STAT- Publisher
-LR  - 20251025
+LR  - 20251105
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Linking)
-DP  - 2025 Oct 23
-TI  - Development of an AAV-Based Gene Therapy for the Ocular Phenotype of Friedreich's 
-      Ataxia.
+DP  - 2025 Oct 24
+TI  - Development of an AAV-based gene therapy for the ocular phenotype of Friedreich's 
+      ataxia.
 LID - S1525-0016(25)00869-X [pii]
 LID - 10.1016/j.ymthe.2025.10.048 [doi]
-AB  - Friedreich's Ataxia (FA) is a leading form of hereditary ataxia caused by 
+AB  - Friedreich's ataxia (FA) is a leading form of hereditary ataxia caused by 
       autosomal recessive mutations in frataxin (FXN). GAA triplet repeat expansions 
-      lead to lower levels of FXN expression, abnormal influx of iron into mitochondria 
-      and damage to the nervous system. Patients typically present before the second 
-      decade with loss of muscular function, speech impediments, and cardiomyopathy. At 
-      later stages, vision loss typically manifests. Work is underway to develop gene 
-      therapies that address the cardiac and CNS manifestations, but their routes of 
-      administration do not lead to efficient transduction of the retina. The purpose 
-      of this study was to develop a more direct approach for treating the ocular 
-      phenotype of FA which includes loss of retinal ganglion cells (RGCs), thinning of 
-      the retinal nerve fiber layer (RNFL), optic nerve atrophy, and loss of visual 
-      field. We generated two novel conditional knock-out (KO) models, mRx-Fxn KO and 
-      Pou4f2-Fxn KO mice, wherein Fxn is ablated in all retinal cells or RGCs, 
-      respectively and showed that FXN deficiency led to retinal dystrophy in both 
-      models. Gene supplementation via intravitreal injection of a novel AAV2-based 
-      capsid carrying FXN partially preserved retinal structure and/or function in both 
-      models, establishing proof-of-concept for this therapeutic strategy.
+      lead to lower levels of FXN expression, abnormal influx of iron into 
+      mitochondria, and damage to the nervous system. Patients typically present before 
+      the second decade with loss of muscular function, speech impediments, and 
+      cardiomyopathy. At later stages, vision loss typically manifests. Work is under 
+      way to develop gene therapies that address the cardiac and CNS manifestations, 
+      but their routes of administration do not lead to efficient transduction of the 
+      retina. The purpose of this study was to develop a more direct approach for 
+      treating the ocular phenotype of FA, which includes loss of retinal ganglion 
+      cells (RGCs), thinning of the retinal nerve fiber layer, optic nerve atrophy, and 
+      loss of visual field. We generated two novel conditional knockout (KO) models, 
+      mRx-Fxn KO and Pou4f2-Fxn KO mice, wherein Fxn is ablated in all retinal cells or 
+      RGCs, respectively, and showed that FXN deficiency led to retinal dystrophy in 
+      both models. Gene supplementation via intravitreal injection of a novel 
+      AAV2-based capsid carrying FXN partially preserved retinal structure and/or 
+      function in both models, establishing proof of concept for this therapeutic 
+      strategy.
 CI  - Copyright (c) 2025 The Author(s). Published by Elsevier Inc. All rights reserved.
 FAU - Tang, Heyu
 AU  - Tang H
@@ -229,25 +230,36 @@ AD  - Division of Cellular and Molecular Therapy, Department of Pediatrics, Univ
       of Florida, Gainesville, FL, USA. Electronic address: shaire@ufl.edu.
 LA  - eng
 PT  - Journal Article
-DEP - 20251023
+DEP - 20251024
 PL  - United States
 TA  - Mol Ther
 JT  - Molecular therapy : the journal of the American Society of Gene Therapy
 JID - 100890581
 SB  - IM
+OTO - NOTNLM
+OT  - AAV
+OT  - Friedreich's Ataxia
+OT  - adeno-associated virus
+OT  - intravitreal delivery
+OT  - mouse model
+OT  - ocular gene therapy
+OT  - retinal ganglion cell
+COIS- Declaration of interests S.E.B. and S.L.B. are scientific founders of and equity 
+      holders in Atsena Therapeutics and are patent holders in the use of AAV vectors 
+      for the treatment of ocular disease.
 EDAT- 2025/10/25 06:30
 MHDA- 2025/10/25 06:30
 CRDT- 2025/10/25 01:36
 PHST- 2025/06/21 00:00 [received]
 PHST- 2025/09/16 00:00 [revised]
 PHST- 2025/10/17 00:00 [accepted]
-PHST- 2025/10/25 06:30 [medline]
 PHST- 2025/10/25 06:30 [pubmed]
+PHST- 2025/10/25 06:30 [medline]
 PHST- 2025/10/25 01:36 [entrez]
 AID - S1525-0016(25)00869-X [pii]
 AID - 10.1016/j.ymthe.2025.10.048 [doi]
 PST - aheadofprint
-SO  - Mol Ther. 2025 Oct 23:S1525-0016(25)00869-X. doi: 10.1016/j.ymthe.2025.10.048.
+SO  - Mol Ther. 2025 Oct 24:S1525-0016(25)00869-X. doi: 10.1016/j.ymthe.2025.10.048.
 
 PMID- 41074692
 OWN - NLM
@@ -12206,13 +12218,13 @@ AB  - Frataxin is the protein that is down-regulated in Friedreich ataxia (FRDA)
       gel electrophoresis (PAGE) in combination with western blot analysis. One 
       antibody failed to detect any of the frataxin standards or endogenous frataxin in 
       mouse heart tissue. Three of the antibodies detected a protein in mouse heart 
-      tissue that ran slightly faster on PAGE (at 23.4...kDa) to that predicted for 
-      full-length frataxin (23.9...kDa). One antibody detected all four frataxin 
+      tissue that ran slightly faster on PAGE (at 23.4 kDa) to that predicted for 
+      full-length frataxin (23.9 kDa). One antibody detected all four frataxin 
       standards as well as endogenous mouse mature frataxin in mouse tissue. 
       Significantly, this antibody, which will be useful for monitoring mature frataxin 
       levels in monkey, human, and mouse tissues, did not detect a protein in mouse 
-      heart tissue at 23.4...kDa. Therefore, antibodies detecting the immunoreactive 
-      protein at 23.4...kDa could be misleading when testing for the up-regulation of 
+      heart tissue at 23.4 kDa. Therefore, antibodies detecting the immunoreactive 
+      protein at 23.4 kDa could be misleading when testing for the up-regulation of 
       frataxin in animal models.
 CI  - Copyright (c) 2019 The Authors. Published by Elsevier B.V. All rights reserved.
 FAU - Weng, Liwei
@@ -24614,17 +24626,17 @@ VI  - 7
 IP  - 5
 DP  - 2010 Nov 5
 TI  - Friedreich's ataxia induced pluripotent stem cells model intergenerational 
-      GAA...TTC triplet repeat instability.
+      GAA⋅TTC triplet repeat instability.
 PG  - 631-7
 LID - 10.1016/j.stem.2010.09.014 [doi]
 AB  - The inherited neurodegenerative disease Friedreich's ataxia (FRDA) is caused by 
-      GAA...TTC triplet repeat hyperexpansions within the first intron of the FXN gene, 
-      encoding the mitochondrial protein frataxin. Long GAA...TTC repeats cause 
+      GAA⋅TTC triplet repeat hyperexpansions within the first intron of the FXN gene, 
+      encoding the mitochondrial protein frataxin. Long GAA⋅TTC repeats cause 
       heterochromatin-mediated gene silencing and loss of frataxin in affected 
       individuals. We report the derivation of induced pluripotent stem cells (iPSCs) 
       from FRDA patient fibroblasts by transcription factor reprogramming. FXN gene 
       repression is maintained in the iPSCs, as are the global gene expression 
-      signatures reflecting the human disease. GAA...TTC repeats uniquely in FXN in the 
+      signatures reflecting the human disease. GAA⋅TTC repeats uniquely in FXN in the 
       iPSCs exhibit repeat instability similar to patient families, where they expand 
       and/or contract with discrete changes in length between generations. The mismatch 
       repair enzyme MSH2, implicated in repeat instability in other triplet repeat 
@@ -31601,3 +31613,4 @@ PHST- 1996/03/08 00:00 [entrez]
 AID - 10.1126/science.271.5254.1423 [doi]
 PST - ppublish
 SO  - Science. 1996 Mar 8;271(5254):1423-7. doi: 10.1126/science.271.5254.1423.
+
