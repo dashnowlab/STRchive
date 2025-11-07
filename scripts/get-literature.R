@@ -187,17 +187,31 @@ perform_pubmed_query <- function(gene_info) {
     query <- gsub("  ", " ", query)  # Remove double spaces
     #print(query)
     gene_name <- gsub('"', '', gene_name)
-    out_file <- paste0(base_directory, "/", gene_name)
+    out_prefix <- paste0(base_directory, "/", gene_name)
 
     # Include a separator ("/") between base_directory and gene_name
     # Modify dest_file_prefix to include the full file path
-    out.A <- batch_pubmed_download(pubmed_query_string = query,
-                                   format = "medline",
-                                   batch_size = 10000,
-                                   dest_file_prefix = out_file,
-                                   encoding = "ASCII")
+    tryCatch({
+      epm_object <- epm_query(query)
+      cat("Found", epm_object@meta$exp_count, "articles for gene:", gene_name, "\n", file=stderr())
+      if (epm_object@meta$exp_count == 0) {
+        cat("Skipping fetch for:", gene_name, "\n", file=stderr())
+        next  # Skip to the next gene if no articles found
+      }
+      
+      epm_fetch(epm_object, 
+                write_to_file = TRUE, 
+                outfile_path = NULL, # Uses current working directory if NULL
+                format = "medline",
+                encoding = "UTF-8",
+                outfile_prefix = out_prefix)
+    }, error = function(e) {
+      cat("batch pubmed download error.\n", file=stderr())
+      quit(status = 1)
+    })
+
     # output file name
-    out_file <- paste0(base_directory, "/", gene_name, "01.txt")
+    out_file <- paste0(out_prefix, "_batch_01.txt")
     cat(out_file, "\n", file=stderr())
 
     # Check if the file was created successfully XXX What if file existed before script ran?
@@ -348,22 +362,35 @@ perform_new_pubmed_query <- function() {
   file_path <- list()  # Initialize the list to store all publications
   #joined_terms <- paste0('(', paste(or_terms, collapse = '[Title/Abstract] OR '), ')[Title/Abstract]')
   # Construct the query with organized or_terms
-  query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract]) AND ("discovered"[Title/Abstract] OR "identified"[Title/Abstract] OR "causative"[Title/Abstract] OR "underlie"[Title/Abstract] OR "basis"[Title/Abstract]) AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "condition*"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type] OR "Case Reports"[Publication Type]) NOT "review"[Publication Type])')
+  query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract]) AND ("discovered"[Title/Abstract] OR "identified"[Title/Abstract] OR "causative"[Title/Abstract] OR "underlie"[Title/Abstract] OR "basis"[Title/Abstract]) AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "condition*"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type] OR "Case Reports"[Publication Type]) NOT "review"[Publication Type]')
 
   # Clean up any unnecessary slashes from the query
   query <- gsub("  ", " ", query)  # Remove double spaces
   #print(query)
-  out_file <- paste0(base_directory, "/new_loci")
+  out_prefix <- paste0(base_directory, "/new_loci")
 
   # Include a separator ("/") between base_directory and gene_name
   # Modify dest_file_prefix to include the full file path
-  out.A <- batch_pubmed_download(pubmed_query_string = query,
-                                 format = "medline",
-                                 batch_size = 10000,
-                                 dest_file_prefix = out_file,
-                                 encoding = "ASCII")
+  tryCatch({
+    epm_object <- epm_query(query)
+    if (epm_object@meta$exp_count == 0) {
+        cat("Skipping fetch for new loci - no articles found.\n", file=stderr())
+        return(NULL)  # Skip fetch if no articles found
+      }
+    epm_fetch(epm_object, 
+              write_to_file = TRUE, 
+              outfile_path = NULL, # Uses current working directory if NULL
+              format = "medline",
+              encoding = "UTF-8",
+              outfile_prefix = out_prefix)
+
+  }, error = function(e) {
+    cat("batch pubmed download error.\n", file=stderr())
+    quit(status = 1)
+  })
+
   # the function adds 01.txt so, gotta fix that here
-  out_file <- paste0(base_directory, "/new_loci", "01.txt")
+  out_file <- paste0(out_prefix, "_batch_01.txt")
   #print(out_file)
 
   # Check if the file was created successfully XXX What if file existed before script ran?
