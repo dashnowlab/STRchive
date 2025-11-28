@@ -504,11 +504,11 @@
 },
 {
   "LocusId": "SCA8_ATXN8OS",
-  "ReferenceRegion": ["chr13:70139353-70139383", "chr13:70139383-70139429"],
+  "ReferenceRegion": ["chr13:70139323-70139353", "chr13:70139353-70139429"],
   "LocusStructure": "(CTA)*(CTG)*",
   "VariantType": ["Repeat", "Repeat"],
   "VariantId": ["SCA8_ATXN8OS_CTA", "SCA8_ATXN8OS"],
-  "PathologicRegion": "chr13:70139383-70139429",
+  "PathologicRegion": "chr13:70139353-70139429",
   "HGNCId": null,
   "InheritanceMode": ["AD"],
   "DisplayRU": "CTG",
