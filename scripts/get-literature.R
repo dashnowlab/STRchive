@@ -29,7 +29,6 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(biomaRt)
   library(rentrez)
-  library(easyPubMed)
   library(stringr)
   library(purrr)
 })
@@ -160,6 +159,33 @@ consolidated_strings <- gsub("BMD", "Becker muscular dystrophy", consolidated_st
 #where results will be stored
 base_directory <- args[2]
 
+# Optional: set NCBI email from environment (recommended by NCBI)
+# if (nzchar(Sys.getenv("ENTREZ_EMAIL"))) {
+#   set_entrez_email(Sys.getenv("ENTREZ_EMAIL"))
+# } else {
+#   cat("Note: Set ENTREZ_EMAIL env var to comply with NCBI policies.\n", file=stderr())
+# }
+
+# Helper to fetch MEDLINE text in batches and write to file prefix
+fetch_medline_and_write <- function(pmids, outfile_prefix, batch_size = 200) {
+  if (length(pmids) == 0) return(FALSE)
+  medline_texts <- character(0)
+  for (i in seq(1, length(pmids), by = batch_size)) {
+    chunk <- pmids[i:min(i + batch_size - 1, length(pmids))]
+    txt <- tryCatch({
+      entrez_fetch(db = "pubmed", id = chunk, rettype = "medline", retmode = "text")
+    }, error = function(e) {
+      cat("entrez_fetch error:", conditionMessage(e), "\n", file=stderr())
+      return(NULL)
+    })
+    if (!is.null(txt)) medline_texts <- c(medline_texts, txt)
+  }
+  if (!length(medline_texts)) return(FALSE)
+  out_file <- paste0(outfile_prefix, "_batch_01.txt")
+  writeLines(medline_texts, con = out_file, useBytes = TRUE)
+  return(file.exists(out_file))
+}
+
 # function to perform the pubmed query
 # Function printout includes gene name and if there are results, confirms
 # that a file has been created
@@ -178,35 +204,69 @@ perform_pubmed_query <- function(gene_info) {
 
     # Adding [Title/Abstract] to each term
     joined_terms <- paste0(individual_terms, "[Title/Abstract]")
-    #joined_terms <- paste0('(', paste(or_terms, collapse = '[Title/Abstract] OR '), ')[Title/Abstract]')
     # Construct the query with organized or_terms
-    query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract] OR "repeat expansions"[Title/Abstract] OR "tandem repeats"[Title/Abstract] OR "repeat sequence"[Title/Abstract] OR "repeat sequences"[Title/Abstract] OR "repeat length"[Title/Abstract] OR "repeat lengths"[Title/Abstract] OR "expansion"[Title] OR "expansions"[Title] OR "repeats"[Title]) AND (', paste(joined_terms, collapse = " OR "),') AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "diseases"[Title/Abstract] OR "disorders"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "syndromes"[Title/Abstract] OR "patient"[Title/Abstract] OR "patients"[Title/Abstract] OR "proband"[Title/Abstract] OR "probands"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type] or "Case Reports"[Publication Type]) NOT "review"[Publication Type]')
+    terms_repeat <- c(
+      '"repeat expansion"[Title/Abstract]',
+      '"repeat expansions"[Title/Abstract]',
+      '"tandem repeat"[Title/Abstract]',
+      '"tandem repeats"[Title/Abstract]',
+      '"repeat sequence"[Title/Abstract]',
+      '"repeat sequences"[Title/Abstract]',
+      '"repeat length"[Title/Abstract]',
+      '"repeat lengths"[Title/Abstract]',
+      '"expansion"[Title]',
+      '"expansions"[Title]',
+      '"repeats"[Title]'
+    )
 
+    terms_gene <- joined_terms  # e.g., "FMR1"[Title/Abstract] OR "FMR-1"[Title/Abstract] ...
+    terms_language <- '"English"[Language]'
+    terms_disease <- c(
+      "disease*[Title/Abstract]",
+      "disorder*[Title/Abstract]",
+      "syndrome*[Title/Abstract]",
+      "patient*[Title/Abstract]",
+      "proband*[Title/Abstract]"
+    )
+    terms_pubtype <- c(
+      '"journal article"[Publication Type]',
+      '"letter"[Publication Type]',
+      '"Case Reports"[Publication Type]'
+    )
+    terms_exclude <- '"review"[Publication Type]'
 
-    # Clean up any unnecessary slashes from the query
-    query <- gsub("  ", " ", query)  # Remove double spaces
-    #print(query)
+    query <- paste(
+      "(" , paste(terms_repeat, collapse = " OR "), ")",
+      "AND (", paste(terms_gene, collapse = " OR "), ")",
+      "AND", terms_language,
+      "AND (", paste(terms_disease, collapse = " OR "), ")",
+      "AND (", paste(terms_pubtype, collapse = " OR "), ")",
+      "NOT", terms_exclude
+    )
+
+    # Clean up double spaces
+    query <- gsub("\\s{2,}", " ", query)  # Remove double spaces
     gene_name <- gsub('"', '', gene_name)
     out_prefix <- paste0(base_directory, "/", gene_name)
 
-    # Include a separator ("/") between base_directory and gene_name
-    # Modify dest_file_prefix to include the full file path
+    # print query for debugging
+    # cat("PubMed query for gene", gene_name, ":\n", query, "\n")
+
+    # Use rentrez to search and fetch
     tryCatch({
-      epm_object <- epm_query(query)
-      cat("Found", epm_object@meta$exp_count, "articles for gene:", gene_name, "\n", file=stderr())
-      if (epm_object@meta$exp_count == 0) {
+      srch0 <- entrez_search(db = "pubmed", term = query, retmax = 0, use_history = FALSE)
+      count <- ifelse(is.null(srch0$count), 0L, as.integer(srch0$count))
+      cat("Found", count, "articles for gene:", gene_name, "\n", file=stderr())
+      if (count == 0L) {
         cat("Skipping fetch for:", gene_name, "\n", file=stderr())
-        next  # Skip to the next gene if no articles found
+        next
       }
-      
-      epm_fetch(epm_object, 
-                write_to_file = TRUE, 
-                outfile_path = NULL, # Uses current working directory if NULL
-                format = "medline",
-                encoding = "UTF-8",
-                outfile_prefix = out_prefix)
+      retmax <- min(count, 10000L)
+      srch <- entrez_search(db = "pubmed", term = query, retmax = retmax)
+      ok <- fetch_medline_and_write(srch$ids, out_prefix)
+      if (!ok) stop("Failed to write MEDLINE file")
     }, error = function(e) {
-      cat("batch pubmed download error.\n", file=stderr())
+      cat("batch pubmed download error: ", conditionMessage(e), "\n", file=stderr())
       quit(status = 1)
     })
 
@@ -214,14 +274,12 @@ perform_pubmed_query <- function(gene_info) {
     out_file <- paste0(out_prefix, "_batch_01.txt")
     cat(out_file, "\n", file=stderr())
 
-    # Check if the file was created successfully XXX What if file existed before script ran?
+    # Check if the file was created successfully
     cat("Full file path:", out_file, "\n", file=stderr())
     if (file.exists(out_file)) {
-      #cat("File exists.\n", file=stderr())
       file_paths[[gene_name]] <- out_file
     } else {
       cat("Error: File not found -", out_file, "\n", file=stderr())
-      #quit(status = 1)
     }
   }
 
@@ -257,21 +315,15 @@ for (gene_name in names(file_paths)) {
 pub_info_list <- list()
 
 extract_citation_info <- function(medline_data_list, gene_name) {
-  # Combine the list of XML strings into a single string
+  # Combine the MEDLINE records into a single string
   medline_string <- paste(medline_data_list, collapse = "")
 
-  # Use regular expressions to extract PMID, publication years, and titles
-  # Extract PMIDs
+  # Extract PMIDs, dates, and titles
   pmids <- str_extract_all(medline_string, "(?<=PMID- )\\d+")[[1]]
-  #print(pmids)
-  # Extract Publication Dates
   publication_dates <- str_extract_all(medline_string, "(?<=DP  - )\\d+")[[1]]
-  #print(publication_dates)
-  # Extract Titles
   title <- str_extract_all(medline_string, "(?<=TI  - ).+?(?=\\.|\\?)")[[1]]
-  #print(title)
 
-  # Ensure all vectors have the same length
+  # Align vector lengths
   length_diff <- length(pmids) - length(publication_dates)
   if (length_diff > 0) {
     publication_dates <- c(publication_dates, rep(NA, length_diff))
@@ -286,45 +338,47 @@ extract_citation_info <- function(medline_data_list, gene_name) {
     pmids <- c(pmids, rep(NA, -length_diff))
   }
 
-  # Create a dataframe with gene_name, PMID, PublicationYear, and Title
-  pub_info_df <- data.frame(gene = rep(gene_name, length(pmids)),
-                            PMID = pmids,
-                            PublicationDate = publication_dates,
-                            Title = title,
-                            stringsAsFactors = FALSE)
-
-  return(pub_info_df)
+  # Data frame output
+  data.frame(
+    gene = rep(gene_name, length(pmids)),
+    PMID = pmids,
+    PublicationDate = publication_dates,
+    Title = title,
+    stringsAsFactors = FALSE
+  )
 }
 
 for (gene_name in names(all_publications)) {
-  # Get the list of XML data for the current gene_name
   medline_data_list <- all_publications[[gene_name]]
-  #print(gene_name)
-  # Extract publication information using the function
+  if (length(medline_data_list) == 0) next  # skip empty files
   pub_info_df <- extract_citation_info(medline_data_list, gene_name)
-
-  # Append the results to the list
   pub_info_list[[gene_name]] <- pub_info_df
 }
 
 # Combine all the dataframes into a single dataframe
-all_pub_info_df <- do.call(rbind, pub_info_list)
+if (length(pub_info_list) == 0) {
+  all_pub_info_df <- data.frame(
+    gene = character(),
+    PMID = character(),
+    PublicationDate = character(),
+    Title = character(),
+    stringsAsFactors = FALSE
+  )
+} else {
+  all_pub_info_df <- do.call(rbind, pub_info_list)
+}
 
 # add pubmed search results to literature field for entry
 data <- data %>%
   mutate(additional_literature = map_chr(gene, function(g) {
-    # Find matching PMIDs from all_pub_info_df for each gene
+    # Guard if no publications parsed
+    if (nrow(all_pub_info_df) == 0) return("")
     matching_pmids <- all_pub_info_df %>%
       filter(gene == g) %>%
       pull(PMID) %>%
       unique() %>%
       paste0("@pmid:", ., collapse = ",")
-
-    # If there are no matches, return an empty string
-    if (length(matching_pmids) == 0) {
-      return("")
-    }
-    return(matching_pmids)
+    if (length(matching_pmids) == 0) "" else matching_pmids
   }))
 
 # remove any redundant pmids from additional_literature that are in references
@@ -360,56 +414,71 @@ write_json(lit_data, args[4])
 #new locus query found from reviewing pertinent terms in discovery papers
 perform_new_pubmed_query <- function() {
   file_path <- list()  # Initialize the list to store all publications
-  #joined_terms <- paste0('(', paste(or_terms, collapse = '[Title/Abstract] OR '), ')[Title/Abstract]')
-  # Construct the query with organized or_terms
-  query <- paste0('("repeat expansion"[Title/Abstract] OR "tandem repeat"[Title/Abstract]) AND ("discovered"[Title/Abstract] OR "identified"[Title/Abstract] OR "causative"[Title/Abstract] OR "underlie"[Title/Abstract] OR "basis"[Title/Abstract]) AND "English"[Language] AND ("disease"[Title/Abstract] OR "disorder"[Title/Abstract] OR "syndrome"[Title/Abstract] OR "condition*"[Title/Abstract]) AND ("journal article"[Publication Type] OR "letter"[Publication Type] OR "Case Reports"[Publication Type]) NOT "review"[Publication Type]')
 
-  # Clean up any unnecessary slashes from the query
-  query <- gsub("  ", " ", query)  # Remove double spaces
-  #print(query)
+  terms_repeat <- c(
+    '"repeat expansion"[Title/Abstract]',
+    '"tandem repeat"[Title/Abstract]'
+  )
+  terms_discovery <- c(
+    '"discovered"[Title/Abstract]',
+    '"identified"[Title/Abstract]',
+    '"causative"[Title/Abstract]',
+    '"underlie"[Title/Abstract]',
+    '"basis"[Title/Abstract]'
+  )
+  terms_language <- '"English"[Language]'
+  terms_disease <- c(
+    '"disease"[Title/Abstract]',
+    '"disorder"[Title/Abstract]',
+    '"syndrome"[Title/Abstract]',
+    '"condition*"[Title/Abstract]'
+  )
+  terms_pubtype <- c(
+    '"journal article"[Publication Type]',
+    '"letter"[Publication Type]',
+    '"Case Reports"[Publication Type]'
+  )
+  terms_exclude <- '"review"[Publication Type]'
+
+  query <- paste(
+    "(" , paste(terms_repeat, collapse = " OR "), ")",
+    "AND (", paste(terms_discovery, collapse = " OR "), ")",
+    "AND", terms_language,
+    "AND (", paste(terms_disease, collapse = " OR "), ")",
+    "AND (", paste(terms_pubtype, collapse = " OR "), ")",
+    "NOT", terms_exclude
+  )
+
+  query <- gsub("\\s{2,}", " ", query)
   out_prefix <- paste0(base_directory, "/new_loci")
 
-  # Include a separator ("/") between base_directory and gene_name
-  # Modify dest_file_prefix to include the full file path
   tryCatch({
-    epm_object <- epm_query(query)
-    if (epm_object@meta$exp_count == 0) {
-        cat("Skipping fetch for new loci - no articles found.\n", file=stderr())
-        return(NULL)  # Skip fetch if no articles found
-      }
-    epm_fetch(epm_object, 
-              write_to_file = TRUE, 
-              outfile_path = NULL, # Uses current working directory if NULL
-              format = "medline",
-              encoding = "UTF-8",
-              outfile_prefix = out_prefix)
-
+    srch0 <- entrez_search(db = "pubmed", term = query, retmax = 0, use_history = FALSE)
+    count <- ifelse(is.null(srch0$count), 0L, as.integer(srch0$count))
+    if (count == 0L) {
+      cat("Skipping fetch for new loci - no articles found.\n", file=stderr())
+      return(NULL)
+    }
+    retmax <- min(count, 10000L)
+    srch <- entrez_search(db = "pubmed", term = query, retmax = retmax)
+    ok <- fetch_medline_and_write(srch$ids, out_prefix)
+    if (!ok) stop("Failed to write MEDLINE file")
   }, error = function(e) {
-    cat("batch pubmed download error.\n", file=stderr())
+    cat("batch pubmed download error: ", conditionMessage(e), "\n", file=stderr())
     quit(status = 1)
   })
 
-  # the function adds 01.txt so, gotta fix that here
   out_file <- paste0(out_prefix, "_batch_01.txt")
-  #print(out_file)
-
-  # Check if the file was created successfully XXX What if file existed before script ran?
   cat("Full file path:", out_file, "\n", file=stderr())
   if (file.exists(out_file)) {
-    #cat("File exists.\n", file=stderr())
     file_path <- out_file
   } else {
     cat("Error: File not found -", out_file, "\n", file=stderr())
-    #quit(status = 1)
   }
-
 
   return(file_path)
 }
 
-
-
-perform_new_pubmed_query()
 #
 # ### Let's get all the citations to run manubot on
 extract_citations <- function(column) {
