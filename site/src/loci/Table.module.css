@@ -15,3 +15,16 @@
   align-items: center;
   gap: 5px;
 }
+
+.motif {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.motif-chars {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
