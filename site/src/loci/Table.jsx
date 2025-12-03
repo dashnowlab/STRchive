@@ -73,7 +73,7 @@ const cols = [
   },
   {
     key: "pathogenic_motif_reference_orientation",
-    name: "Motif",
+    name: "Motif (len)",
     render: (cell) => (
       <div className={classes.motif}>
         <div data-tooltip={cell.join(", ")} className={classes["motif-chars"]}>
