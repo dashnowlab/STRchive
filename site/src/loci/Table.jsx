@@ -73,19 +73,15 @@ const cols = [
   },
   {
     key: "pathogenic_motif_reference_orientation",
-    name: "Motif",
+    name: "Motif (len)",
     render: (cell) => (
-      <div
-        data-tooltip={cell.join(", ")}
-        style={{
-          display: "inline-block",
-          maxWidth: "80px",
-          overflow: "hidden",
-          whiteSpace: "nowrap",
-          textOverflow: "ellipsis",
-        }}
-      >
-        {cell.join(", ")}
+      <div className={classes.motif}>
+        <div data-tooltip={cell.join(", ")} className={classes["motif-chars"]}>
+          {cell.join(", ")}
+        </div>
+        <div>
+          ({cell.map((motif) => motif.length.toLocaleString()).join(", ")})
+        </div>
       </div>
     ),
   },
