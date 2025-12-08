@@ -7,7 +7,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "section": "Overview",
+      "section": "ID",
       "title": "ID",
       "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II.",
       "placeholder": "[disease_id]_[gene]",
@@ -16,14 +16,14 @@
       "pattern": "^[\\S]+_[\\S]+$"
     },
     "disease_id": {
-      "section": "Overview",
+      "section": "ID",
       "title": "Disease ID",
       "description": "Disease abbreviation",
       "examples": ["CANVAS"],
       "type": ["string"]
     },
     "gene": {
-      "section": "Overview",
+      "section": "ID",
       "title": "Gene",
       "description": "Gene symbol",
       "examples": ["RFC1"],

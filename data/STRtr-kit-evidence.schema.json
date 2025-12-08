@@ -7,39 +7,24 @@
   "type": "object",
   "properties": {
     "id": {
-      "section": "Locus",
-      "title": "ID",
+      "section": "Evidence",
+      "title": "Locus ID",
       "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II.",
       "placeholder": "[disease_id]_[gene]",
       "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
       "type": ["string"],
       "pattern": "^[\\S]+_[\\S]+$"
     },
-    "disease_id": {
-      "section": "Locus",
-      "title": "Disease ID",
-      "description": "Disease abbreviation",
-      "examples": ["CANVAS"],
-      "type": ["string"]
-    },
-    "gene": {
-      "section": "Locus",
-      "title": "Gene",
-      "description": "Gene symbol",
-      "examples": ["RFC1"],
-      "type": ["string"]
-    },
     "citation": {
-      "section": "Source",
+      "section": "Evidence",
       "title": "Citation",
       "description": "Citation for the source of the evidence",
       "examples": ["pmid:29507423"],
       "type": ["string", "null"],
       "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
-
     },
     "genetic_evidence": {
-      "section": "Genetic Evidence",
+      "section": "Evidence",
       "title": "Genetic Evidence",
       "description": "One or more pieces of genetic evidence provided in the source",
       "type": "array",
@@ -49,7 +34,7 @@
         "type": "object",
         "properties": {
           "genetic_evidence_type": {
-            "title": "Genetic Evidence Type",
+            "title": "Type",
             "description": "The type(s) of genetic evidence provided in the source",
             "type": ["string", "null"],
             "enum": [
@@ -68,20 +53,20 @@
             }
           },
           "probands_count": {
-            "title": "Number of probands",
+            "title": "Probands",
             "description": "Number of probands with the pathogenic expansion reported in the source",
             "type": ["integer", "null"],
             "minimum": 0
           },
           "points_genetic": {
-            "title": "Points (Genetic Evidence)",
+            "title": "Points",
             "description": "Points assigned to this locus based on the genetic evidence provided in the source, according to the STRtr-kit scoring system.",
             "type": ["number", "null"],
             "minimum": 0,
             "maximum": 12
           },
           "notes_genetic": {
-            "title": "Notes (Genetic Evidence)",
+            "title": "Notes",
             "description": "Additional notes about the genetic evidence provided in the source including point upgrades/downgrades",
             "examples": [
               "Segregation analysis in 3 affected families with LOD score of 3.5"
@@ -91,9 +76,10 @@
           }
         },
         "required": ["genetic_evidence_type", "points_genetic"]
-      },
+      }
+    },
     "experimental_evidence": {
-      "section": "Experimental Evidence",
+      "section": "Evidence",
       "title": "Experimental Evidence",
       "description": "One or more pieces of experimental evidence provided in the source",
       "type": "array",
@@ -103,15 +89,21 @@
         "type": "object",
         "properties": {
           "experimental_evidence_type": {
-            "title": "Experimental Evidence Type",
+            "title": "Type",
             "description": "The type(s) of experimental evidence provided in the source",
             "type": ["string", "null"],
             "enum": [
-              "probands",
-              "allele_effect",
-              "method",
-              "segregation",
-              "case_control"
+              "function_biochemical",
+              "function_protein_interaction",
+              "function_regulatory_impact",
+              "altfunction_patient_cells",
+              "altfunction_non_patient_cells",
+              "model_non_human",
+              "model_cell_culture",
+              "rescue_human_control",
+              "rescue_non_human_model_organism",
+              "rescue_cell_culture",
+              "rescue_patient_cells"
             ],
             "enum_descriptions": {
               "function_biochemical": "Biochemical function",
@@ -128,14 +120,14 @@
             }
           },
           "points_experimental": {
-            "title": "Points (Experimental Evidence)",
+            "title": "Points",
             "description": "Points assigned to this locus based on the experimental evidence provided in the source, according to the STRtr-kit scoring system.",
             "type": ["number", "null"],
             "minimum": 0,
             "maximum": 6
           },
           "notes_experimental": {
-            "title": "Notes (Experimental Evidence)",
+            "title": "Notes",
             "description": "Additional notes about the experimental evidence provided in the source including point upgrades/downgrades",
             "examples": [
               "Functional alteration demonstrated in patient-derived cell lines"
@@ -145,8 +137,8 @@
           }
         },
         "required": ["experimental_evidence_type", "points_experimental"]
-        }
       }
     }
-  }
+  },
+  "required": ["id", "disease_id", "gene"]
 }
