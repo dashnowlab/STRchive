@@ -1,4 +1,10 @@
-import { cloneElement, Fragment, useMemo } from "react";
+import {
+  cloneElement,
+  createContext,
+  Fragment,
+  useContext,
+  useMemo,
+} from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import {
@@ -20,24 +26,24 @@ import TextBox from "@/components/TextBox";
 import { makeList } from "@/util/format";
 import classes from "./SchemaForm.module.css";
 
+const FormContext = createContext({});
+
 /** form automatically generated from json schema */
 const SchemaForm = ({ schema, sections, data, onChange, children }) => {
   /** compile schema */
-  const rootNode = useMemo(
+  const root = useMemo(
     () => compileSchema(schema, { drafts: [draft] }),
     [schema],
   );
 
   /** if no initial data, generate blank values */
-  data ??= rootNode.getData(null, { extendDefaults: false });
+  data ??= root.getData(null, { extendDefaults: false });
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
-    rootNode.context.data = data;
-    return rootNode.validate(data);
-  }, [rootNode, data]);
-
-  // console.error(errors);
+    root.context.data = data;
+    return root.validate(data);
+  }, [root, data]);
 
   return (
     <>
@@ -47,15 +53,11 @@ const SchemaForm = ({ schema, sections, data, onChange, children }) => {
         <section key={index}>
           <Heading level={2}>{section}</Heading>
 
-          <Field
-            rootNode={rootNode}
-            schema={schema}
-            section={section}
-            node={rootNode}
-            data={data}
-            setData={onChange}
-            errors={errors}
-          />
+          <FormContext.Provider
+            value={{ section, root, schema, data, onChange, errors }}
+          >
+            <Field node={root} />
+          </FormContext.Provider>
         </section>
       ))}
     </>
@@ -117,21 +119,15 @@ const draft = extendDraft(draft2020, {
  * @param {import("json-schema-library").SchemaNode} props.node
  * @param {import("json-schema-library").JsonError[]} props.errors
  */
-const Field = ({
-  rootNode,
-  schema,
-  section,
-  node,
-  path = "",
-  data,
-  setData,
-  errors,
-}) => {
+const Field = ({ node, path = "" }) => {
+  /** top level form state */
+  const form = useContext(FormContext);
+
   /** are we at top level of schema */
   const level = split(path).length;
 
   /** filter out fields that should not be displayed in this section */
-  if (level === 1 && node.schema.section !== section) return;
+  if (level === 1 && node.schema.section !== form.section) return;
 
   /** schema props */
   const {
@@ -162,13 +158,13 @@ const Field = ({
   const name = path;
 
   /** get nested data value from path */
-  const value = get(data, path);
+  const value = get(form.data, path);
 
   /** set nested data value from path */
   const onChange = (value) => {
-    let _data = cloneDeep(data);
+    let _data = cloneDeep(form.data);
     _data = set(_data, path, value);
-    setData(_data);
+    form.onChange(_data);
   };
 
   /** help tooltip to show */
@@ -190,7 +186,8 @@ const Field = ({
 
   /** is the field required to be set */
   const required =
-    schema.required?.includes(split(name).pop()) && !types.includes("null");
+    form.schema.required?.includes(split(name).pop()) &&
+    !types.includes("null");
 
   /** full label elements to show */
   const label = (
@@ -201,7 +198,7 @@ const Field = ({
   );
 
   /** get validation errors associated with this field */
-  const fieldErrors = errors.filter(
+  const fieldErrors = form.errors.filter(
     ({ data }) => data.pointer === path.replace(/^#?\/?/, "#/"),
   );
   /** is there an error on this field */
@@ -288,7 +285,7 @@ const Field = ({
         /** are all conditions satisfied */
         ?.filter((conditional) =>
           Object.entries(conditional.if.properties).every(
-            ([key, value]) => get(data, join(path, key)) === value.const,
+            ([key, value]) => get(form.data, join(path, key)) === value.const,
           ),
         )
         /** get "then" properties schema */
@@ -305,25 +302,13 @@ const Field = ({
       <div className={classes.object}>
         {level > 0 && <div className={classes.heading}>{label}</div>}
         {regular.concat(conditional).map(([key, node]) => {
-          return (
-            <Field
-              key={key}
-              rootNode={rootNode}
-              schema={schema}
-              section={section}
-              node={node}
-              path={`${path}/${key}`}
-              data={data}
-              setData={setData}
-              errors={errors}
-            />
-          );
+          return <Field key={key} node={node} path={`${path}/${key}`} />;
         })}
       </div>
     );
   } else if (types.includes("array")) {
     /** array group */
-    const items = get(data, path)?.length ?? 0;
+    const items = get(form.data, path)?.length ?? 0;
 
     control = (
       <div className={classes.array}>
@@ -332,27 +317,22 @@ const Field = ({
           <Fragment key={index}>
             <Field
               key={index}
-              schema={schema}
-              section={section}
               node={node.getChildSelection()[0]}
               path={`${path}/${index}`}
-              data={data}
-              setData={setData}
-              errors={errors}
             />
             <div className={classes.actions}>
               <Button
                 disabled={index === 0}
                 data-tooltip="Move up"
                 onClick={() => {
-                  let _data = cloneDeep(data);
+                  let _data = cloneDeep(form.data);
                   const aPath = join(path, String(index - 1));
                   const bPath = join(path, String(index));
-                  const aValue = get(data, aPath);
-                  const bValue = get(data, bPath);
+                  const aValue = get(form.data, aPath);
+                  const bValue = get(form.data, bPath);
                   _data = set(_data, aPath, bValue);
                   _data = set(_data, bPath, aValue);
-                  setData(_data);
+                  form.onChange(_data);
                 }}
               >
                 <FaArrowUp />
@@ -361,14 +341,14 @@ const Field = ({
                 disabled={index === items - 1}
                 data-tooltip="Move down"
                 onClick={() => {
-                  let _data = cloneDeep(data);
+                  let _data = cloneDeep(form.data);
                   const aPath = join(path, String(index));
                   const bPath = join(path, String(index + 1));
-                  const aValue = get(data, aPath);
-                  const bValue = get(data, bPath);
+                  const aValue = get(form.data, aPath);
+                  const bValue = get(form.data, bPath);
                   _data = set(_data, aPath, bValue);
                   _data = set(_data, bPath, aValue);
-                  setData(_data);
+                  form.onChange(_data);
                 }}
               >
                 <FaArrowDown />
@@ -376,9 +356,9 @@ const Field = ({
               <Button
                 data-tooltip="Remove"
                 onClick={() => {
-                  let _data = cloneDeep(data);
+                  let _data = cloneDeep(form.data);
                   _data = remove(_data, join(path, String(index)));
-                  setData(_data);
+                  form.onChange(_data);
                 }}
               >
                 <FaTrash />
@@ -392,7 +372,7 @@ const Field = ({
           design="plain"
           onClick={() => {
             /** add new item to array */
-            let _data = cloneDeep(data);
+            let _data = cloneDeep(form.data);
             /** get child schema */
             let newItem = node
               .getNodeChild("items")
@@ -402,7 +382,7 @@ const Field = ({
             if (isObject(newItem)) newItem = mapValues(newItem, () => null);
             /** insert item */
             _data = set(_data, [...split(path), "[]"], newItem);
-            setData(_data);
+            form.onChange(_data);
           }}
         >
           <FaPlus />
@@ -452,13 +432,13 @@ const Field = ({
   else if (types.includes("number") || types.includes("integer")) {
     /** min value allowed to be input */
     const min = Math.max(
-      ...[minimum, get(data, greater_than)].filter(
+      ...[minimum, get(form.data, greater_than)].filter(
         (value) => typeof value === "number",
       ),
     );
     /** max value allowed to be input */
     const max = Math.min(
-      ...[maximum, get(data, less_than)].filter(
+      ...[maximum, get(form.data, less_than)].filter(
         (value) => typeof value === "number",
       ),
     );
