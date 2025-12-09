@@ -8,7 +8,7 @@
   "properties": {
     "id": {
       "section": "Evidence",
-      "title": "Locus ID",
+      "title": "Locus",
       "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II.",
       "placeholder": "[disease_id]_[gene]",
       "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
@@ -20,9 +20,10 @@
       "title": "Citation",
       "description": "Citation for the source of the evidence",
       "examples": ["pmid:29507423"],
-      "type": ["string", "null"],
+      "type": ["string"],
       "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
     },
+
     "genetic_evidence": {
       "section": "Evidence",
       "title": "Genetic Evidence",
@@ -33,7 +34,7 @@
         "title": "",
         "type": "object",
         "properties": {
-          "genetic_evidence_type": {
+          "type": {
             "title": "Type",
             "description": "The type(s) of genetic evidence provided in the source",
             "type": ["string", "null"],
@@ -52,20 +53,7 @@
               "case_control": "Case-control study"
             }
           },
-          "probands_count": {
-            "title": "Probands",
-            "description": "Number of probands with the pathogenic expansion reported in the source",
-            "type": ["integer", "null"],
-            "minimum": 0
-          },
-          "points_genetic": {
-            "title": "Points",
-            "description": "Points assigned to this locus based on the genetic evidence provided in the source, according to the STRtr-kit scoring system.",
-            "type": ["number", "null"],
-            "minimum": 0,
-            "maximum": 12
-          },
-          "notes_genetic": {
+          "notes": {
             "title": "Notes",
             "description": "Additional notes about the genetic evidence provided in the source including point upgrades/downgrades",
             "examples": [
@@ -75,70 +63,34 @@
             "multiline": true
           }
         },
-        "required": ["genetic_evidence_type", "points_genetic"]
-      }
-    },
-    "experimental_evidence": {
-      "section": "Evidence",
-      "title": "Experimental Evidence",
-      "description": "One or more pieces of experimental evidence provided in the source",
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "title": "",
-        "type": "object",
-        "properties": {
-          "experimental_evidence_type": {
-            "title": "Type",
-            "description": "The type(s) of experimental evidence provided in the source",
-            "type": ["string", "null"],
-            "enum": [
-              "function_biochemical",
-              "function_protein_interaction",
-              "function_regulatory_impact",
-              "altfunction_patient_cells",
-              "altfunction_non_patient_cells",
-              "model_non_human",
-              "model_cell_culture",
-              "rescue_human_control",
-              "rescue_non_human_model_organism",
-              "rescue_cell_culture",
-              "rescue_patient_cells"
-            ],
-            "enum_descriptions": {
-              "function_biochemical": "Biochemical function",
-              "function_protein_interaction": "Protein Interaction function",
-              "function_regulatory_impact": "Regulatory Impact function",
-              "altfunction_patient_cells": "Functional Alteration in Patient Cells Model",
-              "altfunction_non_patient_cells": "Functional Alteration in Non-patient Cells Model",
-              "model_non_human": "Non-Human Model Organism",
-              "model_cell_culture": "Cell Culture Model",
-              "rescue_human_control": "Human (control) Rescue",
-              "rescue_non_human_model_organism": "Non-Human Model Organism Rescue",
-              "rescue_cell_culture": "Cell Culture Rescue",
-              "rescue_patient_cells": "Patient Cells Rescue"
+        "required": ["type"],
+        "allOf": [
+          {
+            "if": { "properties": { "type": { "const": "probands" } } },
+            "then": {
+              "properties": {
+                "probands": {
+                  "title": "Probands",
+                  "description": "Number of probands with the pathogenic expansion reported in the source",
+                  "type": ["integer"],
+                  "minimum": 0
+                },
+                "points": {
+                  "title": "Points",
+                  "description": "Points assigned to this locus based on the genetic evidence provided in the source, according to the STRtr-kit scoring system.",
+                  "type": ["number"],
+                  "minimum": 0,
+                  "maximum": 6,
+                  "default": 0.5,
+                  "calc": "#/probands * 0.5"
+                }
+              },
+              "required": ["probands", "points"]
             }
-          },
-          "points_experimental": {
-            "title": "Points",
-            "description": "Points assigned to this locus based on the experimental evidence provided in the source, according to the STRtr-kit scoring system.",
-            "type": ["number", "null"],
-            "minimum": 0,
-            "maximum": 6
-          },
-          "notes_experimental": {
-            "title": "Notes",
-            "description": "Additional notes about the experimental evidence provided in the source including point upgrades/downgrades",
-            "examples": [
-              "Functional alteration demonstrated in patient-derived cell lines"
-            ],
-            "type": ["string", "null"],
-            "multiline": true
           }
-        },
-        "required": ["experimental_evidence_type", "points_experimental"]
+        ]
       }
     }
   },
-  "required": ["id", "disease_id", "gene"]
+  "required": ["id", "citation"]
 }

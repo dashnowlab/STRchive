@@ -37,6 +37,8 @@ const SchemaForm = ({ schema, sections, data, onChange, children }) => {
     return rootNode.validate(data);
   }, [rootNode, data]);
 
+  // console.error(errors);
+
   return (
     <>
       {children && <section>{children}</section>}
@@ -147,6 +149,7 @@ const Field = ({
     hide,
     multiline,
     combobox,
+    allOf,
   } = node.schema;
 
   /** explicitly hide field */
@@ -271,19 +274,44 @@ const Field = ({
     else el?.setCustomValidity("");
   };
 
-  if (types.includes("object"))
+  if (types.includes("object")) {
+    /** regular child properties */
+    const regular = Object.keys(node.schema.properties ?? {}).map((key) => [
+      key,
+      /** child node */
+      node.getChildSelection(key)[0],
+    ]);
+
+    /** conditional child properties */
+    const conditional = Object.entries(
+      allOf
+        /** are all conditions satisfied */
+        ?.filter((conditional) =>
+          Object.entries(conditional.if.properties).every(
+            ([key, value]) => get(data, join(path, key)) === value.const,
+          ),
+        )
+        /** get "then" properties schema */
+        .map((conditional) => conditional.then.properties)
+        .reduce((acc, props) => ({ ...acc, ...props }), {}) ?? {},
+    ).map(([key, node]) => [
+      key,
+      /** child node */
+      compileSchema(node),
+    ]);
+
     /** object group */
     control = (
       <div className={classes.object}>
         {level > 0 && <div className={classes.heading}>{label}</div>}
-        {Object.keys(node.schema.properties).map((key) => {
+        {regular.concat(conditional).map(([key, node]) => {
           return (
             <Field
               key={key}
               rootNode={rootNode}
               schema={schema}
               section={section}
-              node={node.getChildSelection(key)[0]}
+              node={node}
               path={`${path}/${key}`}
               data={data}
               setData={setData}
@@ -293,7 +321,7 @@ const Field = ({
         })}
       </div>
     );
-  else if (types.includes("array")) {
+  } else if (types.includes("array")) {
     /** array group */
     const items = get(data, path)?.length ?? 0;
 
