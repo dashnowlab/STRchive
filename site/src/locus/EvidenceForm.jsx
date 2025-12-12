@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { LuBookCheck, LuSend } from "react-icons/lu";
-import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
+import { cloneDeep, isEqual, omitBy, startCase, sumBy } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
 import { createPR } from "@/api/pr";
 import Alert from "@/components/Alert";
@@ -94,6 +94,11 @@ const EvidenceForm = ({ heading, locus }) => {
     console.info(data);
   });
 
+  /** preview/summary */
+  const geneticPoints = sumBy(data.genetic_evidence, "points") || 0;
+  const experimentalPoints = sumBy(data.experimental_evidence, "points") || 0;
+  const totalPoints = geneticPoints + experimentalPoints;
+
   return (
     <Form onSubmit={submit}>
       <section>
@@ -133,6 +138,19 @@ const EvidenceForm = ({ heading, locus }) => {
       />
 
       <section>
+        <Heading level={2}>Summary</Heading>
+
+        <dl>
+          <dt>Genetic Points</dt>
+          <dd>{geneticPoints}</dd>
+
+          <dt>Experimental Points</dt>
+          <dd>{experimentalPoints}</dd>
+
+          <dt>Total</dt>
+          <dd>{totalPoints}</dd>
+        </dl>
+
         <Alert type={status || "info"}>
           {status === "" && (
             <>
