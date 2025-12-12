@@ -109,15 +109,15 @@ const EditForm = ({ heading, locus }) => {
       .join("\n\n");
 
     /** branch name from locus id */
-    const branch = data.id;
+    const branch = `${locus ? "edit" : "new"}-${data.id}`;
 
     /** pr title */
     const title = data["edit-title"];
 
-    /** remove edit metadata */
+    /** remove metadata since it is captured in created pr */
     data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
 
-    /** merge with locus data */
+    /** merge with existing locus data */
     const newLoci = cloneDeep(loci).map((locus) =>
       locus.id === data.id ? data : locus,
     );

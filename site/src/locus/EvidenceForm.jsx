@@ -14,7 +14,7 @@ import SchemaForm from "@/components/SchemaForm";
 import { repo } from "@/layouts/meta";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
-import loci from "~/STRchive-loci.json";
+import evidence from "~/STRtr-kit-evidence.json";
 import schema from "~/STRtr-kit-evidence.schema.json";
 
 /** add extra fields for evidence metadata */
@@ -91,7 +91,52 @@ const EvidenceForm = ({ heading, locus }) => {
     data: response,
     status,
   } = useQuery(async () => {
-    console.info(data);
+    /** pr body */
+    const name = data["evidence-name"];
+    const username = data["evidence-username"];
+    const email = data["evidence-email"];
+    const description = data["evidence-description"];
+    const body = [{ name, username, email }, { description }]
+      .map((group) =>
+        Object.entries(group)
+          .map(([key, value]) => [
+            `**${startCase(key)}**`,
+            value?.trim() ? value.trim() : "\\-",
+          ])
+          .flat()
+          .join("\n"),
+      )
+      .join("\n\n");
+
+    /** branch name from locus id */
+    const branch = `evidence-${data.id}`;
+
+    /** pr title */
+    const title = data["evidence-title"];
+
+    /** remove metadata since it is captured in created pr */
+    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("evidence-"));
+
+    /** merge with existing evidence data */
+    const newEvidence = cloneDeep(evidence).concat([data]);
+
+    /** pr files to change */
+    const files = [
+      {
+        path: "data/STRtr-kit-evidence.json",
+        content: JSON.stringify(newEvidence, null, 2),
+      },
+    ];
+
+    return await createPR({
+      owner: "dashnowlab",
+      repo: "STRchive",
+      branch,
+      title,
+      body,
+      files,
+      labels: ["locus-evidence"],
+    });
   });
 
   /** preview/summary */
