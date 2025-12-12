@@ -6,6 +6,7 @@ import {
   useMemo,
 } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
+import { Parser } from "expr-eval";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import {
   cloneDeep,
@@ -24,7 +25,12 @@ import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
 import TextBox from "@/components/TextBox";
 import { makeList } from "@/util/format";
+import { usePrevious } from "@/util/hooks";
+import { sleep } from "@/util/misc";
 import classes from "./SchemaForm.module.css";
+
+/** calc expression parser */
+const parser = new Parser();
 
 const FormContext = createContext({});
 
@@ -78,6 +84,7 @@ const lessThan = {
     const otherValue = get(fullData, otherKey);
     if (thisValue === null || otherValue === null) return;
     if (thisValue <= otherValue) return;
+
     return node.createError("compare-value-error", {
       pointer,
       value: otherValue,
@@ -146,6 +153,7 @@ const Field = ({ node, path = "" }) => {
     multiline,
     combobox,
     allOf,
+    calc,
   } = node.schema;
 
   /** explicitly hide field */
@@ -166,6 +174,63 @@ const Field = ({ node, path = "" }) => {
     _data = set(_data, path, value);
     form.onChange(_data);
   };
+
+  /** handle calc expression */
+  let calcValue;
+  if (calc) {
+    let expression = calc;
+
+    let variables = uniq(
+      /** find all pairs of braces e.g. {VAR} */
+      [...expression.matchAll(/(\{.*?\})/g)].map((match) => match[1]),
+    )
+      .map((path, index) => {
+        /** assign unique single character variable */
+        const char = String.fromCharCode(97 + index);
+        /** replace with char */
+        expression = expression.replaceAll(path, char);
+        /** get path value between braces */
+        path = path.slice(1, -1);
+        return { path, char };
+      })
+      .map((variable) => {
+        const fullPath = join(
+          /** path of current field */
+          path,
+          /** go up one level so e.g. {some_field} is relative to current */
+          "..",
+          /** relative path from var */
+          variable.path,
+        );
+        /** get variable value from form data */
+        try {
+          const { char } = variable;
+          const value = get(form.data, fullPath);
+          return [char, value];
+        } catch {}
+      })
+      /** remove any unresolved paths */
+      .filter(Boolean);
+
+    /** make map of var letter to value */
+    variables = Object.fromEntries(variables);
+
+    /** evaluate expression */
+    try {
+      calcValue = parser.evaluate(expression, variables);
+    } catch {}
+  }
+
+  /** keep track of previous calc value */
+  const prevCalcValue = usePrevious(calcValue);
+
+  /** if "calc" value changed, update field value */
+  if (
+    prevCalcValue !== undefined &&
+    calcValue !== undefined &&
+    calcValue !== prevCalcValue
+  )
+    sleep().then(() => onChange(calcValue));
 
   /** help tooltip to show */
   const tooltip = [
@@ -371,15 +436,20 @@ const Field = ({ node, path = "" }) => {
           style={{ gridColumn: "1 / -1" }}
           design="plain"
           onClick={() => {
-            /** add new item to array */
             let _data = cloneDeep(form.data);
-            /** get child schema */
+            /** get new item to add to array */
             let newItem = node
-              .getNodeChild("items")
-              .node.getData(undefined, {});
-            /** modify default value fills */
-            if (newItem === "") newItem = null;
-            if (isObject(newItem)) newItem = mapValues(newItem, () => null);
+              .getNodeChild()
+              .node.getData(undefined, { addOptionalProps: true });
+            /** if new item is plain string */
+            if (newItem === "")
+              newItem = node.getNodeChild().node.schema.default ?? null;
+            /** if new item is object */
+            if (isObject(newItem))
+              newItem = mapValues(
+                newItem,
+                () => node.getNodeChild().node.schema.default ?? null,
+              );
             /** insert item */
             _data = set(_data, [...split(path), "[]"], newItem);
             form.onChange(_data);

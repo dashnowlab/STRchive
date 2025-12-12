@@ -82,7 +82,7 @@
                   "minimum": 0,
                   "maximum": 6,
                   "default": 0.5,
-                  "calc": "#/probands * 0.5"
+                  "calc": "min(6, {probands} * 0.5)"
                 }
               },
               "required": ["probands", "points"]
