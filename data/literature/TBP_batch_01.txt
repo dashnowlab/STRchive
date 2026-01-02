@@ -2807,7 +2807,7 @@ AB  - Huntington's disease (HD) is a genetic neurodegenerative progressive and f
       onset (AO) in our HD patients. The strongest variable in the model associated 
       with AO was the number of expanded HTT CAG repeats. The difference between the 
       association of HD AO with HTT expanded CAG together with TBP CAG/CAA and the 
-      association of HD AO with HTT expanded CAG was 0.001 (...R(2)). Therefore, we found 
+      association of HD AO with HTT expanded CAG was 0.001 (∆R(2)). Therefore, we found 
       a weak association (0.1%) of TBP CAG/CAA repeats on HD AO, if any.
 CI  - (c) 2022. The Author(s), under exclusive licence to Springer Science+Business 
       Media, LLC, part of Springer Nature.
@@ -3706,7 +3706,7 @@ GR  - 2020JGB136/the Degree & Postgraduate Education Reform Project of Central S
 GR  - 2020LCJJ13/the Project Program of National Clinical Research Center for Geriatric 
       Disorders (Xiangya Hospital)/
 PT  - Journal Article
-TT  - CAG.............................................2...............................
+TT  - CAG重复序列对中国脊髓小脑共济失调2型患者发病年龄的影响.
 PL  - China
 TA  - Zhong Nan Da Xue Xue Bao Yi Xue Ban
 JT  - Zhong nan da xue xue bao. Yi xue ban = Journal of Central South University. 
@@ -3736,7 +3736,7 @@ PHST- 2021/09/28 06:00 [pubmed]
 PHST- 2021/09/29 06:00 [medline]
 PHST- 2021/08/28 00:00 [pmc-release]
 AID - 1672-7347(2021)08-0793-07 [pii]
-AID - 1672-7347...2021...08-0793-07 [pii]
+AID - 1672-7347（2021）08-0793-07 [pii]
 AID - 10.11817/j.issn.1672-7347.2021.210230 [doi]
 PST - ppublish
 SO  - Zhong Nan Da Xue Xue Bao Yi Xue Ban. 2021 Aug 28;46(8):793-799. doi: 
@@ -3823,6 +3823,101 @@ AID - 10.1016/j.parkreldis.2021.06.021 [doi]
 PST - ppublish
 SO  - Parkinsonism Relat Disord. 2021 Aug;89:87-89. doi: 
       10.1016/j.parkreldis.2021.06.021. Epub 2021 Jun 29.
+
+PMID- 34235484
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20250530
+IS  - 2665-928X (Electronic)
+IS  - 2665-928X (Linking)
+VI  - 3
+DP  - 2021
+TI  - Testing the length limit of loop grafting in a helical repeat protein.
+PG  - 30-40
+LID - 10.1016/j.crstbi.2020.12.002 [doi]
+AB  - Alpha-helical repeat proteins such as consensus-designed tetratricopeptide 
+      repeats (CTPRs) are exceptionally stable molecules that are able to tolerate 
+      destabilizing sequence alterations and are therefore becoming increasingly valued 
+      as a modular platform for biotechnology and biotherapeutic applications. A simple 
+      approach to functionalize the CTPR scaffold that we are pioneering is the 
+      insertion of short linear motifs (SLiMs) into the loops between adjacent repeats. 
+      Here, we test the limits of the scaffold by inserting 17 highly diverse amino 
+      acid sequences of up to 58 amino acids in length into a two-repeat protein and 
+      examine the impact on protein folding, stability and solubility. The sequences 
+      include three SLiMs that bind oncoproteins and eleven naturally occurring linker 
+      sequences all predicted to be intrinsically disordered but with conformational 
+      preferences ranging from compact globules to expanded coils. We show that the 
+      loop-grafted proteins retain the native CTPR structure and are thermally stable 
+      with melting temperatures above 60 ​ degrees C, despite the longest loop sequence being 
+      almost the same size as the CTPR scaffold itself (68 amino acids). Although the 
+      main determinant of the effect of stability was found to be loop length and was 
+      relatively insensitive to amino acid composition, the relationship between 
+      protein solubility and the loop sequences was more complex, with the presence of 
+      negatively charged amino acids enhancing the solubility. Our findings will help 
+      us to fully realize the potential of the repeat-protein scaffold, allowing a 
+      rational design approach to create artificial modular proteins with customized 
+      functional capabilities.
+CI  - (c) 2020 Published by Elsevier B.V.
+FAU - Ripka, Juliane F
+AU  - Ripka JF
+AD  - Department of Pharmacology University of Cambridge, Tennis Court Road, Cambridge, 
+      CB2 1PD, UK.
+FAU - Perez-Riba, Albert
+AU  - Perez-Riba A
+AD  - Department of Pharmacology University of Cambridge, Tennis Court Road, Cambridge, 
+      CB2 1PD, UK.
+FAU - Chaturbedy, Piyush K
+AU  - Chaturbedy PK
+AD  - Department of Pharmacology University of Cambridge, Tennis Court Road, Cambridge, 
+      CB2 1PD, UK.
+FAU - Itzhaki, Laura S
+AU  - Itzhaki LS
+AD  - Department of Pharmacology University of Cambridge, Tennis Court Road, Cambridge, 
+      CB2 1PD, UK.
+LA  - eng
+GR  - 27225/CRUK_/Cancer Research UK/United Kingdom
+PT  - Journal Article
+DEP - 20201208
+PL  - Netherlands
+TA  - Curr Res Struct Biol
+JT  - Current research in structural biology
+JID - 101767537
+PMC - PMC8244534
+OTO - NOTNLM
+OT  - CD, circular dichroism
+OT  - CTPRs, consensus-designed tetratricopeptide repeats
+OT  - FCR, fraction of charged residues
+OT  - IDPs, intrinsically disordered proteins
+OT  - IDRs, intrinsically disordered regions
+OT  - Intrinsically disordered protein
+OT  - Intrinsically disordered region
+OT  - NCPR, net charge per residue
+OT  - PBIP1, polo-box interacting protein 1
+OT  - Peptide grafting
+OT  - SLiMs, short linear motifs
+OT  - TBP, tankyrase-binding peptides
+OT  - Tandem-repeat protein
+OT  - Tetratricopeptide repeat
+OT  - ves, effective solvation volume
+COIS- The authors declare that they have no known competing financial interests or 
+      personal relationships that could have appeared to influence the work reported in 
+      this paper.
+EDAT- 2021/07/09 06:00
+MHDA- 2021/07/09 06:01
+PMCR- 2020/12/08
+CRDT- 2021/07/08 06:48
+PHST- 2020/08/13 00:00 [received]
+PHST- 2020/11/13 00:00 [revised]
+PHST- 2020/12/02 00:00 [accepted]
+PHST- 2021/07/08 06:48 [entrez]
+PHST- 2021/07/09 06:00 [pubmed]
+PHST- 2021/07/09 06:01 [medline]
+PHST- 2020/12/08 00:00 [pmc-release]
+AID - S2665-928X(20)30026-X [pii]
+AID - 10.1016/j.crstbi.2020.12.002 [doi]
+PST - epublish
+SO  - Curr Res Struct Biol. 2020 Dec 8;3:30-40. doi: 10.1016/j.crstbi.2020.12.002. 
+      eCollection 2021.
 
 PMID- 33502644
 OWN - NLM
@@ -12640,3 +12735,4 @@ PHST- 1993/06/01 00:00 [entrez]
 PHST- 1993/12/01 00:00 [pmc-release]
 PST - ppublish
 SO  - Am J Hum Genet. 1993 Jun;52(6):1182-90.
+

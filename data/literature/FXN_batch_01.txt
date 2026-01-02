@@ -1,9 +1,680 @@
 
+PMID- 41432640
+OWN - NLM
+STAT- Publisher
+LR  - 20251223
+IS  - 1460-2083 (Electronic)
+IS  - 0964-6906 (Linking)
+DP  - 2025 Dec 23
+TI  - Unrecognized high prevalence of expanded composite repeats in Friedreich ataxia.
+LID - ddaf190 [pii]
+LID - 10.1093/hmg/ddaf190 [doi]
+AB  - Many diseases are caused by pathogenic expansion of microsatellite repeats. 
+      Longread sequencing allows evaluation of the content of such expanded repeats. 
+      Friedreich ataxia patients are typically homozygous for an expanded GAA repeat in 
+      intron 1 of the FXN gene. Longread whole genome sequencing identified expanded 
+      composite alleles, consisting of substantial tracks of tandem GGA triplets within 
+      the expanded GAA repeat. In a prospective series of 112 unrelated patients, we 
+      found that approximately 20% of people with Friedreich ataxia have at least one 
+      such expanded composite allele. Other minor sequence interruptions in the 
+      expanded GAA repeat were detected in a further 10% of patients. Most expanded 
+      composite alleles revealed by longread genome sequencing are not detectable by 
+      standard PCR-based testing, and have therefore remained hidden despite their 
+      relatively high prevalence. This results in erroneous genotyping of patients and 
+      heterozygous carriers. We describe an optimized workflow to detect these expanded 
+      composite alleles, which permitted accurate genotyping and heterozygous carrier 
+      identification. A recurrent proximal FXN gene deletion caused by Alu-mediated 
+      non-homologous recombination was identified in an additional 2% of patients. 
+      These findings redefine the spectrum of pathogenic alleles in Friedreich ataxia, 
+      and demonstrate that expanded alleles containing substantial non-GAA 
+      interruptions are prevalent and pathogenic.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press.
+FAU - Devore, Morgan C
+AU  - Devore MC
+AD  - Neuroscience Graduate Program, University of Oklahoma Health Sciences Center, 
+      4000 N. Lincoln Blvd., Oklahoma City, OK 73104, United States.
+FAU - Lam, Christina
+AU  - Lam C
+AD  - Department of Pediatrics, Section of Genetics, University of Oklahoma Health 
+      Sciences Center, 1200 Children's Ave., Oklahoma City, OK 73104, United States.
+FAU - Wiley, Graham
+AU  - Wiley G
+AD  - Clinical Genomics Center, Oklahoma Medical Research Foundation, 825 NE 13th St., 
+      Oklahoma City, OK 73104, United States.
+FAU - Park, Courtney C
+AU  - Park CC
+AD  - Division of Neurology, The Children's Hospital of Philadelphia, 3615 Civic Center 
+      Blvd., Philadelphia, PA 19104, United States.
+FAU - Lynch, David R
+AU  - Lynch DR
+AD  - Division of Neurology, The Children's Hospital of Philadelphia, 3615 Civic Center 
+      Blvd., Philadelphia, PA 19104, United States.
+FAU - Bidichandani, Sanjay I
+AU  - Bidichandani SI
+AUID- ORCID: 0000-0001-6191-6475
+AD  - Neuroscience Graduate Program, University of Oklahoma Health Sciences Center, 
+      4000 N. Lincoln Blvd., Oklahoma City, OK 73104, United States.
+AD  - Department of Pediatrics, Section of Genetics, University of Oklahoma Health 
+      Sciences Center, 1200 Children's Ave., Oklahoma City, OK 73104, United States.
+AD  - Department of Biochemistry and Physiology, University of Oklahoma Health Sciences 
+      Center, 940 Stanton L. Young Blvd., Oklahoma City, OK 73104, United States.
+LA  - eng
+GR  - Friedreich Ataxia Research Alliance Graduate Research Fellowship/
+GR  - Friedreich Ataxia Research Alliance Grant/
+GR  - HT94252510541/US Department of Defense/
+GR  - HT94252510542/US Department of Defense/
+PT  - Journal Article
+DEP - 20251223
+PL  - England
+TA  - Hum Mol Genet
+JT  - Human molecular genetics
+JID - 9208958
+SB  - IM
+OTO - NOTNLM
+OT  - Alu-mediated recombination
+OT  - Friedreich ataxia
+OT  - composite repeat
+OT  - genotyping errors
+OT  - proximal FXN deletion
+EDAT- 2025/12/23 12:48
+MHDA- 2025/12/23 12:48
+CRDT- 2025/12/23 10:23
+PHST- 2025/10/02 00:00 [received]
+PHST- 2025/11/07 00:00 [revised]
+PHST- 2025/11/21 00:00 [accepted]
+PHST- 2025/12/23 12:48 [medline]
+PHST- 2025/12/23 12:48 [pubmed]
+PHST- 2025/12/23 10:23 [entrez]
+AID - 8403045 [pii]
+AID - 10.1093/hmg/ddaf190 [doi]
+PST - aheadofprint
+SO  - Hum Mol Genet. 2025 Dec 23:ddaf190. doi: 10.1093/hmg/ddaf190.
+
+PMID- 41426430
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251222
+LR  - 20251224
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 6
+DP  - 2025
+TI  - The role of disease-associated short tandem repeats in amyotrophic lateral 
+      sclerosis.
+PG  - fcaf482
+LID - 10.1093/braincomms/fcaf482 [doi]
+LID - fcaf482
+AB  - Short tandem repeats (STRs) are recognized contributors to various 
+      neurodegenerative disorders, with evidence supporting genetic pleiotropy among 
+      these STRs. Multiple STRs have been associated with amyotrophic lateral sclerosis 
+      (ALS), although the strength of evidence supporting each association varies. To 
+      establish the role of disease-associated repeat expansions as pleiotropic risk 
+      factors in ALS susceptibility and progression, we genotyped a panel of 39 STRs, 
+      known to cause neurological diseases, within Project MinE in 6519 patients and 
+      2412 controls, utilizing 100 and 150 bp short-read sequencing technology. 
+      Pathogenic allele frequencies were compared to those in a control cohort 
+      comprising 4930 Genome Aggregation Database (gnomAD) genomes. Repeat sizes and 
+      motif changes were detected using ExpansionHunter and ExpansionHunter Denovo. We 
+      developed a model to predict genotyping failures in STRs and established a 
+      best-practice protocol for assessing the accuracy of STR genotyping in short-read 
+      sequencing data. Following our genotyping assessment, 11 out of the 39 STRs 
+      exhibited insufficient genotyping accuracy, warranting caution in studying these 
+      STRs using these tools in combination with short-read sequencing. Furthermore, 
+      the observed differences in STR genotyping accuracy across studies applying 
+      different sequencing technologies and genotyping tools in control cohorts 
+      highlight the importance of a carefully designed experimental setup when 
+      interpreting potential disease-associated STR findings. Pathogenic C9orf72 and 
+      premutated ATXN2 expansions were confirmed to be significantly associated with 
+      ALS susceptibility. Additionally, pathogenic C9orf72 expansions were 
+      significantly associated with reduced mean ALS survival by 11.5 months and an 
+      earlier mean age at onset by 2.4 years. Premutation expansions in ATXN1 showed a 
+      nominally significant association with ALS susceptibility, while pathogenic 
+      expansions in NIPA1 displayed a nominally significant association with ALS 
+      survival. Previously reported ALS-associated pleiotropy in HTT and STMN2 could 
+      not be confirmed. Motif changes were identified in BEAN1, RFC1, ATXN8, C9orf72, 
+      DAB1, FXN and SAMD12; however, none of the motif changes were linked to ALS. 
+      Re-evaluation of clinical data from patients with ALS and a repeat expansion 
+      typically associated with another disease revealed that 7% of these patients' 
+      diagnoses had to be reclassified to the disease associated with the repeat 
+      expansion (e.g. Kennedy's disease or spinocerebellar ataxia). This underscores 
+      the value of broad STR screening in neurodegenerative cases. Pathogenic and 
+      premutation STRs were also found in controls in unexpected high frequencies, 
+      suggesting reduced penetrance or underdiagnosis, and highlighting the need for 
+      caution when interpreting genetic associations with disease without a proper 
+      control cohort.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - van Vugt, Joke J F A
+AU  - van Vugt JJFA
+AUID- ORCID: 0000-0002-4161-4004
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Zwamborn, Ramona A J
+AU  - Zwamborn RAJ
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Dolzhenko, Egor
+AU  - Dolzhenko E
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Eberle, Michael A
+AU  - Eberle MA
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Weisburd, Ben
+AU  - Weisburd B
+AD  - Program in Medical and Population Genetics, Broad Center for Mendelian Genomics, 
+      Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA.
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical 
+      School, Boston, MA 02114, USA.
+FAU - Bekema, Erwin
+AU  - Bekema E
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Kooyman, Maarten
+AU  - Kooyman M
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Wang, Bi-Nan
+AU  - Wang BN
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+CN  - Project MinE ALS Sequencing Consortium
+FAU - Kamsteeg, Erik-Jan
+AU  - Kamsteeg EJ
+AUID- ORCID: 0000-0001-6480-1892
+AD  - Department of Human Genetics, Radboud University Medical Center, Nijmegen 6525 
+      GA, The Netherlands.
+FAU - Losekoot, Monique
+AU  - Losekoot M
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Baas, Frank
+AU  - Baas F
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Novy, Camilla
+AU  - Novy C
+AUID- ORCID: 0009-0008-0089-3669
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - Hoyer, Helle
+AU  - Hoyer H
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - van Eijk, Ruben P A
+AU  - van Eijk RPA
+AUID- ORCID: 0000-0002-7132-5967
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Es, Michael A
+AU  - van Es MA
+AUID- ORCID: 0000-0002-7709-5883
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Rheenen, Wouter
+AU  - van Rheenen W
+AUID- ORCID: 0000-0002-5860-1533
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Al-Chalabi, Ammar
+AU  - Al-Chalabi A
+AUID- ORCID: 0000-0002-4924-7712
+AD  - Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience 
+      Institute, King's College London, London SE5 9RX, UK.
+FAU - van den Berg, Leonard H
+AU  - van den Berg LH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Veldink, Jan H
+AU  - Veldink JH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+LA  - eng
+PT  - Journal Article
+DEP - 20251209
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12715773
+OTO - NOTNLM
+OT  - disease-related repeats
+OT  - microsatellite genotyping
+OT  - motor neurodegenerative disease
+OT  - short tandem repeat genotyping
+OT  - tandem repeat genotyping accuracy
+COIS- JHV reports to have sponsored research agreements with Biogen, Eli Lilly, Trace 
+      and AstraZeneca.
+FIR - van Damme, Philip
+IR  - van Damme P
+FIR - Corcia, Philippe
+IR  - Corcia P
+FIR - Couratier, Philippe
+IR  - Couratier P
+FIR - Vourc'h, Patrick
+IR  - Vourc'h P
+FIR - Hardiman, Orla
+IR  - Hardiman O
+FIR - McLaughin, Russell
+IR  - McLaughin R
+FIR - Gotkine, Marc
+IR  - Gotkine M
+FIR - Lerner, Yossef
+IR  - Lerner Y
+FIR - Drory, Vivian
+IR  - Drory V
+FIR - Ticozzi, Nicola
+IR  - Ticozzi N
+FIR - Silani, Vincenzo
+IR  - Silani V
+FIR - Veldink, Jan H
+IR  - Veldink JH
+FIR - van den Berg, Leonard H
+IR  - van den Berg LH
+FIR - de Carvalho, Mamede
+IR  - de Carvalho M
+FIR - Salas, Teresa
+IR  - Salas T
+FIR - Pardina, Jesus S Mora
+IR  - Pardina JSM
+FIR - Povedano, Monica
+IR  - Povedano M
+FIR - Andersen, Peter
+IR  - Andersen P
+FIR - Weber, Markus
+IR  - Weber M
+FIR - Basak, Nazli A
+IR  - Basak NA
+FIR - Al-Chalabi, Ammar
+IR  - Al-Chalabi A
+FIR - Shaw, Chris
+IR  - Shaw C
+FIR - Shaw, Pamela J
+IR  - Shaw PJ
+FIR - Morrison, Karen E
+IR  - Morrison KE
+FIR - Landers, John E
+IR  - Landers JE
+FIR - Glass, Jonathan D
+IR  - Glass JD
+FIR - Dalgard, Clifton L
+IR  - Dalgard CL
+EDAT- 2025/12/22 12:55
+MHDA- 2025/12/22 12:56
+PMCR- 2025/12/09
+CRDT- 2025/12/22 06:54
+PHST- 2025/05/01 00:00 [received]
+PHST- 2025/11/10 00:00 [revised]
+PHST- 2025/12/08 00:00 [accepted]
+PHST- 2025/12/22 12:56 [medline]
+PHST- 2025/12/22 12:55 [pubmed]
+PHST- 2025/12/22 06:54 [entrez]
+PHST- 2025/12/09 00:00 [pmc-release]
+AID - fcaf482 [pii]
+AID - 10.1093/braincomms/fcaf482 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482. 
+      eCollection 2025.
+
+PMID- 41318543
+OWN - NLM
+STAT- Publisher
+LR  - 20251129
+IS  - 2041-1723 (Electronic)
+IS  - 2041-1723 (Linking)
+DP  - 2025 Nov 29
+TI  - Microgliopathy as a primary mediator of neuronal death in models of Friedreich's 
+      Ataxia.
+LID - 10.1038/s41467-025-66710-y [doi]
+AB  - Friedreich's ataxia (FRDA) is an incurable neurodegenerative disorder caused by a 
+      GAA repeat expansion in the frataxin (FXN) gene, leading to a severe reduction of 
+      the mitochondrial FXN protein, crucial for iron metabolism. While microglial 
+      inflammation is observed in FRDA, it remains unclear whether immune dysfunction 
+      is a primary disease mediator or a secondary reactionary phenotype. Utilizing 
+      patient-derived induced pluripotent stem cells (iPSCs), we report an intrinsic 
+      microglial phenotype of stark mitochondrial defects, iron overload, lipid 
+      peroxidation, and lysosomal abnormalities. These factors drive a pro-inflammatory 
+      state that contributes to neuronal death in co-culture systems. In a murine 
+      xenograft model, transplanted human FRDA microglia accumulate in white matter and 
+      the Purkinje cell layer, resulting in Purkinje neuron loss in otherwise healthy 
+      brains. Notably, CRISPR/Cas9-mediated correction of the GAA repeat reverses 
+      microglial defects and mitigates neurodegeneration. Here, we suggest that 
+      microglial dysfunction serve as a disease driver and a promising therapeutic 
+      target in FRDA.
+CI  - (c) 2025. The Author(s).
+FAU - Pernaci, Carla
+AU  - Pernaci C
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - Johnson, Avalon
+AU  - Johnson A
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - Gillette, Sydney
+AU  - Gillette S
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - Warden, Anna S
+AU  - Warden AS
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - McCormick, Chad
+AU  - McCormick C
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - Weiser-Novak, Sammy
+AU  - Weiser-Novak S
+AD  - Salk Institute for Biological Studies, La Jolla, CA, USA.
+FAU - Ramirez, Gabriela
+AU  - Ramirez G
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - Broersma, Emily H
+AU  - Broersma EH
+AUID- ORCID: 0000-0001-8540-2807
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA.
+FAU - Mishra, Priyanka
+AU  - Mishra P
+AD  - Department of Pediatrics, Division of Genetics, University of California San 
+      Diego, San Diego, CA, USA.
+FAU - Sivakumar, Anusha
+AU  - Sivakumar A
+AUID- ORCID: 0000-0002-1366-9681
+AD  - Department of Pediatrics, Division of Genetics, University of California San 
+      Diego, San Diego, CA, USA.
+FAU - Cherqui, Stephanie
+AU  - Cherqui S
+AD  - Department of Pediatrics, Division of Genetics, University of California San 
+      Diego, San Diego, CA, USA.
+FAU - Coufal, Nicole G
+AU  - Coufal NG
+AUID- ORCID: 0000-0001-6547-1733
+AD  - Department of Pediatrics, University of California San Diego, La jolla, CA, USA. 
+      ncoufal@health.ucsd.edu.
+AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA. 
+      ncoufal@health.ucsd.edu.
+LA  - eng
+GR  - TRAN1-13983/California Institute for Regenerative Medicine (CIRM)/
+GR  - EDUC2-08388/California Institute for Regenerative Medicine (CIRM)/
+GR  - TRAN1-13983/California Institute for Regenerative Medicine (CIRM)/
+GR  - R01NS135162/Foundation for the National Institutes of Health (Foundation for the 
+      National Institutes of Health, Inc.)/
+PT  - Journal Article
+DEP - 20251129
+PL  - England
+TA  - Nat Commun
+JT  - Nature communications
+JID - 101528555
+SB  - IM
+COIS- Competing interests: S.C. is a cofounder, shareholder, and member of both the 
+      Scientific Board and board of directors of Papillon Therapeutics Inc. S.C. also 
+      serves as a member of the Scientific Review Board and Board of Trustees of the 
+      Cystinosis Research Foundation. This work is covered in the patent entitled 
+      "Methods for treating Mitochondrial Disorders" #114198-3029; (inventor: S.C.; 
+      granted U.S. Patent Nos. 12,012,436, 12,012,437 and 12,011,488, issued on June 
+      18, 2024, covering the use of the gene-edited HSPCs for Friedreich's ataxia and 
+      the specific gene editing approach employed. A.S. is a paid consultant for 
+      Papillon Therapeutics Inc. The terms of this arrangement have been reviewed and 
+      approved by the University of California, San Diego in accordance with its 
+      conflict-of-interest policies. All other authors declare no conflict of interest.
+EDAT- 2025/11/30 00:30
+MHDA- 2025/11/30 00:30
+CRDT- 2025/11/29 23:17
+PHST- 2025/01/31 00:00 [received]
+PHST- 2025/11/13 00:00 [accepted]
+PHST- 2025/11/30 00:30 [medline]
+PHST- 2025/11/30 00:30 [pubmed]
+PHST- 2025/11/29 23:17 [entrez]
+AID - 10.1038/s41467-025-66710-y [pii]
+AID - 10.1038/s41467-025-66710-y [doi]
+PST - aheadofprint
+SO  - Nat Commun. 2025 Nov 29. doi: 10.1038/s41467-025-66710-y.
+
+PMID- 41301739
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251127
+LR  - 20251130
+IS  - 2227-9059 (Print)
+IS  - 2227-9059 (Electronic)
+IS  - 2227-9059 (Linking)
+VI  - 13
+IP  - 11
+DP  - 2025 Oct 28
+TI  - Multi-Center National Study of Genotype-Phenotype Correlation and Clinical 
+      Characteristics in Children and Young Adults with Friedreich's Ataxia from 
+      Serbia.
+LID - 10.3390/biomedicines13112646 [doi]
+LID - 2646
+AB  - Background/Objectives: Friedreich's ataxia (FA) is a rare neurodegenerative 
+      disorder caused by GAA repeat expansions in the FXN gene. While well-studied in 
+      larger populations, data from Southeastern Europe are limited. This study aimed 
+      to characterize the clinical and genetic features of FA in a Serbian cohort and 
+      explore genotype-phenotype correlations. Methods: A multi-center, retrospective 
+      analysis was conducted on 30 genetically confirmed FA patients. Clinical 
+      assessments included neurological, cardiological, and metabolic evaluations. GAA 
+      repeat sizes were determined in 26 patients, and correlations with clinical 
+      features were analyzed. Results: The mean age at disease onset was 9.0 +/- 3.0 
+      years, with ataxia as the initial symptom in 80% of patients. Hypertrophic 
+      cardiomyopathy was present in 73.3%, and 43.3% of patients lost ambulation within 
+      1.5 to 15 years after symptom onset. Two patients developed diabetes, and two 
+      were diagnosed with nephrotic syndrome. Genetic analysis revealed an average GAA1 
+      repeat length of 805 and GAA2 of 1024 alleles. Larger GAA1 expansions were 
+      associated with extensor plantar responses, while longer GAA2 repeats correlated 
+      with impaired vibration sense. Disease duration was strongly linked to multiple 
+      neurological signs and loss of ambulation. No significant correlation was found 
+      between GAA repeat length and age at onset. Conclusions: This study provides the 
+      first genotype-phenotype analysis of FA in Serbia, confirming known patterns and 
+      revealing new comorbidities, such as nephrotic syndrome. GAA repeat length 
+      influences some clinical features but does not fully predict disease onset or 
+      progression, indicating the need for broader genetic and environmental studies.
+FAU - Kovacevic, Gordana
+AU  - Kovacevic G
+AD  - Neurology Department, Mother and Child Health Care Institute of Serbia "Dr. Vukan 
+      Cupic", 11070 Belgrade, Serbia.
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+FAU - Todorovic, Slobodanka
+AU  - Todorovic S
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+AD  - Clinic of Neurology and Psychiatry for Children and Youth, University of 
+      Belgrade, 11158 Belgrade, Serbia.
+FAU - Novakovic, Ivana
+AU  - Novakovic I
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+FAU - Dobricic, Valerija
+AU  - Dobricic V
+AD  - Neurology Clinic, University Clinical Center of Serbia, 11158 Belgrade, Serbia.
+AD  - Lubeck Interdisciplinary Platform for Genome Analytics (LIGA), University of 
+      Lubeck, 23562 Lubeck, Germany.
+FAU - Savic-Pavicevic, Dusanka
+AU  - Savic-Pavicevic D
+AUID- ORCID: 0000-0002-2079-4077
+AD  - Center for Human Molecular Genetics, Faculty of Biology, University of Belgrade, 
+      11158 Belgrade, Serbia.
+FAU - Milic Rasic, Vedrana
+AU  - Milic Rasic V
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+AD  - Clinic of Neurology and Psychiatry for Children and Youth, University of 
+      Belgrade, 11158 Belgrade, Serbia.
+FAU - Svetel, Marina
+AU  - Svetel M
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+AD  - Neurology Clinic, University Clinical Center of Serbia, 11158 Belgrade, Serbia.
+FAU - Brkusanin, Milos
+AU  - Brkusanin M
+AD  - Center for Human Molecular Genetics, Faculty of Biology, University of Belgrade, 
+      11158 Belgrade, Serbia.
+FAU - Vukomanovic, Vladislav
+AU  - Vukomanovic V
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+AD  - Cardiology Department, Mother and Child Health Care Institute of Serbia "Dr. 
+      Vukan Cupic", 11070 Belgrade, Serbia.
+FAU - Vucinic, Dragana
+AU  - Vucinic D
+AD  - Clinic of Neurology and Psychiatry for Children and Youth, University of 
+      Belgrade, 11158 Belgrade, Serbia.
+FAU - Ostojic, Slavica
+AU  - Ostojic S
+AUID- ORCID: 0000-0002-8979-0445
+AD  - Neurology Department, Mother and Child Health Care Institute of Serbia "Dr. Vukan 
+      Cupic", 11070 Belgrade, Serbia.
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+FAU - Putnik, Jovana
+AU  - Putnik J
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+AD  - Nephrology Department, Mother and Child Health Care Institute of Serbia "Dr. 
+      Vukan Cupic", 11070 Belgrade, Serbia.
+FAU - Kosac, Ana
+AU  - Kosac A
+AD  - Faculty of Medicine, University of Belgrade, 11158 Belgrade, Serbia.
+AD  - Clinic of Neurology and Psychiatry for Children and Youth, University of 
+      Belgrade, 11158 Belgrade, Serbia.
+LA  - eng
+GR  - 451-03-66/2024-03/200178, 2024./by the Ministry of Education, Science and 
+      Technological Development of the Republic of Serbia/
+PT  - Journal Article
+DEP - 20251028
+PL  - Switzerland
+TA  - Biomedicines
+JT  - Biomedicines
+JID - 101691304
+PMC - PMC12650222
+OTO - NOTNLM
+OT  - Friedreich's ataxia
+OT  - GAA repeat
+OT  - cardiomyopathy
+OT  - genotype-phenotype correlation
+OT  - nephrotic syndrome
+COIS- The authors declare no conflicts of interest. The funders had no role in the 
+      design of the study; in the collection, analyses, or interpretation of data; in 
+      the writing of the manuscript; or in the decision to publish the results.
+EDAT- 2025/11/27 06:28
+MHDA- 2025/11/27 06:29
+PMCR- 2025/10/28
+CRDT- 2025/11/27 01:08
+PHST- 2025/09/09 00:00 [received]
+PHST- 2025/10/24 00:00 [revised]
+PHST- 2025/10/25 00:00 [accepted]
+PHST- 2025/11/27 06:29 [medline]
+PHST- 2025/11/27 06:28 [pubmed]
+PHST- 2025/11/27 01:08 [entrez]
+PHST- 2025/10/28 00:00 [pmc-release]
+AID - biomedicines13112646 [pii]
+AID - biomedicines-13-02646 [pii]
+AID - 10.3390/biomedicines13112646 [doi]
+PST - epublish
+SO  - Biomedicines. 2025 Oct 28;13(11):2646. doi: 10.3390/biomedicines13112646.
+
+PMID- 41278766
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251127
+LR  - 20251128
+IS  - 2692-8205 (Electronic)
+IS  - 2692-8205 (Linking)
+DP  - 2025 Oct 9
+TI  - Long-read sequencing reveals extensive FMR1 somatic mosaicism in Fragile-X 
+      associated tremor/ataxia syndrome in human brain.
+LID - 2025.10.07.678589 [pii]
+LID - 10.1101/2025.10.07.678589 [doi]
+AB  - Fragile X-associated tremor/ataxia syndrome (FXTAS) is a progressive 
+      neurodegenerative disorder caused by a CGG repeat expansion in the 5' 
+      untranslated region of the X-linked Fragile X messenger ribonucleoprotein 1 
+      (FMR1). Although the CGG repeat tract is known for instability that has been 
+      posited to contribute to clinical heterogeneity, the extent of somatic variation 
+      in human brain remains unclear, in part due to the technical limitations of 
+      sequencing long tandem repeats. Here, we quantified FMR1 somatic variation in 
+      post-mortem brain tissue from individuals with FXTAS (n = 6) and Fragile X 
+      syndrome (FXS, n = 2) by applying amplification-free, targeted, long-read 
+      sequencing. This approach uncovered remarkable somatic mosaicism in repeat size 
+      and methylation in FXTAS, including somatic expansions and contractions which 
+      were not resolvable with traditional approaches. For example, in FXTAS, we 
+      identified somatic expansions to over 6000 base pairs in length as well as 
+      contractions to below the pathogenic range. We also identified unexpected 
+      patterns of methylation mosaicism on pre and full mutations. On the other hand, 
+      we replicated prior findings suggesting differential CGG expansion on the active 
+      X-chromosome in XX females. Finally, we examined the above cohort for expansions 
+      in 19 additional disease-associated repeat loci. Remarkably, we identified 
+      additional expansions in 5 out of 8 affected individuals, in FXN and RFC1. This 
+      work provides new insight into the extensive molecular variation underlying FXTAS 
+      in human brain and establishes a framework for studying repeat expansion 
+      disorders more broadly, highlighting the potential of long-read sequencing to 
+      advance our fundamental understanding of somatic mosaicism of these intractable 
+      regions of our genome.
+FAU - Dischler, Anna
+AU  - Dischler A
+AUID- ORCID: 0000-0002-1798-0469
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+FAU - Avvaru, Akshay
+AU  - Avvaru A
+AUID- ORCID: 0000-0003-4698-9363
+AD  - Department of Biomedical Informatics, University of Colorado Anschutz, Aurora, CO 
+      80045, USA.
+FAU - Lopez-Ignacio, Susana
+AU  - Lopez-Ignacio S
+AUID- ORCID: 0009-0006-2222-0727
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+AD  - Human Medical Genetics and Genomics Graduate Training Program, University of 
+      Colorado Anschutz, CO 80045, USA.
+FAU - Lau, Cristina
+AU  - Lau C
+AD  - Human Medical Genetics and Genomics Graduate Training Program, University of 
+      Colorado Anschutz, CO 80045, USA.
+FAU - Breuss, Martin W
+AU  - Breuss MW
+AUID- ORCID: 0000-0003-2200-8604
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+FAU - Cerdeno, Veronica Martinez
+AU  - Cerdeno VM
+AUID- ORCID: 0000-0002-9613-3603
+AD  - Department of Pathology and Laboratory Medicine, MIND Institute, UC Davis School 
+      of Medicine; Sacramento, CA 95817, USA.
+FAU - Dashnow, Harriet
+AU  - Dashnow H
+AUID- ORCID: 0000-0001-8433-6270
+AD  - Department of Biomedical Informatics, University of Colorado Anschutz, Aurora, CO 
+      80045, USA.
+FAU - Dias, Caroline M
+AU  - Dias CM
+AUID- ORCID: 0000-0003-1315-6007
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+AD  - Section of Developmental Pediatrics, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+LA  - eng
+GR  - P30 CA046934/CA/NCI NIH HHS/United States
+GR  - P30 DK116073/DK/NIDDK NIH HHS/United States
+GR  - R00 HG012796/HG/NHGRI NIH HHS/United States
+GR  - R01 NS107131/NS/NINDS NIH HHS/United States
+PT  - Journal Article
+PT  - Preprint
+DEP - 20251009
+PL  - United States
+TA  - bioRxiv
+JT  - bioRxiv : the preprint server for biology
+JID - 101680187
+PMC - PMC12632538
+COIS- Conflict of Interests: The authors have no conflicts of interest to disclose.
+EDAT- 2025/11/24 18:21
+MHDA- 2025/11/24 18:22
+PMCR- 2025/11/20
+CRDT- 2025/11/24 08:25
+PHST- 2025/11/24 18:21 [pubmed]
+PHST- 2025/11/24 18:22 [medline]
+PHST- 2025/11/24 08:25 [entrez]
+PHST- 2025/11/20 00:00 [pmc-release]
+AID - 2025.10.07.678589 [pii]
+AID - 10.1101/2025.10.07.678589 [doi]
+PST - epublish
+SO  - bioRxiv [Preprint]. 2025 Oct 9:2025.10.07.678589. doi: 10.1101/2025.10.07.678589.
+
 PMID- 41176519
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251102
-LR  - 20251104
+LR  - 20251201
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -144,31 +815,32 @@ SO  - J Neurol. 2025 Nov 1;272(11):742. doi: 10.1007/s00415-025-13487-1.
 PMID- 41137390
 OWN - NLM
 STAT- Publisher
-LR  - 20251025
+LR  - 20251111
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Linking)
-DP  - 2025 Oct 23
-TI  - Development of an AAV-Based Gene Therapy for the Ocular Phenotype of Friedreich's 
-      Ataxia.
+DP  - 2025 Oct 24
+TI  - Development of an AAV-based gene therapy for the ocular phenotype of Friedreich's 
+      ataxia.
 LID - S1525-0016(25)00869-X [pii]
 LID - 10.1016/j.ymthe.2025.10.048 [doi]
-AB  - Friedreich's Ataxia (FA) is a leading form of hereditary ataxia caused by 
+AB  - Friedreich's ataxia (FA) is a leading form of hereditary ataxia caused by 
       autosomal recessive mutations in frataxin (FXN). GAA triplet repeat expansions 
-      lead to lower levels of FXN expression, abnormal influx of iron into mitochondria 
-      and damage to the nervous system. Patients typically present before the second 
-      decade with loss of muscular function, speech impediments, and cardiomyopathy. At 
-      later stages, vision loss typically manifests. Work is underway to develop gene 
-      therapies that address the cardiac and CNS manifestations, but their routes of 
-      administration do not lead to efficient transduction of the retina. The purpose 
-      of this study was to develop a more direct approach for treating the ocular 
-      phenotype of FA which includes loss of retinal ganglion cells (RGCs), thinning of 
-      the retinal nerve fiber layer (RNFL), optic nerve atrophy, and loss of visual 
-      field. We generated two novel conditional knock-out (KO) models, mRx-Fxn KO and 
-      Pou4f2-Fxn KO mice, wherein Fxn is ablated in all retinal cells or RGCs, 
-      respectively and showed that FXN deficiency led to retinal dystrophy in both 
-      models. Gene supplementation via intravitreal injection of a novel AAV2-based 
-      capsid carrying FXN partially preserved retinal structure and/or function in both 
-      models, establishing proof-of-concept for this therapeutic strategy.
+      lead to lower levels of FXN expression, abnormal influx of iron into 
+      mitochondria, and damage to the nervous system. Patients typically present before 
+      the second decade with loss of muscular function, speech impediments, and 
+      cardiomyopathy. At later stages, vision loss typically manifests. Work is under 
+      way to develop gene therapies that address the cardiac and CNS manifestations, 
+      but their routes of administration do not lead to efficient transduction of the 
+      retina. The purpose of this study was to develop a more direct approach for 
+      treating the ocular phenotype of FA, which includes loss of retinal ganglion 
+      cells (RGCs), thinning of the retinal nerve fiber layer, optic nerve atrophy, and 
+      loss of visual field. We generated two novel conditional knockout (KO) models, 
+      mRx-Fxn KO and Pou4f2-Fxn KO mice, wherein Fxn is ablated in all retinal cells or 
+      RGCs, respectively, and showed that FXN deficiency led to retinal dystrophy in 
+      both models. Gene supplementation via intravitreal injection of a novel 
+      AAV2-based capsid carrying FXN partially preserved retinal structure and/or 
+      function in both models, establishing proof of concept for this therapeutic 
+      strategy.
 CI  - Copyright (c) 2025 The Author(s). Published by Elsevier Inc. All rights reserved.
 FAU - Tang, Heyu
 AU  - Tang H
@@ -229,25 +901,36 @@ AD  - Division of Cellular and Molecular Therapy, Department of Pediatrics, Univ
       of Florida, Gainesville, FL, USA. Electronic address: shaire@ufl.edu.
 LA  - eng
 PT  - Journal Article
-DEP - 20251023
+DEP - 20251024
 PL  - United States
 TA  - Mol Ther
 JT  - Molecular therapy : the journal of the American Society of Gene Therapy
 JID - 100890581
 SB  - IM
+OTO - NOTNLM
+OT  - AAV
+OT  - Friedreich's Ataxia
+OT  - adeno-associated virus
+OT  - intravitreal delivery
+OT  - mouse model
+OT  - ocular gene therapy
+OT  - retinal ganglion cell
+COIS- Declaration of interests S.E.B. and S.L.B. are scientific founders of and equity 
+      holders in Atsena Therapeutics and are patent holders in the use of AAV vectors 
+      for the treatment of ocular disease.
 EDAT- 2025/10/25 06:30
 MHDA- 2025/10/25 06:30
 CRDT- 2025/10/25 01:36
 PHST- 2025/06/21 00:00 [received]
 PHST- 2025/09/16 00:00 [revised]
 PHST- 2025/10/17 00:00 [accepted]
-PHST- 2025/10/25 06:30 [medline]
 PHST- 2025/10/25 06:30 [pubmed]
+PHST- 2025/10/25 06:30 [medline]
 PHST- 2025/10/25 01:36 [entrez]
 AID - S1525-0016(25)00869-X [pii]
 AID - 10.1016/j.ymthe.2025.10.048 [doi]
 PST - aheadofprint
-SO  - Mol Ther. 2025 Oct 23:S1525-0016(25)00869-X. doi: 10.1016/j.ymthe.2025.10.048.
+SO  - Mol Ther. 2025 Oct 24:S1525-0016(25)00869-X. doi: 10.1016/j.ymthe.2025.10.048.
 
 PMID- 41074692
 OWN - NLM
@@ -329,13 +1012,14 @@ SO  - Mov Disord. 2025 Oct 11. doi: 10.1002/mds.70081.
 
 PMID- 41014100
 OWN - NLM
-STAT- Publisher
-LR  - 20251031
+STAT- MEDLINE
+DCOM- 20251201
+LR  - 20251201
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Linking)
 VI  - 27
 IP  - 12
-DP  - 2025 Sep 23
+DP  - 2025 Dec
 TI  - Type and position of repeat interruptions as determinants of disease severity and 
       expansion size in Friedreich ataxia.
 PG  - 101588
@@ -539,7 +1223,23 @@ TA  - Genet Med
 JT  - Genetics in medicine : official journal of the American College of Medical 
       Genetics
 JID - 9815831
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
+MH  - Humans
+MH  - *Friedreich Ataxia/genetics
+MH  - Male
+MH  - Female
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Severity of Illness Index
+MH  - Adult
+MH  - Adolescent
+MH  - Age of Onset
+MH  - Child
+MH  - Young Adult
+MH  - Middle Aged
+MH  - Iron-Binding Proteins/genetics
+MH  - Frataxin
 OTO - NOTNLM
 OT  - Ataxia
 OT  - FXN
@@ -674,18 +1374,19 @@ IR  - Ferrer X
 FIR - Matoussi, Zied
 IR  - Matoussi Z
 EDAT- 2025/09/27 06:34
-MHDA- 2025/09/27 06:34
+MHDA- 2025/12/01 12:28
 CRDT- 2025/09/27 05:58
 PHST- 2024/12/27 00:00 [received]
 PHST- 2025/09/01 00:00 [revised]
 PHST- 2025/09/17 00:00 [accepted]
+PHST- 2025/12/01 12:28 [medline]
 PHST- 2025/09/27 06:34 [pubmed]
-PHST- 2025/09/27 06:34 [medline]
 PHST- 2025/09/27 05:58 [entrez]
 AID - S1098-3600(25)00235-7 [pii]
 AID - 10.1016/j.gim.2025.101588 [doi]
-PST - aheadofprint
-SO  - Genet Med. 2025 Sep 23;27(12):101588. doi: 10.1016/j.gim.2025.101588.
+PST - ppublish
+SO  - Genet Med. 2025 Dec;27(12):101588. doi: 10.1016/j.gim.2025.101588. Epub 2025 Sep 
+      23.
 
 PMID- 40994821
 OWN - NLM
@@ -800,13 +1501,17 @@ SO  - Brain Commun. 2025 Sep 10;7(5):fcaf331. doi: 10.1093/braincomms/fcaf331.
 
 PMID- 40970480
 OWN - NLM
-STAT- Publisher
-LR  - 20250919
+STAT- MEDLINE
+DCOM- 20251217
+LR  - 20251217
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
-DP  - 2025 Sep 19
+VI  - 40
+IP  - 12
+DP  - 2025 Dec
 TI  - Friedreich's Ataxia in Colombia: A Population-Based Study of Incidence and 
       Socioeconomic Determinants.
+PG  - 2782-2791
 LID - 10.1002/mds.70033 [doi]
 AB  - BACKGROUND: Friedreich's ataxia (FA) is the most common hereditary ataxia in 
       people of European ancestry. Diagnosis requires molecular confirmation, which is 
@@ -881,6 +1586,24 @@ TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
 SB  - IM
+MH  - Humans
+MH  - Colombia/epidemiology
+MH  - Male
+MH  - Female
+MH  - *Friedreich Ataxia/epidemiology/genetics
+MH  - Adult
+MH  - Incidence
+MH  - Cross-Sectional Studies
+MH  - Retrospective Studies
+MH  - Middle Aged
+MH  - Adolescent
+MH  - Young Adult
+MH  - Child
+MH  - Socioeconomic Factors
+MH  - Child, Preschool
+MH  - Aged
+MH  - Age of Onset
+MH  - Educational Status
 OTO - NOTNLM
 OT  - Colombia
 OT  - Friedreich's ataxia
@@ -888,17 +1611,17 @@ OT  - epidemiological profile
 OT  - incidence
 OT  - socioeconomic factors
 EDAT- 2025/09/19 12:51
-MHDA- 2025/09/19 12:51
+MHDA- 2025/12/17 13:02
 CRDT- 2025/09/19 07:02
 PHST- 2025/08/06 00:00 [revised]
 PHST- 2025/02/04 00:00 [received]
 PHST- 2025/08/25 00:00 [accepted]
-PHST- 2025/09/19 12:51 [medline]
+PHST- 2025/12/17 13:02 [medline]
 PHST- 2025/09/19 12:51 [pubmed]
 PHST- 2025/09/19 07:02 [entrez]
 AID - 10.1002/mds.70033 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2025 Sep 19. doi: 10.1002/mds.70033.
+PST - ppublish
+SO  - Mov Disord. 2025 Dec;40(12):2782-2791. doi: 10.1002/mds.70033. Epub 2025 Sep 19.
 
 PMID- 40898875
 OWN - NLM
@@ -1793,7 +2516,7 @@ PMID- 40404357
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250625
-LR  - 20250629
+LR  - 20251226
 IS  - 1529-2401 (Electronic)
 IS  - 0270-6474 (Print)
 IS  - 0270-6474 (Linking)
@@ -1916,10 +2639,10 @@ CRDT- 2025/05/22 21:33
 PHST- 2024/12/06 00:00 [received]
 PHST- 2025/02/09 00:00 [revised]
 PHST- 2025/03/06 00:00 [accepted]
-PHST- 2025/12/25 00:00 [pmc-release]
 PHST- 2025/06/26 00:27 [medline]
 PHST- 2025/05/23 00:27 [pubmed]
 PHST- 2025/05/22 21:33 [entrez]
+PHST- 2025/12/25 00:00 [pmc-release]
 AID - JNEUROSCI.2307-24.2025 [pii]
 AID - jneuro-45-e2307242025 [pii]
 AID - 10.1523/JNEUROSCI.2307-24.2025 [doi]
@@ -12206,13 +12929,13 @@ AB  - Frataxin is the protein that is down-regulated in Friedreich ataxia (FRDA)
       gel electrophoresis (PAGE) in combination with western blot analysis. One 
       antibody failed to detect any of the frataxin standards or endogenous frataxin in 
       mouse heart tissue. Three of the antibodies detected a protein in mouse heart 
-      tissue that ran slightly faster on PAGE (at 23.4...kDa) to that predicted for 
-      full-length frataxin (23.9...kDa). One antibody detected all four frataxin 
+      tissue that ran slightly faster on PAGE (at 23.4 kDa) to that predicted for 
+      full-length frataxin (23.9 kDa). One antibody detected all four frataxin 
       standards as well as endogenous mouse mature frataxin in mouse tissue. 
       Significantly, this antibody, which will be useful for monitoring mature frataxin 
       levels in monkey, human, and mouse tissues, did not detect a protein in mouse 
-      heart tissue at 23.4...kDa. Therefore, antibodies detecting the immunoreactive 
-      protein at 23.4...kDa could be misleading when testing for the up-regulation of 
+      heart tissue at 23.4 kDa. Therefore, antibodies detecting the immunoreactive 
+      protein at 23.4 kDa could be misleading when testing for the up-regulation of 
       frataxin in animal models.
 CI  - Copyright (c) 2019 The Authors. Published by Elsevier B.V. All rights reserved.
 FAU - Weng, Liwei
@@ -23894,6 +24617,7 @@ PST - ppublish
 SO  - Neurogenetics. 2011 Nov;12(4):307-13. doi: 10.1007/s10048-011-0296-3. Epub 2011 
       Aug 10.
 
+
 PMID- 21776984
 OWN - NLM
 STAT- MEDLINE
@@ -24614,17 +25338,17 @@ VI  - 7
 IP  - 5
 DP  - 2010 Nov 5
 TI  - Friedreich's ataxia induced pluripotent stem cells model intergenerational 
-      GAA...TTC triplet repeat instability.
+      GAA⋅TTC triplet repeat instability.
 PG  - 631-7
 LID - 10.1016/j.stem.2010.09.014 [doi]
 AB  - The inherited neurodegenerative disease Friedreich's ataxia (FRDA) is caused by 
-      GAA...TTC triplet repeat hyperexpansions within the first intron of the FXN gene, 
-      encoding the mitochondrial protein frataxin. Long GAA...TTC repeats cause 
+      GAA⋅TTC triplet repeat hyperexpansions within the first intron of the FXN gene, 
+      encoding the mitochondrial protein frataxin. Long GAA⋅TTC repeats cause 
       heterochromatin-mediated gene silencing and loss of frataxin in affected 
       individuals. We report the derivation of induced pluripotent stem cells (iPSCs) 
       from FRDA patient fibroblasts by transcription factor reprogramming. FXN gene 
       repression is maintained in the iPSCs, as are the global gene expression 
-      signatures reflecting the human disease. GAA...TTC repeats uniquely in FXN in the 
+      signatures reflecting the human disease. GAA⋅TTC repeats uniquely in FXN in the 
       iPSCs exhibit repeat instability similar to patient families, where they expand 
       and/or contract with discrete changes in length between generations. The mismatch 
       repair enzyme MSH2, implicated in repeat instability in other triplet repeat 
@@ -31601,3 +32325,4 @@ PHST- 1996/03/08 00:00 [entrez]
 AID - 10.1126/science.271.5254.1423 [doi]
 PST - ppublish
 SO  - Science. 1996 Mar 8;271(5254):1423-7. doi: 10.1126/science.271.5254.1423.
+
