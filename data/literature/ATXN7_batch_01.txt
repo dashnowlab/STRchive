@@ -1,4 +1,98 @@
 
+PMID- 41254939
+OWN - NLM
+STAT- Publisher
+LR  - 20251225
+IS  - 2666-2477 (Electronic)
+IS  - 2666-2477 (Linking)
+VI  - 7
+IP  - 1
+DP  - 2025 Nov 17
+TI  - Unbiased human genomic characterization of polyglutamine disorder genes to guide 
+      biological understanding and therapeutic strategies.
+PG  - 100547
+LID - S2666-2477(25)00150-2 [pii]
+LID - 10.1016/j.xhgg.2025.100547 [doi]
+LID - 100547
+AB  - Polyglutamine (polyQ) disorders, such as Huntington disease (HD) and several 
+      spinocerebellar ataxias, are severe neurological disorders caused by glutamine 
+      codon repeat expansions. These conditions lack effective treatments, with 
+      therapeutic research focused on pathogenic gene knockdown. This investigation 
+      aimed to profile these genes using diverse human genomic data to inform 
+      therapeutic strategies by identifying new biology and assessing the potential 
+      on-target effects of knocking down these genes. We conducted an unbiased 
+      phenome-wide study to identify human traits and diseases linked to polyQ disorder 
+      genes (Open Targets L2G > 0.5). Network analyses explored shared trait 
+      associations and overlapping biological processes among these genes. Lastly, we 
+      assessed the theoretical druggability of polyQ disorder genes using recently 
+      identified features predictive of clinical trial success and compared them with 
+      repeat expansion (HD) modifier genes. Our analyses identified 215 human 
+      phenotype/polyQ disorder gene associations from 3,095 studies, indicating 
+      potential adverse effects from gene knockdown. Shared trait associations among 
+      genes suggested overlapping biological processes despite distinct functions. Drug 
+      target profile analysis revealed increased safety concerns due to genomic 
+      features (i.e., constraint, molecular interactions, and tissue specificity) for 
+      polyQ disorder genes, particularly ATN1, ATXN1, ATXN7, and HTT. PolyQ disorder 
+      genes also showed significantly more safety-related risks than HD genetic 
+      modifier genes (p = 7.03 x 10(-3)). In conclusion, our analyses emphasize the 
+      pleiotropic nature of polyQ disorder genes, highlighting their potential risks as 
+      drug targets. These findings reinforce the importance of exploring alternative 
+      therapeutic strategies, such as targeting genetic modifier genes, as well as 
+      allele-selective approaches, to mitigate these challenges.
+CI  - Copyright (c) 2025. Published by Elsevier Inc.
+FAU - Namuli, Kevin Lucy
+AU  - Namuli KL
+AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
+      University of Manitoba, Winnipeg, MB, Canada; PrairieNeuro Research Centre, 
+      Kleysen Institute for Advanced Medicine, Health Sciences Centre and Rady Faculty 
+      of Health Sciences, University of Manitoba, Winnipeg, MB, Canada.
+FAU - Drogemoller, Britt I
+AU  - Drogemoller BI
+AD  - Department of Biochemistry and Medical Genetics, Rady Faculty of Health Sciences, 
+      University of Manitoba, Winnipeg, MB, Canada.
+FAU - Wright, Galen E B
+AU  - Wright GEB
+AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
+      University of Manitoba, Winnipeg, MB, Canada; PrairieNeuro Research Centre, 
+      Kleysen Institute for Advanced Medicine, Health Sciences Centre and Rady Faculty 
+      of Health Sciences, University of Manitoba, Winnipeg, MB, Canada; Department of 
+      Biochemistry and Medical Genetics, Rady Faculty of Health Sciences, University of 
+      Manitoba, Winnipeg, MB, Canada. Electronic address: galen.wright@umanitoba.ca.
+LA  - eng
+PT  - Journal Article
+DEP - 20251117
+PL  - United States
+TA  - HGG Adv
+JT  - HGG advances
+JID - 101772885
+SB  - IM
+PMC - PMC12719159
+OTO - NOTNLM
+OT  - Huntington disease
+OT  - genetic modifiers
+OT  - human genomics
+OT  - polyglutamine disorders
+OT  - repeat expansion disorders
+OT  - spinocerebellar ataxia
+OT  - therapeutic targets
+COIS- Declaration of interests The authors declare no competing interests.
+EDAT- 2025/11/19 06:32
+MHDA- 2025/11/19 06:32
+PMCR- 2025/11/17
+CRDT- 2025/11/19 01:36
+PHST- 2025/07/09 00:00 [received]
+PHST- 2025/11/11 00:00 [revised]
+PHST- 2025/11/11 00:00 [accepted]
+PHST- 2025/11/19 06:32 [pubmed]
+PHST- 2025/11/19 06:32 [medline]
+PHST- 2025/11/19 01:36 [entrez]
+PHST- 2025/11/17 00:00 [pmc-release]
+AID - S2666-2477(25)00150-2 [pii]
+AID - 100547 [pii]
+AID - 10.1016/j.xhgg.2025.100547 [doi]
+PST - aheadofprint
+SO  - HGG Adv. 2025 Nov 17;7(1):100547. doi: 10.1016/j.xhgg.2025.100547.
+
 PMID- 40900235
 OWN - NLM
 STAT- MEDLINE
@@ -1663,7 +1757,7 @@ LID - 10.1007/s12311-024-01745-3 [doi]
 AB  - Spinocerebellar ataxias (SCAs) are a diverse group of hereditary 
       neurodegenerative disorders characterized by progressive degeneration of the 
       cerebellum and other parts of the nervous system. In this study, we examined the 
-      genotype...phenotype correlations in SCAs within the Brazilian population by 
+      genotype‒phenotype correlations in SCAs within the Brazilian population by 
       leveraging a comprehensive dataset of 763 individuals from SARAH Network of 
       Rehabilitation Hospitals. Using a retrospective, cross-sectional, observational, 
       multicentric approach, we analysed medical records and conducted standardized 
@@ -1677,7 +1771,7 @@ AB  - Spinocerebellar ataxias (SCAs) are a diverse group of hereditary
       repeat expansions, which correlates larger expansions with earlier onset and 
       specific symptomatology. This extensive analysis underscores the critical 
       importance of genetic testing in the diagnosis and management of SCAs and 
-      enlightens the intricate genotype...phenotype interplay within a genetically 
+      enlightens the intricate genotype‒phenotype interplay within a genetically 
       diverse population. Despite certain limitations, such as potential selection bias 
       and the retrospective nature of the study, our research provides invaluable 
       insights into the prevalence, genetic underpinnings, and clinical variability of 
@@ -1731,7 +1825,7 @@ OTO - NOTNLM
 OT  - Brazil
 OT  - CAG repeat expansions
 OT  - Genetic testing
-OT  - Genotype...phenotype correlation
+OT  - Genotype‒phenotype correlation
 OT  - Spinocerebellar ataxias
 COIS- Declarations. Human Ethics and Consent to Participate: Not applicable. 
       Considering that this retrospective study was conducted only from data collected 
@@ -4989,7 +5083,7 @@ GR  - 2020JGB136/the Degree & Postgraduate Education Reform Project of Central S
 GR  - 2020LCJJ13/the Project Program of National Clinical Research Center for Geriatric 
       Disorders (Xiangya Hospital)/
 PT  - Journal Article
-TT  - CAG.............................................2...............................
+TT  - CAG重复序列对中国脊髓小脑共济失调2型患者发病年龄的影响.
 PL  - China
 TA  - Zhong Nan Da Xue Xue Bao Yi Xue Ban
 JT  - Zhong nan da xue xue bao. Yi xue ban = Journal of Central South University. 
@@ -5019,7 +5113,7 @@ PHST- 2021/09/28 06:00 [pubmed]
 PHST- 2021/09/29 06:00 [medline]
 PHST- 2021/08/28 00:00 [pmc-release]
 AID - 1672-7347(2021)08-0793-07 [pii]
-AID - 1672-7347...2021...08-0793-07 [pii]
+AID - 1672-7347（2021）08-0793-07 [pii]
 AID - 10.11817/j.issn.1672-7347.2021.210230 [doi]
 PST - ppublish
 SO  - Zhong Nan Da Xue Xue Bao Yi Xue Ban. 2021 Aug 28;46(8):793-799. doi: 
@@ -17662,3 +17756,4 @@ PHST- 1996/10/01 00:00 [entrez]
 AID - 10.1101/gr.6.10.965 [doi]
 PST - ppublish
 SO  - Genome Res. 1996 Oct;6(10):965-71. doi: 10.1101/gr.6.10.965.
+

@@ -1,13 +1,18 @@
 
 PMID- 40608247
 OWN - NLM
-STAT- Publisher
-LR  - 20250703
+STAT- MEDLINE
+DCOM- 20251113
+LR  - 20251114
 IS  - 1528-1167 (Electronic)
+IS  - 0013-9580 (Print)
 IS  - 0013-9580 (Linking)
-DP  - 2025 Jul 3
+VI  - 66
+IP  - 10
+DP  - 2025 Oct
 TI  - Cannabidiol attenuates epileptic phenotype and increases survival in a mouse 
       model of developmental and epileptic encephalopathy type 1.
+PG  - 4035-4052
 LID - 10.1111/epi.18522 [doi]
 AB  - OBJECTIVE: Developmental and epileptic encephalopathy type 1 (DEE1) is a rare 
       drug-resistant pediatric epilepsy caused by trinucleotide repeat expansions in 
@@ -114,7 +119,20 @@ PL  - United States
 TA  - Epilepsia
 JT  - Epilepsia
 JID - 2983306R
+RN  - 19GBJ60SN5 (Cannabidiol)
+RN  - 0 (Anticonvulsants)
 SB  - IM
+MH  - Animals
+MH  - *Cannabidiol/therapeutic use/pharmacology
+MH  - Mice
+MH  - Disease Models, Animal
+MH  - Male
+MH  - Phenotype
+MH  - *Anticonvulsants/therapeutic use/pharmacology
+MH  - *Spasms, Infantile/drug therapy/genetics
+MH  - Neurons/drug effects
+MH  - *Epilepsy/drug therapy/genetics
+PMC - PMC12605674
 OTO - NOTNLM
 OT  - Pparg
 OT  - Arx polyalanine mice
@@ -122,18 +140,25 @@ OT  - TRPV1
 OT  - cannabidiol
 OT  - neurexin splicing switches
 OT  - pharmacoresistant seizure
+COIS- G.T. has received speaker honoraria from Jazz Pharmaceuticals, UCB, and 
+      Neuraxpharm. None of the other authors has any conflict of interest to disclose. 
+      We confirm that we have read the Journal's position on issues involved in ethical 
+      publication and affirm that this report is consistent with those guidelines.
 EDAT- 2025/07/03 12:32
-MHDA- 2025/07/03 12:32
+MHDA- 2025/11/13 12:31
+PMCR- 2025/11/12
 CRDT- 2025/07/03 11:22
 PHST- 2025/06/10 00:00 [revised]
 PHST- 2025/03/12 00:00 [received]
 PHST- 2025/06/10 00:00 [accepted]
-PHST- 2025/07/03 12:32 [medline]
+PHST- 2025/11/13 12:31 [medline]
 PHST- 2025/07/03 12:32 [pubmed]
 PHST- 2025/07/03 11:22 [entrez]
+PHST- 2025/11/12 00:00 [pmc-release]
+AID - EPI18522 [pii]
 AID - 10.1111/epi.18522 [doi]
-PST - aheadofprint
-SO  - Epilepsia. 2025 Jul 3. doi: 10.1111/epi.18522.
+PST - ppublish
+SO  - Epilepsia. 2025 Oct;66(10):4035-4052. doi: 10.1111/epi.18522. Epub 2025 Jul 3.
 
 PMID- 39933386
 OWN - NLM
@@ -3067,3 +3092,4 @@ PHST- 2003/07/23 05:00 [entrez]
 AID - 10.1212/01.wnl.0000068012.69928.92 [doi]
 PST - ppublish
 SO  - Neurology. 2003 Jul 22;61(2):267-76. doi: 10.1212/01.wnl.0000068012.69928.92.
+

@@ -1,4 +1,433 @@
 
+PMID- 41435767
+OWN - NLM
+STAT- Publisher
+LR  - 20251223
+IS  - 1476-928X (Electronic)
+IS  - 1476-9271 (Linking)
+VI  - 121
+DP  - 2025 Dec 11
+TI  - Valosin-Containing Protein as a therapeutic target in CAG repeat-driven 
+      Spinocerebellar ataxias: Integrative transcriptomic and computational insights.
+PG  - 108838
+LID - S1476-9271(25)00502-X [pii]
+LID - 10.1016/j.compbiolchem.2025.108838 [doi]
+AB  - Spinocerebellar ataxias (SCAs) are progressive neurodegenerative disorders caused 
+      by abnormal CAG repeat expansions in genes such as ATXN1, ATXN2, and ATXN3, with 
+      no effective therapeutic options currently available. To identify key molecular 
+      drivers of disease pathology, transcriptomic datasets GSE75249 and GSE151276 were 
+      analyzed. Differentially expressed genes were determined, and overlapping 
+      upregulated genes from both datasets were extracted for downstream analysis. 
+      Functional enrichment revealed significant biological processes and pathways 
+      related to protein homeostasis, cellular stress response, and neurodegeneration. 
+      Protein-protein interaction networks were constructed to investigate gene 
+      connectivity, and hub gene analysis identified Valosin-Containing Protein (VCP) 
+      as the top-ranked common hub gene. Importantly, VCP expression was experimentally 
+      validated in plasma samples from SCA1, SCA2, and SCA3 patients using ELISA, 
+      confirming its dysregulation and central role in SCA pathogenesis. To explore 
+      therapeutic potential, pharmacophore-based virtual screening of natural compounds 
+      was conducted, followed by molecular docking to evaluate interactions with VCP. 
+      Among the shortlisted candidates, sesamolin demonstrated the strongest binding 
+      affinity and favorable pharmacological properties. A 250 ns molecular dynamics 
+      simulation further confirmed the stability of the VCP-sesamolin complex, 
+      revealing sustained interactions, reduced fluctuations, and conformational 
+      stabilization of VCP. Collectively, this integrative approach combining 
+      transcriptomic profiling, enrichment analysis, hub gene identification, 
+      experimental validation, and structure-based drug discovery highlights VCP as a 
+      crucial regulator in CAG repeat-associated SCAs and proposes sesamolin as a 
+      promising neuroprotective lead compound for further preclinical development.
+CI  - Copyright (c) 2025 Elsevier Ltd. All rights reserved.
+FAU - Singh, Surbhi
+AU  - Singh S
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India. Electronic address: surbhi@bhu.ac.in.
+FAU - Joshi, Deepika
+AU  - Joshi D
+AD  - Department of Neurology, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi 221005, India. Electronic address: drdeepikajoshi73@gmail.com.
+FAU - Makani, Janki
+AU  - Makani J
+AD  - Department of Neurology, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi 221005, India. Electronic address: jnkmakani@gmail.com.
+FAU - Singh, Suchitra
+AU  - Singh S
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India. Electronic address: singhsuchitra68@gmail.com.
+FAU - Yadav, Janhavi
+AU  - Yadav J
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India.
+FAU - Chaurasiya, Shraddha
+AU  - Chaurasiya S
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India.
+FAU - Mohanty, Chandmayee
+AU  - Mohanty C
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India.
+FAU - Kumar, Anand
+AU  - Kumar A
+AD  - Department of Neurology, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi 221005, India. Electronic address: anand.2005.02@gmail.com.
+FAU - Singh, Royana
+AU  - Singh R
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India; Department of Neurology, Institute of Medical 
+      Sciences, Banaras Hindu University, Varanasi 221005, India. Electronic address: 
+      royanasingh@bhu.ac.in.
+LA  - eng
+PT  - Journal Article
+DEP - 20251211
+PL  - England
+TA  - Comput Biol Chem
+JT  - Computational biology and chemistry
+JID - 101157394
+SB  - IM
+OTO - NOTNLM
+OT  - ADMET
+OT  - ELISA
+OT  - GEO Datasets
+OT  - MD Simulation
+OT  - Molecular Docking
+OT  - Natural Compound
+OT  - ROC curve
+OT  - SCAs
+OT  - VCP
+COIS- Declaration of Competing Interest The authors declare that there is no conflict 
+      of interest.
+EDAT- 2025/12/24 00:33
+MHDA- 2025/12/24 00:33
+CRDT- 2025/12/23 18:13
+PHST- 2025/09/18 00:00 [received]
+PHST- 2025/11/24 00:00 [revised]
+PHST- 2025/12/07 00:00 [accepted]
+PHST- 2025/12/24 00:33 [medline]
+PHST- 2025/12/24 00:33 [pubmed]
+PHST- 2025/12/23 18:13 [entrez]
+AID - S1476-9271(25)00502-X [pii]
+AID - 10.1016/j.compbiolchem.2025.108838 [doi]
+PST - aheadofprint
+SO  - Comput Biol Chem. 2025 Dec 11;121:108838. doi: 
+      10.1016/j.compbiolchem.2025.108838.
+
+PMID- 41426430
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251222
+LR  - 20251224
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 6
+DP  - 2025
+TI  - The role of disease-associated short tandem repeats in amyotrophic lateral 
+      sclerosis.
+PG  - fcaf482
+LID - 10.1093/braincomms/fcaf482 [doi]
+LID - fcaf482
+AB  - Short tandem repeats (STRs) are recognized contributors to various 
+      neurodegenerative disorders, with evidence supporting genetic pleiotropy among 
+      these STRs. Multiple STRs have been associated with amyotrophic lateral sclerosis 
+      (ALS), although the strength of evidence supporting each association varies. To 
+      establish the role of disease-associated repeat expansions as pleiotropic risk 
+      factors in ALS susceptibility and progression, we genotyped a panel of 39 STRs, 
+      known to cause neurological diseases, within Project MinE in 6519 patients and 
+      2412 controls, utilizing 100 and 150 bp short-read sequencing technology. 
+      Pathogenic allele frequencies were compared to those in a control cohort 
+      comprising 4930 Genome Aggregation Database (gnomAD) genomes. Repeat sizes and 
+      motif changes were detected using ExpansionHunter and ExpansionHunter Denovo. We 
+      developed a model to predict genotyping failures in STRs and established a 
+      best-practice protocol for assessing the accuracy of STR genotyping in short-read 
+      sequencing data. Following our genotyping assessment, 11 out of the 39 STRs 
+      exhibited insufficient genotyping accuracy, warranting caution in studying these 
+      STRs using these tools in combination with short-read sequencing. Furthermore, 
+      the observed differences in STR genotyping accuracy across studies applying 
+      different sequencing technologies and genotyping tools in control cohorts 
+      highlight the importance of a carefully designed experimental setup when 
+      interpreting potential disease-associated STR findings. Pathogenic C9orf72 and 
+      premutated ATXN2 expansions were confirmed to be significantly associated with 
+      ALS susceptibility. Additionally, pathogenic C9orf72 expansions were 
+      significantly associated with reduced mean ALS survival by 11.5 months and an 
+      earlier mean age at onset by 2.4 years. Premutation expansions in ATXN1 showed a 
+      nominally significant association with ALS susceptibility, while pathogenic 
+      expansions in NIPA1 displayed a nominally significant association with ALS 
+      survival. Previously reported ALS-associated pleiotropy in HTT and STMN2 could 
+      not be confirmed. Motif changes were identified in BEAN1, RFC1, ATXN8, C9orf72, 
+      DAB1, FXN and SAMD12; however, none of the motif changes were linked to ALS. 
+      Re-evaluation of clinical data from patients with ALS and a repeat expansion 
+      typically associated with another disease revealed that 7% of these patients' 
+      diagnoses had to be reclassified to the disease associated with the repeat 
+      expansion (e.g. Kennedy's disease or spinocerebellar ataxia). This underscores 
+      the value of broad STR screening in neurodegenerative cases. Pathogenic and 
+      premutation STRs were also found in controls in unexpected high frequencies, 
+      suggesting reduced penetrance or underdiagnosis, and highlighting the need for 
+      caution when interpreting genetic associations with disease without a proper 
+      control cohort.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - van Vugt, Joke J F A
+AU  - van Vugt JJFA
+AUID- ORCID: 0000-0002-4161-4004
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Zwamborn, Ramona A J
+AU  - Zwamborn RAJ
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Dolzhenko, Egor
+AU  - Dolzhenko E
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Eberle, Michael A
+AU  - Eberle MA
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Weisburd, Ben
+AU  - Weisburd B
+AD  - Program in Medical and Population Genetics, Broad Center for Mendelian Genomics, 
+      Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA.
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical 
+      School, Boston, MA 02114, USA.
+FAU - Bekema, Erwin
+AU  - Bekema E
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Kooyman, Maarten
+AU  - Kooyman M
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Wang, Bi-Nan
+AU  - Wang BN
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+CN  - Project MinE ALS Sequencing Consortium
+FAU - Kamsteeg, Erik-Jan
+AU  - Kamsteeg EJ
+AUID- ORCID: 0000-0001-6480-1892
+AD  - Department of Human Genetics, Radboud University Medical Center, Nijmegen 6525 
+      GA, The Netherlands.
+FAU - Losekoot, Monique
+AU  - Losekoot M
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Baas, Frank
+AU  - Baas F
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Novy, Camilla
+AU  - Novy C
+AUID- ORCID: 0009-0008-0089-3669
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - Hoyer, Helle
+AU  - Hoyer H
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - van Eijk, Ruben P A
+AU  - van Eijk RPA
+AUID- ORCID: 0000-0002-7132-5967
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Es, Michael A
+AU  - van Es MA
+AUID- ORCID: 0000-0002-7709-5883
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Rheenen, Wouter
+AU  - van Rheenen W
+AUID- ORCID: 0000-0002-5860-1533
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Al-Chalabi, Ammar
+AU  - Al-Chalabi A
+AUID- ORCID: 0000-0002-4924-7712
+AD  - Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience 
+      Institute, King's College London, London SE5 9RX, UK.
+FAU - van den Berg, Leonard H
+AU  - van den Berg LH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Veldink, Jan H
+AU  - Veldink JH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+LA  - eng
+PT  - Journal Article
+DEP - 20251209
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12715773
+OTO - NOTNLM
+OT  - disease-related repeats
+OT  - microsatellite genotyping
+OT  - motor neurodegenerative disease
+OT  - short tandem repeat genotyping
+OT  - tandem repeat genotyping accuracy
+COIS- JHV reports to have sponsored research agreements with Biogen, Eli Lilly, Trace 
+      and AstraZeneca.
+FIR - van Damme, Philip
+IR  - van Damme P
+FIR - Corcia, Philippe
+IR  - Corcia P
+FIR - Couratier, Philippe
+IR  - Couratier P
+FIR - Vourc'h, Patrick
+IR  - Vourc'h P
+FIR - Hardiman, Orla
+IR  - Hardiman O
+FIR - McLaughin, Russell
+IR  - McLaughin R
+FIR - Gotkine, Marc
+IR  - Gotkine M
+FIR - Lerner, Yossef
+IR  - Lerner Y
+FIR - Drory, Vivian
+IR  - Drory V
+FIR - Ticozzi, Nicola
+IR  - Ticozzi N
+FIR - Silani, Vincenzo
+IR  - Silani V
+FIR - Veldink, Jan H
+IR  - Veldink JH
+FIR - van den Berg, Leonard H
+IR  - van den Berg LH
+FIR - de Carvalho, Mamede
+IR  - de Carvalho M
+FIR - Salas, Teresa
+IR  - Salas T
+FIR - Pardina, Jesus S Mora
+IR  - Pardina JSM
+FIR - Povedano, Monica
+IR  - Povedano M
+FIR - Andersen, Peter
+IR  - Andersen P
+FIR - Weber, Markus
+IR  - Weber M
+FIR - Basak, Nazli A
+IR  - Basak NA
+FIR - Al-Chalabi, Ammar
+IR  - Al-Chalabi A
+FIR - Shaw, Chris
+IR  - Shaw C
+FIR - Shaw, Pamela J
+IR  - Shaw PJ
+FIR - Morrison, Karen E
+IR  - Morrison KE
+FIR - Landers, John E
+IR  - Landers JE
+FIR - Glass, Jonathan D
+IR  - Glass JD
+FIR - Dalgard, Clifton L
+IR  - Dalgard CL
+EDAT- 2025/12/22 12:55
+MHDA- 2025/12/22 12:56
+PMCR- 2025/12/09
+CRDT- 2025/12/22 06:54
+PHST- 2025/05/01 00:00 [received]
+PHST- 2025/11/10 00:00 [revised]
+PHST- 2025/12/08 00:00 [accepted]
+PHST- 2025/12/22 12:56 [medline]
+PHST- 2025/12/22 12:55 [pubmed]
+PHST- 2025/12/22 06:54 [entrez]
+PHST- 2025/12/09 00:00 [pmc-release]
+AID - fcaf482 [pii]
+AID - 10.1093/braincomms/fcaf482 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482. 
+      eCollection 2025.
+
+PMID- 41254939
+OWN - NLM
+STAT- Publisher
+LR  - 20251225
+IS  - 2666-2477 (Electronic)
+IS  - 2666-2477 (Linking)
+VI  - 7
+IP  - 1
+DP  - 2025 Nov 17
+TI  - Unbiased human genomic characterization of polyglutamine disorder genes to guide 
+      biological understanding and therapeutic strategies.
+PG  - 100547
+LID - S2666-2477(25)00150-2 [pii]
+LID - 10.1016/j.xhgg.2025.100547 [doi]
+LID - 100547
+AB  - Polyglutamine (polyQ) disorders, such as Huntington disease (HD) and several 
+      spinocerebellar ataxias, are severe neurological disorders caused by glutamine 
+      codon repeat expansions. These conditions lack effective treatments, with 
+      therapeutic research focused on pathogenic gene knockdown. This investigation 
+      aimed to profile these genes using diverse human genomic data to inform 
+      therapeutic strategies by identifying new biology and assessing the potential 
+      on-target effects of knocking down these genes. We conducted an unbiased 
+      phenome-wide study to identify human traits and diseases linked to polyQ disorder 
+      genes (Open Targets L2G > 0.5). Network analyses explored shared trait 
+      associations and overlapping biological processes among these genes. Lastly, we 
+      assessed the theoretical druggability of polyQ disorder genes using recently 
+      identified features predictive of clinical trial success and compared them with 
+      repeat expansion (HD) modifier genes. Our analyses identified 215 human 
+      phenotype/polyQ disorder gene associations from 3,095 studies, indicating 
+      potential adverse effects from gene knockdown. Shared trait associations among 
+      genes suggested overlapping biological processes despite distinct functions. Drug 
+      target profile analysis revealed increased safety concerns due to genomic 
+      features (i.e., constraint, molecular interactions, and tissue specificity) for 
+      polyQ disorder genes, particularly ATN1, ATXN1, ATXN7, and HTT. PolyQ disorder 
+      genes also showed significantly more safety-related risks than HD genetic 
+      modifier genes (p = 7.03 x 10(-3)). In conclusion, our analyses emphasize the 
+      pleiotropic nature of polyQ disorder genes, highlighting their potential risks as 
+      drug targets. These findings reinforce the importance of exploring alternative 
+      therapeutic strategies, such as targeting genetic modifier genes, as well as 
+      allele-selective approaches, to mitigate these challenges.
+CI  - Copyright (c) 2025. Published by Elsevier Inc.
+FAU - Namuli, Kevin Lucy
+AU  - Namuli KL
+AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
+      University of Manitoba, Winnipeg, MB, Canada; PrairieNeuro Research Centre, 
+      Kleysen Institute for Advanced Medicine, Health Sciences Centre and Rady Faculty 
+      of Health Sciences, University of Manitoba, Winnipeg, MB, Canada.
+FAU - Drogemoller, Britt I
+AU  - Drogemoller BI
+AD  - Department of Biochemistry and Medical Genetics, Rady Faculty of Health Sciences, 
+      University of Manitoba, Winnipeg, MB, Canada.
+FAU - Wright, Galen E B
+AU  - Wright GEB
+AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
+      University of Manitoba, Winnipeg, MB, Canada; PrairieNeuro Research Centre, 
+      Kleysen Institute for Advanced Medicine, Health Sciences Centre and Rady Faculty 
+      of Health Sciences, University of Manitoba, Winnipeg, MB, Canada; Department of 
+      Biochemistry and Medical Genetics, Rady Faculty of Health Sciences, University of 
+      Manitoba, Winnipeg, MB, Canada. Electronic address: galen.wright@umanitoba.ca.
+LA  - eng
+PT  - Journal Article
+DEP - 20251117
+PL  - United States
+TA  - HGG Adv
+JT  - HGG advances
+JID - 101772885
+SB  - IM
+PMC - PMC12719159
+OTO - NOTNLM
+OT  - Huntington disease
+OT  - genetic modifiers
+OT  - human genomics
+OT  - polyglutamine disorders
+OT  - repeat expansion disorders
+OT  - spinocerebellar ataxia
+OT  - therapeutic targets
+COIS- Declaration of interests The authors declare no competing interests.
+EDAT- 2025/11/19 06:32
+MHDA- 2025/11/19 06:32
+PMCR- 2025/11/17
+CRDT- 2025/11/19 01:36
+PHST- 2025/07/09 00:00 [received]
+PHST- 2025/11/11 00:00 [revised]
+PHST- 2025/11/11 00:00 [accepted]
+PHST- 2025/11/19 06:32 [pubmed]
+PHST- 2025/11/19 06:32 [medline]
+PHST- 2025/11/19 01:36 [entrez]
+PHST- 2025/11/17 00:00 [pmc-release]
+AID - S2666-2477(25)00150-2 [pii]
+AID - 100547 [pii]
+AID - 10.1016/j.xhgg.2025.100547 [doi]
+PST - aheadofprint
+SO  - HGG Adv. 2025 Nov 17;7(1):100547. doi: 10.1016/j.xhgg.2025.100547.
+
 PMID- 41149812
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -5482,7 +5911,7 @@ IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Linking)
 VI  - 414
 DP  - 2020 Jul 15
-TI  - CAG repeats...>/=...34 in Ataxin-1 gene are associated with amyotrophic lateral 
+TI  - CAG repeats >/= 34 in Ataxin-1 gene are associated with amyotrophic lateral 
       sclerosis in a Brazilian cohort.
 PG  - 116842
 LID - S0022-510X(20)30178-7 [pii]
@@ -5493,8 +5922,8 @@ AB  - Little is known about the genetic basis of amyotrophic lateral sclerosis (
       accomplish that, representative samples from 411 unrelated patients and 436 
       neurologically normal controls from 6 centers spread over the territory were 
       genotyped to quantify ATXN1 expansions. We found that ATXN1 intermediate-length 
-      expansion (>/=34 CAG repeats) are associated with the disease (odds ratio...=...2.19, 
-      95% CI...=...1.081-4.441, p...=....026). Most ATXN1-positive patients had classical 
+      expansion (>/=34 CAG repeats) are associated with the disease (odds ratio = 2.19, 
+      95% CI = 1.081-4.441, p = .026). Most ATXN1-positive patients had classical 
       phenotype, but some of them presented predominant lower motor neuron involvement. 
       None of them had associated ataxia. Frontotemporal dementia was concomitantly 
       found in 12.5% of patients carrying the intermediate ATXN1 expansion. Further 
@@ -6995,7 +7424,7 @@ LID - 10.3892/mmr.2018.9043 [doi]
 AB  - Spinocerebellar ataxia (SCA) is a group of genetic diseases of the nervous system 
       with genetic and clinical heterogeneity. SCA is often caused by an expanded CAG 
       repeat sequence in the encoding protein. Genetic testing is necessary to diagnose 
-      and classify the types of SCA. Next...generation DNA sequencing usually generates a 
+      and classify the types of SCA. Next‑generation DNA sequencing usually generates a 
       high error rate for insertion or deletion mutations, so it is unhelpful for 
       classifying the types of SCA. In the present study, a Chinese SCA pedigree was 
       preliminarily diagnosed with SCA1 using polymerase chain reaction (PCR) 
@@ -9961,3 +10390,4 @@ PHST- 2004/08/10 05:00 [entrez]
 AID - 10.1002/humu.20075 [doi]
 PST - ppublish
 SO  - Hum Mutat. 2004 Sep;24(3):236-47. doi: 10.1002/humu.20075.
+

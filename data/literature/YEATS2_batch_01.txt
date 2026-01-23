@@ -1,4 +1,135 @@
 
+PMID- 41219789
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20251113
+LR  - 20251217
+IS  - 1755-8794 (Electronic)
+IS  - 1755-8794 (Linking)
+VI  - 18
+IP  - 1
+DP  - 2025 Nov 11
+TI  - Targeted nanopore long-read sequencing panel for the molecular diagnosis of 
+      intronic expansion in familial adult myoclonic epilepsy.
+PG  - 180
+LID - 10.1186/s12920-025-02247-9 [doi]
+LID - 180
+AB  - BACKGROUND: Familial adult myoclonic epilepsy (FAME), an autosomal dominant 
+      disorder, is characterized by cortical myoclonus and occasional generalized 
+      tonic-clonic seizures. To date, intronic pentanucleotide repeat expansions in at 
+      least seven genes, including SAMD12, TNRC6A, YEATS2, MARCHF6, STARD7, RAPGEF2, 
+      and RAI1, have been reported as causative. Detecting these repeat expansions 
+      using conventional sequencing techniques (Sanger or short-read next-generation 
+      sequencing) is not feasible as they cannot reliably span or characterize long 
+      repetitive elements. Although genetic testing has been performed in some research 
+      laboratories, comprehensive long read-based panel is unavailable for clinical 
+      application. To address this gap, we developed a targeted long-read sequencing 
+      panel and applied it in a clinical diagnostic context for the first time. 
+      METHODS: We designed a custom long-read sequencing panel targeting all seven 
+      known FAME-associated repeat loci using Oxford Nanopore Cas9-enrichment 
+      technology and applied it to a 47-year-old woman with familial cortical myoclonic 
+      tremor, clinically suspected to have FAME. RESULTS: The panel functioned as 
+      intended, providing robust on-target coverage across all loci, facilitating 
+      confident interrogation of each repeat region. At the SAMD12 locus, strand-aware 
+      histograms and read-level inspection demonstrated a clear pathogenic expansion, 
+      encompassing mixed TTTTA/TTTCA motifs with detectable TTTGA interruptions, 
+      consistent with FAME1. Using the crude allele prediction option of 
+      tandem-genotypes, the expanded allele contained approximately 689 additional 
+      repeats relative to the reference genome. The other six loci showed no pathogenic 
+      expansions. CONCLUSIONS: This targeted long-read panel enabled the first clinical 
+      molecular diagnosis of FAME using a comprehensive assay, yielding allele-resolved 
+      characterization of the pathogenic repeat and its motif composition. With further 
+      validation, this approach may serve as a clinically practical tool for reliable 
+      detection of FAME1 and for broader screening of other FAME subtypes, potentially 
+      reducing reliance on prolonged clinical observation or specialized 
+      electrophysiological testing.
+CI  - (c) 2025. The Author(s).
+FAU - Urabe, Haruka
+AU  - Urabe H
+AD  - Department of Neurology, NHO Niigata National Hospital, 3-52 Akasaka-cho, 
+      Kashiwazaki, 945-8585, Japan.
+FAU - Nakajima, Takashi
+AU  - Nakajima T
+AD  - Department of Neurology, NHO Niigata National Hospital, 3-52 Akasaka-cho, 
+      Kashiwazaki, 945-8585, Japan. nakajima-md@mqb.biglobe.ne.jp.
+AD  - Department of Clinical Genetics, NHO Niigata National Hospital, 3-52 Akasaka- 
+      cho, Kashiwazaki, 945-8585, Japan. nakajima-md@mqb.biglobe.ne.jp.
+FAU - Mitsuhashi, Satomi
+AU  - Mitsuhashi S
+AD  - Department of Neurology, St. Marianna University School of Medicine, 2-16-1 
+      Sugao, Miyamae-ku, Kawasaki, 216-8511, Japan.
+FAU - Ohta, Kentaro
+AU  - Ohta K
+AD  - Department of Neurology, NHO Niigata National Hospital, 3-52 Akasaka-cho, 
+      Kashiwazaki, 945-8585, Japan.
+AD  - Department of Clinical Genetics, NHO Niigata National Hospital, 3-52 Akasaka- 
+      cho, Kashiwazaki, 945-8585, Japan.
+FAU - Fujinaka, Hidehiko
+AU  - Fujinaka H
+AD  - Department of Clinical Genetics, NHO Niigata National Hospital, 3-52 Akasaka- 
+      cho, Kashiwazaki, 945-8585, Japan.
+FAU - Goto, Kiyoe
+AU  - Goto K
+AD  - Department of Clinical Genetics, NHO Niigata National Hospital, 3-52 Akasaka- 
+      cho, Kashiwazaki, 945-8585, Japan.
+FAU - Sato, Aki
+AU  - Sato A
+AD  - Department of Neurology, NHO Niigata National Hospital, 3-52 Akasaka-cho, 
+      Kashiwazaki, 945-8585, Japan.
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+DEP - 20251111
+PL  - England
+TA  - BMC Med Genomics
+JT  - BMC medical genomics
+JID - 101319628
+RN  - Epilepsy, Myoclonic, Benign Adult Familial, Type 1
+SB  - IM
+MH  - Humans
+MH  - *Epilepsies, Myoclonic/genetics/diagnosis
+MH  - Female
+MH  - Middle Aged
+MH  - *Introns/genetics
+MH  - *Nanopore Sequencing/methods
+MH  - *DNA Repeat Expansion
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Pedigree
+PMC - PMC12607150
+OTO - NOTNLM
+OT  - Benign adult-onset familial myoclonic epilepsy
+OT  - Familial adult myoclonic epilepsy
+OT  - Gene panel
+OT  - Long-read sequencing
+OT  - Repeat diseases
+COIS- Declarations. Ethics approval and consent to participate: This study was 
+      conducted in accordance with the principles of the Declaration of Helsinki, the 
+      Act on the Protection of Personal Information in Japan, applicable Japanese 
+      national laws, and relevant institutional ethical guidelines. The study protocol 
+      was approved by the Institutional Review Board of St. Marianna University School 
+      of Medicine (approval number: #4983). All participants provided informed consent 
+      to participate in this study. In particular, peripheral blood sampling and 
+      genetic testing were performed with written informed consent from the proband, 
+      following a full explanation of the study. Consent for publication: Written 
+      informed consent has also been obtained from all participants for the publication 
+      of clinical details, along with identifying images, in the study. Competing 
+      interests: The authors declare no competing interests.
+EDAT- 2025/11/12 00:26
+MHDA- 2025/11/13 18:30
+PMCR- 2025/11/11
+CRDT- 2025/11/11 23:46
+PHST- 2025/06/27 00:00 [received]
+PHST- 2025/09/27 00:00 [accepted]
+PHST- 2025/11/13 18:30 [medline]
+PHST- 2025/11/12 00:26 [pubmed]
+PHST- 2025/11/11 23:46 [entrez]
+PHST- 2025/11/11 00:00 [pmc-release]
+AID - 10.1186/s12920-025-02247-9 [pii]
+AID - 2247 [pii]
+AID - 10.1186/s12920-025-02247-9 [doi]
+PST - epublish
+SO  - BMC Med Genomics. 2025 Nov 11;18(1):180. doi: 10.1186/s12920-025-02247-9.
+
 PMID- 38128822
 OWN - NLM
 STAT- MEDLINE
@@ -243,3 +374,4 @@ AID - 5572219 [pii]
 AID - 10.1093/brain/awz267 [doi]
 PST - ppublish
 SO  - Brain. 2019 Nov 1;142(11):3360-3366. doi: 10.1093/brain/awz267.
+

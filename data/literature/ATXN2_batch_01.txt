@@ -1,4 +1,928 @@
 
+PMID- 41435767
+OWN - NLM
+STAT- Publisher
+LR  - 20251223
+IS  - 1476-928X (Electronic)
+IS  - 1476-9271 (Linking)
+VI  - 121
+DP  - 2025 Dec 11
+TI  - Valosin-Containing Protein as a therapeutic target in CAG repeat-driven 
+      Spinocerebellar ataxias: Integrative transcriptomic and computational insights.
+PG  - 108838
+LID - S1476-9271(25)00502-X [pii]
+LID - 10.1016/j.compbiolchem.2025.108838 [doi]
+AB  - Spinocerebellar ataxias (SCAs) are progressive neurodegenerative disorders caused 
+      by abnormal CAG repeat expansions in genes such as ATXN1, ATXN2, and ATXN3, with 
+      no effective therapeutic options currently available. To identify key molecular 
+      drivers of disease pathology, transcriptomic datasets GSE75249 and GSE151276 were 
+      analyzed. Differentially expressed genes were determined, and overlapping 
+      upregulated genes from both datasets were extracted for downstream analysis. 
+      Functional enrichment revealed significant biological processes and pathways 
+      related to protein homeostasis, cellular stress response, and neurodegeneration. 
+      Protein-protein interaction networks were constructed to investigate gene 
+      connectivity, and hub gene analysis identified Valosin-Containing Protein (VCP) 
+      as the top-ranked common hub gene. Importantly, VCP expression was experimentally 
+      validated in plasma samples from SCA1, SCA2, and SCA3 patients using ELISA, 
+      confirming its dysregulation and central role in SCA pathogenesis. To explore 
+      therapeutic potential, pharmacophore-based virtual screening of natural compounds 
+      was conducted, followed by molecular docking to evaluate interactions with VCP. 
+      Among the shortlisted candidates, sesamolin demonstrated the strongest binding 
+      affinity and favorable pharmacological properties. A 250 ns molecular dynamics 
+      simulation further confirmed the stability of the VCP-sesamolin complex, 
+      revealing sustained interactions, reduced fluctuations, and conformational 
+      stabilization of VCP. Collectively, this integrative approach combining 
+      transcriptomic profiling, enrichment analysis, hub gene identification, 
+      experimental validation, and structure-based drug discovery highlights VCP as a 
+      crucial regulator in CAG repeat-associated SCAs and proposes sesamolin as a 
+      promising neuroprotective lead compound for further preclinical development.
+CI  - Copyright (c) 2025 Elsevier Ltd. All rights reserved.
+FAU - Singh, Surbhi
+AU  - Singh S
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India. Electronic address: surbhi@bhu.ac.in.
+FAU - Joshi, Deepika
+AU  - Joshi D
+AD  - Department of Neurology, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi 221005, India. Electronic address: drdeepikajoshi73@gmail.com.
+FAU - Makani, Janki
+AU  - Makani J
+AD  - Department of Neurology, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi 221005, India. Electronic address: jnkmakani@gmail.com.
+FAU - Singh, Suchitra
+AU  - Singh S
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India. Electronic address: singhsuchitra68@gmail.com.
+FAU - Yadav, Janhavi
+AU  - Yadav J
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India.
+FAU - Chaurasiya, Shraddha
+AU  - Chaurasiya S
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India.
+FAU - Mohanty, Chandmayee
+AU  - Mohanty C
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India.
+FAU - Kumar, Anand
+AU  - Kumar A
+AD  - Department of Neurology, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi 221005, India. Electronic address: anand.2005.02@gmail.com.
+FAU - Singh, Royana
+AU  - Singh R
+AD  - Department of Anatomy, Institute of Medical Sciences, Banaras Hindu University, 
+      Varanasi, Uttar Pradesh, India; Department of Neurology, Institute of Medical 
+      Sciences, Banaras Hindu University, Varanasi 221005, India. Electronic address: 
+      royanasingh@bhu.ac.in.
+LA  - eng
+PT  - Journal Article
+DEP - 20251211
+PL  - England
+TA  - Comput Biol Chem
+JT  - Computational biology and chemistry
+JID - 101157394
+SB  - IM
+OTO - NOTNLM
+OT  - ADMET
+OT  - ELISA
+OT  - GEO Datasets
+OT  - MD Simulation
+OT  - Molecular Docking
+OT  - Natural Compound
+OT  - ROC curve
+OT  - SCAs
+OT  - VCP
+COIS- Declaration of Competing Interest The authors declare that there is no conflict 
+      of interest.
+EDAT- 2025/12/24 00:33
+MHDA- 2025/12/24 00:33
+CRDT- 2025/12/23 18:13
+PHST- 2025/09/18 00:00 [received]
+PHST- 2025/11/24 00:00 [revised]
+PHST- 2025/12/07 00:00 [accepted]
+PHST- 2025/12/24 00:33 [medline]
+PHST- 2025/12/24 00:33 [pubmed]
+PHST- 2025/12/23 18:13 [entrez]
+AID - S1476-9271(25)00502-X [pii]
+AID - 10.1016/j.compbiolchem.2025.108838 [doi]
+PST - aheadofprint
+SO  - Comput Biol Chem. 2025 Dec 11;121:108838. doi: 
+      10.1016/j.compbiolchem.2025.108838.
+
+PMID- 41426430
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251222
+LR  - 20251224
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 6
+DP  - 2025
+TI  - The role of disease-associated short tandem repeats in amyotrophic lateral 
+      sclerosis.
+PG  - fcaf482
+LID - 10.1093/braincomms/fcaf482 [doi]
+LID - fcaf482
+AB  - Short tandem repeats (STRs) are recognized contributors to various 
+      neurodegenerative disorders, with evidence supporting genetic pleiotropy among 
+      these STRs. Multiple STRs have been associated with amyotrophic lateral sclerosis 
+      (ALS), although the strength of evidence supporting each association varies. To 
+      establish the role of disease-associated repeat expansions as pleiotropic risk 
+      factors in ALS susceptibility and progression, we genotyped a panel of 39 STRs, 
+      known to cause neurological diseases, within Project MinE in 6519 patients and 
+      2412 controls, utilizing 100 and 150 bp short-read sequencing technology. 
+      Pathogenic allele frequencies were compared to those in a control cohort 
+      comprising 4930 Genome Aggregation Database (gnomAD) genomes. Repeat sizes and 
+      motif changes were detected using ExpansionHunter and ExpansionHunter Denovo. We 
+      developed a model to predict genotyping failures in STRs and established a 
+      best-practice protocol for assessing the accuracy of STR genotyping in short-read 
+      sequencing data. Following our genotyping assessment, 11 out of the 39 STRs 
+      exhibited insufficient genotyping accuracy, warranting caution in studying these 
+      STRs using these tools in combination with short-read sequencing. Furthermore, 
+      the observed differences in STR genotyping accuracy across studies applying 
+      different sequencing technologies and genotyping tools in control cohorts 
+      highlight the importance of a carefully designed experimental setup when 
+      interpreting potential disease-associated STR findings. Pathogenic C9orf72 and 
+      premutated ATXN2 expansions were confirmed to be significantly associated with 
+      ALS susceptibility. Additionally, pathogenic C9orf72 expansions were 
+      significantly associated with reduced mean ALS survival by 11.5 months and an 
+      earlier mean age at onset by 2.4 years. Premutation expansions in ATXN1 showed a 
+      nominally significant association with ALS susceptibility, while pathogenic 
+      expansions in NIPA1 displayed a nominally significant association with ALS 
+      survival. Previously reported ALS-associated pleiotropy in HTT and STMN2 could 
+      not be confirmed. Motif changes were identified in BEAN1, RFC1, ATXN8, C9orf72, 
+      DAB1, FXN and SAMD12; however, none of the motif changes were linked to ALS. 
+      Re-evaluation of clinical data from patients with ALS and a repeat expansion 
+      typically associated with another disease revealed that 7% of these patients' 
+      diagnoses had to be reclassified to the disease associated with the repeat 
+      expansion (e.g. Kennedy's disease or spinocerebellar ataxia). This underscores 
+      the value of broad STR screening in neurodegenerative cases. Pathogenic and 
+      premutation STRs were also found in controls in unexpected high frequencies, 
+      suggesting reduced penetrance or underdiagnosis, and highlighting the need for 
+      caution when interpreting genetic associations with disease without a proper 
+      control cohort.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - van Vugt, Joke J F A
+AU  - van Vugt JJFA
+AUID- ORCID: 0000-0002-4161-4004
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Zwamborn, Ramona A J
+AU  - Zwamborn RAJ
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Dolzhenko, Egor
+AU  - Dolzhenko E
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Eberle, Michael A
+AU  - Eberle MA
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Weisburd, Ben
+AU  - Weisburd B
+AD  - Program in Medical and Population Genetics, Broad Center for Mendelian Genomics, 
+      Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA.
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical 
+      School, Boston, MA 02114, USA.
+FAU - Bekema, Erwin
+AU  - Bekema E
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Kooyman, Maarten
+AU  - Kooyman M
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Wang, Bi-Nan
+AU  - Wang BN
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+CN  - Project MinE ALS Sequencing Consortium
+FAU - Kamsteeg, Erik-Jan
+AU  - Kamsteeg EJ
+AUID- ORCID: 0000-0001-6480-1892
+AD  - Department of Human Genetics, Radboud University Medical Center, Nijmegen 6525 
+      GA, The Netherlands.
+FAU - Losekoot, Monique
+AU  - Losekoot M
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Baas, Frank
+AU  - Baas F
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Novy, Camilla
+AU  - Novy C
+AUID- ORCID: 0009-0008-0089-3669
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - Hoyer, Helle
+AU  - Hoyer H
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - van Eijk, Ruben P A
+AU  - van Eijk RPA
+AUID- ORCID: 0000-0002-7132-5967
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Es, Michael A
+AU  - van Es MA
+AUID- ORCID: 0000-0002-7709-5883
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Rheenen, Wouter
+AU  - van Rheenen W
+AUID- ORCID: 0000-0002-5860-1533
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Al-Chalabi, Ammar
+AU  - Al-Chalabi A
+AUID- ORCID: 0000-0002-4924-7712
+AD  - Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience 
+      Institute, King's College London, London SE5 9RX, UK.
+FAU - van den Berg, Leonard H
+AU  - van den Berg LH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Veldink, Jan H
+AU  - Veldink JH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+LA  - eng
+PT  - Journal Article
+DEP - 20251209
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12715773
+OTO - NOTNLM
+OT  - disease-related repeats
+OT  - microsatellite genotyping
+OT  - motor neurodegenerative disease
+OT  - short tandem repeat genotyping
+OT  - tandem repeat genotyping accuracy
+COIS- JHV reports to have sponsored research agreements with Biogen, Eli Lilly, Trace 
+      and AstraZeneca.
+FIR - van Damme, Philip
+IR  - van Damme P
+FIR - Corcia, Philippe
+IR  - Corcia P
+FIR - Couratier, Philippe
+IR  - Couratier P
+FIR - Vourc'h, Patrick
+IR  - Vourc'h P
+FIR - Hardiman, Orla
+IR  - Hardiman O
+FIR - McLaughin, Russell
+IR  - McLaughin R
+FIR - Gotkine, Marc
+IR  - Gotkine M
+FIR - Lerner, Yossef
+IR  - Lerner Y
+FIR - Drory, Vivian
+IR  - Drory V
+FIR - Ticozzi, Nicola
+IR  - Ticozzi N
+FIR - Silani, Vincenzo
+IR  - Silani V
+FIR - Veldink, Jan H
+IR  - Veldink JH
+FIR - van den Berg, Leonard H
+IR  - van den Berg LH
+FIR - de Carvalho, Mamede
+IR  - de Carvalho M
+FIR - Salas, Teresa
+IR  - Salas T
+FIR - Pardina, Jesus S Mora
+IR  - Pardina JSM
+FIR - Povedano, Monica
+IR  - Povedano M
+FIR - Andersen, Peter
+IR  - Andersen P
+FIR - Weber, Markus
+IR  - Weber M
+FIR - Basak, Nazli A
+IR  - Basak NA
+FIR - Al-Chalabi, Ammar
+IR  - Al-Chalabi A
+FIR - Shaw, Chris
+IR  - Shaw C
+FIR - Shaw, Pamela J
+IR  - Shaw PJ
+FIR - Morrison, Karen E
+IR  - Morrison KE
+FIR - Landers, John E
+IR  - Landers JE
+FIR - Glass, Jonathan D
+IR  - Glass JD
+FIR - Dalgard, Clifton L
+IR  - Dalgard CL
+EDAT- 2025/12/22 12:55
+MHDA- 2025/12/22 12:56
+PMCR- 2025/12/09
+CRDT- 2025/12/22 06:54
+PHST- 2025/05/01 00:00 [received]
+PHST- 2025/11/10 00:00 [revised]
+PHST- 2025/12/08 00:00 [accepted]
+PHST- 2025/12/22 12:56 [medline]
+PHST- 2025/12/22 12:55 [pubmed]
+PHST- 2025/12/22 06:54 [entrez]
+PHST- 2025/12/09 00:00 [pmc-release]
+AID - fcaf482 [pii]
+AID - 10.1093/braincomms/fcaf482 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482. 
+      eCollection 2025.
+
+PMID- 41373690
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20251211
+LR  - 20251214
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 26
+IP  - 23
+DP  - 2025 Nov 28
+TI  - PolyQ Expansion Controls Biomolecular Condensation and Aggregation of the 
+      N-Terminal Fragments of Ataxin-2.
+LID - 10.3390/ijms262311538 [doi]
+LID - 11538
+AB  - Ataxin-2 (Atx2) is a general RNA-binding protein involved in processes such as 
+      RNA processing and metabolism in cells. Atx2 is also a polyglutamine (polyQ) 
+      tract-containing protein; its abnormal expansion can lead to protein aggregation 
+      associated with neurodegenerative diseases. Previous studies have shown that the 
+      C-terminal intrinsically disordered regions (c-IDRs) of Atx2 participate in its 
+      condensation and aggregation processes. To elucidate the role of polyQ expansion 
+      in biomolecular condensation and aggregation, we studied the N-terminal fragments 
+      of Atx2 (namely, Atx2-N317 and Atx2-N81) that preserve a polyQ tract and compared 
+      their molecular behaviors in cells to those of the full-length Atx2. We found 
+      that the molecular mobility of the N-terminal fragments decreases with the 
+      increasing length of polyQ, indicating that polyQ expansion promotes a gradual 
+      phase transition to an irreversible and insoluble state. Moreover, the molecular 
+      state and mobility of Atx2-N317 are not distinct from those of Atx2-N81, 
+      regardless of the presence of other domains, demonstrating that the polyQ tract 
+      is a direct and sufficient element for protein condensation and aggregation, 
+      while the Like Sm (LSm) and LSm-associated (LSmAD) domains and their interactions 
+      with RNA are not necessary for these processes. This result is also validated 
+      through the in vitro investigation of Atx2-N81 with different polyQ expansions. 
+      This study reveals that polyQ expansion controls the biomolecular condensation 
+      and aggregation of the N-terminal fragments of Atx2 and is thus thought to 
+      modulate the dynamic behaviors of the full-length protein as well, which is 
+      implicated in the pathological accumulation of Atx2 in cells.
+FAU - Liu, Yin-Hu
+AU  - Liu YH
+AD  - Key Laboratory of RNA Innovation, Science and Engineering, Center for Excellence 
+      in Molecular Cell Science, Shanghai Institute of Biochemistry and Cell Biology, 
+      Chinese Academy of Sciences, Shanghai 200031, China.
+AD  - University of Chinese Academy of Sciences, Beijing 100049, China.
+FAU - Duan, Heng-Tong
+AU  - Duan HT
+AD  - Key Laboratory of RNA Innovation, Science and Engineering, Center for Excellence 
+      in Molecular Cell Science, Shanghai Institute of Biochemistry and Cell Biology, 
+      Chinese Academy of Sciences, Shanghai 200031, China.
+AD  - University of Chinese Academy of Sciences, Beijing 100049, China.
+FAU - Jiang, Lei-Lei
+AU  - Jiang LL
+AD  - Key Laboratory of RNA Innovation, Science and Engineering, Center for Excellence 
+      in Molecular Cell Science, Shanghai Institute of Biochemistry and Cell Biology, 
+      Chinese Academy of Sciences, Shanghai 200031, China.
+FAU - Hu, Hong-Yu
+AU  - Hu HY
+AD  - Key Laboratory of RNA Innovation, Science and Engineering, Center for Excellence 
+      in Molecular Cell Science, Shanghai Institute of Biochemistry and Cell Biology, 
+      Chinese Academy of Sciences, Shanghai 200031, China.
+LA  - eng
+PT  - Journal Article
+DEP - 20251128
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+RN  - 0 (Peptides)
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Ataxin-2)
+RN  - 0 (Protein Aggregates)
+RN  - 0 (ATXN2 protein, human)
+SB  - IM
+MH  - *Peptides/metabolism/chemistry/genetics
+MH  - Humans
+MH  - *Ataxin-2/chemistry/metabolism/genetics
+MH  - *Protein Aggregates
+MH  - Protein Domains
+PMC - PMC12691732
+OTO - NOTNLM
+OT  - aggregation
+OT  - ataxin-2
+OT  - biomolecular condensation
+OT  - molecular dynamics
+OT  - polyQ expansion
+COIS- The authors declare no conflicts of interest.
+EDAT- 2025/12/11 07:42
+MHDA- 2025/12/11 07:43
+PMCR- 2025/11/28
+CRDT- 2025/12/11 01:03
+PHST- 2025/10/03 00:00 [received]
+PHST- 2025/11/13 00:00 [revised]
+PHST- 2025/11/23 00:00 [accepted]
+PHST- 2025/12/11 07:43 [medline]
+PHST- 2025/12/11 07:42 [pubmed]
+PHST- 2025/12/11 01:03 [entrez]
+PHST- 2025/11/28 00:00 [pmc-release]
+AID - ijms262311538 [pii]
+AID - ijms-26-11538 [pii]
+AID - 10.3390/ijms262311538 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2025 Nov 28;26(23):11538. doi: 10.3390/ijms262311538.
+
+PMID- 41359433
+OWN - NLM
+STAT- Publisher
+LR  - 20251208
+IS  - 2167-9223 (Electronic)
+IS  - 2167-8421 (Linking)
+DP  - 2025 Dec 8
+TI  - Novel and rare variants in amyotrophic lateral sclerosis genes identified in 
+      Malaysian patients.
+PG  - 1-10
+LID - 10.1080/21678421.2025.2582832 [doi]
+AB  - There is limited information on the genetic architecture of amyotrophic lateral 
+      sclerosis (ALS) in Southeast Asian populations. To address this knowledge gap, we 
+      performed 1) SOD1 (exon 1-4), FUS (exon 13-15), TARDBP (exon 6) and ATXN2 repeat 
+      expansion screening in 201 multi-ethnic Malaysian (Malay, Chinese, Indian and 
+      others) ALS patients, 2) C9orf72 repeat expansion testing in 179 subset patients, 
+      and 3) a panel of 61 ALS-associated genes screening in 112 subset cases using 
+      either whole genome (n = 21) or exome (n = 91) sequencing datasets. Among the 
+      patients, the observed mutational frequencies in key ALS genes were: SOD1 3.0% 
+      (6/201), C9orf72 2.2% (4/179), ATXN2 2.0% (4/201), FUS 1.5% (3/201), and TARDBP 
+      1.5% (3/201). Of the 112 cases that underwent WGS/WES, 6.3% (7/112) comprised of 
+      pathogenic and likely pathogenic variants in FIG4 (p.Lys657Serfs*2), FUS 
+      (p.Arg485Profs*32), TARDBP (p.Ile383del), NEK1 (p.Ile633Asnfs*28), GRN 
+      (c.599-1G > C), CYP27A1 (p.Met1Thr) and SPAST (p.Glu449Gly). Additionally, 42.9% 
+      (48/112) had at least one variant of uncertain significance (VUS) in 34 genes. 
+      Notably, in the 24 genes classified as 'definitive' by the ClinGen ALS Spectrum 
+      Disorders Gene Curation Expert Panel, five patients (4.5%, 5/112) harbored more 
+      than one likely pathogenic variant and/or VUS. However, burden analysis revealed 
+      no significant differences in clinical characteristics between patients with 
+      varying numbers of variants. Our findings highlight the utility of 
+      next-generation sequencing in elucidating the genetic basis of ALS in Malaysian 
+      and Southeast Asian ethnic groups, including the identification of several novel 
+      variants of clinical interest as well as increasing diagnostic yield up to 47.7%.
+FAU - Zulhairy-Liong, Nurul Angelyn
+AU  - Zulhairy-Liong NA
+AUID- ORCID: 0009-0009-5274-0186
+AD  - Department of Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 
+      Malaysia.
+FAU - Edgar, Suzanna
+AU  - Edgar S
+AUID- ORCID: 0000-0003-4275-2297
+AD  - Department of Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 
+      Malaysia.
+AD  - Department of Biomedical Science, Faculty of Medicine, Universiti Malaya, Kuala 
+      Lumpur, Malaysia.
+FAU - Ellis, Melina
+AU  - Ellis M
+AUID- ORCID: 0000-0002-8542-048X
+AD  - Northcott Neuroscience Laboratory, ANZAC Research Institute, Sydney Local Health 
+      District, Concord, NSW, Australia.
+AD  - Faculty of Medicine and Health, University of Sydney, Sydney, NSW, Australia.
+FAU - Zhu, Danqing
+AU  - Zhu D
+AD  - Molecular Medicine Laboratory, NSW Health Pathology, Faculty of Medicine and 
+      Health, University of Sydney, Sydney, NSW, Australia.
+FAU - Lai, Kaitao
+AU  - Lai K
+AUID- ORCID: 0000-0002-9420-9352
+AD  - Northcott Neuroscience Laboratory, ANZAC Research Institute, Sydney Local Health 
+      District, Concord, NSW, Australia.
+FAU - Capelle, David Paul
+AU  - Capelle DP
+AUID- ORCID: 0000-0001-7322-3342
+AD  - Department of Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 
+      Malaysia.
+FAU - Sabirin, Sakinah
+AU  - Sabirin S
+AUID- ORCID: 0000-0002-3000-1691
+AD  - Department of Rehabilitation Medicine, University Malaya Medical Centre, Kuala 
+      Lumpur, Malaysia.
+FAU - Pek, Eu Way
+AU  - Pek EW
+AUID- ORCID: 0009-0003-4465-9405
+AD  - Department of Rehabilitation Medicine, University Malaya Medical Centre, Kuala 
+      Lumpur, Malaysia.
+FAU - Nair, Prasana
+AU  - Nair P
+AUID- ORCID: 0009-0007-8090-0621
+AD  - Department of Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 
+      Malaysia.
+FAU - Ang, Chui Munn
+AU  - Ang CM
+AUID- ORCID: 0009-0006-1249-9250
+AD  - Department of Internal Medicine, University Malaya Medical Centre, Kuala Lumpur, 
+      Malaysia and.
+FAU - Kennerson, Marina L
+AU  - Kennerson ML
+AUID- ORCID: 0000-0003-3332-5074
+AD  - Northcott Neuroscience Laboratory, ANZAC Research Institute, Sydney Local Health 
+      District, Concord, NSW, Australia.
+AD  - Faculty of Medicine and Health, University of Sydney, Sydney, NSW, Australia.
+AD  - Molecular Medicine Laboratory, Concord Hospital, Concord, NSW, Australia.
+FAU - Shahrizaila, Nortina
+AU  - Shahrizaila N
+AUID- ORCID: 0000-0003-0031-7692
+AD  - Department of Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 
+      Malaysia.
+FAU - Ahmad-Annuar, Azlina
+AU  - Ahmad-Annuar A
+AUID- ORCID: 0000-0001-6329-4366
+AD  - Department of Biomedical Science, Faculty of Medicine, Universiti Malaya, Kuala 
+      Lumpur, Malaysia.
+LA  - eng
+PT  - Journal Article
+DEP - 20251208
+PL  - England
+TA  - Amyotroph Lateral Scler Frontotemporal Degener
+JT  - Amyotrophic lateral sclerosis & frontotemporal degeneration
+JID - 101587185
+SB  - IM
+OTO - NOTNLM
+OT  - Amyotrophic lateral sclerosis
+OT  - Malaysia
+OT  - genetic screening
+OT  - whole exome sequencing
+OT  - whole genome sequencing
+EDAT- 2025/12/08 19:24
+MHDA- 2025/12/08 19:24
+CRDT- 2025/12/08 12:43
+PHST- 2025/12/08 19:24 [medline]
+PHST- 2025/12/08 19:24 [pubmed]
+PHST- 2025/12/08 12:43 [entrez]
+AID - 10.1080/21678421.2025.2582832 [doi]
+PST - aheadofprint
+SO  - Amyotroph Lateral Scler Frontotemporal Degener. 2025 Dec 8:1-10. doi: 
+      10.1080/21678421.2025.2582832.
+
+PMID- 41310328
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251128
+LR  - 20251201
+IS  - 2373-8057 (Print)
+IS  - 2373-8057 (Electronic)
+IS  - 2373-8057 (Linking)
+VI  - 11
+IP  - 1
+DP  - 2025 Nov 27
+TI  - Identification of expanded and interrupted ATXN2 repeat expansions in Parkinson's 
+      disease and Lewy Body Dementia cohorts.
+PG  - 341
+LID - 10.1038/s41531-025-01188-5 [doi]
+LID - 341
+AB  - Repeat expansions (REs) may be Parkinson's disease (PD) risk factors. We screened 
+      whole genome sequencing data from the AMP PD Lewy Body Dementia (LBD) and PD 
+      cohorts for 37 REs associated with neurological disorders, and identified both 
+      interrupted and uninterrupted REs in ATXN2 in 4/2431 PD and 2/2468 LBD cases, but 
+      none in controls. These findings support pleiotropy for certain REs in PD.
+CI  - (c) 2025. The Author(s).
+FAU - Wang, Longfei
+AU  - Wang L
+AD  - Genetics and Gene Regulation Division, The Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, VIC, Australia.
+AD  - Department of Medical Biology, The University of Melbourne, Parkville, VIC, 
+      Australia.
+FAU - Milton, Michael
+AU  - Milton M
+AD  - Department of Medical Biology, The University of Melbourne, Parkville, VIC, 
+      Australia.
+AD  - Bioinformatics Division, The Walter and Eliza Hall Institute of Medical Research, 
+      Parkville, VIC, Australia.
+FAU - Fearnley, Liam G
+AU  - Fearnley LG
+AD  - Genetics and Gene Regulation Division, The Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, VIC, Australia.
+AD  - Department of Medical Biology, The University of Melbourne, Parkville, VIC, 
+      Australia.
+FAU - Bhalala, Oneil G
+AU  - Bhalala OG
+AD  - Genetics and Gene Regulation Division, The Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, VIC, Australia.
+AD  - Department of Medical Biology, The University of Melbourne, Parkville, VIC, 
+      Australia.
+AD  - Department of Neurology, Melbourne Brain Centre at The Royal Melbourne Hospital, 
+      University of Melbourne, Parkville, VIC, Australia.
+FAU - Bahlo, Melanie
+AU  - Bahlo M
+AD  - Genetics and Gene Regulation Division, The Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, VIC, Australia. bahlo@wehi.edu.au.
+AD  - Department of Medical Biology, The University of Melbourne, Parkville, VIC, 
+      Australia. bahlo@wehi.edu.au.
+FAU - Rafehi, Haloom
+AU  - Rafehi H
+AD  - Genetics and Gene Regulation Division, The Walter and Eliza Hall Institute of 
+      Medical Research, Parkville, VIC, Australia. rafehi.h@wehi.edu.au.
+AD  - Department of Medical Biology, The University of Melbourne, Parkville, VIC, 
+      Australia. rafehi.h@wehi.edu.au.
+LA  - eng
+GR  - ZIA AG000935/ImNIH/Intramural NIH HHS/United States
+GR  - 1194364/National Health and Medical Research Council/
+GR  - 1195236/National Health and Medical Research Council/
+GR  - ZIA NS003154/ImNIH/Intramural NIH HHS/United States
+GR  - MJFF-021399/Michael J. Fox Foundation for Parkinson's Research/
+PT  - Journal Article
+DEP - 20251127
+PL  - United States
+TA  - NPJ Parkinsons Dis
+JT  - NPJ Parkinson's disease
+JID - 101675390
+PMC - PMC12661016
+COIS- Competing interests: The authors declare no competing interests.
+EDAT- 2025/11/28 00:26
+MHDA- 2025/11/28 00:27
+PMCR- 2025/11/27
+CRDT- 2025/11/27 23:56
+PHST- 2025/04/09 00:00 [received]
+PHST- 2025/10/21 00:00 [accepted]
+PHST- 2025/11/28 00:27 [medline]
+PHST- 2025/11/28 00:26 [pubmed]
+PHST- 2025/11/27 23:56 [entrez]
+PHST- 2025/11/27 00:00 [pmc-release]
+AID - 10.1038/s41531-025-01188-5 [pii]
+AID - 1188 [pii]
+AID - 10.1038/s41531-025-01188-5 [doi]
+PST - epublish
+SO  - NPJ Parkinsons Dis. 2025 Nov 27;11(1):341. doi: 10.1038/s41531-025-01188-5.
+
+PMID- 41298695
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20251129
+LR  - 20251201
+IS  - 2045-2322 (Electronic)
+IS  - 2045-2322 (Linking)
+VI  - 15
+IP  - 1
+DP  - 2025 Nov 26
+TI  - Multiomics approach identifies SERPINB1 as candidate biomarker for 
+      spinocerebellar ataxia type 2.
+PG  - 42559
+LID - 10.1038/s41598-025-29070-7 [doi]
+LID - 42559
+AB  - Spinocerebellar ataxia type 2 (SCA2) is a polyglutamine disorder, and variants in 
+      its disease protein Ataxin-2 act as modifiers in the progression of Amyotrophic 
+      Lateral Sclerosis. There are no reliable molecular biomarkers for SCA2. The aim 
+      of this study was to define novel molecular biomarker candidates for SCA2. Using 
+      cerebellar and cervicothoracic spinal cord RNA/protein from Atxn2-CAG100-KnockIn 
+      (KIN) and wildtype mice, a multi-omics study was conducted based on the 
+      integration of global transcriptomic, proteomic, and phosphoproteomic data, 
+      followed by validation in mice and humans. Venn diagram comparisons across all 
+      OMICS datasets indicated that only Serpinb1a-transcript, SERPINB1A-protein and 
+      -phosphopeptides were consistently downregulated at terminal stage in 
+      14-month-old KIN mice. Expression studies in cerebellum and spinal cord from 10 
+      weeks (pre-manifest), 6-month-old (early ataxic), and 14-month-old (late ataxic 
+      stage) mice confirmed this progressive decrease at mRNA and protein level. 
+      SERPINB1 plasma levels were significantly lower in early-stage SCA2 patients, and 
+      displayed a significant association with the CAG repeat length at expanded ATXN2 
+      alleles, the age at onset and INAS count. However, these human data from this 
+      SCA2 founder population were not robust, so reappraisal in large international 
+      studies and at later disease stages of SCA2 is needed. SERPINB1 was identified as 
+      novel candidate progression biomarker for SCA2 pathomechanisms.
+CI  - (c) 2025. The Author(s).
+FAU - Almaguer-Mederos, Luis E
+AU  - Almaguer-Mederos LE
+AD  - University Hospital, Clinic of Neurology, Exp. Neurology, Goethe University, 
+      Frankfurt am Main, Germany.
+FAU - Key, Jana
+AU  - Key J
+AD  - University Hospital, Clinic of Neurology, Exp. Neurology, Goethe University, 
+      Frankfurt am Main, Germany.
+FAU - Sen, Nesli-Ece
+AU  - Sen NE
+AD  - University Hospital, Clinic of Neurology, Exp. Neurology, Goethe University, 
+      Frankfurt am Main, Germany.
+FAU - Canet-Pons, Julia
+AU  - Canet-Pons J
+AD  - University Hospital, Clinic of Neurology, Exp. Neurology, Goethe University, 
+      Frankfurt am Main, Germany.
+FAU - Doring, Claudia
+AU  - Doring C
+AD  - Medical Faculty, Dr. Senckenberg Institute of Pathology, Goethe University, 
+      Frankfurt am Main, Germany.
+FAU - Meierhofer, David
+AU  - Meierhofer D
+AD  - Max Planck Institute for Molecular Genetics, Berlin, Germany.
+FAU - Gispert-Sanchez, Suzana
+AU  - Gispert-Sanchez S
+AD  - University Hospital, Clinic of Neurology, Exp. Neurology, Goethe University, 
+      Frankfurt am Main, Germany.
+FAU - Cuello-Almarales, Dany
+AU  - Cuello-Almarales D
+AD  - Center for the Investigation and Rehabilitation of Hereditary Ataxias, Holguin, 
+      Cuba.
+FAU - Almaguer-Gotay, Dennis
+AU  - Almaguer-Gotay D
+AD  - Center for the Investigation and Rehabilitation of Hereditary Ataxias, Holguin, 
+      Cuba.
+FAU - Osorio-Gonzalez, Lidia M
+AU  - Osorio-Gonzalez LM
+AD  - Center for the Investigation and Rehabilitation of Hereditary Ataxias, Holguin, 
+      Cuba.
+FAU - Aguilera-Rodriguez, Raul
+AU  - Aguilera-Rodriguez R
+AD  - Center for the Investigation and Rehabilitation of Hereditary Ataxias, Holguin, 
+      Cuba.
+FAU - Medrano-Montero, Jacqueline
+AU  - Medrano-Montero J
+AD  - Center for the Investigation and Rehabilitation of Hereditary Ataxias, Holguin, 
+      Cuba.
+FAU - Auburger, Georg
+AU  - Auburger G
+AD  - University Hospital, Clinic of Neurology, Exp. Neurology, Goethe University, 
+      Frankfurt am Main, Germany. auburger@em.uni-frankfurt.de.
+LA  - eng
+PT  - Journal Article
+DEP - 20251126
+PL  - England
+TA  - Sci Rep
+JT  - Scientific reports
+JID - 101563288
+RN  - 0 (Biomarkers)
+RN  - 0 (Ataxin-2)
+RN  - 0 (Serpins)
+SB  - IM
+MH  - Animals
+MH  - Humans
+MH  - Biomarkers/blood/metabolism
+MH  - Mice
+MH  - *Spinocerebellar Ataxias/metabolism/genetics/blood
+MH  - Proteomics/methods
+MH  - Male
+MH  - Ataxin-2/genetics/metabolism
+MH  - Female
+MH  - *Serpins/blood/genetics/metabolism
+MH  - Cerebellum/metabolism
+MH  - Spinal Cord/metabolism
+MH  - Disease Models, Animal
+MH  - Middle Aged
+MH  - Multiomics
+PMC - PMC12663351
+OTO - NOTNLM
+OT  - Biomarkers
+OT  - Polyglutamine
+OT  - Proteostasis
+OT  - SERPINB1
+OT  - Spinocerebellar ataxias
+COIS- Declarations. Competing interests: The authors declare no competing interests.
+EDAT- 2025/11/27 00:27
+MHDA- 2025/11/29 06:29
+PMCR- 2025/11/26
+CRDT- 2025/11/26 23:38
+PHST- 2025/05/27 00:00 [received]
+PHST- 2025/11/13 00:00 [accepted]
+PHST- 2025/11/29 06:29 [medline]
+PHST- 2025/11/27 00:27 [pubmed]
+PHST- 2025/11/26 23:38 [entrez]
+PHST- 2025/11/26 00:00 [pmc-release]
+AID - 10.1038/s41598-025-29070-7 [pii]
+AID - 29070 [pii]
+AID - 10.1038/s41598-025-29070-7 [doi]
+PST - epublish
+SO  - Sci Rep. 2025 Nov 26;15(1):42559. doi: 10.1038/s41598-025-29070-7.
+
+PMID- 41196070
+OWN - NLM
+STAT- Publisher
+LR  - 20251106
+IS  - 2167-9223 (Electronic)
+IS  - 2167-8421 (Linking)
+DP  - 2025 Nov 6
+TI  - Unraveling the genetic landscape of ALS in Greece: identification of known and 
+      novel causative variants in a 353-patient cohort.
+PG  - 1-10
+LID - 10.1080/21678421.2025.2582828 [doi]
+AB  - BACKGROUND: Amyotrophic lateral sclerosis (ALS) is an adult-onset, progressive, 
+      fatal neurodegenerative disorder characterized by progressive loss of motor 
+      neurons. Approximately 15% of individuals diagnosed with ALS have a known genetic 
+      variant that contributes to disease. Herein, we present clinical and genetic data 
+      of a large Greek ALS cohort. PATIENTS AND METHODS: The cohort consisted of 353 
+      Greek consecutive index patients with ALS, including 16 patients with related 
+      motor neuron disease (MND) subtypes (nine with PLS, four with PBP, and three with 
+      PMA). Next generation sequencing raw data (obtained from the NYGC ALS Consortium) 
+      were further analyzed and used to screen for causative variants in known 
+      implicated genes. Repeat expansions in C9ORF72 and ATXN2 were investigated using 
+      ExpansionHunter software, repeat-primed PCR and fragment analysis. RESULTS: 
+      Pathogenic repeat expansions in C9ORF72 were detected in 41 patients (11.6%). In 
+      addition, 30 patients (8.5%) carried a causative variant in one of the genes 
+      studied. Known causative variants were identified in 27 cases (nine in SQSTM1, 
+      seven in TARDBP, five in SOD1, three in NEK1 and one each in SETX, VCP, FUS), 
+      whereas novel causative variants were identified in three cases (SOD1, FIG4, 
+      TBK1). In total, 71 cases received a molecular genetic diagnosis (20.1%). 
+      Additionally, seven cases (2.0%) carried an intermediate repeat expansion (30-33 
+      CAG) in ATXN2. CONCLUSION: Our results reveal the distinct genetic profile of 
+      Greek ALS patients. These findings will have an impact on genetic counseling, the 
+      design of diagnostic gene panels for the Greek population and on 
+      genotype-specific therapeutic interventions. Understanding the genetic causes of 
+      ALS in different populations is becoming increasingly important, especially with 
+      the advent of personalized medicine.
+FAU - Kartanou, Chrisoula
+AU  - Kartanou C
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Kontogeorgiou, Zoi
+AU  - Kontogeorgiou Z
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Loupis, Theodoros
+AU  - Loupis T
+AD  - Hematology Research Lab, Clinical, Experimental and Translational Research 
+      Center, Biomedical Research Foundation, Academy of Athens, Athens, Greece.
+FAU - Vrachnos, Dimitrios M
+AU  - Vrachnos DM
+AD  - Hematology Research Lab, Clinical, Experimental and Translational Research 
+      Center, Biomedical Research Foundation, Academy of Athens, Athens, Greece.
+FAU - Ragazos, Nikolaos
+AU  - Ragazos N
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Spyropoulou, Ifigenia
+AU  - Spyropoulou I
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Petraki, Maria
+AU  - Petraki M
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Koniari, Chrysoula
+AU  - Koniari C
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Aristeidou, Stavroula
+AU  - Aristeidou S
+AD  - 1st Department of Neurology, National and Kapodistrian University of Athens, 
+      Eginitio Hospital, Athens, Greece.
+FAU - Koropouli, Eleftheria
+AU  - Koropouli E
+AD  - 1st Department of Neurology, National and Kapodistrian University of Athens, 
+      Eginitio Hospital, Athens, Greece.
+FAU - Daponte, Ariadne
+AU  - Daponte A
+AD  - 1st Department of Neurology, National and Kapodistrian University of Athens, 
+      Eginitio Hospital, Athens, Greece.
+FAU - Rentzos, Michail
+AU  - Rentzos M
+AD  - 1st Department of Neurology, National and Kapodistrian University of Athens, 
+      Eginitio Hospital, Athens, Greece.
+FAU - Kapaki, Elisabeth
+AU  - Kapaki E
+AD  - 1st Department of Neurology, National and Kapodistrian University of Athens, 
+      Eginitio Hospital, Athens, Greece.
+FAU - Panas, Marios
+AU  - Panas M
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Makrythanasis, Periklis
+AU  - Makrythanasis P
+AD  - Biomedical Research Foundation of the Academy of Athens, Athens, Greece.
+AD  - Laboratory of Medical Genetics, Medical School, National and Kapodistrian 
+      University of Athens, St. Sophia's Children's Hospital, Athens, Greece, and.
+AD  - Department of Genetic Medicine and Development, Medical School, University of 
+      Geneva, Geneva, Switzerland.
+FAU - Stefanis, Leonidas
+AU  - Stefanis L
+AD  - 1st Department of Neurology, National and Kapodistrian University of Athens, 
+      Eginitio Hospital, Athens, Greece.
+FAU - Koutsis, Georgios
+AU  - Koutsis G
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+FAU - Karadima, Georgia
+AU  - Karadima G
+AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian 
+      University of Athens, Eginitio Hospital, Athens, Greece.
+LA  - eng
+PT  - Journal Article
+DEP - 20251106
+PL  - England
+TA  - Amyotroph Lateral Scler Frontotemporal Degener
+JT  - Amyotrophic lateral sclerosis & frontotemporal degeneration
+JID - 101587185
+SB  - IM
+OTO - NOTNLM
+OT  - Amyotrophic lateral sclerosis (ALS)
+OT  - C9ORF72 repeat expansions
+OT  - Greek population
+OT  - causative variants
+OT  - next generation sequencing (NGS)
+EDAT- 2025/11/06 12:33
+MHDA- 2025/11/06 12:33
+CRDT- 2025/11/06 09:12
+PHST- 2025/11/06 12:33 [medline]
+PHST- 2025/11/06 12:33 [pubmed]
+PHST- 2025/11/06 09:12 [entrez]
+AID - 10.1080/21678421.2025.2582828 [doi]
+PST - aheadofprint
+SO  - Amyotroph Lateral Scler Frontotemporal Degener. 2025 Nov 6:1-10. doi: 
+      10.1080/21678421.2025.2582828.
+
 PMID- 41149812
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -113,12 +1037,13 @@ SO  - J Pers Med. 2025 Sep 28;15(10):451. doi: 10.3390/jpm15100451.
 
 PMID- 41082794
 OWN - NLM
-STAT- Publisher
-LR  - 20251013
+STAT- MEDLINE
+DCOM- 20251123
+LR  - 20251124
 IS  - 1873-5126 (Electronic)
 IS  - 1353-8020 (Linking)
 VI  - 141
-DP  - 2025 Oct 12
+DP  - 2025 Dec
 TI  - The genetic landscape of spinocerebellar ataxias in Taiwan: Insights from 876 
       genetically confirmed cases.
 PG  - 108075
@@ -186,6 +1111,20 @@ TA  - Parkinsonism Relat Disord
 JT  - Parkinsonism & related disorders
 JID - 9513583
 SB  - IM
+MH  - Humans
+MH  - Taiwan/epidemiology
+MH  - Male
+MH  - Female
+MH  - *Spinocerebellar Ataxias/genetics/epidemiology
+MH  - Middle Aged
+MH  - Adult
+MH  - Retrospective Studies
+MH  - Aged
+MH  - Young Adult
+MH  - Age of Onset
+MH  - Adolescent
+MH  - Genetic Association Studies
+MH  - Trinucleotide Repeat Expansion
 OTO - NOTNLM
 OT  - DRPLA
 OT  - SCA1
@@ -199,19 +1138,19 @@ COIS- Declaration of competing interest The authors declare that they have no kn
       competing financial interests or personal relationships that could have appeared 
       to influence the work reported in this paper.
 EDAT- 2025/10/13 18:29
-MHDA- 2025/10/13 18:29
+MHDA- 2025/11/24 00:49
 CRDT- 2025/10/13 17:59
 PHST- 2025/06/25 00:00 [received]
 PHST- 2025/10/01 00:00 [revised]
 PHST- 2025/10/09 00:00 [accepted]
-PHST- 2025/10/13 18:29 [medline]
+PHST- 2025/11/24 00:49 [medline]
 PHST- 2025/10/13 18:29 [pubmed]
 PHST- 2025/10/13 17:59 [entrez]
 AID - S1353-8020(25)00816-8 [pii]
 AID - 10.1016/j.parkreldis.2025.108075 [doi]
-PST - aheadofprint
-SO  - Parkinsonism Relat Disord. 2025 Oct 12;141:108075. doi: 
-      10.1016/j.parkreldis.2025.108075.
+PST - ppublish
+SO  - Parkinsonism Relat Disord. 2025 Dec;141:108075. doi: 
+      10.1016/j.parkreldis.2025.108075. Epub 2025 Oct 12.
 
 PMID- 41077586
 OWN - NLM
@@ -655,14 +1594,14 @@ AB  - BACKGROUND: Spinocerebellar ataxias (SCAs) exhibit substantial clinical an
       (NGS) panel, negative cases received SCA repeat expansion testing. Genetically 
       confirmed SCA cases received comprehensive clinical-genetic characterization. 
       RESULTS: Four SCA cases were identified in the hypokinetic movement disorders 
-      group (n...=...28), accounting for 14.29% (4/28). Notably, an SCA8-associated 
+      group (n = 28), accounting for 14.29% (4/28). Notably, an SCA8-associated 
       familial parkinsonism pedigree manifested a novel clinical constellation: 
       Parkinson's disease -like phenotype with spastic paraplegia and levodopa 
       responsive parkinsonism with dystonia. Additionally, we observed: (i) An SCA2 
       pedigree demonstrating intrafamilial phenotypic heterogeneity; (ii) Two sporadic 
       early-onset parkinsonism cases harboring pathogenic expansions in SCA8 (CTA/CTG 
       55 repeats) and SCA3, respectively. Two SCA cases were detected in the 
-      hyperkinetic movement disorders group (n...=...7), representing 28.57% (2/7). We 
+      hyperkinetic movement disorders group (n = 7), representing 28.57% (2/7). We 
       observed: (i) an SCA3 preataxic carrier presenting with Tourette syndrome; (ii) 
       an SCA17 case (CAG/CAA 41 repeats) manifesting dystonia and spastic paraplegia. 
       CONCLUSION: We characterized a novel clinical constellation in an SCA8-associated 
@@ -3801,7 +4740,7 @@ LID - 10.1007/s12311-024-01745-3 [doi]
 AB  - Spinocerebellar ataxias (SCAs) are a diverse group of hereditary 
       neurodegenerative disorders characterized by progressive degeneration of the 
       cerebellum and other parts of the nervous system. In this study, we examined the 
-      genotype...phenotype correlations in SCAs within the Brazilian population by 
+      genotype‒phenotype correlations in SCAs within the Brazilian population by 
       leveraging a comprehensive dataset of 763 individuals from SARAH Network of 
       Rehabilitation Hospitals. Using a retrospective, cross-sectional, observational, 
       multicentric approach, we analysed medical records and conducted standardized 
@@ -3815,7 +4754,7 @@ AB  - Spinocerebellar ataxias (SCAs) are a diverse group of hereditary
       repeat expansions, which correlates larger expansions with earlier onset and 
       specific symptomatology. This extensive analysis underscores the critical 
       importance of genetic testing in the diagnosis and management of SCAs and 
-      enlightens the intricate genotype...phenotype interplay within a genetically 
+      enlightens the intricate genotype‒phenotype interplay within a genetically 
       diverse population. Despite certain limitations, such as potential selection bias 
       and the retrospective nature of the study, our research provides invaluable 
       insights into the prevalence, genetic underpinnings, and clinical variability of 
@@ -3869,7 +4808,7 @@ OTO - NOTNLM
 OT  - Brazil
 OT  - CAG repeat expansions
 OT  - Genetic testing
-OT  - Genotype...phenotype correlation
+OT  - Genotype‒phenotype correlation
 OT  - Spinocerebellar ataxias
 COIS- Declarations. Human Ethics and Consent to Participate: Not applicable. 
       Considering that this retrospective study was conducted only from data collected 
@@ -11013,7 +11952,7 @@ GR  - 2020JGB136/the Degree & Postgraduate Education Reform Project of Central S
 GR  - 2020LCJJ13/the Project Program of National Clinical Research Center for Geriatric 
       Disorders (Xiangya Hospital)/
 PT  - Journal Article
-TT  - CAG.............................................2...............................
+TT  - CAG重复序列对中国脊髓小脑共济失调2型患者发病年龄的影响.
 PL  - China
 TA  - Zhong Nan Da Xue Xue Bao Yi Xue Ban
 JT  - Zhong nan da xue xue bao. Yi xue ban = Journal of Central South University. 
@@ -11043,7 +11982,7 @@ PHST- 2021/09/28 06:00 [pubmed]
 PHST- 2021/09/29 06:00 [medline]
 PHST- 2021/08/28 00:00 [pmc-release]
 AID - 1672-7347(2021)08-0793-07 [pii]
-AID - 1672-7347...2021...08-0793-07 [pii]
+AID - 1672-7347（2021）08-0793-07 [pii]
 AID - 10.11817/j.issn.1672-7347.2021.210230 [doi]
 PST - ppublish
 SO  - Zhong Nan Da Xue Xue Bao Yi Xue Ban. 2021 Aug 28;46(8):793-799. doi: 
@@ -14670,7 +15609,7 @@ PMID- 32822634
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200901
-LR  - 20200901
+LR  - 20251119
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Linking)
 VI  - 19
@@ -14855,7 +15794,6 @@ LA  - eng
 SI  - ClinicalTrials.gov/NCT01037777
 PT  - Clinical Trial
 PT  - Journal Article
-PT  - Multicenter Study
 PT  - Observational Study
 PT  - Research Support, Non-U.S. Gov't
 PL  - England
@@ -14864,18 +15802,18 @@ JT  - The Lancet. Neurology
 JID - 101139309
 SB  - IM
 MH  - Adult
-MH  - Cohort Studies
-MH  - *Disease Progression
 MH  - Female
 MH  - Humans
-MH  - Longitudinal Studies
 MH  - Male
 MH  - Middle Aged
-MH  - Mutation/*genetics
+MH  - Young Adult
+MH  - Cohort Studies
+MH  - *Disease Progression
+MH  - Longitudinal Studies
+MH  - *Mutation/genetics
 MH  - Prospective Studies
 MH  - Risk Factors
-MH  - Spinocerebellar Ataxias/*diagnostic imaging/*genetics
-MH  - Young Adult
+MH  - *Spinocerebellar Ataxias/diagnostic imaging/genetics
 EDAT- 2020/08/22 06:00
 MHDA- 2020/09/02 06:00
 CRDT- 2020/08/22 06:00
@@ -15701,7 +16639,7 @@ IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Linking)
 VI  - 409
 DP  - 2020 Feb 15
-TI  - One...carbon metabolism factor MTHFR variant is associated with saccade latency in 
+TI  - One‑carbon metabolism factor MTHFR variant is associated with saccade latency in 
       Spinocerebellar Ataxia type 2.
 PG  - 116586
 LID - S0022-510X(19)32350-0 [pii]
@@ -15724,7 +16662,7 @@ AB  - BACKGROUND: Spinocerebellar ataxia type 2 (SCA2) is a neurodegenerative di
       genotypes showed a significant association with saccade latency. CONCLUSIONS: 
       \MTHFR A1298C polymorphism is associated with saccade latency in SCA2 patients, 
       but not with disease risk, age at onset or maximal saccade velocity. These 
-      results provide evidence that folate-mediated one...carbon metabolism might be 
+      results provide evidence that folate-mediated one‑carbon metabolism might be 
       important in the physiopathology of SCA2.
 CI  - Copyright (c) 2019 Elsevier B.V. All rights reserved.
 FAU - Almaguer-Mederos, Luis E
@@ -15803,7 +16741,7 @@ MH  - Saccades/*physiology
 MH  - Spinocerebellar Ataxias/diagnosis/*genetics/*physiopathology
 OTO - NOTNLM
 OT  - DNA damage repair
-OT  - Folate-mediated one...carbon metabolism
+OT  - Folate-mediated one‑carbon metabolism
 OT  - Methylation deficit
 OT  - Modifiers of risk versus progression
 OT  - Spinocerebellar Ataxia type 2
@@ -17916,7 +18854,7 @@ AB  - INTRODUCTION: To evaluate the non-ataxic clinical manifestations in geneti
       regression. RESULTS: The most common non-ataxic clinical manifestations were 
       peripheral neuropathy, extrapyramidal features, pyramidal signs, cognitive 
       impairment and lower motor neuron signs. The CAG repeat length was inversely 
-      related to the AAO of symptoms (r...=...-0.46, p...<....001). Patients with peripheral 
+      related to the AAO of symptoms (r = -0.46, p < .001). Patients with peripheral 
       neuropathy and psychiatric symptoms had earlier AAO. Patients with cognitive 
       impairment and extrapyramidal symptoms had higher CAG repeat length whereas 
       presence of lower motor neuron signs was more common in patients with lower CAG 
@@ -19222,13 +20160,13 @@ AB  - Multiple system atrophy (MSA) is an adult onset, progressive, neurodegener
       literature. The MSA patients (101 men/145 women) had a mean age at onset of 58 
       years and a mean age at genetic testing of 63 years. MSA-C patients had 
       significantly younger age at onset and at examination in comparison to MSA-P 
-      (p...<...0.0001). We identified a SCA1 intermediate allele in a MSA-C subject (36 
+      (p < 0.0001). We identified a SCA1 intermediate allele in a MSA-C subject (36 
       CAG), a SCA2 intermediate allele in a MSA-P patient (31 CAG), and a 
       pathologically expanded SCA2 allele (36 CAG) in a patient initially misdiagnosed 
       as MSA-C. No intermediate or expanded SCA alleles were detected in controls. The 
       distribution of CAG repeat length was similar among groups except for SCA1 gene 
       that showed a higher percentage of longer normal alleles in MSA-C as compared to 
-      MSA-P and controls (p...<...0.0001). This study supports the utility of polyQ genetic 
+      MSA-P and controls (p < 0.0001). This study supports the utility of polyQ genetic 
       testing in the differential diagnosis of MSA, and may suggest a possible role of 
       SCA1 repeat length as risk factor for MSA-C. SCA1 and SCA2 genetic screening is 
       recommended in MSA Italian patients.
@@ -23911,7 +24849,7 @@ PMID- 26599997
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160617
-LR  - 20171116
+LR  - 20251124
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Linking)
 VI  - 79
@@ -23993,6 +24931,7 @@ RN  - 0 (C9orf72 Protein)
 RN  - 0 (C9orf72 protein, human)
 RN  - 0 (Proteins)
 SB  - IM
+EIN - Ann Neurol. 2025 Nov 24. doi: 10.1002/ana.78107. PMID: 41277873
 MH  - Aged
 MH  - Amyotrophic Lateral Sclerosis/*genetics/*pathology
 MH  - Ataxin-2/*genetics
@@ -28806,6 +29745,7 @@ AID - 10.1016/j.neurobiolaging.2014.01.022 [doi]
 PST - ppublish
 SO  - Neurobiol Aging. 2014 Jul;35(7):1779.e17-21. doi: 
       10.1016/j.neurobiolaging.2014.01.022. Epub 2014 Jan 25.
+
 
 PMID- 24269018
 OWN - NLM
@@ -42447,3 +43387,4 @@ PHST- 1995/06/01 00:00 [entrez]
 PHST- 1995/12/01 00:00 [pmc-release]
 PST - ppublish
 SO  - Am J Hum Genet. 1995 Jun;56(6):1443-9.
+

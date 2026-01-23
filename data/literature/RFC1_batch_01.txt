@@ -1,4 +1,684 @@
 
+PMID- 41426430
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251222
+LR  - 20251224
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 6
+DP  - 2025
+TI  - The role of disease-associated short tandem repeats in amyotrophic lateral 
+      sclerosis.
+PG  - fcaf482
+LID - 10.1093/braincomms/fcaf482 [doi]
+LID - fcaf482
+AB  - Short tandem repeats (STRs) are recognized contributors to various 
+      neurodegenerative disorders, with evidence supporting genetic pleiotropy among 
+      these STRs. Multiple STRs have been associated with amyotrophic lateral sclerosis 
+      (ALS), although the strength of evidence supporting each association varies. To 
+      establish the role of disease-associated repeat expansions as pleiotropic risk 
+      factors in ALS susceptibility and progression, we genotyped a panel of 39 STRs, 
+      known to cause neurological diseases, within Project MinE in 6519 patients and 
+      2412 controls, utilizing 100 and 150 bp short-read sequencing technology. 
+      Pathogenic allele frequencies were compared to those in a control cohort 
+      comprising 4930 Genome Aggregation Database (gnomAD) genomes. Repeat sizes and 
+      motif changes were detected using ExpansionHunter and ExpansionHunter Denovo. We 
+      developed a model to predict genotyping failures in STRs and established a 
+      best-practice protocol for assessing the accuracy of STR genotyping in short-read 
+      sequencing data. Following our genotyping assessment, 11 out of the 39 STRs 
+      exhibited insufficient genotyping accuracy, warranting caution in studying these 
+      STRs using these tools in combination with short-read sequencing. Furthermore, 
+      the observed differences in STR genotyping accuracy across studies applying 
+      different sequencing technologies and genotyping tools in control cohorts 
+      highlight the importance of a carefully designed experimental setup when 
+      interpreting potential disease-associated STR findings. Pathogenic C9orf72 and 
+      premutated ATXN2 expansions were confirmed to be significantly associated with 
+      ALS susceptibility. Additionally, pathogenic C9orf72 expansions were 
+      significantly associated with reduced mean ALS survival by 11.5 months and an 
+      earlier mean age at onset by 2.4 years. Premutation expansions in ATXN1 showed a 
+      nominally significant association with ALS susceptibility, while pathogenic 
+      expansions in NIPA1 displayed a nominally significant association with ALS 
+      survival. Previously reported ALS-associated pleiotropy in HTT and STMN2 could 
+      not be confirmed. Motif changes were identified in BEAN1, RFC1, ATXN8, C9orf72, 
+      DAB1, FXN and SAMD12; however, none of the motif changes were linked to ALS. 
+      Re-evaluation of clinical data from patients with ALS and a repeat expansion 
+      typically associated with another disease revealed that 7% of these patients' 
+      diagnoses had to be reclassified to the disease associated with the repeat 
+      expansion (e.g. Kennedy's disease or spinocerebellar ataxia). This underscores 
+      the value of broad STR screening in neurodegenerative cases. Pathogenic and 
+      premutation STRs were also found in controls in unexpected high frequencies, 
+      suggesting reduced penetrance or underdiagnosis, and highlighting the need for 
+      caution when interpreting genetic associations with disease without a proper 
+      control cohort.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - van Vugt, Joke J F A
+AU  - van Vugt JJFA
+AUID- ORCID: 0000-0002-4161-4004
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Zwamborn, Ramona A J
+AU  - Zwamborn RAJ
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Dolzhenko, Egor
+AU  - Dolzhenko E
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Eberle, Michael A
+AU  - Eberle MA
+AD  - Illumina Inc., San Diego, CA 92122, USA.
+FAU - Weisburd, Ben
+AU  - Weisburd B
+AD  - Program in Medical and Population Genetics, Broad Center for Mendelian Genomics, 
+      Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA.
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical 
+      School, Boston, MA 02114, USA.
+FAU - Bekema, Erwin
+AU  - Bekema E
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Kooyman, Maarten
+AU  - Kooyman M
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Wang, Bi-Nan
+AU  - Wang BN
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+CN  - Project MinE ALS Sequencing Consortium
+FAU - Kamsteeg, Erik-Jan
+AU  - Kamsteeg EJ
+AUID- ORCID: 0000-0001-6480-1892
+AD  - Department of Human Genetics, Radboud University Medical Center, Nijmegen 6525 
+      GA, The Netherlands.
+FAU - Losekoot, Monique
+AU  - Losekoot M
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Baas, Frank
+AU  - Baas F
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden 2300 
+      RC, The Netherlands.
+FAU - Novy, Camilla
+AU  - Novy C
+AUID- ORCID: 0009-0008-0089-3669
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - Hoyer, Helle
+AU  - Hoyer H
+AD  - Department of Medical Genetics, Telemark Hospital Trust, Skien 3710, Norway.
+FAU - van Eijk, Ruben P A
+AU  - van Eijk RPA
+AUID- ORCID: 0000-0002-7132-5967
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Es, Michael A
+AU  - van Es MA
+AUID- ORCID: 0000-0002-7709-5883
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - van Rheenen, Wouter
+AU  - van Rheenen W
+AUID- ORCID: 0000-0002-5860-1533
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Al-Chalabi, Ammar
+AU  - Al-Chalabi A
+AUID- ORCID: 0000-0002-4924-7712
+AD  - Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience 
+      Institute, King's College London, London SE5 9RX, UK.
+FAU - van den Berg, Leonard H
+AU  - van den Berg LH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+FAU - Veldink, Jan H
+AU  - Veldink JH
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center 
+      Utrecht, Utrecht University, Utrecht 3584 CG, The Netherlands.
+LA  - eng
+PT  - Journal Article
+DEP - 20251209
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12715773
+OTO - NOTNLM
+OT  - disease-related repeats
+OT  - microsatellite genotyping
+OT  - motor neurodegenerative disease
+OT  - short tandem repeat genotyping
+OT  - tandem repeat genotyping accuracy
+COIS- JHV reports to have sponsored research agreements with Biogen, Eli Lilly, Trace 
+      and AstraZeneca.
+FIR - van Damme, Philip
+IR  - van Damme P
+FIR - Corcia, Philippe
+IR  - Corcia P
+FIR - Couratier, Philippe
+IR  - Couratier P
+FIR - Vourc'h, Patrick
+IR  - Vourc'h P
+FIR - Hardiman, Orla
+IR  - Hardiman O
+FIR - McLaughin, Russell
+IR  - McLaughin R
+FIR - Gotkine, Marc
+IR  - Gotkine M
+FIR - Lerner, Yossef
+IR  - Lerner Y
+FIR - Drory, Vivian
+IR  - Drory V
+FIR - Ticozzi, Nicola
+IR  - Ticozzi N
+FIR - Silani, Vincenzo
+IR  - Silani V
+FIR - Veldink, Jan H
+IR  - Veldink JH
+FIR - van den Berg, Leonard H
+IR  - van den Berg LH
+FIR - de Carvalho, Mamede
+IR  - de Carvalho M
+FIR - Salas, Teresa
+IR  - Salas T
+FIR - Pardina, Jesus S Mora
+IR  - Pardina JSM
+FIR - Povedano, Monica
+IR  - Povedano M
+FIR - Andersen, Peter
+IR  - Andersen P
+FIR - Weber, Markus
+IR  - Weber M
+FIR - Basak, Nazli A
+IR  - Basak NA
+FIR - Al-Chalabi, Ammar
+IR  - Al-Chalabi A
+FIR - Shaw, Chris
+IR  - Shaw C
+FIR - Shaw, Pamela J
+IR  - Shaw PJ
+FIR - Morrison, Karen E
+IR  - Morrison KE
+FIR - Landers, John E
+IR  - Landers JE
+FIR - Glass, Jonathan D
+IR  - Glass JD
+FIR - Dalgard, Clifton L
+IR  - Dalgard CL
+EDAT- 2025/12/22 12:55
+MHDA- 2025/12/22 12:56
+PMCR- 2025/12/09
+CRDT- 2025/12/22 06:54
+PHST- 2025/05/01 00:00 [received]
+PHST- 2025/11/10 00:00 [revised]
+PHST- 2025/12/08 00:00 [accepted]
+PHST- 2025/12/22 12:56 [medline]
+PHST- 2025/12/22 12:55 [pubmed]
+PHST- 2025/12/22 06:54 [entrez]
+PHST- 2025/12/09 00:00 [pmc-release]
+AID - fcaf482 [pii]
+AID - 10.1093/braincomms/fcaf482 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482. 
+      eCollection 2025.
+
+PMID- 41327893
+OWN - NLM
+STAT- Publisher
+LR  - 20251209
+IS  - 1460-2156 (Electronic)
+IS  - 0006-8950 (Linking)
+DP  - 2025 Dec 2
+TI  - Long-read sequencing identifies FGF14 repeat expansions in Parkinson's disease.
+LID - awaf456 [pii]
+LID - 10.1093/brain/awaf456 [doi]
+AB  - Pathogenic GAA repeat expansions in FGF14 are an established cause of late-onset 
+      cerebellar ataxia, but have not been linked to Parkinson's disease (PD). Given 
+      emerging evidence that repeat expansions in ataxia-associated genes like RFC1, 
+      can contribute to atypical or familial forms of PD, we investigated whether FGF14 
+      expansions might play a similar role. Using long-read whole-genome sequencing, we 
+      analyzed 411 individuals with PD and 197 neurologically healthy controls from the 
+      PPMI cohort, together with 1,429 additional controls from the NIH CARD 
+      initiative, the 1000 Genomes Project, and the All of Us program, representing 
+      globally diverse populations. We identified pathogenic FGF14 GAA repeat 
+      expansions in five individuals with PD and one control. All five individuals fit 
+      the clinical criteria of PD and showed typical patterns of neurodegeneration on 
+      DaTSCAN imaging; alpha-synuclein aggregation was confirmed by a positive seeding 
+      assay among four individuals with available data. These findings broaden the 
+      phenotypic spectrum of FGF14 repeat-associated disease and suggest a rare, 
+      previously unrecognized genetic contributor to PD. To our knowledge, this is the 
+      first report implicating FGF14 in PD and underscores the utility of long-read 
+      sequencing for detecting hidden forms of pathogenic variation in unresolved 
+      cases.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AUID- ORCID: 0000-0003-0931-5247
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Daida, Kensuke
+AU  - Daida K
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Lange, Lara M
+AU  - Lange LM
+AUID- ORCID: 0000-0002-7162-9821
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Moller, Abraham
+AU  - Moller A
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Miano-Burkhardt, Abigail
+AU  - Miano-Burkhardt A
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Malik, Laksh
+AU  - Malik L
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Paquette, Kimberly
+AU  - Paquette K
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Alvarez Jerez, Pilar
+AU  - Alvarez Jerez P
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Mingle, Jackson
+AU  - Mingle J
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Baker, Breeana
+AU  - Baker B
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Meredith, Melissa
+AU  - Meredith M
+AD  - DataTecnica LLC, Washington, DC, 20037, USA.
+FAU - Kouam, Cedric
+AU  - Kouam C
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Jarreau, Paige
+AU  - Jarreau P
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Markham, Androo
+AU  - Markham A
+AD  - Oxford Nanopore Technologies, OX4 4DQ, UK.
+FAU - Anderson, Jessica
+AU  - Anderson J
+AD  - Oxford Nanopore Technologies, OX4 4DQ, UK.
+FAU - Jain, Miten
+AU  - Jain M
+AD  - Department of Bioengineering, Department of Physics, Northeastern University, 
+      Boston, MA 02120, USA.
+FAU - Chaisson, Mark
+AU  - Chaisson M
+AUID- ORCID: 0000-0001-5395-1457
+AD  - Department of Quantitative and Computational Biology, University of Southern 
+      California, Los Angeles, CA 90089, USA.
+FAU - Cookson, Mark
+AU  - Cookson M
+AUID- ORCID: 0000-0002-1058-3831
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Casey, Bradford
+AU  - Casey B
+AD  - The Michael J. Fox Foundation for Parkinson's Research, Department of Clinical 
+      Research, New York, NY 10163, USA.
+FAU - Iwaki, Hirotaka
+AU  - Iwaki H
+AUID- ORCID: 0000-0002-8982-7885
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+AD  - DataTecnica LLC, Washington, DC, 20037, USA.
+FAU - Bandres-Ciga, Sara
+AU  - Bandres-Ciga S
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Saffie-Awad, Paula
+AU  - Saffie-Awad P
+AD  - Clinica Santa Maria, Santiago 7520349, Chile.
+AD  - Department of Specialties, Faculty of Medicine, University of Concepcion, 4070409 
+      Concepcion, Chile.
+FAU - Nalls, Mike
+AU  - Nalls M
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+AD  - DataTecnica LLC, Washington, DC, 20037, USA.
+FAU - Fang, Zih-Hua
+AU  - Fang ZH
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+FAU - Singleton, Andrew B
+AU  - Singleton AB
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Blauwendraat, Cornelis
+AU  - Blauwendraat C
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Billingsley, Kimberley J
+AU  - Billingsley KJ
+AUID- ORCID: 0000-0002-2623-5997
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging and 
+      National Institute of Neurological Disorders and Stroke, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+LA  - eng
+PT  - Journal Article
+DEP - 20251202
+PL  - England
+TA  - Brain
+JT  - Brain : a journal of neurology
+JID - 0372537
+SB  - IM
+UOF - medRxiv. 2025 Aug 19:2025.08.14.25333596. doi: 10.1101/2025.08.14.25333596. PMID: 
+      40894141
+OTO - NOTNLM
+OT  - FGF14
+OT  - Parkinson's disease
+OT  - long-read sequencing
+OT  - short tandem repeats
+EDAT- 2025/12/02 07:36
+MHDA- 2025/12/02 07:36
+CRDT- 2025/12/02 02:24
+PHST- 2025/08/12 00:00 [received]
+PHST- 2025/11/05 00:00 [revised]
+PHST- 2025/12/02 07:36 [medline]
+PHST- 2025/12/02 07:36 [pubmed]
+PHST- 2025/12/02 02:24 [entrez]
+AID - 8362499 [pii]
+AID - 10.1093/brain/awaf456 [doi]
+PST - aheadofprint
+SO  - Brain. 2025 Dec 2:awaf456. doi: 10.1093/brain/awaf456.
+
+PMID- 41322202
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251201
+LR  - 20251203
+IS  - 2632-1297 (Electronic)
+IS  - 2632-1297 (Linking)
+VI  - 7
+IP  - 6
+DP  - 2025
+TI  - Nerve ultrasound, neuronopathy and cough predict sensory neuropathy patients with 
+      RFC1 expansions.
+PG  - fcaf434
+LID - 10.1093/braincomms/fcaf434 [doi]
+LID - fcaf434
+AB  - The finding of biallelic pathogenic pentanucleotide RFC1 expansions has extended 
+      the spectrum of disease in cerebellar ataxia, neuropathy and vestibular areflexia 
+      syndrome. It is clear that for many, a sensory neuropathy is an early feature and 
+      raises the question of how to identify which patients with this common 
+      neurophysiological presentation should be tested genetically for the condition. 
+      We identified patients with idiopathic, sensory predominant neuropathies who had 
+      attended the Neurophysiology Department of Auckland Hospital for nerve conduction 
+      studies. We undertook a systematic clinical re-evaluation to test whether any of 
+      the following hypothesized variables distinguish the presence of pathogenic RFC1 
+      expansions. These were (i) chronic cough, (ii) ataxia, (iii) pure sensory changes 
+      on nerve conduction, (iv) a non-length-dependent pattern of sensory loss on nerve 
+      conduction studies, (v) small nerves on peripheral nerve ultrasound, (vi) 
+      bilateral vestibular dysfunction and (vii) autonomic dysfunction. We recruited 53 
+      patients, of whom 10 had normal repeat nerve conductions. Among the 43 (25 males, 
+      18 females) remaining patients, five were positive for the pathogenic RFC1 
+      expansions. All five reported a chronic cough (versus 4/38 RFC1-negative cases, P 
+      = 0.0002). None of the five cases had abnormal motor findings (versus 20/37 
+      RFC1-negative cases, P = 0.07). Four of the five cases had small (<5.2 mm(2)) 
+      mean upper limb nerves by cross-sectional area on ultrasound (versus 2/38 
+      RFC1-negative cases, P = 0.0006). The fifth had concurrent diabetes, which might 
+      explain their normal sized nerves. Four of the five cases had a 
+      non-length-dependent sensory neuropathy, and one had a length-dependent sensory 
+      neuropathy. The RFC1-positive case with a length-dependent neuropathy had small 
+      upper limb nerves on ultrasound. There were no differences in ataxia scores 
+      between the groups, and only two RFC1-positive cases had vestibular involvement. 
+      Two of the five RFC1-positive cases, both Samoan, had a novel arrangement in 
+      their RFC1 expansion in which the pathogenic AAGGG expansion was preceded by a 
+      short AAAAG expansion. Taken together, in this small sample, the presence of a 
+      chronic cough with either a non-length-dependent neuropathy on nerve conduction 
+      studies or a mean upper limb nerve cross-sectional area <5.2 mm(2) was strongly 
+      associated with the RFC1 expansion (sensitivity 100%, specificity 97%). Patients 
+      who fit these criteria should be tested genetically for RFC1. Ultrasound and 
+      nerve conduction studies should be seen as complementary in the workup of 
+      patients for RFC1 expansions.
+CI  - (c) The Author(s) 2025. Published by Oxford University Press on behalf of the 
+      Guarantors of Brain.
+FAU - Garvey, Anthony
+AU  - Garvey A
+AD  - Neurology Department, Dunedin Hospital, He hauora, he kuru pounamu, Health New 
+      Zealand, Te Whatu Ora, Dunedin 9054, New Zealand.
+FAU - Melville, I Zay
+AU  - Melville IZ
+AD  - Physiology Department, Centre for Brain Research, University of Auckland, Waipapa 
+      Taumata Rau, Auckland 1023, New Zealand.
+FAU - Scriba, Carolin K
+AU  - Scriba CK
+AUID- ORCID: 0000-0001-9874-3846
+AD  - Neurogenetic Diseases Group, Centre for Medical Research, QEII Medical Centre, 
+      University of Western Australia, Nedlands, WA 6009, Australia.
+FAU - Yong, Vivien
+AU  - Yong V
+AD  - Neurology Department, Tauranga Hospital, Health New Zealand, Te Whatu Ora, 
+      Tauranga 3112, New Zealand.
+FAU - Rodrigues, Miriam
+AU  - Rodrigues M
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+AD  - Radiology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Kao, Justin
+AU  - Kao J
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Glenn, Melanie
+AU  - Glenn M
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+AD  - Radiology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Patel, Shilpan
+AU  - Patel S
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Chang, Thomas
+AU  - Chang T
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Caldwell, James
+AU  - Caldwell J
+AD  - Radiology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Ren, Caitlyn
+AU  - Ren C
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+FAU - Laing, Nigel G
+AU  - Laing NG
+AD  - Neurogenetic Diseases Group, Centre for Medical Research, QEII Medical Centre, 
+      University of Western Australia, Nedlands, WA 6009, Australia.
+FAU - Ravenscroft, Gianina
+AU  - Ravenscroft G
+AD  - Neurogenetic Diseases Group, Centre for Medical Research, QEII Medical Centre, 
+      University of Western Australia, Nedlands, WA 6009, Australia.
+FAU - Pelosi, Luciana
+AU  - Pelosi L
+AUID- ORCID: 0000-0001-6443-6952
+AD  - Neurology Department, Tauranga Hospital, Health New Zealand, Te Whatu Ora, 
+      Tauranga 3112, New Zealand.
+AD  - Neurogenetics Clinic, Department of Medicine, Centre for Brain Research, 
+      University of Auckland, Waipapa Taumata Rau, Auckland 1023, New Zealand.
+FAU - Taylor, Rachael L
+AU  - Taylor RL
+AD  - Physiology Department, Centre for Brain Research, University of Auckland, Waipapa 
+      Taumata Rau, Auckland 1023, New Zealand.
+FAU - Roxburgh, Richard
+AU  - Roxburgh R
+AD  - Neurology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+AD  - Radiology Department, Auckland City Hospital, Te Toka Tumai, Health New Zealand, 
+      Te Whatu Ora, Auckland 1023, New Zealand.
+LA  - eng
+PT  - Journal Article
+DEP - 20251103
+PL  - England
+TA  - Brain Commun
+JT  - Brain communications
+JID - 101755125
+PMC - PMC12662233
+OTO - NOTNLM
+OT  - CANVAS syndrome
+OT  - ataxia
+OT  - neurogenetics
+OT  - neuropathy
+COIS- The authors report no competing interests.
+EDAT- 2025/12/01 12:28
+MHDA- 2025/12/01 12:29
+PMCR- 2025/11/03
+CRDT- 2025/12/01 06:23
+PHST- 2025/04/08 00:00 [received]
+PHST- 2025/09/02 00:00 [revised]
+PHST- 2025/11/02 00:00 [accepted]
+PHST- 2025/12/01 12:29 [medline]
+PHST- 2025/12/01 12:28 [pubmed]
+PHST- 2025/12/01 06:23 [entrez]
+PHST- 2025/11/03 00:00 [pmc-release]
+AID - fcaf434 [pii]
+AID - 10.1093/braincomms/fcaf434 [doi]
+PST - epublish
+SO  - Brain Commun. 2025 Nov 3;7(6):fcaf434. doi: 10.1093/braincomms/fcaf434. 
+      eCollection 2025.
+
+PMID- 41278766
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20251127
+LR  - 20251128
+IS  - 2692-8205 (Electronic)
+IS  - 2692-8205 (Linking)
+DP  - 2025 Oct 9
+TI  - Long-read sequencing reveals extensive FMR1 somatic mosaicism in Fragile-X 
+      associated tremor/ataxia syndrome in human brain.
+LID - 2025.10.07.678589 [pii]
+LID - 10.1101/2025.10.07.678589 [doi]
+AB  - Fragile X-associated tremor/ataxia syndrome (FXTAS) is a progressive 
+      neurodegenerative disorder caused by a CGG repeat expansion in the 5' 
+      untranslated region of the X-linked Fragile X messenger ribonucleoprotein 1 
+      (FMR1). Although the CGG repeat tract is known for instability that has been 
+      posited to contribute to clinical heterogeneity, the extent of somatic variation 
+      in human brain remains unclear, in part due to the technical limitations of 
+      sequencing long tandem repeats. Here, we quantified FMR1 somatic variation in 
+      post-mortem brain tissue from individuals with FXTAS (n = 6) and Fragile X 
+      syndrome (FXS, n = 2) by applying amplification-free, targeted, long-read 
+      sequencing. This approach uncovered remarkable somatic mosaicism in repeat size 
+      and methylation in FXTAS, including somatic expansions and contractions which 
+      were not resolvable with traditional approaches. For example, in FXTAS, we 
+      identified somatic expansions to over 6000 base pairs in length as well as 
+      contractions to below the pathogenic range. We also identified unexpected 
+      patterns of methylation mosaicism on pre and full mutations. On the other hand, 
+      we replicated prior findings suggesting differential CGG expansion on the active 
+      X-chromosome in XX females. Finally, we examined the above cohort for expansions 
+      in 19 additional disease-associated repeat loci. Remarkably, we identified 
+      additional expansions in 5 out of 8 affected individuals, in FXN and RFC1. This 
+      work provides new insight into the extensive molecular variation underlying FXTAS 
+      in human brain and establishes a framework for studying repeat expansion 
+      disorders more broadly, highlighting the potential of long-read sequencing to 
+      advance our fundamental understanding of somatic mosaicism of these intractable 
+      regions of our genome.
+FAU - Dischler, Anna
+AU  - Dischler A
+AUID- ORCID: 0000-0002-1798-0469
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+FAU - Avvaru, Akshay
+AU  - Avvaru A
+AUID- ORCID: 0000-0003-4698-9363
+AD  - Department of Biomedical Informatics, University of Colorado Anschutz, Aurora, CO 
+      80045, USA.
+FAU - Lopez-Ignacio, Susana
+AU  - Lopez-Ignacio S
+AUID- ORCID: 0009-0006-2222-0727
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+AD  - Human Medical Genetics and Genomics Graduate Training Program, University of 
+      Colorado Anschutz, CO 80045, USA.
+FAU - Lau, Cristina
+AU  - Lau C
+AD  - Human Medical Genetics and Genomics Graduate Training Program, University of 
+      Colorado Anschutz, CO 80045, USA.
+FAU - Breuss, Martin W
+AU  - Breuss MW
+AUID- ORCID: 0000-0003-2200-8604
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+FAU - Cerdeno, Veronica Martinez
+AU  - Cerdeno VM
+AUID- ORCID: 0000-0002-9613-3603
+AD  - Department of Pathology and Laboratory Medicine, MIND Institute, UC Davis School 
+      of Medicine; Sacramento, CA 95817, USA.
+FAU - Dashnow, Harriet
+AU  - Dashnow H
+AUID- ORCID: 0000-0001-8433-6270
+AD  - Department of Biomedical Informatics, University of Colorado Anschutz, Aurora, CO 
+      80045, USA.
+FAU - Dias, Caroline M
+AU  - Dias CM
+AUID- ORCID: 0000-0003-1315-6007
+AD  - Section of Genetics and Metabolism, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+AD  - Section of Developmental Pediatrics, Department of Pediatrics, University of 
+      Colorado Anschutz, Aurora, CO 80045, USA.
+LA  - eng
+GR  - P30 CA046934/CA/NCI NIH HHS/United States
+GR  - P30 DK116073/DK/NIDDK NIH HHS/United States
+GR  - R00 HG012796/HG/NHGRI NIH HHS/United States
+GR  - R01 NS107131/NS/NINDS NIH HHS/United States
+PT  - Journal Article
+PT  - Preprint
+DEP - 20251009
+PL  - United States
+TA  - bioRxiv
+JT  - bioRxiv : the preprint server for biology
+JID - 101680187
+PMC - PMC12632538
+COIS- Conflict of Interests: The authors have no conflicts of interest to disclose.
+EDAT- 2025/11/24 18:21
+MHDA- 2025/11/24 18:22
+PMCR- 2025/11/20
+CRDT- 2025/11/24 08:25
+PHST- 2025/11/24 18:21 [pubmed]
+PHST- 2025/11/24 18:22 [medline]
+PHST- 2025/11/24 08:25 [entrez]
+PHST- 2025/11/20 00:00 [pmc-release]
+AID - 2025.10.07.678589 [pii]
+AID - 10.1101/2025.10.07.678589 [doi]
+PST - epublish
+SO  - bioRxiv [Preprint]. 2025 Oct 9:2025.10.07.678589. doi: 10.1101/2025.10.07.678589.
+
 PMID- 41177915
 OWN - NLM
 STAT- Publisher
@@ -92,7 +772,7 @@ PMID- 41145152
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251027
-LR  - 20251027
+LR  - 20251223
 IS  - 1678-4227 (Electronic)
 IS  - 0004-282X (Linking)
 VI  - 83
@@ -207,7 +887,7 @@ PMID- 41118032
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251021
-LR  - 20251024
+LR  - 20251202
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -1020,8 +1700,8 @@ SO  - Brain. 2025 Sep 3:awaf318. doi: 10.1093/brain/awaf318.
 PMID- 40894141
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-DCOM- 20250915
-LR  - 20250915
+DCOM- 20251209
+LR  - 20251209
 DP  - 2025 Aug 19
 TI  - Long-read sequencing identifies FGF14 repeat expansions in Parkinson's disease.
 LID - 2025.08.14.25333596 [pii]
@@ -1193,6 +1873,28 @@ AD  - Center for Alzheimer's and Related Dementias, National Institute on Aging 
       National Institute of Neurological Disorders and Stroke, National Institutes of 
       Health, Bethesda, MD, USA.
 LA  - eng
+GR  - OT2 OD026556/OD/NIH HHS/United States
+GR  - U2C OD023196/OD/NIH HHS/United States
+GR  - OT2 OD025315/OD/NIH HHS/United States
+GR  - OT2 OD026551/OD/NIH HHS/United States
+GR  - U24 OD023121/OD/NIH HHS/United States
+GR  - OT2 OD026552/OD/NIH HHS/United States
+GR  - OT2 OD026549/OD/NIH HHS/United States
+GR  - OT2 OD025337/OD/NIH HHS/United States
+GR  - OT2 OD025277/OD/NIH HHS/United States
+GR  - OT2 OD026555/OD/NIH HHS/United States
+GR  - OT2 OD026550/OD/NIH HHS/United States
+GR  - OT2 OD026553/OD/NIH HHS/United States
+GR  - OT2 OD023205/OD/NIH HHS/United States
+GR  - OT2 OD025276/OD/NIH HHS/United States
+GR  - ZIA NS003154/ImNIH/Intramural NIH HHS/United States
+GR  - OT2 OD026557/OD/NIH HHS/United States
+GR  - OT2 OD026554/OD/NIH HHS/United States
+GR  - U24 OD023163/OD/NIH HHS/United States
+GR  - OT2 OD023206/OD/NIH HHS/United States
+GR  - U24 OD023176/OD/NIH HHS/United States
+GR  - Z01 AG000949/ImNIH/Intramural NIH HHS/United States
+GR  - OT2 OD026548/OD/NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20250819
@@ -1200,6 +1902,7 @@ PL  - United States
 TA  - medRxiv
 JT  - medRxiv : the preprint server for health sciences
 JID - 101767986
+UIN - Brain. 2025 Dec 02:awaf456. doi: 10.1093/brain/awaf456. PMID: 41327893
 PMC - PMC12393589
 COIS- Conflicts of interest M.A.N. 's participation in this project was part of a 
       competitive contract awarded to DataTecnica LLC by the National Institutes of 
@@ -1209,8 +1912,8 @@ EDAT- 2025/09/02 22:35
 MHDA- 2025/09/02 22:36
 PMCR- 2025/08/28
 CRDT- 2025/09/02 16:42
-PHST- 2025/09/02 22:36 [medline]
 PHST- 2025/09/02 22:35 [pubmed]
+PHST- 2025/09/02 22:36 [medline]
 PHST- 2025/09/02 16:42 [entrez]
 PHST- 2025/08/28 00:00 [pmc-release]
 AID - 2025.08.14.25333596 [pii]
@@ -22044,3 +22747,4 @@ AID - 1182 [pii]
 AID - 10.1128/MCB.23.4.1349-1357.2003 [doi]
 PST - ppublish
 SO  - Mol Cell Biol. 2003 Feb;23(4):1349-57. doi: 10.1128/MCB.23.4.1349-1357.2003.
+
