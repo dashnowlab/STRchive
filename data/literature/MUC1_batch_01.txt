@@ -1,4 +1,116 @@
 
+PMID- 41345522
+OWN - NLM
+STAT- In-Process
+LR  - 20260110
+IS  - 2045-2322 (Electronic)
+IS  - 2045-2322 (Linking)
+VI  - 16
+IP  - 1
+DP  - 2025 Dec 4
+TI  - Analysis of clinically relevant large tandem repeats using nanopore sequencing.
+PG  - 762
+LID - 10.1038/s41598-025-30441-3 [doi]
+LID - 762
+AB  - Variable number tandem repeats (VNTRs) remain among the most challenging regions 
+      of the human genome to characterize, due to their repetitive structure and high 
+      sequence variability. Short-read sequencing lacks the resolution to span these 
+      regions, and even long-read variant callers often fail to resolve true allelic 
+      variation due to alignment ambiguity and motif heterogeneity. We present a novel 
+      bioinformatics workflow for the analysis of VNTRs from nanopore sequencing data. 
+      To our knowledge, it is the first to offer fully automated variant detection, 
+      classification of loss-of-function (LoF) variants, and integrated quality control 
+      using nanopore sequencing technology. The pipeline separates reads into alleles, 
+      constructs reference-free consensus sequences, and aligns motif structures for 
+      visualization. LoF variants are identified and reported at their exact position 
+      within the repeat. The method was validated using PCR amplicons from reference 
+      genomes HG001-HG004 for two genes harboring VNTRs (ACAN and MUC1), as well as 
+      four clinical control samples containing known frameshift mutations in the MUC1 
+      VNTR. We further demonstrate its applicability to whole-genome nanopore datasets. 
+      Using our pipeline, it is now possible to completely analyze and characterize 
+      VNTRs as well as detect disease-causing variants in a cost and time-efficient 
+      manner using amplicon-based nanopore sequencing. SUPPLEMENTARY INFORMATION: The 
+      online version contains supplementary material available at 
+      10.1038/s41598-025-30441-3.
+FAU - Madritsch, Silvia
+AU  - Madritsch S
+AUID- ORCID: 0000-0002-4995-7351
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria. silvia.madritsch@meduniwien.ac.at.
+FAU - Horner, David
+AU  - Horner D
+AUID- ORCID: 0000-0002-3561-653X
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria. david.horner@meduniwien.ac.at.
+FAU - Lowenstern, Tamara
+AU  - Lowenstern T
+AUID- ORCID: 0009-0006-9196-2097
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Brait, Nadja
+AU  - Brait N
+AUID- ORCID: 0000-0002-9289-3453
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Arnold, Vivienne
+AU  - Arnold V
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Wenzel, Andrea
+AU  - Wenzel A
+AUID- ORCID: 0009-0005-3280-0947
+AD  - Institute of Human Genetics, University Hospital Cologne, Faculty of Medicine, 
+      University of Cologne, Cologne, Germany.
+FAU - Weis, Denisa
+AU  - Weis D
+AUID- ORCID: 0000-0001-8711-3750
+AD  - Department of Medical Genetics, Kepler University Hospital Med Campus IV, 
+      Johannes Kepler University, Linz, Austria.
+FAU - Hengstschlager, Markus
+AU  - Hengstschlager M
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Laccone, Franco
+AU  - Laccone F
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+LA  - eng
+PT  - Journal Article
+DEP - 20251204
+PL  - England
+TA  - Sci Rep
+JT  - Scientific reports
+JID - 101563288
+SB  - IM
+PMC - PMC12780063
+OTO - NOTNLM
+OT  - ACAN
+OT  - Amplicon
+OT  - Long-read
+OT  - MUC1
+OT  - VNTR
+OT  - Variable number tandem repeats
+COIS- Declarations. Competing interests: The authors declare no competing interests. 
+      Ethics approval: This study is covered under the ethics approval EK Nr. 1078/2024 
+      granted by the ethics committee of the Medical University of Vienna. Consent to 
+      participate: Informed consent was obtained from all the patients included in this 
+      study.
+EDAT- 2025/12/05 01:02
+MHDA- 2025/12/05 01:02
+PMCR- 2025/12/04
+CRDT- 2025/12/04 23:41
+PHST- 2025/07/08 00:00 [received]
+PHST- 2025/11/25 00:00 [accepted]
+PHST- 2025/12/05 01:02 [pubmed]
+PHST- 2025/12/05 01:02 [medline]
+PHST- 2025/12/04 23:41 [entrez]
+PHST- 2025/12/04 00:00 [pmc-release]
+AID - 10.1038/s41598-025-30441-3 [pii]
+AID - 30441 [pii]
+AID - 10.1038/s41598-025-30441-3 [doi]
+PST - epublish
+SO  - Sci Rep. 2025 Dec 4;16(1):762. doi: 10.1038/s41598-025-30441-3.
+
 PMID- 41000883
 OWN - NLM
 STAT- PubMed-not-MEDLINE

@@ -1,13 +1,17 @@
 
 PMID- 41443196
 OWN - NLM
-STAT- Publisher
-LR  - 20251230
+STAT- MEDLINE
+DCOM- 20260109
+LR  - 20260110
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
-DP  - 2025 Dec 23
+VI  - 113
+IP  - 1
+DP  - 2026 Jan 8
 TI  - MSH3 is a genetic modifier of somatic repeat instability in X-linked dystonia 
       parkinsonism.
+PG  - 83-99
 LID - S0002-9297(25)00473-2 [pii]
 LID - 10.1016/j.ajhg.2025.12.002 [doi]
 AB  - X-linked dystonia parkinsonism (XDP) is a progressive adult-onset neurogenerative 
@@ -163,9 +167,31 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
+RN  - 0 (MutS Homolog 3 Protein)
+RN  - 0 (MSH3 protein, human)
+RN  - 0 (TATA-Binding Protein Associated Factors)
+RN  - 0 (Transcription Factor TFIID)
+RN  - EC 2.7.11.1 (TATA-binding protein associated factor 250 kDa)
+RN  - EC 2.3.1.48 (Histone Acetyltransferases)
+RN  - Dystonia 3, Torsion, X-Linked
 SB  - IM
 UOF - bioRxiv. 2025 May 16:2025.05.14.653432. doi: 10.1101/2025.05.14.653432. PMID: 
       40463055
+MH  - Humans
+MH  - *Genetic Diseases, X-Linked/genetics/pathology
+MH  - *MutS Homolog 3 Protein/genetics
+MH  - Male
+MH  - *Dystonic Disorders/genetics
+MH  - Female
+MH  - Adult
+MH  - Middle Aged
+MH  - TATA-Binding Protein Associated Factors/genetics
+MH  - *Genes, Modifier
+MH  - Alleles
+MH  - Transcription Factor TFIID/genetics
+MH  - Age of Onset
+MH  - DNA Repeat Expansion/genetics
+MH  - Histone Acetyltransferases
 OTO - NOTNLM
 OT  - MSH3
 OT  - TAF1
@@ -184,25 +210,25 @@ COIS- Declaration of interests V.C.W. was a founding scientific advisory board m
       Pharmaceuticals Inc., Alnylam Inc., Biogen Inc., Passage Bio, Rgenta 
       Therapeutics, and Ascidian Therapeutics.
 EDAT- 2025/12/25 00:29
-MHDA- 2025/12/25 00:29
+MHDA- 2026/01/10 00:34
 CRDT- 2025/12/24 18:42
 PHST- 2025/05/03 00:00 [received]
 PHST- 2025/12/01 00:00 [revised]
 PHST- 2025/12/01 00:00 [accepted]
-PHST- 2025/12/25 00:29 [medline]
+PHST- 2026/01/10 00:34 [medline]
 PHST- 2025/12/25 00:29 [pubmed]
 PHST- 2025/12/24 18:42 [entrez]
 AID - S0002-9297(25)00473-2 [pii]
 AID - 10.1016/j.ajhg.2025.12.002 [doi]
-PST - aheadofprint
-SO  - Am J Hum Genet. 2025 Dec 23:S0002-9297(25)00473-2. doi: 
-      10.1016/j.ajhg.2025.12.002.
+PST - ppublish
+SO  - Am J Hum Genet. 2026 Jan 8;113(1):83-99. doi: 10.1016/j.ajhg.2025.12.002. Epub 
+      2025 Dec 23.
 
 PMID- 40463055
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251230
-LR  - 20251230
+LR  - 20260109
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 May 16
@@ -373,8 +399,8 @@ PL  - United States
 TA  - bioRxiv
 JT  - bioRxiv : the preprint server for biology
 JID - 101680187
-UIN - Am J Hum Genet. 2025 Dec 23:S0002-9297(25)00473-2. doi: 
-      10.1016/j.ajhg.2025.12.002. PMID: 41443196
+UIN - Am J Hum Genet. 2026 Jan 8;113(1):83-99. doi: 10.1016/j.ajhg.2025.12.002. PMID: 
+      41443196
 PMC - PMC12132400
 OTO - NOTNLM
 OT  - MSH3

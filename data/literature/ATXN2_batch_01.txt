@@ -1,12 +1,13 @@
 
 PMID- 41435767
 OWN - NLM
-STAT- Publisher
-LR  - 20251223
+STAT- MEDLINE
+DCOM- 20260119
+LR  - 20260119
 IS  - 1476-928X (Electronic)
 IS  - 1476-9271 (Linking)
 VI  - 121
-DP  - 2025 Dec 11
+DP  - 2026 Apr
 TI  - Valosin-Containing Protein as a therapeutic target in CAG repeat-driven 
       Spinocerebellar ataxias: Integrative transcriptomic and computational insights.
 PG  - 108838
@@ -82,7 +83,15 @@ PL  - England
 TA  - Comput Biol Chem
 JT  - Computational biology and chemistry
 JID - 101157394
+RN  - EC 3.6.4.6 (Valosin Containing Protein)
+RN  - EC 3.6.4.6 (VCP protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Valosin Containing Protein/genetics/metabolism/antagonists & inhibitors
+MH  - *Spinocerebellar Ataxias/genetics/drug therapy/metabolism
+MH  - *Transcriptome/drug effects
+MH  - Molecular Docking Simulation
+MH  - Molecular Dynamics Simulation
 OTO - NOTNLM
 OT  - ADMET
 OT  - ELISA
@@ -96,19 +105,19 @@ OT  - VCP
 COIS- Declaration of Competing Interest The authors declare that there is no conflict 
       of interest.
 EDAT- 2025/12/24 00:33
-MHDA- 2025/12/24 00:33
+MHDA- 2026/01/20 00:37
 CRDT- 2025/12/23 18:13
 PHST- 2025/09/18 00:00 [received]
 PHST- 2025/11/24 00:00 [revised]
 PHST- 2025/12/07 00:00 [accepted]
-PHST- 2025/12/24 00:33 [medline]
+PHST- 2026/01/20 00:37 [medline]
 PHST- 2025/12/24 00:33 [pubmed]
 PHST- 2025/12/23 18:13 [entrez]
 AID - S1476-9271(25)00502-X [pii]
 AID - 10.1016/j.compbiolchem.2025.108838 [doi]
-PST - aheadofprint
-SO  - Comput Biol Chem. 2025 Dec 11;121:108838. doi: 
-      10.1016/j.compbiolchem.2025.108838.
+PST - ppublish
+SO  - Comput Biol Chem. 2026 Apr;121:108838. doi: 10.1016/j.compbiolchem.2025.108838. 
+      Epub 2025 Dec 11.
 
 PMID- 41426430
 OWN - NLM
@@ -1294,7 +1303,7 @@ PMID- 41071260
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251010
-LR  - 20251010
+LR  - 20260110
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -23064,308 +23073,6 @@ AID - 10.1002/mds.26841 [doi]
 PST - ppublish
 SO  - Mov Disord. 2017 Jan;32(1):158-162. doi: 10.1002/mds.26841. Epub 2016 Nov 7.
 
-PMID- 28017481
-OWN - NLM
-STAT- MEDLINE
-DCOM- 20170928
-LR  - 20250530
-IS  - 1558-1497 (Electronic)
-IS  - 0197-4580 (Print)
-IS  - 0197-4580 (Linking)
-VI  - 51
-DP  - 2017 Mar
-TI  - ATXN2 trinucleotide repeat length correlates with risk of ALS.
-PG  - 178.e1-178.e9
-LID - S0197-4580(16)30297-4 [pii]
-LID - 10.1016/j.neurobiolaging.2016.11.010 [doi]
-AB  - We investigated a CAG trinucleotide repeat expansion in the ATXN2 gene in 
-      amyotrophic lateral sclerosis (ALS). Two new case-control studies, a British 
-      dataset of 1474 ALS cases and 567 controls, and a Dutch dataset of 1328 ALS cases 
-      and 691 controls were analyzed. In addition, to increase power, we systematically 
-      searched PubMed for case-control studies published after 1 August 2010 that 
-      investigated the association between ATXN2 intermediate repeats and ALS. We 
-      conducted a meta-analysis of the new and existing studies for the relative risks 
-      of ATXN2 intermediate repeat alleles of between 24 and 34 CAG trinucleotide 
-      repeats and ALS. There was an overall increased risk of ALS for those carrying 
-      intermediate sized trinucleotide repeat alleles (odds ratio 3.06 [95% confidence 
-      interval 2.37-3.94]; p = 6 x 10(-18)), with an exponential relationship between 
-      repeat length and ALS risk for alleles of 29-32 repeats (R(2) = 0.91, p = 
-      0.0002). No relationship was seen for repeat length and age of onset or survival. 
-      In contrast to trinucleotide repeat diseases, intermediate ATXN2 trinucleotide 
-      repeat expansion in ALS does not predict age of onset but does predict disease 
-      risk.
-CI  - Copyright (c) 2016 The Author(s). Published by Elsevier Inc. All rights reserved.
-FAU - Sproviero, William
-AU  - Sproviero W
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Shatunov, Aleksey
-AU  - Shatunov A
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Stahl, Daniel
-AU  - Stahl D
-AD  - Department of Biostatistics, King's College London, Institute of Psychiatry, 
-      Psychology and Neuroscience, London, UK.
-FAU - Shoai, Maryam
-AU  - Shoai M
-AD  - Department of Molecular Neuroscience, University College London (UCL) Institute 
-      of Neurology, London, UK.
-FAU - van Rheenen, Wouter
-AU  - van Rheenen W
-AD  - Department of Neurology, Brain Center Rudolf Magnus Institute of Neuroscience, 
-      University Medical Centre Utrecht, Utrecht, the Netherlands.
-FAU - Jones, Ashley R
-AU  - Jones AR
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Al-Sarraj, Safa
-AU  - Al-Sarraj S
-AD  - Department of Clinical Neuropathology, King's College Hospital NHS Foundation 
-      Trust, London, UK.
-FAU - Andersen, Peter M
-AU  - Andersen PM
-AD  - Department of Pharmacology and Clinical Neuroscience, Umea University, Umea, 
-      Sweden.
-FAU - Bonini, Nancy M
-AU  - Bonini NM
-AD  - Department of Biology, University of Pennsylvania, Philadelphia, PA, USA.
-FAU - Conforti, Francesca L
-AU  - Conforti FL
-AD  - Institute of Neurological Sciences, National Research Council, Cosenza, Italy.
-FAU - Van Damme, Philip
-AU  - Van Damme P
-AD  - Neurology Department, University Hospitals Leuven, Leuven, Belgium; Vesalius 
-      Research Center, VIB, Leuven, Belgium; Disease (LIND), KU Leuven - University of 
-      Leuven, Leuven, Belgium.
-FAU - Daoud, Hussein
-AU  - Daoud H
-AD  - Montreal Neurological Institute, McGill University, Montreal, Quebec, Canada.
-FAU - Del Mar Amador, Maria
-AU  - Del Mar Amador M
-AD  - Department of Nervous System Diseases, ALS Paris ALS Center for Rare Diseases, 
-      Groupe Hospitalier Pitie Salpetriere, APHP, Paris, France.
-FAU - Fogh, Isabella
-AU  - Fogh I
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Forzan, Monica
-AU  - Forzan M
-AD  - Clinical Genetics Unit, Department of Woman and Child Health, University of 
-      Padova, Padova, Italy.
-FAU - Gaastra, Ben
-AU  - Gaastra B
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Gellera, Cinzia
-AU  - Gellera C
-AD  - Fondazione IRCCS Istituto Neurologico Carlo Besta, Milan, Italy.
-FAU - Gitler, Aaron D
-AU  - Gitler AD
-AD  - Department of Genetics, Stanford University School of Medicine, Stanford, CA, 
-      USA.
-FAU - Hardy, John
-AU  - Hardy J
-AD  - Department of Molecular Neuroscience, University College London (UCL) Institute 
-      of Neurology, London, UK.
-FAU - Fratta, Pietro
-AU  - Fratta P
-AD  - Sobell Department of Motor Neuroscience and Movement Disorders, University 
-      College London (UCL) Institute of Neurology, London, UK.
-FAU - La Bella, Vincenzo
-AU  - La Bella V
-AD  - ALS Clinical Research Center, Bio. Ne. C., University of Palermo, Palermo, Italy.
-FAU - Le Ber, Isabelle
-AU  - Le Ber I
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France; AP-HP, Hopitaux 
-      Universitaires La Pitie Salpetriere-Charles Foix, Centre de Reference des 
-      Demences Rares, Departement de Neurologie, Paris, France.
-FAU - Van Langenhove, Tim
-AU  - Van Langenhove T
-AD  - Neurodegenerative Brain Diseases Group, Department of Molecular Genetics, VIB, 
-      Antwerp, Belgium; Laboratory of Neurogenetics, Insititute Born-Bunge, University 
-      of Antwerp, Antwerp, Belgium; Department of Neurology, Antwerp University 
-      Hospital, Edegem, Belgium.
-FAU - Lattante, Serena
-AU  - Lattante S
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Lee, Yi-Chung
-AU  - Lee YC
-AD  - Department of Neurology, Taipei Veterans General Hospital, Taipei, Taiwan; 
-      Department of Neurology, National Yang-Ming University School of Medicine, 
-      Taipei, Taiwan; Brain Research Center, National Yang-Ming University, Taipei, 
-      Taiwan.
-FAU - Malaspina, Andrea
-AU  - Malaspina A
-AD  - North-East London and Essex MND Care Centre - Neuroscience and Trauma Centre, 
-      Blizard, Institute of Cell and Molecular Medicine, Barts & the London School of 
-      Medicine & Dentistry, Barts Health NHS Trust, London, UK.
-FAU - Meininger, Vincent
-AU  - Meininger V
-AD  - Hopital de la Pitie-Salpetriere, institut de recherche translationnelle en 
-      neurosciences (A-ICM), Paris, France; Hopital de la Pitie-Salpetriere, reseau SLA 
-      IdF, Paris, France.
-FAU - Millecamps, Stephanie
-AU  - Millecamps S
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Orrell, Richard
-AU  - Orrell R
-AD  - Department of Clinical Neuroscience, University College London (UCL) Institute of 
-      Neurology, London, UK.
-FAU - Rademakers, Rosa
-AU  - Rademakers R
-AD  - Department of Neuroscience, Mayo Clinic, Jacksonville, FL, USA.
-FAU - Robberecht, Wim
-AU  - Robberecht W
-AD  - Vesalius Research Center, VIB, Leuven, Belgium; Disease (LIND), KU Leuven - 
-      University of Leuven, Leuven, Belgium.
-FAU - Rouleau, Guy
-AU  - Rouleau G
-AD  - Montreal Neurological Institute, McGill University, Montreal, Quebec, Canada.
-FAU - Ross, Owen A
-AU  - Ross OA
-AD  - Department of Neuroscience, Mayo Clinic, Jacksonville, FL, USA.
-FAU - Salachas, Francois
-AU  - Salachas F
-AD  - Department of Nervous System Diseases, ALS Paris ALS Center for Rare Diseases, 
-      Groupe Hospitalier Pitie Salpetriere, APHP, Paris, France; Institut du Cerveau et 
-      de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, Sorbonne Universites, 
-      UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Sidle, Katie
-AU  - Sidle K
-AD  - Department of Molecular Neuroscience, University College London (UCL) Institute 
-      of Neurology, London, UK.
-FAU - Smith, Bradley N
-AU  - Smith BN
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Soong, Bing-Wen
-AU  - Soong BW
-AD  - Department of Neurology, Taipei Veterans General Hospital, Taipei, Taiwan; 
-      Department of Neurology, National Yang-Ming University School of Medicine, 
-      Taipei, Taiwan; Brain Research Center, National Yang-Ming University, Taipei, 
-      Taiwan.
-FAU - Soraru, Gianni
-AU  - Soraru G
-AD  - Department of Neurosciences, University of Padova, Padova, Italy.
-FAU - Stevanin, Giovanni
-AU  - Stevanin G
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France; Neurogenetics 
-      team, Ecole Pratique des Hautes Etudes, Paris, France.
-FAU - Kabashi, Edor
-AU  - Kabashi E
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Troakes, Claire
-AU  - Troakes C
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - van Broeckhoven, Christine
-AU  - van Broeckhoven C
-AD  - Neurodegenerative Brain Diseases Group, Department of Molecular Genetics, VIB, 
-      Antwerp, Belgium; Laboratory of Neurogenetics, Insititute Born-Bunge, University 
-      of Antwerp, Antwerp, Belgium.
-FAU - Veldink, Jan H
-AU  - Veldink JH
-AD  - Department of Neurology, Brain Center Rudolf Magnus Institute of Neuroscience, 
-      University Medical Centre Utrecht, Utrecht, the Netherlands.
-FAU - van den Berg, Leonard H
-AU  - van den Berg LH
-AD  - Department of Neurology, Brain Center Rudolf Magnus Institute of Neuroscience, 
-      University Medical Centre Utrecht, Utrecht, the Netherlands.
-FAU - Shaw, Christopher E
-AU  - Shaw CE
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Powell, John F
-AU  - Powell JF
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Al-Chalabi, Ammar
-AU  - Al-Chalabi A
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK. Electronic address: 
-      ammar.al-chalabi@kcl.ac.uk.
-LA  - eng
-GR  - MC_G1000733/MRC_/Medical Research Council/United Kingdom
-GR  - MR/L501529/1/MRC_/Medical Research Council/United Kingdom
-GR  - G0600974/MRC_/Medical Research Council/United Kingdom
-GR  - MALASPINA/APR13/817-791/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G0900688/MRC_/Medical Research Council/United Kingdom
-GR  - JONES/OCT15/958-799/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G0300329/MRC_/Medical Research Council/United Kingdom
-GR  - G0900635/MRC_/Medical Research Council/United Kingdom
-GR  - ALCHALABI-DOBSON/APR14/829-791/MNDA_/Motor Neurone Disease Association/United 
-      Kingdom
-GR  - AL-CHALABI/APR15/844-791/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - MR/M008606/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/L021803/1/MRC_/Medical Research Council/United Kingdom
-GR  - G1100695/MRC_/Medical Research Council/United Kingdom
-GR  - FRATTA/JAN15/946-795/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G0501573/MRC_/Medical Research Council/United Kingdom
-GR  - G0500289/MRC_/Medical Research Council/United Kingdom
-GR  - R35 NS097275/NS/NINDS NIH HHS/United States
-GR  - WT_/Wellcome Trust/United Kingdom
-GR  - MRF-060-0003-RG-SMITH/MRF_/MRF_/United Kingdom
-GR  - SHAW/NOV14/985-797/MNDA_/Motor Neurone Disease Association/United Kingdom
-PT  - Journal Article
-PT  - Meta-Analysis
-PT  - Research Support, Non-U.S. Gov't
-DEP - 20161124
-PL  - United States
-TA  - Neurobiol Aging
-JT  - Neurobiology of aging
-JID - 8100437
-RN  - 0 (ATXN2 protein, human)
-RN  - 0 (Ataxin-2)
-SB  - IM
-MH  - Age of Onset
-MH  - Alleles
-MH  - Amyotrophic Lateral Sclerosis/*genetics
-MH  - Ataxin-2/*genetics
-MH  - Case-Control Studies
-MH  - Female
-MH  - *Genetic Association Studies
-MH  - Humans
-MH  - Male
-MH  - Risk
-MH  - Trinucleotide Repeat Expansion/*genetics
-MH  - Trinucleotide Repeats/*genetics
-PMC - PMC5302215
-OTO - NOTNLM
-OT  - ALS
-OT  - ATXN2
-OT  - Age of onset
-OT  - Amyotrophic lateral sclerosis
-OT  - CAG
-OT  - Expansion
-OT  - Exponential risk
-OT  - Intermediate expansion
-OT  - Risk
-OT  - SCA2
-OT  - Trinucleotide repeat
-OT  - Triplet
-EDAT- 2016/12/27 06:00
-MHDA- 2017/09/29 06:00
-PMCR- 2017/03/01
-CRDT- 2016/12/27 06:00
-PHST- 2016/09/01 00:00 [received]
-PHST- 2016/11/14 00:00 [revised]
-PHST- 2016/11/16 00:00 [accepted]
-PHST- 2017/03/01 00:00 [pmc-release]
-PHST- 2016/12/27 06:00 [pubmed]
-PHST- 2017/09/29 06:00 [medline]
-PHST- 2016/12/27 06:00 [entrez]
-AID - S0197-4580(16)30297-4 [pii]
-AID - 10.1016/j.neurobiolaging.2016.11.010 [doi]
-PST - ppublish
-SO  - Neurobiol Aging. 2017 Mar;51:178.e1-178.e9. doi: 
-      10.1016/j.neurobiolaging.2016.11.010. Epub 2016 Nov 24.
-
 PMID- 28017238
 OWN - NLM
 STAT- MEDLINE
@@ -24174,9 +23881,9 @@ RN  - EC 2.7.1.- (Tbk1 protein, mouse)
 RN  - EC 2.7.11.1 (Protein Serine-Threonine Kinases)
 RN  - EC 2.7.11.1 (TBK1L protein, zebrafish)
 SB  - IM
-CON - Punctum to: Sellier C, Campanari ML, Julie Corbier C, Gaucherot A, Kolb-Cheynel 
-      I, Oulad-Abdelghani M, Ruffenach F, Page A, Ciura S, Kabashi E, 
-      Charlet-Berguerand N. Loss of C9ORF72 impairs autophagy and synergizes with polyQ 
+CON - Punctum to: C Sellier, ML Campanari, Corbier C Julie, A Gaucherot, I 
+      Kolb-Cheynel, M Oulad-Abdelghani, F Ruffenach, A Page, S Ciura, E Kabashi, N 
+      Charlet-Berguerand.. Loss of C9ORF72 impairs autophagy and synergizes with polyQ 
       Ataxin-2 to induce motor neuron dysfunction and cell death. EMBO J. 2016; pii: 
       e201593350.
 MH  - Amyotrophic Lateral Sclerosis/*genetics/pathology
@@ -27562,114 +27269,6 @@ PST - ppublish
 SO  - J Neurol Sci. 2014 Dec 15;347(1-2):375-9. doi: 10.1016/j.jns.2014.10.036. Epub 
       2014 Oct 31.
 
-PMID- 25285812
-OWN - NLM
-STAT- MEDLINE
-DCOM- 20150306
-LR  - 20211021
-IS  - 2168-6157 (Electronic)
-IS  - 2168-6149 (Print)
-IS  - 2168-6149 (Linking)
-VI  - 71
-IP  - 12
-DP  - 2014 Dec
-TI  - Amyotrophic lateral sclerosis risk for spinocerebellar ataxia type 2 ATXN2 CAG 
-      repeat alleles: a meta-analysis.
-PG  - 1529-34
-LID - 10.1001/jamaneurol.2014.2082 [doi]
-AB  - IMPORTANCE: Repeats of CAG in the ataxin 2 gene (ATXN2) in the long-normal range 
-      (sometimes referred to as intermediate) have been identified as modifiers of 
-      amyotrophic lateral sclerosis (ALS) risk. Prior studies have used thresholding 
-      considering various cutoffs for ATXN2 repeat length. OBJECTIVE: To calculate 
-      association between ATXN2 CAG repeat alleles and increased risk of ALS across 
-      multiple ethnic groups. DATA SOURCES: The MEDLINE database was searched for 
-      studies published by December 29, 2013, reporting ATXN2 CAG repeat length in 
-      patients with ALS and controls. STUDY SELECTION: Studies were included if they 
-      reported original data on relative risks or odds ratios (ORs) from ALS and 
-      control populations for individual ATXN2 alleles. Review articles that reported 
-      no new data were not included in the analysis. DATA EXTRACTION AND SYNTHESIS: 
-      Analysis of allele distribution was performed to ensure that all studies followed 
-      identical allele sizing. The ORs, 95% confidence intervals, and population 
-      attributable risk percentages were calculated according to standard procedures. 
-      MAIN OUTCOMES AND MEASURES: Occurrence of ALS associated with ATXN2 repeat 
-      alleles, expressed as ORs. RESULTS: Nine studies were analyzed, including 7505 
-      controls and 6151 sporadic ALS cases. The ALS and control cohorts were recruited 
-      from different geographical and ethnic regions including the United States, 
-      French Canada/Canada, Belgium and the Netherlands, Germany, Italy, mainland 
-      China, Turkey, and Flanders-Belgium. The ATXN2 CAG repeat lengths ranged from 13 
-      to 39 in patients with ALS and from 13 to 34 in controls. The ORs were less than 
-      1.00 for alleles with 25 to 28 repeats. The OR was 1.55 for 30 repeats, but this 
-      elevation was not statistically significant (95% CI, 0.88-2.73). The ORs were 
-      2.70 (95% CI, 1.47-4.93) for 31 CAG repeats, 11.09 (95% CI, 4.16-29.57) for 32 
-      repeats, and 5.76 (95% CI, 1.79-18.57) for 33 repeats. CONCLUSIONS AND RELEVANCE: 
-      In contrast to prior studies with smaller numbers, risk for ALS associated with 
-      long-normal alleles is complex. Alleles with 27 and 28 repeats lower ALS risk 
-      slightly. The risk for ALS increases beginning with 29 repeats and reaches a 
-      maximum at 32 and 33 repeats. Of note, alleles with repeats of these lengths are 
-      known to be predisposed to meiotic expansion to full-penetrance mutant alleles. 
-      In patients with ALS, alleles with 31 to 33 repeats may have undergone 
-      preferential expansion in motor neurons during mitosis or DNA repair. Our 
-      meta-analysis provides a framework for counseling individuals with long-normal 
-      ATXN2 repeats.
-FAU - Neuenschwander, Annalese G
-AU  - Neuenschwander AG
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-FAU - Thai, Khanh K
-AU  - Thai KK
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-FAU - Figueroa, Karla P
-AU  - Figueroa KP
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-FAU - Pulst, Stefan M
-AU  - Pulst SM
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-LA  - eng
-GR  - R21NS081182/NS/NINDS NIH HHS/United States
-GR  - R01NS33123/NS/NINDS NIH HHS/United States
-GR  - R21NS079852/NS/NINDS NIH HHS/United States
-GR  - R37 NS033123/NS/NINDS NIH HHS/United States
-GR  - R01 NS033123/NS/NINDS NIH HHS/United States
-GR  - M01 RR000425/RR/NCRR NIH HHS/United States
-GR  - R21 NS079852/NS/NINDS NIH HHS/United States
-GR  - RC4 NS073009/NS/NINDS NIH HHS/United States
-GR  - RC4NS073009/NS/NINDS NIH HHS/United States
-GR  - R21 NS081182/NS/NINDS NIH HHS/United States
-GR  - R56 NS033123/NS/NINDS NIH HHS/United States
-PT  - Journal Article
-PT  - Meta-Analysis
-PT  - Research Support, N.I.H., Extramural
-PT  - Research Support, Non-U.S. Gov't
-PL  - United States
-TA  - JAMA Neurol
-JT  - JAMA neurology
-JID - 101589536
-RN  - 0 (Ataxins)
-RN  - 0 (Nerve Tissue Proteins)
-SB  - IM
-EIN - JAMA Neurol. 2015 Jan;72(1):128
-MH  - Amyotrophic Lateral Sclerosis/*genetics
-MH  - Ataxins
-MH  - Humans
-MH  - Nerve Tissue Proteins/*genetics
-MH  - Trinucleotide Repeat Expansion/*genetics
-PMC - PMC4939089
-MID - NIHMS788691
-COIS- Conflict of Interest Disclosures: Dr Pulst has received royalties from 
-      Cedars-Sinai Medical Center and is a consultant for Progenitor Lifesciences. No 
-      other disclosures were reported.
-EDAT- 2014/10/07 06:00
-MHDA- 2015/03/07 06:00
-PMCR- 2016/07/09
-CRDT- 2014/10/07 06:00
-PHST- 2014/10/07 06:00 [entrez]
-PHST- 2014/10/07 06:00 [pubmed]
-PHST- 2015/03/07 06:00 [medline]
-PHST- 2016/07/09 00:00 [pmc-release]
-AID - 1910853 [pii]
-AID - 10.1001/jamaneurol.2014.2082 [doi]
-PST - ppublish
-SO  - JAMA Neurol. 2014 Dec;71(12):1529-34. doi: 10.1001/jamaneurol.2014.2082.
-
 PMID- 25189938
 OWN - NLM
 STAT- MEDLINE
@@ -29746,7 +29345,6 @@ PST - ppublish
 SO  - Neurobiol Aging. 2014 Jul;35(7):1779.e17-21. doi: 
       10.1016/j.neurobiolaging.2014.01.022. Epub 2014 Jan 25.
 
-
 PMID- 24269018
 OWN - NLM
 STAT- MEDLINE
@@ -29981,6 +29579,7 @@ AID - 10.1016/j.jns.2013.10.012 [doi]
 PST - ppublish
 SO  - J Neurol Sci. 2014 Jan 15;336(1-2):87-92. doi: 10.1016/j.jns.2013.10.012. Epub 
       2013 Oct 16.
+
 
 PMID- 23959108
 OWN - NLM

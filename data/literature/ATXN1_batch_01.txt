@@ -1,12 +1,13 @@
 
 PMID- 41435767
 OWN - NLM
-STAT- Publisher
-LR  - 20251223
+STAT- MEDLINE
+DCOM- 20260119
+LR  - 20260119
 IS  - 1476-928X (Electronic)
 IS  - 1476-9271 (Linking)
 VI  - 121
-DP  - 2025 Dec 11
+DP  - 2026 Apr
 TI  - Valosin-Containing Protein as a therapeutic target in CAG repeat-driven 
       Spinocerebellar ataxias: Integrative transcriptomic and computational insights.
 PG  - 108838
@@ -82,7 +83,15 @@ PL  - England
 TA  - Comput Biol Chem
 JT  - Computational biology and chemistry
 JID - 101157394
+RN  - EC 3.6.4.6 (Valosin Containing Protein)
+RN  - EC 3.6.4.6 (VCP protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Valosin Containing Protein/genetics/metabolism/antagonists & inhibitors
+MH  - *Spinocerebellar Ataxias/genetics/drug therapy/metabolism
+MH  - *Transcriptome/drug effects
+MH  - Molecular Docking Simulation
+MH  - Molecular Dynamics Simulation
 OTO - NOTNLM
 OT  - ADMET
 OT  - ELISA
@@ -96,19 +105,19 @@ OT  - VCP
 COIS- Declaration of Competing Interest The authors declare that there is no conflict 
       of interest.
 EDAT- 2025/12/24 00:33
-MHDA- 2025/12/24 00:33
+MHDA- 2026/01/20 00:37
 CRDT- 2025/12/23 18:13
 PHST- 2025/09/18 00:00 [received]
 PHST- 2025/11/24 00:00 [revised]
 PHST- 2025/12/07 00:00 [accepted]
-PHST- 2025/12/24 00:33 [medline]
+PHST- 2026/01/20 00:37 [medline]
 PHST- 2025/12/24 00:33 [pubmed]
 PHST- 2025/12/23 18:13 [entrez]
 AID - S1476-9271(25)00502-X [pii]
 AID - 10.1016/j.compbiolchem.2025.108838 [doi]
-PST - aheadofprint
-SO  - Comput Biol Chem. 2025 Dec 11;121:108838. doi: 
-      10.1016/j.compbiolchem.2025.108838.
+PST - ppublish
+SO  - Comput Biol Chem. 2026 Apr;121:108838. doi: 10.1016/j.compbiolchem.2025.108838. 
+      Epub 2025 Dec 11.
 
 PMID- 41426430
 OWN - NLM
@@ -336,13 +345,14 @@ SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482.
 
 PMID- 41254939
 OWN - NLM
-STAT- Publisher
-LR  - 20251225
+STAT- MEDLINE
+DCOM- 20260116
+LR  - 20260116
 IS  - 2666-2477 (Electronic)
 IS  - 2666-2477 (Linking)
 VI  - 7
 IP  - 1
-DP  - 2025 Nov 17
+DP  - 2026 Jan 15
 TI  - Unbiased human genomic characterization of polyglutamine disorder genes to guide 
       biological understanding and therapeutic strategies.
 PG  - 100547
@@ -374,7 +384,7 @@ AB  - Polyglutamine (polyQ) disorders, such as Huntington disease (HD) and sever
       drug targets. These findings reinforce the importance of exploring alternative 
       therapeutic strategies, such as targeting genetic modifier genes, as well as 
       allele-selective approaches, to mitigate these challenges.
-CI  - Copyright (c) 2025. Published by Elsevier Inc.
+CI  - Copyright (c) 2025 The Authors. Published by Elsevier Inc. All rights reserved.
 FAU - Namuli, Kevin Lucy
 AU  - Namuli KL
 AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
@@ -400,7 +410,16 @@ PL  - United States
 TA  - HGG Adv
 JT  - HGG advances
 JID - 101772885
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
 SB  - IM
+MH  - Humans
+MH  - *Peptides/genetics
+MH  - *Genomics/methods
+MH  - *Huntington Disease/genetics/therapy
+MH  - *Genome, Human
+MH  - Phenotype
+MH  - Genome-Wide Association Study
 PMC - PMC12719159
 OTO - NOTNLM
 OT  - Huntington disease
@@ -412,21 +431,22 @@ OT  - spinocerebellar ataxia
 OT  - therapeutic targets
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2025/11/19 06:32
-MHDA- 2025/11/19 06:32
+MHDA- 2026/01/17 00:37
 PMCR- 2025/11/17
 CRDT- 2025/11/19 01:36
 PHST- 2025/07/09 00:00 [received]
 PHST- 2025/11/11 00:00 [revised]
 PHST- 2025/11/11 00:00 [accepted]
+PHST- 2026/01/17 00:37 [medline]
 PHST- 2025/11/19 06:32 [pubmed]
-PHST- 2025/11/19 06:32 [medline]
 PHST- 2025/11/19 01:36 [entrez]
 PHST- 2025/11/17 00:00 [pmc-release]
 AID - S2666-2477(25)00150-2 [pii]
 AID - 100547 [pii]
 AID - 10.1016/j.xhgg.2025.100547 [doi]
-PST - aheadofprint
-SO  - HGG Adv. 2025 Nov 17;7(1):100547. doi: 10.1016/j.xhgg.2025.100547.
+PST - ppublish
+SO  - HGG Adv. 2026 Jan 15;7(1):100547. doi: 10.1016/j.xhgg.2025.100547. Epub 2025 Nov 
+      17.
 
 PMID- 41149812
 OWN - NLM
