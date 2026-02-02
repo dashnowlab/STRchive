@@ -479,6 +479,9 @@ perform_new_pubmed_query <- function() {
   return(file_path)
 }
 
+# Fetch publications for potential new loci
+perform_new_pubmed_query()
+
 #
 # ### Let's get all the citations to run manubot on
 extract_citations <- function(column) {
