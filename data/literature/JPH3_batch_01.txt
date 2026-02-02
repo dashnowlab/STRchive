@@ -791,7 +791,7 @@ PMID- 35926480
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221118
-LR  - 20221201
+LR  - 20260127
 IS  - 1660-2862 (Electronic)
 IS  - 1660-2854 (Linking)
 VI  - 22
@@ -881,6 +881,7 @@ MH  - Trinucleotide Repeat Expansion/genetics
 MH  - *Neuroacanthocytosis/genetics
 MH  - Mexico
 MH  - *Huntington Disease/genetics/epidemiology
+MH  - Heredodegenerative Disorders, Nervous System
 OTO - NOTNLM
 OT  - Choreoacanthocytosis
 OT  - HTT gene
@@ -1831,7 +1832,7 @@ PMID- 29066237
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180702
-LR  - 20181202
+LR  - 20260127
 IS  - 1532-2653 (Electronic)
 IS  - 0967-5868 (Linking)
 VI  - 47
@@ -1914,7 +1915,7 @@ PMID- 27400454
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170530
-LR  - 20220408
+LR  - 20260127
 IS  - 2168-6157 (Electronic)
 IS  - 2168-6149 (Linking)
 VI  - 73
@@ -2066,13 +2067,14 @@ PL  - United States
 TA  - JAMA Neurol
 JT  - JAMA neurology
 JID - 101589536
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
-RN  - 0 (HTT protein, human)
 RN  - 0 (Huntingtin Protein)
 RN  - 0 (Membrane Proteins)
-RN  - 0 (VPS13A protein, human)
 RN  - 0 (Vesicular Transport Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
+RN  - 0 (HTT protein, human)
+RN  - 0 (VPS13A protein, human)
 RN  - 0 (junctophilin)
 SB  - IM
 CIN - JAMA Neurol. 2016 Sep 1;73(9):1056-8. doi: 10.1001/jamaneurol.2016.2095. PMID: 
@@ -2094,6 +2096,7 @@ MH  - Phenotype
 MH  - Retrospective Studies
 MH  - Trinucleotide Repeat Expansion/*genetics
 MH  - Vesicular Transport Proteins/genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2016/07/12 06:00
 MHDA- 2017/05/31 06:00
 CRDT- 2016/07/12 06:00
@@ -2968,7 +2971,7 @@ PMID- 16858508
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20061006
-LR  - 20250529
+LR  - 20260128
 IS  - 1434-5161 (Print)
 IS  - 1435-232X (Electronic)
 IS  - 1434-5161 (Linking)

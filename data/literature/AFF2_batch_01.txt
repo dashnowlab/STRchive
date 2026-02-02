@@ -327,7 +327,7 @@ PMID- 34111553
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220117
-LR  - 20220117
+LR  - 20260127
 IS  - 1943-7811 (Electronic)
 IS  - 1525-1578 (Linking)
 VI  - 23
@@ -420,16 +420,16 @@ PL  - United States
 TA  - J Mol Diagn
 JT  - The Journal of molecular diagnostics : JMD
 JID - 100893612
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (Nuclear Proteins)
 RN  - 0 (AFF2 protein, human)
 RN  - 0 (FMR1 protein, human)
-RN  - 0 (Nuclear Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 SB  - IM
 EIN - J Mol Diagn. 2021 Oct;23(10):1414. doi: 10.1016/j.jmoldx.2021.08.001. PMID: 
       34384738
 MH  - Alleles
 MH  - Electrophoresis, Capillary
-MH  - Fragile X Mental Retardation Protein/*genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/*genetics
 MH  - Fragile X Syndrome/*diagnosis/*genetics
 MH  - Genetic Association Studies
 MH  - Genetic Predisposition to Disease
@@ -579,7 +579,7 @@ PMID- 25171808
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150724
-LR  - 20141203
+LR  - 20260128
 IS  - 1096-1194 (Electronic)
 IS  - 0890-8508 (Linking)
 VI  - 28
@@ -637,12 +637,12 @@ PL  - England
 TA  - Mol Cell Probes
 JT  - Molecular and cellular probes
 JID - 8709751
-RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 RN  - 9007-49-2 (DNA)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - DNA/chemistry/genetics
-MH  - Fragile X Mental Retardation Protein/*genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/*genetics
 MH  - Fragile X Syndrome/diagnosis/*genetics
 MH  - Gene Frequency
 MH  - *Genetic Testing
@@ -978,7 +978,7 @@ PMID- 21254876
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110727
-LR  - 20221207
+LR  - 20260128
 IS  - 1945-0257 (Electronic)
 IS  - 1945-0257 (Linking)
 VI  - 15
@@ -1026,16 +1026,16 @@ PL  - United States
 TA  - Genet Test Mol Biomarkers
 JT  - Genetic testing and molecular biomarkers
 JID - 101494210
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (Nuclear Proteins)
 RN  - 0 (AFF2 protein, human)
 RN  - 0 (FMR1 protein, human)
-RN  - 0 (Nuclear Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 SB  - IM
 MH  - Alleles
 MH  - Chromosomes, Human, X/genetics
 MH  - Ethnicity/genetics
 MH  - Female
-MH  - Fragile X Mental Retardation Protein/*genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/*genetics
 MH  - Fragile X Syndrome/epidemiology/*genetics
 MH  - Gene Frequency
 MH  - Humans
@@ -1146,7 +1146,7 @@ PMID- 17635840
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20080124
-LR  - 20111117
+LR  - 20260128
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
 VI  - 16
@@ -1195,13 +1195,13 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
-RN  - 0 (AGO2 protein, Drosophila)
 RN  - 0 (Argonaute Proteins)
 RN  - 0 (Drosophila Proteins)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 147336-22-9 (Green Fluorescent Proteins)
 RN  - 0 (RNA-Induced Silencing Complex)
 RN  - 0 (Recombinant Fusion Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - 147336-22-9 (Green Fluorescent Proteins)
+RN  - 0 (AGO2 protein, Drosophila)
 SB  - IM
 MH  - Animals
 MH  - Animals, Genetically Modified
@@ -1214,7 +1214,7 @@ MH  - Drosophila/genetics/physiology/ultrastructure
 MH  - Drosophila Proteins/*genetics/physiology
 MH  - Eye/metabolism/pathology/ultrastructure
 MH  - Female
-MH  - Fragile X Mental Retardation Protein/*genetics/physiology
+MH  - Fragile X Messenger Ribonucleoprotein 1/*genetics/physiology
 MH  - Fragile X Syndrome/*genetics/pathology/physiopathology
 MH  - Green Fluorescent Proteins/genetics/metabolism
 MH  - Humans
@@ -1425,7 +1425,7 @@ PMID- 11119302
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20010308
-LR  - 20061115
+LR  - 20260128
 IS  - 0741-0395 (Print)
 IS  - 0741-0395 (Linking)
 VI  - 20
@@ -1470,14 +1470,14 @@ PL  - United States
 TA  - Genet Epidemiol
 JT  - Genetic epidemiology
 JID - 8411723
-RN  - 0 (AFF2 protein, human)
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (RNA-Binding Proteins)
 RN  - 0 (Trans-Activators)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (AFF2 protein, human)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -1485,7 +1485,7 @@ MH  - Aged
 MH  - Blotting, Southern
 MH  - Child
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/*epidemiology/*genetics
 MH  - Heterozygote
 MH  - Humans
@@ -1681,7 +1681,7 @@ PMID- 10424820
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19990831
-LR  - 20111117
+LR  - 20260128
 IS  - 0022-2593 (Print)
 IS  - 1468-6244 (Electronic)
 IS  - 0022-2593 (Linking)
@@ -1728,19 +1728,19 @@ PL  - England
 TA  - J Med Genet
 JT  - Journal of medical genetics
 JID - 2985087R
-RN  - 0 (AFF2 protein, human)
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (RNA-Binding Proteins)
 RN  - 0 (Trans-Activators)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (AFF2 protein, human)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Adolescent
 MH  - Chromosome Banding
 MH  - Epilepsy/complications
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/complications/*genetics
 MH  - Humans
 MH  - Intellectual Disability/*genetics
@@ -1905,7 +1905,7 @@ PMID- 9415473
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980202
-LR  - 20190905
+LR  - 20260128
 IS  - 0148-7299 (Print)
 IS  - 0148-7299 (Linking)
 VI  - 73
@@ -1949,15 +1949,15 @@ PL  - United States
 TA  - Am J Med Genet
 JT  - American journal of medical genetics
 JID - 7708900
-RN  - 0 (AFF2 protein, human)
-RN  - 0 (FMR1 protein, human)
+RN  - EC 3.1.21.- (Deoxyribonuclease HindIII)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (RNA-Binding Proteins)
 RN  - 0 (Trans-Activators)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - EC 3.1.21.- (Deoxyribonuclease HindIII)
+RN  - 0 (AFF2 protein, human)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Base Sequence
 MH  - Blotting, Southern
@@ -1965,7 +1965,7 @@ MH  - Chromosome Fragile Sites
 MH  - *Chromosome Fragility
 MH  - Deoxyribonuclease HindIII/genetics
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/*genetics
 MH  - Heterozygote
 MH  - Humans
@@ -1993,7 +1993,7 @@ PMID- 9341861
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19971119
-LR  - 20190722
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 100
@@ -2041,14 +2041,14 @@ PL  - Germany
 TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
-RN  - 0 (AFF2 protein, human)
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (RNA-Binding Proteins)
 RN  - 0 (Trans-Activators)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (AFF2 protein, human)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -2058,7 +2058,7 @@ MH  - Chromosome Fragile Sites
 MH  - Chromosome Fragility
 MH  - DNA Methylation
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/*genetics
 MH  - Genetic Testing
 MH  - Humans
@@ -2090,7 +2090,7 @@ PMID- 8808600
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19961121
-LR  - 20200824
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -2147,17 +2147,17 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
-RN  - 0 (AFF2 protein, human)
-RN  - 0 (FMR1 protein, human)
+RN  - EC 3.1.21.- (Deoxyribonuclease EcoRI)
+RN  - EC 3.1.21.4 (Deoxyribonucleases, Type II Site-Specific)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (RNA-Binding Proteins)
 RN  - 0 (Trans-Activators)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - EC 3.1.21.- (Deoxyribonuclease EcoRI)
+RN  - 0 (AFF2 protein, human)
+RN  - 0 (FMR1 protein, human)
 RN  - EC 3.1.21.- (endodeoxyribonuclease XmaIII)
-RN  - EC 3.1.21.4 (Deoxyribonucleases, Type II Site-Specific)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -2169,7 +2169,7 @@ MH  - *Chromosome Fragility
 MH  - Deoxyribonuclease EcoRI/metabolism
 MH  - Deoxyribonucleases, Type II Site-Specific/metabolism
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/*genetics
 MH  - Humans
 MH  - Infant
@@ -2198,7 +2198,7 @@ PMID- 8844091
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19961213
-LR  - 20061115
+LR  - 20260128
 IS  - 0148-7299 (Print)
 IS  - 0148-7299 (Linking)
 VI  - 64
@@ -2247,10 +2247,10 @@ PL  - United States
 TA  - Am J Med Genet
 JT  - American journal of medical genetics
 JID - 7708900
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (RNA-Binding Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Autistic Disorder/*genetics
 MH  - Child
@@ -2258,7 +2258,7 @@ MH  - Child Development Disorders, Pervasive/*genetics
 MH  - Chromosome Mapping
 MH  - Family
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Humans
 MH  - Male
 MH  - Microsatellite Repeats
@@ -2283,7 +2283,7 @@ PMID- 8755928
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19960925
-LR  - 20200824
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -2331,17 +2331,17 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - EC 2.4.2.8 (Hypoxanthine Phosphoribosyltransferase)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (RNA-Binding Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - EC 2.4.2.8 (Hypoxanthine Phosphoribosyltransferase)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Cells, Cultured
 MH  - *DNA Replication
 MH  - Erythroid Precursor Cells/cytology
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/*genetics
 MH  - Humans
 MH  - Hypoxanthine Phosphoribosyltransferase
@@ -2369,7 +2369,7 @@ PMID- 8673086
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19960809
-LR  - 20111117
+LR  - 20260128
 IS  - 1061-4036 (Print)
 IS  - 1061-4036 (Linking)
 VI  - 13
@@ -2416,14 +2416,14 @@ PL  - United States
 TA  - Nat Genet
 JT  - Nature genetics
 JID - 9216904
-RN  - 0 (AFF2 protein, human)
 RN  - 0 (DNA Primers)
 RN  - 0 (Dinucleoside Phosphates)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (RNA, Messenger)
 RN  - 0 (Trans-Activators)
-RN  - 2382-65-2 (cytidylyl-3'-5'-guanosine)
+RN  - 0 (AFF2 protein, human)
+RN  - 2382-65-2 (CpG dinucleotide)
 SB  - IM
 MH  - Adult
 MH  - Amino Acid Sequence
@@ -2530,7 +2530,7 @@ PMID- 7783163
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19950720
-LR  - 20190503
+LR  - 20260128
 IS  - 0022-2593 (Print)
 IS  - 1468-6244 (Electronic)
 IS  - 0022-2593 (Linking)
@@ -2567,11 +2567,11 @@ PL  - England
 TA  - J Med Genet
 JT  - Journal of medical genetics
 JID - 2985087R
-RN  - 0 (FMR1 protein, human)
+RN  - EN464416SI (Ethidium)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (RNA-Binding Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - EN464416SI (Ethidium)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 GS  - FMR-1
 MH  - Alleles
@@ -2579,7 +2579,7 @@ MH  - Base Sequence
 MH  - *Chromosome Fragility
 MH  - Ethidium/chemistry
 MH  - Female
-MH  - Fragile X Mental Retardation Protein
+MH  - Fragile X Messenger Ribonucleoprotein 1
 MH  - Fragile X Syndrome/genetics/prevention & control
 MH  - Genetic Testing/*methods
 MH  - Heterozygote
@@ -2786,7 +2786,7 @@ PMID- 8023854
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19940729
-LR  - 20200824
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -2827,9 +2827,9 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
-RN  - 0 (Dinucleoside Phosphates)
-RN  - 2382-65-2 (cytidylyl-3'-5'-guanosine)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Dinucleoside Phosphates)
+RN  - 2382-65-2 (CpG dinucleotide)
 SB  - IM
 MH  - DNA/genetics
 MH  - Dinucleoside Phosphates/genetics

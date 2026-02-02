@@ -316,14 +316,19 @@ SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482.
 
 PMID- 41318543
 OWN - NLM
-STAT- Publisher
-LR  - 20251129
+STAT- MEDLINE
+DCOM- 20260106
+LR  - 20260109
 IS  - 2041-1723 (Electronic)
 IS  - 2041-1723 (Linking)
+VI  - 17
+IP  - 1
 DP  - 2025 Nov 29
 TI  - Microgliopathy as a primary mediator of neuronal death in models of Friedreich's 
       Ataxia.
+PG  - 81
 LID - 10.1038/s41467-025-66710-y [doi]
+LID - 81
 AB  - Friedreich's ataxia (FRDA) is an incurable neurodegenerative disorder caused by a 
       GAA repeat expansion in the frataxin (FXN) gene, leading to a severe reduction of 
       the mitochondrial FXN protein, crucial for iron metabolism. While microglial 
@@ -393,18 +398,42 @@ AD  - Department of Pediatrics, University of California San Diego, La jolla, CA
 AD  - Sanford Consortium for Regenerative Medicine, La Jolla, CA, USA. 
       ncoufal@health.ucsd.edu.
 LA  - eng
-GR  - TRAN1-13983/California Institute for Regenerative Medicine (CIRM)/
-GR  - EDUC2-08388/California Institute for Regenerative Medicine (CIRM)/
-GR  - TRAN1-13983/California Institute for Regenerative Medicine (CIRM)/
 GR  - R01NS135162/Foundation for the National Institutes of Health (Foundation for the 
       National Institutes of Health, Inc.)/
+GR  - TRAN1-13983/California Institute for Regenerative Medicine (CIRM)/
+GR  - EDUC2-08388/California Institute for Regenerative Medicine (CIRM)/
+GR  - S10 OD025060/OD/NIH HHS/United States
+GR  - R01 NS135162/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20251129
 PL  - England
 TA  - Nat Commun
 JT  - Nature communications
 JID - 101528555
+RN  - 0 (Frataxin)
+RN  - 0 (Iron-Binding Proteins)
+RN  - E1UOL152H7 (Iron)
 SB  - IM
+MH  - *Friedreich Ataxia/pathology/genetics/metabolism
+MH  - Animals
+MH  - *Microglia/pathology/metabolism
+MH  - Humans
+MH  - Induced Pluripotent Stem Cells/metabolism
+MH  - Mice
+MH  - Frataxin
+MH  - Disease Models, Animal
+MH  - Iron-Binding Proteins/genetics/metabolism
+MH  - Cell Death
+MH  - Mitochondria/metabolism/pathology
+MH  - *Neurons/pathology/metabolism
+MH  - Purkinje Cells/pathology/metabolism
+MH  - Trinucleotide Repeat Expansion
+MH  - Iron/metabolism
+MH  - Male
+MH  - Female
+MH  - White Matter/pathology
+MH  - CRISPR-Cas Systems
+PMC - PMC12770375
 COIS- Competing interests: S.C. is a cofounder, shareholder, and member of both the 
       Scientific Board and board of directors of Papillon Therapeutics Inc. S.C. also 
       serves as a member of the Scientific Review Board and Board of Trustees of the 
@@ -417,17 +446,20 @@ COIS- Competing interests: S.C. is a cofounder, shareholder, and member of both 
       approved by the University of California, San Diego in accordance with its 
       conflict-of-interest policies. All other authors declare no conflict of interest.
 EDAT- 2025/11/30 00:30
-MHDA- 2025/11/30 00:30
+MHDA- 2026/01/06 19:17
+PMCR- 2025/11/29
 CRDT- 2025/11/29 23:17
 PHST- 2025/01/31 00:00 [received]
 PHST- 2025/11/13 00:00 [accepted]
-PHST- 2025/11/30 00:30 [medline]
+PHST- 2026/01/06 19:17 [medline]
 PHST- 2025/11/30 00:30 [pubmed]
 PHST- 2025/11/29 23:17 [entrez]
+PHST- 2025/11/29 00:00 [pmc-release]
 AID - 10.1038/s41467-025-66710-y [pii]
+AID - 66710 [pii]
 AID - 10.1038/s41467-025-66710-y [doi]
-PST - aheadofprint
-SO  - Nat Commun. 2025 Nov 29. doi: 10.1038/s41467-025-66710-y.
+PST - epublish
+SO  - Nat Commun. 2025 Nov 29;17(1):81. doi: 10.1038/s41467-025-66710-y.
 
 PMID- 41301739
 OWN - NLM
@@ -674,7 +706,7 @@ PMID- 41176519
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251102
-LR  - 20251201
+LR  - 20260127
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -1936,7 +1968,7 @@ PMID- 40880907
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20250915
-LR  - 20250915
+LR  - 20260114
 IS  - 2376-7839 (Print)
 IS  - 2376-7839 (Electronic)
 IS  - 2376-7839 (Linking)
@@ -2002,10 +2034,10 @@ PMCR- 2026/01/13
 CRDT- 2025/08/29 14:18
 PHST- 2024/07/30 00:00 [received]
 PHST- 2024/11/21 00:00 [accepted]
-PHST- 2026/01/13 00:00 [pmc-release]
 PHST- 2025/08/29 20:45 [medline]
 PHST- 2025/08/29 20:44 [pubmed]
 PHST- 2025/08/29 14:18 [entrez]
+PHST- 2026/01/13 00:00 [pmc-release]
 AID - NXG-2024-100213 [pii]
 AID - 10.1212/NXG.0000000000200234 [doi]
 PST - epublish
@@ -2653,7 +2685,7 @@ PMID- 40296143
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250429
-LR  - 20250501
+LR  - 20260127
 IS  - 1756-8935 (Electronic)
 IS  - 1756-8935 (Linking)
 VI  - 18
@@ -2731,14 +2763,14 @@ PL  - England
 TA  - Epigenetics Chromatin
 JT  - Epigenetics & chromatin
 JID - 101471619
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - EC 3.6.1.3 (MutS Homolog 2 Protein)
-RN  - EC 3.6.1.3 (MSH2 protein, human)
 RN  - 0 (Frataxin)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (FMR1 protein, human)
+RN  - EC 3.6.1.3 (MSH2 protein, human)
 SB  - IM
-MH  - *Fragile X Mental Retardation Protein/genetics/metabolism
+MH  - *Fragile X Messenger Ribonucleoprotein 1/genetics/metabolism
 MH  - *DNA Methylation
 MH  - *Friedreich Ataxia/genetics/metabolism
 MH  - *Fragile X Syndrome/genetics/metabolism
@@ -3690,7 +3722,7 @@ PMID- 39496895
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250109
-LR  - 20250708
+LR  - 20260102
 IS  - 1476-5438 (Electronic)
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)
@@ -3813,10 +3845,10 @@ CRDT- 2024/11/04 23:37
 PHST- 2024/05/15 00:00 [received]
 PHST- 2024/10/27 00:00 [accepted]
 PHST- 2024/09/17 00:00 [revised]
-PHST- 2026/01/01 00:00 [pmc-release]
 PHST- 2025/01/09 06:22 [medline]
 PHST- 2024/11/05 00:21 [pubmed]
 PHST- 2024/11/04 23:37 [entrez]
+PHST- 2026/01/01 00:00 [pmc-release]
 AID - 10.1038/s41431-024-01728-2 [pii]
 AID - 1728 [pii]
 AID - 10.1038/s41431-024-01728-2 [doi]
@@ -3828,7 +3860,7 @@ PMID- 39324476
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250103
-LR  - 20250325
+LR  - 20260202
 IS  - 1552-4833 (Electronic)
 IS  - 1552-4825 (Print)
 IS  - 1552-4825 (Linking)
@@ -3957,10 +3989,10 @@ CRDT- 2024/09/26 06:33
 PHST- 2024/09/05 00:00 [revised]
 PHST- 2024/07/08 00:00 [received]
 PHST- 2024/09/14 00:00 [accepted]
-PHST- 2026/02/01 00:00 [pmc-release]
 PHST- 2025/01/03 06:21 [medline]
 PHST- 2024/09/26 12:43 [pubmed]
 PHST- 2024/09/26 06:33 [entrez]
+PHST- 2026/02/01 00:00 [pmc-release]
 AID - 10.1002/ajmg.a.63890 [doi]
 PST - ppublish
 SO  - Am J Med Genet A. 2025 Feb;197(2):e63890. doi: 10.1002/ajmg.a.63890. Epub 2024 
@@ -4357,7 +4389,7 @@ PMID- 38936158
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240802
-LR  - 20250609
+LR  - 20260127
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Linking)
 VI  - 79
@@ -4408,15 +4440,15 @@ PL  - England
 TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
-RN  - 0 (Basic Helix-Loop-Helix Transcription Factors)
+RN  - 0 (Basic Helix-Loop-Helix Proteins)
 RN  - 0 (Nerve Tissue Proteins)
-RN  - 0 (NEUROG2 protein, human)
 RN  - 0 (Frataxin)
+RN  - 0 (NEUROG2 protein, human)
 SB  - IM
 MH  - *Friedreich Ataxia/genetics/pathology/metabolism
 MH  - *Induced Pluripotent Stem Cells/metabolism
 MH  - Humans
-MH  - *Basic Helix-Loop-Helix Transcription Factors/metabolism/genetics
+MH  - *Basic Helix-Loop-Helix Proteins/metabolism/genetics
 MH  - *Nerve Tissue Proteins/metabolism/genetics
 MH  - Cell Line
 MH  - Cell Differentiation
@@ -5244,7 +5276,7 @@ PMID- 37891254
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20231030
-LR  - 20240210
+LR  - 20260127
 IS  - 2399-3642 (Electronic)
 IS  - 2399-3642 (Linking)
 VI  - 6
@@ -5320,6 +5352,7 @@ TA  - Commun Biol
 JT  - Communications biology
 JID - 101719179
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 UOF - Res Sq. 2023 Jun 29:rs.3.rs-3121549. doi: 10.21203/rs.3.rs-3121549/v1. PMID: 
       37461697
@@ -5678,7 +5711,7 @@ PMID- 36800320
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230302
-LR  - 20250719
+LR  - 20260127
 IS  - 1520-6882 (Electronic)
 IS  - 0003-2700 (Print)
 IS  - 0003-2700 (Linking)
@@ -5777,6 +5810,7 @@ TA  - Anal Chem
 JT  - Analytical chemistry
 JID - 0370536
 RN  - 0 (Biomarkers)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Humans
@@ -6004,7 +6038,7 @@ PMID- 36638893
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230131
-LR  - 20231213
+LR  - 20260127
 IS  - 1095-953X (Electronic)
 IS  - 0969-9961 (Print)
 IS  - 0969-9961 (Linking)
@@ -6084,6 +6118,7 @@ TA  - Neurobiol Dis
 JT  - Neurobiology of disease
 JID - 9500169
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Mice
 MH  - Animals
@@ -6443,7 +6478,7 @@ PMID- 36511872
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230117
-LR  - 20240715
+LR  - 20260127
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -6539,6 +6574,7 @@ RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Oligonucleotides, Antisense)
 RN  - 0 (RNA, Messenger)
 RN  - 0 (DNA-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Humans
 MH  - *Friedreich Ataxia/genetics
@@ -6571,7 +6607,7 @@ PMID- 36369844
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230113
-LR  - 20231213
+LR  - 20260127
 IS  - 2324-9269 (Electronic)
 IS  - 2324-9269 (Linking)
 VI  - 11
@@ -6649,6 +6685,7 @@ PL  - United States
 TA  - Mol Genet Genomic Med
 JT  - Molecular genetics & genomic medicine
 JID - 101603758
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Humans
 MH  - *Friedreich Ataxia/genetics/metabolism/pathology
@@ -7083,7 +7120,7 @@ PMID- 35708503
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221014
-LR  - 20231213
+LR  - 20260127
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -7161,14 +7198,15 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
+RN  - JAC85A2161 (Adenine)
 RN  - 0 (Arsenicals)
+RN  - CH46OC8YV4 (Gallium)
+RN  - 5Z93L87A1R (Guanine)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Oligonucleotides, Antisense)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 RN  - 27FC46GA44 (gallium arsenide)
-RN  - 5Z93L87A1R (Guanine)
-RN  - CH46OC8YV4 (Gallium)
-RN  - JAC85A2161 (Adenine)
 SB  - IM
 MH  - Adenine
 MH  - Arsenicals
@@ -7428,7 +7466,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20250530
+LR  - 20260127
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -7586,8 +7624,8 @@ PL  - England
 TA  - Lancet Neurol
 JT  - The Lancet. Neurology
 JID - 101139309
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 SB  - IM
 CIN - Lancet Neurol. 2022 Mar;21(3):203. doi: 10.1016/S1474-4422(22)00046-1. PMID: 
       35182497
@@ -7597,7 +7635,7 @@ CIN - Lancet Neurol. 2022 Mar;21(3):222. doi: 10.1016/S1474-4422(22)00048-5. PMI
       35182508
 MH  - Child
 MH  - *DNA Repeat Expansion
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Humans
 MH  - Prospective Studies
 MH  - Retrospective Studies
@@ -8598,7 +8636,7 @@ PMID- 34747814
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20211110
-LR  - 20231213
+LR  - 20260127
 IS  - 1998-4022 (Electronic)
 IS  - 0028-3886 (Linking)
 VI  - 69
@@ -8653,6 +8691,7 @@ TA  - Neurol India
 JT  - Neurology India
 JID - 0042005
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - *Friedreich Ataxia/genetics
 MH  - Genetic Testing
@@ -9531,7 +9570,7 @@ PMID- 34214898
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210805
-LR  - 20231213
+LR  - 20260127
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Linking)
 VI  - 54
@@ -9583,6 +9622,7 @@ TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - *Friedreich Ataxia/genetics
 MH  - Humans
@@ -9737,7 +9777,7 @@ PMID- 33629768
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210726
-LR  - 20231213
+LR  - 20260127
 IS  - 1530-6860 (Electronic)
 IS  - 0892-6638 (Linking)
 VI  - 35
@@ -9830,6 +9870,7 @@ JT  - FASEB journal : official publication of the Federation of American Societi
 JID - 8804484
 RN  - 0 (Electron Transport Chain Complex Proteins)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Electron Transport Chain Complex Proteins/*biosynthesis
@@ -10725,7 +10766,7 @@ PMID- 33028632
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210325
-LR  - 20250530
+LR  - 20260127
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
@@ -10830,8 +10871,9 @@ TA  - J Biol Chem
 JT  - The Journal of biological chemistry
 JID - 2985121R
 RN  - 0 (Heterochromatin)
-RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.1.1.43 (Histone-Lysine N-Methyltransferase)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 RN  - EC 2.1.1.43 (KMT5C protein, human)
 SB  - IM
 MH  - Case-Control Studies
@@ -11052,7 +11094,7 @@ PMID- 32744307
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210824
-LR  - 20231213
+LR  - 20260127
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Linking)
 VI  - 29
@@ -11118,8 +11160,9 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
-RN  - 0 (Iron-Binding Proteins)
 RN  - WYQ7N0BPYC (Acetylcysteine)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Acetylcysteine/*pharmacology
 MH  - Animals
@@ -11152,7 +11195,7 @@ PMID- 32717741
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210111
-LR  - 20231213
+LR  - 20260127
 IS  - 1476-4687 (Electronic)
 IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
@@ -11387,11 +11430,12 @@ PL  - England
 TA  - Nature
 JT  - Nature
 JID - 0410462
-RN  - 0 (DMPK protein, human)
-RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (fibroblast growth factor 14)
 RN  - 62031-54-3 (Fibroblast Growth Factors)
+RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (Frataxin)
+RN  - 0 (DMPK protein, human)
+RN  - 0 (fibroblast growth factor 14)
 SB  - IM
 CIN - Nature. 2021 Jan;589(7841):200-202. doi: 10.1038/d41586-020-03658-7. PMID: 
       33442037
@@ -11509,7 +11553,7 @@ PMID- 32586831
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210823
-LR  - 20240229
+LR  - 20260127
 IS  - 1754-8411 (Electronic)
 IS  - 1754-8403 (Print)
 IS  - 1754-8403 (Linking)
@@ -11620,6 +11664,7 @@ JID - 101483332
 RN  - 0 (Fatty Acids)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (NF-E2-Related Factor 2)
+RN  - 0 (Frataxin)
 RN  - 0 (Nfe2l2 protein, mouse)
 SB  - IM
 MH  - Animals
@@ -11982,7 +12027,7 @@ PMID- 32291635
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210319
-LR  - 20240328
+LR  - 20260127
 IS  - 1559-1182 (Electronic)
 IS  - 0893-7648 (Print)
 IS  - 0893-7648 (Linking)
@@ -12063,6 +12108,7 @@ JID - 8900963
 RN  - 0 (Brain-Derived Neurotrophic Factor)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (MicroRNAs)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Brain-Derived Neurotrophic Factor/genetics/*metabolism
 MH  - Fibroblasts/metabolism
@@ -12104,7 +12150,7 @@ PMID- 31911468
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200427
-LR  - 20201210
+LR  - 20260127
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Print)
 IS  - 0027-8424 (Linking)
@@ -12164,16 +12210,17 @@ PL  - United States
 TA  - Proc Natl Acad Sci U S A
 JT  - Proceedings of the National Academy of Sciences of the United States of America
 JID - 7505876
-RN  - 0 (DNA, Single-Stranded)
-RN  - 0 (Pol32 protein, S cerevisiae)
-RN  - 0 (RFA1 protein, S cerevisiae)
-RN  - 0 (Replication Protein A)
-RN  - 0 (Saccharomyces cerevisiae Proteins)
-RN  - EC 2.7.7.- (Nucleotidyltransferases)
-RN  - EC 2.7.7.- (REV1 protein, human)
 RN  - EC 2.7.7.7 (DNA Polymerase III)
+RN  - 0 (DNA, Single-Stranded)
 RN  - EC 2.7.7.7 (DNA-Directed DNA Polymerase)
 RN  - EC 3.1.- (Flap Endonucleases)
+RN  - EC 2.7.7.- (Nucleotidyltransferases)
+RN  - 0 (Replication Protein A)
+RN  - 0 (Saccharomyces cerevisiae Proteins)
+RN  - 0 (Pol32 protein, S cerevisiae)
+RN  - 0 (RFA1 protein, S cerevisiae)
+RN  - EC 2.7.7.- (REV1 protein, human)
+RN  - EC 2.7.7.7 (Y-Family DNA Polymerases)
 RN  - EC 3.1.11.5 (RAD27 protein, S cerevisiae)
 SB  - IM
 MH  - DNA Polymerase III
@@ -12190,6 +12237,7 @@ MH  - Replication Protein A
 MH  - Saccharomyces cerevisiae/*genetics
 MH  - Saccharomyces cerevisiae Proteins
 MH  - *Trinucleotide Repeats
+MH  - Y-Family DNA Polymerases
 PMC - PMC6983365
 OTO - NOTNLM
 OT  - DNA replication
@@ -12356,7 +12404,7 @@ PMID- 31877117
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20201120
-LR  - 20231213
+LR  - 20260127
 IS  - 2379-3708 (Electronic)
 IS  - 2379-3708 (Linking)
 VI  - 5
@@ -12471,12 +12519,13 @@ PL  - United States
 TA  - JCI Insight
 JT  - JCI insight
 JID - 101676073
+RN  - 9P1872D4OL (Exenatide)
+RN  - 89750-14-1 (Glucagon-Like Peptide 1)
 RN  - 0 (Insulin)
+RN  - E1UOL152H7 (Iron)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Reactive Oxygen Species)
-RN  - 89750-14-1 (Glucagon-Like Peptide 1)
-RN  - 9P1872D4OL (Exenatide)
-RN  - E1UOL152H7 (Iron)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -12535,7 +12584,7 @@ PMID- 31673878
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210528
-LR  - 20231213
+LR  - 20260127
 IS  - 1364-6753 (Electronic)
 IS  - 1364-6745 (Linking)
 VI  - 21
@@ -12600,6 +12649,7 @@ TA  - Neurogenetics
 JT  - Neurogenetics
 JID - 9709714
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -12640,7 +12690,7 @@ PMID- 31650522
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20201218
-LR  - 20231213
+LR  - 20260127
 IS  - 1179-187X (Electronic)
 IS  - 1175-3277 (Linking)
 VI  - 20
@@ -12739,6 +12789,7 @@ JT  - American journal of cardiovascular drugs : drugs, devices, and other
       interventions
 JID - 100967755
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 CIN - Am J Cardiovasc Drugs. 2020 Oct;20(5):509-510. doi: 10.1007/s40256-020-00417-x. 
       PMID: 32712765
@@ -12774,7 +12825,7 @@ PMID- 31446150
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200430
-LR  - 20231213
+LR  - 20260127
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Print)
 IS  - 1873-5061 (Linking)
@@ -12843,11 +12894,12 @@ TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
 RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (PLIN5 protein, human)
-RN  - 0 (PPARGC1A protein, human)
 RN  - 0 (Perilipin-5)
 RN  - 0 (Peroxisome Proliferator-Activated Receptor Gamma Coactivator 1-alpha)
 RN  - 0 (RNA, Long Noncoding)
+RN  - 0 (Frataxin)
+RN  - 0 (PLIN5 protein, human)
+RN  - 0 (PPARGC1A protein, human)
 SB  - IM
 MH  - Cell Differentiation
 MH  - Down-Regulation
@@ -12899,7 +12951,7 @@ PMID- 31279523
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200511
-LR  - 20231213
+LR  - 20260127
 IS  - 1872-7905 (Electronic)
 IS  - 0022-1759 (Print)
 IS  - 0022-1759 (Linking)
@@ -12999,6 +13051,7 @@ JID - 1305440
 RN  - 0 (Antibodies)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Protein Isoforms)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Antibodies/*immunology
@@ -13365,7 +13418,7 @@ PMID- 30635474
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20191226
-LR  - 20250306
+LR  - 20260127
 IS  - 1521-0103 (Electronic)
 IS  - 0022-3565 (Linking)
 VI  - 369
@@ -13483,11 +13536,12 @@ PL  - Netherlands
 TA  - J Pharmacol Exp Ther
 JT  - The Journal of pharmacology and experimental therapeutics
 JID - 0376362
+RN  - GAN16C9B8O (Glutathione)
+RN  - E1UOL152H7 (Iron)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Piperazines)
+RN  - 0 (Frataxin)
 RN  - 0 (erastin)
-RN  - E1UOL152H7 (Iron)
-RN  - GAN16C9B8O (Glutathione)
 SB  - IM
 MH  - Animals
 MH  - Cell Line
@@ -13523,7 +13577,7 @@ PMID- 30596685
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20190516
-LR  - 20231213
+LR  - 20260127
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 13
@@ -13588,6 +13642,7 @@ TA  - PLoS One
 JT  - PloS one
 JID - 101285081
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Alleles
@@ -13628,7 +13683,7 @@ PMID- 30590615
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200207
-LR  - 20240413
+LR  - 20260127
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -13695,12 +13750,13 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
+RN  - 8L70Q75FXE (Adenosine Triphosphate)
 RN  - 0 (HSP70 Heat-Shock Proteins)
-RN  - 0 (HSPA9 protein, human)
+RN  - E1UOL152H7 (Iron)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Mitochondrial Proteins)
-RN  - 8L70Q75FXE (Adenosine Triphosphate)
-RN  - E1UOL152H7 (Iron)
+RN  - 0 (Frataxin)
+RN  - 0 (HSPA9 protein, human)
 SB  - IM
 MH  - Adenosine Triphosphate/genetics
 MH  - Animals
@@ -13743,7 +13799,7 @@ PMID- 30552117
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20190513
-LR  - 20231213
+LR  - 20260127
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
@@ -13829,6 +13885,7 @@ JT  - The Journal of biological chemistry
 JID - 2985121R
 RN  - 0 (Histone Deacetylase Inhibitors)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cells, Cultured
 MH  - Friedreich Ataxia/*genetics/pathology
@@ -13972,7 +14029,7 @@ PMID- 30464193
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20191104
-LR  - 20231213
+LR  - 20260127
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 8
@@ -14040,6 +14097,7 @@ JT  - Scientific reports
 JID - 101563288
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Antisense)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cells, Cultured
 MH  - Friedreich Ataxia/*physiopathology
@@ -14940,7 +14998,7 @@ PMID- 30076049
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20190311
-LR  - 20231213
+LR  - 20260127
 IS  - 1464-3405 (Electronic)
 IS  - 0960-894X (Print)
 IS  - 0960-894X (Linking)
@@ -15006,6 +15064,7 @@ JT  - Bioorganic & medicinal chemistry letters
 JID - 9107377
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Small Interfering)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Dose-Response Relationship, Drug
@@ -15138,7 +15197,7 @@ PMID- 29666341
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180917
-LR  - 20231213
+LR  - 20260127
 IS  - 0973-7731 (Electronic)
 IS  - 0022-1333 (Linking)
 VI  - 97
@@ -15188,6 +15247,7 @@ TA  - J Genet
 JT  - Journal of genetics
 JID - 2985113R
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Case-Control Studies
 MH  - Europe
@@ -15307,7 +15367,7 @@ PMID- 29261783
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180108
-LR  - 20231213
+LR  - 20260127
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 12
@@ -15378,6 +15438,7 @@ TA  - PLoS One
 JT  - PloS one
 JID - 101285081
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -15547,7 +15608,7 @@ PMID- 29070698
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180618
-LR  - 20231213
+LR  - 20260127
 IS  - 1946-6242 (Electronic)
 IS  - 1946-6234 (Print)
 IS  - 1946-6234 (Linking)
@@ -15630,6 +15691,7 @@ JT  - Science translational medicine
 JID - 101505086
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Mitochondrial Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Behavior, Animal
@@ -16232,7 +16294,7 @@ PMID- 27518705
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170807
-LR  - 20231213
+LR  - 20260127
 IS  - 1476-5462 (Electronic)
 IS  - 0969-7128 (Print)
 IS  - 0969-7128 (Linking)
@@ -16315,6 +16377,7 @@ TA  - Gene Ther
 JT  - Gene therapy
 JID - 9421525
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Cells, Cultured
@@ -16817,7 +16880,7 @@ PMID- 27425605
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20171116
-LR  - 20231213
+LR  - 20260127
 IS  - 2211-1247 (Electronic)
 VI  - 16
 IP  - 5
@@ -16881,8 +16944,9 @@ PL  - United States
 TA  - Cell Rep
 JT  - Cell reports
 JID - 101573691
-RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.7.6 (DNA-Directed RNA Polymerases)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cells, Cultured
 MH  - DNA Replication/*genetics
@@ -17004,7 +17068,7 @@ PMID- 27228352
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20171024
-LR  - 20231213
+LR  - 20260127
 IS  - 2041-4889 (Electronic)
 VI  - 7
 IP  - 5
@@ -17078,13 +17142,14 @@ PL  - England
 TA  - Cell Death Dis
 JT  - Cell death & disease
 JID - 101524092
-RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (Reactive Oxygen Species)
-RN  - E1UOL152H7 (Iron)
-RN  - EC 1.3.5.1 (Electron Transport Complex II)
 RN  - EC 7.1.1.2 (Electron Transport Complex I)
+RN  - EC 1.3.5.1 (Electron Transport Complex II)
 RN  - EC 7.1.1.8 (Electron Transport Complex III)
 RN  - GAN16C9B8O (Glutathione)
+RN  - E1UOL152H7 (Iron)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Reactive Oxygen Species)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Cerebellum/metabolism/pathology
@@ -17130,7 +17195,7 @@ PMID- 27206881
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170328
-LR  - 20231213
+LR  - 20260127
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Linking)
 VI  - 365
@@ -17189,6 +17254,7 @@ RN  - 0 (Biomarkers)
 RN  - 0 (DNA, Mitochondrial)
 RN  - 0 (Fatty Acids, Omega-3)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Biomarkers/blood
@@ -17343,7 +17409,7 @@ PMID- 26906906
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170111
-LR  - 20231213
+LR  - 20260127
 IS  - 2190-3883 (Electronic)
 IS  - 1234-1983 (Linking)
 VI  - 57
@@ -17419,6 +17485,7 @@ TA  - J Appl Genet
 JT  - Journal of applied genetics
 JID - 9514582
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Case-Control Studies
@@ -17463,7 +17530,7 @@ PMID- 26896803
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170526
-LR  - 20231213
+LR  - 20260127
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -17531,6 +17598,7 @@ JID - 0411011
 RN  - 0 (Histone Deacetylase Inhibitors)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Nucleosomes)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Chromatin Assembly and Disassembly
@@ -17647,7 +17715,7 @@ PMID- 26704351
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160719
-LR  - 20231213
+LR  - 20260127
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Linking)
 VI  - 79
@@ -17785,6 +17853,7 @@ JT  - Annals of neurology
 JID - 7707449
 RN  - 0 (Genetic Markers)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -17827,7 +17896,7 @@ PMID- 26414159
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160311
-LR  - 20231213
+LR  - 20260128
 IS  - 2168-6157 (Electronic)
 IS  - 2168-6149 (Linking)
 VI  - 72
@@ -17935,6 +18004,7 @@ TA  - JAMA Neurol
 JT  - JAMA neurology
 JID - 101589536
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -17970,7 +18040,7 @@ PMID- 26401053
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160825
-LR  - 20231213
+LR  - 20260127
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -18072,10 +18142,11 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
+RN  - JAC85A2161 (Adenine)
+RN  - 5Z93L87A1R (Guanine)
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 5Z93L87A1R (Guanine)
-RN  - JAC85A2161 (Adenine)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adenine
 MH  - Friedreich Ataxia/*genetics
@@ -18109,7 +18180,7 @@ PMID- 26393353
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160603
-LR  - 20231213
+LR  - 20260127
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 10
@@ -18187,6 +18258,7 @@ TA  - PLoS One
 JT  - PloS one
 JID - 101285081
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Cells, Cultured
@@ -18227,7 +18299,7 @@ PMID- 26379101
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160209
-LR  - 20250529
+LR  - 20260127
 IS  - 1873-135X (Electronic)
 IS  - 0027-5107 (Print)
 IS  - 0027-5107 (Linking)
@@ -18291,6 +18363,7 @@ TA  - Mutat Res
 JT  - Mutation research
 JID - 0400763
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Base Sequence
 MH  - Cell Line
@@ -18479,7 +18552,7 @@ PMID- 26338206
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160425
-LR  - 20220409
+LR  - 20260128
 IS  - 1750-1172 (Electronic)
 IS  - 1750-1172 (Linking)
 VI  - 10
@@ -18590,7 +18663,7 @@ PMID- 26301374
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160523
-LR  - 20231213
+LR  - 20260128
 IS  - 1537-1611 (Electronic)
 IS  - 1522-0443 (Linking)
 VI  - 17
@@ -18632,6 +18705,7 @@ TA  - J Clin Neuromuscul Dis
 JT  - Journal of clinical neuromuscular disease
 JID - 100887391
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Child
 MH  - Electrodiagnosis
@@ -18936,7 +19010,7 @@ PMID- 25845763
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160314
-LR  - 20231213
+LR  - 20260128
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 262
@@ -19023,14 +19097,15 @@ PL  - Germany
 TA  - J Neurol
 JT  - Journal of neurology
 JID - 0423161
+RN  - 88847-89-6 (8-Hydroxy-2'-Deoxyguanosine)
 RN  - 0 (Antioxidants)
+RN  - G9481N71RO (Deoxyguanosine)
 RN  - 0 (F2-Isoprostanes)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
-RN  - 0 (Stilbenes)
-RN  - 88847-89-6 (8-Hydroxy-2'-Deoxyguanosine)
-RN  - G9481N71RO (Deoxyguanosine)
 RN  - Q369O8926L (Resveratrol)
+RN  - 0 (Stilbenes)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - 8-Hydroxy-2'-Deoxyguanosine
 MH  - Adult
@@ -19069,7 +19144,7 @@ PMID- 25831023
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151204
-LR  - 20231213
+LR  - 20260128
 IS  - 2154-1272 (Electronic)
 IS  - 2154-1264 (Print)
 IS  - 2154-1272 (Linking)
@@ -19103,6 +19178,7 @@ JT  - Transcription
 JID - 101530967
 RN  - 0 (Heterochromatin)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Friedreich Ataxia/*genetics/pathology
 MH  - Gene Expression Regulation
@@ -19146,7 +19222,7 @@ PMID- 25814655
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160204
-LR  - 20250529
+LR  - 20260128
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -19208,6 +19284,7 @@ JT  - Human molecular genetics
 JID - 9208958
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Alleles
 MH  - Cell Line
@@ -19463,7 +19540,7 @@ PMID- 25681319
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151201
-LR  - 20231213
+LR  - 20260128
 IS  - 1754-8411 (Electronic)
 IS  - 1754-8403 (Print)
 IS  - 1754-8403 (Linking)
@@ -19544,10 +19621,11 @@ PL  - England
 TA  - Dis Model Mech
 JT  - Disease models & mechanisms
 JID - 101483332
+RN  - EC 4.2.1.3 (Aconitate Hydratase)
 RN  - 0 (Forkhead Transcription Factors)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
-RN  - EC 4.2.1.3 (Aconitate Hydratase)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Aconitate Hydratase/metabolism
 MH  - Animals
@@ -19782,7 +19860,7 @@ PMID- 25198290
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151216
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 9
@@ -19840,6 +19918,7 @@ JID - 101285081
 RN  - 0 (Blood Glucose)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Blood Glucose/metabolism
@@ -19883,7 +19962,7 @@ PMID- 25112975
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141211
-LR  - 20231213
+LR  - 20260128
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
@@ -19940,6 +20019,7 @@ TA  - Ann Neurol
 JT  - Annals of neurology
 JID - 7707449
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Alleles
 MH  - Epigenesis, Genetic/*genetics
@@ -19974,7 +20054,7 @@ PMID- 25022367
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150717
-LR  - 20231213
+LR  - 20260128
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 13
@@ -20027,6 +20107,7 @@ TA  - Cerebellum
 JT  - Cerebellum (London, England)
 JID - 101089443
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -20058,7 +20139,7 @@ PMID- 24971578
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151002
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 9
@@ -20121,17 +20202,18 @@ TA  - PLoS One
 JT  - PloS one
 JID - 101285081
 RN  - 0 (Adaptor Proteins, Signal Transducing)
+RN  - EC 3.6.1.- (Adenosine Triphosphatases)
+RN  - EC 6.5.1.- (DNA Repair Enzymes)
 RN  - 0 (DNA-Binding Proteins)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (Mlh1 protein, mouse)
-RN  - 0 (MutLalpha protein, human)
-RN  - 0 (Nuclear Proteins)
-RN  - EC 3.6.1.- (Adenosine Triphosphatases)
-RN  - EC 3.6.1.- (Pms2 protein, mouse)
 RN  - EC 3.6.1.3 (Mismatch Repair Endonuclease PMS2)
 RN  - EC 3.6.1.3 (MutL Protein Homolog 1)
 RN  - EC 3.6.1.3 (MutL Proteins)
-RN  - EC 6.5.1.- (DNA Repair Enzymes)
+RN  - 0 (Nuclear Proteins)
+RN  - 0 (Frataxin)
+RN  - 0 (Mlh1 protein, mouse)
+RN  - 0 (MutLalpha protein, human)
+RN  - EC 3.6.1.- (Pms2 protein, mouse)
 SB  - IM
 MH  - Adaptor Proteins, Signal Transducing/deficiency/genetics/metabolism
 MH  - Adenosine Triphosphatases/deficiency/genetics/metabolism
@@ -20180,7 +20262,7 @@ PMID- 24962209
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151130
-LR  - 20231213
+LR  - 20260128
 IS  - 1532-2777 (Electronic)
 IS  - 0306-9877 (Print)
 IS  - 0306-9877 (Linking)
@@ -20253,6 +20335,7 @@ TA  - Med Hypotheses
 JT  - Medical hypotheses
 JID - 7505668
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Bone Marrow Cells/cytology
 MH  - Cell Differentiation/genetics
@@ -20385,7 +20468,7 @@ PMID- 24819921
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150406
-LR  - 20231213
+LR  - 20260128
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Linking)
 VI  - 342
@@ -20449,9 +20532,10 @@ TA  - J Neurol Sci
 JT  - Journal of the neurological sciences
 JID - 0375403
 RN  - 0 (Blood Glucose)
-RN  - 0 (Glycated Hemoglobin A)
+RN  - 0 (Glycated Hemoglobin)
 RN  - 0 (Insulin)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 RN  - 0 (hemoglobin A1c protein, human)
 SB  - IM
 MH  - Adolescent
@@ -20504,7 +20588,7 @@ PMID- 24816001
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151016
-LR  - 20250529
+LR  - 20260128
 IS  - 1873-5126 (Electronic)
 IS  - 1353-8020 (Linking)
 VI  - 20
@@ -20571,6 +20655,7 @@ TA  - Parkinsonism Relat Disord
 JT  - Parkinsonism & related disorders
 JID - 9513583
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Child
@@ -20607,7 +20692,7 @@ PMID- 24787137
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141125
-LR  - 20250529
+LR  - 20260128
 IS  - 1553-7404 (Electronic)
 IS  - 1553-7390 (Print)
 IS  - 1553-7390 (Linking)
@@ -20662,11 +20747,12 @@ PL  - United States
 TA  - PLoS Genet
 JT  - PLoS genetics
 JID - 101239074
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (Frataxin)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
-MH  - Fragile X Mental Retardation Protein/*genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/*genetics
 MH  - Fragile X Syndrome/*genetics
 MH  - Friedreich Ataxia/*genetics
 MH  - *Gene Silencing
@@ -20696,7 +20782,7 @@ PMID- 24714088
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150119
-LR  - 20231213
+LR  - 20260128
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 15
@@ -20786,10 +20872,11 @@ PL  - Switzerland
 TA  - Int J Mol Sci
 JT  - International journal of molecular sciences
 JID - 101092791
-RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (RNA, Small Interfering)
 RN  - EC 7.1.1.2 (Electron Transport Complex I)
 RN  - GAN16C9B8O (Glutathione)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (RNA, Small Interfering)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Cell Line, Tumor
@@ -20954,7 +21041,7 @@ PMID- 24667739
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141112
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 9
@@ -21017,9 +21104,10 @@ PL  - United States
 TA  - PLoS One
 JT  - PloS one
 JID - 101285081
-RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (enhanced green fluorescent protein)
 RN  - 147336-22-9 (Green Fluorescent Proteins)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
+RN  - 0 (enhanced green fluorescent protein)
 SB  - IM
 MH  - Animals
 MH  - *Gene Knockout Techniques
@@ -21122,7 +21210,7 @@ PMID- 24613765
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150304
-LR  - 20231213
+LR  - 20260128
 IS  - 1532-2653 (Electronic)
 IS  - 0967-5868 (Linking)
 VI  - 21
@@ -21173,6 +21261,7 @@ JT  - Journal of clinical neuroscience : official journal of the Neurosurgical S
       of Australasia
 JID - 9433352
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 RN  - Amyotrophic lateral sclerosis 1
 SB  - IM
 MH  - Age of Onset
@@ -21500,7 +21589,7 @@ PMID- 24327207
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150930
-LR  - 20231213
+LR  - 20260128
 IS  - 1432-2013 (Electronic)
 IS  - 0031-6768 (Linking)
 VI  - 466
@@ -21574,6 +21663,7 @@ TA  - Pflugers Arch
 JT  - Pflugers Archiv : European journal of physiology
 JID - 0154720
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - *Cardiomyopathies/etiology
@@ -21717,7 +21807,7 @@ PMID- 24023969
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20140408
-LR  - 20240320
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 8
@@ -21771,13 +21861,14 @@ TA  - PLoS One
 JT  - PloS one
 JID - 101285081
 RN  - 0 (5' Untranslated Regions)
+RN  - 6R795CQT4H (5-Methylcytosine)
 RN  - 0 (CCCTC-Binding Factor)
-RN  - 0 (CTCF protein, human)
+RN  - 8J337D1HZY (Cytosine)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (Frataxin)
+RN  - 0 (CTCF protein, human)
 RN  - 1123-95-1 (5-hydroxymethylcytosine)
-RN  - 6R795CQT4H (5-Methylcytosine)
-RN  - 8J337D1HZY (Cytosine)
 SB  - IM
 MH  - 5' Untranslated Regions/genetics
 MH  - 5-Methylcytosine/analogs & derivatives
@@ -21901,7 +21992,7 @@ PMID- 23943791
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20140708
-LR  - 20240323
+LR  - 20260128
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -21958,6 +22049,7 @@ JT  - Human molecular genetics
 JID - 9208958
 RN  - 0 (Heterochromatin)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Friedreich Ataxia/*genetics/pathology/therapy
@@ -22181,7 +22273,7 @@ PMID- 23879205
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20140721
-LR  - 20250529
+LR  - 20260128
 IS  - 1557-8534 (Electronic)
 IS  - 1547-3287 (Linking)
 VI  - 22
@@ -22231,6 +22323,7 @@ TA  - Stem Cells Dev
 JT  - Stem cells and development
 JID - 101197107
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - *Cell Differentiation
 MH  - Friedreich Ataxia/genetics/*metabolism/pathology
@@ -22255,7 +22348,7 @@ PMID- 23838345
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20131206
-LR  - 20231213
+LR  - 20260128
 IS  - 1530-8561 (Electronic)
 IS  - 0009-9147 (Print)
 IS  - 0009-9147 (Linking)
@@ -22326,6 +22419,7 @@ TA  - Clin Chem
 JT  - Clinical chemistry
 JID - 9421549
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 CIN - Clin Chem. 2013 Oct;59(10):1430-1. doi: 10.1373/clinchem.2013.211094. PMID: 
       23868874
@@ -22480,7 +22574,7 @@ PMID- 23691127
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20131216
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 8
@@ -22543,6 +22637,7 @@ RN  - 0 (Biomarkers)
 RN  - 0 (Histone Deacetylase Inhibitors)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Analysis of Variance
 MH  - Biomarkers/*metabolism
@@ -22758,7 +22853,7 @@ PMID- 23474817
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20140107
-LR  - 20250529
+LR  - 20260128
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Linking)
 VI  - 22
@@ -22827,13 +22922,14 @@ TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
 RN  - 0 (Chromatin)
+RN  - EC 3.1.21.1 (Deoxyribonuclease I)
 RN  - 0 (Heterochromatin)
 RN  - 0 (Histone Deacetylase Inhibitors)
+RN  - EC 3.5.1.98 (Histone Deacetylases)
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 25X51I8RD4 (Niacinamide)
-RN  - EC 3.1.21.1 (Deoxyribonuclease I)
-RN  - EC 3.5.1.98 (Histone Deacetylases)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Acetylation/drug effects
 MH  - Animals
@@ -22873,7 +22969,7 @@ PMID- 23418481
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130809
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 8
@@ -22930,6 +23026,7 @@ TA  - PLoS One
 JT  - PloS one
 JID - 101285081
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Drug Evaluation, Preclinical/*methods
@@ -22964,7 +23061,7 @@ PMID- 23382970
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130801
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 8
@@ -23029,6 +23126,7 @@ JID - 101285081
 RN  - 0 (3' Untranslated Regions)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (MicroRNAs)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - *3' Untranslated Regions
 MH  - Base Sequence
@@ -23069,7 +23167,7 @@ PMID- 23280845
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130225
-LR  - 20240610
+LR  - 20260128
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
@@ -23162,6 +23260,7 @@ JID - 7707449
 RN  - 0 (Hypoglycemic Agents)
 RN  - 0 (Insulin)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adipose Tissue/metabolism
 MH  - Adult
@@ -23317,7 +23416,7 @@ PMID- 23269675
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130419
-LR  - 20231213
+LR  - 20260128
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
@@ -23376,6 +23475,7 @@ JID - 2985121R
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Mitochondrial Proteins)
 RN  - 0 (Protein Isoforms)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Alleles
 MH  - Amino Acid Substitution
@@ -23413,7 +23513,7 @@ PMID- 23242090
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130604
-LR  - 20231213
+LR  - 20260128
 IS  - 1757-790X (Electronic)
 IS  - 1757-790X (Linking)
 VI  - 2012
@@ -23450,6 +23550,7 @@ JID - 101526291
 RN  - 0 (Antioxidants)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 1339-63-5 (Ubiquinone)
+RN  - 0 (Frataxin)
 RN  - HB6PN45W4J (idebenone)
 SB  - IM
 MH  - Adolescent
@@ -23595,7 +23696,7 @@ PMID- 22798143
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20121119
-LR  - 20231213
+LR  - 20260128
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
@@ -23656,13 +23757,14 @@ TA  - J Biol Chem
 JT  - The Journal of biological chemistry
 JID - 2985121R
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Kruppel-Like Factor 4)
+RN  - EC 3.6.1.3 (MutS Homolog 2 Protein)
+RN  - 0 (Transcription Factors)
+RN  - 0 (Frataxin)
 RN  - 0 (KLF4 protein, human)
 RN  - 0 (Klf4 protein, mouse)
-RN  - 0 (Kruppel-Like Factor 4)
-RN  - 0 (Transcription Factors)
 RN  - EC 3.6.1.3 (MSH2 protein, human)
 RN  - EC 3.6.1.3 (Msh2 protein, mouse)
-RN  - EC 3.6.1.3 (MutS Homolog 2 Protein)
 SB  - IM
 MH  - Animals
 MH  - Cell Differentiation/genetics
@@ -23801,7 +23903,7 @@ PMID- 22764244
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120918
-LR  - 20231213
+LR  - 20260128
 IS  - 1529-2401 (Electronic)
 IS  - 0270-6474 (Print)
 IS  - 0270-6474 (Linking)
@@ -23847,13 +23949,14 @@ TA  - J Neurosci
 JT  - The Journal of neuroscience : the official journal of the Society for 
       Neuroscience
 JID - 8102140
-RN  - 0 (AGTR1 protein, human)
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (MIRN886 microRNA, human)
 RN  - 0 (MicroRNAs)
 RN  - 0 (RNA, Messenger)
 RN  - 0 (Receptor, Angiotensin, Type 1)
+RN  - 0 (Frataxin)
+RN  - 0 (AGTR1 protein, human)
+RN  - 0 (MIRN886 microRNA, human)
 SB  - IM
 MH  - Cell Line
 MH  - Friedreich Ataxia/*genetics/metabolism
@@ -23887,7 +23990,7 @@ PMID- 22752483
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130123
-LR  - 20231213
+LR  - 20260128
 IS  - 1708-8283 (Electronic)
 IS  - 0883-0738 (Print)
 IS  - 0883-0738 (Linking)
@@ -23936,11 +24039,12 @@ JT  - Journal of child neurology
 JID - 8606714
 RN  - 0 (Antibiotics, Antineoplastic)
 RN  - 0 (Antineoplastic Agents)
+RN  - Q20Q21Q62J (Cisplatin)
+RN  - 80168379AG (Doxorubicin)
 RN  - 0 (Immunosuppressive Agents)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 80168379AG (Doxorubicin)
-RN  - Q20Q21Q62J (Cisplatin)
 RN  - YL5FZ2Y5U1 (Methotrexate)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Analysis of Variance
 MH  - Antibiotics, Antineoplastic
@@ -23982,7 +24086,7 @@ PMID- 22691228
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130122
-LR  - 20231213
+LR  - 20260128
 IS  - 1945-0257 (Electronic)
 IS  - 1945-0257 (Linking)
 VI  - 16
@@ -24033,6 +24137,7 @@ TA  - Genet Test Mol Biomarkers
 JT  - Genetic testing and molecular biomarkers
 JID - 101494210
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Female
@@ -24060,7 +24165,7 @@ PMID- 22447512
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20121213
-LR  - 20250529
+LR  - 20260128
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -24118,8 +24223,9 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
-RN  - 0 (Iron-Binding Proteins)
 RN  - 82115-62-6 (Interferon-gamma)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Cells, Cultured
@@ -24219,7 +24325,7 @@ PMID- 22409940
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20121119
-LR  - 20231213
+LR  - 20260128
 IS  - 1538-3687 (Electronic)
 IS  - 0003-9942 (Linking)
 VI  - 69
@@ -24307,6 +24413,7 @@ JID - 0372436
 RN  - 0 (Antioxidants)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 1339-63-5 (Ubiquinone)
+RN  - 0 (Frataxin)
 RN  - HB6PN45W4J (idebenone)
 SB  - IM
 MH  - Adult
@@ -24451,7 +24558,7 @@ PMID- 22262734
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120717
-LR  - 20231213
+LR  - 20260128
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -24497,8 +24604,9 @@ PL  - England
 TA  - Nucleic Acids Res
 JT  - Nucleic acids research
 JID - 0411011
-RN  - 0 (Iron-Binding Proteins)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - COS Cells
@@ -24534,7 +24642,7 @@ PMID- 21830088
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120330
-LR  - 20231213
+LR  - 20260128
 IS  - 1364-6753 (Electronic)
 IS  - 1364-6745 (Linking)
 VI  - 12
@@ -24586,6 +24694,7 @@ TA  - Neurogenetics
 JT  - Neurogenetics
 JID - 9709714
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Child
@@ -24622,7 +24731,7 @@ PMID- 21776984
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20111020
-LR  - 20250529
+LR  - 20260128
 IS  - 1520-4995 (Electronic)
 IS  - 0006-2960 (Print)
 IS  - 0006-2960 (Linking)
@@ -24669,14 +24778,15 @@ PL  - United States
 TA  - Biochemistry
 JT  - Biochemistry
 JID - 0370623
-RN  - 0 (ISCU protein, human)
+RN  - EC 4.4.- (Carbon-Sulfur Lyases)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Iron-Regulatory Proteins)
 RN  - 0 (Iron-Sulfur Proteins)
-RN  - 0 (LYRM4 protein, human)
 RN  - 0 (Mutant Proteins)
 RN  - 0 (Sulfides)
-RN  - EC 4.4.- (Carbon-Sulfur Lyases)
+RN  - 0 (Frataxin)
+RN  - 0 (ISCU protein, human)
+RN  - 0 (LYRM4 protein, human)
 RN  - EC 4.4.1.- (NFS1 protein, human)
 RN  - EC 4.4.1.- (cysteine desulfurase)
 SB  - IM
@@ -24717,7 +24827,7 @@ PMID- 21745819
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120103
-LR  - 20231213
+LR  - 20260128
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -24767,9 +24877,10 @@ JID - 0411011
 RN  - 0 (Heterochromatin)
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
+RN  - EC 2.7.7.- (RNA Polymerase II)
 RN  - 0 (RNA Precursors)
 RN  - 0 (RNA, Messenger)
-RN  - EC 2.7.7.- (RNA Polymerase II)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Friedreich Ataxia/*genetics/metabolism
@@ -24898,7 +25009,7 @@ PMID- 21486239
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110802
-LR  - 20231213
+LR  - 20260128
 IS  - 1940-9818 (Electronic)
 IS  - 0736-6205 (Linking)
 VI  - 50
@@ -24931,9 +25042,10 @@ PL  - England
 TA  - Biotechniques
 JT  - BioTechniques
 JID - 8306785
-RN  - 0 (Iron-Binding Proteins)
-RN  - EC 3.1.21.- (endodeoxyribonuclease MboII)
 RN  - EC 3.1.21.4 (Deoxyribonucleases, Type II Site-Specific)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
+RN  - EC 3.1.21.- (endodeoxyribonuclease MboII)
 SB  - IM
 MH  - Base Sequence
 MH  - Deoxyribonucleases, Type II Site-Specific/metabolism
@@ -25066,7 +25178,7 @@ PMID- 21181307
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20111115
-LR  - 20231213
+LR  - 20260128
 IS  - 2629-3277 (Electronic)
 IS  - 2629-3277 (Linking)
 VI  - 7
@@ -25126,6 +25238,7 @@ JT  - Stem cell reviews and reports
 JID - 101752767
 RN  - 0 (Biomarkers)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Biomarkers/metabolism
@@ -25156,7 +25269,7 @@ PMID- 21127046
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110324
-LR  - 20250529
+LR  - 20260128
 IS  - 1083-351X (Electronic)
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
@@ -25207,8 +25320,9 @@ JT  - The Journal of biological chemistry
 JID - 2985121R
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (RNA, Messenger)
 RN  - EC 2.7.7.- (RNA Polymerase II)
+RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Alleles
 MH  - Cells, Cultured
@@ -25330,7 +25444,7 @@ PMID- 21040903
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110310
-LR  - 20250529
+LR  - 20260128
 IS  - 1875-9777 (Electronic)
 IS  - 1934-5909 (Print)
 IS  - 1875-9777 (Linking)
@@ -25391,6 +25505,7 @@ TA  - Cell Stem Cell
 JT  - Cell stem cell
 JID - 101311472
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 CIN - Cell Stem Cell. 2010 Nov 5;7(5):545-6. doi: 10.1016/j.stem.2010.10.005. PMID: 
       21040891
@@ -25425,7 +25540,7 @@ PMID- 20675166
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110127
-LR  - 20250529
+LR  - 20260127
 IS  - 1096-7206 (Electronic)
 IS  - 1096-7192 (Print)
 IS  - 1096-7192 (Linking)
@@ -25489,6 +25604,7 @@ TA  - Mol Genet Metab
 JT  - Molecular genetics and metabolism
 JID - 9805456
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -25614,7 +25730,7 @@ PMID- 20506029
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110707
-LR  - 20231213
+LR  - 20260128
 IS  - 1590-3478 (Electronic)
 IS  - 1590-1874 (Linking)
 VI  - 32
@@ -25659,6 +25775,7 @@ JT  - Neurological sciences : official journal of the Italian Neurological Socie
       of the Italian Society of Clinical Neurophysiology
 JID - 100959175
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Austria
 MH  - Enzyme-Linked Immunosorbent Assay
@@ -25687,7 +25804,7 @@ PMID- 20373285
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100621
-LR  - 20231213
+LR  - 20260128
 IS  - 1757-4684 (Electronic)
 IS  - 1757-4676 (Print)
 IS  - 1757-4676 (Linking)
@@ -25726,6 +25843,7 @@ JID - 101487380
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Friedreich Ataxia/*genetics/*physiopathology
@@ -25755,7 +25873,7 @@ PMID- 20098685
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100520
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 5
@@ -25820,6 +25938,7 @@ RN  - 0 (DNA Primers)
 RN  - 0 (Histone Deacetylase Inhibitors)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Pimelic Acids)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Base Sequence
@@ -25862,7 +25981,7 @@ PMID- 20090835
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100312
-LR  - 20231213
+LR  - 20260128
 IS  - 1553-7404 (Electronic)
 IS  - 1553-7390 (Print)
 IS  - 1553-7390 (Linking)
@@ -25933,6 +26052,7 @@ JT  - PLoS genetics
 JID - 101239074
 RN  - 0 (Iron-Binding Proteins)
 RN  - 63231-63-0 (RNA)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -25971,7 +26091,7 @@ PMID- 19956589
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100426
-LR  - 20231213
+LR  - 20260128
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 4
@@ -26022,13 +26142,14 @@ JT  - PloS one
 JID - 101285081
 RN  - 0 (5' Untranslated Regions)
 RN  - 0 (CCCTC-Binding Factor)
-RN  - 0 (CTCF protein, human)
-RN  - 0 (FOXH1 protein, human)
 RN  - 0 (Forkhead Transcription Factors)
 RN  - 0 (Heterochromatin)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Oligonucleotides, Antisense)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (Frataxin)
+RN  - 0 (CTCF protein, human)
+RN  - 0 (FOXH1 protein, human)
 SB  - IM
 MH  - 5' Untranslated Regions
 MH  - Alleles
@@ -26232,7 +26353,7 @@ PMID- 19485941
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090630
-LR  - 20231213
+LR  - 20260128
 IS  - 1512-8601 (Print)
 IS  - 1840-4812 (Electronic)
 IS  - 1512-8601 (Linking)
@@ -26287,6 +26408,7 @@ TA  - Bosn J Basic Med Sci
 JT  - Bosnian journal of basic medical sciences
 JID - 101200947
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Cardiomyopathy, Hypertrophic/*etiology
@@ -26486,7 +26608,7 @@ PMID- 19043662
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090409
-LR  - 20211020
+LR  - 20260128
 IS  - 1590-1874 (Print)
 IS  - 1590-1874 (Linking)
 VI  - 29
@@ -26576,7 +26698,7 @@ PMID- 18820300
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20081128
-LR  - 20241130
+LR  - 20260128
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -26629,10 +26751,11 @@ PL  - England
 TA  - Nucleic Acids Res
 JT  - Nucleic acids research
 JID - 0411011
+RN  - 147336-22-9 (Green Fluorescent Proteins)
 RN  - 0 (Heterochromatin)
 RN  - 0 (Histones)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 147336-22-9 (Green Fluorescent Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - *DNA Repeat Expansion
@@ -26668,7 +26791,7 @@ PMID- 18697824
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090202
-LR  - 20231213
+LR  - 20260128
 IS  - 1468-6244 (Electronic)
 IS  - 0022-2593 (Linking)
 VI  - 45
@@ -26730,8 +26853,9 @@ PL  - England
 TA  - J Med Genet
 JT  - Journal of medical genetics
 JID - 2985087R
-RN  - 0 (Iron-Binding Proteins)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Age of Onset
@@ -26764,7 +26888,7 @@ PMID- 18597733
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20080729
-LR  - 20231213
+LR  - 20260128
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Print)
 IS  - 0002-9297 (Linking)
@@ -26817,6 +26941,7 @@ JID - 0370475
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA Precursors)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - COS Cells
@@ -26960,7 +27085,7 @@ PMID- 17703324
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20080403
-LR  - 20231213
+LR  - 20260128
 IS  - 1364-6745 (Print)
 IS  - 1364-6745 (Linking)
 VI  - 8
@@ -27018,6 +27143,7 @@ RN  - 0 (Codon, Nonsense)
 RN  - 0 (DNA Primers)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -27059,7 +27185,7 @@ PMID- 17498922
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20070926
-LR  - 20231213
+LR  - 20260128
 IS  - 0888-7543 (Print)
 IS  - 0888-7543 (Linking)
 VI  - 90
@@ -27110,6 +27236,7 @@ TA  - Genomics
 JT  - Genomics
 JID - 8800135
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Embryonic Development/genetics
 MH  - Friedreich Ataxia/*genetics
@@ -27210,7 +27337,7 @@ PMID- 17262846
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20070327
-LR  - 20231213
+LR  - 20260128
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
 VI  - 61
@@ -27271,6 +27398,7 @@ TA  - Ann Neurol
 JT  - Annals of neurology
 JID - 7707449
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -27300,7 +27428,7 @@ PMID- 17235301
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20070626
-LR  - 20231213
+LR  - 20260128
 IS  - 1525-0016 (Print)
 IS  - 1525-0016 (Linking)
 VI  - 15
@@ -27347,6 +27475,7 @@ TA  - Mol Ther
 JT  - Molecular therapy : the journal of the American Society of Gene Therapy
 JID - 100890581
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Cell Survival/genetics/physiology
@@ -27379,7 +27508,7 @@ PMID- 17024371
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20070416
-LR  - 20231213
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 120
@@ -27436,6 +27565,7 @@ TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Age Factors
 MH  - Alleles
@@ -27472,7 +27602,7 @@ PMID- 16989817
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20061109
-LR  - 20231213
+LR  - 20260128
 IS  - 0014-5793 (Print)
 IS  - 0014-5793 (Linking)
 VI  - 580
@@ -27520,6 +27650,7 @@ JID - 0155157
 RN  - 0 (Antifungal Agents)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 673LC5J4LQ (Pentamidine)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Antifungal Agents/*pharmacology
 MH  - Cells, Cultured
@@ -27558,7 +27689,7 @@ PMID- 16919418
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20061205
-LR  - 20250529
+LR  - 20260128
 IS  - 0888-7543 (Print)
 IS  - 1089-8646 (Electronic)
 IS  - 0888-7543 (Linking)
@@ -27626,9 +27757,10 @@ PL  - United States
 TA  - Genomics
 JT  - Genomics
 JID - 8800135
+RN  - EC 4.2.1.3 (Aconitate Hydratase)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (RNA, Messenger)
-RN  - EC 4.2.1.3 (Aconitate Hydratase)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Aconitate Hydratase/metabolism
 MH  - Animals
@@ -27675,7 +27807,7 @@ PMID- 16857735
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20061025
-LR  - 20231213
+LR  - 20260128
 IS  - 0027-8424 (Print)
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Linking)
@@ -27735,6 +27867,7 @@ JID - 7505876
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Ligands)
 RN  - 0 (Nylons)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Cell Line
 MH  - Friedreich Ataxia/*genetics
@@ -27850,7 +27983,7 @@ PMID- 16644517
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20060706
-LR  - 20231213
+LR  - 20260128
 IS  - 0020-7454 (Print)
 IS  - 0020-7454 (Linking)
 VI  - 116
@@ -27895,6 +28028,7 @@ TA  - Int J Neurosci
 JT  - The International journal of neuroscience
 JID - 0270707
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -27989,7 +28123,7 @@ PMID- 15376485
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20041018
-LR  - 20231213
+LR  - 20260128
 IS  - 0317-1671 (Print)
 IS  - 0317-1671 (Linking)
 VI  - 31
@@ -28044,6 +28178,7 @@ JT  - The Canadian journal of neurological sciences. Le journal canadien des sci
       neurologiques
 JID - 0415227
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Child
 MH  - Chorea/*genetics
@@ -28150,7 +28285,7 @@ PMID- 15233994
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20050128
-LR  - 20231213
+LR  - 20260128
 IS  - 0888-7543 (Print)
 IS  - 0888-7543 (Linking)
 VI  - 84
@@ -28194,8 +28329,9 @@ PL  - United States
 TA  - Genomics
 JT  - Genomics
 JID - 8800135
-RN  - 0 (Iron-Binding Proteins)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Aging/genetics
 MH  - Animals
@@ -28293,7 +28429,7 @@ PMID- 15180699
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040916
-LR  - 20231213
+LR  - 20260128
 IS  - 0003-4800 (Print)
 IS  - 0003-4800 (Linking)
 VI  - 68
@@ -28351,6 +28487,7 @@ JT  - Annals of human genetics
 JID - 0416661
 RN  - 0 (Genetic Markers)
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Case-Control Studies
@@ -28383,7 +28520,7 @@ PMID- 14978261
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040512
-LR  - 20231213
+LR  - 20260128
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -28443,9 +28580,10 @@ PL  - England
 TA  - Nucleic Acids Res
 JT  - Nucleic acids research
 JID - 0411011
-RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (triplex DNA)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
+RN  - 0 (triplex DNA)
 SB  - IM
 MH  - AT Rich Sequence
 MH  - DNA/chemistry/ultrastructure
@@ -28476,7 +28614,7 @@ PMID- 14962663
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20041209
-LR  - 20231213
+LR  - 20260128
 IS  - 0888-7543 (Print)
 IS  - 0888-7543 (Linking)
 VI  - 83
@@ -28523,6 +28661,7 @@ TA  - Genomics
 JT  - Genomics
 JID - 8800135
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Algorithms
 MH  - Alu Elements/*genetics
@@ -28554,7 +28693,7 @@ PMID- 12516053
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20030718
-LR  - 20231213
+LR  - 20260128
 IS  - 1099-498X (Print)
 IS  - 1099-498X (Linking)
 VI  - 5
@@ -28609,6 +28748,7 @@ JT  - The journal of gene medicine
 JID - 9815764
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Recombinant Fusion Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Chromosomes, Artificial, Bacterial
 MH  - Chromosomes, Artificial, P1 Bacteriophage
@@ -28635,7 +28775,7 @@ PMID- 12112211
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20020916
-LR  - 20231213
+LR  - 20260128
 IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
 VI  - 17
@@ -28678,6 +28818,7 @@ JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Chorea/complications/*genetics
@@ -29032,7 +29173,7 @@ PMID- 11748752
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20020125
-LR  - 20231213
+LR  - 20260128
 IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
 VI  - 16
@@ -29086,6 +29227,7 @@ JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Age of Onset
 MH  - Aged
@@ -29210,7 +29352,7 @@ PMID- 11340071
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20010823
-LR  - 20231213
+LR  - 20260128
 IS  - 0021-9258 (Print)
 IS  - 0021-9258 (Linking)
 VI  - 276
@@ -29261,10 +29403,11 @@ PL  - United States
 TA  - J Biol Chem
 JT  - The Journal of biological chemistry
 JID - 2985121R
-RN  - 0 (Iron-Binding Proteins)
 RN  - 9007-49-2 (DNA)
-RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
 RN  - EC 2.7.7.6 (DNA-Directed RNA Polymerases)
+RN  - 0 (Iron-Binding Proteins)
+RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - DNA/*physiology
 MH  - DNA-Directed RNA Polymerases/antagonists & inhibitors/metabolism
@@ -29681,7 +29824,7 @@ PMID- 10982187
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000922
-LR  - 20231213
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 106
@@ -29747,6 +29890,7 @@ JT  - Human genetics
 JID - 7613873
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Age of Onset
@@ -29785,7 +29929,7 @@ PMID- 10969848
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000925
-LR  - 20231213
+LR  - 20260128
 IS  - 0012-1797 (Print)
 IS  - 0012-1797 (Linking)
 VI  - 49
@@ -29839,8 +29983,9 @@ JT  - Diabetes
 JID - 0372763
 RN  - 0 (Blood Glucose)
 RN  - 0 (Iron-Binding Proteins)
-RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
 RN  - RWM8CCW8GP (Octreotide)
+RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Blood Glucose/*metabolism
 MH  - Female
@@ -30145,7 +30290,7 @@ PMID- 10556290
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000124
-LR  - 20231213
+LR  - 20260128
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
 VI  - 8
@@ -30202,8 +30347,9 @@ TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
 RN  - 0 (Iron-Binding Proteins)
-RN  - 24937-83-5 (Poly A)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 24937-83-5 (Poly A)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Base Sequence
 MH  - Cells, Cultured
@@ -30233,7 +30379,7 @@ PMID- 10230399
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19990527
-LR  - 20231213
+LR  - 20260128
 IS  - 1097-2765 (Print)
 IS  - 1097-2765 (Linking)
 VI  - 3
@@ -30279,11 +30425,12 @@ PL  - United States
 TA  - Mol Cell
 JT  - Molecular cell
 JID - 9802571
+RN  - 9007-49-2 (DNA)
 RN  - 0 (DNA, Superhelical)
 RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (triplex DNA)
-RN  - 9007-49-2 (DNA)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
+RN  - 0 (triplex DNA)
 SB  - IM
 MH  - DNA/*genetics/ultrastructure
 MH  - DNA, Superhelical/genetics/ultrastructure
@@ -30313,7 +30460,7 @@ PMID- 10102712
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19990415
-LR  - 20231213
+LR  - 20260128
 IS  - 0012-1797 (Print)
 IS  - 0012-1797 (Linking)
 VI  - 48
@@ -30362,9 +30509,10 @@ PL  - United States
 TA  - Diabetes
 JT  - Diabetes
 JID - 0372763
+RN  - IY9XDZ35W2 (Glucose)
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
-RN  - IY9XDZ35W2 (Glucose)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Denmark
@@ -30394,7 +30542,7 @@ PMID- 10077729
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19990521
-LR  - 20231213
+LR  - 20260128
 IS  - 0001-5652 (Print)
 IS  - 0001-5652 (Linking)
 VI  - 49
@@ -30440,6 +30588,7 @@ JT  - Human heredity
 JID - 0200525
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Evolution, Molecular
 MH  - Friedreich Ataxia/*genetics
@@ -30468,7 +30617,7 @@ PMID- 9811933
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19981215
-LR  - 20250529
+LR  - 20260128
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
 VI  - 7
@@ -30522,9 +30671,10 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
-RN  - 0 (Iron-Binding Proteins)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Alleles
@@ -30866,7 +31016,7 @@ PMID- 9443873
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980304
-LR  - 20231213
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -30914,10 +31064,11 @@ TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
 RN  - 0 (Antisense Elements (Genetics))
-RN  - 0 (Iron-Binding Proteins)
-RN  - 0 (RNA, Messenger)
 RN  - 9007-49-2 (DNA)
+RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (RNA, Messenger)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Antisense Elements (Genetics)
 MH  - Cloning, Molecular
@@ -30949,7 +31100,7 @@ PMID- 9486868
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980313
-LR  - 20231213
+LR  - 20260128
 IS  - 0148-639X (Print)
 IS  - 0148-639X (Linking)
 VI  - 21
@@ -30991,6 +31142,7 @@ JT  - Muscle & nerve
 JID - 7803146
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Biopsy
@@ -31031,7 +31183,7 @@ PMID- 9448568
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980217
-LR  - 20231213
+LR  - 20260128
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
 VI  - 120 ( Pt 12)
@@ -31088,6 +31240,7 @@ JT  - Brain : a journal of neurology
 JID - 0372537
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -31271,7 +31424,7 @@ PMID- 9326946
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19971114
-LR  - 20231213
+LR  - 20260128
 IS  - 1061-4036 (Print)
 IS  - 1061-4036 (Linking)
 VI  - 17
@@ -31326,11 +31479,12 @@ PL  - United States
 TA  - Nat Genet
 JT  - Nature genetics
 JID - 9216904
+RN  - EC 4.2.1.3 (Aconitate Hydratase)
+RN  - E1UOL152H7 (Iron)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Iron-Sulfur Proteins)
-RN  - E1UOL152H7 (Iron)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
-RN  - EC 4.2.1.3 (Aconitate Hydratase)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Aconitate Hydratase/*deficiency
 MH  - Citric Acid Cycle
@@ -31364,7 +31518,7 @@ PMID- 9339708
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19971114
-LR  - 20231213
+LR  - 20260128
 IS  - 0028-3878 (Print)
 IS  - 0028-3878 (Linking)
 VI  - 49
@@ -31404,6 +31558,7 @@ JT  - Neurology
 JID - 0401060
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -31584,7 +31739,7 @@ PMID- 9270608
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19970917
-LR  - 20231213
+LR  - 20260128
 IS  - 0028-3878 (Print)
 IS  - 0028-3878 (Linking)
 VI  - 49
@@ -31626,6 +31781,7 @@ JT  - Neurology
 JID - 0401060
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Adult
 MH  - Central Nervous System/pathology/*physiopathology
@@ -31652,7 +31808,7 @@ PMID- 9241271
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19970828
-LR  - 20231213
+LR  - 20260128
 IS  - 1061-4036 (Print)
 IS  - 1061-4036 (Linking)
 VI  - 16
@@ -31687,6 +31843,7 @@ RN  - 0 (DNA, Fungal)
 RN  - 0 (DNA, Mitochondrial)
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Amino Acid Sequence
 MH  - Animals
@@ -31718,7 +31875,7 @@ PMID- 9177790
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19970707
-LR  - 20231213
+LR  - 20260128
 IS  - 0888-7543 (Print)
 IS  - 0888-7543 (Linking)
 VI  - 42
@@ -31775,6 +31932,7 @@ JID - 8800135
 RN  - 0 (DNA Primers)
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Alternative Splicing
 MH  - Base Sequence
@@ -32039,7 +32197,7 @@ PMID- 9331900
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19971120
-LR  - 20231213
+LR  - 20260128
 IS  - 0969-9961 (Print)
 IS  - 0969-9961 (Linking)
 VI  - 4
@@ -32090,6 +32248,7 @@ JT  - Neurobiology of disease
 JID - 9500169
 RN  - 0 (Iron-Binding Proteins)
 RN  - EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Animals
 MH  - Embryonic and Fetal Development/genetics
@@ -32201,7 +32360,7 @@ PMID- 8596916
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19960417
-LR  - 20250529
+LR  - 20260128
 IS  - 0036-8075 (Print)
 IS  - 0036-8075 (Linking)
 VI  - 271
@@ -32292,6 +32451,7 @@ JID - 0404511
 RN  - 0 (DNA Primers)
 RN  - 0 (Iron-Binding Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 CIN - Science. 1996 Mar 8;271(5254):1374-5. doi: 10.1126/science.271.5254.1374. PMID: 
       8596908

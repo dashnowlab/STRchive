@@ -1,12 +1,13 @@
 
 PMID- 41468806
 OWN - NLM
-STAT- Publisher
-LR  - 20251230
+STAT- MEDLINE
+DCOM- 20260125
+LR  - 20260127
 IS  - 1532-8198 (Electronic)
 IS  - 1092-9134 (Linking)
 VI  - 81
-DP  - 2025 Dec 26
+DP  - 2026 Apr
 TI  - Novel RUNX1/2 fusions in unclassified cystic squamous salivary gland tumors: 
       Possible expansion of the keratocystoma family.
 PG  - 152603
@@ -64,13 +65,26 @@ FAU - Nagao, Toshitaka
 AU  - Nagao T
 AD  - Department of Anatomic Pathology, Tokyo Medical University, Tokyo, Japan.
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20251226
 PL  - United States
 TA  - Ann Diagn Pathol
 JT  - Annals of diagnostic pathology
 JID - 9800503
+RN  - 0 (Core Binding Factor Alpha 2 Subunit)
+RN  - 0 (RUNX1 protein, human)
+RN  - 0 (Core Binding Factor Alpha 1 Subunit)
+RN  - 0 (RUNX2 protein, human)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - *Salivary Gland Neoplasms/genetics/pathology
+MH  - *Core Binding Factor Alpha 2 Subunit/genetics
+MH  - In Situ Hybridization, Fluorescence/methods
+MH  - *Core Binding Factor Alpha 1 Subunit/genetics
+MH  - Gene Fusion
 OTO - NOTNLM
 OT  - Keratocystoma
 OT  - Parotid gland
@@ -82,18 +96,19 @@ COIS- Declaration of competing interest All authors certify that they have no
       interest or non-financial interest in the subject matter or materials discussed 
       in this manuscript.
 EDAT- 2025/12/31 00:33
-MHDA- 2025/12/31 00:33
+MHDA- 2026/01/26 00:33
 CRDT- 2025/12/30 18:08
 PHST- 2025/11/28 00:00 [received]
 PHST- 2025/12/23 00:00 [revised]
 PHST- 2025/12/24 00:00 [accepted]
-PHST- 2025/12/31 00:33 [medline]
+PHST- 2026/01/26 00:33 [medline]
 PHST- 2025/12/31 00:33 [pubmed]
 PHST- 2025/12/30 18:08 [entrez]
 AID - S1092-9134(25)00168-6 [pii]
 AID - 10.1016/j.anndiagpath.2025.152603 [doi]
-PST - aheadofprint
-SO  - Ann Diagn Pathol. 2025 Dec 26;81:152603. doi: 10.1016/j.anndiagpath.2025.152603.
+PST - ppublish
+SO  - Ann Diagn Pathol. 2026 Apr;81:152603. doi: 10.1016/j.anndiagpath.2025.152603. 
+      Epub 2025 Dec 26.
 
 PMID- 40585427
 OWN - NLM
@@ -1103,7 +1118,7 @@ PMID- 19264154
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090707
-LR  - 20250529
+LR  - 20260128
 IS  - 1873-2763 (Electronic)
 IS  - 8756-3282 (Print)
 IS  - 1873-2763 (Linking)
@@ -1171,7 +1186,6 @@ JID - 8504048
 RN  - 0 (Collagen Type I)
 RN  - 0 (Ki-67 Antigen)
 RN  - 0 (TRPP Cation Channels)
-RN  - 0 (polycystic kidney disease 1 protein)
 SB  - IM
 MH  - Animals
 MH  - Apoptosis/genetics/physiology
