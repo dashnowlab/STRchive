@@ -227,7 +227,7 @@ PMID- 38667292
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240426
-LR  - 20250117
+LR  - 20260127
 IS  - 2073-4409 (Electronic)
 IS  - 2073-4409 (Linking)
 VI  - 13
@@ -288,10 +288,13 @@ PL  - Switzerland
 TA  - Cells
 JT  - Cells
 JID - 101600052
-RN  - 0 (NOP56 protein, human)
 RN  - 0 (Nuclear Proteins)
+RN  - 0 (NOP56 protein, human)
 RN  - 0 (NIPA1 protein, human)
+RN  - 0 (Membrane Proteins)
 RN  - 0 (NOTCH2NLC protein, human)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Intercellular Signaling Peptides and Proteins)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -305,6 +308,9 @@ MH  - DNA Repeat Expansion/genetics
 MH  - Genetic Predisposition to Disease
 MH  - Italy
 MH  - Nuclear Proteins/genetics
+MH  - Membrane Proteins
+MH  - Nerve Tissue Proteins
+MH  - Intercellular Signaling Peptides and Proteins
 PMC - PMC11049433
 OTO - NOTNLM
 OT  - NIPA1
@@ -1331,148 +1337,6 @@ AID - 10.1093/braincomms/fcaa064 [doi]
 PST - epublish
 SO  - Brain Commun. 2020 May 19;2(2):fcaa064. doi: 10.1093/braincomms/fcaa064. 
       eCollection 2020.
-
-PMID- 31286297
-OWN - NLM
-STAT- MEDLINE
-DCOM- 20200427
-LR  - 20200427
-IS  - 1590-3478 (Electronic)
-IS  - 1590-1874 (Linking)
-VI  - 40
-IP  - 12
-DP  - 2019 Dec
-TI  - Analysis of the GCG repeat length in NIPA1 gene in C9orf72-mediated ALS in a 
-      large Italian ALS cohort.
-PG  - 2537-2540
-LID - 10.1007/s10072-019-04001-3 [doi]
-AB  - Amyotrophic lateral sclerosis (ALS) is characterized by degeneration of upper and 
-      lower motor neurons. The hexanucleotide repeat expansion in C9orf72 gene 
-      (C9orf72-HRE) is the most frequent genetic cause of ALS. Since many ALS pedigrees 
-      showed incomplete penetrance, several genes have been analyzed as possible 
-      modifiers. Length of the GCG repeat tract in NIPA1 (non-imprinted in 
-      Prader-Willi/Angelman syndrome 1) gene has been recently investigated as a 
-      possible modifier factor for C9orf72-HRE patients with contrasting findings. To 
-      disclose the possible role of NIPA1 GCG repeat length as modifier of the disease 
-      risk in C9orf72-HRE carriers, we analyzed a large cohort of 532 Italian ALS cases 
-      enriched in C9orf72-HRE carriers (172 cases) and 483 Italian controls. This 
-      sample size is powered (92% power, p = 0.05) to replicate the modifier effect 
-      observed in literature. We did not observe higher frequency of NIPA1 long alleles 
-      (> 8 GCG) in C9orf72-HRE carriers (3.5%) compared with C9orf72-HRE negative 
-      patients (4.1%) and healthy controls (5%). For the latter comparison, we 
-      meta-analyzed our data with currently available literature data, and no 
-      statistically significant effect was observed (p = 0.118). In conclusion, we did 
-      not confirm a role of NIPA1 repeat length as a modifier of the C9orf72 ALS 
-      disease risk.
-FAU - Corrado, Lucia
-AU  - Corrado L
-AUID- ORCID: 0000-0002-1737-8267
-AD  - Department of Health Sciences, University of Eastern Piedmont (UPO), Novara, 
-      Italy. lucia.corrado@med.uniupo.it.
-FAU - Brunetti, Maura
-AU  - Brunetti M
-AD  - "Rita Levi Montalcini" Department of Neuroscience, Neurology II, ALS Center, 
-      University of Torino, Torino, Italy.
-FAU - Di Pierro, Alice
-AU  - Di Pierro A
-AD  - Department of Health Sciences, University of Eastern Piedmont (UPO), Novara, 
-      Italy.
-FAU - Barberis, Marco
-AU  - Barberis M
-AD  - "Rita Levi Montalcini" Department of Neuroscience, Neurology II, ALS Center, 
-      University of Torino, Torino, Italy.
-FAU - Croce, Roberta
-AU  - Croce R
-AD  - Department of Health Sciences, University of Eastern Piedmont (UPO), Novara, 
-      Italy.
-FAU - Bersano, Enrica
-AU  - Bersano E
-AD  - ALS Center AOU Maggiore della Carita, Novara, Italy.
-FAU - De Marchi, Fabiola
-AU  - De Marchi F
-AD  - ALS Center AOU Maggiore della Carita, Novara, Italy.
-FAU - Zuccala, Miriam
-AU  - Zuccala M
-AD  - Department of Health Sciences, University of Eastern Piedmont (UPO), Novara, 
-      Italy.
-FAU - Barizzone, Nadia
-AU  - Barizzone N
-AD  - Department of Health Sciences, University of Eastern Piedmont (UPO), Novara, 
-      Italy.
-FAU - Calvo, Andrea
-AU  - Calvo A
-AD  - ALS Center, "Rita Levi Montalcini" Department of Neuroscience, University of 
-      Torino, Torino, Italy.
-AD  - The Azienda Ospedaliero Universitaria Citta della Salute e della Scienza di 
-      Torino, Torino, Italy.
-AD  - The Neuroscience Institute of Torino, Torino, Italy.
-FAU - Moglia, Cristina
-AU  - Moglia C
-AD  - ALS Center, "Rita Levi Montalcini" Department of Neuroscience, University of 
-      Torino, Torino, Italy.
-AD  - The Azienda Ospedaliero Universitaria Citta della Salute e della Scienza di 
-      Torino, Torino, Italy.
-FAU - Mazzini, Letizia
-AU  - Mazzini L
-AD  - ALS Center AOU Maggiore della Carita, Novara, Italy.
-FAU - Chio, Adriano
-AU  - Chio A
-AD  - ALS Center, "Rita Levi Montalcini" Department of Neuroscience, University of 
-      Torino, Torino, Italy.
-AD  - The Azienda Ospedaliero Universitaria Citta della Salute e della Scienza di 
-      Torino, Torino, Italy.
-AD  - The Neuroscience Institute of Torino, Torino, Italy.
-FAU - D'Alfonso, Sandra
-AU  - D'Alfonso S
-AD  - Department of Health Sciences, University of Eastern Piedmont (UPO), Novara, 
-      Italy.
-LA  - eng
-GR  - FGBR17/2013/Arisla/
-GR  - RF-2013-02355764/Ministero della Salute/
-GR  - RF-2010-2309849/Ministero della Salute/
-GR  - prin 2015/Ministero dell'Istruzione, dell'Universita e della Ricerca/
-GR  - Joint Programme - Neurodegenerative Disease Research (Strength and Brain-Mend 
-      projects)/Ministero dell'Istruzione, dell'Universita e della Ricerca/
-GR  - FP7/2007-2013 under grant agreement 259867/FP7 Ideas: European Research Council/
-PT  - Journal Article
-PT  - Meta-Analysis
-DEP - 20190709
-PL  - Italy
-TA  - Neurol Sci
-JT  - Neurological sciences : official journal of the Italian Neurological Society and 
-      of the Italian Society of Clinical Neurophysiology
-JID - 100959175
-RN  - 0 (C9orf72 Protein)
-RN  - 0 (C9orf72 protein, human)
-RN  - 0 (Membrane Proteins)
-RN  - 0 (NIPA1 protein, human)
-SB  - IM
-MH  - Amyotrophic Lateral Sclerosis/*genetics
-MH  - C9orf72 Protein/*genetics
-MH  - Cohort Studies
-MH  - Genes, Modifier/*genetics
-MH  - Genetic Predisposition to Disease/*genetics
-MH  - Humans
-MH  - Italy
-MH  - Membrane Proteins/*genetics
-MH  - Trinucleotide Repeat Expansion
-OTO - NOTNLM
-OT  - ALS
-OT  - C9orf72-HRE carriers
-OT  - NIPA1
-EDAT- 2019/07/10 06:00
-MHDA- 2020/04/28 06:00
-CRDT- 2019/07/10 06:00
-PHST- 2019/01/31 00:00 [received]
-PHST- 2019/06/27 00:00 [accepted]
-PHST- 2019/07/10 06:00 [pubmed]
-PHST- 2020/04/28 06:00 [medline]
-PHST- 2019/07/10 06:00 [entrez]
-AID - 10.1007/s10072-019-04001-3 [pii]
-AID - 10.1007/s10072-019-04001-3 [doi]
-PST - ppublish
-SO  - Neurol Sci. 2019 Dec;40(12):2537-2540. doi: 10.1007/s10072-019-04001-3. Epub 2019 
-      Jul 9.
 
 PMID- 30342764
 OWN - NLM

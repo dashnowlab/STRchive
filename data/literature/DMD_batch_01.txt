@@ -112,7 +112,7 @@ PMID- 41173008
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251113
-LR  - 20251113
+LR  - 20260131
 IS  - 2213-6711 (Electronic)
 IS  - 2213-6711 (Linking)
 VI  - 20
@@ -123,6 +123,7 @@ TI  - Modulation of the JAK2-STAT3 pathway promotes expansion and maturation of 
 PG  - 102692
 LID - S2213-6711(25)00296-6 [pii]
 LID - 10.1016/j.stemcr.2025.102692 [doi]
+LID - 102692
 AB  - Generation of in vitro human induced pluripotent cell (hiPSC)-derived skeletal 
       muscle progenitor cells (SMPCs) holds great promise for regenerative medicine for 
       skeletal muscle wasting diseases, for example Duchenne muscular dystrophy (DMD). 
@@ -203,6 +204,7 @@ AD  - Cardiovascular and Muscular Diseases Center, Sanford Burnham Prebys Medica
       Discovery Institute, La Jolla, CA 92037, USA. Electronic address: 
       asacco@sbpdiscovery.org.
 LA  - eng
+GR  - R01 AR056712/AR/NIAMS NIH HHS/United States
 PT  - Journal Article
 DEP - 20251030
 PL  - United States
@@ -229,6 +231,7 @@ MH  - Muscle Fibers, Skeletal/cytology/metabolism
 MH  - Cell Proliferation
 MH  - Muscular Dystrophy, Duchenne/therapy
 MH  - Cells, Cultured
+PMC - PMC12790747
 OTO - NOTNLM
 OT  - Duchenne muscular dystrophy
 OT  - STAT3 pathway
@@ -239,6 +242,7 @@ OT  - skeletal muscle progenitor cells, myogenic maturation, skeletal muscle
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2025/11/01 05:37
 MHDA- 2025/11/13 06:30
+PMCR- 2025/10/30
 CRDT- 2025/10/31 19:41
 PHST- 2025/03/16 00:00 [received]
 PHST- 2025/10/03 00:00 [revised]
@@ -246,7 +250,9 @@ PHST- 2025/10/06 00:00 [accepted]
 PHST- 2025/11/13 06:30 [medline]
 PHST- 2025/11/01 05:37 [pubmed]
 PHST- 2025/10/31 19:41 [entrez]
+PHST- 2025/10/30 00:00 [pmc-release]
 AID - S2213-6711(25)00296-6 [pii]
+AID - 102692 [pii]
 AID - 10.1016/j.stemcr.2025.102692 [doi]
 PST - ppublish
 SO  - Stem Cell Reports. 2025 Nov 11;20(11):102692. doi: 10.1016/j.stemcr.2025.102692. 
@@ -1859,7 +1865,7 @@ PMID- 34371182
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220407
-LR  - 20230106
+LR  - 20260127
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Print)
 IS  - 1525-0016 (Linking)
@@ -1937,11 +1943,12 @@ PL  - United States
 TA  - Mol Ther
 JT  - Molecular therapy : the journal of the American Society of Gene Therapy
 JID - 100890581
-RN  - 0 (ADD3 protein, human)
 RN  - 0 (Calmodulin-Binding Proteins)
-RN  - 0 (MBNL3 protein, human)
-RN  - 0 (RNA-Binding Proteins)
 RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (RNA-Binding Proteins)
+RN  - 0 (ADD3 protein, human)
+RN  - 0 (Adducins)
+RN  - 0 (MBNL3 protein, human)
 SB  - IM
 MH  - Alternative Splicing
 MH  - CRISPR-Cas Systems
@@ -1954,6 +1961,7 @@ MH  - Myotonin-Protein Kinase/genetics
 MH  - RNA-Binding Proteins/genetics/metabolism
 MH  - Transcriptome
 MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Adducins
 PMC - PMC8753376
 OTO - NOTNLM
 OT  - CRISPR ribonucleoprotein
@@ -2392,7 +2400,7 @@ PMID- 29687370
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20181108
-LR  - 20230928
+LR  - 20260127
 IS  - 1573-7330 (Electronic)
 IS  - 1058-0468 (Print)
 IS  - 1058-0468 (Linking)
@@ -2750,7 +2758,7 @@ PMID- 27529242
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170327
-LR  - 20181113
+LR  - 20260127
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 17
@@ -2984,7 +2992,7 @@ PMID- 27276190
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20171220
-LR  - 20180118
+LR  - 20260127
 IS  - 1563-5260 (Electronic)
 IS  - 0167-7063 (Linking)
 VI  - 30
@@ -3670,7 +3678,7 @@ PMID- 23574351
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20151026
-LR  - 20211203
+LR  - 20260128
 IS  - 1399-0004 (Electronic)
 IS  - 0009-9163 (Linking)
 VI  - 85
@@ -3724,19 +3732,19 @@ PL  - Denmark
 TA  - Clin Genet
 JT  - Clinical genetics
 JID - 0253664
-RN  - 0 (FMR1 protein, human)
-RN  - 0 (Proteins)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - EC 3.1.3.- (Nucleotidases)
+RN  - 0 (Proteins)
+RN  - EC 3.1.6.2 (Steryl-Sulfatase)
+RN  - 0 (FMR1 protein, human)
 RN  - EC 3.1.3.- (PUDP protein, human)
 RN  - EC 3.1.6.2 (STS protein, human)
-RN  - EC 3.1.6.2 (Steryl-Sulfatase)
 SB  - IM
 MH  - Adult
 MH  - Child
 MH  - DNA Methylation
 MH  - Female
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Fragile X Syndrome/*genetics
 MH  - Haplotypes
 MH  - *Heterozygote
@@ -5515,7 +5523,7 @@ PMID- 8588583
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19960327
-LR  - 20171116
+LR  - 20260128
 IS  - 0148-7299 (Print)
 IS  - 0148-7299 (Linking)
 VI  - 59

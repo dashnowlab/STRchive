@@ -95,13 +95,14 @@ SO  - J Neurosci Res. 2025 Dec;103(12):e70089. doi: 10.1002/jnr.70089.
 
 PMID- 41254939
 OWN - NLM
-STAT- Publisher
-LR  - 20251225
+STAT- MEDLINE
+DCOM- 20260116
+LR  - 20260116
 IS  - 2666-2477 (Electronic)
 IS  - 2666-2477 (Linking)
 VI  - 7
 IP  - 1
-DP  - 2025 Nov 17
+DP  - 2026 Jan 15
 TI  - Unbiased human genomic characterization of polyglutamine disorder genes to guide 
       biological understanding and therapeutic strategies.
 PG  - 100547
@@ -133,7 +134,7 @@ AB  - Polyglutamine (polyQ) disorders, such as Huntington disease (HD) and sever
       drug targets. These findings reinforce the importance of exploring alternative 
       therapeutic strategies, such as targeting genetic modifier genes, as well as 
       allele-selective approaches, to mitigate these challenges.
-CI  - Copyright (c) 2025. Published by Elsevier Inc.
+CI  - Copyright (c) 2025 The Authors. Published by Elsevier Inc. All rights reserved.
 FAU - Namuli, Kevin Lucy
 AU  - Namuli KL
 AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
@@ -159,7 +160,16 @@ PL  - United States
 TA  - HGG Adv
 JT  - HGG advances
 JID - 101772885
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
 SB  - IM
+MH  - Humans
+MH  - *Peptides/genetics
+MH  - *Genomics/methods
+MH  - *Huntington Disease/genetics/therapy
+MH  - *Genome, Human
+MH  - Phenotype
+MH  - Genome-Wide Association Study
 PMC - PMC12719159
 OTO - NOTNLM
 OT  - Huntington disease
@@ -171,21 +181,22 @@ OT  - spinocerebellar ataxia
 OT  - therapeutic targets
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2025/11/19 06:32
-MHDA- 2025/11/19 06:32
+MHDA- 2026/01/17 00:37
 PMCR- 2025/11/17
 CRDT- 2025/11/19 01:36
 PHST- 2025/07/09 00:00 [received]
 PHST- 2025/11/11 00:00 [revised]
 PHST- 2025/11/11 00:00 [accepted]
+PHST- 2026/01/17 00:37 [medline]
 PHST- 2025/11/19 06:32 [pubmed]
-PHST- 2025/11/19 06:32 [medline]
 PHST- 2025/11/19 01:36 [entrez]
 PHST- 2025/11/17 00:00 [pmc-release]
 AID - S2666-2477(25)00150-2 [pii]
 AID - 100547 [pii]
 AID - 10.1016/j.xhgg.2025.100547 [doi]
-PST - aheadofprint
-SO  - HGG Adv. 2025 Nov 17;7(1):100547. doi: 10.1016/j.xhgg.2025.100547.
+PST - ppublish
+SO  - HGG Adv. 2026 Jan 15;7(1):100547. doi: 10.1016/j.xhgg.2025.100547. Epub 2025 Nov 
+      17.
 
 PMID- 41147955
 OWN - NLM
@@ -2697,7 +2708,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20250530
+LR  - 20260127
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -2855,8 +2866,8 @@ PL  - England
 TA  - Lancet Neurol
 JT  - The Lancet. Neurology
 JID - 101139309
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 SB  - IM
 CIN - Lancet Neurol. 2022 Mar;21(3):203. doi: 10.1016/S1474-4422(22)00046-1. PMID: 
       35182497
@@ -2866,7 +2877,7 @@ CIN - Lancet Neurol. 2022 Mar;21(3):222. doi: 10.1016/S1474-4422(22)00048-5. PMI
       35182508
 MH  - Child
 MH  - *DNA Repeat Expansion
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Humans
 MH  - Prospective Studies
 MH  - Retrospective Studies
@@ -5190,7 +5201,7 @@ PMID- 28585930
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180405
-LR  - 20190115
+LR  - 20260127
 IS  - 2158-3188 (Electronic)
 IS  - 2158-3188 (Linking)
 VI  - 7
@@ -5307,14 +5318,15 @@ PL  - United States
 TA  - Transl Psychiatry
 JT  - Translational psychiatry
 JID - 101562664
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Receptors, Androgen)
 RN  - 0 (TATA-Box Binding Protein)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (TBP protein, human)
 RN  - 0 (atrophin-1)
 SB  - IM
@@ -5339,6 +5351,7 @@ MH  - Receptors, Androgen/genetics
 MH  - TATA-Box Binding Protein/*genetics
 MH  - *Trinucleotide Repeats
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 PMC - PMC5534943
 COIS- The authors declare no conflict of interest.
 EDAT- 2017/06/07 06:00
@@ -5463,7 +5476,7 @@ PMID- 27400454
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170530
-LR  - 20220408
+LR  - 20260127
 IS  - 2168-6157 (Electronic)
 IS  - 2168-6149 (Linking)
 VI  - 73
@@ -5615,13 +5628,14 @@ PL  - United States
 TA  - JAMA Neurol
 JT  - JAMA neurology
 JID - 101589536
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
-RN  - 0 (HTT protein, human)
 RN  - 0 (Huntingtin Protein)
 RN  - 0 (Membrane Proteins)
-RN  - 0 (VPS13A protein, human)
 RN  - 0 (Vesicular Transport Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
+RN  - 0 (HTT protein, human)
+RN  - 0 (VPS13A protein, human)
 RN  - 0 (junctophilin)
 SB  - IM
 CIN - JAMA Neurol. 2016 Sep 1;73(9):1056-8. doi: 10.1001/jamaneurol.2016.2095. PMID: 
@@ -5643,6 +5657,7 @@ MH  - Phenotype
 MH  - Retrospective Studies
 MH  - Trinucleotide Repeat Expansion/*genetics
 MH  - Vesicular Transport Proteins/genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2016/07/12 06:00
 MHDA- 2017/05/31 06:00
 CRDT- 2016/07/12 06:00
@@ -6773,7 +6788,7 @@ PMID- 23263592
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20131205
-LR  - 20211021
+LR  - 20260128
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 260
@@ -6851,10 +6866,11 @@ JT  - Journal of neurology
 JID - 0423161
 RN  - 0 (Antigens, CD)
 RN  - 0 (Antigens, Differentiation, Myelomonocytic)
-RN  - 0 (CD68 antigen, human)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Peptides)
 RN  - 0 (Serum Albumin)
+RN  - 0 (CD68 antigen, human)
+RN  - 0 (CD68 Molecule)
 RN  - 0 (atrophin-1)
 RN  - 26700-71-0 (polyglutamine)
 SB  - IM
@@ -6880,6 +6896,7 @@ MH  - Radionuclide Imaging
 MH  - Serum Albumin/*metabolism
 MH  - Statistics as Topic
 MH  - Trinucleotide Repeat Expansion/genetics
+MH  - CD68 Molecule
 EDAT- 2012/12/25 06:00
 MHDA- 2013/12/16 06:00
 CRDT- 2012/12/25 06:00
@@ -8400,7 +8417,7 @@ PMID- 16858508
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20061006
-LR  - 20250529
+LR  - 20260128
 IS  - 1434-5161 (Print)
 IS  - 1435-232X (Electronic)
 IS  - 1434-5161 (Linking)
@@ -8859,7 +8876,7 @@ PMID- 15223312
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040803
-LR  - 20161124
+LR  - 20260128
 IS  - 0022-2836 (Print)
 IS  - 0022-2836 (Linking)
 VI  - 340
@@ -8895,7 +8912,7 @@ PL  - Netherlands
 TA  - J Mol Biol
 JT  - Journal of molecular biology
 JID - 2985088R
-RN  - 0 (CACNA1A protein, human)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Calcium Channels)
 RN  - 0 (MicroRNAs)
 RN  - 0 (Nerve Tissue Proteins)
@@ -8903,9 +8920,10 @@ RN  - 0 (Nuclear Proteins)
 RN  - 0 (Phosphorus Radioisotopes)
 RN  - 0 (RNA, Messenger)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Ataxin-3
 MH  - Calcium Channels/chemistry/genetics
@@ -8929,6 +8947,7 @@ MH  - Spinocerebellar Ataxias/genetics
 MH  - Transcription, Genetic
 MH  - Trinucleotide Repeat Expansion
 MH  - *Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 2004/06/30 05:00
 MHDA- 2004/08/04 05:00
 CRDT- 2004/06/30 05:00
@@ -8947,7 +8966,7 @@ PMID- 15148151
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040617
-LR  - 20220321
+LR  - 20260128
 IS  - 0003-9942 (Print)
 IS  - 0003-9942 (Linking)
 VI  - 61
@@ -9021,13 +9040,10 @@ PL  - United States
 TA  - Arch Neurol
 JT  - Archives of neurology
 JID - 0372436
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
-RN  - 0 (ATXN8OS gene product, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
@@ -9035,8 +9051,12 @@ RN  - 0 (Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -9063,6 +9083,7 @@ MH  - RNA, Untranslated
 MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/*genetics
 MH  - *Trinucleotide Repeat Expansion
+MH  - Calcium Channels, N-Type
 EDAT- 2004/05/19 05:00
 MHDA- 2004/06/18 05:00
 CRDT- 2004/05/19 05:00
@@ -9519,7 +9540,7 @@ PMID- 12614315
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20030506
-LR  - 20190814
+LR  - 20260128
 IS  - 0001-6314 (Print)
 IS  - 0001-6314 (Linking)
 VI  - 107
@@ -9567,10 +9588,11 @@ TA  - Acta Neurol Scand
 JT  - Acta neurologica Scandinavica
 JID - 0370336
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 SB  - IM
 MH  - Age of Onset
@@ -9584,6 +9606,7 @@ MH  - Prognosis
 MH  - Proteins/*genetics
 MH  - Severity of Illness Index
 MH  - Trinucleotide Repeats/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2003/03/05 04:00
 MHDA- 2003/05/07 05:00
 CRDT- 2003/03/05 04:00
@@ -10415,7 +10438,7 @@ PMID- 10942107
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000821
-LR  - 20221207
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 106
@@ -10469,20 +10492,21 @@ PL  - Germany
 TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -10510,6 +10534,7 @@ MH  - Spinocerebellar Ataxias/diagnosis/*ethnology/*genetics
 MH  - Trinucleotide Repeat Expansion/genetics
 MH  - Trinucleotide Repeats/*genetics
 MH  - White People/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2000/08/15 11:00
 MHDA- 2000/08/29 11:01
 CRDT- 2000/08/15 11:00
@@ -10717,7 +10742,7 @@ PMID- 10768629
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000427
-LR  - 20220311
+LR  - 20260128
 IS  - 0003-9942 (Print)
 IS  - 0003-9942 (Linking)
 VI  - 57
@@ -10778,20 +10803,21 @@ PL  - United States
 TA  - Arch Neurol
 JT  - Archives of neurology
 JID - 0372436
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -10818,6 +10844,7 @@ MH  - Repressor Proteins
 MH  - Severity of Illness Index
 MH  - Spinocerebellar Ataxias/*epidemiology/*genetics
 MH  - Trinucleotide Repeat Expansion/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2000/04/18 09:00
 MHDA- 2000/04/29 09:00
 CRDT- 2000/04/18 09:00
@@ -11302,7 +11329,7 @@ PMID- 10453742
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19990902
-LR  - 20190722
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 104
@@ -11361,20 +11388,21 @@ PL  - Germany
 TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 EIN - Hum Genet 1999 Oct;105(4):376
 MH  - Adult
@@ -11398,6 +11426,7 @@ MH  - Repressor Proteins
 MH  - Spain
 MH  - Spinocerebellar Degenerations/*ethnology/*genetics
 MH  - Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 1999/08/24 00:00
 MHDA- 1999/08/24 00:01
 CRDT- 1999/08/24 00:00
@@ -11887,7 +11916,7 @@ PMID- 9758625
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19981204
-LR  - 20221207
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -11969,14 +11998,15 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
-RN  - 0 (ATXN1 protein, human)
 RN  - 0 (Ataxin-1)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 SB  - IM
 MH  - Asian People/genetics
@@ -11997,6 +12027,7 @@ MH  - Spinocerebellar Degenerations/epidemiology/*genetics
 MH  - Texas
 MH  - *Trinucleotide Repeat Expansion
 MH  - White People/genetics
+MH  - Calcium Channels, N-Type
 PMC - PMC1377499
 EDAT- 1998/10/03 00:00
 MHDA- 1998/10/03 00:01
@@ -12090,7 +12121,7 @@ PMID- 9696528
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19981028
-LR  - 20190814
+LR  - 20260128
 IS  - 0001-6314 (Print)
 IS  - 0001-6314 (Linking)
 VI  - 98
@@ -12252,7 +12283,7 @@ PMID- 9613852
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980724
-LR  - 20190905
+LR  - 20260128
 IS  - 0148-7299 (Print)
 IS  - 0148-7299 (Linking)
 VI  - 81
@@ -12311,14 +12342,15 @@ PL  - United States
 TA  - Am J Med Genet
 JT  - American journal of medical genetics
 JID - 7708900
-RN  - 0 (ATXN1 protein, human)
 RN  - 0 (Ataxin-1)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -12343,6 +12375,7 @@ MH  - Portugal
 MH  - Proteins/genetics
 MH  - Spinocerebellar Degenerations/*genetics
 MH  - *Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 1998/06/05 02:05
 MHDA- 2000/06/20 09:00
 CRDT- 1998/06/05 02:05

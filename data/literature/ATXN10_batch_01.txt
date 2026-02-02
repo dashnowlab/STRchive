@@ -5662,7 +5662,7 @@ PMID- 15148151
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040617
-LR  - 20220321
+LR  - 20260128
 IS  - 0003-9942 (Print)
 IS  - 0003-9942 (Linking)
 VI  - 61
@@ -5736,13 +5736,10 @@ PL  - United States
 TA  - Arch Neurol
 JT  - Archives of neurology
 JID - 0372436
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
-RN  - 0 (ATXN8OS gene product, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
@@ -5750,8 +5747,12 @@ RN  - 0 (Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -5778,6 +5779,7 @@ MH  - RNA, Untranslated
 MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/*genetics
 MH  - *Trinucleotide Repeat Expansion
+MH  - Calcium Channels, N-Type
 EDAT- 2004/05/19 05:00
 MHDA- 2004/06/18 05:00
 CRDT- 2004/05/19 05:00
@@ -5793,7 +5795,7 @@ PMID- 15096564
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20041119
-LR  - 20231213
+LR  - 20260128
 IS  - 1525-1578 (Print)
 IS  - 1525-1578 (Linking)
 VI  - 6
@@ -5846,6 +5848,7 @@ TA  - J Mol Diagn
 JT  - The Journal of molecular diagnostics : JMD
 JID - 100893612
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Case-Control Studies
 MH  - Fluorescence
