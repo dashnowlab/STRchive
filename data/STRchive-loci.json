@@ -72,7 +72,7 @@
   "stop_hg19": 147582273,
   "start_t2t": 146765190,
   "stop_t2t": 146765342,
-  "disease": "Intellectual developmental disorder, X-linked 109, Fragile X intellectual disability",
+  "disease": "Intellectual developmental disorder, Fragile X intellectual disability",
   "inheritance": ["XR"],
   "disease_description": "A nonsyndromic X-linked intellectual development disorder characterized by mild intellectual deficit. FRAXE is the most common form of non-syndromic X-linked disability [@mondo:0010659].",
   "hpo_terms": ["HP:0000718 Aggressive behavior", "HP:0000713 Agitation", "HP:0000729 Autistic behavior", "HP:0002312 Clumsiness", "HP:0000722 Compulsive behaviors", "HP:0000750 Delayed speech and language development", "HP:0001249 Intellectual disability"],
@@ -3823,8 +3823,8 @@
   "additional_literature": ["pmid:41426430", "pmid:41219789", "pmid:38961870", "pmid:38467733", "pmid:38059543", "pmid:37592133", "pmid:36740228", "pmid:36622139", "pmid:36092952", "pmid:33791773", "pmid:33721773", "pmid:33681653", "pmid:33501421", "pmid:33040085", "pmid:32973343", "pmid:32203200", "pmid:32194077", "pmid:32174879", "pmid:31664039", "pmid:31483537", "pmid:30559482", "pmid:30351492", "pmid:30194086"]
 },
 {
-  "id": "XID_SOX3",
-  "disease_id": "XID",
+  "id": "XLID_SOX3",
+  "disease_id": "XLID, PHP",
   "gene": "SOX3",
   "chrom": "chrX",
   "start_hg38": 140504316,
@@ -3833,7 +3833,7 @@
   "stop_hg19": 139586526,
   "start_t2t": 138816203,
   "stop_t2t": 138816248,
-  "disease": "X-linked intellectual developmental disorder with isolated growth hormone; X-linked panhypopituitarism",
+  "disease": "X-linked intellectual developmental disorder with isolated growth hormone deficiency; X-linked panhypopituitarism",
   "inheritance": ["XR"],
   "disease_description": "X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without intellectual disability [@pmid:24346842].",
   "hpo_terms": null,
