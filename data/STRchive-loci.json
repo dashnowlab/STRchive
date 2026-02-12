@@ -3583,12 +3583,12 @@
   "location_in_gene": "Intron 2",
   "gene_strand": "-",
   "reference_motif_reference_orientation": ["AAAAG"],
-  "pathogenic_motif_reference_orientation": ["AAGGG", "ACAGG", "AGGGC", "AAGGC", "AGAGG", "AGGGA", "ACAAGG"],
-  "benign_motif_reference_orientation": ["AAAAG", "AAAGG", "AAGAG", "AAAGGG"],
-  "unknown_motif_reference_orientation": ["AAAAA", "AAAAC", "AACGG", "AAGAC", "AAGGT", "AGAAC", "AGGGG", "GAAAC", "GGGAC", "GTGAG", "AAAAGA", "AAAGGA", "GGAAAG", "AAGAG", "AACGG", "AAAAGG", "AGGG", "GAAGG", "AAACG", "AACAG", "ACGG", "AGGTG", "ACGGG", "AAAAAG", "AGGGC", "AAAGG"],
-  "pathogenic_motif_gene_orientation": ["CCCTT", "CCTGT", "CCCTG", "CCTTG", "CCTCT", "TCCCT"],
-  "benign_motif_gene_orientation": ["CTTTT", "CCTTT", "CTCTT", "CCCTTT"],
-  "unknown_motif_gene_orientation": ["TTTTT", "GTTTT", "CCGTT", "CTTGT", "ACCTT", "CTGTT", "CCCCT", "CGTTT", "CCCGT", "ACCTC", "CTTTTT", "CCTTTT", "CCCTTT"],
+  "pathogenic_motif_reference_orientation": ["AAGGG", "ACAGG", "AAAGG", "AGGGC"],
+  "benign_motif_reference_orientation": ["AAAAG", "AAAGGG"],
+  "unknown_motif_reference_orientation": ["AAAAA", "AAAAC", "AACGG", "AAGAC", "AAGGT", "AGGGG", "AAGAG", "AAAAGG", "AAACG", "AACAG", "AGGTG", "ACGGG", "AAAAAG", "AAGGC"],
+  "pathogenic_motif_gene_orientation": ["CCCTT", "CCTGT", "CCTTT", "CCCTG"],
+  "benign_motif_gene_orientation": ["CTTTT", "CCCTTT"],
+  "unknown_motif_gene_orientation": ["TTTTT", "GTTTT", "CCGTT", "CTTGT", "ACCTT", "CCCCT", "CTCTT", "CCTTTT", "CGTTT", "CTGTT", "ACCTC", "CCCGT", "CTTTTT", "CCTTG"],
   "locus_structure": [
   {
     "motif": "AAAAG",
