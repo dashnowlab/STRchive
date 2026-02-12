@@ -393,7 +393,7 @@
   "DisplayRU": "GGCCCC",
   "Disease": "FTDALS1",
   "NormalMax": 23,
-  "PathologicMin": 251,
+  "PathologicMin": 31,
   "Gene": "C9orf72"
 },
 {
@@ -961,14 +961,14 @@
   "Gene": "ZIC3"
 },
 {
-  "LocusId": "XLMR_SOX3",
+  "LocusId": "XLID_SOX3",
   "ReferenceRegion": "chrX:140504316-140504361",
   "LocusStructure": "(NGC)*",
   "VariantType": "Repeat",
   "HGNCId": null,
   "InheritanceMode": ["XR"],
   "DisplayRU": "NGC",
-  "Disease": "XLMR",
+  "Disease": "XLID, PHP",
   "NormalMax": 15,
   "PathologicMin": 22,
   "Gene": "SOX3"

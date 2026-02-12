@@ -2,7 +2,7 @@
 chr1	1435798	1435818	HMNR7_VWA1	VWA1	GGCGCGGAGC	GGCGCGGAGC	1	AR	Neuronopathy, distal hereditary motor, autosomal recessive 7
 chr1	57367043	57367121	SCA37_DAB1	DAB1	AAAAT	GAAAT	31	AD	Spinocerebellar ataxia type 37
 chr1	94418421	94418444	OPDM5_ABCD3	ABCD3	GCC	GCC	118	AD	Oculopharyngodistal myopathy type 5
-chr1	149390802	149390842	NIID_NOTCH2NLC	NOTCH2NLC	GGC	GGC	66	AD	Neuronal intranuclear inclusion disease, Alzheimer disease and parkinsonism phenotype, Oculopharyngodistal myopathy (OPDM) type 3
+chr1	149390802	149390842	NIID_NOTCH2NLC	NOTCH2NLC	GGC	GGC	66	AD	Neuronal intranuclear inclusion disease, Alzheimer disease and parkinsonism phenotype, Oculopharyngodistal myopathy (OPDM) type 3, hereditary essential tremor type 6
 chr1	155188505	155192239	ADTKD_MUC1	MUC1	GGCTNNGGGNGCGGTGGAGCCCGGGGCNGGNCTGNTNTCCGGGGCCGAGGTGACANCNTG	GCCCACGGTGTCACCTCGGCCCCGGACACCAGGCCGGCCCCGGGCTCCACCGCCCCCCCCA	None	AD	Autosomal dominant tubulointerstitial kidney disease
 chr1	156591765	156591783	NME_NAXE	NAXE	GGGCC	GGGCC	200	AR	NAXE-related mitochondrial encephalopathy
 chr2	96197066	96197124	FAME2_STARD7	STARD7	AAAAT	AAATG	274	AD	Familial adult myoclonic epilepsy 2
@@ -14,7 +14,7 @@ chr3	129172576	129172656	DM2_CNBP	CNBP	CAGG	CAGG	75	AD	Myotonic dystrophy type 2
 chr3	138946019	138946062	BPES_FOXL2	FOXL2	NGC	NGC	15	AD,AR	Blepharophimosis, epicanthus inversus, and ptosis
 chr3	183712187	183712226	FAME4_YEATS2	YEATS2	TTTTA	TTTCA	1000	AD	Familial adult myoclonic epilepsy 4
 chr4	3074876	3074933	HD_HTT	HTT	CAG	CAG	36	AD	Huntington disease
-chr4	39348424	39348483	CANVAS_RFC1	RFC1	AAAAG	AAGGG,ACAGG,AGGGC,AAGGC,AGAGG	400	AR	Cerebellar ataxia, neuropathy, and vestibular areflexia syndrome
+chr4	39348424	39348483	CANVAS_RFC1	RFC1	AAAAG	AAGGG,ACAGG,AAAGG,AGGGC	400	AR	Cerebellar ataxia, neuropathy, and vestibular areflexia syndrome
 chr4	41745972	41746032	CCHS_PHOX2B	PHOX2B	GCN	GCN	26	AD	Congenital central hypoventilation syndrome
 chr4	159342526	159342618	FAME7_RAPGEF2	RAPGEF2	TTTTA	TTTCA	60	AD	Familial adult myoclonic epilepsy type 7
 chr5	10356343	10356411	FAME3_MARCHF6	MARCHF6	TTTTA	TTTCA	650	AD	Familial adult myoclonic epilepsy type 3
@@ -28,7 +28,7 @@ chr7	27199924	27199966	HFG_HOXA13-I	HOXA13	NGC	NGC	22	AD	Hand-foot-genital syndr
 chr7	55887600	55887639	FRA7A_ZNF713	ZNF713	GCG	GCG	450	AD	Autism spectrum disorder associated with fragile site FRA7A
 chr8	104588970	104588999	OPDM1_LRP12	LRP12	CGC	CGC	85	AD	Oculopharyngodistal myopathy type 1
 chr8	118366812	118366918	FAME1_SAMD12	SAMD12	TAAAA	TGAAA	105	AD	Familial adult myoclonic epilepsy type 1
-chr9	27573484	27573546	FTDALS1_C9orf72	C9orf72	GGCCCC	GGCCCC	251	AD	Frontotemporal dementia (FTD) and/or amyotrophic lateral sclerosis (ALS)
+chr9	27573484	27573546	FTDALS1_C9orf72	C9orf72	GGCCCC	GGCCCC	31	AD	Frontotemporal dementia (FTD) and/or amyotrophic lateral sclerosis (ALS)
 chr9	69037286	69037304	FRDA_FXN	FXN	GAA	GAA	56	AR	Friedreich ataxia
 chr9	130681605	130681641	HSAN-VIII_PRDM12	PRDM12	GCC	GCC	18	AR	Hereditary sensory and autonomic neuropathy type VIII
 chr10	79826383	79826404	OPML1_NUTM2B-AS1	NUTM2B-AS1	GGC	GGC	161	AD	Oculopharyngeal myopathy with leukoencephalopathy 1
@@ -71,6 +71,6 @@ chrX	31284557	31284605	DMD_DMD	DMD	TTC	TTC	59	XR	Duchenne muscular dystrophy
 chrX	67545316	67545419	SBMA_AR	AR	GCA	GCA	38	XR	Spinal and bulbar muscular atrophy, Kennedy Disease
 chrX	71453054	71453131	XDP_TAF1	TAF1	AGAGGG	AGAGGG	35	XR	X-linked dystonia-parkinsonism (XDP) a.k.a. Dystonia 3, torsion, X-linked (DYT3)
 chrX	137566826	137566856	VACTERLX_ZIC3	ZIC3	GCN	GCN	12	XR	X-linked VACTERL syndrome
-chrX	140504316	140504361	XLMR_SOX3	SOX3	NGC	NGC	22	XR	X-linked panhypopituitarism ; X-linked mental retardation with isolated growth hormone
+chrX	140504316	140504361	XLID_SOX3	SOX3	NGC	NGC	22	XR	X-linked intellectual developmental disorder with isolated growth hormone deficiency; X-linked panhypopituitarism
 chrX	147912049	147912111	FXS_FMR1	FMR1	CGG	CGG	201	XD	Fragile X syndrome (FXS), fragile X-associated tremor/ataxia syndrome (FXTAS), and fragile X-associated primary ovarian insufficiency FXPOI/POF1
-chrX	148500604	148500753	FRAXE_AFF2	AFF2	GCC	GCC	201	XR	Fragile X syndrome, FRAXE type
+chrX	148500604	148500753	FRAXE_AFF2	AFF2	GCC	GCC	201	XR	Intellectual developmental disorder, Fragile X intellectual disability
