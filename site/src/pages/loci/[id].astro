@@ -4,7 +4,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
-import { LuFeather } from "react-icons/lu";
+import { LuBookCheck, LuFeather } from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
@@ -137,10 +137,25 @@ const blame = getJsonBlame(
       }
     </div>
 
-    <Button to={`/loci/${id}/edit`} design="bubble">
-      <LuFeather />
-      <span>Suggest Edit</span>
-    </Button>
+    <div class="row">
+      <Button
+        to={`/loci/${id}/edit`}
+        design="bubble"
+        data-tooltip="Suggest an edit to this locus' info"
+      >
+        <LuFeather />
+        <span>Suggest Edit</span>
+      </Button>
+
+      <Button
+        to={`/loci/${id}/evidence`}
+        design="bubble"
+        data-tooltip="Suggest additional evidence for this locus"
+      >
+        <LuBookCheck />
+        <span>Suggest Evidence</span>
+      </Button>
+    </div>
   </section>
 
   <!-- disease info -->

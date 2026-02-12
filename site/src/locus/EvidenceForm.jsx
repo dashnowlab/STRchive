@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { FaXmark } from "react-icons/fa6";
-import { LuFeather, LuSend } from "react-icons/lu";
-import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
+import { LuBookCheck, LuSend } from "react-icons/lu";
+import { cloneDeep, isEqual, omitBy, startCase, sumBy } from "lodash-es";
 import { useLocalStorage } from "@reactuses/core";
 import { createPR } from "@/api/pr";
 import Alert from "@/components/Alert";
@@ -14,45 +14,45 @@ import SchemaForm from "@/components/SchemaForm";
 import { repo } from "@/layouts/meta";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
-import loci from "~/STRchive-loci.json";
-import schema from "~/STRchive-loci.schema.json";
+import evidence from "~/STRtr-kit-evidence.json";
+import schema from "~/STRtr-kit-evidence.schema.json";
 
-/** add extra fields for edit metadata */
+/** add extra fields for evidence metadata */
 schema.properties = {
-  "edit-name": {
+  "evidence-name": {
     section: "Overview",
     ...contactSchema.name,
     type: ["string", "null"],
     default: "",
   },
-  "edit-username": {
+  "evidence-username": {
     section: "Overview",
     ...contactSchema.username,
     type: ["string", "null"],
     pattern: "^@.+",
     default: "",
   },
-  "edit-email": {
+  "evidence-email": {
     section: "Overview",
     ...contactSchema.email,
     type: ["string", "null"],
     default: "",
   },
-  "edit-title": {
+  "evidence-title": {
     section: "Overview",
-    title: "Edit Title",
+    title: "Evidence Title",
     description: "Succinct title describing these changes",
     examples: ["Fix mechanism details", "Update disease onset information"],
     type: "string",
     default: null,
   },
-  "edit-description": {
+  "evidence-description": {
     section: "Overview",
-    title: "Edit Description",
+    title: "Evidence Description",
     description:
       "Summary of changes, justification for changes, uncertainty in literature, or anything else we should know for review. Please be detailed. Provide at least 2-3 sentences.",
     examples: [
-      "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This edit corrects the reference and updates...",
+      "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This evidence corrects the reference and updates...",
     ],
     multiline: true,
     type: ["string", "null"],
@@ -61,21 +61,21 @@ schema.properties = {
   ...schema.properties,
 };
 
-schema.required.push("edit-title");
+schema.required.push("evidence-title");
 
-/** new/edit locus form */
-const EditForm = ({ heading, locus }) => {
+/** new/evidence locus form */
+const EvidenceForm = ({ heading, locus }) => {
   /** confirm with user before leaving page */
   // window.onbeforeunload = () => "";
 
   /** unique storage key for this page and form */
-  const storageKey = `edit-locus-${locus?.id ?? "new"}`;
+  const storageKey = `evidence-locus-${locus?.id ?? "new"}`;
 
   /** form data state */
   let [data, setData] = useLocalStorage(storageKey, {
-    ["edit-title"]: null,
-    ["edit-description"]: null,
-    ...cloneDeep(locus),
+    ["evidence-title"]: null,
+    ["evidence-description"]: null,
+    id: locus?.id ?? null,
   });
 
   /** was data loaded from storage */
@@ -92,10 +92,10 @@ const EditForm = ({ heading, locus }) => {
     status,
   } = useQuery(async () => {
     /** pr body */
-    const name = data["edit-name"];
-    const username = data["edit-username"];
-    const email = data["edit-email"];
-    const description = data["edit-description"];
+    const name = data["evidence-name"];
+    const username = data["evidence-username"];
+    const email = data["evidence-email"];
+    const description = data["evidence-description"];
     const body = [{ name, username, email }, { description }]
       .map((group) =>
         Object.entries(group)
@@ -109,24 +109,22 @@ const EditForm = ({ heading, locus }) => {
       .join("\n\n");
 
     /** branch name from locus id */
-    const branch = `${locus ? "edit" : "new"}-${data.id}`;
+    const branch = `evidence-${data.id}`;
 
     /** pr title */
-    const title = data["edit-title"];
+    const title = data["evidence-title"];
 
     /** remove metadata since it is captured in created pr */
-    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
+    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("evidence-"));
 
-    /** merge with existing locus data */
-    const newLoci = cloneDeep(loci).map((locus) =>
-      locus.id === data.id ? data : locus,
-    );
+    /** merge with existing evidence data */
+    const newEvidence = cloneDeep(evidence).concat([data]);
 
     /** pr files to change */
     const files = [
       {
-        path: "data/STRchive-loci.json",
-        content: JSON.stringify(newLoci, null, 2),
+        path: "data/STRtr-kit-evidence.json",
+        content: JSON.stringify(newEvidence, null, 2),
       },
     ];
 
@@ -137,15 +135,20 @@ const EditForm = ({ heading, locus }) => {
       title,
       body,
       files,
-      labels: ["locus-edit"],
+      labels: ["locus-evidence"],
     });
   });
+
+  /** preview/summary */
+  const geneticPoints = sumBy(data.genetic_evidence, "points") || 0;
+  const experimentalPoints = sumBy(data.experimental_evidence, "points") || 0;
+  const totalPoints = geneticPoints + experimentalPoints;
 
   return (
     <Form onSubmit={submit}>
       <section>
         <Heading level={1}>
-          <LuFeather />
+          <LuBookCheck />
           {heading}
         </Heading>
 
@@ -175,19 +178,24 @@ const EditForm = ({ heading, locus }) => {
         schema={schema}
         data={data}
         onChange={setData}
-        sections={[
-          "Overview",
-          "ID",
-          "Disease",
-          "Locus",
-          "Alleles",
-          "IDs",
-          "References",
-        ]}
+        sections={["Overview", "Evidence"]}
         onSubmit={(data) => submit(data)}
       />
 
       <section>
+        <Heading level={2}>Summary</Heading>
+
+        <dl>
+          <dt>Genetic Points</dt>
+          <dd>{geneticPoints}</dd>
+
+          <dt>Experimental Points</dt>
+          <dd>{experimentalPoints}</dd>
+
+          <dt>Total</dt>
+          <dd>{totalPoints}</dd>
+        </dl>
+
         <Alert type={status || "info"}>
           {status === "" && (
             <>
@@ -211,4 +219,4 @@ const EditForm = ({ heading, locus }) => {
   );
 };
 
-export default EditForm;
+export default EvidenceForm;

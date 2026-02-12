@@ -1,0 +1,297 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "STRtr-kit-evidence.schema",
+  "title": "STRtr-kit Evidence",
+  "description": "Evidence to support pathogenicity of tandem repeat loci in human disease. Each entry describes evidence from a single publication or similar source. There will typically be multiple entries per locus, each describing evidence from different sources.",
+  "citation_format": "In free text strings: 'Some text [@doi:12345; @pmid:12345]'. In regular lists: ['doi:12345', 'pmid:12345']",
+  "type": "object",
+  "properties": {
+    "id": {
+      "section": "Evidence",
+      "title": "Locus",
+      "description": "Unique identifier for the locus within STRchive in the form [disease_id]_[gene]. Additional characters may be added to the end of the ID to make it unique within STRchive, e.g. HFG_HOXA13-I, HFG_HOXA13-II.",
+      "placeholder": "[disease_id]_[gene]",
+      "examples": ["CANVAS_RFC1", "HFG_HOXA13-I", "HFG_HOXA13-II"],
+      "type": ["string"],
+      "pattern": "^[\\S]+_[\\S]+$"
+    },
+
+    "citation": {
+      "section": "Evidence",
+      "title": "Citation",
+      "description": "Citation for the source of the evidence",
+      "examples": ["pmid:29507423"],
+      "type": ["string"],
+      "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
+    },
+
+    "genetic_evidence": {
+      "section": "Evidence",
+      "title": "Genetic Evidence",
+      "description": "One or more pieces of genetic evidence provided in the source",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "description": "The type(s) of genetic evidence provided in the source",
+            "type": ["string", "null"],
+            "enum": [
+              "probands",
+              "allele_effect",
+              "method",
+              "segregation",
+              "case_control"
+            ],
+            "enum_descriptions": {
+              "probands": "Unrelated Probands",
+              "allele_effect": "Relationship between allele size and/or motif sequence and phenotype e.g. age of onset and/or severity",
+              "method": "Method of predicting Pathogenicity",
+              "segregation": "Linkage Region for disease",
+              "case_control": "Case-control study"
+            }
+          },
+          "notes": {
+            "title": "Notes",
+            "description": "Additional notes about the genetic evidence provided in the source including point upgrades/downgrades",
+            "examples": [
+              "Segregation analysis in 3 affected families with LOD score of 3.5"
+            ],
+            "type": ["string", "null"],
+            "multiline": true
+          }
+        },
+        "required": ["type"],
+        "allOf": [
+          {
+            "if": { "properties": { "type": { "const": "probands" } } },
+            "then": {
+              "properties": {
+                "probands": {
+                  "title": "Probands",
+                  "description": "Number of probands with the pathogenic expansion reported in the source",
+                  "type": ["integer"],
+                  "minimum": 0
+                },
+                "points": {
+                  "title": "Points",
+                  "description": "Points assigned to this locus based on the genetic evidence provided in the source, according to the STRtr-kit scoring system.",
+                  "type": ["number"],
+                  "minimum": 0,
+                  "maximum": 6,
+                  "default": 0.5,
+                  "calc": "min(6, {probands} * 0.5)",
+                  "scoring_range": "0–1.5 points per proband",
+                  "upgrades": "+0.5 for inheritance/de novo evidence, +0.5 for functional evidence"
+                }
+              },
+              "required": ["probands", "points"]
+            }
+          }
+        ]
+      }
+    },
+
+    "experimental_evidence": {
+      "section": "Evidence",
+      "title": "Experimental Evidence",
+      "description": "Experimental evidence supporting pathogenicity of the tandem repeat locus. Maximum overall score for all experimental evidence is 6.0 points.",
+      "type": "array",
+      "uniqueItems": true,
+      "category_max": 6.0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "description": "The type of experimental evidence provided in the source",
+            "type": ["string", "null"],
+            "enum": [
+              "biochemical_function",
+              "protein_interaction",
+              "regulatory_impact",
+              "functional_alteration_patient_cells",
+              "functional_alteration_non_patient_cells",
+              "model_non_human",
+              "model_cell_culture",
+              "rescue_human_control",
+              "rescue_non_human_model",
+              "rescue_cell_culture",
+              "rescue_patient_cells"
+            ],
+            "enum_descriptions": {
+              "biochemical_function": "Biochemical function of the gene or repeat",
+              "protein_interaction": "Protein–protein interaction evidence",
+              "regulatory_impact": "Impact on regulation such as splicing, expression, or epigenetics",
+              "functional_alteration_patient_cells": "Functional alteration observed in patient-derived cells",
+              "functional_alteration_non_patient_cells": "Functional alteration observed in non-patient cells",
+              "model_non_human": "Evidence from non-human model organisms",
+              "model_cell_culture": "Evidence from cultured cell models",
+              "rescue_human_control": "Rescue experiments in healthy human cells",
+              "rescue_non_human_model": "Rescue experiments in non-human model organisms",
+              "rescue_cell_culture": "Rescue experiments in cultured cells",
+              "rescue_patient_cells": "Rescue experiments in patient-derived cells"
+            }
+          },
+
+          "notes": {
+            "title": "Notes",
+            "description": "Additional notes about the experimental evidence including point upgrades/downgrades",
+            "type": ["string", "null"],
+            "multiline": true
+          },
+
+          "points": {
+            "title": "Points",
+            "description": "Points assigned based on the experimental evidence provided in the source",
+            "type": ["number"],
+            "minimum": 0
+          }
+        },
+        "required": ["type", "points"],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": [
+                    "biochemical_function",
+                    "protein_interaction",
+                    "regulatory_impact"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 0.5,
+                  "maximum": 2.0,
+                  "scoring_range": "0–2",
+                  "upgrades": "Multiple forms of evidence"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": { "const": "functional_alteration_patient_cells" }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 1.0,
+                  "maximum": 2.0,
+                  "scoring_range": "0–2",
+                  "upgrades": "Multiple patient cells studied"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": { "const": "functional_alteration_non_patient_cells" }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 0.5,
+                  "maximum": 1.0,
+                  "scoring_range": "0–1",
+                  "upgrades": "Multiple control cell types"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": { "const": "model_non_human" }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 2.0,
+                  "maximum": 4.0,
+                  "scoring_range": "0–4",
+                  "upgrades": "Multiple model organisms"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": { "const": "model_cell_culture" }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 1.0,
+                  "maximum": 2.0,
+                  "scoring_range": "0–2",
+                  "upgrades": "Multiple cell types cultured"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": [
+                    "rescue_human_control",
+                    "rescue_non_human_model"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 2.0,
+                  "maximum": 4.0,
+                  "scoring_range": "0–4",
+                  "upgrades": "Multiple rescue systems"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": [
+                    "rescue_cell_culture",
+                    "rescue_patient_cells"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "default": 1.0,
+                  "maximum": 2.0,
+                  "scoring_range": "0–2",
+                  "upgrades": "Multiple rescue approaches"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+
+  "required": ["id", "citation"]
+}
