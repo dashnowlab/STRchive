@@ -1,12 +1,13 @@
 
 PMID- 41435767
 OWN - NLM
-STAT- Publisher
-LR  - 20251223
+STAT- MEDLINE
+DCOM- 20260119
+LR  - 20260119
 IS  - 1476-928X (Electronic)
 IS  - 1476-9271 (Linking)
 VI  - 121
-DP  - 2025 Dec 11
+DP  - 2026 Apr
 TI  - Valosin-Containing Protein as a therapeutic target in CAG repeat-driven 
       Spinocerebellar ataxias: Integrative transcriptomic and computational insights.
 PG  - 108838
@@ -82,7 +83,15 @@ PL  - England
 TA  - Comput Biol Chem
 JT  - Computational biology and chemistry
 JID - 101157394
+RN  - EC 3.6.4.6 (Valosin Containing Protein)
+RN  - EC 3.6.4.6 (VCP protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Valosin Containing Protein/genetics/metabolism/antagonists & inhibitors
+MH  - *Spinocerebellar Ataxias/genetics/drug therapy/metabolism
+MH  - *Transcriptome/drug effects
+MH  - Molecular Docking Simulation
+MH  - Molecular Dynamics Simulation
 OTO - NOTNLM
 OT  - ADMET
 OT  - ELISA
@@ -96,19 +105,19 @@ OT  - VCP
 COIS- Declaration of Competing Interest The authors declare that there is no conflict 
       of interest.
 EDAT- 2025/12/24 00:33
-MHDA- 2025/12/24 00:33
+MHDA- 2026/01/20 00:37
 CRDT- 2025/12/23 18:13
 PHST- 2025/09/18 00:00 [received]
 PHST- 2025/11/24 00:00 [revised]
 PHST- 2025/12/07 00:00 [accepted]
-PHST- 2025/12/24 00:33 [medline]
+PHST- 2026/01/20 00:37 [medline]
 PHST- 2025/12/24 00:33 [pubmed]
 PHST- 2025/12/23 18:13 [entrez]
 AID - S1476-9271(25)00502-X [pii]
 AID - 10.1016/j.compbiolchem.2025.108838 [doi]
-PST - aheadofprint
-SO  - Comput Biol Chem. 2025 Dec 11;121:108838. doi: 
-      10.1016/j.compbiolchem.2025.108838.
+PST - ppublish
+SO  - Comput Biol Chem. 2026 Apr;121:108838. doi: 10.1016/j.compbiolchem.2025.108838. 
+      Epub 2025 Dec 11.
 
 PMID- 41426430
 OWN - NLM
@@ -1294,7 +1303,7 @@ PMID- 41071260
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251010
-LR  - 20251010
+LR  - 20260110
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -1438,7 +1447,7 @@ PMID- 41009775
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250927
-LR  - 20250930
+LR  - 20260127
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -1498,24 +1507,25 @@ TA  - Int J Mol Sci
 JT  - International journal of molecular sciences
 JID - 101092791
 RN  - 0 (Biomarkers)
-RN  - 0 (TOMM40 protein, human)
 RN  - 0 (C9orf72 Protein)
 RN  - EC 2.7.7.7 (DNA Polymerase gamma)
 RN  - 0 (Mitochondrial Precursor Protein Import Complex Proteins)
 RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-2)
-RN  - 0 (ATXN2 protein, human)
-RN  - EC 2.7.7.7 (POLG protein, human)
 RN  - 0 (Prion Proteins)
 RN  - 0 (Apolipoproteins E)
-RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - 0 (CACNA1A protein, human)
-RN  - 0 (C9orf72 protein, human)
-RN  - 0 (PRNP protein, human)
-RN  - 0 (ApoE protein, human)
 RN  - 0 (tau Proteins)
 RN  - 0 (Repressor Proteins)
 RN  - 0 (Calcium Channels)
+RN  - 0 (TOMM40 protein, human)
+RN  - 0 (ATXN2 protein, human)
+RN  - EC 2.7.7.7 (POLG protein, human)
+RN  - EC 3.4.19.12 (ATXN3 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
+RN  - 0 (C9orf72 protein, human)
+RN  - 0 (PRNP protein, human)
+RN  - 0 (ApoE protein, human)
 SB  - IM
 MH  - Humans
 MH  - Male
@@ -1538,6 +1548,7 @@ MH  - tau Proteins/cerebrospinal fluid
 MH  - DNA Methylation
 MH  - Repressor Proteins
 MH  - Calcium Channels
+MH  - Calcium Channels, N-Type
 PMC - PMC12470772
 OTO - NOTNLM
 OT  - APOE
@@ -3702,7 +3713,7 @@ PMID- 39804470
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250430
-LR  - 20250617
+LR  - 20260126
 IS  - 1364-6753 (Electronic)
 IS  - 1364-6745 (Linking)
 VI  - 26
@@ -4019,7 +4030,7 @@ PMID- 39521966
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241110
-LR  - 20241116
+LR  - 20260127
 IS  - 1757-6512 (Electronic)
 IS  - 1757-6512 (Linking)
 VI  - 15
@@ -5704,7 +5715,7 @@ PMID- 38667292
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240426
-LR  - 20250117
+LR  - 20260127
 IS  - 2073-4409 (Electronic)
 IS  - 2073-4409 (Linking)
 VI  - 13
@@ -5765,10 +5776,13 @@ PL  - Switzerland
 TA  - Cells
 JT  - Cells
 JID - 101600052
-RN  - 0 (NOP56 protein, human)
 RN  - 0 (Nuclear Proteins)
+RN  - 0 (NOP56 protein, human)
 RN  - 0 (NIPA1 protein, human)
+RN  - 0 (Membrane Proteins)
 RN  - 0 (NOTCH2NLC protein, human)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Intercellular Signaling Peptides and Proteins)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -5782,6 +5796,9 @@ MH  - DNA Repeat Expansion/genetics
 MH  - Genetic Predisposition to Disease
 MH  - Italy
 MH  - Nuclear Proteins/genetics
+MH  - Membrane Proteins
+MH  - Nerve Tissue Proteins
+MH  - Intercellular Signaling Peptides and Proteins
 PMC - PMC11049433
 OTO - NOTNLM
 OT  - NIPA1
@@ -6259,7 +6276,7 @@ PMID- 38419144
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240517
-LR  - 20240708
+LR  - 20260127
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
 VI  - 39
@@ -7223,7 +7240,7 @@ PMID- 37906407
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240518
-LR  - 20240521
+LR  - 20260127
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -7316,6 +7333,8 @@ PL  - United States
 TA  - Cerebellum
 JT  - Cerebellum (London, England)
 JID - 101089443
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (Ataxin-2)
 RN  - 0 (FMR1 protein, human)
 RN  - 0 (ATXN2 protein, human)
 RN  - Fragile X Tremor Ataxia Syndrome
@@ -7329,7 +7348,7 @@ MH  - Adult
 MH  - Aged
 MH  - *Alleles
 MH  - Fragile X Syndrome/genetics
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Cerebellar Ataxia/genetics/diagnostic imaging
 MH  - Tremor/genetics/physiopathology
 MH  - Trinucleotide Repeat Expansion/genetics
@@ -8192,7 +8211,7 @@ PMID- 37146135
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230508
-LR  - 20230517
+LR  - 20260127
 IS  - 2375-2548 (Electronic)
 IS  - 2375-2548 (Linking)
 VI  - 9
@@ -8351,8 +8370,8 @@ TA  - Sci Adv
 JT  - Science advances
 JID - 101653440
 RN  - 0 (C9orf72 Protein)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 RN  - Amyotrophic lateral sclerosis 1
 SB  - IM
 MH  - Humans
@@ -8361,7 +8380,7 @@ MH  - *Amyotrophic Lateral Sclerosis/genetics
 MH  - C9orf72 Protein/genetics
 MH  - DNA Repeat Expansion/genetics
 MH  - *Spinocerebellar Ataxias/genetics
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 PMC - PMC10162670
 EDAT- 2023/05/05 18:42
 MHDA- 2023/05/08 10:17
@@ -11270,7 +11289,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20250530
+LR  - 20260127
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -11428,8 +11447,8 @@ PL  - England
 TA  - Lancet Neurol
 JT  - The Lancet. Neurology
 JID - 101139309
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 SB  - IM
 CIN - Lancet Neurol. 2022 Mar;21(3):203. doi: 10.1016/S1474-4422(22)00046-1. PMID: 
       35182497
@@ -11439,7 +11458,7 @@ CIN - Lancet Neurol. 2022 Mar;21(3):222. doi: 10.1016/S1474-4422(22)00048-5. PMI
       35182508
 MH  - Child
 MH  - *DNA Repeat Expansion
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Humans
 MH  - Prospective Studies
 MH  - Retrospective Studies
@@ -15928,7 +15947,7 @@ PMID- 32307524
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210809
-LR  - 20211203
+LR  - 20260127
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -16013,9 +16032,9 @@ JID - 9208958
 RN  - 0 (Ataxin-2)
 RN  - 0 (DNA-Binding Proteins)
 RN  - 0 (Oligonucleotides, Antisense)
-RN  - 0 (TDP-43 protein, mouse)
-RN  - EC 1.15.1.1 (Sod1 protein, mouse)
 RN  - EC 1.15.1.1 (Superoxide Dismutase-1)
+RN  - 0 (Tardbp protein, mouse)
+RN  - EC 1.15.1.1 (Sod1 protein, mouse)
 SB  - IM
 MH  - Amyotrophic Lateral Sclerosis/*genetics/pathology
 MH  - Animals
@@ -18463,7 +18482,7 @@ PMID- 30342765
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20191126
-LR  - 20221207
+LR  - 20260127
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Linking)
 VI  - 74
@@ -18520,8 +18539,9 @@ PL  - United States
 TA  - Neurobiol Aging
 JT  - Neurobiology of aging
 JID - 8100437
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Amyotrophic Lateral Sclerosis/*genetics
 MH  - Calcium Channels/*genetics
@@ -18534,6 +18554,7 @@ MH  - Mutation
 MH  - Spinocerebellar Ataxias/genetics
 MH  - Trinucleotide Repeat Expansion/*genetics
 MH  - Exome Sequencing
+MH  - Calcium Channels, N-Type
 OTO - NOTNLM
 OT  - ALS
 OT  - CACNA1A
@@ -20265,7 +20286,7 @@ PMID- 29666341
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180917
-LR  - 20231213
+LR  - 20260127
 IS  - 0973-7731 (Electronic)
 IS  - 0022-1333 (Linking)
 VI  - 97
@@ -20315,6 +20336,7 @@ TA  - J Genet
 JT  - Journal of genetics
 JID - 2985113R
 RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
 SB  - IM
 MH  - Case-Control Studies
 MH  - Europe
@@ -21990,7 +22012,7 @@ PMID- 28585930
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180405
-LR  - 20190115
+LR  - 20260127
 IS  - 2158-3188 (Electronic)
 IS  - 2158-3188 (Linking)
 VI  - 7
@@ -22107,14 +22129,15 @@ PL  - United States
 TA  - Transl Psychiatry
 JT  - Translational psychiatry
 JID - 101562664
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Receptors, Androgen)
 RN  - 0 (TATA-Box Binding Protein)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (TBP protein, human)
 RN  - 0 (atrophin-1)
 SB  - IM
@@ -22139,6 +22162,7 @@ MH  - Receptors, Androgen/genetics
 MH  - TATA-Box Binding Protein/*genetics
 MH  - *Trinucleotide Repeats
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 PMC - PMC5534943
 COIS- The authors declare no conflict of interest.
 EDAT- 2017/06/07 06:00
@@ -22361,7 +22385,7 @@ PMID- 28527524
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20171116
-LR  - 20180823
+LR  - 20260127
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Linking)
 VI  - 56
@@ -22570,7 +22594,7 @@ PMID- 28444220
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170719
-LR  - 20220316
+LR  - 20260127
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 140
@@ -22790,11 +22814,12 @@ PL  - England
 TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
-RN  - 0 (CACNA1A protein, human)
+RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
 RN  - 0 (Calcium Channels)
 RN  - EC 3.4.24.- (Metalloendopeptidases)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.24.- (SPG7 protein, human)
-RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
 SB  - IM
 CIN - Brain. 2018 Apr 1;141(4):e22. doi: 10.1093/brain/awy016. PMID: 29444203
 CIN - Brain. 2018 Apr 1;141(4):e23. doi: 10.1093/brain/awy018. PMID: 29444217
@@ -22819,6 +22844,7 @@ MH  - Metalloendopeptidases/*genetics
 MH  - Middle Aged
 MH  - Phenotype
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 OTO - NOTNLM
 OT  - CACNA1A
 OT  - SPG7
@@ -23063,308 +23089,6 @@ PHST- 2018/01/05 06:00 [medline]
 AID - 10.1002/mds.26841 [doi]
 PST - ppublish
 SO  - Mov Disord. 2017 Jan;32(1):158-162. doi: 10.1002/mds.26841. Epub 2016 Nov 7.
-
-PMID- 28017481
-OWN - NLM
-STAT- MEDLINE
-DCOM- 20170928
-LR  - 20250530
-IS  - 1558-1497 (Electronic)
-IS  - 0197-4580 (Print)
-IS  - 0197-4580 (Linking)
-VI  - 51
-DP  - 2017 Mar
-TI  - ATXN2 trinucleotide repeat length correlates with risk of ALS.
-PG  - 178.e1-178.e9
-LID - S0197-4580(16)30297-4 [pii]
-LID - 10.1016/j.neurobiolaging.2016.11.010 [doi]
-AB  - We investigated a CAG trinucleotide repeat expansion in the ATXN2 gene in 
-      amyotrophic lateral sclerosis (ALS). Two new case-control studies, a British 
-      dataset of 1474 ALS cases and 567 controls, and a Dutch dataset of 1328 ALS cases 
-      and 691 controls were analyzed. In addition, to increase power, we systematically 
-      searched PubMed for case-control studies published after 1 August 2010 that 
-      investigated the association between ATXN2 intermediate repeats and ALS. We 
-      conducted a meta-analysis of the new and existing studies for the relative risks 
-      of ATXN2 intermediate repeat alleles of between 24 and 34 CAG trinucleotide 
-      repeats and ALS. There was an overall increased risk of ALS for those carrying 
-      intermediate sized trinucleotide repeat alleles (odds ratio 3.06 [95% confidence 
-      interval 2.37-3.94]; p = 6 x 10(-18)), with an exponential relationship between 
-      repeat length and ALS risk for alleles of 29-32 repeats (R(2) = 0.91, p = 
-      0.0002). No relationship was seen for repeat length and age of onset or survival. 
-      In contrast to trinucleotide repeat diseases, intermediate ATXN2 trinucleotide 
-      repeat expansion in ALS does not predict age of onset but does predict disease 
-      risk.
-CI  - Copyright (c) 2016 The Author(s). Published by Elsevier Inc. All rights reserved.
-FAU - Sproviero, William
-AU  - Sproviero W
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Shatunov, Aleksey
-AU  - Shatunov A
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Stahl, Daniel
-AU  - Stahl D
-AD  - Department of Biostatistics, King's College London, Institute of Psychiatry, 
-      Psychology and Neuroscience, London, UK.
-FAU - Shoai, Maryam
-AU  - Shoai M
-AD  - Department of Molecular Neuroscience, University College London (UCL) Institute 
-      of Neurology, London, UK.
-FAU - van Rheenen, Wouter
-AU  - van Rheenen W
-AD  - Department of Neurology, Brain Center Rudolf Magnus Institute of Neuroscience, 
-      University Medical Centre Utrecht, Utrecht, the Netherlands.
-FAU - Jones, Ashley R
-AU  - Jones AR
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Al-Sarraj, Safa
-AU  - Al-Sarraj S
-AD  - Department of Clinical Neuropathology, King's College Hospital NHS Foundation 
-      Trust, London, UK.
-FAU - Andersen, Peter M
-AU  - Andersen PM
-AD  - Department of Pharmacology and Clinical Neuroscience, Umea University, Umea, 
-      Sweden.
-FAU - Bonini, Nancy M
-AU  - Bonini NM
-AD  - Department of Biology, University of Pennsylvania, Philadelphia, PA, USA.
-FAU - Conforti, Francesca L
-AU  - Conforti FL
-AD  - Institute of Neurological Sciences, National Research Council, Cosenza, Italy.
-FAU - Van Damme, Philip
-AU  - Van Damme P
-AD  - Neurology Department, University Hospitals Leuven, Leuven, Belgium; Vesalius 
-      Research Center, VIB, Leuven, Belgium; Disease (LIND), KU Leuven - University of 
-      Leuven, Leuven, Belgium.
-FAU - Daoud, Hussein
-AU  - Daoud H
-AD  - Montreal Neurological Institute, McGill University, Montreal, Quebec, Canada.
-FAU - Del Mar Amador, Maria
-AU  - Del Mar Amador M
-AD  - Department of Nervous System Diseases, ALS Paris ALS Center for Rare Diseases, 
-      Groupe Hospitalier Pitie Salpetriere, APHP, Paris, France.
-FAU - Fogh, Isabella
-AU  - Fogh I
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Forzan, Monica
-AU  - Forzan M
-AD  - Clinical Genetics Unit, Department of Woman and Child Health, University of 
-      Padova, Padova, Italy.
-FAU - Gaastra, Ben
-AU  - Gaastra B
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Gellera, Cinzia
-AU  - Gellera C
-AD  - Fondazione IRCCS Istituto Neurologico Carlo Besta, Milan, Italy.
-FAU - Gitler, Aaron D
-AU  - Gitler AD
-AD  - Department of Genetics, Stanford University School of Medicine, Stanford, CA, 
-      USA.
-FAU - Hardy, John
-AU  - Hardy J
-AD  - Department of Molecular Neuroscience, University College London (UCL) Institute 
-      of Neurology, London, UK.
-FAU - Fratta, Pietro
-AU  - Fratta P
-AD  - Sobell Department of Motor Neuroscience and Movement Disorders, University 
-      College London (UCL) Institute of Neurology, London, UK.
-FAU - La Bella, Vincenzo
-AU  - La Bella V
-AD  - ALS Clinical Research Center, Bio. Ne. C., University of Palermo, Palermo, Italy.
-FAU - Le Ber, Isabelle
-AU  - Le Ber I
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France; AP-HP, Hopitaux 
-      Universitaires La Pitie Salpetriere-Charles Foix, Centre de Reference des 
-      Demences Rares, Departement de Neurologie, Paris, France.
-FAU - Van Langenhove, Tim
-AU  - Van Langenhove T
-AD  - Neurodegenerative Brain Diseases Group, Department of Molecular Genetics, VIB, 
-      Antwerp, Belgium; Laboratory of Neurogenetics, Insititute Born-Bunge, University 
-      of Antwerp, Antwerp, Belgium; Department of Neurology, Antwerp University 
-      Hospital, Edegem, Belgium.
-FAU - Lattante, Serena
-AU  - Lattante S
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Lee, Yi-Chung
-AU  - Lee YC
-AD  - Department of Neurology, Taipei Veterans General Hospital, Taipei, Taiwan; 
-      Department of Neurology, National Yang-Ming University School of Medicine, 
-      Taipei, Taiwan; Brain Research Center, National Yang-Ming University, Taipei, 
-      Taiwan.
-FAU - Malaspina, Andrea
-AU  - Malaspina A
-AD  - North-East London and Essex MND Care Centre - Neuroscience and Trauma Centre, 
-      Blizard, Institute of Cell and Molecular Medicine, Barts & the London School of 
-      Medicine & Dentistry, Barts Health NHS Trust, London, UK.
-FAU - Meininger, Vincent
-AU  - Meininger V
-AD  - Hopital de la Pitie-Salpetriere, institut de recherche translationnelle en 
-      neurosciences (A-ICM), Paris, France; Hopital de la Pitie-Salpetriere, reseau SLA 
-      IdF, Paris, France.
-FAU - Millecamps, Stephanie
-AU  - Millecamps S
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Orrell, Richard
-AU  - Orrell R
-AD  - Department of Clinical Neuroscience, University College London (UCL) Institute of 
-      Neurology, London, UK.
-FAU - Rademakers, Rosa
-AU  - Rademakers R
-AD  - Department of Neuroscience, Mayo Clinic, Jacksonville, FL, USA.
-FAU - Robberecht, Wim
-AU  - Robberecht W
-AD  - Vesalius Research Center, VIB, Leuven, Belgium; Disease (LIND), KU Leuven - 
-      University of Leuven, Leuven, Belgium.
-FAU - Rouleau, Guy
-AU  - Rouleau G
-AD  - Montreal Neurological Institute, McGill University, Montreal, Quebec, Canada.
-FAU - Ross, Owen A
-AU  - Ross OA
-AD  - Department of Neuroscience, Mayo Clinic, Jacksonville, FL, USA.
-FAU - Salachas, Francois
-AU  - Salachas F
-AD  - Department of Nervous System Diseases, ALS Paris ALS Center for Rare Diseases, 
-      Groupe Hospitalier Pitie Salpetriere, APHP, Paris, France; Institut du Cerveau et 
-      de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, Sorbonne Universites, 
-      UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Sidle, Katie
-AU  - Sidle K
-AD  - Department of Molecular Neuroscience, University College London (UCL) Institute 
-      of Neurology, London, UK.
-FAU - Smith, Bradley N
-AU  - Smith BN
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Soong, Bing-Wen
-AU  - Soong BW
-AD  - Department of Neurology, Taipei Veterans General Hospital, Taipei, Taiwan; 
-      Department of Neurology, National Yang-Ming University School of Medicine, 
-      Taipei, Taiwan; Brain Research Center, National Yang-Ming University, Taipei, 
-      Taiwan.
-FAU - Soraru, Gianni
-AU  - Soraru G
-AD  - Department of Neurosciences, University of Padova, Padova, Italy.
-FAU - Stevanin, Giovanni
-AU  - Stevanin G
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France; Neurogenetics 
-      team, Ecole Pratique des Hautes Etudes, Paris, France.
-FAU - Kabashi, Edor
-AU  - Kabashi E
-AD  - Institut du Cerveau et de la Moelle epiniere (ICM), Inserm U1127, CNRS UMR 7225, 
-      Sorbonne Universites, UPMC Univ Paris 06 UMRS1127, Paris, France.
-FAU - Troakes, Claire
-AU  - Troakes C
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - van Broeckhoven, Christine
-AU  - van Broeckhoven C
-AD  - Neurodegenerative Brain Diseases Group, Department of Molecular Genetics, VIB, 
-      Antwerp, Belgium; Laboratory of Neurogenetics, Insititute Born-Bunge, University 
-      of Antwerp, Antwerp, Belgium.
-FAU - Veldink, Jan H
-AU  - Veldink JH
-AD  - Department of Neurology, Brain Center Rudolf Magnus Institute of Neuroscience, 
-      University Medical Centre Utrecht, Utrecht, the Netherlands.
-FAU - van den Berg, Leonard H
-AU  - van den Berg LH
-AD  - Department of Neurology, Brain Center Rudolf Magnus Institute of Neuroscience, 
-      University Medical Centre Utrecht, Utrecht, the Netherlands.
-FAU - Shaw, Christopher E
-AU  - Shaw CE
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Powell, John F
-AU  - Powell JF
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK.
-FAU - Al-Chalabi, Ammar
-AU  - Al-Chalabi A
-AD  - Department of Basic and Clinical Neuroscience, King's College London, Maurice 
-      Wohl Clinical Neuroscience Institute, London, UK. Electronic address: 
-      ammar.al-chalabi@kcl.ac.uk.
-LA  - eng
-GR  - MC_G1000733/MRC_/Medical Research Council/United Kingdom
-GR  - MR/L501529/1/MRC_/Medical Research Council/United Kingdom
-GR  - G0600974/MRC_/Medical Research Council/United Kingdom
-GR  - MALASPINA/APR13/817-791/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G0900688/MRC_/Medical Research Council/United Kingdom
-GR  - JONES/OCT15/958-799/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G0300329/MRC_/Medical Research Council/United Kingdom
-GR  - G0900635/MRC_/Medical Research Council/United Kingdom
-GR  - ALCHALABI-DOBSON/APR14/829-791/MNDA_/Motor Neurone Disease Association/United 
-      Kingdom
-GR  - AL-CHALABI/APR15/844-791/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - MR/M008606/1/MRC_/Medical Research Council/United Kingdom
-GR  - MR/L021803/1/MRC_/Medical Research Council/United Kingdom
-GR  - G1100695/MRC_/Medical Research Council/United Kingdom
-GR  - FRATTA/JAN15/946-795/MNDA_/Motor Neurone Disease Association/United Kingdom
-GR  - G0501573/MRC_/Medical Research Council/United Kingdom
-GR  - G0500289/MRC_/Medical Research Council/United Kingdom
-GR  - R35 NS097275/NS/NINDS NIH HHS/United States
-GR  - WT_/Wellcome Trust/United Kingdom
-GR  - MRF-060-0003-RG-SMITH/MRF_/MRF_/United Kingdom
-GR  - SHAW/NOV14/985-797/MNDA_/Motor Neurone Disease Association/United Kingdom
-PT  - Journal Article
-PT  - Meta-Analysis
-PT  - Research Support, Non-U.S. Gov't
-DEP - 20161124
-PL  - United States
-TA  - Neurobiol Aging
-JT  - Neurobiology of aging
-JID - 8100437
-RN  - 0 (ATXN2 protein, human)
-RN  - 0 (Ataxin-2)
-SB  - IM
-MH  - Age of Onset
-MH  - Alleles
-MH  - Amyotrophic Lateral Sclerosis/*genetics
-MH  - Ataxin-2/*genetics
-MH  - Case-Control Studies
-MH  - Female
-MH  - *Genetic Association Studies
-MH  - Humans
-MH  - Male
-MH  - Risk
-MH  - Trinucleotide Repeat Expansion/*genetics
-MH  - Trinucleotide Repeats/*genetics
-PMC - PMC5302215
-OTO - NOTNLM
-OT  - ALS
-OT  - ATXN2
-OT  - Age of onset
-OT  - Amyotrophic lateral sclerosis
-OT  - CAG
-OT  - Expansion
-OT  - Exponential risk
-OT  - Intermediate expansion
-OT  - Risk
-OT  - SCA2
-OT  - Trinucleotide repeat
-OT  - Triplet
-EDAT- 2016/12/27 06:00
-MHDA- 2017/09/29 06:00
-PMCR- 2017/03/01
-CRDT- 2016/12/27 06:00
-PHST- 2016/09/01 00:00 [received]
-PHST- 2016/11/14 00:00 [revised]
-PHST- 2016/11/16 00:00 [accepted]
-PHST- 2017/03/01 00:00 [pmc-release]
-PHST- 2016/12/27 06:00 [pubmed]
-PHST- 2017/09/29 06:00 [medline]
-PHST- 2016/12/27 06:00 [entrez]
-AID - S0197-4580(16)30297-4 [pii]
-AID - 10.1016/j.neurobiolaging.2016.11.010 [doi]
-PST - ppublish
-SO  - Neurobiol Aging. 2017 Mar;51:178.e1-178.e9. doi: 
-      10.1016/j.neurobiolaging.2016.11.010. Epub 2016 Nov 24.
 
 PMID- 28017238
 OWN - NLM
@@ -24174,9 +23898,9 @@ RN  - EC 2.7.1.- (Tbk1 protein, mouse)
 RN  - EC 2.7.11.1 (Protein Serine-Threonine Kinases)
 RN  - EC 2.7.11.1 (TBK1L protein, zebrafish)
 SB  - IM
-CON - Punctum to: Sellier C, Campanari ML, Julie Corbier C, Gaucherot A, Kolb-Cheynel 
-      I, Oulad-Abdelghani M, Ruffenach F, Page A, Ciura S, Kabashi E, 
-      Charlet-Berguerand N. Loss of C9ORF72 impairs autophagy and synergizes with polyQ 
+CON - Punctum to: C Sellier, ML Campanari, Corbier C Julie, A Gaucherot, I 
+      Kolb-Cheynel, M Oulad-Abdelghani, F Ruffenach, A Page, S Ciura, E Kabashi, N 
+      Charlet-Berguerand.. Loss of C9ORF72 impairs autophagy and synergizes with polyQ 
       Ataxin-2 to induce motor neuron dysfunction and cell death. EMBO J. 2016; pii: 
       e201593350.
 MH  - Amyotrophic Lateral Sclerosis/*genetics/pathology
@@ -24479,7 +24203,7 @@ PMID- 26733254
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20161213
-LR  - 20250529
+LR  - 20260127
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Print)
 IS  - 0197-4580 (Linking)
@@ -25077,7 +24801,7 @@ PMID- 26377379
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160126
-LR  - 20220410
+LR  - 20260127
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Linking)
 VI  - 14
@@ -25281,15 +25005,16 @@ PL  - England
 TA  - Lancet Neurol
 JT  - The Lancet. Neurology
 JID - 101139309
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN2 protein, human)
 RN  - 0 (Ataxin-1)
 RN  - 0 (Ataxin-2)
-RN  - 0 (CACNA1A protein, human)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN2 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 CIN - Lancet Neurol. 2015 Nov;14(11):1067-9. doi: 10.1016/S1474-4422(15)00218-5. PMID: 
       26377378
@@ -25308,6 +25033,7 @@ MH  - PubMed/statistics & numerical data
 MH  - Repressor Proteins/genetics
 MH  - Spinocerebellar Ataxias/*classification/genetics/*physiopathology
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 EDAT- 2015/09/18 06:00
 MHDA- 2016/01/27 06:00
 CRDT- 2015/09/18 06:00
@@ -27562,114 +27288,6 @@ PST - ppublish
 SO  - J Neurol Sci. 2014 Dec 15;347(1-2):375-9. doi: 10.1016/j.jns.2014.10.036. Epub 
       2014 Oct 31.
 
-PMID- 25285812
-OWN - NLM
-STAT- MEDLINE
-DCOM- 20150306
-LR  - 20211021
-IS  - 2168-6157 (Electronic)
-IS  - 2168-6149 (Print)
-IS  - 2168-6149 (Linking)
-VI  - 71
-IP  - 12
-DP  - 2014 Dec
-TI  - Amyotrophic lateral sclerosis risk for spinocerebellar ataxia type 2 ATXN2 CAG 
-      repeat alleles: a meta-analysis.
-PG  - 1529-34
-LID - 10.1001/jamaneurol.2014.2082 [doi]
-AB  - IMPORTANCE: Repeats of CAG in the ataxin 2 gene (ATXN2) in the long-normal range 
-      (sometimes referred to as intermediate) have been identified as modifiers of 
-      amyotrophic lateral sclerosis (ALS) risk. Prior studies have used thresholding 
-      considering various cutoffs for ATXN2 repeat length. OBJECTIVE: To calculate 
-      association between ATXN2 CAG repeat alleles and increased risk of ALS across 
-      multiple ethnic groups. DATA SOURCES: The MEDLINE database was searched for 
-      studies published by December 29, 2013, reporting ATXN2 CAG repeat length in 
-      patients with ALS and controls. STUDY SELECTION: Studies were included if they 
-      reported original data on relative risks or odds ratios (ORs) from ALS and 
-      control populations for individual ATXN2 alleles. Review articles that reported 
-      no new data were not included in the analysis. DATA EXTRACTION AND SYNTHESIS: 
-      Analysis of allele distribution was performed to ensure that all studies followed 
-      identical allele sizing. The ORs, 95% confidence intervals, and population 
-      attributable risk percentages were calculated according to standard procedures. 
-      MAIN OUTCOMES AND MEASURES: Occurrence of ALS associated with ATXN2 repeat 
-      alleles, expressed as ORs. RESULTS: Nine studies were analyzed, including 7505 
-      controls and 6151 sporadic ALS cases. The ALS and control cohorts were recruited 
-      from different geographical and ethnic regions including the United States, 
-      French Canada/Canada, Belgium and the Netherlands, Germany, Italy, mainland 
-      China, Turkey, and Flanders-Belgium. The ATXN2 CAG repeat lengths ranged from 13 
-      to 39 in patients with ALS and from 13 to 34 in controls. The ORs were less than 
-      1.00 for alleles with 25 to 28 repeats. The OR was 1.55 for 30 repeats, but this 
-      elevation was not statistically significant (95% CI, 0.88-2.73). The ORs were 
-      2.70 (95% CI, 1.47-4.93) for 31 CAG repeats, 11.09 (95% CI, 4.16-29.57) for 32 
-      repeats, and 5.76 (95% CI, 1.79-18.57) for 33 repeats. CONCLUSIONS AND RELEVANCE: 
-      In contrast to prior studies with smaller numbers, risk for ALS associated with 
-      long-normal alleles is complex. Alleles with 27 and 28 repeats lower ALS risk 
-      slightly. The risk for ALS increases beginning with 29 repeats and reaches a 
-      maximum at 32 and 33 repeats. Of note, alleles with repeats of these lengths are 
-      known to be predisposed to meiotic expansion to full-penetrance mutant alleles. 
-      In patients with ALS, alleles with 31 to 33 repeats may have undergone 
-      preferential expansion in motor neurons during mitosis or DNA repair. Our 
-      meta-analysis provides a framework for counseling individuals with long-normal 
-      ATXN2 repeats.
-FAU - Neuenschwander, Annalese G
-AU  - Neuenschwander AG
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-FAU - Thai, Khanh K
-AU  - Thai KK
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-FAU - Figueroa, Karla P
-AU  - Figueroa KP
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-FAU - Pulst, Stefan M
-AU  - Pulst SM
-AD  - Department of Neurology, University of Utah, Salt Lake City.
-LA  - eng
-GR  - R21NS081182/NS/NINDS NIH HHS/United States
-GR  - R01NS33123/NS/NINDS NIH HHS/United States
-GR  - R21NS079852/NS/NINDS NIH HHS/United States
-GR  - R37 NS033123/NS/NINDS NIH HHS/United States
-GR  - R01 NS033123/NS/NINDS NIH HHS/United States
-GR  - M01 RR000425/RR/NCRR NIH HHS/United States
-GR  - R21 NS079852/NS/NINDS NIH HHS/United States
-GR  - RC4 NS073009/NS/NINDS NIH HHS/United States
-GR  - RC4NS073009/NS/NINDS NIH HHS/United States
-GR  - R21 NS081182/NS/NINDS NIH HHS/United States
-GR  - R56 NS033123/NS/NINDS NIH HHS/United States
-PT  - Journal Article
-PT  - Meta-Analysis
-PT  - Research Support, N.I.H., Extramural
-PT  - Research Support, Non-U.S. Gov't
-PL  - United States
-TA  - JAMA Neurol
-JT  - JAMA neurology
-JID - 101589536
-RN  - 0 (Ataxins)
-RN  - 0 (Nerve Tissue Proteins)
-SB  - IM
-EIN - JAMA Neurol. 2015 Jan;72(1):128
-MH  - Amyotrophic Lateral Sclerosis/*genetics
-MH  - Ataxins
-MH  - Humans
-MH  - Nerve Tissue Proteins/*genetics
-MH  - Trinucleotide Repeat Expansion/*genetics
-PMC - PMC4939089
-MID - NIHMS788691
-COIS- Conflict of Interest Disclosures: Dr Pulst has received royalties from 
-      Cedars-Sinai Medical Center and is a consultant for Progenitor Lifesciences. No 
-      other disclosures were reported.
-EDAT- 2014/10/07 06:00
-MHDA- 2015/03/07 06:00
-PMCR- 2016/07/09
-CRDT- 2014/10/07 06:00
-PHST- 2014/10/07 06:00 [entrez]
-PHST- 2014/10/07 06:00 [pubmed]
-PHST- 2015/03/07 06:00 [medline]
-PHST- 2016/07/09 00:00 [pmc-release]
-AID - 1910853 [pii]
-AID - 10.1001/jamaneurol.2014.2082 [doi]
-PST - ppublish
-SO  - JAMA Neurol. 2014 Dec;71(12):1529-34. doi: 10.1001/jamaneurol.2014.2082.
-
 PMID- 25189938
 OWN - NLM
 STAT- MEDLINE
@@ -28028,7 +27646,7 @@ PMID- 25098532
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141031
-LR  - 20211021
+LR  - 20260128
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Print)
 IS  - 0028-3878 (Linking)
@@ -29746,7 +29364,6 @@ PST - ppublish
 SO  - Neurobiol Aging. 2014 Jul;35(7):1779.e17-21. doi: 
       10.1016/j.neurobiolaging.2014.01.022. Epub 2014 Jan 25.
 
-
 PMID- 24269018
 OWN - NLM
 STAT- MEDLINE
@@ -29981,6 +29598,7 @@ AID - 10.1016/j.jns.2013.10.012 [doi]
 PST - ppublish
 SO  - J Neurol Sci. 2014 Jan 15;336(1-2):87-92. doi: 10.1016/j.jns.2013.10.012. Epub 
       2013 Oct 16.
+
 
 PMID- 23959108
 OWN - NLM
@@ -31075,7 +30693,7 @@ PMID- 22507827
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20121024
-LR  - 20120611
+LR  - 20260128
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Linking)
 VI  - 33
@@ -31130,15 +30748,15 @@ PL  - United States
 TA  - Neurobiol Aging
 JT  - Neurobiology of aging
 JID - 8100437
-RN  - 0 (FMR1 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (Genetic Markers)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 MH  - Aged
 MH  - Aged, 80 and over
 MH  - Amyotrophic Lateral Sclerosis/*epidemiology/*genetics
 MH  - Female
-MH  - Fragile X Mental Retardation Protein/*genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/*genetics
 MH  - Genetic Association Studies
 MH  - Genetic Markers/genetics
 MH  - Genetic Predisposition to Disease/*epidemiology/*genetics
@@ -33327,7 +32945,7 @@ PMID- 19672991
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100111
-LR  - 20161125
+LR  - 20260128
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
 VI  - 24
@@ -33820,7 +33438,7 @@ PMID- 18759344
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090408
-LR  - 20220331
+LR  - 20260128
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
 VI  - 23
@@ -33899,16 +33517,17 @@ PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
-RN  - 0 (ATXN1 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -33931,6 +33550,7 @@ MH  - Repressor Proteins/genetics
 MH  - *Spinocerebellar Ataxias/classification/complications/genetics
 MH  - Trinucleotide Repeat Expansion/*genetics
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 EDAT- 2008/09/02 09:00
 MHDA- 2009/04/09 09:00
 CRDT- 2008/09/02 09:00
@@ -35340,7 +34960,7 @@ PMID- 16000334
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20051229
-LR  - 20071114
+LR  - 20260128
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 128
@@ -35405,13 +35025,14 @@ PL  - England
 TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
+RN  - 9007-49-2 (DNA)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Peptides)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - 26700-71-0 (polyglutamine)
-RN  - 9007-49-2 (DNA)
 SB  - IM
 MH  - Adult
 MH  - Age of Onset
@@ -35430,6 +35051,7 @@ MH  - Peptides/*genetics
 MH  - Repetitive Sequences, Nucleic Acid/*genetics
 MH  - Siblings
 MH  - Spinocerebellar Ataxias/epidemiology/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2005/07/08 09:00
 MHDA- 2005/12/31 09:00
 CRDT- 2005/07/08 09:00
@@ -36109,7 +35731,7 @@ PMID- 15148151
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040617
-LR  - 20220321
+LR  - 20260128
 IS  - 0003-9942 (Print)
 IS  - 0003-9942 (Linking)
 VI  - 61
@@ -36183,13 +35805,10 @@ PL  - United States
 TA  - Arch Neurol
 JT  - Archives of neurology
 JID - 0372436
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
-RN  - 0 (ATXN8OS gene product, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
@@ -36197,8 +35816,12 @@ RN  - 0 (Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -36225,6 +35848,7 @@ MH  - RNA, Untranslated
 MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/*genetics
 MH  - *Trinucleotide Repeat Expansion
+MH  - Calcium Channels, N-Type
 EDAT- 2004/05/19 05:00
 MHDA- 2004/06/18 05:00
 CRDT- 2004/05/19 05:00
@@ -36302,7 +35926,7 @@ PMID- 15080863
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040802
-LR  - 20221207
+LR  - 20260128
 IS  - 0001-6314 (Print)
 IS  - 0001-6314 (Linking)
 VI  - 109
@@ -36357,13 +35981,10 @@ PL  - Denmark
 TA  - Acta Neurol Scand
 JT  - Acta neurologica Scandinavica
 JID - 0370336
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
-RN  - 0 (ATXN8OS gene product, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
@@ -36371,8 +35992,12 @@ RN  - 0 (Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -36405,6 +36030,7 @@ MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/classification/diagnosis/*genetics
 MH  - Taiwan
 MH  - Trinucleotide Repeats/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2004/04/15 05:00
 MHDA- 2004/08/03 05:00
 CRDT- 2004/04/15 05:00
@@ -37418,7 +37044,7 @@ PMID- 12614315
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20030506
-LR  - 20190814
+LR  - 20260128
 IS  - 0001-6314 (Print)
 IS  - 0001-6314 (Linking)
 VI  - 107
@@ -37466,10 +37092,11 @@ TA  - Acta Neurol Scand
 JT  - Acta neurologica Scandinavica
 JID - 0370336
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 SB  - IM
 MH  - Age of Onset
@@ -37483,6 +37110,7 @@ MH  - Prognosis
 MH  - Proteins/*genetics
 MH  - Severity of Illness Index
 MH  - Trinucleotide Repeats/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2003/03/05 04:00
 MHDA- 2003/05/07 05:00
 CRDT- 2003/03/05 04:00
@@ -38057,7 +37685,7 @@ PMID- 11804332
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20020827
-LR  - 20240315
+LR  - 20260128
 IS  - 1016-8478 (Print)
 IS  - 1016-8478 (Linking)
 VI  - 12
@@ -38107,19 +37735,20 @@ PL  - United States
 TA  - Mol Cells
 JT  - Molecules and cells
 JID - 9610936
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Ataxin-1
 MH  - Ataxin-3
@@ -38136,6 +37765,7 @@ MH  - Proteins/genetics
 MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/*genetics
 MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2002/01/24 10:00
 MHDA- 2002/08/28 10:01
 CRDT- 2002/01/24 10:00
@@ -38832,7 +38462,7 @@ PMID- 11030410
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20001027
-LR  - 20190722
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 107
@@ -38883,10 +38513,11 @@ TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Age of Onset
 MH  - Ataxins
@@ -38899,6 +38530,7 @@ MH  - *Mutation
 MH  - Nerve Tissue Proteins
 MH  - Proteins/genetics
 MH  - Trinucleotide Repeats/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2000/10/13 11:00
 MHDA- 2001/02/28 10:01
 CRDT- 2000/10/13 11:00
@@ -38988,7 +38620,7 @@ PMID- 10942107
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000821
-LR  - 20221207
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 106
@@ -39042,20 +38674,21 @@ PL  - Germany
 TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -39083,6 +38716,7 @@ MH  - Spinocerebellar Ataxias/diagnosis/*ethnology/*genetics
 MH  - Trinucleotide Repeat Expansion/genetics
 MH  - Trinucleotide Repeats/*genetics
 MH  - White People/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2000/08/15 11:00
 MHDA- 2000/08/29 11:01
 CRDT- 2000/08/15 11:00
@@ -39336,7 +38970,7 @@ PMID- 10768629
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20000427
-LR  - 20220311
+LR  - 20260128
 IS  - 0003-9942 (Print)
 IS  - 0003-9942 (Linking)
 VI  - 57
@@ -39397,20 +39031,21 @@ PL  - United States
 TA  - Arch Neurol
 JT  - Archives of neurology
 JID - 0372436
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -39437,6 +39072,7 @@ MH  - Repressor Proteins
 MH  - Severity of Illness Index
 MH  - Spinocerebellar Ataxias/*epidemiology/*genetics
 MH  - Trinucleotide Repeat Expansion/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2000/04/18 09:00
 MHDA- 2000/04/29 09:00
 CRDT- 2000/04/18 09:00
@@ -39840,7 +39476,7 @@ PMID- 10453742
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19990902
-LR  - 20190722
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 104
@@ -39899,20 +39535,21 @@ PL  - Germany
 TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 EIN - Hum Genet 1999 Oct;105(4):376
 MH  - Adult
@@ -39936,6 +39573,7 @@ MH  - Repressor Proteins
 MH  - Spain
 MH  - Spinocerebellar Degenerations/*ethnology/*genetics
 MH  - Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 1999/08/24 00:00
 MHDA- 1999/08/24 00:01
 CRDT- 1999/08/24 00:00
@@ -40621,7 +40259,7 @@ PMID- 9758625
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19981204
-LR  - 20221207
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -40703,14 +40341,15 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
-RN  - 0 (ATXN1 protein, human)
 RN  - 0 (Ataxin-1)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (atrophin-1)
 SB  - IM
 MH  - Asian People/genetics
@@ -40731,6 +40370,7 @@ MH  - Spinocerebellar Degenerations/epidemiology/*genetics
 MH  - Texas
 MH  - *Trinucleotide Repeat Expansion
 MH  - White People/genetics
+MH  - Calcium Channels, N-Type
 PMC - PMC1377499
 EDAT- 1998/10/03 00:00
 MHDA- 1998/10/03 00:01
@@ -40986,7 +40626,7 @@ PMID- 9696528
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19981028
-LR  - 20190814
+LR  - 20260128
 IS  - 0001-6314 (Print)
 IS  - 0001-6314 (Linking)
 VI  - 98
@@ -41154,7 +40794,7 @@ PMID- 9613852
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980724
-LR  - 20190905
+LR  - 20260128
 IS  - 0148-7299 (Print)
 IS  - 0148-7299 (Linking)
 VI  - 81
@@ -41213,14 +40853,15 @@ PL  - United States
 TA  - Am J Med Genet
 JT  - American journal of medical genetics
 JID - 7708900
-RN  - 0 (ATXN1 protein, human)
 RN  - 0 (Ataxin-1)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -41245,6 +40886,7 @@ MH  - Portugal
 MH  - Proteins/genetics
 MH  - Spinocerebellar Degenerations/*genetics
 MH  - *Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 1998/06/05 02:05
 MHDA- 2000/06/20 09:00
 CRDT- 1998/06/05 02:05
@@ -41880,7 +41522,7 @@ PMID- 9403480
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980102
-LR  - 20061115
+LR  - 20260128
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
 VI  - 42
@@ -41942,9 +41584,10 @@ PL  - United States
 TA  - Ann Neurol
 JT  - Annals of neurology
 JID - 7707449
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (DNA Primers)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Adult
 MH  - Age of Onset
@@ -41959,6 +41602,7 @@ MH  - Male
 MH  - Middle Aged
 MH  - Spinocerebellar Degenerations/ethnology/*genetics
 MH  - *Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 1997/12/24 00:00
 MHDA- 1997/12/24 00:01
 CRDT- 1997/12/24 00:00
@@ -42111,7 +41755,7 @@ PMID- 9259275
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19971030
-LR  - 20190512
+LR  - 20260128
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
 VI  - 6
@@ -42174,8 +41818,9 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Age of Onset
 MH  - Aged
@@ -42186,6 +41831,7 @@ MH  - Genes, Dominant
 MH  - Humans
 MH  - Spinocerebellar Degenerations/*genetics
 MH  - *Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 EDAT- 1997/08/01 00:00
 MHDA- 2001/03/28 10:01
 CRDT- 1997/08/01 00:00

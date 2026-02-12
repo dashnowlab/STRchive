@@ -1,12 +1,13 @@
 
 PMID- 41435767
 OWN - NLM
-STAT- Publisher
-LR  - 20251223
+STAT- MEDLINE
+DCOM- 20260119
+LR  - 20260119
 IS  - 1476-928X (Electronic)
 IS  - 1476-9271 (Linking)
 VI  - 121
-DP  - 2025 Dec 11
+DP  - 2026 Apr
 TI  - Valosin-Containing Protein as a therapeutic target in CAG repeat-driven 
       Spinocerebellar ataxias: Integrative transcriptomic and computational insights.
 PG  - 108838
@@ -82,7 +83,15 @@ PL  - England
 TA  - Comput Biol Chem
 JT  - Computational biology and chemistry
 JID - 101157394
+RN  - EC 3.6.4.6 (Valosin Containing Protein)
+RN  - EC 3.6.4.6 (VCP protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Valosin Containing Protein/genetics/metabolism/antagonists & inhibitors
+MH  - *Spinocerebellar Ataxias/genetics/drug therapy/metabolism
+MH  - *Transcriptome/drug effects
+MH  - Molecular Docking Simulation
+MH  - Molecular Dynamics Simulation
 OTO - NOTNLM
 OT  - ADMET
 OT  - ELISA
@@ -96,19 +105,19 @@ OT  - VCP
 COIS- Declaration of Competing Interest The authors declare that there is no conflict 
       of interest.
 EDAT- 2025/12/24 00:33
-MHDA- 2025/12/24 00:33
+MHDA- 2026/01/20 00:37
 CRDT- 2025/12/23 18:13
 PHST- 2025/09/18 00:00 [received]
 PHST- 2025/11/24 00:00 [revised]
 PHST- 2025/12/07 00:00 [accepted]
-PHST- 2025/12/24 00:33 [medline]
+PHST- 2026/01/20 00:37 [medline]
 PHST- 2025/12/24 00:33 [pubmed]
 PHST- 2025/12/23 18:13 [entrez]
 AID - S1476-9271(25)00502-X [pii]
 AID - 10.1016/j.compbiolchem.2025.108838 [doi]
-PST - aheadofprint
-SO  - Comput Biol Chem. 2025 Dec 11;121:108838. doi: 
-      10.1016/j.compbiolchem.2025.108838.
+PST - ppublish
+SO  - Comput Biol Chem. 2026 Apr;121:108838. doi: 10.1016/j.compbiolchem.2025.108838. 
+      Epub 2025 Dec 11.
 
 PMID- 41426430
 OWN - NLM
@@ -336,13 +345,14 @@ SO  - Brain Commun. 2025 Dec 9;7(6):fcaf482. doi: 10.1093/braincomms/fcaf482.
 
 PMID- 41254939
 OWN - NLM
-STAT- Publisher
-LR  - 20251225
+STAT- MEDLINE
+DCOM- 20260116
+LR  - 20260116
 IS  - 2666-2477 (Electronic)
 IS  - 2666-2477 (Linking)
 VI  - 7
 IP  - 1
-DP  - 2025 Nov 17
+DP  - 2026 Jan 15
 TI  - Unbiased human genomic characterization of polyglutamine disorder genes to guide 
       biological understanding and therapeutic strategies.
 PG  - 100547
@@ -374,7 +384,7 @@ AB  - Polyglutamine (polyQ) disorders, such as Huntington disease (HD) and sever
       drug targets. These findings reinforce the importance of exploring alternative 
       therapeutic strategies, such as targeting genetic modifier genes, as well as 
       allele-selective approaches, to mitigate these challenges.
-CI  - Copyright (c) 2025. Published by Elsevier Inc.
+CI  - Copyright (c) 2025 The Authors. Published by Elsevier Inc. All rights reserved.
 FAU - Namuli, Kevin Lucy
 AU  - Namuli KL
 AD  - Department of Pharmacology and Therapeutics, Rady Faculty of Health Sciences, 
@@ -400,7 +410,16 @@ PL  - United States
 TA  - HGG Adv
 JT  - HGG advances
 JID - 101772885
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
 SB  - IM
+MH  - Humans
+MH  - *Peptides/genetics
+MH  - *Genomics/methods
+MH  - *Huntington Disease/genetics/therapy
+MH  - *Genome, Human
+MH  - Phenotype
+MH  - Genome-Wide Association Study
 PMC - PMC12719159
 OTO - NOTNLM
 OT  - Huntington disease
@@ -412,21 +431,22 @@ OT  - spinocerebellar ataxia
 OT  - therapeutic targets
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2025/11/19 06:32
-MHDA- 2025/11/19 06:32
+MHDA- 2026/01/17 00:37
 PMCR- 2025/11/17
 CRDT- 2025/11/19 01:36
 PHST- 2025/07/09 00:00 [received]
 PHST- 2025/11/11 00:00 [revised]
 PHST- 2025/11/11 00:00 [accepted]
+PHST- 2026/01/17 00:37 [medline]
 PHST- 2025/11/19 06:32 [pubmed]
-PHST- 2025/11/19 06:32 [medline]
 PHST- 2025/11/19 01:36 [entrez]
 PHST- 2025/11/17 00:00 [pmc-release]
 AID - S2666-2477(25)00150-2 [pii]
 AID - 100547 [pii]
 AID - 10.1016/j.xhgg.2025.100547 [doi]
-PST - aheadofprint
-SO  - HGG Adv. 2025 Nov 17;7(1):100547. doi: 10.1016/j.xhgg.2025.100547.
+PST - ppublish
+SO  - HGG Adv. 2026 Jan 15;7(1):100547. doi: 10.1016/j.xhgg.2025.100547. Epub 2025 Nov 
+      17.
 
 PMID- 41149812
 OWN - NLM
@@ -2586,7 +2606,7 @@ PMID- 37146135
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230508
-LR  - 20230517
+LR  - 20260127
 IS  - 2375-2548 (Electronic)
 IS  - 2375-2548 (Linking)
 VI  - 9
@@ -2745,8 +2765,8 @@ TA  - Sci Adv
 JT  - Science advances
 JID - 101653440
 RN  - 0 (C9orf72 Protein)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 RN  - Amyotrophic lateral sclerosis 1
 SB  - IM
 MH  - Humans
@@ -2755,7 +2775,7 @@ MH  - *Amyotrophic Lateral Sclerosis/genetics
 MH  - C9orf72 Protein/genetics
 MH  - DNA Repeat Expansion/genetics
 MH  - *Spinocerebellar Ataxias/genetics
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 PMC - PMC10162670
 EDAT- 2023/05/05 18:42
 MHDA- 2023/05/08 10:17
@@ -3710,7 +3730,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20250530
+LR  - 20260127
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -3868,8 +3888,8 @@ PL  - England
 TA  - Lancet Neurol
 JT  - The Lancet. Neurology
 JID - 101139309
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 SB  - IM
 CIN - Lancet Neurol. 2022 Mar;21(3):203. doi: 10.1016/S1474-4422(22)00046-1. PMID: 
       35182497
@@ -3879,7 +3899,7 @@ CIN - Lancet Neurol. 2022 Mar;21(3):222. doi: 10.1016/S1474-4422(22)00048-5. PMI
       35182508
 MH  - Child
 MH  - *DNA Repeat Expansion
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Humans
 MH  - Prospective Studies
 MH  - Retrospective Studies
@@ -7734,7 +7754,7 @@ PMID- 29274668
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180927
-LR  - 20180927
+LR  - 20260127
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Linking)
 VI  - 64
@@ -8148,7 +8168,7 @@ PMID- 28585930
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180405
-LR  - 20190115
+LR  - 20260127
 IS  - 2158-3188 (Electronic)
 IS  - 2158-3188 (Linking)
 VI  - 7
@@ -8265,14 +8285,15 @@ PL  - United States
 TA  - Transl Psychiatry
 JT  - Translational psychiatry
 JID - 101562664
-RN  - 0 (ATXN7 protein, human)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Receptors, Androgen)
 RN  - 0 (TATA-Box Binding Protein)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - 0 (TBP protein, human)
 RN  - 0 (atrophin-1)
 SB  - IM
@@ -8297,6 +8318,7 @@ MH  - Receptors, Androgen/genetics
 MH  - TATA-Box Binding Protein/*genetics
 MH  - *Trinucleotide Repeats
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 PMC - PMC5534943
 COIS- The authors declare no conflict of interest.
 EDAT- 2017/06/07 06:00
@@ -8318,7 +8340,7 @@ PMID- 28444220
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170719
-LR  - 20220316
+LR  - 20260127
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 140
@@ -8538,11 +8560,12 @@ PL  - England
 TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
-RN  - 0 (CACNA1A protein, human)
+RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
 RN  - 0 (Calcium Channels)
 RN  - EC 3.4.24.- (Metalloendopeptidases)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.24.- (SPG7 protein, human)
-RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
 SB  - IM
 CIN - Brain. 2018 Apr 1;141(4):e22. doi: 10.1093/brain/awy016. PMID: 29444203
 CIN - Brain. 2018 Apr 1;141(4):e23. doi: 10.1093/brain/awy018. PMID: 29444217
@@ -8567,6 +8590,7 @@ MH  - Metalloendopeptidases/*genetics
 MH  - Middle Aged
 MH  - Phenotype
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 OTO - NOTNLM
 OT  - CACNA1A
 OT  - SPG7
@@ -9335,7 +9359,7 @@ PMID- 24594842
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150209
-LR  - 20211021
+LR  - 20260128
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -9402,15 +9426,15 @@ PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
 JID - 9208958
-RN  - 0 (ATXN1 protein, human)
 RN  - 0 (Ataxin-1)
 RN  - 0 (Ataxins)
-RN  - 0 (Atxn1 protein, mouse)
 RN  - 0 (Histone Deacetylase Inhibitors)
+RN  - EC 3.5.1.98 (Histone Deacetylases)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
-RN  - EC 3.5.1.98 (Histone Deacetylases)
-RN  - EC 3.5.1.98 (histone deacetylase 3)
+RN  - EC 3.5.1.98 (Histone Deacetylase 3)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (Atxn1 protein, mouse)
 SB  - IM
 MH  - Animals
 MH  - Ataxin-1
@@ -9431,6 +9455,7 @@ MH  - Nerve Tissue Proteins/genetics/*metabolism
 MH  - Nuclear Proteins/genetics/*metabolism
 MH  - Purkinje Cells/*metabolism/pathology
 MH  - Spinocerebellar Ataxias/drug therapy/genetics/*pathology
+MH  - Histone Deacetylase 3
 PMC - PMC4065149
 EDAT- 2014/03/07 06:00
 MHDA- 2015/02/11 06:00

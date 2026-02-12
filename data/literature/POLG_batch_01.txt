@@ -3,7 +3,7 @@ PMID- 41009775
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250927
-LR  - 20250930
+LR  - 20260127
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -63,24 +63,25 @@ TA  - Int J Mol Sci
 JT  - International journal of molecular sciences
 JID - 101092791
 RN  - 0 (Biomarkers)
-RN  - 0 (TOMM40 protein, human)
 RN  - 0 (C9orf72 Protein)
 RN  - EC 2.7.7.7 (DNA Polymerase gamma)
 RN  - 0 (Mitochondrial Precursor Protein Import Complex Proteins)
 RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-2)
-RN  - 0 (ATXN2 protein, human)
-RN  - EC 2.7.7.7 (POLG protein, human)
 RN  - 0 (Prion Proteins)
 RN  - 0 (Apolipoproteins E)
-RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - 0 (CACNA1A protein, human)
-RN  - 0 (C9orf72 protein, human)
-RN  - 0 (PRNP protein, human)
-RN  - 0 (ApoE protein, human)
 RN  - 0 (tau Proteins)
 RN  - 0 (Repressor Proteins)
 RN  - 0 (Calcium Channels)
+RN  - 0 (TOMM40 protein, human)
+RN  - 0 (ATXN2 protein, human)
+RN  - EC 2.7.7.7 (POLG protein, human)
+RN  - EC 3.4.19.12 (ATXN3 protein, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
+RN  - 0 (C9orf72 protein, human)
+RN  - 0 (PRNP protein, human)
+RN  - 0 (ApoE protein, human)
 SB  - IM
 MH  - Humans
 MH  - Male
@@ -103,6 +104,7 @@ MH  - tau Proteins/cerebrospinal fluid
 MH  - DNA Methylation
 MH  - Repressor Proteins
 MH  - Calcium Channels
+MH  - Calcium Channels, N-Type
 PMC - PMC12470772
 OTO - NOTNLM
 OT  - APOE
@@ -812,7 +814,7 @@ PMID- 28444220
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170719
-LR  - 20220316
+LR  - 20260127
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 VI  - 140
@@ -1032,11 +1034,12 @@ PL  - England
 TA  - Brain
 JT  - Brain : a journal of neurology
 JID - 0372537
-RN  - 0 (CACNA1A protein, human)
+RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
 RN  - 0 (Calcium Channels)
 RN  - EC 3.4.24.- (Metalloendopeptidases)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.24.- (SPG7 protein, human)
-RN  - EC 3.6.4.- (ATPases Associated with Diverse Cellular Activities)
 SB  - IM
 CIN - Brain. 2018 Apr 1;141(4):e22. doi: 10.1093/brain/awy016. PMID: 29444203
 CIN - Brain. 2018 Apr 1;141(4):e23. doi: 10.1093/brain/awy018. PMID: 29444217
@@ -1061,6 +1064,7 @@ MH  - Metalloendopeptidases/*genetics
 MH  - Middle Aged
 MH  - Phenotype
 MH  - Young Adult
+MH  - Calcium Channels, N-Type
 OTO - NOTNLM
 OT  - CACNA1A
 OT  - SPG7
@@ -1154,7 +1158,7 @@ PMID- 24491464
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141219
-LR  - 20171116
+LR  - 20260128
 IS  - 1872-8278 (Electronic)
 IS  - 1567-7249 (Linking)
 VI  - 15
@@ -1377,86 +1381,6 @@ AID - IJBMS-15-739 [pii]
 PST - ppublish
 SO  - Iran J Basic Med Sci. 2012 Mar;15(2):739-44.
 
-PMID- 22963882
-OWN - NLM
-STAT- MEDLINE
-DCOM- 20130417
-LR  - 20171116
-IS  - 1872-8278 (Electronic)
-IS  - 1567-7249 (Linking)
-VI  - 12
-IP  - 6
-DP  - 2012 Nov
-TI  - Number of CAG repeats in POLG1 and its association with Parkinson disease in the 
-      Norwegian population.
-PG  - 640-3
-LID - S1567-7249(12)00205-X [pii]
-LID - 10.1016/j.mito.2012.08.004 [doi]
-AB  - The number of CAG repeats in the mitochondrial DNA-polymerase gamma (POLG1) gene 
-      has been associated with Parkinson disease (PD) in some populations. We sequenced 
-      the CAG tract of POLG1 in 191 Norwegian patients with PD and an equal number of 
-      controls and found an association between non-10 or 11 CAG repeats and PD in our 
-      population. While our results were significant, this trend was not maintained 
-      following correction for multiple testing. We also performed a meta-analysis of 
-      all published studies including our own that shows PD is associated with the 
-      number of CAG repeats in POLG1. The meta-analysis reveals that the rare allelic 
-      variation encompassed by non-10 CAG repeats associates significantly with PD 
-      (p=0.0017). Whether this reflects a direct influence of POLG on the pathogenesis 
-      of PD or linkage disequilibrium between POLG1 alleles and nearby, 
-      disease-influencing genetic variants remains unknown.
-CI  - Copyright (c) 2012 Elsevier B.V. and Mitochondria Research Society. All rights 
-      reserved.
-FAU - Balafkan, Novin
-AU  - Balafkan N
-AD  - Department of Clinical Medicine, University of Bergen, Bergen, Norway.
-FAU - Tzoulis, Charalampos
-AU  - Tzoulis C
-FAU - Muller, Bernd
-AU  - Muller B
-FAU - Haugarvoll, Kristoffer
-AU  - Haugarvoll K
-FAU - Tysnes, Ole-Bjorn
-AU  - Tysnes OB
-FAU - Larsen, Jan Petter
-AU  - Larsen JP
-FAU - Bindoff, Laurence A
-AU  - Bindoff LA
-LA  - eng
-PT  - Journal Article
-PT  - Meta-Analysis
-DEP - 20120829
-PL  - Netherlands
-TA  - Mitochondrion
-JT  - Mitochondrion
-JID - 100968751
-RN  - 0 (DNA, Mitochondrial)
-RN  - EC 2.7.7.7 (DNA Polymerase gamma)
-RN  - EC 2.7.7.7 (DNA-Directed DNA Polymerase)
-RN  - EC 2.7.7.7 (POLG protein, human)
-SB  - IM
-MH  - DNA Polymerase gamma
-MH  - DNA, Mitochondrial/genetics
-MH  - DNA-Directed DNA Polymerase/*genetics
-MH  - *Genetic Predisposition to Disease
-MH  - Humans
-MH  - Norway
-MH  - Parkinson Disease/*genetics
-MH  - *Repetitive Sequences, Nucleic Acid
-EDAT- 2012/09/12 06:00
-MHDA- 2013/04/18 06:00
-CRDT- 2012/09/12 06:00
-PHST- 2012/05/05 00:00 [received]
-PHST- 2012/07/27 00:00 [revised]
-PHST- 2012/08/22 00:00 [accepted]
-PHST- 2012/09/12 06:00 [entrez]
-PHST- 2012/09/12 06:00 [pubmed]
-PHST- 2013/04/18 06:00 [medline]
-AID - S1567-7249(12)00205-X [pii]
-AID - 10.1016/j.mito.2012.08.004 [doi]
-PST - ppublish
-SO  - Mitochondrion. 2012 Nov;12(6):640-3. doi: 10.1016/j.mito.2012.08.004. Epub 2012 
-      Aug 29.
-
 PMID- 20803511
 OWN - NLM
 STAT- MEDLINE
@@ -1543,7 +1467,7 @@ PMID- 19043662
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20090409
-LR  - 20211020
+LR  - 20260128
 IS  - 1590-1874 (Print)
 IS  - 1590-1874 (Linking)
 VI  - 29

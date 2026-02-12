@@ -1,4 +1,116 @@
 
+PMID- 41345522
+OWN - NLM
+STAT- In-Process
+LR  - 20260110
+IS  - 2045-2322 (Electronic)
+IS  - 2045-2322 (Linking)
+VI  - 16
+IP  - 1
+DP  - 2025 Dec 4
+TI  - Analysis of clinically relevant large tandem repeats using nanopore sequencing.
+PG  - 762
+LID - 10.1038/s41598-025-30441-3 [doi]
+LID - 762
+AB  - Variable number tandem repeats (VNTRs) remain among the most challenging regions 
+      of the human genome to characterize, due to their repetitive structure and high 
+      sequence variability. Short-read sequencing lacks the resolution to span these 
+      regions, and even long-read variant callers often fail to resolve true allelic 
+      variation due to alignment ambiguity and motif heterogeneity. We present a novel 
+      bioinformatics workflow for the analysis of VNTRs from nanopore sequencing data. 
+      To our knowledge, it is the first to offer fully automated variant detection, 
+      classification of loss-of-function (LoF) variants, and integrated quality control 
+      using nanopore sequencing technology. The pipeline separates reads into alleles, 
+      constructs reference-free consensus sequences, and aligns motif structures for 
+      visualization. LoF variants are identified and reported at their exact position 
+      within the repeat. The method was validated using PCR amplicons from reference 
+      genomes HG001-HG004 for two genes harboring VNTRs (ACAN and MUC1), as well as 
+      four clinical control samples containing known frameshift mutations in the MUC1 
+      VNTR. We further demonstrate its applicability to whole-genome nanopore datasets. 
+      Using our pipeline, it is now possible to completely analyze and characterize 
+      VNTRs as well as detect disease-causing variants in a cost and time-efficient 
+      manner using amplicon-based nanopore sequencing. SUPPLEMENTARY INFORMATION: The 
+      online version contains supplementary material available at 
+      10.1038/s41598-025-30441-3.
+FAU - Madritsch, Silvia
+AU  - Madritsch S
+AUID- ORCID: 0000-0002-4995-7351
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria. silvia.madritsch@meduniwien.ac.at.
+FAU - Horner, David
+AU  - Horner D
+AUID- ORCID: 0000-0002-3561-653X
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria. david.horner@meduniwien.ac.at.
+FAU - Lowenstern, Tamara
+AU  - Lowenstern T
+AUID- ORCID: 0009-0006-9196-2097
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Brait, Nadja
+AU  - Brait N
+AUID- ORCID: 0000-0002-9289-3453
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Arnold, Vivienne
+AU  - Arnold V
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Wenzel, Andrea
+AU  - Wenzel A
+AUID- ORCID: 0009-0005-3280-0947
+AD  - Institute of Human Genetics, University Hospital Cologne, Faculty of Medicine, 
+      University of Cologne, Cologne, Germany.
+FAU - Weis, Denisa
+AU  - Weis D
+AUID- ORCID: 0000-0001-8711-3750
+AD  - Department of Medical Genetics, Kepler University Hospital Med Campus IV, 
+      Johannes Kepler University, Linz, Austria.
+FAU - Hengstschlager, Markus
+AU  - Hengstschlager M
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+FAU - Laccone, Franco
+AU  - Laccone F
+AD  - Institute of Medical Genetics, Center for Pathobiochemistry and Genetics, Medical 
+      University of Vienna, Vienna, Austria.
+LA  - eng
+PT  - Journal Article
+DEP - 20251204
+PL  - England
+TA  - Sci Rep
+JT  - Scientific reports
+JID - 101563288
+SB  - IM
+PMC - PMC12780063
+OTO - NOTNLM
+OT  - ACAN
+OT  - Amplicon
+OT  - Long-read
+OT  - MUC1
+OT  - VNTR
+OT  - Variable number tandem repeats
+COIS- Declarations. Competing interests: The authors declare no competing interests. 
+      Ethics approval: This study is covered under the ethics approval EK Nr. 1078/2024 
+      granted by the ethics committee of the Medical University of Vienna. Consent to 
+      participate: Informed consent was obtained from all the patients included in this 
+      study.
+EDAT- 2025/12/05 01:02
+MHDA- 2025/12/05 01:02
+PMCR- 2025/12/04
+CRDT- 2025/12/04 23:41
+PHST- 2025/07/08 00:00 [received]
+PHST- 2025/11/25 00:00 [accepted]
+PHST- 2025/12/05 01:02 [pubmed]
+PHST- 2025/12/05 01:02 [medline]
+PHST- 2025/12/04 23:41 [entrez]
+PHST- 2025/12/04 00:00 [pmc-release]
+AID - 10.1038/s41598-025-30441-3 [pii]
+AID - 30441 [pii]
+AID - 10.1038/s41598-025-30441-3 [doi]
+PST - epublish
+SO  - Sci Rep. 2025 Dec 4;16(1):762. doi: 10.1038/s41598-025-30441-3.
+
 PMID- 41000883
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -794,7 +906,7 @@ SO  - Anal Chem. 2024 Dec 10;96(49):19230-19237. doi: 10.1021/acs.analchem.4c020
 PMID- 39325540
 OWN - NLM
 STAT- In-Process
-LR  - 20250911
+LR  - 20260202
 IS  - 1533-3450 (Electronic)
 IS  - 1046-6673 (Print)
 IS  - 1046-6673 (Linking)
@@ -909,10 +1021,10 @@ PMCR- 2026/02/01
 CRDT- 2024/09/26 12:03
 PHST- 2024/03/26 00:00 [received]
 PHST- 2024/09/20 00:00 [accepted]
-PHST- 2026/02/01 00:00 [pmc-release]
 PHST- 2024/09/26 19:03 [pubmed]
 PHST- 2024/09/26 19:03 [medline]
 PHST- 2024/09/26 12:03 [entrez]
+PHST- 2026/02/01 00:00 [pmc-release]
 AID - 00001751-990000000-00426 [pii]
 AID - JASN-2024-000424 [pii]
 AID - 10.1681/ASN.0000000503 [doi]
@@ -2275,7 +2387,7 @@ PMID- 32293552
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200427
-LR  - 20221207
+LR  - 20260127
 IS  - 0717-6287 (Electronic)
 IS  - 0716-9760 (Print)
 IS  - 0716-9760 (Linking)
@@ -2407,12 +2519,12 @@ JT  - Biological research
 JID - 9308271
 RN  - 0 (Antigens, Tumor-Associated, Carbohydrate)
 RN  - 0 (Antineoplastic Agents)
+RN  - Q20Q21Q62J (Cisplatin)
+RN  - 0W860991D6 (Deoxycytidine)
 RN  - 0 (Keratin-19)
 RN  - 0 (Keratin-7)
+RN  - EC 2.7.10.1 (Erb-b2 Receptor Tyrosine Kinases)
 RN  - 0 (Tumor Suppressor Protein p53)
-RN  - 0W860991D6 (Deoxycytidine)
-RN  - EC 2.7.10.1 (Receptor, ErbB-2)
-RN  - Q20Q21Q62J (Cisplatin)
 RN  - 0 (Gemcitabine)
 SB  - IM
 MH  - Animals
@@ -2438,7 +2550,7 @@ MH  - Keratin-7/genetics
 MH  - Male
 MH  - Mice, Inbred NOD
 MH  - Middle Aged
-MH  - Receptor, ErbB-2/genetics
+MH  - Erb-b2 Receptor Tyrosine Kinases/genetics
 MH  - Sequence Analysis, RNA
 MH  - Tumor Cells, Cultured
 MH  - Tumor Suppressor Protein p53/genetics
@@ -4254,7 +4366,7 @@ PMID- 26838233
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20161110
-LR  - 20190606
+LR  - 20260127
 IS  - 2476-762X (Electronic)
 IS  - 1513-7368 (Linking)
 VI  - 17
@@ -4304,10 +4416,10 @@ RN  - 0 (Autoantibodies)
 RN  - 0 (Biomarkers, Tumor)
 RN  - 0 (Immunoglobulin G)
 RN  - 0 (Immunoglobulin M)
-RN  - 0 (MUC1 protein, human)
 RN  - 0 (Mucin-1)
+RN  - EC 2.7.10.1 (Erb-b2 Receptor Tyrosine Kinases)
+RN  - 0 (MUC1 protein, human)
 RN  - EC 2.7.10.1 (ERBB2 protein, human)
-RN  - EC 2.7.10.1 (Receptor, ErbB-2)
 SB  - IM
 MH  - Autoantibodies/*blood/*immunology
 MH  - Biomarkers, Tumor/*immunology
@@ -4320,7 +4432,7 @@ MH  - Immunoglobulin G/blood/immunology
 MH  - Immunoglobulin M/blood/immunology
 MH  - Middle Aged
 MH  - Mucin-1/immunology
-MH  - Receptor, ErbB-2/immunology
+MH  - Erb-b2 Receptor Tyrosine Kinases/immunology
 MH  - Saliva/*immunology
 MH  - Serum/*immunology
 EDAT- 2016/02/04 06:00
@@ -6773,7 +6885,7 @@ PMID- 19811637
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20100302
-LR  - 20211020
+LR  - 20260128
 IS  - 1465-542X (Electronic)
 IS  - 1465-5411 (Print)
 IS  - 1465-5411 (Linking)
@@ -6849,11 +6961,11 @@ JT  - Breast cancer research : BCR
 JID - 100927353
 RN  - 0 (Antibodies, Monoclonal)
 RN  - 0 (Antibodies, Monoclonal, Humanized)
-RN  - 0 (MUC1 protein, human)
 RN  - 0 (Mucin-1)
+RN  - EC 2.7.10.1 (Erb-b2 Receptor Tyrosine Kinases)
+RN  - 0 (MUC1 protein, human)
 RN  - 3VD89OE565 (epitumomab)
 RN  - EC 2.7.10.1 (ERBB2 protein, human)
-RN  - EC 2.7.10.1 (Receptor, ErbB-2)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -6868,7 +6980,7 @@ MH  - Female
 MH  - Humans
 MH  - Middle Aged
 MH  - Mucin-1/*immunology
-MH  - Receptor, ErbB-2/biosynthesis
+MH  - Erb-b2 Receptor Tyrosine Kinases/biosynthesis
 PMC - PMC2790853
 EDAT- 2009/10/09 06:00
 MHDA- 2010/03/03 06:00
@@ -8311,7 +8423,7 @@ PMID- 15814824
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20050927
-LR  - 20231213
+LR  - 20260128
 IS  - 0959-6658 (Print)
 IS  - 0959-6658 (Linking)
 VI  - 15
@@ -8377,8 +8489,9 @@ JID - 9104124
 RN  - 0 (Immunoglobulin G)
 RN  - 0 (Immunoglobulin M)
 RN  - 0 (Mucin-1)
-RN  - 0 (Recombinant Proteins)
 RN  - EC 2.4.1.- (N-Acetylgalactosaminyltransferases)
+RN  - 0 (Recombinant Proteins)
+RN  - EC 2.4.1.41 (Polypeptide N-acetylgalactosaminyltransferase)
 SB  - IM
 MH  - Animals
 MH  - B-Lymphocytes/*immunology
@@ -9674,7 +9787,7 @@ PMID- 11358826
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20010614
-LR  - 20141120
+LR  - 20260128
 IS  - 0008-5472 (Print)
 IS  - 0008-5472 (Linking)
 VI  - 61
@@ -9739,12 +9852,12 @@ JT  - Cancer research
 JID - 2984705R
 RN  - 0 (Antibodies, Bispecific)
 RN  - 0 (Antibodies, Monoclonal)
-RN  - 0 (MUC1 tandem repeat peptide)
+RN  - 83869-56-1 (Granulocyte-Macrophage Colony-Stimulating Factor)
+RN  - 82115-62-6 (Interferon-gamma)
 RN  - 0 (Mucin-1)
 RN  - 0 (Peptide Fragments)
-RN  - 82115-62-6 (Interferon-gamma)
-RN  - 83869-56-1 (Granulocyte-Macrophage Colony-Stimulating Factor)
-RN  - EC 2.7.10.1 (Receptor, ErbB-2)
+RN  - EC 2.7.10.1 (Erb-b2 Receptor Tyrosine Kinases)
+RN  - 0 (MUC1 tandem repeat peptide)
 SB  - IM
 MH  - Adenocarcinoma/*immunology/therapy
 MH  - Antibodies, Bispecific/*immunology
@@ -9760,7 +9873,7 @@ MH  - Interferon-gamma/pharmacology
 MH  - Mucin-1/biosynthesis/genetics/*immunology
 MH  - Peptide Fragments/biosynthesis/genetics/*immunology
 MH  - Phagocytosis/drug effects/immunology
-MH  - Receptor, ErbB-2/biosynthesis/immunology
+MH  - Erb-b2 Receptor Tyrosine Kinases/biosynthesis/immunology
 MH  - Tumor Cells, Cultured
 EDAT- 2001/05/19 10:00
 MHDA- 2001/06/23 10:01

@@ -1,12 +1,13 @@
 
 PMID- 41353794
 OWN - NLM
-STAT- Publisher
-LR  - 20251207
+STAT- MEDLINE
+DCOM- 20260122
+LR  - 20260122
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Linking)
 VI  - 90
-DP  - 2025 Dec 5
+DP  - 2026 Feb
 TI  - Generation of an induced pluripotent stem cell line (KCGMHi003-A) from a patient 
       with spinocerebellar ataxia type 8 (SCA8).
 PG  - 103879
@@ -45,6 +46,12 @@ TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
 SB  - IM
+MH  - Humans
+MH  - *Induced Pluripotent Stem Cells/metabolism/cytology/pathology
+MH  - *Spinocerebellar Ataxias/pathology/genetics
+MH  - Cell Line
+MH  - Male
+MH  - Cell Differentiation
 COIS- Declaration of competing interest The authors declare the following financial 
       interests/personal relationships which may be considered as potential competing 
       interests: Meng-Han Tsai reports financial support was provided by National 
@@ -52,18 +59,19 @@ COIS- Declaration of competing interest The authors declare the following financ
       that they have no known competing financial interests or personal relationships 
       that could have appeared to influence the work reported in this paper.
 EDAT- 2025/12/07 20:36
-MHDA- 2025/12/07 20:36
+MHDA- 2026/01/23 00:26
 CRDT- 2025/12/07 17:59
 PHST- 2025/10/22 00:00 [received]
 PHST- 2025/11/16 00:00 [revised]
 PHST- 2025/11/28 00:00 [accepted]
-PHST- 2025/12/07 20:36 [medline]
+PHST- 2026/01/23 00:26 [medline]
 PHST- 2025/12/07 20:36 [pubmed]
 PHST- 2025/12/07 17:59 [entrez]
 AID - S1873-5061(25)00229-6 [pii]
 AID - 10.1016/j.scr.2025.103879 [doi]
-PST - aheadofprint
-SO  - Stem Cell Res. 2025 Dec 5;90:103879. doi: 10.1016/j.scr.2025.103879.
+PST - ppublish
+SO  - Stem Cell Res. 2026 Feb;90:103879. doi: 10.1016/j.scr.2025.103879. Epub 2025 Dec 
+      5.
 
 PMID- 41082794
 OWN - NLM
@@ -1964,7 +1972,7 @@ PMID- 37906407
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240518
-LR  - 20240521
+LR  - 20260127
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -2057,6 +2065,8 @@ PL  - United States
 TA  - Cerebellum
 JT  - Cerebellum (London, England)
 JID - 101089443
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (Ataxin-2)
 RN  - 0 (FMR1 protein, human)
 RN  - 0 (ATXN2 protein, human)
 RN  - Fragile X Tremor Ataxia Syndrome
@@ -2070,7 +2080,7 @@ MH  - Adult
 MH  - Aged
 MH  - *Alleles
 MH  - Fragile X Syndrome/genetics
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 MH  - Cerebellar Ataxia/genetics/diagnostic imaging
 MH  - Tremor/genetics/physiopathology
 MH  - Trinucleotide Repeat Expansion/genetics
@@ -2220,7 +2230,7 @@ PMID- 37146135
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230508
-LR  - 20230517
+LR  - 20260127
 IS  - 2375-2548 (Electronic)
 IS  - 2375-2548 (Linking)
 VI  - 9
@@ -2379,8 +2389,8 @@ TA  - Sci Adv
 JT  - Science advances
 JID - 101653440
 RN  - 0 (C9orf72 Protein)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - 0 (FMR1 protein, human)
-RN  - 139135-51-6 (Fragile X Mental Retardation Protein)
 RN  - Amyotrophic lateral sclerosis 1
 SB  - IM
 MH  - Humans
@@ -2389,7 +2399,7 @@ MH  - *Amyotrophic Lateral Sclerosis/genetics
 MH  - C9orf72 Protein/genetics
 MH  - DNA Repeat Expansion/genetics
 MH  - *Spinocerebellar Ataxias/genetics
-MH  - Fragile X Mental Retardation Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
 PMC - PMC10162670
 EDAT- 2023/05/05 18:42
 MHDA- 2023/05/08 10:17
@@ -4652,7 +4662,7 @@ PMID- 28229454
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180430
-LR  - 20181202
+LR  - 20260127
 IS  - 1600-0404 (Electronic)
 IS  - 0001-6314 (Linking)
 VI  - 136
@@ -6792,7 +6802,7 @@ PMID- 15148151
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040617
-LR  - 20220321
+LR  - 20260128
 IS  - 0003-9942 (Print)
 IS  - 0003-9942 (Linking)
 VI  - 61
@@ -6866,13 +6876,10 @@ PL  - United States
 TA  - Arch Neurol
 JT  - Archives of neurology
 JID - 0372436
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
-RN  - 0 (ATXN8OS gene product, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
@@ -6880,8 +6887,12 @@ RN  - 0 (Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adult
 MH  - Aged
@@ -6908,6 +6919,7 @@ MH  - RNA, Untranslated
 MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/*genetics
 MH  - *Trinucleotide Repeat Expansion
+MH  - Calcium Channels, N-Type
 EDAT- 2004/05/19 05:00
 MHDA- 2004/06/18 05:00
 CRDT- 2004/05/19 05:00
@@ -6923,7 +6935,7 @@ PMID- 15080863
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20040802
-LR  - 20221207
+LR  - 20260128
 IS  - 0001-6314 (Print)
 IS  - 0001-6314 (Linking)
 VI  - 109
@@ -6978,13 +6990,10 @@ PL  - Denmark
 TA  - Acta Neurol Scand
 JT  - Acta neurologica Scandinavica
 JID - 0370336
-RN  - 0 (ATXN1 protein, human)
-RN  - 0 (ATXN7 protein, human)
-RN  - 0 (ATXN8OS gene product, human)
 RN  - 0 (Ataxin-1)
+RN  - EC 3.4.19.12 (Ataxin-3)
 RN  - 0 (Ataxin-7)
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Nuclear Proteins)
@@ -6992,8 +7001,12 @@ RN  - 0 (Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
 RN  - 0 (Repressor Proteins)
+RN  - 0 (ATXN1 protein, human)
+RN  - 0 (ATXN7 protein, human)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 RN  - EC 3.4.19.12 (ATXN3 protein, human)
-RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
 MH  - Adolescent
 MH  - Adult
@@ -7026,6 +7039,7 @@ MH  - Repressor Proteins
 MH  - Spinocerebellar Ataxias/classification/diagnosis/*genetics
 MH  - Taiwan
 MH  - Trinucleotide Repeats/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2004/04/15 05:00
 MHDA- 2004/08/03 05:00
 CRDT- 2004/04/15 05:00
@@ -7573,7 +7587,7 @@ PMID- 12545428
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20030424
-LR  - 20221207
+LR  - 20260128
 IS  - 0002-9297 (Print)
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Linking)
@@ -7645,14 +7659,15 @@ PL  - United States
 TA  - Am J Hum Genet
 JT  - American journal of human genetics
 JID - 0370475
-RN  - 0 (ATXN8OS gene product, human)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
+RN  - 9007-49-2 (DNA)
 RN  - 0 (DNA Primers)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (RNA, Long Noncoding)
 RN  - 0 (RNA, Untranslated)
-RN  - 9007-49-2 (DNA)
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 CIN - Am J Hum Genet. 2003 Oct;73(4):972-4. doi: 10.1086/378524. PMID: 14508711
 MH  - Asian People/genetics
@@ -7672,6 +7687,7 @@ MH  - RNA, Untranslated
 MH  - Reference Values
 MH  - Spinocerebellar Ataxias/*genetics
 MH  - *Trinucleotide Repeats
+MH  - Calcium Channels, N-Type
 PMC - PMC1180244
 EDAT- 2003/01/25 04:00
 MHDA- 2003/04/25 05:00
@@ -9031,7 +9047,7 @@ PMID- 11030410
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20001027
-LR  - 20190722
+LR  - 20260128
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
 VI  - 107
@@ -9082,10 +9098,11 @@ TA  - Hum Genet
 JT  - Human genetics
 JID - 7613873
 RN  - 0 (Ataxins)
-RN  - 0 (CACNA1A protein, human)
 RN  - 0 (Calcium Channels)
 RN  - 0 (Nerve Tissue Proteins)
 RN  - 0 (Proteins)
+RN  - 0 (CACNA1A protein, human)
+RN  - 0 (Calcium Channels, N-Type)
 SB  - IM
 MH  - Age of Onset
 MH  - Ataxins
@@ -9098,6 +9115,7 @@ MH  - *Mutation
 MH  - Nerve Tissue Proteins
 MH  - Proteins/genetics
 MH  - Trinucleotide Repeats/*genetics
+MH  - Calcium Channels, N-Type
 EDAT- 2000/10/13 11:00
 MHDA- 2001/02/28 10:01
 CRDT- 2000/10/13 11:00
