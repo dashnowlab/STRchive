@@ -988,14 +988,14 @@
 },
 {
   "LocusId": "FRAXE_AFF2",
-  "ReferenceRegion": "chrX:147582124-147582273",
+  "ReferenceRegion": "chrX:147582157-147582202",
   "LocusStructure": "(GCC)*",
   "VariantType": "Repeat",
   "HGNCId": null,
   "InheritanceMode": ["XR"],
   "DisplayRU": "GCC",
   "Disease": "FRAXE",
-  "NormalMax": 39,
+  "NormalMax": 69,
   "PathologicMin": 201,
   "Gene": "AFF2"
 }]
