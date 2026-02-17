@@ -3824,7 +3824,7 @@
 },
 {
   "id": "XLID_SOX3",
-  "disease_id": "XLID, PHP",
+  "disease_id": "XLID, PHPX",
   "gene": "SOX3",
   "chrom": "chrX",
   "start_hg38": 140504316,
@@ -3833,7 +3833,7 @@
   "stop_hg19": 139586526,
   "start_t2t": 138816203,
   "stop_t2t": 138816248,
-  "disease": "X-linked intellectual developmental disorder with isolated growth hormone deficiency; X-linked panhypopituitarism",
+  "disease": "X-linked intellectual developmental disorder with isolated growth hormone deficiency; X-linked panhypopituitarism (PHPX)",
   "inheritance": ["XR"],
   "disease_description": "X-linked isolated growth hormone deficiency (GHD) or combined pituitary hormone deficiency (CPHD) patients with or without intellectual disability [@pmid:24346842].",
   "hpo_terms": null,
