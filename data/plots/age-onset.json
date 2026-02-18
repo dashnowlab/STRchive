@@ -13,7 +13,7 @@
     "orientation": "h",
     "width": 0.2,
     "x": [47.0, 32.0, 39.0, 52.0, 51.0, 44.0, 66.0, 71.0, 59.0, 0, 19.0, 46.0, 54.0, 57.0, 25.0, 56.0, 0, 53.0, 54.0, 72.0, 40.0, 23.0, 68.0, 40.0, 20.0, 75.0, 54.0, 60.0, 0, 61.0, 59.0, 57.0, 0, 0, 47.0, 56.0, 59.0, 10.0, 70.0, 84.0, 0, 0, 1.0, 84.0, 6.0, 0, 0, 73.0, 76.0, 72.0, 74.0, 0, 65.0, 0, 0, 3.0, 36.0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -29,7 +29,7 @@
     "orientation": "h",
     "width": 0.2,
     "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 57.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12.0, 0, 0, 0, 0, 0, 0, 0, 78.0, 2.0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10.0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -45,7 +45,7 @@
     "orientation": "h",
     "width": 0.2,
     "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 78.0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -61,7 +61,7 @@
     "orientation": "h",
     "width": 0.2,
     "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 75.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9.0, 0, 0, 0, 0, 0, 9.0, 0, 4.0, 4.0, 0, 0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -78,7 +78,7 @@
     "showlegend": false,
     "width": 0.6,
     "x": [19.0, 10.0, 20.0, 16.0, 0, 0, 28.0, 14.0, 19.0, 0, 0, 20.0, 0, 9.0, 0, 14.0, 0, 19.0, 22.0, 36.0, 0, 0, 40.0, 6.0, 12.0, 6.0, 24.0, 18.0, 0, 0, 20.0, 19.0, 0, 0, 0, 18.0, 29.0, 0, 39.0, 9.0, 0, 0, 0, 9.0, 0, 0, 0, 28.0, 29.0, 20.0, 20.0, 0, 44.0, 0, 0, 0, 2.0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -95,7 +95,7 @@
     "showlegend": false,
     "width": 0.6,
     "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 16.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9.0, 0, 0, 0, 0, 0, 0, 0, 5.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -112,7 +112,7 @@
     "showlegend": false,
     "width": 0.6,
     "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64.0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -129,7 +129,7 @@
     "showlegend": false,
     "width": 0.6,
     "x": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8.0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0],
-    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+    "y": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
     "type": "bar"
   },
   {
@@ -727,7 +727,7 @@
     "yaxis":
     {
       "tickmode": "array",
-      "tickvals": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHP", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
+      "tickvals": ["FECD3", "CJD", "SCA36", "ALS1", "FAME6", "MRUPAV", "SCA27B", "FTDALS1", "OPMD", "CANVAS", "FAME7", "SCA37", "ADTKD", "SCA6", "OPML1", "OPDM2", "XDP", "SCA4", "HDL2", "SCA10", "FAME3", "FAME4", "NIID", "OPDM5", "OPDM4", "SCA31", "SCA12", "FAME1", "SBMA", "FAME8", "OPDM1", "SCA1", "EPM1", "DMD", "SCA51", "FAME2", "SCA17", "EDM1, PSACH", "SCA3, MJD", "SCA2", "FRDA", "GDPAG", "FRA7A", "HD", "FRA2A", "FRAXE", "NME", "DM2", "SCA8", "DRPLA", "DM1", "XLID, PHPX", "SCA7", "EIEE1", "PRTS", "FRA12A", "CCHS", "FXS, FXTAS, POF1", "HMNR7"],
       "title":
       {
         "text": "Disease"
