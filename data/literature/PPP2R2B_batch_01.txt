@@ -1,4 +1,322 @@
 
+PMID- 41762523
+OWN - NLM
+STAT- Publisher
+LR  - 20260228
+IS  - 2352-3964 (Electronic)
+IS  - 2352-3964 (Linking)
+VI  - 125
+DP  - 2026 Feb 26
+TI  - Short tandem repeat expansions in patients with neurodegenerative dementia.
+PG  - 106190
+LID - S2352-3964(26)00072-1 [pii]
+LID - 10.1016/j.ebiom.2026.106190 [doi]
+AB  - BACKGROUND: Due to the overlapping clinical features of neurodegenerative 
+      dementia (NDD)-including Alzheimer's disease (AD), frontotemporal dementia (FTD), 
+      dementia with Lewy bodies (DLB), and progressive supranuclear palsy (PSP), 
+      accurate diagnosis remains challenging in early stages. Multiple dementias can be 
+      caused by short tandem repeat (STR) expansions. However, systematic investigation 
+      of known pathogenic STRs in large dementia cohorts remains lacking. METHODS: We 
+      used ExpansionHunter (EH) to assess 22 neurodegenerative disease-associated STRs 
+      in whole-genome sequencing (WGS) data from 950 patients with AD, 222 patients 
+      with FTD, 165 patients with DLB, 231 patients with PSP, and 1522 cognitively 
+      normal controls. Repeat primed-polymerase chain reaction (RP-PCR) was performed 
+      to validate EH calls that exceeded the intermediate thresholds of STR. We also 
+      attempted to use ExpansionHunter Denovo (EHDn) to detect C9orf72 expansions 
+      missed by EH. FINDINGS: EHDn improved the detection rate of C9orf72 expansions. 
+      After sample quality control, 33 PCR-validated pathogenic expansions were 
+      identified in nine genes (C9orf72, ATXN8OS, NOTCH2NLC, HTT, FMR1, DMPK, AR, 
+      CACNA1A, and PPP2R2B) among 1559 patients with NDD, accounting for 2.12% of 
+      cases. Burden-based logistic regression analyses demonstrated that the presence 
+      of pathogenic STR expansions was significantly associated with NDD status (OR = 
+      3.57, p = 4.70 x 10(-2)). Additionally, intermediate-length TBP alleles showed a 
+      nominal enrichment in PSP compared with controls (2.61% vs 0.54%; OR = 6.25, p = 
+      2.00 x 10(-2)). INTERPRETATION: Our findings provide evidence for the clinical 
+      pleiotropy of STRs in NDD and their involvement in NDD pathogenesis. FUNDING: 
+      This study was supported by the National Natural Science Foundation of 
+      China(U22A20300, 82502244, 823714434, 82071216), the National Key R&D Program of 
+      China(2023YFC3603700), STI2030-Major Projects(2021ZD0201803), Outstanding Youth 
+      Fund of Hunan Provincial Natural Science Foundation(2024JJ2097), Youth Fund of 
+      Hunan Provincial Natural Science Foundation(2025JJ60696), Hunan Health Commission 
+      Grant(20232460), Postdoctoral Fellowship Program of CPSF(GZC20233185), China 
+      Postdoctoral Science Foundation (2025M772318), and the Scientific Research 
+      Program of FuRong Laboratory (2024PT5108).
+CI  - Copyright (c) 2026 The Author(s). Published by Elsevier B.V. All rights reserved.
+FAU - Zhu, Yuan
+AU  - Zhu Y
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Xiao, Xuewen
+AU  - Xiao X
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Liu, Yiliang
+AU  - Liu Y
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Wang, Zheng
+AU  - Wang Z
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China.
+FAU - Luo, Tengfei
+AU  - Luo T
+AD  - National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China.
+FAU - Xu, Tianyan
+AU  - Xu T
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Yang, Qijie
+AU  - Yang Q
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Hao, Xiaoli
+AU  - Hao X
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Zhang, Cong
+AU  - Zhang C
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Zhang, Sizhe
+AU  - Zhang S
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Luo, Shilin
+AU  - Luo S
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China.
+FAU - Zhou, Yafang
+AU  - Zhou Y
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Liao, Xinxin
+AU  - Liao X
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Tian, Yun
+AU  - Tian Y
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Weng, Ling
+AU  - Weng L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Fang, Liangjuan
+AU  - Fang L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Tang, Beisha
+AU  - Tang B
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Engineering Research Center of Hunan Province in 
+      Cognitive Impairment Disorders, Central South University, Changsha, China; Hunan 
+      International Scientific and Technological Cooperation Base of Neurodegenerative 
+      and Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Jiao, Bin
+AU  - Jiao B
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Li, Jinchen
+AU  - Li J
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Bioinformatics Center, Furong Laboratory and Xiangya 
+      Hospital, Central South University, Changsha, China. Electronic address: 
+      lijinchen@csu.edu.cn.
+FAU - Shen, Lu
+AU  - Shen L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Engineering Research Center of Hunan Province in 
+      Cognitive Impairment Disorders, Central South University, Changsha, China; Hunan 
+      International Scientific and Technological Cooperation Base of Neurodegenerative 
+      and Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China; 
+      Bioinformatics Center, Furong Laboratory and Xiangya Hospital, Central South 
+      University, Changsha, China; FuRong Laboratory, Changsha, Hunan, China. 
+      Electronic address: shenlu@csu.edu.cn.
+LA  - eng
+PT  - Journal Article
+DEP - 20260226
+PL  - Netherlands
+TA  - EBioMedicine
+JT  - EBioMedicine
+JID - 101647039
+SB  - IM
+OTO - NOTNLM
+OT  - C9orf72 expansion
+OT  - Neurodegenerative dementia
+OT  - Short tandem repeat (STR)
+OT  - TBP repeat
+OT  - Whole-genome sequencing (WGS)
+COIS- Declaration of interests All authors declare no financial or non-financial 
+      competing interests.
+EDAT- 2026/02/28 12:54
+MHDA- 2026/02/28 12:54
+CRDT- 2026/02/28 11:39
+PHST- 2025/10/28 00:00 [received]
+PHST- 2026/02/12 00:00 [revised]
+PHST- 2026/02/12 00:00 [accepted]
+PHST- 2026/02/28 12:54 [medline]
+PHST- 2026/02/28 12:54 [pubmed]
+PHST- 2026/02/28 11:39 [entrez]
+AID - S2352-3964(26)00072-1 [pii]
+AID - 10.1016/j.ebiom.2026.106190 [doi]
+PST - aheadofprint
+SO  - EBioMedicine. 2026 Feb 26;125:106190. doi: 10.1016/j.ebiom.2026.106190.
+
+PMID- 41691974
+OWN - NLM
+STAT- Publisher
+LR  - 20260215
+IS  - 1873-5126 (Electronic)
+IS  - 1353-8020 (Linking)
+VI  - 145
+DP  - 2026 Feb 12
+TI  - Mitochondrial quality control gene expression in peripheral blood mononuclear 
+      cells of SCA12 patients.
+PG  - 108228
+LID - S1353-8020(26)00054-4 [pii]
+LID - 10.1016/j.parkreldis.2026.108228 [doi]
+AB  - BACKGROUND: Spinocerebellar ataxia type 12 (SCA12) is a late-onset, autosomal 
+      dominant neurodegenerative disorder linked to a CAG repeat expansion mutation in 
+      the PPP2R2B gene and prevalent in Indian Agarwal ancestry. The pathophysiology of 
+      SCA12 and its clinical relevance need further elucidation. Dysregulation of 
+      mitochondrial quality control (mitochondrial QC), a critical determinant of 
+      neurodegeneration, could play a central role in SCA12 pathogenesis. OBJECTIVES: 
+      In this study, 20 candidate genes regulating mitochondrial biogenesis, dynamics, 
+      mitophagy, mitochondrial transport, and protein folding were studied for their 
+      expression in SCA12 patient-derived peripheral blood mononuclear cells (PBMCs). 
+      METHODS: Twenty-four genetically confirmed SCA12 patients and healthy controls 
+      were recruited in the study. The patients were assessed for motor severity using 
+      the International Cooperative Ataxia Rating Scale (ICARS). PBMCs were isolated 
+      from the peripheral blood. Total RNA was extracted from the PBMCs, which were 
+      reverse transcribed to make cDNA. The relative mRNA expression was estimated 
+      using quantitative Real-time PCR. RESULTS: Among the 20 candidate genes, a total 
+      of 5 genes, i.e., DNM1L, PPARGC1A, OPA1, NFE2L2, and BECN1, demonstrated a 
+      significantly reduced expression in SCA12 compared to healthy controls. There was 
+      no difference in the expression of other genes between groups. CONCLUSION: This 
+      study suggests dysregulation of mitochondrial biogenesis, mitophagy, dynamics, 
+      and antioxidant system converging towards a compromised mitochondrial QC system 
+      in SCA12 patients.
+CI  - Copyright (c) 2026 Elsevier Ltd. All rights reserved.
+FAU - Ansari, Sabbir
+AU  - Ansari S
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India. Electronic address: 
+      sabbirhzb@gmail.com.
+FAU - Rungta, Jyoti
+AU  - Rungta J
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India; Department of Physiology, 
+      University of Calcutta, Kolkata, 700009, India. Electronic address: 
+      jyotirungta95@gmail.com.
+FAU - Banerjee, Rebecca
+AU  - Banerjee R
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India. Electronic address: 
+      rebeccabanerjee@yahoo.com.
+FAU - Sengupta, Swarnava
+AU  - Sengupta S
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India; Department of Physiology, 
+      University of Calcutta, Kolkata, 700009, India. Electronic address: 
+      swarnavasengupta1994@gmail.com.
+FAU - Biswas, Bishmita
+AU  - Biswas B
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India. Electronic address: 
+      bishmitab97@gmail.com.
+FAU - Pal, Rakhi
+AU  - Pal R
+AD  - Center for High Impact Neuroscience and Translational Applications (CHINTA), TCG- 
+      CREST, Second Floor, Tower 1, Bengal Eco Intelligent Park, Block EM, Plot No 3, 
+      Sector V, Salt Lake, Kolkata, 700 091, West Bengal, India. Electronic address: 
+      rakhi.pal@tcgcrest.org.
+FAU - Dey, Sanjit
+AU  - Dey S
+AD  - Department of Physiology, University of Calcutta, Kolkata, 700009, India. 
+      Electronic address: sdeyphys@caluniv.ac.in.
+FAU - Chattarji, Sumantra
+AU  - Chattarji S
+AD  - Center for High Impact Neuroscience and Translational Applications (CHINTA), TCG- 
+      CREST, Second Floor, Tower 1, Bengal Eco Intelligent Park, Block EM, Plot No 3, 
+      Sector V, Salt Lake, Kolkata, 700 091, West Bengal, India. Electronic address: 
+      shona@ncbs.res.in.
+FAU - Ganguly, Jacky
+AU  - Ganguly J
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India. Electronic address: 
+      jackyganguly03@gmail.com.
+FAU - Choudhury, Supriyo
+AU  - Choudhury S
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India. Electronic address: 
+      choudhurydrsupriyo@gmail.com.
+FAU - Kumar, Hrishikesh
+AU  - Kumar H
+AD  - Department of Neurology, Institute of Neurosciences Kolkata (I-NK), 185/1 AJC 
+      Bose Road, Kolkata, 700 017, West Bengal, India. Electronic address: 
+      rishi_medicine@yahoo.com.
+LA  - eng
+PT  - Journal Article
+DEP - 20260212
+PL  - England
+TA  - Parkinsonism Relat Disord
+JT  - Parkinsonism & related disorders
+JID - 9513583
+SB  - IM
+OTO - NOTNLM
+OT  - Gene expression
+OT  - Mitochondrial quality control
+OT  - Pathophysiology
+OT  - Peripheral blood mononuclear cells
+OT  - SCA12
+COIS- Declaration of competing interest The authors report no conflicts of interest.
+EDAT- 2026/02/16 00:31
+MHDA- 2026/02/16 00:31
+CRDT- 2026/02/15 18:07
+PHST- 2025/11/06 00:00 [received]
+PHST- 2025/12/29 00:00 [revised]
+PHST- 2026/01/30 00:00 [accepted]
+PHST- 2026/02/16 00:31 [medline]
+PHST- 2026/02/16 00:31 [pubmed]
+PHST- 2026/02/15 18:07 [entrez]
+AID - S1353-8020(26)00054-4 [pii]
+AID - 10.1016/j.parkreldis.2026.108228 [doi]
+PST - aheadofprint
+SO  - Parkinsonism Relat Disord. 2026 Feb 12;145:108228. doi: 
+      10.1016/j.parkreldis.2026.108228.
+
 PMID- 41612618
 OWN - NLM
 STAT- Publisher

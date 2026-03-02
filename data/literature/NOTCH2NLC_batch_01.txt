@@ -1,4 +1,488 @@
 
+PMID- 41762523
+OWN - NLM
+STAT- Publisher
+LR  - 20260228
+IS  - 2352-3964 (Electronic)
+IS  - 2352-3964 (Linking)
+VI  - 125
+DP  - 2026 Feb 26
+TI  - Short tandem repeat expansions in patients with neurodegenerative dementia.
+PG  - 106190
+LID - S2352-3964(26)00072-1 [pii]
+LID - 10.1016/j.ebiom.2026.106190 [doi]
+AB  - BACKGROUND: Due to the overlapping clinical features of neurodegenerative 
+      dementia (NDD)-including Alzheimer's disease (AD), frontotemporal dementia (FTD), 
+      dementia with Lewy bodies (DLB), and progressive supranuclear palsy (PSP), 
+      accurate diagnosis remains challenging in early stages. Multiple dementias can be 
+      caused by short tandem repeat (STR) expansions. However, systematic investigation 
+      of known pathogenic STRs in large dementia cohorts remains lacking. METHODS: We 
+      used ExpansionHunter (EH) to assess 22 neurodegenerative disease-associated STRs 
+      in whole-genome sequencing (WGS) data from 950 patients with AD, 222 patients 
+      with FTD, 165 patients with DLB, 231 patients with PSP, and 1522 cognitively 
+      normal controls. Repeat primed-polymerase chain reaction (RP-PCR) was performed 
+      to validate EH calls that exceeded the intermediate thresholds of STR. We also 
+      attempted to use ExpansionHunter Denovo (EHDn) to detect C9orf72 expansions 
+      missed by EH. FINDINGS: EHDn improved the detection rate of C9orf72 expansions. 
+      After sample quality control, 33 PCR-validated pathogenic expansions were 
+      identified in nine genes (C9orf72, ATXN8OS, NOTCH2NLC, HTT, FMR1, DMPK, AR, 
+      CACNA1A, and PPP2R2B) among 1559 patients with NDD, accounting for 2.12% of 
+      cases. Burden-based logistic regression analyses demonstrated that the presence 
+      of pathogenic STR expansions was significantly associated with NDD status (OR = 
+      3.57, p = 4.70 x 10(-2)). Additionally, intermediate-length TBP alleles showed a 
+      nominal enrichment in PSP compared with controls (2.61% vs 0.54%; OR = 6.25, p = 
+      2.00 x 10(-2)). INTERPRETATION: Our findings provide evidence for the clinical 
+      pleiotropy of STRs in NDD and their involvement in NDD pathogenesis. FUNDING: 
+      This study was supported by the National Natural Science Foundation of 
+      China(U22A20300, 82502244, 823714434, 82071216), the National Key R&D Program of 
+      China(2023YFC3603700), STI2030-Major Projects(2021ZD0201803), Outstanding Youth 
+      Fund of Hunan Provincial Natural Science Foundation(2024JJ2097), Youth Fund of 
+      Hunan Provincial Natural Science Foundation(2025JJ60696), Hunan Health Commission 
+      Grant(20232460), Postdoctoral Fellowship Program of CPSF(GZC20233185), China 
+      Postdoctoral Science Foundation (2025M772318), and the Scientific Research 
+      Program of FuRong Laboratory (2024PT5108).
+CI  - Copyright (c) 2026 The Author(s). Published by Elsevier B.V. All rights reserved.
+FAU - Zhu, Yuan
+AU  - Zhu Y
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Xiao, Xuewen
+AU  - Xiao X
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Liu, Yiliang
+AU  - Liu Y
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Wang, Zheng
+AU  - Wang Z
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China.
+FAU - Luo, Tengfei
+AU  - Luo T
+AD  - National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China.
+FAU - Xu, Tianyan
+AU  - Xu T
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Yang, Qijie
+AU  - Yang Q
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Hao, Xiaoli
+AU  - Hao X
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Zhang, Cong
+AU  - Zhang C
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Zhang, Sizhe
+AU  - Zhang S
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Luo, Shilin
+AU  - Luo S
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China.
+FAU - Zhou, Yafang
+AU  - Zhou Y
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Liao, Xinxin
+AU  - Liao X
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Tian, Yun
+AU  - Tian Y
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Weng, Ling
+AU  - Weng L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Fang, Liangjuan
+AU  - Fang L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Tang, Beisha
+AU  - Tang B
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Engineering Research Center of Hunan Province in 
+      Cognitive Impairment Disorders, Central South University, Changsha, China; Hunan 
+      International Scientific and Technological Cooperation Base of Neurodegenerative 
+      and Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Jiao, Bin
+AU  - Jiao B
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Li, Jinchen
+AU  - Li J
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Bioinformatics Center, Furong Laboratory and Xiangya 
+      Hospital, Central South University, Changsha, China. Electronic address: 
+      lijinchen@csu.edu.cn.
+FAU - Shen, Lu
+AU  - Shen L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Engineering Research Center of Hunan Province in 
+      Cognitive Impairment Disorders, Central South University, Changsha, China; Hunan 
+      International Scientific and Technological Cooperation Base of Neurodegenerative 
+      and Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China; 
+      Bioinformatics Center, Furong Laboratory and Xiangya Hospital, Central South 
+      University, Changsha, China; FuRong Laboratory, Changsha, Hunan, China. 
+      Electronic address: shenlu@csu.edu.cn.
+LA  - eng
+PT  - Journal Article
+DEP - 20260226
+PL  - Netherlands
+TA  - EBioMedicine
+JT  - EBioMedicine
+JID - 101647039
+SB  - IM
+OTO - NOTNLM
+OT  - C9orf72 expansion
+OT  - Neurodegenerative dementia
+OT  - Short tandem repeat (STR)
+OT  - TBP repeat
+OT  - Whole-genome sequencing (WGS)
+COIS- Declaration of interests All authors declare no financial or non-financial 
+      competing interests.
+EDAT- 2026/02/28 12:54
+MHDA- 2026/02/28 12:54
+CRDT- 2026/02/28 11:39
+PHST- 2025/10/28 00:00 [received]
+PHST- 2026/02/12 00:00 [revised]
+PHST- 2026/02/12 00:00 [accepted]
+PHST- 2026/02/28 12:54 [medline]
+PHST- 2026/02/28 12:54 [pubmed]
+PHST- 2026/02/28 11:39 [entrez]
+AID - S2352-3964(26)00072-1 [pii]
+AID - 10.1016/j.ebiom.2026.106190 [doi]
+PST - aheadofprint
+SO  - EBioMedicine. 2026 Feb 26;125:106190. doi: 10.1016/j.ebiom.2026.106190.
+
+PMID- 41756172
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260227
+LR  - 20260227
+IS  - 1664-2295 (Print)
+IS  - 1664-2295 (Electronic)
+IS  - 1664-2295 (Linking)
+VI  - 17
+DP  - 2026
+TI  - Recurrent migraine with visual aura as the primary phenotype of familial neuronal 
+      intranuclear inclusion disease.
+PG  - 1747202
+LID - 10.3389/fneur.2026.1747202 [doi]
+LID - 1747202
+AB  - Neuronal intranuclear inclusion disease (NIID) is a rare neurodegenerative 
+      disorder characterized by highly heterogeneous clinical manifestations and 
+      multi-system involvement. The most common initial symptoms include tremor, 
+      cognitive impairment, and muscle weakness. Characteristic neuroimaging features 
+      comprise symmetrical diffusion-weighted imaging (DWI) high signal intensity in 
+      the corticomedullary junction and extensive leukoencephalopathy. NIID manifesting 
+      as migraine with visual aura as the predominant symptom has rarely been reported. 
+      In this study, we describe a Chinese NIID pedigree comprising eight affected 
+      members, all of whom consistently exhibited migraine with visual aura as the 
+      primary clinical feature. Notably, none of the followed-up patients showed 
+      abnormalities on neuroimaging. In one case, serial follow-up over 7 years 
+      revealed no abnormal DWI high signal intensity at the corticomedullary junction 
+      or leukoencephalopathy. Skin biopsies confirmed the presence of neuronal 
+      intranuclear inclusions in two affected patients within this pedigree. Genetic 
+      testing for the NIID-causing mutation identified the GGC repeat expansion in the 
+      NOTCH2NLC gene in three patients in this family. This study provides new insights 
+      into the phenotypic complexity of NIID.
+CI  - Copyright (c) 2026 Zhang, Gao, Piao, Huang, Nan, Wang and Li.
+FAU - Zhang, Qingxiang
+AU  - Zhang Q
+AD  - Department of Neurology, Xuanwu Hospital, Capital Medical University, Beijing, 
+      China.
+AD  - Department of Neurology, Dehua County Hospital, Quanzhou, China.
+FAU - Gao, Min
+AU  - Gao M
+AD  - Department of Pathology, Xuanwu Hospital, Capital Medical University, Beijing, 
+      China.
+FAU - Piao, Yueshan
+AU  - Piao Y
+AD  - Department of Pathology, Xuanwu Hospital, Capital Medical University, Beijing, 
+      China.
+FAU - Huang, Sufen
+AU  - Huang S
+AD  - Department of Neurology, Liuyang Jili Hospital, Changsha, China.
+FAU - Nan, Haitian
+AU  - Nan H
+AD  - Department of Neurology, Xuanwu Hospital, Capital Medical University, Beijing, 
+      China.
+FAU - Wang, Zhen
+AU  - Wang Z
+AD  - Department of Neurology, Xuanwu Hospital, Capital Medical University, Beijing, 
+      China.
+FAU - Li, Junjie
+AU  - Li J
+AD  - Department of Neurology, Xuanwu Hospital, Capital Medical University, Beijing, 
+      China.
+LA  - eng
+PT  - Journal Article
+DEP - 20260211
+PL  - Switzerland
+TA  - Front Neurol
+JT  - Frontiers in neurology
+JID - 101546899
+PMC - PMC12932226
+OTO - NOTNLM
+OT  - NOTCH2NLC
+OT  - headache
+OT  - migraine with aura
+OT  - negative cranial MRI findings
+OT  - neuronal intranuclear inclusion disease
+COIS- The author(s) declared that this work was conducted in the absence of any 
+      commercial or financial relationships that could be construed as a potential 
+      conflict of interest.
+EDAT- 2026/02/27 06:31
+MHDA- 2026/02/27 06:32
+PMCR- 2026/02/11
+CRDT- 2026/02/27 04:57
+PHST- 2025/11/15 00:00 [received]
+PHST- 2026/01/02 00:00 [revised]
+PHST- 2026/01/05 00:00 [accepted]
+PHST- 2026/02/27 06:32 [medline]
+PHST- 2026/02/27 06:31 [pubmed]
+PHST- 2026/02/27 04:57 [entrez]
+PHST- 2026/02/11 00:00 [pmc-release]
+AID - 10.3389/fneur.2026.1747202 [doi]
+PST - epublish
+SO  - Front Neurol. 2026 Feb 11;17:1747202. doi: 10.3389/fneur.2026.1747202. 
+      eCollection 2026.
+
+PMID- 41731582
+OWN - NLM
+STAT- Publisher
+LR  - 20260224
+IS  - 2045-3701 (Print)
+IS  - 2045-3701 (Linking)
+DP  - 2026 Feb 23
+TI  - NOTCH2NLC GGC repeat expansions cause retinal neurodegeneration in neuronal 
+      intranuclear inclusion disease mouse model.
+LID - 10.1186/s13578-026-01542-x [doi]
+AB  - Neuronal intranuclear inclusion disease (NIID) patients frequently exhibit ocular 
+      abnormalities, yet the pathogenic mechanisms remain unclear. Using a transgenic 
+      mouse model ubiquitously expressing NOTCH2NLC with 98GGC repeats, we revealed 
+      that polyglycine aggregates, translated from the expanded GGC repeats, 
+      predominantly localize in PAX6- and RBPMS-positive cells, accompanied by retinal 
+      neurodegeneration and thinning especially in the inner retinal layers. Functional 
+      assessment through visual evoked potentials demonstrated significantly reduced 
+      amplitudes and prolonged latencies in NIID mice, indicating compromised visual 
+      pathway integrity. Transcriptomic profiling revealed dysregulation of glutathione 
+      redox homeostasis and antioxidant pathways in the NIID retina. We further 
+      demonstrated that GGC expansions induce mitochondrial abnormalities accompanied 
+      by glutathione depletion and accumulation of reactive oxygen species. Crucially, 
+      intravitreal administration of the mitochondrial-targeted antioxidant Mito-TEMPO 
+      significantly alleviated retinal damage and improved visual function. Our 
+      findings establish NOTCH2NLC GGC expansions as direct drivers of retinal 
+      pathology through mitochondrial-oxidative damage, while identifying antioxidant 
+      therapy as a promising treatment strategy for NIID-associated retinopathy.
+CI  - (c) 2026. The Author(s).
+FAU - Li, Haibo
+AU  - Li H
+AD  - Eye Center of Xiangya Hospital and Hunan Key Laboratory of Ophthalmology, Central 
+      South University, Changsha, 410008, Hunan, China.
+FAU - Jiang, Ying
+AU  - Jiang Y
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China.
+AD  - Centre for Medical Genetics and Hunan Key Laboratory of Medical Genetics, School 
+      of Life Sciences, Central South University, Changsha, 410078, Hunan, China.
+FAU - Zhang, Lusi
+AU  - Zhang L
+AD  - Department of Ophthalmology, The Second Xiangya Hospital, Central South 
+      University, Changsha, 410008, Hunan, China.
+FAU - Wang, Xinhui
+AU  - Wang X
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China.
+FAU - Tian, Yun
+AU  - Tian Y
+AD  - Department of Geriatrics, Xiangya Hospital, Central South University, Changsha, 
+      410008, Hunan, China.
+FAU - Sun, Qiying
+AU  - Sun Q
+AD  - Department of Geriatrics, Xiangya Hospital, Central South University, Changsha, 
+      410008, Hunan, China.
+FAU - Shen, Lu
+AU  - Shen L
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China.
+AD  - National Clinical Research Center for Geriatric Disease, Xiangya Hospital, 
+      Central South University, Changsha, 410008, Hunan, China.
+FAU - Jiang, Hong
+AU  - Jiang H
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China.
+AD  - National Clinical Research Center for Geriatric Disease, Xiangya Hospital, 
+      Central South University, Changsha, 410008, Hunan, China.
+FAU - Tang, Beisha
+AU  - Tang B
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China.
+FAU - Hu, Zhengmao
+AU  - Hu Z
+AD  - Centre for Medical Genetics and Hunan Key Laboratory of Medical Genetics, School 
+      of Life Sciences, Central South University, Changsha, 410078, Hunan, China. 
+      huzhengmao@sklmg.edu.cn.
+FAU - Pan, Yongcheng
+AU  - Pan Y
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China. panyongcheng@csu.edu.cn.
+FAU - Liu, Qiong
+AU  - Liu Q
+AD  - Department of Neurology and Key Laboratory of Hunan Province in Neurodegenerative 
+      Disorders, Xiangya Hospital, Central South University, Changsha, 410008, Hunan, 
+      China. lqiong66@csu.edu.cn.
+LA  - eng
+PT  - Journal Article
+DEP - 20260223
+PL  - England
+TA  - Cell Biosci
+JT  - Cell & bioscience
+JID - 101561195
+OTO - NOTNLM
+OT  - NOTCH2NLC gene mutation
+OT  - Aggregation of polyglycine
+OT  - GGC repeat expansion
+OT  - Neuronal intranuclear inclusion disease
+OT  - Retinal neurodegeneration
+COIS- Declarations. Competing interests: The authors declare no competing interests.
+EDAT- 2026/02/24 06:34
+MHDA- 2026/02/24 06:34
+CRDT- 2026/02/24 00:04
+PHST- 2025/12/04 00:00 [received]
+PHST- 2026/01/30 00:00 [accepted]
+PHST- 2026/02/24 06:34 [medline]
+PHST- 2026/02/24 06:34 [pubmed]
+PHST- 2026/02/24 00:04 [entrez]
+AID - 10.1186/s13578-026-01542-x [pii]
+AID - 10.1186/s13578-026-01542-x [doi]
+PST - aheadofprint
+SO  - Cell Biosci. 2026 Feb 23. doi: 10.1186/s13578-026-01542-x.
+
+PMID- 41634634
+OWN - NLM
+STAT- Publisher
+LR  - 20260203
+IS  - 1471-2377 (Electronic)
+IS  - 1471-2377 (Linking)
+DP  - 2026 Feb 3
+TI  - Levodopa intolerance as a potential clinical red flag for neuronal intranuclear 
+      inclusion disease (NIID) in atypical parkinsonism: a case report.
+LID - 10.1186/s12883-026-04696-w [doi]
+AB  - BACKGROUND: Neuronal intranuclear inclusion disease (NIID) is a rare, progressive 
+      multisystem disorder most commonly associated with GGC repeat expansion in the 
+      NOTCH2NLC gene. Parkinsonism can be an initial presentation and may be 
+      misdiagnosed as idiopathic Parkinson's disease, particularly when prominent 
+      non-motor features are present. While many cases are levodopa-responsive, 
+      diagnosis is challenging when prominent non-motor features and drug intolerance 
+      are present. CASE PRESENTATION: We report a case of a 70-year-old woman of Han 
+      Chinese who developed atypical parkinsonism, severe cognitive decline, and severe 
+      gastrointestinal dysfunction. A therapeutic trial of levodopa/benserazide 
+      produced only minimal and transient motor benefit but resulted in marked 
+      worsening of nausea and vomiting, precluding dose escalation. Brain MRI 
+      demonstrated a characteristic corticomedullary junction (CMJ) hyperintensity on 
+      diffusion-weighted imaging. Skin biopsy revealed intranuclear inclusions on 
+      electron microscopy, and genetic testing confirmed pathogenic GGC repeat 
+      expansion in NOTCH2NLC, establishing the diagnosis of NIID. CONCLUSIONS: This 
+      case highlights that profound levodopa intolerance in patients with atypical 
+      parkinsonism, especially when accompanied by severe gastrointestinal dysfunction 
+      and early cognitive decline, should prompt consideration of NIID. Early 
+      recognition of this clinical pattern, together with characteristic MRI findings 
+      and confirmatory pathology/genetics, may help reduce diagnostic delay and 
+      facilitate timely multidisciplinary supportive care.
+CI  - (c) 2026. The Author(s).
+FAU - Zang, Peixi
+AU  - Zang P
+AD  - Department of Neurology, Gansu Provincial Hospital, Lanzhou, Gansu, China.
+FAU - Liu, Ying
+AU  - Liu Y
+AD  - Department of Neurology, Gansu Provincial Hospital, Lanzhou, Gansu, China.
+FAU - Hao, Yunfei
+AU  - Hao Y
+AD  - Cerebrovascular Disease Center, Gansu Provincial Hospital, Lanzhou, Gansu, China. 
+      52119356@qq.com.
+LA  - eng
+PT  - Journal Article
+DEP - 20260203
+PL  - England
+TA  - BMC Neurol
+JT  - BMC neurology
+JID - 100968555
+SB  - IM
+OTO - NOTNLM
+OT  - NOTCH2NLC
+OT  - Atypical parkinsonism
+OT  - Corticomedullary junction sign
+OT  - Gastrointestinal dysfunction
+OT  - Levodopa intolerance
+OT  - Neuronal intranuclear inclusion disease
+COIS- Declarations. Ethics approval and consent to participate: This study was 
+      conducted in accordance with the principles of the Declaration of Helsinki. 
+      Ethical approval was granted by the Institutional Review Board of Gansu 
+      Provincial Hospital (Approval No. 2025-560). Written informed consent to 
+      participate was obtained from the patient's legal guardian. Consent for 
+      publication: Written informed consent for publication of all clinical information 
+      and images was obtained from the patient's legal guardian. Competing interests: 
+      The authors declare no competing interests.
+EDAT- 2026/02/04 05:06
+MHDA- 2026/02/04 05:06
+CRDT- 2026/02/03 23:48
+PHST- 2025/12/15 00:00 [received]
+PHST- 2026/01/30 00:00 [accepted]
+PHST- 2026/02/04 05:06 [medline]
+PHST- 2026/02/04 05:06 [pubmed]
+PHST- 2026/02/03 23:48 [entrez]
+AID - 10.1186/s12883-026-04696-w [pii]
+AID - 10.1186/s12883-026-04696-w [doi]
+PST - aheadofprint
+SO  - BMC Neurol. 2026 Feb 3. doi: 10.1186/s12883-026-04696-w.
+
 PMID- 41556371
 OWN - NLM
 STAT- MEDLINE
@@ -150,12 +634,13 @@ SO  - J Neurochem. 2026 Jan;170(1):e70352. doi: 10.1111/jnc.70352.
 
 PMID- 41539185
 OWN - NLM
-STAT- Publisher
-LR  - 20260127
+STAT- MEDLINE
+DCOM- 20260213
+LR  - 20260213
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 124
-DP  - 2026 Jan 14
+DP  - 2026 Feb
 TI  - Plasma p-tau species are elevated in presymptomatic and symptomatic neuronal 
       intranuclear inclusion disease.
 PG  - 106127
@@ -392,7 +877,27 @@ PL  - Netherlands
 TA  - EBioMedicine
 JT  - EBioMedicine
 JID - 101647039
+RN  - 0 (tau Proteins)
+RN  - 0 (Biomarkers)
+RN  - 0 (Amyloid beta-Peptides)
+RN  - 0 (MAPT protein, human)
+RN  - Neuronal intranuclear inclusion disease
 SB  - IM
+MH  - Humans
+MH  - *tau Proteins/blood
+MH  - Male
+MH  - Female
+MH  - *Biomarkers/blood
+MH  - Aged
+MH  - *Neurodegenerative Diseases/blood/diagnosis
+MH  - Middle Aged
+MH  - *Intranuclear Inclusion Bodies/pathology/metabolism
+MH  - Alzheimer Disease/blood/diagnosis
+MH  - Positron-Emission Tomography
+MH  - Magnetic Resonance Imaging
+MH  - Amyloid beta-Peptides/blood
+MH  - Phosphorylation
+MH  - Aged, 80 and over
 PMC - PMC12830138
 OTO - NOTNLM
 OT  - GFAP
@@ -404,32 +909,38 @@ OT  - tau-PET
 COIS- Declaration of interests All authors declare no financial or non-financial 
       competing interests.
 EDAT- 2026/01/16 17:21
-MHDA- 2026/01/16 17:21
+MHDA- 2026/02/14 05:30
 PMCR- 2026/01/14
 CRDT- 2026/01/15 18:16
 PHST- 2025/05/02 00:00 [received]
 PHST- 2025/12/22 00:00 [revised]
 PHST- 2026/01/05 00:00 [accepted]
-PHST- 2026/01/16 17:21 [medline]
+PHST- 2026/02/14 05:30 [medline]
 PHST- 2026/01/16 17:21 [pubmed]
 PHST- 2026/01/15 18:16 [entrez]
 PHST- 2026/01/14 00:00 [pmc-release]
 AID - S2352-3964(26)00008-3 [pii]
 AID - 106127 [pii]
 AID - 10.1016/j.ebiom.2026.106127 [doi]
-PST - aheadofprint
-SO  - EBioMedicine. 2026 Jan 14;124:106127. doi: 10.1016/j.ebiom.2026.106127.
+PST - ppublish
+SO  - EBioMedicine. 2026 Feb;124:106127. doi: 10.1016/j.ebiom.2026.106127. Epub 2026 
+      Jan 14.
 
 PMID- 41526374
 OWN - NLM
-STAT- Publisher
-LR  - 20260112
+STAT- MEDLINE
+DCOM- 20260216
+LR  - 20260219
 IS  - 2041-1723 (Electronic)
 IS  - 2041-1723 (Linking)
+VI  - 17
+IP  - 1
 DP  - 2026 Jan 13
 TI  - Precise excision of expanded GGC repeats in NOTCH2NLC via CRISPR/Cas9 for 
       treating neuronal intranuclear inclusion disease.
+PG  - 1683
 LID - 10.1038/s41467-026-68385-5 [doi]
+LID - 1683
 AB  - Neuronal intranuclear inclusion disease (NIID) is an adult-onset 
       neurodegenerative disease caused by expanded GGC repeats in the 5' untranslated 
       region of the human-specific NOTCH2NLC gene. The high sequence similarity between 
@@ -574,20 +1085,44 @@ PL  - England
 TA  - Nat Commun
 JT  - Nature communications
 JID - 101528555
+RN  - 0 (NOTCH2NLC protein, human)
+RN  - 0 (Receptor, Notch2)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Intercellular Signaling Peptides and Proteins)
+RN  - Neuronal intranuclear inclusion disease
 SB  - IM
+MH  - Humans
+MH  - Animals
+MH  - *CRISPR-Cas Systems/genetics
+MH  - Mice
+MH  - *Gene Editing/methods
+MH  - *Intranuclear Inclusion Bodies/genetics/pathology/metabolism
+MH  - *Neurodegenerative Diseases/genetics/therapy/pathology
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Disease Models, Animal
+MH  - Mice, Transgenic
+MH  - *Receptor, Notch2/genetics
+MH  - Cell Line
+MH  - Male
+MH  - Nerve Tissue Proteins
+MH  - Intercellular Signaling Peptides and Proteins
+PMC - PMC12909857
 COIS- Competing interests: The authors declare no competing interests.
 EDAT- 2026/01/13 00:24
-MHDA- 2026/01/13 00:24
+MHDA- 2026/02/17 00:52
+PMCR- 2026/01/13
 CRDT- 2026/01/12 23:16
 PHST- 2025/05/15 00:00 [received]
 PHST- 2025/12/22 00:00 [accepted]
-PHST- 2026/01/13 00:24 [medline]
+PHST- 2026/02/17 00:52 [medline]
 PHST- 2026/01/13 00:24 [pubmed]
 PHST- 2026/01/12 23:16 [entrez]
+PHST- 2026/01/13 00:00 [pmc-release]
 AID - 10.1038/s41467-026-68385-5 [pii]
+AID - 68385 [pii]
 AID - 10.1038/s41467-026-68385-5 [doi]
-PST - aheadofprint
-SO  - Nat Commun. 2026 Jan 13. doi: 10.1038/s41467-026-68385-5.
+PST - epublish
+SO  - Nat Commun. 2026 Jan 13;17(1):1683. doi: 10.1038/s41467-026-68385-5.
 
 PMID- 41235412
 OWN - NLM
@@ -2577,7 +3112,7 @@ PMID- 39936620
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250516
-LR  - 20250708
+LR  - 20260226
 IS  - 1554-8635 (Electronic)
 IS  - 1554-8627 (Print)
 IS  - 1554-8627 (Linking)
@@ -2677,10 +3212,10 @@ EDAT- 2025/02/12 12:25
 MHDA- 2025/05/16 11:43
 PMCR- 2026/02/25
 CRDT- 2025/02/12 07:44
-PHST- 2026/02/25 00:00 [pmc-release]
 PHST- 2025/05/16 11:43 [medline]
 PHST- 2025/02/12 12:25 [pubmed]
 PHST- 2025/02/12 07:44 [entrez]
+PHST- 2026/02/25 00:00 [pmc-release]
 AID - 2466144 [pii]
 AID - 10.1080/15548627.2025.2466144 [doi]
 PST - ppublish
@@ -15604,7 +16139,7 @@ PMID- 33626493
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210630
-LR  - 20260127
+LR  - 20260203
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Linking)
 VI  - 52
@@ -15685,6 +16220,7 @@ PL  - England
 TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
+RN  - 0 (Kruppel-Like Factor 4)
 SB  - IM
 MH  - Cell Differentiation
 MH  - Cells, Cultured
