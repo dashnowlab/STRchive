@@ -1,14 +1,19 @@
 
 PMID- 41507280
 OWN - NLM
-STAT- Publisher
-LR  - 20260108
+STAT- MEDLINE
+DCOM- 20260202
+LR  - 20260205
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
+VI  - 16
+IP  - 1
 DP  - 2026 Jan 8
 TI  - Genotype-phenotype correlations in breast cancer susceptibility: evaluating 
       MMP-2, TYMS, and eNOS variants in the Jordanian population.
+PG  - 4391
 LID - 10.1038/s41598-025-34531-0 [doi]
+LID - 4391
 AB  - Breast cancer (BC) is a complex, polygenic, and heterogeneous disease influenced 
       by both genetic and environmental factors. Several genetic polymorphisms, 
       including single nucleotide variants (SNVs) and variable number tandem repeats 
@@ -53,7 +58,27 @@ PL  - England
 TA  - Sci Rep
 JT  - Scientific reports
 JID - 101563288
+RN  - EC 3.4.24.24 (Matrix Metalloproteinase 2)
+RN  - EC 1.14.13.39 (Nitric Oxide Synthase Type III)
+RN  - EC 1.14.13.39 (NOS3 protein, human)
+RN  - EC 3.4.24.24 (MMP2 protein, human)
 SB  - IM
+MH  - Humans
+MH  - Female
+MH  - *Breast Neoplasms/genetics/pathology/epidemiology
+MH  - *Matrix Metalloproteinase 2/genetics
+MH  - *Genetic Predisposition to Disease
+MH  - *Nitric Oxide Synthase Type III/genetics
+MH  - Jordan/epidemiology
+MH  - Polymorphism, Single Nucleotide
+MH  - Middle Aged
+MH  - Case-Control Studies
+MH  - Adult
+MH  - Genetic Association Studies
+MH  - Minisatellite Repeats
+MH  - Genotype
+MH  - Aged
+PMC - PMC12864866
 OTO - NOTNLM
 OT  - Carcinoma
 OT  - MMP-2
@@ -67,17 +92,20 @@ COIS- Declarations. Competing interests: The authors declare no competing intere
       to participate: All the control subjects were voluntarily involved, and a written 
       informed consent form was signed.
 EDAT- 2026/01/09 00:26
-MHDA- 2026/01/09 00:26
+MHDA- 2026/02/03 00:27
+PMCR- 2026/01/08
 CRDT- 2026/01/08 23:24
 PHST- 2025/11/06 00:00 [received]
 PHST- 2025/12/29 00:00 [accepted]
-PHST- 2026/01/09 00:26 [medline]
+PHST- 2026/02/03 00:27 [medline]
 PHST- 2026/01/09 00:26 [pubmed]
 PHST- 2026/01/08 23:24 [entrez]
+PHST- 2026/01/08 00:00 [pmc-release]
 AID - 10.1038/s41598-025-34531-0 [pii]
+AID - 34531 [pii]
 AID - 10.1038/s41598-025-34531-0 [doi]
-PST - aheadofprint
-SO  - Sci Rep. 2026 Jan 8. doi: 10.1038/s41598-025-34531-0.
+PST - epublish
+SO  - Sci Rep. 2026 Jan 8;16(1):4391. doi: 10.1038/s41598-025-34531-0.
 
 PMID- 41181325
 OWN - NLM
@@ -1671,7 +1699,7 @@ PMID- 38134936
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240111
-LR  - 20250530
+LR  - 20260301
 IS  - 1878-3686 (Electronic)
 IS  - 1535-6108 (Print)
 IS  - 1535-6108 (Linking)
@@ -1870,7 +1898,6 @@ AD  - Pediatric Oncology Branch, Center for Cancer Research, National Cancer Ins
 LA  - eng
 SI  - ClinicalTrials.gov/NCT02107963
 GR  - T32 GM007365/GM/NIGMS NIH HHS/United States
-GR  - T32 AI007290/AI/NIAID NIH HHS/United States
 GR  - F30 CA271797/CA/NCI NIH HHS/United States
 GR  - U24 CA224316/CA/NCI NIH HHS/United States
 GR  - K08 CA267057/CA/NCI NIH HHS/United States
@@ -11757,7 +11784,7 @@ PMID- 20570968
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20101116
-LR  - 20240322
+LR  - 20260216
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
