@@ -1,0 +1,137 @@
+[
+{
+  "Disease_ID": "FECD3",
+  "Gene": "TCF4",
+  "Locus_ID": "FECD3_TCF4",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner",
+  "Date": "3/2/26",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 1.5,
+    "Functional Alteration": 2,
+    "Models": 2.0,
+    "Rescue": 0.0,
+    "Singular Evidence": 6,
+    "Statistics": 12
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18.0,
+  "classification": "Definitive",
+  "publication_count": 9,
+  "publication_interval_years": 8.758384668035593
+},
+{
+  "Disease_ID": "Disease1",
+  "Gene": "Gene1",
+  "Locus_ID": "Disease1_Gene1",
+  "Inheritance": "AD",
+  "Curator": "Marie Curie",
+  "Date": "3/2/26",
+  "category_summary":
+  {
+    "Collective Evidence": 0.0,
+    "Function": 0.0,
+    "Functional Alteration": 0.0,
+    "Models": 0.0,
+    "Rescue": 0.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 12.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 0.0,
+    "Genetic Evidence": 12.0
+  },
+  "total_score": 4.0,
+  "classification": "Limited",
+  "publication_count": 5,
+  "publication_interval_years": 7.971232876712328
+},
+{
+  "Disease_ID": "Disease2",
+  "Gene": "Gene2",
+  "Locus_ID": "Disease2_Gene2",
+  "Inheritance": "AD",
+  "Curator": "Ada Lovelace",
+  "Date": "3/2/26",
+  "category_summary":
+  {
+    "Collective Evidence": 0.0,
+    "Function": 0.0,
+    "Functional Alteration": 0.0,
+    "Models": 0.0,
+    "Rescue": 0.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 12.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 0.0,
+    "Genetic Evidence": 12.0
+  },
+  "total_score": 14.0,
+  "classification": "Strong",
+  "publication_count": 4,
+  "publication_interval_years": 7.971232876712328
+},
+{
+  "Disease_ID": "Disease3",
+  "Gene": "Gene3",
+  "Locus_ID": "Disease3_Gene3",
+  "Inheritance": "AD",
+  "Curator": "Rosalind Franklin",
+  "Date": "3/2/26",
+  "category_summary":
+  {
+    "Collective Evidence": 0.0,
+    "Function": 0.0,
+    "Functional Alteration": 0.0,
+    "Models": 0.0,
+    "Rescue": 0.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 12.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 0.0,
+    "Genetic Evidence": 12.0
+  },
+  "total_score": 8.0,
+  "classification": "Moderate",
+  "publication_count": 4,
+  "publication_interval_years": 7.971232876712328
+},
+{
+  "Disease_ID": "Disease4",
+  "Gene": "Gene4",
+  "Locus_ID": "Disease4_Gene4",
+  "Inheritance": "AR",
+  "Curator": "Barbara McClintock",
+  "Date": "3/2/26",
+  "category_summary":
+  {
+    "Collective Evidence": 0.0,
+    "Function": 0.0,
+    "Functional Alteration": 0.0,
+    "Models": 0.0,
+    "Rescue": 0.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 12.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 0.0,
+    "Genetic Evidence": 12.0
+  },
+  "total_score": 4.0,
+  "classification": "Disputed",
+  "publication_count": 4,
+  "publication_interval_years": 7.971232876712328
+}
+]

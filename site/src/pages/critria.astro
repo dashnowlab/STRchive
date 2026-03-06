@@ -1,0 +1,138 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { LuBadgeInfo, LuBookMarked, LuMail } from "react-icons/lu";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
+import TableOfContents from "@/components/TableOfContents";
+import { readFile } from "node:fs/promises";
+
+const curationFilePath = new URL("../../../data/criTRia-curations.json", import.meta.url);
+const curationFile = await readFile(curationFilePath, "utf-8");
+const parsedCurations = JSON.parse(curationFile);
+const curations = Array.isArray(parsedCurations)
+  ? parsedCurations
+  : Object.values(parsedCurations ?? {});
+
+const classificationClass = {
+  Definitive: "classification-definitive",
+  Strong: "classification-strong",
+  Moderate: "classification-moderate",
+  Limited: "classification-limited",
+  Disputed: "classification-disputed",
+  Refuted: "classification-refuted",
+  "No Known Relationship": "classification-no-known-relationship",
+};
+---
+
+<Layout title="criTRia">
+  <TableOfContents client:only="react" />
+  <section>
+    <Heading client:load level={2}><LuBadgeInfo />criTRia</Heading>
+  </section>
+
+  <section>
+    <Heading client:load level={3}><LuMail />Learn more</Heading>
+
+    <p class="center">
+      Read the criTRia locus-disease curation framework
+    </p>
+
+    <Button to="/criTRia-framework.pdf" design="bubble">
+      <span>Open PDF</span>
+    </Button>
+
+  </section>
+
+  <section>
+    <Heading client:load level={2}><LuBookMarked />Locus-disease curations</Heading>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Gene</th>
+            <th>Disease</th>
+            <th>Inheritance</th>
+            <th>Total Score</th>
+            <th>Classification</th>
+            <th>Date</th>
+            <th>Curator</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            curations.map((curation) => (
+              <tr>
+                <td>{curation.Gene}</td>
+                <td>{curation.Disease_ID}</td>
+                <td>{curation.Inheritance}</td>
+                <td>{curation.total_score}</td>
+                <td class={classificationClass[curation.classification] ?? ""}>
+                  {curation.classification}
+                </td>
+                <td>{curation.Date}</td>
+                <td>{curation.Curator}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+ 
+
+
+</Layout>
+
+<style>
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  td,
+  th {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  td:nth-child(5),
+  th:nth-child(5) {
+    white-space: nowrap;
+  }
+
+  .classification-definitive {
+    background: color-mix(in srgb, var(--primary), hsl(120deg 70% 45%) 65%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  .classification-strong {
+    background: color-mix(in srgb, var(--primary), var(--white) 20%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  .classification-moderate {
+    background: color-mix(in srgb, var(--primary), var(--white) 55%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  .classification-limited {
+    background: color-mix(in srgb, var(--secondary), hsl(55deg 95% 65%) 65%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  .classification-disputed,
+  .classification-refuted,
+  .classification-no-known-relationship {
+    background: color-mix(in srgb, var(--secondary), hsl(30deg 95% 60%) 55%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+</style>
