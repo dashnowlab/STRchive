@@ -24,114 +24,271 @@
   "total_score": 18.0,
   "classification": "Definitive",
   "publication_count": 9,
-  "publication_interval_years": 8.758384668035593
-},
-{
-  "Disease_ID": "Disease1",
-  "Gene": "Gene1",
-  "Locus_ID": "Disease1_Gene1",
-  "Inheritance": "AD",
-  "Curator": "Marie Curie",
-  "Date": "3/2/26",
-  "category_summary":
+  "publication_interval_years": 4.02,
+  "genetic_evidence_details": [
   {
-    "Collective Evidence": 0.0,
-    "Function": 0.0,
-    "Functional Alteration": 0.0,
-    "Models": 0.0,
-    "Rescue": 0.0,
-    "Singular Evidence": 6.0,
-    "Statistics": 12.0
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:25168903",
+    "Values": "probands:46",
+    "Evidence detail": null,
+    "Notes": "68 affected individuals + 1 unaffected with expansion but 46 affected with expansion ",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6.0,
+    "category_max_score": 6.0
   },
-  "supercategory_summary":
   {
-    "Experimental Evidence": 0.0,
-    "Genetic Evidence": 12.0
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:24255041",
+    "Values": "probands:120",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6.0,
+    "category_max_score": 6.0
   },
-  "total_score": 4.0,
-  "classification": "Limited",
-  "publication_count": 5,
-  "publication_interval_years": 7.971232876712328
-},
-{
-  "Disease_ID": "Disease2",
-  "Gene": "Gene2",
-  "Locus_ID": "Disease2_Gene2",
-  "Inheritance": "AD",
-  "Curator": "Ada Lovelace",
-  "Date": "3/2/26",
-  "category_summary":
   {
-    "Collective Evidence": 0.0,
-    "Function": 0.0,
-    "Functional Alteration": 0.0,
-    "Models": 0.0,
-    "Rescue": 0.0,
-    "Singular Evidence": 6.0,
-    "Statistics": 12.0
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:25168903",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "penetrance",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 3.0
   },
-  "supercategory_summary":
   {
-    "Experimental Evidence": 0.0,
-    "Genetic Evidence": 12.0
+    "Evidence type": "Computational",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3.0,
+    "category_max_score": 3.0
   },
-  "total_score": 14.0,
-  "classification": "Strong",
-  "publication_count": 4,
-  "publication_interval_years": 7.971232876712328
-},
-{
-  "Disease_ID": "Disease3",
-  "Gene": "Gene3",
-  "Locus_ID": "Disease3_Gene3",
-  "Inheritance": "AD",
-  "Curator": "Rosalind Franklin",
-  "Date": "3/2/26",
-  "category_summary":
   {
-    "Collective Evidence": 0.0,
-    "Function": 0.0,
-    "Functional Alteration": 0.0,
-    "Models": 0.0,
-    "Rescue": 0.0,
-    "Singular Evidence": 6.0,
-    "Statistics": 12.0
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:24255041",
+    "Values": "families:2; affected:4",
+    "Evidence detail": null,
+    "Notes": "LOD = 2.4",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3.0,
+    "category_max_score": 3.0
   },
-  "supercategory_summary":
   {
-    "Experimental Evidence": 0.0,
-    "Genetic Evidence": 12.0
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:30267097",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "4 affected in 2 families, significant fischer and t-test",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12.0,
+    "category_max_score": 12.0
   },
-  "total_score": 8.0,
-  "classification": "Moderate",
-  "publication_count": 4,
-  "publication_interval_years": 7.971232876712328
-},
-{
-  "Disease_ID": "Disease4",
-  "Gene": "Gene4",
-  "Locus_ID": "Disease4_Gene4",
-  "Inheritance": "AR",
-  "Curator": "Barbara McClintock",
-  "Date": "3/2/26",
-  "category_summary":
   {
-    "Collective Evidence": 0.0,
-    "Function": 0.0,
-    "Functional Alteration": 0.0,
-    "Models": 0.0,
-    "Rescue": 0.0,
-    "Singular Evidence": 6.0,
-    "Statistics": 12.0
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:25168903",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "strong associated: P = 6 × 10−26; Genotype quality score, HWE, and regression analyses",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12.0,
+    "category_max_score": 12.0
   },
-  "supercategory_summary":
   {
-    "Experimental Evidence": 0.0,
-    "Genetic Evidence": 12.0
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:28832669",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "significant regression",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12.0,
+    "category_max_score": 12.0
   },
-  "total_score": 4.0,
-  "classification": "Disputed",
-  "publication_count": 4,
-  "publication_interval_years": 7.971232876712328
-}
-]
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:27755191",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "significant regression",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12.0,
+    "category_max_score": 12.0
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:25593321",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "RNA binding",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:29526280; pmid:25593321",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "splicing evidence for both papers",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25593321",
+    "Values": "?",
+    "Evidence detail": "patient corneal cells",
+    "Notes": "certainly studied patient cells... just doesnt say how many",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25168903",
+    "Values": "patients: 68",
+    "Evidence detail": "Leukocyte DNA ",
+    "Notes": "68 affected individuals, only 46 have expansion",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25593321",
+    "Values": "?",
+    "Evidence detail": "non patient corneal cells",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:24255041",
+    "Values": "controls:100",
+    "Evidence detail": "humans",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25168903",
+    "Values": "controls:16",
+    "Evidence detail": "Leukocyte DNA ",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:37169279",
+    "Values": null,
+    "Evidence detail": " mouse cornea",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4.0,
+    "category_max_score": 4.0
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  },
+  {
+    "Evidence type": "Human Treatment",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4.0,
+    "category_max_score": 4.0
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4.0,
+    "category_max_score": 4.0
+  },
+  {
+    "Evidence type": "Rescue in patient cells ",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0
+  }]
+}]

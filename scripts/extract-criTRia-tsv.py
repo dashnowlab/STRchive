@@ -5,6 +5,7 @@ import doctest
 import os
 import time
 import json
+import math
 import jsbeautifier
 import pandas as pd
 import requests
@@ -271,6 +272,8 @@ def summarize_curations(locus_id, curations):
         # Publication count
         publication_count = df['Citation'].nunique()
         publication_interval_years = publication_interval(df['Citation'].dropna().unique())
+        if publication_interval_years is not None:
+            publication_interval_years = round(publication_interval_years, 2)
         
         # Determine the classification based on the total score and replication requirement
         classification = None
@@ -281,6 +284,10 @@ def summarize_curations(locus_id, curations):
                     classification = class_name
                     break
 
+        # Collect the Genetic and Experimental evidence details for the curation
+        genetic_evidence_details = df[df['evidence_supercategory'] == 'Genetic Evidence'].to_dict(orient='records')
+        experimental_evidence_details = df[df['evidence_supercategory'] == 'Experimental Evidence'].to_dict(orient='records')
+
         # Return a dictionary containing the summary for the curation
         return {
             **metadata,
@@ -290,7 +297,30 @@ def summarize_curations(locus_id, curations):
             "classification": classification,
             "publication_count": publication_count,
             "publication_interval_years": publication_interval_years,
+            "genetic_evidence_details": genetic_evidence_details,
+            "experimental_evidence_details": experimental_evidence_details
         }
+
+
+def sanitize_for_json(value):
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(val) for key, val in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, tuple):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, float):
+        if math.isnan(value) or math.isinf(value):
+            return None
+        return value
+    if pd.isna(value):
+        return None
+    if hasattr(value, "item") and not isinstance(value, (str, bytes)):
+        try:
+            return sanitize_for_json(value.item())
+        except (ValueError, TypeError):
+            pass
+    return value
 
 
 def main(args):
@@ -307,12 +337,14 @@ def main(args):
         summary = summarize_curations(locus_id, curations)
         data.append(summary)
 
+    data = sanitize_for_json(data)
+
     # Write JSON file
     with open(args.json, 'w') as out_json_file:
         options = jsbeautifier.default_options()
         options.indent_size = 2
         options.brace_style="expand"
-        out_json_file.write(jsbeautifier.beautify(json.dumps(data, ensure_ascii=False), options))
+        out_json_file.write(jsbeautifier.beautify(json.dumps(data, ensure_ascii=False, allow_nan=False), options))
         out_json_file.write('\n')
         
 

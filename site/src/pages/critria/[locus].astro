@@ -1,0 +1,309 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { LuBookMarked } from "react-icons/lu";
+import Heading from "@/components/Heading";
+import Link from "@/components/Link";
+import TableOfContents from "@/components/TableOfContents";
+import { readFile } from "node:fs/promises";
+
+const curationFilePath = new URL("../../../../data/criTRia-curations.json", import.meta.url);
+
+const loadCurations = async () => {
+  const curationFile = await readFile(curationFilePath, "utf-8");
+  const parsedCurations = JSON.parse(curationFile);
+  return Array.isArray(parsedCurations)
+    ? parsedCurations
+    : Object.values(parsedCurations ?? {});
+};
+
+export const getStaticPaths = async () => {
+  const curationFilePath = new URL("../../../../data/criTRia-curations.json", import.meta.url);
+  const curationFile = await readFile(curationFilePath, "utf-8");
+  const parsedCurations = JSON.parse(curationFile);
+  const curations = Array.isArray(parsedCurations)
+    ? parsedCurations
+    : Object.values(parsedCurations ?? {});
+
+  return curations.map((curation) => ({
+    params: { locus: curation.Locus_ID },
+  }));
+};
+
+const curations = await loadCurations();
+
+const { locus } = Astro.params;
+const curation = curations.find((item) => item.Locus_ID === locus);
+
+if (!curation) {
+  throw new Error(`No criTRia curation found for locus: ${locus}`);
+}
+
+const geneticEvidenceDetails = curation.genetic_evidence_details ?? [];
+const experimentalEvidenceDetails = curation.experimental_evidence_details ?? [];
+const supercategorySummary = curation.supercategory_summary ?? {};
+const geneticEvidenceTotal = supercategorySummary["Genetic Evidence"];
+const experimentalEvidenceTotal = supercategorySummary["Experimental Evidence"];
+
+const classificationClass = {
+  definitive: "classification-definitive",
+  strong: "classification-strong",
+  moderate: "classification-moderate",
+  limited: "classification-limited",
+  disputed: "classification-disputed",
+  refuted: "classification-refuted",
+  "no known relationship": "classification-no-known-relationship",
+};
+
+const classificationKey = String(curation.classification ?? "").trim().toLowerCase();
+
+const selectedColumns = {
+  genetic: [
+    "Evidence type",
+    "Citation",
+    "Score",
+    "Values",
+    "Evidence detail",
+    "Notes",
+  ],
+  experimental: [
+    "Evidence type",
+    "Citation",
+    "Score",
+    "Values",
+    "Evidence detail",
+    "Notes",
+  ],
+};
+
+const getEvidenceColumns = (details) =>
+  Array.from(new Set(details.flatMap((row) => Object.keys(row))));
+
+const getSelectedColumns = (details, selected) => {
+  const availableColumns = getEvidenceColumns(details);
+  if (!selected?.length) {
+    return availableColumns;
+  }
+  return selected.filter((column) => availableColumns.includes(column));
+};
+
+const getPmidsFromCitation = (citation) => {
+  if (typeof citation !== "string") {
+    return [];
+  }
+  return [...citation.matchAll(/pmid:\s*(\d+)/gi)].map((match) => match[1]);
+};
+
+const geneticColumns = getSelectedColumns(geneticEvidenceDetails, selectedColumns.genetic);
+const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, selectedColumns.experimental);
+---
+
+<Layout title={curation.Locus_ID}>
+  <TableOfContents client:only="react" />
+
+  <section>
+    <Heading client:load level={2}><LuBookMarked />{curation.Locus_ID}</Heading>
+
+    <div class="table-scroll summary-scroll">
+      <table class="summary-table">
+        <tbody>
+          <tr><th>Gene</th><td>{curation.Gene}</td></tr>
+          <tr><th>Disease</th><td>{curation.Disease_ID}</td></tr>
+          <tr><th>Inheritance</th><td>{curation.Inheritance}</td></tr>
+          <tr>
+            <th>Classification</th>
+            <td class={classificationClass[classificationKey] ?? ""}>{curation.classification}</td>
+          </tr>
+          <tr><th>Total Score</th><td>{curation.total_score}</td></tr>
+          <tr><th>Publications Reviewed</th><td>{curation.publication_count}</td></tr>
+          <tr><th>Publication Span (Years)</th><td>{curation.publication_interval_years}</td></tr>
+          <tr><th>Date Last Updated</th><td>{curation.Date}</td></tr>
+          <tr><th>Curator(s)</th><td>{curation.Curator}</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row">
+      <Link to="/critria">Back to all criTRia curations</Link>
+    </div>
+    <p class="center">
+      Note: Maximum score caps apply at evidence type, category, and supercategory levels,
+      so section totals may be lower than the raw sum of row scores.
+    </p>
+  </section>
+
+  <section>
+    <Heading client:load level={3}>Genetic evidence</Heading>
+    <p class="center"><strong>Total:</strong> {geneticEvidenceTotal ?? "-"}</p>
+
+    {
+      geneticEvidenceDetails.length ? (
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                {geneticColumns.map((column) => <th>{column}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {geneticEvidenceDetails.map((row) => (
+                <tr>
+                  {geneticColumns.map((column) => (
+                    <td>
+                      {column === "Citation" ? (
+                        (() => {
+                          const pmids = getPmidsFromCitation(row[column]);
+                          if (!pmids.length) {
+                            return row[column] ?? "-";
+                          }
+                          return pmids.map((pmid, index) => (
+                            <>
+                              {index > 0 ? "; " : ""}
+                              <a
+                                href={`https://pubmed.ncbi.nlm.nih.gov/${pmid}/`}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {`pmid:${pmid}`}
+                              </a>
+                            </>
+                          ));
+                        })()
+                      ) : (
+                        row[column] ?? "-"
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="center">No genetic evidence details available.</p>
+      )
+    }
+  </section>
+
+  <section>
+    <Heading client:load level={3}>Experimental evidence</Heading>
+    <p class="center"><strong>Total:</strong> {experimentalEvidenceTotal ?? "-"}</p>
+
+    {
+      experimentalEvidenceDetails.length ? (
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                {experimentalColumns.map((column) => <th>{column}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {experimentalEvidenceDetails.map((row) => (
+                <tr>
+                  {experimentalColumns.map((column) => (
+                    <td>
+                      {column === "Citation" ? (
+                        (() => {
+                          const pmids = getPmidsFromCitation(row[column]);
+                          if (!pmids.length) {
+                            return row[column] ?? "-";
+                          }
+                          return pmids.map((pmid, index) => (
+                            <>
+                              {index > 0 ? "; " : ""}
+                              <a
+                                href={`https://pubmed.ncbi.nlm.nih.gov/${pmid}/`}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {`pmid:${pmid}`}
+                              </a>
+                            </>
+                          ));
+                        })()
+                      ) : (
+                        row[column] ?? "-"
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="center">No experimental evidence details available.</p>
+      )
+    }
+  </section>
+</Layout>
+
+<style>
+  .summary-scroll {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    overflow-x: visible;
+  }
+
+  .table-scroll > table.summary-table {
+    width: auto;
+    min-width: 32rem;
+    table-layout: auto;
+  }
+
+  @media (max-width: 700px) {
+    .table-scroll > table.summary-table {
+      min-width: 100%;
+    }
+  }
+
+  .table-scroll > table {
+    width: max-content;
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  th {
+    text-align: left;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  td {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  td.classification-definitive {
+    background: color-mix(in srgb, var(--primary), hsl(120deg 70% 45%) 65%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  td.classification-strong {
+    background: color-mix(in srgb, var(--primary), var(--white) 20%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  td.classification-moderate {
+    background: color-mix(in srgb, var(--primary), var(--white) 55%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  td.classification-limited {
+    background: color-mix(in srgb, var(--secondary), hsl(55deg 95% 65%) 65%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+
+  td.classification-disputed,
+  td.classification-refuted,
+  td.classification-no-known-relationship {
+    background: color-mix(in srgb, var(--secondary), hsl(30deg 95% 60%) 55%);
+    color: var(--black);
+    font-weight: var(--bold);
+  }
+</style>

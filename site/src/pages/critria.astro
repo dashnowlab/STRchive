@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import { LuBadgeInfo, LuBookMarked, LuMail } from "react-icons/lu";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
+import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import { readFile } from "node:fs/promises";
 
@@ -63,7 +64,11 @@ const classificationClass = {
           {
             curations.map((curation) => (
               <tr>
-                <td>{curation.Gene}</td>
+                <td>
+                  <Link to={`/critria/${curation.Locus_ID}`} arrow={false}>
+                    {curation.Gene}
+                  </Link>
+                </td>
                 <td>{curation.Disease_ID}</td>
                 <td>{curation.Inheritance}</td>
                 <td>{curation.total_score}</td>
