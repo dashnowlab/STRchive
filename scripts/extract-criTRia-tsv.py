@@ -128,13 +128,13 @@ CLASSIFICATION_LOOKUP = {
         "min_years": 0,
     },
     "Moderate": {
-        "score_range": (7, 11),
+        "score_range": (6, 12),
         "replication_requirement": "Some support, no contradicitions",
         "min_pubs": 1,
         "min_years": 0,
     },
     "Limited": {
-        "score_range": (0.1, 6),
+        "score_range": (0, 6),
         "replication_requirement": "Some evidence, not compelling",
         "min_pubs": 1,
         "min_years": 0,
@@ -152,7 +152,7 @@ CLASSIFICATION_LOOKUP = {
         "min_years": 0,
     },
     "No Known Relationship": {
-        "score_range": (0, 0),
+        "score_range": (-1, 0),
         "replication_requirement": "No evidence",
         "min_pubs": 0,
         "min_years": 0,
@@ -277,10 +277,16 @@ def summarize_curations(locus_id, curations):
         
         # Determine the classification based on the total score and replication requirement
         classification = None
+        # if  publication_interval_years is None, set it to 0 for the purpose of classification, but we will still report it as None in the final summary
+        if publication_interval_years is None:
+            tmp_publication_interval_years = 0
+        else:
+            tmp_publication_interval_years = publication_interval_years
+
         for class_name, class_info in CLASSIFICATION_LOOKUP.items():
             score_range = class_info['score_range']
-            if score_range is not None and score_range[0] <= total_score <= score_range[1]:
-                if publication_count >= class_info['min_pubs'] and publication_interval_years >= class_info['min_years']:
+            if score_range is not None and score_range[0] < total_score <= score_range[1]:
+                if publication_count >= class_info['min_pubs'] and tmp_publication_interval_years >= class_info['min_years']:
                     classification = class_name
                     break
 

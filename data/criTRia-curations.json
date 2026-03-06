@@ -291,4 +291,117 @@
     "evidence_max_score": 2.0,
     "category_max_score": 2.0
   }]
+},
+{
+  "Disease_ID": "HPE5",
+  "Gene": "ZIC2",
+  "Locus_ID": "HPE5_ZIC2",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner",
+  "Date": "3/2/26",
+  "category_summary":
+  {
+    "Collective Evidence": 1.0,
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 6.0,
+    "Rescue": 0,
+    "Statistics": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 7.0
+  },
+  "total_score": 11.5,
+  "classification": "Moderate",
+  "publication_count": 3,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:11285244",
+    "Values": "probands:15",
+    "Evidence detail": null,
+    "Notes": "15 + de novo",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.0,
+    "Citation": "pmid:19177455",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transc",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "C term",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "patient mutations",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": "mouse",
+    "Notes": "mouse, from patient mutations, evaluated C terminal, protein, transcription, etc",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
 }]
