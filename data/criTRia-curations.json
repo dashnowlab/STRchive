@@ -24,7 +24,7 @@
   "total_score": 18.0,
   "classification": "Definitive",
   "publication_count": 9,
-  "publication_interval_years": 4.02,
+  "publication_interval_years": 8.76,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -175,7 +175,7 @@
     "Evidence type": "Patient cells",
     "Score": 0.5,
     "Citation": "pmid:25593321",
-    "Values": "?",
+    "Values": null,
     "Evidence detail": "patient corneal cells",
     "Notes": "certainly studied patient cells... just doesnt say how many",
     "evidence_category": "Functional Alteration",
@@ -199,7 +199,7 @@
     "Evidence type": "Non-patient cells",
     "Score": 0.5,
     "Citation": "pmid:25593321",
-    "Values": "?",
+    "Values": null,
     "Evidence detail": "non patient corneal cells",
     "Notes": null,
     "evidence_category": "Functional Alteration",

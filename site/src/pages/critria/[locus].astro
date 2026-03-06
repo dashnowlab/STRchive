@@ -58,6 +58,7 @@ const classificationKey = String(curation.classification ?? "").trim().toLowerCa
 
 const selectedColumns = {
   genetic: [
+    "evidence_category",
     "Evidence type",
     "Citation",
     "Score",
@@ -66,6 +67,7 @@ const selectedColumns = {
     "Notes",
   ],
   experimental: [
+    "evidence_category",
     "Evidence type",
     "Citation",
     "Score",
@@ -84,6 +86,10 @@ const getSelectedColumns = (details, selected) => {
     return availableColumns;
   }
   return selected.filter((column) => availableColumns.includes(column));
+};
+
+const columnLabelMap = {
+  evidence_category: "Evidence Category",
 };
 
 const getPmidsFromCitation = (citation) => {
@@ -133,7 +139,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
 
   <section>
     <Heading client:load level={3}>Genetic evidence</Heading>
-    <p class="center"><strong>Total:</strong> {geneticEvidenceTotal ?? "-"}</p>
+    <p class="center section-total"><strong>Total:</strong> {geneticEvidenceTotal ?? "-"}</p>
 
     {
       geneticEvidenceDetails.length ? (
@@ -141,7 +147,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
           <table>
             <thead>
               <tr>
-                {geneticColumns.map((column) => <th>{column}</th>)}
+                {geneticColumns.map((column) => <th>{columnLabelMap[column] ?? column}</th>)}
               </tr>
             </thead>
             <tbody>
@@ -153,7 +159,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
                         (() => {
                           const pmids = getPmidsFromCitation(row[column]);
                           if (!pmids.length) {
-                            return row[column] ?? "-";
+                            return row[column] ?? "";
                           }
                           return pmids.map((pmid, index) => (
                             <>
@@ -169,7 +175,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
                           ));
                         })()
                       ) : (
-                        row[column] ?? "-"
+                        row[column] ?? ""
                       )}
                     </td>
                   ))}
@@ -186,7 +192,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
 
   <section>
     <Heading client:load level={3}>Experimental evidence</Heading>
-    <p class="center"><strong>Total:</strong> {experimentalEvidenceTotal ?? "-"}</p>
+    <p class="center section-total"><strong>Total:</strong> {experimentalEvidenceTotal ?? "-"}</p>
 
     {
       experimentalEvidenceDetails.length ? (
@@ -194,7 +200,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
           <table>
             <thead>
               <tr>
-                {experimentalColumns.map((column) => <th>{column}</th>)}
+                {experimentalColumns.map((column) => <th>{columnLabelMap[column] ?? column}</th>)}
               </tr>
             </thead>
             <tbody>
@@ -206,7 +212,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
                         (() => {
                           const pmids = getPmidsFromCitation(row[column]);
                           if (!pmids.length) {
-                            return row[column] ?? "-";
+                            return row[column] ?? "";
                           }
                           return pmids.map((pmid, index) => (
                             <>
@@ -222,7 +228,7 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
                           ));
                         })()
                       ) : (
-                        row[column] ?? "-"
+                        row[column] ?? ""
                       )}
                     </td>
                   ))}
@@ -305,5 +311,11 @@ const experimentalColumns = getSelectedColumns(experimentalEvidenceDetails, sele
     background: color-mix(in srgb, var(--secondary), hsl(30deg 95% 60%) 55%);
     color: var(--black);
     font-weight: var(--bold);
+  }
+
+  .section-total {
+    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 </style>
