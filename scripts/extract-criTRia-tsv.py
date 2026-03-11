@@ -191,6 +191,7 @@ Evidence type	Score	Citation	Values	Evidence detail	Notes
 Probands	6	pmid:25168903	probands:46		68 affected individuals + 1 unaffected with expansion but 46 affected with expansion																
     """
     # Extract the metadata from the first line of the TSV file
+    sys.stderr.write(f"Extracting curations from {tsv_file}...\n")
     with open(tsv_file, 'r') as f:
         first_line = f.readline().strip('#').strip()
     metadata = {}
@@ -199,6 +200,19 @@ Probands	6	pmid:25168903	probands:46		68 affected individuals + 1 unaffected wit
         metadata[key.strip()] = value.strip()
 
     df = pd.read_csv(tsv_file, sep='\t', comment='#')
+    source_columns = df.columns.tolist()
+    df = df.replace(r'^\s*$', pd.NA, regex=True)
+    df = df.dropna(subset=source_columns, how='all')
+
+    if 'Score' in df.columns:
+        invalid_score_mask = df['Score'].notna() & pd.to_numeric(df['Score'], errors='coerce').isna()
+        if invalid_score_mask.any():
+            invalid_scores = sorted(set(df.loc[invalid_score_mask, 'Score'].astype(str).tolist()))
+            sys.stderr.write(
+                f"Warning: Non-numeric Score value(s) in {tsv_file}: {', '.join(invalid_scores)}. Treating as missing.\n"
+            )
+        df['Score'] = pd.to_numeric(df['Score'], errors='coerce')
+
     # use LOOKUP_EVIDENCE to add evidence_category and evidence_supercategory columns to the dataframe
     df['evidence_category'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_category'])
     df['evidence_supercategory'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_supercategory'])
@@ -241,6 +255,12 @@ def summarize_curations(locus_id, curations):
     The function should summarize the evidence for each locus and return a dictionary containing the summary.
     """
     for metadata, df in curations:
+        # Report any evidence types that are not recognized in the EVIDENCE_LOOKUP
+        for evidence_type in df['Evidence type'].unique():
+            if _normalize_evidence_type(evidence_type) not in NORMALIZED_EVIDENCE_LOOKUP:
+                sys.stderr.write(f"Warning: Unrecognized evidence type '{evidence_type}' in locus '{locus_id}'\n")
+
+
         # Sum the scores for each evidence category and supercategory
         category_summary = df.groupby('evidence_category')['Score'].sum().to_dict()
         # If there are any categories that are missing from the summary, add them with a score of 0
@@ -251,8 +271,9 @@ def summarize_curations(locus_id, curations):
         # Enforce the maximum score for each category        
         for category, score in category_summary.items():
             max_score = max(EVIDENCE_LOOKUP[evidence_type]['category_max_score'] for evidence_type in EVIDENCE_LOOKUP if EVIDENCE_LOOKUP[evidence_type]['evidence_category'] == category)
-            if score > max_score:
-                category_summary[category] = max_score
+            if score is not None and max_score is not None:
+                if score > max_score:
+                    category_summary[category] = max_score
 
         # Sum the scores for each supercategory
         supercategory_summary = df.groupby('evidence_supercategory')['Score'].sum().to_dict()
@@ -263,9 +284,10 @@ def summarize_curations(locus_id, curations):
         # Enforce the maximum score for each supercategory
         for supercategory, score in supercategory_summary.items():
             max_score = SUPERCATEGORY_LOOKUP[supercategory]['max_score']
-            if score > max_score:
-                supercategory_summary[supercategory] = max_score
- 
+            if score is not None and max_score is not None:
+                if score > max_score:
+                    supercategory_summary[supercategory] = max_score
+
         # Calculate the total score for the curation as the sum of the supercategory scores
         total_score = sum(supercategory_summary.values())
 
