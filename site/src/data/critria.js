@@ -7,32 +7,32 @@ export const classifications = [
   },
   {
     match: /refuted/i,
-    backgroundColor: "rgb(155, 44, 44)",
+    backgroundColor: "#8C2D2D",
     color: "var(--white)",
   },
   {
     match: /disputed/i,
-    backgroundColor: "rgb(229, 62, 62)",
-    color: "var(--black)",
+    backgroundColor: "#D66A4E",
+    color: "var(--white)",
   },
   {
     match: /limited/i,
-    backgroundColor: "rgb(252, 129, 130)",
+    backgroundColor: "#E9B872",
     color: "var(--black)",
   },
   {
     match: /moderate/i,
-    backgroundColor: "rgb(104, 211, 145)",
+    backgroundColor: "#8FBBD9",
     color: "var(--black)",
   },
   {
     match: /strong/i,
-    backgroundColor: "rgb(55, 161, 105)",
-    color: "var(--black)",
+    backgroundColor: "#2A9D8F",
+    color: "var(--white)",
   },
   {
     match: /definitive/i,
-    backgroundColor: "rgb(39, 103, 73)",
+    backgroundColor: "#0B6E6E",
     color: "var(--white)",
   },
 ];
