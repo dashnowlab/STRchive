@@ -1,0 +1,6294 @@
+[
+{
+  "Disease_ID": "ALS1",
+  "Gene": "NIPA",
+  "Locus_ID": "ALS1_NIPA1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "6/6/2025",
+  "Manual_evidence_level": "Disputed",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 0.5,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 14.0,
+  "classification": "Disputed",
+  "publication_count": 3,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": 31286297,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": 34179866,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "mentions that results open new questions",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": 31286297,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": 31286297,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": 30342764,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": 31286297,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": 31286297,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "CCD",
+  "Gene": "RUNX2",
+  "Locus_ID": "CCD_RUNX2",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 2,
+    "Functional Alteration": 2.0,
+    "Singular Evidence": 6,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 10.5
+  },
+  "total_score": 15.0,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 23.0,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:26220009",
+    "Values": "2 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:40585427",
+    "Values": "1 proband",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:9182765",
+    "Values": "1 proband",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.5,
+    "Citation": "pmid:25852448",
+    "Values": null,
+    "Evidence detail": "GLUTAMINE",
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:32386547",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 1.0,
+    "Citation": "pmid:24497578",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:32386547",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:32386547",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:24497578",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "CJD",
+  "Gene": "PRNP",
+  "Locus_ID": "CJD_PRNP",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.5,
+    "Singular Evidence": 6.0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 7.5
+  },
+  "total_score": 9.0,
+  "classification": "Moderate",
+  "publication_count": 5,
+  "publication_interval_years": 34.09,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:29887139",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:1683708",
+    "Values": "~1",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:37379724",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:29939637",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:36977684; pmid:38467784; pmid:1683708",
+    "Values": null,
+    "Evidence detail": "Epigenetic, splicing",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "CPEO",
+  "Gene": "POLG",
+  "Locus_ID": "CPEO_POLG",
+  "Inheritance": "?",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Disputed",
+  "category_summary":
+  {
+    "Function": 1.0,
+    "Functional Alteration": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 0,
+    "Statistics": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 0
+  },
+  "total_score": 4.0,
+  "classification": "Disputed",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:24038517",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:24038517",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:24038517",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:24038517",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "DBQD2",
+  "Gene": "XYLT1",
+  "Locus_ID": "DBQD2_XYLT1",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Function": 2,
+    "Singular Evidence": 6.0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 6.0
+  },
+  "total_score": 8.5,
+  "classification": "Moderate",
+  "publication_count": 2,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:30554721",
+    "Values": 6.0,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:24581741",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:24581741",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:24581741",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "DMD",
+  "Gene": "DMD",
+  "Locus_ID": "DMD_DMD",
+  "Inheritance": "XR",
+  "Curator": "Laurel Hiatt",
+  "Date": "5/14/2025",
+  "Manual_evidence_level": "Refuted",
+  "category_summary":
+  {
+    "Collective Evidence": 0,
+    "Singular Evidence": 0,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Genetic Evidence": 0,
+    "Experimental Evidence": 0
+  },
+  "total_score": 0,
+  "classification": "Refuted",
+  "publication_count": 2,
+  "publication_interval_years": 8.65,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 0,
+    "Citation": "pmid:27417533",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Single family",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0,
+    "Citation": "pmid:40140942",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "DRPLA",
+  "Gene": "ATN1",
+  "Locus_ID": "DRPLA_ATN1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 8.0
+  },
+  "total_score": 12.5,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": 12.17,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:6808417",
+    "Values": "5 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": " pmid:4114795",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "a higher number of CAG repeats correlates with earlier onset of DRPLA and higher chance of epilepsy",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 1.0,
+    "Citation": "pmid:7842016",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:7842016",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:7842016",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:7842016",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "EIEE1",
+  "Gene": "ARX",
+  "Locus_ID": "EIEE1_ARX",
+  "Inheritance": "XR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 1.0,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Rescue": 0.5,
+    "Singular Evidence": 6,
+    "Statistics": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 5.0,
+    "Genetic Evidence": 11.5
+  },
+  "total_score": 16.5,
+  "classification": "Definitive",
+  "publication_count": 9,
+  "publication_interval_years": 17.66,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:21204215",
+    "Values": "98 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:9307258",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "2 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": null,
+    "Citation": "pmid:12874418",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "12 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:9307258",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Markers DXS336, DXS333, DXS389, and DMD43 are completely linked with the disease in both families, resulting in a maximal LOD score of 2.357 for markers DXS989 and DMD49 at recombination fraction 0.0",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:11889467",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "length affects severity/phenotype",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:26029707",
+    "Values": "10 patients",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:12874418",
+    "Values": "200",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:19587282; pmid:11889467",
+    "Values": null,
+    "Evidence detail": "mouse, zebrafish",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in Cell Culture",
+    "Score": 0.5,
+    "Citation": "pmid:17460091",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "migrating rescued in vitro",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "11889467",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transciptional repression",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "12874418; 11889467",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "on cell surface",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "EPM",
+  "Gene": "CSNK1E",
+  "Locus_ID": "EPM_CSNK1E",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner",
+  "Date": "3/9/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Function": 1.0,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 1.5,
+    "Statistics": 4.0,
+    "Models": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 5.5
+  },
+  "total_score": 8.0,
+  "classification": "Moderate",
+  "publication_count": 3,
+  "publication_interval_years": 6.67,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:40751262",
+    "Values": "1 proband",
+    "Evidence detail": null,
+    "Notes": " functional, de novo proband",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 4.0,
+    "Citation": "pmid:40751262",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "strong bias",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:30488659",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "expression decrease +hypermethylation",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:32937144",
+    "Values": null,
+    "Evidence detail": "1 proband",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:32937144",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FAME1",
+  "Gene": "SAMD12",
+  "Locus_ID": "FAME1_SAMD12",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2.0,
+    "Singular Evidence": 6.0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.0,
+    "Genetic Evidence": 10.0
+  },
+  "total_score": 12.0,
+  "classification": "Definitive",
+  "publication_count": 4,
+  "publication_interval_years": 6.84,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:39569876",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39569876",
+    "Values": null,
+    "Evidence detail": "(TTTCA)exp counts were inversely correlated with the age at onset for cortical tremor and epilepsy ",
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:32203200",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:30194086; pmid:29939203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 1.0,
+    "Citation": "pmid:29507423",
+    "Values": null,
+    "Evidence detail": "RNA and transc reg",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 1.0,
+    "Citation": "pmid:29507423",
+    "Values": null,
+    "Evidence detail": "decrease + mutant",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FAME2",
+  "Gene": "STARD7",
+  "Locus_ID": "FAME2_STARD7",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/2025",
+  "category_summary":
+  {
+    "Collective Evidence": 3.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Genetic Evidence": 12,
+    "Experimental Evidence": 0
+  },
+  "total_score": 12,
+  "classification": "Moderate",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:31664034",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:31664034",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:31664034",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31664034",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:31664034",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "FAME3",
+  "Gene": "MARCHF6",
+  "Locus_ID": "FAME3_MARCHF6",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3.0,
+    "Function": 1.5,
+    "Functional Alteration": 2,
+    "Singular Evidence": 1.5,
+    "Statistics": 6.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 10.5
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": 7.25,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "4 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Association between onset and allele size",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "est. LOD over 5",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:19616813",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:19616813",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Expression",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Varied expression in patients + splicing",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:31664039",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:12140665",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FAME4",
+  "Gene": "YEATS2",
+  "Locus_ID": "FAME4_YEATS2",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 1.5,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
+    "Genetic Evidence": 3.0
+  },
+  "total_score": 6.0,
+  "classification": "Limited",
+  "publication_count": 3,
+  "publication_interval_years": 4.25,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:31539032",
+    "Values": "1 proband",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:22713812",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:38128822",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:38128822",
+    "Values": null,
+    "Evidence detail": "expression",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:38128822",
+    "Values": null,
+    "Evidence detail": "fly",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "FAME6",
+  "Gene": "TNRC 6A",
+  "Locus_ID": "FAME6_TNRC6A",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.0,
+    "Function": 0.5,
+    "Singular Evidence": 1.5,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 0.5,
+    "Genetic Evidence": 2.5
+  },
+  "total_score": 3.0,
+  "classification": "Limited",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:29507423",
+    "Values": 1.0,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:29507423",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:29507423",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "issue specific expression data in supplementary, \"control brains\"",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FAME7",
+  "Gene": "RAPGEF2",
+  "Locus_ID": "FAME7_RAPGEF2",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1,
+    "Singular Evidence": 2,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Genetic Evidence": 3,
+    "Experimental Evidence": 0
+  },
+  "total_score": 3,
+  "classification": "Limited",
+  "publication_count": 2,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 2,
+    "Citation": "pmid:30351492; pmid:29507423",
+    "Values": 1.0,
+    "Evidence detail": null,
+    "Notes": "Family but no functional evdience",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1,
+    "Citation": "pmid:30351492",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Motif",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "FAME8",
+  "Gene": "RAI1",
+  "Locus_ID": "RAME8_RAI1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.5,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 1.5,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
+    "Genetic Evidence": 3.0
+  },
+  "total_score": 6.0,
+  "classification": "Limited",
+  "publication_count": 3,
+  "publication_interval_years": 0.45,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:37994247",
+    "Values": "1 family",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.5,
+    "Citation": "pmid:38871700",
+    "Values": null,
+    "Evidence detail": "use a few",
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:37994247; pmid:38876750",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:37994247",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:37994247",
+    "Values": null,
+    "Evidence detail": "Expression",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37994247",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:37994247",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FECD3",
+  "Gene": "TCF4",
+  "Locus_ID": "FECD3_TCF4",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 1.5,
+    "Functional Alteration": 2,
+    "Models": 2.0,
+    "Rescue": 1.0,
+    "Singular Evidence": 6,
+    "Statistics": 12
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 9,
+  "publication_interval_years": 9.41,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:25168903",
+    "Values": "probands:46",
+    "Evidence detail": null,
+    "Notes": "68 affected individuals + 1 unaffected with expansion but 46 affected with expansion ",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:24255041",
+    "Values": "probands:120",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:25168903",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "penetrance",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:24255041",
+    "Values": "families:2; affected:4",
+    "Evidence detail": null,
+    "Notes": "LOD = 2.4",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:30267097",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "4 affected in 2 families, significant fischer and t-test",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:25168903",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "strong associated: P = 6 × 10−26; Genotype quality score, HWE, and regression analyses",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:28832669",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "significant regression",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:27755191",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "significant regression",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:25593321",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "RNA binding",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": null,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:29526280; pmid:25593321",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "splicing evidence for both papers",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25593321",
+    "Values": null,
+    "Evidence detail": "patient corneal cells",
+    "Notes": "certainly studied patient cells... just doesnt say how many",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25168903",
+    "Values": "patients: 68",
+    "Evidence detail": "Leukocyte DNA ",
+    "Notes": "68 affected individuals, only 46 have expansion",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25593321",
+    "Values": null,
+    "Evidence detail": "non patient corneal cells",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:24255041",
+    "Values": "controls:100",
+    "Evidence detail": "humans",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:25168903",
+    "Values": "controls:16",
+    "Evidence detail": "Leukocyte DNA ",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:37169279",
+    "Values": null,
+    "Evidence detail": " mouse cornea",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in Cell Culture",
+    "Score": 1.0,
+    "Citation": "pmid:29526280",
+    "Values": null,
+    "Evidence detail": "ASO",
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FRA2A",
+  "Gene": "AFF3",
+  "Locus_ID": "FRA2A_AFF3",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/25",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 2.0,
+    "Functional Alteration": 1.5,
+    "Models": 0.5,
+    "Singular Evidence": 2.0,
+    "Statistics": 4.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 8.0
+  },
+  "total_score": 12.0,
+  "classification": "Moderate",
+  "publication_count": 2,
+  "publication_interval_years": 10.59,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 2.0,
+    "Citation": "pmid:39313615",
+    "Values": "2 probands ",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:39313615",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "not explicit to disease",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 4.0,
+    "Citation": "pmid:39313615",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Not great matching",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:39313615",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:24763282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:24763282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:24763282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:24763282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 0.5,
+    "Citation": "pmid:24763282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "FRA7A",
+  "Gene": "ZNF713",
+  "Locus_ID": "FRA7A_ZNF13",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Singular Evidence": 3,
+    "Statistics": 4,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Genetic Evidence": 7,
+    "Experimental Evidence": 0
+  },
+  "total_score": 7,
+  "classification": "Moderate",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 3,
+    "Citation": "pmid:25196122",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 4,
+    "Citation": "pmid:25196122",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "poorly matched but highly significant",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "FXS",
+  "Gene": "FMR1",
+  "Locus_ID": "FXS_FMR1",
+  "Inheritance": "XD",
+  "Curator": "Macayla Weiner",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Function": 1.5,
+    "Functional Alteration": 0.5,
+    "Models": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 5.0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.5,
+    "Genetic Evidence": 11.0
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 8,
+  "publication_interval_years": 28.67,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:32463542",
+    "Values": "2362 probands",
+    "Evidence detail": null,
+    "Notes": " from 2 cohorts",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 5.0,
+    "Citation": "pmid:26491488",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "statistically significant, no bias, not well matched",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:31342442",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transcriptional silencing of gene",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:1342442",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "absence of [FMRP] evokes FXS;  \"associated marked decrease in... protein product\"",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:30642066",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "It is believed that only a small number of embryonic progenitor cells will go on to form the brain, so the ratio of cells that have the affected X active to silenced is thought to significantly affect the level of FMRP expression in the developing central nervous system.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:30678024",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "leads to abnormal methylation of MFR1",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:29868108",
+    "Values": "257 patients",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 0.5,
+    "Citation": "pmid:25287458",
+    "Values": null,
+    "Evidence detail": "control humans",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "FXTAS,POF1",
+  "Gene": "FMR1",
+  "Locus_ID": "FXTAS,POF1_FMR1",
+  "Inheritance": "XD",
+  "Curator": "Macayla Weiner",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 0.5,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 12.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 14.0,
+  "classification": "Definitive",
+  "publication_count": 2,
+  "publication_interval_years": 0.86,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:17427188",
+    "Values": "93 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:17427188",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "length affects onset and severity/penetrance",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 12.0,
+    "Citation": "pmid:17427188",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "highly significant, well matched, proven beyond bias, PCR and Southern blot",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:18057320",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:18057320",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:18057320",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "HFG",
+  "Gene": "HOXA13-1",
+  "Locus_ID": "HFG_HOXA13-1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Function": 1.0,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Singular Evidence": 0,
+    "Statistics": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 0
+  },
+  "total_score": 4.5,
+  "classification": "Limited",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Only paper that is clearly talking about HFG and HOXA13-1, there are others but are ambiguous as to which locus",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": null,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "HFG-II",
+  "Gene": "HOXA13",
+  "Locus_ID": "HFG_HOXA13-II",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 1.5,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
+    "Genetic Evidence": 3.0
+  },
+  "total_score": 6.0,
+  "classification": "Limited",
+  "publication_count": 3,
+  "publication_interval_years": 1.63,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:12676922",
+    "Values": 1.0,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:12676922",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:15385446; pmid:12676922",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:15385446; pmid:12676922",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:15385446",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "HFG-III",
+  "Gene": "HOXA13",
+  "Locus_ID": "HFG_HOXA13-III",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.0,
+    "Functional Alteration": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 0.5,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 2.0
+  },
+  "total_score": 6.0,
+  "classification": "Limited",
+  "publication_count": 2,
+  "publication_interval_years": 7.46,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 0.5,
+    "Citation": "pmid:10839976",
+    "Values": 5.0,
+    "Evidence detail": null,
+    "Notes": " I'm not convinced they all have type 3 so gave 0.1 each",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:10839976",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:17935235",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "HMNR7",
+  "Gene": "VWA1",
+  "Locus_ID": "HMNR7_VWA1",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 0.5,
+    "Functional Alteration": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 7.5
+  },
+  "total_score": 10.0,
+  "classification": "Moderate",
+  "publication_count": 3,
+  "publication_interval_years": 0.25,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:33559681",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "14 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:33559681",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:38652110",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:39502942",
+    "Values": null,
+    "Evidence detail": "muscle cells of many patients",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "HPE5",
+  "Gene": "ZIC2",
+  "Locus_ID": "HPE5_ZIC2",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "3/2/26",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 1.0,
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
+    "Models": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 7.0
+  },
+  "total_score": 11.5,
+  "classification": "Moderate",
+  "publication_count": 3,
+  "publication_interval_years": 8.0,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:11285244",
+    "Values": "probands:15",
+    "Evidence detail": null,
+    "Notes": "15 + de novo",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.0,
+    "Citation": "pmid:19177455",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transc",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "C term",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "patient mutations",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:15590697",
+    "Values": null,
+    "Evidence detail": "mouse",
+    "Notes": "mouse, from patient mutations, evaluated C terminal, protein, transcription, etc",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "HSAN-VIII",
+  "Gene": "PRDM12",
+  "Locus_ID": "HSAN-VIII_PRDM12",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 2.0,
+    "Functional Alteration": 1.5,
+    "Models": 3.0,
+    "Singular Evidence": 2.5,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 5.0
+  },
+  "total_score": 11.0,
+  "classification": "Moderate",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 2.5,
+    "Citation": "pmid:26005867",
+    "Values": "2 families",
+    "Evidence detail": "pedigree for both and functional info for one family",
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.0,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:26005867",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "JBS",
+  "Gene": "CBL",
+  "Locus_ID": "JBS_CBL",
+  "Inheritance": "AD",
+  "Curator": "Macayla, Laurel",
+  "Date": "8/12/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
+    "Singular Evidence": 6,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 12.0
+  },
+  "total_score": 14.5,
+  "classification": "Strong",
+  "publication_count": 3,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:7603564",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:7887422; pmid:10767345",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "5 patients; 24",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:7603564",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transc reg",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:7603564; pmid:10767345",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "expression + hypermethylation",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:7603564; pmid:10767345",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "MIR7-2",
+  "Gene": "CHNG3",
+  "Locus_ID": "MIR7-2_CHNG3",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 0.5,
+    "Functional Alteration": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 12
+  },
+  "total_score": 13.5,
+  "classification": "Strong",
+  "publication_count": 2,
+  "publication_interval_years": 0.0,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:38714869",
+    "Values": 12.0,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:38714868",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:38714868",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:38714868",
+    "Values": null,
+    "Evidence detail": "expression",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:38714868",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "MRUPAV",
+  "Gene": "PLIN4",
+  "Locus_ID": "MRUPAV_PLIN4",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/11/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 2.0,
+    "Functional Alteration": 1.0,
+    "Models": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 8.5
+  },
+  "total_score": 12.5,
+  "classification": "Strong",
+  "publication_count": 6,
+  "publication_interval_years": 0.83,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:36151849; pmid:32451610",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "36151849, one family one sporadic case. 32451610 1 kindred and characterization",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:37145156",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.0,
+    "Citation": "pmid:40693562; pmid:39102614",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "no 40693562. 39102614 family with patient cells",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:36151849",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:40693562",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "changes in binding specificity to LD and may induce targetting of cwellular membrane -- structural roles",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 1.5,
+    "Citation": "pmid:35499779; pmid:40693562",
+    "Values": null,
+    "Evidence detail": "patient cells, proteins",
+    "Notes": "more hydrophobicity",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.0,
+    "Citation": "pmid:40693562",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "No impact on splicing?",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37145156",
+    "Values": null,
+    "Evidence detail": "patient cells",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:40693562",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "muscle of healthy controls",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "NIID",
+  "Gene": "NOTCH2NLC",
+  "Locus_ID": "NIID_NOTCH2NLC",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 2.0,
+    "Functional Alteration": 1.5,
+    "Models": 4.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 5.0,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:37090934",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31178126",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:36570826; pmid:36086903; pmid:35857137; pmid:34675106",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:31332380",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:31332380",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:31332380",
+    "Values": null,
+    "Evidence detail": "Expression, epigenetic",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39055960",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:39055960",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 4.0,
+    "Citation": "pmid:39055960",
+    "Values": null,
+    "Evidence detail": "fly and mouse",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "NME",
+  "Gene": "NAXE",
+  "Locus_ID": "NME_NAXE",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 0.5,
+    "Function": 2,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 1.5,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 2.0
+  },
+  "total_score": 6.0,
+  "classification": "Limited",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "highly polymorphic",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Changes in RNA-binding and translational impacts",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "reduced protein",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "expression, splicing, hypermethylation",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:39455596",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "control fibroplasts",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPDM",
+  "Gene": "ABCD3",
+  "Locus_ID": "OPDM_ABCD3",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt, Macayla Weiner",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 1.0,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 8.5
+  },
+  "total_score": 11.0,
+  "classification": "Moderate",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "8 unrelated families with info, and TWO families have functional information",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": "length and onset",
+    "Notes": "Negative correlation between repeat expansion size and age-of-onset in affected males (y = 3.029x + 272.8, n = 6, p = 0.0063)",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LOD 2.98, WES",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transc upreg",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "overexp",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:39068203",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPDM1",
+  "Gene": "LRP12",
+  "Locus_ID": "OPDM1_LRP12",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Functional Alteration": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Function": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 13.0,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:31332380",
+    "Values": "17 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:34047774",
+    "Values": null,
+    "Evidence detail": "onset - lnegth",
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:31332380",
+    "Values": null,
+    "Evidence detail": "PCR to prove polymorph",
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:34047774",
+    "Values": "p =.001, negative correlation",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:35245110",
+    "Values": "65 patientes",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPDM4",
+  "Gene": "RILPL1",
+  "Locus_ID": "OPDM4_RILPL4",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 7.5
+  },
+  "total_score": 10.0,
+  "classification": "Moderate",
+  "publication_count": 3,
+  "publication_interval_years": 0.5,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:37923380",
+    "Values": "11 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:35700120",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 1.0,
+    "Citation": "pmid:35148830",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:35700120",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:35148830",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPMD",
+  "Gene": "PABPN1",
+  "Locus_ID": "OPMD",
+  "Inheritance": "AD/AR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 1.5,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 15.0,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 24.24,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:35112761",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:28011929; pmid:9392020",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:11087766",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:28011929",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 0.0,
+    "Citation": "pmid:37090934; pmid:37371433",
+    "Values": "Disputed with pmid:37371433 evidence saying no relationship",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:9462747",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:9462747",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:9462747",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:9462747",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:9462747",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPML1",
+  "Gene": "NUTM2B-AS1",
+  "Locus_ID": "OPML1_NUTM2B_AS1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.5,
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 7.5
+  },
+  "total_score": 10.0,
+  "classification": "Moderate",
+  "publication_count": 3,
+  "publication_interval_years": 4.5,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:31332380; pmid:37923380; pmid:39308795",
+    "Values": "1, 3, 3",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31332380",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:38159879",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:38159879",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:38159879",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:38159879",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "PRTS",
+  "Gene": "ARX",
+  "Locus_ID": "PRTS_ARX",
+  "Inheritance": "XR",
+  "Curator": "Laurel Hiatt, Macayla Weiner",
+  "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 1,
+    "Singular Evidence": 6,
+    "Statistics": 6,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Genetic Evidence": 12,
+    "Experimental Evidence": 0
+  },
+  "total_score": 12,
+  "classification": "Definitive",
+  "publication_count": 2,
+  "publication_interval_years": 4.75,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:20506206",
+    "Values": "6 unrelated patients",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1,
+    "Citation": "pmid:20506206",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "The severity of clinical presentation generally increases with the length of polyalanine tract expansion, a correlation seen in other polyalanine tract expansion disorders",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control Data",
+    "Score": 6,
+    "Citation": "pmid:26029707",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "With increasing length of residues in the pA tracts, the clinical presentation becomes more severe, with early onset seizures being a frequent but not consistent finding.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "SCA51",
+  "Gene": "THAP11",
+  "Locus_ID": "SCA51_THAP11",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/2025",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 1.0,
+    "Functional Alteration": 2,
+    "Singular Evidence": 4.5,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 10.0
+  },
+  "total_score": 14.0,
+  "classification": "Strong",
+  "publication_count": 5,
+  "publication_interval_years": 1.67,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 4.5,
+    "Citation": "pmid:39651830;  pmid:37148549 ",
+    "Values": null,
+    "Evidence detail": "3 probands, 2 probands ",
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39651830",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 2.0,
+    "Citation": "pmid:15368101; pmid:39651830; pmid:37148549",
+    "Values": null,
+    "Evidence detail": " (protein simulation and polymorphic),  (polymorphic across populations),  (protein simulation)",
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:37148549",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:24677642",
+    "Values": null,
+    "Evidence detail": "transcription",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:24677642",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:24677642",
+    "Values": null,
+    "Evidence detail": " cell line",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37148549",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": " replicated findings from patient cells in two cell types",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SCA1",
+  "Gene": "ATXN1",
+  "Locus_ID": "SCA1_ATXN1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2,
+    "Functional Alteration": 1.5,
+    "Models": 0.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 12
+  },
+  "total_score": 16.5,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 34.02,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:3165612",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:30933216",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:3165612",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:39096063; pmid:20502998;  pmid:19028133 ",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:8358429",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:8358429",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:8358429; pmid:35245110",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:35573049",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:35573049",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 0.5,
+    "Citation": "pmid:35573049",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA10",
+  "Gene": "ATXN10",
+  "Locus_ID": "SCA10_ATXN10",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laural Hiatt",
+  "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 2,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Rescue": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 7,
+  "publication_interval_years": 25.41,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:19234597",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:15201271",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:9973298",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:19234597",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 1.0,
+    "Citation": "pmid:38467784",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:11017075",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:11017075; pmid:38467784",
+    "Values": null,
+    "Evidence detail": "expression + splicing",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:11017075",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:11017075",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:11017075",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:34970537",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA12",
+  "Gene": "PPP2R2B",
+  "Locus_ID": "SCA12_PPP2R2B",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/11/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 1.0,
+    "Function": 2,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6.0,
+    "Genetic Evidence": 7.0
+  },
+  "total_score": 13.0,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 24.5,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:34711523",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:38467784",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:10581021",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:10581021",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:10581021",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:11198281",
+    "Values": null,
+    "Evidence detail": "Epigenetic change",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:11198281",
+    "Values": null,
+    "Evidence detail": "splicing",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37906407",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:37906407",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:37906407",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA17",
+  "Gene": "TBP",
+  "Locus_ID": "SCA17_TBP",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2,
+    "Function": 1,
+    "Functional Alteration": 2,
+    "Models": 3,
+    "Singular Evidence": 6,
+    "Statistics": 6,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:12805114",
+    "Values": "2 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2,
+    "Citation": "pmid:12805114",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6,
+    "Citation": "pmid:27172828; pmid:26374734; pmid:26267067",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1,
+    "Citation": "pmid:35868859; pmid:32386547",
+    "Values": null,
+    "Evidence detail": "transcription alteration and change in brain expression",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2,
+    "Citation": "pmid:32386547; pmid:18218637",
+    "Values": null,
+    "Evidence detail": " cherry + tissue specific protein interactions ",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:18218637",
+    "Values": null,
+    "Evidence detail": " transgenic mice + cultured cells",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1,
+    "Citation": null,
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SCA3",
+  "Gene": "ATXN3",
+  "Locus_ID": "SCA3_ATXN3",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 1.5,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Rescue": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 30.25,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "url:https://www.ncbi.nlm.nih.gov/books/NBK1196",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:9040742",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:40178277; pmid:39921113; pmid:39731318",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39699045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:7874163",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:39298485",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA31",
+  "Gene": "BEAN1",
+  "Locus_ID": "SCA31_BEAN1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/11/25",
+  "category_summary":
+  {
+    "Collective Evidence": 1.0,
+    "Function": 2.0,
+    "Functional Alteration": 2,
+    "Models": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 2.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 9.0
+  },
+  "total_score": 15.0,
+  "classification": "Definitive",
+  "publication_count": 4,
+  "publication_interval_years": 13.33,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:19878914",
+    "Values": "98 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:19878914",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 2.0,
+    "Citation": "pmid:19878914",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "only 2 controls",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:36371266",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:36563608",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:36563608",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:36563608",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA36",
+  "Gene": "NOP56",
+  "Locus_ID": "SCA36_NOP56",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/11/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 1.5,
+    "Functional Alteration": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 15.0,
+  "classification": "Definitive",
+  "publication_count": 4,
+  "publication_interval_years": 5.83,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:37332636",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:28761930",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:28761930",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:37332636",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:37810464",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:28761930",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:19620283",
+    "Values": null,
+    "Evidence detail": "Epigenetic change",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37332636",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:37332636",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SCA37",
+  "Gene": "DAB1",
+  "Locus_ID": "SCA37_DAB1",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt",
+  "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 2.0,
+    "Functional Alteration": 1.5,
+    "Models": 3.0,
+    "Singular Evidence": 3.0,
+    "Statistics": 6.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 11.5
+  },
+  "total_score": 17.5,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": 1.57,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:30284037",
+    "Values": "probands:2",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:29939198",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:30284037",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:29939198",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:28686858",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SCA4",
+  "Gene": "ZFHX3",
+  "Locus_ID": "SCA4_ZFHX3",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2.0,
+    "Functional Alteration": 1.0,
+    "Models": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 13.5,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 21.0,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:38035881",
+    "Values": "5 probands",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39095619",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:12796826",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:38684900",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:38197134; pmid:38684900; pmid:39635987; pmid:40459184",
+    "Values": null,
+    "Evidence detail": "expression x2, methylation x2",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:38684900",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:38684900",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SCA6",
+  "Gene": "CACNA1A",
+  "Locus_ID": "SCA6_CACNA1A",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2,
+    "Functional Alteration": 1.5,
+    "Models": 4,
+    "Rescue": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 19.53,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:39996131",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:15026782",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 6.0,
+    "Citation": "pmid:8988170",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39996131",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:8988170",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:8988170",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transc silencing",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:8988170",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 3.5,
+    "Citation": "pmid:23331413",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:27412786",
+    "Values": null,
+    "Evidence detail": "mouse",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:27412786",
+    "Values": null,
+    "Evidence detail": "mouse",
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA7",
+  "Gene": "ATXN7",
+  "Locus_ID": "SCA7_ATXN7",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 1.5,
+    "Functional Alteration": 1.5,
+    "Models": 3.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6.0,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18.0,
+  "classification": "Definitive",
+  "publication_count": 4,
+  "publication_interval_years": 11.25,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "GeneReviews",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "GeneReviews",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:8908515",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:30721448; pmid:28597910; pmid:25900954; pmid:11030806",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:18418675",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SCA8",
+  "Gene": "ATXN8OS",
+  "Locus_ID": "SCA8_ATXN8OS",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Function": 2,
+    "Functional Alteration": 1.5,
+    "Models": 3.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12.0
+  },
+  "total_score": 18.0,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": 15.36,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:34632710",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:16804541",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:10192387",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:10192387",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.5,
+    "Citation": "pmid:10192387",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:10192387",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:10192387",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:10192387",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:34632710",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "SD5",
+  "Gene": "HOXD13",
+  "Locus_ID": "SD5_HOXD13",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 1.5,
+    "Functional Alteration": 1.5,
+    "Models": 4.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 8.5
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 4,
+  "publication_interval_years": 16.04,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:9207113",
+    "Values": 16.0,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:9207113",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:8614804",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:22406499",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:22406499",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:22406499",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:22406499",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:22406499",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 4.0,
+    "Citation": "pmid:32386547",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "TOF",
+  "Gene": "TBX1",
+  "Locus_ID": "TOF_TBX1",
+  "Inheritance": "AD",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Models": 1,
+    "Singular Evidence": 1,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1,
+    "Genetic Evidence": 1
+  },
+  "total_score": 2,
+  "classification": "Limited",
+  "publication_count": 2,
+  "publication_interval_years": 4.58,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1,
+    "Citation": "pmid:19948535",
+    "Values": "1 proband",
+    "Evidence detail": null,
+    "Notes": "no family genetics, pheno info",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1,
+    "Citation": "pmid:16141220",
+    "Values": null,
+    "Evidence detail": "Mouse",
+    "Notes": "whole gene not locus-specific",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "VACTERLX",
+  "Gene": "ZIC3",
+  "Locus_ID": "VACTERLX_ZIC3",
+  "Inheritance": "XR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/18/25",
+  "category_summary":
+  {
+    "Singular Evidence": 3.5,
+    "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
+  },
+  "supercategory_summary":
+  {
+    "Genetic Evidence": 3.5,
+    "Experimental Evidence": 0
+  },
+  "total_score": 3.5,
+  "classification": "Limited",
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 3.5,
+    "Citation": "pmid:20452998; pmid:32639022",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "1 prob (1.5), 1 fam with characterization, 1 sporadic (2)",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  }],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "XDP",
+  "Gene": "TAF1",
+  "Locus_ID": "XDP_TAF1",
+  "Inheritance": "XR",
+  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Date": "8/14/2025",
+  "Manual_evidence_level": "Definitive",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2,
+    "Functional Alteration": 0.5,
+    "Models": 1.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 13.5,
+  "classification": "Definitive",
+  "publication_count": 7,
+  "publication_interval_years": 5.34,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:30973967",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:29229810; pmid:38835911; pmid:35395816",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:29229810; pmid:7668293",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:38834915",
+    "Values": null,
+    "Evidence detail": " protein",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 2.0,
+    "Citation": "pmid:17273961; pmid:29474918; pmid:30973967 ",
+    "Values": null,
+    "Evidence detail": "TAF1 expression, methylation decrease, transcriptome alterations",
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:35868859",
+    "Values": null,
+    "Evidence detail": "carrier iPSCs",
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:34250228",
+    "Values": null,
+    "Evidence detail": "brain cell types",
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+}]
