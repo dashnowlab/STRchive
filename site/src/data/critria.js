@@ -7,32 +7,32 @@ export const classifications = [
   },
   {
     match: /refuted/i,
-    backgroundColor: "color-mix(in srgb, var(--secondary), var(--white) 0%)",
+    backgroundColor: "rgb(155, 44, 44)",
     color: "var(--white)",
   },
   {
     match: /disputed/i,
-    backgroundColor: "color-mix(in srgb, var(--secondary), var(--white) 50%)",
+    backgroundColor: "rgb(229, 62, 62)",
     color: "var(--black)",
   },
   {
     match: /limited/i,
-    backgroundColor: "color-mix(in srgb, var(--secondary), var(--white) 75%)",
+    backgroundColor: "rgb(252, 129, 130)",
     color: "var(--black)",
   },
   {
     match: /moderate/i,
-    backgroundColor: "color-mix(in srgb, var(--primary), var(--white) 75%)",
+    backgroundColor: "rgb(104, 211, 145)",
     color: "var(--black)",
   },
   {
     match: /strong/i,
-    backgroundColor: "color-mix(in srgb, var(--primary), var(--white) 50%)",
+    backgroundColor: "rgb(55, 161, 105)",
     color: "var(--black)",
   },
   {
     match: /definitive/i,
-    backgroundColor: "color-mix(in srgb, var(--primary), var(--white) 0%)",
+    backgroundColor: "rgb(39, 103, 73)",
     color: "var(--white)",
   },
 ];
