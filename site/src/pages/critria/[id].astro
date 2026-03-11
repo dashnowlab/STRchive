@@ -1,0 +1,103 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { LuArrowLeft, LuBookMarked } from "react-icons/lu";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
+import Link from "@/components/Link";
+import TableOfContents from "@/components/TableOfContents";
+import EvidenceTable from "@/critria/EvidenceTable";
+import { getStyles } from "@/data/critria";
+import curations from "~/criTRia-curations.json";
+
+/** generate pages for each datum, paths based on id */
+export const getStaticPaths = async () =>
+  curations.map(({ Locus_ID }) => ({ params: { id: Locus_ID } }));
+
+/** current page curation id in url */
+const { id } = Astro.params;
+
+/** look up full curation entry from id */
+const curation = curations.find((item) => item.Locus_ID === id);
+
+if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
+---
+
+<Layout title={curation.Locus_ID}>
+  <TableOfContents client:only="react" />
+
+  <section>
+    <Heading client:load level={2}><LuBookMarked />{curation.Locus_ID}</Heading>
+
+    <dl style="--cols: 1">
+      <dt>Gene</dt>
+      <dd>{curation.Gene}</dd>
+      <dt>Disease</dt>
+      <dd>{curation.Disease_ID}</dd>
+      <dt>Inheritance</dt>
+      <dd>{curation.Inheritance}</dd>
+      <dt>Classification</dt>
+      <dd style={getStyles(curation.classification)}>
+        {curation.classification}
+      </dd>
+      <dt>Total Score</dt>
+      <dd>{curation.total_score}</dd>
+      <dt>Publications Reviewed</dt>
+      <dd>{curation.publication_count}</dd>
+      <dt>Publication Span</dt>
+      <dd>{curation.publication_interval_years} years</dd>
+      <dt>Last Updated</dt>
+      <dd>{curation.Date}</dd>
+      <dt>Curator(s)</dt>
+      <dd>{curation.Curator}</dd>
+    </dl>
+
+    <div class="row">
+      <Button to="/critria" design="bubble">
+        <LuArrowLeft /><span>All CriTRia Curations</span>
+      </Button>
+    </div>
+    <p class="center">
+      Note: Maximum score caps apply at evidence type, category, and
+      supercategory levels, so section totals may be lower than the raw sum of
+      row scores.
+    </p>
+  </section>
+
+  <section>
+    <Heading client:load level={3}>Genetic evidence</Heading>
+    <p class="center section-total">
+      <strong>Total:</strong>
+      {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"}
+    </p>
+
+    {
+      curation.genetic_evidence_details?.length ? (
+        <EvidenceTable
+          client:load
+          evidence={curation.genetic_evidence_details ?? []}
+        />
+      ) : (
+        <p class="center">No genetic evidence details available.</p>
+      )
+    }
+  </section>
+
+  <section>
+    <Heading client:load level={3}>Experimental evidence</Heading>
+    <p class="center section-total">
+      <strong>Total:</strong>
+      {curation.supercategory_summary?.["Experimental Evidence"] ?? "-"}
+    </p>
+
+    {
+      curation.experimental_evidence_details?.length ? (
+        <EvidenceTable
+          client:load
+          evidence={curation.experimental_evidence_details ?? []}
+        />
+      ) : (
+        <p class="center">No experimental evidence details available.</p>
+      )
+    }
+  </section>
+</Layout>

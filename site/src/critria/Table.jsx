@@ -1,29 +1,16 @@
 import Link from "@/components/Link";
 import TableComponent from "@/components/Table";
+import { classifications, getStyles } from "@/data/critria";
 import classes from "./Table.module.css";
-
-/** order and color hues of each classification type */
-const classifications = [
-  [/no known/i, 300],
-  [/refuted/i, 30],
-  [/disputed/i, 80],
-  [/limited/i, 100],
-  [/moderate/i, 120],
-  [/strong/i, 150],
-  [/definitive/i, 180],
-];
-
-/** hue to full color. use oklch instead of hsl for more even brightness. */
-const color = (hue) => `oklch(75% 0.5 ${hue} / 0.25)`;
 
 /** column definitions */
 const cols = [
   {
     key: "Gene",
     name: "Gene",
-    render: (value, row) => (
-      <Link to={`/loci/${row.Locus_ID}`} arrow={false}>
-        {value}
+    render: (cell, row) => (
+      <Link to={`/critria/${row.Locus_ID}`} arrow={false}>
+        {cell}
       </Link>
     ),
   },
@@ -41,22 +28,17 @@ const cols = [
     align: "center",
   },
   {
-    /** sort by classificationValue */
+    /** use classification number value so col sorted by that instead of alphabetically */
     key: "classificationValue",
     name: "Classification",
     style: {
       padding: 0,
     },
-    render: (_, row) => {
+    render: (cell, row) => {
       /** display normal classification string */
       const value = row.classification;
-      const hue =
-        classifications.find(([regex]) => value.match(regex))?.[1] ?? 0;
       return (
-        <div
-          className={classes.classification}
-          style={{ backgroundColor: color(hue) }}
-        >
+        <div className={classes.classification} style={getStyles(value)}>
           {value}
         </div>
       );
@@ -65,8 +47,8 @@ const cols = [
   {
     key: "Date",
     name: "Date",
-    render: (value) =>
-      new Date(value).toLocaleDateString(undefined, {
+    render: (cell) =>
+      new Date(cell).toLocaleDateString(undefined, {
         year: "numeric",
         month: "short",
         day: "numeric",
@@ -78,8 +60,8 @@ const cols = [
 const Table = ({ curations }) => {
   const mappedCurations = curations.map((curation) => ({
     ...curation,
-    classificationValue: classifications.findIndex(([regex]) =>
-      curation.classification.match(regex),
+    classificationValue: classifications.findIndex(({ match }) =>
+      curation.classification.match(match),
     ),
   }));
 
