@@ -43,7 +43,12 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       <dt>Publications Reviewed</dt>
       <dd>{curation.publication_count}</dd>
       <dt>Publication Span</dt>
-      <dd>{curation.publication_interval_years} years</dd>
+      <dd>
+        {curation.publication_interval_years != null &&
+        curation.publication_interval_years !== ""
+          ? `${curation.publication_interval_years} years`
+          : ""}
+      </dd>
       <dt>Last Updated</dt>
       <dd>{curation.Date}</dd>
       <dt>Curator(s)</dt>
