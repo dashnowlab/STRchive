@@ -1,7 +1,7 @@
 import Link from "@/components/Link";
-import TableComponent from "@/components/Table";
+import Table from "@/components/Table";
 import { classifications, getStyles } from "@/data/critria";
-import classes from "./Table.module.css";
+import classes from "./CurationTable.module.css";
 
 /** column definitions */
 const cols = [
@@ -57,7 +57,7 @@ const cols = [
 ];
 
 /** table for main critria page */
-const Table = ({ curations }) => {
+const CurationTable = ({ curations }) => {
   const mappedCurations = curations.map((curation) => ({
     ...curation,
     classificationValue: classifications.findIndex(({ match }) =>
@@ -65,7 +65,7 @@ const Table = ({ curations }) => {
     ),
   }));
 
-  return <TableComponent cols={cols} rows={mappedCurations} />;
+  return <Table cols={cols} rows={mappedCurations} />;
 };
 
-export default Table;
+export default CurationTable;

@@ -4,7 +4,7 @@ import { LuBadgeInfo, LuBookMarked, LuDownload } from "react-icons/lu";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
-import Table from "@/critria/Table";
+import CurationTable from "@/critria/CurationTable";
 import curations from "~/criTRia-curations.json";
 import sop from "~/criTRia-SOP.pdf?url";
 ---
@@ -28,6 +28,6 @@ import sop from "~/criTRia-SOP.pdf?url";
       <LuBookMarked />Locus-disease curations
     </Heading>
 
-    <Table client:load curations={curations} />
+    <CurationTable client:load curations={curations} />
   </section>
 </Layout>

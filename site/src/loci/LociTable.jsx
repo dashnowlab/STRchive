@@ -9,13 +9,13 @@ import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
-import TableComponent from "@/components/Table";
+import Table from "@/components/Table";
 import TextBox from "@/components/TextBox";
 import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
-import classes from "./Table.module.css";
+import classes from "./LociTable.module.css";
 
 /** tags considered important enough to show in table and filters */
 const importantTagOptions = tagOptions.filter((tag) => tag.important);
@@ -101,7 +101,7 @@ const normalize = (string) =>
     .trim();
 
 /** table for main loci page */
-const Table = ({ loci }) => {
+const LociTable = ({ loci }) => {
   /** find shortest/longest motif lengths */
   const motifLengths = loci
     .map(
@@ -294,9 +294,9 @@ const Table = ({ loci }) => {
       </div>
 
       {/* table */}
-      <TableComponent cols={cols} rows={filteredLoci} />
+      <Table cols={cols} rows={filteredLoci} />
     </div>
   );
 };
 
-export default Table;
+export default LociTable;

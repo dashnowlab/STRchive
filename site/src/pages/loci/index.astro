@@ -12,7 +12,7 @@ import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import { repo, repoRaw, version } from "@/layouts/meta";
-import Table from "@/loci/Table";
+import LociTable from "@/loci/LociTable";
 import ageOnset from "~/plots/age-onset.json";
 import pathSize from "~/plots/path-size.json";
 import loci from "~/STRchive-loci.json";
@@ -100,7 +100,7 @@ const cols = uniq(map(catalogs, "genome"));
       </Button>
     </div>
 
-    <Table client:load loci={loci} />
+    <LociTable client:load loci={loci} />
 
     <Button to="/loci/new" design="bubble">
       <LuPlus />
