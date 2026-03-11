@@ -194,12 +194,16 @@ Probands	6	pmid:25168903	probands:46		68 affected individuals + 1 unaffected wit
     sys.stderr.write(f"Extracting curations from {tsv_file}...\n")
     with open(tsv_file, 'r') as f:
         first_line = f.readline().strip('#').strip()
+        second_line = f.readline().strip()
     metadata = {}
     for item in first_line.split('\t'):
         key, value = item.split(':', 1)
         metadata[key.strip()] = value.strip()
 
-    df = pd.read_csv(tsv_file, sep='\t', comment='#')
+    # skip cols with missing headers
+    header_indices = [i for i, item in enumerate(second_line.split('\t')) if item.strip() != '']
+
+    df = pd.read_csv(tsv_file, sep='\t', comment='#', usecols=header_indices)
     source_columns = df.columns.tolist()
     df = df.replace(r'^\s*$', pd.NA, regex=True)
     df = df.dropna(subset=source_columns, how='all')
