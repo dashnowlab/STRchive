@@ -34,7 +34,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -47,7 +46,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "mentions that results open new questions",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -60,7 +58,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -73,7 +70,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -87,7 +83,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -100,7 +95,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -113,7 +107,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -269,8 +262,8 @@
     "Collective Evidence": 1.5,
     "Function": 1.5,
     "Singular Evidence": 6.0,
-    "Statistics": 0,
     "Functional Alteration": 0,
+    "Statistics": 0,
     "Models": 0,
     "Rescue": 0
   },
@@ -282,7 +275,7 @@
   "total_score": 9.0,
   "classification": "Moderate",
   "publication_count": 5,
-  "publication_interval_years": 8.0,
+  "publication_interval_years": 34.09,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -360,9 +353,9 @@
     "Functional Alteration": 1.0,
     "Models": 2.0,
     "Singular Evidence": 0,
-    "Collective Evidence": 0,
     "Statistics": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -382,7 +375,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -395,7 +387,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -408,7 +399,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -421,7 +411,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
@@ -439,11 +428,11 @@
   {
     "Function": 2,
     "Singular Evidence": 6.0,
-    "Collective Evidence": 0,
-    "Statistics": 0,
     "Functional Alteration": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -517,10 +506,10 @@
   {
     "Collective Evidence": 0,
     "Singular Evidence": 0,
-    "Statistics": 0,
-    "Functional Alteration": 0,
-    "Models": 0,
     "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -531,7 +520,7 @@
   "total_score": 0,
   "classification": "Refuted",
   "publication_count": 2,
-  "publication_interval_years": null,
+  "publication_interval_years": 8.65,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -540,7 +529,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "Single family",
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -553,7 +541,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -568,6 +555,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -669,33 +657,58 @@
   "Inheritance": "XR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
-    "Collective Evidence": 1.5,
+    "Collective Evidence": 2.5,
+    "Function": 1.0,
     "Functional Alteration": 1.5,
     "Models": 2.0,
     "Rescue": 0.5,
-    "Singular Evidence": 1.0,
-    "Statistics": 0,
-    "Function": 0
+    "Singular Evidence": 6,
+    "Statistics": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 4.0,
-    "Genetic Evidence": 2.5
+    "Experimental Evidence": 5.0,
+    "Genetic Evidence": 11.5
   },
-  "total_score": 6.5,
-  "classification": "Moderate",
-  "publication_count": 6,
-  "publication_interval_years": 11.85,
+  "total_score": 16.5,
+  "classification": "Definitive",
+  "publication_count": 9,
+  "publication_interval_years": 17.66,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 1.0,
+    "Score": 6.0,
     "Citation": "pmid:21204215",
     "Values": "98 probands",
     "Evidence detail": null,
     "Notes": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:9307258",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "2 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": null,
+    "Citation": "pmid:12874418",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "12 families",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -711,6 +724,18 @@
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:11889467",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "length affects severity/phenotype",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
     "category_max_score": 3
   }],
   "experimental_evidence_details": [
@@ -741,9 +766,9 @@
   {
     "Evidence type": "Non-human model organism",
     "Score": 2.0,
-    "Citation": "pmid:19587282",
+    "Citation": "pmid:19587282; pmid:11889467",
     "Values": null,
-    "Evidence detail": "mouse",
+    "Evidence detail": "mouse, zebrafish",
     "Notes": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
@@ -758,6 +783,30 @@
     "Evidence detail": null,
     "Notes": "migrating rescued in vitro",
     "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "11889467",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "transciptional repression",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "12874418; 11889467",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "on cell surface",
+    "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2
@@ -777,9 +826,9 @@
     "Functional Alteration": 1.5,
     "Singular Evidence": 1.5,
     "Statistics": 4.0,
-    "Collective Evidence": 0,
     "Models": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -789,7 +838,7 @@
   "total_score": 8.0,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 5.08,
+  "publication_interval_years": 6.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -798,7 +847,6 @@
     "Values": "1 proband",
     "Evidence detail": null,
     "Notes": " functional, de novo proband",
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -811,7 +859,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "strong bias",
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -825,7 +872,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "expression decrease +hypermethylation",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -838,7 +884,6 @@
     "Values": null,
     "Evidence detail": "1 proband",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -851,7 +896,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -865,13 +909,14 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 3,
     "Function": 2.0,
     "Singular Evidence": 6.0,
-    "Statistics": 0,
     "Functional Alteration": 0,
+    "Statistics": 0,
     "Models": 0,
     "Rescue": 0
   },
@@ -881,9 +926,9 @@
     "Genetic Evidence": 10.0
   },
   "total_score": 12.0,
-  "classification": "Moderate",
+  "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 4.59,
+  "publication_interval_years": 6.84,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -971,9 +1016,9 @@
     "Collective Evidence": 3.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
+    "Function": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Function": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -1074,7 +1119,7 @@
   "total_score": 14.5,
   "classification": "Definitive",
   "publication_count": 3,
-  "publication_interval_years": 17.33,
+  "publication_interval_years": 7.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1083,7 +1128,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "4 families",
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -1096,7 +1140,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "Association between onset and allele size",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -1109,7 +1152,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "est. LOD over 5",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -1122,7 +1164,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -1135,7 +1176,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -1149,7 +1189,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1162,7 +1201,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "Expression",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1175,7 +1213,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "Varied expression in patients + splicing",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1188,7 +1225,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1201,7 +1237,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -1214,7 +1249,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1234,8 +1268,8 @@
     "Function": 1.0,
     "Models": 2.0,
     "Singular Evidence": 1.5,
-    "Statistics": 0,
     "Functional Alteration": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -1246,7 +1280,7 @@
   "total_score": 6.0,
   "classification": "Limited",
   "publication_count": 3,
-  "publication_interval_years": 6.75,
+  "publication_interval_years": 4.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1322,8 +1356,8 @@
     "Collective Evidence": 1.0,
     "Function": 0.5,
     "Singular Evidence": 1.5,
-    "Statistics": 0,
     "Functional Alteration": 0,
+    "Statistics": 0,
     "Models": 0,
     "Rescue": 0
   },
@@ -1386,10 +1420,10 @@
   {
     "Collective Evidence": 1,
     "Singular Evidence": 2,
-    "Statistics": 0,
-    "Functional Alteration": 0,
-    "Models": 0,
     "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -1548,7 +1582,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
-  "Manual_evidence_level": "",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -1567,7 +1601,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 9,
-  "publication_interval_years": 4.02,
+  "publication_interval_years": 9.41,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1576,7 +1610,6 @@
     "Values": "probands:46",
     "Evidence detail": null,
     "Notes": "68 affected individuals + 1 unaffected with expansion but 46 affected with expansion ",
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -1589,7 +1622,6 @@
     "Values": "probands:120",
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -1602,7 +1634,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "penetrance",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -1615,7 +1646,6 @@
     "Values": "families:2; affected:4",
     "Evidence detail": null,
     "Notes": "LOD = 2.4",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -1628,7 +1658,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "4 affected in 2 families, significant fischer and t-test",
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -1641,7 +1670,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "strong associated: P = 6 × 10−26; Genotype quality score, HWE, and regression analyses",
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -1654,7 +1682,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "significant regression",
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -1667,7 +1694,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "significant regression",
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -1681,7 +1707,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "RNA binding",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1694,7 +1719,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1707,7 +1731,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "splicing evidence for both papers",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1720,7 +1743,6 @@
     "Values": null,
     "Evidence detail": "patient corneal cells",
     "Notes": "certainly studied patient cells... just doesnt say how many",
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1733,7 +1755,6 @@
     "Values": "patients: 68",
     "Evidence detail": "Leukocyte DNA ",
     "Notes": "68 affected individuals, only 46 have expansion",
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1746,7 +1767,6 @@
     "Values": null,
     "Evidence detail": "non patient corneal cells",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -1759,7 +1779,6 @@
     "Values": "controls:100",
     "Evidence detail": "humans",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -1772,7 +1791,6 @@
     "Values": "controls:16",
     "Evidence detail": "Leukocyte DNA ",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -1785,7 +1803,6 @@
     "Values": null,
     "Evidence detail": " mouse cornea",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
@@ -1798,7 +1815,6 @@
     "Values": null,
     "Evidence detail": "ASO",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Rescue",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1953,11 +1969,11 @@
   {
     "Singular Evidence": 3,
     "Statistics": 4,
-    "Collective Evidence": 0,
+    "Function": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Function": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -2002,6 +2018,7 @@
   "Inheritance": "XD",
   "Curator": "Macayla Weiner",
   "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Function": 1.5,
@@ -2009,8 +2026,8 @@
     "Models": 1.5,
     "Singular Evidence": 6.0,
     "Statistics": 5.0,
-    "Collective Evidence": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -2127,6 +2144,7 @@
   "Inheritance": "XD",
   "Curator": "Macayla Weiner",
   "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -2143,7 +2161,7 @@
     "Genetic Evidence": 12
   },
   "total_score": 14.0,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 2,
   "publication_interval_years": 0.86,
   "genetic_evidence_details": [
@@ -2234,9 +2252,9 @@
     "Functional Alteration": 1.5,
     "Models": 2.0,
     "Singular Evidence": 0,
-    "Collective Evidence": 0,
     "Statistics": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -2335,8 +2353,8 @@
     "Function": 1.0,
     "Models": 2.0,
     "Singular Evidence": 1.5,
-    "Statistics": 0,
     "Functional Alteration": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -2347,7 +2365,7 @@
   "total_score": 6.0,
   "classification": "Limited",
   "publication_count": 3,
-  "publication_interval_years": null,
+  "publication_interval_years": 1.63,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2436,7 +2454,7 @@
   "total_score": 6.0,
   "classification": "Limited",
   "publication_count": 2,
-  "publication_interval_years": null,
+  "publication_interval_years": 7.46,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2596,6 +2614,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "3/2/26",
+  "Manual_evidence_level": "",
   "category_summary":
   {
     "Collective Evidence": 1.0,
@@ -2614,7 +2633,7 @@
   "total_score": 11.5,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 4.16,
+  "publication_interval_years": 8.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2864,10 +2883,10 @@
     "Function": 1.5,
     "Functional Alteration": 1.0,
     "Singular Evidence": 6,
-    "Collective Evidence": 0,
     "Statistics": 0,
     "Models": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -2886,7 +2905,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -2899,7 +2917,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "5 patients; 24",
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -2913,7 +2930,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "transc reg",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2926,7 +2942,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "expression + hypermethylation",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2939,7 +2954,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3061,7 +3075,7 @@
   "total_score": 12.5,
   "classification": "Strong",
   "publication_count": 6,
-  "publication_interval_years": null,
+  "publication_interval_years": 0.83,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3070,7 +3084,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "36151849, one family one sporadic case. 32451610 1 kindred and characterization",
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -3083,7 +3096,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -3096,7 +3108,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "no 40693562. 39102614 family with patient cells",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -3109,7 +3120,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -3123,7 +3133,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "changes in binding specificity to LD and may induce targetting of cwellular membrane -- structural roles",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3136,7 +3145,6 @@
     "Values": null,
     "Evidence detail": "patient cells, proteins",
     "Notes": "more hydrophobicity",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3149,7 +3157,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "No impact on splicing?",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3162,7 +3169,6 @@
     "Values": null,
     "Evidence detail": "patient cells",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3175,7 +3181,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "muscle of healthy controls",
-    "Unnamed: 6": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3207,7 +3212,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 3.67,
+  "publication_interval_years": 5.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3354,7 +3359,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -3367,7 +3371,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "highly polymorphic",
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -3381,7 +3384,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "Changes in RNA-binding and translational impacts",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3394,7 +3396,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "reduced protein",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3407,7 +3408,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "expression, splicing, hypermethylation",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3420,7 +3420,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -3433,7 +3432,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "control fibroplasts",
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -3560,14 +3558,15 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 1.5,
     "Functional Alteration": 1.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Models": 0,
     "Function": 0,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -3576,9 +3575,9 @@
     "Genetic Evidence": 12
   },
   "total_score": 13.0,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 3,
-  "publication_interval_years": 0.67,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3667,7 +3666,7 @@
   "total_score": 10.0,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 1.55,
+  "publication_interval_years": 0.5,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3738,6 +3737,7 @@
   "Inheritance": "AD/AR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -3755,8 +3755,8 @@
   },
   "total_score": 15.0,
   "classification": "Definitive",
-  "publication_count": 5,
-  "publication_interval_years": 18.98,
+  "publication_count": 6,
+  "publication_interval_years": 24.24,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3805,6 +3805,18 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 0.0,
+    "Citation": "pmid:37090934; pmid:37371433",
+    "Values": "Disputed with pmid:37371433 evidence saying no relationship",
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
   }],
   "experimental_evidence_details": [
   {
@@ -3976,14 +3988,15 @@
   "Inheritance": "XR",
   "Curator": "Laurel Hiatt, Macayla Weiner",
   "Date": "8/18/2025",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 1,
     "Singular Evidence": 6,
     "Statistics": 6,
+    "Function": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Function": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -3992,9 +4005,9 @@
     "Experimental Evidence": 0
   },
   "total_score": 12,
-  "classification": "Moderate",
+  "classification": "Definitive",
   "publication_count": 2,
-  "publication_interval_years": null,
+  "publication_interval_years": 4.75,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4059,7 +4072,7 @@
   "total_score": 14.0,
   "classification": "Strong",
   "publication_count": 5,
-  "publication_interval_years": null,
+  "publication_interval_years": 1.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4166,6 +4179,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -4184,7 +4198,7 @@
   "total_score": 16.5,
   "classification": "Definitive",
   "publication_count": 6,
-  "publication_interval_years": 28.94,
+  "publication_interval_years": 34.02,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4315,6 +4329,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laural Hiatt",
   "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -4495,7 +4510,7 @@
   "total_score": 13.0,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 23.5,
+  "publication_interval_years": 24.5,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4504,7 +4519,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -4517,7 +4531,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -4531,7 +4544,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4544,7 +4556,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4557,7 +4568,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4570,7 +4580,6 @@
     "Values": null,
     "Evidence detail": "Epigenetic change",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4583,7 +4592,6 @@
     "Values": null,
     "Evidence detail": "splicing",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4596,7 +4604,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4609,7 +4616,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -4622,7 +4628,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
@@ -4636,6 +4641,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2,
@@ -4652,7 +4658,7 @@
     "Genetic Evidence": 12
   },
   "total_score": 18,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 5,
   "publication_interval_years": null,
   "genetic_evidence_details": [
@@ -4749,6 +4755,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -4765,9 +4772,9 @@
     "Genetic Evidence": 12
   },
   "total_score": 18,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 6,
-  "publication_interval_years": 2.25,
+  "publication_interval_years": 30.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4916,7 +4923,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 13.2,
+  "publication_interval_years": 13.33,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5035,7 +5042,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/11/2025",
-  "Manual_evidence_level": "",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -5054,7 +5061,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 13.33,
+  "publication_interval_years": 5.83,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5063,7 +5070,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -5076,7 +5082,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -5089,7 +5094,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -5102,7 +5106,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -5116,7 +5119,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5129,7 +5131,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5142,7 +5143,6 @@
     "Values": null,
     "Evidence detail": "Epigenetic change",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5155,7 +5155,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5168,7 +5167,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -5182,6 +5180,7 @@
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt",
   "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -5198,7 +5197,7 @@
     "Genetic Evidence": 11.5
   },
   "total_score": 17.5,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 3,
   "publication_interval_years": 1.57,
   "genetic_evidence_details": [
@@ -5359,9 +5358,9 @@
     "Genetic Evidence": 9.5
   },
   "total_score": 13.5,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 0.66,
+  "publication_interval_years": 21.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5456,7 +5455,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/2025",
-  "Manual_evidence_level": "",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -5475,7 +5474,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 28.25,
+  "publication_interval_years": 19.53,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5484,7 +5483,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -5497,7 +5495,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -5510,7 +5507,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -5523,7 +5519,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -5537,7 +5532,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5550,7 +5544,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5563,7 +5556,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "transc silencing",
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5576,7 +5568,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5589,7 +5580,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5602,7 +5592,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5615,7 +5604,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
@@ -5628,7 +5616,6 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
@@ -5641,7 +5628,6 @@
     "Values": null,
     "Evidence detail": "mouse",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
@@ -5654,7 +5640,6 @@
     "Values": null,
     "Evidence detail": "mouse",
     "Notes": null,
-    "Unnamed: 6": null,
     "evidence_category": "Rescue",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
@@ -5668,6 +5653,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -5684,9 +5670,9 @@
     "Genetic Evidence": 12
   },
   "total_score": 18.0,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": null,
+  "publication_interval_years": 11.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5829,6 +5815,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Function": 2,
@@ -5836,8 +5823,8 @@
     "Models": 3.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Collective Evidence": 0,
-    "Rescue": 0
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -5847,7 +5834,7 @@
   "total_score": 18.0,
   "classification": "Definitive",
   "publication_count": 3,
-  "publication_interval_years": 7.25,
+  "publication_interval_years": 15.36,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5966,6 +5953,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -5984,7 +5972,7 @@
   "total_score": 14.5,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 22.89,
+  "publication_interval_years": 16.04,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6107,11 +6095,11 @@
   {
     "Models": 1,
     "Singular Evidence": 1,
-    "Collective Evidence": 0,
-    "Statistics": 0,
-    "Functional Alteration": 0,
     "Function": 0,
-    "Rescue": 0
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -6121,7 +6109,7 @@
   "total_score": 2,
   "classification": "Limited",
   "publication_count": 2,
-  "publication_interval_years": null,
+  "publication_interval_years": 4.58,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6159,12 +6147,12 @@
   "category_summary":
   {
     "Singular Evidence": 3.5,
-    "Collective Evidence": 0,
-    "Statistics": 0,
-    "Functional Alteration": 0,
-    "Models": 0,
     "Function": 0,
-    "Rescue": 0
+    "Functional Alteration": 0,
+    "Statistics": 0,
+    "Models": 0,
+    "Rescue": 0,
+    "Collective Evidence": 0
   },
   "supercategory_summary":
   {
@@ -6192,11 +6180,12 @@
 },
 {
   "Disease_ID": "XDP",
-  "Gene": "Taf1",
+  "Gene": "TAF1",
   "Locus_ID": "XDP_TAF1",
   "Inheritance": "XR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/2025",
+  "Manual_evidence_level": "Definitive",
   "category_summary":
   {
     "Collective Evidence": 3,
