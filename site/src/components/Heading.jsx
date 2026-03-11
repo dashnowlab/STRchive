@@ -11,18 +11,17 @@ const Heading = ({ level, id: explicitId, children, className, ...props }) => {
   /** heading level */
   const Component = `h${level}`;
 
-  children =
+  /** anchor hash */
+  const id = slugify(
     children &&
-    children.props &&
-    children.props.value &&
-    children.props.value.toString
+      children.props &&
+      children.props.value &&
+      children.props.value.toString
       ? /** being rendered by an astro component */
         stripHtml(children.props.value.toString()).result
       : /** being rendered by another react component */
-        onlyText(children);
-
-  /** anchor hash */
-  const id = slugify(children);
+        onlyText(children),
+  );
 
   return (
     <Component
