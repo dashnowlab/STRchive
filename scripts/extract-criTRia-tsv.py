@@ -311,6 +311,9 @@ def summarize_curations(locus_id, curations):
                 if publication_count >= class_info['min_pubs'] and tmp_publication_interval_years >= class_info['min_years']:
                     classification = class_name
                     break
+        # If there's a value in Manual_evidence_level, use that as the classification instead of the calculated one
+        if 'Manual_evidence_level' in metadata and metadata['Manual_evidence_level']:
+            classification = metadata['Manual_evidence_level']
 
         # Collect the Genetic and Experimental evidence details for the curation
         genetic_evidence_details = df[df['evidence_supercategory'] == 'Genetic Evidence'].to_dict(orient='records')
