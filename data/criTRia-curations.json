@@ -14,8 +14,8 @@
     "Functional Alteration": 1.5,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -133,9 +133,9 @@
     "Function": 2,
     "Functional Alteration": 2.0,
     "Singular Evidence": 6,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -145,7 +145,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 6,
-  "publication_interval_years": 28.17,
+  "publication_interval_years": 23.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -269,10 +269,10 @@
     "Collective Evidence": 1.5,
     "Function": 1.5,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -282,7 +282,7 @@
   "total_score": 9.0,
   "classification": "Moderate",
   "publication_count": 5,
-  "publication_interval_years": 34.09,
+  "publication_interval_years": 8.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -359,10 +359,10 @@
     "Function": 1.0,
     "Functional Alteration": 1.0,
     "Models": 2.0,
-    "Collective Evidence": 0,
-    "Rescue": 0,
     "Singular Evidence": 0,
-    "Statistics": 0
+    "Collective Evidence": 0,
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -440,10 +440,10 @@
     "Function": 2,
     "Singular Evidence": 6.0,
     "Collective Evidence": 0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -453,7 +453,7 @@
   "total_score": 8.5,
   "classification": "Moderate",
   "publication_count": 2,
-  "publication_interval_years": 4.83,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -517,11 +517,11 @@
   {
     "Collective Evidence": 0,
     "Singular Evidence": 0,
-    "Rescue": 0,
-    "Function": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -531,7 +531,7 @@
   "total_score": 0,
   "classification": "Refuted",
   "publication_count": 2,
-  "publication_interval_years": 8.65,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -575,8 +575,8 @@
     "Functional Alteration": 1.0,
     "Models": 2.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -676,8 +676,8 @@
     "Models": 2.0,
     "Rescue": 0.5,
     "Singular Evidence": 1.0,
-    "Function": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Function": 0
   },
   "supercategory_summary":
   {
@@ -687,7 +687,7 @@
   "total_score": 6.5,
   "classification": "Moderate",
   "publication_count": 6,
-  "publication_interval_years": 17.66,
+  "publication_interval_years": 11.85,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -778,8 +778,8 @@
     "Singular Evidence": 1.5,
     "Statistics": 4.0,
     "Collective Evidence": 0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -789,7 +789,7 @@
   "total_score": 8.0,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 6.67,
+  "publication_interval_years": 5.08,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -870,10 +870,10 @@
     "Collective Evidence": 3,
     "Function": 2.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -883,7 +883,7 @@
   "total_score": 12.0,
   "classification": "Moderate",
   "publication_count": 4,
-  "publication_interval_years": 6.84,
+  "publication_interval_years": 4.59,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -971,10 +971,10 @@
     "Collective Evidence": 3.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Rescue": 0,
-    "Function": 0,
     "Functional Alteration": 0,
-    "Models": 0
+    "Models": 0,
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -1063,8 +1063,8 @@
     "Functional Alteration": 2,
     "Singular Evidence": 1.5,
     "Statistics": 6.0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -1234,9 +1234,9 @@
     "Function": 1.0,
     "Models": 2.0,
     "Singular Evidence": 1.5,
-    "Rescue": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -1246,7 +1246,7 @@
   "total_score": 6.0,
   "classification": "Limited",
   "publication_count": 3,
-  "publication_interval_years": 11.0,
+  "publication_interval_years": 6.75,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1322,10 +1322,10 @@
     "Collective Evidence": 1.0,
     "Function": 0.5,
     "Singular Evidence": 1.5,
-    "Rescue": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -1386,11 +1386,11 @@
   {
     "Collective Evidence": 1,
     "Singular Evidence": 2,
-    "Rescue": 0,
-    "Function": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -1441,9 +1441,9 @@
     "Function": 1.5,
     "Functional Alteration": 1.5,
     "Singular Evidence": 1.5,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -1567,7 +1567,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 9,
-  "publication_interval_years": 8.76,
+  "publication_interval_years": 4.02,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1954,10 +1954,10 @@
     "Singular Evidence": 3,
     "Statistics": 4,
     "Collective Evidence": 0,
-    "Rescue": 0,
-    "Function": 0,
     "Functional Alteration": 0,
-    "Models": 0
+    "Models": 0,
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2020,7 +2020,7 @@
   "total_score": 14.5,
   "classification": "Definitive",
   "publication_count": 8,
-  "publication_interval_years": 6.67,
+  "publication_interval_years": 28.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2121,9 +2121,9 @@
   }]
 },
 {
-  "Disease_ID": "FXTAS/POF1",
+  "Disease_ID": "FXTAS,POF1",
   "Gene": "FMR1",
-  "Locus_ID": "FXTAS/POF1_FMR1",
+  "Locus_ID": "FXTAS,POF1_FMR1",
   "Inheritance": "XD",
   "Curator": "Macayla Weiner",
   "Date": "8/18/2025",
@@ -2134,8 +2134,8 @@
     "Functional Alteration": 1.5,
     "Singular Evidence": 6.0,
     "Statistics": 12.0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2233,10 +2233,10 @@
     "Function": 1.0,
     "Functional Alteration": 1.5,
     "Models": 2.0,
-    "Collective Evidence": 0,
-    "Rescue": 0,
     "Singular Evidence": 0,
-    "Statistics": 0
+    "Collective Evidence": 0,
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2335,9 +2335,9 @@
     "Function": 1.0,
     "Models": 2.0,
     "Singular Evidence": 1.5,
-    "Rescue": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2347,7 +2347,7 @@
   "total_score": 6.0,
   "classification": "Limited",
   "publication_count": 3,
-  "publication_interval_years": 1.63,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2425,8 +2425,8 @@
     "Functional Alteration": 1.0,
     "Models": 2.0,
     "Singular Evidence": 0.5,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2525,9 +2525,9 @@
     "Function": 0.5,
     "Functional Alteration": 2.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2603,8 +2603,8 @@
     "Functional Alteration": 1.0,
     "Models": 2.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2614,7 +2614,7 @@
   "total_score": 11.5,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 8.0,
+  "publication_interval_years": 4.16,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2716,8 +2716,8 @@
     "Functional Alteration": 1.5,
     "Models": 3.0,
     "Singular Evidence": 2.5,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2865,9 +2865,9 @@
     "Functional Alteration": 1.0,
     "Singular Evidence": 6,
     "Collective Evidence": 0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -2960,8 +2960,8 @@
     "Functional Alteration": 1.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3050,8 +3050,8 @@
     "Functional Alteration": 1.0,
     "Models": 1.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3061,7 +3061,7 @@
   "total_score": 12.5,
   "classification": "Strong",
   "publication_count": 6,
-  "publication_interval_years": 2.92,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3207,7 +3207,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 5.0,
+  "publication_interval_years": 3.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3333,9 +3333,9 @@
     "Function": 2,
     "Functional Alteration": 1.5,
     "Singular Evidence": 1.5,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3453,9 +3453,9 @@
     "Function": 1.0,
     "Functional Alteration": 1.5,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3566,9 +3566,9 @@
     "Functional Alteration": 1.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Rescue": 0,
+    "Models": 0,
     "Function": 0,
-    "Models": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3578,7 +3578,7 @@
   "total_score": 13.0,
   "classification": "Strong",
   "publication_count": 3,
-  "publication_interval_years": 2.59,
+  "publication_interval_years": 0.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3655,9 +3655,9 @@
     "Function": 1.5,
     "Functional Alteration": 1.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3667,7 +3667,7 @@
   "total_score": 10.0,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 2.05,
+  "publication_interval_years": 1.55,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3745,8 +3745,8 @@
     "Functional Alteration": 1.5,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3756,7 +3756,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 24.24,
+  "publication_interval_years": 18.98,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3881,9 +3881,9 @@
     "Function": 1.5,
     "Functional Alteration": 1.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3981,10 +3981,10 @@
     "Collective Evidence": 1,
     "Singular Evidence": 6,
     "Statistics": 6,
-    "Rescue": 0,
-    "Function": 0,
     "Functional Alteration": 0,
-    "Models": 0
+    "Models": 0,
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -3994,7 +3994,7 @@
   "total_score": 12,
   "classification": "Moderate",
   "publication_count": 2,
-  "publication_interval_years": 4.75,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4047,9 +4047,9 @@
     "Function": 1.0,
     "Functional Alteration": 2,
     "Singular Evidence": 4.5,
-    "Rescue": 0,
+    "Statistics": 0,
     "Models": 0,
-    "Statistics": 0
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -4057,9 +4057,9 @@
     "Genetic Evidence": 10.0
   },
   "total_score": 14.0,
-  "classification": "Definitive",
+  "classification": "Strong",
   "publication_count": 5,
-  "publication_interval_years": 10.75,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4184,7 +4184,7 @@
   "total_score": 16.5,
   "classification": "Definitive",
   "publication_count": 6,
-  "publication_interval_years": 34.02,
+  "publication_interval_years": 28.94,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4484,8 +4484,8 @@
     "Functional Alteration": 1.5,
     "Models": 2.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -4495,7 +4495,7 @@
   "total_score": 13.0,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 24.58,
+  "publication_interval_years": 23.5,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4652,9 +4652,9 @@
     "Genetic Evidence": 12
   },
   "total_score": 18,
-  "classification": "Definitive",
+  "classification": "Strong",
   "publication_count": 5,
-  "publication_interval_years": 4.74,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4765,9 +4765,9 @@
     "Genetic Evidence": 12
   },
   "total_score": 18,
-  "classification": "Definitive",
+  "classification": "Strong",
   "publication_count": 6,
-  "publication_interval_years": 30.25,
+  "publication_interval_years": 2.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4916,7 +4916,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 13.33,
+  "publication_interval_years": 13.2,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5043,8 +5043,8 @@
     "Functional Alteration": 1.5,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Rescue": 0,
-    "Models": 0
+    "Models": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -5054,7 +5054,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 13.75,
+  "publication_interval_years": 13.33,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5350,8 +5350,8 @@
     "Functional Alteration": 1.0,
     "Models": 1.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -5684,9 +5684,9 @@
     "Genetic Evidence": 12
   },
   "total_score": 18.0,
-  "classification": "Definitive",
+  "classification": "Strong",
   "publication_count": 4,
-  "publication_interval_years": 11.25,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5847,7 +5847,7 @@
   "total_score": 18.0,
   "classification": "Definitive",
   "publication_count": 3,
-  "publication_interval_years": 22.61,
+  "publication_interval_years": 7.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5973,8 +5973,8 @@
     "Functional Alteration": 1.5,
     "Models": 4.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -6108,10 +6108,10 @@
     "Models": 1,
     "Singular Evidence": 1,
     "Collective Evidence": 0,
-    "Rescue": 0,
-    "Function": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
-    "Statistics": 0
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -6121,7 +6121,7 @@
   "total_score": 2,
   "classification": "Limited",
   "publication_count": 2,
-  "publication_interval_years": 4.58,
+  "publication_interval_years": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6160,11 +6160,11 @@
   {
     "Singular Evidence": 3.5,
     "Collective Evidence": 0,
-    "Rescue": 0,
-    "Function": 0,
+    "Statistics": 0,
     "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0
+    "Function": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -6204,8 +6204,8 @@
     "Functional Alteration": 0.5,
     "Models": 1.0,
     "Singular Evidence": 6.0,
-    "Rescue": 0,
-    "Statistics": 0
+    "Statistics": 0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
