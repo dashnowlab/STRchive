@@ -29,6 +29,18 @@
       "examples": ["RFC1"],
       "type": ["string"]
     },
+    "evidence": {
+      "section": "Overview",
+      "title": "Level of Evidence",
+      "description": "Categorical level of evidence for the association between the locus and disease based on criTRia or similar curation framework",
+      "type": "array",
+      "items": {
+        "title": "",
+        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", null],
+        "type": "string",
+        "combobox": true
+      }
+    },
     "chrom": {
       "section": "Locus",
       "title": "Chromosome",
@@ -107,6 +119,19 @@
         "title": "Type",
         "type": ["string", "null"],
         "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT"]
+      }
+    },
+    "association_type": {
+      "section": "Disease",
+      "title": "Association Type",
+      "description": "Type of association between the locus and disease. Mendelian indicates a causal relationship where the repeat expansion is sufficient to cause disease. Risk indicates that the repeat expansion is a risk factor for the disease but not sufficient to cause disease on its own. Modifier indicates that the repeat expansion modifies the phenotype of a disease caused by another variant, e.g. by affecting age of onset or severity.",
+      "examples": ["Mendelian"],
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "Type",
+        "type": ["string", "null"],
+        "enum": ["Mendelian", "Risk", "Modifier"]
       }
     },
     "disease_description": {
@@ -700,6 +725,7 @@
     "id",
     "disease_id",
     "gene",
+    "evidence",
     "chrom",
     "start_hg38",
     "stop_hg38",
@@ -708,6 +734,7 @@
     "start_t2t",
     "stop_t2t",
     "disease",
+    "association_type",
     "inheritance",
     "disease_description",
     "hpo_terms",
