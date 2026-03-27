@@ -293,11 +293,11 @@
 {
   "LocusId": "SCA17_TBP",
   "ReferenceRegion": "chr6:171935458-171935569",
-  "LocusStructure": "(GCA)*",
+  "LocusStructure": "(CAG)*",
   "VariantType": "Repeat",
   "HGNCId": null,
   "InheritanceMode": ["AD"],
-  "DisplayRU": "GCA",
+  "DisplayRU": "CAG",
   "Disease": "SCA17",
   "NormalMax": 40,
   "PathologicMin": 49,
@@ -485,7 +485,7 @@
   "InheritanceMode": ["AD", "AR"],
   "DisplayRU": "CTG",
   "Disease": "SCA2",
-  "NormalMax": 30,
+  "NormalMax": 28,
   "PathologicMin": 35,
   "Gene": "ATXN2"
 },
