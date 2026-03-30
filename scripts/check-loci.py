@@ -23,6 +23,8 @@ list_fields = [
     "benign_motif_gene_orientation",
     "unknown_motif_reference_orientation",
     "unknown_motif_gene_orientation",
+    "interruption_reference_orientation",
+    "interruption_gene_orientation",
     "inheritance",
     "omim",
     "stripy",
@@ -165,7 +167,8 @@ def check_motif_orientation(record):
     field_pairs = [
         ('pathogenic_motif_reference_orientation', 'pathogenic_motif_gene_orientation'),
         ('benign_motif_reference_orientation', 'benign_motif_gene_orientation'),
-        ('unknown_motif_reference_orientation', 'unknown_motif_gene_orientation')
+        ('unknown_motif_reference_orientation', 'unknown_motif_gene_orientation'),
+        ('interruption_reference_orientation', 'interruption_gene_orientation')
     ]
     for ref_field, gene_field in field_pairs:
         if record[ref_field] is None:
