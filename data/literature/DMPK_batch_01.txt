@@ -1,4 +1,799 @@
 
+PMID- 41762523
+OWN - NLM
+STAT- Publisher
+LR  - 20260228
+IS  - 2352-3964 (Electronic)
+IS  - 2352-3964 (Linking)
+VI  - 125
+DP  - 2026 Feb 26
+TI  - Short tandem repeat expansions in patients with neurodegenerative dementia.
+PG  - 106190
+LID - S2352-3964(26)00072-1 [pii]
+LID - 10.1016/j.ebiom.2026.106190 [doi]
+AB  - BACKGROUND: Due to the overlapping clinical features of neurodegenerative 
+      dementia (NDD)-including Alzheimer's disease (AD), frontotemporal dementia (FTD), 
+      dementia with Lewy bodies (DLB), and progressive supranuclear palsy (PSP), 
+      accurate diagnosis remains challenging in early stages. Multiple dementias can be 
+      caused by short tandem repeat (STR) expansions. However, systematic investigation 
+      of known pathogenic STRs in large dementia cohorts remains lacking. METHODS: We 
+      used ExpansionHunter (EH) to assess 22 neurodegenerative disease-associated STRs 
+      in whole-genome sequencing (WGS) data from 950 patients with AD, 222 patients 
+      with FTD, 165 patients with DLB, 231 patients with PSP, and 1522 cognitively 
+      normal controls. Repeat primed-polymerase chain reaction (RP-PCR) was performed 
+      to validate EH calls that exceeded the intermediate thresholds of STR. We also 
+      attempted to use ExpansionHunter Denovo (EHDn) to detect C9orf72 expansions 
+      missed by EH. FINDINGS: EHDn improved the detection rate of C9orf72 expansions. 
+      After sample quality control, 33 PCR-validated pathogenic expansions were 
+      identified in nine genes (C9orf72, ATXN8OS, NOTCH2NLC, HTT, FMR1, DMPK, AR, 
+      CACNA1A, and PPP2R2B) among 1559 patients with NDD, accounting for 2.12% of 
+      cases. Burden-based logistic regression analyses demonstrated that the presence 
+      of pathogenic STR expansions was significantly associated with NDD status (OR = 
+      3.57, p = 4.70 x 10(-2)). Additionally, intermediate-length TBP alleles showed a 
+      nominal enrichment in PSP compared with controls (2.61% vs 0.54%; OR = 6.25, p = 
+      2.00 x 10(-2)). INTERPRETATION: Our findings provide evidence for the clinical 
+      pleiotropy of STRs in NDD and their involvement in NDD pathogenesis. FUNDING: 
+      This study was supported by the National Natural Science Foundation of 
+      China(U22A20300, 82502244, 823714434, 82071216), the National Key R&D Program of 
+      China(2023YFC3603700), STI2030-Major Projects(2021ZD0201803), Outstanding Youth 
+      Fund of Hunan Provincial Natural Science Foundation(2024JJ2097), Youth Fund of 
+      Hunan Provincial Natural Science Foundation(2025JJ60696), Hunan Health Commission 
+      Grant(20232460), Postdoctoral Fellowship Program of CPSF(GZC20233185), China 
+      Postdoctoral Science Foundation (2025M772318), and the Scientific Research 
+      Program of FuRong Laboratory (2024PT5108).
+CI  - Copyright (c) 2026 The Author(s). Published by Elsevier B.V. All rights reserved.
+FAU - Zhu, Yuan
+AU  - Zhu Y
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Xiao, Xuewen
+AU  - Xiao X
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Liu, Yiliang
+AU  - Liu Y
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Wang, Zheng
+AU  - Wang Z
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China.
+FAU - Luo, Tengfei
+AU  - Luo T
+AD  - National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China.
+FAU - Xu, Tianyan
+AU  - Xu T
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Yang, Qijie
+AU  - Yang Q
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Hao, Xiaoli
+AU  - Hao X
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Zhang, Cong
+AU  - Zhang C
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Zhang, Sizhe
+AU  - Zhang S
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China.
+FAU - Luo, Shilin
+AU  - Luo S
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China.
+FAU - Zhou, Yafang
+AU  - Zhou Y
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Liao, Xinxin
+AU  - Liao X
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Tian, Yun
+AU  - Tian Y
+AD  - Engineering Research Center of Hunan Province in Cognitive Impairment Disorders, 
+      Central South University, Changsha, China; Department of Geriatrics, Xiangya 
+      Hospital, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Weng, Ling
+AU  - Weng L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Fang, Liangjuan
+AU  - Fang L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Tang, Beisha
+AU  - Tang B
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Engineering Research Center of Hunan Province in 
+      Cognitive Impairment Disorders, Central South University, Changsha, China; Hunan 
+      International Scientific and Technological Cooperation Base of Neurodegenerative 
+      and Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Jiao, Bin
+AU  - Jiao B
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; Engineering Research Center of Hunan Province in Cognitive Impairment 
+      Disorders, Central South University, Changsha, China; Hunan International 
+      Scientific and Technological Cooperation Base of Neurodegenerative and 
+      Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China.
+FAU - Li, Jinchen
+AU  - Li J
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Bioinformatics Center, Furong Laboratory and Xiangya 
+      Hospital, Central South University, Changsha, China. Electronic address: 
+      lijinchen@csu.edu.cn.
+FAU - Shen, Lu
+AU  - Shen L
+AD  - Department of Neurology, Xiangya Hospital, Central South University, Changsha, 
+      China; National Clinical Research Center for Geriatric Disorders, Central South 
+      University, Changsha, China; Engineering Research Center of Hunan Province in 
+      Cognitive Impairment Disorders, Central South University, Changsha, China; Hunan 
+      International Scientific and Technological Cooperation Base of Neurodegenerative 
+      and Neurogenetic Diseases, Changsha, China; Key Laboratory of Hunan Province in 
+      Neurodegenerative Disorders, Central South University, Changsha, China; 
+      Bioinformatics Center, Furong Laboratory and Xiangya Hospital, Central South 
+      University, Changsha, China; FuRong Laboratory, Changsha, Hunan, China. 
+      Electronic address: shenlu@csu.edu.cn.
+LA  - eng
+PT  - Journal Article
+DEP - 20260226
+PL  - Netherlands
+TA  - EBioMedicine
+JT  - EBioMedicine
+JID - 101647039
+SB  - IM
+OTO - NOTNLM
+OT  - C9orf72 expansion
+OT  - Neurodegenerative dementia
+OT  - Short tandem repeat (STR)
+OT  - TBP repeat
+OT  - Whole-genome sequencing (WGS)
+COIS- Declaration of interests All authors declare no financial or non-financial 
+      competing interests.
+EDAT- 2026/02/28 12:54
+MHDA- 2026/02/28 12:54
+CRDT- 2026/02/28 11:39
+PHST- 2025/10/28 00:00 [received]
+PHST- 2026/02/12 00:00 [revised]
+PHST- 2026/02/12 00:00 [accepted]
+PHST- 2026/02/28 12:54 [medline]
+PHST- 2026/02/28 12:54 [pubmed]
+PHST- 2026/02/28 11:39 [entrez]
+AID - S2352-3964(26)00072-1 [pii]
+AID - 10.1016/j.ebiom.2026.106190 [doi]
+PST - aheadofprint
+SO  - EBioMedicine. 2026 Feb 26;125:106190. doi: 10.1016/j.ebiom.2026.106190.
+
+PMID- 41722569
+OWN - NLM
+STAT- Publisher
+LR  - 20260221
+IS  - 1537-6605 (Electronic)
+IS  - 0002-9297 (Linking)
+DP  - 2026 Feb 20
+TI  - Enhanced muscle uptake of chemically optimized miR-23b antisense oligonucleotides 
+      as lead compounds for myotonic dystrophy type 1.
+LID - S0002-9297(26)00060-1 [pii]
+LID - 10.1016/j.ajhg.2026.01.016 [doi]
+AB  - Myotonic dystrophy type 1 (DM1) is a multisystemic disorder caused by CTG repeat 
+      expansions in DM1 protein kinase (DMPK). Mutant transcripts containing expanded 
+      CUG repeats form ribonuclear foci that sequester muscleblind-like (MBNL) splicing 
+      regulator proteins, key regulators of RNA splicing and metabolism. This 
+      functional depletion leads to widespread mis-splicing and persistence of fetal 
+      transcript profiles, which underlie muscle weakness, myotonia, and muscle 
+      atrophy. In addition, miR-23b is upregulated in DM1 muscle and further represses 
+      MBNL1 translation, amplifying molecular defects. We developed chemically 
+      optimized microRNA (miRNA)-targeting antisense oligonucleotides (antimiRs) to 
+      inhibit miR-23b and restore functional MBNL1 levels. Using a multi-step screening 
+      process, we evaluated antimiRs with varying sequences, lengths, chemical 
+      modifications, and lipid conjugations. A key optimization was a 3'-oleic acid 
+      conjugation combined with specific chemical modifications, which enhanced muscle 
+      uptake and efficacy. Lead candidates showed strong activity in preclinical models 
+      (human skeletal actin [HSA](LR) and DMSXL mice and human myoblasts), increasing 
+      MBNL1 levels, correcting mis-splicing, improving muscle strength, and reducing 
+      myotonia. They also exhibited efficient biodistribution to skeletal muscle, a 
+      critical DM1-affected tissue. In vitro toxicology indicated a favorable safety 
+      profile with minimal immune or renal toxicity. The antimiR mechanism was 
+      conserved in rat and pig fibroblasts. Overall, two lead antimiRs emerged as 
+      promising therapeutic candidates for DM1, with improved pharmacokinetics, tissue 
+      targeting, and safety, supporting the potential of microRNA-based approaches to 
+      correct key molecular defects in this disorder.
+CI  - Copyright (c) 2026 The Authors. Published by Elsevier Inc. All rights reserved.
+FAU - Gonzalez-Martinez, Irene
+AU  - Gonzalez-Martinez I
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain; CIBERER, ISCIII, Av. Monforte de Lemos 3-5, 28029 Madrid, 
+      Spain.
+FAU - Cerro-Herreros, Estefania
+AU  - Cerro-Herreros E
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain.
+FAU - Carrascosa-Saez, Marc
+AU  - Carrascosa-Saez M
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Garcia-Rey, Andrea
+AU  - Garcia-Rey A
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain.
+FAU - Piqueras-Losilla, Diego
+AU  - Piqueras-Losilla D
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Colom-Rodrigo, Anna
+AU  - Colom-Rodrigo A
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Moreno, Nerea
+AU  - Moreno N
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain; CIBERER, ISCIII, Av. Monforte de Lemos 3-5, 28029 Madrid, 
+      Spain.
+FAU - Chakraborty, Mouli
+AU  - Chakraborty M
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Huguet-Lachon, Aline
+AU  - Huguet-Lachon A
+AD  - Sorbonne Universite, INSERM, Institut de Myologie, Centre de Recherche en 
+      Myologie, Paris, France.
+FAU - Gonzalez-Barriga, Anchel
+AU  - Gonzalez-Barriga A
+AD  - Sorbonne Universite, INSERM, Institut de Myologie, Centre de Recherche en 
+      Myologie, Paris, France.
+FAU - Naldaiz-Gastesi, Neia
+AU  - Naldaiz-Gastesi N
+AD  - Biodonostia-BioGipuzkoa, Neurosciences Area, Neuromuscular Diseases Laboratory, 
+      San Sebastian, Spain; Department of Neurology, Hospital Universitario Donostia, 
+      OSAKIDETZA, San Sebastian, Spain; CIBERNED, ISCIII, Madrid, Spain.
+FAU - Dehesa, Martxel
+AU  - Dehesa M
+AD  - Biodonostia-BioGipuzkoa, Neurosciences Area, Neuromuscular Diseases Laboratory, 
+      San Sebastian, Spain; Department of Neurology, Hospital Universitario Donostia, 
+      OSAKIDETZA, San Sebastian, Spain; CIBERNED, ISCIII, Madrid, Spain.
+FAU - Diaz-Maqueda, Ana
+AU  - Diaz-Maqueda A
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Barquero, Nuria
+AU  - Barquero N
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Varela, Miguel A
+AU  - Varela MA
+AD  - Department of Paediatrics, Institute of Developmental and Regenerative Medicine 
+      (IDRM), University of Oxford, Oxford, UK; MDUK Oxford Neuromuscular Centre, 
+      University of Oxford, Oxford, UK.
+FAU - Lopez de Munain, Adolfo
+AU  - Lopez de Munain A
+AD  - Biodonostia-BioGipuzkoa, Neurosciences Area, Neuromuscular Diseases Laboratory, 
+      San Sebastian, Spain; Department of Neurology, Hospital Universitario Donostia, 
+      OSAKIDETZA, San Sebastian, Spain; CIBERNED, ISCIII, Madrid, Spain; Department of 
+      Neurosciences, University of the Basque Country, San Sebastian, Spain; Faculty of 
+      Health Sciences, University of Deusto, Bilbao, Spain.
+FAU - Eritja, Ramon
+AU  - Eritja R
+AD  - Nucleic Acids Chemistry Group, Institute for Advanced Chemistry of Catalonia 
+      (IQAC-CSIC), Barcelona, Spain; Networking Center on Bioengineering, Biomaterials 
+      and Nanomedicine (CIBER-BBN), Barcelona, Spain.
+FAU - Gourdon, Genevieve
+AU  - Gourdon G
+AD  - Sorbonne Universite, INSERM, Institut de Myologie, Centre de Recherche en 
+      Myologie, Paris, France.
+FAU - Lopez-Castel, Arturo
+AU  - Lopez-Castel A
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain; CIBERER, ISCIII, Av. Monforte de Lemos 3-5, 28029 Madrid, 
+      Spain.
+FAU - Perez-Alonso, Manuel
+AU  - Perez-Alonso M
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain; CIBERER, ISCIII, Av. Monforte de Lemos 3-5, 28029 Madrid, 
+      Spain.
+FAU - Llamusi, Beatriz
+AU  - Llamusi B
+AD  - ARTHEx Biotech, Centro de Investigacion Principe Felipe (CIPF), Valencia, Spain.
+FAU - Artero, Ruben
+AU  - Artero R
+AD  - Human Translational Genomics Group, University Institute for Biotechnology and 
+      Biomedicine (BIOTECMED), University of Valencia, Av. Dr. Moliner 50, 46100 
+      Valencia, Spain; INCLIVA Biomedical Research Institute, Av. Menendez Pelayo 4, 
+      46010 Valencia, Spain; CIBERER, ISCIII, Av. Monforte de Lemos 3-5, 28029 Madrid, 
+      Spain. Electronic address: ruben.artero@uv.es.
+LA  - eng
+PT  - Journal Article
+DEP - 20260220
+PL  - United States
+TA  - Am J Hum Genet
+JT  - American journal of human genetics
+JID - 0370475
+SB  - IM
+OTO - NOTNLM
+OT  - MBNL
+OT  - antisense oligonucleotides
+OT  - muscle uptake
+OT  - myotonic dystrophy
+OT  - oleic acid conjugate
+COIS- Declaration of interests B.L. and R.A. are founders, shareholders, and CSO and 
+      scientific advisor, respectively, of Arthex Biotech. B.L. and E.C.-H. are 
+      employees of Arthex Biotech. B.L., E.C.-H., and R.A. are co-inventors on patents 
+      PCT/EP2017/073685 ("Modulation of microRNAs against myotonic dystrophy type 1 and 
+      antagonists of microRNAs therefor") and, along with I.G.-M., EP22382493 
+      ("Oligonucleotides conjugated to oleic acid and uses thereof"), currently 
+      licensed to Arthex Biotech.
+EDAT- 2026/02/22 05:35
+MHDA- 2026/02/22 05:35
+CRDT- 2026/02/21 18:42
+PHST- 2025/07/04 00:00 [received]
+PHST- 2026/01/28 00:00 [revised]
+PHST- 2026/01/29 00:00 [accepted]
+PHST- 2026/02/22 05:35 [medline]
+PHST- 2026/02/22 05:35 [pubmed]
+PHST- 2026/02/21 18:42 [entrez]
+AID - S0002-9297(26)00060-1 [pii]
+AID - 10.1016/j.ajhg.2026.01.016 [doi]
+PST - aheadofprint
+SO  - Am J Hum Genet. 2026 Feb 20:S0002-9297(26)00060-1. doi: 
+      10.1016/j.ajhg.2026.01.016.
+
+PMID- 41710065
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260219
+LR  - 20260219
+IS  - 2976-856X (Electronic)
+IS  - 2976-856X (Linking)
+VI  - 3
+IP  - 1
+DP  - 2026 Jan
+TI  - Identification of enzymatically modified isoquercitrin as a therapeutic lead for 
+      myotonic dystrophy type 1.
+PG  - ugag007
+LID - 10.1093/narmme/ugag007 [doi]
+LID - ugag007
+AB  - Myotonic dystrophy type 1 (DM1) is a complex multisystemic disease caused by a 
+      CTG repeat expansion in the DMPK gene for which there are no approved 
+      disease-modifying treatments. Transcription of the expanded allele produces toxic 
+      gain-of-function CUG-expansion RNA that sequesters the MBNL family of alternative 
+      splicing regulators into ribonuclear foci, leading to pathogenic mis-splicing. In 
+      this study, using our previously established HeLa DM1 repeat selective screening 
+      platform, we identified the natural flavonoid quercetin as a selective modulator 
+      of toxic CUG RNA levels. Quercetin treatment selectively reduced DMPK levels and 
+      rescued MBNL-dependent mis-splicing in DM1 patient-derived myotubes. To overcome 
+      the limited bioavailability of quercetin in vivo, we evaluated a bioavailable 
+      derivative of quercetin, enzymatically modified isoquercitrin (EMIQ), in the HSA 
+      (LR) DM1 skeletal muscle mouse model. EMIQ treatment of these mice through the 
+      drinking water selectively reduced the expanded CUG transcripts and rescued 
+      mis-splicing and myotonia. Given its efficacy in the HSA (LR) mouse model and the 
+      established safety profile in humans, we have identified EMIQ as a priority 
+      disease-targeting therapeutic lead for future clinical evaluation in DM1.
+CI  - (c) The Author(s) 2026. Published by Oxford University Press.
+FAU - Mishra, Subodh K
+AU  - Mishra SK
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+FAU - Hicks, Sawyer M
+AU  - Hicks SM
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+AD  - Department of Biological Sciences, College of Arts and Sciences, University at 
+      Albany, State University of New York, Albany, NY 12222, United States.
+FAU - Frias, Jesus A
+AU  - Frias JA
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+AD  - Department of Biological Sciences, College of Arts and Sciences, University at 
+      Albany, State University of New York, Albany, NY 12222, United States.
+FAU - Zhang, Jing
+AU  - Zhang J
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+AD  - Department of Biological Sciences, College of Arts and Sciences, University at 
+      Albany, State University of New York, Albany, NY 12222, United States.
+FAU - Handley, Mark T
+AU  - Handley MT
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+FAU - Vangaveti, Sweta
+AU  - Vangaveti S
+AUID- ORCID: 0000-0002-2274-9544
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+FAU - Reid, Tammy S
+AU  - Reid TS
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+FAU - Pandey, Aradhana
+AU  - Pandey A
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+FAU - McMichael, Omari
+AU  - McMichael O
+AD  - Center for Inherited Myology Research, Virginia Commonwealth University, 
+      Richmond, VA 23298, United States.
+AD  - Department of Neurology, Virginia Commonwealth University, Richmond, VA 23298, 
+      United States.
+FAU - Crumbaugh, Christopher
+AU  - Crumbaugh C
+AD  - Center for Inherited Myology Research, Virginia Commonwealth University, 
+      Richmond, VA 23298, United States.
+AD  - Department of Neurology, Virginia Commonwealth University, Richmond, VA 23298, 
+      United States.
+FAU - Provenzano, Marina
+AU  - Provenzano M
+AD  - Center for Inherited Myology Research, Virginia Commonwealth University, 
+      Richmond, VA 23298, United States.
+AD  - Department of Neurology, Virginia Commonwealth University, Richmond, VA 23298, 
+      United States.
+FAU - Hale, Melissa A
+AU  - Hale MA
+AD  - Center for Inherited Myology Research, Virginia Commonwealth University, 
+      Richmond, VA 23298, United States.
+AD  - Department of Neurology, Virginia Commonwealth University, Richmond, VA 23298, 
+      United States.
+FAU - Johnson, Nicholas E
+AU  - Johnson NE
+AD  - Center for Inherited Myology Research, Virginia Commonwealth University, 
+      Richmond, VA 23298, United States.
+AD  - Department of Neurology, Virginia Commonwealth University, Richmond, VA 23298, 
+      United States.
+FAU - Nakamori, Masayuki
+AU  - Nakamori M
+AUID- ORCID: 0000-0003-4714-3044
+AD  - Department of Neurology, Osaka University Graduate School of Medicine, Osaka 
+      565-0871, Japan.
+FAU - Cleary, John D
+AU  - Cleary JD
+AUID- ORCID: 0000-0001-7599-5995
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+FAU - Reddy, Kaalak
+AU  - Reddy K
+AUID- ORCID: 0000-0002-1916-0261
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+AD  - Department of Biological Sciences, College of Arts and Sciences, University at 
+      Albany, State University of New York, Albany, NY 12222, United States.
+FAU - Berglund, J Andrew
+AU  - Berglund JA
+AUID- ORCID: 0000-0002-5198-2724
+AD  - The RNA Institute, College of Arts and Sciences, University at Albany, State 
+      University of New York, Albany, NY 12222, United States.
+AD  - Department of Biological Sciences, College of Arts and Sciences, University at 
+      Albany, State University of New York, Albany, NY 12222, United States.
+LA  - eng
+PT  - Journal Article
+DEP - 20260129
+PL  - England
+TA  - NAR Mol Med
+JT  - NAR molecular medicine
+JID - 9918752080106676
+PMC - PMC12910114
+COIS- J.A.B. serves on the Scientific Advisory Committee for the Myotonic Dystrophy 
+      Foundation, has consulted or currently consults for Entrada Therapeutics, Juvena 
+      Therapeutics, Kate Therapeutics, D.E. Shaw Research, Dyne, Wayfinder Biosciences 
+      and Syros Pharmaceuticals, and has received research funding from Agios 
+      Pharmaceuticals, Arthex, Biomarin Pharmaceuticals, PepGen, Vertex 
+      Pharmaceuticals, and Syros Pharmaceuticals. J.A.B., N.E.J., and J.D.C. are 
+      co-founders of Repeat RNA Therapeutics Inc. J.A.B. and K.R. have received 
+      licensing royalties from the University of Florida. M.A.H. has provided 
+      consultation for Juvena and Arrakis Therapeutics and has stock options from 
+      Myogene Therapeutics. N.E.J. receives research funds from Novartis, Takeda, 
+      PepGen, Sanofi Genzyme, Dyne, Vertex Pharmaceuticals, Fulcrum Therapeutics, 
+      AskBio, ML Bio, and Sarepta. He has provided consultation for Arthex, Angle 
+      Therapeutics, Juvena, Rgenta, PepGen, AMO Pharma, Takeda Design, Dyne, AskBio, 
+      Avidity, and Vertex Pharmaceuticals. He has stock options from Myogene Therapies, 
+      Angle Therapeutics, and Juvena. J.A.B., J.D.C. , K.R. and S.K.M. have 
+      intellectual property applications related to DM1 and related therapeutics. All 
+      other authors report no competing interests.
+EDAT- 2026/02/19 07:02
+MHDA- 2026/02/19 07:03
+PMCR- 2026/01/29
+CRDT- 2026/02/19 04:32
+PHST- 2025/03/17 00:00 [received]
+PHST- 2026/01/22 00:00 [revised]
+PHST- 2026/01/26 00:00 [accepted]
+PHST- 2026/02/19 07:03 [medline]
+PHST- 2026/02/19 07:02 [pubmed]
+PHST- 2026/02/19 04:32 [entrez]
+PHST- 2026/01/29 00:00 [pmc-release]
+AID - ugag007 [pii]
+AID - 10.1093/narmme/ugag007 [doi]
+PST - epublish
+SO  - NAR Mol Med. 2026 Jan 29;3(1):ugag007. doi: 10.1093/narmme/ugag007. eCollection 
+      2026 Jan.
+
+PMID- 41707138
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260218
+LR  - 20260218
+IS  - 1533-4406 (Electronic)
+IS  - 0028-4793 (Linking)
+VI  - 394
+IP  - 8
+DP  - 2026 Feb 19
+TI  - An Antibody-Oligonucleotide Conjugate for Myotonic Dystrophy Type 1.
+PG  - 763-772
+LID - 10.1056/NEJMoa2407326 [doi]
+AB  - BACKGROUND: Myotonic dystrophy type 1 is a rare, dominantly inherited, 
+      progressive, disabling, neuromuscular disease that leads to decreased life 
+      expectancy and has no approved therapies. The disease is caused by a 
+      trinucleotide repeat expansion in DMPK, which encodes myotonic dystrophy type 1 
+      protein kinase and imparts a toxic gain of function to the transcribed messenger 
+      RNA (mRNA), resulting in dysregulated alternative splicing (missplicing). 
+      Delpacibart etedesiran (del-desiran [AOC 1001]) is a monoclonal 
+      antibody-oligonucleotide conjugate. The antibody component targets transferrin 
+      receptor 1, and the oligonucleotide component targets DMPK mRNA. METHODS: In this 
+      phase 1-2, multicenter, double-blind, randomized, placebo-controlled trial, we 
+      assigned participants with myotonic dystrophy type 1 to receive del-desiran 
+      intravenously in a single dose (1 mg per kilogram of body weight) or three doses 
+      (2 mg or 4 mg per kilogram) or placebo. The primary end point was safety, and 
+      secondary end points were the pharmacokinetic and pharmacodynamic profiles of 
+      del-desiran and changes in downstream aberrant splicing patterns at 43 days in 
+      the 1-mg group and at 92 days (49 days after the second dose) in the 2-mg and 
+      4-mg groups. RESULTS: Six participants received del-desiran at a dose of 1 mg per 
+      kilogram, 9 at a dose of 2 mg per kilogram, and 13 at a dose of 4 mg per 
+      kilogram; 10 participants received placebo. Mild or moderate adverse events 
+      occurred in 35 of the 38 participants who received an infusion. Two severe, 
+      serious adverse events occurred in 2 participants in the 2-mg and 4-mg groups; 1 
+      of these participants discontinued participation in the trial. The percent change 
+      in DMPK mRNA levels in muscle-biopsy samples was -46% in the 1-mg group, -44% in 
+      the 2-mg group, -37% in the 4-mg group, and 0.9% in the placebo group. Maximum 
+      plasma concentrations of small interfering RNA (siRNA) and the area under the 
+      curve increased proportionally with dose escalation, and a minor fraction of 
+      siRNA was recovered in urine. Reductions in the mean composite missplicing score 
+      from baseline were 3%, 17%, 16%, and 7%, respectively, consistent with 
+      amelioration of missplicing in the 2-mg and 4-mg groups. CONCLUSIONS: Our results 
+      are consistent with delivery of del-desiran to muscle and amelioration of 
+      aberrant alternative splicing in some patients with myotonic dystrophy type 1; 
+      two serious adverse events occurred. These data support further clinical 
+      investigation. (Funded by Avidity Biosciences; ClinicalTrials.gov number, 
+      NCT05027269.).
+CI  - Copyright (c) 2026 Massachusetts Medical Society.
+FAU - Johnson, Nicholas E
+AU  - Johnson NE
+AD  - Virginia Commonwealth University, Richmond.
+FAU - Tai, Li-Jung
+AU  - Tai LJ
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - Hamel, Johanna I
+AU  - Hamel JI
+AD  - University of Rochester Medical Center, Rochester, NY.
+FAU - Day, John W
+AU  - Day JW
+AD  - Stanford University Medical Center, Palo Alto, CA.
+FAU - Statland, Jeffrey M
+AU  - Statland JM
+AD  - University of Kansas Medical Center, Kansas City.
+FAU - Soltanzadeh, Payam
+AU  - Soltanzadeh P
+AD  - University of California, Los Angeles, Los Angeles.
+FAU - Subramony, Sankarasubramoney H
+AU  - Subramony SH
+AD  - University of Florida, Gainesville.
+FAU - Thornton, Charles A
+AU  - Thornton CA
+AD  - University of Rochester Medical Center, Rochester, NY.
+FAU - Arnold, W David
+AU  - Arnold WD
+AD  - University of Missouri, Columbia.
+FAU - Wicklund, Matthew
+AU  - Wicklund M
+AD  - University of Texas, San Antonio.
+FAU - Freimer, Miriam L
+AU  - Freimer ML
+AD  - Ohio State University, Columbus.
+FAU - Eichinger, Kate
+AU  - Eichinger K
+AD  - University of Rochester Medical Center, Rochester, NY.
+FAU - Dekdebrun, Jeanne
+AU  - Dekdebrun J
+AD  - University of Rochester Medical Center, Rochester, NY.
+FAU - Chen, Chao-Yin
+AU  - Chen CY
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - Goel, Varun
+AU  - Goel V
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - McEvoy, Bradley
+AU  - McEvoy B
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - Zhu, Yiming
+AU  - Zhu Y
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - Hughes, Steven G
+AU  - Hughes SG
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - Ackermann, Elizabeth J
+AU  - Ackermann EJ
+AD  - Avidity Biosciences, San Diego, CA.
+FAU - Levin, Arthur A
+AU  - Levin AA
+AD  - Avidity Biosciences, San Diego, CA.
+LA  - eng
+SI  - ClinicalTrials.gov/NCT05027269
+PT  - Clinical Trial, Phase I
+PT  - Clinical Trial, Phase II
+PT  - Journal Article
+PT  - Multicenter Study
+PT  - Randomized Controlled Trial
+PL  - United States
+TA  - N Engl J Med
+JT  - The New England journal of medicine
+JID - 0255562
+RN  - 0 (Oligonucleotides)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (Immunoconjugates)
+RN  - 0 (Antibodies, Monoclonal)
+RN  - 0 (Receptors, Transferrin)
+RN  - 0 (DMPK protein, human)
+RN  - 0 (RNA, Messenger)
+SB  - IM
+MH  - Humans
+MH  - *Myotonic Dystrophy/drug therapy/genetics/metabolism
+MH  - Double-Blind Method
+MH  - Female
+MH  - Middle Aged
+MH  - Male
+MH  - Adult
+MH  - *Oligonucleotides/adverse effects/pharmacokinetics/administration & 
+      dosage/therapeutic use
+MH  - Myotonin-Protein Kinase/genetics
+MH  - *Immunoconjugates/adverse effects/pharmacokinetics/administration & dosage
+MH  - Young Adult
+MH  - *Antibodies, Monoclonal/adverse effects/pharmacokinetics/administration & dosage
+MH  - *Receptors, Transferrin/antagonists & inhibitors/immunology
+MH  - Aged
+MH  - RNA, Messenger/metabolism
+MH  - Adolescent
+EDAT- 2026/02/18 19:08
+MHDA- 2026/02/18 19:09
+CRDT- 2026/02/18 16:33
+PHST- 2026/02/18 19:09 [medline]
+PHST- 2026/02/18 19:08 [pubmed]
+PHST- 2026/02/18 16:33 [entrez]
+AID - 10.1056/NEJMoa2407326 [doi]
+PST - ppublish
+SO  - N Engl J Med. 2026 Feb 19;394(8):763-772. doi: 10.1056/NEJMoa2407326.
+
+PMID- 41672630
+OWN - NLM
+STAT- Publisher
+LR  - 20260211
+IS  - 2234-3814 (Electronic)
+IS  - 2234-3806 (Linking)
+DP  - 2026 Feb 12
+TI  - Performance Evaluation of PacBio PureTarget for Multiple Short Tandem Repeat 
+      Expansion Detection.
+LID - 10.3343/alm.2025.0414 [doi]
+AB  - BACKGROUND: Excessive repeat sequence expansion in the human genome causes 
+      neurodegenerative diseases. Conventional tandem repeat expansion detection 
+      methods often fail to amplify GC-rich repeat regions and cannot help in 
+      simultaneously detecting multiple regions. To overcome those limitations, we 
+      tested the PacBio PureTarget repeat expansion panel, a new target enrichment test 
+      without PCR amplification, and compared its performance with that of conventional 
+      repeat expansion detection methods, using clinical and reference samples. 
+      METHODS: We used the PacBio PureTarget repeat expansion panel, which targets 20 
+      genes with clinically relevant repeat regions, to assess eight samples from the 
+      Coriell Institute for Medical Research (Camden) and six patient samples 
+      (previously tested for FMR1 repeat expansions via repeat-primed [RP] PCR). Data 
+      were analyzed using the tandem repeat genotyping tool. RESULTS: For all samples 
+      tested, the long-read sequencing results showed 100% concordance with the RP-PCR 
+      or Southern blotting results. Discrepancies in repeat counts were observed in a 
+      few alleles, with a maximum difference of 157 motifs in DMPK. The method 
+      successfully quantified long repeats in FMR1, demonstrating its applicability. 
+      CONCLUSIONS: The PacBio PureTarget repeat expansion panel, which uses targeted 
+      enrichment based on clustered regularly interspaced short palindromic repeats 
+      (CRISPR)/CRISPR-associated protein 9 and long-read sequencing, is a promising 
+      approach for repeat expansion detection, overcoming the limitations of 
+      conventional methods. This approach enabled parallel analysis of multiple 
+      candidate genes implicated in neurodegenerative diseases with overlapping 
+      clinical features, supporting its potential integration into future clinical 
+      diagnostic workflows.
+FAU - Yeom, Eunju
+AU  - Yeom E
+AUID- ORCID: 0009-0004-5455-6917
+AD  - Department of Genomics and Data Sciences, Graduate School of Medical Science, 
+      Brain Korea 21 Project, Yonsei University College of Medicine, Seoul, Korea.
+FAU - Park, Yu Jin
+AU  - Park YJ
+AUID- ORCID: 0000-0002-8673-5256
+AD  - Department of Laboratory Medicine, Yonsei University College of Medicine, 
+      Severance Hospital, Seoul, Korea.
+FAU - Shin, Saeam
+AU  - Shin S
+AUID- ORCID: 0000-0003-1501-3923
+AD  - Department of Laboratory Medicine, Yonsei University College of Medicine, 
+      Severance Hospital, Seoul, Korea.
+FAU - Lee, Seung-Tae
+AU  - Lee ST
+AUID- ORCID: 0000-0003-1047-1415
+AD  - Department of Laboratory Medicine, Yonsei University College of Medicine, 
+      Severance Hospital, Seoul, Korea.
+AD  - Dxome Co. Ltd., Seongnam, Korea.
+FAU - Lee, Mi-Kyeong
+AU  - Lee MK
+AUID- ORCID: 0000-0002-5745-4228
+AD  - Department of Laboratory Medicine, Seoul Clinical Laboratories, Yongin, Korea.
+FAU - Lee, Kyoung-Ryul
+AU  - Lee KR
+AUID- ORCID: 0009-0008-4627-0555
+AD  - Department of Laboratory Medicine, Seoul Clinical Laboratories, Yongin, Korea.
+FAU - Won, Dongju
+AU  - Won D
+AUID- ORCID: 0000-0002-0084-0216
+AD  - Department of Laboratory Medicine, Yonsei University College of Medicine, 
+      Severance Hospital, Seoul, Korea.
+FAU - Choi, Jong Rak
+AU  - Choi JR
+AUID- ORCID: 0000-0002-0608-2989
+AD  - Department of Laboratory Medicine, Yonsei University College of Medicine, 
+      Severance Hospital, Seoul, Korea.
+AD  - Dxome Co. Ltd., Seongnam, Korea.
+LA  - eng
+PT  - Journal Article
+DEP - 20260212
+PL  - Korea (South)
+TA  - Ann Lab Med
+JT  - Annals of laboratory medicine
+JID - 101571172
+SB  - IM
+OTO - NOTNLM
+OT  - CRISPR/Cas9
+OT  - Long-read sequencing
+OT  - Tandem repeat expansion detection
+OT  - Tandem repeat genotyping tool
+EDAT- 2026/02/12 00:47
+MHDA- 2026/02/12 00:47
+CRDT- 2026/02/11 20:53
+PHST- 2025/07/22 00:00 [received]
+PHST- 2025/10/20 00:00 [revised]
+PHST- 2026/01/13 00:00 [accepted]
+PHST- 2026/02/12 00:47 [medline]
+PHST- 2026/02/12 00:47 [pubmed]
+PHST- 2026/02/11 20:53 [entrez]
+AID - alm.2025.0414 [pii]
+AID - 10.3343/alm.2025.0414 [doi]
+PST - aheadofprint
+SO  - Ann Lab Med. 2026 Feb 12. doi: 10.3343/alm.2025.0414.
+
 PMID- 41610137
 OWN - NLM
 STAT- MEDLINE
@@ -387,13 +1182,17 @@ SO  - Proc Natl Acad Sci U S A. 2025 Dec 16;122(50):e2522788122. doi:
 
 PMID- 41260620
 OWN - NLM
-STAT- Publisher
-LR  - 20251119
+STAT- MEDLINE
+DCOM- 20260207
+LR  - 20260224
 IS  - 1097-0223 (Electronic)
 IS  - 0197-3851 (Linking)
-DP  - 2025 Nov 19
+VI  - 46
+IP  - 2
+DP  - 2026 Feb
 TI  - Potential of Nanopore Long Read Sequencing for Determining CTG Repeat Lengths in 
       the DMPK1 Gene During Prenatal or Preimplantation Genetic Testing.
+PG  - 251-259
 LID - 10.1002/pd.70026 [doi]
 AB  - OBJECTIVE: Myotonic dystrophy type 1 (DM1) is an autosomal dominant 
       neurodevelopmental disorder caused by CTG repeat expansion in the DMPK gene. 
@@ -453,24 +1252,37 @@ AD  - Department of Clinical Genetics, Fujita Health University Hospital, Aichi,
 LA  - eng
 GR  - 8944/Japan Agency for Medical Research and Development/
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20251119
 PL  - England
 TA  - Prenat Diagn
 JT  - Prenatal diagnosis
 JID - 8106540
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (DMPK protein, human)
 SB  - IM
+MH  - Humans
+MH  - Female
+MH  - Pregnancy
+MH  - *Nanopore Sequencing/methods
+MH  - *Preimplantation Diagnosis/methods
+MH  - *Myotonin-Protein Kinase/genetics
+MH  - *Myotonic Dystrophy/diagnosis/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Genetic Testing/methods
+MH  - *Prenatal Diagnosis/methods
 EDAT- 2025/11/20 00:29
-MHDA- 2025/11/20 00:29
+MHDA- 2026/02/07 06:33
 CRDT- 2025/11/19 20:23
 PHST- 2025/10/22 00:00 [revised]
 PHST- 2025/06/24 00:00 [received]
 PHST- 2025/11/13 00:00 [accepted]
-PHST- 2025/11/20 00:29 [medline]
+PHST- 2026/02/07 06:33 [medline]
 PHST- 2025/11/20 00:29 [pubmed]
 PHST- 2025/11/19 20:23 [entrez]
 AID - 10.1002/pd.70026 [doi]
-PST - aheadofprint
-SO  - Prenat Diagn. 2025 Nov 19. doi: 10.1002/pd.70026.
+PST - ppublish
+SO  - Prenat Diagn. 2026 Feb;46(2):251-259. doi: 10.1002/pd.70026. Epub 2025 Nov 19.
 
 PMID- 41250834
 OWN - NLM
@@ -730,12 +1542,15 @@ SO  - Int J Mol Sci. 2025 Nov 6;26(21):10793. doi: 10.3390/ijms262110793.
 
 PMID- 41212113
 OWN - NLM
-STAT- Publisher
-LR  - 20260129
+STAT- MEDLINE
+DCOM- 20260217
+LR  - 20260218
 IS  - 2574-8300 (Electronic)
 IS  - 2574-8300 (Linking)
-DP  - 2025 Nov 10
-TI  - Aberrant Splicing of Dnm1l Impairs Cardiac Bioenergetics and Mitochondrial 
+VI  - 19
+IP  - 1
+DP  - 2026 Feb
+TI  - Aberrant Splicing of DNM1L Impairs Cardiac Bioenergetics and Mitochondrial 
       Dynamics in Myotonic Dystrophy Type I (DM1).
 PG  - e005492
 LID - 10.1161/CIRCGEN.125.005492 [doi]
@@ -775,27 +1590,27 @@ FAU - Adesanya, Oluwafolajimi
 AU  - Adesanya O
 AUID- ORCID: 0000-0002-8716-7457
 AD  - Department of Biochemistry (O.A., P.N., A.B., A.K.), University of Illinois, 
-      Urbana-Champaign.
+      Urbana-Champaign, IL, USA.
 FAU - Nabie, Pouya
 AU  - Nabie P
 AUID- ORCID: 0009-0002-6353-0319
 AD  - Department of Biochemistry (O.A., P.N., A.B., A.K.), University of Illinois, 
-      Urbana-Champaign.
+      Urbana-Champaign, IL, USA.
 FAU - Betancourt, Alexandra
 AU  - Betancourt A
 AD  - Department of Biochemistry (O.A., P.N., A.B., A.K.), University of Illinois, 
-      Urbana-Champaign.
+      Urbana-Champaign, IL, USA.
 FAU - Kalsotra, Auinash
 AU  - Kalsotra A
 AUID- ORCID: 0000-0002-1011-0006
 AD  - Department of Biochemistry (O.A., P.N., A.B., A.K.), University of Illinois, 
-      Urbana-Champaign.
-AD  - Cancer Center@Illinois (A.K.), University of Illinois, Urbana-Champaign.
+      Urbana-Champaign, IL, USA.
+AD  - Cancer Center@Illinois (A.K.), University of Illinois, Urbana-Champaign, IL, USA.
 AD  - Carl R. Woese Institute for Genomic Biology (A.K.), University of Illinois, 
-      Urbana-Champaign.
+      Urbana-Champaign, IL, USA.
 AD  - Division of Nutritional Sciences (A.K.), University of Illinois, 
-      Urbana-Champaign.
-AD  - Chan Zuckerberg Biohub, Chicago (A.K.).
+      Urbana-Champaign, IL, USA.
+AD  - Chan Zuckerberg Biohub, Chicago, IL, USA (A.K.).
 LA  - eng
 GR  - R01 HL126845/HL/NHLBI NIH HHS/United States
 PT  - Journal Article
@@ -804,37 +1619,60 @@ PL  - United States
 TA  - Circ Genom Precis Med
 JT  - Circulation. Genomic and precision medicine
 JID - 101714113
+RN  - EC 3.6.5.5 (Dynamins)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
 SB  - IM
+MH  - *Myotonic Dystrophy/genetics/metabolism/pathology
+MH  - Animals
+MH  - *Energy Metabolism
+MH  - Mice
+MH  - *Mitochondrial Dynamics/genetics
+MH  - Humans
+MH  - *Dynamins/genetics/metabolism
+MH  - *Mitochondria, Heart/metabolism/genetics
+MH  - *Alternative Splicing
+MH  - Disease Models, Animal
+MH  - *Myocardium/metabolism/pathology
+MH  - Male
+MH  - Myotonin-Protein Kinase/genetics
+MH  - Myocytes, Cardiac/metabolism
 PMC - PMC12820943
 MID - NIHMS2137988
 OTO - NOTNLM
 OT  - alternative splicing
-OT  - fibroblasts
+OT  - antisense oligonucleotides
+OT  - cardiomyocytes
+OT  - dynamin-related protein 1
 OT  - mitochondrial dynamics
 OT  - myotonic dystrophy
 OT  - oxygen consumption
+COIS- None.
 EDAT- 2025/11/10 12:35
-MHDA- 2025/11/10 12:35
-PMCR- 2026/01/21
+MHDA- 2026/02/17 18:52
+PMCR- 2026/01/22
 CRDT- 2025/11/10 10:22
+PHST- 2026/02/17 18:52 [medline]
 PHST- 2025/11/10 12:35 [pubmed]
-PHST- 2025/11/10 12:35 [medline]
 PHST- 2025/11/10 10:22 [entrez]
-PHST- 2026/01/21 00:00 [pmc-release]
+PHST- 2026/01/22 00:00 [pmc-release]
 AID - 10.1161/CIRCGEN.125.005492 [doi]
-PST - aheadofprint
-SO  - Circ Genom Precis Med. 2025 Nov 10:e005492. doi: 10.1161/CIRCGEN.125.005492.
+PST - ppublish
+SO  - Circ Genom Precis Med. 2026 Feb;19(1):e005492. doi: 10.1161/CIRCGEN.125.005492. 
+      Epub 2025 Nov 10.
 
 PMID- 41161721
 OWN - NLM
-STAT- Publisher
-LR  - 20251204
+STAT- MEDLINE
+DCOM- 20260220
+LR  - 20260220
 IS  - 1468-6244 (Electronic)
 IS  - 0022-2593 (Linking)
-DP  - 2025 Dec 4
+VI  - 63
+IP  - 3
+DP  - 2026 Feb 20
 TI  - Analysis of muscle and blood RNA samples from patients with myotonic dystrophy 
       type 1 reveals the presence of new mis-splicing biomarkers of disease severity.
-LID - jmg-2025-110919 [pii]
+PG  - 164-173
 LID - 10.1136/jmg-2025-110919 [doi]
 AB  - BACKGROUND: Myotonic dystrophy type 1 (DM1) is a multisystem disorder with 
       autosomal dominant inheritance, caused by the abnormal expansion of the CTG 
@@ -857,7 +1695,7 @@ AB  - BACKGROUND: Myotonic dystrophy type 1 (DM1) is a multisystem disorder with
       valuable for assessing disease severity, monitoring disease progression and 
       evaluating treatment efficacy. Larger sample sizes may be necessary to clarify 
       the relationship between mis-splicing and disease severity.
-CI  - (c) Author(s) (or their employer(s)) 2025. No commercial re-use. See rights and 
+CI  - (c) Author(s) (or their employer(s)) 2026. No commercial re-use. See rights and 
       permissions. Published by BMJ Group.
 FAU - Palma-Jimenez, Melissa
 AU  - Palma-Jimenez M
@@ -885,29 +1723,48 @@ AD  - INISA, Universidad de Costa Rica, San Jose, Costa Rica
       fernando.moralesmontero@ucr.ac.cr.
 LA  - eng
 PT  - Journal Article
-DEP - 20251204
+DEP - 20260220
 PL  - England
 TA  - J Med Genet
 JT  - Journal of medical genetics
 JID - 2985087R
+RN  - 0 (Biomarkers)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (DMPK protein, human)
+RN  - 63231-63-0 (RNA)
 SB  - IM
+MH  - Humans
+MH  - *Myotonic Dystrophy/genetics/blood/pathology
+MH  - Biomarkers/blood
+MH  - Severity of Illness Index
+MH  - Female
+MH  - Male
+MH  - Exons/genetics
+MH  - *RNA Splicing/genetics
+MH  - Myotonin-Protein Kinase/genetics
+MH  - Adult
+MH  - Muscle, Skeletal/metabolism/pathology
+MH  - Middle Aged
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Skin/metabolism
+MH  - *RNA/genetics/blood
 OTO - NOTNLM
 OT  - Disease Management
 OT  - Human Genetics
 OT  - RNA-Seq
 COIS- Competing interests: None declared.
 EDAT- 2025/10/30 00:27
-MHDA- 2025/10/30 00:27
+MHDA- 2026/02/21 00:56
 CRDT- 2025/10/29 20:54
 PHST- 2025/05/14 00:00 [received]
 PHST- 2025/10/13 00:00 [accepted]
+PHST- 2026/02/21 00:56 [medline]
 PHST- 2025/10/30 00:27 [pubmed]
-PHST- 2025/10/30 00:27 [medline]
 PHST- 2025/10/29 20:54 [entrez]
 AID - jmg-2025-110919 [pii]
 AID - 10.1136/jmg-2025-110919 [doi]
-PST - aheadofprint
-SO  - J Med Genet. 2025 Dec 4:jmg-2025-110919. doi: 10.1136/jmg-2025-110919.
+PST - epublish
+SO  - J Med Genet. 2026 Feb 20;63(3):164-173. doi: 10.1136/jmg-2025-110919.
 
 PMID- 41074692
 OWN - NLM
@@ -991,7 +1848,7 @@ PMID- 40903903
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251204
-LR  - 20251217
+LR  - 20260208
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Print)
 IS  - 1525-0016 (Linking)
@@ -1128,15 +1985,15 @@ COIS- Declaration of interests All authors are or were employees of Sanofi at th
       "Targeted Gene Therapy for DM-1 Myotonic Dystrophy."
 EDAT- 2025/09/04 06:37
 MHDA- 2025/12/05 01:02
-PMCR- 2026/12/03
+PMCR- 2025/09/02
 CRDT- 2025/09/04 01:36
 PHST- 2024/10/16 00:00 [received]
 PHST- 2025/03/28 00:00 [revised]
 PHST- 2025/08/28 00:00 [accepted]
-PHST- 2026/12/03 00:00 [pmc-release]
 PHST- 2025/12/05 01:02 [medline]
 PHST- 2025/09/04 06:37 [pubmed]
 PHST- 2025/09/04 01:36 [entrez]
+PHST- 2025/09/02 00:00 [pmc-release]
 AID - S1525-0016(25)00724-5 [pii]
 AID - 10.1016/j.ymthe.2025.08.050 [doi]
 PST - ppublish
@@ -1275,13 +2132,17 @@ SO  - Mol Ther Nucleic Acids. 2025 Jul 30;36(3):102646. doi:
 
 PMID- 40879030
 OWN - NLM
-STAT- Publisher
-LR  - 20250829
+STAT- In-Process
+LR  - 20260301
 IS  - 1531-8249 (Electronic)
+IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
-DP  - 2025 Aug 29
+VI  - 99
+IP  - 1
+DP  - 2026 Jan
 TI  - Co-Opting MBNL-Dependent Alternative Splicing Cassette Exons to Control Gene 
       Therapy in Myotonic Dystrophy.
+PG  - 211-222
 LID - 10.1002/ana.78024 [doi]
 AB  - OBJECTIVE: Myotonic dystrophy type 1 (DM1) is a highly variable, multisystemic 
       genetic disorder caused by a CTG repeat expansion in the 3' untranslated region 
@@ -1302,7 +2163,7 @@ AB  - OBJECTIVE: Myotonic dystrophy type 1 (DM1) is a highly variable, multisyst
       prevent cardiac toxicity due to MBNL1 overexpression in mice. INTERPRETATION: 
       DMX(on) control elements can increase the therapeutic window of viral-based 
       therapeutics in DM1, and activity is dependent upon delivered cargo and model 
-      severity. ANN NEUROL 2025.
+      severity. ANN NEUROL 2026;99:211-222.
 CI  - (c) 2025 The Author(s). Annals of Neurology published by Wiley Periodicals LLC on 
       behalf of American Neurological Association.
 FAU - Carrell, Samuel T
@@ -1333,18 +2194,23 @@ TA  - Ann Neurol
 JT  - Annals of neurology
 JID - 7707449
 SB  - IM
+PMC - PMC12946605
+COIS- The authors report no conflicts of interested related to this work.
 EDAT- 2025/08/29 12:48
 MHDA- 2025/08/29 12:48
+PMCR- 2026/02/27
 CRDT- 2025/08/29 07:23
 PHST- 2025/07/28 00:00 [revised]
 PHST- 2025/05/20 00:00 [received]
 PHST- 2025/08/11 00:00 [accepted]
-PHST- 2025/08/29 12:48 [medline]
 PHST- 2025/08/29 12:48 [pubmed]
+PHST- 2025/08/29 12:48 [medline]
 PHST- 2025/08/29 07:23 [entrez]
+PHST- 2026/02/27 00:00 [pmc-release]
+AID - ANA78024 [pii]
 AID - 10.1002/ana.78024 [doi]
-PST - aheadofprint
-SO  - Ann Neurol. 2025 Aug 29. doi: 10.1002/ana.78024.
+PST - ppublish
+SO  - Ann Neurol. 2026 Jan;99(1):211-222. doi: 10.1002/ana.78024. Epub 2025 Aug 29.
 
 PMID- 40712995
 OWN - NLM
@@ -4421,7 +5287,7 @@ PMID- 39278936
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240915
-LR  - 20240918
+LR  - 20260205
 IS  - 1757-6512 (Electronic)
 IS  - 1757-6512 (Linking)
 VI  - 15
@@ -4510,6 +5376,7 @@ LA  - eng
 GR  - W.OR18-18/Prinses Beatrix Spierfonds/
 GR  - W.OR20-03/Prinses Beatrix Spierfonds/
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240915
 PL  - England
 TA  - Stem Cell Res Ther
@@ -15855,6 +16722,7 @@ PL  - England
 TA  - Stem Cell Res
 JT  - Stem cell research
 JID - 101316957
+RN  - 0 (Kruppel-Like Factor 4)
 SB  - IM
 MH  - Cell Differentiation/genetics/physiology
 MH  - Cell Line
@@ -23589,6 +24457,7 @@ PST - ppublish
 SO  - J Clin Neurosci. 2010 Mar;17(3):408-9. doi: 10.1016/j.jocn.2009.06.010. Epub 2010 
       Jan 13.
 
+
 PMID- 19946639
 OWN - NLM
 STAT- MEDLINE
@@ -24029,7 +24898,6 @@ AID - 10.1073/pnas.0900342106 [doi]
 PST - ppublish
 SO  - Proc Natl Acad Sci U S A. 2009 Jun 9;106(23):9203-8. doi: 
       10.1073/pnas.0900342106. Epub 2009 May 26.
-
 
 PMID- 18798829
 OWN - NLM

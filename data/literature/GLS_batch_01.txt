@@ -1,12 +1,16 @@
 
 PMID- 41501457
 OWN - NLM
-STAT- Publisher
-LR  - 20260113
+STAT- In-Process
+LR  - 20260228
 IS  - 1476-4687 (Electronic)
+IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
-DP  - 2026 Jan 7
+VI  - 650
+IP  - 8103
+DP  - 2026 Feb
 TI  - Insights into DNA repeat expansions among 900,000 biobank participants.
+PG  - 920-929
 LID - 10.1038/s41586-025-09886-z [doi]
 AB  - Expansions and contractions of tandem DNA repeats generate genetic variation in 
       human populations and in human tissues. Some expanded repeats cause inherited 
@@ -119,19 +123,24 @@ JID - 0410462
 SB  - IM
 UOF - bioRxiv. 2024 Nov 26:2024.11.25.625248. doi: 10.1101/2024.11.25.625248. PMID: 
       39651202
+PMC - PMC12935551
 COIS- Competing interests: The authors declare no competing interests.
 EDAT- 2026/01/08 00:27
 MHDA- 2026/01/08 00:27
+PMCR- 2026/01/07
 CRDT- 2026/01/07 23:33
 PHST- 2024/12/11 00:00 [received]
 PHST- 2025/11/07 00:00 [accepted]
-PHST- 2026/01/08 00:27 [medline]
 PHST- 2026/01/08 00:27 [pubmed]
+PHST- 2026/01/08 00:27 [medline]
 PHST- 2026/01/07 23:33 [entrez]
+PHST- 2026/01/07 00:00 [pmc-release]
 AID - 10.1038/s41586-025-09886-z [pii]
+AID - 9886 [pii]
 AID - 10.1038/s41586-025-09886-z [doi]
-PST - aheadofprint
-SO  - Nature. 2026 Jan 7. doi: 10.1038/s41586-025-09886-z.
+PST - ppublish
+SO  - Nature. 2026 Feb;650(8103):920-929. doi: 10.1038/s41586-025-09886-z. Epub 2026 
+      Jan 7.
 
 PMID- 40488180
 OWN - NLM
@@ -1259,7 +1268,7 @@ PMID- 39651202
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260113
-LR  - 20260113
+LR  - 20260207
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2024 Nov 26
@@ -1321,7 +1330,8 @@ PL  - United States
 TA  - bioRxiv
 JT  - bioRxiv : the preprint server for biology
 JID - 101680187
-UIN - Nature. 2026 Jan 7. doi: 10.1038/s41586-025-09886-z. PMID: 41501457
+UIN - Nature. 2026 Feb;650(8103):920-929. doi: 10.1038/s41586-025-09886-z. PMID: 
+      41501457
 PMC - PMC11623664
 EDAT- 2024/12/09 17:33
 MHDA- 2024/12/09 17:34
