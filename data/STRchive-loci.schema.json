@@ -297,6 +297,19 @@
         "pattern": "^[ACGTN]+$"
       }
     },
+    "interruption_reference_orientation": {
+      "section": "Alleles",
+      "title": "Interruption (Reference Orientation)",
+      "description": "Interruption(s) in the + reference orientation. Only include interruptions that have been observed in individuals. These should typically be reported in the context of the motif, for example a CAG -> CAA interruption would be reported as CAA, not A",
+      "examples": ["CAA"],
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": ["string"],
+        "pattern": "^[ACGTN]+$"
+      }
+    },
     "pathogenic_motif_gene_orientation": {
       "section": "Alleles",
       "title": "Pathogenic Motif (Gene Orientation)",
@@ -332,6 +345,21 @@
       "title": "Unknown Motif (Gene Orientation)",
       "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
+      "type": "array",
+      "auto_generated": true,
+      "hide": "true",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": ["string"],
+        "pattern": "^[ACGTN]+$"
+      }
+    },
+    "interruption_gene_orientation": {
+      "section": "Alleles",
+      "title": "Interruption (Gene Orientation)",
+      "description": "Interruption(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from interruption_reference_orientation and gene_strand. Should not be manually edited.",
+      "examples": ["TTG"],
       "type": "array",
       "auto_generated": true,
       "hide": "true",
