@@ -50,6 +50,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Validate the STRchive loci JSON file and overwrite it with changes if needed.')
     parser.add_argument('json', default='data/STRchive-loci.json', help='STRchive loci JSON input file path')
     parser.add_argument('--schema', default=None, help='JSON schema file path (optional)')
+    parser.add_argument('--curations', default=None, help='criTRia disease curations JSON file path (optional)')
     parser.add_argument('--out', default=None, help='Defaults to same as input JSON file path (overwriting)')
     parser.add_argument('--pause', default=5, help='Pause time in seconds before overwriting the file. Default: 5')
     parser.add_argument('--lit', default=None, help='json file of literature with at least the fields "id", "additional_literature", "references". This will overwrite these literature fields in the STRchive loci json if they are present')
@@ -349,13 +350,29 @@ def check_tags(record):
 
     return record
 
-def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None, liftover = False, ref_dir = "ref-data/"):
+def parse_curations(curations_json):
+    with open(curations_json, 'r') as curations_file:
+        curations_data = json.load(curations_file)
+        # Extract "Locus_ID" and "classification" for each record. If multiple records have the same "Locus_ID", keep all in a list.
+        curation_dict = {}
+        for x in curations_data:
+            if x['Locus_ID'] not in curation_dict:
+                curation_dict[x['Locus_ID']] = []
+            curation_dict[x['Locus_ID']].append(x['classification'])
+        return curation_dict
+
+def main(json_fname, json_schema = None, curations_json = None, out_json = None, pause = 5, lit = None, liftover = False, ref_dir = "ref-data/"):
     if out_json == json_fname:
         sys.stderr.write(f'WARNING: overwriting {json_fname} in {pause} seconds\n')
         sys.stderr.write('Press Ctrl+C to cancel\n')
         time.sleep(pause)
     else:
         sys.stderr.write(f'Writing {out_json}\n')
+
+    if curations_json:
+        curation_dict = parse_curations(curations_json)
+        sys.stderr.write(f'Parsed {len(curation_dict)} curations from {curations_json}\n')
+        sys.stderr.write(f'All curations: {curation_dict}\n')
 
     # Check if file exists
     if not os.path.exists(json_fname):
@@ -374,12 +391,19 @@ def main(json_fname, json_schema = None, out_json = None, pause = 5, lit = None,
                         record['references'] = lit_dict[record['id']]['references']
                         record['additional_literature'] = lit_dict[record['id']]['additional_literature']
 
-        # Check if the field contains a string that should be a list
+        # Fixes to individual records
         for record in data:
+
+            # Check if the field contains a string that should be a list
             record = check_list_fields(record)
             record = check_motif_orientation(record)
             record = check_tags(record)
 
+            # Update disease association tags based on curations
+            if curations_json:
+                if record['id'] in curation_dict:
+                    record['evidence'] = curation_dict[record['id']]
+                    
         # Lift over coordinates
         if liftover:
             data = lift_over(data, ref_dir)
@@ -413,4 +437,4 @@ if __name__ == '__main__':
     args = parse_args()
     if args.out is None:
         args.out = args.json
-    main(args.json, args.schema, args.out, args.pause, args.lit, args.liftover)
+    main(args.json, args.schema, args.curations, args.out, args.pause, args.lit, args.liftover)
