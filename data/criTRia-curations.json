@@ -6863,4 +6863,37 @@
   "publication_interval_years": 22,
   "genetic_evidence_details": [],
   "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "GDPAG",
+  "Gene": "GLS",
+  "Locus_ID": "GDPAG_GLS",
+  "Inheritance": "AR",
+  "Curator": "Aminoacidopathy GCEP",
+  "Date": "07/09/2021",
+  "Manual_evidence_level": null,
+  "Description": "Curation included five unique variants (nonsense, frameshift, and missense) as well as a 5 prime UTR repeat expansion (normally occurring in 8 or 16 repeats) ranging from 680 to 1500 repeats. https://search.clinicalgenome.org/CCID:004965",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP7",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 11.5,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 6,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
 }]
