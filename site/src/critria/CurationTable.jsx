@@ -69,7 +69,13 @@ const CurationTable = ({ curations }) => {
     ),
   }));
 
-  return <Table cols={cols} rows={mappedCurations} />;
+  return (
+    <Table
+      cols={cols}
+      rows={mappedCurations}
+      sort={[{ id: "0", desc: false }]}
+    />
+  );
 };
 
 export default CurationTable;

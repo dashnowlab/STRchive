@@ -108,12 +108,13 @@ else:
 rule check_loci:
     input:
         in_json = in_json,
-        schema = "{base_dir}STRchive-loci.schema.json"
+        schema = "{base_dir}STRchive-loci.schema.json",
+        curations = "{base_dir}criTRia-curations.json"
     output:
         check = temp("{base_dir}check-loci.txt")
     shell:
         """
-        python {scripts_dir}check-loci.py --schema {input.schema} {input.in_json} 2> {output.check}
+        python {scripts_dir}check-loci.py --schema {input.schema} --curations {input.curations} {input.in_json} 2> {output.check}
         python {scripts_dir}validate-loci.py {input.in_json} {input.schema}
         """
 
