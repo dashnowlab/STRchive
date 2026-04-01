@@ -1385,7 +1385,7 @@
 },
 {
   "Disease_ID": "FAME6",
-  "Gene": "TNRC 6A",
+  "Gene": "TNRC6A",
   "Locus_ID": "FAME6_TNRC6A",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
@@ -2303,9 +2303,9 @@
   }]
 },
 {
-  "Disease_ID": "HFG",
-  "Gene": "HOXA13-1",
-  "Locus_ID": "HFG_HOXA13-1",
+  "Disease_ID": "HFG-I",
+  "Gene": "HOXA13",
+  "Locus_ID": "HFG_HOXA13-I",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
@@ -3045,9 +3045,9 @@
   }]
 },
 {
-  "Disease_ID": "MIR7-2",
-  "Gene": "CHNG3",
-  "Locus_ID": "MIR7-2_CHNG3",
+  "Disease_ID": "CHNG3",
+  "Gene": "MIR7-2",
+  "Locus_ID": "CHNG3_MIR7-2",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
@@ -6458,50 +6458,6 @@
   }]
 },
 {
-  "Disease_ID": "VACTERLX",
-  "Gene": "ZIC3",
-  "Locus_ID": "VACTERLX_ZIC3",
-  "Inheritance": "XR",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
-  "Date": "8/18/25",
-  "Description": null,
-  "Source": "criTRia",
-  "SOP_version": "criTRia v0",
-  "category_summary":
-  {
-    "Singular Evidence": 3.5,
-    "Function": 0,
-    "Functional Alteration": 0,
-    "Statistics": 0,
-    "Models": 0,
-    "Rescue": 0,
-    "Collective Evidence": 0
-  },
-  "supercategory_summary":
-  {
-    "Genetic Evidence": 3.5,
-    "Experimental Evidence": 0
-  },
-  "total_score": 3.5,
-  "classification": "Limited",
-  "publication_count": 1,
-  "publication_interval_years": null,
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 3.5,
-    "Citation": "pmid:20452998; pmid:32639022",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": "1 prob (1.5), 1 fam with characterization, 1 sporadic (2)",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6
-  }],
-  "experimental_evidence_details": []
-},
-{
   "Disease_ID": "ADTKD",
   "Gene": "MUC1",
   "Locus_ID": "ADTKD_MUC1",
@@ -6734,7 +6690,7 @@
 },
 {
   "Disease_ID": "FTDALS1",
-  "Gene": "FTDALS1_C9orf72",
+  "Gene": "C9orf72",
   "Locus_ID": "FTDALS1_C9orf72",
   "Inheritance": null,
   "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP",
