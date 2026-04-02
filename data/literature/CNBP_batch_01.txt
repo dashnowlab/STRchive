@@ -130,13 +130,17 @@ SO  - PLoS One. 2026 Jan 29;21(1):e0341655. doi: 10.1371/journal.pone.0341655.
 
 PMID- 41074692
 OWN - NLM
-STAT- Publisher
-LR  - 20251011
+STAT- MEDLINE
+DCOM- 20260307
+LR  - 20260307
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
-DP  - 2025 Oct 11
+VI  - 41
+IP  - 2
+DP  - 2026 Feb
 TI  - Association of Non-Coding Repeat Expansions with Parkinson's Disease Risk: 
       Evidence from a UK Biobank-Based Whole-Genome Sequencing Study.
+PG  - 515-521
 LID - 10.1002/mds.70081 [doi]
 AB  - BACKGROUND: Nucleotide repeat expansions are a potential factor in Parkinson's 
       disease (PD) risk, but previous studies were inconsistent. We investigated 14 
@@ -188,23 +192,40 @@ PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
+RN  - 0 (C9orf72 Protein)
+RN  - 0 (C9orf72 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 SB  - IM
+MH  - Humans
+MH  - *Parkinson Disease/genetics
+MH  - United Kingdom
+MH  - Whole Genome Sequencing
+MH  - Male
+MH  - Female
+MH  - *DNA Repeat Expansion/genetics
+MH  - Middle Aged
+MH  - Biological Specimen Banks
+MH  - Aged
+MH  - *Genetic Predisposition to Disease/genetics
+MH  - C9orf72 Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
+MH  - UK Biobank
 OTO - NOTNLM
 OT  - Parkinson's disease
 OT  - non-coding repeat expansion
 OT  - whole-genome sequencing
 EDAT- 2025/10/11 12:31
-MHDA- 2025/10/11 12:31
+MHDA- 2026/03/07 16:10
 CRDT- 2025/10/11 06:13
 PHST- 2025/09/15 00:00 [revised]
 PHST- 2025/08/13 00:00 [received]
 PHST- 2025/09/19 00:00 [accepted]
-PHST- 2025/10/11 12:31 [medline]
+PHST- 2026/03/07 16:10 [medline]
 PHST- 2025/10/11 12:31 [pubmed]
 PHST- 2025/10/11 06:13 [entrez]
 AID - 10.1002/mds.70081 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2025 Oct 11. doi: 10.1002/mds.70081.
+PST - ppublish
+SO  - Mov Disord. 2026 Feb;41(2):515-521. doi: 10.1002/mds.70081. Epub 2025 Oct 11.
 
 PMID- 40113266
 OWN - NLM
@@ -1406,7 +1427,8 @@ SO  - Sci Adv. 2023 May 5;9(18):eade2044. doi: 10.1126/sciadv.ade2044. Epub 2023
 PMID- 36778282
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20240912
+DCOM- 20260317
+LR  - 20260317
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2023 Feb 2
@@ -1424,7 +1446,7 @@ AB  - Myotonic dystrophy is a multisystemic neuromuscular disease caused by eith
       HeLa DM1 repeat selective screening platform, we identified the natural product 
       quercetin as a selective modulator of toxic RNA levels. Quercetin treatment 
       selectively reduced toxic RNA levels and rescued MBNL dependent mis-splicing in 
-      DM1 and DM2 patient derived cell lines and in the HSA(LR) transgenic DM1 mouse 
+      DM1 and DM2 patient derived cell lines and in the HSA (LR) transgenic DM1 mouse 
       model where rescue of myotonia was also observed. Based on our data and its 
       safety profile for use in humans, we have identified quercetin as a priority 
       disease-targeting therapeutic lead for clinical evaluation for the treatment of 
@@ -1481,6 +1503,8 @@ PL  - United States
 TA  - bioRxiv
 JT  - bioRxiv : the preprint server for biology
 JID - 101680187
+UIN - NAR Mol Med. 2026 Jan 29;3(1):ugag007. doi: 10.1093/narmme/ugag007. PMID: 
+      41710065
 PMC - PMC9915578
 COIS- Competing interests S.K.M., J.D.C., K.R. and J.A.B. have filed a provisional 
       patent application for the use of quercetin and related flavonoids for the 
