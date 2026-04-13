@@ -543,7 +543,7 @@
   "pathogenic_motif_reference_orientation": ["ATTCT"],
   "benign_motif_reference_orientation": [],
   "unknown_motif_reference_orientation": [],
-  "interruption_reference_orientation": ["ATCCT", "ATCCC", "ATTCC", "ATTTCT", "ATATTCT", "ATTCTTCT]", "ATTGT", "TTTCT", "ATTTTCT", "ATTCTCT", "GTTTCT", "CTTCT", "ATTCTAT", "ATGCT"]
+  "interruption_reference_orientation": ["ATCCT", "ATCCC", "ATTCC", "ATTTCT", "ATATTCT", "ATTCTTCT]", "ATTGT", "TTTCT", "ATTTTCT", "ATTCTCT", "GTTTCT", "CTTCT", "ATTCTAT", "ATGCT"],
   "pathogenic_motif_gene_orientation": ["ATTCT"],
   "benign_motif_gene_orientation": [],
   "unknown_motif_gene_orientation": [],
@@ -1677,7 +1677,7 @@
   "typ_age_onset_min": 42.0,
   "typ_age_onset_max": 70.0,
   "details": "Higher repeat size is associated with earlier age of onset [@pmid:39263992]. The 250-300 repeats range is linked to incomplete penetrance and >300 repeats with complete penetrance in some studies and resources [@genereviews:NBK599589; @pmid:37399286; @pmid:39227614]. However, our thresholds are taken from suggestions made by Mohren et al upon evaluation of 169 cases and 802 controls; the authors propose lower thresholds based on pathogenic cases of shorter pure repeats [@pmid:39227614]. Additionally, this study suggests that benign motifs may disrupt the formation of secondary structures in DNA/RNA, leading to reduced pathogenicity. The affect of interruptions on penetrance and onset has been shown in patients, with uninterrupted expansions apparently necessary for disease [@pmid:40007153]. Interruptions of GAG, GAAGGA, GAAGAAAGAA, GAAAAGAAGAAGGAAGAAGGAA, GAAAAGAAGAAGGAA, and GCAGAAGAAGAAGAA have been reported [@pmid:40379261]. Variation in flanking regions appear to correlate with repeat size [@pmid:39227614; @pmid:38937606]. Intermediate alleles make pose as susceptibility factors or be associated with a phenotypic spectrum (multiple system atrophy) [@pmid:39227614; @pmid:39604554]. Finally, a complex (TTC/TGC) ≥300 repeat expansion has been associated as a risk factor for Parkinson's disease [@pmid:41327893; @pmid:41277530].",
-  "mechanism": "LoF"
+  "mechanism": "LoF",
   "mechanism_detail": "Reduced transcript 2 [@pmid:36516086].",
   "year": "2023 [@pmid:36493768]",
   "location_in_gene": "Intron 1",
@@ -3538,7 +3538,7 @@
   "age_onset_max": 68.0,
   "typ_age_onset_min": null,
   "typ_age_onset_max": null,
-  "details": "TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali [@pmid:37994247]. Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in [@pmid:38876750]. It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note: locus is partially deleted in T2T reference genome",
+  "details": "TTTTA repeat expansions and TTTCA repeat insertions in intron 4 of the RAI1 gene that co-segregated with disease status in a single large family from Mali [@pmid:37994247]. Ten affected individuals were studied. Both TTTTA and TTTCA motifs were observed in all eight of the affected individuals with spanning reads, with allele sizes in the range: (TTTTA)278-773(TTTCA)9-334. A single individual was observed with additional motifs and interruptions in one allele with the structure: (TTTTA)exp(GGGGT)ins(GGGAT)ins(TTTCA)ins. TTTCA repeats were absent in 200 Malian controls, who had alleles in the range: (TTTCA)16-20. Reviewed in [@pmid:38876750]. It is uncertain if expansions at both the TTTTA and TTTCA motifs, or only the TTTCA motif are required for pathogenicity. The pathogenic range in STRchive is for the TTTCA motif only. Note: locus is partially deleted in T2T reference genome.",
   "mechanism": "Unknown",
   "mechanism_detail": "Expression isn't changed [@pmid:7994247].",
   "year": "2024 [@pmid:37994247]",
