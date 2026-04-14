@@ -201,13 +201,17 @@ SO  - Brain Commun. 2025 Nov 3;7(6):fcaf433. doi: 10.1093/braincomms/fcaf433.
 
 PMID- 41074692
 OWN - NLM
-STAT- Publisher
-LR  - 20251011
+STAT- MEDLINE
+DCOM- 20260307
+LR  - 20260307
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
-DP  - 2025 Oct 11
+VI  - 41
+IP  - 2
+DP  - 2026 Feb
 TI  - Association of Non-Coding Repeat Expansions with Parkinson's Disease Risk: 
       Evidence from a UK Biobank-Based Whole-Genome Sequencing Study.
+PG  - 515-521
 LID - 10.1002/mds.70081 [doi]
 AB  - BACKGROUND: Nucleotide repeat expansions are a potential factor in Parkinson's 
       disease (PD) risk, but previous studies were inconsistent. We investigated 14 
@@ -259,23 +263,40 @@ PL  - United States
 TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
+RN  - 0 (C9orf72 Protein)
+RN  - 0 (C9orf72 protein, human)
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 SB  - IM
+MH  - Humans
+MH  - *Parkinson Disease/genetics
+MH  - United Kingdom
+MH  - Whole Genome Sequencing
+MH  - Male
+MH  - Female
+MH  - *DNA Repeat Expansion/genetics
+MH  - Middle Aged
+MH  - Biological Specimen Banks
+MH  - Aged
+MH  - *Genetic Predisposition to Disease/genetics
+MH  - C9orf72 Protein/genetics
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
+MH  - UK Biobank
 OTO - NOTNLM
 OT  - Parkinson's disease
 OT  - non-coding repeat expansion
 OT  - whole-genome sequencing
 EDAT- 2025/10/11 12:31
-MHDA- 2025/10/11 12:31
+MHDA- 2026/03/07 16:10
 CRDT- 2025/10/11 06:13
 PHST- 2025/09/15 00:00 [revised]
 PHST- 2025/08/13 00:00 [received]
 PHST- 2025/09/19 00:00 [accepted]
-PHST- 2025/10/11 12:31 [medline]
+PHST- 2026/03/07 16:10 [medline]
 PHST- 2025/10/11 12:31 [pubmed]
 PHST- 2025/10/11 06:13 [entrez]
 AID - 10.1002/mds.70081 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2025 Oct 11. doi: 10.1002/mds.70081.
+PST - ppublish
+SO  - Mov Disord. 2026 Feb;41(2):515-521. doi: 10.1002/mds.70081. Epub 2025 Oct 11.
 
 PMID- 40442775
 OWN - NLM

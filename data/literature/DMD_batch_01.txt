@@ -1,14 +1,19 @@
 
 PMID- 41691287
 OWN - NLM
-STAT- Publisher
-LR  - 20260214
+STAT- PubMed-not-MEDLINE
+DCOM- 20260324
+LR  - 20260326
 IS  - 1755-8166 (Print)
+IS  - 1755-8166 (Electronic)
 IS  - 1755-8166 (Linking)
+VI  - 19
+IP  - 1
 DP  - 2026 Feb 14
 TI  - Clinical diagnosis and genetic analysis of a rare case of Duchenne muscular 
       dystrophy and spinal muscular atrophy.
 LID - 10.1186/s13039-026-00751-w [doi]
+LID - 11
 AB  - OBJECTIVE: To explore the clinical and genetic features both spinal muscular 
       atrophy (SMA) and Duchenne muscular dystrophy (DMD) diagnosed in a child. 
       METHODS: A child was diagnosed with SMA combined with a duplication of exons 2-20 
@@ -86,6 +91,7 @@ PL  - England
 TA  - Mol Cytogenet
 JT  - Molecular cytogenetics
 JID - 101317942
+PMC - PMC13011710
 OTO - NOTNLM
 OT  - Duchenne muscular dystrophy
 OT  - Optical genomics mapping technology
@@ -98,17 +104,20 @@ COIS- Declarations. Ethics approval and consent to participate: The research was
       of the child gave informed consent to the study. Competing interests: The authors 
       declare no competing interests.
 EDAT- 2026/02/15 00:31
-MHDA- 2026/02/15 00:31
+MHDA- 2026/02/15 00:32
+PMCR- 2026/02/14
 CRDT- 2026/02/14 23:26
 PHST- 2025/11/05 00:00 [received]
 PHST- 2026/02/03 00:00 [accepted]
-PHST- 2026/02/15 00:31 [medline]
+PHST- 2026/02/15 00:32 [medline]
 PHST- 2026/02/15 00:31 [pubmed]
 PHST- 2026/02/14 23:26 [entrez]
+PHST- 2026/02/14 00:00 [pmc-release]
 AID - 10.1186/s13039-026-00751-w [pii]
+AID - 751 [pii]
 AID - 10.1186/s13039-026-00751-w [doi]
-PST - aheadofprint
-SO  - Mol Cytogenet. 2026 Feb 14. doi: 10.1186/s13039-026-00751-w.
+PST - epublish
+SO  - Mol Cytogenet. 2026 Feb 14;19(1):11. doi: 10.1186/s13039-026-00751-w.
 
 PMID- 41244984
 OWN - NLM
@@ -1171,7 +1180,7 @@ SO  - Orphanet J Rare Dis. 2023 Jun 3;18(1):137. doi: 10.1186/s13023-023-02736-z
 PMID- 37090938
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20240211
+LR  - 20260302
 IS  - 2376-7839 (Print)
 IS  - 2376-7839 (Electronic)
 IS  - 2376-7839 (Linking)
@@ -1443,7 +1452,6 @@ AD  - Centre for Medical Research, University of Western Australia (C.F., G.R.),
 LA  - eng
 GR  - R01 HG009141/HG/NHGRI NIH HHS/United States
 GR  - T32 HG010464/HG/NHGRI NIH HHS/United States
-GR  - UM1 HG008900/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
 DEP - 20230314
 PL  - United States

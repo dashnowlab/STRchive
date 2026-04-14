@@ -274,12 +274,16 @@ SO  - Front Cell Infect Microbiol. 2025 Oct 17;15:1681807. doi:
 
 PMID- 41074680
 OWN - NLM
-STAT- Publisher
-LR  - 20251011
+STAT- MEDLINE
+DCOM- 20260317
+LR  - 20260317
 IS  - 2330-1619 (Electronic)
 IS  - 2330-1619 (Linking)
-DP  - 2025 Oct 11
+VI  - 13
+IP  - 3
+DP  - 2026 Mar
 TI  - Huntington's Disease and Huntington's Disease-like 2 (HDL2) in Martinique.
+PG  - 673-682
 LID - 10.1002/mdc3.70379 [doi]
 AB  - BACKGROUND: Huntington's Disease-like 2 (HDL2), caused by a CAG repeat expansion 
       in JPH3, closely resembles HD. All reported HDL2 patients to date have some 
@@ -364,25 +368,73 @@ PL  - United States
 TA  - Mov Disord Clin Pract
 JT  - Movement disorders clinical practice
 JID - 101630279
+RN  - Huntington Disease-Like 2
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - *Huntington Disease/epidemiology/genetics/physiopathology
+MH  - Middle Aged
+MH  - Adult
+MH  - Martinique/epidemiology
+MH  - Retrospective Studies
+MH  - Aged
+MH  - Pedigree
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - *Chorea/epidemiology/genetics
+MH  - Cognition Disorders
+MH  - Dementia
+MH  - Heredodegenerative Disorders, Nervous System
+PMC - PMC13042424
 OTO - NOTNLM
 OT  - Huntington's disease (HD)
 OT  - Huntington's disease type 2 (HDL2)
 OT  - clinical characterization
 OT  - epidemiology
 OT  - neurodegenerative disorders
+COIS- Ethical Compliance Statement: This project was approved by the University 
+      Hospital of Martinique's IRB (2023/019). Patients were systematically informed 
+      during their consultations that their clinical data could be used for research 
+      purposes and written informed consent was systematically collected at the time of 
+      the sampling for the genetic diagnosis following French Bioethical Law. They were 
+      given the opportunity to opt out at any time if they did not wish for their data 
+      to be used in research. We confirm that we have read the Journal's position on 
+      issues involved in ethical publication and affirm that this work is consistent 
+      with those guidelines. Funding Sources and Conflicts of Interest: AGGV Received 
+      financial support from Girci Soho for Huntington's related research; RLM received 
+      financial support for research activities from ABCD Charitable Fund and Abramson 
+      Fund; CG received financial support for clinical research activities from 
+      Registry of the European Huntington Disease Network (EHDN) and Enroll HD; the 
+      rest of the authors have no financial disclosure or conflict of interest to 
+      report related to the study. Financial Disclosures for the Previous 12 Months: 
+      AGGV received grants from FILNEMUS and Girci Soho; SD received honoraria for 
+      lectures from Biogen and Alexion; AS received honoraria for lectures from 
+      Alnylam; RLM received funding from the National Institute of Mental Health (NIH 
+      MH120550, NIH MH128715, NIH MH129277, NIH MH015330) and the National Institute of 
+      Neurological Disorders and Stroke (NIH NS119671, NIH NS122756, NIH NS125350); CG 
+      received consulting fees from Sanofi, Amicus, and Biogen; honorarium from Chiesi 
+      for participation in an advisory board; honoraria for lectures from Sanofi, 
+      Biomarin, Biogen; financial support for research activities from Agence Nationale 
+      de la Recherche (ANR), Biomarin; inscriptions and travels for congresses were 
+      funded by Takeda and Chiesi; RB organizes a rare diseases congress sponsored by 
+      Alnylam, Biogen, Alexion, Argenx, Chiesi, Novartis, PTC therapeutics, Orphalan 
+      and Sanofi; the rest of the authors have no financial disclosure to report.
 EDAT- 2025/10/11 12:32
-MHDA- 2025/10/11 12:32
+MHDA- 2026/03/17 06:48
+PMCR- 2025/10/11
 CRDT- 2025/10/11 06:02
 PHST- 2025/08/28 00:00 [revised]
 PHST- 2025/03/21 00:00 [received]
 PHST- 2025/09/11 00:00 [accepted]
-PHST- 2025/10/11 12:32 [medline]
+PHST- 2026/03/17 06:48 [medline]
 PHST- 2025/10/11 12:32 [pubmed]
 PHST- 2025/10/11 06:02 [entrez]
+PHST- 2025/10/11 00:00 [pmc-release]
+AID - MDC370379 [pii]
 AID - 10.1002/mdc3.70379 [doi]
-PST - aheadofprint
-SO  - Mov Disord Clin Pract. 2025 Oct 11. doi: 10.1002/mdc3.70379.
+PST - ppublish
+SO  - Mov Disord Clin Pract. 2026 Mar;13(3):673-682. doi: 10.1002/mdc3.70379. Epub 2025 
+      Oct 11.
 
 PMID- 41024012
 OWN - NLM
@@ -1362,7 +1414,7 @@ PMID- 38280392
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240219
-LR  - 20240219
+LR  - 20260320
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Linking)
 VI  - 23
@@ -1490,6 +1542,7 @@ PT  - Clinical Trial, Phase II
 PT  - Journal Article
 PT  - Multicenter Study
 PT  - Randomized Controlled Trial
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240124
 PL  - England
 TA  - Lancet Neurol
@@ -1498,6 +1551,8 @@ JID - 101139309
 RN  - 908SY76S4G (laquinimod)
 RN  - 0 (Quinolones)
 SB  - IM
+CIN - Lancet Neurol. 2024 Mar;23(3):220-221. doi: 10.1016/S1474-4422(24)00001-2. PMID: 
+      38280390
 MH  - Adult
 MH  - Male
 MH  - Humans
@@ -4384,7 +4439,7 @@ PMID- 31161452
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200128
-LR  - 20220521
+LR  - 20260305
 IS  - 1432-2072 (Electronic)
 IS  - 0033-3158 (Linking)
 VI  - 236
@@ -4458,6 +4513,7 @@ AU  - Volkow ND
 AD  - National Institute on Drug Abuse, Bethesda, National Institutes of Health, 
       Bethesda, MD, USA.
 LA  - eng
+GR  - R00 AA026892/AA/NIAAA NIH HHS/United States
 GR  - Y1AA-3009/Foundation for the National Institutes of Health/
 PT  - Journal Article
 DEP - 20190603
@@ -7177,7 +7233,7 @@ GR  - G1000758/MRC_/Medical Research Council/United Kingdom
 GR  - MR/L01341X/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
-PL  - United States
+PL  - England
 TA  - Am J Respir Cell Mol Biol
 JT  - American journal of respiratory cell and molecular biology
 JID - 8917225
@@ -10628,8 +10684,9 @@ PMID- 21630057
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120827
-LR  - 20211020
+LR  - 20260331
 IS  - 2211-3436 (Electronic)
+IS  - 2211-3428 (Print)
 IS  - 2211-3428 (Linking)
 VI  - 34
 IP  - 4
@@ -10703,13 +10760,17 @@ MH  - *Polymorphism, Genetic
 MH  - Polymorphism, Single Nucleotide/genetics
 MH  - Thymidylate Synthase/*genetics
 MH  - Treatment Outcome
+PMC - PMC12994960
 EDAT- 2011/06/02 06:00
 MHDA- 2012/08/28 06:00
+PMCR- 2011/06/01
 CRDT- 2011/06/02 06:00
 PHST- 2010/04/04 00:00 [accepted]
 PHST- 2011/06/02 06:00 [entrez]
 PHST- 2011/06/02 06:00 [pubmed]
 PHST- 2012/08/28 06:00 [medline]
+PHST- 2011/06/01 00:00 [pmc-release]
+AID - 30 [pii]
 AID - 10.1007/s13402-011-0030-z [doi]
 PST - ppublish
 SO  - Cell Oncol (Dordr). 2011 Aug;34(4):327-35. doi: 10.1007/s13402-011-0030-z. Epub 
