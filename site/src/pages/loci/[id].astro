@@ -414,6 +414,30 @@ const blame = getJsonBlame(
           </>
         )
       }
+
+            {
+        (!!locus.interruption_reference_orientation.length ||
+          !!locus.interruption_gene_orientation.length) && (
+          <>
+            <div class="box interruption">
+              <div data-tooltip="Interruption motif, reference orientation">
+                Interruption (ref.)
+              </div>
+              <div>
+                {locus.interruption_reference_orientation.join(", ") || "-"}
+              </div>
+            </div>
+            <div class="box interruption">
+              <div data-tooltip="Interruption motif, gene orientation">
+                Interruption (gene)
+              </div>
+              <div>
+                {locus.interruption_gene_orientation.join(", ") || "-"}
+              </div>
+            </div>
+          </>
+        )
+      }
     </div>
 
     <LineChart
@@ -618,6 +642,10 @@ const blame = getJsonBlame(
 
   .unknown {
     background: color-mix(in srgb, var(--tertiary), white 90%);
+  }
+
+  .interruption {
+    background: color-mix(in srgb, yellow, white 90%);
   }
 
   .heading {
