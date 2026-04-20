@@ -4,18 +4,13 @@
   padding: 5px 10px;
   gap: 5px;
   border-radius: 999px;
-  background: color-mix(in srgb, white, 20% var(--color));
-  color: var(--black);
   text-decoration: none;
   transition:
     background var(--fast),
-    color var(--fast);
+    color var(--fast),
+    opacity var(--fast);
 }
 
 .tag:hover {
-  background: color-mix(in srgb, white, 50% var(--color));
-}
-
-.icon {
-  color: var(--color);
+  opacity: 0.5;
 }

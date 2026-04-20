@@ -1,6 +1,6 @@
 import Link from "@/components/Link";
 import Table from "@/components/Table";
-import { classifications, getStyles } from "@/data/critria";
+import { evidenceOptions } from "@/data/evidence";
 import classes from "./CurationTable.module.css";
 
 /** column definitions */
@@ -28,8 +28,8 @@ const cols = [
     align: "center",
   },
   {
-    /** use classification number value so col sorted by that instead of alphabetically */
-    key: "classificationValue",
+    /** use number value so col sorted by that instead of alphabetically */
+    key: "classification_index",
     name: "Classification",
     style: {
       padding: 0,
@@ -38,7 +38,10 @@ const cols = [
       /** display normal classification string */
       const value = row.classification;
       return (
-        <div className={classes.classification} style={getStyles(value)}>
+        <div
+          className={classes.classification}
+          style={{ backgroundColor: row.bg, color: row.text }}
+        >
           {value}
         </div>
       );
@@ -62,12 +65,18 @@ const cols = [
 
 /** table for main critria page */
 const CurationTable = ({ curations }) => {
-  const mappedCurations = curations.map((curation) => ({
-    ...curation,
-    classificationValue: classifications.findIndex(({ match }) =>
-      curation.classification.match(match),
-    ),
-  }));
+  const mappedCurations = curations.map((curation) => {
+    const index = evidenceOptions.findIndex(
+      (tag) => curation.classification === tag.value,
+    );
+    const tag = evidenceOptions[index];
+    return {
+      ...curation,
+      bg: tag?.bg,
+      text: tag?.text,
+      classification_index: index,
+    };
+  });
 
   return (
     <Table

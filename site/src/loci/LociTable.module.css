@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.filters {
+  width: 100%;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
 .tags-cell {
   gap: 5px;
 }

@@ -1,56 +1,19 @@
 import { BsStars } from "react-icons/bs";
-import {
-  FaCircleCheck,
-  FaCircleExclamation,
-  FaCircleQuestion,
-  FaHourglassStart,
-} from "react-icons/fa6";
 import { newThreshold } from "./derived";
 
 /** https://tailwindcss.com/docs/colors */
 
-/** top-level tag types */
+/** order and properties of tags */
 export const tagOptions = [
-  /** "important" tags */
+  /** general */
   {
     value: "new",
     label: "New",
     tooltip: `Less than ~${newThreshold} years old`,
     Icon: BsStars,
-    color: "#0ea5e9",
-    important: true,
-  },
-  {
-    value: "contradictory_evidence",
-    label: "Contradictory",
-    tooltip: "Evidence either disputes or refutes gene-disease relationship",
-    Icon: FaCircleExclamation,
-    color: "#ef4444",
-    important: true,
-  },
-  {
-    value: "limited_evidence",
-    label: "Limited",
-    tooltip: "There is limited evidence for this locus-disease relationship",
-    Icon: FaCircleQuestion,
-    color: "#f59e0b",
-    important: true,
-  },
-  {
-    value: "supported_evidence",
-    label: "Supported",
-    tooltip: "There is compelling evidence for this locus-disease relationship",
-    Icon: FaCircleCheck,
-    color: "#10b981",
-    important: true,
-  },
-  {
-    value: "unknown_evidence",
-    label: "Not Evaluated",
-    tooltip: "This locus-disease relationship has not yet been evaluated",
-    Icon: FaHourglassStart,
-    color: "#64748b",
-    important: true,
+    bg: "var(--primary)",
+    text: "var(--white)",
+    filter: true,
   },
 
   /** locus tags */

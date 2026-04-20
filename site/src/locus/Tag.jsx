@@ -10,14 +10,15 @@ const Tag = ({ value }) => {
   const {
     Icon = () => <></>,
     label = fallback,
-    color = "var(--primary)",
+    bg = "var(--gray)",
+    text = "var(--white)",
     tooltip = fallback,
   } = option;
   return (
     <Link
       className={classes.tag}
       to={`/loci?tag=${value}#table`}
-      style={{ "--color": color }}
+      style={{ backgroundColor: bg, color: text }}
       data-tooltip={`${tooltip}.<br/>See other loci with this tag.`}
     >
       <Icon className={classes.icon} />
