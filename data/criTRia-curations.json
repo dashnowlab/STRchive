@@ -6852,4 +6852,280 @@
   "publication_interval_years": 6,
   "genetic_evidence_details": [],
   "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "DM1",
+  "Gene": "DMPK",
+  "Locus_ID": "DM1_DMPK",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt",
+  "Date": "07/21/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2,
+    "Functional Alteration": 1,
+    "Models": 2,
+    "Rescue": 3,
+    "Singular Evidence": 6,
+    "Statistics": 4,
+    "Function": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 25.28,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Allele",
+    "Score": 2,
+    "Citation": "pmid:32851192; pmid:39643839",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Interruptions impact phenotype/onset; several studies have shown correlation between allele length and onset/disease severity",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:20635151",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "50 patients",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 4,
+    "Citation": "pmid:7847063",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Case-control study was carried out on 25 patients with myotonic dystrophy (MyD) and 25 healthy subjects (p < 0.0001) ",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:39932794",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "MBNL overexpression rescues cardiac phenotypes in a myotonic dystrophy type 1 heart mouse model",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in cell culture",
+    "Score": 1,
+    "Citation": "pmid:16027111",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Knock-down of endogenous hnRNP H expression by siRNAs in cells expressing an EGFP gene fused to CUG repeats leads to release of nuclear sequestrated transcripts and restoration of EGFP expression",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:31649961",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Alkaline phosphatase-positive pericytes from skeletal muscle of a transgenic mouse model",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1,
+    "Citation": "pmid:31649961",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Alkaline phosphatase-positive pericytes from skeletal muscle of DM1 patients",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "DM2",
+  "Gene": "CNBP",
+  "Locus_ID": "DM2_CNBP",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt",
+  "Date": "07/21/2025",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 2.0,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Rescue": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 8.5
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 9.33,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:14505273",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "71 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:11486088",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Motif/interruptions differ between disease states; also major difference between pathogenic/nonpathogenic ranges",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:12970845",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LOD Score (19.521)",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Transgenic fly model",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Expression of DM2-106 in Drosophila muscles causes mis-splicing",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "RNA foci aggregates",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Alteration of retinal cells; disruption of morphology",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Rescue of phenotype with PKR-I",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:20971734",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Persistence of intron 1 sequences from the abnormal allele, decrease in total expression",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:20971734",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Aberrant Subcellular Localization",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:20971734",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Muscle cells from 16 patients and 10 controls",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
 }]
