@@ -32,11 +32,11 @@
     "evidence": {
       "section": "Overview",
       "title": "Level of Evidence",
-      "description": "Categorical level of evidence for the association between the locus and disease based on criTRia or similar curation framework",
+      "description": "Categorical level of evidence for the association between the locus and disease based on criTRia or similar curation framework. An association that has not yet been curated because it is recently published or limited data is available should be marked as Provisional.",
       "type": "array",
       "items": {
         "title": "",
-        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", null],
+        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null],
         "type": "string",
         "combobox": true
       }
@@ -667,13 +667,12 @@
     "locus_tags": {
       "section": "Locus",
       "title": "Locus Tags",
-      "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters. Some tags have specific meanings, such as sparse_evidence for loci with < 5 independent cases after 5 years of publication, or conflicting_evidence for loci where there is evidence for and against pathogenicity in the literature resulting in concern that the locus may not be pathogenic.",
+      "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters.",
       "type": "array",
       "uniqueItems": true,
       "items": {
         "title": "",
         "examples": [
-          "supported_evidence",
           "somatic_instability",
           "anticipation",
           "maternal_expansion",
@@ -688,9 +687,7 @@
           "motif_affects_penetrance",
           "motif_affects_severity",
           "motif_affects_phenotype",
-          "proposed_modifier",
-          "limited_evidence",
-          "contradictory_evidence"
+          "proposed_modifier"
         ],
         "type": ["string"],
         "pattern": "^[a-z0-9_]+$",
