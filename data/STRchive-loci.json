@@ -1491,7 +1491,7 @@
   "tr_atlas": ["TR116656"],
   "webstr_hg38": ["5075695"],
   "webstr_hg19": ["Expansion_FRA12A_MR/DIP2B"],
-  "locus_tags": ["limited_evidence"],
+  "locus_tags": [],
   "disease_tags": [],
   "references": ["pmid:3742859", "pmid:4042396", "omim:136630", "doi:10.1101/2022.09.12.22279739", "pmid:17236128", "pmid:39854091"],
   "additional_literature": ["pmid:38418263", "pmid:37248219", "pmid:37090938", "pmid:34622207"]
@@ -4890,7 +4890,7 @@
   "tr_atlas": ["TR38932"],
   "webstr_hg38": ["5034940", "769177"],
   "webstr_hg19": ["STR_1006941"],
-  "locus_tags": ["supported_evidence", "motif_affects_penetrance"],
+  "locus_tags": ["motif_affects_penetrance"],
   "disease_tags": ["familial_adult_myoclonic_epilepsy"],
   "references": ["pmid:22713812", "pmid:31539032", "pmid:38876750"],
   "additional_literature": ["pmid:41874439", "pmid:41219789", "pmid:38128822"]
