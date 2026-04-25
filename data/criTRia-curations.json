@@ -1317,7 +1317,7 @@
     "Genetic Evidence": 3.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 3,
   "publication_interval_years": 4.25,
   "genetic_evidence_details": [
@@ -1510,7 +1510,7 @@
 {
   "Disease_ID": "FAME8",
   "Gene": "RAI1",
-  "Locus_ID": "RAME8_RAI1",
+  "Locus_ID": "FAME8_RAI1",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
@@ -2432,7 +2432,7 @@
     "Genetic Evidence": 3.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 3,
   "publication_interval_years": 1.63,
   "genetic_evidence_details": [
@@ -2524,7 +2524,7 @@
     "Genetic Evidence": 2.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 2,
   "publication_interval_years": 7.46,
   "genetic_evidence_details": [
@@ -3444,7 +3444,7 @@
     "Genetic Evidence": 2.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 1,
   "publication_interval_years": null,
   "genetic_evidence_details": [
@@ -6860,6 +6860,9 @@
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt",
   "Date": "07/21/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "category_summary":
   {
@@ -6974,6 +6977,9 @@
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt",
   "Date": "07/21/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "category_summary":
   {
