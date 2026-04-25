@@ -15,7 +15,7 @@ export const evidenceOptions = [
     value: "Provisional",
     label: "Provisional",
     Icon: FaCircleQuestion,
-    tooltip: "This locus-disease relationship has been proposed but has not yet been evaluated",
+    tooltip: "Provisional: this locus-disease relationship has been proposed but has not yet been evaluated",
     bg: "var(--gray)",
     text: "var(--white)",
     filter: true,
