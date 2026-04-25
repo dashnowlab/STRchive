@@ -2,6 +2,8 @@ import { execSync } from "child_process";
 import { readFileSync } from "fs";
 import { maxBy } from "lodash-es";
 
+const NULL_HASH_RE = /^0+$/;
+
 /** get git blame info of json file entry. makes assumptions about structure and formatting. */
 export const getJsonBlame = (file, regex) => {
   /** split file into lines */
@@ -46,11 +48,24 @@ export const getJsonBlame = (file, regex) => {
 
 /** get version string from citation file */
 const getProjectVersion = (hash) => {
-  const [, version] =
-    getFileVersion("../CITATION.cff", hash).match(/version: (.+)/i) ?? [];
-  return version;
+  return (
+    getVersionFromFile(getFileVersion("../CITATION.cff", hash)) ??
+    getVersionFromFile(getFileVersion("../CITATION.cff"))
+  );
 };
 
+const getVersionFromFile = (contents) =>
+  contents?.match(/^version:\s*(.+)$/im)?.[1];
+
 /** get specific version of file */
-const getFileVersion = (file, hash) =>
-  execSync(hash ? `git show ${hash}:${file}` : `cat ${file}`).toString();
+const getFileVersion = (file, hash) => {
+  if (!hash || NULL_HASH_RE.test(hash)) {
+    return readFileSync(file, "utf-8");
+  }
+
+  try {
+    return execSync(`git show ${hash}:${file}`).toString();
+  } catch {
+    return readFileSync(file, "utf-8");
+  }
+};

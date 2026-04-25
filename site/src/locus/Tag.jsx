@@ -4,7 +4,11 @@ import { tagOptions } from "@/data/tags";
 import classes from "./Tag.module.css";
 
 /** tag pill link */
-const Tag = ({ value }) => {
+const Tag = ({
+  value,
+  to = undefined,
+  tooltipDetail = "See other loci with this tag.",
+}) => {
   const option = tagOptions.find((t) => t.value === value) ?? {};
   const fallback = startCase(value);
   const {
@@ -17,9 +21,9 @@ const Tag = ({ value }) => {
   return (
     <Link
       className={classes.tag}
-      to={`/loci?tag=${value}#table`}
+      to={to ?? `/loci?tag=${value}#table`}
       style={{ backgroundColor: bg, color: text }}
-      data-tooltip={`${tooltip}.<br/>See other loci with this tag.`}
+      data-tooltip={`${tooltip}.<br/>${tooltipDetail}`}
     >
       <Icon className={classes.icon} />
       {label}

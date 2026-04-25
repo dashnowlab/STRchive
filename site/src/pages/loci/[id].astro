@@ -20,9 +20,11 @@ import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
+import Evidence from "@/locus/Evidence";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
 import gnomad from "~/plots/gnomad.json";
+import curations from "~/criTRia-curations.json";
 import citations from "~/STRchive-citations.json";
 import loci from "~/STRchive-loci.json";
 
@@ -50,6 +52,9 @@ const blame = getJsonBlame(
   "../data/STRchive-loci.json",
   `"id":\\s*"${id}"\\s*,`,
 );
+
+/** whether there is a corresponding criTRia curation page */
+const hasCuration = curations.some((curation) => curation.Locus_ID === id);
 ---
 
 <Layout title={locus.nice_id}>
@@ -58,6 +63,18 @@ const blame = getJsonBlame(
   <!-- overview -->
   <section>
     <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
+
+    {
+      locus.evidence && (
+        <div class="row">
+          <Evidence
+            client:load
+            value={locus.evidence}
+            critriaId={hasCuration ? id : undefined}
+          />
+        </div>
+      )
+    }
 
     {
       !!locus.locus_tags.length && (
