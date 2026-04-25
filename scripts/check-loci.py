@@ -340,16 +340,6 @@ def lift_over(loci_data, ref_dir):
 
     return loci_data
 
-def check_tags(record):
-    """
-    Check if an evidence tag is present, and if not add the "unknown_evidence" tag.
-    """
-    if not any(tag.endswith('_evidence') for tag in record["locus_tags"]):
-        record["locus_tags"].append("unknown_evidence")
-        sys.stderr.write(f'Adding unknown_evidence tag to {record["id"]}\n')
-
-    return record
-
 def parse_curations(curations_json):
     with open(curations_json, 'r') as curations_file:
         curations_data = json.load(curations_file)
@@ -397,7 +387,6 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
             # Check if the field contains a string that should be a list
             record = check_list_fields(record)
             record = check_motif_orientation(record)
-            record = check_tags(record)
 
             # Update disease association tags based on curations
             if curations_json:
