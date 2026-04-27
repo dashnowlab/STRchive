@@ -612,7 +612,7 @@
   {
     "Evidence type": "Allele",
     "Score": 2.0,
-    "Citation": " pmid:4114795",
+    "Citation": "pmid:4114795",
     "Values": null,
     "Evidence detail": null,
     "Notes": "a higher number of CAG repeats correlates with earlier onset of DRPLA and higher chance of epilepsy",
@@ -814,7 +814,7 @@
   {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
-    "Citation": "11889467",
+    "Citation": "pmid:11889467",
     "Values": null,
     "Evidence detail": null,
     "Notes": "transciptional repression",
@@ -826,7 +826,7 @@
   {
     "Evidence type": "Regulatory Impact",
     "Score": 0.5,
-    "Citation": "12874418; 11889467",
+    "Citation": "pmid:12874418; pmid:11889467",
     "Values": null,
     "Evidence detail": null,
     "Notes": "on cell surface",
@@ -7129,6 +7129,321 @@
     "Values": null,
     "Evidence detail": null,
     "Notes": "Muscle cells from 16 patients and 10 controls",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "BPES",
+  "Gene": "FOXL2",
+  "Locus_ID": "BPES_FOXL2",
+  "Inheritance": "AD, AR",
+  "Curator": "Laurel Hiatt",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3.0,
+    "Functional Alteration": 0.5,
+    "Models": 4,
+    "Singular Evidence": 6.0,
+    "Rescue": 0,
+    "Statistics": 0,
+    "Function": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 5.5,
+    "Genetic Evidence": 9.0
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 7.08,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 2.5,
+    "Citation": "pmid:11468277",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "5, probands and sporadic",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.5,
+    "Citation": "pmid:27283035",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "5 probands, some with multiple generations, etc",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.0,
+    "Citation": "pmid:33875939",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Highly conserved ",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 2.0,
+    "Citation": "pmid:33875939",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "lod score ~3.9 i think, panel/targeted sequencing",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:15591279",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:18372316",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-Human Model Organism",
+    "Score": 4.0,
+    "Citation": "pmid:22248822",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Review describes multiple animal models, cell models and protein alteration. Here scored based on animal models.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "RCPS",
+  "Gene": "EIF4A3",
+  "Locus_ID": "RCPS_EIF4A3",
+  "Inheritance": "AR",
+  "Curator": "Laurel Hiatt",
+  "Date": "06/02/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Functional Alteration": 2,
+    "Models": 4,
+    "Singular Evidence": 6,
+    "Rescue": 0,
+    "Statistics": 0,
+    "Function": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 9
+  },
+  "total_score": 15,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": 4.24,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:29112243",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "6 families with clinical characterization, sequencing etc.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 3,
+    "Citation": "pmid:24360810",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LoD score 9.533, WES",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2,
+    "Citation": "pmid:28334780",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 3,
+    "Citation": "pmid:28334780",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Conditional mouse model ",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:24360810",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Zebrafish ",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA27B",
+  "Gene": "FGF14",
+  "Locus_ID": "SCA27B_FGF14",
+  "Inheritance": "AR",
+  "Curator": "Laurel Hiatt, Harriet Dashnow",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3.0,
+    "Function": 0.5,
+    "Functional Alteration": 2.0,
+    "Models": 1.0,
+    "Singular Evidence": 6.0,
+    "Rescue": 0,
+    "Statistics": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.5,
+    "Genetic Evidence": 9.0
+  },
+  "total_score": 12.5,
+  "classification": "Strong",
+  "publication_count": 5,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:36493768",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "13 affected individuals with expansion per PCR in the discovery cohort, 8 confirmed with short read sequencing, 5 of these with long reads. primary fibroblasts from 3 probands showed reduced FGF14 expression",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39263992",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.0,
+    "Citation": "pmid:12489043",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LOD for marker region 4.28",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:12123606",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:17978045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:39263992",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
