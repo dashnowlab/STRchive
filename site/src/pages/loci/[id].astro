@@ -19,12 +19,12 @@ import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
-import Gnomad from "@/locus/Gnomad";
 import Evidence from "@/locus/Evidence";
+import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
-import gnomad from "~/plots/gnomad.json";
 import curations from "~/criTRia-curations.json";
+import gnomad from "~/plots/gnomad.json";
 import citations from "~/STRchive-citations.json";
 import loci from "~/STRchive-loci.json";
 
@@ -432,7 +432,7 @@ const hasCuration = curations.some((curation) => curation.Locus_ID === id);
         )
       }
 
-            {
+      {
         (!!locus.interruption_reference_orientation.length ||
           !!locus.interruption_gene_orientation.length) && (
           <>
@@ -448,9 +448,7 @@ const hasCuration = curations.some((curation) => curation.Locus_ID === id);
               <div data-tooltip="Interruption motif, gene orientation">
                 Interruption (gene)
               </div>
-              <div>
-                {locus.interruption_gene_orientation.join(", ") || "-"}
-              </div>
+              <div>{locus.interruption_gene_orientation.join(", ") || "-"}</div>
             </div>
           </>
         )

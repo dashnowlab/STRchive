@@ -44,39 +44,21 @@ const cols = [
     name: "Tags",
     render: (cell, row) => (
       <div className={clsx("row", classes["tags-cell"])}>
-        {tagOptions
-          .filter(({ value }) => row.locus_tags.includes(value))
-          .map(({ Icon, bg, tooltip }, index) =>
-            Icon ? (
-              <Icon
-                key={index}
-                className={classes.icon}
-                style={{ color: bg }}
-                data-tooltip={tooltip}
-              />
-            ) : null,
-          )}
-      </div>
-    ),
-  },
-  {
-    /** use number value so col sorted by that instead of alphabetically */
-    key: "evidence_index",
-    name: "Evidence",
-    render: (cell, row) => (
-      <div className={clsx("row", classes["tags-cell"])}>
-        {evidenceOptions
-          .filter(({ value }) => row.evidence.includes(value))
-          .map(({ Icon, bg, tooltip }, index) =>
-            Icon ? (
-              <Icon
-                key={index}
-                className={classes.icon}
-                style={{ color: bg }}
-                data-tooltip={tooltip}
-              />
-            ) : null,
-          )}
+        {[
+          ...tagOptions.filter(({ value }) => row.locus_tags.includes(value)),
+          ...evidenceOptions.filter(({ value }) =>
+            row.evidence.includes(value),
+          ),
+        ].map(({ Icon, bg, tooltip }, index) =>
+          Icon ? (
+            <Icon
+              key={index}
+              className={classes.icon}
+              style={{ color: bg }}
+              data-tooltip={tooltip}
+            />
+          ) : null,
+        )}
       </div>
     ),
   },
@@ -196,13 +178,10 @@ const LociTable = ({ loci }) => {
     .map((locus) => ({
       ...locus,
       /** index of matching tag, for sorting */
-      tag_index: filterTags.findIndex((tag) =>
-        locus.locus_tags.includes(tag.value),
-      ),
-      /** index of matching evidence, for sorting */
-      evidence_index: filterEvidence.findIndex((evidence) =>
-        locus.evidence.includes(evidence.value),
-      ),
+      tag_index: [
+        getIndex(filterEvidence, locus.evidence),
+        getIndex(filterTags, locus.locus_tags),
+      ].join("_"),
     }))
     .filter(
       (d) =>
@@ -244,10 +223,11 @@ const LociTable = ({ loci }) => {
       <div className={clsx("row", classes.filters)}>
         <div className="row">
           <Popover
-            label="Tags/Ev."
+            label="Tags"
             button={(() => {
-              const counts = countBy(tags);
-              if (counts.mixed === tags.length) return <>Any</>;
+              const all = [...tags, ...evidence];
+              const counts = countBy(all);
+              if (counts.mixed === all.length) return <>Any</>;
 
               return (
                 <>
@@ -372,3 +352,11 @@ const LociTable = ({ loci }) => {
 };
 
 export default LociTable;
+
+/** from list of possible values, get alphabetical index of first match (for sorting) */
+const getIndex = (options, values) =>
+  String.fromCharCode(
+    options.findIndex((option) => values.includes(option.value)) +
+      /** start at lowercase a */
+      98,
+  );
