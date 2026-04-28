@@ -12,6 +12,7 @@ import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
 import TableOfContents from "@/components/TableOfContents";
+import Tag from "@/components/Tag";
 import { deriveLocus } from "@/data/derived";
 import { getIdentifiers } from "@/data/identifiers";
 import { getInheritance } from "@/data/inheritance";
@@ -20,8 +21,8 @@ import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
-import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
+import curations from "~/criTRia-curations.json";
 import gnomad from "~/plots/gnomad.json";
 import citations from "~/STRchive-citations.json";
 import loci from "~/STRchive-loci.json";
@@ -50,6 +51,9 @@ const blame = getJsonBlame(
   "../data/STRchive-loci.json",
   `"id":\\s*"${id}"\\s*,`,
 );
+
+/** get corresponding criTRia curation page */
+const curation = curations.find((curation) => curation.Locus_ID === id);
 ---
 
 <Layout title={locus.nice_id}>
@@ -59,15 +63,29 @@ const blame = getJsonBlame(
   <section>
     <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
-    {
-      !!locus.locus_tags.length && (
-        <div class="row">
-          {locus.locus_tags?.map((tag) => (
-            <Tag value={tag} />
-          ))}
-        </div>
-      )
-    }
+    <div class="row">
+      {
+        !!locus.evidence?.length &&
+          locus.evidence?.map((evidence) => (
+            <Tag
+              value={evidence}
+              to={curation ? `/critria/${curation.Locus_ID}` : undefined}
+              tooltip="See criTRia curation for this locus"
+            />
+          ))
+      }
+
+      {
+        !!locus.locus_tags?.length &&
+          locus.locus_tags?.map((tag) => (
+            <Tag
+              value={tag}
+              to={`/loci?tag=${tag}#table`}
+              tooltip="See other loci with this tag"
+            />
+          ))
+      }
+    </div>
 
     <div class="boxes">
       <div class="box">
@@ -147,10 +165,14 @@ const blame = getJsonBlame(
   <section>
     <Heading client:load level={2}>Disease</Heading>
     {
-      !!locus.disease_tags.length && (
+      !!locus.disease_tags?.length && (
         <div class="row">
           {locus.disease_tags?.map((tag) => (
-            <Tag value={tag} />
+            <Tag
+              value={tag}
+              to={`/loci?tag=${tag}#table`}
+              tooltip="See other loci with this tag"
+            />
           ))}
         </div>
       )
@@ -415,7 +437,7 @@ const blame = getJsonBlame(
         )
       }
 
-            {
+      {
         (!!locus.interruption_reference_orientation.length ||
           !!locus.interruption_gene_orientation.length) && (
           <>
@@ -431,9 +453,7 @@ const blame = getJsonBlame(
               <div data-tooltip="Interruption motif, gene orientation">
                 Interruption (gene)
               </div>
-              <div>
-                {locus.interruption_gene_orientation.join(", ") || "-"}
-              </div>
+              <div>{locus.interruption_gene_orientation.join(", ") || "-"}</div>
             </div>
           </>
         )

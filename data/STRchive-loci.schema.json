@@ -29,6 +29,18 @@
       "examples": ["RFC1"],
       "type": ["string"]
     },
+    "evidence": {
+      "section": "Overview",
+      "title": "Level of Evidence",
+      "description": "Categorical level of evidence for the association between the locus and disease based on criTRia or similar curation framework. An association that has not yet been curated because it is recently published or limited data is available should be marked as Provisional.",
+      "type": "array",
+      "items": {
+        "title": "",
+        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null],
+        "type": "string",
+        "combobox": true
+      }
+    },
     "chrom": {
       "section": "Locus",
       "title": "Chromosome",
@@ -107,6 +119,19 @@
         "title": "Type",
         "type": ["string", "null"],
         "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT"]
+      }
+    },
+    "association_type": {
+      "section": "Disease",
+      "title": "Association Type",
+      "description": "Type of association between the locus and disease. Mendelian indicates a causal relationship where the repeat expansion is sufficient to cause disease. Risk indicates that the repeat expansion is a risk factor for the disease but not sufficient to cause disease on its own. Modifier indicates that the repeat expansion modifies the phenotype of a disease caused by another variant, e.g. by affecting age of onset or severity.",
+      "examples": ["Mendelian"],
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "Type",
+        "type": ["string", "null"],
+        "enum": ["Mendelian", "Risk", "Modifier"]
       }
     },
     "disease_description": {
@@ -642,13 +667,12 @@
     "locus_tags": {
       "section": "Locus",
       "title": "Locus Tags",
-      "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters. Some tags have specific meanings, such as sparse_evidence for loci with < 5 independent cases after 5 years of publication, or conflicting_evidence for loci where there is evidence for and against pathogenicity in the literature resulting in concern that the locus may not be pathogenic.",
+      "description": "Tags for the locus, used for grouping similar loci and for flagging loci with specific characteristics. Should be snake_case (lower case with underscores) and not contain spaces or special characters.",
       "type": "array",
       "uniqueItems": true,
       "items": {
         "title": "",
         "examples": [
-          "supported_evidence",
           "somatic_instability",
           "anticipation",
           "maternal_expansion",
@@ -663,9 +687,7 @@
           "motif_affects_penetrance",
           "motif_affects_severity",
           "motif_affects_phenotype",
-          "proposed_modifier",
-          "limited_evidence",
-          "contradictory_evidence"
+          "proposed_modifier"
         ],
         "type": ["string"],
         "pattern": "^[a-z0-9_]+$",
@@ -728,6 +750,7 @@
     "id",
     "disease_id",
     "gene",
+    "evidence",
     "chrom",
     "start_hg38",
     "stop_hg38",
@@ -736,6 +759,7 @@
     "start_t2t",
     "stop_t2t",
     "disease",
+    "association_type",
     "inheritance",
     "disease_description",
     "hpo_terms",

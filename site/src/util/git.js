@@ -39,18 +39,23 @@ export const getJsonBlame = (file, regex) => {
   date = new Date(date).toLocaleString(undefined, { dateStyle: "medium" });
 
   /** get project version */
-  const version = getProjectVersion(hash);
+  const version = getVersion(getFile("../CITATION.cff", hash));
 
   return { start, end, line, hash, author, date, version };
 };
 
-/** get version string from citation file */
-const getProjectVersion = (hash) => {
-  const [, version] =
-    getFileVersion("../CITATION.cff", hash).match(/version: (.+)/i) ?? [];
-  return version;
-};
+/** extract version field from yaml string */
+const getVersion = (contents) =>
+  contents?.match(/^version:\s*(.+)$/im)?.[1] ?? "";
 
-/** get specific version of file */
-const getFileVersion = (file, hash) =>
-  execSync(hash ? `git show ${hash}:${file}` : `cat ${file}`).toString();
+/** get contents of file w/ optional hash version */
+const getFile = (file, hash) => {
+  try {
+    if (!hash) throw Error("no hash");
+    const contents = execSync(`git show ${hash}:${file}`).toString();
+    if (!contents.trim()) throw Error("empty");
+    return contents;
+  } catch {
+    return readFileSync(file, "utf-8");
+  }
+};

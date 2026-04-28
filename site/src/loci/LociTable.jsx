@@ -10,6 +10,7 @@ import NumberBox from "@/components/NumberBox";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
 import Table from "@/components/Table";
+import Tag from "@/components/Tag";
 import TextBox from "@/components/TextBox";
 import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
@@ -17,8 +18,8 @@ import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
 import classes from "./LociTable.module.css";
 
-/** tags considered important enough to show in table and filters */
-const importantTagOptions = tagOptions.filter((tag) => tag.important);
+/** tags to show in table and filters */
+const filterTags = tagOptions.filter((tag) => tag.filter);
 
 /** column definitions */
 const cols = [
@@ -36,14 +37,17 @@ const cols = [
     sortable: false,
   },
   {
-    key: "locus_tags",
+    /** use number value so col sorted by that instead of alphabetically */
+    key: "tag_sort",
     name: "Tags",
-    render: (cell) => (
+    render: (cell, row) => (
       <div className={clsx("row", classes["tags-cell"])}>
-        {importantTagOptions
-          .filter(({ value }) => cell.includes(value))
-          .map(({ Icon, color, tooltip }, index) => (
-            <Icon key={index} style={{ color }} data-tooltip={tooltip} />
+        {tagOptions
+          .filter(
+            ({ key, value, filter }) => filter && row[key]?.includes(value),
+          )
+          .map(({ value }, index) => (
+            <Tag key={index} value={value} small />
           ))}
       </div>
     ),
@@ -134,21 +138,18 @@ const LociTable = ({ loci }) => {
     /** set states. don't do as default useState values due to window obj and url param being blank on first SSR. */
 
     /** if url tag not one of important tags (checkboxes), search for tag */
-    if (!map(importantTagOptions, "value").includes(tag))
-      setSearch(normalize(tag));
+    if (!map(filterTags, "value").includes(tag)) setSearch(normalize(tag));
     else
       /** set checkboxes */
       setTags(
-        map(importantTagOptions, "value").map((value) =>
+        map(filterTags, "value").map((value) =>
           value === tag ? true : "mixed",
         ),
       );
   }, []);
 
   /** selected tag filters */
-  const [tags, setTags] = useState(
-    Array(importantTagOptions.length).fill("mixed"),
-  );
+  const [tags, setTags] = useState(Array(filterTags.length).fill("mixed"));
   /** motif filter state */
   const [motifMin, setMotifMin] = useState(shortestMotif);
   const [motifMax, setMotifMax] = useState(longestMotif);
@@ -159,35 +160,48 @@ const LociTable = ({ loci }) => {
 
   const normalizedSearch = normalize(search);
 
-  const filteredLoci = derivedLoci.filter(
-    (d) =>
-      /** filter by free text search visible columns */
-      normalize(
-        getValues(
-          pick(d, [...map(cols, "key"), "locus_tags", "disease_tags"]),
-        ).join(" "),
-      ).includes(normalizedSearch) &&
-      /** filter by tags */
-      importantTagOptions.every(({ value }, index) => {
-        const filter = tags[index];
-        if (filter === undefined) return;
-        /** if "mixed", keep locus whether it includes tag or not */
-        if (filter === "mixed") return true;
-        /** if true, keep locus if includes tag. if false, keep if doesn't. */ else
-          return d.locus_tags.includes(value) === filter;
-      }) &&
-      /** filter by motif lengths */
-      d.pathogenic_motif_reference_orientation.every(
-        (m) => m.length >= motifMin && m.length <= motifMax,
-      ) &&
-      /** filter by inheritance type */
-      (inheritance === "all" || d.inheritance.includes(inheritance)),
-  );
+  const filteredLoci = derivedLoci
+    .map((locus) => ({
+      ...locus,
+      /** for sorting */
+      tag_sort: ["evidence", "locus_tags", "disease_tags"].map((key) =>
+        filterTags.findIndex(({ value }) => locus[key]?.includes(value)),
+      ),
+    }))
+    .filter(
+      (d) =>
+        /** filter by free text search visible columns */
+        normalize(
+          getValues(
+            pick(d, [
+              ...map(cols, "key"),
+              "locus_tags",
+              "disease_tags",
+              "evidence",
+            ]),
+          ).join(" "),
+        ).includes(normalizedSearch) &&
+        /** filter by tags */
+        filterTags.every(({ key, value }, index) => {
+          const filter = tags[index];
+          if (filter === undefined) return;
+          /** if "mixed", keep locus whether it includes tag or not */
+          if (filter === "mixed") return true;
+          /** if true, keep locus if includes tag. if false, keep if doesn't. */ else
+            return d[key]?.includes(value) === filter;
+        }) &&
+        /** filter by motif lengths */
+        d.pathogenic_motif_reference_orientation.every(
+          (m) => m.length >= motifMin && m.length <= motifMax,
+        ) &&
+        /** filter by inheritance type */
+        (inheritance === "all" || d.inheritance.includes(inheritance)),
+    );
 
   return (
     <div className={clsx("col", classes.table)}>
       {/* filters */}
-      <div className="row">
+      <div className={clsx("row", classes.filters)}>
         <div className="row">
           <Popover
             label="Tags"
@@ -213,26 +227,24 @@ const LociTable = ({ loci }) => {
               );
             })()}
           >
-            {importantTagOptions.map(
-              ({ Icon, label, color, tooltip }, index) => (
-                <CheckBox
-                  key={index}
-                  label={
-                    <>
-                      <Icon style={{ color }} />
-                      {label}
-                    </>
-                  }
-                  checked={tags[index]}
-                  onChange={(value) => {
-                    const newTags = [...tags];
-                    newTags[index] = value;
-                    setTags(newTags);
-                  }}
-                  tooltip={tooltip}
-                />
-              ),
-            )}
+            {filterTags.map(({ description, Icon, label, bg }, index) => (
+              <CheckBox
+                key={index}
+                label={
+                  <>
+                    <Icon className={classes.icon} style={{ color: bg }} />
+                    {label}
+                  </>
+                }
+                checked={tags[index]}
+                onChange={(value) => {
+                  const newTags = [...tags];
+                  newTags[index] = value;
+                  setTags(newTags);
+                }}
+                tooltip={description}
+              />
+            ))}
           </Popover>
         </div>
 
@@ -272,6 +284,8 @@ const LociTable = ({ loci }) => {
             options={inheritanceOptions}
           />
         </div>
+
+        <div className={classes.spacer} />
 
         {/* row count */}
         <div className="row">

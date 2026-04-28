@@ -7,6 +7,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "6/6/2025",
   "Manual_evidence_level": "Disputed",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -120,6 +123,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -257,6 +263,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -347,6 +356,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Disputed",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 1.0,
@@ -424,6 +436,9 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 2,
@@ -502,6 +517,9 @@
   "Curator": "Laurel Hiatt",
   "Date": "5/14/2025",
   "Manual_evidence_level": "Refuted",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 0,
@@ -556,6 +574,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -591,7 +612,7 @@
   {
     "Evidence type": "Allele",
     "Score": 2.0,
-    "Citation": " pmid:4114795",
+    "Citation": "pmid:4114795",
     "Values": null,
     "Evidence detail": null,
     "Notes": "a higher number of CAG repeats correlates with earlier onset of DRPLA and higher chance of epilepsy",
@@ -658,6 +679,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -790,7 +814,7 @@
   {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
-    "Citation": "11889467",
+    "Citation": "pmid:11889467",
     "Values": null,
     "Evidence detail": null,
     "Notes": "transciptional repression",
@@ -802,7 +826,7 @@
   {
     "Evidence type": "Regulatory Impact",
     "Score": 0.5,
-    "Citation": "12874418; 11889467",
+    "Citation": "pmid:12874418; pmid:11889467",
     "Values": null,
     "Evidence detail": null,
     "Notes": "on cell surface",
@@ -820,6 +844,9 @@
   "Curator": "Macayla Weiner",
   "Date": "3/9/2025",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 1.0,
@@ -910,6 +937,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -1011,6 +1041,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3.0,
@@ -1101,6 +1134,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/2025",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3.0,
@@ -1262,6 +1298,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -1278,7 +1317,7 @@
     "Genetic Evidence": 3.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 3,
   "publication_interval_years": 4.25,
   "genetic_evidence_details": [
@@ -1346,11 +1385,14 @@
 },
 {
   "Disease_ID": "FAME6",
-  "Gene": "TNRC 6A",
+  "Gene": "TNRC6A",
   "Locus_ID": "FAME6_TNRC6A",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.0,
@@ -1416,6 +1458,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1,
@@ -1465,10 +1510,13 @@
 {
   "Disease_ID": "FAME8",
   "Gene": "RAI1",
-  "Locus_ID": "RAME8_RAI1",
+  "Locus_ID": "FAME8_RAI1",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -1583,6 +1631,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -1828,6 +1879,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -1965,6 +2019,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Singular Evidence": 3,
@@ -2019,6 +2076,9 @@
   "Curator": "Macayla Weiner",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 1.5,
@@ -2145,6 +2205,9 @@
   "Curator": "Macayla Weiner",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -2240,12 +2303,15 @@
   }]
 },
 {
-  "Disease_ID": "HFG",
-  "Gene": "HOXA13-1",
-  "Locus_ID": "HFG_HOXA13-1",
+  "Disease_ID": "HFG-I",
+  "Gene": "HOXA13",
+  "Locus_ID": "HFG_HOXA13-I",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 1.0,
@@ -2347,6 +2413,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -2363,7 +2432,7 @@
     "Genetic Evidence": 3.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 3,
   "publication_interval_years": 1.63,
   "genetic_evidence_details": [
@@ -2436,6 +2505,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -2452,7 +2524,7 @@
     "Genetic Evidence": 2.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 2,
   "publication_interval_years": 7.46,
   "genetic_evidence_details": [
@@ -2537,6 +2609,9 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -2615,6 +2690,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "3/2/26",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.0,
@@ -2728,6 +2806,9 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -2878,6 +2959,9 @@
   "Curator": "Macayla, Laurel",
   "Date": "8/12/2025",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 1.5,
@@ -2961,12 +3045,15 @@
   }]
 },
 {
-  "Disease_ID": "MIR7-2",
-  "Gene": "CHNG3",
-  "Locus_ID": "MIR7-2_CHNG3",
+  "Disease_ID": "CHNG3",
+  "Gene": "MIR7-2",
+  "Locus_ID": "CHNG3_MIR7-2",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -3057,6 +3144,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/11/2025",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -3194,6 +3284,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -3332,6 +3425,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/2025",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 0.5,
@@ -3348,7 +3444,7 @@
     "Genetic Evidence": 2.0
   },
   "total_score": 6.0,
-  "classification": "Limited",
+  "classification": "Moderate",
   "publication_count": 1,
   "publication_interval_years": null,
   "genetic_evidence_details": [
@@ -3439,12 +3535,15 @@
   }]
 },
 {
-  "Disease_ID": "OPDM",
+  "Disease_ID": "OPDM5",
   "Gene": "ABCD3",
-  "Locus_ID": "OPDM_ABCD3",
+  "Locus_ID": "OPDM5_ABCD3",
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt, Macayla Weiner",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -3559,6 +3658,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -3648,6 +3750,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -3738,6 +3843,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -3887,6 +3995,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.5,
@@ -3989,6 +4100,9 @@
   "Curator": "Laurel Hiatt, Macayla Weiner",
   "Date": "8/18/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1,
@@ -4054,6 +4168,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -4180,6 +4297,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -4330,6 +4450,9 @@
   "Curator": "Macayla Weiner, Laural Hiatt",
   "Date": "8/12/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -4492,6 +4615,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/11/2025",
   "Manual_evidence_level": "",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.0,
@@ -4642,6 +4768,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2,
@@ -4756,6 +4885,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -4905,6 +5037,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/11/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 1.0,
@@ -5043,6 +5178,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/11/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.0,
@@ -5181,6 +5319,9 @@
   "Curator": "Laurel Hiatt",
   "Date": "8/18/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -5342,6 +5483,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -5456,6 +5600,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -5654,6 +5801,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -5816,6 +5966,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/12/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Function": 2,
@@ -5954,6 +6107,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 2.5,
@@ -6091,6 +6247,9 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Models": 1,
@@ -6144,6 +6303,9 @@
   "Inheritance": "XR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/25",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Singular Evidence": 3.5,
@@ -6186,6 +6348,9 @@
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/14/2025",
   "Manual_evidence_level": "Definitive",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
   "category_summary":
   {
     "Collective Evidence": 3,
@@ -6290,5 +6455,1208 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "ADTKD",
+  "Gene": "MUC1",
+  "Locus_ID": "ADTKD_MUC1",
+  "Inheritance": "AD",
+  "Curator": "Kidney Cystic and Ciliopathy Disorders GCEP",
+  "Date": "01/13/2021",
+  "Manual_evidence_level": null,
+  "Description": "Gene curation by ClinGen: https://search.clinicalgenome.org/CCID:005506",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP8",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 4,
+    "Genetic Evidence": 12
+  },
+  "total_score": 16,
+  "classification": "Definitive",
+  "publication_count": null,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "CANVAS",
+  "Gene": "RFC1",
+  "Locus_ID": "CANVAS_RFC1",
+  "Inheritance": "AR",
+  "Curator": "Cerebellar Ataxia GCEP",
+  "Date": "10/09/2024",
+  "Manual_evidence_level": null,
+  "Description": "https://search.clinicalgenome.org/CCID:008456",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP10",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2,
+    "Genetic Evidence": 12
+  },
+  "total_score": 14,
+  "classification": "Definitive",
+  "publication_count": null,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "CCHS",
+  "Gene": "PHOX2B",
+  "Locus_ID": "CCHS_PHOX2B",
+  "Inheritance": "AD",
+  "Curator": "Hereditary Cancer GCEP",
+  "Date": "12/30/2022",
+  "Manual_evidence_level": null,
+  "Description": "https://search.clinicalgenome.org/CCID:005790",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP9",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 5,
+    "Genetic Evidence": 12
+  },
+  "total_score": 17,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 11,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "EDM1-PSACH",
+  "Gene": "COMP",
+  "Locus_ID": "EDM1-PSACH_COMP",
+  "Inheritance": "AD",
+  "Curator": "Skeletal Disorders GCEP",
+  "Date": "02/28/2025",
+  "Manual_evidence_level": null,
+  "Description": "Disease: COMP-related skeletal dysplasia https://search.clinicalgenome.org/CCID:008836",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP11",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 10.7
+  },
+  "total_score": 16.7,
+  "classification": "Definitive",
+  "publication_count": 17,
+  "publication_interval_years": 26,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "EPM1",
+  "Gene": "CSTB",
+  "Locus_ID": "EPM1_CSTB",
+  "Inheritance": "AR",
+  "Curator": "Epilepsy GCEP",
+  "Date": "06/16/2020",
+  "Manual_evidence_level": null,
+  "Description": "Disease: Unverricht-Lundborg syndrome (EPM1) https://search.clinicalgenome.org/CCID:004590. COMP has also been curated for genetic developmental and epileptic encephalopathy(MONDO:0100062) https://search.clinicalgenome.org/CCID:004591 - Classification: Moderate",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP8",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3,
+    "Genetic Evidence": 12
+  },
+  "total_score": 15,
+  "classification": "Definitive",
+  "publication_count": 4,
+  "publication_interval_years": 10,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "FRAXE",
+  "Gene": "AFF2",
+  "Locus_ID": "FRAXE_AFF2",
+  "Inheritance": "XL",
+  "Curator": "Intellectual Disability and Autism GCEP",
+  "Date": "08/11/2025",
+  "Manual_evidence_level": null,
+  "Description": "Curation is for non-syndromic X-linked intellectual disability (MONDO:0019181) https://search.clinicalgenome.org/CCID:004069. FRAXE intellectual disability (MONDO:0010659) has been curated for AFF2 under Dosage Sensitivity https://search.clinicalgenome.org/CCID:006630 - Classification: Sufficient Evidence",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP11",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 12
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 7,
+  "publication_interval_years": 20,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "FRDA",
+  "Gene": "FXN",
+  "Locus_ID": "FRDA_FXN",
+  "Inheritance": "AR",
+  "Curator": "Hypertrophic Cardiomyopathy GCEP",
+  "Date": "12/22/2017",
+  "Manual_evidence_level": null,
+  "Description": "https://search.clinicalgenome.org/CCID:004895",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP5",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 7,
+  "publication_interval_years": 15,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "FTDALS1",
+  "Gene": "C9orf72",
+  "Locus_ID": "FTDALS1_C9orf72",
+  "Inheritance": null,
+  "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP",
+  "Date": "09/21/2021",
+  "Manual_evidence_level": null,
+  "Description": "https://search.clinicalgenome.org/CCID:004308",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP8",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 14,
+  "publication_interval_years": 5,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "HD",
+  "Gene": "HTT",
+  "Locus_ID": "HD_HTT",
+  "Inheritance": "AD",
+  "Curator": "General Gene Curation GCEP",
+  "Date": "11/08/2021",
+  "Manual_evidence_level": null,
+  "Description": "https://search.clinicalgenome.org/CCID:005100",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP8",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 11.5
+  },
+  "total_score": 17.5,
+  "classification": "Definitive",
+  "publication_count": 17,
+  "publication_interval_years": 27,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "SBMA",
+  "Gene": "AR",
+  "Locus_ID": "SBMA_AR",
+  "Inheritance": "AR",
+  "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP ",
+  "Date": "08/08/2023",
+  "Manual_evidence_level": null,
+  "Description": "Curated as Kennedy disease (MONDO:0010735) and Spinal and bulbar muscular atrophy, X-linked 1 (MIM:313200) was an included phenotype https://search.clinicalgenome.org/CCID:004161",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP9",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 7.5
+  },
+  "total_score": 13.5,
+  "classification": "Definitive",
+  "publication_count": 11,
+  "publication_interval_years": 32,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "SCA2",
+  "Gene": "ATXN2",
+  "Locus_ID": "SCA2_ATXN2",
+  "Inheritance": "AD",
+  "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP",
+  "Date": "02/13/2024",
+  "Manual_evidence_level": null,
+  "Description": "https://search.clinicalgenome.org/CCID:004220",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP9",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 18,
+  "publication_interval_years": 22,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "GDPAG",
+  "Gene": "GLS",
+  "Locus_ID": "GDPAG_GLS",
+  "Inheritance": "AR",
+  "Curator": "Aminoacidopathy GCEP",
+  "Date": "07/09/2021",
+  "Manual_evidence_level": null,
+  "Description": "Curation included five unique variants (nonsense, frameshift, and missense) as well as a 5 prime UTR repeat expansion (normally occurring in 8 or 16 repeats) ranging from 680 to 1500 repeats. https://search.clinicalgenome.org/CCID:004965",
+  "Source": "ClinGen",
+  "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP7",
+  "category_summary":
+  {
+    "Collective Evidence": null,
+    "Function": null,
+    "Functional Alteration": null,
+    "Models": null,
+    "Singular Evidence": null,
+    "Statistics": null,
+    "Rescue": null
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 2,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 11.5,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 6,
+  "genetic_evidence_details": [],
+  "experimental_evidence_details": []
+},
+{
+  "Disease_ID": "DM1",
+  "Gene": "DMPK",
+  "Locus_ID": "DM1_DMPK",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt",
+  "Date": "07/21/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2,
+    "Functional Alteration": 1,
+    "Models": 2,
+    "Rescue": 3,
+    "Singular Evidence": 6,
+    "Statistics": 4,
+    "Function": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 12
+  },
+  "total_score": 18,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 25.28,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Allele",
+    "Score": 2,
+    "Citation": "pmid:32851192; pmid:39643839",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Interruptions impact phenotype/onset; several studies have shown correlation between allele length and onset/disease severity",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:20635151",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "50 patients",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Case-Control Data",
+    "Score": 4,
+    "Citation": "pmid:7847063",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Case-control study was carried out on 25 patients with myotonic dystrophy (MyD) and 25 healthy subjects (p < 0.0001) ",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:39932794",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "MBNL overexpression rescues cardiac phenotypes in a myotonic dystrophy type 1 heart mouse model",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Rescue in cell culture",
+    "Score": 1,
+    "Citation": "pmid:16027111",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Knock-down of endogenous hnRNP H expression by siRNAs in cells expressing an EGFP gene fused to CUG repeats leads to release of nuclear sequestrated transcripts and restoration of EGFP expression",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:31649961",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Alkaline phosphatase-positive pericytes from skeletal muscle of a transgenic mouse model",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1,
+    "Citation": "pmid:31649961",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Alkaline phosphatase-positive pericytes from skeletal muscle of DM1 patients",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "DM2",
+  "Gene": "CNBP",
+  "Locus_ID": "DM2_CNBP",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt",
+  "Date": "07/21/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2.5,
+    "Function": 2.0,
+    "Functional Alteration": 1.5,
+    "Models": 2.0,
+    "Rescue": 2.0,
+    "Singular Evidence": 6.0,
+    "Statistics": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 8.5
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 9.33,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:14505273",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "71 families",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:11486088",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Motif/interruptions differ between disease states; also major difference between pathogenic/nonpathogenic ranges",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:12970845",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LOD Score (19.521)",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Transgenic fly model",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Expression of DM2-106 in Drosophila muscles causes mis-splicing",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "RNA foci aggregates",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Alteration of retinal cells; disruption of morphology",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28623239",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Rescue of phenotype with PKR-I",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 0.5,
+    "Citation": "pmid:20971734",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Persistence of intron 1 sequences from the abnormal allele, decrease in total expression",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:20971734",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Aberrant Subcellular Localization",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:20971734",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Muscle cells from 16 patients and 10 controls",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "BPES",
+  "Gene": "FOXL2",
+  "Locus_ID": "BPES_FOXL2",
+  "Inheritance": "AD, AR",
+  "Curator": "Laurel Hiatt",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3.0,
+    "Functional Alteration": 0.5,
+    "Models": 4,
+    "Singular Evidence": 6.0,
+    "Rescue": 0,
+    "Statistics": 0,
+    "Function": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 5.5,
+    "Genetic Evidence": 9.0
+  },
+  "total_score": 14.5,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 7.08,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 2.5,
+    "Citation": "pmid:11468277",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "5, probands and sporadic",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.5,
+    "Citation": "pmid:27283035",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "5 probands, some with multiple generations, etc",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.0,
+    "Citation": "pmid:33875939",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Highly conserved ",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 2.0,
+    "Citation": "pmid:33875939",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "lod score ~3.9 i think, panel/targeted sequencing",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:15591279",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:18372316",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-Human Model Organism",
+    "Score": 4.0,
+    "Citation": "pmid:22248822",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Review describes multiple animal models, cell models and protein alteration. Here scored based on animal models.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "RCPS",
+  "Gene": "EIF4A3",
+  "Locus_ID": "RCPS_EIF4A3",
+  "Inheritance": "AR",
+  "Curator": "Laurel Hiatt",
+  "Date": "06/02/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Functional Alteration": 2,
+    "Models": 4,
+    "Singular Evidence": 6,
+    "Rescue": 0,
+    "Statistics": 0,
+    "Function": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 9
+  },
+  "total_score": 15,
+  "classification": "Definitive",
+  "publication_count": 3,
+  "publication_interval_years": 4.24,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:29112243",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "6 families with clinical characterization, sequencing etc.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 3,
+    "Citation": "pmid:24360810",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LoD score 9.533, WES",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2,
+    "Citation": "pmid:28334780",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 3,
+    "Citation": "pmid:28334780",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Conditional mouse model ",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:24360810",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Zebrafish ",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  }]
+},
+{
+  "Disease_ID": "SCA27B",
+  "Gene": "FGF14",
+  "Locus_ID": "SCA27B_FGF14",
+  "Inheritance": "AR",
+  "Curator": "Laurel Hiatt, Harriet Dashnow",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3.0,
+    "Function": 0.5,
+    "Functional Alteration": 2.0,
+    "Models": 1.0,
+    "Singular Evidence": 6.0,
+    "Rescue": 0,
+    "Statistics": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.5,
+    "Genetic Evidence": 9.0
+  },
+  "total_score": 12.5,
+  "classification": "Strong",
+  "publication_count": 5,
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:36493768",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "13 affected individuals with expansion per PCR in the discovery cohort, 8 confirmed with short read sequencing, 5 of these with long reads. primary fibroblasts from 3 probands showed reduced FGF14 expression",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39263992",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.0,
+    "Citation": "pmid:12489043",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "LOD for marker region 4.28",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:12123606",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:17978045",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:39263992",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPDM2",
+  "Gene": "GIPC1",
+  "Locus_ID": "OPDM2_GIPC1",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt, Harriet Dashnow",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 2.0,
+    "Functional Alteration": 2.0,
+    "Rescue": 2.0,
+    "Singular Evidence": 6,
+    "Statistics": 0,
+    "Models": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6.0,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 15.5,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 3.09,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:32413282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "2 families and 6 sporadic cases. Methyation, protein and mRNA level characterization",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:33374016",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Longer alleles were associated with earlier age of onset more severe symtoms",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:39492694",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "3 clinically confirmed cases with long read sequencing (addresses repeated over time)",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Rescue in cell culture",
+    "Score": 2.0,
+    "Citation": "pmid:39936620",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:39418922",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 2.0,
+    "Citation": "pmid:35152460",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "HDL2",
+  "Gene": "JPH3",
+  "Locus_ID": "HDL2_JPH3",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt, Harriet Dashnow",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2,
+    "Models": 4,
+    "Singular Evidence": 6,
+    "Statistics": 0,
+    "Rescue": 0,
+    "Functional Alteration": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 9
+  },
+  "total_score": 15,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 16.13,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:28339400",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "69 patients from multiple studies",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2,
+    "Citation": "pmid:28339400",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Negative correlation between repeat length and age of onset. Paper is a review review describing all cased in literature up to 2026",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1,
+    "Citation": "pmid:40187026",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Founder mutation identified",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:21555070",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "HDL2 mouse model showed polyQ-mediated pathogenesis mechanism",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:29208631",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Drosophila model",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 2,
+    "Citation": "pmid:11694876",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Splicing impact",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
   }]
 }]

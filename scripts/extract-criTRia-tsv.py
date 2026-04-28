@@ -311,7 +311,7 @@ def summarize_curations(locus_id, curations):
 
         for class_name, class_info in CLASSIFICATION_LOOKUP.items():
             score_range = class_info['score_range']
-            if score_range is not None and score_range[0] < total_score <= score_range[1]:
+            if score_range is not None and score_range[0] <= total_score <= score_range[1]:
                 if publication_count >= class_info['min_pubs'] and tmp_publication_interval_years >= class_info['min_years']:
                     classification = class_name
                     break

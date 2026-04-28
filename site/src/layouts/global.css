@@ -11,7 +11,14 @@
   --tertiary: hsl(320, 50%, 60%);
   --quaternary: hsl(40, 70%, 60%);
 
-  --content: 1000px;
+  --worst: hsl(0, 50%, 35%);
+  --bad: hsl(10, 60%, 60%);
+  --warn: hsl(40, 70%, 60%);
+  --okay: hsl(205, 50%, 70%);
+  --good: hsl(175, 60%, 40%);
+  --best: hsl(180, 80%, 25%);
+
+  --content: 1100px;
   --rounded: 10px;
   --fast: 0.25s ease;
   --shadow: #00000020;
@@ -120,6 +127,10 @@ a:hover {
 img,
 svg {
   flex-shrink: 0;
+}
+
+svg {
+  overflow: visible;
 }
 
 svg[width="1em"] {

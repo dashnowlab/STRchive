@@ -1,0 +1,16 @@
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 5px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    background var(--fast),
+    color var(--fast),
+    opacity var(--fast);
+}
+
+a.tag:hover {
+  opacity: 0.75;
+}
