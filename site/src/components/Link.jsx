@@ -15,7 +15,7 @@ const Link = ({
 
   return (
     <Component
-      href={to}
+      href={to || null}
       // whether to open in new tab
       target={(newTab ?? external) ? "_blank" : ""}
       {...props}
