@@ -5,7 +5,8 @@ import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import EvidenceTable from "@/critria/EvidenceTable";
-import { evidenceOptions } from "@/data/evidence";
+import { tagOptions } from "@/data/tags";
+import Tag from "@/locus/Tag";
 import curations from "~/criTRia-curations.json";
 
 /** generate pages for each datum, paths based on id */
@@ -19,8 +20,8 @@ const { id } = Astro.params;
 const curation = curations.find((item) => item.Locus_ID === id);
 
 /** classification */
-const classification = evidenceOptions.find((evidence) =>
-  curation.classification.includes(evidence.value),
+const classification = tagOptions.find((tag) =>
+  curation.classification.includes(tag.value),
 );
 
 if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
@@ -40,13 +41,8 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       <dt>Inheritance</dt>
       <dd>{curation.Inheritance}</dd>
       <dt>Classification</dt>
-      <dd
-        style={{
-          backgroundColor: classification?.bg,
-          color: classification?.text,
-        }}
-      >
-        {curation.classification}
+      <dd>
+        <Tag value={curation.classification} />
       </dd>
       <dt>Total Score</dt>
       <dd>{curation.total_score}</dd>

@@ -12,7 +12,6 @@ import Select from "@/components/Select";
 import Table from "@/components/Table";
 import TextBox from "@/components/TextBox";
 import { deriveLocus } from "@/data/derived";
-import { evidenceOptions } from "@/data/evidence";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
@@ -20,8 +19,6 @@ import classes from "./LociTable.module.css";
 
 /** tags to show in table and filters */
 const filterTags = tagOptions.filter((tag) => tag.filter);
-/** evidence to show in table and filters */
-const filterEvidence = evidenceOptions.filter((evidence) => evidence.filter);
 
 /** column definitions */
 const cols = [
@@ -40,25 +37,22 @@ const cols = [
   },
   {
     /** use number value so col sorted by that instead of alphabetically */
-    key: "tag_index",
+    key: "tag_sort",
     name: "Tags",
     render: (cell, row) => (
       <div className={clsx("row", classes["tags-cell"])}>
-        {[
-          ...tagOptions.filter(({ value }) => row.locus_tags.includes(value)),
-          ...evidenceOptions.filter(({ value }) =>
-            row.evidence.includes(value),
-          ),
-        ].map(({ Icon, bg, tooltip }, index) =>
-          Icon ? (
-            <Icon
-              key={index}
-              className={classes.icon}
-              style={{ color: bg }}
-              data-tooltip={tooltip}
-            />
-          ) : null,
-        )}
+        {tagOptions
+          .filter(({ key, value }) => row[key]?.includes(value))
+          .map(({ description, Icon, bg }, index) =>
+            Icon ? (
+              <Icon
+                key={index}
+                className={classes.icon}
+                style={{ color: bg }}
+                data-tooltip={description}
+              />
+            ) : null,
+          )}
       </div>
     ),
   },
@@ -160,10 +154,6 @@ const LociTable = ({ loci }) => {
 
   /** selected tag filters */
   const [tags, setTags] = useState(Array(filterTags.length).fill("mixed"));
-  /** selected evidence filters */
-  const [evidence, setEvidence] = useState(
-    Array(filterEvidence.length).fill("mixed"),
-  );
   /** motif filter state */
   const [motifMin, setMotifMin] = useState(shortestMotif);
   const [motifMax, setMotifMax] = useState(longestMotif);
@@ -177,37 +167,32 @@ const LociTable = ({ loci }) => {
   const filteredLoci = derivedLoci
     .map((locus) => ({
       ...locus,
-      /** index of matching tag, for sorting */
-      tag_index: [
-        getIndex(filterEvidence, locus.evidence),
-        getIndex(filterTags, locus.locus_tags),
-      ].join("_"),
+      /** for sorting */
+      tag_sort: ["evidence", "locus_tags", "disease_tags"].map((key) =>
+        filterTags.findIndex(({ value }) => locus[key]?.includes(value)),
+      ),
     }))
     .filter(
       (d) =>
         /** filter by free text search visible columns */
         normalize(
           getValues(
-            pick(d, [...map(cols, "key"), "locus_tags", "disease_tags"]),
+            pick(d, [
+              ...map(cols, "key"),
+              "locus_tags",
+              "disease_tags",
+              "evidence",
+            ]),
           ).join(" "),
         ).includes(normalizedSearch) &&
         /** filter by tags */
-        filterTags.every(({ value }, index) => {
+        filterTags.every(({ key, value }, index) => {
           const filter = tags[index];
           if (filter === undefined) return;
           /** if "mixed", keep locus whether it includes tag or not */
           if (filter === "mixed") return true;
           /** if true, keep locus if includes tag. if false, keep if doesn't. */ else
-            return d.locus_tags.includes(value) === filter;
-        }) &&
-        /** filter by evidence */
-        filterEvidence.every(({ value }, index) => {
-          const filter = evidence[index];
-          if (filter === undefined) return;
-          /** if "mixed", keep locus whether it includes evidence or not */
-          if (filter === "mixed") return true;
-          /** if true, keep locus if includes evidence. if false, keep if doesn't. */ else
-            return d.evidence.includes(value) === filter;
+            return d[key]?.includes(value) === filter;
         }) &&
         /** filter by motif lengths */
         d.pathogenic_motif_reference_orientation.every(
@@ -225,9 +210,8 @@ const LociTable = ({ loci }) => {
           <Popover
             label="Tags"
             button={(() => {
-              const all = [...tags, ...evidence];
-              const counts = countBy(all);
-              if (counts.mixed === all.length) return <>Any</>;
+              const counts = countBy(tags);
+              if (counts.mixed === tags.length) return <>Any</>;
 
               return (
                 <>
@@ -247,7 +231,7 @@ const LociTable = ({ loci }) => {
               );
             })()}
           >
-            {filterTags.map(({ Icon, label, bg, tooltip }, index) => (
+            {filterTags.map(({ description, Icon, label, bg }, index) => (
               <CheckBox
                 key={index}
                 label={
@@ -262,25 +246,7 @@ const LociTable = ({ loci }) => {
                   newTags[index] = value;
                   setTags(newTags);
                 }}
-                tooltip={tooltip}
-              />
-            ))}
-            {filterEvidence.map(({ Icon, label, bg, tooltip }, index) => (
-              <CheckBox
-                key={index}
-                label={
-                  <>
-                    <Icon className={classes.icon} style={{ color: bg }} />
-                    {label}
-                  </>
-                }
-                checked={evidence[index]}
-                onChange={(value) => {
-                  const newEvidence = [...evidence];
-                  newEvidence[index] = value;
-                  setEvidence(newEvidence);
-                }}
-                tooltip={tooltip}
+                tooltip={description}
               />
             ))}
           </Popover>
@@ -352,11 +318,3 @@ const LociTable = ({ loci }) => {
 };
 
 export default LociTable;
-
-/** from list of possible values, get alphabetical index of first match (for sorting) */
-const getIndex = (options, values) =>
-  String.fromCharCode(
-    options.findIndex((option) => values.includes(option.value)) +
-      /** start at lowercase a */
-      98,
-  );

@@ -4,26 +4,22 @@ import { tagOptions } from "@/data/tags";
 import classes from "./Tag.module.css";
 
 /** tag pill link */
-const Tag = ({
-  value,
-  to = undefined,
-  tooltipDetail = "See other loci with this tag.",
-}) => {
-  const option = tagOptions.find((t) => t.value === value) ?? {};
+const Tag = ({ value, to = "", tooltip = "" }) => {
+  const option = tagOptions.find((o) => o.value === value) ?? {};
   const fallback = startCase(value);
   const {
     Icon = () => <></>,
     label = fallback,
     bg = "var(--gray)",
     text = "var(--white)",
-    tooltip = fallback,
+    description = fallback,
   } = option;
   return (
     <Link
       className={classes.tag}
-      to={to ?? `/loci?tag=${value}#table`}
+      to={to}
       style={{ backgroundColor: bg, color: text }}
-      data-tooltip={`${tooltip}.<br/>${tooltipDetail}`}
+      data-tooltip={[description, tooltip].flat().filter(Boolean).join("<br/>")}
     >
       <Icon className={classes.icon} />
       {label}

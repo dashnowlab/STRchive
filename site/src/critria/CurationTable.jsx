@@ -1,7 +1,7 @@
 import Link from "@/components/Link";
 import Table from "@/components/Table";
-import { evidenceOptions } from "@/data/evidence";
-import classes from "./CurationTable.module.css";
+import { tagOptions } from "@/data/tags";
+import Tag from "@/locus/Tag";
 
 /** column definitions */
 const cols = [
@@ -34,18 +34,7 @@ const cols = [
     style: {
       padding: 0,
     },
-    render: (cell, row) => {
-      /** display normal classification string */
-      const value = row.classification;
-      return (
-        <div
-          className={classes.classification}
-          style={{ backgroundColor: row.bg, color: row.text }}
-        >
-          {value}
-        </div>
-      );
-    },
+    render: (cell, row) => <Tag value={row.classification} />,
   },
   {
     key: "Date",
@@ -65,18 +54,12 @@ const cols = [
 
 /** table for main critria page */
 const CurationTable = ({ curations }) => {
-  const mappedCurations = curations.map((curation) => {
-    const index = evidenceOptions.findIndex(
+  const mappedCurations = curations.map((curation) => ({
+    ...curation,
+    classification_index: tagOptions.findIndex(
       (tag) => curation.classification === tag.value,
-    );
-    const tag = evidenceOptions[index];
-    return {
-      ...curation,
-      bg: tag?.bg,
-      text: tag?.text,
-      classification_index: index,
-    };
-  });
+    ),
+  }));
 
   return (
     <Table

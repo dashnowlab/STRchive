@@ -19,7 +19,6 @@ import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
-import Evidence from "@/locus/Evidence";
 import Gnomad from "@/locus/Gnomad";
 import Tag from "@/locus/Tag";
 import { getJsonBlame } from "@/util/git";
@@ -53,8 +52,8 @@ const blame = getJsonBlame(
   `"id":\\s*"${id}"\\s*,`,
 );
 
-/** whether there is a corresponding criTRia curation page */
-const hasCuration = curations.some((curation) => curation.Locus_ID === id);
+/** get corresponding criTRia curation page */
+const curation = curations.find((curation) => curation.Locus_ID === id);
 ---
 
 <Layout title={locus.nice_id}>
@@ -64,27 +63,29 @@ const hasCuration = curations.some((curation) => curation.Locus_ID === id);
   <section>
     <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
-    {
-      locus.evidence && (
-        <div class="row">
-          <Evidence
-            client:load
-            value={locus.evidence}
-            critriaId={hasCuration ? id : undefined}
-          />
-        </div>
-      )
-    }
+    <div class="row">
+      {
+        !!locus.evidence?.length &&
+          locus.evidence?.map((evidence) => (
+            <Tag
+              value={evidence}
+              to={curation ? `/critria/${curation.Locus_ID}` : undefined}
+              tooltip="See criTRia curation for this locus"
+            />
+          ))
+      }
 
-    {
-      !!locus.locus_tags.length && (
-        <div class="row">
-          {locus.locus_tags?.map((tag) => (
-            <Tag value={tag} />
-          ))}
-        </div>
-      )
-    }
+      {
+        !!locus.locus_tags?.length &&
+          locus.locus_tags?.map((tag) => (
+            <Tag
+              value={tag}
+              to={`/loci?tag=${tag}#table`}
+              tooltip="See other loci with this tag"
+            />
+          ))
+      }
+    </div>
 
     <div class="boxes">
       <div class="box">
@@ -164,10 +165,14 @@ const hasCuration = curations.some((curation) => curation.Locus_ID === id);
   <section>
     <Heading client:load level={2}>Disease</Heading>
     {
-      !!locus.disease_tags.length && (
+      !!locus.disease_tags?.length && (
         <div class="row">
           {locus.disease_tags?.map((tag) => (
-            <Tag value={tag} />
+            <Tag
+              value={tag}
+              to={`/loci?tag=${tag}#table`}
+              tooltip="See other loci with this tag"
+            />
           ))}
         </div>
       )
