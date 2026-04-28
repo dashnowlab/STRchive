@@ -3535,9 +3535,9 @@
   }]
 },
 {
-  "Disease_ID": "OPDM",
+  "Disease_ID": "OPDM5",
   "Gene": "ABCD3",
-  "Locus_ID": "OPDM_ABCD3",
+  "Locus_ID": "OPDM5_ABCD3",
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt, Macayla Weiner",
   "Date": "8/14/25",
@@ -7445,6 +7445,216 @@
     "Evidence detail": null,
     "Notes": null,
     "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "OPDM2",
+  "Gene": "GIPC1",
+  "Locus_ID": "OPDM2_GIPC1",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt, Harriet Dashnow",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 2.0,
+    "Function": 2.0,
+    "Functional Alteration": 2.0,
+    "Rescue": 2.0,
+    "Singular Evidence": 6,
+    "Statistics": 0,
+    "Models": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6.0,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 15.5,
+  "classification": "Definitive",
+  "publication_count": 6,
+  "publication_interval_years": 3.09,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:32413282",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "2 families and 6 sporadic cases. Methyation, protein and mRNA level characterization",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:33374016",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Longer alleles were associated with earlier age of onset more severe symtoms",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:39492694",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "3 clinically confirmed cases with long read sequencing (addresses repeated over time)",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Rescue in cell culture",
+    "Score": 2.0,
+    "Citation": "pmid:39936620",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:39418922",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 2.0,
+    "Citation": "pmid:35152460",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2
+  }]
+},
+{
+  "Disease_ID": "HDL2",
+  "Gene": "JPH3",
+  "Locus_ID": "HDL2_JPH3",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt, Harriet Dashnow",
+  "Date": "06/04/2025",
+  "Description": null,
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": "",
+  "category_summary":
+  {
+    "Collective Evidence": 3,
+    "Function": 2,
+    "Models": 4,
+    "Singular Evidence": 6,
+    "Statistics": 0,
+    "Rescue": 0,
+    "Functional Alteration": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 6,
+    "Genetic Evidence": 9
+  },
+  "total_score": 15,
+  "classification": "Definitive",
+  "publication_count": 5,
+  "publication_interval_years": 16.13,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:28339400",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "69 patients from multiple studies",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2,
+    "Citation": "pmid:28339400",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Negative correlation between repeat length and age of onset. Paper is a review review describing all cased in literature up to 2026",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1,
+    "Citation": "pmid:40187026",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Founder mutation identified",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:21555070",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "HDL2 mouse model showed polyQ-mediated pathogenesis mechanism",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:29208631",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Drosophila model",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4
+  },
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 2,
+    "Citation": "pmid:11694876",
+    "Values": null,
+    "Evidence detail": null,
+    "Notes": "Splicing impact",
+    "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2
