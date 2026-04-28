@@ -2,8 +2,6 @@ import { execSync } from "child_process";
 import { readFileSync } from "fs";
 import { maxBy } from "lodash-es";
 
-const NULL_HASH_RE = /^0+$/;
-
 /** get git blame info of json file entry. makes assumptions about structure and formatting. */
 export const getJsonBlame = (file, regex) => {
   /** split file into lines */
@@ -41,30 +39,22 @@ export const getJsonBlame = (file, regex) => {
   date = new Date(date).toLocaleString(undefined, { dateStyle: "medium" });
 
   /** get project version */
-  const version = getProjectVersion(hash);
+  const version = getVersion(getFile("../CITATION.cff", hash));
 
   return { start, end, line, hash, author, date, version };
 };
 
-/** get version string from citation file */
-const getProjectVersion = (hash) => {
-  return (
-    getVersionFromFile(getFileVersion("../CITATION.cff", hash)) ??
-    getVersionFromFile(getFileVersion("../CITATION.cff"))
-  );
-};
+/** extract version field from yaml string */
+const getVersion = (contents) =>
+  contents?.match(/^version:\s*(.+)$/im)?.[1] ?? "";
 
-const getVersionFromFile = (contents) =>
-  contents?.match(/^version:\s*(.+)$/im)?.[1];
-
-/** get specific version of file */
-const getFileVersion = (file, hash) => {
-  if (!hash || NULL_HASH_RE.test(hash)) {
-    return readFileSync(file, "utf-8");
-  }
-
+/** get contents of file w/ optional hash version */
+const getFile = (file, hash) => {
   try {
-    return execSync(`git show ${hash}:${file}`).toString();
+    if (!hash) throw Error("no hash");
+    const contents = execSync(`git show ${hash}:${file}`).toString();
+    if (!contents.trim()) throw Error("empty");
+    return contents;
   } catch {
     return readFileSync(file, "utf-8");
   }
