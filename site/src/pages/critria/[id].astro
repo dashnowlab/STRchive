@@ -67,7 +67,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       <dd>{curation.Curator}</dd>
     </dl>
 
-    <Heading client:load level={4}>Description</Heading>
+    <Heading client:load level={3}>Description</Heading>
     <p class="center section-total">
       {curation.Description ?? "-"}
     </p>
