@@ -129,6 +129,10 @@ svg {
   flex-shrink: 0;
 }
 
+svg {
+  overflow: visible;
+}
+
 svg[width="1em"] {
   width: unset !important;
 }

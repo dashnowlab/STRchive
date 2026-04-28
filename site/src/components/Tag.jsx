@@ -4,7 +4,7 @@ import { tagOptions } from "@/data/tags";
 import classes from "./Tag.module.css";
 
 /** tag pill link */
-const Tag = ({ value, to = "", tooltip = "" }) => {
+const Tag = ({ value, to = "", tooltip = "", small = false }) => {
   const option = tagOptions.find((o) => o.value === value) ?? {};
   const fallback = startCase(value);
   const {
@@ -18,11 +18,13 @@ const Tag = ({ value, to = "", tooltip = "" }) => {
     <Link
       className={classes.tag}
       to={to}
-      style={{ backgroundColor: bg, color: text }}
+      style={
+        small ? { color: bg, padding: 0 } : { backgroundColor: bg, color: text }
+      }
       data-tooltip={[description, tooltip].flat().filter(Boolean).join("<br/>")}
     >
       <Icon className={classes.icon} />
-      {label}
+      {!small && label}
     </Link>
   );
 };

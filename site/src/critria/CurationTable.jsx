@@ -1,7 +1,7 @@
 import Link from "@/components/Link";
 import Table from "@/components/Table";
+import Tag from "@/components/Tag";
 import { tagOptions } from "@/data/tags";
-import Tag from "@/locus/Tag";
 
 /** column definitions */
 const cols = [

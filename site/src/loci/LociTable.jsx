@@ -10,6 +10,7 @@ import NumberBox from "@/components/NumberBox";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
 import Table from "@/components/Table";
+import Tag from "@/components/Tag";
 import TextBox from "@/components/TextBox";
 import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
@@ -42,17 +43,12 @@ const cols = [
     render: (cell, row) => (
       <div className={clsx("row", classes["tags-cell"])}>
         {tagOptions
-          .filter(({ key, value }) => row[key]?.includes(value))
-          .map(({ description, Icon, bg }, index) =>
-            Icon ? (
-              <Icon
-                key={index}
-                className={classes.icon}
-                style={{ color: bg }}
-                data-tooltip={description}
-              />
-            ) : null,
-          )}
+          .filter(
+            ({ key, value, filter }) => filter && row[key]?.includes(value),
+          )
+          .map(({ value }, index) => (
+            <Tag key={index} value={value} small />
+          ))}
       </div>
     ),
   },
