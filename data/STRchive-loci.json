@@ -1699,7 +1699,7 @@
   "tr_atlas": ["TR148462"],
   "webstr_hg38": [],
   "webstr_hg19": [],
-  "locus_tags": ["supported_evidence"],
+  "locus_tags": [],
   "disease_tags": [],
   "references": ["pmid:24360810", "genereviews:NBK535148", "gnomad:EIF4A3", "pmid:29112243", "doi:10.1016/j.omsc.2023.100340", "mondo:0009998", "pmid:1632438"],
   "additional_literature": []
@@ -1765,7 +1765,7 @@
   "tr_atlas": [],
   "webstr_hg38": ["1272528"],
   "webstr_hg19": [],
-  "locus_tags": ["supported_evidence", "maternal_expansion", "length_affects_onset", "length_affects_penetrance", "motif_affects_penetrance", "length_affects_phenotype"],
+  "locus_tags": ["maternal_expansion", "length_affects_onset", "length_affects_penetrance", "motif_affects_penetrance", "length_affects_phenotype"],
   "disease_tags": ["spinocerebellar_ataxia"],
   "references": ["genereviews:NBK599589", "pmid:39263992", "pmid:36516086", "pmid:37399286", "pmid:39227614", "pmid:40007153", "pmid:38937606", "pmid:39604554", "pmid:41327893", "pmid:41277530", "pmid:38876750", "pmid:38886208", "pmid:37267898", "pmid:36493768", "pmid:39349043", "doi:10.1212/NXG.0000000000200253"],
   "additional_literature": ["pmid:41698164", "pmid:41504274", "pmid:41118032", "pmid:41065930", "pmid:41055766", "pmid:40974444", "pmid:40906330", "pmid:40898875", "pmid:40894141", "pmid:40879304", "pmid:40835733", "pmid:40679574", "pmid:40637932", "pmid:40623333", "pmid:40579842", "pmid:40556471", "pmid:40488180", "pmid:40379261", "pmid:40273470", "pmid:40239008", "pmid:40191983", "pmid:40141365", "pmid:40024931", "pmid:40017559", "pmid:39996128", "pmid:39821862", "pmid:39801711", "pmid:39723156", "pmid:39666057", "pmid:39666053", "pmid:39574782", "pmid:39571249", "pmid:39392764", "pmid:39378335", "pmid:39152783", "pmid:39006414", "pmid:38976084", "pmid:38949032", "pmid:38866925", "pmid:38816190", "pmid:38513302", "pmid:38487929", "pmid:38472396", "pmid:38405699", "pmid:38381176", "pmid:38221848", "pmid:38170134", "pmid:38150853", "pmid:38058854", "pmid:37916889", "pmid:37646005", "pmid:37578187", "pmid:37577458", "pmid:37322040", "pmid:37165652", "pmid:32717741", "pmid:30017992", "pmid:28444220", "pmid:26677414", "pmid:26149656", "pmid:15470364", "pmid:15148151"]
@@ -1897,7 +1897,7 @@
   "tr_atlas": ["TR36092"],
   "webstr_hg38": [],
   "webstr_hg19": [],
-  "locus_tags": ["supported_evidence"],
+  "locus_tags": [],
   "disease_tags": [],
   "references": ["genereviews:NBK1441", "pmid:15591279", "genereviews:NBK535148", "pmid:12529855", "mondo:0007201"],
   "additional_literature": ["pmid:22926839", "pmid:18158309", "pmid:17089161", "pmid:7633459"]
@@ -2039,7 +2039,7 @@
   "tr_atlas": ["TR154638"],
   "webstr_hg38": ["5626440"],
   "webstr_hg19": ["STR_668861"],
-  "locus_tags": ["supported_evidence", "length_affects_onset", "length_affects_severity"],
+  "locus_tags": ["length_affects_onset", "length_affects_severity"],
   "disease_tags": ["oculopharyngodistal_myopathy"],
   "references": ["pmid:32413282", "pmid:33374016", "pmid:41121761", "gnomad:GIPC1", "genereviews:NBK535148", "pmid:38876750", "pmid:35245110", "pmid:38467784", "pmid:39349043"],
   "additional_literature": ["pmid:41888971", "pmid:41792844", "pmid:41555317", "pmid:40645757", "pmid:40084170", "pmid:39936620", "pmid:39492694", "pmid:39418922", "pmid:39013564", "pmid:38871700", "pmid:37923380", "pmid:37550168", "pmid:36108428", "pmid:36055118", "pmid:35700120", "pmid:35521937", "pmid:35314910", "pmid:35152460", "pmid:35148830", "pmid:34927285", "pmid:33693509", "pmid:33239111", "pmid:22521844"]
@@ -2516,7 +2516,7 @@
   "tr_atlas": ["TR143309"],
   "webstr_hg38": ["828516", "5987878"],
   "webstr_hg19": ["Expansion_HDL2/JPH3"],
-  "locus_tags": ["supported_evidence", "somatic_instability", "length_affects_phenotype", "length_affects_onset", "length_affects_penetrance", "length_affects_severity"],
+  "locus_tags": ["somatic_instability", "length_affects_phenotype", "length_affects_onset", "length_affects_penetrance", "length_affects_severity"],
   "disease_tags": [],
   "references": ["genereviews:NBK1529", "orphanet:98934", "pmid:40187026", "pmid:11694876", "mondo:0011671"],
   "additional_literature": ["pmid:41074680", "pmid:40914005", "pmid:38948793", "pmid:38725192", "pmid:38617831", "pmid:37379724", "pmid:35926480", "pmid:33824468", "pmid:33044188", "pmid:32675418", "pmid:32028232", "pmid:30682531", "pmid:30615214", "pmid:29801887", "pmid:29208631", "pmid:29066237", "pmid:27400454", "pmid:27288455", "pmid:26079385", "pmid:24269018", "pmid:22447335", "pmid:22367996", "pmid:22297462", "pmid:21555070", "pmid:17516481", "pmid:16858508", "pmid:15764008", "pmid:15468075", "pmid:14557581", "pmid:12805114", "pmid:11906164"]
@@ -4119,7 +4119,7 @@
   "tr_atlas": ["TR173479"],
   "webstr_hg38": [],
   "webstr_hg19": ["STR_1597784"],
-  "locus_tags": ["supported_evidence", "contraction"],
+  "locus_tags": ["contraction"],
   "disease_tags": [],
   "references": ["pmid:19654509", "pmid:21289259", "pmid:17127446", "genereviews:NBK535148", "pmid:15800844", "pmid:12428212", "omim:300123", "pmid:24346842"],
   "additional_literature": []
@@ -4195,7 +4195,7 @@
   "tr_atlas": ["TR19329"],
   "webstr_hg38": ["286156"],
   "webstr_hg19": ["STR_754470"],
-  "locus_tags": ["supported_evidence", "somatic_instability", "motif_affects_instability", "motif_affects_penetrance"],
+  "locus_tags": ["somatic_instability", "motif_affects_instability", "motif_affects_penetrance"],
   "disease_tags": ["familial_adult_myoclonic_epilepsy"],
   "references": ["pmid:31664034", "pmid:38467784", "pmid:38876750", "pmid:39349043"],
   "additional_literature": ["pmid:41219789", "pmid:33040085"]
@@ -4610,7 +4610,7 @@
   "id": "CPUM_TYMS",
   "disease_id": "CPUM",
   "gene": "TYMS",
-  "evidence": [],
+  "evidence": ["Provisional"],
   "chrom": "chr18",
   "start_hg38": 666891,
   "stop_hg38": 667632,
@@ -4667,7 +4667,7 @@
   "tr_atlas": [],
   "webstr_hg38": [],
   "webstr_hg19": [],
-  "locus_tags": ["limited_evidence"],
+  "locus_tags": [],
   "disease_tags": [],
   "references": ["doi:10.3892/br.2025.2016"],
   "additional_literature": ["pmid:41507280", "pmid:41181325", "pmid:41074680", "pmid:41024012", "pmid:40890629", "pmid:40589716", "pmid:40195828", "pmid:38625071", "pmid:38411001", "pmid:38379425", "pmid:38311638", "pmid:38280392", "pmid:38134936", "pmid:36398398", "pmid:36209056", "pmid:35608245", "pmid:35233526", "pmid:35055435", "pmid:34650802", "pmid:34526668", "pmid:34197619", "pmid:34149004", "pmid:33805940", "pmid:33086767", "pmid:32813677", "pmid:32695278", "pmid:32612964", "pmid:32110891", "pmid:31817852", "pmid:31370354", "pmid:31161452", "pmid:30838312", "pmid:30823845", "pmid:30533396", "pmid:30464574", "pmid:30122542", "pmid:29995270", "pmid:29660633", "pmid:29394274", "pmid:29321350", "pmid:29162511", "pmid:28895423", "pmid:28349270", "pmid:28280649", "pmid:28074308", "pmid:28074022", "pmid:27995989", "pmid:27868347", "pmid:27864985", "pmid:27685916", "pmid:27375073", "pmid:29767611", "pmid:26745074", "pmid:26621114", "pmid:26277606", "pmid:26196219", "pmid:26189437", "pmid:25955097", "pmid:25648260", "pmid:25536611", "pmid:25366766", "pmid:25341694", "pmid:25294632", "pmid:25279663", "pmid:25258183", "pmid:25246386", "pmid:25028118", "pmid:25007187", "pmid:24726028", "pmid:24686188", "pmid:24641398", "pmid:24596472", "pmid:24554028", "pmid:24422758", "pmid:24415354", "pmid:24302747", "pmid:24137384", "pmid:23968134", "pmid:23571497", "pmid:23481061", "pmid:23232805", "pmid:23226765", "pmid:23148637", "pmid:22799365", "pmid:22763757", "pmid:22576918", "pmid:22086855", "pmid:22044939", "pmid:21630057", "pmid:21449681", "pmid:21269855", "pmid:21196216", "pmid:21075014", "pmid:20966539", "pmid:20962453", "pmid:20932673", "pmid:20880668", "pmid:20824655", "pmid:20651387", "pmid:20645403", "pmid:20570968", "pmid:20531375", "pmid:20372856", "pmid:20005374", "pmid:19998340", "pmid:19917450", "pmid:19798689", "pmid:19632929", "pmid:19349389", "pmid:19306093", "pmid:19200948", "pmid:19082493", "pmid:18843018", "pmid:18728661", "pmid:18704422", "pmid:18661526", "pmid:18406541", "pmid:18273818", "pmid:18267032", "pmid:18203297", "pmid:18095031", "pmid:17508355", "pmid:17396161", "pmid:17278107", "pmid:17273745", "pmid:17220568", "pmid:17201138", "pmid:17187508", "pmid:17047490", "pmid:17018589", "pmid:16929515", "pmid:16818689", "pmid:16596248", "pmid:16456808", "pmid:16334126", "pmid:16333305", "pmid:16234002", "pmid:16182121", "pmid:15897576", "pmid:15817609", "pmid:15749593", "pmid:15646842", "pmid:15579479", "pmid:15571262", "pmid:15510613", "pmid:15457444", "pmid:15386371", "pmid:15284183", "pmid:15115918", "pmid:14522928", "pmid:12684695", "pmid:12604405", "pmid:12460463", "pmid:12232785", "pmid:12215845", "pmid:12039668", "pmid:11913730", "pmid:11867566", "pmid:11751507", "pmid:11529907", "pmid:11445856", "pmid:10652619", "pmid:10636923", "pmid:10625460", "pmid:8751943", "pmid:3002689"]
