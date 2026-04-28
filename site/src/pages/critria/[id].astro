@@ -31,7 +31,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading client:load level={2}><LuBookMarked />{curation.Locus_ID}</Heading>
+    <Heading client:load level={1}><LuBookMarked />{curation.Locus_ID}</Heading>
 
     <dl style="--cols: 1">
       <dt>Gene</dt>
@@ -66,7 +66,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
     {
       curation.Description && (
         <>
-          <Heading client:load level={3}>
+          <Heading client:load level={2}>
             Description
           </Heading>
 
@@ -88,7 +88,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
   </section>
 
   <section>
-    <Heading client:load level={3}>Genetic evidence</Heading>
+    <Heading client:load level={2}>Genetic evidence</Heading>
     <p class="center section-total">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"}
@@ -107,7 +107,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
   </section>
 
   <section>
-    <Heading client:load level={3}>Experimental evidence</Heading>
+    <Heading client:load level={2}>Experimental evidence</Heading>
     <p class="center section-total">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Experimental Evidence"] ?? "-"}
