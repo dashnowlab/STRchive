@@ -398,7 +398,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
             data = lift_over(data, ref_dir)
 
         # Sort records by gene name then id
-        data = sorted(data, key = lambda x: (x['gene'], x['id']))
+        data = sorted(data, key = lambda x: (x['Gene'], x['Locus_ID']))
 
         # Make sure json is sorted within each record based on the schema order
         if json_schema is not None:

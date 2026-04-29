@@ -217,6 +217,14 @@ Probands	6	pmid:25168903	probands:46		68 affected individuals + 1 unaffected wit
             )
         df['Score'] = pd.to_numeric(df['Score'], errors='coerce')
 
+    # Merge Values, Evidence detail, and Notes into a single Notes field
+    merge_cols = [c for c in ['Values', 'Evidence detail', 'Notes'] if c in df.columns]
+    df['Notes'] = df[merge_cols].apply(
+        lambda row: ' | '.join(str(v) for v in row if pd.notna(v) and str(v).strip()),
+        axis=1,
+    ).replace('', pd.NA)
+    df = df.drop(columns=[c for c in merge_cols if c != 'Notes'])
+
     # use LOOKUP_EVIDENCE to add evidence_category and evidence_supercategory columns to the dataframe
     df['evidence_category'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_category'])
     df['evidence_supercategory'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_supercategory'])

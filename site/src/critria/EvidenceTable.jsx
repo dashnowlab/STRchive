@@ -20,9 +20,7 @@ const cols = [
       )),
   },
   { key: "Score", name: "Score" },
-  { key: "Values", name: "Values" },
   { key: "Evidence detail", name: "Evidence Detail" },
-  { key: "Notes", name: "Notes" },
 ];
 
 const getPmidLinks = (citation) => {
