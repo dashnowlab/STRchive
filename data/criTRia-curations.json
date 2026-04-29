@@ -72,7 +72,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-07-27 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -158,7 +158,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2024-11-01 00:00:00"
   },
   {
     "Evidence type": "Segregation",
@@ -225,7 +225,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2014-04-01 00:00:00"
   },
   {
     "Evidence type": "Non-patient cells",
@@ -247,7 +247,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2014-04-01 00:00:00"
   }]
 },
 {
@@ -323,7 +323,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2011-01-01 00:00:00"
   },
   {
     "Evidence type": "Probands",
@@ -356,7 +356,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "1997-09-01 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -412,7 +412,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2007-04-25 00:00:00"
   },
   {
     "Evidence type": "Biochemical function",
@@ -453,9 +453,9 @@
     "Collective Evidence": 1,
     "Singular Evidence": 6,
     "Statistics": 6,
-    "Functional Alteration": 0,
     "Models": 0,
     "Function": 0,
+    "Functional Alteration": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -466,7 +466,7 @@
   "total_score": 12,
   "classification": "Definitive",
   "publication_count": 2,
-  "publication_interval_years": null,
+  "publication_interval_years": 4.75,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -499,7 +499,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_date": null
+    "publication_date": "2015-05-01 00:00:00"
   }],
   "experimental_evidence_details": []
 },
@@ -543,7 +543,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "1982-08-01 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -720,7 +720,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2022-06-09 00:00:00"
   },
   {
     "Evidence type": "Non-patient cells",
@@ -818,7 +818,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_date": null
+    "publication_date": "2009-01-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -961,7 +961,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 6,
-  "publication_interval_years": 0.36,
+  "publication_interval_years": 30.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -983,7 +983,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "1997-02-01 00:00:00"
   },
   {
     "Evidence type": "Case-control data",
@@ -1061,7 +1061,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "1994-11-01 00:00:00"
   },
   {
     "Evidence type": "Rescue in non-human model organism",
@@ -1171,7 +1171,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2008-01-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -1182,7 +1182,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2008-01-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -1226,7 +1226,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2008-01-01 00:00:00"
   }]
 },
 {
@@ -1303,7 +1303,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "1999-04-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -1358,7 +1358,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2021-11-08 00:00:00"
   }]
 },
 {
@@ -1389,7 +1389,7 @@
   "total_score": 15.0,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 13.2,
+  "publication_interval_years": 13.33,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1400,7 +1400,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2009-11-01 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -1434,7 +1434,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2023-03-01 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -1554,7 +1554,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 19.53,
+  "publication_interval_years": 28.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1565,7 +1565,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2025-04-01 00:00:00"
   },
   {
     "Evidence type": "Segregation",
@@ -1598,7 +1598,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2025-04-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -1621,7 +1621,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "1997-01-01 00:00:00"
   },
   {
     "Evidence type": "Biochemical function",
@@ -1665,7 +1665,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2013-01-18 00:00:00"
   },
   {
     "Evidence type": "Non-patient cells",
@@ -1709,7 +1709,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2016-07-13 00:00:00"
   }]
 },
 {
@@ -1729,8 +1729,8 @@
     "Functional Alteration": 1.0,
     "Singular Evidence": 6,
     "Models": 0,
-    "Statistics": 0,
     "Collective Evidence": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -1829,7 +1829,7 @@
   "total_score": 14.5,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 13.83,
+  "publication_interval_years": 15.99,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -1851,7 +1851,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2001-08-03 00:00:00"
   },
   {
     "Evidence type": "Segregation",
@@ -1874,7 +1874,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2017-08-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -1907,7 +1907,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2017-08-01 00:00:00"
   },
   {
     "Evidence type": "Rescue in non-human model organism",
@@ -1929,7 +1929,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2010-12-01 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -1940,7 +1940,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2010-12-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -2016,7 +2016,7 @@
   "total_score": 8.0,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 5.08,
+  "publication_interval_years": 6.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2050,7 +2050,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2019-03-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -2072,7 +2072,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2020-10-01 00:00:00"
   }]
 },
 {
@@ -2204,7 +2204,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2017-07-06 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -2248,7 +2248,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2017-07-06 00:00:00"
   },
   {
     "Evidence type": "Cell culture",
@@ -2277,10 +2277,10 @@
   {
     "Collective Evidence": 0,
     "Singular Evidence": 0,
-    "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0,
     "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -2346,7 +2346,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 6,
-  "publication_interval_years": 20.11,
+  "publication_interval_years": 30.45,
   "genetic_evidence_details": [
   {
     "Evidence type": "Allele",
@@ -2379,7 +2379,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_date": null
+    "publication_date": "1994-09-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -2413,7 +2413,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2019-12-13 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -2444,8 +2444,8 @@
     "Functional Alteration": 2,
     "Models": 4,
     "Singular Evidence": 6,
-    "Statistics": 0,
     "Function": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -2456,7 +2456,7 @@
   "total_score": 15,
   "classification": "Definitive",
   "publication_count": 3,
-  "publication_interval_years": 3.45,
+  "publication_interval_years": 4.24,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2467,7 +2467,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2018-04-01 00:00:00"
   },
   {
     "Evidence type": "Segregation",
@@ -2478,7 +2478,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2014-01-02 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -2555,7 +2555,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2023-01-05 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -2577,7 +2577,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2003-01-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -2643,7 +2643,7 @@
   "total_score": 14.5,
   "classification": "Definitive",
   "publication_count": 8,
-  "publication_interval_years": 6.67,
+  "publication_interval_years": 28.67,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2688,7 +2688,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "1992-01-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -2699,7 +2699,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2019-01-12 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -2775,7 +2775,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2007-06-05 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -2786,7 +2786,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2007-06-05 00:00:00"
   },
   {
     "Evidence type": "Case-Control Data",
@@ -2831,7 +2831,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2008-04-15 00:00:00"
   }]
 },
 {
@@ -2851,8 +2851,8 @@
     "Functional Alteration": 0.5,
     "Models": 4,
     "Singular Evidence": 6.0,
-    "Statistics": 0,
     "Function": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -2907,7 +2907,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2021-01-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -3028,7 +3028,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2021-03-03 00:00:00"
   },
   {
     "Evidence type": "Probands",
@@ -3124,9 +3124,9 @@
     "Function": 1.0,
     "Functional Alteration": 1.5,
     "Models": 2.0,
-    "Statistics": 0,
     "Singular Evidence": 0,
     "Collective Evidence": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -3149,7 +3149,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2007-12-15 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -3171,7 +3171,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2007-12-15 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -3378,7 +3378,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2007-12-15 00:00:00"
   },
   {
     "Evidence type": "Non-human model organism",
@@ -3389,7 +3389,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2007-12-15 00:00:00"
   }]
 },
 {
@@ -3421,7 +3421,7 @@
   "total_score": 14.5,
   "classification": "Definitive",
   "publication_count": 4,
-  "publication_interval_years": 16.04,
+  "publication_interval_years": 24.09,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -3466,7 +3466,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2012-05-10 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -3477,7 +3477,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2012-05-10 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -3521,7 +3521,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2020-05-28 00:00:00"
   }]
 },
 {
@@ -3642,7 +3642,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2018-01-17 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -3729,7 +3729,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_date": null
+    "publication_date": "2021-07-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -3784,7 +3784,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -3806,7 +3806,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   },
   {
     "Evidence type": "Computational",
@@ -3828,7 +3828,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -3862,7 +3862,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -3884,7 +3884,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -3971,7 +3971,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-05-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -4058,7 +4058,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2024-10-25 00:00:00"
   },
   {
     "Evidence type": "Computational",
@@ -4092,7 +4092,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-10-25 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -4114,7 +4114,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-10-25 00:00:00"
   },
   {
     "Evidence type": "Non-patient cells",
@@ -4289,7 +4289,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2017-08-01 00:00:00"
   },
   {
     "Evidence type": "Segregation",
@@ -4300,7 +4300,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2017-08-01 00:00:00"
   },
   {
     "Evidence type": "Case-Control Data",
@@ -4323,7 +4323,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2023-01-01 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -4367,7 +4367,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2023-06-01 00:00:00"
   }]
 },
 {
@@ -4409,7 +4409,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2023-04-01 00:00:00"
   },
   {
     "Evidence type": "Segregation",
@@ -4454,7 +4454,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2019-08-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -4465,7 +4465,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2019-08-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -4574,7 +4574,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-02-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -4585,7 +4585,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-02-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -4717,7 +4717,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "1998-02-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -4804,7 +4804,7 @@
   "total_score": 12.5,
   "classification": "Strong",
   "publication_count": 6,
-  "publication_interval_years": 2.08,
+  "publication_interval_years": 2.92,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -4848,7 +4848,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2022-11-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -4904,7 +4904,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2025-10-01 00:00:00"
   }]
 },
 {
@@ -4923,9 +4923,9 @@
     "Function": 1.0,
     "Functional Alteration": 1.0,
     "Models": 2.0,
-    "Statistics": 0,
     "Singular Evidence": 0,
     "Collective Evidence": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -5058,7 +5058,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "1999-12-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -5069,7 +5069,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "1999-12-01 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -5124,7 +5124,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2024-06-01 00:00:00"
   }]
 },
 {
@@ -5200,7 +5200,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2015-07-01 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -5255,7 +5255,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2015-07-01 00:00:00"
   },
   {
     "Evidence type": "Cell culture",
@@ -5266,7 +5266,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2015-07-01 00:00:00"
   }]
 },
 {
@@ -5284,8 +5284,8 @@
     "Collective Evidence": 1.5,
     "Function": 1.5,
     "Singular Evidence": 6.0,
-    "Functional Alteration": 0,
     "Models": 0,
+    "Functional Alteration": 0,
     "Statistics": 0,
     "Rescue": 0
   },
@@ -5297,7 +5297,7 @@
   "total_score": 9.0,
   "classification": "Moderate",
   "publication_count": 5,
-  "publication_interval_years": 8.0,
+  "publication_interval_years": 34.09,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -5319,7 +5319,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "1991-12-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -5331,7 +5331,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2023-08-15 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -5451,7 +5451,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-01-01 00:00:00"
   },
   {
     "Evidence type": "Non-patient cells",
@@ -5479,10 +5479,10 @@
   {
     "Collective Evidence": 1,
     "Singular Evidence": 2,
-    "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0,
     "Function": 0,
+    "Functional Alteration": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -5614,7 +5614,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2022-03-03 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -5786,8 +5786,8 @@
     "Collective Evidence": 3,
     "Function": 2.0,
     "Singular Evidence": 6.0,
-    "Functional Alteration": 0,
     "Models": 0,
+    "Functional Alteration": 0,
     "Statistics": 0,
     "Rescue": 0
   },
@@ -5810,7 +5810,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2025-02-01 00:00:00"
   },
   {
     "Evidence type": "Allele",
@@ -5855,7 +5855,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2018-04-01 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -5884,9 +5884,9 @@
     "Collective Evidence": 3.0,
     "Singular Evidence": 6.0,
     "Statistics": 6.0,
-    "Functional Alteration": 0,
     "Models": 0,
     "Function": 0,
+    "Functional Alteration": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -5919,7 +5919,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   },
   {
     "Evidence type": "Computational",
@@ -5941,7 +5941,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2019-10-29 00:00:00"
   },
   {
     "Evidence type": "Case-control data",
@@ -6190,10 +6190,10 @@
   {
     "Models": 1,
     "Singular Evidence": 1,
-    "Functional Alteration": 0,
-    "Statistics": 0,
     "Function": 0,
+    "Functional Alteration": 0,
     "Collective Evidence": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -6259,7 +6259,7 @@
   "total_score": 18,
   "classification": "Definitive",
   "publication_count": 9,
-  "publication_interval_years": 4.67,
+  "publication_interval_years": 9.41,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6270,7 +6270,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2014-08-28 00:00:00"
   },
   {
     "Evidence type": "Probands",
@@ -6303,7 +6303,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2014-01-02 00:00:00"
   },
   {
     "Evidence type": "Case-Control Data",
@@ -6347,7 +6347,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_date": null
+    "publication_date": "2017-01-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -6392,7 +6392,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2015-03-06 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -6447,7 +6447,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2023-06-01 00:00:00"
   },
   {
     "Evidence type": "Rescue in Cell Culture",
@@ -6458,7 +6458,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2018-04-05 00:00:00"
   }]
 },
 {
@@ -6489,7 +6489,7 @@
   "total_score": 14.0,
   "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 9.08,
+  "publication_interval_years": 10.75,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6511,7 +6511,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2025-03-01 00:00:00"
   },
   {
     "Evidence type": "Computational",
@@ -6556,7 +6556,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2014-06-01 00:00:00"
   },
   {
     "Evidence type": "Patient cells",
@@ -6578,7 +6578,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2023-07-01 00:00:00"
   }]
 },
 {
@@ -6596,8 +6596,8 @@
     "Collective Evidence": 1.0,
     "Function": 0.5,
     "Singular Evidence": 1.5,
-    "Functional Alteration": 0,
     "Models": 0,
+    "Functional Alteration": 0,
     "Statistics": 0,
     "Rescue": 0
   },
@@ -6631,7 +6631,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2018-04-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -6719,7 +6719,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-01-01 00:00:00"
   }]
 },
 {
@@ -6736,10 +6736,10 @@
   {
     "Function": 2,
     "Singular Evidence": 6.0,
-    "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0,
+    "Functional Alteration": 0,
     "Collective Evidence": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -6750,7 +6750,7 @@
   "total_score": 8.5,
   "classification": "Moderate",
   "publication_count": 2,
-  "publication_interval_years": null,
+  "publication_interval_years": 4.83,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6761,7 +6761,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2019-01-03 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -6773,7 +6773,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2014-03-06 00:00:00"
   },
   {
     "Evidence type": "Protein interaction",
@@ -6784,7 +6784,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2014-03-06 00:00:00"
   },
   {
     "Evidence type": "Regulatory Impact",
@@ -6826,7 +6826,7 @@
   "total_score": 6.0,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 4.25,
+  "publication_interval_years": 11.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6848,7 +6848,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2013-02-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -6871,7 +6871,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": null
+    "publication_date": "2024-02-01 00:00:00"
   },
   {
     "Evidence type": "Non-human model organism",
@@ -6911,9 +6911,9 @@
     "Genetic Evidence": 9.5
   },
   "total_score": 13.5,
-  "classification": "Strong",
+  "classification": "Definitive",
   "publication_count": 5,
-  "publication_interval_years": 0.66,
+  "publication_interval_years": 21.25,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -6946,7 +6946,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_date": "2003-06-01 00:00:00"
   }],
   "experimental_evidence_details": [
   {
@@ -7023,7 +7023,7 @@
   "total_score": 11.5,
   "classification": "Moderate",
   "publication_count": 3,
-  "publication_interval_years": 4.16,
+  "publication_interval_years": 8.0,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -7034,7 +7034,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": null
+    "publication_date": "2001-04-01 00:00:00"
   },
   {
     "Evidence type": "Computational",
@@ -7101,7 +7101,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_date": null
+    "publication_date": "2005-02-01 00:00:00"
   }]
 },
 {
@@ -7117,11 +7117,11 @@
   "category_summary":
   {
     "Singular Evidence": 3.5,
-    "Functional Alteration": 0,
     "Models": 0,
-    "Statistics": 0,
     "Function": 0,
+    "Functional Alteration": 0,
     "Collective Evidence": 0,
+    "Statistics": 0,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -7161,9 +7161,9 @@
   {
     "Singular Evidence": 3,
     "Statistics": 4,
-    "Functional Alteration": 0,
     "Models": 0,
     "Function": 0,
+    "Functional Alteration": 0,
     "Collective Evidence": 0,
     "Rescue": 0
   },
