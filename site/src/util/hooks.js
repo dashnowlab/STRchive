@@ -43,3 +43,11 @@ export const useQuery = (
     reset,
   };
 };
+
+/** use value from previous render */
+export const usePrevious = (value) => {
+  const ref = useRef();
+  const prev = ref.current;
+  ref.current = value;
+  return prev;
+}
