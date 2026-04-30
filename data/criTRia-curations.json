@@ -2804,13 +2804,12 @@
   "Gene": "PRDM12",
   "Locus_ID": "HSAN-VIII_PRDM12",
   "Inheritance": "AR",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt,Elbay Aliyev",
   "Date": "8/14/25",
-  "Description": null,
+  "Description": "Homozygous PRDM12 polyalanine repeat expansions were reported in two unrelated families with autosomal recessive congenital insensitivity to pain / HSAN-VIII. The TR-specific genetic evidence includes a 19-alanine expansion in family A and an 18-alanine expansion in family J, both exceeding the maximum 14-alanine tract observed in the tested general population. Experimental evidence supports PRDM12 function in nociceptor development and epigenetic regulation, including DRG/nociceptor expression, patient sensory fiber loss, polyalanine-mutant aggregation in transfected cells, and Xenopus sensory placode defects after Prdm12 knockdown. The relationship is currently Moderate, based on one publication without independent replication over time.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "category_summary":
-  {
+  "category_summary": {
     "Collective Evidence": 2.5,
     "Function": 2.0,
     "Functional Alteration": 1.5,
@@ -2819,8 +2818,7 @@
     "Statistics": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 6,
     "Genetic Evidence": 5.0
   },
@@ -2829,220 +2827,118 @@
   "publication_count": 1,
   "publication_interval_years": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 2.5,
-    "Citation": "pmid:26005867",
-    "Values": "2 families",
-    "Evidence detail": "pedigree for both and functional info for one family",
-    "Notes": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 1.0,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 2.5,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "Two unrelated families carried homozygous PRDM12 polyalanine expansions: family A had expansion from 12 to 19 alanines in all affected individuals, and family J had an 18-alanine repeat mutation with a milder CIP/HSAN phenotype. Pedigrees were consistent with autosomal recessive inheritance; polyalanine expansion mutants showed reduced PRDM12 expression and aggregation in transfected cells.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 1.0,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "PRDM12 polyalanine tract length was polymorphic in 176 general-population individuals but did not exceed 14 alanines, whereas affected families carried 18- and 19-alanine alleles. The authors considered these expansions exceptional and likely deleterious based on rarity and comparison with other pathogenic polyalanine expansion disorders.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "PRDM12 mutations segregated as expected for recessive disease in all 11 families. For the TR-specific evidence, affected individuals in family A were homozygous for the 19-alanine expansion within the mapped autozygous interval, family J carried a homozygous 18-alanine repeat mutation, and heterozygous carriers were asymptomatic with normal pain perception.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_date": "2015-07-01 00:00:00"
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Regulatory Impact",
-    "Score": 1.0,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:26005867",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  }]
-},
-{
-  "Disease_ID": "JBS",
-  "Gene": "CBL",
-  "Locus_ID": "JBS_CBL",
-  "Inheritance": "AD",
-  "Curator": "Macayla, Laurel",
-  "Date": "8/12/2025",
-  "Manual_evidence_level": "",
-  "Description": null,
-  "Source": "criTRia",
-  "SOP_version": "criTRia v0",
-  "category_summary":
-  {
-    "Function": 1.5,
-    "Functional Alteration": 1.0,
-    "Singular Evidence": 6,
-    "Statistics": 0,
-    "Models": 0,
-    "Rescue": 0,
-    "Collective Evidence": 0
-  },
-  "supercategory_summary":
-  {
-    "Experimental Evidence": 2.5,
-    "Genetic Evidence": 12.0
-  },
-  "total_score": 14.5,
-  "classification": "Strong",
-  "publication_count": 3,
-  "publication_interval_years": null,
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:7603564",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6
-  },
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:7887422; pmid:10767345",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": "5 patients; 24",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6
-  }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:7603564",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": "transc reg",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Regulatory Impact",
-    "Score": 1.0,
-    "Citation": "pmid:7603564; pmid:10767345",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": "expression + hypermethylation",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:7603564; pmid:10767345",
-    "Values": null,
-    "Evidence detail": null,
-    "Notes": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2
-  }]
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "PRDM12 is a PRDM-family transcriptional/epigenetic regulator with a PR/SET-related domain, zinc fingers, and a C-terminal polyalanine tract. Wild-type Prdm12 induced H3K9 dimethylation, supporting a biochemical role in histone modification during sensory neurogenesis.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "Gene-level evidence: PRDM12 recruits the histone methyltransferase G9a/EHMT2 to mediate H3K9 dimethylation, and the p.His289Leu mutant significantly reduced Prdm12-G9a interaction. This protein-interaction evidence is PRDM12 gene-level and not specific to the polyalanine repeat expansion.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Regulatory Impact",
+      "Score": 1.0,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "PRDM12/Prdm12 was expressed in mouse neural folds and dorsal root ganglia, induced during human iPSC- and hESC-derived nociceptor-like neuron differentiation, and detected in adult human dorsal root ganglia. CIP-associated mutants impaired H3K9 dimethylation, supporting altered epigenetic regulatory function.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "Patient tissue studies showed sensory neuron pathology: sural nerve biopsies from affected individuals showed severe loss of small-caliber myelinated Aδ fibers, and skin biopsies showed absent intraepidermal nerve fiber crossing with markedly reduced CGRP-positive nociceptive fibers.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "In transfected COS-7 and HEK-293T cells, PRDM12 polyalanine expansion mutants showed reduced protein levels and nuclear/cytoplasmic aggregation; expression was recovered after proteasome inhibition with MG132.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 2.0,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "Xenopus Prdm12 knockdown caused abnormal expression of cranial sensory placode markers Ath3, Ebf3, and Islet1, supporting a conserved role for Prdm12 in sensory neurogenesis. Mouse embryo studies also showed Prdm12 expression in neural folds and dorsal root ganglia during sensory neuron development.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_date": "2015-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Cell culture",
+      "Score": 1.0,
+      "Citation": "pmid:26005867",
+      "Evidence detail": "Human iPSC- and hESC-derived nociceptor-like neuron differentiation models showed strong PRDM12 induction during neural crest/sensory neuron specification; mature cells showed nociceptor-associated marker expression and tetrodotoxin-resistant sodium currents.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2015-07-01 00:00:00"
+    }]
 },
 {
   "Disease_ID": "CHNG3",
