@@ -2,7 +2,7 @@
 PMID- 41871099
 OWN - NLM
 STAT- Publisher
-LR  - 20260323
+LR  - 20260501
 IS  - 2211-1247 (Electronic)
 VI  - 45
 IP  - 4
@@ -12,6 +12,7 @@ TI  - The insertion of an ATTTC repeat in an Alu element hyperactivates a
 PG  - 117146
 LID - S2211-1247(26)00224-X [pii]
 LID - 10.1016/j.celrep.2026.117146 [doi]
+LID - 117146
 AB  - Alu elements are evolutionarily very old primate-specific interspersed repeat 
       elements that constitute  approximately 11% of the human genome. They are a source of short 
       tandem repeats (STRs), which often expand in size and cause inherited 
@@ -119,6 +120,7 @@ TA  - Cell Rep
 JT  - Cell reports
 JID - 101573691
 SB  - IM
+PMC - PMC13125401
 OTO - NOTNLM
 OT  - 4C-seq
 OT  - CAGE
@@ -143,6 +145,7 @@ COIS- Declaration of interests P.H. receives honorarium as an advisor for Alecto
       Laboratories, LDA. C.C.R. is an employee of FairJourney Biologics.
 EDAT- 2026/03/23 19:54
 MHDA- 2026/03/23 19:54
+PMCR- 2026/03/22
 CRDT- 2026/03/23 13:35
 PHST- 2025/08/19 00:00 [received]
 PHST- 2025/12/26 00:00 [revised]
@@ -150,7 +153,9 @@ PHST- 2026/02/27 00:00 [accepted]
 PHST- 2026/03/23 19:54 [medline]
 PHST- 2026/03/23 19:54 [pubmed]
 PHST- 2026/03/23 13:35 [entrez]
+PHST- 2026/03/22 00:00 [pmc-release]
 AID - S2211-1247(26)00224-X [pii]
+AID - 117146 [pii]
 AID - 10.1016/j.celrep.2026.117146 [doi]
 PST - aheadofprint
 SO  - Cell Rep. 2026 Mar 22;45(4):117146. doi: 10.1016/j.celrep.2026.117146.

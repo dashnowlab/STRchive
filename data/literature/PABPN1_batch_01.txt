@@ -1,14 +1,18 @@
 
 PMID- 41764774
 OWN - NLM
-STAT- Publisher
-LR  - 20260301
+STAT- MEDLINE
+DCOM- 20260410
+LR  - 20260410
 IS  - 1098-2744 (Electronic)
 IS  - 0899-1987 (Linking)
-DP  - 2026 Mar 1
+VI  - 65
+IP  - 5
+DP  - 2026 May
 TI  - Evaluation of Epidermal Growth Factor Receptor and Its Inducible Feedback 
       Inhibitor Leucine Rich Repeats and Immunoglobulin Like Domains 1 as Prognostic 
       Marker in Oral Cancer.
+PG  - 630-641
 LID - 10.1002/mc.70103 [doi]
 AB  - Oral squamous cell carcinoma (OSCC) is a life-threatening disease that ranks 
       sixth amongst the most common human cancers worldwide. In most cases, OSCC 
@@ -86,7 +90,27 @@ PL  - United States
 TA  - Mol Carcinog
 JT  - Molecular carcinogenesis
 JID - 8811105
+RN  - 0 (LRIG1 protein, human)
+RN  - EC 2.7.10.1 (ErbB Receptors)
+RN  - 0 (Biomarkers, Tumor)
+RN  - 0 (Membrane Glycoproteins)
+RN  - EC 2.7.10.1 (EGFR protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Mouth Neoplasms/pathology/metabolism/genetics/mortality
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - *ErbB Receptors/metabolism/genetics
+MH  - *Biomarkers, Tumor/metabolism/genetics
+MH  - Prognosis
+MH  - *Carcinoma, Squamous Cell/pathology/metabolism/genetics/mortality
+MH  - Aged
+MH  - *Membrane Glycoproteins/metabolism/genetics
+MH  - Retrospective Studies
+MH  - Adult
+MH  - Gene Expression Regulation, Neoplastic
+MH  - Aged, 80 and over
 OTO - NOTNLM
 OT  - EGFR
 OT  - LRIG1
@@ -94,17 +118,17 @@ OT  - biomarker
 OT  - oral cancer
 OT  - oral dysplasia
 EDAT- 2026/03/01 19:31
-MHDA- 2026/03/01 19:31
+MHDA- 2026/04/10 12:59
 CRDT- 2026/03/01 14:52
 PHST- 2025/11/04 00:00 [revised]
 PHST- 2025/02/03 00:00 [received]
 PHST- 2026/02/20 00:00 [accepted]
-PHST- 2026/03/01 19:31 [medline]
+PHST- 2026/04/10 12:59 [medline]
 PHST- 2026/03/01 19:31 [pubmed]
 PHST- 2026/03/01 14:52 [entrez]
 AID - 10.1002/mc.70103 [doi]
-PST - aheadofprint
-SO  - Mol Carcinog. 2026 Mar 1. doi: 10.1002/mc.70103.
+PST - ppublish
+SO  - Mol Carcinog. 2026 May;65(5):630-641. doi: 10.1002/mc.70103. Epub 2026 Mar 1.
 
 PMID- 41676387
 OWN - NLM

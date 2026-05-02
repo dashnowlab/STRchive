@@ -1,15 +1,20 @@
 
 PMID- 41841436
 OWN - NLM
-STAT- Publisher
-LR  - 20260317
+STAT- MEDLINE
+DCOM- 20260426
+LR  - 20260428
 IS  - 1521-3773 (Electronic)
+IS  - 1433-7851 (Print)
 IS  - 1433-7851 (Linking)
-DP  - 2026 Mar 17
+VI  - 65
+IP  - 18
+DP  - 2026 Apr 27
 TI  - Phototriggered Morphological and Compositional Change of UGGAA Repeat RNA Foci by 
       Photoswitchable RNA-Binding Ligand.
 PG  - e22077
 LID - 10.1002/anie.202522077 [doi]
+LID - e22077
 AB  - The expansion of specific repeat sequences causes dozens of heritable 
       neuromuscular diseases, where expanded repeat RNAs play key roles in the 
       pathogenic mechanism. Although the formation of RNA foci has been identified as a 
@@ -55,25 +60,40 @@ PL  - Germany
 TA  - Angew Chem Int Ed Engl
 JT  - Angewandte Chemie (International ed. in English)
 JID - 0370543
+RN  - 63231-63-0 (RNA)
+RN  - 0 (Ligands)
+RN  - 0 (RNA-Binding Proteins)
 SB  - IM
+MH  - *RNA/chemistry/genetics/metabolism
+MH  - Ligands
+MH  - Humans
+MH  - Photochemical Processes
+MH  - Ultraviolet Rays
+MH  - *RNA-Binding Proteins/metabolism/chemistry
+PMC - PMC13110772
 OTO - NOTNLM
 OT  - LLPS
 OT  - RNA foci
 OT  - RNA-binding ligand
 OT  - photoswitch
 OT  - repeat
+COIS- The authors declare no conflicts of interest.
 EDAT- 2026/03/17 14:25
-MHDA- 2026/03/17 14:25
+MHDA- 2026/04/26 18:27
+PMCR- 2026/04/26
 CRDT- 2026/03/17 06:43
 PHST- 2026/02/26 00:00 [revised]
 PHST- 2025/10/09 00:00 [received]
 PHST- 2026/03/03 00:00 [accepted]
-PHST- 2026/03/17 14:25 [medline]
+PHST- 2026/04/26 18:27 [medline]
 PHST- 2026/03/17 14:25 [pubmed]
 PHST- 2026/03/17 06:43 [entrez]
+PHST- 2026/04/26 00:00 [pmc-release]
+AID - ANIE71805 [pii]
 AID - 10.1002/anie.202522077 [doi]
-PST - aheadofprint
-SO  - Angew Chem Int Ed Engl. 2026 Mar 17:e22077. doi: 10.1002/anie.202522077.
+PST - ppublish
+SO  - Angew Chem Int Ed Engl. 2026 Apr 27;65(18):e22077. doi: 10.1002/anie.202522077. 
+      Epub 2026 Mar 17.
 
 PMID- 41426430
 OWN - NLM
