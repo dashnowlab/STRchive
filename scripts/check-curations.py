@@ -266,10 +266,11 @@ def fetch_pubmed_publication_date(pmid):
         return pub_date
     return None
 
-def get_publication_date(citation):
-    """Extract the earliest publication date from a citation field containing one or more citations."""
+def get_publication_dates(citation):
+    """Extract all publication dates from a citation field containing one or more citations.
+    Returns a list of ISO date strings, one for each resolvable PMID found."""
     if not isinstance(citation, str):
-        return None
+        return []
 
     publication_dates = []
     for citation_part in citation.split(';'):
@@ -284,13 +285,17 @@ def get_publication_date(citation):
         pub_date = fetch_pubmed_publication_date(pmid)
         if pub_date:
             try:
-                publication_dates.append(pd.to_datetime(pub_date))
+                publication_dates.append(pd.to_datetime(pub_date).date().isoformat())
             except Exception as e:
                 sys.stderr.write(f"Warning: Unable to parse publication date '{pub_date}' for PMID {pmid}: {e}\n")
 
-    if publication_dates:
-        return min(publication_dates).date().isoformat()
-    return None
+    return publication_dates
+
+def get_publication_date(citation):
+    """Extract the earliest publication date from a citation field containing one or more citations.
+    Returns a single ISO date string, or None if no dates can be resolved."""
+    dates = get_publication_dates(citation)
+    return min(dates) if dates else None
 
 def publication_interval(pub_dates):
     """Calculate the interval in years between the earliest and latest publication dates for a list of PubMed IDs."""
@@ -347,10 +352,18 @@ def summarize_curations(locus):
         "publication_count": 1,
         "publication_interval_years": null,
     """
-    # Add publication year for each citations
+    # Add publication year for each citation; also collect every individual date for the
+    # interval calculation so that multi-PMID rows contribute all their dates, not just
+    # the earliest one per row.
+    all_pub_dates = []
     for evidence_entry in locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []):
+        entry_dates = get_publication_dates(evidence_entry.get('Citation'))
+        all_pub_dates.extend(entry_dates)
         if 'publication_date' not in evidence_entry or evidence_entry['publication_date'] is None:
-            evidence_entry['publication_date'] = get_publication_date(evidence_entry.get('Citation'))
+            # Reuse already-fetched entry_dates so we don't make a second network call
+            evidence_entry['publication_date'] = (
+                min(entry_dates) if entry_dates else None
+            )
 
     locus_id = locus.get('Locus_ID', 'Unknown Locus')
     df = pd.DataFrame(locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []))
@@ -407,7 +420,7 @@ def summarize_curations(locus):
 
     # Publication count
     publication_count = count_unique_publications(df['Citation'])
-    publication_interval_years = publication_interval(df['publication_date'].dropna().unique())
+    publication_interval_years = publication_interval(list(set(all_pub_dates)))
     if publication_interval_years is not None:
         publication_interval_years = round(publication_interval_years, 2)
     
