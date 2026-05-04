@@ -258,15 +258,29 @@ def fetch_pubmed_publication_date(pmid):
     return None
 
 def get_publication_date(citation):
-    """Extract the publication year from a citation string in the format 'pmid:12345678'."""
-    if isinstance(citation, str) and citation.startswith('pmid:'):
-        pmid = citation.replace('pmid:', '').strip()
+    """Extract the earliest publication date from a citation field containing one or more citations."""
+    if not isinstance(citation, str):
+        return None
+
+    publication_dates = []
+    for citation_part in citation.split(';'):
+        citation_part = citation_part.strip()
+        if not citation_part or not citation_part.lower().startswith('pmid:'):
+            continue
+
+        pmid = citation_part.split(':', 1)[1].strip()
+        if not pmid:
+            continue
+
         pub_date = fetch_pubmed_publication_date(pmid)
         if pub_date:
             try:
-                return pd.to_datetime(pub_date)
+                publication_dates.append(pd.to_datetime(pub_date))
             except Exception as e:
                 sys.stderr.write(f"Warning: Unable to parse publication date '{pub_date}' for PMID {pmid}: {e}\n")
+
+    if publication_dates:
+        return min(publication_dates)
     return None
 
 def publication_interval(pub_dates):
