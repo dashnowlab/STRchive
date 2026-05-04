@@ -100,7 +100,15 @@
           "properties": {
             "Evidence type": {
               "title": "Evidence Type",
-              "type": ["string", "null"]
+              "type": ["string", "null"],
+              "enum": [
+                null,
+                "Probands",
+                "Allele",
+                "Computational",
+                "Segregation",
+                "Case-Control Data"
+              ]
             },
             "Score": {
               "title": "Score",
