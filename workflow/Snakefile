@@ -110,18 +110,18 @@ rule check_curations:
         curations = "{base_dir}criTRia-curations.json",
         schema = "{base_dir}criTRia-curations.schema.json"
     output:
-        curations = temp("{base_dir}criTRia-curations-processed.json"),
         check = temp("{base_dir}check-curations.txt")
     shell:
         """
-        python {scripts_dir}check-curations.py --json {input.curations} --schema {input.schema} --out {output.curations} 2> {output.check}
+        python {scripts_dir}check-curations.py --json {input.curations} --schema {input.schema} 2> {output.check}
         """ 
 
 rule check_loci:
     input:
         in_json = in_json,
         schema = "{base_dir}STRchive-loci.schema.json",
-        curations = "{base_dir}criTRia-curations-processed.json"
+        curations = "{base_dir}criTRia-curations.json",
+        curations_check = "{base_dir}check-curations.txt"
     output:
         check = temp("{base_dir}check-loci.txt")
     shell:

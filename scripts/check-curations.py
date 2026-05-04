@@ -281,7 +281,7 @@ def get_publication_date(citation):
                 sys.stderr.write(f"Warning: Unable to parse publication date '{pub_date}' for PMID {pmid}: {e}\n")
 
     if publication_dates:
-        return min(publication_dates)
+        return min(publication_dates).date().isoformat()
     return None
 
 def publication_interval(pub_dates):
@@ -347,7 +347,7 @@ def summarize_curations(locus):
     locus_id = locus.get('Locus_ID', 'Unknown Locus')
     df = pd.DataFrame(locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []))
 
-    sys.stdout.write(f"Processing locus '{locus_id}' with {len(df)} evidence entries...\n")
+    #sys.stdout.write(f"Processing locus '{locus_id}' with {len(df)} evidence entries...\n")
     if len(df) == 0:
         sys.stderr.write(f"Warning: No evidence entries found for locus '{locus_id}'\n")
         return locus
@@ -447,6 +447,8 @@ def sanitize_for_json(value):
         return [sanitize_for_json(item) for item in value]
     if isinstance(value, tuple):
         return [sanitize_for_json(item) for item in value]
+    if isinstance(value, pd.Timestamp):
+        return value.date().isoformat()
     if isinstance(value, float):
         if math.isnan(value) or math.isinf(value):
             return None
