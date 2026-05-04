@@ -157,7 +157,22 @@
           "properties": {
             "Evidence type": {
               "title": "Evidence Type",
-              "type": ["string", "null"]
+              "type": ["string", "null"],
+              "enum": [
+                null,
+                "Biochemical Function",
+                "Protein Interaction",
+                "Expression",
+                "Functional Alteration",
+                "Functional Alteration in patient cells",
+                "Functional Alteration in non-patient cells",
+                "Model Systems",
+                "Animal Model",
+                "Cell Culture Model System",
+                "Rescue",
+                "Rescue in animal model",
+                "Rescue in engineered equivalent"
+              ]
             },
             "Score": {
               "title": "Score",
