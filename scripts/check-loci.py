@@ -362,7 +362,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
     if curations_json:
         curation_dict = parse_curations(curations_json)
         sys.stderr.write(f'Parsed {len(curation_dict)} curations from {curations_json}\n')
-        sys.stderr.write(f'All curations: {curation_dict}\n')
+        #sys.stderr.write(f'All curations: {curation_dict}\n')
 
     # Check if file exists
     if not os.path.exists(json_fname):
@@ -398,7 +398,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
             data = lift_over(data, ref_dir)
 
         # Sort records by gene name then id
-        data = sorted(data, key = lambda x: (x['Gene'], x['Locus_ID']))
+        data = sorted(data, key = lambda x: (x['gene'], x['id']))
 
         # Make sure json is sorted within each record based on the schema order
         if json_schema is not None:

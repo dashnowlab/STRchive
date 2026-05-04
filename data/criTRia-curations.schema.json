@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "criTRia-curations.schema",
+  "title": "criTRia curations",
+  "description": "criTRia curation data for tandem repeat disease associations",
+  "citation_format": "In free text strings: 'Some text [@doi:12345; @pmid:12345]'. In regular lists: ['doi:12345', 'pmid:12345']",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Disease_ID": {
+        "section": "Locus",
+        "title": "Disease ID",
+        "description": "Disease abbreviation",
+        "examples": ["OPDM5", "FRAXE", "FRA2A"],
+        "type": "string"
+      },
+      "Gene": {
+        "section": "Locus",
+        "title": "Gene",
+        "description": "Gene symbol",
+        "examples": ["ABCD3", "AFF2", "AFF3"],
+        "type": "string"
+      },
+      "Locus_ID": {
+        "section": "Locus",
+        "title": "Locus ID",
+        "description": "Unique identifier for the locus in the form [disease_id]_[gene]",
+        "examples": ["OPDM5_ABCD3", "FRAXE_AFF2", "FRA2A_AFF3"],
+        "type": "string",
+        "pattern": "^[\\S]+_[\\S]+$"
+      },
+      "Inheritance": {
+        "section": "Locus",
+        "title": "Inheritance",
+        "description": "Inheritance pattern of the disease. Can be a single value or two values separated by '/', e.g. AD/AR.",
+        "examples": ["AD", "XLD", "AR", "AD/AR"],
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT"]
+          },
+          {
+            "type": "string",
+            "pattern": "^(AD|AR|XLR|XLD|XD|XR|MT)/(AD|AR|XLR|XLD|XD|XR|MT)$"
+          }
+        ]
+      },
+      "Curator": {
+        "section": "Curation",
+        "title": "Curator",
+        "description": "Name(s) of the person/people who performed the curation separated by commas if multiple",
+        "type": ["string", "null"]
+      },
+      "Date": {
+        "section": "Curation",
+        "title": "Date",
+        "description": "Date of curation in MM/DD/YYYY format",
+        "examples": ["4/29/25", "08/11/2025"],
+        "type": ["string", "null"],
+        "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/([0-9]{4})$"
+      },
+      "Description": {
+        "section": "Curation",
+        "title": "Description",
+        "description": "Overall description of the evidence used for curation and any relevant notes e.g. rationale for classification, caveats, etc.",
+        "type": ["string", "null"],
+        "multiline": true
+      },
+      "Source": {
+        "section": "Curation",
+        "title": "Source",
+        "description": "Source of the curation (e.g., criTRia, ClinGen)",
+        "examples": ["criTRia", "ClinGen"],
+        "type": ["string", "null"]
+      },
+      "SOP_version": {
+        "section": "Curation",
+        "title": "SOP Version",
+        "description": "Version of the Standard Operating Procedure used for curation",
+        "examples": ["criTRia v0", "ClinGen Gene Validity Evaluation Criteria SOP11"],
+        "type": ["string", "null"]
+      },
+      "Manual_evidence_level": {
+        "section": "Curation",
+        "title": "Manual Evidence Level",
+        "description": "Manually assigned evidence level that overrides the classification based on total score. This should only be used for unusual cases such as Disputed or Refuted classifications.",
+        "examples": ["Disputed", "Refuted"],
+        "type": ["string", "null"]
+      },
+      "genetic_evidence_details": {
+        "section": "Evidence",
+        "title": "Genetic Evidence Details",
+        "description": "Array of genetic evidence items with their scores and citations",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Evidence type": {
+              "title": "Evidence Type",
+              "type": ["string", "null"]
+            },
+            "Score": {
+              "title": "Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "Citation": {
+              "title": "Citation",
+              "description": "Citation in the format doi:xxxx or pmid:xxxx",
+              "examples": ["pmid:39068203"],
+              "type": ["string", "null"],
+            "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
+
+            },
+            "Evidence detail": {
+              "title": "Evidence Detail",
+              "description": "Detailed description of the evidence",
+              "type": ["string", "null"],
+              "multiline": true
+            },
+            "evidence_category": {
+              "title": "Evidence Category",
+              "type": ["string", "null"]
+            },
+            "evidence_supercategory": {
+              "title": "Evidence Supercategory",
+              "type": ["string", "null"]
+            },
+            "evidence_max_score": {
+              "title": "Evidence Max Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "category_max_score": {
+              "title": "Category Max Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "publication_date": {
+              "title": "Publication Date",
+              "description": "Publication date in ISO format or timestamp format",
+              "examples": ["2024-07-27 00:00:00", "2014-04-01"],
+              "type": ["string", "null"]
+            }
+          }
+        }
+      },
+      "experimental_evidence_details": {
+        "section": "Evidence",
+        "description": "Array of experimental evidence items with their scores and citations",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Evidence type": {
+              "title": "Evidence Type",
+              "type": ["string", "null"]
+            },
+            "Score": {
+              "title": "Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "Citation": {
+              "title": "Citation",
+              "description": "Citation in the format doi:xxxx or pmid:xxxx",
+              "examples": ["pmid:39068203"],
+              "type": ["string", "null"],
+              "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
+            },
+            "Evidence detail": {
+              "title": "Evidence Detail",
+              "description": "Detailed description of the evidence",
+              "type": ["string", "null"],
+              "multiline": true
+            },
+            "evidence_category": {
+              "title": "Evidence Category",
+              "type": ["string", "null"]
+            },
+            "evidence_supercategory": {
+              "title": "Evidence Supercategory",
+              "type": ["string", "null"]
+            },
+            "evidence_max_score": {
+              "title": "Evidence Max Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "category_max_score": {
+              "title": "Category Max Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "publication_date": {
+              "title": "Publication Date",
+              "description": "Publication date in ISO format or timestamp format",
+              "examples": ["2024-07-27 00:00:00", "2014-04-01"],
+              "type": ["string", "null"]
+            }
+          }
+        }
+      },
+      "category_summary": {
+        "section": "Generated",
+        "title": "Category Summary",
+        "description": "Summary scores for each evidence category. This is generated automatically and should not be manually edited.",
+        "type": ["object", "null"],
+        "properties": {
+          "Collective Evidence": {
+            "type": ["number", "null"]
+          },
+          "Function": {
+            "type": ["number", "null"]
+          },
+          "Functional Alteration": {
+            "type": ["number", "null"]
+          },
+          "Singular Evidence": {
+            "type": ["number", "null"]
+          },
+          "Statistics": {
+            "type": ["number", "null"]
+          },
+          "Rescue": {
+            "type": ["number", "null"]
+          },
+          "Models": {
+            "type": ["number", "null"]
+          }
+        }
+      },
+      "supercategory_summary": {
+        "section": "Generated",
+        "title": "Supercategory Summary",
+        "description": "Summary scores for each evidence supercategory. This is generated automatically and should not be manually edited.",
+        "type": ["object", "null"],
+        "properties": {
+          "Experimental Evidence": {
+            "type": ["number", "null"]
+          },
+          "Genetic Evidence": {
+            "type": ["number", "null"]
+          }
+        }
+      },
+      "total_score": {
+        "section": "Generated",
+        "title": "Total Score",
+        "description": "Total evidence score. This is generated automatically and should not be manually edited.",
+        "type": ["number", "null"],
+        "minimum": 0
+      },
+      "publication_count": {
+        "section": "Generated",
+        "title": "Publication Count",
+        "description": "Number of unique publications cited in the curation. This is generated automatically and should not be manually edited.",
+        "type": ["integer", "null"],
+        "minimum": 0
+      },
+      "publication_interval_years": {
+        "section": "Generated",
+        "title": "Publication Interval (Years)",
+        "description": "Interval in years between the earliest and latest publication dates. This is generated automatically and should not be manually edited.",
+        "type": ["number", "null"],
+        "minimum": 0
+      },
+      "classification": {
+        "section": "Generated",
+        "title": "Classification",
+        "description": "Classification of evidence based on total score. This is generated automatically and should not be manually edited. To override the classification, use the Manual_evidence_level field.",
+        "examples": ["Definitive", "Strong", "Moderate", "Limited"],
+        "type": ["string", "null"],
+        "enum": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null]
+      }
+    },
+    "required": [
+      "Disease_ID",
+      "Gene",
+      "Locus_ID",
+      "Inheritance",
+      "Curator",
+      "Date",
+      "Description",
+      "Source",
+      "SOP_version",
+      "genetic_evidence_details",
+      "experimental_evidence_details"
+    ]
+  }
+}

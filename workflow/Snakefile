@@ -108,11 +108,12 @@ else:
 rule check_curations:
     input:
         curations = "{base_dir}criTRia-curations.json",
+        schema = "{base_dir}criTRia-curations.schema.json"
     output:
         check = temp("{base_dir}check-curations.txt")
     shell:
         """
-        python {scripts_dir}check-curations.py --json {input.curations} 2> {output.check}
+        python {scripts_dir}check-curations.py --json {input.curations} --schema {input.schema} 2> {output.check}
         """ 
 
 rule check_loci:
