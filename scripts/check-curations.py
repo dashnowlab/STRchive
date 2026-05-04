@@ -250,12 +250,20 @@ def lookup_evidence(evidence_type):
 def fetch_pubmed_publication_date(pmid):
     """Fetch the publication date for a given PubMed ID using the NCBI E-utilities API."""
     url = f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={pmid}&retmode=json"
-    response = requests.get(url)
-    if response.status_code == 200:
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
         data = response.json()
-        if 'result' in data and pmid in data['result']:
-            pub_date = data['result'][pmid].get('pubdate')
-            return pub_date
+    except requests.exceptions.RequestException as e:
+        sys.stderr.write(f"Warning: Unable to fetch publication date for PMID {pmid}: {e}\n")
+        return None
+    except ValueError as e:
+        sys.stderr.write(f"Warning: Unable to decode PubMed response for PMID {pmid}: {e}\n")
+        return None
+
+    if 'result' in data and pmid in data['result']:
+        pub_date = data['result'][pmid].get('pubdate')
+        return pub_date
     return None
 
 def get_publication_date(citation):
