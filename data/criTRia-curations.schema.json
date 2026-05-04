@@ -58,7 +58,7 @@
         "section": "Curation",
         "title": "Date",
         "description": "Date of curation in MM/DD/YYYY format",
-        "examples": ["4/29/25", "08/11/2025"],
+        "examples": ["04/29/2025", "08/11/2025"],
         "type": ["string", "null"],
         "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/([0-9]{4})$"
       },
