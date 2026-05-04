@@ -387,8 +387,17 @@ def summarize_curations(locus):
     # Calculate the total score for the curation as the sum of the supercategory scores
     total_score = sum(supercategory_summary.values())
 
+    def count_unique_publications(citations):
+        unique_publications = set()
+        for citation in citations.dropna():
+            for publication in str(citation).split(';'):
+                normalized_publication = publication.strip().lower()
+                if normalized_publication:
+                    unique_publications.add(normalized_publication)
+        return len(unique_publications)
+
     # Publication count
-    publication_count = df['Citation'].nunique()
+    publication_count = count_unique_publications(df['Citation'])
     publication_interval_years = publication_interval(df['publication_date'].dropna().unique())
     if publication_interval_years is not None:
         publication_interval_years = round(publication_interval_years, 2)
