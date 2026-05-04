@@ -1,0 +1,488 @@
+# Read criTRia curations from a json file and update them applying curation rules.
+import sys
+import argparse
+import doctest
+import os
+import time
+import json
+import math
+import jsbeautifier
+import pandas as pd
+import requests
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='Read criTRia curations from a JSON file and update them applying curation rules.')
+    parser.add_argument('--json', default='data/criTRia-curations.json', 
+                        help='Input JSON file path (default: data/criTRia-curations.json)')
+    parser.add_argument('--out', default='data/criTRia-curations.json', 
+                        help='Output JSON file path that will be overwritten if it exists (default: data/criTRia-curations.json)')
+    parser.add_argument('--schema', default='data/criTRia-curations.schema.json', 
+                        help='Optional JSON schema file path for validating the input JSON file (default: data/criTRia-curations.schema.json)')
+    return parser.parse_args()
+
+
+SUPERCATEGORY_LOOKUP = {
+    "Genetic Evidence": {"max_score": 12},
+    "Experimental Evidence": {"max_score": 6},
+}
+
+EVIDENCE_LOOKUP = {
+    "Probands": {
+        "evidence_category": "Singular Evidence",
+        "evidence_supercategory": "Genetic Evidence",
+        "evidence_max_score": 6,
+        "category_max_score": 6,
+    },
+    "Allele": {
+        "evidence_category": "Collective Evidence",
+        "evidence_supercategory": "Genetic Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 3,
+    },
+    "Computational": {
+        "evidence_category": "Collective Evidence",
+        "evidence_supercategory": "Genetic Evidence",
+        "evidence_max_score": 3,
+        "category_max_score": 3,
+    },
+    "Segregation": {
+        "evidence_category": "Collective Evidence",
+        "evidence_supercategory": "Genetic Evidence",
+        "evidence_max_score": 3,
+        "category_max_score": 3,
+    },
+    "Case-Control Data": {
+        "evidence_category": "Statistics",
+        "evidence_supercategory": "Genetic Evidence",
+        "evidence_max_score": 12,
+        "category_max_score": 12,
+    },
+    "Biochemical function": {
+        "evidence_category": "Function",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+    "Protein Interaction": {
+        "evidence_category": "Function",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+    "Regulatory Impact": {
+        "evidence_category": "Function",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+    "Patient Cells": {
+        "evidence_category": "Functional Alteration",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+    "Non-patient Cells": {
+        "evidence_category": "Functional Alteration",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 1,
+        "category_max_score": 2,
+    },
+    "Non-Human Model Organism": {
+        "evidence_category": "Models",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 4,
+        "category_max_score": 4,
+    },
+    "Cell Culture": {
+        "evidence_category": "Models",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+    "Human treatment": {
+        "evidence_category": "Rescue",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 4,
+        "category_max_score": 4,
+    },
+    "Rescue in Non-Human Model Organism": {
+        "evidence_category": "Rescue",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 4,
+        "category_max_score": 4,
+    },
+    "Rescue in Cell Culture": {
+        "evidence_category": "Rescue",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+    "Rescue in Patient Cells": {
+        "evidence_category": "Rescue",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+    },
+}
+
+CLASSIFICATION_LOOKUP = {
+    "Definitive": {
+        "score_range": (12, 18),
+        "replication_requirement": "≥2 publications, ≥3 years apart",
+        "min_pubs": 2,
+        "min_years": 3,
+    },
+    "Strong": {
+        "score_range": (12, 18),
+        "replication_requirement": "Compelling, not repeated over time",
+        "min_pubs": 1,
+        "min_years": 0,
+    },
+    "Moderate": {
+        "score_range": (6, 12),
+        "replication_requirement": "Some support, no contradicitions",
+        "min_pubs": 1,
+        "min_years": 0,
+    },
+    "Limited": {
+        "score_range": (0, 6),
+        "replication_requirement": "Some evidence, not compelling",
+        "min_pubs": 1,
+        "min_years": 0,
+    },
+    "Disputed": {
+        "score_range": None,
+        "replication_requirement": "Contradictory evidence present",
+        "min_pubs": 1,
+        "min_years": 0,
+    },
+    "Refuted": {
+        "score_range": None,
+        "replication_requirement": "Causality ruled out",
+        "min_pubs": 1,
+        "min_years": 0,
+    },
+    "No Known Relationship": {
+        "score_range": (-1, 0),
+        "replication_requirement": "No evidence",
+        "min_pubs": 0,
+        "min_years": 0,
+    },
+}
+
+
+def _normalize_evidence_type(evidence_type):
+    if evidence_type is None or pd.isna(evidence_type):
+        return ""
+    return " ".join(str(evidence_type).strip().lower().split())
+
+
+NORMALIZED_EVIDENCE_LOOKUP = {
+    _normalize_evidence_type(evidence_type): mapping
+    for evidence_type, mapping in EVIDENCE_LOOKUP.items()
+}
+
+
+CATEGORY_ORDER = []
+for evidence_type in EVIDENCE_LOOKUP:
+    category = EVIDENCE_LOOKUP[evidence_type]['evidence_category']
+    if category not in CATEGORY_ORDER:
+        CATEGORY_ORDER.append(category)
+
+
+def lookup_evidence(evidence_type):
+    return NORMALIZED_EVIDENCE_LOOKUP.get(_normalize_evidence_type(evidence_type), {
+        "evidence_category": None,
+        "evidence_supercategory": None,
+    })
+
+
+# def extract_curations_from_tsv(tsv_file):
+#     """ Expected format of the TSV file:
+# #Disease_ID: FECD3	Gene: TCF4	Locus_ID: FECD3_TCF4	Inheritance: AD	Curator: Macayla Weiner	Date: 3/2/26
+# Evidence type	Score	Citation	Values	Evidence detail	Notes
+# Probands	6	pmid:25168903	probands:46		68 affected individuals + 1 unaffected with expansion but 46 affected with expansion																
+#     """
+#     # Extract the metadata from the first line of the TSV file
+#     sys.stderr.write(f"Extracting curations from {tsv_file}...\n")
+#     with open(tsv_file, 'r') as f:
+#         first_line = f.readline().strip('#').strip()
+#         second_line = f.readline().strip()
+#     metadata = {}
+#     for item in first_line.split('\t'):
+#         key, value = item.split(':', 1)
+#         metadata[key.strip()] = value.strip()
+
+#     # skip cols with missing headers
+#     header_indices = [i for i, item in enumerate(second_line.split('\t')) if item.strip() != '']
+
+#     df = pd.read_csv(tsv_file, sep='\t', comment='#', usecols=header_indices)
+#     source_columns = df.columns.tolist()
+#     df = df.replace(r'^\s*$', pd.NA, regex=True)
+#     df = df.dropna(subset=source_columns, how='all')
+
+#     if 'Score' in df.columns:
+#         invalid_score_mask = df['Score'].notna() & pd.to_numeric(df['Score'], errors='coerce').isna()
+#         if invalid_score_mask.any():
+#             invalid_scores = sorted(set(df.loc[invalid_score_mask, 'Score'].astype(str).tolist()))
+#             sys.stderr.write(
+#                 f"Warning: Non-numeric Score value(s) in {tsv_file}: {', '.join(invalid_scores)}. Treating as missing.\n"
+#             )
+#         df['Score'] = pd.to_numeric(df['Score'], errors='coerce')
+
+#     # Merge Values, Evidence detail, and Notes into a single Notes field
+#     merge_cols = [c for c in ['Values', 'Evidence detail', 'Notes'] if c in df.columns]
+#     df['Notes'] = df[merge_cols].apply(
+#         lambda row: ' | '.join(str(v) for v in row if pd.notna(v) and str(v).strip()),
+#         axis=1,
+#     ).replace('', pd.NA)
+#     df = df.drop(columns=[c for c in merge_cols if c != 'Notes'])
+
+#     # use LOOKUP_EVIDENCE to add evidence_category and evidence_supercategory columns to the dataframe
+#     df['evidence_category'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_category'])
+#     df['evidence_supercategory'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_supercategory'])
+#     df['evidence_max_score'] = df['Evidence type'].apply(lambda x: lookup_evidence(x).get('evidence_max_score'))
+#     df['category_max_score'] = df['Evidence type'].apply(lambda x: lookup_evidence(x).get('category_max_score'))
+
+#     return metadata, df
+
+def fetch_pubmed_publication_date(pmid):
+    """Fetch the publication date for a given PubMed ID using the NCBI E-utilities API."""
+    url = f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={pmid}&retmode=json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        if 'result' in data and pmid in data['result']:
+            pub_date = data['result'][pmid].get('pubdate')
+            return pub_date
+    return None
+
+def get_publication_date(citation):
+    """Extract the publication year from a citation string in the format 'pmid:12345678'."""
+    if isinstance(citation, str) and citation.startswith('pmid:'):
+        pmid = citation.replace('pmid:', '').strip()
+        pub_date = fetch_pubmed_publication_date(pmid)
+        if pub_date:
+            try:
+                return pd.to_datetime(pub_date)
+            except Exception as e:
+                sys.stderr.write(f"Warning: Unable to parse publication date '{pub_date}' for PMID {pmid}: {e}\n")
+    return None
+
+def publication_interval(pub_dates):
+    """Calculate the interval in years between the earliest and latest publication dates for a list of PubMed IDs."""
+    if len(pub_dates) < 2:
+        return None
+    
+    pub_dates = sorted(pd.to_datetime(d) for d in pub_dates if d is not None)
+
+    if len(pub_dates) < 2:
+        return None
+
+    earliest_date = pd.to_datetime(pub_dates[0])
+    latest_date = pd.to_datetime(pub_dates[-1])
+    interval_years = (latest_date - earliest_date).days / 365.25
+    return interval_years
+
+def summarize_curations(locus):
+    """ 
+    Expecting curations to be in the the following format (only relevent fields shown):
+    {
+        "genetic_evidence_details": [
+            {
+                "Evidence type": "Probands",
+                "Score": 6.0,
+                "Citation": "pmid:39068203",
+            }
+        ],
+        "experimental_evidence_details": [
+            {
+                "Evidence type": "Regulatory Impact",
+                "Score": 0.5,
+                "Citation": "pmid:39068203",
+            }
+        ]
+    }
+    The function should summarize the evidence for each locus and add/update the following values:
+    "category_summary":
+        {
+            "Collective Evidence": 2.5,
+            "Function": 1.0,
+            "Functional Alteration": 1.5,
+            "Singular Evidence": 6.0,
+            "Statistics": 0,
+            "Models": 0,
+            "Rescue": 0
+        },
+        "supercategory_summary":
+        {
+            "Experimental Evidence": 2.5,
+            "Genetic Evidence": 8.5
+        },
+        "total_score": 11.0,
+        "classification": "Moderate",
+        "publication_count": 1,
+        "publication_interval_years": null,
+    """
+    # Add publication year for each citations
+    for evidence_entry in locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []):
+        if 'publication_date' not in evidence_entry or evidence_entry['publication_date'] is None:
+            evidence_entry['publication_date'] = get_publication_date(evidence_entry.get('Citation'))
+
+    locus_id = locus.get('Locus_ID', 'Unknown Locus')
+    df = pd.DataFrame(locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []))
+
+    sys.stdout.write(f"Processing locus '{locus_id}' with {len(df)} evidence entries...\n")
+    if len(df) == 0:
+        sys.stderr.write(f"Warning: No evidence entries found for locus '{locus_id}'\n")
+        return locus
+
+    # Report any evidence types that are not recognized in the EVIDENCE_LOOKUP
+    for evidence_type in df['Evidence type'].unique():
+        if _normalize_evidence_type(evidence_type) not in NORMALIZED_EVIDENCE_LOOKUP:
+            sys.stderr.write(f"Warning: Unrecognized evidence type '{evidence_type}' in locus '{locus_id}'\n")
+
+
+    # Sum the scores for each evidence category and supercategory
+    category_scores = df.groupby('evidence_category')['Score'].sum().to_dict()
+    category_summary = {
+        category: category_scores.get(category, 0)
+        for category in CATEGORY_ORDER
+    }
+
+    # Enforce the maximum score for each category        
+    for category, score in category_summary.items():
+        max_score = max(EVIDENCE_LOOKUP[evidence_type]['category_max_score'] for evidence_type in EVIDENCE_LOOKUP if EVIDENCE_LOOKUP[evidence_type]['evidence_category'] == category)
+        if score is not None and max_score is not None:
+            if score > max_score:
+                category_summary[category] = max_score
+
+    # Sum the scores for each supercategory
+    supercategory_summary = df.groupby('evidence_supercategory')['Score'].sum().to_dict()
+    # If there are any supercategories that are missing from the summary, add them with a score of 0
+    for supercategory in SUPERCATEGORY_LOOKUP:
+        if supercategory not in supercategory_summary:
+            supercategory_summary[supercategory] = 0
+    # Enforce the maximum score for each supercategory
+    for supercategory, score in supercategory_summary.items():
+        max_score = SUPERCATEGORY_LOOKUP[supercategory]['max_score']
+        if score is not None and max_score is not None:
+            if score > max_score:
+                supercategory_summary[supercategory] = max_score
+
+    # Calculate the total score for the curation as the sum of the supercategory scores
+    total_score = sum(supercategory_summary.values())
+
+    # Publication count
+    publication_count = df['Citation'].nunique()
+    publication_interval_years = publication_interval(df['publication_date'].dropna().unique())
+    if publication_interval_years is not None:
+        publication_interval_years = round(publication_interval_years, 2)
+    
+    # Determine the classification based on the total score and replication requirement
+    classification = None
+    # if  publication_interval_years is None, set it to 0 for the purpose of classification, but we will still report it as None in the final summary
+    if publication_interval_years is None:
+        tmp_publication_interval_years = 0
+    else:
+        tmp_publication_interval_years = publication_interval_years
+
+    for class_name, class_info in CLASSIFICATION_LOOKUP.items():
+        score_range = class_info['score_range']
+        if score_range is not None and score_range[0] <= total_score <= score_range[1]:
+            if publication_count >= class_info['min_pubs'] and tmp_publication_interval_years >= class_info['min_years']:
+                classification = class_name
+                break
+    # If there's a value in Manual_evidence_level, use that as the classification instead of the calculated one
+    if 'Manual_evidence_level' in locus and locus['Manual_evidence_level']:
+        classification = locus['Manual_evidence_level']
+
+    if publication_interval_years == 0:
+        publication_interval_years = None
+
+    # Collect the Genetic and Experimental evidence details for the curation
+    genetic_evidence_details = df[df['evidence_supercategory'] == 'Genetic Evidence'].to_dict(orient='records')
+    experimental_evidence_details = df[df['evidence_supercategory'] == 'Experimental Evidence'].to_dict(orient='records')
+
+    # Return updated dictionary containing the curation summary
+    locus["category_summary"] = category_summary
+    locus["supercategory_summary"] = supercategory_summary
+    locus["total_score"] = total_score
+    locus["classification"] = classification
+    locus["publication_count"] = publication_count
+    locus["publication_interval_years"] = publication_interval_years
+    locus["genetic_evidence_details"] = genetic_evidence_details
+    locus["experimental_evidence_details"] = experimental_evidence_details
+    return locus
+
+
+def sanitize_for_json(value):
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(val) for key, val in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, tuple):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, float):
+        if math.isnan(value) or math.isinf(value):
+            return None
+        return value
+    if pd.isna(value):
+        return None
+    if hasattr(value, "item") and not isinstance(value, (str, bytes)):
+        try:
+            return sanitize_for_json(value.item())
+        except (ValueError, TypeError):
+            pass
+    return value
+
+
+def main(args):
+
+    if args.out == args.json:
+        pause = 5
+        sys.stderr.write(f'WARNING: overwriting {args.json} in {pause} seconds\n')
+        sys.stderr.write('Press Ctrl+C to cancel\n')
+        time.sleep(pause)
+    else:
+        sys.stderr.write(f'Writing {args.out}\n')
+
+    out_data = []
+    with open(args.json, 'r') as in_json:
+        data = json.load(in_json)
+
+        for locus in data:
+            out_data.append(summarize_curations(locus))
+
+    out_data = sanitize_for_json(out_data)
+
+    # Sort records by gene name then id
+    out_data = sorted(out_data, key = lambda x: (x['Gene'], x['Locus_ID']))
+
+    # Make sure json is sorted within each record based on the schema order
+    if args.schema:
+        with open(args.schema, 'r') as schema_file:
+            schema = json.load(schema_file)
+            if 'properties' in schema:
+                schema_properties = list(schema['properties'].keys())
+            elif isinstance(schema.get('items'), dict) and 'properties' in schema['items']:
+                schema_properties = list(schema['items']['properties'].keys())
+            else:
+                raise KeyError("Schema must contain 'properties' at the top level or under 'items'")
+            out_data = [
+                {key: record.get(key) for key in schema_properties} for record in out_data
+            ]
+
+    # Write JSON file
+    with open(args.out, 'w') as out_json_file:
+        options = jsbeautifier.default_options()
+        options.indent_size = 2
+        options.brace_style="expand"
+        out_json_file.write(jsbeautifier.beautify(json.dumps(out_data, ensure_ascii=False, allow_nan=False, default=str), options))
+        out_json_file.write('\n')
+        
+
+if __name__ == '__main__':
+    doctest.testmod()
+    args = parse_args()
+    main(args)
