@@ -7,6 +7,7 @@ import time
 import json
 import math
 import jsbeautifier
+import jsonschema
 import pandas as pd
 import requests
 
@@ -495,6 +496,19 @@ def main(args):
             out_data = [
                 {key: record.get(key) for key in schema_properties} for record in out_data
             ]
+
+        # Validate the processed data against the schema
+        validator = jsonschema.Draft202012Validator(schema)
+        any_errors = False
+        for error in sorted(validator.iter_errors(out_data), key=str):
+            any_errors = True
+            sys.stderr.write(f"Schema validation error: {error.message}\n")
+            sys.stderr.write(f"  Path: {list(error.absolute_path)}\n")
+        if any_errors:
+            sys.stderr.write("Schema validation failed.\n")
+            sys.exit(1)
+        else:
+            sys.stderr.write("Schema validation succeeded.\n")
 
     # Write JSON file
     with open(args.out, 'w') as out_json_file:
