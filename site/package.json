@@ -24,6 +24,8 @@
     "echarts": "^6.0.0",
     "json-schema-library": "^10.2.1",
     "lodash-es": "^4.17.21",
+    "micromark": "^4.0.2",
+    "micromark-extension-gfm-autolink-literal": "^2.1.0",
     "plotly.js-dist": "^3.1.0",
     "react": "^19.1.1",
     "react-children-utilities": "^2.10.0",

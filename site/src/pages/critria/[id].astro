@@ -1,12 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { LuArrowLeft, LuBookMarked } from "react-icons/lu";
+import { micromark } from "micromark";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import Tag from "@/components/Tag";
 import EvidenceTable from "@/critria/EvidenceTable";
-import { tagOptions } from "@/data/tags";
+import { parse } from "@/util/markdown";
 import curations from "~/criTRia-curations.json";
 
 /** generate pages for each datum, paths based on id */
@@ -18,11 +19,6 @@ const { id } = Astro.params;
 
 /** look up full curation entry from id */
 const curation = curations.find((item) => item.Locus_ID === id);
-
-/** classification */
-const classification = tagOptions.find((tag) =>
-  curation.classification.includes(tag.value),
-);
 
 if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
 ---
@@ -70,7 +66,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
             Description
           </Heading>
 
-          <p class="center section-total">{curation.Description}</p>
+          <p class="center" set:html={parse(curation.Description)} />
         </>
       )
     }
@@ -84,7 +80,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
 
   <section>
     <Heading client:load level={2}>Genetic evidence</Heading>
-    <p class="center section-total">
+    <p class="center">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"}
     </p>
@@ -103,7 +99,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
 
   <section>
     <Heading client:load level={2}>Experimental evidence</Heading>
-    <p class="center section-total">
+    <p class="center">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Experimental Evidence"] ?? "-"}
     </p>
@@ -119,7 +115,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       )
     }
   </section>
-  
+
   <section>
     <p class="center">
       Note: Maximum score caps apply at evidence type, category, and
@@ -127,5 +123,4 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       row scores.
     </p>
   </section>
-
 </Layout>
