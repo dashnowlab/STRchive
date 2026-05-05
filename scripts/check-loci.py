@@ -362,7 +362,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
     if curations_json:
         curation_dict = parse_curations(curations_json)
         sys.stderr.write(f'Parsed {len(curation_dict)} curations from {curations_json}\n')
-        sys.stderr.write(f'All curations: {curation_dict}\n')
+        #sys.stderr.write(f'All curations: {curation_dict}\n')
 
     # Check if file exists
     if not os.path.exists(json_fname):
