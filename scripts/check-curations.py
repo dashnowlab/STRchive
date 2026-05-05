@@ -21,7 +21,6 @@ def parse_args():
                         help='Optional JSON schema file path for validating the input JSON file (default: data/criTRia-curations.schema.json)')
     return parser.parse_args()
 
-
 SUPERCATEGORY_LOOKUP = {
     "Genetic Evidence": {"max_score": 12},
     "Experimental Evidence": {"max_score": 6},
@@ -171,18 +170,15 @@ CLASSIFICATION_LOOKUP = {
     },
 }
 
-
 def _normalize_evidence_type(evidence_type):
     if evidence_type is None or pd.isna(evidence_type):
         return ""
     return " ".join(str(evidence_type).strip().lower().split())
 
-
 NORMALIZED_EVIDENCE_LOOKUP = {
     _normalize_evidence_type(evidence_type): mapping
     for evidence_type, mapping in EVIDENCE_LOOKUP.items()
 }
-
 
 CATEGORY_ORDER = []
 for evidence_type in EVIDENCE_LOOKUP:
@@ -190,62 +186,11 @@ for evidence_type in EVIDENCE_LOOKUP:
     if category not in CATEGORY_ORDER:
         CATEGORY_ORDER.append(category)
 
-
 def lookup_evidence(evidence_type):
     return NORMALIZED_EVIDENCE_LOOKUP.get(_normalize_evidence_type(evidence_type), {
         "evidence_category": None,
         "evidence_supercategory": None,
     })
-
-
-# def extract_curations_from_tsv(tsv_file):
-#     """ Expected format of the TSV file:
-# #Disease_ID: FECD3	Gene: TCF4	Locus_ID: FECD3_TCF4	Inheritance: AD	Curator: Macayla Weiner	Date: 3/2/26
-# Evidence type	Score	Citation	Values	Evidence detail	Notes
-# Probands	6	pmid:25168903	probands:46		68 affected individuals + 1 unaffected with expansion but 46 affected with expansion																
-#     """
-#     # Extract the metadata from the first line of the TSV file
-#     sys.stderr.write(f"Extracting curations from {tsv_file}...\n")
-#     with open(tsv_file, 'r') as f:
-#         first_line = f.readline().strip('#').strip()
-#         second_line = f.readline().strip()
-#     metadata = {}
-#     for item in first_line.split('\t'):
-#         key, value = item.split(':', 1)
-#         metadata[key.strip()] = value.strip()
-
-#     # skip cols with missing headers
-#     header_indices = [i for i, item in enumerate(second_line.split('\t')) if item.strip() != '']
-
-#     df = pd.read_csv(tsv_file, sep='\t', comment='#', usecols=header_indices)
-#     source_columns = df.columns.tolist()
-#     df = df.replace(r'^\s*$', pd.NA, regex=True)
-#     df = df.dropna(subset=source_columns, how='all')
-
-#     if 'Score' in df.columns:
-#         invalid_score_mask = df['Score'].notna() & pd.to_numeric(df['Score'], errors='coerce').isna()
-#         if invalid_score_mask.any():
-#             invalid_scores = sorted(set(df.loc[invalid_score_mask, 'Score'].astype(str).tolist()))
-#             sys.stderr.write(
-#                 f"Warning: Non-numeric Score value(s) in {tsv_file}: {', '.join(invalid_scores)}. Treating as missing.\n"
-#             )
-#         df['Score'] = pd.to_numeric(df['Score'], errors='coerce')
-
-#     # Merge Values, Evidence detail, and Notes into a single Notes field
-#     merge_cols = [c for c in ['Values', 'Evidence detail', 'Notes'] if c in df.columns]
-#     df['Notes'] = df[merge_cols].apply(
-#         lambda row: ' | '.join(str(v) for v in row if pd.notna(v) and str(v).strip()),
-#         axis=1,
-#     ).replace('', pd.NA)
-#     df = df.drop(columns=[c for c in merge_cols if c != 'Notes'])
-
-#     # use LOOKUP_EVIDENCE to add evidence_category and evidence_supercategory columns to the dataframe
-#     df['evidence_category'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_category'])
-#     df['evidence_supercategory'] = df['Evidence type'].apply(lambda x: lookup_evidence(x)['evidence_supercategory'])
-#     df['evidence_max_score'] = df['Evidence type'].apply(lambda x: lookup_evidence(x).get('evidence_max_score'))
-#     df['category_max_score'] = df['Evidence type'].apply(lambda x: lookup_evidence(x).get('category_max_score'))
-
-#     return metadata, df
 
 def fetch_pubmed_publication_date(pmid):
     """Fetch the publication date for a given PubMed ID using the NCBI E-utilities API."""
@@ -460,7 +405,6 @@ def summarize_curations(locus):
     locus["experimental_evidence_details"] = experimental_evidence_details
     return locus
 
-
 def sanitize_for_json(value):
     if isinstance(value, dict):
         return {key: sanitize_for_json(val) for key, val in value.items()}
@@ -482,7 +426,6 @@ def sanitize_for_json(value):
         except (ValueError, TypeError):
             pass
     return value
-
 
 def main(args):
 
@@ -541,7 +484,6 @@ def main(args):
         out_json_file.write(jsbeautifier.beautify(json.dumps(out_data, ensure_ascii=False, allow_nan=False, default=str), options))
         out_json_file.write('\n')
         
-
 if __name__ == '__main__':
     doctest.testmod()
     args = parse_args()
