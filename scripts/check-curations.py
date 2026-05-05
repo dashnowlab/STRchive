@@ -139,13 +139,13 @@ CLASSIFICATION_LOOKUP = {
         "min_years": 0,
     },
     "Moderate": {
-        "score_range": (6, 12),
-        "replication_requirement": "Some support, no contradicitions",
+        "score_range": (7, 11),
+        "replication_requirement": "Some support, no contradictions",
         "min_pubs": 1,
         "min_years": 0,
     },
     "Limited": {
-        "score_range": (0, 6),
+        "score_range": (0.1, 6),
         "replication_requirement": "Some evidence, not compelling",
         "min_pubs": 1,
         "min_years": 0,
@@ -382,9 +382,11 @@ def summarize_curations(locus):
     else:
         tmp_publication_interval_years = publication_interval_years
 
+    # Round total_score to nearest integer for classification lookup
+    total_score_rounded = round(total_score)
     for class_name, class_info in CLASSIFICATION_LOOKUP.items():
         score_range = class_info['score_range']
-        if score_range is not None and score_range[0] <= total_score <= score_range[1]:
+        if score_range is not None and score_range[0] <= total_score_rounded <= score_range[1]:
             if publication_count >= class_info['min_pubs'] and tmp_publication_interval_years >= class_info['min_years']:
                 classification = class_name
                 break
