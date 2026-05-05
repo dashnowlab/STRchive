@@ -51,7 +51,7 @@ EVIDENCE_LOOKUP = {
         "evidence_max_score": 3,
         "category_max_score": 3,
     },
-    "Case-Control Data": {
+    "Case-control data": {
         "evidence_category": "Statistics",
         "evidence_supercategory": "Genetic Evidence",
         "evidence_max_score": 12,
@@ -63,37 +63,37 @@ EVIDENCE_LOOKUP = {
         "evidence_max_score": 2,
         "category_max_score": 2,
     },
-    "Protein Interaction": {
+    "Protein interaction": {
         "evidence_category": "Function",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 2,
         "category_max_score": 2,
     },
-    "Regulatory Impact": {
+    "Regulatory impact": {
         "evidence_category": "Function",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 2,
         "category_max_score": 2,
     },
-    "Patient Cells": {
+    "Patient cells": {
         "evidence_category": "Functional Alteration",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 2,
         "category_max_score": 2,
     },
-    "Non-patient Cells": {
+    "Non-patient cells": {
         "evidence_category": "Functional Alteration",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 1,
         "category_max_score": 2,
     },
-    "Non-Human Model Organism": {
+    "Non-human model organism": {
         "evidence_category": "Models",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 4,
         "category_max_score": 4,
     },
-    "Cell Culture": {
+    "Cell culture": {
         "evidence_category": "Models",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 2,
@@ -105,19 +105,19 @@ EVIDENCE_LOOKUP = {
         "evidence_max_score": 4,
         "category_max_score": 4,
     },
-    "Rescue in Non-Human Model Organism": {
+    "Rescue in non-human model organism": {
         "evidence_category": "Rescue",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 4,
         "category_max_score": 4,
     },
-    "Rescue in Cell Culture": {
+    "Rescue in cell culture": {
         "evidence_category": "Rescue",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 2,
         "category_max_score": 2,
     },
-    "Rescue in Patient Cells": {
+    "Rescue in patient cells": {
         "evidence_category": "Rescue",
         "evidence_supercategory": "Experimental Evidence",
         "evidence_max_score": 2,
@@ -468,18 +468,18 @@ def main(args):
                 {key: record.get(key) for key in schema_properties} for record in out_data
             ]
 
-        # # Validate the processed data against the schema
-        # validator = jsonschema.Draft202012Validator(schema)
-        # any_errors = False
-        # for error in sorted(validator.iter_errors(out_data), key=str):
-        #     any_errors = True
-        #     sys.stderr.write(f"Schema validation error: {error.message}\n")
-        #     sys.stderr.write(f"  Path: {list(error.absolute_path)}\n")
-        # if any_errors:
-        #     sys.stderr.write("Schema validation failed.\n")
-        #     sys.exit(1)
-        # else:
-        #     sys.stderr.write("Schema validation succeeded.\n")
+        # Validate the processed data against the schema
+        validator = jsonschema.Draft202012Validator(schema)
+        any_errors = False
+        for error in sorted(validator.iter_errors(out_data), key=str):
+            any_errors = True
+            sys.stderr.write(f"Schema validation error: {error.message}\n")
+            sys.stderr.write(f"  Path: {list(error.absolute_path)}\n")
+        if any_errors:
+            sys.stderr.write("Schema validation failed.\n")
+            sys.exit(1)
+        else:
+            sys.stderr.write("Schema validation succeeded.\n")
 
     # Write JSON file
     with open(args.out, 'w') as out_json_file:

@@ -107,7 +107,7 @@
                 "Allele",
                 "Computational",
                 "Segregation",
-                "Case-Control Data"
+                "Case-control data"
               ]
             },
             "Score": {
@@ -171,18 +171,17 @@
               "type": ["string", "null"],
               "enum": [
                 null,
-                "Biochemical Function",
-                "Protein Interaction",
-                "Expression",
-                "Functional Alteration",
-                "Functional Alteration in patient cells",
-                "Functional Alteration in non-patient cells",
-                "Model Systems",
-                "Animal Model",
-                "Cell Culture Model System",
-                "Rescue",
-                "Rescue in animal model",
-                "Rescue in engineered equivalent"
+                "Biochemical function",
+                "Protein interaction",
+                "Regulatory impact",
+                "Patient cells",
+                "Non-patient cells",
+                "Non-human model organism",
+                "Cell culture",
+                "Human treatment",
+                "Rescue in non-human model organism",
+                "Rescue in cell culture",
+                "Rescue in patient cells"
               ]
             },
             "Score": {
