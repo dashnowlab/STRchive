@@ -147,11 +147,14 @@
               "type": ["number", "null"],
               "minimum": 0
             },
-            "publication_date": {
-              "title": "Publication Date",
-              "description": "Publication date in ISO format or timestamp format",
-              "examples": ["2024-07-27 00:00:00", "2014-04-01"],
-              "type": ["string", "null"]
+            "publication_dates": {
+              "title": "Publication Dates",
+              "description": "Array of publication dates in ISO format or timestamp format",
+              "examples": [["2024-07-27 00:00:00", "2014-04-01"]],
+              "type": ["array", "null"],
+              "items": {
+                "type": "string"
+              }
             }
           }
         }
