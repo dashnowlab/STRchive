@@ -32,8 +32,8 @@ FXN	FRDA	FRDA_FXN	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP5	12/2
 GIPC1	OPDM2	OPDM2_GIPC1	AD	criTRia	criTRia v0	06/04/2025	Definitive	15.5	9.5	6.0	6	4.99	Laurel Hiatt, Harriet Dashnow	
 GLS	GDPAG	GDPAG_GLS	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP7	07/09/2021	Definitive	11.5	9.5	2	5	6	Aminoacidopathy GCEP	Curation included five unique variants (nonsense, frameshift, and missense) as well as a 5 prime UTR repeat expansion (normally occurring in 8 or 16 repeats) ranging from 680 to 1500 repeats. https://search.clinicalgenome.org/CCID:004965
 HOXA13	HFG-I	HFG_HOXA13-I	AD	criTRia	criTRia v0	08/18/2025	Limited	4.5	0	4.5	1		Macayla Weiner, Laurel Hiatt	
-HOXA13	HFG-II	HFG_HOXA13-II	AD	criTRia	criTRia v0	08/18/2025	Moderate	6.0	3.0	3.0	2	1.63	Macayla Weiner, Laurel Hiatt	
-HOXA13	HFG-III	HFG_HOXA13-III	AD	criTRia	criTRia v0	08/18/2025	Moderate	6.0	2.0	4.0	2	7.46	Macayla Weiner, Laurel Hiatt	
+HOXA13	HFG-II	HFG_HOXA13-II	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	3.0	3.0	2	1.63	Macayla Weiner, Laurel Hiatt	
+HOXA13	HFG-III	HFG_HOXA13-III	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	2.0	4.0	2	7.46	Macayla Weiner, Laurel Hiatt	
 HOXD13	SD5	SD5_HOXD13	AD	criTRia	criTRia v0	08/18/2025	Definitive	14.5	8.5	6	4	24.09	Macayla Weiner, Laurel Hiatt	
 HTT	HD	HD_HTT	AD	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP8	11/08/2021	Definitive	17.5	11.5	6	17	27	General Gene Curation GCEP	https://search.clinicalgenome.org/CCID:005100
 JPH3	HDL2	HDL2_JPH3	AD	criTRia	criTRia v0	06/04/2025	Definitive	15	9	6	5	23.58	Laurel Hiatt, Harriet Dashnow	
@@ -41,7 +41,7 @@ LRP12	OPDM1	OPDM1_LRP12	AD	criTRia	criTRia v0	8/18/2025	Definitive	13.0	12	1.0	3
 MARCHF6	FAME3	FAME3_MARCHF6	AD	criTRia	criTRia v0	8/12/2025	Definitive	14.5	10.5	4.0	3	17.33	Macayla Weiner, Laurel Hiatt	
 MIR7-2	CHNG3	CHNG3_MIR7-2	AD	criTRia	criTRia v0	08/18/2025	Strong	13.5	12	1.5	2		Macayla Weiner, Laurel Hiatt	
 MUC1	ADTKD	ADTKD_MUC1	AD	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP8	01/13/2021	Definitive	16	12	4			Kidney Cystic and Ciliopathy Disorders GCEP	Gene curation by ClinGen: https://search.clinicalgenome.org/CCID:005506
-NAXE	NME	NME_NAXE	AR	criTRia	criTRia v0	08/12/2025	Moderate	6.0	2.0	4.0	1		Macayla Weiner, Laurel Hiatt	
+NAXE	NME	NME_NAXE	AR	criTRia	criTRia v0	08/12/2025	Limited	6.0	2.0	4.0	1		Macayla Weiner, Laurel Hiatt	
 NIPA	ALS1	ALS1_NIPA1	AD	criTRia	criTRia v0	06/06/2025	Disputed	14.0	12	2.0	3	2.33	Macayla Weiner, Laurel Hiatt	
 NOP56	SCA36	SCA36_NOP56	AD	criTRia	criTRia v0	08/11/2025	Definitive	15.0	12	3.0	4	13.75	Macayla Weiner, Laurel Hiatt	
 NOTCH2NLC	NIID	NIID_NOTCH2NLC	AD	criTRia	criTRia v0	08/14/2025	Definitive	18	12	6	8	5.08	Macayla Weiner, Laurel Hiatt	
@@ -53,7 +53,7 @@ POLG	CPEO	CPEO_POLG		criTRia	criTRia v0	08/18/2025	Disputed	4.0	0	4.0	1		Macayla
 PPP2R2B	SCA12	SCA12_PPP2R2B	AD	criTRia	criTRia v0	08/11/2025	Definitive	13.0	7.0	6.0	5	24.58	Macayla Weiner, Laurel Hiatt	
 PRDM12	HSAN-VIII	HSAN-VIII_PRDM12	AR	criTRia	criTRia v0	08/14/2025	Moderate	11.0	5.0	6	1		Macayla Weiner, Laurel Hiatt, Elbay Aliyev	Homozygous PRDM12 polyalanine repeat expansions were reported in two unrelated families with autosomal recessive congenital insensitivity to pain / HSAN-VIII. The TR-specific genetic evidence includes a 19-alanine expansion in family A and an 18-alanine expansion in family J, both exceeding the maximum 14-alanine tract observed in the tested general population. Experimental evidence supports PRDM12 function in nociceptor development and epigenetic regulation, including DRG/nociceptor expression, patient sensory fiber loss, polyalanine-mutant aggregation in transfected cells, and Xenopus sensory placode defects after Prdm12 knockdown. The relationship is currently Moderate, based on one publication without independent replication over time.
 PRNP	CJD	CJD_PRNP	AD	criTRia	criTRia v0	08/14/2025	Moderate	9.0	7.5	1.5	6	34.09	Macayla Weiner, Laurel Hiatt	
-RAI1	FAME8	FAME8_RAI1	AD	criTRia	criTRia v0	08/14/2025	Moderate	6.0	3.0	3.0	3	0.5	Macayla Weiner, Laurel Hiatt	
+RAI1	FAME8	FAME8_RAI1	AD	criTRia	criTRia v0	08/14/2025	Limited	6.0	3.0	3.0	3	0.5	Macayla Weiner, Laurel Hiatt	
 RAPGEF2	FAME7	FAME7_RAPGEF2	AD	criTRia	criTRia v0	08/14/2025	Limited	3	3	0	2	0.91	Macayla Weiner, Laurel Hiatt	
 RFC1	CANVAS	CANVAS_RFC1	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP10	10/09/2024	Definitive	14	12	2			Cerebellar Ataxia GCEP	https://search.clinicalgenome.org/CCID:008456
 RILPL1	OPDM4	OPDM4_RILPL4	AD	criTRia	criTRia v0	08/14/2025	Moderate	10.0	7.5	2.5	3	2.05	Macayla Weiner, Laurel Hiatt	
@@ -68,8 +68,8 @@ THAP11	SCA51	SCA51_THAP11	AD	criTRia	criTRia v0	08/18/2025	Definitive	14.0	10.0	
 TNRC6A	FAME6	FAME6_TNRC6A	AD	criTRia	criTRia v0	08/14/2025	Limited	3.0	2.5	0.5	1		Macayla Weiner, Laurel Hiatt	
 VWA1	HMNR7	HMNR7_VWA1	AR	criTRia	criTRia v0	08/14/2025	Moderate	10.0	7.5	2.5	3	3.08	Macayla Weiner, Laurel Hiatt	
 XYLT1	DBQD2	DBQD2_XYLT1	AR	criTRia	criTRia v0	08/18/2025	Moderate	8.5	6.0	2.5	2	4.83	Macayla Weiner, Laurel Hiatt	
-YEATS2	FAME4	FAME4_YEATS2	AD	criTRia	criTRia v0	08/18/2025	Moderate	6.0	3.0	3.0	3	11.0	Macayla Weiner, Laurel Hiatt	
+YEATS2	FAME4	FAME4_YEATS2	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	3.0	3.0	3	11.0	Macayla Weiner, Laurel Hiatt	
 ZFHX3	SCA4	SCA4_ZFHX3	AD	criTRia	criTRia v0	08/18/2025	Definitive	13.5	9.5	4.0	7	22.08	Macayla Weiner, Laurel Hiatt	
-ZIC2	HPE5	HPE5_ZIC2	AD	criTRia	criTRia v0	03/02/2026	Moderate	11.5	7.0	4.5	3	8.0	Macayla Weiner, Laurel Hiatt	
+ZIC2	HPE5	HPE5_ZIC2	AD	criTRia	criTRia v0	03/02/2026	Definitive	11.5	7.0	4.5	3	8.0	Macayla Weiner, Laurel Hiatt	
 ZIC3	VACTERLX	VACTERLX_ZIC3	XR	criTRia	criTRia v0	08/18/2025	Limited	3.5	3.5	0	2	10.42	Macayla Weiner, Laurel Hiatt	
 ZNF713	FRA7A	FRA7A_ZNF13	AD	criTRia	criTRia v0	08/18/2025	Moderate	7	7	0	1		Macayla Weiner, Laurel Hiatt	
