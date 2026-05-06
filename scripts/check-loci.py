@@ -183,10 +183,11 @@ def check_motif_orientation(record):
         record[gene_field] = new
 
     # Replace locus_structure with a string of the motifs in reference orientation
+    # example   [ { "motif": "CAGG", "count": null, "type": "pathogenic_repeat" } ]
     if record['locus_structure'] is None:
-        record['locus_structure'] = ''
+        record['locus_structure'] = []
         for motif in record['pathogenic_motif_reference_orientation']:
-            record['locus_structure'] += f'({motif})*'
+            record['locus_structure'].append({"motif": motif, "count": None, "type": "pathogenic_repeat"})
 
     return record
 
@@ -381,8 +382,19 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
                         record['references'] = lit_dict[record['id']]['references']
                         record['additional_literature'] = lit_dict[record['id']]['additional_literature']
 
+        schema = None
+        if json_schema is not None:
+            with open(json_schema, 'r') as schema_file:
+                schema = json.load(schema_file)
+
         # Fixes to individual records
         for record in data:
+
+            # If any field is missing, add it with value None
+            if schema is not None:
+                for field in schema['properties']:
+                    if field not in record:
+                        record[field] = None
 
             # Check if the field contains a string that should be a list
             record = check_list_fields(record)
@@ -400,18 +412,16 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
         # Sort records by gene name then id
         data = sorted(data, key = lambda x: (x['gene'], x['id']))
 
-        # Make sure json is sorted within each record based on the schema order
-        if json_schema is not None:
-            with open(json_schema, 'r') as schema_file:
-                schema = json.load(schema_file)
-                schema_order = list(schema['properties'].keys())
-                def sort_record(record):
-                    return {key: record.get(key, None) for key in schema_order}
-                data = [sort_record(record) for record in data]
+        # Make sure json is sorted within each record based on the schema order  
+        if schema is not None:
+            schema_order = list(schema['properties'].keys())
+            def sort_record(record):
+                return {key: record.get(key, None) for key in schema_order}
+            data = [sort_record(record) for record in data]
 
-                # Fix types based on schema
-                for record in data:
-                    record = fix_type(record, schema)
+            # Fix types based on schema
+            for record in data:
+                record = fix_type(record, schema)
         
         # Write JSON file
         with open(out_json, 'w') as out_json_file:
