@@ -117,10 +117,19 @@ const EditForm = ({ heading, locus }) => {
     /** remove edit metadata */
     data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
 
-    /** merge with locus data */
-    const newLoci = cloneDeep(loci).map((locus) =>
-      locus.id === data.id ? data : locus,
-    );
+    /** make complete new clone of loci */
+    let newLoci = cloneDeep(loci);
+
+    /** look for existing locus */
+    const index = newLoci.findIndex((locus) => locus.id === data.id);
+
+    /** is new locus vs existing locus */
+    const existing = index !== -1;
+
+    /** merge new locus data with existing data */
+    if (existing) newLoci[index] = data;
+    /** append new locus to end (will be sorted appropriately later) */ else
+      newLoci.push(data);
 
     /** pr files to change */
     const files = [
@@ -137,7 +146,7 @@ const EditForm = ({ heading, locus }) => {
       title,
       body,
       files,
-      labels: ["locus-edit"],
+      labels: [existing ? "locus-edit" : "locus-new"],
     });
   });
 
