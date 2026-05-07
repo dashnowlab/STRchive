@@ -2116,154 +2116,154 @@
   "Gene": "DAB1",
   "Locus_ID": "SCA37_DAB1",
   "Inheritance": "AD",
-  "Curator": "Laurel Hiatt",
-  "Date": "08/18/2025",
-  "Description": null,
+  "Curator": "Laurel Hiatt, Elbay Aliyev",
+  "Date": "8/18/25",
+  "Manual_evidence_level": "Definitive",
+  "Description": "Spinocerebellar ataxia type 37 (SCA37) is an autosomal dominant, generally pure cerebellar ataxia associated with an unstable intronic ATTTC pentanucleotide insertion in the non-coding/regulatory region of DAB1. Reported pathogenic alleles place an ATTTC insertion within a polymorphic ATTTT tract, whereas ATTTT-only alleles are non-pathogenic. Available evidence includes familial segregation and shared haplotypes in Portuguese and Spanish kindreds, absence of the ATTTC mutation from control/healthy relatives, repeat-size effects on age at onset, DAB1 transcript dysregulation/RNA switch in SCA37 cerebellum, AUUUC RNA aggregation in transfected human cells, and AUUUC repeat toxicity in zebrafish embryos.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "Manual_evidence_level": "Definitive",
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 3.0,
-    "Citation": "pmid:30284037",
-    "Evidence detail": "probands:2",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2019-02-01"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 1.0,
-    "Citation": "pmid:29939198",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2018-07-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:30284037",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-02-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:29939198",
-    "Evidence detail": null,
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2018-07-01"]
-  }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.0,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:28686858",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
-  }],
-  "category_summary":
-  {
-    "Singular Evidence": 3.0,
+  "category_summary": {
     "Collective Evidence": 2.5,
-    "Statistics": 6.0,
-    "Function": 2.0,
+    "Function": 2,
     "Functional Alteration": 1.5,
-    "Models": 3.0,
+    "Models": 3,
+    "Singular Evidence": 6,
+    "Statistics": 6,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 6,
-    "Genetic Evidence": 11.5
+    "Genetic Evidence": 12
   },
-  "total_score": 17.5,
+  "total_score": 18,
+  "classification": "Definitive",
   "publication_count": 3,
   "publication_interval_years": 1.57,
-  "classification": "Definitive"
+  "genetic_evidence_details": [
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:28686858; pmid:29939198",
+      "Evidence detail": "PMID:28686858 identified the DAB1 ATTTC insertion in three large Portuguese SCA37 families and three additional pedigrees sharing the disease haplotype, with 35 affected individuals from the initial three kindreds and six affected individuals from the additional pedigrees. PMID:29939198 reported four Spanish SCA37 families with 25 affected individuals and seven at-risk asymptomatic carriers carrying the ATTTC repeat mutation.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_date": "2019-02-01 00:00:00"
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 1.0,
+      "Citation": "pmid:29939198",
+      "Evidence detail": "In four Spanish SCA37 kindreds, 25 affected and seven at-risk asymptomatic carriers had ATTTC insertions of 46–71 and 49–62 repeats, respectively; in males, larger repeat size correlated with earlier onset (r = 0.96, p < 0.0001), with small repeat increases observed in transmissions.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_date": "2018-07-01 00:00:00"
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:28686858; pmid:29939198",
+      "Evidence detail": "PMID:28686858 mapped SCA37 to chromosome 1p32.2 in three Portuguese families, with maximum multipoint LOD scores of 5.1, 4.4, and 2.2, and showed that the DAB1 ATTTC insertion segregated with disease in all studied families. PMID:29939198 independently showed segregation of the DAB1 ATTTC mutation with disease in four Spanish SCA37 families.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_date": "2019-02-01 00:00:00"
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 6.0,
+      "Citation": "pmid:29939198",
+      "Evidence detail": "The ATTTC mutation was identified in SCA37 families and was absent from 28 healthy relatives studied; the study also screened a cohort of ataxia patients to identify additional SCA37 pedigrees sharing the DAB1-region haplotype.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_date": "2018-07-01 00:00:00"
+    }
+  ],
+  "experimental_evidence_details": [
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "Gene-level support: DAB1 is a reelin signal transducer required for accurate neuronal positioning in cerebellar, hippocampal, and cortical development; DAB1 transcripts spanning the repeat region encode the functional PID/PTB receptor-binding domain.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2017-07-06 00:00:00"
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "Gene-level support: DAB1 functions in the reelin pathway through an N-terminal PID/PTB domain involved in reelin receptor binding; the paper does not directly show TR-specific disruption of protein interactions.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2017-07-06 00:00:00"
+    },
+    {
+      "Evidence type": "Regulatory Impact",
+      "Score": 1.0,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "The ATTTC insertion lies within 5′ UTR introns of DAB1 transcripts expressed in adult cerebellum; transcript analyses showed alternative promoter usage and cerebellar-enriched DAB1 variants spanning the repeat region.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2017-07-06 00:00:00"
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2017-07-06 00:00:00"
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "HEK293T cells transfected with the pathogenic ins(ATTTC)58 construct formed nuclear AUUUC RNA aggregates by RNA FISH; normal ATTTT-repeat constructs did not, and RNase treatment abolished the signal.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_date": "2017-07-06 00:00:00"
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 2.0,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "Zebrafish embryos injected with ins(AUUUC)58 RNA showed increased 24 hpf lethality (58.79% versus 14.40–21.51% controls) and markedly reduced normal development (7.76% versus 77.52–85.37% controls).",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_date": "2017-07-06 00:00:00"
+    },
+    {
+      "Evidence type": "Cell culture",
+      "Score": 1.0,
+      "Citation": "pmid:28686858",
+      "Evidence detail": "",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": "2017-07-06 00:00:00"
+    }
+  ]
 },
 {
   "Disease_ID": "DMD",
