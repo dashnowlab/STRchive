@@ -265,6 +265,32 @@
   "Gene": "PPP2R2B"
 },
 {
+  "LocusId": "OPDM_FAM193B",
+  "ReferenceRegion": "chr5:177519788-177554563",
+  "LocusStructure": "(GGC)*",
+  "VariantType": "Repeat",
+  "HGNCId": null,
+  "InheritanceMode": ["AD"],
+  "DisplayRU": "GGC",
+  "Disease": "OPDM",
+  "NormalMax": 50,
+  "PathologicMin": 194,
+  "Gene": "FAM193B"
+},
+{
+  "LocusId": "OPDM_TBC1D7",
+  "ReferenceRegion": "chr6:13319170-13335511",
+  "LocusStructure": "(GGC)*",
+  "VariantType": "Repeat",
+  "HGNCId": null,
+  "InheritanceMode": ["AD"],
+  "DisplayRU": "GGC",
+  "Disease": "OPDM",
+  "NormalMax": 60,
+  "PathologicMin": 83,
+  "Gene": "TBC1D7"
+},
+{
   "LocusId": "SCA1_ATXN1",
   "ReferenceRegion": "chr6:16327633-16327724",
   "LocusStructure": "(CTG)*",
