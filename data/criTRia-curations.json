@@ -4160,86 +4160,91 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Laurel Hiatt, Elbay Aliyev",
   "Date": "8/12/2025",
-  "Manual_evidence_level": "",
   "Description": "A biallelic GGGCC repeat expansion of approximately 200 repeat units in the NAXE promoter was identified in one proband with autosomal recessive NAXE-related mitochondrial encephalopathy. The proband's homozygous expansion resulted from maternal chromosome 1 uniparental disomy, with the mother carrying the expansion heterozygously. The expansion was detected by long-read sequencing and supported by RP-PCR/Southern blot family testing, marked reduction of NAXE RNA and protein, reduced nascent promoter transcripts by NET-CAGE, and CpG hypermethylation at and downstream of the repeat. Screening of additional undiagnosed mitochondrial encephalopathy cases did not identify another pathogenic expansion, and available cohort/population data indicate that expanded alleles are very rare. To date, this locus-disease relationship is supported by one publication.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "category_summary": {
-    "Collective Evidence": 0.5,
-    "Function": 2,
-    "Functional Alteration": 1.5,
+  "Manual_evidence_level": "",
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:39455596",
+    "Evidence detail": "One affected proband (Pt2359, Family A) with NAXE-related mitochondrial encephalopathy carried a biallelic ~200-unit GGGCC repeat expansion in the NAXE promoter. Family testing showed maternal heterozygosity and proband homozygosity due to maternal chromosome 1 UPD; other explanatory variants were not identified.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_date": "2024-10-25 00:00:00",
+    "publication_dates": ["2024-10-25"]
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:39455596",
+    "Evidence detail": "Targeted ExpansionHunter detected the homozygous NAXE promoter GGGCC expansion in Pt2359 and a mild heterozygous expansion signal in the mother; de novo tools ExpansionHunter Denovo and STRling did not detect the expansion. Cohort/TR-gnomAD data support rarity of alleles outside the common short-repeat range.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_date": "2024-10-25 00:00:00",
+    "publication_dates": ["2024-10-25"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:39455596",
+    "Evidence detail": "Gene-level: NAXE encodes NAD(P)HX epimerase in the NAD(P)HX repair system, and loss of this enzyme compromises mitochondrial function; this supports disease-relevant biochemical function but is not tandem-repeat/locus-specific.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2024-10-25 00:00:00",
+    "publication_dates": ["2024-10-25"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 1.5,
+    "Citation": "pmid:39455596",
+    "Evidence detail": "TR-specific: the biallelic NAXE promoter GGGCC expansion was associated with markedly reduced NAXE RNA, reduced nascent promoter transcripts by NET-CAGE, and CpG hypermethylation at and downstream of the repeat, supporting transcriptional suppression.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2024-10-25 00:00:00",
+    "publication_dates": ["2024-10-25"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39455596",
+    "Evidence detail": "Patient-derived fibroblasts from Pt2359 showed disease-relevant functional alteration, including reduced oxygen consumption and reduced oxidative phosphorylation complex II/II+III activity, with reduced NAXE RNA/protein in the same patient-cell context.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2024-10-25 00:00:00",
+    "publication_dates": ["2024-10-25"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 1.5,
-    "Models": 0,
+    "Collective Evidence": 0.5,
     "Statistics": 0,
+    "Function": 2.0,
+    "Functional Alteration": 1.0,
+    "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
-    "Experimental Evidence": 4.0,
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
     "Genetic Evidence": 2.0
   },
-  "total_score": 6.0,
-  "classification": "Moderate",
+  "total_score": 5.0,
   "publication_count": 1,
   "publication_interval_years": null,
-  "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 1.5,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "One affected proband (Pt2359, Family A) with NAXE-related mitochondrial encephalopathy carried a biallelic ~200-unit GGGCC repeat expansion in the NAXE promoter. Family testing showed maternal heterozygosity and proband homozygosity due to maternal chromosome 1 UPD; other explanatory variants were not identified.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_date": "2024-10-25 00:00:00"
-    },
-    {
-      "Evidence type": "Computational",
-      "Score": 0.5,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "Targeted ExpansionHunter detected the homozygous NAXE promoter GGGCC expansion in Pt2359 and a mild heterozygous expansion signal in the mother; de novo tools ExpansionHunter Denovo and STRling did not detect the expansion. Cohort/TR-gnomAD data support rarity of alleles outside the common short-repeat range.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_date": "2024-10-25 00:00:00"
-    }
-  ],
-  "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "Gene-level: NAXE encodes NAD(P)HX epimerase in the NAD(P)HX repair system, and loss of this enzyme compromises mitochondrial function; this supports disease-relevant biochemical function but is not tandem-repeat/locus-specific.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2024-10-25 00:00:00"
-    },
-    {
-      "Evidence type": "Regulatory Impact",
-      "Score": 1.5,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "TR-specific: the biallelic NAXE promoter GGGCC expansion was associated with markedly reduced NAXE RNA, reduced nascent promoter transcripts by NET-CAGE, and CpG hypermethylation at and downstream of the repeat, supporting transcriptional suppression.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2024-10-25 00:00:00"
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "Patient-derived fibroblasts from Pt2359 showed disease-relevant functional alteration, including reduced oxygen consumption and reduced oxidative phosphorylation complex II/II+III activity, with reduced NAXE RNA/protein in the same patient-cell context.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2024-10-25 00:00:00"
-    }
-  ]
+  "classification": "Limited"
 },
 {
   "Disease_ID": "ALS1",
