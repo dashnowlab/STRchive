@@ -4218,17 +4218,6 @@
       "publication_date": "2024-10-25 00:00:00"
     },
     {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2024-10-25 00:00:00"
-    },
-    {
       "Evidence type": "Regulatory Impact",
       "Score": 1.5,
       "Citation": "pmid:39455596",
@@ -4247,17 +4236,6 @@
       "evidence_category": "Functional Alteration",
       "evidence_supercategory": "Experimental Evidence",
       "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2024-10-25 00:00:00"
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 0.5,
-      "Citation": "pmid:39455596",
-      "Evidence detail": "Non-patient/control fibroblasts and mitochondrial disease controls without NAXE causative variants were used as comparators and showed preserved NAXE expression/protein and no repeat-region hypermethylation; no engineered non-patient expansion model was reported.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
       "category_max_score": 2,
       "publication_date": "2024-10-25 00:00:00"
     }
