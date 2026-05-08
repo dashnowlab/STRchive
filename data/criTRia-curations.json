@@ -4136,7 +4136,7 @@
     "category_max_score": 6,
     "publication_dates": ["2019-12-01"]
   },
-    {
+  {
     "Evidence type": "Computational",
     "Score": 0.5,
     "Citation": "pmid:34179866",
@@ -4145,7 +4145,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": null
+    "publication_dates": ["2021-06-01"]
   },
   {
     "Evidence type": "Segregation",
@@ -4159,17 +4159,16 @@
     "publication_dates": ["2019-12-01"]
   },
   {
-  "Evidence type": "Case-Control Data",
-  "Score": 2.0,
-  "Citation": "pmid:31286297",
-  "Evidence detail": "Project MinE STR analysis found NIPA1 ≥9-repeat alleles in 232 ALS cases (4.6%) and 78 controls (4.6%), with no significant ALS susceptibility association; NIPA1 showed only a nominal survival association. They used two methods of variant detection.",
-  "evidence_category": "Statistics",
-  "evidence_supercategory": "Genetic Evidence",
-  "evidence_max_score": 12,
-  "category_max_score": 12,
-  "publication_date": null
-}
-],
+    "Evidence type": "Case-control data",
+    "Score": 2.0,
+    "Citation": "pmid:31286297",
+    "Evidence detail": "Project MinE STR analysis found NIPA1 ≥9-repeat alleles in 232 ALS cases (4.6%) and 78 controls (4.6%), with no significant ALS susceptibility association; NIPA1 showed only a nominal survival association. They used two methods of variant detection.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2019-12-01"]
+  }],
   "experimental_evidence_details": [
   {
     "Evidence type": "Protein interaction",
@@ -4185,7 +4184,7 @@
   "category_summary":
   {
     "Singular Evidence": 6.0,
-    "Collective Evidence": 1.5,
+    "Collective Evidence": 2.0,
     "Statistics": 2.0,
     "Function": 1.0,
     "Functional Alteration": 0,
@@ -4195,11 +4194,11 @@
   "supercategory_summary":
   {
     "Experimental Evidence": 1.0,
-    "Genetic Evidence": 9.5
+    "Genetic Evidence": 10.0
   },
-  "total_score": 10.5,
-  "publication_count": 2,
-  "publication_interval_years": 0.83,
+  "total_score": 11.0,
+  "publication_count": 3,
+  "publication_interval_years": 2.33,
   "classification": "Disputed"
 },
 {
