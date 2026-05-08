@@ -4127,9 +4127,9 @@
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 6.0,
+    "Score": 0,
     "Citation": "pmid:31286297",
-    "Evidence detail": "6 patients with the NIPA1 expansion, co-occuring with a C9orf72 expansion.",
+    "Evidence detail": "6 patients with the NIPA1 expansion, co-occuring with a C9orf72 expansion. The source reports cohort-level NIPA1 repeat genotyping but does not describe individual NIPA1-expanded ALS probands with phenotype, family, or functional details suitable for singular proband scoring. Therefore, a score of 0 is assigned for this evidence.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -4138,25 +4138,14 @@
   },
   {
     "Evidence type": "Computational",
-    "Score": 0.5,
+    "Score": 0,
     "Citation": "pmid:34179866",
-    "Evidence detail": "ExpansionHunter WGS analysis of Southern African ALS cases and African controls found similar NIPA1 GCG-repeat distributions (p = 0.67); long alleles (≥9 GCG repeats) were rare in Africans and not associated with ALS, while 9–10-repeat alleles were more common in European than African controls (6% vs 0.4%, p = 0.016).",
+    "Evidence detail": "ExpansionHunter WGS analysis of Southern African ALS cases and African controls found similar NIPA1 GCG-repeat distributions (p = 0.67); long alleles (≥9 GCG repeats) were rare in Africans and not associated with ALS, while 9–10-repeat alleles were more common in European than African controls (6% vs 0.4%, p = 0.016). Score of 0 assigned as this evidence does not support an association between the NIPA1 repeat and ALS.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
     "publication_dates": ["2021-06-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-12-01"]
   },
   {
     "Evidence type": "Case-control data",
