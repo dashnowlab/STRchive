@@ -4173,21 +4173,21 @@
   "category_summary":
   {
     "Singular Evidence": 6.0,
-    "Collective Evidence": 2.0,
-    "Statistics": 6.0,
-    "Function": 0.5,
-    "Functional Alteration": 1.5,
+    "Collective Evidence": 1.5,
+    "Statistics": 2.0,
+    "Function": 1.0,
+    "Functional Alteration": 0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 2.0,
-    "Genetic Evidence": 12
+    "Experimental Evidence": 1.0,
+    "Genetic Evidence": 9.5
   },
-  "total_score": 14.0,
-  "publication_count": 3,
-  "publication_interval_years": 2.33,
+  "total_score": 10.5,
+  "publication_count": 2,
+  "publication_interval_years": 0.83,
   "classification": "Disputed"
 },
 {
@@ -4886,7 +4886,7 @@
   }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Biochemical Function",
+    "Evidence type": "Biochemical function",
     "Score": 0.5,
     "Citation": "pmid:22963882",
     "Evidence detail": "Evidence of mechanistic relationship between mitochondrial dysfunction and disease biology.",
@@ -4920,20 +4920,20 @@
   }],
   "category_summary":
   {
-    "Singular Evidence": 0,
+    "Singular Evidence": 6.0,
     "Collective Evidence": 0,
     "Statistics": 0,
-    "Function": 1.0,
-    "Functional Alteration": 1.0,
-    "Models": 2.0,
+    "Function": 1.5,
+    "Functional Alteration": 0,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 4.0,
-    "Genetic Evidence": 0
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 6.0
   },
-  "total_score": 4.0,
+  "total_score": 7.5,
   "publication_count": 1,
   "publication_interval_years": null,
   "classification": "Disputed"
