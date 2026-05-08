@@ -4118,18 +4118,18 @@
   "Gene": "NIPA",
   "Locus_ID": "ALS1_NIPA1",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt, Harriet Dashnow",
   "Date": "06/06/2025",
-  "Description": "This locus is a proposed modifier of ALS, but there is conflicting evidence for the causative association between the repeat and the disease. The NIPA repeat does not appear to be a Mendelian cause of ALS, resulting in a disputed classification.",
+  "Description": "The NIPA1 exon 1 GCG/polyalanine repeat has been reported as an ALS risk or modifier locus, with some European cohorts showing enrichment or survival effects for long alleles (≥9 or >8 GCG repeats), whereas African-ancestry and broader Project MinE STR studies did not confirm an ALS susceptibility or age-at-onset association. The evidence is conflicting and largely association-based, with limited direct locus-specific evidence, supporting the disputed classification. The evidence does not currently support a Mendelian association between the NIPA1 repeat and ALS.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Disputed",
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 6.0,
+    "Score": 0.0,
     "Citation": "pmid:31286297",
-    "Evidence detail": "6 patients with the NIPA1 expansion, co-occuring with a C9orf72 expansion.",
+    "Evidence detail": "6 patients with the NIPA1 expansion, co-occuring with a C9orf72 expansion. The source reports cohort-level NIPA1 repeat genotyping but does not describe individual NIPA1-expanded ALS probands with phenotype, family, or functional details suitable for singular proband scoring. Therefore, a score of 0 is assigned for this evidence.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -4137,21 +4137,21 @@
     "publication_dates": ["2019-12-01"]
   },
   {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
+    "Evidence type": "Computational",
+    "Score": 0.0,
+    "Citation": "pmid:34179866",
+    "Evidence detail": "ExpansionHunter WGS analysis of Southern African ALS cases and African controls found similar NIPA1 GCG-repeat distributions (p = 0.67); long alleles (≥9 GCG repeats) were rare in Africans and not associated with ALS, while 9–10-repeat alleles were more common in European than African controls (6% vs 0.4%, p = 0.016). Score of 0 assigned as this evidence does not support an association between the NIPA1 repeat and ALS.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_dates": ["2019-12-01"]
+    "publication_dates": ["2021-06-01"]
   },
   {
     "Evidence type": "Case-control data",
     "Score": 2.0,
     "Citation": "pmid:31286297",
-    "Evidence detail": "Authors did not find a statistically significant association and the power was low. They did make use of two methods of variant detection.",
+    "Evidence detail": "Project MinE STR analysis found NIPA1 ≥9-repeat alleles in 232 ALS cases (4.6%) and 78 controls (4.6%), with no significant ALS susceptibility association; NIPA1 showed only a nominal survival association. They used two methods of variant detection.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -4172,8 +4172,8 @@
   }],
   "category_summary":
   {
-    "Singular Evidence": 6.0,
-    "Collective Evidence": 1.5,
+    "Singular Evidence": 0.0,
+    "Collective Evidence": 0.0,
     "Statistics": 2.0,
     "Function": 1.0,
     "Functional Alteration": 0,
@@ -4183,11 +4183,11 @@
   "supercategory_summary":
   {
     "Experimental Evidence": 1.0,
-    "Genetic Evidence": 9.5
+    "Genetic Evidence": 2.0
   },
-  "total_score": 10.5,
-  "publication_count": 2,
-  "publication_interval_years": 0.83,
+  "total_score": 3.0,
+  "publication_count": 3,
+  "publication_interval_years": 2.33,
   "classification": "Disputed"
 },
 {
