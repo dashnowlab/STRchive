@@ -4127,7 +4127,7 @@
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 0,
+    "Score": 0.0,
     "Citation": "pmid:31286297",
     "Evidence detail": "6 patients with the NIPA1 expansion, co-occuring with a C9orf72 expansion. The source reports cohort-level NIPA1 repeat genotyping but does not describe individual NIPA1-expanded ALS probands with phenotype, family, or functional details suitable for singular proband scoring. Therefore, a score of 0 is assigned for this evidence.",
     "evidence_category": "Singular Evidence",
@@ -4138,7 +4138,7 @@
   },
   {
     "Evidence type": "Computational",
-    "Score": 0,
+    "Score": 0.0,
     "Citation": "pmid:34179866",
     "Evidence detail": "ExpansionHunter WGS analysis of Southern African ALS cases and African controls found similar NIPA1 GCG-repeat distributions (p = 0.67); long alleles (≥9 GCG repeats) were rare in Africans and not associated with ALS, while 9–10-repeat alleles were more common in European than African controls (6% vs 0.4%, p = 0.016). Score of 0 assigned as this evidence does not support an association between the NIPA1 repeat and ALS.",
     "evidence_category": "Collective Evidence",
@@ -4172,8 +4172,8 @@
   }],
   "category_summary":
   {
-    "Singular Evidence": 6.0,
-    "Collective Evidence": 2.0,
+    "Singular Evidence": 0.0,
+    "Collective Evidence": 0.0,
     "Statistics": 2.0,
     "Function": 1.0,
     "Functional Alteration": 0,
@@ -4183,9 +4183,9 @@
   "supercategory_summary":
   {
     "Experimental Evidence": 1.0,
-    "Genetic Evidence": 10.0
+    "Genetic Evidence": 2.0
   },
-  "total_score": 11.0,
+  "total_score": 3.0,
   "publication_count": 3,
   "publication_interval_years": 2.33,
   "classification": "Disputed"
