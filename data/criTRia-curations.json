@@ -2272,7 +2272,7 @@
   "Inheritance": "XR",
   "Curator": "Laurel Hiatt",
   "Date": "05/14/2025",
-  "Description": null,
+  "Description": "There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family, from which the benign and pathogenic ranges were inferred from affected and unaffected family members [@pmid:27417533].",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Refuted",
@@ -4120,7 +4120,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "06/06/2025",
-  "Description": null,
+  "Description": "This locus is a proposed modifier of ALS, but there is conflicting evidence for the causative association between the repeat and the disease.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Disputed",
@@ -4129,23 +4129,12 @@
     "Evidence type": "Probands",
     "Score": 6.0,
     "Citation": "pmid:31286297",
-    "Evidence detail": null,
+    "Evidence detail": "6 patients with the NIPA1 expansion, co-occuring with a C9orf72 expansion.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
     "publication_dates": ["2019-12-01"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:34179866",
-    "Evidence detail": "mentions that results open new questions",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2021-06-01"]
   },
   {
     "Evidence type": "Segregation",
@@ -4160,9 +4149,9 @@
   },
   {
     "Evidence type": "Case-control data",
-    "Score": 6.0,
+    "Score": 2.0,
     "Citation": "pmid:31286297",
-    "Evidence detail": null,
+    "Evidence detail": "Authors did not find a statistically significant association and the power was low. Did, though, make use of two methods of variant detection.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -4172,36 +4161,14 @@
   "experimental_evidence_details": [
   {
     "Evidence type": "Protein interaction",
-    "Score": 0.5,
+    "Score": 1.0,
     "Citation": "pmid:30342764",
-    "Evidence detail": null,
+    "Evidence detail": "Authors found altered protein to protein interactions and sequesteration of RNA-binding protien.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2019-02-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-12-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2019-12-01"]
   }],
   "category_summary":
   {
@@ -4901,55 +4868,55 @@
   "Inheritance": null,
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "This locus is a proposed modifier to Parkinson's disease and has little evidence supporting it's causative role [@pmid:19043662]. This locus also has conflicting evidence on the association between the repeat and progressive external opthalmoplegia.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Disputed",
-  "genetic_evidence_details": [],
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:22963882",
+    "Evidence detail": "191 patients",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2008-12-09"]
+  }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Protein interaction",
+    "Evidence type": "Biochemical Function",
     "Score": 0.5,
-    "Citation": "pmid:24038517",
-    "Evidence detail": null,
+    "Citation": "pmid:22963882",
+    "Evidence detail": "Evidence of mechanistic relationship between mitochondrial dysfunction and disease biology.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2014-01-01"]
+    "publication_dates": ["2008-12-09"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:22963882",
+    "Evidence detail": "Altered protien interaction.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2008-12-09"]
   },
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
-    "Citation": "pmid:24038517",
-    "Evidence detail": null,
+    "Citation": "pmid:22963882",
+    "Evidence detail": "Evidence of altered expression downstream of the repeat.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2014-01-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:24038517",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-01-01"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:24038517",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2014-01-01"]
+    "publication_dates": ["2008-12-09"]
   }],
   "category_summary":
   {
