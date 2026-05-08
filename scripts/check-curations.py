@@ -475,8 +475,10 @@ def main(args):
         any_errors = False
         for error in sorted(validator.iter_errors(out_data), key=str):
             any_errors = True
-            sys.stderr.write(f"Schema validation error: {error.message}\n")
-            sys.stderr.write(f"  Path: {list(error.absolute_path)}\n")
+            path = list(error.absolute_path)
+            locus_id = out_data[path[0]].get('Locus_ID', 'Unknown Locus') if path and isinstance(path[0], int) else 'Unknown Locus'
+            sys.stderr.write(f"Schema validation error in locus '{locus_id}': {error.message}\n")
+            sys.stderr.write(f"  Path: {path}\n")
         if any_errors:
             sys.stderr.write("Schema validation failed.\n")
             sys.exit(1)
