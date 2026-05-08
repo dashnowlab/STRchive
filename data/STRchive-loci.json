@@ -1838,7 +1838,7 @@
   "webstr_hg19": [],
   "locus_tags": [],
   "disease_tags": ["oculopharyngodistal_myopathy"],
-  "references": [],
+  "references": ["pmid:39868092", "pmid:38585781", "pmid:38297326", "pmid:40357124", "mondo:0025193"],
   "additional_literature": []
 },
 {
@@ -4427,7 +4427,7 @@
   "age_onset_max": 59.0,
   "typ_age_onset_min": null,
   "typ_age_onset_max": null,
-  "details": "Benign range (0-60) estimated from population data and pathogenic range (83-148) gathered from 7 patients from 3 unrelated families [@pmid:41959811].",
+  "details": "Benign range (0-60) estimated from population data and pathogenic range (83-148) gathered from 7 patients from 3 unrelated families [@pmid:41959811]. The hg38 coordinates reported in the paper (chr6:13328476-13328603) [@pmid:41959811] contain multiple annotated TRs an interruptions, so the true coordinates are likely more narrow.",
   "mechanism": "GoF",
   "mechanism_detail": "Gain of Function apparent, but mechanism is unknown. Methylation and RAN translation have been oberseved [@pmid:41959811].",
   "year": "2026 [@pmid:41959811]",
@@ -4466,8 +4466,8 @@
   "webstr_hg19": [],
   "locus_tags": [],
   "disease_tags": ["oculopharyngodistal_myopathy"],
-  "references": [],
-  "additional_literature": ["pmid:41792844", "pmid:40645757"]
+  "references": ["pmid:41959811", "mondo:0025193"],
+  "additional_literature": []
 },
 {
   "id": "SCA17_TBP",
