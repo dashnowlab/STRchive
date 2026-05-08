@@ -2121,7 +2121,7 @@
   "Description": "Spinocerebellar ataxia type 37 (SCA37) is an autosomal dominant, generally pure cerebellar ataxia associated with an unstable intronic ATTTC pentanucleotide insertion in the non-coding/regulatory region of DAB1. Reported pathogenic alleles place an ATTTC insertion within a polymorphic ATTTT tract, whereas ATTTT-only alleles are non-pathogenic. Available evidence includes familial segregation and shared haplotypes in Portuguese and Spanish kindreds, absence of the ATTTC mutation from control/healthy relatives, repeat-size effects on age at onset, DAB1 transcript dysregulation/RNA switch in SCA37 cerebellum, AUUUC RNA aggregation in transfected human cells, and AUUUC repeat toxicity in zebrafish embryos.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "Manual_evidence_level": "Definitive",
+  "Manual_evidence_level": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2158,9 +2158,9 @@
   },
   {
     "Evidence type": "Case-control data",
-    "Score": 6.0,
+    "Score": 0.0,
     "Citation": "pmid:29939198",
-    "Evidence detail": "The ATTTC mutation was identified in SCA37 families and was absent from 28 healthy relatives studied; the study also screened a cohort of ataxia patients to identify additional SCA37 pedigrees sharing the DAB1-region haplotype.",
+    "Evidence detail": "The ATTTC mutation was identified in SCA37 families and was absent from 28 healthy relatives studied; the study also screened a cohort of ataxia patients to identify additional SCA37 pedigrees sharing the DAB1-region haplotype. No additional score was awarded as this study has been scored under other evidence types.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -2172,7 +2172,7 @@
     "Evidence type": "Biochemical function",
     "Score": 0.5,
     "Citation": "pmid:28686858",
-    "Evidence detail": "Gene-level support: DAB1 is a reelin signal transducer required for accurate neuronal positioning in cerebellar, hippocampal, and cortical development; DAB1 transcripts spanning the repeat region encode the functional PID/PTB receptor-binding domain.",
+    "Evidence detail": "Gene-level support: DAB1 is a reelin signal transducer required for accurate neuronal positioning in cerebellar, hippocampal, and cortical development; DAB1 transcripts spanning the repeat region encode the functional PID/PTB receptor-binding domain. This evidence supports the role of the gene.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2183,7 +2183,7 @@
     "Evidence type": "Protein interaction",
     "Score": 0.5,
     "Citation": "pmid:28686858",
-    "Evidence detail": "Gene-level support: DAB1 functions in the reelin pathway through an N-terminal PID/PTB domain involved in reelin receptor binding; the paper does not directly show TR-specific disruption of protein interactions.",
+    "Evidence detail": "Gene-level support: DAB1 functions in the reelin pathway through an N-terminal PID/PTB domain involved in reelin receptor binding; the paper does not directly show TR-specific disruption of protein interactions. This evidence supports the role of the gene.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2203,9 +2203,9 @@
   },
   {
     "Evidence type": "Patient cells",
-    "Score": 1.0,
+    "Score": 0.0,
     "Citation": "pmid:28686858",
-    "Evidence detail": "",
+    "Evidence detail": "Patient fibrobroblasts were used in this study, however the experiment is already scored elsewhere. No score was awarded for this evidence.",
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2233,37 +2233,26 @@
     "evidence_max_score": 4,
     "category_max_score": 4,
     "publication_dates": ["2017-07-06"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:28686858",
-    "Evidence detail": "",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-07-06"]
   }],
   "category_summary":
   {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.5,
-    "Statistics": 6.0,
+    "Statistics": 0.0,
     "Function": 2.0,
-    "Functional Alteration": 1.5,
-    "Models": 3.0,
+    "Functional Alteration": 0.5,
+    "Models": 2.0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 6,
-    "Genetic Evidence": 12
+    "Experimental Evidence": 4.5,
+    "Genetic Evidence": 8.5
   },
-  "total_score": 18,
+  "total_score": 13.0,
   "publication_count": 2,
   "publication_interval_years": 0.99,
-  "classification": "Definitive"
+  "classification": "Strong"
 },
 {
   "Disease_ID": "DMD",
