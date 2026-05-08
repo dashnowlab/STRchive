@@ -4119,109 +4119,109 @@
   "Locus_ID": "ALS1_NIPA1",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
-  "Date": "06/06/2025",
-  "Description": null,
+  "Date": "6/6/2025",
+  "Manual_evidence_level": "Disputed",
+  "Description": "The NIPA1 exon 1 GCG/polyalanine repeat has been reported as an ALS risk or modifier locus, with some European cohorts showing enrichment or survival effects for long alleles (≥9 or >8 GCG repeats), whereas African-ancestry and broader Project MinE STR studies did not confirm an ALS susceptibility or age-at-onset association. The evidence is conflicting and largely association-based, with limited direct locus-specific functional evidence, supporting the disputed classification.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "Manual_evidence_level": "Disputed",
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2019-12-01"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:34179866",
-    "Evidence detail": "mentions that results open new questions",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2021-06-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-12-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2019-12-01"]
-  }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:30342764",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-02-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-12-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:31286297",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2019-12-01"]
-  }],
-  "category_summary":
-  {
-    "Singular Evidence": 6.0,
+  "category_summary": {
     "Collective Evidence": 2.0,
-    "Statistics": 6.0,
     "Function": 0.5,
     "Functional Alteration": 1.5,
+    "Singular Evidence": 6.0,
+    "Statistics": 6.0,
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.0,
     "Genetic Evidence": 12
   },
   "total_score": 14.0,
+  "classification": "Disputed",
   "publication_count": 3,
-  "publication_interval_years": 2.33,
-  "classification": "Disputed"
+  "publication_interval_years": null,
+  "genetic_evidence_details": [
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": 31286297,
+      "Evidence detail": "",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_date": null
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 0.5,
+      "Citation": 34179866,
+      "Evidence detail": "ExpansionHunter WGS analysis of Southern African ALS cases and African controls found similar NIPA1 GCG-repeat distributions (p = 0.67); long alleles (≥9 GCG repeats) were rare in Africans and not associated with ALS, while 9–10-repeat alleles were more common in European than African controls (6% vs 0.4%, p = 0.016).",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_date": null
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": 31286297,
+      "Evidence detail": "",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_date": null
+    },
+    {
+      "Evidence type": "Case-Control Data",
+      "Score": 6.0,
+      "Citation": 31286297,
+      "Evidence detail": "Project MinE STR analysis found NIPA1 ≥9-repeat alleles in 232 ALS cases (4.6%) and 78 controls (4.6%), with no significant ALS susceptibility association; NIPA1 showed only a nominal survival association.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_date": null
+    }
+  ],
+  "experimental_evidence_details": [
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": 30342764,
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": null
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": 31286297,
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_date": null
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": 31286297,
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_date": null
+    }
+  ]
 },
 {
   "Disease_ID": "SCA36",
