@@ -4120,7 +4120,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "06/06/2025",
-  "Description": "This locus is a proposed modifier of ALS, but there is conflicting evidence for the causative association between the repeat and the disease. The NIPA repeat does not appear to be a Mendelian cause of ALS, resulting in a disputed classification.",
+  "Description": "This locus is a proposed modifier of ALS, but there is conflicting evidence for the causative association between the repeat and the disease. The NIPA repeat does not appear to be a Mendelian cause of ALS, resulting in a disputed classification. || The NIPA1 exon 1 GCG/polyalanine repeat has been reported as an ALS risk or modifier locus, with some European cohorts showing enrichment or survival effects for long alleles (≥9 or >8 GCG repeats), whereas African-ancestry and broader Project MinE STR studies did not confirm an ALS susceptibility or age-at-onset association. The evidence is conflicting and largely association-based, with limited direct locus-specific functional evidence, supporting the disputed classification.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Disputed",
@@ -4136,6 +4136,17 @@
     "category_max_score": 6,
     "publication_dates": ["2019-12-01"]
   },
+    {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:34179866",
+    "Evidence detail": "ExpansionHunter WGS analysis of Southern African ALS cases and African controls found similar NIPA1 GCG-repeat distributions (p = 0.67); long alleles (≥9 GCG repeats) were rare in Africans and not associated with ALS, while 9–10-repeat alleles were more common in European than African controls (6% vs 0.4%, p = 0.016).",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_date": null
+  },
   {
     "Evidence type": "Segregation",
     "Score": 1.5,
@@ -4148,16 +4159,17 @@
     "publication_dates": ["2019-12-01"]
   },
   {
-    "Evidence type": "Case-control data",
-    "Score": 2.0,
-    "Citation": "pmid:31286297",
-    "Evidence detail": "Authors did not find a statistically significant association and the power was low. They did make use of two methods of variant detection.",
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2019-12-01"]
-  }],
+  "Evidence type": "Case-Control Data",
+  "Score": 2.0,
+  "Citation": "pmid:31286297",
+  "Evidence detail": "Project MinE STR analysis found NIPA1 ≥9-repeat alleles in 232 ALS cases (4.6%) and 78 controls (4.6%), with no significant ALS susceptibility association; NIPA1 showed only a nominal survival association. They used two methods of variant detection.",
+  "evidence_category": "Statistics",
+  "evidence_supercategory": "Genetic Evidence",
+  "evidence_max_score": 12,
+  "category_max_score": 12,
+  "publication_date": null
+}
+],
   "experimental_evidence_details": [
   {
     "Evidence type": "Protein interaction",
