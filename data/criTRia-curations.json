@@ -5219,86 +5219,92 @@
   "Locus_ID": "CJD_PRNP",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
-  "Date": "8/14/25",
+  "Date": "08/14/2025",
   "Description": "PRNP octapeptide repeat insertions (OPRIs) in the exon 2/N-terminal coding repeat region are associated with autosomal dominant genetic Creutzfeldt-Jakob disease/inherited prion disease. Uploaded sources describe the normal five-octapeptide repeat structure, familial CJD/CJD-GSS cases with expanded alleles, published OPRI genetic CJD case summaries across 1–7 additional repeats, and newer 5-OPRI reports with atypical frontotemporal dementia-like or Huntington disease-like presentations.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "category_summary": {
-    "Collective Evidence": 1.5,
-    "Function": 1.5,
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:29887139",
+    "Evidence detail": "Review summarized published genetic CJD cases with PRNP octapeptide-repeat insertions across 1–7 additional-repeat haplotypes, including 5-OPRI, 6-OPRI, and 7-OPRI groups with variable age at onset, disease duration, family history, and diagnostic findings.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_date": "2018-01-01 00:00:00",
+    "publication_dates": ["2018-01-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:1683708",
+    "Evidence detail": "Goldfarb et al. screened familial spongiform encephalopathy kindreds and identified expanded PRNP octapeptide-repeat alleles in affected CJD/CJD-GSS families: 10 repeats in Kel, 12 repeats in three tested affected Ald family members with four unaffected relatives carrying normal alleles, and 13 repeats in Che, including the proband and one at-risk niece while another niece was normal.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_date": "1991-12-01 00:00:00",
+    "publication_dates": ["1991-12-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:37379724",
+    "Evidence detail": "In an HD-phenocopy screening cohort, one patient with inherited prion disease carried PRNP 5-OPRI and Met/Met at codon 129; the authors reported neuropathologically proven prion disease and protease-resistant PrP fragments. This is PRNP OPRI-associated prion biochemistry/pathology rather than a mechanistic functional assay.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2023-08-15 00:00:00",
+    "publication_dates": ["2023-08-15"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:29939637",
+    "Evidence detail": "Gene-level, not OPRI-specific: the clinical CJD review describes pathogenic PrPSc associating with normal cellular PrP and converting alpha-helical PrPC into protease-resistant beta-pleated aggregates; no PRNP OPRI-specific protein-interaction assay was provided.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2026-01-01 00:00:00",
+    "publication_dates": ["2026-01-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:36977684; pmid:38467784; pmid:1683708",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": null,
+    "publication_dates": ["2023-03-29", "2024-07-01", "1991-12-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
-    "Models": 0,
-    "Functional Alteration": 0,
+    "Collective Evidence": 1.5,
     "Statistics": 0,
+    "Function": 1.5,
+    "Functional Alteration": 0,
+    "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 1.5,
     "Genetic Evidence": 7.5
   },
   "total_score": 9.0,
-  "classification": "Moderate",
-  "publication_count": 5,
+  "publication_count": 6,
   "publication_interval_years": 34.09,
-  "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:29887139",
-      "Evidence detail": "Review summarized published genetic CJD cases with PRNP octapeptide-repeat insertions across 1–7 additional-repeat haplotypes, including 5-OPRI, 6-OPRI, and 7-OPRI groups with variable age at onset, disease duration, family history, and diagnostic findings.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_date": "2018-01-01 00:00:00"
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:1683708",
-      "Evidence detail": "Goldfarb et al. screened familial spongiform encephalopathy kindreds and identified expanded PRNP octapeptide-repeat alleles in affected CJD/CJD-GSS families: 10 repeats in Kel, 12 repeats in three tested affected Ald family members with four unaffected relatives carrying normal alleles, and 13 repeats in Che, including the proband and one at-risk niece while another niece was normal.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_date": "1991-12-01 00:00:00"
-    }
-  ],
-  "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:37379724",
-      "Evidence detail": "In an HD-phenocopy screening cohort, one patient with inherited prion disease carried PRNP 5-OPRI and Met/Met at codon 129; the authors reported neuropathologically proven prion disease and protease-resistant PrP fragments. This is PRNP OPRI-associated prion biochemistry/pathology rather than a mechanistic functional assay.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2023-08-15 00:00:00"
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:29939637",
-      "Evidence detail": "Gene-level, not OPRI-specific: the clinical CJD review describes pathogenic PrPSc associating with normal cellular PrP and converting alpha-helical PrPC into protease-resistant beta-pleated aggregates; no PRNP OPRI-specific protein-interaction assay was provided.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2026-01-01 00:00:00"
-    },
-    {
-      "Evidence type": "Regulatory Impact",
-      "Score": 0.5,
-      "Citation": "pmid:36977684; pmid:38467784; pmid:1683708",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": null
-    }
-  ]
+  "classification": "Moderate"
 },
 {
   "Disease_ID": "FAME8",
