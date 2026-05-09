@@ -5913,108 +5913,115 @@
   "Inheritance": "XR",
   "Curator": "Macayla Weiner, Laurel Hiatt, Elbay Aliyev",
   "Date": "8/14/2025",
-  "Manual_evidence_level": "Definitive",
   "Description": "X-linked dystonia-parkinsonism (XDP) is an adult-onset, X-linked movement disorder most often affecting males of Filipino/Panay ancestry and associated with a founder SVA retrotransposon insertion in intron 32 of TAF1. The XDP SVA contains a variable (CCCTCT)n hexameric repeat whose length correlates inversely with age at onset and shows tissue-specific somatic instability in brain. Genetic studies support segregation of the XDP haplotype/SVA with disease, while functional studies show SVA-associated TAF1 dysregulation, including reduced TAF1 expression, intron 32 retention/aberrant splicing, and epigenetic effects involving DNA methylation and H3K9me3.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "category_summary": {
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:30973967",
+    "Evidence detail": "PMID:30973967 enrolled 52 male patients with clinically and genetically confirmed XDP, typical X-linked family history, Panay maternal ancestry, and molecular confirmation of TAF1 haplotype variants; this supports affected-case ascertainment but is not a primary locus-discovery cohort.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_date": "2019-06-01 00:00:00",
+    "publication_dates": ["2019-06-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:29229810; pmid:38835911; pmid:35395816",
+    "Evidence detail": "PMID:29229810 identified polymorphic (CCCTCT)n repeat length within the XDP-specific TAF1 SVA in 140 patients, with 35-52 repeats and a significant inverse correlation with age at onset. PMID:35395816 confirmed repeat-length associations with age at onset/death and showed repeat-length-dependent somatic expansion in blood and brain; PMID:38835911 summarizes repeat length and modifier effects on variable expressivity.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_date": null,
+    "publication_dates": ["2017-12-19", "2022-06-01", "2022-04-08"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:29229810; pmid:7668293",
+    "Evidence detail": "PMID:7668293 found the same DXS7117/DXS7119 haplotype in 42/47 unrelated XDP patients and used linkage disequilibrium to localize DYT3 to Xq13.1. PMID:29229810 reports that affected individuals share the XDP founder haplotype containing the TAF1 SVA and that these variants were not found in ethnically matched or other controls.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_date": null,
+    "publication_dates": ["2017-12-19", "1995-09-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:38834915",
+    "Evidence detail": "PMID:38834915 showed that the KRAB zinc-finger protein ZNF91 recognizes SVAs in neural progenitor cells and helps establish H3K9me3/DNA methylation over the polymorphic XDP SVA; this supports a transposon-regulatory protein interaction rather than a direct TAF1 protein-protein interaction.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2024-10-01 00:00:00",
+    "publication_dates": ["2024-10-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 2.0,
+    "Citation": "pmid:17273961; pmid:29474918; pmid:30973967 ",
+    "Evidence detail": "PMID:17273961 identified the XDP-specific SVA insertion in TAF1 and reduced TAF1/DRD2 expression plus altered SVA methylation in XDP caudate. PMID:29474918 showed decreased cTAF1, SVA-proximal intron retention/aberrant splicing, and normalization after CRISPR/Cas9 SVA excision. PMID:30973967 provides clinical context only and does not add molecular regulatory evidence.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": null,
+    "publication_dates": ["2007-03-01", "2018-02-22", "2019-06-01"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:35868859",
+    "Evidence detail": "PMID:35868859 characterized eight iPSC lines from three heterozygous female XDP carriers with X-chromosome-inactivation clones expressing either the wild-type or XDP haplotype, providing non-patient carrier cell resources for modeling TAF1/SVA effects.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_date": "2022-07-21 00:00:00",
+    "publication_dates": ["2022-07-21"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:34250228",
+    "Evidence detail": "",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_date": "2021-08-01 00:00:00",
+    "publication_dates": ["2021-08-01"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 6.0,
     "Collective Evidence": 3,
+    "Statistics": 0,
     "Function": 2,
     "Functional Alteration": 0.5,
     "Models": 1.0,
-    "Singular Evidence": 6.0,
-    "Statistics": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 4.0,
     "Genetic Evidence": 9.5
   },
   "total_score": 13.5,
-  "classification": "Definitive",
-  "publication_count": 7,
-  "publication_interval_years": 5.34,
-  "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:30973967",
-      "Evidence detail": "PMID:30973967 enrolled 52 male patients with clinically and genetically confirmed XDP, typical X-linked family history, Panay maternal ancestry, and molecular confirmation of TAF1 haplotype variants; this supports affected-case ascertainment but is not a primary locus-discovery cohort.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_date": "2019-06-01 00:00:00"
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 2.0,
-      "Citation": "pmid:29229810; pmid:38835911; pmid:35395816",
-      "Evidence detail": "PMID:29229810 identified polymorphic (CCCTCT)n repeat length within the XDP-specific TAF1 SVA in 140 patients, with 35-52 repeats and a significant inverse correlation with age at onset. PMID:35395816 confirmed repeat-length associations with age at onset/death and showed repeat-length-dependent somatic expansion in blood and brain; PMID:38835911 summarizes repeat length and modifier effects on variable expressivity.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_date": null
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:29229810; pmid:7668293",
-      "Evidence detail": "PMID:7668293 found the same DXS7117/DXS7119 haplotype in 42/47 unrelated XDP patients and used linkage disequilibrium to localize DYT3 to Xq13.1. PMID:29229810 reports that affected individuals share the XDP founder haplotype containing the TAF1 SVA and that these variants were not found in ethnically matched or other controls.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_date": null
-    }
-  ],
-  "experimental_evidence_details": [
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:38834915",
-      "Evidence detail": "PMID:38834915 showed that the KRAB zinc-finger protein ZNF91 recognizes SVAs in neural progenitor cells and helps establish H3K9me3/DNA methylation over the polymorphic XDP SVA; this supports a transposon-regulatory protein interaction rather than a direct TAF1 protein-protein interaction.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2024-10-01 00:00:00"
-    },
-    {
-      "Evidence type": "Regulatory Impact",
-      "Score": 2.0,
-      "Citation": "pmid:17273961; pmid:29474918; pmid:30973967 ",
-      "Evidence detail": "PMID:17273961 identified the XDP-specific SVA insertion in TAF1 and reduced TAF1/DRD2 expression plus altered SVA methylation in XDP caudate. PMID:29474918 showed decreased cTAF1, SVA-proximal intron retention/aberrant splicing, and normalization after CRISPR/Cas9 SVA excision. PMID:30973967 provides clinical context only and does not add molecular regulatory evidence.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": null
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 0.5,
-      "Citation": "pmid:35868859",
-      "Evidence detail": "PMID:35868859 characterized eight iPSC lines from three heterozygous female XDP carriers with X-chromosome-inactivation clones expressing either the wild-type or XDP haplotype, providing non-patient carrier cell resources for modeling TAF1/SVA effects.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_date": "2022-07-21 00:00:00"
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 1.0,
-      "Citation": "pmid:34250228",
-      "Evidence detail": "",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_date": "2021-08-01 00:00:00"
-    }
-  ]
+  "publication_count": 10,
+  "publication_interval_years": 29.08,
+  "classification": "Definitive"
 },
 {
   "Disease_ID": "SCA17",
