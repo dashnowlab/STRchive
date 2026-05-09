@@ -5593,130 +5593,140 @@
   "Locus_ID": "CCD_RUNX2",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt, Elbay Aliyev",
-  "Date": "8/14/25",
+  "Date": "08/14/2025",
   "Description": "Cleidocranial dysplasia (CCD) is an autosomal dominant skeletal dysplasia caused by RUNX2 disruption. This curation focuses on the RUNX2 coding Q/A repeat region. Human repeat-specific evidence includes a Japanese sporadic CCD patient with a RUNX2 polyalanine expansion from 17A to 20A (+3Ala), a RUNX2/CBFA1 polyalanine expansion to 27 alanines segregating in family CCD-B with brachydactyly and minor CCD findings, and a familial RUNX2 polyglutamine insertion (27Q/17A; p.Q71_E72insQQQQ) in affected CCD individuals with reduced transactivation. Additional screening evidence reported low-range RUNX2 polyalanine expansions as secondary findings without reported CCD features, warranting curator review. Experimental evidence supports repeat-specific mechanisms involving RUNX2 Q/A repeat effects on coiled-coil structure, condensate behavior, aggregation/localization, co-activator partitioning, and transcriptional activity.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "category_summary": {
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:26220009",
+    "Evidence detail": "A Japanese sporadic CCD patient had a heterozygous RUNX2 c.181_189dupGCGGCGGCT variant, expanding the polyalanine tract from 17A to 20A (+3Ala), with severe short stature, cranial suture delay, dental abnormalities, mild brachydactyly, and mild clavicular hypoplasia.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_date": "2016-01-01 00:00:00",
+    "publication_dates": ["2016-01-01"]
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:40585427",
+    "Evidence detail": "",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_date": "2025-08-01 00:00:00",
+    "publication_dates": ["2025-08-01"]
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:9182765",
+    "Evidence detail": "Family CCD-B had an in-frame 30-bp RUNX2/CBFA1 polyalanine duplication expanding the tract from 17A to 27A, segregating with affected family members who had brachydactyly and minor clinical findings of CCD.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_date": "1997-05-30 00:00:00",
+    "publication_dates": ["1997-05-30"]
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.5,
+    "Citation": "pmid:25852448",
+    "Evidence detail": "RUNX2 contains a Q/A repeat domain with a wild-type 23Q/17A tract; the familial CCD variant expanded the glutamine tract to 27Q/17A (p.Q71_E72insQQQQ), consistent with repeat-slippage susceptibility of this locus.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_date": "2015-02-01 00:00:00",
+    "publication_dates": ["2015-02-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:32386547",
+    "Evidence detail": "RUNX2 is a RUNT-family transcription factor controlling bone morphogenesis; the RUNX2 repeat-containing IDR drove phase separation in optoDroplet assays and formed liquid-like droplets.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2020-05-28 00:00:00",
+    "publication_dates": ["2020-05-28"]
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 1.0,
+    "Citation": "pmid:24497578",
+    "Evidence detail": "RUNX2 polyQ/polyA repeat peptides formed alpha-helical coiled-coil structures in vitro, with polyalanine length and coiled-coil stability promoting higher-order assembly.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2014-07-01 00:00:00",
+    "publication_dates": ["2014-07-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 1.0,
+    "Citation": "pmid:32386547",
+    "Evidence detail": "The CCD-associated RUNX2 +10A alanine expansion enhanced homotypic phase separation, unblended from MED1 co-condensates, and significantly reduced IDR-driven luciferase reporter activity.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_date": "2020-05-28 00:00:00",
+    "publication_dates": ["2020-05-28"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:32386547",
+    "Evidence detail": "In HEK293T and U2OS non-patient cell systems, the RUNX2 +10A IDR showed altered condensate/aggregate behavior and reduced MED1 recruitment compared with wild type.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_date": "2020-05-28 00:00:00",
+    "publication_dates": ["2020-05-28"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:24497578",
+    "Evidence detail": "In HEK293 cells, polyA-expanded RUNX2(+12A) and coiled-coil-stabilized RUNX2 mutants mislocalized and aggregated; coiled-coil-disrupting mutations reduced aggregation and mislocalization.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_date": "2014-07-01 00:00:00",
+    "publication_dates": ["2014-07-01"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 6,
     "Collective Evidence": 1.5,
+    "Statistics": 0,
     "Function": 2,
     "Functional Alteration": 2.0,
-    "Singular Evidence": 6,
     "Models": 0,
-    "Statistics": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 4.5,
     "Genetic Evidence": 10.5
   },
   "total_score": 15.0,
-  "classification": "Definitive",
   "publication_count": 6,
   "publication_interval_years": 28.17,
-  "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 3.0,
-      "Citation": "pmid:26220009",
-      "Evidence detail": "A Japanese sporadic CCD patient had a heterozygous RUNX2 c.181_189dupGCGGCGGCT variant, expanding the polyalanine tract from 17A to 20A (+3Ala), with severe short stature, cranial suture delay, dental abnormalities, mild brachydactyly, and mild clavicular hypoplasia.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_date": "2016-01-01 00:00:00"
-    },
-    {
-      "Evidence type": "Probands",
-      "Score": 3.0,
-      "Citation": "pmid:40585427",
-      "Evidence detail": "",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_date": "2025-08-01 00:00:00"
-    },
-    {
-      "Evidence type": "Probands",
-      "Score": 3.0,
-      "Citation": "pmid:9182765",
-      "Evidence detail": "Family CCD-B had an in-frame 30-bp RUNX2/CBFA1 polyalanine duplication expanding the tract from 17A to 27A, segregating with affected family members who had brachydactyly and minor clinical findings of CCD.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_date": "1997-05-30 00:00:00"
-    },
-    {
-      "Evidence type": "Computational",
-      "Score": 1.5,
-      "Citation": "pmid:25852448",
-      "Evidence detail": "RUNX2 contains a Q/A repeat domain with a wild-type 23Q/17A tract; the familial CCD variant expanded the glutamine tract to 27Q/17A (p.Q71_E72insQQQQ), consistent with repeat-slippage susceptibility of this locus.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_date": "2015-02-01 00:00:00"
-    }
-  ],
-  "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:32386547",
-      "Evidence detail": "RUNX2 is a RUNT-family transcription factor controlling bone morphogenesis; the RUNX2 repeat-containing IDR drove phase separation in optoDroplet assays and formed liquid-like droplets.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2020-05-28 00:00:00"
-    },
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 1.0,
-      "Citation": "pmid:24497578",
-      "Evidence detail": "RUNX2 polyQ/polyA repeat peptides formed alpha-helical coiled-coil structures in vitro, with polyalanine length and coiled-coil stability promoting higher-order assembly.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2014-07-01 00:00:00"
-    },
-    {
-      "Evidence type": "Regulatory Impact",
-      "Score": 1.0,
-      "Citation": "pmid:32386547",
-      "Evidence detail": "The CCD-associated RUNX2 +10A alanine expansion enhanced homotypic phase separation, unblended from MED1 co-condensates, and significantly reduced IDR-driven luciferase reporter activity.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_date": "2020-05-28 00:00:00"
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:32386547",
-      "Evidence detail": "In HEK293T and U2OS non-patient cell systems, the RUNX2 +10A IDR showed altered condensate/aggregate behavior and reduced MED1 recruitment compared with wild type.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_date": "2020-05-28 00:00:00"
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:24497578",
-      "Evidence detail": "In HEK293 cells, polyA-expanded RUNX2(+12A) and coiled-coil-stabilized RUNX2 mutants mislocalized and aggregated; coiled-coil-disrupting mutations reduced aggregation and mislocalization.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_date": "2014-07-01 00:00:00"
-    }
-  ]
+  "classification": "Definitive"
 },
 {
   "Disease_ID": "FAME1",
