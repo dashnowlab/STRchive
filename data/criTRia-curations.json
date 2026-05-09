@@ -1,137 +1,5 @@
 [
 {
-  "Disease_ID": "CPUM",
-  "Gene": "TTYMS",
-  "Locus_ID": "CPUM_TYMS",
-  "Inheritance": "AR",
-  "Curator": "Macayla Weiner",
-  "Date": "08/14/2025",
-  "Description": "A GATGGT repeat in the TYMS gene was reported to cause congenital progressive melanosis (CPUM). This paper sequenced (WGS) two affected twins.",
-  "Source": "criTRia",
-  "SOP_version": "criTRia v0",
-  "Manual_evidence_level": null,
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 1.5,
-    "Citation": "pmid:40589716",
-    "Evidence detail": "Studied 2 siblings with inheritence evidence and expression information",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2014-09-04"]
-  }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Cell culture",
-    "Score": 0.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": "Evidence of effect of premutation alleles.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": "Changes in gene expression evident in affected patients",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  }],
-  "category_summary":
-  {
-    "Singular Evidence": 1.5
-    "Collective Evidence": 0,
-    "Statistics": 0,
-    "Function": 0.5,
-    "Functional Alteration": 0.5,
-    "Models": 0,
-    "Rescue": 0
-  },
-  "supercategory_summary":
-  {
-    "Experimental Evidence": 1,
-    "Genetic Evidence": 1.5
-  },
-  "total_score": 2.5,
-  "publication_count": 1,
-  "publication_interval_years": null,
-  "classification": "Limited"
-  },
-  {
-  "Disease_ID": "FRA7A",
-  "Gene": "ZNF13",
-  "Locus_ID": "FRA7A_ZNF13",
-  "Inheritance": "AD",
-  "Curator": "Laurel Hiatt, Macayla Weiner",
-  "Date": "08/18/2025",
-  "Description": "A GCG repeat was reported in patients of two families, one with a proband overexpressing FRA7A and one exhibitting the premutation allele.",
-  "Source": "criTRia",
-  "SOP_version": "criTRia v0",
-  "Manual_evidence_level": null,
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 1.5,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "Research studied two families, but only one proband with both ASD and FRA7A overexpression. The other proband expressed the premutation allele.",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2014-09-04"]
-  },
-  {
-    "Evidence type": "Case-Control data",
-    "Score": 2.0,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "Poorly matched controls and small power, but did find statistical significance.",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 12,
-    "publication_dates": ["2024-07-27"]
-  }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Regulatory Impact",
-    "Score": 0.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": "Evidence of effect of premutation alleles.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  }],
-  "category_summary":
-  {
-    "Singular Evidence": 1.5,
-    "Collective Evidence": 0,
-    "Statistics": 2,
-    "Function": 0.5,
-    "Functional Alteration": 0,
-    "Models": 0,
-    "Rescue": 0
-  },
-  "supercategory_summary":
-  {
-    "Experimental Evidence": 0.5,
-    "Genetic Evidence": 3.5
-  },
-  "total_score": 4,
-  "publication_count": 1,
-  "publication_interval_years": null,
-  "classification": "Limited"
-  },
-  {
   "Disease_ID": "OPDM5",
   "Gene": "ABCD3",
   "Locus_ID": "OPDM5_ABCD3",
@@ -6684,6 +6552,72 @@
   "classification": "Limited"
 },
 {
+  "Disease_ID": "CPUM",
+  "Gene": "TTYMS",
+  "Locus_ID": "CPUM_TYMS",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner",
+  "Date": "08/14/2025",
+  "Description": "A GATGGT repeat in the TYMS gene was reported to cause congenital progressive melanosis (CPUM). This paper sequenced (WGS) two affected twins.",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:40589716",
+    "Evidence detail": "Studied 2 siblings with inheritence evidence and expression information",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2014-09-04"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Cell culture",
+    "Score": 0.5,
+    "Citation": "pmid:24763282",
+    "Evidence detail": "Evidence of effect of premutation alleles.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2014-04-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:24763282",
+    "Evidence detail": "Changes in gene expression evident in affected patients",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2014-04-01"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 1.5,
+    "Collective Evidence": 0,
+    "Statistics": 0,
+    "Function": 1.0,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.0,
+    "Genetic Evidence": 1.5
+  },
+  "total_score": 2.5,
+  "publication_count": 2,
+  "publication_interval_years": 0.43,
+  "classification": "Limited"
+},
+{
   "Disease_ID": "HMNR7",
   "Gene": "VWA1",
   "Locus_ID": "HMNR7_VWA1",
@@ -7187,6 +7121,72 @@
   "total_score": 3.5,
   "publication_count": 2,
   "publication_interval_years": 10.42,
+  "classification": "Limited"
+},
+{
+  "Disease_ID": "FRA7A",
+  "Gene": "ZNF13",
+  "Locus_ID": "FRA7A_ZNF13",
+  "Inheritance": "AD",
+  "Curator": "Laurel Hiatt, Macayla Weiner",
+  "Date": "08/18/2025",
+  "Description": "A GCG repeat was reported in patients of two families, one with a proband overexpressing FRA7A and one exhibitting the premutation allele.",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:39068203",
+    "Evidence detail": "Research studied two families, but only one proband with both ASD and FRA7A overexpression. The other proband expressed the premutation allele.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2014-09-04"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 2.0,
+    "Citation": "pmid:39068203",
+    "Evidence detail": "Poorly matched controls and small power, but did find statistical significance.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 12,
+    "publication_dates": ["2024-07-27"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:24763282",
+    "Evidence detail": "Evidence of effect of premutation alleles.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2014-04-01"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 1.5,
+    "Collective Evidence": 2.0,
+    "Statistics": 0,
+    "Function": 0.5,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 0.5,
+    "Genetic Evidence": 3.5
+  },
+  "total_score": 4.0,
+  "publication_count": 2,
+  "publication_interval_years": 10.32,
   "classification": "Limited"
 },
 {
