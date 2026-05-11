@@ -38,7 +38,8 @@ def flatten_curation(curation):
     
     # Direct fields
     for key in ['Disease_ID', 'Gene', 'Locus_ID', 'Inheritance', 'Curator', 'Date', 
-                'Description', 'Source', 'SOP_version',
+                #'Description', 
+                'Source', 'SOP_version',
                 'total_score', 'publication_count', 'publication_interval_years', 'classification']:
         flat[key] = curation.get(key)
     
@@ -80,7 +81,7 @@ def curations_to_tsv(json_file, tsv_file):
 
     # Write TSV
     with open(tsv_file, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t', lineterminator='\n')
         writer.writeheader()
         writer.writerows(flattened)
     
