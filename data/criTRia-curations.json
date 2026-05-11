@@ -1722,69 +1722,83 @@
   "Inheritance": "AD",
   "Curator": "Macayla, Laurel",
   "Date": "08/12/2025",
-  "Description": null,
+  "Description": "Jacobsen syndrome (JBS) is a contiguous-gene disorder caused by partial deletion of the distal long arm of chromosome 11. The FRA11B CCG repeat/fragile site at 11q23.3, located at the 5' end/immediately upstream of CBL/CBL2, has been implicated as a breakage-prone locus in a subset of JBS cases. The uploaded evidence supports a mechanism in which CCG repeat expansion and associated fragile-site instability can lead to downstream 11q deletion, rather than a CBL coding-variant mechanism.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:7603564",
-    "Evidence detail": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["1995-07-13"]
-  },
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:7887422; pmid:10767345",
-    "Evidence detail": "5 patients; 24",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["1995-03-01", "2000-05-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:7603564",
+      "Evidence detail": "PMID:7603564 reported two Jacobsen syndrome cases/families in which the deleted 11q chromosome derived from a chromosome carrying an expanded CBL2 p(CCG)n/FRA11B allele; the chromosome truncation occurred close to FRA11B.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "1995-07-13"
+      ]
+    },
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:7887422; pmid:10767345",
+      "Evidence detail": "PMID:7887422 studied 17 individuals with de novo terminal 11q deletions; eight patients with the largest 11q23.3-to-11qter deletions had breakpoints between D11S924 and D11S1341, a region related to FRA11B. PMID:10767345 collated deletion mapping from 24 Jacobsen patients and additional cases, showing non-random co-localization of mapped deletion breakpoints with CCG-repeat-containing YAC/PAC clones in distal 11q.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "1995-03-01",
+        "2000-05-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:7603564",
-    "Evidence detail": "transc reg",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1995-07-13"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.0,
-    "Citation": "pmid:7603564; pmid:10767345",
-    "Evidence detail": "expression + hypermethylation",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1995-07-13", "2000-05-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:7603564; pmid:10767345",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1995-07-13", "2000-05-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:7603564",
+      "Evidence detail": "PMID:7603564 localized FRA11B to the CBL2 p(CCG)n repeat by FISH and Southern/PCR analyses, supporting a locus-specific fragile-site/chromosome-breakage mechanism rather than CBL protein biochemical function.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1995-07-13"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 1.0,
+      "Citation": "pmid:7603564; pmid:10767345",
+      "Evidence detail": "PMID:7603564 showed expansion of the CBL2 p(CCG)n repeat in FRA11B-expressing chromosomes and methylation of the adjacent CBL2 CpG island when repeat length exceeded fragile-site thresholds. PMID:10767345 supports CCG-repeat expansion/hypermethylation and replication-delay/secondary-structure mechanisms as contributors to chromosome breakage.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1995-07-13",
+        "2000-05-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:7603564; pmid:10767345",
+      "Evidence detail": "PMID:7603564 used patient/family-derived blood lymphocytes and an EBV-transformed cell line from a FRA11B-expressing individual to demonstrate CBL2 p(CCG)n expansion, adjacent CpG methylation, and 11q deletion breakpoint localization near FRA11B; PMID:10767345 further mapped JBS breakpoints in patient-derived material to CCG-repeat-containing clones.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1995-07-13",
+        "2000-05-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6,
     "Collective Evidence": 0,
     "Statistics": 0,
@@ -1793,8 +1807,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.5,
     "Genetic Evidence": 12.0
   },
