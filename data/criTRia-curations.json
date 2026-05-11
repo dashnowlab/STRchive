@@ -5975,7 +5975,7 @@
     "publication_dates": ["2007-03-01", "2018-02-22", "2019-06-01"]
   },
   {
-    "Evidence type": "Non-patient cells",
+    "Evidence type": "Patient cells",
     "Score": 0.5,
     "Citation": "pmid:35868859",
     "Evidence detail": "PMID:35868859 characterized eight iPSC lines from three heterozygous female XDP carriers with X-chromosome-inactivation clones expressing either the wild-type or XDP haplotype, providing non-patient carrier cell resources for modeling TAF1/SVA effects.",
@@ -5986,10 +5986,10 @@
     "publication_dates": ["2022-07-21"]
   },
   {
-    "Evidence type": "Non-human model organism",
+    "Evidence type": "Patient cells",
     "Score": 1.0,
     "Citation": "pmid:34250228",
-    "Evidence detail": "",
+    "Evidence detail": "Repeat sizing and somatic instability in human postmortem brain tissues from two XDP patients showed higher median repeat numbers and higher degrees of repeat instability in the basal ganglia and cerebellum compared with blood.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
