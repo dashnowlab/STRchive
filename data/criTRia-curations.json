@@ -127,113 +127,132 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/12/2025",
-  "Description": null,
+  "Description": "A GCC/CGG repeat expansion in an alternative promoter/intronic 5′ region of AFF3 causes the FRA2A folate-sensitive fragile site and is associated with autosomal dominant intellectual disability/developmental delay. The original FRA2A study identified expanded mosaic CGG alleles with promoter hypermethylation and monoallelic AFF3 silencing in carrier families, while a later population-scale study found AFF3 expansions enriched in unsolved ID probands, supported by long-read trio data, methylation, PheWAS associations, and population/control comparisons.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 2.0,
-    "Citation": "pmid:39313615",
-    "Evidence detail": "2 probands ",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2024-11-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:39313615",
-    "Evidence detail": "not explicit to disease",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2024-11-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 4.0,
-    "Citation": "pmid:39313615",
-    "Evidence detail": "Not great matching",
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2024-11-01"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:39313615",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2024-11-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 2.0,
+      "Citation": "pmid:39313615",
+      "Evidence detail": "Two probands with intellectual disability underwent PacBio HiFi trio sequencing, confirming heterozygous expanded AFF3 GCC alleles (157 and 822 copies) inherited from a carrier parent with methylation and size changes on transmission.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2024-11-01"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:39313615",
+      "Evidence detail": "Two trios showed transmission of the expanded AFF3 allele from a carrier parent to an affected proband; one maternal allele expanded from 133 to 822 copies and one paternal allele contracted from 424 to 157 copies, consistent with incomplete penetrance.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2024-11-01"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 4.0,
+      "Citation": "pmid:39313615",
+      "Evidence detail": "In 100kGP, long AFF3 alleles were enriched in 6,371 unsolved ID probands versus 8,794 ancestry-matched controls, with peak enrichment for alleles ≥61 copies (P=0.002; OR=3.9); 17/6,371 unsolved probands had ≥60-copy alleles versus 0/1,500 ID probands with other pathogenic findings.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2024-11-01"
+      ]
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 0.5,
+      "Citation": "pmid:39313615",
+      "Evidence detail": "Computational genotyping and association analyses linked the AFF3 GCC expansion to neurodevelopmental traits: ExpansionHunter identified long alleles, PheWAS associated expansions with reduced educational attainment, and local SNVs tagging the expansion overlapped GWAS signals for intelligence/cognitive ability.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2024-11-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:24763282",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 0.5,
-    "Citation": "pmid:24763282",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2014-04-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:24763282",
+      "Evidence detail": "Gene-level evidence: AFF3 is an AFF-family nuclear transcription-activating factor that forms super elongation complexes with active P-TEFb and AF9/ENL; the cited study did not directly test altered protein interactions caused by the FRA2A repeat.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 1.5,
+      "Citation": "pmid:24763282",
+      "Evidence detail": "The FRA2A CGG expansion lies in a brain-active alternative AFF3 promoter and is associated with local CpG hypermethylation and monoallelic AFF3 expression/silencing in carriers.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:24763282",
+      "Evidence detail": "Patient-derived blood/lymphoblastoid material from FRA2A carriers showed expanded AFF3 CGG alleles with promoter hypermethylation; cSNP analysis in carrier BII.1 demonstrated monoallelic AFF3 expression.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:24763282",
+      "Evidence detail": "Non-patient controls showed normal-range AFF3 CGG alleles and no methylation above threshold in control family samples, supporting that hypermethylation was specific to expansion carriers; this was comparator/control-cell evidence rather than an engineered expansion model.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 0.5,
+      "Citation": "pmid:24763282",
+      "Evidence detail": "Gene-level model evidence: whole-mount in situ hybridization showed mouse Aff3 expression in developing brain, somites, limb buds and palate; no non-human FRA2A repeat-expansion model was reported.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_dates": [
+        "2014-04-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 2.0,
     "Collective Evidence": 2.0,
     "Statistics": 4.0,
@@ -242,8 +261,7 @@
     "Models": 0.5,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 4.0,
     "Genetic Evidence": 8.0
   },
