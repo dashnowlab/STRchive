@@ -6765,75 +6765,64 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 1.5,
-      "Citation": "pmid:31539032",
-      "Evidence detail": "One Thai BAFME4 family/proband: long-read sequencing identified an intronic YEATS2 (TTTTA)n expansion with TTTCA insertion; RP-PCR and long-range PCR confirmed expanded alleles in affected family members, with TTTCA absent from unaffected relatives and 1116 Thai controls.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2019-11-01"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:22713812",
-      "Evidence detail": "Genome-wide linkage in a Thai autosomal dominant BAFME family with 13 affected members mapped disease to chromosome 3q26.32-q28; D3S1262 had maximum two-point LOD 5.419 at θ=0, refined to a 10 Mb interval between D3S3730 and D3S1580.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2013-02-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:31539032",
+    "Evidence detail": "One Thai BAFME4 family/proband: long-read sequencing identified an intronic YEATS2 (TTTTA)n expansion with TTTCA insertion; RP-PCR and long-range PCR confirmed expanded alleles in affected family members, with TTTCA absent from unaffected relatives and 1116 Thai controls.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2019-11-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:22713812",
+    "Evidence detail": "Genome-wide linkage in a Thai autosomal dominant BAFME family with 13 affected members mapped disease to chromosome 3q26.32-q28; D3S1262 had maximum two-point LOD 5.419 at θ=0, refined to a 10 Mb interval between D3S3730 and D3S1580.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2013-02-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:38128822",
-      "Evidence detail": "Gene-level evidence: pan-neuronal dYEATS2 knockdown in Drosophila reduced dopamine content and lowered tyrosine hydroxylase transcript/protein levels, supporting a role for YEATS2 in dopamine biosynthesis; the human repeat expansion was not directly modeled.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:38128822",
-      "Evidence detail": "Gene-level expression evidence: dYEATS2 knockdown altered dopaminergic pathway expression markers, including reduced tyrosine hydroxylase and changes in vMAT/D2R; the study did not directly test regulatory effects of the human intronic TTTTA/TTTCA expansion.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:38128822",
-      "Evidence detail": "Drosophila pan-neuronal dYEATS2 knockdown caused seizure-like behaviours after electric, thermal, and mechanical stress, with locomotor/social/exploratory deficits; L-DOPA improved seizure-like and exploratory phenotypes. This models YEATS2 loss of function, not the human repeat expansion.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:38128822",
+    "Evidence detail": "Gene-level evidence: pan-neuronal dYEATS2 knockdown in Drosophila reduced dopamine content and lowered tyrosine hydroxylase transcript/protein levels, supporting a role for YEATS2 in dopamine biosynthesis; the human repeat expansion was not directly modeled.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-02-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:38128822",
+    "Evidence detail": "Gene-level expression evidence: dYEATS2 knockdown altered dopaminergic pathway expression markers, including reduced tyrosine hydroxylase and changes in vMAT/D2R; the study did not directly test regulatory effects of the human intronic TTTTA/TTTCA expansion.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-02-01"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:38128822",
+    "Evidence detail": "Drosophila pan-neuronal dYEATS2 knockdown caused seizure-like behaviours after electric, thermal, and mechanical stress, with locomotor/social/exploratory deficits; L-DOPA improved seizure-like and exploratory phenotypes. This models YEATS2 loss of function, not the human repeat expansion.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2024-02-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 1.5,
     "Collective Evidence": 1.5,
     "Statistics": 0,
@@ -6842,7 +6831,8 @@
     "Models": 2.0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 3.0,
     "Genetic Evidence": 3.0
   },
