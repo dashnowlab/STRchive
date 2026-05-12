@@ -5608,19 +5608,17 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": "2016-01-01 00:00:00",
     "publication_dates": ["2016-01-01"]
   },
   {
     "Evidence type": "Probands",
-    "Score": 3.0,
+    "Score": 0.0,
     "Citation": "pmid:40585427",
-    "Evidence detail": "",
+    "Evidence detail": "PMID:40585427 reports RUNX2 GCN/polyalanine expansions as secondary findings detected during reanalysis of WES/WGS data from neurologic probands. Using a pathogenic threshold of 20, the authors identified 3 probands with polyalanine expansions in RUNX2 with the lengths of 23, 21, and 20 repeats. The 21-repeat expansion was also verified in the proband's healthy mother. None of the probands or the healthy mother had reported CCD-related phenotype. The authors suggest incomplete penetrance within the low pathogenic range or the possibility that the pathogenic range may be longer than 23 repeats.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": "2025-08-01 00:00:00",
     "publication_dates": ["2025-08-01"]
   },
   {
@@ -5632,7 +5630,6 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_date": "1997-05-30 00:00:00",
     "publication_dates": ["1997-05-30"]
   },
   {
@@ -5644,7 +5641,6 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_date": "2015-02-01 00:00:00",
     "publication_dates": ["2015-02-01"]
   }],
   "experimental_evidence_details": [
@@ -5657,7 +5653,6 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": "2020-05-28 00:00:00",
     "publication_dates": ["2020-05-28"]
   },
   {
@@ -5669,7 +5664,6 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": "2014-07-01 00:00:00",
     "publication_dates": ["2014-07-01"]
   },
   {
@@ -5681,7 +5675,6 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_date": "2020-05-28 00:00:00",
     "publication_dates": ["2020-05-28"]
   },
   {
@@ -5693,7 +5686,6 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": "2020-05-28 00:00:00",
     "publication_dates": ["2020-05-28"]
   },
   {
@@ -5705,7 +5697,6 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_date": "2014-07-01 00:00:00",
     "publication_dates": ["2014-07-01"]
   }],
   "category_summary":
