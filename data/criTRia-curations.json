@@ -297,155 +297,130 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Definitive",
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:21204215",
-      "Evidence detail": "Screened 98 unrelated patients with mental retardation plus infantile epilepsy and/or hand dystonia; ARX polyalanine expansions were identified in four familial cases, including c.333_334ins(GCG)7 in a male with severe MR, West syndrome, spasticity, dystonia, dyskinesia, and affected relatives.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2011-01-01"
-      ]
-    },
-    {
-      "Evidence type": "Probands",
-      "Score": 3.0,
-      "Citation": "pmid:9307258",
-      "Evidence detail": "Two unrelated X-linked infantile spasms/West syndrome families with multiple affected males showing infantile spasms or seizures, hypsarrhythmia, and severe/profound developmental impairment; the study mapped the disease interval to Xp11.4-Xpter before ARX was identified, so this is linkage-level rather than ARX repeat-specific proband evidence.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "1997-09-01"
-      ]
-    },
-    {
-      "Evidence type": "Probands",
-      "Score": null,
-      "Citation": "pmid:12874418",
-      "Evidence detail": "One of eight patients with sporadic cryptogenic West syndrome carried a de novo hemizygous ARX exon 2 c.441_464dup 24-bp duplication expanding the second polyalanine tract from 12 to 20 alanines; the paper also notes prior reports of the same mutation in 57 patients from 12 families.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2003-07-22"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:9307258",
-      "Evidence detail": "In two X-linked infantile spasms families, markers DXS336, DXS333, DXS389, and DMD43 were completely linked with disease; combined linkage gave maximal LOD 2.357 for DXS989 and DMD49 at recombination fraction 0.0 and multipoint LOD 2.36 across Xpter-Xp11.4. This predates ARX identification and is not repeat-specific.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "1997-09-01"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 1.0,
-      "Citation": "pmid:11889467",
-      "Evidence detail": "ARX polyalanine expansion size/location was associated with phenotype: the first tract expansion from 16 to 23 alanines ((GCG)10+7) was reported in ISSX/West syndrome families, while a second tract expansion from 12 to 20 alanines occurred across X-linked MR/epilepsy/Partington phenotypes; expansions were absent from >300 control chromosomes.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2002-04-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:21204215",
+    "Evidence detail": "Screened 98 unrelated patients with mental retardation plus infantile epilepsy and/or hand dystonia; ARX polyalanine expansions were identified in four familial cases, including c.333_334ins(GCG)7 in a male with severe MR, West syndrome, spasticity, dystonia, dyskinesia, and affected relatives.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2011-01-01"]
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:9307258",
+    "Evidence detail": "Two unrelated X-linked infantile spasms/West syndrome families with multiple affected males showing infantile spasms or seizures, hypsarrhythmia, and severe/profound developmental impairment; the study mapped the disease interval to Xp11.4-Xpter before ARX was identified, so this is linkage-level rather than ARX repeat-specific proband evidence.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["1997-09-01"]
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": null,
+    "Citation": "pmid:12874418",
+    "Evidence detail": "One of eight patients with sporadic cryptogenic West syndrome carried a de novo hemizygous ARX exon 2 c.441_464dup 24-bp duplication expanding the second polyalanine tract from 12 to 20 alanines; the paper also notes prior reports of the same mutation in 57 patients from 12 families.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2003-07-22"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:9307258",
+    "Evidence detail": "In two X-linked infantile spasms families, markers DXS336, DXS333, DXS389, and DMD43 were completely linked with disease; combined linkage gave maximal LOD 2.357 for DXS989 and DMD49 at recombination fraction 0.0 and multipoint LOD 2.36 across Xpter-Xp11.4. This predates ARX identification and is not repeat-specific.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["1997-09-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:11889467",
+    "Evidence detail": "ARX polyalanine expansion size/location was associated with phenotype: the first tract expansion from 16 to 23 alanines ((GCG)10+7) was reported in ISSX/West syndrome families, while a second tract expansion from 12 to 20 alanines occurred across X-linked MR/epilepsy/Partington phenotypes; expansions were absent from >300 control chromosomes.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2002-04-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:26029707",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2015-05-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 0.5,
-      "Citation": "pmid:12874418",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2003-07-22"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:19587282; pmid:11889467",
-      "Evidence detail": "PMID:19587282 generated a viable Arx(GCG)10+7 knock-in mouse model matching the human first polyalanine tract expansion, with infantile spasm-like myoclonus, persistent seizures/EEG abnormalities, cognitive and behavioral impairment, and reduced calbindin/NPY/cholinergic interneuron populations. PMID:11889467 provides gene-level mouse/zebrafish ortholog expression context, not an independent disease model.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2009-07-08",
-        "2002-04-01"
-      ]
-    },
-    {
-      "Evidence type": "Rescue in cell culture",
-      "Score": 0.5,
-      "Citation": "pmid:17460091",
-      "Evidence detail": "",
-      "evidence_category": "Rescue",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2007-04-25"
-      ]
-    },
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:11889467",
-      "Evidence detail": "Gene-level evidence: ARX encodes a paired-class homeodomain transcription factor with conserved homeodomain, OAR/aristaless domain, and octapeptide motif speculated to mediate transcriptional repression; the study does not directly test repeat-specific biochemical function.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2002-04-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:12874418; pmid:11889467",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2003-07-22",
-        "2002-04-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:26029707",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2015-05-01"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:12874418",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_dates": ["2003-07-22"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:19587282; pmid:11889467",
+    "Evidence detail": "PMID:19587282 generated a viable Arx(GCG)10+7 knock-in mouse model matching the human first polyalanine tract expansion, with infantile spasm-like myoclonus, persistent seizures/EEG abnormalities, cognitive and behavioral impairment, and reduced calbindin/NPY/cholinergic interneuron populations. PMID:11889467 provides gene-level mouse/zebrafish ortholog expression context, not an independent disease model.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2009-07-08", "2002-04-01"]
+  },
+  {
+    "Evidence type": "Rescue in cell culture",
+    "Score": 0.5,
+    "Citation": "pmid:17460091",
+    "Evidence detail": "",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2007-04-25"]
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:11889467",
+    "Evidence detail": "Gene-level evidence: ARX encodes a paired-class homeodomain transcription factor with conserved homeodomain, OAR/aristaless domain, and octapeptide motif speculated to mediate transcriptional repression; the study does not directly test repeat-specific biochemical function.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2002-04-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:12874418; pmid:11889467",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2003-07-22", "2002-04-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6,
     "Collective Evidence": 2.5,
     "Statistics": 0,
@@ -454,7 +429,8 @@
     "Models": 2.0,
     "Rescue": 0.5
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 5.0,
     "Genetic Evidence": 11.5
   },
