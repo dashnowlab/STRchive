@@ -7117,35 +7117,31 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 3,
-      "Citation": "pmid:25196122",
-      "Evidence detail": "Two unrelated ASD families were described: Family 7,792 had one male proband with a maternally derived FRA7A full CGG expansion (>450 repeats), CpG methylation, and reduced ZNF713 expression; Family TCAG0070 had three affected siblings carrying paternal FRA7A premutation alleles with partial/mosaic methylation, mitotic instability in one sibling, and ZNF713 dysregulation.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2014-11-01"
-      ]
-    },
-    {
-      "Evidence type": "Case-control data",
-      "Score": 4,
-      "Citation": "pmid:25196122",
-      "Evidence detail": "PCR sizing of 176 controls showed 14 normal alleles (5–22 CGG repeats) and no premutation-range alleles; no additional FRA7A cases were detected in >9,000 neurodevelopmental cytogenetic analyses. Controls were not phenotype-matched and the PCR assay could miss heterozygous full expansions, so support is imperfect.",
-      "evidence_category": "Statistics",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 12,
-      "category_max_score": 12,
-      "publication_dates": [
-        "2014-11-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 3,
+    "Citation": "pmid:25196122",
+    "Evidence detail": "Two unrelated ASD families were described: Family 7,792 had one male proband with a maternally derived FRA7A full CGG expansion (>450 repeats), CpG methylation, and reduced ZNF713 expression; Family TCAG0070 had three affected siblings carrying paternal FRA7A premutation alleles with partial/mosaic methylation, mitotic instability in one sibling, and ZNF713 dysregulation.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2014-11-01"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 4,
+    "Citation": "pmid:25196122",
+    "Evidence detail": "PCR sizing of 176 controls showed 14 normal alleles (5–22 CGG repeats) and no premutation-range alleles; no additional FRA7A cases were detected in >9,000 neurodevelopmental cytogenetic analyses. Controls were not phenotype-matched and the PCR assay could miss heterozygous full expansions, so support is imperfect.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2014-11-01"]
+  }],
   "experimental_evidence_details": [],
-  "category_summary": {
+  "category_summary":
+  {
     "Singular Evidence": 3,
     "Collective Evidence": 0,
     "Statistics": 4,
@@ -7154,7 +7150,8 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Genetic Evidence": 7,
     "Experimental Evidence": 0
   },
