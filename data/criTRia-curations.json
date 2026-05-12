@@ -6503,47 +6503,54 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/14/2025",
-  "Description": null,
+  "Description": "FAME6/BAFME6 is an autosomal dominant familial adult myoclonic epilepsy phenotype associated with noncoding TTTCA and TTTTA repeat expansions in TNRC6A. PMID:29507423 identified TNRC6A expansions in one BAFME family (F9283), confirmed the repeat configuration by RP-PCR and Southern blot, and reported co-segregation in five affected individuals and one unaffected individual. TTTCA-repeat expansions in TNRC6A were absent from 1,000 control subjects, while TTTTA-only expansions were observed rarely in controls, supporting the TTTCA-containing expanded allele as the disease-relevant motif.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 1.5,
-    "Citation": "pmid:29507423",
-    "Evidence detail": "1.0",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2018-04-01"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 1.0,
-    "Citation": "pmid:29507423",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2018-04-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 1.5,
+      "Citation": "pmid:29507423",
+      "Evidence detail": "One unrelated BAFME6 family (F9283) with five affected individuals carried TNRC6A TTTCA/TTTTA repeat expansions; the expanded allele was validated by RP-PCR and Southern blot and co-segregated with disease.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2018-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 1.0,
+      "Citation": "pmid:29507423",
+      "Evidence detail": "TNRC6A TTTCA-repeat expansions were absent in 1,000 controls and in patients with SAMD12 expansions; TTTTA-only expansions occurred rarely in controls, supporting the TTTCA-containing expanded motif as disease-relevant.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2018-04-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:29507423",
-    "Evidence detail": "issue specific expression data in supplementary, \"control brains\"",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2018-04-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:29507423",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2018-04-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 1.5,
     "Collective Evidence": 1.0,
     "Statistics": 0,
@@ -6552,8 +6559,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 0.5,
     "Genetic Evidence": 2.5
   },
@@ -6561,7 +6567,8 @@
   "publication_count": 1,
   "publication_interval_years": null,
   "classification": "Limited"
-},
+}
+,
 {
   "Disease_ID": "HMNR7",
   "Gene": "VWA1",
