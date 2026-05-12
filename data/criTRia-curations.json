@@ -5830,74 +5830,64 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:31664034",
-      "Evidence detail": "Twenty-two FAME2 pedigrees were investigated; 158 affected individuals tested positive for the intronic STARD7 ATTTC expansion by RP-PCR, including 137/137 affected individuals from 16 previously reported chromosome 2-linked families and 20/20 familial clinically similar cases.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2019-10-29"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 1.0,
-      "Citation": "pmid:31664034",
-      "Evidence detail": "Long-read sequencing resolved expanded STARD7 repeat structures in affected individuals, including combined AAATG/AAAAT insertions of ~3.3\u20134.6 kb, and Family 1 showed anticipation with median onset decreasing from generation III (30 years) to IV (17 years) to V (12 years).",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2019-10-29"
-      ]
-    },
-    {
-      "Evidence type": "Computational",
-      "Score": 0.5,
-      "Citation": "pmid:31664034",
-      "Evidence detail": "Short-read WGS analysis with ExpansionHunter and exSTRa identified ATTTT/ATTTC repeat expansions in the FAME2 interval in affected samples; all FAME2 carriers were significant exSTRa outliers at the FAME2-AAATG locus (p < 0.0001) compared with 69 unaffected WGS controls.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2019-10-29"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:31664034",
-      "Evidence detail": "RP-PCR showed the STARD7 ATTTC expansion segregated with FAME in 158/158 affected individuals across 22 families; 24 unaffected relatives were negative, and two expansion-positive individuals without a FAME diagnosis were from younger generations and considered likely presymptomatic.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2019-10-29"
-      ]
-    },
-    {
-      "Evidence type": "Case-control data",
-      "Score": 6.0,
-      "Citation": "pmid:31664034",
-      "Evidence detail": "The ATTTC repeat was absent from WGS data for 69 controls and did not amplify in 28 unaffected unrelated control DNA samples; among family testing, 158 affected individuals were expansion-positive and no affected individuals were expansion-negative.",
-      "evidence_category": "Statistics",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 12,
-      "category_max_score": 12,
-      "publication_dates": [
-        "2019-10-29"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:31664034",
+    "Evidence detail": "Twenty-two FAME2 pedigrees were investigated; 158 affected individuals tested positive for the intronic STARD7 ATTTC expansion by RP-PCR, including 137/137 affected individuals from 16 previously reported chromosome 2-linked families and 20/20 familial clinically similar cases.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2019-10-29"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:31664034",
+    "Evidence detail": "Long-read sequencing resolved expanded STARD7 repeat structures in affected individuals, including combined AAATG/AAAAT insertions of ~3.3–4.6 kb, and Family 1 showed anticipation with median onset decreasing from generation III (30 years) to IV (17 years) to V (12 years).",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2019-10-29"]
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:31664034",
+    "Evidence detail": "Short-read WGS analysis with ExpansionHunter and exSTRa identified ATTTT/ATTTC repeat expansions in the FAME2 interval in affected samples; all FAME2 carriers were significant exSTRa outliers at the FAME2-AAATG locus (p < 0.0001) compared with 69 unaffected WGS controls.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2019-10-29"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31664034",
+    "Evidence detail": "RP-PCR showed the STARD7 ATTTC expansion segregated with FAME in 158/158 affected individuals across 22 families; 24 unaffected relatives were negative, and two expansion-positive individuals without a FAME diagnosis were from younger generations and considered likely presymptomatic.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2019-10-29"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:31664034",
+    "Evidence detail": "The ATTTC repeat was absent from WGS data for 69 controls and did not amplify in 28 unaffected unrelated control DNA samples; among family testing, 158 affected individuals were expansion-positive and no affected individuals were expansion-negative.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2019-10-29"]
+  }],
   "experimental_evidence_details": [],
-  "category_summary": {
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 3.0,
     "Statistics": 6.0,
@@ -5906,7 +5896,8 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Genetic Evidence": 12,
     "Experimental Evidence": 0
   },
@@ -5914,8 +5905,7 @@
   "publication_count": 1,
   "publication_interval_years": null,
   "classification": "Strong"
-}
-,
+},
 {
   "Disease_ID": "XDP",
   "Gene": "TAF1",
