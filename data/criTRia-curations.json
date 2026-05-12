@@ -3753,135 +3753,158 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/12/2025",
-  "Description": null,
+  "Description": "Autosomal dominant familial adult myoclonic epilepsy type 3 (FAME3) is associated with an intronic TTTTA/TTTCA repeat expansion in MARCH6/MARCHF6 on chromosome 5p15.2. The expansion was identified by genome sequencing and repeat-primed PCR in four European families with cortical/myoclonic tremor and epilepsy, co-segregated with disease, and was absent from controls in the reported analyses. Expansion length, particularly the TTTCA component, inversely correlated with age at seizure onset. Patient-derived blood cells and fibroblasts showed marked somatic instability and expansion-size variability.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 1.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": "4 families",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 1.0,
-    "Citation": "pmid:31664039",
-    "Evidence detail": "Association between onset and allele size",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": "est. LOD over 5",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:31664039",
-    "Evidence detail": null,
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2019-10-29"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 1.5,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "MARCH6/MARCHF6 intronic TTTTA/TTTCA expansions identified in four European FAME families (two French, one Dutch, one German) using genome sequencing and RP-PCR.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 1.0,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "Expansion length, mainly the TTTCA component, inversely correlated with age at seizure onset; no significant correlation was observed with tremor onset.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "The MARCH6 expansion co-segregated with FAME in the reported families, including Dutch Family 3 where an incompletely segregating CTNND2 variant was reclassified as likely benign.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 0.5,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "ExpansionHunter detected TTTCA-containing reads at the MARCH6 intron 1 locus, with concordant support from exSTRa, STRetch, and TRhist; RP-PCR confirmed 5-TTTTA and 3-TTTCA expanded motifs.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 6.0,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "MARCH6 expansions were identified in affected FAME families, while 83 European controls showed only 9-20 TTTTA repeats and no larger or TTTCA-containing alleles.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:19616813",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2009-10-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:19616813",
-    "Evidence detail": "Expression",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2009-10-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": "Varied expression in patients + splicing",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:31664039",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:12140665",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2002-07-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:19616813",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2009-10-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:19616813",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2009-10-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "RNA-seq and qRT-PCR in expansion-carrier blood cells and fibroblasts found no detectable change in MARCH6 RNA or protein levels and no massive intron 1 retention/splicing abnormality.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "Patient-derived blood cells and fibroblasts showed extensive somatic instability, multiple expansion configurations, and micro-rearrangements in individuals with the largest MARCH6 expansions.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:31664039",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2019-10-29"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:12140665",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2002-07-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 1.5,
     "Collective Evidence": 3.0,
     "Statistics": 6.0,
@@ -3890,8 +3913,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 4.0,
     "Genetic Evidence": 10.5
   },
