@@ -5423,36 +5423,31 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 2,
-      "Citation": "pmid:30351492; pmid:29507423",
-      "Evidence detail": "Two unrelated autosomal dominant FAME/BAFME/FCMTE families with RAPGEF2 intronic TTTCA repeat expansions: Japanese family F8241 with one affected proband confirmed by WGS, RP-PCR and Southern blot, and Chinese family 3 with three affected individuals carrying ~60 TTTCA repeats by RP-PCR. No RAPGEF2-specific functional evidence was reported.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2019-03-01",
-        "2018-04-01"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 1,
-      "Citation": "pmid:30351492",
-      "Evidence detail": "RAPGEF2 disease alleles in Chinese family 3 carried an expanded TTTCA motif (~60 repeats) without detectable TTTTA expansion; expanded TTTCA/TTTTA repeats in SAMD12 or RAPGEF2 were absent from 116 control alleles.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2019-03-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 2,
+    "Citation": "pmid:30351492; pmid:29507423",
+    "Evidence detail": "Two unrelated autosomal dominant FAME/BAFME/FCMTE families with RAPGEF2 intronic TTTCA repeat expansions: Japanese family F8241 with one affected proband confirmed by WGS, RP-PCR and Southern blot, and Chinese family 3 with three affected individuals carrying ~60 TTTCA repeats by RP-PCR. No RAPGEF2-specific functional evidence was reported.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2019-03-01", "2018-04-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1,
+    "Citation": "pmid:30351492",
+    "Evidence detail": "RAPGEF2 disease alleles in Chinese family 3 carried an expanded TTTCA motif (~60 repeats) without detectable TTTTA expansion; expanded TTTCA/TTTTA repeats in SAMD12 or RAPGEF2 were absent from 116 control alleles.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2019-03-01"]
+  }],
   "experimental_evidence_details": [],
-  "category_summary": {
+  "category_summary":
+  {
     "Singular Evidence": 2,
     "Collective Evidence": 1,
     "Statistics": 0,
@@ -5461,7 +5456,8 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Genetic Evidence": 3,
     "Experimental Evidence": 0
   },
@@ -5469,8 +5465,7 @@
   "publication_count": 2,
   "publication_interval_years": 0.91,
   "classification": "Limited"
-}
-,
+},
 {
   "Disease_ID": "CANVAS",
   "Gene": "RFC1",
