@@ -3564,88 +3564,75 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6,
-      "Citation": "pmid:28339400",
-      "Evidence detail": "Systematic review identified 69 published genetically confirmed HDL2 cases through 2016; clinical features overlapped Huntington disease, including chorea, dementia, parkinsonism and psychiatric manifestations.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2017-01-01"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 2,
-      "Citation": "pmid:28339400",
-      "Evidence detail": "Across published HDL2 cases, expanded JPH3 repeat length showed a strong inverse correlation with age at onset (Pearson r = -0.76; p < 0.0001).",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2017-01-01"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1,
-      "Citation": "pmid:40187026",
-      "Evidence detail": "Twelve JPH3 expansion carriers from five Mexican families shared a 746-kb African-origin haplotype within a 1.1-Mb African segment flanking JPH3, supporting a founder mutation; formal LOD-based segregation was not reported.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2025-07-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:28339400",
+    "Evidence detail": "Systematic review identified 69 published genetically confirmed HDL2 cases through 2016; clinical features overlapped Huntington disease, including chorea, dementia, parkinsonism and psychiatric manifestations.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2017-01-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2,
+    "Citation": "pmid:28339400",
+    "Evidence detail": "Across published HDL2 cases, expanded JPH3 repeat length showed a strong inverse correlation with age at onset (Pearson r = -0.76; p < 0.0001).",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2017-01-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1,
+    "Citation": "pmid:40187026",
+    "Evidence detail": "Twelve JPH3 expansion carriers from five Mexican families shared a 746-kb African-origin haplotype within a 1.1-Mb African segment flanking JPH3, supporting a founder mutation; formal LOD-based segregation was not reported.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2025-07-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2,
-      "Citation": "pmid:21555070",
-      "Evidence detail": "BAC-HDL2 mice carrying expanded CTG/CAG repeats in JPH3 exon 2A showed age-dependent motor deficits, forebrain/cortical atrophy, CUG RNA foci, ubiquitin/polyQ nuclear inclusions and antisense HDL2-CAG/polyQ pathogenesis.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2011-05-12"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2,
-      "Citation": "pmid:29208631",
-      "Evidence detail": "Gene-level, not HDL2 repeat-locus-specific: altered Drosophila junctophilin (jp) expression caused muscular, cardiac and neuronal phenotypes and modified Htt-Ex1-pQ93/SCA3-Q89 polyQ retinal degeneration.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2018-01-17"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 2,
-      "Citation": "pmid:11694876",
-      "Evidence detail": "The HDL2 CTG repeat was localized 760 nt 3' of JPH3 exon 1 within alternatively spliced exon 2A; RT-PCR of normal brain mRNA confirmed three exon 1-exon 2A splice variants using different acceptor sites.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2001-12-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:21555070",
+    "Evidence detail": "BAC-HDL2 mice carrying expanded CTG/CAG repeats in JPH3 exon 2A showed age-dependent motor deficits, forebrain/cortical atrophy, CUG RNA foci, ubiquitin/polyQ nuclear inclusions and antisense HDL2-CAG/polyQ pathogenesis.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2011-05-12"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2,
+    "Citation": "pmid:29208631",
+    "Evidence detail": "Gene-level, not HDL2 repeat-locus-specific: altered Drosophila junctophilin (jp) expression caused muscular, cardiac and neuronal phenotypes and modified Htt-Ex1-pQ93/SCA3-Q89 polyQ retinal degeneration.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2018-01-17"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 2,
+    "Citation": "pmid:11694876",
+    "Evidence detail": "The HDL2 CTG repeat was localized 760 nt 3' of JPH3 exon 1 within alternatively spliced exon 2A; RT-PCR of normal brain mRNA confirmed three exon 1-exon 2A splice variants using different acceptor sites.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2001-12-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6,
     "Collective Evidence": 3,
     "Statistics": 0,
@@ -3654,7 +3641,8 @@
     "Models": 4,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 6,
     "Genetic Evidence": 9
   },
