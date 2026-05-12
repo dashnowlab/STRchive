@@ -5733,80 +5733,94 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/14/2025",
-  "Description": null,
+  "Description": "Intronic SAMD12 pentanucleotide repeat expansions involving pathogenic TTTCA insertion with accompanying TTTTA expansion cause autosomal dominant familial adult myoclonic epilepsy type 1 (FAME1/FCMTE1). Multiple studies report affected families across Asian populations, segregation with disease, absence of the TTTCA insertion from controls, computational and long-read detection of the expansion, length-dependent genotype-phenotype correlations, and neuronal UUUCA RNA foci supporting RNA-mediated toxicity.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:39569876",
-    "Evidence detail": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2025-02-01"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 2.0,
-    "Citation": "pmid:39569876",
-    "Evidence detail": "(TTTCA)exp counts were inversely correlated with the age at onset for cortical tremor and epilepsy ",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2025-02-01"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:32203200",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2020-07-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:30194086; pmid:29939203",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-04-01", "2018-08-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:39569876",
+      "Evidence detail": "Targeted long-read sequencing was performed in 77 FCMTE1 patients from 23 pedigrees; 73 SAMD12 (TTTTA)exp(TTTCA)exp alleles passed quality control for genotype analysis.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2025-02-01"
+      ]
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 2.0,
+      "Citation": "pmid:39569876",
+      "Evidence detail": "(TTTCA)exp counts in 73 FCMTE1 patients were inversely correlated with age at onset of cortical tremor and epilepsy, and increased during parental transmission, supporting a length-dependent pathogenic effect.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2025-02-01"
+      ]
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 0.5,
+      "Citation": "pmid:32203200",
+      "Evidence detail": "Whole-genome sequencing repeat-expansion tools detected the SAMD12 TTTCA expansion in affected individuals from Sri Lankan and Indian FAME families and not in controls; RP-PCR validated the calls.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2020-07-01"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:30194086; pmid:29939203",
+      "Evidence detail": "PMID:30194086 reported complete cosegregation of SAMD12 TTTTA and inserted TTTCA expansions with FCMTE in a Chinese family, with additional cases in two families. PMID:29939203 reported cosegregation of the SAMD12 (TTTCA)n insertion in 18 Chinese pedigrees and absence in controls.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2019-04-01",
+        "2018-08-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 1.0,
-    "Citation": "pmid:29507423",
-    "Evidence detail": "RNA and transc reg",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2018-04-01"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 1.0,
-    "Citation": "pmid:29507423",
-    "Evidence detail": "decrease + mutant",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2018-04-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 1.0,
+      "Citation": "pmid:29507423",
+      "Evidence detail": "FISH of autopsied brains from SAMD12 expansion carriers showed UUUCA-containing RNA foci in cortical neurons and Purkinje cells, supporting repeat RNA-mediated toxicity.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2018-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 1.0,
+      "Citation": "pmid:29507423",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2018-04-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 3,
     "Statistics": 0,
@@ -5815,8 +5829,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.0,
     "Genetic Evidence": 10.0
   },
