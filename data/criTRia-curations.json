@@ -1997,69 +1997,79 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner",
   "Date": "03/09/2025",
-  "Description": null,
+  "Description": "A heterozygous CGG repeat expansion in exon 1/5'UTR of CSNK1E at the FRA22A locus was reported in one Azerbaijani proband with progressive myoclonic epilepsy, ataxia, cognitive decline, and early death after exome and long-read analyses excluded other plausible causes. The expanded allele showed increased methylation, and prior FRA22A work demonstrated CSNK1E methylation and reduced expression in a CGG-expansion carrier. Unaffected relatives carried expanded or intermediate alleles, supporting incomplete penetrance and the need for careful interpretation of inheritance and penetrance.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 1.5,
-    "Citation": "pmid:40751262",
-    "Evidence detail": " functional, de novo proband | 1 proband",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2025-11-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 4.0,
-    "Citation": "pmid:40751262",
-    "Evidence detail": "strong bias",
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2025-11-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 1.5,
+      "Citation": "pmid:40751262",
+      "Evidence detail": "One Azerbaijani EPM proband with onset at 10 years carried a heterozygous CSNK1E CGG expansion in exon 1/5'UTR (longest allele CGG n=745) after exome and long-read analyses found no other plausible EPM-related variant; functional methylation data were reported. Expansion was also present in an unaffected sibling, consistent with incomplete penetrance.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2025-11-01"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 4.0,
+      "Citation": "pmid:40751262",
+      "Evidence detail": "Population comparison using 908 1KGP ONT genomes found no comparable large CSNK1E CGG expansions; 98.7% had <20 repeats and the longest observed alleles were CGG n=48 and n=47, versus CGG n=745 in the proband and n=980 in an unaffected sibling. Matching and penetrance limitations remain.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2025-11-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.0,
-    "Citation": "pmid:30488659",
-    "Evidence detail": "expression decrease +hypermethylation",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-03-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:32937144",
-    "Evidence detail": "1 proband",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2020-10-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:32937144",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2020-10-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 1.0,
+      "Citation": "pmid:30488659",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2019-03-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:32937144",
+      "Evidence detail": "",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2020-10-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:32937144",
+      "Evidence detail": "Non-patient/control comparison in the FRA22A study showed control samples were unmethylated at the CSNK1E CGG region; the population methylation screen also identified six individuals with gain of methylation overlapping the CSNK1E 5'UTR CGG repeat. Evidence is locus-specific but not EPM-specific.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2020-10-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 1.5,
     "Collective Evidence": 0,
     "Statistics": 4.0,
@@ -2068,8 +2078,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.5,
     "Genetic Evidence": 5.5
   },
