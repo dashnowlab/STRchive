@@ -4730,130 +4730,108 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:36151849; pmid:32451610",
-      "Evidence detail": "PMID:36151849 reported one autosomal-dominant family and one sporadic adult-onset PLIN4-myopathy case with a heterozygous coding 99-bp PLIN4 repeat expansion and characteristic p62/perilipin-4-positive vacuolar pathology. PMID:32451610 reported a multigenerational 19p13.3-linked kindred with a PLIN4 40×99-bp expansion, absent from unaffected relatives/controls, and rimmed ubiquitin-positive autophagic vacuoles.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2022-11-01",
-        "2020-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 1.0,
-      "Citation": "pmid:37145156",
-      "Evidence detail": "",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2023-09-01"
-      ]
-    },
-    {
-      "Evidence type": "Computational",
-      "Score": 0.0,
-      "Citation": "pmid:40693562; pmid:39102614",
-      "Evidence detail": "PMID:40693562 used WES coverage and RNA-seq review as part of the workup: increased PLIN4 exon coverage suggested an expanded allele, while RNA-seq showed normal PLIN4 expression and no splicing effect; ONT sequencing confirmed the expansion. PMID:39102614 is a clinical cohort/prognostic study and does not provide TR-specific computational pathogenicity evidence.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2025-10-01",
-        "2024-08-27"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:36151849",
-      "Evidence detail": "PMID:36151849 reported linkage in the PLIN4-related family to a 3.39 Mb 19p13.3 candidate interval (chr19:2635061–6033965) with maximum LOD 3.0408; PCR showed the expanded PLIN4 band in affected individuals and only the wild-type band in unaffected relatives.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2022-11-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:36151849; pmid:32451610",
+    "Evidence detail": "PMID:36151849 reported one autosomal-dominant family and one sporadic adult-onset PLIN4-myopathy case with a heterozygous coding 99-bp PLIN4 repeat expansion and characteristic p62/perilipin-4-positive vacuolar pathology. PMID:32451610 reported a multigenerational 19p13.3-linked kindred with a PLIN4 40×99-bp expansion, absent from unaffected relatives/controls, and rimmed ubiquitin-positive autophagic vacuoles.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2022-11-01", "2020-08-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:37145156",
+    "Evidence detail": "",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2023-09-01"]
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.0,
+    "Citation": "pmid:40693562; pmid:39102614",
+    "Evidence detail": "PMID:40693562 used WES coverage and RNA-seq review as part of the workup: increased PLIN4 exon coverage suggested an expanded allele, while RNA-seq showed normal PLIN4 expression and no splicing effect; ONT sequencing confirmed the expansion. PMID:39102614 is a clinical cohort/prognostic study and does not provide TR-specific computational pathogenicity evidence.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2025-10-01", "2024-08-27"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:36151849",
+    "Evidence detail": "PMID:36151849 reported linkage in the PLIN4-related family to a 3.39 Mb 19p13.3 candidate interval (chr19:2635061–6033965) with maximum LOD 3.0408; PCR showed the expanded PLIN4 band in affected individuals and only the wild-type band in unaffected relatives.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2022-11-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:40693562",
-      "Evidence detail": "PMID:40693562 showed increased PLIN4 at the sarcolemma/vacuoles in patient muscle and discussed that PLIN4 repeat expansion may alter lipid-droplet membrane-binding specificity, promoting abnormal sarcolemmal targeting and aggregation of perilipin-4.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-10-01"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 1.5,
-      "Citation": "pmid:35499779; pmid:40693562",
-      "Evidence detail": "PMID:35499779 showed patient muscle perilipin-4 co-localized with FK2, p62/SQSTM1, NBR1, and LC3B in vacuoles/subsarcolemma, consistent with aggrephagy-related aggregation. PMID:40693562 similarly showed PLIN4 co-localization with p62 and NBR1 at sarcolemma/vacuoles and detected a higher-molecular-weight PLIN4 band from the expanded allele by western blot.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2022-06-01",
-        "2025-10-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.0,
-      "Citation": "pmid:40693562",
-      "Evidence detail": "PMID:40693562 reported patient muscle RNA-seq with normal PLIN4 mRNA expression and no observed PLIN4 splicing effect; no repeat-dependent regulatory impact is supported by this source.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-10-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:37145156",
-      "Evidence detail": "PMID:37145156 reported patient muscle biopsy findings in affected PLIN4 expansion carriers, including rimmed vacuoles and PLIN4, FK2, p62/SQSTM1, and NBR1 positivity/accumulation in muscle fibers; biopsies were abnormal even in some minimally symptomatic carriers.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2023-09-01"
-      ]
-    },
-    {
-      "Evidence type": "Cell culture",
-      "Score": 1.0,
-      "Citation": "pmid:40693562",
-      "Evidence detail": "",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-10-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:40693562",
+    "Evidence detail": "PMID:40693562 showed increased PLIN4 at the sarcolemma/vacuoles in patient muscle and discussed that PLIN4 repeat expansion may alter lipid-droplet membrane-binding specificity, promoting abnormal sarcolemmal targeting and aggregation of perilipin-4.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-10-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 1.5,
+    "Citation": "pmid:35499779; pmid:40693562",
+    "Evidence detail": "PMID:35499779 showed patient muscle perilipin-4 co-localized with FK2, p62/SQSTM1, NBR1, and LC3B in vacuoles/subsarcolemma, consistent with aggrephagy-related aggregation. PMID:40693562 similarly showed PLIN4 co-localization with p62 and NBR1 at sarcolemma/vacuoles and detected a higher-molecular-weight PLIN4 band from the expanded allele by western blot.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2022-06-01", "2025-10-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.0,
+    "Citation": "pmid:40693562",
+    "Evidence detail": "PMID:40693562 reported patient muscle RNA-seq with normal PLIN4 mRNA expression and no observed PLIN4 splicing effect; no repeat-dependent regulatory impact is supported by this source.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-10-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37145156",
+    "Evidence detail": "PMID:37145156 reported patient muscle biopsy findings in affected PLIN4 expansion carriers, including rimmed vacuoles and PLIN4, FK2, p62/SQSTM1, and NBR1 positivity/accumulation in muscle fibers; biopsies were abnormal even in some minimally symptomatic carriers.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2023-09-01"]
+  },
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:40693562",
+    "Evidence detail": "",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-10-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.5,
     "Statistics": 0,
@@ -4862,7 +4840,8 @@
     "Models": 1.0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 4.0,
     "Genetic Evidence": 8.5
   },
