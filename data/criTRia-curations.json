@@ -4323,130 +4323,108 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:37090934",
-      "Evidence detail": "A multicenter Chinese NIID cohort described 223 patients/probands with NOTCH2NLC 5′ UTR GGC repeat expansions (>60 repeats), skin-biopsy p62-positive intranuclear inclusions, and characteristic neurologic/MRI features; for familial NIID, only probands were included in the final analysis.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2023-04-01"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:31178126",
-      "Evidence detail": "In a five-generation Chinese Han NIID family, linkage mapped the disease locus to 1p13.3–q23.1 (maximum LOD 3.184), WES did not identify a causal coding variant, and long-read sequencing identified a NOTCH2NLC 5′ GGC expansion. RP-PCR/GC-PCR showed expanded alleles in affected family members, whereas unaffected relatives carried normal-range repeats; additional familial/sporadic NIID cases also carried expansions.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2019-07-03"
-      ]
-    },
-    {
-      "Evidence type": "Case-control data",
-      "Score": 6.0,
-      "Citation": "pmid:36570826; pmid:36086903; pmid:35857137; pmid:34675106",
-      "Evidence detail": "Available genetic case-control support includes NOTCH2NLC GGC expansions in 7/127 genetically undiagnosed Taiwanese CMT patients, including 7/66 CMT2 cases (10.6%), and 0/200 controls (pmid:34675106), plus pathogenic expansions in 27/597 ET pedigrees and 3/412 sporadic ET cases with intermediate alleles enriched versus 1085 controls (pmid:36086903). PMID:35857137 and pmid:36570826 are case-control studies of methylation/perfusion phenotypes rather than primary genetic enrichment studies.",
-      "evidence_category": "Statistics",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 12,
-      "category_max_score": 12,
-      "publication_dates": [
-        "2022-01-01",
-        "2022-12-01",
-        "2022-11-01",
-        "2022-01-11"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:37090934",
+    "Evidence detail": "A multicenter Chinese NIID cohort described 223 patients/probands with NOTCH2NLC 5′ UTR GGC repeat expansions (>60 repeats), skin-biopsy p62-positive intranuclear inclusions, and characteristic neurologic/MRI features; for familial NIID, only probands were included in the final analysis.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2023-04-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31178126",
+    "Evidence detail": "In a five-generation Chinese Han NIID family, linkage mapped the disease locus to 1p13.3–q23.1 (maximum LOD 3.184), WES did not identify a causal coding variant, and long-read sequencing identified a NOTCH2NLC 5′ GGC expansion. RP-PCR/GC-PCR showed expanded alleles in affected family members, whereas unaffected relatives carried normal-range repeats; additional familial/sporadic NIID cases also carried expansions.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2019-07-03"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:36570826; pmid:36086903; pmid:35857137; pmid:34675106",
+    "Evidence detail": "Available genetic case-control support includes NOTCH2NLC GGC expansions in 7/127 genetically undiagnosed Taiwanese CMT patients, including 7/66 CMT2 cases (10.6%), and 0/200 controls (pmid:34675106), plus pathogenic expansions in 27/597 ET pedigrees and 3/412 sporadic ET cases with intermediate alleles enriched versus 1085 controls (pmid:36086903). PMID:35857137 and pmid:36570826 are case-control studies of methylation/perfusion phenotypes rather than primary genetic enrichment studies.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2022-01-01", "2022-12-01", "2022-11-01", "2022-01-11"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:31332380",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2019-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:31332380",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2019-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 1.0,
-      "Citation": "pmid:31332380",
-      "Evidence detail": "SMRT/IPD analysis suggested the expanded CGG repeat in the 5′ UTR of NBPF19/NOTCH2NLC tended to be hypermethylated, but RNA-seq from NIID brains (n=3) versus controls (n=8) did not show a significant difference in NBPF19 expression.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2019-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:39055960",
-      "Evidence detail": "In a Korean NOTCH2NLC-expanded NIID cohort/family study, skin biopsies from two patients confirmed intranuclear inclusions using H&E with ubiquitin and p62 immunostaining; patient/family DNA methylation profiling showed lower promoter methylation in affected offspring than an asymptomatic expanded-repeat father.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 0.5,
-      "Citation": "pmid:39055960",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 4.0,
-      "Citation": "pmid:39055960",
-      "Evidence detail": "",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2024-08-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:31332380",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2019-08-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:31332380",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2019-08-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 1.0,
+    "Citation": "pmid:31332380",
+    "Evidence detail": "SMRT/IPD analysis suggested the expanded CGG repeat in the 5′ UTR of NBPF19/NOTCH2NLC tended to be hypermethylated, but RNA-seq from NIID brains (n=3) versus controls (n=8) did not show a significant difference in NBPF19 expression.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2019-08-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39055960",
+    "Evidence detail": "In a Korean NOTCH2NLC-expanded NIID cohort/family study, skin biopsies from two patients confirmed intranuclear inclusions using H&E with ubiquitin and p62 immunostaining; patient/family DNA methylation profiling showed lower promoter methylation in affected offspring than an asymptomatic expanded-repeat father.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-08-01"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:39055960",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_dates": ["2024-08-01"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 4.0,
+    "Citation": "pmid:39055960",
+    "Evidence detail": "",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2024-08-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 6.0,
@@ -4455,7 +4433,8 @@
     "Models": 4.0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 6,
     "Genetic Evidence": 12
   },
