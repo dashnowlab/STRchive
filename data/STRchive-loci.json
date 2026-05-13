@@ -1238,7 +1238,7 @@
   "typ_age_onset_max": 56.0,
   "details": "Detailed overview of disease locus through 2024 by Rimoldi et al [@pmid:39643839]. ≤30 uninterrupted CCTG repeats or 11-26 CCTG repeats with GCTC/TCTG interruptions are considered benign; 27-29 repeats with interruptions have currently unknown significance, ~30-~54 repeats are considered premutations, ~55-74 repeats are premutations with possible reduced penetrance, and >74 repeat alleles are considered pathogenic [@genereviews:NBK1466]. Penetrance is age-dependent and approaches 100%. Locus structure is (TG)n(TCTG)n(CCTG)n. CCTG expansion causes DM2 but the other repeat units are also variable. Interruptions include GCTG/TCTG/GGCT [@pmid:35245110]. The effect of the (TCTG)n repeat remains to be determined, but it is potentially common in the repeat structure of this locus [@pmid:39703464].",
   "mechanism": "GoF",
-  "mechanism_detail": "Aberrant splicing, RAN translation [@pmid:22140091; @pmid:38467784].",
+  "mechanism_detail": "Aberrant splicing, RAN translation [@pmid:22140091; @pmid:38467784]. Proposed pathogenisis contributions include nucleolar stress, autophagy dysregulation, and stress granule formation [@pmid:42003432].",
   "year": "2001 [@pmid:11486088]",
   "location_in_gene": "Intron 1",
   "gene_strand": "-",
