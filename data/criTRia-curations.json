@@ -6442,101 +6442,86 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:11285244",
-      "Evidence detail": "Screened 509 unrelated HPE patients with normal chromosomes; 16 affected individuals from 15 unrelated families had ZIC2 mutations. Seven mutations were frameshift/null alleles, and a recurrent C-terminal alanine-tract expansion occurred in seven patients from six families, including de novo and paternal mosaic cases.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2001-04-01"
-      ]
-    },
-    {
-      "Evidence type": "Computational",
-      "Score": 1.0,
-      "Citation": "pmid:19177455",
-      "Evidence detail": "Compilation of 83 HPE-specific ZIC2 variants absent from controls showed recurrent predicted loss-of-function, including frequent frameshift/truncating variants (>55%), zinc-finger missense clustering at conserved DNA-binding residues, and COOH-terminal/polyalanine variants predicted or shown to impair ZIC2 function.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2009-04-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:11285244",
+    "Evidence detail": "Screened 509 unrelated HPE patients with normal chromosomes; 16 affected individuals from 15 unrelated families had ZIC2 mutations. Seven mutations were frameshift/null alleles, and a recurrent C-terminal alanine-tract expansion occurred in seven patients from six families, including de novo and paternal mosaic cases.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2001-04-01"]
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 1.0,
+    "Citation": "pmid:19177455",
+    "Evidence detail": "Compilation of 83 HPE-specific ZIC2 variants absent from controls showed recurrent predicted loss-of-function, including frequent frameshift/truncating variants (>55%), zinc-finger missense clustering at conserved DNA-binding residues, and COOH-terminal/polyalanine variants predicted or shown to impair ZIC2 function.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2009-04-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:15590697",
-      "Evidence detail": "In vitro ZIC2 reporter assays showed that HPE-associated mutations altered transcriptional activation; the naturally occurring 25-alanine expansion reduced apoE promoter transactivation to ~5% of wild-type activity.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2005-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:15590697",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2005-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:15590697",
-      "Evidence detail": "C-terminal deletion/truncation and alanine-tract length changes altered ZIC2-mediated transcriptional activation in a promoter-specific manner; the C-terminal contains activation/repression domains and the alanine tract modulates DNA binding.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2005-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:15590697",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2005-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:15590697",
-      "Evidence detail": "Gene-level, not tandem-repeat/locus-specific: PMID 15590697 discusses Zic2 mouse mutations with forebrain defects and mimics a murine C370S mutation in vitro; no new in vivo model of the alanine-tract expansion was generated.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2005-02-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Evidence detail": "In vitro ZIC2 reporter assays showed that HPE-associated mutations altered transcriptional activation; the naturally occurring 25-alanine expansion reduced apoE promoter transactivation to ~5% of wild-type activity.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2005-02-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2005-02-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:15590697",
+    "Evidence detail": "C-terminal deletion/truncation and alanine-tract length changes altered ZIC2-mediated transcriptional activation in a promoter-specific manner; the C-terminal contains activation/repression domains and the alanine tract modulates DNA binding.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2005-02-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:15590697",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2005-02-01"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:15590697",
+    "Evidence detail": "Gene-level, not tandem-repeat/locus-specific: PMID 15590697 discusses Zic2 mouse mutations with forebrain defects and mimics a murine C370S mutation in vitro; no new in vivo model of the alanine-tract expansion was generated.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2005-02-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.0,
     "Statistics": 0,
@@ -6545,7 +6530,8 @@
     "Models": 2.0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 4.5,
     "Genetic Evidence": 7.0
   },
