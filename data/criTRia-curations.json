@@ -6569,58 +6569,67 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/14/2025",
-  "Description": null,
+  "Description": "Biallelic VWA1 variants cause autosomal recessive hereditary motor neuropathy/neuromyopathy (HMNR7). The recurrent exon 1 10-bp repeat expansion c.62_71dup, p.(Gly25ArgfsTer74), is the predominant disease-associated allele and was reported in most families, often with loss-of-function consequences. Genetic support includes multiple unrelated affected families, trans/inheritance evidence for compound heterozygotes, and founder-haplotype/autozygosity evidence. Experimental support is mainly gene-level or patient-tissue evidence: WARP/VWA1 is an extracellular-matrix protein reported to interact with collagen VI and perlecan, and patient-derived blood or muscle tissue studies show neuromuscular biomarker/pathology changes.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:33559681",
-    "Evidence detail": "14 families",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2021-03-03"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:33559681",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2021-03-03"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:33559681",
+      "Evidence detail": "17 affected individuals from 15 unrelated families with biallelic VWA1 variants; the exon 1 10-bp repeat expansion c.62_71dup, p.(Gly25ArgfsTer74), was present in 14/15 families and homozygous in 10/15.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2021-03-03"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:33559681",
+      "Evidence detail": "Segregation support included trans confirmation for compound-heterozygous cases by allele-specific PCR, Nanopore sequencing, or parental inheritance, plus an extended consanguineous family in which a homozygous VWA1 frameshift variant lay in a shared autozygous region spanning VWA1. No formal LOD score was reported.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2021-03-03"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:38652110",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-04-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 2.0,
-    "Citation": "pmid:39502942",
-    "Evidence detail": "muscle cells of many patients",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-01-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:38652110",
+      "Evidence detail": "Gene-level evidence only: WARP/VWA1 is described as an extracellular-matrix protein expressed in muscle and peripheral nerve that interacts with collagen VI and perlecan; this paper did not perform a tandem-repeat/locus-specific interaction assay.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2024-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 2.0,
+      "Citation": "pmid:39502942",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2024-01-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 0,
@@ -6629,8 +6638,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.5,
     "Genetic Evidence": 7.5
   },
