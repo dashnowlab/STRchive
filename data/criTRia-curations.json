@@ -3113,82 +3113,96 @@
   "Gene": "HOXA13",
   "Locus_ID": "HFG_HOXA13-I",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt, Elbay Aliyev",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "This HFG-I HOXA13 curation is based on experimental evidence from PMID 17935235 and primary mouse-model evidence from PMID 15385446. PMID 17935235 reports a father and daughter with hand-foot-genital syndrome carrying a heterozygous +14 alanine expansion in HOXA13 polyalanine tract III and shows, in COS-7 cells, length-dependent cytoplasmic aggregation of HOXA13 polyalanine expansion proteins, altered steady-state abundance after geldanamycin treatment, and sequestration of wild-type HOXA13/HOXD13. PMID 15385446 reports human HOXA13 polyalanine expansions in all three large tracts and a Hoxa13Ala28 knock-in mouse model with a +10 alanine expansion in tract III, showing a Hoxa13 loss-of-function-like phenotype with normal RNA expression/splicing but reduced steady-state HOXA13 protein abundance. Evidence is primarily experimental and supports a loss-of-function mechanism through post-transcriptional reduction/degradation of expanded HOXA13 protein.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:17935235",
-    "Evidence detail": "Only paper that is clearly talking about HFG and HOXA13-1, there are others but are ambiguous as to which locus",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": null,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2007-12-15"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:17935235; pmid:15385446",
+      "Evidence detail": "HOXA13 polyalanine expansion proteins showed misfolding/cytoplasmic aggregation and reduced steady-state protein abundance; mouse Hoxa13Ala28 data showed normal RNA expression/splicing but reduced HOXA13 protein abundance, supporting post-transcriptional protein loss.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15",
+        "2004-11-15"
+      ]
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:17935235",
+      "Evidence detail": "Co-expression assays showed polyalanine-expanded HOXA13 sequestered wild-type HOXA13 and wild-type HOXD13 proteins into cytoplasmic aggregates; this is locus-relevant protein interaction evidence from non-patient cell assays.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": null,
+      "Citation": "pmid:17935235; pmid:15385446",
+      "Evidence detail": "Western blot and immunohistochemistry data showed reduced steady-state HOXA13 protein abundance for the expanded allele despite normal RNA expression and splicing, indicating post-transcriptional protein reduction rather than altered transcription, epigenetic regulation, or splicing.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15",
+        "2004-11-15"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:17935235",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:17935235",
+      "Evidence detail": "COS-7 transfection/immunocytochemistry assays showed wild-type HOXA13 localized to the nucleus, while +10 and +14 HOXA13 polyalanine expansion proteins formed cytoplasmic aggregates, with greater aggregation for longer expansions.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 2.0,
+      "Citation": "pmid:15385446",
+      "Evidence detail": "Mouse Hoxa13Ala28 knock-in model with a +10 alanine expansion in polyalanine tract III showed a phenotype indistinguishable from Hoxa13 null mice. Mutant limb buds had normal Hoxa13 RNA expression and splicing but reduced steady-state HOXA13 protein by immunohistochemistry and Western blot, supporting loss of function through in vivo degradation of the expanded protein.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_dates": [
+        "2004-11-15"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 0,
     "Collective Evidence": 0,
     "Statistics": 0,
@@ -3197,8 +3211,7 @@
     "Models": 2.0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 4.5,
     "Genetic Evidence": 0
   },
