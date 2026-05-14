@@ -6,69 +6,80 @@
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt, Macayla Weiner, Harriet Dashnow",
   "Date": "04/29/2026",
-  "Description": "A heterozygous CGG repeat expansion in the 5' region of ABCD3 was identified as the cause of autosomal dominant oculopharyngodistal myopathy type 5 (OPDM5) in eight unrelated families, with segregation supported by a LOD score of 2.98. Repeat size correlates inversely with age at onset, supporting a length-dependent pathogenic effect. Increased ABCD3 expression was seen in patient fibroblasts and skeletal muscle. To date only one publication has reported this gene-disease relationship.",
+  "Description": "A heterozygous CCG repeat expansion in the 5′-UTR/untranslated first exon of ABCD3 was reported as the cause of autosomal dominant oculopharyngodistal myopathy type 5 (OPDM5) in families of European ancestry. PMID:39068203 described 35 affected individuals from eight unrelated families, with detailed clinical data for 24 individuals; targeted ONT long-read sequencing showed monoallelic pure CCG expansions of 118–694 repeats in 19 affected individuals. Genetic support includes linkage in AUS1/AUS2 (maximum LOD 2.98), RP-PCR/optical genome mapping confirmation, segregation in UK2, and a shared ancestral haplotype encompassing ABCD3. Functional data showed increased ABCD3 transcript in OPDM skeletal muscle and patient fibroblasts/muscle, with rare p62-positive intranuclear inclusions in patient skin/fibroblast samples. To date, this locus–disease relationship is supported by one publication.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "24 affected individuals from 8 unrelated families with characterization including 2 large families with functional evidence.",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2024-07-27"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 1.0,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "Negative correlation between repeat expansion size and age-of-onset in affected males (y = 3.029x + 272.8, n = 6, p = 0.0063)",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2024-07-27"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "Combined linkage analysis using whole exome sequencing for two families AUS1 (n = 5 affected individuals) and AUS2 (n = 4 affected individuals), LOD score = 2.98. Individuals carrying the ABCD3 CCG repeat expansion share an ancestral haplotype.",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2024-07-27"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:39068203",
+      "Evidence detail": "PMID:39068203 reported 35 affected individuals from eight unrelated OPDM families of European ancestry, with detailed clinical findings for 24 individuals; ABCD3 5′-UTR CCG expansions were identified across families using srWGS/EHdn, RP-PCR, optical genome mapping, and/or targeted ONT long-read sequencing.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2024-07-27"
+      ]
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 1.0,
+      "Citation": "pmid:39068203",
+      "Evidence detail": "Targeted ONT long-read sequencing showed heterozygous pure ABCD3 5′-UTR CCG expansions of 118–694 repeats in 19 affected individuals, while unaffected relatives had two 7-repeat alleles; larger expansions correlated with earlier onset in affected males (n=6, p=0.0063), and female expansions were larger and more variable than male expansions (p=0.0295).",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2024-07-27"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:39068203",
+      "Evidence detail": "Combined linkage analysis in AUS1 and AUS2 produced a maximum multipoint LOD score of 2.98 across a 24 Mb region containing ABCD3; the expansion segregated in UK2 (affected sister positive, unaffected mother negative), and affected individuals shared a 560 kb ancestral haplotype encompassing ABCD3.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2024-07-27"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "Increased expression of ABCD3 in patient skeletal muscle compared with controls.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-07-27"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:39068203",
-    "Evidence detail": "Staining of primary fibroblasts generated from skin biopsy of AUS3-IV:3 showed p62-positive intranuclear inclusions.",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-07-27"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:39068203",
+      "Evidence detail": "RNA-seq and qPCR showed increased ABCD3 transcript in OPDM skeletal muscle compared with neuromuscular disease and healthy controls; HCR RNA-FISH showed increased cytoplasmic and intranuclear ABCD3 sense transcript signal, including nuclear foci-like clusters, in patient fibroblasts and muscle.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2024-07-27"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:39068203",
+      "Evidence detail": "Patient-derived skin and fibroblast samples from ABCD3 expansion carriers showed rare p62-positive intranuclear inclusions, including in nuclei of skin exocrine glands, keratinocytes, and fibroblasts, and ultra-rare inclusions (<0.1%) in primary skin fibroblasts from AUS3-IV:3; these were absent or less prominent in controls.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2024-07-27"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.5,
     "Statistics": 0,
@@ -77,8 +88,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 1.5,
     "Genetic Evidence": 8.5
   },
