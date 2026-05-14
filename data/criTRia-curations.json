@@ -5988,7 +5988,7 @@
     "Evidence detail": "PMID:35868859 characterized eight iPSC lines from three heterozygous female XDP carriers with X-chromosome-inactivation clones expressing either the wild-type or XDP haplotype, providing non-patient carrier cell resources for modeling TAF1/SVA effects.",
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
+    "evidence_max_score": 1,
     "category_max_score": 2,
     "publication_dates": ["2022-07-21"]
   },
@@ -5997,10 +5997,10 @@
     "Score": 1.0,
     "Citation": "pmid:34250228",
     "Evidence detail": "Repeat sizing and somatic instability in human postmortem brain tissues from two XDP patients showed higher median repeat numbers and higher degrees of repeat instability in the basal ganglia and cerebellum compared with blood.",
-    "evidence_category": "Functional Alteration",
+    "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
+    "evidence_max_score": 4,
+    "category_max_score": 4,
     "publication_dates": ["2021-08-01"]
   }],
   "category_summary":
@@ -6009,8 +6009,8 @@
     "Collective Evidence": 3,
     "Statistics": 0,
     "Function": 2,
-    "Functional Alteration": 1.5,
-    "Models": 0,
+    "Functional Alteration": 0.5,
+    "Models": 1.0,
     "Rescue": 0
   },
   "supercategory_summary":
