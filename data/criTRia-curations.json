@@ -1,5 +1,270 @@
 [
 {
+  "Disease_ID": "CPUM",
+  "Gene": "TYMS",
+  "Locus_ID": "CPUM_TYMS",
+  "Inheritance": "AR",
+  "Curator": "Macayla Weiner",
+  "Date": "08/14/2025",
+  "Description": "2 siblings have been reported with congenital progressive universal melanosis, with inheritence evidence and expression information. Fibroblast cells were also cultured from the two patients.",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:40589716",
+    "Evidence detail": "1 proband with functional and de novo evidnce, also studied twin sibling.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2025-06-12"]
+  },],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Cell Culture",
+    "Score": 1.0,
+    "Citation": "pmid:30488659",
+    "Evidence detail": "Decreased experssion and significant hypermethylation.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2018-10-28"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 1.5,
+    "Collective Evidence": 0,
+    "Statistics": 4,
+    "Function": 1.0,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.0
+    "Genetic Evidence": 5.5
+  },
+  "total_score": 6.5,
+  "publication_count": 2,
+  "publication_interval_years": null,
+  "classification": "Limited"
+},
+{
+  "Disease_ID": "XLID, PHPX",
+  "Gene": "SOX3",
+  "Locus_ID": "XLID_SOX3",
+  "Inheritance": "XR",
+  "Curator": "Laurel Hiatt, Macayla Weiner, Syndromic Disorders GCEP",
+  "Date": "05/14/2026",
+  "Description": "Patients have been reported with a repeat mutation in SOX3, caused by overexpression, downstream decrease in protein levels, and dysregulation. 5 total patients across 2 papers and a mouse model.",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:24346842",
+    "Evidence detail": "1 proband with functional and de novo evidnce.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2025-06-12"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:19654509",
+    "Evidence detail": "CStudied one family with 4 affected individuals and 14 unaffected. LOD = 4.2.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 2.0,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "Signifcance found in SOX3 transactivation levels, but does not report how this relates to phenotype.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2024-11-01"]
+  }],
+  "experimental_evidence_details": [
+  },
+  {
+    "Evidence type": "Cell Culture",
+    "Score": 1.0,
+    "Citation": "pmid:30488659",
+    "Evidence detail": "Decreased experssion and significant hypermethylation.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2018-10-28"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 1.5,
+    "Collective Evidence": 0,
+    "Statistics": 4,
+    "Function": 1.0,
+    "Functional Alteration": 0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.0
+    "Genetic Evidence": 5.5
+  },
+  "total_score": 6.5,
+  "publication_count": 2,
+  "publication_interval_years": null,
+  "classification": "Limited"
+},
+{
+  "Disease_ID": "XLID, PHPX",
+  "Gene": "SOX3",
+  "Locus_ID": "XLID_SOX3",
+  "Inheritance": "XR",
+  "Curator": "Laurel Hiatt, Macayla Weiner, Syndormic Disorders GCEP",
+  "Date": "8/2/2023 (ClinGen); 3/6/2025 (criTRia)",
+  "Description": "A heterozygous CGG repeat expansion in the 5' region of ABCD3 was identified as the cause of autosomal dominant oculopharyngodistal myopathy type 5 (OPDM5) in eight unrelated families, with segregation supported by a LOD score of 2.98. Repeat size correlates inversely with age at onset, supporting a length-dependent pathogenic effect. Increased ABCD3 expression was seen in patient fibroblasts and skeletal muscle. To date only one publication has reported this gene-disease relationship.",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:39068203",
+    "Evidence detail": "24 affected individuals from 8 unrelated families with characterization including 2 large families with functional evidence.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:39068203",
+    "Evidence detail": "Negative correlation between repeat expansion size and age-of-onset in affected males (y = 3.029x + 272.8, n = 6, p = 0.0063)",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:39068203",
+    "Evidence detail": "Combined linkage analysis using whole exome sequencing for two families AUS1 (n = 5 affected individuals) and AUS2 (n = 4 affected individuals), LOD score = 2.98. Individuals carrying the ABCD3 CCG repeat expansion share an ancestral haplotype.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2024-07-27"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "Overexpression inhibits downstream signaling.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "Dysregulation ccontributes to phenotype.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Protein Interaction",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "Decrease in protein levels.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:19654509",
+    "Evidence detail": "4 patients studied within one family",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:24346842",
+    "Evidence detail": "100 human controls.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:23505376",
+    "Evidence detail": "Mouse model used to gain mechanistic insights for models with phenotype.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 6.0,
+    "Collective Evidence": 2.5,
+    "Statistics": 0,
+    "Function": 0.5,
+    "Functional Alteration": 1.0,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 8.5
+  },
+  "total_score": 10.0,
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "classification": "Moderate"
+},
+{
   "Disease_ID": "OPDM5",
   "Gene": "ABCD3",
   "Locus_ID": "OPDM5_ABCD3",
@@ -2089,8 +2354,41 @@
   "Source": "ClinGen",
   "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP8",
   "Manual_evidence_level": null,
-  "genetic_evidence_details": [],
-  "experimental_evidence_details": [],
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:40751262",
+    "Evidence detail": "1 proband with functional and de novo evidence.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2017-07-06", "2018-07-01"]
+  },
+  {
+    "Evidence type": "Case-control",
+    "Score": 4,
+    "Citation": "pmid:40751262",
+    "Evidence detail": "Good statistical analysis, but strong bias.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2017-07-06", "2018-07-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory Impact",
+    "Score": 1.0,
+    "Citation": "pmid:30488659",
+    "Evidence detail": "Expression decrease and hypermethylation.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2017-07-06", "2018-07-01"]
+  }],
   "category_summary":
   {
     "Collective Evidence": null,
