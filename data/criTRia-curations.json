@@ -2833,91 +2833,106 @@
   "Inheritance": "AD/AR",
   "Curator": "Laurel Hiatt",
   "Date": "06/04/2025",
-  "Description": null,
+  "Description": "FOXL2 pathogenic variants, including polyalanine-tract expansions, are associated with blepharophimosis-ptosis-epicanthus inversus syndrome (BPES), an eyelid malformation syndrome with or without premature ovarian failure. Reported evidence includes multiple unrelated probands and families with heterozygous FOXL2 variants, segregation of a polyalanine expansion in a multigeneration BPES type II family, absence from controls/population databases, conservation and in silico support for a polyalanine-region insertion, and experimental data showing altered FOXL2 localization, aggregation, transactivation, and BPES-like eyelid/ovarian phenotypes in models.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 2.5,
-    "Citation": "pmid:11468277",
-    "Evidence detail": "5, probands and sporadic",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2001-07-15"]
-  },
-  {
-    "Evidence type": "Probands",
-    "Score": 3.5,
-    "Citation": "pmid:27283035",
-    "Evidence detail": "5 probands, some with multiple generations, etc",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2016-12-01"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 1.0,
-    "Citation": "pmid:33875939",
-    "Evidence detail": "Highly conserved ",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2021-01-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 2.0,
-    "Citation": "pmid:33875939",
-    "Evidence detail": "lod score ~3.9 i think, panel/targeted sequencing",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2021-01-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 2.5,
+      "Citation": "pmid:11468277",
+      "Evidence detail": "FOXL2 screening in BPES type I/II/unknown and sporadic cases identified 21 coding mutations and one microdeletion in 67% of BPES patients; variants included familial and sporadic BPES and were absent from 200 control chromosomes and tested unaffected relatives. Evidence is gene-level and includes both polyalanine-expansion and non-repeat FOXL2 variants.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2001-07-15"
+      ]
+    },
+    {
+      "Evidence type": "Probands",
+      "Score": 3.5,
+      "Citation": "pmid:27283035",
+      "Evidence detail": "Among 14 Czech/Slovak BPES probands, 13 (93%) carried pathogenic heterozygous FOXL2 variants, including three novel variants, six polyalanine-expansion duplications, two frameshift duplications, one frameshift deletion, and one FOXL2 ORF deletion; all probands had typical ocular BPES. Evidence is gene-level and includes repeat and non-repeat FOXL2 variants.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2016-12-01"
+      ]
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 1.0,
+      "Citation": "pmid:33875939",
+      "Evidence detail": "The FOXL2 polyalanine insertion c.672_701insGCGGCTGCCGCCGCAGCTGCTGCAGGCGCT (p.Ala234_Gly235linsAAAAAAAAGA) expands the polyalanine tract from 14 to 24 residues, was absent from population databases, affected a conserved region, and was predicted damaging/disease-causing by MutationTaster (score 1), PolyPhen-2 (score 1.000), and SIFT (score 0.00).",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2021-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 2.0,
+      "Citation": "pmid:33875939",
+      "Evidence detail": "In a four-generation Chinese BPES type II family, the FOXL2 polyalanine insertion p.Ala234_Gly235linsAAAAAAAAGA was present in all 13 tested affected individuals and absent from 8 unaffected relatives by sequencing; no LOD score was reported.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2021-01-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:15591279",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2004-12-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:18372316",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2008-07-01"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 4.0,
-    "Citation": "pmid:22248822",
-    "Evidence detail": "Review describes multiple animal models, cell models and protein alteration. Here scored based on animal models.",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2012-01-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Cell culture",
+      "Score": 1.0,
+      "Citation": "pmid:15591279",
+      "Evidence detail": "COS-7 cells expressing the FOXL2-Ala24 polyalanine-expansion construct showed intranuclear aggregates and marked cytoplasmic mislocalization/aggregation compared with predominantly nuclear wild-type FOXL2-Ala14; immunofluorescence confirmed the findings, and co-transfection suggested mutant and wild-type FOXL2 can co-aggregate.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2004-12-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:18372316",
+      "Evidence detail": "COS-7 localization assays and KGN granulosa-like luciferase assays of 17 disease-causing FOXL2 missense mutants showed that many forkhead-domain mutants cause nuclear/cytoplasmic mislocalization and aggregation with impaired transactivation. Evidence is gene-level and not specific to the polyalanine repeat locus.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-07-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 4.0,
+      "Citation": "pmid:22248822",
+      "Evidence detail": "Review summarizes two Foxl2 knockout mouse models and the Polled Intersex Syndrome goat regulatory-deletion model: surviving homozygous mice show BPES-like severe eyelid malformation/open eyes at birth and ovarian failure, while goat and conditional mouse data support FOXL2 roles in ovarian development/maintenance. Evidence is gene-level and not tandem-repeat-specific.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_dates": [
+        "2012-01-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 3.0,
     "Statistics": 0,
@@ -2926,8 +2941,7 @@
     "Models": 4,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 5.5,
     "Genetic Evidence": 9.0
   },
