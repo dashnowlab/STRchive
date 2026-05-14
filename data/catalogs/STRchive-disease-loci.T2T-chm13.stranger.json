@@ -609,6 +609,21 @@
   "Gene": "NIPA1"
 },
 {
+  "LocusId": "aFTLD-U_GOLGA8A",
+  "ReferenceRegion": ["chr15:32225152-32225178"],
+  "LocusStructure": "(CT)*",
+  "VariantType": ["Repeat"],
+  "VariantId": ["aFTLD-U_GOLGA8A"],
+  "PathologicRegion": "chr15:32225152-32225178",
+  "HGNCId": null,
+  "InheritanceMode": [],
+  "DisplayRU": "CT",
+  "Disease": "aFTLD-U",
+  "NormalMax": 189,
+  "PathologicMin": 190,
+  "Gene": "GOLGA8A"
+},
+{
   "LocusId": "MIR7-2_CHNG3",
   "ReferenceRegion": "chr15:86324038-86324057",
   "LocusStructure": "(TTTG)*",
