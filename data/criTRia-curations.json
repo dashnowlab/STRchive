@@ -2041,7 +2041,7 @@
     "Score": 1.0,
     "Citation": "pmid:32937144",
     "Evidence detail": "CSNK1E CGG expansion, methylation, and reduced expression was observed in a FRA22A carrier. Phenotypic data was not provided, therefore this provides support for the regulatory impact of the specific expansion but is not EPM-specific.",
-    "evidence_category": null,
+    "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
@@ -2064,7 +2064,7 @@
     "Collective Evidence": 0,
     "Statistics": 4.0,
     "Function": 1.0,
-    "Functional Alteration": 0.5,
+    "Functional Alteration": 1.5,
     "Models": 0,
     "Rescue": 0
   },

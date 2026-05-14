@@ -323,6 +323,14 @@ def summarize_curations(locus):
         sys.stderr.write(f"Warning: No evidence entries found for locus '{locus_id}'\n")
         return locus
 
+    # Re-apply evidence category/supercategory from EVIDENCE_LOOKUP to fix stale or null values
+    for idx, row in df.iterrows():
+        mapping = NORMALIZED_EVIDENCE_LOOKUP.get(_normalize_evidence_type(row.get('Evidence type')), {})
+        df.at[idx, 'evidence_category'] = mapping.get('evidence_category')
+        df.at[idx, 'evidence_supercategory'] = mapping.get('evidence_supercategory')
+        df.at[idx, 'evidence_max_score'] = mapping.get('evidence_max_score')
+        df.at[idx, 'category_max_score'] = mapping.get('category_max_score')
+
     # Report any evidence types that are not recognized in the EVIDENCE_LOOKUP
     for evidence_type in df['Evidence type'].unique():
         if _normalize_evidence_type(evidence_type) not in NORMALIZED_EVIDENCE_LOOKUP:
