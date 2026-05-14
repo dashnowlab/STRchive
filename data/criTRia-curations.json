@@ -1277,8 +1277,97 @@
   "Source": "ClinGen",
   "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP9",
   "Manual_evidence_level": null,
-  "genetic_evidence_details": [],
-  "experimental_evidence_details": [],
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "ClinVar:65668; Clinvar:8114; ClinVar:929858",
+    "Evidence detail": "25 probands with functional and inheritence evidence",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2009-01-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:37906407",
+    "Evidence detail": "Length affects penetrance, severity, and phenotype. Motif affects instability and phenotype.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2004-08-20"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 2.3,
+    "Citation": "CCID:004220",
+    "Evidence detail": null,
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["1999-02-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 1.0,
+    "Citation": "pmid:29427103",
+    "Evidence detail": "Expanded PolyQ causes SCA2 and/or increased risk for ALS and PD. ClinGen chose to upscore this category due to the strength of the evidence.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:23172909",
+    "Evidence detail": null,
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2000-10-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:37906407",
+    "Evidence detail": "Studied 66 patients",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2000-10-01"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:20740007",
+    "Evidence detail": "Repeat interaction with TDP-43",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_dates": ["2000-10-01"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 4.0,
+    "Citation": "pmid:10973246; pmid:31376479",
+    "Evidence detail": "Hetero and homozygous mice (pmid:10973246) and knock-in mice (pmid:31376479)",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2000-10-01"]
+  }],
+  ],
   "category_summary":
   {
     "Collective Evidence": null,
