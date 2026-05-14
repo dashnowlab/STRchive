@@ -3828,22 +3828,22 @@
   "category_summary":
   {
     "Singular Evidence": 1.5,
-    "Collective Evidence": 3.0,
+    "Collective Evidence": 2.5,
     "Statistics": 6.0,
-    "Function": 1.5,
-    "Functional Alteration": 2,
+    "Function": 0.5,
+    "Functional Alteration": 1.0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 4.0,
-    "Genetic Evidence": 10.5
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 10.0
   },
-  "total_score": 14.5,
-  "publication_count": 3,
-  "publication_interval_years": 17.33,
-  "classification": "Definitive"
+  "total_score": 11.5,
+  "publication_count": 1,
+  "publication_interval_years": null,
+  "classification": "Strong"
 },
 {
   "Disease_ID": "CHNG3",
@@ -5933,7 +5933,7 @@
     "Evidence detail": "PMID:35868859 characterized eight iPSC lines from three heterozygous female XDP carriers with X-chromosome-inactivation clones expressing either the wild-type or XDP haplotype, providing non-patient carrier cell resources for modeling TAF1/SVA effects.",
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
+    "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2022-07-21"]
   },
@@ -5942,10 +5942,10 @@
     "Score": 1.0,
     "Citation": "pmid:34250228",
     "Evidence detail": "Repeat sizing and somatic instability in human postmortem brain tissues from two XDP patients showed higher median repeat numbers and higher degrees of repeat instability in the basal ganglia and cerebellum compared with blood.",
-    "evidence_category": "Models",
+    "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
+    "evidence_max_score": 2,
+    "category_max_score": 2,
     "publication_dates": ["2021-08-01"]
   }],
   "category_summary":
@@ -5954,8 +5954,8 @@
     "Collective Evidence": 3,
     "Statistics": 0,
     "Function": 2,
-    "Functional Alteration": 0.5,
-    "Models": 1.0,
+    "Functional Alteration": 1.5,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
