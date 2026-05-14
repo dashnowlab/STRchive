@@ -3792,6 +3792,17 @@
     "publication_dates": ["2019-10-29"]
   },
   {
+    "Evidence type": "Segregation",
+    "Score": 0.0,
+    "Citation": "pmid:12140665; pmid:19616813",
+    "Evidence detail": "Large multigenerational families with FCMTE/FCTE show clear autosomal dominant segregation of the phenotype; however, linkage analyses excluded known loci (8q23.3-q24.1 and 2p11.1-q12.2), indicating genetic heterogeneity. These studies support heritable segregation of disease but do not demonstrate segregation of the MARCH6 repeat expansion specifically.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2002-07-01", "2009-10-01"]
+  },
+  {
     "Evidence type": "Case-control data",
     "Score": 6.0,
     "Citation": "pmid:31664039",
@@ -3841,9 +3852,9 @@
     "Genetic Evidence": 10.0
   },
   "total_score": 11.5,
-  "publication_count": 1,
-  "publication_interval_years": null,
-  "classification": "Strong"
+  "publication_count": 3,
+  "publication_interval_years": 17.33,
+  "classification": "Definitive"
 },
 {
   "Disease_ID": "CHNG3",
