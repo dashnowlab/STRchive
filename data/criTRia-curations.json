@@ -6683,58 +6683,67 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "Autosomal recessive DBQD2/Baratela-Scott syndrome is associated with biallelic XYLT1 pathogenic variants, including a promoter/5' UTR GGC repeat expansion that causes XYLT1 exon 1 hypermethylation and transcriptional silencing. XYLT1 encodes xylosyltransferase I, which initiates proteoglycan glycosaminoglycan-chain biosynthesis; gene-level patient fibroblast studies show reduced XYLT1 expression and impaired cellular proteoglycan synthesis, supporting disease relevance but not always repeat-specific mechanism.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:30554721",
-    "Evidence detail": "6.0",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2019-01-03"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:30554721",
+      "Evidence detail": "Twelve affected individuals from 10 unrelated BSS/DBQD2-spectrum families were investigated; XYLT1 pathogenic alleles included biallelic sequence/CNV variants and a promoter/5' UTR GGC repeat expansion associated with exon 1 hypermethylation. The methylated/expanded allele accounted for 50% of disease alleles and segregated in trans with sequence variants or deletions where assessable.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2019-01-03"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:24581741",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-03-06"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:24581741",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-03-06"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.5,
-    "Citation": "pmid:24581741",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-03-06"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:24581741",
+      "Evidence detail": "Gene-level, not tandem-repeat-specific: XYLT1 encodes XT-I, which catalyzes the first step of proteoglycan biosynthesis by transferring xylose to serine residues of proteoglycan core proteins to initiate GAG-chain synthesis.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-03-06"
+      ]
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:24581741",
+      "Evidence detail": "PMID 24581741 describes XT-I enzymatic function and effects on proteoglycan biosynthesis.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-03-06"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 1.5,
+      "Citation": "pmid:24581741",
+      "Evidence detail": "Gene-level, not tandem-repeat-specific: qPCR in two patient fibroblast lines with truncating XYLT1 variants showed a dramatic reduction of XYLT1 cDNA; XYLT2 expression was decreased compared with one control, whereas B4GALT7 was not affected.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2014-03-06"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 0,
     "Statistics": 0,
@@ -6743,8 +6752,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.5,
     "Genetic Evidence": 6.0
   },
