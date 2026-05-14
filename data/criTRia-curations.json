@@ -6601,10 +6601,10 @@
     "Score": 6.0,
     "Citation": "pmid:39502942",
     "Evidence detail": "Cohort study identifying biallelic VWA1 variants in affected individuals with consistent neuromuscular phenotype; includes clinical, neurophysiological, and biopsy data. 12 affected individuals had the c.62_71dup, an increase from 2 to 3 GGCGCGGAGC motifs. An additional  11 novel VWA1 variants were identified in the cohort. One familiy from this study overlaps with the previous pmid:33559681 cohort.",
-    "evidence_category": null,
-    "evidence_supercategory": null,
-    "evidence_max_score": 2,
-    "category_max_score": 2,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
     "publication_dates": ["2024-01-01"]
   }],
   "experimental_evidence_details": [
@@ -6621,23 +6621,23 @@
   }],
   "category_summary":
   {
-    "Singular Evidence": 6.0,
+    "Singular Evidence": 6,
     "Collective Evidence": 1.5,
     "Statistics": 0,
     "Function": 0.5,
-    "Functional Alteration": 2.0,
+    "Functional Alteration": 0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 2.5,
-    "Genetic Evidence": 7.5
+    "Experimental Evidence": 0.5,
+    "Genetic Evidence": 12
   },
-  "total_score": 10.0,
+  "total_score": 12.5,
   "publication_count": 3,
   "publication_interval_years": 3.08,
-  "classification": "Moderate"
+  "classification": "Definitive"
 },
 {
   "Disease_ID": "DBQD2",
