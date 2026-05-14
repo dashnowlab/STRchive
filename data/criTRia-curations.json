@@ -5795,10 +5795,10 @@
     "publication_dates": ["2018-04-01"]
   },
   {
-    "Evidence type": "Protein interaction",
-    "Score": 1.0,
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
     "Citation": "pmid:29507423",
-    "Evidence detail": "",
+    "Evidence detail": "PMID 29507423 supports reduced SAMD12 protein levels in patient brains.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
