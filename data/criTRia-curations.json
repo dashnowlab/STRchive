@@ -3905,75 +3905,64 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:38714869",
-      "Evidence detail": "STR3 or STR4* variants in the 15q TTTG STR were identified in 12 unrelated RTSH families; all 76 phenotypically assessed affected participants were heterozygous for STRmut, with 6 additional STRmut carriers whose pretreatment thyroid phenotype could not be assessed.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2024-05-01"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:38714868",
-      "Evidence detail": "Linkage analysis in family A identified a chr15q26.1 critical interval overlapping the TTTG STR (GRCh38 chr15:86,206,051-89,412,131; maximum LOD score 4.8), with the (TTTG)3 allele tracking with thyroid abnormalities in the pedigree.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2024-05-01"
-      ]
-    },
-    {
-      "Evidence type": "Case-control data",
-      "Score": 6.0,
-      "Citation": "pmid:38714868",
-      "Evidence detail": "In a congenital hypothyroidism cohort, (TTTG)3/SNV variants were found in 137/989 cases (13.9%) versus 3/38,722 Japanese population controls (P<1e-300); an independent MNG cohort also showed enrichment (3/33 cases; P<1.2e-8 versus controls).",
-      "evidence_category": "Statistics",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 12,
-      "category_max_score": 12,
-      "publication_dates": [
-        "2024-05-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:38714869",
+    "Evidence detail": "STR3 or STR4* variants in the 15q TTTG STR were identified in 12 unrelated RTSH families; all 76 phenotypically assessed affected participants were heterozygous for STRmut, with 6 additional STRmut carriers whose pretreatment thyroid phenotype could not be assessed.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-05-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:38714868",
+    "Evidence detail": "Linkage analysis in family A identified a chr15q26.1 critical interval overlapping the TTTG STR (GRCh38 chr15:86,206,051-89,412,131; maximum LOD score 4.8), with the (TTTG)3 allele tracking with thyroid abnormalities in the pedigree.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2024-05-01"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:38714868",
+    "Evidence detail": "In a congenital hypothyroidism cohort, (TTTG)3/SNV variants were found in 137/989 cases (13.9%) versus 3/38,722 Japanese population controls (P<1e-300); an independent MNG cohort also showed enrichment (3/33 cases; P<1.2e-8 versus controls).",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2024-05-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:38714868",
-      "Evidence detail": "Locus-specific regulatory evidence: snATAC-seq placed the (TTTG)4 region in thyroid-selective open chromatin, and luciferase assays in FRTL-5 and HEK293 cells showed WT repressor activity that was attenuated by (TTTG)3/SNV variants.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-05-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:38714868",
-      "Evidence detail": "Patient-derived thyroid tissue from an adult (TTTG)3 carrier with MNG showed benign nodular pathology, heterogeneous follicle size, increased resorptive vacuoles, and thyroglobulin staining.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-05-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:38714868",
+    "Evidence detail": "Locus-specific regulatory evidence: snATAC-seq placed the (TTTG)4 region in thyroid-selective open chromatin, and luciferase assays in FRTL-5 and HEK293 cells showed WT repressor activity that was attenuated by (TTTG)3/SNV variants.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-05-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:38714868",
+    "Evidence detail": "Patient-derived thyroid tissue from an adult (TTTG)3 carrier with MNG showed benign nodular pathology, heterogeneous follicle size, increased resorptive vacuoles, and thyroglobulin staining.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-05-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 6.0,
@@ -3982,7 +3971,8 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 1.5,
     "Genetic Evidence": 12
   },
