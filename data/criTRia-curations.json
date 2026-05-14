@@ -446,47 +446,53 @@
   "Inheritance": "XR",
   "Curator": "Laurel Hiatt, Macayla Weiner",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "Partington syndrome (PRTS) is an X-linked ARX-related neurodevelopmental disorder associated with coding polyalanine tract expansions, particularly the recurrent pA2 24-bp duplication c.441_464dup (also reported historically as c.429_452dup) that expands the second polyalanine tract from 12 to 20 alanines. Reported phenotypes include intellectual disability with dystonic hand movements/dysarthria, with overlap across the ARX polyalanine expansion spectrum.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Definitive",
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6,
-    "Citation": "pmid:20506206",
-    "Evidence detail": "6 unrelated patients",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2010-08-01"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 1,
-    "Citation": "pmid:20506206",
-    "Evidence detail": "The severity of clinical presentation generally increases with the length of polyalanine tract expansion, a correlation seen in other polyalanine tract expansion disorders",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2010-08-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6,
-    "Citation": "pmid:26029707",
-    "Evidence detail": "With increasing length of residues in the pA tracts, the clinical presentation becomes more severe, with early onset seizures being a frequent but not consistent finding.",
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2015-05-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6,
+      "Citation": "pmid:20506206",
+      "Evidence detail": "Review of published ARX polyalanine expansion cases reported the recurrent pA2 24-bp duplication (c.429_452dup; now c.441_464dup) in 38 families, including 6 families with Partington syndrome.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2010-08-01"
+      ]
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 1,
+      "Citation": "pmid:20506206",
+      "Evidence detail": "Locus-specific pA2 expansion data support a length/structure effect: the 12-to-20 alanine pA2 expansion is associated with PRTS in a subset of families, while longer uninterrupted pA2 expansion was associated with more severe infantile spasms and a glycine-interrupted expansion with milder PRTS.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2010-08-01"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 6,
+      "Citation": "pmid:26029707",
+      "Evidence detail": "Cohort-level testing of 138 individuals with intellectual disability identified pathogenic pA2 c.441_464dup in 8 patients from 6 families; retrospective evaluation of affected males with dup24 identified hand dystonia consistent with Partington-like syndrome.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2015-05-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [],
-  "category_summary":
-  {
+  "category_summary": {
     "Singular Evidence": 6,
     "Collective Evidence": 1,
     "Statistics": 6,
@@ -495,8 +501,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Genetic Evidence": 12,
     "Experimental Evidence": 0
   },
