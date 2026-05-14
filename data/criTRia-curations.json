@@ -2976,80 +2976,93 @@
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt, Harriet Dashnow",
   "Date": "06/04/2025",
-  "Description": null,
+  "Description": "Autosomal dominant OPDM2 is associated with heterozygous CGG/GGC repeat expansion in the 5' UTR of GIPC1. Across independent cohorts, expanded alleles were identified in familial and sporadic OPDM cases, were absent or very rare in controls, and showed repeat-size association with age at onset/pathogenic thresholds. Functional studies support a repeat-mediated mechanism involving altered GIPC1 expression, p62-positive intranuclear/rimmed-vacuole pathology, RAN translation of GIPC1 CGG repeats into poly-glycine proteins, autophagy-receptor sequestration, and rescue of poly-G-associated autophagy deficits by HSPB1 in cell models.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:32413282",
-    "Evidence detail": "2 families and 6 sporadic cases. Methylation, protein and mRNA level characterization",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2020-06-04"]
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 2.0,
-    "Citation": "pmid:33374016",
-    "Evidence detail": "Longer alleles were associated with earlier age of onset more severe symptoms",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2021-03-03"]
-  },
-  {
-    "Evidence type": "Probands",
-    "Score": 1.5,
-    "Citation": "pmid:39492694",
-    "Evidence detail": "3 clinically confirmed cases with long read sequencing (addresses repeated over time)",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2025-02-03"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:32413282",
+      "Evidence detail": "GIPC1 5' UTR GGC repeat expansions were detected in 3/8 Chinese OPDM families and 9/16 sporadic Chinese OPDM cases, plus 7/194 unrelated Japanese OPDM cases; expansions were absent from 1,000 unaffected Chinese controls and were validated by LRS, RP-PCR, and AL-PCR.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2020-06-04"
+      ]
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 2.0,
+      "Citation": "pmid:33374016",
+      "Evidence detail": "In an independent Chinese OPDM cohort, GIPC1 5' UTR CGG expansion was identified in 4/7 families and 10/20 sporadic cases, co-segregated in Family 1 with linkage support (LOD 3.3), was absent from 376 control alleles, and showed a slight inverse correlation between repeat number and age at onset across 40 Chinese GIPC1-expanded OPDM patients (r = -0.398, P = 0.0163); controls had 6-29 repeats and pathogenic expansion was estimated >60 repeats.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2021-03-03"
+      ]
+    },
+    {
+      "Evidence type": "Probands",
+      "Score": 1.5,
+      "Citation": "pmid:39492694",
+      "Evidence detail": "Targeted long-read dmTGS screening of 57 patients with suspected genetic muscular disease confirmed a GIPC1 GGC repeat expansion in one patient; this is locus-specific clinical utility/proband evidence rather than a detailed OPDM2 case series.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2025-02-03"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Rescue in cell culture",
-    "Score": 2.0,
-    "Citation": "pmid:39936620",
-    "Evidence detail": null,
-    "evidence_category": "Rescue",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2025-06-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 2.0,
-    "Citation": "pmid:39418922",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-11-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 2.0,
-    "Citation": "pmid:35152460",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2022-05-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Rescue in cell culture",
+      "Score": 2.0,
+      "Citation": "pmid:39936620",
+      "Evidence detail": "In poly-G-expressing cell models of GIPC1 CGG repeat translation, HSPB1 overexpression disrupted SQSTM1-poly-G binding, reduced SQSTM1 sequestration in insoluble fractions, restored SQSTM1 puncta formation, and rescued starvation-induced autophagy activation impaired by poly-G aggregates.",
+      "evidence_category": "Rescue",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2025-06-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 2.0,
+      "Citation": "pmid:39418922",
+      "Evidence detail": "Two unrelated GIPC1 CGG expansion carriers with OPDM-like myopathy and later parkinsonism (93 and 96 repeats) showed p62-positive intranuclear inclusions in skin biopsy; case 1 also showed p62-positive muscle-cell inclusions and filamentous intranuclear aggregates by EM.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2024-11-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 2.0,
+      "Citation": "pmid:35152460",
+      "Evidence detail": "Locus-specific but non-OPDM phenotype evidence: patient-derived skin fibroblasts from two GIPC1 CGG expansion-positive movement-disorder cases showed p62/ubiquitin-positive nuclear inclusions and downregulated GIPC1 mRNA and protein by qRT-PCR and western blot.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2022-05-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6,
     "Collective Evidence": 2.0,
     "Statistics": 0,
@@ -3058,8 +3071,7 @@
     "Models": 0,
     "Rescue": 2.0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 6.0,
     "Genetic Evidence": 9.5
   },
