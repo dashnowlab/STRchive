@@ -3989,90 +3989,75 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:31332380; pmid:37923380; pmid:39308795",
-      "Evidence detail": "PMID 31332380: one OPML family (F5305) with CGG/CCG expansion in LOC642361/NUTM2B-AS1; PMID 37923380: two unrelated Chinese OPDM cases with expansions >70 repeats among 26 unsolved OPDM cases; PMID 39308795: four Thai OPDM patients from three unrelated families with expansions >100 repeats/strong somatic instability.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2019-08-01",
-        "2024-03-21",
-        "2024-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:31332380",
-      "Evidence detail": "PMID 31332380: In family F5305, RP-PCR confirmed the expansion in four affected individuals and absence in seven unaffected relatives, including three married-in controls; the expansion was absent in 1,000 controls.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2019-08-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:31332380; pmid:37923380; pmid:39308795",
+    "Evidence detail": "PMID 31332380: one OPML family (F5305) with CGG/CCG expansion in LOC642361/NUTM2B-AS1; PMID 37923380: two unrelated Chinese OPDM cases with expansions >70 repeats among 26 unsolved OPDM cases; PMID 39308795: four Thai OPDM patients from three unrelated families with expansions >100 repeats/strong somatic instability.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2019-08-01", "2024-03-21", "2024-08-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:31332380",
+    "Evidence detail": "PMID 31332380: In family F5305, RP-PCR confirmed the expansion in four affected individuals and absence in seven unaffected relatives, including three married-in controls; the expansion was absent in 1,000 controls.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2019-08-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:38159879",
-      "Evidence detail": "PMID 38159879: Patient muscle immunofluorescence showed aggrephagy pathway proteins p62, NBR1, and LC3B accumulated in intranuclear inclusions, suggesting the LOC642361/NUTM2B-AS1 CGG expansion may impair aggrephagic capacity.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:38159879",
-      "Evidence detail": "PMID 38159879: Patient muscle immunofluorescence showed RNA-binding proteins hnRNPA1, hnRNPA2B1, and MBNL1 accumulated in intranuclear inclusions, consistent with repeat-associated RNA-binding protein sequestration.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:38159879",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:38159879",
-      "Evidence detail": "PMID 38159879: Patient muscle biopsies showed myopathic changes with rimmed vacuoles, p62-positive intranuclear inclusions, filamentous aggregates by electron microscopy, autophagic vacuoles, and swollen/disordered mitochondria.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-02-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:38159879",
+    "Evidence detail": "PMID 38159879: Patient muscle immunofluorescence showed aggrephagy pathway proteins p62, NBR1, and LC3B accumulated in intranuclear inclusions, suggesting the LOC642361/NUTM2B-AS1 CGG expansion may impair aggrephagic capacity.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-02-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:38159879",
+    "Evidence detail": "PMID 38159879: Patient muscle immunofluorescence showed RNA-binding proteins hnRNPA1, hnRNPA2B1, and MBNL1 accumulated in intranuclear inclusions, consistent with repeat-associated RNA-binding protein sequestration.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-02-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:38159879",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-02-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:38159879",
+    "Evidence detail": "PMID 38159879: Patient muscle biopsies showed myopathic changes with rimmed vacuoles, p62-positive intranuclear inclusions, filamentous aggregates by electron microscopy, autophagic vacuoles, and swollen/disordered mitochondria.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-02-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 0,
@@ -4081,7 +4066,8 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 2.5,
     "Genetic Evidence": 7.5
   },
