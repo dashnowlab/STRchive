@@ -21,7 +21,7 @@
     "evidence_max_score": 6,
     "category_max_score": 6,
     "publication_dates": ["2025-06-12"]
-  },],
+  }],
   "experimental_evidence_details": [
   {
     "Evidence type": "Cell Culture",
@@ -522,14 +522,114 @@
   "Gene": "AR",
   "Locus_ID": "SBMA_AR",
   "Inheritance": "AR",
-  "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP ",
-  "Date": "08/08/2023",
+  "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP, Macayla Weiner",
+  "Date": "05/14/2026",
   "Description": "Curated as Kennedy disease (MONDO:0010735) and Spinal and bulbar muscular atrophy, X-linked 1 (MIM:313200) was an included phenotype https://search.clinicalgenome.org/CCID:004161",
   "Source": "ClinGen",
   "SOP_version": "ClinGen Gene Validity Evaluation Criteria SOP9",
   "Manual_evidence_level": null,
-  "genetic_evidence_details": [],
-  "experimental_evidence_details": [],
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6,
+    "Citation": "pmid:15659427",
+    "Evidence detail": "9 probands with functional and inheritence evidence",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 0.5,
+    "Citation": "pmid:11266016",
+    "Evidence detail": "Length affects penetrance, severity, and onset",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  {
+    "Evidence type": "Seggregation",
+    "Score": 1.5,
+    "Citation": "pmid:15659427",
+    "Evidence detail": null,
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Biochemical Function",
+    "Score": 1.5,
+    "Citation": "pmid:37628685",
+    "Evidence detail": "DNA binding inhibited, downregulation of transcription factors causes loss of AR support and an increase in alpha helical structures. This increases stability and causes protein-protein structural changes.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  {
+    "Evidence type": "Protein Interaction",
+    "Score": 0.5,
+    "Citation": "pmid:37628685",
+    "Evidence detail": "Proteins have been found to aggregate",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:15003169",
+    "Evidence detail": "Studies in postmortem patient cells.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:12372280",
+    "Evidence detail": "Transgenic mouse model.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:24309898",
+    "Evidence detail": "Changes in AR expression",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+    {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:19279159",
+    "Evidence detail": "Rescue in a transgenic mouse model.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2024-11-01"]
+  },
+  ],
   "category_summary":
   {
     "Collective Evidence": null,
