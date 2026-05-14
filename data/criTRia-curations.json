@@ -5502,73 +5502,84 @@
 {
   "Disease_ID": "OPDM4",
   "Gene": "RILPL1",
-  "Locus_ID": "OPDM4_RILPL4",
+  "Locus_ID": "OPDM4_RILPL1",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/14/2025",
-  "Description": null,
+  "Description": "A CGG/GGC repeat expansion in the 5′ UTR/promoter region of RILPL1 is associated with autosomal dominant oculopharyngodistal myopathy type 4 (OPDM4). Uploaded sources report RILPL1 expansions in multiple affected individuals, including cohort-level evidence of 11 OPDM4 individuals, with pathogenic repeat sizes around 135–197 repeats and much smaller repeat ranges in controls. Supporting evidence includes linkage/co-segregation in OPDM4 families, patient muscle pathology with rimmed vacuoles and p62-positive intranuclear inclusions, repeat-containing RNA foci with RNA-binding protein/p62 co-localization, and polyG/p62 co-localization in patient muscle. Regulatory studies show locus methylation/transcriptional context and bidirectional transcription across the repeat, but no consistent change in RILPL1 mRNA or protein levels in OPDM4 muscle.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:37923380",
-    "Evidence detail": "11 probands",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2024-03-21"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:35700120",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2022-09-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:37923380",
+      "Evidence detail": "In a 94-case Chinese OPDM cohort, 11 individuals were reported with RILPL1 CGG/GGC repeat expansions (OPDM4) after screening known OPDM repeat loci; the paper provides cohort-level support rather than detailed new RILPL1 proband descriptions.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2024-03-21"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:35700120",
+      "Evidence detail": "Parametric linkage analysis in Family 1 mapped disease to 12q24.3 with a maximum LOD score of 2.4007; RILPL1 GGC expansion was identified within the linked interval, tracked with affected relatives, and shared haplotype data supported a founder effect across families.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2022-09-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 1.0,
-    "Citation": "pmid:35148830",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2022-03-03"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:35700120",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2022-09-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:35148830",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2022-03-03"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 1.0,
+      "Citation": "pmid:35148830",
+      "Evidence detail": "In OPDM4 patient muscle, immunofluorescence showed glycine/polyG signal co-localized with p62 in intranuclear inclusions, consistent with repeat-associated polyG protein aggregation; the paper also notes gene-level RILPL1/RAB10 interaction biology.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2022-03-03"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:35700120",
+      "Evidence detail": "Targeted methylation showed hypermethylation at the RILPL1 locus in unaffected ultralong expansion carriers, while OPDM4 patient muscle showed no significant RILPL1 mRNA or protein change; CAGE-seq and strand-specific RNA-seq supported alternative/antisense TSSs and bidirectional transcription across the repeat locus.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2022-09-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:35148830",
+      "Evidence detail": "Patient muscle biopsies showed rimmed vacuoles and intranuclear filamentous inclusions; RNA FISH/immunofluorescence showed expanded RILPL1 RNA foci co-localized with MBNL1 and p62 in intranuclear inclusions in OPDM4 muscle but not control muscle.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2022-03-03"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 0,
@@ -5577,8 +5588,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 2.5,
     "Genetic Evidence": 7.5
   },
