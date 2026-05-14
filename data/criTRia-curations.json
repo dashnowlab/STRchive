@@ -3751,7 +3751,7 @@
   "Gene": "MARCHF6",
   "Locus_ID": "FAME3_MARCHF6",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt, Harriet Dashnow",
   "Date": "08/12/2025",
   "Description": "Autosomal dominant familial adult myoclonic epilepsy type 3 (FAME3) is associated with an intronic TTTTA/TTTCA repeat expansion in MARCH6/MARCHF6 on chromosome 5p15.2. The expansion was identified by genome sequencing and repeat-primed PCR in four European families with cortical/myoclonic tremor and epilepsy, co-segregated with disease, and was absent from controls in the reported analyses. Expansion length, particularly the TTTCA component, inversely correlated with age at seizure onset. Patient-derived blood cells and fibroblasts showed marked somatic instability and expansion-size variability.",
   "Source": "criTRia",
@@ -3792,17 +3792,6 @@
     "publication_dates": ["2019-10-29"]
   },
   {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": "ExpansionHunter detected TTTCA-containing reads at the MARCH6 intron 1 locus, with concordant support from exSTRa, STRetch, and TRhist; RP-PCR confirmed 5-TTTTA and 3-TTTCA expanded motifs.",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
     "Evidence type": "Case-control data",
     "Score": 6.0,
     "Citation": "pmid:31664039",
@@ -3814,28 +3803,6 @@
     "publication_dates": ["2019-10-29"]
   }],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:19616813",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2009-10-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:19616813",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2009-10-01"]
-  },
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
@@ -3857,28 +3824,6 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:31664039",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2019-10-29"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:12140665",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2002-07-01"]
   }],
   "category_summary":
   {
