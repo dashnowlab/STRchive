@@ -2,8 +2,8 @@
 PMID- 41507280
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260202
-LR  - 20260205
+DCOM- 20260429
+LR  - 20260429
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 16
@@ -58,26 +58,35 @@ PL  - England
 TA  - Sci Rep
 JT  - Scientific reports
 JID - 101563288
-RN  - EC 3.4.24.24 (Matrix Metalloproteinase 2)
-RN  - EC 1.14.13.39 (Nitric Oxide Synthase Type III)
-RN  - EC 1.14.13.39 (NOS3 protein, human)
 RN  - EC 3.4.24.24 (MMP2 protein, human)
+RN  - EC 2.1.1.45 (TYMS protein, human)
+RN  - EC 1.14.13.39 (NOS3 protein, human)
+RN  - EC 3.4.24.24 (Matrix Metalloproteinase 2)
+RN  - EC 2.1.1.45 (Thymidylate Synthase)
+RN  - EC 1.14.13.39 (Nitric Oxide Synthase Type III)
+RN  - 0 (Biomarkers, Tumor)
 SB  - IM
+MH  - Jordan/epidemiology
+MH  - Genetic Association Studies
+MH  - *Breast Neoplasms/genetics/mortality/therapy
+MH  - Polymorphism, Single Nucleotide
+MH  - Genetic Predisposition to Disease
+MH  - *Matrix Metalloproteinase 2/genetics
+MH  - *Thymidylate Synthase/genetics
+MH  - *Nitric Oxide Synthase Type III/genetics
+MH  - *Biomarkers, Tumor/genetics
+MH  - Case-Control Studies
+MH  - Prognosis
 MH  - Humans
 MH  - Female
-MH  - *Breast Neoplasms/genetics/pathology/epidemiology
-MH  - *Matrix Metalloproteinase 2/genetics
-MH  - *Genetic Predisposition to Disease
-MH  - *Nitric Oxide Synthase Type III/genetics
-MH  - Jordan/epidemiology
-MH  - Polymorphism, Single Nucleotide
-MH  - Middle Aged
-MH  - Case-Control Studies
-MH  - Adult
-MH  - Genetic Association Studies
+MH  - Kaplan-Meier Estimate
+MH  - Follow-Up Studies
+MH  - Gene Expression Regulation, Neoplastic
 MH  - Minisatellite Repeats
-MH  - Genotype
+MH  - Adult
+MH  - Middle Aged
 MH  - Aged
+MH  - Aged, 80 and over
 PMC - PMC12864866
 OTO - NOTNLM
 OT  - Carcinoma
@@ -276,7 +285,7 @@ PMID- 41074680
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260317
-LR  - 20260317
+LR  - 20260403
 IS  - 2330-1619 (Electronic)
 IS  - 2330-1619 (Linking)
 VI  - 13
