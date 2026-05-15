@@ -7068,25 +7068,28 @@
   "Inheritance": "XR",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "ZIC3 VACTERLX is supported by two reports of N-terminal polyalanine repeat expansions: a de novo 10-to-12 alanine expansion in one male with VACTERL association overlapping X-linked heterotaxy, and a later report of a large X-linked OAVS family with segregation of a 10-to-11 alanine expansion plus one unrelated male OAVS case with a 10-to-12 alanine expansion. The evidence is locus-specific for the ZIC3 coding polyalanine tract and remains Limited based on available proband/family evidence.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 3.5,
-    "Citation": "pmid:20452998; pmid:32639022",
-    "Evidence detail": "1 prob (1.5), 1 fam with characterization, 1 sporadic (2)",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2010-05-01", "2020-10-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 3.5,
+      "Citation": "pmid:20452998; pmid:32639022",
+      "Evidence detail": "PMID 20452998: one male neonate with VACTERL association/heterotaxy overlap carried a de novo ZIC3 c.165_166insGCCGCC polyalanine expansion (10 to 12 alanines), absent from the mother and 336 control X chromosomes. PMID 32639022: one X-linked OAVS family had eight affected males segregating ZIC3 c.159_161dup p.(Ala55dup) expansion (10 to 11 alanines), and one unrelated male OAVS case carried a 10-to-12 alanine expansion.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2010-05-01",
+        "2020-10-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [],
-  "category_summary":
-  {
+  "category_summary": {
     "Singular Evidence": 3.5,
     "Collective Evidence": 0,
     "Statistics": 0,
@@ -7095,8 +7098,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Genetic Evidence": 3.5,
     "Experimental Evidence": 0
   },
@@ -7104,7 +7106,8 @@
   "publication_count": 2,
   "publication_interval_years": 10.42,
   "classification": "Limited"
-},
+}
+,
 {
   "Disease_ID": "FRA7A",
   "Gene": "ZNF713",
