@@ -4742,17 +4742,6 @@
     "publication_dates": ["2022-11-01", "2020-08-01"]
   },
   {
-    "Evidence type": "Allele",
-    "Score": 1.0,
-    "Citation": "pmid:37145156",
-    "Evidence detail": "",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2023-09-01"]
-  },
-  {
     "Evidence type": "Computational",
     "Score": 0.0,
     "Citation": "pmid:40693562; pmid:39102614",
@@ -4799,9 +4788,9 @@
   },
   {
     "Evidence type": "Regulatory impact",
-    "Score": 0.0,
+    "Score": 0.5,
     "Citation": "pmid:40693562",
-    "Evidence detail": "PMID:40693562 reported patient muscle RNA-seq with normal PLIN4 mRNA expression and no observed PLIN4 splicing effect; no repeat-dependent regulatory impact is supported by this source.",
+    "Evidence detail": "PMID:40693562 reported patient muscle RNA-seq with normal PLIN4 mRNA expression and no observed PLIN4 splicing effect. Western blot revealed increased PLIN4 protein expression in patients compared with controls.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -4818,17 +4807,6 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2023-09-01"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:40693562",
-    "Evidence detail": "",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2025-10-01"]
   }],
   "category_summary":
   {
