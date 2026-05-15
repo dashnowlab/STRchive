@@ -6576,21 +6576,10 @@
   }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Cell culture",
-    "Score": 0.5,
-    "Citation": "pmid:40589716",
-    "Evidence detail": "Evidence of effect of premutation alleles.",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-04-01"]
-  },
-  {
     "Evidence type": "Regulatory impact",
-    "Score": 0.5,
+    "Score": 0.0,
     "Citation": "pmid:40589716",
-    "Evidence detail": "Changes in gene expression evident in affected patients",
+    "Evidence detail": "No consistent differences in TYMS expression were observed between probands and controls. In cultured skin fibroblasts, TYMS protein levels varied between the twins (twin A lower than twin B) but remained within the control range. Similarly, mean TYMS expression levels in patient PBMCs and skin fibroblasts fell within values observed in control samples.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -6602,17 +6591,17 @@
     "Singular Evidence": 1.5,
     "Collective Evidence": 0,
     "Statistics": 0,
-    "Function": 0.5,
+    "Function": 0.0,
     "Functional Alteration": 0,
-    "Models": 0.5,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 1.0,
+    "Experimental Evidence": 0.0,
     "Genetic Evidence": 1.5
   },
-  "total_score": 2.5,
+  "total_score": 1.5,
   "publication_count": 1,
   "publication_interval_years": 0.43,
   "classification": "Limited"
