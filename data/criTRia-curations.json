@@ -6580,7 +6580,7 @@
     "Score": 0.5,
     "Citation": "pmid:40589716",
     "Evidence detail": "Evidence of effect of premutation alleles.",
-    "evidence_category": "Function",
+    "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
@@ -6602,9 +6602,9 @@
     "Singular Evidence": 1.5,
     "Collective Evidence": 0,
     "Statistics": 0,
-    "Function": 1.0,
+    "Function": 0.5,
     "Functional Alteration": 0,
-    "Models": 0,
+    "Models": 0.5,
     "Rescue": 0
   },
   "supercategory_summary":
@@ -7153,8 +7153,8 @@
     "Evidence detail": "Premutation alleles segregate with ASD in three siblings in one family, but are also present in an unaffected father, indicating reduced penetrance or tissue-specific effects. No full or premutation alleles were observed in controls, however they note that the assay is subject to allelic dropout. No additional FRA7A cases were detected in >9,000 neurodevelopmental cytogenetic analyses. Score is reduced from default because of the small number of individuals, presence of premutation alleles in an unaffected parent, and potential assay limitations.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 12,
+    "evidence_max_score": 3,
+    "category_max_score": 3,
     "publication_dates": ["2024-07-27"]
   }],
   "experimental_evidence_details": [
@@ -7188,5 +7188,4 @@
   "publication_count": 1,
   "publication_interval_years": 10.32,
   "classification": "Limited"
-}
-]
+}]
