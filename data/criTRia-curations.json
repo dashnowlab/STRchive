@@ -7130,7 +7130,7 @@
   "Inheritance": "AD",
   "Curator": "Laurel Hiatt, Macayla Weiner, Harriet Dashnow",
   "Date": "08/18/2025",
-  "Description": "A CGG repeat expansion within the first intron of ZNF713 underlies the folate-sensitive fragile site FRA7A. A de novo full expansion (>450 repeats) was identified in a male with autism spectrum disorder (ASD), associated with CpG island hypermethylation and reduced ZNF713 expression in patient-derived LCLs. In a second family, multiple individuals carried premutation alleles (∼42–85 repeats) with evidence of instability, partial methylation, and variable ZNF713 expression (including overexpression). While the molecular mechanism is consistent with other CGG repeat disorders, the association with ASD remains suggestive [@pmid:25196122].",
+  "Description": "A CGG repeat expansion within the first intron/5' region of ZNF713 underlies the folate-sensitive fragile site FRA7A. A de novo full expansion (>450 repeats) was identified in a male with autism spectrum disorder (ASD), associated with CpG island hypermethylation and reduced ZNF713 expression in patient-derived lymphoblastoid cell lines (LCLs). In a second family, three ASD-affected siblings carried paternal premutation alleles (~42–85 repeats) showing mitotic instability, partial/mosaic methylation, and variable ZNF713 expression including overexpression. Control screening identified only normal alleles (5–22 repeats) in 176 individuals and no additional FRA7A cases in >9,000 cytogenetic analyses. While the repeat expansion demonstrates molecular features consistent with other CGG-repeat disorders, the causal relationship with ASD remains suggestive [@pmid:25196122].",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -7139,7 +7139,7 @@
     "Evidence type": "Probands",
     "Score": 1.5,
     "Citation": "pmid:25196122",
-    "Evidence detail": "Two families described. One proband with a de novo full CGG expansion (>450 repeats) and FRA7A expression with ASD. A second family showed three ASD-affected siblings carrying premutation alleles inherited from an unaffected father, with evidence of instability and mosaicism.",
+    "Evidence detail": "Two unrelated families described. Family 7,792 included one proband with a maternally derived full CGG expansion (>450 repeats), FRA7A fragile site, CpG methylation, and reduced ZNF713 expression. Family TCAG0070 included three ASD-affected siblings carrying paternal premutation alleles with evidence of instability, mosaicism, and variable gene expression.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -7150,7 +7150,7 @@
     "Evidence type": "Segregation",
     "Score": 0.5,
     "Citation": "pmid:25196122",
-    "Evidence detail": "Premutation alleles segregate with ASD in three siblings in one family, but are also present in an unaffected father, indicating reduced penetrance or tissue-specific effects. No full or premutation alleles were observed in controls, however they note that the assay is subject to allelic dropout.",
+    "Evidence detail": "Premutation alleles segregate with ASD in three siblings in one family, but are also present in an unaffected father, indicating reduced penetrance or tissue-specific effects. No full or premutation alleles were observed in controls, however they note that the assay is subject to allelic dropout. No additional FRA7A cases were detected in >9,000 neurodevelopmental cytogenetic analyses. Score is reduced from default because of the small number of individuals, presence of premutation alleles in an unaffected parent, and potential assay limitations.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -7188,59 +7188,5 @@
   "publication_count": 1,
   "publication_interval_years": 10.32,
   "classification": "Limited"
-},
-{
-  "Disease_ID": "FRA7A",
-  "Gene": "ZNF713",
-  "Locus_ID": "FRA7A_ZNF13",
-  "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
-  "Date": "08/18/2025",
-  "Description": "A CGG-repeat expansion at the folate-sensitive fragile site FRA7A lies in the first intron/5' region of ZNF713 and was reported in association with autistic spectrum disorder (ASD). One male proband had a maternally derived full expansion (>450 CGGs) with CpG island hypermethylation and reduced ZNF713 expression, and a second unrelated ASD family had three affected siblings carrying paternal FRA7A premutation alleles with partial/mosaic methylation, mitotic instability, and ZNF713 misregulation. Control data showed normal alleles of 5–22 repeats in 176 individuals and no additional FRA7A cases in >9,000 neurodevelopmental cytogenetic analyses. The authors noted that a firm ASD link was not yet established, but the dynamic mutation and functional dysregulation support a moderate locus-disease relationship.",
-  "Source": "criTRia",
-  "SOP_version": "criTRia v0",
-  "Manual_evidence_level": null,
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 3,
-    "Citation": "pmid:25196122",
-    "Evidence detail": "Two unrelated ASD families were described: Family 7,792 had one male proband with a maternally derived FRA7A full CGG expansion (>450 repeats), CpG methylation, and reduced ZNF713 expression; Family TCAG0070 had three affected siblings carrying paternal FRA7A premutation alleles with partial/mosaic methylation, mitotic instability in one sibling, and ZNF713 dysregulation.",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2014-11-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 4,
-    "Citation": "pmid:25196122",
-    "Evidence detail": "PCR sizing of 176 controls showed 14 normal alleles (5–22 CGG repeats) and no premutation-range alleles; no additional FRA7A cases were detected in >9,000 neurodevelopmental cytogenetic analyses. Controls were not phenotype-matched and the PCR assay could miss heterozygous full expansions, so support is imperfect.",
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2014-11-01"]
-  }],
-  "experimental_evidence_details": [],
-  "category_summary":
-  {
-    "Singular Evidence": 3,
-    "Collective Evidence": 0,
-    "Statistics": 4,
-    "Function": 0,
-    "Functional Alteration": 0,
-    "Models": 0,
-    "Rescue": 0
-  },
-  "supercategory_summary":
-  {
-    "Genetic Evidence": 7,
-    "Experimental Evidence": 0
-  },
-  "total_score": 7,
-  "publication_count": 1,
-  "publication_interval_years": null,
-  "classification": "Moderate"
-}]
+}
+]
