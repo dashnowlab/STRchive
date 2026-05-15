@@ -6138,36 +6138,31 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 1,
-      "Citation": "pmid:19948535",
-      "Evidence detail": "One female proband from a 230-patient ToF cohort carried TBX1 c.1399-1428dup30, an in-frame 30-bp polyalanine expansion; the variant was absent in 185 controls, mother was negative, and father was unavailable. Phenotype included ToF with absent pulmonary valve, isolated left pulmonary artery, additional VSD, scoliosis, and no 22q11.2-typical facial gestalt; functional testing showed severely reduced transcriptional activity and protein aggregation, but segregation was unavailable.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2010-05-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 1,
+    "Citation": "pmid:19948535",
+    "Evidence detail": "One female proband from a 230-patient ToF cohort carried TBX1 c.1399-1428dup30, an in-frame 30-bp polyalanine expansion; the variant was absent in 185 controls, mother was negative, and father was unavailable. Phenotype included ToF with absent pulmonary valve, isolated left pulmonary artery, additional VSD, scoliosis, and no 22q11.2-typical facial gestalt; functional testing showed severely reduced transcriptional activity and protein aggregation, but segregation was unavailable.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2010-05-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 1,
-      "Citation": "pmid:16141220",
-      "Evidence detail": "Gene-level, not tandem-repeat/locus-specific: timed conditional Tbx1 deletion in mouse embryos caused pharyngeal and cardiovascular developmental defects, including aortic arch patterning and outflow tract abnormalities; the study supports Tbx1 developmental function but does not model the human TBX1 polyalanine repeat expansion.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2005-10-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1,
+    "Citation": "pmid:16141220",
+    "Evidence detail": "Gene-level, not tandem-repeat/locus-specific: timed conditional Tbx1 deletion in mouse embryos caused pharyngeal and cardiovascular developmental defects, including aortic arch patterning and outflow tract abnormalities; the study supports Tbx1 developmental function but does not model the human TBX1 polyalanine repeat expansion.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2005-10-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 1,
     "Collective Evidence": 0,
     "Statistics": 0,
@@ -6176,7 +6171,8 @@
     "Models": 1,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 1,
     "Genetic Evidence": 1
   },
@@ -6184,8 +6180,7 @@
   "publication_count": 2,
   "publication_interval_years": 4.58,
   "classification": "Limited"
-}
-,
+},
 {
   "Disease_ID": "FECD3",
   "Gene": "TCF4",
