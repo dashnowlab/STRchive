@@ -5236,9 +5236,9 @@
   "Gene": "RAI1",
   "Locus_ID": "FAME8_RAI1",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt, Harriet Dashnow",
   "Date": "08/14/2025",
-  "Description": null,
+  "Description": "FAME8 is an autosomal dominant benign adult familial myoclonic epilepsy caused by an intronic RAI1 TTTTA repeat expansion followed by TTTCA repeat insertion. The locus was reported in a large Malian family, where the expansion co-segregated with disease in affected relatives and TTTCA insertions were absent from Malian controls. RAI1 blood RNA studies did not show altered expression, suggesting RAI1 haploinsufficiency is unlikely; the disease mechanism remains uncertain and likely repeat-dependent.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -5247,7 +5247,7 @@
     "Evidence type": "Probands",
     "Score": 1.5,
     "Citation": "pmid:37994247",
-    "Evidence detail": "1 family",
+    "Evidence detail": "One large Malian BAFME8 family: 10 affected and 17 unaffected relatives were studied; RAI1 intron 4 TTTTA expansion with TTTCA insertion was identified by long-read sequencing/RP-PCR, co-segregated with disease, and TTTCA insertions were absent in 200 Malian controls.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -5256,9 +5256,9 @@
   },
   {
     "Evidence type": "Computational",
-    "Score": 1.5,
+    "Score": 0.0,
     "Citation": "pmid:38871700",
-    "Evidence detail": "use a few",
+    "Evidence detail": "Identified a coding CAG repeat in RAI1 that was computationally predicted to be at risk for expansion based on population variability and that RAI1 is more highly expressed in the brain than other tissues. However, this evidence is not specific to the intronic TTTTA/TTTCA repeat expansion and so was given a score of 0.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -5267,78 +5267,34 @@
   }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:37994247; pmid:38876750",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-01-01", "2024-07-01"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:37994247",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-01-01"]
-  },
-  {
     "Evidence type": "Regulatory impact",
-    "Score": 0.5,
+    "Score": 0.0,
     "Citation": "pmid:37994247",
-    "Evidence detail": "Expression",
+    "Evidence detail": "Leukocyte RNA levels of RAI1 in six Malian BAFME patients were no different from controls. As no difference was observed, this evidence was given a score of 0.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-01-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:37994247",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2024-01-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:37994247",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
     "category_max_score": 2,
     "publication_dates": ["2024-01-01"]
   }],
   "category_summary":
   {
     "Singular Evidence": 1.5,
-    "Collective Evidence": 1.5,
+    "Collective Evidence": 0.0,
     "Statistics": 0,
-    "Function": 1.5,
-    "Functional Alteration": 1.5,
+    "Function": 0.0,
+    "Functional Alteration": 0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 3.0,
-    "Genetic Evidence": 3.0
+    "Experimental Evidence": 0.0,
+    "Genetic Evidence": 1.5
   },
-  "total_score": 6.0,
-  "publication_count": 3,
-  "publication_interval_years": 0.5,
+  "total_score": 1.5,
+  "publication_count": 2,
+  "publication_interval_years": 0.45,
   "classification": "Limited"
 },
 {
