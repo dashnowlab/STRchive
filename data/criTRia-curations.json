@@ -1172,113 +1172,132 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/12/2025",
-  "Description": null,
+  "Description": "SCA8 is associated with a dominantly inherited CTG•CAG repeat expansion at the ATXN8OS/ATXN8 locus. Evidence includes expanded alleles in SCA8 families with reduced penetrance, enrichment of CCG•CGG interruptions in higher-penetrance families, bidirectional transcription producing noncoding CUG-containing ATXN8OS RNA and CAG/polyglutamine products, and cell/model data supporting RNA and protein gain-of-function mechanisms.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:34632710",
-    "Evidence detail": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2021-11-08"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:16804541",
-    "Evidence detail": null,
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2006-07-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:34632710",
+      "Evidence detail": "Large SCA8 cohort of 77 families including 199 expansion carriers (111 affected, 88 asymptomatic); 10 families showed autosomal-dominant inheritance and CCG•CGG interruptions were enriched in families with multiple affected individuals.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2021-11-08"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 6.0,
+      "Citation": "pmid:16804541",
+      "Evidence detail": "",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2006-07-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:10192387",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:10192387",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.5,
-    "Citation": "pmid:10192387",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:10192387",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:10192387",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:10192387",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:34632710",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2021-11-08"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:10192387",
+      "Evidence detail": "ATXN8OS is transcribed through the SCA8 CTG repeat as a processed, untranslated CUG-containing RNA; brain/cerebellar expression supports a locus-specific RNA function.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1999-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:10192387",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1999-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 1.5,
+      "Citation": "pmid:10192387",
+      "Evidence detail": "Strand-specific RT-PCR/RACE showed the CTG repeat is in a spliced, polyadenylated ATXN8OS transcript expressed in brain and overlapping an opposite-strand transcript, supporting locus-specific regulatory impact.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1999-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:10192387",
+      "Evidence detail": "Curator review needed: cited source used patient/family DNA and human tissue RNA expression assays, but no patient-derived cell functional alteration assay was identified.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1999-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:10192387",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "1999-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 2.0,
+      "Citation": "pmid:10192387",
+      "Evidence detail": "",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_dates": [
+        "1999-04-01"
+      ]
+    },
+    {
+      "Evidence type": "Cell culture",
+      "Score": 1.0,
+      "Citation": "pmid:34632710",
+      "Evidence detail": "Patient-derived repeat constructs in T98/HEK293T cells showed CCG•CGG interruptions increased cell toxicity, p-eIF2α activation, and polyAla/polySer RAN protein levels independent of RNA abundance.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2021-11-08"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 0,
     "Statistics": 6.0,
@@ -1287,8 +1306,7 @@
     "Models": 3.0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 6,
     "Genetic Evidence": 12.0
   },
