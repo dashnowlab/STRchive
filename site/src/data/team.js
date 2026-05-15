@@ -42,4 +42,10 @@ export const team = [
     affiliation: "University of Colorado",
     link: "https://dashnowlab.org/members/macayla-weiner.html",
   },
+  {
+    name: "Gabriel Zinser",
+    role: "Research Assistant",
+    affiliation: "University of Colorado",
+    link: "https://dashnowlab.org/members/gabriel-zinser.html",
+  },
 ];
