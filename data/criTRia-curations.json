@@ -6558,7 +6558,7 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner",
   "Date": "08/14/2025",
-  "Description": "A GATGGT repeat in the TYMS gene was reported to cause congenital progressive melanosis (CPUM). This paper sequenced (WGS) two affected twins.",
+  "Description": "A GATGGT repeat in the TYMS gene was reported to cause congenital progressive melanosis (CPUM). This paper sequenced (WGS) two affected twins [@pmid:40589716].",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -6578,7 +6578,7 @@
   {
     "Evidence type": "Cell culture",
     "Score": 0.5,
-    "Citation": "pmid:24763282",
+    "Citation": "pmid:40589716",
     "Evidence detail": "Evidence of effect of premutation alleles.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
@@ -6589,7 +6589,7 @@
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
-    "Citation": "pmid:24763282",
+    "Citation": "pmid:40589716",
     "Evidence detail": "Changes in gene expression evident in affected patients",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
@@ -7147,8 +7147,8 @@
     "publication_dates": ["2014-09-04"]
   },
   {
-    "Evidence type": "Case-control data",
-    "Score": 2.0,
+    "Evidence type": "Computational",
+    "Score": 0.5,
     "Citation": "pmid:25196122",
     "Evidence detail": "Poorly matched controls and small power, but did find statistical significance.",
     "evidence_category": "Collective Evidence",
