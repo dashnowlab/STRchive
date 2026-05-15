@@ -1084,135 +1084,157 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/12/2025",
-  "Description": null,
+  "Description": "A heterozygous pathogenic CAG repeat expansion in the coding region of ATXN7 causes autosomal dominant spinocerebellar ataxia type 7 (SCA7), characterized by progressive cerebellar ataxia and retinal degeneration. Uploaded studies support the locus-disease relationship through segregation of expanded CAG alleles in SCA7 families, molecularly confirmed case/control cohorts across multiple populations, repeat-length associations with age at onset/anticipation, and experimental evidence that polyQ-expanded ataxin-7 disrupts STAGA/TFTC-mediated transcriptional regulation, forms nuclear inclusions, and causes disease-relevant phenotypes in cell and animal models.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Definitive",
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "genereviews:NBK1256",
-    "Evidence detail": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": []
-  },
-  {
-    "Evidence type": "Allele",
-    "Score": 2.0,
-    "Citation": "genereviews:NBK1256",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": []
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:8908515",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["1996-10-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:30721448; pmid:28597910; pmid:25900954; pmid:11030806",
-    "Evidence detail": null,
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2019-09-01", "2017-09-01", "2015-02-01", "2000-10-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "genereviews:NBK1256",
+      "Evidence detail": "GeneReviews summarizes SCA7 as established by identification of a heterozygous abnormal ATXN7 CAG trinucleotide repeat expansion in a proband and notes that more than 1,000 affected individuals have been identified worldwide.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": []
+    },
+    {
+      "Evidence type": "Allele",
+      "Score": 2.0,
+      "Citation": "genereviews:NBK1256",
+      "Evidence detail": "GeneReviews defines ATXN7 CAG repeat ranges as normal 7–27, mutable normal 28–33, pathogenic reduced penetrance 34–36, and pathogenic full penetrance 37–460 repeats; longer repeats correlate with earlier onset, greater severity, and faster progression.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 3,
+      "publication_dates": []
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:8908515",
+      "Evidence detail": "In 8 SCA7 families, RED detected 150-240 bp CAG expansion products in all affected individuals; expansions cosegregated with disease (P < 0.000001, n = 66), with repeat-size instability observed in affected offspring.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "1996-10-01"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 6.0,
+      "Citation": "pmid:30721448; pmid:28597910; pmid:25900954; pmid:11030806",
+      "Evidence detail": "Uploaded case-control/cohort studies support ATXN7 CAG expansion enrichment in SCA7: Chinese families showed affected alleles of 44-85 CAG versus 9-18 in 67 controls; Indian SCA7 families had 22 affected individuals with 40-94 CAG expansions and 382 population controls; rs6798742 haplotype association was replicated in Indian and Mexican expansion carriers. PMID 30721448 is a biomarker case-control study, not primary expansion-enrichment evidence.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2019-09-01",
+        "2017-09-01",
+        "2015-02-01",
+        "2000-10-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-01-01"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-01-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-01-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-01-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2008-01-01"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2008-01-01"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:18418675",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-01-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "Gene-level/locus-relevant evidence: ataxin-7 is a core STAGA/TFTC transcription co-activator component with histone acetyltransferase-related function; polyQ expansion alters this activity.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "Gene-level/locus-relevant evidence: ataxin-7 is incorporated into STAGA/TFTC transcription co-activator complexes and mutant polyQ-expanded ataxin-7 perturbs interactions with transcriptional regulatory machinery.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "PolyQ-expanded ataxin-7 alters SAGA/STAGA/TFTC histone acetyltransferase activity and chromatin/transcriptional regulation in disease-relevant experimental systems.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "Patient CNS tissue shows mutant ataxin-7 nuclear inclusions with ubiquitin-proteasome components and neurodegenerative pathology in SCA7-vulnerable regions; evidence is tissue/cell-level but not a separate locus-genotyping cohort.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "Non-patient cell models expressing mutant polyQ-expanded ataxin-7 show enhanced nuclear localization/toxicity and activation of apoptotic pathways, supporting a repeat-length-dependent toxic gain of function.",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 2.0,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "SCA7 mouse models expressing polyQ-expanded ataxin-7 develop gait ataxia, nuclear inclusions, Purkinje-cell dendritic degeneration, and non-cell-autonomous cerebellar pathology resembling human SCA7.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Cell culture",
+      "Score": 1.0,
+      "Citation": "pmid:18418675",
+      "Evidence detail": "Cell-culture models expressing polyQ-expanded ataxin-7 reproduce disease-relevant molecular phenotypes, including altered transcriptional regulation, mutant protein accumulation, and cellular toxicity.",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2008-01-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 3,
     "Statistics": 6.0,
@@ -1221,8 +1243,7 @@
     "Models": 3.0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 6.0,
     "Genetic Evidence": 12
   },
