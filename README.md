@@ -16,6 +16,7 @@ Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K., VanNoy, G.E
 - Akshay Avvaru
 - Vincent Rubinetti
 - Macayla Weiner
+- Gabriel Zinser
 
 ## Contributing
 
