@@ -3038,80 +3038,93 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "Autosomal dominant hand-foot-genital syndrome type III (HFG-III) is associated with expansions of the third N-terminal polyalanine tract in HOXA13. PMID 10839976 reported an HFGS family with a 24-bp in-frame insertion in exon 1 that expands HOXA13 polyalanine tract III from 18 to 26 alanines and segregates across multiple affected relatives. PMID 17935235 reported a father-daughter family with a 42-bp insertion adding 14 alanines to the same tract and showed that expanded HOXA13 proteins mislocalize to cytoplasmic aggregates, show reduced steady-state abundance, and can sequester wild-type HOXA13/HOXD13 in transfected cells.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 0.5,
-    "Citation": "pmid:10839976",
-    "Evidence detail": " I'm not convinced they all have type 3 so gave 0.1 each | 5.0",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2000-07-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:10839976",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2000-07-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 0.5,
+      "Citation": "pmid:10839976",
+      "Evidence detail": "One HFGS family (family 4) had a HOXA13 tract III 24-bp in-frame insertion after base 387, expanding the third N-terminal polyalanine tract from 18 to 26 alanines, with typical limb and genitourinary abnormalities.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2000-07-01"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:10839976",
+      "Evidence detail": "The HOXA13 tract III expansion was detected in multiple affected relatives in family 4 (I.2, III.1, III.3, and III.5) and was reported as stable over at least three generations.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2000-07-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:17935235",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2007-12-15"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:17935235",
+      "Evidence detail": "In transfected COS-7 cells, +10 and +14 HOXA13 polyalanine expansion proteins sequestered wild-type HOXA13 and wild-type HOXD13 into cytoplasmic aggregates in a length-dependent manner.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:17935235",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:17935235",
+      "Evidence detail": ".",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    },
+    {
+      "Evidence type": "Non-human model organism",
+      "Score": 2.0,
+      "Citation": "pmid:17935235",
+      "Evidence detail": "",
+      "evidence_category": "Models",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 4,
+      "category_max_score": 4,
+      "publication_dates": [
+        "2007-12-15"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 0.5,
     "Collective Evidence": 1.5,
     "Statistics": 0,
@@ -3120,8 +3133,7 @@
     "Models": 2.0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 4.0,
     "Genetic Evidence": 2.0
   },
