@@ -2526,88 +2526,75 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:36493768",
-      "Evidence detail": "Thirteen Australian individuals with adult-onset cerebellar ataxia carried pure intronic FGF14 (GAA)>250 expansions by LR-PCR/RP-PCR; eight had genome-sequence support and five were further characterized by long-read sequencing.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2023-01-05"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 2.0,
-      "Citation": "pmid:39263992",
-      "Evidence detail": "In 102 genetically confirmed SCA27B patients, the expanded allele had median size 337 repeats (maximum 521), and larger repeat size was associated with younger age at disease onset.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2024-12-01"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.0,
-      "Citation": "pmid:12489043",
-      "Evidence detail": "Gene-level evidence only: linkage in an autosomal dominant ataxia family mapped to chromosome 13q34 with maximum LOD score 4.28 at D13S280 and identified FGF14 F145S; not specific to the intronic GAA SCA27B repeat locus.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2003-01-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:36493768",
+    "Evidence detail": "Thirteen Australian individuals with adult-onset cerebellar ataxia carried pure intronic FGF14 (GAA)>250 expansions by LR-PCR/RP-PCR; eight had genome-sequence support and five were further characterized by long-read sequencing.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2023-01-05"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:39263992",
+    "Evidence detail": "In 102 genetically confirmed SCA27B patients, the expanded allele had median size 337 repeats (maximum 521), and larger repeat size was associated with younger age at disease onset.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2024-12-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.0,
+    "Citation": "pmid:12489043",
+    "Evidence detail": "Gene-level evidence only: linkage in an autosomal dominant ataxia family mapped to chromosome 13q34 with maximum LOD score 4.28 at D13S280 and identified FGF14 F145S; not specific to the intronic GAA SCA27B repeat locus.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2003-01-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 1.0,
-      "Citation": "pmid:12123606",
-      "Evidence detail": "Gene-level model only: Fgf14-deficient mice were viable but developed ataxia and paroxysmal hyperkinetic dyskinesia with reduced dopamine-agonist responses; not specific to the intronic GAA SCA27B repeat locus.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2002-07-03"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:17978045",
-      "Evidence detail": "Gene-level variant evidence only: FGF14 F145S reduced Nav channel localization at the axon initial segment, attenuated sodium currents, and disrupted wild-type FGF14 interaction with Nav alpha subunits; not specific to the intronic GAA SCA27B repeat locus.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2007-10-31"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 2.0,
-      "Citation": "pmid:39263992",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-12-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:12123606",
+    "Evidence detail": "Gene-level model only: Fgf14-deficient mice were viable but developed ataxia and paroxysmal hyperkinetic dyskinesia with reduced dopamine-agonist responses; not specific to the intronic GAA SCA27B repeat locus.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2002-07-03"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:17978045",
+    "Evidence detail": "Gene-level variant evidence only: FGF14 F145S reduced Nav channel localization at the axon initial segment, attenuated sodium currents, and disrupted wild-type FGF14 interaction with Nav alpha subunits; not specific to the intronic GAA SCA27B repeat locus.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2007-10-31"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 2.0,
+    "Citation": "pmid:39263992",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-12-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 3.0,
     "Statistics": 0,
@@ -2616,7 +2603,8 @@
     "Models": 1.0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 3.5,
     "Genetic Evidence": 9.0
   },
