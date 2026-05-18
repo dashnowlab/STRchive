@@ -3962,113 +3962,132 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/11/2025",
-  "Description": null,
+  "Description": "Autosomal dominant spinocerebellar ataxia 36 (SCA36) is caused by a heterozygous intronic GGCCTG hexanucleotide repeat expansion in NOP56. The relationship is supported by multiple SCA36 cohorts and families with repeat-positive affected individuals, autosomal dominant segregation/linkage evidence, and cohort screening showing NOP56 expansions among undiagnosed hereditary ataxia cases. Experimental support is mainly gene-level: NOP56 functions in box C/D snoRNP biogenesis and ribosomal RNA methylation, while several cited functional evidence rows require curator review because the provided sources do not directly test the SCA36 repeat locus.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:37332636",
-    "Evidence detail": null,
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2023-06-01"]
-  },
-  {
-    "Evidence type": "Computational",
-    "Score": 0.5,
-    "Citation": "pmid:28761930",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2017-08-01"]
-  },
-  {
-    "Evidence type": "Segregation",
-    "Score": 1.5,
-    "Citation": "pmid:28761930",
-    "Evidence detail": null,
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
-    "publication_dates": ["2017-08-01"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:37332636",
-    "Evidence detail": null,
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2023-06-01"]
-  }],
+    {
+      "Evidence type": "Probands",
+      "Score": 6.0,
+      "Citation": "pmid:37332636",
+      "Evidence detail": "NOP56 GGCCTG repeat expansion identified in 37 individuals from 16 apparently unrelated families with SCA36 in an Eastern Spain ataxia cohort; most families showed autosomal dominant transmission.",
+      "evidence_category": "Singular Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 6,
+      "category_max_score": 6,
+      "publication_dates": [
+        "2023-06-01"
+      ]
+    },
+    {
+      "Evidence type": "Computational",
+      "Score": 0.5,
+      "Citation": "pmid:28761930",
+      "Evidence detail": "Exome sequencing and SNP-array linkage analysis in two dominant ataxia families found chromosome 20 candidate regions including NOP56, with no rare coding ataxia-gene variants identified; RP-PCR/Southern blot then confirmed the intronic GGCCTG expansion.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2017-08-01"
+      ]
+    },
+    {
+      "Evidence type": "Segregation",
+      "Score": 1.5,
+      "Citation": "pmid:28761930",
+      "Evidence detail": "Affected individuals in two families shared linked chromosome 20 haplotypes consistent with autosomal dominant inheritance; the study notes maximum LOD was limited by pedigree power and used linkage to prioritize NOP56 expansion testing.",
+      "evidence_category": "Collective Evidence",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 3,
+      "category_max_score": 3,
+      "publication_dates": [
+        "2017-08-01"
+      ]
+    },
+    {
+      "Evidence type": "Case-control data",
+      "Score": 6.0,
+      "Citation": "pmid:37332636",
+      "Evidence detail": "Cohort screening identified NOP56 expansions in 16/297 hereditary ataxia pedigrees (5.4%) and 16/84 screened undiagnosed cerebellar ataxia families; no matched unaffected control group was reported in this study.",
+      "evidence_category": "Statistics",
+      "evidence_supercategory": "Genetic Evidence",
+      "evidence_max_score": 12,
+      "category_max_score": 12,
+      "publication_dates": [
+        "2023-06-01"
+      ]
+    }
+  ],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:37810464",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2023-01-01"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:28761930",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-08-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:19620283",
-    "Evidence detail": "Epigenetic change",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2009-09-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:37332636",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2023-06-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:37332636",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2023-06-01"]
-  }],
-  "category_summary":
-  {
+    {
+      "Evidence type": "Biochemical function",
+      "Score": 0.5,
+      "Citation": "pmid:37810464",
+      "Evidence detail": "Gene-level, not SCA36 locus-specific: NOP56 is described as a core scaffolding component of box C/D snoRNP complexes involved in ribosomal RNA methylation; no biochemical assay of the SCA36 expansion was performed.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2023-01-01"
+      ]
+    },
+    {
+      "Evidence type": "Protein interaction",
+      "Score": 0.5,
+      "Citation": "pmid:28761930",
+      "Evidence detail": "",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2017-08-01"
+      ]
+    },
+    {
+      "Evidence type": "Regulatory impact",
+      "Score": 0.5,
+      "Citation": "pmid:19620283",
+      "Evidence detail": "Gene-level, not SCA36 locus-specific: siRNA depletion of NOP56 in HeLa cells altered U3/U8 snoRNA maturation levels, supporting a role in box C/D snoRNP biogenesis rather than an epigenetic effect of the SCA36 repeat.",
+      "evidence_category": "Function",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2009-09-01"
+      ]
+    },
+    {
+      "Evidence type": "Patient cells",
+      "Score": 1.0,
+      "Citation": "pmid:37332636",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 2,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2023-06-01"
+      ]
+    },
+    {
+      "Evidence type": "Non-patient cells",
+      "Score": 0.5,
+      "Citation": "pmid:37332636",
+      "Evidence detail": "",
+      "evidence_category": "Functional Alteration",
+      "evidence_supercategory": "Experimental Evidence",
+      "evidence_max_score": 1,
+      "category_max_score": 2,
+      "publication_dates": [
+        "2023-06-01"
+      ]
+    }
+  ],
+  "category_summary": {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.0,
     "Statistics": 6.0,
@@ -4077,8 +4096,7 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary":
-  {
+  "supercategory_summary": {
     "Experimental Evidence": 3.0,
     "Genetic Evidence": 12
   },
