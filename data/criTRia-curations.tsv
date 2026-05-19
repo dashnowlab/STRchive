@@ -1,5 +1,5 @@
 Gene	Disease_ID	Locus_ID	Inheritance	Source	SOP_version	Date	classification	total_score	genetic_evidence_score	experimental_evidence_score	publication_count	publication_interval_years	Curator
-ABCD3	OPDM5	OPDM5_ABCD3	AD	criTRia	criTRia v0	04/29/2026	Moderate	10.0	8.5	1.5	1		Laurel Hiatt, Macayla Weiner, Harriet Dashnow
+ABCD3	OPDM5	OPDM5_ABCD3	AD	criTRia	criTRia v0	04/29/2026	Moderate	10.0	8.5	1.5	1		Laurel Hiatt, Macayla Weiner, Harriet Dashnow, Elbay Aliyev
 AFF2	FRAXE	FRAXE_AFF2	XLR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP11	08/11/2025	Definitive	14.5	12	2.5	7	20	Intellectual Disability and Autism GCEP
 AFF3	FRA2A	FRA2A_AFF3	AD	criTRia	criTRia v0	08/12/2025	Definitive	12.0	8.0	4.0	2	10.59	Macayla Weiner, Laurel Hiatt
 AR	SBMA	SBMA_AR	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP9	08/08/2023	Definitive	13.5	7.5	6	11	32	Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP 
@@ -26,19 +26,19 @@ DMPK	DM1	DM1_DMPK	AD	criTRia	criTRia v0	07/21/2025	Definitive	18	12	6	7	30.58	La
 EIF4A3	RCPS	RCPS_EIF4A3	AR	criTRia	criTRia v0	06/02/2025	Definitive	15	9	6	3	4.24	Laurel Hiatt
 FGF14	SCA27B	SCA27B_FGF14	AR	criTRia	criTRia v0	06/04/2025	Definitive	12.5	9.0	3.5	5	22.41	Laurel Hiatt, Harriet Dashnow
 FMR1	FXS	FXS_FMR1	XD	criTRia	criTRia v0	08/18/2025	Definitive	14.5	11.0	3.5	8	28.67	Macayla Weiner
-FMR1	FXTAS,POF1	FXTAS,POF1_FMR1	XD	criTRia	criTRia v0	08/18/2025	Definitive	14.0	12	2.0	2	0.86	Macayla Weiner
+FMR1	FXTAS,POF1	FXTAS,POF1_FMR1	XD	criTRia	criTRia v0	08/18/2025	Strong	14.0	12	2.0	2	0.86	Macayla Weiner
 FOXL2	BPES	BPES_FOXL2	AD/AR	criTRia	criTRia v0	06/04/2025	Definitive	14.5	9.0	5.5	6	19.47	Laurel Hiatt
 FXN	FRDA	FRDA_FXN	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP5	12/22/2017	Definitive	18	12	6	7	15	Hypertrophic Cardiomyopathy GCEP
 GIPC1	OPDM2	OPDM2_GIPC1	AD	criTRia	criTRia v0	06/04/2025	Definitive	15.5	9.5	6.0	6	4.99	Laurel Hiatt, Harriet Dashnow
 GLS	GDPAG	GDPAG_GLS	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP7	07/09/2021	Definitive	11.5	9.5	2	5	6	Aminoacidopathy GCEP
-HOXA13	HFG-I	HFG_HOXA13-I	AD	criTRia	criTRia v0	08/18/2025	Limited	4.5	0	4.5	1		Macayla Weiner, Laurel Hiatt
+HOXA13	HFG-I	HFG_HOXA13-I	AD	criTRia	criTRia v0	08/18/2025	Limited	3.5	0	3.5	2	3.08	Macayla Weiner, Laurel Hiatt, Elbay Aliyev
 HOXA13	HFG-II	HFG_HOXA13-II	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	3.0	3.0	2	1.63	Macayla Weiner, Laurel Hiatt
 HOXA13	HFG-III	HFG_HOXA13-III	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	2.0	4.0	2	7.46	Macayla Weiner, Laurel Hiatt
 HOXD13	SD5	SD5_HOXD13	AD	criTRia	criTRia v0	08/18/2025	Definitive	14.5	8.5	6	4	24.09	Macayla Weiner, Laurel Hiatt
 HTT	HD	HD_HTT	AD	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP8	11/08/2021	Definitive	17.5	11.5	6	17	27	General Gene Curation GCEP
 JPH3	HDL2	HDL2_JPH3	AD	criTRia	criTRia v0	06/04/2025	Definitive	15	9	6	5	23.58	Laurel Hiatt, Harriet Dashnow
-LRP12	OPDM1	OPDM1_LRP12	AD	criTRia	criTRia v0	8/18/2025	Definitive	13.0	12	1.0	3	2.59	Macayla Weiner, Laurel Hiatt
-MARCHF6	FAME3	FAME3_MARCHF6	AD	criTRia	criTRia v0	08/12/2025	Definitive	14.5	10.5	4.0	3	17.33	Macayla Weiner, Laurel Hiatt
+LRP12	OPDM1	OPDM1_LRP12	AD	criTRia	criTRia v0	8/18/2025	Strong	13.0	12	1.0	3	2.59	Macayla Weiner, Laurel Hiatt
+MARCHF6	FAME3	FAME3_MARCHF6	AD	criTRia	criTRia v0	08/12/2025	Definitive	11.5	10.0	1.5	3	17.33	Macayla Weiner, Laurel Hiatt, Harriet Dashnow
 MIR7-2	CHNG3	CHNG3_MIR7-2	AD	criTRia	criTRia v0	08/18/2025	Strong	13.5	12	1.5	2		Macayla Weiner, Laurel Hiatt
 MUC1	ADTKD	ADTKD_MUC1	AD	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP8	01/13/2021	Definitive	16	12	4			Kidney Cystic and Ciliopathy Disorders GCEP
 NAXE	NME	NME_NAXE	AR	criTRia	criTRia v0	08/12/2025	Limited	5.0	2.0	3.0	1		Macayla Weiner, Laurel Hiatt, Elbay Aliyev
@@ -48,28 +48,29 @@ NOTCH2NLC	NIID	NIID_NOTCH2NLC	AD	criTRia	criTRia v0	08/14/2025	Definitive	18	12	
 NUTM2B-AS1	OPML1	OPML1_NUTM2B_AS1	AD	criTRia	criTRia v0	08/18/2025	Moderate	10.0	7.5	2.5	4	5.0	Macayla Weiner, Laurel Hiatt
 PABPN1	OPMD	OPMD_PABPN1	AD/AR	criTRia	criTRia v0	08/14/2025	Definitive	15.0	12	3.0	7	25.7	Macayla Weiner, Laurel Hiatt
 PHOX2B	CCHS	CCHS_PHOX2B	AD	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP9	12/30/2022	Definitive	17	12	5	6	11	Hereditary Cancer GCEP
-PLIN4	MRUPAV	MRUPAV_PLIN4	AD	criTRia	criTRia v0	08/11/2025	Definitive	12.5	8.5	4.0	6	5.17	Macayla Weiner, Laurel Hiatt
+PLIN4	MRUPAV	MRUPAV_PLIN4	AD	criTRia	criTRia v0	08/11/2025	Moderate	11.0	7.5	3.5	6	5.17	Macayla Weiner, Laurel Hiatt
 POLG	CPEO	CPEO_POLG		criTRia	criTRia v0	08/18/2025	Disputed	7.5	6.0	1.5	1		Macayla Weiner, Laurel Hiatt
 PPP2R2B	SCA12	SCA12_PPP2R2B	AD	criTRia	criTRia v0	08/11/2025	Definitive	13.0	7.0	6.0	5	24.58	Macayla Weiner, Laurel Hiatt
 PRDM12	HSAN-VIII	HSAN-VIII_PRDM12	AR	criTRia	criTRia v0	08/14/2025	Moderate	11.0	5.0	6	1		Macayla Weiner, Laurel Hiatt, Elbay Aliyev
 PRNP	CJD	CJD_PRNP	AD	criTRia	criTRia v0	08/14/2025	Moderate	9.0	7.5	1.5	6	34.09	Macayla Weiner, Laurel Hiatt
-RAI1	FAME8	FAME8_RAI1	AD	criTRia	criTRia v0	08/14/2025	Limited	6.0	3.0	3.0	3	0.5	Macayla Weiner, Laurel Hiatt
+RAI1	FAME8	FAME8_RAI1	AD	criTRia	criTRia v0	08/14/2025	Limited	1.5	1.5	0.0	2	0.45	Macayla Weiner, Laurel Hiatt, Harriet Dashnow
 RAPGEF2	FAME7	FAME7_RAPGEF2	AD	criTRia	criTRia v0	08/14/2025	Limited	3	3	0	2	0.91	Macayla Weiner, Laurel Hiatt
 RFC1	CANVAS	CANVAS_RFC1	AR	ClinGen	ClinGen Gene Validity Evaluation Criteria SOP10	10/09/2024	Definitive	14	12	2			Cerebellar Ataxia GCEP
-RILPL1	OPDM4	OPDM4_RILPL4	AD	criTRia	criTRia v0	08/14/2025	Moderate	10.0	7.5	2.5	3	2.05	Macayla Weiner, Laurel Hiatt
-RUNX2	CCD	CCD_RUNX2	AD	criTRia	criTRia v0	08/14/2025	Definitive	15.0	10.5	4.5	6	28.17	Macayla Weiner, Laurel Hiatt
-SAMD12	FAME1	FAME1_SAMD12	AD	criTRia	criTRia v0	08/14/2025	Definitive	12.0	10.0	2.0	5	6.84	Macayla Weiner, Laurel Hiatt
+RILPL1	OPDM4	OPDM4_RILPL1	AD	criTRia	criTRia v0	08/14/2025	Moderate	10.0	7.5	2.5	3	2.05	Macayla Weiner, Laurel Hiatt
+RUNX2	CCD	CCD_RUNX2	AD	criTRia	criTRia v0	08/14/2025	Definitive	12.0	7.5	4.5	6	28.17	Macayla Weiner, Laurel Hiatt, Elbay Aliyev
+SAMD12	FAME1	FAME1_SAMD12	AD	criTRia	criTRia v0	08/14/2025	Definitive	11.5	10.0	1.5	5	6.84	Macayla Weiner, Laurel Hiatt
 STARD7	FAME2	FAME2_STARD7	AD	criTRia	criTRia v0	08/14/2025	Strong	12	12	0	1		Macayla Weiner, Laurel Hiatt
-TAF1	XDP	XDP_TAF1	XR	criTRia	criTRia v0	08/14/2025	Definitive	13.5	9.5	4.0	10	29.08	Macayla Weiner, Laurel Hiatt
+TAF1	XDP	XDP_TAF1	XR	criTRia	criTRia v0	08/14/2025	Definitive	13.5	9.5	4.0	10	29.08	Macayla Weiner, Laurel Hiatt, Elbay Aliyev
 TBP	SCA17	SCA17_TBP	AD	criTRia	criTRia v0	08/18/2025	Definitive	18	12	6	7	19.06	Macayla Weiner, Laurel Hiatt
 TBX1	TOF	TOF_TBX1	AD	criTRia	criTRia v0	08/18/2025	Limited	2	1	1	2	4.58	Macayla Weiner, Laurel Hiatt
 TCF4	FECD3	FECD3_TCF4	AD	criTRia	criTRia v0	08/18/2025	Definitive	18	12	6	8	9.41	Macayla Weiner, Laurel Hiatt
 THAP11	SCA51	SCA51_THAP11	AD	criTRia	criTRia v0	08/18/2025	Definitive	14.0	10.0	4.0	4	21.16	Macayla Weiner, Laurel Hiatt
-TNRC6A	FAME6	FAME6_TNRC6A	AD	criTRia	criTRia v0	08/14/2025	Limited	3.0	2.5	0.5	1		Macayla Weiner, Laurel Hiatt
-VWA1	HMNR7	HMNR7_VWA1	AR	criTRia	criTRia v0	08/14/2025	Moderate	10.0	7.5	2.5	3	3.08	Macayla Weiner, Laurel Hiatt
+TNRC6A	FAME6	FAME6_TNRC6A	AD	criTRia	criTRia v0	08/14/2025	Limited	2.7	2.5	0.2	1		Macayla Weiner, Laurel Hiatt, Harriet Dashnow
+TYMS	CPUM	CPUM_TYMS	AR	criTRia	criTRia v0	08/14/2025	Limited	1.5	1.5	0.0	1	0.43	Macayla Weiner, Harriet Dashnow
+VWA1	HMNR7	HMNR7_VWA1	AR	criTRia	criTRia v0	08/14/2025	Definitive	12.5	12	0.5	3	3.08	Macayla Weiner, Laurel Hiatt, Harriet Dashnow
 XYLT1	DBQD2	DBQD2_XYLT1	AR	criTRia	criTRia v0	08/18/2025	Moderate	8.5	6.0	2.5	2	4.83	Macayla Weiner, Laurel Hiatt
-YEATS2	FAME4	FAME4_YEATS2	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	3.0	3.0	3	11.0	Macayla Weiner, Laurel Hiatt
+YEATS2	FAME4	FAME4_YEATS2	AD	criTRia	criTRia v0	08/18/2025	Limited	6.0	3.0	3.0	3	11.0	Macayla Weiner, Laurel Hiatt, Elbay Aliyev
 ZFHX3	SCA4	SCA4_ZFHX3	AD	criTRia	criTRia v0	08/18/2025	Definitive	13.5	9.5	4.0	7	22.08	Macayla Weiner, Laurel Hiatt
 ZIC2	HPE5	HPE5_ZIC2	AD	criTRia	criTRia v0	03/02/2026	Definitive	11.5	7.0	4.5	3	8.0	Macayla Weiner, Laurel Hiatt
 ZIC3	VACTERLX	VACTERLX_ZIC3	XR	criTRia	criTRia v0	08/18/2025	Limited	3.5	3.5	0	2	10.42	Macayla Weiner, Laurel Hiatt
-ZNF713	FRA7A	FRA7A_ZNF13	AD	criTRia	criTRia v0	08/18/2025	Moderate	7	7	0	1		Macayla Weiner, Laurel Hiatt
+ZNF713	FRA7A	FRA7A_ZNF713	AD	criTRia	criTRia v0	08/18/2025	Limited	2.5	2.0	0.5	1	10.32	Laurel Hiatt, Macayla Weiner, Harriet Dashnow
