@@ -31,6 +31,8 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
 
       - name: Set up Miniconda environment
         uses: conda-incubator/setup-miniconda@v3

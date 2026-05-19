@@ -305,7 +305,20 @@ def summarize_curations(locus):
     """
     # Add publication year for each citation
     all_pub_dates = []
-    for evidence_entry in locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []):
+    genetic_entries = []
+    for evidence_entry in locus.get('genetic_evidence_details', []):
+        entry = dict(evidence_entry)
+        entry['__original_section'] = 'genetic'
+        genetic_entries.append(entry)
+
+    experimental_entries = []
+    for evidence_entry in locus.get('experimental_evidence_details', []):
+        entry = dict(evidence_entry)
+        entry['__original_section'] = 'experimental'
+        experimental_entries.append(entry)
+
+    combined_entries = genetic_entries + experimental_entries
+    for evidence_entry in combined_entries:
         citations = evidence_entry.get('Citation', None)
         publication_dates = evidence_entry.get('publication_dates', [])
         if citations is None:
@@ -316,12 +329,21 @@ def summarize_curations(locus):
         all_pub_dates.extend(publication_dates)
 
     locus_id = locus.get('Locus_ID', 'Unknown Locus')
-    df = pd.DataFrame(locus.get('genetic_evidence_details', []) + locus.get('experimental_evidence_details', []))
+    df = pd.DataFrame(combined_entries)
 
     #sys.stdout.write(f"Processing locus '{locus_id}' with {len(df)} evidence entries...\n")
     if len(df) == 0:
         sys.stderr.write(f"Warning: No evidence entries found for locus '{locus_id}'\n")
         return locus
+
+    # Re-apply evidence category/supercategory from EVIDENCE_LOOKUP to fix stale or null values
+    for idx, row in df.iterrows():
+        mapping = NORMALIZED_EVIDENCE_LOOKUP.get(_normalize_evidence_type(row.get('Evidence type')), {})
+        if mapping:
+            df.at[idx, 'evidence_category'] = mapping.get('evidence_category')
+            df.at[idx, 'evidence_supercategory'] = mapping.get('evidence_supercategory')
+            df.at[idx, 'evidence_max_score'] = mapping.get('evidence_max_score')
+            df.at[idx, 'category_max_score'] = mapping.get('category_max_score')
 
     # Report any evidence types that are not recognized in the EVIDENCE_LOOKUP
     for evidence_type in df['Evidence type'].unique():
@@ -398,8 +420,25 @@ def summarize_curations(locus):
         publication_interval_years = None
 
     # Collect the Genetic and Experimental evidence details for the curation
-    genetic_evidence_details = df[df['evidence_supercategory'] == 'Genetic Evidence'].to_dict(orient='records')
-    experimental_evidence_details = df[df['evidence_supercategory'] == 'Experimental Evidence'].to_dict(orient='records')
+    genetic_df = df[df['evidence_supercategory'] == 'Genetic Evidence']
+    experimental_df = df[df['evidence_supercategory'] == 'Experimental Evidence']
+    unknown_df = df[~df['evidence_supercategory'].isin(['Genetic Evidence', 'Experimental Evidence'])]
+
+    if len(unknown_df) > 0:
+        sys.stderr.write(
+            f"Warning: {len(unknown_df)} evidence entries have missing/unrecognized supercategory in locus '{locus_id}'. Preserving in original section.\n"
+        )
+        genetic_df = pd.concat(
+            [genetic_df, unknown_df[unknown_df['__original_section'] == 'genetic']],
+            ignore_index=True
+        )
+        experimental_df = pd.concat(
+            [experimental_df, unknown_df[unknown_df['__original_section'] == 'experimental']],
+            ignore_index=True
+        )
+
+    genetic_evidence_details = genetic_df.drop(columns=['__original_section'], errors='ignore').to_dict(orient='records')
+    experimental_evidence_details = experimental_df.drop(columns=['__original_section'], errors='ignore').to_dict(orient='records')
 
     # Return updated dictionary containing the curation summary
     locus["category_summary"] = category_summary
