@@ -5661,6 +5661,105 @@
   "classification": "Definitive"
 },
 {
+  "Disease_ID": "XLID, PHPX",
+  "Gene": "SOX3",
+  "Locus_ID": "XLID_SOX3",
+  "Inheritance": "XR",
+  "Curator": "Laurel Hiatt, Macayla Weiner, Harriet Dashnow",
+  "Date": "05/14/2026",
+  "Description": "Patients have been reported with a repeat mutation in SOX3, caused by overexpression, downstream decrease in protein levels, and dysregulation. 5 total patients across 2 papers and a mouse model. SOX3 has previously been curated by the ClinGen Syndromic Disorders GCEP (08/02/2023) for [SOX3-related X-linked pituitary hormone deficiency with or without intellectual developmental disorder](https://search.clinicalgenome.org/CCID:006253).",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:24346842",
+    "Evidence detail": "1 male proband with molcularly confirmed Kabuki syndrome and functional and de novo evidence.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2025-06-12"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:19654509",
+    "Evidence detail": "Studied one family with 4 affected individuals and 14 unaffected. LOD = 4.2.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2024-07-27"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:30488659",
+    "Evidence detail": "Decreased expression and significant hypermethylation.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2018-10-28"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "Overexpression inhibits downstream signaling.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "The paper examines the aggregation of mutant SOX3 proteins, their subcellular localization, and the formation of aggresomes.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:23505376",
+    "Evidence detail": "Mouse model used to gain mechanistic insights for models with phenotype.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2024-07-27"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 1.5,
+    "Collective Evidence": 1.5,
+    "Statistics": 0,
+    "Function": 1.0,
+    "Functional Alteration": 0,
+    "Models": 2.0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 3.0,
+    "Genetic Evidence": 3.0
+  },
+  "total_score": 6.0,
+  "publication_count": 5,
+  "publication_interval_years": 6.62,
+  "classification": "Limited"
+},
+{
   "Disease_ID": "FAME2",
   "Gene": "STARD7",
   "Locus_ID": "FAME2_STARD7",
@@ -6404,7 +6503,7 @@
   "Inheritance": "AR",
   "Curator": "Macayla Weiner, Harriet Dashnow",
   "Date": "08/14/2025",
-  "Description": "A GATGGT repeat in the TYMS gene was reported to cause congenital progressive melanosis (CPUM). This paper sequenced (WGS) two affected twins [@pmid:40589716].",
+  "Description": "A GATGGT repeat in the TYMS gene was reported to cause congenital progressive melanosis (CPUM). This paper sequenced (WGS) a pair of affected twins [@pmid:40589716].",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -6413,7 +6512,7 @@
     "Evidence type": "Probands",
     "Score": 1.5,
     "Citation": "pmid:40589716",
-    "Evidence detail": "Studied 2 siblings with inheritance evidence and expression information",
+    "Evidence detail": "A single family with 2 twins with inheritance evidence and expression information",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -6425,7 +6524,7 @@
     "Evidence type": "Regulatory impact",
     "Score": 0.0,
     "Citation": "pmid:40589716",
-    "Evidence detail": "No consistent differences in TYMS expression were observed between probands and controls. In cultured skin fibroblasts, TYMS protein levels varied between the twins (twin A lower than twin B) but remained within the control range. Similarly, mean TYMS expression levels in patient PBMCs and skin fibroblasts fell within values observed in control samples.",
+    "Evidence detail": "No consistent differences in TYMS expression were observed between probands and controls. In cultured skin fibroblasts, TYMS protein levels varied between the twins (twin A lower than twin B) but remained within the control range. Similarly, mean TYMS expression levels in patient PBMCs and skin fibroblasts fell within values observed in control samples. Hypermethylation was observed.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
