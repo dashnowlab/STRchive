@@ -4451,82 +4451,92 @@
   "classification": "Moderate"
 },
 {
-  "Disease_ID": "CPEO",
-  "Gene": "POLG",
-  "Locus_ID": "CPEO_POLG",
-  "Inheritance": null,
-  "Curator": "Macayla Weiner, Laurel Hiatt",
-  "Date": "08/18/2025",
-  "Description": "This locus is a proposed modifier to Parkinson's disease and has little evidence supporting it's causative role [@pmid:19043662]. This locus also has conflicting evidence on the association between the repeat and progressive external opthalmoplegia.",
-  "Source": "criTRia",
-  "SOP_version": "criTRia v0",
-  "Manual_evidence_level": "Disputed",
-  "genetic_evidence_details": [
-  {
-    "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "pmid:22963882",
-    "Evidence detail": "191 patients",
-    "evidence_category": "Singular Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
-    "publication_dates": ["2008-12-09"]
-  }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Biochemical function",
-    "Score": 0.5,
-    "Citation": "pmid:22963882",
-    "Evidence detail": "Evidence of mechanistic relationship between mitochondrial dysfunction and disease biology.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-12-09"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:22963882",
-    "Evidence detail": "Altered protien interaction.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-12-09"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:22963882",
-    "Evidence detail": "Evidence of altered expression downstream of the repeat.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-12-09"]
-  }],
-  "category_summary":
-  {
-    "Singular Evidence": 6.0,
-    "Collective Evidence": 0,
-    "Statistics": 0,
-    "Function": 1.5,
-    "Functional Alteration": 0,
-    "Models": 0,
-    "Rescue": 0
-  },
-  "supercategory_summary":
-  {
-    "Experimental Evidence": 1.5,
-    "Genetic Evidence": 6.0
-  },
-  "total_score": 7.5,
-  "publication_count": 1,
-  "publication_interval_years": null,
-  "classification": "Disputed"
-},
+    "Disease_ID": "CPEO",
+    "Gene": "POLG",
+    "Locus_ID": "CPEO_POLG",
+    "Inheritance": null,
+    "Curator": "Macayla Weiner, Laurel Hiatt",
+    "Date": "08/18/2025",
+    "Description": "The curated POLG CAG/polyglutamine repeat has disputed relevance to CPEO. The provided sources evaluate the repeat primarily as a modifier/association signal in Parkinson disease and Friedreich ataxia, and note that pathogenic POLG coding variants can cause progressive external ophthalmoplegia; they do not provide direct evidence that POLG CAG-repeat variation causes CPEO.",
+    "Source": "criTRia",
+    "SOP_version": "criTRia v0",
+    "Manual_evidence_level": "Disputed",
+    "genetic_evidence_details": [
+      {
+        "Evidence type": "Probands",
+        "Score": 6.0,
+        "Citation": "pmid:22963882",
+        "Evidence detail": "Curator review needed: PMID 22963882 reports 191 Parkinson disease cases and 191 controls sequenced for the POLG1 CAG repeat; it does not describe CPEO probands.",
+        "evidence_category": "Singular Evidence",
+        "evidence_supercategory": "Genetic Evidence",
+        "evidence_max_score": 6,
+        "category_max_score": 6,
+        "publication_dates": [
+          "2008-12-09"
+        ]
+      }
+    ],
+    "experimental_evidence_details": [
+      {
+        "Evidence type": "Biochemical function",
+        "Score": 0.5,
+        "Citation": "pmid:22963882",
+        "Evidence detail": "Gene-level evidence: POLG encodes the catalytic subunit of mitochondrial DNA polymerase gamma, which replicates and repairs mtDNA; PMID 22963882 does not provide a CPEO-specific functional assay of the CAG repeat.",
+        "evidence_category": "Function",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+        "publication_dates": [
+          "2008-12-09"
+        ]
+      },
+      {
+        "Evidence type": "Protein interaction",
+        "Score": 0.5,
+        "Citation": "pmid:22963882",
+        "Evidence detail": "Gene-level evidence: polymerase gamma is described as a heterotrimer comprising one POLG1 catalytic subunit and two POLG2 accessory subunits; no CAG-repeat- or CPEO-specific altered interaction is shown.",
+        "evidence_category": "Function",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+        "publication_dates": [
+          "2008-12-09"
+        ]
+      },
+      {
+        "Evidence type": "Regulatory impact",
+        "Score": 0.5,
+        "Citation": "pmid:22963882",
+        "Evidence detail": "Curator review needed: PMID 22963882 cites prior in silico RNA-folding effects for CAG-repeat variants but does not experimentally show repeat-dependent expression, splicing, or epigenetic impact in CPEO.",
+        "evidence_category": "Function",
+        "evidence_supercategory": "Experimental Evidence",
+        "evidence_max_score": 2,
+        "category_max_score": 2,
+        "publication_dates": [
+          "2008-12-09"
+        ]
+      }
+    ],
+    "category_summary": {
+      "Singular Evidence": 6.0,
+      "Collective Evidence": 0,
+      "Statistics": 0,
+      "Function": 1.5,
+      "Functional Alteration": 0,
+      "Models": 0,
+      "Rescue": 0
+    },
+    "supercategory_summary": {
+      "Experimental Evidence": 1.5,
+      "Genetic Evidence": 6.0
+    },
+    "total_score": 7.5,
+    "publication_count": 1,
+    "publication_interval_years": null,
+    "classification": "Disputed"
+  }
+]
+,
 {
   "Disease_ID": "SCA12",
   "Gene": "PPP2R2B",
