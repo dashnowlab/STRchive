@@ -909,6 +909,21 @@
   "Gene": "TBX1"
 },
 {
+  "LocusId": "EPM_CSNK1E",
+  "ReferenceRegion": ["chr22:38317282-38317375"],
+  "LocusStructure": "(CGG)*",
+  "VariantType": ["Repeat"],
+  "VariantId": ["EPM_CSNK1E"],
+  "PathologicRegion": "chr22:38317282-38317375",
+  "HGNCId": null,
+  "InheritanceMode": ["AR"],
+  "DisplayRU": "CGG",
+  "Disease": "EPM, DEE",
+  "NormalMax": 48,
+  "PathologicMin": 745,
+  "Gene": "CSNK1E"
+},
+{
   "LocusId": "SCA10_ATXN10",
   "ReferenceRegion": "chr22:45795354-45795424",
   "LocusStructure": "(ATTCT)*",
