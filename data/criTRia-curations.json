@@ -5199,35 +5199,24 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2026-01-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:36977684; pmid:38467784; pmid:1683708",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2023-03-29", "2024-07-01", "1991-12-01"]
   }],
   "category_summary":
   {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 0,
-    "Function": 1.5,
+    "Function": 1.0,
     "Functional Alteration": 0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 1.5,
+    "Experimental Evidence": 1.0,
     "Genetic Evidence": 7.5
   },
-  "total_score": 9.0,
-  "publication_count": 6,
+  "total_score": 8.5,
+  "publication_count": 4,
   "publication_interval_years": 34.09,
   "classification": "Moderate"
 },
