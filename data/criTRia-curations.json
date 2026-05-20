@@ -6756,150 +6756,95 @@
   "Inheritance": "AD",
   "Curator": "Gabriel Zinser",
   "Date": "05/20/2026",
-  "Description": null,
+  "Description": "Intellectual developmental disorder, FRA12A type. Impaired intellectual development with or without other anomalies has been described in patients with over 40% of cells expressing FRA12A [@omim:136630].",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
+    "Score": 6.0,
+    "Citation": "pmid:39854091; pmid:17236128; pmid:34622207;",
+    "Evidence detail": "39854091: One family with inheritence and functional info; 5 additional independent probands. in PMID 17236128: Two families, both with inheretence and funcional info. in PMID 34622207: one proband with functional evidence",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_dates": [""]
+    "publication_dates": ["2025-01-24; 2007-02-01; 2021-09-14"]
   },
   {
     "Evidence type": "Allele",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
-    "evidence_category": "",
-    "evidence_supercategory": "",
+    "Score": 2,
+    "Citation": "pmid:39854091",
+    "Evidence detail": "larger methylated expansions linked to intellectual disability while smaller unmethylated alleles linked to movement disorder phenotype. Finds pathogenic range.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_dates": [""]
+    "publication_dates": ["2025-01-24"]
   },
-  {
-    "Evidence type": "Segregation",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
+   {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:17236128",
+    "Evidence detail": "Comparative conservation and predicted domain structure support biological relevance. Protein structure suggests involvement in methylation/transcriptional regulation pathways. DIP2B predicted to interact with DMAP1 methylation complex.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_dates": [""]
-  },
+    "publication_dates": ["2007-02-01"]
+  }
   {
     "Evidence type": "Case-control data",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
+    "Score": 4,
+    "Citation": "pmid:39854091; pmid:38418263",
+    "Evidence detail": "in 39854091: moderate statistical power limited by the small number affected (5/788 cases), bias maybe introduced by the use of aggregate gnomAD population controls rather than closely matched controls, and borderline statistical significance demonstrating enrichment of large DIP2B CGG repeats in the ataxia cohort in comparison to controls (OR = 2.8, P = 0.04). in 38418263: Moderate-quality association evidence: cardiovascular disease enrichment among DIP2B expansion carriers (OR = 2.7, p = 1.6 × 10⁻²), but controls are aggregate disease cohorts",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
-    "publication_dates": [""]
+    "publication_dates": ["2025-01-24; 2024-03-01"]
   }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Biochemical function",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": [""]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": [""]
-  },
-  {
     "Evidence type": "Regulatory impact",
-    "Score": 1.0,
-    "Citation": "",
-    "Evidence detail": "",
+    "Score": 2.0,
+    "Citation": "pmid:37248219",
+    "Evidence detail": "repeat expansion associated with promoter hypermethylation, loss of regulatory activity, and predicted allelic silencing. Expanded CGG repeat associated with promoter methylation and reduced DIP2B expression. unmethylated expansion associated with overexpression",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": [""]
+    "publication_dates": ["2023-05-29"]
   },
   {
     "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "",
-    "Evidence detail": null,
+    "Score": 2.0,
+    "Citation": "pmid:38418263; pmid:17236128",
+    "Evidence detail": "hypermethylation and reduced gene expression in cardiac tissue",
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": ,
-    "category_max_score": ,
-    "publication_dates": [""]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
+    "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": [""]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": [""]
-  },
-  {
-    "Evidence type": "Rescue in non-human model organism",
-    "Score": ,
-    "Citation": "",
-    "Evidence detail": null,
-    "evidence_category": "Rescue",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": [""]
+    "publication_dates": ["2024-03-01; 2007-02-01"]
   }],
   "category_summary":
   {
-    "Singular Evidence": ,
-    "Collective Evidence": ,
-    "Statistics": ,
-    "Function": ,
-    "Functional Alteration": ,
-    "Models": ,
-    "Rescue": 
+    "Singular Evidence": 6.0,
+    "Collective Evidence": 2.5,
+    "Statistics": 4.0,
+    "Function": 2.0,
+    "Functional Alteration": 2.0,
+    "Models": null,
+    "Rescue": null 
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": ,
-    "Genetic Evidence": 
+    "Experimental Evidence": 4.0,
+    "Genetic Evidence": 12.5
   },
-  "total_score": ,
-  "publication_count": ,
-  "publication_interval_years": ,
-  "classification": ""
+  "total_score": 16.5 ,
+  "publication_count": 8,
+  "publication_interval_years": 18.0,
+  "classification": "Definitive"
 }]
