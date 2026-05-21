@@ -373,7 +373,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": []
+    "publication_dates": ["2009-06-01"]
   },
   {
     "Evidence type": "Biochemical function",
@@ -395,7 +395,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": []
+    "publication_dates": ["2009-06-01"]
   }],
   "category_summary":
   {
@@ -403,9 +403,9 @@
     "Collective Evidence": 2.5,
     "Statistics": 0,
     "Function": 1.0,
-    "Functional Alteration": 1.5,
-    "Models": 2.0,
-    "Rescue": 0.5
+    "Functional Alteration": 0,
+    "Models": 4.0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -413,8 +413,8 @@
     "Genetic Evidence": 11.5
   },
   "total_score": 16.5,
-  "publication_count": 7,
-  "publication_interval_years": 17.66,
+  "publication_count": 6,
+  "publication_interval_years": 13.33,
   "classification": "Definitive"
 },
 {
