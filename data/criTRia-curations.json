@@ -2533,8 +2533,8 @@
     "Evidence detail": "Thirteen Australian individuals with adult-onset cerebellar ataxia carried pure intronic FGF14 (GAA)>250 expansions by LR-PCR/RP-PCR; eight had genome-sequence support and five were further characterized by long-read sequencing.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 6,
-    "category_max_score": 6,
+    "evidence_max_score": 6.0,
+    "category_max_score": 6.0,
     "publication_dates": ["2023-01-05"]
   },
   {
@@ -2544,8 +2544,8 @@
     "Evidence detail": "In 102 genetically confirmed SCA27B patients, the expanded allele had median size 337 repeats (maximum 521), and larger repeat size was associated with younger age at disease onset.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
+    "evidence_max_score": 2.0,
+    "category_max_score": 3.0,
     "publication_dates": ["2024-12-01"]
   },
   {
@@ -2555,52 +2555,63 @@
     "Evidence detail": "Gene-level evidence only: linkage in an autosomal dominant ataxia family mapped to chromosome 13q34 with maximum LOD score 4.28 at D13S280 and identified FGF14 F145S; not specific to the intronic GAA SCA27B repeat locus. Score was downgraded to 0.5 as the evidence is not specific to the repeat expansion.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 3,
-    "category_max_score": 3,
+    "evidence_max_score": 3.0,
+    "category_max_score": 3.0,
     "publication_dates": ["2003-01-01"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:36516086",
+    "Evidence detail": "The FGF14 (GAA)≥250 repeat expansion was significantly associated with late-onset cerebellar ataxia in two independent case–control cohorts: 66 patients and 209 controls in the French Canadian group, and 228 patients and 199 controls in the German group. Odds ratios were 105.60 (CI: 31.09–334.20) and 8.76 (CI: 3.45–20.84), respectively, with P-values <0.001 in both cohorts.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12.0,
+    "category_max_score": 12.0,
+    "publication_dates": ["2023-01-12"]
   }],
   "experimental_evidence_details": [
   {
     "Evidence type": "Non-human model organism",
     "Score": 1.0,
     "Citation": "pmid:12123606",
-    "Evidence detail": "Gene-level model only: Fgf14-deficient mice were viable but developed ataxia and paroxysmal hyperkinetic dyskinesia with reduced dopamine-agonist responses. This gene-level evidence supports the role of FGF14 in ataxia but is not specific to the intronic GAA SCA27B repeat locus, therefore the score was downgraded to 1.0.",
+    "Evidence detail": "Gene-level model only: Fgf14-deficient mice were viable but developed ataxia and paroxysmal hyperkinetic dyskinesia with reduced dopamine-agonist responses. This gene-level evidence supports the role of FGF14 in ataxia but is not specific to the intronic GAA SCA27B repeat locus.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
+    "evidence_max_score": 4.0,
+    "category_max_score": 4.0,
     "publication_dates": ["2002-07-03"]
   },
   {
     "Evidence type": "Protein interaction",
-    "Score": 0.3,
+    "Score": 0.5,
     "Citation": "pmid:17978045",
-    "Evidence detail": "Gene-level variant evidence only: FGF14 F145S reduced Nav channel localization at the axon initial segment, attenuated sodium currents, and disrupted wild-type FGF14 interaction with Nav alpha subunits. This gene-level evidence supports the role of FGF14 in ataxia but is not specific to the intronic GAA SCA27B repeat locus, therefore the score was downgraded to 0.3.",
+    "Evidence detail": "Gene-level variant evidence only: FGF14 F145S reduced Nav channel localization at the axon initial segment, attenuated sodium currents, and disrupted wild-type FGF14 interaction with Nav alpha subunits. This gene-level evidence supports the role of FGF14 in ataxia but is not specific to the intronic GAA SCA27B repeat locus.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
+    "evidence_max_score": 2.0,
+    "category_max_score": 2.0,
     "publication_dates": ["2007-10-31"]
   }],
   "category_summary":
   {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.5,
-    "Statistics": 0,
-    "Function": 0.3,
+    "Statistics": 6.0,
+    "Function": 0.5,
     "Functional Alteration": 0,
     "Models": 1.0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 1.3,
-    "Genetic Evidence": 8.5
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 12
   },
-  "total_score": 9.8,
-  "publication_count": 5,
+  "total_score": 13.5,
+  "publication_count": 6,
   "publication_interval_years": 22.41,
-  "classification": "Moderate"
+  "classification": "Definitive"
 },
 {
   "Disease_ID": "FXS",
