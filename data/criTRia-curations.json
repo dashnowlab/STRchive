@@ -2019,7 +2019,7 @@
   "Inheritance": "AD",
   "Curator": "Gabriel Zinser",
   "Date": "05/20/2026",
-  "Description": "Intellectual developmental disorder, FRA12A type. Impaired intellectual development with or without other anomalies has been described in patients with over 40% of cells expressing FRA12A [@omim:136630].",
+  "Description": "9 patients have been studied with intellectual developmental disorder, all showing inheritance and functional evidence. PMID: 39854091 found that higher rate of methylation affects phenotype. Regulatory impact and functional alteration in cardiac tissue were also found.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -2039,7 +2039,7 @@
     "Evidence type": "Allele",
     "Score": 2.0,
     "Citation": "pmid:39854091",
-    "Evidence detail": "larger methylated expansions linked to intellectual disability while smaller unmethylated alleles linked to movement disorder phenotype. Finds pathogenic range.",
+    "Evidence detail": "larger expansions linked to intellectual disability phenotype and higher rate of methylation. Smaller alleles linked to movement disorder phenotype and lower rate of methylation.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -2071,7 +2071,7 @@
   "experimental_evidence_details": [
   {
     "Evidence type": "Regulatory impact",
-    "Score": 2.0,
+    "Score": 1.5,
     "Citation": "pmid:37248219",
     "Evidence detail": "repeat expansion associated with promoter hypermethylation, loss of regulatory activity, and predicted allelic silencing. Expanded CGG repeat associated with promoter methylation and reduced DIP2B expression. unmethylated expansion associated with overexpression",
     "evidence_category": "Function",
@@ -2082,7 +2082,7 @@
   },
   {
     "Evidence type": "Patient cells",
-    "Score": 2.0,
+    "Score": 1.0,
     "Citation": "pmid:38418263; pmid:17236128",
     "Evidence detail": "hypermethylation and reduced gene expression in cardiac tissue",
     "evidence_category": "Functional Alteration",
@@ -2096,17 +2096,17 @@
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.5,
     "Statistics": 4.0,
-    "Function": 2.0,
-    "Functional Alteration": 2.0,
+    "Function": 1.5,
+    "Functional Alteration": 1.0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 4.0,
-    "Genetic Evidence": 12
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 12.5
   },
-  "total_score": 16.0,
+  "total_score": 15.0,
   "publication_count": 5,
   "publication_interval_years": 18.08,
   "classification": "Definitive"
