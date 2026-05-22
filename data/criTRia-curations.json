@@ -4384,17 +4384,17 @@
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 6.0,
-    "Function": 2.0,
-    "Functional Alteration": 1.5,
-    "Models": 4.0,
+    "Function": 1.0,
+    "Functional Alteration": 1.0,
+    "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 6,
+    "Experimental Evidence": 2.0,
     "Genetic Evidence": 12
   },
-  "total_score": 18,
+  "total_score": 14.0,
   "publication_count": 8,
   "publication_interval_years": 5.08,
   "classification": "Definitive"
