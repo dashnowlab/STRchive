@@ -5672,88 +5672,75 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 1.5,
-      "Citation": "pmid:24346842",
-      "Evidence detail": "One male proband with molecularly confirmed Kabuki syndrome and CPHD carried a hemizygous 21-bp SOX3 polyalanine-tract deletion (p.Ala239_245del7A); the SOX3 deletion was maternally inherited, while a separate MLL2 variant was de novo.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2025-06-12"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:19654509",
-      "Evidence detail": "One family with three affected males carrying a 21-bp in-frame SOX3 polyalanine expansion (+7 alanines) segregating with GH deficiency through carrier females; LOD = 2.68 and the expansion was absent from 100 control females.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2024-07-27"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:24346842",
+    "Evidence detail": "One male proband with molecularly confirmed Kabuki syndrome and CPHD carried a hemizygous 21-bp SOX3 polyalanine-tract deletion (p.Ala239_245del7A); the SOX3 deletion was maternally inherited, while a separate MLL2 variant was de novo.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2025-06-12"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:19654509",
+    "Evidence detail": "One family with three affected males carrying a 21-bp in-frame SOX3 polyalanine expansion (+7 alanines) segregating with GH deficiency through carrier females; LOD = 2.68 and the expansion was absent from 100 control females.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2024-07-27"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Cell culture",
-      "Score": 1.0,
-      "Citation": "pmid:30488659",
-      "Evidence detail": "Curator review needed: cited source describes CSNK1E epileptic encephalopathy and does not support SOX3 locus-specific cell-culture evidence.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2018-10-28"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:17127446",
-      "Evidence detail": "SOX3 polyalanine expansion mutants showed impaired transcriptional activation and reduced repression of β-catenin/TCF-mediated transcription in reporter assays.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-07-27"
-      ]
-    },
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:17127446",
-      "Evidence detail": "SOX3 +7 and +11 alanine expansion proteins formed cytoplasmic and nuclear aggregates, including aggresome-like perinuclear aggregates, in transfected cell systems and chick neural explants.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2024-07-27"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 1.0,
-      "Citation": "pmid:23505376",
-      "Evidence detail": "Sox3-26ala mouse/ES-cell model showed markedly reduced nuclear SOX3 protein, pituitary-region developmental abnormalities, no detectable in vivo aggregates, and a partial loss-of-function mechanism.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2024-07-27"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Cell culture",
+    "Score": 1.0,
+    "Citation": "pmid:30488659",
+    "Evidence detail": "Curator review needed: cited source describes CSNK1E epileptic encephalopathy and does not support SOX3 locus-specific cell-culture evidence.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2018-10-28"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "SOX3 polyalanine expansion mutants showed impaired transcriptional activation and reduced repression of β-catenin/TCF-mediated transcription in reporter assays.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:17127446",
+    "Evidence detail": "SOX3 +7 and +11 alanine expansion proteins formed cytoplasmic and nuclear aggregates, including aggresome-like perinuclear aggregates, in transfected cell systems and chick neural explants.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-07-27"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 1.0,
+    "Citation": "pmid:23505376",
+    "Evidence detail": "Sox3-26ala mouse/ES-cell model showed markedly reduced nuclear SOX3 protein, pituitary-region developmental abnormalities, no detectable in vivo aggregates, and a partial loss-of-function mechanism.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2024-07-27"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 1.5,
     "Collective Evidence": 1.5,
     "Statistics": 0,
@@ -5762,7 +5749,8 @@
     "Models": 2.0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 3.0,
     "Genetic Evidence": 3.0
   },
