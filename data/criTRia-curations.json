@@ -1992,14 +1992,14 @@
     "publication_dates": ["2025-11-01"]
   },
   {
-    "Evidence type": "Case-control data",
-    "Score": 4.0,
+    "Evidence type": "Computational",
+    "Score": 0.5,
     "Citation": "pmid:40751262",
     "Evidence detail": "Population comparison using 908 1KGP ONT genomes found no comparable large CSNK1E CGG expansions; 98.7% had <20 repeats and the longest observed alleles were CGG n=48 and n=47, versus CGG n=745 in the proband and n=980 in an unaffected sibling. Matching and penetrance limitations remain.",
-    "evidence_category": "Statistics",
+    "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
+    "evidence_max_score": 3,
+    "category_max_score": 3,
     "publication_dates": ["2025-11-01"]
   }],
   "experimental_evidence_details": [
@@ -2039,8 +2039,8 @@
   "category_summary":
   {
     "Singular Evidence": 1.5,
-    "Collective Evidence": 0,
-    "Statistics": 4.0,
+    "Collective Evidence": 0.5,
+    "Statistics": 0,
     "Function": 1.0,
     "Functional Alteration": 1.5,
     "Models": 0,
@@ -2049,12 +2049,12 @@
   "supercategory_summary":
   {
     "Experimental Evidence": 2.5,
-    "Genetic Evidence": 5.5
+    "Genetic Evidence": 2.0
   },
-  "total_score": 8.0,
+  "total_score": 4.5,
   "publication_count": 3,
   "publication_interval_years": 6.67,
-  "classification": "Moderate"
+  "classification": "Limited"
 },
 {
   "Disease_ID": "EPM1",
