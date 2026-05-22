@@ -5696,17 +5696,6 @@
   }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Cell culture",
-    "Score": 1.0,
-    "Citation": "pmid:30488659",
-    "Evidence detail": "Curator review needed: cited source describes CSNK1E epileptic encephalopathy and does not support SOX3 locus-specific cell-culture evidence.",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2018-10-28"]
-  },
-  {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:17127446",
