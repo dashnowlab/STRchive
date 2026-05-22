@@ -631,7 +631,7 @@
     "Evidence type": "Case-control data",
     "Score": 6.0,
     "Citation": "pmid:39096063; pmid:20502998;  pmid:19028133 ",
-    "Evidence detail": "",
+    "Evidence detail": "These studies compare genetically confirmed SCA1 individuals with controls for balance, neuropsychological features, or longitudinal biomarkers, supporting the clinical phenotype and biomarker profile of genetically confirmed SCA1. While, these studies are not ideal case-control designs, collectively, they are supportive.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -651,52 +651,8 @@
     "publication_dates": ["1993-07-01"]
   },
   {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:8358429",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1993-07-01"]
-  },
-  {
-    "Evidence type": "Regulatory impact",
-    "Score": 1.5,
-    "Citation": "pmid:8358429; pmid:35245110",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1993-07-01", "2022-03-04"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:35573049",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2022-06-09"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:35573049",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2022-06-09"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 0.5,
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2,
     "Citation": "pmid:35573049",
     "Evidence detail": "In symptomatic B05 SCA1 mice expressing polyglutamine-expanded human ATXN1, AAV-delivered human ATXN1L alone or combined with miS1 targeting mutant ATXN1 improved rotarod motor phenotypes and partially normalized disease-associated cerebellar gene-expression changes.",
     "evidence_category": "Models",
