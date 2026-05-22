@@ -6508,36 +6508,31 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 1.5,
-      "Citation": "pmid:40589716",
-      "Evidence detail": "One non-consanguineous family with monozygotic twin probands with CPUM. Both affected twins carried biallelic intronic TYMS GATGGT expansions (210-259 repeat units), while each unaffected parent was heterozygous for an expanded allele, consistent with autosomal recessive inheritance; 236 controls had repeat sizes <=172 units and no biallelic expansions.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2014-09-04"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 1.5,
+    "Citation": "pmid:40589716",
+    "Evidence detail": "One non-consanguineous family with monozygotic twin probands with CPUM. Both affected twins carried biallelic intronic TYMS GATGGT expansions (210-259 repeat units), while each unaffected parent was heterozygous for an expanded allele, consistent with autosomal recessive inheritance; 236 controls had repeat sizes <=172 units and no biallelic expansions.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2014-09-04"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.0,
-      "Citation": "pmid:40589716",
-      "Evidence detail": "RT-qPCR and western blotting did not show a consistent regulatory effect of the TYMS repeat expansion in available patient-derived samples. TYMS mRNA levels in PBMCs and cultured skin fibroblasts from the twins were within control ranges, and fibroblast TYMS protein levels varied between twins but remained within the control range. Methylation analysis identified DMRs, but significant enrichments were not related to skin pigmentation or melanogenesis.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2014-04-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.0,
+    "Citation": "pmid:40589716",
+    "Evidence detail": "RT-qPCR and western blotting did not show a consistent regulatory effect of the TYMS repeat expansion in available patient-derived samples. TYMS mRNA levels in PBMCs and cultured skin fibroblasts from the twins were within control ranges, and fibroblast TYMS protein levels varied between twins but remained within the control range. Methylation analysis identified DMRs, but significant enrichments were not related to skin pigmentation or melanogenesis.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2014-04-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 1.5,
     "Collective Evidence": 0,
     "Statistics": 0,
@@ -6546,7 +6541,8 @@
     "Models": 0,
     "Rescue": 0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 0.0,
     "Genetic Evidence": 1.5
   },
