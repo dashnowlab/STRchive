@@ -655,7 +655,7 @@
     "Score": 2.0,
     "Citation": "pmid:35573049",
     "Evidence detail": "In symptomatic B05 SCA1 mice expressing polyglutamine-expanded human ATXN1, AAV-delivered human ATXN1L alone or combined with miS1 targeting mutant ATXN1 improved rotarod motor phenotypes and partially normalized disease-associated cerebellar gene-expression changes.",
-    "evidence_category": "Models",
+    "evidence_category": "Rescue",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
@@ -668,8 +668,8 @@
     "Statistics": 6.0,
     "Function": 0.5,
     "Functional Alteration": 0,
-    "Models": 2.0,
-    "Rescue": 0
+    "Models": 0,
+    "Rescue": 2.0
   },
   "supercategory_summary":
   {
