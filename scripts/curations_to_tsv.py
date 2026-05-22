@@ -37,10 +37,12 @@ def flatten_curation(curation):
     flat = {}
     
     # Direct fields
-    for key in ['Disease_ID', 'Gene', 'Locus_ID', 'Inheritance', 'Curator', 'Date', 
-                #'Description', 
-                'Source', 'SOP_version',
-                'total_score', 'publication_count', 'publication_interval_years', 'classification']:
+    for key in ['Disease_ID', 'Gene', 'Inheritance', 
+                # 'Locus_ID', 'Curator', 'Source', 'SOP_version',
+                'Date', 
+                'Description', 
+                'total_score', 'publication_count', 'publication_interval_years', 
+                'classification']:
         flat[key] = curation.get(key)
     
     # Category and supercategory summaries
@@ -61,7 +63,9 @@ def curations_to_tsv(json_file, tsv_file):
     curations = load_curations(json_file)
     
     # Filter out incomplete entries (those with only classification)
-    valid_curations = [c for c in curations if 'Locus_ID' in c]
+    #valid_curations = [c for c in curations if 'Locus_ID' in c]
+    # Filter to entries where Source is criTRia
+    valid_curations = [c for c in curations if c.get('Source') == 'criTRia']
     
     if not valid_curations:
         print("No valid curations found.", file=sys.stderr)
@@ -74,8 +78,9 @@ def curations_to_tsv(json_file, tsv_file):
     fieldnames = sorted(set().union(*(d.keys() for d in flattened)))
     
     # Put key fields first
-    key_fields = ['Gene', 'Disease_ID', 'Locus_ID', 'Inheritance', 'Source', 'SOP_version', 'Date', 
-                  'classification', 'total_score', 'genetic_evidence_score', 'experimental_evidence_score', 
+    key_fields = ['Gene', 'Disease_ID', 'Inheritance', 
+                  'Date', 'classification', 
+                  'total_score', 'genetic_evidence_score', 'experimental_evidence_score', 
                   'publication_count', 'publication_interval_years']
     fieldnames = key_fields + [f for f in fieldnames if f not in key_fields]
 
