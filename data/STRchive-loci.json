@@ -1389,18 +1389,18 @@
   "year": "2025",
   "location_in_gene": "Exon 1",
   "gene_strand": "-",
-  "reference_motif_reference_orientation": ["CGG"],
-  "pathogenic_motif_reference_orientation": ["CGG"],
+  "reference_motif_reference_orientation": ["CCG"],
+  "pathogenic_motif_reference_orientation": ["CCG"],
   "benign_motif_reference_orientation": [],
   "unknown_motif_reference_orientation": [],
   "interruption_reference_orientation": [],
-  "pathogenic_motif_gene_orientation": ["CCG"],
+  "pathogenic_motif_gene_orientation": ["CGG"],
   "benign_motif_gene_orientation": [],
   "unknown_motif_gene_orientation": [],
   "interruption_gene_orientation": [],
   "locus_structure": [
   {
-    "motif": "CGG",
+    "motif": "CCG",
     "count": null,
     "type": "pathogenic_repeat"
   }],
