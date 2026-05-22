@@ -3654,7 +3654,7 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "8/18/2025",
-  "Description": null,
+  "Description": "Autosomal dominant oculopharyngodistal myopathy type 1 (OPDM1) is associated with a heterozygous noncoding CGG repeat expansion in the 5′ UTR of LRP12. The original discovery study identified LRP12 CGG expansions in OPDM probands and validated the locus by RP-PCR, Southern blotting, and control repeat-size analysis. A larger OPDM_LRP12 case series identified 65 Japanese patients from 59 families with 85–289 CGG repeats, supporting an inverse relationship between repeat size and age at onset and defining the phenotype as oculopharyngeal weakness with predominantly distal myopathy and rimmed vacuoles.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -3663,7 +3663,7 @@
     "Evidence type": "Probands",
     "Score": 6.0,
     "Citation": "pmid:31332380",
-    "Evidence detail": "17 probands",
+    "Evidence detail": "Study screened 17 familial and 17 sporadic OPDM probands with rimmed vacuoles after excluding PABPN1 and LOC642361/NUTM2B-AS1 expansions; LRP12 5′ UTR CGG expansions were confirmed by RP-PCR in 13/34 probands (5 familial, 8 sporadic). An additional 9/54 clinically similar probands without available biopsy also carried LRP12 expansions.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -3674,7 +3674,7 @@
     "Evidence type": "Allele",
     "Score": 1.0,
     "Citation": "pmid:34047774",
-    "Evidence detail": "onset - lnegth",
+    "Evidence detail": "In 60 OPDM_LRP12 patients, LRP12 CGG expansions ranged from 85 to 289 repeats; among 52 non-mosaic patients, repeat size showed a negative correlation with age at onset (r² = 0.188, P = .001).",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -3685,7 +3685,7 @@
     "Evidence type": "Computational",
     "Score": 0.5,
     "Citation": "pmid:31332380",
-    "Evidence detail": "PCR to prove polymorph",
+    "Evidence detail": "TRhist analysis of whole-genome sequencing identified a CGG expansion at chr8:104,588,973–104,588,999 in the LRP12 5′ UTR. Fragment analysis showed 13–45 repeat units in 998/1,000 controls, while 2/1,000 controls had expansions confirmed by RP-PCR and Southern blot.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -3696,43 +3696,32 @@
     "Evidence type": "Case-control data",
     "Score": 6.0,
     "Citation": "pmid:34047774",
-    "Evidence detail": "p =.001, negative correlation",
+    "Evidence detail": "Among 198 unrelated Japanese families/208 patients with suspected OPDM or OPMD after PABPN1 exclusion, LRP12 expansions were identified in 42 families with rimmed vacuoles and 17 families without biopsy; no LRP12 expansion was detected in 47 families without rimmed vacuoles.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
     "category_max_score": 12,
     "publication_dates": ["2021-07-01"]
   }],
-  "experimental_evidence_details": [
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:35245110",
-    "Evidence detail": "65 patientes",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2022-03-04"]
-  }],
+  "experimental_evidence_details": [],
   "category_summary":
   {
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 6.0,
     "Function": 0,
-    "Functional Alteration": 1.0,
+    "Functional Alteration": 0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 1.0,
-    "Genetic Evidence": 12
+    "Genetic Evidence": 12,
+    "Experimental Evidence": 0
   },
-  "total_score": 13.0,
-  "publication_count": 3,
-  "publication_interval_years": 2.59,
+  "total_score": 12,
+  "publication_count": 2,
+  "publication_interval_years": 1.92,
   "classification": "Strong"
 },
 {
