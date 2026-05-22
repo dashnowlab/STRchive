@@ -354,28 +354,6 @@
   }],
   "experimental_evidence_details": [
   {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:26029707",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2015-05-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:12874418",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2003-07-22"]
-  },
-  {
     "Evidence type": "Non-human model organism",
     "Score": 2.0,
     "Citation": "pmid:19587282; pmid:11889467",
@@ -387,15 +365,15 @@
     "publication_dates": ["2009-07-08", "2002-04-01"]
   },
   {
-    "Evidence type": "Rescue in cell culture",
-    "Score": 0.5,
-    "Citation": "pmid:17460091",
-    "Evidence detail": "",
-    "evidence_category": "Rescue",
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:19439424",
+    "Evidence detail": "The phenotypes exhibited in the mutant mice match those of patients with infantile spasms. The mice also develop partial seizures early in life that evolve into different seizure types and persist into adulthood as in humans.",
+    "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-04-25"]
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2009-06-01"]
   },
   {
     "Evidence type": "Biochemical function",
@@ -411,13 +389,13 @@
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
-    "Citation": "pmid:12874418; pmid:11889467",
-    "Evidence detail": "",
+    "Citation": "pmid:19439424",
+    "Evidence detail": "The repeat may modulate epigenetic silencing (X inactivation) in symptomatic individuals.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2003-07-22", "2002-04-01"]
+    "publication_dates": ["2009-06-01"]
   }],
   "category_summary":
   {
@@ -425,9 +403,9 @@
     "Collective Evidence": 2.5,
     "Statistics": 0,
     "Function": 1.0,
-    "Functional Alteration": 1.5,
-    "Models": 2.0,
-    "Rescue": 0.5
+    "Functional Alteration": 0,
+    "Models": 4.0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
@@ -435,8 +413,8 @@
     "Genetic Evidence": 11.5
   },
   "total_score": 16.5,
-  "publication_count": 7,
-  "publication_interval_years": 17.66,
+  "publication_count": 6,
+  "publication_interval_years": 13.33,
   "classification": "Definitive"
 },
 {
