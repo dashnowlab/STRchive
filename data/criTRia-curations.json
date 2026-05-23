@@ -488,9 +488,9 @@
   "Gene": "ATN1",
   "Locus_ID": "DRPLA_ATN1",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
-  "Date": "08/12/2025",
-  "Description": null,
+  "Curator": "Macayla Weiner, Laurel Hiatt, Harriet Dashnow",
+  "Date": "05/22/2026",
+  "Description": "Dentatorubral-pallidoluysian atrophy (DRPLA) is an autosomal dominant neurodegenerative disorder associated with expansion of the ATN1 CAG repeat, which encodes an expanded polyglutamine tract. The uploaded evidence includes a clinical-neuropathologic series of five families with myoclonus, epilepsy, dementia, ataxia and choreoathetosis with dentatorubral-pallidoluysian degeneration, and a molecular study showing ATN1 gene structure, ubiquitous 4.5 kb transcript expression, and predicted protein motifs. A TR-specific humanized ATN1 expansion mouse model recapitulates relevant phenotypes, and ASO treatment rescues several disease phenotypes in this model.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -499,7 +499,7 @@
     "Evidence type": "Probands",
     "Score": 6.0,
     "Citation": "pmid:6808417",
-    "Evidence detail": "5 probands",
+    "Evidence detail": "Five families with hereditary dentatorubral-pallidoluysian atrophy were described; 16 patients were clinically summarized, with autosomal dominant inheritance inferred from multigenerational parent-to-child transmission.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -509,43 +509,21 @@
   {
     "Evidence type": "Allele",
     "Score": 2.0,
-    "Citation": "pmid:4114795",
-    "Evidence detail": "a higher number of CAG repeats correlates with earlier onset of DRPLA and higher chance of epilepsy",
+    "Citation": "pmid:8136826; pmid:7778850",
+    "Evidence detail": "An inverse correlation has been observed between the age at onset and the size of the expanded ATN1 CAG repeat in individuals with DRPLA.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_dates": ["1972-09-01"]
+    "publication_dates": ["1994-01-01", "1995-06-01"]
   }],
   "experimental_evidence_details": [
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 1.0,
-    "Citation": "pmid:7842016",
-    "Evidence detail": null,
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1994-10-01"]
-  },
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:7842016",
-    "Evidence detail": null,
+    "Evidence detail": "Northern blot analysis detected a single 4.5 kb ATN1 transcript in all examined human tissues; after beta-actin normalization, expression varied within ~5-fold and was relatively high in brain, ovary, testis, and prostate.",
     "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1994-10-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:7842016",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
@@ -554,23 +532,34 @@
   {
     "Evidence type": "Non-human model organism",
     "Score": 2.0,
-    "Citation": "pmid:7842016",
-    "Evidence detail": null,
+    "Citation": "pmid:41624332",
+    "Evidence detail": "Humanized ATN1 expansion mouse model in which one allele of mouse Atn1 is completely replaced by human ATN1 with a pure 112 CAG repeat expansion. The model recapitulates relevant phenotype including behavioral alterations, reduced brain size, and aggregate accumulation.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": ["1994-10-01"]
+    "publication_dates": ["2026-03-12"]
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:41624332",
+    "Evidence detail": "Treatment of a humanized ATN1 expansion mouse model with human ATN1-targeting ASOs rescue several disease phenotypes including behavioral phenotypes and transcriptional dysregulation in the cerebellum.",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2026-03-12"]
   }],
   "category_summary":
   {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.0,
     "Statistics": 0,
-    "Function": 1.5,
-    "Functional Alteration": 1.0,
+    "Function": 0.5,
+    "Functional Alteration": 0,
     "Models": 2.0,
-    "Rescue": 0
+    "Rescue": 2.0
   },
   "supercategory_summary":
   {
@@ -578,8 +567,8 @@
     "Genetic Evidence": 8.0
   },
   "total_score": 12.5,
-  "publication_count": 3,
-  "publication_interval_years": 22.08,
+  "publication_count": 5,
+  "publication_interval_years": 43.61,
   "classification": "Definitive"
 },
 {
@@ -587,7 +576,7 @@
   "Gene": "ATXN1",
   "Locus_ID": "SCA1_ATXN1",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt, Harriet Dashnow",
   "Date": "08/12/2025",
   "Description": "Spinocerebellar ataxia type 1 (SCA1) is an autosomal dominant neurodegenerative disorder caused by a heterozygous CAG repeat expansion in the coding region of ATXN1. The locus was first supported by linkage of autosomal dominant spinocerebellar ataxia to chromosome 6p/HLA in a large multigenerational kindred and later by identification of an unstable expanded ATXN1 CAG repeat that segregates with disease and shows repeat-length association with age at onset. Uploaded cohort studies support the clinical phenotype and biomarker profile of genetically confirmed SCA1, while mouse model studies support pathogenic gain-of-function and disease-relevant molecular and motor phenotypes.",
   "Source": "criTRia",
