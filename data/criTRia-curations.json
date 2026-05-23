@@ -759,39 +759,6 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2000-10-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:11017075",
-    "Evidence detail": "Mouse brain in situ hybridization showed Sca10 expression in brain regions relevant to ataxia and epilepsy; this is gene-expression evidence and not a non-patient cellular model of the ATTCT expansion.",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2000-10-01"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:11017075",
-    "Evidence detail": "",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2000-10-01"]
-  },
-  {
-    "Evidence type": "Rescue in non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:34970537",
-    "Evidence detail": "",
-    "evidence_category": "Rescue",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2021-01-01"]
   }],
   "category_summary":
   {
