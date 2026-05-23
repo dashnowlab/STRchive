@@ -5766,16 +5766,16 @@
   "Inheritance": "AD",
   "Curator": "Macayla Weiner, Laurel Hiatt",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "Spinocerebellar ataxia type 17 (SCA17) is an autosomal dominant neurodegenerative disorder caused by CAG/CAA repeat expansion in the coding polyglutamine tract of TBP. Reported phenotypes include cerebellar ataxia, cognitive/psychiatric symptoms, chorea, dystonia, parkinsonism, and Huntington disease-like presentations. Genetic evidence includes unrelated probands with TBP expansions and population studies supporting pathogenicity of expanded alleles, although low-range alleles show reduced penetrance and uncertain thresholds. Experimental evidence supports altered TBP transcription-related function, condensate behavior, aggregation, and neurotoxicity in model systems.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 6,
+    "Score": 6.0,
     "Citation": "pmid:12805114",
-    "Evidence detail": "2 probands",
+    "Evidence detail": "Two unrelated HDL probands carried TBP CAG/CAA expansions (44 and 46 repeats) after exclusion of HTT CAG expansions; both had early-onset behavioral/gait symptoms, ataxia, and dementia, with one also showing chorea.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -5784,9 +5784,9 @@
   },
   {
     "Evidence type": "Allele",
-    "Score": 2,
+    "Score": 2.0,
     "Citation": "pmid:12805114",
-    "Evidence detail": null,
+    "Evidence detail": "Expanded alleles comprised 44 and 46 CAG/CAA repeats; the 46-repeat allele was inherited from an unaffected 59-year-old father, supporting reduced penetrance in the low-expansion range.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -5795,9 +5795,9 @@
   },
   {
     "Evidence type": "Case-control data",
-    "Score": 6,
+    "Score": 2.0,
     "Citation": "pmid:27172828; pmid:26374734; pmid:26267067",
-    "Evidence detail": null,
+    "Evidence detail": "PMIDs 26374734 and 27172828 support association of low-range TBP expansions with SCA17/PD phenotypes in Thai cohorts, while PMID 26267067 found overlapping 41–44 repeat frequencies in Korean patients and controls; low-range alleles require cautious interpretation.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -5807,9 +5807,9 @@
   "experimental_evidence_details": [
   {
     "Evidence type": "Regulatory impact",
-    "Score": 1,
+    "Score": 1.0,
     "Citation": "pmid:35868859; pmid:32386547",
-    "Evidence detail": "transcription alteration and change in brain expression",
+    "Evidence detail": "PMID 32386547 showed disease-associated TBP polyQ expansion altered phase-separation behavior of TBP-containing transcriptional condensates; PMID 35868859 is TAF1/XDP-focused and is not TBP/SCA17 locus-specific.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -5817,54 +5817,43 @@
     "publication_dates": ["2022-07-21", "2020-05-28"]
   },
   {
-    "Evidence type": "Patient cells",
-    "Score": 2,
-    "Citation": "pmid:32386547; pmid:18218637",
-    "Evidence detail": " cherry + tissue specific protein interactions ",
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:32386547",
+    "Evidence detail": "experimental evidence using engineered constructs in non‑patient cells and in vitro systems. Pathogenic polyglutamine expansion in the TBP N‑terminal disordered region disrupts its normal phase separation behavior, providing a potential molecular mechanism for SCA17.",
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
+    "evidence_max_score": 1,
     "category_max_score": 2,
-    "publication_dates": ["2020-05-28", "2008-03-28"]
+    "publication_dates": ["2008-03-28"]
   },
   {
     "Evidence type": "Non-human model organism",
-    "Score": 2,
+    "Score": 2.0,
     "Citation": "pmid:18218637",
-    "Evidence detail": " transgenic mice + cultured cells",
+    "Evidence detail": "Transgenic mice expressing truncated polyQ-expanded TBP developed neuronal nuclear inclusions and severe early neurological phenotypes/early death, supporting in vivo neurotoxicity of expanded TBP.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
     "publication_dates": ["2008-03-28"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1,
-    "Citation": null,
-    "Evidence detail": null,
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": []
   }],
   "category_summary":
   {
-    "Singular Evidence": 6,
-    "Collective Evidence": 2,
-    "Statistics": 6,
-    "Function": 1,
-    "Functional Alteration": 2,
-    "Models": 3,
+    "Singular Evidence": 6.0,
+    "Collective Evidence": 2.0,
+    "Statistics": 2.0,
+    "Function": 1.0,
+    "Functional Alteration": 0.5,
+    "Models": 2.0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 6,
-    "Genetic Evidence": 12
+    "Experimental Evidence": 3.5,
+    "Genetic Evidence": 10.0
   },
-  "total_score": 18,
+  "total_score": 13.5,
   "publication_count": 7,
   "publication_interval_years": 19.06,
   "classification": "Definitive"
