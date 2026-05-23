@@ -1432,32 +1432,10 @@
     "publication_dates": ["1997-01-01"]
   },
   {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:8988170",
-    "Evidence detail": ".",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1997-01-01"]
-  },
-  {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
     "Citation": "pmid:23331413",
     "Evidence detail": "Secondary review: CACNA1A is the P/Q-type alpha1A calcium-channel gene for SCA6, and the SCA6 expansion encodes an expanded polyglutamine tract. The review also discusses RNAi-based post-transcriptional silencing as a therapeutic concept, not primary locus-specific data.",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2013-01-18"]
-  },
-  {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:23331413",
-    "Evidence detail": "",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1474,39 +1452,6 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["1997-01-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:23331413",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2013-01-18"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:23331413",
-    "Evidence detail": "Secondary review: summarizes splice-isoform-specific RNAi targeting the polyQ-encoding Cav2.1/CACNA1A variant as a potential SCA6 therapy; primary non-patient cell data are not included in the supplied source.",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2013-01-18"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 3.5,
-    "Citation": "pmid:23331413",
-    "Evidence detail": "",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2013-01-18"]
   },
   {
     "Evidence type": "Non-human model organism",
