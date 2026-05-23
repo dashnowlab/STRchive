@@ -5850,7 +5850,7 @@
   },
   {
     "Evidence type": "Case-control data",
-    "Score": 6,
+    "Score": 2,
     "Citation": "pmid:27172828; pmid:26374734; pmid:26267067",
     "Evidence detail": "PMIDs 26374734 and 27172828 support association of low-range TBP expansions with SCA17/PD phenotypes in Thai cohorts, while PMID 26267067 found overlapping 41–44 repeat frequencies in Korean patients and controls; low-range alleles require cautious interpretation.",
     "evidence_category": "Statistics",
@@ -5872,17 +5872,6 @@
     "publication_dates": ["2022-07-21", "2020-05-28"]
   },
   {
-    "Evidence type": "Patient cells",
-    "Score": 2,
-    "Citation": "pmid:32386547; pmid:18218637",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2020-05-28", "2008-03-28"]
-  },
-  {
     "Evidence type": "Non-human model organism",
     "Score": 2,
     "Citation": "pmid:18218637",
@@ -5892,17 +5881,6 @@
     "evidence_max_score": 4,
     "category_max_score": 4,
     "publication_dates": ["2008-03-28"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 1,
-    "Citation": null,
-    "Evidence detail": "",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": []
   }],
   "category_summary":
   {
