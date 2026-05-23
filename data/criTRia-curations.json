@@ -4024,17 +4024,6 @@
     "publication_dates": ["2023-01-01"]
   },
   {
-    "Evidence type": "Protein interaction",
-    "Score": 0.5,
-    "Citation": "pmid:28761930",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2017-08-01"]
-  },
-  {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:19620283",
@@ -4044,28 +4033,6 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2009-09-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:37332636",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2023-06-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:37332636",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2023-06-01"]
   }],
   "category_summary":
   {
