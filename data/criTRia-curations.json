@@ -3093,18 +3093,18 @@
     "Singular Evidence": 0.5,
     "Collective Evidence": 1.5,
     "Statistics": 0,
-    "Function": 1.0,
-    "Functional Alteration": 1.0,
+    "Function": 0.5,
+    "Functional Alteration": 0,
     "Models": 2.0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 4.0,
+    "Experimental Evidence": 2.5,
     "Genetic Evidence": 2.0
   },
-  "total_score": 6.0,
-  "publication_count": 2,
+  "total_score": 4.5,
+  "publication_count": 3,
   "publication_interval_years": 7.46,
   "classification": "Limited"
 },
