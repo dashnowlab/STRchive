@@ -1187,17 +1187,6 @@
     "evidence_max_score": 6,
     "category_max_score": 6,
     "publication_dates": ["2021-11-08"]
-  },
-  {
-    "Evidence type": "Case-control data",
-    "Score": 6.0,
-    "Citation": "pmid:16804541",
-    "Evidence detail": "",
-    "evidence_category": "Statistics",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2006-07-01"]
   }],
   "experimental_evidence_details": [
   {
@@ -1212,10 +1201,10 @@
     "publication_dates": ["1999-04-01"]
   },
   {
-    "Evidence type": "Protein interaction",
+    "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:10192387",
-    "Evidence detail": "",
+    "Evidence detail": "Supports ATXN8OS transcription and possible antisense regulatory biology.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -1234,32 +1223,10 @@
     "publication_dates": ["1999-04-01"]
   },
   {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:10192387",
-    "Evidence detail": "Curator review needed: cited source used patient/family DNA and human tissue RNA expression assays, but no patient-derived cell functional alteration assay was identified.",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:10192387",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["1999-04-01"]
-  },
-  {
     "Evidence type": "Non-human model organism",
     "Score": 2.0,
-    "Citation": "pmid:10192387",
-    "Evidence detail": "",
+    "Citation": "pmid:16804541",
+    "Evidence detail": "A transgenic SCA8 mouse model was created with the full-length human SCA8 (CTG)116 expansion transcribed under its endogenous promoter. The mice developed a progressive neurological phenotype and reduced cerebellar-cortical inhibition.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
