@@ -4036,7 +4036,7 @@
   },
   {
     "Evidence type": "Regulatory impact",
-    "Score": 0,
+    "Score": 0.0,
     "Citation": "pmid:38159879",
     "Evidence detail": "Study reports minimal methylation near the LOC642361/NUTM2B-AS1 CGG repeat region, no significant methylation difference between patients and healthy controls, and no significant LOC642361/NUTM2B-AS1 expression difference by RT-qPCR between patients, asymptomatic carriers, and controls. This evidence was not scored, however noted here for completeness.",
     "evidence_category": "Function",
@@ -4061,17 +4061,17 @@
     "Singular Evidence": 6.0,
     "Collective Evidence": 1.5,
     "Statistics": 0,
-    "Function": 1.5,
+    "Function": 1.0,
     "Functional Alteration": 1.0,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 2.5,
+    "Experimental Evidence": 2.0,
     "Genetic Evidence": 7.5
   },
-  "total_score": 10.0,
+  "total_score": 9.5,
   "publication_count": 4,
   "publication_interval_years": 5.0,
   "classification": "Moderate"
