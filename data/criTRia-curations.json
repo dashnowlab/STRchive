@@ -2497,9 +2497,9 @@
   "Gene": "FMR1",
   "Locus_ID": "FXTAS,POF1_FMR1",
   "Inheritance": "XD",
-  "Curator": "Macayla Weiner",
+  "Curator": "Macayla Weiner, Harriet Dashnow",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "The FMR1 5' UTR CGG premutation (55-200 repeats) is associated with the grouped FXTAS/POF1 phenotype in criTRia. Uploaded FXTAS-focused sources support a locus-specific relationship between premutation CGG repeat length and motor phenotype, including earlier onset of tremor/ataxia and greater motor impairment in premutation carriers, especially males. Experimental support in the uploaded sources is limited to FMR1 repeat/mRNA measurements in blood-derived cells and should be interpreted as indirect regulatory/functional alteration evidence rather than a dedicated cell model assay.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -2508,7 +2508,7 @@
     "Evidence type": "Probands",
     "Score": 6.0,
     "Citation": "pmid:17427188",
-    "Evidence detail": "93 probands",
+    "Evidence detail": "Study evaluated 93 male FMR1 premutation carriers (60-133 CGG repeats) with documented action tremor and/or gait ataxia; onset ages were obtained by history and carrier status was confirmed by PCR and Southern blot.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -2519,7 +2519,18 @@
     "Evidence type": "Allele",
     "Score": 2.0,
     "Citation": "pmid:17427188",
-    "Evidence detail": "length affects onset and severity/penetrance",
+    "Evidence detail": "In 93 male premutation carriers, larger FMR1 CGG repeat size correlated with earlier onset of tremor (P=0.001), ataxia (P=0.002), and either core motor symptom (P<0.0001).",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2007-06-05"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:18574214",
+    "Evidence detail": "FXPOI risk is dependent on the number of CGG repeats.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
@@ -2528,9 +2539,9 @@
   },
   {
     "Evidence type": "Case-control data",
-    "Score": 12.0,
-    "Citation": "pmid:17427188",
-    "Evidence detail": "highly significant, well matched, proven beyond bias, PCR and Southern blot",
+    "Score": 2.0,
+    "Citation": "pmid:20497189",
+    "Evidence detail": "In a cohort study of 110 daughters of men with FXTAS, compared with 43 non‑carrier female controls and 36 premutation carrier daughters of parents without FXTAS, daughters of men with FXTAS had a significantly higher prevalence of neurological, psychiatric, and menopausal symptoms. Balance and menopausal symptoms were reported as significantly increased relative to both comparison groups.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -2542,7 +2553,7 @@
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:18057320",
-    "Evidence detail": null,
+    "Evidence detail": "FMR1 mRNA was quantified from peripheral blood leukocytes in premutation carriers and controls; leukocyte mRNA levels did not correlate with motor rating scores, so regulatory support from this study is indirect and locus/gene-level.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2550,46 +2561,35 @@
     "publication_dates": ["2008-04-15"]
   },
   {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:18057320",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:12700164",
+    "Evidence detail": "A CGG‑repeat knock‑in mouse model (100 CGG repeats in Fmr1) shows elevated Fmr1 mRNA, normal FMRP levels, and progressive neuronal intranuclear inclusions that increase in size and number with age. Inclusion burden correlates with tremor/ataxia phenotypes in humans, supporting a direct role of CGG expansion or RNA toxicity in FXTAS pathogenesis.",
+    "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2008-04-15"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:18057320",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2008-04-15"]
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2003-01-01"]
   }],
   "category_summary":
   {
     "Singular Evidence": 6.0,
-    "Collective Evidence": 2.0,
-    "Statistics": 12.0,
+    "Collective Evidence": 3.0,
+    "Statistics": 2.0,
     "Function": 0.5,
-    "Functional Alteration": 1.5,
-    "Models": 0,
+    "Functional Alteration": 0,
+    "Models": 2.0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 2.0,
-    "Genetic Evidence": 12
+    "Experimental Evidence": 2.5,
+    "Genetic Evidence": 11.0
   },
-  "total_score": 14.0,
-  "publication_count": 2,
-  "publication_interval_years": 0.86,
-  "classification": "Strong"
+  "total_score": 13.5,
+  "publication_count": 5,
+  "publication_interval_years": 5.29,
+  "classification": "Definitive"
 },
 {
   "Disease_ID": "BPES",
