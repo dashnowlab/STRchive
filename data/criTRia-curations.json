@@ -4466,7 +4466,7 @@
         "Evidence type": "Probands",
         "Score": 6.0,
         "Citation": "pmid:22963882",
-        "Evidence detail": "Curator review needed: PMID 22963882 reports 191 Parkinson disease cases and 191 controls sequenced for the POLG1 CAG repeat; it does not describe CPEO probands.",
+        "Evidence detail": "Reports 191 Parkinson disease cases and 191 controls sequenced for the POLG1 CAG repeat; it does not describe CPEO probands.",
         "evidence_category": "Singular Evidence",
         "evidence_supercategory": "Genetic Evidence",
         "evidence_max_score": 6,
@@ -4502,19 +4502,6 @@
         "publication_dates": [
           "2008-12-09"
         ]
-      },
-      {
-        "Evidence type": "Regulatory impact",
-        "Score": 0.5,
-        "Citation": "pmid:22963882",
-        "Evidence detail": "Curator review needed: PMID 22963882 cites prior in silico RNA-folding effects for CAG-repeat variants but does not experimentally show repeat-dependent expression, splicing, or epigenetic impact in CPEO.",
-        "evidence_category": "Function",
-        "evidence_supercategory": "Experimental Evidence",
-        "evidence_max_score": 2,
-        "category_max_score": 2,
-        "publication_dates": [
-          "2008-12-09"
-        ]
       }
     ],
     "category_summary": {
@@ -4534,10 +4521,8 @@
     "publication_count": 1,
     "publication_interval_years": null,
     "classification": "Disputed"
-  }
-]
-,
-{
+  },
+  {
   "Disease_ID": "SCA12",
   "Gene": "PPP2R2B",
   "Locus_ID": "SCA12_PPP2R2B",
