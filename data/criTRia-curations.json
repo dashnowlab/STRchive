@@ -5871,6 +5871,17 @@
     "category_max_score": 2,
     "publication_dates": ["2022-07-21", "2020-05-28"]
   },
+  { 
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:32386547",
+    "Evidence detail": "experimental evidence using engineered constructs in non‑patient cells and in vitro systems. Pathogenic polyglutamine expansion in the TBP N‑terminal disordered region disrupts its normal phase separation behavior, providing a potential molecular mechanism for SCA17.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2008-03-28"]
+  },
   {
     "Evidence type": "Non-human model organism",
     "Score": 2,
