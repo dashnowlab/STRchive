@@ -3078,37 +3078,15 @@
     "publication_dates": ["2007-12-15"]
   },
   {
-    "Evidence type": "Regulatory impact",
-    "Score": 0.5,
-    "Citation": "pmid:17935235",
-    "Evidence detail": "",
-    "evidence_category": "Function",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:17935235",
-    "Evidence detail": ".",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2007-12-15"]
-  },
-  {
     "Evidence type": "Non-human model organism",
     "Score": 2.0,
-    "Citation": "pmid:17935235",
-    "Evidence detail": "",
+    "Citation": "pmid:15385446",
+    "Evidence detail": "Engineered Hoxa13 tract-III polyalanine-expansion mice (Hoxa13Ala28) showed limb phenotypes indistinguishable from Hoxa13 null mice and no homozygote survival to birth, supporting loss of function for HOXA13 polyalanine expansions.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": ["2007-12-15"]
+    "publication_dates": ["2004-11-15"]
   }],
   "category_summary":
   {
