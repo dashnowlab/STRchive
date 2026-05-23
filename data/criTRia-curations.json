@@ -1342,28 +1342,6 @@
     "evidence_max_score": 2,
     "category_max_score": 2,
     "publication_dates": ["2023-01-15"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 2.0,
-    "Citation": "pmid:36563608",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2023-01-15"]
-  },
-  {
-    "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:23331413",
-    "Evidence detail": "",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2013-01-18"]
   }],
   "category_summary":
   {
