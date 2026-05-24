@@ -2019,7 +2019,7 @@
   "Inheritance": "AD",
   "Curator": "Gabriel Zinser, Macayla Weiner, Harriet Dashnow",
   "Date": "05/20/2026",
-  "Description": "FRA12A is a rare, folate-sensitive chromosomal fragile site on chromosome 12 associated with Intellectual Developmental Disorder, FRA12A type. The DIP2B CGG repeat expansion causes the folate-sensitive site and is associated with phenotypic heterogeneity, including intellectual developmental disorder and ataxia. Patients across multiple independent families and cohorts demonstrate clear inheritance patterns and functional evidence. Allele size correlates with phenotype: larger expansions are linked to intellectual disability with higher methylation rates, while smaller alleles are associated with movement disorders and lower methylation. Mechanistically, repeat expansions cause promoter hypermethylation, loss of regulatory activity, and altered gene expression patterns. Case-control studies show significant enrichment of DIP2B expansions in ataxia cohorts (OR = 2.8) and cardiovascular disease populations (OR = 2.7). Computational analyses support biological relevance through protein conservation and predicted interactions with the DMAP1 methylation complex.",
+  "Description": "FRA12A is a rare, folate-sensitive chromosomal fragile site on chromosome 12 associated with intellectual developmental disorder, FRA12A type. The DIP2B CGG repeat expansion causes this folate-sensitive site and is associated with a broad phenotypic range, including intellectual disability, ataxia/movement disorder, and epilepsy; cardiovascular associations have also been reported but were not scored and are noted for completeness. For this curation, the neurodevelopmental and neurologic presentations (intellectual disability, ataxia/movement disorder, and epilepsy) were lumped as a single phenotypic spectrum, which supports the current score. If these phenotypes are treated as distinct entities, the evidence strength and resulting score may differ. Patients across multiple independent families and cohorts provide inheritance and functional support. Mechanistically, repeat expansions are associated with promoter hypermethylation, altered regulatory activity, and changes in DIP2B expression. Case-control studies report enrichment of DIP2B expansions in ataxia cohorts (OR = 2.8) and cardiovascular disease populations (OR = 2.7), and computational analyses support biological relevance through conservation and a predicted interaction with the DMAP1 methylation complex.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -2028,7 +2028,7 @@
     "Evidence type": "Probands",
     "Score": 6.0,
     "Citation": "pmid:39854091; pmid:17236128; pmid:34622207;",
-    "Evidence detail": "PMID 39854091: Two male siblings with DIP2B CGG repeat expansion presented with neurodevelopmental disability, dysmorphic traits, and a severe progressive movement disorder (chorea, dystonia, and ataxia). Inheritance and functional info is provided for this family; 5 additional independent ataxia probands were identified in a replication cohort with no prior genetic diagnosis with DIP2B alleles variying from 65-102 CGG repeats. PMID 17236128 associates the DIP2B CGG repeat expansion with fragile site FRA12A and intellectual disability. Two families, both with inheritance and functional info. In PMID 34622207: One proband with patients with Lennox-Gastaut syndrome (seizures and intellectual disability) had a DIP2B expansion and functional evidence.",
+    "Evidence detail": "PMID 39854091: Two male siblings with a DIP2B CGG repeat expansion presented with neurodevelopmental disability, dysmorphic traits, and a severe progressive movement disorder (chorea, dystonia, and ataxia). Inheritance and functional evidence are provided for this family; 5 additional independent ataxia probands were identified in a replication cohort with no prior genetic diagnosis, with DIP2B alleles varying from 65 to 102 CGG repeats. PMID 17236128 associates the DIP2B CGG repeat expansion with fragile site FRA12A and intellectual disability; two families are described, both with inheritance and functional evidence. In PMID 34622207, one proband with Lennox-Gastaut syndrome (seizures and intellectual disability) had a DIP2B expansion and supporting functional evidence.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -2039,7 +2039,7 @@
     "Evidence type": "Computational",
     "Score": 0.5,
     "Citation": "pmid:17236128",
-    "Evidence detail": "Comparative conservation and predicted domain structure support biological relevance. Protein structure suggests involvement in methylation/transcriptional regulation pathways. DIP2B predicted to interact with DMAP1 methylation complex.",
+    "Evidence detail": "Comparative conservation and predicted domain structure support biological relevance. Protein structure suggests involvement in methylation/transcriptional regulation pathways. DIP2B is predicted to interact with the DMAP1 methylation complex.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
@@ -2060,7 +2060,7 @@
   "experimental_evidence_details": [
   {
     "Evidence type": "Regulatory impact",
-    "Score": 1.5,
+    "Score": 1.0,
     "Citation": "pmid:37248219",
     "Evidence detail": "Repeat expansion associated with promoter hypermethylation, loss of regulatory activity, and predicted allelic silencing. Expanded CGG repeat associated with promoter methylation and reduced DIP2B expression. Unmethylated expansion associated with overexpression.",
     "evidence_category": "Function",
@@ -2083,22 +2083,22 @@
   "category_summary":
   {
     "Singular Evidence": 6.0,
-    "Collective Evidence": 2.5,
-    "Statistics": 4.0,
-    "Function": 1.5,
-    "Functional Alteration": 1.0,
+    "Collective Evidence": 0.5,
+    "Statistics": 3.0,
+    "Function": 1.0,
+    "Functional Alteration": 0.5,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 2.5,
-    "Genetic Evidence": 12.5
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 9.5
   },
-  "total_score": 15.0,
+  "total_score": 11.0,
   "publication_count": 5,
   "publication_interval_years": 18.08,
-  "classification": "Definitive"
+  "classification": "Moderate"
 },
 {
   "Disease_ID": "DMD",
