@@ -2036,17 +2036,6 @@
     "publication_dates": ["2025-03-01", "2007-02-01", "2021-01-01"]
   },
   {
-    "Evidence type": "Allele",
-    "Score": 2.0,
-    "Citation": "pmid:39854091",
-    "Evidence detail": "Larger expansions linked to intellectual disability phenotype and higher rate of methylation. Smaller alleles linked to movement disorder phenotype and lower rate of methylation.",
-    "evidence_category": "Collective Evidence",
-    "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 3,
-    "publication_dates": ["2025-01-24"]
-  },
-  {
     "Evidence type": "Computational",
     "Score": 0.5,
     "Citation": "pmid:17236128",
@@ -2059,9 +2048,9 @@
   },
   {
     "Evidence type": "Case-control data",
-    "Score": 4.0,
+    "Score": 3.0,
     "Citation": "pmid:39854091; pmid:38418263",
-    "Evidence detail": "In 39854091: moderate statistical power limited by the small number of affected cases (5/788), bias may be introduced by the use of aggregate gnomAD population controls rather than closely matched controls, and borderline statistical significance demonstrating enrichment of large DIP2B CGG repeats in the ataxia cohort compared to controls (OR = 2.8, P = 0.04). In 38418263: Moderate-quality association evidence: cardiovascular disease enrichment among DIP2B expansion carriers (OR = 2.7, p = 1.6 × 10⁻²), but controls are aggregate disease cohorts",
+    "Evidence detail": "In 39854091: moderate statistical power limited by the small number of affected cases (5/788), bias may be introduced by the use of aggregate gnomAD population controls rather than closely matched controls, and borderline statistical significance demonstrating enrichment of large DIP2B CGG repeats in the ataxia cohort compared to controls (OR = 2.8, P = 0.04). In 38418263: Moderate-quality association evidence: cardiovascular disease enrichment among DIP2B expansion carriers (OR = 2.7, p = 1.6 × 10⁻²), but controls are aggregate disease cohorts. This phenotype is not clearly related to the primary neurological phenotype so is not scored.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -2082,9 +2071,9 @@
   },
   {
     "Evidence type": "Patient cells",
-    "Score": 1.0,
+    "Score": 0.5,
     "Citation": "pmid:38418263; pmid:17236128",
-    "Evidence detail": "hypermethylation and reduced gene expression in cardiac tissue",
+    "Evidence detail": "Patient cells show hypermethylation and reduced gene expression in cardiac tissue. A lower score is given for this evidence as the phenotype is not clearly related to the primary neurological phenotype.",
     "evidence_category": "Functional Alteration",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
