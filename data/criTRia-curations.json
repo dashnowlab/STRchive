@@ -2476,33 +2476,33 @@
     "Score": 6.0,
     "Citation": "pmid:2031184",
     "Evidence detail": "This study investigated 28 independent families to analyze the instability of a 550-base pair DNA segment in fragile X syndrome. They demonstrated that unaffected mothers of affected children had premutations (55–200 repeats) that expand to the full mutation (>200 repeats) when passed to their offspring.",
+    "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_dates": ["1991-05-24"],
-    "evidence_category": "Singular Evidence"
+    "publication_dates": ["1991-05-24"]
   },
   {
     "Evidence type": "Allele",
     "Score": 1.0,
     "Citation": "pmid:35148024",
     "Evidence detail": "In a large cohort of 487 males with Fragile X syndrome, methylation mosaicism was associated with milder cognitive and behavioral impairment, including higher IQ and adaptive behavior and less social impairment. In contrast, size mosaicism was not associated with improved outcomes compared with full mutation cases.",
+    "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_dates": ["2022-03-01"],
-    "evidence_category": "Collective Evidence"
+    "publication_dates": ["2022-03-01"]
   },
   {
     "Evidence type": "Segregation",
     "Score": 1.5,
     "Citation": "pmid:6712153; pmid:3838733; pmid:1673303; pmid:2903666; pmid:1710175",
     "Evidence detail": "Two large segregation studies analyzed a cumulative 206 Fragile X pedigrees (pmid:6712153; pmid:3838733). They found an anomalous 80% penetrance in males, formalizing the existence of asymptomatic transmitting males (likelihood ratio test statistic chi^2 = 29.54, P < 0.0001). This 'Sherman Paradox' predicted instability/anticipation. Later, RFLP studies identified the region containing FRAXA (now FMR1) as the likely location of the causative gene (pmid:1673303; pmid:2903666). The locus was finally cloned and identified to be a repeat expansion (pmid:1710175)",
+    "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 3,
     "category_max_score": 3,
-    "publication_dates": ["1984-01-01", "1985-01-01", "1991-02-01", "1988-11-01", "1991-05-31"],
-    "evidence_category": "Collective Evidence"
+    "publication_dates": ["1984-01-01", "1985-01-01", "1991-02-01", "1988-11-01", "1991-05-31"]
   }],
   "experimental_evidence_details": [
   {
@@ -2510,44 +2510,44 @@
     "Score": 0.5,
     "Citation": "pmid:22483044",
     "Evidence detail": "Gene-level evidence: FMRP is an RNA‐binding protein involved in the control of local translation, which has pleiotropic effects, in particular on synaptic function.",
+    "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": [],
-    "evidence_category": "Function"
+    "publication_dates": ["2012-01-01"]
   },
   {
     "Evidence type": "Protein interaction",
     "Score": 0.5,
     "Citation": "pmid:22483044",
     "Evidence detail": "Supports FMRP RNA-binding/synaptic translation function at gene level.",
+    "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": [],
-    "evidence_category": "Function"
+    "publication_dates": ["2012-01-01"]
   },
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:30642066",
     "Evidence detail": "Full-mutation FXS (>200 CGG repeats) causes repeat-region hypermethylation and FMR1 transcriptional silencing, reducing FMRP; X-inactivation in females modulates FMRP expression and phenotypic variability. The ratio of cells that have the affected X active to silenced is thought to significantly affect the level of FMRP expression in the developing central nervous system.",
+    "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2019-01-12"],
-    "evidence_category": "Function"
+    "publication_dates": ["2019-01-12"]
   },
   {
     "Evidence type": "Non-human model organism",
     "Score": 4.0,
     "Citation": "pmid:36692473; pmid:8033209; pmid:16257225; pmid:31364704",
     "Evidence detail": "Several mouse models are reviewed in PMID: 36692473. Multiple Fmr1 knockout and conditional knockout mouse models recapitulate core Fragile X syndrome features, including learning deficits, hyperactivity, abnormal neural oscillations, and disrupted excitatory–inhibitory balance, supporting loss of FMRP as the primary disease mechanism in FXS. In contrast, CGG‑repeat knock‑in mice do not silence Fmr1 and instead show elevated Fmr1 mRNA with near‑normal FMRP, modeling premutation disorders (FXTAS/FXPOI) rather than FXS. Representative KO models include an exon 5 deletion causing macroorchidism, learning deficits, and hyperactivity (PMID: 8033209), and a forebrain excitatory neuron–specific conditional KO (exon 1 deletion) resulting in abnormal brain rhythms, reduced inhibitory neuron support, and hyperactivity (PMIDs: 16257225, 31364704).",
+    "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": ["2023-02-01", "1994-07-15", "2006-03-01", "2020-03-14"],
-    "evidence_category": "Models"
+    "publication_dates": ["2023-02-01", "1994-07-15", "2006-03-01", "2020-03-14"]
   }],
   "category_summary":
   {
