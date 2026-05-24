@@ -2508,23 +2508,23 @@
   {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
-    "Citation": "pmid:31342442",
-    "Evidence detail": "Gene-level evidence: FMRP is an RNA-binding protein that regulates synaptic protein synthesis and is important for brain development and synaptic plasticity; FMR1 full-mutation silencing reduces FMRP.",
+    "Citation": "pmid:22483044",
+    "Evidence detail": "Gene-level evidence: FMRP is an RNA‐binding protein involved in the control of local translation, which has pleiotropic effects, in particular on synaptic function.",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2020-09-01"],
+    "publication_dates": [],
     "evidence_category": "Function"
   },
   {
     "Evidence type": "Protein interaction",
     "Score": 0.5,
-    "Citation": "pmid:31342442",
+    "Citation": "pmid:22483044",
     "Evidence detail": "Supports FMRP RNA-binding/synaptic translation function at gene level.",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2020-09-01"],
+    "publication_dates": [],
     "evidence_category": "Function"
   },
   {
