@@ -2464,9 +2464,9 @@
   "Gene": "FMR1",
   "Locus_ID": "FXS_FMR1",
   "Inheritance": "XD",
-  "Curator": "Macayla Weiner",
+  "Curator": "Macayla Weiner, Harriet Dashnow",
   "Date": "08/18/2025",
-  "Description": null,
+  "Description": "Fragile X syndrome (FXS) is caused by full-mutation expansion of the CGG repeat (typically >200 repeats) in the 5′ untranslated region of FMR1. The full mutation leads to repeat-region hypermethylation, transcriptional silencing of FMR1, and reduced or absent FMRP, an RNA-binding protein involved in synaptic protein translation, brain development, and synaptic plasticity. The FMR1 full-mutation FXS locus-disease relationship is established and replicated over time.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
@@ -2474,53 +2474,64 @@
   {
     "Evidence type": "Probands",
     "Score": 6.0,
-    "Citation": "pmid:32463542",
-    "Evidence detail": " from 2 cohorts | 2362 probands",
+    "Citation": "pmid:2031184",
+    "Evidence detail": "This study investigated 28 independent families to analyze the instability of a 550-base pair DNA segment in fragile X syndrome. They demonstrated that unaffected mothers of affected children had premutations (55–200 repeats) that expand to the full mutation (>200 repeats) when passed to their offspring.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_dates": ["2020-08-01"]
+    "publication_dates": ["1991-05-24"]
   },
   {
-    "Evidence type": "Case-control data",
-    "Score": 5.0,
-    "Citation": "pmid:26491488",
-    "Evidence detail": "statistically significant, no bias, not well matched",
-    "evidence_category": "Statistics",
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:35148024",
+    "Evidence detail": "In a large cohort of 487 males with Fragile X syndrome, methylation mosaicism was associated with milder cognitive and behavioral impairment, including higher IQ and adaptive behavior and less social impairment. In contrast, size mosaicism was not associated with improved outcomes compared with full mutation cases.",
+    "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
-    "evidence_max_score": 12,
-    "category_max_score": 12,
-    "publication_dates": ["2014-01-01"]
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2022-03-01"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:6712153; pmid:3838733; pmid:1673303; pmid:2903666; pmid:1710175",
+    "Evidence detail": "Two large segregation studies analyzed a cumulative 206 Fragile X pedigrees (pmid:6712153; pmid:3838733). They found an anomalous 80% penetrance in males, formalizing the existence of asymptomatic transmitting males (likelihood ratio test statistic chi^2 = 29.54, P < 0.0001). This 'Sherman Paradox' predicted instability/anticipation. Later, RFLP studies identified the region containing FRAXA (now FMR1) as the likely location of the causative gene (pmid:1673303; pmid:2903666). The locus was finally cloned and identified to be a repeat expansion (pmid:1710175)",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["1984-01-01", "1985-01-01", "1991-02-01", "1988-11-01", "1991-05-31"]
   }],
   "experimental_evidence_details": [
   {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
-    "Citation": "pmid:31342442",
-    "Evidence detail": "transcriptional silencing of gene",
+    "Citation": "pmid:22483044",
+    "Evidence detail": "Gene-level evidence: FMRP is an RNA‐binding protein involved in the control of local translation, which has pleiotropic effects, in particular on synaptic function.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2020-09-01"]
+    "publication_dates": ["2012-01-01"]
   },
   {
     "Evidence type": "Protein interaction",
     "Score": 0.5,
-    "Citation": "pmid:1342442",
-    "Evidence detail": "absence of [FMRP] evokes FXS;  \"associated marked decrease in... protein product\"",
+    "Citation": "pmid:22483044",
+    "Evidence detail": "Supports FMRP RNA-binding/synaptic translation function at gene level.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["1992-01-01"]
+    "publication_dates": ["2012-01-01"]
   },
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
     "Citation": "pmid:30642066",
-    "Evidence detail": "It is believed that only a small number of embryonic progenitor cells will go on to form the brain, so the ratio of cells that have the affected X active to silenced is thought to significantly affect the level of FMRP expression in the developing central nervous system.",
+    "Evidence detail": "Full-mutation FXS (>200 CGG repeats) causes repeat-region hypermethylation and FMR1 transcriptional silencing, reducing FMRP; X-inactivation in females modulates FMRP expression and phenotypic variability. The ratio of cells that have the affected X active to silenced is thought to significantly affect the level of FMRP expression in the developing central nervous system.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -2528,56 +2539,34 @@
     "publication_dates": ["2019-01-12"]
   },
   {
-    "Evidence type": "Patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:30678024",
-    "Evidence detail": "leads to abnormal methylation of MFR1",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2019-01-23"]
-  },
-  {
     "Evidence type": "Non-human model organism",
-    "Score": 1.0,
-    "Citation": "pmid:29868108",
-    "Evidence detail": "257 patients",
+    "Score": 4.0,
+    "Citation": "pmid:36692473; pmid:8033209; pmid:16257225; pmid:31364704",
+    "Evidence detail": "Several mouse models are reviewed in PMID: 36692473. Multiple Fmr1 knockout and conditional knockout mouse models recapitulate core Fragile X syndrome features, including learning deficits, hyperactivity, abnormal neural oscillations, and disrupted excitatory–inhibitory balance, supporting loss of FMRP as the primary disease mechanism in FXS. In contrast, CGG‑repeat knock‑in mice do not silence Fmr1 and instead show elevated Fmr1 mRNA with near‑normal FMRP, modeling premutation disorders (FXTAS/FXPOI) rather than FXS. Representative KO models include an exon 5 deletion causing macroorchidism, learning deficits, and hyperactivity (PMID: 8033209), and a forebrain excitatory neuron–specific conditional KO (exon 1 deletion) resulting in abnormal brain rhythms, reduced inhibitory neuron support, and hyperactivity (PMIDs: 16257225, 31364704).",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": ["2018-01-01"]
-  },
-  {
-    "Evidence type": "Cell culture",
-    "Score": 0.5,
-    "Citation": "pmid:25287458",
-    "Evidence detail": "control humans",
-    "evidence_category": "Models",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2014-11-01"]
+    "publication_dates": ["2023-02-01", "1994-07-15", "2006-03-01", "2020-03-14"]
   }],
   "category_summary":
   {
     "Singular Evidence": 6.0,
-    "Collective Evidence": 0,
-    "Statistics": 5.0,
+    "Collective Evidence": 2.5,
+    "Statistics": 0,
     "Function": 1.5,
-    "Functional Alteration": 0.5,
-    "Models": 1.5,
+    "Functional Alteration": 0,
+    "Models": 4.0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 3.5,
-    "Genetic Evidence": 11.0
+    "Experimental Evidence": 5.5,
+    "Genetic Evidence": 8.5
   },
-  "total_score": 14.5,
-  "publication_count": 8,
-  "publication_interval_years": 28.67,
+  "total_score": 14.0,
+  "publication_count": 13,
+  "publication_interval_years": 39.09,
   "classification": "Definitive"
 },
 {
