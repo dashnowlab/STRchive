@@ -2013,6 +2013,94 @@
   "classification": "Strong"
 },
 {
+  "Disease_ID": "FRA12A",
+  "Gene": "DIP2B",
+  "Locus_ID": "FRA12A_DIP2B",
+  "Inheritance": "AD",
+  "Curator": "Gabriel Zinser, Macayla Weiner, Harriet Dashnow",
+  "Date": "05/20/2026",
+  "Description": "FRA12A is a rare, folate-sensitive chromosomal fragile site on chromosome 12 associated with intellectual developmental disorder, FRA12A type. The DIP2B CGG repeat expansion causes this folate-sensitive site and is associated with a broad phenotypic range, including intellectual disability, ataxia/movement disorder, and epilepsy; cardiovascular associations have also been reported but were not scored and are noted for completeness. For this curation, the neurodevelopmental and neurologic presentations (intellectual disability, ataxia/movement disorder, and epilepsy) were lumped as a single phenotypic spectrum, which supports the current score. If these phenotypes are treated as distinct entities, the evidence strength and resulting score may differ. Patients across multiple independent families and cohorts provide inheritance and functional support. Mechanistically, repeat expansions are associated with promoter hypermethylation, altered regulatory activity, and changes in DIP2B expression. Case-control studies report enrichment of DIP2B expansions in ataxia cohorts (OR = 2.8) and cardiovascular disease populations (OR = 2.7), and computational analyses support biological relevance through conservation and a predicted interaction with the DMAP1 methylation complex.",
+  "Source": "criTRia",
+  "SOP_version": "criTRia v0",
+  "Manual_evidence_level": null,
+  "genetic_evidence_details": [
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:39854091; pmid:17236128; pmid:34622207;",
+    "Evidence detail": "PMID 39854091: Two male siblings with a DIP2B CGG repeat expansion presented with neurodevelopmental disability, dysmorphic traits, and a severe progressive movement disorder (chorea, dystonia, and ataxia). Inheritance and functional evidence are provided for this family; 5 additional independent ataxia probands were identified in a replication cohort with no prior genetic diagnosis, with DIP2B alleles varying from 65 to 102 CGG repeats. PMID 17236128 associates the DIP2B CGG repeat expansion with fragile site FRA12A and intellectual disability; two families are described, both with inheritance and functional evidence. In PMID 34622207, one proband with Lennox-Gastaut syndrome (seizures and intellectual disability) had a DIP2B expansion and supporting functional evidence.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2025-03-01", "2007-02-01", "2021-01-01"]
+  },
+  {
+    "Evidence type": "Computational",
+    "Score": 0.5,
+    "Citation": "pmid:17236128",
+    "Evidence detail": "Comparative conservation and predicted domain structure support biological relevance. Protein structure suggests involvement in methylation/transcriptional regulation pathways. DIP2B is predicted to interact with the DMAP1 methylation complex.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2007-02-01"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 3.0,
+    "Citation": "pmid:39854091; pmid:38418263",
+    "Evidence detail": "In 39854091: moderate statistical power limited by the small number of affected cases (5/788), bias may be introduced by the use of aggregate gnomAD population controls rather than closely matched controls, and borderline statistical significance demonstrating enrichment of large DIP2B CGG repeats in the ataxia cohort compared to controls (OR = 2.8, P = 0.04). In 38418263: Moderate-quality association evidence: cardiovascular disease enrichment among DIP2B expansion carriers (OR = 2.7, p = 1.6 × 10⁻²), but controls are aggregate disease cohorts. This phenotype is not clearly related to the primary neurological phenotype so is not scored.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2025-03-01", "2024-03-01"]
+  }],
+  "experimental_evidence_details": [
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 1.0,
+    "Citation": "pmid:37248219",
+    "Evidence detail": "Repeat expansion associated with promoter hypermethylation, loss of regulatory activity, and predicted allelic silencing. Expanded CGG repeat associated with promoter methylation and reduced DIP2B expression. Unmethylated expansion associated with overexpression.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2023-05-29"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:38418263; pmid:17236128",
+    "Evidence detail": "Patient cells show hypermethylation and reduced gene expression in cardiac tissue. A lower score is given for this evidence as the phenotype is not clearly related to the primary neurological phenotype.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2024-03-01", "2007-02-01"]
+  }],
+  "category_summary":
+  {
+    "Singular Evidence": 6.0,
+    "Collective Evidence": 0.5,
+    "Statistics": 3.0,
+    "Function": 1.0,
+    "Functional Alteration": 0.5,
+    "Models": 0,
+    "Rescue": 0
+  },
+  "supercategory_summary":
+  {
+    "Experimental Evidence": 1.5,
+    "Genetic Evidence": 9.5
+  },
+  "total_score": 11.0,
+  "publication_count": 5,
+  "publication_interval_years": 18.08,
+  "classification": "Moderate"
+},
+{
   "Disease_ID": "DMD",
   "Gene": "DMD",
   "Locus_ID": "DMD_DMD",
