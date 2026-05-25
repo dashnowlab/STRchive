@@ -313,7 +313,7 @@ def atarva_catalog(row, genome = 'hg38'):
                 bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
             elif struct_dict['type'] == 'interruption' or struct_dict['type'] == 'internal_repeat':
                 # interruptions and internal repeats are not included in the structure
-                continue
+                bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
             else:
                 # this is a flank repeat
                 bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}_flank\n"
