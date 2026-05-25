@@ -624,6 +624,19 @@
   "Gene": "GOLGA8A"
 },
 {
+  "LocusId": "CHNG3_MIR7-2",
+  "ReferenceRegion": "chr15:89112664-89112683",
+  "LocusStructure": "(TTTG)*",
+  "VariantType": "Repeat",
+  "HGNCId": null,
+  "InheritanceMode": ["AD"],
+  "DisplayRU": "TTTG",
+  "Disease": "CHNG3",
+  "NormalMax": 4,
+  "PathologicMin": 5,
+  "Gene": "MIR7-2"
+},
+{
   "LocusId": "MIR7-2_CHNG3",
   "ReferenceRegion": "chr15:89112664-89112683",
   "LocusStructure": "(TTTG)*",
