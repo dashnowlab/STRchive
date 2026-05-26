@@ -1573,153 +1573,130 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "",
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "pmid:14505273",
-      "Evidence detail": "Haplotype analysis of 71 families with genetically confirmed DM2; all affected individuals were diagnosed with DM and tested positive for the CNBP/ZNF9 CCTG expansion.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": [
-        "2003-10-01"
-      ]
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 1.0,
-      "Citation": "pmid:11486088",
-      "Evidence detail": "DM2 alleles showed uninterrupted expansion of the CCTG portion of the intron 1 repeat tract (75–~11,000 repeats; mean ~5,000), whereas sequenced normal alleles were interrupted and controls showed no expansion.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2001-08-03"
-      ]
-    },
-    {
-      "Evidence type": "Segregation",
-      "Score": 1.5,
-      "Citation": "pmid:12970845",
-      "Evidence detail": "Linkage analysis across 17 European-origin PROMM/PDM/DM2 kindreds gave a peak multipoint LOD score of 19.521 at D3S3584; all affected individuals had the CNBP/ZNF9 CCTG expansion.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 3,
-      "category_max_score": 3,
-      "publication_dates": [
-        "2003-10-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "pmid:14505273",
+    "Evidence detail": "Haplotype analysis of 71 families with genetically confirmed DM2; all affected individuals were diagnosed with DM and tested positive for the CNBP/ZNF9 CCTG expansion.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["2003-10-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 1.0,
+    "Citation": "pmid:11486088",
+    "Evidence detail": "DM2 alleles showed uninterrupted expansion of the CCTG portion of the intron 1 repeat tract (75–~11,000 repeats; mean ~5,000), whereas sequenced normal alleles were interrupted and controls showed no expansion.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2001-08-03"]
+  },
+  {
+    "Evidence type": "Segregation",
+    "Score": 1.5,
+    "Citation": "pmid:12970845",
+    "Evidence detail": "Linkage analysis across 17 European-origin PROMM/PDM/DM2 kindreds gave a peak multipoint LOD score of 19.521 at D3S3584; all affected individuals had the CNBP/ZNF9 CCTG expansion.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 3,
+    "category_max_score": 3,
+    "publication_dates": ["2003-10-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:28623239",
-      "Evidence detail": "Drosophila DM2-106 model expressing noncoding (CCUG)106 repeats recapitulated DM2-like RNA foci, MBNL-dependent mis-splicing, retinal/eye disruption, and apoptosis.",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2017-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:28623239",
-      "Evidence detail": "In DM2-106 fly muscle, expanded CCUG repeats caused aberrant Fhos exon 24 inclusion (>70% vs ~30% in controls) and altered INSR, TNNT2, and Tnnt3 spliceosensor reporters.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2017-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:28623239",
-      "Evidence detail": "Expanded (CCUG)106 transcripts formed predominantly nuclear RNA foci in fly muscle and retinal cells and sequestered MBNL proteins.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2017-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 0.5,
-      "Citation": "pmid:28623239",
-      "Evidence detail": "Expression of DM2-106 in Drosophila retina disrupted photoreceptor, cone, and pigment cell organization and induced apoptosis in developing eye imaginal discs.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2017-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Rescue in non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:28623239",
-      "Evidence detail": "PKR-I treatment reduced/disrupted CCUG RNA foci and apoptosis in DM2-106 eye imaginal discs; the paper notes adult eye morphology was not rescued after larval feeding.",
-      "evidence_category": "Rescue",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2017-08-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:20971734",
-      "Evidence detail": "In DM2 skeletal muscle, the mutant CNBP/ZNF9 allele showed retention of intron 1 sequences and aberrant intron 3-retaining transcripts, consistent with impaired splicing and reduced mRNA/protein levels.",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2010-12-01"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:20971734",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2010-12-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:20971734",
-      "Evidence detail": "Patient skeletal muscle biopsies and myoblast cultures from genetically confirmed DM2 cases showed reduced CNBP/ZNF9 mRNA/protein, altered localization, and aberrant splicing compared with normal and DM1 controls.",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2010-12-01"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28623239",
+    "Evidence detail": "Drosophila DM2-106 model expressing noncoding (CCUG)106 repeats recapitulated DM2-like RNA foci, MBNL-dependent mis-splicing, retinal/eye disruption, and apoptosis.",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2017-08-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Evidence detail": "In DM2-106 fly muscle, expanded CCUG repeats caused aberrant Fhos exon 24 inclusion (>70% vs ~30% in controls) and altered INSR, TNNT2, and Tnnt3 spliceosensor reporters.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2017-08-01"]
+  },
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Evidence detail": "Expanded (CCUG)106 transcripts formed predominantly nuclear RNA foci in fly muscle and retinal cells and sequestered MBNL proteins.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2017-08-01"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:28623239",
+    "Evidence detail": "Expression of DM2-106 in Drosophila retina disrupted photoreceptor, cone, and pigment cell organization and induced apoptosis in developing eye imaginal discs.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_dates": ["2017-08-01"]
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:28623239",
+    "Evidence detail": "PKR-I treatment reduced/disrupted CCUG RNA foci and apoptosis in DM2-106 eye imaginal discs; the paper notes adult eye morphology was not rescued after larval feeding.",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2017-08-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:20971734",
+    "Evidence detail": "In DM2 skeletal muscle, the mutant CNBP/ZNF9 allele showed retention of intron 1 sequences and aberrant intron 3-retaining transcripts, consistent with impaired splicing and reduced mRNA/protein levels.",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2010-12-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:20971734",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2010-12-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:20971734",
+    "Evidence detail": "Patient skeletal muscle biopsies and myoblast cultures from genetically confirmed DM2 cases showed reduced CNBP/ZNF9 mRNA/protein, altered localization, and aberrant splicing compared with normal and DM1 controls.",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2010-12-01"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.5,
     "Statistics": 0,
@@ -1728,7 +1705,8 @@
     "Models": 2.0,
     "Rescue": 2.0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 6,
     "Genetic Evidence": 8.5
   },
@@ -1736,8 +1714,7 @@
   "publication_count": 5,
   "publication_interval_years": 15.99,
   "classification": "Definitive"
-}
-,
+},
 {
   "Disease_ID": "EDM1-PSACH",
   "Gene": "COMP",
