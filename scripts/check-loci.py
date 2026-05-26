@@ -104,6 +104,45 @@ def circular_permuted(x):
     modified_sequences.extend([x[i:] + x[:i] for i in range(n)])
     return modified_sequences
 
+standard_motif_arrangements = [
+    "CAG",
+    "CCG",
+    "CGG",
+    "CTG",
+    "GCN",
+    "TTTCA",
+    "AAATG",
+]
+
+def standardise_reference_motif(motif):
+    """
+    Args:
+        motif (str)
+    Returns:
+        str: motif rewritten to the preferred standard arrangement if possible
+    >>> standardise_reference_motif('GCC')
+    'CCG'
+    >>> standardise_reference_motif('CGC')
+    'CCG'
+    >>> standardise_reference_motif('CAG')
+    'CAG'
+    >>> standardise_reference_motif('XYZ')
+    'XYZ'
+    """
+    if motif is None or len(motif) == 0:
+        return motif
+    motif = motif.upper()
+    for standard_motif in standard_motif_arrangements:
+        standard_motif = standard_motif.upper()
+
+        if len(motif) != len(standard_motif):
+            continue
+
+        if standard_motif in circular_permuted(motif):
+            return standard_motif
+
+    return motif
+
 def normalise_str(in_dna):
     """
     Args:
@@ -127,67 +166,96 @@ def normalise_str(in_dna):
 
     return min(all_possible)
 
-def get_new_motif(motif, gene_strand):
+def get_new_motif(reference_motif, gene_strand):
     """
     Args:
-        motif (string)
+        reference_motif (string)
         gene_strand: either + or -
     Returns:
-        the normalized output of the string from ref to gene orientation
-    Get the new normalized motif for each row.
-    If gene_strand is +, reference orientation = gene orientation
-    If gene_strand is -, reverse_complement ref_ori for gene_ori
-    >>> get_new_motif('GAG', '+')
-    'AGG'
-    >>> get_new_motif('GAG', '-')
-    'CCT'
-    >>> get_new_motif('TCATC', '-')
-    'AGATG'
+        motif in gene orientation
+
+    If gene_strand is +, gene orientation copies reference orientation.
+    If gene_strand is -, gene orientation is the reverse complement of reference orientation.
+
+    >>> get_new_motif('CCG', '+')
+    'CCG'
+    >>> get_new_motif('CCG', '-')
+    'CGG'
+    >>> get_new_motif('CAG', '-')
+    'CTG'
     >>> get_new_motif('TAG', 'plus')
     Traceback (most recent call last):
     ...
     AssertionError: Gene strand plus is not +/-
     """
     if gene_strand == "+":
-        normalized_motif = normalise_str(motif)
+        return reference_motif
     elif gene_strand == "-":
-        seq = Seq(motif)
-        reverse_comp = str(seq.reverse_complement())
-        normalized_motif = normalise_str(reverse_comp)
+        seq = Seq(reference_motif)
+        return str(seq.reverse_complement())
     else:
         raise AssertionError(f'Gene strand {gene_strand} is not +/-')
-    return normalized_motif
     
 def check_motif_orientation(record):
     """
     Args:
         record (dict): a dictionary containing a single locus from the STRchive json
     Returns:
-        record (dict): the record with any motif fields with incorrect orientation updated
+        record (dict): the record with motif reference orientations standardized
+        and gene orientations recalculated from the standardized reference motifs
     """
+
     field_pairs = [
         ('pathogenic_motif_reference_orientation', 'pathogenic_motif_gene_orientation'),
         ('benign_motif_reference_orientation', 'benign_motif_gene_orientation'),
         ('unknown_motif_reference_orientation', 'unknown_motif_gene_orientation'),
         ('interruption_reference_orientation', 'interruption_gene_orientation')
     ]
+
     for ref_field, gene_field in field_pairs:
         if record[ref_field] is None:
             continue
-        old = record[gene_field]
-        new = [get_new_motif(x, record['gene_strand']) for x in record[ref_field]]
-        if old != new:
-            for old_motif, new_motif in zip(old, new):
+
+        # 1. Standardize reference orientation
+        old_ref_motifs = record[ref_field]
+        new_ref_motifs = [
+            standardise_reference_motif(motif)
+            for motif in old_ref_motifs
+        ]
+
+        if old_ref_motifs != new_ref_motifs:
+            for old_motif, new_motif in zip(old_ref_motifs, new_ref_motifs):
                 if old_motif != new_motif:
-                    sys.stderr.write(f'Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n')
-        record[gene_field] = new
+                    sys.stderr.write(
+                        f"Updating {record['id']} {ref_field} from {old_motif} to {new_motif}\n"
+                    )
+
+        record[ref_field] = new_ref_motifs
+
+        # 2. Recompute gene orientation from the standardized reference orientation
+        old_gene_motifs = record[gene_field]
+        new_gene_motifs = [
+            get_new_motif(motif, record['gene_strand'])
+            for motif in record[ref_field]
+        ]
+
+        if old_gene_motifs != new_gene_motifs:
+            for old_motif, new_motif in zip(old_gene_motifs, new_gene_motifs):
+                if old_motif != new_motif:
+                    sys.stderr.write(
+                        f"Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n"
+                    )
+        record[gene_field] = new_gene_motifs
 
     # Replace locus_structure with a string of the motifs in reference orientation
-    # example   [ { "motif": "CAGG", "count": null, "type": "pathogenic_repeat" } ]
     if record['locus_structure'] is None:
         record['locus_structure'] = []
         for motif in record['pathogenic_motif_reference_orientation']:
-            record['locus_structure'].append({"motif": motif, "count": None, "type": "pathogenic_repeat"})
+            record['locus_structure'].append({
+                "motif": motif,
+                "count": None,
+                "type": "pathogenic_repeat"
+            })
 
     return record
 
