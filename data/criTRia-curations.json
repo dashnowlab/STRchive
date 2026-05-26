@@ -814,140 +814,119 @@
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": "Definitive",
   "genetic_evidence_details": [
-    {
-      "Evidence type": "Probands",
-      "Score": 6.0,
-      "Citation": "url:https://www.ncbi.nlm.nih.gov/books/NBK1196",
-      "Evidence detail": "GeneReviews states that SCA3 diagnosis is established in a proband with suggestive findings and a heterozygous abnormal ATXN3 CAG repeat expansion; targeted CAG-repeat analysis detects pathogenic variants in essentially all molecularly confirmed probands.",
-      "evidence_category": "Singular Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 6,
-      "category_max_score": 6,
-      "publication_dates": []
-    },
-    {
-      "Evidence type": "Allele",
-      "Score": 2.0,
-      "Citation": "pmid:9040742",
-      "Evidence detail": "In four Chinese MJD/SCA3 pedigrees, all 15 affected individuals had expanded ATXN3/MJD1 CAG alleles of 72-86 repeats versus 14-40 repeats in normal alleles, with a significant inverse correlation between expanded repeat length and age at onset and anticipation across generations.",
-      "evidence_category": "Collective Evidence",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 3,
-      "publication_dates": [
-        "1997-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Case-control data",
-      "Score": 6.0,
-      "Citation": "pmid:40178277; pmid:39921113; pmid:39731318",
-      "Evidence detail": "Available uploaded sources include molecularly confirmed SCA3 cohorts with comparison controls: 128 SCA3 patients and 125 controls with normal CAG-repeat ranges (pmid:40178277), 45 SCA3 patients and 44 controls (pmid:39921113), and 281 unrelated genetically confirmed SCA3 patients with 182 controls plus a 96-patient phenotyped cohort with expanded ATXN3 CAG alleles of 56-84 repeats (pmid:39731318). These support patient-control cohort context but are not primary discovery case-control enrichment studies.",
-      "evidence_category": "Statistics",
-      "evidence_supercategory": "Genetic Evidence",
-      "evidence_max_score": 12,
-      "category_max_score": 12,
-      "publication_dates": [
-        "2025-04-01",
-        "2025-04-01",
-        "2025-01-01"
-      ]
-    }
-  ],
+  {
+    "Evidence type": "Probands",
+    "Score": 6.0,
+    "Citation": "url:https://www.ncbi.nlm.nih.gov/books/NBK1196",
+    "Evidence detail": "GeneReviews states that SCA3 diagnosis is established in a proband with suggestive findings and a heterozygous abnormal ATXN3 CAG repeat expansion; targeted CAG-repeat analysis detects pathogenic variants in essentially all molecularly confirmed probands.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": []
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 2.0,
+    "Citation": "pmid:9040742",
+    "Evidence detail": "In four Chinese MJD/SCA3 pedigrees, all 15 affected individuals had expanded ATXN3/MJD1 CAG alleles of 72-86 repeats versus 14-40 repeats in normal alleles, with a significant inverse correlation between expanded repeat length and age at onset and anticipation across generations.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["1997-02-01"]
+  },
+  {
+    "Evidence type": "Case-control data",
+    "Score": 6.0,
+    "Citation": "pmid:40178277; pmid:39921113; pmid:39731318",
+    "Evidence detail": "Available uploaded sources include molecularly confirmed SCA3 cohorts with comparison controls: 128 SCA3 patients and 125 controls with normal CAG-repeat ranges (pmid:40178277), 45 SCA3 patients and 44 controls (pmid:39921113), and 281 unrelated genetically confirmed SCA3 patients with 182 controls plus a 96-patient phenotyped cohort with expanded ATXN3 CAG alleles of 56-84 repeats (pmid:39731318). These support patient-control cohort context but are not primary discovery case-control enrichment studies.",
+    "evidence_category": "Statistics",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 12,
+    "category_max_score": 12,
+    "publication_dates": ["2025-04-01", "2025-04-01", "2025-01-01"]
+  }],
   "experimental_evidence_details": [
-    {
-      "Evidence type": "Biochemical function",
-      "Score": 0.5,
-      "Citation": "pmid:39699045",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Protein interaction",
-      "Score": 0.5,
-      "Citation": "pmid:39699045",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Regulatory impact",
-      "Score": 0.5,
-      "Citation": "pmid:39699045",
-      "Evidence detail": "",
-      "evidence_category": "Function",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Patient cells",
-      "Score": 1.0,
-      "Citation": "pmid:39699045",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 2,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-patient cells",
-      "Score": 0.5,
-      "Citation": "pmid:39699045",
-      "Evidence detail": "",
-      "evidence_category": "Functional Alteration",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 1,
-      "category_max_score": 2,
-      "publication_dates": [
-        "2025-02-01"
-      ]
-    },
-    {
-      "Evidence type": "Non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:7874163",
-      "Evidence detail": "",
-      "evidence_category": "Models",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "1994-11-01"
-      ]
-    },
-    {
-      "Evidence type": "Rescue in non-human model organism",
-      "Score": 2.0,
-      "Citation": "pmid:39298485",
-      "Evidence detail": "",
-      "evidence_category": "Rescue",
-      "evidence_supercategory": "Experimental Evidence",
-      "evidence_max_score": 4,
-      "category_max_score": 4,
-      "publication_dates": [
-        "2024-09-24"
-      ]
-    }
-  ],
-  "category_summary": {
+  {
+    "Evidence type": "Biochemical function",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-02-01"]
+  },
+  {
+    "Evidence type": "Protein interaction",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-02-01"]
+  },
+  {
+    "Evidence type": "Regulatory impact",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Evidence detail": "",
+    "evidence_category": "Function",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-02-01"]
+  },
+  {
+    "Evidence type": "Patient cells",
+    "Score": 1.0,
+    "Citation": "pmid:39699045",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 2,
+    "publication_dates": ["2025-02-01"]
+  },
+  {
+    "Evidence type": "Non-patient cells",
+    "Score": 0.5,
+    "Citation": "pmid:39699045",
+    "Evidence detail": "",
+    "evidence_category": "Functional Alteration",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 1,
+    "category_max_score": 2,
+    "publication_dates": ["2025-02-01"]
+  },
+  {
+    "Evidence type": "Non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:7874163",
+    "Evidence detail": "",
+    "evidence_category": "Models",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["1994-11-01"]
+  },
+  {
+    "Evidence type": "Rescue in non-human model organism",
+    "Score": 2.0,
+    "Citation": "pmid:39298485",
+    "Evidence detail": "",
+    "evidence_category": "Rescue",
+    "evidence_supercategory": "Experimental Evidence",
+    "evidence_max_score": 4,
+    "category_max_score": 4,
+    "publication_dates": ["2024-09-24"]
+  }],
+  "category_summary":
+  {
     "Singular Evidence": 6.0,
     "Collective Evidence": 2.0,
     "Statistics": 6.0,
@@ -956,7 +935,8 @@
     "Models": 2.0,
     "Rescue": 2.0
   },
-  "supercategory_summary": {
+  "supercategory_summary":
+  {
     "Experimental Evidence": 6,
     "Genetic Evidence": 12
   },
