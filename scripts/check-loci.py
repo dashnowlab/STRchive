@@ -135,6 +135,7 @@ CANONICAL_MOTIFS = [
     "CGG",
     "CTG",
     "GCN",
+    "CAA"
     "TTTCA",
     "AAATG",
 ]
@@ -244,7 +245,23 @@ def check_motif_orientation(record):
 
         old_ref_motifs = record[ref_field]
         old_gene_motifs = record[gene_field]
-        new_ref_motifs, new_gene_motifs = get_other_motif(old_ref_motifs, old_gene_motifs, record['gene_strand'])
+
+        assert isinstance(old_ref_motifs, list), f"{ref_field} should be a list in record {record['id']}"
+        assert isinstance(old_gene_motifs, list), f"{gene_field} should be a list in record {record['id']}"
+
+        if len(old_ref_motifs) != len(old_gene_motifs):
+            # Add Nones to the shorter list so they are the same length
+            if len(old_ref_motifs) < len(old_gene_motifs):
+                old_ref_motifs = old_ref_motifs + [None] * (len(old_gene_motifs) - len(old_ref_motifs))
+            else:
+                old_gene_motifs = old_gene_motifs + [None] * (len(old_ref_motifs) - len(old_gene_motifs))
+
+        new_ref_motifs = []
+        new_gene_motifs = []
+        for old_ref_motif, old_gene_motif in zip(old_ref_motifs, old_gene_motifs):
+           new_ref_motif, new_gene_motif = get_other_motif(old_ref_motif, old_gene_motif, record['gene_strand'])
+           new_ref_motifs.append(new_ref_motif)
+           new_gene_motifs.append(new_gene_motif)
 
         if old_ref_motifs != new_ref_motifs:
             for old_motif, new_motif in zip(old_ref_motifs, new_ref_motifs):
