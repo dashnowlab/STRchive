@@ -823,7 +823,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_dates": []
+    "publication_dates": ["1995-10-01"]
   },
   {
     "Evidence type": "Probands",
@@ -834,7 +834,7 @@
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_dates": []
+    "publication_dates": ["1996-04-01"]
   },
   {
     "Evidence type": "Allele",
@@ -909,17 +909,17 @@
     "Collective Evidence": 2.0,
     "Statistics": 6.0,
     "Function": 1.5,
-    "Functional Alteration": 1.5,
-    "Models": 2.0,
-    "Rescue": 2.0
+    "Functional Alteration": 0,
+    "Models": 4.0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 6,
+    "Experimental Evidence": 5.5,
     "Genetic Evidence": 12
   },
-  "total_score": 18,
-  "publication_count": 8,
+  "total_score": 17.5,
+  "publication_count": 9,
   "publication_interval_years": 30.41,
   "classification": "Definitive"
 },
