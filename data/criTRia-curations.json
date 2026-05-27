@@ -807,40 +807,51 @@
   "Gene": "ATXN3",
   "Locus_ID": "SCA3_ATXN3",
   "Inheritance": "AD",
-  "Curator": "Macayla Weiner, Laurel Hiatt",
+  "Curator": "Macayla Weiner, Laurel Hiatt, Harriet Dashnow",
   "Date": "08/12/2025",
-  "Description": null,
+  "Description": "Spinocerebellar ataxia type 3 (SCA3/Machado-Joseph disease) is an autosomal dominant polyglutamine neurodegenerative disorder caused by a heterozygous CAG repeat expansion in ATXN3. The disorder is characterized by progressive cerebellar ataxia with variable pyramidal, extrapyramidal, peripheral motor neuron, ophthalmologic, and other neurologic features. Reported normal alleles are generally much shorter than pathogenic alleles, and multiple studies support a repeat-length effect, with larger expanded alleles associated with earlier age at onset and anticipation.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
   "Manual_evidence_level": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "url:https://www.ncbi.nlm.nih.gov/books/NBK1196",
-    "Evidence detail": null,
+    "Score": 3.0,
+    "Citation": "pmid:7573040",
+    "Evidence detail": "Four unrelated French families were studied; all showed expanded CAG repeats and the SCA3/MJD phenotype.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
     "category_max_score": 6,
-    "publication_dates": []
+    "publication_dates": ["1995-10-01"]
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:8619527",
+    "Evidence detail": "Thirty-four families with confirmed SCA3/MJD were clinically characterized, demonstrating broad phenotypic variability.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": ["1996-04-01"]
   },
   {
     "Evidence type": "Allele",
     "Score": 2.0,
-    "Citation": "pmid:9040742",
-    "Evidence detail": null,
+    "Citation": "pmid:9040742; pmid:7573040",
+    "Evidence detail": "PMID 9040742 reports that in four Chinese MJD/SCA3 pedigrees, all 15 affected individuals had expanded ATXN3/MJD1 CAG alleles of 72-86 repeats versus 14-40 repeats in normal alleles, with a significant inverse correlation between expanded repeat length and age at onset and anticipation across generations. PMID 7573040 also found a significant negative correlation between expanded repeat length and age at onset in 28 individuals from three families of French descent.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_dates": ["1997-02-01"]
+    "publication_dates": ["1997-02-01", "1995-10-01"]
   },
   {
     "Evidence type": "Case-control data",
     "Score": 6.0,
     "Citation": "pmid:40178277; pmid:39921113; pmid:39731318",
-    "Evidence detail": null,
+    "Evidence detail": "Available uploaded sources include molecularly confirmed SCA3 cohorts with comparison controls: 128 SCA3 patients and 125 controls with normal CAG-repeat ranges (pmid:40178277), 45 SCA3 patients and 44 controls (pmid:39921113), and 281 unrelated genetically confirmed SCA3 patients with 182 controls plus a 96-patient phenotyped cohort with expanded ATXN3 CAG alleles of 56-84 repeats (pmid:39731318). These studies provide patient-control cohort context but are not primary discovery case-control enrichment studies.",
     "evidence_category": "Statistics",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 12,
@@ -851,79 +862,46 @@
   {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": null,
+    "Citation": "pmid:22133674",
+    "Evidence detail": "This study shows that ATXN3 is a deubiquitinating enzyme involved in ubiquitin-mediated proteostasis.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
+    "publication_dates": ["2012-05-01"]
   },
   {
     "Evidence type": "Protein interaction",
     "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": null,
+    "Citation": "pmid:19811945",
+    "Evidence detail": "The study shows evidence of ATXN3 interaction, aggregation, and sequestration mechanisms.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
+    "publication_dates": ["2010-01-01"]
   },
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": null,
+    "Citation": "pmid:19811945",
+    "Evidence detail": "Evidence of altered transcriptional regulation and DNA-binding ability.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
-  },
-  {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:39699045",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": null,
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
+    "publication_dates": ["2010-01-01"]
   },
   {
     "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:7874163",
-    "Evidence detail": null,
+    "Score": 4.0,
+    "Citation": "pmid:17953484",
+    "Evidence detail": "Drosophila and C. elegans models both exhibit disease phenotypes and have been used to study disease mechanisms.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": ["1994-11-01"]
-  },
-  {
-    "Evidence type": "Rescue in non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:39298485",
-    "Evidence detail": null,
-    "evidence_category": "Rescue",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2024-09-24"]
+    "publication_dates": ["2007-10-01"]
   }],
   "category_summary":
   {
@@ -931,18 +909,18 @@
     "Collective Evidence": 2.0,
     "Statistics": 6.0,
     "Function": 1.5,
-    "Functional Alteration": 1.5,
-    "Models": 2.0,
-    "Rescue": 2.0
+    "Functional Alteration": 0,
+    "Models": 4.0,
+    "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 6,
+    "Experimental Evidence": 5.5,
     "Genetic Evidence": 12
   },
-  "total_score": 18,
-  "publication_count": 8,
-  "publication_interval_years": 30.41,
+  "total_score": 17.5,
+  "publication_count": 9,
+  "publication_interval_years": 29.5,
   "classification": "Definitive"
 },
 {
