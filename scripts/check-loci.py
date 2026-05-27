@@ -246,6 +246,24 @@ def check_motif_orientation(record):
                         f"Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n"
                     )
         record[gene_field] = new_gene_motifs
+        #3. Standardize reference repeat
+    if record['reference_motif_reference_orientation'] is not None:
+        old_reference_motifs = record['reference_motif_reference_orientation']
+        new_reference_motifs = [
+            standardise_reference_motif(motif)
+            for motif in old_reference_motifs
+        ]
+
+        if old_reference_motifs != new_reference_motifs:
+            for old_motif, new_motif in zip(old_reference_motifs, new_reference_motifs):
+                if old_motif != new_motif:
+                    sys.stderr.write(
+                        f"Updating {record['id']} reference_motif_reference_orientation from {old_motif} to {new_motif}\n"
+                    )
+
+        record['reference_motif_reference_orientation'] = new_reference_motifs
+
+
 
     # Replace locus_structure with a string of the motifs in reference orientation
     if record['locus_structure'] is None:
