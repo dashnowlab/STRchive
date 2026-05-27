@@ -812,7 +812,7 @@
   "Description": "Spinocerebellar ataxia type 3 (SCA3/Machado-Joseph disease) is an autosomal dominant polyglutamine neurodegenerative disorder caused by heterozygous CAG repeat expansion in ATXN3. The disorder is characterized by progressive cerebellar ataxia with variable pyramidal, extrapyramidal, peripheral motor neuron, ophthalmologic, and other neurologic features. Reported normal alleles are generally much shorter than pathogenic alleles, and multiple studies support a repeat-length effect, with larger expanded alleles associated with earlier age at onset and anticipation.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "Manual_evidence_level": "Definitive",
+  "Manual_evidence_level": null,
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -839,13 +839,13 @@
   {
     "Evidence type": "Allele",
     "Score": 2.0,
-    "Citation": "pmid:9040742",
-    "Evidence detail": "In four Chinese MJD/SCA3 pedigrees, all 15 affected individuals had expanded ATXN3/MJD1 CAG alleles of 72-86 repeats versus 14-40 repeats in normal alleles, with a significant inverse correlation between expanded repeat length and age at onset and anticipation across generations.",
+    "Citation": "pmid:9040742; pmid:7573040",
+    "Evidence detail": "PMID 9040742 reports that in four Chinese MJD/SCA3 pedigrees, all 15 affected individuals had expanded ATXN3/MJD1 CAG alleles of 72-86 repeats versus 14-40 repeats in normal alleles, with a significant inverse correlation between expanded repeat length and age at onset and anticipation across generations. PMID 7573040 also found a significant negative correlation between expanded repeat length and age at onset in 28 individials in three famailies of French descent.",
     "evidence_category": "Collective Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 2,
     "category_max_score": 3,
-    "publication_dates": ["1997-02-01"]
+    "publication_dates": ["1997-02-01", "1995-10-01"]
   },
   {
     "Evidence type": "Case-control data",
@@ -868,7 +868,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
+    "publication_dates": ["2012-05-01"]
   },
   {
     "Evidence type": "Protein interaction",
@@ -879,7 +879,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
+    "publication_dates": ["2010-01-01"]
   },
   {
     "Evidence type": "Regulatory impact",
@@ -890,7 +890,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
+    "publication_dates": ["2010-01-01"]
   },
   {
     "Evidence type": "Non-human model organism",
@@ -901,7 +901,7 @@
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
-    "publication_dates": ["1994-11-01"]
+    "publication_dates": ["2007-10-01"]
   }],
   "category_summary":
   {
@@ -920,7 +920,7 @@
   },
   "total_score": 17.5,
   "publication_count": 9,
-  "publication_interval_years": 30.41,
+  "publication_interval_years": 29.5,
   "classification": "Definitive"
 },
 {
