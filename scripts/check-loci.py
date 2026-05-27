@@ -167,7 +167,7 @@ def standardise_motif(motif):
         if canonical_motif in circular_permuted(motif):
             return canonical_motif
 
-    return normalise_str(motif)
+    return motif
 
 def get_other_motif(reference_motif, gene_motif, gene_strand):
     """
@@ -278,6 +278,16 @@ def check_motif_orientation(record):
                         f"Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n"
                     )
         record[gene_field] = new_gene_motifs
+
+    # Update the reference motif to canonical
+    old_ref = record['reference_motif_reference_orientation']
+    new_ref = []
+    for motif in old_ref:
+        new_motif = standardise_motif(motif)
+        if motif != new_motif:
+            sys.stderr.write(f"Updating {record['id']} reference motif from {motif} to {new_motif}\n")
+        new_ref.append(new_motif)
+    record['reference_motif_reference_orientation'] = new_ref
 
     # Replace locus_structure with a string of the motifs in reference orientation
     if record['locus_structure'] is None:
