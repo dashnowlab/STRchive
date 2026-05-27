@@ -104,45 +104,6 @@ def circular_permuted(x):
     modified_sequences.extend([x[i:] + x[:i] for i in range(n)])
     return modified_sequences
 
-standard_motif_arrangements = [
-    "CAG",
-    "CCG",
-    "CGG",
-    "CTG",
-    "GCN",
-    "TTTCA",
-    "AAATG",
-]
-
-def standardise_reference_motif(motif):
-    """
-    Args:
-        motif (str)
-    Returns:
-        str: motif rewritten to the preferred standard arrangement if possible
-    >>> standardise_reference_motif('GCC')
-    'CCG'
-    >>> standardise_reference_motif('CGC')
-    'CCG'
-    >>> standardise_reference_motif('CAG')
-    'CAG'
-    >>> standardise_reference_motif('XYZ')
-    'XYZ'
-    """
-    if motif is None or len(motif) == 0:
-        return motif
-    motif = motif.upper()
-    for standard_motif in standard_motif_arrangements:
-        standard_motif = standard_motif.upper()
-
-        if len(motif) != len(standard_motif):
-            continue
-
-        if standard_motif in circular_permuted(motif):
-            return standard_motif
-
-    return motif
-
 def normalise_str(in_dna):
     """
     Args:
@@ -166,36 +127,98 @@ def normalise_str(in_dna):
 
     return min(all_possible)
 
-def get_new_motif(reference_motif, gene_strand):
+# Canonical motif reported in the literature, typically in the gene orientation. When there 
+# are equivalent motifs that are circular permutations of each other, use the canonical one.
+CANONICAL_MOTIFS = [
+    "CAG",
+    "CCG",
+    "CGG",
+    "CTG",
+    "GCN",
+    "TTTCA",
+    "AAATG",
+]
+def standardise_motif(motif):
     """
     Args:
+        motif (str)
+    Returns:
+        str: motif rewritten to the preferred standard arrangement if possible
+    >>> standardise_motif('GCC')
+    'CCG'
+    >>> standardise_motif('CGC')
+    'CCG'
+    >>> standardise_motif('CAG')
+    'CAG'
+    >>> standardise_motif('XYZ')
+    'XYZ'
+    >>> assert len(set([min(circular_permuted(motif)) for motif in CANONICAL_MOTIFS])) == len(CANONICAL_MOTIFS), f"Canonical motifs {CANONICAL_MOTIFS} are not all unique circular permutations"
+    """
+    if motif is None or len(motif) == 0:
+        return motif
+    motif = motif.upper()
+    for canonical_motif in CANONICAL_MOTIFS:
+        canonical_motif = canonical_motif.upper()
+
+        if len(motif) != len(canonical_motif):
+            continue
+
+        if canonical_motif in circular_permuted(motif):
+            return canonical_motif
+
+    return normalise_str(motif)
+
+def get_other_motif(reference_motif, gene_motif, gene_strand):
+    """
+    If only one of reference_motif or gene_motif is provided, infer the other from the gene strand. If both are provided, check that they are consistent with each other and the gene strand, and if they are inconsistent update the ref motif to match the gene motif.
+
+    Args:
         reference_motif (string)
+        gene_motif (string)
         gene_strand: either + or -
     Returns:
-        motif in gene orientation
+        (reference_motif, gene_motif)
+
+    
 
     If gene_strand is +, gene orientation copies reference orientation.
     If gene_strand is -, gene orientation is the reverse complement of reference orientation.
 
-    >>> get_new_motif('CCG', '+')
-    'CCG'
-    >>> get_new_motif('CCG', '-')
-    'CGG'
-    >>> get_new_motif('CAG', '-')
-    'CTG'
-    >>> get_new_motif('TAG', 'plus')
+    >>> get_other_motif('CCG', None, '+')
+    ('CCG', 'CCG')
+    >>> get_other_motif('CCG', None, '-')
+    ('CCG', 'CGG')
+    >>> get_other_motif('CAG', None, '-')
+    ('CAG', 'CTG')
+    >>> get_other_motif('TAG', None, 'plus')
     Traceback (most recent call last):
     ...
     AssertionError: Gene strand plus is not +/-
     """
-    if gene_strand == "+":
-        return reference_motif
-    elif gene_strand == "-":
-        seq = Seq(reference_motif)
-        return str(seq.reverse_complement())
-    else:
-        raise AssertionError(f'Gene strand {gene_strand} is not +/-')
-    
+    # If gene motif is missing, infer it from the reference motif and gene strand
+    if gene_motif is None or gene_motif == "" and reference_motif is not None and reference_motif != "":
+        if gene_strand == "+":
+            return reference_motif, reference_motif
+        elif gene_strand == "-":
+            seq = Seq(reference_motif)
+            return reference_motif, str(seq.reverse_complement())
+        else:
+            raise AssertionError(f'Gene strand {gene_strand} is not +/-')
+    # Check the gene_motif against the canonical motifs
+    gene_motif = standardise_motif(gene_motif)
+
+    # Infer the reference motif from the gene motif and gene strand
+    if gene_motif is not None and gene_motif != "":
+        if gene_strand == "+":
+            return gene_motif, gene_motif
+        elif gene_strand == "-":
+            seq = Seq(gene_motif)
+            return str(seq.reverse_complement()), gene_motif
+        else:
+            raise AssertionError(f'Gene strand {gene_strand} is not +/-')
+
+    return reference_motif, gene_motif
+
 def check_motif_orientation(record):
     """
     Args:
@@ -213,15 +236,15 @@ def check_motif_orientation(record):
     ]
 
     for ref_field, gene_field in field_pairs:
+        # If one in the pair is missing, infer it from the other.
+        # If both are present, ensure that they are consistent with each other and the gene strand, and update them if not. Gene motif will overwrite ref motif if they are inconsistent.
+
         if record[ref_field] is None:
             continue
 
-        # 1. Standardize reference orientation
         old_ref_motifs = record[ref_field]
-        new_ref_motifs = [
-            standardise_reference_motif(motif)
-            for motif in old_ref_motifs
-        ]
+        old_gene_motifs = record[gene_field]
+        new_ref_motifs, new_gene_motifs = get_other_motif(old_ref_motifs, old_gene_motifs, record['gene_strand'])
 
         if old_ref_motifs != new_ref_motifs:
             for old_motif, new_motif in zip(old_ref_motifs, new_ref_motifs):
@@ -229,15 +252,7 @@ def check_motif_orientation(record):
                     sys.stderr.write(
                         f"Updating {record['id']} {ref_field} from {old_motif} to {new_motif}\n"
                     )
-
         record[ref_field] = new_ref_motifs
-
-        # 2. Recompute gene orientation from the standardized reference orientation
-        old_gene_motifs = record[gene_field]
-        new_gene_motifs = [
-            get_new_motif(motif, record['gene_strand'])
-            for motif in record[ref_field]
-        ]
 
         if old_gene_motifs != new_gene_motifs:
             for old_motif, new_motif in zip(old_gene_motifs, new_gene_motifs):
@@ -246,24 +261,6 @@ def check_motif_orientation(record):
                         f"Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n"
                     )
         record[gene_field] = new_gene_motifs
-        #3. Standardize reference repeat
-    if record['reference_motif_reference_orientation'] is not None:
-        old_reference_motifs = record['reference_motif_reference_orientation']
-        new_reference_motifs = [
-            standardise_reference_motif(motif)
-            for motif in old_reference_motifs
-        ]
-
-        if old_reference_motifs != new_reference_motifs:
-            for old_motif, new_motif in zip(old_reference_motifs, new_reference_motifs):
-                if old_motif != new_motif:
-                    sys.stderr.write(
-                        f"Updating {record['id']} reference_motif_reference_orientation from {old_motif} to {new_motif}\n"
-                    )
-
-        record['reference_motif_reference_orientation'] = new_reference_motifs
-
-
 
     # Replace locus_structure with a string of the motifs in reference orientation
     if record['locus_structure'] is None:
