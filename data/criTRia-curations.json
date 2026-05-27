@@ -816,9 +816,20 @@
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
-    "Score": 6.0,
-    "Citation": "url:https://www.ncbi.nlm.nih.gov/books/NBK1196",
-    "Evidence detail": "GeneReviews states that SCA3 diagnosis is established in a proband with suggestive findings and a heterozygous abnormal ATXN3 CAG repeat expansion; targeted CAG-repeat analysis detects pathogenic variants in essentially all molecularly confirmed probands.",
+    "Score": 3.0,
+    "Citation": "pmid:7573040",
+    "Evidence detail": "4 unrelated French families were studied and found to show expanded CAG repeats and SCA3/MJD phenotype.",
+    "evidence_category": "Singular Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 6,
+    "category_max_score": 6,
+    "publication_dates": []
+  },
+  {
+    "Evidence type": "Probands",
+    "Score": 3.0,
+    "Citation": "pmid:8619527",
+    "Evidence detail": "34 families with confirmed SCA3/MJD patients were clincally characterized, demonstrating broad phenotypic variability.",
     "evidence_category": "Singular Evidence",
     "evidence_supercategory": "Genetic Evidence",
     "evidence_max_score": 6,
@@ -851,8 +862,8 @@
   {
     "Evidence type": "Biochemical function",
     "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": "",
+    "Citation": "pmid:22133674",
+    "Evidence detail": "Study shows ATXN3 is a deubiquinating enzyme involved in ubiquitin-mediated proteostasis.",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -862,8 +873,8 @@
   {
     "Evidence type": "Protein interaction",
     "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": "",
+    "Citation": "pmid:19811945",
+    "Evidence detail": "Shows evidence of ATXN3 interaction, aggregation, and sequesteration mechanisms",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -873,8 +884,8 @@
   {
     "Evidence type": "Regulatory impact",
     "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": "",
+    "Citation": "pmid:19811945",
+    "Evidence detail": "Evidence of alteration to transcriptional regulation and DNA binding ability",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
@@ -882,48 +893,15 @@
     "publication_dates": ["2025-02-01"]
   },
   {
-    "Evidence type": "Patient cells",
-    "Score": 1.0,
-    "Citation": "pmid:39699045",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 2,
-    "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
-  },
-  {
-    "Evidence type": "Non-patient cells",
-    "Score": 0.5,
-    "Citation": "pmid:39699045",
-    "Evidence detail": "",
-    "evidence_category": "Functional Alteration",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 1,
-    "category_max_score": 2,
-    "publication_dates": ["2025-02-01"]
-  },
-  {
     "Evidence type": "Non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:7874163",
-    "Evidence detail": "",
+    "Score": 4.0,
+    "Citation": "pmid:17953484",
+    "Evidence detail": "Drosophila and C. Elegans models both exhibiting disease phenotype and used to study mechanisms of the disease.",
     "evidence_category": "Models",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 4,
     "category_max_score": 4,
     "publication_dates": ["1994-11-01"]
-  },
-  {
-    "Evidence type": "Rescue in non-human model organism",
-    "Score": 2.0,
-    "Citation": "pmid:39298485",
-    "Evidence detail": "",
-    "evidence_category": "Rescue",
-    "evidence_supercategory": "Experimental Evidence",
-    "evidence_max_score": 4,
-    "category_max_score": 4,
-    "publication_dates": ["2024-09-24"]
   }],
   "category_summary":
   {
