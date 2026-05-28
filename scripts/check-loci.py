@@ -136,8 +136,7 @@ def get_canonical_motifs(schema):
     >>> get_canonical_motifs({"canonical_motifs": ["CAG", "CCG"]})
     ['CAG', 'CCG']
     """
-    canonical_motifs = schema["canonical_motifs"]
-    return canonical_motifs
+    return schema.get("canonical_motifs", [])
 
 def standardise_motif(motif, canonical_motifs):
     """
@@ -496,10 +495,10 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
         if json_schema is not None:
             with open(json_schema, 'r') as schema_file:
                 schema = json.load(schema_file)
-        if schema is None:
-            raise AssertionError("--schema is required because canonical_motifs are read from the schema")
 
-        canonical_motifs = get_canonical_motifs(schema)
+        canonical_motifs = []
+        if schema is not None:
+            canonical_motifs = get_canonical_motifs(schema)
 
         # Fixes to individual records
         for record in data:
