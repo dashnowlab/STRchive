@@ -127,19 +127,19 @@ def normalise_str(in_dna):
 
     return min(all_possible)
 
-# Canonical motif reported in the literature, typically in the gene orientation. When there 
-# are equivalent motifs that are circular permutations of each other, use the canonical one.
-CANONICAL_MOTIFS = [
-    "CAG",
-    "CCG",
-    "CGG",
-    "CTG",
-    "GCN",
-    "CAA"
-    "TTTCA",
-    "AAATG",
-]
-def standardise_motif(motif):
+def get_canonical_motifs(schema):
+    """
+    Args:
+        schema (dict): the loci JSON schema
+    Returns:
+        list: canonical motifs from schema file
+    >>> get_canonical_motifs({"canonical_motifs": ["CAG", "CCG"]})
+    ['CAG', 'CCG']
+    """
+    canonical_motifs = schema["canonical_motifs"]
+    return canonical_motifs
+
+def standardise_motif(motif, canonical_motifs):
     """
     Args:
         motif (str)
@@ -169,7 +169,7 @@ def standardise_motif(motif):
 
     return motif
 
-def get_other_motif(reference_motif, gene_motif, gene_strand):
+def get_other_motif(reference_motif, gene_motif, gene_strand, canonical_motifs):
     """
     If only one of reference_motif or gene_motif is provided, infer the other from the gene strand. If both are provided, check that they are consistent with each other and the gene strand, and if they are inconsistent update the ref motif to match the gene motif.
 
@@ -206,7 +206,7 @@ def get_other_motif(reference_motif, gene_motif, gene_strand):
         else:
             raise AssertionError(f'Gene strand {gene_strand} is not +/-')
     # Check the gene_motif against the canonical motifs
-    gene_motif = standardise_motif(gene_motif)
+    gene_motif = standardise_motif(gene_motif, canonical_motifs)
 
     # Infer the reference motif from the gene motif and gene strand
     if gene_motif is not None and gene_motif != "":
@@ -220,7 +220,7 @@ def get_other_motif(reference_motif, gene_motif, gene_strand):
 
     return reference_motif, gene_motif
 
-def check_motif_orientation(record):
+def check_motif_orientation(record, canonical_motifs):
     """
     Args:
         record (dict): a dictionary containing a single locus from the STRchive json
@@ -259,7 +259,8 @@ def check_motif_orientation(record):
         new_ref_motifs = []
         new_gene_motifs = []
         for old_ref_motif, old_gene_motif in zip(old_ref_motifs, old_gene_motifs):
-           new_ref_motif, new_gene_motif = get_other_motif(old_ref_motif, old_gene_motif, record['gene_strand'])
+           new_ref_motif, new_gene_motif = get_other_motif(old_ref_motif, old_gene_motif, record['gene_strand'], canonical_motifs)
+
            new_ref_motifs.append(new_ref_motif)
            new_gene_motifs.append(new_gene_motif)
 
@@ -283,7 +284,7 @@ def check_motif_orientation(record):
     old_ref = record['reference_motif_reference_orientation']
     new_ref = []
     for motif in old_ref:
-        new_motif = standardise_motif(motif)
+        new_motif = standardise_motif(motif, canonical_motifs)
         if motif != new_motif:
             sys.stderr.write(f"Updating {record['id']} reference motif from {motif} to {new_motif}\n")
         new_ref.append(new_motif)
@@ -508,7 +509,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
 
             # Check if the field contains a string that should be a list
             record = check_list_fields(record)
-            record = check_motif_orientation(record)
+            record = check_motif_orientation(record, canonical_motifs)
 
             # Update disease association tags based on curations
             if curations_json:
