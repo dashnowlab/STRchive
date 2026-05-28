@@ -127,67 +127,176 @@ def normalise_str(in_dna):
 
     return min(all_possible)
 
-def get_new_motif(motif, gene_strand):
+def get_canonical_motifs(schema):
     """
     Args:
-        motif (string)
+        schema (dict): the loci JSON schema
+    Returns:
+        list: canonical motifs from schema file
+    >>> get_canonical_motifs({"canonical_motifs": ["CAG", "CCG"]})
+    ['CAG', 'CCG']
+    """
+    return schema.get("canonical_motifs", [])
+
+def standardise_motif(motif, canonical_motifs):
+    """
+    Args:
+        motif (str)
+    Returns:
+        str: motif rewritten to the preferred standard arrangement if possible
+    >>> test_motifs = ["CAG", "CCG", "CGG", "CTG", "GCN", "CAA", "TTTCA", "AAATG"]
+    >>> standardise_motif('GCC', test_motifs)
+    'CCG'
+    >>> standardise_motif('CGC', test_motifs)
+    'CCG'
+    >>> standardise_motif('CAG', test_motifs)
+    'CAG'
+    >>> standardise_motif('XYZ', test_motifs)
+    'XYZ'
+    """
+    if motif is None or len(motif) == 0:
+        return motif
+    motif = motif.upper()
+    for canonical_motif in canonical_motifs:
+        canonical_motif = canonical_motif.upper()
+
+        if len(motif) != len(canonical_motif):
+            continue
+
+        if canonical_motif in circular_permuted(motif):
+            return canonical_motif
+
+    return motif
+
+def get_other_motif(reference_motif, gene_motif, gene_strand, canonical_motifs):
+    """
+    If only one of reference_motif or gene_motif is provided, infer the other from the gene strand. If both are provided, check that they are consistent with each other and the gene strand, and if they are inconsistent update the ref motif to match the gene motif.
+
+    Args:
+        reference_motif (string)
+        gene_motif (string)
         gene_strand: either + or -
     Returns:
-        the normalized output of the string from ref to gene orientation
-    Get the new normalized motif for each row.
-    If gene_strand is +, reference orientation = gene orientation
-    If gene_strand is -, reverse_complement ref_ori for gene_ori
-    >>> get_new_motif('GAG', '+')
-    'AGG'
-    >>> get_new_motif('GAG', '-')
-    'CCT'
-    >>> get_new_motif('TCATC', '-')
-    'AGATG'
-    >>> get_new_motif('TAG', 'plus')
+        (reference_motif, gene_motif)
+
+    If gene_strand is +, gene orientation copies reference orientation.
+    If gene_strand is -, gene orientation is the reverse complement of reference orientation.
+
+    >>> test_motifs = ["CAG", "CCG", "CGG", "CTG", "GCN", "CAA", "TTTCA", "AAATG"]
+    >>> get_other_motif('CCG', None, '+', test_motifs)
+    ('CCG', 'CCG')
+    >>> get_other_motif('CCG', None, '-', test_motifs)
+    ('CCG', 'CGG')
+    >>> get_other_motif('CAG', None, '-', test_motifs)
+    ('CAG', 'CTG')
+    >>> get_other_motif('TAG', None, 'plus', test_motifs)
     Traceback (most recent call last):
     ...
     AssertionError: Gene strand plus is not +/-
     """
-    if gene_strand == "+":
-        normalized_motif = normalise_str(motif)
-    elif gene_strand == "-":
-        seq = Seq(motif)
-        reverse_comp = str(seq.reverse_complement())
-        normalized_motif = normalise_str(reverse_comp)
-    else:
-        raise AssertionError(f'Gene strand {gene_strand} is not +/-')
-    return normalized_motif
-    
-def check_motif_orientation(record):
+    # If gene motif is missing, infer it from the reference motif and gene strand
+    if gene_motif is None or gene_motif == "" and reference_motif is not None and reference_motif != "":
+        if gene_strand == "+":
+            return reference_motif, reference_motif
+        elif gene_strand == "-":
+            seq = Seq(reference_motif)
+            return reference_motif, str(seq.reverse_complement())
+        else:
+            raise AssertionError(f'Gene strand {gene_strand} is not +/-')
+    # Check the gene_motif against the canonical motifs
+    gene_motif = standardise_motif(gene_motif, canonical_motifs)
+
+    # Infer the reference motif from the gene motif and gene strand
+    if gene_motif is not None and gene_motif != "":
+        if gene_strand == "+":
+            return gene_motif, gene_motif
+        elif gene_strand == "-":
+            seq = Seq(gene_motif)
+            return str(seq.reverse_complement()), gene_motif
+        else:
+            raise AssertionError(f'Gene strand {gene_strand} is not +/-')
+
+    return reference_motif, gene_motif
+
+def check_motif_orientation(record, canonical_motifs):
     """
     Args:
         record (dict): a dictionary containing a single locus from the STRchive json
     Returns:
-        record (dict): the record with any motif fields with incorrect orientation updated
+        record (dict): the record with motif reference orientations standardized
+        and gene orientations recalculated from the standardized reference motifs
     """
+
     field_pairs = [
         ('pathogenic_motif_reference_orientation', 'pathogenic_motif_gene_orientation'),
         ('benign_motif_reference_orientation', 'benign_motif_gene_orientation'),
         ('unknown_motif_reference_orientation', 'unknown_motif_gene_orientation'),
         ('interruption_reference_orientation', 'interruption_gene_orientation')
     ]
+
     for ref_field, gene_field in field_pairs:
+        # If one in the pair is missing, infer it from the other.
+        # If both are present, ensure that they are consistent with each other and the gene strand, and update them if not. Gene motif will overwrite ref motif if they are inconsistent.
+
         if record[ref_field] is None:
             continue
-        old = record[gene_field]
-        new = [get_new_motif(x, record['gene_strand']) for x in record[ref_field]]
-        if old != new:
-            for old_motif, new_motif in zip(old, new):
+
+        old_ref_motifs = record[ref_field]
+        old_gene_motifs = record[gene_field]
+
+        assert isinstance(old_ref_motifs, list), f"{ref_field} should be a list in record {record['id']}"
+        assert isinstance(old_gene_motifs, list), f"{gene_field} should be a list in record {record['id']}"
+
+        if len(old_ref_motifs) != len(old_gene_motifs):
+            # Add Nones to the shorter list so they are the same length
+            if len(old_ref_motifs) < len(old_gene_motifs):
+                old_ref_motifs = old_ref_motifs + [None] * (len(old_gene_motifs) - len(old_ref_motifs))
+            else:
+                old_gene_motifs = old_gene_motifs + [None] * (len(old_ref_motifs) - len(old_gene_motifs))
+
+        new_ref_motifs = []
+        new_gene_motifs = []
+        for old_ref_motif, old_gene_motif in zip(old_ref_motifs, old_gene_motifs):
+           new_ref_motif, new_gene_motif = get_other_motif(old_ref_motif, old_gene_motif, record['gene_strand'], canonical_motifs)
+
+           new_ref_motifs.append(new_ref_motif)
+           new_gene_motifs.append(new_gene_motif)
+
+        if old_ref_motifs != new_ref_motifs:
+            for old_motif, new_motif in zip(old_ref_motifs, new_ref_motifs):
                 if old_motif != new_motif:
-                    sys.stderr.write(f'Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n')
-        record[gene_field] = new
+                    sys.stderr.write(
+                        f"Updating {record['id']} {ref_field} from {old_motif} to {new_motif}\n"
+                    )
+        record[ref_field] = new_ref_motifs
+
+        if old_gene_motifs != new_gene_motifs:
+            for old_motif, new_motif in zip(old_gene_motifs, new_gene_motifs):
+                if old_motif != new_motif:
+                    sys.stderr.write(
+                        f"Updating {record['id']} {gene_field} from {old_motif} to {new_motif}\n"
+                    )
+        record[gene_field] = new_gene_motifs
+
+    # Update the reference motif to canonical
+    old_ref = record['reference_motif_reference_orientation']
+    new_ref = []
+    for motif in old_ref:
+        new_motif = standardise_motif(motif, canonical_motifs)
+        if motif != new_motif:
+            sys.stderr.write(f"Updating {record['id']} reference motif from {motif} to {new_motif}\n")
+        new_ref.append(new_motif)
+    record['reference_motif_reference_orientation'] = new_ref
 
     # Replace locus_structure with a string of the motifs in reference orientation
-    # example   [ { "motif": "CAGG", "count": null, "type": "pathogenic_repeat" } ]
     if record['locus_structure'] is None:
         record['locus_structure'] = []
         for motif in record['pathogenic_motif_reference_orientation']:
-            record['locus_structure'].append({"motif": motif, "count": None, "type": "pathogenic_repeat"})
+            record['locus_structure'].append({
+                "motif": motif,
+                "count": None,
+                "type": "pathogenic_repeat"
+            })
 
     return record
 
@@ -387,6 +496,10 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
             with open(json_schema, 'r') as schema_file:
                 schema = json.load(schema_file)
 
+        canonical_motifs = []
+        if schema is not None:
+            canonical_motifs = get_canonical_motifs(schema)
+
         # Fixes to individual records
         for record in data:
 
@@ -398,7 +511,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
 
             # Check if the field contains a string that should be a list
             record = check_list_fields(record)
-            record = check_motif_orientation(record)
+            record = check_motif_orientation(record, canonical_motifs)
 
             # Update disease association tags based on curations
             if curations_json:
