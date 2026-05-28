@@ -145,15 +145,15 @@ def standardise_motif(motif, canonical_motifs):
         motif (str)
     Returns:
         str: motif rewritten to the preferred standard arrangement if possible
-    >>> standardise_motif('GCC')
+    >>> test_motifs = ["CAG", "CCG", "CGG", "CTG", "GCN", "CAA", "TTTCA", "AAATG"]
+    >>> standardise_motif('GCC', test_motifs)
     'CCG'
-    >>> standardise_motif('CGC')
+    >>> standardise_motif('CGC', test_motifs)
     'CCG'
-    >>> standardise_motif('CAG')
+    >>> standardise_motif('CAG', test_motifs)
     'CAG'
-    >>> standardise_motif('XYZ')
+    >>> standardise_motif('XYZ', test_motifs)
     'XYZ'
-    >>> assert len(set([min(circular_permuted(motif)) for motif in CANONICAL_MOTIFS])) == len(CANONICAL_MOTIFS), f"Canonical motifs {CANONICAL_MOTIFS} are not all unique circular permutations"
     """
     if motif is None or len(motif) == 0:
         return motif
@@ -180,18 +180,17 @@ def get_other_motif(reference_motif, gene_motif, gene_strand, canonical_motifs):
     Returns:
         (reference_motif, gene_motif)
 
-    
-
     If gene_strand is +, gene orientation copies reference orientation.
     If gene_strand is -, gene orientation is the reverse complement of reference orientation.
 
-    >>> get_other_motif('CCG', None, '+')
+    >>> test_motifs = ["CAG", "CCG", "CGG", "CTG", "GCN", "CAA", "TTTCA", "AAATG"]
+    >>> get_other_motif('CCG', None, '+', test_motifs)
     ('CCG', 'CCG')
-    >>> get_other_motif('CCG', None, '-')
+    >>> get_other_motif('CCG', None, '-', test_motifs)
     ('CCG', 'CGG')
-    >>> get_other_motif('CAG', None, '-')
+    >>> get_other_motif('CAG', None, '-', test_motifs)
     ('CAG', 'CTG')
-    >>> get_other_motif('TAG', None, 'plus')
+    >>> get_other_motif('TAG', None, 'plus', test_motifs)
     Traceback (most recent call last):
     ...
     AssertionError: Gene strand plus is not +/-
@@ -500,7 +499,7 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
         if schema is None:
             raise AssertionError("--schema is required because canonical_motifs are read from the schema")
 
-canonical_motifs = get_canonical_motifs(schema)
+        canonical_motifs = get_canonical_motifs(schema)
 
         # Fixes to individual records
         for record in data:
