@@ -158,7 +158,7 @@ def standardise_motif(motif, canonical_motifs):
     if motif is None or len(motif) == 0:
         return motif
     motif = motif.upper()
-    for canonical_motif in CANONICAL_MOTIFS:
+    for canonical_motif in canonical_motifs:
         canonical_motif = canonical_motif.upper()
 
         if len(motif) != len(canonical_motif):
@@ -497,6 +497,10 @@ def main(json_fname, json_schema = None, curations_json = None, out_json = None,
         if json_schema is not None:
             with open(json_schema, 'r') as schema_file:
                 schema = json.load(schema_file)
+        if schema is None:
+            raise AssertionError("--schema is required because canonical_motifs are read from the schema")
+
+canonical_motifs = get_canonical_motifs(schema)
 
         # Fixes to individual records
         for record in data:
