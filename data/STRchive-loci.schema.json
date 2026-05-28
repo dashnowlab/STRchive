@@ -4,6 +4,17 @@
   "title": "STRchive-loci",
   "description": "STRchive tandem repeat disease locus",
   "citation_format": "In free text strings: 'Some text [@doi:12345; @pmid:12345]'. In regular lists: ['doi:12345', 'pmid:12345']",
+  "canonical_motifs": [
+    "CAG",
+    "CCG",
+    "CGG",
+    "CTG",
+    "GCN",
+    "CAA"
+    "TTTCA",
+    "AAATG",
+]
+  ]
   "type": "object",
   "properties": {
     "id": {
@@ -270,6 +281,7 @@
       "type": ["string", "null"],
       "enum": ["+", "-"]
     },
+    
     "reference_motif_reference_orientation": {
       "section": "Alleles",
       "title": "Reference Motif (Reference Orientation)",
@@ -289,6 +301,8 @@
       "description": "Pathogenic motif(s) in the + reference orientation. May be the same as the reference motif if it is pathogenic when expanded or contracted.",
       "examples": ["AAGGG", "ACAGG"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -302,6 +316,8 @@
       "description": "Benign motif(s) in the + reference orientation. Benign motifs are not known to be pathogenic at any size. May be the same as the reference motif if it is benign.",
       "examples": ["AAAAG"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -315,6 +331,8 @@
       "description": "Motif(s) of unknown consequence in the + reference orientation. Only include motifs that have been observed in individuals but are not classified elsewhere.",
       "examples": ["AAAAG"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -328,6 +346,8 @@
       "description": "Interruption(s) in the + reference orientation. Only include interruptions that have been observed in individuals. These should typically be reported in the context of the motif, for example a CAG -> CAA interruption would be reported as CAA, not A",
       "examples": ["CAA"],
       "type": "array",
+      "auto_generated": true,
+      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -341,8 +361,7 @@
       "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from pathogenic_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
-      "auto_generated": true,
-      "hide": "true",
+  
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -356,8 +375,6 @@
       "description": "Benign motif(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from benign_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
-      "auto_generated": true,
-      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -371,8 +388,6 @@
       "description": "Motif(s) of unknown consequence in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from unknown_motif_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
-      "auto_generated": true,
-      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -386,8 +401,6 @@
       "description": "Interruption(s) in the gene orientation, so the reverse complement if gene is on - strand. Automatically generated from interruption_reference_orientation and gene_strand. Should not be manually edited.",
       "examples": ["TTG"],
       "type": "array",
-      "auto_generated": true,
-      "hide": "true",
       "uniqueItems": true,
       "items": {
         "title": "",
