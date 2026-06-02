@@ -211,14 +211,18 @@ SO  - Hum Reprod. 2026 Apr 19:deag061. doi: 10.1093/humrep/deag061.
 
 PMID- 41952192
 OWN - NLM
-STAT- Publisher
-LR  - 20260409
+STAT- MEDLINE
+DCOM- 20260518
+LR  - 20260520
 IS  - 1741-7015 (Electronic)
 IS  - 1741-7015 (Linking)
+VI  - 24
+IP  - 1
 DP  - 2026 Apr 8
 TI  - Targeted long-read genomic and epigenomic profiling enhances timely comprehensive 
       variant discovery in hypotonia and muscle weakness.
 LID - 10.1186/s12916-026-04850-8 [doi]
+LID - 307
 AB  - BACKGROUND: Identifying the genetic basis of hypotonia and muscle weakness is 
       critical for patient management and family counseling. However, diagnosis is 
       often hindered by diverse genomic alterations, including repeat expansions, 
@@ -317,6 +321,18 @@ TA  - BMC Med
 JT  - BMC medicine
 JID - 101190723
 SB  - IM
+MH  - Humans
+MH  - *Muscle Hypotonia/genetics/diagnosis
+MH  - *Muscle Weakness/genetics/diagnosis
+MH  - Retrospective Studies
+MH  - Female
+MH  - Male
+MH  - Whole Genome Sequencing/methods
+MH  - *Epigenomics/methods
+MH  - Genomics/methods
+MH  - Infant
+MH  - Child, Preschool
+PMC - PMC13181904
 OTO - NOTNLM
 OT  - CNVs
 OT  - DNA methylation profiling
@@ -334,17 +350,20 @@ COIS- Declarations. Ethics approval and consent to participate: All patients or 
       DSREC-SR-05/2024_03 and DSREC-08/2024_09). Consent for publication: Not 
       applicable. Competing interests: The authors declare no competing interests.
 EDAT- 2026/04/09 06:32
-MHDA- 2026/04/09 06:32
+MHDA- 2026/05/18 06:31
+PMCR- 2026/04/08
 CRDT- 2026/04/09 00:20
 PHST- 2025/12/14 00:00 [received]
 PHST- 2026/03/31 00:00 [accepted]
-PHST- 2026/04/09 06:32 [medline]
+PHST- 2026/05/18 06:31 [medline]
 PHST- 2026/04/09 06:32 [pubmed]
 PHST- 2026/04/09 00:20 [entrez]
+PHST- 2026/04/08 00:00 [pmc-release]
 AID - 10.1186/s12916-026-04850-8 [pii]
+AID - 4850 [pii]
 AID - 10.1186/s12916-026-04850-8 [doi]
-PST - aheadofprint
-SO  - BMC Med. 2026 Apr 8. doi: 10.1186/s12916-026-04850-8.
+PST - epublish
+SO  - BMC Med. 2026 Apr 8;24(1):307. doi: 10.1186/s12916-026-04850-8.
 
 PMID- 41929501
 OWN - NLM
@@ -578,16 +597,20 @@ SO  - Ann Clin Transl Neurol. 2026 Mar 31. doi: 10.1002/acn3.70375.
 
 PMID- 41806827
 OWN - NLM
-STAT- Publisher
-LR  - 20260317
+STAT- MEDLINE
+DCOM- 20260513
+LR  - 20260516
 IS  - 2666-979X (Electronic)
 IS  - 2666-979X (Linking)
-DP  - 2026 Mar 9
+VI  - 6
+IP  - 5
+DP  - 2026 May 13
 TI  - Long-read genome sequencing improves detection and functional interpretation of 
       structural and repeat variants in autism.
 PG  - 101186
 LID - S2666-979X(26)00048-0 [pii]
 LID - 10.1016/j.xgen.2026.101186 [doi]
+LID - 101186
 AB  - Long-read whole-genome sequencing (LR-WGS) technologies enhance the discovery of 
       structural variants (SVs) and tandem repeats (TRs). We performed LR-WGS on 267 
       individuals from 63 autism spectrum disorder (ASD) families and generated an 
@@ -669,9 +692,24 @@ PL  - United States
 TA  - Cell Genom
 JT  - Cell genomics
 JID - 9918284260106676
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
 UOF - medRxiv. 2025 Jul 23:2025.07.20.25331880. doi: 10.1101/2025.07.20.25331880. PMID: 
       40778130
+MH  - Humans
+MH  - *Whole Genome Sequencing/methods
+MH  - DNA Methylation/genetics
+MH  - *Autism Spectrum Disorder/genetics
+MH  - Male
+MH  - Female
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
+MH  - *Tandem Repeat Sequences/genetics
+MH  - *Genomic Structural Variation/genetics
+MH  - *Autistic Disorder/genetics
+MH  - Genome, Human
+MH  - Promoter Regions, Genetic
+PMC - PMC13174233
 OTO - NOTNLM
 OT  - CGG repeat
 OT  - FMR1
@@ -685,24 +723,28 @@ OT  - structural variation
 OT  - tandem repeat
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2026/03/11 01:11
-MHDA- 2026/03/11 01:11
+MHDA- 2026/05/14 00:31
+PMCR- 2026/03/09
 CRDT- 2026/03/10 19:41
 PHST- 2025/07/17 00:00 [received]
 PHST- 2026/02/11 00:00 [revised]
 PHST- 2026/02/12 00:00 [accepted]
-PHST- 2026/03/11 01:11 [medline]
+PHST- 2026/05/14 00:31 [medline]
 PHST- 2026/03/11 01:11 [pubmed]
 PHST- 2026/03/10 19:41 [entrez]
+PHST- 2026/03/09 00:00 [pmc-release]
 AID - S2666-979X(26)00048-0 [pii]
+AID - 101186 [pii]
 AID - 10.1016/j.xgen.2026.101186 [doi]
-PST - aheadofprint
-SO  - Cell Genom. 2026 Mar 9:101186. doi: 10.1016/j.xgen.2026.101186.
+PST - ppublish
+SO  - Cell Genom. 2026 May 13;6(5):101186. doi: 10.1016/j.xgen.2026.101186. Epub 2026 
+      Mar 9.
 
 PMID- 41792844
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260415
-LR  - 20260423
+LR  - 20260511
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 14
@@ -765,6 +807,10 @@ AD  - Department of Neurology, Washington University School of Medicine, Saint L
       MO, USA. weihlc@wustl.edu.
 LA  - eng
 GR  - R01 NS086810/NS/NINDS NIH HHS/United States
+GR  - R01 AG031867/AG/NIA NIH HHS/United States
+GR  - K24 AR073317/AR/NIAMS NIH HHS/United States
+GR  - P50 HD104463/HD/NICHD NIH HHS/United States
+GR  - R21 NS129096/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260306
 PL  - England
@@ -1850,9 +1896,9 @@ SO  - J Korean Acad Child Adolesc Psychiatry. 2026 Jan 1;37(1):63-69. doi:
 
 PMID- 41514368
 OWN - NLM
-STAT- MEDLINE
+STAT- In-Process
 DCOM- 20260128
-LR  - 20260129
+LR  - 20260601
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 18
@@ -2049,8 +2095,8 @@ SO  - Genome Med. 2026 Jan 9;18(1):12. doi: 10.1186/s13073-025-01596-5.
 PMID- 41507195
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260206
-LR  - 20260210
+DCOM- 20260601
+LR  - 20260601
 IS  - 2041-1723 (Electronic)
 IS  - 2041-1723 (Linking)
 VI  - 17
@@ -2163,30 +2209,27 @@ PL  - England
 TA  - Nat Commun
 JT  - Nature communications
 JID - 101528555
+RN  - EC 2.7.11.13 (Protein Kinase C)
 RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
 RN  - EC 2.7.1.- (protein kinase C gamma)
-RN  - EC 2.7.11.13 (Protein Kinase C)
-RN  - 0 (Fmr1 protein, mouse)
 RN  - Fragile X Tremor Ataxia Syndrome
 SB  - IM
 MH  - Animals
 MH  - *Fragile X Syndrome/genetics/metabolism/pathology
-MH  - *Tremor/genetics/metabolism/pathology
 MH  - *GABAergic Neurons/metabolism/pathology
+MH  - *Tremor/genetics/metabolism/pathology
 MH  - Mice
+MH  - *Protein Kinase C/genetics/metabolism
 MH  - Fragile X Messenger Ribonucleoprotein 1/genetics/metabolism
 MH  - *Ataxia/genetics/metabolism/pathology
-MH  - Trinucleotide Repeat Expansion/genetics
-MH  - *Protein Kinase C/genetics/metabolism
-MH  - Disease Models, Animal
 MH  - Humans
+MH  - Disease Models, Animal
 MH  - Male
+MH  - Trinucleotide Repeat Expansion/genetics
 MH  - Transcriptome
 MH  - Gene Expression Profiling
-MH  - Brain/metabolism/pathology
 MH  - Female
-MH  - Drosophila melanogaster
-MH  - Drosophila
+MH  - Mice, Transgenic
 PMC - PMC12881518
 COIS- Competing interests: The authors declare no competing interests.
 EDAT- 2026/01/09 00:26
@@ -3252,7 +3295,7 @@ PMID- 41145158
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251027
-LR  - 20260420
+LR  - 20260527
 IS  - 1944-7558 (Electronic)
 IS  - 1944-7515 (Print)
 IS  - 1944-7558 (Linking)
@@ -3315,6 +3358,7 @@ LA  - eng
 GR  - P50 HD105353/HD/NICHD NIH HHS/United States
 GR  - R01 HD082110/HD/NICHD NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 PL  - United States
 TA  - Am J Intellect Dev Disabil
 JT  - American journal on intellectual and developmental disabilities
@@ -4248,7 +4292,7 @@ PMID- 40940631
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251101
-LR  - 20260127
+LR  - 20260530
 IS  - 1867-0687 (Electronic)
 IS  - 1708-8569 (Print)
 VI  - 21
@@ -4342,6 +4386,7 @@ GR  - 82373971/National Natural Science Foundation of China/
 GR  - 2023YFC2706100/Key Technologies Research and Development Program/
 PT  - Journal Article
 PT  - Multicenter Study
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20250912
 PL  - Switzerland
 TA  - World J Pediatr
@@ -4885,7 +4930,7 @@ PMID- 40778130
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260317
-LR  - 20260317
+LR  - 20260513
 DP  - 2025 Jul 23
 TI  - Long Read Genome Sequencing Elucidates Diverse Functional Consequences of 
       Structural and Repeat Variation in Autism.
@@ -4969,7 +5014,8 @@ PL  - United States
 TA  - medRxiv
 JT  - medRxiv : the preprint server for health sciences
 JID - 101767986
-UIN - Cell Genom. 2026 Mar 9:101186. doi: 10.1016/j.xgen.2026.101186. PMID: 41806827
+UIN - Cell Genom. 2026 May 13;6(5):101186. doi: 10.1016/j.xgen.2026.101186. PMID: 
+      41806827
 PMC - PMC12330410
 OTO - NOTNLM
 OT  - CGG repeat
@@ -5618,7 +5664,7 @@ PMID- 40459253
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250828
-LR  - 20260127
+LR  - 20260528
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
@@ -5699,6 +5745,7 @@ GR  - MH078041/MH/NIMH NIH HHS/United States
 GR  - NS110100/NS/NINDS NIH HHS/United States
 GR  - R01 HD036071/HD/NICHD NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20250603
 PL  - United States
 TA  - Ann Neurol
@@ -5901,7 +5948,7 @@ PMID- 40418066
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250908
-LR  - 20260127
+LR  - 20260527
 IS  - 1552-485X (Electronic)
 IS  - 1552-4841 (Print)
 IS  - 1552-4841 (Linking)
@@ -6037,10 +6084,10 @@ CRDT- 2025/05/26 08:44
 PHST- 2025/04/01 00:00 [revised]
 PHST- 2025/01/22 00:00 [received]
 PHST- 2025/05/07 00:00 [accepted]
-PHST- 2026/05/26 00:00 [pmc-release]
 PHST- 2025/09/08 12:44 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
 PHST- 2025/05/26 08:44 [entrez]
+PHST- 2026/05/26 00:00 [pmc-release]
 AID - 10.1002/ajmg.b.33033 [doi]
 PST - ppublish
 SO  - Am J Med Genet B Neuropsychiatr Genet. 2025 Oct;198(7):103-119. doi: 
@@ -6050,7 +6097,7 @@ PMID- 40417743
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250803
-LR  - 20260416
+LR  - 20260523
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Print)
 IS  - 1098-3600 (Linking)
@@ -6175,10 +6222,12 @@ AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. H
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL. Electronic address: szuchner@med.miami.edu.
 LA  - eng
-GR  - K99 HG012796/HG/NHGRI NIH HHS/United States
 GR  - R00 HG012796/HG/NHGRI NIH HHS/United States
-GR  - RC2 TR004391/TR/NCATS NIH HHS/United States
 GR  - U01 NS134353/NS/NINDS NIH HHS/United States
+GR  - U01 HG007672/HG/NHGRI NIH HHS/United States
+GR  - RC2 TR004391/TR/NCATS NIH HHS/United States
+GR  - K99 HG012796/HG/NHGRI NIH HHS/United States
+GR  - U01 NS134350/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20250522
 PL  - United States
@@ -6848,10 +6897,10 @@ CRDT- 2025/05/26 06:18
 PHST- 2024/08/07 00:00 [received]
 PHST- 2025/05/15 00:00 [revised]
 PHST- 2025/05/16 00:00 [accepted]
-PHST- 2026/05/22 00:00 [pmc-release]
 PHST- 2025/08/03 12:31 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
 PHST- 2025/05/26 06:18 [entrez]
+PHST- 2026/05/22 00:00 [pmc-release]
 AID - S1098-3600(25)00109-1 [pii]
 AID - 10.1016/j.gim.2025.101462 [doi]
 PST - ppublish
@@ -9658,7 +9707,7 @@ PMID- 38997701
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240712
-LR  - 20260127
+LR  - 20260518
 IS  - 1750-1172 (Electronic)
 IS  - 1750-1172 (Linking)
 VI  - 19
@@ -14109,7 +14158,7 @@ PMID- 35977823
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220914
-LR  - 20260127
+LR  - 20260511
 IS  - 2373-2822 (Electronic)
 IS  - 2373-2822 (Linking)
 VI  - 9
@@ -14675,7 +14724,7 @@ PMID- 35701103
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221124
-LR  - 20260127
+LR  - 20260508
 IS  - 1468-6244 (Electronic)
 IS  - 0022-2593 (Print)
 IS  - 0022-2593 (Linking)
@@ -14780,8 +14829,6 @@ AU  - Sobrian SK
 AD  - Department of Pharmacology, Howard University College of Medicine, Washington, 
       District of Columbia, USA.
 LA  - eng
-GR  - R01 NS086810/NS/NINDS NIH HHS/United States
-GR  - R01 NS110100/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, Non-U.S. Gov't
 DEP - 20220614
@@ -15057,7 +15104,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260127
+LR  - 20260518
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -16298,7 +16345,7 @@ SO  - J Neurodev Disord. 2022 Jan 14;14(1):7. doi: 10.1186/s11689-022-09415-3.
 PMID- 34938155
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20240911
+LR  - 20260521
 IS  - 1662-4548 (Print)
 IS  - 1662-453X (Electronic)
 IS  - 1662-453X (Linking)
@@ -16380,8 +16427,6 @@ AD  - Department of Molecular Biosciences, School of Veterinary Medicine, Univer
       California, Davis, Davis, CA, United States.
 AD  - The MIND Institute, University of California, Davis, Davis, CA, United States.
 LA  - eng
-GR  - P30 CA093373/CA/NCI NIH HHS/United States
-GR  - R01 ES029213/ES/NIEHS NIH HHS/United States
 GR  - T32 ES007059/ES/NIEHS NIH HHS/United States
 GR  - P30 ES023513/ES/NIEHS NIH HHS/United States
 GR  - P50 HD103526/HD/NICHD NIH HHS/United States
@@ -16518,7 +16563,7 @@ SO  - Biomed Res Int. 2021 Dec 8;2021:4359308. doi: 10.1155/2021/4359308. eColle
 PMID- 34924936
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20220413
+LR  - 20260521
 IS  - 1662-4548 (Print)
 IS  - 1662-453X (Electronic)
 IS  - 1662-453X (Linking)
@@ -16591,16 +16636,9 @@ AU  - Lein PJ
 AD  - Department of Molecular Biosciences, School of Veterinary Medicine, University of 
       California, Davis, Davis, CA, United States.
 LA  - eng
-GR  - P30 CA093373/CA/NCI NIH HHS/United States
-GR  - R01 ES029213/ES/NIEHS NIH HHS/United States
-GR  - T32 ES007059/ES/NIEHS NIH HHS/United States
-GR  - P50 HD103526/HD/NICHD NIH HHS/United States
-GR  - F32 HD088016/HD/NICHD NIH HHS/United States
-GR  - R00 ES029537/ES/NIEHS NIH HHS/United States
-GR  - UL1 TR001860/TR/NCATS NIH HHS/United States
-GR  - P30 ES023513/ES/NIEHS NIH HHS/United States
 GR  - P42 ES013661/ES/NIEHS NIH HHS/United States
-GR  - R01 ES014901/ES/NIEHS NIH HHS/United States
+GR  - P50 HD103526/HD/NICHD NIH HHS/United States
+GR  - UL1 TR001860/TR/NCATS NIH HHS/United States
 PT  - Journal Article
 DEP - 20211203
 PL  - Switzerland
@@ -18054,7 +18092,7 @@ PMID- 34372915
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220216
-LR  - 20220216
+LR  - 20260518
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 13
@@ -18576,10 +18614,13 @@ COIS- Declaration of competing interest The authors declare that they have no kn
       to influence the work reported in this paper.
 EDAT- 2021/07/24 06:00
 MHDA- 2021/07/24 06:01
+PMCR- 2020/09/10
 CRDT- 2021/07/23 06:56
 PHST- 2021/07/23 06:56 [entrez]
 PHST- 2021/07/24 06:00 [pubmed]
 PHST- 2021/07/24 06:01 [medline]
+PHST- 2020/09/10 00:00 [pmc-release]
+AID - S2666-027X(20)30011-6 [pii]
 AID - 10.1016/j.crtox.2020.09.001 [doi]
 PST - ppublish
 SO  - Curr Res Toxicol. 2020 Jun 10;1:85-103. doi: 10.1016/j.crtox.2020.09.001. Epub 
@@ -33434,7 +33475,7 @@ PMID- 27816231
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20170714
-LR  - 20260127
+LR  - 20260524
 IS  - 1556-5653 (Electronic)
 IS  - 0015-0282 (Print)
 IS  - 0015-0282 (Linking)
@@ -33500,13 +33541,13 @@ GR  - R01 HD068440/HD/NICHD NIH HHS/United States
 GR  - U01 AG012554/AG/NIA NIH HHS/United States
 GR  - R01 HD067721/HD/NICHD NIH HHS/United States
 GR  - UL1 RR024131/RR/NCRR NIH HHS/United States
+GR  - U01 AG012495/AG/NIA NIH HHS/United States
+GR  - U01 AG012505/AG/NIA NIH HHS/United States
 GR  - U01 AG012535/AG/NIA NIH HHS/United States
 GR  - U01 AG012553/AG/NIA NIH HHS/United States
 GR  - U01 NR004061/NR/NINR NIH HHS/United States
 GR  - U01 AG012539/AG/NIA NIH HHS/United States
 GR  - U01 AG012546/AG/NIA NIH HHS/United States
-GR  - U01 AG012495/AG/NIA NIH HHS/United States
-GR  - U01 AG012505/AG/NIA NIH HHS/United States
 GR  - U01 AG012531/AG/NIA NIH HHS/United States
 GR  - U01 AG017719/AG/NIA NIH HHS/United States
 PT  - Journal Article
@@ -41116,7 +41157,7 @@ PMID- 24938362
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150612
-LR  - 20260128
+LR  - 20260520
 IS  - 1573-7330 (Electronic)
 IS  - 1058-0468 (Print)
 IS  - 1058-0468 (Linking)
@@ -41161,7 +41202,6 @@ AU  - Young SL
 LA  - eng
 GR  - R03 HD052768/HD/NICHD NIH HHS/United States
 GR  - HD052768/HD/NICHD NIH HHS/United States
-GR  - R01 HD067721/HD/NICHD NIH HHS/United States
 GR  - R21 HD057485/HD/NICHD NIH HHS/United States
 GR  - HD068440/HD/NICHD NIH HHS/United States
 GR  - R01 HD068440/HD/NICHD NIH HHS/United States
@@ -45089,7 +45129,7 @@ PMID- 23602499
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130709
-LR  - 20260501
+LR  - 20260514
 IS  - 1097-4199 (Electronic)
 IS  - 0896-6273 (Print)
 IS  - 0896-6273 (Linking)
@@ -45765,6 +45805,7 @@ STAT- PubMed-not-MEDLINE
 DCOM- 20130704
 LR  - 20240513
 IS  - 2160-8288 (Print)
+IS  - 2160-8288 (Electronic)
 IS  - 2160-8288 (Linking)
 VI  - 2
 DP  - 2012
@@ -45812,15 +45853,22 @@ OT  - Parkinson
 OT  - neurodegeneration
 OT  - neurodevelopment
 OT  - primary ovarian insufficiency
+COIS- Competing Interests: Paul Hagerman is a non-compensated collaborator with 
+      Asuragen, Inc. and with Pacific Biosciences. With Dr. Flora Tassone, he holds a 
+      US patent for expanded-CGG screening. There are no other conflicts of interest to 
+      report.
 EDAT- 2013/02/27 06:00
 MHDA- 2013/02/27 06:01
+PMCR- 2012/05/18
 CRDT- 2013/02/27 06:00
 PHST- 2011/09/09 00:00 [received]
 PHST- 2011/12/01 00:00 [accepted]
 PHST- 2013/02/27 06:00 [entrez]
 PHST- 2013/02/27 06:00 [pubmed]
 PHST- 2013/02/27 06:01 [medline]
+PHST- 2012/05/18 00:00 [pmc-release]
 AID - tre-02-63-375-2 [pii]
+AID - tre-63-375-2 [pii]
 AID - 10.7916/D80C4TH0 [doi]
 PST - ppublish
 SO  - Tremor Other Hyperkinet Mov (N Y). 2012;2:tre-02-63-375-2. doi: 10.7916/D80C4TH0. 
@@ -46981,7 +47029,7 @@ PMID- 22581803
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20130314
-LR  - 20260128
+LR  - 20260520
 IS  - 1933-7205 (Electronic)
 IS  - 1933-7191 (Print)
 IS  - 1933-7191 (Linking)
@@ -47021,8 +47069,6 @@ AU  - Williams CD
 FAU - Silverman, Lawrence M
 AU  - Silverman LM
 LA  - eng
-GR  - R01 HD067721/HD/NICHD NIH HHS/United States
-GR  - R01 HD068440/HD/NICHD NIH HHS/United States
 GR  - R03 HD052768/HD/NICHD NIH HHS/United States
 PT  - Journal Article
 PT  - Multicenter Study

@@ -1,116 +1,476 @@
 
+PMID- 42094143
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260525
+LR  - 20260525
+DP  - 2026 May 1
+TI  - Genome-wide detection and clinical prioritization of tandem repeat outliers using 
+      long-read sequencing.
+LID - 2026.04.30.26352103 [pii]
+LID - 10.64898/2026.04.30.26352103 [doi]
+AB  - BACKGROUND: Tandem repeat expansions (TREs) cause over 60 known neurological, 
+      neuromuscular, and developmental disorders. Detecting these expansions 
+      genome-wide is challenging due to their size, sequence complexity (including 
+      interruptions), and population variation. While long-read sequencing is an 
+      emerging technology that can fully resolve many TREs, no methods have been 
+      described for genome-wide identification and prioritization of candidate 
+      pathogenic TREs with this technology. METHODS: Using a newly developed pipeline 
+      called TRoLR (Tandem Repeat outliers identified with Long Reads), we analyzed 
+      haplotype-resolved long-read genome assemblies from 471 ancestrally diverse 
+      individuals to define population distributions for over three million tandem 
+      repeat loci, capturing clinically relevant interruptions. Outlier expansions were 
+      identified relative to these distributions and prioritized by genomic location 
+      and comparison to known pathogenic loci. The framework was applied to 47 cases 
+      from the Undiagnosed Diseases Network. RESULTS: Population stratification of 
+      repeat metrics was observed at 7% of loci, with highest variability among 
+      individuals of African ancestry. Outlier analysis confirmed known pathogenic CNBP 
+      and ATXN8OS expansions, detected carrier-range alleles at RFC1, CSTB, and FXN, 
+      and revealed a novel CGG expansion in the 5' UTR of PCMTD2 exhibiting 
+      hypermethylation and intergenerational instability. Genome-wide screening also 
+      identified intronic pentanucleotide expansions at IQCB1 and MAP3K15 in controls 
+      composed of motifs that have been associated with pathogenicity at other disease 
+      loci. CONCLUSIONS: Quantifying the longest uninterrupted repeat segment in 
+      long-read assemblies enables detection of clinically relevant repeat expansions 
+      and loss of stabilizing interruptions. This approach enhances both diagnostic 
+      confirmation and discovery of candidate pathogenic expansions, with implications 
+      for clinical interpretation and research into complex repeat-mediated disorders.
+FAU - Gibson, Sophia B
+AU  - Gibson SB
+AUID- ORCID: 0000-0001-9839-9045
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+FAU - Damaraju, Nikhita
+AU  - Damaraju N
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+AD  - Institute for Public Health Genetics, University of Washington School of Public 
+      Health, Seattle, WA.
+FAU - Gustafson, J Gus
+AU  - Gustafson JG
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+AD  - Molecular and Cellular Biology Program, University of Washington, Seattle, WA.
+FAU - Balton, Elsa V
+AU  - Balton EV
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Chanprasert, Sirisak
+AU  - Chanprasert S
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Glass, Ian A
+AU  - Glass IA
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+FAU - Horike-Pyne, Martha
+AU  - Horike-Pyne M
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Kumar, Runjun D
+AU  - Kumar RD
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+FAU - Leppig, Kathleen A
+AU  - Leppig KA
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Lundberg, Chris
+AU  - Lundberg C
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Ranchalis, Jane
+AU  - Ranchalis J
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Rosenthal, Elisabeth A
+AU  - Rosenthal EA
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Solomon, Andrew K
+AU  - Solomon AK
+AD  - Division of Rheumatology, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Stergachis, Andrew B
+AU  - Stergachis AB
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Wener, Mark
+AU  - Wener M
+AD  - Division of Rheumatology, Department of Medicine, University of Washington, 
+      Seattle, WA.
+CN  - Undiagnosed Diseases Network
+FAU - Jarvik, Gail P
+AU  - Jarvik GP
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Blue, Elizabeth E
+AU  - Blue EE
+AD  - Institute for Public Health Genetics, University of Washington School of Public 
+      Health, Seattle, WA.
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA.
+FAU - Dipple, Katrina M
+AU  - Dipple KM
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Center for Clinical and Translational Research, Seattle Children's Research 
+      Institute, Seattle, WA.
+FAU - Dashnow, Harriet
+AU  - Dashnow H
+AD  - Department of Biomedical Informatics, University of Colorado Anschutz, Aurora, 
+      CO.
+FAU - Starita, Lea M
+AU  - Starita LM
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA.
+FAU - Miller, Danny E
+AU  - Miller DE
+AUID- ORCID: 0000-0001-6096-8601
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA.
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260501
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC13142565
+OTO - NOTNLM
+OT  - clinical genomics
+OT  - long-read sequencing
+OT  - longest pure segment
+OT  - outlier detection
+OT  - population reference
+OT  - repeat expansion disorders
+OT  - tandem repeat expansion
+EDAT- 2026/05/07 06:36
+MHDA- 2026/05/07 06:37
+PMCR- 2026/05/05
+CRDT- 2026/05/07 05:10
+PHST- 2026/05/07 06:36 [pubmed]
+PHST- 2026/05/07 06:37 [medline]
+PHST- 2026/05/07 05:10 [entrez]
+PHST- 2026/05/05 00:00 [pmc-release]
+AID - 2026.04.30.26352103 [pii]
+AID - 10.64898/2026.04.30.26352103 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2026 May 1:2026.04.30.26352103. doi: 
+      10.64898/2026.04.30.26352103.
+
 PMID- 42003432
 OWN - NLM
-STAT- Publisher
-LR  - 20260420
+STAT- MEDLINE
+DCOM- 20260518
+LR  - 20260518
 IS  - 1754-8411 (Electronic)
 IS  - 1754-8403 (Linking)
-DP  - 2026 Apr 20
-TI  - Distinct cellular effects of myotonic dystrophy type 2 RAN tetrapeptides in 
-      Drosophila melanogaster.
-LID - dmm.052729 [pii]
+VI  - 19
+IP  - 5
+DP  - 2026 May 1
+TI  - Distinct cellular effects of myotonic dystrophy type 2 repeat-associated non-AUG 
+      tetrapeptides.
+LID - dmm052729 [pii]
 LID - 10.1242/dmm.052729 [doi]
 AB  - Myotonic dystrophy type 2 (DM2) is an autosomal dominant, multisystemic disorder 
       caused by the expansion of CCTG repeats in the first intron of the CNBP gene. 
       Repeat-associated non-AUG (RAN) translation of the expanded CCTG RNA generates 
-      two tetrapeptide repeat proteins (TPRs), polyQAGR and polyLPAC, whose roles in 
-      DM2 pathogenesis remain unclear. To define their individual contributions, we 
+      two tetrapeptide repeat proteins, polyQAGR and polyLPAC, but their roles in DM2 
+      pathogenesis remain unclear. To define their individual contributions, we 
       expressed codon-optimized polyQAGR and polyLPAC peptides with an ATG start codon 
-      in Drosophila melanogaster. Expression of both TPRs reduced viability and 
-      lifespan and induced eye degeneration and locomotor defects. We found that 
-      polyQAGR accumulated in the nucleolus, disrupted nucleolar integrity, and 
-      impaired rRNA processing. It also interfered with autophagy, promoting Atg5 and 
-      Atg7 transcription and accumulation of Atg8a- and Ref(2)P-positive aggregates. 
-      Consistently, overexpression of Atg8a or Ref(2)P mitigated polyQAGR-induced eye 
-      toxicity, whereas knockdown of autophagy genes worsened it. Conversely, polyLPAC 
-      increase the cytoplasmic pool of TIAR in human cells and in DM2 patient-derived 
-      myoblasts. Together, these findings show that polyQAGR and polyLPAC exert 
-      distinct toxic effects that likely converge to drive DM2 pathogenesis and may 
-      represent promising therapeutic targets.
+      in Drosophila melanogaster. Expression of both tetrapeptide repeat proteins 
+      reduced viability and lifespan and induced eye degeneration and locomotor 
+      defects. We found that polyQAGR accumulated in the nucleolus, disrupted nucleolar 
+      integrity and impaired rRNA processing. It also interfered with autophagy, 
+      promoting Atg5 and Atg7 transcription and accumulation of Atg8a- and 
+      Ref(2)P-positive aggregates. Overexpression of Atg8a or Ref(2)P mitigated 
+      polyQAGR-induced eye toxicity, whereas knockdown of autophagy genes worsened it. 
+      Conversely, PolyLPAC expression increased the cytoplasmic pool of TIAR in human 
+      cells and in DM2 patient-derived myoblasts. Together, these findings show that 
+      polyQAGR and polyLPAC exert distinct toxic effects that likely converge to drive 
+      DM2 pathogenesis and may represent promising therapeutic targets.
 CI  - (c) 2026. Published by The Company of Biologists.
 FAU - Marzullo, Marta
 AU  - Marzullo M
 AUID- ORCID: 0000-0001-7229-1693
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 AD  - Institute of Molecular Biology and Pathology, National Research Council (IBPM, 
-      CNR), c/o Sapienza University of Rome, Italy.
+      CNR), c/o Department of Biology and Biotechnologies 'C. Darwin', Sapienza 
+      University of Rome, 00185 Rome, Italy.
 FAU - De Simone, Assia
 AU  - De Simone A
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 FAU - Terribili, Marta
 AU  - Terribili M
 AUID- ORCID: 0009-0003-7183-4360
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 FAU - Di Salvio, Michela
 AU  - Di Salvio M
 AUID- ORCID: 0000-0002-5817-1297
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 AD  - Institute of Molecular Biology and Pathology, National Research Council (IBPM, 
-      CNR), c/o Sapienza University of Rome, Italy.
+      CNR), c/o Department of Biology and Biotechnologies 'C. Darwin', Sapienza 
+      University of Rome, 00185 Rome, Italy.
 FAU - Mengistu, Degisew Yinur
 AU  - Mengistu DY
 AUID- ORCID: 0000-0001-9086-132X
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 FAU - Somma, Maria Patrizia
 AU  - Somma MP
 AUID- ORCID: 0000-0002-7585-3484
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 AD  - Institute of Molecular Biology and Pathology, National Research Council (IBPM, 
-      CNR), c/o Sapienza University of Rome, Italy.
+      CNR), c/o Department of Biology and Biotechnologies 'C. Darwin', Sapienza 
+      University of Rome, 00185 Rome, Italy.
 FAU - D'Amico, Rodrigo
 AU  - D'Amico R
-AD  - Department of Molecular Medicine, Sapienza University of Rome, Italy.
+AD  - Department of Molecular Medicine, Sapienza University of Rome, 00185 Rome, Italy.
 FAU - Canettieri, Gianluca
 AU  - Canettieri G
 AUID- ORCID: 0000-0001-6694-2613
-AD  - Department of Molecular Medicine, Sapienza University of Rome, Italy.
+AD  - Department of Molecular Medicine, Sapienza University of Rome, 00185 Rome, Italy.
 FAU - Cestra, Gianluca
 AU  - Cestra G
 AUID- ORCID: 0000-0002-6322-631X
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 AD  - Institute of Molecular Biology and Pathology, National Research Council (IBPM, 
-      CNR), c/o Sapienza University of Rome, Italy.
+      CNR), c/o Department of Biology and Biotechnologies 'C. Darwin', Sapienza 
+      University of Rome, 00185 Rome, Italy.
 FAU - Ciapponi, Laura
 AU  - Ciapponi L
 AUID- ORCID: 0000-0002-0817-1862
-AD  - Department of Biology and Biotechnologies "C. Darwin", Sapienza University of 
-      Rome, Italy.
+AD  - Department of Biology and Biotechnologies 'C. Darwin', Sapienza University of 
+      Rome, 00185 Rome, Italy.
 LA  - eng
 GR  - P2022S7H3H/Ministero dell'Universite e della Ricerca/
-GR  - P2022S7H3H/Ministero dell'Universite e della Ricerca/
 GR  - GMR22T1027/Fondazione Telethon/
+GR  - 28731/AFM-Telethon/
+GR  - P2022S7H3H CUP/Ministero dell'Universita e della Ricerca/
+GR  - B53D23024810001/Ministero dell'Universita e della Ricerca/
+GR  - B53D23024800001/Ministero dell'Universita e della Ricerca/
+GR  - GMR22T1027/Fondazione Telethon /
 PT  - Journal Article
-DEP - 20260420
+DEP - 20260518
 PL  - England
 TA  - Dis Model Mech
 JT  - Disease models & mechanisms
 JID - 101483332
+RN  - 0 (Peptides)
+RN  - 0 (Drosophila Proteins)
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (RNA-Binding Proteins)
+RN  - 0 (RNA, Ribosomal)
+RN  - 0 (Oligopeptides)
 SB  - IM
+MH  - *Myotonic Dystrophy/pathology/genetics
+MH  - Humans
+MH  - Drosophila melanogaster/genetics/metabolism
+MH  - Animals
+MH  - Autophagy/genetics
+MH  - Peptides/metabolism
+MH  - Drosophila Proteins/metabolism/genetics
+MH  - Cell Nucleolus/metabolism
+MH  - Eye/pathology
+MH  - Myoblasts/metabolism/pathology
+MH  - RNA-Binding Proteins/metabolism
+MH  - RNA, Ribosomal/metabolism
+MH  - *Oligopeptides/metabolism
 OTO - NOTNLM
 OT  - Drosophila melanogaster
-OT  - Myotonic Dystrophy type 2
+OT  - LPAC
+OT  - Myotonic dystrophy type 2
 OT  - Protein toxicity
-OT  - QAGR and LPAC
+OT  - QAGR
 OT  - Repeat expansion disorders
+COIS- Competing interests The authors declare no competing or financial interests.
 EDAT- 2026/04/20 13:10
-MHDA- 2026/04/20 13:10
+MHDA- 2026/05/18 06:31
 CRDT- 2026/04/20 04:43
 PHST- 2025/11/03 00:00 [received]
 PHST- 2026/04/09 00:00 [accepted]
-PHST- 2026/04/20 13:10 [medline]
+PHST- 2026/05/18 06:31 [medline]
 PHST- 2026/04/20 13:10 [pubmed]
 PHST- 2026/04/20 04:43 [entrez]
 AID - 371398 [pii]
 AID - 10.1242/dmm.052729 [doi]
-PST - aheadofprint
-SO  - Dis Model Mech. 2026 Apr 20:dmm.052729. doi: 10.1242/dmm.052729.
+PST - ppublish
+SO  - Dis Model Mech. 2026 May 1;19(5):dmm052729. doi: 10.1242/dmm.052729. Epub 2026 
+      May 18.
+
+PMID- 41937177
+OWN - NLM
+STAT- In-Process
+LR  - 20260524
+IS  - 1479-7364 (Electronic)
+IS  - 1473-9542 (Print)
+IS  - 1473-9542 (Linking)
+VI  - 20
+IP  - 1
+DP  - 2026 Apr 5
+TI  - The novel (TCTG)(n) motif in CNBP expanded alleles: composition, dynamics and 
+      genotype-phenotype correlation in Myotonic dystrophy type 2 (DM2).
+LID - 10.1186/s40246-026-00954-7 [doi]
+LID - 87
+AB  - Introduction. Myotonic dystrophy type 2 (DM2) is an autosomal dominant disorder 
+      caused by (CCTG)(n) repeat expansions in intron 1 of the CNBP gene. Recent 
+      evidence from long-read sequencing suggests these expansions may be more complex 
+      than previously recognized. Aim. To comprehensively characterize the composition, 
+      intergenerational dynamics, and clinical impact of novel (TCTG)(n) motifs within 
+      the CNBP expanded alleles in a large DM2 cohort. Methods. We analyzed 100 
+      genetically confirmed DM2 individuals (45 sporadic, 55 familial). The presence of 
+      (TCTG)(n) blocks was detected using an optimized quadruplet-repeat primed PCR 
+      (QP-PCR) assay coupled with Sanger sequencing. In a subset of nine patients, 
+      Cas9-mediated enrichment followed by Nanopore Long-Read Sequencing (LRS) provided 
+      nucleotide-level resolution of the expanded alleles. Haplotype analysis was 
+      performed using STR markers. Results. We identified (TCTG)(n) blocks at the 3' 
+      end of the expansion in 88% of patients. This refined assay corrected nine 
+      initial false-negative diagnoses from standard testing. LRS analysis confirmed 
+      the composition and revealed the dynamics of the (TCTG)(n) tract in familial 
+      transmission, showing a tendency for contraction and, in one case, complete loss. 
+      Genotype-phenotype correlation analysis indicated that the presence of the 
+      (TCTG)(n) motif acts as a disease modifier, significantly influencing the age of 
+      onset. Conclusion. The detailed characterization of the CNBP expansion reveals 
+      the novel (TCTG)(n) component that is integral to the DM2 genotype. Understanding 
+      its composition and dynamics enhances diagnostic accuracy and provides a new 
+      framework for genetic counselling, prognostic stratification and future 
+      personalized therapies. . SUPPLEMENTARY INFORMATION: The online version contains 
+      supplementary material available at 10.1186/s40246-026-00954-7.
+FAU - Centofanti, Federica
+AU  - Centofanti F
+AD  - Department of Biomedicine and Prevention, Medical Genetics Section, University of 
+      Rome Tor Vergata, Rome, Italy.
+FAU - Visconti, Virginia Veronica
+AU  - Visconti VV
+AD  - Department of Biomedicine and Prevention, Medical Genetics Section, University of 
+      Rome Tor Vergata, Rome, Italy.
+FAU - D'Apice, Maria Rosaria
+AU  - D'Apice MR
+AD  - Laboratory of Medical Genetics, Tor Vergata Hospital, Rome, Italy.
+FAU - Carlomagno, Marco
+AU  - Carlomagno M
+AD  - Department of Biotechnology, University of Verona, Verona, Italy.
+FAU - Maestri, Simone
+AU  - Maestri S
+AD  - Department of Biotechnology, University of Verona, Verona, Italy.
+FAU - Ciabini, Dario
+AU  - Ciabini D
+AD  - Department of Biomedicine and Prevention, Medical Genetics Section, University of 
+      Rome Tor Vergata, Rome, Italy.
+FAU - Bengala, Mario
+AU  - Bengala M
+AD  - Laboratory of Medical Genetics, Tor Vergata Hospital, Rome, Italy.
+FAU - Marchionni, Enrica
+AU  - Marchionni E
+AD  - Laboratory of Medical Genetics, Tor Vergata Hospital, Rome, Italy.
+FAU - Frezza, Erica
+AU  - Frezza E
+AD  - Department of Systems Medicine (Neurology), University of Rome Tor Vergata, Rome, 
+      Italy.
+FAU - Massa, Roberto
+AU  - Massa R
+AD  - Department of Systems Medicine (Neurology), University of Rome Tor Vergata, Rome, 
+      Italy.
+FAU - Petrucci, Antonio
+AU  - Petrucci A
+AD  - Center for Neuromuscular and Neurological Rare Diseases, S. Camillo Forlanini 
+      Hospital, Rome, Italy.
+FAU - Lupidi, Francesca
+AU  - Lupidi F
+AD  - Neurological Clinic, Azienda Ospedaliera Universitaria delle Marche, Ancona, 
+      Italy.
+FAU - Pegoraro, Elena
+AU  - Pegoraro E
+AD  - Department of Neuroscience, University of Padova, Padua, Italy.
+FAU - Siciliano, Gabriele
+AU  - Siciliano G
+AD  - Department of Clinical and Experimental Medicine, University of Pisa, Pisa, 
+      Italy.
+FAU - Garibaldi, Matteo
+AU  - Garibaldi M
+AD  - Neuromuscular and Rare Disease Centre, Neurology Unit, Sant'Andrea Hospital, 
+      Rome, Italy.
+AD  - Department of Neuroscience, Mental Health and Sensory Organs (NESMOS), SAPIENZA 
+      University of Rome, Rome, Italy.
+FAU - Origone, Paola
+AU  - Origone P
+AD  - Department of Neurosciences, Rehabilitation, Ophthalmology, Genetic and Maternal 
+      and Infantile Sciences, University of Genoa, Genova, Italy.
+AD  - IRCCS Azienda Ospedaliera Metropolitana, Genoa, Italy.
+FAU - Delledonne, Massimo
+AU  - Delledonne M
+AD  - Department of Biotechnology, University of Verona, Verona, Italy.
+FAU - Rossato, Marzia
+AU  - Rossato M
+AD  - Department of Biotechnology, University of Verona, Verona, Italy.
+FAU - Botta, Annalisa
+AU  - Botta A
+AD  - Department of Biomedicine and Prevention, Medical Genetics Section, University of 
+      Rome Tor Vergata, Rome, Italy. botta@med.uniroma2.it.
+FAU - Novelli, Giuseppe
+AU  - Novelli G
+AD  - Department of Biomedicine and Prevention, Medical Genetics Section, University of 
+      Rome Tor Vergata, Rome, Italy.
+LA  - eng
+PT  - Journal Article
+DEP - 20260405
+PL  - England
+TA  - Hum Genomics
+JT  - Human genomics
+JID - 101202210
+SB  - IM
+PMC - PMC13195993
+OTO - NOTNLM
+OT  - CNBP repeat expansions
+OT  - Long read sequencing (LRS)
+OT  - Myotonic dystrophy type 2 (DM2)
+OT  - QP-PCR
+OT  - Variant repeats (VRs)
+COIS- Declarations. Ethics approval and consent to participate: The study was approved 
+      by the institutional review board of Policlinico Tor Vergata (Ethical Approval 
+      register numbers: 61/23), and all procedures were performed in accordance with 
+      the Declaration of Helsinki. Informed consent was obtained from all participants. 
+      Competing interests: The authors declare no competing interests.
+EDAT- 2026/04/06 00:31
+MHDA- 2026/04/06 00:31
+PMCR- 2026/04/05
+CRDT- 2026/04/05 23:44
+PHST- 2025/12/22 00:00 [received]
+PHST- 2026/03/18 00:00 [accepted]
+PHST- 2026/04/06 00:31 [pubmed]
+PHST- 2026/04/06 00:31 [medline]
+PHST- 2026/04/05 23:44 [entrez]
+PHST- 2026/04/05 00:00 [pmc-release]
+AID - 10.1186/s40246-026-00954-7 [pii]
+AID - 954 [pii]
+AID - 10.1186/s40246-026-00954-7 [doi]
+PST - epublish
+SO  - Hum Genomics. 2026 Apr 5;20(1):87. doi: 10.1186/s40246-026-00954-7.
 
 PMID- 41610137
 OWN - NLM
@@ -345,7 +705,7 @@ PMID- 40113266
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250414
-LR  - 20250504
+LR  - 20260507
 IS  - 1549-5469 (Electronic)
 IS  - 1088-9051 (Print)
 IS  - 1088-9051 (Linking)
@@ -482,7 +842,10 @@ AD  - Department of Internal Medicine, Radboud Expertise Center for Immunodefici
       and Autoinflammation and Radboud Center for Infectious Disease (RCI), Radboud 
       University Medical Center, 6525GA Nijmegen, the Netherlands.
 LA  - eng
+GR  - 779257/ERC_/European Research Council/International
+GR  - 101156595/ERC_/European Research Council/International
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20250414
 PL  - United States
 TA  - Genome Res

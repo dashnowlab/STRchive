@@ -1,4 +1,244 @@
 
+PMID- 42196324
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260527
+LR  - 20260529
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 27
+IP  - 10
+DP  - 2026 May 13
+TI  - Computational Short Tandem Repeat Genotyping Reveals Clinically Relevant 
+      Expansions in a Large Turkish Neurodegeneration Disease Cohort.
+LID - 10.3390/ijms27104345 [doi]
+LID - 4345
+AB  - Short tandem repeat (STR) expansions are a major cause of neurodegenerative 
+      disorders; however, their genetic and clinical heterogeneity complicates 
+      diagnosis. STR detection remains limited in routine short-read next-generation 
+      sequencing (NGS) workflows. We evaluated the diagnostic yield and clinical 
+      utility of computational STR genotyping in a large Turkish neurodegenerative 
+      disease cohort. ExpansionHunter was applied to NGS data from 3150 patients and 
+      146 controls, targeting 15 disease-associated STR loci. To improve genotyping of 
+      poorly captured exonic regions in exome data, the default locus coverage 
+      threshold was reduced from 10x to 3x. Candidate expansions were visually 
+      inspected using REViewer and validated by conventional molecular methods. 
+      Computational analysis detected 28 pathogenic and 160 intermediate expansions. Of 
+      these, 23 were confirmed as pathogenic, and eight initially classified as 
+      intermediate were reclassified as pathogenic after conventional validation, 
+      resulting in 31 pathogenic cases across 28 families: HTT (n = 8), ATXN2 (n = 5), 
+      ATXN1 (n = 4), DMPK (n = 3), PABPN1 (n = 3), TBP (n = 2), and single cases in AR, 
+      ATN1, and CACNA1A. Lowering the coverage threshold markedly increased genotyping 
+      rates at low-coverage loci in exome data, particularly in ATXN2. Genetic findings 
+      were largely consistent with clinical pre-diagnosis and the additional diagnostic 
+      yield was 0.95%. These findings support integrating STR analysis into routine 
+      neurogenetic diagnostics.
+FAU - Khojakulov, Zakhiriddin
+AU  - Khojakulov Z
+AUID- ORCID: 0000-0002-7771-8956
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Palvadeau, Robin J
+AU  - Palvadeau RJ
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Kovancilar-Koc, Muge
+AU  - Kovancilar-Koc M
+AUID- ORCID: 0009-0006-7125-1159
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Atay, Irmak
+AU  - Atay I
+AUID- ORCID: 0009-0007-3284-7790
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahbaz, Irmak
+AU  - Sahbaz I
+AUID- ORCID: 0000-0001-8816-9158
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tekgul, Seyma
+AU  - Tekgul S
+AUID- ORCID: 0000-0001-5223-5627
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahin, Ayca
+AU  - Sahin A
+AUID- ORCID: 0000-0002-0948-6495
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Badakal, Esmer Zeynep Duru
+AU  - Badakal EZD
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Ciftci, Vildan
+AU  - Ciftci V
+AUID- ORCID: 0000-0002-4441-6062
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Bayraktar, Elif
+AU  - Bayraktar E
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tunca, Ceren
+AU  - Tunca C
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Smolina, Natalia
+AU  - Smolina N
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Basak, Ayse Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+LA  - eng
+GR  - Suna and Inan Kirac Foundation/Suna and Inan Kirac Foundation/
+GR  - Koc university/Koc University/
+PT  - Journal Article
+DEP - 20260513
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Turkey/epidemiology
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+MH  - Female
+MH  - *Genotyping Techniques/methods
+MH  - Male
+MH  - Cohort Studies
+MH  - *DNA Repeat Expansion
+MH  - Computational Biology/methods
+PMC - PMC13207311
+OTO - NOTNLM
+OT  - ExpansionHunter
+OT  - NGS
+OT  - STR
+OT  - computational genotyping
+OT  - neurodegenerative diseases
+OT  - short tandem repeats
+COIS- The authors declare no conflicts of interest. The contributions of the NIH 
+      author(s) are considered Works of the United States Government. The findings and 
+      conclusions presented in this paper are those of the author(s) and do not 
+      necessarily reflect the views of the NIH or the U.S. Department of Health and 
+      Human Services.
+EDAT- 2026/05/27 06:33
+MHDA- 2026/05/27 06:34
+PMCR- 2026/05/13
+CRDT- 2026/05/27 01:16
+PHST- 2026/03/05 00:00 [received]
+PHST- 2026/04/04 00:00 [revised]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/27 06:34 [medline]
+PHST- 2026/05/27 06:33 [pubmed]
+PHST- 2026/05/27 01:16 [entrez]
+PHST- 2026/05/13 00:00 [pmc-release]
+AID - ijms27104345 [pii]
+AID - ijms-27-04345 [pii]
+AID - 10.3390/ijms27104345 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2026 May 13;27(10):4345. doi: 10.3390/ijms27104345.
+
+PMID- 42133999
+OWN - NLM
+STAT- Publisher
+LR  - 20260514
+IS  - 1876-7753 (Electronic)
+IS  - 1873-5061 (Linking)
+VI  - 94
+DP  - 2026 May 10
+TI  - Generation of iPSC lines from myotonic dystrophy type 1 patients with varying CTG 
+      repeat lengths.
+PG  - 104013
+LID - S1873-5061(26)00109-1 [pii]
+LID - 10.1016/j.scr.2026.104013 [doi]
+AB  - An expanded CTG trinucleotide repeat in the Dystrophia Myotonica Protein Kinase 
+      (DMPK) gene underpins myotonic dystrophy type 1 (DM1), an autosomal dominant 
+      neuromuscular disorder that affects almost every organ system, especially the 
+      skeletal muscle, central nervous system and the heart. In this study, we describe 
+      the generation of induced pluripotent stem cell (iPSC) lines from patient-derived 
+      fibroblasts carrying varying expanded (CTG)(n) repeats in DMPK. These lines 
+      provide a valuable resource of investigating how CTG repeat length correlates 
+      with DM1-related cellular phenotypes in differentiated, disease-relevant cell 
+      types, including muscle progenitor cells and neurons.
+CI  - Copyright (c) 2026 The Authors. Published by Elsevier B.V. All rights reserved.
+FAU - Hoekman, Thomas D
+AU  - Hoekman TD
+AD  - Radboud University Medical Center, Radboud Institute for Medical Innovation, 
+      Department of Medical BioSciences, 6525 GA Nijmegen, the Netherlands.
+FAU - Rahm, Lisa
+AU  - Rahm L
+AD  - Radboud University Medical Center, Radboud Institute for Medical Innovation, 
+      Department of Medical BioSciences, 6525 GA Nijmegen, the Netherlands; Radboud 
+      University Medical Center, Radboud Institute for Medical Innovation and Donders 
+      lnstitute for Brain Cognition and Behaviour, Department of Human Genetics, 6500 
+      HB Nijmegen, the Netherlands.
+FAU - Albert, Silvia
+AU  - Albert S
+AD  - Radboud University Medical Center, Radboud Institute for Medical Innovation and 
+      Donders lnstitute for Brain Cognition and Behaviour, Department of Human 
+      Genetics, 6500 HB Nijmegen, the Netherlands.
+FAU - Wansink, Derick G
+AU  - Wansink DG
+AD  - Radboud University Medical Center, Radboud Institute for Medical Innovation, 
+      Department of Medical BioSciences, 6525 GA Nijmegen, the Netherlands.
+FAU - van Bokhoven, Hans
+AU  - van Bokhoven H
+AD  - Radboud University Medical Center, Radboud Institute for Medical Innovation and 
+      Donders lnstitute for Brain Cognition and Behaviour, Department of Human 
+      Genetics, 6500 HB Nijmegen, the Netherlands. Electronic address: 
+      Hans.vanBokhoven@Radboudumc.nl.
+FAU - Raaijmakers, Renee H L
+AU  - Raaijmakers RHL
+AD  - Radboud University Medical Center, Radboud Institute for Medical Innovation, 
+      Department of Medical BioSciences, 6525 GA Nijmegen, the Netherlands; Radboud 
+      University Medical Center, Radboud Institute for Medical Innovation and Donders 
+      lnstitute for Brain Cognition and Behaviour, Department of Human Genetics, 6500 
+      HB Nijmegen, the Netherlands.
+LA  - eng
+PT  - Journal Article
+DEP - 20260510
+PL  - England
+TA  - Stem Cell Res
+JT  - Stem cell research
+JID - 101316957
+SB  - IM
+COIS- Declaration of competing interest The authors declare the following financial 
+      interests/personal relationships which may be considered as potential competing 
+      interests: Several authors of this publication are members of the Radboudumc 
+      Center of Expertise for neuromuscular disorders (Radboud-NMD), Netherlands 
+      Neuromuscular Center (NL-NMD) and the European Reference Network for rare 
+      neuromuscular diseases (EURO-NMD). The authors declare no competing financial or 
+      personal interests.
+EDAT- 2026/05/14 18:36
+MHDA- 2026/05/14 18:36
+CRDT- 2026/05/14 17:59
+PHST- 2026/03/25 00:00 [received]
+PHST- 2026/04/29 00:00 [revised]
+PHST- 2026/05/09 00:00 [accepted]
+PHST- 2026/05/14 18:36 [medline]
+PHST- 2026/05/14 18:36 [pubmed]
+PHST- 2026/05/14 17:59 [entrez]
+AID - S1873-5061(26)00109-1 [pii]
+AID - 10.1016/j.scr.2026.104013 [doi]
+PST - aheadofprint
+SO  - Stem Cell Res. 2026 May 10;94:104013. doi: 10.1016/j.scr.2026.104013.
+
 PMID- 41996006
 OWN - NLM
 STAT- Publisher
@@ -108,13 +348,18 @@ SO  - Mol Diagn Ther. 2026 Apr 17. doi: 10.1007/s40291-026-00848-3.
 
 PMID- 41974889
 OWN - NLM
-STAT- Publisher
-LR  - 20260413
+STAT- MEDLINE
+DCOM- 20260505
+LR  - 20260508
 IS  - 2092-6413 (Electronic)
+IS  - 1226-3613 (Print)
 IS  - 1226-3613 (Linking)
-DP  - 2026 Apr 13
+VI  - 58
+IP  - 4
+DP  - 2026 Apr
 TI  - Targeted long-read sequencing for high-resolution repeat profiling in myotonic 
       dystrophy type 1.
+PG  - 1203-1215
 LID - 10.1038/s12276-026-01683-6 [doi]
 AB  - Tandem repeat expansion disorders can be difficult to diagnose when expansions 
       exceed 200 repeats, as standard methods (for example, Southern blot and modified 
@@ -154,7 +399,6 @@ AD  - School of Biological Sciences, Seoul National University, Seoul, Republic 
       Korea. hyeshik@snu.ac.kr.
 LA  - eng
 GR  - RS-2024-00352005/National Research Foundation of Korea (NRF)/
-GR  - RS-2024-00352005/National Research Foundation of Korea (NRF)/
 GR  - 2021R1F1A1046537/National Research Foundation of Korea (NRF)/
 PT  - Journal Article
 DEP - 20260413
@@ -162,34 +406,55 @@ PL  - United States
 TA  - Exp Mol Med
 JT  - Experimental & molecular medicine
 JID - 9607880
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (DMPK protein, human)
 SB  - IM
+MH  - *Myotonic Dystrophy/genetics/diagnosis
+MH  - Humans
+MH  - DNA Methylation
+MH  - *High-Throughput Nucleotide Sequencing/methods
+MH  - Nanopore Sequencing/methods
+MH  - Myotonin-Protein Kinase/genetics
+MH  - Algorithms
+MH  - Sequence Analysis, DNA/methods
+MH  - Cell Line
+PMC - PMC13144457
 COIS- Competing interests: Y.H., J.-H.J., and H.C. have filed patents on 'a method for 
       providing information for diagnosing repeat expansion disorder diseases using the 
       CRISPR-Cas9 system and nanopore sequencing analysis' and 'a method for providing 
       information for the diagnosis of ataxia' (Applications 1020230147875 and 
       1020230197358).
 EDAT- 2026/04/14 00:31
-MHDA- 2026/04/14 00:31
+MHDA- 2026/05/06 00:32
+PMCR- 2026/04/13
 CRDT- 2026/04/13 23:27
 PHST- 2025/05/08 00:00 [received]
 PHST- 2026/01/13 00:00 [accepted]
 PHST- 2025/12/11 00:00 [revised]
-PHST- 2026/04/14 00:31 [medline]
+PHST- 2026/05/06 00:32 [medline]
 PHST- 2026/04/14 00:31 [pubmed]
 PHST- 2026/04/13 23:27 [entrez]
+PHST- 2026/04/13 00:00 [pmc-release]
 AID - 10.1038/s12276-026-01683-6 [pii]
+AID - 1683 [pii]
 AID - 10.1038/s12276-026-01683-6 [doi]
-PST - aheadofprint
-SO  - Exp Mol Med. 2026 Apr 13. doi: 10.1038/s12276-026-01683-6.
+PST - ppublish
+SO  - Exp Mol Med. 2026 Apr;58(4):1203-1215. doi: 10.1038/s12276-026-01683-6. Epub 2026 
+      Apr 13.
 
 PMID- 41951733
 OWN - NLM
-STAT- Publisher
-LR  - 20260421
+STAT- MEDLINE
+DCOM- 20260521
+LR  - 20260523
 IS  - 1476-4687 (Electronic)
+IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
-DP  - 2026 Apr 8
+VI  - 653
+IP  - 8115
+DP  - 2026 May
 TI  - Population-scale repeat expansions elucidate disease risk and brain atrophy.
+PG  - 796-808
 LID - 10.1038/s41586-026-10345-6 [doi]
 AB  - Pathogenic expansions of short tandem repeats (STRs) cause over 70 neurological 
       diseases(1-3). Here we performed a population-scale survey of pathogenic repeat 
@@ -325,7 +590,32 @@ PL  - England
 TA  - Nature
 JT  - Nature
 JID - 0410462
+RN  - 0 (C9orf72 Protein)
+RN  - 0 (C9orf72 protein, human)
+RN  - 0 (DMPK protein, human)
+RN  - 0 (HTT protein, human)
+RN  - 0 (Huntingtin Protein)
+RN  - 0 (neurofilament protein L)
+RN  - 0 (Neurofilament Proteins)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
 SB  - IM
+MH  - Female
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - Atrophy/genetics
+MH  - *Brain/pathology
+MH  - C9orf72 Protein/genetics
+MH  - Cerebellum/pathology
+MH  - *DNA Repeat Expansion
+MH  - *Genetic Predisposition to Disease/genetics
+MH  - Huntingtin Protein/genetics
+MH  - Huntington Disease/genetics/pathology
+MH  - *Microsatellite Repeats
+MH  - Neurofilament Proteins/metabolism
+MH  - Organ Size
+MH  - Myotonin-Protein Kinase
+PMC - PMC13190288
 COIS- Competing interests: V.K.P., J.H.S., J.H., S.O., V.R., X.B., M.D.K., K.L., X.Z., 
       S.Y., L.Z., M.G.L., J.R.-V, F.G., S.W., S.S., F.S., E.A.S., Y.H., M.A., S.C., 
       W.S., J.O., J.M., J.R., G.R.A., L.L., A.B., G.C. and S.G. are current employees 
@@ -849,17 +1139,21 @@ IR  - Pagan M
 FIR - Siceron, Sunilbe
 IR  - Siceron S
 EDAT- 2026/04/09 00:34
-MHDA- 2026/04/09 00:34
+MHDA- 2026/05/21 06:32
+PMCR- 2026/04/08
 CRDT- 2026/04/08 23:21
 PHST- 2025/05/16 00:00 [received]
 PHST- 2026/03/02 00:00 [accepted]
+PHST- 2026/05/21 06:32 [medline]
 PHST- 2026/04/09 00:34 [pubmed]
-PHST- 2026/04/09 00:34 [medline]
 PHST- 2026/04/08 23:21 [entrez]
+PHST- 2026/04/08 00:00 [pmc-release]
 AID - 10.1038/s41586-026-10345-6 [pii]
+AID - 10345 [pii]
 AID - 10.1038/s41586-026-10345-6 [doi]
-PST - aheadofprint
-SO  - Nature. 2026 Apr 8. doi: 10.1038/s41586-026-10345-6.
+PST - ppublish
+SO  - Nature. 2026 May;653(8115):796-808. doi: 10.1038/s41586-026-10345-6. Epub 2026 
+      Apr 8.
 
 PMID- 41946260
 OWN - NLM
@@ -949,25 +1243,28 @@ SO  - Stem Cell Res. 2026 Apr 1;94:103977. doi: 10.1016/j.scr.2026.103977.
 
 PMID- 41855125
 OWN - NLM
-STAT- Publisher
-LR  - 20260319
+STAT- MEDLINE
+DCOM- 20260508
+LR  - 20260522
 IS  - 2379-3708 (Electronic)
 IS  - 2379-3708 (Linking)
-DP  - 2026 Mar 19
+VI  - 11
+IP  - 9
+DP  - 2026 May 8
 TI  - Progressive cardiac phenotypes and reduced reversibility from long-term CUGexp 
       RNA expression in a DM1 mouse model.
 LID - e204278 [pii]
 LID - 10.1172/jci.insight.204278 [doi]
-AB  - Myotonic Dystrophy Type 1 (DM1) is caused by an expanded CTG repeat in the DMPK 
+AB  - Myotonic dystrophy type 1 (DM1) is caused by an expanded CTG repeat in the DMPK 
       gene, resulting in mutant transcripts that form expanded CUG (CUGexp) RNA foci 
-      and sequester muscleblind-like (MBNL) RNA-binding proteins. DM1 is multisystemic 
+      and sequester muscleblind-like (MBNL) RNA-binding proteins. DM1 is multisystemic, 
       with progressive worsening of disease manifestations in affected tissues. Disease 
       progression is attributed to somatic expansion of the CTG repeats with age, 
       resulting in production of CUGexp RNA with enhanced intrinsic toxicity due to 
       increased MBNL sequestration. To determine the degree to which cardiac disease 
       progression can occur independently of repeat expansion, we used a transgenic DM1 
       mouse model with inducible heart-specific expression of a stable, interrupted 
-      960-CUG repeat RNA. Sustained CUGexp RNA expression caused progressive cardiac 
+      960-CUG-repeat RNA. Sustained CUGexp RNA expression caused progressive cardiac 
       enlargement, contractile dysfunction, conduction delay, myocardial fibrosis, and 
       reduced survival, while MBNL-dependent splicing defects remained static, 
       consistent with the stable repeat length. We also determined the degree of 
@@ -979,28 +1276,45 @@ AB  - Myotonic Dystrophy Type 1 (DM1) is caused by an expanded CTG repeat in the
       progression in DM1 in addition to somatic expansion.
 FAU - Hu, Rong-Chi
 AU  - Hu RC
-AD  - Department of Pathology & Immunology, Baylor College of Medicine, Houston, United 
-      States of America.
+AD  - Department of Pathology & Immunology.
 FAU - Tabary, Mohammadreza
 AU  - Tabary M
-AD  - Department of Medicine (Cardiology section), Baylor College of Medicine, Houston, 
-      United States of America.
+AD  - Department of Medicine (Cardiology Section).
 FAU - Wehrens, Xander Ht
 AU  - Wehrens XH
-AD  - Department of Medicine (Cardiology section), Baylor College of Medicine, Houston, 
-      United States of America.
+AD  - Department of Medicine (Cardiology Section).
+AD  - Department of Integrative Physiology, and.
 FAU - Cooper, Thomas A
 AU  - Cooper TA
-AD  - Department of Pathology & Immunology, Baylor College of Medicine, Houston, United 
-      States of America.
+AD  - Department of Pathology & Immunology.
+AD  - Department of Integrative Physiology, and.
+AD  - Department of Molecular & Cellular Biology, Baylor College of Medicine, Houston, 
+      Texas, USA.
 LA  - eng
+GR  - R01 AR082852/AR/NIAMS NIH HHS/United States
+GR  - R01 HL147020/HL/NHLBI NIH HHS/United States
 PT  - Journal Article
 DEP - 20260319
 PL  - United States
 TA  - JCI Insight
 JT  - JCI insight
 JID - 101676073
+RN  - 0 (RNA-Binding Proteins)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (DMPK protein, mouse)
 SB  - IM
+MH  - Animals
+MH  - *Myotonic Dystrophy/genetics/pathology/metabolism/physiopathology
+MH  - Mice
+MH  - Mice, Transgenic
+MH  - Disease Models, Animal
+MH  - RNA-Binding Proteins/metabolism/genetics
+MH  - Disease Progression
+MH  - Myotonin-Protein Kinase/genetics
+MH  - Trinucleotide Repeat Expansion
+MH  - Phenotype
+MH  - Myocardium/pathology/metabolism
+MH  - Humans
 OTO - NOTNLM
 OT  - Cardiology
 OT  - Cardiovascular disease
@@ -1008,21 +1322,24 @@ OT  - Genetic diseases
 OT  - Genetics
 OT  - Molecular biology
 EDAT- 2026/03/19 21:44
-MHDA- 2026/03/19 21:44
+MHDA- 2026/05/08 12:37
 CRDT- 2026/03/19 13:23
-PHST- 2026/03/19 21:44 [medline]
+PHST- 2026/01/06 00:00 [received]
+PHST- 2026/03/10 00:00 [accepted]
+PHST- 2026/05/08 12:37 [medline]
 PHST- 2026/03/19 21:44 [pubmed]
 PHST- 2026/03/19 13:23 [entrez]
 AID - 204278 [pii]
 AID - 10.1172/jci.insight.204278 [doi]
-PST - aheadofprint
-SO  - JCI Insight. 2026 Mar 19:e204278. doi: 10.1172/jci.insight.204278.
+PST - epublish
+SO  - JCI Insight. 2026 Mar 19;11(9):e204278. doi: 10.1172/jci.insight.204278. 
+      eCollection 2026 May 8.
 
 PMID- 41848171
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260318
-LR  - 20260321
+LR  - 20260524
 IS  - 1365-2990 (Electronic)
 IS  - 0305-1846 (Print)
 IS  - 0305-1846 (Linking)
@@ -1096,6 +1413,7 @@ GR  - W.OR18-06/Prinses Beatrix Spierfonds/
 GR  - W.OR23-03/Prinses Beatrix Spierfonds/
 GR  - 24975/AFM-Telethon/
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 PL  - England
 TA  - Neuropathol Appl Neurobiol
 JT  - Neuropathology and applied neurobiology
@@ -1443,7 +1761,7 @@ PMID- 41722569
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260308
-LR  - 20260419
+LR  - 20260527
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Print)
 IS  - 0002-9297 (Linking)
@@ -1588,6 +1906,7 @@ AD  - Human Translational Genomics Group, University Institute for Biotechnology
       Spain. Electronic address: ruben.artero@uv.es.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20260220
 PL  - United States
 TA  - Am J Hum Genet
@@ -2318,7 +2637,7 @@ PMID- 41379996
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251211
-LR  - 20260127
+LR  - 20260522
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Print)
 IS  - 0027-8424 (Linking)
@@ -2401,14 +2720,17 @@ AD  - Department of Integrative Physiology, Baylor College of Medicine, Houston,
 AD  - Department of Molecular and Cellular Biology, Baylor College of Medicine, 
       Houston, TX 77030.
 LA  - eng
-GR  - 1F31DK132935/HHS | NIH | National Institute of Diabetes and Digestive and Kidney 
-      Diseases (NIDDK)/
 GR  - R01AR082852/HHS | NIH | National Institute of Arthritis and Musculoskeletal and 
       Skin Diseases (NIAMS)/
+GR  - R01 AR082852/AR/NIAMS NIH HHS/United States
 GR  - R01HL147020/HHS | NIH | National Heart, Lung, and Blood Institute (NHLBI)/
-GR  - R01DK133301/HHS | NIH | National Institute of Diabetes and Digestive and Kidney 
+GR  - 1F31DK132935/HHS | NIH | National Institute of Diabetes and Digestive and Kidney 
       Diseases (NIDDK)/
 GR  - R01GM147365/HHS | NIH | National Institute of General Medical Sciences (NIGMS)/
+GR  - R01 HL147020/HL/NHLBI NIH HHS/United States
+GR  - R01DK133301/HHS | NIH | National Institute of Diabetes and Digestive and Kidney 
+      Diseases (NIDDK)/
+GR  - F31 DK132935/DK/NIDDK NIH HHS/United States
 PT  - Journal Article
 DEP - 20251211
 PL  - United States
@@ -3431,7 +3753,7 @@ PMID- 40879030
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260305
-LR  - 20260306
+LR  - 20260528
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
@@ -3488,6 +3810,7 @@ LA  - eng
 GR  - R25 NS065745/NS/NINDS NIH HHS/United States
 GR  - UL1 TR001878/TR/NCATS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20250829
 PL  - United States
 TA  - Ann Neurol
@@ -3955,7 +4278,7 @@ PMID- 40417743
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250803
-LR  - 20260416
+LR  - 20260523
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Print)
 IS  - 1098-3600 (Linking)
@@ -4080,10 +4403,12 @@ AD  - Dr John T. Macdonald Foundation Department of Human Genetics and John P. H
       Institute for Human Genetics, University of Miami Miller School of Medicine, 
       Miami, FL. Electronic address: szuchner@med.miami.edu.
 LA  - eng
-GR  - K99 HG012796/HG/NHGRI NIH HHS/United States
 GR  - R00 HG012796/HG/NHGRI NIH HHS/United States
-GR  - RC2 TR004391/TR/NCATS NIH HHS/United States
 GR  - U01 NS134353/NS/NINDS NIH HHS/United States
+GR  - U01 HG007672/HG/NHGRI NIH HHS/United States
+GR  - RC2 TR004391/TR/NCATS NIH HHS/United States
+GR  - K99 HG012796/HG/NHGRI NIH HHS/United States
+GR  - U01 NS134350/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20250522
 PL  - United States
@@ -4753,10 +5078,10 @@ CRDT- 2025/05/26 06:18
 PHST- 2024/08/07 00:00 [received]
 PHST- 2025/05/15 00:00 [revised]
 PHST- 2025/05/16 00:00 [accepted]
-PHST- 2026/05/22 00:00 [pmc-release]
 PHST- 2025/08/03 12:31 [medline]
 PHST- 2025/05/26 12:37 [pubmed]
 PHST- 2025/05/26 06:18 [entrez]
+PHST- 2026/05/22 00:00 [pmc-release]
 AID - S1098-3600(25)00109-1 [pii]
 AID - 10.1016/j.gim.2025.101462 [doi]
 PST - ppublish
@@ -5065,7 +5390,7 @@ PMID- 40113266
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250414
-LR  - 20250504
+LR  - 20260507
 IS  - 1549-5469 (Electronic)
 IS  - 1088-9051 (Print)
 IS  - 1088-9051 (Linking)
@@ -5202,7 +5527,10 @@ AD  - Department of Internal Medicine, Radboud Expertise Center for Immunodefici
       and Autoinflammation and Radboud Center for Infectious Disease (RCI), Radboud 
       University Medical Center, 6525GA Nijmegen, the Netherlands.
 LA  - eng
+GR  - 779257/ERC_/European Research Council/International
+GR  - 101156595/ERC_/European Research Council/International
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20250414
 PL  - United States
 TA  - Genome Res
@@ -5532,7 +5860,7 @@ PMID- 39932794
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250507
-LR  - 20260307
+LR  - 20260506
 IS  - 1558-8238 (Electronic)
 IS  - 0021-9738 (Print)
 IS  - 0021-9738 (Linking)
@@ -5602,11 +5930,12 @@ GR  - R01 HL132840/HL/NHLBI NIH HHS/United States
 GR  - S10 OD023469/OD/NIH HHS/United States
 GR  - S10 OD032380/OD/NIH HHS/United States
 GR  - R01 AR082852/AR/NIAMS NIH HHS/United States
-GR  - U42 OD026645/OD/NIH HHS/United States
 GR  - R01 DK114356/DK/NIDDK NIH HHS/United States
 GR  - R01 AR060733/AR/NIAMS NIH HHS/United States
 GR  - P30 CA125123/CA/NCI NIH HHS/United States
 GR  - UM1 HG006348/HG/NHGRI NIH HHS/United States
+GR  - R21 AR081472/AR/NIAMS NIH HHS/United States
+GR  - U42 OD026645/OD/NIH HHS/United States
 GR  - R01 HL147020/HL/NHLBI NIH HHS/United States
 GR  - F32 AR083267/AR/NIAMS NIH HHS/United States
 PT  - Journal Article
@@ -7254,7 +7583,7 @@ PMID- 39126705
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241007
-LR  - 20250813
+LR  - 20260506
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -7318,6 +7647,7 @@ GR  - P30CA125123/NH/NIH HHS/United States
 GR  - R01HL147020/NH/NIH HHS/United States
 GR  - S10 OD032380/OD/NIH HHS/United States
 GR  - R01 AR082852/AR/NIAMS NIH HHS/United States
+GR  - R21 AR081472/AR/NIAMS NIH HHS/United States
 GR  - Myotonic Dystrophy Foundation/
 GR  - R01 DK114356/DK/NIDDK NIH HHS/United States
 GR  - P30 CA125123/CA/NCI NIH HHS/United States
@@ -9702,7 +10032,7 @@ PMID- 36352383
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221115
-LR  - 20221116
+LR  - 20260518
 IS  - 1741-7015 (Electronic)
 IS  - 1741-7015 (Linking)
 VI  - 20
@@ -11288,7 +11618,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260127
+LR  - 20260518
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -12418,7 +12748,7 @@ PMID- 34372915
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220216
-LR  - 20220216
+LR  - 20260518
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 13
@@ -16279,7 +16609,7 @@ PMID- 31395669
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200130
-LR  - 20250908
+LR  - 20260518
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Print)
 IS  - 0028-3878 (Linking)
@@ -25036,6 +25366,7 @@ PST - ppublish
 SO  - Clin Genet. 2011 Dec;80(6):574-80. doi: 10.1111/j.1399-0004.2010.01616.x. Epub 
       2011 Jan 19.
 
+
 PMID- 21103235
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -25158,7 +25489,6 @@ AID - 10.1016/j.jocn.2010.03.047 [doi]
 PST - ppublish
 SO  - J Clin Neurosci. 2010 Dec;17(12):1520-2. doi: 10.1016/j.jocn.2010.03.047. Epub 
       2010 Aug 30.
-
 
 PMID- 20635151
 OWN - NLM

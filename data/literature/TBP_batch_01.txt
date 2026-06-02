@@ -1,4 +1,159 @@
 
+PMID- 42196324
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260527
+LR  - 20260529
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 27
+IP  - 10
+DP  - 2026 May 13
+TI  - Computational Short Tandem Repeat Genotyping Reveals Clinically Relevant 
+      Expansions in a Large Turkish Neurodegeneration Disease Cohort.
+LID - 10.3390/ijms27104345 [doi]
+LID - 4345
+AB  - Short tandem repeat (STR) expansions are a major cause of neurodegenerative 
+      disorders; however, their genetic and clinical heterogeneity complicates 
+      diagnosis. STR detection remains limited in routine short-read next-generation 
+      sequencing (NGS) workflows. We evaluated the diagnostic yield and clinical 
+      utility of computational STR genotyping in a large Turkish neurodegenerative 
+      disease cohort. ExpansionHunter was applied to NGS data from 3150 patients and 
+      146 controls, targeting 15 disease-associated STR loci. To improve genotyping of 
+      poorly captured exonic regions in exome data, the default locus coverage 
+      threshold was reduced from 10x to 3x. Candidate expansions were visually 
+      inspected using REViewer and validated by conventional molecular methods. 
+      Computational analysis detected 28 pathogenic and 160 intermediate expansions. Of 
+      these, 23 were confirmed as pathogenic, and eight initially classified as 
+      intermediate were reclassified as pathogenic after conventional validation, 
+      resulting in 31 pathogenic cases across 28 families: HTT (n = 8), ATXN2 (n = 5), 
+      ATXN1 (n = 4), DMPK (n = 3), PABPN1 (n = 3), TBP (n = 2), and single cases in AR, 
+      ATN1, and CACNA1A. Lowering the coverage threshold markedly increased genotyping 
+      rates at low-coverage loci in exome data, particularly in ATXN2. Genetic findings 
+      were largely consistent with clinical pre-diagnosis and the additional diagnostic 
+      yield was 0.95%. These findings support integrating STR analysis into routine 
+      neurogenetic diagnostics.
+FAU - Khojakulov, Zakhiriddin
+AU  - Khojakulov Z
+AUID- ORCID: 0000-0002-7771-8956
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Palvadeau, Robin J
+AU  - Palvadeau RJ
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Kovancilar-Koc, Muge
+AU  - Kovancilar-Koc M
+AUID- ORCID: 0009-0006-7125-1159
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Atay, Irmak
+AU  - Atay I
+AUID- ORCID: 0009-0007-3284-7790
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahbaz, Irmak
+AU  - Sahbaz I
+AUID- ORCID: 0000-0001-8816-9158
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tekgul, Seyma
+AU  - Tekgul S
+AUID- ORCID: 0000-0001-5223-5627
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahin, Ayca
+AU  - Sahin A
+AUID- ORCID: 0000-0002-0948-6495
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Badakal, Esmer Zeynep Duru
+AU  - Badakal EZD
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Ciftci, Vildan
+AU  - Ciftci V
+AUID- ORCID: 0000-0002-4441-6062
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Bayraktar, Elif
+AU  - Bayraktar E
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tunca, Ceren
+AU  - Tunca C
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Smolina, Natalia
+AU  - Smolina N
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Basak, Ayse Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+LA  - eng
+GR  - Suna and Inan Kirac Foundation/Suna and Inan Kirac Foundation/
+GR  - Koc university/Koc University/
+PT  - Journal Article
+DEP - 20260513
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Turkey/epidemiology
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+MH  - Female
+MH  - *Genotyping Techniques/methods
+MH  - Male
+MH  - Cohort Studies
+MH  - *DNA Repeat Expansion
+MH  - Computational Biology/methods
+PMC - PMC13207311
+OTO - NOTNLM
+OT  - ExpansionHunter
+OT  - NGS
+OT  - STR
+OT  - computational genotyping
+OT  - neurodegenerative diseases
+OT  - short tandem repeats
+COIS- The authors declare no conflicts of interest. The contributions of the NIH 
+      author(s) are considered Works of the United States Government. The findings and 
+      conclusions presented in this paper are those of the author(s) and do not 
+      necessarily reflect the views of the NIH or the U.S. Department of Health and 
+      Human Services.
+EDAT- 2026/05/27 06:33
+MHDA- 2026/05/27 06:34
+PMCR- 2026/05/13
+CRDT- 2026/05/27 01:16
+PHST- 2026/03/05 00:00 [received]
+PHST- 2026/04/04 00:00 [revised]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/27 06:34 [medline]
+PHST- 2026/05/27 06:33 [pubmed]
+PHST- 2026/05/27 01:16 [entrez]
+PHST- 2026/05/13 00:00 [pmc-release]
+AID - ijms27104345 [pii]
+AID - ijms-27-04345 [pii]
+AID - 10.3390/ijms27104345 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2026 May 13;27(10):4345. doi: 10.3390/ijms27104345.
+
 PMID- 42038259
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -2876,19 +3031,20 @@ SO  - Neurodegener Dis. 2022;22(1):34-42. doi: 10.1159/000526260. Epub 2022 Aug 
 
 PMID- 35868859
 OWN - NLM
-STAT- Publisher
-LR  - 20240216
+STAT- MEDLINE
+DCOM- 20260512
+LR  - 20260512
 IS  - 2373-2822 (Electronic)
 IS  - 2373-2822 (Linking)
 VI  - 9
 IP  - 4
-DP  - 2022 Jul 21
-TI  - Variation in TAF1 expression in female carrier induced pluripotent stem cells and 
-      human brain ontogeny has implications for adult neostriatum vulnerability in 
-      X-linked Dystonia Parkinsonism.
+DP  - 2022 Jul-Aug
+TI  - Variation in TAF1 Expression in Female Carrier-Induced Pluripotent Stem Cells and 
+      Human Brain Ontogeny Has Implications for Adult Neostriatum Vulnerability in 
+      X-Linked Dystonia Parkinsonism.
 LID - ENEURO.0129-22.2022 [pii]
 LID - 10.1523/ENEURO.0129-22.2022 [doi]
-AB  - X-linked Dystonia-Parkinsonism (XDP) is an inherited, X-linked, adult-onset 
+AB  - X-linked dystonia-parkinsonism (XDP) is an inherited, X-linked, adult-onset 
       movement disorder characterized by degeneration in the neostriatum. No 
       therapeutics alter disease progression. The mechanisms underlying regional 
       differences in degeneration and adult onset are unknown. Developing therapeutics 
@@ -2899,155 +3055,162 @@ AB  - X-linked Dystonia-Parkinsonism (XDP) is an inherited, X-linked, adult-onse
       all XDP males are usually clinically affected, females are heterozygous carriers 
       generally not manifesting the full syndrome. As a resource for disease modeling, 
       we characterized eight iPSC lines from three XDP female carrier individuals for X 
-      chromosome inactivation status and identified clonal lines that express either 
-      the wild-type X or XDP haplotype. Furthermore, we characterized XDP-relevant 
-      transcript expression in neurotypical humans, and found that SVA-F expression 
-      decreases after 30 years of age in the brain and that TAF1 is decreased in most 
-      female samples. Uniquely in the caudate nucleus, TAF1 expression is not sexually 
-      dimorphic and decreased after adolescence. These findings indicate that 
-      regional-, age- and sex-specific mechanisms regulate TAF1, highlighting the 
-      importance of disease-relevant models and postmortem tissue. We propose that the 
-      decreased TAF1 expression in the adult caudate may synergize with the 
-      XDP-specific partial loss of TAF1 function in patients, thereby passing a minimum 
-      threshold of TAF1 function, and triggering degeneration in the 
-      neostriatum.Significance StatementXDP is an inherited, X-linked, adult-onset 
-      movement disorder characterized by degeneration in the neostriatum. No 
-      therapeutics alter disease progression. Developing therapeutics requires a deeper 
-      understanding of how XDP-relevant features vary in health and disease. XDP is 
-      possibly due to a partial loss of TAF1 function. While all XDP males are usually 
-      affected, females are heterozygous carriers generally not manifesting the full 
-      syndrome. As a resource for disease modeling, we characterized eight stem cell 
-      lines from XDP female carrier individuals. Furthermore, we found that, uniquely 
-      in the caudate nucleus, TAF1 expression decreases after adolescence in healthy 
-      humans. We hypothesize that the decrease of TAF1 after adolescence in human 
-      caudate, in general, may underlie the vulnerability of the adult neostriatum in 
-      XDP.
+      chromosome inactivation (XCI) status and identified clonal lines that express 
+      either the wild-type X or XDP haplotype. Furthermore, we characterized 
+      XDP-relevant transcript expression in neurotypical humans, and found that SVA-F 
+      expression decreases after 30 years of age in the brain and that TAF1 is 
+      decreased in most female samples. Uniquely in the caudate nucleus, TAF1 
+      expression is not sexually dimorphic and decreased after adolescence. These 
+      findings indicate that regional-specific, age-specific, and sex-specific 
+      mechanisms regulate TAF1, highlighting the importance of disease-relevant models 
+      and postmortem tissue. We propose that the decreased TAF1 expression in the adult 
+      caudate may synergize with the XDP-specific partial loss of TAF1 function in 
+      patients, thereby passing a minimum threshold of TAF1 function, and triggering 
+      degeneration in the neostriatum.
 CI  - Copyright (c) 2022 D'Ignazio et al.
 FAU - D'Ignazio, Laura
 AU  - D'Ignazio L
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Jacomini, Ricardo S
 AU  - Jacomini RS
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Qamar, Bareera
 AU  - Qamar B
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 FAU - Benjamin, Kynon J M
 AU  - Benjamin KJM
 AUID- ORCID: 0000-0003-2016-4646
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 FAU - Arora, Ria
 AU  - Arora R
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Biology, Krieger School of Arts & Sciences, Johns Hopkins 
-      University, Baltimore, MD 21218, USA.
+      University, Baltimore, MD 21218.
 FAU - Sawada, Tomoyo
 AU  - Sawada T
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Evans, Taylor A
 AU  - Evans TA
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Diffenderfer, Kenneth E
 AU  - Diffenderfer KE
-AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037, USA.
+AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037.
 FAU - Pankonin, Aimee R
 AU  - Pankonin AR
-AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037, USA.
+AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037.
 FAU - Hendriks, William T
 AU  - Hendriks WT
-AD  - Department of Neurology, Massachusetts General Hospital and Harvard Medical 
-      School, Boston, MA 02114, USA.
+AD  - Department of Neurology, Massachusetts General Hospital, Harvard Medical School, 
+      Boston, MA 02114.
 AD  - The Collaborative Center for X-linked Dystonia-Parkinsonism, Massachusetts 
-      General Hospital, Charlestown, MA 02129, USA.
+      General Hospital, Charlestown, MA 02129.
 FAU - Hyde, Thomas M
 AU  - Hyde TM
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 FAU - Kleinman, Joel E
 AU  - Kleinman JE
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 FAU - Weinberger, Daniel R
 AU  - Weinberger DR
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 AD  - Department of Neuroscience, School of Medicine, Johns Hopkins University, 
-      Baltimore, MD 21205, USA.
+      Baltimore, MD 21205.
 AD  - McKusick-Nathans Department of Genetic Medicine, School of Medicine, Johns 
-      Hopkins University Baltimore, MD 21205, USA.
+      Hopkins University, Baltimore, MD 21205.
 FAU - Bragg, D Cristopher
 AU  - Bragg DC
-AD  - Department of Neurology, Massachusetts General Hospital and Harvard Medical 
-      School, Boston, MA 02114, USA.
+AD  - Department of Neurology, Massachusetts General Hospital, Harvard Medical School, 
+      Boston, MA 02114.
 AD  - The Collaborative Center for X-linked Dystonia-Parkinsonism, Massachusetts 
-      General Hospital, Charlestown, MA 02129, USA.
+      General Hospital, Charlestown, MA 02129.
 FAU - Paquola, Apua C M
 AU  - Paquola ACM
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Erwin, Jennifer A
 AU  - Erwin JA
 AUID- ORCID: 0000-0002-6784-9290
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA 
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205 
       jennifer.erwin@libd.org.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 AD  - Department of Neuroscience, School of Medicine, Johns Hopkins University, 
-      Baltimore, MD 21205, USA.
+      Baltimore, MD 21205.
 LA  - eng
 GR  - T32 MH015330/MH/NIMH NIH HHS/United States
 PT  - Journal Article
-DEP - 20220721
+DEP - 20220830
 PL  - United States
 TA  - eNeuro
 JT  - eNeuro
 JID - 101647362
+RN  - 0 (Transcription Factor TFIID)
+RN  - 0 (TATA-Binding Protein Associated Factors)
+RN  - EC 2.7.11.1 (TATA-binding protein associated factor 250 kDa)
+RN  - EC 2.3.1.48 (Histone Acetyltransferases)
+RN  - Dystonia 3, Torsion, X-Linked
 SB  - IM
+MH  - Humans
+MH  - *Transcription Factor TFIID/metabolism/genetics
+MH  - *TATA-Binding Protein Associated Factors/metabolism/genetics
+MH  - Female
+MH  - *Genetic Diseases, X-Linked/metabolism/genetics/pathology
+MH  - *Dystonic Disorders/genetics/metabolism/pathology
+MH  - *Induced Pluripotent Stem Cells/metabolism
+MH  - *Histone Acetyltransferases/metabolism/genetics
+MH  - Adult
+MH  - Male
+MH  - Heterozygote
+MH  - *Brain/metabolism/growth & development
+MH  - X Chromosome Inactivation
 PMC - PMC9428949
 OTO - NOTNLM
 OT  - SVA retrotransposon
-OT  - X-linked Dystonia Parkinsonism
+OT  - X-linked dystonia parkinsonism
 OT  - induced pluripotent stem cells
 OT  - movement disorder
 OT  - neurodegeneration
 OT  - repeat expansion
-COIS- Authors report no conflict of interest
 EDAT- 2022/07/23 06:00
-MHDA- 2022/07/23 06:00
+MHDA- 2026/05/12 06:36
 PMCR- 2022/08/17
 CRDT- 2022/07/22 21:41
 PHST- 2022/03/24 00:00 [received]
 PHST- 2022/06/14 00:00 [revised]
 PHST- 2022/07/03 00:00 [accepted]
-PHST- 2022/07/22 21:41 [entrez]
+PHST- 2026/05/12 06:36 [medline]
 PHST- 2022/07/23 06:00 [pubmed]
-PHST- 2022/07/23 06:00 [medline]
+PHST- 2022/07/22 21:41 [entrez]
 PHST- 2022/08/17 00:00 [pmc-release]
 AID - ENEURO.0129-22.2022 [pii]
 AID - eN-NWR-0129-22 [pii]
 AID - 10.1523/ENEURO.0129-22.2022 [doi]
-PST - aheadofprint
-SO  - eNeuro. 2022 Jul 21;9(4):ENEURO.0129-22.2022. doi: 10.1523/ENEURO.0129-22.2022.
+PST - epublish
+SO  - eNeuro. 2022 Aug 30;9(4):ENEURO.0129-22.2022. doi: 10.1523/ENEURO.0129-22.2022. 
+      Print 2022 Jul-Aug.
 
 PMID- 35493319
 OWN - NLM
@@ -3385,7 +3548,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260127
+LR  - 20260518
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -8773,7 +8936,7 @@ PMID- 24972706
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141106
-LR  - 20250529
+LR  - 20260518
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)

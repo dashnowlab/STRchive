@@ -1,12 +1,538 @@
 
-PMID- 42019185
+PMID- 42204920
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260528
+LR  - 20260529
+IS  - 2162-3279 (Electronic)
+VI  - 16
+IP  - 6
+DP  - 2026 Jun
+TI  - Genetic Variants and Clinical Characteristics of Young-Onset Parkinson's Disease 
+      in the Hakka Population of Western Fujian.
+PG  - e71504
+LID - 10.1002/brb3.71504 [doi]
+AB  - RESEARCH OBJECTIVE: Young-onset Parkinson's disease (YOPD), defined by symptom 
+      onset at or before 50 years of age, has a strong genetic component. The mutation 
+      spectra vary markedly across ethnic groups. However, YOPD among the Hakka, a 
+      subgroup of the Han Chinese ethnicity, remains uncharacterized. We investigated 
+      the genetic and clinical profiles of YOPD in the Hakka population of western 
+      Fujian. MATERIALS AND METHODS: A total of 33 unrelated patients with YOPD were 
+      included in the study. All patients underwent whole exome sequencing (WES) to 
+      screen all known Parkinson's disease (PD)-related genes. Patients with a family 
+      history also received a spinocerebellar ataxia (SCA) gene panel test. If the SCA 
+      gene panel test result was negative, multiplex ligation-dependent probe 
+      amplification (MLPA) for eight genes including DJ-1, ATP13A2, PINK1, UCHL1, SNCA, 
+      LRRK2, PRKN, and GCH1 was performed. Potential pathogenic variants were 
+      confirmed by Sanger sequencing, and both the genetic spectrum and clinical 
+      characteristics of patients with YOPD were analyzed. RESULTS: After variant 
+      filtering, six variants in four YOPD-related genes were identified in four 
+      unrelated patients. Of these patients, two harbored pathogenic ATXN2 repeat 
+      expansions. Four variants in VPS13C and PRKN, along with an SNCA exon 1-6 
+      duplication, were classified as variants of uncertain significance (VUS) 
+      according to the American College of Medical Genetics and Genomics (ACMG) 
+      criteria. A considerable proportion of patients harbored risk variants in LRRK2. 
+      Furthermore, nine unrelated patients harbored nine variants within six 
+      susceptibility genes associated with YOPD, including EIF4G1, COQ2, TENM4, NR4A2, 
+      UQCRC1, and GBA1. CONCLUSION: This study is the first to analyze the genetic 
+      spectrum and clinical characteristics of patients with YOPD in the Hakka 
+      population of western Fujian Province. Genetic testing of known pathogenic genes 
+      in patients with YOPD can facilitate more accurate diagnosis.
+CI  - (c) 2026 The Author(s). Brain and Behavior published by Wiley Periodicals LLC.
+FAU - Pan, Li-Ying
+AU  - Pan LY
+AD  - Department of Neurology, Longyan First Affiliated Hospital of Fujian Medical 
+      University, Longyan, Fujian, China.
+FAU - Guo, Fang
+AU  - Guo F
+AD  - Department of Neurology, Longyan First Affiliated Hospital of Fujian Medical 
+      University, Longyan, Fujian, China.
+FAU - Zheng, Chong
+AU  - Zheng C
+AD  - Department of Neurology, Longyan First Affiliated Hospital of Fujian Medical 
+      University, Longyan, Fujian, China.
+FAU - Hu, Xiao-Hong
+AU  - Hu XH
+AD  - Department of Neurology, Longyan First Affiliated Hospital of Fujian Medical 
+      University, Longyan, Fujian, China.
+FAU - Chen, Yan-Gui
+AU  - Chen YG
+AD  - Department of Neurology, Longyan First Affiliated Hospital of Fujian Medical 
+      University, Longyan, Fujian, China.
+FAU - Lin, Rong-Rong
+AU  - Lin RR
+AD  - Department of Neurology, The Second Affiliated Hospital, Zhejiang University 
+      School of Medicine, Hangzhou, Zhejiang, China.
+LA  - eng
+GR  - 2021J011434/Fujian Province Natural Science Foundation/
+PT  - Journal Article
+PL  - United States
+TA  - Brain Behav
+JT  - Brain and behavior
+JID - 101570837
+RN  - Han Chinese people
+SB  - IM
+MH  - Adult
+MH  - Female
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - Age of Onset
+MH  - China/ethnology
+MH  - Exome Sequencing
+MH  - Genetic Predisposition to Disease
+MH  - Genetic Variation
+MH  - Mutation
+MH  - *Parkinson Disease/genetics/ethnology
+MH  - *East Asian People/genetics
+OTO - NOTNLM
+OT  - Hakka population
+OT  - clinical features
+OT  - genetic variants
+OT  - young-onset Parkinson's disease (YOPD)
+EDAT- 2026/05/28 06:33
+MHDA- 2026/05/28 06:34
+CRDT- 2026/05/28 02:43
+PHST- 2026/05/07 00:00 [revised]
+PHST- 2025/10/22 00:00 [received]
+PHST- 2026/05/12 00:00 [accepted]
+PHST- 2026/05/28 06:34 [medline]
+PHST- 2026/05/28 06:33 [pubmed]
+PHST- 2026/05/28 02:43 [entrez]
+AID - 10.1002/brb3.71504 [doi]
+PST - ppublish
+SO  - Brain Behav. 2026 Jun;16(6):e71504. doi: 10.1002/brb3.71504.
+
+PMID- 42196324
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260527
+LR  - 20260529
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 27
+IP  - 10
+DP  - 2026 May 13
+TI  - Computational Short Tandem Repeat Genotyping Reveals Clinically Relevant 
+      Expansions in a Large Turkish Neurodegeneration Disease Cohort.
+LID - 10.3390/ijms27104345 [doi]
+LID - 4345
+AB  - Short tandem repeat (STR) expansions are a major cause of neurodegenerative 
+      disorders; however, their genetic and clinical heterogeneity complicates 
+      diagnosis. STR detection remains limited in routine short-read next-generation 
+      sequencing (NGS) workflows. We evaluated the diagnostic yield and clinical 
+      utility of computational STR genotyping in a large Turkish neurodegenerative 
+      disease cohort. ExpansionHunter was applied to NGS data from 3150 patients and 
+      146 controls, targeting 15 disease-associated STR loci. To improve genotyping of 
+      poorly captured exonic regions in exome data, the default locus coverage 
+      threshold was reduced from 10x to 3x. Candidate expansions were visually 
+      inspected using REViewer and validated by conventional molecular methods. 
+      Computational analysis detected 28 pathogenic and 160 intermediate expansions. Of 
+      these, 23 were confirmed as pathogenic, and eight initially classified as 
+      intermediate were reclassified as pathogenic after conventional validation, 
+      resulting in 31 pathogenic cases across 28 families: HTT (n = 8), ATXN2 (n = 5), 
+      ATXN1 (n = 4), DMPK (n = 3), PABPN1 (n = 3), TBP (n = 2), and single cases in AR, 
+      ATN1, and CACNA1A. Lowering the coverage threshold markedly increased genotyping 
+      rates at low-coverage loci in exome data, particularly in ATXN2. Genetic findings 
+      were largely consistent with clinical pre-diagnosis and the additional diagnostic 
+      yield was 0.95%. These findings support integrating STR analysis into routine 
+      neurogenetic diagnostics.
+FAU - Khojakulov, Zakhiriddin
+AU  - Khojakulov Z
+AUID- ORCID: 0000-0002-7771-8956
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Palvadeau, Robin J
+AU  - Palvadeau RJ
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Kovancilar-Koc, Muge
+AU  - Kovancilar-Koc M
+AUID- ORCID: 0009-0006-7125-1159
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Atay, Irmak
+AU  - Atay I
+AUID- ORCID: 0009-0007-3284-7790
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahbaz, Irmak
+AU  - Sahbaz I
+AUID- ORCID: 0000-0001-8816-9158
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tekgul, Seyma
+AU  - Tekgul S
+AUID- ORCID: 0000-0001-5223-5627
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahin, Ayca
+AU  - Sahin A
+AUID- ORCID: 0000-0002-0948-6495
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Badakal, Esmer Zeynep Duru
+AU  - Badakal EZD
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Ciftci, Vildan
+AU  - Ciftci V
+AUID- ORCID: 0000-0002-4441-6062
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Bayraktar, Elif
+AU  - Bayraktar E
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tunca, Ceren
+AU  - Tunca C
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Smolina, Natalia
+AU  - Smolina N
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Basak, Ayse Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+LA  - eng
+GR  - Suna and Inan Kirac Foundation/Suna and Inan Kirac Foundation/
+GR  - Koc university/Koc University/
+PT  - Journal Article
+DEP - 20260513
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Turkey/epidemiology
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+MH  - Female
+MH  - *Genotyping Techniques/methods
+MH  - Male
+MH  - Cohort Studies
+MH  - *DNA Repeat Expansion
+MH  - Computational Biology/methods
+PMC - PMC13207311
+OTO - NOTNLM
+OT  - ExpansionHunter
+OT  - NGS
+OT  - STR
+OT  - computational genotyping
+OT  - neurodegenerative diseases
+OT  - short tandem repeats
+COIS- The authors declare no conflicts of interest. The contributions of the NIH 
+      author(s) are considered Works of the United States Government. The findings and 
+      conclusions presented in this paper are those of the author(s) and do not 
+      necessarily reflect the views of the NIH or the U.S. Department of Health and 
+      Human Services.
+EDAT- 2026/05/27 06:33
+MHDA- 2026/05/27 06:34
+PMCR- 2026/05/13
+CRDT- 2026/05/27 01:16
+PHST- 2026/03/05 00:00 [received]
+PHST- 2026/04/04 00:00 [revised]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/27 06:34 [medline]
+PHST- 2026/05/27 06:33 [pubmed]
+PHST- 2026/05/27 01:16 [entrez]
+PHST- 2026/05/13 00:00 [pmc-release]
+AID - ijms27104345 [pii]
+AID - ijms-27-04345 [pii]
+AID - 10.3390/ijms27104345 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2026 May 13;27(10):4345. doi: 10.3390/ijms27104345.
+
+PMID- 42096001
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260507
+LR  - 20260510
+IS  - 1473-4230 (Electronic)
+IS  - 1473-4222 (Print)
+IS  - 1473-4222 (Linking)
+VI  - 25
+IP  - 3
+DP  - 2026 May 7
+TI  - Identification of FGF14 GAA Expansions in Polish Patients with Undiagnosed 
+      Cerebellar Ataxia - A Preliminary Study.
+LID - 10.1007/s12311-026-02003-4 [doi]
+LID - 73
+AB  - Spinocerebellar ataxia type 27B (SCA27B), caused by an intronic GAA repeat 
+      expansion in the FGF14 gene, has recently emerged as a major cause of late-onset 
+      cerebellar ataxia (LOCA). Its prevalence and clinical profile in Central and 
+      Eastern Europe remain largely unknown. To determine the frequency and phenotypic 
+      characteristics of FGF14 GAA.TTC repeat expansions, a large cohort of Polish 
+      patients with undiagnosed adult-onset cerebellar ataxia was investigated. We 
+      retrospectively analyzed 701 patients (age of onset >/= 25 years) with adult-onset 
+      cerebellar ataxia of unknown etiology, previously tested negative for SCA1, SCA2, 
+      SCA3, SCA8, and RFC1 expansions. GAA.TTC repeat lengths were assessed using 
+      long-range and repeat-primed PCR. Expansions >/= 250 repeats were classified as 
+      pathogenic. Clinical and MRI data were evaluated where available. A control group 
+      of 66 neurologically healthy individuals was also screened. Pathogenic FGF14 
+      expansions (>/= 250 repeats) were identified in 4.4% (31/701) of patients, 
+      including 23 with fully penetrant (>/= 300) and 8 with incompletely penetrant 
+      (250-299) alleles. No pathogenic expansions were found in controls. The mean age 
+      of onset was 49.8 years. Common symptoms included balance and gait disturbances, 
+      cerebellar syndrome, and episodic features such as diplopia. Cerebellar atrophy 
+      was present in 45% of patients with available MRI. No significant correlation 
+      between repeat length and age of onset was observed. Our findings confirm that 
+      FGF14 repeat expansions are an underrecognized cause of LOCA in Poland and 
+      support their inclusion in standard genetic testing for adult-onset ataxias. 
+      Further studies are warranted to better define penetrance and genotype-phenotype 
+      correlations.
+CI  - (c) 2026. The Author(s).
+FAU - Matlawska, Marta
+AU  - Matlawska M
+AUID- ORCID: 0000-0003-4310-5091
+AD  - Department of Genetics, Institute of Psychiatry and Neurology, Sobieskiego 9 , 
+      02-957, Warsaw, Poland. mmatlawska@ipin.edu.pl.
+FAU - Ziora-Jakutowicz, Karolina
+AU  - Ziora-Jakutowicz K
+AD  - Department of Genetics, Institute of Psychiatry and Neurology, Sobieskiego 9 , 
+      02-957, Warsaw, Poland.
+FAU - Dicaire, Marie-Josee
+AU  - Dicaire MJ
+AD  - Department of Neurology and Neurosurgery, Montreal Neurological Institute- 
+      Hospital, McGill University, Montreal, Quebec, Canada.
+FAU - Pera, Joanna
+AU  - Pera J
+AD  - Department of Neurology, Jagiellonian University Medical College, Krakow, Poland.
+FAU - Pellerin, David
+AU  - Pellerin D
+AD  - Department of Neurology and Neurosurgery, Montreal Neurological Institute- 
+      Hospital, McGill University, Montreal, Quebec, Canada.
+AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurology 
+      London and The National Hospital for Neurology and Neurosurgery, University 
+      College London, London, United Kingdom.
+FAU - Brais, Bernard
+AU  - Brais B
+AD  - Department of Neurology and Neurosurgery, Montreal Neurological Institute- 
+      Hospital, McGill University, Montreal, Quebec, Canada.
+FAU - Iruzubieta, Pablo
+AU  - Iruzubieta P
+AD  - Department of Neurology and Neurosurgery, Montreal Neurological Institute- 
+      Hospital, McGill University, Montreal, Quebec, Canada.
+FAU - Elert-Dobkowska, Ewelina
+AU  - Elert-Dobkowska E
+AD  - Department of Genetics, Institute of Psychiatry and Neurology, Sobieskiego 9 , 
+      02-957, Warsaw, Poland.
+FAU - Sulek, Anna
+AU  - Sulek A
+AD  - Faculty of Medicine, Lazarski University, Warsaw, Poland.
+LA  - eng
+PT  - Journal Article
+DEP - 20260507
+PL  - United States
+TA  - Cerebellum
+JT  - Cerebellum (London, England)
+JID - 101089443
+RN  - 62031-54-3 (Fibroblast Growth Factors)
+RN  - 0 (fibroblast growth factor 14)
+SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - *Fibroblast Growth Factors/genetics
+MH  - Poland/epidemiology
+MH  - Adult
+MH  - *Cerebellar Ataxia/genetics/diagnosis/epidemiology
+MH  - Aged
+MH  - Retrospective Studies
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Age of Onset
+MH  - Magnetic Resonance Imaging
+PMC - PMC13152904
+OTO - NOTNLM
+OT  - FGF14 expansion
+OT  - Neurodegenerative disorders
+OT  - SCA27B
+OT  - Spinocerebellar ataxia
+COIS- Declarations. Human Ethics and Consent to Participate: The study was conducted in 
+      accordance with the Declaration of Helsinki and its subsequent amendments. The 
+      protocol was approved by the Local Bioethics Committee at the Institute of 
+      Psychiatry and Neurology in Warsaw (resolution no. 30/2021 November 17, 2021). 
+      Consents to Participate: Informed consent was obtained from all individual 
+      participants included in the study. Competing Interests: The authors declare no 
+      competing interests.
+EDAT- 2026/05/07 12:36
+MHDA- 2026/05/07 12:37
+PMCR- 2026/05/07
+CRDT- 2026/05/07 11:08
+PHST- 2025/09/07 00:00 [received]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/07 12:37 [medline]
+PHST- 2026/05/07 12:36 [pubmed]
+PHST- 2026/05/07 11:08 [entrez]
+PHST- 2026/05/07 00:00 [pmc-release]
+AID - 10.1007/s12311-026-02003-4 [pii]
+AID - 2003 [pii]
+AID - 10.1007/s12311-026-02003-4 [doi]
+PST - epublish
+SO  - Cerebellum. 2026 May 7;25(3):73. doi: 10.1007/s12311-026-02003-4.
+
+PMID- 42087256
 OWN - NLM
 STAT- Publisher
-LR  - 20260422
+LR  - 20260505
+IS  - 2051-5960 (Electronic)
+IS  - 2051-5960 (Linking)
+DP  - 2026 May 5
+TI  - Targeting the integrated stress response or Ataxin-2 alleviates neurodegeneration 
+      in PolyGR models of C9orf72 associated frontotemporal dementia and amyotrophic 
+      lateral sclerosis.
+LID - 10.1186/s40478-026-02301-2 [doi]
+AB  - Frontotemporal dementia (FTD) and amyotrophic lateral sclerosis (ALS) are fatal, 
+      early-onset neurodegenerative diseases. The most common genetic cause of FTD and 
+      ALS is a G4C2 hexanucleotide repeat expansion in the C9orf72 gene. This mutation 
+      leads to the production of toxic dipeptide repeat proteins (DPRs), via 
+      repeat-associated non-AUG (RAN) translation. These DPRs disrupt stress granule 
+      (SG) dynamics, with SG regulators such as Ataxin-2 (ATXN2) implicated in disease 
+      risk. The integrated stress response (ISR), a key driver of SG formation via 
+      eIF2alpha phosphorylation, has been linked to C9orf72 expansions, but the role of 
+      individual DPRs in ISR activation remains unclear. Here, using Drosophila models 
+      expressing physiologically relevant repeat length DPRs, we identify poly(GR) as a 
+      novel activator of the ISR, inducing early and sustained eIF2alpha phosphorylation 
+      and SG accumulation prior to motor decline. Genetic inhibition of the ISR or 
+      knockdown of ATX2, the Drosophila orthologue of ATXN2, rescues motor deficits in 
+      these models. ATXN2 knockdown also reduces poly(GR) toxicity in mouse primary 
+      neurons. These findings position poly(GR) as a key driver of ISR activation and 
+      highlight ATXN2 and the ISR as promising therapeutic targets in 
+      C9orf72-associated FTD/ALS.
+CI  - (c) 2026. The Author(s).
+FAU - Harper, Nikki S
+AU  - Harper NS
+AD  - Division of Neuroscience and Experimental Psychology, Faculty of Biology, 
+      Medicine and Health, University of Manchester, Manchester, UK.
+FAU - Sharpe, Joanne L
+AU  - Sharpe JL
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), University of 
+      Sheffield, 385a Glossop Road, Sheffield, S10 2HQ, UK.
+AD  - Neuroscience Institute, University of Sheffield, Sheffield, S10 2TN, UK.
+FAU - Speranza, Jasmine
+AU  - Speranza J
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), University of 
+      Sheffield, 385a Glossop Road, Sheffield, S10 2HQ, UK.
+AD  - Neuroscience Institute, University of Sheffield, Sheffield, S10 2TN, UK.
+FAU - Gulia, Ravinder
+AU  - Gulia R
+AD  - Department of Pathology and Laboratory Medicine, University of California, 
+      Irvine, Irvine, CA, 92617, USA.
+FAU - Chen, Jeffrey X
+AU  - Chen JX
+AD  - Department of Pathology and Laboratory Medicine, University of California, 
+      Irvine, Irvine, CA, 92617, USA.
+FAU - Allen, Scott P
+AU  - Allen SP
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), University of 
+      Sheffield, 385a Glossop Road, Sheffield, S10 2HQ, UK.
+AD  - Neuroscience Institute, University of Sheffield, Sheffield, S10 2TN, UK.
+FAU - Atwal, Manpreet S
+AU  - Atwal MS
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), University of 
+      Sheffield, 385a Glossop Road, Sheffield, S10 2HQ, UK.
+AD  - Neuroscience Institute, University of Sheffield, Sheffield, S10 2TN, UK.
+FAU - Pickering-Brown, Stuart
+AU  - Pickering-Brown S
+AD  - Division of Neuroscience and Experimental Psychology, Faculty of Biology, 
+      Medicine and Health, University of Manchester, Manchester, UK.
+FAU - Livesey, Matthew R
+AU  - Livesey MR
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), University of 
+      Sheffield, 385a Glossop Road, Sheffield, S10 2HQ, UK.
+AD  - Neuroscience Institute, University of Sheffield, Sheffield, S10 2TN, UK.
+FAU - Bennett, Craig L
+AU  - Bennett CL
+AD  - Department of Pathology and Laboratory Medicine, University of California, 
+      Irvine, Irvine, CA, 92617, USA.
+AD  - UCI Center for Neurotherapeutics, University of California, Irvine, Irvine, CA, 
+      92697, USA.
+FAU - Prokop, Andreas
+AU  - Prokop A
+AD  - Division of Molecular and Cellular Function, Faculty of Biology, Medicine and 
+      Health, The University of Manchester, Manchester, UK.
+FAU - La Spada, Albert R
+AU  - La Spada AR
+AD  - Department of Pathology and Laboratory Medicine, University of California, 
+      Irvine, Irvine, CA, 92617, USA.
+AD  - UCI Center for Neurotherapeutics, University of California, Irvine, Irvine, CA, 
+      92697, USA.
+AD  - Department of Biological Chemistry, University of California, Irvine, Irvine, CA, 
+      92617, USA.
+AD  - Department of Neurology, University of California, Irvine, Irvine, CA, 92617, 
+      USA.
+AD  - Department of Neurobiology and Behavior, University of California, Irvine, 
+      Irvine, CA, 92697, USA.
+FAU - West, Ryan J H
+AU  - West RJH
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), University of 
+      Sheffield, 385a Glossop Road, Sheffield, S10 2HQ, UK. r.j.west@sheffield.ac.uk.
+AD  - Neuroscience Institute, University of Sheffield, Sheffield, S10 2TN, UK. 
+      r.j.west@sheffield.ac.uk.
+LA  - eng
+GR  - 630/Alzheimer's Society and The Heather Corrie Impact Fund/
+GR  - Livesey/Oct20/900-792/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - Livesey/Oct20/900-792/MNDA_/Motor Neurone Disease Association/United Kingdom
+GR  - NIH R35 NS122140/National Institutes of Health (NIH)/
+GR  - NIH R35 NS122140/National Institutes of Health (NIH)/
+GR  - 510/ALZS_/Alzheimer's Society/United Kingdom
+PT  - Journal Article
+DEP - 20260505
+PL  - England
+TA  - Acta Neuropathol Commun
+JT  - Acta neuropathologica communications
+JID - 101610673
+SB  - IM
+OTO - NOTNLM
+OT  - Drosophila
+OT  - Amyotrophic lateral sclerosis
+OT  - Ataxin-2
+OT  - C9orf72
+OT  - Frontotemporal dementia
+OT  - Integrated stress response
+OT  - Motor neurone disease
+OT  - Stress granules
+COIS- Declarations. Ethics approval and consent to participate: Not applicable. Consent 
+      for publication: Not applicable. Competing interests: The authors declare no 
+      competing interests.
+EDAT- 2026/05/06 00:33
+MHDA- 2026/05/06 00:33
+CRDT- 2026/05/05 23:55
+PHST- 2025/06/19 00:00 [received]
+PHST- 2026/04/17 00:00 [accepted]
+PHST- 2026/05/06 00:33 [medline]
+PHST- 2026/05/06 00:33 [pubmed]
+PHST- 2026/05/05 23:55 [entrez]
+AID - 10.1186/s40478-026-02301-2 [pii]
+AID - 10.1186/s40478-026-02301-2 [doi]
+PST - aheadofprint
+SO  - Acta Neuropathol Commun. 2026 May 5. doi: 10.1186/s40478-026-02301-2.
+
+PMID- 42019185
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260525
+LR  - 20260525
 IS  - 1872-8421 (Electronic)
 IS  - 0165-5728 (Linking)
 VI  - 417
-DP  - 2026 Apr 19
+DP  - 2026 Aug
 TI  - Peripheral lymphocyte subsets in spinocerebellar Ataxia type 2: Insights into 
       disease mechanisms and potential immunomodulation.
 PG  - 578940
@@ -103,6 +629,15 @@ TA  - J Neuroimmunol
 JT  - Journal of neuroimmunology
 JID - 8109498
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Female
+MH  - Middle Aged
+MH  - Adult
+MH  - *Spinocerebellar Ataxias/immunology/blood
+MH  - *Lymphocyte Subsets/immunology
+MH  - *Immunomodulation/physiology
+MH  - Aged
 OTO - NOTNLM
 OT  - B lymphocytes
 OT  - Flow cytometry
@@ -112,28 +647,33 @@ OT  - T lymphocytes
 COIS- Declaration of competing interest On behalf of all authors, the corresponding 
       author states that there is no conflict of interest.
 EDAT- 2026/04/23 00:31
-MHDA- 2026/04/23 00:31
+MHDA- 2026/05/25 06:31
 CRDT- 2026/04/22 18:05
 PHST- 2026/02/04 00:00 [received]
 PHST- 2026/03/31 00:00 [revised]
 PHST- 2026/04/17 00:00 [accepted]
-PHST- 2026/04/23 00:31 [medline]
+PHST- 2026/05/25 06:31 [medline]
 PHST- 2026/04/23 00:31 [pubmed]
 PHST- 2026/04/22 18:05 [entrez]
 AID - S0165-5728(26)00088-3 [pii]
 AID - 10.1016/j.jneuroim.2026.578940 [doi]
-PST - aheadofprint
-SO  - J Neuroimmunol. 2026 Apr 19;417:578940. doi: 10.1016/j.jneuroim.2026.578940.
+PST - ppublish
+SO  - J Neuroimmunol. 2026 Aug;417:578940. doi: 10.1016/j.jneuroim.2026.578940. Epub 
+      2026 Apr 19.
 
 PMID- 41912844
 OWN - NLM
-STAT- Publisher
-LR  - 20260330
+STAT- MEDLINE
+DCOM- 20260512
+LR  - 20260512
 IS  - 1608-3091 (Electronic)
 IS  - 1607-6729 (Linking)
-DP  - 2026 Mar 30
+VI  - 526
+IP  - 1
+DP  - 2026 Feb
 TI  - The Role of D/H Isotope Exchange in Stabilizing Trinucleotide Repeat Expansions 
       in the CAG Tract of the ATXN2 Gene.
+PG  - 45-47
 LID - 10.1134/S1607672925601659 [doi]
 AB  - CAG repeats in the first exon of the ATXN2 gene play a key role in the 
       development of a number of neurodegenerative diseases. Understanding the 
@@ -176,7 +716,12 @@ PL  - United States
 TA  - Dokl Biochem Biophys
 JT  - Doklady. Biochemistry and biophysics
 JID - 101126895
+RN  - 0 (Ataxin-2)
+RN  - 0 (ATXN2 protein, human)
 SB  - IM
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Ataxin-2/genetics/chemistry
+MH  - Humans
 OTO - NOTNLM
 OT  - ATXN2 gene
 OT  - CAG tract
@@ -190,18 +735,19 @@ COIS- ETHICS APPROVAL AND CONSENT TO PARTICIPATE: This work does not contain any
       studies involving human and animal subjects. CONFLICT OF INTEREST: The authors of 
       this work declare that they have no conflicts of interest.
 EDAT- 2026/03/31 00:53
-MHDA- 2026/03/31 00:53
+MHDA- 2026/05/12 12:35
 CRDT- 2026/03/30 23:26
 PHST- 2025/10/20 00:00 [received]
 PHST- 2025/11/10 00:00 [accepted]
 PHST- 2025/10/30 00:00 [revised]
-PHST- 2026/03/31 00:53 [medline]
+PHST- 2026/05/12 12:35 [medline]
 PHST- 2026/03/31 00:53 [pubmed]
 PHST- 2026/03/30 23:26 [entrez]
 AID - 10.1134/S1607672925601659 [pii]
 AID - 10.1134/S1607672925601659 [doi]
-PST - aheadofprint
-SO  - Dokl Biochem Biophys. 2026 Mar 30. doi: 10.1134/S1607672925601659.
+PST - ppublish
+SO  - Dokl Biochem Biophys. 2026 Feb;526(1):45-47. doi: 10.1134/S1607672925601659. Epub 
+      2026 Mar 30.
 
 PMID- 41876820
 OWN - NLM
@@ -349,7 +895,7 @@ PMID- 41771688
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260308
-LR  - 20260308
+LR  - 20260531
 IS  - 2575-1077 (Electronic)
 IS  - 2575-1077 (Linking)
 VI  - 9
@@ -379,97 +925,97 @@ CI  - (c) 2026 Romano et al.
 FAU - Romano, Lisa El
 AU  - Romano LE
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Tsukagoshi, Setsuki
 AU  - Tsukagoshi S
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Davey-Osuch, Emily E
 AU  - Davey-Osuch EE
 AUID- ORCID: 0000-0001-7204-5089
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Ajredini, Ramadan
 AU  - Ajredini R
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Manasi, Kamat
 AU  - Manasi K
 AD  - Southeast Center for Integrated Metabolomics, Clinical and Translational Science 
-      Institute, University of Florida, Gainesville, FL, USA. ROR: 
-      https://ror.org/02y3ad647
+      Institute, University of Florida, Gainesville, FL, USA.
 FAU - Ortiz, Tala Vr
 AU  - Ortiz TV
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Rijos, Eduardo
 AU  - Rijos E
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Bourgon, Nathan J
 AU  - Bourgon NJ
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Ames, S Elaine
 AU  - Ames SE
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Garrett, Timothy J
 AU  - Garrett TJ
 AD  - Southeast Center for Integrated Metabolomics, Clinical and Translational Science 
-      Institute, University of Florida, Gainesville, FL, USA. ROR: 
-      https://ror.org/02y3ad647
+      Institute, University of Florida, Gainesville, FL, USA.
 AD  - Department of Pathology, Immunology and Laboratory Medicine, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Cleary, John D
 AU  - Cleary JD
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
 FAU - Wang, Eric T
 AU  - Wang ET
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
-AD  - Genetics Institute, University of Florida, Gainesville, FL, USA. ROR: 
-      https://ror.org/02y3ad647
-AD  - McKnight Brain Institute, University of Florida, Gainesville, FL, USA. ROR: 
-      https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
+AD  - Genetics Institute, University of Florida, Gainesville, FL, USA.
+AD  - McKnight Brain Institute, University of Florida, Gainesville, FL, USA.
 FAU - Ranum, Laura Pw
 AU  - Ranum LP
 AUID- ORCID: 0000-0001-9808-9661
 AD  - Center for NeuroGenetics, College of Medicine, University of Florida, 
-      Gainesville, FL, USA ranum@ufl.edu. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA ranum@ufl.edu.
 AD  - Department of Molecular Genetics and Microbiology, College of Medicine, 
-      University of Florida, Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
-AD  - Genetics Institute, University of Florida, Gainesville, FL, USA. ROR: 
-      https://ror.org/02y3ad647
-AD  - McKnight Brain Institute, University of Florida, Gainesville, FL, USA. ROR: 
-      https://ror.org/02y3ad647
+      University of Florida, Gainesville, FL, USA.
+AD  - Genetics Institute, University of Florida, Gainesville, FL, USA.
+AD  - McKnight Brain Institute, University of Florida, Gainesville, FL, USA.
 AD  - Department of Neurology, College of Medicine, University of Florida, Gainesville, 
-      FL, USA. ROR: https://ror.org/02y3ad647
+      FL, USA.
 AD  - Norman Fixel Institute for Neurological Disease, University of Florida, 
-      Gainesville, FL, USA. ROR: https://ror.org/02y3ad647
+      Gainesville, FL, USA.
 LA  - eng
+GR  - R01 NS098819/NS/NINDS NIH HHS/United States
+GR  - R37 NS040389/NS/NINDS NIH HHS/United States
+GR  - R01 NS117910/NS/NINDS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Intramural
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
 DEP - 20260302
 PL  - United States
 TA  - Life Sci Alliance
@@ -1519,7 +2065,7 @@ PMID- 41359433
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260421
-LR  - 20260421
+LR  - 20260526
 IS  - 2167-9223 (Electronic)
 IS  - 2167-8421 (Linking)
 VI  - 27
@@ -1622,6 +2168,7 @@ AD  - Department of Biomedical Science, Faculty of Medicine, Universiti Malaya, 
       Lumpur, Malaysia.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20251208
 PL  - England
 TA  - Amyotroph Lateral Scler Frontotemporal Degener
@@ -1901,7 +2448,7 @@ PMID- 41196070
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260421
-LR  - 20260421
+LR  - 20260526
 IS  - 2167-9223 (Electronic)
 IS  - 2167-8421 (Linking)
 VI  - 27
@@ -2012,6 +2559,7 @@ AD  - Neurogenetics Unit, 1st Department of Neurology, National and Kapodistrian
       University of Athens, Eginitio Hospital, Athens, Greece.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20251106
 PL  - England
 TA  - Amyotroph Lateral Scler Frontotemporal Degener
@@ -3260,7 +3808,7 @@ PMID- 40684213
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250719
-LR  - 20250723
+LR  - 20260515
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 13
@@ -3502,7 +4050,7 @@ PMID- 40556342
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251017
-LR  - 20251019
+LR  - 20260529
 IS  - 2576-2095 (Electronic)
 IS  - 2096-5451 (Print)
 IS  - 2576-2095 (Linking)
@@ -4976,7 +5524,7 @@ PMID- 39571249
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241212
-LR  - 20241212
+LR  - 20260506
 IS  - 1878-5883 (Electronic)
 IS  - 0022-510X (Linking)
 VI  - 467
@@ -5545,7 +6093,7 @@ SO  - Biomedicines. 2024 Oct 19;12(10):2396. doi: 10.3390/biomedicines12102396.
 PMID- 39420034
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20241020
+LR  - 20260518
 IS  - 2373-8057 (Print)
 IS  - 2373-8057 (Electronic)
 IS  - 2373-8057 (Linking)
@@ -5978,7 +6526,7 @@ PMID- 39209824
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240829
-LR  - 20240901
+LR  - 20260504
 IS  - 2041-1723 (Electronic)
 IS  - 2041-1723 (Linking)
 VI  - 15
@@ -6165,6 +6713,7 @@ AD  - Department of Translational Neuroscience, UMC Utrecht Brain Center, Univer
       r.j.pasterkamp@umcutrecht.nl.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240829
 PL  - England
 TA  - Nat Commun
@@ -12420,7 +12969,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260127
+LR  - 20260518
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -13377,7 +13926,7 @@ PMID- 34372915
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220216
-LR  - 20220216
+LR  - 20260518
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 13
@@ -16129,7 +16678,7 @@ SO  - Neurology. 2020 Dec 15;95(24):e3394-e3405. doi: 10.1212/WNL.00000000000109
 PMID- 32954321
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250530
+LR  - 20260518
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 2
@@ -20807,7 +21356,7 @@ PMID- 29848387
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20190530
-LR  - 20201109
+LR  - 20260518
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 6
@@ -25336,7 +25885,7 @@ PMID- 26733254
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20161213
-LR  - 20260127
+LR  - 20260518
 IS  - 1558-1497 (Electronic)
 IS  - 0197-4580 (Print)
 IS  - 0197-4580 (Linking)
@@ -26472,7 +27021,7 @@ PMID- 26354989
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160125
-LR  - 20250827
+LR  - 20260518
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Print)
 IS  - 0028-3878 (Linking)
@@ -27806,7 +28355,7 @@ PMID- 25527265
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150504
-LR  - 20151119
+LR  - 20260518
 IS  - 1526-632X (Electronic)
 IS  - 0028-3878 (Linking)
 VI  - 84
@@ -28544,6 +29093,7 @@ AID - 10.1016/j.bandc.2014.07.007 [doi]
 PST - ppublish
 SO  - Brain Cogn. 2014 Nov;91:28-34. doi: 10.1016/j.bandc.2014.07.007. Epub 2014 Sep 3.
 
+
 PMID- 25189117
 OWN - NLM
 STAT- MEDLINE
@@ -29238,7 +29788,7 @@ PMID- 24972706
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141106
-LR  - 20250529
+LR  - 20260518
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -29546,7 +30096,6 @@ AID - awu174 [pii]
 AID - 10.1093/brain/awu174 [doi]
 PST - ppublish
 SO  - Brain. 2014 Sep;137(Pt 9):2444-55. doi: 10.1093/brain/awu174. Epub 2014 Jun 26.
-
 
 PMID- 24908169
 OWN - NLM
