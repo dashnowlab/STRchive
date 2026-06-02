@@ -232,6 +232,17 @@
       "in_text_citations": true,
       "multiline": true
     },
+    "detection": {
+      "section": "Locus",
+      "title": "Detection",
+      "description": "Known methods used to detect and size expansions, with citations in the format e.g. [@doi:12345; @pmid:12345]. This could include information on which methods accurately detect, size, and resolve loci, as well as methods known to be inaccurate.",
+      "examples": [
+        "RP-PCR has detected expansions, while long-read sequencing fully resolves size and structure [@pmid:12345]"
+      ],
+      "type": ["string", "null"],
+      "in_text_citations": true,
+      "multiline": true
+    },
     "mechanism": {
       "section": "Locus",
       "title": "Mechanism",
