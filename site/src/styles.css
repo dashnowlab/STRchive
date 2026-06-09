@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 30rem;
+  --breakpoint-md: 55rem;
+  --breakpoint-lg: 70rem;
+
+  --color-*: initial;
+
+  --color-black: hsl(280, 5%, 0%);
+  --color-dark-gray: hsl(280, 5%, 20%);
+  --color-gray: hsl(280, 5%, 50%);
+  --color-light-gray: hsl(280, 5%, 95%);
+  --color-off-white: hsl(280, 5%, 98%);
+  --color-white: hsl(280, 5%, 100%);
+
+  --color-primary: hsl(190, 60%, 45%);
+  --color-secondary: hsl(5, 70%, 60%);
+  --color-tertiary: hsl(320, 50%, 60%);
+  --color-quaternary: hsl(40, 70%, 60%);
+
+  --color-worst: hsl(0, 50%, 35%);
+  --color-bad: hsl(10, 60%, 60%);
+  --color-warn: hsl(40, 70%, 60%);
+  --color-okay: hsl(205, 50%, 70%);
+  --color-good: hsl(175, 60%, 40%);
+  --color-best: hsl(180, 80%, 25%);
+
+  --color-shadow: #00000020;
+
+  --shadow-*: initial;
+  --shadow-md: 0 0 10px var(--color-shadow), 2px 2px 4px var(--color-shadow);
+
+  --radius-*: initial;
+  --radius-md: 5px;
+
+  --font-sans: "Barlow", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --font-thin: 200;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 600;
+}
+
+@layer base {
+  html {
+    @apply bg-white font-sans leading-normal font-normal text-black underline-offset-2;
+    font-size: 105%;
+  }
+
+  body {
+    @apply flex min-h-screen flex-col;
+  }
+
+  main {
+    @apply flex grow flex-col;
+  }
+
+  header,
+  footer,
+  section {
+    @apply even:bg-off-white flex flex-col items-center gap-10 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
+  }
+
+  header,
+  footer {
+    --width: 300;
+  }
+
+  section {
+    --width: 200;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl tracking-wide uppercase;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  b {
+    @apply font-bold;
+  }
+
+  a {
+    @apply text-primary wrap-break-word underline transition hover:text-current;
+  }
+
+  img,
+  svg {
+    @apply shrink-0;
+  }
+
+  svg {
+    @apply overflow-visible;
+  }
+
+  p {
+    @apply leading-loose;
+  }
+
+  blockquote {
+    @apply bg-light-gray max-w-full rounded-md p-8;
+  }
+
+  label {
+    @apply relative inline-flex items-center gap-4;
+
+    & > span {
+      @apply inline-flex items-center gap-2;
+    }
+
+    &:has([required]) > span::after {
+      @apply text-secondary content-["*"];
+    }
+
+    &:has(input, textarea, select) {
+      @apply cursor-pointer;
+    }
+  }
+
+  input[type="checkbox"] {
+    @apply cursor-pointer;
+  }
+
+  button,
+  select {
+    @apply hover:text-primary inline-flex cursor-pointer appearance-none items-center justify-center transition;
+  }
+
+  p > button,
+  p > [tabindex] {
+    @apply underline decoration-dashed underline-offset-2;
+  }
+
+  ul,
+  ol {
+    @apply list-[">"] pl-8 leading-loose;
+  }
+
+  li {
+    @apply pl-2;
+
+    &::marker {
+      color: color-mix(in srgb, currentColor, transparent 50%);
+    }
+  }
+
+  hr {
+    @apply bg-light-gray h-0.5 border-none;
+  }
+
+  table {
+    @apply border-collapse;
+  }
+
+  th {
+    @apply border-light-gray border-b-2 px-2 py-4 align-bottom;
+  }
+
+  td {
+    @apply px-2 py-4;
+  }
+
+  thead tr {
+    background: var(--color-off-white);
+  }
+
+  tbody tr {
+    @apply even:bg-off-white odd:bg-white;
+  }
+
+  code {
+    @apply bg-light-gray rounded-md px-2 py-1 font-mono;
+  }
+
+  dl {
+    --cols: 3;
+    @apply grid grid-cols-[repeat(var(--cols),auto_auto)];
+  }
+
+  dt,
+  dd {
+    @apply inline-flex px-4 py-2;
+  }
+
+  dt {
+    @apply text-gray font-bold;
+  }
+
+  dd {
+    @apply mr-4;
+
+    &:empty::after {
+      @apply content-["—"];
+    }
+  }
+
+  .icon {
+    @apply h-[1em] w-[unset];
+  }
+
+  [aria-disabled] {
+    @apply pointer-events-none cursor-not-allowed opacity-50 grayscale;
+  }
+}
+
+@utility full {
+  --width: 9999;
+}
+
+@utility table-scroll {
+  @apply w-full overflow-x-auto rounded-md shadow-md;
+}
+
+@utility box {
+  @apply bg-light-gray inline-flex flex-col items-center gap-2.5 rounded-md px-5 py-2.5;
+}

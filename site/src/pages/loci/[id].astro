@@ -63,7 +63,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   <section>
     <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
 
-    <div class="row">
+    <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
       {
         !!locus.evidence?.length &&
           locus.evidence?.map((evidence) => (
@@ -131,7 +131,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     <div class="identifiers">
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
-          <div class="col">
+          <div class="flex max-w-full flex-col items-center gap-4">
             <div class="heading">
               <Icon />
               <span>{name}</span>
@@ -166,7 +166,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     <Heading client:load level={2}>Disease</Heading>
     {
       !!locus.disease_tags?.length && (
-        <div class="row">
+        <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
           {locus.disease_tags?.map((tag) => (
             <Tag
               value={tag}
@@ -495,7 +495,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
         {gnomad[id].reliable ? (
           <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
         ) : (
-          <p class="center">
+          <p class="text-center text-balance">
             <em>
               Pathogenic genotype frequency data is not displayed for this locus
               because a substantial number of large alleles failed manual review
@@ -515,7 +515,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
           References
         </Heading>
 
-        <p class="center">
+        <p class="text-center text-balance">
           Direct supporting references for info on this page.
         </p>
 
@@ -537,11 +537,11 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
         </Heading>
 
         {!!locus.additional_literature.length && (
-          <p class="center">Additional literature related to this locus.</p>
+          <p class="text-center text-balance">Additional literature related to this locus.</p>
         )}
 
         {hasRawSearch && (
-          <p class="center">
+          <p class="text-center text-balance">
             <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}>
               Raw PubMed search results
             </Link>{" "}
@@ -567,161 +567,3 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     console.debug(locus);
   </script>
 </Layout>
-
-<style>
-  .boxes {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .box {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-    border-radius: var(--rounded);
-    background: var(--light-gray);
-    overflow-wrap: anywhere;
-  }
-
-  .box > :first-child svg {
-    opacity: 0.5;
-  }
-
-  .wide {
-    /* grid-column-end: span 2; */
-    max-width: calc(50% - 10px);
-  }
-
-  @media (max-width: 400px) {
-    .wide {
-      max-width: unset;
-    }
-  }
-
-  .box > :first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color: var(--gray);
-    font-weight: var(--bold);
-  }
-
-  .fraction {
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
-  }
-
-  .fraction > * {
-    position: relative;
-  }
-
-  .fraction > :nth-child(1) {
-    top: -0.5em;
-  }
-
-  .fraction > :nth-child(2) {
-    color: var(--gray);
-  }
-
-  .fraction > :nth-child(3) {
-    top: 0.5em;
-  }
-
-  .allele-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: max-content;
-    gap: 20px;
-  }
-
-  .allele-list > :first-child {
-    grid-column: 1 / -1;
-  }
-
-  @media (max-width: 600px) {
-    .allele-list {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .benign {
-    background: color-mix(in srgb, var(--primary), white 90%);
-  }
-
-  .pathogenic {
-    background: color-mix(in srgb, var(--secondary), white 90%);
-  }
-
-  .unknown {
-    background: color-mix(in srgb, var(--tertiary), white 90%);
-  }
-
-  .interruption {
-    background: color-mix(in srgb, var(--quaternary), white 90%);
-  }
-
-  .heading {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: var(--bold);
-  }
-
-  .heading svg {
-    opacity: 0.5;
-  }
-
-  .gene-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
-    place-content: center;
-    place-items: center;
-    gap: 10px 20px;
-  }
-
-  .identifiers {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    gap: 40px;
-    text-align: left;
-  }
-
-  .identifiers > * {
-    align-items: flex-start;
-  }
-
-  .identifier-list {
-    display: grid;
-    grid-template-columns: auto auto;
-    place-content: flex-start;
-    place-items: flex-start;
-    gap: 5px 20px;
-  }
-
-  .identifier-list > :nth-child(odd) {
-    color: var(--black);
-    text-decoration: none;
-  }
-
-  .identifier-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .citations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    align-items: flex-start;
-    gap: 20px;
-  }
-</style>

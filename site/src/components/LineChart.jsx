@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import clsx from "clsx";
 import { fitViewBox } from "@/util/dom";
 import { lerp } from "@/util/math";
-import classes from "./LineChart.module.css";
 
 /** basic 2d line chart */
 const LineChart = ({
@@ -61,7 +60,7 @@ const LineChart = ({
   return (
     <svg
       ref={ref}
-      className={clsx(className, classes.chart)}
+      className={clsx(className, "h-full max-w-full overflow-visible")}
       style={{
         fontSize: fontSize + "px",
       }}

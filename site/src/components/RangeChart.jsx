@@ -1,6 +1,5 @@
 import { truncate } from "lodash-es";
 import { EChart } from "@kbox-labs/react-echarts";
-import classes from "./RangeChart.module.css";
 
 /** chart that shows values as points and ranges as bars */
 const RangeChart = ({
@@ -15,7 +14,7 @@ const RangeChart = ({
   return (
     <EChart
       height={50 + values.length * 40}
-      className={classes.chart}
+      className="w-full"
       grid={{ containLabel: true }}
       renderer="svg"
       textStyle={{ fontFamily: "inherit", color: "var(--black)" }}
@@ -87,7 +86,7 @@ const RangeChart = ({
       tooltip={{
         trigger: "axis",
         formatter: ([series]) =>
-          `<div class="col ${classes.tooltip}">
+          `<div class="flex max-w-full flex-col items-center gap-4 leading-normal">
             ${tooltip(series.dataIndex)}
           </div>`,
       }}

@@ -1,0 +1,43 @@
+{
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro",
+        "plugins": ["prettier-plugin-astro"]
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    },
+    {
+      "files": "*.(astro|js|jsx|ts|tsx|mdx)",
+      "options": {
+        "plugins": [
+          "prettier-plugin-astro",
+          "@ianvs/prettier-plugin-sort-imports"
+        ],
+        "importOrder": [
+          "<TYPES>^react",
+          "<TYPES>^[^~/.]",
+          "<TYPES>^~/",
+          "<TYPES>^/",
+          "<TYPES>^./",
+          "<TYPES>^../",
+          "<TYPES>",
+          "^react",
+          "^[^~/.]",
+          "^~/",
+          "^/",
+          "^./",
+          "^../"
+        ],
+        "importOrderParserPlugins": ["typescript", "jsx", "importAssertions"],
+        "htmlWhitespaceSensitivity": "strict"
+      }
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 import { cloneElement, Fragment, useMemo } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
+import Button from "@/components/Button";
+import ComboBox from "@/components/ComboBox";
+import Heading from "@/components/Heading";
+import Help from "@/components/Help";
+import NumberBox from "@/components/NumberBox";
+import Select from "@/components/Select";
+import TextBox from "@/components/TextBox";
+import { makeList } from "@/util/format";
+import { get, join, remove, set, split } from "@sagold/json-pointer";
+import clsx from "clsx";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import {
   cloneDeep,
@@ -9,16 +19,6 @@ import {
   range,
   uniq,
 } from "lodash-es";
-import { get, join, remove, set, split } from "@sagold/json-pointer";
-import Button from "@/components/Button";
-import ComboBox from "@/components/ComboBox";
-import Heading from "@/components/Heading";
-import Help from "@/components/Help";
-import NumberBox from "@/components/NumberBox";
-import Select from "@/components/Select";
-import TextBox from "@/components/TextBox";
-import { makeList } from "@/util/format";
-import classes from "./SchemaForm.module.css";
 
 /** form automatically generated from json schema */
 const SchemaForm = ({ schema, sections, data, onChange, children }) => {
@@ -206,7 +206,7 @@ const Field = ({
 
   /** error component to show */
   const error = isError ? (
-    <span className={classes.error}>
+    <span className="col-span-full -mt-2.5 overflow-wrap-break-word  text-secondary">
       {fieldErrors
         .map(({ code, data, message }) => {
           /** prettify error message */
@@ -261,7 +261,11 @@ const Field = ({
   ) : null;
 
   /** field control to show */
-  let control = <span className={classes.error}>missing control</span>;
+  let control = (
+    <span className="col-span-full -mt-2.5 overflow-wrap-break-word  text-secondary">
+      missing control
+    </span>
+  );
 
   /** ref function */
   const ref = (el) => {
@@ -274,8 +278,17 @@ const Field = ({
   if (types.includes("object"))
     /** object group */
     control = (
-      <div className={classes.object}>
-        {level > 0 && <div className={classes.heading}>{label}</div>}
+      <div
+        className={clsx(
+          "col-span-full grid w-full items-center gap-4 [grid-template-columns:auto_minmax(200px,1fr)] max-[600px]:[grid-template-columns:auto] [&>label]:contents empty:hidden",
+          level > 0 && "rounded-md p-5 shadow-md",
+        )}
+      >
+        {level > 0 && (
+          <div className="col-span-full flex items-center gap-2.5 self-start ">
+            {label}
+          </div>
+        )}
         {Object.keys(node.schema.properties).map((key) => {
           return (
             <Field
@@ -298,8 +311,10 @@ const Field = ({
     const items = get(data, path)?.length ?? 0;
 
     control = (
-      <div className={classes.array}>
-        <div className={classes.heading}>{label}</div>
+      <div className="col-span-full grid w-full grid-flow-row-dense items-center gap-4 rounded-md p-5 shadow-md [grid-template-columns:minmax(200px,1fr)_auto]">
+        <div className="col-span-full flex items-center gap-2.5 self-start ">
+          {label}
+        </div>
         {range(items).map((index) => (
           <Fragment key={index}>
             <Field
@@ -312,7 +327,7 @@ const Field = ({
               setData={setData}
               errors={errors}
             />
-            <div className={classes.actions}>
+            <div className="col-start-2 flex flex-wrap items-center [&>*]:min-w-10">
               <Button
                 disabled={index === 0}
                 data-tooltip="Move up"

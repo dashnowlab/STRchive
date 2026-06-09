@@ -4,7 +4,6 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 import Button from "@/components/Button";
-import classes from "./Popover.module.css";
 
 /** button that triggers floating panel of arbitrary content */
 const Popover = ({ label, button, children }) => (
@@ -17,7 +16,7 @@ const Popover = ({ label, button, children }) => (
     </label>
 
     <PopoverPanel
-      className={classes.panel}
+      className="flex min-w-[var(--button-width)] flex-col gap-[5px] rounded-md bg-white p-2.5 shadow-md"
       anchor={{ to: "bottom", gap: 2, padding: 10 }}
     >
       {children}

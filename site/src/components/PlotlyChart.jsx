@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import Plotly from "plotly.js-dist";
-import classes from "./PlotlyChart.module.css";
 
 /** plotly chart that supports any plotly options */
 const PlotlyChart = ({ data, layout, ...props }) => {
@@ -18,7 +17,13 @@ const PlotlyChart = ({ data, layout, ...props }) => {
     });
   }, []);
 
-  return <div ref={ref} className={classes.chart} {...props}></div>;
+  return (
+    <div
+      ref={ref}
+      className="w-full min-w-full rounded-md shadow-md"
+      {...props}
+    ></div>
+  );
 };
 
 export default PlotlyChart;

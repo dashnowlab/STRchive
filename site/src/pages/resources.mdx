@@ -7,7 +7,6 @@ import { FaCompassDrafting } from "react-icons/fa6";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Link from "@/components/Link";
-import styles from "./_resources.module.css";
 
 <section>
 
@@ -18,9 +17,9 @@ import styles from "./_resources.module.css";
 </section>
 
 <section>
-  <div class={styles.grid}>
+  <div class="grid w-full grid-cols-[repeat(auto-fit,minmax(min(400px,100%),1fr))] gap-10  [&>*]:items-start">
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
       <Heading client:load level={2}>Computational Methods</Heading>
 
       A selection of computational methods that we have either developed or
@@ -29,7 +28,7 @@ import styles from "./_resources.module.css";
       Tanudisastro et al. (2024)</Link>.
     </div>
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
     <Heading client:load level={3}>Short-read genotyping</Heading>
 
       - <Link to="https://github.com/Illumina/ExpansionHunter">ExpansionHunter</Link>
@@ -37,14 +36,14 @@ import styles from "./_resources.module.css";
       - <Link to="https://github.com/gymreklab/gangstr">gangSTR</Link>
     </div>
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
     <Heading client:load level={3}>Short-read novel locus detection</Heading>
 
       - <Link to="https://github.com/quinlan-lab/STRling">STRling</Link>
       - <Link to="https://github.com/Illumina/ExpansionHunterDenovo">ExpansionHunter Denovo</Link>
     </div>
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
     <Heading client:load level={3}>Long-read genotyping</Heading>
 
       - <Link to="https://github.com/PacificBiosciences/trgt">TRGT</Link>
@@ -55,9 +54,9 @@ import styles from "./_resources.module.css";
 </section>
 
 <section>
-  <div class={styles.grid}>
+  <div class="grid w-full grid-cols-[repeat(auto-fit,minmax(min(400px,100%),1fr))] gap-10  [&>*]:items-start">
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
     <Heading client:load level={2}>Disease Repeat Catalogs</Heading>
 
       - <Link to="/loci/#downloads">STRchive disease loci: TRGT, extended BED and JSON formats</Link>
@@ -65,7 +64,7 @@ import styles from "./_resources.module.css";
       - <Link to="https://stripy.org/expansionhunter-catalog-creator">STRipy disease loci: ExpansionHunter format</Link>
     </div>
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
     <Heading client:load level={2}>Genome Repeat Catalogs</Heading>
 
       - <Link to="https://trexplorer.broadinstitute.org/">TR Explorer: Explore genome-wide TR catalogs</Link>
@@ -74,7 +73,7 @@ import styles from "./_resources.module.css";
       - <Link to="https://github.com/PacificBiosciences/trgt/blob/main/repeats/repeat_catalog.hg38.bed">174,293 polymorphic STRs: TRGT format</Link>
     </div>
 
-    <div class="col">
+    <div class="flex max-w-full flex-col items-center gap-4">
     <Heading client:load level={2}>Databases</Heading>
 
       - <Link to="https://gnomad.broadinstitute.org/short-tandem-repeats">gnomAD: Tandem Repeats</Link>
@@ -134,7 +133,7 @@ To generate TRGT repeat definitions, we further extended the above coordinates t
   Blueprint for STR evaluation/interpretation
 </Heading>
 
-<p class="center">With current resources relevant to each point.</p>
+<p class="text-center text-balance">With current resources relevant to each point.</p>
 
 <Button to="/blueprint.html" design="bubble" newTab>
   <FaCompassDrafting />

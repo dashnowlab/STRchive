@@ -92,7 +92,7 @@ const cols = uniq(map(catalogs, "genome"));
   <section>
     <Heading client:load level={1}><LiaBarcodeSolid />Loci</Heading>
 
-    <div class="row">
+    <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
       <span> Tandem repeat loci associated with Mendelian diseases. </span>
 
       <Button to={`${repo}/tree/main/data`} design="bubble">
@@ -125,7 +125,7 @@ const cols = uniq(map(catalogs, "genome"));
           {
             rows.map((row) => (
               <tr>
-                <td>
+                <td class="w-[35%] ">
                   {row.link ? (
                     <Link to={row.link}>
                       <strong>{row.primary}</strong>
@@ -140,7 +140,7 @@ const cols = uniq(map(catalogs, "genome"));
                 </td>
                 {cols.map((col) => (
                   <td>
-                    <div class="buttons">
+                    <div class="flex flex-wrap justify-center gap-[5px]">
                       {filter(
                         catalogs,
                         (catalog) =>
@@ -172,10 +172,10 @@ const cols = uniq(map(catalogs, "genome"));
   <section class="full">
     <Heading client:load level={2}><FaChartLine />Plots</Heading>
 
-    <p class="center">High-level, visual overview of loci.</p>
+    <p class="text-center text-balance">High-level, visual overview of loci.</p>
 
     <div class="charts">
-      <div class="col">
+      <div class="flex max-w-full flex-col items-center gap-4">
         <Heading client:load level={3}
           ><LuChartGantt />Pathogenic Size Range</Heading
         >
@@ -186,7 +186,7 @@ const cols = uniq(map(catalogs, "genome"));
         />
       </div>
 
-      <div class="col">
+      <div class="flex max-w-full flex-col items-center gap-4">
         <Heading client:load level={3}
           ><LuChartCandlestick />Age of Onset</Heading
         >
@@ -200,16 +200,3 @@ const cols = uniq(map(catalogs, "genome"));
   </section>
 </Layout>
 
-<style>
-  .downloads td:first-child {
-    width: 35%;
-    text-align: left;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-  }
-</style>

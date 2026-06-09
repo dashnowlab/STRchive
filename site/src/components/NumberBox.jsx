@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { sortBy, uniq } from "lodash-es";
-import classes from "./NumberBox.module.css";
 
 /** number input with label */
 const NumberBox = ({
@@ -16,7 +15,10 @@ const NumberBox = ({
     {label && <span>{label}</span>}
     <input
       type="number"
-      className={clsx(className, classes.input)}
+      className={clsx(
+        className,
+        "min-h-10 rounded-md bg-white px-[15px] py-[7.5px] [box-shadow:inset_0_0_0_2px_var(--color-dark-gray)] [field-sizing:content]",
+      )}
       value={typeof value === "number" && !Number.isNaN(value) ? value : ""}
       onChange={(event) => {
         let newValue = event.target.value;

@@ -9,7 +9,6 @@ import {
 } from "@headlessui/react";
 import Button from "@/components/Button";
 import { preserveScroll } from "@/util/dom";
-import classes from "./Select.module.css";
 
 /** dropdown select with label */
 const Select = ({
@@ -60,26 +59,29 @@ const Select = ({
           return (
             /** https://github.com/tailwindlabs/headlessui/issues/3597 */
             <div style={{ display: "contents" }}>
-              <ListboxButton as={Button} className={classes.select}>
-                <span className={clsx(!selected && classes.secondary)}>
+              <ListboxButton
+                as={Button}
+                className="relative flex min-h-10 min-w-10 grow items-center gap-2.5 rounded-md bg-light-gray"
+              >
+                <span className={clsx("grow", !selected && "text-gray")}>
                   {selected || "No Selection"}
                 </span>
                 <FaAngleDown />
               </ListboxButton>
 
               <ListboxOptions
-                className={classes.options}
+                className="flex w-[var(--button-width)] flex-col rounded-md bg-white shadow-md"
                 anchor={{ to: "bottom", gap: 2, padding: 10 }}
               >
                 {options.map((option, index) => (
                   <ListboxOption
                     key={index}
-                    className={classes.option}
+                    className="flex cursor-pointer items-center gap-2.5 px-2.5 py-[5px] transition data-[focus]:bg-light-gray hover:bg-light-gray"
                     value={option.value}
                     data-tooltip={option.tooltip}
                   >
                     <FaCheck
-                      className={classes.icon}
+                      className="text-primary"
                       style={{
                         opacity: (
                           multi
@@ -90,7 +92,7 @@ const Select = ({
                           : 0,
                       }}
                     />
-                    <span className={clsx(!option.label && classes.secondary)}>
+                    <span className={clsx(!option.label && "text-gray")}>
                       {option.label || "No Selection"}
                     </span>
                   </ListboxOption>

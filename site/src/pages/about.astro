@@ -1,5 +1,4 @@
 ---
-import Layout from "@/layouts/Layout.astro";
 import { FaGithub } from "react-icons/fa6";
 import {
   LuBadgeInfo,
@@ -8,13 +7,14 @@ import {
   LuMail,
   LuUsers,
 } from "react-icons/lu";
-import { kebabCase } from "lodash-es";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import { team } from "@/data/team";
+import Layout from "@/layouts/Layout.astro";
 import { repo } from "@/layouts/meta";
+import { kebabCase } from "lodash-es";
 ---
 
 <Layout title="About">
@@ -26,7 +26,7 @@ import { repo } from "@/layouts/meta";
   <section>
     <Heading client:load level={2}><LuMail />Contact</Heading>
 
-    <p class="center">
+    <p class="text-center text-balance">
       To get in touch about STRchive, use the contact buttons on <strong
         >any page</strong
       >, found in the <button data-spotlight="#corner-contact"
@@ -39,13 +39,12 @@ import { repo } from "@/layouts/meta";
     <script>
       import { spotlight } from "@/util/dom";
 
-      document
-        .querySelectorAll("[data-spotlight]")
-        .forEach((element) =>
-          element.addEventListener("click", () =>
-            spotlight(element.dataset.spotlight),
-          ),
+      document.querySelectorAll("[data-spotlight]").forEach((element) => {
+        const target = element as HTMLElement;
+        element.addEventListener("click", () =>
+          spotlight(target.dataset.spotlight),
         );
+      });
     </script>
   </section>
 
@@ -80,7 +79,9 @@ import { repo } from "@/layouts/meta";
       on GitHub:
     </p>
 
-    <div class="row">
+    <div
+      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+    >
       <Button to={repo} design="bubble">
         <FaGithub /><span>GitHub</span>
       </Button>
@@ -90,11 +91,20 @@ import { repo } from "@/layouts/meta";
   <section>
     <Heading client:load level={2}><LuUsers />Team</Heading>
 
-    <div class="row">
+    <div
+      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+    >
       {
         team.map((member) => (
-          <Link className="member" to={member.link}>
-            <img src={`/images/team/${kebabCase(member.name)}.jpg`} alt="" />
+          <Link
+            className="flex w-[200px] flex-col p-2.5 no-underline"
+            to={member.link}
+          >
+            <img
+              class="mb-2.5 w-full rounded-full shadow-md transition hover:scale-105 hover:saturate-0"
+              src={`/images/team/${kebabCase(member.name)}.jpg`}
+              alt=""
+            />
             <b>{member.name}</b>
             <span>{member.role}</span>
             <span>{member.affiliation}</span>
@@ -104,28 +114,3 @@ import { repo } from "@/layouts/meta";
     </div>
   </section>
 </Layout>
-
-<style>
-  .member {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    padding: 10px;
-    text-decoration: none;
-  }
-
-  .member > img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 999px;
-    box-shadow: var(--box-shadow);
-    transition:
-      filter var(--fast),
-      scale var(--fast);
-  }
-
-  .member:hover > img {
-    scale: 1.05;
-    filter: saturate(0);
-  }
-</style>

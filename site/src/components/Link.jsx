@@ -1,10 +1,9 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import classes from "./Link.module.css";
 
 const Link = ({
   to,
-  newTab = undefined,
-  arrow = undefined,
+  newTab = false,
+  arrow = false,
   children,
   ...props
 }) => {
@@ -22,8 +21,8 @@ const Link = ({
     >
       {children}
       {/* indicate third-party site with icon  */}
-      {(arrow ?? external) && (
-        <FaArrowUpRightFromSquare className={classes.icon} />
+      {(arrow ?? external) && !children && (
+        <FaArrowUpRightFromSquare className="relative top-[0.1em] ml-[0.1em] scale-75" />
       )}
     </Component>
   );

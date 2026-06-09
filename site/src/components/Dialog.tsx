@@ -1,0 +1,71 @@
+import type { ReactElement, ReactNode } from "react";
+import { cloneElement, createContext, useRef, useState } from "react";
+import { FaXmark } from "react-icons/fa6";
+import Button from "@/components/Button";
+import {
+  useClickOutside,
+  useEventListener,
+  useScrollLock,
+} from "@reactuses/core";
+
+export const DialogContext = createContext<{ isOpen: boolean }>({
+  isOpen: false,
+});
+
+type Props = {
+  trigger: ReactElement<{ onClick?: () => void }>;
+  title: string;
+  children: ReactNode;
+};
+
+export default function Dialog({ trigger, title, children }: Props) {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const boxRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [, setLocked] = useScrollLock(document.body);
+
+  const open = () => {
+    setIsOpen(true);
+    dialogRef.current?.showModal();
+    setLocked(true);
+  };
+
+  const close = () => {
+    setIsOpen(false);
+    dialogRef.current?.close();
+    setLocked(false);
+  };
+
+  useEventListener("close", () => setIsOpen(false), dialogRef);
+  useClickOutside(boxRef, close);
+
+  return (
+    <>
+      {/* eslint-disable-next-line -- erroneous, ref is being accessed on click not render */}
+      {cloneElement(trigger, { onClick: open })}
+
+      <dialog
+        ref={dialogRef}
+        className="fixed inset-0 hidden h-dvh max-h-none w-dvw max-w-none place-items-center bg-transparent backdrop:opacity-0 open:grid"
+      >
+        <div
+          ref={boxRef}
+          className="flex max-h-[calc(100dvh-var(--spacing)*20)] max-w-[calc(100dvw-var(--spacing)*20)] flex-col rounded-md bg-white text-black shadow-md"
+        >
+          <div className="flex items-center p-4 shadow-md">
+            <span className="grow font-bold text-lg">{title}</span>
+            <Button onClick={close} autoFocus>
+              <FaXmark />
+            </Button>
+          </div>
+
+          <div className="overflow-y-auto overscroll-none p-4">
+            <DialogContext.Provider value={{ isOpen }}>
+              {children}
+            </DialogContext.Provider>
+          </div>
+        </div>
+      </dialog>
+    </>
+  );
+}

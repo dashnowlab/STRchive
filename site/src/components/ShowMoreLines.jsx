@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
-import classes from "./ShowMoreLines.module.css";
 
 /** add "show more/less" control to long lines of content if needed */
 const ShowMoreLines = ({ lines = 2, children }) => {
@@ -32,9 +31,12 @@ const ShowMoreLines = ({ lines = 2, children }) => {
   return show ? (
     <div
       className={clsx(
-        classes.content,
-        expanded ? classes.expanded : classes.collapsed,
-        !expanded && "truncate-lines",
+        "[&:not(:has(:is(span,sup)))]:underline [&:not(:has(:is(span,sup)))]:decoration-dotted [&:not(:has(:is(span,sup)))]:decoration-1 [&:not(:has(:is(span,sup)))]:underline-offset-[2px] [&:has(sup)_span]:underline [&:has(sup)_span]:decoration-dotted [&:has(sup)_span]:decoration-1 [&:has(sup)_span]:underline-offset-[2px] hover:[&:not(:has(:is(span,sup)))]:no-underline hover:[&:has(sup):has(span:hover)_span]:no-underline",
+        expanded
+          ? "hover:cursor-zoom-out hover:[&:has(:is(sup):hover)]:cursor-auto"
+          : "hover:cursor-zoom-in hover:[&:has(:is(sup):hover)]:cursor-auto",
+        !expanded &&
+          "overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:var(--lines,1)]",
       )}
       style={{ "--lines": show && !expanded ? lines : undefined }}
       onClick={() => setExpanded(!expanded)}

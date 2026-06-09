@@ -3,14 +3,13 @@ import { useWindowScroll } from "@reactuses/core";
 import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
 import Dialog from "@/components/Dialog";
-import classes from "./ViewCorner.module.css";
 
 /** controls that float in corner of screen */
 const ViewCorner = () => {
   const { y } = useWindowScroll();
 
   return (
-    <div className={classes.corner}>
+    <div className="fixed bottom-2.5 right-2.5 flex flex-col gap-[5px] text-[1.1rem] [&>button]:bg-white">
       {y > 100 && (
         <Button
           design="bubble"

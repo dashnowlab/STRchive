@@ -16,7 +16,6 @@ import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
-import classes from "./LociTable.module.css";
 
 /** tags to show in table and filters */
 const filterTags = tagOptions.filter((tag) => tag.filter);
@@ -41,7 +40,9 @@ const cols = [
     key: "tag_sort",
     name: "Tags",
     render: (cell, row) => (
-      <div className={clsx("row", classes["tags-cell"])}>
+      <div
+        className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+      >
         {tagOptions
           .filter(
             ({ key, value, filter }) => filter && row[key]?.includes(value),
@@ -79,8 +80,11 @@ const cols = [
     key: "pathogenic_motif_reference_orientation",
     name: "Motif (len)",
     render: (cell) => (
-      <div className={classes.motif}>
-        <div data-tooltip={cell.join(", ")} className={classes["motif-chars"]}>
+      <div className="flex flex-wrap gap-1.25">
+        <div
+          data-tooltip={cell.join(", ")}
+          className="max-w-20 overflow-hidden text-ellipsis whitespace-nowrap"
+        >
           {cell.join(", ")}
         </div>
         <div>
@@ -199,10 +203,17 @@ const LociTable = ({ loci }) => {
     );
 
   return (
-    <div className={clsx("col", classes.table)}>
+    <div
+      className="flex w-full max-w-full flex-col items-center gap-4"
+    >
       {/* filters */}
-      <div className={clsx("row", classes.filters)}>
-        <div className="row">
+      <div
+        className={clsx(
+          "flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2",
+          "w-full",
+        )}
+      >
+        <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
           <Popover
             label="Tags"
             button={(() => {
@@ -232,7 +243,7 @@ const LociTable = ({ loci }) => {
                 key={index}
                 label={
                   <>
-                    <Icon className={classes.icon} style={{ color: bg }} />
+                    <Icon style={{ color: bg }} />
                     {label}
                   </>
                 }
@@ -248,15 +259,15 @@ const LociTable = ({ loci }) => {
           </Popover>
         </div>
 
-        <div className="row">
+        <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
           <TextBox
-            className={classes.search}
+            className="w-30!"
             placeholder="Search"
             value={search}
             onChange={setSearch}
           />
 
-          <div className={classes["motif-length"]}>
+          <div className="flex items-center gap-1.25">
             Motif length
             <NumberBox
               data-tooltip="Motif length min"
@@ -285,10 +296,10 @@ const LociTable = ({ loci }) => {
           />
         </div>
 
-        <div className={classes.spacer} />
+        <div className="grow" />
 
         {/* row count */}
-        <div className="row">
+        <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
           <strong>{filteredLoci.length.toLocaleString()} loci</strong>
           <Button
             design="plain"

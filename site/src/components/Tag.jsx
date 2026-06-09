@@ -1,7 +1,6 @@
 import { startCase } from "lodash-es";
 import Link from "@/components/Link";
 import { tagOptions } from "@/data/tags";
-import classes from "./Tag.module.css";
 
 /** tag pill link */
 const Tag = ({ value, to = "", tooltip = "", small = false }) => {
@@ -16,14 +15,14 @@ const Tag = ({ value, to = "", tooltip = "", small = false }) => {
   } = option;
   return (
     <Link
-      className={classes.tag}
+      className="flex items-center gap-[5px] rounded-full px-2.5 py-[5px] no-underline transition transition hover:opacity-75"
       to={to}
       style={
         small ? { color: bg, padding: 0 } : { backgroundColor: bg, color: text }
       }
       data-tooltip={[description, tooltip].flat().filter(Boolean).join("<br/>")}
     >
-      <Icon className={classes.icon} />
+      <Icon />
       {!small && label}
     </Link>
   );

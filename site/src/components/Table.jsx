@@ -23,7 +23,6 @@ import {
 } from "@tanstack/react-table";
 import Button from "@/components/Button";
 import Select from "@/components/Select";
-import classes from "./Table.module.css";
 
 /** options for per-page select */
 const perPageOptions = [
@@ -92,11 +91,11 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
   });
 
   return (
-    <div className={clsx("col", classes.root)}>
+    <div className="flex w-full max-w-full flex-col items-center gap-2.5">
       <div className="table-scroll">
         {/* table */}
         <table
-          className={classes.table}
+          className="min-w-full"
           aria-rowcount={table.getPrePaginationRowModel().rows.length}
           aria-colcount={cols.length}
         >
@@ -115,7 +114,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
                     {header.isPlaceholder ? null : (
                       <Button
                         disabled={!header.column.getCanSort()}
-                        className={classes.th}
+                        className="h-full w-full justify-start gap-[5px] border-none bg-transparent px-2.5 py-[5px]  text-dark-gray hover:bg-transparent hover:text-primary"
                         data-active={
                           header.column.getIsSorted() ? "" : undefined
                         }
@@ -175,7 +174,7 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
               ))
             ) : (
               <tr>
-                <td className={classes.empty} colSpan={cols.length}>
+                <td className="p-5 text-center text-dark-gray" colSpan={cols.length}>
                   No Rows
                 </td>
               </tr>
@@ -186,9 +185,17 @@ const Table = ({ cols, rows, sort = undefined, showControls = true }) => {
 
       {/* controls */}
       {showControls && (
-        <div className={clsx("row", classes.controls)}>
+        <div
+          className={clsx(
+            "flex w-full max-w-full flex-wrap items-center justify-between gap-x-5 gap-y-2 max-[600px]:flex-col",
+          )}
+        >
           {/* pagination */}
-          <div className={clsx("row", classes["control-row"])}>
+          <div
+            className={clsx(
+              "flex max-w-full flex-wrap items-center justify-center gap-0",
+            )}
+          >
             <Button
               onClick={() => table.setPageIndex(0)}
               disabled={!table.getCanPreviousPage()}

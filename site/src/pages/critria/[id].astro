@@ -66,12 +66,12 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
             Description
           </Heading>
 
-          <p class="center" set:html={parse(curation.Description)} />
+          <p class="text-center text-balance" set:html={parse(curation.Description)} />
         </>
       )
     }
 
-    <div class="row">
+    <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
       <Button to="/critria" design="bubble">
         <LuArrowLeft /><span>All CriTRia Curations</span>
       </Button>
@@ -80,7 +80,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
 
   <section>
     <Heading client:load level={2}>Genetic evidence</Heading>
-    <p class="center">
+    <p class="text-center text-balance">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"}
     </p>
@@ -92,14 +92,14 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
           evidence={curation.genetic_evidence_details ?? []}
         />
       ) : (
-        <p class="center">No genetic evidence details available.</p>
+        <p class="text-center text-balance">No genetic evidence details available.</p>
       )
     }
   </section>
 
   <section>
     <Heading client:load level={2}>Experimental evidence</Heading>
-    <p class="center">
+    <p class="text-center text-balance">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Experimental Evidence"] ?? "-"}
     </p>
@@ -111,13 +111,13 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
           evidence={curation.experimental_evidence_details ?? []}
         />
       ) : (
-        <p class="center">No experimental evidence details available.</p>
+        <p class="text-center text-balance">No experimental evidence details available.</p>
       )
     }
   </section>
 
   <section>
-    <p class="center">
+    <p class="text-center text-balance">
       Note: Maximum score caps apply at evidence type, category, and
       supercategory levels, so section totals may be lower than the raw sum of
       row scores.

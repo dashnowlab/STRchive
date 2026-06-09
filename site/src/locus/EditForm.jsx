@@ -164,7 +164,7 @@ const EditForm = ({ heading, locus }) => {
         </Alert>
 
         {storageExists && (
-          <div className="row">
+          <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
             Loaded saved draft
             <Button
               design="plain"

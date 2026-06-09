@@ -3,7 +3,6 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 import { useEventListener } from "@reactuses/core";
 import { firstInView } from "@/util/dom";
 import Button from "./Button";
-import classes from "./TableOfContents.module.css";
 
 /** all used heading elements */
 const headingSelector = "h1[id], h2[id], h3[id], h4[id]";
@@ -49,11 +48,11 @@ const TableOfContents = () => {
   if (headings.length <= 1) return <></>;
 
   return (
-    <aside className={classes.aside} aria-label="Table of contents">
-      <div className={classes.table}>
+    <aside className="sticky top-0 z-1" aria-label="Table of contents">
+      <div className="absolute top-0 flex max-w-[300px] flex-col gap-2.5 overflow-hidden rounded-br-md bg-white shadow-md">
         {/* toggle button */}
         <Button
-          className={classes.button}
+          className="justify-between"
           aria-expanded={open}
           onClick={() => setOpen(!open)}
           data-tooltip={open ? "Close" : "Open"}
@@ -64,12 +63,12 @@ const TableOfContents = () => {
 
         {/* links */}
         {open && (
-          <div ref={list} className={classes.list}>
+          <div ref={list} className="flex max-h-[40vh] flex-col overflow-y-auto">
             {headings.map(({ id, level, html }, index) => (
               <a
                 key={index}
                 data-active={id === activeId ? "" : undefined}
-                className={classes.link}
+                className="flex items-center gap-2.5 px-[15px] py-[7.5px] text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-[active]:font-bold [&_svg]:opacity-25"
                 href={`#${id}`}
                 style={{ paddingLeft: level * 15 }}
                 dangerouslySetInnerHTML={{ __html: html }}

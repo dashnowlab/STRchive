@@ -22,7 +22,10 @@ const Cited = ({ value }) => {
                   onClick={(event) => event.stopPropagation()}
                   data-tooltip={[title, authors?.join(", "), publisher]
                     .filter(Boolean)
-                    .map((line) => `<div class="truncate-lines">${line}</div>`)
+                    .map(
+                      (line) =>
+                        `<div class="overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:var(--lines,1)]">${line}</div>`,
+                    )
                     .join("")}
                 >
                   {number}

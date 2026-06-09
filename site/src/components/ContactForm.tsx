@@ -1,13 +1,8 @@
 import { useContext, useEffect } from "react";
 import { FaPaperPlane } from "react-icons/fa6";
-import { Fragment } from "react/jsx-runtime";
-import clsx from "clsx";
-import { mapValues, startCase, truncate } from "lodash-es";
-import { useLocalStorage } from "@reactuses/core";
 import { createIssue } from "@/api/issue";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
-import Collapsible from "@/components/Collapsible";
 import { DialogContext } from "@/components/Dialog";
 import Form from "@/components/Form";
 import Help from "@/components/Help";
@@ -17,7 +12,9 @@ import { repo } from "@/layouts/meta";
 import { userAgent } from "@/util/browser";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
-import classes from "./Contact.module.css";
+import { useLocalStorage } from "@reactuses/core";
+import clsx from "clsx";
+import { mapValues, startCase, truncate } from "lodash-es";
 
 /** shared schema info for user contact info */
 export const contactSchema = {
@@ -52,7 +49,7 @@ const contactFields = mapValues(
   }),
 );
 
-const ContactForm = () => {
+export default function ContactForm() {
   /** form state */
   let [name, setName] = useLocalStorage("contact-name", "");
   let [username, setUsername] = useLocalStorage("contact-username", "");
@@ -128,18 +125,22 @@ const ContactForm = () => {
   /** reset query when dialog re-opened */
   useEffect(() => {
     if (isOpen) reset();
-  }, [isOpen]);
+  }, [isOpen, reset]);
 
   return (
     <Form onSubmit={submit}>
-      <Alert type="info" className={classes.shrink}>
+      <Alert type="info" className="w-0 min-w-full">
         Want to suggest a new locus or an edit to an existing one? Use the{" "}
         <Link to="/loci/new">new locus form</Link> or go to an{" "}
         <Link to="/loci#loci">existing locus</Link> and use the{" "}
         <em>suggest edit</em> form.
       </Alert>
 
-      <div className={clsx("col", classes.form)}>
+      <div
+        className={clsx(
+          "grid grid-cols-[auto_minmax(200px,600px)] gap-4 max-sm:grid-cols-1 [&>label]:contents",
+        )}
+      >
         <TextBox {...contactFields.name} value={name} onChange={setName} />
         <TextBox
           {...contactFields.username}
@@ -165,23 +166,12 @@ const ContactForm = () => {
         />
       </div>
 
-      <Collapsible label="Details">
-        <dl>
-          {Object.entries(details).map(([key, value]) => (
-            <Fragment key={key}>
-              <dt>{key}</dt>
-              <dd>{value}</dd>
-            </Fragment>
-          ))}
-        </dl>
-      </Collapsible>
-
-      <Alert type={status || "info"} className={classes.shrink}>
+      <Alert type={status || "info"} className="w-0 min-w-full">
         {status === "" && (
           <>
             This will make a <strong>public</strong> post on{" "}
-            <Link to={repo}>our GitHub</Link> with <em>all the info above</em>.
-            You'll get a link to it once it's created.
+            <Link to={repo}>our GitHub</Link> with <em>all of the above</em> and
+            some debug info. You'll get a link to it once it's created.
           </>
         )}
         {startCase(status)}{" "}
@@ -198,6 +188,4 @@ const ContactForm = () => {
       )}
     </Form>
   );
-};
-
-export default ContactForm;
+}
