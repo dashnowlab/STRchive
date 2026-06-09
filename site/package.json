@@ -17,6 +17,7 @@
     "@kbox-labs/react-echarts": "^1.4.2",
     "@reactuses/core": "^6.3.2",
     "@sagold/json-pointer": "^7.2.1",
+    "@tailwindcss/vite": "^4.3.0",
     "@tanstack/react-table": "^8.21.3",
     "astro": "6.4.5",
     "astro-google-analytics": "^1.0.3",
@@ -32,6 +33,7 @@
     "react-dom": "^19.2.7",
     "react-icons": "^5.6.0",
     "string-strip-html": "^13.5.3",
+    "tailwindcss": "^4.3.0",
     "tippy.js": "^6.3.7",
     "ua-parser-js": "^2.0.10"
   },
