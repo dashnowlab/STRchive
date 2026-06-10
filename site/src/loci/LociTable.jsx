@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowRight, FaCheck, FaXmark } from "react-icons/fa6";
 import { LuDownload } from "react-icons/lu";
-import clsx from "clsx";
-import { countBy, map, max, min, pick, uniq } from "lodash-es";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
@@ -16,6 +14,8 @@ import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
+import clsx from "clsx";
+import { countBy, map, max, min, pick, uniq } from "lodash-es";
 
 /** tags to show in table and filters */
 const filterTags = tagOptions.filter((tag) => tag.filter);
@@ -40,9 +40,7 @@ const cols = [
     key: "tag_sort",
     name: "Tags",
     render: (cell, row) => (
-      <div
-        className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
-      >
+      <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
         {tagOptions
           .filter(
             ({ key, value, filter }) => filter && row[key]?.includes(value),
@@ -203,9 +201,7 @@ const LociTable = ({ loci }) => {
     );
 
   return (
-    <div
-      className="flex w-full max-w-full flex-col items-center gap-4"
-    >
+    <div className="flex w-full max-w-full flex-col items-center gap-4">
       {/* filters */}
       <div
         className={clsx(

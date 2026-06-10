@@ -1,19 +1,19 @@
 import { useMemo } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { LuFeather, LuSend } from "react-icons/lu";
-import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
-import { useLocalStorage } from "@reactuses/core";
 import { createPR } from "@/api/pr";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
 import { contactSchema } from "@/components/ContactForm";
 import Form from "@/components/Form";
-import Heading from "@/components/Heading";
+import { H1 } from "@/components/Heading";
 import Link from "@/components/Link";
 import SchemaForm from "@/components/SchemaForm";
 import { repo } from "@/layouts/meta";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
+import { useLocalStorage } from "@reactuses/core";
+import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
 import loci from "~/STRchive-loci.json";
 import schema from "~/STRchive-loci.schema.json";
 
@@ -153,10 +153,10 @@ const EditForm = ({ heading, locus }) => {
   return (
     <Form onSubmit={submit}>
       <section>
-        <Heading level={1}>
+        <H1>
           <LuFeather />
           {heading}
-        </Heading>
+        </H1>
 
         <Alert type="info">
           Every suggestion is reviewed by our team before inclusion in STRchive.

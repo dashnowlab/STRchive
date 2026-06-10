@@ -1,8 +1,11 @@
+import type { ReactNode } from "react";
+import type { JsonData } from "@sagold/json-pointer";
+import type { JsonError, JsonSchema, Keyword } from "json-schema-library";
 import { cloneElement, Fragment, useMemo } from "react";
 import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
 import Button from "@/components/Button";
 import ComboBox from "@/components/ComboBox";
-import Heading from "@/components/Heading";
+import { H2 } from "@/components/Heading";
 import Help from "@/components/Help";
 import NumberBox from "@/components/NumberBox";
 import Select from "@/components/Select";
@@ -20,8 +23,36 @@ import {
   uniq,
 } from "lodash-es";
 
+type SchemaNode = Partial<{
+  title: string;
+  description: string;
+  placeholder: string;
+  examples: (string | number)[];
+  type: string | string[];
+  enum: (string | number | null)[];
+  enum_descriptions: Record<string, string>;
+  minimum: number;
+  maximum: number;
+  less_than: string;
+  greater_than: string;
+  hide: boolean;
+  multiline: boolean;
+  combobox: boolean;
+}>;
+
+type Props<Schema extends JsonSchema, Data extends JsonData> = {
+  schema: Schema;
+  sections: string[];
+  data: Data;
+  onChange: (data: Data) => void;
+  children?: ReactNode;
+};
+
 /** form automatically generated from json schema */
-const SchemaForm = ({ schema, sections, data, onChange, children }) => {
+export default function SchemaForm<
+  Schema extends JsonSchema,
+  Data extends JsonData,
+>({ schema, sections, data, onChange, children }: Props<Schema, Data>) {
   /** compile schema */
   const rootNode = useMemo(
     () => compileSchema(schema, { drafts: [draft] }),
@@ -33,7 +64,8 @@ const SchemaForm = ({ schema, sections, data, onChange, children }) => {
 
   /** revalidate when data changes */
   const { errors } = useMemo(() => {
-    rootNode.context.data = data;
+    /** @ts-expect-error undocumented way to update data on root node context */
+    rootNode.context.data = data; // eslint-disable-line -- see above
     return rootNode.validate(data);
   }, [rootNode, data]);
 
@@ -43,9 +75,9 @@ const SchemaForm = ({ schema, sections, data, onChange, children }) => {
 
       {sections.map((section, index) => (
         <section key={index}>
-          <Heading level={2}>{section}</Heading>
+          <H2>{section}</H2>
 
-          <Field
+          <Field<Schema, Data>
             rootNode={rootNode}
             schema={schema}
             section={section}
@@ -58,21 +90,26 @@ const SchemaForm = ({ schema, sections, data, onChange, children }) => {
       ))}
     </>
   );
-};
-
-export default SchemaForm;
+}
 
 /** add custom keyword for validating one value less than other value */
-const lessThan = {
+const lessThan: Keyword = {
   id: "lessThan",
   keyword: "less_than",
   addValidate: () => true,
   validate: ({ node, data, pointer }) => {
     const thisValue = data;
+    /** @ts-expect-error get full data from node context */
     const fullData = node.context.data;
     const otherKey = node.schema.less_than;
     const otherValue = get(fullData, otherKey);
-    if (thisValue === null || otherValue === null) return;
+    if (
+      thisValue === null ||
+      otherValue === null ||
+      !(typeof thisValue === "number") ||
+      !(typeof otherValue === "number")
+    )
+      return;
     if (thisValue <= otherValue) return;
     return node.createError("compare-value-error", {
       pointer,
@@ -83,16 +120,23 @@ const lessThan = {
 };
 
 /** add custom keyword for validating one value greater than other value */
-const greaterThan = {
+const greaterThan: Keyword = {
   id: "greaterThan",
   keyword: "greater_than",
   addValidate: () => true,
   validate: ({ node, data, pointer }) => {
     const thisValue = data;
+    /** @ts-expect-error undocumented way toget full data from node context */
     const fullData = node.context.data;
     const otherKey = node.schema.greater_than;
     const otherValue = get(fullData, otherKey);
-    if (thisValue === null || otherValue === null) return;
+    if (
+      thisValue === null ||
+      otherValue === null ||
+      !(typeof thisValue === "number") ||
+      !(typeof otherValue === "number")
+    )
+      return;
     if (thisValue >= otherValue) return;
     return node.createError("compare-value-error", {
       pointer,
@@ -110,12 +154,18 @@ const draft = extendDraft(draft2020, {
   keywords: [lessThan, greaterThan],
 });
 
-/**
- * @param {Object} props
- * @param {import("json-schema-library").SchemaNode} props.node
- * @param {import("json-schema-library").JsonError[]} props.errors
- */
-const Field = ({
+type FieldProps<Schema extends JsonSchema, Data extends JsonData> = {
+  rootNode?: ReturnType<typeof compileSchema>;
+  schema: Schema;
+  section: string;
+  node: ReturnType<typeof compileSchema>;
+  path?: string;
+  data: Data;
+  setData: (data: Data) => void;
+  errors: JsonError[];
+};
+
+function Field<Schema extends JsonSchema, Data extends JsonData>({
   rootNode,
   schema,
   section,
@@ -124,7 +174,7 @@ const Field = ({
   data,
   setData,
   errors,
-}) => {
+}: FieldProps<Schema, Data>) {
   /** are we at top level of schema */
   const level = split(path).length;
 
@@ -147,7 +197,7 @@ const Field = ({
     hide,
     multiline,
     combobox,
-  } = node.schema;
+  } = node.schema as SchemaNode;
 
   /** explicitly hide field */
   if (hide) return;
@@ -162,7 +212,7 @@ const Field = ({
   const value = get(data, path);
 
   /** set nested data value from path */
-  const onChange = (value) => {
+  const onChange = (value: JsonData) => {
     let _data = cloneDeep(data);
     _data = set(_data, path, value);
     setData(_data);
@@ -177,7 +227,9 @@ const Field = ({
           `<ul>${examples.map((ex) => `<li>${ex}</li>`).join("")}</ul>`,
         ]
       : []),
-    ...(!isEmpty(enum_descriptions) && value in enum_descriptions
+    ...(!isEmpty(enum_descriptions) &&
+    (typeof value === "string" || typeof value === "number") &&
+    value in enum_descriptions
       ? [`${value}: ${enum_descriptions[value]}`]
       : []),
   ]
@@ -206,7 +258,7 @@ const Field = ({
 
   /** error component to show */
   const error = isError ? (
-    <span className="col-span-full -mt-2.5 overflow-wrap-break-word  text-secondary">
+    <span className="overflow-wrap-break-word col-span-full -mt-2.5 text-secondary">
       {fieldErrors
         .map(({ code, data, message }) => {
           /** prettify error message */
@@ -262,7 +314,7 @@ const Field = ({
 
   /** field control to show */
   let control = (
-    <span className="col-span-full -mt-2.5 overflow-wrap-break-word  text-secondary">
+    <span className="overflow-wrap-break-word col-span-full -mt-2.5 text-secondary">
       missing control
     </span>
   );
@@ -280,18 +332,18 @@ const Field = ({
     control = (
       <div
         className={clsx(
-          "col-span-full grid w-full items-center gap-4 [grid-template-columns:auto_minmax(200px,1fr)] max-[600px]:[grid-template-columns:auto] [&>label]:contents empty:hidden",
+          "col-span-full grid w-full grid-cols-[auto_minmax(200px,1fr)] items-center gap-4 empty:hidden max-[600px]:grid-cols-[auto] [&>label]:contents",
           level > 0 && "rounded-md p-5 shadow-md",
         )}
       >
         {level > 0 && (
-          <div className="col-span-full flex items-center gap-2.5 self-start ">
+          <div className="col-span-full flex items-center gap-2.5 self-start">
             {label}
           </div>
         )}
         {Object.keys(node.schema.properties).map((key) => {
           return (
-            <Field
+            <Field<Schema, Data>
               key={key}
               rootNode={rootNode}
               schema={schema}
@@ -311,13 +363,13 @@ const Field = ({
     const items = get(data, path)?.length ?? 0;
 
     control = (
-      <div className="col-span-full grid w-full grid-flow-row-dense items-center gap-4 rounded-md p-5 shadow-md [grid-template-columns:minmax(200px,1fr)_auto]">
-        <div className="col-span-full flex items-center gap-2.5 self-start ">
+      <div className="col-span-full grid w-full grid-flow-row-dense grid-cols-[minmax(200px,1fr)_auto] items-center gap-4 rounded-md p-5 shadow-md">
+        <div className="col-span-full flex items-center gap-2.5 self-start">
           {label}
         </div>
         {range(items).map((index) => (
           <Fragment key={index}>
-            <Field
+            <Field<Schema, Data>
               key={index}
               schema={schema}
               section={section}
@@ -327,7 +379,7 @@ const Field = ({
               setData={setData}
               errors={errors}
             />
-            <div className="col-start-2 flex flex-wrap items-center [&>*]:min-w-10">
+            <div className="col-start-2 flex flex-wrap items-center *:min-w-10">
               <Button
                 disabled={index === 0}
                 data-tooltip="Move up"
@@ -472,4 +524,4 @@ const Field = ({
       {error}
     </Fragment>
   );
-};
+}

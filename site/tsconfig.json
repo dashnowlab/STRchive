@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["../data/*"]
+      "~/*": ["../data/*"],
+      "plotly.js-dist": ["./node_modules/@types/plotly.js"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

@@ -1,12 +1,11 @@
 ---
-import Layout from "@/layouts/Layout.astro";
 import { LuArrowLeft, LuBookMarked } from "react-icons/lu";
-import { micromark } from "micromark";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
+import { H1, H2 } from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import Tag from "@/components/Tag";
 import EvidenceTable from "@/critria/EvidenceTable";
+import Layout from "@/layouts/Layout.astro";
 import { parse } from "@/util/markdown";
 import curations from "~/criTRia-curations.json";
 
@@ -27,7 +26,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading client:load level={1}><LuBookMarked />{curation.Locus_ID}</Heading>
+    <H1><LuBookMarked />{curation.Locus_ID}</H1>
 
     <dl style="--cols: 1">
       <dt>Gene</dt>
@@ -62,16 +61,19 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
     {
       curation.Description && (
         <>
-          <Heading client:load level={2}>
-            Description
-          </Heading>
+          <H2>Description</H2>
 
-          <p class="text-center text-balance" set:html={parse(curation.Description)} />
+          <p
+            class="text-center text-balance"
+            set:html={parse(curation.Description)}
+          />
         </>
       )
     }
 
-    <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
+    <div
+      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+    >
       <Button to="/critria" design="bubble">
         <LuArrowLeft /><span>All CriTRia Curations</span>
       </Button>
@@ -79,7 +81,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
   </section>
 
   <section>
-    <Heading client:load level={2}>Genetic evidence</Heading>
+    <H2>Genetic evidence</H2>
     <p class="text-center text-balance">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"}
@@ -92,13 +94,15 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
           evidence={curation.genetic_evidence_details ?? []}
         />
       ) : (
-        <p class="text-center text-balance">No genetic evidence details available.</p>
+        <p class="text-center text-balance">
+          No genetic evidence details available.
+        </p>
       )
     }
   </section>
 
   <section>
-    <Heading client:load level={2}>Experimental evidence</Heading>
+    <H2>Experimental evidence</H2>
     <p class="text-center text-balance">
       <strong>Total:</strong>
       {curation.supercategory_summary?.["Experimental Evidence"] ?? "-"}
@@ -111,7 +115,9 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
           evidence={curation.experimental_evidence_details ?? []}
         />
       ) : (
-        <p class="text-center text-balance">No experimental evidence details available.</p>
+        <p class="text-center text-balance">
+          No experimental evidence details available.
+        </p>
       )
     }
   </section>

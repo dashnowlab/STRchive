@@ -1,12 +1,20 @@
+import type { SubmitEvent } from "react";
 import { useEventListener } from "@reactuses/core";
 
+type Props = {
+  onSubmit: (
+    data: Record<string, string | number>,
+    event: SubmitEvent<HTMLFormElement>,
+  ) => void;
+};
+
 /** form wrapper around set of fields */
-const Form = ({ onSubmit, ...props }) => {
+export default function Form({ onSubmit, ...props }: Props) {
   usePreventImplicitSubmit();
 
   return (
     <form
-      style={{ display: "contents" }}
+      className="contents"
       onSubmit={(event) => {
         /** prevent page navigation */
         event.preventDefault();
@@ -15,7 +23,7 @@ const Form = ({ onSubmit, ...props }) => {
         const form = event.currentTarget;
         const formData = new FormData(form);
 
-        const data = {};
+        const data: Record<string, string | number> = {};
 
         /** transform form data into nicer format */
         for (const [key, value] of formData.entries()) {
@@ -37,9 +45,7 @@ const Form = ({ onSubmit, ...props }) => {
       {...props}
     />
   );
-};
-
-export default Form;
+}
 
 /** prevent implicit form submit */
 const usePreventImplicitSubmit = () => {

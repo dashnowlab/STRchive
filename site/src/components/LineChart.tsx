@@ -1,10 +1,21 @@
 import { useEffect, useRef } from "react";
-import clsx from "clsx";
 import { fitViewBox } from "@/util/dom";
 import { lerp } from "@/util/math";
+import clsx from "clsx";
+
+type Props = {
+  rows: { name: string; className: string; values: number[] }[];
+  xAxis: string;
+  width?: number;
+  height?: number;
+  fontSize?: number;
+  min?: number;
+  max?: number;
+  className?: string;
+};
 
 /** basic 2d line chart */
-const LineChart = ({
+export default function LineChart({
   rows,
   xAxis,
   width = 200,
@@ -13,8 +24,8 @@ const LineChart = ({
   min = undefined,
   max = undefined,
   className = "",
-}) => {
-  const ref = useRef(null);
+}: Props) {
+  const ref = useRef<SVGSVGElement>(null);
 
   /** rows with missing values filtered out */
   const filteredRows = rows.filter(({ values }) =>
@@ -25,7 +36,7 @@ const LineChart = ({
   const values = filteredRows.map((row) => row.values).flat();
   min ??= Math.min(...values);
   max ??= Math.max(...values);
-  const scale = (value) =>
+  const scale = (value: number) =>
     lerp(value, min, max, fontSize * 2, width - fontSize * 2);
 
   /** rows with derived props */
@@ -60,15 +71,14 @@ const LineChart = ({
   return (
     <svg
       ref={ref}
-      className={clsx(className, "h-full max-w-full overflow-visible")}
+      className={clsx("h-full max-w-full", className)}
       style={{
         fontSize: fontSize + "px",
       }}
     >
       {/* axis lines */}
       <path
-        fill="none"
-        stroke="var(--black)"
+        className="fill-none stroke-current"
         d={`M 0 0 L 0 ${height} L ${width} ${height}`}
       />
 
@@ -92,10 +102,10 @@ const LineChart = ({
       </text>
 
       {/* colored bars */}
-      {mappedRows.map(({ x, y, color, values: [min, max] }, index) => (
+      {mappedRows.map(({ x, y, className }, index) => (
         <rect
           key={index}
-          fill={color}
+          className={className}
           x={x[0]}
           y={y - fontSize * 0.5}
           width={x[1] - x[0]}
@@ -116,6 +126,4 @@ const LineChart = ({
       ))}
     </svg>
   );
-};
-
-export default LineChart;
+}

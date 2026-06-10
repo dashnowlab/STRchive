@@ -1,12 +1,20 @@
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import type { ComponentProps, ReactNode } from "react";
+import { LuExternalLink } from "react-icons/lu";
 
-const Link = ({
+type Props = {
+  to: string;
+  newTab?: boolean;
+  arrow?: boolean;
+  children: ReactNode;
+} & ComponentProps<"a" | "span">;
+
+export default function Link({
   to,
   newTab = false,
   arrow = false,
   children,
   ...props
-}) => {
+}: Props) {
   /** whether link is to external site, or page within this site */
   const external = !!to.match(/^(https|http|ftp|mailto)/);
 
@@ -14,18 +22,16 @@ const Link = ({
 
   return (
     <Component
-      href={to || null}
+      href={to || ""}
       // whether to open in new tab
       target={(newTab ?? external) ? "_blank" : ""}
-      {...props}
+      {...(props as ComponentProps<"a"> & ComponentProps<"span">)}
     >
       {children}
       {/* indicate third-party site with icon  */}
       {(arrow ?? external) && !children && (
-        <FaArrowUpRightFromSquare className="relative top-[0.1em] ml-[0.1em] scale-75" />
+        <LuExternalLink className="relative ml-1 scale-75" />
       )}
     </Component>
   );
-};
-
-export default Link;
+}

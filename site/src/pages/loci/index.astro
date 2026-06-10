@@ -1,18 +1,18 @@
 ---
 /** LOCI PAGE */
 
-import Layout from "@/layouts/Layout.astro";
 import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
 import { LiaBarcodeSolid } from "react-icons/lia";
 import { LuChartCandlestick, LuChartGantt, LuPlus } from "react-icons/lu";
-import { filter, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
+import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
+import Layout from "@/layouts/Layout.astro";
 import { repo, repoRaw, version } from "@/layouts/meta";
 import LociTable from "@/loci/LociTable";
+import { filter, map, uniq } from "lodash-es";
 import ageOnset from "~/plots/age-onset.json";
 import pathSize from "~/plots/path-size.json";
 import loci from "~/STRchive-loci.json";
@@ -90,9 +90,11 @@ const cols = uniq(map(catalogs, "genome"));
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading client:load level={1}><LiaBarcodeSolid />Loci</Heading>
+    <H1><LiaBarcodeSolid />Loci</H1>
 
-    <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
+    <div
+      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+    >
       <span> Tandem repeat loci associated with Mendelian diseases. </span>
 
       <Button to={`${repo}/tree/main/data`} design="bubble">
@@ -110,10 +112,10 @@ const cols = uniq(map(catalogs, "genome"));
 
   <!-- downloads -->
   <section>
-    <Heading client:load level={2}><FaArrowDown />Downloads</Heading>
+    <H2><FaArrowDown />Downloads</H2>
 
     <div class="table-scroll">
-      <table class="downloads">
+      <table>
         <thead>
           <tr>
             <th></th>
@@ -170,15 +172,13 @@ const cols = uniq(map(catalogs, "genome"));
 
   <!-- plots -->
   <section class="full">
-    <Heading client:load level={2}><FaChartLine />Plots</Heading>
+    <H2><FaChartLine />Plots</H2>
 
     <p class="text-center text-balance">High-level, visual overview of loci.</p>
 
     <div class="charts">
       <div class="flex max-w-full flex-col items-center gap-4">
-        <Heading client:load level={3}
-          ><LuChartGantt />Pathogenic Size Range</Heading
-        >
+        <H2><LuChartGantt />Pathogenic Size Range</H2>
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -187,9 +187,7 @@ const cols = uniq(map(catalogs, "genome"));
       </div>
 
       <div class="flex max-w-full flex-col items-center gap-4">
-        <Heading client:load level={3}
-          ><LuChartCandlestick />Age of Onset</Heading
-        >
+        <H2><LuChartCandlestick />Age of Onset</H2>
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}
@@ -199,4 +197,3 @@ const cols = uniq(map(catalogs, "genome"));
     </div>
   </section>
 </Layout>
-

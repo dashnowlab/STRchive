@@ -8,7 +8,7 @@ import {
   LuUsers,
 } from "react-icons/lu";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
+import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import { team } from "@/data/team";
@@ -20,11 +20,11 @@ import { kebabCase } from "lodash-es";
 <Layout title="About">
   <TableOfContents client:only="react" />
   <section>
-    <Heading client:load level={1}><LuBadgeInfo />About</Heading>
+    <H1><LuBadgeInfo />About</H1>
   </section>
 
   <section>
-    <Heading client:load level={2}><LuMail />Contact</Heading>
+    <H2><LuMail />Contact</H2>
 
     <p class="text-center text-balance">
       To get in touch about STRchive, use the contact buttons on <strong
@@ -49,7 +49,7 @@ import { kebabCase } from "lodash-es";
   </section>
 
   <section>
-    <Heading client:load level={2}><LuBookMarked />Cite</Heading>
+    <H2><LuBookMarked />Cite</H2>
 
     <blockquote>
       <span>
@@ -70,7 +70,7 @@ import { kebabCase } from "lodash-es";
   </section>
 
   <section>
-    <Heading client:load level={2}><LuHandHeart />Contribute</Heading>
+    <H2><LuHandHeart />Contribute</H2>
 
     <p>
       STRchive welcomes community contributions. An accurate and up to date
@@ -89,7 +89,7 @@ import { kebabCase } from "lodash-es";
   </section>
 
   <section>
-    <Heading client:load level={2}><LuUsers />Team</Heading>
+    <H2><LuUsers />Team</H2>
 
     <div
       class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"

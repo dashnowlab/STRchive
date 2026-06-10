@@ -8,8 +8,8 @@
   --color-*: initial;
 
   --color-black: hsl(280, 5%, 0%);
-  --color-dark-gray: hsl(280, 5%, 20%);
-  --color-gray: hsl(280, 5%, 50%);
+  --color-dark-gray: hsl(280, 5%, 30%);
+  --color-gray: hsl(280, 5%, 60%);
   --color-light-gray: hsl(280, 5%, 95%);
   --color-off-white: hsl(280, 5%, 98%);
   --color-white: hsl(280, 5%, 100%);
@@ -60,16 +60,8 @@
   header,
   footer,
   section {
-    @apply even:bg-off-white flex flex-col items-center gap-10 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
-  }
-
-  header,
-  footer {
     --width: 300;
-  }
-
-  section {
-    --width: 200;
+    @apply even:bg-off-white flex flex-col items-center gap-10 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
   }
 
   h1,
@@ -222,8 +214,12 @@
   }
 }
 
-@utility full {
+@utility width-full {
   --width: 9999;
+}
+
+@utility width-sm {
+  --width: 200;
 }
 
 @utility table-scroll {
@@ -231,5 +227,5 @@
 }
 
 @utility box {
-  @apply bg-light-gray inline-flex flex-col items-center gap-2.5 rounded-md px-5 py-2.5;
+  @apply bg-light-gray inline-flex flex-col items-center gap-2 rounded-md px-4 py-2;
 }

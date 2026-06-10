@@ -1,29 +1,26 @@
+import type { ComponentProps } from "react";
 import { useEffect, useRef } from "react";
 import Plotly from "plotly.js-dist";
 
+type Props = {
+  data: Plotly.Data[];
+  layout: Plotly.Layout;
+} & ComponentProps<"div">;
+
 /** plotly chart that supports any plotly options */
-const PlotlyChart = ({ data, layout, ...props }) => {
+export default function PlotlyChart({ data, layout, ...props }: Props) {
   const ref = useRef(null);
 
   useEffect(() => {
     if (!ref.current) return;
-    Plotly.newPlot(ref.current, {
-      data,
-      layout: {
-        ...layout,
-        margin: { l: 50, r: 50, b: 100, t: 50, pad: 4 },
-      },
-      config: { responsive: true },
-    });
-  }, []);
+    Plotly.newPlot(ref.current, data, layout, { responsive: true });
+  }, [data, layout]);
 
   return (
     <div
       ref={ref}
       className="w-full min-w-full rounded-md shadow-md"
       {...props}
-    ></div>
+    />
   );
-};
-
-export default PlotlyChart;
+}

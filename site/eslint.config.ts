@@ -11,11 +11,6 @@ import tslint from "typescript-eslint";
 export default defineConfig([
   globalIgnores(["dist", "public"]),
 
-  {
-    name: "Astro",
-    extends: astro.configs.recommended,
-  },
-
   // https://github.com/mdx-js/eslint-mdx/issues/92
   {
     name: "TypeScript",
@@ -29,7 +24,13 @@ export default defineConfig([
   },
 
   {
+    name: "Astro",
+    extends: astro.configs.recommended,
+  },
+
+  {
     name: "JavaScript",
+    files: ["**/*.{js,jsx,cjs,mjs}"],
     ...js.configs.recommended,
     rules: {
       "prefer-const": ["error", { destructuring: "all" }],

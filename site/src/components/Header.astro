@@ -12,64 +12,52 @@ const links = [
   { to: "/resources", name: "Resources" },
   { to: "/about", name: "About" },
   { to: "/critria", name: "criTRia" },
+  { to: repo, name: "GitHub", icon: FaGithub },
 ];
 ---
 
-<header
-  class="bg-black px-[max(40px,(100%-var(--content))/2)] py-[30px] text-[1.1rem] text-white"
->
+<header class="bg-black text-white">
   <nav
-    class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 max-[480px]:flex-col max-[480px]:gap-4"
+    class="flex flex-wrap items-center justify-center gap-8 max-sm:flex-col text-lg"
   >
-    <div
-      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 max-[700px]:w-full"
-    >
+    <div class="flex gap-2 items-baseline">
       {
         path !== "/" && (
           <Link
             to="/"
-            className="inline-flex h-[30px] text-white no-underline hover:text-primary"
+            className="h-6 text-white no-underline hover:text-primary"
             aria-label="Home"
           >
             <Logo className="h-full" />
           </Link>
         )
       }
-
       <Link
         to={`${repo}/blob/main/CITATION.cff`}
-        className="inline-flex text-[0.75rem] text-gray no-underline hover:text-primary"
-        arrow={false}>{version}</Link
+        className="text-sm text-gray no-underline hover:text-primary "
+        arrow={false}
       >
+        v{version}
+      </Link>
     </div>
 
     <div
-      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 max-[480px]:flex-col"
+      class="flex flex-wrap items-center justify-center gap-4 max-sm:flex-col"
     >
       {
-        links.map(({ to, name }) => (
+        links.map(({ to, name, icon: Icon }) => (
           <Link
             to={to}
             className={[
-              "relative inline-flex p-[5px] text-white no-underline hover:text-primary after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:origin-center after:scale-x-0 after:bg-current after:transition after:content-[''] hover:after:scale-x-100",
+              "relative inline-flex items-center gap-2 p-2 text-white no-underline hover:text-primary after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-center after:scale-x-0 after:bg-current after:transition after:content-[''] hover:after:scale-x-100",
               to === path ? "after:scale-x-100" : "",
             ].join(" ")}
-            aria-label="GitHub"
           >
+            {Icon && <Icon className="size-4" />}
             {name}
           </Link>
         ))
       }
     </div>
-
-    <div class="grow max-[700px]:hidden"></div>
-
-    <Link
-      to={repo}
-      className="relative inline-flex p-[5px] text-white no-underline hover:text-primary after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:origin-center after:scale-x-0 after:bg-current after:transition after:content-[''] hover:after:scale-x-100"
-      aria-label="GitHub"
-    >
-      <FaGithub />
-    </Link>
   </nav>
 </header>

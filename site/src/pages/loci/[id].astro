@@ -1,13 +1,12 @@
 ---
 /** LOCUS PAGE */
 
-import Layout from "@/layouts/Layout.astro";
 import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
 import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
 import { LuFeather } from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
+import { H1, H2 } from "@/components/Heading";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
@@ -16,6 +15,7 @@ import Tag from "@/components/Tag";
 import { deriveLocus } from "@/data/derived";
 import { getIdentifiers } from "@/data/identifiers";
 import { getInheritance } from "@/data/inheritance";
+import Layout from "@/layouts/Layout.astro";
 import { repo } from "@/layouts/meta";
 import AdditionalLiterature from "@/locus/AdditionalLiterature";
 import Citation from "@/locus/Citation";
@@ -61,9 +61,11 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
   <!-- overview -->
   <section>
-    <Heading client:load level={1}><LiaBarcodeSolid />{locus.nice_id}</Heading>
+    <H1><LiaBarcodeSolid />{locus.nice_id}</H1>
 
-    <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
+    <div
+      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+    >
       {
         !!locus.evidence?.length &&
           locus.evidence?.map((evidence) => (
@@ -163,7 +165,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
   <!-- disease info -->
   <section>
-    <Heading client:load level={2}>Disease</Heading>
+    <H2>Disease</H2>
     {
       !!locus.disease_tags?.length && (
         <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
@@ -235,12 +237,12 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
         rows={[
           {
             name: "Age of Onset",
-            color: "var(--primary)",
+            className: "fill-primary",
             values: [locus.age_onset_min, locus.age_onset_max],
           },
           {
             name: "(Typical)",
-            color: "var(--secondary)",
+            className: "fill-secondary",
             values: [locus.typ_age_onset_min, locus.typ_age_onset_max],
           },
         ]}
@@ -266,7 +268,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
   <!-- locus info -->
   <section>
-    <Heading client:load level={2}>Locus</Heading>
+    <H2>Locus</H2>
 
     <div class="boxes">
       {
@@ -353,7 +355,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     </div>
 
     <!-- allele info -->
-    <Heading client:load level={2}>Alleles</Heading>
+    <H2>Alleles</H2>
 
     <div class="allele-list">
       {
@@ -465,17 +467,17 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       rows={[
         {
           name: "Benign",
-          color: "var(--primary)",
+          className: "fill-primary",
           values: [locus.benign_min, locus.benign_max],
         },
         {
           name: "Intermediate",
-          color: "var(--tertiary)",
+          className: "fill-tertiary",
           values: [locus.intermediate_min, locus.intermediate_max],
         },
         {
           name: "Pathogenic",
-          color: "var(--secondary)",
+          className: "fill-secondary",
           values: [locus.pathogenic_min, locus.pathogenic_max],
         },
       ]}
@@ -489,9 +491,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   {
     gnomad[id] && (
       <section>
-        <Heading client:load level={2}>
-          gnomAD
-        </Heading>
+        <H2>gnomAD</H2>
         {gnomad[id].reliable ? (
           <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
         ) : (
@@ -511,9 +511,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   {
     !!locus.references.length && (
       <section>
-        <Heading client:load level={2}>
-          References
-        </Heading>
+        <H2>References</H2>
 
         <p class="text-center text-balance">
           Direct supporting references for info on this page.
@@ -532,12 +530,12 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   {
     (!!locus.additional_literature.length || hasRawSearch) && (
       <section>
-        <Heading client:load level={2}>
-          Additional Literature
-        </Heading>
+        <H2>Additional Literature</H2>
 
         {!!locus.additional_literature.length && (
-          <p class="text-center text-balance">Additional literature related to this locus.</p>
+          <p class="text-center text-balance">
+            Additional literature related to this locus.
+          </p>
         )}
 
         {hasRawSearch && (
