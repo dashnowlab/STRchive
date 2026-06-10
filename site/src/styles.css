@@ -222,10 +222,6 @@
   --width: 200;
 }
 
-@utility table-scroll {
-  @apply w-full overflow-x-auto rounded-md shadow-md;
-}
-
 @utility box {
   @apply bg-light-gray inline-flex flex-col items-center gap-2 rounded-md px-4 py-2;
 }

@@ -5,7 +5,7 @@ import xUrl from "@/assets/x.svg?inline";
 import clsx from "clsx";
 
 type Props = {
-  label?: ReactNode;
+  label: ReactNode;
   checked: boolean | "mixed";
   onChange?: (checked: boolean | "mixed") => void;
   tooltip?: string;

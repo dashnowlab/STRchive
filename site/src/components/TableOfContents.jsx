@@ -49,7 +49,7 @@ const TableOfContents = () => {
 
   return (
     <aside className="sticky top-0 z-1" aria-label="Table of contents">
-      <div className="absolute top-0 flex max-w-[300px] flex-col gap-2.5 overflow-hidden rounded-br-md bg-white shadow-md">
+      <div className="absolute top-0 flex max-w-[300px] flex-col gap-2 overflow-hidden rounded-br-md bg-white shadow-md">
         {/* toggle button */}
         <Button
           className="justify-between"
@@ -68,7 +68,7 @@ const TableOfContents = () => {
               <a
                 key={index}
                 data-active={id === activeId ? "" : undefined}
-                className="flex items-center gap-2.5 px-[15px] py-[7.5px] text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-[active]:font-bold [&_svg]:opacity-25"
+                className="flex items-center gap-2 px-[15px] py-[7.5px] text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-[active]:font-bold [&_svg]:opacity-25"
                 href={`#${id}`}
                 style={{ paddingLeft: level * 15 }}
                 dangerouslySetInnerHTML={{ __html: html }}

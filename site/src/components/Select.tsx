@@ -1,17 +1,38 @@
+import type { ElementType, ReactNode } from "react";
 import { useRef } from "react";
-import { FaAngleDown, FaCheck } from "react-icons/fa6";
-import clsx from "clsx";
+import { LuCheck, LuChevronDown } from "react-icons/lu";
+import Button from "@/components/Button";
+import { preserveScroll } from "@/util/dom";
 import {
   Listbox,
   ListboxButton,
   ListboxOption,
   ListboxOptions,
 } from "@headlessui/react";
-import Button from "@/components/Button";
-import { preserveScroll } from "@/util/dom";
+import clsx from "clsx";
+
+type Single = {
+  multi?: false;
+  value?: string;
+  defaultValue?: string;
+  onChange: (value: string) => void;
+};
+
+type Multi = {
+  multi: true;
+  value?: string[];
+  defaultValue?: string[];
+  onChange: (value: string[]) => void;
+};
+
+type Props = {
+  label: ReactNode;
+  options: { value: string; label?: ReactNode; tooltip?: string }[];
+  tooltip?: string;
+} & (Single | Multi);
 
 /** dropdown select with label */
-const Select = ({
+export default function Select({
   label,
   multi = false,
   options,
@@ -19,8 +40,8 @@ const Select = ({
   value,
   onChange,
   tooltip,
-}) => {
-  const labelRef = useRef(null);
+}: Props) {
+  const labelRef = useRef<HTMLLabelElement>(null);
 
   /** track open state */
   const isOpen = useRef(false);
@@ -28,9 +49,9 @@ const Select = ({
   return (
     <label ref={labelRef} data-tooltip={tooltip}>
       {label && <span>{label}</span>}
-      <Listbox
+      <Listbox<ElementType, string | string[]>
         value={value}
-        onChange={onChange}
+        onChange={onChange as (value: string | string[]) => void}
         multiple={multi}
         defaultValue={defaultValue}
       >
@@ -40,8 +61,8 @@ const Select = ({
           isOpen.current = open;
 
           /** label for selected value */
-          let selected = "";
-          if (multi) {
+          let selected: ReactNode = "";
+          if (Array.isArray(value)) {
             if (value.length === 0) selected = "";
             else if (value.length === options.length) selected = "All selected";
             else if (value.length === 1)
@@ -58,29 +79,29 @@ const Select = ({
 
           return (
             /** https://github.com/tailwindlabs/headlessui/issues/3597 */
-            <div style={{ display: "contents" }}>
+            <div className="contents">
               <ListboxButton
                 as={Button}
-                className="relative flex min-h-10 min-w-10 grow items-center gap-2.5 rounded-md bg-light-gray"
+                className="relative flex min-h-10 min-w-10 grow items-center gap-2 rounded-md bg-light-gray"
               >
                 <span className={clsx("grow", !selected && "text-gray")}>
                   {selected || "No Selection"}
                 </span>
-                <FaAngleDown />
+                <LuChevronDown />
               </ListboxButton>
 
               <ListboxOptions
-                className="flex w-[var(--button-width)] flex-col rounded-md bg-white shadow-md"
+                className="flex w-(--button-width) flex-col rounded-md bg-white shadow-md"
                 anchor={{ to: "bottom", gap: 2, padding: 10 }}
               >
                 {options.map((option, index) => (
                   <ListboxOption
                     key={index}
-                    className="flex cursor-pointer items-center gap-2.5 px-2.5 py-[5px] transition data-[focus]:bg-light-gray hover:bg-light-gray"
+                    className="flex cursor-pointer items-center gap-2 px-2 py-4 transition hover:bg-light-gray data-focus:bg-light-gray"
                     value={option.value}
                     data-tooltip={option.tooltip}
                   >
-                    <FaCheck
+                    <LuCheck
                       className="text-primary"
                       style={{
                         opacity: (
@@ -104,6 +125,4 @@ const Select = ({
       </Listbox>
     </label>
   );
-};
-
-export default Select;
+}

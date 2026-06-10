@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { JsonData } from "@sagold/json-pointer";
 import type { JsonError, JsonSchema, Keyword } from "json-schema-library";
 import { cloneElement, Fragment, useMemo } from "react";
-import { FaArrowDown, FaArrowUp, FaPlus, FaTrash } from "react-icons/fa6";
+import { LuArrowDown, LuArrowUp, LuPlus, LuTrash } from "react-icons/lu";
 import Button from "@/components/Button";
 import ComboBox from "@/components/ComboBox";
 import { H2 } from "@/components/Heading";
@@ -333,11 +333,11 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
       <div
         className={clsx(
           "col-span-full grid w-full grid-cols-[auto_minmax(200px,1fr)] items-center gap-4 empty:hidden max-[600px]:grid-cols-[auto] [&>label]:contents",
-          level > 0 && "rounded-md p-5 shadow-md",
+          level > 0 && "rounded-md p-4 shadow-md",
         )}
       >
         {level > 0 && (
-          <div className="col-span-full flex items-center gap-2.5 self-start">
+          <div className="col-span-full flex items-center gap-2 self-start">
             {label}
           </div>
         )}
@@ -363,8 +363,8 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
     const items = get(data, path)?.length ?? 0;
 
     control = (
-      <div className="col-span-full grid w-full grid-flow-row-dense grid-cols-[minmax(200px,1fr)_auto] items-center gap-4 rounded-md p-5 shadow-md">
-        <div className="col-span-full flex items-center gap-2.5 self-start">
+      <div className="col-span-full grid w-full grid-flow-row-dense grid-cols-[minmax(200px,1fr)_auto] items-center gap-4 rounded-md p-4 shadow-md">
+        <div className="col-span-full flex items-center gap-2 self-start">
           {label}
         </div>
         {range(items).map((index) => (
@@ -394,7 +394,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
                   setData(_data);
                 }}
               >
-                <FaArrowUp />
+                <LuArrowUp />
               </Button>
               <Button
                 disabled={index === items - 1}
@@ -410,7 +410,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
                   setData(_data);
                 }}
               >
-                <FaArrowDown />
+                <LuArrowDown />
               </Button>
               <Button
                 data-tooltip="Remove"
@@ -420,7 +420,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
                   setData(_data);
                 }}
               >
-                <FaTrash />
+                <LuTrash />
               </Button>
             </div>
           </Fragment>
@@ -444,7 +444,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
             setData(_data);
           }}
         >
-          <FaPlus />
+          <LuPlus />
           <span>Add</span>
         </Button>
       </div>

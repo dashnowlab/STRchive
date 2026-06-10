@@ -1,8 +1,14 @@
+import type { ComponentProps, ReactNode } from "react";
 import { useState } from "react";
 import Button from "@/components/Button";
 
+type Props = {
+  items: ReactNode[];
+  limit?: number;
+} & ComponentProps<"button">;
+
 /** add "show more/less" control to group of items if needed */
-const ShowMoreItems = ({ items, limit = 9 }) => {
+export default function ShowMoreItems({ items, limit = 9, ...props }: Props) {
   /** whether to show all items */
   const [expanded, setExpanded] = useState(false);
 
@@ -12,9 +18,9 @@ const ShowMoreItems = ({ items, limit = 9 }) => {
       {items.length > limit && (
         <Button
           design="plain"
-          className="col-span-full"
           onClick={() => setExpanded(!expanded)}
           aria-expanded={expanded}
+          {...props}
         >
           {expanded
             ? "Show Less"
@@ -23,6 +29,4 @@ const ShowMoreItems = ({ items, limit = 9 }) => {
       )}
     </>
   );
-};
-
-export default ShowMoreItems;
+}

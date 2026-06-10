@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { FaPaperPlane } from "react-icons/fa6";
+import { LuSend } from "react-icons/lu";
 import { createIssue } from "@/api/issue";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
@@ -182,7 +182,7 @@ export default function ContactForm() {
 
       {status === "" && (
         <Button design="plain" type="submit">
-          <FaPaperPlane />
+          <LuSend />
           <span>Submit</span>
         </Button>
       )}

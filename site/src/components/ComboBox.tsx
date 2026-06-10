@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
-import { FaAngleDown } from "react-icons/fa6";
+import { LuChevronDown } from "react-icons/lu";
 import Button from "@/components/Button";
 import {
   Combobox,
@@ -82,7 +82,7 @@ export default function ComboBox({
                   as={Button}
                   className="absolute right-0 grid size-10 place-items-center transition"
                 >
-                  <FaAngleDown />
+                  <LuChevronDown />
                 </ComboboxButton>
               </div>
               <ComboboxOptions
