@@ -312,6 +312,16 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
           </div>
         )
       }
+      {
+        locus.detection && (
+          <div class="box wide">
+            <div>Detection</div>
+            <ShowMoreLines client:load lines={3}>
+              <Cited client:load value={locus.detection} />
+            </ShowMoreLines>
+          </div>
+        )
+      }
     </div>
 
     <div class="boxes">
