@@ -1989,7 +1989,7 @@
   "Description": "FRA12A is a rare, folate-sensitive chromosomal fragile site on chromosome 12 associated with intellectual developmental disorder, FRA12A type. The DIP2B CGG repeat expansion causes this folate-sensitive site and is associated with a broad phenotypic range, including intellectual disability, ataxia/movement disorder, and epilepsy; cardiovascular associations have also been reported but were not scored and are noted for completeness. For this curation, the neurodevelopmental and neurologic presentations (intellectual disability, ataxia/movement disorder, and epilepsy) were lumped as a single phenotypic spectrum, which supports the current score. If these phenotypes are treated as distinct entities, the evidence strength and resulting score may differ. Patients across multiple independent families and cohorts provide inheritance and functional support. Mechanistically, repeat expansions are associated with promoter hypermethylation, altered regulatory activity, and changes in DIP2B expression. Case-control studies report enrichment of DIP2B expansions in ataxia cohorts (OR = 2.8) and cardiovascular disease populations (OR = 2.7), and computational analyses support biological relevance through conservation and a predicted interaction with the DMAP1 methylation complex.",
   "Source": "criTRia",
   "SOP_version": "criTRia v0",
-  "Manual_evidence_level": null,
+  "Manual_evidence_level": "Disputed",
   "genetic_evidence_details": [
   {
     "Evidence type": "Probands",
@@ -2001,6 +2001,17 @@
     "evidence_max_score": 6,
     "category_max_score": 6,
     "publication_dates": ["2025-03-01", "2007-02-01", "2021-01-01"]
+  },
+  {
+    "Evidence type": "Allele",
+    "Score": 0.0,
+    "Citation": "pmid:42205056",
+    "Evidence detail": "In a cohort of 14 individuals with DIP2B CGG expansions ranging from 90 to 677 repeats, no common phenotypic pattern was identified. Individuals with long expansions included healthy individuals with 152 and 616 repeats, and an individual with breast carcinoma with 677 repeats. Other reported phenotypes included neurological and non-neurological presentations such as rod-cone dystrophy, heterogeneous neurological disorders, cerebellar ataxia, epilepsy/epileptic encephalopathy, ALS, FTD, Parkinson's disease, developmental delay, and metabolic disease. The presence of highly expanded alleles in unaffected and phenotypically diverse individuals is evidence against a consistent relationship between allele size and phenotype.",
+    "evidence_category": "Collective Evidence",
+    "evidence_supercategory": "Genetic Evidence",
+    "evidence_max_score": 2,
+    "category_max_score": 3,
+    "publication_dates": ["2026-05-28"]
   },
   {
     "Evidence type": "Computational",
@@ -2027,14 +2038,14 @@
   "experimental_evidence_details": [
   {
     "Evidence type": "Regulatory impact",
-    "Score": 1.0,
-    "Citation": "pmid:37248219",
-    "Evidence detail": "Repeat expansion associated with promoter hypermethylation, loss of regulatory activity, and predicted allelic silencing. Expanded CGG repeat associated with promoter methylation and reduced DIP2B expression. Unmethylated expansion associated with overexpression.",
+    "Score": 0.5,
+    "Citation": "pmid:37248219; pmid:42205056",
+    "Evidence detail": "Repeat expansion associated with loss of regulatory activity, and predicted allelic silencing. Expanded CGG repeat associated with reduced DIP2B expression. Unmethylated expansion associated with overexpression. Hypermethylation has been detected in expanded alleles [@pmid:37248219], however another correlation analysis of long-read genomes shows no strong association between DIP2B CGG repeat length and promoter hypermethylation [@pmid:42205056].",
     "evidence_category": "Function",
     "evidence_supercategory": "Experimental Evidence",
     "evidence_max_score": 2,
     "category_max_score": 2,
-    "publication_dates": ["2023-05-29"]
+    "publication_dates": ["2023-05-29", "2026-05-28"]
   },
   {
     "Evidence type": "Patient cells",
@@ -2052,20 +2063,20 @@
     "Singular Evidence": 6.0,
     "Collective Evidence": 0.5,
     "Statistics": 3.0,
-    "Function": 1.0,
+    "Function": 0.5,
     "Functional Alteration": 0.5,
     "Models": 0,
     "Rescue": 0
   },
   "supercategory_summary":
   {
-    "Experimental Evidence": 1.5,
+    "Experimental Evidence": 1.0,
     "Genetic Evidence": 9.5
   },
-  "total_score": 11.0,
-  "publication_count": 5,
-  "publication_interval_years": 18.08,
-  "classification": "Moderate"
+  "total_score": 10.5,
+  "publication_count": 6,
+  "publication_interval_years": 19.32,
+  "classification": "Disputed"
 },
 {
   "Disease_ID": "DMD",
