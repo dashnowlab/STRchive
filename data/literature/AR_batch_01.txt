@@ -1,18 +1,367 @@
 
+PMID- 42196324
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260527
+LR  - 20260529
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 27
+IP  - 10
+DP  - 2026 May 13
+TI  - Computational Short Tandem Repeat Genotyping Reveals Clinically Relevant 
+      Expansions in a Large Turkish Neurodegeneration Disease Cohort.
+LID - 10.3390/ijms27104345 [doi]
+LID - 4345
+AB  - Short tandem repeat (STR) expansions are a major cause of neurodegenerative 
+      disorders; however, their genetic and clinical heterogeneity complicates 
+      diagnosis. STR detection remains limited in routine short-read next-generation 
+      sequencing (NGS) workflows. We evaluated the diagnostic yield and clinical 
+      utility of computational STR genotyping in a large Turkish neurodegenerative 
+      disease cohort. ExpansionHunter was applied to NGS data from 3150 patients and 
+      146 controls, targeting 15 disease-associated STR loci. To improve genotyping of 
+      poorly captured exonic regions in exome data, the default locus coverage 
+      threshold was reduced from 10x to 3x. Candidate expansions were visually 
+      inspected using REViewer and validated by conventional molecular methods. 
+      Computational analysis detected 28 pathogenic and 160 intermediate expansions. Of 
+      these, 23 were confirmed as pathogenic, and eight initially classified as 
+      intermediate were reclassified as pathogenic after conventional validation, 
+      resulting in 31 pathogenic cases across 28 families: HTT (n = 8), ATXN2 (n = 5), 
+      ATXN1 (n = 4), DMPK (n = 3), PABPN1 (n = 3), TBP (n = 2), and single cases in AR, 
+      ATN1, and CACNA1A. Lowering the coverage threshold markedly increased genotyping 
+      rates at low-coverage loci in exome data, particularly in ATXN2. Genetic findings 
+      were largely consistent with clinical pre-diagnosis and the additional diagnostic 
+      yield was 0.95%. These findings support integrating STR analysis into routine 
+      neurogenetic diagnostics.
+FAU - Khojakulov, Zakhiriddin
+AU  - Khojakulov Z
+AUID- ORCID: 0000-0002-7771-8956
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Palvadeau, Robin J
+AU  - Palvadeau RJ
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Kovancilar-Koc, Muge
+AU  - Kovancilar-Koc M
+AUID- ORCID: 0009-0006-7125-1159
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Atay, Irmak
+AU  - Atay I
+AUID- ORCID: 0009-0007-3284-7790
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahbaz, Irmak
+AU  - Sahbaz I
+AUID- ORCID: 0000-0001-8816-9158
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tekgul, Seyma
+AU  - Tekgul S
+AUID- ORCID: 0000-0001-5223-5627
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahin, Ayca
+AU  - Sahin A
+AUID- ORCID: 0000-0002-0948-6495
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Badakal, Esmer Zeynep Duru
+AU  - Badakal EZD
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Ciftci, Vildan
+AU  - Ciftci V
+AUID- ORCID: 0000-0002-4441-6062
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Bayraktar, Elif
+AU  - Bayraktar E
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tunca, Ceren
+AU  - Tunca C
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Smolina, Natalia
+AU  - Smolina N
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Basak, Ayse Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+LA  - eng
+GR  - Suna and Inan Kirac Foundation/Suna and Inan Kirac Foundation/
+GR  - Koc university/Koc University/
+PT  - Journal Article
+DEP - 20260513
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Turkey/epidemiology
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+MH  - Female
+MH  - *Genotyping Techniques/methods
+MH  - Male
+MH  - Cohort Studies
+MH  - *DNA Repeat Expansion
+MH  - Computational Biology/methods
+PMC - PMC13207311
+OTO - NOTNLM
+OT  - ExpansionHunter
+OT  - NGS
+OT  - STR
+OT  - computational genotyping
+OT  - neurodegenerative diseases
+OT  - short tandem repeats
+COIS- The authors declare no conflicts of interest. The contributions of the NIH 
+      author(s) are considered Works of the United States Government. The findings and 
+      conclusions presented in this paper are those of the author(s) and do not 
+      necessarily reflect the views of the NIH or the U.S. Department of Health and 
+      Human Services.
+EDAT- 2026/05/27 06:33
+MHDA- 2026/05/27 06:34
+PMCR- 2026/05/13
+CRDT- 2026/05/27 01:16
+PHST- 2026/03/05 00:00 [received]
+PHST- 2026/04/04 00:00 [revised]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/27 06:34 [medline]
+PHST- 2026/05/27 06:33 [pubmed]
+PHST- 2026/05/27 01:16 [entrez]
+PHST- 2026/05/13 00:00 [pmc-release]
+AID - ijms27104345 [pii]
+AID - ijms-27-04345 [pii]
+AID - 10.3390/ijms27104345 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2026 May 13;27(10):4345. doi: 10.3390/ijms27104345.
+
+PMID- 42138244
+OWN - NLM
+STAT- Publisher
+LR  - 20260515
+IS  - 2047-2927 (Electronic)
+IS  - 2047-2919 (Linking)
+DP  - 2026 May 15
+TI  - Limited Clinical Impact of Androgen Receptor Repeat Length (CAG and GGC) in 
+      Klinefelter Syndrome: A Multivariable Analysis.
+LID - 10.1111/andr.70250 [doi]
+AB  - BACKGROUND: Klinefelter syndrome (KS) is characterized by marked phenotypic 
+      heterogeneity that might be influenced by genetic modifiers, including androgen 
+      receptor (AR) repeat length (CAGn and GGCn). The clinical relevance of these 
+      repeat lengths in patients with KS before testosterone replacement therapy (TRT) 
+      remains unclear. OBJECTIVES: To investigate the association between AR repeat 
+      length and anthropometric, hormonal, metabolic, and reproductive parameters in a 
+      well-characterized cohort of untreated adult patients with KS. MATERIALS AND 
+      METHODS: In this cross-sectional single-center study, 214 men with classical 47, 
+      XXY karyotype were evaluated prior to TRT. Clinical, biochemical, and 
+      reproductive parameters were analyzed according to AR CAGn and GGCn repeat 
+      length. Nonparametric tests, multivariable linear and logistic regression models, 
+      and interaction terms between CAGn and GGCn were tested. Standardized beta 
+      coefficients were used to compare the relative contribution of AR repeat length 
+      with major clinical determinants. RESULTS: In unadjusted analyses, CAG repeat 
+      length was associated with estradiol concentrations, whereas GGC repeat length 
+      showed associations with hematocrit, platelet count, and total cholesterol. 
+      However, most associations were characterized by small effect sizes and did not 
+      persist after multivariable adjustment for possible confounders (age, BMI, and 
+      total testosterone levels). Moreover, AR repeat length was not associated with 
+      sperm retrieval rate. Standardized beta analyses demonstrated that testosterone 
+      levels, BMI, and age accounted for the largest proportion of phenotypic 
+      variability, whereas CAGn and GGCn repeat length had minimal roles. DISCUSSION 
+      AND CONCLUSION: In untreated patients with KS, AR repeat length (CAGn and GGCn) 
+      appears to have a limited clinical impact compared with classical endocrine and 
+      metabolic determinants. These findings suggest that phenotypic variability in KS 
+      might be primarily driven by chromosomal aneuploidy and primary testicular 
+      dysfunction rather than AR repeat length.
+CI  - (c) 2026 The Author(s). Andrology published by Wiley Periodicals LLC on behalf of 
+      American Society of Andrology and European Academy of Andrology.
+FAU - Graziani, Andrea
+AU  - Graziani A
+AUID- ORCID: 0000-0002-3239-2374
+AD  - Department of Medicine, University of Padova, Padova, Italy.
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+FAU - Scala, Alberto
+AU  - Scala A
+AD  - Department of Medicine, University of Padova, Padova, Italy.
+FAU - Rocca, Maria Santa
+AU  - Rocca MS
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+FAU - Vinanzi, Cinzia
+AU  - Vinanzi C
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+FAU - Grande, Giuseppe
+AU  - Grande G
+AUID- ORCID: 0000-0003-3264-0937
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+FAU - Di Nisio, Andrea
+AU  - Di Nisio A
+AD  - Department of Psychology and Health Sciences, Pegaso University, Naples, Italy.
+FAU - Selice, Riccardo
+AU  - Selice R
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+FAU - Di Mambro, Antonella
+AU  - Di Mambro A
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+FAU - Ferlin, Alberto
+AU  - Ferlin A
+AUID- ORCID: 0000-0001-5817-8141
+AD  - Department of Medicine, University of Padova, Padova, Italy.
+AD  - Department of Systems Medicine, Unit of Andrology and Reproductive Medicine, 
+      University Hospital of Padova, Padova, Italy.
+LA  - eng
+PT  - Journal Article
+DEP - 20260515
+PL  - England
+TA  - Andrology
+JT  - Andrology
+JID - 101585129
+SB  - IM
+OTO - NOTNLM
+OT  - CAG
+OT  - GGC
+OT  - Klinefelter syndrome
+OT  - androgen receptor
+OT  - hypogonadism
+OT  - testicular biopsy
+EDAT- 2026/05/15 17:37
+MHDA- 2026/05/15 17:37
+CRDT- 2026/05/15 07:53
+PHST- 2026/04/16 00:00 [revised]
+PHST- 2026/03/13 00:00 [received]
+PHST- 2026/04/20 00:00 [accepted]
+PHST- 2026/05/15 17:37 [medline]
+PHST- 2026/05/15 17:37 [pubmed]
+PHST- 2026/05/15 07:53 [entrez]
+AID - 10.1111/andr.70250 [doi]
+PST - aheadofprint
+SO  - Andrology. 2026 May 15. doi: 10.1111/andr.70250.
+
+PMID- 42070078
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260503
+LR  - 20260509
+IS  - 1941-5923 (Electronic)
+IS  - 1941-5923 (Linking)
+VI  - 27
+DP  - 2026 May 3
+TI  - Progressive Proximal Muscle Weakness Due to a 51 CAG Repeat Expansion in Exon 1 
+      of the Androgen Receptor Gene: A Case Report of Kennedy Disease.
+PG  - e951080
+LID - 10.12659/AJCR.951080 [doi]
+LID - e951080
+AB  - BACKGROUND Kennedy disease, also known as spinal and bulbar muscular atrophy 
+      (SBMA), is a rare and incurable X-linked neuromuscular disorder mainly affecting 
+      men aged 30 to 60 years. Polymyositis can present similarly, but can be excluded 
+      by measuring muscle enzymes, performing muscle imaging, and electromyography. 
+      This report describes the case of a 52-year-old man with a 10-year history of 
+      progressive limb weakness due to Kennedy disease, established by genetic testing. 
+      CASE REPORT A 52-year-old man presented with a 10-year history of gradually 
+      progressive proximal limb weakness and persistently elevated creatine kinase 
+      levels ranging from 808-2300 U/L (normal 39-308 U/L). One year prior to this 
+      admission, the limb weakness had worsened, but initial electromyography, 
+      neuroimaging, and muscle biopsy showed no specific abnormalities. Despite a trial 
+      of immunosuppressive therapy due to suspected polymyositis, there was no clinical 
+      improvement. Neurological examination later revealed gynecomastia, proximal 
+      muscle atrophy, and bilateral tongue atrophy with tremor. Electromyography showed 
+      chronic neurogenic changes and reduced sensory nerve action potentials. Repeat 
+      expansion analysis identified a hemizygous pathogenic CAG repeat expansion in 
+      exon 1 of the androgen receptor gene using a short-read next-generation 
+      sequencing-based repeat detection algorithm (ExpansionHunter), with an estimated 
+      repeat number of 51 (range 50-53). At 6-month follow-up, the patient demonstrated 
+      mild progression of motor symptoms but remained functionally stable. CONCLUSIONS 
+      This report presents a rare case of Kennedy disease, initially diagnosed as 
+      polymyositis, and highlights the importance of follow-up with genetic testing 
+      when neurological and electromyography investigations are not typical for 
+      polymyositis. Early identification of Kennedy disease helps avoid unnecessary 
+      immunosuppressive treatments.
+FAU - Thi Tuong Vi, Nguyen
+AU  - Thi Tuong Vi N
+AD  - College of Health Sciences, VinUniversity, Hanoi, Vietnam.
+FAU - Huu Thanh, Nguyen
+AU  - Huu Thanh N
+AD  - College of Health Sciences, VinUniversity, Hanoi, Vietnam.
+AD  - Department of Gastroenterology, Vinmec Times City International Hospital, Hanoi, 
+      Vietnam.
+FAU - Thi Bien, Dong
+AU  - Thi Bien D
+AD  - Department of Neurology, 108 Military Central Hospital, Hanoi, Vietnam.
+FAU - Hong Quan, Nguyen
+AU  - Hong Quan N
+AD  - Department of Neurology, 108 Military Central Hospital, Hanoi, Vietnam.
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+DEP - 20260503
+PL  - United States
+TA  - Am J Case Rep
+JT  - The American journal of case reports
+JID - 101489566
+RN  - 0 (Receptors, Androgen)
+SB  - IM
+MH  - Humans
+MH  - Male
+MH  - *Bulbo-Spinal Atrophy, X-Linked/genetics/diagnosis
+MH  - Middle Aged
+MH  - *Receptors, Androgen/genetics
+MH  - *Muscle Weakness/etiology/genetics
+MH  - Electromyography
+MH  - Exons
+MH  - *Trinucleotide Repeat Expansion
+PMC - PMC13151774
+COIS- Conflict of interest: None declared
+EDAT- 2026/05/03 06:37
+MHDA- 2026/05/03 06:38
+PMCR- 2026/05/03
+CRDT- 2026/05/03 01:22
+PHST- 2026/05/03 06:38 [medline]
+PHST- 2026/05/03 06:37 [pubmed]
+PHST- 2026/05/03 01:22 [entrez]
+PHST- 2026/05/03 00:00 [pmc-release]
+AID - 951080 [pii]
+AID - 10.12659/AJCR.951080 [doi]
+PST - epublish
+SO  - Am J Case Rep. 2026 May 3;27:e951080. doi: 10.12659/AJCR.951080.
+
 PMID- 42067676
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260501
-LR  - 20260501
+LR  - 20260509
 IS  - 1590-3478 (Electronic)
+IS  - 1590-1874 (Print)
 IS  - 1590-1874 (Linking)
 VI  - 47
 IP  - 5
 DP  - 2026 May 2
 TI  - Reliability and construct validity of the Italian version of AMAT scale in SBMA 
       subjects.
-LID - 470 [pii]
 LID - 10.1007/s10072-026-09052-x [doi]
+LID - 470
 AB  - BACKGROUND: Spinal and Bulbar Muscular Atrophy (SBMA) is a rare X-linked 
       polyglutamine disorder characterized by a CAG trinucleotide repeat expansion in 
       the androgen receptor gene. This leads to progressive lower motor neuron 
@@ -99,6 +448,7 @@ MH  - *Bulbo-Spinal Atrophy, X-Linked/diagnosis/physiopathology
 MH  - Aged
 MH  - Adult
 MH  - Severity of Illness Index
+PMC - PMC13135011
 OTO - NOTNLM
 OT  - AMAT scale
 OT  - Italian translation
@@ -109,13 +459,16 @@ COIS- Declarations. Informed consent: Informed consent was obtained from all sub
       competing interests to declare.
 EDAT- 2026/05/02 00:33
 MHDA- 2026/05/02 00:34
+PMCR- 2026/05/02
 CRDT- 2026/05/01 23:18
-PHST- 2026/05/02 00:34 [medline]
-PHST- 2026/05/02 00:33 [pubmed]
 PHST- 2026/02/26 00:00 [received]
 PHST- 2026/04/15 00:00 [accepted]
+PHST- 2026/05/02 00:34 [medline]
+PHST- 2026/05/02 00:33 [pubmed]
 PHST- 2026/05/01 23:18 [entrez]
+PHST- 2026/05/02 00:00 [pmc-release]
 AID - 10.1007/s10072-026-09052-x [pii]
+AID - 9052 [pii]
 AID - 10.1007/s10072-026-09052-x [doi]
 PST - epublish
 SO  - Neurol Sci. 2026 May 2;47(5):470. doi: 10.1007/s10072-026-09052-x.
@@ -632,9 +985,8 @@ SO  - Mol Ther Nucleic Acids. 2025 Dec 11;37(1):102802. doi:
 
 PMID- 41513898
 OWN - NLM
-STAT- MEDLINE
-DCOM- 20260109
-LR  - 20260318
+STAT- In-Process
+LR  - 20260601
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -2195,7 +2547,7 @@ PMID- 39694906
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250603
-LR  - 20250603
+LR  - 20260514
 IS  - 1432-5241 (Electronic)
 IS  - 0364-216X (Linking)
 VI  - 49
@@ -4453,7 +4805,7 @@ PMID- 36797998
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230705
-LR  - 20250530
+LR  - 20260518
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -6982,7 +7334,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260127
+LR  - 20260518
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -8205,7 +8557,7 @@ PMID- 34372915
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220216
-LR  - 20220216
+LR  - 20260518
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 13
@@ -23710,6 +24062,7 @@ AID - 10.1002/mus.23413 [doi]
 PST - ppublish
 SO  - Muscle Nerve. 2012 Nov;46(5):692-7. doi: 10.1002/mus.23413. Epub 2012 Aug 31.
 
+
 PMID- 22819977
 OWN - NLM
 STAT- MEDLINE
@@ -23968,7 +24321,6 @@ AID - IBJUv38n3a9 [pii]
 AID - 10.1590/s1677-55382012000300010 [doi]
 PST - ppublish
 SO  - Int Braz J Urol. 2012 May-Jun;38(3):373-9. doi: 10.1590/s1677-55382012000300010.
-
 
 PMID- 22736030
 OWN - NLM
@@ -27261,6 +27613,7 @@ STAT- MEDLINE
 DCOM- 20090416
 LR  - 20250529
 IS  - 1529-2401 (Electronic)
+IS  - 0270-6474 (Print)
 IS  - 0270-6474 (Linking)
 VI  - 29
 IP  - 7
@@ -27371,11 +27724,14 @@ PMC - PMC2746676
 MID - NIHMS96954
 EDAT- 2009/02/21 09:00
 MHDA- 2009/04/17 09:00
+PMCR- 2009/08/18
 CRDT- 2009/02/21 09:00
 PHST- 2009/02/21 09:00 [entrez]
 PHST- 2009/02/21 09:00 [pubmed]
 PHST- 2009/04/17 09:00 [medline]
+PHST- 2009/08/18 00:00 [pmc-release]
 AID - 29/7/1987 [pii]
+AID - 3451545 [pii]
 AID - 10.1523/JNEUROSCI.4072-08.2009 [doi]
 PST - ppublish
 SO  - J Neurosci. 2009 Feb 18;29(7):1987-97. doi: 10.1523/JNEUROSCI.4072-08.2009.
@@ -41239,6 +41595,7 @@ AID - 10.1016/s0959-8049(99)00310-x [doi]
 PST - ppublish
 SO  - Eur J Cancer. 2000 Mar;36(4):533-4. doi: 10.1016/s0959-8049(99)00310-x.
 
+
 PMID- 10717003
 OWN - NLM
 STAT- MEDLINE
@@ -41486,7 +41843,6 @@ AID - S0304-3940(99)00844-7 [pii]
 AID - 10.1016/s0304-3940(99)00844-7 [doi]
 PST - ppublish
 SO  - Neurosci Lett. 1999 Dec 17;277(1):9-12. doi: 10.1016/s0304-3940(99)00844-7.
-
 
 PMID- 10637497
 OWN - NLM

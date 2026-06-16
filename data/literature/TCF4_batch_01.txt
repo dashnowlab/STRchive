@@ -1,4 +1,154 @@
 
+PMID- 42180433
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260525
+LR  - 20260525
+IS  - 1090-0535 (Electronic)
+IS  - 1090-0535 (Linking)
+VI  - 31
+DP  - 2025
+TI  - Targeted sequencing with single-molecule molecular inversion probes highlights a 
+      gap in understanding the cause of Fuchs endothelial corneal dystrophy.
+PG  - 486-500
+AB  - PURPOSE: A trinucleotide repeat expansion in TCF4 is thought to cause Fuchs 
+      endothelial corneal dystrophy (FECD) in ~70% of European patients. In addition, 
+      strong evidence exists for the involvement of rare variants in COL8A2 and SLC4A11 
+      in a small number of FECD cases, and more controversially, it has been suggested 
+      that variants in ZEB1, AGBL1, and LOXHD1 may also be involved. We screened 
+      patients without a TCF4 repeat expansion for causative variants in the other 
+      candidate FECD genes. METHODS: Genomic DNA from blood was genotyped for expansion 
+      of the CTG18.1 repeat in intron 2 of TCF4 using short-tandem repeat PCR, followed 
+      by triplet-repeat primed PCR (STR/TP-PCR). Single-molecule molecular inversion 
+      probes (smMIPs) were designed to amplify the coding exons and splice recognition 
+      sites of FECD candidate genes COL8A2, SLC4A11, ZEB1, AGBL1, and LOXHD1 using 
+      MIPGEN, and the libraries generated were sequenced on a NextSeq 2000. 
+      FASTQ-formatted sequence reads were aligned to the human reference genome with 
+      MIPVAR, and identified variants were annotated using Annovar. Rare potentially 
+      pathogenic variants (minor allele frequency </=0.01 for assumed dominant 
+      inheritance, combined annotation-dependent depletion >/=15) were confirmed by 
+      Sanger sequencing and interpreted according to American College of Medical 
+      Genetics and Genomics criteria using the Franklin by Genoox interface. RESULTS: 
+      Analysis of 114 FECD cases by STR/TP-PCR stratified the patients into FECD 
+      expansion-negative cases that had <50 trinucleotide repeats on both alleles at 
+      the CTG18.1 locus (n = 33 probands and three additional family members) and FECD 
+      expansion-positive (n = 78) cases with at least one allele harboring >/=50 repeats 
+      in size. All 36 expansion negative cases were then analyzed by smMIP targeted 
+      capture and short-read sequencing of the five other genes implicated in FECD 
+      causation. For comparison, two control groups were similarly analyzed: a subset 
+      of 29 of the expansion-positive cases whose FECD was assumed to be caused by the 
+      repeat expansion and 29 expansion-negative unaffected individuals. Across all 
+      groups, 13 variants passed filtration criteria: 1 in COL8A2, 2 in SLC4A11, 4 in 
+      AGBL1, and 6 in LOXHD1. No variants were identified in ZEB1. Eight of the 
+      variants identified were found in seven FECD expansion-negative cases, five in 
+      four FECD expansion-positive cases, and three in two non-FECD controls, with 
+      three variants appearing in both expansion-positive and expansion-negative 
+      patient groups. Statistical analysis indicated no significant enrichment of 
+      variants in expansion-negative cases compared to the other two groups (p = 0.7612 
+      and 0.3275). Only one variant (LOXHD1 NM_144612.7, c.5545G>A, p.(Gly1849Arg)), 
+      found in an expansion-negative case, was classified as likely pathogenic, while 
+      others were classed as variant of unknown significance (n = 4), likely benign (n 
+      = 4), or benign (n = 4). CONCLUSIONS: smMIPs were used for targeted screening of 
+      candidate genes implicated in FECD and proved a versatile, economic approach for 
+      prescreening before whole-exome or genome sequencing. This study confirmed the 
+      well-documented enrichment of the TCF4 repeat expansion in cases over controls 
+      but found a paucity of evidence for the involvement of variants in COL8A2, 
+      SLC4A11, ZEB1, AGBL1, or LOXHD1 in this set of expansion-negative cases, implying 
+      knowledge of the causes of FECD remains incomplete.
+CI  - Copyright (c) 2025 Molecular Vision.
+FAU - Alayed, Bushra
+AU  - Alayed B
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - Department of Medical Laboratories, College of Applied Medical Sciences, Qassim 
+      University, Buraydah, Saudi Arabia.
+FAU - Albuainain, Danah
+AU  - Albuainain D
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - Department of Anatomy, College of Medicine, Imam Abdulrahman Bin Faisal 
+      University, Dammam, Saudi Arabia.
+FAU - Siddiqui, Salina
+AU  - Siddiqui S
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - The Eye Department, St. James's University Hospital, Leeds, UK.
+FAU - Li, Weijia
+AU  - Li W
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+FAU - Hany, Ummey
+AU  - Hany U
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+FAU - Anand, Seema
+AU  - Anand S
+AD  - The Eye Department, St. James's University Hospital, Leeds, UK.
+FAU - Inglehearn, Chris F
+AU  - Inglehearn CF
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+FAU - Watson, Christopher M
+AU  - Watson CM
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+AD  - North East and Yorkshire Genomic Laboratory Hub, Central Lab, St James's 
+      University Hospital, Leeds Teaching Hospitals NHS Trust, Leeds, UK.
+FAU - Ali, Manir
+AU  - Ali M
+AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
+      University Hospital, University of Leeds, Leeds, UK.
+LA  - eng
+PT  - Journal Article
+DEP - 20251201
+PL  - United States
+TA  - Mol Vis
+JT  - Molecular vision
+JID - 9605351
+RN  - 0 (Collagen Type VIII)
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (SLC4A11 protein, human)
+RN  - 0 (TCF4 protein, human)
+RN  - 0 (COL8A2 protein, human)
+RN  - 0 (Zinc Finger E-box-Binding Homeobox 1)
+RN  - 0 (ZEB1 protein, human)
+RN  - 0 (Anion Transport Proteins)
+RN  - 0 (Antiporters)
+RN  - 0 (LOXHD1 protein, human)
+RN  - 0 (Receptors, Cell Surface)
+RN  - 0 (Carrier Proteins)
+SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics
+MH  - Collagen Type VIII/genetics
+MH  - Transcription Factor 4/genetics
+MH  - Zinc Finger E-box-Binding Homeobox 1/genetics
+MH  - Anion Transport Proteins/genetics
+MH  - Male
+MH  - Antiporters/genetics
+MH  - Female
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Receptors, Cell Surface/genetics
+MH  - Middle Aged
+MH  - Aged
+MH  - Introns
+MH  - Genotype
+MH  - Carrier Proteins
+PMC - PMC13193275
+EDAT- 2026/05/25 12:35
+MHDA- 2026/05/25 12:36
+PMCR- 2025/12/01
+CRDT- 2026/05/25 07:53
+PHST- 2025/05/24 00:00 [received]
+PHST- 2025/11/28 00:00 [accepted]
+PHST- 2026/05/25 12:36 [medline]
+PHST- 2026/05/25 12:35 [pubmed]
+PHST- 2026/05/25 07:53 [entrez]
+PHST- 2025/12/01 00:00 [pmc-release]
+AID - 39 [pii]
+PST - epublish
+SO  - Mol Vis. 2025 Dec 1;31:486-500. eCollection 2025.
+
 PMID- 42010886
 OWN - NLM
 STAT- Publisher
@@ -217,7 +367,7 @@ SO  - J Pathol. 2026 Apr 7. doi: 10.1002/path.70057.
 PMID- 41944537
 OWN - NLM
 STAT- Publisher
-LR  - 20260407
+LR  - 20260512
 IS  - 1096-9896 (Electronic)
 IS  - 0022-3417 (Linking)
 DP  - 2026 Apr 7
@@ -246,9 +396,11 @@ AD  - Department of Ophthalmology, Ross Eye Institute, Jacobs School of Medicine
 AD  - Research and Ophthalmology Services, Veterans Administration, Western New York 
       Healthcare System, Buffalo, NY, USA.
 LA  - eng
-GR  - R01EY034906/EY/NEI NIH HHS/United States
+GR  - R01 EY034906/EY/NEI NIH HHS/United States
 GR  - I01BX006272/U.S. Department of Veterans Affairs/
 GR  - NH/NIH HHS/United States
+GR  - I01 BX006272/BX/BLRD VA/United States
+GR  - R01EY034906/EY/NEI NIH HHS/United States
 PT  - Journal Article
 DEP - 20260407
 PL  - England
@@ -276,14 +428,18 @@ SO  - J Pathol. 2026 Apr 7. doi: 10.1002/path.70062.
 
 PMID- 41865104
 OWN - NLM
-STAT- Publisher
-LR  - 20260322
+STAT- MEDLINE
+DCOM- 20260506
+LR  - 20260509
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
+VI  - 16
+IP  - 1
 DP  - 2026 Mar 21
 TI  - TCF4 trinucleotide repeat expansion drives distinct proteomic signatures in Fuchs 
       endothelial corneal dystrophy.
 LID - 10.1038/s41598-026-43789-x [doi]
+LID - 14446
 AB  - The aims of this study were to use an isogenic cell model system to investigate 
       the proteomic consequences of TCF4 trinucleotide repeat expansion in Fuchs 
       endothelial corneal dystrophy (FECD) and to identify potential molecular pathways 
@@ -387,32 +543,52 @@ PL  - England
 TA  - Sci Rep
 JT  - Scientific reports
 JID - 101563288
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (TCF4 protein, human)
+RN  - 0 (Proteome)
 SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics/metabolism/pathology
+MH  - *Transcription Factor 4/genetics/metabolism
+MH  - *Trinucleotide Repeat Expansion
+MH  - Proteomics/methods
+MH  - *Proteome/genetics
+MH  - Protein Interaction Maps
+MH  - CRISPR-Cas Systems
+PMC - PMC13149823
 COIS- Competing interests: Naoki Okumura and Noriko Koizumi are co-founders of 
       ActualEyes Inc., which is developing novel treatments for Fuchs endothelial 
       corneal dystrophy. All other authors declare no competing financial interests.
 EDAT- 2026/03/22 07:35
-MHDA- 2026/03/22 07:35
+MHDA- 2026/05/07 00:33
+PMCR- 2026/03/21
 CRDT- 2026/03/22 00:20
 PHST- 2025/03/26 00:00 [received]
 PHST- 2026/03/06 00:00 [accepted]
-PHST- 2026/03/22 07:35 [medline]
+PHST- 2026/05/07 00:33 [medline]
 PHST- 2026/03/22 07:35 [pubmed]
 PHST- 2026/03/22 00:20 [entrez]
+PHST- 2026/03/21 00:00 [pmc-release]
 AID - 10.1038/s41598-026-43789-x [pii]
+AID - 43789 [pii]
 AID - 10.1038/s41598-026-43789-x [doi]
-PST - aheadofprint
-SO  - Sci Rep. 2026 Mar 21. doi: 10.1038/s41598-026-43789-x.
+PST - epublish
+SO  - Sci Rep. 2026 Mar 21;16(1):14446. doi: 10.1038/s41598-026-43789-x.
 
 PMID- 41736702
 OWN - NLM
-STAT- Publisher
-LR  - 20260225
+STAT- MEDLINE
+DCOM- 20260505
+LR  - 20260507
 IS  - 1096-9896 (Electronic)
+IS  - 0022-3417 (Print)
 IS  - 0022-3417 (Linking)
-DP  - 2026 Feb 25
+VI  - 269
+IP  - 2
+DP  - 2026 Jun
 TI  - Pathological classification of Fuchs endothelial corneal dystrophy into several 
       types and their relationships with CTG18.1 expansion repeats.
+PG  - 182-196
 LID - 10.1002/path.70044 [doi]
 AB  - Late-onset Fuchs endothelial corneal dystrophy (FECD) is the most common primary 
       disease of the corneal endothelium and the leading indication for corneal 
@@ -522,12 +698,31 @@ AD  - Ophthalmology Department, University Hospital, Saint-Etienne, France.
 CN  - French Fuchs Study Group (FFSG)
 LA  - eng
 PT  - Journal Article
+PT  - Multicenter Study
 DEP - 20260225
 PL  - England
 TA  - J Pathol
 JT  - The Journal of pathology
 JID - 0204634
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (TCF4 protein, human)
+RN  - 0 (Basic Helix-Loop-Helix Leucine Zipper Transcription Factors)
 SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology/classification/surgery
+MH  - Transcription Factor 4/genetics
+MH  - *Trinucleotide Repeat Expansion
+MH  - Male
+MH  - Aged
+MH  - Female
+MH  - Middle Aged
+MH  - Aged, 80 and over
+MH  - Descemet Membrane/pathology
+MH  - *Basic Helix-Loop-Helix Leucine Zipper Transcription Factors/genetics
+MH  - Genetic Predisposition to Disease
+MH  - Phenotype
+MH  - Endothelium, Corneal/pathology
+PMC - PMC13140138
 OTO - NOTNLM
 OT  - CTG18.1 trinucleotide repeat expansion
 OT  - Descemet's membrane
@@ -599,17 +794,20 @@ IR  - Touboul D
 FIR - Vabres, Bertrand
 IR  - Vabres B
 EDAT- 2026/02/25 10:22
-MHDA- 2026/02/25 10:22
+MHDA- 2026/05/05 12:37
+PMCR- 2026/05/05
 CRDT- 2026/02/25 04:42
 PHST- 2025/11/24 00:00 [revised]
 PHST- 2025/07/02 00:00 [received]
 PHST- 2026/01/22 00:00 [accepted]
-PHST- 2026/02/25 10:22 [medline]
+PHST- 2026/05/05 12:37 [medline]
 PHST- 2026/02/25 10:22 [pubmed]
 PHST- 2026/02/25 04:42 [entrez]
+PHST- 2026/05/05 00:00 [pmc-release]
+AID - PATH70044 [pii]
 AID - 10.1002/path.70044 [doi]
-PST - aheadofprint
-SO  - J Pathol. 2026 Feb 25. doi: 10.1002/path.70044.
+PST - ppublish
+SO  - J Pathol. 2026 Jun;269(2):182-196. doi: 10.1002/path.70044. Epub 2026 Feb 25.
 
 PMID- 41713739
 OWN - NLM
@@ -924,9 +1122,8 @@ SO  - Med Sci (Basel). 2026 Jan 7;14(1):31. doi: 10.3390/medsci14010031.
 
 PMID- 41533935
 OWN - NLM
-STAT- MEDLINE
-DCOM- 20260114
-LR  - 20260118
+STAT- In-Process
+LR  - 20260601
 IS  - 1552-5783 (Electronic)
 IS  - 0146-0404 (Print)
 IS  - 0146-0404 (Linking)
@@ -5091,7 +5288,7 @@ PMID- 36250467
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221018
-LR  - 20230324
+LR  - 20260505
 IS  - 1558-8238 (Electronic)
 IS  - 0021-9738 (Print)
 IS  - 0021-9738 (Linking)
@@ -5140,9 +5337,7 @@ FAU - Hafler, David A
 AU  - Hafler DA
 LA  - eng
 GR  - R25 NS079193/NS/NINDS NIH HHS/United States
-GR  - UL1 TR001863/TR/NCATS NIH HHS/United States
 GR  - UM1 HG009390/HG/NHGRI NIH HHS/United States
-GR  - K23 NS107624/NS/NINDS NIH HHS/United States
 GR  - KL2 TR001862/TR/NCATS NIH HHS/United States
 GR  - P01 AI039671/AI/NIAID NIH HHS/United States
 GR  - U19 AI089992/AI/NIAID NIH HHS/United States

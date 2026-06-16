@@ -142,7 +142,7 @@ PMID- 41792844
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260415
-LR  - 20260423
+LR  - 20260511
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 14
@@ -205,6 +205,10 @@ AD  - Department of Neurology, Washington University School of Medicine, Saint L
       MO, USA. weihlc@wustl.edu.
 LA  - eng
 GR  - R01 NS086810/NS/NINDS NIH HHS/United States
+GR  - R01 AG031867/AG/NIA NIH HHS/United States
+GR  - K24 AR073317/AR/NIAMS NIH HHS/United States
+GR  - P50 HD104463/HD/NICHD NIH HHS/United States
+GR  - R21 NS129096/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260306
 PL  - England
@@ -487,15 +491,20 @@ SO  - Intern Med. 2025 Oct 23. doi: 10.2169/internalmedicine.6194-25.
 
 PMID- 40645757
 OWN - NLM
-STAT- Publisher
-LR  - 20250711
+STAT- MEDLINE
+DCOM- 20260514
+LR  - 20260530
 IS  - 1468-330X (Electronic)
+IS  - 0022-3050 (Print)
 IS  - 0022-3050 (Linking)
-DP  - 2025 Jul 11
+VI  - 97
+IP  - 6
+DP  - 2026 May 14
 TI  - CGG repeat expansions in Charcot-Marie-Tooth disease: insights from the 100 000 
       Genomes Project.
-LID - jnnp-2025-336590 [pii]
+PG  - 479-482
 LID - 10.1136/jnnp-2025-336590 [doi]
+LID - e336590
 AB  - BACKGROUND: CGG expansions in NOTCH2NLC and LRP12 were recently identified as a 
       cause of Charcot-Marie-Tooth disease (CMT) in 1.2%-10.6% of genetically 
       undiagnosed patients in China, Taiwan and Japan. However, their relevance in CMT 
@@ -517,7 +526,7 @@ AB  - BACKGROUND: CGG expansions in NOTCH2NLC and LRP12 were recently identified
       non-pathogenic intermediate alleles of NOTCH2NLC and LRP12 in East Asians could 
       explain their ancestry-specific propensity to further expand into the full 
       pathogenic range.
-CI  - (c) Author(s) (or their employer(s)) 2025. Re-use permitted under CC BY. Published 
+CI  - (c) Author(s) (or their employer(s)) 2026. Re-use permitted under CC BY. Published 
       by BMJ Group.
 FAU - Bertini, Alessandro
 AU  - Bertini A
@@ -580,29 +589,47 @@ AD  - Department of Neuromuscular Diseases, UCL Queen Square Institute of Neurol
       London, UK andrea.cortese@ucl.ac.uk.
 LA  - eng
 PT  - Journal Article
-DEP - 20250711
+DEP - 20260514
 PL  - England
 TA  - J Neurol Neurosurg Psychiatry
 JT  - Journal of neurology, neurosurgery, and psychiatry
 JID - 2985191R
+RN  - 0 (NOTCH2NLC protein, human)
+RN  - 0 (LDL-Receptor Related Proteins)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Intercellular Signaling Peptides and Proteins)
 SB  - IM
+MH  - Humans
+MH  - *Charcot-Marie-Tooth Disease/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Male
+MH  - Female
+MH  - Whole Genome Sequencing
+MH  - LDL-Receptor Related Proteins/genetics
+MH  - Adult
+MH  - Asian People/genetics
+MH  - Nerve Tissue Proteins
+MH  - Intercellular Signaling Peptides and Proteins
+PMC - PMC13217079
 OTO - NOTNLM
 OT  - NEUROGENETICS
 OT  - NEUROMUSCULAR
 OT  - NEUROPATHY
 COIS- Competing interests: None declared.
 EDAT- 2025/07/12 16:44
-MHDA- 2025/07/12 16:44
+MHDA- 2026/05/15 00:31
+PMCR- 2026/05/28
 CRDT- 2025/07/11 21:13
 PHST- 2025/04/24 00:00 [received]
 PHST- 2025/06/11 00:00 [accepted]
-PHST- 2025/07/12 16:44 [medline]
+PHST- 2026/05/15 00:31 [medline]
 PHST- 2025/07/12 16:44 [pubmed]
 PHST- 2025/07/11 21:13 [entrez]
+PHST- 2026/05/28 00:00 [pmc-release]
 AID - jnnp-2025-336590 [pii]
 AID - 10.1136/jnnp-2025-336590 [doi]
-PST - aheadofprint
-SO  - J Neurol Neurosurg Psychiatry. 2025 Jul 11:jnnp-2025-336590. doi: 
+PST - epublish
+SO  - J Neurol Neurosurg Psychiatry. 2026 May 14;97(6):479-482. doi: 
       10.1136/jnnp-2025-336590.
 
 PMID- 40417202
@@ -1019,7 +1046,7 @@ PMID- 38726482
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240724
-LR  - 20241231
+LR  - 20260512
 IS  - 2167-9223 (Electronic)
 IS  - 2167-8421 (Linking)
 VI  - 25
@@ -1097,7 +1124,14 @@ AUID- ORCID: 0000-0001-6319-9473
 AD  - Macquarie University Motor Neuron Disease Research Centre, Faculty of Medicine, 
       Health and Human Sciences, Macquarie University, Sydney, NSW, 2109, Australia.
 LA  - eng
+SI  - dbGaP/phs001368.v3.p2
+SI  - dbGaP/phs001402.v3.p1
+SI  - dbGaP/phs001725.v2.p1
+SI  - dbGaP/phs001024.v5.p1
+SI  - dbGaP/phs001544.v2.p1
+SI  - dbGaP/phs001598.v2.p1
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240510
 PL  - England
 TA  - Amyotroph Lateral Scler Frontotemporal Degener
