@@ -1,2 +1,2 @@
-/// <reference path="../.astro/types.d.ts" />
-/// <reference types="vite-plugin-svgr/client" />
+import "../.astro/types.d.ts";
+import "vite-plugin-svgr/client";

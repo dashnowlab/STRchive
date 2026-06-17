@@ -36,7 +36,7 @@ export default defineConfig([
 
   {
     name: "JavaScript",
-    files: ["**/*.{js,jsx,cjs,mjs}"],
+    files: ["**/*.{ts,tsx,js,jsx}"],
     ...js.configs.recommended,
     rules: {
       "prefer-const": ["error", { destructuring: "all" }],
@@ -59,7 +59,7 @@ export default defineConfig([
 
   {
     name: "Tailwind",
-    files: ["**/*.{js,jsx,ts,tsx}"],
+    files: ["**/*.{ts,tsx,js,jsx}"],
     extends: [tailwind.configs.recommended],
     rules: {
       "better-tailwindcss/enforce-consistent-line-wrapping": [

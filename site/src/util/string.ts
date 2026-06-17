@@ -1,5 +1,5 @@
 /** shorten url text */
-export const shortenUrl = (value) => {
+export const shortenUrl = (value: string) => {
   try {
     const url = new URL(value);
     return (url.hostname + url.pathname).replace(/\/+$/, "");
@@ -9,7 +9,7 @@ export const shortenUrl = (value) => {
 };
 
 /** make string url-safe */
-export const slugify = (value) =>
+export const slugify = (value: string) =>
   value
     .toLowerCase()
     .replaceAll(/[^a-z0-9]+/g, " ")

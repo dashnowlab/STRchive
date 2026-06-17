@@ -1,11 +1,13 @@
 import { useCallback, useRef, useState } from "react";
 
 /** simple version of tanstack-query with status, error handling, de-duping */
-export const useQuery = (
+export const useQuery = <Data>(
   /** async func that returns data */
-  func,
+  func: () => Promise<Data>,
 ) => {
-  const [state, setState] = useState({ status: "" });
+  const [state, setState] = useState<{ status: string; data?: Data }>({
+    status: "",
+  });
 
   /** keep track of latest query function run */
   const latest = useRef(Symbol());

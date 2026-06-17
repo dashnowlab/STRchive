@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { maxBy } from "lodash-es";
 
 /** get git blame info of json file entry. makes assumptions about structure and formatting. */
-export const getJsonBlame = (file, regex) => {
+export const getJsonBlame = (file: string, regex: string) => {
   /** split file into lines */
   const lines = readFileSync(file, "utf-8").split("\n");
 
@@ -26,30 +26,32 @@ export const getJsonBlame = (file, regex) => {
     .toString()
     .split("\n")
     .map((line) => {
-      let [, hash, author, date] =
+      const [, hash, author, date] =
         /** extract info */
         line.match(/([A-Za-z0-9]+) \((.+) (\d\d\d\d-\d\d-\d\d)/i) ?? [];
       return { hash, author, date: new Date(date) };
     });
 
   /** get most recent blame line */
-  let { hash, author, date } = maxBy(blame, "date");
+  const { hash, author, date } = maxBy(blame, "date") ?? {};
 
   /** format date */
-  date = new Date(date).toLocaleString(undefined, { dateStyle: "medium" });
+  const formattedDate = new Date(date ?? "").toLocaleString(undefined, {
+    dateStyle: "medium",
+  });
 
   /** get project version */
   const version = getVersion(getFile("../CITATION.cff", hash));
 
-  return { start, end, line, hash, author, date, version };
+  return { start, end, line, hash, author, date: formattedDate, version };
 };
 
 /** extract version field from yaml string */
-const getVersion = (contents) =>
+const getVersion = (contents?: string) =>
   contents?.match(/^version:\s*(.+)$/im)?.[1] ?? "";
 
 /** get contents of file w/ optional hash version */
-const getFile = (file, hash) => {
+const getFile = (file: string, hash?: string) => {
   try {
     if (!hash) throw Error("no hash");
     const contents = execSync(`git show ${hash}:${file}`).toString();

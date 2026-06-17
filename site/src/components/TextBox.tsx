@@ -13,7 +13,7 @@ type Props = {
 } & (ComponentProps<"input"> | ComponentProps<"textarea">);
 
 /** text input with label */
-export function TextBox({
+export default function TextBox({
   label,
   multi,
   onChange,

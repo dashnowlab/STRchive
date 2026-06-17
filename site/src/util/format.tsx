@@ -1,7 +1,12 @@
+import type { JSX, ReactNode } from "react";
 import { Fragment } from "react/jsx-runtime";
 
 /** make english list from array */
-export const makeList = (items, Wrapper = "span", joiner = "or") => {
+export const makeList = (
+  items: ReactNode[],
+  Wrapper: keyof JSX.IntrinsicElements = "span",
+  joiner = "or",
+) => {
   items = [items].flat();
   items = items.map((item, index) => <Wrapper key={index}>{item}</Wrapper>);
   if (!items?.length) return <></>;

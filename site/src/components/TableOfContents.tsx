@@ -11,7 +11,7 @@ const headingSelector = "h1[id], h2[id], h3[id], h4[id]";
  * floating table of contents that outlines sections/headings on page. can be
  * turned on/off at route level. singleton.
  */
-export function TableOfContents() {
+export default function TableOfContents() {
   const list = useRef(null);
 
   /** open/closed state */

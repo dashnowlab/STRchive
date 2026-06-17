@@ -3,12 +3,13 @@
 ---
 
 <script>
+  import type { Instance, Props } from "tippy.js";
   import tippy from "tippy.js";
 
   /** add tooltips to any element with data-tooltip attribute */
 
   /** tippy options */
-  const options = {
+  const options: Partial<Props> = {
     delay: [100, 0],
     duration: [100, 100],
     offset: [0, 15],
@@ -33,12 +34,16 @@
     });
   };
 
+  type TippyElement = HTMLElement & {
+    _tippy?: Instance;
+  };
+
   /** update all tooltips in document */
   const updateAll = () =>
-    document.querySelectorAll("[data-tooltip]").forEach(update);
+    document.querySelectorAll<TippyElement>("[data-tooltip]").forEach(update);
 
   /**  update tippy instance */
-  const update = (element) => {
+  const update = (element: TippyElement) => {
     /** if element unmounted, remove */
     if (!element.isConnected) return element._tippy?.destroy();
 
@@ -65,41 +70,25 @@
 </script>
 
 <style is:global>
-  .tippy-box {
-    max-width: 350px;
-    padding: 10px 15px;
-    border-radius: var(--rounded);
-    background: var(--dark-gray);
-    color: var(--white);
-    overflow-wrap: break-word;
-    /* pointer-events: all; */
-  }
+  @reference "../styles.css";
 
-  .tippy-box * {
-    line-height: inherit;
+  .tippy-box {
+    @apply max-w-100 px-4 py-2 rounded-md bg-dark-gray text-white wrap-break-word;
   }
 
   .tippy-arrow {
-    z-index: -1;
+    @apply -z-10;
   }
 
   .tippy-arrow::after {
-    display: block;
-    width: 10px;
-    height: 10px;
-    translate: 0 50%;
-    rotate: 45deg;
-    background: var(--dark-gray);
-    content: "";
+    @apply block size-2 translate-y-1/2 rotate-45 bg-dark-gray content-[''];
   }
 
   [data-placement="bottom"] .tippy-arrow {
-    bottom: 100%;
+    @apply bottom-full;
   }
 
   .tippy-content {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    @apply flex flex-col gap-1;
   }
 </style>

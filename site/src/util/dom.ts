@@ -1,8 +1,8 @@
-import { debounce } from "lodash-es";
 import { sleep } from "@/util/misc";
+import { debounce } from "lodash-es";
 
 /** scroll page so that mouse stays at same position in document */
-export const preserveScroll = async (element) => {
+export const preserveScroll = async (element: HTMLElement) => {
   const oldY = element.getBoundingClientRect().top;
   await sleep(0);
   const newY = element.getBoundingClientRect().top;
@@ -10,7 +10,7 @@ export const preserveScroll = async (element) => {
 };
 
 /** fit svg viewbox to content */
-export const fitViewBox = (element, padding = 0) => {
+export const fitViewBox = (element: SVGSVGElement, padding = 0) => {
   let { x, y, width, height } = element.getBBox();
   x -= padding;
   y -= padding;
@@ -21,15 +21,15 @@ export const fitViewBox = (element, padding = 0) => {
 };
 
 /** find index of first element "in view". model behavior off of wikiwand.com. */
-export const firstInView = (elements) => {
+export const firstInView = (elements: Element[]) => {
   for (const element of elements.reverse())
     if (element.getBoundingClientRect()?.top < 100) return element;
 };
 
 /** highlight an element */
-export const spotlight = async (selector) => {
+export const spotlight = async (selector: string) => {
   const element = document.querySelector(selector);
-  if (!element) return;
+  if (!(element instanceof HTMLElement)) return;
   element.focus();
   element.scrollIntoView({ block: "center", behavior: "smooth" });
   await waitForStop(window, "scroll");
@@ -44,11 +44,11 @@ export const spotlight = async (selector) => {
 };
 
 /** wait for event to stop being emitted */
-const waitForStop = async (target, event, wait = 100) =>
+const waitForStop = async (target: EventTarget, event: string, wait = 100) =>
   new Promise(async (resolve) => {
     const listener = debounce(() => {
       target.removeEventListener(event, listener);
-      resolve();
+      resolve(true);
     }, wait);
     listener();
     target.addEventListener(event, listener);
