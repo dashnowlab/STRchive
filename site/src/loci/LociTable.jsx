@@ -7,7 +7,7 @@ import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
-import Table from "@/components/Table";
+import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
 import TextBox from "@/components/TextBox";
 import { deriveLocus } from "@/data/derived";
@@ -315,7 +315,7 @@ const LociTable = ({ loci }) => {
       </div>
 
       {/* table */}
-      <Table cols={cols} rows={filteredLoci} />
+      <Table {...defineData(filteredLoci, cols)} />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import type { CSSProperties, HTMLAttributes, ReactNode } from "react";
-import type { SortingState } from "@tanstack/react-table";
+import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
+import type { ValueOf } from "type-fest";
 import { useState } from "react";
 import {
   FaAngleLeft,
@@ -26,14 +27,23 @@ import {
 } from "@tanstack/react-table";
 import clsx from "clsx";
 
-type Props<Datum extends object> = {
-  cols: _Col<Datum>[];
-  rows: Datum[];
-  sort?: SortingState;
-  showControls?: boolean;
-};
+declare module "@tanstack/react-table" {
+  // eslint-disable-next-line
+  interface ColumnMeta<TData extends RowData, TValue> {
+    attrs?: HTMLAttributes<HTMLTableCellElement>;
+    style?: CSSProperties;
+  }
+}
 
-type Col<
+/**
+ * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
+ * https://github.com/vuejs/core/discussions/8851
+ */
+type _Column<Datum extends object> = {
+  [Key in keyof Datum]: Column<Datum, Key>;
+}[keyof Datum];
+
+type Column<
   Datum extends object = object,
   Key extends keyof Datum = keyof Datum,
 > = {
@@ -48,16 +58,50 @@ type Col<
   /** cell style */
   style?: CSSProperties;
   /** custom render function for cell */
-  render?: (cell: NoInfer<Datum[Key]>, row: Datum) => ReactNode;
+  render?: (cell: Datum[Key], row: Datum) => ReactNode;
 };
 
-/**
- * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
- * https://github.com/vuejs/core/discussions/8851
- */
-type _Col<Datum extends object> = {
-  [Key in keyof Datum]: Col<Datum, Key>;
-}[keyof Datum];
+/** helper to define both rows and columns on table in type-safe way */
+export const defineData = <Datum extends object>(
+  rows: Datum[],
+  columnFunc: (
+    column: <Key extends keyof Datum>(
+      column: Column<Datum, Key>,
+    ) => Column<Datum, Key>,
+  ) => _Column<Datum>[],
+) => {
+  const helper = createColumnHelper<Datum>();
+
+  const columns = columnFunc(
+    <Key extends keyof Datum>(column: Column<Datum, Key>) => column,
+  ).map((column, index) =>
+    helper.accessor((row) => row[column.key], {
+      id: String(index),
+      header: column.name,
+      enableSorting: column.sortable ?? true,
+      enableColumnFilter: true,
+      enableGlobalFilter: true,
+      meta: {
+        attrs: column.attrs,
+        style: column.style,
+      },
+      /** render func for cell */
+      cell: ({ cell, row }) =>
+        column.render
+          ? column.render(cell.getValue() as ValueOf<Datum>, row.original)
+          : cell.getValue(),
+    }),
+  );
+
+  return { rows, columns };
+};
+
+type Props<Datum extends object> = {
+  columns: ColumnDef<Datum, Datum[keyof Datum]>[];
+  rows: Datum[];
+  sort?: SortingState;
+  showControls?: boolean;
+};
 
 /** options for per-page select */
 const perPageOptions = [
@@ -74,7 +118,7 @@ const defaultPerPage = perPageOptions.at(-1)!;
 
 /** table component with sorting, filtering, and more */
 export default function Table<Datum extends object>({
-  cols,
+  columns,
   rows,
   sort,
   showControls = true,
@@ -82,31 +126,8 @@ export default function Table<Datum extends object>({
   /** current per-page selection */
   const [perPage] = useState(defaultPerPage.value);
 
-  /** column definitions */
-  const columnHelper = createColumnHelper<Datum>();
-  const columns = cols.map((col, index) =>
-    columnHelper.accessor((row) => row[col.key], {
-      id: String(index),
-      header: col.name,
-      enableSorting: col.sortable ?? true,
-      enableColumnFilter: true,
-      enableGlobalFilter: true,
-      meta: {
-        attrs: col.attrs,
-        style: col.style,
-      },
-      /** render func for cell */
-      cell: ({ cell, row }) =>
-        col.render
-          ? col.render?.(cell.getValue() as Datum[keyof Datum], row.original)
-          : cell.getValue(),
-    }),
-  );
-
-  /** get original col def */
-  const getCol = (id: string) => cols[Number(id)];
-
   /** tanstack table api */
+  // eslint-disable-next-line
   const table = useReactTable({
     data: rows,
     columns,
@@ -136,7 +157,7 @@ export default function Table<Datum extends object>({
         <table
           className="w-full"
           aria-rowcount={table.getPrePaginationRowModel().rows.length}
-          aria-colcount={cols.length}
+          aria-colcount={columns.length}
         >
           {/* head */}
           <thead>
@@ -146,9 +167,8 @@ export default function Table<Datum extends object>({
                   <th
                     key={header.id}
                     aria-colindex={Number(header.id) + 1}
-                    style={getCol(header.column.id)?.style}
-                    align="left"
-                    {...getCol(header.column.id)?.attrs}
+                    style={header.column.columnDef.meta?.style}
+                    {...header.column.columnDef.meta?.attrs}
                   >
                     {header.isPlaceholder ? null : (
                       <Button
@@ -199,9 +219,8 @@ export default function Table<Datum extends object>({
                   {row.getVisibleCells().map((cell) => (
                     <td
                       key={cell.id}
-                      style={getCol(cell.column.id)?.style}
-                      align="left"
-                      {...getCol(cell.column.id)?.attrs}
+                      style={cell.column.columnDef.meta?.style}
+                      {...cell.column.columnDef.meta?.attrs}
                     >
                       {flexRender(
                         cell.column.columnDef.cell,
@@ -215,7 +234,7 @@ export default function Table<Datum extends object>({
               <tr>
                 <td
                   className="p-4 text-center text-dark-gray"
-                  colSpan={cols.length}
+                  colSpan={columns.length}
                 >
                   No Rows
                 </td>

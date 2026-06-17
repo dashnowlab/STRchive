@@ -1,15 +1,15 @@
 import { FaAngleUp, FaRegEnvelope } from "react-icons/fa6";
-import { useWindowScroll } from "@reactuses/core";
 import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
 import Dialog from "@/components/Dialog";
+import { useWindowScroll } from "@reactuses/core";
 
 /** controls that float in corner of screen */
-const ViewCorner = () => {
+export default function ViewCorner() {
   const { y } = useWindowScroll();
 
   return (
-    <div className="fixed bottom-2.5 right-2.5 flex flex-col gap-[5px] text-[1.1rem] [&>button]:bg-white">
+    <div className="fixed right-2.5 bottom-2.5 flex flex-col gap-1 text-lg [&>button]:bg-white">
       {y > 100 && (
         <Button
           design="bubble"
@@ -31,6 +31,4 @@ const ViewCorner = () => {
       </Dialog>
     </div>
   );
-};
-
-export default ViewCorner;
+}
