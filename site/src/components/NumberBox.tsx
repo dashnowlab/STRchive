@@ -3,8 +3,11 @@ import { sortBy, uniq } from "lodash-es";
 
 type Props = {
   label?: string;
-  value?: number | null;
-  onChange?: (value: number | null) => void;
+  value?: number;
+  min?: number;
+  max?: number;
+  step?: number;
+  onChange?: (value: number) => void;
   snapValues?: number[];
   className?: string;
   tooltip?: string;
@@ -32,7 +35,7 @@ export default function NumberBox({
         value={typeof value === "number" && !Number.isNaN(value) ? value : ""}
         onChange={(event) => {
           const string = event.target.value;
-          if (!string.trim() || Number.isNaN(Number(string))) onChange?.(null);
+          if (!string.trim() || Number.isNaN(Number(string))) return;
           else {
             let number = Number(string);
             if (value && snapValues?.length) {

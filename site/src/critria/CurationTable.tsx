@@ -4,8 +4,10 @@ import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
 import { tagOptions } from "@/data/tags";
 
+type Curations = typeof curations;
+
 type Props = {
-  curations: typeof curations;
+  curations: Curations;
 };
 
 /** table for main critria page */
@@ -19,8 +21,8 @@ export default function CurationTable({ curations }: Props) {
 
   return (
     <Table
-      {...defineData(mappedCurations, (col) => [
-        col({
+      {...defineData(mappedCurations, (column) => [
+        column({
           key: "Gene",
           name: "Gene",
           render: (cell, row) => (
@@ -29,27 +31,27 @@ export default function CurationTable({ curations }: Props) {
             </Link>
           ),
         }),
-        col({
+        column({
           key: "Disease_ID",
           name: "Disease",
         }),
-        col({
+        column({
           key: "Inheritance",
           name: "Inheritance",
         }),
-        col({
+        column({
           key: "total_score",
           name: "Total Score",
           style: { textAlign: "center" },
         }),
-        col({
-          /** use number value so col sorted by that instead of alphabetically */
+        column({
+          /** use number value so column sorted by that instead of alphabetically */
           key: "classification_index",
           name: "Classification",
           style: { padding: 0 },
           render: (cell, row) => <Tag value={row.classification} />,
         }),
-        col({
+        column({
           key: "Date",
           name: "Date",
           render: (cell) =>
@@ -59,7 +61,7 @@ export default function CurationTable({ curations }: Props) {
               day: "numeric",
             }),
         }),
-        col({
+        column({
           key: "Source",
           name: "Source",
         }),

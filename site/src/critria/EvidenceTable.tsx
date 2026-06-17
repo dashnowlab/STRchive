@@ -3,7 +3,8 @@ import { Fragment } from "react/jsx-runtime";
 import Link from "@/components/Link";
 import Table, { defineData } from "@/components/Table";
 
-type Curation = (typeof curations)[number];
+type Curations = typeof curations;
+type Curation = Curations[number];
 
 type Props = {
   evidence:
@@ -15,10 +16,16 @@ type Props = {
 export default function EvidenceTable({ evidence }: Props) {
   return (
     <Table
-      {...defineData(evidence, (col) => [
-        col({ key: "evidence_category", name: "Evidence Category" }),
-        col({ key: "Evidence type", name: "Evidence Type" }),
-        col({
+      {...defineData(evidence, (column) => [
+        column({
+          key: "evidence_category",
+          name: "Evidence Category",
+        }),
+        column({
+          key: "Evidence type",
+          name: "Evidence Type",
+        }),
+        column({
           key: "Citation",
           name: "Citation",
           render: (cell) =>
@@ -36,8 +43,14 @@ export default function EvidenceTable({ evidence }: Props) {
                 </Fragment>
               )),
         }),
-        col({ key: "Score", name: "Score" }),
-        col({ key: "Evidence detail", name: "Evidence Detail" }),
+        column({
+          key: "Score",
+          name: "Score",
+        }),
+        column({
+          key: "Evidence detail",
+          name: "Evidence Detail",
+        }),
       ])}
     />
   );

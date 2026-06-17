@@ -1,7 +1,7 @@
 import { FaBookMedical, FaLaptopMedical } from "react-icons/fa6";
 
 /** get identifiers for object */
-export const getIdentifiers = (d: Record<string, unknown>) =>
+export const getIdentifiers = (object: Record<string, unknown>) =>
   /** list of identifier types */
   [
     {
@@ -136,7 +136,7 @@ export const getIdentifiers = (d: Record<string, unknown>) =>
           ...rest,
           links:
             /** access key field, normalize to array */
-            [d[key] ?? []]
+            [object[key] ?? []]
               .flat()
               /** normalize to string */
               .map((id) => String(id))

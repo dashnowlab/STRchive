@@ -50,7 +50,7 @@ type Column<
   /** key of row object to access as cell value */
   key: Key;
   /** label for header */
-  name: string;
+  name?: string;
   /** is sortable (default true) */
   sortable?: boolean;
   /** cell attributes */

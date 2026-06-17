@@ -10,7 +10,7 @@ type Props = {
   onChange?: (value: string) => void;
   className?: string;
   tooltip?: string;
-} & (ComponentProps<"input"> | ComponentProps<"textarea">);
+} & Omit<ComponentProps<"input"> | ComponentProps<"textarea">, "onChange">;
 
 /** text input with label */
 export default function TextBox({

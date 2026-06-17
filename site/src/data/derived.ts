@@ -26,7 +26,7 @@ export const newThreshold = 2;
 export const deriveLocus = (
   locus: Locus,
   loci: Loci,
-  citations: Citation[],
+  citations?: Citation[],
 ) => {
   /** get position string */
   const position = (assembly: "hg19" | "hg38" | "t2t", base = 0) =>
@@ -34,7 +34,7 @@ export const deriveLocus = (
 
   /** map for quick lookup of citation by id */
   const citationLookup = Object.fromEntries(
-    citations.map((citation) => [citation.id, { ...citation }]),
+    citations?.map((citation) => [citation.id, { ...citation }]) ?? [],
   );
 
   /** look up citation by id */
