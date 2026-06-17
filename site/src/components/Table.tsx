@@ -1,4 +1,4 @@
-import type { CSSProperties, HTMLAttributes, ReactNode } from "react";
+import type { ReactNode } from "react";
 import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
 import type { ValueOf } from "type-fest";
 import { useState } from "react";
@@ -30,8 +30,7 @@ import clsx from "clsx";
 declare module "@tanstack/react-table" {
   // eslint-disable-next-line
   interface ColumnMeta<TData extends RowData, TValue> {
-    attrs?: HTMLAttributes<HTMLTableCellElement>;
-    style?: CSSProperties;
+    className?: string;
   }
 }
 
@@ -53,10 +52,8 @@ type Column<
   name?: string;
   /** is sortable (default true) */
   sortable?: boolean;
-  /** cell attributes */
-  attrs?: HTMLAttributes<HTMLTableCellElement>;
-  /** cell style */
-  style?: CSSProperties;
+  /** class on cells */
+  className?: string;
   /** custom render function for cell */
   render?: (cell: Datum[Key], row: Datum) => ReactNode;
 };
@@ -82,8 +79,7 @@ export const defineData = <Datum extends object>(
       enableColumnFilter: true,
       enableGlobalFilter: true,
       meta: {
-        attrs: column.attrs,
-        style: column.style,
+        className: column.className,
       },
       /** render func for cell */
       cell: ({ cell, row }) =>
@@ -167,36 +163,45 @@ export default function Table<Datum extends object>({
                   <th
                     key={header.id}
                     aria-colindex={Number(header.id) + 1}
-                    style={header.column.columnDef.meta?.style}
-                    {...header.column.columnDef.meta?.attrs}
+                    className="p-0"
                   >
-                    {header.isPlaceholder ? null : (
-                      <Button
-                        disabled={!header.column.getCanSort()}
-                        className="size-full justify-start gap-1 border-none bg-transparent px-2 py-1 text-dark-gray hover:bg-transparent hover:text-primary"
-                        data-active={
-                          header.column.getIsSorted() ? "" : undefined
-                        }
-                        onClick={header.column.getToggleSortingHandler()}
-                        aria-label="Sort this column"
-                      >
-                        {/* header label */}
-                        <span>
-                          {flexRender(
-                            header.column.columnDef.header,
-                            header.getContext(),
-                          )}
-                        </span>
+                    {/* wrapper */}
+                    <div
+                      className={clsx(
+                        "flex items-center justify-center p-2",
+                        header.column.columnDef.meta?.className,
+                      )}
+                    >
+                      {/* header label */}
+                      <span>
+                        {flexRender(
+                          header.column.columnDef.header,
+                          header.getContext(),
+                        )}
+                      </span>
 
-                        {header.column.getIsSorted() === "asc" && <FaSortUp />}
-                        {header.column.getIsSorted() === "desc" && (
-                          <FaSortDown />
-                        )}
-                        {header.column.getIsSorted() === false && (
-                          <FaSort style={{ opacity: 0.1 }} />
-                        )}
-                      </Button>
-                    )}
+                      {/* sort button */}
+                      {header.column.getCanSort() && (
+                        <Button
+                          className="p-0! text-dark-gray hover:bg-transparent hover:text-primary"
+                          data-active={
+                            header.column.getIsSorted() ? "" : undefined
+                          }
+                          onClick={header.column.getToggleSortingHandler()}
+                          aria-label="Sort this column"
+                        >
+                          {header.column.getIsSorted() === "asc" && (
+                            <FaSortUp />
+                          )}
+                          {header.column.getIsSorted() === "desc" && (
+                            <FaSortDown />
+                          )}
+                          {header.column.getIsSorted() === false && (
+                            <FaSort className="opacity-25" />
+                          )}
+                        </Button>
+                      )}
+                    </div>
                   </th>
                 ))}
               </tr>
@@ -217,15 +222,19 @@ export default function Table<Datum extends object>({
                   }
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <td
-                      key={cell.id}
-                      style={cell.column.columnDef.meta?.style}
-                      {...cell.column.columnDef.meta?.attrs}
-                    >
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext(),
-                      )}
+                    <td key={cell.id} className="p-0">
+                      {/* wrapper */}
+                      <div
+                        className={clsx(
+                          "flex items-center justify-center p-2",
+                          cell.column.columnDef.meta?.className,
+                        )}
+                      >
+                        {flexRender(
+                          cell.column.columnDef.cell,
+                          cell.getContext(),
+                        )}
+                      </div>
                     </td>
                   ))}
                 </tr>
@@ -255,14 +264,14 @@ export default function Table<Datum extends object>({
           <div className="flex flex-wrap items-center justify-center">
             <Button
               onClick={() => table.setPageIndex(0)}
-              disabled={!table.getCanPreviousPage()}
+              aria-disabled={!table.getCanPreviousPage()}
               aria-label="First page"
             >
               <FaAnglesLeft />
             </Button>
             <Button
               onClick={() => table.previousPage()}
-              disabled={!table.getCanPreviousPage()}
+              aria-disabled={!table.getCanPreviousPage()}
               aria-label="Previous page"
             >
               <FaAngleLeft />
@@ -280,14 +289,14 @@ export default function Table<Datum extends object>({
             </Button>
             <Button
               onClick={() => table.nextPage()}
-              disabled={!table.getCanNextPage()}
+              aria-disabled={!table.getCanNextPage()}
               aria-label="Next page"
             >
               <FaAngleRight />
             </Button>
             <Button
               onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-              disabled={!table.getCanNextPage()}
+              aria-disabled={!table.getCanNextPage()}
               aria-label="Last page"
             >
               <FaAnglesRight />

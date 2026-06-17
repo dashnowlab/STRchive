@@ -7,6 +7,8 @@
       "plotly.js-dist": ["./node_modules/@types/plotly.js"]
     },
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+    "jsxImportSource": "react",
+    "types": ["vite-plugin-svgr/client"]
+  },
+  "include": [".astro/types.d.ts", "src/**/*"]
 }

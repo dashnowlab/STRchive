@@ -28,9 +28,9 @@ export const tagOptions = [
     /** icon */
     Icon: BsStars,
     /** background color */
-    bg: "var(--primary)",
+    bg: "var(--color-primary)",
     /** text color */
-    text: "var(--white)",
+    text: "var(--color-white)",
     /** whether to show in loci page table */
     filter: true,
   },
@@ -191,8 +191,8 @@ export const tagOptions = [
     Icon: FaCircleQuestion,
     description:
       "Provisional: this locus-disease relationship has been proposed but has not yet been evaluated",
-    bg: "var(--gray)",
-    text: "var(--white)",
+    bg: "var(--color-gray)",
+    text: "var(--color-white)",
     filter: true,
   },
   {
@@ -201,8 +201,8 @@ export const tagOptions = [
     label: "Refuted",
     Icon: FaCircleXmark,
     description: "Evidence refutes this gene-disease relationship",
-    bg: "var(--worst)",
-    text: "var(--white)",
+    bg: "var(--color-worst)",
+    text: "var(--color-white)",
     filter: true,
   },
   {
@@ -211,8 +211,8 @@ export const tagOptions = [
     label: "Disputed",
     Icon: FaCircleExclamation,
     description: "Evidence disputes this gene-disease relationship",
-    bg: "var(--bad)",
-    text: "var(--white)",
+    bg: "var(--color-bad)",
+    text: "var(--color-white)",
     filter: true,
   },
   {
@@ -221,8 +221,8 @@ export const tagOptions = [
     label: "No Known",
     Icon: FaCirclePause,
     description: "No known evidence for this locus-disease relationship",
-    bg: "var(--warn)",
-    text: "var(--black)",
+    bg: "var(--color-warn)",
+    text: "var(--color-black)",
     filter: true,
   },
   {
@@ -232,8 +232,8 @@ export const tagOptions = [
     Icon: FaCircleMinus,
     description:
       "There is limited evidence for this locus-disease relationship",
-    bg: "var(--warn)",
-    text: "var(--black)",
+    bg: "var(--color-warn)",
+    text: "var(--color-black)",
     filter: true,
   },
   {
@@ -243,8 +243,8 @@ export const tagOptions = [
     Icon: FaCircleDot,
     description:
       "There is moderate evidence for this locus-disease relationship",
-    bg: "var(--okay)",
-    text: "var(--black)",
+    bg: "var(--color-okay)",
+    text: "var(--color-black)",
     filter: true,
   },
   {
@@ -253,8 +253,8 @@ export const tagOptions = [
     label: "Strong",
     Icon: FaCirclePlus,
     description: "There is strong evidence for this locus-disease relationship",
-    bg: "var(--good)",
-    text: "var(--white)",
+    bg: "var(--color-good)",
+    text: "var(--color-white)",
     filter: true,
   },
   {
@@ -264,8 +264,8 @@ export const tagOptions = [
     Icon: FaCircleCheck,
     description:
       "There is definitive evidence for this locus-disease relationship",
-    bg: "var(--best)",
-    text: "var(--white)",
+    bg: "var(--color-best)",
+    text: "var(--color-white)",
     filter: true,
   },
 ];

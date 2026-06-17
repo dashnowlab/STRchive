@@ -15,7 +15,7 @@ export default function TableOfContents() {
   const list = useRef(null);
 
   /** open/closed state */
-  const [open, setOpen] = useState(window.innerWidth > 1400);
+  const [open, setOpen] = useState(window.innerWidth > 1600);
 
   type Heading = {
     element: Element;
@@ -59,7 +59,7 @@ export default function TableOfContents() {
       <div className="absolute top-0 flex max-w-80 flex-col gap-2 overflow-hidden rounded-br-md bg-white shadow-md">
         {/* toggle button */}
         <Button
-          className="justify-between"
+          className="justify-between!"
           aria-expanded={open}
           onClick={() => setOpen(!open)}
           data-tooltip={open ? "Close" : "Open"}
@@ -78,7 +78,7 @@ export default function TableOfContents() {
               <a
                 key={index}
                 data-active={id === activeId ? "" : undefined}
-                className="flex items-center gap-2 px-4 py-2 text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-active:font-bold [&_svg]:opacity-25"
+                className="flex items-center gap-2 px-4 py-2 text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-active:bg-light-gray [&_svg]:opacity-25"
                 href={`#${id}`}
                 style={{ paddingLeft: level * 15 }}
                 dangerouslySetInnerHTML={{ __html: html }}

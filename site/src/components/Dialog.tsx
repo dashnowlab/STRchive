@@ -53,7 +53,7 @@ export default function Dialog({ trigger, title, children }: Props) {
           className="flex max-h-[calc(100dvh-var(--spacing)*20)] max-w-[calc(100dvw-var(--spacing)*20)] flex-col rounded-md bg-white text-black shadow-md"
         >
           <div className="flex items-center p-4 shadow-md">
-            <span className="grow font-bold text-lg">{title}</span>
+            <strong className="grow text-lg">{title}</strong>
             <Button onClick={close} autoFocus>
               <LuX />
             </Button>

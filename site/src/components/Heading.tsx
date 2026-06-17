@@ -28,7 +28,10 @@ function Heading({
   return (
     <Component
       id={_id}
-      className={clsx("flex items-center gap-2 wrap-anywhere", className)}
+      className={clsx(
+        "flex scroll-mt-4 items-center gap-[0.5em] wrap-anywhere [&_svg]:opacity-25",
+        className,
+      )}
       {...props}
     >
       <Link to={`#${_id}`} className="contents text-current no-underline">

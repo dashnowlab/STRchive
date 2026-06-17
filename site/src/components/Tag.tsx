@@ -21,13 +21,13 @@ export default function Tag({
   const {
     Icon,
     label = fallback,
-    bg = "var(--gray)",
-    text = "var(--white)",
+    bg = "var(--color-gray)",
+    text = "var(--color-white)",
     description = fallback,
   } = option || {};
   return (
     <Link
-      className="flex items-center gap-1 rounded-full px-2 py-1 no-underline transition hover:opacity-75"
+      className="flex items-center gap-2 rounded-full px-2 py-1 no-underline transition hover:opacity-75"
       to={to}
       style={
         small ? { color: bg, padding: 0 } : { backgroundColor: bg, color: text }

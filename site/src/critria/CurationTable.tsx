@@ -42,13 +42,12 @@ export default function CurationTable({ curations }: Props) {
         column({
           key: "total_score",
           name: "Total Score",
-          style: { textAlign: "center" },
         }),
         column({
           /** use number value so column sorted by that instead of alphabetically */
           key: "classification_index",
           name: "Classification",
-          style: { padding: 0 },
+          className: "block! py-0!",
           render: (cell, row) => <Tag value={row.classification} />,
         }),
         column({

@@ -381,7 +381,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
             />
             <div className="col-start-2 flex flex-wrap items-center *:min-w-10">
               <Button
-                disabled={index === 0}
+                aria-disabled={index === 0}
                 data-tooltip="Move up"
                 onClick={() => {
                   let _data = cloneDeep(data);
@@ -397,7 +397,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
                 <LuArrowUp />
               </Button>
               <Button
-                disabled={index === items - 1}
+                aria-disabled={index === items - 1}
                 data-tooltip="Move down"
                 onClick={() => {
                   let _data = cloneDeep(data);
