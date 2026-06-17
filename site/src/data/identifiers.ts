@@ -1,7 +1,7 @@
 import { FaBookMedical, FaLaptopMedical } from "react-icons/fa6";
 
-/** get identifiers for datum */
-export const getIdentifiers = (d) =>
+/** get identifiers for object */
+export const getIdentifiers = (d: Record<string, unknown>) =>
   /** list of identifier types */
   [
     {
