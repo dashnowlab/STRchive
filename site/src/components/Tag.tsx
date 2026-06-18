@@ -1,5 +1,6 @@
 import Link from "@/components/Link";
 import { tagOptions } from "@/data/tags";
+import clsx from "clsx";
 import { startCase } from "lodash-es";
 
 type Props = {
@@ -16,26 +17,43 @@ export default function Tag({
   tooltip = "",
   small = false,
 }: Props) {
-  const option = tagOptions.find((o) => o.value === value);
+  /** look up matching tag options */
+  const option = tagOptions.find((option) => option.value === value);
+
+  /** fallback text */
   const fallback = startCase(value);
+
+  /** get tag option props */
   const {
     Icon,
     label = fallback,
-    bg = "var(--color-gray)",
-    text = "var(--color-white)",
+    className = "text-gray",
     description = fallback,
   } = option || {};
+
+  /** combine tooltip */
+  tooltip = [description, tooltip].flat().filter(Boolean).join("<br/>");
+
+  if (small)
+    return (
+      <div
+        className={clsx("rounded-full p-1", className)}
+        data-tooltip={tooltip}
+      >
+        {Icon && <Icon className="size-3" />}
+      </div>
+    );
   return (
     <Link
-      className="flex items-center gap-2 rounded-full px-2 py-1 no-underline transition hover:opacity-75"
+      className={clsx(
+        "flex items-center gap-2 rounded-full px-2 py-1 no-underline transition hover:opacity-75",
+        className,
+      )}
       to={to}
-      style={
-        small ? { color: bg, padding: 0 } : { backgroundColor: bg, color: text }
-      }
-      data-tooltip={[description, tooltip].flat().filter(Boolean).join("<br/>")}
+      data-tooltip={tooltip}
     >
       {Icon && <Icon />}
-      {!small && label}
+      {label}
     </Link>
   );
 }

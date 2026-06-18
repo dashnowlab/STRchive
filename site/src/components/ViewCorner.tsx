@@ -13,6 +13,7 @@ export default function ViewCorner() {
       {y > 100 && (
         <Button
           design="bubble"
+          className="p-0!"
           data-tooltip="Jump to top"
           onClick={() => window.scrollTo({ top: 0 })}
         >
@@ -22,7 +23,12 @@ export default function ViewCorner() {
       <Dialog
         title="Contact Us"
         trigger={
-          <Button design="bubble" id="corner-contact" data-tooltip="Contact us">
+          <Button
+            design="bubble"
+            className="p-0!"
+            id="corner-contact"
+            data-tooltip="Contact us"
+          >
             <FaRegEnvelope />
           </Button>
         }

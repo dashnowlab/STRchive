@@ -7,24 +7,23 @@
 
   --color-*: initial;
 
-  --color-black: oklch(0% 0 0);
-  --color-dark-gray: oklch(41.278% 0.01321 316.286);
-  --color-gray: oklch(67.568% 0.01661 315.749);
-  --color-light-gray: oklch(96.143% 0.00143 285.233);
-  --color-off-white: oklch(98.511% 0.00011 271.152);
-  --color-white: oklch(100% 0.00011 271.152);
+  --color-black: oklch(0% 0.005 210);
+  --color-dark-gray: oklch(40% 0.005 210);
+  --color-gray: oklch(65% 0.005 210);
+  --color-light-gray: oklch(95% 0.005 210);
+  --color-off-white: oklch(98% 0.005 210);
+  --color-white: oklch(100% 0.005 210);
 
-  --color-primary: oklch(65.659% 0.10361 214.405);
-  --color-secondary: oklch(64.451% 0.16496 27.83);
-  --color-tertiary: oklch(65.169% 0.15206 341.6);
-  --color-quaternary: oklch(78.502% 0.12462 82.652);
+  --color-primary: oklch(65% 0.125 210);
+  --color-secondary: oklch(65% 0.125 30);
+  --color-tertiary: oklch(65% 0.125 340);
 
-  --color-worst: oklch(42.942% 0.12233 23.796);
-  --color-bad: oklch(65.804% 0.13231 32.32);
-  --color-warn: oklch(78.502% 0.12462 82.652);
-  --color-okay: oklab(76.493% -0.03353 -0.05745);
-  --color-good: oklch(64.892% 0.10373 186.731);
-  --color-best: oklch(50.437% 0.08322 194.877);
+  --color-worst: oklch(65% 0.125 20);
+  --color-bad: oklch(65% 0.125 30);
+  --color-warn: oklch(65% 0.125 60);
+  --color-okay: oklch(65% 0.125 220);
+  --color-good: oklch(65% 0.125 190);
+  --color-best: oklch(65% 0.125 180);
 
   --color-shadow: #00000020;
 
@@ -32,7 +31,8 @@
   --shadow-md: 0 0 10px var(--color-shadow), 2px 2px 4px var(--color-shadow);
 
   --radius-*: initial;
-  --radius-md: 5px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 
   --font-sans: "Golos Text Variable", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
@@ -136,7 +136,7 @@
 
   button,
   select {
-    @apply hover:text-primary inline-flex cursor-pointer appearance-none items-center justify-center transition;
+    @apply inline-flex cursor-pointer items-center justify-center transition;
   }
 
   p > button,

@@ -21,10 +21,12 @@ export default function Button({
     <Component
       type="button"
       className={clsx(
-        "inline-flex min-h-10 min-w-10 items-center justify-center gap-2 no-underline not-has-[span]:p-[0.5em] has-[span]:px-[0.75em] has-[span]:py-[0.5em]",
-        design === "plain" && "rounded-md bg-light-gray",
+        "inline-flex min-h-10 min-w-10 items-center justify-center gap-2 px-[0.75em] py-[0.5em] no-underline",
+        design === "" && "hover:text-primary",
+        design === "plain" &&
+          "rounded-md bg-light-gray text-current hover:text-primary",
         design === "bubble" &&
-          "gap-2 rounded-full border-2 border-current text-lg font-medium text-current hover:bg-secondary hover:text-white",
+          "gap-2 rounded-full border-2 border-current text-lg font-medium text-current hover:border-black hover:bg-secondary hover:text-white",
         className,
       )}
       {...(props as ButtonProps & AnchorProps)}

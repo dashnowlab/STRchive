@@ -179,12 +179,12 @@ export default function LociTable({ loci }: Props) {
               );
             })()}
           >
-            {filterTags.map(({ description, Icon, label, bg }, index) => (
+            {filterTags.map(({ description, value, label }, index) => (
               <CheckBox
                 key={index}
                 label={
                   <>
-                    {Icon && <Icon style={{ color: bg }} />}
+                    <Tag value={value} small />
                     {label}
                   </>
                 }
@@ -267,6 +267,7 @@ export default function LociTable({ loci }: Props) {
             render: (cell) => (
               <Button
                 to={`/loci/${cell}`}
+                className="p-0!"
                 design="bubble"
                 data-tooltip="Go to locus page"
               >
@@ -279,18 +280,15 @@ export default function LociTable({ loci }: Props) {
             /** use number value so column sorted by that instead of alphabetically */
             key: "tag_sort",
             name: "Tags",
-            render: (cell, row) => (
-              <div className="flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2">
-                {tagOptions
-                  .filter(
-                    ({ key, value, filter }) =>
-                      filter && includes(row, key, value),
-                  )
-                  .map(({ value }, index) => (
-                    <Tag key={index} value={value} small />
-                  ))}
-              </div>
-            ),
+            render: (cell, row) =>
+              tagOptions
+                .filter(
+                  ({ key, value, filter }) =>
+                    filter && includes(row, key, value),
+                )
+                .map(({ value }, index) => (
+                  <Tag key={index} value={value} small />
+                )),
           }),
           column({
             key: "gene",

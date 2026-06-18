@@ -82,6 +82,7 @@ export default function Select({
             <div className="contents">
               <ListboxButton
                 as={Button}
+                design="plain"
                 className="relative flex min-h-10 min-w-10 grow items-center gap-2 rounded-md bg-light-gray"
               >
                 <span className={clsx("grow", !selected && "text-gray")}>
