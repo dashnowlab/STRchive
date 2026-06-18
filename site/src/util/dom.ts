@@ -2,8 +2,7 @@ import { sleep } from "@/util/misc";
 import { debounce } from "lodash-es";
 
 /** scroll page so that mouse stays at same position in document */
-export const preserveScroll = async (element: HTMLElement | null) => {
-  if (!element) return;
+export const preserveScroll = async (element: HTMLElement) => {
   const oldY = element.getBoundingClientRect().top;
   await sleep();
   const newY = element.getBoundingClientRect().top;

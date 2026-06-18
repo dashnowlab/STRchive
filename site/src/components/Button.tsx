@@ -1,4 +1,4 @@
-import type { ComponentProps } from "react";
+import type { ComponentProps, Ref } from "react";
 import Link from "@/components/Link";
 import clsx from "clsx";
 
@@ -6,11 +6,13 @@ type ButtonProps = ComponentProps<"button">;
 type AnchorProps = ComponentProps<typeof Link>;
 
 type Props = {
+  ref?: Ref<HTMLButtonElement>;
   design?: "" | "plain" | "bubble";
 } & (ButtonProps | AnchorProps);
 
 /** looks like a button, and either does something or goes somewhere */
 export default function Button({
+  ref,
   design = "",
   className = "",
   ...props
@@ -19,6 +21,7 @@ export default function Button({
 
   return (
     <Component
+      ref={ref}
       type="button"
       className={clsx(
         "inline-flex min-h-10 max-w-full min-w-10 items-center justify-center gap-2 px-[0.75em] py-[0.5em] no-underline",
