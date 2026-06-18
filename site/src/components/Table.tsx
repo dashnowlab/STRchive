@@ -146,6 +146,8 @@ export default function Table<Datum extends object>({
     },
   });
 
+  console.log(table.getCanNextPage());
+
   return (
     <div className="flex w-full flex-col items-center gap-2">
       <div className="w-full overflow-x-auto rounded-md shadow-md">

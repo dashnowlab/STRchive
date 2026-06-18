@@ -41,9 +41,10 @@ import { kebabCase } from "lodash-es";
 
       document.querySelectorAll("[data-spotlight]").forEach((element) => {
         const target = element as HTMLElement;
-        element.addEventListener("click", () =>
-          spotlight(target.dataset.spotlight),
-        );
+        element.addEventListener("click", () => {
+          const element = target.dataset.spotlight;
+          if (element) spotlight(element);
+        });
       });
     </script>
   </section>
@@ -56,11 +57,11 @@ import { kebabCase } from "lodash-es";
         Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K.,
         VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H.,
         2025.
-      </span><br />
-      <b>
+      </span>
+      <strong>
         STRchive: a dynamic resource detailing population-level and
         locus-specific insights at tandem repeat disease loci.
-      </b><br />
+      </strong>
       <span
         >Genome Med doi: <Link to="https://doi.org/10.1186/s13073-025-01454-4"
           >https://doi.org/10.1101/2024.05.21.24307682</Link
@@ -83,7 +84,7 @@ import { kebabCase } from "lodash-es";
       class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
     >
       <Button to={repo} design="bubble">
-        <FaGithub /><span>GitHub</span>
+        <FaGithub />GitHub
       </Button>
     </div>
   </section>
@@ -92,22 +93,22 @@ import { kebabCase } from "lodash-es";
     <H2><LuUsers />Team</H2>
 
     <div
-      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
+      class="flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2"
     >
       {
         team.map((member) => (
           <Link
-            className="flex w-[200px] flex-col p-2.5 no-underline"
+            className="flex w-50 flex-col p-2 no-underline text-center items-center gap-1"
             to={member.link}
           >
             <img
-              class="mb-2.5 w-full rounded-full shadow-md transition hover:scale-105 hover:saturate-0"
+              class="mb-2 w-full rounded-full shadow-md transition hover:saturate-0 "
               src={`/images/team/${kebabCase(member.name)}.jpg`}
               alt=""
             />
-            <b>{member.name}</b>
-            <span>{member.role}</span>
-            <span>{member.affiliation}</span>
+            <strong>{member.name}</strong>
+            <span class="text-sm">{member.role}</span>
+            <span class="text-sm">{member.affiliation}</span>
           </Link>
         ))
       }

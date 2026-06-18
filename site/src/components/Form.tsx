@@ -1,4 +1,4 @@
-import type { SubmitEvent } from "react";
+import type { ComponentProps, SubmitEvent } from "react";
 import { useEventListener } from "@reactuses/core";
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
     data: Record<string, string | number>,
     event: SubmitEvent<HTMLFormElement>,
   ) => void;
-};
+} & ComponentProps<"form">;
 
 /** form wrapper around set of fields */
 export default function Form({ onSubmit, ...props }: Props) {

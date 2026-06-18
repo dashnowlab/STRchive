@@ -47,8 +47,10 @@ export default function CurationTable({ curations }: Props) {
           /** use number value so column sorted by that instead of alphabetically */
           key: "classification_index",
           name: "Classification",
-          className: "block! py-0!",
-          render: (cell, row) => <Tag value={row.classification} />,
+          className: "py-0!",
+          render: (cell, row) => (
+            <Tag value={row.classification} className="w-full" />
+          ),
         }),
         column({
           key: "Date",
@@ -65,7 +67,7 @@ export default function CurationTable({ curations }: Props) {
           name: "Source",
         }),
       ])}
-      sort={[{ id: "Gene", desc: false }]}
+      sort={[{ id: "0", desc: false }]}
     />
   );
 }

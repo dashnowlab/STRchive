@@ -92,7 +92,7 @@ export default function Select({
               </ListboxButton>
 
               <ListboxOptions
-                className="flex w-(--button-width) flex-col rounded-md bg-white shadow-md"
+                className="flex min-w-(--button-width) flex-col rounded-md bg-white shadow-md"
                 anchor={{ to: "bottom", gap: 2, padding: 10 }}
               >
                 {options.map((option, index) => (
@@ -103,16 +103,16 @@ export default function Select({
                     data-tooltip={option.tooltip}
                   >
                     <LuCheck
-                      className="text-primary"
-                      style={{
-                        opacity: (
+                      className={clsx(
+                        "text-primary",
+                        (
                           multi
                             ? value?.includes(option.value)
                             : value === option.value
                         )
-                          ? 1
-                          : 0,
-                      }}
+                          ? "opacity-100"
+                          : "opacity-0",
+                      )}
                     />
                     <span className={clsx(!option.label && "text-gray")}>
                       {option.label || "No Selection"}

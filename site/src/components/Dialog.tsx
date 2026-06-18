@@ -59,7 +59,7 @@ export default function Dialog({ trigger, title, children }: Props) {
             </Button>
           </div>
 
-          <div className="overflow-y-auto overscroll-none p-4">
+          <div className="flex flex-col justify-center-safe gap-8 overflow-y-auto overscroll-none p-8">
             <DialogContext.Provider value={{ isOpen }}>
               {children}
             </DialogContext.Provider>

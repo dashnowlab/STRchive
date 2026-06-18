@@ -21,12 +21,6 @@ export default defineConfig([
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-imports": "error",
     },
-    languageOptions: {
-      parserOptions: {
-        project: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
   },
 
   {
@@ -51,7 +45,7 @@ export default defineConfig([
   {
     name: "Prettier",
     extends: [prettier],
-    ignores: ["**/*.mdx"],
+    ignores: ["**/*.astro/*.ts", "**/*.astro/*.js", "**/*.mdx"],
     rules: {
       "prettier/prettier": "warn",
     },

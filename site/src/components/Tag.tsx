@@ -8,6 +8,7 @@ type Props = {
   to?: string;
   tooltip?: string;
   small?: boolean;
+  className?: string;
 };
 
 /** tag pill link */
@@ -16,6 +17,7 @@ export default function Tag({
   to = "",
   tooltip = "",
   small = false,
+  className = "",
 }: Props) {
   /** look up matching tag options */
   const option = tagOptions.find((option) => option.value === value);
@@ -27,9 +29,12 @@ export default function Tag({
   const {
     Icon,
     label = fallback,
-    className = "text-gray",
+    className: optionClassName = "text-gray",
     description = fallback,
   } = option || {};
+
+  /** combine class */
+  className = clsx(optionClassName, className);
 
   /** combine tooltip */
   tooltip = [description, tooltip].flat().filter(Boolean).join("<br/>");

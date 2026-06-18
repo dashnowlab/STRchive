@@ -24,7 +24,7 @@ export const contactSchema = {
     placeholder: "Your Name",
   },
   username: {
-    title: "GitHub Username",
+    title: "GitHub",
     description: "Optional. So we can tag you and you can follow activity.",
     placeholder: "@username",
   },
@@ -183,7 +183,7 @@ export default function ContactForm() {
       {status === "" && (
         <Button design="plain" type="submit">
           <LuSend />
-          <span>Submit</span>
+          Submit
         </Button>
       )}
     </Form>

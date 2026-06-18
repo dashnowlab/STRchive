@@ -173,7 +173,7 @@ const EditForm = ({ heading, locus }) => {
                 window.location.reload();
               }}
             >
-              <span>Forget</span>
+              Forget
               <FaXmark />
             </Button>
           </div>

@@ -22,7 +22,7 @@ export default function Link({
 
   return (
     <Component
-      href={to || ""}
+      href={to || undefined}
       // whether to open in new tab
       target={(newTab ?? external) ? "_blank" : ""}
       {...(props as ComponentProps<"a"> & ComponentProps<"span">)}

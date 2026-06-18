@@ -64,7 +64,7 @@ export default function TableOfContents() {
           onClick={() => setOpen(!open)}
           data-tooltip={open ? "Close" : "Open"}
         >
-          <span>Table of Contents</span>
+          Table of Contents
           {open ? <FaXmark /> : <FaBars />}
         </Button>
 

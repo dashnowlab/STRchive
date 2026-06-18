@@ -2,7 +2,6 @@ import type { ComponentProps, ReactNode } from "react";
 import { onlyText } from "react-children-utilities";
 import Link from "@/components/Link";
 import { slugify } from "@/util/string";
-import clsx from "clsx";
 import { stripHtml } from "string-strip-html";
 
 type Level = 1 | 2 | 3 | 4;
@@ -26,15 +25,11 @@ function Heading({
   const _id = id || slugify(getTextContent(children));
 
   return (
-    <Component
-      id={_id}
-      className={clsx(
-        "flex scroll-mt-4 items-center gap-[0.5em] wrap-anywhere [&_svg]:opacity-25",
-        className,
-      )}
-      {...props}
-    >
-      <Link to={`#${_id}`} className="contents text-current no-underline">
+    <Component id={_id} className={className} {...props}>
+      <Link
+        to={`#${_id}`}
+        className="contents wrap-anywhere text-current no-underline"
+      >
         {children}
       </Link>
     </Component>

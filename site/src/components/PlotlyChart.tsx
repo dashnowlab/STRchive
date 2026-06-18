@@ -3,8 +3,12 @@ import { useEffect, useRef } from "react";
 import Plotly from "plotly.js-dist";
 
 type Props = {
-  data: Plotly.Data[];
-  layout: Plotly.Layout;
+  // eslint-disable-next-line -- trust input structure
+  data: any;
+  // eslint-disable-next-line -- trust input structure
+  layout: any;
+  // data: Plotly.Data[];
+  // layout: Partial<Plotly.Layout>;
 } & ComponentProps<"div">;
 
 /** plotly chart that supports any plotly options */

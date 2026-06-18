@@ -2,8 +2,7 @@
 /** LOCUS PAGE */
 
 import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
-import { LiaBarcodeSolid, LiaSlashSolid } from "react-icons/lia";
-import { LuFeather } from "react-icons/lu";
+import { LiaSlashSolid, LuBarcode, LuFeather } from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
@@ -61,7 +60,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
   <!-- overview -->
   <section>
-    <H1><LiaBarcodeSolid />{locus.nice_id}</H1>
+    <H1><LuBarcode />{locus.nice_id}</H1>
 
     <div
       class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
@@ -157,9 +156,12 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       }
     </div>
 
-    <Button to={`/loci/${id}/edit`} design="bubble">
-      <LuFeather />
-      <span>Suggest Edit</span>
+    <Button
+      className="w-60 self-center"
+      to={`/loci/${id}/edit`}
+      design="bubble"
+    >
+      <LuFeather />Suggest Edit
     </Button>
   </section>
 

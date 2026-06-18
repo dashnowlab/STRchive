@@ -1,9 +1,15 @@
 ---
 /** LOCI PAGE */
 
-import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
-import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuChartCandlestick, LuChartGantt, LuPlus } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa6";
+import {
+  LuArrowDown,
+  LuBarcode,
+  LuChartCandlestick,
+  LuChartGantt,
+  LuChartLine,
+  LuPlus,
+} from "react-icons/lu";
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
@@ -26,9 +32,9 @@ const catalogs = Object.keys(
   }),
 ).map((path) => {
   /** last part of path */
-  path = path.split("/").pop();
+  path = path.split("/").pop() ?? "";
   /** filename parts */
-  const [prefix, genome, software, ...extensions] = path.split(".");
+  const [, genome, software, ...extensions] = path.split(".");
   /** insert version in download filename */
   const filename = path.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
   return {
@@ -90,7 +96,7 @@ const cols = uniq(map(catalogs, "genome"));
   <TableOfContents client:only="react" />
 
   <section>
-    <H1><LiaBarcodeSolid />Loci</H1>
+    <H1><LuBarcode />Loci</H1>
 
     <div
       class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
@@ -104,15 +110,15 @@ const cols = uniq(map(catalogs, "genome"));
 
     <LociTable client:load loci={loci} />
 
-    <Button to="/loci/new" design="bubble">
+    <Button className="w-60 self-center" to="/loci/new" design="bubble">
       <LuPlus />
-      <span>Suggest New</span>
+      Suggest New
     </Button>
   </section>
 
   <!-- downloads -->
   <section>
-    <H2><FaArrowDown />Downloads</H2>
+    <H2><LuArrowDown />Downloads</H2>
 
     <div class="w-full overflow-x-auto rounded-md shadow-md">
       <table>
@@ -142,7 +148,7 @@ const cols = uniq(map(catalogs, "genome"));
                 </td>
                 {cols.map((col) => (
                   <td>
-                    <div class="flex flex-wrap justify-center gap-[5px]">
+                    <div class="flex flex-wrap justify-center gap-1">
                       {filter(
                         catalogs,
                         (catalog) =>
@@ -171,13 +177,13 @@ const cols = uniq(map(catalogs, "genome"));
   </section>
 
   <!-- plots -->
-  <section class="full">
-    <H2><FaChartLine />Plots</H2>
+  <section class="width-full">
+    <H2><LuChartLine />Plots</H2>
 
     <p class="text-center text-balance">High-level, visual overview of loci.</p>
 
-    <div class="charts">
-      <div class="flex max-w-full flex-col items-center gap-4">
+    <div class="grid grid-cols-2 gap-8 max-md:grid-cols-1">
+      <div class="flex flex-col items-center gap-8">
         <H2><LuChartGantt />Pathogenic Size Range</H2>
         <PlotlyChart
           client:only="react"
@@ -186,7 +192,7 @@ const cols = uniq(map(catalogs, "genome"));
         />
       </div>
 
-      <div class="flex max-w-full flex-col items-center gap-4">
+      <div class="flex max-w-full flex-col items-center gap-8">
         <H2><LuChartCandlestick />Age of Onset</H2>
         <PlotlyChart
           client:only="react"

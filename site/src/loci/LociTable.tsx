@@ -253,7 +253,7 @@ export default function LociTable({ loci }: Props) {
             }
             data-tooltip="Download filtered loci"
           >
-            <span>Download</span>
+            Download
             <LuDownload />
           </Button>
         </div>
@@ -280,6 +280,7 @@ export default function LociTable({ loci }: Props) {
             /** use number value so column sorted by that instead of alphabetically */
             key: "tag_sort",
             name: "Tags",
+            className: "gap-1!",
             render: (cell, row) =>
               tagOptions
                 .filter(

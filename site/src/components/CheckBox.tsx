@@ -32,7 +32,7 @@ export default function CheckBox({
         ref={ref}
         type="checkbox"
         className={clsx(
-          "size-5 appearance-none rounded-sm border-2 border-current accent-primary",
+          "size-5 appearance-none rounded-sm border-current accent-primary ring-2 ring-inset",
           checked === true
             ? "bg-primary"
             : checked === false

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { LuChevronDown } from "react-icons/lu";
 import Button from "@/components/Button";
 import {
   Popover as _Popover,
@@ -20,6 +21,7 @@ export default function Popover({ label, button, children }: Props) {
         {label}
         <PopoverButton as={Button} design="plain">
           {button}
+          <LuChevronDown />
         </PopoverButton>
       </label>
 

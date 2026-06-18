@@ -34,12 +34,11 @@
   --radius-sm: 5px;
   --radius-md: 10px;
 
-  --font-sans: "Golos Text Variable", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  --font-sans: "Inter Variable", sans-serif;
+  --font-mono: "JetBrains Mono Variable", monospace;
 
   --font-weight-*: initial;
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
+  --font-weight-regular: 350;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
 }
@@ -62,22 +61,22 @@
   footer,
   section {
     --width: 250;
-    @apply even:bg-off-white flex flex-col items-center gap-10 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
+    @apply even:bg-off-white flex flex-col gap-10 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply font-medium;
+    @apply font-regular flex scroll-mt-4 items-center gap-[0.5em] tracking-wide [&_svg]:opacity-25;
   }
 
   h1 {
-    @apply text-3xl font-light tracking-wider uppercase;
+    @apply justify-center text-center text-3xl uppercase;
   }
 
   h2 {
-    @apply text-2xl;
+    @apply justify-center text-center text-2xl uppercase;
   }
 
   h3 {
@@ -111,7 +110,7 @@
   }
 
   blockquote {
-    @apply bg-light-gray max-w-full rounded-md p-8;
+    @apply bg-light-gray flex max-w-full flex-col gap-2 rounded-md p-8 leading-loose;
   }
 
   label {
@@ -166,11 +165,11 @@
   }
 
   th {
-    @apply border-light-gray border-b-2 px-2 py-4;
+    @apply border-light-gray border-b-2 px-2 py-4 font-medium;
   }
 
   td {
-    @apply border-light-gray px-2 py-4 not-last:border-l;
+    @apply border-light-gray px-2 py-4 not-first:border-l;
   }
 
   thead tr {
@@ -186,8 +185,8 @@
   }
 
   dl {
-    --cols: 3;
-    @apply grid grid-cols-[repeat(var(--cols),auto_auto)];
+    --cols: 1;
+    @apply grid grid-cols-[repeat(var(--cols),auto_1fr)] items-center;
   }
 
   dt,
@@ -211,7 +210,7 @@
     @apply h-[1em] w-[unset];
   }
 
-  [aria-disabled] {
+  [aria-disabled="true"] {
     @apply pointer-events-none cursor-not-allowed opacity-25 grayscale;
   }
 }

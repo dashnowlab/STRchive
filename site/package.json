@@ -18,9 +18,8 @@
   "dependencies": {
     "@astrojs/mdx": "6.0.3",
     "@astrojs/react": "5.0.7",
-    "@fontsource-variable/golos-text": "^5.2.8",
-    "@fontsource/barlow": "^5.2.8",
-    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@headlessui/react": "^2.2.10",
     "@kbox-labs/react-echarts": "^1.4.2",
     "@reactuses/core": "^6.3.2",

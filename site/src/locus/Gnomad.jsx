@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { startCase } from "lodash-es";
 import RangeChart from "@/components/RangeChart";
 import Select from "@/components/Select";
+import { startCase } from "lodash-es";
 
 /** charts for gnomad data */
 const Gnomad = ({ title, data = {} }) => {
@@ -45,19 +45,22 @@ const Gnomad = ({ title, data = {} }) => {
             const upper = d.confidence_upper_bounds[index];
             return `
               <p>
-                <b>${label}</b>
+                <span>${label}</span>
               </p>
               <p>
-                <span>Value:</span><br/>
-                <b>${value.toFixed(2)}%</b>
+                <span>Value:</span>
+                <br/>
+                <span>${value.toFixed(2)}%</span>
               </p>
               <p>
-                <span>95% Confidence Interval:</span><br/>
-                <b>${lower.toFixed(2)}% &ndash; ${upper.toFixed(2)}%</b>
+                <span>95% Confidence Interval:</span>
+                <br/>
+                <span>${lower.toFixed(2)}% &ndash; ${upper.toFixed(2)}%</span>
               </p>
               <p>
-                <span>Count:</span><br/>
-                <b>${count.toLocaleString()}</b>
+                <span>Count:</span>
+                <br/>
+                <span>${count.toLocaleString()}</span>
               </p>
             `;
           }}
@@ -65,8 +68,8 @@ const Gnomad = ({ title, data = {} }) => {
       </div>
 
       <p className="text-center text-balance">
-        <b>Pathogenic Genotype (%):</b> % of individuals predicted to be
-        affected based on their genotype
+        Pathogenic Genotype (%): % of individuals predicted to be affected based
+        on their genotype
       </p>
     </>
   );
