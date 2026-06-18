@@ -168,7 +168,7 @@ export default function Table<Datum extends object>({
                     {/* wrapper */}
                     <div
                       className={clsx(
-                        "flex items-center justify-center p-2",
+                        "flex items-center justify-center p-2 text-center",
                         header.column.columnDef.meta?.className,
                       )}
                     >
@@ -226,7 +226,7 @@ export default function Table<Datum extends object>({
                       {/* wrapper */}
                       <div
                         className={clsx(
-                          "flex items-center justify-center p-2",
+                          "flex items-center justify-center p-2 text-center",
                           cell.column.columnDef.meta?.className,
                         )}
                       >

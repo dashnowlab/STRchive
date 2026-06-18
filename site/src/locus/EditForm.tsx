@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+import type { Locus } from "@/data/types";
 import { useMemo } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { LuFeather, LuSend } from "react-icons/lu";
@@ -15,56 +17,63 @@ import { shortenUrl } from "@/util/string";
 import { useLocalStorage } from "@reactuses/core";
 import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
 import loci from "~/STRchive-loci.json";
-import schema from "~/STRchive-loci.schema.json";
+import _schema from "~/STRchive-loci.schema.json";
 
 /** add extra fields for edit metadata */
-schema.properties = {
-  "edit-name": {
-    section: "Edit",
-    ...contactSchema.name,
-    type: ["string", "null"],
-    default: "",
+const schema = {
+  ...cloneDeep(_schema),
+  properties: {
+    "edit-name": {
+      section: "Edit",
+      ...contactSchema.name,
+      type: ["string", "null"],
+      default: "",
+    },
+    "edit-username": {
+      section: "Edit",
+      ...contactSchema.username,
+      type: ["string", "null"],
+      pattern: "^@.+",
+      default: "",
+    },
+    "edit-email": {
+      section: "Edit",
+      ...contactSchema.email,
+      type: ["string", "null"],
+      default: "",
+    },
+    "edit-title": {
+      section: "Edit",
+      title: "Edit Title",
+      description: "Succinct title describing these changes",
+      examples: ["Fix mechanism details", "Update disease onset information"],
+      type: "string",
+      default: null,
+    },
+    "edit-description": {
+      section: "Edit",
+      title: "Edit Description",
+      description:
+        "Summary of changes, justification for changes, uncertainty in literature, or anything else we should know for review. Please be detailed. Provide at least 2-3 sentences.",
+      examples: [
+        "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This edit corrects the reference and updates...",
+      ],
+      multiline: true,
+      type: "string",
+      default: null,
+    },
+    ...cloneDeep(_schema.properties),
   },
-  "edit-username": {
-    section: "Edit",
-    ...contactSchema.username,
-    type: ["string", "null"],
-    pattern: "^@.+",
-    default: "",
-  },
-  "edit-email": {
-    section: "Edit",
-    ...contactSchema.email,
-    type: ["string", "null"],
-    default: "",
-  },
-  "edit-title": {
-    section: "Edit",
-    title: "Edit Title",
-    description: "Succinct title describing these changes",
-    examples: ["Fix mechanism details", "Update disease onset information"],
-    type: "string",
-    default: null,
-  },
-  "edit-description": {
-    section: "Edit",
-    title: "Edit Description",
-    description:
-      "Summary of changes, justification for changes, uncertainty in literature, or anything else we should know for review. Please be detailed. Provide at least 2-3 sentences.",
-    examples: [
-      "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This edit corrects the reference and updates...",
-    ],
-    multiline: true,
-    type: "string",
-    default: null,
-  },
-  ...schema.properties,
+  required: [...cloneDeep(_schema.required), "edit-title", "edit-description"],
 };
 
-schema.required.push("edit-title", "edit-description");
+type Props = {
+  heading?: ReactNode;
+  locus?: Locus;
+};
 
 /** new/edit locus form */
-const EditForm = ({ heading, locus }) => {
+export default function EditForm({ heading, locus }: Props) {
   /** confirm with user before leaving page */
   // window.onbeforeunload = () => "";
 
@@ -73,8 +82,8 @@ const EditForm = ({ heading, locus }) => {
 
   /** form data state */
   let [data, setData] = useLocalStorage(storageKey, {
-    ["edit-title"]: null,
-    ["edit-description"]: null,
+    "edit-title": null,
+    "edit-description": null,
     ...cloneDeep(locus),
   });
 
@@ -83,7 +92,7 @@ const EditForm = ({ heading, locus }) => {
     const fromStorage = window.localStorage.getItem(storageKey);
     /** if saved draft exists and is different from initial data */
     return fromStorage && !isEqual(JSON.parse(fromStorage), data);
-  }, []);
+  }, [data, storageKey]);
 
   /** submission query */
   const {
@@ -222,6 +231,4 @@ const EditForm = ({ heading, locus }) => {
       </section>
     </Form>
   );
-};
-
-export default EditForm;
+}

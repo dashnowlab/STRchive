@@ -1,19 +1,27 @@
-import clsx from "clsx";
+import type { Citation } from "@/data/types";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
 
+type Props = Citation & { number: number };
+
 /** full citation details for a source */
-const Citation = ({ number, id, title, authors, publisher, date, link }) => {
+export default function Citation({
+  number,
+  id,
+  title,
+  authors,
+  publisher,
+  date,
+  link,
+}: Props) {
   const details = [publisher, date].filter(Boolean);
   return (
     <div
-      className="relative flex max-w-full flex-col items-start gap-[5px] px-5 py-2.5  has-[.citation-number]:pl-[45px]"
+      className="relative flex max-w-full flex-col items-start gap-1 px-4 py-2"
       id={id}
     >
       {number && (
-        <div
-          className="citation-number absolute left-2.5 top-2.5 flex h-[25px] w-[25px] max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 rounded-full bg-[color-mix(in_srgb,var(--color-primary),var(--color-white)_75%)]"
-        >
+        <div className="absolute top-2 left-2 flex size-6 max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-primary/25">
           {number}
         </div>
       )}
@@ -27,6 +35,4 @@ const Citation = ({ number, id, title, authors, publisher, date, link }) => {
       )}
     </div>
   );
-};
-
-export default Citation;
+}

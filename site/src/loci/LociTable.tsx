@@ -1,4 +1,4 @@
-import type loci from "~/STRchive-loci.json";
+import type { Loci } from "@/data/types";
 import { useEffect, useState } from "react";
 import { LuArrowRight, LuCheck, LuDownload, LuX } from "react-icons/lu";
 import Button from "@/components/Button";
@@ -16,8 +16,6 @@ import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
 import clsx from "clsx";
 import { countBy, map, max, min, pick, uniq } from "lodash-es";
-
-type Loci = typeof loci;
 
 /** tags to show in table and filters */
 const filterTags = tagOptions.filter((tag) => tag.filter);

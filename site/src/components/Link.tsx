@@ -1,12 +1,11 @@
-import type { ComponentProps, ReactNode } from "react";
+import type { ComponentProps } from "react";
 import { LuExternalLink } from "react-icons/lu";
 
 type Props = {
   to: string;
   newTab?: boolean;
   arrow?: boolean;
-  children: ReactNode;
-} & ComponentProps<"a" | "span">;
+} & ComponentProps<"a">;
 
 export default function Link({
   to,
@@ -18,20 +17,18 @@ export default function Link({
   /** whether link is to external site, or page within this site */
   const external = !!to.match(/^(https|http|ftp|mailto)/);
 
-  const Component = to.trim() ? "a" : "span";
-
   return (
-    <Component
+    <a
       href={to || undefined}
       // whether to open in new tab
       target={(newTab ?? external) ? "_blank" : ""}
-      {...(props as ComponentProps<"a"> & ComponentProps<"span">)}
+      {...props}
     >
       {children}
       {/* indicate third-party site with icon  */}
       {(arrow ?? external) && !children && (
         <LuExternalLink className="relative ml-1 scale-75" />
       )}
-    </Component>
+    </a>
   );
 }

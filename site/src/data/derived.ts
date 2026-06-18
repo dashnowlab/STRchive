@@ -1,23 +1,5 @@
-import type loci from "~/STRchive-loci.json";
+import type { Citation, Loci, Locus } from "@/data/types";
 import { cloneDeep, sortBy, uniq } from "lodash-es";
-
-type Loci = typeof loci;
-type Locus = Loci[number];
-/** citations file too big for ts to infer type */
-type Citation = {
-  id?: string;
-  link?: string;
-  title?: string;
-  type?: string;
-  doi?: string;
-  authors?: string[][];
-  publisher?: string;
-  issn?: string;
-  date?: string;
-  abstract?: string;
-  language?: string;
-  note?: string;
-};
 
 /** years old before not "new" anymore */
 export const newThreshold = 2;

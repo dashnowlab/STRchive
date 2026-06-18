@@ -1,10 +1,7 @@
-import type curations from "~/criTRia-curations.json";
+import type { Curation } from "@/data/types";
 import { Fragment } from "react/jsx-runtime";
 import Link from "@/components/Link";
 import Table, { defineData } from "@/components/Table";
-
-type Curations = typeof curations;
-type Curation = Curations[number];
 
 type Props = {
   evidence:
