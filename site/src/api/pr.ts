@@ -1,7 +1,15 @@
-import { mock, request } from "./";
+import { mock, request } from ".";
 
 /** create pr in repo. see /cloud/pr */
-export const createPR = async (params) => {
+export const createPR = async (params: {
+  owner: "dashnowlab";
+  repo: string;
+  branch: string;
+  title: string;
+  body: string;
+  files: { path: string; content: string }[];
+  labels: string[];
+}) => {
   if (mock) {
     console.debug("PR", params);
     return { link: "https://fake-link.com" };

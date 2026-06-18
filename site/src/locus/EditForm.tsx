@@ -20,52 +20,59 @@ import loci from "~/STRchive-loci.json";
 import _schema from "~/STRchive-loci.schema.json";
 
 /** add extra fields for edit metadata */
+const extraProperties = {
+  "edit-name": {
+    section: "Edit",
+    ...contactSchema.name,
+    type: ["string", "null"],
+    default: "",
+  },
+  "edit-username": {
+    section: "Edit",
+    ...contactSchema.username,
+    type: ["string", "null"],
+    pattern: "^@.+",
+    default: "",
+  },
+  "edit-email": {
+    section: "Edit",
+    ...contactSchema.email,
+    type: ["string", "null"],
+    default: "",
+  },
+  "edit-title": {
+    section: "Edit",
+    title: "Edit Title",
+    description: "Succinct title describing these changes",
+    examples: ["Fix mechanism details", "Update disease onset information"],
+    type: "string",
+    default: null,
+  },
+  "edit-description": {
+    section: "Edit",
+    title: "Edit Description",
+    description:
+      "Summary of changes, justification for changes, uncertainty in literature, or anything else we should know for review. Please be detailed. Provide at least 2-3 sentences.",
+    examples: [
+      "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This edit corrects the reference and updates...",
+    ],
+    multiline: true,
+    type: "string",
+    default: null,
+  },
+} as const;
+
+/** extra required fields */
+const extraRequired = ["edit-title", "edit-description"] as const;
+
+/** add extras */
 const schema = {
   ...cloneDeep(_schema),
-  properties: {
-    "edit-name": {
-      section: "Edit",
-      ...contactSchema.name,
-      type: ["string", "null"],
-      default: "",
-    },
-    "edit-username": {
-      section: "Edit",
-      ...contactSchema.username,
-      type: ["string", "null"],
-      pattern: "^@.+",
-      default: "",
-    },
-    "edit-email": {
-      section: "Edit",
-      ...contactSchema.email,
-      type: ["string", "null"],
-      default: "",
-    },
-    "edit-title": {
-      section: "Edit",
-      title: "Edit Title",
-      description: "Succinct title describing these changes",
-      examples: ["Fix mechanism details", "Update disease onset information"],
-      type: "string",
-      default: null,
-    },
-    "edit-description": {
-      section: "Edit",
-      title: "Edit Description",
-      description:
-        "Summary of changes, justification for changes, uncertainty in literature, or anything else we should know for review. Please be detailed. Provide at least 2-3 sentences.",
-      examples: [
-        "Currently, the disease mechanism details cite a recently retracted paper doi:123456. This edit corrects the reference and updates...",
-      ],
-      multiline: true,
-      type: "string",
-      default: null,
-    },
-    ...cloneDeep(_schema.properties),
-  },
-  required: [...cloneDeep(_schema.required), "edit-title", "edit-description"],
+  properties: { ...extraProperties, ...cloneDeep(_schema.properties) },
+  required: [...cloneDeep(_schema.required), ...extraRequired],
 };
+
+type Extras = Record<keyof typeof extraProperties, string | undefined | null>;
 
 type Props = {
   heading?: ReactNode;
@@ -81,11 +88,11 @@ export default function EditForm({ heading, locus }: Props) {
   const storageKey = `edit-locus-${locus?.id ?? "new"}`;
 
   /** form data state */
-  let [data, setData] = useLocalStorage(storageKey, {
+  const [data, setData] = useLocalStorage(storageKey, {
     "edit-title": null,
     "edit-description": null,
     ...cloneDeep(locus),
-  });
+  } as Extras & Locus);
 
   /** was data loaded from storage */
   const storageExists = useMemo(() => {
@@ -101,10 +108,10 @@ export default function EditForm({ heading, locus }: Props) {
     status,
   } = useQuery(async () => {
     /** pr body */
-    const name = data["edit-name"];
-    const username = data["edit-username"];
-    const email = data["edit-email"];
-    const description = data["edit-description"];
+    const name = data?.["edit-name"];
+    const username = data?.["edit-username"];
+    const email = data?.["edit-email"];
+    const description = data?.["edit-description"];
     const body = [{ name, username, email }, { description }]
       .map((group) =>
         Object.entries(group)
@@ -118,27 +125,29 @@ export default function EditForm({ heading, locus }: Props) {
       .join("\n\n");
 
     /** branch name from locus id */
-    const branch = data.id;
+    const branch = data?.id;
 
     /** pr title */
-    const title = data["edit-title"];
+    const title = data?.["edit-title"];
 
     /** remove edit metadata */
-    data = omitBy(cloneDeep(data), (value, key) => key.startsWith("edit-"));
+    const newLocus = omitBy(cloneDeep(data), (value, key) =>
+      key.startsWith("edit-"),
+    ) as Locus;
 
     /** make complete new clone of loci */
-    let newLoci = cloneDeep(loci);
+    const newLoci = cloneDeep(loci);
 
     /** look for existing locus */
-    const index = newLoci.findIndex((locus) => locus.id === data.id);
+    const index = newLoci.findIndex((locus) => locus.id === data?.id);
 
     /** is new locus vs existing locus */
     const existing = index !== -1;
 
     /** merge new locus data with existing data */
-    if (existing) newLoci[index] = data;
+    if (existing) newLoci[index] = newLocus;
     /** append new locus to end (will be sorted appropriately later) */ else
-      newLoci.push(data);
+      newLoci.push(newLocus);
 
     /** pr files to change */
     const files = [
@@ -147,6 +156,9 @@ export default function EditForm({ heading, locus }: Props) {
         content: JSON.stringify(newLoci, null, 2),
       },
     ];
+
+    if (!branch) throw Error("branch name missing");
+    if (!title) throw Error("title missing");
 
     return await createPR({
       owner: "dashnowlab",
