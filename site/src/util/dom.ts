@@ -5,7 +5,7 @@ import { debounce } from "lodash-es";
 export const preserveScroll = async (element: HTMLElement | null) => {
   if (!element) return;
   const oldY = element.getBoundingClientRect().top;
-  await sleep(0);
+  await sleep();
   const newY = element.getBoundingClientRect().top;
   window.scrollBy({ top: newY - oldY, behavior: "instant" });
 };

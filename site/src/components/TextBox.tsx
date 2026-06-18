@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from "react";
 import { useRef } from "react";
-import { FaXmark } from "react-icons/fa6";
+import { LuX } from "react-icons/lu";
 import Button from "@/components/Button";
 import clsx from "clsx";
 
@@ -52,7 +52,7 @@ export default function TextBox({
             }}
             aria-label="Clear textbox"
           >
-            <FaXmark />
+            <LuX />
           </Button>
         </div>
       </div>

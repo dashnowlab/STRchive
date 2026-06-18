@@ -42,9 +42,10 @@ export default function NumberBox({
             if (value && snapValues?.length) {
               const sortedSnaps = sortBy(uniq(snapValues));
               if (number < value)
-                number = sortedSnaps.findLast((v) => v <= number) ?? number;
+                number =
+                  sortedSnaps.findLast((value) => value <= number) ?? number;
               if (number > value)
-                number = sortedSnaps.find((v) => v >= number) ?? number;
+                number = sortedSnaps.find((value) => value >= number) ?? number;
             }
             onChange?.(number);
           }

@@ -1,4 +1,4 @@
-import { FaAngleUp, FaRegEnvelope } from "react-icons/fa6";
+import { LuChevronUp, LuMail } from "react-icons/lu";
 import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
 import Dialog from "@/components/Dialog";
@@ -17,7 +17,7 @@ export default function ViewCorner() {
           data-tooltip="Jump to top"
           onClick={() => window.scrollTo({ top: 0 })}
         >
-          <FaAngleUp />
+          <LuChevronUp />
         </Button>
       )}
       <Dialog
@@ -29,7 +29,7 @@ export default function ViewCorner() {
             id="corner-contact"
             data-tooltip="Contact us"
           >
-            <FaRegEnvelope />
+            <LuMail />
           </Button>
         }
       >

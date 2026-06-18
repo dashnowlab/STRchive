@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { FaBars, FaXmark } from "react-icons/fa6";
+import { LuMenu, LuX } from "react-icons/lu";
 import { firstInView } from "@/util/dom";
 import { useEventListener } from "@reactuses/core";
 import Button from "./Button";
@@ -65,7 +65,7 @@ export default function TableOfContents() {
           data-tooltip={open ? "Close" : "Open"}
         >
           Table of Contents
-          {open ? <FaXmark /> : <FaBars />}
+          {open ? <LuX /> : <LuMenu />}
         </Button>
 
         {/* links */}

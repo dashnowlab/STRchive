@@ -1,8 +1,14 @@
 ---
 /** LOCUS PAGE */
 
-import { FaCircleMinus, FaCirclePlus, FaRegCalendar } from "react-icons/fa6";
-import { LiaSlashSolid, LuBarcode, LuFeather } from "react-icons/lu";
+import { LiaSlashSolid } from "react-icons/lia";
+import {
+  LuBarcode,
+  LuCalendar,
+  LuCircleMinus,
+  LuCirclePlus,
+  LuFeather,
+} from "react-icons/lu";
 import { TbDna2, TbVirus } from "react-icons/tb";
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
@@ -100,7 +106,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <div class="box">
-        <div><FaRegCalendar />Updated</div>
+        <div><LuCalendar />Updated</div>
         <div>
           {blame.date}
           <br />
@@ -345,10 +351,10 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
             <div>Gene Strand</div>
             <div>
               {locus.gene_strand === "+" && (
-                <FaCirclePlus style={{ color: "var(--primary)" }} />
+                <LuCirclePlus style={{ color: "var(--primary)" }} />
               )}
               {locus.gene_strand === "-" && (
-                <FaCircleMinus style={{ color: "var(--secondary)" }} />
+                <LuCircleMinus style={{ color: "var(--secondary)" }} />
               )}
             </div>
           </div>

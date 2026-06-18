@@ -1,7 +1,6 @@
 import type loci from "~/STRchive-loci.json";
 import { useEffect, useState } from "react";
-import { FaArrowRight, FaCheck, FaXmark } from "react-icons/fa6";
-import { LuDownload } from "react-icons/lu";
+import { LuArrowRight, LuCheck, LuDownload, LuX } from "react-icons/lu";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
@@ -166,13 +165,13 @@ export default function LociTable({ loci }: Props) {
                   {counts.true && (
                     <>
                       {counts.true}
-                      <FaCheck className="text-primary" />
+                      <LuCheck className="text-primary" />
                     </>
                   )}
                   {counts.false && (
                     <>
                       {counts.false}
-                      <FaXmark className="text-secondary" />
+                      <LuX className="text-secondary" />
                     </>
                   )}
                 </>
@@ -271,7 +270,7 @@ export default function LociTable({ loci }: Props) {
                 design="bubble"
                 data-tooltip="Go to locus page"
               >
-                <FaArrowRight />
+                <LuArrowRight />
               </Button>
             ),
             sortable: false,

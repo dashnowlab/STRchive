@@ -206,10 +206,6 @@
     }
   }
 
-  .icon {
-    @apply h-[1em] w-[unset];
-  }
-
   [aria-disabled="true"] {
     @apply pointer-events-none cursor-not-allowed opacity-25 grayscale;
   }
