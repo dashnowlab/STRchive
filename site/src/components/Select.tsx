@@ -21,7 +21,7 @@ type Multi = {
 };
 
 type Props = {
-  label: ReactNode;
+  label?: ReactNode;
   options: { value: string; label?: ReactNode; tooltip?: string }[];
   tooltip?: string;
 } & (Single | Multi);
@@ -86,26 +86,27 @@ export default function Select({
             <LuChevronDown />
           </_Select.Icon>
         </_Select.Trigger>
-        <_Select.Portal>
-          <_Select.Positioner alignItemWithTrigger={false}>
-            <_Select.Popup>
-              <_Select.List className="flex min-w-(--button-width) flex-col rounded-md bg-white shadow-md">
-                {options.map(({ label, value, tooltip }, index) => (
-                  <_Select.Item
-                    key={index}
-                    value={value}
-                    className="flex cursor-pointer items-center gap-2 px-2 py-4 transition *:first:opacity-0 *:first:transition hover:bg-light-gray data-selected:*:first:opacity-100"
-                    data-tooltip={tooltip}
-                  >
-                    <LuCheck className="text-primary" />
-                    <_Select.ItemText>{label}</_Select.ItemText>
-                  </_Select.Item>
-                ))}
-              </_Select.List>
-            </_Select.Popup>
-          </_Select.Positioner>
-        </_Select.Portal>
       </label>
+
+      <_Select.Portal>
+        <_Select.Positioner alignItemWithTrigger={false} collisionPadding={20}>
+          <_Select.Popup>
+            <_Select.List className="flex flex-col rounded-md bg-white shadow-md">
+              {options.map(({ label, value, tooltip }, index) => (
+                <_Select.Item
+                  key={index}
+                  value={value}
+                  className="flex cursor-pointer items-center gap-2 px-4 py-2 transition outline-none *:first:opacity-0 *:first:transition hover:bg-light-gray data-highlighted:bg-light-gray data-selected:*:first:opacity-100"
+                  data-tooltip={tooltip}
+                >
+                  <LuCheck className="text-primary" />
+                  {label}
+                </_Select.Item>
+              ))}
+            </_Select.List>
+          </_Select.Popup>
+        </_Select.Positioner>
+      </_Select.Portal>
     </_Select.Root>
   );
 }

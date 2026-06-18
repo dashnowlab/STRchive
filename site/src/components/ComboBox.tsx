@@ -1,19 +1,17 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
-import { LuChevronDown } from "react-icons/lu";
-import Button from "@/components/Button";
-import {
-  Combobox,
-  ComboboxButton,
-  ComboboxInput,
-  ComboboxOption,
-  ComboboxOptions,
-} from "@headlessui/react";
-import clsx from "clsx";
+import { LuCheck } from "react-icons/lu";
+import { Combobox as _Combobox } from "@base-ui/react";
+
+type Option = {
+  value: string;
+  label?: ReactNode;
+  special?: boolean;
+};
 
 type Props = {
   label?: ReactNode;
-  options?: { value: string; label?: ReactNode }[];
+  options?: Option[];
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
@@ -31,86 +29,53 @@ export default function ComboBox({
 }: Props) {
   const [query, setQuery] = useState("");
 
+  /** custom entry */
+  if (query.trim())
+    options = [...options, { value: query, label: query, special: true }];
+
   return (
-    <label data-tooltip={tooltip}>
-      {label && <span>{label}</span>}
-      <Combobox
-        value={value}
-        onChange={(value) => {
-          if (value !== null) onChange(value);
-        }}
-        immediate
-        onClose={() => setQuery("")}
-      >
-        {({ value }) => {
-          /** find option matching current selected value */
-          const matchingOption = options.find(
-            (option) => option.value === value,
-          );
+    <_Combobox.Root
+      items={options}
+      value={value}
+      onValueChange={(value) => {
+        if (value !== null) onChange(value);
+      }}
+      inputValue={query}
+      onInputValueChange={setQuery}
+      onOpenChange={(open) => {
+        if (!open) setQuery("");
+      }}
+    >
+      <label data-tooltip={tooltip}>
+        {label}
+        <_Combobox.InputGroup className="flex min-h-10 w-full min-w-10 rounded-md bg-white ring-2 ring-inset">
+          <_Combobox.Input
+            className="grow px-4 py-2"
+            placeholder={placeholder}
+          />
+        </_Combobox.InputGroup>
+      </label>
 
-          const _options =
-            /** if selected value isn't in options, add entry for it */
-            value && !matchingOption
-              ? [{ value, label: value }, ...options]
-              : [...options];
-
-          /** filter options by search */
-          const filtered = _options.filter((option) =>
-            [option.value, option.label]
-              .join(" ")
-              .toLowerCase()
-              .includes(query.toLowerCase()),
-          );
-
-          return (
-            /** https://github.com/tailwindlabs/headlessui/issues/3597 */
-            <div className="contents">
-              <div className="relative flex min-h-10 w-full min-w-10 items-center gap-2 rounded-md bg-white">
-                <span
-                  className={clsx(
-                    "pointer-events-none absolute inset-0 truncate pr-8",
-                  )}
+      <_Combobox.Portal>
+        <_Combobox.Positioner collisionPadding={20}>
+          <_Combobox.Popup>
+            <_Combobox.List className="flex max-h-(--available-height) w-(--anchor-width) flex-col overflow-y-auto rounded-md bg-white shadow-md">
+              {(item: Option) => (
+                <_Combobox.Item
+                  key={item.value}
+                  value={item}
+                  className="flex cursor-pointer gap-2 px-4 py-2 transition hover:bg-light-gray data-highlighted:bg-light-gray"
                 >
-                  {matchingOption?.label || value}
-                </span>
-                <ComboboxInput
-                  className="h-10 w-full px-2 pr-8 text-current"
-                  placeholder={placeholder || "Search"}
-                  onChange={(event) => setQuery(event.target.value)}
-                />
-                <ComboboxButton
-                  as={Button}
-                  className="absolute right-0 grid size-10 place-items-center transition"
-                >
-                  <LuChevronDown />
-                </ComboboxButton>
-              </div>
-              <ComboboxOptions
-                className="flex w-(--input-width) flex-col rounded-md bg-white shadow-md"
-                anchor={{ to: "bottom", gap: 2, padding: 10 }}
-              >
-                {query.length > 0 && (
-                  <ComboboxOption
-                    value={query}
-                    className="flex cursor-pointer items-center px-4 py-2 transition hover:bg-light-gray data-focus:bg-light-gray"
-                  >
-                    "{query}"
-                  </ComboboxOption>
-                )}
-                {filtered.map((option, index) => (
-                  <ComboboxOption
-                    key={index}
-                    className="flex cursor-pointer items-center px-4 py-2 transition hover:bg-light-gray data-focus:bg-light-gray"
-                    value={option.value}
-                  >
-                    {option.label || <>&nbsp;</>}
-                  </ComboboxOption>
-                ))}
-              </ComboboxOptions>
-            </div>
-          );
-        }}
-      </Combobox>
-    </label>
+                  <_Combobox.ItemIndicator>
+                    <LuCheck className="text-primary" />
+                  </_Combobox.ItemIndicator>
+                  {item.special ? `"${item.label}"` : item.label}
+                </_Combobox.Item>
+              )}
+            </_Combobox.List>
+          </_Combobox.Popup>
+        </_Combobox.Positioner>
+      </_Combobox.Portal>
+    </_Combobox.Root>
   );
 }

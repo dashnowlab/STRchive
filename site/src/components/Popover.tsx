@@ -1,36 +1,39 @@
 import type { ReactNode } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import Button from "@/components/Button";
-import {
-  Popover as _Popover,
-  PopoverButton,
-  PopoverPanel,
-} from "@headlessui/react";
+import { Popover as _Popover } from "@base-ui/react";
 
 type Props = {
-  label: ReactNode;
+  label?: ReactNode;
   button: ReactNode;
   children: ReactNode;
+  tooltip?: string;
 };
 
 /** button that triggers floating panel of arbitrary content */
-export default function Popover({ label, button, children }: Props) {
+export default function Popover({ label, button, children, tooltip }: Props) {
   return (
-    <_Popover>
-      <label>
+    <_Popover.Root>
+      <label data-tooltip={tooltip}>
         {label}
-        <PopoverButton as={Button} design="plain">
+        <_Popover.Trigger render={<Button design="plain" />}>
           {button}
           <LuChevronDown />
-        </PopoverButton>
+        </_Popover.Trigger>
       </label>
 
-      <PopoverPanel
-        className="flex min-w-(--button-width) flex-col gap-1 rounded-md bg-white p-2 shadow-md"
-        anchor={{ to: "bottom", gap: 2, padding: 10 }}
-      >
-        {children}
-      </PopoverPanel>
-    </_Popover>
+      <_Popover.Portal>
+        <_Popover.Backdrop />
+        <_Popover.Positioner collisionPadding={20}>
+          <_Popover.Popup>
+            <_Popover.Viewport>
+              <div className="flex flex-col gap-1 rounded-md bg-white p-2 shadow-md">
+                {children}
+              </div>
+            </_Popover.Viewport>
+          </_Popover.Popup>
+        </_Popover.Positioner>
+      </_Popover.Portal>
+    </_Popover.Root>
   );
 }
