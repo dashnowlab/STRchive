@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import type { JsonData } from "@sagold/json-pointer";
 import type { AnnotationData, JsonError, Keyword } from "json-schema-library";
 import { cloneElement, Fragment, useMemo } from "react";
-import { LuArrowDown, LuArrowUp, LuPlus, LuTrash } from "react-icons/lu";
 import Button from "@/components/Button";
 import ComboBox from "@/components/ComboBox";
 import { H2 } from "@/components/Heading";
@@ -12,6 +11,12 @@ import Select from "@/components/Select";
 import TextBox from "@/components/TextBox";
 import { makeList } from "@/util/format";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
+import {
+  IconArrowDown,
+  IconArrowUp,
+  IconPlus,
+  IconTrash,
+} from "@tabler/icons-react";
 import clsx from "clsx";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
 import { cloneDeep, isObject, mapValues, range, size, uniq } from "lodash-es";
@@ -418,7 +423,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
                   setData(_data);
                 }}
               >
-                <LuArrowUp />
+                <IconArrowUp />
               </Button>
               <Button
                 aria-disabled={index === items - 1}
@@ -434,7 +439,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
                   setData(_data);
                 }}
               >
-                <LuArrowDown />
+                <IconArrowDown />
               </Button>
               <Button
                 data-tooltip="Remove"
@@ -444,7 +449,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
                   setData(_data);
                 }}
               >
-                <LuTrash />
+                <IconTrash />
               </Button>
             </div>
           </Fragment>
@@ -468,7 +473,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
             setData(_data);
           }}
         >
-          <LuPlus />
+          <IconPlus />
           <span>Add</span>
         </Button>
       </div>

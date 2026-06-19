@@ -1,12 +1,12 @@
 import type { ReactElement, ReactNode } from "react";
 import { cloneElement, createContext, useRef, useState } from "react";
-import { LuX } from "react-icons/lu";
 import Button from "@/components/Button";
 import {
   useClickOutside,
   useEventListener,
   useScrollLock,
 } from "@reactuses/core";
+import { IconX } from "@tabler/icons-react";
 
 export const DialogContext = createContext<{ isOpen: boolean }>({
   isOpen: false,
@@ -55,7 +55,7 @@ export default function Dialog({ trigger, title, children }: Props) {
           <div className="flex items-center p-4 shadow-md">
             <strong className="grow text-lg">{title}</strong>
             <Button onClick={close} autoFocus>
-              <LuX />
+              <IconX />
             </Button>
           </div>
 

@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
-import { uniq } from "lodash-es";
 
 type Props = {
   lines?: keyof typeof counts;

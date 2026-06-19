@@ -1,9 +1,9 @@
 import type curations from "~/criTRia-curations.json";
-import { LuArrowRight } from "react-icons/lu";
 import Button from "@/components/Button";
 import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
 import { tagOptions } from "@/data/tags";
+import { IconArrowRight } from "@tabler/icons-react";
 
 type Curations = typeof curations;
 
@@ -32,7 +32,7 @@ export default function CurationTable({ curations }: Props) {
               design="bubble"
               data-tooltip="Go to curation page"
             >
-              <LuArrowRight />
+              <IconArrowRight />
             </Button>
           ),
           sortable: false,

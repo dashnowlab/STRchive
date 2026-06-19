@@ -2,17 +2,17 @@ import type { ReactNode } from "react";
 import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
 import type { ValueOf } from "type-fest";
 import { useState } from "react";
-import {
-  LuArrowDownWideNarrow,
-  LuArrowUpDown,
-  LuArrowUpNarrowWide,
-  LuChevronLeft,
-  LuChevronRight,
-  LuChevronsLeft,
-  LuChevronsRight,
-} from "react-icons/lu";
 import Button from "@/components/Button";
 import Select from "@/components/Select";
+import {
+  IconArrowsSort,
+  IconChevronLeft,
+  IconChevronRight,
+  IconChevronsLeft,
+  IconChevronsRight,
+  IconSortAscending,
+  IconSortDescending,
+} from "@tabler/icons-react";
 import {
   createColumnHelper,
   flexRender,
@@ -191,13 +191,13 @@ export default function Table<Datum extends object>({
                           aria-label="Sort this column"
                         >
                           {header.column.getIsSorted() === "asc" && (
-                            <LuArrowUpNarrowWide />
+                            <IconSortAscending />
                           )}
                           {header.column.getIsSorted() === "desc" && (
-                            <LuArrowDownWideNarrow />
+                            <IconSortDescending />
                           )}
                           {header.column.getIsSorted() === false && (
-                            <LuArrowUpDown className="opacity-25" />
+                            <IconArrowsSort className="opacity-25" />
                           )}
                         </Button>
                       )}
@@ -267,14 +267,14 @@ export default function Table<Datum extends object>({
               aria-disabled={!table.getCanPreviousPage()}
               aria-label="First page"
             >
-              <LuChevronsLeft />
+              <IconChevronsLeft />
             </Button>
             <Button
               onClick={() => table.previousPage()}
               aria-disabled={!table.getCanPreviousPage()}
               aria-label="Previous page"
             >
-              <LuChevronLeft />
+              <IconChevronLeft />
             </Button>
             <Button
               onClick={() => {
@@ -292,14 +292,14 @@ export default function Table<Datum extends object>({
               aria-disabled={!table.getCanNextPage()}
               aria-label="Next page"
             >
-              <LuChevronRight />
+              <IconChevronRight />
             </Button>
             <Button
               onClick={() => table.setPageIndex(table.getPageCount() - 1)}
               aria-disabled={!table.getCanNextPage()}
               aria-label="Last page"
             >
-              <LuChevronsRight />
+              <IconChevronsRight />
             </Button>
           </div>
 

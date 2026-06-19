@@ -1,5 +1,5 @@
 import type { ComponentProps } from "react";
-import { LuExternalLink } from "react-icons/lu";
+import { IconExternalLink } from "@tabler/icons-react";
 
 type Props = {
   to: string;
@@ -21,7 +21,7 @@ export default function Link({ to, newTab, arrow, children, ...props }: Props) {
       {children}
       {/* indicate third-party site with icon  */}
       {(arrow ?? external) && !!children && (
-        <LuExternalLink className="ml-1 inline-block -translate-y-0.5" />
+        <IconExternalLink className="ml-1 inline-block -translate-y-0.5" />
       )}
     </a>
   );

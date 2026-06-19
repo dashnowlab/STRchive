@@ -1,20 +1,20 @@
 import type { ComponentProps, ReactNode } from "react";
-import {
-  LuCircleAlert,
-  LuCircleCheck,
-  LuInfo,
-  LuTriangleAlert,
-} from "react-icons/lu";
 import Loading from "@/assets/loading.svg?react";
+import {
+  IconAlertCircle,
+  IconAlertTriangle,
+  IconCircleCheck,
+  IconInfoCircle,
+} from "@tabler/icons-react";
 import clsx from "clsx";
 
 /** available categories of marks and associated styles */
 export const types = {
-  info: { className: "text-tertiary", icon: <LuInfo /> },
+  info: { className: "text-tertiary", icon: <IconInfoCircle /> },
   loading: { className: "text-gray", icon: <Loading /> },
-  success: { className: "text-primary", icon: <LuCircleCheck /> },
-  warning: { className: "text-secondary", icon: <LuCircleAlert /> },
-  error: { className: "text-secondary", icon: <LuTriangleAlert /> },
+  success: { className: "text-primary", icon: <IconCircleCheck /> },
+  warning: { className: "text-secondary", icon: <IconAlertCircle /> },
+  error: { className: "text-secondary", icon: <IconAlertTriangle /> },
 };
 
 type Type = keyof typeof types;

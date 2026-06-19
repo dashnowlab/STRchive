@@ -1,6 +1,5 @@
 import type { Loci } from "@/data/types";
 import { useEffect, useState } from "react";
-import { LuArrowRight, LuCheck, LuDownload, LuX } from "react-icons/lu";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
 import Link from "@/components/Link";
@@ -14,6 +13,12 @@ import { deriveLocus } from "@/data/derived";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
+import {
+  IconArrowRight,
+  IconCheck,
+  IconDownload,
+  IconX,
+} from "@tabler/icons-react";
 import clsx from "clsx";
 import { countBy, map, max, min, pick, uniq } from "lodash-es";
 
@@ -162,13 +167,13 @@ export default function LociTable({ loci }: Props) {
                 {counts.true && (
                   <>
                     {counts.true}
-                    <LuCheck className="text-primary" />
+                    <IconCheck className="text-primary" />
                   </>
                 )}
                 {counts.false && (
                   <>
                     {counts.false}
-                    <LuX className="text-secondary" />
+                    <IconX className="text-secondary" />
                   </>
                 )}
               </>
@@ -249,7 +254,7 @@ export default function LociTable({ loci }: Props) {
             data-tooltip="Download filtered loci"
           >
             Download
-            <LuDownload />
+            <IconDownload />
           </Button>
         </div>
       </div>
@@ -266,7 +271,7 @@ export default function LociTable({ loci }: Props) {
                 design="bubble"
                 data-tooltip="Go to locus page"
               >
-                <LuArrowRight />
+                <IconArrowRight />
               </Button>
             ),
             sortable: false,

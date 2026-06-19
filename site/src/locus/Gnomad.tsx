@@ -43,23 +43,20 @@ export default function Gnomad({ title, data }: Props) {
         <Select label="Sex" options={sexes} value={sex} onChange={setSex} />
       )}
 
-      <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
-        <RangeChart
-          title={
-            sexes.length > 1 ? `${title} (${sex.replace("_", " ")})` : title
-          }
-          xLabel="Pathogenic Genotype (%)"
-          yLabels={labels}
-          values={values}
-          lowerBounds={confidence_lower_bounds}
-          upperBounds={confidence_upper_bounds}
-          tooltip={(index) => {
-            const label = labels[index];
-            const count = counts[index];
-            const value = values[index];
-            const lower = confidence_lower_bounds[index];
-            const upper = confidence_upper_bounds[index];
-            return `
+      <RangeChart
+        title={sexes.length > 1 ? `${title} (${sex.replace("_", " ")})` : title}
+        xLabel="Pathogenic Genotype (%)"
+        yLabels={labels}
+        values={values}
+        lowerBounds={confidence_lower_bounds}
+        upperBounds={confidence_upper_bounds}
+        tooltip={(index) => {
+          const label = labels[index];
+          const count = counts[index];
+          const value = values[index];
+          const lower = confidence_lower_bounds[index];
+          const upper = confidence_upper_bounds[index];
+          return `
               <p>
                 <span>${label}</span>
               </p>
@@ -79,9 +76,8 @@ export default function Gnomad({ title, data }: Props) {
                 <span>${count.toLocaleString()}</span>
               </p>
             `;
-          }}
-        />
-      </div>
+        }}
+      />
 
       <p className="text-center text-balance">
         Pathogenic Genotype (%): % of individuals predicted to be affected based

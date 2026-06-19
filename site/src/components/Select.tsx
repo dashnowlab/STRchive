@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 import { useRef } from "react";
-import { LuCheck, LuChevronDown } from "react-icons/lu";
 import Button from "@/components/Button";
 import { preserveScroll } from "@/util/dom";
 import { Select as _Select } from "@base-ui/react";
+import { IconCheck, IconChevronDown } from "@tabler/icons-react";
 import clsx from "clsx";
 
 type Single = {
@@ -83,7 +83,7 @@ export default function Select({
           </_Select.Value>
 
           <_Select.Icon>
-            <LuChevronDown />
+            <IconChevronDown />
           </_Select.Icon>
         </_Select.Trigger>
       </label>
@@ -99,7 +99,7 @@ export default function Select({
                   className="flex cursor-pointer items-center gap-2 px-4 py-2 transition outline-none *:first:opacity-0 *:first:transition hover:bg-light-gray data-highlighted:bg-light-gray data-selected:*:first:opacity-100"
                   data-tooltip={tooltip}
                 >
-                  <LuCheck className="text-primary" />
+                  <IconCheck className="text-primary" />
                   {label || "–"}
                 </_Select.Item>
               ))}

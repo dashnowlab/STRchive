@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { LuMenu, LuX } from "react-icons/lu";
 import { firstInView } from "@/util/dom";
 import { useEventListener } from "@reactuses/core";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import Button from "./Button";
 
 /** all used heading elements */
@@ -65,7 +65,7 @@ export default function TableOfContents() {
           data-tooltip={open ? "Close" : "Open"}
         >
           Table of Contents
-          {open ? <LuX /> : <LuMenu />}
+          {open ? <IconX /> : <IconMenu2 />}
         </Button>
 
         {/* links */}

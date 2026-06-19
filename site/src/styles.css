@@ -205,6 +205,10 @@
   [aria-disabled="true"] {
     @apply pointer-events-none cursor-not-allowed opacity-25 grayscale;
   }
+
+  .tabler-icon {
+    @apply h-[1.25em] w-[unset];
+  }
 }
 
 @utility width-full {

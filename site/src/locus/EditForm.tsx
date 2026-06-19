@@ -1,8 +1,6 @@
 import type { ReactNode } from "react";
 import type { Locus } from "@/data/types";
 import { useMemo } from "react";
-import { FaXmark } from "react-icons/fa6";
-import { LuFeather, LuSend } from "react-icons/lu";
 import { createPR } from "@/api/pr";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
@@ -15,6 +13,7 @@ import { repo } from "@/layouts/meta";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
 import { useLocalStorage } from "@reactuses/core";
+import { IconFeather, IconSend, IconX } from "@tabler/icons-react";
 import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
 import loci from "~/STRchive-loci.json";
 import _schema from "~/STRchive-loci.schema.json";
@@ -182,7 +181,7 @@ export default function EditForm({ heading, locus }: Props) {
     <Form onSubmit={submit}>
       <section>
         <H1>
-          <LuFeather />
+          <IconFeather />
           {heading}
         </H1>
 
@@ -202,7 +201,7 @@ export default function EditForm({ heading, locus }: Props) {
               }}
             >
               Forget
-              <FaXmark />
+              <IconX />
             </Button>
           </div>
         )}
@@ -244,7 +243,7 @@ export default function EditForm({ heading, locus }: Props) {
           design="bubble"
           aria-disabled={status === "success"}
         >
-          <LuSend />
+          <IconSend />
           <span>Submit</span>
         </Button>
       </section>

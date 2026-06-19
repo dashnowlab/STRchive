@@ -1,8 +1,8 @@
 ---
-import { LuBarcode, LuNewspaper } from "react-icons/lu";
 import Logo from "@/assets/logo.svg?react";
 import Button from "@/components/Button";
 import Layout from "@/layouts/Layout.astro";
+import { IconBarcode, IconNews } from "@tabler/icons-react";
 ---
 
 <Layout title="Home">
@@ -20,14 +20,14 @@ import Layout from "@/layouts/Layout.astro";
 
     <div class="flex flex-wrap items-center justify-center gap-4">
       <Button className="w-40" to="/loci" design="bubble">
-        Loci<LuBarcode />
+        Loci<IconBarcode />
       </Button>
       <Button
         className="w-40"
         to="https://doi.org/10.1186/s13073-025-01454-4"
         design="bubble"
       >
-        Paper<LuNewspaper />
+        Paper<IconNews />
       </Button>
     </div>
   </section>

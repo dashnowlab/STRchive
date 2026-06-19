@@ -1,8 +1,8 @@
-import { LuChevronUp, LuMail } from "react-icons/lu";
 import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
 import Dialog from "@/components/Dialog";
 import { useWindowScroll } from "@reactuses/core";
+import { IconChevronUp, IconMail } from "@tabler/icons-react";
 
 /** controls that float in corner of screen */
 export default function ViewCorner() {
@@ -17,7 +17,7 @@ export default function ViewCorner() {
           data-tooltip="Jump to top"
           onClick={() => window.scrollTo({ top: 0 })}
         >
-          <LuChevronUp />
+          <IconChevronUp />
         </Button>
       )}
       <Dialog
@@ -29,7 +29,7 @@ export default function ViewCorner() {
             id="corner-contact"
             data-tooltip="Contact us"
           >
-            <LuMail />
+            <IconMail />
           </Button>
         }
       >

@@ -1,11 +1,15 @@
 ---
-import { LuBadgeInfo, LuBookMarked, LuDownload } from "react-icons/lu";
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import CurationTable from "@/critria/CurationTable";
 import Layout from "@/layouts/Layout.astro";
+import {
+  IconBookmark,
+  IconDownload,
+  IconInfoCircle,
+} from "@tabler/icons-react";
 import curations from "~/criTRia-curations.json";
 import sop from "~/criTRia-SOP.pdf?url";
 ---
@@ -13,7 +17,7 @@ import sop from "~/criTRia-SOP.pdf?url";
 <Layout title="criTRia">
   <TableOfContents client:only="react" />
   <section>
-    <H1><LuBadgeInfo />criTRia</H1>
+    <H1><IconInfoCircle />criTRia</H1>
 
     <p>
       A framework for evaluating the strength of evidence supporting a
@@ -30,12 +34,12 @@ import sop from "~/criTRia-SOP.pdf?url";
     </p>
 
     <Button className="w-60 self-center" to={sop} design="bubble">
-      <LuDownload />criTRia SOP PDF
+      <IconDownload />criTRia SOP PDF
     </Button>
   </section>
 
   <section>
-    <H2><LuBookMarked />Locus-disease curations</H2>
+    <H2><IconBookmark />Locus-disease curations</H2>
 
     <CurationTable client:load curations={curations} />
   </section>

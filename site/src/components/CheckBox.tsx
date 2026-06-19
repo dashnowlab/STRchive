@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from "react";
 import { useEffect, useRef } from "react";
-import { LuCheck, LuX } from "react-icons/lu";
+import { IconCheck, IconX } from "@tabler/icons-react";
 import clsx from "clsx";
 
 type Props = {
@@ -52,8 +52,8 @@ export default function CheckBox({
           aria-label={tooltip}
           {...props}
         />
-        {checked === true && <LuCheck />}
-        {checked === false && <LuX />}
+        {checked === true && <IconCheck />}
+        {checked === false && <IconX />}
       </div>
       {label && <span>{label}</span>}
     </label>

@@ -1,14 +1,14 @@
-import { BsStars } from "react-icons/bs";
 import {
-  FaCheck,
-  FaExclamation,
-  FaMinus,
-  FaPlus,
-  FaPlusMinus,
-  FaQuestion,
-  FaSlash,
-  FaXmark,
-} from "react-icons/fa6";
+  IconCheck,
+  IconExclamationMark,
+  IconMinus,
+  IconPlus,
+  IconPlusMinus,
+  IconQuestionMark,
+  IconSlash,
+  IconStars,
+  IconX,
+} from "@tabler/icons-react";
 import { newThreshold } from "./derived";
 
 /** https://tailwindcss.com/docs/colors */
@@ -26,7 +26,7 @@ export const tagOptions = [
     /** longer description, for tooltips and etc. */
     description: `Less than ~${newThreshold} years old`,
     /** icon */
-    Icon: BsStars,
+    Icon: IconStars,
     /** classes on icon */
     className: "bg-primary text-white",
     /** whether to show in loci page table */
@@ -35,13 +35,13 @@ export const tagOptions = [
   {
     key: "gene_strand",
     value: "+",
-    Icon: FaPlus,
+    Icon: IconPlus,
     className: "bg-primary text-white",
   },
   {
     key: "gene_strand",
     value: "-",
-    Icon: FaMinus,
+    Icon: IconMinus,
     className: "bg-secondary text-white",
   },
 
@@ -198,7 +198,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Definitive",
     label: "Definitive",
-    Icon: FaCheck,
+    Icon: IconCheck,
     description:
       "There is definitive evidence for this locus-disease relationship",
     className: "bg-best text-white",
@@ -208,7 +208,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Strong",
     label: "Strong",
-    Icon: FaPlus,
+    Icon: IconPlus,
     description: "There is strong evidence for this locus-disease relationship",
     className: "bg-good/66 text-black",
     filter: true,
@@ -217,7 +217,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Moderate",
     label: "Moderate",
-    Icon: FaPlusMinus,
+    Icon: IconPlusMinus,
     description:
       "There is moderate evidence for this locus-disease relationship",
     className: "bg-okay/33 text-black",
@@ -227,7 +227,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Limited",
     label: "Limited",
-    Icon: FaMinus,
+    Icon: IconMinus,
     description:
       "There is limited evidence for this locus-disease relationship",
     className: "bg-warn/33 text-black",
@@ -237,7 +237,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Disputed",
     label: "Disputed",
-    Icon: FaExclamation,
+    Icon: IconExclamationMark,
     description: "Evidence disputes this gene-disease relationship",
     className: "bg-bad/66 text-black",
     filter: true,
@@ -246,7 +246,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Refuted",
     label: "Refuted",
-    Icon: FaXmark,
+    Icon: IconX,
     description: "Evidence refutes this gene-disease relationship",
     className: "bg-worst text-white",
     filter: true,
@@ -255,7 +255,7 @@ export const tagOptions = [
     key: "evidence",
     value: "No Known Relationship",
     label: "No Known",
-    Icon: FaSlash,
+    Icon: IconSlash,
     description: "No known evidence for this locus-disease relationship",
     className: "bg-warn/33 text-black",
     filter: true,
@@ -264,7 +264,7 @@ export const tagOptions = [
     key: "evidence",
     value: "Provisional",
     label: "Provisional",
-    Icon: FaQuestion,
+    Icon: IconQuestionMark,
     description:
       "Provisional: this locus-disease relationship has been proposed but has not yet been evaluated",
     className: "bg-gray text-white",

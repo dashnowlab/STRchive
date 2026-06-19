@@ -1,7 +1,7 @@
 import type { ComponentProps, ReactNode } from "react";
 import { useRef } from "react";
-import { LuX } from "react-icons/lu";
 import Button from "@/components/Button";
+import { IconX } from "@tabler/icons-react";
 import clsx from "clsx";
 
 type Props = {
@@ -52,7 +52,7 @@ export default function TextBox({
             }}
             aria-label="Clear textbox"
           >
-            <LuX />
+            <IconX />
           </Button>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
-import { LuChevronDown } from "react-icons/lu";
 import Button from "@/components/Button";
 import { Popover as _Popover } from "@base-ui/react";
+import { IconChevronDown } from "@tabler/icons-react";
 
 type Props = {
   label?: ReactNode;
@@ -18,7 +18,7 @@ export default function Popover({ label, button, children, tooltip }: Props) {
         {label}
         <_Popover.Trigger render={<Button design="plain" />}>
           {button}
-          <LuChevronDown />
+          <IconChevronDown />
         </_Popover.Trigger>
       </label>
 

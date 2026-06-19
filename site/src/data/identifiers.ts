@@ -1,4 +1,4 @@
-import { FaBookMedical, FaLaptopMedical } from "react-icons/fa6";
+import { IconDeviceLaptop, IconReportMedical } from "@tabler/icons-react";
 
 /** get identifiers for object */
 export const getIdentifiers = (object: Record<string, unknown>) =>
@@ -6,7 +6,7 @@ export const getIdentifiers = (object: Record<string, unknown>) =>
   [
     {
       name: "Clinical Links",
-      Icon: FaBookMedical,
+      Icon: IconReportMedical,
       identifiers: [
         {
           key: "gard",
@@ -74,7 +74,7 @@ export const getIdentifiers = (object: Record<string, unknown>) =>
     },
     {
       name: "Bioinformatical Links",
-      Icon: FaLaptopMedical,
+      Icon: IconDeviceLaptop,
       identifiers: [
         {
           key: "gnomad",

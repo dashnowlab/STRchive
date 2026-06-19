@@ -1,5 +1,4 @@
 import { useContext, useEffect } from "react";
-import { LuSend } from "react-icons/lu";
 import { createIssue } from "@/api/issue";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
@@ -13,6 +12,7 @@ import { userAgent } from "@/util/browser";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
 import { useLocalStorage } from "@reactuses/core";
+import { IconSend } from "@tabler/icons-react";
 import clsx from "clsx";
 import { mapValues, startCase, truncate } from "lodash-es";
 
@@ -182,7 +182,7 @@ export default function ContactForm() {
 
       {status === "" && (
         <Button className="w-60 self-center" design="plain" type="submit">
-          <LuSend />
+          <IconSend />
           Submit
         </Button>
       )}

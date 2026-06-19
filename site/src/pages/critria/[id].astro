@@ -1,5 +1,4 @@
 ---
-import { LuArrowLeft, LuArrowRight, LuBookMarked } from "react-icons/lu";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
@@ -8,6 +7,21 @@ import Tag from "@/components/Tag";
 import EvidenceTable from "@/critria/EvidenceTable";
 import Layout from "@/layouts/Layout.astro";
 import { parse } from "@/util/markdown";
+import {
+  IconArrowLeft,
+  IconArrowRight,
+  IconAward,
+  IconBookmark,
+  IconBooks,
+  IconCalendarDue,
+  IconChecks,
+  IconDna2,
+  IconHistory,
+  IconSitemap,
+  IconTimelineEventText,
+  IconUserCheck,
+  IconVirus,
+} from "@tabler/icons-react";
 import curations from "~/criTRia-curations.json";
 
 /** generate pages for each datum, paths based on id */
@@ -29,43 +43,43 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
   <TableOfContents client:only="react" />
 
   <section>
-    <H1><LuBookMarked />Curation {nice_id}</H1>
+    <H1><IconBookmark />Curation {nice_id}</H1>
 
     <Button
       className="w-60 self-center"
       to={`/loci/${curation.Locus_ID}`}
       design="bubble"
     >
-      Locus Page<LuArrowRight />
+      Locus Page<IconArrowRight />
     </Button>
 
     <div class="boxes">
       <div class="box">
-        <strong>Gene</strong>
+        <strong><IconDna2 />Gene</strong>
         {curation.Gene}
       </div>
       <div class="box">
-        <strong>Disease</strong>
+        <strong><IconVirus />Disease</strong>
         {curation.Disease_ID}
       </div>
       <div class="box">
-        <strong>Inheritance</strong>
+        <strong><IconSitemap />Inheritance</strong>
         {curation.Inheritance ?? "–"}
       </div>
       <div class="box">
-        <strong>Classification</strong>
+        <strong><IconChecks />Classification</strong>
         <Tag value={curation.classification} />
       </div>
       <div class="box">
-        <strong>Total Score</strong>
+        <strong><IconAward />Total Score</strong>
         {curation.total_score}
       </div>
       <div class="box">
-        <strong>Publications Reviewed</strong>
+        <strong><IconBooks />Pubs Reviewed</strong>
         {curation.publication_count ?? "–"}
       </div>
       <div class="box">
-        <strong>Publication Span</strong>
+        <strong><IconCalendarDue />Publication Span</strong>
         {
           curation.publication_interval_years != null
             ? `${curation.publication_interval_years} years`
@@ -73,7 +87,7 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
         }
       </div>
       <div class="box">
-        <strong>Publication Interval</strong>
+        <strong><IconTimelineEventText />Publication Interval</strong>
         {
           curation.publication_interval_years != null
             ? `${curation.publication_interval_years} years`
@@ -81,11 +95,11 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
         }
       </div>
       <div class="box">
-        <strong>Last Updated</strong>
+        <strong><IconHistory />Last Updated</strong>
         {curation.Date}
       </div>
       <div class="box-2">
-        <strong>Curator(s)</strong>
+        <strong><IconUserCheck />Curator(s)</strong>
         {curation.Curator}
       </div>
     </div>
@@ -101,7 +115,7 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
     }
 
     <Button className="w-60 self-center" to="/critria" design="bubble">
-      <LuArrowLeft />All CriTRia Curations
+      <IconArrowLeft />All CriTRia Curations
     </Button>
   </section>
 
