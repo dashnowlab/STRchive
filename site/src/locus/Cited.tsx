@@ -3,10 +3,12 @@ import { Fragment } from "react";
 import Link from "@/components/Link";
 
 type Props = {
-  value?: {
-    text: string;
-    references: (Citation & { number: number })[];
-  }[] | null;
+  value?:
+    | {
+        text: string;
+        references: (Citation & { number: number })[];
+      }[]
+    | null;
 };
 
 /** render field value that has in-text references */

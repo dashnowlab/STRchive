@@ -143,15 +143,15 @@ export default function LociTable({ loci }: Props) {
     );
 
   return (
-    <div className="flex w-full max-w-full flex-col items-center gap-4">
+    <>
       {/* filters */}
       <div
         className={clsx(
-          "flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2",
+          "flex flex-wrap items-center justify-center gap-x-4 gap-y-2",
           "w-full",
         )}
       >
-        <div className="flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <Popover
             label="Tags"
             button={(() => {
@@ -197,7 +197,7 @@ export default function LociTable({ loci }: Props) {
           </Popover>
         </div>
 
-        <div className="flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <TextBox
             className="w-30"
             placeholder="Search"
@@ -205,7 +205,7 @@ export default function LociTable({ loci }: Props) {
             onChange={setSearch}
           />
 
-          <div className="flex items-center gap-1.25">
+          <div className="flex items-center gap-1">
             Motif length
             <NumberBox
               data-tooltip="Motif length min"
@@ -237,7 +237,7 @@ export default function LociTable({ loci }: Props) {
         <div className="grow" />
 
         {/* row count */}
-        <div className="flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <strong>{filteredLoci.length.toLocaleString()} loci</strong>
           <Button
             design="plain"
@@ -277,7 +277,7 @@ export default function LociTable({ loci }: Props) {
             /** use number value so column sorted by that instead of alphabetically */
             key: "tag_sort",
             name: "Tags",
-            className: "gap-1!",
+            className: "gap-1",
             render: (cell, row) =>
               tagOptions
                 .filter(
@@ -340,6 +340,6 @@ export default function LociTable({ loci }: Props) {
           }),
         ])}
       />
-    </div>
+    </>
   );
 }

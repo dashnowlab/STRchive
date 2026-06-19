@@ -68,13 +68,9 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       )
     }
 
-    <div
-      class="flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2"
-    >
-      <Button to="/critria" design="bubble">
-        <LuArrowLeft />All CriTRia Curations
-      </Button>
-    </div>
+    <Button className="self-center" to="/critria" design="bubble">
+      <LuArrowLeft />All CriTRia Curations
+    </Button>
   </section>
 
   <section>

@@ -9,7 +9,7 @@ import globals from "globals";
 import tslint from "typescript-eslint";
 
 export default defineConfig([
-  globalIgnores(["dist", "public"]),
+  globalIgnores(["dist", "public", ".astro", "cloud"]),
 
   // https://github.com/mdx-js/eslint-mdx/issues/92
   {

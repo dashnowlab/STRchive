@@ -1,7 +1,5 @@
 import type { ComponentProps, ReactNode } from "react";
 import { useEffect, useRef } from "react";
-import checkUrl from "@/assets/check.svg?inline";
-import xUrl from "@/assets/x.svg?inline";
 import clsx from "clsx";
 
 type Props = {
@@ -40,14 +38,6 @@ export default function CheckBox({
               : "bg-white",
           className,
         )}
-        style={{
-          backgroundImage:
-            checked === true
-              ? `url("${checkUrl}")`
-              : checked === false
-                ? `url("${xUrl}")`
-                : "none",
-        }}
         checked={!!checked}
         onChange={() => {
           if (checked === "mixed") onChange?.(true);

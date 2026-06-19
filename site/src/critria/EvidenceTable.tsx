@@ -47,6 +47,7 @@ export default function EvidenceTable({ evidence }: Props) {
         column({
           key: "Evidence detail",
           name: "Evidence Detail",
+          className: "text-left justify-left",
         }),
       ])}
     />

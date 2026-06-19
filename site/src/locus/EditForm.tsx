@@ -192,7 +192,7 @@ export default function EditForm({ heading, locus }: Props) {
         </Alert>
 
         {storageExists && (
-          <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
             Loaded saved draft
             <Button
               design="plain"

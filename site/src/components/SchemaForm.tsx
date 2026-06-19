@@ -258,7 +258,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
 
   /** error component to show */
   const error = isError ? (
-    <span className="overflow-wrap-break-word col-span-full -mt-2.5 text-secondary">
+    <span className="col-span-full -mt-2 wrap-break-word text-secondary">
       {fieldErrors
         .map(({ code, data, message }) => {
           /** prettify error message */
@@ -314,7 +314,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
 
   /** field control to show */
   let control = (
-    <span className="overflow-wrap-break-word col-span-full -mt-2.5 text-secondary">
+    <span className="col-span-full -mt-2 wrap-break-word text-secondary">
       missing control
     </span>
   );
@@ -427,7 +427,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
         ))}
 
         <Button
-          style={{ gridColumn: "1 / -1" }}
+          className="col-span-full"
           design="plain"
           onClick={() => {
             /** add new item to array */

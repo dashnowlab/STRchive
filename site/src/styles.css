@@ -106,7 +106,7 @@
   }
 
   blockquote {
-    @apply bg-light-gray flex max-w-full flex-col gap-2 rounded-md p-8;
+    @apply bg-light-gray flex flex-col gap-2 rounded-md p-8;
   }
 
   label {
@@ -161,11 +161,11 @@
   }
 
   th {
-    @apply border-light-gray border-b-2 px-2 py-4 font-medium;
+    @apply border-light-gray border-b-2 p-2 font-medium;
   }
 
   td {
-    @apply border-light-gray px-2 py-4 not-first:border-l;
+    @apply border-light-gray p-2 not-first:border-l;
   }
 
   thead tr {

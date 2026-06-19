@@ -31,7 +31,7 @@ export default function NumberBox({
         type="number"
         className={clsx(
           className,
-          "field-sizing-content min-h-10 min-w-10 rounded-md bg-white px-4 py-2 ring-2 ring-inset",
+          "field-sizing-content min-h-10 min-w-10 rounded-md bg-white px-4 py-2 leading-normal ring-2 ring-inset",
         )}
         value={typeof value === "number" && !Number.isNaN(value) ? value : ""}
         onChange={(event) => {

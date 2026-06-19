@@ -147,7 +147,7 @@ export default function Table<Datum extends object>({
   });
 
   return (
-    <div className="flex w-full flex-col items-center gap-2">
+    <div className="flex w-full flex-col items-center gap-4">
       <div className="w-full overflow-x-auto rounded-md shadow-md">
         {/* table */}
         <table
@@ -183,7 +183,7 @@ export default function Table<Datum extends object>({
                       {/* sort button */}
                       {header.column.getCanSort() && (
                         <Button
-                          className="p-0! text-dark-gray hover:bg-transparent hover:text-primary"
+                          className="text-dark-gray hover:bg-transparent hover:text-primary"
                           data-active={
                             header.column.getIsSorted() ? "" : undefined
                           }

@@ -42,7 +42,7 @@ export default function Tag({
   if (small)
     return (
       <div
-        className={clsx("rounded-full p-1 grid place-items-center", className)}
+        className={clsx("grid place-items-center rounded-full p-1", className)}
         data-tooltip={tooltip}
       >
         {Icon && <Icon className="size-3" />}

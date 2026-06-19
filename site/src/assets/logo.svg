@@ -9,7 +9,8 @@
       --duration: 3s;
     }
 
-    [data-logo] path {
+    [data-logo] path,
+    [data-logo] use {
       --delay: 0;
       animation: draw var(--duration) calc(var(--delay) * var(--duration)) ease
         both;

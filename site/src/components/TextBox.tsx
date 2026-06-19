@@ -37,14 +37,14 @@ export default function TextBox({
           ref={ref}
           type="text"
           className={clsx(
-            "w-full rounded-md px-4 py-2 pr-10",
+            "w-full rounded-md px-4 py-2 pr-10 leading-normal",
             multi && "h-full resize-none",
           )}
           onChange={(event) => onChange?.(event.target.value)}
           {...props}
         />
 
-        <div className="absolute top-0 right-0 flex items-center">
+        <div className="absolute top-0 right-0 flex size-10 items-center">
           <Button
             onClick={() => {
               if (ref.current) ref.current.value = "";

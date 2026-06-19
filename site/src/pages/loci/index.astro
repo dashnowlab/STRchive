@@ -98,9 +98,7 @@ const cols = uniq(map(catalogs, "genome"));
   <section>
     <H1><LuBarcode />Loci</H1>
 
-    <div
-      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
-    >
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
       <span> Tandem repeat loci associated with Mendelian diseases. </span>
 
       <Button to={`${repo}/tree/main/data`} design="bubble">
@@ -133,7 +131,7 @@ const cols = uniq(map(catalogs, "genome"));
           {
             rows.map((row) => (
               <tr>
-                <td class="w-[35%] ">
+                <td class="w-[35%]">
                   {row.link ? (
                     <Link to={row.link}>
                       <strong>{row.primary}</strong>
@@ -192,7 +190,7 @@ const cols = uniq(map(catalogs, "genome"));
         />
       </div>
 
-      <div class="flex max-w-full flex-col items-center gap-8">
+      <div class="flex flex-col items-center gap-8">
         <H2><LuChartCandlestick />Age of Onset</H2>
         <PlotlyChart
           client:only="react"
