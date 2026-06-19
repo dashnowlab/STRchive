@@ -20,14 +20,16 @@ const { id } = Astro.params;
 /** look up full curation entry from id */
 const curation = curations.find((item) => item.Locus_ID === id);
 
-if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
+if (!curation) throw new Error(`no curation found for locus: ${id}`);
+
+const nice_id = curation.Locus_ID.split("_").join(" ");
 ---
 
-<Layout title={curation.Locus_ID}>
+<Layout title={`Curation ${nice_id}`}>
   <TableOfContents client:only="react" />
 
   <section>
-    <H1><LuBookMarked />{curation.Locus_ID}</H1>
+    <H1><LuBookMarked />Curation {nice_id}</H1>
 
     <dl>
       <dt>Gene</dt>
@@ -68,7 +70,7 @@ if (!curation) throw new Error(`No criTRia curation found for locus: ${id}`);
       )
     }
 
-    <Button className="self-center" to="/critria" design="bubble">
+    <Button className="w-60 self-center" to="/critria" design="bubble">
       <LuArrowLeft />All CriTRia Curations
     </Button>
   </section>

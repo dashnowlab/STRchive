@@ -4,7 +4,7 @@ export const mock = new URL(window.location.href).searchParams.has("mock");
 /** general request */
 export async function request(
   /** request url */
-  url,
+  url: URL | string,
   /** fetch options */
   options = {},
   /** parse response mode */

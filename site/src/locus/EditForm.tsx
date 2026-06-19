@@ -240,6 +240,7 @@ export default function EditForm({ heading, locus }: Props) {
         </Alert>
 
         <Button
+          className="w-60"
           type="submit"
           design="bubble"
           aria-disabled={status === "success"}

@@ -72,11 +72,11 @@
   }
 
   h1 {
-    @apply justify-center text-center text-3xl uppercase;
+    @apply justify-center text-center text-3xl;
   }
 
   h2 {
-    @apply justify-center text-center text-2xl uppercase;
+    @apply justify-center text-center text-2xl;
   }
 
   h3 {

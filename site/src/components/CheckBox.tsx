@@ -1,5 +1,6 @@
 import type { ComponentProps, ReactNode } from "react";
 import { useEffect, useRef } from "react";
+import { LuCheck, LuX } from "react-icons/lu";
 import clsx from "clsx";
 
 type Props = {
@@ -26,11 +27,9 @@ export default function CheckBox({
 
   return (
     <label data-tooltip={tooltip}>
-      <input
-        ref={ref}
-        type="checkbox"
+      <div
         className={clsx(
-          "size-5 appearance-none rounded-sm border-current accent-primary ring-2 ring-inset",
+          "grid size-5 appearance-none place-content-center rounded-sm border-current text-white accent-primary ring-2 ring-black ring-inset",
           checked === true
             ? "bg-primary"
             : checked === false
@@ -38,16 +37,24 @@ export default function CheckBox({
               : "bg-white",
           className,
         )}
-        checked={!!checked}
-        onChange={() => {
-          if (checked === "mixed") onChange?.(true);
-          else if (checked === true) onChange?.(false);
-          else onChange?.("mixed");
-        }}
-        aria-checked={checked}
-        aria-label={tooltip}
-        {...props}
-      />
+      >
+        <input
+          ref={ref}
+          type="checkbox"
+          className="sr-only"
+          checked={!!checked}
+          onChange={() => {
+            if (checked === "mixed") onChange?.(true);
+            else if (checked === true) onChange?.(false);
+            else onChange?.("mixed");
+          }}
+          aria-checked={checked}
+          aria-label={tooltip}
+          {...props}
+        />
+        {checked === true && <LuCheck />}
+        {checked === false && <LuX />}
+      </div>
       {label && <span>{label}</span>}
     </label>
   );

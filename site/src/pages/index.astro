@@ -19,10 +19,14 @@ import Layout from "@/layouts/Layout.astro";
     </p>
 
     <div class="flex flex-wrap items-center justify-center gap-4">
-      <Button to="/loci" design="bubble">
+      <Button className="w-40" to="/loci" design="bubble">
         Loci<LuBarcode />
       </Button>
-      <Button to="https://doi.org/10.1186/s13073-025-01454-4" design="bubble">
+      <Button
+        className="w-40"
+        to="https://doi.org/10.1186/s13073-025-01454-4"
+        design="bubble"
+      >
         Paper<LuNewspaper />
       </Button>
     </div>

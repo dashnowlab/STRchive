@@ -151,51 +151,49 @@ export default function LociTable({ loci }: Props) {
           "w-full",
         )}
       >
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-          <Popover
-            label="Tags"
-            button={(() => {
-              const counts = countBy(tags);
-              if (counts.mixed === tags.length) return <>Any</>;
+        <Popover
+          label="Tags"
+          button={(() => {
+            const counts = countBy(tags);
+            if (counts.mixed === tags.length) return <>Any</>;
 
-              return (
-                <>
-                  {counts.true && (
-                    <>
-                      {counts.true}
-                      <LuCheck className="text-primary" />
-                    </>
-                  )}
-                  {counts.false && (
-                    <>
-                      {counts.false}
-                      <LuX className="text-secondary" />
-                    </>
-                  )}
-                </>
-              );
-            })()}
-          >
-            {filterTags.map(({ description, value, label }, index) => (
-              <CheckBox
-                key={index}
-                label={
+            return (
+              <>
+                {counts.true && (
                   <>
-                    <Tag value={value} small />
-                    {label}
+                    {counts.true}
+                    <LuCheck className="text-primary" />
                   </>
-                }
-                checked={tags[index]}
-                onChange={(value) => {
-                  const newTags = [...tags];
-                  newTags[index] = value;
-                  setTags(newTags);
-                }}
-                tooltip={description}
-              />
-            ))}
-          </Popover>
-        </div>
+                )}
+                {counts.false && (
+                  <>
+                    {counts.false}
+                    <LuX className="text-secondary" />
+                  </>
+                )}
+              </>
+            );
+          })()}
+        >
+          {filterTags.map(({ description, value, label }, index) => (
+            <CheckBox
+              key={index}
+              label={
+                <>
+                  <Tag value={value} small />
+                  <span className="leading-normal">{label}</span>
+                </>
+              }
+              checked={tags[index]}
+              onChange={(value) => {
+                const newTags = [...tags];
+                newTags[index] = value;
+                setTags(newTags);
+              }}
+              tooltip={description}
+            />
+          ))}
+        </Popover>
 
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <TextBox

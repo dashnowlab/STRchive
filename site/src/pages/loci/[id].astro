@@ -55,12 +55,12 @@ const blame = getJsonBlame(
 const curation = curations.find((curation) => curation.Locus_ID === id);
 ---
 
-<Layout title={locus.nice_id}>
+<Layout title={`Locus ${locus.nice_id}`}>
   <TableOfContents client:only="react" />
 
   <!-- overview -->
   <section>
-    <H1><LuBarcode />{locus.nice_id}</H1>
+    <H1><LuBarcode />Locus {locus.nice_id}</H1>
 
     <!-- overview tags -->
     {

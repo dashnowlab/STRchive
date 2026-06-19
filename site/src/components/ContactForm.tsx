@@ -181,7 +181,7 @@ export default function ContactForm() {
       </Alert>
 
       {status === "" && (
-        <Button design="plain" type="submit">
+        <Button className="w-60 self-center" design="plain" type="submit">
           <LuSend />
           Submit
         </Button>

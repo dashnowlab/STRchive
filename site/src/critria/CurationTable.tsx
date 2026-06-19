@@ -1,5 +1,6 @@
 import type curations from "~/criTRia-curations.json";
-import Link from "@/components/Link";
+import { LuArrowRight } from "react-icons/lu";
+import Button from "@/components/Button";
 import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
 import { tagOptions } from "@/data/tags";
@@ -23,13 +24,22 @@ export default function CurationTable({ curations }: Props) {
     <Table
       {...defineData(mappedCurations, (column) => [
         column({
+          key: "Locus_ID",
+          render: (cell) => (
+            <Button
+              to={`/critria/${cell}`}
+              className="p-0!"
+              design="bubble"
+              data-tooltip="Go to curation page"
+            >
+              <LuArrowRight />
+            </Button>
+          ),
+          sortable: false,
+        }),
+        column({
           key: "Gene",
           name: "Gene",
-          render: (cell, row) => (
-            <Link to={`/critria/${row.Locus_ID}`} arrow={false}>
-              {cell}
-            </Link>
-          ),
         }),
         column({
           key: "Disease_ID",
@@ -67,7 +77,7 @@ export default function CurationTable({ curations }: Props) {
           name: "Source",
         }),
       ])}
-      sort={[{ id: "0", desc: false }]}
+      sort={[{ id: "1", desc: false }]}
     />
   );
 }
