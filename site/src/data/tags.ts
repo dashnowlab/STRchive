@@ -29,9 +29,20 @@ export const tagOptions = [
     Icon: BsStars,
     /** classes on icon */
     className: "bg-primary text-white",
-    /** text color */
     /** whether to show in loci page table */
     filter: true,
+  },
+  {
+    key: "gene_strand",
+    value: "+",
+    Icon: FaPlus,
+    className: "bg-primary text-white",
+  },
+  {
+    key: "gene_strand",
+    value: "-",
+    Icon: FaMinus,
+    className: "bg-secondary text-white",
   },
 
   /** locus tags */

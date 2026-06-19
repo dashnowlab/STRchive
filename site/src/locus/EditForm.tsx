@@ -72,7 +72,7 @@ const schema = {
   required: [...cloneDeep(_schema.required), ...extraRequired],
 };
 
-type Extras = Record<keyof typeof extraProperties, string | undefined | null>;
+type Extras = Partial<Record<keyof typeof extraProperties, string | null>>;
 
 type Props = {
   heading?: ReactNode;
@@ -87,19 +87,26 @@ export default function EditForm({ heading, locus }: Props) {
   /** unique storage key for this page and form */
   const storageKey = `edit-locus-${locus?.id ?? "new"}`;
 
+  /** initial form data */
+  const initialData = useMemo(
+    () =>
+      ({
+        "edit-title": null,
+        "edit-description": null,
+        ...cloneDeep(locus),
+      }) as Extras & Locus,
+    [locus],
+  );
+
   /** form data state */
-  const [data, setData] = useLocalStorage(storageKey, {
-    "edit-title": null,
-    "edit-description": null,
-    ...cloneDeep(locus),
-  } as Extras & Locus);
+  const [data, setData] = useLocalStorage(storageKey, initialData);
 
   /** was data loaded from storage */
   const storageExists = useMemo(() => {
     const fromStorage = window.localStorage.getItem(storageKey);
     /** if saved draft exists and is different from initial data */
-    return fromStorage && !isEqual(JSON.parse(fromStorage), data);
-  }, [data, storageKey]);
+    return fromStorage && !isEqual(JSON.parse(fromStorage), initialData);
+  }, [storageKey, initialData]);
 
   /** submission query */
   const {

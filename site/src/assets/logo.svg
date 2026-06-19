@@ -36,7 +36,7 @@
     }
   </style>
 
-  <g filter="url(#filter)">
+  <g>
     <!-- S -->
     <g transform="translate(30, 50)">
       <path
@@ -94,35 +94,8 @@
     y="99"
     fill="currentColor"
     class="fade"
-    style="--delay: 0.5; font-family: Barlow, sans-serif; font-size: 100px"
+    style="--delay: 0.5; font-family: Inter, sans-serif; font-size: 100px"
   >
     chive
   </text>
-
-  <filter id="filter" primitiveUnits="objectBoundingBox">
-    <feFlood flood-color="black" result="flood" />
-    <feSpecularLighting
-      surfaceScale="100"
-      specularExponent="10"
-      specularConstant="0.75"
-      lighting-color="var(--color-primary)"
-      in="flood"
-      result="light1"
-    >
-      <fePointLight x="0" y="0" z="1" />
-    </feSpecularLighting>
-    <feSpecularLighting
-      surfaceScale="100"
-      specularExponent="10"
-      specularConstant="0.75"
-      lighting-color="var(--color-secondary)"
-      in="flood"
-      result="light2"
-    >
-      <fePointLight x="1" y="1" z="1" />
-    </feSpecularLighting>
-    <feBlend mode="overlay" in="SourceGraphic" in2="light2" />
-    <feBlend mode="overlay" in2="light1" />
-    <feComposite in2="SourceGraphic" operator="in" />
-  </filter>
 </svg>

@@ -3,14 +3,15 @@ import { Fragment } from "react";
 import Link from "@/components/Link";
 
 type Props = {
-  value: {
+  value?: {
     text: string;
     references: (Citation & { number: number })[];
-  }[];
+  }[] | null;
 };
 
 /** render field value that has in-text references */
 export default function Cited({ value }: Props) {
+  if (!value) return "–";
   return value.map(({ text, references }, index) =>
     text ? (
       /** plain text */
@@ -19,7 +20,7 @@ export default function Cited({ value }: Props) {
       <sup key={index}>
         {references.map(({ id, number, title, authors, publisher }, index) => (
           <Fragment key={index}>
-            ( /** link to citation id below */
+            {/*  link to citation id below */}
             <Link
               to={`#${id}`}
               onClick={(event) => event.stopPropagation()}
@@ -33,7 +34,7 @@ export default function Cited({ value }: Props) {
             >
               {number}
             </Link>
-            ){index < references.length - 1 && ","}
+            {index < references.length - 1 && ","}
           </Fragment>
         ))}{" "}
       </sup>

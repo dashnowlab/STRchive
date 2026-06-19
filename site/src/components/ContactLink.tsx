@@ -9,7 +9,7 @@ export default function ContactLink() {
       trigger={
         <Button
           id="footer-contact"
-          className="underline"
+          className="p-0! underline"
           data-tooltip="Contact us"
         >
           Contact

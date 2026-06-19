@@ -29,7 +29,7 @@ export default function Tag({
   const {
     Icon,
     label = fallback,
-    className: optionClassName = "text-gray",
+    className: optionClassName = "text-white bg-gray",
     description = fallback,
   } = option || {};
 
@@ -42,7 +42,7 @@ export default function Tag({
   if (small)
     return (
       <div
-        className={clsx("rounded-full p-1", className)}
+        className={clsx("rounded-full p-1 grid place-items-center", className)}
         data-tooltip={tooltip}
       >
         {Icon && <Icon className="size-3" />}
@@ -51,7 +51,7 @@ export default function Tag({
   return (
     <Link
       className={clsx(
-        "flex items-center gap-2 rounded-full px-2 py-1 no-underline transition hover:opacity-75",
+        "flex items-center gap-2 rounded-full px-2 py-1 leading-normal no-underline transition hover:opacity-75",
         className,
       )}
       to={to}

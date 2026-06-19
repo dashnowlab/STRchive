@@ -6,9 +6,7 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-  <section
-    class="animate-gradients bg-[radial-gradient(ellipse_at_var(--gradient-primary)_200%,var(--color-primary),transparent_75%),radial-gradient(ellipse_at_var(--gradient-secondary)_200%,var(--color-secondary),transparent_75%)] bg-black text-white"
-  >
+  <section slot="header" class="bg-transparent text-white">
     <div class="flex flex-col items-center gap-4">
       <Logo className="h-20 max-w-full" data-animated />
       <div class="tracking-wider" role="heading" aria-level="1">
@@ -16,7 +14,7 @@ import Layout from "@/layouts/Layout.astro";
       </div>
     </div>
 
-    <p class="text-center text-balance text-lg">
+    <p class="text-center text-lg text-balance">
       An archive of STRs associated with human diseases
     </p>
 
@@ -41,32 +39,3 @@ import Layout from "@/layouts/Layout.astro";
     </p>
   </section>
 </Layout>
-
-<style>
-  @property --gradient-primary {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 0%;
-  }
-
-  @property --gradient-secondary {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 100%;
-  }
-
-  .animate-gradients {
-    animation: animate-gradients 15s ease-in-out infinite alternate;
-  }
-
-  @keyframes animate-gradients {
-    from {
-      --gradient-primary: -100%;
-      --gradient-secondary: 200%;
-    }
-    to {
-      --gradient-primary: 200%;
-      --gradient-secondary: -100%;
-    }
-  }
-</style>

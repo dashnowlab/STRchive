@@ -299,6 +299,7 @@ export default function LociTable({ loci }: Props) {
           column({
             key: "disease",
             name: "Description",
+            className: "justify-start text-left",
           }),
           column({
             key: "position_base0_hg38",

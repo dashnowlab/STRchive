@@ -53,18 +53,17 @@ export default defineConfig([
 
   {
     name: "Tailwind",
-    files: ["**/*.{ts,tsx,js,jsx}"],
+    files: ["**/*.{astro,ts,tsx,js,jsx}"],
     extends: [tailwind.configs.recommended],
     rules: {
       "better-tailwindcss/enforce-consistent-line-wrapping": [
         "warn",
-        {
-          preferSingleLine: true,
-          group: "never",
-          printWidth: 0,
-        },
+        { preferSingleLine: true, group: "never", printWidth: 0 },
       ],
-      "better-tailwindcss/no-unknown-classes": ["warn"],
+      "better-tailwindcss/no-unknown-classes": [
+        "warn",
+        { ignore: ["^animate-"] },
+      ],
     },
     settings: {
       "better-tailwindcss": { entryPoint: "./src/styles.css" },

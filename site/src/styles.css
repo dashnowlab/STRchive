@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-sm: 30rem;
-  --breakpoint-md: 55rem;
-  --breakpoint-lg: 70rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 60rem;
+  --breakpoint-lg: 80rem;
 
   --color-*: initial;
 
@@ -45,7 +45,7 @@
 
 @layer base {
   html {
-    @apply font-regular bg-white font-sans leading-normal text-black underline-offset-2;
+    @apply font-regular bg-white font-sans leading-loose text-black underline-offset-2;
     font-size: 105%;
   }
 
@@ -61,7 +61,7 @@
   footer,
   section {
     --width: 250;
-    @apply even:bg-off-white flex flex-col gap-10 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
+    @apply even:bg-off-white flex flex-col gap-8 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
   }
 
   h1,
@@ -105,12 +105,8 @@
     @apply overflow-visible;
   }
 
-  p {
-    @apply leading-loose;
-  }
-
   blockquote {
-    @apply bg-light-gray flex max-w-full flex-col gap-2 rounded-md p-8 leading-loose;
+    @apply bg-light-gray flex max-w-full flex-col gap-2 rounded-md p-8;
   }
 
   label {
@@ -145,7 +141,7 @@
 
   ul,
   ol {
-    @apply list-[">"] pl-8 leading-loose;
+    @apply list-[">"] pl-8;
   }
 
   li {
@@ -219,6 +215,18 @@
   --width: 175;
 }
 
+@utility boxes {
+  @apply grid grid-cols-4 gap-8 max-md:grid-cols-2 max-sm:grid-cols-1;
+}
+
 @utility box {
-  @apply bg-light-gray inline-flex flex-col items-center gap-2 rounded-md px-4 py-2;
+  @apply bg-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md px-4 py-2;
+
+  & > strong:first-child {
+    @apply text-dark-gray -mx-4 -mt-2 mb-2 flex items-center gap-2 bg-inherit px-4 py-1 font-medium;
+  }
+}
+
+@utility box-wide {
+  @apply box col-span-2 max-md:col-span-1;
 }

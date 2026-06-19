@@ -17,6 +17,7 @@ export default function ShowMoreItems({ items, limit = 9, ...props }: Props) {
       {items.slice(0, expanded ? Infinity : limit)}
       {items.length > limit && (
         <Button
+          className="self-center"
           design="plain"
           onClick={() => setExpanded(!expanded)}
           aria-expanded={expanded}

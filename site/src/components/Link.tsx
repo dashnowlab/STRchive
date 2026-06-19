@@ -7,13 +7,7 @@ type Props = {
   arrow?: boolean;
 } & ComponentProps<"a">;
 
-export default function Link({
-  to,
-  newTab = false,
-  arrow = false,
-  children,
-  ...props
-}: Props) {
+export default function Link({ to, newTab, arrow, children, ...props }: Props) {
   /** whether link is to external site, or page within this site */
   const external = !!to.match(/^(https|http|ftp|mailto)/);
 
@@ -26,8 +20,8 @@ export default function Link({
     >
       {children}
       {/* indicate third-party site with icon  */}
-      {(arrow ?? external) && !children && (
-        <LuExternalLink className="relative ml-1 scale-75" />
+      {(arrow ?? external) && !!children && (
+        <LuExternalLink className="ml-1 inline-block -translate-y-0.5" />
       )}
     </a>
   );

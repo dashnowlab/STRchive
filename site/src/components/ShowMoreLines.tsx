@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
-import classes from "./ShowMoreLines.module.css";
 
 type Props = {
   lines?: keyof typeof counts;
@@ -28,26 +27,21 @@ export default function ShowMoreLines({ lines = 2, children }: Props) {
   useEffect(() => {
     if (!ref.current) return;
 
-    /** height of full content */
-    const { height } = ref.current.getBoundingClientRect();
-
-    /** height of each line */
-    const lineHeight = parseFloat(
-      window.getComputedStyle(ref.current).lineHeight,
-    );
-
-    /** estimate number of lines of full content */
-    const lineCount = Math.round(height / lineHeight);
+    /** count number of rendered lines */
+    const range = document.createRange();
+    range.selectNodeContents(ref.current);
+    const count = range.getClientRects().length;
 
     /** hide control if content can fit within limit */
-    setShow(lineCount > lines);
+    setShow(count > lines);
   }, [lines]);
 
   return show ? (
     <div
       className={clsx(
-        classes.content,
-        expanded ? classes.expanded : classes.collapsed,
+        expanded
+          ? "cursor-zoom-out"
+          : "cursor-zoom-in decoration-dotted not-hover:underline",
         !expanded && counts[lines],
       )}
       onClick={() => setExpanded(!expanded)}

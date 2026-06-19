@@ -6,7 +6,6 @@ type ButtonProps = ComponentProps<"button">;
 type AnchorProps = ComponentProps<typeof Link>;
 
 type Props = {
-  ref?: Ref<HTMLButtonElement>;
   design?: "" | "plain" | "bubble";
 } & (ButtonProps | AnchorProps);
 
@@ -21,17 +20,18 @@ export default function Button({
 
   return (
     <Component
-      ref={ref}
+      ref={ref as Ref<HTMLAnchorElement> & Ref<HTMLButtonElement>}
       type="button"
       className={clsx(
-        "inline-flex min-h-10 max-w-full min-w-10 items-center justify-center gap-2 px-[0.75em] py-[0.5em] no-underline",
+        "inline-flex min-h-10 max-w-full min-w-10 items-center justify-center gap-2 px-[0.75em] py-[0.5em] leading-normal no-underline",
         design === "" && "hover:text-primary",
         design === "plain" &&
           "rounded-md bg-light-gray text-current hover:text-primary",
         design === "bubble" &&
-          "gap-2 rounded-full text-lg font-medium text-current ring-2 ring-current ring-inset hover:bg-secondary hover:text-white hover:ring-black",
+          "gap-2 rounded-full text-lg text-current ring-2 ring-current ring-inset hover:bg-secondary hover:text-white",
         className,
       )}
+      arrow={Component === Link ? false : undefined}
       {...(props as ButtonProps & AnchorProps)}
     />
   );

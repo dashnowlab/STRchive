@@ -46,11 +46,15 @@ const {
   </head>
 
   <body>
-    <Header />
+    <Header>
+      <slot name="header" />
+    </Header>
+
     <main>
       <slot />
     </main>
     <Footer />
+
     <ViewCorner client:only="react" />
 
     <script>

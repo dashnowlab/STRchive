@@ -27,6 +27,7 @@ import Citation from "@/locus/Citation";
 import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
 import { getJsonBlame } from "@/util/git";
+import clsx from "clsx";
 import curations from "~/criTRia-curations.json";
 import gnomad from "~/plots/gnomad.json";
 import citations from "~/STRchive-citations.json";
@@ -40,11 +41,11 @@ export const getStaticPaths = async () =>
 const { id } = Astro.params;
 
 /** look up full locus entry from id */
-const locus = deriveLocus(
-  loci.find((locus) => locus.id === id) || {},
-  loci,
-  citations,
-);
+const lookup = loci.find((locus) => locus.id === id);
+if (!lookup) throw new Error(`locus with id ${id} not found`);
+
+/** derive extra props on locus */
+const locus = deriveLocus(lookup, loci, citations);
 
 /** whether there is raw gene search text file associated with this gene */
 const hasRawSearch = Object.keys(
@@ -68,94 +69,94 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   <section>
     <H1><LuBarcode />{locus.nice_id}</H1>
 
-    <div
-      class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2"
-    >
-      {
-        !!locus.evidence?.length &&
-          locus.evidence?.map((evidence) => (
+    <!-- overview tags -->
+    {
+      locus.evidence.length + locus.locus_tags.length > 0 && (
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          {locus.evidence.map((evidence) => (
             <Tag
               value={evidence}
               to={curation ? `/critria/${curation.Locus_ID}` : undefined}
               tooltip="See criTRia curation for this locus"
             />
-          ))
-      }
-
-      {
-        !!locus.locus_tags?.length &&
-          locus.locus_tags?.map((tag) => (
+          ))}
+          {locus.locus_tags.map((tag) => (
             <Tag
               value={tag}
               to={`/loci?tag=${tag}#table`}
               tooltip="See other loci with this tag"
             />
-          ))
-      }
-    </div>
-
-    <div class="boxes">
-      <div class="box">
-        <div><TbVirus />Disease ID</div>
-        <div>{locus.disease_id}</div>
-      </div>
-
-      <div class="box">
-        <div><TbDna2 />Gene ID</div>
-        <div>{locus.gene}</div>
-      </div>
-
-      <div class="box">
-        <div><LuCalendar />Updated</div>
-        <div>
-          {blame.date}
-          <br />
-          v{blame.version}
-        </div>
-      </div>
-    </div>
-
-    {
-      locus.genes.length > 1 && (
-        <div class="genes">
-          <div class="heading">
-            <TbDna2 />
-            Other gene loci ({locus.genes.length.toLocaleString()})
-          </div>
-          <div class="gene-list">
-            {locus.genes.map((gene) =>
-              id === gene.id ? (
-                <span>{gene.id}</span>
-              ) : (
-                <Link to={`/loci/${gene.id}`}>{gene.id}</Link>
-              ),
-            )}
-          </div>
+          ))}
         </div>
       )
     }
 
-    <div class="identifiers">
+    <div class="boxes">
+      <!-- disease -->
+      <div class="box">
+        <strong><TbVirus />Disease ID</strong>
+        <div>{locus.disease_id}</div>
+      </div>
+
+      <!-- gene -->
+      <div class="box">
+        <strong><TbDna2 />Gene ID</strong>
+        <div>{locus.gene}</div>
+      </div>
+
+      <!-- updated -->
+      <div class="box">
+        <strong><LuCalendar />Updated</strong>
+        <div>
+          {blame.date || "–"}
+          <br />
+          v{blame.version || "–"}
+        </div>
+      </div>
+
+      <!-- other loci -->
+      <div class="box">
+        <strong>
+          <TbDna2 />
+          Other gene loci
+        </strong>
+        <div class="flex flex-wrap gap-2">
+          {
+            locus.genes
+              .filter((gene) => gene.id !== id)
+              .map((gene) => <Link to={`/loci/${gene.id}`}>{gene.id}</Link>)
+          }
+          {locus.genes.length <= 1 && "–"}
+        </div>
+      </div>
+
+      <!-- links -->
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
-          <div class="flex max-w-full flex-col items-center gap-4">
-            <div class="heading">
+          <div class="box-wide">
+            <strong>
               <Icon />
-              <span>{name}</span>
-            </div>
-            <div class="identifier-list">
+              {name}
+            </strong>
+            <div class="grid grid-cols-[auto_auto] place-content-start place-items-start gap-x-4 gap-y-2 max-sm:grid-cols-1">
               {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
-                  <Link to={info} data-tooltip={tooltip} arrow={false}>
+                  <Link
+                    to={info}
+                    data-tooltip={tooltip}
+                    arrow={false}
+                    className="text-black no-underline"
+                  >
                     {name}
                   </Link>
-                  <div class="identifier-links">
+                  <div class="flex flex-wrap gap-2">
                     {links.map(({ label, link }) => (
                       <Link to={link}>{label}</Link>
                     ))}
                   </div>
                 </>
               ))}
+              {!identifiers.length && "–"}
             </div>
           </div>
         ))
@@ -174,10 +175,12 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   <!-- disease info -->
   <section>
     <H2>Disease</H2>
+
+    <!-- disease tags -->
     {
-      !!locus.disease_tags?.length && (
-        <div class="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2">
-          {locus.disease_tags?.map((tag) => (
+      locus.disease_tags.length > 0 && (
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          {locus.disease_tags.map((tag) => (
             <Tag
               value={tag}
               to={`/loci?tag=${tag}#table`}
@@ -188,89 +191,90 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       )
     }
 
+    <!-- details -->
     <div class="boxes">
       <div class="box">
-        <div>Name</div>
-        <div>{locus.disease}</div>
+        <strong>Name</strong>
+        {locus.disease}
       </div>
 
+      <!-- inheritance -->
       <div class="box">
-        <div>Inheritance</div>
+        <strong>Inheritance</strong>
         {
-          (locus.inheritance ?? [""]).map((inheritance) => (
+          locus.inheritance.map((inheritance) => (
             <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-              {getInheritance(inheritance) || "-"}
+              {getInheritance(inheritance)}
             </Link>
           ))
         }
+        {locus.inheritance.length === 0 && "–"}
       </div>
-    </div>
 
-    <div class="boxes">
-      {
-        locus.disease_description && (
-          <div class="box wide">
-            <div>Description</div>
-            <ShowMoreLines client:load lines={3}>
-              <Cited client:load value={locus.disease_description} />
+      <!-- description -->
+      <div class="box-wide">
+        <strong>Description</strong>
+        <ShowMoreLines client:load lines={3}>
+          <Cited client:load value={locus.disease_description} />
+        </ShowMoreLines>
+      </div>
+
+      <!-- prevalence -->
+      <div class="box-wide">
+        <strong>Prevalence</strong>
+        {
+          locus.prevalence && (
+            <div class="flex items-center p-1 *:relative">
+              <span class="-top-1">{locus.prevalence[0]}</span>
+              <LiaSlashSolid />
+              <span class="top-1">{locus.prevalence[1]}</span>
+            </div>
+          )
+        }
+        {
+          locus.prevalence_details && (
+            <ShowMoreLines client:load lines={2}>
+              <Cited client:load value={locus.prevalence_details} />
             </ShowMoreLines>
-          </div>
-        )
-      }
+          )
+        }
+      </div>
 
-      {
-        (locus.prevalence || locus.prevalence_details) && (
-          <div class="box wide">
-            <div>Prevalence</div>
-            {locus.prevalence && (
-              <div class="fraction">
-                <span>{locus.prevalence[0]}</span>
-                <LiaSlashSolid />
-                <span>{locus.prevalence[1]}</span>
-              </div>
-            )}
-            {locus.prevalence_details && (
-              <ShowMoreLines client:load lines={1}>
-                <Cited client:load value={locus.prevalence_details} />
-              </ShowMoreLines>
-            )}
-          </div>
-        )
-      }
-    </div>
-
-    <div class="boxes">
-      <LineChart
-        client:load
-        rows={[
-          {
-            name: "Age of Onset",
-            className: "fill-primary",
-            values: [locus.age_onset_min, locus.age_onset_max],
-          },
-          {
-            name: "(Typical)",
-            className: "fill-secondary",
-            values: [locus.typ_age_onset_min, locus.typ_age_onset_max],
-          },
-        ]}
-        min={0}
-        max={90}
-        xAxis="Years"
-        width={200}
-        height={50}
-      />
-
-      {
-        locus.age_onset && (
-          <div class="box wide">
-            <div>Age of Onset Details</div>
+      <!-- onset -->
+      <div class="box-wide">
+        <strong>Age of Onset</strong>
+        <LineChart
+          client:load
+          className="col-span-2 max-md:col-span-1"
+          rows={[
+            {
+              name: "Age of Onset",
+              className: "fill-primary",
+              values: [locus.age_onset_min ?? 0, locus.age_onset_max ?? 0],
+            },
+            {
+              name: "(Typical)",
+              className: "fill-secondary",
+              values: [
+                locus.typ_age_onset_min ?? 0,
+                locus.typ_age_onset_max ?? 0,
+              ],
+            },
+          ]}
+          min={0}
+          max={90}
+          xAxis="Years"
+          width={200}
+          height={50}
+        />
+        {
+          locus.age_onset && (
             <ShowMoreLines client:load lines={3}>
               <Cited client:load value={locus.age_onset} />
             </ShowMoreLines>
-          </div>
-        )
-      }
+          )
+        }
+      </div>
     </div>
   </section>
 
@@ -278,230 +282,197 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   <section>
     <H2>Locus</H2>
 
-    <div class="boxes">
+    <!-- positions -->
+    <div class="boxes grid-cols-3">
       {
-        [
-          { assembly: "hg19", db: "hg19" },
-          { assembly: "hg38", db: "hg38" },
-          { assembly: "t2t", db: "hub_3671779_hs1" },
-        ].map(({ assembly, db }) => (
+        (
+          [
+            { assembly: "hg19", db: "hg19" },
+            { assembly: "hg38", db: "hg38" },
+            { assembly: "t2t", db: "hub_3671779_hs1" },
+          ] as const
+        ).map(({ assembly, db }) => (
           <div class="box">
-            <div>{assembly}</div>
+            <strong>{assembly}</strong>
             <Link
               to={`http://genome.ucsc.edu/cgi-bin/hgTracks?db=${db}&position=${locus[`position_base1_${assembly}`]}`}
             >
-              {locus[`position_base0_${assembly}`]}
+              {locus[`position_base0_${assembly}`] || "–"}
             </Link>
           </div>
         ))
       }
-    </div>
 
-    <div class="boxes">
-      {
-        locus.details && (
-          <div class="box wide">
-            <div>Details</div>
-            <ShowMoreLines client:load lines={3}>
-              <Cited client:load value={locus.details} />
+      <!-- details -->
+      <div class="box-wide">
+        <strong>Details</strong>
+        <ShowMoreLines client:load lines={3}>
+          {locus.details && <Cited client:load value={locus.details} />}
+          {!locus.details && "–"}
+        </ShowMoreLines>
+      </div>
+
+      <!-- mechanism -->
+      <div class="box">
+        <strong>Mechanism</strong>
+        {locus.mechanism && <div>{locus.mechanism}</div>}
+        {
+          locus.mechanism_detail && (
+            <ShowMoreLines client:load lines={2}>
+              <Cited client:load value={locus.mechanism_detail} />
             </ShowMoreLines>
-          </div>
-        )
-      }
-
-      {
-        (locus.mechanism || locus.mechanism_detail) && (
-          <div class="box wide">
-            <div>Mechanism</div>
-            {locus.mechanism && <div>{locus.mechanism}</div>}
-            {locus.mechanism_detail && (
-              <ShowMoreLines client:load lines={1}>
-                <Cited client:load value={locus.mechanism_detail} />
-              </ShowMoreLines>
-            )}
-          </div>
-        )
-      }
+          )
+        }
+      </div>
     </div>
 
-    <div class="boxes">
-      {
-        locus.year && (
-          <div class="box">
-            <div data-tooltip="Year first published">Year</div>
-            <div>
-              <Cited client:load value={locus.year} />
-            </div>
-          </div>
-        )
-      }
+    <div class="boxes grid-cols-3">
+      <!-- year -->
+      <div class="box">
+        <strong data-tooltip="Year first published">Year</strong>
+        <div>
+          {locus.year && <Cited client:load value={locus.year} />}
+          {!locus.year && "–"}
+        </div>
+      </div>
 
-      {
-        locus.location_in_gene && (
-          <div class="box">
-            <div>Location in Gene</div>
-            <div>{locus.location_in_gene}</div>
-          </div>
-        )
-      }
+      <!-- location -->
+      <div class="box">
+        <strong>Location in Gene</strong>
+        <div>{locus.location_in_gene || "–"}</div>
+      </div>
 
-      {
-        locus.gene_strand && (
-          <div class="box">
-            <div>Gene Strand</div>
-            <div>
-              {locus.gene_strand === "+" && (
-                <LuCirclePlus style={{ color: "var(--primary)" }} />
-              )}
-              {locus.gene_strand === "-" && (
-                <LuCircleMinus style={{ color: "var(--secondary)" }} />
-              )}
-            </div>
-          </div>
-        )
-      }
+      <!-- strand -->
+      <div class="box">
+        <strong>Gene Strand</strong>
+        <Tag value={locus.gene_strand} small className="self-start" />
+      </div>
     </div>
 
     <!-- allele info -->
     <H2>Alleles</H2>
 
-    <div class="allele-list">
-      {
-        !!locus.reference_motif_reference_orientation.length && (
-          <div class="box">
-            <div data-tooltip="Reference motif, reference orientation">
-              Ref. Motif
-            </div>
-            <div>{locus.reference_motif_reference_orientation.join(", ")}</div>
-          </div>
-        )
-      }
+    <div class="boxes">
+      <!-- ref -->
+      <div class="box-wide">
+        <strong data-tooltip="Reference motif, reference orientation">
+          Ref. Motif
+        </strong>
+        <div>{locus.reference_motif_reference_orientation.join(", ")}</div>
+      </div>
 
-      {
-        (!!locus.benign_motif_reference_orientation.length ||
-          !!locus.benign_motif_gene_orientation.length) && (
-          <>
-            <div class="box benign">
-              <div data-tooltip="Benign motif, reference orientation">
-                Benign (ref.)
-              </div>
-              <div>
-                {locus.benign_motif_reference_orientation.join(", ") || "-"}
-              </div>
-            </div>
-            <div class="box benign">
-              <div data-tooltip="Benign motif, gene orientation">
-                Benign (gene)
-              </div>
-              <div>{locus.benign_motif_gene_orientation.join(", ") || "-"}</div>
-            </div>
-          </>
-        )
-      }
+      <!-- min/max -->
+      <div class="box-wide">
+        <strong>Min/Max</strong>
+        <LineChart
+          client:load
+          rows={[
+            {
+              name: "Benign",
+              className: "fill-primary",
+              values: [locus.benign_min ?? 0, locus.benign_max ?? 0],
+            },
+            {
+              name: "Intermediate",
+              className: "fill-tertiary",
+              values: [
+                locus.intermediate_min ?? 0,
+                locus.intermediate_max ?? 0,
+              ],
+            },
+            {
+              name: "Pathogenic",
+              className: "fill-secondary",
+              values: [locus.pathogenic_min ?? 0, locus.pathogenic_max ?? 0],
+            },
+          ]}
+          xAxis="Units"
+          width={200}
+          height={75}
+        />
+      </div>
 
-      {
-        (!!locus.pathogenic_motif_reference_orientation.length ||
-          !!locus.pathogenic_motif_gene_orientation.length) && (
-          <>
-            <div class="box pathogenic">
-              <div data-tooltip="Pathogenic motif, reference orientation">
-                Pathogenic (ref.)
-              </div>
-              <div>
-                {locus.pathogenic_motif_reference_orientation.join(", ") || "-"}
-              </div>
-            </div>
-            <div class="box pathogenic">
-              <div data-tooltip="Pathogenic motif, gene orientation">
-                Pathogenic (gene)
-              </div>
-              <div>
-                {locus.pathogenic_motif_gene_orientation.join(", ") || "-"}
-              </div>
-            </div>
-          </>
-        )
-      }
+      <!-- benign -->
+      <div class="box bg-primary/10">
+        <strong data-tooltip="Benign motif, reference orientation">
+          Benign (ref.)
+        </strong>
+        <div>
+          {locus.benign_motif_reference_orientation.join(", ") || "–"}
+        </div>
+      </div>
+      <div class="box bg-primary/10">
+        <strong data-tooltip="Benign motif, gene orientation">
+          Benign (gene)
+        </strong>
+        <div>{locus.benign_motif_gene_orientation.join(", ") || "–"}</div>
+      </div>
 
-      {
-        (!!locus.unknown_motif_reference_orientation.length ||
-          !!locus.unknown_motif_gene_orientation.length) && (
-          <>
-            <div class="box unknown">
-              <div data-tooltip="Unknown motif, reference orientation">
-                Unknown (ref.)
-              </div>
-              <div>
-                {locus.unknown_motif_reference_orientation.join(", ") || "-"}
-              </div>
-            </div>
-            <div class="box unknown">
-              <div data-tooltip="Unknown motif, gene orientation">
-                Unknown (gene)
-              </div>
-              <div>
-                {locus.unknown_motif_gene_orientation.join(", ") || "-"}
-              </div>
-            </div>
-          </>
-        )
-      }
+      <!-- pathogenic -->
+      <div class="box bg-secondary/10">
+        <strong data-tooltip="Pathogenic motif, reference orientation">
+          Pathogenic (ref.)
+        </strong>
+        <div>
+          {locus.pathogenic_motif_reference_orientation.join(", ") || "–"}
+        </div>
+      </div>
+      <div class="box bg-secondary/10">
+        <strong data-tooltip="Pathogenic motif, gene orientation">
+          Pathogenic (gene)
+        </strong>
+        <div>
+          {locus.pathogenic_motif_gene_orientation.join(", ") || "–"}
+        </div>
+      </div>
 
-      {
-        (!!locus.interruption_reference_orientation.length ||
-          !!locus.interruption_gene_orientation.length) && (
-          <>
-            <div class="box interruption">
-              <div data-tooltip="Interruption motif, reference orientation">
-                Interruption (ref.)
-              </div>
-              <div>
-                {locus.interruption_reference_orientation.join(", ") || "-"}
-              </div>
-            </div>
-            <div class="box interruption">
-              <div data-tooltip="Interruption motif, gene orientation">
-                Interruption (gene)
-              </div>
-              <div>{locus.interruption_gene_orientation.join(", ") || "-"}</div>
-            </div>
-          </>
-        )
-      }
+      <!-- unknown -->
+      <div class="box">
+        <strong data-tooltip="Unknown motif, reference orientation">
+          Unknown (ref.)
+        </strong>
+        <div>
+          {locus.unknown_motif_reference_orientation.join(", ") || "–"}
+        </div>
+      </div>
+      <div class="box">
+        <strong data-tooltip="Unknown motif, gene orientation">
+          Unknown (gene)
+        </strong>
+        <div>
+          {locus.unknown_motif_gene_orientation.join(", ") || "–"}
+        </div>
+      </div>
+
+      <!-- interruption -->
+      <div class="box bg-tertiary/10">
+        <strong data-tooltip="Interruption motif, reference orientation">
+          Interruption (ref.)
+        </strong>
+        <div>
+          {locus.interruption_reference_orientation.join(", ") || "–"}
+        </div>
+      </div>
+      <div class="box bg-tertiary/10">
+        <strong data-tooltip="Interruption motif, gene orientation">
+          Interruption (gene)
+        </strong>
+        <div>{locus.interruption_gene_orientation.join(", ") || "–"}</div>
+      </div>
     </div>
-
-    <LineChart
-      client:load
-      rows={[
-        {
-          name: "Benign",
-          className: "fill-primary",
-          values: [locus.benign_min, locus.benign_max],
-        },
-        {
-          name: "Intermediate",
-          className: "fill-tertiary",
-          values: [locus.intermediate_min, locus.intermediate_max],
-        },
-        {
-          name: "Pathogenic",
-          className: "fill-secondary",
-          values: [locus.pathogenic_min, locus.pathogenic_max],
-        },
-      ]}
-      xAxis="Units"
-      width={200}
-      height={75}
-    />
   </section>
 
-  <!-- gnomad data -->
+  <!-- gnomad -->
   {
-    gnomad[id] && (
+    id in gnomad && (
       <section>
         <H2>gnomAD</H2>
-        {gnomad[id].reliable ? (
-          <Gnomad client:only="react" title={locus.gene} data={gnomad[id]} />
+        {gnomad[id as keyof typeof gnomad].reliable ? (
+          <Gnomad
+            client:only="react"
+            title={locus.gene}
+            data={gnomad[id as keyof typeof gnomad]}
+          />
         ) : (
           <p class="text-center text-balance">
             <em>
@@ -516,58 +487,51 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   }
 
   <!-- references -->
-  {
-    !!locus.references.length && (
-      <section>
-        <H2>References</H2>
 
-        <p class="text-center text-balance">
-          Direct supporting references for info on this page.
-        </p>
+  <section>
+    <H2>References</H2>
 
-        <div class="citations">
-          {locus.references.map((citation) => (
-            <Citation client:load {...citation} />
-          ))}
-        </div>
-      </section>
-    )
-  }
+    <p class="text-center text-balance">
+      Direct supporting references for info on this page.
+    </p>
+
+    <div class="boxes grid-cols-3">
+      {
+        locus.references.map((citation) => (
+          <Citation client:load {...citation} />
+        ))
+      }
+    </div>
+  </section>
 
   <!-- additional literature -->
-  {
-    (!!locus.additional_literature.length || hasRawSearch) && (
-      <section>
-        <H2>Additional Literature</H2>
+  <section>
+    <H2>Additional Literature</H2>
 
-        {!!locus.additional_literature.length && (
-          <p class="text-center text-balance">
-            Additional literature related to this locus.
-          </p>
-        )}
+    <p class="text-center text-balance">
+      Additional literature related to this locus.
+    </p>
 
-        {hasRawSearch && (
-          <p class="text-center text-balance">
-            <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}>
-              Raw PubMed search results
-            </Link>{" "}
-            <br />
-            (All PubMed results returned by searching for this gene, tandem
-            repeats, and disease, in medline format)
-          </p>
-        )}
+    {
+      hasRawSearch && (
+        <p class="text-center text-balance">
+          <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}>
+            Raw PubMed search results
+          </Link>{" "}
+          <br />
+          (All PubMed results returned by searching for this gene, tandem
+          repeats, and disease, in medline format)
+        </p>
+      )
+    }
 
-        {!!locus.additional_literature.length && (
-          <div class="citations">
-            <AdditionalLiterature
-              client:load
-              additionalLiterature={locus.additional_literature}
-            />
-          </div>
-        )}
-      </section>
-    )
-  }
+    <div class="boxes grid-cols-2">
+      <AdditionalLiterature
+        client:load
+        additionalLiterature={locus.additional_literature}
+      />
+    </div>
+  </section>
 
   <script define:vars={{ locus }}>
     console.debug(locus);

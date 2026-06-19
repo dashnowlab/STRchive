@@ -78,7 +78,7 @@ export default function TableOfContents() {
               <a
                 key={index}
                 data-active={id === activeId ? "" : undefined}
-                className="flex items-center gap-2 px-4 py-2 text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-active:bg-light-gray [&_svg]:opacity-25"
+                className="flex items-center gap-2 px-4 py-2 leading-normal text-inherit no-underline transition hover:bg-light-gray hover:text-primary data-active:bg-light-gray [&_svg]:opacity-25"
                 href={`#${id}`}
                 style={{ paddingLeft: level * 15 }}
                 dangerouslySetInnerHTML={{ __html: html }}

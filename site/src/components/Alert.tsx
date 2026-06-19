@@ -49,7 +49,7 @@ export default function Alert({
       <div className={types[type as Type]?.className}>
         {icon ?? types[type as Type]?.icon}
       </div>
-      <div className="leading-loose">{children}</div>
+      <div>{children}</div>
     </div>
   );
 }
