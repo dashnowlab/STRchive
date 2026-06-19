@@ -13,7 +13,8 @@
     "test:types": "tsc",
     "test:lint": "eslint .",
     "test:format": "prettier --check .",
-    "test": "bun run test:types && bun run test:lint && bun run test:format && bun run build"
+    "test": "bun run test:types && bun run test:lint && bun run test:format && bun run build",
+    "clean": "rm -rf bun.lock node_modules dist .astro && bun pm cache clean"
   },
   "dependencies": {
     "@astrojs/mdx": "6.0.3",
