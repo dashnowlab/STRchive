@@ -1,4 +1,4 @@
-import type { Citation as CitationType } from "@/data/types";
+import type { Citation as CitationType } from "@/data";
 import ShowMoreItems from "@/components/ShowMoreItems";
 import Citation from "./Citation";
 

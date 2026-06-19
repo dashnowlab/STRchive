@@ -58,6 +58,7 @@ const {
     <ViewCorner client:only="react" />
 
     <script>
+      import { spotlight } from "@/util/dom";
       import { sleep } from "@/util/misc";
 
       const hashChange = async () => {
@@ -74,20 +75,8 @@ const {
         /** wait for layout changes */
         await sleep(100);
 
-        /** glow element */
-        element.animate(
-          [
-            {
-              background: "var(--primary)",
-              borderRadius: "var(--rounded)",
-            },
-            {
-              background: "",
-              borderRadius: "var(--rounded)",
-            },
-          ],
-          { duration: 2000, iterations: 1 },
-        );
+        /** highlight element */
+        spotlight(element);
 
         /** scroll to element */
         element.scrollIntoView({ block: "start" });

@@ -4,13 +4,13 @@ import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import CurationTable from "@/critria/CurationTable";
+import { curations } from "@/data";
 import Layout from "@/layouts/Layout.astro";
 import {
   IconBookmark,
   IconDownload,
   IconInfoCircle,
 } from "@tabler/icons-react";
-import curations from "~/criTRia-curations.json";
 import sop from "~/criTRia-SOP.pdf?url";
 ---
 
@@ -41,6 +41,6 @@ import sop from "~/criTRia-SOP.pdf?url";
   <section>
     <H2><IconBookmark />Locus-disease curations</H2>
 
-    <CurationTable client:load curations={curations} />
+    <CurationTable client:load />
   </section>
 </Layout>

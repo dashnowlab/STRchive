@@ -42,7 +42,9 @@ import { kebabCase } from "lodash-es";
       document.querySelectorAll("[data-spotlight]").forEach((element) => {
         const target = element as HTMLElement;
         element.addEventListener("click", () => {
-          const element = target.dataset.spotlight;
+          const selector = target.dataset.spotlight;
+          if (!selector) return;
+          const element = document.querySelector(selector);
           if (element) spotlight(element);
         });
       });

@@ -27,10 +27,8 @@ export const firstInView = (elements: Element[]) => {
 };
 
 /** highlight an element */
-export const spotlight = async (selector: string) => {
-  const element = document.querySelector(selector);
-  if (!(element instanceof HTMLElement)) return;
-  element.focus();
+export const spotlight = async (element: Element) => {
+  if (element instanceof HTMLElement) element.focus();
   element.scrollIntoView({ block: "center", behavior: "smooth" });
   await waitForStop(window, "scroll");
   element.animate(

@@ -8,7 +8,7 @@ import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
 import TableOfContents from "@/components/TableOfContents";
 import Tag from "@/components/Tag";
-import { deriveLocus } from "@/data/derived";
+import { curations, loci } from "@/data";
 import { getIdentifiers } from "@/data/identifiers";
 import { getInheritance } from "@/data/inheritance";
 import Layout from "@/layouts/Layout.astro";
@@ -41,10 +41,7 @@ import {
   IconTool,
   IconVirus,
 } from "@tabler/icons-react";
-import curations from "~/criTRia-curations.json";
 import gnomad from "~/plots/gnomad.json";
-import citations from "~/STRchive-citations.json";
-import loci from "~/STRchive-loci.json";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -54,11 +51,9 @@ export const getStaticPaths = async () =>
 const { id } = Astro.params;
 
 /** look up full locus entry from id */
-const lookup = loci.find((locus) => locus.id === id);
-if (!lookup) throw new Error(`locus with id ${id} not found`);
+const locus = loci.find((locus) => locus.id === id);
 
-/** derive extra props on locus */
-const locus = deriveLocus(lookup, loci, citations);
+if (!locus) throw Error(`locus ${id} not found`);
 
 /** whether there is raw gene search text file associated with this gene */
 const hasRawSearch = Object.keys(
@@ -147,7 +142,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       <!-- links -->
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
-          <div class="box-2">
+          <div class="box box-2">
             <strong>
               <Icon />
               {name}
@@ -227,7 +222,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- description -->
-      <div class="box-2">
+      <div class="box box-2">
         <strong><IconFileText />Description</strong>
         <ShowMoreLines client:load lines={3}>
           <Cited client:load value={locus.disease_description} />
@@ -235,7 +230,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- prevalence -->
-      <div class="box-2">
+      <div class="box box-2">
         <strong><IconChartPie />Prevalence</strong>
         {
           locus.prevalence && (
@@ -256,7 +251,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- onset -->
-      <div class="box-2">
+      <div class="box box-2">
         <strong><IconHeartSearch />Age of Onset</strong>
         <LineChart
           client:load
@@ -292,7 +287,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- hpo -->
-      <div class="box-3">
+      <div class="box box-3">
         <strong><IconId />HPO Terms</strong>
         <div class="flex flex-wrap gap-2">
           {
@@ -345,7 +340,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       }
 
       <!-- details -->
-      <div class="box-2">
+      <div class="box box-2">
         <strong><IconFileText />Details</strong>
         <ShowMoreLines client:load lines={3}>
           {locus.details && <Cited client:load value={locus.details} />}
@@ -397,7 +392,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
     <div class="boxes">
       <!-- ref -->
-      <div class="box-2">
+      <div class="box box-2">
         <strong data-tooltip="Reference motif, reference orientation">
           <IconTallymark4 />Ref. Motif
         </strong>
@@ -405,7 +400,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- ranges -->
-      <div class="box-2">
+      <div class="box box-2">
         <strong><IconRulerMeasure />Ranges</strong>
         <LineChart
           client:load
@@ -436,7 +431,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- benign -->
-      <div class="box bg-primary/10">
+      <div class="box box-primary">
         <strong data-tooltip="Benign motif, reference orientation">
           <IconTallymark4 />Benign (ref.)
         </strong>
@@ -444,7 +439,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
           {locus.benign_motif_reference_orientation.join(", ") || "–"}
         </div>
       </div>
-      <div class="box bg-primary/10">
+      <div class="box box-primary">
         <strong data-tooltip="Benign motif, gene orientation">
           <IconTallymark4 />Benign (gene)
         </strong>
@@ -452,7 +447,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- pathogenic -->
-      <div class="box bg-secondary/10">
+      <div class="box box-secondary">
         <strong data-tooltip="Pathogenic motif, reference orientation">
           <IconTallymark4 />Pathogenic (ref.)
         </strong>
@@ -460,7 +455,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
           {locus.pathogenic_motif_reference_orientation.join(", ") || "–"}
         </div>
       </div>
-      <div class="box bg-secondary/10">
+      <div class="box box-secondary">
         <strong data-tooltip="Pathogenic motif, gene orientation">
           <IconTallymark4 />Pathogenic (gene)
         </strong>
@@ -488,7 +483,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- interruption -->
-      <div class="box bg-tertiary/10">
+      <div class="box box-tertiary">
         <strong data-tooltip="Interruption motif, reference orientation">
           <IconTallymark4 />Interruption (ref.)
         </strong>
@@ -496,7 +491,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
           {locus.interruption_reference_orientation.join(", ") || "–"}
         </div>
       </div>
-      <div class="box bg-tertiary/10">
+      <div class="box box-tertiary">
         <strong data-tooltip="Interruption motif, gene orientation">
           <IconTallymark4 />Interruption (gene)
         </strong>
@@ -530,22 +525,23 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
   }
 
   <!-- references -->
+  {
+    !!locus.references.length && (
+      <section>
+        <H2>References</H2>
 
-  <section>
-    <H2>References</H2>
+        <p class="text-center text-balance">
+          Direct supporting references for info on this page.
+        </p>
 
-    <p class="text-center text-balance">
-      Direct supporting references for info on this page.
-    </p>
-
-    <div class="boxes grid-cols-3">
-      {
-        locus.references.map((citation) => (
-          <Citation client:load {...citation} />
-        ))
-      }
-    </div>
-  </section>
+        <div class="boxes grid-cols-3">
+          {locus.references.map((citation) => (
+            <Citation client:load {...citation} />
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <!-- additional literature -->
   <section>

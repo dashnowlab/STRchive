@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import type { Locus } from "@/data/types";
 import { useMemo } from "react";
 import { createPR } from "@/api/pr";
 import Alert from "@/components/Alert";
@@ -72,6 +71,8 @@ const schema = {
 };
 
 type Extras = Partial<Record<keyof typeof extraProperties, string | null>>;
+
+type Locus = (typeof loci)[number];
 
 type Props = {
   heading?: ReactNode;
@@ -238,7 +239,7 @@ export default function EditForm({ heading, locus }: Props) {
         </Alert>
 
         <Button
-          className="w-60"
+          className="w-60 self-center"
           type="submit"
           design="bubble"
           aria-disabled={status === "success"}

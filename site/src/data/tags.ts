@@ -1,3 +1,4 @@
+import { newThreshold } from ".";
 import {
   IconCheck,
   IconExclamationMark,
@@ -9,7 +10,6 @@ import {
   IconSparkles,
   IconX,
 } from "@tabler/icons-react";
-import { newThreshold } from "./derived";
 
 /** https://tailwindcss.com/docs/colors */
 

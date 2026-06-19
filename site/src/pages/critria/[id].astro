@@ -5,8 +5,10 @@ import { H1, H2 } from "@/components/Heading";
 import TableOfContents from "@/components/TableOfContents";
 import Tag from "@/components/Tag";
 import EvidenceTable from "@/critria/EvidenceTable";
+import { curations } from "@/data";
 import Layout from "@/layouts/Layout.astro";
-import { parse } from "@/util/markdown";
+import Citation from "@/locus/Citation";
+import Cited from "@/locus/Cited";
 import {
   IconArrowLeft,
   IconArrowRight,
@@ -16,13 +18,13 @@ import {
   IconCalendarDue,
   IconChecks,
   IconDna2,
+  IconFileText,
   IconHistory,
   IconSitemap,
   IconTimelineEventText,
   IconUserCheck,
   IconVirus,
 } from "@tabler/icons-react";
-import curations from "~/criTRia-curations.json";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -34,24 +36,15 @@ const { id } = Astro.params;
 /** look up full curation entry from id */
 const curation = curations.find((item) => item.Locus_ID === id);
 
-if (!curation) throw new Error(`no curation found for locus: ${id}`);
-
-const nice_id = curation.Locus_ID.split("_").join(" ");
+if (!curation) throw Error(`no curation found for locus ${id}`);
 ---
 
-<Layout title={`Curation ${nice_id}`}>
+<Layout title={`Curation ${curation.nice_id}`}>
   <TableOfContents client:only="react" />
 
+  <!-- overview -->
   <section>
-    <H1><IconBookmark />Curation {nice_id}</H1>
-
-    <Button
-      className="w-60 self-center"
-      to={`/loci/${curation.Locus_ID}`}
-      design="bubble"
-    >
-      Locus Page<IconArrowRight />
-    </Button>
+    <H1><IconBookmark />Curation {curation.nice_id}</H1>
 
     <div class="boxes">
       <div class="box">
@@ -98,27 +91,34 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
         <strong><IconHistory />Last Updated</strong>
         {curation.Date}
       </div>
-      <div class="box-2">
+      <div class="box box-2">
         <strong><IconUserCheck />Curator(s)</strong>
         {curation.Curator}
       </div>
+      <div class="box box-4">
+        <strong><IconFileText />Description</strong>
+        <p>
+          <Cited client:load value={curation.Description} />
+        </p>
+      </div>
     </div>
 
-    {
-      curation.Description && (
-        <>
-          <H2>Description</H2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <Button className="w-60 self-center" to="/critria" design="bubble">
+        <IconArrowLeft />All CriTRia Curations
+      </Button>
 
-          <div set:html={parse(curation.Description)} />
-        </>
-      )
-    }
-
-    <Button className="w-60 self-center" to="/critria" design="bubble">
-      <IconArrowLeft />All CriTRia Curations
-    </Button>
+      <Button
+        className="w-60 self-center"
+        to={`/loci/${curation.Locus_ID}`}
+        design="bubble"
+      >
+        Locus Page<IconArrowRight />
+      </Button>
+    </div>
   </section>
 
+  <!-- genetic evidence -->
   <section>
     <H2>Genetic evidence</H2>
     <p class="text-center text-balance">
@@ -140,6 +140,7 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
     }
   </section>
 
+  <!-- experimental evidence -->
   <section>
     <H2>Experimental evidence</H2>
     <p class="text-center text-balance">
@@ -161,6 +162,26 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
     }
   </section>
 
+  <!-- references -->
+  {
+    !!curation.references.length && (
+      <section>
+        <H2>References</H2>
+
+        <p class="text-center text-balance">
+          Direct supporting references for info on this page.
+        </p>
+
+        <div class="boxes grid-cols-3">
+          {curation.references.map((citation) => (
+            <Citation client:load {...citation} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- notes -->
   <section>
     <Alert>
       Maximum score caps apply at evidence type, category, and supercategory

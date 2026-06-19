@@ -14,7 +14,9 @@ export const getStaticPaths = async () =>
 const { id } = Astro.params;
 
 /** look up full locus entry from id */
-const locus = loci.find((locus) => locus.id === id) || {};
+const locus = loci.find((locus) => locus.id === id);
+
+if (!locus) throw Error(`locus ${id} not found`);
 ---
 
 <Layout title="Edit Locus">

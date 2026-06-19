@@ -1,18 +1,12 @@
-import type curations from "~/criTRia-curations.json";
 import Button from "@/components/Button";
 import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
+import { curations } from "@/data";
 import { tagOptions } from "@/data/tags";
 import { IconArrowRight } from "@tabler/icons-react";
 
-type Curations = typeof curations;
-
-type Props = {
-  curations: Curations;
-};
-
 /** table for main critria page */
-export default function CurationTable({ curations }: Props) {
+export default function CurationTable() {
   const mappedCurations = curations.map((curation) => ({
     ...curation,
     classification_index: tagOptions.findIndex(

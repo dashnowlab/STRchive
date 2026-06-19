@@ -1,7 +1,8 @@
-import type { Curation } from "@/data/types";
+import type { Curation } from "@/data";
 import { Fragment } from "react/jsx-runtime";
 import Link from "@/components/Link";
 import Table, { defineData } from "@/components/Table";
+import Cited from "@/locus/Cited";
 
 type Props = {
   evidence:
@@ -48,6 +49,11 @@ export default function EvidenceTable({ evidence }: Props) {
           key: "Evidence detail",
           name: "Evidence Detail",
           className: "text-left justify-left",
+          render: (cell) => (
+            <p>
+              <Cited value={cell} />
+            </p>
+          ),
         }),
       ])}
     />

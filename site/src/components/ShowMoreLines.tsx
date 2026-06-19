@@ -38,10 +38,6 @@ export default function ShowMoreLines({ lines = 2, children }: Props) {
     /** estimate number of lines of full content */
     const count = Math.round(height / lineHeight);
 
-    /** count number of rendered lines */
-    console.log(ref.current.innerText.trim().slice(0, 50));
-    console.log(count);
-
     /** hide control if content can fit within limit */
     setShow(count > lines);
   }, [lines]);

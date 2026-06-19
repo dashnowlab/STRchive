@@ -224,21 +224,45 @@
 }
 
 @utility box {
-  @apply bg-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md px-4 py-2;
+  @apply border-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md border-2 px-4 py-2;
 
   & > strong:first-child {
-    @apply text-dark-gray -mx-4 -mt-2 flex items-center gap-2 bg-inherit px-4 py-1 font-medium;
+    @apply bg-gray/10 text-dark-gray -mx-4 -mt-2 flex items-center gap-2 px-4 py-1 font-medium;
   }
 }
 
 @utility box-2 {
-  @apply box col-span-2 max-md:col-span-1;
+  @apply col-span-2 max-md:col-span-1;
 }
 
 @utility box-3 {
-  @apply box col-span-3 max-lg:col-span-2 max-md:col-span-1;
+  @apply col-span-3 max-lg:col-span-2 max-md:col-span-1;
 }
 
 @utility box-4 {
-  @apply box col-span-4 max-lg:col-span-2 max-md:col-span-1;
+  @apply col-span-4 max-lg:col-span-2 max-md:col-span-1;
+}
+
+@utility box-primary {
+  @apply border-primary/10;
+
+  & > strong:first-child {
+    @apply bg-primary/10;
+  }
+}
+
+@utility box-secondary {
+  @apply border-secondary/10;
+
+  & > strong:first-child {
+    @apply bg-secondary/10;
+  }
+}
+
+@utility box-tertiary {
+  @apply border-tertiary/10;
+
+  & > strong:first-child {
+    @apply bg-tertiary/10;
+  }
 }

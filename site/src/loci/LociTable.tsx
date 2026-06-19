@@ -1,4 +1,3 @@
-import type { Loci } from "@/data/types";
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
@@ -9,7 +8,7 @@ import Select from "@/components/Select";
 import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
 import TextBox from "@/components/TextBox";
-import { deriveLocus } from "@/data/derived";
+import { loci } from "@/data";
 import { tagOptions } from "@/data/tags";
 import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
@@ -33,12 +32,8 @@ const normalize = (string: string) =>
     .replaceAll(/\s+/g, " ")
     .trim();
 
-type Props = {
-  loci: Loci;
-};
-
 /** table for main loci page */
-export default function LociTable({ loci }: Props) {
+export default function LociTable() {
   /** find shortest/longest motif lengths */
   const motifLengths = loci
     .map(
@@ -51,12 +46,9 @@ export default function LociTable({ loci }: Props) {
   const shortestMotif = min(motifLengths) ?? 0;
   const longestMotif = max(motifLengths) ?? Infinity;
 
-  /** loci with extra derived props */
-  const derivedLoci = loci.map((locus) => deriveLocus(locus, loci));
-
   /** options for inheritance filter */
   const inheritanceOptions = [{ value: "all", label: "All" }].concat(
-    uniq(map(derivedLoci, "inheritance").flat()).map((inheritance) => ({
+    uniq(map(loci, "inheritance").flat()).map((inheritance) => ({
       value: inheritance,
       label: inheritance,
     })),
@@ -100,7 +92,7 @@ export default function LociTable({ loci }: Props) {
       [locus[key as keyof typeof locus]].flat().filter(Boolean) as string[]
     ).includes(value);
 
-  const filteredLoci = derivedLoci
+  const filteredLoci = loci
     .map((locus) => ({
       ...locus,
       /** for sorting */
@@ -247,7 +239,7 @@ export default function LociTable({ loci }: Props) {
             onClick={() =>
               /** download filtered loci */
               downloadJson(filteredLoci, [
-                filteredLoci.length < derivedLoci.length ? "filtered" : "",
+                filteredLoci.length < loci.length ? "filtered" : "",
                 "loci",
               ])
             }

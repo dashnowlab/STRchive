@@ -8,4 +8,6 @@ export const parse = (content = "") =>
   micromark(content, {
     extensions: [gfmAutolinkLiteral()],
     htmlExtensions: [gfmAutolinkLiteralHtml()],
-  });
+  })
+    .replaceAll("<p>", "")
+    .replaceAll("</p>", "");

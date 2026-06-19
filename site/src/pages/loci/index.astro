@@ -21,7 +21,6 @@ import {
 import { filter, map, uniq } from "lodash-es";
 import ageOnset from "~/plots/age-onset.json";
 import pathSize from "~/plots/path-size.json";
-import loci from "~/STRchive-loci.json";
 
 /** import catalog files */
 const catalogs = Object.keys(
@@ -106,7 +105,7 @@ const cols = uniq(map(catalogs, "genome"));
       </Button>
     </div>
 
-    <LociTable client:load loci={loci} />
+    <LociTable client:load />
 
     <Button className="w-60 self-center" to="/loci/new" design="bubble">
       <IconPlus />
