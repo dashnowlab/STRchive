@@ -138,7 +138,7 @@ export default function ContactForm() {
 
       <div
         className={clsx(
-          "grid grid-cols-[auto_minmax(200px,600px)] gap-4 max-sm:grid-cols-1 [&>label]:contents",
+          "grid grid-cols-[auto_minmax(--spacing(50),--spacing(150))] gap-4 max-sm:grid-cols-1 [&>label]:contents",
         )}
       >
         <TextBox {...contactFields.name} value={name} onChange={setName} />

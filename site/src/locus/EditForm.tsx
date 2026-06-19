@@ -221,7 +221,6 @@ export default function EditForm({ heading, locus }: Props) {
           "IDs",
           "References",
         ]}
-        onSubmit={(data) => submit(data)}
       />
 
       <section>

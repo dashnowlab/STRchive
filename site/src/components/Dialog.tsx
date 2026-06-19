@@ -50,7 +50,7 @@ export default function Dialog({ trigger, title, children }: Props) {
       >
         <div
           ref={boxRef}
-          className="flex max-h-[calc(100dvh-var(--spacing)*20)] max-w-[calc(100dvw-var(--spacing)*20)] flex-col rounded-md bg-white text-black shadow-md"
+          className="flex max-h-[calc(100dvh-(--spacing(20)))] max-w-[calc(100dvw-(--spacing(20)))] flex-col rounded-md bg-white text-black shadow-md"
         >
           <div className="flex items-center p-4 shadow-md">
             <strong className="grow text-lg">{title}</strong>

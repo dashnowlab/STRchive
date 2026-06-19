@@ -11,7 +11,7 @@ import {
   LuPlus,
 } from "react-icons/lu";
 import Button from "@/components/Button";
-import { H1, H2 } from "@/components/Heading";
+import { H1, H2, H3 } from "@/components/Heading";
 import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
@@ -182,7 +182,7 @@ const cols = uniq(map(catalogs, "genome"));
 
     <div class="grid grid-cols-2 gap-8 max-md:grid-cols-1">
       <div class="flex flex-col items-center gap-8">
-        <H2><LuChartGantt />Pathogenic Size Range</H2>
+        <H3><LuChartGantt />Pathogenic Size Range</H3>
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -191,7 +191,7 @@ const cols = uniq(map(catalogs, "genome"));
       </div>
 
       <div class="flex flex-col items-center gap-8">
-        <H2><LuChartCandlestick />Age of Onset</H2>
+        <H3><LuChartCandlestick />Age of Onset</H3>
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}

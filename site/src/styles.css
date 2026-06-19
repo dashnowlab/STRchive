@@ -61,7 +61,7 @@
   footer,
   section {
     --width: 250;
-    @apply even:bg-off-white flex flex-col gap-8 px-[calc(max(var(--spacing)*10,(100%-var(--width)*var(--spacing))/2))] py-12 last:grow odd:bg-white;
+    @apply even:bg-off-white flex flex-col gap-8 px-[calc(max(--spacing(10),(100%-var(--width)--spacing(1))/2))] py-12 last:grow odd:bg-white;
   }
 
   h1,

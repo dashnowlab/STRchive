@@ -1,19 +1,21 @@
-import type { JSX, ReactNode } from "react";
+import type { JSX } from "react";
 import { Fragment } from "react/jsx-runtime";
 
 /** make english list from array */
 export const makeList = (
-  items: ReactNode[],
+  items: unknown,
   Wrapper: keyof JSX.IntrinsicElements = "span",
   joiner = "or",
 ) => {
-  items = [items].flat();
-  items = items.map((item, index) => <Wrapper key={index}>{item}</Wrapper>);
-  if (!items?.length) return <></>;
-  if (items.length === 1) return items[0];
-  const first = items.slice(0, -1);
-  const last = items.slice(-1);
-  if (items.length === 2)
+  let list = [items].flat();
+  list = list.map((item, index) => (
+    <Wrapper key={index}>{String(item)}</Wrapper>
+  ));
+  if (!list?.length) return <></>;
+  if (list.length === 1) return list[0];
+  const first = list.slice(0, -1);
+  const last = list.slice(-1);
+  if (list.length === 2)
     return (
       <>
         {first} {joiner} {last}
@@ -22,7 +24,7 @@ export const makeList = (
   return (
     <>
       {first.map((item, index) => (
-        <Fragment key={index}>{item}, </Fragment>
+        <Fragment key={index}>{String(item)}, </Fragment>
       ))}
       {joiner} {last}
     </>

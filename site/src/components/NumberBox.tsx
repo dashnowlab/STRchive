@@ -7,7 +7,7 @@ type Props = {
   value?: number;
   min?: number;
   max?: number;
-  step?: number;
+  step?: number | string;
   onChange?: (value: number) => void;
   snapValues?: number[];
   className?: string;

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { JsonData } from "@sagold/json-pointer";
-import type { JsonError, JsonSchema, Keyword } from "json-schema-library";
+import type { AnnotationData, JsonError, Keyword } from "json-schema-library";
 import { cloneElement, Fragment, useMemo } from "react";
 import { LuArrowDown, LuArrowUp, LuPlus, LuTrash } from "react-icons/lu";
 import Button from "@/components/Button";
@@ -14,33 +14,51 @@ import { makeList } from "@/util/format";
 import { get, join, remove, set, split } from "@sagold/json-pointer";
 import clsx from "clsx";
 import { compileSchema, draft2020, extendDraft } from "json-schema-library";
-import {
-  cloneDeep,
-  isEmpty,
-  isObject,
-  mapValues,
-  range,
-  uniq,
-} from "lodash-es";
+import { cloneDeep, isObject, mapValues, range, size, uniq } from "lodash-es";
 
-type SchemaNode = Partial<{
-  title: string;
-  description: string;
-  placeholder: string;
-  examples: (string | number)[];
-  type: string | string[];
-  enum: (string | number | null)[];
-  enum_descriptions: Record<string, string>;
-  minimum: number;
-  maximum: number;
-  less_than: string;
-  greater_than: string;
-  hide: boolean;
-  multiline: boolean;
-  combobox: boolean;
-}>;
+/** see "format-schema" */
+type SchemaNode = {
+  $schema?: string;
+  $id?: string;
+  section?: string;
+  title?: string;
+  description?: string;
+  placeholder?: string;
+  examples?: readonly string[];
+  "uri-template"?: string;
+  type: string | readonly string[];
+  pattern?: string;
+  minimum?: number;
+  maximum?: number;
+  less_than?: string;
+  greater_than?: string;
+  enum?: readonly (string | null)[];
+  enum_descriptions?: Record<string, string>;
+  in_text_citations?: boolean;
+  auto_generated?: boolean;
+  hide?: boolean;
+  multiline?: boolean;
+  combobox?: boolean;
+  properties?: Record<string, SchemaNode>;
+  uniqueItems?: boolean;
+  items?: SchemaNode;
+  required?: readonly string[];
+  message?: string;
+};
 
-type Props<Schema extends JsonSchema, Data extends JsonData> = {
+type Error = JsonError<
+  AnnotationData<{
+    message?: string;
+    expected?: string;
+    pattern?: string;
+    maximum?: number;
+    minimum?: number;
+    minItems?: number;
+    maxItems?: number;
+  }>
+>;
+
+type Props<Schema extends SchemaNode, Data extends JsonData> = {
   schema: Schema;
   sections: string[];
   data: Data;
@@ -50,7 +68,7 @@ type Props<Schema extends JsonSchema, Data extends JsonData> = {
 
 /** form automatically generated from json schema */
 export default function SchemaForm<
-  Schema extends JsonSchema,
+  Schema extends SchemaNode,
   Data extends JsonData,
 >({ schema, sections, data, onChange, children }: Props<Schema, Data>) {
   /** compile schema */
@@ -66,7 +84,7 @@ export default function SchemaForm<
   const { errors } = useMemo(() => {
     /** @ts-expect-error undocumented way to update data on root node context */
     rootNode.context.data = data; // eslint-disable-line -- see above
-    return rootNode.validate(data);
+    return rootNode.validate(data) as { errors: Error[] };
   }, [rootNode, data]);
 
   return (
@@ -126,7 +144,7 @@ const greaterThan: Keyword = {
   addValidate: () => true,
   validate: ({ node, data, pointer }) => {
     const thisValue = data;
-    /** @ts-expect-error undocumented way toget full data from node context */
+    /** @ts-expect-error undocumented way to get full data from node context */
     const fullData = node.context.data;
     const otherKey = node.schema.greater_than;
     const otherValue = get(fullData, otherKey);
@@ -154,7 +172,7 @@ const draft = extendDraft(draft2020, {
   keywords: [lessThan, greaterThan],
 });
 
-type FieldProps<Schema extends JsonSchema, Data extends JsonData> = {
+type FieldProps<Schema extends SchemaNode, Data extends JsonData> = {
   rootNode?: ReturnType<typeof compileSchema>;
   schema: Schema;
   section: string;
@@ -162,10 +180,10 @@ type FieldProps<Schema extends JsonSchema, Data extends JsonData> = {
   path?: string;
   data: Data;
   setData: (data: Data) => void;
-  errors: JsonError[];
+  errors: Error[];
 };
 
-function Field<Schema extends JsonSchema, Data extends JsonData>({
+function Field<Schema extends SchemaNode, Data extends JsonData>({
   rootNode,
   schema,
   section,
@@ -175,12 +193,6 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
   setData,
   errors,
 }: FieldProps<Schema, Data>) {
-  /** are we at top level of schema */
-  const level = split(path).length;
-
-  /** filter out fields that should not be displayed in this section */
-  if (level === 1 && node.schema.section !== section) return;
-
   /** schema props */
   const {
     title,
@@ -199,20 +211,26 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
     combobox,
   } = node.schema as SchemaNode;
 
+  /** are we at top level of schema */
+  const level = split(path).length;
+
+  /** filter out fields that should not be displayed in this section */
+  if (level === 1 && (node.schema as SchemaNode).section !== section) return;
+
   /** explicitly hide field */
   if (hide) return;
 
   /** normalize type to array */
   const types = [type].flat();
 
-  /** form data name */
+  /** FormData name */
   const name = path;
 
   /** get nested data value from path */
   const value = get(data, path);
 
   /** set nested data value from path */
-  const onChange = (value: JsonData) => {
+  const onChange = (value: unknown) => {
     let _data = cloneDeep(data);
     _data = set(_data, path, value);
     setData(_data);
@@ -221,30 +239,27 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
   /** help tooltip to show */
   const tooltip = [
     description,
-    ...(examples?.length
-      ? [
-          "Examples:",
-          `<ul>${examples.map((ex) => `<li>${ex}</li>`).join("")}</ul>`,
-        ]
-      : []),
-    ...(!isEmpty(enum_descriptions) &&
-    (typeof value === "string" || typeof value === "number") &&
-    value in enum_descriptions
-      ? [`${value}: ${enum_descriptions[value]}`]
-      : []),
+    examples?.length && [
+      "Examples:",
+      `<ul>${examples.map((ex) => `<li>${ex}</li>`).join("")}</ul>`,
+    ],
+    enum_descriptions &&
+      (typeof value === "string" || typeof value === "number") &&
+      value in enum_descriptions && [`${value}: ${enum_descriptions[value]}`],
   ]
+    .flat()
     .filter(Boolean)
     .map((line) => `<div>${line}</div>`)
     .join("");
 
   /** is the field required to be set */
   const required =
-    schema.required?.includes(split(name).pop()) && !types.includes("null");
+    schema.required?.includes(split(path).pop()!) && !types.includes("null");
 
   /** full label elements to show */
   const label = (
     <>
-      {title ?? name ?? ""}
+      {title ?? path ?? ""}
       {tooltip && <Help>{tooltip}</Help>}
     </>
   );
@@ -261,23 +276,26 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
     <span className="col-span-full -mt-2 wrap-break-word text-secondary">
       {fieldErrors
         .map(({ code, data, message }) => {
+          const schema = data.schema as SchemaNode;
+          const { expected, value, pattern } = data;
+
           /** prettify error message */
           if (code === "pattern-error")
             return (
               <>
-                Must match pattern <code>{data.pattern}</code>
+                Must match pattern <code>{pattern}</code>
               </>
             );
           if (code === "enum-error")
-            return <>Must be {makeList(data.schema.enum, "code")}</>;
-          if (code === "compare-value-error") return <>{data.schema.message}</>;
+            return <>Must be {makeList(schema.enum, "code")}</>;
+          if (code === "compare-value-error") return <>{schema.message}</>;
           if (code === "type-error") {
             if (
-              [data.expected].flat().includes("string") &&
-              (data.value === "" || data.value == null)
+              [expected].flat().includes("string") &&
+              (value === "" || value == null)
             )
               return <>Must not be blank</>;
-            else return <>Must be {makeList(data.expected, "code")}</>;
+            else return <>Must be {makeList(expected, "code")}</>;
           }
           if (code === "maximum-error")
             return (
@@ -320,11 +338,11 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
   );
 
   /** ref function */
-  const ref = (el) => {
-    if (!el || !("setCustomValidity" in el)) return;
+  const ref = (element: HTMLObjectElement) => {
+    if (!element || !("setCustomValidity" in element)) return;
     /** also set native browser form validity to get various built-in features */
-    if (isError) el?.setCustomValidity("Error with this field");
-    else el?.setCustomValidity("");
+    if (isError) element?.setCustomValidity("Error with this field");
+    else element?.setCustomValidity("");
   };
 
   if (types.includes("object"))
@@ -332,7 +350,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
     control = (
       <div
         className={clsx(
-          "col-span-full grid w-full grid-cols-[auto_minmax(200px,1fr)] items-center gap-4 empty:hidden max-[600px]:grid-cols-[auto] [&>label]:contents",
+          "col-span-full grid w-full grid-cols-[auto_minmax(--spacing(50),1fr)] items-center gap-4 empty:hidden max-md:grid-cols-[auto] [&>label]:contents",
           level > 0 && "rounded-md p-4 shadow-md",
         )}
       >
@@ -342,13 +360,16 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
           </div>
         )}
         {Object.keys(node.schema.properties).map((key) => {
+          const selection = node.getChildSelection(key);
+          if (!Array.isArray(selection) || !selection.length)
+            throw Error(`${path} error`);
           return (
             <Field<Schema, Data>
               key={key}
               rootNode={rootNode}
               schema={schema}
               section={section}
-              node={node.getChildSelection(key)[0]}
+              node={{ ...selection[0], schemaAnnotations: [] }}
               path={`${path}/${key}`}
               data={data}
               setData={setData}
@@ -360,10 +381,14 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
     );
   else if (types.includes("array")) {
     /** array group */
-    const items = get(data, path)?.length ?? 0;
+    const items = size(get(data, path)) ?? 0;
+
+    const selection = node.getChildSelection("items");
+
+    if (!Array.isArray(selection) || items === 0) throw Error(`${path} error`);
 
     control = (
-      <div className="col-span-full grid w-full grid-flow-row-dense grid-cols-[minmax(200px,1fr)_auto] items-center gap-4 rounded-md p-4 shadow-md">
+      <div className="col-span-full grid w-full grid-flow-row-dense grid-cols-[minmax(--spacing(50),1fr)_auto] items-center gap-4 rounded-md p-4 shadow-md">
         <div className="col-span-full flex items-center gap-2 self-start">
           {label}
         </div>
@@ -373,7 +398,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
               key={index}
               schema={schema}
               section={section}
-              node={node.getChildSelection()[0]}
+              node={{ ...selection[0], schemaAnnotations: [] }}
               path={`${path}/${index}`}
               data={data}
               setData={setData}
@@ -433,9 +458,9 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
             /** add new item to array */
             let _data = cloneDeep(data);
             /** get child schema */
-            let newItem = node
+            let newItem: unknown = node
               .getNodeChild("items")
-              .node.getData(undefined, {});
+              .node?.getData(undefined, {});
             /** modify default value fills */
             if (newItem === "") newItem = null;
             if (isObject(newItem)) newItem = mapValues(newItem, () => null);
@@ -452,14 +477,14 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
   } else if (_enum?.length) {
     /** single select */
     const options = uniq(["", ..._enum.filter(Boolean)]).map((value) => ({
-      value,
+      value: value ?? "",
       label: value,
-      tooltip: enum_descriptions?.[value],
+      tooltip: value !== null ? enum_descriptions?.[value] : "",
     }));
     control = (
       <Select
         options={options}
-        value={value || ""}
+        value={String(value ?? "")}
         onChange={(value) => onChange(value || null)}
       />
     );
@@ -472,7 +497,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
             value: example,
             label: example,
           }))}
-          value={value}
+          value={String(value ?? "")}
           onChange={onChange}
         />
       );
@@ -484,20 +509,20 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
             placeholder ?? (examples?.length ? `Ex: ${examples[0]}` : "")
           }
           multi={multiline}
-          value={value || ""}
+          value={String(value ?? "")}
           onChange={(value) => onChange(value || null)}
         />
       );
   else if (types.includes("number") || types.includes("integer")) {
     /** min value allowed to be input */
     const min = Math.max(
-      ...[minimum, get(data, greater_than)].filter(
+      ...[minimum, get(data, greater_than ?? "")].filter(
         (value) => typeof value === "number",
       ),
     );
     /** max value allowed to be input */
     const max = Math.min(
-      ...[maximum, get(data, less_than)].filter(
+      ...[maximum, get(data, less_than ?? "")].filter(
         (value) => typeof value === "number",
       ),
     );
@@ -506,7 +531,7 @@ function Field<Schema extends JsonSchema, Data extends JsonData>({
         step={types.includes("integer") ? 1 : "any"}
         min={Number.isFinite(min) ? min : undefined}
         max={Number.isFinite(max) ? max : undefined}
-        value={value}
+        value={Number(value) || 0}
         onChange={onChange}
       />
     );

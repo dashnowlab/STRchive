@@ -36,7 +36,16 @@
       "type": "array",
       "items": {
         "title": "",
-        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null],
+        "examples": [
+          "Definitive",
+          "Strong",
+          "Moderate",
+          "Limited",
+          "Disputed",
+          "Refuted",
+          "No Known Relationship",
+          "Provisional"
+        ],
         "type": "string",
         "combobox": true
       }
@@ -148,10 +157,7 @@
       "section": "Disease",
       "title": "HPO Terms",
       "description": "Human Phenotype Ontology (HPO) terms associated with the disease",
-      "examples": [
-        "HP:0002066 Gait ataxia",
-        "HP:0001250 Seizure"
-      ],
+      "examples": ["HP:0002066 Gait ataxia", "HP:0001250 Seizure"],
       "type": ["array", "null"],
       "items": {
         "type": "string",
@@ -342,7 +348,7 @@
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -357,7 +363,7 @@
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -372,7 +378,7 @@
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -387,7 +393,7 @@
       "examples": ["TTG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -737,7 +743,7 @@
       "examples": ["pmid:38467784"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -759,8 +765,8 @@
     "start_t2t",
     "stop_t2t",
     "disease",
-    "association_type",
     "inheritance",
+    "association_type",
     "disease_description",
     "hpo_terms",
     "prevalence",
@@ -780,9 +786,11 @@
     "pathogenic_motif_reference_orientation",
     "benign_motif_reference_orientation",
     "unknown_motif_reference_orientation",
+    "interruption_reference_orientation",
     "pathogenic_motif_gene_orientation",
     "benign_motif_gene_orientation",
     "unknown_motif_gene_orientation",
+    "interruption_gene_orientation",
     "locus_structure",
     "benign_min",
     "benign_max",

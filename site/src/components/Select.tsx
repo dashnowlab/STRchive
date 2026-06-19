@@ -100,7 +100,7 @@ export default function Select({
                   data-tooltip={tooltip}
                 >
                   <LuCheck className="text-primary" />
-                  {label}
+                  {label || "–"}
                 </_Select.Item>
               ))}
             </_Select.List>
