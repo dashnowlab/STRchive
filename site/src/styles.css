@@ -216,17 +216,25 @@
 }
 
 @utility boxes {
-  @apply grid grid-cols-4 gap-8 max-md:grid-cols-2 max-sm:grid-cols-1;
+  @apply grid grid-flow-dense grid-cols-4 gap-8 max-md:grid-cols-2 max-sm:grid-cols-1;
 }
 
 @utility box {
   @apply bg-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md px-4 py-2;
 
   & > strong:first-child {
-    @apply text-dark-gray -mx-4 -mt-2 mb-2 flex items-center gap-2 bg-inherit px-4 py-1 font-medium;
+    @apply text-dark-gray -mx-4 -mt-2 flex items-center gap-2 bg-inherit px-4 py-1 font-medium;
   }
 }
 
-@utility box-wide {
+@utility box-2 {
   @apply box col-span-2 max-md:col-span-1;
+}
+
+@utility box-3 {
+  @apply box col-span-3 max-lg:col-span-2 max-md:col-span-1;
+}
+
+@utility box-4 {
+  @apply box col-span-4 max-lg:col-span-2 max-md:col-span-1;
 }

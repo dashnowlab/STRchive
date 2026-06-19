@@ -1,5 +1,5 @@
 ---
-import { LuArrowLeft, LuBookMarked } from "react-icons/lu";
+import { LuArrowLeft, LuArrowRight, LuBookMarked } from "react-icons/lu";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
@@ -31,34 +31,64 @@ const nice_id = curation.Locus_ID.split("_").join(" ");
   <section>
     <H1><LuBookMarked />Curation {nice_id}</H1>
 
-    <dl>
-      <dt>Gene</dt>
-      <dd>{curation.Gene}</dd>
-      <dt>Disease</dt>
-      <dd>{curation.Disease_ID}</dd>
-      <dt>Inheritance</dt>
-      <dd>{curation.Inheritance}</dd>
-      <dt>Classification</dt>
-      <dd>
+    <Button
+      className="w-60 self-center"
+      to={`/loci/${curation.Locus_ID}`}
+      design="bubble"
+    >
+      Locus Page<LuArrowRight />
+    </Button>
+
+    <div class="boxes">
+      <div class="box">
+        <strong>Gene</strong>
+        {curation.Gene}
+      </div>
+      <div class="box">
+        <strong>Disease</strong>
+        {curation.Disease_ID}
+      </div>
+      <div class="box">
+        <strong>Inheritance</strong>
+        {curation.Inheritance ?? "–"}
+      </div>
+      <div class="box">
+        <strong>Classification</strong>
         <Tag value={curation.classification} />
-      </dd>
-      <dt>Total Score</dt>
-      <dd>{curation.total_score}</dd>
-      <dt>Publications Reviewed</dt>
-      <dd>{curation.publication_count}</dd>
-      <dt>Publication Span</dt>
-      <dd>
+      </div>
+      <div class="box">
+        <strong>Total Score</strong>
+        {curation.total_score}
+      </div>
+      <div class="box">
+        <strong>Publications Reviewed</strong>
+        {curation.publication_count ?? "–"}
+      </div>
+      <div class="box">
+        <strong>Publication Span</strong>
         {
           curation.publication_interval_years != null
             ? `${curation.publication_interval_years} years`
-            : ""
+            : "–"
         }
-      </dd>
-      <dt>Last Updated</dt>
-      <dd>{curation.Date}</dd>
-      <dt>Curator(s)</dt>
-      <dd>{curation.Curator}</dd>
-    </dl>
+      </div>
+      <div class="box">
+        <strong>Publication Interval</strong>
+        {
+          curation.publication_interval_years != null
+            ? `${curation.publication_interval_years} years`
+            : "–"
+        }
+      </div>
+      <div class="box">
+        <strong>Last Updated</strong>
+        {curation.Date}
+      </div>
+      <div class="box-2">
+        <strong>Curator(s)</strong>
+        {curation.Curator}
+      </div>
+    </div>
 
     {
       curation.Description && (

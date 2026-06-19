@@ -60,7 +60,7 @@ export default function Select({
             {(value: string | string[]) => {
               let selected: ReactNode = "";
               if (Array.isArray(value)) {
-                if (value.length === 0) selected = "";
+                if (!value.length) selected = "";
                 else if (value.length === options.length)
                   selected = "All selected";
                 else if (value.length === 1)

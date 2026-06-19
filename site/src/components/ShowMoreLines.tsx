@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import { uniq } from "lodash-es";
 
 type Props = {
   lines?: keyof typeof counts;
@@ -27,10 +28,20 @@ export default function ShowMoreLines({ lines = 2, children }: Props) {
   useEffect(() => {
     if (!ref.current) return;
 
+    /** height of full content */
+    const { height } = ref.current.getBoundingClientRect();
+
+    /** height of each line */
+    const lineHeight = parseFloat(
+      window.getComputedStyle(ref.current).lineHeight,
+    );
+
+    /** estimate number of lines of full content */
+    const count = Math.round(height / lineHeight);
+
     /** count number of rendered lines */
-    const range = document.createRange();
-    range.selectNodeContents(ref.current);
-    const count = range.getClientRects().length;
+    console.log(ref.current.innerText.trim().slice(0, 50));
+    console.log(count);
 
     /** hide control if content can fit within limit */
     setShow(count > lines);

@@ -65,7 +65,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     <!-- overview tags -->
     {
       locus.evidence.length + locus.locus_tags.length > 0 && (
-        <div class="flex flex-wrap items-center justify-center gap-2">
+        <div class="flex flex-wrap justify-center gap-2">
           {locus.evidence.map((evidence) => (
             <Tag
               value={evidence}
@@ -126,7 +126,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       <!-- links -->
       {
         getIdentifiers(locus).map(({ name, Icon, identifiers }) => (
-          <div class="box-wide">
+          <div class="box-2">
             <strong>
               <Icon />
               {name}
@@ -172,7 +172,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     <!-- disease tags -->
     {
       locus.disease_tags.length > 0 && (
-        <div class="flex flex-wrap items-center justify-center gap-2">
+        <div class="flex flex-wrap justify-center gap-2">
           {locus.disease_tags.map((tag) => (
             <Tag
               value={tag}
@@ -194,18 +194,20 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       <!-- inheritance -->
       <div class="box">
         <strong>Inheritance</strong>
-        {
-          locus.inheritance.map((inheritance) => (
-            <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
-              {getInheritance(inheritance)}
-            </Link>
-          ))
-        }
-        {locus.inheritance.length === 0 && "–"}
+        <div class="flex flex-wrap gap-2">
+          {
+            locus.inheritance.map((inheritance) => (
+              <Link to="https://www.ncbi.nlm.nih.gov/books/NBK132145/">
+                {getInheritance(inheritance)}
+              </Link>
+            ))
+          }
+        </div>
+        {!locus.inheritance.length && "–"}
       </div>
 
       <!-- description -->
-      <div class="box-wide">
+      <div class="box-2">
         <strong>Description</strong>
         <ShowMoreLines client:load lines={3}>
           <Cited client:load value={locus.disease_description} />
@@ -213,7 +215,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- prevalence -->
-      <div class="box-wide">
+      <div class="box-2">
         <strong>Prevalence</strong>
         {
           locus.prevalence && (
@@ -234,7 +236,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- onset -->
-      <div class="box-wide">
+      <div class="box-2">
         <strong>Age of Onset</strong>
         <LineChart
           client:load
@@ -268,6 +270,29 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
           )
         }
       </div>
+
+      <!-- hpo -->
+      <div class="box-3">
+        <strong>HPO Terms</strong>
+        <div class="flex flex-wrap gap-2">
+          {
+            locus.hpo_terms?.map((term) => (
+              <Link
+                to={`https://hpo.jax.org/app/browse/term/${term.split(" ")[0]}`}
+              >
+                {term}
+              </Link>
+            ))
+          }
+          {!locus.hpo_terms?.length && "–"}
+        </div>
+      </div>
+
+      <!-- association -->
+      <div class="box">
+        <strong>Association</strong>
+        <div class="flex flex-wrap gap-2">{locus.association_type}</div>
+      </div>
     </div>
   </section>
 
@@ -297,7 +322,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       }
 
       <!-- details -->
-      <div class="box-wide">
+      <div class="box-2">
         <strong>Details</strong>
         <ShowMoreLines client:load lines={3}>
           {locus.details && <Cited client:load value={locus.details} />}
@@ -347,7 +372,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
     <div class="boxes">
       <!-- ref -->
-      <div class="box-wide">
+      <div class="box-2">
         <strong data-tooltip="Reference motif, reference orientation">
           Ref. Motif
         </strong>
@@ -355,7 +380,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       </div>
 
       <!-- min/max -->
-      <div class="box-wide">
+      <div class="box-2">
         <strong>Min/Max</strong>
         <LineChart
           client:load
