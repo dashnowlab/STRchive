@@ -19,7 +19,6 @@ import Cited from "@/locus/Cited";
 import Gnomad from "@/locus/Gnomad";
 import { getJsonBlame } from "@/util/git";
 import {
-  IconBarcode,
   IconCalendar,
   IconCalendarDue,
   IconChartPie,
@@ -37,6 +36,7 @@ import {
   IconSitemap,
   IconSlash,
   IconTag,
+  IconTallymark4,
   IconTallymark4,
   IconTool,
   IconVirus,
@@ -75,7 +75,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
   <!-- overview -->
   <section>
-    <H1><IconBarcode />Locus {locus.nice_id}</H1>
+    <H1><IconTallymark4 />Locus {locus.nice_id}</H1>
 
     <!-- overview tags -->
     <div class="flex flex-wrap items-center justify-center gap-4">

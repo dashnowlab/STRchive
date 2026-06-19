@@ -10,13 +10,13 @@ import Layout from "@/layouts/Layout.astro";
 import { repo, repoRaw, version } from "@/layouts/meta";
 import LociTable from "@/loci/LociTable";
 import {
-  IconBarcode,
   IconBrandGithub,
   IconChartBar,
   IconChartCandle,
   IconChartLine,
   IconDownload,
   IconPlus,
+  IconTallymark4,
 } from "@tabler/icons-react";
 import { filter, map, uniq } from "lodash-es";
 import ageOnset from "~/plots/age-onset.json";
@@ -95,7 +95,7 @@ const cols = uniq(map(catalogs, "genome"));
   <TableOfContents client:only="react" />
 
   <section>
-    <H1><IconBarcode />Loci</H1>
+    <H1><IconTallymark4 />Loci</H1>
 
     <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
       <span> Tandem repeat loci associated with Mendelian diseases. </span>
