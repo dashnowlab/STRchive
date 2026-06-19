@@ -6,7 +6,7 @@ import {
   IconPlusMinus,
   IconQuestionMark,
   IconSlash,
-  IconStars,
+  IconSparkles,
   IconX,
 } from "@tabler/icons-react";
 import { newThreshold } from "./derived";
@@ -26,7 +26,7 @@ export const tagOptions = [
     /** longer description, for tooltips and etc. */
     description: `Less than ~${newThreshold} years old`,
     /** icon */
-    Icon: IconStars,
+    Icon: IconSparkles,
     /** classes on icon */
     className: "bg-primary text-white",
     /** whether to show in loci page table */
