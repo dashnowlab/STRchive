@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
-import { LuCheck } from "react-icons/lu";
 import { Combobox as _Combobox } from "@base-ui/react";
 
 type Option = {
@@ -63,12 +62,9 @@ export default function ComboBox({
               {(item: Option) => (
                 <_Combobox.Item
                   key={item.value}
-                  value={item}
-                  className="flex cursor-pointer gap-2 px-4 py-2 transition hover:bg-light-gray data-highlighted:bg-light-gray"
+                  value={item.value}
+                  className="flex cursor-pointer items-center gap-2 px-4 py-2 transition hover:bg-light-gray data-highlighted:bg-light-gray"
                 >
-                  <_Combobox.ItemIndicator>
-                    <LuCheck className="text-primary" />
-                  </_Combobox.ItemIndicator>
                   {item.special ? `"${item.label}"` : item.label}
                 </_Combobox.Item>
               )}

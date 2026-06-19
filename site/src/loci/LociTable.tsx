@@ -208,7 +208,7 @@ export default function LociTable({ loci }: Props) {
             <NumberBox
               data-tooltip="Motif length min"
               value={motifMin}
-              onChange={setMotifMin}
+              onChange={(value) => setMotifMin(value ?? shortestMotif)}
               min={shortestMotif}
               max={Math.min(longestMotif, motifMax)}
               snapValues={motifLengths}
@@ -217,7 +217,7 @@ export default function LociTable({ loci }: Props) {
             <NumberBox
               data-tooltip="Motif length max"
               value={motifMax}
-              onChange={setMotifMax}
+              onChange={(value) => setMotifMax(value ?? longestMotif)}
               min={Math.max(shortestMotif, motifMin)}
               max={longestMotif}
               snapValues={motifLengths}

@@ -4,11 +4,11 @@ import { sortBy, uniq } from "lodash-es";
 
 type Props = {
   label?: ReactNode;
-  value?: number;
+  value?: number | null;
   min?: number;
   max?: number;
   step?: number | string;
-  onChange?: (value: number) => void;
+  onChange?: (value: number | null) => void;
   snapValues?: number[];
   className?: string;
   tooltip?: string;
@@ -36,7 +36,7 @@ export default function NumberBox({
         value={typeof value === "number" && !Number.isNaN(value) ? value : ""}
         onChange={(event) => {
           const string = event.target.value;
-          if (!string.trim() || Number.isNaN(Number(string))) return;
+          if (!string.trim() || Number.isNaN(Number(string))) onChange?.(null);
           else {
             let number = Number(string);
             if (value && snapValues?.length) {

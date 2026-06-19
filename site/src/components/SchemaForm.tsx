@@ -121,14 +121,13 @@ const lessThan: Keyword = {
     const fullData = node.context.data;
     const otherKey = node.schema.less_than;
     const otherValue = get(fullData, otherKey);
+
     if (
-      thisValue === null ||
-      otherValue === null ||
-      !(typeof thisValue === "number") ||
-      !(typeof otherValue === "number")
+      typeof thisValue === "number" &&
+      typeof otherValue === "number" &&
+      thisValue <= otherValue
     )
       return;
-    if (thisValue <= otherValue) return;
     return node.createError("compare-value-error", {
       pointer,
       value: otherValue,
@@ -149,13 +148,11 @@ const greaterThan: Keyword = {
     const otherKey = node.schema.greater_than;
     const otherValue = get(fullData, otherKey);
     if (
-      thisValue === null ||
-      otherValue === null ||
-      !(typeof thisValue === "number") ||
-      !(typeof otherValue === "number")
+      typeof thisValue === "number" &&
+      typeof otherValue === "number" &&
+      thisValue >= otherValue
     )
       return;
-    if (thisValue >= otherValue) return;
     return node.createError("compare-value-error", {
       pointer,
       value: otherValue,
@@ -292,7 +289,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
           if (code === "type-error") {
             if (
               [expected].flat().includes("string") &&
-              (value === "" || value == null)
+              (value === "" || value === null)
             )
               return <>Must not be blank</>;
             else return <>Must be {makeList(expected, "code")}</>;
@@ -360,9 +357,11 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
           </div>
         )}
         {Object.keys(node.schema.properties).map((key) => {
+          /** get child schema node */
           const selection = node.getChildSelection(key);
           if (!Array.isArray(selection) || !selection.length)
             throw Error(`${path} error`);
+
           return (
             <Field<Schema, Data>
               key={key}
@@ -381,11 +380,11 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
     );
   else if (types.includes("array")) {
     /** array group */
-    const items = size(get(data, path)) ?? 0;
+    const items = size(get(data, path));
 
+    /** get child schema node */
     const selection = node.getChildSelection("items");
-
-    if (!Array.isArray(selection) || items === 0) throw Error(`${path} error`);
+    if (!Array.isArray(selection)) throw Error(`${path} error`);
 
     control = (
       <div className="col-span-full grid w-full grid-flow-row-dense grid-cols-[minmax(--spacing(50),1fr)_auto] items-center gap-4 rounded-md p-4 shadow-md">
@@ -505,6 +504,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
       /** plain text input */
       control = (
         <TextBox
+          className="w-full"
           placeholder={
             placeholder ?? (examples?.length ? `Ex: ${examples[0]}` : "")
           }
@@ -531,7 +531,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
         step={types.includes("integer") ? 1 : "any"}
         min={Number.isFinite(min) ? min : undefined}
         max={Number.isFinite(max) ? max : undefined}
-        value={Number(value) || 0}
+        value={typeof value === "number" ? value : undefined}
         onChange={onChange}
       />
     );

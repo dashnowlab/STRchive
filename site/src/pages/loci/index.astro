@@ -150,7 +150,8 @@ const cols = uniq(map(catalogs, "genome"));
                       {filter(
                         catalogs,
                         (catalog) =>
-                          catalog.software == row.key && catalog.genome === col,
+                          catalog.software === row.key &&
+                          catalog.genome === col,
                       ).map((download) => (
                         <Button
                           to={`${repoRaw}/refs/heads/main/data/catalogs/${download.path}`}

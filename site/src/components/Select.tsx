@@ -54,7 +54,7 @@ export default function Select({
       defaultValue={defaultValue}
     >
       <label data-tooltip={tooltip}>
-        {label}
+        {label && <span>{label}</span>}
         <_Select.Trigger render={<Button ref={ref} design="plain" />}>
           <_Select.Value>
             {(value: string | string[]) => {

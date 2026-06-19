@@ -7,12 +7,12 @@
 
   --color-*: initial;
 
-  --color-black: oklch(0% 0.005 210);
-  --color-dark-gray: oklch(40% 0.005 210);
-  --color-gray: oklch(65% 0.005 210);
-  --color-light-gray: oklch(95% 0.005 210);
-  --color-off-white: oklch(98% 0.005 210);
-  --color-white: oklch(100% 0.005 210);
+  --color-black: oklch(0% 0.001 210);
+  --color-dark-gray: oklch(40% 0.001 210);
+  --color-gray: oklch(65% 0.001 210);
+  --color-light-gray: oklch(95% 0.001 210);
+  --color-off-white: oklch(98% 0.001 210);
+  --color-white: oklch(100% 0.001 210);
 
   --color-primary: oklch(65% 0.125 210);
   --color-secondary: oklch(65% 0.125 30);
@@ -61,7 +61,7 @@
   footer,
   section {
     --width: 250;
-    @apply even:bg-off-white flex flex-col gap-8 px-[calc(max(--spacing(10),(100%-var(--width)--spacing(1))/2))] py-12 last:grow odd:bg-white;
+    @apply even:bg-off-white flex flex-col gap-8 px-[calc(max(--spacing(10),(100%-var(--width)*(--spacing(1)))/2))] py-12 last:grow odd:bg-white;
   }
 
   h1,
