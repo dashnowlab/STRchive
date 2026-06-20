@@ -131,7 +131,7 @@
 
   button,
   select {
-    @apply flex cursor-pointer items-center justify-center transition;
+    @apply inline-flex cursor-pointer items-center justify-center transition;
   }
 
   p > button,

@@ -17,14 +17,13 @@ const { id } = Astro.params;
 const locus = loci.find((locus) => locus.id === id);
 
 if (!locus) throw Error(`locus ${id} not found`);
+
+/** nice title */
+const title = `Edit Locus ${locus.id.replaceAll("_", " ")}`;
 ---
 
-<Layout title="Edit Locus">
+<Layout title={title}>
   <TableOfContents client:only="react" />
 
-  <EditForm
-    client:only="react"
-    heading={`Suggest Edit for Locus ${locus.id}`}
-    locus={locus}
-  />
+  <EditForm client:only="react" heading={title} locus={locus} />
 </Layout>

@@ -55,7 +55,6 @@ const {
     <ViewCorner client:only="react" />
 
     <script>
-      import { spotlight } from "@/util/dom";
       import { sleep } from "@/util/misc";
 
       const hashChange = async () => {
@@ -71,9 +70,6 @@ const {
 
         /** wait for layout changes */
         await sleep(100);
-
-        /** highlight element */
-        spotlight(element);
 
         /** scroll to element */
         element.scrollIntoView({ block: "start" });

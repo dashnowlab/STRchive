@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { firstInView } from "@/util/dom";
-import { useEventListener } from "@reactuses/core";
+import { useEventListener, useMutationObserver } from "@reactuses/core";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import Button from "./Button";
 
 /** all used heading elements */
-const headingSelector = "h2[id], h3[id], h4[id]";
+const headingSelector = "h1[id], h2[id], h3[id], h4[id]";
 
 /**
  * floating table of contents that outlines sections/headings on page. can be
@@ -30,20 +30,42 @@ export default function TableOfContents() {
   /** active heading id (first in view) */
   const [activeId, setActiveId] = useState("");
 
-  /** on page load */
-  useEffect(() => {
-    /** read headings from page */
-    // eslint-disable-next-line
-    setHeadings(
-      [...document.querySelectorAll(headingSelector)].map((element) => {
-        const clone = element.cloneNode(true) as Element;
-        const { innerHTML, id, tagName } = clone;
-        const html = innerHTML.trim();
-        const level = parseInt(tagName.slice(1)) || 0;
-        return { element, html, id, level };
-      }),
-    );
-  }, []);
+  /** update headings from page */
+  const update = useCallback(
+    () =>
+      setHeadings(
+        [...document.querySelectorAll(headingSelector)].map((element) => {
+          const clone = element.cloneNode(true) as HTMLElement;
+          const { innerHTML, id, tagName } = clone;
+          const html =
+            clone.querySelector("a")?.innerHTML.trim() || innerHTML.trim();
+          const level = parseInt(tagName.slice(1)) || 0;
+          return { element, html, id, level };
+        }),
+      ),
+    [],
+  );
+
+  /** when headings added/removed, run update */
+  useMutationObserver(
+    (mutations) => {
+      for (const { type, addedNodes, removedNodes } of mutations) {
+        if (type !== "childList") continue;
+        for (const node of addedNodes) {
+          if (!(node instanceof Element)) continue;
+          if (node.matches(headingSelector)) return update();
+          if (node.querySelector(headingSelector)) return update();
+        }
+        for (const node of removedNodes) {
+          if (!(node instanceof Element)) continue;
+          if (node.matches(headingSelector)) return update();
+          if (node.querySelector(headingSelector)) return update();
+        }
+      }
+    },
+    document.body,
+    { subtree: true, childList: true },
+  );
 
   /** on window scroll */
   useEventListener("scroll", () => {

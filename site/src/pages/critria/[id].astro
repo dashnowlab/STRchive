@@ -37,14 +37,17 @@ const { id } = Astro.params;
 const curation = curations.find((item) => item.Locus_ID === id);
 
 if (!curation) throw Error(`no curation found for locus ${id}`);
+
+/** nice title */
+const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
 ---
 
-<Layout title={`Curation ${curation.nice_id}`}>
+<Layout title={title}>
   <TableOfContents client:only="react" />
 
   <!-- overview -->
   <section>
-    <H1><IconBookmark />Curation {curation.nice_id}</H1>
+    <H1><IconBookmark />{title}</H1>
 
     <div class="boxes">
       <div class="box">

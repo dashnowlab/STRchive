@@ -92,9 +92,6 @@ export const loci = rawLoci.map((locus) => {
     /** keep existing data */
     ...locus,
 
-    /** nice looking id, for labels */
-    nice_id: locus.id.replace("_", " "),
-
     /** construct full position strings */
     position_base0_hg19: position("hg19"),
     position_base0_hg38: position("hg38"),
@@ -151,9 +148,6 @@ export const curations = rawCurations.map((curation) => {
   return {
     /** keep existing data */
     ...curation,
-
-    /** nice looking id, for labels */
-    nice_id: curation.Locus_ID.replace("_", " "),
 
     /** process fields with in-text citations */
     Description: extractCitations(curation.Description, references),

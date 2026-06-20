@@ -68,14 +68,17 @@ const blame = getJsonBlame(
 
 /** get corresponding criTRia curation page */
 const curation = curations.find((curation) => curation.Locus_ID === id);
+
+/** nice title */
+const title = `Locus ${locus.id.replaceAll("_", " ")}`;
 ---
 
-<Layout title={`Locus ${locus.nice_id}`}>
+<Layout title={title}>
   <TableOfContents client:only="react" />
 
   <!-- overview -->
   <section>
-    <H1><IconTallymark4 />Locus {locus.nice_id}</H1>
+    <H1><IconTallymark4 />{title}</H1>
 
     <!-- overview tags -->
     <div class="flex flex-wrap items-center justify-center gap-4">
