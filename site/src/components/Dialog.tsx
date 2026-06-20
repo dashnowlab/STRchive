@@ -1,16 +1,7 @@
 import type { ReactElement, ReactNode } from "react";
-import { cloneElement, createContext, useRef, useState } from "react";
 import Button from "@/components/Button";
-import {
-  useClickOutside,
-  useEventListener,
-  useScrollLock,
-} from "@reactuses/core";
+import { Dialog as _Dialog } from "@base-ui/react";
 import { IconX } from "@tabler/icons-react";
-
-export const DialogContext = createContext<{ isOpen: boolean }>({
-  isOpen: false,
-});
 
 type Props = {
   trigger: ReactElement<{ onClick?: () => void }>;
@@ -19,53 +10,26 @@ type Props = {
 };
 
 export default function Dialog({ trigger, title, children }: Props) {
-  const dialogRef = useRef<HTMLDialogElement>(null);
-  const boxRef = useRef(null);
-  const [isOpen, setIsOpen] = useState(false);
-  const [, setLocked] = useScrollLock(document.body);
-
-  const open = () => {
-    setIsOpen(true);
-    dialogRef.current?.showModal();
-    setLocked(true);
-  };
-
-  const close = () => {
-    setIsOpen(false);
-    dialogRef.current?.close();
-    setLocked(false);
-  };
-
-  useEventListener("close", () => setIsOpen(false), dialogRef);
-  useClickOutside(boxRef, close);
-
   return (
-    <>
-      {/* eslint-disable-next-line -- erroneous, ref is being accessed on click not render */}
-      {cloneElement(trigger, { onClick: open })}
+    <_Dialog.Root>
+      <_Dialog.Trigger render={trigger} />
+      <_Dialog.Portal className="z-10">
+        <_Dialog.Backdrop className="fixed inset-0 bg-black/75" />
+        <_Dialog.Popup className="pointer-events-none fixed inset-0 grid h-screen w-screen place-items-center p-10">
+          <div className="pointer-events-auto flex max-h-full max-w-full flex-col overflow-hidden rounded-md bg-white text-black shadow-md">
+            <div className="flex items-center p-4 shadow-md">
+              <strong className="grow text-lg">{title}</strong>
+              <_Dialog.Close render={<Button className="p-0!" />}>
+                <IconX />
+              </_Dialog.Close>
+            </div>
 
-      <dialog
-        ref={dialogRef}
-        className="fixed inset-0 hidden h-dvh max-h-none w-dvw max-w-none place-items-center bg-transparent backdrop:opacity-0 open:grid"
-      >
-        <div
-          ref={boxRef}
-          className="flex max-h-[calc(100dvh-(--spacing(20)))] max-w-[calc(100dvw-(--spacing(20)))] flex-col rounded-md bg-white text-black shadow-md"
-        >
-          <div className="flex items-center p-4 shadow-md">
-            <strong className="grow text-lg">{title}</strong>
-            <Button onClick={close} autoFocus>
-              <IconX />
-            </Button>
-          </div>
-
-          <div className="flex flex-col justify-center-safe gap-8 overflow-y-auto overscroll-none p-8">
-            <DialogContext.Provider value={{ isOpen }}>
+            <div className="flex flex-col justify-center-safe gap-8 overflow-y-auto p-8">
               {children}
-            </DialogContext.Provider>
+            </div>
           </div>
-        </div>
-      </dialog>
-    </>
+        </_Dialog.Popup>
+      </_Dialog.Portal>
+    </_Dialog.Root>
   );
 }

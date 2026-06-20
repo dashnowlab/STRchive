@@ -243,16 +243,19 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
     description,
     examples?.length && [
       "Examples:",
-      `<ul>${examples.map((ex) => `<li>${ex}</li>`).join("")}</ul>`,
+      <ul>
+        {examples.map((ex) => (
+          <li key={ex}>{ex}</li>
+        ))}
+      </ul>,
     ],
     enum_descriptions &&
       (typeof value === "string" || typeof value === "number") &&
-      value in enum_descriptions && [`${value}: ${enum_descriptions[value]}`],
+      value in enum_descriptions && [`"${value}": ${enum_descriptions[value]}`],
   ]
     .flat()
     .filter(Boolean)
-    .map((line) => `<div>${line}</div>`)
-    .join("");
+    .map((line, index) => <div key={index}>{line}</div>);
 
   /** is the field required to be set */
   const required =
@@ -411,7 +414,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
             <div className="col-start-2 flex flex-wrap items-center *:min-w-10">
               <Button
                 aria-disabled={index === 0}
-                data-tooltip="Move up"
+                aria-label="Move up"
                 onClick={() => {
                   let _data = cloneDeep(data);
                   const aPath = join(path, String(index - 1));
@@ -427,7 +430,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
               </Button>
               <Button
                 aria-disabled={index === items - 1}
-                data-tooltip="Move down"
+                aria-label="Move down"
                 onClick={() => {
                   let _data = cloneDeep(data);
                   const aPath = join(path, String(index));
@@ -442,7 +445,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
                 <IconArrowDown />
               </Button>
               <Button
-                data-tooltip="Remove"
+                aria-label="Remove"
                 onClick={() => {
                   let _data = cloneDeep(data);
                   _data = remove(_data, join(path, String(index)));

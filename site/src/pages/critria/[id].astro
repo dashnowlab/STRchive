@@ -61,7 +61,7 @@ if (!curation) throw Error(`no curation found for locus ${id}`);
       </div>
       <div class="box">
         <strong><IconChecks />Classification</strong>
-        <Tag value={curation.classification} />
+        <Tag client:load value={curation.classification} />
       </div>
       <div class="box">
         <strong><IconAward />Total Score</strong>

@@ -1,6 +1,7 @@
 import type { ComponentProps, ReactNode } from "react";
 import { useRef } from "react";
 import Button from "@/components/Button";
+import Help from "@/components/Help";
 import { IconX } from "@tabler/icons-react";
 import clsx from "clsx";
 
@@ -8,7 +9,7 @@ type Props = {
   label?: ReactNode;
   multi?: boolean;
   onChange?: (value: string) => void;
-  tooltip?: string;
+  help?: ReactNode;
 } & Omit<ComponentProps<"input"> | ComponentProps<"textarea">, "onChange">;
 
 /** text input with label */
@@ -17,15 +18,18 @@ export default function TextBox({
   multi,
   onChange,
   className,
-  tooltip,
+  help,
   ...props
 }: Props) {
   const Component = multi ? "textarea" : "input";
   const ref = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
 
   return (
-    <label data-tooltip={tooltip}>
-      {label && <span>{label}</span>}
+    <label>
+      <span>
+        {label}
+        <Help>{help}</Help>
+      </span>
       <div
         className={clsx(
           "relative flex min-h-10 min-w-10 items-start rounded-md bg-white ring-2 ring-inset has-[textarea]:h-30 has-[textarea]:max-h-full has-[textarea]:min-h-20 has-[textarea]:max-w-full has-[textarea]:resize has-[textarea]:overflow-hidden",

@@ -1,8 +1,6 @@
-import { useContext, useEffect } from "react";
 import { createIssue } from "@/api/issue";
 import Alert from "@/components/Alert";
 import Button from "@/components/Button";
-import { DialogContext } from "@/components/Dialog";
 import Form from "@/components/Form";
 import Help from "@/components/Help";
 import Link from "@/components/Link";
@@ -109,7 +107,6 @@ export default function ContactForm() {
     query: submit,
     data: response,
     status,
-    reset,
   } = useQuery(() =>
     createIssue({
       owner: "dashnowlab",
@@ -119,13 +116,6 @@ export default function ContactForm() {
       labels: ["contact"],
     }),
   );
-
-  const { isOpen } = useContext(DialogContext);
-
-  /** reset query when dialog re-opened */
-  useEffect(() => {
-    if (isOpen) reset();
-  }, [isOpen, reset]);
 
   return (
     <Form onSubmit={submit}>

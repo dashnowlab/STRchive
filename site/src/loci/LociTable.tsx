@@ -139,6 +139,28 @@ export default function LociTable() {
           [locus.inheritance].flat().includes(inheritance)),
     );
 
+  /** selected tags label */
+  let selected = <></>;
+  const counts = countBy(tags);
+  if (counts.mixed === tags.length) selected = <>Any</>;
+  else
+    selected = (
+      <>
+        {counts.true && (
+          <>
+            {counts.true}
+            <IconCheck className="text-primary" />
+          </>
+        )}
+        {counts.false && (
+          <>
+            {counts.false}
+            <IconX className="text-secondary" />
+          </>
+        )}
+      </>
+    );
+
   return (
     <>
       {/* filters */}
@@ -148,49 +170,35 @@ export default function LociTable() {
           "w-full",
         )}
       >
-        <Popover
-          label="Tags"
-          button={(() => {
-            const counts = countBy(tags);
-            if (counts.mixed === tags.length) return <>Any</>;
-
-            return (
-              <>
-                {counts.true && (
-                  <>
-                    {counts.true}
-                    <IconCheck className="text-primary" />
-                  </>
-                )}
-                {counts.false && (
-                  <>
-                    {counts.false}
-                    <IconX className="text-secondary" />
-                  </>
-                )}
-              </>
-            );
-          })()}
-        >
-          {filterTags.map(({ description, value, label }, index) => (
-            <CheckBox
-              key={index}
-              label={
-                <>
-                  <Tag value={value} small />
-                  <span className="leading-normal">{label}</span>
-                </>
-              }
-              checked={tags[index]}
-              onChange={(value) => {
-                const newTags = [...tags];
-                newTags[index] = value;
-                setTags(newTags);
-              }}
-              tooltip={description}
-            />
-          ))}
-        </Popover>
+        <label>
+          Tags
+          <Popover
+            hover={false}
+            content={
+              <div className="grid grid-cols-[auto_auto_auto] gap-2 *:contents">
+                {filterTags.map(({ value, label }, index) => (
+                  <CheckBox
+                    key={index}
+                    label={
+                      <>
+                        <Tag value={value} small />
+                        <span className="leading-normal">{label}</span>
+                      </>
+                    }
+                    checked={tags[index]}
+                    onChange={(value) => {
+                      const newTags = [...tags];
+                      newTags[index] = value;
+                      setTags(newTags);
+                    }}
+                  />
+                ))}
+              </div>
+            }
+          >
+            <Button design="plain">{selected}</Button>
+          </Popover>
+        </label>
 
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <TextBox
@@ -203,21 +211,21 @@ export default function LociTable() {
           <div className="flex items-center gap-1">
             Motif length
             <NumberBox
-              data-tooltip="Motif length min"
               value={motifMin}
               onChange={(value) => setMotifMin(value ?? shortestMotif)}
               min={shortestMotif}
               max={Math.min(longestMotif, motifMax)}
               snapValues={motifLengths}
+              aria-label="Motif length min"
             />
             &ndash;
             <NumberBox
-              data-tooltip="Motif length max"
               value={motifMax}
               onChange={(value) => setMotifMax(value ?? longestMotif)}
               min={Math.max(shortestMotif, motifMin)}
               max={longestMotif}
               snapValues={motifLengths}
+              aria-label="Motif length max"
             />
           </div>
 
@@ -243,7 +251,7 @@ export default function LociTable() {
                 "loci",
               ])
             }
-            data-tooltip="Download filtered loci"
+            aria-label="Download filtered loci"
           >
             Download
             <IconDownload />
@@ -257,14 +265,11 @@ export default function LociTable() {
           column({
             key: "id",
             render: (cell) => (
-              <Button
-                to={`/loci/${cell}`}
-                className="p-0!"
-                design="bubble"
-                data-tooltip="Go to locus page"
-              >
-                <IconArrowRight />
-              </Button>
+              <Popover content="Go to locus page" button={false}>
+                <Button to={`/loci/${cell}`} className="p-0!" design="bubble">
+                  <IconArrowRight />
+                </Button>
+              </Popover>
             ),
             sortable: false,
           }),
@@ -310,14 +315,12 @@ export default function LociTable() {
           column({
             key: "pathogenic_motif_reference_orientation",
             name: "Motif (len)",
+            className: "flex-col",
             render: (cell) => (
-              <div className="flex flex-wrap gap-1">
-                <div
-                  data-tooltip={cell.join(", ")}
-                  className="max-w-20 truncate"
-                >
-                  {cell.join(", ")}
-                </div>
+              <>
+                <Popover content={cell.join(", ")} button={false}>
+                  <span className="max-w-20 truncate">{cell.join(", ")}</span>
+                </Popover>
                 <div>
                   (
                   {cell
@@ -325,7 +328,7 @@ export default function LociTable() {
                     .join(", ")}
                   )
                 </div>
-              </div>
+              </>
             ),
           }),
           column({

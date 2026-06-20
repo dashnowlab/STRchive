@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Help from "@/components/Help";
 import clsx from "clsx";
 import { sortBy, uniq } from "lodash-es";
 
@@ -11,7 +12,7 @@ type Props = {
   onChange?: (value: number | null) => void;
   snapValues?: number[];
   className?: string;
-  tooltip?: string;
+  help?: ReactNode;
 };
 
 /** number input with label */
@@ -21,12 +22,15 @@ export default function NumberBox({
   onChange,
   snapValues,
   className,
-  tooltip,
+  help,
   ...props
 }: Props) {
   return (
-    <label data-tooltip={tooltip}>
-      {label && <span>{label}</span>}
+    <label>
+      <span>
+        {label}
+        <Help>{help}</Help>
+      </span>
       <input
         type="number"
         className={clsx(

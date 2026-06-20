@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
+import Help from "@/components/Help";
 import { Combobox as _Combobox } from "@base-ui/react";
 
 type Option = {
@@ -14,7 +15,7 @@ type Props = {
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
-  tooltip?: string;
+  help?: ReactNode;
 };
 
 /** textbox with autocomplete */
@@ -24,7 +25,7 @@ export default function ComboBox({
   value,
   onChange,
   placeholder,
-  tooltip,
+  help,
 }: Props) {
   const [query, setQuery] = useState("");
 
@@ -45,8 +46,11 @@ export default function ComboBox({
         if (!open) setQuery("");
       }}
     >
-      <label data-tooltip={tooltip}>
-        {label}
+      <label>
+        <span>
+          {label}
+          <Help>{help}</Help>
+        </span>
         <_Combobox.InputGroup className="flex min-h-10 w-full min-w-10 rounded-md bg-white ring-2 ring-inset">
           <_Combobox.Input
             className="grow px-4 py-2"

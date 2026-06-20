@@ -1,4 +1,4 @@
-import { mock, request } from ".";
+import { request } from ".";
 
 /** create pr in repo. see /cloud/pr */
 export const createPR = async (params: {
@@ -10,7 +10,7 @@ export const createPR = async (params: {
   files: { path: string; content: string }[];
   labels: string[];
 }) => {
-  if (mock) {
+  if (import.meta.env.DEV) {
     console.debug("PR", params);
     return { link: "https://fake-link.com" };
   }

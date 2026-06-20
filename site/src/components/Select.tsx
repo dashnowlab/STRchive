@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { useRef } from "react";
 import Button from "@/components/Button";
+import Help from "@/components/Help";
 import { preserveScroll } from "@/util/dom";
 import { Select as _Select } from "@base-ui/react";
 import { IconCheck, IconChevronDown } from "@tabler/icons-react";
@@ -23,7 +24,7 @@ type Multi = {
 type Props = {
   label?: ReactNode;
   options: { value: string; label?: ReactNode; tooltip?: string }[];
-  tooltip?: string;
+  help?: ReactNode;
 } & (Single | Multi);
 
 /** dropdown select with label */
@@ -34,7 +35,7 @@ export default function Select({
   defaultValue,
   value,
   onChange,
-  tooltip,
+  help,
 }: Props) {
   const ref = useRef<HTMLButtonElement>(null);
 
@@ -53,8 +54,11 @@ export default function Select({
       multiple={multi}
       defaultValue={defaultValue}
     >
-      <label data-tooltip={tooltip}>
-        {label && <span>{label}</span>}
+      <label>
+        <span>
+          {label}
+          <Help>{help}</Help>
+        </span>
         <_Select.Trigger render={<Button ref={ref} design="plain" />}>
           <_Select.Value>
             {(value: string | string[]) => {
@@ -91,13 +95,13 @@ export default function Select({
       <_Select.Portal>
         <_Select.Positioner alignItemWithTrigger={false} collisionPadding={20}>
           <_Select.Popup>
-            <_Select.List className="flex flex-col rounded-md bg-white shadow-md">
+            <_Select.List className="flex flex-col overflow-hidden rounded-md bg-white shadow-md">
               {options.map(({ label, value, tooltip }, index) => (
                 <_Select.Item
                   key={index}
                   value={value}
                   className="flex cursor-pointer items-center gap-2 px-4 py-2 transition outline-none *:first:opacity-0 *:first:transition hover:bg-light-gray data-highlighted:bg-light-gray data-selected:*:first:opacity-100"
-                  data-tooltip={tooltip}
+                  title={tooltip}
                 >
                   <IconCheck className="text-primary" />
                   {label || "–"}

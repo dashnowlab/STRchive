@@ -28,7 +28,7 @@
   --color-shadow: #00000020;
 
   --shadow-*: initial;
-  --shadow-md: 0 0 10px var(--color-shadow), 2px 2px 4px var(--color-shadow);
+  --shadow-md: 0 0 10px var(--color-shadow), 0 0 3px var(--color-shadow);
 
   --radius-*: initial;
   --radius-sm: 5px;
@@ -110,10 +110,10 @@
   }
 
   label {
-    @apply relative inline-flex items-center gap-4;
+    @apply relative flex items-center gap-2;
 
     & > span {
-      @apply inline-flex items-center gap-2;
+      @apply flex items-center gap-2;
     }
 
     &:has([required]) > span::after {
@@ -131,7 +131,7 @@
 
   button,
   select {
-    @apply inline-flex cursor-pointer items-center justify-center transition;
+    @apply flex cursor-pointer items-center justify-center transition;
   }
 
   p > button,
@@ -187,7 +187,7 @@
 
   dt,
   dd {
-    @apply inline-flex px-4 py-2;
+    @apply flex px-4 py-2;
   }
 
   dt {

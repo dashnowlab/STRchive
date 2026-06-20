@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Popover from "@/components/Popover";
 import Table, { defineData } from "@/components/Table";
 import Tag from "@/components/Tag";
 import { curations } from "@/data";
@@ -20,16 +21,17 @@ export default function CurationTable() {
         column({
           key: "Locus_ID",
           render: (cell) => (
-            <Button
-              to={`/critria/${cell}`}
-              className="p-0!"
-              design="bubble"
-              data-tooltip="Go to curation page"
-            >
-              <IconArrowRight />
-            </Button>
+            <Popover content="Go to curation page">
+              <Button to={`/critria/${cell}`} className="p-0!" design="bubble">
+                <IconArrowRight />
+              </Button>
+            </Popover>
           ),
           sortable: false,
+        }),
+        column({
+          key: "Gene",
+          name: "Gene",
         }),
         column({
           key: "Gene",

@@ -14,7 +14,7 @@ export default function ViewCorner() {
         <Button
           design="bubble"
           className="p-0!"
-          data-tooltip="Jump to top"
+          title="Jump to top"
           onClick={() => window.scrollTo({ top: 0 })}
         >
           <IconChevronUp />
@@ -27,7 +27,7 @@ export default function ViewCorner() {
             design="bubble"
             className="p-0!"
             id="corner-contact"
-            data-tooltip="Contact us"
+            title="Contact us"
           >
             <IconMail />
           </Button>

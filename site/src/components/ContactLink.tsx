@@ -7,11 +7,7 @@ export default function ContactLink() {
     <Dialog
       title="Contact Us"
       trigger={
-        <Button
-          id="footer-contact"
-          className="p-0! underline"
-          data-tooltip="Contact us"
-        >
+        <Button id="footer-contact" className="p-0! underline">
           Contact
         </Button>
       }

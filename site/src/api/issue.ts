@@ -1,4 +1,4 @@
-import { mock, request } from ".";
+import { request } from ".";
 
 /** create issue in repo. see /cloud/issue */
 export const createIssue = async (params: {
@@ -8,7 +8,7 @@ export const createIssue = async (params: {
   body: string;
   labels: string[];
 }) => {
-  if (mock) {
+  if (import.meta.env.DEV) {
     console.debug("Issue", params);
     return { link: "https://fake-link.com" };
   }

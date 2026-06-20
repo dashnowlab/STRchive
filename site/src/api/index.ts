@@ -1,5 +1,4 @@
-/** whether to mock (fake) network requests */
-export const mock = new URL(window.location.href).searchParams.has("mock");
+console.debug({ env: import.meta.env });
 
 /** general request */
 export async function request(

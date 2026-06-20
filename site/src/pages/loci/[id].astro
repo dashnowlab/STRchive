@@ -3,6 +3,7 @@
 
 import Button from "@/components/Button";
 import { H1, H2 } from "@/components/Heading";
+import Help from "@/components/Help";
 import LineChart from "@/components/LineChart";
 import Link from "@/components/Link";
 import ShowMoreLines from "@/components/ShowMoreLines";
@@ -82,6 +83,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       {
         locus.evidence.map((evidence) => (
           <Tag
+            client:load
             value={evidence}
             to={curation ? `/critria/${curation.Locus_ID}` : undefined}
             tooltip="See criTRia curation for this locus"
@@ -91,6 +93,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       {
         locus.locus_tags.map((tag) => (
           <Tag
+            client:load
             value={tag}
             to={`/loci?tag=${tag}#table`}
             tooltip="See other loci with this tag"
@@ -146,12 +149,12 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
               <Icon />
               {name}
             </strong>
-            <div class="grid grid-cols-[auto_auto] place-content-start place-items-start gap-x-4 gap-y-2 max-sm:grid-cols-1">
+            <div class="grid grid-cols-[auto_auto_auto] items-center justify-start gap-x-4 gap-y-2 max-sm:grid-cols-1">
               {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
+                  <Help client:load>{tooltip}</Help>
                   <Link
                     to={info}
-                    data-tooltip={tooltip}
                     arrow={false}
                     className="text-black no-underline"
                   >
@@ -190,6 +193,7 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       {
         locus.disease_tags.map((tag) => (
           <Tag
+            client:load
             value={tag}
             to={`/loci?tag=${tag}#table`}
             tooltip="See other loci with this tag"
@@ -364,8 +368,10 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     <div class="boxes grid-cols-3">
       <!-- year -->
       <div class="box">
-        <strong data-tooltip="Year first published"
-          ><IconCalendarDue />Year</strong
+        <strong
+          ><IconCalendarDue />Year <Help client:load client:load
+            >Year first published</Help
+          ></strong
         >
         <div>
           {locus.year && <Cited client:load value={locus.year} />}
@@ -382,7 +388,12 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
       <!-- strand -->
       <div class="box">
         <strong><IconCirclePlusMinus />Gene Strand</strong>
-        <Tag value={locus.gene_strand} small className="self-start" />
+        <Tag
+          client:load
+          value={locus.gene_strand}
+          small
+          className="self-start"
+        />
       </div>
     </div>
 
@@ -392,8 +403,10 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
     <div class="boxes">
       <!-- ref -->
       <div class="box box-2">
-        <strong data-tooltip="Reference motif, reference orientation">
-          <IconTallymark4 />Ref. Motif
+        <strong>
+          <IconTallymark4 />Ref. Motif <Help client:load
+            >Reference motif, reference orientation</Help
+          >
         </strong>
         <div>{locus.reference_motif_reference_orientation.join(", ")}</div>
       </div>
@@ -431,32 +444,40 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
       <!-- benign -->
       <div class="box box-primary">
-        <strong data-tooltip="Benign motif, reference orientation">
-          <IconTallymark4 />Benign (ref.)
+        <strong>
+          <IconTallymark4 />Benign (ref.) <Help client:load
+            >Benign motif, reference orientation</Help
+          >
         </strong>
         <div>
           {locus.benign_motif_reference_orientation.join(", ") || "–"}
         </div>
       </div>
       <div class="box box-primary">
-        <strong data-tooltip="Benign motif, gene orientation">
-          <IconTallymark4 />Benign (gene)
+        <strong>
+          <IconTallymark4 />Benign (gene) <Help client:load
+            >Benign motif, gene orientation</Help
+          >
         </strong>
         <div>{locus.benign_motif_gene_orientation.join(", ") || "–"}</div>
       </div>
 
       <!-- pathogenic -->
       <div class="box box-secondary">
-        <strong data-tooltip="Pathogenic motif, reference orientation">
-          <IconTallymark4 />Pathogenic (ref.)
+        <strong>
+          <IconTallymark4 />Pathogenic (ref.) <Help client:load
+            >Pathogenic motif, reference orientation</Help
+          >
         </strong>
         <div>
           {locus.pathogenic_motif_reference_orientation.join(", ") || "–"}
         </div>
       </div>
       <div class="box box-secondary">
-        <strong data-tooltip="Pathogenic motif, gene orientation">
-          <IconTallymark4 />Pathogenic (gene)
+        <strong>
+          <IconTallymark4 />Pathogenic (gene) <Help client:load
+            >Pathogenic motif, gene orientation</Help
+          >
         </strong>
         <div>
           {locus.pathogenic_motif_gene_orientation.join(", ") || "–"}
@@ -465,16 +486,20 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
       <!-- unknown -->
       <div class="box">
-        <strong data-tooltip="Unknown motif, reference orientation">
-          <IconTallymark4 />Unknown (ref.)
+        <strong>
+          <IconTallymark4 />Unknown (ref.) <Help client:load
+            >Unknown motif, reference orientation</Help
+          >
         </strong>
         <div>
           {locus.unknown_motif_reference_orientation.join(", ") || "–"}
         </div>
       </div>
       <div class="box">
-        <strong data-tooltip="Unknown motif, gene orientation">
-          <IconTallymark4 />Unknown (gene)
+        <strong>
+          <IconTallymark4 />Unknown (gene) <Help client:load
+            >Unknown motif, gene orientation</Help
+          >
         </strong>
         <div>
           {locus.unknown_motif_gene_orientation.join(", ") || "–"}
@@ -483,16 +508,20 @@ const curation = curations.find((curation) => curation.Locus_ID === id);
 
       <!-- interruption -->
       <div class="box box-tertiary">
-        <strong data-tooltip="Interruption motif, reference orientation">
-          <IconTallymark4 />Interruption (ref.)
+        <strong>
+          <IconTallymark4 />Interruption (ref.) <Help client:load
+            >Interruption motif, reference orientation</Help
+          >
         </strong>
         <div>
           {locus.interruption_reference_orientation.join(", ") || "–"}
         </div>
       </div>
       <div class="box box-tertiary">
-        <strong data-tooltip="Interruption motif, gene orientation">
-          <IconTallymark4 />Interruption (gene)
+        <strong>
+          <IconTallymark4 />Interruption (gene) <Help client:load
+            >Interruption motif, gene orientation</Help
+          >
         </strong>
         <div>{locus.interruption_gene_orientation.join(", ") || "–"}</div>
       </div>

@@ -5,7 +5,7 @@ import { IconMenu2, IconX } from "@tabler/icons-react";
 import Button from "./Button";
 
 /** all used heading elements */
-const headingSelector = "h1[id], h2[id], h3[id], h4[id]";
+const headingSelector = "h2[id], h3[id], h4[id]";
 
 /**
  * floating table of contents that outlines sections/headings on page. can be
@@ -55,14 +55,13 @@ export default function TableOfContents() {
   if (headings.length <= 1) return <></>;
 
   return (
-    <aside className="sticky top-0 z-1" aria-label="Table of contents">
+    <aside className="sticky top-0 z-10" aria-label="Table of contents">
       <div className="absolute top-0 flex max-w-80 flex-col gap-2 overflow-hidden rounded-br-md bg-white shadow-md">
         {/* toggle button */}
         <Button
           className="justify-between!"
           aria-expanded={open}
           onClick={() => setOpen(!open)}
-          data-tooltip={open ? "Close" : "Open"}
         >
           Table of Contents
           {open ? <IconX /> : <IconMenu2 />}

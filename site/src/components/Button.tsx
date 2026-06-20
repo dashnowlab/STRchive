@@ -23,7 +23,7 @@ export default function Button({
       ref={ref as Ref<HTMLAnchorElement> & Ref<HTMLButtonElement>}
       type="button"
       className={clsx(
-        "inline-flex min-h-10 max-w-full min-w-10 items-center justify-center gap-2 px-[0.75em] py-[0.5em] leading-normal no-underline",
+        "flex min-h-10 max-w-full min-w-10 items-center justify-center gap-2 px-[0.75em] py-[0.5em] leading-normal no-underline",
         design === "" && "hover:text-primary",
         design === "plain" &&
           "rounded-md bg-light-gray text-current hover:text-primary",

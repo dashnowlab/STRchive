@@ -1,4 +1,5 @@
 import Link from "@/components/Link";
+import Popover from "@/components/Popover";
 import { tagOptions } from "@/data/tags";
 import clsx from "clsx";
 import { startCase } from "lodash-es";
@@ -37,28 +38,39 @@ export default function Tag({
   className = clsx(optionClassName, className);
 
   /** combine tooltip */
-  tooltip = [description, tooltip].flat().filter(Boolean).join("<br/>");
+  const _tooltip = (
+    <>
+      {description}
+      <br />
+      {tooltip}
+    </>
+  );
 
   if (small)
     return (
-      <div
-        className={clsx("grid place-items-center rounded-full p-1", className)}
-        data-tooltip={tooltip}
-      >
-        {Icon && <Icon className="size-4" />}
-      </div>
+      <Popover content={_tooltip}>
+        <button
+          className={clsx(
+            "grid size-5 place-items-center rounded-full",
+            className,
+          )}
+        >
+          {Icon && <Icon className="size-4" />}
+        </button>
+      </Popover>
     );
   return (
-    <Link
-      className={clsx(
-        "flex items-center gap-2 rounded-full px-2 py-1 leading-normal no-underline transition hover:opacity-75",
-        className,
-      )}
-      to={to}
-      data-tooltip={tooltip}
-    >
-      {Icon && <Icon />}
-      {label}
-    </Link>
+    <Popover content={_tooltip} button={false}>
+      <Link
+        className={clsx(
+          "flex items-center gap-2 rounded-full px-2 py-1 leading-normal no-underline transition hover:opacity-75",
+          className,
+        )}
+        to={to}
+      >
+        {Icon && <Icon />}
+        {label}
+      </Link>
+    </Popover>
   );
 }

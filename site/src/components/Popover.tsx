@@ -1,36 +1,39 @@
-import type { ReactNode } from "react";
-import Button from "@/components/Button";
+import type { ReactElement, ReactNode } from "react";
 import { Popover as _Popover } from "@base-ui/react";
-import { IconChevronDown } from "@tabler/icons-react";
 
 type Props = {
-  label?: ReactNode;
-  button: ReactNode;
-  children: ReactNode;
-  tooltip?: string;
+  content: ReactNode;
+  children?: ReactElement;
+  hover?: boolean;
+  button?: boolean;
 };
 
 /** button that triggers floating panel of arbitrary content */
-export default function Popover({ label, button, children, tooltip }: Props) {
+export default function Popover({
+  content,
+  children,
+  hover = true,
+  button = true,
+}: Props) {
+  if (!children) return content;
   return (
     <_Popover.Root>
-      <label data-tooltip={tooltip}>
-        {label}
-        <_Popover.Trigger render={<Button design="plain" />}>
-          {button}
-          <IconChevronDown />
-        </_Popover.Trigger>
-      </label>
-
-      <_Popover.Portal>
+      <_Popover.Trigger
+        render={children}
+        openOnHover={hover}
+        delay={100}
+        nativeButton={button}
+      />
+      <_Popover.Portal className="z-30">
         <_Popover.Backdrop />
-        <_Popover.Positioner collisionPadding={20}>
-          <_Popover.Popup>
-            <_Popover.Viewport>
-              <div className="flex flex-col gap-1 rounded-md bg-white p-2 shadow-md">
-                {children}
-              </div>
-            </_Popover.Viewport>
+        <_Popover.Positioner side="top" sideOffset={12}>
+          <_Popover.Popup className="max-w-100">
+            <_Popover.Arrow className="z-10 size-0 data-[side=bottom]:rotate-45 data-[side=left]:left-full data-[side=left]:rotate-135 data-[side=right]:rotate-315 data-[side=top]:top-full data-[side=top]:rotate-225">
+              <div className="size-3 -translate-1/2 bg-white shadow-md [clip-path:polygon(-100%_-100%,200%_-100%,-100%_200%)]" />
+            </_Popover.Arrow>
+            <div className="relative flex flex-col gap-1 overflow-hidden rounded-md bg-white px-4 py-2 shadow-md">
+              {content}
+            </div>
           </_Popover.Popup>
         </_Popover.Positioner>
       </_Popover.Portal>
