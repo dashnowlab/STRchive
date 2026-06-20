@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { firstInView } from "@/util/dom";
 import { useEventListener, useMutationObserver } from "@reactuses/core";
 import { IconMenu2, IconX } from "@tabler/icons-react";
@@ -46,7 +46,13 @@ export default function TableOfContents() {
     [],
   );
 
-  /** when headings added/removed, run update */
+  /** on first render, update headings */
+  useEffect(() => {
+    // eslint-disable-next-line
+    update();
+  }, [update]);
+
+  /** when headings added/removed, update headings */
   useMutationObserver(
     (mutations) => {
       for (const { type, addedNodes, removedNodes } of mutations) {
