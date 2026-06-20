@@ -47,7 +47,7 @@ export default function CurationTable() {
         }),
         column({
           key: "total_score",
-          name: "Total Score",
+          name: "Score",
         }),
         column({
           /** use number value so column sorted by that instead of alphabetically */

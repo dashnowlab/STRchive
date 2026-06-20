@@ -161,11 +161,11 @@
   }
 
   th {
-    @apply border-light-gray border-b-2 p-2 font-medium;
+    @apply border-light-gray border-b-2 px-2 py-1 font-medium;
   }
 
   td {
-    @apply border-light-gray p-2 not-first:border-l;
+    @apply border-light-gray px-2 py-1 not-first:border-l;
   }
 
   thead tr {
@@ -224,7 +224,7 @@
 }
 
 @utility box {
-  @apply border-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md border-2 px-4 py-2;
+  @apply border-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md border-2 px-4 py-2 wrap-break-word;
 
   & > strong:first-child {
     @apply bg-gray/10 text-dark-gray -mx-4 -mt-2 flex items-center gap-2 px-4 py-1 font-medium;

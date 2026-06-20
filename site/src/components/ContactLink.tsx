@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
 import Dialog from "@/components/Dialog";
 
@@ -7,9 +6,9 @@ export default function ContactLink() {
     <Dialog
       title="Contact Us"
       trigger={
-        <Button id="footer-contact" className="p-0! underline">
+        <button id="footer-contact" className="underline">
           Contact
-        </Button>
+        </button>
       }
     >
       <ContactForm />

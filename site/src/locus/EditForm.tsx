@@ -12,7 +12,7 @@ import { repo } from "@/layouts/meta";
 import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
 import { useLocalStorage } from "@reactuses/core";
-import { IconFeather, IconSend, IconX } from "@tabler/icons-react";
+import { IconEdit, IconSend, IconX } from "@tabler/icons-react";
 import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
 import loci from "~/STRchive-loci.json";
 import _schema from "~/STRchive-loci.schema.json";
@@ -182,7 +182,7 @@ export default function EditForm({ heading, locus }: Props) {
     <Form onSubmit={submit}>
       <section>
         <H1>
-          <IconFeather />
+          <IconEdit />
           {heading}
         </H1>
 

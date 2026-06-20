@@ -49,7 +49,7 @@ type Column<
   /** key of row object to access as cell value */
   key: Key;
   /** label for header */
-  name?: string;
+  name?: ReactNode;
   /** is sortable (default true) */
   sortable?: boolean;
   /** class on cells */
@@ -74,7 +74,7 @@ export const defineData = <Datum extends object>(
   ).map((column, index) =>
     helper.accessor((row) => row[column.key], {
       id: String(index),
-      header: column.name,
+      header: () => column.name,
       enableSorting: column.sortable ?? true,
       enableColumnFilter: true,
       enableGlobalFilter: true,
@@ -168,7 +168,7 @@ export default function Table<Datum extends object>({
                     {/* wrapper */}
                     <div
                       className={clsx(
-                        "flex items-center justify-center p-2 text-center",
+                        "flex items-center justify-center gap-2 p-2 text-center",
                         header.column.columnDef.meta?.className,
                       )}
                     >
@@ -182,8 +182,12 @@ export default function Table<Datum extends object>({
 
                       {/* sort button */}
                       {header.column.getCanSort() && (
-                        <Button
-                          className="text-dark-gray hover:bg-transparent hover:text-primary"
+                        <button
+                          className={clsx(
+                            "text-dark-gray hover:bg-transparent hover:text-primary",
+                            header.column.getIsSorted() === false &&
+                              "not-hover:opacity-25",
+                          )}
                           data-active={
                             header.column.getIsSorted() ? "" : undefined
                           }
@@ -197,9 +201,9 @@ export default function Table<Datum extends object>({
                             <IconSortDescending />
                           )}
                           {header.column.getIsSorted() === false && (
-                            <IconArrowsSort className="opacity-25" />
+                            <IconArrowsSort />
                           )}
-                        </Button>
+                        </button>
                       )}
                     </div>
                   </th>

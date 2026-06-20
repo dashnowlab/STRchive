@@ -1,5 +1,4 @@
 import type { ReactElement, ReactNode } from "react";
-import Button from "@/components/Button";
 import { Dialog as _Dialog } from "@base-ui/react";
 import { IconX } from "@tabler/icons-react";
 
@@ -19,7 +18,7 @@ export default function Dialog({ trigger, title, children }: Props) {
           <div className="pointer-events-auto flex max-h-full max-w-full flex-col overflow-hidden rounded-md bg-white text-black shadow-md">
             <div className="flex items-center p-4 shadow-md">
               <strong className="grow text-lg">{title}</strong>
-              <_Dialog.Close render={<Button className="p-0!" />}>
+              <_Dialog.Close>
                 <IconX />
               </_Dialog.Close>
             </div>

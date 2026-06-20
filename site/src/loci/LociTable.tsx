@@ -315,10 +315,14 @@ export default function LociTable() {
           column({
             key: "pathogenic_motif_reference_orientation",
             name: "Motif (len)",
-            className: "flex-col",
             render: (cell) => (
-              <>
-                <Popover content={cell.join(", ")} button={false}>
+              <div className="flex flex-col items-center">
+                <Popover
+                  content={
+                    <span className="wrap-anywhere">{cell.join(", ")}</span>
+                  }
+                  button={false}
+                >
                   <span className="max-w-20 truncate">{cell.join(", ")}</span>
                 </Popover>
                 <div>
@@ -328,7 +332,7 @@ export default function LociTable() {
                     .join(", ")}
                   )
                 </div>
-              </>
+              </div>
             ),
           }),
           column({

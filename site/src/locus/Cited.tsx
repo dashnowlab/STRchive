@@ -2,7 +2,6 @@ import type { Citation } from "@/data";
 import { Fragment } from "react";
 import Link from "@/components/Link";
 import Popover from "@/components/Popover";
-import { parse } from "@/util/markdown";
 
 type Props = {
   value?:
@@ -19,7 +18,7 @@ export default function Cited({ value }: Props) {
   return value.map(({ text, references }, index) =>
     text ? (
       /** plain text */
-      <span key={index} dangerouslySetInnerHTML={{ __html: parse(text) }} />
+      <span key={index}>{text}</span>
     ) : (
       <sup key={index}>
         {references.map(({ id, number, title, authors, publisher }, index) => (
@@ -33,6 +32,7 @@ export default function Cited({ value }: Props) {
                     <div className="line-clamp-1">{authors.join(" ")}</div>
                   )}
                   {publisher && <div className="line-clamp-1">{publisher}</div>}
+                  {id}
                 </>
               }
               button={false}

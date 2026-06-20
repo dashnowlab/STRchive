@@ -30,7 +30,7 @@ export default function Tag({
   const {
     Icon,
     label = fallback,
-    className: optionClassName = "text-white bg-gray",
+    className: optionClassName = "text-black bg-light-gray",
     description = fallback,
   } = option || {};
 

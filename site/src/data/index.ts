@@ -1,3 +1,4 @@
+import { parse } from "@/util/markdown";
 import { cloneDeep, sortBy, uniq } from "lodash-es";
 import rawCurations from "~/criTRia-curations.json";
 import rawCitations from "~/STRchive-citations.json";
@@ -31,6 +32,8 @@ const mapReferences = (refs: string[], number = false) =>
 /** split field that may contain in-text references into parts */
 const extractCitations = (text: string | null | undefined, list: string[]) => {
   if (typeof text !== "string") return text;
+
+  text = parse(text);
 
   /** find sub-string indices in text that match citation format */
   const indices = uniq([
@@ -130,7 +133,7 @@ export const loci = rawLoci.map((locus) => {
     year: extractCitations(locus.year, references),
 
     /** map references */
-    references: mapReferences(references.concat(locus.references), true),
+    references: mapReferences(references, true),
 
     /** map additional literature */
     additional_literature: mapReferences(locus.additional_literature),
