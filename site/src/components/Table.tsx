@@ -3,13 +3,16 @@ import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
 import type { ValueOf } from "type-fest";
 import { useState } from "react";
 import Button from "@/components/Button";
+import Popover from "@/components/Popover";
 import Select from "@/components/Select";
+import { downloadJson } from "@/util/download";
 import {
   IconArrowsSort,
   IconChevronLeft,
   IconChevronRight,
   IconChevronsLeft,
   IconChevronsRight,
+  IconDownload,
   IconSortAscending,
   IconSortDescending,
 } from "@tabler/icons-react";
@@ -96,7 +99,9 @@ type Props<Datum extends object> = {
   columns: ColumnDef<Datum, Datum[keyof Datum]>[];
   rows: Datum[];
   sort?: SortingState;
-  showControls?: boolean;
+  pageControls?: boolean;
+  actionControls?: boolean;
+  itemNames?: string;
   className?: string;
 };
 
@@ -118,7 +123,9 @@ export default function Table<Datum extends object>({
   columns,
   rows,
   sort,
-  showControls = true,
+  pageControls = true,
+  actionControls = true,
+  itemNames = "rows",
   className,
 }: Props<Datum>) {
   /** current per-page selection */
@@ -150,6 +157,103 @@ export default function Table<Datum extends object>({
 
   return (
     <div className="flex w-full flex-col items-center gap-4">
+      {/* controls */}
+      {(pageControls || actionControls) && (
+        <div
+          className={clsx(
+            "flex w-full flex-wrap items-center justify-between gap-x-8 gap-y-4 max-md:flex-col",
+          )}
+        >
+          {pageControls && (
+            <>
+              {/* per page */}
+              <Select
+                label="Per page"
+                options={perPageOptions}
+                defaultValue={defaultPerPage.value}
+                onChange={(value) => table.setPageSize(Number(value))}
+              />
+
+              {/* pagination */}
+              <div className="flex flex-wrap items-center justify-center *:p-1">
+                <Button
+                  onClick={() => table.setPageIndex(0)}
+                  aria-disabled={!table.getCanPreviousPage()}
+                  aria-label="First page"
+                >
+                  <IconChevronsLeft />
+                </Button>
+                <Button
+                  onClick={() => table.previousPage()}
+                  aria-disabled={!table.getCanPreviousPage()}
+                  aria-label="Previous page"
+                >
+                  <IconChevronLeft />
+                </Button>
+                <Button
+                  onClick={() => {
+                    const page = parseInt(window.prompt("Jump to page") || "");
+                    if (Number.isNaN(page)) return;
+                    table.setPageIndex(page);
+                  }}
+                >
+                  {(() => {
+                    const rows = table.getPrePaginationRowModel().rows.length;
+                    let { pageIndex, pageSize } = table.getState().pagination;
+                    const pageCount = table.getPageCount();
+                    pageSize = Math.min(pageSize, rows);
+                    return [
+                      pageIndex * pageSize + 1,
+                      "–",
+                      Math.min(
+                        (pageIndex + 1) * pageSize,
+                        pageCount * pageSize,
+                      ),
+                      "of",
+                      pageCount * pageSize,
+                    ].join(" ");
+                  })()}
+                </Button>
+                <Button
+                  onClick={() => table.nextPage()}
+                  aria-disabled={!table.getCanNextPage()}
+                  aria-label="Next page"
+                >
+                  <IconChevronRight />
+                </Button>
+                <Button
+                  onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+                  aria-disabled={!table.getCanNextPage()}
+                  aria-label="Last page"
+                >
+                  <IconChevronsRight />
+                </Button>
+              </div>
+            </>
+          )}
+
+          {/* actions */}
+          {actionControls && (
+            <div
+              className={clsx(
+                "flex flex-wrap items-center gap-4",
+                !pageControls && "ml-auto",
+              )}
+            >
+              <Popover content={`Download ${itemNames} as JSON`}>
+                <Button
+                  design="plain"
+                  onClick={() => downloadJson(rows, itemNames)}
+                >
+                  <IconDownload />
+                  Download
+                </Button>
+              </Popover>
+            </div>
+          )}
+        </div>
+      )}
+
       <div className="w-full overflow-x-auto rounded-md shadow-md">
         {/* table */}
         <table
@@ -258,74 +362,6 @@ export default function Table<Datum extends object>({
           </tbody>
         </table>
       </div>
-
-      {/* controls */}
-      {showControls && (
-        <div
-          className={clsx(
-            "flex w-full flex-wrap items-center justify-between gap-4 max-md:flex-col",
-          )}
-        >
-          {/* pagination */}
-          <div className="flex flex-wrap items-center justify-center">
-            <Button
-              design="hollow"
-              onClick={() => table.setPageIndex(0)}
-              aria-disabled={!table.getCanPreviousPage()}
-              aria-label="First page"
-            >
-              <IconChevronsLeft />
-            </Button>
-            <Button
-              design="hollow"
-              onClick={() => table.previousPage()}
-              aria-disabled={!table.getCanPreviousPage()}
-              aria-label="Previous page"
-            >
-              <IconChevronLeft />
-            </Button>
-            <Button
-              design="hollow"
-              onClick={() => {
-                const page = parseInt(window.prompt("Jump to page") || "");
-                if (Number.isNaN(page)) return;
-                table.setPageIndex(page);
-              }}
-            >
-              Page{" "}
-              {(table.getState().pagination.pageIndex + 1).toLocaleString()} of{" "}
-              {(table.getPageCount() || 1).toLocaleString()}
-            </Button>
-            <Button
-              design="hollow"
-              onClick={() => table.nextPage()}
-              aria-disabled={!table.getCanNextPage()}
-              aria-label="Next page"
-            >
-              <IconChevronRight />
-            </Button>
-            <Button
-              design="hollow"
-              onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-              aria-disabled={!table.getCanNextPage()}
-              aria-label="Last page"
-            >
-              <IconChevronsRight />
-            </Button>
-          </div>
-
-          {/* row count */}
-          <>{table.getRowCount().toLocaleString()} rows</>
-
-          {/* per page */}
-          <Select
-            label="Per page"
-            options={perPageOptions}
-            defaultValue={defaultPerPage.value}
-            onChange={(value) => table.setPageSize(Number(value))}
-          />
-        </div>
-      )}
     </div>
   );
 }

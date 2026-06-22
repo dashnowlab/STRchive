@@ -25,11 +25,13 @@ export default function TextBox({
   const ref = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
 
   return (
-    <label>
-      <span>
-        {label}
-        <Help>{help}</Help>
-      </span>
+    <label className={clsx(!label && !help && "contents")}>
+      {(label || help) && (
+        <span>
+          {label}
+          <Help>{help}</Help>
+        </span>
+      )}
       <div
         className={clsx(
           "relative flex min-h-10 min-w-10 items-start rounded-md bg-white ring-2 ring-inset has-[textarea]:h-30 has-[textarea]:max-h-full has-[textarea]:min-h-20 has-[textarea]:max-w-full has-[textarea]:resize has-[textarea]:overflow-hidden",

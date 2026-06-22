@@ -10,14 +10,8 @@ import Tag from "@/components/Tag";
 import TextBox from "@/components/TextBox";
 import { loci } from "@/data";
 import { tagOptions } from "@/data/tags";
-import { downloadJson } from "@/util/download";
 import { getValues } from "@/util/object";
-import {
-  IconArrowRight,
-  IconCheck,
-  IconDownload,
-  IconX,
-} from "@tabler/icons-react";
+import { IconArrowRight, IconCheck, IconX } from "@tabler/icons-react";
 import { countBy, map, max, min, pick, uniq } from "lodash-es";
 
 /** tags to show in table and filters */
@@ -162,97 +156,91 @@ export default function LociTable() {
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-between gap-4 max-lg:flex-col">
+      <div className="flex flex-wrap items-center justify-center gap-4 max-lg:flex-col">
         {/* filters */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <label>
-            Tags
-            <Popover
-              hover={false}
-              content={
-                <div className="grid grid-cols-[auto_auto_auto] gap-2 *:contents">
-                  {filterTags.map(({ value, label }, index) => (
-                    <CheckBox
-                      key={index}
-                      label={
-                        <>
-                          <Tag value={value} small />
-                          <span className="leading-normal">{label}</span>
-                        </>
-                      }
-                      checked={tags[index]}
-                      onChange={(value) => {
-                        const newTags = [...tags];
-                        newTags[index] = value;
-                        setTags(newTags);
-                      }}
-                    />
-                  ))}
-                </div>
-              }
-            >
-              <Button design="plain">{selected}</Button>
-            </Popover>
-          </label>
+        <div className="box w-full">
+          <strong className="flex justify-between gap-8">
+            Filters
+            <span className="font-regular">
+              {filteredLoci.length === loci.length
+                ? "all"
+                : filteredLoci.length.toLocaleString()}{" "}
+              results
+            </span>
+          </strong>
 
-          <TextBox
-            className="w-30"
-            placeholder="Search"
-            value={search}
-            onChange={setSearch}
-          />
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            <label>
+              Tags
+              <Popover
+                hover={false}
+                content={
+                  <div className="grid grid-cols-[auto_auto_auto] gap-2 *:contents">
+                    {filterTags.map(({ value, label }, index) => (
+                      <CheckBox
+                        key={index}
+                        label={
+                          <>
+                            <Tag value={value} small />
+                            <span className="leading-normal">{label}</span>
+                          </>
+                        }
+                        checked={tags[index]}
+                        onChange={(value) => {
+                          const newTags = [...tags];
+                          newTags[index] = value;
+                          setTags(newTags);
+                        }}
+                      />
+                    ))}
+                  </div>
+                }
+              >
+                <Button design="plain">{selected}</Button>
+              </Popover>
+            </label>
 
-          <div className="flex items-center gap-1">
-            Motif length
-            <NumberBox
-              value={motifMin}
-              onChange={(value) => setMotifMin(value ?? shortestMotif)}
-              min={shortestMotif}
-              max={Math.min(longestMotif, motifMax)}
-              snapValues={motifLengths}
-              aria-label="Motif length min"
+            <TextBox
+              className="min-w-30 grow"
+              placeholder="Search"
+              value={search}
+              onChange={setSearch}
             />
-            &ndash;
-            <NumberBox
-              value={motifMax}
-              onChange={(value) => setMotifMax(value ?? longestMotif)}
-              min={Math.max(shortestMotif, motifMin)}
-              max={longestMotif}
-              snapValues={motifLengths}
-              aria-label="Motif length max"
+
+            <div className="flex items-center gap-1">
+              Motif length
+              <NumberBox
+                value={motifMin}
+                onChange={(value) => setMotifMin(value ?? shortestMotif)}
+                min={shortestMotif}
+                max={Math.min(longestMotif, motifMax)}
+                snapValues={motifLengths}
+                aria-label="Motif length min"
+              />
+              &ndash;
+              <NumberBox
+                value={motifMax}
+                onChange={(value) => setMotifMax(value ?? longestMotif)}
+                min={Math.max(shortestMotif, motifMin)}
+                max={longestMotif}
+                snapValues={motifLengths}
+                aria-label="Motif length max"
+              />
+            </div>
+
+            <Select
+              label="Inheritance"
+              value={inheritance}
+              onChange={setInheritance}
+              options={inheritanceOptions}
             />
           </div>
-
-          <Select
-            label="Inheritance"
-            value={inheritance}
-            onChange={setInheritance}
-            options={inheritanceOptions}
-          />
-        </div>
-
-        {/* row count */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <strong>{filteredLoci.length.toLocaleString()} loci</strong>
-          <Button
-            design="plain"
-            onClick={() =>
-              /** download filtered loci */
-              downloadJson(filteredLoci, [
-                filteredLoci.length < loci.length ? "filtered" : "",
-                "loci",
-              ])
-            }
-            aria-label="Download filtered loci"
-          >
-            Download
-            <IconDownload />
-          </Button>
         </div>
       </div>
 
       {/* table */}
       <Table
+        itemNames={filteredLoci.length < loci.length ? "filtered loci" : "loci"}
         {...defineData(filteredLoci, (column) => [
           column({
             key: "id",

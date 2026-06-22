@@ -72,7 +72,8 @@ const rows = [
 export default function DownloadTable() {
   return (
     <Table
-      showControls={false}
+      pageControls={false}
+      actionControls={false}
       {...defineData(rows, (column) => [
         column({
           key: "key",
