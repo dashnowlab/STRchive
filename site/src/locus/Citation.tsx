@@ -16,8 +16,12 @@ export default function Citation({
 }: Props) {
   const details = [publisher, date].filter(Boolean);
   return (
-    <div className="box" id={id}>
-      {number && <strong>#{number}</strong>}
+    <div id={id} className="relative pl-4">
+      {number && (
+        <strong className="absolute top-1 right-full grid size-6 place-content-center rounded-full bg-primary/10">
+          {number}
+        </strong>
+      )}
       {title && <ShowMoreLines lines={1}>{title}</ShowMoreLines>}
       {!!authors?.length && (
         <ShowMoreLines lines={1}>{authors?.join(", ")}</ShowMoreLines>

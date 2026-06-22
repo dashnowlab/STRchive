@@ -9,7 +9,7 @@ export default function ViewCorner() {
   const { y } = useWindowScroll();
 
   return (
-    <div className="fixed right-2 bottom-2 flex flex-col gap-2 text-lg [&>button]:bg-white">
+    <div className="fixed right-2 bottom-2 z-10 flex flex-col gap-2 text-lg [&>button]:bg-white">
       {y > 100 && (
         <Button
           design="bubble"

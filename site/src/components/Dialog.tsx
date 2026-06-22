@@ -14,7 +14,7 @@ export default function Dialog({ trigger, title, children }: Props) {
       <_Dialog.Trigger render={trigger} />
       <_Dialog.Portal className="z-10">
         <_Dialog.Backdrop className="fixed inset-0 bg-black/75" />
-        <_Dialog.Popup className="pointer-events-none fixed inset-0 grid h-screen w-screen place-items-center p-10">
+        <_Dialog.Popup className="pointer-events-none fixed inset-0 grid h-screen w-screen place-items-center p-12 max-sm:p-8">
           <div className="pointer-events-auto flex max-h-full max-w-full flex-col overflow-hidden rounded-md bg-white text-black shadow-md">
             <div className="flex items-center p-4 shadow-md">
               <strong className="grow text-lg">{title}</strong>

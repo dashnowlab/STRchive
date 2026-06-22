@@ -82,8 +82,8 @@ import { kebabCase } from "lodash-es";
       on GitHub:
     </p>
 
-    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-      <Button className="w-60" to={repo} design="bubble">
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <Button className="w-60" design="bubble" to={repo}>
         <IconBrandGithub />GitHub
       </Button>
     </div>
@@ -92,7 +92,7 @@ import { kebabCase } from "lodash-es";
   <section>
     <H2><IconUsers />Team</H2>
 
-    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+    <div class="flex flex-wrap items-center justify-center gap-4">
       {
         team.map((member) => (
           <Link

@@ -192,7 +192,7 @@ export default function EditForm({ heading, locus }: Props) {
         </Alert>
 
         {storageExists && (
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+          <div className="flex flex-wrap items-center justify-center gap-4">
             Loaded saved draft
             <Button
               design="plain"
@@ -240,8 +240,8 @@ export default function EditForm({ heading, locus }: Props) {
 
         <Button
           className="w-60 self-center"
-          type="submit"
           design="bubble"
+          type="submit"
           aria-disabled={status === "success"}
         >
           <IconSend />

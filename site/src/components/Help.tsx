@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Button from "@/components/Button";
 import Popover from "@/components/Popover";
 import { IconHelpCircle } from "@tabler/icons-react";
 
@@ -10,9 +11,9 @@ export default function Help({ children }: Props) {
   if (!children) return null;
   return (
     <Popover content={children}>
-      <button type="button">
+      <Button>
         <IconHelpCircle className="text-gray" />
-      </button>
+      </Button>
     </Popover>
   );
 }

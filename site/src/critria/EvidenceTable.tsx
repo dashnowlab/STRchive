@@ -17,11 +17,11 @@ export default function EvidenceTable({ evidence }: Props) {
       {...defineData(evidence, (column) => [
         column({
           key: "evidence_category",
-          name: "Evidence Category",
+          name: "Category",
         }),
         column({
           key: "Evidence type",
-          name: "Evidence Type",
+          name: "Type",
         }),
         column({
           key: "Citation",
@@ -47,8 +47,8 @@ export default function EvidenceTable({ evidence }: Props) {
         }),
         column({
           key: "Evidence detail",
-          name: "Evidence Detail",
-          className: "text-left justify-left",
+          name: "Details",
+          className: "min-w-100 justify-start text-left",
           render: (cell) => (
             <p>
               <Cited value={cell} />

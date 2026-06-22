@@ -49,7 +49,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
   <section>
     <H1><IconBookmark />{title}</H1>
 
-    <div class="boxes">
+    <div class="boxes [--columns:3]">
       <div class="box">
         <strong><IconDna2 />Gene</strong>
         {curation.Gene}
@@ -71,6 +71,10 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
         {curation.total_score}
       </div>
       <div class="box">
+        <strong><IconHistory />Last Updated</strong>
+        {curation.Date}
+      </div>
+      <div class="box">
         <strong><IconBooks />Pubs Reviewed</strong>
         {curation.publication_count ?? "–"}
       </div>
@@ -90,15 +94,11 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
             : "–"
         }
       </div>
-      <div class="box">
-        <strong><IconHistory />Last Updated</strong>
-        {curation.Date}
-      </div>
-      <div class="box box-2">
+      <div class="box box-full">
         <strong><IconUserCheck />Curator(s)</strong>
         {curation.Curator}
       </div>
-      <div class="box box-4">
+      <div class="box box-full">
         <strong><IconFileText />Description</strong>
         <p>
           <Cited client:load value={curation.Description} />
@@ -107,14 +107,14 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
     </div>
 
     <div class="flex flex-wrap justify-center gap-4">
-      <Button className="w-60 self-center" to="/critria" design="bubble">
+      <Button className="w-60 self-center" design="bubble" to="/critria">
         <IconArrowLeft />All CriTRia Curations
       </Button>
 
       <Button
         className="w-60 self-center"
-        to={`/loci/${curation.Locus_ID}`}
         design="bubble"
+        to={`/loci/${curation.Locus_ID}`}
       >
         Locus Page<IconArrowRight />
       </Button>
@@ -175,7 +175,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
           Direct supporting references for info on this page.
         </p>
 
-        <div class="boxes grid-cols-3">
+        <div class="boxes [--columns:3]">
           {curation.references.map((citation) => (
             <Citation client:load {...citation} />
           ))}

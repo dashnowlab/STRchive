@@ -18,7 +18,6 @@ import {
   IconDownload,
   IconX,
 } from "@tabler/icons-react";
-import clsx from "clsx";
 import { countBy, map, max, min, pick, uniq } from "lodash-es";
 
 /** tags to show in table and filters */
@@ -163,44 +162,39 @@ export default function LociTable() {
 
   return (
     <>
-      {/* filters */}
-      <div
-        className={clsx(
-          "flex flex-wrap items-center justify-center gap-x-4 gap-y-2",
-          "w-full",
-        )}
-      >
-        <label>
-          Tags
-          <Popover
-            hover={false}
-            content={
-              <div className="grid grid-cols-[auto_auto_auto] gap-2 *:contents">
-                {filterTags.map(({ value, label }, index) => (
-                  <CheckBox
-                    key={index}
-                    label={
-                      <>
-                        <Tag value={value} small />
-                        <span className="leading-normal">{label}</span>
-                      </>
-                    }
-                    checked={tags[index]}
-                    onChange={(value) => {
-                      const newTags = [...tags];
-                      newTags[index] = value;
-                      setTags(newTags);
-                    }}
-                  />
-                ))}
-              </div>
-            }
-          >
-            <Button design="plain">{selected}</Button>
-          </Popover>
-        </label>
+      <div className="flex flex-wrap items-center justify-between gap-4 max-lg:flex-col">
+        {/* filters */}
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <label>
+            Tags
+            <Popover
+              hover={false}
+              content={
+                <div className="grid grid-cols-[auto_auto_auto] gap-2 *:contents">
+                  {filterTags.map(({ value, label }, index) => (
+                    <CheckBox
+                      key={index}
+                      label={
+                        <>
+                          <Tag value={value} small />
+                          <span className="leading-normal">{label}</span>
+                        </>
+                      }
+                      checked={tags[index]}
+                      onChange={(value) => {
+                        const newTags = [...tags];
+                        newTags[index] = value;
+                        setTags(newTags);
+                      }}
+                    />
+                  ))}
+                </div>
+              }
+            >
+              <Button design="plain">{selected}</Button>
+            </Popover>
+          </label>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <TextBox
             className="w-30"
             placeholder="Search"
@@ -237,10 +231,8 @@ export default function LociTable() {
           />
         </div>
 
-        <div className="grow" />
-
         {/* row count */}
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <div className="flex flex-wrap items-center justify-center gap-4">
           <strong>{filteredLoci.length.toLocaleString()} loci</strong>
           <Button
             design="plain"
@@ -266,7 +258,7 @@ export default function LociTable() {
             key: "id",
             render: (cell) => (
               <Popover content="Go to locus page" button={false}>
-                <Button to={`/loci/${cell}`} className="p-0!" design="bubble">
+                <Button className="p-0!" design="bubble" to={`/loci/${cell}`}>
                   <IconArrowRight />
                 </Button>
               </Popover>

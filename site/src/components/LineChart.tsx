@@ -1,13 +1,12 @@
 import { useEffect, useRef } from "react";
 import { fitViewBox } from "@/util/dom";
 import { lerp } from "@/util/math";
-import clsx from "clsx";
+import { useElementSize } from "@reactuses/core";
+import { maxBy } from "lodash-es";
 
 type Props = {
   rows: { name: string; className: string; values: number[] }[];
   xAxis: string;
-  width?: number;
-  height?: number;
   fontSize?: number;
   min?: number;
   max?: number;
@@ -18,14 +17,23 @@ type Props = {
 export default function LineChart({
   rows,
   xAxis,
-  width = 200,
-  height = 50,
-  fontSize = 10,
+  fontSize = 16,
   min = undefined,
   max = undefined,
   className = "",
 }: Props) {
   const ref = useRef<SVGSVGElement>(null);
+
+  /** available size */
+  let [availableWidth] = useElementSize(ref);
+  availableWidth ||= 200;
+
+  /** main chart area size */
+  const width =
+    availableWidth -
+    /** estimate space used by y-axis labels */
+    maxBy(rows, (row) => row.name.length)!.name.length * 0.6 * fontSize;
+  const height = (rows.length + 0.5) * 2 * fontSize;
 
   /** rows with missing values filtered out */
   const filteredRows = rows.filter(({ values }) =>
@@ -36,8 +44,9 @@ export default function LineChart({
   const values = filteredRows.map((row) => row.values).flat();
   min ??= Math.min(...values);
   max ??= Math.max(...values);
-  const scale = (value: number) =>
-    lerp(value, min, max, fontSize * 2, width - fontSize * 2);
+  const scaleX = (value: number) =>
+    lerp(value, min, max, 1.5 * fontSize, width - 1.5 * fontSize);
+  const scaleY = (index: number) => (index + 0.75) * 2 * fontSize;
 
   /** rows with derived props */
   const mappedRows = rows
@@ -45,24 +54,24 @@ export default function LineChart({
     .filter(({ values }) =>
       values.every((value) => value !== undefined && value !== null),
     )
-    .map((row, index, rows) => {
-      /** value x svg coords */
-      const x = row.values.map(scale);
+    .map((row, index) => {
+      /** value x to svg coords */
+      const x = row.values.map(scaleX);
       /** if same value, nudge apart to give bar nominal width */
       if (x[0] === x[1]) {
         x[0] -= fontSize * 0.1;
         x[1] += fontSize * 0.1;
       }
-      /** y svg coord */
-      const y = height * ((index + 1) / (rows.length + 1));
+      /** value y to svg coords */
+      const y = scaleY(index);
       return { ...row, x, y };
     });
 
   /** fit to contents */
   useEffect(() => {
     if (!ref.current) return;
-    const { height } = fitViewBox(ref.current);
-    ref.current.style.height = 1.9 * height + "px";
+    const { x, y, width, height } = fitViewBox(ref.current);
+    ref.current.setAttribute("viewBox", [x, y, width, height].join(" "));
   });
 
   /** if no rows, don't render anything */
@@ -71,7 +80,7 @@ export default function LineChart({
   return (
     <svg
       ref={ref}
-      className={clsx("h-full max-w-full", className)}
+      className={className}
       style={{
         fontSize: fontSize + "px",
       }}

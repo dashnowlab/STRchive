@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Link from "@/components/Link";
 import Popover from "@/components/Popover";
 import { tagOptions } from "@/data/tags";
@@ -49,14 +50,9 @@ export default function Tag({
   if (small)
     return (
       <Popover content={_tooltip}>
-        <button
-          className={clsx(
-            "grid size-5 place-items-center rounded-full",
-            className,
-          )}
-        >
+        <Button className={clsx("size-5 rounded-full", className)}>
           {Icon && <Icon className="size-4" />}
-        </button>
+        </Button>
       </Popover>
     );
   return (

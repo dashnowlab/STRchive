@@ -50,6 +50,7 @@ export default function TextBox({
 
         <div className="absolute top-0 right-0 flex size-10 items-center">
           <Button
+            design="hollow"
             onClick={() => {
               if (ref.current) ref.current.value = "";
               onChange?.("");

@@ -4,10 +4,12 @@ import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import CurationTable from "@/critria/CurationTable";
+import LegendTable from "@/critria/LegendTable";
 import Layout from "@/layouts/Layout.astro";
 import {
   IconBookmark,
-  IconDownload,
+  IconChecks,
+  IconFileTypePdf,
   IconInfoCircle,
 } from "@tabler/icons-react";
 import sop from "~/criTRia-SOP.pdf?url";
@@ -32,9 +34,15 @@ import sop from "~/criTRia-SOP.pdf?url";
       <strong>Learn more</strong> about the criTRia locus-disease curation framework:
     </p>
 
-    <Button className="w-60 self-center" to={sop} design="bubble">
-      <IconDownload />criTRia SOP PDF
+    <Button className="w-60 self-center" design="bubble" to={sop}>
+      <IconFileTypePdf />criTRia SOP
     </Button>
+  </section>
+
+  <section>
+    <H2><IconChecks />Classifications</H2>
+
+    <LegendTable client:load />
   </section>
 
   <section>

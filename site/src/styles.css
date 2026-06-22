@@ -220,7 +220,8 @@
 }
 
 @utility boxes {
-  @apply grid grid-flow-dense grid-cols-4 gap-8 max-md:grid-cols-2 max-sm:grid-cols-1;
+  --columns: 4;
+  @apply grid grid-flow-dense grid-cols-[repeat(var(--columns),1fr)] gap-8 max-md:grid-cols-2 max-sm:grid-cols-1;
 }
 
 @utility box {
@@ -239,8 +240,8 @@
   @apply col-span-3 max-lg:col-span-2 max-md:col-span-1;
 }
 
-@utility box-4 {
-  @apply col-span-4 max-lg:col-span-2 max-md:col-span-1;
+@utility box-full {
+  @apply col-span-full;
 }
 
 @utility box-primary {

@@ -148,10 +148,9 @@ export default function Table<Datum extends object>({
 
   return (
     <div className="flex w-full flex-col items-center gap-4">
-      <div className="w-full overflow-x-auto rounded-md shadow-md">
+      <div className="max-w-full overflow-x-auto rounded-md shadow-md">
         {/* table */}
         <table
-          className="w-full"
           aria-rowcount={table.getPrePaginationRowModel().rows.length}
           aria-colcount={columns.length}
         >
@@ -182,7 +181,7 @@ export default function Table<Datum extends object>({
 
                       {/* sort button */}
                       {header.column.getCanSort() && (
-                        <button
+                        <Button
                           className={clsx(
                             "text-dark-gray hover:bg-transparent hover:text-primary",
                             header.column.getIsSorted() === false &&
@@ -203,7 +202,7 @@ export default function Table<Datum extends object>({
                           {header.column.getIsSorted() === false && (
                             <IconArrowsSort />
                           )}
-                        </button>
+                        </Button>
                       )}
                     </div>
                   </th>
@@ -261,12 +260,13 @@ export default function Table<Datum extends object>({
       {showControls && (
         <div
           className={clsx(
-            "flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 max-md:flex-col",
+            "flex w-full flex-wrap items-center justify-between gap-4 max-md:flex-col",
           )}
         >
           {/* pagination */}
           <div className="flex flex-wrap items-center justify-center">
             <Button
+              design="hollow"
               onClick={() => table.setPageIndex(0)}
               aria-disabled={!table.getCanPreviousPage()}
               aria-label="First page"
@@ -274,6 +274,7 @@ export default function Table<Datum extends object>({
               <IconChevronsLeft />
             </Button>
             <Button
+              design="hollow"
               onClick={() => table.previousPage()}
               aria-disabled={!table.getCanPreviousPage()}
               aria-label="Previous page"
@@ -281,6 +282,7 @@ export default function Table<Datum extends object>({
               <IconChevronLeft />
             </Button>
             <Button
+              design="hollow"
               onClick={() => {
                 const page = parseInt(window.prompt("Jump to page") || "");
                 if (Number.isNaN(page)) return;
@@ -292,6 +294,7 @@ export default function Table<Datum extends object>({
               {(table.getPageCount() || 1).toLocaleString()}
             </Button>
             <Button
+              design="hollow"
               onClick={() => table.nextPage()}
               aria-disabled={!table.getCanNextPage()}
               aria-label="Next page"
@@ -299,6 +302,7 @@ export default function Table<Datum extends object>({
               <IconChevronRight />
             </Button>
             <Button
+              design="hollow"
               onClick={() => table.setPageIndex(table.getPageCount() - 1)}
               aria-disabled={!table.getCanNextPage()}
               aria-label="Last page"

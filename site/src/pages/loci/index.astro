@@ -3,11 +3,11 @@
 
 import Button from "@/components/Button";
 import { H1, H2, H3 } from "@/components/Heading";
-import Link from "@/components/Link";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
 import Layout from "@/layouts/Layout.astro";
-import { repo, repoRaw, version } from "@/layouts/meta";
+import { repo } from "@/layouts/meta";
+import DownloadTable from "@/loci/DownloadTable";
 import LociTable from "@/loci/LociTable";
 import {
   IconBrandGithub,
@@ -18,77 +18,8 @@ import {
   IconPlus,
   IconTallymark4,
 } from "@tabler/icons-react";
-import { filter, map, uniq } from "lodash-es";
 import ageOnset from "~/plots/age-onset.json";
 import pathSize from "~/plots/path-size.json";
-
-/** import catalog files */
-const catalogs = Object.keys(
-  import.meta.glob(`~/catalogs/STRchive-disease-loci*.*`, {
-    query: "?url",
-    import: "default",
-    eager: true,
-  }),
-).map((path) => {
-  /** last part of path */
-  path = path.split("/").pop() ?? "";
-  /** filename parts */
-  const [, genome, software, ...extensions] = path.split(".");
-  /** insert version in download filename */
-  const filename = path.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
-  return {
-    path,
-    filename,
-    genome,
-    software,
-    extension: ["", ...extensions].join("."),
-  };
-});
-
-/** rows, by software */
-const rows = [
-  {
-    key: "general",
-    primary: "General",
-    secondary:
-      "a general-purpose extended bed file for filtering and annotating loci",
-  },
-
-  {
-    key: "TRGT",
-    primary: "TRGT",
-    secondary: "for genotyping full allele sequences in PacBio HiFi reads",
-    link: "https://github.com/PacificBiosciences/trgt",
-  },
-  {
-    key: "atarva",
-    primary: "Atarva",
-    secondary: "⚠️ for genotyping full allele sequences in long-read data",
-    link: "https://github.com/SowpatiLab/ATaRVa",
-  },
-  {
-    key: "longTR",
-    primary: "LongTR",
-    secondary: "⚠️ for genotyping full allele sequences in long-read data",
-    link: "https://github.com/gymrek-lab/LongTR",
-  },
-  {
-    key: "straglr",
-    primary: "Straglr",
-    secondary: "⚠️ for genotyping allele sizes in long read-data",
-    link: "https://github.com/bcgsc/straglr",
-  },
-  {
-    key: "stranger",
-    primary: "Stranger",
-    secondary:
-      "⚠️ for annotating TRGT or ExpansionHunter allele sizes with pathologic implications.",
-    link: "https://github.com/Clinical-Genomics/stranger",
-  },
-];
-
-/** columns, by genome */
-const cols = uniq(map(catalogs, "genome"));
 ---
 
 <Layout title="Loci">
@@ -97,17 +28,17 @@ const cols = uniq(map(catalogs, "genome"));
   <section>
     <H1><IconTallymark4 />Loci</H1>
 
-    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-      <span> Tandem repeat loci associated with Mendelian diseases. </span>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <span>Tandem repeat loci associated with Mendelian diseases.</span>
 
-      <Button to={`${repo}/tree/main/data`} design="bubble">
+      <Button design="bubble" to={`${repo}/tree/main/data`}>
         <IconBrandGithub /><span>Full Dataset</span>
       </Button>
     </div>
 
     <LociTable client:load />
 
-    <Button className="w-60 self-center" to="/loci/new" design="bubble">
+    <Button className="w-60 self-center" design="bubble" to="/loci/new">
       <IconPlus />
       Suggest New
     </Button>
@@ -117,59 +48,7 @@ const cols = uniq(map(catalogs, "genome"));
   <section>
     <H2><IconDownload />Downloads</H2>
 
-    <div class="w-full overflow-x-auto rounded-md shadow-md">
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            {cols.map((col) => <th>{col}</th>)}
-          </tr>
-        </thead>
-
-        <tbody>
-          {
-            rows.map((row) => (
-              <tr>
-                <td class="w-[35%]">
-                  {row.link ? (
-                    <Link to={row.link}>
-                      <strong>{row.primary}</strong>
-                    </Link>
-                  ) : (
-                    <div>
-                      <strong>{row.primary}</strong>
-                    </div>
-                  )}
-
-                  <div>{row.secondary}</div>
-                </td>
-                {cols.map((col) => (
-                  <td>
-                    <div class="flex flex-wrap justify-center gap-1">
-                      {filter(
-                        catalogs,
-                        (catalog) =>
-                          catalog.software === row.key &&
-                          catalog.genome === col,
-                      ).map((download) => (
-                        <Button
-                          to={`${repoRaw}/refs/heads/main/data/catalogs/${download.path}`}
-                          download={download.filename}
-                          design="plain"
-                          arrow={false}
-                        >
-                          {download.extension}
-                        </Button>
-                      ))}
-                    </div>
-                  </td>
-                ))}
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
-    </div>
+    <DownloadTable client:load />
 
     <p>⚠️ Still under development, use with caution</p>
   </section>

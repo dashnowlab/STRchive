@@ -88,6 +88,7 @@ export default function TableOfContents() {
         {/* toggle button */}
         <Button
           className="justify-between!"
+          design="hollow"
           aria-expanded={open}
           onClick={() => setOpen(!open)}
         >

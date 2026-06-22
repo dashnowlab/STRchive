@@ -413,6 +413,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
             />
             <div className="col-start-2 flex flex-wrap items-center *:min-w-10">
               <Button
+                design="hollow"
                 aria-disabled={index === 0}
                 aria-label="Move up"
                 onClick={() => {
@@ -429,6 +430,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
                 <IconArrowUp />
               </Button>
               <Button
+                design="hollow"
                 aria-disabled={index === items - 1}
                 aria-label="Move down"
                 onClick={() => {
@@ -445,6 +447,7 @@ function Field<Schema extends SchemaNode, Data extends JsonData>({
                 <IconArrowDown />
               </Button>
               <Button
+                design="hollow"
                 aria-label="Remove"
                 onClick={() => {
                   let _data = cloneDeep(data);

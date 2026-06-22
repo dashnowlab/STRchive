@@ -33,9 +33,10 @@ export const spotlight = async (element: Element) => {
   await waitForStop(window, "scroll");
   element.animate(
     [
-      { boxShadow: "0 0 0 9999px transparent" },
-      { boxShadow: "0 0 0 9999px #000000cc" },
-      { boxShadow: "0 0 0 9999px transparent" },
+      { zIndex: 9999, boxShadow: "0 0 0 9999px transparent" },
+      { zIndex: 9999, boxShadow: "0 0 0 9999px #000000cc" },
+      { zIndex: 9999, boxShadow: "0 0 0 9999px #000000cc" },
+      { zIndex: 9999, boxShadow: "0 0 0 9999px transparent" },
     ],
     { duration: 2000, easing: "ease-in-out" },
   );

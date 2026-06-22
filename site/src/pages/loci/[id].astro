@@ -154,7 +154,7 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
               <Icon />
               {name}
             </strong>
-            <div class="grid grid-cols-[auto_auto] items-center justify-start gap-x-4 gap-y-2 max-sm:grid-cols-1">
+            <div class="grid grid-cols-[auto_auto] items-center justify-start gap-4 max-sm:grid-cols-1">
               {identifiers.map(({ name, links, tooltip, info }) => (
                 <>
                   <Popover client:load content={tooltip} button={false}>
@@ -182,8 +182,8 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
 
     <Button
       className="w-60 self-center"
-      to={`/loci/${id}/edit`}
       design="bubble"
+      to={`/loci/${id}/edit`}
     >
       <IconEdit />Suggest Edit
     </Button>
@@ -284,8 +284,6 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
           min={0}
           max={90}
           xAxis="Years"
-          width={200}
-          height={50}
         />
         {
           locus.age_onset && (
@@ -326,7 +324,7 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
     <H2>Locus</H2>
 
     <!-- positions -->
-    <div class="boxes grid-cols-3">
+    <div class="boxes [--columns:3]">
       {
         (
           [
@@ -372,7 +370,7 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
       </div>
     </div>
 
-    <div class="boxes grid-cols-3">
+    <div class="boxes [--columns:3]">
       <!-- year -->
       <div class="box">
         <strong
@@ -444,8 +442,6 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
             },
           ]}
           xAxis="Units"
-          width={200}
-          height={75}
         />
       </div>
 
@@ -569,7 +565,7 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
           Direct supporting references for info on this page.
         </p>
 
-        <div class="boxes grid-cols-3">
+        <div class="boxes [--columns:3]">
           {locus.references.map((citation) => (
             <Citation client:load {...citation} />
           ))}
@@ -579,33 +575,37 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
   }
 
   <!-- additional literature -->
-  <section>
-    <H2>Additional Literature</H2>
+  {
+    (hasRawSearch || locus.additional_literature) && (
+      <section>
+        <H2>Additional Literature</H2>
 
-    <p class="text-center text-balance">
-      Additional literature related to this locus.
-    </p>
-
-    {
-      hasRawSearch && (
         <p class="text-center text-balance">
-          <Link to={`${repo}/blob/main/data/literature/${locus.gene}01.txt`}>
-            Raw PubMed search results
-          </Link>{" "}
-          <br />
-          (All PubMed results returned by searching for this gene, tandem
-          repeats, and disease, in medline format)
+          Additional literature related to this locus.
         </p>
-      )
-    }
 
-    <div class="boxes grid-cols-2">
-      <AdditionalLiterature
-        client:load
-        additionalLiterature={locus.additional_literature}
-      />
-    </div>
-  </section>
+        {hasRawSearch && (
+          <p class="text-center text-balance">
+            <Link
+              to={`${repo}/blob/main/data/literature/${locus.gene}_batch_01.txt`}
+            >
+              Raw PubMed search results
+            </Link>{" "}
+            <br />
+            (All PubMed results returned by searching for this gene, tandem
+            repeats, and disease, in medline format)
+          </p>
+        )}
+
+        <div class="boxes [--columns:2]">
+          <AdditionalLiterature
+            client:load
+            additionalLiterature={locus.additional_literature}
+          />
+        </div>
+      </section>
+    )
+  }
 
   <script define:vars={{ locus }}>
     console.debug(locus);
