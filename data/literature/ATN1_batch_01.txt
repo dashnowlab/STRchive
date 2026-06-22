@@ -1,4 +1,159 @@
 
+PMID- 42196324
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260527
+LR  - 20260529
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 27
+IP  - 10
+DP  - 2026 May 13
+TI  - Computational Short Tandem Repeat Genotyping Reveals Clinically Relevant 
+      Expansions in a Large Turkish Neurodegeneration Disease Cohort.
+LID - 10.3390/ijms27104345 [doi]
+LID - 4345
+AB  - Short tandem repeat (STR) expansions are a major cause of neurodegenerative 
+      disorders; however, their genetic and clinical heterogeneity complicates 
+      diagnosis. STR detection remains limited in routine short-read next-generation 
+      sequencing (NGS) workflows. We evaluated the diagnostic yield and clinical 
+      utility of computational STR genotyping in a large Turkish neurodegenerative 
+      disease cohort. ExpansionHunter was applied to NGS data from 3150 patients and 
+      146 controls, targeting 15 disease-associated STR loci. To improve genotyping of 
+      poorly captured exonic regions in exome data, the default locus coverage 
+      threshold was reduced from 10x to 3x. Candidate expansions were visually 
+      inspected using REViewer and validated by conventional molecular methods. 
+      Computational analysis detected 28 pathogenic and 160 intermediate expansions. Of 
+      these, 23 were confirmed as pathogenic, and eight initially classified as 
+      intermediate were reclassified as pathogenic after conventional validation, 
+      resulting in 31 pathogenic cases across 28 families: HTT (n = 8), ATXN2 (n = 5), 
+      ATXN1 (n = 4), DMPK (n = 3), PABPN1 (n = 3), TBP (n = 2), and single cases in AR, 
+      ATN1, and CACNA1A. Lowering the coverage threshold markedly increased genotyping 
+      rates at low-coverage loci in exome data, particularly in ATXN2. Genetic findings 
+      were largely consistent with clinical pre-diagnosis and the additional diagnostic 
+      yield was 0.95%. These findings support integrating STR analysis into routine 
+      neurogenetic diagnostics.
+FAU - Khojakulov, Zakhiriddin
+AU  - Khojakulov Z
+AUID- ORCID: 0000-0002-7771-8956
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Palvadeau, Robin J
+AU  - Palvadeau RJ
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Kovancilar-Koc, Muge
+AU  - Kovancilar-Koc M
+AUID- ORCID: 0009-0006-7125-1159
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Atay, Irmak
+AU  - Atay I
+AUID- ORCID: 0009-0007-3284-7790
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahbaz, Irmak
+AU  - Sahbaz I
+AUID- ORCID: 0000-0001-8816-9158
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tekgul, Seyma
+AU  - Tekgul S
+AUID- ORCID: 0000-0001-5223-5627
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahin, Ayca
+AU  - Sahin A
+AUID- ORCID: 0000-0002-0948-6495
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Badakal, Esmer Zeynep Duru
+AU  - Badakal EZD
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Ciftci, Vildan
+AU  - Ciftci V
+AUID- ORCID: 0000-0002-4441-6062
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Bayraktar, Elif
+AU  - Bayraktar E
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tunca, Ceren
+AU  - Tunca C
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Smolina, Natalia
+AU  - Smolina N
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Basak, Ayse Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+LA  - eng
+GR  - Suna and Inan Kirac Foundation/Suna and Inan Kirac Foundation/
+GR  - Koc university/Koc University/
+PT  - Journal Article
+DEP - 20260513
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Turkey/epidemiology
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+MH  - Female
+MH  - *Genotyping Techniques/methods
+MH  - Male
+MH  - Cohort Studies
+MH  - *DNA Repeat Expansion
+MH  - Computational Biology/methods
+PMC - PMC13207311
+OTO - NOTNLM
+OT  - ExpansionHunter
+OT  - NGS
+OT  - STR
+OT  - computational genotyping
+OT  - neurodegenerative diseases
+OT  - short tandem repeats
+COIS- The authors declare no conflicts of interest. The contributions of the NIH 
+      author(s) are considered Works of the United States Government. The findings and 
+      conclusions presented in this paper are those of the author(s) and do not 
+      necessarily reflect the views of the NIH or the U.S. Department of Health and 
+      Human Services.
+EDAT- 2026/05/27 06:33
+MHDA- 2026/05/27 06:34
+PMCR- 2026/05/13
+CRDT- 2026/05/27 01:16
+PHST- 2026/03/05 00:00 [received]
+PHST- 2026/04/04 00:00 [revised]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/27 06:34 [medline]
+PHST- 2026/05/27 06:33 [pubmed]
+PHST- 2026/05/27 01:16 [entrez]
+PHST- 2026/05/13 00:00 [pmc-release]
+AID - ijms27104345 [pii]
+AID - ijms-27-04345 [pii]
+AID - 10.3390/ijms27104345 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2026 May 13;27(10):4345. doi: 10.3390/ijms27104345.
+
 PMID- 41624332
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -2711,7 +2866,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260127
+LR  - 20260518
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -6108,7 +6263,7 @@ PMID- 24972706
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141106
-LR  - 20250529
+LR  - 20260518
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)

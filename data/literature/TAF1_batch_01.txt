@@ -3,7 +3,7 @@ PMID- 41443196
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260109
-LR  - 20260307
+LR  - 20260512
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Print)
 IS  - 0002-9297 (Linking)
@@ -844,8 +844,9 @@ PMID- 35971992
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221115
-LR  - 20260418
+LR  - 20260523
 IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
 VI  - 37
 IP  - 11
@@ -921,6 +922,8 @@ MH  - *Dystonic Disorders/metabolism
 MH  - *Genetic Diseases, X-Linked/genetics
 MH  - Introns
 MH  - C9orf72 Protein/genetics
+PMC - PMC13197201
+MID - NIHMS2172834
 OTO - NOTNLM
 OT  - Dipeptide repeat proteins
 OT  - RAN translation
@@ -928,8 +931,15 @@ OT  - SVA retrotransposon
 OT  - TAF1
 OT  - X-linked dystonia-parkinsonism
 OT  - repeat expansion
+COIS- C.K. serves as a medical advisor on genetic testing reports to Centogene and is a 
+      member of the Scientific Advisory Board of Retromer Therapeutics. C.J.R. was 
+      supported by a PhD scholarship from the Katholischer Akademischer 
+      Auslaender-Dienst (KAAD) and is currently funded by a postdoctoral fellowship 
+      from the Collaborative Center for X-linked Dystonia-Parkinsonism (CCXDP) at 
+      Massachusetts General Hospital.
 EDAT- 2022/08/17 06:00
 MHDA- 2022/11/16 06:00
+PMCR- 2026/05/22
 CRDT- 2022/08/16 07:04
 PHST- 2022/07/05 00:00 [revised]
 PHST- 2022/05/01 00:00 [received]
@@ -937,6 +947,7 @@ PHST- 2022/07/21 00:00 [accepted]
 PHST- 2022/08/17 06:00 [pubmed]
 PHST- 2022/11/16 06:00 [medline]
 PHST- 2022/08/16 07:04 [entrez]
+PHST- 2026/05/22 00:00 [pmc-release]
 AID - 10.1002/mds.29183 [doi]
 PST - ppublish
 SO  - Mov Disord. 2022 Nov;37(11):2284-2289. doi: 10.1002/mds.29183. Epub 2022 Aug 16.
@@ -1015,19 +1026,20 @@ SO  - Med Genet. 2022 Aug 12;34(2):97-102. doi: 10.1515/medgen-2022-2135. eColle
 
 PMID- 35868859
 OWN - NLM
-STAT- Publisher
-LR  - 20240216
+STAT- MEDLINE
+DCOM- 20260512
+LR  - 20260512
 IS  - 2373-2822 (Electronic)
 IS  - 2373-2822 (Linking)
 VI  - 9
 IP  - 4
-DP  - 2022 Jul 21
-TI  - Variation in TAF1 expression in female carrier induced pluripotent stem cells and 
-      human brain ontogeny has implications for adult neostriatum vulnerability in 
-      X-linked Dystonia Parkinsonism.
+DP  - 2022 Jul-Aug
+TI  - Variation in TAF1 Expression in Female Carrier-Induced Pluripotent Stem Cells and 
+      Human Brain Ontogeny Has Implications for Adult Neostriatum Vulnerability in 
+      X-Linked Dystonia Parkinsonism.
 LID - ENEURO.0129-22.2022 [pii]
 LID - 10.1523/ENEURO.0129-22.2022 [doi]
-AB  - X-linked Dystonia-Parkinsonism (XDP) is an inherited, X-linked, adult-onset 
+AB  - X-linked dystonia-parkinsonism (XDP) is an inherited, X-linked, adult-onset 
       movement disorder characterized by degeneration in the neostriatum. No 
       therapeutics alter disease progression. The mechanisms underlying regional 
       differences in degeneration and adult onset are unknown. Developing therapeutics 
@@ -1038,155 +1050,162 @@ AB  - X-linked Dystonia-Parkinsonism (XDP) is an inherited, X-linked, adult-onse
       all XDP males are usually clinically affected, females are heterozygous carriers 
       generally not manifesting the full syndrome. As a resource for disease modeling, 
       we characterized eight iPSC lines from three XDP female carrier individuals for X 
-      chromosome inactivation status and identified clonal lines that express either 
-      the wild-type X or XDP haplotype. Furthermore, we characterized XDP-relevant 
-      transcript expression in neurotypical humans, and found that SVA-F expression 
-      decreases after 30 years of age in the brain and that TAF1 is decreased in most 
-      female samples. Uniquely in the caudate nucleus, TAF1 expression is not sexually 
-      dimorphic and decreased after adolescence. These findings indicate that 
-      regional-, age- and sex-specific mechanisms regulate TAF1, highlighting the 
-      importance of disease-relevant models and postmortem tissue. We propose that the 
-      decreased TAF1 expression in the adult caudate may synergize with the 
-      XDP-specific partial loss of TAF1 function in patients, thereby passing a minimum 
-      threshold of TAF1 function, and triggering degeneration in the 
-      neostriatum.Significance StatementXDP is an inherited, X-linked, adult-onset 
-      movement disorder characterized by degeneration in the neostriatum. No 
-      therapeutics alter disease progression. Developing therapeutics requires a deeper 
-      understanding of how XDP-relevant features vary in health and disease. XDP is 
-      possibly due to a partial loss of TAF1 function. While all XDP males are usually 
-      affected, females are heterozygous carriers generally not manifesting the full 
-      syndrome. As a resource for disease modeling, we characterized eight stem cell 
-      lines from XDP female carrier individuals. Furthermore, we found that, uniquely 
-      in the caudate nucleus, TAF1 expression decreases after adolescence in healthy 
-      humans. We hypothesize that the decrease of TAF1 after adolescence in human 
-      caudate, in general, may underlie the vulnerability of the adult neostriatum in 
-      XDP.
+      chromosome inactivation (XCI) status and identified clonal lines that express 
+      either the wild-type X or XDP haplotype. Furthermore, we characterized 
+      XDP-relevant transcript expression in neurotypical humans, and found that SVA-F 
+      expression decreases after 30 years of age in the brain and that TAF1 is 
+      decreased in most female samples. Uniquely in the caudate nucleus, TAF1 
+      expression is not sexually dimorphic and decreased after adolescence. These 
+      findings indicate that regional-specific, age-specific, and sex-specific 
+      mechanisms regulate TAF1, highlighting the importance of disease-relevant models 
+      and postmortem tissue. We propose that the decreased TAF1 expression in the adult 
+      caudate may synergize with the XDP-specific partial loss of TAF1 function in 
+      patients, thereby passing a minimum threshold of TAF1 function, and triggering 
+      degeneration in the neostriatum.
 CI  - Copyright (c) 2022 D'Ignazio et al.
 FAU - D'Ignazio, Laura
 AU  - D'Ignazio L
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Jacomini, Ricardo S
 AU  - Jacomini RS
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Qamar, Bareera
 AU  - Qamar B
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 FAU - Benjamin, Kynon J M
 AU  - Benjamin KJM
 AUID- ORCID: 0000-0003-2016-4646
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 FAU - Arora, Ria
 AU  - Arora R
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Biology, Krieger School of Arts & Sciences, Johns Hopkins 
-      University, Baltimore, MD 21218, USA.
+      University, Baltimore, MD 21218.
 FAU - Sawada, Tomoyo
 AU  - Sawada T
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Evans, Taylor A
 AU  - Evans TA
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Diffenderfer, Kenneth E
 AU  - Diffenderfer KE
-AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037, USA.
+AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037.
 FAU - Pankonin, Aimee R
 AU  - Pankonin AR
-AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037, USA.
+AD  - Stem Cell Core, Salk Institute for Biological Studies, La Jolla, CA 92037.
 FAU - Hendriks, William T
 AU  - Hendriks WT
-AD  - Department of Neurology, Massachusetts General Hospital and Harvard Medical 
-      School, Boston, MA 02114, USA.
+AD  - Department of Neurology, Massachusetts General Hospital, Harvard Medical School, 
+      Boston, MA 02114.
 AD  - The Collaborative Center for X-linked Dystonia-Parkinsonism, Massachusetts 
-      General Hospital, Charlestown, MA 02129, USA.
+      General Hospital, Charlestown, MA 02129.
 FAU - Hyde, Thomas M
 AU  - Hyde TM
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 FAU - Kleinman, Joel E
 AU  - Kleinman JE
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 FAU - Weinberger, Daniel R
 AU  - Weinberger DR
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 AD  - Department of Neuroscience, School of Medicine, Johns Hopkins University, 
-      Baltimore, MD 21205, USA.
+      Baltimore, MD 21205.
 AD  - McKusick-Nathans Department of Genetic Medicine, School of Medicine, Johns 
-      Hopkins University Baltimore, MD 21205, USA.
+      Hopkins University, Baltimore, MD 21205.
 FAU - Bragg, D Cristopher
 AU  - Bragg DC
-AD  - Department of Neurology, Massachusetts General Hospital and Harvard Medical 
-      School, Boston, MA 02114, USA.
+AD  - Department of Neurology, Massachusetts General Hospital, Harvard Medical School, 
+      Boston, MA 02114.
 AD  - The Collaborative Center for X-linked Dystonia-Parkinsonism, Massachusetts 
-      General Hospital, Charlestown, MA 02129, USA.
+      General Hospital, Charlestown, MA 02129.
 FAU - Paquola, Apua C M
 AU  - Paquola ACM
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA.
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 FAU - Erwin, Jennifer A
 AU  - Erwin JA
 AUID- ORCID: 0000-0002-6784-9290
-AD  - Lieber Institute for Brain Development, Baltimore, MD 21205, USA 
+AD  - Lieber Institute for Brain Development, Baltimore, MD 21205 
       jennifer.erwin@libd.org.
 AD  - Department of Neurology, School of Medicine, Johns Hopkins University, Baltimore, 
-      MD 21205, USA.
+      MD 21205.
 AD  - Department of Psychiatry & Behavioral Sciences, School of Medicine, Johns Hopkins 
-      University, Baltimore, MD 21205, USA.
+      University, Baltimore, MD 21205.
 AD  - Department of Neuroscience, School of Medicine, Johns Hopkins University, 
-      Baltimore, MD 21205, USA.
+      Baltimore, MD 21205.
 LA  - eng
 GR  - T32 MH015330/MH/NIMH NIH HHS/United States
 PT  - Journal Article
-DEP - 20220721
+DEP - 20220830
 PL  - United States
 TA  - eNeuro
 JT  - eNeuro
 JID - 101647362
+RN  - 0 (Transcription Factor TFIID)
+RN  - 0 (TATA-Binding Protein Associated Factors)
+RN  - EC 2.7.11.1 (TATA-binding protein associated factor 250 kDa)
+RN  - EC 2.3.1.48 (Histone Acetyltransferases)
+RN  - Dystonia 3, Torsion, X-Linked
 SB  - IM
+MH  - Humans
+MH  - *Transcription Factor TFIID/metabolism/genetics
+MH  - *TATA-Binding Protein Associated Factors/metabolism/genetics
+MH  - Female
+MH  - *Genetic Diseases, X-Linked/metabolism/genetics/pathology
+MH  - *Dystonic Disorders/genetics/metabolism/pathology
+MH  - *Induced Pluripotent Stem Cells/metabolism
+MH  - *Histone Acetyltransferases/metabolism/genetics
+MH  - Adult
+MH  - Male
+MH  - Heterozygote
+MH  - *Brain/metabolism/growth & development
+MH  - X Chromosome Inactivation
 PMC - PMC9428949
 OTO - NOTNLM
 OT  - SVA retrotransposon
-OT  - X-linked Dystonia Parkinsonism
+OT  - X-linked dystonia parkinsonism
 OT  - induced pluripotent stem cells
 OT  - movement disorder
 OT  - neurodegeneration
 OT  - repeat expansion
-COIS- Authors report no conflict of interest
 EDAT- 2022/07/23 06:00
-MHDA- 2022/07/23 06:00
+MHDA- 2026/05/12 06:36
 PMCR- 2022/08/17
 CRDT- 2022/07/22 21:41
 PHST- 2022/03/24 00:00 [received]
 PHST- 2022/06/14 00:00 [revised]
 PHST- 2022/07/03 00:00 [accepted]
-PHST- 2022/07/22 21:41 [entrez]
+PHST- 2026/05/12 06:36 [medline]
 PHST- 2022/07/23 06:00 [pubmed]
-PHST- 2022/07/23 06:00 [medline]
+PHST- 2022/07/22 21:41 [entrez]
 PHST- 2022/08/17 00:00 [pmc-release]
 AID - ENEURO.0129-22.2022 [pii]
 AID - eN-NWR-0129-22 [pii]
 AID - 10.1523/ENEURO.0129-22.2022 [doi]
-PST - aheadofprint
-SO  - eNeuro. 2022 Jul 21;9(4):ENEURO.0129-22.2022. doi: 10.1523/ENEURO.0129-22.2022.
+PST - epublish
+SO  - eNeuro. 2022 Aug 30;9(4):ENEURO.0129-22.2022. doi: 10.1523/ENEURO.0129-22.2022. 
+      Print 2022 Jul-Aug.
 
 PMID- 35481544
 OWN - NLM

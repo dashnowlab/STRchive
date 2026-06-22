@@ -1,4 +1,182 @@
 
+PMID- 42094143
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260525
+LR  - 20260525
+DP  - 2026 May 1
+TI  - Genome-wide detection and clinical prioritization of tandem repeat outliers using 
+      long-read sequencing.
+LID - 2026.04.30.26352103 [pii]
+LID - 10.64898/2026.04.30.26352103 [doi]
+AB  - BACKGROUND: Tandem repeat expansions (TREs) cause over 60 known neurological, 
+      neuromuscular, and developmental disorders. Detecting these expansions 
+      genome-wide is challenging due to their size, sequence complexity (including 
+      interruptions), and population variation. While long-read sequencing is an 
+      emerging technology that can fully resolve many TREs, no methods have been 
+      described for genome-wide identification and prioritization of candidate 
+      pathogenic TREs with this technology. METHODS: Using a newly developed pipeline 
+      called TRoLR (Tandem Repeat outliers identified with Long Reads), we analyzed 
+      haplotype-resolved long-read genome assemblies from 471 ancestrally diverse 
+      individuals to define population distributions for over three million tandem 
+      repeat loci, capturing clinically relevant interruptions. Outlier expansions were 
+      identified relative to these distributions and prioritized by genomic location 
+      and comparison to known pathogenic loci. The framework was applied to 47 cases 
+      from the Undiagnosed Diseases Network. RESULTS: Population stratification of 
+      repeat metrics was observed at 7% of loci, with highest variability among 
+      individuals of African ancestry. Outlier analysis confirmed known pathogenic CNBP 
+      and ATXN8OS expansions, detected carrier-range alleles at RFC1, CSTB, and FXN, 
+      and revealed a novel CGG expansion in the 5' UTR of PCMTD2 exhibiting 
+      hypermethylation and intergenerational instability. Genome-wide screening also 
+      identified intronic pentanucleotide expansions at IQCB1 and MAP3K15 in controls 
+      composed of motifs that have been associated with pathogenicity at other disease 
+      loci. CONCLUSIONS: Quantifying the longest uninterrupted repeat segment in 
+      long-read assemblies enables detection of clinically relevant repeat expansions 
+      and loss of stabilizing interruptions. This approach enhances both diagnostic 
+      confirmation and discovery of candidate pathogenic expansions, with implications 
+      for clinical interpretation and research into complex repeat-mediated disorders.
+FAU - Gibson, Sophia B
+AU  - Gibson SB
+AUID- ORCID: 0000-0001-9839-9045
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+FAU - Damaraju, Nikhita
+AU  - Damaraju N
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+AD  - Institute for Public Health Genetics, University of Washington School of Public 
+      Health, Seattle, WA.
+FAU - Gustafson, J Gus
+AU  - Gustafson JG
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+AD  - Molecular and Cellular Biology Program, University of Washington, Seattle, WA.
+FAU - Balton, Elsa V
+AU  - Balton EV
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Chanprasert, Sirisak
+AU  - Chanprasert S
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Glass, Ian A
+AU  - Glass IA
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+FAU - Horike-Pyne, Martha
+AU  - Horike-Pyne M
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Kumar, Runjun D
+AU  - Kumar RD
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+FAU - Leppig, Kathleen A
+AU  - Leppig KA
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Lundberg, Chris
+AU  - Lundberg C
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Ranchalis, Jane
+AU  - Ranchalis J
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Rosenthal, Elisabeth A
+AU  - Rosenthal EA
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Solomon, Andrew K
+AU  - Solomon AK
+AD  - Division of Rheumatology, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Stergachis, Andrew B
+AU  - Stergachis AB
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Wener, Mark
+AU  - Wener M
+AD  - Division of Rheumatology, Department of Medicine, University of Washington, 
+      Seattle, WA.
+CN  - Undiagnosed Diseases Network
+FAU - Jarvik, Gail P
+AU  - Jarvik GP
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+FAU - Blue, Elizabeth E
+AU  - Blue EE
+AD  - Institute for Public Health Genetics, University of Washington School of Public 
+      Health, Seattle, WA.
+AD  - Division of Medical Genetics, Department of Medicine, University of Washington, 
+      Seattle, WA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA.
+FAU - Dipple, Katrina M
+AU  - Dipple KM
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Center for Clinical and Translational Research, Seattle Children's Research 
+      Institute, Seattle, WA.
+FAU - Dashnow, Harriet
+AU  - Dashnow H
+AD  - Department of Biomedical Informatics, University of Colorado Anschutz, Aurora, 
+      CO.
+FAU - Starita, Lea M
+AU  - Starita LM
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA.
+FAU - Miller, Danny E
+AU  - Miller DE
+AUID- ORCID: 0000-0001-6096-8601
+AD  - Department of Genome Sciences, University of Washington, Seattle, WA.
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington, 
+      Seattle, WA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA.
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260501
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC13142565
+OTO - NOTNLM
+OT  - clinical genomics
+OT  - long-read sequencing
+OT  - longest pure segment
+OT  - outlier detection
+OT  - population reference
+OT  - repeat expansion disorders
+OT  - tandem repeat expansion
+EDAT- 2026/05/07 06:36
+MHDA- 2026/05/07 06:37
+PMCR- 2026/05/05
+CRDT- 2026/05/07 05:10
+PHST- 2026/05/07 06:36 [pubmed]
+PHST- 2026/05/07 06:37 [medline]
+PHST- 2026/05/07 05:10 [entrez]
+PHST- 2026/05/05 00:00 [pmc-release]
+AID - 2026.04.30.26352103 [pii]
+AID - 10.64898/2026.04.30.26352103 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2026 May 1:2026.04.30.26352103. doi: 
+      10.64898/2026.04.30.26352103.
+
 PMID- 41268177
 OWN - NLM
 STAT- PubMed-not-MEDLINE

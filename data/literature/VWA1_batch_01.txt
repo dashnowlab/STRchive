@@ -1,13 +1,17 @@
 
 PMID- 42003611
 OWN - NLM
-STAT- Publisher
-LR  - 20260428
+STAT- MEDLINE
+DCOM- 20260513
+LR  - 20260515
 IS  - 2150-7511 (Electronic)
-DP  - 2026 Apr 20
+VI  - 17
+IP  - 5
+DP  - 2026 May 13
 TI  - Wolbachia uses ankyrin repeats to target specific fly proteins.
 PG  - e0017226
 LID - 10.1128/mbio.00172-26 [doi]
+LID - e00172-26
 AB  - Arthropods, the most diverse phylum on Earth, are hosts to a plethora of 
       bacterial parasites that secrete various effectors of unknown function during 
       infection. The most prevalent of these is the intracellular bacterium Wolbachia 
@@ -68,35 +72,52 @@ AU  - Newton I
 AUID- ORCID: 0000-0002-7118-0374
 AD  - Department of Biology, Indiana University, Bloomington, Indiana, USA.
 LA  - eng
+GR  - R01AI178815/NH/NIH HHS/United States
 PT  - Journal Article
 DEP - 20260420
 PL  - United States
 TA  - mBio
 JT  - mBio
 JID - 101519231
+RN  - 0 (Bacterial Proteins)
+RN  - 0 (Drosophila Proteins)
+RN  - Wolbachia pipientis
 SB  - IM
 UOF - bioRxiv. 2025 May 16:2025.05.15.654400. doi: 10.1101/2025.05.15.654400. PMID: 
       40463106
+MH  - Animals
+MH  - *Wolbachia/genetics/metabolism/physiology
+MH  - *Ankyrin Repeat
+MH  - *Drosophila melanogaster/microbiology/genetics/metabolism
+MH  - *Bacterial Proteins/metabolism/genetics
+MH  - *Drosophila Proteins/metabolism/genetics
+MH  - Host-Pathogen Interactions
+PMC - PMC13170367
 OTO - NOTNLM
 OT  - Drosophila
 OT  - Wolbachia
 OT  - ankyrin
 OT  - effector
+COIS- The authors declare no conflict of interest.
 EDAT- 2026/04/20 13:10
-MHDA- 2026/04/20 13:10
+MHDA- 2026/05/13 12:32
+PMCR- 2026/04/20
 CRDT- 2026/04/20 06:04
-PHST- 2026/04/20 13:10 [medline]
+PHST- 2026/05/13 12:32 [medline]
 PHST- 2026/04/20 13:10 [pubmed]
 PHST- 2026/04/20 06:04 [entrez]
+PHST- 2026/04/20 00:00 [pmc-release]
+AID - mbio00172-26 [pii]
+AID - mbio.00172-26 [pii]
 AID - 10.1128/mbio.00172-26 [doi]
-PST - aheadofprint
-SO  - mBio. 2026 Apr 20:e0017226. doi: 10.1128/mbio.00172-26.
+PST - ppublish
+SO  - mBio. 2026 May 13;17(5):e0017226. doi: 10.1128/mbio.00172-26. Epub 2026 Apr 20.
 
 PMID- 33559681
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210419
-LR  - 20250530
+LR  - 20260518
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)

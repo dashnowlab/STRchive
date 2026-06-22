@@ -1,4 +1,314 @@
 
+PMID- 42196324
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260527
+LR  - 20260529
+IS  - 1422-0067 (Electronic)
+IS  - 1422-0067 (Linking)
+VI  - 27
+IP  - 10
+DP  - 2026 May 13
+TI  - Computational Short Tandem Repeat Genotyping Reveals Clinically Relevant 
+      Expansions in a Large Turkish Neurodegeneration Disease Cohort.
+LID - 10.3390/ijms27104345 [doi]
+LID - 4345
+AB  - Short tandem repeat (STR) expansions are a major cause of neurodegenerative 
+      disorders; however, their genetic and clinical heterogeneity complicates 
+      diagnosis. STR detection remains limited in routine short-read next-generation 
+      sequencing (NGS) workflows. We evaluated the diagnostic yield and clinical 
+      utility of computational STR genotyping in a large Turkish neurodegenerative 
+      disease cohort. ExpansionHunter was applied to NGS data from 3150 patients and 
+      146 controls, targeting 15 disease-associated STR loci. To improve genotyping of 
+      poorly captured exonic regions in exome data, the default locus coverage 
+      threshold was reduced from 10x to 3x. Candidate expansions were visually 
+      inspected using REViewer and validated by conventional molecular methods. 
+      Computational analysis detected 28 pathogenic and 160 intermediate expansions. Of 
+      these, 23 were confirmed as pathogenic, and eight initially classified as 
+      intermediate were reclassified as pathogenic after conventional validation, 
+      resulting in 31 pathogenic cases across 28 families: HTT (n = 8), ATXN2 (n = 5), 
+      ATXN1 (n = 4), DMPK (n = 3), PABPN1 (n = 3), TBP (n = 2), and single cases in AR, 
+      ATN1, and CACNA1A. Lowering the coverage threshold markedly increased genotyping 
+      rates at low-coverage loci in exome data, particularly in ATXN2. Genetic findings 
+      were largely consistent with clinical pre-diagnosis and the additional diagnostic 
+      yield was 0.95%. These findings support integrating STR analysis into routine 
+      neurogenetic diagnostics.
+FAU - Khojakulov, Zakhiriddin
+AU  - Khojakulov Z
+AUID- ORCID: 0000-0002-7771-8956
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Palvadeau, Robin J
+AU  - Palvadeau RJ
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Kovancilar-Koc, Muge
+AU  - Kovancilar-Koc M
+AUID- ORCID: 0009-0006-7125-1159
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Atay, Irmak
+AU  - Atay I
+AUID- ORCID: 0009-0007-3284-7790
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahbaz, Irmak
+AU  - Sahbaz I
+AUID- ORCID: 0000-0001-8816-9158
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tekgul, Seyma
+AU  - Tekgul S
+AUID- ORCID: 0000-0001-5223-5627
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Sahin, Ayca
+AU  - Sahin A
+AUID- ORCID: 0000-0002-0948-6495
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Badakal, Esmer Zeynep Duru
+AU  - Badakal EZD
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Ciftci, Vildan
+AU  - Ciftci V
+AUID- ORCID: 0000-0002-4441-6062
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Bayraktar, Elif
+AU  - Bayraktar E
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Tunca, Ceren
+AU  - Tunca C
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Smolina, Natalia
+AU  - Smolina N
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+FAU - Akcimen, Fulya
+AU  - Akcimen F
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of 
+      Health, Bethesda, MD 20892, USA.
+FAU - Basak, Ayse Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Neurodegeneration Research Laboratory (NDAL), Research Center for Translational 
+      Medicine (KUTTAM), School of Medicine, Koc University, 34010 Istanbul, Turkey.
+LA  - eng
+GR  - Suna and Inan Kirac Foundation/Suna and Inan Kirac Foundation/
+GR  - Koc university/Koc University/
+PT  - Journal Article
+DEP - 20260513
+PL  - Switzerland
+TA  - Int J Mol Sci
+JT  - International journal of molecular sciences
+JID - 101092791
+SB  - IM
+MH  - Humans
+MH  - *Microsatellite Repeats/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Turkey/epidemiology
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+MH  - Female
+MH  - *Genotyping Techniques/methods
+MH  - Male
+MH  - Cohort Studies
+MH  - *DNA Repeat Expansion
+MH  - Computational Biology/methods
+PMC - PMC13207311
+OTO - NOTNLM
+OT  - ExpansionHunter
+OT  - NGS
+OT  - STR
+OT  - computational genotyping
+OT  - neurodegenerative diseases
+OT  - short tandem repeats
+COIS- The authors declare no conflicts of interest. The contributions of the NIH 
+      author(s) are considered Works of the United States Government. The findings and 
+      conclusions presented in this paper are those of the author(s) and do not 
+      necessarily reflect the views of the NIH or the U.S. Department of Health and 
+      Human Services.
+EDAT- 2026/05/27 06:33
+MHDA- 2026/05/27 06:34
+PMCR- 2026/05/13
+CRDT- 2026/05/27 01:16
+PHST- 2026/03/05 00:00 [received]
+PHST- 2026/04/04 00:00 [revised]
+PHST- 2026/04/09 00:00 [accepted]
+PHST- 2026/05/27 06:34 [medline]
+PHST- 2026/05/27 06:33 [pubmed]
+PHST- 2026/05/27 01:16 [entrez]
+PHST- 2026/05/13 00:00 [pmc-release]
+AID - ijms27104345 [pii]
+AID - ijms-27-04345 [pii]
+AID - 10.3390/ijms27104345 [doi]
+PST - epublish
+SO  - Int J Mol Sci. 2026 May 13;27(10):4345. doi: 10.3390/ijms27104345.
+
+PMID- 42157275
+OWN - NLM
+STAT- In-Process
+LR  - 20260522
+IS  - 1750-1172 (Electronic)
+IS  - 1750-1172 (Linking)
+VI  - 21
+IP  - 1
+DP  - 2026 May 19
+TI  - The genetic and clinical characteristics of oculopharyngeal muscular dystrophy 
+      patients in Israel.
+LID - 10.1186/s13023-026-04313-6 [doi]
+LID - 203
+AB  - BACKGROUND: Oculopharyngeal muscular dystrophy (OPMD) is a late-onset autosomal 
+      dominant myopathy, caused by a (GCN)n/polyalanine repeat expansion in the PABPN1 
+      gene. In Israel, OPMD is particularly prevalent among individuals of Jewish 
+      Bukharian descent due to a (GCN)13 repeat expansion. In this retrospective study, 
+      we collected genetic and clinical data of OPMD patients who visited the Israeli 
+      reference clinic from its opening in 2022 through September 2025 and were 
+      enrolled in the Israeli OPMD registry (IsrO-PMD). RESULTS: A total of 102 Jewish 
+      individuals with OPMD symptoms and a confirmed molecular diagnosis were 
+      identified (52 males, 51.0%). The heterozygous (GCN)13 repeat allele (10/13 
+      genotype) was found in 95 patients (93.1%), of whom 89 (93.7%) were of Bukharian 
+      descent, five (5.6%) were of Bulgarian origin, and a single patient was from 
+      Georgia. In this 10/13 genotype group (n = 95), initial symptoms were dysphagia 
+      and ptosis, which occurred at a similar mean age of 53.0 +/- 8.3 and 53.9 +/- 7.2 
+      years, respectively. Symptoms of limb muscle weakness occurred significantly 
+      later, at a mean age of 57.9 +/- 10.2 years. Overall, the onset of symptoms 
+      occurred approximately 4 years earlier in females (48.9 +/- 7.9, n = 48) than in 
+      males (52.6 +/- 7.1, n = 47), and this difference was statistically significant 
+      (p = 0.02). However, the difference did not reach significance when calculated 
+      for each of the three symptoms separately. On evaluation, at a mean age of 
+      61.6 +/- 10.7 years, dysphagia was present in 92/95 (96.8%) of patients, ptosis in 
+      85/95 (89.5%), and limb muscle weakness in 56/95 (58.9%) of cases, most notably 
+      of hip flexion and abduction. Different genotypes were detected in seven 
+      patients: Three of Bukharian descent were homozygous for (GCN)13 repeats, three 
+      of Karaite descent were homozygous for (GCN)11 repeats, and one of Tunisian 
+      origion was heterozygous for (GCN)15 repeats (10/15 genotype). DISCUSSION: While 
+      most OPMD patients in Israel are of Jewish Bukharian descent, patients from other 
+      origins were also identified. Dysphagia and ptosis are the common initial 
+      symptoms, and overall, the onset of symptoms was reportedly earlier in females. 
+      Proximal muscle weakness becomes common with disease progression. Further studies 
+      are required to delineate genotype-phenotype correlations.
+FAU - Ben-David, Merav
+AU  - Ben-David M
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Ramat Gan, Israel.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+FAU - Greenbaum, Lior
+AU  - Greenbaum L
+AD  - The Danek Gertner Institute of Human Genetics, Sheba Medical Center, Tel 
+      Hashomer, Ramat-Gan, Israel.
+AD  - Gray Faculty of Medical & Health Sciences, Tel Aviv University, Tel Aviv, Israel.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+FAU - Nikitn, Vera
+AU  - Nikitn V
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Ramat Gan, Israel.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+FAU - Zvulunov, Alex
+AU  - Zvulunov A
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Ramat Gan, Israel.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+AD  - Recanati School of Medicine, Reichman University, Herzliya, Israel.
+AD  - The Non-Profit Organization for Promotion of Health and Cure of OPMD, Bnei Dror, 
+      Israel.
+FAU - Charas, Hagit
+AU  - Charas H
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Ramat Gan, Israel.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+FAU - Divon, Naama
+AU  - Divon N
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Ramat Gan, Israel.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+FAU - Barkan, Tali
+AU  - Barkan T
+AD  - The Genetics Institute and Genomics Center, Tel Aviv Sourasky Medical Center, Tel 
+      Aviv, Israel.
+FAU - Chorin, Odelia
+AU  - Chorin O
+AD  - The Danek Gertner Institute of Human Genetics, Sheba Medical Center, Tel 
+      Hashomer, Ramat-Gan, Israel.
+AD  - Gray Faculty of Medical & Health Sciences, Tel Aviv University, Tel Aviv, Israel.
+FAU - Reznik-Wolf, Haike
+AU  - Reznik-Wolf H
+AD  - The Danek Gertner Institute of Human Genetics, Sheba Medical Center, Tel 
+      Hashomer, Ramat-Gan, Israel.
+FAU - Zloto, Ofira
+AU  - Zloto O
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+AD  - Department of Ophthalmology, Sheba Medical Center, Tel Hashomer, Ramat Gan, 
+      Israel.
+FAU - Benyamini, Limor
+AU  - Benyamini L
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel.
+AD  - Department of Otolaryngology, Head and Neck Surgery, Sheba Medical Center, Tel 
+      Hashomer, Ramat Gan, Israel.
+FAU - Shelly, Shahar
+AU  - Shelly S
+AD  - Department of Neurology, Rambam Medical Center, Haifa, Israel.
+AD  - Rappaport Faculty of Medicine, Technion, Haifa, Israel.
+AD  - Department of Neurology, Mayo Clinic, Rochester, MN, USA.
+FAU - Dori, Amir
+AU  - Dori A
+AUID- ORCID: 0000-0003-4633-1481
+AD  - Department of Neurology, Sheba Medical Center, Tel Hashomer, Ramat Gan, Israel. 
+      amirdori@tauex.tau.ac.il.
+AD  - Gray Faculty of Medical & Health Sciences, Tel Aviv University, Tel Aviv, Israel. 
+      amirdori@tauex.tau.ac.il.
+AD  - Multidisciplinary Service for OPMD Patients, Sheba Medical Center, Tel Hashomer, 
+      Ramat-Gan, Israel. amirdori@tauex.tau.ac.il.
+LA  - eng
+PT  - Journal Article
+DEP - 20260519
+PL  - England
+TA  - Orphanet J Rare Dis
+JT  - Orphanet journal of rare diseases
+JID - 101266602
+SB  - IM
+PMC - PMC13188457
+OTO - NOTNLM
+OT  - PABPN1
+OT  - Myopathy
+OT  - Oculopharyngeal muscular dystrophy
+OT  - Trinucleotide repeat expansion
+COIS- Declarations. Ethics approval and consent to participate: The SMC Institutional 
+      Review Board approved the study in accordance with the Declaration of Helsinki 
+      (8801-21-SMC). All participants provided written informed consent. The study was 
+      registered at ClinicalTrials.gov: ID NCT07146256; Study Start 2022-02-01. Consent 
+      for publication: The manuscript contains no individual data. Therefore, in 
+      addition to informed consent for participation in the study, no further consent 
+      was required. Competing interests: The authors declare that they have no 
+      competing interests.
+EDAT- 2026/05/20 06:32
+MHDA- 2026/05/20 06:32
+PMCR- 2026/05/19
+CRDT- 2026/05/20 00:16
+PHST- 2025/12/18 00:00 [received]
+PHST- 2026/03/06 00:00 [accepted]
+PHST- 2026/05/20 06:32 [medline]
+PHST- 2026/05/20 06:32 [pubmed]
+PHST- 2026/05/20 00:16 [entrez]
+PHST- 2026/05/19 00:00 [pmc-release]
+AID - 10.1186/s13023-026-04313-6 [pii]
+AID - 4313 [pii]
+AID - 10.1186/s13023-026-04313-6 [doi]
+PST - epublish
+SO  - Orphanet J Rare Dis. 2026 May 19;21(1):203. doi: 10.1186/s13023-026-04313-6.
+
 PMID- 41764774
 OWN - NLM
 STAT- MEDLINE
