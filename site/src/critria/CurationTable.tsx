@@ -17,6 +17,7 @@ export default function CurationTable() {
 
   return (
     <Table
+      itemNames="curations"
       {...defineData(mappedCurations, (column) => [
         column({
           key: "Locus_ID",

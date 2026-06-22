@@ -151,7 +151,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
 
     <div class="flex flex-wrap justify-center gap-4">
       <Button className="w-60 self-center" design="bubble" to="/critria">
-        <IconArrowLeft />All CriTRia Curations
+        <IconArrowLeft />All criTRia Curations
       </Button>
 
       <Button
@@ -175,6 +175,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
     {
       curation.genetic_evidence_details?.length ? (
         <EvidenceTable
+          name={`${curation.Locus_ID} genetic evidence`}
           client:load
           evidence={curation.genetic_evidence_details ?? []}
         />
@@ -197,6 +198,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
     {
       curation.experimental_evidence_details?.length ? (
         <EvidenceTable
+          name={`${curation.Locus_ID} experimental evidence`}
           client:load
           evidence={curation.experimental_evidence_details ?? []}
         />

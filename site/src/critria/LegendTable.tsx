@@ -6,6 +6,7 @@ export default function LegendTable() {
   return (
     <Table
       className="w-full"
+      itemNames="classifications"
       pageControls={false}
       {...defineData(Object.values(classifications), (column) => [
         column({

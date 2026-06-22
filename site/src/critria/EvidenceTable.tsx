@@ -5,15 +5,17 @@ import Table, { defineData } from "@/components/Table";
 import Cited from "@/locus/Cited";
 
 type Props = {
+  name: string;
   evidence:
     | Curation["genetic_evidence_details"]
     | Curation["experimental_evidence_details"];
 };
 
 /** evidence table on individual critria page */
-export default function EvidenceTable({ evidence }: Props) {
+export default function EvidenceTable({ name, evidence }: Props) {
   return (
     <Table
+      itemNames={name}
       {...defineData(evidence, (column) => [
         column({
           key: "evidence_category",

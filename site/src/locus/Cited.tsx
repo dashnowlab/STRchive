@@ -18,7 +18,7 @@ export default function Cited({ value }: Props) {
   return value.map(({ text, references }, index) =>
     text ? (
       /** plain text */
-      <span key={index}>{text}</span>
+      <span key={index} dangerouslySetInnerHTML={{ __html: text }} />
     ) : (
       <sup key={index}>
         {references.map(({ id, number, title, authors, publisher }, index) => (
