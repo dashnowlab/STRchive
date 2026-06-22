@@ -25,6 +25,7 @@ import {
   IconUserCheck,
   IconVirus,
 } from "@tabler/icons-react";
+import clsx from "clsx";
 
 /** generate pages for each datum, paths based on id */
 export const getStaticPaths = async () =>
@@ -63,12 +64,53 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
         {curation.Inheritance ?? "–"}
       </div>
       <div class="box">
-        <strong><IconChecks />Classification</strong>
-        <Tag client:load value={curation.classification} />
+        <strong><IconAward />Score</strong>
+        <p>
+          {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"} +{" "}
+          {curation.supercategory_summary?.["Experimental Evidence"] ?? 0} ={
+            " "
+          }
+          <strong class="text-lg">{curation.total_score}</strong> / 18
+          <br />
+          <div class="text-sm">Genetic + experimental = total</div>
+        </p>
       </div>
       <div class="box">
-        <strong><IconAward />Total Score</strong>
-        {curation.total_score}
+        <strong><IconChecks />Classification</strong>
+        <div class="flex flex-col gap-4">
+          <Tag client:load value={curation.classification} />
+
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <div>0</div>
+              <div class="relative flex h-1 grow rounded-full">
+                <svg
+                  viewBox="-1 -1 2 1"
+                  class="absolute bottom-full h-3 -translate-x-1/2"
+                  style={{ left: `${(curation.total_score / 18) * 100}%` }}
+                >
+                  <polygon points="-0.66 -1 0 0 0.66 -1"></polygon>
+                </svg>
+                {
+                  [
+                    "bg-worst",
+                    "bg-bad",
+                    "bg-warn",
+                    "bg-okay",
+                    "bg-good",
+                    "bg-best",
+                  ].map((className) => <div class={clsx("grow", className)} />)
+                }
+              </div>
+              <div>18</div>
+            </div>
+            <div class="flex justify-between gap-1 text-sm">
+              <div>Refuted</div>
+              <div>Moderate</div>
+              <div>Definitive</div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="box">
         <strong><IconHistory />Last Updated</strong>
@@ -94,6 +136,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
             : "–"
         }
       </div>
+
       <div class="box box-full">
         <strong><IconUserCheck />Curator(s)</strong>
         {curation.Curator}
@@ -126,7 +169,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
     <H2>Genetic evidence</H2>
     <p class="text-center text-balance">
       <strong>Total:</strong>
-      {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"}
+      {curation.supercategory_summary?.["Genetic Evidence"] ?? 0}
     </p>
 
     {
@@ -148,7 +191,7 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
     <H2>Experimental evidence</H2>
     <p class="text-center text-balance">
       <strong>Total:</strong>
-      {curation.supercategory_summary?.["Experimental Evidence"] ?? "-"}
+      {curation.supercategory_summary?.["Experimental Evidence"] ?? 0}
     </p>
 
     {

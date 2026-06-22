@@ -36,7 +36,16 @@
       "type": "array",
       "items": {
         "title": "",
-        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null],
+        "examples": [
+          "Definitive",
+          "Strong",
+          "Moderate",
+          "Limited",
+          "Disputed",
+          "Refuted",
+          "No Known Relationship",
+          "Provisional"
+        ],
         "type": "string",
         "combobox": true
       }
@@ -148,10 +157,7 @@
       "section": "Disease",
       "title": "HPO Terms",
       "description": "Human Phenotype Ontology (HPO) terms associated with the disease",
-      "examples": [
-        "HP:0002066 Gait ataxia",
-        "HP:0001250 Seizure"
-      ],
+      "examples": ["HP:0002066 Gait ataxia", "HP:0001250 Seizure"],
       "type": ["array", "null"],
       "items": {
         "type": "string",
@@ -353,7 +359,7 @@
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -368,7 +374,7 @@
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -383,7 +389,7 @@
       "examples": ["CCCTT", "CCTGT"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -398,7 +404,7 @@
       "examples": ["TTG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -516,7 +522,7 @@
       "title": "Novel",
       "description": "If the pathogenic motif is in the hg38 reference genome: ref. Otherwise: novel.",
       "type": ["string", "null"],
-      "enum": ["novel", "ref", null]
+      "enum": ["novel", "ref"]
     },
     "gard": {
       "section": "IDs",
@@ -748,7 +754,7 @@
       "examples": ["pmid:38467784"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
