@@ -109,7 +109,8 @@
                 "Allele",
                 "Computational",
                 "Segregation",
-                "Case-control data"
+                "Case-control data",
+                null
               ]
             },
             "Score": {
@@ -181,7 +182,8 @@
                 "Human treatment",
                 "Rescue in non-human model organism",
                 "Rescue in cell culture",
-                "Rescue in patient cells"
+                "Rescue in patient cells",
+                null
               ]
             },
             "Score": {
@@ -310,7 +312,8 @@
           "Disputed",
           "Refuted",
           "No Known Relationship",
-          "Provisional"
+          "Provisional",
+          null
         ]
       }
     },

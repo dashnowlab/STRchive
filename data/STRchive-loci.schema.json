@@ -127,7 +127,7 @@
       "items": {
         "title": "Type",
         "type": ["string", "null"],
-        "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT"]
+        "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT", null]
       }
     },
     "association_type": {
@@ -140,7 +140,7 @@
       "items": {
         "title": "Type",
         "type": ["string", "null"],
-        "enum": ["Mendelian", "Risk", "Modifier"]
+        "enum": ["Mendelian", "Risk", "Modifier", null]
       }
     },
     "disease_description": {
