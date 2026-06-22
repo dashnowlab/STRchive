@@ -40,6 +40,8 @@ def parse_args():
     parser.add_argument("output", help="Output JSON file off full citations")
     parser.add_argument("--append", help="JSON file of previous citations to be skipped and appended to the output", default=None)
     parser.add_argument("--inloci", help="JSON input is in STRchive loci format. Only items in the references field will be queried. Recommend using with --append", action='store_true')
+    parser.add_argument("--incurations", help="JSON input is in criTRia curations format. Only items in the references field will be queried. Recommend using with --append", action='store_true')
+    parser.add_argument("--curations", help="Optional criTRia curations JSON file. References from these curations will be added to the IDs queried.", default=None)
     return parser.parse_args()
 
 def cite_with_manubot(ids, append_ids=None):
@@ -268,8 +270,20 @@ def main(args):
             for record in loci_data:
                 data = data + [x.lstrip('@') for x in record['references']]
                 data = data + [x.lstrip('@') for x in record['additional_literature']]
+        elif args.incurations:
+            data = []
+            curations_data = json.load(file)
+            for record in curations_data:
+                data = data + [x.lstrip('@') for x in record.get('references', [])]
         else:
             data = json.load(file)
+
+    # add references from supplementary curations file
+    if args.curations:
+        with open(args.curations, "r") as f:
+            curations_data = json.load(f)
+            for record in curations_data:
+                data = data + [x.lstrip('@') for x in record.get('references', [])]
 
     # write output JSON
     with open(args.output, "w") as file:

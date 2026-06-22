@@ -93,6 +93,16 @@
         "examples": ["Disputed", "Refuted"],
         "type": ["string", "null"]
       },
+      "references": {
+        "section": "Generated",
+        "title": "References",
+        "description": "All unique citation IDs extracted from Citation fields and free-text fields. Generated automatically by check-curations.py.",
+        "examples": [["pmid:39068203", "pmid:27417533"]],
+        "type": ["array", "null"],
+        "items": {
+          "type": "string"
+        }
+      },
       "genetic_evidence_details": {
         "section": "Evidence",
         "title": "Genetic Evidence Details",
