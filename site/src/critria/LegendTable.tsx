@@ -8,7 +8,16 @@ import { IconDownload } from "@tabler/icons-react";
 export default function LegendTable() {
   return (
     <>
+      <Button
+        design="plain"
+        className="self-end"
+        onClick={() => downloadJson(classifications, "classifications")}
+      >
+        <IconDownload />
+        Download
+      </Button>
       <Table
+        className="w-full"
         {...defineData(Object.values(classifications), (column) => [
           column({
             key: "value",
@@ -27,14 +36,6 @@ export default function LegendTable() {
         ])}
         showControls={false}
       />
-      <Button
-        design="plain"
-        className="self-center"
-        onClick={() => downloadJson(classifications, "classifications")}
-      >
-        <IconDownload />
-        Download
-      </Button>
     </>
   );
 }

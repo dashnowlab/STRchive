@@ -241,7 +241,7 @@ export const tagOptions = [
     key: "evidence",
     ...classifications["No Known Relationship"],
     Icon: IconSlash,
-    className: "bg-warn/25 text-black",
+    className: "bg-gray text-white",
     filter: true,
   },
   {

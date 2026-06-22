@@ -97,6 +97,7 @@ type Props<Datum extends object> = {
   rows: Datum[];
   sort?: SortingState;
   showControls?: boolean;
+  className?: string;
 };
 
 /** options for per-page select */
@@ -118,6 +119,7 @@ export default function Table<Datum extends object>({
   rows,
   sort,
   showControls = true,
+  className,
 }: Props<Datum>) {
   /** current per-page selection */
   const [perPage] = useState(defaultPerPage.value);
@@ -148,9 +150,10 @@ export default function Table<Datum extends object>({
 
   return (
     <div className="flex w-full flex-col items-center gap-4">
-      <div className="max-w-full overflow-x-auto rounded-md shadow-md">
+      <div className="w-full overflow-x-auto rounded-md shadow-md">
         {/* table */}
         <table
+          className={className}
           aria-rowcount={table.getPrePaginationRowModel().rows.length}
           aria-colcount={columns.length}
         >

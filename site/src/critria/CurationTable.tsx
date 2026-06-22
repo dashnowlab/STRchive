@@ -18,6 +18,14 @@ export default function CurationTable() {
 
   return (
     <>
+      <Button
+        design="plain"
+        className="self-end"
+        onClick={() => downloadJson(curations, "curations")}
+      >
+        <IconDownload />
+        Download
+      </Button>
       <Table
         {...defineData(mappedCurations, (column) => [
           column({
@@ -81,14 +89,6 @@ export default function CurationTable() {
         ])}
         sort={[{ id: "1", desc: false }]}
       />
-      <Button
-        design="plain"
-        className="self-center"
-        onClick={() => downloadJson(curations, "curations")}
-      >
-        <IconDownload />
-        Download
-      </Button>
     </>
   );
 }

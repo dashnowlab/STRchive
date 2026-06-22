@@ -368,6 +368,12 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
           )
         }
       </div>
+
+      <!-- detection -->
+      <div class="box box-full">
+        <strong>Detection</strong>
+        {locus.detection && <div>{locus.detection}</div>}
+      </div>
     </div>
 
     <div class="boxes [--columns:3]">
