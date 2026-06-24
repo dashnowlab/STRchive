@@ -283,7 +283,7 @@ def main(args):
         with open(args.curations, "r") as f:
             curations_data = json.load(f)
             for record in curations_data:
-                data = data + [x.lstrip('@') for x in record.get('references', [])]
+                data = data + [x.lstrip('@') for x in (record.get('references') or [])]
 
     # write output JSON
     with open(args.output, "w") as file:
