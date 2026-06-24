@@ -916,11 +916,11 @@
   "VariantId": ["EPM_CSNK1E"],
   "PathologicRegion": "chr22:38781587-38781680",
   "HGNCId": null,
-  "InheritanceMode": ["AR"],
+  "InheritanceMode": ["AD"],
   "DisplayRU": "CCG",
   "Disease": "EPM, DEE",
   "NormalMax": 48,
-  "PathologicMin": 745,
+  "PathologicMin": 366,
   "Gene": "CSNK1E"
 },
 {
