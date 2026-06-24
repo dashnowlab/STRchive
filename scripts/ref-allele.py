@@ -2,6 +2,9 @@ import pysam
 import re
 import sys
 import os
+import shutil
+import time
+import urllib.error
 import urllib.request
 
 def split_repeat_sequence(motifs, sequence):
@@ -119,7 +122,21 @@ def get_ref(fasta, ref_directory='.'):
                 pass
     # Download the reference genome file
     sys.stderr.write(f"Warning: couldn't find a local copy of reference genome file: {ref_path}. Downloading.\n")
-    urllib.request.urlretrieve(fasta, ref_path)
+    max_attempts = 3
+    for attempt in range(1, max_attempts + 1):
+        if os.path.isfile(ref_path):
+            os.remove(ref_path)
+        try:
+            with urllib.request.urlopen(fasta, timeout=120) as response, open(ref_path, "wb") as output:
+                shutil.copyfileobj(response, output)
+            break
+        except (urllib.error.URLError, TimeoutError, OSError) as err:
+            if os.path.isfile(ref_path):
+                os.remove(ref_path)
+            if attempt == max_attempts:
+                raise
+            sys.stderr.write(f"Warning: download attempt {attempt} failed ({err}). Retrying.\n")
+            time.sleep(5)
     try:
         ref = pysam.Fastafile(ref_path)
         return ref
