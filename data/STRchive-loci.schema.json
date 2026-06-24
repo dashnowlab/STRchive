@@ -522,7 +522,7 @@
       "title": "Novel",
       "description": "If the pathogenic motif is in the hg38 reference genome: ref. Otherwise: novel.",
       "type": ["string", "null"],
-      "enum": ["novel", "ref"]
+      "enum": ["novel", "ref", null]
     },
     "gard": {
       "section": "IDs",
