@@ -156,12 +156,12 @@ export default function Table<Datum extends object>({
   });
 
   return (
-    <div className="flex w-full flex-col items-center gap-4">
+    <div className="flex max-w-max flex-col gap-4 self-center">
       {/* controls */}
       {(pageControls || actionControls) && (
         <div
           className={clsx(
-            "flex w-full flex-wrap items-center justify-between gap-x-8 gap-y-4 max-md:flex-col",
+            "flex flex-wrap items-center justify-between gap-x-8 gap-y-4 max-md:flex-col",
           )}
         >
           {pageControls && (
