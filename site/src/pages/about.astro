@@ -1,32 +1,32 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import { FaGithub } from "react-icons/fa6";
-import {
-  LuBadgeInfo,
-  LuBookMarked,
-  LuHandHeart,
-  LuMail,
-  LuUsers,
-} from "react-icons/lu";
-import { kebabCase } from "lodash-es";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
+import { H1, H2 } from "@/components/Heading";
 import Link from "@/components/Link";
 import TableOfContents from "@/components/TableOfContents";
 import { team } from "@/data/team";
+import Layout from "@/layouts/Layout.astro";
 import { repo } from "@/layouts/meta";
+import {
+  IconBookmark,
+  IconBrandGithub,
+  IconHeartHandshake,
+  IconInfoCircle,
+  IconMail,
+  IconUsers,
+} from "@tabler/icons-react";
+import { kebabCase } from "lodash-es";
 ---
 
 <Layout title="About">
   <TableOfContents client:only="react" />
   <section>
-    <Heading client:load level={1}><LuBadgeInfo />About</Heading>
+    <H1><IconInfoCircle />About</H1>
   </section>
 
   <section>
-    <Heading client:load level={2}><LuMail />Contact</Heading>
+    <H2><IconMail />Contact</H2>
 
-    <p class="center">
+    <p class="text-center text-balance">
       To get in touch about STRchive, use the contact buttons on <strong
         >any page</strong
       >, found in the <button data-spotlight="#corner-contact"
@@ -39,29 +39,31 @@ import { repo } from "@/layouts/meta";
     <script>
       import { spotlight } from "@/util/dom";
 
-      document
-        .querySelectorAll("[data-spotlight]")
-        .forEach((element) =>
-          element.addEventListener("click", () =>
-            spotlight(element.dataset.spotlight),
-          ),
-        );
+      document.querySelectorAll("[data-spotlight]").forEach((element) => {
+        const target = element as HTMLElement;
+        element.addEventListener("click", () => {
+          const selector = target.dataset.spotlight;
+          if (!selector) return;
+          const element = document.querySelector(selector);
+          if (element) spotlight(element);
+        });
+      });
     </script>
   </section>
 
   <section>
-    <Heading client:load level={2}><LuBookMarked />Cite</Heading>
+    <H2><IconBookmark />Cite</H2>
 
     <blockquote>
       <span>
         Hiatt, L., Weisburd, B., Dolzhenko, E., Rubinetti, V., Avvaru, A.K.,
         VanNoy, G.E., Kurtas, N.E., Rehm, H.L., Quinlan, A. and Dashnow, H.,
         2025.
-      </span><br />
-      <b>
+      </span>
+      <strong>
         STRchive: a dynamic resource detailing population-level and
         locus-specific insights at tandem repeat disease loci.
-      </b><br />
+      </strong>
       <span
         >Genome Med doi: <Link to="https://doi.org/10.1186/s13073-025-01454-4"
           >https://doi.org/10.1101/2024.05.21.24307682</Link
@@ -71,7 +73,7 @@ import { repo } from "@/layouts/meta";
   </section>
 
   <section>
-    <Heading client:load level={2}><LuHandHeart />Contribute</Heading>
+    <H2><IconHeartHandshake />Contribute</H2>
 
     <p>
       STRchive welcomes community contributions. An accurate and up to date
@@ -80,52 +82,35 @@ import { repo } from "@/layouts/meta";
       on GitHub:
     </p>
 
-    <div class="row">
-      <Button to={repo} design="bubble">
-        <FaGithub /><span>GitHub</span>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <Button className="w-60" design="bubble" to={repo}>
+        <IconBrandGithub />GitHub
       </Button>
     </div>
   </section>
 
   <section>
-    <Heading client:load level={2}><LuUsers />Team</Heading>
+    <H2><IconUsers />Team</H2>
 
-    <div class="row">
+    <div class="flex flex-wrap items-center justify-center gap-4">
       {
         team.map((member) => (
-          <Link className="member" to={member.link}>
-            <img src={`/images/team/${kebabCase(member.name)}.jpg`} alt="" />
-            <b>{member.name}</b>
-            <span>{member.role}</span>
-            <span>{member.affiliation}</span>
+          <Link
+            className="flex w-50 flex-col items-center gap-1 p-2 text-center no-underline"
+            to={member.link}
+            arrow={false}
+          >
+            <img
+              class="mb-2 w-full rounded-full transition hover:saturate-0"
+              src={`/images/team/${kebabCase(member.name)}.jpg`}
+              alt=""
+            />
+            <strong>{member.name}</strong>
+            <span class="text-sm">{member.role}</span>
+            <span class="text-sm">{member.affiliation}</span>
           </Link>
         ))
       }
     </div>
   </section>
 </Layout>
-
-<style>
-  .member {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    padding: 10px;
-    text-decoration: none;
-  }
-
-  .member > img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 999px;
-    box-shadow: var(--box-shadow);
-    transition:
-      filter var(--fast),
-      scale var(--fast);
-  }
-
-  .member:hover > img {
-    scale: 1.05;
-    filter: saturate(0);
-  }
-</style>

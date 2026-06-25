@@ -1,12 +1,15 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "baseUrl": ".",
+    "strict": true,
     "paths": {
-      "@/*": ["src/*"],
-      "~/*": ["../data/*"]
+      "@/*": ["./src/*"],
+      "~/*": ["../data/*"],
+      "plotly.js-dist": ["./node_modules/@types/plotly.js"]
     },
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+    "jsxImportSource": "react",
+    "types": ["node", "vite/client", "vite-plugin-svgr/client"]
+  },
+  "include": [".astro/types.d.ts", "src/**/*"]
 }

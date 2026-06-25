@@ -3,6 +3,7 @@ import sys
 import argparse
 import doctest
 import os
+import re
 import time
 import json
 import math
@@ -169,6 +170,45 @@ CLASSIFICATION_LOOKUP = {
         "min_years": 0,
     },
 }
+
+def extract_references(locus):
+    """Collect all unique citation IDs from a curation's Citation fields and free-text fields.
+
+    Citation fields use plain 'pmid:xxx' (semicolon-separated).
+    Free-text fields use '[@pmid:xxx]' or '[@pmid:xxx; @doi:yyy]' notation.
+    Returns a list of citation IDs preserving first-seen order.
+
+    >>> extract_references({'genetic_evidence_details': [{'Citation': 'pmid:111; pmid:222'}], 'experimental_evidence_details': [], 'Description': 'See [@pmid:333; @doi:444] for details.'})
+    ['pmid:111', 'pmid:222', 'pmid:333', 'doi:444']
+    >>> extract_references({'genetic_evidence_details': [{'Citation': 'pmid:111'}], 'experimental_evidence_details': [], 'Description': 'See [@pmid:111].'})
+    ['pmid:111']
+    """
+    seen = {}
+
+    for section in ('genetic_evidence_details', 'experimental_evidence_details'):
+        for entry in locus.get(section, []):
+            citation = entry.get('Citation')
+            if citation and isinstance(citation, str):
+                for part in citation.split(';'):
+                    cit_id = part.strip().lstrip('@')
+                    if cit_id and ':' in cit_id:
+                        seen.setdefault(cit_id, None)
+
+    free_text_fields = [locus.get('Description', '')]
+    for section in ('genetic_evidence_details', 'experimental_evidence_details'):
+        for entry in locus.get(section, []):
+            free_text_fields.append(entry.get('Evidence detail', ''))
+
+    for text in free_text_fields:
+        if not text:
+            continue
+        for match in re.findall(r'@([a-zA-Z]+:[^\s;@\[\]]+)', text):
+            cit_id = match.strip()
+            if cit_id and ':' in cit_id:
+                seen.setdefault(cit_id, None)
+
+    return list(seen.keys())
+
 
 def _normalize_evidence_type(evidence_type):
     if evidence_type is None or pd.isna(evidence_type):
@@ -441,6 +481,7 @@ def summarize_curations(locus):
     experimental_evidence_details = experimental_df.drop(columns=['__original_section'], errors='ignore').to_dict(orient='records')
 
     # Return updated dictionary containing the curation summary
+    locus["references"] = extract_references(locus)
     locus["category_summary"] = category_summary
     locus["supercategory_summary"] = supercategory_summary
     locus["total_score"] = total_score

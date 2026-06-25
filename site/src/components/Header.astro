@@ -1,8 +1,8 @@
 ---
-import { FaGithub } from "react-icons/fa6";
 import Logo from "@/assets/logo.svg?react";
 import Link from "@/components/Link";
 import { repo, version } from "@/layouts/meta";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 const path = Astro.url.pathname;
 
@@ -12,125 +12,111 @@ const links = [
   { to: "/resources", name: "Resources" },
   { to: "/about", name: "About" },
   { to: "/critria", name: "criTRia" },
+  { to: repo, name: "GitHub", icon: IconBrandGithub },
 ];
 ---
 
-<header>
-  <nav class="row">
-    <div class="row logo-row">
+<header class="animate-gradients">
+  <nav
+    class="flex flex-wrap items-center justify-center gap-8 text-lg max-sm:flex-col"
+  >
+    <div class="flex items-baseline gap-2">
       {
         path !== "/" && (
-          <Link to="/" className="logo-link" aria-label="Home">
-            <Logo className="logo" />
+          <Link
+            to="/"
+            className="h-8 text-white no-underline hover:text-primary"
+            aria-label="Home"
+          >
+            <Logo className="h-full" />
           </Link>
         )
       }
-
       <Link
         to={`${repo}/blob/main/CITATION.cff`}
-        className="version"
-        arrow={false}>{version}</Link
+        className="text-sm text-gray no-underline hover:text-primary"
+        arrow={false}
       >
+        v{version}
+      </Link>
     </div>
 
-    <div class="row link-row">
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 max-sm:flex-col"
+    >
       {
-        links.map(({ to, name }) => (
+        links.map(({ to, name, icon: Icon }) => (
           <Link
             to={to}
-            className={["nav-link", to === path ? "active" : ""].join(" ")}
-            aria-label="GitHub"
+            className={[
+              "relative flex items-center gap-2 p-2 text-white no-underline hover:text-primary after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-center after:scale-x-0 after:bg-current after:transition after:content-[''] hover:after:scale-x-100",
+              to === path ? "after:scale-x-100" : "",
+            ].join(" ")}
+            arrow={false}
           >
+            {Icon && <Icon className="size-4" />}
             {name}
           </Link>
         ))
       }
     </div>
-
-    <div class="spacer"></div>
-
-    <Link to={repo} className="nav-link" aria-label="GitHub">
-      <FaGithub className="big-icon" />
-    </Link>
   </nav>
+
+  <slot />
 </header>
 
 <style>
-  header {
-    padding: 30px max(40px, (100% - var(--content)) / 2);
-    background: var(--black);
-    color: var(--white);
-    font-size: 1.1rem;
+  @property --gradient-factor {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
   }
 
-  header a {
-    display: inline-flex;
-    color: var(--white);
-    text-decoration: none;
+  .animate-gradients {
+    animation: animate-gradients 15s linear infinite;
+
+    --opacity-a: calc(50% - 25% * cos(var(--angle-a)));
+    --opacity-b: calc(50% - 25% * cos(var(--angle-b)));
+
+    --color-a: color-mix(
+      in srgb,
+      var(--color-primary) var(--opacity-a),
+      transparent
+    );
+    --color-b: color-mix(
+      in srgb,
+      var(--color-secondary) var(--opacity-b),
+      transparent
+    );
+
+    --angle-a: calc(var(--gradient-factor) * 1turn);
+    --angle-b: calc(var(--gradient-factor) * 1turn + 0.5turn);
+
+    --x-a: calc(cos(var(--angle-a)) * 50% + 50%);
+    --y-a: calc(sin(var(--angle-a)) * 50% + 150%);
+    --x-b: calc(cos(var(--angle-b)) * 50% + 50%);
+    --y-b: calc(sin(var(--angle-b)) * 50% + 150%);
+
+    background:
+      radial-gradient(
+        ellipse at var(--x-a) var(--y-a),
+        var(--color-a),
+        transparent 75%
+      ),
+      radial-gradient(
+        ellipse at var(--x-b) var(--y-b),
+        var(--color-b),
+        transparent 75%
+      ),
+      var(--color-black);
   }
 
-  header a:hover {
-    color: var(--primary);
-  }
-
-  .logo-link {
-    height: 30px;
-  }
-
-  .logo {
-    height: 100%;
-  }
-
-  .version {
-    color: var(--gray) !important;
-    font-size: 0.75rem;
-  }
-
-  .spacer {
-    flex-grow: 1;
-  }
-
-  .nav-link {
-    position: relative;
-    padding: 5px;
-  }
-
-  .nav-link::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    scale: 0 1;
-    background: currentColor;
-    content: "";
-    transition: scale var(--fast);
-  }
-
-  .nav-link.active::after,
-  .nav-link:hover::after {
-    scale: 1 1;
-  }
-
-  @media (max-width: 700px) {
-    .logo-row {
-      width: 100%;
+  @keyframes animate-gradients {
+    from {
+      --gradient-factor: 0;
     }
-
-    .spacer {
-      display: none;
-    }
-  }
-
-  @media (max-width: 480px) {
-    nav {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .link-row {
-      flex-direction: column;
+    to {
+      --gradient-factor: 1;
     }
   }
 </style>

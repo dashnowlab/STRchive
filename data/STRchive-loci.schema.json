@@ -46,7 +46,16 @@
       "type": "array",
       "items": {
         "title": "",
-        "examples": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null],
+        "examples": [
+          "Definitive",
+          "Strong",
+          "Moderate",
+          "Limited",
+          "Disputed",
+          "Refuted",
+          "No Known Relationship",
+          "Provisional"
+        ],
         "type": "string",
         "combobox": true
       }
@@ -128,7 +137,7 @@
       "items": {
         "title": "Type",
         "type": ["string", "null"],
-        "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT"]
+        "enum": ["AD", "AR", "XLR", "XLD", "XD", "XR", "MT", null]
       }
     },
     "association_type": {
@@ -141,7 +150,7 @@
       "items": {
         "title": "Type",
         "type": ["string", "null"],
-        "enum": ["Mendelian", "Risk", "Modifier"]
+        "enum": ["Mendelian", "Risk", "Modifier", null]
       }
     },
     "disease_description": {
@@ -158,10 +167,7 @@
       "section": "Disease",
       "title": "HPO Terms",
       "description": "Human Phenotype Ontology (HPO) terms associated with the disease",
-      "examples": [
-        "HP:0002066 Gait ataxia",
-        "HP:0001250 Seizure"
-      ],
+      "examples": ["HP:0002066 Gait ataxia", "HP:0001250 Seizure"],
       "type": ["array", "null"],
       "items": {
         "type": "string",
@@ -312,7 +318,7 @@
       "examples": ["AAGGG", "ACAGG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -327,7 +333,7 @@
       "examples": ["AAAAG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -342,7 +348,7 @@
       "examples": ["AAAAG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -357,7 +363,7 @@
       "examples": ["CAA"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -370,8 +376,7 @@
       "title": "Pathogenic Motif (Gene Orientation)",
       "description": "Pathogenic motif(s) in the gene orientation, so the reverse complement if gene is on - strand.",
       "examples": ["CCCTT", "CCTGT"],
-      "type": "array",
-  
+      "type": "array",  
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -760,7 +765,7 @@
       "examples": ["pmid:38467784"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",

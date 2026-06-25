@@ -80,7 +80,10 @@
         "section": "Curation",
         "title": "SOP Version",
         "description": "Version of the Standard Operating Procedure used for curation",
-        "examples": ["criTRia v0", "ClinGen Gene Validity Evaluation Criteria SOP11"],
+        "examples": [
+          "criTRia v0",
+          "ClinGen Gene Validity Evaluation Criteria SOP11"
+        ],
         "type": ["string", "null"]
       },
       "Manual_evidence_level": {
@@ -89,6 +92,16 @@
         "description": "Manually assigned evidence level that overrides the classification based on total score. This should only be used for unusual cases such as Disputed or Refuted classifications.",
         "examples": ["Disputed", "Refuted"],
         "type": ["string", "null"]
+      },
+      "references": {
+        "section": "Generated",
+        "title": "References",
+        "description": "All unique citation IDs extracted from Citation fields and free-text fields. Generated automatically by check-curations.py.",
+        "examples": [["pmid:39068203", "pmid:27417533"]],
+        "type": ["array", "null"],
+        "items": {
+          "type": "string"
+        }
       },
       "genetic_evidence_details": {
         "section": "Evidence",
@@ -102,86 +115,12 @@
               "title": "Evidence Type",
               "type": ["string", "null"],
               "enum": [
-                null,
                 "Probands",
                 "Allele",
                 "Computational",
                 "Segregation",
-                "Case-control data"
-              ]
-            },
-            "Score": {
-              "title": "Score",
-              "type": ["number", "null"],
-              "minimum": 0
-            },
-            "Citation": {
-              "title": "Citation",
-              "description": "Citation in the format doi:xxxx or pmid:xxxx",
-              "examples": ["pmid:39068203"],
-              "type": ["string", "null"],
-            "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
-
-            },
-            "Evidence detail": {
-              "title": "Evidence Detail",
-              "description": "Detailed description of the evidence",
-              "type": ["string", "null"],
-              "multiline": true
-            },
-            "evidence_category": {
-              "title": "Evidence Category",
-              "type": ["string", "null"]
-            },
-            "evidence_supercategory": {
-              "title": "Evidence Supercategory",
-              "type": ["string", "null"]
-            },
-            "evidence_max_score": {
-              "title": "Evidence Max Score",
-              "type": ["number", "null"],
-              "minimum": 0
-            },
-            "category_max_score": {
-              "title": "Category Max Score",
-              "type": ["number", "null"],
-              "minimum": 0
-            },
-            "publication_dates": {
-              "title": "Publication Dates",
-              "description": "Array of publication dates in ISO format or timestamp format",
-              "examples": [["2024-07-27 00:00:00", "2014-04-01"]],
-              "type": ["array", "null"],
-              "items": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      },
-      "experimental_evidence_details": {
-        "section": "Evidence",
-        "description": "Array of experimental evidence items with their scores and citations",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "Evidence type": {
-              "title": "Evidence Type",
-              "type": ["string", "null"],
-              "enum": [
-                null,
-                "Biochemical function",
-                "Protein interaction",
-                "Regulatory impact",
-                "Patient cells",
-                "Non-patient cells",
-                "Non-human model organism",
-                "Cell culture",
-                "Human treatment",
-                "Rescue in non-human model organism",
-                "Rescue in cell culture",
-                "Rescue in patient cells"
+                "Case-control data",
+                null
               ]
             },
             "Score": {
@@ -223,7 +162,80 @@
             "publication_dates": {
               "title": "Publication Dates",
               "description": "Array of publication dates in ISO format or timestamp format",
-              "examples": [["2024-07-27 00:00:00", "2014-04-01"]],
+              "examples": ["2024-07-27 00:00:00", "2014-04-01"],
+              "type": ["array", "null"],
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "experimental_evidence_details": {
+        "section": "Evidence",
+        "description": "Array of experimental evidence items with their scores and citations",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Evidence type": {
+              "title": "Evidence Type",
+              "type": ["string", "null"],
+              "enum": [
+                "Biochemical function",
+                "Protein interaction",
+                "Regulatory impact",
+                "Patient cells",
+                "Non-patient cells",
+                "Non-human model organism",
+                "Cell culture",
+                "Human treatment",
+                "Rescue in non-human model organism",
+                "Rescue in cell culture",
+                "Rescue in patient cells",
+                null
+              ]
+            },
+            "Score": {
+              "title": "Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "Citation": {
+              "title": "Citation",
+              "description": "Citation in the format doi:xxxx or pmid:xxxx",
+              "examples": ["pmid:39068203"],
+              "type": ["string", "null"],
+              "pattern": "^(?:doi|pmc|pmid|arxiv|isbn|url|mondo|omim|genereviews|malacard|orphanet|stripy|gnomad):.+$"
+            },
+            "Evidence detail": {
+              "title": "Evidence Detail",
+              "description": "Detailed description of the evidence",
+              "type": ["string", "null"],
+              "multiline": true
+            },
+            "evidence_category": {
+              "title": "Evidence Category",
+              "type": ["string", "null"]
+            },
+            "evidence_supercategory": {
+              "title": "Evidence Supercategory",
+              "type": ["string", "null"]
+            },
+            "evidence_max_score": {
+              "title": "Evidence Max Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "category_max_score": {
+              "title": "Category Max Score",
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "publication_dates": {
+              "title": "Publication Dates",
+              "description": "Array of publication dates in ISO format or timestamp format",
+              "examples": ["2024-07-27 00:00:00", "2014-04-01"],
               "type": ["array", "null"],
               "items": {
                 "type": "string"
@@ -302,7 +314,17 @@
         "description": "Classification of evidence based on total score. This is generated automatically and should not be manually edited. To override the classification, use the Manual_evidence_level field.",
         "examples": ["Definitive", "Strong", "Moderate", "Limited"],
         "type": ["string", "null"],
-        "enum": ["Definitive", "Strong", "Moderate", "Limited", "Disputed", "Refuted", "No Known Relationship", "Provisional", null]
+        "enum": [
+          "Definitive",
+          "Strong",
+          "Moderate",
+          "Limited",
+          "Disputed",
+          "Refuted",
+          "No Known Relationship",
+          "Provisional",
+          null
+        ]
       }
     },
     "required": [

@@ -1,184 +1,67 @@
 ---
 /** LOCI PAGE */
 
-import Layout from "@/layouts/Layout.astro";
-import { FaArrowDown, FaChartLine, FaGithub } from "react-icons/fa6";
-import { LiaBarcodeSolid } from "react-icons/lia";
-import { LuChartCandlestick, LuChartGantt, LuPlus } from "react-icons/lu";
-import { filter, map, uniq } from "lodash-es";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
-import Link from "@/components/Link";
+import { H1, H2, H3 } from "@/components/Heading";
 import PlotlyChart from "@/components/PlotlyChart";
 import TableOfContents from "@/components/TableOfContents";
-import { repo, repoRaw, version } from "@/layouts/meta";
+import Layout from "@/layouts/Layout.astro";
+import { repo } from "@/layouts/meta";
+import DownloadTable from "@/loci/DownloadTable";
 import LociTable from "@/loci/LociTable";
+import {
+  IconBrandGithub,
+  IconChartBar,
+  IconChartCandle,
+  IconChartLine,
+  IconDownload,
+  IconPlus,
+  IconTallymark4,
+} from "@tabler/icons-react";
 import ageOnset from "~/plots/age-onset.json";
 import pathSize from "~/plots/path-size.json";
-import loci from "~/STRchive-loci.json";
-
-/** import catalog files */
-const catalogs = Object.keys(
-  import.meta.glob(`~/catalogs/STRchive-disease-loci*.*`, {
-    query: "?url",
-    import: "default",
-    eager: true,
-  }),
-).map((path) => {
-  /** last part of path */
-  path = path.split("/").pop();
-  /** filename parts */
-  const [prefix, genome, software, ...extensions] = path.split(".");
-  /** insert version in download filename */
-  const filename = path.replace(/(STRchive-disease-loci)/, `$1-v${version}`);
-  return {
-    path,
-    filename,
-    genome,
-    software,
-    extension: ["", ...extensions].join("."),
-  };
-});
-
-/** rows, by software */
-const rows = [
-  {
-    key: "general",
-    primary: "General",
-    secondary:
-      "a general-purpose extended bed file for filtering and annotating loci",
-  },
-
-  {
-    key: "TRGT",
-    primary: "TRGT",
-    secondary: "for genotyping full allele sequences in PacBio HiFi reads",
-    link: "https://github.com/PacificBiosciences/trgt",
-  },
-  {
-    key: "atarva",
-    primary: "Atarva",
-    secondary: "⚠️ for genotyping full allele sequences in long-read data",
-    link: "https://github.com/SowpatiLab/ATaRVa",
-  },
-  {
-    key: "longTR",
-    primary: "LongTR",
-    secondary: "⚠️ for genotyping full allele sequences in long-read data",
-    link: "https://github.com/gymrek-lab/LongTR",
-  },
-  {
-    key: "straglr",
-    primary: "Straglr",
-    secondary: "⚠️ for genotyping allele sizes in long read-data",
-    link: "https://github.com/bcgsc/straglr",
-  },
-  {
-    key: "stranger",
-    primary: "Stranger",
-    secondary:
-      "⚠️ for annotating TRGT or ExpansionHunter allele sizes with pathologic implications.",
-    link: "https://github.com/Clinical-Genomics/stranger",
-  },
-];
-
-/** columns, by genome */
-const cols = uniq(map(catalogs, "genome"));
 ---
 
 <Layout title="Loci">
   <TableOfContents client:only="react" />
 
   <section>
-    <Heading client:load level={1}><LiaBarcodeSolid />Loci</Heading>
+    <H1><IconTallymark4 />Loci</H1>
 
-    <div class="row">
-      <span> Tandem repeat loci associated with Mendelian diseases. </span>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <span>Tandem repeat loci associated with Mendelian diseases.</span>
 
-      <Button to={`${repo}/tree/main/data`} design="bubble">
-        <FaGithub /><span>Full Dataset</span>
+      <Button design="bubble" to={`${repo}/tree/main/data`}>
+        <IconBrandGithub /><span>Full Dataset</span>
       </Button>
     </div>
 
-    <LociTable client:load loci={loci} />
+    <LociTable client:load />
 
-    <Button to="/loci/new" design="bubble">
-      <LuPlus />
-      <span>Suggest New</span>
+    <Button className="w-60 self-center" design="bubble" to="/loci/new">
+      <IconPlus />
+      Suggest New
     </Button>
   </section>
 
   <!-- downloads -->
   <section>
-    <Heading client:load level={2}><FaArrowDown />Downloads</Heading>
+    <H2><IconDownload />Downloads</H2>
 
-    <div class="table-scroll">
-      <table class="downloads">
-        <thead>
-          <tr>
-            <th></th>
-            {cols.map((col) => <th>{col}</th>)}
-          </tr>
-        </thead>
-
-        <tbody>
-          {
-            rows.map((row) => (
-              <tr>
-                <td>
-                  {row.link ? (
-                    <Link to={row.link}>
-                      <strong>{row.primary}</strong>
-                    </Link>
-                  ) : (
-                    <div>
-                      <strong>{row.primary}</strong>
-                    </div>
-                  )}
-
-                  <div>{row.secondary}</div>
-                </td>
-                {cols.map((col) => (
-                  <td>
-                    <div class="buttons">
-                      {filter(
-                        catalogs,
-                        (catalog) =>
-                          catalog.software == row.key && catalog.genome === col,
-                      ).map((download) => (
-                        <Button
-                          to={`${repoRaw}/refs/heads/main/data/catalogs/${download.path}`}
-                          download={download.filename}
-                          design="plain"
-                          arrow={false}
-                        >
-                          {download.extension}
-                        </Button>
-                      ))}
-                    </div>
-                  </td>
-                ))}
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
-    </div>
+    <DownloadTable client:load />
 
     <p>⚠️ Still under development, use with caution</p>
   </section>
 
   <!-- plots -->
-  <section class="full">
-    <Heading client:load level={2}><FaChartLine />Plots</Heading>
+  <section class="width-full">
+    <H2><IconChartLine />Plots</H2>
 
-    <p class="center">High-level, visual overview of loci.</p>
+    <p class="text-center text-balance">High-level, visual overview of loci.</p>
 
-    <div class="charts">
-      <div class="col">
-        <Heading client:load level={3}
-          ><LuChartGantt />Pathogenic Size Range</Heading
-        >
+    <div class="grid grid-cols-2 gap-8 max-md:grid-cols-1">
+      <div class="flex flex-col items-center gap-8">
+        <H3><IconChartBar />Pathogenic Size Range</H3>
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -186,10 +69,8 @@ const cols = uniq(map(catalogs, "genome"));
         />
       </div>
 
-      <div class="col">
-        <Heading client:load level={3}
-          ><LuChartCandlestick />Age of Onset</Heading
-        >
+      <div class="flex flex-col items-center gap-8">
+        <H3><IconChartCandle />Age of Onset</H3>
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}
@@ -199,17 +80,3 @@ const cols = uniq(map(catalogs, "genome"));
     </div>
   </section>
 </Layout>
-
-<style>
-  .downloads td:first-child {
-    width: 35%;
-    text-align: left;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-  }
-</style>

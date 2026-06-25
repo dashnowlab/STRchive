@@ -1,0 +1,36 @@
+{
+  "htmlWhitespaceSensitivity": "strict",
+
+  "plugins": ["prettier-plugin-astro", "@ianvs/prettier-plugin-sort-imports"],
+
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    },
+
+    {
+      "files": "*.!(css)",
+      "options": {
+        "importOrder": [
+          "<TYPES>^react",
+          "<TYPES>^[^~/.]",
+          "<TYPES>^~/",
+          "<TYPES>^/",
+          "<TYPES>^./",
+          "<TYPES>^../",
+          "<TYPES>",
+          "^react",
+          "^[^~/.]",
+          "^~/",
+          "^/",
+          "^./",
+          "^../"
+        ],
+        "importOrderParserPlugins": ["typescript", "jsx", "importAssertions"]
+      }
+    }
+  ]
+}

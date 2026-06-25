@@ -222,38 +222,41 @@ if stages == "new-refs":
         input:
             citations = "{base_dir}citations-tmp.json",
             backup = "{base_dir}STRchive-citations-backup.json",
+            curations = "{base_dir}criTRia-curations.json",
             check = "{base_dir}check-loci.txt",
             check2 = "{base_dir}check-loci-citations.txt"
         output:
             results = "{base_dir}STRchive-citations.json"
         shell:
             """
-            python {scripts_dir}run-manubot.py {input.citations} {output.results} --append {input.backup}
+            python {scripts_dir}run-manubot.py {input.citations} {output.results} --append {input.backup} --curations {input.curations}
             """
 if stages == "old-refs":
     rule manubot:
         input:
             in_json = in_json,
             backup = "{base_dir}STRchive-citations-backup.json",
+            curations = "{base_dir}criTRia-curations.json",
             check = "{base_dir}check-loci.txt"
         output:
             results = "{base_dir}STRchive-citations.json"
         shell:
             """
-            python {scripts_dir}run-manubot.py {input.in_json} {output.results} --append {input.backup} --inloci
+            python {scripts_dir}run-manubot.py {input.in_json} {output.results} --append {input.backup} --inloci --curations {input.curations}
             """
 
 if stages == "all" or stages == "skip-refs":
     rule manubot:
         input:
             citations = "{base_dir}citations-tmp.json",
+            curations = "{base_dir}criTRia-curations.json",
             check = "{base_dir}check-loci.txt",
             check2 = "{base_dir}check-loci-citations.txt"
         output:
             results = "{base_dir}STRchive-citations.json"
         shell:
             """
-            python {scripts_dir}run-manubot.py {input.citations} {output.results}
+            python {scripts_dir}run-manubot.py {input.citations} {output.results} --curations {input.curations}
             """
 
 rule TRGT_hg38:

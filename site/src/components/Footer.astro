@@ -3,88 +3,36 @@ import ContactLink from "@/components/ContactLink";
 import Link from "@/components/Link";
 ---
 
-<footer>
-  <div class="row">
+<footer
+  class="grid grid-cols-[1fr_2px_2fr_2px_1fr] items-center gap-4 bg-black text-white max-md:grid-cols-1 [&>div>a]:text-white [&>div>a]:hover:text-primary"
+>
+  <div class="flex flex-wrap items-center justify-center gap-4">
     <ContactLink client:only="react" />
     <Link to="/about#cite">Cite</Link>
     <Link to="/about#contribute">Contribute</Link>
   </div>
 
-  <div class="divider"></div>
+  <div class="size-full bg-current opacity-25 max-sm:hidden"></div>
 
-  <div class="terms">
+  <div class="text-center">
     <strong>Research use only.</strong>
-    The content on and linked from this website does not constitute professional
-    medical guidance.
+    The content on and linked from this website does not constitute professional medical
+    guidance.
   </div>
 
-  <div class="divider"></div>
+  <div class="size-full bg-current opacity-25 max-sm:hidden"></div>
 
-  <div class="license">
+  <div class="flex flex-wrap items-center justify-center gap-1">
     <span>Licensed under</span>
-    <Link to="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</Link>
-    <Link to="https://creativecommons.org/licenses/by/4.0/">
+    <Link to="https://creativecommons.org/licenses/by/4.0/" arrow={false}
+      >CC BY 4.0</Link
+    >
+    <Link to="https://creativecommons.org/licenses/by/4.0/" arrow={false}>
       <img
-        class="badge"
+        class="h-10"
         src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"
         alt="CC BY 4.0"
       />
     </Link>
   </div>
 </footer>
-
-<style>
-  footer {
-    display: grid;
-    grid-template-rows: min-content;
-    grid-template-columns: 1fr 2px 2fr 2px 1fr;
-    align-items: center;
-    padding: 40px max(40px, (100% - var(--content)) / 2);
-    gap: 20px 20px;
-    background: var(--black);
-    color: var(--white);
-    text-align: center;
-  }
-
-  footer a {
-    color: var(--white);
-    /* text-decoration: none; */
-  }
-
-  footer a:hover {
-    color: var(--primary);
-  }
-
-  .divider {
-    width: 100%;
-    height: 100%;
-    background: currentColor;
-    opacity: 0.25;
-  }
-
-  .links > * {
-    text-decoration: none;
-  }
-
-  .license {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .badge {
-    height: 30px;
-  }
-
-  @media (max-width: 600px) {
-    footer {
-      grid-template-columns: 1fr;
-    }
-
-    .divider {
-      display: none;
-    }
-  }
-</style>
