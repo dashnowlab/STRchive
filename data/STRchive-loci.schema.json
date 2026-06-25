@@ -318,7 +318,7 @@
       "examples": ["AAGGG", "ACAGG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -333,7 +333,7 @@
       "examples": ["AAAAG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -348,7 +348,7 @@
       "examples": ["AAAAG"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
@@ -363,7 +363,7 @@
       "examples": ["CAA"],
       "type": "array",
       "auto_generated": true,
-      "hide": "true",
+      "hide": true,
       "uniqueItems": true,
       "items": {
         "title": "",
