@@ -1,65 +1,11 @@
 import { parse } from "@/util/markdown";
 import { cloneDeep, sortBy, uniq } from "lodash-es";
 import rawCurations from "~/criTRia-curations.json";
-import curationsSchema from "~/criTRia-curations.schema.json";
 import rawCitations from "~/STRchive-citations.json";
 import rawLoci from "~/STRchive-loci.json";
-import lociSchema from "~/STRchive-loci.schema.json";
 
 /** years old before not "new" anymore */
 export const newThreshold = 2;
-
-/** general shape of datum object */
-type DatumShape = Record<string, unknown>;
-/** general shape of schema properties object */
-type PropertiesShape = Record<string, Record<string, unknown>>;
-
-/** extract type of keys from schema properties that allow in-text citations */
-type CitableKeys<Properties extends PropertiesShape> = {
-  [Key in keyof Properties]: Properties[Key] extends Record<string, unknown>
-    ? "in_text_citations" extends keyof Properties[Key]
-      ? Key
-      : never
-    : never;
-}[keyof Properties];
-
-/** given datum object, return all fields that allow in-text citations with their citations extracted */
-const extractAllCitations = <
-  Datum extends DatumShape,
-  Properties extends PropertiesShape,
-  Keys extends CitableKeys<Properties>[],
->(
-  datum: Datum,
-  keys: Keys,
-  references: string[],
-) => {
-  /** keys from datum object that allow in-text citations */
-  type Key = Extract<Keys[number], keyof Datum>;
-  /** shape of extracted object with citable fields */
-  type Extracted = Pick<Record<Key, References>, Key>;
-  /** collect extracted cited fields */
-  const extracted: Partial<Extracted> = {};
-
-  /** for each citable field */
-  for (const _key of keys) {
-    if (!(_key in datum)) continue;
-    const key = _key as Key;
-    const value = datum[key];
-    /** extract citations */
-    extracted[key] =
-      typeof value === "string" ? extractCitations(value, references) : [];
-  }
-
-  return extracted as Extracted;
-};
-
-/** get keys from schema properties that allow in-text citations */
-const getCitableKeys = <Properties extends PropertiesShape>(
-  properties: Properties,
-) =>
-  Object.entries(properties)
-    .filter(([, value]) => "in_text_citations" in value)
-    .map(([key]) => key as CitableKeys<Properties>);
 
 /** map for quick lookup of citation by id */
 const citationLookup: Record<string, Citation> = Object.fromEntries(
@@ -84,7 +30,9 @@ const mapReferences = (refs: string[], number = false) =>
   );
 
 /** split field that may contain in-text references into parts */
-const extractCitations = (text: string, list: string[]) => {
+const extractCitations = (text: string | null | undefined, list: string[]) => {
+  if (typeof text !== "string") return text;
+
   text = parse(text);
 
   /** find sub-string indices in text that match citation format */
@@ -123,7 +71,6 @@ const extractCitations = (text: string, list: string[]) => {
         text,
         references: references.map((id) => {
           const citation = citationLookup[id];
-          /** add reference to running list */
           if (!list.includes(id)) list.push(id);
           const number = list.indexOf(id) + 1;
           return { number, id, ...(citation ?? {}) };
@@ -174,12 +121,17 @@ export const loci = rawLoci.map((locus) => {
     /** find other loci that are the same gene */
     genes: rawLoci.filter(({ gene }) => gene === locus.gene),
 
-    /** extract citations from all top level fields that support it */
-    ...extractAllCitations(
-      locus,
-      getCitableKeys(lociSchema.properties),
+    /** process fields with in-text citations */
+    disease_description: extractCitations(
+      locus.disease_description,
       references,
     ),
+    prevalence_details: extractCitations(locus.prevalence_details, references),
+    age_onset: extractCitations(locus.age_onset, references),
+    details: extractCitations(locus.details, references),
+    mechanism_detail: extractCitations(locus.mechanism_detail, references),
+    detection: extractCitations(locus.detection, references),
+    year: extractCitations(locus.year, references),
 
     /** map references */
     references: mapReferences(references, true),
@@ -201,14 +153,8 @@ export const curations = rawCurations.map((curation) => {
     /** keep existing data */
     ...curation,
 
-    /** extract citations from all top level fields that support it */
-    ...extractAllCitations(
-      curation,
-      getCitableKeys(curationsSchema.items.properties),
-      references,
-    ),
-
-    /** extract citations from nested levels */
+    /** process fields with in-text citations */
+    Description: extractCitations(curation.Description, references),
     genetic_evidence_details: curation.genetic_evidence_details.map(
       (evidence) => ({
         ...evidence,
@@ -252,8 +198,6 @@ export type Citation = {
   note?: string;
 };
 export type Citations = Citation[];
-
-export type References = ReturnType<typeof extractCitations>;
 
 export type Curations = typeof curations;
 export type Curation = Curations[number];
