@@ -165912,10 +165912,10 @@
   "note": "WARNING: Manubot does not support url:https://omim.org/entry/300123. Skipping"
 },
 {
-  "id": "omim:607136,@pmid:35053321,@genereviews:NBK1438,@pmid:12805114,@genereviews:NBK1438",
+  "id": "omim:607136",
   "manubot_success": false,
-  "link": "https://omim.org/entry/607136,@pmid:35053321,@genereviews:NBK1438,@pmid:12805114,@genereviews:NBK1438",
-  "note": "WARNING: Manubot does not support url:https://omim.org/entry/607136,@pmid:35053321,@genereviews:NBK1438,@pmid:12805114,@genereviews:NBK1438. Skipping"
+  "link": "https://omim.org/entry/607136",
+  "note": "WARNING: Manubot does not support url:https://omim.org/entry/607136. Skipping"
 },
 {
   "id": "omim:187500",
@@ -165992,12 +165992,6 @@
   "id": "pmid:29939637",
   "manubot_success": false,
   "link": "https://pubmed.ncbi.nlm.nih.gov/29939637",
-  "note": "WARNING: Couldn't parse Manubot response: list index out of range"
-},
-{
-  "id": "pmid:35245110,@genereviews:NBK1438,@pmid:29100084,@pmid:10484774,@mondo:0011781",
-  "manubot_success": false,
-  "link": "https://pubmed.ncbi.nlm.nih.gov/35245110,@genereviews:NBK1438,@pmid:29100084,@pmid:10484774,@mondo:0011781",
   "note": "WARNING: Couldn't parse Manubot response: list index out of range"
 },
 {
