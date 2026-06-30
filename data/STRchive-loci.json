@@ -4280,7 +4280,7 @@
   "age_onset_max": 0.0,
   "typ_age_onset_min": null,
   "typ_age_onset_max": null,
-  "details": "Benign range (4-17 repeats) established from gnomAD and primary literature; pathogenic ranges (20-27) reflect two clinical cases to date [@gnomad:RUNX2; @pmid:26220009]. Intermediate alleles (i.e, 18 repeats; 19 not reported) appear to not be associated with disease [@pmid:20560987; @pmid:26220009]. The gene RUNX2 was previously called CBFA1, as reflected in some of the literature [@pmid:9182765]. Pathogenic range alleles up to 23 repeats have been detected in asymptomatic individuals, indicating potential incomplete penetrance [@pmid:40585427].",
+  "details": "Benign range (4-17 repeats) established from gnomAD and primary literature; pathogenic ranges (20-27) reflect two clinical cases to date [@gnomad:RUNX2; @pmid:26220009]. Intermediate alleles (i.e, 18 repeats; 19 not reported) appear to not be associated with disease [@pmid:20560987; @pmid:26220009]. The gene RUNX2 was previously called CBFA1, as reflected in some of the literature [@pmid:9182765]. Pathogenic range alleles up to 23 repeats have been detected in asymptomatic individuals, indicating potential incomplete penetrance [@pmid:40585427]. A polyglutamine expansion has also been noted in this locus. A 4 CAG motif expansion in the polyQ region has been found in one proband with CCD, while a 7 CAG expansion has been found in unaffected individuals. [@pmid:25852448].",
   "detection": null,
   "mechanism": "LoF",
   "mechanism_detail": "Polyalanine expansion leading to haploinsufficiency [@pmid:26220009].",
