@@ -130,6 +130,7 @@ export const loci = rawLoci.map((locus) => {
     age_onset: extractCitations(locus.age_onset, references),
     details: extractCitations(locus.details, references),
     mechanism_detail: extractCitations(locus.mechanism_detail, references),
+    detection: extractCitations(locus.detection, references),
     year: extractCitations(locus.year, references),
 
     /** map references */
