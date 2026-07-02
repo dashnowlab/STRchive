@@ -1,8 +1,9 @@
 
 PMID- 41906116
 OWN - NLM
-STAT- In-Process
-LR  - 20260513
+STAT- MEDLINE
+DCOM- 20260628
+LR  - 20260630
 IS  - 1755-8794 (Electronic)
 IS  - 1755-8794 (Linking)
 VI  - 19
@@ -43,13 +44,25 @@ AD  - Tongji Hospital of Tongji Medical College of Huazhong University of Scienc
       Technology, Wuhan, China. lyan3022@163.com.
 LA  - eng
 GR  - 2022CFB203/Natural Science Foundation of Hubei Province Project/
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20260329
 PL  - England
 TA  - BMC Med Genomics
 JT  - BMC medical genomics
 JID - 101319628
+RN  - 0 (Dystrophin)
+RN  - 0 (DMD protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Muscular Dystrophy, Duchenne/genetics
+MH  - *Dystrophin/genetics
+MH  - Pedigree
+MH  - Male
+MH  - Exons
+MH  - Female
+MH  - *Sequence Analysis, DNA
+MH  - Mutation
 PMC - PMC13159284
 OTO - NOTNLM
 OT  - DMD gene
@@ -67,13 +80,13 @@ COIS- Declarations. Ethics approval and consent to participate: This study was a
       participants, including case description and medical data. Competing interests: 
       The authors declare no competing interests.
 EDAT- 2026/03/30 00:29
-MHDA- 2026/03/30 00:29
+MHDA- 2026/06/28 13:04
 PMCR- 2026/03/29
 CRDT- 2026/03/29 23:14
 PHST- 2025/12/24 00:00 [received]
 PHST- 2026/03/25 00:00 [accepted]
+PHST- 2026/06/28 13:04 [medline]
 PHST- 2026/03/30 00:29 [pubmed]
-PHST- 2026/03/30 00:29 [medline]
 PHST- 2026/03/29 23:14 [entrez]
 PHST- 2026/03/29 00:00 [pmc-release]
 AID - 10.1186/s12920-026-02352-3 [pii]
@@ -315,7 +328,7 @@ PMID- 41173008
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251113
-LR  - 20260131
+LR  - 20260616
 IS  - 2213-6711 (Electronic)
 IS  - 2213-6711 (Linking)
 VI  - 20
@@ -409,6 +422,7 @@ AD  - Cardiovascular and Muscular Diseases Center, Sanford Burnham Prebys Medica
 LA  - eng
 GR  - R01 AR056712/AR/NIAMS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20251030
 PL  - United States
 TA  - Stem Cell Reports
