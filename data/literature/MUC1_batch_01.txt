@@ -1,9 +1,8 @@
 
 PMID- 42175825
 OWN - NLM
-STAT- MEDLINE
-DCOM- 20260523
-LR  - 20260526
+STAT- In-Process
+LR  - 20260623
 IS  - 1095-8355 (Electronic)
 IS  - 1065-6995 (Linking)
 VI  - 50
@@ -126,42 +125,51 @@ SO  - Cell Biol Int. 2026 Jun;50(6):e70167. doi: 10.1002/cbin.70167.
 PMID- 41961547
 OWN - NLM
 STAT- Publisher
-LR  - 20260421
+LR  - 20260610
 IS  - 1533-3450 (Electronic)
 IS  - 1046-6673 (Linking)
 DP  - 2026 Apr 10
-TI  - Single-Molecule Real-Time Sequencing for MUC1 VNTR Variation to Improve Autosomal 
-      Dominant Tubulointerstitial Kidney Disease Diagnosis.
+TI  - Single-Molecule Real-Time Sequencing for MUC1 Variable Number of Tandem Repeat 
+      Variation to Improve Autosomal Dominant Tubulointerstitial Kidney Disease 
+      Diagnosis.
 LID - 10.1681/ASN.0000001103 [doi]
-AB  - BACKGROUND: ADTKD-MUC1 is caused by frameshift mutations in the MUC1 gene, 
-      producing a frameshifted neoprotein (MUC1fs) toxic to kidney cells. The gene's 
-      variable number of tandem repeats (VNTR), with  approximately 80% guanine/cytosine content, has 
-      made it largely inaccessible to standard short-read sequencing, leaving the 
-      reference sequence and natural variation poorly defined and complicating mutation 
-      detection. METHODS: Using Single Molecule, Real-Time (SMRT) sequencing, we 
-      characterized MUC1 VNTR in 300 individuals, including 279 from 143 families 
-      suspected of having ADTKD-MUC1, assessing VNTR length, repeat structure, and 
-      frameshift mutations. Results were compared with the CLIA-approved 
-      probe-extension assay, detecting the prevalent 59dupC mutation, and with MUC1fs 
-      immunohistochemistry, which detects the pathogenic protein independent of the 
-      underlying genomic change. RESULTS: We identified 215 unique VNTR alleles 
-      composed of 80 distinct repeat units, 46 (58%) of which were novel, and nine 
-      distinct frameshift mutations present on 52 mutated alleles. Overall, MUC1 
-      frameshift mutations were identified in 71 of 143 families (50%) with suspected 
-      ADTKD-MUC1, comprising 135 affected individuals (48%). The SMRT assay 
-      outperformed the probe-extension assay by identifying frameshift mutations in two 
-      families with previously inconclusive results and in eight additional families 
-      whose mutations were undetectable by the probe-extension design. When successful, 
-      SMRT assay showed 100% concordance with probe-extension assay at the family level 
-      and 98% at the individual level, with discordance attributable to allelic dropout 
-      inherent to long-read sequencing. Analysis of the mutational spectrum confirmed 
-      59dupC as the most prevalent mutation, affecting  approximately 90% of families, while the 
-      other eight mutation types occurred at most twice. CONCLUSIONS: The SMRT assay 
-      outperformed the CLIA-approved probe-extension assay by detecting essentially all 
-      VNTR-associated frameshift mutations. The probe-extension assay identified  approximately 90% 
-      of affected families. MUC1fs immunohistochemistry added diagnostic value in 
-      genetically unresolved cases by detecting the pathogenic protein independent of 
-      the underlying mutation.
+AB  - KEY POINTS: Single-molecule real-time sequencing with the PacMUC1 script resolved 
+      exact MUC1 variable tandem repeat structure and full allelic variation. In 300 
+      individuals, the protocol identified 215 distinct MUC1 tandem repeat alleles with 
+      80 repeat units and nine frameshift mutation types. Probe extension assay 
+      identified 90% of families with frameshift mutations, detection of frameshifted 
+      mucin-1 aided genetically unresolved cases. BACKGROUND: ADTKD- MUC1 is caused by 
+      frameshift mutations in the MUC1 gene, producing a frameshifted neoprotein 
+      (MUC1fs) toxic to kidney cells. The gene's variable number of tandem repeats 
+      (VNTR), with approximately 80% guanine/cytosine content, has made it largely 
+      inaccessible to standard short-read sequencing, leaving the reference sequence 
+      and natural variation poorly defined and complicating mutation detection. 
+      METHODS: Using single-molecule real-time (SMRT) sequencing, we characterized MUC1 
+      VNTR in 300 individuals, including 279 from 143 families suspected of having 
+      ADTKD- MUC1 , assessing VNTR length, repeat structure, and frameshift mutations. 
+      Results were compared with the Clinical Laboratory Improvement 
+      Amendments-approved probe-extension assay, detecting the prevalent 59dupC 
+      mutation, and with MUC1fs immunohistochemistry, which detects the pathogenic 
+      protein independent of the underlying genomic change. RESULTS: We identified 215 
+      unique VNTR alleles composed of 80 distinct repeat units, 46 (58%) of which were 
+      novel, and nine distinct frameshift mutations present on 52 mutated alleles. 
+      Overall, MUC1 frameshift mutations were identified in 71 of 143 families (50%) 
+      with suspected ADTKD- MUC1 , comprising 135 affected individuals (48%). The SMRT 
+      assay outperformed the probe-extension assay by identifying frameshift mutations 
+      in two families with previously inconclusive results and in eight additional 
+      families whose mutations were undetectable by the probe-extension design. When 
+      successful, SMRT assay showed 100% concordance with probe-extension assay at the 
+      family level and 98% at the individual level, with discordance attributable to 
+      allelic dropout inherent to both long-range PCR amplification and long-read 
+      sequencing. Analysis of the mutational spectrum confirmed 59dupC as the most 
+      prevalent mutation, affecting approximately 90% of families, while the other 
+      eight mutation types occurred at most twice. CONCLUSIONS: The SMRT assay 
+      outperformed the Clinical Laboratory Improvement Amendments-approved 
+      probe-extension assay by detecting essentially all VNTR-associated frameshift 
+      mutations. The probe-extension assay identified approximately 90% of affected 
+      families. MUC1fs immunohistochemistry added diagnostic value in genetically 
+      unresolved cases by detecting the pathogenic protein independent of the 
+      underlying mutation.
 CI  - Copyright (c) 2026 by the American Society of Nephrology.
 FAU - Vrbacka, Alena
 AU  - Vrbacka A
@@ -179,7 +187,7 @@ AUID- ORCID: 0000-0003-3771-0949
 AD  - Research Unit of Rare Diseases, Department of Paediatrics and Inherited Metabolic 
       Disorders, First Faculty of Medicine, Charles University, Prague, Czech Republic.
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Janousek, Vaclav
 AU  - Janousek V
 AUID- ORCID: 0000-0002-6894-6826
@@ -190,16 +198,17 @@ AU  - Radina M
 AUID- ORCID: 0009-0001-0027-8665
 AD  - Research Unit of Rare Diseases, Department of Paediatrics and Inherited Metabolic 
       Disorders, First Faculty of Medicine, Charles University, Prague, Czech Republic.
-FAU - Vyletal, Petr
-AU  - Vyletal P
+FAU - Vylet'al, Petr
+AU  - Vylet'al P
 AUID- ORCID: 0000-0002-9357-1237
 AD  - Research Unit of Rare Diseases, Department of Paediatrics and Inherited Metabolic 
       Disorders, First Faculty of Medicine, Charles University, Prague, Czech Republic.
 FAU - Bitar, Ibrahim
 AU  - Bitar I
 AD  - Department of Microbiology, Faculty of Medicine and University Hospital Pilsen, 
-      Charles University, Pilsen, Czechia.
-AD  - Biomedical Center, Faculty of Medicine, Charles University, Pilsen, Czechia.
+      Charles University, Pilsen, Czech Republic.
+AD  - Biomedical Center, Faculty of Medicine, Charles University, Pilsen, Czech 
+      Republic.
 FAU - Stranecky, Viktor
 AU  - Stranecky V
 AUID- ORCID: 0000-0002-2599-6479
@@ -250,19 +259,19 @@ FAU - Bleyer, Heidi
 AU  - Bleyer H
 AUID- ORCID: 0009-0000-4022-6416
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Taylor, Abby
 AU  - Taylor A
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Martin, Lauren
 AU  - Martin L
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Sanchez, Antonio
 AU  - Sanchez A
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Rysava, Romana
 AU  - Rysava R
 AUID- ORCID: 0000-0002-4162-128
@@ -276,21 +285,21 @@ FAU - Rajnochova-Bloudickova, Silvie
 AU  - Rajnochova-Bloudickova S
 AUID- ORCID: 0000-0003-0270-571
 AD  - Department of Nephrology, Transplant Centre, Institute for Clinical and 
-      Experimental Medicine, Videnska 1958, Prague 14021, Czech Republic.
+      Experimental Medicine, Prague, Czech Republic.
 FAU - Viklicky, Ondrej
 AU  - Viklicky O
 AUID- ORCID: 0000-0003-1049-2195
 AD  - Department of Nephrology, Transplant Centre, Institute for Clinical and 
-      Experimental Medicine, Videnska 1958, Prague 14021, Czech Republic.
+      Experimental Medicine, Prague, Czech Republic.
 FAU - Papagregoriou, Gregory
 AU  - Papagregoriou G
 AUID- ORCID: 0000-0002-2440-9789
-AD  - Molecular Medicine Research Center, biobank.cy Center of Excellence in Biobanking 
+AD  - Molecular Medicine Research Center, Biobank.cy Center of Excellence in Biobanking 
       and Biomedical Research, University of Cyprus, Nicosia, Cyprus.
 FAU - Deltas, Constantinos
 AU  - Deltas C
 AUID- ORCID: 0000-0001-5549-9169
-AD  - Molecular Medicine Research Center, biobank.cy Center of Excellence in Biobanking 
+AD  - Molecular Medicine Research Center, Biobank.cy Center of Excellence in Biobanking 
       and Biomedical Research, University of Cyprus, Nicosia, Cyprus.
 AD  - Medical School, University of Cyprus, Nicosia, Cyprus.
 FAU - Stavrou, Christoforos
@@ -337,40 +346,47 @@ AD  - Department of Nephrology and Renal Transplant, Hospital de Santa Maria, CH
       EPE, Lisbon, Portugal.
 FAU - Blumenstiel, Brendan
 AU  - Blumenstiel B
-AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts, USA.
+AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts.
 FAU - Toledo, Diana
 AU  - Toledo D
 AUID- ORCID: 0000-0002-7501-8286
-AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts, USA.
+AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts.
 FAU - DiStefano, Marina
 AU  - DiStefano M
-AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts, USA.
+AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts.
 FAU - DeFelice, Matthew
 AU  - DeFelice M
 AUID- ORCID: 0009-0007-2481-8842
-AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts, USA.
+AD  - Broad Clinical Labs, The Broad Institute, Cambridge, Massachusetts.
 FAU - Zivna, Martina
 AU  - Zivna M
 AUID- ORCID: 0000-0003-1968-824
 AD  - Research Unit of Rare Diseases, Department of Paediatrics and Inherited Metabolic 
       Disorders, First Faculty of Medicine, Charles University, Prague, Czech Republic.
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Bleyer, Anthony J Sr
 AU  - Bleyer AJ Sr
 AUID- ORCID: 0000-0002-2804-5273
 AD  - Research Unit of Rare Diseases, Department of Paediatrics and Inherited Metabolic 
       Disorders, First Faculty of Medicine, Charles University, Prague, Czech Republic.
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 FAU - Kmoch, Stanislav
 AU  - Kmoch S
 AUID- ORCID: 0000-0002-6239-707
 AD  - Research Unit of Rare Diseases, Department of Paediatrics and Inherited Metabolic 
       Disorders, First Faculty of Medicine, Charles University, Prague, Czech Republic.
 AD  - Wake Forest University School of Medicine, Section on Nephrology, Winston-Salem, 
-      North Carolina, USA.
+      North Carolina.
 LA  - eng
+GR  - LUAUS24087/Ministry of Education, Youth and Sports of the Czech Republic/
+GR  - MULTIOMICS_CZ (Programme Johannes Amos Comenius, Ministry of Education, Youth and 
+      Sports of the Czech Republic,//ID Project CZ.02.01.01/00/23_020/0008540) - 
+      Co-funded by the European Union/Ministry of Education, Youth and Sports of the 
+      Czech Republic/
+GR  - The National Center for Medical Genomics (LM2023067)/Ministry of Education, Youth 
+      and Sports of the Czech Republic/
 PT  - Journal Article
 DEP - 20260410
 PL  - United States
@@ -380,13 +396,22 @@ JID - 9013836
 SB  - IM
 UOF - bioRxiv. 2025 Sep 16:2025.09.06.673538. doi: 10.1101/2025.09.06.673538. PMID: 
       41000883
+OTO - NOTNLM
+OT  - CKD
+OT  - endoplasmic reticulum
+OT  - familial nephropathy
+OT  - genetic kidney disease
+OT  - kidney disease
+OT  - molecular genetics
+OT  - polymorphisms
+OT  - tubulointerstitial disease
 EDAT- 2026/04/10 18:33
 MHDA- 2026/04/10 18:33
 CRDT- 2026/04/10 12:03
 PHST- 2025/08/27 00:00 [received]
 PHST- 2026/04/06 00:00 [accepted]
-PHST- 2026/04/10 18:33 [medline]
 PHST- 2026/04/10 18:33 [pubmed]
+PHST- 2026/04/10 18:33 [medline]
 PHST- 2026/04/10 12:03 [entrez]
 AID - 00001751-990000000-00988 [pii]
 AID - 10.1681/ASN.0000001103 [doi]
@@ -396,9 +421,10 @@ SO  - J Am Soc Nephrol. 2026 Apr 10. doi: 10.1681/ASN.0000001103.
 PMID- 41832605
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260422
-LR  - 20260531
+DCOM- 20260620
+LR  - 20260620
 IS  - 1542-0086 (Electronic)
+IS  - 0006-3495 (Print)
 IS  - 0006-3495 (Linking)
 VI  - 125
 IP  - 8
@@ -479,18 +505,23 @@ JID - 0370626
 RN  - 0 (Polysaccharides)
 RN  - 0 (Mucin-1)
 RN  - 0 (Ligands)
+RN  - GZP2782OP0 (N-Acetylneuraminic Acid)
 SB  - IM
-MH  - *Endocytosis
-MH  - *Polysaccharides/metabolism/chemistry
+MH  - *Endocytosis/drug effects
+MH  - *Polysaccharides/chemistry/metabolism
 MH  - *Static Electricity
 MH  - Glycosylation
-MH  - Humans
+MH  - Animals
 MH  - Mucin-1/metabolism/chemistry
 MH  - Ligands
-MH  - Animals
+MH  - Humans
+MH  - N-Acetylneuraminic Acid/chemistry/metabolism
+PMC - PMC13254909
+MID - NIHMS2167681
 COIS- Declaration of interests The authors declare no competing interests.
 EDAT- 2026/03/15 06:48
 MHDA- 2026/04/23 00:31
+PMCR- 2026/06/11
 CRDT- 2026/03/15 02:36
 PHST- 2025/11/06 00:00 [received]
 PHST- 2026/02/07 00:00 [revised]
@@ -498,6 +529,7 @@ PHST- 2026/03/10 00:00 [accepted]
 PHST- 2026/04/23 00:31 [medline]
 PHST- 2026/03/15 06:48 [pubmed]
 PHST- 2026/03/15 02:36 [entrez]
+PHST- 2026/06/11 00:00 [pmc-release]
 AID - S0006-3495(26)00198-0 [pii]
 AID - 10.1016/j.bpj.2026.03.026 [doi]
 PST - ppublish
@@ -506,8 +538,9 @@ SO  - Biophys J. 2026 Apr 21;125(8):1941-1957. doi: 10.1016/j.bpj.2026.03.026. E
 
 PMID- 41345522
 OWN - NLM
-STAT- In-Process
-LR  - 20260110
+STAT- MEDLINE
+DCOM- 20260626
+LR  - 20260626
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 16
@@ -534,9 +567,7 @@ AB  - Variable number tandem repeats (VNTRs) remain among the most challenging r
       VNTR. We further demonstrate its applicability to whole-genome nanopore datasets. 
       Using our pipeline, it is now possible to completely analyze and characterize 
       VNTRs as well as detect disease-causing variants in a cost and time-efficient 
-      manner using amplicon-based nanopore sequencing. SUPPLEMENTARY INFORMATION: The 
-      online version contains supplementary material available at 
-      10.1038/s41598-025-30441-3.
+      manner using amplicon-based nanopore sequencing.
 FAU - Madritsch, Silvia
 AU  - Madritsch S
 AUID- ORCID: 0000-0002-4995-7351
@@ -587,6 +618,13 @@ TA  - Sci Rep
 JT  - Scientific reports
 JID - 101563288
 SB  - IM
+MH  - Humans
+MH  - *Minisatellite Repeats/genetics
+MH  - *Nanopore Sequencing/methods
+MH  - Computational Biology/methods
+MH  - Genome, Human
+MH  - Sequence Analysis, DNA/methods
+MH  - Alleles
 PMC - PMC12780063
 OTO - NOTNLM
 OT  - ACAN
@@ -601,13 +639,13 @@ COIS- Declarations. Competing interests: The authors declare no competing intere
       participate: Informed consent was obtained from all the patients included in this 
       study.
 EDAT- 2025/12/05 01:02
-MHDA- 2025/12/05 01:02
+MHDA- 2026/06/27 00:57
 PMCR- 2025/12/04
 CRDT- 2025/12/04 23:41
 PHST- 2025/07/08 00:00 [received]
 PHST- 2025/11/25 00:00 [accepted]
+PHST- 2026/06/27 00:57 [medline]
 PHST- 2025/12/05 01:02 [pubmed]
-PHST- 2025/12/05 01:02 [medline]
 PHST- 2025/12/04 23:41 [entrez]
 PHST- 2025/12/04 00:00 [pmc-release]
 AID - 10.1038/s41598-025-30441-3 [pii]
@@ -620,7 +658,7 @@ PMID- 41000883
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260421
-LR  - 20260421
+LR  - 20260602
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Sep 16
@@ -1333,7 +1371,7 @@ PMID- 39576755
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241210
-LR  - 20251211
+LR  - 20260623
 IS  - 1520-6882 (Electronic)
 IS  - 0003-2700 (Print)
 IS  - 0003-2700 (Linking)
@@ -1376,6 +1414,7 @@ AD  - Department of Chemistry, University of Texas, Austin, Texas 78712, United 
 LA  - eng
 GR  - R35 GM139658/GM/NIGMS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20241122
 PL  - United States
 TA  - Anal Chem
@@ -4830,7 +4869,7 @@ LA  - eng
 PT  - Case Reports
 PT  - Journal Article
 DEP - 20160304
-PL  - Italy
+PL  - England
 TA  - J Nephrol
 JT  - Journal of nephrology
 JID - 9012268
@@ -5946,7 +5985,6 @@ STAT- MEDLINE
 DCOM- 20140415
 LR  - 20250529
 IS  - 1432-0851 (Electronic)
-IS  - 0340-7004 (Print)
 IS  - 0340-7004 (Linking)
 VI  - 63
 IP  - 2
@@ -6021,18 +6059,14 @@ MH  - Neoplasms/immunology
 MH  - Peptide Fragments/*immunology
 PMC - PMC6383519
 MID - NIHMS1003634
-COIS- The authors declare that they have no conflicts of interest.
 EDAT- 2013/11/16 06:00
 MHDA- 2014/04/16 06:00
-PMCR- 2013/11/15
 CRDT- 2013/11/16 06:00
 PHST- 2013/07/19 00:00 [received]
 PHST- 2013/10/19 00:00 [accepted]
 PHST- 2013/11/16 06:00 [entrez]
 PHST- 2013/11/16 06:00 [pubmed]
 PHST- 2014/04/16 06:00 [medline]
-PHST- 2013/11/15 00:00 [pmc-release]
-AID - 1494 [pii]
 AID - 10.1007/s00262-013-1494-7 [doi]
 PST - ppublish
 SO  - Cancer Immunol Immunother. 2014 Feb;63(2):161-74. doi: 10.1007/s00262-013-1494-7. 

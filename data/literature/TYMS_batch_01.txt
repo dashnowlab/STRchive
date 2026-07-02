@@ -2,333 +2,42 @@
 PMID- 42083296
 OWN - NLM
 STAT- Publisher
-LR  - 20260505
+LR  - 20260615
 IS  - 2666-2477 (Electronic)
 IS  - 2666-2477 (Linking)
+VI  - 7
+IP  - 3
 DP  - 2026 May 4
-TI  - Genome Sequencing for the Diagnosis of Rare Disorders: The Brazilian Rare Genomes 
+TI  - Genome sequencing for the diagnosis of rare disorders: The Brazilian Rare Genomes 
       Project.
 PG  - 100624
 LID - S2666-2477(26)00064-3 [pii]
 LID - 10.1016/j.xhgg.2026.100624 [doi]
-AB  - Genome Sequencing (GS) has emerged as a transformative tool in the diagnosis of 
+LID - 100624
+AB  - Genome sequencing (GS) has emerged as a transformative tool in the diagnosis of 
       rare diseases with complex phenotypes. This technology uncovers structural, 
       intronic, non-coding, and mitochondrial variants that traditional methods might 
-      miss, thus facilitating the understanding of the underlying genomic basis of 
-      human disorders. We enrolled 10305 patients with suspected rare diseases or 
+      miss, thereby facilitating the understanding of the underlying genomic basis of 
+      human disorders. We enrolled 10,305 patients with suspected rare diseases or 
       hereditary cancer risk syndromes from 21 centers throughout Brazil. Their genomes 
       were sequenced with short, paired-end reads, and diagnostic reports were provided 
-      for 9448 of these patients. The overall diagnostic yield was 35.6%, and 4.6% of 
-      all positive reports had GS-exclusive findings (e.g. short copy number variants 
-      overlapping fewer than three exons, deep intronic variants, short tandem repeats 
-      expansions, mitochondrial structural variants - usually not detected by other 
+      for 9,448 of these patients. The overall diagnostic yield was 35.6%, and 4.6% of 
+      all positive reports had GS-exclusive findings (e.g., short copy-number variants 
+      overlapping fewer than three exons, deep intronic variants, short tandem repeat 
+      expansions, and mitochondrial structural variants-usually not detected by other 
       diagnostic tests such as exome sequencing). Preliminary analysis of transcriptome 
-      sequencing (TS) or long-read GS combined with the GS interpretation provided a 
-      small but welcome improvement in diagnostic yield (0.1% and 1.0% of positive 
-      reports, respectively). Almost 3200 variant/phenotype interpretations were 
-      submitted to ClinVar. GS is proving to be an invaluable resource for shortening 
-      the diagnostic odyssey of patients with rare diseases, providing crucial genomic 
-      diagnostics, and enriching genetic databases with variant interpretations from 
+      sequencing (TS) or long-read GS combined with GS interpretation provided a small 
+      but welcome improvement in diagnostic yield (0.1% and 1.0% of positive reports, 
+      respectively). Almost 3,200 variant/phenotype interpretations were submitted to 
+      ClinVar. GS is proving to be an invaluable resource for shortening the diagnostic 
+      odyssey of patients with rare diseases, providing crucial genomic diagnostics, 
+      and enriching genetic databases with variant interpretations from 
       underrepresented populations. Therefore, GS has the potential to significantly 
       enhance the precision of healthcare in genetically diverse populations.
 CI  - Copyright (c) 2026 The Author(s). Published by Elsevier Inc. All rights reserved.
+CN  - Brazilian Rare Genomes Project Consortium. Electronic address: 
+      antonio.campos@einstein.br
 CN  - Brazilian Rare Genomes Project Consortium
-FAU - Campos Coelho, Antonio Victor
-AU  - Campos Coelho AV
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil. Electronic address: antonio.campos@einstein.br.
-FAU - Sales de Albuquerque, Rafael
-AU  - Sales de Albuquerque R
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Gomes, Catarina Dos Santos
-AU  - Gomes CDS
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Bandeira do Nascimento Junior, Jose
-AU  - Bandeira do Nascimento Junior J
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Santos de Oliveira, Gustavo
-AU  - Santos de Oliveira G
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Silva Moura, Livia Maria
-AU  - Silva Moura LM
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Mofatto, Luciana Souto
-AU  - Mofatto LS
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Muniz Guedes, Rafael Lucas
-AU  - Muniz Guedes RL
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Sequeira Barreiro, Rodrigo Araujo
-AU  - Sequeira Barreiro RA
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Caraciolo, Marcel Pinheiro
-AU  - Caraciolo MP
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Paula de Andrade Oliveira, Ana
-AU  - Paula de Andrade Oliveira A
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Barbosa Teixeira, Anne Caroline
-AU  - Barbosa Teixeira AC
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Cordeiro de Azevedo, Bruna Mascaro
-AU  - Cordeiro de Azevedo BM
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Carlos, Carolina Dias
-AU  - Carlos CD
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Santos de Santana, Lucas
-AU  - Santos de Santana L
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Cadena da Matta, Marina
-AU  - Cadena da Matta M
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Lima, Matheus Martinelli
-AU  - Lima MM
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Zurro, Nuria Bengala
-AU  - Zurro NB
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Yamada, Renata Yoshiko
-AU  - Yamada RY
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Cintra, Vivian Pedigone
-AU  - Cintra VP
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Campilongo, Gabriela Pereira
-AU  - Campilongo GP
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Cherulli Colichio, Gabriela Borges
-AU  - Cherulli Colichio GB
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Ribeiro da Silva, Renata Martins
-AU  - Ribeiro da Silva RM
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - D'Angioli Costa Quaio, Caio Robledo
-AU  - D'Angioli Costa Quaio CR
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Moreno, Carolina Araujo
-AU  - Moreno CA
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Perrone, Eduardo
-AU  - Perrone E
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil; Universidade Federal de Sao Paulo, Departamento de Morfologia 
-      e Genetica, Rua Botucatu 740, Sao Paulo 04023-000, Brazil.
-FAU - Araujo Espolaor, Jessica Grasiela
-AU  - Araujo Espolaor JG
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Marques Prota, Joana Rosa
-AU  - Marques Prota JR
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Magliocco Ceroni, Jose Ricardo
-AU  - Magliocco Ceroni JR
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Chen, Kelin
-AU  - Chen K
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Virmond, Luiza do Amaral
-AU  - Virmond LDA
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - de Franca Basto Silva, Marina
-AU  - de Franca Basto Silva M
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Migliavacca, Michele Patricia
-AU  - Migliavacca MP
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Minillo, Renata Moldenhauer
-AU  - Minillo RM
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Tonholo Silva, Thiago Yoshinaga
-AU  - Tonholo Silva TY
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - de Oliveira Pelegrino, Karla
-AU  - de Oliveira Pelegrino K
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Garcia Cunha, Ana Luiza
-AU  - Garcia Cunha AL
-AD  - Hospital Infantil Joao Paulo II - FHEMIG, Alameda Ezequiel Dias 345, Belo 
-      Horizonte 30130-110, Brazil.
-FAU - de Souza Lima, Joziele
-AU  - de Souza Lima J
-AD  - Hospital Infantil Joao Paulo II - FHEMIG, Alameda Ezequiel Dias 345, Belo 
-      Horizonte 30130-110, Brazil.
-FAU - Grumach, Anete Sevciovic
-AU  - Grumach AS
-AD  - Centro Universitario Faculdade de Medicina do ABC, Avenida Lauro Gomes 2000, 
-      Santo Andre 09060-870, Brazil.
-FAU - Barbosa, Caio Parente
-AU  - Barbosa CP
-AD  - Centro Universitario Faculdade de Medicina do ABC, Avenida Lauro Gomes 2000, 
-      Santo Andre 09060-870, Brazil.
-FAU - Acosta, Angelina Xavier
-AU  - Acosta AX
-AD  - Hospital Prof. Edgar Santos (Hupes-UFBA), Avenida Augusto Viana Setor Genetica 
-      Medica s/n, Salvador 40110-060, Brazil.
-FAU - Correa, Paula Brito
-AU  - Correa PB
-AD  - Hospital Prof. Edgar Santos (Hupes-UFBA), Avenida Augusto Viana Setor Genetica 
-      Medica s/n, Salvador 40110-060, Brazil.
-FAU - Cavalcanti, Denise Pontes
-AU  - Cavalcanti DP
-AD  - Departamento de Genetica Medica, FCM, Universidade Estadual de Campinas 
-      (UNICAMP), Rua Tessalia Vieira de Camargo 126, Campinas 13083-887, Brazil.
-FAU - Steiner, Carlos Eduardo
-AU  - Steiner CE
-AD  - Departamento de Genetica Medica, FCM, Universidade Estadual de Campinas 
-      (UNICAMP), Rua Tessalia Vieira de Camargo 126, Campinas 13083-887, Brazil.
-FAU - Ribeiro, Erlane Marques
-AU  - Ribeiro EM
-AD  - Hospital Infantil Albert Sabin (HIAS), Rua Tertuliano Sales 544, Fortaleza 
-      60410-794, Brazil.
-FAU - William da Silva Meireles, Wallace
-AU  - William da Silva Meireles W
-AD  - Hospital Infantil Albert Sabin (HIAS), Rua Tertuliano Sales 544, Fortaleza 
-      60410-794, Brazil.
-FAU - Araujo Felix Adjuto, Giselle Maria
-AU  - Araujo Felix Adjuto GM
-AD  - Hospital de Apoio de Brasilia (HAB DF), Setor Noroeste AENW Lote A 3, Brasilia 
-      70684-831, Brazil.
-FAU - Doederlein Schwartz, Ida Vanessa
-AU  - Doederlein Schwartz IV
-AD  - Hospital de Clinicas de Porto Alegre (HCPA), Rua Ramiro Barcelos 2350, Porto 
-      Alegre 90035-903, Brazil.
-FAU - Felix, Temis Maria
-AU  - Felix TM
-AD  - Hospital de Clinicas de Porto Alegre (HCPA), Rua Ramiro Barcelos 2350, Porto 
-      Alegre 90035-903, Brazil.
-FAU - Douglas Paes Barreto, Irma Cecilia
-AU  - Douglas Paes Barreto IC
-AD  - Centro Universitario do Estado do Para (CESUPA), Avenida Governador Jose Malcher 
-      1242, Belem 66060-230, Brazil.
-FAU - Souto El Husny, Antonette
-AU  - Souto El Husny A
-AD  - Centro Universitario do Estado do Para (CESUPA), Avenida Governador Jose Malcher 
-      1242, Belem 66060-230, Brazil.
-FAU - Melo de Cerqueira Maia, Jussara
-AU  - Melo de Cerqueira Maia J
-AD  - Hospital Universitario Onofre Lopes, Universidade Federal do Rio Grande do Norte, 
-      Departamento de Pediatria (HUOL/UFRN), Avenida Nilo Pecanha 620, Natal 59012-300, 
-      Brazil.
-FAU - Dantas, Vera Maria
-AU  - Dantas VM
-AD  - Hospital Universitario Onofre Lopes, Universidade Federal do Rio Grande do Norte, 
-      Departamento de Pediatria (HUOL/UFRN), Avenida Nilo Pecanha 620, Natal 59012-300, 
-      Brazil.
-FAU - Helena de Oliveira Cordeiro, Lucia
-AU  - Helena de Oliveira Cordeiro L
-AD  - Departamento de Medicina Clinica, Universidade Federal de Pernambuco (UFPE), 
-      Avenida Professor Moraes Rego 1235, Recife 50670-901, Brazil.
-FAU - Braz, Luiza Zagne
-AU  - Braz LZ
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Sales Carneiro Sampaio, Magda Maria
-AU  - Sales Carneiro Sampaio MM
-AD  - Hospital das Clinicas da Faculdade de Medicina da Universidade de Sao Paulo 
-      (HCFMUSP), Rua Doutor Ovidio Pires de Campos 225, Sao Paulo 05403-010, Brazil.
-FAU - Schmitz Ferreira Santos, Mara Lucia
-AU  - Schmitz Ferreira Santos ML
-AD  - Hospital de Criancas Cesar Pernetta e Hospital Pequeno Principe, Rua 
-      Desembargador Motta 1070, Curitiba 80250-060, Brazil.
-FAU - Curiati, Marco Antonio
-AU  - Curiati MA
-AD  - Universidade Federal de Sao Paulo, Centro de Referencia em Erro Inato do 
-      metabolismo (CREIM), Rua coronel Lisboa 957, Sao Paulo 04020-040, Brazil.
-FAU - Teresinha de Oliveira Cardoso, Maria
-AU  - Teresinha de Oliveira Cardoso M
-AD  - Centro de Referencia em Doencas Raras (UGEN HAB/SES-DF), Avenida L2 Sul SGAS 
-      Quadra 608 - Modulo A, Brasilia 70203-900, Brazil; Universidade Catolica De 
-      Brasilia (UCB), QS 07 Lote 01, Brasilia 71966-700, Brazil.
-FAU - Alves da Silva Rosa, Maria Teresa
-AU  - Alves da Silva Rosa MT
-AD  - Centro de Referencia em Doencas Raras (UGEN HAB/SES-DF), Avenida L2 Sul SGAS 
-      Quadra 608 - Modulo A, Brasilia 70203-900, Brazil; Universidade Catolica De 
-      Brasilia (UCB), QS 07 Lote 01, Brasilia 71966-700, Brazil.
-FAU - Leme Ferriani, Mariana Paes
-AU  - Leme Ferriani MP
-AD  - Hospital das Clinicas da Faculdade de Medicina de Ribeirao Preto (HCFMRP), Rua 
-      Tenente Catao Roxo 3900, Ribeirao Preto 14015-010, Brazil.
-FAU - Ramos, Ester Silveira
-AU  - Ramos ES
-AD  - Hospital das Clinicas da Faculdade de Medicina de Ribeirao Preto (HCFMRP), Rua 
-      Tenente Catao Roxo 3900, Ribeirao Preto 14015-010, Brazil.
-FAU - Lyra, Paula Teixeira
-AU  - Lyra PT
-AD  - Instituto de Medicina Integral Professor Fernando Figueira (IMIP), Rua dos 
-      Coelhos 300, Recife 50070-902, Brazil.
-FAU - Boy da Silva, Raquel Tavares
-AU  - Boy da Silva RT
-AD  - Hospital Universitario Pedro Ernesto - Universidade do Estado do Rio de Janeiro 
-      (HUPE/UERJ), Boulevard Vinte e Oito de Setembro 77, Rio de Janeiro 20551-030, 
-      Brazil.
-FAU - Ximenes de Mendonca Sobreira, Anna Candida
-AU  - Ximenes de Mendonca Sobreira AC
-AD  - Hospital Universitario Pedro Ernesto - Universidade do Estado do Rio de Janeiro 
-      (HUPE/UERJ), Boulevard Vinte e Oito de Setembro 77, Rio de Janeiro 20551-030, 
-      Brazil.
-FAU - Suzana Amorim Boa Sorte, Tatiana Regia
-AU  - Suzana Amorim Boa Sorte TR
-AD  - Associacao de Pais e Amigos dos Excepcionais - Salvador (APAE Salvador), Rua 
-      Espirito Santo 575, Salvador 41830-120, Brazil.
-FAU - Calvao Dumas, Melissa Rossi
-AU  - Calvao Dumas MR
-AD  - Associacao de Pais e Amigos dos Excepcionais - Salvador (APAE Salvador), Rua 
-      Espirito Santo 575, Salvador 41830-120, Brazil.
-FAU - Teixeira, Thais Bomfim
-AU  - Teixeira TB
-AD  - Associacao de Pais e Amigos dos Excepcionais - Anapolis (APAE Anapolis), Rua 
-      Galileu Batista Arantes 350, Anapolis 75075-570, Brazil.
-FAU - Gomes Carneiro, Vandre Cabral
-AU  - Gomes Carneiro VC
-AD  - Hospital de Cancer de Pernambuco (HCPE), Avenida Cruz Cabuga 1597, Recife 
-      50040-000, Brazil; Instituto de Medicina Integral Professor Fernando Figueira 
-      (IMIP), Rua dos Coelhos 300, Recife 50070-902, Brazil.
-FAU - Mota, Patricia Silva
-AU  - Mota PS
-AD  - Hospital de Cancer de Pernambuco (HCPE), Avenida Cruz Cabuga 1597, Recife 
-      50040-000, Brazil; Instituto de Medicina Integral Professor Fernando Figueira 
-      (IMIP), Rua dos Coelhos 300, Recife 50070-902, Brazil.
-FAU - Ferreira de Almeida, Tatiana
-AU  - Ferreira de Almeida T
-AD  - Hospital Israelita Albert Einstein, Avenida Albert Einstein 627, Sao Paulo 
-      05652-900, Brazil.
-FAU - Oliveira, Joao Bosco
-AU  - Oliveira JB
-AD  - Neogenomica, Rua Frei Matias Teves 285, Recife 50070-465, Brazil.
 LA  - eng
 PT  - Journal Article
 DEP - 20260504
@@ -337,19 +46,172 @@ TA  - HGG Adv
 JT  - HGG advances
 JID - 101772885
 SB  - IM
+PMC - PMC13285375
+OTO - NOTNLM
+OT  - Mendelian diseases
+OT  - genetic testing
+OT  - genomics
+COIS- Declaration of interests The authors declare no competing interests.
+FIR - Coelho, Antonio Victor Campos
+IR  - Coelho AVC
+FIR - Sales de Albuquerque, Rafael
+IR  - Sales de Albuquerque R
+FIR - Gomes, Catarina Dos Santos
+IR  - Gomes CDS
+FIR - Bandeira do Nascimento Junior, Jose
+IR  - Bandeira do Nascimento Junior J
+FIR - Santos de Oliveira, Gustavo
+IR  - Santos de Oliveira G
+FIR - Silva Moura, Livia Maria
+IR  - Silva Moura LM
+FIR - Mofatto, Luciana Souto
+IR  - Mofatto LS
+FIR - Muniz Guedes, Rafael Lucas
+IR  - Muniz Guedes RL
+FIR - Sequeira Barreiro, Rodrigo Araujo
+IR  - Sequeira Barreiro RA
+FIR - Caraciolo, Marcel Pinheiro
+IR  - Caraciolo MP
+FIR - Paula de Andrade Oliveira, Ana
+IR  - Paula de Andrade Oliveira A
+FIR - Barbosa Teixeira, Anne Caroline
+IR  - Barbosa Teixeira AC
+FIR - Cordeiro de Azevedo, Bruna Mascaro
+IR  - Cordeiro de Azevedo BM
+FIR - Carlos, Carolina Dias
+IR  - Carlos CD
+FIR - Santos de Santana, Lucas
+IR  - Santos de Santana L
+FIR - Cadena da Matta, Marina
+IR  - Cadena da Matta M
+FIR - Lima, Matheus Martinelli
+IR  - Lima MM
+FIR - Zurro, Nuria Bengala
+IR  - Zurro NB
+FIR - Yamada, Renata Yoshiko
+IR  - Yamada RY
+FIR - Cintra, Vivian Pedigone
+IR  - Cintra VP
+FIR - Campilongo, Gabriela Pereira
+IR  - Campilongo GP
+FIR - Cherulli Colichio, Gabriela Borges
+IR  - Cherulli Colichio GB
+FIR - Ribeiro da Silva, Renata Martins
+IR  - Ribeiro da Silva RM
+FIR - D'Angioli Costa Quaio, Caio Robledo
+IR  - D'Angioli Costa Quaio CR
+FIR - Moreno, Carolina Araujo
+IR  - Moreno CA
+FIR - Perrone, Eduardo
+IR  - Perrone E
+FIR - Araujo Espolaor, Jessica Grasiela
+IR  - Araujo Espolaor JG
+FIR - Marques Prota, Joana Rosa
+IR  - Marques Prota JR
+FIR - Magliocco Ceroni, Jose Ricardo
+IR  - Magliocco Ceroni JR
+FIR - Chen, Kelin
+IR  - Chen K
+FIR - Virmond, Luiza do Amaral
+IR  - Virmond LDA
+FIR - de Franca Basto Silva, Marina
+IR  - de Franca Basto Silva M
+FIR - Migliavacca, Michele Patricia
+IR  - Migliavacca MP
+FIR - Minillo, Renata Moldenhauer
+IR  - Minillo RM
+FIR - Tonholo Silva, Thiago Yoshinaga
+IR  - Tonholo Silva TY
+FIR - de Oliveira Pelegrino, Karla
+IR  - de Oliveira Pelegrino K
+FIR - Garcia Cunha, Ana Luiza
+IR  - Garcia Cunha AL
+FIR - de Souza Lima, Joziele
+IR  - de Souza Lima J
+FIR - Grumach, Anete Sevciovic
+IR  - Grumach AS
+FIR - Barbosa, Caio Parente
+IR  - Barbosa CP
+FIR - Acosta, Angelina Xavier
+IR  - Acosta AX
+FIR - Correa, Paula Brito
+IR  - Correa PB
+FIR - Cavalcanti, Denise Pontes
+IR  - Cavalcanti DP
+FIR - Steiner, Carlos Eduardo
+IR  - Steiner CE
+FIR - Ribeiro, Erlane Marques
+IR  - Ribeiro EM
+FIR - William da Silva Meireles, Wallace
+IR  - William da Silva Meireles W
+FIR - Araujo Felix Adjuto, Giselle Maria
+IR  - Araujo Felix Adjuto GM
+FIR - Doederlein Schwartz, Ida Vanessa
+IR  - Doederlein Schwartz IV
+FIR - Felix, Temis Maria
+IR  - Felix TM
+FIR - Douglas Paes Barreto, Irma Cecilia
+IR  - Douglas Paes Barreto IC
+FIR - Souto El Husny, Antonette
+IR  - Souto El Husny A
+FIR - Melo de Cerqueira Maia, Jussara
+IR  - Melo de Cerqueira Maia J
+FIR - Dantas, Vera Maria
+IR  - Dantas VM
+FIR - Helena de Oliveira Cordeiro, Lucia
+IR  - Helena de Oliveira Cordeiro L
+FIR - Braz, Luiza Zagne
+IR  - Braz LZ
+FIR - Sales Carneiro Sampaio, Magda Maria
+IR  - Sales Carneiro Sampaio MM
+FIR - Schmitz Ferreira Santos, Mara Lucia
+IR  - Schmitz Ferreira Santos ML
+FIR - Curiati, Marco Antonio
+IR  - Curiati MA
+FIR - Teresinha de Oliveira Cardoso, Maria
+IR  - Teresinha de Oliveira Cardoso M
+FIR - Alves da Silva Rosa, Maria Teresa
+IR  - Alves da Silva Rosa MT
+FIR - Leme Ferriani, Mariana Paes
+IR  - Leme Ferriani MP
+FIR - Ramos, Ester Silveira
+IR  - Ramos ES
+FIR - Lyra, Paula Teixeira
+IR  - Lyra PT
+FIR - Boy da Silva, Raquel Tavares
+IR  - Boy da Silva RT
+FIR - Ximenes de Mendonca Sobreira, Anna Candida
+IR  - Ximenes de Mendonca Sobreira AC
+FIR - Suzana Amorim Boa Sorte, Tatiana Regia
+IR  - Suzana Amorim Boa Sorte TR
+FIR - Calvao Dumas, Melissa Rossi
+IR  - Calvao Dumas MR
+FIR - Teixeira, Thais Bomfim
+IR  - Teixeira TB
+FIR - Gomes Carneiro, Vandre Cabral
+IR  - Gomes Carneiro VC
+FIR - Mota, Patricia Silva
+IR  - Mota PS
+FIR - Ferreira de Almeida, Tatiana
+IR  - Ferreira de Almeida T
+FIR - Oliveira, Joao Bosco
+IR  - Oliveira JB
 EDAT- 2026/05/05 06:33
 MHDA- 2026/05/05 06:33
+PMCR- 2026/05/04
 CRDT- 2026/05/05 01:36
 PHST- 2026/01/09 00:00 [received]
 PHST- 2026/04/28 00:00 [revised]
 PHST- 2026/04/28 00:00 [accepted]
-PHST- 2026/05/05 06:33 [medline]
 PHST- 2026/05/05 06:33 [pubmed]
+PHST- 2026/05/05 06:33 [medline]
 PHST- 2026/05/05 01:36 [entrez]
+PHST- 2026/05/04 00:00 [pmc-release]
 AID - S2666-2477(26)00064-3 [pii]
+AID - 100624 [pii]
 AID - 10.1016/j.xhgg.2026.100624 [doi]
 PST - aheadofprint
-SO  - HGG Adv. 2026 May 4:100624. doi: 10.1016/j.xhgg.2026.100624.
+SO  - HGG Adv. 2026 May 4;7(3):100624. doi: 10.1016/j.xhgg.2026.100624.
 
 PMID- 41507280
 OWN - NLM
