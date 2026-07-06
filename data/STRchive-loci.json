@@ -760,7 +760,7 @@
   "age_onset_max": 65.0,
   "typ_age_onset_min": 4.0,
   "typ_age_onset_max": 48.0,
-  "details": "Benign alleles range from 4-27 [@pmid:37906407], with intermediate alleles ranging from premutations (28-33) to reduced penetrance (34-36) [@genereviews:NBK1256]. Interruptions observed include CAA [@pmid:35245110].",
+  "details": "Benign alleles range from 4-27 [@pmid:37906407], with intermediate alleles ranging from premutations (28-33) to reduced penetrance (34-36) [@genereviews:NBK1256]. Interruptions observed include CAA [@pmid:35245110]. CAG repeat expansions have been detected in a circular RNA (circATXN7(3,4).1) derived from this locus, in SCA7 patient fibroblasts, cerebellum, and blood, though it is unclear if this contributes to disease [@pmid:42340810]",
   "detection": "Short-read WGS cannot accurately detect repeat expansions at this locus. PCR fragment analysis or RP-PCR has detected expansions and sized most normal or moderate pathogenic alleles, while very large expansions have been detected with Southern blotting or long-read sequencing [@genereviews:NBK1256].",
   "mechanism": "GoF",
   "mechanism_detail": "Polyglutamine expansion leading to gain of function; toxic misfolded intermediated suspected [@genereviews:NBK1256; @pmid:18418675].",
