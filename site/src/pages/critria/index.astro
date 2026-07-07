@@ -11,6 +11,7 @@ import {
   IconChecks,
   IconFileTypePdf,
   IconInfoCircle,
+  IconNews,
 } from "@tabler/icons-react";
 import sop from "~/criTRia-SOP.pdf?url";
 ---
@@ -34,9 +35,18 @@ import sop from "~/criTRia-SOP.pdf?url";
       <strong>Learn more</strong> about the criTRia locus-disease curation framework:
     </p>
 
-    <Button className="w-60 self-center" design="bubble" to={sop}>
-      <IconFileTypePdf />criTRia SOP
-    </Button>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <Button className="w-60" design="bubble" to={sop}>
+        <IconFileTypePdf />criTRia SOP
+      </Button>
+      <Button
+        className="w-60"
+        design="bubble"
+        to="https://doi.org/10.64898/2026.07.04.26357279"
+      >
+        Preprint<IconNews />
+      </Button>
+    </div>
   </section>
 
   <section>
