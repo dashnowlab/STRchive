@@ -35,10 +35,6 @@ export default function CurationTable() {
           name: "Gene",
         }),
         column({
-          key: "Gene",
-          name: "Gene",
-        }),
-        column({
           key: "Disease_ID",
           name: "Disease",
         }),
