@@ -838,7 +838,7 @@
   "typ_age_onset_min": 20.0,
   "typ_age_onset_max": 49.0,
   "details": "Two genes span the CTG/CAG repeat and are expressed in opposite directions: ATXN8, a nearly pure polyglutamine repeat protein in the CAG direction, and ATXN8OS, which is transcribed to a noncoding CUG repeat RNA [@pmid:16804541]. Reduced penetrance is found in alleles of all sizes, although penetrance appears higher at 71+ repeats and repeats at 50-70 appear less likely to result in disease [@genereviews:NBK1268; @pmid:20373340]. Roda et al. suggested that the ATXN8 or ATXN8OS gene should not be evaluated in isolation as a candidate gene for spinocerebellar degenerative disease [@pmid:28451643]. CCG/CGG interruptions in high-penetrance SCA8 families increase RAN translation and protein toxicity [@pmid:34632710]; Interruptions in CTG/CAG expansion by 1 or more CCG/CGG, CTA/TAG, CTC/GAG, CCA/TGG, or CTT/AAG trinucleotides have been observed in full-penetrance repeats [@pmid:16804541; @genereviews:NBK1268].",
-  "detection": "Short-read genome sequencing has been reported to underestimate expansion size [@pmid:40015980; @genereviews:NBK1268]. RP-PCR has detected large expansions while long-read sequencing and Southern blotting estimated size more accurately [@genereviews:NBK1268].",
+  "detection": "Short-read sequencing has been reported to underestimate expansion size [@pmid:40015980; @genereviews:NBK1268]. RP-PCR has detected large expansions while long-read sequencing and Southern blotting estimated size more accurately [@genereviews:NBK1268].",
   "mechanism": "GoF",
   "mechanism_detail": "Polyglutamine/toxic gain-of-function [@omim:608768; @genereviews:NBK1268].",
   "year": "1999 [@pmid:10192387]",
