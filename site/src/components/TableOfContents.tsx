@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { firstInView } from "@/util/dom";
-import { useEventListener, useMutationObserver } from "@reactuses/core";
+import {
+  useEventListener,
+  useMutationObserver,
+  useWindowSize,
+} from "@reactuses/core";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import Button from "./Button";
 
@@ -14,8 +18,16 @@ const headingSelector = "h1[id], h2[id], h3[id], h4[id]";
 export default function TableOfContents() {
   const list = useRef(null);
 
+  /** available screen width */
+  const { width } = useWindowSize();
+
   /** open/closed state */
-  const [open, setOpen] = useState(window.innerWidth > 1600);
+  const [open, setOpen] = useState(width > 1600);
+
+  useEffect(() => {
+    // eslint-disable-next-line
+    setOpen(width > 1600);
+  }, [width]);
 
   type Heading = {
     element: Element;

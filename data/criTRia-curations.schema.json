@@ -67,6 +67,7 @@
         "title": "Description",
         "description": "Overall description of the evidence used for curation and any relevant notes e.g. rationale for classification, caveats, etc.",
         "type": ["string", "null"],
+        "in_text_citations": true,
         "multiline": true
       },
       "Source": {
@@ -139,6 +140,7 @@
               "title": "Evidence Detail",
               "description": "Detailed description of the evidence",
               "type": ["string", "null"],
+              "in_text_citations": true,
               "multiline": true
             },
             "evidence_category": {
@@ -212,6 +214,7 @@
               "title": "Evidence Detail",
               "description": "Detailed description of the evidence",
               "type": ["string", "null"],
+              "in_text_citations": true,
               "multiline": true
             },
             "evidence_category": {

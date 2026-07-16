@@ -29,6 +29,7 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import clsx from "clsx";
+import { clamp } from "lodash-es";
 
 declare module "@tanstack/react-table" {
   // eslint-disable-next-line
@@ -175,7 +176,7 @@ export default function Table<Datum extends object>({
               />
 
               {/* pagination */}
-              <div className="flex flex-wrap items-center justify-center *:p-1">
+              <div className="flex flex-wrap items-center justify-center *:p-1 *:hover:text-primary">
                 <Button
                   onClick={() => table.setPageIndex(0)}
                   aria-disabled={!table.getCanPreviousPage()}
@@ -194,23 +195,23 @@ export default function Table<Datum extends object>({
                   onClick={() => {
                     const page = parseInt(window.prompt("Jump to page") || "");
                     if (Number.isNaN(page)) return;
-                    table.setPageIndex(page);
+                    table.setPageIndex(
+                      clamp(page, 0, Math.ceil(table.getPageCount())) - 1,
+                    );
                   }}
                 >
                   {(() => {
                     const rows = table.getPrePaginationRowModel().rows.length;
-                    let { pageIndex, pageSize } = table.getState().pagination;
-                    const pageCount = table.getPageCount();
-                    pageSize = Math.min(pageSize, rows);
+                    const { pageIndex, pageSize } = table.getState().pagination;
                     return [
                       pageIndex * pageSize + 1,
                       "–",
                       Math.min(
-                        (pageIndex + 1) * pageSize,
-                        pageCount * pageSize,
+                        (pageIndex + 1) * Math.min(pageSize, rows),
+                        rows,
                       ),
                       "of",
-                      pageCount * pageSize,
+                      rows,
                     ].join(" ");
                   })()}
                 </Button>
