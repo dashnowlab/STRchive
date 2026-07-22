@@ -4296,7 +4296,18 @@
   "benign_motif_gene_orientation": [],
   "unknown_motif_gene_orientation": [],
   "interruption_gene_orientation": [],
-  "locus_structure": [],
+  "locus_structure": [
+ {
+    "motif": "CAG",
+    "count": 23,
+    "type": "flank_repeat"
+  },
+ {
+    "motif": "GCN",
+    "count": null,
+    "type": "pathogenic_repeat"
+  }
+  ],
   "benign_min": 4,
   "benign_max": 17,
   "intermediate_min": null,
