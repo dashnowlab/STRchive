@@ -3,7 +3,7 @@ PMID- 42180433
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260525
-LR  - 20260525
+LR  - 20260630
 IS  - 1090-0535 (Electronic)
 IS  - 1090-0535 (Linking)
 VI  - 31
@@ -99,40 +99,49 @@ AU  - Ali M
 AD  - Division of Molecular Medicine, Leeds Institute of Medical Research, St. James's 
       University Hospital, University of Leeds, Leeds, UK.
 LA  - eng
+GR  - G1002002/1/MRC Clinical Research Training Fellowship/
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20251201
 PL  - United States
 TA  - Mol Vis
 JT  - Molecular vision
 JID - 9605351
-RN  - 0 (Collagen Type VIII)
-RN  - 0 (Transcription Factor 4)
-RN  - 0 (SLC4A11 protein, human)
-RN  - 0 (TCF4 protein, human)
-RN  - 0 (COL8A2 protein, human)
 RN  - 0 (Zinc Finger E-box-Binding Homeobox 1)
-RN  - 0 (ZEB1 protein, human)
+RN  - 0 (SLC4A11 protein, human)
 RN  - 0 (Anion Transport Proteins)
-RN  - 0 (Antiporters)
+RN  - 0 (ZEB1 protein, human)
+RN  - 0 (COL8A2 protein, human)
+RN  - 0 (TCF4 protein, human)
+RN  - 0 (Transcription Factor 4)
 RN  - 0 (LOXHD1 protein, human)
+RN  - 0 (Antiporters)
+RN  - 0 (Collagen Type VIII)
+RN  - 0 (Basic Helix-Loop-Helix Leucine Zipper Transcription Factors)
+RN  - 0 (Molecular Probes)
+RN  - 0 (Transcription Factors)
 RN  - 0 (Receptors, Cell Surface)
 RN  - 0 (Carrier Proteins)
 SB  - IM
 MH  - Humans
 MH  - *Fuchs' Endothelial Dystrophy/genetics
-MH  - Collagen Type VIII/genetics
-MH  - Transcription Factor 4/genetics
 MH  - Zinc Finger E-box-Binding Homeobox 1/genetics
 MH  - Anion Transport Proteins/genetics
-MH  - Male
-MH  - Antiporters/genetics
+MH  - Transcription Factor 4/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
 MH  - Female
-MH  - Trinucleotide Repeat Expansion/genetics
-MH  - Receptors, Cell Surface/genetics
-MH  - Middle Aged
+MH  - Antiporters/genetics
+MH  - Collagen Type VIII/genetics
+MH  - Male
+MH  - Basic Helix-Loop-Helix Leucine Zipper Transcription Factors/genetics
+MH  - *Molecular Probes
+MH  - Transcription Factors/genetics
 MH  - Aged
-MH  - Introns
+MH  - Middle Aged
+MH  - Exons
+MH  - Receptors, Cell Surface/genetics
 MH  - Genotype
+MH  - Sequence Analysis, DNA
 MH  - Carrier Proteins
 PMC - PMC13193275
 EDAT- 2026/05/25 12:35
@@ -286,13 +295,18 @@ SO  - Acta Ophthalmol. 2026 Apr 20. doi: 10.1111/aos.70144.
 
 PMID- 41944554
 OWN - NLM
-STAT- Publisher
-LR  - 20260416
+STAT- MEDLINE
+DCOM- 20260610
+LR  - 20260610
 IS  - 1096-9896 (Electronic)
+IS  - 0022-3417 (Print)
 IS  - 0022-3417 (Linking)
-DP  - 2026 Apr 7
+VI  - 269
+IP  - 3
+DP  - 2026 Jul
 TI  - Tissue-level heterogeneity in FECD: Descemet's membrane phenotypes and 
       association with TCF4 CTG18.1 expansion(dagger).
+PG  - 262-264
 LID - 10.1002/path.70057 [doi]
 AB  - Late-onset Fuchs endothelial corneal dystrophy (FECD) is commonly framed as a 
       corneal endothelial disease characterised by guttae accumulation and progressive 
@@ -344,7 +358,17 @@ PL  - England
 TA  - J Pathol
 JT  - The Journal of pathology
 JID - 0204634
+RN  - 0 (Transcription Factor 4)
+RN  - 0 (TCF4 protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology
+MH  - *Descemet Membrane/pathology
+MH  - Phenotype
+MH  - *Transcription Factor 4/genetics
+MH  - *Trinucleotide Repeat Expansion
+MH  - Genetic Predisposition to Disease
+PMC - PMC13238289
 OTO - NOTNLM
 OT  - CTG18.1 trinucleotide repeat expansion
 OT  - Descemet's membrane
@@ -353,16 +377,19 @@ OT  - corneal endothelium
 OT  - heterogeneity
 OT  - pathology
 EDAT- 2026/04/07 12:33
-MHDA- 2026/04/07 12:33
+MHDA- 2026/06/11 05:39
+PMCR- 2026/06/05
 CRDT- 2026/04/07 08:33
 PHST- 2026/02/21 00:00 [received]
 PHST- 2026/02/26 00:00 [accepted]
+PHST- 2026/06/11 05:39 [medline]
 PHST- 2026/04/07 12:33 [pubmed]
-PHST- 2026/04/07 12:33 [medline]
 PHST- 2026/04/07 08:33 [entrez]
+PHST- 2026/06/05 00:00 [pmc-release]
+AID - PATH70057 [pii]
 AID - 10.1002/path.70057 [doi]
-PST - aheadofprint
-SO  - J Pathol. 2026 Apr 7. doi: 10.1002/path.70057.
+PST - ppublish
+SO  - J Pathol. 2026 Jul;269(3):262-264. doi: 10.1002/path.70057. Epub 2026 Apr 7.
 
 PMID- 41944537
 OWN - NLM
@@ -429,8 +456,8 @@ SO  - J Pathol. 2026 Apr 7. doi: 10.1002/path.70062.
 PMID- 41865104
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260506
-LR  - 20260509
+DCOM- 20260620
+LR  - 20260620
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 16
@@ -547,14 +574,13 @@ RN  - 0 (Transcription Factor 4)
 RN  - 0 (TCF4 protein, human)
 RN  - 0 (Proteome)
 SB  - IM
-MH  - Humans
 MH  - *Fuchs' Endothelial Dystrophy/genetics/metabolism/pathology
 MH  - *Transcription Factor 4/genetics/metabolism
-MH  - *Trinucleotide Repeat Expansion
-MH  - Proteomics/methods
-MH  - *Proteome/genetics
+MH  - Humans
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - *Proteomics/methods
+MH  - *Proteome/genetics/metabolism
 MH  - Protein Interaction Maps
-MH  - CRISPR-Cas Systems
 PMC - PMC13149823
 COIS- Competing interests: Naoki Okumura and Noriko Koizumi are co-founders of 
       ActualEyes Inc., which is developing novel treatments for Fuchs endothelial 
@@ -579,7 +605,7 @@ PMID- 41736702
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260505
-LR  - 20260507
+LR  - 20260613
 IS  - 1096-9896 (Electronic)
 IS  - 0022-3417 (Print)
 IS  - 0022-3417 (Linking)
@@ -707,21 +733,22 @@ JID - 0204634
 RN  - 0 (Transcription Factor 4)
 RN  - 0 (TCF4 protein, human)
 RN  - 0 (Basic Helix-Loop-Helix Leucine Zipper Transcription Factors)
+RN  - 0 (Transcription Factors)
 SB  - IM
 MH  - Humans
-MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology/classification/surgery
+MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology/classification
 MH  - Transcription Factor 4/genetics
-MH  - *Trinucleotide Repeat Expansion
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Genetic Predisposition to Disease
+MH  - *Basic Helix-Loop-Helix Leucine Zipper Transcription Factors/genetics
+MH  - Descemet Membrane/pathology
+MH  - Female
+MH  - Phenotype
 MH  - Male
 MH  - Aged
-MH  - Female
-MH  - Middle Aged
-MH  - Aged, 80 and over
-MH  - Descemet Membrane/pathology
-MH  - *Basic Helix-Loop-Helix Leucine Zipper Transcription Factors/genetics
-MH  - Genetic Predisposition to Disease
-MH  - Phenotype
+MH  - Transcription Factors/genetics
 MH  - Endothelium, Corneal/pathology
+MH  - Extracellular Matrix/pathology
 PMC - PMC13140138
 OTO - NOTNLM
 OT  - CTG18.1 trinucleotide repeat expansion
@@ -970,8 +997,8 @@ SO  - J Adv Res. 2026 Feb 17:S2090-1232(26)00163-3. doi: 10.1016/j.jare.2026.02.
 PMID- 41562921
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260121
-LR  - 20260125
+DCOM- 20260630
+LR  - 20260630
 IS  - 2076-3271 (Electronic)
 IS  - 2076-3271 (Linking)
 VI  - 14
@@ -1079,24 +1106,21 @@ JT  - Medical sciences (Basel, Switzerland)
 JID - 101629322
 RN  - 0 (Transcription Factor 4)
 RN  - 0 (TCF4 protein, human)
-RN  - 0 (Basic Helix-Loop-Helix Leucine Zipper Transcription Factors)
-RN  - 0 (Transcription Factors)
 SB  - IM
 MH  - Humans
 MH  - *Fuchs' Endothelial Dystrophy/genetics/pathology
-MH  - Transcription Factor 4/genetics
-MH  - Male
+MH  - *Transcription Factor 4/genetics
 MH  - Female
-MH  - Middle Aged
+MH  - Male
 MH  - *Trinucleotide Repeat Expansion/genetics
-MH  - Aged
 MH  - Longitudinal Studies
-MH  - Disease Progression
-MH  - Severity of Illness Index
-MH  - *Basic Helix-Loop-Helix Leucine Zipper Transcription Factors/genetics
-MH  - *Transcription Factors/genetics
+MH  - Aged
+MH  - Middle Aged
 MH  - Prospective Studies
 MH  - Genotype
+MH  - Disease Progression
+MH  - *Trinucleotide Repeats/genetics
+MH  - Severity of Illness Index
 PMC - PMC12821436
 OTO - NOTNLM
 OT  - CTG trinucleotide repeat expansion
@@ -1122,8 +1146,9 @@ SO  - Med Sci (Basel). 2026 Jan 7;14(1):31. doi: 10.3390/medsci14010031.
 
 PMID- 41533935
 OWN - NLM
-STAT- In-Process
-LR  - 20260601
+STAT- MEDLINE
+DCOM- 20260626
+LR  - 20260626
 IS  - 1552-5783 (Electronic)
 IS  - 0146-0404 (Print)
 IS  - 0146-0404 (Linking)
@@ -1204,26 +1229,23 @@ JT  - Investigative ophthalmology & visual science
 JID - 7703701
 RN  - 4TI98Z838E (Estradiol)
 RN  - 0 (Transforming Growth Factor beta)
-RN  - 0 (Collagen Type VIII)
 SB  - IM
 MH  - Animals
-MH  - *Fuchs' Endothelial Dystrophy/metabolism/pathology/drug therapy/prevention & 
-      control/genetics
-MH  - Disease Models, Animal
 MH  - Mice
-MH  - *Estradiol/pharmacology/therapeutic use/administration & dosage
+MH  - Disease Models, Animal
 MH  - Disease Progression
-MH  - Humans
+MH  - *Estradiol/pharmacology/therapeutic use
+MH  - *Fuchs' Endothelial Dystrophy/metabolism/drug therapy/pathology/prevention & 
+      control/genetics
 MH  - Blotting, Western
 MH  - Signal Transduction/drug effects
-MH  - Endothelium, Corneal/pathology/metabolism/drug effects
-MH  - Epithelial-Mesenchymal Transition/drug effects
-MH  - Female
-MH  - Cells, Cultured
 MH  - Transforming Growth Factor beta/metabolism
-MH  - Extracellular Matrix/metabolism/drug effects
+MH  - Humans
+MH  - Female
+MH  - Epithelial-Mesenchymal Transition/drug effects
+MH  - Endothelium, Corneal/metabolism/drug effects/pathology
 MH  - Mice, Inbred C57BL
-MH  - Collagen Type VIII/genetics
+MH  - Extracellular Matrix/metabolism/drug effects
 PMC - PMC12742592
 COIS- Disclosure: I. Oka, None; S. Fujimoto, None; T. Fukui, None; K. Mayumi, None; T. 
       Tourtas, None; U. Schlotzer-Schrehardt, None; F. Kruse, None; A.S. Jun, None; N. 
@@ -1245,7 +1267,7 @@ SO  - Invest Ophthalmol Vis Sci. 2025 Dec 1;66(15):64. doi: 10.1167/iovs.66.15.6
 PMID- 41501457
 OWN - NLM
 STAT- In-Process
-LR  - 20260228
+LR  - 20260603
 IS  - 1476-4687 (Electronic)
 IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
@@ -1357,6 +1379,8 @@ AD  - Center for Data Sciences, Brigham and Women's Hospital and Harvard Medical
 AD  - Program in Medical and Population Genetics, Broad Institute of MIT and Harvard, 
       Cambridge, MA, USA. poruloh@broadinstitute.org.
 LA  - eng
+GR  - R01 HG013110/HG/NHGRI NIH HHS/United States
+GR  - R56 HG012698/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
 DEP - 20260107
 PL  - England
@@ -2232,7 +2256,7 @@ PMID- 40720054
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251101
-LR  - 20251103
+LR  - 20260629
 IS  - 1179-2000 (Electronic)
 IS  - 1177-1062 (Print)
 IS  - 1177-1062 (Linking)
@@ -2313,6 +2337,7 @@ LA  - eng
 GR  - Bushra Alayed/Saudi Arabian Cultural Bureau/
 GR  - G1002002/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20250728
 PL  - New Zealand
 TA  - Mol Diagn Ther
@@ -3991,7 +4016,7 @@ PMID- 38713708
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240517
-LR  - 20240815
+LR  - 20260619
 IS  - 1553-7404 (Electronic)
 IS  - 1553-7390 (Print)
 IS  - 1553-7390 (Linking)
@@ -4130,6 +4155,7 @@ AD  - University College London Institute of Ophthalmology, London, United Kingd
 AD  - Moorfields Eye Hospital, London, United Kingdom.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20240507
 PL  - United States
 TA  - PLoS Genet

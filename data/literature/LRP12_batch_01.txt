@@ -1,8 +1,9 @@
 
 PMID- 41888971
 OWN - NLM
-STAT- In-Process
-LR  - 20260329
+STAT- MEDLINE
+DCOM- 20260627
+LR  - 20260627
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 18
@@ -41,8 +42,7 @@ AB  - BACKGROUND: Oculopharyngodistal myopathy (OPDM) is a hereditary muscle dis
       allele-specific flanking sequences, and the combined effects of repeat size and 
       methylation contribute to patient regional frequency, repeat stability, and 
       clinical variability, respectively, offering insight into disease pathomechanism 
-      and potential therapeutic targets. SUPPLEMENTARY INFORMATION: The online version 
-      contains supplementary material available at 10.1186/s13073-026-01617-x.
+      and potential therapeutic targets.
 FAU - Eura, Nobuyuki
 AU  - Eura N
 AD  - Department of Neuromuscular Research, National Institute of Neuroscience, 
@@ -107,7 +107,28 @@ PL  - England
 TA  - Genome Med
 JT  - Genome medicine
 JID - 101475844
+RN  - 0 (NOTCH2NLC protein, human)
+RN  - 0 (Adaptor Proteins, Signal Transducing)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (Intercellular Signaling Peptides and Proteins)
+RN  - Oculopharyngodistal Myopathy
 SB  - IM
+MH  - Humans
+MH  - *DNA Methylation
+MH  - *Trinucleotide Repeat Expansion
+MH  - Haplotypes
+MH  - *Muscular Dystrophies/genetics
+MH  - Male
+MH  - Female
+MH  - Adaptor Proteins, Signal Transducing/genetics
+MH  - Phenotype
+MH  - Adult
+MH  - Genetic Association Studies
+MH  - Adolescent
+MH  - CpG Islands
+MH  - Child
+MH  - Nerve Tissue Proteins
+MH  - Intercellular Signaling Peptides and Proteins
 PMC - PMC13023157
 OTO - NOTNLM
 OT  - Epigenomic modification
@@ -123,12 +144,12 @@ COIS- Declarations. Ethics approval and consent to participate: All patients pro
       in this study was obtained from all participants. Competing interests: The 
       authors declare no competing interests.
 EDAT- 2026/03/27 07:14
-MHDA- 2026/03/27 07:14
+MHDA- 2026/06/27 18:39
 PMCR- 2026/03/27
 CRDT- 2026/03/27 01:15
 PHST- 2025/07/15 00:00 [received]
 PHST- 2026/03/02 00:00 [accepted]
-PHST- 2026/03/27 07:14 [medline]
+PHST- 2026/06/27 18:39 [medline]
 PHST- 2026/03/27 07:14 [pubmed]
 PHST- 2026/03/27 01:15 [entrez]
 PHST- 2026/03/27 00:00 [pmc-release]
@@ -141,8 +162,8 @@ SO  - Genome Med. 2026 Mar 27;18(1):33. doi: 10.1186/s13073-026-01617-x.
 PMID- 41792844
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260415
-LR  - 20260511
+DCOM- 20260613
+LR  - 20260613
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 14
@@ -215,13 +236,23 @@ PL  - England
 TA  - Acta Neuropathol Commun
 JT  - Acta neuropathologica communications
 JID - 101610673
+RN  - 0 (LRP12 protein, human)
+RN  - 0 (LDL-Receptor Related Proteins)
+RN  - 147336-22-9 (Green Fluorescent Proteins)
+RN  - 0 (Low Density Lipoprotein Receptor-Related Protein-1)
 RN  - Oculopharyngodistal Myopathy
 SB  - IM
 MH  - Humans
 MH  - *Trinucleotide Repeat Expansion/genetics
-MH  - *Distal Myopathies/genetics/pathology
-MH  - *Protein Biosynthesis/genetics
-MH  - Muscular Dystrophies
+MH  - *LDL-Receptor Related Proteins/genetics/metabolism
+MH  - *Dystonic Disorders/genetics/pathology
+MH  - Animals
+MH  - *Muscular Dystrophies/genetics/pathology
+MH  - Transfection
+MH  - Muscle, Skeletal/pathology/metabolism
+MH  - *Protein Biosynthesis
+MH  - Green Fluorescent Proteins/metabolism/genetics
+MH  - Low Density Lipoprotein Receptor-Related Protein-1
 PMC - PMC13078011
 OTO - NOTNLM
 OT  - CGG repeat expansion
@@ -390,13 +421,17 @@ SO  - Genomics Proteomics Bioinformatics. 2025 Oct 22:qzaf094. doi:
 
 PMID- 41125376
 OWN - NLM
-STAT- Publisher
-LR  - 20251022
+STAT- MEDLINE
+DCOM- 20260614
+LR  - 20260614
 IS  - 1349-7235 (Electronic)
 IS  - 0918-2918 (Linking)
-DP  - 2025 Oct 23
+VI  - 65
+IP  - 12
+DP  - 2026 Jun 15
 TI  - A Family with Patients Manifesting Different Phenotypes of Neuromuscular Disease 
       Depending on the CGG Repeat Number in LRP12.
+PG  - 1688-1692
 LID - 10.2169/internalmedicine.6194-25 [doi]
 AB  - This study describes a family of patients with distal muscle atrophy and 
       oculopharyngodistal myopathy (OPDM). Patients with distal muscle atrophy 
@@ -414,31 +449,31 @@ AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Ja
 FAU - Tsujikawa, Koyo
 AU  - Tsujikawa K
 AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
-AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
-      University, Japan.
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
 FAU - Murakami, Ayuka
 AU  - Murakami A
 AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
 FAU - Kume, Kodai
 AU  - Kume K
-AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
-      and Medicine, Hiroshima University, Japan.
-FAU - Nakazawa, Yuka
-AU  - Nakazawa Y
 AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
       University, Japan.
+FAU - Nakazawa, Yuka
+AU  - Nakazawa Y
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
 AD  - Department of Human Genetics and Molecular Biology, Graduate School of Medicine, 
       Nagoya University, Japan.
 FAU - Oso, Taichi
 AU  - Oso T
-AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
-      University, Japan.
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
 AD  - Department of Human Genetics and Molecular Biology, Graduate School of Medicine, 
       Nagoya University, Japan.
 FAU - Nishio, Yosuke
 AU  - Nishio Y
-AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
-      University, Japan.
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
 FAU - Matsuo, Koji
 AU  - Matsuo K
 AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
@@ -450,8 +485,8 @@ AU  - Araki K
 AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
 FAU - Ogi, Tomoo
 AU  - Ogi T
-AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
-      University, Japan.
+AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
+      and Medicine, Hiroshima University, Japan.
 AD  - Department of Human Genetics and Molecular Biology, Graduate School of Medicine, 
       Nagoya University, Japan.
 AD  - Division of Animal Medical Science, Center for One Medicine Innovative 
@@ -460,34 +495,49 @@ AD  - Division of Molecular Physiology and Dynamics, Institute for Glyco-core Re
       Nagoya University, Japan.
 FAU - Kawakami, Hideshi
 AU  - Kawakami H
-AD  - Department of Molecular Epidemiology, Research Institute for Radiation Biology 
-      and Medicine, Hiroshima University, Japan.
+AD  - Department of Genetics, Research Institute of Environmental Medicine, Nagoya 
+      University, Japan.
 FAU - Katsuno, Masahisa
 AU  - Katsuno M
 AD  - Department of Neurology, Nagoya University Graduate School of Medicine, Japan.
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20251023
 PL  - Japan
 TA  - Intern Med
 JT  - Internal medicine (Tokyo, Japan)
 JID - 9204241
+RN  - 0 (LDL-Receptor Related Proteins)
+RN  - Oculopharyngodistal Myopathy
 SB  - IM
+MH  - Humans
+MH  - Phenotype
+MH  - Female
+MH  - *Muscular Dystrophies/genetics
+MH  - Male
+MH  - *LDL-Receptor Related Proteins/genetics
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Pedigree
+MH  - Middle Aged
+MH  - *Neuromuscular Diseases/genetics
+MH  - Adult
 OTO - NOTNLM
 OT  - CGG repeat expansions
-OT  - Distal muscular atrophy
 OT  - LRP12
+OT  - distal muscular atrophy
 OT  - long read sequencing
 OT  - oculopharyngodistal myopathy
 EDAT- 2025/10/23 00:26
-MHDA- 2025/10/23 00:26
+MHDA- 2026/06/15 11:37
 CRDT- 2025/10/22 21:24
-PHST- 2025/10/23 00:26 [medline]
+PHST- 2026/06/15 11:37 [medline]
 PHST- 2025/10/23 00:26 [pubmed]
 PHST- 2025/10/22 21:24 [entrez]
 AID - 10.2169/internalmedicine.6194-25 [doi]
-PST - aheadofprint
-SO  - Intern Med. 2025 Oct 23. doi: 10.2169/internalmedicine.6194-25.
+PST - ppublish
+SO  - Intern Med. 2026 Jun 15;65(12):1688-1692. doi: 10.2169/internalmedicine.6194-25. 
+      Epub 2025 Oct 23.
 
 PMID- 40645757
 OWN - NLM

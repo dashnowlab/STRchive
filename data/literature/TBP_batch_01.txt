@@ -2,8 +2,8 @@
 PMID- 42196324
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260527
-LR  - 20260529
+DCOM- 20260624
+LR  - 20260624
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 27
@@ -279,8 +279,9 @@ SO  - Brain Commun. 2026 Mar 16;8(2):fcag092. doi: 10.1093/braincomms/fcag092.
 
 PMID- 41843312
 OWN - NLM
-STAT- In-Process
-LR  - 20260421
+STAT- MEDLINE
+DCOM- 20260627
+LR  - 20260627
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -324,13 +325,24 @@ AU  - Almeida LB
 AD  - Department of Neurology, Norman Fixel Institute for Neurological Diseases, 
       University of Florida, Gainesville, FL, USA.
 LA  - eng
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20260317
 PL  - United States
 TA  - Cerebellum
 JT  - Cerebellum (London, England)
 JID - 101089443
+RN  - 0 (TATA-Box Binding Protein)
+RN  - Spinocerebellar Ataxia 17
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - Adolescent
+MH  - Age of Onset
+MH  - *TATA-Box Binding Protein/genetics
+MH  - *Huntington Disease/genetics/physiopathology
+MH  - Trinucleotide Repeat Expansion
+MH  - Spinocerebellar Ataxias
 PMC - PMC12995942
 OTO - NOTNLM
 OT  - Ataxia
@@ -340,12 +352,12 @@ OT  - Movement Disorder
 OT  - SCA17
 COIS- Declarations. Competing Interests: The authors declare no competing interests.
 EDAT- 2026/03/18 13:41
-MHDA- 2026/03/18 13:41
+MHDA- 2026/06/27 16:09
 PMCR- 2026/03/17
 CRDT- 2026/03/17 12:23
 PHST- 2025/12/03 00:00 [received]
 PHST- 2026/03/08 00:00 [accepted]
-PHST- 2026/03/18 13:41 [medline]
+PHST- 2026/06/27 16:09 [medline]
 PHST- 2026/03/18 13:41 [pubmed]
 PHST- 2026/03/17 12:23 [entrez]
 PHST- 2026/03/17 00:00 [pmc-release]
@@ -358,8 +370,8 @@ SO  - Cerebellum. 2026 Mar 17;25(2):34. doi: 10.1007/s12311-026-01979-3.
 PMID- 41762523
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260313
-LR  - 20260313
+DCOM- 20260612
+LR  - 20260612
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 125
@@ -533,18 +545,16 @@ RN  - 0 (C9orf72 Protein)
 RN  - 0 (C9orf72 protein, human)
 SB  - IM
 MH  - Humans
-MH  - Male
-MH  - Female
-MH  - Aged
 MH  - *Microsatellite Repeats
+MH  - Female
+MH  - Male
+MH  - Aged
+MH  - Whole Genome Sequencing
+MH  - C9orf72 Protein/genetics
 MH  - *DNA Repeat Expansion
 MH  - *Dementia/genetics/diagnosis
-MH  - *Genetic Predisposition to Disease
-MH  - Whole Genome Sequencing
-MH  - Middle Aged
-MH  - C9orf72 Protein/genetics
-MH  - Frontotemporal Dementia/genetics
-MH  - *Neurodegenerative Diseases/genetics
+MH  - *Neurodegenerative Diseases/genetics/diagnosis
+MH  - Genetic Predisposition to Disease
 PMC - PMC12962126
 OTO - NOTNLM
 OT  - C9orf72 expansion
@@ -571,97 +581,6 @@ AID - 10.1016/j.ebiom.2026.106190 [doi]
 PST - ppublish
 SO  - EBioMedicine. 2026 Mar;125:106190. doi: 10.1016/j.ebiom.2026.106190. Epub 2026 
       Feb 26.
-
-PMID- 41612618
-OWN - NLM
-STAT- Publisher
-LR  - 20260130
-IS  - 1460-2156 (Electronic)
-IS  - 0006-8950 (Linking)
-DP  - 2026 Jan 30
-TI  - Non-Huntington's disease chorea: an expanding universe with acquired causes.
-LID - awag038 [pii]
-LID - 10.1093/brain/awag038 [doi]
-AB  - Huntington disease (HD) phenocopies are conditions characterized by a phenotype 
-      similar to HD but without a pathogenic repeat expansion in the HTT gene. The 
-      percentage of patients who have an HD phenotype but subsequently are shown not to 
-      carry a repeat expansion ranges from 2% to 40%, depending on the ethnicity and 
-      the geographic location of the population studied, as well as the resources 
-      available for investigation of the underlying causes. In descending order of 
-      frequency, genetic causes are Huntington Disease-like 2/JHP3, spinocerebellar 
-      ataxia genes (SCA17/TBP, SCA12/PPP2R2B and SCA3/ATXN3, CACNA1A), and 
-      frontotemporal dementia genes (C9orf72, and VCP). In addition, it has been 
-      established that a growing list of acquired causes may also mimic HD, including 
-      autoimmune illnesses such as primary antiphospholipid syndrome, paraneoplastic 
-      chorea, and anti-IGLON5. Here we aim to review the epidemiology, aetiology, 
-      clinical and laboratory findings of the wide range of conditions associated with 
-      HD phenocopies, and proceed to suggest a practical diagnostic approach to the 
-      investigation of HD phenocopies taking into account the age at onset, ethnicity, 
-      and geographic location of individuals.
-CI  - (c) The Author(s) 2026. Published by Oxford University Press on behalf of the 
-      Guarantors of Brain. All rights reserved. For commercial re-use, please contact 
-      reprints@oup.com for reprints and translation rights for reprints. All other 
-      permissions can be obtained through our RightsLink service via the Permissions 
-      link on the article page on our site-for further information please contact 
-      journals.permissions@oup.com.
-FAU - Cardoso, Francisco
-AU  - Cardoso F
-AD  - Movement Disorders Unit, Neurology Service, Federal University of Minas Gerais, 
-      Belo Horizonte 30130-100, Brazil.
-FAU - Maia, Debora
-AU  - Maia D
-AD  - Movement Disorders Unit, Neurology Service, Federal University of Minas Gerais, 
-      Belo Horizonte 30130-100, Brazil.
-FAU - Maciel, Ricardo
-AU  - Maciel R
-AUID- ORCID: 0000-0003-0027-280X
-AD  - Movement Disorders Unit, Neurology Service, Federal University of Minas Gerais, 
-      Belo Horizonte 30130-100, Brazil.
-FAU - Carr, Jonathan
-AU  - Carr J
-AD  - Division of Neurology, Department of Medicine, University of Stellenbosch,  Cape 
-      Town 7599, South Africa.
-FAU - Hatano, Taku
-AU  - Hatano T
-AUID- ORCID: 0000-0002-6808-0444
-AD  - Department of Neurology, Juntendo University Faculty of Medicine, Tokyo 113-8421, 
-      Japan.
-FAU - Durr, Alexandra
-AU  - Durr A
-AUID- ORCID: 0000-0002-8921-7104
-AD  - Sorbonne Universite, Institut du Cerveau - Paris Brain Institute - ICM, Inserm, 
-      CNRS, APHP, University Hospital Pitie-Salpetriere, Paris 75013, France.
-FAU - Poewe, Werner
-AU  - Poewe W
-AD  - Department of Neurology, Medical University of Innsbruck, Innsbruck 6020, 
-      Austria.
-LA  - eng
-PT  - Journal Article
-DEP - 20260130
-PL  - England
-TA  - Brain
-JT  - Brain : a journal of neurology
-JID - 0372537
-SB  - IM
-OTO - NOTNLM
-OT  - Huntington's disease
-OT  - Huntington-like
-OT  - autoimmune chorea
-OT  - chorea
-OT  - genetic chorea
-OT  - phenocopies of Huntington's disease
-EDAT- 2026/01/30 06:29
-MHDA- 2026/01/30 06:29
-CRDT- 2026/01/30 00:43
-PHST- 2025/06/15 00:00 [received]
-PHST- 2025/11/23 00:00 [revised]
-PHST- 2026/01/30 06:29 [medline]
-PHST- 2026/01/30 06:29 [pubmed]
-PHST- 2026/01/30 00:43 [entrez]
-AID - 8444888 [pii]
-AID - 10.1093/brain/awag038 [doi]
-PST - aheadofprint
-SO  - Brain. 2026 Jan 30:awag038. doi: 10.1093/brain/awag038.
 
 PMID- 41009775
 OWN - NLM
@@ -3033,7 +2952,7 @@ PMID- 35868859
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260512
-LR  - 20260512
+LR  - 20260610
 IS  - 2373-2822 (Electronic)
 IS  - 2373-2822 (Linking)
 VI  - 9
@@ -3162,6 +3081,8 @@ AD  - Department of Neuroscience, School of Medicine, Johns Hopkins University,
 LA  - eng
 GR  - T32 MH015330/MH/NIMH NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20220830
 PL  - United States
 TA  - eNeuro
