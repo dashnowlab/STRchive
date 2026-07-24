@@ -120,7 +120,7 @@ export const getIdentifiers = (object: Record<string, unknown>) =>
         {
           key: "position_base1_hg38",
           name: "TR Explorer",
-          link: "https://trexplorer.broadinstitute.org/#sc=isPathogenic&sd=DESC&showRs=1&searchQuery=$ID&showColumns=0i1i2i3i4i7i21i17",
+          link: "https://trexplorer.broadinstitute.org/#sc=isPathogenic&sd=DESC&showRs=1&searchQuery=$ID",
           tooltip:
             "An online portal for exploring genome-wide tandem repeat (TR) catalogs",
           info: "https://trexplorer.broadinstitute.org/",
