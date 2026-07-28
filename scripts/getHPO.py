@@ -1,16 +1,7 @@
 #!/usr/bin/env python3
 """
-Add HPO terms to STRchive-loci.json from the Monarch KG.
-
-Usage:
-    python scripts/getHPO.py
-    python scripts/getHPO.py --loci data/STRchive-loci.json
-
-Writes the loci JSON in place. Review the diff, then commit as usual:
-    python scripts/check-loci.py data/STRchive-loci.json
-    git add data/STRchive-loci.json && git commit -m 'Add HPO terms'
+Add HPO terms to STRchive-loci.json.
 """
-
 import argparse
 import json
 import sys
@@ -22,14 +13,10 @@ import pandas as pd
 REPO = Path(__file__).resolve().parent.parent
 LOCI_PATH = REPO / "data" / "STRchive-loci.json"
 
-HPO_URL = (
-    "https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/"
-    "disease_to_phenotypic_feature_association.all.tsv.gz"
-)
-
+HPO_URL = ("https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/disease_to_phenotypic_feature_association.all.tsv.gz")
 
 def write_loci(loci, loci_path):
-    """Write loci to path. Formatting matches scripts/check-loci.py exactly."""
+    """Write loci to path"""
     options = jsbeautifier.default_options()
     options.indent_size = 2
     options.brace_style = "expand"
@@ -37,9 +24,8 @@ def write_loci(loci, loci_path):
         fh.write(jsbeautifier.beautify(json.dumps(loci, ensure_ascii=False), options))
         fh.write("\n")
 
-
 def normalise_mondo(m):
-    """'0025193' to 'MONDO:0025193'."""
+    """add 'mondo' to name"""
     if m is None:
         return None
     m = str(m).strip()
@@ -47,15 +33,13 @@ def normalise_mondo(m):
         return None
     return m if m.startswith("MONDO:") else f"MONDO:{m}"
 
-
 def as_list(value):
     if value is None:
         return []
     return value if isinstance(value, list) else [value]
 
-
 def load_monarch():
-    """MONDO id to {HPO id: HPO name}."""
+    """mondo id to {HPO id: HPO name}."""
     hpo = pd.read_csv(
         HPO_URL,
         sep="\t",
@@ -74,14 +58,12 @@ def load_monarch():
         mondo_to_hpo.setdefault(mondo, {})[hpo_id] = hpo_name
     return mondo_to_hpo
 
-
 def annotate(loci, mondo_to_hpo):
-    """Set locus hpo terms in place."""
+    """Set hpo terms in place."""
     n_annotated = n_changed = n_no_mondo = 0
 
     for locus in loci:
         before = locus.get("hpo_terms")
-
         terms = {}
         for existing in as_list(before):
             existing = str(existing).strip()
@@ -97,12 +79,9 @@ def annotate(loci, mondo_to_hpo):
 
         after = sorted(terms.values()) or before
         locus["hpo_terms"] = after
-
         n_annotated += bool(after)
         n_changed += after != before
-
     return n_annotated, n_changed, n_no_mondo
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -115,21 +94,17 @@ def main():
         help="path to STRchive-loci.json (default: %(default)s)",
     )
     args = parser.parse_args()
-
     loci_path = args.loci.resolve()
     if not loci_path.exists():
         sys.exit(f"ERROR: {loci_path} not found")
-
     with open(loci_path) as fh:
         loci = json.load(fh)
 
     n_annotated, n_changed, n_no_mondo = annotate(loci, load_monarch())
-
     print(f"Loci: {len(loci)}")
     print(f"  with HPO terms after update: {n_annotated}")
     print(f"  hpo terms changed:           {n_changed}")
     print(f"  no mondo id:                 {n_no_mondo}")
-
     write_loci(loci, loci_path)
     print(f"Wrote {loci_path}")
 
