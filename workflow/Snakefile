@@ -167,14 +167,27 @@ rule curations_to_tsv:
         python {scripts_dir}curations_to_tsv.py -i {input.curations} -o {output.tsv}
         """
 
+
+_hpo_check = ["{base_dir}check-hpo.txt"] if stages in ("all", "new-refs") else []
+# Adds HPO terms to the loci JSON in place
+rule add_hpo:
+    input:
+        in_json = in_json
+    output:
+        check = temp("{base_dir}check-hpo.txt")
+    shell:
+        """
+        python {scripts_dir}getHPO.py --loci {input.in_json} > {output.check} 2>&1
+        """
+
 rule check_loci:
     input:
         in_json = in_json,
         schema = "{base_dir}STRchive-loci.schema.json",
         curations = "{base_dir}criTRia-curations.json",
-        curations_check = "{base_dir}check-curations.txt"
+        curations_check = "{base_dir}check-curations.txt",
+        hpo_check = _hpo_check
     output:
-        check = temp("{base_dir}check-loci.txt")
     shell:
         """
         python {scripts_dir}check-loci.py --schema {input.schema} --curations {input.curations} {input.in_json} 2> {output.check}
