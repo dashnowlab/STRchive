@@ -188,6 +188,7 @@ rule check_loci:
         curations_check = "{base_dir}check-curations.txt",
         hpo_check = _hpo_check
     output:
+        check = temp("{base_dir}check-loci.txt")
     shell:
         """
         python {scripts_dir}check-loci.py --schema {input.schema} --curations {input.curations} {input.in_json} 2> {output.check}
