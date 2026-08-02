@@ -3,7 +3,7 @@ PMID- 41888971
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260627
-LR  - 20260627
+LR  - 20260709
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 18
@@ -94,6 +94,7 @@ AD  - Department of Neuromuscular Research, National Institute of Neuroscience,
       National Center of Neurology and Psychiatry, 4-1-1 Ogawahigashi, Kodaira, Tokyo, 
       187-8502, Japan.
 LA  - eng
+SI  - Dryad/10.5061/dryad.1rn8pk18t
 GR  - 6-9, 5-7/Intramural Research Grants for Neurological and Psychiatric Disorders of 
       NCNP/
 GR  - 5-5, 5-6/Intramural Research Grants for Neurological and Psychiatric Disorders of 
@@ -102,6 +103,7 @@ GR  - JP24ak0101195s0102/Japan Agency for Medical Research and Development/
 GR  - 20ek0109490h0001, JP19ek0109285h0003, JP21ek0109490h0002, and JP 
       24ek0109617s0403/Japan Agency for Medical Research and Development/
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20260327
 PL  - England
 TA  - Genome Med
@@ -162,8 +164,8 @@ SO  - Genome Med. 2026 Mar 27;18(1):33. doi: 10.1186/s13073-026-01617-x.
 PMID- 41792844
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260613
-LR  - 20260613
+DCOM- 20260710
+LR  - 20260726
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 14
@@ -226,9 +228,10 @@ AD  - Department of Neurology, Washington University School of Medicine, Saint L
       MO, USA. weihlc@wustl.edu.
 LA  - eng
 GR  - R01 NS086810/NS/NINDS NIH HHS/United States
-GR  - R01 AG031867/AG/NIA NIH HHS/United States
-GR  - K24 AR073317/AR/NIAMS NIH HHS/United States
 GR  - P50 HD104463/HD/NICHD NIH HHS/United States
+GR  - K24 AR073317/AR/NIAMS NIH HHS/United States
+GR  - P50 HD118707/HD/NICHD NIH HHS/United States
+GR  - R01 AG031867/AG/NIA NIH HHS/United States
 GR  - R21 NS129096/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260306
@@ -423,8 +426,9 @@ PMID- 41125376
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260614
-LR  - 20260614
+LR  - 20260726
 IS  - 1349-7235 (Electronic)
+IS  - 0918-2918 (Print)
 IS  - 0918-2918 (Linking)
 VI  - 65
 IP  - 12
@@ -511,29 +515,31 @@ JID - 9204241
 RN  - 0 (LDL-Receptor Related Proteins)
 RN  - Oculopharyngodistal Myopathy
 SB  - IM
-MH  - Humans
-MH  - Phenotype
 MH  - Female
-MH  - *Muscular Dystrophies/genetics
+MH  - Humans
 MH  - Male
 MH  - *LDL-Receptor Related Proteins/genetics
-MH  - *Trinucleotide Repeat Expansion/genetics
-MH  - Pedigree
-MH  - Middle Aged
+MH  - *Muscular Dystrophies/genetics
 MH  - *Neuromuscular Diseases/genetics
-MH  - Adult
+MH  - Pedigree
+MH  - Phenotype
+MH  - *Trinucleotide Repeat Expansion/genetics
+PMC - PMC13349461
 OTO - NOTNLM
 OT  - CGG repeat expansions
 OT  - LRP12
 OT  - distal muscular atrophy
 OT  - long read sequencing
 OT  - oculopharyngodistal myopathy
+COIS- The authors state that they have no Conflict of Interest (COI).
 EDAT- 2025/10/23 00:26
 MHDA- 2026/06/15 11:37
+PMCR- 2026/06/15
 CRDT- 2025/10/22 21:24
 PHST- 2026/06/15 11:37 [medline]
 PHST- 2025/10/23 00:26 [pubmed]
 PHST- 2025/10/22 21:24 [entrez]
+PHST- 2026/06/15 00:00 [pmc-release]
 AID - 10.2169/internalmedicine.6194-25 [doi]
 PST - ppublish
 SO  - Intern Med. 2026 Jun 15;65(12):1688-1692. doi: 10.2169/internalmedicine.6194-25. 

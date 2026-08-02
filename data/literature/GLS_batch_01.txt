@@ -1,8 +1,139 @@
 
+PMID- 42484951
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260722
+LR  - 20260722
+IS  - 1473-4230 (Electronic)
+IS  - 1473-4222 (Linking)
+VI  - 25
+IP  - 4
+DP  - 2026 Jul 22
+TI  - Comprehensive Characterization of Clinical Phenotypes and CTG Repeat-Associated 
+      Manifestations in Spinocerebellar Ataxia Type 8.
+LID - 115 [pii]
+LID - 10.1007/s12311-026-02053-8 [doi]
+AB  - Spinocerebellar ataxia type 8 (SCA8) is traditionally characterized as a 
+      cerebellar syndrome, yet emerging evidence suggests significant phenotypic 
+      heterogeneity. The complex non-linear relationship between genetic burden and 
+      clinical severity remains understudied. We analyzed 172 SCA8 patients using 
+      advanced data mining techniques. Complete clinical demographic data were 
+      available for the cohort, with precise genetic repeat numbers available for 171 
+      individuals. K-means clustering identified patient subtypes, while Gaussian 
+      Graphical Models (GGM) visualized symptom topology. We developed exploratory 
+      machine learning models (Decision Tree/Random Forest) and employed Generalized 
+      Additive Models (GAM) to characterize non-linear genotype-phenotype dynamics. 
+      Clustering identified three distinct phenotypes: Severe Multi-system (12%), 
+      Mild/Atypical (38%), and Classical Cerebellar (50%). Network analysis revealed 
+      ataxia as a central hub, while ocular motor disorders acted as bridges between 
+      symptom clusters. A machine learning-derived decision tree stratified patients 
+      with promising exploratory performance (AUC: 0.82-0.89) using only three clinical 
+      checkpoints (pyramidal signs, speech disorders, and hyperreflexia), showing 
+      predictive patterns distinct from genetic repeat length. Additionally, GAM 
+      analysis identified a potential non-linear inflection point at ~ 100 CTG repeats. 
+      This hypothesis-generating observation provides a preliminary mathematical 
+      context for the paradoxical "low-repeat/high-severity" phenotype in the Severe 
+      cluster. SCA8 is a multi-dimensional spectrum disorder rather than a uniform 
+      cerebellar disease. Our exploratory diagnostic modeling provides a computational 
+      framework for understanding symptom predictors, while non-linear modeling 
+      provides novel insights into pathogenic heterogeneity, offering an exploratory 
+      foundation for future personalized management and clinical trial design.
+CI  - (c) 2026. The Author(s), under exclusive licence to Springer Science+Business 
+      Media, LLC, part of Springer Nature.
+FAU - Yang, Deli
+AU  - Yang D
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+AD  - Department of Neurology, The Second People's Hospital of Guiyang, No. 547 Jinyang 
+      South Road, Guiyang, 550000, Guizhou Province, China.
+FAU - Tang, Chao
+AU  - Tang C
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - Zhan, Yu
+AU  - Zhan Y
+AD  - Department of Neurology, Zhejiang Provincial People's Hospital Bijie Hospital, 
+      Bijie, China.
+FAU - Yang, Lang
+AU  - Yang L
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - Lei, Xiaoyang
+AU  - Lei X
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - Peng, Xiaoxue
+AU  - Peng X
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - He, Dian
+AU  - He D
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China. hedian@gmc.edu.cn.
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      No.28, Guiyi Street, Yunyan District, Guiyang, 550004, Guizhou, China. 
+      hedian@gmc.edu.cn.
+LA  - eng
+GR  - 2025-117/Guizhou Provincial Science and Technology Support Program Project/
+GR  - LCZX[2025]003/the Guizhou Provincial Clinical Medical Research Center 
+      Construction Project - Neurological Disease Research/
+PT  - Journal Article
+DEP - 20260722
+PL  - United States
+TA  - Cerebellum
+JT  - Cerebellum (London, England)
+JID - 101089443
+RN  - Spinocerebellar ataxia 8
+SB  - IM
+MH  - Humans
+MH  - Phenotype
+MH  - Female
+MH  - Male
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Middle Aged
+MH  - *Spinocerebellar Ataxias/genetics/physiopathology
+MH  - Clustering Algorithms
+MH  - Adult
+MH  - Machine Learning
+MH  - Genetic Association Studies
+MH  - Spinocerebellar Degenerations
+OTO - NOTNLM
+OT  - CTG repeat expansion
+OT  - Clinical phenotypic heterogeneity
+OT  - Cluster analysis
+OT  - Genotype-phenotype correlation
+OT  - Spinocerebellar ataxia type 8
+COIS- Declarations. Ethical Approval and Consent to Participation: We hereby certify 
+      that the research presented in this report was conducted in strict compliance 
+      with internationally recognized research ethics principles, including those 
+      outlined in the Declaration of Helsinki and the Belmont Report. The study 
+      protocol was formally reviewed and approved by the Institutional Review Board of 
+      the Affiliated Hospital of Guizhou Medical University (Ethical Review Approval 
+      Number: 2025-274). Written informed consent for publication and clinical data 
+      utilization was obtained from all adult participants prior to enrollment. For all 
+      participating minors, written informed consent was secured from their parents or 
+      legal guardians, accompanied by assent from the minors themselves. Consent for 
+      Publication: Not applicable. Competing Interests: The authors declare no 
+      competing interests. Conflict of Interest: The authors declare that the research 
+      was conducted in the absence of any commercial or financial relationships that 
+      could be construed as a potential conflict of interest.
+EDAT- 2026/07/22 12:37
+MHDA- 2026/07/22 12:38
+CRDT- 2026/07/22 11:16
+PHST- 2026/02/02 00:00 [received]
+PHST- 2026/07/10 00:00 [accepted]
+PHST- 2026/07/22 12:38 [medline]
+PHST- 2026/07/22 12:37 [pubmed]
+PHST- 2026/07/22 11:16 [entrez]
+AID - 10.1007/s12311-026-02053-8 [pii]
+AID - 10.1007/s12311-026-02053-8 [doi]
+PST - epublish
+SO  - Cerebellum. 2026 Jul 22;25(4):115. doi: 10.1007/s12311-026-02053-8.
+
 PMID- 41501457
 OWN - NLM
 STAT- In-Process
-LR  - 20260603
+LR  - 20260726
 IS  - 1476-4687 (Electronic)
 IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
@@ -116,6 +247,7 @@ AD  - Program in Medical and Population Genetics, Broad Institute of MIT and Har
 LA  - eng
 GR  - R01 HG013110/HG/NHGRI NIH HHS/United States
 GR  - R56 HG012698/HG/NHGRI NIH HHS/United States
+GR  - T32 HG002295/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
 DEP - 20260107
 PL  - England

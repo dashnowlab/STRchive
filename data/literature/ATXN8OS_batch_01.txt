@@ -1,9 +1,272 @@
 
+PMID- 42484951
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260722
+LR  - 20260722
+IS  - 1473-4230 (Electronic)
+IS  - 1473-4222 (Linking)
+VI  - 25
+IP  - 4
+DP  - 2026 Jul 22
+TI  - Comprehensive Characterization of Clinical Phenotypes and CTG Repeat-Associated 
+      Manifestations in Spinocerebellar Ataxia Type 8.
+LID - 115 [pii]
+LID - 10.1007/s12311-026-02053-8 [doi]
+AB  - Spinocerebellar ataxia type 8 (SCA8) is traditionally characterized as a 
+      cerebellar syndrome, yet emerging evidence suggests significant phenotypic 
+      heterogeneity. The complex non-linear relationship between genetic burden and 
+      clinical severity remains understudied. We analyzed 172 SCA8 patients using 
+      advanced data mining techniques. Complete clinical demographic data were 
+      available for the cohort, with precise genetic repeat numbers available for 171 
+      individuals. K-means clustering identified patient subtypes, while Gaussian 
+      Graphical Models (GGM) visualized symptom topology. We developed exploratory 
+      machine learning models (Decision Tree/Random Forest) and employed Generalized 
+      Additive Models (GAM) to characterize non-linear genotype-phenotype dynamics. 
+      Clustering identified three distinct phenotypes: Severe Multi-system (12%), 
+      Mild/Atypical (38%), and Classical Cerebellar (50%). Network analysis revealed 
+      ataxia as a central hub, while ocular motor disorders acted as bridges between 
+      symptom clusters. A machine learning-derived decision tree stratified patients 
+      with promising exploratory performance (AUC: 0.82-0.89) using only three clinical 
+      checkpoints (pyramidal signs, speech disorders, and hyperreflexia), showing 
+      predictive patterns distinct from genetic repeat length. Additionally, GAM 
+      analysis identified a potential non-linear inflection point at ~ 100 CTG repeats. 
+      This hypothesis-generating observation provides a preliminary mathematical 
+      context for the paradoxical "low-repeat/high-severity" phenotype in the Severe 
+      cluster. SCA8 is a multi-dimensional spectrum disorder rather than a uniform 
+      cerebellar disease. Our exploratory diagnostic modeling provides a computational 
+      framework for understanding symptom predictors, while non-linear modeling 
+      provides novel insights into pathogenic heterogeneity, offering an exploratory 
+      foundation for future personalized management and clinical trial design.
+CI  - (c) 2026. The Author(s), under exclusive licence to Springer Science+Business 
+      Media, LLC, part of Springer Nature.
+FAU - Yang, Deli
+AU  - Yang D
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+AD  - Department of Neurology, The Second People's Hospital of Guiyang, No. 547 Jinyang 
+      South Road, Guiyang, 550000, Guizhou Province, China.
+FAU - Tang, Chao
+AU  - Tang C
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - Zhan, Yu
+AU  - Zhan Y
+AD  - Department of Neurology, Zhejiang Provincial People's Hospital Bijie Hospital, 
+      Bijie, China.
+FAU - Yang, Lang
+AU  - Yang L
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - Lei, Xiaoyang
+AU  - Lei X
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - Peng, Xiaoxue
+AU  - Peng X
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China.
+FAU - He, Dian
+AU  - He D
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      Guiyang, 550000, Guizhou Province, China. hedian@gmc.edu.cn.
+AD  - Department of Neurology, Affiliated Hospital of Guizhou Medical University, 
+      No.28, Guiyi Street, Yunyan District, Guiyang, 550004, Guizhou, China. 
+      hedian@gmc.edu.cn.
+LA  - eng
+GR  - 2025-117/Guizhou Provincial Science and Technology Support Program Project/
+GR  - LCZX[2025]003/the Guizhou Provincial Clinical Medical Research Center 
+      Construction Project - Neurological Disease Research/
+PT  - Journal Article
+DEP - 20260722
+PL  - United States
+TA  - Cerebellum
+JT  - Cerebellum (London, England)
+JID - 101089443
+RN  - Spinocerebellar ataxia 8
+SB  - IM
+MH  - Humans
+MH  - Phenotype
+MH  - Female
+MH  - Male
+MH  - *Trinucleotide Repeat Expansion/genetics
+MH  - Middle Aged
+MH  - *Spinocerebellar Ataxias/genetics/physiopathology
+MH  - Clustering Algorithms
+MH  - Adult
+MH  - Machine Learning
+MH  - Genetic Association Studies
+MH  - Spinocerebellar Degenerations
+OTO - NOTNLM
+OT  - CTG repeat expansion
+OT  - Clinical phenotypic heterogeneity
+OT  - Cluster analysis
+OT  - Genotype-phenotype correlation
+OT  - Spinocerebellar ataxia type 8
+COIS- Declarations. Ethical Approval and Consent to Participation: We hereby certify 
+      that the research presented in this report was conducted in strict compliance 
+      with internationally recognized research ethics principles, including those 
+      outlined in the Declaration of Helsinki and the Belmont Report. The study 
+      protocol was formally reviewed and approved by the Institutional Review Board of 
+      the Affiliated Hospital of Guizhou Medical University (Ethical Review Approval 
+      Number: 2025-274). Written informed consent for publication and clinical data 
+      utilization was obtained from all adult participants prior to enrollment. For all 
+      participating minors, written informed consent was secured from their parents or 
+      legal guardians, accompanied by assent from the minors themselves. Consent for 
+      Publication: Not applicable. Competing Interests: The authors declare no 
+      competing interests. Conflict of Interest: The authors declare that the research 
+      was conducted in the absence of any commercial or financial relationships that 
+      could be construed as a potential conflict of interest.
+EDAT- 2026/07/22 12:37
+MHDA- 2026/07/22 12:38
+CRDT- 2026/07/22 11:16
+PHST- 2026/02/02 00:00 [received]
+PHST- 2026/07/10 00:00 [accepted]
+PHST- 2026/07/22 12:38 [medline]
+PHST- 2026/07/22 12:37 [pubmed]
+PHST- 2026/07/22 11:16 [entrez]
+AID - 10.1007/s12311-026-02053-8 [pii]
+AID - 10.1007/s12311-026-02053-8 [doi]
+PST - epublish
+SO  - Cerebellum. 2026 Jul 22;25(4):115. doi: 10.1007/s12311-026-02053-8.
+
+PMID- 42483834
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260722
+LR  - 20260726
+IS  - 1362-4962 (Electronic)
+IS  - 0305-1048 (Print)
+IS  - 0305-1048 (Linking)
+VI  - 54
+IP  - 14
+DP  - 2026 Jul 17
+TI  - Upstream non-AUG initiation and ribosomal -1 frameshifting in ATXN8OS CTA/CTG 
+      repeat-associated translation.
+LID - 10.1093/nar/gkag730 [doi]
+LID - gkag730
+AB  - Microsatellite repeat expansions contribute to the pathogenesis of many 
+      neurodegenerative disorders. In spinocerebellar ataxia type 8 (SCA8), abnormal 
+      expansion of CTA/CTG repeats in the 3' untranslated region of the ATXN8OS (ATXN8 
+      Opposite Strand) gene has been implicated in disease pathology. Although the 
+      occurrence of repeat-associated non-AUG (RAN) translation from the ATXN8 
+      transcript has been reported, whether and how RAN translation occurs from the 
+      ATXN8OS transcript has remained unexplored. Here, using a cell-free translation 
+      system and cultured cells, we showed that ATXN8OS undergoes robust 
+      AUG-independent translation in a repeat length-dependent manner. Mechanistic 
+      analyses revealed that translation of the poly L (0) frame initiates at a non-AUG 
+      codon located upstream of the repeats. Moreover, using live-cell imaging at a 
+      single messenger RNA level, we directly visualized ribosomal -1 frameshifting 
+      from the poly L (0) frame to the poly T-poly A (+2) frame during translation 
+      elongation. We further showed that ATXN8OS translation was enhanced upon 
+      activation of the integrated stress response. Together, these findings establish 
+      both the occurrence and the molecular mechanisms of ATXN8OS translation from 
+      expanded CTA/CTG repeats and provide insights into the pathogenic processes 
+      underlying SCA8.
+CI  - (c) The Author(s) 2026. Published by Oxford University Press.
+FAU - Sakamoto, Soyoka
+AU  - Sakamoto S
+AD  - School of Life Science and Technology, Institute of Science Tokyo, S2-19, 
+      Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+FAU - Ito, Hayato
+AU  - Ito H
+AD  - School of Life Science and Technology, Institute of Science Tokyo, S2-19, 
+      Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+FAU - Hasumi, Mayuka
+AU  - Hasumi M
+AD  - School of Life Science and Technology, Institute of Science Tokyo, S2-19, 
+      Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+FAU - Morisaki, Tatsuya
+AU  - Morisaki T
+AD  - Department of Biochemistry and Molecular Biology, Colorado State University, Fort 
+      Collins, CO 80523, United States.
+FAU - Hirano, Makito
+AU  - Hirano M
+AD  - Department of Neurology, Kindai University Faculty of Medicine, 1-14-1 Miharadai, 
+      Minami-ku, Sakai, Osaka 590-0197, Japan.
+FAU - Niwa, Tatsuya
+AU  - Niwa T
+AD  - School of Life Science and Technology, Institute of Science Tokyo, S2-19, 
+      Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+AD  - Cell Biology Center, Institute of Integrated Research, Institute of Science Tokyo 
+      S2-19, Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+FAU - Nagai, Yoshitaka
+AU  - Nagai Y
+AUID- ORCID: 0000-0003-1037-3129
+AD  - Department of Neurology, Kindai University Faculty of Medicine, 1-14-1 Miharadai, 
+      Minami-ku, Sakai, Osaka 590-0197, Japan.
+AD  - Life Science Research Institute, Kindai University 1-14-1 Miharadai, Minami-ku, 
+      Sakai, Osaka 590-0197, Japan.
+FAU - Stasevich, Timothy J
+AU  - Stasevich TJ
+AUID- ORCID: 0000-0002-0151-6274
+AD  - Department of Biochemistry and Molecular Biology, Colorado State University, Fort 
+      Collins, CO 80523, United States.
+FAU - Taguchi, Hideki
+AU  - Taguchi H
+AUID- ORCID: 0000-0002-6612-9339
+AD  - School of Life Science and Technology, Institute of Science Tokyo, S2-19, 
+      Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+AD  - Cell Biology Center, Institute of Integrated Research, Institute of Science Tokyo 
+      S2-19, Nagatsuta 4259, Midori-ku, Yokohama 226-8501, Japan.
+LA  - eng
+GR  - JP26116002/MEXT/
+GR  - JP18H03984/MEXT/
+GR  - JP21H04763/MEXT/
+GR  - JP20H05925/MEXT/
+GR  - JP21gm1410008/MEXT/
+GR  - 26KJ0240/JST/
+GR  - 24KJ1067/JST/
+GR  - Uehara Memorial Foundation/
+GR  - Mitsubishi Foundation/
+GR  - Daiichi Sankyo/
+PT  - Journal Article
+PL  - England
+TA  - Nucleic Acids Res
+JT  - Nucleic acids research
+JID - 0411011
+RN  - 0 (ATXN8OS gene product, human)
+RN  - 0 (RNA, Messenger)
+RN  - 0 (Codon, Initiator)
+RN  - 0 (Nerve Tissue Proteins)
+RN  - 0 (RNA, Long Noncoding)
+SB  - IM
+MH  - Humans
+MH  - *Frameshifting, Ribosomal
+MH  - *Peptide Chain Initiation, Translational
+MH  - RNA, Messenger/metabolism
+MH  - *Trinucleotide Repeat Expansion
+MH  - Codon, Initiator
+MH  - Animals
+MH  - Protein Biosynthesis
+MH  - Cell-Free System
+MH  - *Nerve Tissue Proteins/genetics
+MH  - RNA, Long Noncoding
+PMC - PMC13389315
+COIS- The authors declare that they have no conflict of interest with the contents of 
+      this article.
+EDAT- 2026/07/22 12:37
+MHDA- 2026/07/22 12:38
+PMCR- 2026/07/22
+CRDT- 2026/07/22 05:14
+PHST- 2026/01/23 00:00 [received]
+PHST- 2026/06/29 00:00 [revised]
+PHST- 2026/07/07 00:00 [accepted]
+PHST- 2026/07/22 12:38 [medline]
+PHST- 2026/07/22 12:37 [pubmed]
+PHST- 2026/07/22 05:14 [entrez]
+PHST- 2026/07/22 00:00 [pmc-release]
+AID - 8739578 [pii]
+AID - gkag730 [pii]
+AID - 10.1093/nar/gkag730 [doi]
+PST - ppublish
+SO  - Nucleic Acids Res. 2026 Jul 17;54(14):gkag730. doi: 10.1093/nar/gkag730.
+
 PMID- 42371259
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260629
-LR  - 20260629
+LR  - 20260726
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -156,8 +419,8 @@ SO  - Cerebellum. 2026 Jun 29;25(4):102. doi: 10.1007/s12311-026-02041-y.
 PMID- 42105044
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260509
-LR  - 20260623
+DCOM- 20260716
+LR  - 20260716
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 25
@@ -280,8 +543,8 @@ SO  - Cerebellum. 2026 May 9;25(3):76. doi: 10.1007/s12311-026-02019-w.
 PMID- 42096001
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260623
-LR  - 20260623
+DCOM- 20260716
+LR  - 20260716
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -587,8 +850,8 @@ SO  - medRxiv [Preprint]. 2026 May 1:2026.04.30.26352103. doi:
 PMID- 41771688
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260308
-LR  - 20260613
+DCOM- 20260709
+LR  - 20260709
 IS  - 2575-1077 (Electronic)
 IS  - 2575-1077 (Linking)
 VI  - 9
@@ -750,8 +1013,8 @@ SO  - Life Sci Alliance. 2026 Mar 2;9(5):e202503555. doi: 10.26508/lsa.202503555
 PMID- 41762523
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260612
-LR  - 20260612
+DCOM- 20260709
+LR  - 20260709
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 125
