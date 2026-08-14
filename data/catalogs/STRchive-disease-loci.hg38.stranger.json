@@ -531,6 +531,19 @@
   "Gene": "RILPL1"
 },
 {
+  "LocusId": "SCA_EP400",
+  "ReferenceRegion": "chr12:132062524-132062611",
+  "LocusStructure": "(CAG)*",
+  "VariantType": "Repeat",
+  "HGNCId": null,
+  "InheritanceMode": ["AD"],
+  "DisplayRU": "CAG",
+  "Disease": "SCA",
+  "NormalMax": 39,
+  "PathologicMin": 71,
+  "Gene": "EP400"
+},
+{
   "LocusId": "SCA8_ATXN8OS",
   "ReferenceRegion": ["chr13:70139353-70139383", "chr13:70139383-70139429"],
   "LocusStructure": "(CTA)*(CTG)*",
