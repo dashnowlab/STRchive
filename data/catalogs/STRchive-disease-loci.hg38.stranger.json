@@ -939,6 +939,19 @@
   "Gene": "ATXN10"
 },
 {
+  "LocusId": "FRAXG_BCLAF3",
+  "ReferenceRegion": "chrX:19990922-19990973",
+  "LocusStructure": "(CCG)*",
+  "VariantType": "Repeat",
+  "HGNCId": null,
+  "InheritanceMode": ["XR"],
+  "DisplayRU": "CCG",
+  "Disease": "FRAXG",
+  "NormalMax": 23,
+  "PathologicMin": 482,
+  "Gene": "BCLAF3"
+},
+{
   "LocusId": "PRTS_ARX",
   "ReferenceRegion": "chrX:25013529-25013565",
   "LocusStructure": "(NGC)*",

@@ -5,7 +5,11 @@ import { useElementSize } from "@reactuses/core";
 import { maxBy } from "lodash-es";
 
 type Props = {
-  rows: { name: string; className: string; values: number[] }[];
+  rows: {
+    name: string;
+    className: string;
+    values: (number | null | undefined)[];
+  }[];
   xAxis: string;
   fontSize?: number;
   min?: number;
@@ -36,8 +40,9 @@ export default function LineChart({
   const height = (rows.length + 0.5) * 2 * fontSize;
 
   /** rows with missing values filtered out */
-  const filteredRows = rows.filter(({ values }) =>
-    values.every((value) => value !== undefined && value !== null),
+  const filteredRows = rows.filter(
+    (row): row is typeof row & { values: number[] } =>
+      row.values.every((value) => value !== undefined && value !== null),
   );
 
   /** map value to svg units */
@@ -49,23 +54,18 @@ export default function LineChart({
   const scaleY = (index: number) => (index + 0.75) * 2 * fontSize;
 
   /** rows with derived props */
-  const mappedRows = rows
-    /** don't show row if we're missing values */
-    .filter(({ values }) =>
-      values.every((value) => value !== undefined && value !== null),
-    )
-    .map((row, index) => {
-      /** value x to svg coords */
-      const x = row.values.map(scaleX);
-      /** if same value, nudge apart to give bar nominal width */
-      if (x[0] === x[1]) {
-        x[0] -= fontSize * 0.1;
-        x[1] += fontSize * 0.1;
-      }
-      /** value y to svg coords */
-      const y = scaleY(index);
-      return { ...row, x, y };
-    });
+  const mappedRows = filteredRows.map((row, index) => {
+    /** value x to svg coords */
+    const x = row.values.map(scaleX);
+    /** if same value, nudge apart to give bar nominal width */
+    if (x[0] === x[1]) {
+      x[0] -= fontSize * 0.1;
+      x[1] += fontSize * 0.1;
+    }
+    /** value y to svg coords */
+    const y = scaleY(index);
+    return { ...row, x, y };
+  });
 
   /** fit to contents */
   useEffect(() => {

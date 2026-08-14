@@ -270,15 +270,12 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
             {
               name: "Age of Onset",
               className: "fill-primary",
-              values: [locus.age_onset_min ?? 0, locus.age_onset_max ?? 0],
+              values: [locus.age_onset_min, locus.age_onset_max],
             },
             {
               name: "(Typical)",
               className: "fill-secondary",
-              values: [
-                locus.typ_age_onset_min ?? 0,
-                locus.typ_age_onset_max ?? 0,
-              ],
+              values: [locus.typ_age_onset_min, locus.typ_age_onset_max],
             },
           ]}
           min={0}
@@ -431,20 +428,17 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
             {
               name: "Benign",
               className: "fill-primary",
-              values: [locus.benign_min ?? 0, locus.benign_max ?? 0],
+              values: [locus.benign_min, locus.benign_max],
             },
             {
               name: "Intermediate",
               className: "fill-tertiary",
-              values: [
-                locus.intermediate_min ?? 0,
-                locus.intermediate_max ?? 0,
-              ],
+              values: [locus.intermediate_min, locus.intermediate_max],
             },
             {
               name: "Pathogenic",
               className: "fill-secondary",
-              values: [locus.pathogenic_min ?? 0, locus.pathogenic_max ?? 0],
+              values: [locus.pathogenic_min, locus.pathogenic_max],
             },
           ]}
           xAxis="Units"
