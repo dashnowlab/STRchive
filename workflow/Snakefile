@@ -25,11 +25,9 @@ scripts_dir: str = config["scripts_directory"]
 ref_directory: str = config["ref_directory"]
 stages: str = config["stages"]
 
-### IMPORTS ###
-import os
-import re
 
-# Wildcard constraints; should all be alphanumeric
+# Pin the base_dir wildcard to the configured directory so it can't be
+# misinferred from an ambiguous path match in a rule's input/output
 wildcard_constraints:
     base_dir = base_dir
 
@@ -40,7 +38,7 @@ if stages not in ("all", "new-refs", "old-refs", "skip-refs", "quick"):
 _citations = expand("{base_dir}STRchive-citations.json", base_dir = base_dir) \
     if stages in ("all", "new-refs", "old-refs") else []
 
-# Reference alleles depend on the BED/TRGT catalogs, so skip for "quick"
+# Reference alleles require a reference genome download (slow), so skip for "quick"
 _ref_alleles = (
     expand("{base_dir}ref-alleles/ref-alleles.hg19.txt", base_dir = base_dir) +
     expand("{base_dir}ref-alleles/ref-alleles.hg38.txt", base_dir = base_dir) +
