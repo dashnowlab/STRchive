@@ -1967,7 +1967,7 @@
   "details": "56 to 75 pure CAGs have been observed in affected individuals [@doi:10.1101/2025.01.06.631535], however differences in locus definitions make defining the pathogenic range challenging. STRchive is using the broad locus definition of hg38 chr12:132062524-132062611, where the reference locus structure is (CAG)6(CAA)2(CAG)14(CAA)1(CAG)4(CAA)(CAG). All allele size ranges in STRchive are based on this definition and report the total length of the allele including CAA interruptions. A narrower locus definition of hg38 chr12:132062548-132062611 has also been used to describe this locus and results in a differently described pathogenic range [@doi:10.1101/2025.01.06.631535]. Disease link was proposed by Danzi et al [@doi:10.1101/2025.01.06.631535]. Family 1 (father and daughter) had a longest pure tract of 56-58 repeats with the structure (CAG)6(CAA)2(CAG)46-58(CAA)1(CAG)4(CAA)(CAG), while the son in Family 2 (mother ungenotyped) had 75 pure CAG repeats with the structure (CAG)75(CAA)(CAG), i.e. loss of several CAA interruptions.",
   "detection": "Long-read sequencing with targeted sanger confirmation has detected expansions in this locus [@doi:10.1101/2025.01.06.631535].",
   "mechanism": "Unknown",
-  "mechanism_detail": "Polyglutamine expansion",
+  "mechanism_detail": null,
   "year": "2026",
   "location_in_gene": "Exon 47",
   "gene_strand": "+",
