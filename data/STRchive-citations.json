@@ -166650,4 +166650,16 @@
   "manubot_success": false,
   "link": "https://pubmed.ncbi.nlm.nih.gov/39666847",
   "note": "WARNING: Couldn't parse Manubot response: list index out of range"
+},
+{
+  "id": "url:https://api.semanticscholar.org/CorpusID:89799045",
+  "manubot_success": true,
+  "link": "https://api.semanticscholar.org/CorpusID:89799045",
+  "title": "Positional cloning of a novel heritable, rare, folate-sensitive fragile site (FRAXG) in Xp22.1 associated with short stature in a Finnish kindred and cloning of an associated candidate gene (FXGAG)",
+  "type": "thesis",
+  "authors": [
+    ["Shanxiang", "Zhang"]
+  ],
+  "date": "2002",
+  "note": "Manually curated: Manubot cannot extract metadata from Semantic Scholar paper pages (JS-rendered, no static title). Source: PhD thesis, Semantic Scholar CorpusID:89799045. manubot_success set to true so this entry is preserved by run-manubot.py's --append skip logic and not overwritten by a future auto-generated stub."
 }]
