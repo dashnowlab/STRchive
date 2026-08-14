@@ -270,15 +270,12 @@ const title = `Locus ${locus.id.replaceAll("_", " ")}`;
             {
               name: "Age of Onset",
               className: "fill-primary",
-              values: [locus.age_onset_min ?? 0, locus.age_onset_max ?? 0],
+              values: [locus.age_onset_min, locus.age_onset_max],
             },
             {
               name: "(Typical)",
               className: "fill-secondary",
-              values: [
-                locus.typ_age_onset_min ?? 0,
-                locus.typ_age_onset_max ?? 0,
-              ],
+              values: [locus.typ_age_onset_min, locus.typ_age_onset_max],
             },
           ]}
           min={0}
