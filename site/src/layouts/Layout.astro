@@ -21,24 +21,22 @@ const {
   <head>
     <GoogleAnalytics id="G-Y6DS7LND0G" />
 
-    <!-- basic -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
     <title>{[title, TITLE].filter(Boolean).join(" | ")}</title>
+
     <meta name="title" content={TITLE} />
     <meta name="description" content={DESCRIPTION} />
 
-    <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
 
-    <!-- open graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={URL} />
     <meta property="og:title" content={TITLE} />
     <meta property="og:description" content={DESCRIPTION} />
-    <meta property="og:image" content="share.jpg" />
+    <meta property="og:image" content={`${URL}/share.jpg`} />
 
-    <!-- misc -->
     <meta name="generator" content="{Astro.generator}" />
   </head>
 
