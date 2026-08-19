@@ -204,7 +204,7 @@ export default function Table<Datum extends object>({
                     const rows = table.getPrePaginationRowModel().rows.length;
                     const { pageIndex, pageSize } = table.getState().pagination;
                     return [
-                      pageIndex * pageSize + 1,
+                      rows ? pageIndex * pageSize + 1 : 0,
                       "–",
                       Math.min(
                         (pageIndex + 1) * Math.min(pageSize, rows),
