@@ -3414,7 +3414,7 @@
   "details": "Benign alleles range from 3-14 repeats and pathogenic alleles (650+ repeats) appear fully penetrant; the significance of intermediate alleles has yet to be elucidated [@pmid:25101480]. Interruptions documented: GGCTG, GGCCCTG, GGCCG, and GGCCTTG [@pmid:37051597].",
   "detection": "RP-PCR with fragment analysis has been used to detect these expansions [@pmid:21683323]. Long-read sequencing has accurately sized alleles [@pmid:37051597].",
   "mechanism": "GoF",
-  "mechanism_detail": "Toxic RNA-mediated GoF [@pmid:21683323] and potential toxic protein GoF through RAN translation [@pmid:32375043; @pmid:40015643].",
+  "mechanism_detail": "Toxic RNA-mediated GoF: The expanded GGCCTG transcripts accumulate as nuclear RNA foci that sequester splicing factor SRSF2 [@pmid:21683323]. Additionally, toxic protein GoF through RAN translation has been implicated as an additional driver of pathogenicity [@pmid:32375043; @pmid:40015643].",
   "year": "2011 [@pmid:21683323]",
   "location_in_gene": "Intron 1",
   "gene_strand": "+",
