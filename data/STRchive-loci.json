@@ -1753,7 +1753,7 @@
   "age_onset_max": 7.0,
   "typ_age_onset_min": null,
   "typ_age_onset_max": null,
-  "details": "There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family, from which the benign and pathogenic ranges were inferred from affected and unaffected family members [@pmid:27417533]. The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition.",
+  "details": "There is conflicting evidence for the association between this repeat expansion and Duchenne muscular dystrophy. The association was reported in a single family, from which the benign and pathogenic ranges were inferred from affected and unaffected family members [@pmid:27417533]. The population frequency of the proposed pathogenic allele is much higher than expected for a highly penetrant early-onset condition: a large population analysis found the proposed pathogenic genotype at 4.7% of gnomAD males and 0.09% of gnomAD females, far exceeding DMD prevalence and supporting refutation of this repeat expansion as a disease-causing locus [@pmid:40140942]. See the criTRia curation for full evidence details [@url:https://strchive.org/critria/DMD_DMD].",
   "detection": null,
   "mechanism": "LoF",
   "mechanism_detail": "Functional defect in dystrophin/dystroglycan [@pmid:16969582].",
@@ -1803,7 +1803,7 @@
   "webstr_hg19": ["STR_1545664"],
   "locus_tags": [],
   "disease_tags": [],
-  "references": ["pmid:27417533", "pmid:16969582", "genereviews:NBK1119", "pmid:35168641", "mondo:0010679"],
+  "references": ["pmid:27417533", "pmid:16969582", "genereviews:NBK1119", "pmid:35168641", "mondo:0010679", "pmid:40140942", "url:https://strchive.org/critria/DMD_DMD"],
   "additional_literature": ["pmid:41906116", "pmid:41691287", "pmid:41244984", "pmid:41173008", "pmid:39874107", "pmid:39803454", "pmid:39713478", "pmid:39251998", "pmid:38290145", "pmid:37829280", "pmid:37270548", "pmid:37090938", "pmid:36975100", "pmid:36048237", "pmid:35615378", "pmid:35093299", "pmid:34371182", "pmid:34238289", "pmid:33349121", "pmid:30914715", "pmid:30349485", "pmid:29687370", "pmid:27924830", "pmid:27178005", "pmid:27529242", "pmid:27276190", "pmid:24411039", "pmid:25804023", "pmid:24191945", "pmid:23894429", "pmid:23695957", "pmid:23659897", "pmid:23574351", "pmid:23538453", "pmid:21901138", "pmid:21305566", "pmid:22830166", "pmid:19927354", "pmid:19907931", "pmid:19309270", "pmid:19158820", "pmid:19108751", "pmid:18393226", "pmid:18359022", "pmid:17439955", "pmid:16553208", "pmid:16415967", "pmid:12132577", "pmid:11807410", "pmid:11593558", "pmid:11280167", "pmid:11185740", "pmid:10445321", "pmid:9894797", "pmid:8588583", "pmid:7633442", "pmid:7705851"]
 },
 {
@@ -3344,7 +3344,7 @@
   "age_onset_max": 77.0,
   "typ_age_onset_min": 44.0,
   "typ_age_onset_max": 60.0,
-  "details": "Allelic ranges taken from STRipy based on primary literature [@stripy:NIPA1]. Currently proposed as a modifier for ALS [@pmid:31286297]. Note: the motif for this locus is CGG in hg38 and T2T reference genomes, while in hg19, the motif is the reverse complement CCG because it is on the negative strand. GCA, GCT, and GCC interruptions have been reported [@pmid:40585427].",
+  "details": "Allelic ranges taken from STRipy based on primary literature [@stripy:NIPA1]. Currently proposed as a modifier for ALS [@pmid:31286297]. Note: the motif for this locus is CGG in hg38 and T2T reference genomes, while in hg19, the motif is the reverse complement CCG because it is on the negative strand. GCA, GCT, and GCC interruptions have been reported [@pmid:40585427]. However, this association is disputed: a Project MinE case-control analysis found expanded alleles at similar frequencies in ALS cases and controls (4.6% each), with no significant ALS susceptibility association and only a nominal survival effect [@pmid:31286297]. See the criTRia curation for full evidence details [@url:https://strchive.org/critria/ALS1_NIPA1].",
   "detection": null,
   "mechanism": null,
   "mechanism_detail": null,
@@ -3384,7 +3384,7 @@
   "webstr_hg19": [],
   "locus_tags": ["proposed_modifier"],
   "disease_tags": [],
-  "references": ["pmid:26777436", "pmid:22378146", "stripy:NIPA1", "pmid:31286297", "pmid:40585427", "pmid:30342764", "pmid:34179866", "omim:105400"],
+  "references": ["pmid:26777436", "pmid:22378146", "stripy:NIPA1", "pmid:31286297", "pmid:40585427", "pmid:30342764", "pmid:34179866", "omim:105400", "url:https://strchive.org/critria/ALS1_NIPA1"],
   "additional_literature": ["pmid:41426430", "pmid:38667292", "pmid:37043475", "pmid:35869263", "pmid:33414559", "pmid:32954321", "pmid:24866401", "pmid:21419568", "pmid:11839840", "pmid:10987648", "pmid:9736780"]
 },
 {
@@ -3823,7 +3823,7 @@
   "age_onset_max": 87.0,
   "typ_age_onset_min": 57.0,
   "typ_age_onset_max": 59.0,
-  "details": "There is conflicting evidence for the association between this repeat expansion and Parkinson's risk [@pmid:20399836; @pmid:10196696; @pmid:22963882], as well as overall disease significance. May be predisposing factor in earlier age of onset in FRDA patients [@pmid:19043662].",
+  "details": "There is conflicting evidence for the association between this repeat expansion and Parkinson's risk [@pmid:20399836; @pmid:10196696; @pmid:22963882], as well as overall disease significance. May be predisposing factor in earlier age of onset in FRDA patients [@pmid:19043662]. This locus's relevance to CPEO specifically is disputed: the cited sources evaluate the POLG CAG repeat primarily as a modifier/association signal in Parkinson's disease and Friedreich ataxia cohorts rather than in CPEO patients directly [@pmid:22963882]; pathogenic POLG coding variants, which are distinct from this repeat, are a separately well-established cause of CPEO. See the criTRia curation for full evidence details [@url:https://strchive.org/critria/CPEO_POLG].",
   "detection": null,
   "mechanism": null,
   "mechanism_detail": null,
@@ -3878,7 +3878,7 @@
   "webstr_hg19": ["STR_493430"],
   "locus_tags": ["proposed_modifier"],
   "disease_tags": [],
-  "references": ["pmid:20399836", "pmid:20826197", "pmid:10196696", "pmid:22963882", "pmid:19043662", "omim:258450", "omim:157640", "pmid:38876750"],
+  "references": ["pmid:20399836", "pmid:20826197", "pmid:10196696", "pmid:22963882", "pmid:19043662", "omim:258450", "omim:157640", "pmid:38876750", "url:https://strchive.org/critria/CPEO_POLG"],
   "additional_literature": ["pmid:41009775", "pmid:40844737", "pmid:39812846", "pmid:34600502", "pmid:29029963", "pmid:28444220", "pmid:25767537", "pmid:24491464", "pmid:23912752", "pmid:23493802", "pmid:20803511", "pmid:15694274", "pmid:12036482"]
 },
 {
