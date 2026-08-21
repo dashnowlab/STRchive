@@ -1677,7 +1677,7 @@
   "disease": "Intellectual developmental disorder, FRA12A type",
   "inheritance": ["AD"],
   "association_type": ["Mendelian"],
-  "disease_description": "FRA12A is a rare, folate-sensitive chromosomal fragile site on chromosome 12 associated with intellectual developmental disorder, FRA12A type. Impaired intellectual development with or without other anomalies has been described in patients with over 40% of cells expressing FRA12A [@omim:136630]. The DIP2B CGG repeat expansion causes this folate-sensitive site and is associated with a broad phenotypic range, including intellectual disability, ataxia/movement disorder, and epilepsy [@pmid:39854091; @pmid:17236128; @pmid:34622207]; cardiovascular associations have also been reported [@pmid:38418263].",
+  "disease_description": "FRA12A is a rare, folate-sensitive chromosomal fragile site on chromosome 12 associated with intellectual developmental disorder, FRA12A type. Impaired intellectual development with or without other anomalies has been described in patients with over 40% of cells expressing FRA12A [@omim:136630]. The DIP2B CGG repeat expansion causes this folate-sensitive site and is associated with a broad phenotypic range, including intellectual disability, ataxia/movement disorder, and epilepsy [@pmid:39854091; @pmid:17236128; @pmid:34622207]; cardiovascular associations have also been reported [@pmid:38418263]. However, this locus-disease association is disputed: a cohort of 14 individuals with DIP2B CGG expansions of 90-677 repeats found no consistent phenotype, including unaffected individuals with expansions as large as 616 repeats, arguing against a reliable genotype-phenotype relationship [@pmid:42205056]. See the criTRia curation for full evidence details [@url:https://strchive.org/critria/FRA12A_DIP2B].",
   "hpo_terms": ["HP:0000708 Atypical behavior", "HP:0000962 Hyperkeratosis", "HP:0001019 Erythroderma", "HP:0001249 Intellectual disability", "HP:0001250 Seizure", "HP:0001263 Global developmental delay", "HP:0002783 Recurrent lower respiratory tract infections"],
   "prevalence": null,
   "prevalence_details": "Appears to occur in those of European ancestry/ethnicity [@omim:136630].",
@@ -1726,8 +1726,8 @@
   "webstr_hg19": ["Expansion_FRA12A_MR/DIP2B"],
   "locus_tags": [],
   "disease_tags": [],
-  "references": ["pmid:3742859", "pmid:4042396", "omim:136630", "pmid:37248219", "pmid:17236128", "pmid:39854091", "pmid:34622207", "pmid:38418263"],
-  "additional_literature": ["pmid:42205056", "pmid:37090938"]
+  "references": ["pmid:3742859", "pmid:4042396", "omim:136630", "pmid:37248219", "pmid:17236128", "pmid:39854091", "pmid:34622207", "pmid:38418263", "pmid:42205056", "url:https://strchive.org/critria/FRA12A_DIP2B"],
+  "additional_literature": ["pmid:37090938"]
 },
 {
   "id": "DMD_DMD",
