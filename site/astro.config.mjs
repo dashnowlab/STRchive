@@ -1,5 +1,6 @@
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import svgr from "vite-plugin-svgr";
@@ -7,7 +8,13 @@ import svgr from "vite-plugin-svgr";
 // https://astro.build/config
 export default defineConfig({
   site: "https://strchive.org",
-  integrations: [mdx(), react({})],
+  integrations: [
+    mdx(),
+    react({}),
+    sitemap({
+      filter: (path) => !path.endsWith("/edit"),
+    }),
+  ],
   /** https://github.com/withastro/astro/issues/4190 */
   trailingSlash: "never",
   vite: {
