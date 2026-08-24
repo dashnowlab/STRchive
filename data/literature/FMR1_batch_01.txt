@@ -1,9 +1,686 @@
 
+PMID- 42537027
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260731
+LR  - 20260731
+IS  - 0794-859X (Print)
+IS  - 0794-859X (Linking)
+VI  - 41
+IP  - 1
+DP  - 2026 Jun 30
+TI  - Beyond Repeats: Intragenic Variants in FMR1 and Their Contribution to Fragile X 
+      Syndrome Pathogenesis.
+PG  - 123-132
+AB  - Fragile X Syndrome (FXS), the most common inherited cause of intellectual 
+      disability, is typically caused by expansion of a CGG triplet repeat in the 5' 
+      untranslated region (5'-UTR) of the FMR1 gene. Growing evidence indicates that 
+      intragenic mutations in FMR1, including single-nucleotide variants (SNVs) and 
+      structural changes, can also alter FMR1 function without the classical pathogenic 
+      expansion of CGG repeats. This study re-analysed publicly available 
+      next-generation sequencing (NGS) data from BioProject PRJNA745542 using a 
+      reproducible Galaxy-based bioinformatics workflow to identify non-repeat 
+      intragenic FMR1 variants. Of 18 available datasets, 11 paired-end Illumina 
+      samples passing quality control (Phred > 30) were analysed for non-repeat 
+      intragenic FMR1 variants. Ninety-one unique variants were identified: 61 
+      single-nucleotide variants (SNVs), 26 insertions/deletions (indels), three mixed 
+      (complex) variants, and one multi-nucleotide polymorphism (MNP), producing 1,107 
+      predicted gene effects. SnpEff predicted sixteen variants to have high or 
+      moderate impact, predominantly within the KH1 and KH2 RNA-binding domains of 
+      FMRP. Most predicted effects (94.3%) were intronic or non-coding, suggesting a 
+      possible regulatory role in the expression or processing of FMR1 transcripts. 
+      These preliminary findings warrant validation in larger cohorts of subjects with 
+      verified disease status. High-impact KH-domain variants are predicted to disrupt 
+      hydrogen bonding required for FMRP RNA-binding and mRNA transport. This study 
+      extends the known mutation spectrum of FMR1 and supports the development of 
+      comprehensive NGS-based diagnostic assays that combine intragenic SNV and indel 
+      detection with quantitative CGG repeat analysis. Further studies using cellular 
+      or animal models are needed to validate the candidate variants identified and 
+      their potential role in Fragile X syndrome pathogenesis.
+FAU - Latunji, Abayomi
+AU  - Latunji A
+AD  - University of Ibadan. ROR: https://ror.org/03wx2rr30
+LA  - eng
+PT  - Journal Article
+DEP - 20260630
+PL  - Nigeria
+TA  - Niger J Physiol Sci
+JT  - Nigerian journal of physiological sciences : official publication of the 
+      Physiological Society of Nigeria
+JID - 8811109
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (FMR1 protein, human)
+RN  - 0 (5' Untranslated Regions)
+SB  - IM
+MH  - *Fragile X Messenger Ribonucleoprotein 1/genetics
+MH  - *Fragile X Syndrome/genetics
+MH  - Humans
+MH  - Polymorphism, Single Nucleotide/genetics
+MH  - Mutation/genetics
+MH  - High-Throughput Nucleotide Sequencing/methods
+MH  - Genetic Variation/genetics
+MH  - 5' Untranslated Regions/genetics
+MH  - Genetic Predisposition to Disease
+EDAT- 2026/07/31 18:35
+MHDA- 2026/07/31 18:36
+CRDT- 2026/07/31 16:33
+PHST- 2026/06/12 00:00 [received]
+PHST- 2026/07/16 00:00 [accepted]
+PHST- 2026/07/31 18:36 [medline]
+PHST- 2026/07/31 18:35 [pubmed]
+PHST- 2026/07/31 16:33 [entrez]
+PST - epublish
+SO  - Niger J Physiol Sci. 2026 Jun 30;41(1):123-132.
+
+PMID- 42482100
+OWN - NLM
+STAT- Publisher
+LR  - 20260721
+IS  - 1756-994X (Electronic)
+IS  - 1756-994X (Linking)
+DP  - 2026 Jul 22
+TI  - Multiomic approaches identify a rare CCG repeat expansion in BCLAF3 in 
+      neurodevelopmental disorders.
+LID - 10.1186/s13073-026-01729-4 [doi]
+AB  - BACKGROUND: Tandem repeat expansions have been implicated in various neurological 
+      conditions. Here, we present a novel hypermethylated CCG repeat expansion on Xp22 
+      in the 5'UTR of BCLAF3 in males with neurodevelopmental disorders. METHODS: We 
+      used patient-derived fibroblasts and neuronal models from a family with BCLAF3 
+      repeat expansions to generate multiomic data and investigate downstream molecular 
+      consequences of the repeat expansion. To identify additional affected individuals 
+      with BCLAF3 repeat expansions, we screened methylation arrays (n = 12,375) and 
+      short-read genomes (n = 15,963) from probands with neurodevelopmental 
+      presentations. We also characterized BCLAF3 repeat expansions in the general 
+      population using long-read sequencing data (n = 793) and population-level 
+      short-read sequencing data (n = 410,076). RESULTS: Long-read sequencing validated 
+      hypermethylation of expanded repeats. Patient-derived cells showed repressed 
+      BCLAF3 RNA and protein expression. We show that the BCLAF3 CCG repeat expansion 
+      constitutes a previously uncharacterized fragile site (FRAXG) that shifts the 
+      surrounding chromatin compartment from open euchromatin to closed 
+      heterochromatin. Using our multiomic screening approaches, we identified three 
+      additional unrelated males and one related male cousin with long-read sequencing 
+      validated (n = 2) or short-read sequencing predicted (n = 2) repeat expansions. 
+      In one family, the BCLAF3 repeats segregate with more severe phenotypes than 
+      expected for the primary diagnoses. Long-read sequencing in three carrier mothers 
+      showed skewed X-inactivation against the repeat expansion, highlighting the 
+      potential deleterious effect of an allele with an expansion. Expansions were 
+      absent in long-read sequencing data from control populations. Assessment of the 
+      BCLAF3 repeat expansion in the UK Biobank indicates that it may be ~ 20X rarer 
+      than FMR1 repeat expansions. CONCLUSIONS: CCG repeat expansions in the 5'UTR of 
+      BCLAF3 likely constitute a novel genetic etiology associated with X-linked 
+      neurodevelopmental phenotypes in males. Future work will be essential to 
+      delineate the phenotypic spectrum and determine a disease pathomechanism.
+CI  - (c) 2026. The Author(s).
+FAU - LaFlamme, Christy W
+AU  - LaFlamme CW
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA.
+AD  - Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, 
+      Memphis, TN, 38105, USA.
+FAU - Clarkson, Chris
+AU  - Clarkson C
+AD  - Clinical Pharmacology and Precision Medicine, School of Medicine and Dentistry, 
+      William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Department of Neuromuscular Diseases, UCL Institute of Neurology, London, WC1N 
+      3BG, UK.
+FAU - Ibanez, Kristina
+AU  - Ibanez K
+AD  - Clinical Pharmacology and Precision Medicine, School of Medicine and Dentistry, 
+      William Harvey Research Institute, Queen Mary University of London, London, UK.
+FAU - Wang, Jin-Yuan
+AU  - Wang JY
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA.
+FAU - Sengupta, Soham
+AU  - Sengupta S
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA.
+FAU - Lord, Jenny
+AU  - Lord J
+AD  - Sheffield Institute for Translational Neuroscience (SITraN), The University of 
+      Sheffield, Sheffield, UK.
+FAU - Valentine, Virginia
+AU  - Valentine V
+AD  - Cytogenetics Shared Resource, St. Jude Children's Research Hospital, Memphis, TN, 
+      USA.
+FAU - Bonkowski, Emily S
+AU  - Bonkowski ES
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA.
+FAU - Almanza Fuerte, Edith P
+AU  - Almanza Fuerte EP
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA.
+FAU - Olszewski, Athena R
+AU  - Olszewski AR
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA.
+AD  - Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, 
+      Memphis, TN, 38105, USA.
+FAU - Ghosh, Sourav
+AU  - Ghosh S
+AD  - Department of Pathology & Laboratory Medicine, Western University, London, ON, 
+      N5A 3K7, Canada.
+FAU - Jadhav, Bharati
+AU  - Jadhav B
+AD  - Department of Genetics and Genomic Sciences and Mindich Child Health and 
+      Development Institute, Icahn School of Medicine at Mount Sinai, New York, NY, 
+      USA.
+FAU - Mack, Taralynn
+AU  - Mack T
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA, 98195, USA.
+FAU - Lin, Jiadong
+AU  - Lin J
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA, 98195, USA.
+FAU - Gibson, Sophia B
+AU  - Gibson SB
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA, 98195, USA.
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington 
+      and Seattle Children's Hospital, Seattle, WA, 98195, USA.
+FAU - van Hagen, Johanna M
+AU  - van Hagen JM
+AD  - Department of Human Genetics, Amsterdam UMC Location Vrije Universiteit 
+      Amsterdam, Amsterdam, Netherlands.
+FAU - Alders, Marielle
+AU  - Alders M
+AD  - Department of Human Genetics, Amsterdam Reproduction and Development Research 
+      Institute, Amsterdam UMC, University of Amsterdam, Meibergdreef 9, Amsterdam, 
+      1105 AZ, Netherlands.
+FAU - Martin-Geary, Alexandra
+AU  - Martin-Geary A
+AD  - Big Data Institute, University of Oxford, Oxford, UK.
+AD  - Centre for Human Genetics, University of Oxford, Oxford, UK.
+FAU - Gu, Bida
+AU  - Gu B
+AD  - Department of Quantitative and Computational Biology, University of Southern 
+      California, Los Angeles, CA, 90089, USA.
+FAU - Kharbanda, Mira
+AU  - Kharbanda M
+AD  - University Hospital Southampton NHS Foundation Trust, Southampton, UK.
+FAU - Banka, Siddharth
+AU  - Banka S
+AD  - Division of Evolution, Infection and Genomics, School of Biological Sciences, 
+      Faculty of Biology, Medicine and Health, University of Manchester, Manchester, 
+      UK.
+AD  - Manchester Centre for Genomic Medicine, St. Mary's Hospital, Health Innovation 
+      Manchester, Manchester, UK.
+FAU - Stuart, Helen M
+AU  - Stuart HM
+AD  - Manchester Centre for Genomic Medicine, Manchester University NHS Foundation 
+      Trust, Manchester, UK.
+AD  - Division of Evolution, Infection and Genomics, Faculty of Biology, Medicine, and 
+      Human Sciences, University of Manchester, Manchester, UK.
+FAU - Webster, Andrew R
+AU  - Webster AR
+AD  - Institute of Ophthalmology, University College London, 11-43 Bath Street, London, 
+      UK.
+AD  - Genetics, Moorfields Eye Hospital NHS Foundation Trust, 162 City Road, London, 
+      EC1V 2PD, UK.
+FAU - Hosokawa, Akimoto
+AU  - Hosokawa A
+AD  - Department of Paediatrics and Child Health, University of Otago, Wellington, 
+      6242, New Zealand.
+FAU - Dashnow, Harriet
+AU  - Dashnow H
+AD  - Department of Biomedical Informatics, School of Medicine, University of Colorado 
+      Anschutz, Aurora, CO, USA.
+AD  - Department of Human Genetics, University of Utah, Salt Lake City, UT, USA.
+FAU - Bajpai, Richa
+AU  - Bajpai R
+AD  - Center for Advanced Genome Engineering, Department of Cell and Molecular Biology, 
+      St. Jude Children's Research Hospital, Memphis, TN, 38105, USA.
+FAU - Pruett-Miller, Shondra M
+AU  - Pruett-Miller SM
+AD  - Center for Advanced Genome Engineering, Department of Cell and Molecular Biology, 
+      St. Jude Children's Research Hospital, Memphis, TN, 38105, USA.
+FAU - Chaisson, Mark J P
+AU  - Chaisson MJP
+AD  - Department of Quantitative and Computational Biology, University of Southern 
+      California, Los Angeles, CA, 90089, USA.
+FAU - Miller, Danny E
+AU  - Miller DE
+AD  - Division of Genetic Medicine, Department of Pediatrics, University of Washington 
+      and Seattle Children's Hospital, Seattle, WA, 98195, USA.
+AD  - Department of Laboratory Medicine and Pathology, University of Washington, 
+      Seattle, WA, 98195, USA.
+AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
+      WA, 98195, USA.
+FAU - Whiffin, Nicola
+AU  - Whiffin N
+AD  - Big Data Institute, University of Oxford, Oxford, UK.
+AD  - Centre for Human Genetics, University of Oxford, Oxford, UK.
+AD  - Broad Center for Mendelian Genomics, Program in Medical and Population Genetics, 
+      Broad Institute of MIT and Harvard, Cambridge, MA, USA.
+FAU - Eichler, Evan E
+AU  - Eichler EE
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA, 98195, USA.
+AD  - Howard Hughes Medical Institute, University of Washington, Seattle, WA, 98195, 
+      USA.
+FAU - Sisodiya, Sanjay M
+AU  - Sisodiya SM
+AD  - Department of Epilepsy, UCL Queen Square Institute of Neurology, London, UK.
+AD  - Chalfont Centre for Epilepsy, Chalfont Saint Peter, Buckinghamshire, UK.
+FAU - Houlden, Henry
+AU  - Houlden H
+AD  - Department of Neuromuscular Diseases, UCL Institute of Neurology, London, WC1N 
+      3BG, UK.
+FAU - Sharp, Andrew J
+AU  - Sharp AJ
+AD  - Department of Genetics and Genomic Sciences and Mindich Child Health and 
+      Development Institute, Icahn School of Medicine at Mount Sinai, New York, NY, 
+      USA.
+FAU - Sadikovic, Bekim
+AU  - Sadikovic B
+AD  - Department of Pathology & Laboratory Medicine, Western University, London, ON, 
+      N5A 3K7, Canada.
+AD  - Verspeeten Clinical Genome Centre, London Health Science Centre, London, ON, N6A 
+      5W9, Canada.
+FAU - Valentine, Marc
+AU  - Valentine M
+AD  - Cytogenetics Shared Resource, St. Jude Children's Research Hospital, Memphis, TN, 
+      USA.
+FAU - Sadleir, Lynette G
+AU  - Sadleir LG
+AD  - Department of Paediatrics and Child Health, University of Otago, Wellington, 
+      6242, New Zealand.
+FAU - Tucci, Arianna
+AU  - Tucci A
+AD  - Clinical Pharmacology and Precision Medicine, School of Medicine and Dentistry, 
+      William Harvey Research Institute, Queen Mary University of London, London, UK.
+AD  - Department of Neurodegenerative Disease, UCL Queen Square Institute of Neurology, 
+      University College London, London, WC1E 6BT, UK.
+FAU - Mefford, Heather C
+AU  - Mefford HC
+AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric 
+      Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
+      TN, 38105, USA. Heather.Mefford@stjude.org.
+LA  - eng
+PT  - Journal Article
+DEP - 20260722
+PL  - England
+TA  - Genome Med
+JT  - Genome medicine
+JID - 101475844
+SB  - IM
+OTO - NOTNLM
+OT  - BCLAF3
+OT  - DNA methylation
+OT  - Repeat expansions
+COIS- Declarations. Ethics approval and consent to participate: This study was approved 
+      by the Institutional Review Board (IRB) of St. Jude Children's Research Hospital 
+      (SJCRH) and the national ethics committee of New Zealand (NZ HDEC). Written 
+      informed consent was provided by parents or legal guardians of participants. 
+      Samples were collected by a qualified health professional in accordance with 
+      hospital policies. All protocols and the research adhere to the ethical 
+      principles outlined in the ⁠Declaration of Helsinki. Consent for publication: Not 
+      applicable. Competing interests: B.S. is a shareholder in EpiSign Inc, a company 
+      involved in commercialization of EpiSign software. D.E.M is on scientific 
+      advisory boards at Oxford Nanopore Technologies (ONT) and Basis Genetics, is 
+      engaged in research agreements with ONT and PacBio, has received research and 
+      travel support from ONT and PacBio, holds stock options in MyOme and Basis 
+      Genetics, and is a consultant for MyOme. L.G.S. has received research grants and 
+      consultancy fees from Zynerba Pharmaceuticals and has served on Takeda and Eisai 
+      Pharmaceuticals scientific advisory panels. E.E.E. is a scientific advisory board 
+      (SAB) member of Variant Bio, Inc. S.B.G has received travel support from ONT. 
+      N.W. has received research grant funding from Novo Nordisk and Biomarin 
+      Pharmaceuticals. The remaining authors declare that they have no competing 
+      interests.
+EDAT- 2026/07/22 12:37
+MHDA- 2026/07/22 12:37
+CRDT- 2026/07/21 23:50
+PHST- 2026/01/20 00:00 [received]
+PHST- 2026/07/15 00:00 [accepted]
+PHST- 2026/07/22 12:37 [medline]
+PHST- 2026/07/22 12:37 [pubmed]
+PHST- 2026/07/21 23:50 [entrez]
+AID - 10.1186/s13073-026-01729-4 [pii]
+AID - 10.1186/s13073-026-01729-4 [doi]
+PST - aheadofprint
+SO  - Genome Med. 2026 Jul 22. doi: 10.1186/s13073-026-01729-4.
+
+PMID- 42465430
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260717
+LR  - 20260717
+IS  - 2692-8205 (Electronic)
+IS  - 2692-8205 (Linking)
+DP  - 2026 Jul 10
+TI  - DNA Methylation and Proteomic Profiling of Postmortem Brain Tissue Reveals 
+      Epigenetic Dysregulation and Neuroinflammatory in Fragile X-associated 
+      Tremor/Ataxia Syndrome (FXTAS).
+LID - 2026.07.06.736649 [pii]
+LID - 10.64898/2026.07.06.736649 [doi]
+AB  - BACKGROUND: Fragile X-associated Tremor/Ataxia Syndrome (FXTAS) is a late-onset 
+      neurodegenerative disorder caused by FMR1 premutation CGG repeat expansions 
+      (55-200 repeats). The epigenetic landscape of the FXTAS brain remains 
+      uncharacterized. We performed genome-wide DNA methylation profiling of postmortem 
+      prefrontal cortex tissue to identify differentially methylated positions (DMPs) 
+      and candidate genes, and sought protein-level support for a neuroinflammatory 
+      signal. METHODS: DNA methylation was profiled in postmortem prefrontal cortex 
+      (Brodmann area 9) from 27 male FXTAS cases and 29 male controls using the 
+      Illumina MethylationEPIC array (EPICv1 and EPICv2 platforms), merging 721,802 
+      common probes. Surrogate variable analysis (SVA) controlled for confounders. DMPs 
+      were defined by |Deltabeta| > 0.10 and FDR < 0.05; exploratory Reactome 2024 pathway 
+      analysis was performed on the DMP-associated gene list. Targeted proteomic 
+      profiling was performed in the same brain region using the Olink (proximity 
+      extension assay) Inflammation panel in 9 FXTAS cases and 12 controls, with 
+      SVA-adjusted differential abundance analysis, and concordance assessment against 
+      a prior mass spectrometry dataset. RESULTS: We identified 108 significant cg-type 
+      DMPs mapping to 80 genes (50 hypermethylated, 58 hypomethylated in FXTAS). The 
+      strongest signal was CYP2E1 (7 concordant hypomethylated DMPs, mean Deltabeta = -0.143), 
+      an oxidative stress gene also implicated in Parkinson's disease. FTCD , a 
+      one-carbon cycle enzyme, carried 5 hypermethylated DMPs (mean Deltabeta = +0.210). A 
+      cluster of DMP-associated genes with established roles in innate immune and NF-kappaB 
+      signaling, TRAF3 (the single most significant DMP among the inflammation genes, 
+      hypermethylated), BATF, RCOR1 , and MSI2 ; they pointed toward neuroinflammatory 
+      dysregulation. Additional genes included LINGO1 (myelination inhibitor), SYT3 
+      (synaptic vesicle), and SLC39A4 (zinc transporter). Exploratory Reactome 
+      enrichment using the DMP-associated gene set nominated themes including 
+      neuroinflammation resolution, axonal growth inhibition, zinc homeostasis, and 
+      CYP2E1 metabolism at nominal significance (p<0.05); however, the gene-to-pathway 
+      mapping rate was low and no pathway survived correction for multiple testing. 
+      Olink proteomic analysis independently identified 60 significantly altered 
+      inflammation proteins (59 downregulated), including CXCL8, CXCL10, IL6, IL15, 
+      IL18, TLR3, IRAK1/4, and complement C1QA, which were directionally concordant 
+      with prior mass spectrometry data. CONCLUSIONS: This integrated study reveals a 
+      genome-wide epigenetic signature in the FXTAS prefrontal cortex implicating 
+      oxidative stress, myelination failure, zinc dysregulation, one-carbon cycle 
+      disruption, and most notably a coordinated set of epigenetically altered genes 
+      governing innate immune and NF-kappaB signaling. Convergence of TRAF3 
+      hypermethylation with independent downregulation of TLR3 and NF-kappaB-pathway 
+      proteins at the protein level supports a coherent, cross-platform model of 
+      dysregulated neuroinflammatory signaling in FXTAS, identified here through 
+      individual gene- and protein-level convergence rather than formal pathway 
+      enrichment. FTCD hypermethylation proposes a self-reinforcing epigenetic loop via 
+      SAM depletion. These multi-omic findings establish FXTAS as a disorder of 
+      pervasive epigenetic reprogramming and nominate candidate genes for future 
+      mechanistic and therapeutic investigation.
+FAU - Lozano, Reymundo
+AU  - Lozano R
+FAU - Lin, Xiao
+AU  - Lin X
+FAU - Hagerman, Randi
+AU  - Hagerman R
+FAU - Cerdeno, Veronica Martinez
+AU  - Cerdeno VM
+FAU - Pinto, Dalila
+AU  - Pinto D
+AUID- ORCID: 0000-0002-8769-0846
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260710
+PL  - United States
+TA  - bioRxiv
+JT  - bioRxiv : the preprint server for biology
+JID - 101680187
+PMC - PMC13370351
+EDAT- 2026/07/17 17:25
+MHDA- 2026/07/17 17:26
+PMCR- 2026/07/15
+CRDT- 2026/07/17 06:58
+PHST- 2026/07/17 17:26 [medline]
+PHST- 2026/07/17 17:25 [pubmed]
+PHST- 2026/07/17 06:58 [entrez]
+PHST- 2026/07/15 00:00 [pmc-release]
+AID - 2026.07.06.736649 [pii]
+AID - 10.64898/2026.07.06.736649 [doi]
+PST - epublish
+SO  - bioRxiv [Preprint]. 2026 Jul 10:2026.07.06.736649. doi: 
+      10.64898/2026.07.06.736649.
+
+PMID- 42456893
+OWN - NLM
+STAT- Publisher
+LR  - 20260716
+IS  - 1878-0849 (Electronic)
+IS  - 1769-7212 (Linking)
+VI  - 83
+DP  - 2026 Jul 15
+TI  - Two new cases of fragile X syndrome without CGG triplet expansion. 
+      Clinical-molecular characterization and review of the literature.
+PG  - 105093
+LID - S1769-7212(26)00027-3 [pii]
+LID - 10.1016/j.ejmg.2026.105093 [doi]
+AB  - Fragile X syndrome (FXS) is classically caused by CGG repeat expansion in the 
+      FMR1 gene leading to gene silencing. We describe two unrelated patients with 
+      clinical features consistent with FXS but harbouring distinct molecular 
+      mechanisms. The first patient had a pathogenic intronic variant in FMR1, 
+      predicted to impair protein function, and no repeat expansion. The second patient 
+      carried a complete deletion of the FMR1 gene, resulting in loss of gene 
+      expression. Both individuals presented with developmental delay, intellectual 
+      disability, and behavioural manifestations typical of FXS. These cases expand the 
+      causal heterogeneity underlying a clinically recognizable phenotype. They 
+      reinforce the concept that comprehensive molecular testing beyond repeat 
+      expansion analysis is mandatory in individuals with a strong clinical suspicion 
+      of FXS, in absence of a typical CGG triplet expansion.
+CI  - Copyright (c) 2026. Published by Elsevier Masson SAS.
+FAU - Lauretti, Giulia
+AU  - Lauretti G
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy.
+FAU - Pietrobono, Roberta
+AU  - Pietrobono R
+AD  - Dept. of Life Sciences and Public Health, Section of Genomic Medicine, Catholic 
+      University of Sacred Heart, Rome, 00168, Italy.
+FAU - Niccolini, Benedetta
+AU  - Niccolini B
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy; Dept. of Life Sciences and Public Health, Section of Genomic 
+      Medicine, Catholic University of Sacred Heart, Rome, 00168, Italy.
+FAU - Modafferi, Clarissa
+AU  - Modafferi C
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy.
+FAU - Accadia, Maria
+AU  - Accadia M
+AD  - Medical Genetics Service, Hospital Cardinale G. Panico, Tricase, 73039, Italy.
+FAU - Piepoli, Ada
+AU  - Piepoli A
+AD  - Division of Medical Genetics, Fondazione IRCCS Casa Sollievo della Sofferenza, 
+      San Giovanni Rotondo, 71013, Italy.
+FAU - Orteschi, Daniela
+AU  - Orteschi D
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy.
+FAU - Pomponi, Maria Grazia
+AU  - Pomponi MG
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy.
+FAU - Chiurazzi, Pietro
+AU  - Chiurazzi P
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy; Dept. of Life Sciences and Public Health, Section of Genomic 
+      Medicine, Catholic University of Sacred Heart, Rome, 00168, Italy.
+FAU - Genuardi, Maurizio
+AU  - Genuardi M
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy; Dept. of Life Sciences and Public Health, Section of Genomic 
+      Medicine, Catholic University of Sacred Heart, Rome, 00168, Italy.
+FAU - Neri, Giovanni
+AU  - Neri G
+AD  - Dept. of Life Sciences and Public Health, Section of Genomic Medicine, Catholic 
+      University of Sacred Heart, Rome, 00168, Italy.
+FAU - Tabolacci, Elisabetta
+AU  - Tabolacci E
+AD  - UOC Genetica Medica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, 
+      00168, Italy; Dept. of Life Sciences and Public Health, Section of Genomic 
+      Medicine, Catholic University of Sacred Heart, Rome, 00168, Italy. Electronic 
+      address: elisabetta.tabolacci@unicatt.it.
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+DEP - 20260715
+PL  - Netherlands
+TA  - Eur J Med Genet
+JT  - European journal of medical genetics
+JID - 101247089
+SB  - IM
+OTO - NOTNLM
+OT  - FMR1 gene deletions
+OT  - FMR1 gene variants
+OT  - Fragile X syndrome
+COIS- Declaration of interests The authors declare that they have no known competing 
+      financial interests or personal relationships that could have appeared to 
+      influence the work reported in this paper.
+EDAT- 2026/07/16 00:35
+MHDA- 2026/07/16 00:35
+CRDT- 2026/07/15 19:11
+PHST- 2026/04/01 00:00 [received]
+PHST- 2026/06/02 00:00 [revised]
+PHST- 2026/07/14 00:00 [accepted]
+PHST- 2026/07/16 00:35 [pubmed]
+PHST- 2026/07/16 00:35 [medline]
+PHST- 2026/07/15 19:11 [entrez]
+AID - S1769-7212(26)00027-3 [pii]
+AID - 10.1016/j.ejmg.2026.105093 [doi]
+PST - aheadofprint
+SO  - Eur J Med Genet. 2026 Jul 15;83:105093. doi: 10.1016/j.ejmg.2026.105093.
+
+PMID- 42389555
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260702
+LR  - 20260702
+IS  - 2162-2531 (Print)
+IS  - 2162-2531 (Electronic)
+IS  - 2162-2531 (Linking)
+VI  - 37
+IP  - 3
+DP  - 2026 Sep 8
+TI  - Neonatal expression of human FMRP isoform corrects cortical deficits and improves 
+      behavior in a mouse model of fragile X syndrome.
+PG  - 102981
+LID - 10.1016/j.omtn.2026.102981 [doi]
+LID - 102981
+AB  - Fragile X syndrome (FXS) is a neurodevelopmental disorder caused by CGG 
+      trinucleotide repeat expansion in the fragile X messenger ribonucleoprotein 1 
+      (FMR1) gene and the resulting loss of fragile X messenger ribonucleoprotein 
+      (FMRP). Gene therapy using recombinant adeno-associated virus (AAV) to restore 
+      FMRP expression, particularly in the brain, is a promising therapeutic strategy 
+      targeting the underlying cause of FXS. We examined the impact of AAV serotype 9 
+      (AAV9)-mediated expression of a brain-abundant human FMRP isoform (isoform 7) 
+      driven by a fragment of the human FMR1 promoter on circuit and behavioral 
+      dysfunctions in the male Fmr1 knockout (KO) mouse, FXS model. Following 
+      intracerebroventricular (i.c.v.) injection of AAV9-NG276 into neonatal KO mice at 
+      a low (1e11 vg/animal) or high (3e11 vg/animal) dose, we assessed cortical 
+      phenotypes using electroencephalography (EEG) recordings and behavioral testing. 
+      High-dose AAV9-NG276 normalized baseline gamma power, improved sound-evoked 
+      responses, and reduced background neural activity. Analysis of behavioral 
+      deficits in adult KO mice showed that high-dose neonatal AAV9-NG276 delivery 
+      normalized exploratory behaviors, social preference, and probabilistic reversal 
+      learning. Thus, early AAV-mediated delivery of human FMR1 isoform 7 ameliorates 
+      cortical dysfunction and behavioral deficits in a murine FXS model and suggests 
+      that widespread cortical biodistribution is required for therapeutic benefit.
+CI  - (c) 2026 The Author(s).
+FAU - Norman, Anna O
+AU  - Norman AO
+AD  - Division of Biomedical Sciences, University of California School of Medicine, 
+      Riverside, CA 92521, USA.
+FAU - Scaramella, Courtney
+AU  - Scaramella C
+AD  - Graduate Neuroscience Program, University of California Riverside, Riverside, CA 
+      92521, USA.
+AD  - Department of Psychology, University of California Riverside, Riverside, CA 
+      92521, USA.
+FAU - Biezonski, Dominik
+AU  - Biezonski D
+AD  - Neurogene Inc., New York, NY 10011, USA.
+FAU - Hector, Ralph D
+AU  - Hector RD
+AD  - Simons Initiative for the Developing Brain, Institute for Neuroscience and 
+      Cardiovascular Research, University of Edinburgh, Edinburgh EH8 9XD, UK.
+FAU - Varallo, Alexandra
+AU  - Varallo A
+AD  - Division of Biomedical Sciences, University of California School of Medicine, 
+      Riverside, CA 92521, USA.
+FAU - Sahni, Aarushi
+AU  - Sahni A
+AD  - Division of Biomedical Sciences, University of California School of Medicine, 
+      Riverside, CA 92521, USA.
+FAU - Farooq, Nadia
+AU  - Farooq N
+AD  - Division of Biomedical Sciences, University of California School of Medicine, 
+      Riverside, CA 92521, USA.
+FAU - Burstein, Suzanne R
+AU  - Burstein SR
+AD  - Neurogene Inc., New York, NY 10011, USA.
+FAU - Benito, Juliana
+AU  - Benito J
+AD  - Neurogene Inc., New York, NY 10011, USA.
+FAU - Razak, Khaleel A
+AU  - Razak KA
+AD  - Graduate Neuroscience Program, University of California Riverside, Riverside, CA 
+      92521, USA.
+AD  - Department of Psychology, University of California Riverside, Riverside, CA 
+      92521, USA.
+FAU - Selfridge, Jim
+AU  - Selfridge J
+AD  - Simons Initiative for the Developing Brain, Institute for Neuroscience and 
+      Cardiovascular Research, University of Edinburgh, Edinburgh EH8 9XD, UK.
+FAU - Cobb, Stuart
+AU  - Cobb S
+AD  - Neurogene Inc., New York, NY 10011, USA.
+AD  - Simons Initiative for the Developing Brain, Institute for Neuroscience and 
+      Cardiovascular Research, University of Edinburgh, Edinburgh EH8 9XD, UK.
+FAU - Ethell, Iryna M
+AU  - Ethell IM
+AD  - Division of Biomedical Sciences, University of California School of Medicine, 
+      Riverside, CA 92521, USA.
+AD  - Graduate Neuroscience Program, University of California Riverside, Riverside, CA 
+      92521, USA.
+LA  - eng
+PT  - Journal Article
+DEP - 20260612
+PL  - United States
+TA  - Mol Ther Nucleic Acids
+JT  - Molecular therapy. Nucleic acids
+JID - 101581621
+PMC - PMC13320503
+OTO - NOTNLM
+OT  - MT: Clinical Applications
+OT  - adeno-associated virus
+OT  - autism
+OT  - cortical dysfunction
+OT  - electroencephalography
+OT  - fragile X syndrome
+OT  - gene therapy
+OT  - probabilistic reversal learning
+OT  - social behaviors
+COIS- D.B., J.B., S.R.B., and S.C. are employees at Neurogene Inc.
+EDAT- 2026/07/02 06:38
+MHDA- 2026/07/02 06:39
+PMCR- 2026/06/12
+CRDT- 2026/07/02 05:08
+PHST- 2026/04/01 00:00 [received]
+PHST- 2026/06/09 00:00 [accepted]
+PHST- 2026/07/02 06:39 [medline]
+PHST- 2026/07/02 06:38 [pubmed]
+PHST- 2026/07/02 05:08 [entrez]
+PHST- 2026/06/12 00:00 [pmc-release]
+AID - S2162-2531(26)00152-6 [pii]
+AID - 102981 [pii]
+AID - 10.1016/j.omtn.2026.102981 [doi]
+PST - epublish
+SO  - Mol Ther Nucleic Acids. 2026 Jun 12;37(3):102981. doi: 
+      10.1016/j.omtn.2026.102981. eCollection 2026 Sep 8.
+
 PMID- 42353815
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260626
-LR  - 20260626
+LR  - 20260726
 IS  - 2073-4425 (Electronic)
 IS  - 2073-4425 (Linking)
 VI  - 17
@@ -372,7 +1049,7 @@ PMID- 42301916
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260616
-LR  - 20260616
+LR  - 20260726
 IS  - 1362-4962 (Electronic)
 IS  - 0305-1048 (Print)
 IS  - 0305-1048 (Linking)
@@ -743,7 +1420,7 @@ PMID- 42001465
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260603
-LR  - 20260610
+LR  - 20260726
 IS  - 1460-2350 (Electronic)
 IS  - 0268-1161 (Print)
 IS  - 0268-1161 (Linking)
@@ -886,8 +1563,8 @@ SO  - Hum Reprod. 2026 Jun 1;41(6):998-1007. doi: 10.1093/humrep/deag061.
 PMID- 41952192
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260621
-LR  - 20260627
+DCOM- 20260714
+LR  - 20260714
 IS  - 1741-7015 (Electronic)
 IS  - 1741-7015 (Linking)
 VI  - 24
@@ -1043,8 +1720,8 @@ SO  - BMC Med. 2026 Apr 8;24(1):307. doi: 10.1186/s12916-026-04850-8.
 PMID- 41929501
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260621
-LR  - 20260621
+DCOM- 20260714
+LR  - 20260714
 IS  - 1664-3224 (Electronic)
 IS  - 1664-3224 (Linking)
 VI  - 17
@@ -1156,7 +1833,7 @@ SO  - Front Immunol. 2026 Mar 18;17:1782547. doi: 10.3389/fimmu.2026.1782547.
 PMID- 41917775
 OWN - NLM
 STAT- Publisher
-LR  - 20260415
+LR  - 20260726
 IS  - 2328-9503 (Electronic)
 IS  - 2328-9503 (Linking)
 DP  - 2026 Mar 31
@@ -1252,14 +1929,17 @@ TA  - Ann Clin Transl Neurol
 JT  - Annals of clinical and translational neurology
 JID - 101623278
 SB  - IM
+PMC - PMC13394192
 OTO - NOTNLM
 OT  - CGG expansion
 OT  - FMR1 premutation carriers
 OT  - FXTAS
 OT  - mRNA predictors
 OT  - neurological involvement
+COIS- The authors declare no conflicts of interest.
 EDAT- 2026/04/01 07:04
 MHDA- 2026/04/01 07:04
+PMCR- 2026/03/31
 CRDT- 2026/04/01 00:43
 PHST- 2026/02/05 00:00 [revised]
 PHST- 2025/09/29 00:00 [received]
@@ -1267,15 +1947,17 @@ PHST- 2026/03/06 00:00 [accepted]
 PHST- 2026/04/01 07:04 [medline]
 PHST- 2026/04/01 07:04 [pubmed]
 PHST- 2026/04/01 00:43 [entrez]
+PHST- 2026/03/31 00:00 [pmc-release]
+AID - ACN370375 [pii]
 AID - 10.1002/acn3.70375 [doi]
 PST - aheadofprint
-SO  - Ann Clin Transl Neurol. 2026 Mar 31. doi: 10.1002/acn3.70375.
+SO  - Ann Clin Transl Neurol. 2026 Mar 31:10.1002/acn3.70375. doi: 10.1002/acn3.70375.
 
 PMID- 41806827
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260619
-LR  - 20260619
+DCOM- 20260710
+LR  - 20260710
 IS  - 2666-979X (Electronic)
 IS  - 2666-979X (Linking)
 VI  - 6
@@ -1419,8 +2101,8 @@ SO  - Cell Genom. 2026 May 13;6(5):101186. doi: 10.1016/j.xgen.2026.101186. Epub
 PMID- 41792844
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260613
-LR  - 20260613
+DCOM- 20260710
+LR  - 20260726
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 14
@@ -1483,9 +2165,10 @@ AD  - Department of Neurology, Washington University School of Medicine, Saint L
       MO, USA. weihlc@wustl.edu.
 LA  - eng
 GR  - R01 NS086810/NS/NINDS NIH HHS/United States
-GR  - R01 AG031867/AG/NIA NIH HHS/United States
-GR  - K24 AR073317/AR/NIAMS NIH HHS/United States
 GR  - P50 HD104463/HD/NICHD NIH HHS/United States
+GR  - K24 AR073317/AR/NIAMS NIH HHS/United States
+GR  - P50 HD118707/HD/NICHD NIH HHS/United States
+GR  - R01 AG031867/AG/NIA NIH HHS/United States
 GR  - R21 NS129096/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260306
@@ -1675,8 +2358,8 @@ SO  - Front Mol Neurosci. 2026 Feb 16;19:1720370. doi: 10.3389/fnmol.2026.172037
 PMID- 41762523
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260612
-LR  - 20260612
+DCOM- 20260709
+LR  - 20260709
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 125
@@ -2361,7 +3044,7 @@ PMID- 41555826
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260630
-LR  - 20260630
+LR  - 20260710
 IS  - 1875-8908 (Electronic)
 IS  - 1387-2877 (Print)
 IS  - 1387-2877 (Linking)
@@ -2427,6 +3110,8 @@ GR  - R01 AG073374/AG/NIA NIH HHS/United States
 GR  - R21 DC017804/DC/NIDCD NIH HHS/United States
 GR  - U54 HD079124/HD/NICHD NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20260120
 PL  - United States
 TA  - J Alzheimers Dis
@@ -2577,7 +3262,7 @@ PMID- 41514368
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260625
-LR  - 20260625
+LR  - 20260710
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
 VI  - 18
@@ -2714,6 +3399,7 @@ AD  - Science for Life Laboratory, Department of Molecular Medicine and Surgery,
       Karolinska Institutet, Solna, 171 65, Sweden. anna.lindstrand@ki.se.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20260109
 PL  - England
 TA  - Genome Med
@@ -3007,10 +3693,10 @@ CRDT- 2025/12/18 04:27
 PHST- 2025/05/02 00:00 [received]
 PHST- 2025/10/18 00:00 [revised]
 PHST- 2025/10/23 00:00 [accepted]
-PHST- 2026/11/05 00:00 [pmc-release]
 PHST- 2025/12/18 07:20 [medline]
 PHST- 2025/12/18 07:19 [pubmed]
 PHST- 2025/12/18 04:27 [entrez]
+PHST- 2026/11/05 00:00 [pmc-release]
 AID - 10.1021/acsptsci.5c00326 [doi]
 PST - epublish
 SO  - ACS Pharmacol Transl Sci. 2025 Nov 5;8(12):4264-4284. doi: 
@@ -4091,7 +4777,7 @@ PMID- 41120736
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251201
-LR  - 20260401
+LR  - 20260710
 IS  - 1476-5438 (Electronic)
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)
@@ -4236,10 +4922,10 @@ CRDT- 2025/10/21 23:51
 PHST- 2025/02/11 00:00 [received]
 PHST- 2025/10/14 00:00 [accepted]
 PHST- 2025/09/29 00:00 [revised]
-PHST- 2026/12/01 00:00 [pmc-release]
 PHST- 2025/12/02 01:00 [medline]
 PHST- 2025/10/22 02:35 [pubmed]
 PHST- 2025/10/21 23:51 [entrez]
+PHST- 2026/12/01 00:00 [pmc-release]
 AID - 10.1038/s41431-025-01967-x [pii]
 AID - 1967 [pii]
 AID - 10.1038/s41431-025-01967-x [doi]
@@ -4251,7 +4937,7 @@ PMID- 41098569
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251016
-LR  - 20251016
+LR  - 20260726
 IS  - 2575-9108 (Electronic)
 IS  - 2575-9108 (Linking)
 VI  - 8
@@ -4321,10 +5007,10 @@ CRDT- 2025/10/16 04:42
 PHST- 2025/03/17 00:00 [received]
 PHST- 2025/06/14 00:00 [revised]
 PHST- 2025/07/15 00:00 [accepted]
-PHST- 2026/07/25 00:00 [pmc-release]
 PHST- 2025/10/16 06:31 [medline]
 PHST- 2025/10/16 06:30 [pubmed]
 PHST- 2025/10/16 04:42 [entrez]
+PHST- 2026/07/25 00:00 [pmc-release]
 AID - 10.1021/acsptsci.5c00198 [doi]
 PST - epublish
 SO  - ACS Pharmacol Transl Sci. 2025 Jul 25;8(10):3490-3508. doi: 
@@ -8900,7 +9586,7 @@ PMID- 39945490
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250507
-LR  - 20250507
+LR  - 20260726
 IS  - 1520-6882 (Electronic)
 IS  - 0003-2700 (Print)
 IS  - 0003-2700 (Linking)
@@ -8990,7 +9676,7 @@ PMID- 39934227
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250506
-LR  - 20250720
+LR  - 20260716
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 15
@@ -9057,7 +9743,10 @@ AD  - National Institutes of Health, 8 Center Drive MSC 0830, Building 8, Room 2
       Bethesda, MD, USA. karenu@nih.gov.
 LA  - eng
 GR  - P01 CA247773/CA/NCI NIH HHS/United States
+GR  - ZIA DK057808/ImNIH/Intramural NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, N.I.H., Intramural
 DEP - 20250211
 PL  - England
 TA  - Sci Rep
@@ -17032,7 +17721,7 @@ SO  - J Neurodev Disord. 2022 Jan 14;14(1):7. doi: 10.1186/s11689-022-09415-3.
 PMID- 34938155
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20260521
+LR  - 20260726
 IS  - 1662-4548 (Print)
 IS  - 1662-453X (Electronic)
 IS  - 1662-453X (Linking)
@@ -17114,6 +17803,8 @@ AD  - Department of Molecular Biosciences, School of Veterinary Medicine, Univer
       California, Davis, Davis, CA, United States.
 AD  - The MIND Institute, University of California, Davis, Davis, CA, United States.
 LA  - eng
+GR  - P30 CA093373/CA/NCI NIH HHS/United States
+GR  - R01 ES029213/ES/NIEHS NIH HHS/United States
 GR  - T32 ES007059/ES/NIEHS NIH HHS/United States
 GR  - P30 ES023513/ES/NIEHS NIH HHS/United States
 GR  - P50 HD103526/HD/NICHD NIH HHS/United States
@@ -17250,7 +17941,7 @@ SO  - Biomed Res Int. 2021 Dec 8;2021:4359308. doi: 10.1155/2021/4359308. eColle
 PMID- 34924936
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20260521
+LR  - 20260726
 IS  - 1662-4548 (Print)
 IS  - 1662-453X (Electronic)
 IS  - 1662-453X (Linking)
@@ -17323,9 +18014,16 @@ AU  - Lein PJ
 AD  - Department of Molecular Biosciences, School of Veterinary Medicine, University of 
       California, Davis, Davis, CA, United States.
 LA  - eng
-GR  - P42 ES013661/ES/NIEHS NIH HHS/United States
+GR  - P30 CA093373/CA/NCI NIH HHS/United States
+GR  - R01 ES029213/ES/NIEHS NIH HHS/United States
+GR  - T32 ES007059/ES/NIEHS NIH HHS/United States
 GR  - P50 HD103526/HD/NICHD NIH HHS/United States
+GR  - F32 HD088016/HD/NICHD NIH HHS/United States
+GR  - R00 ES029537/ES/NIEHS NIH HHS/United States
 GR  - UL1 TR001860/TR/NCATS NIH HHS/United States
+GR  - P30 ES023513/ES/NIEHS NIH HHS/United States
+GR  - P42 ES013661/ES/NIEHS NIH HHS/United States
+GR  - R01 ES014901/ES/NIEHS NIH HHS/United States
 PT  - Journal Article
 DEP - 20211203
 PL  - Switzerland
@@ -19301,10 +19999,13 @@ COIS- Declaration of competing interest The authors declare that they have no kn
       to influence the work reported in this paper.
 EDAT- 2021/07/24 06:00
 MHDA- 2021/07/24 06:01
+PMCR- 2020/09/10
 CRDT- 2021/07/23 06:56
 PHST- 2021/07/23 06:56 [entrez]
 PHST- 2021/07/24 06:00 [pubmed]
 PHST- 2021/07/24 06:01 [medline]
+PHST- 2020/09/10 00:00 [pmc-release]
+AID - S2666-027X(20)30011-6 [pii]
 AID - 10.1016/j.crtox.2020.09.001 [doi]
 PST - ppublish
 SO  - Curr Res Toxicol. 2020 Jun 10;1:85-103. doi: 10.1016/j.crtox.2020.09.001. Epub 
@@ -25435,6 +26136,7 @@ AID - 10.1007/978-1-4939-9784-8_9 [doi]
 PST - ppublish
 SO  - Methods Mol Biol. 2020;2056:137-150. doi: 10.1007/978-1-4939-9784-8_9.
 
+
 PMID- 31566610
 OWN - NLM
 STAT- MEDLINE
@@ -26068,7 +26770,6 @@ AID - EMBR201847498 [pii]
 AID - 10.15252/embr.201847498 [doi]
 PST - ppublish
 SO  - EMBO Rep. 2019 Sep;20(9):e47498. doi: 10.15252/embr.201847498. Epub 2019 Jul 25.
-
 
 PMID- 31336350
 OWN - NLM
@@ -39121,7 +39822,7 @@ PMID- 25875842
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20160407
-LR  - 20260128
+LR  - 20260709
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 10
@@ -42396,7 +43097,7 @@ PMID- 24821701
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20150423
-LR  - 20260213
+LR  - 20260726
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -42471,7 +43172,6 @@ AD  - Department of Biochemistry and Molecular Medicine, University of Californi
       pjhagerman@ucdavis.edu noelle.letoile@ucsf.edu.
 LA  - eng
 GR  - T32 GM007810/GM/NIGMS NIH HHS/United States
-GR  - S10 RR026758/RR/NCRR NIH HHS/United States
 GR  - R01 HD040661/HD/NICHD NIH HHS/United States
 GR  - R25 GM56847/GM/NIGMS NIH HHS/United States
 GR  - R25 GM056847/GM/NIGMS NIH HHS/United States
@@ -46489,6 +47189,7 @@ STAT- PubMed-not-MEDLINE
 DCOM- 20130704
 LR  - 20240513
 IS  - 2160-8288 (Print)
+IS  - 2160-8288 (Electronic)
 IS  - 2160-8288 (Linking)
 VI  - 2
 DP  - 2012
@@ -46536,15 +47237,22 @@ OT  - Parkinson
 OT  - neurodegeneration
 OT  - neurodevelopment
 OT  - primary ovarian insufficiency
+COIS- Competing Interests: Paul Hagerman is a non-compensated collaborator with 
+      Asuragen, Inc. and with Pacific Biosciences. With Dr. Flora Tassone, he holds a 
+      US patent for expanded-CGG screening. There are no other conflicts of interest to 
+      report.
 EDAT- 2013/02/27 06:00
 MHDA- 2013/02/27 06:01
+PMCR- 2012/05/18
 CRDT- 2013/02/27 06:00
 PHST- 2011/09/09 00:00 [received]
 PHST- 2011/12/01 00:00 [accepted]
 PHST- 2013/02/27 06:00 [entrez]
 PHST- 2013/02/27 06:00 [pubmed]
 PHST- 2013/02/27 06:01 [medline]
+PHST- 2012/05/18 00:00 [pmc-release]
 AID - tre-02-63-375-2 [pii]
+AID - tre-63-375-2 [pii]
 AID - 10.7916/D80C4TH0 [doi]
 PST - ppublish
 SO  - Tremor Other Hyperkinet Mov (N Y). 2012;2:tre-02-63-375-2. doi: 10.7916/D80C4TH0. 
@@ -47502,6 +48210,7 @@ AID - 10.1002/hipo.22043 [doi]
 PST - ppublish
 SO  - Hippocampus. 2012 Dec;22(12):2260-75. doi: 10.1002/hipo.22043. Epub 2012 Jun 18.
 
+
 PMID- 22612820
 OWN - NLM
 STAT- MEDLINE
@@ -47981,7 +48690,6 @@ AID - S1098-3600(21)02291-7 [pii]
 AID - 10.1038/gim.2012.34 [doi]
 PST - ppublish
 SO  - Genet Med. 2012 Aug;14(8):729-36. doi: 10.1038/gim.2012.34. Epub 2012 Apr 12.
-
 
 PMID- 22489017
 OWN - NLM
@@ -65692,6 +66400,7 @@ AID - 10.1016/s0022-3476(98)70270-7 [doi]
 PST - ppublish
 SO  - J Pediatr. 1998 Sep;133(3):363-5. doi: 10.1016/s0022-3476(98)70270-7.
 
+
 PMID- 9653650
 OWN - NLM
 STAT- MEDLINE
@@ -66088,7 +66797,6 @@ AID - 10.1002/(sici)1096-8628(19980508)81:3<222::aid-ajmg3>3.0.co;2-y [doi]
 PST - ppublish
 SO  - Am J Med Genet. 1998 May 8;81(3):222-4. doi: 
       10.1002/(sici)1096-8628(19980508)81:3<222::aid-ajmg3>3.0.co;2-y.
-
 
 PMID- 9529778
 OWN - NLM

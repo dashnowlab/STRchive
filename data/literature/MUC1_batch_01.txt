@@ -1,8 +1,218 @@
 
+PMID- 42498060
+OWN - NLM
+STAT- Publisher
+LR  - 20260724
+IS  - 1523-1755 (Electronic)
+IS  - 0085-2538 (Linking)
+DP  - 2026 Jul 24
+TI  - Targeted VNTR long read sequencing resolves a diagnostic bottleneck in ADTKD and 
+      detects de novo ADTKD-MUC1.
+LID - S0085-2538(26)00611-3 [pii]
+LID - 10.1016/j.kint.2026.06.040 [doi]
+AB  - INTRODUCTION: The molecular diagnosis of autosomal dominant tubulointerstitial 
+      kidney disease due to MUC1 variants (ADTKD-MUC1) using high-throughput 
+      (short-read) sequencing methods remains challenging due to the presence of a 
+      coding long variable-number tandem repeat (VNTR) region wherein most known 
+      pathogenic variants are located. METHODS: Here, we used targeted amplicon 
+      long-read sequencing to study the MUC1 VNTR in a retrospective cohort study of 78 
+      individuals. Using a bioinformatic pipeline including newly developed specialized 
+      software, VNTRtools, we reconstruct patient-specific complete VNTR haplotypes, 
+      generate a synthetic VNTR reference, perform long-read realignment to this 
+      reference and finally perform variant calling. RESULTS: VNTRtools proved 
+      efficient, requiring seconds or minutes per sample to accurately identify all 
+      pathogenic MUC1 frameshift variants in positive controls, including atypical 
+      variants. Ten new diagnoses of ADTKD-MUC1 were made. Furthermore, we report a 
+      confirmed de novo case of ADTKD-MUC1 in a 32-year-old patient. We were able to 
+      structurally resolve and phase the inter-individually highly variable VNTRs in 
+      most probands, enabling the high-confidence detection of pathogenic frameshift 
+      variants in 24 individuals. We also detected 18 previously unreported VNTR repeat 
+      unit types, demonstrating the highly polymorphic nature of MUC1's VNTR. 
+      CONCLUSIONS: We propose a combined approach in which short-read VNTR analysis 
+      using the published alignment-free bioinformatic tools is used as a first line 
+      test, followed by targeted long-read sequencing with VNTRtools analysis for 
+      confirmatory testing and in-depth VNTR characterization. This combined approach 
+      will lead to a higher diagnostic confidence in ADTKD-MUC1 - especially in 
+      sporadic cases. Complete VNTR haplotype information will likely enable a better 
+      genetic understanding of this currently underdiagnosed disorder and may become 
+      relevant for future therapeutic approaches like targeted silencing of the 
+      pathogenic MUC1 allele.
+CI  - Copyright (c) 2026. Published by Elsevier Inc.
+FAU - Wenzel, Andrea
+AU  - Wenzel A
+AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
+      Faculty of Medicine and University Hospital Cologne, Cologne, Germany.
+FAU - Reusch, Bjorn
+AU  - Reusch B
+AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
+      Faculty of Medicine and University Hospital Cologne, Cologne, Germany.
+FAU - Knaup, Karl X
+AU  - Knaup KX
+AD  - Department of Nephrology and Hypertension, University Hospital Erlangen, 
+      Friedrich-Alexander University Erlangen-Nurnberg, Erlangen, Germany.
+FAU - Zagorec, Nikola
+AU  - Zagorec N
+AD  - Department of Nephrology and Dialysis, Dubrava University Hospital, Zagreb, 
+      Croatia; Faculty of Pharmacy and Biochemistry, University of Zagreb, Zagreb, 
+      Croatia.
+FAU - Prlic, Margareta Fistrek
+AU  - Prlic MF
+AD  - Department of Nephrology, Faculty of Medicine and University Hospital Center 
+      Zagreb, Zagreb, Croatia.
+FAU - Becker, Kerstin
+AU  - Becker K
+AD  - Cologne Center for Genomics, Medical Faculty, University of Cologne, Cologne, 
+      Germany; West German Genome Center, University of Cologne, Cologne.
+FAU - Riehmer, Vera
+AU  - Riehmer V
+AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
+      Faculty of Medicine and University Hospital Cologne, Cologne, Germany.
+FAU - Muller, Roman-U
+AU  - Muller RU
+AD  - Department II of Internal Medicine and Center for Rare and Hereditary Kidney 
+      Diseases, University of Cologne, Faculty of Medicine and University Hospital 
+      Cologne, Cologne, Germany.
+FAU - Pasutto, Francesca
+AU  - Pasutto F
+AD  - Institute of Human Genetics, University Hospital Erlangen, Friedrich-Alexander 
+      University Erlangen-Nurnberg, Erlangen, Germany.
+FAU - Hoefele, Julia
+AU  - Hoefele J
+AD  - Institute of Human Genetics, LMU University Hospital, LMU Munich, Munich, 
+      Germany; Institute of Human Genetics, Klinikum rechts der Isar, Technical 
+      University of Munich, TUM School of Medicine and Health, Munich, Germany.
+FAU - Wiesener, Michael S
+AU  - Wiesener MS
+AD  - Department of Nephrology and Hypertension, University Hospital Erlangen, 
+      Friedrich-Alexander University Erlangen-Nurnberg, Erlangen, Germany.
+FAU - Huettel, Bruno
+AU  - Huettel B
+AD  - Max Planck Genome Center, Max Planck Institute for Plant Breeding Research, 
+      Cologne, Germany.
+FAU - Erger, Florian
+AU  - Erger F
+AD  - University Medicine Greifswald, Institute for Molecular Genomics, Core Unit 
+      Genomics, Greifswald, Germany. Electronic address: 
+      Florian.Erger@med.uni-greifswald.de.
+FAU - Beck, Bodo B
+AU  - Beck BB
+AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
+      Faculty of Medicine and University Hospital Cologne, Cologne, Germany.
+LA  - eng
+PT  - Journal Article
+DEP - 20260724
+PL  - United States
+TA  - Kidney Int
+JT  - Kidney international
+JID - 0323470
+SB  - IM
+OTO - NOTNLM
+OT  - ADTKD
+OT  - Chronic kidney disease of unexplained cause (CKDx)
+OT  - MUC1
+OT  - autosomal dominant tubulointerstitial kidney disease (ADTKD)
+OT  - kidney disease
+OT  - long-read sequencing
+OT  - variable number of tandem repeats (VNTR)
+EDAT- 2026/07/25 00:35
+MHDA- 2026/07/25 00:35
+CRDT- 2026/07/24 19:12
+PHST- 2025/11/03 00:00 [received]
+PHST- 2026/06/16 00:00 [revised]
+PHST- 2026/06/29 00:00 [accepted]
+PHST- 2026/07/25 00:35 [medline]
+PHST- 2026/07/25 00:35 [pubmed]
+PHST- 2026/07/24 19:12 [entrez]
+AID - S0085-2538(26)00611-3 [pii]
+AID - 10.1016/j.kint.2026.06.040 [doi]
+PST - aheadofprint
+SO  - Kidney Int. 2026 Jul 24:S0085-2538(26)00611-3. doi: 10.1016/j.kint.2026.06.040.
+
+PMID- 42428052
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260710
+LR  - 20260710
+DP  - 2026 Jul 4
+TI  - Complex structural variation, phylogeny, and disease associations of the mucin 
+      pangenome.
+LID - 2026.07.01.26356476 [pii]
+LID - 10.64898/2026.07.01.26356476 [doi]
+AB  - Mucins are large glycoproteins that provide hydration and barrier function to 
+      epithelial tissues. Although genetically heterogeneous, all mucins harbor a large 
+      exon composed of variable number tandem repeats (VNTRs). Short-read sequencing 
+      has limited our understanding of mucin VNTR diversity and makes disease 
+      association studies challenging. We leverage 296 long-read phased genome 
+      assemblies to characterize 14 mucin family members, achieving >/=97% accuracy 
+      across 572 haplotypes. Phylogenetic haplogroup analysis reveals extraordinary 
+      structural heterozygosity, with MUC4 harboring the greatest allelic diversity 
+      (n=240 distinct lengths) and MUC12 the greatest size range (Delta = 55,233 bp; 23,080 
+      amino acids). Ten mucins show significant population stratification (pFDR < 
+      0.05). At the MUC4/MUC20 locus, we characterize higher-order structural 
+      variation, including a recurrent inversion, copy number variation, and interlocus 
+      gene conversion. Optimized genotyping achieves >/=95% haplogroup concordance across 
+      10 loci. We apply this to 4,637 deeply phenotyped cystic fibrosis patients and 
+      identify a significant association between short MUC1 VNTRs and severe disease 
+      (p=0.0056), demonstrating the pangenome's utility for complex locus genotyping 
+      and disease discovery.
+FAU - Plender, Elizabeth G
+AU  - Plender EG
+AUID- ORCID: 0000-0002-5063-8737
+FAU - Prodanov, Timofey
+AU  - Prodanov T
+AUID- ORCID: 0000-0001-7469-6651
+FAU - Lin, Jiadong
+AU  - Lin J
+FAU - Wong, Isaac
+AU  - Wong I
+FAU - Wertz, Julie
+AU  - Wertz J
+FAU - Gordon, William W
+AU  - Gordon WW
+FAU - Bamshad, Michael J
+AU  - Bamshad MJ
+FAU - Munson, Katherine M
+AU  - Munson KM
+FAU - O'Neal, Wanda K
+AU  - O'Neal WK
+FAU - Bloom, Jesse D
+AU  - Bloom JD
+AUID- ORCID: 0000-0003-1267-3408
+CN  - Human Pangenome Reference Consortium
+FAU - Marschall, Tobias
+AU  - Marschall T
+AUID- ORCID: 0000-0002-9376-1030
+FAU - Eichler, Evan E
+AU  - Eichler EE
+AUID- ORCID: 0000-0002-8246-4014
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260704
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC13345508
+EDAT- 2026/07/10 06:34
+MHDA- 2026/07/10 06:35
+PMCR- 2026/07/08
+CRDT- 2026/07/10 05:12
+PHST- 2026/07/10 06:35 [medline]
+PHST- 2026/07/10 06:34 [pubmed]
+PHST- 2026/07/10 05:12 [entrez]
+PHST- 2026/07/08 00:00 [pmc-release]
+AID - 2026.07.01.26356476 [pii]
+AID - 10.64898/2026.07.01.26356476 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2026 Jul 4:2026.07.01.26356476. doi: 
+      10.64898/2026.07.01.26356476.
+
 PMID- 42175825
 OWN - NLM
-STAT- In-Process
-LR  - 20260623
+STAT- MEDLINE
+DCOM- 20260717
+LR  - 20260717
 IS  - 1095-8355 (Electronic)
 IS  - 1065-6995 (Linking)
 VI  - 50
@@ -94,16 +304,14 @@ JID - 9307129
 RN  - 0 (Biomarkers, Tumor)
 SB  - IM
 MH  - Humans
-MH  - *Breast Neoplasms/pathology/genetics/metabolism
 MH  - Female
-MH  - *Carcinoma, Papillary/pathology/genetics/metabolism
+MH  - *Breast Neoplasms/pathology/metabolism/genetics
+MH  - *Carcinoma, Papillary/pathology/metabolism/genetics
 MH  - Gene Expression Regulation, Neoplastic
 MH  - Biomarkers, Tumor/metabolism/genetics
-MH  - Middle Aged
 MH  - *Primary Cell Culture/methods
-MH  - Carcinoma, Ductal, Breast/pathology/genetics/metabolism
+MH  - Carcinoma, Ductal, Breast/pathology/metabolism/genetics
 MH  - Tumor Cells, Cultured
-MH  - Aged
 OTO - NOTNLM
 OT  - RNA sequencing
 OT  - breast
@@ -421,8 +629,8 @@ SO  - J Am Soc Nephrol. 2026 Apr 10. doi: 10.1681/ASN.0000001103.
 PMID- 41832605
 OWN - NLM
 STAT- MEDLINE
-DCOM- 20260620
-LR  - 20260620
+DCOM- 20260711
+LR  - 20260726
 IS  - 1542-0086 (Electronic)
 IS  - 0006-3495 (Print)
 IS  - 0006-3495 (Linking)
@@ -5985,6 +6193,7 @@ STAT- MEDLINE
 DCOM- 20140415
 LR  - 20250529
 IS  - 1432-0851 (Electronic)
+IS  - 0340-7004 (Print)
 IS  - 0340-7004 (Linking)
 VI  - 63
 IP  - 2
@@ -6059,14 +6268,18 @@ MH  - Neoplasms/immunology
 MH  - Peptide Fragments/*immunology
 PMC - PMC6383519
 MID - NIHMS1003634
+COIS- The authors declare that they have no conflicts of interest.
 EDAT- 2013/11/16 06:00
 MHDA- 2014/04/16 06:00
+PMCR- 2013/11/15
 CRDT- 2013/11/16 06:00
 PHST- 2013/07/19 00:00 [received]
 PHST- 2013/10/19 00:00 [accepted]
 PHST- 2013/11/16 06:00 [entrez]
 PHST- 2013/11/16 06:00 [pubmed]
 PHST- 2014/04/16 06:00 [medline]
+PHST- 2013/11/15 00:00 [pmc-release]
+AID - 1494 [pii]
 AID - 10.1007/s00262-013-1494-7 [doi]
 PST - ppublish
 SO  - Cancer Immunol Immunother. 2014 Feb;63(2):161-74. doi: 10.1007/s00262-013-1494-7. 
