@@ -571,6 +571,47 @@ def extended_bed(row, fields = [], genome = 'hg38'):
             bed_string += f"\t{value}" 
     return bed_string
 
+EVIDENCE_COLORS = {
+    'Definitive': '0,128,0',
+    'Strong': '64,160,0',
+    'Moderate': '0,0,200',
+    'Limited': '230,145,0',
+    'Provisional': '128,128,128',
+    'Disputed': '200,0,0',
+    'Refuted': '128,0,0',
+}
+
+def ucsc_catalog(row, genome='hg38'):
+    """Return a UCSC BED16 record for one STRchive locus.
+
+    The first nine fields are BED9. The remaining seven match strchive.as.
+
+    >>> ucsc_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'id': 'myid', 'gene_strand': '+', 'gene': 'MYGENE', 'reference_motif_reference_orientation': ['CAG'], 'pathogenic_motif_reference_orientation': ['CAG'], 'pathogenic_min': 10, 'inheritance': ['AD'], 'disease': 'Disease Name', 'evidence': ['Definitive']}).split(chr(9))
+    ['chr1', '100', '200', 'myid', '0', '+', '100', '200', '0,128,0', 'MYGENE', 'CAG', 'CAG', '10', 'AD', 'Disease Name', 'Definitive']
+    """
+    start = int(row['start_' + genome])
+    stop = int(row['stop_' + genome])
+    pathogenic_min = '.' if row['pathogenic_min'] is None else row['pathogenic_min']
+    fields = [
+        row['chrom'],
+        start,
+        stop,
+        row['id'],
+        0,
+        row['gene_strand'],
+        start,
+        stop,
+        EVIDENCE_COLORS[row['evidence'][0]],
+        row['gene'],
+        ','.join(row['reference_motif_reference_orientation']),
+        ','.join(row['pathogenic_motif_reference_orientation']),
+        pathogenic_min,
+        ','.join(row['inheritance']),
+        row['disease'],
+        ','.join(row['evidence']),
+    ]
+    return '\t'.join(str(value) for value in fields)
+
 default_fields = ','.join(['id', 'gene', 'reference_motif_reference_orientation', 'pathogenic_motif_reference_orientation', 'pathogenic_min', 'inheritance', 'disease'])
 
 def format_json_catalog(loci):
@@ -652,6 +693,11 @@ CATALOG_FORMATS = {
         'required_fields': [],
         'uses_fields': True,
     },
+    'ucsc': {
+        'serializer': ucsc_catalog,
+        'output_type': 'text',
+        'required_fields': ['id', 'gene_strand', 'gene', 'reference_motif_reference_orientation', 'pathogenic_motif_reference_orientation', 'inheritance', 'disease', 'evidence'],
+    },
 }
 
 def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38', cols: str = default_fields):
@@ -659,7 +705,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, ExpansionHunter, straglr, stranger, or BED)
+    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, ExpansionHunter, straglr, stranger, UCSC, or BED)
     :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 

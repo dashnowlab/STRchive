@@ -67,6 +67,10 @@ rule all:
         expand("{base_dir}catalogs/STRchive-disease-loci.hg38.stranger.json", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.hg19.stranger.json", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.stranger.json", base_dir = base_dir),
+        # ExpansionHunter catalogs
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg38.expansionhunter.json", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg19.expansionhunter.json", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.expansionhunter.json", base_dir = base_dir),
         # Straglr bed files
         expand("{base_dir}catalogs/STRchive-disease-loci.hg38.straglr.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.hg19.straglr.bed", base_dir = base_dir),
@@ -79,6 +83,10 @@ rule all:
         expand("{base_dir}catalogs/STRchive-disease-loci.hg38.longTR.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.hg19.longTR.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.longTR.bed", base_dir = base_dir),
+        # UCSC genome browser BED16 files
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bed", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bed", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.ucsc.bed", base_dir = base_dir),
         # Plots
         # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
         expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
@@ -324,6 +332,39 @@ rule stranger_T2T:
         python {scripts_dir}make-catalog.py -f stranger -g T2T {input.in_json} {output.results}
         """
 
+rule expansionhunter_hg38:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.expansionhunter.json"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f expansionhunter -g hg38 {input.in_json} {output.results}
+        """
+
+rule expansionhunter_hg19:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.expansionhunter.json"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f expansionhunter -g hg19 {input.in_json} {output.results}
+        """
+
+rule expansionhunter_T2T:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.expansionhunter.json"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f expansionhunter -g T2T {input.in_json} {output.results}
+        """
+
 rule straglr_hg38:
     input:
         in_json = in_json,
@@ -421,6 +462,39 @@ rule longTR_T2T:
     shell:
         """
         python {scripts_dir}make-catalog.py -f longTR -g T2T {input.in_json} {output.results}
+        """
+
+rule ucsc_hg38:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bed"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f ucsc -g hg38 {input.in_json} {output.results}
+        """
+
+rule ucsc_hg19:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bed"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f ucsc -g hg19 {input.in_json} {output.results}
+        """
+
+rule ucsc_T2T:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.ucsc.bed"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f ucsc -g T2T {input.in_json} {output.results}
         """
 
 rule age_onset_plot:

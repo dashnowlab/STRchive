@@ -63,6 +63,10 @@ jobs:
               renameSync(file, file.replace("STRchive-loci", `STRchive-loci-v${newVersion}`));
             for (const file of globSync("**/STRchive-disease-loci*.bed"))
               renameSync(file, file.replace("STRchive-disease-loci", `STRchive-disease-loci-v${newVersion}`));
+            for (const file of globSync("**/STRchive-disease-loci*.expansionhunter.json"))
+              renameSync(file, file.replace("STRchive-disease-loci", `STRchive-disease-loci-v${newVersion}`));
+            for (const file of globSync("**/strchive.as"))
+              renameSync(file, file.replace("strchive.as", `strchive-v${newVersion}.as`));
 
             return newVersion;
 
@@ -79,3 +83,5 @@ jobs:
             **/STRchive-loci*.json
             **/STRchive-citations*.json
             **/STRchive-disease-loci*.bed
+            **/STRchive-disease-loci*.expansionhunter.json
+            **/strchive-v*.as
