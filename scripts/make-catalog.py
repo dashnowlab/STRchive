@@ -2,7 +2,6 @@ import json
 import sys
 import re
 import decimal
-import jsbeautifier
 from copy import deepcopy
 
 def chrom_to_int(chrom):
@@ -35,15 +34,19 @@ def remove_exponent(d):
     d = decimal.Decimal(d)
     return d.quantize(decimal.Decimal(1)) if d == d.to_integral() else d.normalize()
 
-def clean_loci(data, genome):
+def clean_loci(data, genome, required_fields=None):
     """Exclude incomplete entries. Warn about multiple nearby entries in same gene.
     :param data: list of dictionaries with STR data
     :param genome: genome build (hg19, hg38 or t2t)
+    :param required_fields: catalog-specific fields that must be populated
     """
+    if required_fields is None:
+        required_fields = ['pathogenic_motif_reference_orientation', 'gene', 'id']
+
     keep_rows = []
     for row in data:
         complete = True
-        for field in ['chrom', 'start_' + genome, 'stop_' + genome, 'pathogenic_motif_reference_orientation', 'gene', 'id']:
+        for field in ['chrom', 'start_' + genome, 'stop_' + genome] + required_fields:
             if field not in row:
                 raise ValueError(f'Missing field {field} in input file.')
             if row[field] is None or row[field] == '':
@@ -52,10 +55,11 @@ def clean_loci(data, genome):
         if complete:
             keep_rows.append(row)
 
-    # report multiple entries in same gene
-    genes = [row['gene'] for row in keep_rows]
-    duplicates = ', '.join(set([x for x in genes if genes.count(x) > 1]))
-    sys.stderr.write(f'Warning: multiple loci found in the same gene, keeping all: {duplicates}\n')
+    # report multiple entries in same gene when the selected format uses genes
+    if 'gene' in required_fields:
+        genes = [row['gene'] for row in keep_rows]
+        duplicates = ', '.join(set([x for x in genes if genes.count(x) > 1]))
+        sys.stderr.write(f'Warning: multiple loci found in the same gene, keeping all: {duplicates}\n')
 
     return keep_rows
 
@@ -216,16 +220,15 @@ def trgt_catalog(row, genome = 'hg38', struc_type = 'default'):
     'chr1\t100\t200\tID=myid;MOTIFS=CAG,CCG;STRUC=<TR>'
     """
 
-    # Add flank coordinates to locus structure
-    row['locus_structure'] = add_flank_coordinates(row, genome)
+    locus_structure = add_flank_coordinates(row, genome)
 
     start = row['start_' + genome]
     stop = row['stop_' + genome]
     struc = ''
     motifs = []
 
-    if len(row['locus_structure']) > 0:
-        for struct_dict in row['locus_structure']:
+    if len(locus_structure) > 0:
+        for struct_dict in locus_structure:
             # Extend start and end coordinates if needed
             start = min(start, struct_dict['start_' + genome])
             stop = max(stop, struct_dict['stop_' + genome])
@@ -288,42 +291,42 @@ def atarva_catalog(row, genome = 'hg38'):
     'chr1\t100\t200\tCAG\t3\tmyid\nchr1\t200\t236\tCAACAG\t6\tmyid_flank\nchr1\t236\t245\tCCG\t3\tmyid_flank'
     """
 
-    # Add flank coordinates to locus structure
-    row['locus_structure'] = add_flank_coordinates(row, genome)
-
     bed_string = ''
+    for record in repeat_bed_records(row, genome):
+        bed_string += '\t'.join(str(value) for value in record) + '\n'
 
-    motif_field = 'pathogenic_motif_reference_orientation'
-    id_field = 'id'
-    start = int(row['start_' + genome])
-    stop = int(row['stop_' + genome])
+    return bed_string.rstrip('\n')
 
-    motifs = row[motif_field]
-    this_id = row[id_field]
+def repeat_bed_records(row, genome='hg38'):
+    """Return Atarva BED records as structured fields for one locus."""
+    locus_structure = add_flank_coordinates(row, genome)
+    records = []
 
-    # check for flanking motif(s)
-    if len(row['locus_structure']) > 0:
-        for struct_dict in row['locus_structure']:
+    if len(locus_structure) > 0:
+        for struct_dict in locus_structure:
             motif = struct_dict['motif']
             motif_len = len(motif)
             start = struct_dict['start_' + genome]
             stop = struct_dict['stop_' + genome]
             if struct_dict['type'] == 'pathogenic_repeat':
-                # this is the main repeat
-                bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
+                records.append([row['chrom'], start, stop, motif, motif_len, row['id']])
             elif struct_dict['type'] == 'interruption' or struct_dict['type'] == 'internal_repeat':
-                # interruptions and internal repeats are not included in the structure
                 continue
             else:
-                # this is a flank repeat
-                bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}_flank\n"
-
+                records.append([row['chrom'], start, stop, motif, motif_len, f"{row['id']}_flank"])
     else:
-        motif = motifs[0] # use first motif only
+        motif = row['pathogenic_motif_reference_orientation'][0]
         motif_len = len(motif)
-        bed_string += f"{row['chrom']}\t{start}\t{stop}\t{motif}\t{motif_len}\t{this_id}\n"
+        records.append([
+            row['chrom'],
+            int(row['start_' + genome]),
+            int(row['stop_' + genome]),
+            motif,
+            motif_len,
+            row['id'],
+        ])
 
-    return bed_string.rstrip('\n')
+    return records
 
 def longtr_catalog(row, genome = 'hg38'):
     r"""
@@ -345,63 +348,44 @@ def longtr_catalog(row, genome = 'hg38'):
     return definition
 
 def expansionhunter_catalog(row, genome):
+    """Return an ExpansionHunter locus-specification record.
+
+    ReferenceRegion coordinates are 0-based and half-open. For compound loci,
+    ReferenceRegion and VariantType are arrays aligned to repeat components in
+    LocusStructure, as defined by ExpansionHunter.
+
+    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [], 'id': 'myid'}, 'hg38')
+    {'LocusId': 'myid', 'LocusStructure': '(CAG)*', 'ReferenceRegion': 'chr1:100-200', 'VariantType': 'Repeat'}
+
+    >>> expansionhunter_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'pathogenic_motif_reference_orientation': ['CAG'], 'locus_structure': [{'motif': 'CAG', 'count': None, 'type': 'pathogenic_repeat'}, {'motif': 'CAACAG', 'count': 1, 'type': 'interruption'}, {'motif': 'CCG', 'count': 3, 'type': 'flank_repeat'}], 'id': 'myid'}, 'hg38')
+    {'LocusId': 'myid', 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'ReferenceRegion': ['chr1:100-194', 'chr1:200-209'], 'VariantType': ['Repeat', 'Repeat']}
     """
-    See format description at https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md
+    locus_structure = add_flank_coordinates(row, genome)
+    locus_dict = {'LocusId': row['id']}
 
-    Example from gnomAD:
-    {
-        "LocusId": "ABCD3",
-        "ReferenceRegion": "chr1:94418421-94418442",
-        "LocusStructure": "(GCC)*",
-        "VariantType": "Repeat",
-        "RepeatUnit": "GCC",
-        "Gene": "ABCD3",
-        "GeneRegion": "5'-UTR",
-        "GeneId": "ENSG00000117528",
-        "DiscoveryMethod": "WGS",
-        "DiscoveryYear": 2023,
-        "Diseases": [
-            {
-                "Symbol": "OPDM",
-                "Name": "Oculopharyngodistal myopathy",
-                "Inheritance": "AD",
-                "NormalMax": 44,
-                "PathogenicMin": 118
-            }
-        ],
-        "MainReferenceRegion": "chr1:94418421-94418442",
-        "Inheritance": "AD"
-    }
+    if len(locus_structure) == 0:
+        locus_dict['LocusStructure'] = f"({row['pathogenic_motif_reference_orientation'][0]})*"
+        locus_dict['ReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
+        locus_dict['VariantType'] = 'Repeat'
+        return locus_dict
 
-    Simple example from ExpansionHunter:
-    {
-    "LocusId": "DMPK",
-    "LocusStructure": "(CAG)*",
-    "ReferenceRegion": "19:46273462-46273522", # 0-based coordinates
-    "VariantType": "Repeat"
-    },
-    {
-    "LocusId": "HTT",
-    "LocusStructure": "(CAG)*CAACAG(CCG)*",
-    "ReferenceRegion": ["4:3076604-3076660", "4:3076666-3076693"],
-    "VariantType": ["Repeat", "Repeat"]
-    }
-    """
-    raise NotImplementedError
+    structure_parts = []
+    reference_regions = []
+    variant_types = []
+    for struct_dict in locus_structure:
+        motif = struct_dict['motif']
+        if struct_dict['type'] == 'interruption':
+            structure_parts.append(motif * struct_dict['count'])
+            continue
 
-    # Optional fields used by gnomAD:
-    # locus_dict['MainReferenceRegion'] = f"{row['chrom']}:{row['start_' + genome]}-{row['stop_' + genome]}"
-    # locus_dict['Inheritance'] = row['inheritance']
-    # locus_dict['Gene'] = row['gene']
-    # locus_dict['GeneRegion'] = row['type']
-    # locus_dict['DiscoveryYear'] = row['year']
-    # locus_dict['Diseases'] = [{
-    #     'Symbol': row['disease_id'],
-    #     'Name': row['disease'],
-    #     'Inheritance': row['inheritance'],
-    #     'NormalMax': row['benign_max'],
-    #     'PathogenicMin': row['pathogenic_min']
-    # }]
+        structure_parts.append(f'({motif})*')
+        reference_regions.append(f"{row['chrom']}:{struct_dict['start_' + genome]}-{struct_dict['stop_' + genome]}")
+        variant_types.append('Repeat')
+
+    locus_dict['LocusStructure'] = ''.join(structure_parts)
+    locus_dict['ReferenceRegion'] = reference_regions[0] if len(reference_regions) == 1 else reference_regions
+    locus_dict['VariantType'] = variant_types[0] if len(variant_types) == 1 else variant_types
+    return locus_dict
 
 def stranger_catalog(row, genome = 'hg38'):
     r"""
@@ -452,18 +436,18 @@ def stranger_catalog(row, genome = 'hg38'):
     # {'LocusId': 'myid', 'ReferenceRegion': ['chr1:100-200', 'chr1:206-215'], 'LocusStructure': '(CAG)*CAACAG(CCG)*', 'VariantType': ['Repeat', 'Repeat'], 'VariantId': ['myid', 'myid_CCG'], 'PathologicRegion': 'chr1:100-200', 'HGNCId': None, 'InheritanceMode': 'AD', 'DisplayRU': 'CAG', 'Disease': 'disease_id', 'NormalMax': 5, 'PathologicMin': 10, 'Gene': 'mygene'}
     """
 
-    row['locus_structure'] = add_flank_coordinates(row, genome)
+    locus_structure = add_flank_coordinates(row, genome)
 
     locus_dict = {}
 
     # Required/standard fields from ExpansionHunter:
     locus_dict['LocusId'] = row['id']
     locus_dict['ReferenceRegion'] = []
-    if len(row['locus_structure']) > 0:
+    if len(locus_structure) > 0:
         locus_dict['LocusStructure'] = ''
         locus_dict['VariantType'] = []
         locus_dict['VariantId'] = [] # used to store the ID of the variant, e.g. myid_CCG for the CCG motif in the locus structure
-        for struct_dict in row['locus_structure']:
+        for struct_dict in locus_structure:
             
             if struct_dict['type'] == 'interruption':
                 locus_dict['LocusStructure'] += f"{struct_dict['motif']*struct_dict['count']}" # interruptions are included in the structure but not in the variant list
@@ -541,16 +525,15 @@ def straglr_catalog(row, genome = 'hg38', format = 'default'):
     
     bed_list = []
     # Use the same approach as atarva_catalog, but only return the first 4 columns (chrom, start, stop)
-    atarva_list = [x.split('\t') for x in atarva_catalog(row, genome).split('\n')]  
+    atarva_list = repeat_bed_records(row, genome)
     if format == 'default':
         for bed_row in atarva_list:
-            bed_list.append('\t'.join(bed_row[0:4]))
+            bed_list.append('\t'.join(str(value) for value in bed_row[0:4]))
     elif format == 'wf-human-variation':
         for bed_row in atarva_list:
             motif = bed_row[3]
-            # replace the word "flank" with the motif name in the id
-            bed_row[5] = bed_row[5].replace('_flank', f'_{motif}')
-            bed_list.append('\t'.join(bed_row[0:4] + [row['id'], bed_row[5]]))
+            record_id = bed_row[5].replace('_flank', f'_{motif}')
+            bed_list.append('\t'.join(str(value) for value in bed_row[0:4] + [row['id'], record_id]))
     else:
         raise ValueError(f'Unknown format: {format}. Expected default or wf-human-variation.')
 
@@ -577,24 +560,106 @@ def extended_bed(row, fields = [], genome = 'hg38'):
     bed_string = f"{row['chrom']}\t{start}\t{stop}"
     if len(fields) > 0:
         for field in fields:
-            if isinstance(row[field], list):
-                row[field] = ','.join(row[field])
-            if isinstance(row[field], float):
-                row[field] = remove_exponent(row[field])
+            value = row[field]
+            if isinstance(value, list):
+                value = ','.join(value)
+            if isinstance(value, float):
+                value = remove_exponent(value)
             # ensure field does not contain tabs
-            if isinstance(row[field], str) and '\t' in row[field]:
-                raise ValueError(f'Tab character found in field {field} value: {row[field]}')
-            bed_string += f"\t{row[field]}" 
+            if isinstance(value, str) and '\t' in value:
+                raise ValueError(f'Tab character found in field {field} value: {value}')
+            bed_string += f"\t{value}" 
     return bed_string
 
 default_fields = ','.join(['id', 'gene', 'reference_motif_reference_orientation', 'pathogenic_motif_reference_orientation', 'pathogenic_min', 'inheritance', 'disease'])
+
+def format_json_catalog(loci):
+    """Format JSON like the historical jsbeautifier configuration."""
+    try:
+        import jsbeautifier
+    except ImportError:
+        formatted = json.dumps(loci, ensure_ascii=False, indent=2)
+        return re.sub(r'^  ([{}],?)$', r'\1', formatted, flags=re.MULTILINE)
+
+    options = jsbeautifier.default_options()
+    options.indent_size = 2
+    options.brace_style = 'expand'
+    return jsbeautifier.beautify(json.dumps(loci, ensure_ascii=False), options)
+
+def write_catalog(output, data, genome, catalog, fields):
+    """Write catalog records using the output settings declared in a registry entry."""
+    entries = []
+    serializer_kwargs = catalog.get('serializer_kwargs', {})
+    for row in data:
+        if catalog.get('uses_fields'):
+            entry = catalog['serializer'](row, fields, genome)
+        else:
+            entry = catalog['serializer'](row, genome, **serializer_kwargs)
+        if entry is not None:
+            entries.append(entry)
+
+    if catalog['output_type'] == 'json':
+        output = output if output.endswith('.json') else output + '.json'
+        with open(output, 'w') as out_file:
+            out_file.write(format_json_catalog(entries))
+            out_file.write('\n')
+        return
+
+    header = catalog.get('header')
+    with open(output, 'w') as out_file:
+        if header is not None:
+            out_file.write(header(fields) + '\n')
+        for entry in entries:
+            out_file.write(entry + '\n')
+
+CATALOG_FORMATS = {
+    'trgt': {
+        'serializer': trgt_catalog,
+        'output_type': 'text',
+        'required_fields': ['pathogenic_motif_reference_orientation', 'reference_motif_reference_orientation', 'benign_motif_reference_orientation', 'gene', 'id', 'locus_structure'],
+    },
+    'atarva': {
+        'serializer': atarva_catalog,
+        'output_type': 'text',
+        'header': lambda fields: '#' + '\t'.join(['chrom', 'start', 'stop', 'motif', 'motif_len', 'id']),
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure'],
+    },
+    'longtr': {
+        'serializer': longtr_catalog,
+        'output_type': 'text',
+        'required_fields': ['pathogenic_motif_reference_orientation', 'benign_motif_reference_orientation', 'reference_motif_reference_orientation', 'id'],
+    },
+    'expansionhunter': {
+        'serializer': expansionhunter_catalog,
+        'output_type': 'json',
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure'],
+    },
+    'stranger': {
+        'serializer': stranger_catalog,
+        'output_type': 'json',
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure', 'inheritance', 'disease_id', 'pathogenic_min', 'benign_max', 'gene'],
+    },
+    'straglr': {
+        'serializer': straglr_catalog,
+        'serializer_kwargs': {'format': 'wf-human-variation'},
+        'output_type': 'text',
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure', 'pathogenic_min', 'benign_max'],
+    },
+    'bed': {
+        'serializer': extended_bed,
+        'output_type': 'text',
+        'header': lambda fields: '#' + '\t'.join(['chrom', 'start', 'stop'] + fields),
+        'required_fields': [],
+        'uses_fields': True,
+    },
+}
 
 def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38', cols: str = default_fields):
     """
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, straglr, stranger, ExpansionHunter or BED)
+    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, ExpansionHunter, straglr, stranger, or BED)
     :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 
@@ -610,72 +675,23 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     else:
         raise ValueError(f'Unknown input file extension: {input} \nExpected .json')
 
+    catalog_name = format.lower()
+    catalog = CATALOG_FORMATS.get(catalog_name)
+    if catalog is None:
+        available_formats = ', '.join(CATALOG_FORMATS)
+        raise ValueError(f'Unknown output file format: {format}. Expected one of: {available_formats}.')
+
     fields = cols
-    if fields != default_fields and format.lower() != 'bed':
+    if fields != default_fields and catalog_name != 'bed':
         raise ValueError('Fields option is only available for BED format output.')
 
-    data = clean_loci(data, genome)
+    fields_list = fields.split(',')
+    required_fields = catalog['required_fields'] + (fields_list if catalog.get('uses_fields') else [])
+    data = clean_loci(data, genome, list(dict.fromkeys(required_fields)))
 
     # sort by chromosome and start position
     data = sorted(data, key = lambda x: (chrom_to_int(x['chrom']), int(x['start_' + genome])))
-
-    if format.lower() == 'trgt':
-        with open(output, 'w') as out_file:
-            for row in data:
-                out_file.write(trgt_catalog(row, genome) + '\n')
-    elif format.lower() == 'atarva':
-        with open(output, 'w') as out_file:
-            header = '#' + '\t'.join(['chrom', 'start', 'stop', 'motif', 'motif_len', 'id']) + '\n'
-            out_file.write(header)
-            for row in data:
-                out_file.write(atarva_catalog(row, genome) + '\n')
-    elif format.lower() == 'longtr':
-        with open(output, 'w') as out_file:
-            for row in data:
-                out_file.write(longtr_catalog(row, genome) + '\n')
-    elif format.lower() == 'expansionhunter':
-        eh_loci = []
-        for row in data:
-            locus = expansionhunter_catalog(row, genome)
-            eh_loci.append(locus)
-        # Write the catalog as a JSON array
-        output = output if output.endswith('.json') else output + '.json'
-        with open(output, 'w') as out_json_file:
-            options = jsbeautifier.default_options()
-            options.indent_size = 2
-            options.brace_style="expand"
-            out_json_file.write(jsbeautifier.beautify(json.dumps(eh_loci, ensure_ascii=False), options))
-            out_json_file.write('\n')
-    elif format.lower() == 'stranger':
-        stranger_loci = []
-        for row in data:
-            locus = stranger_catalog(row, genome)
-            if locus is not None:
-                stranger_loci.append(locus)
-        # Write the catalog as a JSON array
-        output = output if output.endswith('.json') else output + '.json'
-        with open(output, 'w') as out_json_file:
-            options = jsbeautifier.default_options()
-            options.indent_size = 2
-            options.brace_style="expand"
-            out_json_file.write(jsbeautifier.beautify(json.dumps(stranger_loci, ensure_ascii=False), options))
-            out_json_file.write('\n')
-    elif format.lower() == 'straglr':
-        with open(output, 'w') as out_file:
-            # No header for straglr format
-            for row in data:
-                straglr_string = straglr_catalog(row, genome, format = 'wf-human-variation')
-                if straglr_string is not None:  # Check if the string is not None
-                    out_file.write(straglr_string + '\n')
-    elif format.lower() == 'bed':
-        fields_list = fields.split(',')
-        header = '#' + '\t'.join(['chrom', 'start', 'stop'] + fields_list) + '\n'
-        with open(output, 'w') as out_file:
-            out_file.write(header)
-            for row in data:
-                out_file.write(extended_bed(row, fields_list, genome) + '\n')
-    else:
-        raise ValueError('Unknown output file format. Expected TRGT, atarva, straglr or BED.')
+    write_catalog(output, data, genome, catalog, fields_list)
 
 if __name__ == "__main__":
     import doctest
