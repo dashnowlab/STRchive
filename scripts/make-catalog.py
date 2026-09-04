@@ -2,6 +2,7 @@ import json
 import sys
 import re
 import decimal
+import jsbeautifier
 from copy import deepcopy
 
 def chrom_to_int(chrom):
@@ -616,12 +617,6 @@ default_fields = ','.join(['id', 'gene', 'reference_motif_reference_orientation'
 
 def format_json_catalog(loci):
     """Format JSON like the historical jsbeautifier configuration."""
-    try:
-        import jsbeautifier
-    except ImportError:
-        formatted = json.dumps(loci, ensure_ascii=False, indent=2)
-        return re.sub(r'^  ([{}],?)$', r'\1', formatted, flags=re.MULTILINE)
-
     options = jsbeautifier.default_options()
     options.indent_size = 2
     options.brace_style = 'expand'
@@ -678,13 +673,13 @@ CATALOG_FORMATS = {
     'stranger': {
         'serializer': stranger_catalog,
         'output_type': 'json',
-        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure', 'inheritance', 'disease_id', 'pathogenic_min', 'benign_max', 'gene'],
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure', 'inheritance', 'disease_id', 'gene'],
     },
     'straglr': {
         'serializer': straglr_catalog,
         'serializer_kwargs': {'format': 'wf-human-variation'},
         'output_type': 'text',
-        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure', 'pathogenic_min', 'benign_max'],
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id', 'locus_structure'],
     },
     'bed': {
         'serializer': extended_bed,
@@ -732,8 +727,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
         raise ValueError('Fields option is only available for BED format output.')
 
     fields_list = fields.split(',')
-    required_fields = catalog['required_fields'] + (fields_list if catalog.get('uses_fields') else [])
-    data = clean_loci(data, genome, list(dict.fromkeys(required_fields)))
+    data = clean_loci(data, genome, catalog['required_fields'])
 
     # sort by chromosome and start position
     data = sorted(data, key = lambda x: (chrom_to_int(x['chrom']), int(x['start_' + genome])))
