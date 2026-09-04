@@ -87,6 +87,10 @@ rule all:
         expand("{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.ucsc.bed", base_dir = base_dir),
+        # UCSC genome browser bigBed files
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bb", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bb", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.ucsc.bb", base_dir = base_dir),
         # Plots
         # expand("{base_dir}plots/gnomad.json", base_dir = base_dir),
         expand("{base_dir}plots/age-onset.json", base_dir = base_dir),
@@ -495,6 +499,81 @@ rule ucsc_T2T:
     shell:
         """
         python {scripts_dir}make-catalog.py -f ucsc -g T2T {input.in_json} {output.results}
+        """
+
+rule ucsc_hg38_chrom_sizes:
+    output:
+        chrom_sizes = f"{ref_directory}hg38.chrom.sizes"
+    shell:
+        """
+        curl --fail --location --silent --show-error \
+          https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.chrom.sizes \
+          --output {output.chrom_sizes}
+        """
+
+rule ucsc_hg19_chrom_sizes:
+    output:
+        chrom_sizes = f"{ref_directory}hg19.chrom.sizes"
+    shell:
+        """
+        curl --fail --location --silent --show-error \
+          https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.chrom.sizes \
+          --output {output.chrom_sizes}
+        """
+
+rule ucsc_T2T_chrom_sizes:
+    output:
+        chrom_sizes = f"{ref_directory}hs1.chrom.sizes"
+    shell:
+        """
+        curl --fail --location --silent --show-error \
+          https://hgdownload.soe.ucsc.edu/goldenPath/hs1/bigZips/hs1.chrom.sizes \
+          --output {output.chrom_sizes}
+        """
+
+rule ucsc_bigbed_hg38:
+    input:
+        bed = "{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bed",
+        schema = "{base_dir}catalogs/strchive.as",
+        chrom_sizes = f"{ref_directory}hg38.chrom.sizes"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bb"
+    shell:
+        """
+        sorted_bed=$(mktemp)
+        trap 'rm -f "$sorted_bed"' EXIT
+        bedtools sort -faidx {input.chrom_sizes} -i {input.bed} > "$sorted_bed"
+        bedToBigBed -as={input.schema} -type=bed9+7 -tab "$sorted_bed" {input.chrom_sizes} {output.results}
+        """
+
+rule ucsc_bigbed_hg19:
+    input:
+        bed = "{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bed",
+        schema = "{base_dir}catalogs/strchive.as",
+        chrom_sizes = f"{ref_directory}hg19.chrom.sizes"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bb"
+    shell:
+        """
+        sorted_bed=$(mktemp)
+        trap 'rm -f "$sorted_bed"' EXIT
+        bedtools sort -faidx {input.chrom_sizes} -i {input.bed} > "$sorted_bed"
+        bedToBigBed -as={input.schema} -type=bed9+7 -tab "$sorted_bed" {input.chrom_sizes} {output.results}
+        """
+
+rule ucsc_bigbed_T2T:
+    input:
+        bed = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.ucsc.bed",
+        schema = "{base_dir}catalogs/strchive.as",
+        chrom_sizes = f"{ref_directory}hs1.chrom.sizes"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.ucsc.bb"
+    shell:
+        """
+        sorted_bed=$(mktemp)
+        trap 'rm -f "$sorted_bed"' EXIT
+        bedtools sort -faidx {input.chrom_sizes} -i {input.bed} > "$sorted_bed"
+        bedToBigBed -as={input.schema} -type=bed9+7 -tab "$sorted_bed" {input.chrom_sizes} {output.results}
         """
 
 rule age_onset_plot:

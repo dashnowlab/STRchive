@@ -50,9 +50,12 @@ Additionally this file is included as the source and to track changes, but is no
 - `STRchive-disease-loci.hg38.ucsc.bed`
 - `STRchive-disease-loci.hg19.ucsc.bed`
 - `STRchive-disease-loci.T2T-chm13.ucsc.bed`
+- `STRchive-disease-loci.hg38.ucsc.bb`
+- `STRchive-disease-loci.hg19.ucsc.bb`
+- `STRchive-disease-loci.T2T-chm13.ucsc.bb`
 
-This BED16 file can be imported as a UCSC custom track. The accompanying
-`strchive.as` autoSql schema can be used to create a bigBed file.
+The BED16 files can be imported as UCSC custom tracks. The bigBed files can be
+loaded in UCSC and other genome browsers, including IGV.
 
 Item colors encode evidence strength: green for Definitive or Strong, blue for
 Moderate, amber for Limited, gray for Provisional, and red for Disputed or
@@ -69,11 +72,5 @@ track name="STRchive" description="STRchive disease-associated STR loci" type=be
 Do not include that `track` line when creating a bigBed; configure its display
 settings in the track hub's `trackDb.txt` instead.
 
-```sh
-bedToBigBed -as=strchive.as -type=bed9+7 \
-  STRchive-disease-loci.hg38.ucsc.bed hg38.chrom.sizes \
-  STRchive-disease-loci.hg38.ucsc.bb
-```
-
-Replace `hg38` consistently with `hg19` or `T2T-chm13` and provide the
-corresponding chromosome-size file to create the other bigBed files.
+Snakemake downloads the matching UCSC chromosome-size files and creates all
+three bigBed files with `bedToBigBed -as=strchive.as -type=bed9+7`.
