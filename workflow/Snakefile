@@ -83,6 +83,10 @@ rule all:
         expand("{base_dir}catalogs/STRchive-disease-loci.hg38.longTR.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.hg19.longTR.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.longTR.bed", base_dir = base_dir),
+        # STRkit catalog BED files
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg38.strkit.bed", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.hg19.strkit.bed", base_dir = base_dir),
+        expand("{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.strkit.bed", base_dir = base_dir),
         # UCSC genome browser BED16 files
         expand("{base_dir}catalogs/STRchive-disease-loci.hg38.ucsc.bed", base_dir = base_dir),
         expand("{base_dir}catalogs/STRchive-disease-loci.hg19.ucsc.bed", base_dir = base_dir),
@@ -466,6 +470,39 @@ rule longTR_T2T:
     shell:
         """
         python {scripts_dir}make-catalog.py -f longTR -g T2T {input.in_json} {output.results}
+        """
+
+rule strkit_hg38:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg38.strkit.bed"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f strkit -g hg38 {input.in_json} {output.results}
+        """
+
+rule strkit_hg19:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.hg19.strkit.bed"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f strkit -g hg19 {input.in_json} {output.results}
+        """
+
+rule strkit_T2T:
+    input:
+        in_json = in_json,
+        check = "{base_dir}check-loci.txt"
+    output:
+        results = "{base_dir}catalogs/STRchive-disease-loci.T2T-chm13.strkit.bed"
+    shell:
+        """
+        python {scripts_dir}make-catalog.py -f strkit -g T2T {input.in_json} {output.results}
         """
 
 rule ucsc_hg38:

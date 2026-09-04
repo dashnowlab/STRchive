@@ -348,6 +348,22 @@ def longtr_catalog(row, genome = 'hg38'):
 
     return definition
 
+def strkit_catalog(row, genome='hg38'):
+    """Return a STRkit locus record with a stable locus ID.
+
+    STRkit uses 0-based, half-open coordinates and requires the motif
+    description to be the final tab-separated field.
+
+    >>> strkit_catalog({'chrom': 'chr1', 'start_hg38': 100, 'stop_hg38': 200, 'id': 'myid', 'pathogenic_motif_reference_orientation': ['CAG']}).split(chr(9))
+    ['chr1', '100', '200', 'ID=myid;MOTIF=CAG']
+    """
+    return '\t'.join([
+        row['chrom'],
+        str(int(row['start_' + genome])),
+        str(int(row['stop_' + genome])),
+        f"ID={row['id']};MOTIF={row['pathogenic_motif_reference_orientation'][0]}",
+    ])
+
 def expansionhunter_catalog(row, genome):
     """Return an ExpansionHunter locus-specification record.
 
@@ -665,6 +681,11 @@ CATALOG_FORMATS = {
         'output_type': 'text',
         'required_fields': ['pathogenic_motif_reference_orientation', 'benign_motif_reference_orientation', 'reference_motif_reference_orientation', 'id'],
     },
+    'strkit': {
+        'serializer': strkit_catalog,
+        'output_type': 'text',
+        'required_fields': ['pathogenic_motif_reference_orientation', 'id'],
+    },
     'expansionhunter': {
         'serializer': expansionhunter_catalog,
         'output_type': 'json',
@@ -700,7 +721,7 @@ def main(input: str, output: str, *, format: str = 'TRGT', genome: str = 'hg38',
     :param input: STRchive database file name in JSON format
     :param output: Output file name in bed format
     :param genome: Genome build: hg19, hg38, T2T (also accepted: chm13, chm13-T2T, T2T-CHM13)
-    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, ExpansionHunter, straglr, stranger, UCSC, or BED)
+    :param format: Variant caller catalog file format or BED format (TRGT, atarva, LongTR, STRkit, ExpansionHunter, straglr, stranger, UCSC, or BED)
     :param cols: Comma separated list of columns to include in the extended BED format beyond chrom,start,stop (no spaces in list). Can be any valid STRchive json field.
     """
 
