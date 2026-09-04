@@ -25,6 +25,7 @@ dependencies:
   - pysam
   - htslib
   - bedtools
+  - ucsc-bedtobigbed
   - nodejs
   - pyliftover
   - pip
