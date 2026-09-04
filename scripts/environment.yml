@@ -27,6 +27,7 @@ dependencies:
   - pysam
   - htslib
   - bedtools
+  - ucsc-bedtobigbed
   - nodejs # build website locally
   - pyliftover
   - pip
