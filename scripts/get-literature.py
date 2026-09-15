@@ -1,7 +1,7 @@
 
 #!/usr/bin/env python3
 """
-Retrieve PubMed literature for STRchive loci.
+Retrieve PubMed Literature for monthly lit review
 Usage:
   python get-literature.py STRchive-loci.json literature-dir out-citations.json out-loci-literature.json
 """
@@ -33,15 +33,17 @@ EXCLUDED_SYNONYMS = ["B37", "MHP", "MED", "DM", "DM1", "FA", "GAC", "SPD",
 # Synonyms BioMart misses
 EXTRA_SYNONYMS = {"FMR1": "FMR-1", "NUTM2B-AS1": "LOC642361/NUTM2B-AS1", "ATXN10": "SCA10"}
 
+#Repeat terms to inclide 
 TERMS_REPEAT = ['"repeat expansion"[Title/Abstract]', '"repeat expansions"[Title/Abstract]',
                 '"tandem repeat"[Title/Abstract]', '"tandem repeats"[Title/Abstract]',
                 '"repeat sequence"[Title/Abstract]', '"repeat sequences"[Title/Abstract]',
                 '"repeat length"[Title/Abstract]', '"repeat lengths"[Title/Abstract]',
                 '"expansion"[Title]', '"expansions"[Title]', '"repeats"[Title]']
 
+#Disease terms to inclide 
 TERMS_DISEASE = ["disease*[Title/Abstract]", "disorder*[Title/Abstract]", "syndrome*[Title/Abstract]",
                  "patient*[Title/Abstract]", "proband*[Title/Abstract]"]
-
+#types of publications
 TERMS_PUBTYPE = ['"journal article"[Publication Type]', '"letter"[Publication Type]',
                  '"Case Reports"[Publication Type]']
 
@@ -131,7 +133,7 @@ def synonym_file_age_days():
 
 
 def read_synonym_file(genes):
-    # Fallback synonyms from the local TSV.
+    # Fallback synonyms from the local TSV
     if not os.path.exists(SYNONYM_FILE):
         sys.exit(f"BioMart is unreachable and there is no fallback file")
 
@@ -139,10 +141,8 @@ def read_synonym_file(genes):
     log("Failed to create the mart object. Using previous gene synonyms from file:", SYNONYM_FILE)
     log(f"  last modified {age_days:.0f} days ago") # To better know when it was last updated
     if age_days > SYNONYM_MAX_AGE_DAYS and not os.environ.get("STRCHIVE_ALLOW_STALE_SYNONYMS"):
-        sys.exit(f"Refusing to run: {SYNONYM_FILE} is {age_days:.0f} days old (limit "
-                 f"{SYNONYM_MAX_AGE_DAYS:.0f}). Synonyms this old reduce PubMed recall without "
-                 f"any visible error. Re-download it from BioMart, or set "
-                 f"STRCHIVE_ALLOW_STALE_SYNONYMS=1 to proceed anyway.")
+        sys.exit(f" {SYNONYM_FILE} is {age_days:.0f} days old (limit "
+                 f"{SYNONYM_MAX_AGE_DAYS:.0f})")
 
     with open(SYNONYM_FILE, encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
@@ -166,8 +166,8 @@ def get_synonyms(genes):
            '</Dataset></Query>')
 
     requested = set(genes)
-    for host in BIOMART_HOSTS:
-        try:
+    for host in BIOMART_HOSTS: #attempt to retrieve rows
+        try: 
             text = http_post(host + "/biomart/martservice", {"query": xml}, tries=1)
             if "Query ERROR" in text:
                 raise RuntimeError(text.strip().splitlines()[0])
@@ -176,9 +176,8 @@ def get_synonyms(genes):
             if not rows:
                 raise RuntimeError("empty response")
             if not requested.intersection(sym for sym, _ in rows):
-                raise RuntimeError("response contained none of the requested gene symbols; "
-                                   "the BioMart schema or attribute order may have changed")
-            log(f"Retrieved {len(rows)} synonym rows from {host}")
+                raise RuntimeError("response contained none of the requested gene symbols")
+            log(f"Retrieved {len(rows)} synonym rows from {host}") 
             return rows
         except Exception as e:
             log("Failed to create the mart object for host:", host, ". Trying another.")
@@ -258,7 +257,7 @@ def fetch_medline(query, out_prefix, gene=None):
             log("Skipping fetch for:", gene, "")
             return ""
     else:
-        log("Found", result.get("count", 0), "articles for new loci", "")  #might be helpful to have this too
+        log("Found", result.get("count", 0), "articles for new loci", "") 
         if not pmids:
             log("Skipping fetch for new loci - No articles found.")
             return ""
@@ -277,7 +276,7 @@ def fetch_medline(query, out_prefix, gene=None):
 
     out_file = out_prefix + "_batch_01.txt"
     with open(out_file, "w", encoding="utf-8") as f:
-        f.write("\n".join(chunks) + "\n")  # I don't know if this is actually needed but it was the only way I could get it to exactly match R output. 
+        f.write("\n".join(chunks) + "\n")  # Not sure if this is actually needed but it was the only way I could get it to exactly match R output. 
     if gene is not None:
         log(out_file, "")
     log("Full file path:", out_file, "")
