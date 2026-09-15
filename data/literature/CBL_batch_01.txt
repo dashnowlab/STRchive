@@ -1,13 +1,17 @@
 
 PMID- 41964119
 OWN - NLM
-STAT- Publisher
-LR  - 20260411
+STAT- MEDLINE
+DCOM- 20260804
+LR  - 20260827
 IS  - 1552-4833 (Electronic)
 IS  - 1552-4825 (Linking)
-DP  - 2026 Apr 10
+VI  - 200
+IP  - 9
+DP  - 2026 Sep
 TI  - CBL Syndrome With Granular Cell Tumor and cafe au lait macules: Expansion of the 
       Phenotype.
+PG  - 2106-2109
 LID - 10.1002/ajmg.a.70165 [doi]
 AB  - CBL syndrome is a RASopathy with phenotypic variability including 
       neurodevelopmental differences, cardiac defects, growth delay, dysmorphic and 
@@ -58,23 +62,34 @@ PL  - United States
 TA  - Am J Med Genet A
 JT  - American journal of medical genetics. Part A
 JID - 101235741
+RN  - EC 2.3.2.27 (Proto-Oncogene Proteins c-cbl)
 SB  - IM
+MH  - Humans
+MH  - Phenotype
+MH  - *Granular Cell Tumor/genetics/pathology/complications/diagnosis
+MH  - *Cafe-au-Lait Spots/genetics/pathology/complications/diagnosis
+MH  - *Proto-Oncogene Proteins c-cbl/genetics
+MH  - Germ-Line Mutation/genetics
+MH  - Female
+MH  - *Leukemia, Myelomonocytic, Juvenile/genetics/pathology
+MH  - Male
 OTO - NOTNLM
 OT  - CBL
 OT  - RASopathy
 OT  - granular cell tumor
 EDAT- 2026/04/11 06:32
-MHDA- 2026/04/11 06:32
+MHDA- 2026/08/04 12:46
 CRDT- 2026/04/11 00:03
 PHST- 2026/03/31 00:00 [revised]
 PHST- 2025/10/28 00:00 [received]
 PHST- 2026/04/03 00:00 [accepted]
-PHST- 2026/04/11 06:32 [medline]
+PHST- 2026/08/04 12:46 [medline]
 PHST- 2026/04/11 06:32 [pubmed]
 PHST- 2026/04/11 00:03 [entrez]
 AID - 10.1002/ajmg.a.70165 [doi]
-PST - aheadofprint
-SO  - Am J Med Genet A. 2026 Apr 10. doi: 10.1002/ajmg.a.70165.
+PST - ppublish
+SO  - Am J Med Genet A. 2026 Sep;200(9):2106-2109. doi: 10.1002/ajmg.a.70165. Epub 2026 
+      Apr 10.
 
 PMID- 37422244
 OWN - NLM
@@ -292,7 +307,7 @@ PMID- 22084433
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120207
-LR  - 20111214
+LR  - 20260810
 IS  - 1550-6606 (Electronic)
 IS  - 0022-1767 (Linking)
 VI  - 187
