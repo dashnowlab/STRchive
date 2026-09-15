@@ -3,7 +3,7 @@ PMID- 42180433
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260717
-LR  - 20260717
+LR  - 20260813
 IS  - 1090-0535 (Electronic)
 IS  - 1090-0535 (Linking)
 VI  - 31
@@ -296,7 +296,7 @@ PMID- 41944554
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260610
-LR  - 20260726
+LR  - 20260813
 IS  - 1096-9896 (Electronic)
 IS  - 0022-3417 (Print)
 IS  - 0022-3417 (Linking)
@@ -470,7 +470,7 @@ PMID- 41865104
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260711
+LR  - 20260813
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 16
@@ -618,7 +618,7 @@ PMID- 41736702
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260709
-LR  - 20260709
+LR  - 20260813
 IS  - 1096-9896 (Electronic)
 IS  - 0022-3417 (Print)
 IS  - 0022-3417 (Linking)
@@ -1162,7 +1162,7 @@ PMID- 41533935
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260626
-LR  - 20260626
+LR  - 20260822
 IS  - 1552-5783 (Electronic)
 IS  - 0146-0404 (Print)
 IS  - 0146-0404 (Linking)
@@ -1237,6 +1237,7 @@ AD  - Department of Biomedical Engineering, Faculty of Life and Medical Sciences
       Doshisha University, Kyotanabe, Japan.
 LA  - eng
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 PL  - United States
 TA  - Invest Ophthalmol Vis Sci
 JT  - Investigative ophthalmology & visual science
@@ -1281,7 +1282,7 @@ SO  - Invest Ophthalmol Vis Sci. 2025 Dec 1;66(15):64. doi: 10.1167/iovs.66.15.6
 PMID- 41501457
 OWN - NLM
 STAT- In-Process
-LR  - 20260726
+LR  - 20260813
 IS  - 1476-4687 (Electronic)
 IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
@@ -2531,7 +2532,7 @@ PMID- 40374208
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250516
-LR  - 20250707
+LR  - 20260909
 IS  - 2397-3269 (Electronic)
 IS  - 2397-3269 (Linking)
 VI  - 10
@@ -2610,9 +2611,12 @@ AD  - Ophthalmology, University at Buffalo Jacobs School of Medicine and Biomedi
 AD  - Ophthalmology and Research Services, Veterans Administration of Western New York 
       Healthcare System, Buffalo, New York, USA.
 LA  - eng
+SI  - ClinicalTrials.gov/NCT04564378
 GR  - K08 EY029007/EY/NEI NIH HHS/United States
 GR  - UL1 TR001412/TR/NCATS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
 DEP - 20250514
 PL  - England
 TA  - BMJ Open Ophthalmol
@@ -5199,7 +5203,7 @@ SO  - PLoS One. 2023 Jan 26;18(1):e0279430. doi: 10.1371/journal.pone.0279430.
 PMID- 36275201
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20230210
+LR  - 20260905
 IS  - 2666-9145 (Electronic)
 IS  - 2666-9145 (Linking)
 VI  - 3
@@ -5288,6 +5292,7 @@ AD  - Eugene McDermott Center for Human Growth and Development, University of Te
       Southwestern Medical Center, Dallas, Texas.
 LA  - eng
 GR  - P30 EY030413/EY/NEI NIH HHS/United States
+GR  - R01 EY022161/EY/NEI NIH HHS/United States
 PT  - Journal Article
 DEP - 20220827
 PL  - Netherlands
@@ -5331,7 +5336,7 @@ PMID- 36250467
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221018
-LR  - 20260505
+LR  - 20260826
 IS  - 1558-8238 (Electronic)
 IS  - 0021-9738 (Print)
 IS  - 0021-9738 (Linking)
@@ -5379,14 +5384,14 @@ AU  - Sumida TS
 FAU - Hafler, David A
 AU  - Hafler DA
 LA  - eng
-GR  - R25 NS079193/NS/NINDS NIH HHS/United States
+GR  - R01 CA227473/CA/NCI NIH HHS/United States
 GR  - UM1 HG009390/HG/NHGRI NIH HHS/United States
-GR  - KL2 TR001862/TR/NCATS NIH HHS/United States
 GR  - P01 AI039671/AI/NIAID NIH HHS/United States
+GR  - R25 NS079193/NS/NINDS NIH HHS/United States
+GR  - P50 CA121974/CA/NCI NIH HHS/United States
 GR  - U19 AI089992/AI/NIAID NIH HHS/United States
 GR  - P01 AI073748/AI/NIAID NIH HHS/United States
-GR  - R01 CA227473/CA/NCI NIH HHS/United States
-GR  - P50 CA121974/CA/NCI NIH HHS/United States
+GR  - KL2 TR001862/TR/NCATS NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't
