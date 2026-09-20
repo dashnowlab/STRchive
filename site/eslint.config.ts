@@ -6,7 +6,6 @@ import {
   MatcherType,
   SelectorKind,
 } from "eslint-plugin-better-tailwindcss/types";
-import * as mdx from "eslint-plugin-mdx";
 import prettier from "eslint-plugin-prettier/recommended";
 import reactHooks from "eslint-plugin-react-hooks";
 import { defineConfig, globalIgnores } from "eslint/config";
@@ -25,11 +24,9 @@ const tailwindSelectors = [
 export default defineConfig([
   globalIgnores(["dist", "public", ".astro", "cloud"]),
 
-  // https://github.com/mdx-js/eslint-mdx/issues/92
   {
     name: "TypeScript",
     extends: tslint.configs.recommended,
-    ignores: ["**/*.mdx"],
     rules: {
       "@typescript-eslint/no-unused-vars": ["warn", { caughtErrors: "none" }],
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
@@ -59,7 +56,7 @@ export default defineConfig([
   {
     name: "Prettier",
     extends: [prettier],
-    ignores: ["**/*.astro/*.ts", "**/*.astro/*.js", "**/*.mdx"],
+    ignores: ["**/*.astro/*.ts", "**/*.astro/*.js"],
     rules: {
       "prettier/prettier": "warn",
     },
@@ -96,14 +93,6 @@ export default defineConfig([
     },
     settings: {
       "better-tailwindcss": { entryPoint: "./src/styles.css" },
-    },
-  },
-
-  {
-    name: "MDX",
-    ...mdx.flat,
-    rules: {
-      "@typescript-eslint/consistent-type-imports": "off",
     },
   },
 

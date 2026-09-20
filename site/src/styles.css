@@ -45,7 +45,7 @@
 
 @layer base {
   html {
-    @apply font-regular bg-white font-sans leading-loose text-black underline-offset-2;
+    @apply bg-white font-sans leading-loose font-regular text-black underline-offset-2;
     font-size: 105%;
   }
 
@@ -61,14 +61,14 @@
   footer,
   section {
     --width: 250;
-    @apply even:bg-off-white flex flex-col gap-8 px-[calc(max(--spacing(10),(100%-var(--width)*(--spacing(1)))/2))] py-12 last:grow odd:bg-white;
+    @apply flex flex-col gap-8 px-[calc(max(--spacing(10),(100%-var(--width)*(--spacing(1)))/2))] py-12 last:grow odd:bg-white even:bg-off-white;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply font-regular flex scroll-mt-4 items-center gap-[0.5em] tracking-wide [&_svg]:opacity-25;
+    @apply flex scroll-mt-4 items-center gap-[0.5em] font-regular tracking-wide [&_svg]:opacity-25;
   }
 
   h1 {
@@ -93,7 +93,7 @@
   }
 
   a {
-    @apply text-primary wrap-break-word underline transition hover:text-current;
+    @apply wrap-break-word text-primary underline transition hover:text-current;
   }
 
   img,
@@ -106,7 +106,7 @@
   }
 
   blockquote {
-    @apply bg-light-gray flex flex-col gap-2 rounded-md p-8;
+    @apply flex flex-col gap-2 rounded-md bg-light-gray p-8;
   }
 
   label {
@@ -153,7 +153,7 @@
   }
 
   hr {
-    @apply bg-light-gray h-0.5 border-none;
+    @apply h-0.5 border-none bg-light-gray;
   }
 
   table {
@@ -161,7 +161,7 @@
   }
 
   th {
-    @apply border-light-gray border-b-2 px-2 py-1 font-medium;
+    @apply border-b-2 border-light-gray px-2 py-1 font-medium;
   }
 
   td {
@@ -173,11 +173,11 @@
   }
 
   tbody tr {
-    @apply even:bg-off-white odd:bg-white;
+    @apply odd:bg-white even:bg-off-white;
   }
 
   code {
-    @apply bg-light-gray rounded-md px-2 py-1 font-mono;
+    @apply rounded-md bg-light-gray px-2 py-1 font-mono;
   }
 
   dl {
@@ -191,7 +191,7 @@
   }
 
   dt {
-    @apply text-gray font-medium;
+    @apply font-medium text-gray;
   }
 
   dd {
@@ -225,10 +225,10 @@
 }
 
 @utility box {
-  @apply border-gray/10 relative flex flex-col gap-2 overflow-hidden rounded-md border-2 px-4 py-2 wrap-break-word;
+  @apply relative flex flex-col gap-2 overflow-hidden rounded-md border-2 border-gray/10 px-4 py-2 wrap-break-word;
 
   & > strong:first-child {
-    @apply bg-gray/10 text-dark-gray -mx-4 -mt-2 flex items-center gap-2 px-4 py-1 font-medium;
+    @apply -mx-4 -mt-2 flex items-center gap-2 bg-gray/10 px-4 py-1 font-medium text-dark-gray;
   }
 }
 
