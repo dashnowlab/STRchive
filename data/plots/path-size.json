@@ -1647,18 +1647,6 @@
           },
           "type": "scattergl"
         }],
-        "scattermapbox": [
-        {
-          "marker":
-          {
-            "colorbar":
-            {
-              "outlinewidth": 0,
-              "ticks": ""
-            }
-          },
-          "type": "scattermapbox"
-        }],
         "scattermap": [
         {
           "marker":
@@ -1841,10 +1829,6 @@
           "align": "left"
         },
         "hovermode": "closest",
-        "mapbox":
-        {
-          "style": "light"
-        },
         "paper_bgcolor": "white",
         "plot_bgcolor": "white",
         "polar":
