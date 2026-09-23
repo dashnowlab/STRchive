@@ -1,11 +1,12 @@
 import type { ReactNode } from "react";
+import type { Tabular } from "@/util/download";
 import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
 import type { ValueOf } from "type-fest";
 import { useState } from "react";
 import Button from "@/components/Button";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
-import { downloadJson } from "@/util/download";
+import { downloadCsv, downloadJson, downloadTsv } from "@/util/download";
 import {
   IconArrowsSort,
   IconChevronLeft,
@@ -34,6 +35,7 @@ import { clamp } from "lodash-es";
 declare module "@tanstack/react-table" {
   // eslint-disable-next-line
   interface ColumnMeta<TData extends RowData, TValue> {
+    header: string;
     className?: string;
   }
 }
@@ -83,6 +85,8 @@ export const defineData = <Datum extends object>(
       enableColumnFilter: true,
       enableGlobalFilter: true,
       meta: {
+        header:
+          typeof column.name === "string" ? column.name : String(column.key),
         className: column.className,
       },
       /** render func for cell */
@@ -155,6 +159,25 @@ export default function Table<Datum extends object>({
       },
     },
   });
+
+  /** download data, in json form */
+  const json = table.getPrePaginationRowModel().rows.map((row) => row.original);
+
+  /** download data, in tabular form */
+  const tabular: Tabular = [
+    columns.map((column) => String(column.meta?.header || "")),
+    ...table.getPrePaginationRowModel().rows.map((row) =>
+      row.getVisibleCells().map((cell) => {
+        const value = cell.getValue();
+        if (["string", "number", "boolean"].includes(typeof value))
+          return String(value);
+        if (value === null || value === undefined) return "";
+        if (Array.isArray(value)) return value.join(", ");
+        if (typeof value === "object") return JSON.stringify(value);
+        return "";
+      }),
+    ),
+  ];
 
   return (
     <div className="flex max-w-max flex-col gap-4 self-center">
@@ -241,14 +264,34 @@ export default function Table<Datum extends object>({
                 !pageControls && "ml-auto",
               )}
             >
-              <Popover content={`Download ${itemNames} as JSON`}>
-                <Button
-                  design="plain"
-                  onClick={() => downloadJson(rows, itemNames)}
-                >
-                  <IconDownload />
-                  Download
-                </Button>
+              <Popover
+                content={
+                  <div className="flex flex-col gap-2">
+                    <Button
+                      design="plain"
+                      onClick={() => downloadJson(json, itemNames)}
+                    >
+                      JSON
+                      <IconDownload />
+                    </Button>
+                    <Button
+                      design="plain"
+                      onClick={() => downloadCsv(tabular, itemNames)}
+                    >
+                      CSV
+                      <IconDownload />
+                    </Button>
+                    <Button
+                      design="plain"
+                      onClick={() => downloadTsv(tabular, itemNames)}
+                    >
+                      TSV
+                      <IconDownload />
+                    </Button>
+                  </div>
+                }
+              >
+                <Button design="plain">Download</Button>
               </Popover>
             </div>
           )}
