@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { Tabular } from "@/util/download";
-import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
+import type { ColumnDef, SortingState } from "@tanstack/react-table";
 import type { ValueOf } from "type-fest";
 import { useState } from "react";
 import Button from "@/components/Button";
@@ -19,26 +19,28 @@ import {
 } from "@tabler/icons-react";
 import {
   createColumnHelper,
-  flexRender,
-  getCoreRowModel,
-  getFacetedMinMaxValues,
-  getFacetedRowModel,
-  getFacetedUniqueValues,
-  getFilteredRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable,
+  createPaginatedRowModel,
+  createSortedRowModel,
+  metaHelper,
+  rowPaginationFeature,
+  rowSortingFeature,
+  tableFeatures,
+  useTable,
 } from "@tanstack/react-table";
 import clsx from "clsx";
 import { clamp } from "lodash-es";
 
-declare module "@tanstack/react-table" {
-  // eslint-disable-next-line
-  interface ColumnMeta<TData extends RowData, TValue> {
-    header: string;
-    className?: string;
-  }
-}
+type Meta = { header: string; className?: string };
+
+const features = tableFeatures({
+  rowSortingFeature,
+  sortedRowModel: createSortedRowModel(),
+  rowPaginationFeature,
+  paginatedRowModel: createPaginatedRowModel(),
+  columnMeta: metaHelper<Meta>(),
+});
+
+type Features = typeof features;
 
 /**
  * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
@@ -73,17 +75,15 @@ export const defineData = <Datum extends object>(
     ) => Column<Datum, Key>,
   ) => _Column<Datum>[],
 ) => {
-  const helper = createColumnHelper<Datum>();
+  const helper = createColumnHelper<Features, Datum>();
 
   const columns = columnFunc(
     <Key extends keyof Datum>(column: Column<Datum, Key>) => column,
   ).map((column, index) =>
-    helper.accessor((row) => row[column.key], {
+    helper.accessor((row): unknown => row[column.key], {
       id: String(index),
       header: () => column.name,
       enableSorting: column.sortable ?? true,
-      enableColumnFilter: true,
-      enableGlobalFilter: true,
       meta: {
         header:
           typeof column.name === "string" ? column.name : String(column.key),
@@ -101,7 +101,7 @@ export const defineData = <Datum extends object>(
 };
 
 type Props<Datum extends object> = {
-  columns: ColumnDef<Datum, Datum[keyof Datum]>[];
+  columns: ColumnDef<Features, Datum, unknown>[];
   rows: Datum[];
   sort?: SortingState;
   pageControls?: boolean;
@@ -137,20 +137,11 @@ export default function Table<Datum extends object>({
   const [perPage] = useState(defaultPerPage.value);
 
   /** tanstack table api */
-  // eslint-disable-next-line
-  const table = useReactTable({
+  const table = useTable({
+    features,
     data: rows,
     columns,
-    getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
-    getFacetedMinMaxValues: getFacetedMinMaxValues(),
-    getColumnCanGlobalFilter: () => true,
     autoResetPageIndex: true,
-    columnResizeMode: "onChange",
     initialState: {
       sorting: sort,
       pagination: {
@@ -161,13 +152,13 @@ export default function Table<Datum extends object>({
   });
 
   /** download data, in json form */
-  const json = table.getPrePaginationRowModel().rows.map((row) => row.original);
+  const json = table.getPrePaginatedRowModel().rows.map((row) => row.original);
 
   /** download data, in tabular form */
   const tabular: Tabular = [
     columns.map((column) => String(column.meta?.header || "")),
-    ...table.getPrePaginationRowModel().rows.map((row) =>
-      row.getVisibleCells().map((cell) => {
+    ...table.getPrePaginatedRowModel().rows.map((row) =>
+      row.getAllCells().map((cell) => {
         const value = cell.getValue();
         if (["string", "number", "boolean"].includes(typeof value))
           return String(value);
@@ -224,8 +215,8 @@ export default function Table<Datum extends object>({
                   }}
                 >
                   {(() => {
-                    const rows = table.getPrePaginationRowModel().rows.length;
-                    const { pageIndex, pageSize } = table.getState().pagination;
+                    const rows = table.getPrePaginatedRowModel().rows.length;
+                    const { pageIndex, pageSize } = table.state.pagination;
                     return [
                       rows ? pageIndex * pageSize + 1 : 0,
                       "–",
@@ -302,7 +293,7 @@ export default function Table<Datum extends object>({
         {/* table */}
         <table
           className={className}
-          aria-rowcount={table.getPrePaginationRowModel().rows.length}
+          aria-rowcount={table.getPrePaginatedRowModel().rows.length}
           aria-colcount={columns.length}
         >
           {/* head */}
@@ -324,10 +315,7 @@ export default function Table<Datum extends object>({
                     >
                       {/* header label */}
                       <span>
-                        {flexRender(
-                          header.column.columnDef.header,
-                          header.getContext(),
-                        )}
+                        <table.FlexRender header={header} />
                       </span>
 
                       {/* sort button */}
@@ -369,13 +357,13 @@ export default function Table<Datum extends object>({
                 <tr
                   key={row.id}
                   aria-rowindex={
-                    table.getState().pagination.pageIndex *
-                      table.getState().pagination.pageSize +
+                    table.state.pagination.pageIndex *
+                      table.state.pagination.pageSize +
                     index +
                     1
                   }
                 >
-                  {row.getVisibleCells().map((cell) => (
+                  {row.getAllCells().map((cell) => (
                     <td key={cell.id} className="p-0">
                       {/* wrapper */}
                       <div
@@ -384,10 +372,7 @@ export default function Table<Datum extends object>({
                           cell.column.columnDef.meta?.className,
                         )}
                       >
-                        {flexRender(
-                          cell.column.columnDef.cell,
-                          cell.getContext(),
-                        )}
+                        <table.FlexRender cell={cell} />
                       </div>
                     </td>
                   ))}
