@@ -19,44 +19,56 @@ import sop from "~/criTRia-SOP.pdf?url";
 <Layout title="criTRia">
   <TableOfContents client:only="react" />
   <section>
-    <H1><IconInfoCircle />criTRia</H1>
+    <H1>
+      <IconInfoCircle />
+      criTRia
+    </H1>
 
     <p>
       A framework for evaluating the strength of evidence supporting a
       locus-disease relationship, based on a standardized set of criteria.
-      criTRia is currently in <strong>active development</strong> and the curations
-      are preliminary, incomplete and subject to change. The curated content indicated
-      as Source: "ClinGen" was obtained from the
+      criTRia is currently in <strong>active development</strong> and the
+      curations are preliminary, incomplete and subject to change. The curated
+      content indicated as Source: "ClinGen" was obtained from the
       <Link to="https://www.clinicalgenome.org/">Clinical Genome Resource</Link>
       Gene-Disease Validity classifications.
     </p>
 
     <p class="text-center text-balance">
-      <strong>Learn more</strong> about the criTRia locus-disease curation framework:
+      <strong>Learn more</strong> about the criTRia locus-disease curation
+      framework:
     </p>
 
     <div class="flex flex-wrap items-center justify-center gap-4">
       <Button className="w-60" design="bubble" to={sop}>
-        <IconFileTypePdf />criTRia SOP
+        <IconFileTypePdf />
+        criTRia SOP
       </Button>
       <Button
         className="w-60"
         design="bubble"
         to="https://doi.org/10.64898/2026.07.04.26357279"
       >
-        Preprint<IconNews />
+        Preprint
+        <IconNews />
       </Button>
     </div>
   </section>
 
   <section>
-    <H2><IconChecks />Classifications</H2>
+    <H2>
+      <IconChecks />
+      Classifications
+    </H2>
 
     <LegendTable client:load />
   </section>
 
   <section>
-    <H2><IconBookmark />Locus-disease curations</H2>
+    <H2>
+      <IconBookmark />
+      Locus-disease curations
+    </H2>
 
     <CurationTable client:load />
   </section>

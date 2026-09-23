@@ -1,3 +1,4 @@
+import type { Columns } from "@/components/Table";
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import CheckBox from "@/components/CheckBox";
@@ -5,7 +6,7 @@ import Link from "@/components/Link";
 import NumberBox from "@/components/NumberBox";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
-import Table, { defineData } from "@/components/Table";
+import Table from "@/components/Table";
 import Tag from "@/components/Tag";
 import TextBox from "@/components/TextBox";
 import { loci } from "@/data";
@@ -154,6 +155,80 @@ export default function LociTable() {
       </>
     );
 
+  type Datum = (typeof filteredLoci)[number];
+
+  const columns: Columns<Datum> = [
+    {
+      key: "id",
+      render: (cell: Datum["id"]) => (
+        <Popover content="Go to locus page" button={false}>
+          <Button className="p-0!" design="bubble" to={`/loci/${cell}`}>
+            <IconArrowRight />
+          </Button>
+        </Popover>
+      ),
+      sortable: false,
+    },
+    {
+      /** use number value so column sorted by that instead of alphabetically */
+      key: "tag_sort",
+      name: "Tags",
+      className: "gap-1",
+      render: (cell: Datum["tag_sort"], row: Datum) =>
+        tagOptions
+          .filter(
+            ({ key, value, filter }) => filter && includes(row, key, value),
+          )
+          .map(({ value }, index) => <Tag key={index} value={value} small />),
+    },
+    {
+      key: "gene",
+      name: "Gene",
+    },
+    {
+      key: "disease_id",
+      name: "Disease",
+    },
+    {
+      key: "disease",
+      name: "Description",
+      className: "justify-start text-left",
+    },
+    {
+      key: "position_base0_hg38",
+      name: "Position hg38",
+      render: (cell: Datum["position_base0_hg38"], row: Datum) => (
+        <Link
+          to={`https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=${row.position_base1_hg38}`}
+        >
+          {cell}
+        </Link>
+      ),
+    },
+    {
+      key: "pathogenic_motif_reference_orientation",
+      name: "Motif (len)",
+      render: (cell: Datum["pathogenic_motif_reference_orientation"]) => (
+        <div className="flex flex-col items-center">
+          <Popover
+            content={<span className="wrap-anywhere">{cell.join(", ")}</span>}
+            button={false}
+          >
+            <span className="max-w-20 truncate">{cell.join(", ")}</span>
+          </Popover>
+          <div>
+            ({cell.map((motif) => motif.length.toLocaleString()).join(", ")})
+          </div>
+        </div>
+      ),
+    },
+    {
+      key: "inheritance",
+      name: "Inheritance",
+      render: (cell: Datum["inheritance"]) => cell?.join("/"),
+    },
+  ];
+
   return (
     <>
       <div className="flex flex-wrap items-center justify-center gap-4 max-lg:flex-col">
@@ -241,86 +316,8 @@ export default function LociTable() {
       {/* table */}
       <Table
         itemNames={filteredLoci.length < loci.length ? "filtered loci" : "loci"}
-        {...defineData(filteredLoci, (column) => [
-          column({
-            key: "id",
-            render: (cell) => (
-              <Popover content="Go to locus page" button={false}>
-                <Button className="p-0!" design="bubble" to={`/loci/${cell}`}>
-                  <IconArrowRight />
-                </Button>
-              </Popover>
-            ),
-            sortable: false,
-          }),
-          column({
-            /** use number value so column sorted by that instead of alphabetically */
-            key: "tag_sort",
-            name: "Tags",
-            className: "gap-1",
-            render: (cell, row) =>
-              tagOptions
-                .filter(
-                  ({ key, value, filter }) =>
-                    filter && includes(row, key, value),
-                )
-                .map(({ value }, index) => (
-                  <Tag key={index} value={value} small />
-                )),
-          }),
-          column({
-            key: "gene",
-            name: "Gene",
-          }),
-          column({
-            key: "disease_id",
-            name: "Disease",
-          }),
-          column({
-            key: "disease",
-            name: "Description",
-            className: "justify-start text-left",
-          }),
-          column({
-            key: "position_base0_hg38",
-            name: "Position hg38",
-            render: (cell, row) => (
-              <Link
-                to={`https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=${row.position_base1_hg38}`}
-              >
-                {cell}
-              </Link>
-            ),
-          }),
-          column({
-            key: "pathogenic_motif_reference_orientation",
-            name: "Motif (len)",
-            render: (cell) => (
-              <div className="flex flex-col items-center">
-                <Popover
-                  content={
-                    <span className="wrap-anywhere">{cell.join(", ")}</span>
-                  }
-                  button={false}
-                >
-                  <span className="max-w-20 truncate">{cell.join(", ")}</span>
-                </Popover>
-                <div>
-                  (
-                  {cell
-                    .map((motif) => motif.length.toLocaleString())
-                    .join(", ")}
-                  )
-                </div>
-              </div>
-            ),
-          }),
-          column({
-            key: "inheritance",
-            name: "Inheritance",
-            render: (cell) => cell?.join("/"),
-          }),
-        ])}
+        rows={filteredLoci}
+        columns={columns}
       />
     </>
   );

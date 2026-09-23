@@ -13,7 +13,8 @@
     },
 
     {
-      "files": "*.!(css)",
+      "files": "*",
+      "excludeFiles": "*.css",
       "options": {
         "importOrder": [
           "<TYPES>^react",

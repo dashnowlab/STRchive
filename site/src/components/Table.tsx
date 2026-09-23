@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import type { Tabular } from "@/util/download";
-import type { ColumnDef, SortingState } from "@tanstack/react-table";
-import type { ValueOf } from "type-fest";
+import type { NoInfer, SortingState } from "@tanstack/react-table";
 import { useState } from "react";
 import Button from "@/components/Button";
 import Popover from "@/components/Popover";
@@ -30,7 +29,7 @@ import {
 import clsx from "clsx";
 import { clamp } from "lodash-es";
 
-type Meta = { header: string; className?: string };
+type Meta = { className?: string };
 
 const features = tableFeatures({
   rowSortingFeature,
@@ -42,15 +41,7 @@ const features = tableFeatures({
 
 type Features = typeof features;
 
-/**
- * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
- * https://github.com/vuejs/core/discussions/8851
- */
-type _Column<Datum extends object> = {
-  [Key in keyof Datum]: Column<Datum, Key>;
-}[keyof Datum];
-
-type Column<
+export type Column<
   Datum extends object = object,
   Key extends keyof Datum = keyof Datum,
 > = {
@@ -63,45 +54,21 @@ type Column<
   /** class on cells */
   className?: string;
   /** custom render function for cell */
-  render?: (cell: Datum[Key], row: Datum) => ReactNode;
+  render?: (cell: NoInfer<Datum[Key]>, row: Datum) => ReactNode;
 };
 
-/** helper to define both rows and columns on table in type-safe way */
-export const defineData = <Datum extends object>(
-  rows: Datum[],
-  columnFunc: (
-    column: <Key extends keyof Datum>(
-      column: Column<Datum, Key>,
-    ) => Column<Datum, Key>,
-  ) => _Column<Datum>[],
-) => {
-  const helper = createColumnHelper<Features, Datum>();
+/**
+ * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
+ * https://github.com/vuejs/core/discussions/8851
+ */
+type _Column<Datum extends object> = {
+  [Key in keyof Datum]: Column<Datum, Key extends string ? Key : never>;
+}[keyof Datum];
 
-  const columns = columnFunc(
-    <Key extends keyof Datum>(column: Column<Datum, Key>) => column,
-  ).map((column, index) =>
-    helper.accessor((row): unknown => row[column.key], {
-      id: String(index),
-      header: () => column.name,
-      enableSorting: column.sortable ?? true,
-      meta: {
-        header:
-          typeof column.name === "string" ? column.name : String(column.key),
-        className: column.className,
-      },
-      /** render func for cell */
-      cell: ({ cell, row }) =>
-        column.render
-          ? column.render(cell.getValue() as ValueOf<Datum>, row.original)
-          : cell.getValue(),
-    }),
-  );
-
-  return { rows, columns };
-};
+export type Columns<Datum extends object> = _Column<Datum>[];
 
 type Props<Datum extends object> = {
-  columns: ColumnDef<Features, Datum, unknown>[];
+  columns: _Column<Datum>[];
   rows: Datum[];
   sort?: SortingState;
   pageControls?: boolean;
@@ -136,11 +103,31 @@ export default function Table<Datum extends object>({
   /** current per-page selection */
   const [perPage] = useState(defaultPerPage.value);
 
+  const columnHelper = createColumnHelper<Features, Datum>();
+
+  const columnDefinitions = columnHelper.columns(
+    columns.map((column, index) =>
+      columnHelper.accessor((row) => row[column.key], {
+        id: String(index),
+        header: () => column.name,
+        enableSorting: column.sortable ?? true,
+        meta: {
+          className: column.className,
+        },
+        /** render func for cell */
+        cell: ({ cell, row }) => {
+          const raw = cell.getValue();
+          return column.render ? column.render(raw, row.original) : raw;
+        },
+      }),
+    ),
+  );
+
   /** tanstack table api */
   const table = useTable({
     features,
     data: rows,
-    columns,
+    columns: columnDefinitions,
     autoResetPageIndex: true,
     initialState: {
       sorting: sort,
@@ -156,7 +143,9 @@ export default function Table<Datum extends object>({
 
   /** download data, in tabular form */
   const tabular: Tabular = [
-    columns.map((column) => String(column.meta?.header || "")),
+    columns.map((column) =>
+      typeof column.name === "string" ? column.name : String(column.key),
+    ),
     ...table.getPrePaginatedRowModel().rows.map((row) =>
       row.getAllCells().map((cell) => {
         const value = cell.getValue();
