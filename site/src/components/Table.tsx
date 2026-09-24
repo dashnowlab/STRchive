@@ -29,7 +29,7 @@ import {
 import clsx from "clsx";
 import { clamp } from "lodash-es";
 
-type Meta = { className?: string };
+type Meta = Pick<Column, "className">;
 
 const features = tableFeatures({
   rowSortingFeature,
