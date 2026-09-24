@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { Tabular } from "@/util/download";
-import type { NoInfer, SortingState } from "@tanstack/react-table";
+import type { NoInfer, RowData, SortingState } from "@tanstack/react-table";
 import { useState } from "react";
 import Button from "@/components/Button";
 import Popover from "@/components/Popover";
@@ -29,20 +29,18 @@ import {
 import clsx from "clsx";
 import { clamp } from "lodash-es";
 
-type Meta = Pick<Column, "className">;
-
-const features = tableFeatures({
-  rowSortingFeature,
-  sortedRowModel: createSortedRowModel(),
-  rowPaginationFeature,
-  paginatedRowModel: createPaginatedRowModel(),
-  columnMeta: metaHelper<Meta>(),
-});
-
-type Features = typeof features;
+type Props<Datum extends RowData> = {
+  columns: _Column<Datum>[];
+  rows: Datum[];
+  sort?: SortingState;
+  pageControls?: boolean;
+  actionControls?: boolean;
+  itemNames?: string;
+  className?: string;
+};
 
 export type Column<
-  Datum extends object = object,
+  Datum extends RowData = RowData,
   Key extends keyof Datum = keyof Datum,
 > = {
   /** key of row object to access as cell value */
@@ -61,21 +59,23 @@ export type Column<
  * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
  * https://github.com/vuejs/core/discussions/8851
  */
-type _Column<Datum extends object> = {
-  [Key in keyof Datum]: Column<Datum, Key extends string ? Key : never>;
+type _Column<Datum extends RowData> = {
+  [Key in keyof Datum]: Column<Datum, Key extends keyof Datum ? Key : never>;
 }[keyof Datum];
 
-export type Columns<Datum extends object> = _Column<Datum>[];
+export type Columns<Datum extends RowData> = _Column<Datum>[];
 
-type Props<Datum extends object> = {
-  columns: _Column<Datum>[];
-  rows: Datum[];
-  sort?: SortingState;
-  pageControls?: boolean;
-  actionControls?: boolean;
-  itemNames?: string;
-  className?: string;
-};
+type Meta = Pick<Column, "className">;
+
+const features = tableFeatures({
+  rowSortingFeature,
+  sortedRowModel: createSortedRowModel(),
+  rowPaginationFeature,
+  paginatedRowModel: createPaginatedRowModel(),
+  columnMeta: metaHelper<Meta>(),
+});
+
+type Features = typeof features;
 
 /** options for per-page select */
 const perPageOptions = [
@@ -91,7 +91,7 @@ const perPageOptions = [
 const defaultPerPage = perPageOptions.at(-1)!;
 
 /** table component with sorting, filtering, and more */
-export default function Table<Datum extends object>({
+export default function Table<Datum extends RowData>({
   columns,
   rows,
   sort,
