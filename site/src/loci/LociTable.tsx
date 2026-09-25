@@ -90,9 +90,8 @@ export default function LociTable() {
     .map((locus) => ({
       ...locus,
       /** for sorting */
-      tag_sort: (["evidence", "locus_tags", "disease_tags"] as const).map(
-        (key) =>
-          filterTags.findIndex(({ value }) => includes(locus, key, value)),
+      tags: (["evidence", "locus_tags", "disease_tags"] as const).map((key) =>
+        filterTags.findIndex(({ value }) => includes(locus, key, value)),
       ),
     }))
     .filter(
@@ -171,15 +170,17 @@ export default function LociTable() {
     },
     {
       /** use number value so column sorted by that instead of alphabetically */
-      key: "tag_sort",
+      key: "tags",
       name: "Tags",
       className: "gap-1",
-      render: (cell: Datum["tag_sort"], row: Datum) =>
+      render: (cell: Datum["tags"], row: Datum) =>
         tagOptions
           .filter(
             ({ key, value, filter }) => filter && includes(row, key, value),
           )
           .map(({ value }, index) => <Tag key={index} value={value} small />),
+      download: (cell: Datum["tags"], row: Datum) =>
+        row.locus_tags.concat(row.disease_tags).concat(row.evidence),
     },
     {
       key: "gene",

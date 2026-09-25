@@ -10,15 +10,18 @@ export default function LegendTable() {
         {
           key: "value",
           name: "Classification",
+          sortable: false,
           render: (cell) => <Tag value={cell} className="w-full" />,
         },
         {
           key: "score",
           name: "Score",
+          sortable: false,
         },
         {
           key: "description",
           name: "Description",
+          sortable: false,
           className: "justify-start text-left",
         },
       ]}

@@ -59,6 +59,8 @@ export default function EvidenceTable({ name, evidence }: Props) {
               <Cited value={cell} />
             </p>
           ),
+          download: (cell: Datum["Evidence detail"]) =>
+            cell?.map((part) => part.text).join(" ") ?? "",
         },
       ]}
     />

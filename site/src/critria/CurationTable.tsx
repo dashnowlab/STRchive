@@ -57,6 +57,8 @@ export default function CurationTable() {
           render: (cell: Datum["classification_index"], row: Datum) => (
             <Tag value={row.classification} className="w-full" />
           ),
+          download: (cell: Datum["classification_index"], row: Datum) =>
+            row.classification,
         },
         {
           key: "Date",

@@ -23,6 +23,10 @@ import {
   metaHelper,
   rowPaginationFeature,
   rowSortingFeature,
+  sortFn_alphanumeric,
+  sortFn_basic,
+  sortFn_datetime,
+  sortFn_text,
   tableFeatures,
   useTable,
 } from "@tanstack/react-table";
@@ -53,6 +57,8 @@ export type Column<
   className?: string;
   /** custom render function for cell */
   render?: (cell: NoInfer<Datum[Key]>, row: Datum) => ReactNode;
+  /** custom "render" function for downloading */
+  download?: (cell: NoInfer<Datum[Key]>, row: Datum) => unknown;
 };
 
 /**
@@ -73,6 +79,12 @@ const features = tableFeatures({
   rowPaginationFeature,
   paginatedRowModel: createPaginatedRowModel(),
   columnMeta: metaHelper<Meta>(),
+  sortFns: {
+    alphanumeric: sortFn_alphanumeric,
+    basic: sortFn_basic,
+    datetime: sortFn_datetime,
+    text: sortFn_text,
+  },
 });
 
 type Features = typeof features;
@@ -94,7 +106,7 @@ const defaultPerPage = perPageOptions.at(-1)!;
 export default function Table<Datum extends RowData>({
   columns,
   rows,
-  sort,
+  sort = [],
   pageControls = true,
   actionControls = true,
   itemNames = "rows",
@@ -138,8 +150,24 @@ export default function Table<Datum extends RowData>({
     },
   });
 
+  type Cell = NoInfer<
+    Datum[keyof Datum extends keyof Datum ? keyof Datum : never]
+  >;
+
   /** download data, in json form */
-  const json = table.getPrePaginatedRowModel().rows.map((row) => row.original);
+  const json = table.getPrePaginatedRowModel().rows.map((row) =>
+    Object.fromEntries(
+      row.getAllCells().map((cell) => {
+        const column = columns[Number(cell.column.id)];
+        const key =
+          typeof column.name === "string" ? column.name : String(column.key);
+        let value = cell.getValue();
+        if (column.download)
+          value = column.download(value as Cell, row.original);
+        return [key, value];
+      }),
+    ),
+  );
 
   /** download data, in tabular form */
   const tabular: Tabular = [
@@ -148,7 +176,10 @@ export default function Table<Datum extends RowData>({
     ),
     ...table.getPrePaginatedRowModel().rows.map((row) =>
       row.getAllCells().map((cell) => {
-        const value = cell.getValue();
+        const column = columns[Number(cell.column.id)];
+        let value = cell.getValue();
+        if (column.download)
+          value = column.download(value as Cell, row.original);
         if (["string", "number", "boolean"].includes(typeof value))
           return String(value);
         if (value === null || value === undefined) return "";
