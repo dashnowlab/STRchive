@@ -20,18 +20,22 @@ import { kebabCase } from "lodash-es";
 <Layout title="About">
   <TableOfContents client:only="react" />
   <section>
-    <H1><IconInfoCircle />About</H1>
+    <H1>
+      <IconInfoCircle />
+      About
+    </H1>
   </section>
 
   <section>
-    <H2><IconMail />Contact</H2>
+    <H2>
+      <IconMail />
+      Contact
+    </H2>
 
     <p class="text-center text-balance">
-      To get in touch about STRchive, use the contact buttons on <strong
-        >any page</strong
-      >, found in the <button data-spotlight="#corner-contact"
-        >corner of the screen</button
-      >
+      To get in touch about STRchive, use the contact buttons on{" "}
+      <strong>any page</strong>, found in the{" "}
+      <button data-spotlight="#corner-contact">corner of the screen</button>
       or the
       <button data-spotlight="#footer-contact">bottom of the page</button>.
     </p>
@@ -52,7 +56,10 @@ import { kebabCase } from "lodash-es";
   </section>
 
   <section>
-    <H2><IconBookmark />Cite</H2>
+    <H2>
+      <IconBookmark />
+      Cite
+    </H2>
 
     <blockquote>
       <span>
@@ -64,16 +71,20 @@ import { kebabCase } from "lodash-es";
         STRchive: a dynamic resource detailing population-level and
         locus-specific insights at tandem repeat disease loci.
       </strong>
-      <span
-        >Genome Med doi: <Link to="https://doi.org/10.1186/s13073-025-01454-4"
-          >https://doi.org/10.1101/2024.05.21.24307682</Link
-        ></span
-      >
+      <span>
+        Genome Med doi:{" "}
+        <Link to="https://doi.org/10.1186/s13073-025-01454-4">
+          https://doi.org/10.1101/2024.05.21.24307682
+        </Link>
+      </span>
     </blockquote>
   </section>
 
   <section>
-    <H2><IconHeartHandshake />Contribute</H2>
+    <H2>
+      <IconHeartHandshake />
+      Contribute
+    </H2>
 
     <p>
       STRchive welcomes community contributions. An accurate and up to date
@@ -84,33 +95,35 @@ import { kebabCase } from "lodash-es";
 
     <div class="flex flex-wrap items-center justify-center gap-4">
       <Button className="w-60" design="bubble" to={repo}>
-        <IconBrandGithub />GitHub
+        <IconBrandGithub />
+        GitHub
       </Button>
     </div>
   </section>
 
   <section>
-    <H2><IconUsers />Team</H2>
+    <H2>
+      <IconUsers />
+      Team
+    </H2>
 
     <div class="flex flex-wrap items-center justify-center gap-4">
-      {
-        team.map((member) => (
-          <Link
-            className="flex w-50 flex-col items-center gap-1 p-2 text-center no-underline"
-            to={member.link}
-            arrow={false}
-          >
-            <img
-              class="mb-2 w-full rounded-full transition hover:saturate-0"
-              src={`/images/team/${kebabCase(member.name)}.jpg`}
-              alt=""
-            />
-            <strong>{member.name}</strong>
-            <span class="text-sm">{member.role}</span>
-            <span class="text-sm">{member.affiliation}</span>
-          </Link>
-        ))
-      }
+      {team.map((member) => (
+        <Link
+          className="flex w-50 flex-col items-center gap-1 p-2 text-center no-underline"
+          to={member.link}
+          arrow={false}
+        >
+          <img
+            class="mb-2 w-full rounded-full transition hover:saturate-0"
+            src={`/images/team/${kebabCase(member.name)}.jpg`}
+            alt=""
+          />
+          <strong>{member.name}</strong>
+          <span class="text-sm">{member.role}</span>
+          <span class="text-sm">{member.affiliation}</span>
+        </Link>
+      ))}
     </div>
   </section>
 </Layout>

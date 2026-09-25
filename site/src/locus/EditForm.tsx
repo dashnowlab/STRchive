@@ -58,10 +58,10 @@ const extraProperties = {
     type: "string",
     default: null,
   },
-} as const;
+};
 
 /** extra required fields */
-const extraRequired = ["edit-title", "edit-description"] as const;
+const extraRequired = ["edit-title", "edit-description"];
 
 /** add extras */
 const schema = {

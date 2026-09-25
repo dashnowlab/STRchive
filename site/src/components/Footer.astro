@@ -3,9 +3,7 @@ import ContactLink from "@/components/ContactLink";
 import Link from "@/components/Link";
 ---
 
-<footer
-  class="grid grid-cols-[1fr_2px_2fr_2px_1fr] items-center gap-4 bg-black text-white max-md:grid-cols-1 [&>div>a]:text-white [&>div>a]:hover:text-primary"
->
+<footer class="grid grid-cols-[1fr_2px_2fr_2px_1fr] items-center gap-4 bg-black text-white max-md:grid-cols-1 [&>div>a]:text-white [&>div>a]:hover:text-primary">
   <div class="flex flex-wrap items-center justify-center gap-4">
     <ContactLink client:only="react" />
     <Link to="/about#cite">Cite</Link>
@@ -16,17 +14,17 @@ import Link from "@/components/Link";
 
   <div class="text-center">
     <strong>Research use only.</strong>
-    The content on and linked from this website does not constitute professional medical
-    guidance.
+    The content on and linked from this website does not constitute professional
+    medical guidance.
   </div>
 
   <div class="size-full bg-current opacity-25 max-sm:hidden"></div>
 
   <div class="flex flex-wrap items-center justify-center gap-1">
     <span>Licensed under</span>
-    <Link to="https://creativecommons.org/licenses/by/4.0/" arrow={false}
-      >CC BY 4.0</Link
-    >
+    <Link to="https://creativecommons.org/licenses/by/4.0/" arrow={false}>
+      CC BY 4.0
+    </Link>
     <Link to="https://creativecommons.org/licenses/by/4.0/" arrow={false}>
       <img
         class="h-10"

@@ -1,6 +1,7 @@
+import type { Column } from "@/components/Table";
 import Button from "@/components/Button";
 import Link from "@/components/Link";
-import Table, { defineData } from "@/components/Table";
+import Table from "@/components/Table";
 import { repoRaw, version } from "@/layouts/meta";
 import { filter, map, uniq } from "lodash-es";
 
@@ -69,18 +70,21 @@ const rows = [
   },
 ];
 
+type Datum = (typeof rows)[number];
+
 export default function DownloadTable() {
   return (
     <Table
       pageControls={false}
       actionControls={false}
-      {...defineData(rows, (column) => [
-        column({
+      rows={rows}
+      columns={[
+        {
           key: "key",
           name: "",
           className: "flex-col items-start text-left",
           sortable: false,
-          render: (value, row) => (
+          render: (value: string, row: Datum) => (
             <>
               {row.link ? (
                 <Link to={row.link}>
@@ -95,9 +99,9 @@ export default function DownloadTable() {
               <div>{row.secondary}</div>
             </>
           ),
-        }),
-        ...uniq(map(catalogs, "genome")).map((genome) =>
-          column({
+        },
+        ...uniq(map(catalogs, "genome")).map(
+          (genome): Column<Datum, "key"> => ({
             key: "key",
             name: genome,
             sortable: false,
@@ -120,7 +124,7 @@ export default function DownloadTable() {
               )),
           }),
         ),
-      ])}
+      ]}
     />
   );
 }

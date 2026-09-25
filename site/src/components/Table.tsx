@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
-import type { ColumnDef, RowData, SortingState } from "@tanstack/react-table";
-import type { ValueOf } from "type-fest";
+import type { Tabular } from "@/util/download";
+import type { NoInfer, RowData, SortingState } from "@tanstack/react-table";
 import { useState } from "react";
 import Button from "@/components/Button";
 import Popover from "@/components/Popover";
 import Select from "@/components/Select";
-import { downloadJson } from "@/util/download";
+import { downloadCsv, downloadJson, downloadTsv } from "@/util/download";
 import {
   IconArrowsSort,
   IconChevronLeft,
@@ -18,36 +18,33 @@ import {
 } from "@tabler/icons-react";
 import {
   createColumnHelper,
-  flexRender,
-  getCoreRowModel,
-  getFacetedMinMaxValues,
-  getFacetedRowModel,
-  getFacetedUniqueValues,
-  getFilteredRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable,
+  createPaginatedRowModel,
+  createSortedRowModel,
+  metaHelper,
+  rowPaginationFeature,
+  rowSortingFeature,
+  sortFn_alphanumeric,
+  sortFn_basic,
+  sortFn_datetime,
+  sortFn_text,
+  tableFeatures,
+  useTable,
 } from "@tanstack/react-table";
 import clsx from "clsx";
 import { clamp } from "lodash-es";
 
-declare module "@tanstack/react-table" {
-  // eslint-disable-next-line
-  interface ColumnMeta<TData extends RowData, TValue> {
-    className?: string;
-  }
-}
+type Props<Datum extends RowData> = {
+  columns: _Column<Datum>[];
+  rows: Datum[];
+  sort?: SortingState;
+  pageControls?: boolean;
+  actionControls?: boolean;
+  itemNames?: string;
+  className?: string;
+};
 
-/**
- * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
- * https://github.com/vuejs/core/discussions/8851
- */
-type _Column<Datum extends object> = {
-  [Key in keyof Datum]: Column<Datum, Key>;
-}[keyof Datum];
-
-type Column<
-  Datum extends object = object,
+export type Column<
+  Datum extends RowData = RowData,
   Key extends keyof Datum = keyof Datum,
 > = {
   /** key of row object to access as cell value */
@@ -59,52 +56,38 @@ type Column<
   /** class on cells */
   className?: string;
   /** custom render function for cell */
-  render?: (cell: Datum[Key], row: Datum) => ReactNode;
+  render?: (cell: NoInfer<Datum[Key]>, row: Datum) => ReactNode;
+  /** custom "render" function for downloading */
+  download?: (cell: NoInfer<Datum[Key]>, row: Datum) => unknown;
 };
 
-/** helper to define both rows and columns on table in type-safe way */
-export const defineData = <Datum extends object>(
-  rows: Datum[],
-  columnFunc: (
-    column: <Key extends keyof Datum>(
-      column: Column<Datum, Key>,
-    ) => Column<Datum, Key>,
-  ) => _Column<Datum>[],
-) => {
-  const helper = createColumnHelper<Datum>();
+/**
+ * https://stackoverflow.com/questions/68274805/typescript-reference-type-of-property-by-other-property-of-same-object
+ * https://github.com/vuejs/core/discussions/8851
+ */
+type _Column<Datum extends RowData> = {
+  [Key in keyof Datum]: Column<Datum, Key extends keyof Datum ? Key : never>;
+}[keyof Datum];
 
-  const columns = columnFunc(
-    <Key extends keyof Datum>(column: Column<Datum, Key>) => column,
-  ).map((column, index) =>
-    helper.accessor((row) => row[column.key], {
-      id: String(index),
-      header: () => column.name,
-      enableSorting: column.sortable ?? true,
-      enableColumnFilter: true,
-      enableGlobalFilter: true,
-      meta: {
-        className: column.className,
-      },
-      /** render func for cell */
-      cell: ({ cell, row }) =>
-        column.render
-          ? column.render(cell.getValue() as ValueOf<Datum>, row.original)
-          : cell.getValue(),
-    }),
-  );
+export type Columns<Datum extends RowData> = _Column<Datum>[];
 
-  return { rows, columns };
-};
+type Meta = Pick<Column, "className">;
 
-type Props<Datum extends object> = {
-  columns: ColumnDef<Datum, Datum[keyof Datum]>[];
-  rows: Datum[];
-  sort?: SortingState;
-  pageControls?: boolean;
-  actionControls?: boolean;
-  itemNames?: string;
-  className?: string;
-};
+const features = tableFeatures({
+  rowSortingFeature,
+  sortedRowModel: createSortedRowModel(),
+  rowPaginationFeature,
+  paginatedRowModel: createPaginatedRowModel(),
+  columnMeta: metaHelper<Meta>(),
+  sortFns: {
+    alphanumeric: sortFn_alphanumeric,
+    basic: sortFn_basic,
+    datetime: sortFn_datetime,
+    text: sortFn_text,
+  },
+});
+
+type Features = typeof features;
 
 /** options for per-page select */
 const perPageOptions = [
@@ -120,10 +103,10 @@ const perPageOptions = [
 const defaultPerPage = perPageOptions.at(-1)!;
 
 /** table component with sorting, filtering, and more */
-export default function Table<Datum extends object>({
+export default function Table<Datum extends RowData>({
   columns,
   rows,
-  sort,
+  sort = [],
   pageControls = true,
   actionControls = true,
   itemNames = "rows",
@@ -132,21 +115,32 @@ export default function Table<Datum extends object>({
   /** current per-page selection */
   const [perPage] = useState(defaultPerPage.value);
 
+  const columnHelper = createColumnHelper<Features, Datum>();
+
+  const columnDefinitions = columnHelper.columns(
+    columns.map((column, index) =>
+      columnHelper.accessor((row) => row[column.key], {
+        id: String(index),
+        header: () => column.name,
+        enableSorting: column.sortable ?? true,
+        meta: {
+          className: column.className,
+        },
+        /** render func for cell */
+        cell: ({ cell, row }) => {
+          const raw = cell.getValue();
+          return column.render ? column.render(raw, row.original) : raw;
+        },
+      }),
+    ),
+  );
+
   /** tanstack table api */
-  // eslint-disable-next-line
-  const table = useReactTable({
+  const table = useTable({
+    features,
     data: rows,
-    columns,
-    getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
-    getFacetedMinMaxValues: getFacetedMinMaxValues(),
-    getColumnCanGlobalFilter: () => true,
+    columns: columnDefinitions,
     autoResetPageIndex: true,
-    columnResizeMode: "onChange",
     initialState: {
       sorting: sort,
       pagination: {
@@ -155,6 +149,46 @@ export default function Table<Datum extends object>({
       },
     },
   });
+
+  type Cell = NoInfer<
+    Datum[keyof Datum extends keyof Datum ? keyof Datum : never]
+  >;
+
+  /** download data, in json form */
+  const json = table.getPrePaginatedRowModel().rows.map((row) =>
+    Object.fromEntries(
+      row.getAllCells().map((cell) => {
+        const column = columns[Number(cell.column.id)];
+        const key =
+          typeof column.name === "string" ? column.name : String(column.key);
+        let value = cell.getValue();
+        if (column.download)
+          value = column.download(value as Cell, row.original);
+        return [key, value];
+      }),
+    ),
+  );
+
+  /** download data, in tabular form */
+  const tabular: Tabular = [
+    columns.map((column) =>
+      typeof column.name === "string" ? column.name : String(column.key),
+    ),
+    ...table.getPrePaginatedRowModel().rows.map((row) =>
+      row.getAllCells().map((cell) => {
+        const column = columns[Number(cell.column.id)];
+        let value = cell.getValue();
+        if (column.download)
+          value = column.download(value as Cell, row.original);
+        if (["string", "number", "boolean"].includes(typeof value))
+          return String(value);
+        if (value === null || value === undefined) return "";
+        if (Array.isArray(value)) return value.join(", ");
+        if (typeof value === "object") return JSON.stringify(value);
+        return "";
+      }),
+    ),
+  ];
 
   return (
     <div className="flex max-w-max flex-col gap-4 self-center">
@@ -201,8 +235,8 @@ export default function Table<Datum extends object>({
                   }}
                 >
                   {(() => {
-                    const rows = table.getPrePaginationRowModel().rows.length;
-                    const { pageIndex, pageSize } = table.getState().pagination;
+                    const rows = table.getPrePaginatedRowModel().rows.length;
+                    const { pageIndex, pageSize } = table.state.pagination;
                     return [
                       rows ? pageIndex * pageSize + 1 : 0,
                       "–",
@@ -241,14 +275,34 @@ export default function Table<Datum extends object>({
                 !pageControls && "ml-auto",
               )}
             >
-              <Popover content={`Download ${itemNames} as JSON`}>
-                <Button
-                  design="plain"
-                  onClick={() => downloadJson(rows, itemNames)}
-                >
-                  <IconDownload />
-                  Download
-                </Button>
+              <Popover
+                content={
+                  <div className="flex flex-col gap-2">
+                    <Button
+                      design="plain"
+                      onClick={() => downloadJson(json, itemNames)}
+                    >
+                      JSON
+                      <IconDownload />
+                    </Button>
+                    <Button
+                      design="plain"
+                      onClick={() => downloadCsv(tabular, itemNames)}
+                    >
+                      CSV
+                      <IconDownload />
+                    </Button>
+                    <Button
+                      design="plain"
+                      onClick={() => downloadTsv(tabular, itemNames)}
+                    >
+                      TSV
+                      <IconDownload />
+                    </Button>
+                  </div>
+                }
+              >
+                <Button design="plain">Download</Button>
               </Popover>
             </div>
           )}
@@ -259,7 +313,7 @@ export default function Table<Datum extends object>({
         {/* table */}
         <table
           className={className}
-          aria-rowcount={table.getPrePaginationRowModel().rows.length}
+          aria-rowcount={table.getPrePaginatedRowModel().rows.length}
           aria-colcount={columns.length}
         >
           {/* head */}
@@ -281,10 +335,7 @@ export default function Table<Datum extends object>({
                     >
                       {/* header label */}
                       <span>
-                        {flexRender(
-                          header.column.columnDef.header,
-                          header.getContext(),
-                        )}
+                        <table.FlexRender header={header} />
                       </span>
 
                       {/* sort button */}
@@ -326,13 +377,13 @@ export default function Table<Datum extends object>({
                 <tr
                   key={row.id}
                   aria-rowindex={
-                    table.getState().pagination.pageIndex *
-                      table.getState().pagination.pageSize +
+                    table.state.pagination.pageIndex *
+                      table.state.pagination.pageSize +
                     index +
                     1
                   }
                 >
-                  {row.getVisibleCells().map((cell) => (
+                  {row.getAllCells().map((cell) => (
                     <td key={cell.id} className="p-0">
                       {/* wrapper */}
                       <div
@@ -341,10 +392,7 @@ export default function Table<Datum extends object>({
                           cell.column.columnDef.meta?.className,
                         )}
                       >
-                        {flexRender(
-                          cell.column.columnDef.cell,
-                          cell.getContext(),
-                        )}
+                        <table.FlexRender cell={cell} />
                       </div>
                     </td>
                   ))}

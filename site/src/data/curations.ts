@@ -51,4 +51,4 @@ export const classifications = {
     description:
       "This locus-disease relationship has been proposed but has not yet been evaluated",
   },
-} as const;
+};
