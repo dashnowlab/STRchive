@@ -161,7 +161,7 @@ rule retrieve:
         loci_citations = temp("{base_dir}loci-citations-tmp.json")
     shell:
         """
-        Rscript {scripts_dir}get-literature.R {input.in_json} {input.lit_dir} {output.citations} {output.loci_citations}
+        python {scripts_dir}get-literature.py {input.in_json} {input.lit_dir} {output.citations} {output.loci_citations}
         """
 
 rule backup_citations:
