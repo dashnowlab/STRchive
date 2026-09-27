@@ -47,7 +47,7 @@ export type Column<
   Datum extends RowData = RowData,
   Key extends keyof Datum = keyof Datum,
 > = {
-  /** key of row object to access as cell value */
+  /** key of row object to access as main cell value */
   key: Key;
   /** label for header */
   name?: ReactNode;
@@ -55,9 +55,9 @@ export type Column<
   sortable?: boolean;
   /** class on cells */
   className?: string;
-  /** custom render function for cell */
+  /** custom display value */
   render?: (cell: NoInfer<Datum[Key]>, row: Datum) => ReactNode;
-  /** custom "render" function for downloading */
+  /** custom value for download */
   download?: (cell: NoInfer<Datum[Key]>, row: Datum) => unknown;
 };
 
