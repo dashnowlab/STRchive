@@ -17,21 +17,17 @@ const links = [
 ---
 
 <header class="animate-gradients">
-  <nav
-    class="flex flex-wrap items-center justify-center gap-8 text-lg max-sm:flex-col"
-  >
+  <nav class="flex flex-wrap items-center justify-center gap-8 text-lg max-sm:flex-col">
     <div class="flex items-baseline gap-2">
-      {
-        path !== "/" && (
-          <Link
-            to="/"
-            className="h-8 text-white no-underline hover:text-primary"
-            aria-label="Home"
-          >
-            <Logo className="h-full" />
-          </Link>
-        )
-      }
+      {path !== "/" && (
+        <Link
+          to="/"
+          className="h-8 text-white no-underline hover:text-primary"
+          aria-label="Home"
+        >
+          <Logo className="h-full" />
+        </Link>
+      )}
       <Link
         to={`${repo}/blob/main/CITATION.cff`}
         className="text-sm text-gray no-underline hover:text-primary"
@@ -41,24 +37,20 @@ const links = [
       </Link>
     </div>
 
-    <div
-      class="flex flex-wrap items-center justify-center gap-4 max-sm:flex-col"
-    >
-      {
-        links.map(({ to, name, icon: Icon }) => (
-          <Link
-            to={to}
-            className={[
-              "relative flex items-center gap-2 p-2 text-white no-underline hover:text-primary after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-center after:scale-x-0 after:bg-current after:transition after:content-[''] hover:after:scale-x-100",
-              to === path ? "after:scale-x-100" : "",
-            ].join(" ")}
-            arrow={false}
-          >
-            {Icon && <Icon className="size-4" />}
-            {name}
-          </Link>
-        ))
-      }
+    <div class="flex flex-wrap items-center justify-center gap-4 max-sm:flex-col">
+      {links.map(({ to, name, icon: Icon }) => (
+        <Link
+          to={to}
+          className={[
+            "relative flex items-center gap-2 p-2 text-white no-underline hover:text-primary after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-center after:scale-x-0 after:bg-current after:transition after:content-[''] hover:after:scale-x-100",
+            to === path ? "after:scale-x-100" : "",
+          ].join(" ")}
+          arrow={false}
+        >
+          {Icon && <Icon className="size-4" />}
+          {name}
+        </Link>
+      ))}
     </div>
   </nav>
 

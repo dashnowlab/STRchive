@@ -26,13 +26,17 @@ import pathSize from "~/plots/path-size.json";
   <TableOfContents client:only="react" />
 
   <section>
-    <H1><IconTallymark4 />Loci</H1>
+    <H1>
+      <IconTallymark4 />
+      Loci
+    </H1>
 
     <div class="flex flex-wrap items-center justify-center gap-4">
       <span>Tandem repeat loci associated with Mendelian diseases.</span>
 
       <Button design="bubble" to={`${repo}/tree/main/data`}>
-        <IconBrandGithub /><span>Full Dataset</span>
+        <IconBrandGithub />
+        <span>Full Dataset</span>
       </Button>
     </div>
 
@@ -46,7 +50,10 @@ import pathSize from "~/plots/path-size.json";
 
   <!-- downloads -->
   <section>
-    <H2><IconDownload />Downloads</H2>
+    <H2>
+      <IconDownload />
+      Downloads
+    </H2>
 
     <DownloadTable client:load />
 
@@ -55,13 +62,19 @@ import pathSize from "~/plots/path-size.json";
 
   <!-- plots -->
   <section class="width-full">
-    <H2><IconChartLine />Plots</H2>
+    <H2>
+      <IconChartLine />
+      Plots
+    </H2>
 
     <p class="text-center text-balance">High-level, visual overview of loci.</p>
 
     <div class="grid grid-cols-2 gap-8 max-md:grid-cols-1">
       <div class="flex flex-col items-center gap-8">
-        <H3><IconChartBar />Pathogenic Size Range</H3>
+        <H3>
+          <IconChartBar />
+          Pathogenic Size Range
+        </H3>
         <PlotlyChart
           client:only="react"
           data={pathSize.data}
@@ -70,7 +83,10 @@ import pathSize from "~/plots/path-size.json";
       </div>
 
       <div class="flex flex-col items-center gap-8">
-        <H3><IconChartCandle />Age of Onset</H3>
+        <H3>
+          <IconChartCandle />
+          Age of Onset
+        </H3>
         <PlotlyChart
           client:only="react"
           data={ageOnset.data}

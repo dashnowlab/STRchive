@@ -48,35 +48,51 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
 
   <!-- overview -->
   <section>
-    <H1><IconBookmark />{title}</H1>
+    <H1>
+      <IconBookmark />
+      {title}
+    </H1>
 
     <div class="boxes [--columns:3]">
       <div class="box">
-        <strong><IconDna2 />Gene</strong>
+        <strong>
+          <IconDna2 />
+          Gene
+        </strong>
         {curation.Gene}
       </div>
       <div class="box">
-        <strong><IconVirus />Disease</strong>
+        <strong>
+          <IconVirus />
+          Disease
+        </strong>
         {curation.Disease_ID}
       </div>
       <div class="box">
-        <strong><IconSitemap />Inheritance</strong>
+        <strong>
+          <IconSitemap />
+          Inheritance
+        </strong>
         {curation.Inheritance ?? "–"}
       </div>
       <div class="box">
-        <strong><IconAward />Score</strong>
+        <strong>
+          <IconAward />
+          Score
+        </strong>
         <p>
           {curation.supercategory_summary?.["Genetic Evidence"] ?? "-"} +{" "}
-          {curation.supercategory_summary?.["Experimental Evidence"] ?? 0} ={
-            " "
-          }
+          {curation.supercategory_summary?.["Experimental Evidence"] ?? 0} ={" "}
           <strong class="text-lg">{curation.total_score}</strong> / 18
           <br />
           <div class="text-sm">Genetic + experimental = total</div>
         </p>
       </div>
       <div class="box">
-        <strong><IconChecks />Classification</strong>
+        <strong>
+          <IconChecks />
+          Classification
+        </strong>
         <div class="flex flex-col gap-4">
           <Tag client:load value={curation.classification} />
 
@@ -91,16 +107,16 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
                 >
                   <polygon points="-0.66 -1 0 0 0.66 -1"></polygon>
                 </svg>
-                {
-                  [
-                    "bg-worst",
-                    "bg-bad",
-                    "bg-warn",
-                    "bg-okay",
-                    "bg-good",
-                    "bg-best",
-                  ].map((className) => <div class={clsx("grow", className)} />)
-                }
+                {[
+                  "bg-worst",
+                  "bg-bad",
+                  "bg-warn",
+                  "bg-okay",
+                  "bg-good",
+                  "bg-best",
+                ].map((className) => (
+                  <div class={clsx("grow", className)} />
+                ))}
               </div>
               <div>18</div>
             </div>
@@ -113,36 +129,50 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
         </div>
       </div>
       <div class="box">
-        <strong><IconHistory />Last Updated</strong>
+        <strong>
+          <IconHistory />
+          Last Updated
+        </strong>
         {curation.Date}
       </div>
       <div class="box">
-        <strong><IconBooks />Pubs Reviewed</strong>
+        <strong>
+          <IconBooks />
+          Pubs Reviewed
+        </strong>
         {curation.publication_count ?? "–"}
       </div>
       <div class="box">
-        <strong><IconCalendarDue />Publication Span</strong>
-        {
-          curation.publication_interval_years != null
-            ? `${curation.publication_interval_years} years`
-            : "–"
-        }
+        <strong>
+          <IconCalendarDue />
+          Publication Span
+        </strong>
+        {curation.publication_interval_years != null
+          ? `${curation.publication_interval_years} years`
+          : "–"}
       </div>
       <div class="box">
-        <strong><IconTimelineEventText />Publication Interval</strong>
-        {
-          curation.publication_interval_years != null
-            ? `${curation.publication_interval_years} years`
-            : "–"
-        }
+        <strong>
+          <IconTimelineEventText />
+          Publication Interval
+        </strong>
+        {curation.publication_interval_years != null
+          ? `${curation.publication_interval_years} years`
+          : "–"}
       </div>
 
       <div class="box box-full">
-        <strong><IconUserCheck />Curator(s)</strong>
+        <strong>
+          <IconUserCheck />
+          Curator(s)
+        </strong>
         {curation.Curator}
       </div>
       <div class="box box-full">
-        <strong><IconFileText />Description</strong>
+        <strong>
+          <IconFileText />
+          Description
+        </strong>
         <p>
           <Cited client:load value={curation.Description} />
         </p>
@@ -151,7 +181,8 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
 
     <div class="flex flex-wrap justify-center gap-4">
       <Button className="w-60 self-center" design="bubble" to="/critria">
-        <IconArrowLeft />All criTRia Curations
+        <IconArrowLeft />
+        All criTRia Curations
       </Button>
 
       <Button
@@ -159,7 +190,8 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
         design="bubble"
         to={`/loci/${curation.Locus_ID}`}
       >
-        Locus Page<IconArrowRight />
+        Locus Page
+        <IconArrowRight />
       </Button>
     </div>
   </section>
@@ -172,19 +204,17 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
       {curation.supercategory_summary?.["Genetic Evidence"] ?? 0}
     </p>
 
-    {
-      curation.genetic_evidence_details?.length ? (
-        <EvidenceTable
-          name={`${curation.Locus_ID} genetic evidence`}
-          client:load
-          evidence={curation.genetic_evidence_details ?? []}
-        />
-      ) : (
-        <p class="text-center text-balance">
-          No genetic evidence details available.
-        </p>
-      )
-    }
+    {curation.genetic_evidence_details?.length ? (
+      <EvidenceTable
+        name={`${curation.Locus_ID} genetic evidence`}
+        client:load
+        evidence={curation.genetic_evidence_details ?? []}
+      />
+    ) : (
+      <p class="text-center text-balance">
+        No genetic evidence details available.
+      </p>
+    )}
   </section>
 
   <!-- experimental evidence -->
@@ -195,39 +225,35 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
       {curation.supercategory_summary?.["Experimental Evidence"] ?? 0}
     </p>
 
-    {
-      curation.experimental_evidence_details?.length ? (
-        <EvidenceTable
-          name={`${curation.Locus_ID} experimental evidence`}
-          client:load
-          evidence={curation.experimental_evidence_details ?? []}
-        />
-      ) : (
-        <p class="text-center text-balance">
-          No experimental evidence details available.
-        </p>
-      )
-    }
+    {curation.experimental_evidence_details?.length ? (
+      <EvidenceTable
+        name={`${curation.Locus_ID} experimental evidence`}
+        client:load
+        evidence={curation.experimental_evidence_details ?? []}
+      />
+    ) : (
+      <p class="text-center text-balance">
+        No experimental evidence details available.
+      </p>
+    )}
   </section>
 
   <!-- references -->
-  {
-    !!curation.references.length && (
-      <section>
-        <H2>References</H2>
+  {!!curation.references.length && (
+    <section>
+      <H2>References</H2>
 
-        <p class="text-center text-balance">
-          Direct supporting references for info on this page.
-        </p>
+      <p class="text-center text-balance">
+        Direct supporting references for info on this page.
+      </p>
 
-        <div class="boxes [--columns:3]">
-          {curation.references.map((citation) => (
-            <Citation client:load {...citation} />
-          ))}
-        </div>
-      </section>
-    )
-  }
+      <div class="boxes [--columns:3]">
+        {curation.references.map((citation) => (
+          <Citation client:load {...citation} />
+        ))}
+      </div>
+    </section>
+  )}
 
   <!-- notes -->
   <section>
