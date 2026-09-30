@@ -1,9 +1,84 @@
 
+PMID- 42571931
+OWN - NLM
+STAT- Publisher
+LR  - 20260812
+IS  - 2330-1619 (Electronic)
+IS  - 2330-1619 (Linking)
+DP  - 2026 Aug 9
+TI  - Nonmotor and Extracerebellar Features in Spinocerebellar Ataxia Type 6.
+LID - 10.1002/mdc3.70768 [doi]
+AB  - BACKGROUND: Spinocerebellar ataxia type 6 (SCA6), traditionally seen as a pure 
+      cerebellar disorder, may involve broader brain degeneration. OBJECTIVE: The aim 
+      was to evaluate the nonmotor symptoms and extracerebellar signs in SCA6. METHODS: 
+      This study evaluated 18 genetically confirmed SCA6 patients using clinical scales 
+      for motor and nonmotor symptoms. Spearman's correlation test was performed to 
+      calculate the strength of association between CAG repeat length and clinical 
+      scales. RESULTS: Findings revealed frequent noncerebellar manifestations, 
+      including sensory symptoms (72.2%), fatigue (64.7%), hyperreflexia (38.9%), 
+      restless legs syndrome (28.6%), and urinary dysfunction (27.8%). Excessive 
+      daytime sleepiness and rapid eye movement sleep behavior disorder each affected 
+      23.5% of patients. Less common signs included oculomotor abnormalities and 
+      spasticity. A significant correlation was found between CAG repeat length and 
+      sleep behavior scores (correlation coefficient: -0.609, P = 0.046). CONCLUSIONS: 
+      This study underscored the prevalence of nonmotor symptoms and extracerebellar 
+      signs in SCA6, supporting the possibility of broader neurological involvement in 
+      the disease.
+CI  - (c) 2026 International Parkinson and Movement Disorder Society.
+FAU - Massuyama, Breno Kazuo
+AU  - Massuyama BK
+AUID- ORCID: 0000-0002-7130-8593
+AD  - Division of General Neurology and Ataxia Unit, Department of Neurology and 
+      Neurosurgery, Federal University of Sao Paulo, Sao Paulo, Brazil.
+FAU - Machado, Fernanda Mary
+AU  - Machado FM
+AUID- ORCID: 0009-0007-3210-8488
+AD  - Division of General Neurology and Ataxia Unit, Department of Neurology and 
+      Neurosurgery, Federal University of Sao Paulo, Sao Paulo, Brazil.
+FAU - Barsottini, Orlando Graziani Povoas
+AU  - Barsottini OGP
+AUID- ORCID: 0000-0002-0107-0831
+AD  - Division of General Neurology and Ataxia Unit, Department of Neurology and 
+      Neurosurgery, Federal University of Sao Paulo, Sao Paulo, Brazil.
+FAU - Pedroso, Jose Luiz
+AU  - Pedroso JL
+AD  - Division of General Neurology and Ataxia Unit, Department of Neurology and 
+      Neurosurgery, Federal University of Sao Paulo, Sao Paulo, Brazil.
+LA  - eng
+PT  - Journal Article
+DEP - 20260809
+PL  - United States
+TA  - Mov Disord Clin Pract
+JT  - Movement disorders clinical practice
+JID - 101630279
+SB  - IM
+PMC - PMC13453631
+OTO - NOTNLM
+OT  - ataxia
+OT  - ataxia 6
+OT  - spinocerebellar
+COIS- Author disclosures are available in the Supporting Information.
+EDAT- 2026/08/10 00:40
+MHDA- 2026/08/10 00:40
+PMCR- 2027/08/09
+CRDT- 2026/08/09 21:42
+PHST- 2026/07/16 00:00 [revised]
+PHST- 2026/04/07 00:00 [received]
+PHST- 2026/07/29 00:00 [accepted]
+PHST- 2026/08/10 00:40 [medline]
+PHST- 2026/08/10 00:40 [pubmed]
+PHST- 2026/08/09 21:42 [entrez]
+PHST- 2027/08/09 00:00 [pmc-release]
+AID - MDC370768 [pii]
+AID - 10.1002/mdc3.70768 [doi]
+PST - aheadofprint
+SO  - Mov Disord Clin Pract. 2026 Aug 9:10.1002/mdc3.70768. doi: 10.1002/mdc3.70768.
+
 PMID- 42396269
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260715
-LR  - 20260715
+LR  - 20260821
 DP  - 2026 Jun 22
 TI  - Repeat expansions in Parkinson's disease and parkinsonism across ancestries: 
       insights from a global genetic cohort.
@@ -243,6 +318,11 @@ AD  - DataTecnica, Washington, DC, USA.
 AD  - German Center for Neurodegenerative Diseases (DZNE), Tu bingen, Germany.
 CN  - Global Parkinson's Genetics Program (GP2)
 LA  - eng
+GR  - OT2 OD032100/OD/NIH HHS/United States
+GR  - OT2 OD027060/OD/NIH HHS/United States
+GR  - OT2 OD027852/OD/NIH HHS/United States
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - K08 NS131581/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260622
@@ -344,14 +424,18 @@ SO  - medRxiv [Preprint]. 2026 Jun 22:2026.06.12.26354932. doi:
 
 PMID- 42337487
 OWN - NLM
-STAT- Publisher
-LR  - 20260624
+STAT- MEDLINE
+DCOM- 20260904
+LR  - 20260908
 IS  - 1471-2377 (Electronic)
 IS  - 1471-2377 (Linking)
+VI  - 26
+IP  - 1
 DP  - 2026 Jun 23
 TI  - Replication analysis of the PRKN V380L (rs1801582) variant in a Japanese cohort 
       of spinocerebellar ataxia type 3.
 LID - 10.1186/s12883-026-05101-2 [doi]
+LID - 562
 AB  - BACKGROUND: Spinocerebellar ataxia type 3 (SCA3) is caused by CAG repeat 
       expansion in ATXN3, which inversely correlates with age at onset but does not 
       fully account for interindividual variability. A recent study in a mixed 
@@ -421,7 +505,29 @@ PL  - England
 TA  - BMC Neurol
 JT  - BMC neurology
 JID - 100968555
+RN  - EC 3.4.19.12 (Ataxin-3)
+RN  - EC 3.4.19.12 (ATXN3 protein, human)
+RN  - 0 (Repressor Proteins)
+RN  - Japanese people
 SB  - IM
+MH  - Adult
+MH  - Aged
+MH  - Female
+MH  - Humans
+MH  - Male
+MH  - Middle Aged
+MH  - Age of Onset
+MH  - Ataxin-3/genetics
+MH  - Cohort Studies
+MH  - *East Asian People/genetics
+MH  - Gene Frequency
+MH  - *Genetic Predisposition to Disease/ethnology/genetics
+MH  - Genotype
+MH  - Japan/ethnology
+MH  - *Machado-Joseph Disease/ethnology/genetics
+MH  - Polymorphism, Single Nucleotide/genetics
+MH  - Repressor Proteins
+PMC - PMC13543455
 OTO - NOTNLM
 OT  - Age at onset
 OT  - Japanese population
@@ -434,23 +540,26 @@ COIS- Declarations. Ethics approval and consent to participate: The study was ap
       waived due to the retrospective design. Consent for publication: Not applicable. 
       Competing interests: The authors declare no competing interests.
 EDAT- 2026/06/24 06:39
-MHDA- 2026/06/24 06:39
+MHDA- 2026/09/04 05:35
+PMCR- 2026/06/23
 CRDT- 2026/06/24 00:06
 PHST- 2026/03/07 00:00 [received]
 PHST- 2026/06/18 00:00 [accepted]
-PHST- 2026/06/24 06:39 [medline]
+PHST- 2026/09/04 05:35 [medline]
 PHST- 2026/06/24 06:39 [pubmed]
 PHST- 2026/06/24 00:06 [entrez]
+PHST- 2026/06/23 00:00 [pmc-release]
 AID - 10.1186/s12883-026-05101-2 [pii]
+AID - 5101 [pii]
 AID - 10.1186/s12883-026-05101-2 [doi]
-PST - aheadofprint
-SO  - BMC Neurol. 2026 Jun 23. doi: 10.1186/s12883-026-05101-2.
+PST - epublish
+SO  - BMC Neurol. 2026 Jun 23;26(1):562. doi: 10.1186/s12883-026-05101-2.
 
 PMID- 42196324
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260717
-LR  - 20260717
+LR  - 20260813
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 27
@@ -605,7 +714,7 @@ PMID- 42038259
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260427
-LR  - 20260427
+LR  - 20260813
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 8
@@ -728,7 +837,7 @@ PMID- 41951733
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260521
-LR  - 20260726
+LR  - 20260813
 IS  - 1476-4687 (Electronic)
 IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
@@ -1442,7 +1551,7 @@ PMID- 41771688
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260709
-LR  - 20260709
+LR  - 20260813
 IS  - 2575-1077 (Electronic)
 IS  - 2575-1077 (Linking)
 VI  - 9
@@ -1605,7 +1714,7 @@ PMID- 41762523
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260709
-LR  - 20260709
+LR  - 20260813
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 125

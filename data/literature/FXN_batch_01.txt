@@ -1,11 +1,13 @@
 
 PMID- 42526774
 OWN - NLM
-STAT- Publisher
-LR  - 20260729
+STAT- MEDLINE
+DCOM- 20260901
+LR  - 20260901
 IS  - 1095-953X (Electronic)
 IS  - 0969-9961 (Linking)
-DP  - 2026 Jul 29
+VI  - 228
+DP  - 2026 Oct 1
 TI  - Limiting intestinal iron absorption rescues glial defects and extends lifespan in 
       a Drosophila model of Friedreich's ataxia.
 PG  - 107550
@@ -25,48 +27,53 @@ AB  - Friedreich ataxia (FRDA) is a neurodegenerative and cardiac disease caused
       neurons, suggesting an increased vulnerability of glia to frataxin deficiency. 
       Reducing intestinal iron uptake, either through treatment with 
       bathophenanthroline disulfonic acid (BPS), an extracellular iron chelator, or by 
-      gut-specific silencing of the iron transporter Malvolio, nearly doubled fly 
-      survival. BPS treatment also improved sensitivity to dietary iron, enhanced 
-      locomotor performance, fully restored normal brain size, and prevented glial 
-      alterations. Altogether, our findings identify glial cells as early and 
+      gut-specific silencing of the gene encoding the iron transporter Malvolio, nearly 
+      doubled fly survival. BPS treatment also improved sensitivity to dietary iron, 
+      enhanced locomotor performance, fully restored normal brain size, and prevented 
+      glial alterations. Altogether, our findings identify glial cells as early and 
       preferential targets of frataxin deficiency in an iron-dependent manner and 
       support the in vivo relevance of intestinal iron uptake as a potential modulator 
       of disease severity in FRDA.
-CI  - Copyright (c) 2026. Published by Elsevier Inc.
+CI  - Copyright (c) 2026 The Authors. Published by Elsevier Inc. All rights reserved.
 FAU - Turki, Ema
 AU  - Turki E
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
-      8251, CNRS, F-75013 Paris, France.
+      8251, CNRS, F-75013 Paris, France. Electronic address: ema.turki@gmail.com.
 FAU - Jullian, Estelle
 AU  - Jullian E
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
-      8251, CNRS, F-75013 Paris, France.
+      8251, CNRS, F-75013 Paris, France. Electronic address: 
+      estelle.jullian@laposte.net.
 FAU - Delamotte, Pierre
 AU  - Delamotte P
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
-      8251, CNRS, F-75013 Paris, France.
+      8251, CNRS, F-75013 Paris, France. Electronic address: 
+      p.delamotte.recherche@gmail.com.
 FAU - Filipe, Anne
 AU  - Filipe A
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
-      8251, CNRS, F-75013 Paris, France. Electronic address: anne.filipe@u-paris.fr.
+      8251, CNRS, F-75013 Paris, France. Electronic address: 
+      anne.filipe@u-pariscite.fr.
 FAU - Tixier-Cardoso, Laura
 AU  - Tixier-Cardoso L
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
-      8251, CNRS, F-75013 Paris, France. Electronic address: laura.tixier@u-paris.fr.
+      8251, CNRS, F-75013 Paris, France. Electronic address: 
+      laura.tixier@u-pariscite.fr.
 FAU - Middendorp, Sandrine
 AU  - Middendorp S
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
       8251, CNRS, F-75013 Paris, France. Electronic address: 
-      sandrine.middendorp@u-paris.fr.
+      sandrine.middendorp@u-pariscite.fr.
 FAU - Martin, Elodie
 AU  - Martin E
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
-      8251, CNRS, F-75013 Paris, France. Electronic address: elodie.martin@u-paris.fr.
+      8251, CNRS, F-75013 Paris, France. Electronic address: 
+      elodie.martin@u-pariscite.fr.
 FAU - Monnier, Veronique
 AU  - Monnier V
 AD  - Universite Paris Cite, Unite de Biologie Fonctionnelle et Adaptative (BFA), UMR 
       8251, CNRS, F-75013 Paris, France. Electronic address: 
-      veronique.monnier@u-paris.fr.
+      veronique.monnier@u-pariscite.fr.
 LA  - eng
 PT  - Journal Article
 DEP - 20260729
@@ -74,7 +81,24 @@ PL  - United States
 TA  - Neurobiol Dis
 JT  - Neurobiology of disease
 JID - 9500169
+RN  - E1UOL152H7 (Iron)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Frataxin)
+RN  - 0 (Drosophila Proteins)
 SB  - IM
+MH  - Animals
+MH  - *Friedreich Ataxia/metabolism/pathology/genetics
+MH  - *Neuroglia/metabolism/pathology/drug effects
+MH  - Disease Models, Animal
+MH  - *Iron/metabolism
+MH  - Iron-Binding Proteins/genetics/metabolism
+MH  - Frataxin
+MH  - *Intestinal Absorption/physiology/drug effects
+MH  - *Longevity/physiology/drug effects
+MH  - Drosophila Proteins/genetics/metabolism
+MH  - Drosophila melanogaster
+MH  - Animals, Genetically Modified
+MH  - Drosophila
 OTO - NOTNLM
 OT  - Drosophila melanogaster
 OT  - Frataxin
@@ -86,24 +110,25 @@ COIS- Declaration of competing interest The authors declare that they have no kn
       competing financial interests or personal relationships that could have appeared 
       to influence the work reported in this paper.
 EDAT- 2026/07/30 00:38
-MHDA- 2026/07/30 00:38
+MHDA- 2026/09/01 23:34
 CRDT- 2026/07/29 19:20
 PHST- 2026/06/10 00:00 [received]
 PHST- 2026/07/20 00:00 [revised]
 PHST- 2026/07/28 00:00 [accepted]
-PHST- 2026/07/30 00:38 [medline]
+PHST- 2026/09/01 23:34 [medline]
 PHST- 2026/07/30 00:38 [pubmed]
 PHST- 2026/07/29 19:20 [entrez]
 AID - S0969-9961(26)00295-0 [pii]
 AID - 10.1016/j.nbd.2026.107550 [doi]
-PST - aheadofprint
-SO  - Neurobiol Dis. 2026 Jul 29:107550. doi: 10.1016/j.nbd.2026.107550.
+PST - ppublish
+SO  - Neurobiol Dis. 2026 Oct 1;228:107550. doi: 10.1016/j.nbd.2026.107550. Epub 2026 
+      Jul 29.
 
 PMID- 42383006
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260701
-LR  - 20260701
+LR  - 20260813
 IS  - 2589-0042 (Electronic)
 IS  - 2589-0042 (Linking)
 VI  - 29
@@ -210,13 +235,17 @@ SO  - iScience. 2026 Jun 22;29(7):116479. doi: 10.1016/j.isci.2026.116479. eColl
 
 PMID- 42331777
 OWN - NLM
-STAT- Publisher
-LR  - 20260622
+STAT- MEDLINE
+DCOM- 20260902
+LR  - 20260905
 IS  - 2041-4889 (Electronic)
+VI  - 17
+IP  - 1
 DP  - 2026 Jun 23
 TI  - Frataxin deficiency drives cardiac dysfunction and transcriptional dysregulation 
       in Friedreich ataxia iPSC model.
 LID - 10.1038/s41419-026-09030-3 [doi]
+LID - 774
 AB  - Friedreich ataxia (FRDA) is a progressive neuromuscular degenerative disorder 
       caused by GAA repeat expansions in the FXN gene, leading to frataxin deficiency 
       and multisystem pathology. Cardiomyopathy is the leading cause of mortality in 
@@ -367,33 +396,54 @@ PL  - England
 TA  - Cell Death Dis
 JT  - Cell death & disease
 JID - 101524092
+RN  - 0 (Frataxin)
+RN  - 0 (Iron-Binding Proteins)
+RN  - 0 (Reactive Oxygen Species)
+RN  - 0 (Cadherins)
 SB  - IM
+MH  - *Friedreich Ataxia/genetics/pathology/metabolism/physiopathology
+MH  - Humans
+MH  - Frataxin
+MH  - *Iron-Binding Proteins/metabolism/genetics
+MH  - *Induced Pluripotent Stem Cells/metabolism/pathology
+MH  - Myocytes, Cardiac/metabolism/pathology
+MH  - Reactive Oxygen Species/metabolism
+MH  - Cell Differentiation
+MH  - *Transcription, Genetic
+MH  - Cadherins/metabolism/genetics
+MH  - Trinucleotide Repeat Expansion
+PMC - PMC13538398
 COIS- Competing interests: The authors declare no competing interests.
 EDAT- 2026/06/23 00:35
-MHDA- 2026/06/23 00:35
+MHDA- 2026/09/03 05:37
+PMCR- 2026/06/23
 CRDT- 2026/06/22 23:23
 PHST- 2025/08/28 00:00 [received]
 PHST- 2026/06/16 00:00 [accepted]
 PHST- 2026/05/12 00:00 [revised]
-PHST- 2026/06/23 00:35 [medline]
+PHST- 2026/09/03 05:37 [medline]
 PHST- 2026/06/23 00:35 [pubmed]
 PHST- 2026/06/22 23:23 [entrez]
+PHST- 2026/06/23 00:00 [pmc-release]
 AID - 10.1038/s41419-026-09030-3 [pii]
+AID - 9030 [pii]
 AID - 10.1038/s41419-026-09030-3 [doi]
-PST - aheadofprint
-SO  - Cell Death Dis. 2026 Jun 23. doi: 10.1038/s41419-026-09030-3.
+PST - epublish
+SO  - Cell Death Dis. 2026 Jun 23;17(1):774. doi: 10.1038/s41419-026-09030-3.
 
 PMID- 42253100
 OWN - NLM
 STAT- Publisher
-LR  - 20260608
+LR  - 20260813
 IS  - 2214-3602 (Electronic)
+IS  - 2214-3599 (Print)
 IS  - 2214-3599 (Linking)
 DP  - 2026 Jun 8
 TI  - Assessing airway clearance dysfunction in Friedreich's ataxia: A focus on peak 
       cough flow.
 PG  - 22143602261452334
 LID - 10.1177/22143602261452334 [doi]
+LID - 22143602261452334
 AB  - BackgroundFriedreich's ataxia (FRDA), a common hereditary ataxia with multisystem 
       involvement, is caused by a biallelic GAA trinucleotide repeat expansion in the 
       FXN gene, leading to reduced frataxin, mitochondrial dysfunction, and oxidative 
@@ -472,17 +522,23 @@ TA  - J Neuromuscul Dis
 JT  - Journal of neuromuscular diseases
 JID - 101649948
 SB  - IM
+PMC - PMC13437907
 OTO - NOTNLM
 OT  - Friedreich's ataxia
 OT  - airway protection
 OT  - breathing
 OT  - cough
+COIS- The authors declared no potential conflicts of interest with respect to the 
+      research, authorship, and/or publication of this article.
 EDAT- 2026/06/08 06:35
 MHDA- 2026/06/08 06:35
+PMCR- 2026/06/08
 CRDT- 2026/06/08 05:23
 PHST- 2026/06/08 06:35 [medline]
 PHST- 2026/06/08 06:35 [pubmed]
 PHST- 2026/06/08 05:23 [entrez]
+PHST- 2026/06/08 00:00 [pmc-release]
+AID - 10.1177_22143602261452334 [pii]
 AID - 10.1177/22143602261452334 [doi]
 PST - aheadofprint
 SO  - J Neuromuscul Dis. 2026 Jun 8:22143602261452334. doi: 10.1177/22143602261452334.
@@ -490,7 +546,7 @@ SO  - J Neuromuscul Dis. 2026 Jun 8:22143602261452334. doi: 10.1177/221436022614
 PMID- 42227166
 OWN - NLM
 STAT- Publisher
-LR  - 20260726
+LR  - 20260813
 IS  - 2328-9503 (Electronic)
 IS  - 2328-9503 (Linking)
 DP  - 2026 Jun 2
@@ -572,7 +628,7 @@ PMID- 42134333
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260616
-LR  - 20260726
+LR  - 20260813
 IS  - 2666-3791 (Electronic)
 IS  - 2666-3791 (Linking)
 VI  - 7
@@ -731,7 +787,7 @@ PMID- 42094143
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260525
-LR  - 20260525
+LR  - 20260813
 DP  - 2026 May 1
 TI  - Genome-wide detection and clinical prioritization of tandem repeat outliers using 
       long-read sequencing.
@@ -909,7 +965,7 @@ PMID- 42018061
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260715
-LR  - 20260715
+LR  - 20260813
 IS  - 1559-1182 (Electronic)
 IS  - 0893-7648 (Print)
 IS  - 0893-7648 (Linking)
@@ -1043,7 +1099,7 @@ PMID- 41954755
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260714
-LR  - 20260714
+LR  - 20260813
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -1206,7 +1262,7 @@ PMID- 41919005
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260401
-LR  - 20260401
+LR  - 20260813
 IS  - 2632-6140 (Electronic)
 IS  - 2632-6140 (Linking)
 VI  - 8
@@ -1358,7 +1414,7 @@ PMID- 41890103
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260408
-LR  - 20260408
+LR  - 20260813
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2026 Mar 20
@@ -1541,7 +1597,7 @@ SO  - bioRxiv [Preprint]. 2026 Mar 20:2026.03.18.712785. doi:
 PMID- 41640354
 OWN - NLM
 STAT- Publisher
-LR  - 20260726
+LR  - 20260809
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Linking)
 DP  - 2026 Feb 5
@@ -1691,7 +1747,6 @@ AD  - Movement Disorders Program, Department of Neurology and F.M. Kirby Neurobi
 AD  - Spastic Paraplegia - Centers of Excellence Research Network (SP-CERN) - RDCRC, 
       Bethesda, MD, 20824, USA.
 LA  - eng
-GR  - K08 NS123552/NS/NINDS NIH HHS/United States
 GR  - U54 NS148312/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260205
@@ -1724,7 +1779,7 @@ PMID- 41432640
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260212
-LR  - 20260513
+LR  - 20260813
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -2593,7 +2648,7 @@ PMID- 41137390
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260205
-LR  - 20260528
+LR  - 20260813
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Print)
 IS  - 1525-0016 (Linking)
@@ -3451,7 +3506,7 @@ PMID- 40898875
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260307
-LR  - 20260328
+LR  - 20260813
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -5974,7 +6029,7 @@ PMID- 39219417
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241209
-LR  - 20241209
+LR  - 20260829
 IS  - 1529-8027 (Electronic)
 IS  - 1085-9489 (Linking)
 VI  - 29

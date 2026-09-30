@@ -3,7 +3,7 @@ PMID- 42359808
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260626
-LR  - 20260726
+LR  - 20260818
 IS  - 1473-2300 (Electronic)
 IS  - 0300-0605 (Print)
 IS  - 0300-0605 (Linking)
@@ -83,7 +83,6 @@ MH  - Age of Onset
 MH  - *Nerve Tissue Proteins/genetics
 MH  - Retrospective Studies
 MH  - *Seizures/genetics
-MH  - Asian People/genetics
 MH  - East Asian People
 PMC - PMC13309664
 OTO - NOTNLM
@@ -111,7 +110,7 @@ PMID- 42196324
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260717
-LR  - 20260717
+LR  - 20260813
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 27
@@ -416,8 +415,9 @@ PMID- 41355374
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251208
-LR  - 20251208
+LR  - 20260831
 IS  - 1097-4547 (Electronic)
+IS  - 0360-4012 (Print)
 IS  - 0360-4012 (Linking)
 VI  - 103
 IP  - 12
@@ -465,10 +465,11 @@ AD  - Department of Pharmacology, Wayne State University School of Medicine, Det
 AD  - Department of Neurology, Wayne State University School of Medicine, Detroit, 
       Michigan, USA.
 LA  - eng
-GR  - Office of the Vice President for Research, Wayne State University/
+GR  - R01 NS086778/NS/NINDS NIH HHS/United States
 GR  - Provost, Wayne State University/
-GR  - R01NS086778/NS/NINDS NIH HHS/United States
 GR  - R01NS0867778-10A1S1/NS/NINDS NIH HHS/United States
+GR  - R01NS086778/NS/NINDS NIH HHS/United States
+GR  - Office of the Vice President for Research, Wayne State University/
 PT  - Journal Article
 PL  - United States
 TA  - J Neurosci Res
@@ -484,6 +485,8 @@ MH  - *Gene Regulatory Networks
 MH  - *Myoclonic Epilepsies, Progressive/genetics/metabolism
 MH  - Transcriptome
 MH  - Animals
+PMC - PMC13526311
+MID - NIHMS2202384
 OTO - NOTNLM
 OT  - Dentatorubral-Pallidoluysian Atrophy
 OT  - HEK293T cells
@@ -493,8 +496,10 @@ OT  - oxidative stress
 OT  - polyglutamine
 OT  - quality control
 OT  - sequencing
+COIS- Conflicts of Interest The authors declare no conflicts of interest.
 EDAT- 2025/12/08 06:27
 MHDA- 2025/12/08 06:28
+PMCR- 2026/08/30
 CRDT- 2025/12/08 02:34
 PHST- 2025/10/01 00:00 [revised]
 PHST- 2025/07/11 00:00 [received]
@@ -502,6 +507,7 @@ PHST- 2025/10/12 00:00 [accepted]
 PHST- 2025/12/08 06:28 [medline]
 PHST- 2025/12/08 06:27 [pubmed]
 PHST- 2025/12/08 02:34 [entrez]
+PHST- 2026/08/30 00:00 [pmc-release]
 AID - 10.1002/jnr.70089 [doi]
 PST - ppublish
 SO  - J Neurosci Res. 2025 Dec;103(12):e70089. doi: 10.1002/jnr.70089.
@@ -1409,7 +1415,7 @@ PMID- 40237283
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250822
-LR  - 20260417
+LR  - 20260813
 IS  - 2330-1619 (Electronic)
 IS  - 2330-1619 (Linking)
 VI  - 12

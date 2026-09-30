@@ -1,16 +1,20 @@
 
 PMID- 42486096
 OWN - NLM
-STAT- Publisher
-LR  - 20260722
+STAT- MEDLINE
+DCOM- 20260818
+LR  - 20260830
 IS  - 2666-3791 (Electronic)
 IS  - 2666-3791 (Linking)
-DP  - 2026 Jul 22
+VI  - 7
+IP  - 8
+DP  - 2026 Aug 18
 TI  - Fatty-acid-based antimiR-23b delivery in the DMSXL model: A potential therapeutic 
       strategy for brain dysfunction in myotonic dystrophy type 1.
 PG  - 102929
 LID - S2666-3791(26)00346-0 [pii]
 LID - 10.1016/j.xcrm.2026.102929 [doi]
+LID - 102929
 AB  - Myotonic dystrophy type 1 (DM1) is a severe neuromuscular disorder caused by CTG 
       repeat expansions in the DMPK gene, leading to the formation of toxic RNA foci 
       that sequester essential splicing regulators MBNL1/2. Beyond muscle impairment, 
@@ -98,7 +102,27 @@ PL  - United States
 TA  - Cell Rep Med
 JT  - Cell reports. Medicine
 JID - 101766894
+RN  - 0 (MicroRNAs)
+RN  - 0 (Mirn23b microRNA, mouse)
+RN  - 0 (RNA-Binding Proteins)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (Mbnl1 protein, mouse)
+RN  - 0 (DNA-Binding Proteins)
 SB  - IM
+MH  - Animals
+MH  - *Myotonic Dystrophy/genetics/drug therapy/pathology/metabolism
+MH  - *Brain/metabolism/pathology/physiopathology/drug effects
+MH  - Mice
+MH  - Mice, Transgenic
+MH  - *MicroRNAs/genetics/antagonists & inhibitors/metabolism
+MH  - Disease Models, Animal
+MH  - Humans
+MH  - RNA-Binding Proteins/metabolism/genetics
+MH  - Myotonin-Protein Kinase/genetics/metabolism
+MH  - Blood-Brain Barrier/metabolism
+MH  - Male
+MH  - DNA-Binding Proteins
+PMC - PMC13522761
 OTO - NOTNLM
 OT  - CNS alterations
 OT  - MBNL
@@ -116,24 +140,28 @@ COIS- Declaration of interests B.L. and R.A. are founders and CSO and scientific
       type 1 and antagonists of microRNAs therefore) and EP22382493 (Oligonucleotides 
       conjugated to oleic acid and uses thereof), currently licensed to Arthex Biotech.
 EDAT- 2026/07/23 05:36
-MHDA- 2026/07/23 05:36
+MHDA- 2026/08/18 23:36
+PMCR- 2026/07/22
 CRDT- 2026/07/22 18:42
 PHST- 2025/11/07 00:00 [received]
 PHST- 2026/05/05 00:00 [revised]
 PHST- 2026/06/24 00:00 [accepted]
-PHST- 2026/07/23 05:36 [medline]
+PHST- 2026/08/18 23:36 [medline]
 PHST- 2026/07/23 05:36 [pubmed]
 PHST- 2026/07/22 18:42 [entrez]
+PHST- 2026/07/22 00:00 [pmc-release]
 AID - S2666-3791(26)00346-0 [pii]
+AID - 102929 [pii]
 AID - 10.1016/j.xcrm.2026.102929 [doi]
-PST - aheadofprint
-SO  - Cell Rep Med. 2026 Jul 22:102929. doi: 10.1016/j.xcrm.2026.102929.
+PST - ppublish
+SO  - Cell Rep Med. 2026 Aug 18;7(8):102929. doi: 10.1016/j.xcrm.2026.102929. Epub 2026 
+      Jul 22.
 
 PMID- 42450630
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260715
-LR  - 20260726
+LR  - 20260813
 IS  - 2079-7737 (Print)
 IS  - 2079-7737 (Electronic)
 IS  - 2079-7737 (Linking)
@@ -244,7 +272,7 @@ PMID- 42427665
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260729
-LR  - 20260729
+LR  - 20260821
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2026 Jul 1
@@ -304,6 +332,8 @@ AUID- ORCID: 0000-0002-8069-6452
 AD  - Department of Cellular, Molecular and Genetic Medicine, Virginia commonwealth 
       University School of Medicine, Richmond, Virginia, USA.
 LA  - eng
+GR  - P30 CA016059/CA/NCI NIH HHS/United States
+GR  - R01 NS126504/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260701
@@ -336,12 +366,13 @@ SO  - bioRxiv [Preprint]. 2026 Jul 1:2026.06.25.734569. doi:
 
 PMID- 42419013
 OWN - NLM
-STAT- Publisher
-LR  - 20260708
+STAT- MEDLINE
+DCOM- 20260803
+LR  - 20260803
 IS  - 1568-7856 (Electronic)
 IS  - 1568-7856 (Linking)
 VI  - 165
-DP  - 2026 Jul 7
+DP  - 2026 Sep
 TI  - Tissue-specific CTG*CAG expansion rate and disease severity are modified by DNA 
       repair genes expression levels in myotonic dystrophy type 1 patients.
 PG  - 103950
@@ -400,7 +431,22 @@ PL  - Netherlands
 TA  - DNA Repair (Amst)
 JT  - DNA repair
 JID - 101139138
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (DMPK protein, human)
+RN  - 0 (DNA-Binding Proteins)
+RN  - EC 6.5.1.- (DNA Repair Enzymes)
+RN  - 0 (MutS Homolog 3 Protein)
 SB  - IM
+MH  - Humans
+MH  - *Myotonic Dystrophy/genetics/pathology/metabolism
+MH  - *Trinucleotide Repeat Expansion
+MH  - *DNA Repair/genetics
+MH  - Organ Specificity
+MH  - Myotonin-Protein Kinase/genetics
+MH  - DNA-Binding Proteins/genetics
+MH  - *DNA Repair Enzymes/genetics/metabolism
+MH  - Severity of Illness Index
+MH  - MutS Homolog 3 Protein/genetics
 OTO - NOTNLM
 OT  - CTG*CAG repeats
 OT  - Gene expression
@@ -410,24 +456,25 @@ COIS- Declaration of Competing Interest The authors declare that they have no kn
       competing financial interests or personal relationships that could have appeared 
       to influence the work reported in this paper.
 EDAT- 2026/07/09 00:40
-MHDA- 2026/07/09 00:40
+MHDA- 2026/08/04 00:35
 CRDT- 2026/07/08 18:04
 PHST- 2025/12/16 00:00 [received]
 PHST- 2026/06/23 00:00 [revised]
 PHST- 2026/07/03 00:00 [accepted]
-PHST- 2026/07/09 00:40 [medline]
+PHST- 2026/08/04 00:35 [medline]
 PHST- 2026/07/09 00:40 [pubmed]
 PHST- 2026/07/08 18:04 [entrez]
 AID - S1568-7864(26)00029-7 [pii]
 AID - 10.1016/j.dnarep.2026.103950 [doi]
-PST - aheadofprint
-SO  - DNA Repair (Amst). 2026 Jul 7;165:103950. doi: 10.1016/j.dnarep.2026.103950.
+PST - ppublish
+SO  - DNA Repair (Amst). 2026 Sep;165:103950. doi: 10.1016/j.dnarep.2026.103950. Epub 
+      2026 Jul 7.
 
 PMID- 42273033
 OWN - NLM
-STAT- PubMed-not-MEDLINE
+STAT- In-Process
 DCOM- 20260611
-LR  - 20260611
+LR  - 20260828
 IS  - 1664-2295 (Print)
 IS  - 1664-2295 (Electronic)
 IS  - 1664-2295 (Linking)
@@ -516,14 +563,19 @@ SO  - Front Neurol. 2026 May 26;17:1820238. doi: 10.3389/fneur.2026.1820238.
 
 PMID- 42261605
 OWN - NLM
-STAT- Publisher
-LR  - 20260609
+STAT- MEDLINE
+DCOM- 20260803
+LR  - 20260813
 IS  - 1096-9896 (Electronic)
+IS  - 0022-3417 (Print)
 IS  - 0022-3417 (Linking)
-DP  - 2026 Jun 9
+VI  - 270
+IP  - 1
+DP  - 2026 Sep
 TI  - Optical mapping reveals a higher level of large-scale structural variants in a 
       family with paternally transmitted myotonic dystrophy and independent Parkinson's 
       disease.
+PG  - 83-97
 LID - 10.1002/path.70084 [doi]
 AB  - Myotonic dystrophy type 1 (DM1) is a clinically challenging multisystem 
       neuromuscular hereditary disorder, with generational increase in severity and 
@@ -629,13 +681,31 @@ GR  - PC210168/Congressionally Directed Medical Research Programs/
 GR  - PC230673/Congressionally Directed Medical Research Programs/
 GR  - Petre Foundation/
 GR  - Cancer Institute NSW/
+PT  - Case Reports
 PT  - Journal Article
 DEP - 20260609
 PL  - England
 TA  - J Pathol
 JT  - The Journal of pathology
 JID - 0204634
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 0 (DMPK protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Myotonic Dystrophy/genetics/diagnosis
+MH  - Male
+MH  - Pedigree
+MH  - Female
+MH  - *Parkinson Disease/genetics/diagnosis
+MH  - Genetic Predisposition to Disease
+MH  - Adult
+MH  - Middle Aged
+MH  - Phenotype
+MH  - Myotonin-Protein Kinase/genetics
+MH  - Genomic Instability
+MH  - DNA Methylation
+MH  - Age of Onset
+PMC - PMC13431841
 OTO - NOTNLM
 OT  - early-onset Parkinson's disease
 OT  - genomic instability
@@ -643,23 +713,26 @@ OT  - myotonic dystrophy type 1
 OT  - optical genome mapping
 OT  - paternal inheritance
 EDAT- 2026/06/09 06:34
-MHDA- 2026/06/09 06:34
+MHDA- 2026/08/03 18:37
+PMCR- 2026/08/03
 CRDT- 2026/06/09 04:13
 PHST- 2026/02/10 00:00 [revised]
 PHST- 2025/07/06 00:00 [received]
 PHST- 2026/04/29 00:00 [accepted]
-PHST- 2026/06/09 06:34 [medline]
+PHST- 2026/08/03 18:37 [medline]
 PHST- 2026/06/09 06:34 [pubmed]
 PHST- 2026/06/09 04:13 [entrez]
+PHST- 2026/08/03 00:00 [pmc-release]
+AID - PATH70084 [pii]
 AID - 10.1002/path.70084 [doi]
-PST - aheadofprint
-SO  - J Pathol. 2026 Jun 9. doi: 10.1002/path.70084.
+PST - ppublish
+SO  - J Pathol. 2026 Sep;270(1):83-97. doi: 10.1002/path.70084. Epub 2026 Jun 9.
 
 PMID- 42196324
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260717
-LR  - 20260717
+LR  - 20260813
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 27
@@ -911,7 +984,7 @@ PMID- 41974889
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260714
-LR  - 20260714
+LR  - 20260813
 IS  - 2092-6413 (Electronic)
 IS  - 1226-3613 (Print)
 IS  - 1226-3613 (Linking)
@@ -1006,7 +1079,7 @@ PMID- 41951733
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260521
-LR  - 20260726
+LR  - 20260813
 IS  - 1476-4687 (Electronic)
 IS  - 0028-0836 (Print)
 IS  - 0028-0836 (Linking)
@@ -1720,7 +1793,7 @@ PMID- 41946260
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260613
-LR  - 20260726
+LR  - 20260813
 IS  - 1876-7753 (Electronic)
 IS  - 1873-5061 (Print)
 IS  - 1873-5061 (Linking)
@@ -1825,7 +1898,7 @@ PMID- 41855125
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260726
+LR  - 20260909
 IS  - 2379-3708 (Electronic)
 IS  - 2379-3708 (Linking)
 VI  - 11
@@ -1874,6 +1947,7 @@ LA  - eng
 GR  - R01 AR082852/AR/NIAMS NIH HHS/United States
 GR  - R01 HL147020/HL/NHLBI NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20260319
 PL  - United States
 TA  - JCI Insight
@@ -1922,7 +1996,7 @@ PMID- 41848171
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260711
+LR  - 20260813
 IS  - 1365-2990 (Electronic)
 IS  - 0305-1846 (Print)
 IS  - 0305-1846 (Linking)
@@ -2046,7 +2120,7 @@ PMID- 41766784
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260710
-LR  - 20260710
+LR  - 20260813
 IS  - 0972-7531 (Print)
 IS  - 0976-3260 (Electronic)
 IS  - 0972-7531 (Linking)
@@ -2129,7 +2203,7 @@ PMID- 41762523
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260709
-LR  - 20260709
+LR  - 20260813
 IS  - 2352-3964 (Electronic)
 IS  - 2352-3964 (Linking)
 VI  - 125
@@ -2344,7 +2418,7 @@ PMID- 41722569
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260708
-LR  - 20260708
+LR  - 20260813
 IS  - 1537-6605 (Electronic)
 IS  - 0002-9297 (Print)
 IS  - 0002-9297 (Linking)
@@ -2548,7 +2622,7 @@ PMID- 41710065
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260219
-LR  - 20260726
+LR  - 20260813
 IS  - 2976-856X (Electronic)
 IS  - 2976-856X (Linking)
 VI  - 3
@@ -2875,13 +2949,18 @@ SO  - N Engl J Med. 2026 Feb 19;394(8):763-772. doi: 10.1056/NEJMoa2407326.
 
 PMID- 41672630
 OWN - NLM
-STAT- Publisher
-LR  - 20260211
+STAT- MEDLINE
+DCOM- 20260809
+LR  - 20260813
 IS  - 2234-3814 (Electronic)
+IS  - 2234-3806 (Print)
 IS  - 2234-3806 (Linking)
-DP  - 2026 Feb 12
+VI  - 46
+IP  - 5
+DP  - 2026 Sep 1
 TI  - Performance Evaluation of PacBio PureTarget for Multiple Short Tandem Repeat 
       Expansion Detection.
+PG  - 595-602
 LID - 10.3343/alm.2025.0414 [doi]
 AB  - BACKGROUND: Excessive repeat sequence expansion in the human genome causes 
       neurodegenerative diseases. Conventional tandem repeat expansion detection 
@@ -2948,31 +3027,50 @@ AD  - Department of Laboratory Medicine, Yonsei University College of Medicine,
       Severance Hospital, Seoul, Korea.
 AD  - Dxome Co. Ltd., Seongnam, Korea.
 LA  - eng
+PT  - Evaluation Study
 PT  - Journal Article
 DEP - 20260212
 PL  - Korea (South)
 TA  - Ann Lab Med
 JT  - Annals of laboratory medicine
 JID - 101571172
+RN  - 139135-51-6 (Fragile X Messenger Ribonucleoprotein 1)
+RN  - 0 (FMR1 protein, human)
 SB  - IM
+MH  - Humans
+MH  - Polymerase Chain Reaction
+MH  - Fragile X Messenger Ribonucleoprotein 1/genetics
+MH  - *Microsatellite Repeats
+MH  - Sequence Analysis, DNA
+MH  - Blotting, Southern
+MH  - Alleles
+MH  - DNA Repeat Expansion
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Genotype
+PMC - PMC13458176
 OTO - NOTNLM
 OT  - CRISPR/Cas9
 OT  - Long-read sequencing
 OT  - Tandem repeat expansion detection
 OT  - Tandem repeat genotyping tool
+COIS- CONFLICTS OF INTEREST None declared.
 EDAT- 2026/02/12 00:47
-MHDA- 2026/02/12 00:47
+MHDA- 2026/08/10 00:40
+PMCR- 2026/02/12
 CRDT- 2026/02/11 20:53
 PHST- 2025/07/22 00:00 [received]
 PHST- 2025/10/20 00:00 [revised]
 PHST- 2026/01/13 00:00 [accepted]
-PHST- 2026/02/12 00:47 [medline]
+PHST- 2026/08/10 00:40 [medline]
 PHST- 2026/02/12 00:47 [pubmed]
 PHST- 2026/02/11 20:53 [entrez]
+PHST- 2026/02/12 00:00 [pmc-release]
 AID - alm.2025.0414 [pii]
+AID - alm-46-5-595 [pii]
 AID - 10.3343/alm.2025.0414 [doi]
-PST - aheadofprint
-SO  - Ann Lab Med. 2026 Feb 12. doi: 10.3343/alm.2025.0414.
+PST - ppublish
+SO  - Ann Lab Med. 2026 Sep 1;46(5):595-602. doi: 10.3343/alm.2025.0414. Epub 2026 Feb 
+      12.
 
 PMID- 41610137
 OWN - NLM
@@ -3109,13 +3207,17 @@ SO  - PLoS One. 2026 Jan 29;21(1):e0341655. doi: 10.1371/journal.pone.0341655.
 
 PMID- 41533635
 OWN - NLM
-STAT- Publisher
-LR  - 20260114
+STAT- MEDLINE
+DCOM- 20260904
+LR  - 20260904
 IS  - 2214-3602 (Electronic)
+IS  - 2214-3599 (Print)
 IS  - 2214-3599 (Linking)
-DP  - 2026 Jan 14
+VI  - 13
+IP  - 5
+DP  - 2026 Sep
 TI  - Translational behavioral phenotypes in DMSXL mice for CNS manifestations of DM1.
-PG  - 22143602251410998
+PG  - 955-982
 LID - 10.1177/22143602251410998 [doi]
 AB  - BACKGROUND: Myotonic dystrophy type 1 (DM1) is a multisystemic disorder 
       frequently associated with central nervous system (CNS) involvement, especially 
@@ -3204,7 +3306,22 @@ PL  - United States
 TA  - J Neuromuscul Dis
 JT  - Journal of neuromuscular diseases
 JID - 101649948
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
 SB  - IM
+MH  - Animals
+MH  - *Myotonic Dystrophy/physiopathology/genetics/psychology
+MH  - Mice
+MH  - Phenotype
+MH  - Disease Models, Animal
+MH  - *Behavior, Animal/physiology
+MH  - Mice, Transgenic
+MH  - Male
+MH  - Myotonin-Protein Kinase/genetics
+MH  - Female
+MH  - Humans
+MH  - Social Interaction
+MH  - Social Behavior
+PMC - PMC13438487
 OTO - NOTNLM
 OT  - DMSXL mouse model
 OT  - behavioral phenotypes
@@ -3212,21 +3329,32 @@ OT  - cognitive dysfunction
 OT  - emotional responses
 OT  - myotonic dystrophy (DM1)
 OT  - social behavior
+COIS- Declaration of conflicting interestsThe authors declared no potential conflicts 
+      of interest with respect to the research, authorship, and/or publication of this 
+      article, except for Dr. Genevieve Gourdon (G.G.), who has served as a consultant 
+      or received honoraria from Dyne Therapeutics, Biogen, Bayer AG, and Takeda 
+      Pharmaceutical, and has held research service contracts with Audentes 
+      Therapeutics, Neubase Therapeutics, Entrada Therapeutics, Script Bioscience and 
+      Arrakis Therapeutics.
 EDAT- 2026/01/15 16:13
-MHDA- 2026/01/15 16:13
+MHDA- 2026/09/04 17:40
+PMCR- 2026/01/14
 CRDT- 2026/01/14 13:14
-PHST- 2026/01/15 16:13 [medline]
+PHST- 2026/09/04 17:40 [medline]
 PHST- 2026/01/15 16:13 [pubmed]
 PHST- 2026/01/14 13:14 [entrez]
+PHST- 2026/01/14 00:00 [pmc-release]
+AID - 10.1177_22143602251410998 [pii]
 AID - 10.1177/22143602251410998 [doi]
-PST - aheadofprint
-SO  - J Neuromuscul Dis. 2026 Jan 14:22143602251410998. doi: 10.1177/22143602251410998.
+PST - ppublish
+SO  - J Neuromuscul Dis. 2026 Sep;13(5):955-982. doi: 10.1177/22143602251410998. Epub 
+      2026 Jan 14.
 
 PMID- 41379996
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251211
-LR  - 20260726
+LR  - 20260813
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Print)
 IS  - 0027-8424 (Linking)
@@ -4343,7 +4471,7 @@ PMID- 40879030
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260305
-LR  - 20260528
+LR  - 20260813
 IS  - 1531-8249 (Electronic)
 IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
@@ -11060,7 +11188,7 @@ PMID- 36222125
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230424
-LR  - 20230425
+LR  - 20260903
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -11115,10 +11243,15 @@ AUID- ORCID: 0000-0002-3917-4257
 AD  - Department of Neurology, Virginia Commonwealth University, Richmond, VA 23298, 
       USA.
 LA  - eng
-GR  - R01FD006071/FD/FDA HHS/United States
-GR  - U01DD001242/CC/CDC HHS/United States
-GR  - R21TR003184/NH/NIH HHS/United States
+GR  - R21 TR003184/TR/NCATS NIH HHS/United States
 GR  - R01 NS104010/NS/NINDS NIH HHS/United States
+GR  - U54 NS053672/NS/NINDS NIH HHS/United States
+GR  - U01DD001242/CC/CDC HHS/United States
+GR  - P50 NS053672/NS/NINDS NIH HHS/United States
+GR  - R01 FD006071/FD/FDA HHS/United States
+GR  - R01FD006071/FD/FDA HHS/United States
+GR  - U01 DD001242/DD/NCBDD CDC HHS/United States
+GR  - R21TR003184/NH/NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
 PT  - Research Support, Non-U.S. Gov't

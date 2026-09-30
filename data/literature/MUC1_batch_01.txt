@@ -2,7 +2,7 @@
 PMID- 42498060
 OWN - NLM
 STAT- Publisher
-LR  - 20260724
+LR  - 20260901
 IS  - 1523-1755 (Electronic)
 IS  - 0085-2538 (Linking)
 DP  - 2026 Jul 24
@@ -17,27 +17,27 @@ AB  - INTRODUCTION: The molecular diagnosis of autosomal dominant tubulointersti
       pathogenic variants are located. METHODS: Here, we used targeted amplicon 
       long-read sequencing to study the MUC1 VNTR in a retrospective cohort study of 78 
       individuals. Using a bioinformatic pipeline including newly developed specialized 
-      software, VNTRtools, we reconstruct patient-specific complete VNTR haplotypes, 
-      generate a synthetic VNTR reference, perform long-read realignment to this 
-      reference and finally perform variant calling. RESULTS: VNTRtools proved 
+      software, VNTRtools, we reconstructed patient-specific complete VNTR haplotypes, 
+      generated a synthetic VNTR reference, performed long-read realignment to this 
+      reference, and finally performed variant calling. RESULTS: VNTRtools proved 
       efficient, requiring seconds or minutes per sample to accurately identify all 
       pathogenic MUC1 frameshift variants in positive controls, including atypical 
       variants. Ten new diagnoses of ADTKD-MUC1 were made. Furthermore, we report a 
       confirmed de novo case of ADTKD-MUC1 in a 32-year-old patient. We were able to 
-      structurally resolve and phase the inter-individually highly variable VNTRs in 
+      structurally resolve and phase the interindividually highly variable VNTRs in 
       most probands, enabling the high-confidence detection of pathogenic frameshift 
       variants in 24 individuals. We also detected 18 previously unreported VNTR repeat 
       unit types, demonstrating the highly polymorphic nature of MUC1's VNTR. 
       CONCLUSIONS: We propose a combined approach in which short-read VNTR analysis 
-      using the published alignment-free bioinformatic tools is used as a first line 
+      using the published alignment-free bioinformatic tools is used as a first-line 
       test, followed by targeted long-read sequencing with VNTRtools analysis for 
       confirmatory testing and in-depth VNTR characterization. This combined approach 
-      will lead to a higher diagnostic confidence in ADTKD-MUC1 - especially in 
-      sporadic cases. Complete VNTR haplotype information will likely enable a better 
-      genetic understanding of this currently underdiagnosed disorder and may become 
-      relevant for future therapeutic approaches like targeted silencing of the 
-      pathogenic MUC1 allele.
-CI  - Copyright (c) 2026. Published by Elsevier Inc.
+      will lead to a higher diagnostic confidence in ADTKD-MUC1-especially in sporadic 
+      cases. Complete VNTR haplotype information will likely enable a better genetic 
+      understanding of this currently underdiagnosed disorder and may become relevant 
+      for future therapeutic approaches like targeted silencing of the pathogenic MUC1 
+      allele.
+CI  - Copyright (c) 2026 The Authors. Published by Elsevier Inc. All rights reserved.
 FAU - Wenzel, Andrea
 AU  - Wenzel A
 AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
@@ -55,32 +55,34 @@ AU  - Zagorec N
 AD  - Department of Nephrology and Dialysis, Dubrava University Hospital, Zagreb, 
       Croatia; Faculty of Pharmacy and Biochemistry, University of Zagreb, Zagreb, 
       Croatia.
-FAU - Prlic, Margareta Fistrek
-AU  - Prlic MF
+FAU - Fistrek Prlic, Margareta
+AU  - Fistrek Prlic M
 AD  - Department of Nephrology, Faculty of Medicine and University Hospital Center 
       Zagreb, Zagreb, Croatia.
 FAU - Becker, Kerstin
 AU  - Becker K
 AD  - Cologne Center for Genomics, Medical Faculty, University of Cologne, Cologne, 
-      Germany; West German Genome Center, University of Cologne, Cologne.
+      Germany; West German Genome Center, University of Cologne, Cologne, Germany.
 FAU - Riehmer, Vera
 AU  - Riehmer V
 AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
       Faculty of Medicine and University Hospital Cologne, Cologne, Germany.
-FAU - Muller, Roman-U
+FAU - Muller, Roman-Ulrich
 AU  - Muller RU
-AD  - Department II of Internal Medicine and Center for Rare and Hereditary Kidney 
-      Diseases, University of Cologne, Faculty of Medicine and University Hospital 
-      Cologne, Cologne, Germany.
+AD  - Department of Nephrology, Medical Faculty, University Hospital Dusseldorf, 
+      Heinrich-Heine-University Dusseldorf, Dusseldorf, Germany; Center of Excellence 
+      in Nephrology, University Hospitals Aachen, Cologne, Dusseldorf, North 
+      Rhine-Westphalia, Germany.
 FAU - Pasutto, Francesca
 AU  - Pasutto F
 AD  - Institute of Human Genetics, University Hospital Erlangen, Friedrich-Alexander 
       University Erlangen-Nurnberg, Erlangen, Germany.
 FAU - Hoefele, Julia
 AU  - Hoefele J
-AD  - Institute of Human Genetics, LMU University Hospital, LMU Munich, Munich, 
-      Germany; Institute of Human Genetics, Klinikum rechts der Isar, Technical 
-      University of Munich, TUM School of Medicine and Health, Munich, Germany.
+AD  - Institute of Human Genetics, LMU University Hospital, LMU Medizin, 
+      Ludwig-Maximilians-Universitat Munchen, Munich, Germany; Institute of Human 
+      Genetics, Klinikum rechts der Isar, Technical University of Munich, TUM School of 
+      Medicine and Health, Munich, Germany.
 FAU - Wiesener, Michael S
 AU  - Wiesener MS
 AD  - Department of Nephrology and Hypertension, University Hospital Erlangen, 
@@ -97,7 +99,8 @@ AD  - University Medicine Greifswald, Institute for Molecular Genomics, Core Uni
 FAU - Beck, Bodo B
 AU  - Beck BB
 AD  - Institute of Human Genetics and Center for Rare and Hereditary Kidney Disease, 
-      Faculty of Medicine and University Hospital Cologne, Cologne, Germany.
+      Faculty of Medicine and University Hospital Cologne, Cologne, Germany. Electronic 
+      address: Bodo.Beck@uk-koeln.de.
 LA  - eng
 PT  - Journal Article
 DEP - 20260724
@@ -107,10 +110,9 @@ JT  - Kidney international
 JID - 0323470
 SB  - IM
 OTO - NOTNLM
-OT  - ADTKD
-OT  - Chronic kidney disease of unexplained cause (CKDx)
 OT  - MUC1
 OT  - autosomal dominant tubulointerstitial kidney disease (ADTKD)
+OT  - chronic kidney disease of unexplained cause (CKDx)
 OT  - kidney disease
 OT  - long-read sequencing
 OT  - variable number of tandem repeats (VNTR)
@@ -120,8 +122,8 @@ CRDT- 2026/07/24 19:12
 PHST- 2025/11/03 00:00 [received]
 PHST- 2026/06/16 00:00 [revised]
 PHST- 2026/06/29 00:00 [accepted]
-PHST- 2026/07/25 00:35 [medline]
 PHST- 2026/07/25 00:35 [pubmed]
+PHST- 2026/07/25 00:35 [medline]
 PHST- 2026/07/24 19:12 [entrez]
 AID - S0085-2538(26)00611-3 [pii]
 AID - 10.1016/j.kint.2026.06.040 [doi]
@@ -131,8 +133,8 @@ SO  - Kidney Int. 2026 Jul 24:S0085-2538(26)00611-3. doi: 10.1016/j.kint.2026.06
 PMID- 42428052
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-DCOM- 20260710
-LR  - 20260710
+DCOM- 20260911
+LR  - 20260911
 DP  - 2026 Jul 4
 TI  - Complex structural variation, phylogeny, and disease associations of the mucin 
       pangenome.
@@ -158,33 +160,69 @@ AB  - Mucins are large glycoproteins that provide hydration and barrier function
 FAU - Plender, Elizabeth G
 AU  - Plender EG
 AUID- ORCID: 0000-0002-5063-8737
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
+AD  - Basic Sciences Division and Computational Biology Program, Fred Hutchinson Cancer 
+      Center, Seattle, WA 98109, USA.
 FAU - Prodanov, Timofey
 AU  - Prodanov T
 AUID- ORCID: 0000-0001-7469-6651
+AD  - Institute for Medical Biometry and Bioinformatics, Medical Faculty, Heinrich 
+      Heine University, Moorenstr. 5, 40225 Dusseldorf, Germany.
+AD  - Center for Digital Medicine, Heinrich Heine University, Moorenstr. 5, 40225 
+      Dusseldorf, Germany.
 FAU - Lin, Jiadong
 AU  - Lin J
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
 FAU - Wong, Isaac
 AU  - Wong I
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
 FAU - Wertz, Julie
 AU  - Wertz J
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
 FAU - Gordon, William W
 AU  - Gordon WW
+AD  - Department of Pediatrics, University of Washington, Seattle, WA 98195, USA.
 FAU - Bamshad, Michael J
 AU  - Bamshad MJ
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
+AD  - Department of Pediatrics, University of Washington, Seattle, WA 98195, USA.
 FAU - Munson, Katherine M
 AU  - Munson KM
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
 FAU - O'Neal, Wanda K
 AU  - O'Neal WK
+AD  - Marsico Lung Institute/UNC CF Research Center, School of Medicine, University of 
+      North Carolina at Chapel Hill, Chapel Hill, 27599, North Carolina, USA.
 FAU - Bloom, Jesse D
 AU  - Bloom JD
 AUID- ORCID: 0000-0003-1267-3408
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
+AD  - Basic Sciences Division and Computational Biology Program, Fred Hutchinson Cancer 
+      Center, Seattle, WA 98109, USA.
+AD  - Howard Hughes Medical Institute, Fred Hutchinson Cancer Center, Seattle, WA 
+      98109, USA.
 CN  - Human Pangenome Reference Consortium
 FAU - Marschall, Tobias
 AU  - Marschall T
 AUID- ORCID: 0000-0002-9376-1030
+AD  - Institute for Medical Biometry and Bioinformatics, Medical Faculty, Heinrich 
+      Heine University, Moorenstr. 5, 40225 Dusseldorf, Germany.
+AD  - Center for Digital Medicine, Heinrich Heine University, Moorenstr. 5, 40225 
+      Dusseldorf, Germany.
 FAU - Eichler, Evan E
 AU  - Eichler EE
 AUID- ORCID: 0000-0002-8246-4014
+AD  - Department of Genome Sciences, University of Washington School of Medicine, 
+      Seattle, WA 98195, USA.
+AD  - Howard Hughes Medical Institute, University of Washington, Seattle, WA 98195, 
+      USA.
 LA  - eng
 PT  - Journal Article
 PT  - Preprint
@@ -198,8 +236,8 @@ EDAT- 2026/07/10 06:34
 MHDA- 2026/07/10 06:35
 PMCR- 2026/07/08
 CRDT- 2026/07/10 05:12
-PHST- 2026/07/10 06:35 [medline]
 PHST- 2026/07/10 06:34 [pubmed]
+PHST- 2026/07/10 06:35 [medline]
 PHST- 2026/07/10 05:12 [entrez]
 PHST- 2026/07/08 00:00 [pmc-release]
 AID - 2026.07.01.26356476 [pii]
@@ -630,7 +668,7 @@ PMID- 41832605
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260726
+LR  - 20260828
 IS  - 1542-0086 (Electronic)
 IS  - 0006-3495 (Print)
 IS  - 0006-3495 (Linking)
@@ -702,6 +740,7 @@ AD  - Department of Biomedical Engineering, The University of Texas at Austin, A
       Texas; McKetta Department of Chemical Engineering, The University of Texas at 
       Austin, Austin, Texas. Electronic address: jcstach@austin.utexas.edu.
 LA  - eng
+GR  - 75N91019D00024/OD/NIH HHS/United States
 GR  - R24 GM137782/GM/NIGMS NIH HHS/United States
 GR  - R35 GM139531/GM/NIGMS NIH HHS/United States
 PT  - Journal Article

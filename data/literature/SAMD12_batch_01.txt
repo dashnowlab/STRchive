@@ -1,12 +1,13 @@
 
 PMID- 42276331
 OWN - NLM
-STAT- Publisher
-LR  - 20260616
+STAT- MEDLINE
+DCOM- 20260812
+LR  - 20260812
 IS  - 1872-8111 (Electronic)
 IS  - 0168-0102 (Linking)
 VI  - 229
-DP  - 2026 Jun 11
+DP  - 2026 Aug
 TI  - Enhanced calcium activity and transcriptomic alterations in iPSC-derived neurons 
       from BAFME patients with repeat expansions.
 PG  - 105080
@@ -87,7 +88,15 @@ PL  - Ireland
 TA  - Neurosci Res
 JT  - Neuroscience research
 JID - 8500749
+RN  - SY7Q814VUP (Calcium)
 SB  - IM
+MH  - Humans
+MH  - *Induced Pluripotent Stem Cells/metabolism
+MH  - *Neurons/metabolism
+MH  - *Transcriptome
+MH  - *Calcium/metabolism
+MH  - GABAergic Neurons/metabolism
+MH  - *DNA Repeat Expansion/genetics
 OTO - NOTNLM
 OT  - BAFME
 OT  - Calcium imaging
@@ -107,24 +116,25 @@ COIS- Declaration of Competing Interest The authors declare the following financ
       have no known competing financial interests or personal relationships that could 
       have appeared to influence the work reported in this paper.
 EDAT- 2026/06/12 00:37
-MHDA- 2026/06/12 00:37
+MHDA- 2026/08/12 23:34
 CRDT- 2026/06/11 19:47
 PHST- 2026/04/08 00:00 [received]
 PHST- 2026/05/22 00:00 [revised]
 PHST- 2026/06/08 00:00 [accepted]
+PHST- 2026/08/12 23:34 [medline]
 PHST- 2026/06/12 00:37 [pubmed]
-PHST- 2026/06/12 00:37 [medline]
 PHST- 2026/06/11 19:47 [entrez]
 AID - S0168-0102(26)00067-2 [pii]
 AID - 10.1016/j.neures.2026.105080 [doi]
-PST - aheadofprint
-SO  - Neurosci Res. 2026 Jun 11;229:105080. doi: 10.1016/j.neures.2026.105080.
+PST - ppublish
+SO  - Neurosci Res. 2026 Aug;229:105080. doi: 10.1016/j.neures.2026.105080. Epub 2026 
+      Jun 11.
 
 PMID- 41874439
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260713
-LR  - 20260726
+LR  - 20260813
 IS  - 1528-1167 (Electronic)
 IS  - 0013-9580 (Print)
 IS  - 0013-9580 (Linking)
@@ -1065,7 +1075,7 @@ PMID- 38467733
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250422
-LR  - 20260701
+LR  - 20260813
 IS  - 1476-5438 (Electronic)
 IS  - 1018-4813 (Print)
 IS  - 1018-4813 (Linking)

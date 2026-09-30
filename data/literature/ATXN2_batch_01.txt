@@ -65,6 +65,7 @@ TA  - medRxiv
 JT  - medRxiv : the preprint server for health sciences
 JID - 101767986
 PMC - PMC13419642
+COIS- Competing Interests The authors declare no competing interests.
 EDAT- 2026/08/01 06:35
 MHDA- 2026/08/01 06:36
 PMCR- 2026/07/30
@@ -83,7 +84,7 @@ PMID- 42512530
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260729
-LR  - 20260730
+LR  - 20260813
 IS  - 2076-3425 (Print)
 IS  - 2076-3425 (Electronic)
 IS  - 2076-3425 (Linking)
@@ -194,7 +195,7 @@ PMID- 42501220
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260725
-LR  - 20260725
+LR  - 20260808
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 25
@@ -321,7 +322,7 @@ PMID- 42396269
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260715
-LR  - 20260715
+LR  - 20260821
 DP  - 2026 Jun 22
 TI  - Repeat expansions in Parkinson's disease and parkinsonism across ancestries: 
       insights from a global genetic cohort.
@@ -561,6 +562,11 @@ AD  - DataTecnica, Washington, DC, USA.
 AD  - German Center for Neurodegenerative Diseases (DZNE), Tu bingen, Germany.
 CN  - Global Parkinson's Genetics Program (GP2)
 LA  - eng
+GR  - OT2 OD032100/OD/NIH HHS/United States
+GR  - OT2 OD027060/OD/NIH HHS/United States
+GR  - OT2 OD027852/OD/NIH HHS/United States
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - K08 NS131581/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260622
@@ -664,7 +670,7 @@ PMID- 42204920
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260528
-LR  - 20260726
+LR  - 20260813
 IS  - 2162-3279 (Electronic)
 VI  - 16
 IP  - 6
@@ -774,7 +780,7 @@ PMID- 42196324
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260717
-LR  - 20260717
+LR  - 20260813
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 27
@@ -929,7 +935,7 @@ PMID- 42096001
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260716
-LR  - 20260716
+LR  - 20260813
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -1058,7 +1064,7 @@ PMID- 42087256
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260613
-LR  - 20260726
+LR  - 20260813
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 14
@@ -1162,7 +1168,12 @@ GR  - NIH R35 NS122140/National Institutes of Health (NIH)/
 GR  - Livesey/Oct20/900-792/MNDA_/Motor Neurone Disease Association/United Kingdom
 GR  - Livesey/Oct20/900-792/MNDA_/Motor Neurone Disease Association/United Kingdom
 GR  - 510/ALZS_/Alzheimer's Society/United Kingdom
+GR  - R35 NS122140/NS/NINDS NIH HHS/United States
+GR  - P40 OD018537/OD/NIH HHS/United States
+GR  - 087742/Z/08/Z/WT_/Wellcome Trust/United Kingdom
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20260505
 PL  - England
 TA  - Acta Neuropathol Commun
@@ -1721,7 +1732,7 @@ PMID- 41771688
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260709
-LR  - 20260709
+LR  - 20260813
 IS  - 2575-1077 (Electronic)
 IS  - 2575-1077 (Linking)
 VI  - 9
@@ -1884,7 +1895,7 @@ PMID- 41728197
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260223
-LR  - 20260223
+LR  - 20260813
 IS  - 2632-6140 (Electronic)
 IS  - 2632-6140 (Linking)
 VI  - 8
@@ -2073,7 +2084,7 @@ PMID- 41693683
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260222
-LR  - 20260307
+LR  - 20260813
 IS  - 0972-2327 (Print)
 IS  - 1998-3549 (Electronic)
 IS  - 0972-2327 (Linking)
@@ -3797,7 +3808,7 @@ PMID- 41071260
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251010
-LR  - 20260317
+LR  - 20260813
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -4185,7 +4196,7 @@ PMID- 40908144
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251001
-LR  - 20260402
+LR  - 20260813
 IS  - 1529-2401 (Electronic)
 IS  - 0270-6474 (Print)
 IS  - 0270-6474 (Linking)
@@ -4634,7 +4645,7 @@ PMID- 40684213
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250719
-LR  - 20260515
+LR  - 20260811
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 13
@@ -4824,6 +4835,8 @@ RN  - 0 (Ataxin-2)
 RN  - 0 (ATXN2 protein, human)
 RN  - EC 3.4.19.12 (Ataxin-3)
 SB  - IM
+CIN - Acta Neuropathol Commun. 2026 May 01;14(1):106. doi: 10.1186/s40478-026-02305-y. 
+      PMID: 42067958
 MH  - Animals
 MH  - *Ataxin-2/genetics/metabolism
 MH  - Humans
@@ -12944,7 +12957,7 @@ PMID- 35869263
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220726
-LR  - 20250728
+LR  - 20260728
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 12
