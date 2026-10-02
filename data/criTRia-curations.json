@@ -93,7 +93,7 @@
   "Disease_ID": "FRAXE",
   "Gene": "AFF2",
   "Locus_ID": "FRAXE_AFF2",
-  "Inheritance": "XLR",
+  "Inheritance": "XR",
   "Curator": "Intellectual Disability and Autism GCEP",
   "Contributors": null,
   "Date": "08/11/2025",
@@ -262,7 +262,7 @@
   "Disease_ID": "SBMA",
   "Gene": "AR",
   "Locus_ID": "SBMA_AR",
-  "Inheritance": "AR",
+  "Inheritance": "XR",
   "Curator": "Amyotrophic Lateral Sclerosis Spectrum Disorders GCEP",
   "Contributors": null,
   "Date": "08/08/2023",
@@ -1719,7 +1719,7 @@
   "classification": "Definitive"
 },
 {
-  "Disease_ID": "EDM1-PSACH",
+  "Disease_ID": "EDM1, PSACH",
   "Gene": "COMP",
   "Locus_ID": "EDM1-PSACH_COMP",
   "Inheritance": "AD",
@@ -2394,7 +2394,7 @@
   "Disease_ID": "SCA27B",
   "Gene": "FGF14",
   "Locus_ID": "SCA27B_FGF14",
-  "Inheritance": "AR",
+  "Inheritance": "AD",
   "Curator": "Laurel Hiatt",
   "Contributors": "Harriet Dashnow",
   "Date": "06/04/2025",
@@ -3858,7 +3858,7 @@
 },
 {
   "Disease_ID": "ALS1",
-  "Gene": "NIPA",
+  "Gene": "NIPA1",
   "Locus_ID": "ALS1_NIPA1",
   "Inheritance": "AD",
   "Curator": "Harriet Dashnow",
@@ -4129,7 +4129,7 @@
 {
   "Disease_ID": "OPML1",
   "Gene": "NUTM2B-AS1",
-  "Locus_ID": "OPML1_NUTM2B_AS1",
+  "Locus_ID": "OPML1_NUTM2B-AS1",
   "Inheritance": "AD",
   "Curator": "Macayla Weiner",
   "Contributors": "Laurel Hiatt",
@@ -4634,7 +4634,7 @@
   "classification": "Moderate"
 },
 {
-  "Disease_ID": "HSAN-VIII",
+  "Disease_ID": "HSAN VIII",
   "Gene": "PRDM12",
   "Locus_ID": "HSAN-VIII_PRDM12",
   "Inheritance": "AR",
