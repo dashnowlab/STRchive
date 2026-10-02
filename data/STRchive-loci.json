@@ -2760,8 +2760,8 @@
   "additional_literature": ["pmid:32386547", "pmid:23532960", "pmid:19591980", "pmid:12414828", "pmid:11543619"]
 },
 {
-  "id": "SD5_HOXD13",
-  "disease_id": "SD5",
+  "id": "SPD1_HOXD13",
+  "disease_id": "SPD1",
   "gene": "HOXD13",
   "evidence": ["Definitive"],
   "chrom": "chr2",
@@ -2771,7 +2771,7 @@
   "stop_hg19": 176957831,
   "start_t2t": 176581179,
   "stop_t2t": 176581224,
-  "disease": "Syndactyly",
+  "disease": "Synpolydactyly 1",
   "inheritance": ["AD"],
   "association_type": ["Mendelian"],
   "disease_description": "Synpolydactyly (SPD), or syndactyly type II, is defined as a connection between the middle and ring fingers and fourth and fifth toes, variably associated with postaxial polydactyly in the same digits. Minor local anomalies and various metacarpal or metatarsal abnormalities may be present [@omim:186000].",
