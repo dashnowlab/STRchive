@@ -187,7 +187,7 @@ PMID- 42538437
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260731
-LR  - 20260813
+LR  - 20260923
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -345,8 +345,9 @@ SO  - J Neurol. 2026 Jul 31;273(8):497. doi: 10.1007/s00415-026-14032-4.
 PMID- 42485097
 OWN - NLM
 STAT- Publisher
-LR  - 20260901
+LR  - 20260917
 IS  - 1557-3265 (Electronic)
+IS  - 1078-0432 (Print)
 IS  - 1078-0432 (Linking)
 DP  - 2026 Jul 22
 TI  - A phase I dose-escalation/expansion study of fractionated-dose and multiple cycle 
@@ -460,8 +461,11 @@ JT  - Clinical cancer research : an official journal of the American Association
       Cancer Research
 JID - 9502500
 SB  - IM
+PMC - PMC13579537
+MID - NIHMS2199990
 EDAT- 2026/07/22 18:37
 MHDA- 2026/07/22 18:37
+PMCR- 2026/09/16
 CRDT- 2026/07/22 12:02
 PHST- 2026/07/20 00:00 [accepted]
 PHST- 2026/02/17 00:00 [received]
@@ -469,10 +473,12 @@ PHST- 2026/04/15 00:00 [revised]
 PHST- 2026/07/22 18:37 [medline]
 PHST- 2026/07/22 18:37 [pubmed]
 PHST- 2026/07/22 12:02 [entrez]
+PHST- 2026/09/16 00:00 [pmc-release]
 AID - 787000 [pii]
 AID - 10.1158/1078-0432.CCR-26-0689 [doi]
 PST - aheadofprint
-SO  - Clin Cancer Res. 2026 Jul 22. doi: 10.1158/1078-0432.CCR-26-0689.
+SO  - Clin Cancer Res. 2026 Jul 22:10.1158/1078-0432.CCR-26-0689. doi: 
+      10.1158/1078-0432.CCR-26-0689.
 
 PMID- 42436779
 OWN - NLM
@@ -850,7 +856,7 @@ PMID- 42396269
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260715
-LR  - 20260821
+LR  - 20260922
 DP  - 2026 Jun 22
 TI  - Repeat expansions in Parkinson's disease and parkinsonism across ancestries: 
       insights from a global genetic cohort.
@@ -1198,7 +1204,7 @@ PMID- 42239750
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260624
-LR  - 20260813
+LR  - 20260923
 IS  - 2693-5015 (Electronic)
 IS  - 2693-5015 (Linking)
 DP  - 2026 May 18
@@ -1288,6 +1294,8 @@ AU  - Lang JE
 AD  - Cleveland Clinic Lerner Research Institute, Cleveland Clinic Lerner School of 
       Medicine.
 LA  - eng
+GR  - P30 CA014089/CA/NCI NIH HHS/United States
+GR  - P30 CA043703/CA/NCI NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260518
@@ -2010,14 +2018,17 @@ SO  - EBioMedicine. 2026 Mar;125:106190. doi: 10.1016/j.ebiom.2026.106190. Epub 
 
 PMID- 41564929
 OWN - NLM
-STAT- Publisher
-LR  - 20260125
+STAT- MEDLINE
+DCOM- 20260930
+LR  - 20260930
 IS  - 2090-1224 (Electronic)
 IS  - 2090-1224 (Linking)
-DP  - 2026 Jan 19
+VI  - 88
+DP  - 2026 Oct
 TI  - The alternative androgen receptor isoform A mitigates toxicity of 
       polyglutamine-elongated mutant androgen receptor in spinal and bulbar muscular 
       atrophy.
+PG  - 959-976
 LID - S2090-1232(26)00076-7 [pii]
 LID - 10.1016/j.jare.2026.01.051 [doi]
 AB  - INTRODUCTION: Spinal and bulbar muscular atrophy (SBMA) is an X-linked 
@@ -2047,7 +2058,7 @@ AB  - INTRODUCTION: Spinal and bulbar muscular atrophy (SBMA) is an X-linked
       a role in protecting against ARpolyQ aggregation and toxicity. These findings 
       suggest that AR-A could represent a promising avenue for developing an 
       alternative therapeutic strategy that warrants further investigation.
-CI  - Copyright (c) 2026. Published by Elsevier B.V.
+CI  - Copyright (c) 2026 The Authors. Published by Elsevier B.V. All rights reserved.
 FAU - Chierichetti, Marta
 AU  - Chierichetti M
 AD  - Dipartimento di Scienze Farmacologiche e Biomolecolari "Rodolfo Paoletti", 
@@ -2148,7 +2159,24 @@ PL  - Egypt
 TA  - J Adv Res
 JT  - Journal of advanced research
 JID - 101546952
+RN  - 0 (Receptors, Androgen)
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
+RN  - 0 (Protein Isoforms)
 SB  - IM
+MH  - *Receptors, Androgen/genetics/metabolism
+MH  - Animals
+MH  - *Peptides/genetics/metabolism
+MH  - Mice
+MH  - Protein Isoforms/genetics/metabolism
+MH  - Humans
+MH  - Drosophila melanogaster
+MH  - *Bulbo-Spinal Atrophy, X-Linked/genetics/metabolism
+MH  - Male
+MH  - Trinucleotide Repeat Expansion
+MH  - *Muscular Disorders, Atrophic/genetics/metabolism
+MH  - Mutation
+MH  - Disease Models, Animal
 OTO - NOTNLM
 OT  - Androgen receptor
 OT  - CAG repeat
@@ -2161,18 +2189,19 @@ COIS- Declaration of competing interest The authors declare that they have no kn
       competing financial interests or personal relationships that could have appeared 
       to influence the work reported in this paper.
 EDAT- 2026/01/22 01:09
-MHDA- 2026/01/22 01:09
+MHDA- 2026/09/30 23:29
 CRDT- 2026/01/21 19:10
 PHST- 2025/07/23 00:00 [received]
 PHST- 2025/12/29 00:00 [revised]
 PHST- 2026/01/17 00:00 [accepted]
+PHST- 2026/09/30 23:29 [medline]
 PHST- 2026/01/22 01:09 [pubmed]
-PHST- 2026/01/22 01:09 [medline]
 PHST- 2026/01/21 19:10 [entrez]
 AID - S2090-1232(26)00076-7 [pii]
 AID - 10.1016/j.jare.2026.01.051 [doi]
-PST - aheadofprint
-SO  - J Adv Res. 2026 Jan 19:S2090-1232(26)00076-7. doi: 10.1016/j.jare.2026.01.051.
+PST - ppublish
+SO  - J Adv Res. 2026 Oct;88:959-976. doi: 10.1016/j.jare.2026.01.051. Epub 2026 Jan 
+      19.
 
 PMID- 41552385
 OWN - NLM
@@ -2305,7 +2334,7 @@ PMID- 41513898
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260625
-LR  - 20260625
+LR  - 20260920
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Print)
 IS  - 0340-5354 (Linking)
@@ -3254,7 +3283,7 @@ PMID- 40371721
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250515
-LR  - 20260827
+LR  - 20260924
 IS  - 1469-896X (Electronic)
 IS  - 0961-8368 (Print)
 IS  - 0961-8368 (Linking)
