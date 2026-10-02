@@ -23,6 +23,7 @@ import {
   IconSitemap,
   IconTimelineEventText,
   IconUserCheck,
+  IconUsers,
   IconVirus,
 } from "@tabler/icons-react";
 import clsx from "clsx";
@@ -161,13 +162,22 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
           : "–"}
       </div>
 
-      <div class="box box-full">
+      <div class={clsx("box", !curation.Contributors && "box-full")}>
         <strong>
           <IconUserCheck />
-          Curator(s)
+          Curator
         </strong>
         {curation.Curator}
       </div>
+      {curation.Contributors && (
+        <div class="box box-2">
+          <strong>
+            <IconUsers />
+            Contributors
+          </strong>
+          {curation.Contributors}
+        </div>
+      )}
       <div class="box box-full">
         <strong>
           <IconFileText />
