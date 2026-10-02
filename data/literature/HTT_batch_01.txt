@@ -1,13 +1,456 @@
 
+PMID- 42786195
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260924
+LR  - 20260928
+IS  - 2373-8057 (Print)
+IS  - 2373-8057 (Electronic)
+IS  - 2373-8057 (Linking)
+VI  - 12
+IP  - 1
+DP  - 2026 Sep 24
+TI  - Unified long-read panel for Parkinson's and repeat expansion disorders.
+LID - 10.1038/s41531-026-01585-4 [doi]
+LID - 233
+AB  - In this study, we designed a gene panel based on Nanopore long-read sequencing 
+      using adaptive sampling, targeting n = 564 genes associated with Parkinson's 
+      disease (PD) and repeat expansion disorders. We investigated its diagnostic 
+      utility in n = 18 patients with (1) pathogenic variants in LRRK2, PRKN, SNCA, and 
+      RAB32 (n = 7); (2) idiopathic PD or FTD negative for known genetic causes 
+      (n = 3); (3) repeat expansions in ATXN1, ATXN2, ATXN3, C9orf72, DAB1, FGF14, HTT, 
+      and TAF1-SVA (n = 8). Three individuals were multiplexed per flow cell, achieving 
+      a mean coverage of 24X (SD = +/- 9X) per sample. Ultimately, 17/20 (85%; 
+      Clopper-Pearson 95% CI: 62-97%) expected pathogenic variants were identified; 
+      i.e., an SNCA triplication and two repeat expansions in C9orf72 and TAF1-SVA were 
+      missed. Additional variants in STXBP2, AP4S1, RARS2, ALS2, and CNBP were 
+      identified in five patients. Adaptive sampling is a versatile genetic diagnostic 
+      tool in neurodegenerative disorders, while enabling cost-effective multiplexing. 
+      Further validation and improvements in bioinformatic analysis are needed.
+CI  - (c) 2026. The Author(s).
+FAU - Fienemann, Andre
+AU  - Fienemann A
+AUID- ORCID: 0009-0004-9594-3673
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Prietzsche, Julia C
+AU  - Prietzsche JC
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Labeta, Joshua
+AU  - Labeta J
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Much, Christoph
+AU  - Much C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Schaake, Susen
+AU  - Schaake S
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Luth, Theresa
+AU  - Luth T
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Gabbert, Carolin
+AU  - Gabbert C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Zimprich, Alexander
+AU  - Zimprich A
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Stogmann, Elisabeth
+AU  - Stogmann E
+AUID- ORCID: 0000-0003-4688-8482
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Konig, Theresa
+AU  - Konig T
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Ganos, Christos
+AU  - Ganos C
+AD  - Edmond J. Safra Program in Parkinson's Disease and the Morton and Gloria Shulman 
+      Movement Disorders Clinic, Toronto Western Hospital, Toronto, ON, Canada.
+AD  - Division of Neurology, University of Toronto, Toronto, ON, Canada.
+AD  - Krembil Brain Institute, Toronto, ON, Canada.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Suna and Inan Kirac Foundation, Neurodegeneration Research Laboratory (NDAL), 
+      KUTTAM, School of Medicine, Koc University, Istanbul, Turkey.
+FAU - Basak, A Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Suna and Inan Kirac Foundation, Neurodegeneration Research Laboratory (NDAL), 
+      KUTTAM, School of Medicine, Koc University, Istanbul, Turkey.
+FAU - Jamora, Roland Dominic G
+AU  - Jamora RDG
+AUID- ORCID: 0000-0001-5317-7369
+AD  - Department of Neurosciences, College of Medicine-Philippine General Hospital, 
+      University of the Philippines Manila, Manila, Philippines.
+FAU - Rosales, Raymond L
+AU  - Rosales RL
+AD  - Department of Neurology and Psychiatry, University of Santo Tomas and the 
+      CNS-Metropolitan Medical Center, Manila, Philippines.
+FAU - Saranza, Gerard
+AU  - Saranza G
+AUID- ORCID: 0000-0001-8322-4226
+AD  - Department of Neurosciences, College of Medicine-Philippine General Hospital, 
+      University of the Philippines Manila, Manila, Philippines.
+AD  - Section of Neurology, Department of Internal Medicine, Chong Hua Hospital, Cebu, 
+      Philippines.
+FAU - Diesta, Cid Czarina E
+AU  - Diesta CCE
+AD  - Department of Neurosciences, Movement Disorders Clinic, Makati Medical Center, 
+      Makati City, Philippines.
+FAU - Moller, Meret
+AU  - Moller M
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Borsche, Max
+AU  - Borsche M
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Kleinz, Teresa
+AU  - Kleinz T
+AUID- ORCID: 0009-0000-6313-7395
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Balck, Alexander
+AU  - Balck A
+AUID- ORCID: 0000-0003-3967-0282
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Bruggemann, Norbert
+AU  - Bruggemann N
+AUID- ORCID: 0000-0001-5969-6899
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Seibler, Philip
+AU  - Seibler P
+AUID- ORCID: 0000-0002-3496-7194
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Klein, Christine
+AU  - Klein C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Trinh, Joanne
+AU  - Trinh J
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany. 
+      joanne.trinh@uni-luebeck.de.
+LA  - eng
+GR  - TR 1714/4-1/Deutsche Forschungsgemeinschaft/
+PT  - Journal Article
+DEP - 20260924
+PL  - United States
+TA  - NPJ Parkinsons Dis
+JT  - NPJ Parkinson's disease
+JID - 101675390
+PMC - PMC13612410
+COIS- Declarations. Competing interests: The authors declare the following competing 
+      interests: RDGJ has received travel grants and speakers' honoraria from Royal 
+      Care Super Specialty Hospital, Darya-Varya Laboratoria, and the Philippine 
+      offices of AbbVie, Exeltis, HI-Eisai, Innogen, Medichem, Natrapharm, Sun, 
+      Torrent, and Vexxa. M.B. received honoraria from Bial Germany. N.B. received 
+      honoraria from AbbVie, Esteve, Ipsen, Merz, Takeda, Teva, and Zambon. J.T. has 
+      received travel funding to speak on behalf of O.N.T. C.K. has served as a medical 
+      advisor to Centogene, Takeda, and Biogen and received speakers' honoraria from 
+      Bial, as well as royalties from Oxford University Press and Springer Nature. The 
+      other authors do not have a competing interest.
+EDAT- 2026/09/25 05:31
+MHDA- 2026/09/25 05:32
+PMCR- 2026/09/24
+CRDT- 2026/09/24 23:30
+PHST- 2026/01/07 00:00 [received]
+PHST- 2026/09/12 00:00 [accepted]
+PHST- 2026/09/25 05:32 [medline]
+PHST- 2026/09/25 05:31 [pubmed]
+PHST- 2026/09/24 23:30 [entrez]
+PHST- 2026/09/24 00:00 [pmc-release]
+AID - 10.1038/s41531-026-01585-4 [pii]
+AID - 1585 [pii]
+AID - 10.1038/s41531-026-01585-4 [doi]
+PST - epublish
+SO  - NPJ Parkinsons Dis. 2026 Sep 24;12(1):233. doi: 10.1038/s41531-026-01585-4.
+
+PMID- 42768770
+OWN - NLM
+STAT- Publisher
+LR  - 20260922
+IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Linking)
+DP  - 2026 Sep 21
+TI  - ATXN8OS Intermediate Expansion Acts as a Genetic Modifier in Spinocerebellar 
+      Ataxia Type 48 (SCA48/STUB1).
+LID - 10.1002/mds.70534 [doi]
+AB  - BACKGROUND: Association between monoallelic STUB1 variant and expanded ATXN8OS 
+      alleles was recently reported, suggesting a pathogenic interaction that may 
+      influence spinocerebellar ataxia type 48 (SCA48) phenotype. OBJECTIVES: We 
+      investigated the frequency and clinical impact of ATXN8OS in a large cohort of 
+      STUB1 carriers compared to individuals with other ataxias and controls. METHODS: 
+      Ataxic individuals and controls from the SPATAX/BIOMOV cohorts (Paris Brain 
+      Institute) were screened for ATXN8OS and other CAG expansions using polymerase 
+      chain reaction (PCR)/repeat-prime PCR (RP-PCR) and ExpansionHunter. STUB1 
+      carriers underwent whole-genome or exome sequencing. RESULTS: Our cohort 
+      comprised 12 biallelic STUB1 carriers (SCAR16) and 67 monoallelic STUB1 carriers 
+      (SCA48) without other causative variants. ATXN8OS expansions (84-177 CTA/CTG 
+      repeats) were identified in seven SCA48 individuals (10.5%) who exhibited earlier 
+      onset (median age 28 vs. 47 years, P < 0.001) compared to other SCA48 individuals 
+      but with similar clinical presentation. ATXN8OS expansions were also found in two 
+      healthy controls older than 50 years (2/286, 0.7%) and in eight index cases with 
+      autosomal dominant ataxia (8/400, 2%), including four carrying another molecular 
+      diagnosis without any effect on the phenotype. Other intermediate expansions were 
+      identified in individuals with SCA48: seven (10.5%) carried intermediate TBP 
+      alleles (40-46 CAG/CAA) without any effect on dementia prevalence; four carried 
+      intermediate HTT alleles (28-29 CAG); and three carried intermediate ATXN1 
+      expansions (38 CAG). CONCLUSIONS: ATXN8OS intermediate expansion acts as a 
+      genetic modifier in SCA48 but not in other ataxias. Moreover, expanded 
+      intermediate alleles in neurodegenerative disease genes were present in one-third 
+      of SCA48 individuals. These alleles may increase polyglutamine burden, 
+      potentially saturating STUB1 E3 ubiquitin ligase activity. (c) 2026 The Author(s). 
+      Movement Disorders published by Wiley Periodicals LLC on behalf of International 
+      Parkinson and Movement Disorder Society.
+CI  - (c) 2026 The Author(s). Movement Disorders published by Wiley Periodicals LLC on 
+      behalf of International Parkinson and Movement Disorder Society.
+FAU - Mouraux, Charlotte
+AU  - Mouraux C
+AUID- ORCID: 0000-0001-9569-9229
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+AD  - GIGA-CRC-Rare Movement Disorders Research Group, University of Liege, Liege, 
+      Belgium.
+AD  - Department of Human Genetics, University Hospital of Liege, Liege, Belgium.
+FAU - Mereaux, Jean-Loup
+AU  - Mereaux JL
+AUID- ORCID: 0000-0002-4279-7252
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Davoine, Claire-Sophie
+AU  - Davoine CS
+AUID- ORCID: 0009-0001-5821-8462
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Noel, Lena Guillot
+AU  - Noel LG
+AUID- ORCID: 0000-0002-0287-3361
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Petit, Emilien
+AU  - Petit E
+AUID- ORCID: 0009-0000-0602-7122
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Thomas, Quentin
+AU  - Thomas Q
+AUID- ORCID: 0000-0003-1185-1663
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+AD  - Department of Neurology, University Hospital of Dijon, Dijon, France.
+FAU - Nasraoui, Adem
+AU  - Nasraoui A
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Heinzmann, Anna
+AU  - Heinzmann A
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+AD  - Genetics Department, DMU Biogem, Pitie-Salpetriere University Hospital, Paris, 
+      France.
+FAU - Ewenczyk, Claire
+AU  - Ewenczyk C
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+AD  - Genetics Department, DMU Biogem, Pitie-Salpetriere University Hospital, Paris, 
+      France.
+FAU - Brice, Alexis
+AU  - Brice A
+AUID- ORCID: 0000-0002-0941-3990
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Durr, Alexandra
+AU  - Durr A
+AUID- ORCID: 0000-0002-8921-7104
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+FAU - Coarelli, Giulia
+AU  - Coarelli G
+AUID- ORCID: 0000-0002-7824-8343
+AD  - Sorbonne Universite, Paris Brain Institute-ICM, Inserm, CNRS, APHP, 
+      Pitie-Salpetriere University Hospital, Paris, France.
+AD  - Genetics Department, DMU Biogem, Pitie-Salpetriere University Hospital, Paris, 
+      France.
+LA  - eng
+PT  - Journal Article
+DEP - 20260921
+PL  - United States
+TA  - Mov Disord
+JT  - Movement disorders : official journal of the Movement Disorder Society
+JID - 8610688
+SB  - IM
+OTO - NOTNLM
+OT  - SCA48
+OT  - SCA8
+OT  - cerebellar ataxia
+OT  - genetic modifier
+EDAT- 2026/09/22 05:37
+MHDA- 2026/09/22 05:37
+CRDT- 2026/09/22 01:53
+PHST- 2026/08/17 00:00 [revised]
+PHST- 2026/06/05 00:00 [received]
+PHST- 2026/08/25 00:00 [accepted]
+PHST- 2026/09/22 05:37 [medline]
+PHST- 2026/09/22 05:37 [pubmed]
+PHST- 2026/09/22 01:53 [entrez]
+AID - 10.1002/mds.70534 [doi]
+PST - aheadofprint
+SO  - Mov Disord. 2026 Sep 21. doi: 10.1002/mds.70534.
+
+PMID- 42735686
+OWN - NLM
+STAT- Publisher
+LR  - 20260914
+IS  - 1097-4199 (Electronic)
+IS  - 0896-6273 (Linking)
+DP  - 2026 Sep 14
+TI  - Loss of interruption in the HTT CAG repeat is associated with somatic expansion 
+      and loss of medium spiny neurons in Huntington's disease.
+LID - S0896-6273(26)00640-9 [pii]
+LID - 10.1016/j.neuron.2026.08.010 [doi]
+AB  - Synonymous loss-of-interruption variants in the expanded CAG repeat sequence of 
+      Huntingtin (HTT) accelerate the clinical onset and progression of Huntington's 
+      disease (HD). Medium spiny neurons (MSNs) are gradually lost in HD and undergo 
+      selective somatic CAG expansion, but it is unclear how somatic expansion relates 
+      to MSN pathology. Here, we show that MSNs with large (111-150 CAG) and very large 
+      (>150 CAG) somatic expansions are rare in early manifest HD but accumulate in 
+      proportion with duration of disease. In patients with the deleterious CAG-CCG 
+      loss-of-interruption (CAG-CCG LOI) modifier, the proportion of MSNs with large 
+      and very large expansions is increased  approximately 5-fold despite reduced small somatic 
+      expansions in blood, and caudate MSN counts are reduced. Our findings suggest 
+      that increased somatic CAG expansion contributes to accelerated striatal MSN 
+      pathology and onset of HD but that MSNs with very large genomic CAG expansions 
+      can persist among surviving neurons of the HD brain.
+CI  - Copyright (c) 2026 The Authors. Published by Elsevier Inc. All rights reserved.
+FAU - Kay, Chris
+AU  - Kay C
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada; Department of Anatomy and Medical Imaging, University of 
+      Auckland, Auckland, New Zealand; Centre for Brain Research, Faculty of Medical 
+      and Health Science, University of Auckland, Auckland, New Zealand.
+FAU - Levesley, Jessica
+AU  - Levesley J
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Matlik, Kert
+AU  - Matlik K
+AD  - Laboratory of Molecular Biology, The Rockefeller University, New York, NY, USA; 
+      Department of Chemistry and Biotechnology, Tallinn University of Technology, 
+      Tallinn, Estonia.
+FAU - Findlay Black, Hailey
+AU  - Findlay Black H
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Harvey, Emily
+AU  - Harvey E
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Bortnick, Stephanie
+AU  - Bortnick S
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Javier, Kyla
+AU  - Javier K
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Buchanan, Christina
+AU  - Buchanan C
+AD  - Auckland City Hospital, Health New Zealand, Auckland, New Zealand.
+FAU - Soomarooah, Tanushri
+AU  - Soomarooah T
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Bras, Ines Caldeira
+AU  - Bras IC
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Sequiera, Glen
+AU  - Sequiera G
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Pouladi, Mahmoud
+AU  - Pouladi M
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada.
+FAU - Arning, Larissa
+AU  - Arning L
+AD  - Department of Human Genetics, Medical Faculty, Ruhr University of Bochum, Bochum, 
+      Germany.
+FAU - Nguyen, Hoa H P
+AU  - Nguyen HHP
+AD  - Department of Human Genetics, Medical Faculty, Ruhr University of Bochum, Bochum, 
+      Germany.
+FAU - Roxburgh, Richard
+AU  - Roxburgh R
+AD  - Auckland City Hospital, Health New Zealand, Auckland, New Zealand.
+FAU - Curtis, Maurice
+AU  - Curtis M
+AD  - Department of Anatomy and Medical Imaging, University of Auckland, Auckland, New 
+      Zealand; Centre for Brain Research, Faculty of Medical and Health Science, 
+      University of Auckland, Auckland, New Zealand.
+FAU - Faull, Richard L M
+AU  - Faull RLM
+AD  - Department of Anatomy and Medical Imaging, University of Auckland, Auckland, New 
+      Zealand; Centre for Brain Research, Faculty of Medical and Health Science, 
+      University of Auckland, Auckland, New Zealand.
+FAU - Heintz, Nathaniel
+AU  - Heintz N
+AD  - Laboratory of Molecular Biology, The Rockefeller University, New York, NY, USA.
+FAU - Hayden, Michael R
+AU  - Hayden MR
+AD  - Centre for Molecular Medicine and Therapeutics, University of British Columbia, 
+      Vancouver, BC, Canada. Electronic address: mrh@cmmt.ubc.ca.
+LA  - eng
+PT  - Journal Article
+DEP - 20260914
+PL  - United States
+TA  - Neuron
+JT  - Neuron
+JID - 8809320
+SB  - IM
+OTO - NOTNLM
+OT  - Huntington's disease
+OT  - caudate nucleus
+OT  - genetic modifiers
+OT  - medium spiny neurons
+OT  - neurodegeneration
+OT  - repeat interruptions
+OT  - somatic expansion
+OT  - somatic instability
+OT  - striatum
+OT  - trinucleotide repeat disorders
+COIS- Declaration of interests M.R.H. is a founder and the chief executive officer at 
+      Prilenia Therapeutics.
+EDAT- 2026/09/15 05:06
+MHDA- 2026/09/15 05:06
+CRDT- 2026/09/14 18:41
+PHST- 2026/02/26 00:00 [received]
+PHST- 2026/06/10 00:00 [revised]
+PHST- 2026/08/17 00:00 [accepted]
+PHST- 2026/09/15 05:06 [medline]
+PHST- 2026/09/15 05:06 [pubmed]
+PHST- 2026/09/14 18:41 [entrez]
+AID - S0896-6273(26)00640-9 [pii]
+AID - 10.1016/j.neuron.2026.08.010 [doi]
+PST - aheadofprint
+SO  - Neuron. 2026 Sep 14:S0896-6273(26)00640-9. doi: 10.1016/j.neuron.2026.08.010.
+
 PMID- 42727763
 OWN - NLM
 STAT- Publisher
-LR  - 20260911
+LR  - 20260925
 IS  - 1531-5037 (Electronic)
 IS  - 0022-3468 (Linking)
 DP  - 2026 Sep 11
-TI  - BUILDING LOCAL CAPACITY FOR BOWEL MANAGEMENT IN LOW RESOURCE SETTINGS: PROGRAM 
-      SUSTAINABILITY AND EXPANSION.
+TI  - Building local capacity for bowel management in low resource settings: Program 
+      sustainability and expansion.
 PG  - 163446
 LID - S0022-3468(26)00528-2 [pii]
 LID - 10.1016/j.jpedsurg.2026.163446 [doi]
@@ -30,31 +473,31 @@ AB  - INTRODUCTION: Congenital colorectal conditions including anorectal malform
       US-Ugandan led cohort. Intake forms were available for 44 patients. Median age at 
       presentation was 3.5 years (IQR 2-5.5 years), 70% were male, and the most common 
       diagnosis was ARM (43.2% ARM, 25% HD, 2.3% idiopathic constipation, 29.5% 
-      unknown). Around half of patients were reached on follow-up (n=28, 52%). Median 
+      unknown). Around half of patients were reached on follow-up (n = 28, 52%). Median 
       number of days at final follow-up was 433.5 (IQR 390.5-694) with 2 (IQR 1-3.75) 
       recorded follow-ups per patient. Overall, patients demonstrated an adherence rate 
       of 74%. Adherence to the program was associated with greater reduction in both 
-      day (p=0.013) and night (p=0.012) involuntary BMs. Comparing the pilot and 
+      day (p = 0.013) and night (p = 0.012) involuntary BMs. Comparing the pilot and 
       expansion cohorts, there was no difference in final regimen (pilot cohort: 75% 
       enema, 16.7% laxatives, 8.33% discharged vs expansion cohort: 68.4% enema, 15.8% 
-      laxatives, 15.7% discharged; p=0.9) and soiling outcomes with sustained reduction 
-      in day and night BMs at 2 weeks and on final follow-up. CONCLUSION: Patients had 
-      sustained decreased rates of incontinence and similar rates of voluntary BMs at 
-      intermediate term follow-up, compared to two weeks post-program enrollment. 
-      Patients enrolled and managed exclusively by the local Ugandan team had similar 
-      outcomes to the pilot cohort, indicating that short term targeted education and 
-      co-management of patients in LICs can successfully serve as the foundation for 
-      development of local capacity for bowel management programs.
+      laxatives, 15.7% discharged; p = 0.9) and soiling outcomes with sustained 
+      reduction in day and night BMs at 2 weeks and on final follow-up. CONCLUSION: 
+      Patients had sustained decreased rates of incontinence and similar rates of 
+      voluntary BMs at intermediate term follow-up, compared to two weeks post-program 
+      enrollment. Patients enrolled and managed exclusively by the local Ugandan team 
+      had similar outcomes to the pilot cohort, indicating that short term targeted 
+      education and co-management of patients in LICs can successfully serve as the 
+      foundation for development of local capacity for bowel management programs.
 CI  - Copyright (c) 2026 The Author(s). Published by Elsevier Inc. All rights reserved.
 FAU - Ray, Marissa
 AU  - Ray M
 AD  - Department of Pediatric General and Thoracic Surgery, Cincinnati Children's 
-      Hospital Medical Center, Cincinnati, OH; Department of Surgery, University of 
-      Cincinnati College of Medicine, Cincinnati, OH. Electronic address: 
+      Hospital Medical Center, Cincinnati, OH, USA; Department of Surgery, University 
+      of Cincinnati College of Medicine, Cincinnati, OH, USA. Electronic address: 
       Raym5@ucmail.uc.edu.
 FAU - Trinidad, Stephen
 AU  - Trinidad S
-AD  - Comer Children's Hospital, University of Chicago, Chicago, IL.
+AD  - Comer Children's Hospital, University of Chicago, Chicago, IL, USA.
 FAU - Oluka, Denis
 AU  - Oluka D
 AD  - Mbarara Regional Referral Hospital, Mbarara, Uganda.
@@ -70,12 +513,12 @@ AD  - Mbarara Regional Referral Hospital, Mbarara, Uganda.
 FAU - Obermeyer, Maria
 AU  - Obermeyer M
 AD  - Department of Pediatric General and Thoracic Surgery, Cincinnati Children's 
-      Hospital Medical Center, Cincinnati, OH.
+      Hospital Medical Center, Cincinnati, OH, USA.
 FAU - Kotagal, Meera
 AU  - Kotagal M
 AD  - Department of Pediatric General and Thoracic Surgery, Cincinnati Children's 
-      Hospital Medical Center, Cincinnati, OH; Department of Surgery, University of 
-      Cincinnati College of Medicine, Cincinnati, OH.
+      Hospital Medical Center, Cincinnati, OH, USA; Department of Surgery, University 
+      of Cincinnati College of Medicine, Cincinnati, OH, USA.
 FAU - Oyania, Felix
 AU  - Oyania F
 AD  - Mbarara Regional Referral Hospital, Mbarara, Uganda; Mbarara University of 
@@ -89,23 +532,23 @@ JT  - Journal of pediatric surgery
 JID - 0052631
 SB  - IM
 OTO - NOTNLM
+OT  - Anorectal malformations
+OT  - Bowel management
+OT  - Capacity building
+OT  - Fecal incontinence
 OT  - Hirschsprung's disease
-OT  - anorectal malformations
-OT  - bowel management
-OT  - capacity building
-OT  - fecal incontinence
-OT  - pediatric colorectal surgery
-COIS- Declaration of interests The authors declare that they have no known competing 
+OT  - Pediatric colorectal surgery
+COIS- Conflict of interest The authors declare that they have no known competing 
       financial interests or personal relationships that could have appeared to 
       influence the work reported in this paper.
 EDAT- 2026/09/11 23:36
 MHDA- 2026/09/11 23:36
 CRDT- 2026/09/11 19:22
-PHST- 2026/09/11 23:36 [medline]
-PHST- 2026/09/11 23:36 [pubmed]
 PHST- 2026/03/20 00:00 [received]
 PHST- 2026/08/15 00:00 [revised]
 PHST- 2026/09/02 00:00 [accepted]
+PHST- 2026/09/11 23:36 [pubmed]
+PHST- 2026/09/11 23:36 [medline]
 PHST- 2026/09/11 19:22 [entrez]
 AID - S0022-3468(26)00528-2 [pii]
 AID - 10.1016/j.jpedsurg.2026.163446 [doi]
@@ -115,40 +558,41 @@ SO  - J Pediatr Surg. 2026 Sep 11:163446. doi: 10.1016/j.jpedsurg.2026.163446.
 PMID- 42678170
 OWN - NLM
 STAT- Publisher
-LR  - 20260901
+LR  - 20260916
 IS  - 2326-5205 (Electronic)
 IS  - 2326-5191 (Linking)
 DP  - 2026 Sep 1
-TI  - Persistent IL-18 fuels expansion of CD38(+)HLA-DR(+)CD8(+) T cells in Still's 
-      disease and macrophage activation syndrome.
+TI  - Persistent Interleukin-18 Fuels Expansion of CD38(+)HLA-DR(+)CD8(+) T Cells in 
+      Still Disease and Macrophage Activation Syndrome.
 LID - 10.1002/art.70319 [doi]
-AB  - OBJECTIVE: Still's disease (SD) is an autoinflammatory disorder characterized by 
-      remarkably high IL-18 levels. Increasing evidence suggests that adaptive immunity 
-      also contributes to its pathogenesis, particularly in refractory courses. 
-      Macrophage activation syndrome (MAS), one of SD's most severe complications, is 
-      associated with further IL-18 elevation and expansion of CD38(+)HLA-DR(+)CD8(+) T 
-      cells. However, whether and when this population emerges during SD remains 
-      unknown. We therefore examined CD38(+)HLA-DR(+)CD8(+) T cells across disease 
-      stages. METHODS: CD38(+)HLA-DR(+)CD8(+) T cells were analyzed longitudinally: at 
-      SD-onset (therapy-naive; n=19), during clinically inactive disease (n=15), and 
-      prior to or at MAS occurrence (n=12). Spectral flow cytometry and bulk 
-      RNA-sequencing were performed. Correlations with clinical and laboratory 
-      parameters were assessed. In vitro cytokine stimulations of healthy donor 
-      (HD)-derived PBMCs and CD8(+) lymphocytes were performed to explore mechanisms 
-      driving differentiation of these cells. RESULTS: CD38(+)HLA-DR(+)CD8(+) T cells 
-      were expanded from SD-onset and peaked in MAS (median: 4.61% and 31.7%, 
-      respectively, versus 0.87% in HD). Transcriptomic profiling of these cells 
-      revealed enrichment of activation, cytotoxicity, and proliferation programs, 
-      which were confirmed at the protein level. Frequencies correlated with markers of 
-      systemic inflammation, T-cell activation, and serum IL-18 levels. Sustained IL-18 
-      stimulation in vitro induced robust and persistent expansion of 
-      CD38(+)HLA-DR(+)CD8(+) cells, recapitulating key ex vivo phenotypic features. 
-      CONCLUSION: CD38(+)HLA-DR(+)CD8(+) cells, previously primarily associated with 
-      MAS, are detectable early in SD. Persistent IL-18 exposure promotes their 
-      expansion. These findings identify CD38(+)HLA-DR(+)CD8(+) T cells as a potential 
-      mechanistic link between SD and MAS and highlight this subset as a candidate 
-      therapeutic target.
-CI  - This article is protected by copyright. All rights reserved.
+AB  - OBJECTIVE: Still disease (SD) is an autoinflammatory disorder characterized by 
+      remarkably high interleukin-18 (IL-18) levels. Increasing evidence suggests that 
+      adaptive immunity also contributes to its pathogenesis, particularly in 
+      refractory courses. Macrophage activation syndrome (MAS), one of SD's most severe 
+      complications, is associated with further IL-18 elevation and expansion of 
+      CD38(+)HLA-DR(+)CD8(+) T cells. However, whether and when this population emerges 
+      during SD remains unknown. We therefore examined CD38(+)HLA-DR(+)CD8(+) T cells 
+      across disease stages. METHODS: CD38(+)HLA-DR(+)CD8(+) T cells were analyzed 
+      longitudinally: at SD onset (therapy-naive; n = 19), during clinically inactive 
+      disease (n = 15), and before or at MAS occurrence (n = 12). Spectral flow 
+      cytometry and bulk RNA sequencing were performed. Correlations with clinical and 
+      laboratory parameters were assessed. In vitro cytokine stimulations of healthy 
+      donor (HD)-derived peripheral blood mononuclear cells and CD8(+) lymphocytes were 
+      performed to explore mechanisms driving differentiation of these cells. RESULTS: 
+      CD38(+)HLA-DR(+)CD8(+) T cells were expanded from SD onset and peaked in MAS 
+      (median: 4.61% and 31.7%, respectively, versus 0.87% in HDs). Transcriptomic 
+      profiling of these cells revealed enrichment of activation, cytotoxicity, and 
+      proliferation programs, which were confirmed at the protein level. Frequencies 
+      correlated with markers of systemic inflammation, T cell activation, and serum 
+      IL-18 levels. Sustained IL-18 stimulation in vitro induced robust and persistent 
+      expansion of CD38(+)HLA-DR(+)CD8(+) cells, recapitulating key ex vivo phenotypic 
+      features. CONCLUSION: CD38(+)HLA-DR(+)CD8(+) cells, previously primarily 
+      associated with MAS, are detectable early in SD. Persistent IL-18 exposure 
+      promotes their expansion. These findings identify CD38(+)HLA-DR(+)CD8(+) T cells 
+      as a potential mechanistic link between SD and MAS and highlight this subset as a 
+      candidate therapeutic target.
+CI  - (c) 2026 The Author(s). Arthritis & Rheumatology published by Wiley Periodicals LLC 
+      on behalf of American College of Rheumatology.
 FAU - Rogani, Greta
 AU  - Rogani G
 AUID- ORCID: 0000-0002-3922-7224
@@ -203,18 +647,18 @@ AU  - Scholman RC
 AD  - Center for Translational Immunology, University Medical Center Utrecht, 
       University of Utrecht, Utrecht, the Netherlands.
 AD  - Multiplex Core Facility, Laboratory of Translational Immunology, University 
-      Medical center Utrecht, University of Utrecht, Utrecht, The Netherlands.
+      Medical Center Utrecht, University of Utrecht, Utrecht, the Netherlands.
 FAU - Dautzenberg, Noel M M
 AU  - Dautzenberg NMM
 AD  - Center for Translational Immunology, University Medical Center Utrecht, 
       University of Utrecht, Utrecht, the Netherlands.
-AD  - Princess Maxima Center for Pediatric Oncology, Utrecht, The Netherlands.
+AD  - Princess Maxima Center for Pediatric Oncology, Utrecht, the Netherlands.
 FAU - Meesters-Ensing, Joyce I
 AU  - Meesters-Ensing JI
-AD  - Princess Maxima Center for Pediatric Oncology, Utrecht, The Netherlands.
+AD  - Princess Maxima Center for Pediatric Oncology, Utrecht, the Netherlands.
 FAU - Rossano, Martina
 AU  - Rossano M
-AD  - Pediatric Immuno-Rheumatology Unit, Fondazione IRCSS Ca' Granda Ospedale Maggiore 
+AD  - Pediatric Immuno-Rheumatology Unit, Fondazione IRCCS Ca' Granda Ospedale Maggiore 
       Policlinico, Milan, Italy.
 FAU - Porretti, Laura
 AU  - Porretti L
@@ -224,13 +668,13 @@ FAU - Nierkens, Stefan
 AU  - Nierkens S
 AD  - Center for Translational Immunology, University Medical Center Utrecht, 
       University of Utrecht, Utrecht, the Netherlands.
-AD  - Princess Maxima Center for Pediatric Oncology, Utrecht, The Netherlands.
+AD  - Princess Maxima Center for Pediatric Oncology, Utrecht, the Netherlands.
 FAU - Minoia, Francesca S
 AU  - Minoia FS
 AUID- ORCID: 0000-0002-5093-8422
-AD  - Pediatric Immuno-Rheumatology Unit, Fondazione IRCSS Ca' Granda Ospedale Maggiore 
+AD  - Pediatric Immuno-Rheumatology Unit, Fondazione IRCCS Ca' Granda Ospedale Maggiore 
       Policlinico, Milan, Italy.
-FAU - Vastert, Sebastian J
+FAU - Vastert, Sebastiaan J
 AU  - Vastert SJ
 AD  - Department of Pediatric Rheumatology and Immunology, Wilhelmina Children's 
       Hospital, University Medical Center Utrecht, University of Utrecht, Utrecht, the 
@@ -242,6 +686,7 @@ AU  - van Loosdregt J
 AD  - Center for Translational Immunology, University Medical Center Utrecht, 
       University of Utrecht, Utrecht, the Netherlands.
 LA  - eng
+GR  - LLP10/Dutch Arthritis Association/
 PT  - Journal Article
 DEP - 20260901
 PL  - United States
@@ -255,8 +700,8 @@ CRDT- 2026/09/01 09:03
 PHST- 2026/07/20 00:00 [revised]
 PHST- 2026/04/02 00:00 [received]
 PHST- 2026/08/13 00:00 [accepted]
-PHST- 2026/09/01 11:39 [medline]
 PHST- 2026/09/01 11:39 [pubmed]
+PHST- 2026/09/01 11:39 [medline]
 PHST- 2026/09/01 09:03 [entrez]
 AID - 10.1002/art.70319 [doi]
 PST - aheadofprint
@@ -1219,7 +1664,7 @@ PMID- 42549268
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260804
-LR  - 20260813
+LR  - 20260927
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 8
@@ -1691,7 +2136,7 @@ PMID- 42396269
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260715
-LR  - 20260821
+LR  - 20260922
 DP  - 2026 Jun 22
 TI  - Repeat expansions in Parkinson's disease and parkinsonism across ancestries: 
       insights from a global genetic cohort.
@@ -3256,7 +3701,7 @@ PMID- 42238417
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260622
-LR  - 20260813
+LR  - 20260923
 DP  - 2026 May 18
 TI  - Defective B cell tolerance in SLE lymph nodes underpins VH(4-34) "clonal 
       damnation" and PD-1(+)TOX(+) autoreactive B cells expansion.
@@ -3372,6 +3817,11 @@ AD  - Department of Medicine, Division of Rheumatology, Lowance Center for Human
       Immunology, Emory University, Atlanta, GA, USA.
 AD  - Emory Autoimmunity Center of Excellence, Emory University, Atlanta, GA, USA.
 LA  - eng
+GR  - U01 AI141993/AI/NIAID NIH HHS/United States
+GR  - R01 AI172254/AI/NIAID NIH HHS/United States
+GR  - P01 AI125180/AI/NIAID NIH HHS/United States
+GR  - U19 AI056390/AI/NIAID NIH HHS/United States
+GR  - U19 AI110483/AI/NIAID NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260518
@@ -3619,7 +4069,7 @@ PMID- 42210302
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260805
-LR  - 20260825
+LR  - 20260918
 IS  - 1750-1326 (Electronic)
 IS  - 1750-1326 (Linking)
 VI  - 21
@@ -3697,9 +4147,12 @@ AD  - Raymond G. Perelman Center for Cellular and Molecular Therapeutics, Childr
 AD  - Department of Pathology & Laboratory Medicine, University of Pennsylvania, 
       Philadelphia, PA, 19104, USA. davidsonbl@chop.edu.
 LA  - eng
+SI  - BioProject/PRJNA1337572
+SI  - GEO/GSE152058
 GR  - F31 NS122297/NS/NINDS NIH HHS/United States
 GR  - T32 HG000046/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20260528
 PL  - England
 TA  - Mol Neurodegener
@@ -6992,7 +7445,7 @@ PMID- 41838909
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260711
+LR  - 20260917
 IS  - 1091-6490 (Electronic)
 IS  - 0027-8424 (Print)
 IS  - 0027-8424 (Linking)
@@ -9058,7 +9511,7 @@ PMID- 41620818
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260713
-LR  - 20260820
+LR  - 20260915
 IS  - 2328-9503 (Electronic)
 IS  - 2328-9503 (Linking)
 VI  - 13
@@ -9135,10 +9588,12 @@ AUID- ORCID: 0000-0002-9853-4902
 AD  - Department of Neurology, Vanderbilt University Medical Center, Nashville, 
       Tennessee, USA.
 LA  - eng
+GR  - R01 NS141191/NS/NINDS NIH HHS/United States
+GR  - S10 OD021771/OD/NIH HHS/United States
 GR  - P50 HD103537/HD/NICHD NIH HHS/United States
 GR  - R01 AG062574/AG/NIA NIH HHS/United States
+GR  - S10 MH133645/MH/NIMH NIH HHS/United States
 GR  - R01 AT011456/AT/NCCIH NIH HHS/United States
-GR  - R01 NS141191/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260131
 PL  - United States
@@ -9666,7 +10121,7 @@ PMID- 41427302
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251231
-LR  - 20260101
+LR  - 20260919
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Dec 11
@@ -9793,7 +10248,7 @@ PMID- 41426430
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251222
-LR  - 20251224
+LR  - 20260925
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 7
@@ -10788,7 +11243,7 @@ PMID- 41346861
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251205
-LR  - 20251219
+LR  - 20260919
 IS  - 2976-856X (Electronic)
 IS  - 2976-856X (Linking)
 VI  - 2
@@ -10878,7 +11333,7 @@ PMID- 41332649
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260303
-LR  - 20260309
+LR  - 20260919
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Nov 20
@@ -10960,7 +11415,7 @@ PMID- 41279265
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251127
-LR  - 20251128
+LR  - 20260918
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Oct 20
@@ -11031,7 +11486,7 @@ PMID- 41256123
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251126
-LR  - 20251127
+LR  - 20260918
 DP  - 2025 Oct 5
 TI  - Population-scale Long-read Sequencing in the All of Us Research Program.
 LID - 2025.10.02.25336942 [pii]
@@ -11985,7 +12440,7 @@ PMID- 41095675
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20251016
-LR  - 20251203
+LR  - 20260917
 IS  - 2075-4418 (Print)
 IS  - 2075-4418 (Electronic)
 IS  - 2075-4418 (Linking)
@@ -12283,7 +12738,7 @@ PMID- 41074680
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260317
-LR  - 20260813
+LR  - 20260921
 IS  - 2330-1619 (Electronic)
 IS  - 2330-1619 (Linking)
 VI  - 13
@@ -12447,7 +12902,7 @@ PMID- 41030958
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260324
-LR  - 20260619
+LR  - 20260916
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Aug 6
@@ -12896,7 +13351,7 @@ PMID- 40945646
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250925
-LR  - 20260813
+LR  - 20260913
 IS  - 1090-2430 (Electronic)
 IS  - 0014-4886 (Print)
 IS  - 0014-4886 (Linking)
@@ -14731,7 +15186,7 @@ PMID- 40748199
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250801
-LR  - 20260910
+LR  - 20260925
 IS  - 1097-0193 (Electronic)
 IS  - 1065-9471 (Print)
 IS  - 1065-9471 (Linking)
@@ -14802,6 +15257,7 @@ AD  - Department of Radiological Sciences, David Geffen School of Medicine, UCLA
 AD  - Department of Bioengineering, Henry Samueli School of Engineering and Applied 
       Science, UCLA, Los Angeles, California, USA.
 LA  - eng
+GR  - R01 NS099564/NS/NINDS NIH HHS/United States
 GR  - NINDS R01NS099564/NH/NIH HHS/United States
 PT  - Journal Article
 PT  - Research Support, N.I.H., Extramural
@@ -17426,7 +17882,7 @@ SO  - Int J Mol Sci. 2025 May 9;26(10):4532. doi: 10.3390/ijms26104532.
 PMID- 40426848
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250531
+LR  - 20260924
 IS  - 2227-9059 (Print)
 IS  - 2227-9059 (Electronic)
 IS  - 2227-9059 (Linking)
@@ -17759,7 +18215,7 @@ PMID- 40417743
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250803
-LR  - 20260523
+LR  - 20260912
 IS  - 1530-0366 (Electronic)
 IS  - 1098-3600 (Print)
 IS  - 1098-3600 (Linking)
@@ -17891,6 +18347,7 @@ GR  - RC2 TR004391/TR/NCATS NIH HHS/United States
 GR  - K99 HG012796/HG/NHGRI NIH HHS/United States
 GR  - U01 NS134350/NS/NINDS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20250522
 PL  - United States
 TA  - Genet Med
@@ -18885,7 +19342,7 @@ PMID- 40319093
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250504
-LR  - 20250507
+LR  - 20260924
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 15
@@ -19858,7 +20315,7 @@ PMID- 40055280
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250410
-LR  - 20260616
+LR  - 20260924
 IS  - 1179-1934 (Electronic)
 IS  - 1172-7047 (Print)
 IS  - 1172-7047 (Linking)
@@ -22294,7 +22751,7 @@ SO  - bioRxiv [Preprint]. 2025 Jun 5:2024.12.31.630891. doi: 10.1101/2024.12.31.
 PMID- 39801710
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250114
+LR  - 20260924
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 7
@@ -23017,7 +23474,7 @@ SO  - Nat Neurosci. 2025 Feb;28(2):280-292. doi: 10.1038/s41593-024-01850-w. Epu
 PMID- 39713241
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20250104
+LR  - 20260923
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 6
@@ -26053,7 +26510,7 @@ PMID- 39153206
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240817
-LR  - 20260617
+LR  - 20260922
 IS  - 1582-4934 (Electronic)
 IS  - 1582-1838 (Print)
 IS  - 1582-1838 (Linking)
@@ -28720,6 +29177,7 @@ PST - ppublish
 SO  - Biochim Biophys Acta Mol Basis Dis. 2024 Jan;1870(1):166928. doi: 
       10.1016/j.bbadis.2023.166928. Epub 2023 Oct 28.
 
+
 PMID- 38627751
 OWN - NLM
 STAT- MEDLINE
@@ -29214,7 +29672,6 @@ AID - 10.3389/fneur.2024.1374365 [doi]
 PST - epublish
 SO  - Front Neurol. 2024 Mar 26;15:1374365. doi: 10.3389/fneur.2024.1374365. 
       eCollection 2024.
-
 
 PMID- 38585669
 OWN - NLM
@@ -44435,7 +44892,7 @@ PMID- 35114102
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220411
-LR  - 20231128
+LR  - 20261001
 IS  - 1097-4199 (Electronic)
 IS  - 0896-6273 (Print)
 IS  - 0896-6273 (Linking)
@@ -44584,6 +45041,7 @@ AD  - Center for Neurobehavioral Genetics, Jane and Terry Semel Institute of
       Electronic address: xwyang@mednet.ucla.edu.
 LA  - eng
 GR  - R01 NS113612/NS/NINDS NIH HHS/United States
+GR  - P50 HD103557/HD/NICHD NIH HHS/United States
 GR  - R01 NS089750/NS/NINDS NIH HHS/United States
 GR  - R01 NS117910/NS/NINDS NIH HHS/United States
 GR  - U01 MH117079/MH/NIMH NIH HHS/United States
@@ -55394,6 +55852,7 @@ PST - epublish
 SO  - Front Neurol. 2020 Nov 27;11:573560. doi: 10.3389/fneur.2020.573560. eCollection 
       2020.
 
+
 PMID- 33310753
 OWN - NLM
 STAT- MEDLINE
@@ -55830,7 +56289,6 @@ PST - ppublish
 SO  - Neurobiol Dis. 2021 Jan;148:105199. doi: 10.1016/j.nbd.2020.105199. Epub 2020 Nov 
       26.
 
-
 PMID- 33247537
 OWN - NLM
 STAT- MEDLINE
@@ -55942,7 +56400,7 @@ PMID- 33242422
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20210225
-LR  - 20260910
+LR  - 20260928
 IS  - 1097-4199 (Electronic)
 IS  - 0896-6273 (Print)
 IS  - 0896-6273 (Linking)
@@ -84315,6 +84773,7 @@ PST - epublish
 SO  - Neuropsychiatr Dis Treat. 2017 Jun 7;13:1463-1469. doi: 10.2147/NDT.S123708. 
       eCollection 2017.
 
+
 PMID- 28642124
 OWN - NLM
 STAT- MEDLINE
@@ -86297,7 +86756,6 @@ AID - tp2017116 [pii]
 AID - 10.1038/tp.2017.116 [doi]
 PST - epublish
 SO  - Transl Psychiatry. 2017 Jun 6;7(6):e1143. doi: 10.1038/tp.2017.116.
-
 
 PMID- 28582868
 OWN - NLM
@@ -111959,6 +112417,7 @@ PST - ppublish
 SO  - Sleep Breath. 2013 Dec;17(4):1241-8. doi: 10.1007/s11325-013-0829-0. Epub 2013 
       Mar 14.
 
+
 PMID- 23480802
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -112190,7 +112649,6 @@ AID - 10.7916/D8FF3R2P [doi]
 PST - ppublish
 SO  - Tremor Other Hyperkinet Mov (N Y). 2012;2:tre-02-64-287-4. doi: 10.7916/D8FF3R2P. 
       Epub 2012 Feb 2.
-
 
 PMID- 23437422
 OWN - NLM
@@ -129966,7 +130424,7 @@ PMID- 19465745
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20091027
-LR  - 20211020
+LR  - 20260922
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -130010,6 +130468,7 @@ AU  - Myers RH
 FAU - Wheeler, Vanessa C
 AU  - Wheeler VC
 LA  - eng
+GR  - P50 NS016367/NS/NINDS NIH HHS/United States
 GR  - R01 NS049206/NS/NINDS NIH HHS/United States
 GR  - P50 NS16367-28/NS/NINDS NIH HHS/United States
 GR  - NS049206/NS/NINDS NIH HHS/United States
@@ -135534,6 +135993,7 @@ PST - ppublish
 SO  - Arch Med Res. 2008 Jan;39(1):131-3. doi: 10.1016/j.arcmed.2007.06.015. Epub 2007 
       Aug 23.
 
+
 PMID- 18067195
 OWN - NLM
 STAT- MEDLINE
@@ -135788,7 +136248,6 @@ PHST- 2007/11/16 09:00 [entrez]
 AID - 711101084 [pii]
 PST - ppublish
 SO  - Actas Esp Psiquiatr. 2007 Nov-Dec;35(6):382-6.
-
 
 PMID- 17952586
 OWN - NLM
@@ -154174,6 +154633,7 @@ AID - 10.1093/hmg/9.9.1259 [doi]
 PST - ppublish
 SO  - Hum Mol Genet. 2000 May 22;9(9):1259-71. doi: 10.1093/hmg/9.9.1259.
 
+
 PMID- 10794362
 OWN - NLM
 STAT- MEDLINE
@@ -154446,7 +154906,6 @@ AID - S0004-282X2000000100002 [pii]
 AID - 10.1590/s0004-282x2000000100002 [doi]
 PST - ppublish
 SO  - Arq Neuropsiquiatr. 2000 Mar;58(1):11-7. doi: 10.1590/s0004-282x2000000100002.
-
 
 PMID- 10766906
 OWN - NLM
