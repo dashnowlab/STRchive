@@ -169,17 +169,15 @@ const title = `Curation ${curation.Locus_ID.replaceAll("_", " ")}`;
         </strong>
         {curation.Curator}
       </div>
-      {
-        curation.Contributors && (
-          <div class="box box-2">
-            <strong>
-              <IconUsers />
-              Contributors
-            </strong>
-            {curation.Contributors}
-          </div>
-        )
-      }
+      {curation.Contributors && (
+        <div class="box box-2">
+          <strong>
+            <IconUsers />
+            Contributors
+          </strong>
+          {curation.Contributors}
+        </div>
+      )}
       <div class="box box-full">
         <strong>
           <IconFileText />
