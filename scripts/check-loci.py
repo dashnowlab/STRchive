@@ -27,6 +27,7 @@ list_fields = [
     "interruption_gene_orientation",
     "inheritance",
     "omim",
+    "omim_gene",
     "stripy",
     "gnomad",
     "genereviews",

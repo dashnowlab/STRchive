@@ -604,8 +604,21 @@
     "omim": {
       "section": "IDs",
       "title": "OMIM",
-      "description": "OMIM ID(s) for the disease",
+      "description": "OMIM phenotype ID(s) for the disease. Leave empty if OMIM has no phenotype entry; gene entries go in omim_gene",
       "examples": ["614575"],
+      "uri-template": "https://omim.org/entry/{id}",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": ["string"]
+      }
+    },
+    "omim_gene": {
+      "section": "IDs",
+      "title": "OMIM Gene",
+      "description": "OMIM gene ID(s) for the gene containing the locus. Populated from HGNC by scripts/getOMIMgene.py",
+      "examples": ["601464"],
       "uri-template": "https://omim.org/entry/{id}",
       "type": "array",
       "uniqueItems": true,
@@ -827,6 +840,7 @@
     "medgen",
     "mondo",
     "omim",
+    "omim_gene",
     "orphanet",
     "gnomad",
     "stripy",
