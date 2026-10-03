@@ -14,13 +14,24 @@ const legacyPages = [
   ["/database/index.html", "/loci"],
 ];
 
+/** common misspellings of section urls */
+const misspellings = [
+  ["/criteria", "/critria"],
+  ["/criteria/*", "/critria/:splat"],
+  ["/criTRia", "/critria"],
+  ["/criTRia/*", "/critria/:splat"],
+  ["/locus", "/loci"],
+  ["/locus/*", "/loci/:splat"],
+];
+
 /**
  * make netlify redirect rules from each locus's previous ids, plus old site pages
+ * and common misspellings
  * https://docs.netlify.com/manage/routing/redirects/overview
  */
 export const makeRedirects = (loci, curations) => {
   const curated = new Set(curations.map(({ Locus_ID }) => Locus_ID));
-  const rules = [...legacyPages];
+  const rules = [...legacyPages, ...misspellings];
 
   /** old site had one page per gene, at /database/GENE.html */
   const geneLoci = Object.groupBy(loci, ({ gene }) => gene);
