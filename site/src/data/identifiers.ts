@@ -57,6 +57,13 @@ export const getIdentifiers = (object: Record<string, unknown>) =>
           info: "https://omim.org",
         },
         {
+          key: "omim_gene",
+          name: "OMIM Gene",
+          link: "https://omim.org/entry/$ID",
+          tooltip: "OMIM entry for the gene containing the locus",
+          info: "https://omim.org",
+        },
+        {
           key: "orphanet",
           name: "Orphanet",
           link: "https://www.orpha.net/en/disease/detail/$ID",
