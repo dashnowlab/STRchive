@@ -1,0 +1,21 @@
+name: Check redirects
+
+on:
+  pull_request:
+    paths:
+      - "data/STRchive-loci.json"
+      - "data/criTRia-curations.json"
+      - "scripts/check-redirects.py"
+      - ".github/workflows/check-redirects.yaml"
+
+jobs:
+  check-redirects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Check renamed IDs have redirects
+        run: python3 scripts/check-redirects.py --base origin/${{ github.base_ref }}

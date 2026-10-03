@@ -1,6 +1,7 @@
 [
 {
   "id": "OPDM5_ABCD3",
+  "previous_ids": ["OPDM_ABCD3"],
   "disease_id": "OPDM5",
   "gene": "ABCD3",
   "evidence": ["Moderate"],
@@ -68,6 +69,7 @@
 },
 {
   "id": "FRAXE_AFF2",
+  "previous_ids": [],
   "disease_id": "FRAXE",
   "gene": "AFF2",
   "evidence": ["Definitive"],
@@ -135,6 +137,7 @@
 },
 {
   "id": "FRA2A_AFF3",
+  "previous_ids": [],
   "disease_id": "FRA2A",
   "gene": "AFF3",
   "evidence": ["Definitive"],
@@ -202,6 +205,7 @@
 },
 {
   "id": "SBMA_AR",
+  "previous_ids": [],
   "disease_id": "SBMA",
   "gene": "AR",
   "evidence": ["Definitive"],
@@ -269,6 +273,7 @@
 },
 {
   "id": "EIEE1_ARX",
+  "previous_ids": [],
   "disease_id": "EIEE1",
   "gene": "ARX",
   "evidence": ["Definitive"],
@@ -336,6 +341,7 @@
 },
 {
   "id": "PRTS_ARX",
+  "previous_ids": [],
   "disease_id": "PRTS",
   "gene": "ARX",
   "evidence": ["Definitive"],
@@ -403,6 +409,7 @@
 },
 {
   "id": "DRPLA_ATN1",
+  "previous_ids": [],
   "disease_id": "DRPLA",
   "gene": "ATN1",
   "evidence": ["Definitive"],
@@ -470,6 +477,7 @@
 },
 {
   "id": "SCA1_ATXN1",
+  "previous_ids": [],
   "disease_id": "SCA1",
   "gene": "ATXN1",
   "evidence": ["Definitive"],
@@ -537,6 +545,7 @@
 },
 {
   "id": "SCA10_ATXN10",
+  "previous_ids": [],
   "disease_id": "SCA10",
   "gene": "ATXN10",
   "evidence": ["Definitive"],
@@ -604,6 +613,7 @@
 },
 {
   "id": "SCA2_ATXN2",
+  "previous_ids": [],
   "disease_id": "SCA2",
   "gene": "ATXN2",
   "evidence": ["Definitive"],
@@ -671,6 +681,7 @@
 },
 {
   "id": "SCA3_ATXN3",
+  "previous_ids": [],
   "disease_id": "SCA3, MJD",
   "gene": "ATXN3",
   "evidence": ["Definitive"],
@@ -738,6 +749,7 @@
 },
 {
   "id": "SCA7_ATXN7",
+  "previous_ids": [],
   "disease_id": "SCA7",
   "gene": "ATXN7",
   "evidence": ["Definitive"],
@@ -815,6 +827,7 @@
 },
 {
   "id": "SCA8_ATXN8OS",
+  "previous_ids": [],
   "disease_id": "SCA8",
   "gene": "ATXN8OS",
   "evidence": ["Definitive"],
@@ -892,6 +905,7 @@
 },
 {
   "id": "FRAXG_BCLAF3",
+  "previous_ids": [],
   "disease_id": "FRAXG",
   "gene": "BCLAF3",
   "evidence": ["Provisional"],
@@ -959,6 +973,7 @@
 },
 {
   "id": "SCA31_BEAN1",
+  "previous_ids": [],
   "disease_id": "SCA31",
   "gene": "BEAN1",
   "evidence": ["Definitive"],
@@ -1026,6 +1041,7 @@
 },
 {
   "id": "FTDALS1_C9orf72",
+  "previous_ids": [],
   "disease_id": "FTDALS1",
   "gene": "C9orf72",
   "evidence": ["Definitive"],
@@ -1093,6 +1109,7 @@
 },
 {
   "id": "SCA6_CACNA1A",
+  "previous_ids": [],
   "disease_id": "SCA6",
   "gene": "CACNA1A",
   "evidence": ["Definitive"],
@@ -1160,6 +1177,7 @@
 },
 {
   "id": "JBS_CBL",
+  "previous_ids": [],
   "disease_id": "JBS",
   "gene": "CBL",
   "evidence": ["Definitive"],
@@ -1227,6 +1245,7 @@
 },
 {
   "id": "MODY8_CEL",
+  "previous_ids": [],
   "disease_id": "MODY8",
   "gene": "CEL",
   "evidence": ["Provisional"],
@@ -1299,6 +1318,7 @@
 },
 {
   "id": "DM2_CNBP",
+  "previous_ids": [],
   "disease_id": "DM2",
   "gene": "CNBP",
   "evidence": ["Definitive"],
@@ -1381,6 +1401,7 @@
 },
 {
   "id": "EDM1-PSACH_COMP",
+  "previous_ids": [],
   "disease_id": "EDM1, PSACH",
   "gene": "COMP",
   "evidence": ["Definitive"],
@@ -1448,6 +1469,7 @@
 },
 {
   "id": "EPM_CSNK1E",
+  "previous_ids": [],
   "disease_id": "EPM, DEE",
   "gene": "CSNK1E",
   "evidence": ["Limited"],
@@ -1520,6 +1542,7 @@
 },
 {
   "id": "EPM1_CSTB",
+  "previous_ids": [],
   "disease_id": "EPM1",
   "gene": "CSTB",
   "evidence": ["Definitive"],
@@ -1587,6 +1610,7 @@
 },
 {
   "id": "SCA37_DAB1",
+  "previous_ids": [],
   "disease_id": "SCA37",
   "gene": "DAB1",
   "evidence": ["Strong"],
@@ -1664,6 +1688,7 @@
 },
 {
   "id": "FRA12A_DIP2B",
+  "previous_ids": [],
   "disease_id": "FRA12A",
   "gene": "DIP2B",
   "evidence": ["Disputed"],
@@ -1731,6 +1756,7 @@
 },
 {
   "id": "DMD_DMD",
+  "previous_ids": [],
   "disease_id": "DMD",
   "gene": "DMD",
   "evidence": ["Refuted"],
@@ -1808,6 +1834,7 @@
 },
 {
   "id": "DM1_DMPK",
+  "previous_ids": [],
   "disease_id": "DM1",
   "gene": "DMPK",
   "evidence": ["Definitive"],
@@ -1875,6 +1902,7 @@
 },
 {
   "id": "RCPS_EIF4A3",
+  "previous_ids": [],
   "disease_id": "RCPS",
   "gene": "EIF4A3",
   "evidence": ["Definitive"],
@@ -1942,6 +1970,7 @@
 },
 {
   "id": "SCA_EP400",
+  "previous_ids": [],
   "disease_id": "SCA",
   "gene": "EP400",
   "evidence": ["Provisional"],
@@ -2009,6 +2038,7 @@
 },
 {
   "id": "OPDM_FAM193B",
+  "previous_ids": [],
   "disease_id": "OPDM",
   "gene": "FAM193B",
   "evidence": ["Provisional"],
@@ -2076,6 +2106,7 @@
 },
 {
   "id": "SCA27B_FGF14",
+  "previous_ids": [],
   "disease_id": "SCA27B",
   "gene": "FGF14",
   "evidence": ["Definitive"],
@@ -2143,6 +2174,7 @@
 },
 {
   "id": "FXS_FMR1",
+  "previous_ids": [],
   "disease_id": "FXS, FXTAS, POF1",
   "gene": "FMR1",
   "evidence": ["Definitive"],
@@ -2210,6 +2242,7 @@
 },
 {
   "id": "BPES_FOXL2",
+  "previous_ids": [],
   "disease_id": "BPES",
   "gene": "FOXL2",
   "evidence": ["Definitive"],
@@ -2277,6 +2310,7 @@
 },
 {
   "id": "FRDA_FXN",
+  "previous_ids": [],
   "disease_id": "FRDA",
   "gene": "FXN",
   "evidence": ["Definitive"],
@@ -2354,6 +2388,7 @@
 },
 {
   "id": "OPDM2_GIPC1",
+  "previous_ids": [],
   "disease_id": "OPDM2",
   "gene": "GIPC1",
   "evidence": ["Definitive"],
@@ -2421,6 +2456,7 @@
 },
 {
   "id": "GDPAG_GLS",
+  "previous_ids": [],
   "disease_id": "GDPAG",
   "gene": "GLS",
   "evidence": ["Definitive"],
@@ -2488,6 +2524,7 @@
 },
 {
   "id": "aFTLD-U_GOLGA8A",
+  "previous_ids": [],
   "disease_id": "aFTLD-U",
   "gene": "GOLGA8A",
   "evidence": ["Provisional"],
@@ -2560,6 +2597,7 @@
 },
 {
   "id": "HFG_HOXA13-I",
+  "previous_ids": ["HFG_HOXA13-1"],
   "disease_id": "HFG-I",
   "gene": "HOXA13",
   "evidence": ["Limited"],
@@ -2627,6 +2665,7 @@
 },
 {
   "id": "HFG_HOXA13-II",
+  "previous_ids": [],
   "disease_id": "HFG-II",
   "gene": "HOXA13",
   "evidence": ["Limited"],
@@ -2694,6 +2733,7 @@
 },
 {
   "id": "HFG_HOXA13-III",
+  "previous_ids": [],
   "disease_id": "HFG-III",
   "gene": "HOXA13",
   "evidence": ["Limited"],
@@ -2761,6 +2801,7 @@
 },
 {
   "id": "SD5_HOXD13",
+  "previous_ids": [],
   "disease_id": "SD5",
   "gene": "HOXD13",
   "evidence": ["Definitive"],
@@ -2828,6 +2869,7 @@
 },
 {
   "id": "HD_HTT",
+  "previous_ids": [],
   "disease_id": "HD",
   "gene": "HTT",
   "evidence": ["Definitive"],
@@ -2910,6 +2952,7 @@
 },
 {
   "id": "HDL2_JPH3",
+  "previous_ids": [],
   "disease_id": "HDL2",
   "gene": "JPH3",
   "evidence": ["Definitive"],
@@ -2977,6 +3020,7 @@
 },
 {
   "id": "OPDM1_LRP12",
+  "previous_ids": [],
   "disease_id": "OPDM1",
   "gene": "LRP12",
   "evidence": ["Strong"],
@@ -3044,6 +3088,7 @@
 },
 {
   "id": "FAME3_MARCHF6",
+  "previous_ids": [],
   "disease_id": "FAME3",
   "gene": "MARCHF6",
   "evidence": ["Definitive"],
@@ -3121,6 +3166,7 @@
 },
 {
   "id": "CHNG3_MIR7-2",
+  "previous_ids": ["pre-MIR7-2_CHNG3", "MIR7-2_CHNG3"],
   "disease_id": "CHNG3",
   "gene": "MIR7-2",
   "evidence": ["Strong"],
@@ -3188,6 +3234,7 @@
 },
 {
   "id": "ADTKD_MUC1",
+  "previous_ids": [],
   "disease_id": "ADTKD",
   "gene": "MUC1",
   "evidence": ["Definitive"],
@@ -3255,6 +3302,7 @@
 },
 {
   "id": "NME_NAXE",
+  "previous_ids": [],
   "disease_id": "NME",
   "gene": "NAXE",
   "evidence": ["Limited"],
@@ -3322,6 +3370,7 @@
 },
 {
   "id": "ALS1_NIPA1",
+  "previous_ids": [],
   "disease_id": "ALS1",
   "gene": "NIPA1",
   "evidence": ["Disputed"],
@@ -3389,6 +3438,7 @@
 },
 {
   "id": "SCA36_NOP56",
+  "previous_ids": [],
   "disease_id": "SCA36",
   "gene": "NOP56",
   "evidence": ["Definitive"],
@@ -3466,6 +3516,7 @@
 },
 {
   "id": "NIID_NOTCH2NLC",
+  "previous_ids": [],
   "disease_id": "NIID",
   "gene": "NOTCH2NLC",
   "evidence": ["Definitive"],
@@ -3533,6 +3584,7 @@
 },
 {
   "id": "OPML1_NUTM2B-AS1",
+  "previous_ids": [],
   "disease_id": "OPML1",
   "gene": "NUTM2B-AS1",
   "evidence": ["Moderate"],
@@ -3600,6 +3652,7 @@
 },
 {
   "id": "OPMD_PABPN1",
+  "previous_ids": ["OPMD"],
   "disease_id": "OPMD",
   "gene": "PABPN1",
   "evidence": ["Definitive"],
@@ -3667,6 +3720,7 @@
 },
 {
   "id": "CCHS_PHOX2B",
+  "previous_ids": [],
   "disease_id": "CCHS",
   "gene": "PHOX2B",
   "evidence": ["Definitive"],
@@ -3734,6 +3788,7 @@
 },
 {
   "id": "MRUPAV_PLIN4",
+  "previous_ids": ["PLIN4_MRUPAV"],
   "disease_id": "MRUPAV",
   "gene": "PLIN4",
   "evidence": ["Moderate"],
@@ -3801,6 +3856,7 @@
 },
 {
   "id": "CPEO_POLG",
+  "previous_ids": [],
   "disease_id": "CPEO",
   "gene": "POLG",
   "evidence": ["Disputed"],
@@ -3883,6 +3939,7 @@
 },
 {
   "id": "SCA12_PPP2R2B",
+  "previous_ids": [],
   "disease_id": "SCA12",
   "gene": "PPP2R2B",
   "evidence": ["Moderate"],
@@ -3950,6 +4007,7 @@
 },
 {
   "id": "HSAN-VIII_PRDM12",
+  "previous_ids": [],
   "disease_id": "HSAN VIII",
   "gene": "PRDM12",
   "evidence": ["Moderate"],
@@ -4017,6 +4075,7 @@
 },
 {
   "id": "CJD_PRNP",
+  "previous_ids": [],
   "disease_id": "CJD",
   "gene": "PRNP",
   "evidence": ["Moderate"],
@@ -4094,6 +4153,7 @@
 },
 {
   "id": "FAME8_RAI1",
+  "previous_ids": ["RAME8_RAI1"],
   "disease_id": "FAME8",
   "gene": "RAI1",
   "evidence": ["Limited"],
@@ -4171,6 +4231,7 @@
 },
 {
   "id": "FAME7_RAPGEF2",
+  "previous_ids": [],
   "disease_id": "FAME7",
   "gene": "RAPGEF2",
   "evidence": ["Limited"],
@@ -4248,6 +4309,7 @@
 },
 {
   "id": "CANVAS_RFC1",
+  "previous_ids": [],
   "disease_id": "CANVAS",
   "gene": "RFC1",
   "evidence": ["Definitive"],
@@ -4325,6 +4387,7 @@
 },
 {
   "id": "OPDM4_RILPL1",
+  "previous_ids": ["OPDM4_RILPL4"],
   "disease_id": "OPDM4",
   "gene": "RILPL1",
   "evidence": ["Moderate"],
@@ -4392,6 +4455,7 @@
 },
 {
   "id": "CCD_RUNX2",
+  "previous_ids": [],
   "disease_id": "CCD",
   "gene": "RUNX2",
   "evidence": ["Definitive"],
@@ -4469,6 +4533,7 @@
 },
 {
   "id": "FAME1_SAMD12",
+  "previous_ids": [],
   "disease_id": "FAME1",
   "gene": "SAMD12",
   "evidence": ["Definitive"],
@@ -4546,6 +4611,7 @@
 },
 {
   "id": "XLID_SOX3",
+  "previous_ids": ["XLMR_SOX3"],
   "disease_id": "XLID, PHPX",
   "gene": "SOX3",
   "evidence": ["Limited"],
@@ -4613,6 +4679,7 @@
 },
 {
   "id": "FAME2_STARD7",
+  "previous_ids": [],
   "disease_id": "FAME2",
   "gene": "STARD7",
   "evidence": ["Strong"],
@@ -4690,6 +4757,7 @@
 },
 {
   "id": "XDP_TAF1",
+  "previous_ids": [],
   "disease_id": "XDP",
   "gene": "TAF1",
   "evidence": ["Definitive"],
@@ -4757,6 +4825,7 @@
 },
 {
   "id": "OPDM_TBC1D7",
+  "previous_ids": [],
   "disease_id": "OPDM",
   "gene": "TBC1D7",
   "evidence": ["Provisional"],
@@ -4824,6 +4893,7 @@
 },
 {
   "id": "SCA17_TBP",
+  "previous_ids": [],
   "disease_id": "SCA17",
   "gene": "TBP",
   "evidence": ["Definitive"],
@@ -4891,6 +4961,7 @@
 },
 {
   "id": "TOF_TBX1",
+  "previous_ids": [],
   "disease_id": "TOF",
   "gene": "TBX1",
   "evidence": ["Limited"],
@@ -4958,6 +5029,7 @@
 },
 {
   "id": "FECD3_TCF4",
+  "previous_ids": [],
   "disease_id": "FECD3",
   "gene": "TCF4",
   "evidence": ["Definitive"],
@@ -5025,6 +5097,7 @@
 },
 {
   "id": "SCA51_THAP11",
+  "previous_ids": ["SCA_THAP11"],
   "disease_id": "SCA51",
   "gene": "THAP11",
   "evidence": ["Definitive"],
@@ -5092,6 +5165,7 @@
 },
 {
   "id": "FAME6_TNRC6A",
+  "previous_ids": [],
   "disease_id": "FAME6",
   "gene": "TNRC6A",
   "evidence": ["Limited"],
@@ -5169,6 +5243,7 @@
 },
 {
   "id": "CPUM_TYMS",
+  "previous_ids": [],
   "disease_id": "CPUM",
   "gene": "TYMS",
   "evidence": ["Limited"],
@@ -5236,6 +5311,7 @@
 },
 {
   "id": "HMNR7_VWA1",
+  "previous_ids": [],
   "disease_id": "HMNR7",
   "gene": "VWA1",
   "evidence": ["Definitive"],
@@ -5303,6 +5379,7 @@
 },
 {
   "id": "DBQD2_XYLT1",
+  "previous_ids": [],
   "disease_id": "DBQD2, BSS",
   "gene": "XYLT1",
   "evidence": ["Moderate"],
@@ -5385,6 +5462,7 @@
 },
 {
   "id": "FAME4_YEATS2",
+  "previous_ids": [],
   "disease_id": "FAME4",
   "gene": "YEATS2",
   "evidence": ["Limited"],
@@ -5462,6 +5540,7 @@
 },
 {
   "id": "SCA4_ZFHX3",
+  "previous_ids": [],
   "disease_id": "SCA4",
   "gene": "ZFHX3",
   "evidence": ["Definitive"],
@@ -5529,6 +5608,7 @@
 },
 {
   "id": "HPE5_ZIC2",
+  "previous_ids": [],
   "disease_id": "HPE5",
   "gene": "ZIC2",
   "evidence": ["Definitive"],
@@ -5596,6 +5676,7 @@
 },
 {
   "id": "VACTERLX_ZIC3",
+  "previous_ids": [],
   "disease_id": "VACTERLX",
   "gene": "ZIC3",
   "evidence": ["Limited"],
@@ -5663,6 +5744,7 @@
 },
 {
   "id": "FRA7A_ZNF713",
+  "previous_ids": ["FRA7A_ZNF13"],
   "disease_id": "FRA7A",
   "gene": "ZNF713",
   "evidence": ["Limited"],
