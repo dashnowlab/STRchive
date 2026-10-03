@@ -29,6 +29,15 @@ def load(path, ref=None):
     ).stdout
     return json.loads(text)
 
+def find_line(path, field, value):
+    """1-based line number of '"field": value' in a JSON file, or None."""
+    target = f'"{field}": {json.dumps(value, ensure_ascii=False)}'
+    with open(path) as fh:
+        for number, line in enumerate(fh, 1):
+            if target in line:
+                return number
+    return None
+
 def redirects(loci):
     """old id to new id, from previous_ids."""
     return {old: locus["id"] for locus in loci for old in locus.get("previous_ids") or []}
@@ -70,8 +79,11 @@ def main():
             seen[prev] = locus["id"]
 
     warnings = [
-        f"criTRia curation {curation_id} has no matching STRchive locus, so its page "
-        "can't link to a locus. Its Locus_ID should match a locus id."
+        (
+            f"criTRia curation {curation_id} has no matching STRchive locus, so its page "
+            "can't link to a locus. Its Locus_ID should match a locus id.",
+            find_line(CURATIONS_PATH, "Locus_ID", curation_id),
+        )
         for curation_id in sorted(curation_ids - ids)
     ]
 
@@ -85,7 +97,7 @@ def main():
     if errors:
         lines += ["", "**Problems:**", ""] + [f"- {e}" for e in errors]
     if warnings:
-        lines += ["", "**Warnings:**", ""] + [f"- {w}" for w in warnings]
+        lines += ["", "**Warnings:**", ""] + [f"- {w}" for w, _ in warnings]
     report = "\n".join(lines)
     print(report)
 
@@ -96,8 +108,10 @@ def main():
             fh.write(report + "\n")
     for e in errors:
         print(f"::error file={LOCI_PATH}::{e}")
-    for w in warnings:
-        print(f"::warning file={CURATIONS_PATH}::{w}")
+    # With a line number, GitHub also shows the warning inline in the PR diff
+    for w, line in warnings:
+        location = f"file={CURATIONS_PATH}" + (f",line={line}" if line else "")
+        print(f"::warning {location}::{w}")
     if errors:
         sys.exit(1)
 
