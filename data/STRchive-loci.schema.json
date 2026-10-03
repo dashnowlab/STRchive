@@ -25,6 +25,19 @@
       "type": ["string"],
       "pattern": "^[\\S]+_[\\S]+$"
     },
+    "previous_ids": {
+      "section": "Overview",
+      "title": "Previous IDs",
+      "description": "Former IDs for this locus or its criTRia curation. When an ID changes, add the old ID here so links to the old locus and criTRia pages redirect to the new ones.",
+      "examples": ["SCA_THAP11"],
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": ["string"],
+        "pattern": "^[\\S]+$"
+      }
+    },
     "disease_id": {
       "section": "Overview",
       "title": "Disease ID",
@@ -776,6 +789,7 @@
   },
   "required": [
     "id",
+    "previous_ids",
     "disease_id",
     "gene",
     "evidence",

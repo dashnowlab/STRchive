@@ -16,6 +16,7 @@ import urllib
 
 # This should be overwritten if schema json file provided
 list_fields = [
+    "previous_ids",
     "reference_motif_reference_orientation",
     "pathogenic_motif_reference_orientation",
     "pathogenic_motif_gene_orientation",
