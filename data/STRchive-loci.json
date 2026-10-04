@@ -3369,8 +3369,8 @@
   "additional_literature": ["pmid:41091881"]
 },
 {
-  "id": "ALS1_NIPA1",
-  "disease_id": "ALS1",
+  "id": "ALS_NIPA1",
+  "disease_id": "ALS",
   "gene": "NIPA1",
   "evidence": ["Disputed"],
   "chrom": "chr15",
@@ -3392,7 +3392,7 @@
   "age_onset_max": 77.0,
   "typ_age_onset_min": 44.0,
   "typ_age_onset_max": 60.0,
-  "details": "Allelic ranges taken from STRipy based on primary literature [@stripy:NIPA1]. Currently proposed as a modifier for ALS [@pmid:31286297]. Note: the motif for this locus is CGG in hg38 and T2T reference genomes, while in hg19, the motif is the reverse complement CCG because it is on the negative strand. GCA, GCT, and GCC interruptions have been reported [@pmid:40585427]. However, this association is disputed: a Project MinE case-control analysis found expanded alleles at similar frequencies in ALS cases and controls (4.6% each), with no significant ALS susceptibility association and only a nominal survival effect [@pmid:31286297]. See the criTRia curation for full evidence details [@url:https://strchive.org/critria/ALS1_NIPA1].",
+  "details": "Allelic ranges taken from STRipy based on primary literature [@stripy:NIPA1]. Currently proposed as a modifier for ALS [@pmid:31286297]. Note: the motif for this locus is CGG in hg38 and T2T reference genomes, while in hg19, the motif is the reverse complement CCG because it is on the negative strand. GCA, GCT, and GCC interruptions have been reported [@pmid:40585427]. However, this association is disputed: a Project MinE case-control analysis found expanded alleles at similar frequencies in ALS cases and controls (4.6% each), with no significant ALS susceptibility association and only a nominal survival effect [@pmid:31286297]. See the criTRia curation for full evidence details.",
   "detection": null,
   "mechanism": null,
   "mechanism_detail": null,
@@ -3433,7 +3433,7 @@
   "webstr_hg19": [],
   "locus_tags": ["proposed_modifier"],
   "disease_tags": [],
-  "references": ["pmid:26777436", "pmid:22378146", "stripy:NIPA1", "pmid:31286297", "pmid:40585427", "url:https://strchive.org/critria/ALS1_NIPA1", "pmid:30342764", "pmid:34179866", "omim:105400"],
+  "references": ["pmid:26777436", "pmid:22378146", "stripy:NIPA1", "pmid:31286297", "pmid:40585427", "pmid:30342764", "pmid:34179866", "omim:105400"],
   "additional_literature": ["pmid:41426430", "pmid:38667292", "pmid:37043475", "pmid:35869263", "pmid:33414559", "pmid:32954321", "pmid:24866401", "pmid:21419568", "pmid:11839840", "pmid:10987648", "pmid:9736780"]
 },
 {
