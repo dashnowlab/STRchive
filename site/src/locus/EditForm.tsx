@@ -13,7 +13,7 @@ import { useQuery } from "@/util/hooks";
 import { shortenUrl } from "@/util/string";
 import { useLocalStorage } from "@reactuses/core";
 import { IconEdit, IconSend, IconX } from "@tabler/icons-react";
-import { cloneDeep, isEqual, omitBy, startCase } from "lodash-es";
+import { cloneDeep, isEqual, omitBy, startCase, uniq } from "lodash-es";
 import loci from "~/STRchive-loci.json";
 import _schema from "~/STRchive-loci.schema.json";
 
@@ -145,11 +145,19 @@ export default function EditForm({ heading, locus }: Props) {
     /** make complete new clone of loci */
     const newLoci = cloneDeep(loci);
 
-    /** look for existing locus */
-    const index = newLoci.findIndex((locus) => locus.id === data?.id);
+    /** look for existing locus, by its original id in case id was changed */
+    const originalId = locus?.id ?? data?.id;
+    const index = newLoci.findIndex((locus) => locus.id === originalId);
 
     /** is new locus vs existing locus */
     const existing = index !== -1;
+
+    /** if id was changed, keep old id so old links redirect */
+    if (existing && originalId && newLocus.id !== originalId)
+      newLocus.previous_ids = uniq([
+        ...(newLocus.previous_ids ?? []),
+        originalId,
+      ]);
 
     /** merge new locus data with existing data */
     if (existing) newLoci[index] = newLocus;
