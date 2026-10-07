@@ -51,7 +51,13 @@
       "Curator": {
         "section": "Curation",
         "title": "Curator",
-        "description": "Name(s) of the person/people who performed the curation separated by commas if multiple",
+        "description": "Name of the primary curator (person or ClinGen GCEP) who performed the curation",
+        "type": ["string", "null"]
+      },
+      "Contributors": {
+        "section": "Curation",
+        "title": "Contributors",
+        "description": "Name(s) of additional people who contributed to or reviewed the curation, separated by commas if multiple. If a curation was completely re-written by a new curator, the original curator should be listed here and the date updated.",
         "type": ["string", "null"]
       },
       "Date": {
