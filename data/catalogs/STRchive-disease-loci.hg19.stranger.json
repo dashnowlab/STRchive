@@ -95,14 +95,14 @@
   "Gene": "AFF3"
 },
 {
-  "LocusId": "SD5_HOXD13",
+  "LocusId": "SPD1_HOXD13",
   "ReferenceRegion": "chr2:176957786-176957831",
   "LocusStructure": "(GCN)*",
   "VariantType": "Repeat",
   "HGNCId": null,
   "InheritanceMode": ["AD"],
   "DisplayRU": "GCN",
-  "Disease": "SD5",
+  "Disease": "SPD1",
   "NormalMax": 15,
   "PathologicMin": 22,
   "Gene": "HOXD13"
@@ -447,7 +447,7 @@
   "HGNCId": null,
   "InheritanceMode": ["AR"],
   "DisplayRU": "CCG",
-  "Disease": "HSAN VIII",
+  "Disease": "HSAN-VIII",
   "NormalMax": 14,
   "PathologicMin": 18,
   "Gene": "PRDM12"
@@ -611,14 +611,14 @@
   "Gene": "ATXN3"
 },
 {
-  "LocusId": "ALS1_NIPA1",
+  "LocusId": "ALS_NIPA1",
   "ReferenceRegion": "chr15:23086363-23086389",
   "LocusStructure": "(CGG)*",
   "VariantType": "Repeat",
   "HGNCId": null,
   "InheritanceMode": ["AD"],
   "DisplayRU": "CGG",
-  "Disease": "ALS1",
+  "Disease": "ALS",
   "NormalMax": 10,
   "PathologicMin": 11,
   "Gene": "NIPA1"

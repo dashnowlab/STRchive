@@ -166,7 +166,7 @@
     "hpo_terms": {
       "section": "Disease",
       "title": "HPO Terms",
-      "description": "Human Phenotype Ontology (HPO) terms associated with the disease",
+      "description": "Human Phenotype Ontology (HPO) terms associated with the disease. Populated automatically by scripts/getHPO.py from the HPO annotations (phenotype.hpoa) for the locus's OMIM and Orphanet IDs: all OMIM annotations, plus Orphanet annotations seen in at least 5% of patients (frequency occasional or higher). Excludes terms annotated as absent (NOT).",
       "examples": ["HP:0002066 Gait ataxia", "HP:0001250 Seizure"],
       "type": ["array", "null"],
       "items": {
@@ -604,8 +604,21 @@
     "omim": {
       "section": "IDs",
       "title": "OMIM",
-      "description": "OMIM ID(s) for the disease",
+      "description": "OMIM phenotype ID(s) for the disease. Leave empty if OMIM has no phenotype entry; gene entries go in omim_gene",
       "examples": ["614575"],
+      "uri-template": "https://omim.org/entry/{id}",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "title": "",
+        "type": ["string"]
+      }
+    },
+    "omim_gene": {
+      "section": "IDs",
+      "title": "OMIM Gene",
+      "description": "OMIM gene ID(s) for the gene containing the locus. Populated from HGNC by scripts/getOMIMgene.py",
+      "examples": ["601464"],
       "uri-template": "https://omim.org/entry/{id}",
       "type": "array",
       "uniqueItems": true,
@@ -827,6 +840,7 @@
     "medgen",
     "mondo",
     "omim",
+    "omim_gene",
     "orphanet",
     "gnomad",
     "stripy",
