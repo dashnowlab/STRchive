@@ -191,7 +191,7 @@ export default function Table<Datum extends RowData>({
   ];
 
   return (
-    <div className="flex max-w-max flex-col gap-4 self-center">
+    <div className="flex w-full max-w-max flex-col gap-4 self-center">
       {/* controls */}
       {(pageControls || actionControls) && (
         <div
