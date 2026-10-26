@@ -13,7 +13,7 @@ type Locus = { id: string } & Record<string, unknown>;
 const git = simpleGit();
 
 /** commit hashes on main that touched loci file, oldest first */
-const hashes = (await git.log(["main", "--", lociFile])).all
+const hashes = (await git.log(["origin/main", "--", lociFile])).all
   .map(({ hash }) => hash)
   .reverse();
 
