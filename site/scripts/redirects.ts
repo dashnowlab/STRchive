@@ -12,6 +12,13 @@ type Locus = { id: string } & Record<string, unknown>;
 /** git client */
 const git = simpleGit();
 
+/** get pairs of entries */
+const pairs = <Entry>(array: Entry[]): [Entry, Entry][] =>
+  array.slice(1).map((after, index) => [array[index], after]);
+
+/** get latest main with full history */
+await git.fetch(["--no-tags", "--depth=2147483647", "origin", "main"]);
+
 /** commit hashes on main that touched loci file, oldest first */
 const hashes = (await git.log(["origin/main", "--", lociFile])).all
   .map(({ hash }) => hash)
@@ -19,12 +26,8 @@ const hashes = (await git.log(["origin/main", "--", lociFile])).all
 
 /** get loci list as of particular commit */
 const getLoci = async (hash: string) => {
-  try {
-    const contents = await git.show(`${hash}:${lociFile}`).catch(() => "null");
-    return JSON.parse(contents) as Locus[];
-  } catch {
-    return undefined;
-  }
+  const contents = await git.show(`${hash}:${lociFile}`);
+  return JSON.parse(contents) as Locus[];
 };
 
 /** fraction of values that are equal between two loci */
@@ -36,39 +39,35 @@ const compare = (a: Locus, b: Locus) => {
 /** track loci renames */
 const renames: Record<string, string> = {};
 
-/** loci lists as of each commit, oldest first */
+/** loci lists as of each commit on main, oldest first */
 const snapshots = await Promise.all(hashes.map(getLoci));
 
-/** add current working tree (PR changes) as final snapshot */
-snapshots.push(JSON.parse(readFileSync(lociFile, "utf8")) as Locus[]);
-/** approximates what final state will be after squash merging into main */
+/** add branch changes as final snapshot */
+snapshots.push(
+  /** loci as they will look after merging this branch into main */
+  await getLoci((await git.raw("merge-base", "origin/main", "HEAD")).trim()),
+  /** loci as they look right now on current branch */
+  JSON.parse(readFileSync(lociFile, "utf8")) as Locus[],
+);
 
-/** track loci list as of previous snapshot */
-let before: Locus[] | undefined;
+for (const [before, after] of pairs(snapshots)) {
+  /** loci whose ids disappeared/appeared */
+  const beforeIds = new Set(before.map(({ id }) => id));
+  const afterIds = new Set(after.map(({ id }) => id));
+  const removedLoci = before.filter(({ id }) => !afterIds.has(id));
+  const addedLoci = after.filter(({ id }) => !beforeIds.has(id));
 
-for (const after of snapshots) {
-  if (before && after) {
-    /** loci whose ids disappeared/appeared */
-    const beforeIds = new Set(before.map(({ id }) => id));
-    const afterIds = new Set(after.map(({ id }) => id));
-    const removedLoci = before.filter(({ id }) => !afterIds.has(id));
-    const addedLoci = after.filter(({ id }) => !beforeIds.has(id));
+  for (const removedLocus of removedLoci) {
+    /** find most closely matching locus between removed and added */
+    const { similarity, locus: addedLocus } =
+      addedLoci
+        .map((locus) => ({ similarity: compare(removedLocus, locus), locus }))
+        .sort((a, b) => b.similarity - a.similarity)[0] ?? {};
 
-    for (const removedLocus of removedLoci) {
-      /** find most closely matching locus between removed and added */
-      const { similarity, locus: addedLocus } =
-        addedLoci
-          .map((locus) => ({ similarity: compare(removedLocus, locus), locus }))
-          .sort((a, b) => b.similarity - a.similarity)[0] ?? {};
-
-      /** consider before/after entries to represent same locus if similarity high enough */
-      if (addedLocus && similarity > 0.9)
-        renames[removedLocus.id] = addedLocus.id;
-    }
+    /** consider before/after entries to represent same locus if similarity high enough */
+    if (addedLocus && similarity > 0.9)
+      renames[removedLocus.id] = addedLocus.id;
   }
-
-  /** track previous snapshot */
-  before = after;
 }
 
 /** pairs of redirects */

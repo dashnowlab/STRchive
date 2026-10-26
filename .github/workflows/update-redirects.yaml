@@ -10,13 +10,14 @@ defaults:
 jobs:
   update-redirects:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
-
-      - name: Fetch main history
-        working-directory: .
-        run: git fetch --no-tags origin main
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
