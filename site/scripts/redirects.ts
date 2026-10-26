@@ -30,8 +30,10 @@ hashes.push((await git.raw("merge-base", "origin/main", "HEAD")).trim());
 hashes.push((await git.revparse(["HEAD"])).trim());
 
 console.info(`${hashes.length} commit hashes`);
-console.info("  ...");
-hashes.slice(-4).forEach((hash) => console.info(`  ${hash}`));
+console.info("  First few:");
+hashes.slice(0, 3).forEach((hash) => console.info(`    ${hash}`));
+console.info("  Last few:");
+hashes.slice(-5).forEach((hash) => console.info(`    ${hash}`));
 
 /** get loci list as of particular commit */
 const getLoci = async (hash: string) => {
