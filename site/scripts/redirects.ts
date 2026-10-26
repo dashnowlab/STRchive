@@ -36,13 +36,17 @@ const compare = (a: Locus, b: Locus) => {
 /** track loci renames */
 const renames: Record<string, string> = {};
 
-/** track loci list as of previous commit */
+/** loci lists as of each commit, oldest first */
+const snapshots = await Promise.all(hashes.map(getLoci));
+
+/** add current working tree (PR changes) as final snapshot */
+snapshots.push(JSON.parse(readFileSync(lociFile, "utf8")) as Locus[]);
+/** approximates what final state will be after squash merging into main */
+
+/** track loci list as of previous snapshot */
 let before: Locus[] | undefined;
 
-for (const hash of hashes) {
-  /** get loci list as of current commit */
-  const after = await getLoci(hash);
-
+for (const after of snapshots) {
   if (before && after) {
     /** loci whose ids disappeared/appeared */
     const beforeIds = new Set(before.map(({ id }) => id));
@@ -63,7 +67,7 @@ for (const hash of hashes) {
     }
   }
 
-  /** track previous commit */
+  /** track previous snapshot */
   before = after;
 }
 
