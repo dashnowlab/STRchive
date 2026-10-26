@@ -1,9 +1,12 @@
-import { execSync } from "child_process";
 import { readFileSync } from "fs";
 import { maxBy } from "lodash-es";
+import { simpleGit } from "simple-git";
+
+/** git client */
+const git = simpleGit();
 
 /** get git blame info of json file entry. makes assumptions about structure and formatting. */
-export const getJsonBlame = (file: string, regex: string) => {
+export const getJsonBlame = async (file: string, regex: string) => {
   /** split file into lines */
   const lines = readFileSync(file, "utf-8").split("\n");
 
@@ -13,7 +16,7 @@ export const getJsonBlame = (file: string, regex: string) => {
   /** find line number of id */
   const line = lines.findIndex((line) => line.match(new RegExp(regex)));
 
-  if (!line) return {};
+  if (line === -1) return {};
 
   /** find start/end lines of entry */
   let start = line;
@@ -22,8 +25,7 @@ export const getJsonBlame = (file: string, regex: string) => {
   while (!lines[end].startsWith("}")) end++;
 
   /** get git blame between start/end lines */
-  const blame = execSync(`git blame -L ${start},${end} ${file}`)
-    .toString()
+  const blame = (await git.raw(["blame", "-L", `${start},${end}`, file]))
     .split("\n")
     .map((line) => {
       const [, hash, author, date] =
@@ -41,7 +43,7 @@ export const getJsonBlame = (file: string, regex: string) => {
   });
 
   /** get project version */
-  const version = getVersion(getFile("../CITATION.cff", hash));
+  const version = getVersion(await getFile("../CITATION.cff", hash));
 
   return { start, end, line, hash, author, date: formattedDate, version };
 };
@@ -51,10 +53,10 @@ const getVersion = (contents?: string) =>
   contents?.match(/^version:\s*(.+)$/im)?.[1] ?? "";
 
 /** get contents of file w/ optional hash version */
-const getFile = (file: string, hash?: string) => {
+const getFile = async (file: string, hash?: string) => {
   try {
     if (!hash) throw Error("no hash");
-    const contents = execSync(`git show ${hash}:${file}`).toString();
+    const contents = await git.show([`${hash}:${file}`]);
     if (!contents.trim()) throw Error("empty");
     return contents;
   } catch {

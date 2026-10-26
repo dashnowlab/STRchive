@@ -62,7 +62,7 @@ const hasRawSearch = Object.keys(
 ).some((file) => file.includes(locus.gene));
 
 /** get blame info of locus */
-const blame = getJsonBlame(
+const blame = await getJsonBlame(
   "../data/STRchive-loci.json",
   `"id":\\s*"${id}"\\s*,`,
 );
