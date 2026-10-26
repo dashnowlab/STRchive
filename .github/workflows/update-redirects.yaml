@@ -13,8 +13,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
+
+      - name: Fetch main history
+        working-directory: .
+        run: git fetch --no-tags origin main
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
