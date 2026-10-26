@@ -24,31 +24,32 @@ const hashes = (await git.log(["origin/main", "--", lociFile])).all
   .map(({ hash }) => hash)
   .reverse();
 
+/** add merge base hash (loci as they will look after merging this branch into main) */
+hashes.push((await git.raw("merge-base", "origin/main", "HEAD")).trim());
+/** add final, current hash (loci as they look right now on current branch) */
+hashes.push((await git.revparse(["HEAD"])).trim());
+
+console.info(`${hashes.length} commit hashes`);
+console.info("  ...");
+hashes.slice(-4).forEach((hash) => console.info(`  ${hash}`));
+
 /** get loci list as of particular commit */
 const getLoci = async (hash: string) => {
   const contents = await git.show(`${hash}:${lociFile}`);
   return JSON.parse(contents) as Locus[];
 };
 
+/** loci lists as of each commit, oldest first */
+const snapshots = await Promise.all(hashes.map(getLoci));
+
+/** track loci renames */
+const renames: Record<string, string> = {};
+
 /** fraction of values that are equal between two loci */
 const compare = (a: Locus, b: Locus) => {
   const keys = uniq(Object.keys(a).concat(Object.keys(b)));
   return keys.filter((key) => isEqual(a[key], b[key])).length / keys.length;
 };
-
-/** track loci renames */
-const renames: Record<string, string> = {};
-
-/** loci lists as of each commit on main, oldest first */
-const snapshots = await Promise.all(hashes.map(getLoci));
-
-/** add branch changes as final snapshot */
-snapshots.push(
-  /** loci as they will look after merging this branch into main */
-  await getLoci((await git.raw("merge-base", "origin/main", "HEAD")).trim()),
-  /** loci as they look right now on current branch */
-  JSON.parse(readFileSync(lociFile, "utf8")) as Locus[],
-);
 
 for (const [before, after] of pairs(snapshots)) {
   /** loci whose ids disappeared/appeared */
@@ -85,6 +86,11 @@ for (let [from, to] of Object.entries(renames)) {
   }
   redirects.push([from, to]);
 }
+
+console.info(`${Object.keys(renames).length} renames`);
+Object.entries(renames).forEach(([from, to]) =>
+  console.info(`  ${from} -> ${to}`),
+);
 
 /** existing redirects in config */
 const existing = parse(readFileSync(redirectsFile, "utf8"));
