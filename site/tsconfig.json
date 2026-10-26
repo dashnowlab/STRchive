@@ -11,5 +11,5 @@
     "jsxImportSource": "react",
     "types": ["node", "vite/client", "vite-plugin-svgr/client"]
   },
-  "include": [".astro/types.d.ts", "src/**/*"]
+  "include": [".astro/types.d.ts", "src/**/*", "scripts"]
 }
