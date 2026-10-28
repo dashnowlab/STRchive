@@ -1,125 +1,171 @@
-import { appendFileSync, readFileSync } from "fs";
-import { isEqual, uniq } from "lodash-es";
+import { writeFileSync } from "fs";
+import { groupBy, isEqual, max, orderBy, uniq } from "lodash-es";
 import { simpleGit } from "simple-git";
-import { parse, stringify } from "smol-toml";
+import loci from "~/STRchive-loci.json";
+
+/** pairs of redirects */
+const redirects: Record<string, string> = {};
+
+/** add redirect */
+const add = (from: string, to: string) => (redirects[from] = to);
+
+/** legacy pages */
+add("/index.html", "/");
+add("/about.html", "/about");
+add("/contribute.html", "/about");
+add("/resources.html", "/resources");
+add("/plots.html", "/loci#plots");
+add("/table.html", "/loci");
+add("/database/index.html", "/loci");
+
+/** legacy gene pages */
+for (const [gene, ids] of Object.entries(groupBy(loci, ({ gene }) => gene))) {
+  const from = `/database/${gene}.html`;
+  const to = ids.length === 1 ? `/loci/${ids[0].id}` : "/loci";
+  add(from, to);
+}
+
+/** common misspellings */
+add("/criteria", "/critria");
+add("/criteria/*", "/critria/:splat");
+add("/criTRia", "/critria");
+add("/criTRia/*", "/critria/:splat");
+add("/locus", "/loci");
+add("/locus/*", "/loci/:splat");
 
 /** file paths, relative to /site */
 const lociFile = "../data/STRchive-loci.json";
-const redirectsFile = "../netlify.toml";
+const curationsFile = "../data/criTRia-curations.json";
+const redirectsFile = "./public/_redirects";
 
 type Locus = { id: string } & Record<string, unknown>;
+type Curation = { Locus_ID: string } & Record<string, unknown>;
 
 /** git client */
 const git = simpleGit();
+
+/** get latest main with full history */
+await git.fetch(["--no-tags", "--depth=2147483647", "origin", "main"]);
 
 /** get pairs of entries */
 const pairs = <Entry>(array: Entry[]): [Entry, Entry][] =>
   array.slice(1).map((after, index) => [array[index], after]);
 
-/** get latest main with full history */
-await git.fetch(["--no-tags", "--depth=2147483647", "origin", "main"]);
-
-/** commit hashes on main that touched loci file, oldest first */
-const hashes = (await git.log(["origin/main", "--", lociFile])).all
-  .map(({ hash }) => hash)
-  .reverse();
-
-/** add merge base hash (loci as they will look after merging this branch into main) */
-hashes.push((await git.raw("merge-base", "origin/main", "HEAD")).trim());
-/** add final, current hash (loci as they look right now on current branch) */
-hashes.push((await git.revparse(["HEAD"])).trim());
-
-console.info(`${hashes.length} commit hashes`);
-console.info("  First few:");
-hashes.slice(0, 3).forEach((hash) => console.info(`    ${hash}`));
-console.info("  Last few:");
-hashes.slice(-5).forEach((hash) => console.info(`    ${hash}`));
-
-/** get loci list as of particular commit */
-const getLoci = async (hash: string) => {
-  const contents = await git.show(`${hash}:${lociFile}`);
-  return JSON.parse(contents) as Locus[];
-};
-
-/** loci lists as of each commit, oldest first */
-const snapshots = await Promise.all(hashes.map(getLoci));
-
-/** track loci renames */
-const renames: Record<string, string> = {};
-
-/** fraction of values that are equal between two loci */
-const compare = (a: Locus, b: Locus) => {
+/** fraction of values that are equal between two entries */
+const compare = <Entry extends Record<string, unknown>>(a: Entry, b: Entry) => {
   const keys = uniq(Object.keys(a).concat(Object.keys(b)));
   return keys.filter((key) => isEqual(a[key], b[key])).length / keys.length;
 };
 
-for (const [before, after] of pairs(snapshots)) {
-  /** loci whose ids disappeared/appeared */
-  const beforeIds = new Set(before.map(({ id }) => id));
-  const afterIds = new Set(after.map(({ id }) => id));
-  const removedLoci = before.filter(({ id }) => !afterIds.has(id));
-  const addedLoci = after.filter(({ id }) => !beforeIds.has(id));
+/** get full list of commit hashes that touched file */
+const getHashes = async (file: string) => {
+  /** commit hashes on main that touched loci file, oldest first */
+  const hashes = (await git.log(["origin/main", "--", file])).all
+    .map(({ hash }) => `${hash}:${file}`)
+    .reverse();
+  /** add merge base hash (file as it will look after merging this branch into main) */
+  hashes.push(
+    `${(await git.raw("merge-base", "origin/main", "HEAD")).trim()}:${file}`,
+  );
+  /** add final, current hash (file as it looks right now on current branch) */
+  hashes.push(`${(await git.revparse(["HEAD"])).trim()}:${file}`);
+  return hashes;
+};
 
-  for (const removedLocus of removedLoci) {
-    /** find most closely matching locus between removed and added */
-    const { similarity, locus: addedLocus } =
-      addedLoci
-        .map((locus) => ({ similarity: compare(removedLocus, locus), locus }))
-        .sort((a, b) => b.similarity - a.similarity)[0] ?? {};
+/** get file contents as of each commit, oldest first (skips commits with invalid json) */
+const getSnapshots = async <Type>(hashes: string[]) =>
+  (
+    await Promise.all(
+      hashes.map(async (hash) => {
+        try {
+          const contents = await git.show(hash);
+          return JSON.parse(contents) as Type[];
+        } catch (error) {
+          console.warn(`Skipping invalid JSON for ${hash}`, error);
+          return undefined;
+        }
+      }),
+    )
+  ).filter((snapshot) => !!snapshot);
 
-    /** consider before/after entries to represent same locus if similarity high enough */
-    if (addedLocus && similarity > 0.9)
-      renames[removedLocus.id] = addedLocus.id;
+/** get renames of primary id field on list of entries */
+const getRenames = <
+  Key extends string,
+  Entry extends Record<string, unknown> & { [key in Key]: string },
+>(
+  snapshots: Entry[][],
+  key: Key,
+) => {
+  const renames: Record<string, string> = {};
+  for (const [before, after] of pairs(snapshots)) {
+    /** file entries whose ids disappeared/appeared */
+    const beforeIds = new Set(before.map((entry) => entry[key]));
+    const afterIds = new Set(after.map((entry) => entry[key]));
+    const removedEntries = before.filter((entry) => !afterIds.has(entry[key]));
+    const addedEntries = after.filter((entry) => !beforeIds.has(entry[key]));
+
+    for (const removedEntry of removedEntries) {
+      /** find most closely matching entry between removed and added */
+      const { similarity, entry: addedEntry } =
+        addedEntries
+          .map((entry) => ({ similarity: compare(removedEntry, entry), entry }))
+          .sort((a, b) => b.similarity - a.similarity)[0] ?? {};
+
+      /** consider before/after entries to represent same locus if similarity high enough */
+      if (addedEntry && similarity > 0.5)
+        renames[removedEntry[key]] = addedEntry[key];
+    }
   }
+  return orderBy(Object.entries(renames), ([from]) => from);
+};
+
+/** loci id renames */
+const lociRenames = getRenames(
+  await getSnapshots<Locus>(await getHashes(lociFile)),
+  "id",
+);
+/** add loci redirects */
+for (const [from, to] of lociRenames) {
+  add(`/loci/${from}`, `/loci/${to}`);
+  // add(`/loci/${from}/*`, `/loci/${to}/:splat`);
 }
 
-/** pairs of redirects */
-const redirects: [string, string][] = [];
+/** curation id renames */
+const curationRenames = getRenames(
+  await getSnapshots<Curation>(await getHashes(curationsFile)),
+  "Locus_ID",
+);
+/** add curation redirects */
+for (const [from, to] of curationRenames) {
+  add(`/critria/${from}`, `/critria/${to}`);
+  // add(`/critria/${from}/*`, `/critria/${to}/:splat`);
+}
 
 /** for each start of id rename chain */
-for (let [from, to] of Object.entries(renames)) {
+for (let [from, to] of Object.entries(redirects)) {
   /** follow redirects to end of chain (latest id) */
   const maxTries = 20;
   /** limit tries to catch possible infinite loops */
-  for (let tries = 0; renames[to]; tries++) {
+  for (let tries = 0; redirects[to]; tries++) {
     if (tries >= maxTries)
       throw Error("Possible infinite loop in rename chain");
-    to = renames[to];
+    to = redirects[to];
   }
-  redirects.push([from, to]);
+  redirects[from] = to;
 }
 
-console.info(`${Object.keys(renames).length} renames`);
-Object.entries(renames).forEach(([from, to]) =>
-  console.info(`  ${from} -> ${to}`),
+/** get longest strings widths */
+const longestFrom = max(Object.keys(redirects).map((from) => from.length)) || 0;
+const longestTo = max(Object.values(redirects).map((to) => to.length)) || 0;
+
+/** redirects text to write */
+const lines = Object.entries(redirects).map(([from, to]) =>
+  [from.padEnd(longestFrom), to.padEnd(longestTo), "301"].join("\t"),
 );
+/** add warning */
+lines.unshift("# AUTOGENERATED, DO NOT EDIT");
+/** add EOF newline */
+lines.push("");
 
-/** existing redirects in config */
-const existing = parse(readFileSync(redirectsFile, "utf8"));
-type Redirect = { from?: string; to?: string };
-const existingRedirects = (existing.redirects ?? []) as Redirect[];
-
-/** new redirect entries */
-const newRedirects = redirects
-  /** netlify redirect pattern */
-  .map(([from, to]) => ({
-    from: `/loci/${from}`,
-    to: `/loci/${to}`,
-    status: 301,
-  }))
-  /** skip any that already exist */
-  .filter(
-    (redirect) =>
-      !existingRedirects.some(
-        ({ from, to }) => from === redirect.from && to === redirect.to,
-      ),
-  );
-
-/** format */
-const newRedirectsText = stringify({ redirects: newRedirects })
-  .split("\n")
-  .map((line) => (line && !line.startsWith("[") ? "  " + line : line))
-  .join("\n");
-
-/** append to bottom, leave rest of file untouched */
-if (newRedirects.length) appendFileSync(redirectsFile, "\n" + newRedirectsText);
+/** save redirects */
+writeFileSync(redirectsFile, lines.join("\n"));

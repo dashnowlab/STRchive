@@ -2,38 +2,3 @@
   base = "/"
   command = "cd site && bun install && bun run build"
   publish = "site/dist"
-
-[[redirects]]
-  from = "/loci/OPDM_ABCD3"
-  to = "/loci/OPDM5_ABCD3"
-  status = 301
-
-[[redirects]]
-  from = "/loci/PLIN4_MRUPAV"
-  to = "/loci/MRUPAV_PLIN4"
-  status = 301
-
-[[redirects]]
-  from = "/loci/pre-MIR7-2_CHNG3"
-  to = "/loci/CHNG3_MIR7-2"
-  status = 301
-
-[[redirects]]
-  from = "/loci/XLMR_SOX3"
-  to = "/loci/XLID_SOX3"
-  status = 301
-
-[[redirects]]
-  from = "/loci/MIR7-2_CHNG3"
-  to = "/loci/CHNG3_MIR7-2"
-  status = 301
-
-[[redirects]]
-  from = "/loci/SCA_THAP11"
-  to = "/loci/SCA51_THAP11"
-  status = 301
-
-[[redirects]]
-  from = "/loci/SD5_HOXD13"
-  to = "/loci/SPD1_HOXD13"
-  status = 301
