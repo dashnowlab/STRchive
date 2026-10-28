@@ -92,6 +92,7 @@
 /locus                       /loci                             301
 /locus/*                     /loci/:splat                      301
 /loci/ALS1_NIPA1             /loci/ALS_NIPA1                   301
+/loci/FRA7A_ZNF13            /loci/FRA7A_ZNF713                301
 /loci/HFG_HOXA13-1           /loci/HFG_HOXA13-I                301
 /loci/MIR7-2_CHNG3           /loci/CHNG3_MIR7-2                301
 /loci/OPDM4_RILPL4           /loci/OPDM4_RILPL1                301
@@ -105,6 +106,7 @@
 /loci/XLMR_SOX3              /loci/XLID_SOX3                   301
 /loci/pre-MIR7-2_CHNG3       /loci/CHNG3_MIR7-2                301
 /loci/ALS1_NIPA1/*           /loci/ALS_NIPA1/:splat            301
+/loci/FRA7A_ZNF13/*          /loci/FRA7A_ZNF713/:splat         301
 /loci/HFG_HOXA13-1/*         /loci/HFG_HOXA13-I/:splat         301
 /loci/MIR7-2_CHNG3/*         /loci/CHNG3_MIR7-2/:splat         301
 /loci/OPDM4_RILPL4/*         /loci/OPDM4_RILPL1/:splat         301
@@ -118,6 +120,7 @@
 /loci/XLMR_SOX3/*            /loci/XLID_SOX3/:splat            301
 /loci/pre-MIR7-2_CHNG3/*     /loci/MIR7-2_CHNG3/:splat         301
 /critria/ALS1_NIPA1          /critria/ALS_NIPA1                301
+/critria/FRA7A_ZNF13         /critria/FRA7A_ZNF713             301
 /critria/HFG_HOXA13-1        /critria/HFG_HOXA13-I             301
 /critria/MIR7-2_CHNG3        /critria/CHNG3_MIR7-2             301
 /critria/OPDM4_RILPL4        /critria/OPDM4_RILPL1             301
@@ -131,6 +134,7 @@
 /critria/XLMR_SOX3           /critria/XLID_SOX3                301
 /critria/pre-MIR7-2_CHNG3    /critria/CHNG3_MIR7-2             301
 /critria/ALS1_NIPA1/*        /critria/ALS_NIPA1/:splat         301
+/critria/FRA7A_ZNF13/*       /critria/FRA7A_ZNF713/:splat      301
 /critria/HFG_HOXA13-1/*      /critria/HFG_HOXA13-I/:splat      301
 /critria/MIR7-2_CHNG3/*      /critria/CHNG3_MIR7-2/:splat      301
 /critria/OPDM4_RILPL4/*      /critria/OPDM4_RILPL1/:splat      301
