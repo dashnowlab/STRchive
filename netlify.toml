@@ -1,0 +1,4 @@
+[build]
+  base = "/"
+  command = "cd site && bun install && bun run build"
+  publish = "site/dist"
