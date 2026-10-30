@@ -3042,7 +3042,7 @@
   "age_onset_max": 66.0,
   "typ_age_onset_min": 31.0,
   "typ_age_onset_max": 51.0,
-  "details": "Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@pmid:39013564]. Interruptions seen: ACG, CCA [@pmid:35245110].",
+  "details": "Benign range (13-45) inferred from cohort data, but pathogenic range isn't yet fully understood [@genereviews:NBK535148]. In a cohort of 65 patients from 59 families, alleles ranged from 85-289 repeats, with an inverse relationship between size and age of onset [@pmid:34047774]. Inherited peripheral neuropathy (IPN) may be associated with shorter expansions [@pmid:39013564]. Interruptions seen: ACG, CCA [@pmid:35245110].  Shorter expansions (58-92 repeats) are associated with an adult-onset, slowly progressive, proximal-predominant pure lower motor syndrome that resembles non-5q SMA, without bulbar, sensory, or upper motor neuron involvement [@pmid:42788121].",
   "detection": "Short-read sequencing has been reported to be unreliable at detecting large expansions [@pmid:40858832]. RP-PCR followed by long-read sequencing is commonly used for characterization [@pmid:39013564].",
   "mechanism": "GoF?",
   "mechanism_detail": "RNA mediated toxicity hypothesized [@omim:164310]; may involve RAN translation [@pmid:38467784]. Somatic mosaicism and hypermethylation have also been reported [@pmid:41131788].",
