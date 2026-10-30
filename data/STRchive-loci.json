@@ -4780,7 +4780,7 @@
   "typ_age_onset_min": 39.7,
   "typ_age_onset_max": 39.7,
   "details": "Strong inverse relationship between age of onset and insertion length, which varied between 35-52 repeats [@pmid:29229810]. Neuropathologically, XDP shows striatal medium spiny neuron loss and accumulation of hyperphosphorylated 4R tau without α-synuclein, TDP-43, or amyloid-β pathology [@pmid:42619813].",
-  "detection": null,
+  "detection": "This SVA insertion is absent from GRCh38, so reference-based pipelines may discard SVA-containing reads. In one male patient, Nanopore adaptive sampling yielded only 3 informative reads and failed to size the repeat [pmid:42786195]",
   "mechanism": "LoF",
   "mechanism_detail": "Altered splicing with intron retention, haploinsufficiency [@pmid:38876750].",
   "year": "2017 [@pmid:29229810]",
