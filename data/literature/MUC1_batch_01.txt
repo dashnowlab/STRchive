@@ -1,13 +1,167 @@
 
+PMID- 42964607
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20261031
+LR  - 20261031
+IS  - 2468-0249 (Electronic)
+IS  - 2468-0249 (Linking)
+VI  - 11
+IP  - 12
+DP  - 2026 Dec
+TI  - Customized MUC1 Sequencing Enables Diagnosis of Autosomal Dominant 
+      Tubulointerstitial Kidney Disease and Unexplained CKD.
+PG  - 107095
+LID - 10.1016/j.ekir.2026.107095 [doi]
+LID - 107095
+AB  - INTRODUCTION: Inherited kidney disease (IKD) is the second most common cause of 
+      prevalent kidney failure on kidney replacement therapy in Europe. However, it 
+      remains underdiagnosed, in part, because of suboptimal genetic test resolution. 
+      The genetic diagnosis of autosomal dominant tubulointerstitial kidney disease 
+      (ADTKD) caused by MUC1 gene variants (ADTKD-MUC1) is technically challenging. 
+      METHODS: We implemented a customized library for short-read high-throughput 
+      sequencing (SR-HTS) with specific bioinformatic approaches to enhance the genetic 
+      diagnosis of ADTKD-MUC1. Specific analysis of the variable number tandem repeat 
+      (VNTR)-MUC1 region was performed in 550 patients with suspected IKD lacking an 
+      identifiable genetic cause using customized SR-HTS. We used a combination of 
+      techniques to confirm the genetic variant detected by SR-HTS. RESULTS: Overall, 
+      28 patients (5% [25/550]) had ADTKD-MUC1 with DupC (almost 90% [25/28] of MUC1 
+      variants) or DupA (10%) MUC1 pathogenic frameshift variants. More than half of 
+      these cases required specialized bioinformatics analysis to detect the variants. 
+      These variants were validated using Sanger, SNaPshot, or long-read sequencing 
+      (LRS) according to the location and mutation type. CONCLUSION: This study 
+      presents an applicable solution of a customized SR-HTS approach for the 
+      systematic screening of MUC1 gene variants, with particular emphasis on the 
+      detection of frameshift alterations within the VNTR region that generate 
+      pathogenic MUC1 neoproteins associated with ADTKD-MUC1. Integrating this strategy 
+      into routine diagnostic workflows increased the overall diagnostic yield while 
+      reducing the technical complexity associated with the sequential application of 
+      multiple methodologies.
+CI  - (c) 2026 The Author(s).
+FAU - Garcia-Aznar, Jose Maria
+AU  - Garcia-Aznar JM
+AD  - Clinical Area of Nephrology and Immunology, Health in Code, A Coruna, Spain.
+FAU - Besada-Cerecedo, Maria Lara
+AU  - Besada-Cerecedo ML
+AD  - Genetic Diagnostic Department, Health in Code, A Coruna, Spain.
+FAU - Aguirre, Nerea Lopez
+AU  - Aguirre NL
+AD  - Genetic Diagnostic Department, Health in Code, A Coruna, Spain.
+FAU - Alvarez, Jorge Perez
+AU  - Alvarez JP
+AD  - Research and Development Department, Health in Code, Valencia, Spain.
+FAU - Boluda-Navarro, Mireia
+AU  - Boluda-Navarro M
+AD  - Research and Development Department, Health in Code, Valencia, Spain.
+FAU - Alvaredo, Sonia Gonzalez
+AU  - Alvaredo SG
+AD  - Research and Development Department, Health in Code, Valencia, Spain.
+FAU - Lesende, Ivan
+AU  - Lesende I
+AD  - Research and Development Department, Health in Code, Valencia, Spain.
+FAU - Castaneda-Infante, Laura
+AU  - Castaneda-Infante L
+AD  - Department of Nephrology, Clinica Universitaria de Navarra. Pamplona, Spain.
+FAU - Leon-Machado, Lina
+AU  - Leon-Machado L
+AD  - Department of Nephrology, University Hospital La Paz, Madrid, Spain.
+FAU - Rodriguez, Alfredo Santana
+AU  - Rodriguez AS
+AD  - Clinical Genetics Unit, Complejo Hospitalario Universitario Insular Materno 
+      Infantil, Las Palmas de Gran Canaria, Spain.
+FAU - Perez-Gomez, Vanessa
+AU  - Perez-Gomez V
+AD  - Department of Nephrology, IIS-Fundacion Jimenez Diaz University Hospital, Madrid, 
+      Spain.
+FAU - Garces, Elena Goma
+AU  - Garces EG
+AD  - Department of Nephrology, IIS-Fundacion Jimenez Diaz University Hospital, Madrid, 
+      Spain.
+FAU - Ortiz, Alberto
+AU  - Ortiz A
+AD  - Department of Nephrology, IIS-Fundacion Jimenez Diaz University Hospital, Madrid, 
+      Spain.
+AD  - School of Medicine, Universidad Autonoma de Madrid, Madrid, Spain.
+FAU - Fresnedo, Gema Fernandez
+AU  - Fresnedo GF
+AD  - Department of Nephrology, University Hospital Marques de Valdecilla-IDIVAL, 
+      Santander, Spain.
+FAU - Vilarino, Mercedes Cao
+AU  - Vilarino MC
+AD  - Department of Nephrology, University Hospital of A Coruna, A Coruna, Spain.
+FAU - Criach, Elisabet Ars
+AU  - Criach EA
+AD  - Molecular Genetics Laboratory, Fundacio Puigvert, Institut de Recerca Sant Pau 
+      (IR-Sant Pau), Barcelona, Spain, ERKNet Reference Center, RICORS2040renal.
+FAU - Prado de la Sierra, Jose Carlos
+AU  - Prado de la Sierra JC
+AD  - Department of Nephrology, University Hospital Virgen de la Victoria. Malaga, 
+      Spain.
+FAU - Escano Marin, Rosa Maria
+AU  - Escano Marin RM
+AD  - Department of Nephrology, University Hospital Virgen de la Victoria. Malaga, 
+      Spain.
+FAU - Velazquez, Monica Martin
+AU  - Velazquez MM
+AD  - Department of Nephrology, University Hospital Virgen de la Victoria. Malaga, 
+      Spain.
+FAU - Blasco, Miquel
+AU  - Blasco M
+AD  - Department of Nephrology and Kidney Transplant, National Reference Center for 
+      Complex Glomerular Diseases (CSUR), Fundacio de Recerca Clinic Barcelona, 
+      Institut d'Investigacions Biomediques August Pi i Sunyer, Hospital Clinic 
+      Barcelona, Barcelona University, Barcelona, Spain.
+FAU - Procaccini, Fabio L
+AU  - Procaccini FL
+AD  - Department of Nephrology, University Hospital Infanta Leonor, Madrid, Spain.
+FAU - de Sequera, Patricia
+AU  - de Sequera P
+AD  - Department of Nephrology, University Hospital Infanta Leonor, Madrid, Spain.
+AD  - University Autonoma de Madrid, Madrid, Spain, and University Complutense de 
+      Madrid, Madrid, Spain.
+LA  - eng
+PT  - Journal Article
+DEP - 20260925
+PL  - United States
+TA  - Kidney Int Rep
+JT  - Kidney international reports
+JID - 101684752
+PMC - PMC13720252
+OTO - NOTNLM
+OT  - MUC1
+OT  - autosomal dominant tubulointerstitial kidney disease
+OT  - inherited kidney disease
+EDAT- 2026/10/31 23:24
+MHDA- 2026/10/31 23:25
+PMCR- 2026/09/25
+CRDT- 2026/10/31 05:16
+PHST- 2026/05/14 00:00 [received]
+PHST- 2026/08/30 00:00 [revised]
+PHST- 2026/09/15 00:00 [accepted]
+PHST- 2026/10/31 23:25 [medline]
+PHST- 2026/10/31 23:24 [pubmed]
+PHST- 2026/10/31 05:16 [entrez]
+PHST- 2026/09/25 00:00 [pmc-release]
+AID - S2468-0249(26)03327-9 [pii]
+AID - 107095 [pii]
+AID - 10.1016/j.ekir.2026.107095 [doi]
+PST - epublish
+SO  - Kidney Int Rep. 2026 Sep 25;11(12):107095. doi: 10.1016/j.ekir.2026.107095. 
+      eCollection 2026 Dec.
+
 PMID- 42498060
 OWN - NLM
-STAT- Publisher
-LR  - 20260901
+STAT- MEDLINE
+DCOM- 20261020
+LR  - 20261020
 IS  - 1523-1755 (Electronic)
 IS  - 0085-2538 (Linking)
-DP  - 2026 Jul 24
+VI  - 110
+IP  - 5
+DP  - 2026 Nov
 TI  - Targeted VNTR long read sequencing resolves a diagnostic bottleneck in ADTKD and 
       detects de novo ADTKD-MUC1.
+PG  - 1304-1310
 LID - S0085-2538(26)00611-3 [pii]
 LID - 10.1016/j.kint.2026.06.040 [doi]
 AB  - INTRODUCTION: The molecular diagnosis of autosomal dominant tubulointerstitial 
@@ -108,7 +262,22 @@ PL  - United States
 TA  - Kidney Int
 JT  - Kidney international
 JID - 0323470
+RN  - 0 (Mucin-1)
+RN  - 0 (MUC1 protein, human)
 SB  - IM
+MH  - Humans
+MH  - *Minisatellite Repeats/genetics
+MH  - *Mucin-1/genetics
+MH  - Adult
+MH  - Female
+MH  - *Polycystic Kidney, Autosomal Dominant/genetics/diagnosis
+MH  - Retrospective Studies
+MH  - High-Throughput Nucleotide Sequencing
+MH  - Male
+MH  - Frameshift Mutation
+MH  - Haplotypes
+MH  - Middle Aged
+MH  - Computational Biology
 OTO - NOTNLM
 OT  - MUC1
 OT  - autosomal dominant tubulointerstitial kidney disease (ADTKD)
@@ -117,24 +286,25 @@ OT  - kidney disease
 OT  - long-read sequencing
 OT  - variable number of tandem repeats (VNTR)
 EDAT- 2026/07/25 00:35
-MHDA- 2026/07/25 00:35
+MHDA- 2026/10/20 23:28
 CRDT- 2026/07/24 19:12
 PHST- 2025/11/03 00:00 [received]
 PHST- 2026/06/16 00:00 [revised]
 PHST- 2026/06/29 00:00 [accepted]
+PHST- 2026/10/20 23:28 [medline]
 PHST- 2026/07/25 00:35 [pubmed]
-PHST- 2026/07/25 00:35 [medline]
 PHST- 2026/07/24 19:12 [entrez]
 AID - S0085-2538(26)00611-3 [pii]
 AID - 10.1016/j.kint.2026.06.040 [doi]
-PST - aheadofprint
-SO  - Kidney Int. 2026 Jul 24:S0085-2538(26)00611-3. doi: 10.1016/j.kint.2026.06.040.
+PST - ppublish
+SO  - Kidney Int. 2026 Nov;110(5):1304-1310. doi: 10.1016/j.kint.2026.06.040. Epub 2026 
+      Jul 24.
 
 PMID- 42428052
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260911
-LR  - 20260911
+LR  - 20260922
 DP  - 2026 Jul 4
 TI  - Complex structural variation, phylogeny, and disease associations of the mucin 
       pangenome.
@@ -224,6 +394,11 @@ AD  - Department of Genome Sciences, University of Washington School of Medicine
 AD  - Howard Hughes Medical Institute, University of Washington, Seattle, WA 98195, 
       USA.
 LA  - eng
+GR  - U41 HG007497/HG/NHGRI NIH HHS/United States
+GR  - R01 HG010169/HG/NHGRI NIH HHS/United States
+GR  - U01 HG013748/HG/NHGRI NIH HHS/United States
+GR  - U24 HG007497/HG/NHGRI NIH HHS/United States
+GR  - R01 HG002385/HG/NHGRI NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260704
@@ -370,14 +545,19 @@ SO  - Cell Biol Int. 2026 Jun;50(6):e70167. doi: 10.1002/cbin.70167.
 
 PMID- 41961547
 OWN - NLM
-STAT- Publisher
-LR  - 20260610
+STAT- MEDLINE
+DCOM- 20261001
+LR  - 20261008
 IS  - 1533-3450 (Electronic)
+IS  - 1046-6673 (Print)
 IS  - 1046-6673 (Linking)
-DP  - 2026 Apr 10
+VI  - 37
+IP  - 10
+DP  - 2026 Oct 1
 TI  - Single-Molecule Real-Time Sequencing for MUC1 Variable Number of Tandem Repeat 
       Variation to Improve Autosomal Dominant Tubulointerstitial Kidney Disease 
       Diagnosis.
+PG  - 2248-2261
 LID - 10.1681/ASN.0000001103 [doi]
 AB  - KEY POINTS: Single-molecule real-time sequencing with the PacMUC1 script resolved 
       exact MUC1 variable tandem repeat structure and full allelic variation. In 300 
@@ -567,15 +747,15 @@ AUID- ORCID: 0000-0001-6174-2524
 AD  - Department of Medical Genetics, Hospital de Santa Maria, ULSSM, Lisbon, Portugal.
 FAU - Elhassan, Elhussein
 AU  - Elhassan E
-AD  - Department of Nephrology Beaumont Hospital Dublin Ireland.
+AD  - Department of Nephrology, Beaumont Hospital, Dublin, Ireland.
 FAU - Clince, Michelle
 AU  - Clince M
 AUID- ORCID: 0009-0005-6307-1716
-AD  - Department of Nephrology Beaumont Hospital Dublin Ireland.
+AD  - Department of Nephrology, Beaumont Hospital, Dublin, Ireland.
 FAU - Rowan, Colm
 AU  - Rowan C
 AUID- ORCID: 0000-0002-1660-1244
-AD  - Department of Nephrology Beaumont Hospital Dublin Ireland.
+AD  - Department of Nephrology, Beaumont Hospital, Dublin, Ireland.
 FAU - Conlon, Peter
 AU  - Conlon P
 AUID- ORCID: 0000-0001-6772-9531
@@ -639,9 +819,20 @@ PL  - United States
 TA  - J Am Soc Nephrol
 JT  - Journal of the American Society of Nephrology : JASN
 JID - 9013836
+RN  - 0 (Mucin-1)
+RN  - 0 (MUC1 protein, human)
 SB  - IM
 UOF - bioRxiv. 2025 Sep 16:2025.09.06.673538. doi: 10.1101/2025.09.06.673538. PMID: 
       41000883
+MH  - Humans
+MH  - *Minisatellite Repeats/genetics
+MH  - Frameshift Mutation
+MH  - *Mucin-1/genetics
+MH  - *Polycystic Kidney, Autosomal Dominant/genetics/diagnosis
+MH  - Female
+MH  - Male
+MH  - Alleles
+PMC - PMC13641500
 OTO - NOTNLM
 OT  - CKD
 OT  - endoplasmic reticulum
@@ -651,24 +842,30 @@ OT  - kidney disease
 OT  - molecular genetics
 OT  - polymorphisms
 OT  - tubulointerstitial disease
+COIS- Disclosure forms, as provided by each author, are available with the online 
+      version of the article at http://links.lww.com/JSN/F807.
 EDAT- 2026/04/10 18:33
-MHDA- 2026/04/10 18:33
+MHDA- 2026/10/01 23:29
+PMCR- 2026/10/01
 CRDT- 2026/04/10 12:03
 PHST- 2025/08/27 00:00 [received]
 PHST- 2026/04/06 00:00 [accepted]
+PHST- 2026/10/01 23:29 [medline]
 PHST- 2026/04/10 18:33 [pubmed]
-PHST- 2026/04/10 18:33 [medline]
 PHST- 2026/04/10 12:03 [entrez]
-AID - 00001751-990000000-00988 [pii]
+PHST- 2026/10/01 00:00 [pmc-release]
+AID - 00001751-202610000-00017 [pii]
+AID - JASN-2025-001114 [pii]
 AID - 10.1681/ASN.0000001103 [doi]
-PST - aheadofprint
-SO  - J Am Soc Nephrol. 2026 Apr 10. doi: 10.1681/ASN.0000001103.
+PST - ppublish
+SO  - J Am Soc Nephrol. 2026 Oct 1;37(10):2248-2261. doi: 10.1681/ASN.0000001103. Epub 
+      2026 Apr 10.
 
 PMID- 41832605
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260828
+LR  - 20260915
 IS  - 1542-0086 (Electronic)
 IS  - 0006-3495 (Print)
 IS  - 0006-3495 (Linking)
@@ -744,6 +941,7 @@ GR  - 75N91019D00024/OD/NIH HHS/United States
 GR  - R24 GM137782/GM/NIGMS NIH HHS/United States
 GR  - R35 GM139531/GM/NIGMS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20260313
 PL  - United States
 TA  - Biophys J
@@ -787,7 +985,7 @@ PMID- 41345522
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260626
-LR  - 20260626
+LR  - 20261019
 IS  - 2045-2322 (Electronic)
 IS  - 2045-2322 (Linking)
 VI  - 16
@@ -905,7 +1103,7 @@ PMID- 41000883
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260421
-LR  - 20260602
+LR  - 20260916
 IS  - 2692-8205 (Electronic)
 IS  - 2692-8205 (Linking)
 DP  - 2025 Sep 16
@@ -1124,7 +1322,8 @@ PL  - United States
 TA  - bioRxiv
 JT  - bioRxiv : the preprint server for biology
 JID - 101680187
-UIN - J Am Soc Nephrol. 2026 Apr 10. doi: 10.1681/ASN.0000001103. PMID: 41961547
+UIN - J Am Soc Nephrol. 2026 Oct 1;37(10):2248-2261. doi: 10.1681/ASN.0000001103. PMID: 
+      41961547
 PMC - PMC12458345
 OTO - NOTNLM
 OT  - Autosomal Dominant Tubulointerstitial Kidney Disease
@@ -1618,7 +1817,7 @@ PMID- 39576755
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241210
-LR  - 20260623
+LR  - 20260923
 IS  - 1520-6882 (Electronic)
 IS  - 0003-2700 (Print)
 IS  - 0003-2700 (Linking)
@@ -10203,7 +10402,7 @@ PMID- 12090474
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20020719
-LR  - 20220309
+LR  - 20261016
 IS  - 0262-0898 (Print)
 IS  - 0262-0898 (Linking)
 VI  - 19
@@ -12618,7 +12817,7 @@ PMID- 9579805
 OWN - NLM
 STAT- MEDLINE
 DCOM- 19980717
-LR  - 20191024
+LR  - 20261016
 IS  - 0282-0080 (Print)
 IS  - 0282-0080 (Linking)
 VI  - 15

@@ -1,4 +1,1145 @@
 
+PMID- 42905853
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20261022
+LR  - 20261022
+IS  - 1946-6242 (Electronic)
+IS  - 1946-6234 (Linking)
+VI  - 18
+IP  - 872
+DP  - 2026 Oct 21
+TI  - Single-nucleotide polymorphism-directed design of allele-specific antisense 
+      oligonucleotides for spinocerebellar ataxia type 3.
+PG  - eadz2140
+LID - 10.1126/scitranslmed.adz2140 [doi]
+AB  - Spinocerebellar ataxia type 3 (SCA3), also called Machado-Joseph disease, the 
+      most common form of autosomal dominant cerebellar ataxia, is caused by a CAG 
+      repeat expansion in ATXN3. The mutant protein is prone to aggregation and exerts 
+      toxic gain-of-function effects, whereas the wild-type protein has important 
+      neuroprotective roles as a deubiquitinase. Current treatment strategies for SCA3 
+      lack specificity for the mutant allele. Identifying genetic variants such as 
+      single-nucleotide polymorphisms (SNPs) in linkage with the pathogenic CAG 
+      expansion offers a promising avenue to develop allele-specific therapeutic 
+      interventions, like antisense oligonucleotides (ASOs). To address this, we 
+      conducted allele-specific, targeted, multiplexed nanopore sequencing on 79 
+      patients with SCA3 from Germany, UK, and Portugal. We identified almost 200 
+      polymorphisms and grouped them into three haplotype blocks on the basis of 
+      linkage disequilibrium. These SNPs were strongly associated with the CAG 
+      expansion. Genotypic modeling of our subcohorts indicated that targeting only two 
+      SNPs from different blocks could enable allele-specific treatment of the majority 
+      of European patients with SCA3. We evaluated 17 candidate ASOs targeting SNPs 
+      from different haplotype blocks. Seven of these ASOs caused allele-preferential 
+      reduction of more than 65%. A single ASO application in two SCA3 iPSC-derived 
+      cortical neurons (AX1, AX2) achieved up to 90% reduction of mutant ATXN3. 
+      Toxicity assessments together with RNA sequencing analyses in AX1 did not 
+      indicate evidence of toxicity or widespread transcriptional perturbations. These 
+      findings highlight that characterizing heterozygosity rates offers valuable 
+      opportunities for selective ASO therapies. Our proof-of-principle targeting with 
+      ASOs demonstrates the feasibility of haplotype-informed allele-specific silencing 
+      in ATXN3.
+FAU - Helm, Jacob
+AU  - Helm J
+AUID- ORCID: 0000-0002-0857-4266
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Graduate School of Cellular and Molecular Neuroscience, University of Tubingen, 
+      72076 Tubingen, Germany.
+FAU - Buena-Atienza, Elena
+AU  - Buena-Atienza E
+AUID- ORCID: 0000-0002-9890-1960
+AD  - NGS Competence Center Tubingen (NCCT), 72076 Tubingen, Germany.
+AD  - Institute of Medical Genetics and Applied Genomics, University of Tubingen, 72076 
+      Tubingen, Germany.
+FAU - Sauter, Clemens M
+AU  - Sauter CM
+AUID- ORCID: 0000-0002-4028-6758
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Graduate School of Cellular and Molecular Neuroscience, University of Tubingen, 
+      72076 Tubingen, Germany.
+FAU - Wiora, Linus
+AU  - Wiora L
+AUID- ORCID: 0000-0003-1558-9148
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Graduate School of Cellular and Molecular Neuroscience, University of Tubingen, 
+      72076 Tubingen, Germany.
+FAU - Kraft, Melanie
+AU  - Kraft M
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+FAU - Schelling, Yvonne
+AU  - Schelling Y
+AUID- ORCID: 0009-0008-0787-0494
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+FAU - Admard, Jakob
+AU  - Admard J
+AUID- ORCID: 0000-0003-0466-582X
+AD  - NGS Competence Center Tubingen (NCCT), 72076 Tubingen, Germany.
+AD  - Institute of Medical Genetics and Applied Genomics, University of Tubingen, 72076 
+      Tubingen, Germany.
+FAU - Hubener-Schmid, Jeannette
+AU  - Hubener-Schmid J
+AUID- ORCID: 0000-0002-4973-0923
+AD  - Institute of Medical Genetics and Applied Genomics, University of Tubingen, 72076 
+      Tubingen, Germany.
+FAU - Klockgether, Thomas
+AU  - Klockgether T
+AUID- ORCID: 0000-0001-6174-5442
+AD  - German Center for Neurodegenerative Diseases (DZNE), 53127 Bonn, Germany.
+FAU - Synofzik, Matthis
+AU  - Synofzik M
+AUID- ORCID: 0000-0002-2280-7273
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Gene and RNA Therapy Center (GRTC), Faculty of Medicine, University of Tubingen, 
+      72076 Tubingen, Germany.
+FAU - de Almeida, Luis Pereira
+AU  - de Almeida LP
+AD  - Center for Neuroscience and Cell Biology (CNC-UC), University of Coimbra, 
+      3004-504 Coimbra, Portugal.
+AD  - Center for Innovative Biomedicine and Biotechnology (CIBB), University of 
+      Coimbra, 3004-504 Coimbra, Portugal.
+AD  - Gene Therapy Center of Excellence (GeneT), University of Coimbra, 3004-504 
+      Coimbra, Portugal.
+AD  - Faculty of Pharmacy of the University of Coimbra (FFUC), University of Coimbra, 
+      3000-548 Coimbra, Portugal.
+FAU - Raposo, Mafalda
+AU  - Raposo M
+AUID- ORCID: 0000-0001-6899-0352
+AD  - Instituto de Investigacao e Inovacao em Saude (i3S), Universidade do Porto, 
+      4200-125 Porto, Portugal.
+AD  - Faculdade de Ciencias e Tecnologia, Universidade dos Acores, 9501-801 Ponta 
+      Delgada, Portugal.
+FAU - Giunti, Paola
+AU  - Giunti P
+AUID- ORCID: 0000-0003-3508-4788
+AD  - Ataxia Centre, Department of Clinical and Movement Neurosciences, UCL Queen 
+      Square Institute of Neurology, University College London, WC1N 3GB London, UK.
+AD  - Department of Neurogenetics, National Hospital for Neurology and Neurosurgery, 
+      University College London Hospitals NHS Foundation Trust, WC1N 3GB London, UK.
+FAU - Garcia-Moreno, Hector
+AU  - Garcia-Moreno H
+AUID- ORCID: 0000-0002-0697-3271
+AD  - Ataxia Centre, Department of Clinical and Movement Neurosciences, UCL Queen 
+      Square Institute of Neurology, University College London, WC1N 3GB London, UK.
+AD  - Department of Neurogenetics, National Hospital for Neurology and Neurosurgery, 
+      University College London Hospitals NHS Foundation Trust, WC1N 3GB London, UK.
+FAU - Santana, Magda M
+AU  - Santana MM
+AD  - Center for Neuroscience and Cell Biology (CNC-UC), University of Coimbra, 
+      3004-504 Coimbra, Portugal.
+AD  - Center for Innovative Biomedicine and Biotechnology (CIBB), University of 
+      Coimbra, 3004-504 Coimbra, Portugal.
+AD  - Gene Therapy Center of Excellence (GeneT), University of Coimbra, 3004-504 
+      Coimbra, Portugal.
+AD  - Institute of Interdisciplinary Research (IIIUC), University of Coimbra, 3030-789 
+      Coimbra, Portugal.
+FAU - Faber, Jennifer
+AU  - Faber J
+AUID- ORCID: 0000-0003-3265-0262
+AD  - German Center for Neurodegenerative Diseases (DZNE), 53127 Bonn, Germany.
+AD  - Department of Parkinson's Disease, Sleep and Movement Disorders, University 
+      Hospital Bonn, 53127 Bonn, Germany.
+AD  - Department of Neuroradiology, University Hospital Bonn, 53127 Bonn, Germany.
+FAU - Hengel, Holger
+AU  - Hengel H
+AUID- ORCID: 0000-0002-9773-2667
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Center of Rare Diseases, University of Tubingen, 72076 Tubingen, Germany.
+FAU - Casadei, Nicolas
+AU  - Casadei N
+AUID- ORCID: 0000-0003-2209-0580
+AD  - NGS Competence Center Tubingen (NCCT), 72076 Tubingen, Germany.
+AD  - Institute of Medical Genetics and Applied Genomics, University of Tubingen, 72076 
+      Tubingen, Germany.
+FAU - Schols, Ludger
+AU  - Schols L
+AUID- ORCID: 0000-0001-7774-5025
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Gene and RNA Therapy Center (GRTC), Faculty of Medicine, University of Tubingen, 
+      72076 Tubingen, Germany.
+AD  - Center of Rare Diseases, University of Tubingen, 72076 Tubingen, Germany.
+FAU - Hauser, Stefan
+AU  - Hauser S
+AUID- ORCID: 0000-0002-1022-7482
+AD  - German Center for Neurodegenerative Diseases (DZNE), 72076 Tubingen, Germany.
+AD  - Department of Neurology and Hertie Institute for Clinical Brain Research, 
+      University of Tubingen, 72076 Tubingen, Germany.
+AD  - Gene and RNA Therapy Center (GRTC), Faculty of Medicine, University of Tubingen, 
+      72076 Tubingen, Germany.
+LA  - eng
+PT  - Journal Article
+DEP - 20261021
+PL  - United States
+TA  - Sci Transl Med
+JT  - Science translational medicine
+JID - 101505086
+RN  - 0 (Oligonucleotides, Antisense)
+RN  - EC 3.4.19.12 (Ataxin-3)
+RN  - EC 3.4.19.12 (ATXN3 protein, human)
+RN  - 0 (Repressor Proteins)
+SB  - IM
+MH  - *Machado-Joseph Disease/genetics/therapy
+MH  - Humans
+MH  - *Polymorphism, Single Nucleotide/genetics
+MH  - *Alleles
+MH  - *Oligonucleotides, Antisense/genetics/therapeutic use
+MH  - Haplotypes/genetics
+MH  - Ataxin-3/genetics
+MH  - Linkage Disequilibrium/genetics
+MH  - Animals
+MH  - Induced Pluripotent Stem Cells/metabolism
+MH  - Repressor Proteins
+EDAT- 2026/10/22 23:29
+MHDA- 2026/10/22 23:30
+CRDT- 2026/10/22 18:41
+PHST- 2026/10/22 23:30 [medline]
+PHST- 2026/10/22 23:29 [pubmed]
+PHST- 2026/10/22 18:41 [entrez]
+AID - 10.1126/scitranslmed.adz2140 [doi]
+PST - ppublish
+SO  - Sci Transl Med. 2026 Oct 21;18(872):eadz2140. doi: 10.1126/scitranslmed.adz2140. 
+      Epub 2026 Oct 21.
+
+PMID- 42893779
+OWN - NLM
+STAT- Publisher
+LR  - 20261029
+IS  - 1873-7544 (Electronic)
+IS  - 0306-4522 (Linking)
+VI  - 619
+DP  - 2026 Oct 18
+TI  - CAG repeat length shapes bidirectional functional connectome alterations in 
+      spinocerebellar ataxia type 3: a multimodal MRI study.
+PG  - 121-129
+LID - S0306-4522(26)00701-3 [pii]
+LID - 10.1016/j.neuroscience.2026.10.031 [doi]
+AB  - The ATXN3 gene is the primary driver of brain damage in spinocerebellar ataxia 
+      type 3 (SCA3). We aimed to elucidate the patterns of connectome alterations 
+      shaped by cytosine-adenine-guanine (CAG) repeat length in SCA3. Eighty-nine 
+      genetically confirmed patients with SCA3 and 89 age-, sex-, education-matched 
+      healthy controls underwent multimodal MRI and comprehensive clinical assessments. 
+      Connectome-based predictive modeling (CPM) was used to identify functional 
+      connectivity patterns associated with CAG repeat length. Structural brain damage 
+      was assessed using voxel-based morphometry. Mediation analysis was performed to 
+      examine the role of structural impairment in connectivity changes. CPM identified 
+      a positive and a negative network, whose connectivity strength increased or 
+      decreased with CAG repeat length. The positive network (r = 0.397, P < 0.001) was 
+      mainly localized within the cerebello-motor circuit and was positively associated 
+      with ataxia severity and functional disability. The negative network (r = 0.243, 
+      P = 0.022) was distributed across large-scale networks, with selective 
+      vulnerability of interhemispheric connectivity, and was associated with motor 
+      dysfunction. Besides the canonical motor pathways, limbic-related connectivity 
+      was related to motor impairment. Structural analyses revealed widespread gray 
+      matter atrophy centered on the cerebellum. Cerebellar atrophy statistically 
+      mediated the association between CAG repeat length and connectivity decreases. 
+      CAG repeat length is associated with a bidirectional connectopathy in SCA3. 
+      Cerebellar atrophy may mediate the connectivity decreases. Future longitudinal 
+      studies are required to examine the underlying causal pathway.
+CI  - Copyright (c) 2026 International Brain Research Organization (IBRO). Published by 
+      Elsevier Inc. All rights reserved.
+FAU - Yang, Xianfei
+AU  - Yang X
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Xia, Haishuo
+AU  - Xia H
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Hu, Yuwei
+AU  - Hu Y
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Xu, Can
+AU  - Xu C
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Wang, Xingang
+AU  - Wang X
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Deng, Qingxin
+AU  - Deng Q
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Xie, Qian
+AU  - Xie Q
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China.
+FAU - Dai, Limeng
+AU  - Dai L
+AD  - Prenatal Diagnosis Center, Department of Gynecology and Obstetrics, Southwest 
+      Hospital, Army Medical University (Third Military Medical University), Chongqing, 
+      400038, China.
+FAU - Yang, Qifang
+AU  - Yang Q
+AD  - Department of Radiology, The 925th Hospital of the PLA Joint Logistics Support 
+      Force, Guiyang, 550009, China.
+FAU - Li, Changying
+AU  - Li C
+AD  - Department of Medical Imaging, The 77th Group Army Hospital of the Chinese 
+      People's Liberation Army, Sichuan, 614100, China.
+FAU - Gui, Li
+AU  - Gui L
+AD  - Department of Neurology, Southwest Hospital, Army Medical University (Third 
+      Military Medical University), Chongqing, 400038, China. Electronic address: 
+      1695509991@qq.com.
+FAU - Liu, Chen
+AU  - Liu C
+AD  - 7T Magnetic Resonance Imaging Translational Medical Center, Department of 
+      Radiology, Southwest Hospital, Army Medical University (Third Military Medical 
+      University), Chongqing, 400038, China. Electronic address: liuchen@aifmri.com.
+LA  - eng
+PT  - Journal Article
+DEP - 20261018
+PL  - United States
+TA  - Neuroscience
+JT  - Neuroscience
+JID - 7605074
+SB  - IM
+OTO - NOTNLM
+OT  - Connectome-based predictive modeling
+OT  - Connectopathy
+OT  - Resting-state fMRI
+OT  - Spinocerebellar ataxia type 3
+COIS- Declaration of competing interest The authors declare that they have no known 
+      competing financial interests or personal relationships that could have appeared 
+      to influence the work reported in this paper.
+EDAT- 2026/10/18 23:27
+MHDA- 2026/10/18 23:27
+CRDT- 2026/10/18 19:27
+PHST- 2026/06/30 00:00 [received]
+PHST- 2026/09/30 00:00 [revised]
+PHST- 2026/10/17 00:00 [accepted]
+PHST- 2026/10/18 23:27 [pubmed]
+PHST- 2026/10/18 23:27 [medline]
+PHST- 2026/10/18 19:27 [entrez]
+AID - S0306-4522(26)00701-3 [pii]
+AID - 10.1016/j.neuroscience.2026.10.031 [doi]
+PST - aheadofprint
+SO  - Neuroscience. 2026 Oct 18;619:121-129. doi: 10.1016/j.neuroscience.2026.10.031.
+
+PMID- 42845531
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20261008
+LR  - 20261008
+DP  - 2026 Aug 10
+TI  - Tandem repeat expansions in DAPK1 , ANK3 , and RPL14 are associated with diverse 
+      neurodegenerative diseases.
+LID - 2026.08.06.26358503 [pii]
+LID - 10.64898/2026.08.06.26358503 [doi]
+AB  - Tandem repeat expansions (TREs) cause over 50 neurological conditions, yet their 
+      contribution to neurodegenerative disease risk at a population scale remains 
+      incompletely characterized. We performed a TRE association study across 6,539 
+      short tandem repeat loci in 276,411 individuals from the UK Biobank and 44,370 
+      individuals from the All of Us Research Program, using two composite 
+      neurodegenerative phenotypes to increase statistical power and capture 
+      pleiotropic effects. Meta-analysis across the two cohorts identified associations 
+      at eight established pathogenic TRE loci, including C9orf72 , DMPK , HTT , ATXN2 
+      , ATXN3 , CACNA1A , CNBP , and PPP2R2B , recovering known disease-associated 
+      expansions from short-read sequencing data at biobank scale. We also identified 
+      candidate associations at three additional loci. An intronic AATAA expansion in 
+      DAPK1 reached significance (q = 0.0045), with fine-mapping and conditional 
+      analysis supporting the repeat as the likely variant underlying the association. 
+      An intronic ATTTT expansion in ANK3 (q = 0.034) was observed exclusively in 
+      individuals of African and Latino/admixed American ancestry, underscoring the 
+      importance of ancestrally diverse cohorts for genetic discovery. An exonic 
+      polyalanine expansion in RPL14 was also significant (q = 0.039), where longer 
+      alleles were consistently associated with reduced RPL14 expression across 
+      independent datasets. Together, these findings identify candidate risk loci for 
+      neurodegenerative disease that may expand the contribution of TREs to 
+      neurodegenerative disease beyond known repeat expansion disorders.
+FAU - Altman, Gabrielle N
+AU  - Altman GN
+AUID- ORCID: 0000-0003-3556-1492
+FAU - Jadhav, Bharati
+AU  - Jadhav B
+FAU - Garg, Paras
+AU  - Garg P
+FAU - Shadrina, Mariya
+AU  - Shadrina M
+FAU - Manigbas, Celine A
+AU  - Manigbas CA
+AUID- ORCID: 0009-0001-5624-6355
+FAU - Lee, William
+AU  - Lee W
+FAU - Kandoi, Shrishtee
+AU  - Kandoi S
+FAU - Martin-Trujillo, Alejandro
+AU  - Martin-Trujillo A
+FAU - Sharp, Andrew J
+AU  - Sharp AJ
+AUID- ORCID: 0000-0003-1415-5129
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260810
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC13640768
+EDAT- 2026/10/08 11:39
+MHDA- 2026/10/08 11:40
+PMCR- 2026/10/06
+CRDT- 2026/10/08 06:41
+PHST- 2026/10/08 11:40 [medline]
+PHST- 2026/10/08 11:39 [pubmed]
+PHST- 2026/10/08 06:41 [entrez]
+PHST- 2026/10/06 00:00 [pmc-release]
+AID - 2026.08.06.26358503 [pii]
+AID - 10.64898/2026.08.06.26358503 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2026 Aug 10:2026.08.06.26358503. doi: 
+      10.64898/2026.08.06.26358503.
+
+PMID- 42845343
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20261017
+LR  - 20261031
+IS  - 2692-8205 (Electronic)
+IS  - 2692-8205 (Linking)
+DP  - 2026 Aug 10
+TI  - Ficd loss rescues motor impairments and reverses oligodendrocyte maturation 
+      deficits in a mouse model of spinocerebellar ataxia type 3.
+LID - 2026.08.07.743629 [pii]
+LID - 10.64898/2026.08.07.743629 [doi]
+AB  - Spinocerebellar ataxia type 3 (SCA3) is an inherited, fatal neurodegenerative 
+      disease caused by a pathological CAG repeat expansion in the ATXN3 gene, 
+      resulting in the selective degeneration of vulnerable neuronal populations. 
+      Recent work has identified impairments in oligodendrocyte maturation as a novel 
+      and robust feature of SCA3 pathogenesis. Oligodendrocytes synthesize myelin 
+      structural components through the endoplasmic reticulum (ER), rendering this 
+      organelle essential for white matter integrity. Despite this, the role of ER 
+      function in SCA3 remains unclear. In this study, we show that loss of 
+      FICD-mediated AMPylation, a post-translational modification regulating the 
+      ER-resident HSP70 chaperone, BiP, rescues motor impairments in a transgenic SCA3 
+      mouse model. Ficd (-/-) SCA3 mice exhibit significantly reduced levels of nuclear 
+      ATXN3 in vulnerable brain regions, while Ficd (+/+) littermates show an increased 
+      burden of AMPylated BiP in the spinal cord, identifying aberrant AMPylation as a 
+      novel contributor of SCA3 pathology. Using unbiased proteomics, we demonstrate 
+      that Ficd deletion mitigates the pathological decrease in myelin structural 
+      proteins and oligodendrocyte maturation factors, restoring levels of mature, 
+      myelinating oligodendrocytes. In parallel, we show that Ficd activates 
+      SREBP2-dependent cholesterol biosynthesis to support myelination. Taken as a 
+      whole, these findings posit ER homeostasis as a critical driver of 
+      oligodendrocyte pathology and identify FICD as a novel target for alleviating 
+      non-neuronal toxicity in SCA3.
+FAU - Van Pelt, Kate M
+AU  - Van Pelt KM
+AUID- ORCID: 0000-0001-6892-9658
+AD  - Program in Cellular and Molecular Biology, University of Michigan, Ann Arbor, MI, 
+      48109, USA.
+AD  - Department of Molecular and Integrative Physiology, University of Michigan, Ann 
+      Arbor, MI, 48109, USA.
+FAU - Deng, Yamei
+AU  - Deng Y
+AD  - Department of Pathology, University of Michigan, Ann Arbor, MI, 48109, USA.
+AD  - Department of Computational Medicine & Bioinformatics, University of Michigan, 
+      Ann Arbor, MI, 48109, USA.
+FAU - Nesvizhskii, Alexey I
+AU  - Nesvizhskii AI
+AUID- ORCID: 0000-0002-2806-7819
+AD  - Department of Pathology, University of Michigan, Ann Arbor, MI, 48109, USA.
+AD  - Department of Computational Medicine & Bioinformatics, University of Michigan, 
+      Ann Arbor, MI, 48109, USA.
+FAU - Paulson, Henry L
+AU  - Paulson HL
+AUID- ORCID: 0000-0002-0382-7535
+AD  - Department of Neurology, 109 Zina Pitcher Place, University of Michigan, Ann 
+      Arbor, MI, 48109, USA.
+FAU - do Carmo Costa, Maria
+AU  - do Carmo Costa M
+AUID- ORCID: 0000-0001-8466-4864
+AD  - Department of Pharmacology and Toxicology, College of Human Medicine, Michigan 
+      State University, East Lansing, MI, 48824, USA.
+AD  - Formerly: Department of Neurology, 109 Zina Pitcher Place, University of 
+      Michigan, Ann Arbor, MI, 48109, USA.
+FAU - Truttmann, Matthias C
+AU  - Truttmann MC
+AUID- ORCID: 0000-0002-0536-7923
+AD  - Department of Molecular and Integrative Physiology, University of Michigan, Ann 
+      Arbor, MI, 48109, USA.
+AD  - Geriatrics Center, University of Michigan, Ann Arbor, MI, 48109, USA.
+LA  - eng
+GR  - R44 NS127711/NS/NINDS NIH HHS/United States
+GR  - F31 NS127485/NS/NINDS NIH HHS/United States
+GR  - R35 NS122302/NS/NINDS NIH HHS/United States
+GR  - R21 NS151155/NS/NINDS NIH HHS/United States
+GR  - R35 GM142561/GM/NIGMS NIH HHS/United States
+GR  - T32 GM007315/GM/NIGMS NIH HHS/United States
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260810
+PL  - United States
+TA  - bioRxiv
+JT  - bioRxiv : the preprint server for biology
+JID - 101680187
+PMC - PMC13640601
+COIS- Competing interests: The authors declare they have no competing interests.
+EDAT- 2026/10/08 11:39
+MHDA- 2026/10/08 11:40
+PMCR- 2026/10/06
+CRDT- 2026/10/08 05:56
+PHST- 2026/10/08 11:39 [pubmed]
+PHST- 2026/10/08 11:40 [medline]
+PHST- 2026/10/08 05:56 [entrez]
+PHST- 2026/10/06 00:00 [pmc-release]
+AID - 2026.08.07.743629 [pii]
+AID - 10.64898/2026.08.07.743629 [doi]
+PST - epublish
+SO  - bioRxiv [Preprint]. 2026 Aug 10:2026.08.07.743629. doi: 
+      10.64898/2026.08.07.743629.
+
+PMID- 42840349
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20261007
+LR  - 20261008
+IS  - 2631-9268 (Electronic)
+IS  - 2631-9268 (Linking)
+VI  - 8
+IP  - 4
+DP  - 2026 Dec
+TI  - Nanopore sequencing combined with adaptive sampling and NanoExpansion enables 
+      accurate characterization of repeat expansion disorders.
+PG  - lqag117
+LID - 10.1093/nargab/lqag117 [doi]
+LID - lqag117
+AB  - Expansion repeat disorders are caused by abnormal expansions of short tandem 
+      repeats (STRs). We evaluated targeted long-read nanopore sequencing for 
+      comprehensive characterization of STR expansions in 132 participants, including 
+      patients with myotonic dystrophy type 1 (DM1, n = 51) and DM2 (n = 3) already 
+      characterized by Southern blot, C9orf72-associated amyotrophic lateral sclerosis 
+      (ALS n = 11) evaluated by repeat primed polymerase chain reaction (RP-PCR; 
+      validation group), suspected spinocerebellar ataxia (SCA, n = 46), cerebellar 
+      ataxia with neuropathy and vestibular areflexia syndrome (CANVAS; n = 13), 
+      Huntington's disease (1), Kennedy disease (1), Friedreich ataxia (FRDA, 2), and 4 
+      healthy controls (test group). Native DNA was sequenced using adaptive sampling 
+      (AS) on Oxford Nanopore GridION or PromethION-2Solo platforms. Long-PCR 
+      sequencing was performed for comparison. We also developed NanoExpansion, a 
+      Python-based tool for sizing expanded alleles and detecting sequence 
+      interruptions. We correctly characterized all DM1, DM2, ALS, FRDA, Huntington's 
+      disease, and Kennedy disease cases, and identified eight SCA27B, two SCA37, three 
+      SCA31, one SCA3, and nine CANVAS cases. Compared with the AS approach, long-PCR 
+      underestimated alleles exceeding 800 repeats. Repeat interruptions were detected 
+      in 27/51 (52.9%) DM1 cases and 1/10 (10%) ALS, but not in CANVAS, FRDA, 
+      Huntington's disease, Kennedy disease, or SCA cases. This integrated sequencing 
+      analysis pipeline provides accurate, comprehensive characterization of repeat 
+      expansion disorders and has the potential to improve routine genetic diagnosis.
+CI  - (c) The Author(s) 2026. Published by Oxford University Press.
+FAU - Morandi, Luca
+AU  - Morandi L
+AUID- ORCID: 0000-0002-3810-9760
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Functional and Molecular Neuroimaging Unit, Bellaria Hospital, Department of 
+      Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 40126, Italy.
+FAU - Casadei, Francesco
+AU  - Casadei F
+AUID- ORCID: 0009-0006-0789-546X
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - De Fanti, Sara
+AU  - De Fanti S
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Bonan, Luigi
+AU  - Bonan L
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Ravaioli, Francesco
+AU  - Ravaioli F
+AUID- ORCID: 0000-0001-6976-8489
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Palombo, Flavia
+AU  - Palombo F
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Programma di Neurogenetica, 
+      Bologna, 40139, Italy.
+FAU - Fiorentino, Alessia
+AU  - Fiorentino A
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Programma di Neurogenetica, 
+      Bologna, 40139, Italy.
+FAU - de Pasqua, Silvia
+AU  - de Pasqua S
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Vacchiano, Veria
+AU  - Vacchiano V
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Avoni, Patrizia
+AU  - Avoni P
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Rizzo, Giovanni
+AU  - Rizzo G
+AUID- ORCID: 0000-0002-9718-2044
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Capellari, Sabina
+AU  - Capellari S
+AUID- ORCID: 0000-0003-1631-1439
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Ruggeri, Edoardo
+AU  - Ruggeri E
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+FAU - Donadio, Vincenzo
+AU  - Donadio V
+AUID- ORCID: 0000-0001-9776-7715
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Castellani, Gastone
+AU  - Castellani G
+AD  - Department of Medical and Surgical Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+AD  - IRCCS Azienda Ospedaliero - Universitaria di Bologna, Bologna, 40138, Italy.
+FAU - Bacalini, Maria Giulia
+AU  - Bacalini MG
+AUID- ORCID: 0000-0003-1618-2673
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Lodi, Raffaele
+AU  - Lodi R
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Liguori, Rocco
+AU  - Liguori R
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Carelli, Valerio
+AU  - Carelli V
+AUID- ORCID: 0000-0003-4923-6404
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Programma di Neurogenetica, 
+      Bologna, 40139, Italy.
+AD  - Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 
+      40126, Italy.
+FAU - Tonon, Caterina
+AU  - Tonon C
+AD  - IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, 40139, Italy.
+AD  - Functional and Molecular Neuroimaging Unit, Bellaria Hospital, Department of 
+      Biomedical and Neuromotor Sciences, University of Bologna, Bologna, 40126, Italy.
+LA  - eng
+PT  - Journal Article
+DEP - 20261006
+PL  - England
+TA  - NAR Genom Bioinform
+JT  - NAR genomics and bioinformatics
+JID - 101756213
+SB  - IM
+MH  - Humans
+MH  - *DNA Repeat Expansion
+MH  - *Nanopore Sequencing/methods
+MH  - Microsatellite Repeats
+MH  - Polymerase Chain Reaction
+MH  - Amyotrophic Lateral Sclerosis/genetics
+MH  - Sequence Analysis, DNA/methods
+MH  - Spinocerebellar Ataxias/genetics
+MH  - Myotonic Dystrophy/genetics
+PMC - PMC13639371
+COIS- None disclosed.
+EDAT- 2026/10/07 11:32
+MHDA- 2026/10/07 11:33
+PMCR- 2026/10/06
+CRDT- 2026/10/07 08:07
+PHST- 2026/03/26 00:00 [received]
+PHST- 2026/09/01 00:00 [revised]
+PHST- 2026/09/07 00:00 [accepted]
+PHST- 2026/10/07 11:33 [medline]
+PHST- 2026/10/07 11:32 [pubmed]
+PHST- 2026/10/07 08:07 [entrez]
+PHST- 2026/10/06 00:00 [pmc-release]
+AID - lqag117 [pii]
+AID - 10.1093/nargab/lqag117 [doi]
+PST - epublish
+SO  - NAR Genom Bioinform. 2026 Oct 6;8(4):lqag117. doi: 10.1093/nargab/lqag117. 
+      eCollection 2026 Dec.
+
+PMID- 42806408
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260929
+LR  - 20261001
+IS  - 2047-9158 (Print)
+IS  - 2047-9158 (Electronic)
+IS  - 2047-9158 (Linking)
+VI  - 15
+IP  - 1
+DP  - 2026 Sep 29
+TI  - Large-scale genetic profiling of hereditary ataxias in China: implications for a 
+      stepwise molecular diagnostic strategy.
+LID - 10.1186/s40035-026-00584-y [doi]
+LID - 50
+AB  - BACKGROUND: Hereditary ataxias are clinically and genetically heterogeneous, 
+      which complicates clinical management, genetic counseling, and scientific 
+      research. Efficient molecular diagnosis is essential but requires molecular 
+      epidemiological considerations due to the variable genetic landscapes across 
+      regions and populations. In China, despite the established predominance of 
+      spinocerebellar ataxia type 3 (SCA3), comprehensive data on the genetic landscape 
+      of hereditary ataxias are limited and increasingly outdated, leaving insufficient 
+      evidence to support an epidemiology-informed molecular diagnostic strategy and 
+      its clinical implementation as a diagnostic algorithm. METHODS: We 
+      retrospectively established a large, real-world, comprehensive cohort of 
+      hereditary ataxias (the HARMONY cohort) recruited from two medical centers in the 
+      Yangtze River Delta region of China (2008-2024) for genetic profiling. Molecular 
+      diagnoses were categorized into four classifications ('Definitive', 'Probable', 
+      'Unclear', 'Undiagnosed') by integrating previously identified causative variants 
+      with results from systematic genetic testing in etiologically undetermined 
+      probands, and the associated variants were mapped onto genetic landscapes. 
+      RESULTS: A total of 2096 probands were included in the HARMONY cohort, achieving 
+      a molecular diagnostic yield of 84.9%, with 1715 (81.8%) 'Definitive' and 65 
+      (3.1%) 'Probable' positive diagnoses, alongside 87 (4.2%) 'Unclear' and 229 
+      (10.9%) 'Undiagnosed' cases. While the genetic landscape was dominated by 
+      variants underlying SCA3 (1249; 59.6%), with SCA2 (150; 7.2%), SCA1 (139; 6.6%), 
+      SCA6 (51; 2.4%), putative SCA36 (36; 1.7%), and SCA12 (35; 1.7%) constituting the 
+      major subtypes, the genetic profiling revealed a long tail of rare genotypes. 
+      Onset age distributions were characterized for genotypes with >/= 5 probands. No 
+      probands were found to carry expansions in ZFHX3, BEAN1, DAB1, THAP11, or FXN. 
+      CONCLUSIONS: Genetic profiling of the HARMONY cohort revealed a skewed genetic 
+      landscape dominated by a few common repeat-expansion subtypes, alongside a 
+      markedly heterogeneous long tail of rare etiologies. The holistic profile 
+      supports a stepwise molecular diagnostic strategy, under which we propose a YRD 
+      (Yangtze River Delta)-oriented candidate diagnostic algorithm. This study 
+      provides an evidence base for early molecular diagnosis, prioritization of 
+      therapeutic development, and adaptive design of diagnostic tools for hereditary 
+      ataxias.
+CI  - (c) 2026. The Author(s).
+FAU - Yu, Jin-Yang
+AU  - Yu JY
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China.
+AD  - Nanhu Brain-computer Interface Institute, Hangzhou, China.
+FAU - Sun, Yi-Min
+AU  - Sun YM
+AD  - Department of Neurology and National Research Center for Aging and Medicine & 
+      National Center for Neurological Disorders, State Key Laboratory of Medical 
+      Neurobiology, Huashan Hospital, Fudan University, Shanghai, China.
+FAU - Dong, Yi
+AU  - Dong Y
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China.
+FAU - Wu, Jian-Jun
+AU  - Wu JJ
+AD  - Department of Neurology and National Research Center for Aging and Medicine & 
+      National Center for Neurological Disorders, State Key Laboratory of Medical 
+      Neurobiology, Huashan Hospital, Fudan University, Shanghai, China.
+FAU - Zhu, Chen-Hao
+AU  - Zhu CH
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China.
+FAU - Du, Yi-Chu
+AU  - Du YC
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China.
+FAU - Zhang, Yi-Xin
+AU  - Zhang YX
+AD  - Department of Neurology and National Research Center for Aging and Medicine & 
+      National Center for Neurological Disorders, State Key Laboratory of Medical 
+      Neurobiology, Huashan Hospital, Fudan University, Shanghai, China.
+FAU - Zhang, Yue
+AU  - Zhang Y
+AD  - Department of Neurology and National Research Center for Aging and Medicine & 
+      National Center for Neurological Disorders, State Key Laboratory of Medical 
+      Neurobiology, Huashan Hospital, Fudan University, Shanghai, China.
+FAU - Zou, Sheng-Mei
+AU  - Zou SM
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China.
+FAU - Ma, Yin
+AU  - Ma Y
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China.
+FAU - Dong, Hai-Lin
+AU  - Dong HL
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China. hailindong2015@zju.edu.cn.
+AD  - Nanhu Brain-computer Interface Institute, Hangzhou, China. 
+      hailindong2015@zju.edu.cn.
+FAU - Wu, Zhi-Ying
+AU  - Wu ZY
+AUID- ORCID: 0000-0003-2106-572X
+AD  - Department of Medical Genetics and Center for Rare Diseases, and Zhejiang Key 
+      Laboratory of Rare Diseases for Precision Medicine and Clinical Translation, 
+      Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 
+      China. zhiyingwu@zju.edu.cn.
+AD  - Nanhu Brain-computer Interface Institute, Hangzhou, China. zhiyingwu@zju.edu.cn.
+AD  - MOE Frontier Science Center for Brain Science and Brain-Machine Integration, 
+      School of Brain Science and Brain Medicine, Zhejiang University, Hangzhou, China. 
+      zhiyingwu@zju.edu.cn.
+LA  - eng
+GR  - 2025ZD0217702/Ministry of Science and Technology of China/
+GR  - 82230062/National Natural Science Foundation of China/
+PT  - Journal Article
+DEP - 20260929
+PL  - England
+TA  - Transl Neurodegener
+JT  - Translational neurodegeneration
+JID - 101591861
+SB  - IM
+MH  - Humans
+MH  - China/epidemiology
+MH  - Retrospective Studies
+MH  - *Spinocerebellar Degenerations/genetics/diagnosis/epidemiology
+MH  - Female
+MH  - Male
+MH  - *Genetic Testing/methods
+MH  - *Genetic Profile
+MH  - Molecular Diagnostic Techniques/methods
+MH  - Cohort Studies
+MH  - Adult
+PMC - PMC13621623
+OTO - NOTNLM
+OT  - Chinese population
+OT  - Genetic landscape
+OT  - Hereditary ataxias
+OT  - Molecular diagnosis
+COIS- Declarations. Ethics approval and consent to participate: The HARMONY study was 
+      approved by the Human Research Ethics Committee of the Second Affiliated 
+      Hospital, Zhejiang University School of Medicine (approval No. 2025-1669), and 
+      the Ethics Committee of Huashan Hospital, Fudan University (approval No. 
+      2025-1659). Written informed consent was obtained from all participants or their 
+      legal guardians. This study is registered with ClinicalTrials.gov (NCT07092358; 
+      registration date: July 29, 2025). Consent for publication: Not applicable. 
+      Competing interests: The authors report no potential conflicts of interest.
+EDAT- 2026/09/29 05:30
+MHDA- 2026/09/29 05:31
+PMCR- 2026/09/29
+CRDT- 2026/09/29 00:07
+PHST- 2026/02/22 00:00 [received]
+PHST- 2026/08/19 00:00 [accepted]
+PHST- 2026/09/29 05:31 [medline]
+PHST- 2026/09/29 05:30 [pubmed]
+PHST- 2026/09/29 00:07 [entrez]
+PHST- 2026/09/29 00:00 [pmc-release]
+AID - 10.1186/s40035-026-00584-y [pii]
+AID - 584 [pii]
+AID - 10.1186/s40035-026-00584-y [doi]
+PST - epublish
+SO  - Transl Neurodegener. 2026 Sep 29;15(1):50. doi: 10.1186/s40035-026-00584-y.
+
+PMID- 42802208
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260927
+LR  - 20261023
+IS  - 1473-4230 (Electronic)
+IS  - 1473-4222 (Print)
+IS  - 1473-4222 (Linking)
+VI  - 25
+IP  - 5
+DP  - 2026 Sep 28
+TI  - Hereditary and Non-hereditary Cerebellar Ataxias in Latvia: Six Years of 
+      Experience at the National Reference Centre (ERN-RND Affiliated Partner).
+LID - 10.1007/s12311-026-02084-1 [doi]
+LID - 145
+AB  - Cerebellar ataxias are rare but disabling disorders, with marked regional 
+      differences in genetic subtypes. Data from Eastern Europe, especially the Baltic 
+      region, remain scarce. To describe the aetiological spectrum and diagnostic 
+      challenges of cerebellar ataxia in Latvia over a six-year period. A retrospective 
+      descriptive single centre study was conducted at the national reference centre 
+      for rare neurological disorders in Latvia. Patients diagnosed with cerebellar 
+      ataxia between 2019 and 2025 were reviewed. Clinical data, laboratory, imaging, 
+      and genetic testing were analysed. Of 116 patients, 37 underwent local 
+      repeat-expansion analysis (ATXN1/SCA1, ATXN2/SCA2, ATXN3/SCA3, CACNA1A/SCA6); 14 
+      underwent NGS-based broad panels; and 9 were referred for RFC1 repeat-expansion 
+      analysis at an external European reference laboratory. Of 116 patients, 70 
+      (60.3%) received a confirmed aetiological diagnosis. Non-hereditary ataxias were 
+      the largest subgroup (65.7% of confirmed), with immune-mediated ataxias (21.4%) 
+      and sporadic neurodegenerative MSA-C (20.0%) among the most frequent diagnoses. 
+      The genetic diagnostic yield was 20.7% (24/116). Among hereditary cases, 
+      autosomal dominant ataxias predominated with SCA2 as the most frequent subtype - 
+      contrasting with the SCA3 predominance reported in most European cohorts. 
+      Autosomal recessive ataxias accounted for 8.6%, with RFC1-related CANVAS 
+      identified in 5.7% of confirmed cases; notably, all four RFC1-CANVAS patients 
+      presented with focal cervical dystonia (p = 0.020). No cases of Friedreich's 
+      ataxia were confirmed, partly reflecting the absence of routine GAA 
+      repeat-expansion testing. The remaining 46 patients were classified as cerebellar 
+      ataxia of undetermined aetiology, largely due to limited access to comprehensive 
+      genetic testing. This is the first systematic study of cerebellar ataxia in 
+      Latvia. Regional variation in genetic subtypes, frequent RFC1-related dystonia, 
+      and limited access to comprehensive genetic testing highlight the need for 
+      expanded diagnostic capacity. These findings have implications for diagnosis, 
+      counselling, and emerging targeted therapies.
+CI  - (c) 2026. The Author(s).
+FAU - Lazdovska, Krista
+AU  - Lazdovska K
+AD  - Department of Biology and Microbiology, Riga Stradins University, Riga, Latvia. 
+      kristalazdovska@gmail.com.
+AD  - Department of Doctoral Studies, Riga Stradins University, Riga, Latvia. 
+      kristalazdovska@gmail.com.
+AD  - Rare Neurological Disease Centre, Pauls Stradins Clinical University Hospital, 
+      Riga, Latvia. kristalazdovska@gmail.com.
+FAU - Baborikina, Alise
+AU  - Baborikina A
+AD  - Rare Neurological Disease Centre, Pauls Stradins Clinical University Hospital, 
+      Riga, Latvia.
+FAU - Krutovs, Vladimirs
+AU  - Krutovs V
+AD  - Rare Neurological Disease Centre, Pauls Stradins Clinical University Hospital, 
+      Riga, Latvia.
+FAU - Rozevska, Marija
+AU  - Rozevska M
+AD  - Department of Biology and Microbiology, Riga Stradins University, Riga, Latvia.
+AD  - Children's Clinical University Hospital, Riga, Latvia.
+AD  - Institute of Oncology and Molecular Genetics, Riga Stradins University, Riga, 
+      Latvia.
+FAU - Kenina, Viktorija
+AU  - Kenina V
+AD  - Department of Biology and Microbiology, Riga Stradins University, Riga, Latvia.
+AD  - Rare Neurological Disease Centre, Pauls Stradins Clinical University Hospital, 
+      Riga, Latvia.
+LA  - eng
+PT  - Journal Article
+DEP - 20260928
+PL  - United States
+TA  - Cerebellum
+JT  - Cerebellum (London, England)
+JID - 101089443
+SB  - IM
+MH  - Humans
+MH  - Latvia/epidemiology
+MH  - *Cerebellar Ataxia/genetics/epidemiology/diagnosis
+MH  - Retrospective Studies
+MH  - Female
+MH  - Male
+MH  - Middle Aged
+MH  - Adult
+MH  - Aged
+MH  - Young Adult
+MH  - Adolescent
+MH  - Genetic Testing
+MH  - Aged, 80 and over
+PMC - PMC13616843
+OTO - NOTNLM
+OT  - Ataxia diagnosis
+OT  - Ataxia in Latvia
+OT  - Cerebellar ataxia
+OT  - Genetic ataxia
+COIS- Declarations. Competing interests: The authors declare no competing interests.
+EDAT- 2026/09/28 05:33
+MHDA- 2026/09/28 05:34
+PMCR- 2026/09/28
+CRDT- 2026/09/27 23:19
+PHST- 2026/05/10 00:00 [received]
+PHST- 2026/09/15 00:00 [accepted]
+PHST- 2026/09/28 05:34 [medline]
+PHST- 2026/09/28 05:33 [pubmed]
+PHST- 2026/09/27 23:19 [entrez]
+PHST- 2026/09/28 00:00 [pmc-release]
+AID - 10.1007/s12311-026-02084-1 [pii]
+AID - 2084 [pii]
+AID - 10.1007/s12311-026-02084-1 [doi]
+PST - epublish
+SO  - Cerebellum. 2026 Sep 28;25(5):145. doi: 10.1007/s12311-026-02084-1.
+
+PMID- 42786195
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260924
+LR  - 20260928
+IS  - 2373-8057 (Print)
+IS  - 2373-8057 (Electronic)
+IS  - 2373-8057 (Linking)
+VI  - 12
+IP  - 1
+DP  - 2026 Sep 24
+TI  - Unified long-read panel for Parkinson's and repeat expansion disorders.
+LID - 10.1038/s41531-026-01585-4 [doi]
+LID - 233
+AB  - In this study, we designed a gene panel based on Nanopore long-read sequencing 
+      using adaptive sampling, targeting n = 564 genes associated with Parkinson's 
+      disease (PD) and repeat expansion disorders. We investigated its diagnostic 
+      utility in n = 18 patients with (1) pathogenic variants in LRRK2, PRKN, SNCA, and 
+      RAB32 (n = 7); (2) idiopathic PD or FTD negative for known genetic causes 
+      (n = 3); (3) repeat expansions in ATXN1, ATXN2, ATXN3, C9orf72, DAB1, FGF14, HTT, 
+      and TAF1-SVA (n = 8). Three individuals were multiplexed per flow cell, achieving 
+      a mean coverage of 24X (SD = +/- 9X) per sample. Ultimately, 17/20 (85%; 
+      Clopper-Pearson 95% CI: 62-97%) expected pathogenic variants were identified; 
+      i.e., an SNCA triplication and two repeat expansions in C9orf72 and TAF1-SVA were 
+      missed. Additional variants in STXBP2, AP4S1, RARS2, ALS2, and CNBP were 
+      identified in five patients. Adaptive sampling is a versatile genetic diagnostic 
+      tool in neurodegenerative disorders, while enabling cost-effective multiplexing. 
+      Further validation and improvements in bioinformatic analysis are needed.
+CI  - (c) 2026. The Author(s).
+FAU - Fienemann, Andre
+AU  - Fienemann A
+AUID- ORCID: 0009-0004-9594-3673
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Prietzsche, Julia C
+AU  - Prietzsche JC
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Labeta, Joshua
+AU  - Labeta J
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Much, Christoph
+AU  - Much C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Schaake, Susen
+AU  - Schaake S
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Luth, Theresa
+AU  - Luth T
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Gabbert, Carolin
+AU  - Gabbert C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Zimprich, Alexander
+AU  - Zimprich A
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Stogmann, Elisabeth
+AU  - Stogmann E
+AUID- ORCID: 0000-0003-4688-8482
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Konig, Theresa
+AU  - Konig T
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Ganos, Christos
+AU  - Ganos C
+AD  - Edmond J. Safra Program in Parkinson's Disease and the Morton and Gloria Shulman 
+      Movement Disorders Clinic, Toronto Western Hospital, Toronto, ON, Canada.
+AD  - Division of Neurology, University of Toronto, Toronto, ON, Canada.
+AD  - Krembil Brain Institute, Toronto, ON, Canada.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Suna and Inan Kirac Foundation, Neurodegeneration Research Laboratory (NDAL), 
+      KUTTAM, School of Medicine, Koc University, Istanbul, Turkey.
+FAU - Basak, A Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Suna and Inan Kirac Foundation, Neurodegeneration Research Laboratory (NDAL), 
+      KUTTAM, School of Medicine, Koc University, Istanbul, Turkey.
+FAU - Jamora, Roland Dominic G
+AU  - Jamora RDG
+AUID- ORCID: 0000-0001-5317-7369
+AD  - Department of Neurosciences, College of Medicine-Philippine General Hospital, 
+      University of the Philippines Manila, Manila, Philippines.
+FAU - Rosales, Raymond L
+AU  - Rosales RL
+AD  - Department of Neurology and Psychiatry, University of Santo Tomas and the 
+      CNS-Metropolitan Medical Center, Manila, Philippines.
+FAU - Saranza, Gerard
+AU  - Saranza G
+AUID- ORCID: 0000-0001-8322-4226
+AD  - Department of Neurosciences, College of Medicine-Philippine General Hospital, 
+      University of the Philippines Manila, Manila, Philippines.
+AD  - Section of Neurology, Department of Internal Medicine, Chong Hua Hospital, Cebu, 
+      Philippines.
+FAU - Diesta, Cid Czarina E
+AU  - Diesta CCE
+AD  - Department of Neurosciences, Movement Disorders Clinic, Makati Medical Center, 
+      Makati City, Philippines.
+FAU - Moller, Meret
+AU  - Moller M
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Borsche, Max
+AU  - Borsche M
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Kleinz, Teresa
+AU  - Kleinz T
+AUID- ORCID: 0009-0000-6313-7395
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Balck, Alexander
+AU  - Balck A
+AUID- ORCID: 0000-0003-3967-0282
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Bruggemann, Norbert
+AU  - Bruggemann N
+AUID- ORCID: 0000-0001-5969-6899
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Seibler, Philip
+AU  - Seibler P
+AUID- ORCID: 0000-0002-3496-7194
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Klein, Christine
+AU  - Klein C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Trinh, Joanne
+AU  - Trinh J
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany. 
+      joanne.trinh@uni-luebeck.de.
+LA  - eng
+GR  - TR 1714/4-1/Deutsche Forschungsgemeinschaft/
+PT  - Journal Article
+DEP - 20260924
+PL  - United States
+TA  - NPJ Parkinsons Dis
+JT  - NPJ Parkinson's disease
+JID - 101675390
+PMC - PMC13612410
+COIS- Declarations. Competing interests: The authors declare the following competing 
+      interests: RDGJ has received travel grants and speakers' honoraria from Royal 
+      Care Super Specialty Hospital, Darya-Varya Laboratoria, and the Philippine 
+      offices of AbbVie, Exeltis, HI-Eisai, Innogen, Medichem, Natrapharm, Sun, 
+      Torrent, and Vexxa. M.B. received honoraria from Bial Germany. N.B. received 
+      honoraria from AbbVie, Esteve, Ipsen, Merz, Takeda, Teva, and Zambon. J.T. has 
+      received travel funding to speak on behalf of O.N.T. C.K. has served as a medical 
+      advisor to Centogene, Takeda, and Biogen and received speakers' honoraria from 
+      Bial, as well as royalties from Oxford University Press and Springer Nature. The 
+      other authors do not have a competing interest.
+EDAT- 2026/09/25 05:31
+MHDA- 2026/09/25 05:32
+PMCR- 2026/09/24
+CRDT- 2026/09/24 23:30
+PHST- 2026/01/07 00:00 [received]
+PHST- 2026/09/12 00:00 [accepted]
+PHST- 2026/09/25 05:32 [medline]
+PHST- 2026/09/25 05:31 [pubmed]
+PHST- 2026/09/24 23:30 [entrez]
+PHST- 2026/09/24 00:00 [pmc-release]
+AID - 10.1038/s41531-026-01585-4 [pii]
+AID - 1585 [pii]
+AID - 10.1038/s41531-026-01585-4 [doi]
+PST - epublish
+SO  - NPJ Parkinsons Dis. 2026 Sep 24;12(1):233. doi: 10.1038/s41531-026-01585-4.
+
 PMID- 42621215
 OWN - NLM
 STAT- PubMed-not-MEDLINE
@@ -188,13 +1329,18 @@ SO  - Mov Disord. 2026 Aug 7. doi: 10.1002/mds.70465.
 
 PMID- 42538636
 OWN - NLM
-STAT- Publisher
-LR  - 20260819
+STAT- MEDLINE
+DCOM- 20261022
+LR  - 20261024
 IS  - 1531-8249 (Electronic)
+IS  - 0364-5134 (Print)
 IS  - 0364-5134 (Linking)
-DP  - 2026 Jul 31
+VI  - 100
+IP  - 5
+DP  - 2026 Nov
 TI  - Establishing Sensory Neurons as Therapeutic Targets in Peripheral Neuropathy 
       Driven by Polyglutamine Expanded Murine ATXN3.
+PG  - 1039-1054
 LID - 10.1002/ana.78317 [doi]
 AB  - OBJECTIVE: Repeat expansion mutations underlie diverse neurogenetic disorders, 
       many involving the peripheral nervous system. Despite peripheral neuropathy being 
@@ -218,7 +1364,7 @@ AB  - OBJECTIVE: Repeat expansion mutations underlie diverse neurogenetic disord
       These findings define a pathogenic role for repeat expansion-driven peripheral 
       nerve degeneration in SCA3, identify sensory neurons as key therapeutic targets, 
       and provide a preclinical platform for developing peripheral interventions in 
-      SCA3 and related repeat expansion disorders. ANN NEUROL 2026.
+      SCA3 and related repeat expansion disorders. ANN NEUROL 2026;100:1039-1054.
 CI  - (c) 2026 The Author(s). Annals of Neurology published by Wiley Periodicals LLC on 
       behalf of American Neurological Association.
 FAU - Mato, Juan P
@@ -262,19 +1408,41 @@ PL  - United States
 TA  - Ann Neurol
 JT  - Annals of neurology
 JID - 7707449
+RN  - EC 3.4.19.12 (Ataxin-3)
+RN  - EC 3.4.19.12 (Atxn3 protein, mouse)
+RN  - 26700-71-0 (polyglutamine)
+RN  - 0 (Peptides)
 SB  - IM
+MH  - Animals
+MH  - *Ataxin-3/genetics
+MH  - Mice
+MH  - *Sensory Receptor Cells/pathology/metabolism
+MH  - *Peripheral Nervous System Diseases/genetics/pathology/therapy
+MH  - Mice, Knockout
+MH  - *Peptides/genetics
+MH  - Ganglia, Spinal/metabolism/pathology
+MH  - Disease Models, Animal
+MH  - *Machado-Joseph Disease/genetics/pathology
+MH  - Male
+MH  - Trinucleotide Repeat Expansion/genetics
+MH  - Mice, Transgenic
+PMC - PMC13688050
+COIS- Nothing to report.
 EDAT- 2026/08/01 06:35
-MHDA- 2026/08/01 06:35
+MHDA- 2026/10/23 05:32
+PMCR- 2026/10/22
 CRDT- 2026/08/01 00:53
 PHST- 2026/07/13 00:00 [revised]
 PHST- 2026/03/02 00:00 [received]
 PHST- 2026/07/15 00:00 [accepted]
-PHST- 2026/08/01 06:35 [medline]
+PHST- 2026/10/23 05:32 [medline]
 PHST- 2026/08/01 06:35 [pubmed]
 PHST- 2026/08/01 00:53 [entrez]
+PHST- 2026/10/22 00:00 [pmc-release]
+AID - ANA78317 [pii]
 AID - 10.1002/ana.78317 [doi]
-PST - aheadofprint
-SO  - Ann Neurol. 2026 Jul 31. doi: 10.1002/ana.78317.
+PST - ppublish
+SO  - Ann Neurol. 2026 Nov;100(5):1039-1054. doi: 10.1002/ana.78317. Epub 2026 Jul 31.
 
 PMID- 42512530
 OWN - NLM
@@ -707,7 +1875,7 @@ PMID- 42396269
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260715
-LR  - 20260821
+LR  - 20260922
 DP  - 2026 Jun 22
 TI  - Repeat expansions in Parkinson's disease and parkinsonism across ancestries: 
       insights from a global genetic cohort.
@@ -1778,7 +2946,7 @@ PMID- 42096001
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260716
-LR  - 20260813
+LR  - 20260921
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Print)
 IS  - 1473-4222 (Linking)
@@ -2292,7 +3460,7 @@ PMID- 41818480
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260711
-LR  - 20260813
+LR  - 20260920
 IS  - 1759-6653 (Electronic)
 IS  - 1759-6653 (Linking)
 VI  - 18
@@ -2852,7 +4020,7 @@ PMID- 41701293
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260707
-LR  - 20260707
+LR  - 20261009
 IS  - 1559-1182 (Electronic)
 IS  - 0893-7648 (Linking)
 VI  - 63
@@ -3021,7 +4189,7 @@ PMID- 41613623
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260130
-LR  - 20260425
+LR  - 20261015
 IS  - 1662-5102 (Print)
 IS  - 1662-5102 (Electronic)
 IS  - 1662-5102 (Linking)
@@ -3079,6 +4247,8 @@ AD  - Department of Human Genetics, University of Michigan, Ann Arbor, MI, Unite
       States.
 LA  - eng
 GR  - F31 NS145373/NS/NINDS NIH HHS/United States
+GR  - R01 NS122751/NS/NINDS NIH HHS/United States
+GR  - R01 NS135254/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20260114
 PL  - Switzerland
@@ -4199,7 +5369,7 @@ PMID- 41009775
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250927
-LR  - 20260127
+LR  - 20260925
 IS  - 1422-0067 (Electronic)
 IS  - 1422-0067 (Linking)
 VI  - 26
@@ -4437,7 +5607,7 @@ PMID- 40906330
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250904
-LR  - 20250920
+LR  - 20261010
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -4555,7 +5725,7 @@ PMID- 40900235
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250903
-LR  - 20250920
+LR  - 20261010
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -5358,7 +6528,7 @@ PMID- 40692435
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20251105
-LR  - 20260127
+LR  - 20260925
 IS  - 1460-2156 (Electronic)
 IS  - 0006-8950 (Print)
 IS  - 0006-8950 (Linking)
@@ -5643,7 +6813,7 @@ PMID- 40684213
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250719
-LR  - 20260811
+LR  - 20260925
 IS  - 2051-5960 (Electronic)
 IS  - 2051-5960 (Linking)
 VI  - 13
@@ -6518,7 +7688,7 @@ PMID- 40178277
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250515
-LR  - 20260706
+LR  - 20260918
 IS  - 1468-1331 (Electronic)
 IS  - 1351-5101 (Print)
 IS  - 1351-5101 (Linking)
@@ -7065,7 +8235,7 @@ PMID- 39820777
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250501
-LR  - 20250522
+LR  - 20261101
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 24
@@ -7200,7 +8370,7 @@ PMID- 39731318
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241228
-LR  - 20260704
+LR  - 20260918
 IS  - 1468-1331 (Electronic)
 IS  - 1351-5101 (Print)
 IS  - 1351-5101 (Linking)
@@ -7360,7 +8530,7 @@ PMID- 39699045
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250428
-LR  - 20260127
+LR  - 20261009
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Linking)
 VI  - 40
@@ -7482,6 +8652,7 @@ GR  - 82371272/National Natural Science Foundation of China/
 GR  - 2024M753690/China Postdoctoral Science Foundation/
 GR  - GZB20230870/Postdoctoral Fellowship Program of CPSF/
 PT  - Journal Article
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
 DEP - 20241219
 PL  - United States
 TA  - Mov Disord
@@ -7959,7 +9130,7 @@ PMID- 39375222
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241029
-LR  - 20241101
+LR  - 20260923
 IS  - 1432-1203 (Electronic)
 IS  - 0340-6717 (Print)
 IS  - 0340-6717 (Linking)
@@ -8092,7 +9263,7 @@ PMID- 39317855
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241123
-LR  - 20241202
+LR  - 20261101
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 23
@@ -10081,7 +11252,7 @@ PMID- 38429929
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240502
-LR  - 20260618
+LR  - 20260922
 IS  - 1525-0024 (Electronic)
 IS  - 1525-0016 (Print)
 IS  - 1525-0016 (Linking)
@@ -10322,7 +11493,7 @@ PMID- 38227102
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240117
-LR  - 20250204
+LR  - 20261031
 IS  - 1573-4978 (Electronic)
 IS  - 0301-4851 (Linking)
 VI  - 51
@@ -10927,7 +12098,7 @@ PMID- 37848721
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240110
-LR  - 20240110
+LR  - 20261010
 IS  - 1435-232X (Electronic)
 IS  - 1434-5161 (Linking)
 VI  - 69
@@ -11772,7 +12943,7 @@ SO  - Heliyon. 2023 May 12;9(5):e16190. doi: 10.1016/j.heliyon.2023.e16190. eCol
 PMID- 37122622
 OWN - NLM
 STAT- PubMed-not-MEDLINE
-LR  - 20260430
+LR  - 20260914
 IS  - 1662-5099 (Print)
 IS  - 1662-5099 (Electronic)
 IS  - 1662-5099 (Linking)
@@ -11829,6 +13000,9 @@ AU  - Costa MDC
 AD  - Department of Neurology, Michigan Medicine, University of Michigan, Ann Arbor, 
       MI, United States.
 LA  - eng
+GR  - R01 NS038712/NS/NINDS NIH HHS/United States
+GR  - R01 NS086778/NS/NINDS NIH HHS/United States
+GR  - R35 NS122302/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 DEP - 20230414
 PL  - Switzerland
@@ -13032,7 +14206,7 @@ PMID- 36482247
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20230111
-LR  - 20250530
+LR  - 20261030
 IS  - 1546-1726 (Electronic)
 IS  - 1097-6256 (Linking)
 VI  - 26
@@ -13392,7 +14566,7 @@ PMID- 35997830
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20221116
-LR  - 20230201
+LR  - 20261010
 IS  - 1590-3478 (Electronic)
 IS  - 1590-1874 (Linking)
 VI  - 43
@@ -14484,7 +15658,7 @@ PMID- 35182509
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220321
-LR  - 20260518
+LR  - 20261031
 IS  - 1474-4465 (Electronic)
 IS  - 1474-4422 (Print)
 IS  - 1474-4422 (Linking)
@@ -14621,7 +15795,6 @@ CN  - Genomics England Research Consortium
 LA  - eng
 GR  - MR/L501542/1/MRC_/Medical Research Council/United Kingdom
 GR  - G1001253/MRC_/Medical Research Council/United Kingdom
-GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
 GR  - MR/M009203/1/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S035699/1/MRC_/Medical Research Council/United Kingdom
 GR  - MC_EX_MR/M009203/1/MRC_/Medical Research Council/United Kingdom
@@ -14634,6 +15807,8 @@ GR  - G0701075/MRC_/Medical Research Council/United Kingdom
 GR  - MR/K000608/1/MRC_/Medical Research Council/United Kingdom
 GR  - DH_/Department of Health/United Kingdom
 GR  - G-1307/PUK_/Parkinson's UK/United Kingdom
+GR  - 221951/WT_/Wellcome Trust/United Kingdom
+GR  - MC_PC_14089/MRC_/Medical Research Council/United Kingdom
 GR  - MC_UU_00015/9/MRC_/Medical Research Council/United Kingdom
 GR  - MR/S006753/1/MRC_/Medical Research Council/United Kingdom
 PT  - Journal Article
@@ -15193,7 +16368,7 @@ PMID- 34783886
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220523
-LR  - 20220812
+LR  - 20261011
 IS  - 1432-1459 (Electronic)
 IS  - 0340-5354 (Linking)
 VI  - 269
@@ -16099,7 +17274,7 @@ PMID- 34191270
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20220117
-LR  - 20220117
+LR  - 20261010
 IS  - 1559-1166 (Electronic)
 IS  - 0895-8696 (Linking)
 VI  - 71
@@ -21741,7 +22916,7 @@ PMID- 30120431
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20200213
-LR  - 20200213
+LR  - 20261009
 IS  - 1476-5497 (Electronic)
 IS  - 0307-0565 (Linking)
 VI  - 43
@@ -22871,7 +24046,7 @@ PMID- 29666341
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20180917
-LR  - 20260127
+LR  - 20261012
 IS  - 0973-7731 (Electronic)
 IS  - 0022-1333 (Linking)
 VI  - 97
@@ -27598,6 +28773,7 @@ PST - epublish
 SO  - PLoS One. 2015 Jun 17;10(6):e0130336. doi: 10.1371/journal.pone.0130336. 
       eCollection 2015.
 
+
 PMID- 26077168
 OWN - NLM
 STAT- MEDLINE
@@ -28641,7 +29817,6 @@ PST - epublish
 SO  - PLoS Genet. 2015 Jan 15;11(1):e1004834. doi: 10.1371/journal.pgen.1004834. 
       eCollection 2015 Jan.
 
-
 PMID- 25466696
 OWN - NLM
 STAT- MEDLINE
@@ -29297,7 +30472,7 @@ PMID- 25026993
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20141118
-LR  - 20211021
+LR  - 20261011
 IS  - 1432-1203 (Electronic)
 IS  - 0340-6717 (Linking)
 VI  - 133
@@ -31861,7 +33036,7 @@ PMID- 21975858
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20120919
-LR  - 20220311
+LR  - 20261011
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 11
@@ -32960,7 +34135,7 @@ PMID- 20467850
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20110125
-LR  - 20211020
+LR  - 20261011
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 9
@@ -46943,6 +48118,7 @@ AID - 10.1016/0022-510x(95)00175-2 [doi]
 PST - ppublish
 SO  - J Neurol Sci. 1995 Nov;133(1-2):128-33. doi: 10.1016/0022-510x(95)00175-2.
 
+
 PMID- 7574470
 OWN - NLM
 STAT- MEDLINE
@@ -47569,7 +48745,6 @@ PHST- 1995/06/01 00:00 [entrez]
 AID - 10.1093/hmg/4.6.1001 [doi]
 PST - ppublish
 SO  - Hum Mol Genet. 1995 Jun;4(6):1001-5. doi: 10.1093/hmg/4.6.1001.
-
 
 PMID- 7633439
 OWN - NLM
