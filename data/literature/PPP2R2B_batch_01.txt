@@ -1,9 +1,84 @@
 
+PMID- 42845531
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20261008
+LR  - 20261008
+DP  - 2026 Aug 10
+TI  - Tandem repeat expansions in DAPK1 , ANK3 , and RPL14 are associated with diverse 
+      neurodegenerative diseases.
+LID - 2026.08.06.26358503 [pii]
+LID - 10.64898/2026.08.06.26358503 [doi]
+AB  - Tandem repeat expansions (TREs) cause over 50 neurological conditions, yet their 
+      contribution to neurodegenerative disease risk at a population scale remains 
+      incompletely characterized. We performed a TRE association study across 6,539 
+      short tandem repeat loci in 276,411 individuals from the UK Biobank and 44,370 
+      individuals from the All of Us Research Program, using two composite 
+      neurodegenerative phenotypes to increase statistical power and capture 
+      pleiotropic effects. Meta-analysis across the two cohorts identified associations 
+      at eight established pathogenic TRE loci, including C9orf72 , DMPK , HTT , ATXN2 
+      , ATXN3 , CACNA1A , CNBP , and PPP2R2B , recovering known disease-associated 
+      expansions from short-read sequencing data at biobank scale. We also identified 
+      candidate associations at three additional loci. An intronic AATAA expansion in 
+      DAPK1 reached significance (q = 0.0045), with fine-mapping and conditional 
+      analysis supporting the repeat as the likely variant underlying the association. 
+      An intronic ATTTT expansion in ANK3 (q = 0.034) was observed exclusively in 
+      individuals of African and Latino/admixed American ancestry, underscoring the 
+      importance of ancestrally diverse cohorts for genetic discovery. An exonic 
+      polyalanine expansion in RPL14 was also significant (q = 0.039), where longer 
+      alleles were consistently associated with reduced RPL14 expression across 
+      independent datasets. Together, these findings identify candidate risk loci for 
+      neurodegenerative disease that may expand the contribution of TREs to 
+      neurodegenerative disease beyond known repeat expansion disorders.
+FAU - Altman, Gabrielle N
+AU  - Altman GN
+AUID- ORCID: 0000-0003-3556-1492
+FAU - Jadhav, Bharati
+AU  - Jadhav B
+FAU - Garg, Paras
+AU  - Garg P
+FAU - Shadrina, Mariya
+AU  - Shadrina M
+FAU - Manigbas, Celine A
+AU  - Manigbas CA
+AUID- ORCID: 0009-0001-5624-6355
+FAU - Lee, William
+AU  - Lee W
+FAU - Kandoi, Shrishtee
+AU  - Kandoi S
+FAU - Martin-Trujillo, Alejandro
+AU  - Martin-Trujillo A
+FAU - Sharp, Andrew J
+AU  - Sharp AJ
+AUID- ORCID: 0000-0003-1415-5129
+LA  - eng
+PT  - Journal Article
+PT  - Preprint
+DEP - 20260810
+PL  - United States
+TA  - medRxiv
+JT  - medRxiv : the preprint server for health sciences
+JID - 101767986
+PMC - PMC13640768
+EDAT- 2026/10/08 11:39
+MHDA- 2026/10/08 11:40
+PMCR- 2026/10/06
+CRDT- 2026/10/08 06:41
+PHST- 2026/10/08 11:40 [medline]
+PHST- 2026/10/08 11:39 [pubmed]
+PHST- 2026/10/08 06:41 [entrez]
+PHST- 2026/10/06 00:00 [pmc-release]
+AID - 2026.08.06.26358503 [pii]
+AID - 10.64898/2026.08.06.26358503 [doi]
+PST - epublish
+SO  - medRxiv [Preprint]. 2026 Aug 10:2026.08.06.26358503. doi: 
+      10.64898/2026.08.06.26358503.
+
 PMID- 42105155
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260716
-LR  - 20260716
+LR  - 20261010
 IS  - 1473-4230 (Electronic)
 IS  - 1473-4222 (Linking)
 VI  - 25
@@ -143,7 +218,7 @@ PMID- 42038259
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260427
-LR  - 20260813
+LR  - 20260921
 IS  - 2632-1297 (Electronic)
 IS  - 2632-1297 (Linking)
 VI  - 8
@@ -1036,7 +1111,7 @@ PMID- 39565297
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20250426
-LR  - 20260127
+LR  - 20261013
 IS  - 1460-2083 (Electronic)
 IS  - 0964-6906 (Print)
 IS  - 0964-6906 (Linking)
@@ -1162,6 +1237,7 @@ GR  - Simons Foundation Autism Research Initiative/
 GR  - R21 AG080472-01/GF/NIH HHS/United States
 GR  - P50 HD103556/HD/NICHD NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 PL  - England
 TA  - Hum Mol Genet
 JT  - Human molecular genetics
@@ -1477,7 +1553,7 @@ PMID- 38798069
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20241019
-LR  - 20251002
+LR  - 20260922
 IS  - 1531-8257 (Electronic)
 IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
@@ -1537,16 +1613,11 @@ AD  - Division of Neurobiology, Department of Psychiatry and Behavioral Sciences
       Hopkins University School of Medicine, Baltimore, Maryland, USA.
 LA  - eng
 GR  - R21 NS112687/NS/NINDS NIH HHS/United States
-GR  - National Ataxia Foundation/
-GR  - NS093287/NS/NINDS NIH HHS/United States
 GR  - R21 NS093287/NS/NINDS NIH HHS/United States
-GR  - NS122756/NS/NINDS NIH HHS/United States
 GR  - R01 NS122756/NS/NINDS NIH HHS/United States
-GR  - NS112687/NS/NINDS NIH HHS/United States
-GR  - NS112796/NS/NINDS NIH HHS/United States
-GR  - The ABCD Charitable Trust/
 GR  - R21 NS112796/NS/NINDS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
 DEP - 20240526
 PL  - United States
 TA  - Mov Disord
@@ -1700,7 +1771,7 @@ PMID- 38227102
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20240117
-LR  - 20250204
+LR  - 20261031
 IS  - 1573-4978 (Electronic)
 IS  - 0301-4851 (Linking)
 VI  - 51

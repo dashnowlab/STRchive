@@ -1,14 +1,18 @@
 
 PMID- 42482100
 OWN - NLM
-STAT- Publisher
-LR  - 20260721
+STAT- MEDLINE
+DCOM- 20261016
+LR  - 20261019
 IS  - 1756-994X (Electronic)
 IS  - 1756-994X (Linking)
+VI  - 18
+IP  - 1
 DP  - 2026 Jul 22
 TI  - Multiomic approaches identify a rare CCG repeat expansion in BCLAF3 in 
       neurodevelopmental disorders.
 LID - 10.1186/s13073-026-01729-4 [doi]
+LID - 153
 AB  - BACKGROUND: Tandem repeat expansions have been implicated in various neurological 
       conditions. Here, we present a novel hypermethylated CCG repeat expansion on Xp22 
       in the 5'UTR of BCLAF3 in males with neurodevelopmental disorders. METHODS: We 
@@ -232,13 +236,25 @@ AD  - Department of Genomic and Translational Neuroscience, Center for Pediatric
       Neurological Disease Research, St. Jude Children's Research Hospital, Memphis, 
       TN, 38105, USA. Heather.Mefford@stjude.org.
 LA  - eng
+GR  - DP5 OD033357/OD/NIH HHS/United States
+GR  - F99 HG014072/HG/NHGRI NIH HHS/United States
+GR  - R01 MH101221/MH/NIMH NIH HHS/United States
 PT  - Journal Article
 DEP - 20260722
 PL  - England
 TA  - Genome Med
 JT  - Genome medicine
 JID - 101475844
+RN  - 0 (5' Untranslated Regions)
 SB  - IM
+MH  - Humans
+MH  - Male
+MH  - *Neurodevelopmental Disorders/genetics
+MH  - DNA Methylation
+MH  - *Trinucleotide Repeat Expansion
+MH  - Multiomics
+MH  - 5' Untranslated Regions
+PMC - PMC13673688
 OTO - NOTNLM
 OT  - BCLAF3
 OT  - DNA methylation
@@ -263,15 +279,18 @@ COIS- Declarations. Ethics approval and consent to participate: This study was a
       Pharmaceuticals. The remaining authors declare that they have no competing 
       interests.
 EDAT- 2026/07/22 12:37
-MHDA- 2026/07/22 12:37
+MHDA- 2026/10/16 05:32
+PMCR- 2026/07/22
 CRDT- 2026/07/21 23:50
 PHST- 2026/01/20 00:00 [received]
 PHST- 2026/07/15 00:00 [accepted]
-PHST- 2026/07/22 12:37 [medline]
+PHST- 2026/10/16 05:32 [medline]
 PHST- 2026/07/22 12:37 [pubmed]
 PHST- 2026/07/21 23:50 [entrez]
+PHST- 2026/07/22 00:00 [pmc-release]
 AID - 10.1186/s13073-026-01729-4 [pii]
+AID - 1729 [pii]
 AID - 10.1186/s13073-026-01729-4 [doi]
-PST - aheadofprint
-SO  - Genome Med. 2026 Jul 22. doi: 10.1186/s13073-026-01729-4.
+PST - epublish
+SO  - Genome Med. 2026 Jul 22;18(1):153. doi: 10.1186/s13073-026-01729-4.
 
