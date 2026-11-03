@@ -1,13 +1,17 @@
 
 PMID- 42205056
 OWN - NLM
-STAT- Publisher
-LR  - 20260528
+STAT- In-Process
+LR  - 20260926
 IS  - 1531-8257 (Electronic)
+IS  - 0885-3185 (Print)
 IS  - 0885-3185 (Linking)
-DP  - 2026 May 28
+VI  - 41
+IP  - 9
+DP  - 2026 Sep
 TI  - No Evidence for an Association Between DIP2B Repeat Expansion and Neurological 
       Disease.
+PG  - 2529-2531
 LID - 10.1002/mds.70373 [doi]
 FAU - Ko, Chia-Ying
 AU  - Ko CY
@@ -72,6 +76,7 @@ TA  - Mov Disord
 JT  - Movement disorders : official journal of the Movement Disorder Society
 JID - 8610688
 SB  - IM
+PMC - PMC13602277
 OTO - NOTNLM
 OT  - CGG
 OT  - DIP2B
@@ -79,18 +84,33 @@ OT  - FRA12A
 OT  - hypermethylation
 OT  - long-read sequencing
 OT  - repeat expansion
+COIS- C.-Y.K. was supported by Hertie-Network of Excellence in Clinical Neuroscience. 
+      E.B.A. performed next-generation sequencing (NGS) sequencing with the support of 
+      the Deutsche Forschungsgemeinschaft (DFG)-funded NGS Competence Center Tubingen 
+      (INST 37/1049-1). N.C. performed NGS sequencing with the support of the 
+      DFG-funded NGS Competence Center Tubingen (INST 37/1049-1). D.B. was supported by 
+      a Humboldt Research Fellowship for Postdocs and the Hertie-Network of Excellence 
+      in Clinical Neuroscience. L.S. received funding by the German Ministry of 
+      Education and Research (BMBF grants 01GM2209F, 01GM2210A, and 01ED2503B) and the 
+      DFG (grant SCHO754/8-1). T.B.H. received funding from the European Commission 
+      (Recon4IMD - GAP-101080997) and the DFG (EJP-RD Artemis: 542553983). S.O. was 
+      supported by the DFG (OS 647/1-1). H.H. was supported by the DFG (HE 8803/1-1). 
+      Author disclosures are available in the Supporting Information.
 EDAT- 2026/05/28 06:32
 MHDA- 2026/05/28 06:32
+PMCR- 2026/09/24
 CRDT- 2026/05/28 03:53
 PHST- 2026/04/30 00:00 [revised]
 PHST- 2026/02/23 00:00 [received]
 PHST- 2026/05/08 00:00 [accepted]
-PHST- 2026/05/28 06:32 [medline]
 PHST- 2026/05/28 06:32 [pubmed]
+PHST- 2026/05/28 06:32 [medline]
 PHST- 2026/05/28 03:53 [entrez]
+PHST- 2026/09/24 00:00 [pmc-release]
+AID - MDS70373 [pii]
 AID - 10.1002/mds.70373 [doi]
-PST - aheadofprint
-SO  - Mov Disord. 2026 May 28. doi: 10.1002/mds.70373.
+PST - ppublish
+SO  - Mov Disord. 2026 Sep;41(9):2529-2531. doi: 10.1002/mds.70373. Epub 2026 May 28.
 
 PMID- 39854091
 OWN - NLM
