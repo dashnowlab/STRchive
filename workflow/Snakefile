@@ -1,6 +1,6 @@
 # Usage:
 
-# Run all stages (default, takes hours):
+# Run all stages, re-fetching all citations (default):
 # snakemake --cores "all"
 # or
 # snakemake --cores "all" --config stages="all"
@@ -34,7 +34,7 @@ wildcard_constraints:
 if stages not in ("all", "new-refs", "old-refs", "skip-refs", "quick"):
     raise ValueError("Invalid stages value. Must be 'all', 'new-refs', 'old-refs', 'skip-refs', or 'quick'")
 
-# Citations take hours to generate/update, so skip for "skip-refs" and "quick"
+# Citations need network lookups, so skip for "skip-refs" and "quick"
 _citations = expand("{base_dir}STRchive-citations.json", base_dir = base_dir) \
     if stages in ("all", "new-refs", "old-refs") else []
 
@@ -186,7 +186,7 @@ rule add_citations:
         python {scripts_dir}check-loci.py {input.in_json} --lit {input.loci_citations} 2> {output.check}
         """
 
-# Note, this currently takes hours to run
+# "new-refs" and "old-refs" only look up citations that are new or previously failed
 if stages == "new-refs":
     rule manubot:
         input:
@@ -199,7 +199,7 @@ if stages == "new-refs":
             results = "{base_dir}STRchive-citations.json"
         shell:
             """
-            python {scripts_dir}run-manubot.py {input.citations} {output.results} --append {input.backup} --curations {input.curations}
+            python {scripts_dir}run-manubot.py {input.citations} {output.results} --cache {input.backup} --curations {input.curations}
             """
 if stages == "old-refs":
     rule manubot:
@@ -212,13 +212,15 @@ if stages == "old-refs":
             results = "{base_dir}STRchive-citations.json"
         shell:
             """
-            python {scripts_dir}run-manubot.py {input.in_json} {output.results} --append {input.backup} --inloci --curations {input.curations}
+            python {scripts_dir}run-manubot.py {input.in_json} {output.results} --cache {input.backup} --inloci --curations {input.curations}
             """
 
+# Re-fetches all citations; previous versions are kept only where a lookup fails
 if stages == "all" or stages == "skip-refs":
     rule manubot:
         input:
             citations = "{base_dir}citations-tmp.json",
+            backup = "{base_dir}STRchive-citations-backup.json",
             curations = "{base_dir}criTRia-curations.json",
             check = "{base_dir}check-loci.txt",
             check2 = "{base_dir}check-loci-citations.txt"
@@ -226,7 +228,7 @@ if stages == "all" or stages == "skip-refs":
             results = "{base_dir}STRchive-citations.json"
         shell:
             """
-            python {scripts_dir}run-manubot.py {input.citations} {output.results} --curations {input.curations}
+            python {scripts_dir}run-manubot.py {input.citations} {output.results} --cache {input.backup} --refresh --curations {input.curations}
             """
 
 rule TRGT_hg38:

@@ -7,27 +7,83 @@ import json
 import jsbeautifier
 import argparse
 import sys
+from ncbi_eutils import cite_with_ncbi
 
-# Special cases not handled by Manubot. 
+# These types are fetched from NCBI E-utilities (see ncbi_eutils.py) rather than Manubot
+ncbi_types = ["pmid", "genereviews", "omim"]
+
+# These types are generated locally from the ID, with no network lookup
+local_types = ["gnomad"]
+
+non_manubot_types = ncbi_types + local_types
+
+# Special cases not handled by Manubot.
 # In future should pull these from identifiers.js or the json spec
 
 # These will be converted to the citation type "url" before being passed to Manubot
 database_urls = {
     "malacard": "https://www.malacards.org/card/{id}",
-    "genereviews": "https://www.ncbi.nlm.nih.gov/books/{id}",
     "stripy": "https://stripy.org/database/{id}",
     "gnomad": "https://gnomad.broadinstitute.org/short-tandem-repeat/{id}?dataset=gnomad_r4",
-    "omim": "https://omim.org/entry/{id}",
     "orphanet": "https://www.orpha.net/en/disease/detail/{id}",
     }
 
-# These types currently always fail with Manubot and should be skipped
-skip_types = ["omim"]
+# Titles returned when a site serves a bot-check/landing page instead of the record.
+# A citation with one of these (or an empty title) is treated as a failed lookup,
+# so it is not reused from --cache and will be retried on the next run.
+placeholder_title_substrings = [
+    "checking your browser",
+    "recaptcha",
+    "ontology lookup service",
+    "vérification de la connexion",
+    "just a moment",
+    "attention required",
+    "access denied",
+    ]
+placeholder_titles_exact = [
+    "gnomad",
+    "omim",
+    "orphanet",
+    "malacards",
+    "genereviews",
+    "pubmed",
+    ]
 
-# These the URL will be added to use if Manubot can't generate a citation
-# But the citation type will be preserved
-citation_urls = {
-    "pmid": "https://pubmed.ncbi.nlm.nih.gov/{id}",
+def bad_title_reason(title):
+    """
+    Return a reason string if the title is missing or a known placeholder, else None
+    """
+    t = (title or "").strip()
+    if not t:
+        return "empty title"
+    tl = t.lower()
+    if tl in placeholder_titles_exact:
+        return f"placeholder title '{t}'"
+    for s in placeholder_title_substrings:
+        if s in tl:
+            return f"placeholder title '{t}'"
+    return None
+
+def cite_gnomad(_id):
+    """
+    Build a citation for a gnomAD short tandem repeat page from its ID.
+    The gnomAD site is a JavaScript app, so scraping it only ever returns the title "gnomAD".
+    """
+    locus = _id.split(":", 1)[1]
+    return {
+        "id": _id,
+        "manubot_success": True,
+        "link": database_urls["gnomad"].format(id=locus),
+        "title": f"{locus} short tandem repeat",
+        "type": "dataset",
+        "doi": "",
+        "authors": [],
+        "publisher": "gnomAD v4",
+        "issn": "",
+        "date": "",
+        "abstract": "",
+        "language": "en",
+        "note": "Generated locally from the gnomAD STR ID (no fetch)",
     }
 
 def parse_args():
@@ -38,24 +94,30 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Generate full citations from ids with Manubot")
     parser.add_argument("input", help="JSON file of ids to generate citations for")
     parser.add_argument("output", help="Output JSON file off full citations")
-    parser.add_argument("--append", help="JSON file of previous citations to be skipped and appended to the output", default=None)
-    parser.add_argument("--inloci", help="JSON input is in STRchive loci format. Only items in the references field will be queried. Recommend using with --append", action='store_true')
-    parser.add_argument("--incurations", help="JSON input is in criTRia curations format. Only items in the references field will be queried. Recommend using with --append", action='store_true')
+    parser.add_argument("--cache", help="Previous citations JSON (e.g. STRchive-citations.json). Entries with a valid title are reused instead of being looked up again (see README).", default=None)
+    # old name for --cache, kept so existing commands still work
+    parser.add_argument("--append", dest="cache", help=argparse.SUPPRESS)
+    parser.add_argument("--inloci", help="JSON input is in STRchive loci format. Only items in the references field will be queried. Recommend using with --cache", action='store_true')
+    parser.add_argument("--incurations", help="JSON input is in criTRia curations format. Only items in the references field will be queried. Recommend using with --cache", action='store_true')
+    parser.add_argument("--refresh", help="Look up all input IDs again. Cached entries are only used where a lookup fails.", action='store_true')
     parser.add_argument("--curations", help="Optional criTRia curations JSON file. References from these curations will be added to the IDs queried.", default=None)
     return parser.parse_args()
 
-def cite_with_manubot(ids, append_ids=None):
+def cite_with_manubot(ids, cache_ids=None, refresh_cache=None, keep_cached=True):
     """
-    generate full citations from ids with Manubot
+    generate full citations from ids with Manubot (or NCBI / locally for some types)
+    cache_ids: ids to skip; refresh_cache: previous citations, used if a lookup fails;
+    keep_cached: also output cached ids that aren't in ids
     """
+    refresh_cache = refresh_cache or {}
 
     # remove duplicates, preserves order python 3.7+
-    ids = list(dict.fromkeys(ids))
-    append_ids = list(dict.fromkeys(append_ids))
+    ids = list(dict.fromkeys(list(ids) + (list(refresh_cache) if keep_cached else [])))
+    cache_ids = list(dict.fromkeys(cache_ids or []))
 
-    # Remove ids that are already in the append list
-    if append_ids:
-        ids = [i for i in ids if i not in append_ids]
+    # Remove ids that are already in the cache
+    if cache_ids:
+        ids = [i for i in ids if i not in cache_ids]
 
     # ids = ids[:10] #XXX for testing only
 
@@ -71,8 +133,21 @@ def cite_with_manubot(ids, append_ids=None):
             id_types[id_type] = []
         id_types[id_type].append(_id)
 
+    # NCBI types
+    ncbi_ids = [i for t in ncbi_types for i in id_types.get(t, [])]
+    if ncbi_ids:
+        citations += list(cite_with_ncbi(ncbi_ids, bad_title_reason=bad_title_reason).values())
+
+    # gnomAD STR pages: generated locally, no network lookup
+    gnomad_ids = id_types.get("gnomad", [])
+    if gnomad_ids:
+        sys.stderr.write(f"Generating {len(gnomad_ids)} gnomad citations locally\n")
+        citations += [cite_gnomad(i) for i in gnomad_ids]
+
     # process ids by type (useful for testing)
     for id_type, id_list in id_types.items():
+        if id_type in non_manubot_types:
+            continue
         # if id_type != "gnomad": #XXX for testig only
         #     continue
         sys.stderr.write(f"Processing {len(id_list)} citations of type: {id_type}\n")
@@ -96,16 +171,6 @@ def cite_with_manubot(ids, append_ids=None):
                 _id = "url:" + url
                 citation["link"] = url
             
-            if id_type in citation_urls:
-                citation["link"] = citation_urls[id_type].format(id=_id[len(id_type)+1:])
-
-            # Skip types that always fail
-            if id_type in skip_types:
-                sys.stderr.write(f"WARNING: Manubot does not support {_id}. Skipping\n")
-                citation["note"] = f"WARNING: Manubot does not support {_id}. Skipping"
-                citations.append(citation)
-                continue
-
             # run Manubot
             try:
                 commands = ["manubot", "cite", _id]
@@ -174,11 +239,28 @@ def cite_with_manubot(ids, append_ids=None):
             # note
             citation["note"] = get_safe(manubot, "note").strip()
 
+            # Manubot returned JSON, but it may be a bot-check page or have no title
+            reason = bad_title_reason(citation["title"])
+            if reason:
+                sys.stderr.write(f"WARNING: {_id} returned {reason}; marking as failed\n")
+                citation["note"] = f"WARNING: Manubot returned {reason}"
+                citations.append(citation)
+                continue
+
             # successfully generated citation with manubot
             citation["manubot_success"] = True
 
             # add citation to list
             citations.append(citation)
+
+    # if a lookup failed (e.g. a site is down), keep the previous citation instead
+    n_fallback = 0
+    for i, cite in enumerate(citations):
+        if not cite["manubot_success"] and cite["id"] in refresh_cache:
+            citations[i] = refresh_cache[cite["id"]]
+            n_fallback += 1
+    if n_fallback:
+        sys.stderr.write(f"WARNING: lookup failed for {n_fallback} citations; kept previous versions\n")
 
     return citations
 
@@ -196,8 +278,8 @@ def get_date(date_parts):
     year = get_part(date_parts, 0)
     if year:
         # fallbacks for month and day
-        month = get_part(date_parts, 1) or "01"
-        day = get_part(date_parts, 2) or "01"
+        month = get_part(date_parts, 1) or 1
+        day = get_part(date_parts, 2) or 1
         return f"{year:04}-{month:02}-{day:02}"
     else:
         # if no year, consider date missing data
@@ -229,17 +311,18 @@ def main(args):
     args.output: Output JSON file of full citations
 
     Options:
-    args.append
+    args.cache
     args.inloci
     """
-    # read "append" JSON
-    append_ids = []
-    append_json = []
-    if args.append:
+    # read cached citations JSON
+    cache_ids = []
+    cache_json = []
+    refresh_cache = {}
+    if args.cache:
         try:
-            with open(args.append, "r") as file:
-                append_json_all = json.load(file)
-                for cite in append_json_all:
+            with open(args.cache, "r") as file:
+                cache_json_all = json.load(file)
+                for cite in cache_json_all:
                     status = True
                     try:
                         status = cite["manubot_success"]
@@ -249,18 +332,26 @@ def main(args):
                                 status = False
                         except KeyError:
                             status = False
+                    # Don't keep entries whose title is empty or a placeholder,
+                    # even if they were previously marked successful
+                    if status == True and bad_title_reason(cite.get("title")):
+                        status = False
                     cite["manubot_success"] = status
-                    if status == True:
-                        if cite["id"] not in append_ids:
-                            # only append if id is not already in the list
-                            # this is to avoid duplicates in the append list
-                            append_ids.append(cite["id"])
-                            append_json.append(cite)
+                    if status == True and (args.refresh or cite["id"].split(":")[0] in local_types):
+                        # regenerate these; keep the old version as a fallback only
+                        refresh_cache.setdefault(cite["id"], cite)
+                    elif status == True:
+                        if cite["id"] not in cache_ids:
+                            # only keep the first entry for each id, to avoid duplicates
+                            cache_ids.append(cite["id"])
+                            cache_json.append(cite)
         except Exception as e:
-            sys.stderr.write(f"WARNING: Couldn't read append JSON\n")
+            sys.stderr.write(f"WARNING: Couldn't read cache JSON\n")
             sys.stderr.write(f"{e}\n")
-            append_json = []
-    sys.stderr.write(f"Skipping lookup of {len(append_ids)} existing citations\n")
+            cache_json = []
+            refresh_cache = {}
+    sys.stderr.write(f"Skipping lookup of {len(cache_ids)} existing citations\n")
+    sys.stderr.write(f"Re-fetching {len(refresh_cache)} existing citations (previous versions kept as fallback)\n")
 
     # read input JSON
     with open(args.input, "r") as file:
@@ -287,11 +378,12 @@ def main(args):
 
     # write output JSON
     with open(args.output, "w") as file:
-        new_json = cite_with_manubot(data, append_ids=append_ids)
+        new_json = cite_with_manubot(data, cache_ids=cache_ids, refresh_cache=refresh_cache,
+                                     keep_cached=not args.refresh)
         options = jsbeautifier.default_options()
         options.indent_size = 2
         options.brace_style="expand"
-        file.write(jsbeautifier.beautify(json.dumps(append_json + new_json), options))
+        file.write(jsbeautifier.beautify(json.dumps(cache_json + new_json), options))
 
 #test = ["doi:10.1101/2023.10.09.23296582", "pmid:11246464"]
 #print(json.dumps(cite_with_manubot(test), indent=4))
