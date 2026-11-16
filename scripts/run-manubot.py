@@ -8,14 +8,22 @@ import jsbeautifier
 import argparse
 import sys
 from ncbi_eutils import cite_with_ncbi
+from ols import cite_mondo
 
 # These types are fetched from NCBI E-utilities (see ncbi_eutils.py) rather than Manubot
 ncbi_types = ["pmid", "genereviews", "omim"]
 
+# These types are fetched from the EBI Ontology Lookup Service (see ols.py)
+ols_types = ["mondo"]
+
 # These types are generated locally from the ID, with no network lookup
 local_types = ["gnomad"]
 
-non_manubot_types = ncbi_types + local_types
+non_manubot_types = ncbi_types + ols_types + local_types
+
+# Notes on citations made by this script rather than Manubot. Cached entries of
+# non_manubot_types without one of these were made by Manubot and are looked up again.
+own_note_prefixes = ("Generated from NCBI", "Generated from the EBI", "Generated locally")
 
 # Special cases not handled by Manubot.
 # In future should pull these from identifiers.js or the json spec
@@ -138,6 +146,11 @@ def cite_with_manubot(ids, cache_ids=None, refresh_cache=None, keep_cached=True)
     if ncbi_ids:
         citations += list(cite_with_ncbi(ncbi_ids, bad_title_reason=bad_title_reason).values())
 
+    # MONDO terms
+    mondo_ids = id_types.get("mondo", [])
+    if mondo_ids:
+        citations += list(cite_mondo(mondo_ids).values())
+
     # gnomAD STR pages: generated locally, no network lookup
     gnomad_ids = id_types.get("gnomad", [])
     if gnomad_ids:
@@ -244,6 +257,7 @@ def cite_with_manubot(ids, cache_ids=None, refresh_cache=None, keep_cached=True)
             if reason:
                 sys.stderr.write(f"WARNING: {_id} returned {reason}; marking as failed\n")
                 citation["note"] = f"WARNING: Manubot returned {reason}"
+                citation["title"] = ""
                 citations.append(citation)
                 continue
 
@@ -337,7 +351,9 @@ def main(args):
                     if status == True and bad_title_reason(cite.get("title")):
                         status = False
                     cite["manubot_success"] = status
-                    if status == True and (args.refresh or cite["id"].split(":")[0] in local_types):
+                    id_type = cite["id"].split(":")[0]
+                    made_by_manubot = id_type in non_manubot_types and not (cite.get("note") or "").startswith(own_note_prefixes)
+                    if status == True and (args.refresh or id_type in local_types or made_by_manubot):
                         # regenerate these; keep the old version as a fallback only
                         refresh_cache.setdefault(cite["id"], cite)
                     elif status == True:
