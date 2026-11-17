@@ -1,8 +1,10 @@
 """
-Fetch citation metadata for PubMed, GeneReviews and OMIM IDs from NCBI E-utilities.
+Citation lookups used by run-manubot.py instead of Manubot.
 
-GeneReviews chapters are PubMed book records tagged with their NBK accession, so they
-are parsed from the same PubMed XML. OMIM titles come from NCBI's OMIM database.
+- PubMed, GeneReviews and OMIM IDs from NCBI E-utilities. GeneReviews chapters are
+  PubMed book records tagged with their NBK accession, so they are parsed from the same
+  PubMed XML. OMIM titles come from NCBI's OMIM database.
+- MONDO IDs from the EBI Ontology Lookup Service (OLS4) API.
 
 Optional environment variables:
 - NCBI_API_KEY: raises the NCBI rate limit from 3 to 10 requests/second
@@ -23,6 +25,9 @@ BATCH_SIZE = 200  # IDs per efetch request
 SEARCH_BATCH_SIZE = 50  # NBK accessions per esearch query
 MAX_TRIES = 5
 
+OLS_API = "https://www.ebi.ac.uk/ols4/api/ontologies/mondo/terms?obo_id={obo_id}"
+OLS_LINK = "https://www.ebi.ac.uk/ols4/ontologies/mondo/entities/{iri}"
+
 PUBMED_LINK = "https://www.ncbi.nlm.nih.gov/pubmed/{id}"
 GENEREVIEWS_LINK = "https://www.ncbi.nlm.nih.gov/books/{id}"
 OMIM_LINK = "https://omim.org/entry/{id}"
@@ -33,12 +38,42 @@ MONTHS = {m: i for i, m in enumerate(
 _last_request = 0.0
 
 
-def _request(endpoint, params):
+def _fetch(url, data=None, label="request", min_interval=0.0, check=None):
     """
-    POST to an E-utilities endpoint, respecting the rate limit and retrying
-    transient failures with exponential backoff. Returns the response body.
+    GET (or POST if data is given) a URL, retrying transient failures with exponential
+    backoff. min_interval: minimum seconds between requests (rate limit).
+    check: optional function(body) that raises RuntimeError if the body is an error page.
+    Returns the response body.
     """
     global _last_request
+    for attempt in range(1, MAX_TRIES + 1):
+        wait = _last_request + min_interval - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        _last_request = time.monotonic()
+        try:
+            with urllib.request.urlopen(url, data=data, timeout=60) as resp:
+                body = resp.read()
+            if check:
+                check(body)
+            return body
+        except (urllib.error.URLError, TimeoutError, ConnectionError, RuntimeError) as e:
+            retryable = not isinstance(e, urllib.error.HTTPError) or e.code == 429 or e.code >= 500
+            if not retryable or attempt == MAX_TRIES:
+                raise
+            delay = 2 ** attempt
+            sys.stderr.write(f"WARNING: {label} failed ({e}); retry {attempt}/{MAX_TRIES - 1} in {delay}s\n")
+            time.sleep(delay)
+
+
+def _eutils_error(body):
+    # E-utilities sometimes returns HTTP 200 with an error document
+    if b"<ERROR>" in body[:500] or b'"error"' in body[:200]:
+        raise RuntimeError(body[:200].decode(errors="replace"))
+
+
+def _request(endpoint, params):
+    """POST to an NCBI E-utilities endpoint, respecting NCBI's rate limit"""
     api_key = os.environ.get("NCBI_API_KEY")
     email = os.environ.get("NCBI_EMAIL")
     params = dict(params, tool="STRchive")
@@ -46,28 +81,9 @@ def _request(endpoint, params):
         params["api_key"] = api_key
     if email:
         params["email"] = email
-    min_interval = 0.11 if api_key else 0.34
-    data = urllib.parse.urlencode(params).encode()
-
-    for attempt in range(1, MAX_TRIES + 1):
-        wait = _last_request + min_interval - time.monotonic()
-        if wait > 0:
-            time.sleep(wait)
-        _last_request = time.monotonic()
-        try:
-            with urllib.request.urlopen(EUTILS + endpoint, data=data, timeout=60) as resp:
-                body = resp.read()
-            # E-utilities sometimes returns HTTP 200 with an error document
-            if b"<ERROR>" in body[:500] or b'"error"' in body[:200]:
-                raise RuntimeError(body[:200].decode(errors="replace"))
-            return body
-        except (urllib.error.URLError, TimeoutError, ConnectionError, RuntimeError) as e:
-            retryable = not isinstance(e, urllib.error.HTTPError) or e.code == 429 or e.code >= 500
-            if not retryable or attempt == MAX_TRIES:
-                raise
-            delay = 2 ** attempt
-            sys.stderr.write(f"WARNING: NCBI {endpoint} failed ({e}); retry {attempt}/{MAX_TRIES - 1} in {delay}s\n")
-            time.sleep(delay)
+    return _fetch(EUTILS + endpoint, data=urllib.parse.urlencode(params).encode(),
+                  label=f"NCBI {endpoint}", min_interval=0.11 if api_key else 0.34,
+                  check=_eutils_error)
 
 
 def _text(elem):
@@ -362,4 +378,44 @@ def cite_with_ncbi(ids, bad_title_reason=None):
             reason = cite["manubot_success"] and bad_title_reason(cite.get("title"))
             if reason:
                 results[_id] = _failed(_id, cite["link"], reason)
+    return results
+
+
+def cite_mondo(ids):
+    """
+    Generate citations for mondo:* ids (e.g. mondo:0025193).
+    Returns {id: citation} in the same format as run-manubot.py.
+    """
+    sys.stderr.write(f"Processing {len(ids)} mondo citations via OLS\n")
+    results = {}
+    for _id in ids:
+        obo_id = "MONDO:" + _id.split(":", 1)[1]
+        iri = f"http://purl.obolibrary.org/obo/{obo_id.replace(':', '_')}"
+        # same double-encoded link format Manubot produced
+        link = OLS_LINK.format(iri=urllib.parse.quote(urllib.parse.quote(iri, safe=""), safe=""))
+        try:
+            terms = json.loads(_fetch(OLS_API.format(obo_id=obo_id), label="OLS")).get("_embedded", {}).get("terms", [])
+            label = " ".join((terms[0].get("label") or "").split()) if terms else ""
+        except Exception as e:
+            sys.stderr.write(f"WARNING: OLS lookup failed for {_id}: {e}\n")
+            label = ""
+        if not label:
+            results[_id] = {"id": _id, "manubot_success": False, "link": link,
+                            "note": f"WARNING: OLS could not generate citation for {obo_id}"}
+            continue
+        results[_id] = {
+            "id": _id,
+            "manubot_success": True,
+            "link": link,
+            "title": label,
+            "type": "entry",
+            "doi": "",
+            "authors": [],
+            "publisher": "Mondo Disease Ontology",
+            "issn": "",
+            "date": "",
+            "abstract": "",
+            "language": "en",
+            "note": f"Generated from the EBI Ontology Lookup Service ({obo_id})",
+        }
     return results

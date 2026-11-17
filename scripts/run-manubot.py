@@ -7,13 +7,12 @@ import json
 import jsbeautifier
 import argparse
 import sys
-from ncbi_eutils import cite_with_ncbi
-from ols import cite_mondo
+from citation_utils import cite_with_ncbi, cite_mondo
 
-# These types are fetched from NCBI E-utilities (see ncbi_eutils.py) rather than Manubot
+# These types are fetched from NCBI E-utilities (see citation_utils.py) rather than Manubot
 ncbi_types = ["pmid", "genereviews", "omim"]
 
-# These types are fetched from the EBI Ontology Lookup Service (see ols.py)
+# These types are fetched from the EBI Ontology Lookup Service (see citation_utils.py)
 ols_types = ["mondo"]
 
 # These types are generated locally from the ID, with no network lookup
