@@ -1,9 +1,270 @@
 
+PMID- 42814302
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260930
+LR  - 20260930
+IS  - 1940-6029 (Electronic)
+IS  - 1064-3745 (Linking)
+VI  - 3065
+DP  - 2026
+TI  - Antisense Oligonucleotide-Mediated Degradation of Toxic RNA in Myotonic Dystrophy 
+      Type 1.
+PG  - 149-160
+LID - 10.1007/978-1-0716-5476-7_9 [doi]
+AB  - Myotonic dystrophy (DM) exists in two forms, type 1 (DM1) and type 2 (DM2), both 
+      inherited in an autosomal dominant manner and caused by toxic gain-of-function 
+      RNAs produced from unstable repeat expansions. In DM1, the mutation lies in the 
+      DMPK gene, whereas in DM2 it involves the CNBP gene. These repeats are inherently 
+      unstable, with a strong tendency to further expand in somatic tissues and across 
+      generations, driving disease progression and anticipation. Despite arising from 
+      distinct genetic defects, DM1 and DM2 share a common pathogenic 
+      pathway-RNA-mediated toxicity-which accounts for their overlapping clinical 
+      manifestations. Both are multisystemic disorders characterized by myotonia, early 
+      cataracts, and defects in cardiac conduction, alongside a range of additional 
+      systemic complications. To date, no curative therapy is available, and management 
+      remains largely symptomatic. Among experimental approaches, antisense 
+      oligonucleotide (AON) therapies-particularly gapmers-have emerged as one of the 
+      most promising strategies. Gapmers are designed to resist nuclease degradation 
+      and bind their targets with high affinity while still promoting RNase H-mediated 
+      cleavage of toxic transcripts, making them especially suitable for targeting 
+      nuclear-retained repeat RNAs. This chapter summarizes current progress in the 
+      development of gapmer-based AONs for DM1, highlighting both their therapeutic 
+      potential and the challenges that must be overcome for successful clinical 
+      translation.
+CI  - (c) 2026. The Author(s), under exclusive license to Springer Science+Business 
+      Media, LLC, part of Springer Nature.
+FAU - Nguyen, Quynh
+AU  - Nguyen Q
+AD  - Department of Medical Genetics, Faculty of Medicine and Dentistry, University of 
+      Alberta, 8812-112 St, Edmonton, AB T6G 2H7, Canada.
+FAU - Shaikh, Faiyza Akil
+AU  - Shaikh FA
+AD  - Department of Medical Genetics, Faculty of Medicine and Dentistry, University of 
+      Alberta, 8812-112 St, Edmonton, AB T6G 2H7, Canada.
+FAU - Moriyama, Hidenori
+AU  - Moriyama H
+AD  - Department of Medical Genetics, Faculty of Medicine and Dentistry, University of 
+      Alberta, 8812-112 St, Edmonton, AB T6G 2H7, Canada.
+FAU - Yokota, Toshifumi
+AU  - Yokota T
+AD  - Department of Medical Genetics, Faculty of Medicine and Dentistry, University of 
+      Alberta, 8812-112 St, Edmonton, AB T6G 2H7, Canada. toshifum@ualberta.ca.
+AD  - The Friends of Garret Cumming Research and Muscular Dystrophy Canada HM Toupin 
+      Neurological Science Research Chair, 8812-112 St, Edmonton, AB T6G 2H7, Canada. 
+      toshifum@ualberta.ca.
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - Methods Mol Biol
+JT  - Methods in molecular biology (Clifton, N.J.)
+JID - 9214969
+RN  - 0 (Oligonucleotides, Antisense)
+RN  - EC 2.7.11.1 (Myotonin-Protein Kinase)
+RN  - 63231-63-0 (RNA)
+RN  - 0 (DMPK protein, human)
+SB  - IM
+MH  - *Myotonic Dystrophy/genetics/therapy/metabolism
+MH  - Humans
+MH  - *Oligonucleotides, Antisense/genetics/therapeutic use
+MH  - Myotonin-Protein Kinase/genetics
+MH  - *RNA Stability
+MH  - *RNA/genetics/metabolism
+MH  - Animals
+MH  - Trinucleotide Repeat Expansion
+OTO - NOTNLM
+OT  - CUG repeat
+OT  - DMPK
+OT  - Gapmers
+OT  - Myotonic dystrophy
+EDAT- 2026/09/30 17:32
+MHDA- 2026/09/30 17:33
+CRDT- 2026/09/30 11:24
+PHST- 2026/09/30 17:33 [medline]
+PHST- 2026/09/30 17:32 [pubmed]
+PHST- 2026/09/30 11:24 [entrez]
+AID - 10.1007/978-1-0716-5476-7_9 [doi]
+PST - ppublish
+SO  - Methods Mol Biol. 2026;3065:149-160. doi: 10.1007/978-1-0716-5476-7_9.
+
+PMID- 42786195
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20260924
+LR  - 20260928
+IS  - 2373-8057 (Print)
+IS  - 2373-8057 (Electronic)
+IS  - 2373-8057 (Linking)
+VI  - 12
+IP  - 1
+DP  - 2026 Sep 24
+TI  - Unified long-read panel for Parkinson's and repeat expansion disorders.
+LID - 10.1038/s41531-026-01585-4 [doi]
+LID - 233
+AB  - In this study, we designed a gene panel based on Nanopore long-read sequencing 
+      using adaptive sampling, targeting n = 564 genes associated with Parkinson's 
+      disease (PD) and repeat expansion disorders. We investigated its diagnostic 
+      utility in n = 18 patients with (1) pathogenic variants in LRRK2, PRKN, SNCA, and 
+      RAB32 (n = 7); (2) idiopathic PD or FTD negative for known genetic causes 
+      (n = 3); (3) repeat expansions in ATXN1, ATXN2, ATXN3, C9orf72, DAB1, FGF14, HTT, 
+      and TAF1-SVA (n = 8). Three individuals were multiplexed per flow cell, achieving 
+      a mean coverage of 24X (SD = +/- 9X) per sample. Ultimately, 17/20 (85%; 
+      Clopper-Pearson 95% CI: 62-97%) expected pathogenic variants were identified; 
+      i.e., an SNCA triplication and two repeat expansions in C9orf72 and TAF1-SVA were 
+      missed. Additional variants in STXBP2, AP4S1, RARS2, ALS2, and CNBP were 
+      identified in five patients. Adaptive sampling is a versatile genetic diagnostic 
+      tool in neurodegenerative disorders, while enabling cost-effective multiplexing. 
+      Further validation and improvements in bioinformatic analysis are needed.
+CI  - (c) 2026. The Author(s).
+FAU - Fienemann, Andre
+AU  - Fienemann A
+AUID- ORCID: 0009-0004-9594-3673
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Prietzsche, Julia C
+AU  - Prietzsche JC
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Labeta, Joshua
+AU  - Labeta J
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Much, Christoph
+AU  - Much C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Schaake, Susen
+AU  - Schaake S
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Luth, Theresa
+AU  - Luth T
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Gabbert, Carolin
+AU  - Gabbert C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Zimprich, Alexander
+AU  - Zimprich A
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Stogmann, Elisabeth
+AU  - Stogmann E
+AUID- ORCID: 0000-0003-4688-8482
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Konig, Theresa
+AU  - Konig T
+AD  - Department of Neurology, Medical University of Vienna, Vienna, Austria.
+FAU - Ganos, Christos
+AU  - Ganos C
+AD  - Edmond J. Safra Program in Parkinson's Disease and the Morton and Gloria Shulman 
+      Movement Disorders Clinic, Toronto Western Hospital, Toronto, ON, Canada.
+AD  - Division of Neurology, University of Toronto, Toronto, ON, Canada.
+AD  - Krembil Brain Institute, Toronto, ON, Canada.
+FAU - Gul-Demirkale, Tugce
+AU  - Gul-Demirkale T
+AUID- ORCID: 0000-0002-1818-9839
+AD  - Suna and Inan Kirac Foundation, Neurodegeneration Research Laboratory (NDAL), 
+      KUTTAM, School of Medicine, Koc University, Istanbul, Turkey.
+FAU - Basak, A Nazli
+AU  - Basak AN
+AUID- ORCID: 0000-0001-6977-2517
+AD  - Suna and Inan Kirac Foundation, Neurodegeneration Research Laboratory (NDAL), 
+      KUTTAM, School of Medicine, Koc University, Istanbul, Turkey.
+FAU - Jamora, Roland Dominic G
+AU  - Jamora RDG
+AUID- ORCID: 0000-0001-5317-7369
+AD  - Department of Neurosciences, College of Medicine-Philippine General Hospital, 
+      University of the Philippines Manila, Manila, Philippines.
+FAU - Rosales, Raymond L
+AU  - Rosales RL
+AD  - Department of Neurology and Psychiatry, University of Santo Tomas and the 
+      CNS-Metropolitan Medical Center, Manila, Philippines.
+FAU - Saranza, Gerard
+AU  - Saranza G
+AUID- ORCID: 0000-0001-8322-4226
+AD  - Department of Neurosciences, College of Medicine-Philippine General Hospital, 
+      University of the Philippines Manila, Manila, Philippines.
+AD  - Section of Neurology, Department of Internal Medicine, Chong Hua Hospital, Cebu, 
+      Philippines.
+FAU - Diesta, Cid Czarina E
+AU  - Diesta CCE
+AD  - Department of Neurosciences, Movement Disorders Clinic, Makati Medical Center, 
+      Makati City, Philippines.
+FAU - Moller, Meret
+AU  - Moller M
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Borsche, Max
+AU  - Borsche M
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Kleinz, Teresa
+AU  - Kleinz T
+AUID- ORCID: 0009-0000-6313-7395
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Balck, Alexander
+AU  - Balck A
+AUID- ORCID: 0000-0003-3967-0282
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Bruggemann, Norbert
+AU  - Bruggemann N
+AUID- ORCID: 0000-0001-5969-6899
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Seibler, Philip
+AU  - Seibler P
+AUID- ORCID: 0000-0002-3496-7194
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+FAU - Klein, Christine
+AU  - Klein C
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany.
+AD  - Section for Movement Disorders, Department of Neurology, University of Lubeck and 
+      University Hospital Schleswig-Holstein, Lubeck, Germany.
+FAU - Trinh, Joanne
+AU  - Trinh J
+AD  - Institute of Neurogenetics, University of Lubeck, Lubeck, Germany. 
+      joanne.trinh@uni-luebeck.de.
+LA  - eng
+GR  - TR 1714/4-1/Deutsche Forschungsgemeinschaft/
+PT  - Journal Article
+DEP - 20260924
+PL  - United States
+TA  - NPJ Parkinsons Dis
+JT  - NPJ Parkinson's disease
+JID - 101675390
+PMC - PMC13612410
+COIS- Declarations. Competing interests: The authors declare the following competing 
+      interests: RDGJ has received travel grants and speakers' honoraria from Royal 
+      Care Super Specialty Hospital, Darya-Varya Laboratoria, and the Philippine 
+      offices of AbbVie, Exeltis, HI-Eisai, Innogen, Medichem, Natrapharm, Sun, 
+      Torrent, and Vexxa. M.B. received honoraria from Bial Germany. N.B. received 
+      honoraria from AbbVie, Esteve, Ipsen, Merz, Takeda, Teva, and Zambon. J.T. has 
+      received travel funding to speak on behalf of O.N.T. C.K. has served as a medical 
+      advisor to Centogene, Takeda, and Biogen and received speakers' honoraria from 
+      Bial, as well as royalties from Oxford University Press and Springer Nature. The 
+      other authors do not have a competing interest.
+EDAT- 2026/09/25 05:31
+MHDA- 2026/09/25 05:32
+PMCR- 2026/09/24
+CRDT- 2026/09/24 23:30
+PHST- 2026/01/07 00:00 [received]
+PHST- 2026/09/12 00:00 [accepted]
+PHST- 2026/09/25 05:32 [medline]
+PHST- 2026/09/25 05:31 [pubmed]
+PHST- 2026/09/24 23:30 [entrez]
+PHST- 2026/09/24 00:00 [pmc-release]
+AID - 10.1038/s41531-026-01585-4 [pii]
+AID - 1585 [pii]
+AID - 10.1038/s41531-026-01585-4 [doi]
+PST - epublish
+SO  - NPJ Parkinsons Dis. 2026 Sep 24;12(1):233. doi: 10.1038/s41531-026-01585-4.
+
 PMID- 42094143
 OWN - NLM
 STAT- PubMed-not-MEDLINE
 DCOM- 20260525
-LR  - 20260813
+LR  - 20260922
 DP  - 2026 May 1
 TI  - Genome-wide detection and clinical prioritization of tandem repeat outliers using 
       long-read sequencing.
@@ -147,6 +408,10 @@ AD  - Department of Laboratory Medicine and Pathology, University of Washington,
 AD  - Brotman Baty Institute for Precision Medicine, University of Washington, Seattle, 
       WA.
 LA  - eng
+GR  - DP5 OD033357/OD/NIH HHS/United States
+GR  - R00 HG012796/HG/NHGRI NIH HHS/United States
+GR  - U01 NS134355/NS/NINDS NIH HHS/United States
+GR  - U2C NS132415/NS/NINDS NIH HHS/United States
 PT  - Journal Article
 PT  - Preprint
 DEP - 20260501
@@ -494,7 +759,7 @@ PMID- 41610137
 OWN - NLM
 STAT- MEDLINE
 DCOM- 20260701
-LR  - 20260701
+LR  - 20260925
 IS  - 1932-6203 (Electronic)
 IS  - 1932-6203 (Linking)
 VI  - 21
@@ -582,6 +847,7 @@ AD  - Michigan State University, Large Animal Clinical Sciences, College of Vete
 LA  - eng
 GR  - T32 TR004366/TR/NCATS NIH HHS/United States
 PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
 DEP - 20260129
 PL  - United States
 TA  - PLoS One
